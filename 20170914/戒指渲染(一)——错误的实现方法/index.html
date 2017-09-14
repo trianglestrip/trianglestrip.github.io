@@ -91,19 +91,21 @@
 
 
 
-<meta name="description" content="()()">
+<meta name="description" content="##��ָ��Ⱦ(һ)���������ʵ�ַ���[TOC] 1. ��ָ��������    ��ָ���Լ򵥷�Ϊ�����֣� ��ʯ ��ʯ ���  2. ��Ⱦ��ָ2.1 ��Ⱦ�������������������ַֿ���Ⱦ��Texture������RTT�Ľ���ں������������������ͼ���£�12345678910111213top&amp;gt;&amp;quot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="凌晨一点_日记本">
 <meta property="og:url" content="https://trianglestrip.github.io/20170914/戒指渲染(一)——错误的实现方法/index.html">
 <meta property="og:site_name" content="凌晨一点_日记本">
-<meta property="og:description" content="()()">
+<meta property="og:description" content="##��ָ��Ⱦ(һ)���������ʵ�ַ���[TOC] 1. ��ָ��������    ��ָ���Լ򵥷�Ϊ�����֣� ��ʯ ��ʯ ���  2. ��Ⱦ��ָ2.1 ��Ⱦ�������������������ַֿ���Ⱦ��Texture������RTT�Ľ���ں������������������ͼ���£�12345678910111213top&amp;gt;&amp;quot">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://trianglestrip.github.io/20170914/戒指渲染(一)——错误的实现方法/(*)">
-<meta property="og:updated_time" content="2017-09-14T14:51:35.383Z">
+<meta property="og:image" content="https://i1.piimg.com/567571/a6f2574bd40973d2.png">
+<meta property="og:image" content="https://p1.bpimg.com/567571/19573b50208fed48.png">
+<meta property="og:image" content="https://p1.bqimg.com/567571/1ba0e9ea414fc698.png">
+<meta property="og:updated_time" content="2017-03-27T05:46:22.112Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="凌晨一点_日记本">
-<meta name="twitter:description" content="()()">
-<meta name="twitter:image" content="https://trianglestrip.github.io/20170914/戒指渲染(一)——错误的实现方法/(*)">
+<meta name="twitter:description" content="##��ָ��Ⱦ(һ)���������ʵ�ַ���[TOC] 1. ��ָ��������    ��ָ���Լ򵥷�Ϊ�����֣� ��ʯ ��ʯ ���  2. ��Ⱦ��ָ2.1 ��Ⱦ�������������������ַֿ���Ⱦ��Texture������RTT�Ľ���ں������������������ͼ���£�12345678910111213top&amp;gt;&amp;quot">
+<meta name="twitter:image" content="https://i1.piimg.com/567571/a6f2574bd40973d2.png">
 
 
 
@@ -349,7 +351,57 @@
       
 
       
-        <li class="v-item" id="inner-last-series-info"><a class="video" href="[参数1]" target="_blank"><i class="screenshot"><img class="lazy" src="(*)"></i><i class="shadow shadow-bottom"></i><span class="lb inner-title">(<em>)</em></span><span class="lb inner-des">()</span><i class="o player"></i></a></li>
+        <p>##��ָ��Ⱦ(һ)���������ʵ�ַ���<br>[TOC]</p>
+<h3 id="1-��ָ��������"><a href="#1-��ָ��������" class="headerlink" title="1. ��ָ��������"></a>1. ��ָ��������</h3><blockquote>
+<p>   ��ָ���Լ򵥷�Ϊ�����֣�<br> ��ʯ<br> ��ʯ<br> ���</p>
+</blockquote>
+<h3 id="2-��T��ָ"><a href="#2-��T��ָ" class="headerlink" title="2. ��Ⱦ��ָ"></a>2. ��Ⱦ��ָ</h3><h4 id="2-1-��T����"><a href="#2-1-��T����" class="headerlink" title="2.1 ��Ⱦ����"></a>2.1 ��Ⱦ����</h4><p>���������������ַֿ�<code>��Ⱦ��Texture</code>������RTT�Ľ���ں������������������ͼ���£�<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">top&gt;&quot;��ʯ+��ʯ&quot;] --Back--&gt; Back(sceneBack) </div><div class="line">top --Front--&gt; Front(sceneFront)</div><div class="line">bot&gt;���] --&gt; Main(sceneMain)</div><div class="line"></div><div class="line">Back --&gt; rttBack</div><div class="line">Front --&gt; rttFront</div><div class="line">Main --&gt; rttMain</div><div class="line"></div><div class="line">rttBack --&gt; finalTexture</div><div class="line">rttFront --&gt; finalTexture</div><div class="line">rttMain --&gt; finalTexture</div><div class="line"></div><div class="line">finalTexture --&gt; renderToScreen</div></pre></td></tr></table></figure></p>
+<h4 id="2-2-��������"><a href="#2-2-��������" class="headerlink" title="2.2 ��������"></a>2.2 ��������</h4><p>��������ʯ����<strong>�������+�������</strong>���е��ӵķ���������͸��������ֻ��������ɫ�Ĳ�ͬ���Խ������ý�����ʡ�</p>
+<blockquote>
+<p>��ʯ���ʣ�</p>
+<pre><code>- ���棺FrontMainMat
+- ���棺BackMainMat
+</code></pre><p>   ��ʯ���ʣ�</p>
+<pre><code>- ���棺Front2ndMat
+- ���棺Back2ndMat
+</code></pre><p> ��۲��ʣ�</p>
+<pre><code>- metalMat
+</code></pre></blockquote>
+<p>������Ȼ�����ǵ��ڵ���ϵ����ÿ������scene�У���Ҫ������Ⱦ����������úڣ�<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">��<span class="keyword">var</span> blackMat = <span class="keyword">new</span> THREE.MeshBasicMaterial(&#123;<span class="attr">color</span>:<span class="number">0x000000</span>&#125;);</div></pre></td></tr></table></figure></p>
+<p>�����������ܱ���ÿ��rttʱ�򱣳���ȷ���ڵ���ϵ��ʵ�ʵĲ������÷������£�</p>
+<table>
+<thead>
+<tr>
+<th>����\����</th>
+<th style="text-align:left">sceneBack</th>
+<th style="text-align:left">sceneFront</th>
+<th>sceneMain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>��ʯ</td>
+<td style="text-align:left">BackMainMat</td>
+<td style="text-align:left">FrontMainMat</td>
+<td>blackMat</td>
+</tr>
+<tr>
+<td>��ʯ</td>
+<td style="text-align:left">Back2ndMat</td>
+<td style="text-align:left">Front2ndMat</td>
+<td>blackMat</td>
+</tr>
+<tr>
+<td>���</td>
+<td style="text-align:left">blackMat</td>
+<td style="text-align:left">blackMat</td>
+<td>metalMat</td>
+</tr>
+</tbody>
+</table>
+<pre><code>&lt;!--more--&gt;
+</code></pre><p>����Ȼ���������������һ���ķ���������ȴֻ��ʾ��������ɫ��<br>����<img src="https://i1.piimg.com/567571/a6f2574bd40973d2.png" alt=""><br>����<br>���������ԭ�����ڸ�������֮��û�����������㣬�������ڽ����ģ������û�д�׵ģ����½���ڵ��˸���ı��档<br>����<br>����<br>�����ر�����͸�����ʵ�<strong>��Ȳ���</strong>,��<code>depthWrite:false</code>�����ǣ�<br>����<img src="https://p1.bpimg.com/567571/19573b50208fed48.png" alt=""><br>����<br>�������濴������ò��ûʲô���⣬Ȼ��һ��ת��<br>����<img src="https://p1.bqimg.com/567571/1ba0e9ea414fc698.png" alt=""><br>����<br>����GG.�ر���Ȳ��Ծ���һ����·��<br>����<br>���������޷�ʵ����ʯ����֮���ʵ�ʲ������㣬���ַ����͸����в�ͨ�����ǿ���ʹ���µķ�����ʵ�֡�<br>����<br>����To be continued…</p>
+
       
     </div>
 
@@ -434,8 +486,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -515,6 +576,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-��ָ��������"><span class="nav-number">1.</span> <span class="nav-text">1. ��ָ��������</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-��T��ָ"><span class="nav-number">2.</span> <span class="nav-text">2. ��Ⱦ��ָ</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-��T����"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 ��Ⱦ����</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-��������"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 ��������</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
