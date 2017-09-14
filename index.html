@@ -353,28 +353,28 @@
       
         
           
-            <p>##��ָ��Ⱦ(һ)���������ʵ�ַ���<br>[TOC]</p>
-<h3 id="1-��ָ��������"><a href="#1-��ָ��������" class="headerlink" title="1. ��ָ��������"></a>1. ��ָ��������</h3><blockquote>
-<p>   ��ָ���Լ򵥷�Ϊ�����֣�<br> ��ʯ<br> ��ʯ<br> ���</p>
+            <p>##戒指渲染(一)——错误的实现方法<br>[TOC]</p>
+<h3 id="1-戒指部件分类"><a href="#1-戒指部件分类" class="headerlink" title="1. 戒指部件分类"></a>1. 戒指部件分类</h3><blockquote>
+<p>   戒指可以简单分为三部分：<br> 主石<br> 副石<br> 戒臂</p>
 </blockquote>
-<h3 id="2-��T��ָ"><a href="#2-��T��ָ" class="headerlink" title="2. ��Ⱦ��ָ"></a>2. ��Ⱦ��ָ</h3><h4 id="2-1-��T����"><a href="#2-1-��T����" class="headerlink" title="2.1 ��Ⱦ����"></a>2.1 ��Ⱦ����</h4><p>���������������ַֿ�<code>��Ⱦ��Texture</code>������RTT�Ľ���ں������������������ͼ���£�<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">top&gt;&quot;��ʯ+��ʯ&quot;] --Back--&gt; Back(sceneBack) </div><div class="line">top --Front--&gt; Front(sceneFront)</div><div class="line">bot&gt;���] --&gt; Main(sceneMain)</div><div class="line"></div><div class="line">Back --&gt; rttBack</div><div class="line">Front --&gt; rttFront</div><div class="line">Main --&gt; rttMain</div><div class="line"></div><div class="line">rttBack --&gt; finalTexture</div><div class="line">rttFront --&gt; finalTexture</div><div class="line">rttMain --&gt; finalTexture</div><div class="line"></div><div class="line">finalTexture --&gt; renderToScreen</div></pre></td></tr></table></figure></p>
-<h4 id="2-2-��������"><a href="#2-2-��������" class="headerlink" title="2.2 ��������"></a>2.2 ��������</h4><p>��������ʯ����<strong>�������+�������</strong>���е��ӵķ���������͸��������ֻ��������ɫ�Ĳ�ͬ���Խ������ý�����ʡ�</p>
+<h3 id="2-渲染戒指"><a href="#2-渲染戒指" class="headerlink" title="2. 渲染戒指"></a>2. 渲染戒指</h3><h4 id="2-1-渲染流程"><a href="#2-1-渲染流程" class="headerlink" title="2.1 渲染流程"></a>2.1 渲染流程</h4><p>　　对这三个部分分开<code>渲染到Texture</code>，最后把RTT的结果融合起来。初步想的序列图如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">top&gt;&quot;主石+副石&quot;] --Back--&gt; Back(sceneBack) </div><div class="line">top --Front--&gt; Front(sceneFront)</div><div class="line">bot&gt;戒臂] --&gt; Main(sceneMain)</div><div class="line"></div><div class="line">Back --&gt; rttBack</div><div class="line">Front --&gt; rttFront</div><div class="line">Main --&gt; rttMain</div><div class="line"></div><div class="line">rttBack --&gt; finalTexture</div><div class="line">rttFront --&gt; finalTexture</div><div class="line">rttMain --&gt; finalTexture</div><div class="line"></div><div class="line">finalTexture --&gt; renderToScreen</div></pre></td></tr></table></figure></p>
+<h4 id="2-2-材质设置"><a href="#2-2-材质设置" class="headerlink" title="2.2 材质设置"></a>2.2 材质设置</h4><p>　　对钻石采用<strong>正面材质+反面材质</strong>进行叠加的方法，主钻和副钻的区别只是在于颜色的不同，对戒臂则采用金属材质。</p>
 <blockquote>
-<p>��ʯ���ʣ�</p>
-<pre><code>- ���棺FrontMainMat
-- ���棺BackMainMat
-</code></pre><p>   ��ʯ���ʣ�</p>
-<pre><code>- ���棺Front2ndMat
-- ���棺Back2ndMat
-</code></pre><p> ��۲��ʣ�</p>
+<p>主石材质：</p>
+<pre><code>- 正面：FrontMainMat
+- 反面：BackMainMat
+</code></pre><p>   副石材质：</p>
+<pre><code>- 正面：Front2ndMat
+- 反面：Back2ndMat
+</code></pre><p> 戒臂材质：</p>
 <pre><code>- metalMat
 </code></pre></blockquote>
-<p>������Ȼ�����ǵ��ڵ���ϵ����ÿ������scene�У���Ҫ������Ⱦ����������úڣ�<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">��<span class="keyword">var</span> blackMat = <span class="keyword">new</span> THREE.MeshBasicMaterial(&#123;<span class="attr">color</span>:<span class="number">0x000000</span>&#125;);</div></pre></td></tr></table></figure></p>
-<p>�����������ܱ���ÿ��rttʱ�򱣳���ȷ���ڵ���ϵ��ʵ�ʵĲ������÷������£�</p>
+<p>　　当然，考虑到遮挡关系，在每个场景scene中，需要将不渲染的物体材质置黑：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">　<span class="keyword">var</span> blackMat = <span class="keyword">new</span> THREE.MeshBasicMaterial(&#123;<span class="attr">color</span>:<span class="number">0x000000</span>&#125;);</div></pre></td></tr></table></figure></p>
+<p>　　这样就能保持每次rtt时候保持正确的遮挡关系。实际的材质设置方法如下：</p>
 <table>
 <thead>
 <tr>
-<th>����\����</th>
+<th>部件\场景</th>
 <th style="text-align:left">sceneBack</th>
 <th style="text-align:left">sceneFront</th>
 <th>sceneMain</th>
@@ -382,19 +382,19 @@
 </thead>
 <tbody>
 <tr>
-<td>��ʯ</td>
+<td>主石</td>
 <td style="text-align:left">BackMainMat</td>
 <td style="text-align:left">FrontMainMat</td>
 <td>blackMat</td>
 </tr>
 <tr>
-<td>��ʯ</td>
+<td>副石</td>
 <td style="text-align:left">Back2ndMat</td>
 <td style="text-align:left">Front2ndMat</td>
 <td>blackMat</td>
 </tr>
 <tr>
-<td>���</td>
+<td>戒臂</td>
 <td style="text-align:left">blackMat</td>
 <td style="text-align:left">blackMat</td>
 <td>metalMat</td>
@@ -402,7 +402,7 @@
 </tbody>
 </table>
 <pre><code>&lt;!--more--&gt;
-</code></pre><p>����Ȼ���������������һ���ķ���������ȴֻ��ʾ��������ɫ��<br>����<img src="https://i1.piimg.com/567571/a6f2574bd40973d2.png" alt=""><br>����<br>���������ԭ�����ڸ�������֮��û�����������㣬�������ڽ����ģ������û�д�׵ģ����½���ڵ��˸���ı��档<br>����<br>����<br>�����ر�����͸�����ʵ�<strong>��Ȳ���</strong>,��<code>depthWrite:false</code>�����ǣ�<br>����<img src="https://p1.bpimg.com/567571/19573b50208fed48.png" alt=""><br>����<br>�������濴������ò��ûʲô���⣬Ȼ��һ��ת��<br>����<img src="https://p1.bqimg.com/567571/1ba0e9ea414fc698.png" alt=""><br>����<br>����GG.�ر���Ȳ��Ծ���һ����·��<br>����<br>���������޷�ʵ����ʯ����֮���ʵ�ʲ������㣬���ַ����͸����в�ͨ�����ǿ���ʹ���µķ�����ʵ�֡�<br>����<br>����To be continued…</p>
+</code></pre><p>　　然而，副钻跟主钻用一样的方法，副钻却只显示了正面颜色。<br>　　<img src="https://i1.piimg.com/567571/a6f2574bd40973d2.png" alt=""><br>　　<br>　　最后发现原因在于副钻与戒臂之间没有做布尔运算，即副钻在戒臂上模型上是没有打孔的，导致戒臂遮挡了副钻的背面。<br>　　<br>　　<br>　　关闭主钻和副钻材质的<strong>深度测试</strong>,即<code>depthWrite:false</code>。于是：<br>　　<img src="https://p1.bpimg.com/567571/19573b50208fed48.png" alt=""><br>　　<br>　　正面看起来，貌似没什么问题，然而一旋转：<br>　　<img src="https://p1.bqimg.com/567571/1ba0e9ea414fc698.png" alt=""><br>　　<br>　　GG.关闭深度测试就是一条死路。<br>　　<br>　　由于无法实现钻石与戒臂之间的实际布尔运算，这种方法就根本行不通，于是考虑使用新的方法来实现。<br>　　<br>　　To be continued…</p>
 
           
         
