@@ -458,8 +458,9 @@
 
           
   <div class="comments" id="comments">
-  
-  <div id="commentit"></div>
+
+<!-- <noscript>Please enable JavaScript to view the comment form powered by <a href="https://commentit.io/">Comm(ent|it)</a></noscript>
+<div id="commentit"></div>
 <script type="text/javascript">
   /** CONFIGURATION VARIABLES **/
   var commentitUsername = 'trianglestrip';
@@ -474,9 +475,11 @@
       commentit.src = 'https://commentit.io/static/embed/dist/commentit.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(commentit);
   })();
-</script>
+</script> -->
+<!-- 
 
- <!--  <div id="container"></div>
+
+  <div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
@@ -496,8 +499,8 @@ const myTheme = {
   var gitment = new Gitment({
     theme: myTheme,
     id: location.href, // 可选。默认为 location.href
-    owner: trianglestrip,
-    repo: '存储评论的 repo',
+    owner: 'trianglestrip',
+    repo: 'trianglestrip/trianglestrip.github.io',
     oauth: {
       client_id: 1dbeddae3b61c829dadf,
       client_secret: a8382bf5f7751e359cecffa46a0a55f9fbcb6a35,
@@ -505,7 +508,13 @@ const myTheme = {
   })
   gitment.render('container')
 </script> -->
+
     
+     
+       <div id="gitment-container"></div>
+     
+    
+
   </div>
 
 
@@ -815,6 +824,27 @@ const myTheme = {
 
 
 
+
+
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           var gitment = new Gitment({
+              id: document.location.href, 
+               owner: 'trianglestrip',
+               repo: 'trianglestrip.github.io',
+               oauth: {
+                   client_id: '1dbeddae3b61c829dadf',
+                   client_secret: 'a8382bf5f7751e359cecffa46a0a55f9fbcb6a35',
+               }});
+           gitment.render('gitment-container');
+       </script>
+   
 
 
 
