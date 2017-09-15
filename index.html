@@ -45,32 +45,6 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
@@ -278,7 +252,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://trianglestrip.github.io/20170914/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://trianglestrip.github.io/20170314/戒指渲染(一)——错误的实现方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="凌晨一点">
@@ -297,7 +271,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/20170914/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/20170314/戒指渲染(一)——错误的实现方法/" itemprop="url">戒指渲染(一)——错误的实现方法</a></h1>
         
 
         <div class="post-meta">
@@ -309,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-14T21:16:39+08:00">
-                2017-09-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-14T22:18:00+08:00">
+                2017-03-14
               </time>
             
 
@@ -325,8 +299,212 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-03-24T20:01:36+08:00">
-                2017-03-24
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-16T00:34:59+08:00">
+                2017-09-16
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/webgl/" itemprop="url" rel="index">
+                    <span itemprop="name">webgl</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  419
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <hr>
+<h1 id="1-戒指部件分类"><a href="#1-戒指部件分类" class="headerlink" title="1. 戒指部件分类"></a>1. 戒指部件分类</h1><blockquote>
+<p>   戒指可以简单分为三部分：<br> 主石<br> 副石<br> 戒臂</p>
+</blockquote>
+<h1 id="2-渲染戒指"><a href="#2-渲染戒指" class="headerlink" title="2. 渲染戒指"></a>2. 渲染戒指</h1><h2 id="2-1-渲染流程"><a href="#2-1-渲染流程" class="headerlink" title="2.1 渲染流程"></a>2.1 渲染流程</h2><p>　　对这三个部分分开<code>渲染到Texture</code>，最后把RTT的结果融合起来。初步想的序列图如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">top&gt;&quot;主石+副石&quot;] --Back--&gt; Back(sceneBack) </div><div class="line">top --Front--&gt; Front(sceneFront)</div><div class="line">bot&gt;戒臂] --&gt; Main(sceneMain)</div><div class="line"></div><div class="line">Back --&gt; rttBack</div><div class="line">Front --&gt; rttFront</div><div class="line">Main --&gt; rttMain</div><div class="line"></div><div class="line">rttBack --&gt; finalTexture</div><div class="line">rttFront --&gt; finalTexture</div><div class="line">rttMain --&gt; finalTexture</div><div class="line"></div><div class="line">finalTexture --&gt; renderToScreen</div></pre></td></tr></table></figure></p>
+<h2 id="2-2-材质设置"><a href="#2-2-材质设置" class="headerlink" title="2.2 材质设置"></a>2.2 材质设置</h2><p>　　对钻石采用<strong>正面材质+反面材质</strong>进行叠加的方法，主钻和副钻的区别只是在于颜色的不同，对戒臂则采用金属材质。</p>
+<blockquote>
+<p>主石材质：</p>
+<pre><code>- 正面：FrontMainMat
+- 反面：BackMainMat
+</code></pre><p>   副石材质：</p>
+<pre><code>- 正面：Front2ndMat
+- 反面：Back2ndMat
+</code></pre><p> 戒臂材质：</p>
+<pre><code>- metalMat
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/20170314/戒指渲染(一)——错误的实现方法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://trianglestrip.github.io/20170314/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="凌晨一点">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="凌晨一点_日记本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/20170314/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-14T21:16:00+08:00">
+                2017-03-14
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-16T00:20:53+08:00">
+                2017-09-16
               </time>
             
           </span>
@@ -401,240 +579,6 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://trianglestrip.github.io/20170314/戒指渲染(一)——错误的实现方法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="凌晨一点">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="凌晨一点_日记本">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/20170314/戒指渲染(一)——错误的实现方法/" itemprop="url">戒指渲染(一)——错误的实现方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-14T22:18:00+08:00">
-                2017-03-14
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-15T01:17:40+08:00">
-                2017-09-15
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/webgl/" itemprop="url" rel="index">
-                    <span itemprop="name">webgl</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  420
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <hr>
-<h3 id="1-戒指部件分类"><a href="#1-戒指部件分类" class="headerlink" title="1. 戒指部件分类"></a>1. 戒指部件分类</h3><blockquote>
-<p>   戒指可以简单分为三部分：<br> 主石<br> 副石<br> 戒臂</p>
-</blockquote>
-<h3 id="2-渲染戒指"><a href="#2-渲染戒指" class="headerlink" title="2. 渲染戒指"></a>2. 渲染戒指</h3><h4 id="2-1-渲染流程"><a href="#2-1-渲染流程" class="headerlink" title="2.1 渲染流程"></a>2.1 渲染流程</h4><p>　　对这三个部分分开<code>渲染到Texture</code>，最后把RTT的结果融合起来。初步想的序列图如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">top&gt;&quot;主石+副石&quot;] --Back--&gt; Back(sceneBack) </div><div class="line">top --Front--&gt; Front(sceneFront)</div><div class="line">bot&gt;戒臂] --&gt; Main(sceneMain)</div><div class="line"></div><div class="line">Back --&gt; rttBack</div><div class="line">Front --&gt; rttFront</div><div class="line">Main --&gt; rttMain</div><div class="line"></div><div class="line">rttBack --&gt; finalTexture</div><div class="line">rttFront --&gt; finalTexture</div><div class="line">rttMain --&gt; finalTexture</div><div class="line"></div><div class="line">finalTexture --&gt; renderToScreen</div></pre></td></tr></table></figure></p>
-<h4 id="2-2-材质设置"><a href="#2-2-材质设置" class="headerlink" title="2.2 材质设置"></a>2.2 材质设置</h4><p>　　对钻石采用<strong>正面材质+反面材质</strong>进行叠加的方法，主钻和副钻的区别只是在于颜色的不同，对戒臂则采用金属材质。</p>
-<blockquote>
-<p>主石材质：</p>
-<pre><code>- 正面：FrontMainMat
-- 反面：BackMainMat
-</code></pre><p>   副石材质：</p>
-<pre><code>- 正面：Front2ndMat
-- 反面：Back2ndMat
-</code></pre><p> 戒臂材质：</p>
-<pre><code>- metalMat
-</code></pre></blockquote>
-<p>　　当然，考虑到遮挡关系，在每个场景scene中，需要将不渲染的物体材质置黑：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">　<span class="keyword">var</span> blackMat = <span class="keyword">new</span> THREE.MeshBasicMaterial(&#123;<span class="attr">color</span>:<span class="number">0x000000</span>&#125;);</div></pre></td></tr></table></figure></p>
-<p>　　这样就能保持每次rtt时候保持正确的遮挡关系。实际的材质设置方法如下：</p>
-<table>
-<thead>
-<tr>
-<th>部件\场景</th>
-<th style="text-align:left">sceneBack</th>
-<th style="text-align:left">sceneFront</th>
-<th>sceneMain</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>主石</td>
-<td style="text-align:left">BackMainMat</td>
-<td style="text-align:left">FrontMainMat</td>
-<td>blackMat</td>
-</tr>
-<tr>
-<td>副石</td>
-<td style="text-align:left">Back2ndMat</td>
-<td style="text-align:left">Front2ndMat</td>
-<td>blackMat</td>
-</tr>
-<tr>
-<td>戒臂</td>
-<td style="text-align:left">blackMat</td>
-<td style="text-align:left">blackMat</td>
-<td>metalMat</td>
-</tr>
-</tbody>
-</table>
-<pre><code>&lt;!--more--&gt;
-</code></pre><p>　　然而，副钻跟主钻用一样的方法，副钻却只显示了正面颜色。<br>　　<img src="https://i1.piimg.com/567571/a6f2574bd40973d2.png" alt=""><br>　　<br>　　最后发现原因在于副钻与戒臂之间没有做布尔运算，即副钻在戒臂上模型上是没有打孔的，导致戒臂遮挡了副钻的背面。<br>　　<br>　　<br>　　关闭主钻和副钻材质的<strong>深度测试</strong>,即<code>depthWrite:false</code>。于是：<br>　　<img src="https://p1.bpimg.com/567571/19573b50208fed48.png" alt=""><br>　　<br>　　正面看起来，貌似没什么问题，然而一旋转：<br>　　<img src="https://p1.bqimg.com/567571/1ba0e9ea414fc698.png" alt=""><br>　　<br>　　GG.关闭深度测试就是一条死路。<br>　　<br>　　由于无法实现钻石与戒臂之间的实际布尔运算，这种方法就根本行不通，于是考虑使用新的方法来实现。<br>　　<br>　　To be continued…</p>
 
           
         
@@ -812,7 +756,7 @@
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
     <span title="Site words total count">
-      498
+      497
     </span>
   
 </div>
