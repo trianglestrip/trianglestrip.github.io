@@ -603,7 +603,7 @@
    
    
    
-   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+ <!--   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
    
        <script type="text/javascript">
@@ -617,7 +617,22 @@
                }});
            gitment.render('gitment-container');
        </script>
-   
+    -->
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    var gitalk = new Gitalk({
+          clientID:  '1dbeddae3b61c829dadf',
+          clientSecret: 'a8382bf5f7751e359cecffa46a0a55f9fbcb6a35',
+          repo: 'trianglestrip.github.io',
+          id: window.location.pathname,
+          owner: 'trianglestrip',
+          admin: ['trianglestrip,xoyofan, xofa'],
+          distractionFreeMode: false,
+     })
+    gitalk.render('gitment-container')
+  </script>
 
 
 
