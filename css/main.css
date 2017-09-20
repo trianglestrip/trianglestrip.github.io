@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #612fff;
+  background: #0fff2e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1996,7 +1996,7 @@ pre .javascript .function {
 #SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span.click-prop-gw span.prop-span {
   background-image: none !important;
   visibility: hidden !important;
-  display: none;
+  display: none !important;
 }
 #SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span.click-prop-gw .prop-span a {
   background-image: none !important;
