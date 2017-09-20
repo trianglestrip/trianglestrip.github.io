@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #18b696;
+  background: #612fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1976,13 +1976,28 @@ pre .javascript .function {
 .cc-license img {
   display: inline-block;
 }
-#SOHUCS #SOHU_MAIN .module-mobile-cmt-list .list-footer-wrapper-wap .cy-logo,
+#SOHUCS #SOHU_MAIN .module-mobile-cmt-list .list-footer-wrapper-wap .cy-logo {
+  visibility: hidden !important;
+  background-image: none !important;
+}
 #SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w,
 #SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w .service-wrap-w,
-#SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w .service-wrap-w a,
-#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w div.post-wrap-main,
-#SOHUCS #SOHU_MAIN .module-mobile-cmt-list .list-wrapper-wap .list-container-wap .list-item-wap .list-content-wrapper-wap .list-ctrl-area-wap .ctrl-item-wrapper-wap .ctrl-item-wap .prop-ico,
-#SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span.click-prop-gw span.prop-span,
+#SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w .service-wrap-w a {
+  display: none !important;
+  visibility: hidden !important;
+}
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w div.post-wrap-main {
+  background-image: none;
+}
+#SOHUCS #SOHU_MAIN .module-mobile-cmt-list .list-wrapper-wap .list-container-wap .list-item-wap .list-content-wrapper-wap .list-ctrl-area-wap .ctrl-item-wrapper-wap .ctrl-item-wap .prop-ico {
+  background-image: none !important;
+  visibility: hidden !important;
+}
+#SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span.click-prop-gw span.prop-span {
+  background-image: none !important;
+  visibility: hidden !important;
+  display: none;
+}
 #SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span.click-prop-gw .prop-span a {
   background-image: none !important;
   visibility: hidden !important;
