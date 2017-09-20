@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a3ff79;
+  background: #ba2e54;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1977,7 +1977,8 @@ pre .javascript .function {
   display: inline-block;
 }
 #SOHUCS #SOHU_MAIN .module-mobile-cmt-list .list-footer-wrapper-wap .cy-logo {
-  background-image: none;
+  visibility: hidden !important;
+  background-image: none !important;
 }
 #SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w,
 #SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w .service-wrap-w,
@@ -1989,7 +1990,8 @@ pre .javascript .function {
   background-image: none;
 }
 #SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span.click-prop-gw .prop-span a {
-  background-image: none;
+  background-image: none !important;
+  visibility: hidden !important;
 }
 .theme-next #ds-thread #ds-reset {
   color: #555;
