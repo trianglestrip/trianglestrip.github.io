@@ -2,8 +2,10 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="zh-Hans">
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -77,7 +79,7 @@
 <meta name="description" content="准备知识次表面散射当光线从一种介质射向另外一种介质时，根据其行进路线，可以被分为两个部分：一部分光线在介质交界处发生了反射， 并未进入另外一种介质，另外一部分光线则进入了另一种介质。反射部分的光照的辐射亮度（radiance）和入射光照的辐射照度（irradiance）的比例是一个和入射角度、出射角度相关的函数，这个函数就被称之为双向反射分布函数（BRDF）。相应的，穿越介质的那部分光照的辐射亮度">
 <meta name="keywords" content="次表面散射,皮肤渲染">
 <meta property="og:type" content="article">
-<meta property="og:title" content="牙齿渲染--基于屏幕空间的次表面散射方法">
+<meta property="og:title" content="牙齿渲染——基于屏幕空间的次表面散射方法">
 <meta property="og:url" content="https://trianglestrip.github.io/20160129/牙齿渲染-基于屏幕空间的次表面散射方法.html">
 <meta property="og:site_name" content="凌晨一点的日记">
 <meta property="og:description" content="准备知识次表面散射当光线从一种介质射向另外一种介质时，根据其行进路线，可以被分为两个部分：一部分光线在介质交界处发生了反射， 并未进入另外一种介质，另外一部分光线则进入了另一种介质。反射部分的光照的辐射亮度（radiance）和入射光照的辐射照度（irradiance）的比例是一个和入射角度、出射角度相关的函数，这个函数就被称之为双向反射分布函数（BRDF）。相应的，穿越介质的那部分光照的辐射亮度">
@@ -92,9 +94,9 @@
 <meta property="og:image" content="https://pic.opengl.cc/tooth/gongshi.png">
 <meta property="og:image" content="https://pic.opengl.cc/tooth/bj3.jpg">
 <meta property="og:image" content="https://pic.opengl.cc/tooth/bj5.jpg">
-<meta property="og:updated_time" content="2017-09-29T13:08:59.988Z">
+<meta property="og:updated_time" content="2017-09-29T13:15:13.206Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="牙齿渲染--基于屏幕空间的次表面散射方法">
+<meta name="twitter:title" content="牙齿渲染——基于屏幕空间的次表面散射方法">
 <meta name="twitter:description" content="准备知识次表面散射当光线从一种介质射向另外一种介质时，根据其行进路线，可以被分为两个部分：一部分光线在介质交界处发生了反射， 并未进入另外一种介质，另外一部分光线则进入了另一种介质。反射部分的光照的辐射亮度（radiance）和入射光照的辐射照度（irradiance）的比例是一个和入射角度、出射角度相关的函数，这个函数就被称之为双向反射分布函数（BRDF）。相应的，穿越介质的那部分光照的辐射亮度">
 <meta name="twitter:image" content="https://pic.opengl.cc/tooth/btdf.png">
 
@@ -106,10 +108,10 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -132,7 +134,7 @@
 
 
 
-  <title>牙齿渲染--基于屏幕空间的次表面散射方法 | 凌晨一点的日记</title>
+  <title>牙齿渲染——基于屏幕空间的次表面散射方法 | 凌晨一点的日记</title>
   
 
 
@@ -276,7 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">牙齿渲染--基于屏幕空间的次表面散射方法</h1>
+          <h1 class="post-title" itemprop="name headline">牙齿渲染——基于屏幕空间的次表面散射方法</h1>
         
 
         <div class="post-meta">
@@ -323,17 +325,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/20160129/牙齿渲染-基于屏幕空间的次表面散射方法.html#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="20160129/牙齿渲染-基于屏幕空间的次表面散射方法.html" itemprop="commentsCount"></span>
-                </a>
-              
             
           
 
@@ -439,7 +430,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://trianglestrip.github.io/20160129/牙齿渲染-基于屏幕空间的次表面散射方法.html" title="牙齿渲染--基于屏幕空间的次表面散射方法">https://trianglestrip.github.io/20160129/牙齿渲染-基于屏幕空间的次表面散射方法.html</a>
+    <a href="https://trianglestrip.github.io/20160129/牙齿渲染-基于屏幕空间的次表面散射方法.html" title="牙齿渲染——基于屏幕空间的次表面散射方法">https://trianglestrip.github.io/20160129/牙齿渲染-基于屏幕空间的次表面散射方法.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -706,6 +697,13 @@ const myTheme = {
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -797,11 +795,6 @@ const myTheme = {
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
   </div>
@@ -910,25 +903,44 @@ const myTheme = {
 
 
 
-  
-    <script type="text/javascript">
-    (function(){
-      var appid = 'cysVXW3G4';
-      var conf = '6ee52971b802b6d034dbee11e7c815f9';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
-        window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    })();
-    </script>
-    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cysVXW3G4"></script>
-  
 
 
 
 
+   
+   
+   
+   
+ <!--   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           var gitment = new Gitment({
+              id: document.location.href, 
+               owner: 'trianglestrip',
+               repo: 'trianglestrip.github.io',
+               oauth: {
+                   client_id: '1dbeddae3b61c829dadf',
+                   client_secret: 'a8382bf5f7751e359cecffa46a0a55f9fbcb6a35',
+               }});
+           gitment.render('gitment-container');
+       </script>
+    -->
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    var gitalk = new Gitalk({
+          clientID:  '1dbeddae3b61c829dadf',
+          clientSecret: 'a8382bf5f7751e359cecffa46a0a55f9fbcb6a35',
+          repo: 'trianglestrip.github.io',
+          id: window.location.pathname,
+          owner: 'trianglestrip',
+          admin: 'trianglestrip',
+          distractionFreeMode: false,
+     })
+    gitalk.render('gitment-container')
+  </script>
 
 
 
