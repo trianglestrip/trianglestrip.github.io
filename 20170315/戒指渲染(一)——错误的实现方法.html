@@ -84,14 +84,14 @@
 <meta property="og:site_name" content="凌晨一点的日记">
 <meta property="og:description" content="戒指部件分类    戒指可以简单分为三部分： 主石 副石 戒臂  渲染戒指渲染流程　　对这三个部分分开渲染到Texture，最后把RTT的结果融合起来。初步想的序列图如下：  材质设置　　对钻石采用正面材质+反面材质进行叠加的方法，主钻和副钻的区别只是在于颜色的不同，对戒臂则采用金属材质。  主石材质： - 正面：FrontMainMat - 反面：BackMainMat    副石材质： -">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://owc1seupa.bkt.clouddn.com/img/0.png">
-<meta property="og:image" content="http://owc1seupa.bkt.clouddn.com/img/1.png">
-<meta property="og:image" content="http://owc1seupa.bkt.clouddn.com/img/2.png">
-<meta property="og:updated_time" content="2017-09-16T03:56:43.235Z">
+<meta property="og:image" content="http://pic.opengl.cc/diamond/0.png">
+<meta property="og:image" content="http://pic.opengl.cc/diamond/1.png">
+<meta property="og:image" content="http://pic.opengl.cc/diamond/2.png">
+<meta property="og:updated_time" content="2017-10-13T12:50:50.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="戒指渲染(一)——错误的实现方法">
 <meta name="twitter:description" content="戒指部件分类    戒指可以简单分为三部分： 主石 副石 戒臂  渲染戒指渲染流程　　对这三个部分分开渲染到Texture，最后把RTT的结果融合起来。初步想的序列图如下：  材质设置　　对钻石采用正面材质+反面材质进行叠加的方法，主钻和副钻的区别只是在于颜色的不同，对戒臂则采用金属材质。  主石材质： - 正面：FrontMainMat - 反面：BackMainMat    副石材质： -">
-<meta name="twitter:image" content="http://owc1seupa.bkt.clouddn.com/img/0.png">
+<meta name="twitter:image" content="http://pic.opengl.cc/diamond/0.png">
 
 
 
@@ -352,7 +352,7 @@
 <h1 id="戒指部件分类"><a href="#戒指部件分类" class="headerlink" title="戒指部件分类"></a>戒指部件分类</h1><blockquote>
 <p>   戒指可以简单分为三部分：<br> 主石<br> 副石<br> 戒臂</p>
 </blockquote>
-<h1 id="渲染戒指"><a href="#渲染戒指" class="headerlink" title="渲染戒指"></a>渲染戒指</h1><h2 id="渲染流程"><a href="#渲染流程" class="headerlink" title="渲染流程"></a>渲染流程</h2><p>　　对这三个部分分开<code>渲染到Texture</code>，最后把RTT的结果融合起来。初步想的序列图如下：<br> <img src="http://owc1seupa.bkt.clouddn.com/img/0.png" alt=""></p>
+<h1 id="渲染戒指"><a href="#渲染戒指" class="headerlink" title="渲染戒指"></a>渲染戒指</h1><h2 id="渲染流程"><a href="#渲染流程" class="headerlink" title="渲染流程"></a>渲染流程</h2><p>　　对这三个部分分开<code>渲染到Texture</code>，最后把RTT的结果融合起来。初步想的序列图如下：<br> <img src="http://pic.opengl.cc/diamond/0.png" alt=""></p>
 <h2 id="材质设置"><a href="#材质设置" class="headerlink" title="材质设置"></a>材质设置</h2><p>　　对钻石采用<strong>正面材质+反面材质</strong>进行叠加的方法，主钻和副钻的区别只是在于颜色的不同，对戒臂则采用金属材质。</p>
 <blockquote>
 <p>主石材质：</p>
@@ -397,7 +397,7 @@
 </tr>
 </tbody>
 </table>
-<p>　　然而，副钻跟主钻用一样的方法，副钻却只显示了正面颜色。<br>　　<br>　　最后发现原因在于副钻与戒臂之间没有做布尔运算，即副钻在戒臂上模型上是没有打孔的，导致戒臂遮挡了副钻的背面。<br>　　<br>　　<br>　　关闭主钻和副钻材质的<strong>深度测试</strong>,即<code>depthWrite:false</code>。于是：<br>　　<img src="http://owc1seupa.bkt.clouddn.com/img/1.png" alt=""><br>　　<br>　　正面看起来，貌似没什么问题，然而一旋转：<br>　　<img src="http://owc1seupa.bkt.clouddn.com/img/2.png" alt=""><br>　　<br>　　GG.关闭深度测试就是一条死路。<br>　　<br>　　由于无法实现钻石与戒臂之间的实际布尔运算，这种方法就根本行不通，于是考虑使用新的方法来实现。<br>　　<br>　　To be continued…</p>
+<p>　　然而，副钻跟主钻用一样的方法，副钻却只显示了正面颜色。<br>　　<br>　　最后发现原因在于副钻与戒臂之间没有做布尔运算，即副钻在戒臂上模型上是没有打孔的，导致戒臂遮挡了副钻的背面。<br>　　<br>　　<br>　　关闭主钻和副钻材质的<strong>深度测试</strong>,即<code>depthWrite:false</code>。于是：<br>　　<img src="http://pic.opengl.cc/diamond/1.png" alt=""><br>　　<br>　　正面看起来，貌似没什么问题，然而一旋转：<br>　　<img src="http://pic.opengl.cc/diamond/2.png" alt=""><br>　　<br>　　GG.关闭深度测试就是一条死路。<br>　　<br>　　由于无法实现钻石与戒臂之间的实际布尔运算，这种方法就根本行不通，于是考虑使用新的方法来实现。<br>　　<br>　　To be continued…</p>
 
       
     </div>
@@ -691,7 +691,7 @@
     </span>
     
     <span title="Site words total count">
-      7.3k
+      6.8k
     </span>
   
 
