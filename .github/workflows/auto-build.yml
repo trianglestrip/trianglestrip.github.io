@@ -1,0 +1,100 @@
+name: 自动构建和部署博客
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'posts/**/*.md'
+      - 'content/**/*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔍 检查是否有新文章
+        id: check_posts
+        run: |
+          if [ -d "posts" ] && [ "$(ls -A posts/*.md 2>/dev/null)" ]; then
+            echo "has_posts=true" >> $GITHUB_OUTPUT
+            echo "✅ 检测到新文章"
+          else
+            echo "has_posts=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ 没有检测到新文章"
+          fi
+
+      - name: 🔧 设置 Hugo
+        if: steps.check_posts.outputs.has_posts == 'true'
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: 📝 处理新文章
+        if: steps.check_posts.outputs.has_posts == 'true'
+        run: |
+          echo "处理 posts 目录中的文章..."
+          
+          if [ -d "posts" ]; then
+            mkdir -p content/posts
+            
+            for file in posts/*.md; do
+              if [ -f "$file" ]; then
+                filename=$(basename "$file")
+                echo "处理文章: $filename"
+                cp "$file" "content/posts/$filename"
+              fi
+            done
+          fi
+
+      - name: 🏗️ 构建网站
+        if: steps.check_posts.outputs.has_posts == 'true'
+        run: |
+          if [ -f "config.toml" ] || [ -f "config.yaml" ] || [ -f "hugo.toml" ]; then
+            echo "使用 Hugo 构建网站..."
+            hugo --minify
+          else
+            echo "⚠️ 未找到 Hugo 配置文件"
+            echo "如果你的网站不使用 Hugo，请修改此工作流"
+            exit 0
+          fi
+
+      - name: 🚀 部署到 GitHub Pages
+        if: steps.check_posts.outputs.has_posts == 'true'
+        run: |
+          if [ -d "public" ]; then
+            echo "部署构建结果..."
+            
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            
+            cp -r public/* .
+            rm -rf public
+            
+            git add .
+            git commit -m "🤖 自动部署: 更新博客内容" || echo "没有变更需要提交"
+            git push origin master
+            
+            echo "✅ 部署完成！"
+          else
+            echo "⚠️ 未找到 public 目录，跳过部署"
+          fi
+
+      - name: 📊 构建摘要
+        if: always()
+        run: |
+          echo "### 📊 构建摘要" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- 🌐 网站地址: https://${REPO_OWNER}.github.io" >> $GITHUB_STEP_SUMMARY
+          echo "- 📝 文章数量: $(ls -1 posts/*.md 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "- ⏰ 构建时间: $(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
