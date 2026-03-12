@@ -129,6 +129,14 @@
     window.addEventListener('message', async (e) => {
         if (e.data.type === 'SAVE_TOKEN') {
             GM_setValue('github_token', e.data.token);
+        } else if (e.data.type === 'REQUEST_TOKEN') {
+            const token = GM_getValue('github_token', '');
+            if (token && e.source) {
+                e.source.postMessage({
+                    type: 'INIT_TOKEN',
+                    token: token
+                }, '*');
+            }
         } else if (e.data.type === 'PUBLISH_REQUEST') {
             const token = GM_getValue('github_token', '');
             
