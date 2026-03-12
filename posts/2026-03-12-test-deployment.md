@@ -2,8 +2,8 @@
 title: "使用油猴脚本打造无服务器博客发布系统"
 date: 2026-03-12T16:45:00+08:00
 slug: "tampermonkey-blog-editor"
-categories: ["技术"]
-tags: ["GitHub", "博客", "自动化", "油猴脚本"]
+categories: ["documentation"]
+tags: ["configuration", "content"]
 draft: false
 ---
 
