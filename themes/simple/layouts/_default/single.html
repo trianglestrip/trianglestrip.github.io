@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="single">
+    <h1>{{ .Title }}</h1>
+    <time>{{ .Date.Format "2006-01-02" }}</time>
+    {{ if .Params.categories }}
+    <div class="categories">
+        分类: {{ range .Params.categories }}<span>{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+    {{ if .Params.tags }}
+    <div class="tags">
+        标签: {{ range .Params.tags }}<span>{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

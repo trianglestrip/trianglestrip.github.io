@@ -4,8 +4,12 @@ on:
   push:
     branches:
       - master
+      - hugo-source
     paths:
       - 'posts/**/*.md'
+      - 'content/**/*.md'
+      - 'hugo.toml'
+      - 'themes/**'
   workflow_dispatch:
 
 permissions:
@@ -16,48 +20,39 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: 📥 检出 master 分支（静态网站）
+      - name: 📥 检出代码
         uses: actions/checkout@v4
         with:
-          ref: master
-          path: master
-
-      - name: 📥 检出 blog-source 分支（Hugo 源文件）
-        uses: actions/checkout@v4
-        with:
-          ref: blog-source
-          path: blog-source
+          ref: ${{ github.ref_name == 'master' && 'master' || 'hugo-source' }}
+          fetch-depth: 0
 
       - name: 🔧 设置 Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          extended: true
+          extended: false
 
-      - name: 📝 复制新文章到 Hugo 源目录
+      - name: 📝 处理文章
         run: |
-          echo "检查 master 分支的 posts 目录..."
-          if [ -d "master/posts" ] && [ "$(ls -A master/posts/*.md 2>/dev/null)" ]; then
-            echo "✅ 发现新文章，开始复制..."
-            mkdir -p blog-source/content/posts
+          # 如果是从 master 分支触发，切换到 hugo-source
+          if [ "${{ github.ref_name }}" = "master" ]; then
+            echo "从 master 分支检测到新文章，切换到 hugo-source..."
+            git fetch origin hugo-source:hugo-source
+            git checkout hugo-source
             
-            for file in master/posts/*.md; do
-              if [ -f "$file" ]; then
-                filename=$(basename "$file")
-                echo "复制: $filename"
-                cp "$file" "blog-source/content/posts/$filename"
-              fi
-            done
-            
-            echo "📊 文章列表:"
-            ls -lh blog-source/content/posts/*.md
-          else
-            echo "⚠️ 没有发现新文章"
-            exit 0
+            # 从 master 复制新文章
+            git checkout master -- posts/
+            if [ -d "posts" ] && [ "$(ls -A posts/*.md 2>/dev/null)" ]; then
+              echo "复制新文章到 content/posts/..."
+              mkdir -p content/posts
+              cp posts/*.md content/posts/ 2>/dev/null || true
+            fi
           fi
+          
+          echo "📊 当前文章列表:"
+          ls -lh content/posts/*.md 2>/dev/null || echo "暂无文章"
 
       - name: 🏗️ 使用 Hugo 构建网站
-        working-directory: ./blog-source
         run: |
           echo "开始构建..."
           hugo --minify
@@ -66,22 +61,24 @@ jobs:
 
       - name: 🚀 部署到 master 分支
         run: |
-          cd master
-          
           # 配置 Git
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 删除旧的 HTML 文件（保留 posts 目录和配置文件）
-          echo "清理旧文件..."
-          find . -maxdepth 1 -type f -name "*.html" -delete
-          find . -maxdepth 1 -type f -name "*.xml" -delete
-          find . -maxdepth 1 -type f -name "*.json" -delete
-          rm -rf css js lib images svg categories tags about first page pages 2>/dev/null || true
+          # 切换到 master 分支
+          git fetch origin master:master
+          git checkout master
           
-          # 复制新构建的文件
-          echo "复制新文件..."
-          cp -r ../blog-source/public/* .
+          # 删除旧的静态文件（保留必要文件）
+          echo "清理旧文件..."
+          find . -maxdepth 1 -type f \( -name "*.html" -o -name "*.xml" -o -name "*.json" \) -delete 2>/dev/null || true
+          rm -rf css js lib images svg categories tags about page pages first 2>/dev/null || true
+          
+          # 从 public 复制新文件
+          echo "复制新构建的文件..."
+          git checkout hugo-source -- public/
+          cp -r public/* .
+          rm -rf public
           
           # 提交更改
           git add .
@@ -91,9 +88,9 @@ jobs:
             git commit -m "🤖 自动构建: 更新博客内容
 
 通过 GitHub Actions 自动构建
-- 来源: blog-source 分支
-- 新文章: $(ls -1 posts/*.md 2>/dev/null | wc -l) 篇
-- 构建时间: $(date '+%Y-%m-%d %H:%M:%S')"
+- 来源: hugo-source 分支
+- 文章数量: $(ls -1 content/posts/*.md 2>/dev/null | wc -l) 篇
+- 构建时间: $(date '+%Y-%m-%d %H:%M:%S')" || true
             
             git push origin master
             echo "✅ 部署完成！"
@@ -105,6 +102,6 @@ jobs:
           echo "### 📊 构建摘要" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- 🌐 网站地址: https://trianglestrip.github.io" >> $GITHUB_STEP_SUMMARY
-          echo "- 📝 文章数量: $(ls -1 master/posts/*.md 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "- 📝 文章数量: $(find content/posts -name "*.md" 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
           echo "- ⏰ 构建时间: $(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
           echo "- ✅ 状态: 构建完成" >> $GITHUB_STEP_SUMMARY

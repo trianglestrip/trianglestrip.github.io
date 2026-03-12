@@ -1,0 +1,72 @@
+baseURL = "https://trianglestrip.github.io/"
+languageCode = "zh-cn"
+title = "xoyofan博客"
+theme = "simple"
+
+[params]
+  version = "0.2.X"
+  description = "xoyofan博客"
+  keywords = ["博客", "技术", "Hugo"]
+  defaultTheme = "auto"
+  
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    
+    [params.header.title]
+      name = "xoyofan"
+      pre = "<i class='far fa-kiss-wink-heart fa-fw'></i>"
+
+  [params.footer]
+    enable = true
+    hugo = true
+    copyright = true
+    author = true
+    since = 2019
+    
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = "/images/avatar.png"
+      subtitle = "一个简洁、优雅且高效的 Hugo 主题"
+      social = true
+      
+  [params.social]
+    GitHub = "trianglestrip"
+    Email = "voovoo@qq.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "所有文章"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 4
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

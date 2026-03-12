@@ -1,0 +1,49 @@
+name: 自动构建和部署
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'posts/**'
+      - 'content/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 设置 Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: 构建网站
+        run: |
+          if [ -f "config.toml" ] || [ -f "config.yaml" ] || [ -f "hugo.toml" ]; then
+            hugo --minify
+          else
+            echo "未检测到 Hugo 配置文件，跳过构建"
+          fi
+
+      - name: 部署到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: '自动部署: ${{ github.event.head_commit.message }}'
