@@ -1,4 +1,4 @@
-name: 自动构建和部署博客
+name: 自动构建博客
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
       - master
     paths:
       - 'posts/**/*.md'
-      - 'content/**/*.md'
   workflow_dispatch:
 
 permissions:
@@ -17,77 +16,87 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: 📥 检出代码
+      - name: 📥 检出 master 分支（静态网站）
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: master
+          path: master
 
-      - name: 🔍 检查是否有新文章
-        id: check_posts
-        run: |
-          if [ -d "posts" ] && [ "$(ls -A posts/*.md 2>/dev/null)" ]; then
-            echo "has_posts=true" >> $GITHUB_OUTPUT
-            echo "✅ 检测到新文章"
-          else
-            echo "has_posts=false" >> $GITHUB_OUTPUT
-            echo "ℹ️ 没有检测到新文章"
-          fi
+      - name: 📥 检出 blog-source 分支（Hugo 源文件）
+        uses: actions/checkout@v4
+        with:
+          ref: blog-source
+          path: blog-source
 
       - name: 🔧 设置 Hugo
-        if: steps.check_posts.outputs.has_posts == 'true'
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
 
-      - name: 📝 处理新文章
-        if: steps.check_posts.outputs.has_posts == 'true'
+      - name: 📝 复制新文章到 Hugo 源目录
         run: |
-          echo "处理 posts 目录中的文章..."
-          
-          if [ -d "posts" ]; then
-            mkdir -p content/posts
+          echo "检查 master 分支的 posts 目录..."
+          if [ -d "master/posts" ] && [ "$(ls -A master/posts/*.md 2>/dev/null)" ]; then
+            echo "✅ 发现新文章，开始复制..."
+            mkdir -p blog-source/content/posts
             
-            for file in posts/*.md; do
+            for file in master/posts/*.md; do
               if [ -f "$file" ]; then
                 filename=$(basename "$file")
-                echo "处理文章: $filename"
-                cp "$file" "content/posts/$filename"
+                echo "复制: $filename"
+                cp "$file" "blog-source/content/posts/$filename"
               fi
             done
-          fi
-
-      - name: 🏗️ 构建网站
-        if: steps.check_posts.outputs.has_posts == 'true'
-        run: |
-          if [ -f "config.toml" ] || [ -f "config.yaml" ] || [ -f "hugo.toml" ]; then
-            echo "使用 Hugo 构建网站..."
-            hugo --minify
+            
+            echo "📊 文章列表:"
+            ls -lh blog-source/content/posts/*.md
           else
-            echo "⚠️ 未找到 Hugo 配置文件"
-            echo "如果你的网站不使用 Hugo，请修改此工作流"
+            echo "⚠️ 没有发现新文章"
             exit 0
           fi
 
-      - name: 🚀 部署到 GitHub Pages
-        if: steps.check_posts.outputs.has_posts == 'true'
+      - name: 🏗️ 使用 Hugo 构建网站
+        working-directory: ./blog-source
         run: |
-          if [ -d "public" ]; then
-            echo "部署构建结果..."
-            
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            
-            cp -r public/* .
-            rm -rf public
-            
-            git add .
-            git commit -m "🤖 自动部署: 更新博客内容" || echo "没有变更需要提交"
-            git push origin master
-            
-            echo "✅ 部署完成！"
+          echo "开始构建..."
+          hugo --minify
+          echo "✅ 构建完成"
+          ls -lh public/
+
+      - name: 🚀 部署到 master 分支
+        run: |
+          cd master
+          
+          # 配置 Git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 删除旧的 HTML 文件（保留 posts 目录和配置文件）
+          echo "清理旧文件..."
+          find . -maxdepth 1 -type f -name "*.html" -delete
+          find . -maxdepth 1 -type f -name "*.xml" -delete
+          find . -maxdepth 1 -type f -name "*.json" -delete
+          rm -rf css js lib images svg categories tags about first page pages 2>/dev/null || true
+          
+          # 复制新构建的文件
+          echo "复制新文件..."
+          cp -r ../blog-source/public/* .
+          
+          # 提交更改
+          git add .
+          if git diff --staged --quiet; then
+            echo "没有变更需要提交"
           else
-            echo "⚠️ 未找到 public 目录，跳过部署"
+            git commit -m "🤖 自动构建: 更新博客内容
+
+通过 GitHub Actions 自动构建
+- 来源: blog-source 分支
+- 新文章: $(ls -1 posts/*.md 2>/dev/null | wc -l) 篇
+- 构建时间: $(date '+%Y-%m-%d %H:%M:%S')"
+            
+            git push origin master
+            echo "✅ 部署完成！"
           fi
 
       - name: 📊 构建摘要
@@ -95,6 +104,7 @@ jobs:
         run: |
           echo "### 📊 构建摘要" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- 🌐 网站地址: https://${REPO_OWNER}.github.io" >> $GITHUB_STEP_SUMMARY
-          echo "- 📝 文章数量: $(ls -1 posts/*.md 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "- 🌐 网站地址: https://trianglestrip.github.io" >> $GITHUB_STEP_SUMMARY
+          echo "- 📝 文章数量: $(ls -1 master/posts/*.md 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
           echo "- ⏰ 构建时间: $(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ 状态: 构建完成" >> $GITHUB_STEP_SUMMARY
