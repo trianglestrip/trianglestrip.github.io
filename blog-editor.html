@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客编辑器</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2em; margin-bottom: 10px; }
+        .content { padding: 30px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+        }
+        textarea {
+            font-family: Consolas, Monaco, monospace;
+            min-height: 300px;
+            resize: vertical;
+            line-height: 1.6;
+        }
+        .tags-input {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 8px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            min-height: 45px;
+        }
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .tag span { cursor: pointer; font-weight: bold; }
+        .tag-input {
+            border: none;
+            outline: none;
+            flex: 1;
+            min-width: 120px;
+        }
+        .btn-group { display: flex; gap: 15px; margin-top: 20px; }
+        .btn {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .btn-primary:hover { transform: translateY(-2px); }
+        .btn-secondary { background: #6c757d; color: white; }
+        .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+        .status {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            display: none;
+        }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        .status.info { background: #d1ecf1; color: #0c5460; }
+        .warning {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            color: #856404;
+        }
+        .warning a { color: #667eea; font-weight: 600; }
+        .token-group { display: flex; gap: 10px; margin-top: 10px; }
+        .token-group button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 Markdown 编辑器</h1>
+            <p>发布文章到 GitHub Pages</p>
+        </div>
+        
+        <div class="content">
+            <div class="warning" id="token-warning" style="display:none;">
+                ⚠️ 请先设置 GitHub Token
+                <div class="token-group">
+                    <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx">
+                    <button onclick="saveToken()">保存 Token</button>
+                </div>
+                <p style="margin-top:10px;font-size:0.9em;">
+                    <a href="https://github.com/settings/tokens/new?scopes=repo&description=Blog%20Editor" target="_blank">创建 Token →</a> (需要 repo 权限)
+                </p>
+            </div>
+
+            <div class="form-group">
+                <label>📌 标题 *</label>
+                <input type="text" id="title" placeholder="文章标题">
+            </div>
+
+            <div class="form-group">
+                <label>🔗 URL 别名（可选）</label>
+                <input type="text" id="slug" placeholder="留空自动生成">
+            </div>
+
+            <div class="form-group">
+                <label>📂 分类（建议：documentation）</label>
+                <input type="text" id="category" placeholder="documentation" value="documentation">
+            </div>
+
+            <div class="form-group">
+                <label>🏷️ 标签（建议：configuration, content, installation）</label>
+                <div class="tags-input" id="tags-container">
+                    <input type="text" class="tag-input" id="tag-input" placeholder="输入后按回车">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>📄 内容 *</label>
+                <textarea id="content" placeholder="编写 Markdown..."></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary" id="publish-btn">🚀 发布到 GitHub</button>
+                <button class="btn btn-secondary" id="save-btn">💾 保存草稿</button>
+                <button class="btn btn-secondary" id="clear-btn">🗑️ 清空</button>
+            </div>
+
+            <div class="status" id="status"></div>
+        </div>
+    </div>
+
+    <script>
+        const CONFIG = {
+            REPO_OWNER: 'trianglestrip',
+            REPO_NAME: 'trianglestrip.github.io',
+            BRANCH: 'master'
+        };
+
+        let tags = [];
+        let githubToken = localStorage.getItem('github_token') || '';
+
+        if (!githubToken) {
+            document.getElementById('token-warning').style.display = 'block';
+        }
+
+        function saveToken() {
+            const token = document.getElementById('token-input').value.trim();
+            if (token) {
+                localStorage.setItem('github_token', token);
+                githubToken = token;
+                document.getElementById('token-warning').style.display = 'none';
+                showStatus('✅ Token 已保存', 'success');
+                window.postMessage({ type: 'SAVE_TOKEN', token: token }, '*');
+            }
+        }
+
+        function showStatus(msg, type) {
+            const s = document.getElementById('status');
+            s.textContent = msg;
+            s.className = 'status ' + type;
+            s.style.display = 'block';
+            if (type === 'success') setTimeout(() => s.style.display = 'none', 5000);
+        }
+
+        function generateSlug(title) {
+            return title.toLowerCase()
+                .replace(/[^\w\s\u4e00-\u9fa5-]/g, '')
+                .replace(/\s+/g, '-')
+                .replace(/-+/g, '-')
+                .trim()
+                .substring(0, 50);
+        }
+
+        function renderTags() {
+            const container = document.getElementById('tags-container');
+            const input = document.getElementById('tag-input');
+            const existing = container.querySelectorAll('.tag');
+            existing.forEach(t => t.remove());
+
+            tags.forEach(text => {
+                const tag = document.createElement('div');
+                tag.className = 'tag';
+                const span = document.createElement('span');
+                span.textContent = text;
+                tag.appendChild(span);
+                
+                const remove = document.createElement('span');
+                remove.textContent = '×';
+                remove.onclick = () => {
+                    tags = tags.filter(t => t !== text);
+                    renderTags();
+                };
+                tag.appendChild(remove);
+                
+                container.insertBefore(tag, input);
+            });
+        }
+
+        document.getElementById('tag-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ',') {
+                e.preventDefault();
+                const text = e.target.value.trim();
+                if (text && !tags.includes(text)) {
+                    tags.push(text);
+                    renderTags();
+                }
+                e.target.value = '';
+            }
+        });
+
+        function generateFrontMatter() {
+            const title = document.getElementById('title').value.trim();
+            const slug = document.getElementById('slug').value.trim() || generateSlug(title);
+            const cat = document.getElementById('category').value.trim();
+            const date = new Date().toISOString();
+            
+            let fm = '---\n';
+            fm += `title: "${title}"\n`;
+            fm += `date: ${date}\n`;
+            if (slug) fm += `slug: "${slug}"\n`;
+            if (cat) fm += `categories: ["${cat}"]\n`;
+            if (tags.length) fm += `tags: [${tags.map(t => `"${t}"`).join(', ')}]\n`;
+            fm += 'draft: false\n---\n\n';
+            return fm;
+        }
+
+        document.getElementById('save-btn').onclick = () => {
+            const title = document.getElementById('title').value.trim() || 'untitled';
+            const slug = document.getElementById('slug').value.trim() || generateSlug(title);
+            const content = generateFrontMatter() + document.getElementById('content').value;
+            
+            const blob = new Blob([content], { type: 'text/markdown' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = slug + '.md';
+            a.click();
+            URL.revokeObjectURL(url);
+            
+            showStatus('✅ 草稿已保存', 'success');
+        };
+
+        document.getElementById('clear-btn').onclick = () => {
+            if (confirm('确定清空？')) {
+                document.getElementById('title').value = '';
+                document.getElementById('slug').value = '';
+                document.getElementById('category').value = 'documentation';
+                document.getElementById('content').value = '';
+                tags = [];
+                renderTags();
+            }
+        };
+
+        document.getElementById('publish-btn').onclick = async () => {
+            const title = document.getElementById('title').value.trim();
+            const markdown = document.getElementById('content').value.trim();
+            
+            if (!title) return showStatus('❌ 请输入标题', 'error');
+            if (!markdown) return showStatus('❌ 请输入内容', 'error');
+            if (!githubToken) {
+                document.getElementById('token-warning').style.display = 'block';
+                return showStatus('❌ 请先设置 Token', 'error');
+            }
+            
+            const btn = document.getElementById('publish-btn');
+            btn.disabled = true;
+            btn.textContent = '⏳ 发布中...';
+            
+            try {
+                const slug = document.getElementById('slug').value.trim() || generateSlug(title);
+                const date = new Date().toISOString().split('T')[0];
+                const filename = date + '-' + slug + '.md';
+                const fullContent = generateFrontMatter() + markdown;
+                const path = 'posts/' + filename;
+                
+                showStatus('📤 上传中...', 'info');
+                
+                window.postMessage({
+                    type: 'PUBLISH_REQUEST',
+                    path: path,
+                    content: fullContent,
+                    title: title
+                }, '*');
+                
+            } catch (e) {
+                showStatus('❌ ' + e.message, 'error');
+                btn.disabled = false;
+                btn.textContent = '🚀 发布到 GitHub';
+            }
+        };
+
+        window.addEventListener('message', (e) => {
+            if (e.data.type === 'PUBLISH_RESPONSE') {
+                const btn = document.getElementById('publish-btn');
+                btn.disabled = false;
+                btn.textContent = '🚀 发布到 GitHub';
+                
+                if (e.data.success) {
+                    showStatus('✅ 发布成功！', 'success');
+                    setTimeout(() => {
+                        document.getElementById('title').value = '';
+                        document.getElementById('slug').value = '';
+                        document.getElementById('content').value = '';
+                        tags = [];
+                        renderTags();
+                    }, 2000);
+                } else {
+                    showStatus('❌ ' + e.data.error, 'error');
+                }
+            }
+        });
+
+        console.log('✅ 编辑器页面已加载');
+    </script>
+</body>
+</html>
