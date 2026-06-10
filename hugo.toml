@@ -1,0 +1,66 @@
+baseURL = "https://trianglestrip.github.io/"
+theme = "LoveIt"
+title = "我的博客"
+defaultContentLanguage = "zh-cn"
+languageCode = "zh-CN"
+hasCJKLanguage = true
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+  [[menu.main]]
+    weight = 2
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+
+[params]
+  defaultTheme = "auto"
+  dateFormat = "2006-01-02"
+  description = "个人博客，记录技术笔记与生活碎片。"
+
+  [params.header.title]
+    name = "我的博客"
+
+  [params.footer]
+    enable = true
+    custom = ""
+    hugo = false
+    copyright = true
+    author = true
+    since = 2026
+    icp = ""
+
+  [params.home]
+    [params.home.profile]
+      enable = true
+      title = "我的博客"
+      subtitle = "记录想法、代码和日常"
+      typeit = false
+      social = false
+    [params.home.posts]
+      enable = true
+      paginate = 10
+
+  [params.social]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
