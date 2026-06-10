@@ -64,7 +64,7 @@ pagerSize = 10
     themeColor = "#42b983"
 
   [params.page.comment]
-    enable = false
+    enable = true
     [params.page.comment.utterances]
       enable = true
       repo = "trianglestrip/trianglestrip.github.io"
