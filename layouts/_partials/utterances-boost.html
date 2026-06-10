@@ -1,0 +1,33 @@
+{{- $comment := .Params.comment | default dict -}}
+{{- if not $comment.enable -}}{{- return -}}{{- end -}}
+{{- $utterances := .Site.Params.page.comment.utterances | default dict -}}
+{{- if not $utterances.enable -}}{{- return -}}{{- end -}}
+<script>
+(function () {
+  var cfg = {
+    repo: {{ $utterances.repo | jsonify }},
+    issueTerm: {{ ($utterances.issueTerm | default "pathname") | jsonify }},
+    label: {{ ($utterances.label | default "") | jsonify }},
+    lightTheme: {{ ($utterances.lightTheme | default "github-light") | jsonify }},
+    darkTheme: {{ ($utterances.darkTheme | default "github-dark") | jsonify }}
+  };
+
+  function bootUtterances() {
+    var el = document.getElementById('utterances');
+    if (!el || el.dataset.ready) return;
+    el.dataset.ready = '1';
+    var isDark = document.body.getAttribute('theme') === 'dark';
+    var script = document.createElement('script');
+    script.src = 'https://utteranc.es/client.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    script.setAttribute('repo', cfg.repo);
+    script.setAttribute('issue-term', cfg.issueTerm);
+    if (cfg.label) script.setAttribute('label', cfg.label);
+    script.setAttribute('theme', isDark ? cfg.darkTheme : cfg.lightTheme);
+    el.appendChild(script);
+  }
+
+  bootUtterances();
+})();
+</script>
