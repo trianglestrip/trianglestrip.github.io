@@ -9,8 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: 准备发布文件
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -r docs _site/docs
+          touch _site/.nojekyll
+      - name: 部署到 gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          python-version: "3.11"
-      - run: pip install mkdocs mkdocs-material
-      - run: mkdocs gh-deploy --force
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          force_orphan: true
