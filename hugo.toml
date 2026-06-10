@@ -1,6 +1,7 @@
 baseURL = "https://trianglestrip.github.io/"
 theme = "LoveIt"
-title = "trianglestrip"
+title = "随手记录"
+summaryLength = 800
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-CN"
 hasCJKLanguage = true
@@ -33,6 +34,9 @@ pagerSize = 10
   dateFormat = "2006-01-02"
   description = "个人博客，记录技术笔记与生活碎片。"
 
+  [params.header.title]
+    name = "随手记录"
+
   [params.footer]
     enable = true
     custom = ""
@@ -52,7 +56,7 @@ pagerSize = 10
   [params.social]
 
   [params.app]
-    title = "trianglestrip"
+    title = "随手记录"
     svgFavicon = "/favicon.svg"
     themeColor = "#42b983"
 
