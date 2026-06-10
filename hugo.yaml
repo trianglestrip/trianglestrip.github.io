@@ -411,28 +411,6 @@ params:
     # Enable animation
     transition: true
 
-  # 友情链接设置
-  # Friend links setting
-  linksSets:
-    # Fontawsome图标名称
-    # Icon name in Font Awesome
-    # See: https://fontawesome.com/
-    icon: fa fa-globe
-    # 显示标题
-    # Show title
-    title: 友情链接
-    # 可选值： block | inline
-    # Available values: block | inline
-    layout: inline
-
-  # 友情链接地址
-  # 用法： `Key: 显示名称 || 链接地址`
-  # Links of your friends
-  # Usage: `Key: name || permalink`
-  links: 
-    link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
-    link1: 凡梦星尘空间站 || https://lisenhui.cn
-
   # 文章目录显示
   # Table of Contents in the Sidebar
   # Front-matter variable (nonsupport wrap expand_all).
@@ -489,39 +467,10 @@ params:
     # Beian ICP and gongan information for Chinese users. 
     # See: https://beian.miit.gov.cn, http://www.beian.gov.cn
     beian:
-      enable: true
-      # ICP 备案的具体信息
-      icp: 粤ICP备 18047355-1 号
-      # 公安网备的省份简称
-      provinceAbbr: 沪
-      # 公安网备案号
-      gonganNum: 31011402009770
+      enable: false
 
-    # 站点支持供应商列表
-    # Vendors list who support website. 
     vendors:
-      enable: true
-      # 支持说明
-      # Some support information description.
-      title: 提供CDN/云资源支持
-      # 供应商列表，请将带有图标的供应商放在前面
-      # Vendors list, remember that who with logo image need put in top.
-      list:
-        - name: Vercel
-          image: 
-            url: /imgs/vendors/vercel.svg
-            width: 50
-          link: https://vercel.com
-        - name: 又拍云
-          image: 
-            url: /imgs/vendors/upyun.png
-            width: 43
-          link: https://upyun.com
-        - name: Github
-          link: https://github.com
-          image:
-            url: /imgs/vendors/github.svg
-            width: 14
+      enable: false
 
 
   # ---------------------------------------------------------------
