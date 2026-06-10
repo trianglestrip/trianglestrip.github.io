@@ -1,7 +1,7 @@
 window.$docsify = window.$docsify || {};
 window.$docsify.plugins = window.$docsify.plugins || [];
 
-window.$docsify.plugins.push(function (hook) {
+window.$docsify.plugins.push(function (hook, vm) {
   function escapeHtml(text) {
     return String(text)
       .replace(/&/g, "&amp;")
@@ -41,7 +41,12 @@ window.$docsify.plugins.push(function (hook) {
 
   hook.doneEach(function () {
     var el = document.querySelector("#post-list");
-    if (!el || this.route.file !== "index.md") return;
+    if (!el || !vm.route) return;
+    var isHome =
+      vm.route.file === "index.md" ||
+      vm.route.path === "/" ||
+      vm.route.path === "";
+    if (!isHome) return;
 
     fetch("posts.json")
       .then(function (res) {
