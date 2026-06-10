@@ -1,5 +1,6 @@
-# 关于
+---
+title: "关于"
+layout: "about"
+---
 
 这里是我的个人博客，用来记录技术笔记、生活碎片和随便的想法。
-
-<div class="site-footer">© 2026 我的博客</div>
