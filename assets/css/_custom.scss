@@ -1,0 +1,30 @@
+#comments {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color, rgba(125, 125, 125, 0.2));
+
+  .comment-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .comment-hint {
+    margin: 0 0 1.25rem;
+    color: var(--global-font-secondary-color, #6a6a6a);
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  .comment,
+  .utterances {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  iframe.utterances-frame {
+    width: 100% !important;
+    border-radius: 0.5rem;
+  }
+}
