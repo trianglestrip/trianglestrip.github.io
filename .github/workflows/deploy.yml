@@ -13,6 +13,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/
+          cp -r assets _site/assets
           cp docs/*.md _site/
           touch _site/.nojekyll
       - name: 部署到 gh-pages
