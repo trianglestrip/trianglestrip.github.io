@@ -18,7 +18,8 @@ jobs:
       - name: 安装主题并构建
         run: |
           git clone --depth 1 https://github.com/dillonzq/LoveIt.git themes/LoveIt
-          hugo --minify
+          python3 scripts/prepare-posts.py
+          hugo --minify --contentDir .hugo-prepared/content
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
