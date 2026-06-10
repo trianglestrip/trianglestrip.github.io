@@ -16,6 +16,7 @@ jobs:
           cp -r assets _site/assets
           cp docs/*.md _site/
           cp -r docs/posts _site/posts
+          python3 scripts/generate-posts.py _site/posts.json
           touch _site/.nojekyll
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4
