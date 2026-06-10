@@ -73,6 +73,8 @@ def main() -> int:
         return 0
 
     for source_path in sorted(posts_dir.glob("*.md")):
+        if source_path.name.startswith("."):
+            continue
         target_path = PREPARED_CONTENT / "posts" / source_path.name
         prepare_post(source_path, target_path)
 

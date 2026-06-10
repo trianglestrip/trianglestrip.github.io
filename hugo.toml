@@ -63,6 +63,9 @@ pagerSize = 10
     svgFavicon = "/favicon.svg"
     themeColor = "#42b983"
 
+  [params.discussions]
+    category = "博客"
+
   [params.page.share]
     enable = false
 

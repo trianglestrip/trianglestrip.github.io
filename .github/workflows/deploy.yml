@@ -2,8 +2,12 @@ name: 自动发布博客
 on:
   push:
     branches: [ master ]
+  discussion:
+    types: [created, edited, deleted, transferred, labeled, unlabeled]
+  workflow_dispatch:
 permissions:
   contents: write
+  discussions: read
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -16,9 +20,14 @@ jobs:
           hugo-version: latest
           extended: true
       - name: 安装主题并构建
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          DISCUSSIONS_CATEGORY: 博客
         run: |
           git clone --depth 1 https://github.com/dillonzq/LoveIt.git themes/LoveIt
           python3 scripts/prepare-posts.py
+          python3 scripts/sync-discussions.py
           hugo --minify --contentDir .hugo-prepared/content
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4
