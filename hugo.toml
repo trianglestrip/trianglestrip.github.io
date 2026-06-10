@@ -63,6 +63,9 @@ pagerSize = 10
     svgFavicon = "/favicon.svg"
     themeColor = "#42b983"
 
+  [params.page.share]
+    enable = false
+
   [params.page.comment]
     enable = true
     [params.page.comment.utterances]
