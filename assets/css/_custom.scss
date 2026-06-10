@@ -18,11 +18,13 @@
   }
 
   .comment,
+  .beaudar,
   .utterances {
     width: 100%;
     max-width: 100%;
   }
 
+  iframe.beaudar-frame,
   iframe.utterances-frame {
     width: 100% !important;
     border-radius: 0.5rem;

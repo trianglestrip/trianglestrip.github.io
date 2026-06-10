@@ -41,7 +41,7 @@ pagerSize = 10
     custom = ""
     hugo = false
     copyright = true
-    author = true
+    author = false
     since = 2026
     icp = ""
 
@@ -75,10 +75,9 @@ pagerSize = 10
       enable = true
       host = "https://beaudar.lipk.org"
       repo = "trianglestrip/trianglestrip.github.io"
-      issueTerm = "pathname"
-      label = "blog-comment"
+      issueTerm = "title"
+      issueLabel = "pathname"
       lightTheme = "github-light"
-      darkTheme = "github-dark"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

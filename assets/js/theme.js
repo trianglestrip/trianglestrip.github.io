@@ -710,30 +710,6 @@ class Theme {
                 gitalk.render('gitalk');
             }
             if (this.config.comment.valine) new Valine(this.config.comment.valine);
-            if (this.config.comment.utterances) {
-                const utterancesConfig = this.config.comment.utterances;
-                const host = (utterancesConfig.host || 'https://beaudar.lipk.org').replace(/\/$/, '');
-                const script = document.createElement('script');
-                script.src = `${host}/client.js`;
-                script.setAttribute('repo', utterancesConfig.repo);
-                script.setAttribute('issue-term', utterancesConfig.issueTerm);
-                if (utterancesConfig.label) script.setAttribute('label', utterancesConfig.label);
-                script.setAttribute('theme', this.isDark ? utterancesConfig.darkTheme : utterancesConfig.lightTheme);
-                script.crossOrigin = 'anonymous';
-                script.async = true;
-                document.getElementById('utterances').appendChild(script);
-                this._utterancesOnSwitchTheme = this._utterancesOnSwitchTheme || (() => {
-                    const message = {
-                        type: 'set-theme',
-                        theme: this.isDark ? utterancesConfig.darkTheme : utterancesConfig.lightTheme,
-                    };
-                    const iframe = document.querySelector('.utterances-frame');
-                    if (!iframe) return;
-                    iframe.contentWindow.postMessage(message, host);
-                });
-                this.switchThemeEventSet.add(this._utterancesOnSwitchTheme);
-            }
-
             if (this.config.comment.giscus) {
                 const giscusConfig = this.config.comment.giscus;
                 const giscusScript = document.createElement('script');
