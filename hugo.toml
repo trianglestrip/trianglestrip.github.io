@@ -14,14 +14,14 @@ pagerSize = 10
 [menu]
   [[menu.main]]
     weight = 1
-    identifier = "notes"
-    name = "随手记"
-    url = "/notes/"
-  [[menu.main]]
-    weight = 2
     identifier = "posts"
     name = "文章"
     url = "/posts/"
+  [[menu.main]]
+    weight = 2
+    identifier = "notes"
+    name = "随手记"
+    url = "/notes/"
   [[menu.main]]
     weight = 3
     identifier = "about"
@@ -62,6 +62,16 @@ pagerSize = 10
     title = "我的博客"
     svgFavicon = "/favicon.svg"
     themeColor = "#42b983"
+
+  [params.page.comment]
+    enable = false
+    [params.page.comment.utterances]
+      enable = true
+      repo = "trianglestrip/trianglestrip.github.io"
+      issueTerm = "pathname"
+      label = "blog-comment"
+      lightTheme = "github-light"
+      darkTheme = "github-dark"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
