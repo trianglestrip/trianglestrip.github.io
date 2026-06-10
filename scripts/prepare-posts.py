@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""复制 content 并在临时目录为 posts/*.md 自动生成 front matter。"""
+"""复制 content 并在临时目录为 posts/*.md、notes/*.md 自动生成 front matter。"""
 
 from __future__ import annotations
 
@@ -14,12 +14,13 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE_CONTENT = ROOT / "content"
 PREPARED_CONTENT = ROOT / ".hugo-prepared" / "content"
 FRONT_MATTER_RE = re.compile(r"^---\s*\r?\n.*?\r?\n---\s*\r?\n?", re.DOTALL)
+AUTO_PREPARE_DIRS = ("posts", "notes")
 
 
 def git_date(path: Path) -> str:
     try:
         result = subprocess.run(
-            ["git", "log", "-1", "--format=%as", "--", str(path)],
+            ["git", "log", "-1", "--format=%aI", "--", str(path)],
             cwd=ROOT,
             capture_output=True,
             text=True,
@@ -30,7 +31,7 @@ def git_date(path: Path) -> str:
             return value
     except (subprocess.CalledProcessError, FileNotFoundError):
         pass
-    return date.today().isoformat()
+    return f"{date.today().isoformat()}T12:00:00+08:00"
 
 
 def extract_body(content: str) -> str:
@@ -45,10 +46,23 @@ def build_front_matter(title: str, post_date: str) -> str:
     return f'---\ntitle: "{escaped}"\ndate: {post_date}\n---\n\n'
 
 
-def prepare_post(source_path: Path, target_path: Path) -> None:
+def title_from_filename(path: Path) -> str:
+    return path.stem
+
+
+def title_from_body(body: str, fallback: str) -> str:
+    for line in body.splitlines():
+        value = line.strip()
+        if value:
+            return value[:60] + ("…" if len(value) > 60 else "")
+    return fallback
+
+
+def prepare_file(source_path: Path, target_path: Path, *, use_body_title: bool) -> None:
     raw = source_path.read_text(encoding="utf-8-sig")
     body = extract_body(raw).lstrip("\n")
-    title = source_path.stem
+    fallback = title_from_filename(source_path)
+    title = title_from_body(body, fallback) if use_body_title else fallback
     post_date = git_date(source_path)
     target_path.parent.mkdir(parents=True, exist_ok=True)
     target_path.write_text(build_front_matter(title, post_date) + body, encoding="utf-8")
@@ -56,6 +70,19 @@ def prepare_post(source_path: Path, target_path: Path) -> None:
         f"prepared: {source_path.relative_to(ROOT)} "
         f"-> {target_path.relative_to(ROOT)} (title={title}, date={post_date})"
     )
+
+
+def prepare_dir(section: str) -> None:
+    source_dir = SOURCE_CONTENT / section
+    if not source_dir.is_dir():
+        return
+
+    use_body_title = section == "notes"
+    for source_path in sorted(source_dir.glob("*.md")):
+        if source_path.name.startswith("_"):
+            continue
+        target_path = PREPARED_CONTENT / section / source_path.name
+        prepare_file(source_path, target_path, use_body_title=use_body_title)
 
 
 def main() -> int:
@@ -67,14 +94,8 @@ def main() -> int:
         shutil.rmtree(PREPARED_CONTENT)
     shutil.copytree(SOURCE_CONTENT, PREPARED_CONTENT)
 
-    posts_dir = SOURCE_CONTENT / "posts"
-    if not posts_dir.is_dir():
-        print("no posts directory, content copied only")
-        return 0
-
-    for source_path in sorted(posts_dir.glob("*.md")):
-        target_path = PREPARED_CONTENT / "posts" / source_path.name
-        prepare_post(source_path, target_path)
+    for section in AUTO_PREPARE_DIRS:
+        prepare_dir(section)
 
     return 0
 
