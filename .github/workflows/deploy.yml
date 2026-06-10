@@ -1,4 +1,4 @@
-name: 自动发布文档
+name: 自动发布博客
 on:
   push:
     branches: [ master ]
@@ -15,6 +15,7 @@ jobs:
           cp index.html _site/
           cp -r assets _site/assets
           cp docs/*.md _site/
+          cp -r docs/posts _site/posts
           touch _site/.nojekyll
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4
