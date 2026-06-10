@@ -14,11 +14,16 @@ pagerSize = 10
 [menu]
   [[menu.main]]
     weight = 1
+    identifier = "notes"
+    name = "随手记"
+    url = "/notes/"
+  [[menu.main]]
+    weight = 2
     identifier = "posts"
     name = "文章"
     url = "/posts/"
   [[menu.main]]
-    weight = 2
+    weight = 3
     identifier = "about"
     name = "关于"
     url = "/about/"
@@ -59,7 +64,7 @@ pagerSize = 10
     themeColor = "#42b983"
 
   [params.page.comment]
-    enable = true
+    enable = false
     [params.page.comment.utterances]
       enable = true
       repo = "trianglestrip/trianglestrip.github.io"
