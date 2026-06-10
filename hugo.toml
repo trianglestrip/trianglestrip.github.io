@@ -53,6 +53,11 @@ pagerSize = 10
 
   [params.social]
 
+  [params.app]
+    title = "我的博客"
+    svgFavicon = "/favicon.svg"
+    themeColor = "#42b983"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
