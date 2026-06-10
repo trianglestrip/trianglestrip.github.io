@@ -58,6 +58,16 @@ pagerSize = 10
     svgFavicon = "/favicon.svg"
     themeColor = "#42b983"
 
+  [params.page.comment]
+    enable = true
+    [params.page.comment.utterances]
+      enable = true
+      repo = "trianglestrip/trianglestrip.github.io"
+      issueTerm = "pathname"
+      label = "blog-comment"
+      lightTheme = "github-light"
+      darkTheme = "github-dark"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
