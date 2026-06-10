@@ -112,10 +112,17 @@ body::before {
   color: #42b983;
 }
 
-.post-meta {
+.post-meta,
+.post-meta-bar {
   font-size: 13px;
   color: #999;
   margin: 6px 0 8px;
+}
+
+.post-meta-bar {
+  margin: 0 0 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .post-excerpt {
