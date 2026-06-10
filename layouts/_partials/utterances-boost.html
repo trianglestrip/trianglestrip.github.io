@@ -2,15 +2,16 @@
 {{- if not $comment.enable -}}{{- return -}}{{- end -}}
 {{- $utterances := .Site.Params.page.comment.utterances | default dict -}}
 {{- if not $utterances.enable -}}{{- return -}}{{- end -}}
+<div id="utterances-config" hidden
+  data-repo="{{ $utterances.repo }}"
+  data-issue-term="{{ $utterances.issueTerm | default "pathname" }}"
+  data-label="{{ $utterances.label | default "" }}"
+  data-light-theme="{{ $utterances.lightTheme | default "github-light" }}"
+  data-dark-theme="{{ $utterances.darkTheme | default "github-dark" }}"></div>
 <script>
 (function () {
-  var cfg = {
-    repo: {{ $utterances.repo | jsonify }},
-    issueTerm: {{ ($utterances.issueTerm | default "pathname") | jsonify }},
-    label: {{ ($utterances.label | default "") | jsonify }},
-    lightTheme: {{ ($utterances.lightTheme | default "github-light") | jsonify }},
-    darkTheme: {{ ($utterances.darkTheme | default "github-dark") | jsonify }}
-  };
+  var cfgEl = document.getElementById('utterances-config');
+  if (!cfgEl) return;
 
   function bootUtterances() {
     var el = document.getElementById('utterances');
@@ -21,10 +22,10 @@
     script.src = 'https://utteranc.es/client.js';
     script.async = true;
     script.crossOrigin = 'anonymous';
-    script.setAttribute('repo', cfg.repo);
-    script.setAttribute('issue-term', cfg.issueTerm);
-    if (cfg.label) script.setAttribute('label', cfg.label);
-    script.setAttribute('theme', isDark ? cfg.darkTheme : cfg.lightTheme);
+    script.setAttribute('repo', cfgEl.dataset.repo);
+    script.setAttribute('issue-term', cfgEl.dataset.issueTerm);
+    if (cfgEl.dataset.label) script.setAttribute('label', cfgEl.dataset.label);
+    script.setAttribute('theme', isDark ? cfgEl.dataset.darkTheme : cfgEl.dataset.lightTheme);
     el.appendChild(script);
   }
 
