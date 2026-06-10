@@ -14,6 +14,7 @@ jobs:
           mkdir -p _site
           cp index.html _site/
           cp -r assets _site/assets
+          cp assets/favicon.ico _site/favicon.ico
           cp docs/*.md _site/
           cp -r docs/posts _site/posts
           python3 scripts/generate-posts.py _site/posts.json
