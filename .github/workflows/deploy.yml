@@ -14,10 +14,10 @@ jobs:
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: latest
-          extended: false
+          extended: true
       - name: 安装主题并构建
         run: |
-          git clone --depth 1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+          git clone --depth 1 --branch main https://github.com/hugo-next/hugo-theme-next.git themes/hugo-theme-next
           hugo --minify
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4

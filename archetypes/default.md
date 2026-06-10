@@ -1,8 +1,7 @@
 ---
 title: "{{ replace .File.ContentBaseName "-" " " }}"
+description: ""
 date: {{ .Date }}
-draft: false
-summary: ""
 ---
 
 正文从这里开始写。

@@ -1,8 +1,7 @@
 ---
 title: "欢迎来到我的博客"
+description: "建站第一篇，随便写写。"
 date: 2026-06-10
-draft: false
-summary: "建站第一篇，随便写写。"
 ---
 
 写一写文档记录。
