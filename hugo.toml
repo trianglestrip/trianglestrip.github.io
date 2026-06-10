@@ -1,6 +1,6 @@
 baseURL = "https://trianglestrip.github.io/"
 theme = "LoveIt"
-title = "我的博客"
+title = "trianglestrip"
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-CN"
 hasCJKLanguage = true
@@ -33,9 +33,6 @@ pagerSize = 10
   dateFormat = "2006-01-02"
   description = "个人博客，记录技术笔记与生活碎片。"
 
-  [params.header.title]
-    name = "我的博客"
-
   [params.footer]
     enable = true
     custom = ""
@@ -47,11 +44,7 @@ pagerSize = 10
 
   [params.home]
     [params.home.profile]
-      enable = true
-      title = "我的博客"
-      subtitle = "记录想法、代码和日常"
-      typeit = false
-      social = false
+      enable = false
     [params.home.posts]
       enable = true
       paginate = 10
@@ -59,7 +52,7 @@ pagerSize = 10
   [params.social]
 
   [params.app]
-    title = "我的博客"
+    title = "trianglestrip"
     svgFavicon = "/favicon.svg"
     themeColor = "#42b983"
 
