@@ -13,7 +13,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/
-          cp -r docs _site/docs
+          cp docs/*.md _site/
           touch _site/.nojekyll
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4
