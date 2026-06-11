@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-11T10:13:40+00:00",
+  "updated_at": "2026-06-11T12:36:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Apache Burr：让 AI Agent 应用的开发、追踪和持久化变得简单",
+      "url": "https://www.oschina.net/news/456237",
+      "hot": "Thu, 11 Jun 2026 19:18:11 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Perplexity 与哈佛联合发布研究：AI Agent 如何重塑知识工作",
+      "url": "https://www.oschina.net/news/456209",
+      "hot": "Thu, 11 Jun 2026 18:34:04 +0800"
+    },
+    {
+      "rank": 3,
       "title": "VS Code 为扩展自动更新增加 2 小时延迟，以限制供应链攻击",
       "url": "https://www.oschina.net/news/456173/s-code-adds-2-hour-extension-auto",
       "hot": "Thu, 11 Jun 2026 17:47:10 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "LLM 正在侵蚀我的软件工程师职业生涯",
       "url": "https://www.oschina.net/news/456159",
       "hot": "Thu, 11 Jun 2026 17:27:09 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Windows 用户吐槽：Claude Desktop 刚启动就霸占 1.8GB 内存",
       "url": "https://www.oschina.net/news/456144",
       "hot": "Thu, 11 Jun 2026 17:04:56 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "AI 又闯一祸，失控智能体混进 Fedora 核心代码",
       "url": "https://my.oschina.net/u/4487475/blog/19701457",
       "hot": "Thu, 11 Jun 2026 17:04:47 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "Python 3.14.6 和 3.13.14 发布",
       "url": "https://www.oschina.net/news/456126/python-3146",
       "hot": "Thu, 11 Jun 2026 16:38:01 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "AIGC 盛典邀您：见证荣耀，链接资源，欣赏佳作！",
       "url": "https://www.oschina.net/news/456108",
       "hot": "Thu, 11 Jun 2026 16:10:44 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "消息称字节 AI 硬件团队豆包手机负责人林夕离职",
       "url": "https://www.oschina.net/news/456070",
       "hot": "Thu, 11 Jun 2026 15:25:30 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "2026 年 5 月国产数据库大事记",
       "url": "https://my.oschina.net/u/4559794/blog/19701305",
       "hot": "Thu, 11 Jun 2026 13:57:18 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Linux 基金会推出 OpenSharing 项目，规范 AI 资产和数据交换",
-      "url": "https://www.oschina.net/news/456002/linux-foundation-opensharing-project",
-      "hot": "Thu, 11 Jun 2026 13:46:34 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Anthropic 收紧 Mythos 级模型数据保留政策，其提示词与模型输出将被保留 30 天",
-      "url": "https://www.oschina.net/news/455954",
-      "hot": "Thu, 11 Jun 2026 11:49:12 +0800"
     }
   ]
 }
