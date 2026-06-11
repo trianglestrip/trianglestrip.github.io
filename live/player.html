@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>直播播放</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xgplayer@3.0.20/dist/index.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xgplayer@3.0.20/dist/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xgplayer-flv@3.0.21/dist/index.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-icon">L</div>
+        <div>
+          <h1>直播播放</h1>
+          <p>参考 lemon-live：muxia 解析 + xgplayer-flv 直播模式</p>
+        </div>
+      </div>
+      <span class="badge">blog / live</span>
+    </header>
+
+    <div class="tabs" id="siteTabs"></div>
+
+    <section class="card">
+      <div class="controls">
+        <input id="room" type="text" value="9999" placeholder="房间号或平台链接">
+        <select id="source" title="解析源">
+          <option value="muxia" selected>muxia（lemon-live）</option>
+          <option value="local">streamget（本地）</option>
+        </select>
+        <select id="proxyMode" title="播放方式">
+          <option value="proxy" selected>代理播放</option>
+          <option value="direct">直连 CDN</option>
+        </select>
+        <button id="playBtn" class="primary">播放</button>
+        <button id="stopBtn">停止</button>
+      </div>
+      <div class="selectors">
+        <select id="quality" title="清晰度"></select>
+        <select id="line" title="线路"></select>
+      </div>
+    </section>
+
+    <section class="card player-card">
+      <div class="player-shell">
+        <div id="player"></div>
+      </div>
+      <div class="room-meta">
+        <img id="roomCover" class="cover" alt="" style="display:none">
+        <div>
+          <h2 id="roomTitle">等待播放</h2>
+          <p id="roomAnchor"></p>
+          <span id="liveBadge" class="badge">未开播</span>
+        </div>
+      </div>
+      <div id="status" class="status">输入房间号后点击播放</div>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
