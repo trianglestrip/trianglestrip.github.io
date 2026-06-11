@@ -104,6 +104,7 @@
 .hot-nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
   width: 100vw;
   max-width: 100vw;
@@ -188,13 +189,43 @@
   white-space: nowrap;
 }
 
-.hot-card__icon {
+.hot-card__icon-box {
+  position: relative;
   flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.hot-card__icon {
+  display: block;
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 0.25rem;
   object-fit: contain;
   background: #fff;
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.hot-card__icon-letter {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  background: var(--hot-accent, #ccc);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+
+  &.is-visible {
+    display: flex;
+  }
 }
 
 .hot-card__title {
