@@ -329,7 +329,17 @@ body {
   background: var(--bg);
   line-height: 1.5;
 }
-.hot-page { max-width: 100%; padding-bottom: 2rem; }
+.hot-page { max-width: 100%; padding-bottom: 1rem; }
+.hot-footer {
+  margin-top: 1.25rem;
+  padding: 1rem 1.5rem 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.hot-footer__stats { margin: 0; }
+.hot-footer__sep { margin: 0 0.4rem; opacity: 0.55; }
 .hot-header {
   position: sticky;
   top: 0;
@@ -864,7 +874,17 @@ def build() -> Path:
     </header>
     {dock_html}
     <div class="hot-board">{"".join(cards)}</div>
+    <footer class="hot-footer">
+      <p class="hot-footer__stats">
+        <span id="busuanzi_container_site_uv">本站访客 <span id="busuanzi_value_site_uv">—</span></span>
+        <span class="hot-footer__sep" aria-hidden="true">·</span>
+        <span id="busuanzi_container_site_pv">总访问 <span id="busuanzi_value_site_pv">—</span></span>
+        <span class="hot-footer__sep" aria-hidden="true">·</span>
+        <span id="busuanzi_container_page_pv">本页 <span id="busuanzi_value_page_pv">—</span></span>
+      </p>
+    </footer>
   </main>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <script>{page_js}</script>
 </body>
 </html>
