@@ -105,7 +105,14 @@ def normalize_streamget(payload: dict) -> dict:
 
 def resolve_local(room: str, quality: str) -> dict:
     cmd = [sys.executable, str(ROOT / "resolve_douyu.py"), room, "--quality", quality]
-    result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", check=False)
+    result = subprocess.run(
+        cmd,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+    )
     if result.returncode != 0:
         detail = result.stderr.strip() or result.stdout.strip() or "resolve failed"
         raise RuntimeError(detail)

@@ -7,8 +7,6 @@ const SITES = [
   { id: "douyin", name: "抖音", icon: "🎵" },
 ];
 
-const SEGMENT_BATCH = 5;
-
 const state = {
   site: "douyu",
   source: "local",
@@ -20,6 +18,7 @@ const state = {
   useProxy: true,
   loopActive: false,
   blobUrl: null,
+  proxyMode: "live",
 };
 
 const els = {
@@ -178,8 +177,23 @@ function ensureFlvJs() {
   }
 }
 
+function flvConfig(live) {
+  return {
+    enableWorker: false,
+    enableStashBuffer: live,
+    stashInitialSize: live ? 256 * 1024 : 0,
+    lazyLoad: false,
+    deferLoadAfterSourceOpen: false,
+    autoCleanupSourceBuffer: true,
+  };
+}
+
 function segmentUrl(proxyBase) {
   return `${proxyBase}&mode=segment&_ts=${Date.now()}`;
+}
+
+function liveUrl(proxyBase) {
+  return `${proxyBase}&mode=live&_ts=${Date.now()}`;
 }
 
 function isFlvBuffer(buffer) {
@@ -196,34 +210,6 @@ async function fetchSegment(proxyBase) {
   return buffer;
 }
 
-function concatFlvSegments(buffers) {
-  const FLV_HEADER_SIZE = 13;
-  const parts = [];
-  let total = 0;
-  for (let i = 0; i < buffers.length; i += 1) {
-    const bytes = new Uint8Array(buffers[i]);
-    const slice = i === 0 ? bytes : bytes.subarray(
-      bytes.length > FLV_HEADER_SIZE && isFlvBuffer(bytes.buffer) ? FLV_HEADER_SIZE : 0,
-    );
-    parts.push(slice);
-    total += slice.length;
-  }
-  const merged = new Uint8Array(total);
-  let offset = 0;
-  for (const part of parts) {
-    merged.set(part, offset);
-    offset += part.length;
-  }
-  return merged.buffer;
-}
-
-async function fetchMergedSegments(proxyBase) {
-  const buffers = await Promise.all(
-    Array.from({ length: SEGMENT_BATCH }, () => fetchSegment(proxyBase)),
-  );
-  return concatFlvSegments(buffers);
-}
-
 function playBuffer(buffer) {
   return new Promise((resolve, reject) => {
     ensureFlvJs();
@@ -236,12 +222,7 @@ function playBuffer(buffer) {
       isLive: false,
       hasAudio: true,
       hasVideo: true,
-    }, {
-      enableWorker: false,
-      enableStashBuffer: false,
-      lazyLoad: false,
-      deferLoadAfterSourceOpen: false,
-    });
+    }, flvConfig(false));
 
     const cleanup = () => {
       state.player.off(flvjs.Events.LOADING_COMPLETE, onComplete);
@@ -269,20 +250,112 @@ function playBuffer(buffer) {
   });
 }
 
-function playDirect(url) {
+function playProxyLive(proxyBase) {
   ensureFlvJs();
   destroyPlayerInstance();
+  state.loopActive = true;
+
+  const url = liveUrl(proxyBase);
   state.player = flvjs.createPlayer({
     type: "flv",
     url,
     isLive: true,
     hasAudio: true,
     hasVideo: true,
-  }, {
-    enableWorker: false,
-    enableStashBuffer: true,
-    lazyLoad: false,
+  }, flvConfig(true));
+
+  state.player.attachMediaElement(els.video);
+  state.player.on(flvjs.Events.ERROR, (_, info, detail) => {
+    if (!state.loopActive) return;
+    const msg = [info, detail && detail.code, detail && detail.msg].filter(Boolean).join(" | ");
+    setStatus(`直播流中断: ${msg}\n正在重连…`, false);
+    setTimeout(() => {
+      if (state.loopActive) playProxyLive(proxyBase);
+    }, 800);
   });
+  state.player.on(flvjs.Events.MEDIA_INFO, () => {
+    state.player.play().catch(() => {});
+  });
+  state.player.load();
+  state.player.play().catch(() => {});
+}
+
+async function proxySegmentLoop(proxyBase, metaText) {
+  state.loopActive = true;
+  state.proxyMode = "segment";
+  let seg = 0;
+  let nextSegmentPromise = fetchSegment(proxyBase);
+
+  while (state.loopActive) {
+    let buffer;
+    try {
+      buffer = await nextSegmentPromise;
+    } catch (err) {
+      if (!state.loopActive) break;
+      setStatus(`单段拉取失败: ${err.message}\n0.3 秒后重试…`, false);
+      await new Promise((r) => setTimeout(r, 300));
+      nextSegmentPromise = fetchSegment(proxyBase);
+      continue;
+    }
+
+    nextSegmentPromise = fetchSegment(proxyBase);
+    seg += 1;
+    const kb = (buffer.byteLength / 1024).toFixed(0);
+    setStatus(`${metaText}\n单段模式 | 第 ${seg} 段 (~${kb} KB)`, true);
+
+    try {
+      await playBuffer(buffer);
+    } catch (err) {
+      if (!state.loopActive) break;
+      setStatus(`单段播放失败: ${err.message}\n0.3 秒后重试…`, false);
+      await new Promise((r) => setTimeout(r, 300));
+      nextSegmentPromise = fetchSegment(proxyBase);
+    }
+  }
+}
+
+async function playProxy(proxyBase, metaText) {
+  state.proxyMode = "live";
+  setStatus(`${metaText}\n直播流模式（连续代理）…`, true);
+  playProxyLive(proxyBase);
+
+  await new Promise((resolve) => {
+    const timer = setTimeout(resolve, 8000);
+    const onInfo = () => {
+      clearTimeout(timer);
+      if (state.player) state.player.off(flvjs.Events.MEDIA_INFO, onInfo);
+      resolve();
+    };
+    if (state.player) {
+      state.player.on(flvjs.Events.MEDIA_INFO, onInfo);
+    } else {
+      clearTimeout(timer);
+      resolve();
+    }
+  });
+
+  if (els.video.readyState >= 2 && !els.video.paused) {
+    setStatus(`${metaText}\n直播流模式播放中`, true);
+    return;
+  }
+
+  if (!state.loopActive) return;
+  destroyPlayerInstance();
+  setStatus(`${metaText}\n直播流未起播，切换单段模式…`, true);
+  await proxySegmentLoop(proxyBase, metaText);
+}
+
+function playDirect(url) {
+  ensureFlvJs();
+  destroyPlayerInstance();
+  state.loopActive = true;
+  state.player = flvjs.createPlayer({
+    type: "flv",
+    url,
+    isLive: true,
+    hasAudio: true,
+    hasVideo: true,
+  }, flvConfig(true));
   state.player.attachMediaElement(els.video);
   state.player.on(flvjs.Events.ERROR, (_, info, detail) => {
     const msg = [info, detail && detail.code, detail && detail.msg].filter(Boolean).join(" | ");
@@ -290,39 +363,6 @@ function playDirect(url) {
   });
   state.player.load();
   state.player.play().catch(() => {});
-}
-
-async function proxyPlaybackLoop(proxyBase, metaText) {
-  state.loopActive = true;
-  let batch = 0;
-  let nextBatchPromise = fetchMergedSegments(proxyBase);
-
-  while (state.loopActive) {
-    let merged;
-    try {
-      merged = await nextBatchPromise;
-    } catch (err) {
-      if (!state.loopActive) break;
-      setStatus(`缓存失败: ${err.message}\n0.5 秒后重试…`, false);
-      await new Promise((r) => setTimeout(r, 500));
-      nextBatchPromise = fetchMergedSegments(proxyBase);
-      continue;
-    }
-
-    nextBatchPromise = fetchMergedSegments(proxyBase);
-    batch += 1;
-    const mb = (merged.byteLength / (1024 * 1024)).toFixed(2);
-    setStatus(`${metaText}\n批次 ${batch} | 已缓存 ${SEGMENT_BATCH} 段 (~${mb} MB)`, true);
-
-    try {
-      await playBuffer(merged);
-    } catch (err) {
-      if (!state.loopActive) break;
-      setStatus(`播放中断: ${err.message}\n0.5 秒后重试…`, false);
-      await new Promise((r) => setTimeout(r, 500));
-      nextBatchPromise = fetchMergedSegments(proxyBase);
-    }
-  }
 }
 
 async function registerProxy(directUrl, payload) {
@@ -383,7 +423,7 @@ async function playRoom() {
     if (state.useProxy) {
       const proxyPayload = await registerProxy(directUrl, payload);
       if (!proxyPayload.proxy_url) throw new Error("代理注册失败");
-      proxyPlaybackLoop(proxyPayload.proxy_url, metaText);
+      await playProxy(proxyPayload.proxy_url, metaText);
       return;
     }
 
@@ -428,4 +468,4 @@ function syncControls() {
 renderSiteTabs();
 syncControls();
 bindEvents();
-setStatus("默认：本机 streamget 解析 + 代理播放（flv.js），点击「播放」开始", true);
+setStatus("默认：本机 streamget 解析 + 代理直播流，点击「播放」开始", true);
