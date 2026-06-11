@@ -4,10 +4,10 @@
 from __future__ import annotations
 
 import argparse
+import asyncio
 import json
 import re
 import secrets
-import subprocess
 import sys
 import time
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -17,6 +17,8 @@ from urllib.parse import parse_qs, urlparse
 import requests
 
 from muxia_api import fetch_room, normalize_room
+from resolve_douyu import normalize_url as douyu_normalize_url
+from resolve_douyu import resolve_all as douyu_resolve_all
 
 ROOT = Path(__file__).resolve().parent
 STREAM_FILE = ROOT / "stream.json"
@@ -84,43 +86,15 @@ def attach_proxy(payload: dict) -> dict:
     return payload
 
 
-def normalize_streamget(payload: dict) -> dict:
-    play_url = payload.get("play_url") or payload.get("flv_url") or payload.get("m3u8_url") or ""
-    backup_urls = [
-        item
-        for item in (payload.get("backup_urls") or [])
-        if item and item != play_url and "douyucdn" in item and "edgesrv.com" not in item
-    ]
-    lines = []
-    if play_url:
-        lines.append({"name": "主线路", "url": play_url})
-    for index, url in enumerate(backup_urls, start=2):
-        lines.append({"name": f"备用{index}", "url": url})
-    if lines:
-        payload["streams"] = [{"name": payload.get("quality") or "默认", "lines": lines}]
-    payload["title"] = payload.get("anchor_name") or payload.get("title") or ""
-    payload["status"] = bool(payload.get("is_live"))
-    return payload
-
-
 def resolve_local(room: str, quality: str) -> dict:
-    cmd = [sys.executable, str(ROOT / "resolve_douyu.py"), room, "--quality", quality]
-    result = subprocess.run(
-        cmd,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        check=False,
-    )
-    if result.returncode != 0:
-        detail = result.stderr.strip() or result.stdout.strip() or "resolve failed"
-        raise RuntimeError(detail)
-    payload = json.loads(STREAM_FILE.read_text(encoding="utf-8"))
+    del quality  # streamget 一次解析全部档位，与 muxia 对齐
+    room_id = parse_room_id(room)
+    payload = asyncio.run(douyu_resolve_all(douyu_normalize_url(room_id)))
     payload["source"] = "streamget"
     payload["site"] = "douyu"
-    payload["room_id"] = parse_room_id(room)
-    return normalize_streamget(payload)
+    payload["room_id"] = room_id
+    STREAM_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return payload
 
 
 def resolve_muxia(site: str, room: str) -> dict:

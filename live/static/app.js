@@ -107,7 +107,7 @@ function fillSelectors(payload) {
     els.quality.appendChild(opt);
   });
 
-  if (payload.source === "muxia" && streams.length > 1) {
+  if (streams.length > 1) {
     state.qualityIndex = preferQualityIndex(streams);
   } else {
     state.qualityIndex = Math.min(state.qualityIndex, streams.length - 1);
@@ -134,25 +134,32 @@ function fillLines(stream) {
   els.line.value = String(state.lineIndex);
 }
 
+function isBadPlayUrl(url) {
+  return !url || url.includes("edgesrv.com");
+}
+
 function currentPlayUrl(payload) {
   const streams = payload.streams || [];
   if (streams.length) {
     const stream = streams[state.qualityIndex] || streams[0];
     const line = stream.lines[state.lineIndex] || stream.lines[0];
-    if (line?.url) return line.url;
+    if (line?.url && !isBadPlayUrl(line.url)) return line.url;
   }
-  return payload.play_url || payload.flv_url || payload.m3u8_url || "";
+  for (const candidate of [payload.play_url, payload.m3u8_url, payload.flv_url]) {
+    if (candidate && !isBadPlayUrl(candidate)) return candidate;
+  }
+  return "";
 }
 
 function collectBackupUrls(payload, directUrl) {
   const urls = [];
   for (const group of payload.streams || []) {
     for (const line of group.lines || []) {
-      if (line.url && line.url !== directUrl) urls.push(line.url);
+      if (line.url && line.url !== directUrl && !isBadPlayUrl(line.url)) urls.push(line.url);
     }
   }
   for (const item of payload.backup_urls || []) {
-    if (item && item !== directUrl && !urls.includes(item)) urls.push(item);
+    if (item && item !== directUrl && !isBadPlayUrl(item) && !urls.includes(item)) urls.push(item);
   }
   return urls;
 }

@@ -23,6 +23,14 @@ PROBE_HEADERS = {
     "Referer": "https://www.douyu.com/",
 }
 
+QUALITY_PRESETS: list[tuple[str, str]] = [
+    ("OD", "原画"),
+    ("UHD", "蓝光"),
+    ("HD", "高清"),
+    ("SD", "标清"),
+    ("LD", "流畅"),
+]
+
 
 def normalize_url(value: str) -> str:
     text = value.strip()
@@ -74,6 +82,10 @@ def probe_playable(url: str) -> bool:
         return False
 
 
+def is_bad_play_url(url: str) -> bool:
+    return not url or "edgesrv.com" in url
+
+
 def pick_play_url(payload: dict) -> tuple[str, list[str]]:
     candidates = candidate_urls(payload)
     if not candidates:
@@ -109,7 +121,107 @@ async def resolve(url: str, quality: str) -> dict:
     play_url, all_urls = pick_play_url(payload)
     payload["play_url"] = play_url
     payload["backup_urls"] = [item for item in all_urls if item != play_url]
+    if play_url:
+        payload["flv_url"] = play_url
+    elif is_bad_play_url(payload.get("flv_url", "")):
+        payload["flv_url"] = ""
+    if not payload["play_url"]:
+        raise RuntimeError("未获取到可播放的 douyucdn 地址（edgesrv 线路不可用）")
     return payload
+
+
+def _stream_payload(stream, *, source_url: str, quality: str, quality_name: str) -> dict | None:
+    payload = {
+        "source_url": source_url,
+        "quality": quality,
+        "quality_name": quality_name,
+        "fetched_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
+        "platform": getattr(stream, "platform", "douyu"),
+        "anchor_name": getattr(stream, "anchor_name", ""),
+        "is_live": bool(getattr(stream, "is_live", False)),
+        "flv_url": getattr(stream, "flv_url", "") or "",
+        "m3u8_url": getattr(stream, "m3u8_url", "") or "",
+        "record_url": getattr(stream, "record_url", "") or "",
+        "raw": stream.to_json() if hasattr(stream, "to_json") else str(stream),
+    }
+    if not payload["is_live"]:
+        return None
+    if not payload["flv_url"] and not payload["m3u8_url"]:
+        return None
+
+    play_url, all_urls = pick_play_url(payload)
+    if not play_url:
+        return None
+
+    lines = [{"name": "主线路", "url": play_url}]
+    backup_index = 2
+    for item in all_urls:
+        if item == play_url or is_bad_play_url(item):
+            continue
+        lines.append({"name": f"备用{backup_index}", "url": item})
+        backup_index += 1
+    return {
+        "name": quality_name,
+        "code": quality,
+        "lines": lines,
+        "play_url": play_url,
+        "backup_urls": [line["url"] for line in lines[1:]],
+    }
+
+
+async def resolve_all(url: str) -> dict:
+    anchor_name = ""
+    is_live = False
+    streams: list[dict] = []
+    seen_paths: set[str] = set()
+
+    for code, name in QUALITY_PRESETS:
+        try:
+            live = DouyuLiveStream()
+            data = await live.fetch_web_stream_data(url)
+            stream = await live.fetch_stream_url(data, code)
+        except Exception:
+            continue
+        if anchor_name == "":
+            anchor_name = getattr(stream, "anchor_name", "") or ""
+        is_live = is_live or bool(getattr(stream, "is_live", False))
+        item = _stream_payload(stream, source_url=url, quality=code, quality_name=name)
+        if not item:
+            continue
+        path_key = item["play_url"].split("/")[-1].split("?")[0]
+        if path_key in seen_paths:
+            continue
+        seen_paths.add(path_key)
+        streams.append(item)
+
+    if not is_live:
+        raise RuntimeError("房间未开播或解析失败")
+    if not streams:
+        raise RuntimeError("未获取到可播放的 douyucdn 地址（streamget 原始 edgesrv 线路不可用）")
+
+    preferred = next((item for item in streams if item["name"] == "高清"), streams[0])
+    backup_urls: list[str] = []
+    for group in streams:
+        for line in group["lines"]:
+            url_item = line["url"]
+            if url_item and url_item not in backup_urls and url_item != preferred["play_url"]:
+                backup_urls.append(url_item)
+
+    return {
+        "source_url": url,
+        "quality": preferred["code"],
+        "fetched_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
+        "platform": "douyu",
+        "anchor_name": anchor_name,
+        "is_live": True,
+        "title": anchor_name,
+        "status": True,
+        "streams": [{"name": group["name"], "lines": group["lines"]} for group in streams],
+        "play_url": preferred["play_url"],
+        "flv_url": preferred["play_url"],
+        "m3u8_url": "",
+        "backup_urls": backup_urls,
+    }
 
 
 def main() -> int:
