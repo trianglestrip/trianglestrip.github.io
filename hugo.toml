@@ -1,7 +1,7 @@
 baseURL = "https://trianglestrip.github.io/"
 theme = "LoveIt"
 title = "随手记录"
-summaryLength = 800
+summaryLength = 2000
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-CN"
 hasCJKLanguage = true
@@ -52,6 +52,7 @@ pagerSize = 10
     [params.home.posts]
       enable = true
       paginate = 10
+      summaryLength = 2000
 
   [params.social]
 
