@@ -131,20 +131,37 @@ def fetch_yystv_api(limit: int) -> list[dict]:
     return items
 
 
-def fetch_jianshu_page(limit: int) -> list[dict]:
-    html = http_get_text("https://www.jianshu.com/", headers={"Referer": "https://www.jianshu.com"})
-    soup = BeautifulSoup(html, "html.parser")
+def fetch_jianshu_trending(limit: int) -> list[dict]:
+    text = http_get_text(
+        "https://www.jianshu.com/asimov/trending/now",
+        headers={"Referer": "https://www.jianshu.com"},
+    )
+    data = json.loads(text)
+    if not isinstance(data, list):
+        raise RuntimeError("invalid jianshu trending response")
+
     items: list[dict] = []
-    for li in soup.select("ul.note-list li"):
-        link = li.select_one("a.title")
-        if not link:
+    for entry in data:
+        obj = entry.get("object") if isinstance(entry, dict) else None
+        if not isinstance(obj, dict) or obj.get("type") != 1:
             continue
-        title = link.get_text(strip=True)
-        href = str(link.get("href") or "").strip()
-        if not title or not href:
+        note = obj.get("data")
+        if not isinstance(note, dict):
             continue
-        url = href if href.startswith("http") else f"https://www.jianshu.com{href}"
-        items.append({"title": title, "url": url, "hot": ""})
+        title = str(note.get("title", "")).strip()
+        slug = str(note.get("slug", "")).strip()
+        if not title or not slug:
+            continue
+        hot = note.get("total_fp_amount")
+        if hot is None:
+            hot = note.get("likes_count", "")
+        items.append(
+            {
+                "title": title,
+                "url": f"https://www.jianshu.com/p/{slug}",
+                "hot": str(hot),
+            }
+        )
         if len(items) >= limit:
             break
     return items
@@ -228,7 +245,7 @@ def fetch_hackernews_api(limit: int) -> list[dict]:
 CUSTOM_DRIVERS = {
     "v2ex_api": fetch_v2ex_api,
     "yystv_api": fetch_yystv_api,
-    "jianshu_page": fetch_jianshu_page,
+    "jianshu_trending": fetch_jianshu_trending,
     "douban_group": fetch_douban_group,
     "nodeseek_rss": fetch_nodeseek_rss,
     "linuxdo_rss": fetch_linuxdo_rss,

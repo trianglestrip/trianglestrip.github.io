@@ -65,7 +65,7 @@
     "linuxdo": { "title": "Linux.do", "fetcher": "linuxdo", "driver": "linuxdo_rss", "limit": 10, "ttl_minutes": 60 },
     "newsmth": { "title": "水木社区", "fetcher": "newsmth", "limit": 10, "ttl_minutes": 60 },
     "nodeseek": { "title": "NodeSeek", "fetcher": "nodeseek", "driver": "nodeseek_rss", "limit": 10, "ttl_minutes": 60 },
-    "jianshu": { "title": "简书", "fetcher": "jianshu", "driver": "jianshu_page", "min_items": 2, "limit": 10, "ttl_minutes": 120 },
+    "jianshu": { "title": "简书今日热点", "fetcher": "jianshu", "driver": "jianshu_trending", "min_items": 2, "limit": 10, "ttl_minutes": 120 },
     "github": { "title": "GitHub Trending", "fetcher": "github", "limit": 10, "ttl_minutes": 360 },
     "juejin": { "title": "稀土掘金", "fetcher": "juejin", "limit": 10, "ttl_minutes": 120 },
     "csdn": { "title": "CSDN", "fetcher": "csdn", "limit": 10, "ttl_minutes": 120 },
