@@ -67,7 +67,8 @@ def icon_src(meta: dict) -> str:
     if meta.get("icon_url"):
         return str(meta["icon_url"])
     domain = meta.get("icon_domain") or meta.get("domain", "")
-    return f"https://{domain}/favicon.ico"
+    # 直连站点 favicon 常被 CORP/403 拦截（如 linux.do），走代理
+    return f"https://www.google.com/s2/favicons?domain={domain}&sz=32"
 
 
 def render_card(platform_id: str, meta: dict, data: dict | None, now: datetime) -> str:
