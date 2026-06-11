@@ -5,12 +5,15 @@ from __future__ import annotations
 
 import html
 import json
+import subprocess
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "hot"
 OUTPUT = ROOT / "static" / "news" / "index.html"
+STUB_DIR = ROOT / "static" / "news" / "p"
 SITE_URL = "https://trianglestrip.github.io/"
 
 
@@ -94,6 +97,12 @@ def resolve_updated_at(cfg: dict, run_meta: dict | None, now: datetime) -> tuple
     if latest_iso:
         return latest_iso, format_relative(latest_iso, now)
     return "", "暂无更新记录"
+
+
+def format_views(pv: int | None) -> str:
+    if pv is None:
+        return ""
+    return f"{pv}次"
 
 
 def platform_home_url(meta: dict) -> str:
@@ -237,6 +246,7 @@ def render_card(
     *,
     category_names: dict[str, str],
     icons: dict | None,
+    views: dict[str, int | None] | None = None,
 ) -> str:
     title = html.escape(meta.get("title", platform_id))
     color = html.escape(meta.get("color", "#ccc"))
@@ -281,6 +291,12 @@ def render_card(
         head_right = '<span class="hot-card__stale">等待抓取</span>'
         body = '<p class="hot-card__empty">暂无数据</p>'
 
+    views_text = format_views((views or {}).get(platform_id))
+    views_html = (
+        f'<span class="hot-card__views" title="栏目访问次数">{html.escape(views_text)}</span>'
+        if views_text
+        else ""
+    )
     card_id = html.escape(f"hot-{platform_id}")
     return f"""<section id="{card_id}" class="hot-card hot-card--{html.escape(platform_id)}" data-category="{category}" style="--hot-accent: {color}">
   <header class="hot-card__head">
@@ -289,6 +305,7 @@ def render_card(
       <h2 class="hot-card__title">
         <a class="hot-card__title-link" href="{home_url}" target="_blank" rel="noopener noreferrer">{card_title}</a>
         <span class="hot-card__category">{category_label}</span>
+        {views_html}
       </h2>
     </div>
     <div class="hot-card__head-right">{head_right}</div>
@@ -616,6 +633,15 @@ body {
   font-weight: 500;
   line-height: 1.3;
 }
+.hot-card__views {
+  flex-shrink: 0;
+  margin-left: auto;
+  padding-left: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
 .hot-card__list {
   flex: 1;
   margin: 0;
@@ -764,7 +790,55 @@ JS = """
     });
   });
 })();
+(function () {
+  const seen = new Set();
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      const card = entry.target;
+      const id = (card.id || '').replace(/^hot-/, '');
+      if (!id || seen.has(id)) return;
+      seen.add(id);
+      const iframe = document.createElement('iframe');
+      iframe.setAttribute('aria-hidden', 'true');
+      iframe.setAttribute('tabindex', '-1');
+      iframe.style.cssText = 'position:absolute;width:0;height:0;border:0;opacity:0;pointer-events:none';
+      iframe.src = '/news/p/' + id + '.html';
+      document.body.appendChild(iframe);
+      observer.unobserve(card);
+    });
+  }, { rootMargin: '0px', threshold: 0.15 });
+  document.querySelectorAll('.hot-card[id^="hot-"]').forEach(function (card) {
+    observer.observe(card);
+  });
+})();
 """
+
+
+def write_stub_pages(platform_order: list[str], platforms: dict) -> None:
+    STUB_DIR.mkdir(parents=True, exist_ok=True)
+    for platform_id in platform_order:
+        meta = platforms.get(platform_id)
+        if not meta:
+            continue
+        title = html.escape(str(meta.get("title") or platform_id))
+        safe_id = html.escape(platform_id)
+        page = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <title>访问统计 · {title}</title>
+  <link rel="canonical" href="{SITE_URL}news/p/{safe_id}.html">
+</head>
+<body>
+  <p><a href="/news/#hot-{safe_id}">返回热榜 · {title}</a></p>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>
+"""
+        (STUB_DIR / f"{platform_id}.html").write_text(page, encoding="utf-8")
 
 
 def sprite_css(icons: dict | None) -> str:
@@ -832,6 +906,13 @@ def build() -> Path:
 
     platforms = cfg.get("platforms", {})
     platform_order = cfg.get("order", [])
+    write_stub_pages(platform_order, platforms)
+
+    views_path = DATA_DIR / "views.json"
+    platform_views: dict[str, int | None] = {}
+    if views_path.exists():
+        platform_views = load_json(views_path).get("platforms", {})
+
     nav_html = render_nav(cfg.get("categories", []), platform_order, platforms)
     category_ids = [cat["id"] for cat in cfg.get("categories", []) if cat.get("id")]
     display_order = interleave_by_category(cfg.get("order", []), platforms, category_ids)
@@ -850,6 +931,7 @@ def build() -> Path:
                 now,
                 category_names=category_names,
                 icons=card_icons,
+                views=platform_views,
             )
         )
 
@@ -864,6 +946,7 @@ def build() -> Path:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>热榜</title>
   <meta name="description" content="多平台热榜聚合">
+  <meta name="referrer" content="no-referrer-when-downgrade">
   <link rel="canonical" href="{SITE_URL}news/">
   <style>{sprite_css(card_icons)}{CSS}</style>
 </head>
@@ -896,6 +979,9 @@ def build() -> Path:
 
 
 def main() -> int:
+    views_script = ROOT / "scripts" / "fetch-hot-views.py"
+    if views_script.exists():
+        subprocess.run([sys.executable, str(views_script)], check=False)
     path = build()
     print(f"built {path}")
     return 0
