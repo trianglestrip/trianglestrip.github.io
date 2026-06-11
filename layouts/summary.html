@@ -42,19 +42,12 @@
         {{- end -}}
     </div>
 
-    {{- /* Summary content */ -}}
-    {{- $summaryLength := .Site.Params.home.posts.summaryLength | default 2000 -}}
-    {{- $preview := "" -}}
-    {{- with .Content -}}
-        {{- $preview = . | plainify | strings.TrimSpace | strings.Truncate $summaryLength -}}
-    {{- else -}}
-        {{- with .Description -}}
-            {{- $preview = . | plainify | strings.TrimSpace | strings.Truncate $summaryLength -}}
-        {{- end -}}
-    {{- end -}}
+    {{- /* Summary content: 保留 Markdown 渲染格式，长度由 summaryLength + CSS 控制 */ -}}
     <div class="content">
-        {{- with $preview -}}
-            <p>{{ . }}</p>
+        {{- with .Summary -}}
+            {{- dict "Content" . "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
+        {{- else -}}
+            {{- .Description | safeHTML -}}
         {{- end -}}
     </div>
 

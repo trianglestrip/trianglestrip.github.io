@@ -414,6 +414,7 @@ class Theme {
     initDetails() {
         Util.forEach(document.getElementsByClassName('details'), $details => {
             const $summary = $details.getElementsByClassName('details-summary')[0];
+            if (!$summary) return;
             $summary.addEventListener('click', () => {
                 $details.classList.toggle('open');
             }, false);
@@ -421,7 +422,9 @@ class Theme {
     }
 
     initLightGallery() {
-        if (this.config.lightgallery) lightGallery(document.getElementById('content'), {
+        const $content = document.getElementById('content');
+        if (!this.config.lightgallery || !$content) return;
+        lightGallery($content, {
             plugins: [lgThumbnail, lgZoom],
             selector: '.lightgallery',
             speed: 400,
@@ -477,7 +480,10 @@ class Theme {
     initToc() {
         const $tocCore = document.getElementById('TableOfContents');
         if ($tocCore === null) return;
-        if (document.getElementById('toc-static').getAttribute('data-kept') || Util.isTocStatic()) {
+        const $tocStatic = document.getElementById('toc-static');
+        const $headerDesktop = document.getElementById('header-desktop');
+        const $postFooter = document.getElementById('post-footer');
+        if ($tocStatic?.getAttribute('data-kept') || Util.isTocStatic()) {
             const $tocContentStatic = document.getElementById('toc-content-static');
             if ($tocCore.parentElement !== $tocContentStatic) {
                 $tocCore.parentElement.removeChild($tocCore);
@@ -500,12 +506,13 @@ class Theme {
             const $tocLiElements = $tocCore.getElementsByTagName('li');
             const $headerLinkElements = document.getElementsByClassName('headerLink');
             const headerIsFixed = document.body.getAttribute('data-header-desktop') !== 'normal';
-            const headerHeight = document.getElementById('header-desktop').offsetHeight;
+            const headerHeight = $headerDesktop ? $headerDesktop.offsetHeight : 0;
             const TOP_SPACING = 20 + (headerIsFixed ? headerHeight : 0);
             const minTocTop = $toc.offsetTop;
             const minScrollTop = minTocTop - TOP_SPACING + (headerIsFixed ? 0 : headerHeight);
             this._tocOnScroll = this._tocOnScroll || (() => {
-                const footerTop = document.getElementById('post-footer').offsetTop;
+                if (!$postFooter) return;
+                const footerTop = $postFooter.offsetTop;
                 const maxTocTop = footerTop - $toc.getBoundingClientRect().height;
                 const maxScrollTop = maxTocTop - TOP_SPACING + (headerIsFixed ? 0 : headerHeight);
                 if (this.newScrollTop < minScrollTop) {
@@ -755,9 +762,12 @@ class Theme {
         if (document.body.getAttribute('data-header-mobile') === 'auto') $headers.push(document.getElementById('header-mobile'));
         if (document.getElementById('comments')) {
             const $viewComments = document.getElementById('view-comments');
-            $viewComments.href = `#comments`;
-            $viewComments.parentElement.removeChild($viewComments);
-            document.getElementById('fixed-buttons').appendChild($viewComments);
+            const $fixedButtons = document.getElementById('fixed-buttons');
+            if ($viewComments && $fixedButtons && $viewComments.parentElement) {
+                $viewComments.href = `#comments`;
+                $viewComments.parentElement.removeChild($viewComments);
+                $fixedButtons.appendChild($viewComments);
+            }
         }
         const $fixedButtons = document.getElementById('fixed-buttons');
         const ACCURACY = 20, MINIMUM = 100;
@@ -766,6 +776,7 @@ class Theme {
             const scroll = this.newScrollTop - this.oldScrollTop;
             const isMobile = Util.isMobile();
             Util.forEach($headers, $header => {
+                if (!$header) return;
                 if (scroll > ACCURACY) {
                     $header.classList.remove('animate__fadeInDown');
                     Util.animateCSS($header, ['animate__fadeOutUp', 'animate__faster'], true);
@@ -774,21 +785,23 @@ class Theme {
                     Util.animateCSS($header, ['animate__fadeInDown', 'animate__faster'], true);
                 }
             });
-            if (this.newScrollTop > MINIMUM) {
-                if (isMobile && scroll > ACCURACY) {
-                    $fixedButtons.classList.remove('animate__fadeIn');
-                    Util.animateCSS($fixedButtons, ['animate__fadeOut', 'animate__faster'], true);
-                } else if (!isMobile || scroll < - ACCURACY) {
-                    $fixedButtons.style.display = 'block';
-                    $fixedButtons.classList.remove('animate__fadeOut');
-                    Util.animateCSS($fixedButtons, ['animate__FadeIn', 'animate__faster'], true);
+            if ($fixedButtons) {
+                if (this.newScrollTop > MINIMUM) {
+                    if (isMobile && scroll > ACCURACY) {
+                        $fixedButtons.classList.remove('animate__fadeIn');
+                        Util.animateCSS($fixedButtons, ['animate__fadeOut', 'animate__faster'], true);
+                    } else if (!isMobile || scroll < - ACCURACY) {
+                        $fixedButtons.style.display = 'block';
+                        $fixedButtons.classList.remove('animate__fadeOut');
+                        Util.animateCSS($fixedButtons, ['animate__FadeIn', 'animate__faster'], true);
+                    }
+                } else {
+                    if (!isMobile) {
+                        $fixedButtons.classList.remove('animate__fadeIn');
+                        Util.animateCSS($fixedButtons, ['animate__fadeOut', 'animate__faster'], true);
+                    }
+                    $fixedButtons.style.display = 'none';
                 }
-            } else {
-                if (!isMobile) {
-                    $fixedButtons.classList.remove('animate__fadeIn');
-                    Util.animateCSS($fixedButtons, ['animate__fadeOut', 'animate__faster'], true);
-                }
-                $fixedButtons.style.display = 'none';
             }
             for (let event of this.scrollEventSet) event();
             this.oldScrollTop = this.newScrollTop;
