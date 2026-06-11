@@ -9,11 +9,11 @@ import urllib.request
 from io import BytesIO
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-CONFIG_FILE = ROOT / "data" / "hot" / "config.json"
-MANIFEST_FILE = ROOT / "data" / "hot" / "icons.json"
-SPRITE_CARD_FILE = ROOT / "static" / "news" / "icons-sprite.png"
-SPRITE_DOCK_FILE = ROOT / "static" / "news" / "icons-sprite-dock.png"
+NEWS_ROOT = Path(__file__).resolve().parent
+CONFIG_FILE = NEWS_ROOT / "data" / "config.json"
+MANIFEST_FILE = NEWS_ROOT / "data" / "icons.json"
+SPRITE_CARD_FILE = NEWS_ROOT / "icons-sprite.png"
+SPRITE_DOCK_FILE = NEWS_ROOT / "icons-sprite-dock.png"
 CARD_ICON_SIZE = 20
 DOCK_ICON_SIZE = 32
 COLS = 10

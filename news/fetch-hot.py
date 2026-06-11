@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""在 GitHub Actions 中直接抓取各平台热榜，写入 data/hot/{platform}.json。"""
+"""在 GitHub Actions 中直接抓取各平台热榜，写入 news/data/{platform}.json。"""
 
 from __future__ import annotations
 
@@ -15,10 +15,10 @@ from pathlib import Path
 import feedparser
 from bs4 import BeautifulSoup
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data" / "hot"
+NEWS_ROOT = Path(__file__).resolve().parent
+DATA_DIR = NEWS_ROOT / "data"
 META_FILE = DATA_DIR / "meta.json"
-SOURCES_FILE = ROOT / "scripts" / "hot-sources.json"
+SOURCES_FILE = NEWS_ROOT / "hot-sources.json"
 FETCH_TIMEOUT = 60
 HTTP_TIMEOUT = 30
 MAX_RETRIES = 3
@@ -672,7 +672,7 @@ def run(platform: str | None, force: bool) -> int:
 
     write_run_meta(changed=changed, fetched=fetched, skipped=skipped)
 
-    build_script = ROOT / "scripts" / "build-hot-html.py"
+    build_script = NEWS_ROOT / "build-hot-html.py"
     if build_script.exists():
         subprocess.run([sys.executable, str(build_script)], check=False)
 

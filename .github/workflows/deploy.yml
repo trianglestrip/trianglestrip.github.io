@@ -4,12 +4,7 @@ on:
     branches: [ master ]
     paths-ignore:
       - 'live/**'
-      - 'data/hot/**'
-      - 'static/news/**'
-      - 'scripts/fetch-hot.py'
-      - 'scripts/build-hot-html.py'
-      - 'scripts/hot-sources.json'
-      - '.github/workflows/hot-fetch.yml'
+      - 'news/**'
   discussion:
     types: [created, edited, deleted, transferred, labeled, unlabeled]
   workflow_dispatch:
@@ -37,6 +32,10 @@ jobs:
           python3 scripts/prepare-posts.py
           python3 scripts/sync-discussions.py
           hugo --minify --contentDir .hugo-prepared/content
+      - name: 合并热榜静态页（news 独立模块，仅拷贝发布产物）
+        run: |
+          mkdir -p public/news
+          cp news/index.html news/icons-sprite.png news/icons-sprite-dock.png public/news/
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:

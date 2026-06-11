@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""根据 data/hot 缓存生成独立静态热榜页 static/news/index.html。"""
+"""根据 news/data 缓存生成独立静态热榜页 news/index.html。"""
 
 from __future__ import annotations
 
@@ -9,9 +9,10 @@ import tomllib
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data" / "hot"
-OUTPUT = ROOT / "static" / "news" / "index.html"
+NEWS_ROOT = Path(__file__).resolve().parent
+REPO_ROOT = NEWS_ROOT.parent
+DATA_DIR = NEWS_ROOT / "data"
+OUTPUT = NEWS_ROOT / "index.html"
 SITE_URL = "https://trianglestrip.github.io/"
 
 
@@ -98,7 +99,7 @@ def resolve_updated_at(cfg: dict, run_meta: dict | None, now: datetime) -> tuple
 
 
 def load_baidu_id() -> str:
-    hugo_path = ROOT / "hugo.toml"
+    hugo_path = REPO_ROOT / "hugo.toml"
     if not hugo_path.exists():
         return ""
     with hugo_path.open("rb") as fh:

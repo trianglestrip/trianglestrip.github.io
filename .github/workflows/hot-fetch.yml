@@ -1,73 +1,74 @@
-name: 抓取热榜
-on:
-  push:
-    branches: [ master ]
-    paths:
-      - 'data/hot/**'
-      - 'static/news/**'
-      - 'scripts/fetch-hot.py'
-      - 'scripts/build-hot-html.py'
-      - 'scripts/hot-sources.json'
-      - '.github/workflows/hot-fetch.yml'
-  schedule:
-    - cron: '*/5 * * * *'
-  workflow_dispatch:
-    inputs:
-      platform:
-        description: 指定平台（留空则按 TTL 抓取全部）
-        required: false
-        default: ''
-      force:
-        description: 忽略 TTL 强制刷新
-        required: false
-        type: boolean
-        default: false
-
-permissions:
-  contents: write
-
-jobs:
-  fetch:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: 安装抓取依赖
-        run: pip install hotboard beautifulsoup4 feedparser lxml pillow
-
-      - name: 抓取热榜数据
-        env:
-          PYTHONIOENCODING: utf-8
-          PYTHONUTF8: "1"
-        run: |
-          args=()
-          if [ -n "${{ github.event.inputs.platform }}" ]; then
-            args+=("${{ github.event.inputs.platform }}")
-          fi
-          if [ "${{ github.event.inputs.force }}" = "true" ]; then
-            args+=("--force")
-          fi
-          python3 scripts/fetch-hot.py "${args[@]}"
-
-      - name: 生成热榜静态页
-        run: python3 scripts/build-hot-html.py
-
-      - name: 提交缓存与静态页
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/hot/*.json static/news/index.html static/news/icons-sprite.png static/news/icons-sprite-dock.png
-          if git diff --staged --quiet; then
-            echo "no hot changes"
-            exit 0
-          fi
-          git commit -m "chore(hot): update trending cache and news page"
-          git push
-
-      - name: 部署热榜页到 gh-pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./static/news
-          destination_dir: news
-          keep_files: true
+name: 抓取热榜
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'news/**'
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 指定平台（留空则按 TTL 抓取全部）
+        required: false
+        default: ''
+      force:
+        description: 忽略 TTL 强制刷新
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装抓取依赖
+        run: pip install hotboard beautifulsoup4 feedparser lxml pillow
+
+      - name: 抓取热榜数据
+        env:
+          PYTHONIOENCODING: utf-8
+          PYTHONUTF8: "1"
+        run: |
+          args=()
+          if [ -n "${{ github.event.inputs.platform }}" ]; then
+            args+=("${{ github.event.inputs.platform }}")
+          fi
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            args+=("--force")
+          fi
+          python3 news/fetch-hot.py "${args[@]}"
+
+      - name: 生成热榜静态页
+        run: python3 news/build-hot-html.py
+
+      - name: 提交缓存与静态页
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add news/data/*.json news/index.html news/icons-sprite.png news/icons-sprite-dock.png
+          if git diff --staged --quiet; then
+            echo "no hot changes"
+            exit 0
+          fi
+          git commit -m "chore(hot): update trending cache and news page"
+          git push
+
+      - name: 准备发布目录
+        run: |
+          rm -rf news/publish
+          mkdir -p news/publish
+          cp news/index.html news/icons-sprite.png news/icons-sprite-dock.png news/publish/
+
+      - name: 部署热榜页到 gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./news/publish
+          destination_dir: news
+          keep_files: true
