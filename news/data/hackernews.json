@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-11T12:36:26+00:00",
+  "updated_at": "2026-06-11T16:40:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Pokémon Go Scans Trained the Navigation Tech for Military Drones",
-      "url": "https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/",
-      "hot": "395"
+      "title": "MiMo Code Is Now Released and Open-Source",
+      "url": "https://mimo.xiaomi.com/mimocode",
+      "hot": "173"
     },
     {
       "rank": 2,
       "title": "Lines of Code Got a Better Publicist",
       "url": "https://curlewis.co.nz/posts/lines-of-code-got-a-better-publicist/",
-      "hot": "5"
+      "hot": "243"
     },
     {
       "rank": 3,
-      "title": "AI agent runs amok in Fedora and elsewhere",
-      "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
-      "hot": "450"
+      "title": "MapComplete – Contibute to OpenStreetMaps",
+      "url": "https://mapcomplete.org/",
+      "hot": "125"
     },
     {
       "rank": 4,
-      "title": "Build a Basic AI Agent from Scratch: Long Task Planning",
-      "url": "https://medium.com/@rogi23696/build-a-basic-ai-agent-from-scratch-long-task-planning-14e803f9bd6d",
-      "hot": "52"
+      "title": "Nextcloud Hub 26 Spring: Built together, designed for the future",
+      "url": "https://nextcloud.com/blog/nextcloud-hub26-spring/",
+      "hot": "74"
     },
     {
       "rank": 5,
-      "title": "Web Browsers on Video Game Consoles",
-      "url": "https://vale.rocks/posts/game-console-browsers",
-      "hot": "61"
+      "title": "Open Reproduction of DeepSeek-R1",
+      "url": "https://github.com/huggingface/open-r1",
+      "hot": "95"
     },
     {
       "rank": 6,
-      "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
-      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
-      "hot": "488"
+      "title": "Pokémon Go Scans Trained the Navigation Tech for Military Drones",
+      "url": "https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/",
+      "hot": "579"
     },
     {
       "rank": 7,
-      "title": "πFS",
-      "url": "https://github.com/philipl/pifs",
-      "hot": "820"
+      "title": "FPS.cob: A first person shooter in COBOL",
+      "url": "https://github.com/icitry/FPS.cob",
+      "hot": "41"
     },
     {
       "rank": 8,
-      "title": "Anthropic requires 30 day data retention for Fable and Mythos",
-      "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
-      "hot": "485"
+      "title": "The RCE that AMD wouldn't fix",
+      "url": "https://mrbruh.com/amd2/",
+      "hot": "18"
     },
     {
       "rank": 9,
-      "title": "HTML is a native image format, hear me out",
-      "url": "https://hmml.eddocu.com",
-      "hot": "25"
+      "title": "Anthropic apologizes for invisible Claude Fable guardrails",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+      "hot": "15"
     },
     {
       "rank": 10,
-      "title": "BYD is bringing its 5-min 'Flash' electric car charging to Canada",
-      "url": "https://electrek.co/2026/06/10/byd-flash-charging-canada-5-minute-ev-charging-network/",
-      "hot": "32"
+      "title": "Petition to Withdraw Canada's Bill C-22",
+      "url": "https://www.ourcommons.ca/petitions/en/Petition/Sign/e-7416",
+      "hot": "9"
     }
   ]
 }
