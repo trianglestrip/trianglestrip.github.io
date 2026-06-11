@@ -36,6 +36,39 @@ def format_relative(iso_value: str, now: datetime) -> str:
     return f"{seconds // 86400}天前"
 
 
+def interleave_by_category(
+    order: list[str],
+    platforms: dict,
+    category_ids: list[str],
+) -> list[str]:
+    """按分类轮询排列：每轮从各分类取一个，使首页横向分布更均衡。"""
+    buckets: dict[str, list[str]] = {cat_id: [] for cat_id in category_ids}
+    extra: dict[str, list[str]] = {}
+
+    for platform_id in order:
+        meta = platforms.get(platform_id)
+        if not meta:
+            continue
+        category = str(meta.get("category", "general"))
+        if category in buckets:
+            buckets[category].append(platform_id)
+        else:
+            extra.setdefault(category, []).append(platform_id)
+
+    merged_ids = category_ids + [cat for cat in extra if cat not in category_ids]
+    max_len = 0
+    for cat_id in merged_ids:
+        max_len = max(max_len, len(buckets.get(cat_id, [])) + len(extra.get(cat_id, [])))
+
+    result: list[str] = []
+    for index in range(max_len):
+        for cat_id in merged_ids:
+            items = buckets.get(cat_id, []) + extra.get(cat_id, [])
+            if index < len(items):
+                result.append(items[index])
+    return result
+
+
 def resolve_updated_at(cfg: dict, run_meta: dict | None, now: datetime) -> tuple[str, str]:
     if run_meta and run_meta.get("last_run_at"):
         iso = str(run_meta["last_run_at"])
@@ -434,8 +467,10 @@ def build() -> Path:
         )
 
     platforms = cfg.get("platforms", {})
+    category_ids = [cat["id"] for cat in cfg.get("categories", []) if cat.get("id")]
+    display_order = interleave_by_category(cfg.get("order", []), platforms, category_ids)
     cards = []
-    for platform_id in cfg.get("order", []):
+    for platform_id in display_order:
         pmeta = platforms.get(platform_id)
         if not pmeta:
             continue
