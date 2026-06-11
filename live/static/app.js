@@ -7,6 +7,8 @@ const SITES = [
   { id: "douyin", name: "抖音", icon: "🎵", referer: "https://live.douyin.com/" },
 ];
 
+const SEGMENT_BATCH = 3;
+
 const state = {
   site: "douyu",
   source: "local",
@@ -16,6 +18,9 @@ const state = {
   payload: null,
   player: null,
   useProxy: true,
+  loopActive: false,
+  blobUrl: null,
+  proxyBase: "",
 };
 
 const els = {
@@ -146,7 +151,15 @@ function collectBackupUrls(payload, directUrl) {
   return urls;
 }
 
-function destroyPlayer() {
+function revokeBlob() {
+  if (state.blobUrl) {
+    URL.revokeObjectURL(state.blobUrl);
+    state.blobUrl = null;
+  }
+}
+
+function destroyPlayerInstance() {
+  revokeBlob();
   if (state.player) {
     try {
       state.player.destroy();
@@ -155,35 +168,120 @@ function destroyPlayer() {
   }
 }
 
-function buildPlayUrl(payload) {
-  return `${payload.proxy_url}&mode=live&_ts=${Date.now()}`;
+function destroyPlayer() {
+  state.loopActive = false;
+  destroyPlayerInstance();
 }
 
-async function registerProxy(directUrl, payload) {
-  const res = await fetch("/api/proxy/register", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      play_url: directUrl,
-      backup_urls: collectBackupUrls(payload, directUrl),
-    }),
-    cache: "no-store",
-  });
-  const data = await res.json();
-  if (!res.ok || !data.ok) throw new Error(data.error || `HTTP ${res.status}`);
-  return data;
+function segmentUrl(proxyBase) {
+  return `${proxyBase}&mode=segment&_ts=${Date.now()}`;
 }
 
-function startPlayer(url) {
-  destroyPlayer();
-  if (!window.FlvPlayer) {
-    throw new Error("xgplayer-flv 未加载，请检查网络或刷新页面");
+function isFlvBuffer(buffer) {
+  if (!buffer || buffer.byteLength < 4) return false;
+  const head = new Uint8Array(buffer, 0, 4);
+  return head[0] === 0x46 && head[1] === 0x4c && head[2] === 0x56;
+}
+
+async function fetchSegment(proxyBase) {
+  const res = await fetch(segmentUrl(proxyBase), { cache: "no-store" });
+  if (!res.ok) throw new Error(`代理段 HTTP ${res.status}`);
+  const buffer = await res.arrayBuffer();
+  if (!isFlvBuffer(buffer)) throw new Error("代理返回非 FLV");
+  return buffer;
+}
+
+function concatFlvSegments(buffers) {
+  const FLV_HEADER_SIZE = 13;
+  const parts = [];
+  let total = 0;
+  for (let i = 0; i < buffers.length; i += 1) {
+    const bytes = new Uint8Array(buffers[i]);
+    const slice = i === 0 ? bytes : bytes.subarray(
+      bytes.length > FLV_HEADER_SIZE && isFlvBuffer(bytes.buffer) ? FLV_HEADER_SIZE : 0,
+    );
+    parts.push(slice);
+    total += slice.length;
   }
+  const merged = new Uint8Array(total);
+  let offset = 0;
+  for (const part of parts) {
+    merged.set(part, offset);
+    offset += part.length;
+  }
+  return merged.buffer;
+}
+
+async function fetchMergedSegments(proxyBase) {
+  const buffers = await Promise.all(
+    Array.from({ length: SEGMENT_BATCH }, () => fetchSegment(proxyBase)),
+  );
+  return concatFlvSegments(buffers);
+}
+
+function ensureFlvPlayer() {
+  if (!window.FlvPlayer) throw new Error("xgplayer-flv 未加载，请检查网络或刷新页面");
   if (FlvPlayer.isSupported && !FlvPlayer.isSupported()) {
     throw new Error("当前浏览器不支持 MSE，无法播放 FLV");
   }
+}
 
-  const referer = siteReferer(state.site);
+function playBlob(buffer, referer) {
+  return new Promise((resolve, reject) => {
+    ensureFlvPlayer();
+    destroyPlayerInstance();
+
+    state.blobUrl = URL.createObjectURL(new Blob([buffer], { type: "video/x-flv" }));
+    state.player = new FlvPlayer({
+      id: "player",
+      url: state.blobUrl,
+      isLive: false,
+      autoplay: true,
+      playsinline: true,
+      fluid: true,
+      lang: "zh-cn",
+      volume: 0.7,
+      muted: true,
+      cors: true,
+      fitVideoSize: "fixWidth",
+      flv: {
+        cors: true,
+        fetchOptions: {
+          headers: { Referer: referer },
+        },
+      },
+    });
+
+    let settled = false;
+    const done = () => {
+      if (settled) return;
+      settled = true;
+      resolve();
+    };
+    const fail = (detail) => {
+      if (settled) return;
+      settled = true;
+      reject(new Error(detail || "播放失败"));
+    };
+
+    state.player.on("playing", done);
+    state.player.on("canplay", done);
+    state.player.on("ended", done);
+    state.player.on("error", (err) => {
+      fail(err?.message || err?.type || "播放器错误");
+    });
+
+    setTimeout(() => {
+      if (!settled && state.player && !state.player.paused) done();
+    }, 3000);
+    setTimeout(() => fail("播放超时"), 12000);
+  });
+}
+
+function startDirectPlayer(url, referer) {
+  ensureFlvPlayer();
+  destroyPlayer();
+  state.loopActive = true;
   state.player = new FlvPlayer({
     id: "player",
     url,
@@ -193,6 +291,7 @@ function startPlayer(url) {
     fluid: true,
     lang: "zh-cn",
     volume: 0.7,
+    muted: true,
     seamlesslyReload: true,
     retryCount: 3,
     retryDelay: 1000,
@@ -211,8 +310,57 @@ function startPlayer(url) {
 
   state.player.on("error", (err) => {
     const detail = err?.message || err?.type || "未知错误";
-    setStatus(`播放出错: ${detail}\n可切换线路，或将播放方式改为「直连 CDN」`, false);
+    setStatus(`直连播放出错: ${detail}`, false);
   });
+}
+
+async function proxyPlaybackLoop(proxyBase, referer, metaText) {
+  state.proxyBase = proxyBase;
+  state.loopActive = true;
+  let batch = 0;
+  let nextBatchPromise = fetchMergedSegments(proxyBase);
+
+  while (state.loopActive) {
+    let merged;
+    try {
+      merged = await nextBatchPromise;
+    } catch (err) {
+      if (!state.loopActive) break;
+      setStatus(`缓存失败: ${err.message}\n0.5 秒后重试…`, false);
+      await new Promise((r) => setTimeout(r, 500));
+      nextBatchPromise = fetchMergedSegments(proxyBase);
+      continue;
+    }
+
+    nextBatchPromise = fetchMergedSegments(proxyBase);
+    batch += 1;
+    const mb = (merged.byteLength / (1024 * 1024)).toFixed(2);
+    setStatus(`${metaText}\n批次 ${batch} | 已缓存 ${SEGMENT_BATCH} 段 (~${mb} MB)`, true);
+
+    try {
+      await playBlob(merged, referer);
+    } catch (err) {
+      if (!state.loopActive) break;
+      setStatus(`播放中断: ${err.message}\n0.5 秒后重试…`, false);
+      await new Promise((r) => setTimeout(r, 500));
+      nextBatchPromise = fetchMergedSegments(proxyBase);
+    }
+  }
+}
+
+async function registerProxy(directUrl, payload) {
+  const res = await fetch("/api/proxy/register", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      play_url: directUrl,
+      backup_urls: collectBackupUrls(payload, directUrl),
+    }),
+    cache: "no-store",
+  });
+  const data = await res.json();
+  if (!res.ok || !data.ok) throw new Error(data.error || `HTTP ${res.status}`);
+  return data;
 }
 
 function updateRoomMeta(payload) {
@@ -234,7 +382,7 @@ async function playRoom() {
   destroyPlayer();
   setStatus("正在通过本机服务解析…", true);
   try {
-    let payload = await fetchRoom();
+    const payload = await fetchRoom();
     if (!payload.is_live && !payload.status) {
       updateRoomMeta(payload);
       throw new Error("房间未开播");
@@ -246,23 +394,25 @@ async function playRoom() {
     const directUrl = currentPlayUrl(payload);
     if (!directUrl) throw new Error("未获取到播放地址");
 
-    let playUrl = directUrl;
-    if (state.useProxy) {
-      const proxyPayload = await registerProxy(directUrl, payload);
-      playUrl = buildPlayUrl(proxyPayload);
-      payload = { ...payload, ...proxyPayload };
-    }
-
-    state.payload = payload;
-    startPlayer(playUrl);
-
     const q = payload.streams?.[state.qualityIndex]?.name || "默认";
     const line = payload.streams?.[state.qualityIndex]?.lines?.[state.lineIndex]?.name || "";
-    setStatus(
+    const metaText =
       `解析源: ${payload.source}（本机） | ${q} / ${line}\n` +
-      `${state.useProxy ? "代理直播" : "直连 CDN"}: ${directUrl.slice(0, 100)}…`,
-      true,
-    );
+      `${state.useProxy ? "代理播放" : "直连 CDN"}: ${directUrl.slice(0, 100)}…\n` +
+      "（已静音自动播放，可在播放器控件中打开声音）";
+
+    state.payload = payload;
+    const referer = siteReferer(state.site);
+
+    if (state.useProxy) {
+      const proxyPayload = await registerProxy(directUrl, payload);
+      if (!proxyPayload.proxy_url) throw new Error("代理注册失败");
+      proxyPlaybackLoop(proxyPayload.proxy_url, referer, metaText);
+      return;
+    }
+
+    setStatus(metaText, true);
+    startDirectPlayer(directUrl, referer);
   } catch (err) {
     setStatus(`失败: ${err.message}`, false);
   }
