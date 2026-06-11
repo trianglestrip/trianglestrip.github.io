@@ -1,8 +1,15 @@
+// 去掉标题 # | 锚点装饰（详情页保留锚点供 TOC，仅隐藏视觉）
+.page.single .content .header-mark,
+.home[data-home=posts] .summary .content .header-mark {
+  display: none;
+}
+
 // 主页文章预览：LoveIt 默认强制 inline + 统一字号，恢复块级排版与标题层级
 .home[data-home=posts] .summary .content {
   display: block;
   max-height: 30em;
   overflow: hidden;
+  color: #161209;
 
   h1,
   h2,
@@ -24,9 +31,9 @@
     display: none;
   }
 
-  // 防止详情页锚点样式泄漏到摘要（#、| 前缀）
-  .header-mark {
-    display: none;
+  b,
+  strong {
+    color: #161209;
   }
 
   h2,
@@ -74,6 +81,15 @@
 
   li {
     display: list-item;
+  }
+}
+
+[theme=dark] .home[data-home=posts] .summary .content {
+  color: #a9a9b3;
+
+  b,
+  strong {
+    color: #a9a9b3;
   }
 }
 
