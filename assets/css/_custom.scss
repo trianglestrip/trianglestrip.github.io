@@ -93,6 +93,10 @@
   }
 }
 
+.page.single.hot-page {
+  max-width: 100%;
+}
+
 .hot-page__intro {
   margin-bottom: 1.5rem;
   color: var(--global-font-secondary-color, #6a6a6a);
@@ -101,52 +105,70 @@
 
 .hot-board {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.65rem;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0 0.75rem;
+  box-sizing: border-box;
 }
 
 .hot-board__column {
-  padding: 1rem 1.1rem;
+  min-width: 0;
+  padding: 0.75rem 0.65rem;
   border: 1px solid var(--border-color, rgba(125, 125, 125, 0.2));
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   background: var(--card-bg, rgba(125, 125, 125, 0.04));
 }
 
 .hot-board__header {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .hot-board__title {
   margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hot-board__meta {
-  margin-top: 0.35rem;
+  margin-top: 0.25rem;
   color: var(--global-font-secondary-color, #6a6a6a);
-  font-size: 0.82rem;
-  line-height: 1.5;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hot-board__stale {
-  margin-left: 0.35rem;
+  margin-left: 0.25rem;
   color: #c97a1a;
 }
 
 .hot-board__list {
   margin: 0;
-  padding-left: 1.25rem;
+  padding-left: 1.1rem;
 }
 
 .hot-board__item {
-  margin: 0.45rem 0;
-  line-height: 1.5;
+  margin: 0.35rem 0;
+  line-height: 1.4;
 }
 
 .hot-board__link {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-word;
   color: inherit;
   text-decoration: none;
+  font-size: 0.82rem;
 
   &:hover {
     color: var(--link-hover-color, #42b983);
@@ -155,16 +177,21 @@
 }
 
 .hot-board__hot {
-  display: inline-block;
-  margin-left: 0.35rem;
-  color: var(--global-font-secondary-color, #6a6a6a);
-  font-size: 0.82rem;
+  display: none;
 }
 
 .hot-board__empty {
   margin: 0;
   color: var(--global-font-secondary-color, #6a6a6a);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 960px) {
+  .hot-board {
+    grid-template-columns: repeat(6, minmax(8.5rem, 1fr));
+    overflow-x: auto;
+    padding-bottom: 0.35rem;
+  }
 }
 
 #comments {

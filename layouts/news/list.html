@@ -28,7 +28,19 @@
                         {{- with $data -}}
                             <div class="hot-board__meta">
                                 {{- with .updated_at -}}
-                                    <time datetime="{{ . }}">更新于 {{ . }}</time>
+                                    {{- $updated := time . -}}
+                                    {{- $seconds := sub now.Unix $updated.Unix -}}
+                                    <time datetime="{{ . }}" class="hot-board__time">
+                                        {{- if lt $seconds 60 -}}
+                                            刚刚
+                                        {{- else if lt $seconds 3600 -}}
+                                            {{ div $seconds 60 }}分钟前
+                                        {{- else if lt $seconds 86400 -}}
+                                            {{ div $seconds 3600 }}小时前
+                                        {{- else -}}
+                                            {{ div $seconds 86400 }}天前
+                                        {{- end -}}
+                                    </time>
                                 {{- end -}}
                                 {{- if not .fetch_ok -}}
                                     <span class="hot-board__stale">缓存数据（刷新失败）</span>
