@@ -1,11 +1,11 @@
-/* global Player, FlvPlayer, LZString */
+/* global FlvPlayer, LZString */
 
 const MUXIA_API = "https://live.muxia.site/api/";
 const SITES = [
-  { id: "douyu", name: "斗鱼", icon: "🐟" },
-  { id: "huya", name: "虎牙", icon: "🐯" },
-  { id: "bilibili", name: "哔哩", icon: "📺" },
-  { id: "douyin", name: "抖音", icon: "🎵" },
+  { id: "douyu", name: "斗鱼", icon: "🐟", referer: "https://www.douyu.com/" },
+  { id: "huya", name: "虎牙", icon: "🐯", referer: "https://www.huya.com/" },
+  { id: "bilibili", name: "哔哩", icon: "📺", referer: "https://live.bilibili.com/" },
+  { id: "douyin", name: "抖音", icon: "🎵", referer: "https://live.douyin.com/" },
 ];
 
 const state = {
@@ -34,6 +34,10 @@ const els = {
   roomCover: document.getElementById("roomCover"),
   liveBadge: document.getElementById("liveBadge"),
 };
+
+function siteReferer(siteId) {
+  return SITES.find((item) => item.id === siteId)?.referer || "https://www.douyu.com/";
+}
 
 function setStatus(text, ok = true) {
   els.status.className = "status " + (ok ? "ok" : "err");
@@ -181,6 +185,19 @@ function currentPlayUrl(payload) {
   return payload.play_url || payload.flv_url || payload.m3u8_url || "";
 }
 
+function collectBackupUrls(payload, directUrl) {
+  const urls = [];
+  for (const group of payload.streams || []) {
+    for (const line of group.lines || []) {
+      if (line.url && line.url !== directUrl) urls.push(line.url);
+    }
+  }
+  for (const item of payload.backup_urls || []) {
+    if (item && item !== directUrl && !urls.includes(item)) urls.push(item);
+  }
+  return urls;
+}
+
 function destroyPlayer() {
   if (state.player) {
     try {
@@ -190,43 +207,36 @@ function destroyPlayer() {
   }
 }
 
-function buildPlayUrl(payload, directUrl) {
-  if (!state.useProxy || !payload.proxy_url) return directUrl;
-  return `${payload.proxy_url}&mode=segment&_ts=${Date.now()}`;
+function buildPlayUrl(payload) {
+  return `${payload.proxy_url}&mode=live&_ts=${Date.now()}`;
 }
 
-async function resolveAndRegisterProxy(payload, directUrl) {
-  if (payload.proxy_url) return payload;
-  const res = await fetch("/api/resolve", {
+async function registerProxy(directUrl, payload) {
+  const res = await fetch("/api/proxy/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      room: state.room,
-      site: state.site,
-      source: state.source === "muxia" ? "muxia" : "local",
-      quality: "OD",
+      play_url: directUrl,
+      backup_urls: collectBackupUrls(payload, directUrl),
     }),
     cache: "no-store",
   });
   const data = await res.json();
   if (!res.ok || !data.ok) throw new Error(data.error || `HTTP ${res.status}`);
-  data.streams = payload.streams;
-  data.title = payload.title || data.title;
-  data.cover = payload.cover || data.cover;
-  data.play_url = directUrl || data.play_url;
   return data;
 }
 
-function startPlayer(url) {
+function startPlayer(url, directUrl) {
   destroyPlayer();
-  if (!window.Player || !window.FlvPlayer) {
-    throw new Error("xgplayer / xgplayer-flv 未加载");
+  if (!window.FlvPlayer) {
+    throw new Error("xgplayer-flv 未加载，请检查网络或刷新页面");
   }
   if (FlvPlayer.isSupported && !FlvPlayer.isSupported()) {
-    throw new Error("当前环境不支持 FLV 播放");
+    throw new Error("当前浏览器不支持 MSE，无法播放 FLV");
   }
 
-  state.player = new Player({
+  const referer = siteReferer(state.site);
+  state.player = new FlvPlayer({
     id: "player",
     url,
     isLive: true,
@@ -235,19 +245,32 @@ function startPlayer(url) {
     fluid: true,
     lang: "zh-cn",
     volume: 0.7,
-    plugins: [FlvPlayer],
+    seamlesslyReload: true,
+    retryCount: 3,
+    retryDelay: 1000,
+    loadTimeout: 15000,
+    preloadTime: 4,
+    cors: true,
+    fitVideoSize: "fixWidth",
     flv: {
       seamlesslyReload: true,
-      retryCount: 2,
-      retryDelay: 1000,
-      loadTimeout: 12000,
-      preloadTime: 4,
       cors: true,
+      fetchOptions: {
+        headers: { Referer: referer },
+      },
     },
   });
 
-  state.player.on("error", () => {
-    setStatus("播放出错，可尝试切换线路或开启代理", false);
+  state.player.on("error", (err) => {
+    const detail = err?.message || err?.type || "未知错误";
+    setStatus(`播放出错: ${detail}\n可切换线路，或将播放方式改为「直连 CDN」`, false);
+  });
+
+  state.player.on("play", () => {
+    setStatus(
+      (els.status.textContent || "") + "\n已开始播放",
+      true,
+    );
   });
 }
 
@@ -282,19 +305,21 @@ async function playRoom() {
     const directUrl = currentPlayUrl(payload);
     if (!directUrl) throw new Error("未获取到播放地址");
 
+    let playUrl = directUrl;
     if (state.useProxy) {
-      payload = await resolveAndRegisterProxy(payload, directUrl);
+      const proxyPayload = await registerProxy(directUrl, payload);
+      playUrl = buildPlayUrl(proxyPayload);
+      payload = { ...payload, ...proxyPayload };
     }
 
-    const playUrl = state.useProxy ? buildPlayUrl(payload, directUrl) : directUrl;
     state.payload = payload;
-    startPlayer(playUrl);
+    startPlayer(playUrl, directUrl);
 
     const q = payload.streams?.[state.qualityIndex]?.name || "默认";
     const line = payload.streams?.[state.qualityIndex]?.lines?.[state.lineIndex]?.name || "";
     setStatus(
       `解析源: ${payload.source} | ${q} / ${line}\n` +
-      `${state.useProxy ? "代理播放" : "直连播放"}: ${directUrl.slice(0, 100)}…`,
+      `${state.useProxy ? "代理直播" : "直连 CDN"}: ${directUrl.slice(0, 100)}…`,
       true,
     );
   } catch (err) {

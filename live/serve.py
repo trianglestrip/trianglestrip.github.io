@@ -143,6 +143,9 @@ class Handler(SimpleHTTPRequestHandler):
         if parsed.path == "/api/resolve":
             self._api_resolve_post(parsed)
             return
+        if parsed.path == "/api/proxy/register":
+            self._api_proxy_register()
+            return
         self.send_error(404)
 
     def _read_json_body(self) -> dict:
@@ -169,6 +172,21 @@ class Handler(SimpleHTTPRequestHandler):
             self._send_json(attach_proxy(payload))
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
+
+    def _api_proxy_register(self) -> None:
+        try:
+            data = self._read_json_body()
+        except json.JSONDecodeError:
+            self._send_json({"ok": False, "error": "无效 JSON"}, status=400)
+            return
+
+        play_url = str(data.get("play_url") or "").strip()
+        if not play_url.startswith(("http://", "https://")):
+            self._send_json({"ok": False, "error": "缺少有效 play_url"}, status=400)
+            return
+
+        backup_urls = [str(item) for item in (data.get("backup_urls") or []) if item]
+        self._send_json(attach_proxy({"play_url": play_url, "backup_urls": backup_urls}))
 
     def _api_resolve_post(self, parsed) -> None:
         query = parse_qs(parsed.query)
