@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-11T16:39:27+00:00",
+  "updated_at": "2026-06-11T23:08:47+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,7 +14,7 @@
       "rank": 2,
       "title": "Agents' Last Exam",
       "url": "https://huggingface.co/papers/2606.05405",
-      "hot": "245"
+      "hot": "280"
     },
     {
       "rank": 3,
@@ -30,21 +30,21 @@
     },
     {
       "rank": 5,
+      "title": "SIA: Self Improving AI with Harness & Weight Updates",
+      "url": "https://huggingface.co/papers/2605.27276",
+      "hot": "12"
+    },
+    {
+      "rank": 6,
       "title": "VibeVoice Technical Report",
       "url": "https://huggingface.co/papers/2508.19205",
       "hot": "172"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "225"
-    },
-    {
-      "rank": 7,
-      "title": "SCAIL-2: Unifying Controlled Character Animation with End-to-end In-Context Conditioning",
-      "url": "https://huggingface.co/papers/2606.10804",
-      "hot": "35"
+      "hot": "226"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "Toward Generalist Autonomous Research via Hypothesis-Tree Refinement",
-      "url": "https://huggingface.co/papers/2606.11926",
-      "hot": "64"
+      "title": "SCAIL-2: Unifying Controlled Character Animation with End-to-end In-Context Conditioning",
+      "url": "https://huggingface.co/papers/2606.10804",
+      "hot": "37"
     },
     {
       "rank": 10,
-      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
-      "url": "https://huggingface.co/papers/2606.02800",
-      "hot": "115"
+      "title": "Toward Generalist Autonomous Research via Hypothesis-Tree Refinement",
+      "url": "https://huggingface.co/papers/2606.11926",
+      "hot": "68"
     }
   ]
 }
