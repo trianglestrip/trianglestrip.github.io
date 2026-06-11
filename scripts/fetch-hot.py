@@ -87,7 +87,12 @@ def run_hotboard(fetcher: str) -> dict:
         detail = stderr or stdout or f"exit code {result.returncode}"
         raise RuntimeError(detail)
 
-    payload = json.loads(result.stdout)
+    text = result.stdout.strip()
+    if not text:
+        raise RuntimeError("empty hotboard output")
+
+    # hotboard 在 JSON 后还会输出日志，只解析第一段 JSON
+    payload, _ = json.JSONDecoder().raw_decode(text)
     if not isinstance(payload.get("items"), list):
         raise RuntimeError("invalid hotboard response")
     return payload

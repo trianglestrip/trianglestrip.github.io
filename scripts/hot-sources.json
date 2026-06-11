@@ -11,7 +11,7 @@
       "title": "微博热搜",
       "fetcher": "weibo",
       "limit": 10,
-      "ttl_minutes": 20
+      "ttl_minutes": 5
     },
     "baidu": {
       "title": "百度热搜",

@@ -1,0 +1,8 @@
+{
+  "source": "github",
+  "title": "GitHub Trending",
+  "updated_at": "2026-06-11T12:03:43+08:00",
+  "fetch_ok": false,
+  "error": "+--------------------- Traceback (most recent call last) ----------------------+\n| C:\\Users\\XXF\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\hotbo |\n| ard\\platforms\\github.py:151 in main                                          |\n|                                                                              |\n|   148 ):                                                                     |\n|   149     \"\"\"GitHub Trending\"\"\"                                              |\n|   150     items: list[HotItem] = asyncio.run(fetch(type))                    |\n| > 151     print(format_output(items, type, format))                          |\n|   152     logger.info(f\"获取 [{PLATFORM_NAME} Trending - {type}] 成功，共    |\n|       {len(items)} 条\")                                                      |\n|   153                                                                        |\n+------------------------------------------------------------------------------+\nUnicodeEncodeError: 'gbk' codec can't encode character '\\U0001f575' in position \n2112: illegal multibyte sequence",
+  "items": []
+}

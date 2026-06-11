@@ -1,0 +1,8 @@
+{
+  "source": "bilibili",
+  "title": "哔哩哔哩",
+  "updated_at": "2026-06-11T12:02:52+08:00",
+  "fetch_ok": false,
+  "error": "+--------------------- Traceback (most recent call last) ----------------------+\n| C:\\Users\\XXF\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\hotbo |\n| ard\\platforms\\bilibili.py:113 in main                                        |\n|                                                                              |\n|   110     \"\"\"哔哩哔哩热榜\"\"\"                                                 |\n|   111     items: list[HotItem] = asyncio.run(fetch(type))                    |\n|   112     type_name = CATEGORY_CONFIGS[type]                                 |\n| > 113     print(format_output(items, type_name, format))                     |\n|   114     logger.info(f\"获取 [{PLATFORM_NAME} - {type_name}] 热榜成功，共    |\n|       {len(items)} 条\")                                                      |\n|   115                                                                        |\n+------------------------------------------------------------------------------+\nUnicodeEncodeError: 'gbk' codec can't encode character '\\U0001f431' in position \n7601: illegal multibyte sequence",
+  "items": []
+}
