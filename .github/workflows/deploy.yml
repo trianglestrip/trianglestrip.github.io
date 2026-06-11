@@ -2,6 +2,8 @@ name: 自动发布博客
 on:
   push:
     branches: [ master ]
+    paths-ignore:
+      - 'live/**'
   discussion:
     types: [created, edited, deleted, transferred, labeled, unlabeled]
   workflow_dispatch:
