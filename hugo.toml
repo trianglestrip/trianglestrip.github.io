@@ -25,6 +25,11 @@ pagerSize = 10
     url = "/notes/"
   [[menu.main]]
     weight = 3
+    identifier = "news"
+    name = "热榜"
+    url = "/news/"
+  [[menu.main]]
+    weight = 4
     identifier = "about"
     name = "关于"
     url = "/about/"
@@ -63,6 +68,9 @@ pagerSize = 10
 
   [params.discussions]
     category = "博客"
+
+  [params.hot]
+    order = ["zhihu", "weibo", "baidu", "bilibili", "github", "juejin"]
 
   [params.page.share]
     enable = false

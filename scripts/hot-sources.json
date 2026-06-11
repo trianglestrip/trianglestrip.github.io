@@ -1,0 +1,35 @@
+{
+  "display_order": ["zhihu", "weibo", "baidu", "bilibili", "github", "juejin"],
+  "platforms": {
+    "zhihu": {
+      "title": "知乎热榜",
+      "limit": 10,
+      "ttl_minutes": 20
+    },
+    "weibo": {
+      "title": "微博热搜",
+      "limit": 10,
+      "ttl_minutes": 20
+    },
+    "baidu": {
+      "title": "百度热搜",
+      "limit": 10,
+      "ttl_minutes": 20
+    },
+    "bilibili": {
+      "title": "哔哩哔哩",
+      "limit": 10,
+      "ttl_minutes": 60
+    },
+    "github": {
+      "title": "GitHub Trending",
+      "limit": 10,
+      "ttl_minutes": 360
+    },
+    "juejin": {
+      "title": "稀土掘金",
+      "limit": 10,
+      "ttl_minutes": 120
+    }
+  }
+}

@@ -1,0 +1,51 @@
+# 方案 B：自建 DailyHotApi 后，在仓库 Settings → Secrets 设置 DAILYHOT_API_BASE
+# 例如 https://your-app.vercel.app ；未设置时回退到公共实例。
+name: 抓取热榜
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 指定平台（留空则按 TTL 抓取全部）
+        required: false
+        default: ''
+      force:
+        description: 忽略 TTL 强制刷新
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 抓取热榜数据
+        env:
+          DAILYHOT_API_BASE: ${{ secrets.DAILYHOT_API_BASE }}
+        run: |
+          args=()
+          if [ -n "${{ github.event.inputs.platform }}" ]; then
+            args+=("${{ github.event.inputs.platform }}")
+          fi
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            args+=("--force")
+          fi
+          python3 scripts/fetch-hot.py "${args[@]}"
+
+      - name: 提交缓存文件
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/hot/*.json
+          if git diff --staged --quiet; then
+            echo "no hot data changes"
+            exit 0
+          fi
+          git commit -m "chore(hot): update trending cache"
+          git push

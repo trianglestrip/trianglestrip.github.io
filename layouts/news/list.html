@@ -1,0 +1,62 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+
+{{- define "content" -}}
+    {{- $order := .Site.Params.hot.order | default (slice "zhihu" "weibo" "baidu" "bilibili" "github" "juejin") -}}
+    {{- $labels := dict
+        "zhihu" "知乎热榜"
+        "weibo" "微博热搜"
+        "baidu" "百度热搜"
+        "bilibili" "哔哩哔哩"
+        "github" "GitHub Trending"
+        "juejin" "稀土掘金"
+    -}}
+
+    <article class="page single hot-page">
+        <h1 class="single-title animate__animated animate__flipInX">{{ .Title | emojify }}</h1>
+
+        {{- with .Content -}}
+            <div class="content hot-page__intro">{{ . }}</div>
+        {{- end -}}
+
+        <div class="hot-board">
+            {{- range $order -}}
+                {{- $platform := . -}}
+                {{- $data := index $.Site.Data.hot $platform -}}
+                <section class="hot-board__column">
+                    <header class="hot-board__header">
+                        <h2 class="hot-board__title">{{ if $data }}{{ $data.title | default (index $labels $platform) }}{{ else }}{{ index $labels $platform }}{{ end }}</h2>
+                        {{- with $data -}}
+                            <div class="hot-board__meta">
+                                {{- with .updated_at -}}
+                                    <time datetime="{{ . }}">更新于 {{ . }}</time>
+                                {{- end -}}
+                                {{- if not .fetch_ok -}}
+                                    <span class="hot-board__stale">缓存数据（刷新失败）</span>
+                                {{- end -}}
+                            </div>
+                        {{- else -}}
+                            <div class="hot-board__meta">
+                                <span class="hot-board__stale">等待首次抓取</span>
+                            </div>
+                        {{- end -}}
+                    </header>
+
+                    {{- if and $data $data.items -}}
+                        <ol class="hot-board__list">
+                            {{- range $data.items -}}
+                                <li class="hot-board__item">
+                                    <a class="hot-board__link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+                                    {{- with .hot -}}
+                                        <span class="hot-board__hot">{{ . }}</span>
+                                    {{- end -}}
+                                </li>
+                            {{- end -}}
+                        </ol>
+                    {{- else -}}
+                        <p class="hot-board__empty">暂无数据</p>
+                    {{- end -}}
+                </section>
+            {{- end -}}
+        </div>
+    </article>
+{{- end -}}
