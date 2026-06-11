@@ -151,6 +151,21 @@ def render_icon(platform_id: str, meta: dict, icons: dict | None) -> str:
     )
 
 
+def render_dock_icon(platform_id: str, meta: dict, dock_icons: dict | None) -> str:
+    title = str(meta.get("title") or platform_id)
+    letter = html.escape(title[0] if title else "?")
+    color = html.escape(meta.get("color", "#ccc"))
+    pos_style = f"--dock-ph-color: {color};"
+    if dock_icons:
+        pos = dock_icons.get("icons", {}).get(platform_id)
+        if pos:
+            pos_style += f" background-position: -{int(pos['x'])}px -{int(pos['y'])}px;"
+    return (
+        f'<span class="hot-dock__icon" style="{pos_style}" aria-hidden="true">'
+        f'<span class="hot-dock__icon-ph">{letter}</span></span>'
+    )
+
+
 def render_dock(
     display_order: list[str],
     platforms: dict,
@@ -164,19 +179,18 @@ def render_dock(
             continue
         target_id = html.escape(f"hot-{platform_id}")
         name = html.escape(str(meta.get("title") or platform_id))
-        icon_html = render_sprite_icon(
-            platform_id,
-            meta,
-            dock_icons,
-            css_class="hot-dock__icon",
-        )
+        icon_html = render_dock_icon(platform_id, meta, dock_icons)
         items.append(
             f'<a class="hot-dock__item" href="#{target_id}" data-target="{target_id}">'
             f'{icon_html}<span class="hot-dock__name">{name}</span></a>'
         )
     if not items:
         return ""
-    return f'<nav class="hot-dock" aria-label="平台快捷跳转">{"".join(items)}</nav>'
+    return (
+        f'<div class="hot-dock-wrap">'
+        f'<nav class="hot-dock" aria-label="平台快捷跳转">{"".join(items)}</nav>'
+        f"</div>"
+    )
 
 
 def render_card(
@@ -287,13 +301,20 @@ body {
   width: 100vw;
   max-width: 100vw;
   margin-left: calc(50% - 50vw);
-  margin-bottom: 1.25rem;
-  padding: 1rem 1.5rem 1.15rem;
+  padding: 1rem 1.5rem 0.85rem;
   border-bottom: 1px solid var(--border);
   background: var(--hot-header-bg, rgba(248, 249, 250, 0.92));
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+.hot-dock-wrap {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-bottom: 1.25rem;
+  padding: 0.85rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--border);
 }
 @media (prefers-color-scheme: dark) {
   .hot-header {
@@ -347,43 +368,61 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.85rem 0.75rem;
+  gap: 0.55rem 0.5rem;
   max-width: 100%;
-  margin: 1rem auto 0;
-  padding: 0.25rem 0.5rem 0.15rem;
+  margin: 0 auto;
+  padding: 0.15rem 0.25rem;
 }
 .hot-dock__item {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
-  width: 4.5rem;
+  gap: 0.25rem;
+  width: 3.25rem;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
   transition: transform 0.15s;
 }
-.hot-dock__item:hover { transform: translateY(-2px); }
+.hot-dock__item:hover { transform: translateY(-1px); }
 .hot-dock__icon {
   display: block;
-  width: var(--hot-dock-icon-size, 4rem);
-  height: var(--hot-dock-icon-size, 4rem);
-  background-image: var(--hot-dock-sprite-url);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.45rem;
   background-repeat: no-repeat;
+  background-color: transparent;
+}
+.hot-dock__icon-ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--dock-ph-color, #888);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.hot-dock--ready .hot-dock__icon {
+  background-image: var(--hot-dock-sprite-url);
   background-size: var(--hot-dock-sprite-width) var(--hot-dock-sprite-height);
-  border-radius: 0.85rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
+.hot-dock--ready .hot-dock__icon-ph { display: none; }
 @media (prefers-color-scheme: dark) {
-  .hot-dock__icon { background-color: #2a2b30; }
+  .hot-dock--ready .hot-dock__icon { background-color: #2a2b30; }
 }
 .hot-dock__name {
-  max-width: 4.5rem;
+  max-width: 3.25rem;
   color: var(--text-muted);
-  font-size: 0.72rem;
-  line-height: 1.25;
+  font-size: 0.65rem;
+  line-height: 1.2;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -408,7 +447,7 @@ body {
   background: var(--hot-card-bg);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  scroll-margin-top: 11rem;
+  scroll-margin-top: 5.5rem;
 }
 .hot-card__head {
   display: flex;
@@ -546,11 +585,17 @@ body {
   .hot-board { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
-  .hot-header {
+  .hot-header,
+  .hot-dock-wrap {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
-    padding: 1rem 0.75rem 1.25rem;
+  }
+  .hot-header {
+    padding: 1rem 0.75rem 0.85rem;
+  }
+  .hot-dock-wrap {
+    padding: 0.75rem 0.75rem 0.85rem;
   }
   .hot-nav {
     gap: 0.45rem;
@@ -621,30 +666,53 @@ JS = """
 
 
 def sprite_css(icons: dict | None) -> str:
-    if not icons:
+    card = icon_layer(icons, "card") if icons else icons
+    if not card:
         return ""
-    parts: list[str] = []
-    card = icon_layer(icons, "card")
-    dock = icon_layer(icons, "dock")
-    if card:
-        sprite = html.escape(str(card.get("sprite", "icons-sprite.png")))
-        parts.append(
-            f"--hot-sprite-url: url('{sprite}'); "
-            f"--hot-sprite-width: {int(card.get('width', 0))}px; "
-            f"--hot-sprite-height: {int(card.get('height', 0))}px; "
-            f"--hot-icon-size: {int(card.get('icon_size', 20))}px"
-        )
-    if dock:
-        sprite = html.escape(str(dock.get("sprite", "icons-sprite-lg.png")))
-        parts.append(
-            f"--hot-dock-sprite-url: url('{sprite}'); "
-            f"--hot-dock-sprite-width: {int(dock.get('width', 0))}px; "
-            f"--hot-dock-sprite-height: {int(dock.get('height', 0))}px; "
-            f"--hot-dock-icon-size: {int(dock.get('icon_size', 64))}px"
-        )
-    if not parts:
+    sprite = html.escape(str(card.get("sprite", "icons-sprite.png")))
+    return (
+        f":root {{ --hot-sprite-url: url('{sprite}'); "
+        f"--hot-sprite-width: {int(card.get('width', 0))}px; "
+        f"--hot-sprite-height: {int(card.get('height', 0))}px; "
+        f"--hot-icon-size: {int(card.get('icon_size', 20))}px; }}"
+    )
+
+
+def dock_sprite_js(dock: dict | None) -> str:
+    if not dock:
         return ""
-    return f":root {{ {'; '.join(parts)}; }}"
+    cfg = json.dumps(
+        {
+            "sprite": dock.get("sprite", "icons-sprite-dock.png"),
+            "width": int(dock.get("width", 0)),
+            "height": int(dock.get("height", 0)),
+        },
+        ensure_ascii=False,
+    )
+    return f"""
+(function () {{
+  const cfg = {cfg};
+  if (!cfg.sprite) return;
+  function applyDockSprite() {{
+    const root = document.documentElement;
+    const dock = document.querySelector('.hot-dock');
+    if (!dock) return;
+    const img = new Image();
+    img.onload = function () {{
+      root.style.setProperty('--hot-dock-sprite-url', "url('" + cfg.sprite + "')");
+      root.style.setProperty('--hot-dock-sprite-width', cfg.width + 'px');
+      root.style.setProperty('--hot-dock-sprite-height', cfg.height + 'px');
+      dock.classList.add('hot-dock--ready');
+    }};
+    img.src = cfg.sprite;
+  }}
+  if ('requestIdleCallback' in window) {{
+    requestIdleCallback(applyDockSprite, {{ timeout: 2500 }});
+  }} else {{
+    window.addEventListener('load', function () {{ setTimeout(applyDockSprite, 0); }});
+  }}
+}})();
+"""
 
 
 def build() -> Path:
@@ -689,6 +757,8 @@ def build() -> Path:
         )
 
     dock_html = render_dock(display_order, platforms, icons_raw)
+    dock_icons = icon_layer(icons_raw, "dock")
+    page_js = JS + dock_sprite_js(dock_icons)
 
     page = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -698,17 +768,17 @@ def build() -> Path:
   <title>热榜</title>
   <meta name="description" content="多平台热榜聚合">
   <link rel="canonical" href="{SITE_URL}news/">
-  <style>{sprite_css(icons)}{CSS}</style>
+  <style>{sprite_css(card_icons)}{CSS}</style>
 </head>
 <body>
   <main class="hot-page">
     <header class="hot-header">
       <nav class="hot-nav" aria-label="热榜分类">{"".join(nav_buttons)}</nav>
-      {dock_html}
     </header>
+    {dock_html}
     <div class="hot-board">{"".join(cards)}</div>
   </main>
-  <script>{JS}</script>
+  <script>{page_js}</script>
 </body>
 </html>
 """

@@ -13,9 +13,9 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG_FILE = ROOT / "data" / "hot" / "config.json"
 MANIFEST_FILE = ROOT / "data" / "hot" / "icons.json"
 SPRITE_CARD_FILE = ROOT / "static" / "news" / "icons-sprite.png"
-SPRITE_DOCK_FILE = ROOT / "static" / "news" / "icons-sprite-lg.png"
+SPRITE_DOCK_FILE = ROOT / "static" / "news" / "icons-sprite-dock.png"
 CARD_ICON_SIZE = 20
-DOCK_ICON_SIZE = 64
+DOCK_ICON_SIZE = 32
 COLS = 10
 USER_AGENT = "Mozilla/5.0 (compatible; blog-hot-icons/1.0)"
 
