@@ -1,3 +1,12 @@
+// 主页文章预览：LoveIt 默认仅显示 3 行，覆盖为约 800 字（约 20 行）
+.home[data-home=posts] .summary .content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 20;
+  line-clamp: 20;
+  overflow: hidden;
+}
+
 #comments {
   margin-top: 1rem;
   padding-top: 2rem;
