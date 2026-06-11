@@ -96,20 +96,52 @@ def resolve_updated_at(cfg: dict, run_meta: dict | None, now: datetime) -> tuple
     return "", "暂无更新记录"
 
 
-def icon_src(meta: dict) -> str:
-    if meta.get("icon_url"):
-        return str(meta["icon_url"])
-    domain = meta.get("icon_domain") or meta.get("domain", "")
-    # 直连站点 favicon 常被 CORP/403 拦截（如 linux.do），走代理
-    return f"https://www.google.com/s2/favicons?domain={domain}&sz=32"
+def platform_home_url(meta: dict) -> str:
+    if meta.get("home_url"):
+        return str(meta["home_url"])
+    domain = str(meta.get("domain") or "").strip()
+    if not domain:
+        return "#"
+    return f"https://{domain}"
 
 
-def render_card(platform_id: str, meta: dict, data: dict | None, now: datetime) -> str:
+def render_icon(platform_id: str, meta: dict, icons: dict | None) -> str:
+    title = str(meta.get("title") or platform_id)
+    letter = html.escape(title[0] if title else "?")
+    color = html.escape(meta.get("color", "#ccc"))
+
+    if icons:
+        pos = icons.get("icons", {}).get(platform_id)
+        if pos:
+            x = int(pos["x"])
+            y = int(pos["y"])
+            return (
+                f'<span class="hot-card__icon-sprite" '
+                f'style="background-position: -{x}px -{y}px" aria-hidden="true"></span>'
+            )
+
+    return (
+        f'<span class="hot-card__icon-letter is-visible" '
+        f'style="background: {color}" aria-hidden="true">{letter}</span>'
+    )
+
+
+def render_card(
+    platform_id: str,
+    meta: dict,
+    data: dict | None,
+    now: datetime,
+    *,
+    category_names: dict[str, str],
+    icons: dict | None,
+) -> str:
     title = html.escape(meta.get("title", platform_id))
     color = html.escape(meta.get("color", "#ccc"))
-    category = html.escape(meta.get("category", ""))
-    icon = html.escape(icon_src(meta))
-    letter = html.escape(title[0] if title else "?")
+    category_id = str(meta.get("category", ""))
+    category = html.escape(category_id)
+    category_label = html.escape(category_names.get(category_id, category_id))
+    home_url = html.escape(platform_home_url(meta))
+    icon_html = render_icon(platform_id, meta, icons)
 
     if data:
         card_title = html.escape(data.get("title") or meta.get("title", platform_id))
@@ -149,11 +181,11 @@ def render_card(platform_id: str, meta: dict, data: dict | None, now: datetime) 
     return f"""<section class="hot-card hot-card--{html.escape(platform_id)}" data-category="{category}" style="--hot-accent: {color}">
   <header class="hot-card__head">
     <div class="hot-card__head-left">
-      <span class="hot-card__icon-box">
-        <img class="hot-card__icon" src="{icon}" alt="" width="20" height="20" loading="lazy" decoding="async">
-        <span class="hot-card__icon-letter" aria-hidden="true">{letter}</span>
-      </span>
-      <h2 class="hot-card__title">{card_title}</h2>
+      <span class="hot-card__icon-box">{icon_html}</span>
+      <h2 class="hot-card__title">
+        <a class="hot-card__title-link" href="{home_url}" target="_blank" rel="noopener noreferrer">{card_title}</a>
+        <span class="hot-card__category">{category_label}</span>
+      </h2>
     </div>
     <div class="hot-card__head-right">{head_right}</div>
   </header>
@@ -305,17 +337,17 @@ body {
   width: 1.25rem;
   height: 1.25rem;
 }
-.hot-card__icon {
+.hot-card__icon-sprite {
   display: block;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: var(--hot-icon-size, 1.25rem);
+  height: var(--hot-icon-size, 1.25rem);
+  background-image: var(--hot-sprite-url);
+  background-repeat: no-repeat;
+  background-size: var(--hot-sprite-width) var(--hot-sprite-height);
   border-radius: 0.25rem;
-  object-fit: contain;
-  background: #fff;
 }
-.hot-card__icon.is-hidden { display: none; }
 .hot-card__icon-letter {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 1.25rem;
@@ -328,14 +360,33 @@ body {
   line-height: 1.25rem;
   text-align: center;
 }
-.hot-card__icon-letter.is-visible { display: flex; }
 .hot-card__title {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
   margin: 0;
+  min-width: 0;
   font-size: 0.95rem;
   font-weight: 600;
+}
+.hot-card__title-link {
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.hot-card__title-link:hover { color: var(--hot-accent, var(--link)); }
+.hot-card__category {
+  flex-shrink: 0;
+  padding: 0.08rem 0.35rem;
+  border-radius: 0.2rem;
+  background: var(--border);
+  color: var(--text-muted);
+  font-size: 0.62rem;
+  font-weight: 500;
+  line-height: 1.3;
 }
 .hot-card__list {
   flex: 1;
@@ -444,20 +495,33 @@ JS = """
   if (saved !== 'all' && !nav.querySelector('[data-filter="' + saved + '"]')) saved = 'all';
   applyFilter(saved);
 })();
-(function () {
-  document.querySelectorAll('.hot-card__icon').forEach((img) => {
-    img.addEventListener('error', function () {
-      this.classList.add('is-hidden');
-      this.nextElementSibling?.classList.add('is-visible');
-    });
-  });
-})();
 """
+
+
+def sprite_css(icons: dict | None) -> str:
+    if not icons:
+        return ""
+    sprite = html.escape(str(icons.get("sprite", "icons-sprite.png")))
+    width = int(icons.get("width", 0))
+    height = int(icons.get("height", 0))
+    icon_size = int(icons.get("icon_size", 20))
+    return (
+        f":root {{ --hot-sprite-url: url('{sprite}'); "
+        f"--hot-sprite-width: {width}px; --hot-sprite-height: {height}px; "
+        f"--hot-icon-size: {icon_size}px; }}"
+    )
 
 
 def build() -> Path:
     cfg = load_json(DATA_DIR / "config.json")
     now = datetime.now(timezone.utc).astimezone()
+    icons_path = DATA_DIR / "icons.json"
+    icons = load_json(icons_path) if icons_path.exists() else None
+    category_names = {
+        str(cat.get("id", "")): str(cat.get("name", ""))
+        for cat in cfg.get("categories", [])
+        if cat.get("id")
+    }
 
     nav_buttons = ['<button type="button" class="hot-nav__btn is-active" data-filter="all">全部</button>']
     for cat in cfg.get("categories", []):
@@ -476,7 +540,16 @@ def build() -> Path:
             continue
         data_path = DATA_DIR / f"{platform_id}.json"
         data = load_json(data_path) if data_path.exists() else None
-        cards.append(render_card(platform_id, pmeta, data, now))
+        cards.append(
+            render_card(
+                platform_id,
+                pmeta,
+                data,
+                now,
+                category_names=category_names,
+                icons=icons,
+            )
+        )
 
     page = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -486,7 +559,7 @@ def build() -> Path:
   <title>热榜</title>
   <meta name="description" content="多平台热榜聚合">
   <link rel="canonical" href="{SITE_URL}news/">
-  <style>{CSS}</style>
+  <style>{sprite_css(icons)}{CSS}</style>
 </head>
 <body>
   <main class="hot-page">
