@@ -72,12 +72,12 @@
                     >
                         <header class="hot-card__head">
                             <div class="hot-card__head-left">
-                                {{- $siteUrl := printf "https://%s/" $meta.domain -}}
+                                {{- $iconDomain := $meta.icon_domain | default $meta.domain -}}
                                 <span class="hot-card__icon-box">
                                     <img
                                         class="hot-card__icon"
-                                        src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url={{ $siteUrl | urlquery }}&amp;size=32"
-                                        data-fallback="https://www.google.com/s2/favicons?domain={{ $meta.domain }}&amp;sz=32"
+                                        src="https://www.google.com/s2/favicons?domain={{ $iconDomain }}&amp;sz=32"
+                                        data-fallback="https://{{ $iconDomain }}/favicon.ico"
                                         alt=""
                                         width="20"
                                         height="20"
@@ -180,14 +180,20 @@
         (function () {
             document.querySelectorAll('.hot-card__icon').forEach((img) => {
                 img.addEventListener('error', function onIconError() {
-                    if (this.dataset.tried === '1') {
+                    const step = Number(this.dataset.tried || 0);
+                    if (step >= 1) {
                         this.classList.add('is-hidden');
                         this.nextElementSibling?.classList.add('is-visible');
                         return;
                     }
                     this.dataset.tried = '1';
                     const fallback = this.dataset.fallback;
-                    if (fallback) this.src = fallback;
+                    if (fallback) {
+                        this.src = fallback;
+                        return;
+                    }
+                    this.classList.add('is-hidden');
+                    this.nextElementSibling?.classList.add('is-visible');
                 });
             });
         })();
