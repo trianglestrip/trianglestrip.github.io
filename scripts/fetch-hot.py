@@ -7,6 +7,8 @@ import json
 import os
 import subprocess
 import sys
+import urllib.error
+import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -14,7 +16,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "hot"
 SOURCES_FILE = ROOT / "scripts" / "hot-sources.json"
 FETCH_TIMEOUT = 60
+HTTP_TIMEOUT = 30
 MAX_RETRIES = 3
+USER_AGENT = "Mozilla/5.0 (compatible; blog-hot-fetch/1.0)"
 
 
 def load_sources() -> dict:
@@ -50,6 +54,45 @@ def load_cache(platform: str) -> dict:
         return {"source": platform, "items": []}
     with path.open(encoding="utf-8") as fh:
         return json.load(fh)
+
+
+def short_error(message: str, limit: int = 200) -> str:
+    text = " ".join(str(message).split())
+    if len(text) <= limit:
+        return text
+    return text[: limit - 3] + "..."
+
+
+def http_get_json(url: str) -> object:
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(request, timeout=HTTP_TIMEOUT) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_v2ex_api(limit: int) -> list[dict]:
+    data = http_get_json("https://www.v2ex.com/api/topics/hot.json")
+    if not isinstance(data, list):
+        raise RuntimeError("invalid v2ex response")
+
+    items: list[dict] = []
+    for topic in data[:limit]:
+        title = str(topic.get("title", "")).strip()
+        url = str(topic.get("url", "")).strip()
+        if not title or not url:
+            continue
+        items.append(
+            {
+                "title": title,
+                "url": url,
+                "hot": str(topic.get("replies", "")),
+            }
+        )
+    return items
+
+
+CUSTOM_DRIVERS = {
+    "v2ex_api": fetch_v2ex_api,
+}
 
 
 def normalize_items(raw_items: list, limit: int) -> list[dict]:
@@ -114,12 +157,21 @@ def fetch_platform(platform: str, meta: dict) -> dict:
     title = meta.get("title", platform)
     limit = int(meta.get("limit", 10))
     fetcher = meta.get("fetcher", platform)
+    driver = meta.get("driver")
 
     last_error = "unknown error"
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            payload = run_hotboard(fetcher)
-            items = normalize_items(payload.get("items") or [], limit)
+            if driver:
+                driver_fn = CUSTOM_DRIVERS.get(driver)
+                if driver_fn is None:
+                    raise RuntimeError(f"unknown driver: {driver}")
+                raw_items = driver_fn(limit)
+            else:
+                payload = run_hotboard(fetcher)
+                raw_items = payload.get("items") or []
+
+            items = normalize_items(raw_items, limit)
             if len(items) < 5:
                 raise RuntimeError(f"too few items: {len(items)}")
 
@@ -130,8 +182,16 @@ def fetch_platform(platform: str, meta: dict) -> dict:
                 "fetch_ok": True,
                 "items": items,
             }
-        except (RuntimeError, subprocess.TimeoutExpired, json.JSONDecodeError, OSError) as exc:
-            last_error = str(exc)
+        except (
+            RuntimeError,
+            subprocess.TimeoutExpired,
+            json.JSONDecodeError,
+            OSError,
+            urllib.error.URLError,
+            TimeoutError,
+            ValueError,
+        ) as exc:
+            last_error = short_error(exc)
             if attempt < MAX_RETRIES:
                 continue
 
