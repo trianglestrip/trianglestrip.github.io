@@ -919,6 +919,7 @@ def build() -> Path:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>热榜</title>
   <meta name="description" content="多平台热榜聚合">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="{SITE_URL}news/">
 {baidu_head_html(baidu_id)}  <style>{sprite_css(card_icons)}{CSS}</style>
 </head>
