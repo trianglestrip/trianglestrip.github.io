@@ -105,7 +105,23 @@ def platform_home_url(meta: dict) -> str:
     return f"https://{domain}"
 
 
-def render_icon(platform_id: str, meta: dict, icons: dict | None) -> str:
+def icon_layer(icons: dict | None, layer: str) -> dict | None:
+    if not icons:
+        return None
+    if layer in icons and isinstance(icons[layer], dict):
+        return icons[layer]
+    if layer == "card" and "icons" in icons:
+        return icons
+    return None
+
+
+def render_sprite_icon(
+    platform_id: str,
+    meta: dict,
+    icons: dict | None,
+    *,
+    css_class: str,
+) -> str:
     title = str(meta.get("title") or platform_id)
     letter = html.escape(title[0] if title else "?")
     color = html.escape(meta.get("color", "#ccc"))
@@ -116,7 +132,7 @@ def render_icon(platform_id: str, meta: dict, icons: dict | None) -> str:
             x = int(pos["x"])
             y = int(pos["y"])
             return (
-                f'<span class="hot-card__icon-sprite" '
+                f'<span class="{css_class}" '
                 f'style="background-position: -{x}px -{y}px" aria-hidden="true"></span>'
             )
 
@@ -124,6 +140,43 @@ def render_icon(platform_id: str, meta: dict, icons: dict | None) -> str:
         f'<span class="hot-card__icon-letter is-visible" '
         f'style="background: {color}" aria-hidden="true">{letter}</span>'
     )
+
+
+def render_icon(platform_id: str, meta: dict, icons: dict | None) -> str:
+    return render_sprite_icon(
+        platform_id,
+        meta,
+        icons,
+        css_class="hot-card__icon-sprite",
+    )
+
+
+def render_dock(
+    display_order: list[str],
+    platforms: dict,
+    icons: dict | None,
+) -> str:
+    dock_icons = icon_layer(icons, "dock")
+    items: list[str] = []
+    for platform_id in display_order:
+        meta = platforms.get(platform_id)
+        if not meta:
+            continue
+        target_id = html.escape(f"hot-{platform_id}")
+        name = html.escape(str(meta.get("title") or platform_id))
+        icon_html = render_sprite_icon(
+            platform_id,
+            meta,
+            dock_icons,
+            css_class="hot-dock__icon",
+        )
+        items.append(
+            f'<a class="hot-dock__item" href="#{target_id}" data-target="{target_id}">'
+            f'{icon_html}<span class="hot-dock__name">{name}</span></a>'
+        )
+    if not items:
+        return ""
+    return f'<nav class="hot-dock" aria-label="平台快捷跳转">{"".join(items)}</nav>'
 
 
 def render_card(
@@ -178,7 +231,8 @@ def render_card(
         head_right = '<span class="hot-card__stale">等待抓取</span>'
         body = '<p class="hot-card__empty">暂无数据</p>'
 
-    return f"""<section class="hot-card hot-card--{html.escape(platform_id)}" data-category="{category}" style="--hot-accent: {color}">
+    card_id = html.escape(f"hot-{platform_id}")
+    return f"""<section id="{card_id}" class="hot-card hot-card--{html.escape(platform_id)}" data-category="{category}" style="--hot-accent: {color}">
   <header class="hot-card__head">
     <div class="hot-card__head-left">
       <span class="hot-card__icon-box">{icon_html}</span>
@@ -289,6 +343,59 @@ body {
   color: #fff;
   transform: translateY(-1px);
 }
+.hot-dock {
+  display: flex;
+  gap: 0.85rem;
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 1rem auto 0;
+  padding: 0.25rem 0.5rem 0.15rem;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+.hot-dock::-webkit-scrollbar { height: 6px; }
+.hot-dock::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: var(--border);
+}
+.hot-dock__item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  width: 4.5rem;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.hot-dock__item:hover { transform: translateY(-2px); }
+.hot-dock__icon {
+  display: block;
+  width: var(--hot-dock-icon-size, 4rem);
+  height: var(--hot-dock-icon-size, 4rem);
+  background-image: var(--hot-dock-sprite-url);
+  background-repeat: no-repeat;
+  background-size: var(--hot-dock-sprite-width) var(--hot-dock-sprite-height);
+  border-radius: 0.85rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  .hot-dock__icon { background-color: #2a2b30; }
+}
+.hot-dock__name {
+  max-width: 4.5rem;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hot-dock__item:hover .hot-dock__name { color: var(--link); }
 .hot-board {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -307,6 +414,7 @@ body {
   background: var(--hot-card-bg);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  scroll-margin-top: 11rem;
 }
 .hot-card__head {
   display: flex;
@@ -495,28 +603,63 @@ JS = """
   if (saved !== 'all' && !nav.querySelector('[data-filter="' + saved + '"]')) saved = 'all';
   applyFilter(saved);
 })();
+(function () {
+  const dock = document.querySelector('.hot-dock');
+  if (!dock) return;
+  dock.addEventListener('click', (event) => {
+    const item = event.target.closest('.hot-dock__item');
+    if (!item) return;
+    event.preventDefault();
+    const targetId = item.getAttribute('data-target');
+    if (!targetId) return;
+    const card = document.getElementById(targetId);
+    if (!card) return;
+    const allBtn = document.querySelector('.hot-nav__btn[data-filter="all"]');
+    if (allBtn && !allBtn.classList.contains('is-active')) {
+      allBtn.click();
+    }
+    requestAnimationFrame(() => {
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+})();
 """
 
 
 def sprite_css(icons: dict | None) -> str:
     if not icons:
         return ""
-    sprite = html.escape(str(icons.get("sprite", "icons-sprite.png")))
-    width = int(icons.get("width", 0))
-    height = int(icons.get("height", 0))
-    icon_size = int(icons.get("icon_size", 20))
-    return (
-        f":root {{ --hot-sprite-url: url('{sprite}'); "
-        f"--hot-sprite-width: {width}px; --hot-sprite-height: {height}px; "
-        f"--hot-icon-size: {icon_size}px; }}"
-    )
+    parts: list[str] = []
+    card = icon_layer(icons, "card")
+    dock = icon_layer(icons, "dock")
+    if card:
+        sprite = html.escape(str(card.get("sprite", "icons-sprite.png")))
+        parts.append(
+            f"--hot-sprite-url: url('{sprite}'); "
+            f"--hot-sprite-width: {int(card.get('width', 0))}px; "
+            f"--hot-sprite-height: {int(card.get('height', 0))}px; "
+            f"--hot-icon-size: {int(card.get('icon_size', 20))}px"
+        )
+    if dock:
+        sprite = html.escape(str(dock.get("sprite", "icons-sprite-lg.png")))
+        parts.append(
+            f"--hot-dock-sprite-url: url('{sprite}'); "
+            f"--hot-dock-sprite-width: {int(dock.get('width', 0))}px; "
+            f"--hot-dock-sprite-height: {int(dock.get('height', 0))}px; "
+            f"--hot-dock-icon-size: {int(dock.get('icon_size', 64))}px"
+        )
+    if not parts:
+        return ""
+    return f":root {{ {'; '.join(parts)}; }}"
 
 
 def build() -> Path:
     cfg = load_json(DATA_DIR / "config.json")
     now = datetime.now(timezone.utc).astimezone()
     icons_path = DATA_DIR / "icons.json"
-    icons = load_json(icons_path) if icons_path.exists() else None
+    icons_raw = load_json(icons_path) if icons_path.exists() else None
+    icons = icons_raw
+    card_icons = icon_layer(icons_raw, "card")
     category_names = {
         str(cat.get("id", "")): str(cat.get("name", ""))
         for cat in cfg.get("categories", [])
@@ -547,9 +690,11 @@ def build() -> Path:
                 data,
                 now,
                 category_names=category_names,
-                icons=icons,
+                icons=card_icons,
             )
         )
+
+    dock_html = render_dock(display_order, platforms, icons_raw)
 
     page = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -565,6 +710,7 @@ def build() -> Path:
   <main class="hot-page">
     <header class="hot-header">
       <nav class="hot-nav" aria-label="热榜分类">{"".join(nav_buttons)}</nav>
+      {dock_html}
     </header>
     <div class="hot-board">{"".join(cards)}</div>
   </main>
