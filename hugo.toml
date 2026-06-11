@@ -69,9 +69,6 @@ pagerSize = 10
   [params.discussions]
     category = "博客"
 
-  [params.hot]
-    order = ["zhihu", "weibo", "baidu", "bilibili", "github", "juejin"]
-
   [params.page.share]
     enable = false
 

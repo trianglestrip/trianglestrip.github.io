@@ -1,0 +1,14 @@
+---
+description: 任务完成后自动提交并推送到远程
+alwaysApply: true
+---
+
+# 提交与推送
+
+完成用户请求的任务后，若产生了代码或配置改动，应主动：
+
+1. `git add` 相关文件（勿提交 `.env` 等敏感文件）
+2. 按仓库风格撰写 commit message 并 `git commit`
+3. `git push` 到远程
+
+无需用户再次提醒「提交推送」。

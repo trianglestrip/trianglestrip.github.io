@@ -1,41 +1,48 @@
 {
-  "display_order": ["zhihu", "weibo", "baidu", "bilibili", "github", "juejin"],
+  "display_order": [
+    "zhihu",
+    "weibo",
+    "baidu",
+    "bilibili",
+    "douyin",
+    "toutiao",
+    "ithome",
+    "kr36",
+    "huxiu",
+    "guokr",
+    "tieba",
+    "hupu",
+    "v2ex",
+    "ngabbs",
+    "github",
+    "juejin",
+    "csdn",
+    "pojie52",
+    "hellogithub",
+    "thepaper",
+    "sspai"
+  ],
   "platforms": {
-    "zhihu": {
-      "title": "知乎热榜",
-      "fetcher": "zhihu",
-      "limit": 10,
-      "ttl_minutes": 20
-    },
-    "weibo": {
-      "title": "微博热搜",
-      "fetcher": "weibo",
-      "limit": 10,
-      "ttl_minutes": 5
-    },
-    "baidu": {
-      "title": "百度热搜",
-      "fetcher": "baidu",
-      "limit": 10,
-      "ttl_minutes": 20
-    },
-    "bilibili": {
-      "title": "哔哩哔哩",
-      "limit": 10,
-      "fetcher": "bilibili",
-      "ttl_minutes": 60
-    },
-    "github": {
-      "title": "GitHub Trending",
-      "fetcher": "github",
-      "limit": 10,
-      "ttl_minutes": 360
-    },
-    "juejin": {
-      "title": "稀土掘金",
-      "fetcher": "juejin",
-      "limit": 10,
-      "ttl_minutes": 120
-    }
+    "zhihu": { "title": "知乎热榜", "fetcher": "zhihu", "limit": 10, "ttl_minutes": 20 },
+    "weibo": { "title": "微博热搜", "fetcher": "weibo", "limit": 10, "ttl_minutes": 5 },
+    "baidu": { "title": "百度热搜", "fetcher": "baidu", "limit": 10, "ttl_minutes": 20 },
+    "bilibili": { "title": "哔哩哔哩", "fetcher": "bilibili", "limit": 10, "ttl_minutes": 60 },
+    "douyin": { "title": "抖音热点", "fetcher": "douyin", "limit": 10, "ttl_minutes": 30 },
+    "toutiao": { "title": "今日头条", "fetcher": "toutiao", "limit": 10, "ttl_minutes": 30 },
+    "ithome": { "title": "IT之家", "fetcher": "ithome", "limit": 10, "ttl_minutes": 60 },
+    "kr36": { "title": "36氪", "fetcher": "kr36", "limit": 10, "ttl_minutes": 60 },
+    "huxiu": { "title": "虎嗅", "fetcher": "huxiu", "limit": 10, "ttl_minutes": 120 },
+    "guokr": { "title": "果壳", "fetcher": "guokr", "limit": 10, "ttl_minutes": 120 },
+    "tieba": { "title": "百度贴吧", "fetcher": "tieba", "limit": 10, "ttl_minutes": 30 },
+    "hupu": { "title": "虎扑", "fetcher": "hupu", "limit": 10, "ttl_minutes": 30 },
+    "v2ex": { "title": "V2EX", "fetcher": "v2ex", "limit": 10, "ttl_minutes": 60 },
+    "ngabbs": { "title": "NGA", "fetcher": "ngabbs", "limit": 10, "ttl_minutes": 30 },
+    "github": { "title": "GitHub Trending", "fetcher": "github", "limit": 10, "ttl_minutes": 360 },
+    "juejin": { "title": "稀土掘金", "fetcher": "juejin", "limit": 10, "ttl_minutes": 120 },
+    "csdn": { "title": "CSDN", "fetcher": "csdn", "limit": 10, "ttl_minutes": 120 },
+    "pojie52": { "title": "吾爱破解", "fetcher": "pojie52", "limit": 10, "ttl_minutes": 120 },
+    "hellogithub": { "title": "HelloGitHub", "fetcher": "hellogithub", "limit": 10, "ttl_minutes": 360 },
+    "thepaper": { "title": "澎湃新闻", "fetcher": "thepaper", "limit": 10, "ttl_minutes": 60 },
+    "sspai": { "title": "少数派", "fetcher": "sspai", "limit": 10, "ttl_minutes": 120 }
   }
 }
