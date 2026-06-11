@@ -1,14 +1,1 @@
-{{- $analytics := .Scratch.Get "analytics" | default dict -}}
-
-{{- /* 百度统计 */ -}}
-{{- with $analytics.baidu.id -}}
-<script>
-  var _hmt = _hmt || [];
-  (function () {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?{{ . }}";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script>
-{{- end -}}
+{{- /* 百度统计已移至 head/analytics.html，避免重复加载 */ -}}
