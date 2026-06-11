@@ -1,5 +1,14 @@
 name: 抓取热榜
 on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'data/hot/**'
+      - 'static/news/**'
+      - 'scripts/fetch-hot.py'
+      - 'scripts/build-hot-html.py'
+      - 'scripts/hot-sources.json'
+      - '.github/workflows/hot-fetch.yml'
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
@@ -54,3 +63,11 @@ jobs:
           fi
           git commit -m "chore(hot): update trending cache and news page"
           git push
+
+      - name: 部署热榜页到 gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./static/news
+          destination_dir: news
+          keep_files: true

@@ -4,6 +4,12 @@ on:
     branches: [ master ]
     paths-ignore:
       - 'live/**'
+      - 'data/hot/**'
+      - 'static/news/**'
+      - 'scripts/fetch-hot.py'
+      - 'scripts/build-hot-html.py'
+      - 'scripts/hot-sources.json'
+      - '.github/workflows/hot-fetch.yml'
   discussion:
     types: [created, edited, deleted, transferred, labeled, unlabeled]
   workflow_dispatch:
