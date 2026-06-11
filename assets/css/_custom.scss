@@ -1,4 +1,4 @@
-// 主页文章预览：LoveIt 默认仅 3 行且强制 inline，改为块级排版并限制高度
+// 主页文章预览：LoveIt 默认强制 inline + 统一字号，恢复块级排版与标题层级
 .home[data-home=posts] .summary .content {
   display: block;
   max-height: 30em;
@@ -19,6 +19,38 @@
     display: block;
   }
 
+  // 正文 h1 与列表标题重复，预览中隐藏
+  > h1:first-child {
+    display: none;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0.75rem 0 0.35rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  h4 {
+    font-size: 1.0625rem;
+  }
+
+  h5,
+  h6 {
+    font-size: 1rem;
+  }
+
   h2::after,
   h3::after,
   h4::after,
@@ -27,6 +59,16 @@
   p::after {
     content: none;
     white-space: normal;
+  }
+
+  ul,
+  ol {
+    margin: 0.35rem 0;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    display: list-item;
   }
 }
 
