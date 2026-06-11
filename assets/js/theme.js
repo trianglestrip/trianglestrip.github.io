@@ -470,7 +470,8 @@ class Theme {
 
     initHeaderLink() {
         for (let num = 1; num <= 6; num++) {
-            Util.forEach(document.querySelectorAll('.single .content > h' + num), $header => {
+            // 仅文章详情页添加标题锚点，主页摘要预览不需要
+            Util.forEach(document.querySelectorAll('.page.single .content > h' + num), $header => {
                 $header.classList.add('headerLink');
                 $header.insertAdjacentHTML('afterbegin', `<a href="#${$header.id}" class="header-mark"></a>`);
             });

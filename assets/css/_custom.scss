@@ -24,6 +24,11 @@
     display: none;
   }
 
+  // 防止详情页锚点样式泄漏到摘要（#、| 前缀）
+  .header-mark {
+    display: none;
+  }
+
   h2,
   h3,
   h4,
