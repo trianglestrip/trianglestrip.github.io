@@ -1,8 +1,68 @@
 {
   "source": "yystv",
   "title": "游研社",
-  "updated_at": "2026-06-11T14:14:06+08:00",
-  "fetch_ok": false,
-  "error": "┌───────────────────── Traceback (most recent call last) ──────────────────────┐ │ C:\\Users\\XXF\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\hotbo │ │ ard\\platforms\\yystv.py:60 in main...",
-  "items": []
+  "updated_at": "2026-06-11T14:37:54+08:00",
+  "fetch_ok": true,
+  "items": [
+    {
+      "rank": 1,
+      "title": "主动标注“使用AI技术”，《疯狂出租车》新作仍然逃不过被指责的命运",
+      "url": "https://www.yystv.cn/p/14046",
+      "hot": "嘤肉卫星"
+    },
+    {
+      "rank": 2,
+      "title": "初代NS发售9年后，任天堂因手柄缺陷被罚3500万欧元",
+      "url": "https://www.yystv.cn/p/14045",
+      "hot": "格拉多斯"
+    },
+    {
+      "rank": 3,
+      "title": "这几年最出圈的独立动画，死在了电影院里",
+      "url": "https://www.yystv.cn/p/14044",
+      "hot": "Leon45"
+    },
+    {
+      "rank": 4,
+      "title": "第八届游戏安全行业峰会落幕，《2025游戏安全白皮书》发布",
+      "url": "https://www.yystv.cn/p/14042",
+      "hot": "郝磅磅"
+    },
+    {
+      "rank": 5,
+      "title": "英特尔“锐炫”G3系列处理器：专为掌机设计的新一代SoC",
+      "url": "https://www.yystv.cn/p/14043",
+      "hot": "小甲"
+    },
+    {
+      "rank": 6,
+      "title": "3D格斗游戏的鼻祖，做了个颠覆类型的“单人模式”",
+      "url": "https://www.yystv.cn/p/14040",
+      "hot": "阴阳"
+    },
+    {
+      "rank": 7,
+      "title": "《黑袍纠察队》男主出演的果冻怪，成了战神新作目前最受肯定的部分",
+      "url": "https://www.yystv.cn/p/14038",
+      "hot": "藻起藻睡"
+    },
+    {
+      "rank": 8,
+      "title": "终于端上单人玩法的《解限机》，离打赢“复活赛”还有多远？",
+      "url": "https://www.yystv.cn/p/14037",
+      "hot": "强连虎"
+    },
+    {
+      "rank": 9,
+      "title": "深度探访：前顽皮狗主创正在为《穿越火线》开发3A单机大作",
+      "url": "https://www.yystv.cn/p/14036",
+      "hot": "Lushark"
+    },
+    {
+      "rank": 10,
+      "title": "有玩家偷偷监测R星总部的氧气含量，只为证明GTA6要发新预告",
+      "url": "https://www.yystv.cn/p/14041",
+      "hot": "Leon45"
+    }
+  ]
 }

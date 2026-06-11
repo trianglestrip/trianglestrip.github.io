@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: 安装抓取依赖
-        run: pip install hotboard
+        run: pip install hotboard beautifulsoup4 feedparser lxml
 
       - name: 抓取热榜数据
         env:

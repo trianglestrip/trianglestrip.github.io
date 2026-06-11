@@ -12,6 +12,9 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import feedparser
+from bs4 import BeautifulSoup
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "hot"
 META_FILE = DATA_DIR / "meta.json"
@@ -70,6 +73,15 @@ def http_get_json(url: str) -> object:
         return json.loads(response.read().decode("utf-8"))
 
 
+def http_get_text(url: str, headers: dict[str, str] | None = None) -> str:
+    merged = {"User-Agent": USER_AGENT}
+    if headers:
+        merged.update(headers)
+    request = urllib.request.Request(url, headers=merged)
+    with urllib.request.urlopen(request, timeout=HTTP_TIMEOUT) as response:
+        return response.read().decode("utf-8", errors="replace")
+
+
 def fetch_v2ex_api(limit: int) -> list[dict]:
     data = http_get_json("https://www.v2ex.com/api/topics/hot.json")
     if not isinstance(data, list):
@@ -91,8 +103,136 @@ def fetch_v2ex_api(limit: int) -> list[dict]:
     return items
 
 
+def fetch_yystv_api(limit: int) -> list[dict]:
+    text = http_get_text(
+        "https://www.yystv.cn/home/get_home_docs_by_page",
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+            )
+        },
+    )
+    data = json.loads(text)
+    article_list = data.get("data", []) if isinstance(data, dict) else []
+    items: list[dict] = []
+    for item in article_list[:limit]:
+        item_id = str(item.get("id", "")).strip()
+        title = str(item.get("title", "")).strip()
+        if not item_id or not title:
+            continue
+        items.append(
+            {
+                "title": title,
+                "url": f"https://www.yystv.cn/p/{item_id}",
+                "hot": str(item.get("author", "") or ""),
+            }
+        )
+    return items
+
+
+def fetch_jianshu_page(limit: int) -> list[dict]:
+    html = http_get_text("https://www.jianshu.com/", headers={"Referer": "https://www.jianshu.com"})
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[dict] = []
+    for li in soup.select("ul.note-list li"):
+        link = li.select_one("a.title")
+        if not link:
+            continue
+        title = link.get_text(strip=True)
+        href = str(link.get("href") or "").strip()
+        if not title or not href:
+            continue
+        url = href if href.startswith("http") else f"https://www.jianshu.com{href}"
+        items.append({"title": title, "url": url, "hot": ""})
+        if len(items) >= limit:
+            break
+    return items
+
+
+def fetch_douban_group(limit: int) -> list[dict]:
+    html = http_get_text("https://www.douban.com/group/explore")
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[dict] = []
+    for block in soup.select(".article .channel-item"):
+        link = block.select_one("h3 a")
+        if not link:
+            continue
+        title = link.get_text(strip=True)
+        href = str(link.get("href") or "").strip()
+        if not title or not href:
+            continue
+        hot_elem = block.select_one(".likes")
+        hot = hot_elem.get_text(strip=True) if hot_elem else ""
+        items.append({"title": title, "url": href, "hot": hot})
+        if len(items) >= limit:
+            break
+    return items
+
+
+def fetch_nodeseek_rss(limit: int) -> list[dict]:
+    text = http_get_text("https://rss.nodeseek.com/")
+    feed = feedparser.parse(text)
+    items: list[dict] = []
+    for entry in feed.entries[:limit]:
+        title = str(entry.get("title", "")).strip()
+        url = str(entry.get("link", "")).strip()
+        if not title or not url:
+            continue
+        items.append({"title": title, "url": url, "hot": ""})
+    return items
+
+
+def fetch_linuxdo_rss(limit: int) -> list[dict]:
+    text = http_get_text(
+        "https://linux.do/top.rss?period=weekly",
+        headers={
+            "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8",
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+            ),
+        },
+    )
+    feed = feedparser.parse(text)
+    items: list[dict] = []
+    for entry in feed.entries[:limit]:
+        title = str(entry.get("title", "")).strip()
+        url = str(entry.get("link", "")).strip()
+        if not title or not url:
+            continue
+        items.append({"title": title, "url": url, "hot": ""})
+    return items
+
+
+def fetch_hackernews_api(limit: int) -> list[dict]:
+    ids = http_get_json("https://hacker-news.firebaseio.com/v0/topstories.json")
+    if not isinstance(ids, list):
+        raise RuntimeError("invalid hackernews response")
+
+    items: list[dict] = []
+    for story_id in ids:
+        if len(items) >= limit:
+            break
+        story = http_get_json(f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json")
+        if not isinstance(story, dict) or story.get("type") != "story":
+            continue
+        title = str(story.get("title", "")).strip()
+        if not title:
+            continue
+        url = str(story.get("url") or f"https://news.ycombinator.com/item?id={story_id}").strip()
+        items.append({"title": title, "url": url, "hot": str(story.get("score", ""))})
+    return items
+
+
 CUSTOM_DRIVERS = {
     "v2ex_api": fetch_v2ex_api,
+    "yystv_api": fetch_yystv_api,
+    "jianshu_page": fetch_jianshu_page,
+    "douban_group": fetch_douban_group,
+    "nodeseek_rss": fetch_nodeseek_rss,
+    "linuxdo_rss": fetch_linuxdo_rss,
+    "hackernews_api": fetch_hackernews_api,
 }
 
 
@@ -157,6 +297,7 @@ def fetch_platform(platform: str, meta: dict) -> dict:
     cache = load_cache(platform)
     title = meta.get("title", platform)
     limit = int(meta.get("limit", 10))
+    min_items = int(meta.get("min_items", 3))
     fetcher = meta.get("fetcher", platform)
     driver = meta.get("driver")
 
@@ -173,7 +314,7 @@ def fetch_platform(platform: str, meta: dict) -> dict:
                 raw_items = payload.get("items") or []
 
             items = normalize_items(raw_items, limit)
-            if len(items) < 5:
+            if len(items) < min_items:
                 raise RuntimeError(f"too few items: {len(items)}")
 
             return {

@@ -1,8 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-11T14:17:57+08:00",
-  "fetch_ok": false,
-  "error": "┌───────────────────── Traceback (most recent call last) ──────────────────────┐ │ C:\\Users\\XXF\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\aioht │ │ tp\\connector.py:1301 in _wrap_cre...",
-  "items": []
+  "updated_at": "2026-06-11T14:38:13+08:00",
+  "fetch_ok": true,
+  "items": [
+    {
+      "rank": 1,
+      "title": "AI agent runs amok in Fedora and elsewhere",
+      "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
+      "hot": "316"
+    },
+    {
+      "rank": 2,
+      "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+      "hot": "361"
+    },
+    {
+      "rank": 3,
+      "title": "πFS",
+      "url": "https://github.com/philipl/pifs",
+      "hot": "665"
+    },
+    {
+      "rank": 4,
+      "title": "Anthropic requires 30 day data retention for Fable and Mythos",
+      "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
+      "hot": "343"
+    },
+    {
+      "rank": 5,
+      "title": "The Road to the WASM Component Model 1.0",
+      "url": "https://bytecodealliance.org/articles/the-road-to-component-model-1-0",
+      "hot": "56"
+    },
+    {
+      "rank": 6,
+      "title": "Starfish by Peter Watts (1999)",
+      "url": "https://www.rifters.com/real/STARFISH.htm#prelude",
+      "hot": "11"
+    },
+    {
+      "rank": 7,
+      "title": "Sequoyah’s syllabary created a written language for the Cherokee",
+      "url": "https://www.smithsonianmag.com/innovation/man-created-written-language-cherokee-did-efficiently-elegantly-peers-thought-magic-180988850/",
+      "hot": "140"
+    },
+    {
+      "rank": 8,
+      "title": "Vacuum-Form Signage",
+      "url": "https://bethmathews.substack.com/p/the-history-behind-the-signs-lighting",
+      "hot": "53"
+    },
+    {
+      "rank": 9,
+      "title": "I'm Eric Ries, author of \"The Lean Startup\" and new book \"Incorruptible\" – AMA",
+      "url": "https://news.ycombinator.com/item?id=48477135",
+      "hot": "611"
+    },
+    {
+      "rank": 10,
+      "title": "CSS: Unavoidable Bad Parts",
+      "url": "https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html",
+      "hot": "47"
+    }
+  ]
 }

@@ -1,8 +1,20 @@
 {
   "source": "jianshu",
   "title": "简书",
-  "updated_at": "2026-06-11T14:16:34+08:00",
-  "fetch_ok": false,
-  "error": "too few items: 4",
-  "items": []
+  "updated_at": "2026-06-11T14:38:34+08:00",
+  "fetch_ok": true,
+  "items": [
+    {
+      "rank": 1,
+      "title": "告别工业口感！用冰川水做冷萃，解锁夏日干净咖啡味",
+      "url": "https://www.jianshu.com/p/d8d3cc0418db",
+      "hot": ""
+    },
+    {
+      "rank": 2,
+      "title": "第十七卷　　钝秀才一朝交泰",
+      "url": "https://www.jianshu.com/p/cb7b9dd40bdb",
+      "hot": ""
+    }
+  ]
 }

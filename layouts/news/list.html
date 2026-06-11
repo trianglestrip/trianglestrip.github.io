@@ -73,11 +73,11 @@
                         <header class="hot-card__head">
                             <div class="hot-card__head-left">
                                 {{- $iconDomain := $meta.icon_domain | default $meta.domain -}}
+                                {{- $iconSrc := $meta.icon_url | default (printf "https://%s/favicon.ico" $iconDomain) -}}
                                 <span class="hot-card__icon-box">
                                     <img
                                         class="hot-card__icon"
-                                        src="https://www.google.com/s2/favicons?domain={{ $iconDomain }}&amp;sz=32"
-                                        data-fallback="https://{{ $iconDomain }}/favicon.ico"
+                                        src="{{ $iconSrc }}"
                                         alt=""
                                         width="20"
                                         height="20"
@@ -180,18 +180,6 @@
         (function () {
             document.querySelectorAll('.hot-card__icon').forEach((img) => {
                 img.addEventListener('error', function onIconError() {
-                    const step = Number(this.dataset.tried || 0);
-                    if (step >= 1) {
-                        this.classList.add('is-hidden');
-                        this.nextElementSibling?.classList.add('is-visible');
-                        return;
-                    }
-                    this.dataset.tried = '1';
-                    const fallback = this.dataset.fallback;
-                    if (fallback) {
-                        this.src = fallback;
-                        return;
-                    }
                     this.classList.add('is-hidden');
                     this.nextElementSibling?.classList.add('is-visible');
                 });
