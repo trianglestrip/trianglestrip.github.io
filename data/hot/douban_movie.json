@@ -1,0 +1,68 @@
+{
+  "source": "douban_movie",
+  "title": "豆瓣电影",
+  "updated_at": "2026-06-11T15:45:00+08:00",
+  "fetch_ok": true,
+  "items": [
+    {
+      "rank": 1,
+      "title": "给阿嬷的情书",
+      "url": "https://movie.douban.com/subject/37116446/",
+      "hot": "评分 9.2"
+    },
+    {
+      "rank": 2,
+      "title": "家业",
+      "url": "https://movie.douban.com/subject/36883114/",
+      "hot": "评分 7.3"
+    },
+    {
+      "rank": 3,
+      "title": "主角",
+      "url": "https://movie.douban.com/subject/35295564/",
+      "hot": "评分 8.1"
+    },
+    {
+      "rank": 4,
+      "title": "莫离",
+      "url": "https://movie.douban.com/subject/37234503/",
+      "hot": ""
+    },
+    {
+      "rank": 5,
+      "title": "校园之外 第一季",
+      "url": "https://movie.douban.com/subject/37061179/",
+      "hot": "评分 8.5"
+    },
+    {
+      "rank": 6,
+      "title": "低智商犯罪",
+      "url": "https://movie.douban.com/subject/35517044/",
+      "hot": "评分 8.1"
+    },
+    {
+      "rank": 7,
+      "title": "铁拳教育",
+      "url": "https://movie.douban.com/subject/37071123/",
+      "hot": "评分 8.8"
+    },
+    {
+      "rank": 8,
+      "title": "翘楚",
+      "url": "https://movie.douban.com/subject/36894289/",
+      "hot": ""
+    },
+    {
+      "rank": 9,
+      "title": "耀眼",
+      "url": "https://movie.douban.com/subject/37112008/",
+      "hot": "评分 5.9"
+    },
+    {
+      "rank": 10,
+      "title": "雨霖铃",
+      "url": "https://movie.douban.com/subject/36310054/",
+      "hot": "评分 7.0"
+    }
+  ]
+}

@@ -67,8 +67,11 @@ def short_error(message: str, limit: int = 200) -> str:
     return text[: limit - 3] + "..."
 
 
-def http_get_json(url: str) -> object:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+def http_get_json(url: str, headers: dict[str, str] | None = None) -> object:
+    merged = {"User-Agent": USER_AGENT}
+    if headers:
+        merged.update(headers)
+    request = urllib.request.Request(url, headers=merged)
     with urllib.request.urlopen(request, timeout=HTTP_TIMEOUT) as response:
         return json.loads(response.read().decode("utf-8"))
 
@@ -262,6 +265,191 @@ def fetch_hf_daily_papers(limit: int) -> list[dict]:
     return items
 
 
+def fetch_rss(url: str, limit: int) -> list[dict]:
+    text = http_get_text(url)
+    feed = feedparser.parse(text)
+    items: list[dict] = []
+    for entry in feed.entries[:limit]:
+        title = str(entry.get("title", "")).strip()
+        link = str(entry.get("link", "")).strip()
+        if not title or not link:
+            continue
+        hot = entry.get("published") or entry.get("updated") or ""
+        items.append({"title": title, "url": link, "hot": str(hot)})
+    return items
+
+
+def fetch_douban_movie(limit: int) -> list[dict]:
+    data = http_get_json(
+        "https://movie.douban.com/j/new_search_subjects?"
+        "sort=U&range=0,10&tags=&start=0&genres=&countries=&year_range=2024,2026"
+    )
+    if not isinstance(data, dict):
+        raise RuntimeError("invalid douban movie response")
+
+    items: list[dict] = []
+    for movie in data.get("data") or []:
+        if not isinstance(movie, dict):
+            continue
+        title = str(movie.get("title", "")).strip()
+        url = str(movie.get("url", "")).strip()
+        if not title or not url:
+            continue
+        rate = str(movie.get("rate", "")).strip()
+        hot = f"评分 {rate}" if rate else ""
+        items.append({"title": title, "url": url, "hot": hot})
+        if len(items) >= limit:
+            break
+    return items
+
+
+def fetch_wallstreetcn(limit: int) -> list[dict]:
+    data = http_get_json(
+        "https://api-one.wallstcn.com/apiv1/content/information-flow?"
+        "channel=global-channel&accept=article&limit=20"
+    )
+    if not isinstance(data, dict):
+        raise RuntimeError("invalid wallstreetcn response")
+
+    items: list[dict] = []
+    for entry in data.get("data", {}).get("items") or []:
+        if not isinstance(entry, dict):
+            continue
+        resource = entry.get("resource")
+        if not isinstance(resource, dict):
+            continue
+        title = str(resource.get("title", "")).strip()
+        uri = str(resource.get("uri") or resource.get("url") or "").strip()
+        if not title or not uri:
+            continue
+        if uri.startswith("/"):
+            uri = f"https://wallstreetcn.com{uri}"
+        items.append({"title": title, "url": uri, "hot": ""})
+        if len(items) >= limit:
+            break
+    return items
+
+
+def fetch_3dm_news(limit: int) -> list[dict]:
+    html = http_get_text("https://www.3dmgame.com/news/")
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[dict] = []
+    seen: set[str] = set()
+    for link in soup.select("a[href]"):
+        href = str(link.get("href") or "").strip()
+        if "/news/" not in href or href in seen:
+            continue
+        title = link.get_text(strip=True)
+        if not title or len(title) < 6:
+            continue
+        if not href.startswith("http"):
+            href = f"https://www.3dmgame.com{href}"
+        seen.add(href)
+        items.append({"title": title, "url": href, "hot": ""})
+        if len(items) >= limit:
+            break
+    return items
+
+
+def fetch_taptap(limit: int) -> list[dict]:
+    html = http_get_text(
+        "https://www.taptap.cn/top/download",
+        headers={"Referer": "https://www.taptap.cn/"},
+    )
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[dict] = []
+    seen: set[str] = set()
+    for link in soup.select('a[href*="/app/"]'):
+        href = str(link.get("href") or "").strip()
+        title = link.get_text(strip=True)
+        if not title or href in seen:
+            continue
+        if not href.startswith("http"):
+            href = f"https://www.taptap.cn{href}"
+        seen.add(href)
+        items.append({"title": title, "url": href, "hot": ""})
+        if len(items) >= limit:
+            break
+    return items
+
+
+def fetch_coolapk(limit: int) -> list[dict]:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36",
+        "X-App-Id": "com.coolapk.market",
+        "X-Requested-With": "XMLHttpRequest",
+    }
+    try:
+        data = http_get_json(
+            "https://api.coolapk.com/v6/feed/draw?type=12&page=1",
+            headers=headers,
+        )
+    except (urllib.error.URLError, json.JSONDecodeError, RuntimeError, ValueError):
+        data = None
+
+    items: list[dict] = []
+    if isinstance(data, dict):
+        for entry in data.get("data") or []:
+            if not isinstance(entry, dict):
+                continue
+            title = str(entry.get("message_title") or entry.get("message", "")).strip()
+            url = str(entry.get("url") or entry.get("shareUrl") or "").strip()
+            if not title or not url:
+                continue
+            items.append({"title": title, "url": url, "hot": str(entry.get("replynum", ""))})
+            if len(items) >= limit:
+                return items
+
+    html = http_get_text("https://www.coolapk.com/", headers=headers)
+    soup = BeautifulSoup(html, "html.parser")
+    seen: set[str] = set()
+    for link in soup.select('a[href*="/feed/"]'):
+        href = str(link.get("href") or "").strip()
+        title = link.get_text(strip=True)
+        if not title or len(title) < 4 or href in seen:
+            continue
+        if not href.startswith("http"):
+            href = f"https://www.coolapk.com{href}"
+        seen.add(href)
+        items.append({"title": title, "url": href, "hot": ""})
+        if len(items) >= limit:
+            break
+    return items
+
+
+def fetch_xueqiu(limit: int) -> list[dict]:
+    opener = urllib.request.build_opener()
+    opener.addheaders = [("User-Agent", USER_AGENT)]
+    opener.open("https://xueqiu.com/", timeout=HTTP_TIMEOUT)
+    request = urllib.request.Request(
+        "https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20",
+        headers={"User-Agent": USER_AGENT, "Referer": "https://xueqiu.com/"},
+    )
+    with opener.open(request, timeout=HTTP_TIMEOUT) as response:
+        data = json.loads(response.read().decode("utf-8"))
+
+    if not isinstance(data, dict):
+        raise RuntimeError("invalid xueqiu response")
+
+    items: list[dict] = []
+    for entry in data.get("items") or []:
+        if not isinstance(entry, dict):
+            continue
+        title = str(entry.get("title") or entry.get("description") or "").strip()
+        target = entry.get("target")
+        url = ""
+        if isinstance(target, dict):
+            url = str(target.get("url") or "").strip()
+        if not url:
+            url = str(entry.get("target_url") or entry.get("url") or "").strip()
+        if not title or not url:
+            continue
+        items.append({"title": title, "url": url, "hot": str(entry.get("view_count", ""))})
+        if len(items) >= limit:
+            break
+    return items
+
+
 def fetch_hackernews_api(limit: int) -> list[dict]:
     ids = http_get_json("https://hacker-news.firebaseio.com/v0/topstories.json")
     if not isinstance(ids, list):
@@ -287,10 +475,16 @@ CUSTOM_DRIVERS = {
     "yystv_api": fetch_yystv_api,
     "jianshu_trending": fetch_jianshu_trending,
     "douban_group": fetch_douban_group,
+    "douban_movie": fetch_douban_movie,
     "nodeseek_rss": fetch_nodeseek_rss,
     "hackernews_api": fetch_hackernews_api,
     "hf_trending_models": fetch_hf_trending_models,
     "hf_daily_papers": fetch_hf_daily_papers,
+    "wallstreetcn": fetch_wallstreetcn,
+    "3dm_news": fetch_3dm_news,
+    "taptap": fetch_taptap,
+    "coolapk": fetch_coolapk,
+    "xueqiu": fetch_xueqiu,
 }
 
 
@@ -322,8 +516,11 @@ def hotboard_env() -> dict:
     return env
 
 
-def run_hotboard(fetcher: str) -> dict:
-    command = ["hotboard", fetcher, "--format", "json"]
+def run_hotboard(fetcher: str, extra_args: list[str] | None = None) -> dict:
+    command = ["hotboard", fetcher]
+    if extra_args:
+        command.extend(extra_args)
+    command.extend(["--format", "json"])
     result = subprocess.run(
         command,
         capture_output=True,
@@ -362,13 +559,19 @@ def fetch_platform(platform: str, meta: dict) -> dict:
     last_error = "unknown error"
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            if driver:
+            if driver == "rss":
+                rss_url = meta.get("rss_url")
+                if not rss_url:
+                    raise RuntimeError("rss_url required for rss driver")
+                raw_items = fetch_rss(rss_url, limit)
+            elif driver:
                 driver_fn = CUSTOM_DRIVERS.get(driver)
                 if driver_fn is None:
                     raise RuntimeError(f"unknown driver: {driver}")
                 raw_items = driver_fn(limit)
             else:
-                payload = run_hotboard(fetcher)
+                hotboard_args = meta.get("hotboard_args") or []
+                payload = run_hotboard(fetcher, hotboard_args)
                 raw_items = payload.get("items") or []
 
             items = normalize_items(raw_items, limit)
@@ -450,8 +653,14 @@ def run(platform: str | None, force: bool) -> int:
             skipped += 1
             continue
 
+        driver = meta.get("driver")
         fetcher = meta.get("fetcher", name)
-        print(f"fetch {name} via hotboard {fetcher}")
+        if driver:
+            print(f"fetch {name} via driver {driver}")
+        else:
+            hotboard_args = meta.get("hotboard_args") or []
+            args_text = " ".join(hotboard_args) if hotboard_args else ""
+            print(f"fetch {name} via hotboard {fetcher} {args_text}".rstrip())
         fetched += 1
         data = fetch_platform(name, meta)
         if write_cache(name, data):
