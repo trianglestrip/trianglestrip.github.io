@@ -28,6 +28,8 @@ PROXY_HEADERS = {
     "Referer": "https://www.douyu.com/",
     "Origin": "https://www.douyu.com",
     "Accept": "*/*",
+    "Accept-Encoding": "identity",
+    "Connection": "close",
 }
 CHUNK_SIZE = 64 * 1024
 FLV_MAGIC = b"FLV"
@@ -77,7 +79,7 @@ def attach_proxy(payload: dict) -> dict:
     backup_urls = payload.get("backup_urls") or []
     sid = register_proxy_session(play_url, backup_urls)
     payload["proxy_sid"] = sid
-    payload["proxy_url"] = f"/api/proxy?sid={sid}"
+    payload["proxy_url"] = f"/api/proxy?sid={sid}&mode=live"
     payload["ok"] = True
     return payload
 
@@ -255,19 +257,11 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_header("Connection", "close")
         self.end_headers()
 
-    def _consume_skip(self, chunk: bytes, skip_remaining: int) -> tuple[bytes, int]:
-        if skip_remaining <= 0:
-            return chunk, 0
-        if len(chunk) <= skip_remaining:
-            return b"", skip_remaining - len(chunk)
-        return chunk[skip_remaining:], 0
-
     def _pipe_upstream(
         self,
         upstream: requests.Response,
         *,
         first_chunk: bytes = b"",
-        skip_remaining: int = 0,
     ) -> None:
         pending = first_chunk
         while True:
@@ -275,9 +269,6 @@ class Handler(SimpleHTTPRequestHandler):
             pending = b""
             if not chunk:
                 break
-            chunk, skip_remaining = self._consume_skip(chunk, skip_remaining)
-            if not chunk:
-                continue
             self.wfile.write(chunk)
             self.wfile.flush()
 
