@@ -345,18 +345,12 @@ body {
 }
 .hot-dock {
   display: flex;
-  gap: 0.85rem;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem 0.75rem;
   max-width: 100%;
   margin: 1rem auto 0;
   padding: 0.25rem 0.5rem 0.15rem;
-  scrollbar-width: thin;
-  -webkit-overflow-scrolling: touch;
-}
-.hot-dock::-webkit-scrollbar { height: 6px; }
-.hot-dock::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background: var(--border);
 }
 .hot-dock__item {
   flex: 0 0 auto;
