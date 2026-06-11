@@ -14,6 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "hot"
+META_FILE = DATA_DIR / "meta.json"
 SOURCES_FILE = ROOT / "scripts" / "hot-sources.json"
 FETCH_TIMEOUT = 60
 HTTP_TIMEOUT = 30
@@ -205,6 +206,17 @@ def fetch_platform(platform: str, meta: dict) -> dict:
     }
 
 
+def write_run_meta(*, changed: int, fetched: int, skipped: int) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    meta = {
+        "last_run_at": now_iso(),
+        "changed": changed,
+        "fetched": fetched,
+        "skipped": skipped,
+    }
+    META_FILE.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def write_cache(platform: str, data: dict) -> bool:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     path = DATA_DIR / f"{platform}.json"
@@ -229,15 +241,19 @@ def run(platform: str | None, force: bool) -> int:
         targets = platforms
 
     changed = 0
+    fetched = 0
+    skipped = 0
     for name, meta in targets.items():
         cache = load_cache(name)
         ttl_minutes = int(meta.get("ttl_minutes", 30))
         if not should_fetch(cache, ttl_minutes, force):
             print(f"skip {name}: cache still fresh")
+            skipped += 1
             continue
 
         fetcher = meta.get("fetcher", name)
         print(f"fetch {name} via hotboard {fetcher}")
+        fetched += 1
         data = fetch_platform(name, meta)
         if write_cache(name, data):
             changed += 1
@@ -246,6 +262,7 @@ def run(platform: str | None, force: bool) -> int:
         else:
             print(f"unchanged {name}")
 
+    write_run_meta(changed=changed, fetched=fetched, skipped=skipped)
     print(f"done, changed={changed}")
     return 0
 

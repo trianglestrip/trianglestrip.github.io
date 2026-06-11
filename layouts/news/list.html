@@ -5,14 +5,59 @@
     {{- $order := $cfg.order -}}
     {{- $platforms := $cfg.platforms -}}
     {{- $categories := $cfg.categories -}}
+    {{- $runMeta := .Site.Data.hot.meta -}}
+    {{- $updatedAt := "" -}}
+    {{- with $runMeta -}}
+        {{- with .last_run_at -}}
+            {{- $updatedAt = . -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if not $updatedAt -}}
+        {{- $scratch := newScratch -}}
+        {{- $scratch.Set "latest" 0 -}}
+        {{- range $order -}}
+            {{- with index $.Site.Data.hot . -}}
+                {{- with .updated_at -}}
+                    {{- $t := time . -}}
+                    {{- if gt $t.Unix ($scratch.Get "latest") -}}
+                        {{- $scratch.Set "latest" $t.Unix -}}
+                        {{- $updatedAt = . -}}
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
 
     <article class="page single hot-page">
-        <nav class="hot-nav" aria-label="热榜分类">
+        <header class="hot-header">
+            {{- with $updatedAt -}}
+                {{- $updated := time . -}}
+                {{- $seconds := sub now.Unix $updated.Unix -}}
+                <p class="hot-meta">
+                    更新于
+                    <time datetime="{{ . }}">
+                        {{- if lt $seconds 60 -}}
+                            刚刚
+                        {{- else if lt $seconds 3600 -}}
+                            {{ div $seconds 60 }}分钟前
+                        {{- else if lt $seconds 86400 -}}
+                            {{ div $seconds 3600 }}小时前
+                        {{- else -}}
+                            {{ div $seconds 86400 }}天前
+                        {{- end -}}
+                    </time>
+                </p>
+            {{- else -}}
+                <p class="hot-meta hot-meta--empty">暂无更新记录</p>
+            {{- end -}}
+
+            <nav class="hot-nav" aria-label="热榜分类">
             <button type="button" class="hot-nav__btn is-active" data-filter="all">全部</button>
             {{- range $categories -}}
                 <button type="button" class="hot-nav__btn" data-filter="{{ .id }}">{{ .name }}</button>
             {{- end -}}
-        </nav>
+            </nav>
+        </header>
 
         <div class="hot-board">
             {{- range $order -}}
