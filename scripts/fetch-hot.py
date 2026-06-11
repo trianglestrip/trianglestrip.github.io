@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
@@ -72,14 +73,24 @@ def normalize_items(raw_items: list, limit: int) -> list[dict]:
     return items
 
 
+def hotboard_env() -> dict:
+    env = os.environ.copy()
+    env["PYTHONIOENCODING"] = "utf-8"
+    env["PYTHONUTF8"] = "1"
+    return env
+
+
 def run_hotboard(fetcher: str) -> dict:
     command = ["hotboard", fetcher, "--format", "json"]
     result = subprocess.run(
         command,
         capture_output=True,
         text=True,
+        encoding="utf-8",
+        errors="replace",
         timeout=FETCH_TIMEOUT,
         check=False,
+        env=hotboard_env(),
     )
     if result.returncode != 0:
         stderr = result.stderr.strip()

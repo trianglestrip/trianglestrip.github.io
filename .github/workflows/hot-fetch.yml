@@ -27,6 +27,9 @@ jobs:
         run: pip install hotboard
 
       - name: 抓取热榜数据
+        env:
+          PYTHONIOENCODING: utf-8
+          PYTHONUTF8: "1"
         run: |
           args=()
           if [ -n "${{ github.event.inputs.platform }}" ]; then

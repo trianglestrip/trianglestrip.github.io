@@ -98,15 +98,16 @@
 }
 
 .hot-page__intro {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: var(--global-font-secondary-color, #6a6a6a);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
+// 参考 tophub.today：横向全屏多栏卡片
 .hot-board {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 0.65rem;
+  gap: 0.75rem;
   width: 100vw;
   max-width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -114,81 +115,120 @@
   box-sizing: border-box;
 }
 
-.hot-board__column {
+.hot-card {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
-  padding: 0.75rem 0.65rem;
-  border: 1px solid var(--border-color, rgba(125, 125, 125, 0.2));
+  min-height: 22rem;
   border-radius: 0.5rem;
-  background: var(--card-bg, rgba(125, 125, 125, 0.04));
+  background: var(--hot-card-bg, #fff);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
-.hot-board__header {
-  margin-bottom: 0.5rem;
+.hot-card__head {
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--hot-card-border, #eee);
+  background: var(--hot-card-head-bg, #fafafa);
 }
 
-.hot-board__title {
+.hot-card__title {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   line-height: 1.35;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.hot-board__meta {
-  margin-top: 0.25rem;
-  color: var(--global-font-secondary-color, #6a6a6a);
-  font-size: 0.75rem;
-  line-height: 1.4;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.hot-card--zhihu .hot-card__head { border-top: 3px solid #056de8; }
+.hot-card--weibo .hot-card__head { border-top: 3px solid #ff8200; }
+.hot-card--baidu .hot-card__head { border-top: 3px solid #2932e1; }
+.hot-card--bilibili .hot-card__head { border-top: 3px solid #fb7299; }
+.hot-card--github .hot-card__head { border-top: 3px solid #24292f; }
+.hot-card--juejin .hot-card__head { border-top: 3px solid #1e80ff; }
 
-.hot-board__stale {
-  margin-left: 0.25rem;
-  color: #c97a1a;
-}
-
-.hot-board__list {
+.hot-card__list {
+  flex: 1;
   margin: 0;
-  padding-left: 1.1rem;
+  padding: 0;
+  list-style: none;
 }
 
-.hot-board__item {
-  margin: 0.35rem 0;
-  line-height: 1.4;
+.hot-card__row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.65rem;
+  border-bottom: 1px solid var(--hot-card-row-border, #f3f3f3);
+  line-height: 1.35;
 }
 
-.hot-board__link {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+.hot-card__rank {
+  flex: 0 0 1.1rem;
+  color: var(--global-font-secondary-color, #999);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.hot-card__link {
+  flex: 1;
+  min-width: 0;
   overflow: hidden;
-  word-break: break-word;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: inherit;
   text-decoration: none;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
 
   &:hover {
     color: var(--link-hover-color, #42b983);
-    text-decoration: underline;
   }
 }
 
-.hot-board__hot {
-  display: none;
+.hot-card__hot {
+  flex: 0 0 auto;
+  max-width: 4.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--global-font-secondary-color, #999);
+  font-size: 0.72rem;
+  text-align: right;
 }
 
-.hot-board__empty {
+.hot-card__empty {
+  flex: 1;
   margin: 0;
-  color: var(--global-font-secondary-color, #6a6a6a);
+  padding: 1.5rem 0.85rem;
+  color: var(--global-font-secondary-color, #999);
   font-size: 0.82rem;
+  text-align: center;
 }
 
-@media (max-width: 960px) {
+.hot-card__foot {
+  padding: 0.45rem 0.65rem;
+  border-top: 1px solid var(--hot-card-border, #eee);
+  color: var(--global-font-secondary-color, #999);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.hot-card__stale {
+  color: #c97a1a;
+}
+
+[theme=dark] {
+  --hot-card-bg: #2a2b30;
+  --hot-card-head-bg: #32333a;
+  --hot-card-border: rgba(255, 255, 255, 0.08);
+  --hot-card-row-border: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 1100px) {
   .hot-board {
-    grid-template-columns: repeat(6, minmax(8.5rem, 1fr));
+    grid-template-columns: repeat(6, minmax(9.5rem, 1fr));
     overflow-x: auto;
     padding-bottom: 0.35rem;
   }

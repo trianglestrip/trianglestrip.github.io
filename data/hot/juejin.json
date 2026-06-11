@@ -1,8 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-11T12:03:47+08:00",
-  "fetch_ok": false,
-  "error": "+--------------------- Traceback (most recent call last) ----------------------+\n| C:\\Users\\XXF\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\hotbo |\n| ard\\platforms\\juejin.py:95 in main                                           |\n|                                                                              |\n|   92                                                                         |\n|   93     items: list[HotItem] = asyncio.run(fetch(category))                 |\n|   94     category_name = categories.get(category, category)                  |\n| > 95     print(format_output(items, category_name, format))                  |\n|   96     logger.info(f\"获取 [{PLATFORM_NAME} - {category_name}] 成功，共     |\n|      {len(items)} 条\")                                                       |\n|   97                                                                         |\n+------------------------------------------------------------------------------+\nUnicodeEncodeError: 'gbk' codec can't encode character '\\U0001f60d' in position \n12192: illegal multibyte sequence",
-  "items": []
+  "updated_at": "2026-06-11T13:42:24+08:00",
+  "fetch_ok": true,
+  "items": [
+    {
+      "rank": 1,
+      "title": "真正的跨平台 AI 自动化框架，甚至还支持鸿蒙",
+      "url": "https://juejin.cn/post/7648520470531473471",
+      "hot": "1125"
+    },
+    {
+      "rank": 2,
+      "title": "2026 年从 0 开发 AI Agent 需要的 10 个技能",
+      "url": "https://juejin.cn/post/7648894966207152180",
+      "hot": "972"
+    },
+    {
+      "rank": 3,
+      "title": "不需要数学基础，也能理解 LLM 的运作原理",
+      "url": "https://juejin.cn/post/7649105672894464006",
+      "hot": "828"
+    },
+    {
+      "rank": 4,
+      "title": "《Kingbase护城河》——数据库卡顿急救手册：会话状态深度解析与“僵尸进程”排查实战",
+      "url": "https://juejin.cn/post/7649298814721900578",
+      "hot": "612"
+    },
+    {
+      "rank": 5,
+      "title": "Android 官方给 Compose 搞了个不需要 UI 环境的 Composable",
+      "url": "https://juejin.cn/post/7648174967504404522",
+      "hot": "558"
+    },
+    {
+      "rank": 6,
+      "title": "我用3个周末重构了公司的前端项目，老板没发现，但同事都来找我要代码了",
+      "url": "https://juejin.cn/post/7649211548573925418",
+      "hot": "531"
+    },
+    {
+      "rank": 7,
+      "title": "从一个九宫格素材小程序，看轻量工具产品该如何优化体验",
+      "url": "https://juejin.cn/post/7649333043737018410",
+      "hot": "477"
+    },
+    {
+      "rank": 8,
+      "title": "从 MySQL 到 KingbaseES：Database、Schema、User 一次讲透",
+      "url": "https://juejin.cn/post/7648852517350703147",
+      "hot": "450"
+    },
+    {
+      "rank": 9,
+      "title": "又一个神级 Codex Skill 诞生了。",
+      "url": "https://juejin.cn/post/7649329229150650378",
+      "hot": "414"
+    },
+    {
+      "rank": 10,
+      "title": "沉迷 Vibe coding 后我幡然醒悟：为什么可持续开发要回归半古法编程",
+      "url": "https://juejin.cn/post/7648829716128563251",
+      "hot": "396"
+    }
+  ]
 }

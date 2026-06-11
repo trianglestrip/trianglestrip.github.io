@@ -1,8 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-06-11T12:03:43+08:00",
-  "fetch_ok": false,
-  "error": "+--------------------- Traceback (most recent call last) ----------------------+\n| C:\\Users\\XXF\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\hotbo |\n| ard\\platforms\\github.py:151 in main                                          |\n|                                                                              |\n|   148 ):                                                                     |\n|   149     \"\"\"GitHub Trending\"\"\"                                              |\n|   150     items: list[HotItem] = asyncio.run(fetch(type))                    |\n| > 151     print(format_output(items, type, format))                          |\n|   152     logger.info(f\"获取 [{PLATFORM_NAME} Trending - {type}] 成功，共    |\n|       {len(items)} 条\")                                                      |\n|   153                                                                        |\n+------------------------------------------------------------------------------+\nUnicodeEncodeError: 'gbk' codec can't encode character '\\U0001f575' in position \n2112: illegal multibyte sequence",
-  "items": []
+  "updated_at": "2026-06-11T13:42:25+08:00",
+  "fetch_ok": true,
+  "items": [
+    {
+      "rank": 1,
+      "title": "[Shell] addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "hot": "52,460"
+    },
+    {
+      "rank": 2,
+      "title": "phuryn/pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "hot": "15,330"
+    },
+    {
+      "rank": 3,
+      "title": "[TypeScript] refactoringhq/tolaria",
+      "url": "https://github.com/refactoringhq/tolaria",
+      "hot": "15,054"
+    },
+    {
+      "rank": 4,
+      "title": "[Python] mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "hot": "39,269"
+    },
+    {
+      "rank": 5,
+      "title": "[Python] soxoj/maigret",
+      "url": "https://github.com/soxoj/maigret",
+      "hot": "32,157"
+    },
+    {
+      "rank": 6,
+      "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "hot": "139,608"
+    },
+    {
+      "rank": 7,
+      "title": "[Shell] obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "hot": "223,859"
+    },
+    {
+      "rank": 8,
+      "title": "[Go] masterking32/MasterDnsVPN",
+      "url": "https://github.com/masterking32/MasterDnsVPN",
+      "hot": "5,330"
+    },
+    {
+      "rank": 9,
+      "title": "[Python] harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "hot": "85,323"
+    },
+    {
+      "rank": 10,
+      "title": "[Python] maziyarpanahi/openmed",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "hot": "2,393"
+    }
+  ]
 }
