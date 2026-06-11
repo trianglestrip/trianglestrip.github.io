@@ -159,61 +159,69 @@ body {
   background: var(--bg);
   line-height: 1.5;
 }
-.hot-topbar {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0.75rem 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-.hot-topbar a {
-  color: var(--link);
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-.hot-topbar a:hover { text-decoration: underline; }
 .hot-page { max-width: 100%; padding-bottom: 2rem; }
 .hot-header {
   width: 100vw;
   max-width: 100vw;
   margin-left: calc(50% - 50vw);
-  margin-bottom: 1rem;
-  padding: 0 1.25rem 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem 1.5rem 1.5rem;
   border-bottom: 1px solid var(--border);
+  background: var(--hot-header-bg, rgba(255, 255, 255, 0.72));
+  backdrop-filter: blur(8px);
+}
+@media (prefers-color-scheme: dark) {
+  .hot-header { --hot-header-bg: rgba(42, 43, 48, 0.85); }
 }
 .hot-meta {
-  margin: 0 0 0.65rem;
+  margin: 0 0 1rem;
   color: var(--text-muted);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .hot-meta--empty { color: #c97a1a; }
 .hot-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.65rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background: var(--hot-nav-bg, rgba(0, 0, 0, 0.04));
+}
+@media (prefers-color-scheme: dark) {
+  .hot-nav { --hot-nav-bg: rgba(255, 255, 255, 0.06); }
 }
 .hot-nav__btn {
-  padding: 0.35rem 0.85rem;
-  border: 1px solid rgba(125, 125, 125, 0.25);
-  border-radius: 1rem;
+  padding: 0.62rem 1.5rem;
+  min-height: 2.75rem;
+  border: none;
+  border-radius: 1.75rem;
   background: transparent;
   color: inherit;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s, transform 0.15s;
 }
 .hot-nav__btn:hover {
-  border-color: var(--link);
   color: var(--link);
+  background: rgba(66, 185, 131, 0.1);
 }
 .hot-nav__btn.is-active {
-  border-color: var(--link);
-  background: rgba(66, 185, 131, 0.12);
-  color: var(--link);
+  background: var(--link);
+  color: #fff;
   font-weight: 600;
+  box-shadow: 0 4px 14px rgba(66, 185, 131, 0.35);
+}
+.hot-nav__btn.is-active:hover {
+  color: #fff;
+  transform: translateY(-1px);
 }
 .hot-board {
   display: grid;
@@ -351,14 +359,30 @@ body {
   .hot-board { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
-  .hot-header, .hot-board {
+  .hot-header {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 1rem 0.75rem 1.25rem;
+  }
+  .hot-nav {
+    gap: 0.45rem;
+    padding: 0.4rem;
+    border-radius: 1.25rem;
+  }
+  .hot-nav__btn {
+    padding: 0.5rem 1rem;
+    min-height: 2.4rem;
+    font-size: 0.92rem;
+  }
+  .hot-board {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
     padding-left: 0;
     padding-right: 0;
+    grid-template-columns: 1fr;
   }
-  .hot-board { grid-template-columns: 1fr; }
 }
 """
 
@@ -428,7 +452,6 @@ def build() -> Path:
         data = load_json(data_path) if data_path.exists() else None
         cards.append(render_card(platform_id, pmeta, data, now))
 
-    built_at = now.isoformat(timespec="seconds")
     page = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -440,10 +463,6 @@ def build() -> Path:
   <style>{CSS}</style>
 </head>
 <body>
-  <header class="hot-topbar">
-    <a href="/">← 返回博客</a>
-    <span style="color:var(--text-muted);font-size:0.75rem">生成于 {html.escape(built_at)}</span>
-  </header>
   <main class="hot-page">
     <header class="hot-header">
       <p class="hot-meta{meta_class}">更新于 {meta_time}</p>
