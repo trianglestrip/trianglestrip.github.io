@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-11T15:46:28+08:00",
+  "updated_at": "2026-06-11T10:13:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "VS Code 为扩展自动更新增加 2 小时延迟，以限制供应链攻击",
+      "url": "https://www.oschina.net/news/456173/s-code-adds-2-hour-extension-auto",
+      "hot": "Thu, 11 Jun 2026 17:47:10 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "LLM 正在侵蚀我的软件工程师职业生涯",
+      "url": "https://www.oschina.net/news/456159",
+      "hot": "Thu, 11 Jun 2026 17:27:09 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Windows 用户吐槽：Claude Desktop 刚启动就霸占 1.8GB 内存",
+      "url": "https://www.oschina.net/news/456144",
+      "hot": "Thu, 11 Jun 2026 17:04:56 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "AI 又闯一祸，失控智能体混进 Fedora 核心代码",
+      "url": "https://my.oschina.net/u/4487475/blog/19701457",
+      "hot": "Thu, 11 Jun 2026 17:04:47 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Python 3.14.6 和 3.13.14 发布",
+      "url": "https://www.oschina.net/news/456126/python-3146",
+      "hot": "Thu, 11 Jun 2026 16:38:01 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "AIGC 盛典邀您：见证荣耀，链接资源，欣赏佳作！",
+      "url": "https://www.oschina.net/news/456108",
+      "hot": "Thu, 11 Jun 2026 16:10:44 +0800"
+    },
+    {
+      "rank": 7,
       "title": "消息称字节 AI 硬件团队豆包手机负责人林夕离职",
       "url": "https://www.oschina.net/news/456070",
       "hot": "Thu, 11 Jun 2026 15:25:30 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "2026 年 5 月国产数据库大事记",
       "url": "https://my.oschina.net/u/4559794/blog/19701305",
       "hot": "Thu, 11 Jun 2026 13:57:18 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "Linux 基金会推出 OpenSharing 项目，规范 AI 资产和数据交换",
       "url": "https://www.oschina.net/news/456002/linux-foundation-opensharing-project",
       "hot": "Thu, 11 Jun 2026 13:46:34 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "Anthropic 收紧 Mythos 级模型数据保留政策，其提示词与模型输出将被保留 30 天",
       "url": "https://www.oschina.net/news/455954",
       "hot": "Thu, 11 Jun 2026 11:49:12 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "钉钉换帅，92 年技术极客陈宇森接任钉钉 CEO",
-      "url": "https://www.oschina.net/news/455951",
-      "hot": "Thu, 11 Jun 2026 11:40:27 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "喜报！qKnow 智能体构建平台入选 Gitee GVP 2026 年度最有价值开源项目",
-      "url": "https://www.oschina.net/news/455941",
-      "hot": "Thu, 11 Jun 2026 11:33:11 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "🔥🔥【AI桌面硬件大赏】 第三代灵动四足机器狗|LinkDog",
-      "url": "https://www.oschina.net/news/455912",
-      "hot": "Thu, 11 Jun 2026 10:54:33 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "🔥🔥【AI桌面硬件大赏】码克助手-把 Claude 运行状态做成桌面摆件",
-      "url": "https://www.oschina.net/news/455910",
-      "hot": "Thu, 11 Jun 2026 10:54:05 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "87 个 PR 迭代复盘｜Apache SeaTunnel 5 月版本重点更新解读",
-      "url": "https://my.oschina.net/SeaTunnel/blog/19700519",
-      "hot": "Thu, 11 Jun 2026 10:53:53 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Visual Studio Code 1.124 发布",
-      "url": "https://www.oschina.net/news/455903/vs-code-1-124-released",
-      "hot": "Thu, 11 Jun 2026 10:48:02 +0800"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-11T15:14:19+08:00",
+  "updated_at": "2026-06-11T10:13:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Pokémon Go Scans Trained the Navigation Tech for Military Drones",
       "url": "https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/",
-      "hot": "32"
+      "hot": "256"
     },
     {
       "rank": 2,
       "title": "AI agent runs amok in Fedora and elsewhere",
       "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
-      "hot": "343"
+      "hot": "408"
     },
     {
       "rank": 3,
       "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
       "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
-      "hot": "377"
+      "hot": "443"
     },
     {
       "rank": 4,
       "title": "πFS",
       "url": "https://github.com/philipl/pifs",
-      "hot": "699"
+      "hot": "754"
     },
     {
       "rank": 5,
       "title": "Anthropic requires 30 day data retention for Fable and Mythos",
       "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
-      "hot": "365"
+      "hot": "435"
     },
     {
       "rank": 6,
-      "title": "Macaroni – a single HTML file messenger",
-      "url": "https://github.com/vanyapr/makaroshki",
-      "hot": "8"
+      "title": "Web Browsers on Video Game Consoles",
+      "url": "https://vale.rocks/posts/game-console-browsers",
+      "hot": "20"
     },
     {
       "rank": 7,
-      "title": "The Road to the WASM Component Model 1.0",
-      "url": "https://bytecodealliance.org/articles/the-road-to-component-model-1-0",
-      "hot": "63"
+      "title": "Starfish by Peter Watts (1999)",
+      "url": "https://www.rifters.com/real/STARFISH.htm#prelude",
+      "hot": "46"
     },
     {
       "rank": 8,
       "title": "Reverse engineering the Creative Katana soundbar to control it from Linux",
       "url": "https://blog.nns.ee/2026/02/20/katana-v2x-re/",
-      "hot": "33"
+      "hot": "70"
     },
     {
       "rank": 9,
-      "title": "Sequoyah’s syllabary created a written language for the Cherokee",
-      "url": "https://www.smithsonianmag.com/innovation/man-created-written-language-cherokee-did-efficiently-elegantly-peers-thought-magic-180988850/",
-      "hot": "144"
+      "title": "Linux latency measurements and compositor tuning",
+      "url": "https://farnoy.dev/posts/linux-latency",
+      "hot": "29"
     },
     {
       "rank": 10,
-      "title": "Starfish by Peter Watts (1999)",
-      "url": "https://www.rifters.com/real/STARFISH.htm#prelude",
-      "hot": "16"
+      "title": "Sequoyah’s syllabary created a written language for the Cherokee",
+      "url": "https://www.smithsonianmag.com/innovation/man-created-written-language-cherokee-did-efficiently-elegantly-peers-thought-magic-180988850/",
+      "hot": "156"
     }
   ]
 }
