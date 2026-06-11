@@ -3,31 +3,37 @@
   "platforms": {
     "zhihu": {
       "title": "知乎热榜",
+      "fetcher": "zhihu",
       "limit": 10,
       "ttl_minutes": 20
     },
     "weibo": {
       "title": "微博热搜",
+      "fetcher": "weibo",
       "limit": 10,
       "ttl_minutes": 20
     },
     "baidu": {
       "title": "百度热搜",
+      "fetcher": "baidu",
       "limit": 10,
       "ttl_minutes": 20
     },
     "bilibili": {
       "title": "哔哩哔哩",
       "limit": 10,
+      "fetcher": "bilibili",
       "ttl_minutes": 60
     },
     "github": {
       "title": "GitHub Trending",
+      "fetcher": "github",
       "limit": 10,
       "ttl_minutes": 360
     },
     "juejin": {
       "title": "稀土掘金",
+      "fetcher": "juejin",
       "limit": 10,
       "ttl_minutes": 120
     }

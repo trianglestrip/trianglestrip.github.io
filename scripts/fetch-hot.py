@@ -1,32 +1,24 @@
 #!/usr/bin/env python3
-"""从 DailyHotApi 抓取热榜，按平台写入独立缓存文件 data/hot/{platform}.json。"""
+"""在 GitHub Actions 中直接抓取各平台热榜，写入 data/hot/{platform}.json。"""
 
 from __future__ import annotations
 
 import json
-import os
+import subprocess
 import sys
-import urllib.error
-import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "hot"
 SOURCES_FILE = ROOT / "scripts" / "hot-sources.json"
-DEFAULT_API_BASE = "https://api-hot.imsyy.top"
-REQUEST_TIMEOUT = 30
+FETCH_TIMEOUT = 60
 MAX_RETRIES = 3
 
 
 def load_sources() -> dict:
     with SOURCES_FILE.open(encoding="utf-8") as fh:
         return json.load(fh)
-
-
-def api_base() -> str:
-    value = os.environ.get("DAILYHOT_API_BASE", "").strip()
-    return (value or DEFAULT_API_BASE).rstrip("/")
 
 
 def now_iso() -> str:
@@ -63,7 +55,7 @@ def normalize_items(raw_items: list, limit: int) -> list[dict]:
     items: list[dict] = []
     for index, item in enumerate(raw_items[:limit], start=1):
         title = str(item.get("title", "")).strip()
-        url = str(item.get("url") or item.get("mobileUrl") or "").strip()
+        url = str(item.get("url") or item.get("mobile_url") or "").strip()
         if not title or not url:
             continue
         hot = item.get("hot")
@@ -80,29 +72,38 @@ def normalize_items(raw_items: list, limit: int) -> list[dict]:
     return items
 
 
+def run_hotboard(fetcher: str) -> dict:
+    command = ["hotboard", fetcher, "--format", "json"]
+    result = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        timeout=FETCH_TIMEOUT,
+        check=False,
+    )
+    if result.returncode != 0:
+        stderr = result.stderr.strip()
+        stdout = result.stdout.strip()
+        detail = stderr or stdout or f"exit code {result.returncode}"
+        raise RuntimeError(detail)
+
+    payload = json.loads(result.stdout)
+    if not isinstance(payload.get("items"), list):
+        raise RuntimeError("invalid hotboard response")
+    return payload
+
+
 def fetch_platform(platform: str, meta: dict) -> dict:
     cache = load_cache(platform)
     title = meta.get("title", platform)
     limit = int(meta.get("limit", 10))
-    url = f"{api_base()}/{platform}"
+    fetcher = meta.get("fetcher", platform)
 
     last_error = "unknown error"
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            request = urllib.request.Request(
-                url,
-                headers={
-                    "User-Agent": "blog-hot-fetch/1.0",
-                    "Accept": "application/json",
-                },
-            )
-            with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT) as response:
-                payload = json.loads(response.read().decode("utf-8"))
-
-            if payload.get("code") != 200:
-                raise RuntimeError(payload.get("message") or f"API code {payload.get('code')}")
-
-            items = normalize_items(payload.get("data") or [], limit)
+            payload = run_hotboard(fetcher)
+            items = normalize_items(payload.get("items") or [], limit)
             if len(items) < 5:
                 raise RuntimeError(f"too few items: {len(items)}")
 
@@ -113,7 +114,7 @@ def fetch_platform(platform: str, meta: dict) -> dict:
                 "fetch_ok": True,
                 "items": items,
             }
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, RuntimeError, json.JSONDecodeError) as exc:
+        except (RuntimeError, subprocess.TimeoutExpired, json.JSONDecodeError, OSError) as exc:
             last_error = str(exc)
             if attempt < MAX_RETRIES:
                 continue
@@ -159,7 +160,8 @@ def run(platform: str | None, force: bool) -> int:
             print(f"skip {name}: cache still fresh")
             continue
 
-        print(f"fetch {name} from {api_base()}/{name}")
+        fetcher = meta.get("fetcher", name)
+        print(f"fetch {name} via hotboard {fetcher}")
         data = fetch_platform(name, meta)
         if write_cache(name, data):
             changed += 1
