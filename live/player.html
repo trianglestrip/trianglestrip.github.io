@@ -6,10 +6,8 @@
   <meta name="referrer" content="no-referrer">
   <title>直播播放</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xgplayer@3.0.20/dist/index.min.css">
   <link rel="stylesheet" href="/static/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/xgplayer@3.0.20/dist/index.min.js" charset="utf-8"></script>
-  <script src="https://cdn.jsdelivr.net/npm/xgplayer-flv@3.0.21/dist/index.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flv.js@1.6.2/dist/flv.min.js"></script>
 </head>
 <body>
   <div class="app">
@@ -18,7 +16,7 @@
         <div class="brand-icon">L</div>
         <div>
           <h1>直播播放</h1>
-          <p>默认本机 streamget 解析 + 代理播放</p>
+          <p>默认本机 streamget 解析 + flv.js 代理播放</p>
         </div>
       </div>
       <span class="badge">blog / live</span>
@@ -48,7 +46,7 @@
 
     <section class="card player-card">
       <div class="player-shell">
-        <div id="player"></div>
+        <video id="player" controls playsinline></video>
       </div>
       <div class="room-meta">
         <img id="roomCover" class="cover" alt="" style="display:none">
@@ -62,6 +60,6 @@
     </section>
   </div>
 
-  <script src="/static/app.js?v=4"></script>
+  <script src="/static/app.js?v=5"></script>
 </body>
 </html>

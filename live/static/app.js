@@ -1,13 +1,13 @@
-/* global FlvPlayer */
+/* global flvjs */
 
 const SITES = [
-  { id: "douyu", name: "斗鱼", icon: "🐟", referer: "https://www.douyu.com/" },
-  { id: "huya", name: "虎牙", icon: "🐯", referer: "https://www.huya.com/" },
-  { id: "bilibili", name: "哔哩", icon: "📺", referer: "https://live.bilibili.com/" },
-  { id: "douyin", name: "抖音", icon: "🎵", referer: "https://live.douyin.com/" },
+  { id: "douyu", name: "斗鱼", icon: "🐟" },
+  { id: "huya", name: "虎牙", icon: "🐯" },
+  { id: "bilibili", name: "哔哩", icon: "📺" },
+  { id: "douyin", name: "抖音", icon: "🎵" },
 ];
 
-const SEGMENT_BATCH = 3;
+const SEGMENT_BATCH = 5;
 
 const state = {
   site: "douyu",
@@ -20,7 +20,6 @@ const state = {
   useProxy: true,
   loopActive: false,
   blobUrl: null,
-  proxyBase: "",
 };
 
 const els = {
@@ -37,11 +36,8 @@ const els = {
   roomAnchor: document.getElementById("roomAnchor"),
   roomCover: document.getElementById("roomCover"),
   liveBadge: document.getElementById("liveBadge"),
+  video: document.getElementById("player"),
 };
-
-function siteReferer(siteId) {
-  return SITES.find((item) => item.id === siteId)?.referer || "https://www.douyu.com/";
-}
 
 function setStatus(text, ok = true) {
   els.status.className = "status " + (ok ? "ok" : "err");
@@ -162,6 +158,9 @@ function destroyPlayerInstance() {
   revokeBlob();
   if (state.player) {
     try {
+      state.player.pause();
+      state.player.unload();
+      state.player.detachMediaElement();
       state.player.destroy();
     } catch (_) {}
     state.player = null;
@@ -171,6 +170,12 @@ function destroyPlayerInstance() {
 function destroyPlayer() {
   state.loopActive = false;
   destroyPlayerInstance();
+}
+
+function ensureFlvJs() {
+  if (!window.flvjs || !flvjs.isSupported()) {
+    throw new Error("当前浏览器不支持 flv.js");
+  }
 }
 
 function segmentUrl(proxyBase) {
@@ -219,103 +224,75 @@ async function fetchMergedSegments(proxyBase) {
   return concatFlvSegments(buffers);
 }
 
-function ensureFlvPlayer() {
-  if (!window.FlvPlayer) throw new Error("xgplayer-flv 未加载，请检查网络或刷新页面");
-  if (FlvPlayer.isSupported && !FlvPlayer.isSupported()) {
-    throw new Error("当前浏览器不支持 MSE，无法播放 FLV");
-  }
-}
-
-function playBlob(buffer, referer) {
+function playBuffer(buffer) {
   return new Promise((resolve, reject) => {
-    ensureFlvPlayer();
+    ensureFlvJs();
     destroyPlayerInstance();
 
     state.blobUrl = URL.createObjectURL(new Blob([buffer], { type: "video/x-flv" }));
-    state.player = new FlvPlayer({
-      id: "player",
+    state.player = flvjs.createPlayer({
+      type: "flv",
       url: state.blobUrl,
       isLive: false,
-      autoplay: true,
-      playsinline: true,
-      fluid: true,
-      lang: "zh-cn",
-      volume: 0.7,
-      muted: true,
-      cors: true,
-      fitVideoSize: "fixWidth",
-      flv: {
-        cors: true,
-        fetchOptions: {
-          headers: { Referer: referer },
-        },
-      },
+      hasAudio: true,
+      hasVideo: true,
+    }, {
+      enableWorker: false,
+      enableStashBuffer: false,
+      lazyLoad: false,
+      deferLoadAfterSourceOpen: false,
     });
 
-    let settled = false;
-    const done = () => {
-      if (settled) return;
-      settled = true;
+    const cleanup = () => {
+      state.player.off(flvjs.Events.LOADING_COMPLETE, onComplete);
+      state.player.off(flvjs.Events.ERROR, onError);
+      state.player.off(flvjs.Events.MEDIA_INFO, onMediaInfo);
+    };
+    const onComplete = () => {
+      cleanup();
       resolve();
     };
-    const fail = (detail) => {
-      if (settled) return;
-      settled = true;
-      reject(new Error(detail || "播放失败"));
+    const onError = (_, info, detail) => {
+      cleanup();
+      const msg = [info, detail && detail.code, detail && detail.msg].filter(Boolean).join(" | ");
+      reject(new Error(msg || "flv error"));
+    };
+    const onMediaInfo = () => {
+      state.player.play().catch(() => {});
     };
 
-    state.player.on("playing", done);
-    state.player.on("canplay", done);
-    state.player.on("ended", done);
-    state.player.on("error", (err) => {
-      fail(err?.message || err?.type || "播放器错误");
-    });
-
-    setTimeout(() => {
-      if (!settled && state.player && !state.player.paused) done();
-    }, 3000);
-    setTimeout(() => fail("播放超时"), 12000);
+    state.player.attachMediaElement(els.video);
+    state.player.on(flvjs.Events.LOADING_COMPLETE, onComplete);
+    state.player.on(flvjs.Events.ERROR, onError);
+    state.player.on(flvjs.Events.MEDIA_INFO, onMediaInfo);
+    state.player.load();
   });
 }
 
-function startDirectPlayer(url, referer) {
-  ensureFlvPlayer();
-  destroyPlayer();
-  state.loopActive = true;
-  state.player = new FlvPlayer({
-    id: "player",
+function playDirect(url) {
+  ensureFlvJs();
+  destroyPlayerInstance();
+  state.player = flvjs.createPlayer({
+    type: "flv",
     url,
     isLive: true,
-    autoplay: true,
-    playsinline: true,
-    fluid: true,
-    lang: "zh-cn",
-    volume: 0.7,
-    muted: true,
-    seamlesslyReload: true,
-    retryCount: 3,
-    retryDelay: 1000,
-    loadTimeout: 15000,
-    preloadTime: 4,
-    cors: true,
-    fitVideoSize: "fixWidth",
-    flv: {
-      seamlesslyReload: true,
-      cors: true,
-      fetchOptions: {
-        headers: { Referer: referer },
-      },
-    },
+    hasAudio: true,
+    hasVideo: true,
+  }, {
+    enableWorker: false,
+    enableStashBuffer: true,
+    lazyLoad: false,
   });
-
-  state.player.on("error", (err) => {
-    const detail = err?.message || err?.type || "未知错误";
-    setStatus(`直连播放出错: ${detail}`, false);
+  state.player.attachMediaElement(els.video);
+  state.player.on(flvjs.Events.ERROR, (_, info, detail) => {
+    const msg = [info, detail && detail.code, detail && detail.msg].filter(Boolean).join(" | ");
+    setStatus(`直连播放出错: ${msg}\n建议改回「代理播放」`, false);
   });
+  state.player.load();
+  state.player.play().catch(() => {});
 }
 
-async function proxyPlaybackLoop(proxyBase, referer, metaText) {
-  state.proxyBase = proxyBase;
+async function proxyPlaybackLoop(proxyBase, metaText) {
   state.loopActive = true;
   let batch = 0;
   let nextBatchPromise = fetchMergedSegments(proxyBase);
@@ -338,7 +315,7 @@ async function proxyPlaybackLoop(proxyBase, referer, metaText) {
     setStatus(`${metaText}\n批次 ${batch} | 已缓存 ${SEGMENT_BATCH} 段 (~${mb} MB)`, true);
 
     try {
-      await playBlob(merged, referer);
+      await playBuffer(merged);
     } catch (err) {
       if (!state.loopActive) break;
       setStatus(`播放中断: ${err.message}\n0.5 秒后重试…`, false);
@@ -396,23 +373,22 @@ async function playRoom() {
 
     const q = payload.streams?.[state.qualityIndex]?.name || "默认";
     const line = payload.streams?.[state.qualityIndex]?.lines?.[state.lineIndex]?.name || "";
+    const sourceLabel = state.source === "local" ? "streamget（本机）" : "muxia";
     const metaText =
-      `解析源: ${payload.source}（本机） | ${q} / ${line}\n` +
-      `${state.useProxy ? "代理播放" : "直连 CDN"}: ${directUrl.slice(0, 100)}…\n` +
-      "（已静音自动播放，可在播放器控件中打开声音）";
+      `解析源: ${sourceLabel} | ${q} / ${line}\n` +
+      `${state.useProxy ? "代理播放" : "直连 CDN"}: ${directUrl.slice(0, 100)}…`;
 
     state.payload = payload;
-    const referer = siteReferer(state.site);
 
     if (state.useProxy) {
       const proxyPayload = await registerProxy(directUrl, payload);
       if (!proxyPayload.proxy_url) throw new Error("代理注册失败");
-      proxyPlaybackLoop(proxyPayload.proxy_url, referer, metaText);
+      proxyPlaybackLoop(proxyPayload.proxy_url, metaText);
       return;
     }
 
     setStatus(metaText, true);
-    startDirectPlayer(directUrl, referer);
+    playDirect(directUrl);
   } catch (err) {
     setStatus(`失败: ${err.message}`, false);
   }
@@ -452,4 +428,4 @@ function syncControls() {
 renderSiteTabs();
 syncControls();
 bindEvents();
-setStatus("默认：本机 streamget 解析 + 代理播放，点击「播放」开始", true);
+setStatus("默认：本机 streamget 解析 + 代理播放（flv.js），点击「播放」开始", true);

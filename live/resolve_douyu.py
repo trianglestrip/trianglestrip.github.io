@@ -51,16 +51,27 @@ def candidate_urls(payload: dict) -> list[str]:
         if "douyucdn" in item:
             return (0, item)
         if "edgesrv.com" in item:
-            return (2, item)
+            return (9, item)
         return (1, item)
 
     seen: set[str] = set()
     ordered: list[str] = []
     for item in sorted(urls, key=rank):
+        if "edgesrv.com" in item:
+            continue
         if item not in seen:
             seen.add(item)
             ordered.append(item)
     return ordered
+
+
+def probe_playable(url: str) -> bool:
+    try:
+        resp = requests.get(url, headers=PROBE_HEADERS, stream=True, timeout=12)
+        chunk = resp.raw.read(4)
+        return resp.status_code == 200 and (chunk.startswith(b"FLV") or url.endswith(".m3u8"))
+    except requests.RequestException:
+        return False
 
 
 def pick_play_url(payload: dict) -> tuple[str, list[str]]:
@@ -68,15 +79,10 @@ def pick_play_url(payload: dict) -> tuple[str, list[str]]:
     if not candidates:
         return "", []
 
-    for url in candidates:
-        try:
-            resp = requests.get(url, headers=PROBE_HEADERS, stream=True, timeout=12)
-            chunk = resp.raw.read(4)
-            if resp.status_code == 200 and (chunk.startswith(b"FLV") or url.endswith(".m3u8")):
-                return url, candidates
-        except requests.RequestException:
-            continue
-    return candidates[0], candidates
+    working = [url for url in candidates if probe_playable(url)]
+    if working:
+        return working[0], working
+    return "", []
 
 
 async def resolve(url: str, quality: str) -> dict:

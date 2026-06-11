@@ -86,7 +86,11 @@ def attach_proxy(payload: dict) -> dict:
 
 def normalize_streamget(payload: dict) -> dict:
     play_url = payload.get("play_url") or payload.get("flv_url") or payload.get("m3u8_url") or ""
-    backup_urls = [item for item in (payload.get("backup_urls") or []) if item and item != play_url]
+    backup_urls = [
+        item
+        for item in (payload.get("backup_urls") or [])
+        if item and item != play_url and "douyucdn" in item and "edgesrv.com" not in item
+    ]
     lines = []
     if play_url:
         lines.append({"name": "主线路", "url": play_url})
