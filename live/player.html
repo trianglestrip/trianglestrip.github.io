@@ -16,7 +16,7 @@
         <div class="brand-icon">L</div>
         <div>
           <h1>直播播放</h1>
-          <p>默认本机 streamget 解析 + flv.js 代理播放</p>
+          <p>默认 muxia 解析 + flv.js 直连 CDN</p>
         </div>
       </div>
       <span class="badge">blog / live</span>
@@ -28,12 +28,12 @@
       <div class="controls">
         <input id="room" type="text" value="9999" placeholder="房间号或平台链接">
         <select id="source" title="解析源">
-          <option value="local" selected>streamget（本机）</option>
-          <option value="muxia">muxia（lemon-live）</option>
+          <option value="local">streamget（本机）</option>
+          <option value="muxia" selected>muxia（lemon-live）</option>
         </select>
         <select id="proxyMode" title="播放方式">
-          <option value="proxy" selected>代理播放</option>
-          <option value="direct">直连 CDN</option>
+          <option value="proxy">代理播放</option>
+          <option value="direct" selected>直连 CDN</option>
         </select>
         <button id="playBtn" class="primary">播放</button>
         <button id="stopBtn">停止</button>
@@ -60,6 +60,6 @@
     </section>
   </div>
 
-  <script src="/static/app.js?v=6"></script>
+  <script src="/static/app.js?v=7"></script>
 </body>
 </html>

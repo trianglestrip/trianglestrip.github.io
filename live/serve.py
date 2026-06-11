@@ -31,9 +31,7 @@ PROXY_HEADERS = {
 }
 CHUNK_SIZE = 64 * 1024
 FLV_MAGIC = b"FLV"
-FLV_HEADER_SIZE = 13
 SESSION_TTL_SECONDS = 3600
-RECONNECT_PAUSE_SECONDS = 0.05
 ROOM_RE = re.compile(r"(?:douyu\.com/)?(\d+)$")
 
 PROXY_SESSIONS: dict[str, dict] = {}
@@ -314,21 +312,8 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_error(502, "no playable upstream")
             return
 
-        if mode == "segment":
-            return
-
-        while True:
-            upstream = self._open_upstream(target)
-            if upstream is None:
-                time.sleep(RECONNECT_PAUSE_SECONDS)
-                continue
-            try:
-                self._pipe_upstream(upstream, skip_remaining=FLV_HEADER_SIZE)
-            except (BrokenPipeError, ConnectionResetError, OSError):
-                return
-            finally:
-                upstream.close()
-            time.sleep(RECONNECT_PAUSE_SECONDS)
+        # live / segment 均单次上游连接后结束；由 flv.js isLive 自动重连同一代理 URL。
+        # 切勿在同一条 HTTP 响应里拼接多段 FLV，否则时间戳回绕会导致一秒一卡。
 
     def _proxy_stream(self, target: str) -> None:
         if not target.startswith(("http://", "https://")):

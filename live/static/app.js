@@ -9,13 +9,13 @@ const SITES = [
 
 const state = {
   site: "douyu",
-  source: "local",
+  source: "muxia",
   room: "9999",
   qualityIndex: 0,
   lineIndex: 0,
   payload: null,
   player: null,
-  useProxy: true,
+  useProxy: false,
   loopActive: false,
   blobUrl: null,
   proxyMode: "live",
@@ -79,6 +79,15 @@ async function fetchRoom() {
   return data;
 }
 
+function preferQualityIndex(streams) {
+  const wanted = ["高清", "超清", "原画"];
+  for (const name of wanted) {
+    const index = streams.findIndex((item) => (item.name || "").includes(name));
+    if (index >= 0) return index;
+  }
+  return 0;
+}
+
 function fillSelectors(payload) {
   const streams = payload.streams || [];
   els.quality.innerHTML = "";
@@ -100,7 +109,11 @@ function fillSelectors(payload) {
     els.quality.appendChild(opt);
   });
 
-  state.qualityIndex = Math.min(state.qualityIndex, streams.length - 1);
+  if (payload.source === "muxia" && streams.length > 1) {
+    state.qualityIndex = preferQualityIndex(streams);
+  } else {
+    state.qualityIndex = Math.min(state.qualityIndex, streams.length - 1);
+  }
   els.quality.value = String(state.qualityIndex);
   fillLines(streams[state.qualityIndex]);
 }
@@ -180,11 +193,12 @@ function ensureFlvJs() {
 function flvConfig(live) {
   return {
     enableWorker: false,
-    enableStashBuffer: live,
-    stashInitialSize: live ? 256 * 1024 : 0,
+    enableStashBuffer: !!live,
+    stashInitialSize: live ? 512 * 1024 : 0,
     lazyLoad: false,
     deferLoadAfterSourceOpen: false,
     autoCleanupSourceBuffer: true,
+    fixAudioTimestampGap: true,
   };
 }
 
@@ -316,32 +330,40 @@ async function proxySegmentLoop(proxyBase, metaText) {
 
 async function playProxy(proxyBase, metaText) {
   state.proxyMode = "live";
-  setStatus(`${metaText}\n直播流模式（连续代理）…`, true);
+  setStatus(`${metaText}\n代理直播（flv.js 自动重连）…`, true);
   playProxyLive(proxyBase);
 
-  await new Promise((resolve) => {
-    const timer = setTimeout(resolve, 8000);
-    const onInfo = () => {
+  const started = await new Promise((resolve) => {
+    let done = false;
+    const finish = (ok) => {
+      if (done) return;
+      done = true;
       clearTimeout(timer);
-      if (state.player) state.player.off(flvjs.Events.MEDIA_INFO, onInfo);
-      resolve();
+      if (state.player) {
+        state.player.off(flvjs.Events.MEDIA_INFO, onInfo);
+        state.player.off(flvjs.Events.ERROR, onError);
+      }
+      resolve(ok);
     };
-    if (state.player) {
-      state.player.on(flvjs.Events.MEDIA_INFO, onInfo);
-    } else {
-      clearTimeout(timer);
-      resolve();
+    const timer = setTimeout(() => finish(false), 12000);
+    const onInfo = () => finish(true);
+    const onError = () => finish(false);
+    if (!state.player) {
+      finish(false);
+      return;
     }
+    state.player.on(flvjs.Events.MEDIA_INFO, onInfo);
+    state.player.on(flvjs.Events.ERROR, onError);
   });
 
-  if (els.video.readyState >= 2 && !els.video.paused) {
-    setStatus(`${metaText}\n直播流模式播放中`, true);
+  if (started && state.loopActive) {
+    setStatus(`${metaText}\n代理直播播放中`, true);
     return;
   }
 
   if (!state.loopActive) return;
   destroyPlayerInstance();
-  setStatus(`${metaText}\n直播流未起播，切换单段模式…`, true);
+  setStatus(`${metaText}\n代理直播未起播，尝试单段回退…`, false);
   await proxySegmentLoop(proxyBase, metaText);
 }
 
@@ -468,4 +490,4 @@ function syncControls() {
 renderSiteTabs();
 syncControls();
 bindEvents();
-setStatus("默认：本机 streamget 解析 + 代理直播流，点击「播放」开始", true);
+setStatus("默认：muxia 解析 + 直连 CDN（与 lemon-live 一致），点击「播放」开始", true);
