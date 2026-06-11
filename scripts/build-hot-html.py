@@ -97,17 +97,14 @@ def resolve_updated_at(cfg: dict, run_meta: dict | None, now: datetime) -> tuple
     return "", "暂无更新记录"
 
 
-def load_ga_id() -> str:
+def load_baidu_id() -> str:
     hugo_path = ROOT / "hugo.toml"
     if not hugo_path.exists():
         return ""
     with hugo_path.open("rb") as fh:
         data = tomllib.load(fh)
-    ga_id = data.get("params", {}).get("analytics", {}).get("google", {}).get("id", "")
-    if ga_id:
-        return str(ga_id).strip()
-    services_id = data.get("services", {}).get("googleAnalytics", {}).get("ID", "")
-    return str(services_id).strip() if services_id else ""
+    baidu_id = data.get("params", {}).get("analytics", {}).get("baidu", {}).get("id", "")
+    return str(baidu_id).strip() if baidu_id else ""
 
 
 def platform_home_url(meta: dict) -> str:
@@ -782,9 +779,8 @@ JS = """
 })();
 """
 
-GA_TRACKING_JS = """
+BAIDU_TRACKING_JS = """
 (function () {
-  if (typeof gtag !== 'function') return;
   const seen = new Set();
   const observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -793,11 +789,9 @@ GA_TRACKING_JS = """
       const platformId = card.dataset.platformId;
       if (!platformId || seen.has(platformId)) return;
       seen.add(platformId);
-      gtag('event', 'hot_platform_view', {
-        platform_id: platformId,
-        platform_name: card.dataset.platformName || platformId,
-        category: card.dataset.category || ''
-      });
+      const label = (card.dataset.platformName || platformId) + '|' + (card.dataset.category || '');
+      window._hmt = window._hmt || [];
+      _hmt.push(['_trackEvent', 'hot_platform', 'view', label]);
       observer.unobserve(card);
     });
   }, { rootMargin: '0px', threshold: 0.15 });
@@ -808,16 +802,18 @@ GA_TRACKING_JS = """
 """
 
 
-def ga_head_html(ga_id: str) -> str:
-    if not ga_id:
+def baidu_head_html(baidu_id: str) -> str:
+    if not baidu_id:
         return ""
-    safe_id = html.escape(ga_id)
-    return f"""  <script async src="https://www.googletagmanager.com/gtag/js?id={safe_id}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){{dataLayer.push(arguments);}}
-    gtag('js', new Date());
-    gtag('config', '{safe_id}');
+    safe_id = html.escape(baidu_id)
+    return f"""  <script>
+    var _hmt = _hmt || [];
+    (function () {{
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?{safe_id}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    }})();
   </script>
 """
 
@@ -887,7 +883,7 @@ def build() -> Path:
 
     platforms = cfg.get("platforms", {})
     platform_order = cfg.get("order", [])
-    ga_id = load_ga_id()
+    baidu_id = load_baidu_id()
 
     nav_html = render_nav(cfg.get("categories", []), platform_order, platforms)
     category_ids = [cat["id"] for cat in cfg.get("categories", []) if cat.get("id")]
@@ -913,8 +909,8 @@ def build() -> Path:
     dock_html = render_dock(display_order, platforms, icons_raw)
     dock_icons = icon_layer(icons_raw, "dock")
     page_js = JS + dock_sprite_js(dock_icons)
-    if ga_id:
-        page_js += GA_TRACKING_JS
+    if baidu_id:
+        page_js += BAIDU_TRACKING_JS
 
     page = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -924,7 +920,7 @@ def build() -> Path:
   <title>热榜</title>
   <meta name="description" content="多平台热榜聚合">
   <link rel="canonical" href="{SITE_URL}news/">
-{ga_head_html(ga_id)}  <style>{sprite_css(card_icons)}{CSS}</style>
+{baidu_head_html(baidu_id)}  <style>{sprite_css(card_icons)}{CSS}</style>
 </head>
 <body>
   <main class="hot-page">

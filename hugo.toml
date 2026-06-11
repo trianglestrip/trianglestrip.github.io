@@ -67,9 +67,8 @@ pagerSize = 10
     themeColor = "#42b983"
 
   [params.analytics]
-    [params.analytics.google]
+    [params.analytics.baidu]
       id = ""
-      respectDoNotTrack = false
 
   [params.discussions]
     category = "博客"
