@@ -84,6 +84,21 @@ def attach_proxy(payload: dict) -> dict:
     return payload
 
 
+def normalize_streamget(payload: dict) -> dict:
+    play_url = payload.get("play_url") or payload.get("flv_url") or payload.get("m3u8_url") or ""
+    backup_urls = [item for item in (payload.get("backup_urls") or []) if item and item != play_url]
+    lines = []
+    if play_url:
+        lines.append({"name": "主线路", "url": play_url})
+    for index, url in enumerate(backup_urls, start=2):
+        lines.append({"name": f"备用{index}", "url": url})
+    if lines:
+        payload["streams"] = [{"name": payload.get("quality") or "默认", "lines": lines}]
+    payload["title"] = payload.get("anchor_name") or payload.get("title") or ""
+    payload["status"] = bool(payload.get("is_live"))
+    return payload
+
+
 def resolve_local(room: str, quality: str) -> dict:
     cmd = [sys.executable, str(ROOT / "resolve_douyu.py"), room, "--quality", quality]
     result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", check=False)
@@ -94,7 +109,7 @@ def resolve_local(room: str, quality: str) -> dict:
     payload["source"] = "streamget"
     payload["site"] = "douyu"
     payload["room_id"] = parse_room_id(room)
-    return payload
+    return normalize_streamget(payload)
 
 
 def resolve_muxia(site: str, room: str) -> dict:

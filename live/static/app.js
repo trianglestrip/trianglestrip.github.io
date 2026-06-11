@@ -1,6 +1,5 @@
-/* global FlvPlayer, LZString */
+/* global FlvPlayer */
 
-const MUXIA_API = "https://live.muxia.site/api/";
 const SITES = [
   { id: "douyu", name: "斗鱼", icon: "🐟", referer: "https://www.douyu.com/" },
   { id: "huya", name: "虎牙", icon: "🐯", referer: "https://www.huya.com/" },
@@ -10,7 +9,7 @@ const SITES = [
 
 const state = {
   site: "douyu",
-  source: "muxia",
+  source: "local",
   room: "9999",
   qualityIndex: 0,
   lineIndex: 0,
@@ -65,70 +64,19 @@ function renderSiteTabs() {
   }
 }
 
-async function fetchMuxiaRoom(site, roomId) {
-  const url = `${MUXIA_API}${site}/getRoomDetail?id=${encodeURIComponent(roomId)}`;
-  const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) throw new Error(`muxia HTTP ${res.status}`);
-  const raw = await res.text();
-  if (!raw) throw new Error("muxia 返回空响应");
-  const text = LZString.decompressFromBase64(raw);
-  if (!text) throw new Error("muxia 响应解码失败");
-  const payload = JSON.parse(text);
-  if (payload.code !== 200) throw new Error(payload.msg || "muxia API 错误");
-  return normalizeMuxia(site, roomId, payload.data);
-}
-
-function normalizeMuxia(site, roomId, data) {
-  const streams = (data.stream || [])
-    .map((item) => ({
-      name: item.name || "默认",
-      lines: (item.lines || [])
-        .filter((line) => line.url)
-        .map((line) => ({ name: line.name || "线路", url: line.url })),
-    }))
-    .filter((item) => item.lines.length > 0);
-
-  const firstUrl = streams[0]?.lines[0]?.url || "";
-  const backup = [];
-  for (const group of streams) {
-    for (const line of group.lines) backup.push(line.url);
-  }
-
-  return {
-    source: "muxia",
-    site,
-    room_id: roomId,
-    title: data.title || "",
-    anchor_name: data.nickname || data.title || "",
-    status: !!data.status,
-    is_live: !!data.status,
-    cover: data.cover || "",
-    streams,
-    play_url: firstUrl,
-    backup_urls: backup.filter((url) => url !== firstUrl),
-  };
-}
-
-async function fetchLocalRoom(site, room) {
+async function fetchRoom() {
+  const roomId = parseRoomId(els.room.value || state.room);
+  state.room = roomId;
   const params = new URLSearchParams({
-    site,
-    room,
-    source: "local",
+    site: state.site,
+    room: roomId,
+    source: state.source,
     quality: "OD",
   });
   const res = await fetch(`/api/room?${params.toString()}`, { cache: "no-store" });
   const data = await res.json();
   if (!res.ok || !data.ok) throw new Error(data.error || `HTTP ${res.status}`);
   return data;
-}
-
-async function fetchRoom() {
-  const roomId = parseRoomId(els.room.value || state.room);
-  state.room = roomId;
-  if (state.source === "muxia") {
-    return fetchMuxiaRoom(state.site, roomId);
-  }
-  return fetchLocalRoom(state.site, roomId);
 }
 
 function fillSelectors(payload) {
@@ -226,7 +174,7 @@ async function registerProxy(directUrl, payload) {
   return data;
 }
 
-function startPlayer(url, directUrl) {
+function startPlayer(url) {
   destroyPlayer();
   if (!window.FlvPlayer) {
     throw new Error("xgplayer-flv 未加载，请检查网络或刷新页面");
@@ -265,17 +213,10 @@ function startPlayer(url, directUrl) {
     const detail = err?.message || err?.type || "未知错误";
     setStatus(`播放出错: ${detail}\n可切换线路，或将播放方式改为「直连 CDN」`, false);
   });
-
-  state.player.on("play", () => {
-    setStatus(
-      (els.status.textContent || "") + "\n已开始播放",
-      true,
-    );
-  });
 }
 
 function updateRoomMeta(payload) {
-  els.roomTitle.textContent = payload.title || "未知标题";
+  els.roomTitle.textContent = payload.title || payload.anchor_name || "未知标题";
   els.roomAnchor.textContent = payload.anchor_name || payload.title || "";
   if (payload.cover) {
     els.roomCover.src = payload.cover;
@@ -291,7 +232,7 @@ function updateRoomMeta(payload) {
 
 async function playRoom() {
   destroyPlayer();
-  setStatus("正在解析房间…", true);
+  setStatus("正在通过本机服务解析…", true);
   try {
     let payload = await fetchRoom();
     if (!payload.is_live && !payload.status) {
@@ -313,12 +254,12 @@ async function playRoom() {
     }
 
     state.payload = payload;
-    startPlayer(playUrl, directUrl);
+    startPlayer(playUrl);
 
     const q = payload.streams?.[state.qualityIndex]?.name || "默认";
     const line = payload.streams?.[state.qualityIndex]?.lines?.[state.lineIndex]?.name || "";
     setStatus(
-      `解析源: ${payload.source} | ${q} / ${line}\n` +
+      `解析源: ${payload.source}（本机） | ${q} / ${line}\n` +
       `${state.useProxy ? "代理直播" : "直连 CDN"}: ${directUrl.slice(0, 100)}…`,
       true,
     );
@@ -353,6 +294,12 @@ function bindEvents() {
   });
 }
 
+function syncControls() {
+  els.source.value = state.source;
+  els.proxyMode.value = state.useProxy ? "proxy" : "direct";
+}
+
 renderSiteTabs();
+syncControls();
 bindEvents();
-setStatus("输入房间号后点击播放", true);
+setStatus("默认：本机 streamget 解析 + 代理播放，点击「播放」开始", true);
