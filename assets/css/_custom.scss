@@ -103,15 +103,13 @@
   font-size: 0.9rem;
 }
 
-// 参考 tophub.today：横向全屏多栏卡片
+// 参考 tophub.today：响应式多栏卡片，1920 屏一行最多 4 栏
 .hot-board {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.75rem;
-  width: 100vw;
-  max-width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding: 0 0.75rem;
+  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -119,7 +117,7 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  min-height: 22rem;
+  min-height: 20rem;
   border-radius: 0.5rem;
   background: var(--hot-card-bg, #fff);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
@@ -127,14 +125,41 @@
 }
 
 .hot-card__head {
-  padding: 0.7rem 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.65rem 0.75rem;
   border-bottom: 1px solid var(--hot-card-border, #eee);
   background: var(--hot-card-head-bg, #fafafa);
 }
 
+.hot-card__head-left {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.hot-card__head-right {
+  flex-shrink: 0;
+  color: var(--global-font-secondary-color, #999);
+  font-size: 0.72rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.hot-card__icon {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 0.2rem;
+}
+
 .hot-card__title {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   line-height: 1.35;
   white-space: nowrap;
@@ -207,14 +232,6 @@
   text-align: center;
 }
 
-.hot-card__foot {
-  padding: 0.45rem 0.65rem;
-  border-top: 1px solid var(--hot-card-border, #eee);
-  color: var(--global-font-secondary-color, #999);
-  font-size: 0.72rem;
-  text-align: center;
-}
-
 .hot-card__stale {
   color: #c97a1a;
 }
@@ -226,11 +243,21 @@
   --hot-card-row-border: rgba(255, 255, 255, 0.05);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .hot-board {
-    grid-template-columns: repeat(6, minmax(9.5rem, 1fr));
-    overflow-x: auto;
-    padding-bottom: 0.35rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .hot-board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .hot-board {
+    grid-template-columns: 1fr;
   }
 }
 
