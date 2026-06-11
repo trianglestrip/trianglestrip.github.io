@@ -162,26 +162,26 @@ body {
 }
 .hot-page { max-width: 100%; padding-bottom: 2rem; }
 .hot-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   width: 100vw;
   max-width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-bottom: 1.25rem;
-  padding: 1.25rem 1.5rem 1.5rem;
+  padding: 1rem 1.5rem 1.15rem;
   border-bottom: 1px solid var(--border);
-  background: var(--hot-header-bg, rgba(255, 255, 255, 0.72));
-  backdrop-filter: blur(8px);
+  background: var(--hot-header-bg, rgba(248, 249, 250, 0.92));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 @media (prefers-color-scheme: dark) {
-  .hot-header { --hot-header-bg: rgba(42, 43, 48, 0.85); }
+  .hot-header {
+    --hot-header-bg: rgba(27, 28, 32, 0.92);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  }
 }
-.hot-meta {
-  margin: 0 0 1rem;
-  color: var(--text-muted);
-  font-size: 0.82rem;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-.hot-meta--empty { color: #c97a1a; }
 .hot-nav {
   display: flex;
   flex-wrap: wrap;
@@ -424,17 +424,7 @@ JS = """
 
 def build() -> Path:
     cfg = load_json(DATA_DIR / "config.json")
-    meta_path = DATA_DIR / "meta.json"
-    run_meta = load_json(meta_path) if meta_path.exists() else None
     now = datetime.now(timezone.utc).astimezone()
-
-    updated_iso, updated_label = resolve_updated_at(cfg, run_meta, now)
-    meta_class = "" if updated_iso else " hot-meta--empty"
-    meta_time = (
-        f'<time datetime="{html.escape(updated_iso)}">{html.escape(updated_label)}</time>'
-        if updated_iso
-        else html.escape(updated_label)
-    )
 
     nav_buttons = ['<button type="button" class="hot-nav__btn is-active" data-filter="all">全部</button>']
     for cat in cfg.get("categories", []):
@@ -466,7 +456,6 @@ def build() -> Path:
 <body>
   <main class="hot-page">
     <header class="hot-header">
-      <p class="hot-meta{meta_class}">更新于 {meta_time}</p>
       <nav class="hot-nav" aria-label="热榜分类">{"".join(nav_buttons)}</nav>
     </header>
     <div class="hot-board">{"".join(cards)}</div>
