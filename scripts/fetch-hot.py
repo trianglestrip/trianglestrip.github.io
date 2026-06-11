@@ -421,6 +421,11 @@ def run(platform: str | None, force: bool) -> int:
             print(f"unchanged {name}")
 
     write_run_meta(changed=changed, fetched=fetched, skipped=skipped)
+
+    build_script = ROOT / "scripts" / "build-hot-html.py"
+    if build_script.exists():
+        subprocess.run([sys.executable, str(build_script)], check=False)
+
     print(f"done, changed={changed}")
     return 0
 

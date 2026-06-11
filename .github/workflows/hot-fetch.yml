@@ -40,14 +40,17 @@ jobs:
           fi
           python3 scripts/fetch-hot.py "${args[@]}"
 
-      - name: 提交缓存文件
+      - name: 生成热榜静态页
+        run: python3 scripts/build-hot-html.py
+
+      - name: 提交缓存与静态页
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/hot/*.json
+          git add data/hot/*.json static/news/index.html
           if git diff --staged --quiet; then
-            echo "no hot data changes"
+            echo "no hot changes"
             exit 0
           fi
-          git commit -m "chore(hot): update trending cache"
+          git commit -m "chore(hot): update trending cache and news page"
           git push
