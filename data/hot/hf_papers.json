@@ -1,0 +1,68 @@
+{
+  "source": "hf_papers",
+  "title": "HF 热门论文",
+  "updated_at": "2026-06-11T15:27:50+08:00",
+  "fetch_ok": true,
+  "items": [
+    {
+      "rank": 1,
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://huggingface.co/papers/2412.20138",
+      "hot": "91"
+    },
+    {
+      "rank": 2,
+      "title": "Agents' Last Exam",
+      "url": "https://huggingface.co/papers/2606.05405",
+      "hot": "207"
+    },
+    {
+      "rank": 3,
+      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
+      "url": "https://huggingface.co/papers/2606.03264",
+      "hot": "15"
+    },
+    {
+      "rank": 4,
+      "title": "Rethinking the Divergence Regularization in LLM RL",
+      "url": "https://huggingface.co/papers/2606.09821",
+      "hot": "27"
+    },
+    {
+      "rank": 5,
+      "title": "VibeVoice Technical Report",
+      "url": "https://huggingface.co/papers/2508.19205",
+      "hot": "172"
+    },
+    {
+      "rank": 6,
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "url": "https://huggingface.co/papers/2605.23904",
+      "hot": "225"
+    },
+    {
+      "rank": 7,
+      "title": "SCAIL-2: Unifying Controlled Character Animation with End-to-end In-Context Conditioning",
+      "url": "https://huggingface.co/papers/2606.10804",
+      "hot": "32"
+    },
+    {
+      "rank": 8,
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "165"
+    },
+    {
+      "rank": 9,
+      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+      "url": "https://huggingface.co/papers/2606.02800",
+      "hot": "113"
+    },
+    {
+      "rank": 10,
+      "title": "Latent Spatial Memory for Video World Models",
+      "url": "https://huggingface.co/papers/2606.09828",
+      "hot": "60"
+    }
+  ]
+}

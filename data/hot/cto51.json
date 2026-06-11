@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-11T14:16:47+08:00",
+  "updated_at": "2026-06-11T15:13:50+08:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "SIGIR 2026新作来了，DCGL重构知识增强推荐",
-      "url": "https://www.51cto.com/article/846038.html",
-      "hot": "LLM 语义不是万能增强剂。它适合补长尾、补冷启动、补 KG 缺失边、补隐式语义；但在高频用户/热门物品上，行为数据往往更精确。如果不区分场景，把语义和行为过早混合，反而会互相污染。"
-    },
-    {
-      "rank": 2,
-      "title": "Agent 用着用着就失忆？腾讯刚开源的这个方案，把 Token 账单砍了 61%",
-      "url": "https://www.51cto.com/article/846039.html",
-      "hot": "Agent 的能力上限不取决于模型有多强，而取决于它能不能记住和使用过去的经验。一个永远\"失忆\"的 Agent，用的模型再强也只是个高级搜索引擎。"
-    },
-    {
-      "rank": 3,
       "title": "Mythos 对阵 360 智能体：全球 AI 漏洞挖掘分化成两大技术路线",
       "url": "https://www.51cto.com/article/846045.html",
       "hot": "一场关于AI安全的讨论在海外金融科技媒体与社交平台上悄然升温。华尔街内参（StreetInsider）率先发文，X平台上的技术博主跟进热议，国际安全社区也随之沸腾——他们讨论的核心，是两个截然不同的AI安全名字：Anthropic的Mythos，以及中国360的漏洞挖掘智能体。"
     },
     {
-      "rank": 4,
+      "rank": 2,
       "title": "谷歌干掉了「等你说完才翻译」！70+语言边听边译",
       "url": "https://www.51cto.com/article/846046.html",
       "hot": "Google 发布 Gemini 3.5 Live Translate，把实时同传从「等你说完再翻」推进到「边听边说」，70+语言、几秒延迟、语气保留。"
     },
     {
-      "rank": 5,
+      "rank": 3,
       "title": "指令遵循媲美Seedance 2.0！复旦腾讯联合提出Baton，多说话人场景M-WER暴降76%",
       "url": "https://www.51cto.com/article/846047.html",
       "hot": "复旦&腾讯Hunyuan团队提出了Baton——首个基于显式语义蓝图引导的联合视频—音频生成框架。"
     },
     {
-      "rank": 6,
+      "rank": 4,
       "title": "Mythos阴影里谷歌悄悄发模型，速度暴涨四倍",
       "url": "https://www.51cto.com/article/846048.html",
       "hot": "把生成图片的扩散模型，拿来写文字了，而且一出手就是4倍加速。"
     },
     {
-      "rank": 7,
+      "rank": 5,
+      "title": "3D创作迎来ChatGPT时刻：Meshy发布全球首个3D AI Agent",
+      "url": "https://www.51cto.com/article/846049.html",
+      "hot": "他们率先在整个行业内把这个想法变成了现实——把3D创作带进Agent时代，推出了全球首个3D创作AI Agent：Meshy 3D Agent。"
+    },
+    {
+      "rank": 6,
       "title": "Anthropic CEO锐评AI现状和政策，但他只想保证自己的领先地位",
       "url": "https://www.51cto.com/article/846050.html",
       "hot": "Anthropic 总是试图将自己的观点传遍全世界。就像前些天他们呼吁全球停止 AI 研发，声称递归自我改进的 AI 进化过快。"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "ACL 2026 Oral｜语义推理如鲠在喉：大模型被「短语」难住了",
       "url": "https://www.51cto.com/article/846051.html",
       "hot": "来自北京通用人工智能研究院与北京科技大学的研究者提出了一个分析框架 SemanticQA，系统评估了模型在短语语义理解上的真实水平。"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "谷歌开源26B文本扩散MoE，劈柴：生成速度像赛马一样快",
       "url": "https://www.51cto.com/article/846052.html",
       "hot": "Gemmna 家族有了新成员 ——DiffusionGemma，一个探索文本扩散的实验性开源模型，在文本生成任务上速度极快。"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "HarmonyOS6 Canvas 绘图实战：手写签名、涂鸦画板、图片标注与头像裁剪",
       "url": "https://ost.51cto.com/posts/45855",
       "hot": "Canvas是HarmonyOS里最灵活的绘图工具&mdash;&mdash;任意形状、任意颜色、任意交互，全靠ctx.beginPath()+moveTo+lineTo一笔一笔画出来。但很多人写Ca..."
+    },
+    {
+      "rank": 10,
+      "title": "HarmonyOS 图表库mpchart 使用指南：从快速上手到项目实战",
+      "url": "https://ost.51cto.com/posts/45773",
+      "hot": "[toc](HarmonyOS图表库mpchart使用指南：从快速上手到项目实战)1.什么是mpchartmpchart（[ohosmpchart](https:ohpm.openharmony.cncndetail..."
     }
   ]
 }

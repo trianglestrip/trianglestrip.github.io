@@ -200,25 +200,65 @@ def fetch_nodeseek_rss(limit: int) -> list[dict]:
     return items
 
 
-def fetch_linuxdo_rss(limit: int) -> list[dict]:
-    text = http_get_text(
-        "https://linux.do/top.rss?period=weekly",
-        headers={
-            "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8",
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
-            ),
-        },
-    )
-    feed = feedparser.parse(text)
+def fetch_hf_trending(repo_type: str, limit: int) -> list[dict]:
+    data = http_get_json(f"https://huggingface.co/api/trending?type={repo_type}&limit={limit}")
+    if not isinstance(data, dict):
+        raise RuntimeError("invalid huggingface trending response")
+
     items: list[dict] = []
-    for entry in feed.entries[:limit]:
-        title = str(entry.get("title", "")).strip()
-        url = str(entry.get("link", "")).strip()
-        if not title or not url:
+    for entry in data.get("recentlyTrending") or []:
+        if not isinstance(entry, dict):
             continue
-        items.append({"title": title, "url": url, "hot": ""})
+        repo = entry.get("repoData")
+        if not isinstance(repo, dict):
+            continue
+        repo_id = str(repo.get("id", "")).strip()
+        if not repo_id:
+            continue
+        items.append(
+            {
+                "title": repo_id,
+                "url": f"https://huggingface.co/{repo_id}",
+                "hot": str(repo.get("likes", "")),
+            }
+        )
+        if len(items) >= limit:
+            break
+    return items
+
+
+def fetch_hf_trending_models(limit: int) -> list[dict]:
+    return fetch_hf_trending("model", limit)
+
+
+def fetch_hf_daily_papers(limit: int) -> list[dict]:
+    data = http_get_json(
+        "https://huggingface.co/api/daily_papers?limit=50&sort=trending&p=0"
+    )
+    papers_raw = data if isinstance(data, list) else data.get("papers") or data.get("results") or []
+    if not isinstance(papers_raw, list):
+        raise RuntimeError("invalid huggingface papers response")
+
+    items: list[dict] = []
+    for entry in papers_raw:
+        if not isinstance(entry, dict):
+            continue
+        paper = entry.get("paper")
+        if not isinstance(paper, dict):
+            paper = entry
+        title = str(paper.get("title", "")).strip()
+        paper_id = str(paper.get("id") or paper.get("arxivId") or "").strip()
+        if not title or not paper_id:
+            continue
+        items.append(
+            {
+                "title": title,
+                "url": f"https://huggingface.co/papers/{paper_id}",
+                "hot": str(paper.get("upvotes") or entry.get("numComments") or ""),
+            }
+        )
+        if len(items) >= limit:
+            break
     return items
 
 
@@ -248,8 +288,9 @@ CUSTOM_DRIVERS = {
     "jianshu_trending": fetch_jianshu_trending,
     "douban_group": fetch_douban_group,
     "nodeseek_rss": fetch_nodeseek_rss,
-    "linuxdo_rss": fetch_linuxdo_rss,
     "hackernews_api": fetch_hackernews_api,
+    "hf_trending_models": fetch_hf_trending_models,
+    "hf_daily_papers": fetch_hf_daily_papers,
 }
 
 

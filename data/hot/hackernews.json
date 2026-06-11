@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-11T14:38:13+08:00",
+  "updated_at": "2026-06-11T15:14:19+08:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI agent runs amok in Fedora and elsewhere",
-      "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
-      "hot": "316"
+      "title": "Pokémon Go Scans Trained the Navigation Tech for Military Drones",
+      "url": "https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/",
+      "hot": "32"
     },
     {
       "rank": 2,
-      "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
-      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
-      "hot": "361"
-    },
-    {
-      "rank": 3,
-      "title": "πFS",
-      "url": "https://github.com/philipl/pifs",
-      "hot": "665"
-    },
-    {
-      "rank": 4,
-      "title": "Anthropic requires 30 day data retention for Fable and Mythos",
-      "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
+      "title": "AI agent runs amok in Fedora and elsewhere",
+      "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
       "hot": "343"
     },
     {
+      "rank": 3,
+      "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+      "hot": "377"
+    },
+    {
+      "rank": 4,
+      "title": "πFS",
+      "url": "https://github.com/philipl/pifs",
+      "hot": "699"
+    },
+    {
       "rank": 5,
-      "title": "The Road to the WASM Component Model 1.0",
-      "url": "https://bytecodealliance.org/articles/the-road-to-component-model-1-0",
-      "hot": "56"
+      "title": "Anthropic requires 30 day data retention for Fable and Mythos",
+      "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
+      "hot": "365"
     },
     {
       "rank": 6,
-      "title": "Starfish by Peter Watts (1999)",
-      "url": "https://www.rifters.com/real/STARFISH.htm#prelude",
-      "hot": "11"
+      "title": "Macaroni – a single HTML file messenger",
+      "url": "https://github.com/vanyapr/makaroshki",
+      "hot": "8"
     },
     {
       "rank": 7,
-      "title": "Sequoyah’s syllabary created a written language for the Cherokee",
-      "url": "https://www.smithsonianmag.com/innovation/man-created-written-language-cherokee-did-efficiently-elegantly-peers-thought-magic-180988850/",
-      "hot": "140"
+      "title": "The Road to the WASM Component Model 1.0",
+      "url": "https://bytecodealliance.org/articles/the-road-to-component-model-1-0",
+      "hot": "63"
     },
     {
       "rank": 8,
-      "title": "Vacuum-Form Signage",
-      "url": "https://bethmathews.substack.com/p/the-history-behind-the-signs-lighting",
-      "hot": "53"
+      "title": "Reverse engineering the Creative Katana soundbar to control it from Linux",
+      "url": "https://blog.nns.ee/2026/02/20/katana-v2x-re/",
+      "hot": "33"
     },
     {
       "rank": 9,
-      "title": "I'm Eric Ries, author of \"The Lean Startup\" and new book \"Incorruptible\" – AMA",
-      "url": "https://news.ycombinator.com/item?id=48477135",
-      "hot": "611"
+      "title": "Sequoyah’s syllabary created a written language for the Cherokee",
+      "url": "https://www.smithsonianmag.com/innovation/man-created-written-language-cherokee-did-efficiently-elegantly-peers-thought-magic-180988850/",
+      "hot": "144"
     },
     {
       "rank": 10,
-      "title": "CSS: Unavoidable Bad Parts",
-      "url": "https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html",
-      "hot": "47"
+      "title": "Starfish by Peter Watts (1999)",
+      "url": "https://www.rifters.com/real/STARFISH.htm#prelude",
+      "hot": "16"
     }
   ]
 }
