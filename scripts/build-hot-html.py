@@ -166,6 +166,42 @@ def render_dock_icon(platform_id: str, meta: dict, dock_icons: dict | None) -> s
     )
 
 
+def category_platforms(order: list[str], platforms: dict, category_id: str) -> list[tuple[str, dict]]:
+    result: list[tuple[str, dict]] = []
+    for platform_id in order:
+        meta = platforms.get(platform_id)
+        if meta and str(meta.get("category", "")) == category_id:
+            result.append((platform_id, meta))
+    return result
+
+
+def render_nav(categories: list[dict], order: list[str], platforms: dict) -> str:
+    parts = ['<button type="button" class="hot-nav__btn is-active" data-filter="all">全部</button>']
+    for cat in categories:
+        category_id = str(cat.get("id", ""))
+        category_name = html.escape(str(cat.get("name", category_id)))
+        if not category_id:
+            continue
+        menu_html = ""
+        items = category_platforms(order, platforms, category_id)
+        if items:
+            links: list[str] = []
+            for platform_id, meta in items:
+                target_id = html.escape(f"hot-{platform_id}")
+                title = html.escape(str(meta.get("title") or platform_id))
+                links.append(
+                    f'<a class="hot-nav__menu-item" href="#{target_id}" role="menuitem" '
+                    f'data-target="{target_id}" data-category="{html.escape(category_id)}">{title}</a>'
+                )
+            menu_html = f'<div class="hot-nav__menu" role="menu">{"".join(links)}</div>'
+        parts.append(
+            f'<div class="hot-nav__group">'
+            f'<button type="button" class="hot-nav__btn" data-filter="{html.escape(category_id)}">'
+            f"{category_name}</button>{menu_html}</div>"
+        )
+    return "".join(parts)
+
+
 def render_dock(
     display_order: list[str],
     platforms: dict,
@@ -307,6 +343,7 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  overflow: visible;
 }
 .hot-dock-wrap {
   width: 100vw;
@@ -333,6 +370,10 @@ body {
   padding: 0.5rem;
   border-radius: 2rem;
   background: var(--hot-nav-bg, rgba(0, 0, 0, 0.04));
+  overflow: visible;
+}
+.hot-nav__group {
+  position: relative;
 }
 @media (prefers-color-scheme: dark) {
   .hot-nav { --hot-nav-bg: rgba(255, 255, 255, 0.06); }
@@ -363,6 +404,42 @@ body {
 .hot-nav__btn.is-active:hover {
   color: #fff;
   transform: translateY(-1px);
+}
+.hot-nav__menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  left: 50%;
+  z-index: 200;
+  min-width: 9.5rem;
+  max-width: 14rem;
+  max-height: 16rem;
+  overflow-y: auto;
+  padding: 0.35rem 0;
+  border: 1px solid var(--hot-card-border);
+  border-radius: 0.55rem;
+  background: var(--hot-card-bg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateX(-50%);
+}
+.hot-nav__group:hover .hot-nav__menu,
+.hot-nav__group:focus-within .hot-nav__menu {
+  display: block;
+}
+.hot-nav__menu-item {
+  display: block;
+  padding: 0.45rem 0.85rem;
+  color: inherit;
+  font-size: 0.86rem;
+  line-height: 1.35;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hot-nav__menu-item:hover {
+  color: var(--link);
+  background: rgba(66, 185, 131, 0.1);
 }
 .hot-dock {
   display: flex;
@@ -634,8 +711,23 @@ JS = """
     });
     try { localStorage.setItem(storageKey, filter); } catch (e) {}
   }
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => applyFilter(btn.dataset.filter || 'all'));
+  function scrollToCard(targetId, category) {
+    const card = document.getElementById(targetId);
+    if (!card) return;
+    if (category) applyFilter(category);
+    requestAnimationFrame(() => {
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+  nav.addEventListener('click', (event) => {
+    const menuItem = event.target.closest('.hot-nav__menu-item');
+    if (menuItem) {
+      event.preventDefault();
+      scrollToCard(menuItem.getAttribute('data-target'), menuItem.getAttribute('data-category'));
+      return;
+    }
+    const btn = event.target.closest('.hot-nav__btn');
+    if (btn) applyFilter(btn.dataset.filter || 'all');
   });
   let saved = 'all';
   try { saved = localStorage.getItem(storageKey) || 'all'; } catch (e) {}
@@ -728,14 +820,9 @@ def build() -> Path:
         if cat.get("id")
     }
 
-    nav_buttons = ['<button type="button" class="hot-nav__btn is-active" data-filter="all">全部</button>']
-    for cat in cfg.get("categories", []):
-        nav_buttons.append(
-            f'<button type="button" class="hot-nav__btn" data-filter="{html.escape(cat["id"])}">'
-            f'{html.escape(cat["name"])}</button>'
-        )
-
     platforms = cfg.get("platforms", {})
+    platform_order = cfg.get("order", [])
+    nav_html = render_nav(cfg.get("categories", []), platform_order, platforms)
     category_ids = [cat["id"] for cat in cfg.get("categories", []) if cat.get("id")]
     display_order = interleave_by_category(cfg.get("order", []), platforms, category_ids)
     cards = []
@@ -773,7 +860,7 @@ def build() -> Path:
 <body>
   <main class="hot-page">
     <header class="hot-header">
-      <nav class="hot-nav" aria-label="热榜分类">{"".join(nav_buttons)}</nav>
+      <nav class="hot-nav" aria-label="热榜分类">{nav_html}</nav>
     </header>
     {dock_html}
     <div class="hot-board">{"".join(cards)}</div>
