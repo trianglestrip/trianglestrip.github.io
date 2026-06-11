@@ -66,6 +66,11 @@ pagerSize = 10
     svgFavicon = "/favicon.svg"
     themeColor = "#42b983"
 
+  [params.analytics]
+    [params.analytics.google]
+      id = ""
+      respectDoNotTrack = false
+
   [params.discussions]
     category = "博客"
 

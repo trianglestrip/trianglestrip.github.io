@@ -5,15 +5,13 @@ from __future__ import annotations
 
 import html
 import json
-import subprocess
-import sys
+import tomllib
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "hot"
 OUTPUT = ROOT / "static" / "news" / "index.html"
-STUB_DIR = ROOT / "static" / "news" / "p"
 SITE_URL = "https://trianglestrip.github.io/"
 
 
@@ -99,10 +97,17 @@ def resolve_updated_at(cfg: dict, run_meta: dict | None, now: datetime) -> tuple
     return "", "暂无更新记录"
 
 
-def format_views(pv: int | None) -> str:
-    if pv is None:
+def load_ga_id() -> str:
+    hugo_path = ROOT / "hugo.toml"
+    if not hugo_path.exists():
         return ""
-    return f"{pv}次"
+    with hugo_path.open("rb") as fh:
+        data = tomllib.load(fh)
+    ga_id = data.get("params", {}).get("analytics", {}).get("google", {}).get("id", "")
+    if ga_id:
+        return str(ga_id).strip()
+    services_id = data.get("services", {}).get("googleAnalytics", {}).get("ID", "")
+    return str(services_id).strip() if services_id else ""
 
 
 def platform_home_url(meta: dict) -> str:
@@ -246,7 +251,6 @@ def render_card(
     *,
     category_names: dict[str, str],
     icons: dict | None,
-    views: dict[str, int | None] | None = None,
 ) -> str:
     title = html.escape(meta.get("title", platform_id))
     color = html.escape(meta.get("color", "#ccc"))
@@ -291,21 +295,16 @@ def render_card(
         head_right = '<span class="hot-card__stale">等待抓取</span>'
         body = '<p class="hot-card__empty">暂无数据</p>'
 
-    views_text = format_views((views or {}).get(platform_id))
-    views_html = (
-        f'<span class="hot-card__views" title="栏目访问次数">{html.escape(views_text)}</span>'
-        if views_text
-        else ""
-    )
+    platform_name = html.escape(str(meta.get("title") or platform_id))
     card_id = html.escape(f"hot-{platform_id}")
-    return f"""<section id="{card_id}" class="hot-card hot-card--{html.escape(platform_id)}" data-category="{category}" style="--hot-accent: {color}">
+    safe_platform_id = html.escape(platform_id)
+    return f"""<section id="{card_id}" class="hot-card hot-card--{html.escape(platform_id)}" data-category="{category}" data-platform-id="{safe_platform_id}" data-platform-name="{platform_name}" style="--hot-accent: {color}">
   <header class="hot-card__head">
     <div class="hot-card__head-left">
       <span class="hot-card__icon-box">{icon_html}</span>
       <h2 class="hot-card__title">
         <a class="hot-card__title-link" href="{home_url}" target="_blank" rel="noopener noreferrer">{card_title}</a>
         <span class="hot-card__category">{category_label}</span>
-        {views_html}
       </h2>
     </div>
     <div class="hot-card__head-right">{head_right}</div>
@@ -633,15 +632,6 @@ body {
   font-weight: 500;
   line-height: 1.3;
 }
-.hot-card__views {
-  flex-shrink: 0;
-  margin-left: auto;
-  padding-left: 0.35rem;
-  color: var(--text-muted);
-  font-size: 0.68rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
 .hot-card__list {
   flex: 1;
   margin: 0;
@@ -790,55 +780,46 @@ JS = """
     });
   });
 })();
+"""
+
+GA_TRACKING_JS = """
 (function () {
+  if (typeof gtag !== 'function') return;
   const seen = new Set();
   const observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (!entry.isIntersecting) return;
       const card = entry.target;
-      const id = (card.id || '').replace(/^hot-/, '');
-      if (!id || seen.has(id)) return;
-      seen.add(id);
-      const iframe = document.createElement('iframe');
-      iframe.setAttribute('aria-hidden', 'true');
-      iframe.setAttribute('tabindex', '-1');
-      iframe.style.cssText = 'position:absolute;width:0;height:0;border:0;opacity:0;pointer-events:none';
-      iframe.src = '/news/p/' + id + '.html';
-      document.body.appendChild(iframe);
+      const platformId = card.dataset.platformId;
+      if (!platformId || seen.has(platformId)) return;
+      seen.add(platformId);
+      gtag('event', 'hot_platform_view', {
+        platform_id: platformId,
+        platform_name: card.dataset.platformName || platformId,
+        category: card.dataset.category || ''
+      });
       observer.unobserve(card);
     });
   }, { rootMargin: '0px', threshold: 0.15 });
-  document.querySelectorAll('.hot-card[id^="hot-"]').forEach(function (card) {
+  document.querySelectorAll('.hot-card[data-platform-id]').forEach(function (card) {
     observer.observe(card);
   });
 })();
 """
 
 
-def write_stub_pages(platform_order: list[str], platforms: dict) -> None:
-    STUB_DIR.mkdir(parents=True, exist_ok=True)
-    for platform_id in platform_order:
-        meta = platforms.get(platform_id)
-        if not meta:
-            continue
-        title = html.escape(str(meta.get("title") or platform_id))
-        safe_id = html.escape(platform_id)
-        page = f"""<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="referrer" content="no-referrer-when-downgrade">
-  <title>访问统计 · {title}</title>
-  <link rel="canonical" href="{SITE_URL}news/p/{safe_id}.html">
-</head>
-<body>
-  <p><a href="/news/#hot-{safe_id}">返回热榜 · {title}</a></p>
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-</body>
-</html>
+def ga_head_html(ga_id: str) -> str:
+    if not ga_id:
+        return ""
+    safe_id = html.escape(ga_id)
+    return f"""  <script async src="https://www.googletagmanager.com/gtag/js?id={safe_id}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', '{safe_id}');
+  </script>
 """
-        (STUB_DIR / f"{platform_id}.html").write_text(page, encoding="utf-8")
 
 
 def sprite_css(icons: dict | None) -> str:
@@ -906,12 +887,7 @@ def build() -> Path:
 
     platforms = cfg.get("platforms", {})
     platform_order = cfg.get("order", [])
-    write_stub_pages(platform_order, platforms)
-
-    views_path = DATA_DIR / "views.json"
-    platform_views: dict[str, int | None] = {}
-    if views_path.exists():
-        platform_views = load_json(views_path).get("platforms", {})
+    ga_id = load_ga_id()
 
     nav_html = render_nav(cfg.get("categories", []), platform_order, platforms)
     category_ids = [cat["id"] for cat in cfg.get("categories", []) if cat.get("id")]
@@ -931,13 +907,14 @@ def build() -> Path:
                 now,
                 category_names=category_names,
                 icons=card_icons,
-                views=platform_views,
             )
         )
 
     dock_html = render_dock(display_order, platforms, icons_raw)
     dock_icons = icon_layer(icons_raw, "dock")
     page_js = JS + dock_sprite_js(dock_icons)
+    if ga_id:
+        page_js += GA_TRACKING_JS
 
     page = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -946,9 +923,8 @@ def build() -> Path:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>热榜</title>
   <meta name="description" content="多平台热榜聚合">
-  <meta name="referrer" content="no-referrer-when-downgrade">
   <link rel="canonical" href="{SITE_URL}news/">
-  <style>{sprite_css(card_icons)}{CSS}</style>
+{ga_head_html(ga_id)}  <style>{sprite_css(card_icons)}{CSS}</style>
 </head>
 <body>
   <main class="hot-page">
@@ -979,9 +955,6 @@ def build() -> Path:
 
 
 def main() -> int:
-    views_script = ROOT / "scripts" / "fetch-hot-views.py"
-    if views_script.exists():
-        subprocess.run([sys.executable, str(views_script)], check=False)
     path = build()
     print(f"built {path}")
     return 0
