@@ -13,6 +13,7 @@
 live/player/
   serve.py           # 本地 HTTP 服务（页面 + 纯解析 API）
   resolve_douyu.py   # streamget 斗鱼多档解析（CLI）
+  resolve_huya.py    # streamget 虎牙多档多线路解析（CLI）
   compare_streams.py # 对比逻辑（serve / CLI --compare 共用）
   muxia_api.py       # muxia 解析封装（对照用）
   player.html        # 播放页

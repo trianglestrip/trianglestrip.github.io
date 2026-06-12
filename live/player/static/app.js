@@ -7,6 +7,13 @@ const SITES = [
   { id: "douyin", name: "抖音", icon: "🎵" },
 ];
 
+const DEFAULT_ROOMS = {
+  douyu: "5720533",
+  huya: "579236",
+  bilibili: "",
+  douyin: "",
+};
+
 const PREFS_KEY = "live.player.prefs";
 
 const state = {
@@ -135,7 +142,10 @@ function renderSiteTabs() {
     btn.textContent = `${site.icon} ${site.name}`;
     btn.addEventListener("click", () => {
       state.site = site.id;
+      state.room = DEFAULT_ROOMS[site.id] || "";
+      state.payload = null;
       renderSiteTabs();
+      syncControls();
     });
     els.siteTabs.appendChild(btn);
   }

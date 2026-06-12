@@ -19,16 +19,24 @@ from resolve_cache import set as cache_set
 from resolve_douyu import normalize_url as douyu_normalize_url
 from resolve_douyu import resolve_all as douyu_resolve_all
 from resolve_douyu import resolve_douyu_lazy
+from resolve_huya import normalize_url as huya_normalize_url
+from resolve_huya import resolve_all as huya_resolve_all
+from resolve_huya import resolve_huya_lazy
 
 ROOT = Path(__file__).resolve().parent
-ROOM_RE = re.compile(r"(?:douyu\.com/)?(\d+)$")
+ROOM_RES = {
+    "douyu": re.compile(r"(?:douyu\.com/)?(\d+)$"),
+    "huya": re.compile(r"(?:huya\.com/)?(\d+)$"),
+}
 
 
-def parse_room_id(value: str) -> str:
+def parse_room_id(value: str, site: str = "douyu") -> str:
     text = value.strip()
     if text.isdigit():
         return text
-    match = ROOM_RE.search(text.replace("https://", "").replace("http://", ""))
+    cleaned = text.replace("https://", "").replace("http://", "")
+    pattern = ROOM_RES.get(site) or ROOM_RES["douyu"]
+    match = pattern.search(cleaned)
     if match:
         return match.group(1)
     raise ValueError(f"无效房间号: {value}")
@@ -39,30 +47,39 @@ def finalize_payload(payload: dict) -> dict:
     return payload
 
 
-def resolve_local(room: str, *, mode: str = "lazy", quality: str | None = None) -> dict:
-    room_id = parse_room_id(room)
-    url = douyu_normalize_url(room_id)
+def resolve_local(site: str, room: str, *, mode: str = "lazy", quality: str | None = None) -> dict:
+    room_id = parse_room_id(room, site)
     quality_key = (quality or "").strip() or "*"
-    cache_key = f"local:{room_id}:{mode}:{quality_key}"
+    cache_key = f"local:{site}:{room_id}:{mode}:{quality_key}"
     cached = cache_get(cache_key)
     if cached:
         cached["cached"] = True
         return cached
 
-    if mode == "full":
-        payload = asyncio.run(douyu_resolve_all(url))
+    if site == "huya":
+        url = huya_normalize_url(room_id)
+        if mode == "full":
+            payload = asyncio.run(huya_resolve_all(url))
+        else:
+            payload = asyncio.run(resolve_huya_lazy(url, quality_name=quality or None))
+    elif site == "douyu":
+        url = douyu_normalize_url(room_id)
+        if mode == "full":
+            payload = asyncio.run(douyu_resolve_all(url))
+        else:
+            payload = asyncio.run(resolve_douyu_lazy(url, quality_name=quality or None))
     else:
-        payload = asyncio.run(resolve_douyu_lazy(url, quality_name=quality or None))
+        raise ValueError(f"暂不支持平台: {site}")
 
     payload["source"] = "streamget"
-    payload["site"] = "douyu"
+    payload["site"] = site
     payload["room_id"] = room_id
     cache_set(cache_key, payload)
     return payload
 
 
 def resolve_muxia(site: str, room: str) -> dict:
-    room_id = parse_room_id(room)
+    room_id = parse_room_id(room, site)
     cache_key = f"muxia:{site}:{room_id}"
     cached = cache_get(cache_key)
     if cached:
@@ -75,9 +92,9 @@ def resolve_muxia(site: str, room: str) -> dict:
 
 
 def compare_room(site: str, room: str) -> dict:
-    room_id = parse_room_id(room)
+    room_id = parse_room_id(room, site)
     with ThreadPoolExecutor(max_workers=2) as pool:
-        local_future = pool.submit(resolve_local, room_id, mode="full")
+        local_future = pool.submit(resolve_local, site, room_id, mode="full")
         muxia_future = pool.submit(resolve_muxia, site, room_id)
         local = local_future.result()
         muxia = muxia_future.result()
@@ -147,7 +164,7 @@ class Handler(SimpleHTTPRequestHandler):
         site, room, source, mode, quality = self._query_room(parsed)
         try:
             if source == "local":
-                payload = resolve_local(room, mode=mode, quality=quality or None)
+                payload = resolve_local(site, room, mode=mode, quality=quality or None)
             else:
                 payload = resolve_muxia(site, room)
             if not payload.get("is_live") and not payload.get("status"):
@@ -186,7 +203,7 @@ class Handler(SimpleHTTPRequestHandler):
             else:
                 mode = str(data.get("mode") or query.get("mode", ["lazy"])[0])
                 quality = str(data.get("quality") or query.get("quality", [""])[0]) or None
-                payload = resolve_local(room, mode=mode, quality=quality)
+                payload = resolve_local(site, room, mode=mode, quality=quality)
             self._send_json(finalize_payload(payload))
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)

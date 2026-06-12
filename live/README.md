@@ -4,7 +4,7 @@
 
 | 子目录 | 说明 |
 |--------|------|
-| [player/](player/) | 斗鱼链接转 FLV 直链 + muxia 对比 + flv.js 播放（[转换说明](player/streamget-douyu.md)） |
+| [player/](player/) | 斗鱼 / 虎牙链接转 FLV 直链 + muxia 对比 + flv.js 播放（[斗鱼转换说明](player/streamget-douyu.md)） |
 
 ```powershell
 cd live/player
