@@ -7,14 +7,18 @@ import argparse
 import asyncio
 import json
 import re
+from concurrent.futures import ThreadPoolExecutor
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from compare_streams import compare_room_payloads
 from muxia_api import fetch_room, normalize_room
+from resolve_cache import get as cache_get
+from resolve_cache import set as cache_set
 from resolve_douyu import normalize_url as douyu_normalize_url
 from resolve_douyu import resolve_all as douyu_resolve_all
+from resolve_douyu import resolve_douyu_lazy
 
 ROOT = Path(__file__).resolve().parent
 ROOM_RE = re.compile(r"(?:douyu\.com/)?(\d+)$")
@@ -35,25 +39,48 @@ def finalize_payload(payload: dict) -> dict:
     return payload
 
 
-def resolve_local(room: str) -> dict:
+def resolve_local(room: str, *, mode: str = "lazy", quality: str | None = None) -> dict:
     room_id = parse_room_id(room)
-    payload = asyncio.run(douyu_resolve_all(douyu_normalize_url(room_id)))
+    url = douyu_normalize_url(room_id)
+    quality_key = (quality or "").strip() or "*"
+    cache_key = f"local:{room_id}:{mode}:{quality_key}"
+    cached = cache_get(cache_key)
+    if cached:
+        cached["cached"] = True
+        return cached
+
+    if mode == "full":
+        payload = asyncio.run(douyu_resolve_all(url))
+    else:
+        payload = asyncio.run(resolve_douyu_lazy(url, quality_name=quality or None))
+
     payload["source"] = "streamget"
     payload["site"] = "douyu"
     payload["room_id"] = room_id
+    cache_set(cache_key, payload)
     return payload
 
 
 def resolve_muxia(site: str, room: str) -> dict:
     room_id = parse_room_id(room)
+    cache_key = f"muxia:{site}:{room_id}"
+    cached = cache_get(cache_key)
+    if cached:
+        cached["cached"] = True
+        return cached
     data = fetch_room(site, room_id)
-    return normalize_room(site, room_id, data)
+    payload = normalize_room(site, room_id, data)
+    cache_set(cache_key, payload)
+    return payload
 
 
 def compare_room(site: str, room: str) -> dict:
     room_id = parse_room_id(room)
-    local = resolve_local(room_id)
-    muxia = resolve_muxia(site, room_id)
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        local_future = pool.submit(resolve_local, room_id, mode="full")
+        muxia_future = pool.submit(resolve_muxia, site, room_id)
+        local = local_future.result()
+        muxia = muxia_future.result()
     comparison = compare_room_payloads(local, muxia)
     return {
         "ok": True,
@@ -107,18 +134,20 @@ class Handler(SimpleHTTPRequestHandler):
             return {}
         return json.loads(body)
 
-    def _query_room(self, parsed) -> tuple[str, str, str]:
+    def _query_room(self, parsed) -> tuple[str, str, str, str, str]:
         query = parse_qs(parsed.query)
         site = query.get("site", ["douyu"])[0]
         room = query.get("room", query.get("id", ["9999"]))[0]
         source = query.get("source", ["local"])[0]
-        return site, room, source
+        mode = query.get("mode", ["lazy"])[0]
+        quality = query.get("quality", [""])[0]
+        return site, room, source, mode, quality
 
     def _api_room(self, parsed) -> None:
-        site, room, source = self._query_room(parsed)
+        site, room, source, mode, quality = self._query_room(parsed)
         try:
             if source == "local":
-                payload = resolve_local(room)
+                payload = resolve_local(room, mode=mode, quality=quality or None)
             else:
                 payload = resolve_muxia(site, room)
             if not payload.get("is_live") and not payload.get("status"):
@@ -129,7 +158,7 @@ class Handler(SimpleHTTPRequestHandler):
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 
     def _api_compare(self, parsed) -> None:
-        site, room, _ = self._query_room(parsed)
+        site, room, _, _, _ = self._query_room(parsed)
         try:
             payload = compare_room(site, room)
             if not payload["local"].get("is_live") and not payload["local"].get("status"):
@@ -155,7 +184,9 @@ class Handler(SimpleHTTPRequestHandler):
             if source == "muxia":
                 payload = resolve_muxia(site, room)
             else:
-                payload = resolve_local(room)
+                mode = str(data.get("mode") or query.get("mode", ["lazy"])[0])
+                quality = str(data.get("quality") or query.get("quality", [""])[0]) or None
+                payload = resolve_local(room, mode=mode, quality=quality)
             self._send_json(finalize_payload(payload))
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
@@ -197,7 +228,7 @@ def main() -> int:
 
     server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
     print(f"播放页: http://127.0.0.1:{args.port}/")
-    print("API: GET /api/room?source=local | GET /api/compare?room=<id>")
+    print("API: GET /api/room?mode=lazy&quality=<档名> | GET /api/compare?room=<id>")
     print("按 Ctrl+C 停止")
     try:
         server.serve_forever()

@@ -7,6 +7,8 @@ const SITES = [
   { id: "douyin", name: "抖音", icon: "🎵" },
 ];
 
+const PREFS_KEY = "live.player.prefs";
+
 const state = {
   site: "douyu",
   source: "local",
@@ -16,6 +18,7 @@ const state = {
   payload: null,
   player: null,
   loopActive: false,
+  loadingQuality: false,
 };
 
 const els = {
@@ -38,6 +41,25 @@ const els = {
   compareTable: document.getElementById("compareTable"),
 };
 
+function loadPrefs() {
+  try {
+    return JSON.parse(localStorage.getItem(PREFS_KEY) || "{}") || {};
+  } catch (_) {
+    return {};
+  }
+}
+
+function savePreferredQuality(name) {
+  if (!name) return;
+  const prefs = loadPrefs();
+  prefs.qualityName = name;
+  localStorage.setItem(PREFS_KEY, JSON.stringify(prefs));
+}
+
+function getPreferredQualityName() {
+  return (loadPrefs().qualityName || "").trim();
+}
+
 function setStatus(text, ok = true) {
   els.status.className = "status " + (ok ? "ok" : "err");
   els.status.textContent = text;
@@ -48,6 +70,61 @@ function parseRoomId(value) {
   if (/^\d+$/.test(text)) return text;
   const match = text.match(/(?:douyu|huya|bilibili|douyin)\.com\/([a-zA-Z0-9]+)/);
   return match ? match[1] : text;
+}
+
+function qualityNames(payload) {
+  const available = payload?.available_qualities || [];
+  if (available.length) {
+    return available.map((item) => item.name || String(item));
+  }
+  return (payload?.streams || []).map((item) => item.name || "默认");
+}
+
+function findQualityIndex(names, preferredName) {
+  if (!names.length) return 0;
+  if (preferredName) {
+    const exact = names.findIndex((name) => name === preferredName);
+    if (exact >= 0) return exact;
+    const fuzzy = names.findIndex(
+      (name) => name.includes(preferredName) || preferredName.includes(name)
+    );
+    if (fuzzy >= 0) return fuzzy;
+  }
+  const fallback = ["高清", "超清", "原画"];
+  for (const wanted of fallback) {
+    const index = names.findIndex((name) => name.includes(wanted));
+    if (index >= 0) return index;
+  }
+  return 0;
+}
+
+function streamByName(payload, name) {
+  return (payload?.streams || []).find((item) => item.name === name) || null;
+}
+
+function streamHasUrl(stream) {
+  const url = stream?.lines?.[0]?.url || "";
+  return !!url && !isBadPlayUrl(url);
+}
+
+function mergeStreamPayload(existing, incoming) {
+  const names = qualityNames(incoming);
+  const streams = [...(existing?.streams || [])];
+  for (const item of incoming.streams || []) {
+    const index = streams.findIndex((entry) => entry.name === item.name);
+    if (index >= 0) {
+      streams[index] = item;
+    } else {
+      streams.push(item);
+    }
+  }
+  return {
+    ...(existing || {}),
+    ...incoming,
+    streams,
+    available_qualities: incoming.available_qualities || existing?.available_qualities || [],
+    partial: incoming.partial ?? existing?.partial,
+  };
 }
 
 function renderSiteTabs() {
@@ -64,7 +141,7 @@ function renderSiteTabs() {
   }
 }
 
-async function fetchRoom() {
+async function fetchRoom(options = {}) {
   const roomId = parseRoomId(els.room.value || state.room);
   state.room = roomId;
   const params = new URLSearchParams({
@@ -72,6 +149,15 @@ async function fetchRoom() {
     room: roomId,
     source: state.source,
   });
+
+  if (state.source === "local") {
+    params.set("mode", options.mode || "lazy");
+    const quality = options.quality ?? getPreferredQualityName();
+    if (quality) params.set("quality", quality);
+  } else if (options.mode === "full") {
+    params.set("mode", "full");
+  }
+
   const res = await fetch(`/api/room?${params.toString()}`, { cache: "no-store" });
   const data = await res.json();
   if (!res.ok || !data.ok) throw new Error(data.error || `HTTP ${res.status}`);
@@ -88,21 +174,12 @@ async function fetchCompare() {
   return data;
 }
 
-function preferQualityIndex(streams) {
-  const wanted = ["高清", "超清", "原画"];
-  for (const name of wanted) {
-    const index = streams.findIndex((item) => (item.name || "").includes(name));
-    if (index >= 0) return index;
-  }
-  return 0;
-}
-
-function fillSelectors(payload) {
-  const streams = payload.streams || [];
+function fillSelectors(payload, options = {}) {
+  const names = qualityNames(payload);
   els.quality.innerHTML = "";
   els.line.innerHTML = "";
 
-  if (!streams.length) {
+  if (!names.length) {
     const opt = document.createElement("option");
     opt.textContent = "默认";
     opt.value = "0";
@@ -111,20 +188,21 @@ function fillSelectors(payload) {
     return;
   }
 
-  streams.forEach((item, index) => {
+  names.forEach((name, index) => {
     const opt = document.createElement("option");
     opt.value = String(index);
-    opt.textContent = item.name;
+    const loaded = streamHasUrl(streamByName(payload, name));
+    opt.textContent = loaded ? name : `${name}（待加载）`;
     els.quality.appendChild(opt);
   });
 
-  if (streams.length > 1) {
-    state.qualityIndex = preferQualityIndex(streams);
-  } else {
-    state.qualityIndex = Math.min(state.qualityIndex, streams.length - 1);
-  }
+  const preferred = options.preferredName || getPreferredQualityName();
+  state.qualityIndex = findQualityIndex(names, preferred);
   els.quality.value = String(state.qualityIndex);
-  fillLines(streams[state.qualityIndex]);
+
+  const currentName = names[state.qualityIndex];
+  const currentStream = streamByName(payload, currentName);
+  fillLines(currentStream || payload.streams?.[0] || { lines: [] });
 }
 
 function fillLines(stream) {
@@ -150,10 +228,11 @@ function isBadPlayUrl(url) {
 }
 
 function currentPlayUrl(payload) {
-  const streams = payload.streams || [];
-  if (streams.length) {
-    const stream = streams[state.qualityIndex] || streams[0];
-    const line = stream.lines[state.lineIndex] || stream.lines[0];
+  const names = qualityNames(payload);
+  const currentName = names[state.qualityIndex];
+  const stream = streamByName(payload, currentName) || payload.streams?.[state.qualityIndex];
+  if (stream) {
+    const line = stream.lines?.[state.lineIndex] || stream.lines?.[0];
     if (line?.url && !isBadPlayUrl(line.url)) return line.url;
   }
   for (const candidate of [payload.play_url, payload.m3u8_url, payload.flv_url]) {
@@ -239,6 +318,17 @@ function updateRoomMeta(payload) {
   els.liveBadge.className = "badge " + (live ? "live" : "");
 }
 
+function buildMetaText(payload, directUrl) {
+  const names = qualityNames(payload);
+  const q = names[state.qualityIndex] || "默认";
+  const line = payload.streams?.find((item) => item.name === q)?.lines?.[state.lineIndex]?.name
+    || payload.streams?.find((item) => item.name === q)?.lines?.[0]?.name
+    || "";
+  const sourceLabel = state.source === "local" ? "streamget（本机）" : "muxia";
+  const cacheLabel = payload.cached ? " · 缓存" : "";
+  return `解析源: ${sourceLabel}${cacheLabel} | ${q} / ${line}\nCDN: ${directUrl.slice(0, 120)}…`;
+}
+
 function renderCompare(data) {
   const cmp = data.compare || {};
   const rows = cmp.rows || [];
@@ -273,13 +363,45 @@ function renderCompare(data) {
   els.compareCard.hidden = false;
 }
 
+async function ensureQualityLoaded(qualityName) {
+  if (state.source !== "local") {
+    return state.payload;
+  }
+
+  const existing = streamByName(state.payload, qualityName);
+  if (streamHasUrl(existing)) {
+    return state.payload;
+  }
+
+  setStatus(`正在加载档位 ${qualityName}…`, true);
+  const incoming = await fetchRoom({ mode: "lazy", quality: qualityName });
+  state.payload = mergeStreamPayload(state.payload, incoming);
+  fillSelectors(state.payload, { preferredName: qualityName });
+  return state.payload;
+}
+
+async function playCurrentSelection() {
+  const names = qualityNames(state.payload);
+  const qualityName = names[state.qualityIndex];
+  if (!qualityName) throw new Error("未选择清晰度");
+
+  savePreferredQuality(qualityName);
+  const payload = await ensureQualityLoaded(qualityName);
+  updateRoomMeta(payload);
+
+  const directUrl = currentPlayUrl(payload);
+  if (!directUrl) throw new Error(`档位 ${qualityName} 暂无播放地址`);
+
+  playLive(directUrl, buildMetaText(payload, directUrl));
+}
+
 async function compareWithMuxia() {
   setStatus("正在解析本机 streamget 与 muxia…", true);
   try {
     const data = await fetchCompare();
     renderCompare(data);
     state.payload = data.local;
-    fillSelectors(data.local);
+    fillSelectors(data.local, { preferredName: getPreferredQualityName() });
     updateRoomMeta(data.local);
     const cmp = data.compare || {};
     setStatus(
@@ -295,29 +417,54 @@ async function compareWithMuxia() {
 
 async function playRoom() {
   destroyPlayer();
+  state.payload = null;
   setStatus("正在解析…", true);
   try {
-    const payload = await fetchRoom();
+    const preferred = getPreferredQualityName();
+    const payload = await fetchRoom({
+      mode: state.source === "local" ? "lazy" : "full",
+      quality: preferred || undefined,
+    });
+
     if (!payload.is_live && !payload.status) {
       updateRoomMeta(payload);
       throw new Error("房间未开播");
     }
 
-    fillSelectors(payload);
-    updateRoomMeta(payload);
-
-    const directUrl = currentPlayUrl(payload);
-    if (!directUrl) throw new Error("未获取到播放地址");
-
-    const q = payload.streams?.[state.qualityIndex]?.name || "默认";
-    const line = payload.streams?.[state.qualityIndex]?.lines?.[state.lineIndex]?.name || "";
-    const sourceLabel = state.source === "local" ? "streamget（本机）" : "muxia";
-    const metaText = `解析源: ${sourceLabel} | ${q} / ${line}\nCDN: ${directUrl.slice(0, 120)}…`;
-
     state.payload = payload;
-    playLive(directUrl, metaText);
+    fillSelectors(payload, { preferredName: preferred });
+    updateRoomMeta(payload);
+    await playCurrentSelection();
   } catch (err) {
     setStatus(`失败: ${err.message}`, false);
+  }
+}
+
+async function onQualityChange() {
+  if (state.loadingQuality) return;
+  state.loadingQuality = true;
+  try {
+    state.qualityIndex = Number(els.quality.value) || 0;
+    const names = qualityNames(state.payload);
+    const qualityName = names[state.qualityIndex];
+    if (!qualityName) return;
+
+    savePreferredQuality(qualityName);
+    const stream = streamByName(state.payload, qualityName);
+    fillLines(stream || { lines: [] });
+
+    if (!state.payload) {
+      await playRoom();
+      return;
+    }
+
+    setStatus(`切换到 ${qualityName}…`, true);
+    destroyPlayer();
+    await playCurrentSelection();
+  } catch (err) {
+    setStatus(`切换失败: ${err.message}`, false);
+  } finally {
+    state.loadingQuality = false;
   }
 }
 
@@ -332,16 +479,17 @@ function bindEvents() {
   els.stopBtn.addEventListener("click", stopPlay);
   els.source.addEventListener("change", () => {
     state.source = els.source.value;
+    state.payload = null;
   });
-  els.quality.addEventListener("change", () => {
-    state.qualityIndex = Number(els.quality.value) || 0;
-    const streams = state.payload?.streams || [];
-    fillLines(streams[state.qualityIndex]);
-    if (state.payload) playRoom();
-  });
+  els.quality.addEventListener("change", onQualityChange);
   els.line.addEventListener("change", () => {
     state.lineIndex = Number(els.line.value) || 0;
-    if (state.payload) playRoom();
+    if (state.payload) {
+      playCurrentSelection().catch((err) => setStatus(`切换线路失败: ${err.message}`, false));
+    }
+  });
+  els.room.addEventListener("change", () => {
+    state.payload = null;
   });
 }
 
@@ -353,4 +501,10 @@ function syncControls() {
 renderSiteTabs();
 syncControls();
 bindEvents();
-setStatus("默认 streamget 直连播放；点「对比 muxia」可核对档位与 FLV 文件名是否一致", true);
+const savedQuality = getPreferredQualityName();
+setStatus(
+  savedQuality
+    ? `默认档位：${savedQuality}（已记住，播放时仅解析该档）`
+    : "默认 streamget 懒加载播放；点「对比 muxia」可核对档位与 FLV 文件名",
+  true
+);

@@ -36,14 +36,17 @@ streamget install-node
 
 浏览器打开 http://127.0.0.1:8765/
 
-- **播放**：选 streamget，点「播放」→ 直连 douyucdn
-- **对比**：点「对比 muxia」→ 表格显示各档是否与 muxia 一致
+- **播放**：点「播放」→ 仅解析默认档（浏览器 localStorage 记住上次选的清晰度）
+- **切档**：换清晰度时再请求该档；已解析过的档 45s 内走服务端缓存
+- **对比**：点「对比 muxia」→ 全档解析并表格对比
 
 ## API
 
 | 端点 | 说明 |
 |------|------|
-| `GET /api/room?site=douyu&room=5720533&source=local` | streamget 纯解析 |
+| `GET /api/room?site=douyu&room=5720533&source=local` | streamget 懒加载（默认只解析一档） |
+| `GET /api/room?...&quality=超清` | 指定档位；45s 内同房间同档走服务端缓存 |
+| `GET /api/room?...&mode=full` | 一次解析全部档位（对比用） |
 | `GET /api/room?site=douyu&room=5720533&source=muxia` | muxia 解析（对照） |
 | `GET /api/compare?site=douyu&room=5720533` | 同时解析并对比 |
 | `POST /api/resolve` / `POST /api/compare` | 同上，JSON body |
