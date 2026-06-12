@@ -760,9 +760,6 @@ body {
   z-index: 200;
   min-width: 9.5rem;
   max-width: 14rem;
-  max-height: calc(16rem + 0.4rem);
-  overflow-x: hidden;
-  overflow-y: auto;
   padding: 0.4rem 0 0;
   margin: 0;
   border: none;
