@@ -720,8 +720,7 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   pointer-events: none;
 }
-.hot-nav__group.is-open .hot-nav__menu,
-.hot-nav__group:focus-within .hot-nav__menu {
+.hot-nav__group.is-open .hot-nav__menu {
   display: block;
 }
 .hot-nav__menu-item {
@@ -1125,6 +1124,10 @@ JS = """
     groups.forEach(function (group) {
       group.classList.remove('is-open');
     });
+    const active = document.activeElement;
+    if (active && nav.contains(active) && active.closest('.hot-nav__menu')) {
+      active.blur();
+    }
   }
   function applyFilter(filter) {
     cards.forEach((card) => {
@@ -1145,12 +1148,19 @@ JS = """
   }
   groups.forEach(function (group) {
     const menu = group.querySelector('.hot-nav__menu');
-    if (!menu || !canHover) return;
-    group.addEventListener('mouseenter', function () {
-      group.classList.add('is-open');
-    });
-    group.addEventListener('mouseleave', function () {
-      group.classList.remove('is-open');
+    if (!menu) return;
+    if (canHover) {
+      group.addEventListener('mouseenter', function () {
+        group.classList.add('is-open');
+      });
+      group.addEventListener('mouseleave', function () {
+        group.classList.remove('is-open');
+      });
+    }
+    group.addEventListener('focusout', function (event) {
+      if (!group.contains(event.relatedTarget)) {
+        group.classList.remove('is-open');
+      }
     });
   });
   nav.addEventListener('click', (event) => {
@@ -1158,6 +1168,7 @@ JS = """
     if (menuItem) {
       event.preventDefault();
       closeMenus();
+      if (menuItem instanceof HTMLElement) menuItem.blur();
       scrollToCard(menuItem.getAttribute('data-target'), menuItem.getAttribute('data-category'));
       return;
     }
