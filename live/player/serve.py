@@ -19,6 +19,15 @@ from resolve_service import resolve_room_sync
 
 ROOT = Path(__file__).resolve().parent
 WEB_ROOT = ROOT.parent / "web"
+WEB_DIST = WEB_ROOT / "dist"
+
+
+def resolve_web_root(web_root: Path) -> Path:
+    """优先托管 Vue 构建产物 dist/。"""
+    dist_index = web_root / "dist" / "index.html"
+    if dist_index.is_file():
+        return web_root / "dist"
+    return web_root
 ROOM_RES = {
     "douyu": re.compile(r"(?:douyu\.com/)?(\d+)$"),
     "huya": re.compile(r"(?:huya\.com/)?(\d+)$"),
@@ -120,15 +129,17 @@ class Handler(SimpleHTTPRequestHandler):
 
     def _serve_web(self, path: str) -> None:
         rel = path.lstrip("/") or "index.html"
+        root = self.web_root.resolve()
         target = (self.web_root / rel).resolve()
-        if not str(target).startswith(str(self.web_root.resolve())):
+        if not str(target).startswith(str(root)):
             self.send_error(403)
             return
         if target.is_dir():
             target = target / "index.html"
         if not target.is_file():
+            # Vue Router history：非静态资源回退 index.html
             fallback = self.web_root / "index.html"
-            if fallback.is_file():
+            if fallback.is_file() and not rel.startswith("api/"):
                 target = fallback
             else:
                 self.send_error(404)
@@ -242,11 +253,16 @@ def main() -> int:
     parser.add_argument("--web-root", type=Path, default=WEB_ROOT)
     args = parser.parse_args()
 
-    if not args.web_root.is_dir():
+    served_root = resolve_web_root(args.web_root)
+    if served_root != args.web_root:
+        print(f"前端: 使用构建产物 {served_root}")
+    elif not args.web_root.is_dir():
         print(f"警告: 前端目录不存在 {args.web_root}，仅提供 API 与 /legacy 调试页")
+    elif not (args.web_root / "index.html").is_file() and not (WEB_DIST / "index.html").is_file():
+        print(f"警告: 未找到 index.html，请先 cd live/web && npm run build")
 
     def handler_factory(*handler_args, **handler_kwargs):
-        return Handler(*handler_args, web_root=args.web_root, **handler_kwargs)
+        return Handler(*handler_args, web_root=served_root, **handler_kwargs)
 
     server = ThreadingHTTPServer(("127.0.0.1", args.port), handler_factory)
     print(f"Web 页面: http://127.0.0.1:{args.port}/")

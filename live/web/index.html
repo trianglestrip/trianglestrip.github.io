@@ -6,71 +6,9 @@
   <meta name="referrer" content="no-referrer">
   <title>Live · 聚合直播</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="/static/css/main.css">
-  <script src="https://cdn.jsdelivr.net/npm/flv.js@1.6.2/dist/flv.min.js"></script>
 </head>
 <body>
-  <div class="layout">
-    <header class="topbar">
-      <div class="brand">
-        <span class="brand-mark">🍋</span>
-        <div>
-          <h1>Live</h1>
-          <p>聚合直播 · streamget 解析</p>
-        </div>
-      </div>
-      <nav class="platforms" id="platformTabs" aria-label="平台"></nav>
-    </header>
-
-    <main class="stage">
-      <section class="player-panel">
-        <div class="player-frame">
-          <video id="player" controls playsinline></video>
-          <div id="playerPlaceholder" class="player-placeholder">
-            <span class="placeholder-icon">▶</span>
-            <p>输入房间号并点击播放</p>
-          </div>
-        </div>
-        <div class="room-bar">
-          <img id="roomCover" class="room-cover" alt="" hidden>
-          <div class="room-text">
-            <h2 id="roomTitle">等待播放</h2>
-            <p id="roomAnchor"></p>
-          </div>
-          <span id="liveBadge" class="pill">未开播</span>
-        </div>
-      </section>
-
-      <aside class="side-panel">
-        <div class="panel-block">
-          <label class="field-label" for="roomInput">房间号 / 链接</label>
-          <input id="roomInput" type="text" placeholder="例如 5720533" autocomplete="off">
-        </div>
-
-        <div class="panel-block row-2">
-          <div>
-            <label class="field-label" for="qualitySelect">清晰度</label>
-            <select id="qualitySelect" disabled></select>
-          </div>
-          <div>
-            <label class="field-label" for="lineSelect">线路</label>
-            <select id="lineSelect" disabled></select>
-          </div>
-        </div>
-
-        <div class="panel-block actions">
-          <button id="playBtn" class="btn btn-primary" type="button">播放</button>
-          <button id="stopBtn" class="btn" type="button">停止</button>
-        </div>
-
-        <div class="panel-block tips">
-          <p id="statusText" class="status">支持斗鱼、虎牙 FLV 直链播放</p>
-          <p class="hint">参考 <a href="https://lemonlive.deno.dev/" target="_blank" rel="noopener noreferrer">Lemon Live</a> 布局；解析走本机 API。</p>
-        </div>
-      </aside>
-    </main>
-  </div>
-
-  <script type="module" src="/static/js/app.js"></script>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
