@@ -57,13 +57,12 @@
               v-if="showPlayMask"
               type="button"
               class="play-unlock-mask"
-              :title="playMaskTitle"
+              title="点击播放"
               @click.stop="onPlayMaskClick"
             >
               <span class="play-unlock-mask__btn" aria-hidden="true">
                 <Icon name="play" class="play-unlock-mask__icon" />
               </span>
-              <span v-if="playMaskHint" class="play-unlock-mask__hint">{{ playMaskHint }}</span>
             </button>
           </div>
         </div>
@@ -119,6 +118,7 @@ const isFullscreen = ref(false);
 const pictureInPicture = ref(false);
 const hideControlsTimer = ref(null);
 const lastPlayedRoom = ref("");
+const playUrl = ref("");
 const headerReady = ref(false);
 const controlsReady = ref(false);
 const sideReady = ref(false);
@@ -154,15 +154,12 @@ const lineOpts = computed(() => lineOptions());
 const {
   playing,
   streamActive,
-  mutedAutoplay,
   muted,
   volume,
   destroy,
   playFlv,
+  startPlay,
   togglePlay,
-  pausePlayback,
-  resumePlayback,
-  unlockAutoplay,
   setVolume,
   toggleMute,
 } = usePlayer();
@@ -180,39 +177,34 @@ const notice = computed(() =>
   loading.value ? "加载中..." : statusKind.value === "err" ? statusText.value : "",
 );
 
-const showPlayMask = computed(() => {
-  if (!streamActive.value) return false;
-  return !playing.value || mutedAutoplay.value || muted.value;
-});
+const showPlayMask = computed(
+  () => !!payload.value && !loading.value && statusKind.value !== "err" && !streamActive.value,
+);
 
-const playMaskTitle = computed(() => {
-  if (playing.value && (mutedAutoplay.value || muted.value)) return "点击开启声音";
-  return "点击播放";
-});
+function onPlayMaskClick() {
+  const url = playUrl.value;
+  const videoEl = playerPanelRef.value?.videoEl;
+  if (!url || !videoEl) return;
 
-const playMaskHint = computed(() => {
-  if (mutedAutoplay.value || muted.value) {
-    return playing.value ? "浏览器限制，需点击开启声音" : "点击后开始播放并开启声音";
-  }
-  return "";
-});
-
-async function onPlayMaskClick() {
-  if (mutedAutoplay.value || muted.value) {
-    await unlockAutoplay();
-  } else if (!playing.value) {
-    await resumePlayback();
-  }
+  let firstReady = !danmakuReady.value;
+  playFlv(videoEl, url, {
+    site: siteRef.value,
+    onError: () => setStatus(`${buildMetaText(url)}\n播放出错`, "err"),
+    onReady: () => {
+      setStatus(`${buildMetaText(url)}\n播放中`, "ok");
+      document.title = displayTitle.value;
+      if (firstReady) onPlaybackReady();
+    },
+  });
+  startPlay();
   revealControls();
 }
 
 function onVideoShellClick(event) {
-  if (!streamActive.value || !playing.value) return;
+  if (!streamActive.value) return;
   const target = event.target;
   if (!(target instanceof Element)) return;
   if (target.closest(".player-controls, .play-unlock-mask, .play-overlay")) return;
-  pausePlayback();
-  showControls.value = true;
   revealControls();
 }
 
@@ -236,7 +228,6 @@ function runIdle(fn) {
   }
 }
 
-/** 起播后再挂载弹幕层、侧栏并连接 WS，避免与解析/拉流抢资源 */
 function onPlaybackReady() {
   danmakuReady.value = true;
   runIdle(() => {
@@ -258,6 +249,7 @@ function syncRouteState(site, id) {
   destroy();
   disconnectDm();
   payload.value = null;
+  playUrl.value = "";
   lastPlayedRoom.value = "";
   document.title = "Lemon live";
   scheduleDeferredChrome();
@@ -271,6 +263,13 @@ async function ensureVideoEl() {
   const el = playerPanelRef.value?.videoEl;
   if (!el) throw new Error("播放器未就绪");
   return el;
+}
+
+async function prefetchPlayUrl() {
+  const { url } = await resolvePlayUrl();
+  playUrl.value = url;
+  setStatus(`${buildMetaText(url)}\n点击播放`);
+  return url;
 }
 
 function onToggleDanmaku() {
@@ -326,26 +325,29 @@ async function onRefresh() {
   disconnectDm();
   danmakuReady.value = false;
   sideReady.value = false;
+  playUrl.value = "";
   try {
-    await startPlayback();
+    await loadRoom(roomInput.value);
+    await prefetchPlayUrl();
   } catch (err) {
     setStatus(`刷新失败: ${err.message}`, "err");
   }
 }
 
 async function startPlayback() {
-  const { url } = await resolvePlayUrl();
+  const url = await prefetchPlayUrl();
   const videoEl = await ensureVideoEl();
+  let firstReady = !danmakuReady.value;
   playFlv(videoEl, url, {
-    onError: () => setStatus(`${buildMetaText(url)}\n播放中断，可尝试切换线路`, "err"),
+    site: siteRef.value,
+    onError: () => setStatus(`${buildMetaText(url)}\n播放出错`, "err"),
     onReady: () => {
       setStatus(`${buildMetaText(url)}\n播放中`, "ok");
-      queueMicrotask(() => {
-        document.title = displayTitle.value;
-        onPlaybackReady();
-      });
+      document.title = displayTitle.value;
+      if (firstReady) onPlaybackReady();
     },
   });
+  await startPlay();
 }
 
 async function playRoom(room) {
@@ -354,8 +356,10 @@ async function playRoom(room) {
   destroy();
   disconnectDm();
   payload.value = null;
+  playUrl.value = "";
   try {
-    await loadRoom(room, { autoPlay: true, playFn: startPlayback });
+    await loadRoom(room);
+    await prefetchPlayUrl();
     lastPlayedRoom.value = room;
   } catch {
     lastPlayedRoom.value = "";
@@ -387,6 +391,8 @@ async function onQualityChange(index) {
   if (!payload.value || loading.value) return;
   setQuality(index);
   destroy();
+  disconnectDm();
+  danmakuReady.value = false;
   try {
     await startPlayback();
   } catch (err) {
@@ -537,8 +543,6 @@ onBeforeUnmount(() => {
   z-index: 3;
   display: grid;
   place-items: center;
-  align-content: center;
-  gap: .65rem;
   border: none;
   padding: 0;
   margin: 0;
@@ -574,12 +578,6 @@ onBeforeUnmount(() => {
   width: 42%;
   height: 42%;
   margin-left: .15em;
-}
-
-.play-unlock-mask__hint {
-  font-size: .85rem;
-  color: var(--text);
-  text-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 }
 
 .play-layout--webscreen .play-main {

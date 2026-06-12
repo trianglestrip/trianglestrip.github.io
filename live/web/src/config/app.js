@@ -46,11 +46,20 @@ export function getAppConfig() {
   return appConfig;
 }
 
+function localApiFallback() {
+  if (typeof window === "undefined") return "";
+  const { protocol, hostname } = window.location;
+  if (hostname === "127.0.0.1" || hostname === "localhost") {
+    return `${protocol}//${hostname}:8765`;
+  }
+  return "";
+}
+
 /** 生产：api.baseUrl；开发：api.devBaseUrl（空字符串则走 Vite /api 代理） */
 export function apiBase() {
   if (import.meta.env.DEV) {
     const dev = trimBase(appConfig.api?.devBaseUrl);
     return dev;
   }
-  return trimBase(appConfig.api?.baseUrl);
+  return trimBase(appConfig.api?.baseUrl) || localApiFallback();
 }

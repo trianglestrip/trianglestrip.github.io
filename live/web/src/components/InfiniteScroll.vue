@@ -1,5 +1,5 @@
 <template>
-  <div class="infinite-list">
+  <div ref="rootEl" class="infinite-list">
     <slot />
     <p v-if="loading" class="infinite-status">加载中...</p>
     <p v-else-if="finished" class="infinite-status">没有更多了</p>
@@ -9,35 +9,79 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref, watch } from "vue";
+import { nextTick, onBeforeUnmount, onMounted, ref, watch } from "vue";
 
 const props = defineProps({
   loading: { type: Boolean, default: false },
   finished: { type: Boolean, default: false },
   error: { type: Boolean, default: false },
   errorText: { type: String, default: "加载失败，点击重新加载" },
-  rootMargin: { type: String, default: "120px" },
+  rootMargin: { type: String, default: "160px" },
 });
 
 const emit = defineEmits(["load"]);
+const rootEl = ref(null);
 const sentinelEl = ref(null);
 let observer = null;
+let scrollRoot = null;
+
+function findScrollRoot(el) {
+  let node = el?.parentElement;
+  while (node) {
+    const style = getComputedStyle(node);
+    const overflowY = style.overflowY;
+    if (overflowY === "auto" || overflowY === "scroll") {
+      return node;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
 
 function tryLoad() {
   if (props.loading || props.finished || props.error) return;
   emit("load");
 }
 
-function setupObserver() {
+function onScroll() {
+  if (!sentinelEl.value || props.loading || props.finished || props.error) return;
+  const root = scrollRoot || findScrollRoot(sentinelEl.value);
+  if (!root) return;
+  const sentinelRect = sentinelEl.value.getBoundingClientRect();
+  const rootRect = root.getBoundingClientRect();
+  if (sentinelRect.top <= rootRect.bottom + 80) {
+    tryLoad();
+  }
+}
+
+function bindScrollRoot() {
+  if (scrollRoot) {
+    scrollRoot.removeEventListener("scroll", onScroll);
+    scrollRoot = null;
+  }
+  const el = sentinelEl.value || rootEl.value;
+  if (!el) return;
+  scrollRoot = findScrollRoot(el);
+  if (scrollRoot) {
+    scrollRoot.addEventListener("scroll", onScroll, { passive: true });
+  }
+}
+
+async function setupObserver() {
   teardownObserver();
-  if (!sentinelEl.value || props.finished || props.error) return;
+  await nextTick();
+  if (!sentinelEl.value || props.finished || props.error || props.loading) return;
+
+  bindScrollRoot();
+  const root = scrollRoot ?? null;
   observer = new IntersectionObserver(
     (entries) => {
       if (entries.some((entry) => entry.isIntersecting)) tryLoad();
     },
-    { root: null, rootMargin: props.rootMargin, threshold: 0 },
+    { root, rootMargin: props.rootMargin, threshold: 0 },
   );
   observer.observe(sentinelEl.value);
+  onScroll();
 }
 
 function teardownObserver() {
@@ -45,9 +89,15 @@ function teardownObserver() {
     observer.disconnect();
     observer = null;
   }
+  if (scrollRoot) {
+    scrollRoot.removeEventListener("scroll", onScroll);
+    scrollRoot = null;
+  }
 }
 
-onMounted(setupObserver);
+onMounted(() => {
+  setupObserver();
+});
 onBeforeUnmount(teardownObserver);
 
 watch(

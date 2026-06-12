@@ -48,6 +48,7 @@ export function useBrowse(siteRef) {
     } finally {
       loadingRooms.value = false;
     }
+    if (reset) await prefetchUntil();
   }
 
   async function loadCategoryRooms(category, reset = true) {
@@ -75,6 +76,7 @@ export function useBrowse(siteRef) {
     } finally {
       loadingRooms.value = false;
     }
+    if (reset) await prefetchUntil();
   }
 
   async function loadMore() {
@@ -84,6 +86,13 @@ export function useBrowse(siteRef) {
       await loadCategoryRooms(activeCategory.value, false);
     } else {
       await loadRecommend(false);
+    }
+  }
+
+  /** 首屏不足时自动预取，避免哨兵在滚动容器外无法触发 */
+  async function prefetchUntil(minItems = 24) {
+    while (hasMore.value && rooms.value.length < minItems && !loadingRooms.value) {
+      await loadMore();
     }
   }
 
