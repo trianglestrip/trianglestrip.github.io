@@ -1,6 +1,6 @@
 # Live 发布目录
 
-运行 `live/package-dist.ps1` 生成，**无需 Python**，仅需 Windows。
+运行 `live/package-dist.ps1` 可重新生成；**本目录已纳入 git**，克隆后可直接 `start-all.bat` 部署，无需再打包。
 
 | 目录 | 内容 |
 |------|------|
