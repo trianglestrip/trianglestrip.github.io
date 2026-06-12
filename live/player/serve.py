@@ -21,6 +21,7 @@ from muxia_api import (
 )
 from resolve_cache import get as cache_get
 from resolve_cache import set as cache_set
+from resolve_cache import stats as cache_stats
 from resolve_service import resolve_room_sync
 
 ROOT = Path(__file__).resolve().parent
@@ -112,9 +113,9 @@ def finalize_payload(payload: dict) -> dict:
     return payload
 
 
-def resolve_local(site: str, room: str, *, mode: str = "lazy", quality: str | None = None) -> dict:
+def resolve_local(site: str, room: str, *, mode: str = "lazy", quality: str | None = None, force: bool = False) -> dict:
     room_id = parse_room_id(room, site)
-    return resolve_room_sync(site, room_id, mode=mode, quality=quality)
+    return resolve_room_sync(site, room_id, mode=mode, quality=quality, force=force)
 
 
 def resolve_muxia(site: str, room: str) -> dict:
@@ -270,6 +271,7 @@ class Handler(SimpleHTTPRequestHandler):
             "mode": "dist" if web_root else "build-required",
             "dist_index": str(dist_index) if dist_index.is_file() else None,
             "browse_api": True,
+            "resolve_cache": cache_stats(),
         }
         self._send_json(payload)
 
@@ -280,20 +282,21 @@ class Handler(SimpleHTTPRequestHandler):
             return {}
         return json.loads(body)
 
-    def _query_room(self, parsed) -> tuple[str, str, str, str, str]:
+    def _query_room(self, parsed) -> tuple[str, str, str, str, str, bool]:
         query = parse_qs(parsed.query)
         site = query.get("site", ["douyu"])[0]
         room = query.get("room", query.get("id", ["9999"]))[0]
         source = query.get("source", ["local"])[0]
         mode = query.get("mode", ["lazy"])[0]
         quality = query.get("quality", [""])[0]
-        return site, room, source, mode, quality
+        force = query.get("force", ["0"])[0].lower() in ("1", "true", "yes")
+        return site, room, source, mode, quality, force
 
     def _api_room(self, parsed) -> None:
-        site, room, source, mode, quality = self._query_room(parsed)
+        site, room, source, mode, quality, force = self._query_room(parsed)
         try:
             if source == "local":
-                payload = resolve_local(site, room, mode=mode, quality=quality or None)
+                payload = resolve_local(site, room, mode=mode, quality=quality or None, force=force)
             else:
                 payload = resolve_muxia(site, room)
             if not payload.get("is_live") and not payload.get("status"):
@@ -353,7 +356,7 @@ class Handler(SimpleHTTPRequestHandler):
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 
     def _api_compare(self, parsed) -> None:
-        site, room, _, _, _ = self._query_room(parsed)
+        site, room, _, _, _, _ = self._query_room(parsed)
         try:
             payload = compare_room(site, room)
             if not payload["local"].get("is_live") and not payload["local"].get("status"):

@@ -1,8 +1,10 @@
-"""统一解析入口：meta / tier 分层缓存 + 多平台调度。"""
+"""统一解析入口：meta / tier 分层缓存 + 多平台调度 + 耗时统计。"""
 
 from __future__ import annotations
 
 import asyncio
+import threading
+import time
 from typing import Callable
 
 from resolve_cache import get_meta, get_payload, get_tier, set_meta, set_payload, set_tier
@@ -37,11 +39,45 @@ SITE_NORMALIZE_URL: dict[str, Callable[[str], str]] = {
 }
 
 
+class _AsyncLoopRunner:
+    """HTTP 线程复用同一事件循环，避免每次 asyncio.run 冷启动。"""
+
+    def __init__(self) -> None:
+        self._loop = asyncio.new_event_loop()
+        self._thread = threading.Thread(target=self._run, name="resolve-async-loop", daemon=True)
+        self._thread.start()
+
+    def _run(self) -> None:
+        asyncio.set_event_loop(self._loop)
+        self._loop.run_forever()
+
+    def run(self, coro):
+        future = asyncio.run_coroutine_threadsafe(coro, self._loop)
+        return future.result()
+
+
+_runner: _AsyncLoopRunner | None = None
+_runner_lock = threading.Lock()
+
+
+def _get_runner() -> _AsyncLoopRunner:
+    global _runner
+    if _runner is None:
+        with _runner_lock:
+            if _runner is None:
+                _runner = _AsyncLoopRunner()
+    return _runner
+
+
 def normalize_room_url(site: str, room_id: str) -> str:
     normalizer = SITE_NORMALIZE_URL.get(site)
     if not normalizer:
         raise ValueError(f"暂不支持平台: {site}")
     return normalizer(room_id)
+
+
+def _ms_since(start: float) -> int:
+    return int((time.perf_counter() - start) * 1000)
 
 
 async def fetch_meta(site: str, room_id: str, *, force: bool = False) -> dict:
@@ -61,11 +97,12 @@ async def fetch_meta(site: str, room_id: str, *, force: bool = False) -> dict:
     return meta
 
 
-async def fetch_tier(site: str, room_id: str, meta: dict, quality_name: str) -> dict:
-    cached = get_tier(site, room_id, quality_name)
-    if cached:
-        cached["cached_tier"] = True
-        return cached
+async def fetch_tier(site: str, room_id: str, meta: dict, quality_name: str, *, force: bool = False) -> dict:
+    if not force:
+        cached = get_tier(site, room_id, quality_name)
+        if cached:
+            cached["cached_tier"] = True
+            return cached
 
     resolver = SITE_RESOLVE_TIER.get(site)
     if not resolver:
@@ -82,28 +119,54 @@ async def resolve_room(
     *,
     mode: str = "lazy",
     quality: str | None = None,
+    force: bool = False,
 ) -> dict:
-    quality_key = (quality or "").strip() or "*"
-    cached = get_payload(site, room_id, mode, quality_key)
-    if cached:
-        cached["cached"] = True
-        return cached
+    t0 = time.perf_counter()
+    timing: dict = {
+        "total_ms": 0,
+        "meta_ms": 0,
+        "tier_ms": 0,
+        "payload_cached": False,
+        "meta_cached": False,
+        "tier_cached": False,
+    }
 
-    meta = await fetch_meta(site, room_id)
+    quality_key = (quality or "").strip() or "*"
+    if not force:
+        cached = get_payload(site, room_id, mode, quality_key)
+        if cached:
+            cached["cached"] = True
+            timing["payload_cached"] = True
+            timing["total_ms"] = _ms_since(t0)
+            cached["_timing"] = timing
+            return cached
+
+    t_meta = time.perf_counter()
+    meta = await fetch_meta(site, room_id, force=force)
+    timing["meta_ms"] = _ms_since(t_meta)
+    timing["meta_cached"] = bool(meta.get("cached_meta"))
+
     if mode == "full":
+        t_tier = time.perf_counter()
         resolver = SITE_RESOLVE_ALL_TIERS.get(site)
         if not resolver:
             raise ValueError(f"暂不支持平台: {site}")
         tiers = await resolver(meta)
+        timing["tier_ms"] = _ms_since(t_tier)
         payload = build_room_payload(meta, tiers, source="streamget")
     else:
         quality_item = pick_quality_name(meta["available_qualities"], quality)
         tier_name = str(quality_item.get("name") or quality or "默认")
-        tier = await fetch_tier(site, room_id, meta, tier_name)
+        t_tier = time.perf_counter()
+        tier = await fetch_tier(site, room_id, meta, tier_name, force=force)
+        timing["tier_ms"] = _ms_since(t_tier)
+        timing["tier_cached"] = bool(tier.get("cached_tier"))
         payload = build_room_payload(meta, [tier], partial=True, active_quality=tier_name, source="streamget")
 
     payload["source"] = "streamget"
     set_payload(site, room_id, mode, quality_key, payload)
+    timing["total_ms"] = _ms_since(t0)
+    payload["_timing"] = timing
     return payload
 
 
@@ -113,5 +176,8 @@ def resolve_room_sync(
     *,
     mode: str = "lazy",
     quality: str | None = None,
+    force: bool = False,
 ) -> dict:
-    return asyncio.run(resolve_room(site, room_id, mode=mode, quality=quality))
+    return _get_runner().run(
+        resolve_room(site, room_id, mode=mode, quality=quality, force=force),
+    )
