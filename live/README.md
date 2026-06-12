@@ -27,7 +27,7 @@ cd live
 - API：http://127.0.0.1:8765
 - 前端：http://127.0.0.1:8080/live/
 
-也可直接运行 `dist\start-all.bat`，或分别 `dist\server\start.bat`、`dist\web\start.bat`。
+也可分别运行 `dist\server\start.bat`、`dist\web\start.bat`；停止用 `.\stop.bat`。
 
 ## 开发模式（源码）
 

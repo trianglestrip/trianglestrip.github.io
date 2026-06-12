@@ -17,7 +17,9 @@ call :killport 8765
 call :killport 8080
 timeout /t 1 /nobreak >nul
 
-call "%DIST%start-all.bat"
+start "Live API" cmd /k "%DIST%server\start.bat"
+timeout /t 2 /nobreak >nul
+start "Live Web" cmd /k "%DIST%web\start.bat"
 echo.
 echo 已启动（请用带 /live/ 的地址打开前端）：
 echo   API:  http://127.0.0.1:8765
