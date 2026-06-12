@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-11T23:08:47+00:00",
+  "updated_at": "2026-06-12T05:52:40+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,21 +12,21 @@
     },
     {
       "rank": 2,
-      "title": "Agents' Last Exam",
-      "url": "https://huggingface.co/papers/2606.05405",
-      "hot": "280"
-    },
-    {
-      "rank": 3,
       "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
       "url": "https://huggingface.co/papers/2606.03264",
       "hot": "15"
     },
     {
+      "rank": 3,
+      "title": "Agents' Last Exam",
+      "url": "https://huggingface.co/papers/2606.05405",
+      "hot": "309"
+    },
+    {
       "rank": 4,
       "title": "Rethinking the Divergence Regularization in LLM RL",
       "url": "https://huggingface.co/papers/2606.09821",
-      "hot": "28"
+      "hot": "29"
     },
     {
       "rank": 5,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "url": "https://huggingface.co/papers/2605.23904",
+      "hot": "227"
+    },
+    {
+      "rank": 7,
+      "title": "SCAIL-2: Unifying Controlled Character Animation with End-to-end In-Context Conditioning",
+      "url": "https://huggingface.co/papers/2606.10804",
+      "hot": "38"
+    },
+    {
+      "rank": 8,
       "title": "VibeVoice Technical Report",
       "url": "https://huggingface.co/papers/2508.19205",
       "hot": "172"
     },
     {
-      "rank": 7,
-      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
-      "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "226"
-    },
-    {
-      "rank": 8,
+      "rank": 9,
       "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
       "url": "https://huggingface.co/papers/2509.22186",
       "hot": "165"
     },
     {
-      "rank": 9,
-      "title": "SCAIL-2: Unifying Controlled Character Animation with End-to-end In-Context Conditioning",
-      "url": "https://huggingface.co/papers/2606.10804",
-      "hot": "37"
-    },
-    {
       "rank": 10,
-      "title": "Toward Generalist Autonomous Research via Hypothesis-Tree Refinement",
-      "url": "https://huggingface.co/papers/2606.11926",
-      "hot": "68"
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "40"
     }
   ]
 }

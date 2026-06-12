@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-12T03:44:53+00:00",
+  "updated_at": "2026-06-12T05:52:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": ":fire: Agent Talents 是啥？与 Agent Skills 啥区别？",
+      "url": "https://www.oschina.net/news/457350",
+      "hot": "Fri, 12 Jun 2026 13:51:24 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Zed 宣布正在开发 DeltaDB，一次“去 Git 化”的版本控制实验",
+      "url": "https://www.oschina.net/news/457294/zed-deltadb",
+      "hot": "Fri, 12 Jun 2026 11:56:00 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Khronos 发布 glTF 2.1",
+      "url": "https://www.oschina.net/news/457285/gltf-2-1-with-complex-scenes",
+      "hot": "Fri, 12 Jun 2026 11:36:47 +0800"
+    },
+    {
+      "rank": 4,
       "title": "Git 2.55-rc0 版本发布，默认启用 Rust",
       "url": "https://www.oschina.net/news/457283/git-2-55-rc0",
       "hot": "Fri, 12 Jun 2026 11:33:04 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "AI 生成网站正在“Tailwind 化”",
       "url": "https://www.oschina.net/news/457263",
       "hot": "Fri, 12 Jun 2026 11:31:19 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "VirtualEnv 21.4.3 发布，Python 虚拟环境",
       "url": "https://www.oschina.net/news/457093/virtualenv-21-4-3-released",
       "hot": "Fri, 12 Jun 2026 11:23:11 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "MagicWorld 实现长时交互视频世界建模",
       "url": "https://my.oschina.net/vivotech/blog/19701291",
       "hot": "Fri, 12 Jun 2026 11:13:05 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Recursive 公布自动化 AI 研究首批成果，三项基准测试均超越此前最优",
       "url": "https://www.oschina.net/news/456701",
       "hot": "Fri, 12 Jun 2026 11:04:08 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "Inspektor Gadget 完成首次安全审计：未发现高危漏洞",
       "url": "https://www.oschina.net/news/456532",
       "hot": "Fri, 12 Jun 2026 10:51:17 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Homebrew 6.0.0 发布：第三方 Tap 需信任授权、JSON API 提速、Linux 沙箱全面对齐 macOS",
       "url": "https://www.oschina.net/news/456530/homebrew-6-0-0",
       "hot": "Fri, 12 Jun 2026 10:48:37 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "MuseScore 4.7.3 发布",
-      "url": "https://www.oschina.net/news/456521/musescore-4-7-3-released",
-      "hot": "Fri, 12 Jun 2026 10:41:13 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Apache Burr：让 AI Agent 应用的开发、追踪和持久化变得简单",
-      "url": "https://www.oschina.net/news/456237",
-      "hot": "Thu, 11 Jun 2026 19:18:11 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Perplexity 与哈佛联合发布研究：AI Agent 如何重塑知识工作",
-      "url": "https://www.oschina.net/news/456209",
-      "hot": "Thu, 11 Jun 2026 18:34:04 +0800"
     }
   ]
 }

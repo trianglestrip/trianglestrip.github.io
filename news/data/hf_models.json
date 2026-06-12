@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-11T23:08:47+00:00",
+  "updated_at": "2026-06-12T05:52:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "nvidia/LocateAnything-3B",
       "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "1868"
+      "hot": "1885"
     },
     {
       "rank": 2,
       "title": "google/diffusiongemma-26B-A4B-it",
       "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "hot": "475"
+      "hot": "515"
     },
     {
       "rank": 3,
       "title": "google/gemma-4-12B-it",
       "url": "https://huggingface.co/google/gemma-4-12B-it",
-      "hot": "939"
+      "hot": "943"
     },
     {
       "rank": 4,
-      "title": "bosonai/higgs-audio-v3-tts-4b",
-      "url": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
-      "hot": "354"
+      "title": "CohereLabs/North-Mini-Code-1.0",
+      "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0",
+      "hot": "309"
     },
     {
       "rank": 5,
-      "title": "CohereLabs/North-Mini-Code-1.0",
-      "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0",
-      "hot": "305"
+      "title": "bosonai/higgs-audio-v3-tts-4b",
+      "url": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
+      "hot": "366"
     },
     {
       "rank": 6,
-      "title": "nvidia/nemotron-3.5-asr-streaming-0.6b",
-      "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
-      "hot": "372"
+      "title": "ideogram-ai/ideogram-4-fp8",
+      "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8",
+      "hot": "488"
     },
     {
       "rank": 7,
-      "title": "ideogram-ai/ideogram-4-fp8",
-      "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8",
-      "hot": "483"
+      "title": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+      "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+      "hot": "374"
     },
     {
       "rank": 8,
       "title": "unsloth/gemma-4-12b-it-GGUF",
       "url": "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF",
-      "hot": "561"
+      "hot": "564"
     },
     {
       "rank": 9,
       "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
       "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "1674"
+      "hot": "1684"
     },
     {
       "rank": 10,
-      "title": "google/gemma-4-12B",
-      "url": "https://huggingface.co/google/gemma-4-12B",
-      "hot": "516"
+      "title": "OBLITERATUS/Gemma-4-12B-OBLITERATED",
+      "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED",
+      "hot": "237"
     }
   ]
 }

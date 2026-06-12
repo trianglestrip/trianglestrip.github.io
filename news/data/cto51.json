@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-12T03:44:50+00:00",
+  "updated_at": "2026-06-12T05:52:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "鸿蒙深色模式适配：跟随系统 + 手动切换 + 全屏沉浸，一份代码完美解决",
+      "url": "https://ost.51cto.com/posts/46061",
+      "hot": "完整源码已上传[AppCustomizationDemo](https:gitee.comHarmonyOSUIBasicsharmonyosuibasics.git)。一、为什么需要深色模式适配？鸿蒙系统..."
+    },
+    {
+      "rank": 2,
       "title": "鸿蒙通用设置列表组件：数据驱动 + 样式模型，一套代码适配所有设置页",
       "url": "https://ost.51cto.com/posts/45997",
       "hot": "完整源码已上传[AppCustomizationDemo](https:gitee.comHarmonyOSUIBasicsharmonyosuibasics.git)。一、痛点：每个设置页都在重复造轮子开..."
     },
     {
-      "rank": 2,
-      "title": "HarmonyOS 打卡器开发实战",
-      "url": "https://ost.51cto.com/posts/45990",
-      "hot": "HarmonyOS打卡器开发实战从零构建一个让人停不下来的习惯养成工具，深入理解ComponentV2状态管理写在前面：为什么你的Flag总是倒下？你有没..."
+      "rank": 3,
+      "title": "全程零次打开剪辑软件！揭秘Claude Fable 5如何纯靠写代码剪完自己的4K宣传片",
+      "url": "https://www.51cto.com/article/846172.html",
+      "hot": "Claude Code的团队成员Thariq分享了他Claude Code里用Claude Fable 5，剪辑了Fable 5的发布视频，全程没有打开任何视频剪辑软件。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "具身智能数据基建升级！神经腕带+全景头环，补全物理操作信号",
       "url": "https://www.51cto.com/article/846169.html",
       "hot": "具身智能正在从实验室演示走向真实场景。越往真实世界走，数据问题越明显：视频能看到动作结果，动捕能记录轨迹，机器人日志能记录执行，但它们往往很难完整捕捉人类操作背后的意图、发力趋势、微控制和反馈修正。围绕这一缺口，一类新的人类操控数据基建正在出现。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "OpenSpec 和 Superpowers 串不起来跑？问题出在交接格式上",
       "url": "https://www.51cto.com/article/846162.html",
       "hot": "有人直接点出了痛点：\"Superpowers并不会用OpenSpec的输出成果来推进，两者之间有很多断点。\"另一位读者观察得更细：\"Superpowers会根据​​task.md​​重新生成计划，按自己的理解再来一遍，跟OpenSpec的设计之间有差异。\"这两个问题说到点子上了。这篇就来回答：断点卡在哪，以及我们怎么解决的。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "AI 总忽略已有代码自己新建？三个结构性解法",
       "url": "https://www.51cto.com/article/846145.html",
       "hot": "上一篇用AI写代码，需求补不完，代码总有偏差把\"为什么偏\"拆清楚了：AI拿到模糊输入时不追问，直接推理补位；代码越多它\"看不见\"的越多，方向和人类完全相反。这篇解决\"怎么治\"——不靠更好的prompt，靠改变你的项目结构和工作流。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "SpringBoot 自动配置过滤：排除特定自动配置",
       "url": "https://www.51cto.com/article/846033.html",
       "hot": "SpringBoot 自动配置排除，看似简单，却是解决项目启动报错、避免Bean冲突的核心技巧，也是面试高频考点。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "AI Agent Skill 工程化（方法论篇）：写 Skill 还是 SOP？但好 Skill 必须懂 SOP",
       "url": "https://www.51cto.com/article/846140.html",
       "hot": "2026 年的 Skill 工程化，已经走过了\"有没有\"的阶段，进入了\"好不好\"的深水区。掌握这个决策框架，你的 Skill 就不再是又长又模糊的 Prompt 集合，而是真正能让 Agent 从通用走向专业的工程化资产。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Claude Fable 5 大解禁，我说三个大家没看到的点",
       "url": "https://www.51cto.com/article/846112.html",
       "hot": "AI能力超越人类理解、开始自我加速进化，可能正在成为现实。而留给人类准备的时间，已经不多了。"
     },
     {
-      "rank": 9,
-      "title": "代码作为Harness！UIUC、Meta等剖析代码如何撑起 AI 智能体",
-      "url": "https://www.51cto.com/article/846111.html",
-      "hot": "UIUC（伊利诺伊大学香槟分校）、Meta 和 Stanford（斯坦福大学）的学者们从一个全新的视角来解读 Harness。"
-    },
-    {
       "rank": 10,
-      "title": "自动驾驶、机器人、视觉AI，英伟达一套物理AI Agent Skills搞定",
-      "url": "https://www.51cto.com/article/846110.html",
-      "hot": "NVIDIA在CVPR上发布了一套Physical AI Agent Skills，把从数据生成、仿真、策略训练到评估的整条链路串了起来。"
+      "title": "Vue 3 的 prop 逐级透传难题与 provide/inject 核心机制完全解析",
+      "url": "https://www.51cto.com/article/845979.html",
+      "hot": "传统 props 传递就像寄信需要通过邮局、分拣中心、配送站层层中转；而 provide/inject 则像是建立了直达快递通道，寄件人和收件人之间无需任何中间环节。"
     }
   ]
 }
