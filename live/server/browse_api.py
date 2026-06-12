@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import re
 from typing import Any
 
 import requests
@@ -54,16 +53,6 @@ def _get_json(url: str, *, params: dict | None = None, method: str = "GET", json
     )
     resp.raise_for_status()
     return resp.json()
-
-
-def _parse_jsonp(text: str) -> Any:
-    text = text.strip()
-    if text.startswith("cb(") and text.endswith(")"):
-        text = text[3:-1]
-    match = re.match(r"^[^(]+\((.*)\)\s*$", text, re.S)
-    if match:
-        text = match.group(1)
-    return json.loads(text)
 
 
 def _format_online(count: int | float | str | None) -> str:
@@ -173,17 +162,22 @@ def _normalize_douyu_room(item: dict[str, Any]) -> dict[str, Any]:
     )
 
 
-def _fetch_douyu_rooms(*, cid: int | str | None, page: int, limit: int = 20) -> dict[str, Any]:
+def _fetch_douyu_rooms(*, cid: int | str | None, page: int, limit: int = 30) -> dict[str, Any]:
     params: dict[str, Any] = {"page": page, "limit": limit}
     if cid is not None and str(cid) not in ("", "0"):
         params["cate2Id"] = cid
     data = _get_json("https://m.douyu.com/api/room/list", params=params)
     payload = data.get("data") or {}
     items = payload.get("list") or []
+    page_count = int(payload.get("pageCount") or 1)
+    now_page = int(payload.get("nowPage") or page)
+    has_more = payload.get("hasMore")
+    if has_more is None:
+        has_more = now_page < page_count
     return {
         "list": [_normalize_douyu_room(item) for item in items if _normalize_douyu_room(item).get("roomId")],
-        "hasMore": bool(payload.get("hasMore")),
-        "page": page,
+        "hasMore": bool(has_more),
+        "page": now_page,
     }
 
 
