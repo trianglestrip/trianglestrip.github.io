@@ -1,5 +1,10 @@
 import { ref, watch, onUnmounted } from "vue";
-import { COOKIE_KEYS, loadPrefCookie, setCookieJson } from "../utils/cookieStore.js";
+import {
+  loadPlatformPref,
+  migrateGlobalCookiePref,
+  migrateLocalPref,
+  savePlatformPref,
+} from "../utils/prefStore.js";
 
 const DEFAULT_OVERLAY = {
   show: true,
@@ -16,12 +21,17 @@ const DEFAULT_CHAT = {
   gap: 4,
 };
 
-function loadOverlaySettings() {
-  return loadPrefCookie(COOKIE_KEYS.overlayDanmaku, DEFAULT_OVERLAY, "lemon_danmaku_settings");
+function loadOverlaySettings(site) {
+  return loadPlatformPref(site, "danmaku.overlay", DEFAULT_OVERLAY, [
+    migrateGlobalCookiePref(site, "danmaku.overlay", "lemon_dm_overlay", DEFAULT_OVERLAY, "douyu"),
+    migrateLocalPref(site, "danmaku.overlay", "lemon_danmaku_settings", "douyu"),
+  ]);
 }
 
-function loadChatSettings() {
-  return loadPrefCookie(COOKIE_KEYS.chatDanmaku, DEFAULT_CHAT);
+function loadChatSettings(site) {
+  return loadPlatformPref(site, "danmaku.chat", DEFAULT_CHAT, [
+    migrateGlobalCookiePref(site, "danmaku.chat", "lemon_dm_chat", DEFAULT_CHAT, "douyu"),
+  ]);
 }
 
 function encodeDouyuMsg(msg) {
@@ -40,32 +50,48 @@ function encodeDouyuMsg(msg) {
 export function useDanmaku(siteRef, roomIdRef) {
   const messages = ref([]);
   const status = ref("等待连接…");
-  const overlaySettings = ref(loadOverlaySettings());
-  const chatSettings = ref(loadChatSettings());
+  const overlaySettings = ref(loadOverlaySettings(siteRef.value));
+  const chatSettings = ref(loadChatSettings(siteRef.value));
 
   let ws = null;
   let heartbeat = null;
   let reconnectTimer = null;
   let parseWorker = null;
   let parseSeq = 0;
+  let syncingPrefs = false;
+
+  function reloadPlatformPrefs(site) {
+    syncingPrefs = true;
+    overlaySettings.value = loadOverlaySettings(site);
+    chatSettings.value = loadChatSettings(site);
+    syncingPrefs = false;
+  }
+
+  watch(siteRef, (site) => {
+    reloadPlatformPrefs(site);
+  });
 
   watch(
     overlaySettings,
-    (val) => setCookieJson(COOKIE_KEYS.overlayDanmaku, val),
+    (val) => {
+      if (syncingPrefs) return;
+      savePlatformPref(siteRef.value, "danmaku.overlay", val);
+    },
     { deep: true },
   );
 
   watch(
     chatSettings,
-    (val) => setCookieJson(COOKIE_KEYS.chatDanmaku, val),
+    (val) => {
+      if (syncingPrefs) return;
+      savePlatformPref(siteRef.value, "danmaku.chat", val);
+    },
     { deep: true },
   );
 
   function ensureParseWorker() {
     if (parseWorker) return parseWorker;
-    parseWorker = new Worker(new URL("../workers/danmaku.worker.js", import.meta.url), {
-      type: "module",
-    });
+    parseWorker = new Worker(new URL("../workers/danmaku.worker.js", import.meta.url));
     parseWorker.onmessage = (event) => {
       if (event.data?.type !== "messages") return;
       for (const item of event.data.items) {

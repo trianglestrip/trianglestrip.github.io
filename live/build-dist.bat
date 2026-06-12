@@ -13,9 +13,9 @@ if not exist "%SERVER%\.venv\Scripts\python.exe" (
   exit /b 1
 )
 
-echo ==^> 构建前端 (GitHub Pages /live/)
+echo ==^> 构建前端 (本地根路径 /)
 pushd "%WEB%"
-call npm run build:pages
+call npm run build
 if errorlevel 1 exit /b 1
 popd
 
@@ -39,6 +39,7 @@ copy /Y "%SERVER%config.json" "%DIST%server\config.json" >nul
 echo ==^> 前端构建产物 -^> dist/web
 if exist "%DIST%web\assets" rmdir /s /q "%DIST%web\assets"
 xcopy /E /Y /I "%WEB%dist\*" "%DIST%web\" >nul
+copy /Y "%WEB%server.mjs" "%DIST%web\server.mjs" >nul
 
 echo ==^> 写入 dist/web/config.json
 set "WEB_CFG=%DIST%web\config.json"

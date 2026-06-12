@@ -11,37 +11,23 @@ import {
   currentPlayUrl,
 } from "../api/room";
 import { getPlatform } from "../config/platforms";
-import { COOKIE_KEYS, getCookieJson, setCookieJson } from "../utils/cookieStore.js";
+import {
+  loadPlatformPref,
+  migrateGlobalQualityToPlatform,
+  savePlatformPref,
+} from "../utils/prefStore.js";
 
-function loadPlayPrefs() {
-  const fromCookie = getCookieJson(COOKIE_KEYS.quality);
-  if (fromCookie?.qualityName || fromCookie?.lineName) {
-    return {
-      qualityName: fromCookie.qualityName ? String(fromCookie.qualityName) : "",
-      lineName: fromCookie.lineName ? String(fromCookie.lineName) : "",
-    };
-  }
-  try {
-    const legacy = JSON.parse(localStorage.getItem("live.web.prefs") || "{}");
-    if (legacy.qualityName) {
-      const migrated = {
-        qualityName: String(legacy.qualityName),
-        lineName: legacy.lineName ? String(legacy.lineName) : "",
-      };
-      setCookieJson(COOKIE_KEYS.quality, migrated);
-      return migrated;
-    }
-  } catch {
-    /* ignore */
-  }
-  return { qualityName: "", lineName: "" };
+const DEFAULT_PLAY_PREFS = { qualityName: "", lineName: "" };
+
+function loadPlayPrefs(site) {
+  return loadPlatformPref(site, "quality", DEFAULT_PLAY_PREFS, [migrateGlobalQualityToPlatform(site)]);
 }
 
-function savePlayPrefs(patch) {
-  const prev = loadPlayPrefs();
+function savePlayPrefs(site, patch) {
+  const prev = loadPlayPrefs(site);
   const next = { ...prev, ...patch };
   if (!next.qualityName && !next.lineName) return;
-  setCookieJson(COOKIE_KEYS.quality, next);
+  savePlatformPref(site, "quality", next);
 }
 
 export function useRoom(siteRef) {
@@ -57,7 +43,7 @@ export function useRoom(siteRef) {
     statusKind.value = kind;
   }
 
-  function fillFromPayload(data, prefs = loadPlayPrefs()) {
+  function fillFromPayload(data, prefs = loadPlayPrefs(siteRef.value)) {
     const names = qualityNames(data);
     qualityIndex.value = findQualityIndex(names, prefs.qualityName);
     const stream = streamByName(data, names[qualityIndex.value]);
@@ -75,7 +61,7 @@ export function useRoom(siteRef) {
       if (!platform?.enabled) throw new Error("该平台尚未接入");
 
       const roomId = parseRoomId(roomInput);
-      const prefs = loadPlayPrefs();
+      const prefs = loadPlayPrefs(site);
       const data = await fetchRoom({
         site,
         room: roomId,
@@ -118,7 +104,7 @@ export function useRoom(siteRef) {
       quality: qualityName,
     });
     payload.value = mergePayload(payload.value, incoming);
-    fillFromPayload(payload.value, loadPlayPrefs());
+    fillFromPayload(payload.value, loadPlayPrefs(siteRef.value));
     return payload.value;
   }
 
@@ -155,7 +141,7 @@ export function useRoom(siteRef) {
     const stream = streamByName(payload.value, selected);
     const line = stream?.lines?.[0];
     if (selected && names.includes(selected)) {
-      savePlayPrefs({
+      savePlayPrefs(siteRef.value, {
         qualityName: selected,
         lineName: line?.name || "",
       });
@@ -168,7 +154,7 @@ export function useRoom(siteRef) {
     const stream = streamByName(payload.value, names[qualityIndex.value]);
     const line = stream?.lines?.[lineIndex.value];
     if (line?.name) {
-      savePlayPrefs({ lineName: line.name });
+      savePlayPrefs(siteRef.value, { lineName: line.name });
     }
   }
 

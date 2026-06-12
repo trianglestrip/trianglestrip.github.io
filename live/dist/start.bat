@@ -20,9 +20,9 @@ start "Live API" cmd /k "%ROOT%server\start.bat"
 timeout /t 2 /nobreak >nul
 start "Live Web" cmd /k "%ROOT%start-web.bat"
 echo.
-echo 已启动（请用带 /live/ 的地址打开前端）：
+echo 已启动：
 echo   API:  http://127.0.0.1:8765
-echo   Web:  http://127.0.0.1:8080/live/
+echo   Web:  http://127.0.0.1:8080/
 exit /b 0
 
 :killport

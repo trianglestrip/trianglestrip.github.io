@@ -26,7 +26,7 @@ cd dist
 ```
 
 - API：http://127.0.0.1:8765
-- 前端：http://127.0.0.1:8080/live/
+- 前端：http://127.0.0.1:8080/
 
 也可分别运行 `server\start.bat`、`start-web.bat`。
 
@@ -69,9 +69,20 @@ npm run dev
 
 本地敏感覆盖：复制为 `config.local.json`（server / web/public 均可，已 gitignore）。
 
+## GitHub Pages 子路径构建
+
+博客全量发布拷贝到 `/live/` 时需单独构建：
+
+```powershell
+cd live/web
+npm run build:pages
+```
+
+再将 `web/dist/` 同步到 `dist/web/` 或 `public/live/`。
+
 ## 生产部署（分离）
 
-1. 前端：`cd live/web && npm run build`，将 `dist/` 部署到 GitHub Pages / Nginx
+1. 本地包：`npm run build`（根路径 `/`）；线上子路径：`npm run build:pages`
 2. 后端：在服务器运行 `live/server`，`config.json` 中开启 CORS
 3. 前端 `config.json` 的 `api.baseUrl` 指向后端公网地址
 

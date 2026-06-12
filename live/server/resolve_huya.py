@@ -122,10 +122,34 @@ async def _load_play_context(url: str) -> dict:
     web_data = await live.fetch_web_stream_data(url)
     game_info = (web_data.get("data") or [{}])[0].get("gameLiveInfo") or {}
     stream_list = (web_data.get("data") or [{}])[0].get("gameStreamInfoList") or []
+    room_id = url.rstrip("/").rsplit("/", maxsplit=1)[-1]
+
     if not stream_list:
+        try:
+            app_data = await live.fetch_app_stream_data(url)
+        except Exception:
+            app_data = {}
+        if app_data.get("is_live") is False:
+            raise RuntimeError("房间未开播")
+        if app_data.get("flv_url"):
+            flv_url = str(app_data["flv_url"]).replace("http://", "https://")
+            tier = {
+                "name": "默认",
+                "lines": [{"name": "线路1", "url": flv_url}],
+                "play_url": flv_url,
+            }
+            return {
+                "url": url,
+                "room_id": room_id,
+                "anchor_name": app_data.get("anchor_name") or game_info.get("nick") or "",
+                "title": app_data.get("title") or game_info.get("introduction") or "",
+                "cover": game_info.get("screenshot") or "",
+                "web_data": web_data,
+                "qualities": [{"name": "默认", "rate": 0}],
+                "app_fallback_tier": tier,
+            }
         raise RuntimeError("房间未开播或解析失败")
 
-    room_id = url.rstrip("/").rsplit("/", maxsplit=1)[-1]
     return {
         "url": url,
         "room_id": room_id,
@@ -143,6 +167,9 @@ async def load_meta(url: str) -> dict:
 
 
 def meta_from_context(ctx: dict) -> dict:
+    context: dict = {"web_data": ctx["web_data"]}
+    if ctx.get("app_fallback_tier"):
+        context["app_fallback_tier"] = ctx["app_fallback_tier"]
     return {
         "site": "huya",
         "room_id": ctx["room_id"],
@@ -151,11 +178,14 @@ def meta_from_context(ctx: dict) -> dict:
         "title": ctx["title"] or ctx["anchor_name"],
         "cover": ctx["cover"],
         "available_qualities": ctx["qualities"],
-        "context": {"web_data": ctx["web_data"]},
+        "context": context,
     }
 
 
 async def resolve_tier(meta: dict, quality_name: str | None = None) -> dict:
+    fallback = meta.get("context", {}).get("app_fallback_tier")
+    if fallback:
+        return fallback
     web_data = meta["context"]["web_data"]
     quality = _pick_quality_item(meta["available_qualities"], quality_name)
     tier = _tier_from_quality(web_data, quality)
@@ -165,6 +195,9 @@ async def resolve_tier(meta: dict, quality_name: str | None = None) -> dict:
 
 
 async def resolve_all_tiers(meta: dict) -> list[dict]:
+    fallback = meta.get("context", {}).get("app_fallback_tier")
+    if fallback:
+        return [fallback]
     web_data = meta["context"]["web_data"]
     streams: list[dict] = []
     for quality in meta["available_qualities"]:

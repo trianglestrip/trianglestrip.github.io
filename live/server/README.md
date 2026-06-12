@@ -41,9 +41,9 @@ streamget install-node
 | 端点 | 说明 |
 |------|------|
 | `GET /api/health` | 健康检查（含 mode: api-only / static+api） |
-| `GET /api/room?site=douyu&room=<id>` | 解析直播流 |
-| `GET /api/categories?site=douyu\|huya` | 分类列表 |
-| `GET /api/rooms?site=...&recommend=1` | 推荐房间 |
+| `GET /api/room?site=douyu\|huya&room=<id>` | streamget 本地解析直播流 |
+| `GET /api/categories?site=douyu\|huya` | 直连平台分类（非 muxia） |
+| `GET /api/rooms?site=...&recommend=1` | 推荐房间列表 |
 | `GET /api/time?run=1` | 解析耗时基准 |
 
 ## 命令行

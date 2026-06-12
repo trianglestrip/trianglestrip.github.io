@@ -13,7 +13,7 @@ export const PLATFORMS = [
     label: "虎牙",
     tabLabel: "虎牙直播",
     enabled: true,
-    defaultRoom: "579236",
+    defaultRoom: "660116",
     description: "streamget 解析 · 多档多线路 · anti-code 本地拼装",
     features: ["蓝光/超清/流畅", "线路3/5/14", "本机 API"],
   },

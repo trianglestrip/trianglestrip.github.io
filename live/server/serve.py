@@ -6,20 +6,12 @@ from __future__ import annotations
 import argparse
 import json
 import re
-from concurrent.futures import ThreadPoolExecutor
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from app_config import load_config, resolve_static_root
-from compare_streams import compare_room_payloads
-from muxia_api import (
-    fetch_categories,
-    fetch_category_rooms,
-    fetch_recommend_rooms,
-    fetch_room,
-    normalize_room,
-)
+from browse_api import fetch_categories, fetch_category_rooms, fetch_recommend_rooms
 from resolve_cache import get as cache_get
 from resolve_cache import set as cache_set
 from resolve_cache import stats as cache_stats
@@ -57,37 +49,6 @@ def resolve_local(site: str, room: str, *, mode: str = "lazy", quality: str | No
     return resolve_room_sync(site, room_id, mode=mode, quality=quality, force=force)
 
 
-def resolve_muxia(site: str, room: str) -> dict:
-    room_id = parse_room_id(room, site)
-    cache_key = f"muxia:{site}:{room_id}"
-    cached = cache_get(cache_key)
-    if cached:
-        cached["cached"] = True
-        return cached
-    data = fetch_room(site, room_id)
-    payload = normalize_room(site, room_id, data)
-    cache_set(cache_key, payload)
-    return payload
-
-
-def compare_room(site: str, room: str) -> dict:
-    room_id = parse_room_id(room, site)
-    with ThreadPoolExecutor(max_workers=2) as pool:
-        local_future = pool.submit(resolve_local, site, room_id, mode="full")
-        muxia_future = pool.submit(resolve_muxia, site, room_id)
-        local = local_future.result()
-        muxia = muxia_future.result()
-    comparison = compare_room_payloads(local, muxia)
-    return {
-        "ok": True,
-        "site": site,
-        "room_id": room_id,
-        "local": local,
-        "muxia": muxia,
-        "compare": comparison,
-    }
-
-
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, web_root: Path | None = None, server_config: dict | None = None, **kwargs):
         self.web_root = web_root
@@ -112,9 +73,6 @@ class Handler(SimpleHTTPRequestHandler):
             if parsed.path == "/api/room":
                 self._api_room(parsed)
                 return
-            if parsed.path == "/api/compare":
-                self._api_compare(parsed)
-                return
             if parsed.path == "/api/categories":
                 self._api_categories(parsed)
                 return
@@ -132,9 +90,6 @@ class Handler(SimpleHTTPRequestHandler):
         parsed = urlparse(self.path)
         if parsed.path == "/api/resolve":
             self._api_resolve_post(parsed)
-            return
-        if parsed.path == "/api/compare":
-            self._api_compare_post(parsed)
             return
         self.send_error(404)
 
@@ -204,23 +159,19 @@ class Handler(SimpleHTTPRequestHandler):
             return {}
         return json.loads(body)
 
-    def _query_room(self, parsed) -> tuple[str, str, str, str, str, bool]:
+    def _query_room(self, parsed) -> tuple[str, str, str, str, bool]:
         query = parse_qs(parsed.query)
         site = query.get("site", ["douyu"])[0]
         room = query.get("room", query.get("id", ["9999"]))[0]
-        source = query.get("source", ["local"])[0]
         mode = query.get("mode", ["lazy"])[0]
         quality = query.get("quality", [""])[0]
         force = query.get("force", ["0"])[0].lower() in ("1", "true", "yes")
-        return site, room, source, mode, quality, force
+        return site, room, mode, quality, force
 
     def _api_room(self, parsed) -> None:
-        site, room, source, mode, quality, force = self._query_room(parsed)
+        site, room, mode, quality, force = self._query_room(parsed)
         try:
-            if source == "local":
-                payload = resolve_local(site, room, mode=mode, quality=quality or None, force=force)
-            else:
-                payload = resolve_muxia(site, room)
+            payload = resolve_local(site, room, mode=mode, quality=quality or None, force=force)
             if not payload.get("is_live") and not payload.get("status"):
                 self._send_json({"ok": False, "error": "房间未开播"}, status=404)
                 return
@@ -231,7 +182,7 @@ class Handler(SimpleHTTPRequestHandler):
     def _api_categories(self, parsed) -> None:
         query = parse_qs(parsed.query)
         site = query.get("site", ["douyu"])[0]
-        cache_key = f"muxia:categories:{site}"
+        cache_key = f"browse:categories:{site}"
         cached = cache_get(cache_key)
         if cached:
             self._send_json({"ok": True, "site": site, "categories": cached, "cached": True})
@@ -250,7 +201,7 @@ class Handler(SimpleHTTPRequestHandler):
         cid = query.get("cid", query.get("id", [""]))[0]
         pid = query.get("pid", [""])[0] or None
         recommend = query.get("recommend", [""])[0] in ("1", "true", "yes")
-        cache_key = f"muxia:rooms:{site}:{'rec' if recommend else cid}:{pid or ''}:{page}"
+        cache_key = f"browse:rooms:{site}:{'rec' if recommend else cid}:{pid or ''}:{page}"
         cached = cache_get(cache_key)
         if cached:
             self._send_json({"ok": True, "site": site, **cached, "cached": True})
@@ -290,17 +241,6 @@ class Handler(SimpleHTTPRequestHandler):
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 
-    def _api_compare(self, parsed) -> None:
-        site, room, _, _, _, _ = self._query_room(parsed)
-        try:
-            payload = compare_room(site, room)
-            if not payload["local"].get("is_live") and not payload["local"].get("status"):
-                self._send_json({"ok": False, "error": "房间未开播"}, status=404)
-                return
-            self._send_json(payload)
-        except Exception as exc:  # noqa: BLE001
-            self._send_json({"ok": False, "error": str(exc)}, status=500)
-
     def _api_resolve_post(self, parsed) -> None:
         query = parse_qs(parsed.query)
         try:
@@ -310,31 +250,14 @@ class Handler(SimpleHTTPRequestHandler):
             return
 
         room = str(data.get("room") or query.get("room", ["9999"])[0])
-        source = str(data.get("source") or query.get("source", ["local"])[0])
         site = str(data.get("site") or query.get("site", ["douyu"])[0])
 
         try:
-            if source == "muxia":
-                payload = resolve_muxia(site, room)
-            else:
-                mode = str(data.get("mode") or query.get("mode", ["lazy"])[0])
-                quality = str(data.get("quality") or query.get("quality", [""])[0]) or None
-                payload = resolve_local(site, room, mode=mode, quality=quality)
+            mode = str(data.get("mode") or query.get("mode", ["lazy"])[0])
+            quality = str(data.get("quality") or query.get("quality", [""])[0]) or None
+            force = str(data.get("force") or query.get("force", ["0"])[0]).lower() in ("1", "true", "yes")
+            payload = resolve_local(site, room, mode=mode, quality=quality, force=force)
             self._send_json(finalize_payload(payload))
-        except Exception as exc:  # noqa: BLE001
-            self._send_json({"ok": False, "error": str(exc)}, status=500)
-
-    def _api_compare_post(self, parsed) -> None:
-        query = parse_qs(parsed.query)
-        try:
-            data = self._read_json_body()
-        except json.JSONDecodeError:
-            self._send_json({"ok": False, "error": "无效 JSON"}, status=400)
-            return
-        site = str(data.get("site") or query.get("site", ["douyu"])[0])
-        room = str(data.get("room") or query.get("room", ["9999"])[0])
-        try:
-            self._send_json(compare_room(site, room))
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 
