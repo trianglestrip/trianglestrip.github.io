@@ -694,25 +694,39 @@ body {
 .hot-nav__menu {
   display: none;
   position: absolute;
-  top: calc(100% + 0.35rem);
+  top: 100%;
   left: 50%;
   z-index: 200;
   min-width: 9.5rem;
   max-width: 14rem;
-  max-height: 16rem;
+  max-height: calc(16rem + 0.4rem);
+  overflow-x: hidden;
   overflow-y: auto;
-  padding: 0.35rem 0;
+  padding: 0.4rem 0 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  transform: translateX(-50%);
+}
+.hot-nav__menu::after {
+  content: '';
+  position: absolute;
+  inset: 0.4rem 0 0 0;
+  z-index: 0;
   border: 1px solid var(--hot-card-border);
   border-radius: 0.55rem;
   background: var(--hot-card-bg);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  transform: translateX(-50%);
+  pointer-events: none;
 }
-.hot-nav__group:hover .hot-nav__menu,
+.hot-nav__group.is-open .hot-nav__menu,
 .hot-nav__group:focus-within .hot-nav__menu {
   display: block;
 }
 .hot-nav__menu-item {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 0.45rem;
@@ -1104,7 +1118,14 @@ JS = """
   const cards = document.querySelectorAll('.hot-card[data-category]');
   if (!nav || !cards.length) return;
   const buttons = nav.querySelectorAll('.hot-nav__btn');
+  const groups = nav.querySelectorAll('.hot-nav__group');
+  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   const storageKey = 'hot-board-filter';
+  function closeMenus() {
+    groups.forEach(function (group) {
+      group.classList.remove('is-open');
+    });
+  }
   function applyFilter(filter) {
     cards.forEach((card) => {
       card.style.display = filter === 'all' || card.dataset.category === filter ? '' : 'none';
@@ -1122,15 +1143,44 @@ JS = """
       card.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
+  groups.forEach(function (group) {
+    const menu = group.querySelector('.hot-nav__menu');
+    if (!menu || !canHover) return;
+    group.addEventListener('mouseenter', function () {
+      group.classList.add('is-open');
+    });
+    group.addEventListener('mouseleave', function () {
+      group.classList.remove('is-open');
+    });
+  });
   nav.addEventListener('click', (event) => {
     const menuItem = event.target.closest('.hot-nav__menu-item');
     if (menuItem) {
       event.preventDefault();
+      closeMenus();
       scrollToCard(menuItem.getAttribute('data-target'), menuItem.getAttribute('data-category'));
       return;
     }
     const btn = event.target.closest('.hot-nav__btn');
-    if (btn) applyFilter(btn.dataset.filter || 'all');
+    if (!btn) return;
+    const group = btn.closest('.hot-nav__group');
+    const menu = group && group.querySelector('.hot-nav__menu');
+    if (!canHover && menu) {
+      const isOpen = group.classList.contains('is-open');
+      closeMenus();
+      if (!isOpen) {
+        group.classList.add('is-open');
+      }
+    } else {
+      closeMenus();
+    }
+    applyFilter(btn.dataset.filter || 'all');
+  });
+  document.addEventListener('click', function (event) {
+    if (!nav.contains(event.target)) closeMenus();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeMenus();
   });
   let saved = 'all';
   try { saved = localStorage.getItem(storageKey) || 'all'; } catch (e) {}
