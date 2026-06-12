@@ -16,7 +16,7 @@
         <div class="brand-icon">L</div>
         <div>
           <h1>直播播放</h1>
-          <p>默认 muxia 高清 + 本机代理 live 播放</p>
+          <p>streamget 纯解析 + muxia 对比（浏览器直连 douyucdn）</p>
         </div>
       </div>
       <span class="badge">blog / live</span>
@@ -26,16 +26,13 @@
 
     <section class="card">
       <div class="controls">
-        <input id="room" type="text" value="9999" placeholder="房间号或平台链接">
+        <input id="room" type="text" value="5720533" placeholder="房间号或平台链接">
         <select id="source" title="解析源">
-          <option value="local">streamget（本机）</option>
-          <option value="muxia" selected>muxia（lemon-live）</option>
-        </select>
-        <select id="proxyMode" title="播放方式">
-          <option value="proxy" selected>代理播放</option>
-          <option value="direct">直连 CDN</option>
+          <option value="local" selected>streamget（本机）</option>
+          <option value="muxia">muxia（对照）</option>
         </select>
         <button id="playBtn" class="primary">播放</button>
+        <button id="compareBtn">对比 muxia</button>
         <button id="stopBtn">停止</button>
       </div>
       <div class="selectors">
@@ -58,8 +55,26 @@
       </div>
       <div id="status" class="status">输入房间号后点击播放</div>
     </section>
+
+    <section class="card compare-card" id="compareCard" hidden>
+      <h3 class="compare-title">streamget vs muxia</h3>
+      <p id="compareSummary" class="compare-summary"></p>
+      <div class="compare-table-wrap">
+        <table class="compare-table" id="compareTable">
+          <thead>
+            <tr>
+              <th>档位</th>
+              <th>线路（本机 / muxia）</th>
+              <th>FLV 文件名</th>
+              <th>结果</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
   </div>
 
-  <script src="/static/app.js?v=9"></script>
+  <script src="/static/app.js?v=10"></script>
 </body>
 </html>

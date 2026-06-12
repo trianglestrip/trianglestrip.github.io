@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>LSF 直播播放</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/flv.js@1.6.2/dist/flv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.15/dist/hls.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-icon">F</div>
+        <div>
+          <h1>LSF 直播播放</h1>
+          <p>斗鱼 streamget 纯解析直连；lsf 供 VLC / 其他平台</p>
+        </div>
+      </div>
+      <span class="badge">blog / live / lsf</span>
+    </header>
+
+    <div class="tabs" id="siteTabs"></div>
+
+    <section class="card">
+      <div class="controls">
+        <input id="room" type="text" value="5720533" placeholder="房间号或平台链接">
+        <select id="engine" title="斗鱼解析">
+          <option value="streamget" selected>streamget（开源，浏览器）</option>
+          <option value="lsf">lsf（仅 VLC）</option>
+        </select>
+        <select id="quality" title="清晰度（streamget）"></select>
+        <select id="format" title="流格式（lsf 非斗鱼）">
+          <option value="flv" selected>FLV</option>
+          <option value="m3u8">HLS</option>
+        </select>
+        <button id="playBtn" class="primary">播放</button>
+        <button id="stopBtn">停止</button>
+      </div>
+    </section>
+
+    <section class="card player-card">
+      <div class="player-shell">
+        <video id="player" controls playsinline></video>
+      </div>
+      <div id="status" class="status">先运行 start.ps1，再点击播放</div>
+      <div id="streamUrl" class="meta-url"></div>
+    </section>
+  </div>
+
+  <script src="static/app.js?v=7"></script>
+</body>
+</html>

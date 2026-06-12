@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""本地直播测试服务：解析 API、FLV 代理与播放器页面。"""
+"""本地直播测试服务：纯解析 API、muxia 对比与播放器页面（无流转发）。"""
 
 from __future__ import annotations
 
@@ -7,63 +7,18 @@ import argparse
 import asyncio
 import json
 import re
-import secrets
-import sys
-import time
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-import requests
-
+from compare_streams import compare_room_payloads
 from muxia_api import fetch_room, normalize_room
 from resolve_douyu import normalize_url as douyu_normalize_url
 from resolve_douyu import resolve_all as douyu_resolve_all
 
 ROOT = Path(__file__).resolve().parent
 STREAM_FILE = ROOT / "stream.json"
-PROXY_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    ),
-    "Referer": "https://www.douyu.com/",
-    "Origin": "https://www.douyu.com",
-    "Accept": "*/*",
-    "Accept-Encoding": "identity",
-    "Connection": "close",
-}
-CHUNK_SIZE = 64 * 1024
-FLV_MAGIC = b"FLV"
-SESSION_TTL_SECONDS = 3600
 ROOM_RE = re.compile(r"(?:douyu\.com/)?(\d+)$")
-
-PROXY_SESSIONS: dict[str, dict] = {}
-
-
-def register_proxy_session(play_url: str, backup_urls: list[str]) -> str:
-    sid = secrets.token_urlsafe(8)
-    urls: list[str] = []
-    seen: set[str] = set()
-    for item in [play_url, *backup_urls]:
-        if item and item not in seen:
-            seen.add(item)
-            urls.append(item)
-    PROXY_SESSIONS[sid] = {
-        "urls": urls,
-        "expires": time.time() + SESSION_TTL_SECONDS,
-    }
-    return sid
-
-
-def get_session_urls(sid: str) -> list[str]:
-    session = PROXY_SESSIONS.get(sid)
-    if not session:
-        return []
-    if session["expires"] < time.time():
-        PROXY_SESSIONS.pop(sid, None)
-        return []
-    return session["urls"]
 
 
 def parse_room_id(value: str) -> str:
@@ -76,18 +31,12 @@ def parse_room_id(value: str) -> str:
     raise ValueError(f"无效房间号: {value}")
 
 
-def attach_proxy(payload: dict) -> dict:
-    play_url = payload.get("play_url") or payload.get("flv_url") or payload.get("m3u8_url") or ""
-    backup_urls = payload.get("backup_urls") or []
-    sid = register_proxy_session(play_url, backup_urls)
-    payload["proxy_sid"] = sid
-    payload["proxy_url"] = f"/api/proxy?sid={sid}&mode=live"
+def finalize_payload(payload: dict) -> dict:
     payload["ok"] = True
     return payload
 
 
-def resolve_local(room: str, quality: str) -> dict:
-    del quality  # streamget 一次解析全部档位，与 muxia 对齐
+def resolve_local(room: str) -> dict:
     room_id = parse_room_id(room)
     payload = asyncio.run(douyu_resolve_all(douyu_normalize_url(room_id)))
     payload["source"] = "streamget"
@@ -101,6 +50,21 @@ def resolve_muxia(site: str, room: str) -> dict:
     room_id = parse_room_id(room)
     data = fetch_room(site, room_id)
     return normalize_room(site, room_id, data)
+
+
+def compare_room(site: str, room: str) -> dict:
+    room_id = parse_room_id(room)
+    local = resolve_local(room_id)
+    muxia = resolve_muxia(site, room_id)
+    comparison = compare_room_payloads(local, muxia)
+    return {
+        "ok": True,
+        "site": site,
+        "room_id": room_id,
+        "local": local,
+        "muxia": muxia,
+        "compare": comparison,
+    }
 
 
 class Handler(SimpleHTTPRequestHandler):
@@ -121,18 +85,11 @@ class Handler(SimpleHTTPRequestHandler):
         if parsed.path == "/api/room":
             self._api_room(parsed)
             return
+        if parsed.path == "/api/compare":
+            self._api_compare(parsed)
+            return
         if parsed.path == "/api/stream":
             self._send_stream_json()
-            return
-        if parsed.path == "/api/proxy":
-            query = parse_qs(parsed.query)
-            sid = query.get("sid", [""])[0]
-            mode = query.get("mode", ["segment"])[0]
-            if sid:
-                self._proxy_stream_by_sid(sid, mode=mode)
-                return
-            target = query.get("url", [""])[0]
-            self._proxy_stream(target)
             return
         if parsed.path == "/":
             self.path = "/player.html"
@@ -143,8 +100,8 @@ class Handler(SimpleHTTPRequestHandler):
         if parsed.path == "/api/resolve":
             self._api_resolve_post(parsed)
             return
-        if parsed.path == "/api/proxy/register":
-            self._api_proxy_register()
+        if parsed.path == "/api/compare":
+            self._api_compare_post(parsed)
             return
         self.send_error(404)
 
@@ -155,38 +112,37 @@ class Handler(SimpleHTTPRequestHandler):
             return {}
         return json.loads(body)
 
-    def _api_room(self, parsed) -> None:
+    def _query_room(self, parsed) -> tuple[str, str, str]:
         query = parse_qs(parsed.query)
         site = query.get("site", ["douyu"])[0]
         room = query.get("room", query.get("id", ["9999"]))[0]
-        source = query.get("source", ["muxia"])[0]
-        quality = query.get("quality", ["OD"])[0]
+        source = query.get("source", ["local"])[0]
+        return site, room, source
+
+    def _api_room(self, parsed) -> None:
+        site, room, source = self._query_room(parsed)
         try:
             if source == "local":
-                payload = resolve_local(room, quality)
+                payload = resolve_local(room)
             else:
                 payload = resolve_muxia(site, room)
             if not payload.get("is_live") and not payload.get("status"):
                 self._send_json({"ok": False, "error": "房间未开播"}, status=404)
                 return
-            self._send_json(attach_proxy(payload))
+            self._send_json(finalize_payload(payload))
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 
-    def _api_proxy_register(self) -> None:
+    def _api_compare(self, parsed) -> None:
+        site, room, _ = self._query_room(parsed)
         try:
-            data = self._read_json_body()
-        except json.JSONDecodeError:
-            self._send_json({"ok": False, "error": "无效 JSON"}, status=400)
-            return
-
-        play_url = str(data.get("play_url") or "").strip()
-        if not play_url.startswith(("http://", "https://")):
-            self._send_json({"ok": False, "error": "缺少有效 play_url"}, status=400)
-            return
-
-        backup_urls = [str(item) for item in (data.get("backup_urls") or []) if item]
-        self._send_json(attach_proxy({"play_url": play_url, "backup_urls": backup_urls}))
+            payload = compare_room(site, room)
+            if not payload["local"].get("is_live") and not payload["local"].get("status"):
+                self._send_json({"ok": False, "error": "房间未开播"}, status=404)
+                return
+            self._send_json(payload)
+        except Exception as exc:  # noqa: BLE001
+            self._send_json({"ok": False, "error": str(exc)}, status=500)
 
     def _api_resolve_post(self, parsed) -> None:
         query = parse_qs(parsed.query)
@@ -197,7 +153,6 @@ class Handler(SimpleHTTPRequestHandler):
             return
 
         room = str(data.get("room") or query.get("room", ["9999"])[0])
-        quality = str(data.get("quality") or query.get("quality", ["OD"])[0])
         source = str(data.get("source") or query.get("source", ["local"])[0])
         site = str(data.get("site") or query.get("site", ["douyu"])[0])
 
@@ -205,103 +160,24 @@ class Handler(SimpleHTTPRequestHandler):
             if source == "muxia":
                 payload = resolve_muxia(site, room)
             else:
-                payload = resolve_local(room, quality)
-            self._send_json(attach_proxy(payload))
+                payload = resolve_local(room)
+            self._send_json(finalize_payload(payload))
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 
-    def _open_upstream(self, target: str) -> requests.Response | None:
+    def _api_compare_post(self, parsed) -> None:
+        query = parse_qs(parsed.query)
         try:
-            upstream = requests.get(
-                target,
-                headers=PROXY_HEADERS,
-                stream=True,
-                timeout=(15, None),
-            )
-            upstream.raise_for_status()
-            return upstream
-        except requests.RequestException:
-            return None
-
-    def _send_flv_headers(self) -> None:
-        self.send_response(200)
-        self.send_header("Content-Type", "video/x-flv")
-        self._cors()
-        self.send_header("Cache-Control", "no-cache, no-store")
-        self.send_header("Connection", "close")
-        self.end_headers()
-
-    def _pipe_upstream(
-        self,
-        upstream: requests.Response,
-        *,
-        first_chunk: bytes = b"",
-    ) -> None:
-        pending = first_chunk
-        while True:
-            chunk = pending or upstream.raw.read(CHUNK_SIZE)
-            pending = b""
-            if not chunk:
-                break
-            self.wfile.write(chunk)
-            self.wfile.flush()
-
-    def _proxy_stream_by_sid(self, sid: str, *, mode: str = "segment") -> None:
-        targets = get_session_urls(sid)
-        if not targets:
-            self.send_error(404, "session expired, resolve again")
+            data = self._read_json_body()
+        except json.JSONDecodeError:
+            self._send_json({"ok": False, "error": "无效 JSON"}, status=400)
             return
-
-        target = ""
-        for candidate in targets:
-            upstream = self._open_upstream(candidate)
-            if upstream is None:
-                continue
-            first = upstream.raw.read(4)
-            if not first.startswith(FLV_MAGIC):
-                upstream.close()
-                continue
-            target = candidate
-            try:
-                self._send_flv_headers()
-                self.wfile.write(first)
-                self._pipe_upstream(upstream)
-            except (BrokenPipeError, ConnectionResetError, OSError):
-                upstream.close()
-                return
-            finally:
-                upstream.close()
-            break
-
-        if not target:
-            self.send_error(502, "no playable upstream")
-            return
-
-        # live / segment 均单次上游连接后结束；由 flv.js isLive 自动重连同一代理 URL。
-        # 切勿在同一条 HTTP 响应里拼接多段 FLV，否则时间戳回绕会导致一秒一卡。
-
-    def _proxy_stream(self, target: str) -> None:
-        if not target.startswith(("http://", "https://")):
-            self._send_json({"ok": False, "error": "无效的流地址"}, status=400)
-            return
-
-        upstream = self._open_upstream(target)
-        if upstream is None:
-            self.send_error(502, "upstream failed")
-            return
-        first = upstream.raw.read(4)
-        if not first.startswith(FLV_MAGIC):
-            upstream.close()
-            self.send_error(502, "upstream is not flv")
-            return
+        site = str(data.get("site") or query.get("site", ["douyu"])[0])
+        room = str(data.get("room") or query.get("room", ["9999"])[0])
         try:
-            self._send_flv_headers()
-            self.wfile.write(first)
-            self._pipe_upstream(upstream)
-        except (BrokenPipeError, ConnectionResetError, OSError):
-            pass
-        finally:
-            upstream.close()
+            self._send_json(compare_room(site, room))
+        except Exception as exc:  # noqa: BLE001
+            self._send_json({"ok": False, "error": str(exc)}, status=500)
 
     def _send_stream_json(self) -> None:
         if not STREAM_FILE.exists():
@@ -309,7 +185,7 @@ class Handler(SimpleHTTPRequestHandler):
             return
         payload = json.loads(STREAM_FILE.read_text(encoding="utf-8"))
         payload["source"] = "streamget"
-        self._send_json(attach_proxy(payload))
+        self._send_json(finalize_payload(payload))
 
     def _cors(self) -> None:
         self.send_header("Access-Control-Allow-Origin", "*")
@@ -328,12 +204,13 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="启动直播测试服务")
+    parser = argparse.ArgumentParser(description="启动直播测试服务（纯解析）")
     parser.add_argument("--port", type=int, default=8765)
     args = parser.parse_args()
 
     server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
     print(f"播放页: http://127.0.0.1:{args.port}/")
+    print("API: GET /api/room?source=local | GET /api/compare?room=<id>")
     print("按 Ctrl+C 停止")
     try:
         server.serve_forever()

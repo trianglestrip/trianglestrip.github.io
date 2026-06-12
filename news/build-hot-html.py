@@ -552,6 +552,12 @@ CSS = """
   }
 }
 * { box-sizing: border-box; }
+:root {
+  --hot-scroll-offset: 100px;
+}
+html {
+  scroll-padding-top: var(--hot-scroll-offset);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -559,7 +565,15 @@ body {
   background: var(--bg);
   line-height: 1.5;
 }
-.hot-page { max-width: 100%; padding-bottom: 1rem; }
+.hot-page {
+  max-width: 100%;
+  padding-bottom: 1rem;
+}
+.hot-section,
+.hot-section__title,
+.hot-card {
+  scroll-margin-top: var(--hot-scroll-offset);
+}
 .hot-footer {
   max-width: var(--hot-content-max);
   margin: 1.25rem auto 0;
@@ -1027,7 +1041,6 @@ body {
   background: var(--hot-card-bg);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  scroll-margin-top: 5.5rem;
 }
 .hot-card__head {
   display: flex;
@@ -1234,16 +1247,48 @@ body {
 
 JS = """
 (function () {
+  const NAV_OFFSET = 100;
+  function hotGetScrollOffset() {
+    return NAV_OFFSET;
+  }
+  function hotUpdateScrollOffset() {
+    document.documentElement.style.setProperty('--hot-scroll-offset', NAV_OFFSET + 'px');
+  }
+  function hotScrollToElement(el, behavior) {
+    if (!el) return;
+    const offset = hotGetScrollOffset();
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: Math.max(0, top), behavior: behavior || 'smooth' });
+  }
+  function hotScrollAfterLayout(el) {
+    if (!el) return;
+    hotUpdateScrollOffset();
+    void document.body.offsetHeight;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        hotScrollToElement(el, 'smooth');
+        window.setTimeout(function () {
+          const offset = hotGetScrollOffset();
+          const drift = el.getBoundingClientRect().top - offset;
+          if (Math.abs(drift) > 2) {
+            hotScrollToElement(el, 'auto');
+          }
+        }, 380);
+      });
+    });
+  }
+  window.hotGetScrollOffset = hotGetScrollOffset;
+  window.hotUpdateScrollOffset = hotUpdateScrollOffset;
+  window.hotScrollToElement = hotScrollToElement;
+  window.hotScrollAfterLayout = hotScrollAfterLayout;
+  hotUpdateScrollOffset();
   window.hotCarouselByCardId = new Map();
   window.hotScrollToPlatform = function (targetId) {
     const card = document.getElementById(targetId);
     if (!card) return;
     const go = window.hotCarouselByCardId.get(targetId);
     if (go) go(card);
-    const anchor = card.closest('.hot-section') || card;
-    requestAnimationFrame(function () {
-      anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
+    hotScrollAfterLayout(card);
   };
 })();
 (function () {
@@ -1435,17 +1480,14 @@ JS = """
   function scrollToCard(targetId, category) {
     if (!targetId) return;
     if (category) applyFilter(category);
-    requestAnimationFrame(function () {
-      if (window.hotScrollToPlatform) window.hotScrollToPlatform(targetId);
-    });
+    if (window.hotScrollToPlatform) window.hotScrollToPlatform(targetId);
   }
   function scrollToSection(category) {
     const section = document.getElementById('section-' + category);
     if (!section) return;
+    const anchor = section.querySelector('.hot-section__title') || section;
     applyFilter(category);
-    requestAnimationFrame(function () {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
+    if (window.hotScrollAfterLayout) window.hotScrollAfterLayout(anchor);
   }
   groups.forEach(function (group) {
     const menu = group.querySelector('.hot-nav__menu');
@@ -1517,9 +1559,7 @@ JS = """
     if (allBtn && !allBtn.classList.contains('is-active')) {
       allBtn.click();
     }
-    requestAnimationFrame(function () {
-      if (window.hotScrollToPlatform) window.hotScrollToPlatform(targetId);
-    });
+    if (window.hotScrollToPlatform) window.hotScrollToPlatform(targetId);
   });
 })();
 """

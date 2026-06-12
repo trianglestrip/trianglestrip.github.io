@@ -9,13 +9,12 @@ const SITES = [
 
 const state = {
   site: "douyu",
-  source: "muxia",
-  room: "9999",
+  source: "local",
+  room: "5720533",
   qualityIndex: 0,
   lineIndex: 0,
   payload: null,
   player: null,
-  useProxy: true,
   loopActive: false,
 };
 
@@ -23,10 +22,10 @@ const els = {
   siteTabs: document.getElementById("siteTabs"),
   room: document.getElementById("room"),
   source: document.getElementById("source"),
-  proxyMode: document.getElementById("proxyMode"),
   quality: document.getElementById("quality"),
   line: document.getElementById("line"),
   playBtn: document.getElementById("playBtn"),
+  compareBtn: document.getElementById("compareBtn"),
   stopBtn: document.getElementById("stopBtn"),
   status: document.getElementById("status"),
   roomTitle: document.getElementById("roomTitle"),
@@ -34,6 +33,9 @@ const els = {
   roomCover: document.getElementById("roomCover"),
   liveBadge: document.getElementById("liveBadge"),
   video: document.getElementById("player"),
+  compareCard: document.getElementById("compareCard"),
+  compareSummary: document.getElementById("compareSummary"),
+  compareTable: document.getElementById("compareTable"),
 };
 
 function setStatus(text, ok = true) {
@@ -69,9 +71,18 @@ async function fetchRoom() {
     site: state.site,
     room: roomId,
     source: state.source,
-    quality: "OD",
   });
   const res = await fetch(`/api/room?${params.toString()}`, { cache: "no-store" });
+  const data = await res.json();
+  if (!res.ok || !data.ok) throw new Error(data.error || `HTTP ${res.status}`);
+  return data;
+}
+
+async function fetchCompare() {
+  const roomId = parseRoomId(els.room.value || state.room);
+  state.room = roomId;
+  const params = new URLSearchParams({ site: state.site, room: roomId });
+  const res = await fetch(`/api/compare?${params.toString()}`, { cache: "no-store" });
   const data = await res.json();
   if (!res.ok || !data.ok) throw new Error(data.error || `HTTP ${res.status}`);
   return data;
@@ -151,19 +162,6 @@ function currentPlayUrl(payload) {
   return "";
 }
 
-function collectBackupUrls(payload, directUrl) {
-  const urls = [];
-  for (const group of payload.streams || []) {
-    for (const line of group.lines || []) {
-      if (line.url && line.url !== directUrl && !isBadPlayUrl(line.url)) urls.push(line.url);
-    }
-  }
-  for (const item of payload.backup_urls || []) {
-    if (item && item !== directUrl && !isBadPlayUrl(item) && !urls.includes(item)) urls.push(item);
-  }
-  return urls;
-}
-
 function destroyPlayerInstance() {
   if (state.player) {
     try {
@@ -199,12 +197,6 @@ function flvConfig(live) {
   };
 }
 
-function proxyLiveUrl(proxyBase) {
-  if (/[?&]mode=live(?:&|$)/.test(proxyBase)) return proxyBase;
-  const joiner = proxyBase.includes("?") ? "&" : "?";
-  return `${proxyBase}${joiner}mode=live`;
-}
-
 function playLive(url, metaText) {
   ensureFlvJs();
   destroyPlayerInstance();
@@ -222,34 +214,14 @@ function playLive(url, metaText) {
   state.player.on(flvjs.Events.ERROR, (_, info, detail) => {
     if (!state.loopActive) return;
     const msg = [info, detail && detail.code, detail && detail.msg].filter(Boolean).join(" | ");
-    setStatus(`${metaText}\n短暂中断: ${msg}（自动重连）`, true);
+    setStatus(`${metaText}\n短暂中断: ${msg}`, false);
   });
   state.player.on(flvjs.Events.MEDIA_INFO, () => {
     state.player.play().catch(() => {});
-    setStatus(`${metaText}\n播放中`, true);
+    setStatus(`${metaText}\n播放中（CDN 直链）`, true);
   });
   state.player.load();
   state.player.play().catch(() => {});
-}
-
-function playProxy(proxyBase, metaText) {
-  setStatus(`${metaText}\n本机代理（与直连相同 live 模式）…`, true);
-  playLive(proxyLiveUrl(proxyBase), metaText);
-}
-
-async function registerProxy(directUrl, payload) {
-  const res = await fetch("/api/proxy/register", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      play_url: directUrl,
-      backup_urls: collectBackupUrls(payload, directUrl),
-    }),
-    cache: "no-store",
-  });
-  const data = await res.json();
-  if (!res.ok || !data.ok) throw new Error(data.error || `HTTP ${res.status}`);
-  return data;
 }
 
 function updateRoomMeta(payload) {
@@ -267,9 +239,63 @@ function updateRoomMeta(payload) {
   els.liveBadge.className = "badge " + (live ? "live" : "");
 }
 
+function renderCompare(data) {
+  const cmp = data.compare || {};
+  const rows = cmp.rows || [];
+  const tbody = els.compareTable.querySelector("tbody");
+  tbody.innerHTML = "";
+
+  for (const row of rows) {
+    const tr = document.createElement("tr");
+    tr.className = row.match ? "match" : "diff";
+    const basename = row.flv_match
+      ? row.local_basename
+      : `${row.local_basename || "—"} / ${row.muxia_basename || "—"}`;
+    tr.innerHTML = `
+      <td>${row.quality || "—"}</td>
+      <td>${row.local_line || "—"} / ${row.muxia_line || "—"}</td>
+      <td class="mono">${basename}</td>
+      <td>${row.match ? "一致" : row.flv_match ? "线路名不同" : "不一致"}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  const summaryParts = [
+    `档位名: ${cmp.quality_names_match ? "一致" : "不一致"}`,
+    `FLV 文件: ${cmp.matched}/${cmp.total} 档一致`,
+    cmp.all_match ? "结论: 与 muxia 完全一致" : "结论: 存在差异（见上表）",
+  ];
+  if (cmp.local_only?.length) summaryParts.push(`仅本机: ${cmp.local_only.join("、")}`);
+  if (cmp.muxia_only?.length) summaryParts.push(`仅 muxia: ${cmp.muxia_only.join("、")}`);
+
+  els.compareSummary.textContent = summaryParts.join(" · ");
+  els.compareSummary.className = "compare-summary " + (cmp.all_match ? "ok" : "warn");
+  els.compareCard.hidden = false;
+}
+
+async function compareWithMuxia() {
+  setStatus("正在解析本机 streamget 与 muxia…", true);
+  try {
+    const data = await fetchCompare();
+    renderCompare(data);
+    state.payload = data.local;
+    fillSelectors(data.local);
+    updateRoomMeta(data.local);
+    const cmp = data.compare || {};
+    setStatus(
+      cmp.all_match
+        ? `对比完成：${data.room_id} 与 muxia 完全一致（${cmp.matched} 档）`
+        : `对比完成：${data.room_id} 有 ${cmp.total - cmp.matched} 档与 muxia 不一致`,
+      cmp.all_match
+    );
+  } catch (err) {
+    setStatus(`对比失败: ${err.message}`, false);
+  }
+}
+
 async function playRoom() {
   destroyPlayer();
-  setStatus("正在通过本机服务解析…", true);
+  setStatus("正在解析…", true);
   try {
     const payload = await fetchRoom();
     if (!payload.is_live && !payload.status) {
@@ -286,19 +312,9 @@ async function playRoom() {
     const q = payload.streams?.[state.qualityIndex]?.name || "默认";
     const line = payload.streams?.[state.qualityIndex]?.lines?.[state.lineIndex]?.name || "";
     const sourceLabel = state.source === "local" ? "streamget（本机）" : "muxia";
-    const metaText =
-      `解析源: ${sourceLabel} | ${q} / ${line}\n` +
-      `${state.useProxy ? "代理播放" : "直连 CDN"}: ${directUrl.slice(0, 100)}…`;
+    const metaText = `解析源: ${sourceLabel} | ${q} / ${line}\nCDN: ${directUrl.slice(0, 120)}…`;
 
     state.payload = payload;
-
-    if (state.useProxy) {
-      const proxyPayload = await registerProxy(directUrl, payload);
-      if (!proxyPayload.proxy_url) throw new Error("代理注册失败");
-      playProxy(proxyPayload.proxy_url, metaText);
-      return;
-    }
-
     playLive(directUrl, metaText);
   } catch (err) {
     setStatus(`失败: ${err.message}`, false);
@@ -312,12 +328,10 @@ function stopPlay() {
 
 function bindEvents() {
   els.playBtn.addEventListener("click", playRoom);
+  els.compareBtn.addEventListener("click", compareWithMuxia);
   els.stopBtn.addEventListener("click", stopPlay);
   els.source.addEventListener("change", () => {
     state.source = els.source.value;
-  });
-  els.proxyMode.addEventListener("change", () => {
-    state.useProxy = els.proxyMode.value === "proxy";
   });
   els.quality.addEventListener("change", () => {
     state.qualityIndex = Number(els.quality.value) || 0;
@@ -333,10 +347,10 @@ function bindEvents() {
 
 function syncControls() {
   els.source.value = state.source;
-  els.proxyMode.value = state.useProxy ? "proxy" : "direct";
+  els.room.value = state.room;
 }
 
 renderSiteTabs();
 syncControls();
 bindEvents();
-setStatus("默认：muxia 高清 + 本机代理（live 自动重连，与直连同逻辑），点击「播放」开始", true);
+setStatus("默认 streamget 直连播放；点「对比 muxia」可核对档位与 FLV 文件名是否一致", true);
