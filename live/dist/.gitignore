@@ -1,8 +1,9 @@
-# 打包产物由 package-dist.ps1 生成，保留启动脚本与 Node 启动器
-node_modules/
+# 打包产物（保留启动脚本）
+_build/
 server/*
 !server/start.bat
 !server/config.json
 web/*
 !web/start.bat
+!web/serve_spa.py
 !web/config.json
