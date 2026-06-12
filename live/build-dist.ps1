@@ -45,7 +45,7 @@ Pop-Location
 Write-Host "==> 清理 dist/server、dist/web"
 foreach ($pair in @(
     @{ Dir = $DistServer; Keep = @("start.bat", "config.json") },
-    @{ Dir = $DistWeb; Keep = @("start.bat", "server.mjs", "config.json") }
+    @{ Dir = $DistWeb; Keep = @("start.bat", "server.mjs", "config.json", "node.exe") }
   )) {
   $dir = $pair.Dir
   if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Force -Path $dir | Out-Null; continue }
@@ -80,7 +80,7 @@ $webConfig = @{
 } | ConvertTo-Json -Depth 4
 Write-Utf8NoBom (Join-Path $DistWeb "config.json") $webConfig
 
-Write-Host "==> 下载 node.exe -> dist/web"
+Write-Host "==> 确保 dist/web/node.exe"
 Ensure-NodeExe $DistWeb
 
 Write-Host ""

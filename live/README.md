@@ -15,22 +15,27 @@
 
 `deploy.yml` 已 `paths-ignore: live/**`，改 live 不会单独触发 CI；博客全量发布时仍会拷贝 `dist/web`，避免 `force_orphan` 清空子目录。
 
-## 本地打包
+## 本地打包与启动
 
 ```powershell
 cd live
-.\package-dist.ps1
-# dist\server\start.bat  /  dist\web\start.bat
+.\build-dist.ps1   # 构建 dist（改源码后执行）
+.\start.ps1        # 启动 dist\server + dist\web
 ```
 
-## 快速启动
+- API：http://127.0.0.1:8765
+- 前端：http://127.0.0.1:8080/live/
+
+也可直接运行 `dist\start-all.bat`，或分别 `dist\server\start.bat`、`dist\web\start.bat`。
+
+## 开发模式（源码）
 
 ```powershell
 # 终端 1：API
 cd live/server
 .\start.ps1
 
-# 终端 2：前端（开发）
+# 终端 2：前端
 cd live/web
 npm install
 npm run dev

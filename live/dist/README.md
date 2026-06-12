@@ -13,14 +13,17 @@
 
 ```powershell
 cd live
-.\package-dist.ps1
+.\build-dist.ps1
 ```
 
-## 本地
+## 本地启动
 
-- `server\start.bat` → API :8765
-- `web\start.bat` → http://127.0.0.1:8080/live/
-- `start-all.bat`
+```powershell
+cd live
+.\start.ps1
+```
+
+或 `dist\start-all.bat` / `server\start.bat` + `web\start.bat`。
 
 ## 注意
 
