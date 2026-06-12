@@ -669,11 +669,10 @@ body {
 .hot-dock {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 0.3rem;
-  max-width: 1100px;
-  margin: 0 auto;
+  gap: 0.3rem 0.45rem;
+  width: 100%;
   padding: 0.1rem 0;
 }
 .hot-dock__group {
