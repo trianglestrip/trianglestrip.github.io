@@ -1182,6 +1182,19 @@ body {
 
 JS = """
 (function () {
+  window.hotCarouselByCardId = new Map();
+  window.hotScrollToPlatform = function (targetId) {
+    const card = document.getElementById(targetId);
+    if (!card) return;
+    const go = window.hotCarouselByCardId.get(targetId);
+    if (go) go(card);
+    const anchor = card.closest('.hot-section') || card;
+    requestAnimationFrame(function () {
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  };
+})();
+(function () {
   function formatRelative(iso) {
     const updated = new Date(iso);
     if (Number.isNaN(updated.getTime())) return iso;
@@ -1285,6 +1298,23 @@ JS = """
     ensureClones(visible);
     setTranslate(0, false);
 
+    function goToCard(cardEl) {
+      const cardIndex = cards.indexOf(cardEl);
+      if (cardIndex < 0) return;
+      const count = cards.length;
+      const nextVisible = visibleCount();
+      if (count <= nextVisible) return;
+      if (nextVisible !== visible) {
+        visible = nextVisible;
+        ensureClones(visible);
+      }
+      index = Math.min(cardIndex, Math.max(0, count - nextVisible));
+      setTranslate(index, true);
+    }
+    cards.forEach(function (card) {
+      if (card.id) window.hotCarouselByCardId.set(card.id, goToCard);
+    });
+
     function realign() {
       setTranslate(index, false);
     }
@@ -1347,11 +1377,10 @@ JS = """
     try { localStorage.setItem(storageKey, filter); } catch (e) {}
   }
   function scrollToCard(targetId, category) {
-    const card = document.getElementById(targetId);
-    if (!card) return;
+    if (!targetId) return;
     if (category) applyFilter(category);
     requestAnimationFrame(function () {
-      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (window.hotScrollToPlatform) window.hotScrollToPlatform(targetId);
     });
   }
   function scrollToSection(category) {
@@ -1432,8 +1461,8 @@ JS = """
     if (allBtn && !allBtn.classList.contains('is-active')) {
       allBtn.click();
     }
-    requestAnimationFrame(() => {
-      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    requestAnimationFrame(function () {
+      if (window.hotScrollToPlatform) window.hotScrollToPlatform(targetId);
     });
   });
 })();
