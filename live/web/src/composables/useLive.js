@@ -1,4 +1,4 @@
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import {
   fetchRoom,
   mergePayload,
@@ -18,6 +18,7 @@ import {
 } from "../utils/prefStore.js";
 
 const DEFAULT_PLAY_PREFS = { qualityName: "", lineName: "" };
+const DEFAULT_VOLUME_PREFS = { volume: 1 };
 
 function loadPlayPrefs(site) {
   return loadPlatformPref(site, "quality", DEFAULT_PLAY_PREFS, [migrateGlobalQualityToPlatform(site)]);
@@ -28,6 +29,17 @@ function savePlayPrefs(site, patch) {
   const next = { ...prev, ...patch };
   if (!next.qualityName && !next.lineName) return;
   savePlatformPref(site, "quality", next);
+}
+
+function loadVolumePrefs(site) {
+  if (!site) return { ...DEFAULT_VOLUME_PREFS };
+  return loadPlatformPref(site, "volume", DEFAULT_VOLUME_PREFS);
+}
+
+function saveVolumePrefs(site, volumeValue) {
+  if (!site) return;
+  const next = Math.min(1, Math.max(0, Number(volumeValue)));
+  savePlatformPref(site, "volume", { volume: next });
 }
 
 export function useRoom(siteRef) {
@@ -229,13 +241,41 @@ function flvOptionsForSite(site) {
   return config;
 }
 
-export function usePlayer() {
+export function usePlayer(siteRef) {
   const playing = ref(false);
   const streamActive = ref(false);
-  const volume = ref(1);
+  const volume = ref(loadVolumePrefs(siteRef?.value).volume);
   const muted = ref(false);
   let player = null;
   let videoEl = null;
+
+  function cachedVolume() {
+    return loadVolumePrefs(siteRef?.value).volume;
+  }
+
+  function persistVolume(value) {
+    const site = siteRef?.value;
+    if (!site) return;
+    const next = Math.min(1, Math.max(0, Number(value)));
+    saveVolumePrefs(site, next);
+    volume.value = next;
+  }
+
+  function applyCachedVolume(el) {
+    const v = cachedVolume();
+    const next = v > 0 ? v : 1;
+    el.volume = next;
+    volume.value = next;
+  }
+
+  if (siteRef) {
+    watch(
+      () => siteRef.value,
+      (site) => {
+        volume.value = loadVolumePrefs(site).volume;
+      },
+    );
+  }
 
   function flvjs() {
     const api = window.flvjs;
@@ -255,7 +295,7 @@ export function usePlayer() {
 
   function syncVolume() {
     if (!videoEl) {
-      volume.value = 1;
+      volume.value = cachedVolume();
       muted.value = false;
       return;
     }
@@ -301,7 +341,7 @@ export function usePlayer() {
   function destroy() {
     playing.value = false;
     streamActive.value = false;
-    volume.value = 1;
+    volume.value = cachedVolume();
     muted.value = false;
     teardownPlayer();
     unbindVideoEvents();
@@ -338,20 +378,26 @@ export function usePlayer() {
     videoEl.volume = next;
     videoEl.muted = next === 0;
     syncVolume();
+    persistVolume(next);
   }
 
   function toggleMute() {
     if (!videoEl) return;
     videoEl.muted = !videoEl.muted;
-    if (!videoEl.muted && videoEl.volume === 0) videoEl.volume = 1;
+    if (!videoEl.muted && videoEl.volume === 0) {
+      const v = cachedVolume() > 0 ? cachedVolume() : 1;
+      videoEl.volume = v;
+      persistVolume(v);
+    }
     syncVolume();
   }
 
-  /** 在用户点击时直接取消静音，勿重建播放器（重建会打断 CDN 连接导致断流） */
+  /** 在用户操作时直接取消静音，勿重建播放器（重建会打断 CDN 连接导致断流） */
   function unmutePlayback() {
     if (!videoEl) return;
     videoEl.muted = false;
-    if (videoEl.volume === 0) videoEl.volume = 1;
+    const v = cachedVolume() > 0 ? cachedVolume() : 1;
+    if (videoEl.volume === 0) videoEl.volume = v;
     syncVolume();
     startPlay();
   }
@@ -380,8 +426,8 @@ export function usePlayer() {
 
     player.attachMediaElement(el);
     el.playsInline = true;
+    applyCachedVolume(el);
     el.muted = startMuted;
-    el.volume = 1;
     syncVolume();
 
     player.on(flv.Events.ERROR, () => {

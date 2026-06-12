@@ -155,7 +155,7 @@ const {
   unmutePlayback,
   setVolume,
   toggleMute,
-} = usePlayer();
+} = usePlayer(siteRef);
 const {
   messages: danmakuMessages,
   status: danmakuStatus,
