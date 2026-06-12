@@ -236,7 +236,7 @@ def render_snapshot(
         if not slides:
             rows.append(
                 f'<div class="hot-snapshot__row" data-category="{safe_category}" '
-                f'data-ticker-delay="{len(rows) * 1000}" data-ticker-interval="{8000 + (len(rows) % 7) * 450}">'
+                f'data-ticker-delay="{len(rows) * 1000}" data-ticker-interval="{60000 + (len(rows) % 7) * 800}">'
                 f'<span class="hot-snapshot__cat">{category_name}</span>'
                 f'<div class="hot-snapshot__ticker">'
                 f'<span class="hot-snapshot__empty">暂无数据</span></div>'
@@ -263,7 +263,7 @@ def render_snapshot(
         hot_visible = ' style="visibility:hidden"' if not slides[0]["hot"] else ""
         rows.append(
             f'<div class="hot-snapshot__row" data-category="{safe_category}" '
-            f'data-ticker-delay="{len(rows) * 1000}" data-ticker-interval="{8000 + (len(rows) % 7) * 450}">'
+            f'data-ticker-delay="{len(rows) * 1000}" data-ticker-interval="{60000 + (len(rows) % 7) * 800}">'
             f'<span class="hot-snapshot__cat">{category_name}</span>'
             f'<div class="hot-snapshot__ticker">{"".join(slide_html)}</div>'
             f'<span class="hot-snapshot__hot"{hot_visible}>{first_hot}</span></div>'
@@ -535,13 +535,21 @@ body {
   min-width: 0;
   color: inherit;
   text-decoration: none;
+  transform: translateY(100%);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.35s ease;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
 }
 .hot-snapshot__slide.is-active {
+  transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
+  z-index: 1;
+}
+.hot-snapshot__slide.is-exit {
+  transform: translateY(-100%);
+  opacity: 0;
+  z-index: 0;
 }
 .hot-snapshot__slide:hover .hot-snapshot__title { color: var(--link); }
 .hot-snapshot__source {
@@ -965,21 +973,36 @@ JS = """
   });
 })();
 (function () {
+  const TICKER_ANIM_MS = 500;
   document.querySelectorAll('.hot-snapshot__row').forEach(function (row) {
     const slides = row.querySelectorAll('.hot-snapshot__slide');
     const hotEl = row.querySelector('.hot-snapshot__hot');
     if (slides.length <= 1) return;
     let index = 0;
-    const interval = parseInt(row.getAttribute('data-ticker-interval') || '8000', 10);
+    let animating = false;
+    const interval = parseInt(row.getAttribute('data-ticker-interval') || '60000', 10);
     const delay = parseInt(row.getAttribute('data-ticker-delay') || '0', 10);
-    function tick() {
-      slides[index].classList.remove('is-active');
-      index = (index + 1) % slides.length;
-      slides[index].classList.add('is-active');
+    function updateHot(slide) {
       if (!hotEl) return;
-      const hot = slides[index].getAttribute('data-hot') || '';
+      const hot = slide.getAttribute('data-hot') || '';
       hotEl.textContent = hot;
       hotEl.style.visibility = hot ? 'visible' : 'hidden';
+    }
+    function tick() {
+      if (animating) return;
+      animating = true;
+      const current = slides[index];
+      const nextIndex = (index + 1) % slides.length;
+      const next = slides[nextIndex];
+      current.classList.remove('is-active');
+      current.classList.add('is-exit');
+      next.classList.add('is-active');
+      updateHot(next);
+      setTimeout(function () {
+        current.classList.remove('is-exit');
+        index = nextIndex;
+        animating = false;
+      }, TICKER_ANIM_MS);
     }
     setTimeout(function () {
       setInterval(tick, interval);
