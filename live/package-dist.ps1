@@ -67,6 +67,8 @@ Write-Host "==> 复制 server/config.json -> dist/server"
 Copy-Item (Join-Path $ServerSrc "config.json") (Join-Path $DistServer "config.json") -Force
 
 Write-Host "==> 前端构建产物 -> dist/web"
+$assetsDir = Join-Path $DistWeb "assets"
+if (Test-Path $assetsDir) { Remove-Item $assetsDir -Recurse -Force }
 Copy-Item (Join-Path $WebSrc "dist\*") $DistWeb -Recurse -Force
 
 $webConfig = @{

@@ -5,10 +5,9 @@
 
 前端 `config.json` 中 `api.baseUrl` 指向 `http://127.0.0.1:8765`，仅在本机同时开启 API 时可用。
 
-## CI（与 news 相同模式）
+## CI
 
-- **live-deploy.yml**：push `live/dist/web/**` 或手动触发 → 仅更新 gh-pages 的 `/live/`
-- **deploy.yml**：`paths-ignore: live/**`；博客全量发布时仍拷贝 `dist/web`，避免 `force_orphan` 清空子目录
+- **deploy.yml**：`paths-ignore: live/**`，改 live 不触发；博客全量发布时拷贝 `dist/web` 到 gh-pages `/live/`，避免 `force_orphan` 清空子目录
 
 ## 打包
 

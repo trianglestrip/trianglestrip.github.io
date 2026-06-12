@@ -101,15 +101,19 @@
 
 ```js
 routes = [
-  { path: '/', name: 'home', component: HomeView },
-  { path: '/platform/:site', name: 'platform', component: PlatformView },
-  { path: '/watch/:site/:room?', name: 'watch', component: WatchView },
+  { path: '/', redirect: '/douyu' },
+  { path: '/:site', name: 'site-home', component: SiteHomeView },
+  { path: '/:site/play/:id', name: 'play', component: PlayView },
+  { path: '/:site/category', name: 'category-index', component: CategoryIndexView },
+  { path: '/:site/category/:cid', name: 'category-rooms', component: CategoryRoomsView },
+  { path: '/follow', name: 'follow', component: FollowView },
+  { path: '/time', name: 'time', component: TimeView },
 ]
 ```
 
-- `createWebHistory()`；`serve.py` 对非文件路径 fallback 到 `index.html`。
+- `createWebHistory(import.meta.env.BASE_URL)`；GitHub Pages 子路径 SPA 由根 `404.html` 恢复路由。
 - 平台 Tab 使用 `router-link`，active 匹配当前 `site`。
-- 播放页 URL 可分享：`/watch/douyu/5720533`。
+- 播放页 URL 可分享：`/douyu/play/5720533`。
 
 ## 6. 实施里程碑
 

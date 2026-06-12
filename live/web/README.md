@@ -29,7 +29,6 @@ Vue 3 聚合直播前端，通过 `public/config.json` 配置 API 地址，与 `
 ```
 web/
   public/config.json    # 前端运行时配置（构建时复制到 dist/）
-  config.example.json
   src/config/app.js     # 加载 config.json，导出 apiBase()
   src/                  # Vue 源码
   dist/                 # npm run build（单独部署）
