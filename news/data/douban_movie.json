@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-12T14:15:43+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-06-12T17:17:37+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -13,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "家业",
-      "url": "https://movie.douban.com/subject/36883114/",
-      "hot": "评分 7.3"
-    },
-    {
-      "rank": 3,
       "title": "莫离",
       "url": "https://movie.douban.com/subject/37234503/",
       "hot": ""
+    },
+    {
+      "rank": 3,
+      "title": "家业",
+      "url": "https://movie.douban.com/subject/36883114/",
+      "hot": "评分 7.3"
     },
     {
       "rank": 4,
@@ -37,33 +36,33 @@
     },
     {
       "rank": 6,
+      "title": "火遮眼",
+      "url": "https://movie.douban.com/subject/36877245/",
+      "hot": "评分 8.4"
+    },
+    {
+      "rank": 7,
       "title": "翘楚",
       "url": "https://movie.douban.com/subject/36894289/",
       "hot": "评分 5.1"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "校园之外 第一季",
       "url": "https://movie.douban.com/subject/37061179/",
       "hot": "评分 8.5"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "耀眼",
       "url": "https://movie.douban.com/subject/37112008/",
       "hot": "评分 5.9"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "低智商犯罪",
       "url": "https://movie.douban.com/subject/35517044/",
       "hot": "评分 8.1"
-    },
-    {
-      "rank": 10,
-      "title": "诺曼底72小时",
-      "url": "https://movie.douban.com/subject/36916000/",
-      "hot": "评分 8.2"
     }
   ]
 }
