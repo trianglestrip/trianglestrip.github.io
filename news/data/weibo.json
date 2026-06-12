@@ -1,19 +1,19 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-06-12T08:39:21+00:00",
+  "updated_at": "2026-06-12T08:53:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "老外也疑惑中国为什么不参加世界杯",
-      "url": "https://s.weibo.com/weibo?q=%E8%80%81%E5%A4%96%E4%B9%9F%E7%96%91%E6%83%91%E4%B8%AD%E5%9B%BD%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%8F%82%E5%8A%A0%E4%B8%96%E7%95%8C%E6%9D%AF",
+      "title": "世界杯在中国的收视率爆了",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%96%E7%95%8C%E6%9D%AF%E5%9C%A8%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%94%B6%E8%A7%86%E7%8E%87%E7%88%86%E4%BA%86",
       "hot": ""
     },
     {
       "rank": 2,
-      "title": "世界杯在中国的收视率爆了",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%96%E7%95%8C%E6%9D%AF%E5%9C%A8%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%94%B6%E8%A7%86%E7%8E%87%E7%88%86%E4%BA%86",
+      "title": "老外也疑惑中国为什么不参加世界杯",
+      "url": "https://s.weibo.com/weibo?q=%E8%80%81%E5%A4%96%E4%B9%9F%E7%96%91%E6%83%91%E4%B8%AD%E5%9B%BD%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%8F%82%E5%8A%A0%E4%B8%96%E7%95%8C%E6%9D%AF",
       "hot": ""
     },
     {
@@ -24,8 +24,8 @@
     },
     {
       "rank": 4,
-      "title": "联想世界杯一球千金",
-      "url": "https://s.weibo.com/weibo?q=%E8%81%94%E6%83%B3%E4%B8%96%E7%95%8C%E6%9D%AF%E4%B8%80%E7%90%83%E5%8D%83%E9%87%91",
+      "title": "看球上京东猜中冠军抽百万份免单",
+      "url": "https://s.weibo.com/weibo?q=%E7%9C%8B%E7%90%83%E4%B8%8A%E4%BA%AC%E4%B8%9C%E7%8C%9C%E4%B8%AD%E5%86%A0%E5%86%9B%E6%8A%BD%E7%99%BE%E4%B8%87%E4%BB%BD%E5%85%8D%E5%8D%95",
       "hot": ""
     },
     {
@@ -42,26 +42,26 @@
     },
     {
       "rank": 7,
+      "title": "内娱闯不进去的赛道短剧闯进去了",
+      "url": "https://s.weibo.com/weibo?q=%E5%86%85%E5%A8%B1%E9%97%AF%E4%B8%8D%E8%BF%9B%E5%8E%BB%E7%9A%84%E8%B5%9B%E9%81%93%E7%9F%AD%E5%89%A7%E9%97%AF%E8%BF%9B%E5%8E%BB%E4%BA%86",
+      "hot": ""
+    },
+    {
+      "rank": 8,
+      "title": "神州租车 为热爱赴山海",
+      "url": "https://s.weibo.com/weibo?q=%E7%A5%9E%E5%B7%9E%E7%A7%9F%E8%BD%A6%20%E4%B8%BA%E7%83%AD%E7%88%B1%E8%B5%B4%E5%B1%B1%E6%B5%B7",
+      "hot": ""
+    },
+    {
+      "rank": 9,
       "title": "念一辈子本科",
       "url": "https://s.weibo.com/weibo?q=%E5%BF%B5%E4%B8%80%E8%BE%88%E5%AD%90%E6%9C%AC%E7%A7%91",
       "hot": ""
     },
     {
-      "rank": 8,
-      "title": "今日辟谣",
-      "url": "https://s.weibo.com/weibo?q=%E4%BB%8A%E6%97%A5%E8%BE%9F%E8%B0%A3",
-      "hot": ""
-    },
-    {
-      "rank": 9,
+      "rank": 10,
       "title": "张月选安崎投了40票而淡淡投了0",
       "url": "https://s.weibo.com/weibo?q=%E5%BC%A0%E6%9C%88%E9%80%89%E5%AE%89%E5%B4%8E%E6%8A%95%E4%BA%8640%E7%A5%A8%E8%80%8C%E6%B7%A1%E6%B7%A1%E6%8A%95%E4%BA%860",
-      "hot": ""
-    },
-    {
-      "rank": 10,
-      "title": "鹿晗gapday音乐节",
-      "url": "https://s.weibo.com/weibo?q=%E9%B9%BF%E6%99%97gapday%E9%9F%B3%E4%B9%90%E8%8A%82",
       "hot": ""
     }
   ]
