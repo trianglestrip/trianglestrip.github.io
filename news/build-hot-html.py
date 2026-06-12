@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import html
 import json
+import random
 import tomllib
 from datetime import datetime, timezone
 from pathlib import Path
@@ -187,6 +188,95 @@ def category_platforms(order: list[str], platforms: dict, category_id: str) -> l
     return result
 
 
+def category_accent(platforms_in_cat: list[tuple[str, dict]]) -> str:
+    if not platforms_in_cat:
+        return "#888888"
+    _, meta = platforms_in_cat[0]
+    return str(meta.get("color", "#888888"))
+
+
+def load_platform_data(order: list[str]) -> dict[str, dict | None]:
+    data: dict[str, dict | None] = {}
+    for platform_id in order:
+        path = DATA_DIR / f"{platform_id}.json"
+        data[platform_id] = load_json(path) if path.exists() else None
+    return data
+
+
+def render_snapshot(
+    categories: list[dict],
+    order: list[str],
+    platforms: dict,
+    platform_data: dict[str, dict | None],
+) -> str:
+    rows: list[str] = []
+    for cat in categories:
+        category_id = str(cat.get("id", ""))
+        if not category_id:
+            continue
+        category_name = html.escape(str(cat.get("name", category_id)))
+        safe_category = html.escape(category_id)
+        slides: list[dict[str, str]] = []
+
+        for platform_id, meta in category_platforms(order, platforms, category_id):
+            data = platform_data.get(platform_id)
+            items = (data or {}).get("items") or []
+            if not items:
+                continue
+            item = random.choice(items)
+            slides.append(
+                {
+                    "source": str(meta.get("title") or platform_id),
+                    "title": str(item.get("title", "")),
+                    "url": str(item.get("url", "#")),
+                    "hot": str(item.get("hot", "")) if item.get("hot") else "",
+                }
+            )
+
+        if not slides:
+            rows.append(
+                f'<div class="hot-snapshot__row" data-category="{safe_category}">'
+                f'<span class="hot-snapshot__cat">{category_name}</span>'
+                f'<div class="hot-snapshot__ticker">'
+                f'<span class="hot-snapshot__empty">暂无数据</span></div>'
+                f'<span class="hot-snapshot__hot"></span></div>'
+            )
+            continue
+
+        random.shuffle(slides)
+        slide_html: list[str] = []
+        for index, slide in enumerate(slides):
+            source = html.escape(slide["source"])
+            title = html.escape(slide["title"])
+            url = html.escape(slide["url"])
+            hot = html.escape(slide["hot"])
+            active = " is-active" if index == 0 else ""
+            slide_html.append(
+                f'<a class="hot-snapshot__slide{active}" href="{url}" target="_blank" '
+                f'rel="noopener noreferrer" data-hot="{hot}" title="{title}">'
+                f'<span class="hot-snapshot__source">{source}</span>'
+                f'<span class="hot-snapshot__title">{title}</span></a>'
+            )
+
+        first_hot = html.escape(slides[0]["hot"])
+        hot_visible = ' style="visibility:hidden"' if not slides[0]["hot"] else ""
+        rows.append(
+            f'<div class="hot-snapshot__row" data-category="{safe_category}">'
+            f'<span class="hot-snapshot__cat">{category_name}</span>'
+            f'<div class="hot-snapshot__ticker">{"".join(slide_html)}</div>'
+            f'<span class="hot-snapshot__hot"{hot_visible}>{first_hot}</span></div>'
+        )
+
+    if not rows:
+        return ""
+    return (
+        f'<section class="hot-snapshot-wrap" aria-label="网站速览">'
+        f'<h2 class="hot-snapshot__heading">网站速览</h2>'
+        f'<div class="hot-snapshot">{"".join(rows)}</div>'
+        f"</section>"
+    )
+
+
 def render_nav(categories: list[dict], order: list[str], platforms: dict) -> str:
     parts = ['<button type="button" class="hot-nav__btn is-active" data-filter="all">全部</button>']
     for cat in categories:
@@ -215,28 +305,44 @@ def render_nav(categories: list[dict], order: list[str], platforms: dict) -> str
 
 
 def render_dock(
-    display_order: list[str],
+    order: list[str],
     platforms: dict,
+    category_ids: list[str],
     icons: dict | None,
 ) -> str:
     dock_icons = icon_layer(icons, "dock")
-    items: list[str] = []
-    for platform_id in display_order:
-        meta = platforms.get(platform_id)
-        if not meta:
+    groups: list[str] = []
+    merged_ids = category_ids + [
+        cat_id
+        for cat_id in {str(meta.get("category", "")) for meta in platforms.values()}
+        if cat_id and cat_id not in category_ids
+    ]
+
+    for category_id in merged_ids:
+        items_in_cat = category_platforms(order, platforms, category_id)
+        if not items_in_cat:
             continue
-        target_id = html.escape(f"hot-{platform_id}")
-        name = html.escape(str(meta.get("title") or platform_id))
-        icon_html = render_dock_icon(platform_id, meta, dock_icons)
-        items.append(
-            f'<a class="hot-dock__item" href="#{target_id}" data-target="{target_id}">'
-            f'{icon_html}<span class="hot-dock__name">{name}</span></a>'
+        accent = html.escape(category_accent(items_in_cat))
+        items: list[str] = []
+        for platform_id, meta in items_in_cat:
+            target_id = html.escape(f"hot-{platform_id}")
+            name = html.escape(str(meta.get("title") or platform_id))
+            icon_html = render_dock_icon(platform_id, meta, dock_icons)
+            items.append(
+                f'<a class="hot-dock__item" href="#{target_id}" data-target="{target_id}" '
+                f'title="{name}">'
+                f'{icon_html}<span class="hot-dock__name">{name}</span></a>'
+            )
+        groups.append(
+            f'<div class="hot-dock__group" data-category="{html.escape(category_id)}" '
+            f'style="--group-accent: {accent}">{"".join(items)}</div>'
         )
-    if not items:
+
+    if not groups:
         return ""
     return (
         f'<div class="hot-dock-wrap">'
-        f'<nav class="hot-dock" aria-label="平台快捷跳转">{"".join(items)}</nav>'
+        f'<nav class="hot-dock" aria-label="平台快捷跳转">{"".join(groups)}</nav>'
         f"</div>"
     )
 
@@ -377,6 +483,91 @@ body {
   padding: 0.85rem 1.5rem 1rem;
   border-bottom: 1px solid var(--border);
 }
+.hot-snapshot-wrap {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+.hot-snapshot__heading {
+  margin: 0 0 0.55rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.hot-snapshot {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.hot-snapshot__row {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.42rem 0;
+  border-bottom: 1px solid var(--hot-card-row-border);
+}
+.hot-snapshot__row:last-child { border-bottom: none; }
+.hot-snapshot__cat {
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.hot-snapshot__ticker {
+  position: relative;
+  min-width: 0;
+  height: 1.35rem;
+  overflow: hidden;
+}
+.hot-snapshot__slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.hot-snapshot__slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.hot-snapshot__slide:hover .hot-snapshot__title { color: var(--link); }
+.hot-snapshot__source {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+.hot-snapshot__title {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.84rem;
+}
+.hot-snapshot__hot {
+  flex-shrink: 0;
+  max-width: 4.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  text-align: right;
+}
+.hot-snapshot__empty {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
 @media (prefers-color-scheme: dark) {
   .hot-header {
     --hot-header-bg: rgba(27, 28, 32, 0.92);
@@ -467,12 +658,19 @@ body {
 }
 .hot-dock {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.55rem 0.5rem;
-  max-width: 100%;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0.15rem 0.25rem;
+  padding: 0.1rem 0;
+}
+.hot-dock__group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--group-accent, #888) 10%, transparent);
 }
 .hot-dock__item {
   flex: 0 0 auto;
@@ -687,7 +885,8 @@ body {
 }
 @media (max-width: 640px) {
   .hot-header,
-  .hot-dock-wrap {
+  .hot-dock-wrap,
+  .hot-snapshot-wrap {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
@@ -695,8 +894,30 @@ body {
   .hot-header {
     padding: 1rem 0.75rem 0.85rem;
   }
+  .hot-snapshot-wrap {
+    padding: 0.65rem 0.5rem 0.75rem;
+  }
+  .hot-snapshot__row {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    gap: 0.45rem 0.5rem;
+  }
+  .hot-snapshot__hot {
+    display: none;
+  }
   .hot-dock-wrap {
-    padding: 0.75rem 0.75rem 0.85rem;
+    padding: 0.45rem 0.35rem 0.55rem;
+  }
+  .hot-dock__group {
+    gap: 0.1rem;
+    padding: 0.2rem 0.25rem;
+    border-radius: 0.4rem;
+  }
+  .hot-dock__item {
+    width: 2.75rem;
+    gap: 0;
+  }
+  .hot-dock__name {
+    display: none;
   }
   .hot-nav {
     gap: 0.45rem;
@@ -733,6 +954,23 @@ JS = """
   document.querySelectorAll('.hot-card__head time[datetime]').forEach(function (el) {
     const iso = el.getAttribute('datetime');
     if (iso) el.textContent = formatRelative(iso);
+  });
+})();
+(function () {
+  document.querySelectorAll('.hot-snapshot__row').forEach(function (row) {
+    const slides = row.querySelectorAll('.hot-snapshot__slide');
+    const hotEl = row.querySelector('.hot-snapshot__hot');
+    if (slides.length <= 1) return;
+    let index = 0;
+    setInterval(function () {
+      slides[index].classList.remove('is-active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('is-active');
+      if (!hotEl) return;
+      const hot = slides[index].getAttribute('data-hot') || '';
+      hotEl.textContent = hot;
+      hotEl.style.visibility = hot ? 'visible' : 'hidden';
+    }, 3500);
   });
 })();
 (function () {
@@ -903,14 +1141,20 @@ def build() -> Path:
 
     nav_html = render_nav(cfg.get("categories", []), platform_order, platforms)
     category_ids = [cat["id"] for cat in cfg.get("categories", []) if cat.get("id")]
+    platform_data = load_platform_data(platform_order)
+    snapshot_html = render_snapshot(
+        cfg.get("categories", []),
+        platform_order,
+        platforms,
+        platform_data,
+    )
     display_order = interleave_by_category(cfg.get("order", []), platforms, category_ids)
     cards = []
     for platform_id in display_order:
         pmeta = platforms.get(platform_id)
         if not pmeta:
             continue
-        data_path = DATA_DIR / f"{platform_id}.json"
-        data = load_json(data_path) if data_path.exists() else None
+        data = platform_data.get(platform_id)
         cards.append(
             render_card(
                 platform_id,
@@ -922,7 +1166,7 @@ def build() -> Path:
             )
         )
 
-    dock_html = render_dock(display_order, platforms, icons_raw)
+    dock_html = render_dock(platform_order, platforms, category_ids, icons_raw)
     dock_icons = icon_layer(icons_raw, "dock")
     page_js = JS + dock_sprite_js(dock_icons)
     if baidu_id:
@@ -944,6 +1188,7 @@ def build() -> Path:
     <header class="hot-header">
       <nav class="hot-nav" aria-label="热榜分类">{nav_html}</nav>
     </header>
+    {snapshot_html}
     {dock_html}
     <div class="hot-board">{"".join(cards)}</div>
     <footer class="hot-footer">
