@@ -1,5 +1,4 @@
 import { ref } from "vue";
-import flvjs from "flv.js";
 import {
   fetchRoom,
   mergePayload,
@@ -173,6 +172,14 @@ export function usePlayer() {
   const playing = ref(false);
   let player = null;
 
+  function flvjs() {
+    const api = window.flvjs;
+    if (!api) {
+      throw new Error("flv.js 未加载，请确认 index.html 已引入 /flv.min.js");
+    }
+    return api;
+  }
+
   function destroy() {
     playing.value = false;
     if (player) {
@@ -189,13 +196,14 @@ export function usePlayer() {
   }
 
   function playFlv(videoEl, url, { onError, onReady } = {}) {
-    if (!flvjs.isSupported()) {
+    const flv = flvjs();
+    if (!flv.isSupported()) {
       throw new Error("当前浏览器不支持 flv.js");
     }
     destroy();
     playing.value = true;
 
-    player = flvjs.createPlayer(
+    player = flv.createPlayer(
       {
         type: "flv",
         url,
@@ -214,11 +222,11 @@ export function usePlayer() {
     );
 
     player.attachMediaElement(videoEl);
-    player.on(flvjs.Events.ERROR, () => {
+    player.on(flv.Events.ERROR, () => {
       if (!playing.value) return;
       onError?.();
     });
-    player.on(flvjs.Events.MEDIA_INFO, () => {
+    player.on(flv.Events.MEDIA_INFO, () => {
       player.play().catch(() => {});
       onReady?.();
     });

@@ -62,9 +62,13 @@ cd ../player
 
 浏览器打开 http://127.0.0.1:8765/
 
-- `/` — Vue 前端（`dist/`）
+- `/` — Vue 前端（**必须**先 `npm run build`，仅托管 `dist/`；无 dist 时显示构建说明页）
 - `/legacy` — 旧调试页（`player/player.html`）
 - `/api/room` — 解析 API
+
+> **勿**在未 build 的情况下指望 `:8765` 加载源码 `index.html`：浏览器无法解析 `import "vue"`。改 UI 请用 `npm run dev`（`:5173`）。
+
+> **控制台** 若出现 `Permissions policy violation: unload`，来自 flv.js 内部；已在 serve/Vite 设置 `Permissions-Policy: unload=(self)`，一般可忽略，不影响播放。
 
 ## API 对接
 
