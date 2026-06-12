@@ -1,6 +1,6 @@
 @echo off
 setlocal
-cd /d "%~dp0"
+cd /d "%~dp0web"
 
 set PORT=8080
 set LIVE_BASE=/live

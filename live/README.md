@@ -11,7 +11,7 @@
 ## 线上 + 本地 API
 
 - 前端：https://trianglestrip.github.io/live/（随博客 **deploy.yml** 全量发布时拷贝 `dist/web`）
-- API：本机 `dist\server\start.bat`
+- API：本机 `dist\start.bat` / `dist\stop.bat`
 
 `deploy.yml` 已 `paths-ignore: live/**`，改 live 不会单独触发 CI；博客全量发布时仍会拷贝 `dist/web`，避免 `force_orphan` 清空子目录。
 
@@ -19,15 +19,16 @@
 
 ```powershell
 cd live
-.\build-dist.bat   # 构建 dist（改源码后执行）
-.\start.bat        # 启动 dist\server + dist\web
-.\stop.bat         # 停止 API + 前端
+.\build-dist.bat        # 构建 dist（改源码后执行）
+cd dist
+.\start.bat             # 启动 server + web
+.\stop.bat              # 停止 API + 前端
 ```
 
 - API：http://127.0.0.1:8765
 - 前端：http://127.0.0.1:8080/live/
 
-也可分别运行 `dist\server\start.bat`、`dist\web\start.bat`；停止用 `.\stop.bat`。
+也可分别运行 `server\start.bat`、`start-web.bat`。
 
 ## 开发模式（源码）
 

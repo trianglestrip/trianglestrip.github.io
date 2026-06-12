@@ -21,7 +21,7 @@ popd
 
 echo ==^> 清理 dist/server、dist/web
 call :cleanDir "%DIST%server" start.bat config.json
-call :cleanDir "%DIST%web" start.bat server.mjs config.json node.exe
+call :cleanDir "%DIST%web" server.mjs config.json node.exe
 
 echo ==^> PyInstaller 打包 API -^> dist/server/live-api.exe
 "%SERVER%\.venv\Scripts\python.exe" -m pip install pyinstaller -q

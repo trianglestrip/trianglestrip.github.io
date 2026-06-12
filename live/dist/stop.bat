@@ -1,12 +1,11 @@
 @echo off
 setlocal EnableDelayedExpansion
 set "ROOT=%~dp0"
-set "DIST=%ROOT%dist\"
 set "API_PORT=8765"
 set "WEB_PORT=8080"
 
-if exist "%DIST%server\config.json" (
-  for /f "delims=" %%i in ('powershell -NoProfile -Command "(Get-Content '%DIST%server\config.json' -Raw | ConvertFrom-Json).port"') do set "API_PORT=%%i"
+if exist "%ROOT%server\config.json" (
+  for /f "delims=" %%i in ('powershell -NoProfile -Command "(Get-Content '%ROOT%server\config.json' -Raw | ConvertFrom-Json).port"') do set "API_PORT=%%i"
 )
 
 echo 停止 Live 服务（端口 %API_PORT%、%WEB_PORT%）...
