@@ -19,8 +19,9 @@
 
 ```powershell
 cd live
-.\build-dist.ps1   # 构建 dist（改源码后执行）
-.\start.ps1        # 启动 dist\server + dist\web
+.\build-dist.bat   # 构建 dist（改源码后执行）
+.\start.bat        # 启动 dist\server + dist\web
+.\stop.bat         # 停止 API + 前端
 ```
 
 - API：http://127.0.0.1:8765

@@ -13,14 +13,15 @@
 
 ```powershell
 cd live
-.\build-dist.ps1
+.\build-dist.bat
 ```
 
 ## 本地启动
 
 ```powershell
 cd live
-.\start.ps1
+.\start.bat
+.\stop.bat
 ```
 
 或 `dist\start-all.bat` / `server\start.bat` + `web\start.bat`。
