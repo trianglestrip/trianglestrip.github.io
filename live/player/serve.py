@@ -12,7 +12,13 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from compare_streams import compare_room_payloads
-from muxia_api import fetch_room, normalize_room
+from muxia_api import (
+    fetch_categories,
+    fetch_category_rooms,
+    fetch_recommend_rooms,
+    fetch_room,
+    normalize_room,
+)
 from resolve_cache import get as cache_get
 from resolve_cache import set as cache_set
 from resolve_service import resolve_room_sync
@@ -20,6 +26,7 @@ from resolve_service import resolve_room_sync
 ROOT = Path(__file__).resolve().parent
 WEB_ROOT = ROOT.parent / "web"
 WEB_DIST = WEB_ROOT / "dist"
+DEBUG_LOG = ROOT.parent.parent / "debug-79f7ec.log"
 
 BUILD_HINT_HTML = """<!DOCTYPE html>
 <html lang="zh-CN">
@@ -63,6 +70,25 @@ def resolve_web_root(web_root: Path) -> Path | None:
     if dist_index.is_file():
         return web_root / "dist"
     return None
+
+
+def _agent_log(hypothesis_id: str, location: str, message: str, data: dict) -> None:
+    # #region agent log
+    try:
+        payload = {
+            "sessionId": "79f7ec",
+            "hypothesisId": hypothesis_id,
+            "location": location,
+            "message": message,
+            "data": data,
+            "timestamp": int(__import__("time").time() * 1000),
+            "runId": "serve",
+        }
+        with DEBUG_LOG.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(payload, ensure_ascii=False) + "\n")
+    except OSError:
+        pass
+    # #endregion
 ROOM_RES = {
     "douyu": re.compile(r"(?:douyu\.com/)?(\d+)$"),
     "huya": re.compile(r"(?:huya\.com/)?(\d+)$"),
@@ -139,11 +165,20 @@ class Handler(SimpleHTTPRequestHandler):
             self.end_headers()
             return
         if parsed.path.startswith("/api/"):
+            if parsed.path == "/api/health":
+                self._api_health()
+                return
             if parsed.path == "/api/room":
                 self._api_room(parsed)
                 return
             if parsed.path == "/api/compare":
                 self._api_compare(parsed)
+                return
+            if parsed.path == "/api/categories":
+                self._api_categories(parsed)
+                return
+            if parsed.path == "/api/rooms":
+                self._api_rooms(parsed)
                 return
             self.send_error(404)
             return
@@ -185,10 +220,27 @@ class Handler(SimpleHTTPRequestHandler):
                 return
         content = target.read_bytes()
         content_type = self.guess_type(str(target))
+        index_kind = "unknown"
+        if target.name == "index.html":
+            index_kind = "broken-src" if b"/src/main.js" in content else "dist"
+            _agent_log(
+                "H1",
+                "serve.py:_serve_web",
+                "serve index.html",
+                {
+                    "path": path,
+                    "web_root": str(self.web_root),
+                    "target": str(target),
+                    "index_kind": index_kind,
+                    "bytes": len(content),
+                },
+            )
         self.send_response(200)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(content)))
         self._web_headers()
+        if index_kind != "unknown":
+            self.send_header("X-Live-Index-Kind", index_kind)
         self.end_headers()
         self.wfile.write(content)
 
@@ -205,6 +257,20 @@ class Handler(SimpleHTTPRequestHandler):
         self._cors()
         # flv.js 等库可能注册 unload 监听；允许 self 可避免控制台 Permissions-Policy 警告
         self.send_header("Permissions-Policy", "unload=(self)")
+        if self.web_root is not None:
+            self.send_header("X-Live-Web-Root", str(self.web_root))
+
+    def _api_health(self) -> None:
+        web_root = self.web_root
+        dist_index = WEB_DIST / "index.html"
+        payload = {
+            "ok": True,
+            "web_root": str(web_root) if web_root else None,
+            "dist_built": dist_index.is_file(),
+            "mode": "dist" if web_root else "build-required",
+            "dist_index": str(dist_index) if dist_index.is_file() else None,
+        }
+        self._send_json(payload)
 
     def _read_json_body(self) -> dict:
         length = int(self.headers.get("Content-Length", "0"))
@@ -233,6 +299,55 @@ class Handler(SimpleHTTPRequestHandler):
                 self._send_json({"ok": False, "error": "房间未开播"}, status=404)
                 return
             self._send_json(finalize_payload(payload))
+        except Exception as exc:  # noqa: BLE001
+            self._send_json({"ok": False, "error": str(exc)}, status=500)
+
+    def _api_categories(self, parsed) -> None:
+        query = parse_qs(parsed.query)
+        site = query.get("site", ["douyu"])[0]
+        cache_key = f"muxia:categories:{site}"
+        cached = cache_get(cache_key)
+        if cached:
+            self._send_json({"ok": True, "site": site, "categories": cached, "cached": True})
+            return
+        try:
+            categories = fetch_categories(site)
+            cache_set(cache_key, categories, ttl=300)
+            self._send_json({"ok": True, "site": site, "categories": categories})
+        except Exception as exc:  # noqa: BLE001
+            self._send_json({"ok": False, "error": str(exc)}, status=500)
+
+    def _api_rooms(self, parsed) -> None:
+        query = parse_qs(parsed.query)
+        site = query.get("site", ["douyu"])[0]
+        page = int(query.get("page", ["1"])[0] or 1)
+        cid = query.get("cid", query.get("id", [""]))[0]
+        pid = query.get("pid", [""])[0] or None
+        recommend = query.get("recommend", [""])[0] in ("1", "true", "yes")
+        cache_key = f"muxia:rooms:{site}:{'rec' if recommend else cid}:{pid or ''}:{page}"
+        cached = cache_get(cache_key)
+        if cached:
+            self._send_json({"ok": True, "site": site, **cached, "cached": True})
+            return
+        try:
+            if recommend:
+                payload = fetch_recommend_rooms(site, page=page)
+            else:
+                if not cid:
+                    self._send_json({"ok": False, "error": "缺少 cid 参数"}, status=400)
+                    return
+                payload = fetch_category_rooms(site, cid, page=page, pid=pid)
+            result = {
+                "list": payload.get("list") or [],
+                "hasMore": bool(payload.get("hasMore")),
+                "page": page,
+            }
+            if not recommend:
+                result["cid"] = cid
+                if pid:
+                    result["pid"] = pid
+            cache_set(cache_key, result, ttl=60)
+            self._send_json({"ok": True, "site": site, **result})
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 
@@ -323,6 +438,9 @@ def main() -> int:
     print(f"Web 页面: http://127.0.0.1:{args.port}/")
     print(f"Legacy 调试: http://127.0.0.1:{args.port}/legacy")
     print("API: GET /api/room?site=douyu|huya&room=<id>&mode=lazy|full")
+    print("     GET /api/categories?site=douyu|huya")
+    print("     GET /api/rooms?site=douyu|huya&cid=<id>&page=1")
+    print("     GET /api/rooms?site=douyu|huya&recommend=1&page=1")
     print("按 Ctrl+C 停止")
     try:
         server.serve_forever()

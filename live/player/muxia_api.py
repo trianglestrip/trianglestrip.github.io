@@ -31,12 +31,42 @@ def _decode_payload(raw: str) -> dict[str, Any]:
     return payload["data"]
 
 
-def fetch_room(site: str, room_id: str) -> dict[str, Any]:
-    params = urlencode({"id": room_id})
-    url = f"{MUXIA_BASE}{site}/getRoomDetail?{params}"
+def fetch_muxia(site: str, action: str, params: dict[str, Any] | None = None) -> Any:
+    query = urlencode({k: v for k, v in (params or {}).items() if v is not None and v != ""})
+    url = f"{MUXIA_BASE}{site}/{action}"
+    if query:
+        url = f"{url}?{query}"
     resp = requests.get(url, headers=MUXIA_HEADERS, timeout=20)
     resp.raise_for_status()
     return _decode_payload(resp.text)
+
+
+def fetch_room(site: str, room_id: str) -> dict[str, Any]:
+    return fetch_muxia(site, "getRoomDetail", {"id": room_id})
+
+
+def fetch_categories(site: str) -> list[dict[str, Any]]:
+    data = fetch_muxia(site, "getCategories")
+    return data if isinstance(data, list) else []
+
+
+def fetch_category_rooms(
+    site: str,
+    category_id: str | int,
+    *,
+    page: int = 1,
+    pid: str | int | None = None,
+) -> dict[str, Any]:
+    params: dict[str, Any] = {"id": category_id, "page": page}
+    if pid is not None:
+        params["pid"] = pid
+    data = fetch_muxia(site, "getCategoryRooms", params)
+    return data if isinstance(data, dict) else {"list": [], "hasMore": False}
+
+
+def fetch_recommend_rooms(site: str, *, page: int = 1) -> dict[str, Any]:
+    data = fetch_muxia(site, "getRecommendRooms", {"page": page})
+    return data if isinstance(data, dict) else {"list": [], "hasMore": False}
 
 
 def normalize_room(site: str, room_id: str, data: dict[str, Any]) -> dict[str, Any]:

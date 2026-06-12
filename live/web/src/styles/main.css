@@ -11,6 +11,8 @@
   --live: #3ddc84;
   --danger: #ff6b6b;
   --sidebar-width: 340px;
+  --category-width: 168px;
+  --roomlist-width: 300px;
   font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
 }
 
