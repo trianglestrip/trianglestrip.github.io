@@ -458,19 +458,26 @@ CSS = """
   --hot-card-border: #eee;
   --hot-card-row-border: #f3f3f3;
   --hot-content-max: min(96vw, 1200px);
-  --hot-content-pad: clamp(0.75rem, 2.5vw, 2.5rem);
+  --hot-content-pad: clamp(0.75rem, 2vw, 1.25rem);
   --hot-card-min: 280px;
 }
 @media (min-width: 1200px) {
   :root {
-    --hot-content-max: min(94vw, 1440px);
-    --hot-card-min: 300px;
+    --hot-content-max: min(96vw, 1560px);
+    --hot-card-min: 280px;
   }
 }
 @media (min-width: 1600px) {
   :root {
-    --hot-content-max: min(92vw, 1680px);
-    --hot-card-min: 320px;
+    --hot-content-max: min(97vw, 1820px);
+    --hot-card-min: 260px;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --hot-content-max: calc(100vw - 2 * var(--hot-content-pad));
+    --hot-content-pad: 1.25rem;
+    --hot-card-min: 240px;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -552,6 +559,12 @@ body {
 @media (min-width: 1400px) {
   .hot-snapshot {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1920px) {
+  .hot-snapshot {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: clamp(1.5rem, 2vw, 2.5rem);
   }
 }
 .hot-snapshot__row {
@@ -852,12 +865,22 @@ body {
 .hot-dock__item:hover .hot-dock__name { color: var(--link); }
 .hot-board {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--hot-card-min)), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--hot-card-min)), 1fr));
   gap: clamp(0.75rem, 1.5vw, 1.25rem);
   width: 100%;
   max-width: var(--hot-content-max);
   margin: 0 auto;
   padding: 0 var(--hot-content-pad);
+}
+@media (min-width: 1920px) {
+  .hot-board {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1600px) and (max-width: 1919.98px) {
+  .hot-board {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 }
 .hot-card {
   display: flex;
