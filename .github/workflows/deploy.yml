@@ -43,6 +43,32 @@ jobs:
           mkdir -p public/live
           cp -r live/dist/web/* public/live/
           cp public/live/index.html public/live/404.html
+      - name: GitHub Pages 404（/live/* 深链回退到 SPA）
+        run: |
+          cat > public/404.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="zh-CN">
+          <head>
+            <meta charset="UTF-8">
+            <title>404</title>
+            <script>
+            (function () {
+              var path = location.pathname;
+              if (path.startsWith("/live")) {
+                var rest = path.replace(/^\/live/, "") || "/";
+                if (!/\.[a-z0-9]+$/i.test(rest)) {
+                  sessionStorage.setItem("live-gh-pages-path", rest + location.search + location.hash);
+                  location.replace("/live/");
+                  return;
+                }
+              }
+              location.replace("/");
+            })();
+            </script>
+          </head>
+          <body></body>
+          </html>
+          EOF
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:

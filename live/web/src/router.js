@@ -9,6 +9,20 @@ import { PLATFORMS } from "./config/platforms";
 
 const enabledSites = new Set(PLATFORMS.filter((p) => p.enabled).map((p) => p.id));
 
+const GH_PAGES_REDIRECT_KEY = "live-gh-pages-path";
+
+/** GitHub Pages 子路径 SPA：由根 404.html 写入，在此恢复路由 */
+export function consumeGhPagesRedirect(router) {
+  try {
+    const saved = sessionStorage.getItem(GH_PAGES_REDIRECT_KEY);
+    if (!saved) return;
+    sessionStorage.removeItem(GH_PAGES_REDIRECT_KEY);
+    router.replace(saved).catch(() => {});
+  } catch {
+    /* ignore */
+  }
+}
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
