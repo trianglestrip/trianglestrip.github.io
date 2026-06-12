@@ -1,0 +1,355 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-12",
+  "summary": {
+    "live_platforms": 55,
+    "live_ref": "data/config.json → order",
+    "hotboard_supported": 47,
+    "hotboard_gap": 4,
+    "custom_drivers_live": 14,
+    "custom_drivers_unwired": 2
+  },
+  "integration_approaches": [
+    {
+      "id": "hotboard-cli",
+      "name": "hotboard CLI（当前主方案）",
+      "repo": "https://github.com/hotboard/hotboard",
+      "pypi": "hotboard",
+      "pros": [
+        "Python 与 fetch-hot.py 同栈，subprocess 即可",
+        "47 个平台，JSON 输出格式统一",
+        "无自建服务，GitHub Actions cron 友好"
+      ],
+      "cons": [
+        "平台数少于 DailyHotApi / NewsNow",
+        "部分源（hostloc、linuxdo、nytimes）网络不稳定",
+        "gameres 等源可能长期 0 条"
+      ],
+      "fit": "primary"
+    },
+    {
+      "id": "dailyhot-api",
+      "name": "DailyHotApi（HTTP 聚合 API）",
+      "repo": "https://github.com/imsyy/DailyHotApi",
+      "demo": "https://api-hot.imsyy.top",
+      "pros": [
+        "60+ 平台，含 coolapk、hostloc、linux.do",
+        "统一 REST：`GET /{platform}`，支持 RSS",
+        "社区活跃（3k+ stars），TypeScript 易读源码补 driver"
+      ],
+      "cons": [
+        "需自建 Docker/Vercel 或依赖公共实例（稳定性不可控）",
+        "响应格式与 hotboard 不同，需写 adapter",
+        "公共 API 有 rate limit / 下线风险"
+      ],
+      "fit": "secondary",
+      "adapter_sketch": "hot-sources.json 增加 driver: dailyhot_api, base_url + path"
+    },
+    {
+      "id": "dailyhot-api-go",
+      "name": "DailyHotApi-Go",
+      "repo": "https://github.com/ShellMonster/DailyHotApi-Go",
+      "pros": [
+        "DailyHotApi 的 Go 重构，61 渠道，性能更好",
+        "含 The Guardian、Economist 等国际源"
+      ],
+      "cons": [
+        "需单独部署 Go 服务",
+        "与现有 Python CI 多一层运维"
+      ],
+      "fit": "optional_self_host"
+    },
+    {
+      "id": "newsnow",
+      "name": "NewsNow",
+      "repo": "https://github.com/ourongxing/newsnow",
+      "demo": "https://newsnow.busiyi.world",
+      "pros": [
+        "20k+ stars，完整前后端 + 40+ 源",
+        "自适应抓取间隔、MCP server",
+        "sources 定义清晰，可参考移植"
+      ],
+      "cons": [
+        "偏「阅读器产品」而非纯 API",
+        "自部署需 Node + DB；直接调 demo 实例不适合生产",
+        "源格式需 adapter"
+      ],
+      "fit": "reference_or_self_host"
+    },
+    {
+      "id": "rss-direct",
+      "name": "站点 RSS / 公开 API（当前部分源已用）",
+      "examples": ["gcores", "oschina", "qbitai", "producthunt", "nodeseek"],
+      "pros": [
+        "维护成本最低，无第三方聚合依赖",
+        "fetch-hot.py 已有 fetch_rss driver"
+      ],
+      "cons": [
+        "需逐个找 feed，不是所有站都有",
+        "部分 RSS 不含热度字段"
+      ],
+      "fit": "preferred_for_new_sources"
+    },
+    {
+      "id": "rsshub",
+      "name": "RSSHub",
+      "repo": "https://github.com/DIYgod/RSSHub",
+      "pros": [
+        "上千路由，可覆盖 tophub 大量长尾源",
+        "自托管或使用公共实例"
+      ],
+      "cons": [
+        "公共实例限流；路由随站点改版失效",
+        "输出 RSS 需再解析，通常无 hot 数值"
+      ],
+      "fit": "long_tail"
+    },
+    {
+      "id": "tophub-api",
+      "name": "今日热榜·榜眼数据（商业 API）",
+      "url": "https://tophub.today/",
+      "pros": [
+        "与 tophub 同源，覆盖最全",
+        "免维护爬虫"
+      ],
+      "cons": [
+        "付费",
+        "依赖外部商业服务"
+      ],
+      "fit": "if_full_parity_needed"
+    }
+  ],
+  "recommendation": {
+    "short_term": "维持 hotboard CLI；把 status=ready 的源接入；blocked 源在 CI 复测",
+    "medium_term": "新增 dailyhot_api driver，按需补 hostloc/coolapk 等 hotboard 缺口",
+    "long_term": "长尾源走 RSS/RSSHub；不追求与 tophub 1:1"
+  },
+  "status_legend": {
+    "ready": "driver 已写或 hotboard 可用，待写入 config",
+    "backlog": "需新 driver 或调研 RSS",
+    "blocked": "已测试失败，有已知阻塞",
+    "watch": "等 hotboard/DailyHotApi 上游修复",
+    "rejected": "明确不接入"
+  },
+  "entries": [
+    {
+      "id": "coolapk",
+      "title": "酷安",
+      "category": "community",
+      "status": "ready",
+      "priority": "high",
+      "method": "custom_driver",
+      "driver": "coolapk",
+      "tophub": true,
+      "dailyhot_api": "coolapk",
+      "hotboard": false,
+      "blocker": null,
+      "notes": "fetch-hot.py CUSTOM_DRIVERS 已有，写入 hot-sources.json 即可"
+    },
+    {
+      "id": "xueqiu",
+      "title": "雪球",
+      "category": "finance",
+      "status": "ready",
+      "priority": "high",
+      "method": "custom_driver",
+      "driver": "xueqiu",
+      "tophub": true,
+      "dailyhot_api": false,
+      "hotboard": false,
+      "blocker": null,
+      "notes": "fetch-hot.py CUSTOM_DRIVERS 已有，需 cookie 预热；写入配置后 CI 验证"
+    },
+    {
+      "id": "linuxdo",
+      "title": "Linux.do",
+      "category": "community",
+      "status": "blocked",
+      "priority": "medium",
+      "method": "hotboard",
+      "fetcher": "linuxdo",
+      "tophub": true,
+      "dailyhot_api": "linuxdo",
+      "hotboard": true,
+      "blocker": "本地连接 linux.do:443 超时；需在 GitHub Actions 复测或配置代理",
+      "notes": "DailyHotApi 也支持，可二选一验证"
+    },
+    {
+      "id": "hostloc",
+      "title": "全球主机交流论坛",
+      "category": "community",
+      "status": "blocked",
+      "priority": "medium",
+      "method": "hotboard",
+      "fetcher": "hostloc",
+      "tophub": true,
+      "dailyhot_api": "hostloc",
+      "hotboard": true,
+      "blocker": "本地连接 hostloc.com:443 超时",
+      "notes": "RSS 源，网络环境敏感"
+    },
+    {
+      "id": "nytimes",
+      "title": "纽约时报",
+      "category": "news",
+      "status": "blocked",
+      "priority": "low",
+      "method": "hotboard",
+      "fetcher": "nytimes",
+      "tophub": true,
+      "dailyhot_api": false,
+      "hotboard": true,
+      "blocker": "本地连接 cn.nytimes.com 超时",
+      "notes": "境外媒体，国内 CI 也可能不稳定；优先级低"
+    },
+    {
+      "id": "gameres",
+      "title": "GameRes 游资网",
+      "category": "game",
+      "status": "watch",
+      "priority": "low",
+      "method": "hotboard",
+      "fetcher": "gameres",
+      "tophub": true,
+      "dailyhot_api": false,
+      "hotboard": true,
+      "blocker": "hotboard 返回 0 条，解析可能失效",
+      "notes": "等 hotboard 上游修复后再接"
+    },
+    {
+      "id": "genshin",
+      "title": "原神",
+      "category": "game",
+      "status": "backlog",
+      "priority": "low",
+      "method": "dailyhot_api",
+      "fetcher": "genshin",
+      "tophub": true,
+      "dailyhot_api": "genshin",
+      "hotboard": false,
+      "blocker": "需 DailyHotApi adapter 或自写米哈游 API",
+      "notes": "已有 miyoushe，原神/星铁/崩坏为细分，按需再加"
+    },
+    {
+      "id": "starrail",
+      "title": "崩坏：星穹铁道",
+      "category": "game",
+      "status": "backlog",
+      "priority": "low",
+      "method": "dailyhot_api",
+      "fetcher": "starrail",
+      "tophub": true,
+      "dailyhot_api": "starrail",
+      "hotboard": false,
+      "blocker": "同 genshin",
+      "notes": null
+    },
+    {
+      "id": "honkai",
+      "title": "崩坏3",
+      "category": "game",
+      "status": "backlog",
+      "priority": "low",
+      "method": "dailyhot_api",
+      "fetcher": "honkai",
+      "tophub": true,
+      "dailyhot_api": "honkai",
+      "hotboard": false,
+      "blocker": "同 genshin",
+      "notes": null
+    },
+    {
+      "id": "cls",
+      "title": "财联社",
+      "category": "finance",
+      "status": "backlog",
+      "priority": "medium",
+      "method": "rss_or_custom",
+      "tophub": true,
+      "dailyhot_api": false,
+      "hotboard": false,
+      "blocker": "无 hotboard 支持，需查 RSS 或 telegraph API",
+      "notes": "财经类用户需求高，建议优先调研 RSSHub / 官方 feed"
+    },
+    {
+      "id": "eastmoney",
+      "title": "东方财富",
+      "category": "finance",
+      "status": "backlog",
+      "priority": "medium",
+      "method": "rss_or_custom",
+      "tophub": true,
+      "dailyhot_api": false,
+      "hotboard": false,
+      "blocker": "需自定义 API",
+      "notes": null
+    },
+    {
+      "id": "solidot",
+      "title": "Solidot",
+      "category": "tech",
+      "status": "backlog",
+      "priority": "medium",
+      "method": "rss",
+      "rss_url": "https://www.solidot.org/index.rss",
+      "tophub": true,
+      "dailyhot_api": false,
+      "hotboard": false,
+      "blocker": null,
+      "notes": "RSS 现成，可用 driver=rss 快速接入"
+    },
+    {
+      "id": "readhub",
+      "title": "Readhub",
+      "category": "tech",
+      "status": "backlog",
+      "priority": "medium",
+      "method": "custom",
+      "tophub": true,
+      "dailyhot_api": false,
+      "hotboard": false,
+      "blocker": "需查 readhub.cn API 是否仍开放",
+      "notes": null
+    },
+    {
+      "id": "theguardian",
+      "title": "The Guardian",
+      "category": "news",
+      "status": "backlog",
+      "priority": "low",
+      "method": "dailyhot_api",
+      "fetcher": "theguardian",
+      "tophub": false,
+      "dailyhot_api": "theguardian",
+      "hotboard": false,
+      "blocker": "仅 DailyHotApi-Go 明确支持，需 adapter",
+      "notes": "国际新闻，按需"
+    },
+    {
+      "id": "smzdm",
+      "title": "什么值得买",
+      "category": "shopping",
+      "status": "rejected",
+      "priority": null,
+      "method": null,
+      "tophub": true,
+      "dailyhot_api": false,
+      "hotboard": false,
+      "blocker": "用户要求排除购物类",
+      "notes": null
+    },
+    {
+      "id": "manmanbuy",
+      "title": "慢慢买",
+      "category": "shopping",
+      "status": "rejected",
+      "priority": null,
+      "method": null,
+      "tophub": true,
+      "dailyhot_api": false,
+      "hotboard": false,
+      "blocker": "用户要求排除购物类",
+      "notes": null
+    }
+  ]
+}
