@@ -2,7 +2,7 @@ import { chromium } from "playwright";
 
 const browser = await chromium.launch({ headless: true, channel: "chrome" });
 const page = await browser.newPage({ viewport: { width: 1400, height: 900 } });
-await page.goto("https://lemonlive.pages.dev/", { waitUntil: "domcontentloaded", timeout: 45000 });
+await page.goto("https://lemonlive.deno.dev/", { waitUntil: "networkidle", timeout: 60000 });
 await page.waitForSelector("#app", { timeout: 20000 }).catch(() => {});
 await page.waitForTimeout(6000);
 

@@ -3,36 +3,40 @@
   --bg: #181818;
   --bg-elevated: #1f1f1f;
   --bg-soft: #141414;
+  --dark-6: #2a2a2a;
+  --dark-7: #181818;
   --panel: #222;
-  --border: #2e2e2e;
+  --border: #3a3a3a;
+  --gray-7: #3a3a3a;
   --text: #ffffffde;
   --muted: #ffffff8c;
   --lemon: #f3d04e;
+  --amber: #f3d04e;
   --live: #3ddc84;
   --danger: #ff6b6b;
-  --sidebar-width: 340px;
-  --category-width: 168px;
-  --roomlist-width: 300px;
+  --nav-width: 70px;
+  --nav-height: 56px;
+  --play-sidebar-width: 320px;
   font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
 
+html, body, #app {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  min-height: 100vh;
   background: var(--bg);
   color: var(--text);
 }
 
-a { color: var(--lemon); }
-
-#app {
-  min-height: 100vh;
-}
+a { color: var(--amber); text-decoration: none; }
 
 .scrolly {
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .scrolly::-webkit-scrollbar {
@@ -48,7 +52,7 @@ input, select, .btn {
   border: 1px solid var(--border);
   background: var(--bg-soft);
   color: var(--text);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: .52rem .65rem;
   font: inherit;
   font-size: .88rem;
@@ -60,11 +64,12 @@ select:disabled, input:disabled {
 
 .btn {
   cursor: pointer;
-  transition: border-color .15s, background .15s;
+  transition: border-color .15s, background .15s, color .15s;
 }
 
 .btn:hover:not(:disabled) {
-  border-color: var(--lemon);
+  border-color: var(--amber);
+  color: var(--amber);
 }
 
 .btn:disabled {
@@ -73,12 +78,26 @@ select:disabled, input:disabled {
 }
 
 .btn-primary {
-  border-color: var(--lemon);
-  background: var(--lemon);
+  border-color: var(--amber);
+  background: var(--amber);
   color: #1a1400;
   font-weight: 600;
 }
 
 .btn-primary:hover:not(:disabled) {
   filter: brightness(1.05);
+  color: #1a1400;
+}
+
+.text-amber { color: var(--amber); }
+.hover-amber:hover { color: var(--amber); }
+
+.page-fill {
+  height: calc(100vh - var(--nav-height));
+}
+
+@media (min-width: 768px) {
+  .page-fill {
+    height: calc(100vh - 1rem);
+  }
 }
