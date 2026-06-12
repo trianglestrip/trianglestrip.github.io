@@ -553,7 +553,7 @@ CSS = """
 }
 * { box-sizing: border-box; }
 :root {
-  --hot-scroll-offset: 100px;
+  --hot-scroll-offset: 100px; /* 默认下限，JS 按 .hot-header 实测更新 */
 }
 html {
   scroll-padding-top: var(--hot-scroll-offset);
@@ -585,6 +585,45 @@ body {
 }
 .hot-footer__stats { margin: 0; }
 .hot-footer__sep { margin: 0 0.4rem; opacity: 0.55; }
+.hot-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 120;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--hot-card-bg, #fff);
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.5rem);
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s, border-color 0.2s, color 0.2s;
+}
+.hot-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.hot-top:hover {
+  border-color: var(--link);
+  color: var(--link);
+}
+@media (max-width: 640px) {
+  .hot-top {
+    right: 0.85rem;
+    bottom: 0.85rem;
+    width: 2.35rem;
+    height: 2.35rem;
+    font-size: 1.05rem;
+  }
+}
 .hot-header {
   position: sticky;
   top: 0;
@@ -597,6 +636,22 @@ body {
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   overflow: visible;
+}
+@media (min-width: 641px) {
+  .hot-header {
+    padding: 0.55rem var(--hot-content-pad) 0.5rem;
+  }
+  .hot-nav {
+    gap: 0.45rem;
+    padding: 0.32rem clamp(0.4rem, 1vw, 0.7rem);
+    border-radius: 1.5rem;
+  }
+  .hot-nav__btn {
+    padding: 0.4rem 1rem;
+    min-height: 2rem;
+    font-size: 0.88rem;
+    border-radius: 1.35rem;
+  }
 }
 .hot-dock-wrap {
   width: 100%;
@@ -1247,18 +1302,35 @@ body {
 
 JS = """
 (function () {
-  const NAV_OFFSET = 100;
+  const MIN_OFFSET = 100;
+  const GAP = 12;
   function hotGetScrollOffset() {
-    return NAV_OFFSET;
+    const header = document.querySelector('.hot-header');
+    const measured = header
+      ? Math.ceil(header.getBoundingClientRect().height) + GAP
+      : MIN_OFFSET;
+    return Math.max(MIN_OFFSET, measured);
   }
   function hotUpdateScrollOffset() {
-    document.documentElement.style.setProperty('--hot-scroll-offset', NAV_OFFSET + 'px');
+    document.documentElement.style.setProperty(
+      '--hot-scroll-offset',
+      hotGetScrollOffset() + 'px'
+    );
   }
   function hotScrollToElement(el, behavior) {
     if (!el) return;
+    hotUpdateScrollOffset();
     const offset = hotGetScrollOffset();
     const top = el.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top: Math.max(0, top), behavior: behavior || 'smooth' });
+  }
+  function hotCorrectScroll(el) {
+    hotUpdateScrollOffset();
+    const offset = hotGetScrollOffset();
+    const drift = el.getBoundingClientRect().top - offset;
+    if (Math.abs(drift) > 2) {
+      hotScrollToElement(el, 'auto');
+    }
   }
   function hotScrollAfterLayout(el) {
     if (!el) return;
@@ -1268,12 +1340,8 @@ JS = """
       requestAnimationFrame(function () {
         hotScrollToElement(el, 'smooth');
         window.setTimeout(function () {
-          const offset = hotGetScrollOffset();
-          const drift = el.getBoundingClientRect().top - offset;
-          if (Math.abs(drift) > 2) {
-            hotScrollToElement(el, 'auto');
-          }
-        }, 380);
+          hotCorrectScroll(el);
+        }, 480);
       });
     });
   }
@@ -1282,6 +1350,24 @@ JS = """
   window.hotScrollToElement = hotScrollToElement;
   window.hotScrollAfterLayout = hotScrollAfterLayout;
   hotUpdateScrollOffset();
+  window.addEventListener('resize', hotUpdateScrollOffset);
+})();
+(function () {
+  const btn = document.getElementById('hotTop');
+  if (!btn) return;
+  const threshold = 320;
+  function toggleTop() {
+    const show = window.scrollY > threshold;
+    btn.classList.toggle('is-visible', show);
+    btn.hidden = !show;
+  }
+  window.addEventListener('scroll', toggleTop, { passive: true });
+  toggleTop();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+(function () {
   window.hotCarouselByCardId = new Map();
   window.hotScrollToPlatform = function (targetId) {
     const card = document.getElementById(targetId);
@@ -1723,6 +1809,7 @@ def build() -> Path:
       </p>
     </footer>
   </main>
+  <button type="button" class="hot-top" id="hotTop" aria-label="回到顶部" title="回到顶部" hidden>↑</button>
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <script>{page_js}</script>
 </body>
