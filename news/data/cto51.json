@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-12T01:38:08+00:00",
+  "updated_at": "2026-06-12T03:44:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Binwalk 路径遍历漏洞：将固件分析转化为代码执行",
-      "url": "https://www.51cto.com/article/846077.html",
-      "hot": "该漏洞被追踪为 CVE-2026-7179 。这是binwalk的WinCE ROM提取插件中的一个路径遍历漏洞(CWE-22)。"
+      "title": "鸿蒙通用设置列表组件：数据驱动 + 样式模型，一套代码适配所有设置页",
+      "url": "https://ost.51cto.com/posts/45997",
+      "hot": "完整源码已上传[AppCustomizationDemo](https:gitee.comHarmonyOSUIBasicsharmonyosuibasics.git)。一、痛点：每个设置页都在重复造轮子开..."
     },
     {
       "rank": 2,
-      "title": "我的 SQL 查询突然慢了十倍，排查半天结果是这个索引没用上",
-      "url": "https://www.51cto.com/article/846086.html",
-      "hot": "上周五产品临时提了一个需求，要在导出时增加一个“最近30天活跃用户”的筛选条件我寻思这简单，加个WHERE子句的事，改完测试了一下，数据量小，没问题，结果周一上班就出事了。"
+      "title": "HarmonyOS 打卡器开发实战",
+      "url": "https://ost.51cto.com/posts/45990",
+      "hot": "HarmonyOS打卡器开发实战从零构建一个让人停不下来的习惯养成工具，深入理解ComponentV2状态管理写在前面：为什么你的Flag总是倒下？你有没..."
     },
     {
       "rank": 3,
-      "title": "Python 的导入陷阱：为什么你的模块加载有时候很慢",
-      "url": "https://www.51cto.com/article/846083.html",
-      "hot": "Python的import机制不像C的#include那样做文本替换。每次import，Python要做三件事：定位模块文件、编译字节码、执行模块顶层代码。"
+      "title": "具身智能数据基建升级！神经腕带+全景头环，补全物理操作信号",
+      "url": "https://www.51cto.com/article/846169.html",
+      "hot": "具身智能正在从实验室演示走向真实场景。越往真实世界走，数据问题越明显：视频能看到动作结果，动捕能记录轨迹，机器人日志能记录执行，但它们往往很难完整捕捉人类操作背后的意图、发力趋势、微控制和反馈修正。围绕这一缺口，一类新的人类操控数据基建正在出现。"
     },
     {
       "rank": 4,
-      "title": "勒索软件的「上班时间」，从 16,699 条泄露帖看地下勒索的运营节律",
-      "url": "https://www.51cto.com/article/846071.html",
-      "hot": "16,699 条泄露帖揭示了勒索软件公开施压环节的一个现实：它正在按地下商业组织的节奏运转。"
+      "title": "OpenSpec 和 Superpowers 串不起来跑？问题出在交接格式上",
+      "url": "https://www.51cto.com/article/846162.html",
+      "hot": "有人直接点出了痛点：\"Superpowers并不会用OpenSpec的输出成果来推进，两者之间有很多断点。\"另一位读者观察得更细：\"Superpowers会根据​​task.md​​重新生成计划，按自己的理解再来一遍，跟OpenSpec的设计之间有差异。\"这两个问题说到点子上了。这篇就来回答：断点卡在哪，以及我们怎么解决的。"
     },
     {
       "rank": 5,
-      "title": "打造高效 mac 终端：oh-my-zsh 与插件配置",
-      "url": "https://www.51cto.com/article/846070.html",
-      "hot": "本文将在原生终端（系统默认的terminal或者iTerm2）的基础上配置oh-my-zsh，并引入五款实用插件，实现如下高效操作。"
+      "title": "AI 总忽略已有代码自己新建？三个结构性解法",
+      "url": "https://www.51cto.com/article/846145.html",
+      "hot": "上一篇用AI写代码，需求补不完，代码总有偏差把\"为什么偏\"拆清楚了：AI拿到模糊输入时不追问，直接推理补位；代码越多它\"看不见\"的越多，方向和人类完全相反。这篇解决\"怎么治\"——不靠更好的prompt，靠改变你的项目结构和工作流。"
     },
     {
       "rank": 6,
-      "title": "SpringBoot 事件机制：ApplicationEvent 与监听器",
-      "url": "https://www.51cto.com/article/846032.html",
-      "hot": "Spring 事件机制，本质是标准的观察者模式（发布-订阅模式），核心目的是解耦发布者与订阅者，让两者之间没有直接依赖，仅通过“事件”进行通信。"
+      "title": "SpringBoot 自动配置过滤：排除特定自动配置",
+      "url": "https://www.51cto.com/article/846033.html",
+      "hot": "SpringBoot 自动配置排除，看似简单，却是解决项目启动报错、避免Bean冲突的核心技巧，也是面试高频考点。"
     },
     {
       "rank": 7,
-      "title": "Composable 的命名规矩和参数约定，别再瞎写了",
-      "url": "https://www.51cto.com/article/845978.html",
-      "hot": "Vue社区对Composables有一套公认的约定，虽然不是强制的，但大家都这么干，你跟着走准没错。"
+      "title": "AI Agent Skill 工程化（方法论篇）：写 Skill 还是 SOP？但好 Skill 必须懂 SOP",
+      "url": "https://www.51cto.com/article/846140.html",
+      "hot": "2026 年的 Skill 工程化，已经走过了\"有没有\"的阶段，进入了\"好不好\"的深水区。掌握这个决策框架，你的 Skill 就不再是又长又模糊的 Prompt 集合，而是真正能让 Agent 从通用走向专业的工程化资产。"
     },
     {
       "rank": 8,
-      "title": "深入浅出 Linux 内核（进程篇）：进程创建与退出",
-      "url": "https://www.51cto.com/article/845972.html",
-      "hot": "不管是终止整个进程的 exit_group，还是终止单个线程的 exit，最终都会走到 do_exit 函数里，把进程占的所有资源释放干净，等待父进程回收最后的进程描述符。"
+      "title": "Claude Fable 5 大解禁，我说三个大家没看到的点",
+      "url": "https://www.51cto.com/article/846112.html",
+      "hot": "AI能力超越人类理解、开始自我加速进化，可能正在成为现实。而留给人类准备的时间，已经不多了。"
     },
     {
       "rank": 9,
-      "title": "RAG+rigrep，企业知识层检索的优秀范式",
-      "url": "https://www.51cto.com/article/846064.html",
-      "hot": "这篇文章想要分享的主题是：为什么 Agent 喜欢用 rg；为什么 rg 不能替代 RAG；以及企业知识层该怎样组合词面检索、语义检索和工具调用。"
+      "title": "代码作为Harness！UIUC、Meta等剖析代码如何撑起 AI 智能体",
+      "url": "https://www.51cto.com/article/846111.html",
+      "hot": "UIUC（伊利诺伊大学香槟分校）、Meta 和 Stanford（斯坦福大学）的学者们从一个全新的视角来解读 Harness。"
     },
     {
       "rank": 10,
-      "title": "十万个why：Feign 超时时间明明设了三秒，为什么实际等了十秒才返回超时？",
-      "url": "https://www.51cto.com/article/846060.html",
-      "hot": "很多人不知道，在 ​​Spring Cloud 2020.0​​ 之前的版本（对应 Spring Boot 2.4 之前），Feign 底层的 HTTP 调用不是自己发出去的，而是委托给 Ribbon 的 LoadBalancerFeignClient 来执行的。"
+      "title": "自动驾驶、机器人、视觉AI，英伟达一套物理AI Agent Skills搞定",
+      "url": "https://www.51cto.com/article/846110.html",
+      "hot": "NVIDIA在CVPR上发布了一套Physical AI Agent Skills，把从数据生成、仿真、策略训练到评估的整条链路串了起来。"
     }
   ]
 }
