@@ -477,7 +477,6 @@ CSS = """
   :root {
     --hot-content-max: calc(100vw - 2 * var(--hot-content-pad));
     --hot-content-pad: 1.25rem;
-    --hot-card-min: 240px;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -874,7 +873,22 @@ body {
 }
 @media (min-width: 1920px) {
   .hot-board {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .hot-card__link {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.35;
+  }
+  .hot-card__row {
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+  .hot-card__hot {
+    max-width: 5.5rem;
   }
 }
 @media (min-width: 1600px) and (max-width: 1919.98px) {
