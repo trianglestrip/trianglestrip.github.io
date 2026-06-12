@@ -151,6 +151,42 @@ def fetch_yystv_api(limit: int) -> list[dict]:
     return items
 
 
+def fetch_zhihu_daily(limit: int) -> list[dict]:
+    """知乎日报：合并 top_stories 与 stories，比 hotboard 仅读 stories 更完整。"""
+    headers = {
+        "Referer": "https://daily.zhihu.com/",
+        "Host": "daily.zhihu.com",
+    }
+    data = http_get_json("https://daily.zhihu.com/api/4/news/latest", headers)
+    if not isinstance(data, dict):
+        raise RuntimeError("invalid zhihu daily response")
+
+    seen: set[object] = set()
+    items: list[dict] = []
+    for key in ("top_stories", "stories"):
+        for entry in data.get(key) or []:
+            if not isinstance(entry, dict) or entry.get("type") != 0:
+                continue
+            story_id = entry.get("id")
+            if story_id in seen:
+                continue
+            seen.add(story_id)
+            title = str(entry.get("title", "")).strip()
+            url = str(entry.get("url", "")).strip()
+            if not title or not url:
+                continue
+            items.append(
+                {
+                    "title": title,
+                    "url": url,
+                    "hot": str(entry.get("hint", "") or "").strip(),
+                }
+            )
+            if len(items) >= limit:
+                return items
+    return items
+
+
 def fetch_jianshu_trending(limit: int) -> list[dict]:
     text = http_get_text(
         "https://www.jianshu.com/asimov/trending/now",
@@ -490,6 +526,7 @@ def fetch_hackernews_api(limit: int) -> list[dict]:
 CUSTOM_DRIVERS = {
     "v2ex_api": fetch_v2ex_api,
     "yystv_api": fetch_yystv_api,
+    "zhihu_daily_api": fetch_zhihu_daily,
     "jianshu_trending": fetch_jianshu_trending,
     "douban_group": fetch_douban_group,
     "douban_movie": fetch_douban_movie,

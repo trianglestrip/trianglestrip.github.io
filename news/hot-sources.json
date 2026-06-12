@@ -63,7 +63,7 @@
   ],
   "platforms": {
     "zhihu": { "title": "知乎热榜", "fetcher": "zhihu", "limit": 10, "ttl_minutes": 20 },
-    "zhihu_daily": { "title": "知乎日报", "fetcher": "zhihu", "hotboard_args": ["--type", "daily"], "min_items": 1, "limit": 10, "ttl_minutes": 120 },
+    "zhihu_daily": { "title": "知乎日报", "fetcher": "zhihu", "driver": "zhihu_daily_api", "min_items": 1, "limit": 10, "ttl_minutes": 120 },
     "weibo": { "title": "微博热搜", "fetcher": "weibo", "limit": 10, "ttl_minutes": 5 },
     "baidu": { "title": "百度热搜", "fetcher": "baidu", "limit": 10, "ttl_minutes": 10 },
     "toutiao": { "title": "今日头条", "fetcher": "toutiao", "limit": 10, "ttl_minutes": 10 },
