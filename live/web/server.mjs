@@ -43,6 +43,9 @@ function resolveFile(urlPath) {
     filePath = path.join(filePath, "index.html");
   }
   if (!fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
+    const ext = path.extname(rel).toLowerCase();
+    // 静态资源缺失时返回 404，避免把 index.html 当 JS/CSS 导致白屏
+    if (ext && MIME[ext]) return null;
     filePath = path.join(ROOT, "index.html");
   }
   return filePath;
@@ -52,8 +55,8 @@ http
   .createServer((req, res) => {
     const filePath = resolveFile(req.url);
     if (!filePath) {
-      res.writeHead(403);
-      res.end("Forbidden");
+      res.writeHead(404);
+      res.end("Not found");
       return;
     }
     const ext = path.extname(filePath).toLowerCase();

@@ -2,7 +2,7 @@
   <aside class="play-side">
     <div class="side-header">
       <div class="room-info">
-        <img v-if="cover" :src="cover" class="room-cover" alt="">
+        <LazyImage v-if="cover" :src="cover" image-class="room-cover" eager />
         <div v-else class="room-cover room-cover--empty">无封面</div>
         <div class="room-detail">
           <p class="room-title">{{ title }}</p>
@@ -48,7 +48,7 @@
         class="follow-item"
         @click="$emit('play-room', room)"
       >
-        <img v-if="room.cover" :src="room.cover" class="follow-cover" alt="">
+        <LazyImage v-if="room.cover" :src="room.cover" image-class="follow-cover" />
         <div v-else class="follow-cover follow-cover--empty"></div>
         <div class="follow-info">
           <p class="follow-title">{{ room.title || `房间 ${room.id}` }}</p>
@@ -127,6 +127,7 @@
 import { ref, computed, watch, nextTick } from "vue";
 import { getPlatform } from "../config/platforms";
 import Icon from "./Icon.vue";
+import LazyImage from "./LazyImage.vue";
 
 const props = defineProps({
   statusText: { type: String, default: "" },

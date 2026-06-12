@@ -15,7 +15,7 @@
           class="follow-item"
           @click="goPlay(room)"
         >
-          <img v-if="room.cover" :src="room.cover" class="follow-cover" alt="">
+          <LazyImage v-if="room.cover" :src="room.cover" image-class="follow-cover" />
           <div v-else class="follow-cover follow-cover--empty"></div>
           <div class="follow-info">
             <p class="follow-title">{{ room.title || `房间 ${room.id}` }}</p>
@@ -32,6 +32,7 @@
 import { useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import Icon from "../components/Icon.vue";
+import LazyImage from "../components/LazyImage.vue";
 import { getPlatform } from "../config/platforms";
 import { useFollow } from "../composables/useFollow.js";
 

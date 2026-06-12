@@ -16,6 +16,11 @@ _HEADERS = {
     "Referer": "https://www.huya.com/",
 }
 
+_DOUYU_HEADERS = {
+    **_HEADERS,
+    "Referer": "https://www.douyu.com/",
+}
+
 _HUYA_GAME_PIC = "https://huyaimg.msstatic.com/cdnimage/game/{cid}-MS.jpg"
 
 # 虎牙分类页接口不稳定，使用常用分区；房间列表仍走 live.huya.com 实时接口。
@@ -42,13 +47,20 @@ _HUYA_CATEGORY_GROUPS: list[dict[str, Any]] = [
 ]
 
 
-def _get_json(url: str, *, params: dict | None = None, method: str = "GET", json_body: Any = None) -> Any:
+def _get_json(
+    url: str,
+    *,
+    params: dict | None = None,
+    method: str = "GET",
+    json_body: Any = None,
+    headers: dict[str, str] | None = None,
+) -> Any:
     resp = requests.request(
         method,
         url,
         params=params,
         json=json_body,
-        headers=_HEADERS,
+        headers=headers or _HEADERS,
         timeout=20,
     )
     resp.raise_for_status()
@@ -125,8 +137,43 @@ def _fetch_huya_categories() -> list[dict[str, Any]]:
     return groups
 
 
+_douyu_cate2_name_cache: dict[str, str] | None = None
+
+
+def _douyu_cate2_names() -> dict[str, str]:
+    global _douyu_cate2_name_cache
+    if _douyu_cate2_name_cache is None:
+        mapping: dict[str, str] = {}
+        for group in _fetch_douyu_categories():
+            for item in group.get("list") or []:
+                cid = item.get("cid")
+                if cid is not None:
+                    mapping[str(cid)] = item.get("name") or ""
+        _douyu_cate2_name_cache = mapping
+    return _douyu_cate2_name_cache
+
+
+def _douyu_online(item: dict[str, Any]) -> str:
+    hn = item.get("hn")
+    if hn:
+        text = str(hn).strip()
+        if text:
+            return text
+    return _format_online(item.get("online") or item.get("viewerCount"))
+
+
+def _douyu_category(item: dict[str, Any]) -> str:
+    name = item.get("cate2Name") or item.get("gameName") or item.get("cate3Name")
+    if name:
+        return str(name)
+    cid = item.get("cate2Id") or item.get("cate1Id")
+    if cid is not None:
+        return _douyu_cate2_names().get(str(cid), "")
+    return ""
+
+
 def _fetch_douyu_categories() -> list[dict[str, Any]]:
-    data = _get_json("https://m.douyu.com/api/cate/list")
+    data = _get_json("https://m.douyu.com/api/cate/list", headers=_DOUYU_HEADERS)
     payload = data.get("data") or {}
     cate1 = {item["cate1Id"]: item["cate1Name"] for item in payload.get("cate1Info") or []}
     grouped: dict[int, dict[str, Any]] = {}
@@ -151,12 +198,12 @@ def _normalize_douyu_room(item: dict[str, Any]) -> dict[str, Any]:
         {
             "roomId": str(item.get("rid") or ""),
             "siteId": "douyu",
-            "status": bool(item.get("showStatus", 1)),
+            "status": bool(item.get("isLive", item.get("showStatus", 1))),
             "title": item.get("roomName") or "",
             "nickname": item.get("nickname") or item.get("ownerName") or "",
             "cid": str(item.get("cate2Id") or item.get("cate1Id") or ""),
-            "category": item.get("cate2Name") or item.get("gameName") or "",
-            "online": _format_online(item.get("online")),
+            "category": _douyu_category(item),
+            "online": _douyu_online(item),
             "cover": item.get("roomSrc") or item.get("verticalSrc") or "",
         }
     )
@@ -166,7 +213,7 @@ def _fetch_douyu_rooms(*, cid: int | str | None, page: int, limit: int = 30) -> 
     params: dict[str, Any] = {"page": page, "limit": limit}
     if cid is not None and str(cid) not in ("", "0"):
         params["cate2Id"] = cid
-    data = _get_json("https://m.douyu.com/api/room/list", params=params)
+    data = _get_json("https://m.douyu.com/api/room/list", params=params, headers=_DOUYU_HEADERS)
     payload = data.get("data") or {}
     items = payload.get("list") or []
     page_count = int(payload.get("pageCount") or 1)

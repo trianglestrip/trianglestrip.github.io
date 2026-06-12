@@ -10,6 +10,7 @@
 
 <script setup>
 import { nextTick, onBeforeUnmount, onMounted, ref, watch } from "vue";
+import { findScrollRoot } from "../utils/scrollRoot.js";
 
 const props = defineProps({
   loading: { type: Boolean, default: false },
@@ -24,19 +25,6 @@ const rootEl = ref(null);
 const sentinelEl = ref(null);
 let observer = null;
 let scrollRoot = null;
-
-function findScrollRoot(el) {
-  let node = el?.parentElement;
-  while (node) {
-    const style = getComputedStyle(node);
-    const overflowY = style.overflowY;
-    if (overflowY === "auto" || overflowY === "scroll") {
-      return node;
-    }
-    node = node.parentElement;
-  }
-  return null;
-}
 
 function tryLoad() {
   if (props.loading || props.finished || props.error) return;

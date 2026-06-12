@@ -9,7 +9,7 @@
     >
       <div class="room-item-info">
         <div class="room-cover-wrap">
-          <img v-if="room.cover" :src="room.cover" class="room-cover" alt="" loading="lazy">
+          <LazyImage v-if="room.cover" :src="room.cover" image-class="room-cover" />
           <div v-else class="room-cover room-cover--empty">无封面</div>
           <span v-if="room.category" class="room-badge room-badge--cat">{{ room.category }}</span>
           <span v-if="room.online" class="room-badge room-badge--online">{{ room.online }}</span>
@@ -26,6 +26,7 @@
 
 <script setup>
 import { roomKey as keyOf } from "../api/browse.js";
+import LazyImage from "./LazyImage.vue";
 
 defineProps({
   rooms: { type: Array, default: () => [] },

@@ -6,7 +6,7 @@
       :to="categoryLink(item)"
       class="category-item"
     >
-      <img v-if="item.pic" :src="item.pic" class="category-icon" alt="" loading="lazy">
+      <LazyImage v-if="item.pic" :src="item.pic" image-class="category-icon" />
       <div v-else class="category-icon category-icon--empty">{{ item.name?.slice(0, 1) }}</div>
       <p class="category-name">{{ item.name }}</p>
     </RouterLink>
@@ -15,6 +15,7 @@
 
 <script setup>
 import { RouterLink } from "vue-router";
+import LazyImage from "./LazyImage.vue";
 
 const props = defineProps({
   site: { type: String, required: true },
