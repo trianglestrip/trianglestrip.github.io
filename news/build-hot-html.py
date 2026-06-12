@@ -940,6 +940,8 @@ body {
 }
 .hot-section__viewport {
   overflow: hidden;
+  width: 100%;
+  container-type: inline-size;
   --hot-carousel-visible: 4;
   --hot-carousel-gap: clamp(0.75rem, 1.2vw, 1rem);
 }
@@ -950,8 +952,13 @@ body {
   will-change: transform;
 }
 .hot-section__track > .hot-card {
+  box-sizing: border-box;
   flex: 0 0 calc(
-    (100% - (var(--hot-carousel-visible) - 1) * var(--hot-carousel-gap))
+    (100cqi - (var(--hot-carousel-visible) - 1) * var(--hot-carousel-gap))
+    / var(--hot-carousel-visible)
+  );
+  width: calc(
+    (100cqi - (var(--hot-carousel-visible) - 1) * var(--hot-carousel-gap))
     / var(--hot-carousel-visible)
   );
   min-width: 0;
@@ -1245,15 +1252,15 @@ JS = """
     }
 
     function stepPx() {
-      const card = track.querySelector('.hot-card');
-      if (!card) return 0;
       const gap = parseFloat(getComputedStyle(track).gap) || 0;
-      return card.offsetWidth + gap;
+      const visible = visibleCount();
+      const cardWidth = (viewport.clientWidth - (visible - 1) * gap) / visible;
+      return cardWidth + gap;
     }
 
     function setTranslate(index, animate) {
       track.style.transition = animate ? '' : 'none';
-      track.style.transform = 'translateX(-' + (index * stepPx()) + 'px)';
+      track.style.transform = 'translate3d(-' + Math.round(index * stepPx()) + 'px, 0, 0)';
       if (!animate) {
         track.offsetHeight;
         track.style.transition = '';
@@ -1276,6 +1283,12 @@ JS = """
     let index = 0;
     let visible = visibleCount();
     ensureClones(visible);
+    setTranslate(0, false);
+
+    function realign() {
+      setTranslate(index, false);
+    }
+    window.addEventListener('resize', realign);
 
     const delay = parseInt(section.getAttribute('data-carousel-delay') || '0', 10);
     function tick() {
