@@ -279,7 +279,31 @@ def render_snapshot(
     )
 
 
-def render_nav(categories: list[dict], order: list[str], platforms: dict) -> str:
+def render_nav_icon(platform_id: str, meta: dict, nav_icons: dict | None) -> str:
+    title = str(meta.get("title") or platform_id)
+    letter = html.escape(title[0] if title else "?")
+    color = html.escape(meta.get("color", "#ccc"))
+    if nav_icons:
+        pos = nav_icons.get("icons", {}).get(platform_id)
+        if pos:
+            x = int(pos["x"])
+            y = int(pos["y"])
+            return (
+                f'<span class="hot-nav__menu-icon" '
+                f'style="background-position: -{x}px -{y}px" aria-hidden="true"></span>'
+            )
+    return (
+        f'<span class="hot-nav__menu-icon hot-nav__menu-icon--letter" '
+        f'style="background: {color}" aria-hidden="true">{letter}</span>'
+    )
+
+
+def render_nav(
+    categories: list[dict],
+    order: list[str],
+    platforms: dict,
+    icons: dict | None = None,
+) -> str:
     parts = ['<button type="button" class="hot-nav__btn is-active" data-filter="all">全部</button>']
     for cat in categories:
         category_id = str(cat.get("id", ""))
@@ -293,9 +317,11 @@ def render_nav(categories: list[dict], order: list[str], platforms: dict) -> str
             for platform_id, meta in items:
                 target_id = html.escape(f"hot-{platform_id}")
                 title = html.escape(str(meta.get("title") or platform_id))
+                icon_html = render_nav_icon(platform_id, meta, icons)
                 links.append(
                     f'<a class="hot-nav__menu-item" href="#{target_id}" role="menuitem" '
-                    f'data-target="{target_id}" data-category="{html.escape(category_id)}">{title}</a>'
+                    f'data-target="{target_id}" data-category="{html.escape(category_id)}">'
+                    f'{icon_html}<span class="hot-nav__menu-label">{title}</span></a>'
                 )
             menu_html = f'<div class="hot-nav__menu" role="menu">{"".join(links)}</div>'
         parts.append(
@@ -652,13 +678,39 @@ body {
   display: block;
 }
 .hot-nav__menu-item {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
   padding: 0.45rem 0.85rem;
   color: inherit;
   font-size: 0.86rem;
   line-height: 1.35;
   text-decoration: none;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hot-nav__menu-icon {
+  flex-shrink: 0;
+  width: var(--hot-icon-size, 1.25rem);
+  height: var(--hot-icon-size, 1.25rem);
+  border-radius: 0.25rem;
+  background-image: var(--hot-sprite-url);
+  background-repeat: no-repeat;
+  background-size: var(--hot-sprite-width) var(--hot-sprite-height);
+}
+.hot-nav__menu-icon--letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: none;
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.hot-nav__menu-label {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -1174,7 +1226,7 @@ def build() -> Path:
     platform_order = cfg.get("order", [])
     baidu_id = load_baidu_id()
 
-    nav_html = render_nav(cfg.get("categories", []), platform_order, platforms)
+    nav_html = render_nav(cfg.get("categories", []), platform_order, platforms, card_icons)
     category_ids = [cat["id"] for cat in cfg.get("categories", []) if cat.get("id")]
     platform_data = load_platform_data(platform_order)
     snapshot_html = render_snapshot(
