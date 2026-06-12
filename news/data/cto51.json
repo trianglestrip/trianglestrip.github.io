@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-12T05:52:29+00:00",
+  "updated_at": "2026-06-12T08:40:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "鸿蒙深色模式适配：跟随系统 + 手动切换 + 全屏沉浸，一份代码完美解决",
-      "url": "https://ost.51cto.com/posts/46061",
-      "hot": "完整源码已上传[AppCustomizationDemo](https:gitee.comHarmonyOSUIBasicsharmonyosuibasics.git)。一、为什么需要深色模式适配？鸿蒙系统..."
+      "title": "“智能体最后的考试”，Fable 5竟然不敌GPT 5.5",
+      "url": "https://www.51cto.com/article/846183.html",
+      "hot": "没想到打脸来得如此之快！！刚刚，UC伯克利放出了一场号称“智能体最后的考试”的全新基准测试。它把当今最强的AI Agent们拉到考场上，让它们干真正的活——在Siemens NX里建3D模型、在Unreal Engine里搭游戏场景、在Adobe After Effects里做特效合成。"
     },
     {
       "rank": 2,
-      "title": "鸿蒙通用设置列表组件：数据驱动 + 样式模型，一套代码适配所有设置页",
-      "url": "https://ost.51cto.com/posts/45997",
-      "hot": "完整源码已上传[AppCustomizationDemo](https:gitee.comHarmonyOSUIBasicsharmonyosuibasics.git)。一、痛点：每个设置页都在重复造轮子开..."
+      "title": "CVPR 2026 | 视觉脑机迈向双向交互！神经流模型 NeuroFlow 打通视觉与神经的双向通道",
+      "url": "https://www.51cto.com/article/846185.html",
+      "hot": "来自上海人工智能实验室、香港大学、香港中文大学等机构的研究团队，提出首个基于统一神经流模型的视觉-神经双向建模框架NeuroFlow。"
     },
     {
       "rank": 3,
+      "title": "用鸿蒙ArkUI给自家宝宝做了个七巧板小游戏，拖拽旋转就能玩",
+      "url": "https://ost.51cto.com/posts/46140",
+      "hot": "用鸿蒙ArkUI给自家宝宝做了个七巧板小游戏，拖拽旋转就能玩写在前面家里小朋友三岁多，最近迷上了七巧板。买了一套实体的给他，结果没两天..."
+    },
+    {
+      "rank": 4,
+      "title": "写给未来的自己——在 HarmonyOS 里埋一个时间胶囊",
+      "url": "https://ost.51cto.com/posts/46139",
+      "hot": "前言上周末整理手机备忘录，翻到一条去年今日写下的记录：&ldquo;明年这个时候，你还在写代码吗？累的话就去吃顿好的。&rdquo;我盯着屏幕愣了几秒。去..."
+    },
+    {
+      "rank": 5,
+      "title": "刚刚，地表最强Claude 5被攻破！",
+      "url": "https://www.51cto.com/article/846184.html",
+      "hot": "地表最强Claude Fable 5，三天内被被黑客当众破解了，12万字核心机密全网泄露！但这还不是最炸的——Anthropic偷偷在自家模型里埋了一把刀，刀尖，正对着那些每天靠它做研究的人。"
+    },
+    {
+      "rank": 6,
       "title": "全程零次打开剪辑软件！揭秘Claude Fable 5如何纯靠写代码剪完自己的4K宣传片",
       "url": "https://www.51cto.com/article/846172.html",
       "hot": "Claude Code的团队成员Thariq分享了他Claude Code里用Claude Fable 5，剪辑了Fable 5的发布视频，全程没有打开任何视频剪辑软件。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "具身智能数据基建升级！神经腕带+全景头环，补全物理操作信号",
       "url": "https://www.51cto.com/article/846169.html",
       "hot": "具身智能正在从实验室演示走向真实场景。越往真实世界走，数据问题越明显：视频能看到动作结果，动捕能记录轨迹，机器人日志能记录执行，但它们往往很难完整捕捉人类操作背后的意图、发力趋势、微控制和反馈修正。围绕这一缺口，一类新的人类操控数据基建正在出现。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "OpenSpec 和 Superpowers 串不起来跑？问题出在交接格式上",
       "url": "https://www.51cto.com/article/846162.html",
       "hot": "有人直接点出了痛点：\"Superpowers并不会用OpenSpec的输出成果来推进，两者之间有很多断点。\"另一位读者观察得更细：\"Superpowers会根据​​task.md​​重新生成计划，按自己的理解再来一遍，跟OpenSpec的设计之间有差异。\"这两个问题说到点子上了。这篇就来回答：断点卡在哪，以及我们怎么解决的。"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "AI 总忽略已有代码自己新建？三个结构性解法",
       "url": "https://www.51cto.com/article/846145.html",
       "hot": "上一篇用AI写代码，需求补不完，代码总有偏差把\"为什么偏\"拆清楚了：AI拿到模糊输入时不追问，直接推理补位；代码越多它\"看不见\"的越多，方向和人类完全相反。这篇解决\"怎么治\"——不靠更好的prompt，靠改变你的项目结构和工作流。"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "SpringBoot 自动配置过滤：排除特定自动配置",
       "url": "https://www.51cto.com/article/846033.html",
       "hot": "SpringBoot 自动配置排除，看似简单，却是解决项目启动报错、避免Bean冲突的核心技巧，也是面试高频考点。"
-    },
-    {
-      "rank": 8,
-      "title": "AI Agent Skill 工程化（方法论篇）：写 Skill 还是 SOP？但好 Skill 必须懂 SOP",
-      "url": "https://www.51cto.com/article/846140.html",
-      "hot": "2026 年的 Skill 工程化，已经走过了\"有没有\"的阶段，进入了\"好不好\"的深水区。掌握这个决策框架，你的 Skill 就不再是又长又模糊的 Prompt 集合，而是真正能让 Agent 从通用走向专业的工程化资产。"
-    },
-    {
-      "rank": 9,
-      "title": "Claude Fable 5 大解禁，我说三个大家没看到的点",
-      "url": "https://www.51cto.com/article/846112.html",
-      "hot": "AI能力超越人类理解、开始自我加速进化，可能正在成为现实。而留给人类准备的时间，已经不多了。"
-    },
-    {
-      "rank": 10,
-      "title": "Vue 3 的 prop 逐级透传难题与 provide/inject 核心机制完全解析",
-      "url": "https://www.51cto.com/article/845979.html",
-      "hot": "传统 props 传递就像寄信需要通过邮局、分拣中心、配送站层层中转；而 provide/inject 则像是建立了直达快递通道，寄件人和收件人之间无需任何中间环节。"
     }
   ]
 }

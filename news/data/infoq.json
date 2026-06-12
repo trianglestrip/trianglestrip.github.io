@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-12T14:22:09+08:00",
+  "updated_at": "2026-06-12T08:40:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "智源大会圆桌：大模型没有终局，具身智能可能是中国的 AlphaGo 时刻",
+      "url": "https://www.infoq.cn/article/g31NXdeRpwyGWbGAi937?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 12 Jun 2026 16:30:22 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Build 2026：Azure API Management 推出统一模型API并新增MCP内容安全能力",
+      "url": "https://www.infoq.cn/article/KDgV7D7aIrCVeEEuy6Wk?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 12 Jun 2026 16:03:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Snowflake 迈向 Agentic Enterprise 的关键一跃",
+      "url": "https://www.infoq.cn/article/x99GEFjWQ8Ipb4pcDq2P?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 12 Jun 2026 15:07:04 GMT"
+    },
+    {
+      "rank": 4,
       "title": "Uber 如何通过批处理实现单账户每秒 30+ 次更新",
       "url": "https://www.infoq.cn/article/pXMkt6weMsrbNNvZR0pM?utm_source=rss&utm_medium=article",
       "hot": "Fri, 12 Jun 2026 14:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "人效近 400 万如何炼成?  在 Snowflake 硅谷总部重新理解了 AI 时代的 Builder ｜ 奇遇旧金山收官篇",
       "url": "https://www.infoq.cn/video/7LNG31pHhuTxEptTLMsD?utm_source=rss&utm_medium=article",
       "hot": "Fri, 12 Jun 2026 11:41:16 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "打破向量检索的局限：RAG 混合检索实践",
       "url": "https://www.infoq.cn/article/QC1mkdEzZRL1FFpvfukC?utm_source=rss&utm_medium=article",
       "hot": "Fri, 12 Jun 2026 10:49:36 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "身临其境 沉浸互动——大型赛事直播与互动实战指南",
       "url": "https://www.infoq.cn/minibook/wqj338Aub43YjjTYEDEx?utm_source=rss&utm_medium=article",
       "hot": "Fri, 12 Jun 2026 10:43:05 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Snowflake CoCo、CoWork 亮相 顶级玩家如何定义 Agentic AI 未来 ｜ 奇遇旧金山——探访 Snowflake Summit 26（EP2）",
       "url": "https://www.infoq.cn/video/9QTSak237x3L8ugfPoxH?utm_source=rss&utm_medium=article",
       "hot": "Fri, 12 Jun 2026 10:21:33 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "上海交大助理教授刘方鑫确认出席AICon上海，分享从数据表征到数据流编排的存算协同优化",
       "url": "https://www.infoq.cn/article/6re9AY3iCjKe2WLgO3kX?utm_source=rss&utm_medium=article",
       "hot": "Fri, 12 Jun 2026 10:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "硅谷大厂，员工人均月花5万养 AI",
       "url": "https://www.infoq.cn/article/g0gwDH3edWuateVXqp6N?utm_source=rss&utm_medium=article",
       "hot": "Thu, 11 Jun 2026 18:59:27 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "OpenAI秘密递表！三巨头一起“抢钱”：AI史上最贵一轮融资要来了",
-      "url": "https://www.infoq.cn/article/wNJsVd21BshslzNoUXqr?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 11 Jun 2026 18:57:28 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Arm 神经技术与虚幻引擎 MegaLights首登移动端，手游画质跨入电影时代",
-      "url": "https://www.infoq.cn/article/zaWyR4Kg3d7ubjcHR3Lr?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 11 Jun 2026 18:20:55 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "微软 Foundry 新增生产级智能体运行时、工具链与管控能力",
-      "url": "https://www.infoq.cn/article/FoxOEsYuLGTKgu8wbhdY?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 11 Jun 2026 17:34:00 GMT"
     }
   ]
 }
