@@ -236,7 +236,7 @@ def render_snapshot(
         if not slides:
             rows.append(
                 f'<div class="hot-snapshot__row" data-category="{safe_category}" '
-                f'data-ticker-delay="{len(rows) * 520}" data-ticker-interval="{3000 + (len(rows) % 7) * 350}">'
+                f'data-ticker-delay="{len(rows) * 1000}" data-ticker-interval="{8000 + (len(rows) % 7) * 450}">'
                 f'<span class="hot-snapshot__cat">{category_name}</span>'
                 f'<div class="hot-snapshot__ticker">'
                 f'<span class="hot-snapshot__empty">暂无数据</span></div>'
@@ -263,7 +263,7 @@ def render_snapshot(
         hot_visible = ' style="visibility:hidden"' if not slides[0]["hot"] else ""
         rows.append(
             f'<div class="hot-snapshot__row" data-category="{safe_category}" '
-            f'data-ticker-delay="{len(rows) * 520}" data-ticker-interval="{3000 + (len(rows) % 7) * 350}">'
+            f'data-ticker-delay="{len(rows) * 1000}" data-ticker-interval="{8000 + (len(rows) % 7) * 450}">'
             f'<span class="hot-snapshot__cat">{category_name}</span>'
             f'<div class="hot-snapshot__ticker">{"".join(slide_html)}</div>'
             f'<span class="hot-snapshot__hot"{hot_visible}>{first_hot}</span></div>'
@@ -970,7 +970,7 @@ JS = """
     const hotEl = row.querySelector('.hot-snapshot__hot');
     if (slides.length <= 1) return;
     let index = 0;
-    const interval = parseInt(row.getAttribute('data-ticker-interval') || '3500', 10);
+    const interval = parseInt(row.getAttribute('data-ticker-interval') || '8000', 10);
     const delay = parseInt(row.getAttribute('data-ticker-delay') || '0', 10);
     function tick() {
       slides[index].classList.remove('is-active');
