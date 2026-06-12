@@ -1,7 +1,16 @@
 import { apiBase } from "../config/platforms";
 
 async function readJson(res) {
-  const data = await res.json();
+  const text = await res.text();
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    if (res.status === 404) {
+      throw new Error("分类/列表 API 不可用，请结束旧 serve.py 进程后重新启动");
+    }
+    throw new Error(`服务器响应异常 (HTTP ${res.status})`);
+  }
   if (!res.ok || !data.ok) {
     throw new Error(data.error || `HTTP ${res.status}`);
   }

@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted } from "vue";
+import { ref, computed, watch } from "vue";
 import { useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import PlatformTabs from "../components/PlatformTabs.vue";
@@ -54,11 +54,8 @@ watch(
     siteRef.value = value;
     if (getPlatform(value)?.enabled) loadRecommend();
   },
+  { immediate: true },
 );
-
-onMounted(() => {
-  if (getPlatform(props.site)?.enabled) loadRecommend();
-});
 
 function onLoad() {
   if (listError.value) {

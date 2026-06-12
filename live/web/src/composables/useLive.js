@@ -227,9 +227,13 @@ export function usePlayer() {
       onError?.();
     });
     player.on(flv.Events.MEDIA_INFO, () => {
-      player.play().catch(() => {});
-      onReady?.();
+      videoEl.play().catch(() => {});
     });
+    const onPlaying = () => {
+      playing.value = true;
+      onReady?.();
+    };
+    videoEl.addEventListener("playing", onPlaying, { once: true });
     player.load();
     player.play().catch(() => {});
   }

@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted } from "vue";
+import { ref, computed, watch } from "vue";
 import AppLayout from "../components/AppLayout.vue";
 import PlatformTabs from "../components/PlatformTabs.vue";
 import CategoryGroupTabs from "../components/CategoryGroupTabs.vue";
@@ -52,11 +52,8 @@ watch(
     activeGroupIndex.value = 0;
     if (getPlatform(value)?.enabled) loadCategories();
   },
+  { immediate: true },
 );
-
-onMounted(() => {
-  if (getPlatform(props.site)?.enabled) loadCategories();
-});
 </script>
 
 <style scoped>

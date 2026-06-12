@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import { ref, watch, onMounted } from "vue";
+import { ref, watch } from "vue";
 import { RouterLink, useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import InfiniteScroll from "../components/InfiniteScroll.vue";
@@ -72,11 +72,8 @@ watch(
     siteRef.value = site;
     if (getPlatform(site)?.enabled) loadPage();
   },
+  { immediate: true },
 );
-
-onMounted(() => {
-  if (getPlatform(props.site)?.enabled) loadPage();
-});
 
 function refresh() {
   loadPage(true);

@@ -269,6 +269,7 @@ class Handler(SimpleHTTPRequestHandler):
             "dist_built": dist_index.is_file(),
             "mode": "dist" if web_root else "build-required",
             "dist_index": str(dist_index) if dist_index.is_file() else None,
+            "browse_api": True,
         }
         self._send_json(payload)
 
@@ -434,7 +435,16 @@ def main() -> int:
     def handler_factory(*handler_args, **handler_kwargs):
         return Handler(*handler_args, web_root=served_root, **handler_kwargs)
 
-    server = ThreadingHTTPServer(("127.0.0.1", args.port), handler_factory)
+    try:
+        server = ThreadingHTTPServer(("127.0.0.1", args.port), handler_factory)
+    except OSError as exc:
+        print(f"错误: 无法绑定 127.0.0.1:{args.port}（{exc}）")
+        print("      可能已有旧 serve.py 在运行。Windows 可先执行:")
+        print(f"      netstat -ano | findstr :{args.port}")
+        print("      taskkill /PID <pid> /F")
+        print("      或直接运行: .\\start.ps1")
+        return 1
+
     print(f"Web 页面: http://127.0.0.1:{args.port}/")
     print(f"Legacy 调试: http://127.0.0.1:{args.port}/legacy")
     print("API: GET /api/room?site=douyu|huya&room=<id>&mode=lazy|full")
