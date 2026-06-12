@@ -6,14 +6,14 @@
 |--------|------|------|
 | [web/](web/) | Vue 3 前端 | `web/public/config.json` |
 | [server/](server/) | 解析 API | `server/config.json` |
-| [dist/](dist/) | 前后端最小打包产物 | `dist/server`、`dist/web` |
+| [dist/](dist/) | 发布包（API exe + 前端静态 + node.exe） | `dist/server/config.json` |
 
-## 本地打包运行
+## 本地打包
 
 ```powershell
 cd live
 .\package-dist.ps1
-# dist\server\start.bat  /  dist\web\start.bat  /  dist\start-all.bat
+# dist\server\start.bat  /  dist\web\start.bat
 ```
 
 ## 快速启动
