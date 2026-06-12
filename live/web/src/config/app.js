@@ -29,7 +29,7 @@ export async function loadAppConfig() {
   }
 
   const base = (await fetchJson(configUrl("config.json"))) || {};
-  const local = (await fetchJson(configUrl("config.local.json"))) || {};
+  const local = import.meta.env.DEV ? (await fetchJson(configUrl("config.local.json"))) || {} : {};
   appConfig = {
     ...DEFAULTS,
     ...base,
