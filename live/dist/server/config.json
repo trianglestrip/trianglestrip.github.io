@@ -1,12 +1,12 @@
 ﻿{
-    "port":  8765,
-    "host":  "127.0.0.1",
-    "static":  {
-                   "distPath":  "",
-                   "enabled":  false
-               },
-    "cors":  {
-                 "allowOrigin":  "*",
-                 "enabled":  true
-             }
+  "host": "127.0.0.1",
+  "port": 8765,
+  "cors": {
+    "enabled": true,
+    "allowOrigin": "*"
+  },
+  "static": {
+    "enabled": false,
+    "distPath": ""
+  }
 }

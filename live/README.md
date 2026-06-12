@@ -6,6 +6,18 @@
 |--------|------|------|
 | [web/](web/) | Vue 3 前端 | `web/public/config.json` |
 | [server/](server/) | 解析 API | `server/config.json` |
+| [dist/](dist/) | 打包产物 + Node 启动 | `dist/package.json` |
+
+## 本地打包运行
+
+```powershell
+cd live
+.\package-dist.ps1
+cd dist
+npm run start:api   # API → :8765（Node 拉起 Python）
+npm run start:web   # 前端 → :8080
+# 或 start-all.bat 双窗口
+```
 
 ## 快速启动
 

@@ -6,6 +6,11 @@ $DistRoot = Join-Path $LiveRoot "dist"
 $DistServer = Join-Path $DistRoot "server"
 $DistWeb = Join-Path $DistRoot "web"
 
+function Write-Utf8NoBom {
+  param([string]$Path, [string]$Content)
+  [System.IO.File]::WriteAllText($Path, $Content, [System.Text.UTF8Encoding]::new($false))
+}
+
 Write-Host "==> 构建前端 (npm run build)"
 Push-Location $WebSrc
 npm run build
@@ -16,7 +21,7 @@ if (Test-Path $DistServer) {
   Get-ChildItem $DistServer -Exclude "start.bat", "config.json" | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 }
 if (Test-Path $DistWeb) {
-  Get-ChildItem $DistWeb -Exclude "start.bat", "serve_spa.py", "config.json" | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
+  Get-ChildItem $DistWeb -Exclude "start.bat", "config.json" | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 }
 New-Item -ItemType Directory -Force -Path $DistServer | Out-Null
 New-Item -ItemType Directory -Force -Path $DistWeb | Out-Null
@@ -52,7 +57,7 @@ $serverConfig = @{
     distPath = ""
   }
 } | ConvertTo-Json -Depth 4
-Set-Content -Path (Join-Path $DistServer "config.json") -Value $serverConfig -Encoding UTF8
+Write-Utf8NoBom (Join-Path $DistServer "config.json") $serverConfig
 
 Write-Host "==> 复制前端构建产物 -> dist/web"
 Copy-Item (Join-Path $WebSrc "dist\*") $DistWeb -Recurse -Force
@@ -64,10 +69,19 @@ $webConfig = @{
     devBaseUrl = ""
   }
 } | ConvertTo-Json -Depth 4
-Set-Content -Path (Join-Path $DistWeb "config.json") -Value $webConfig -Encoding UTF8
+Write-Utf8NoBom (Join-Path $DistWeb "config.json") $webConfig
+
+Write-Host "==> 安装 dist Node 依赖"
+Push-Location $DistRoot
+if (-not (Test-Path "package.json")) {
+  Write-Host "警告: 缺少 dist/package.json"
+} else {
+  npm install --omit=dev
+}
+Pop-Location
 
 Write-Host ""
 Write-Host "打包完成:"
-Write-Host "  API:  dist\server\start.bat  -> http://127.0.0.1:8765"
-Write-Host "  Web:  dist\web\start.bat     -> http://127.0.0.1:8080"
-Write-Host "  一键: dist\start-all.bat"
+Write-Host "  cd dist && npm run start:api  -> http://127.0.0.1:8765"
+Write-Host "  cd dist && npm run start:web  -> http://127.0.0.1:8080"
+Write-Host "  dist\start-all.bat            -> 双窗口"

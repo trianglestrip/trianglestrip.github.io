@@ -1,0 +1,14 @@
+{
+  "name": "live-dist",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start:api": "node scripts/start-api.mjs",
+    "start:web": "node scripts/start-web.mjs",
+    "start": "node scripts/start-all.mjs"
+  },
+  "dependencies": {
+    "serve-handler": "^6.1.6"
+  }
+}

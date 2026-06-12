@@ -1,12 +1,9 @@
 @echo off
 setlocal
-cd /d "%~dp0"
-
-set PORT=8080
-set PY=
-if exist "..\..\server\.venv\Scripts\python.exe" set PY=..\..\server\.venv\Scripts\python.exe
-if not defined PY set PY=python
-
-echo 启动前端静态服务 http://127.0.0.1:%PORT%/
-"%PY%" serve_spa.py %PORT%
+cd /d "%~dp0\.."
+if not exist "node_modules\" (
+  echo 首次运行请先执行: npm install
+  npm install
+)
+npm run start:web
 pause

@@ -37,10 +37,10 @@ def load_config(config_path: Path | None = None) -> dict[str, Any]:
     path = config_path or (ROOT / "config.json")
     cfg = deepcopy(DEFAULT_CONFIG)
     if path.is_file():
-        cfg = _deep_merge(cfg, json.loads(path.read_text(encoding="utf-8")))
+        cfg = _deep_merge(cfg, json.loads(path.read_text(encoding="utf-8-sig")))
     local = path.with_name("config.local.json")
     if local.is_file():
-        cfg = _deep_merge(cfg, json.loads(local.read_text(encoding="utf-8")))
+        cfg = _deep_merge(cfg, json.loads(local.read_text(encoding="utf-8-sig")))
     return cfg
 
 
