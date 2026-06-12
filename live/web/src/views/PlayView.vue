@@ -57,12 +57,13 @@
               v-if="showPlayMask"
               type="button"
               class="play-unlock-mask"
-              title="点击播放"
+              title="点击开启声音"
               @click.stop="onPlayMaskClick"
             >
               <span class="play-unlock-mask__btn" aria-hidden="true">
-                <Icon name="play" class="play-unlock-mask__icon" />
+                <Icon name="volume-up" class="play-unlock-mask__icon" />
               </span>
+              <span class="play-unlock-mask__hint">点击开启声音</span>
             </button>
           </div>
         </div>
@@ -160,6 +161,7 @@ const {
   playFlv,
   startPlay,
   togglePlay,
+  unmutePlayback,
   setVolume,
   toggleMute,
 } = usePlayer();
@@ -177,26 +179,23 @@ const notice = computed(() =>
   loading.value ? "加载中..." : statusKind.value === "err" ? statusText.value : "",
 );
 
-const showPlayMask = computed(
-  () => !!payload.value && !loading.value && statusKind.value !== "err" && !streamActive.value,
-);
+const showPlayMask = computed(() => streamActive.value && muted.value);
 
-function onPlayMaskClick() {
-  const url = playUrl.value;
-  const videoEl = playerPanelRef.value?.videoEl;
-  if (!url || !videoEl) return;
-
-  let firstReady = !danmakuReady.value;
-  playFlv(videoEl, url, {
+function buildPlayCallbacks(url, { onReadyExtra } = {}) {
+  return {
     site: siteRef.value,
     onError: () => setStatus(`${buildMetaText(url)}\n播放出错`, "err"),
     onReady: () => {
-      setStatus(`${buildMetaText(url)}\n播放中`, "ok");
+      const suffix = muted.value ? "（静音）" : "";
+      setStatus(`${buildMetaText(url)}\n播放中${suffix}`, "ok");
       document.title = displayTitle.value;
-      if (firstReady) onPlaybackReady();
+      onReadyExtra?.();
     },
-  });
-  startPlay();
+  };
+}
+
+function onPlayMaskClick() {
+  unmutePlayback();
   revealControls();
 }
 
@@ -268,7 +267,6 @@ async function ensureVideoEl() {
 async function prefetchPlayUrl() {
   const { url } = await resolvePlayUrl();
   playUrl.value = url;
-  setStatus(`${buildMetaText(url)}\n点击播放`);
   return url;
 }
 
@@ -328,24 +326,25 @@ async function onRefresh() {
   playUrl.value = "";
   try {
     await loadRoom(roomInput.value);
-    await prefetchPlayUrl();
+    await startPlayback();
   } catch (err) {
     setStatus(`刷新失败: ${err.message}`, "err");
   }
 }
 
-async function startPlayback() {
-  const url = await prefetchPlayUrl();
+async function startPlayback({ startMuted = true } = {}) {
+  const url = playUrl.value || (await prefetchPlayUrl());
+  setStatus(`${buildMetaText(url)}\n正在缓冲…`);
   const videoEl = await ensureVideoEl();
-  let firstReady = !danmakuReady.value;
+  const firstReady = !danmakuReady.value;
   playFlv(videoEl, url, {
-    site: siteRef.value,
-    onError: () => setStatus(`${buildMetaText(url)}\n播放出错`, "err"),
-    onReady: () => {
-      setStatus(`${buildMetaText(url)}\n播放中`, "ok");
-      document.title = displayTitle.value;
-      if (firstReady) onPlaybackReady();
-    },
+    ...buildPlayCallbacks(url, {
+      onReadyExtra: () => {
+        if (!firstReady) return;
+        onPlaybackReady();
+      },
+    }),
+    startMuted,
   });
   await startPlay();
 }
@@ -359,7 +358,7 @@ async function playRoom(room) {
   playUrl.value = "";
   try {
     await loadRoom(room);
-    await prefetchPlayUrl();
+    await startPlayback();
     lastPlayedRoom.value = room;
   } catch {
     lastPlayedRoom.value = "";
@@ -543,6 +542,8 @@ onBeforeUnmount(() => {
   z-index: 3;
   display: grid;
   place-items: center;
+  align-content: center;
+  gap: .65rem;
   border: none;
   padding: 0;
   margin: 0;
@@ -577,7 +578,12 @@ onBeforeUnmount(() => {
 .play-unlock-mask__icon {
   width: 42%;
   height: 42%;
-  margin-left: .15em;
+}
+
+.play-unlock-mask__hint {
+  font-size: .85rem;
+  color: var(--text);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 }
 
 .play-layout--webscreen .play-main {

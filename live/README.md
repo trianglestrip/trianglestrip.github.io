@@ -78,7 +78,7 @@ cd live/web
 npm run build:pages
 ```
 
-再将 `web/dist/` 同步到 `dist/web/` 或 `public/live/`。
+`npm run build` 已直接输出到 `live/dist/web/`（无需再拷贝）；GitHub Pages 构建后提交 `dist/web` 或由博客 deploy 拷贝到 `public/live/`。
 
 ## 生产部署（分离）
 

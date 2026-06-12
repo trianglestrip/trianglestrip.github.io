@@ -7,6 +7,6 @@
   },
   "static": {
     "enabled": false,
-    "distPath": "../web/dist"
+    "distPath": "../dist/web"
   }
 }

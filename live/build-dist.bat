@@ -36,14 +36,8 @@ if not exist "%DIST%server\live-api.exe" (
 echo ==^> 复制 server/config.json -^> dist/server
 copy /Y "%SERVER%config.json" "%DIST%server\config.json" >nul
 
-echo ==^> 前端构建产物 -^> dist/web
-if exist "%DIST%web\assets" rmdir /s /q "%DIST%web\assets"
-xcopy /E /Y /I "%WEB%dist\*" "%DIST%web\" >nul
+echo ==^> 复制 server.mjs -^> dist/web
 copy /Y "%WEB%server.mjs" "%DIST%web\server.mjs" >nul
-
-echo ==^> 写入 dist/web/config.json
-set "WEB_CFG=%DIST%web\config.json"
-powershell -NoProfile -Command "$j=@{appTitle='Lemon live';api=@{baseUrl='http://127.0.0.1:8765';devBaseUrl=''}}|ConvertTo-Json -Depth 4;[IO.File]::WriteAllText('%WEB_CFG%', $j, [Text.UTF8Encoding]::new($false))"
 
 echo ==^> 确保 dist/web/node.exe
 if exist "%DIST%web\node.exe" goto node_done

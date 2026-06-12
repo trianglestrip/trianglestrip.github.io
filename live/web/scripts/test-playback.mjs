@@ -25,9 +25,6 @@ if (errText.includes("not valid JSON")) {
   process.exit(1);
 }
 
-await page.waitForSelector(".play-unlock-mask", { timeout: 30000 });
-await page.click(".play-unlock-mask");
-
 await page.waitForFunction(
   () => {
     const v = document.querySelector("video");
@@ -49,13 +46,23 @@ for (let i = 0; i < 16; i += 1) {
   if (i === 15) console.log("OK: 8s 稳定播放", s);
 }
 
+await page.waitForSelector(".play-unlock-mask", { timeout: 10000 });
+await page.click(".play-unlock-mask");
+await page.waitForFunction(
+  () => {
+    const v = document.querySelector("video");
+    return v && !v.paused && !v.muted && v.currentTime > 0.5;
+  },
+  { timeout: 20000 },
+);
+
 const after = await page.evaluate(() => {
   const v = document.querySelector("video");
   return { paused: v?.paused, ended: v?.ended, muted: v?.muted, ct: v?.currentTime };
 });
 if (after.muted) {
-  console.error("FAIL: 应有声播放", after);
+  console.error("FAIL: 开声后仍静音", after);
   process.exit(1);
 }
-console.log("OK: 有声播放", after, issues.length ? `warnings: ${issues.join(" | ")}` : "");
+console.log("OK: 静音自动播 + 点击开声", after, issues.length ? `warnings: ${issues.join(" | ")}` : "");
 await browser.close();

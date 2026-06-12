@@ -12,8 +12,6 @@ const url = `${base}/douyu/play/${room}`;
 const browser = await chromium.launch({ headless: true, channel: "chrome" });
 const page = await browser.newPage();
 await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
-await page.waitForSelector(".play-unlock-mask", { timeout: 30000 });
-await page.click(".play-unlock-mask");
 await page.waitForFunction(
   () => {
     const v = document.querySelector("video");

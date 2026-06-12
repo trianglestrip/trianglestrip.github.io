@@ -26,7 +26,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
     },
     "static": {
         "enabled": False,
-        "distPath": "../web/dist",
+        "distPath": "../dist/web",
     },
 }
 
@@ -56,7 +56,7 @@ def resolve_static_root(cfg: dict[str, Any]) -> Path | None:
     static_cfg = cfg.get("static") or {}
     if not static_cfg.get("enabled"):
         return None
-    raw = static_cfg.get("distPath") or "../web/dist"
+    raw = static_cfg.get("distPath") or "../dist/web"
     root = (ROOT / raw).resolve()
     index = root / "index.html"
     return root if index.is_file() else None

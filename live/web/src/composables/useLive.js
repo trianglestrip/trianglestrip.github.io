@@ -328,7 +328,16 @@ export function usePlayer() {
     syncVolume();
   }
 
-  function playFlv(el, url, { site = "", onError, onReady } = {}) {
+  /** 在用户点击时直接取消静音，勿重建播放器（重建会打断 CDN 连接导致断流） */
+  function unmutePlayback() {
+    if (!videoEl) return;
+    videoEl.muted = false;
+    if (videoEl.volume === 0) videoEl.volume = 1;
+    syncVolume();
+    startPlay();
+  }
+
+  function playFlv(el, url, { site = "", onError, onReady, startMuted = true } = {}) {
     const flv = flvjs();
     if (!flv.isSupported()) {
       throw new Error("当前浏览器不支持 flv.js");
@@ -352,7 +361,7 @@ export function usePlayer() {
 
     player.attachMediaElement(el);
     el.playsInline = true;
-    el.muted = false;
+    el.muted = startMuted;
     el.volume = 1;
     syncVolume();
 
@@ -361,12 +370,17 @@ export function usePlayer() {
       onError?.();
     });
 
+    player.on(flv.Events.MEDIA_INFO, () => {
+      startPlay();
+    });
+
     const onFirstPlaying = () => {
       syncPlaying();
       onReady?.();
     };
     el.addEventListener("playing", onFirstPlaying, { once: true });
     player.load();
+    startPlay();
   }
 
   return {
@@ -379,6 +393,7 @@ export function usePlayer() {
     startPlay,
     togglePlay,
     pausePlayback,
+    unmutePlayback,
     setVolume,
     toggleMute,
   };

@@ -1,9 +1,18 @@
-import { copyFileSync, existsSync, mkdirSync, readFileSync } from "node:fs";
+import {
+  copyFileSync,
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  rmSync,
+  unlinkSync,
+  writeFileSync,
+} from "node:fs";
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
 const root = resolve(import.meta.dirname);
+const distWeb = resolve(root, "../dist/web");
 const flvSrc = resolve(root, "node_modules/flv.js/dist/flv.min.js");
 const publicDir = resolve(root, "public");
 const flvDest = resolve(publicDir, "flv.min.js");
@@ -45,13 +54,47 @@ function copyStaticAssets() {
   };
 }
 
+/** 只清理 Vite 产物，保留 node.exe、server.mjs 等 */
+function cleanViteOutput() {
+  return {
+    name: "clean-vite-output",
+    buildStart() {
+      if (!existsSync(distWeb)) {
+        mkdirSync(distWeb, { recursive: true });
+        return;
+      }
+      const assets = resolve(distWeb, "assets");
+      if (existsSync(assets)) rmSync(assets, { recursive: true, force: true });
+      const index = resolve(distWeb, "index.html");
+      if (existsSync(index)) unlinkSync(index);
+    },
+  };
+}
+
+function writeDistConfig() {
+  return {
+    name: "write-dist-config",
+    closeBundle() {
+      if (process.env.npm_lifecycle_event === "build:pages") return;
+      const cfg = {
+        appTitle: "Lemon live",
+        api: {
+          baseUrl: `http://127.0.0.1:${apiPort}`,
+          devBaseUrl: "",
+        },
+      };
+      writeFileSync(resolve(distWeb, "config.json"), `${JSON.stringify(cfg, null, 2)}\n`);
+    },
+  };
+}
+
 export default defineConfig({
-  plugins: [copyStaticAssets(), vue()],
+  plugins: [copyStaticAssets(), cleanViteOutput(), writeDistConfig(), vue()],
   base: "/",
   publicDir: "public",
   build: {
-    outDir: "dist",
-    emptyOutDir: true,
+    outDir: distWeb,
+    emptyOutDir: false,
   },
   server: {
     port: 5173,

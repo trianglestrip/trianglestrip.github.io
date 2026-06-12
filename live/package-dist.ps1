@@ -66,20 +66,8 @@ if (-not (Test-Path (Join-Path $DistServer "live-api.exe"))) {
 Write-Host "==> 复制 server/config.json -> dist/server"
 Copy-Item (Join-Path $ServerSrc "config.json") (Join-Path $DistServer "config.json") -Force
 
-Write-Host "==> 前端构建产物 -> dist/web"
-$assetsDir = Join-Path $DistWeb "assets"
-if (Test-Path $assetsDir) { Remove-Item $assetsDir -Recurse -Force }
-Copy-Item (Join-Path $WebSrc "dist\*") $DistWeb -Recurse -Force
+Write-Host "==> 复制 server.mjs -> dist/web"
 Copy-Item (Join-Path $WebSrc "server.mjs") (Join-Path $DistWeb "server.mjs") -Force
-
-$webConfig = @{
-  appTitle = "Lemon live"
-  api = @{
-    baseUrl = "http://127.0.0.1:8765"
-    devBaseUrl = ""
-  }
-} | ConvertTo-Json -Depth 4
-Write-Utf8NoBom (Join-Path $DistWeb "config.json") $webConfig
 
 Write-Host "==> 下载 node.exe -> dist/web"
 Ensure-NodeExe $DistWeb
