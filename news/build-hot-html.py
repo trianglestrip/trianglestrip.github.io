@@ -721,6 +721,21 @@ body {
 
 JS = """
 (function () {
+  function formatRelative(iso) {
+    const updated = new Date(iso);
+    if (Number.isNaN(updated.getTime())) return iso;
+    const seconds = Math.floor((Date.now() - updated.getTime()) / 1000);
+    if (seconds < 60) return '刚刚';
+    if (seconds < 3600) return Math.floor(seconds / 60) + '分钟前';
+    if (seconds < 86400) return Math.floor(seconds / 3600) + '小时前';
+    return Math.floor(seconds / 86400) + '天前';
+  }
+  document.querySelectorAll('.hot-card__head time[datetime]').forEach(function (el) {
+    const iso = el.getAttribute('datetime');
+    if (iso) el.textContent = formatRelative(iso);
+  });
+})();
+(function () {
   const nav = document.querySelector('.hot-nav');
   const cards = document.querySelectorAll('.hot-card[data-category]');
   if (!nav || !cards.length) return;

@@ -23,6 +23,11 @@ FETCH_TIMEOUT = 60
 HTTP_TIMEOUT = 30
 MAX_RETRIES = 3
 USER_AGENT = "Mozilla/5.0 (compatible; blog-hot-fetch/1.0)"
+MIN_TTL_MINUTES = 20
+
+
+def effective_ttl(meta: dict) -> int:
+    return max(MIN_TTL_MINUTES, int(meta.get("ttl_minutes", MIN_TTL_MINUTES)))
 
 
 def load_sources() -> dict:
@@ -34,22 +39,21 @@ def now_iso() -> str:
     return datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
 
 
-def parse_time(value: str | None) -> datetime | None:
-    if not value:
+def cache_mtime(platform: str) -> datetime | None:
+    path = DATA_DIR / f"{platform}.json"
+    if not path.exists():
         return None
-    try:
-        return datetime.fromisoformat(value)
-    except ValueError:
-        return None
+    local_tz = datetime.now().astimezone().tzinfo
+    return datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc).astimezone(local_tz)
 
 
-def should_fetch(cache: dict, ttl_minutes: int, force: bool) -> bool:
+def should_fetch(platform: str, ttl_minutes: int, force: bool) -> bool:
     if force:
         return True
-    updated_at = parse_time(cache.get("updated_at"))
-    if updated_at is None:
+    mtime = cache_mtime(platform)
+    if mtime is None:
         return True
-    return datetime.now(updated_at.tzinfo) - updated_at >= timedelta(minutes=ttl_minutes)
+    return datetime.now(mtime.tzinfo) - mtime >= timedelta(minutes=ttl_minutes)
 
 
 def load_cache(platform: str) -> dict:
@@ -646,9 +650,8 @@ def run(platform: str | None, force: bool) -> int:
     fetched = 0
     skipped = 0
     for name, meta in targets.items():
-        cache = load_cache(name)
-        ttl_minutes = int(meta.get("ttl_minutes", 30))
-        if not should_fetch(cache, ttl_minutes, force):
+        ttl_minutes = effective_ttl(meta)
+        if not should_fetch(name, ttl_minutes, force):
             print(f"skip {name}: cache still fresh")
             skipped += 1
             continue
