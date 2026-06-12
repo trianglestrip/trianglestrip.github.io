@@ -49,8 +49,8 @@
               @refresh="onRefresh"
               @toggle-danmaku="onToggleDanmaku"
               @toggle-pip="onTogglePiP"
-              @volume-change="setVolume"
-              @toggle-mute="toggleMute"
+              @volume-change="onVolumeChange"
+              @toggle-mute="onToggleMute"
             />
             <div v-if="notice && !streamActive" class="play-overlay">{{ notice }}</div>
           </div>
@@ -85,6 +85,7 @@ import { getPlatform } from "../config/platforms";
 import { useRoom, usePlayer } from "../composables/useLive.js";
 import { useDanmaku } from "../composables/useDanmaku.js";
 import { useFollow } from "../composables/useFollow.js";
+import { isSoundUnlocked, unlockSound, resetSoundSession } from "../utils/soundSession.js";
 
 const PlayerControls = defineAsyncComponent(() => import("../components/PlayerControls.vue"));
 const PlaySidePanel = defineAsyncComponent(() => import("../components/PlaySidePanel.vue"));
@@ -114,7 +115,8 @@ const sideReady = ref(false);
 const danmakuReady = ref(false);
 let chromeRaf = 0;
 let playRaf = 0;
-let unmuteMoveBound = false;
+let unmuteGestureBound = false;
+const ENTRY_UNMUTE_EVENTS = ["pointerdown", "keydown"];
 let playRetrying = false;
 
 const platform = computed(() => getPlatform(props.site));
@@ -197,6 +199,7 @@ function buildPlayCallbacks(url, { onReadyExtra } = {}) {
       retryPlaybackAfterError();
     },
     onReady: () => {
+      if (!playing.value) startPlay();
       const suffix = muted.value ? "（静音）" : "";
       setStatus(`${buildMetaText(url)}\n播放中${suffix}`, "ok");
       document.title = displayTitle.value;
@@ -205,30 +208,77 @@ function buildPlayCallbacks(url, { onReadyExtra } = {}) {
   };
 }
 
-function bindEntryUnmuteMove() {
-  if (unmuteMoveBound) return;
-  document.addEventListener("mousemove", onDocumentMousemove);
-  unmuteMoveBound = true;
+function bindEntryUnmuteGesture() {
+  if (unmuteGestureBound) return;
+  for (const eventName of ENTRY_UNMUTE_EVENTS) {
+    document.addEventListener(eventName, onEntryUnmuteGesture, true);
+  }
+  unmuteGestureBound = true;
 }
 
-function unbindEntryUnmuteMove() {
-  if (!unmuteMoveBound) return;
-  document.removeEventListener("mousemove", onDocumentMousemove);
-  unmuteMoveBound = false;
+function unbindEntryUnmuteGesture() {
+  if (!unmuteGestureBound) return;
+  for (const eventName of ENTRY_UNMUTE_EVENTS) {
+    document.removeEventListener(eventName, onEntryUnmuteGesture, true);
+  }
+  unmuteGestureBound = false;
 }
 
-/** 仅初次进房后第一次移动鼠标：开声并永久移除监听 */
-function onDocumentMousemove() {
-  unbindEntryUnmuteMove();
-  if (muted.value) unmutePlayback();
+function markSoundUnlocked() {
+  unlockSound();
+  unbindEntryUnmuteGesture();
 }
 
-function onVideoShellClick(event) {
+/** destroy 前记下当前已在有声播放，避免切房后丢失解锁状态 */
+function captureSoundUnlock() {
+  if (isSoundUnlocked()) return;
+  const video = resolveVideoEl(playerPanelRef.value?.videoEl);
+  if (!streamActive.value || !video) return;
+  if (!video.muted && !video.paused) {
+    unlockSound();
+  }
+}
+
+/** 首次静音进房：pointerdown / keydown 才算有效手势（mousemove 无法解除自动播放静音） */
+async function onEntryUnmuteGesture(event) {
+  if (event.type === "keydown") {
+    const key = event.key;
+    if (key === "Shift" || key === "Control" || key === "Alt" || key === "Meta" || key === "Tab") {
+      return;
+    }
+  }
+  if (muted.value) {
+    const ok = await unmutePlayback();
+    if (ok) markSoundUnlocked();
+    return;
+  }
+  markSoundUnlocked();
+  if (!playing.value) startPlay();
+}
+
+function onToggleMute() {
+  const wasMuted = muted.value;
+  toggleMute();
+  if (wasMuted && !muted.value) markSoundUnlocked();
+}
+
+function onVolumeChange(value) {
+  setVolume(value);
+  if (Number(value) > 0 && !muted.value) markSoundUnlocked();
+}
+
+async function onVideoShellClick(event) {
   if (!streamActive.value) return;
   const target = event.target;
   if (!(target instanceof Element)) return;
   if (target.closest(".player-controls, .play-overlay")) return;
   revealControls();
+  if (muted.value) {
+    const ok = await unmutePlayback();
+    if (ok) markSoundUnlocked();
+    return;
+  }
+  if (!playing.value) startPlay();
 }
 
 function scheduleDeferredChrome() {
@@ -267,9 +317,10 @@ function schedulePlay(room) {
 }
 
 function syncRouteState(site, id) {
+  captureSoundUnlock();
   siteRef.value = site;
   roomInput.value = id;
-  unbindEntryUnmuteMove();
+  unbindEntryUnmuteGesture();
   destroy();
   disconnectDm();
   payload.value = null;
@@ -279,12 +330,21 @@ function syncRouteState(site, id) {
   scheduleDeferredChrome();
 }
 
+function resolveVideoEl(raw) {
+  if (!raw) return null;
+  if (raw instanceof HTMLVideoElement) return raw;
+  if (typeof raw === "object" && raw.value instanceof HTMLVideoElement) return raw.value;
+  return raw;
+}
+
 async function ensureVideoEl() {
-  if (playerPanelRef.value?.videoEl) return playerPanelRef.value.videoEl;
+  let el = resolveVideoEl(playerPanelRef.value?.videoEl);
+  if (el) return el;
   await nextTick();
-  if (playerPanelRef.value?.videoEl) return playerPanelRef.value.videoEl;
+  el = resolveVideoEl(playerPanelRef.value?.videoEl);
+  if (el) return el;
   await new Promise((resolve) => requestAnimationFrame(resolve));
-  const el = playerPanelRef.value?.videoEl;
+  el = resolveVideoEl(playerPanelRef.value?.videoEl);
   if (!el) throw new Error("播放器未就绪");
   return el;
 }
@@ -357,7 +417,8 @@ async function onRefresh() {
   }
 }
 
-async function startPlayback({ startMuted = true, freshUrl = false } = {}) {
+async function startPlayback({ startMuted, freshUrl = false } = {}) {
+  const useMuted = startMuted ?? !isSoundUnlocked();
   const url = freshUrl
     ? await prefetchPlayUrl({ force: true })
     : playUrl.value || (await prefetchPlayUrl());
@@ -371,13 +432,16 @@ async function startPlayback({ startMuted = true, freshUrl = false } = {}) {
         onPlaybackReady();
       },
     }),
-    startMuted,
+    startMuted: useMuted,
   });
   await startPlay();
+  if (useMuted) bindEntryUnmuteGesture();
+  else markSoundUnlocked();
 }
 
 async function playRoom(room) {
   if (!room || lastPlayedRoom.value === room) return;
+  captureSoundUnlock();
   roomInput.value = room;
   destroy();
   disconnectDm();
@@ -386,7 +450,6 @@ async function playRoom(room) {
   try {
     await loadRoom(room, { force: true });
     await startPlayback({ freshUrl: true });
-    bindEntryUnmuteMove();
     lastPlayedRoom.value = room;
   } catch {
     lastPlayedRoom.value = "";
@@ -445,10 +508,19 @@ watch(
     if (!getPlatform(site)?.enabled) return;
     schedulePlay(id);
   },
-  { immediate: true },
 );
 
 onMounted(() => {
+  try {
+    const nav = performance.getEntriesByType("navigation")[0];
+    if (nav?.type === "reload") resetSoundSession();
+  } catch {
+    /* ignore */
+  }
+  syncRouteState(props.site, props.id);
+  if (getPlatform(props.site)?.enabled) {
+    schedulePlay(props.id);
+  }
   frameRef.value?.addEventListener("mousemove", revealControls);
   document.addEventListener("fullscreenchange", onFullscreenChange);
   document.addEventListener("enterpictureinpicture", onPiPChange);
@@ -461,7 +533,7 @@ onBeforeUnmount(() => {
   destroy();
   disconnectDm();
   clearTimeout(hideControlsTimer.value);
-  unbindEntryUnmuteMove();
+  unbindEntryUnmuteGesture();
   document.removeEventListener("fullscreenchange", onFullscreenChange);
   document.removeEventListener("enterpictureinpicture", onPiPChange);
   document.removeEventListener("leavepictureinpicture", onPiPChange);

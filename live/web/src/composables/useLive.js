@@ -225,7 +225,7 @@ function flvOptionsForSite(site) {
     stashInitialSize: 2 * 1024 * 1024,
     lazyLoad: false,
     autoCleanupSourceBuffer: false,
-    fixAudioTimestampGap: false,
+    fixAudioTimestampGap: true,
   };
   if (site === "douyu") {
     config.headers = {
@@ -248,6 +248,7 @@ export function usePlayer(siteRef) {
   const muted = ref(false);
   let player = null;
   let videoEl = null;
+  let onCanPlayResume = null;
 
   function cachedVolume() {
     return loadVolumePrefs(siteRef?.value).volume;
@@ -307,11 +308,17 @@ export function usePlayer(siteRef) {
     if (videoEl === el) return;
     unbindVideoEvents();
     videoEl = el;
+    onCanPlayResume = () => {
+      if (!streamActive.value || !videoEl || !videoEl.paused) return;
+      startPlay();
+    };
     el.addEventListener("pause", syncPlaying);
     el.addEventListener("playing", syncPlaying);
     el.addEventListener("timeupdate", syncPlaying);
     el.addEventListener("ended", syncPlaying);
     el.addEventListener("volumechange", syncVolume);
+    el.addEventListener("canplay", onCanPlayResume);
+    el.addEventListener("loadeddata", onCanPlayResume);
     syncVolume();
   }
 
@@ -322,6 +329,11 @@ export function usePlayer(siteRef) {
     videoEl.removeEventListener("timeupdate", syncPlaying);
     videoEl.removeEventListener("ended", syncPlaying);
     videoEl.removeEventListener("volumechange", syncVolume);
+    if (onCanPlayResume) {
+      videoEl.removeEventListener("canplay", onCanPlayResume);
+      videoEl.removeEventListener("loadeddata", onCanPlayResume);
+      onCanPlayResume = null;
+    }
     videoEl = null;
   }
 
@@ -347,17 +359,57 @@ export function usePlayer(siteRef) {
     unbindVideoEvents();
   }
 
+  function waitForCanPlay(el, timeoutMs = 10000) {
+    if (el.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) return Promise.resolve();
+    return new Promise((resolve) => {
+      let done = false;
+      const finish = () => {
+        if (done) return;
+        done = true;
+        el.removeEventListener("canplay", onReady);
+        el.removeEventListener("loadeddata", onReady);
+        clearTimeout(timer);
+        resolve();
+      };
+      const onReady = () => finish();
+      const timer = setTimeout(finish, timeoutMs);
+      el.addEventListener("canplay", onReady, { once: true });
+      el.addEventListener("loadeddata", onReady, { once: true });
+    });
+  }
+
   async function startPlay() {
     if (!videoEl) return false;
-    try {
+    const tryOnce = async () => {
       player?.play?.()?.catch?.(() => {});
       await videoEl.play();
-      syncPlaying();
-      return true;
-    } catch {
-      syncPlaying();
+    };
+    const attemptPlay = async () => {
+      for (let i = 0; i < 2; i += 1) {
+        try {
+          await tryOnce();
+          syncPlaying();
+          return true;
+        } catch {
+          if (!videoEl.muted) {
+            videoEl.muted = true;
+            syncVolume();
+          }
+        }
+      }
       return false;
+    };
+
+    if (await attemptPlay()) return true;
+
+    for (let retry = 0; retry < 6; retry += 1) {
+      await waitForCanPlay(videoEl, 2000);
+      if (await attemptPlay()) return true;
+      await new Promise((resolve) => setTimeout(resolve, 400));
     }
+
+    syncPlaying();
+    return !videoEl.paused;
   }
 
   function pausePlayback() {
@@ -393,13 +445,20 @@ export function usePlayer(siteRef) {
   }
 
   /** 在用户操作时直接取消静音，勿重建播放器（重建会打断 CDN 连接导致断流） */
-  function unmutePlayback() {
-    if (!videoEl) return;
+  async function unmutePlayback() {
+    if (!videoEl) return false;
     videoEl.muted = false;
     const v = cachedVolume() > 0 ? cachedVolume() : 1;
     if (videoEl.volume === 0) videoEl.volume = v;
     syncVolume();
-    startPlay();
+    const ok = await startPlay();
+    if (!ok || videoEl.paused) {
+      videoEl.muted = true;
+      syncVolume();
+      await startPlay();
+      return false;
+    }
+    return true;
   }
 
   function playFlv(el, url, { site = "", onError, onReady, startMuted = true } = {}) {
@@ -426,6 +485,7 @@ export function usePlayer(siteRef) {
 
     player.attachMediaElement(el);
     el.playsInline = true;
+    el.autoplay = true;
     applyCachedVolume(el);
     el.muted = startMuted;
     syncVolume();
@@ -445,7 +505,6 @@ export function usePlayer(siteRef) {
     };
     el.addEventListener("playing", onFirstPlaying, { once: true });
     player.load();
-    startPlay();
   }
 
   return {
