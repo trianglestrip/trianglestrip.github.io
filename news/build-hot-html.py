@@ -1310,6 +1310,8 @@ JS = """
   const buttons = nav.querySelectorAll('.hot-nav__btn');
   const groups = nav.querySelectorAll('.hot-nav__group');
   const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const snapshotWrap = document.querySelector('.hot-snapshot-wrap');
+  const dockWrap = document.querySelector('.hot-dock-wrap');
   const storageKey = 'hot-board-filter';
   function closeMenus() {
     groups.forEach(function (group) {
@@ -1321,12 +1323,15 @@ JS = """
     }
   }
   function applyFilter(filter) {
+    const isAll = filter === 'all';
     sections.forEach(function (section) {
-      section.style.display = filter === 'all' || section.dataset.category === filter ? '' : 'none';
+      section.style.display = isAll || section.dataset.category === filter ? '' : 'none';
     });
     buttons.forEach(function (btn) {
       btn.classList.toggle('is-active', btn.dataset.filter === filter);
     });
+    if (snapshotWrap) snapshotWrap.style.display = isAll ? '' : 'none';
+    if (dockWrap) dockWrap.style.display = isAll ? '' : 'none';
     try { localStorage.setItem(storageKey, filter); } catch (e) {}
   }
   function scrollToCard(targetId, category) {
