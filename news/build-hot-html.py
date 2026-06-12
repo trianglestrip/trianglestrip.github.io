@@ -235,7 +235,8 @@ def render_snapshot(
 
         if not slides:
             rows.append(
-                f'<div class="hot-snapshot__row" data-category="{safe_category}">'
+                f'<div class="hot-snapshot__row" data-category="{safe_category}" '
+                f'data-ticker-delay="{len(rows) * 520}" data-ticker-interval="{3000 + (len(rows) % 7) * 350}">'
                 f'<span class="hot-snapshot__cat">{category_name}</span>'
                 f'<div class="hot-snapshot__ticker">'
                 f'<span class="hot-snapshot__empty">暂无数据</span></div>'
@@ -261,7 +262,8 @@ def render_snapshot(
         first_hot = html.escape(slides[0]["hot"])
         hot_visible = ' style="visibility:hidden"' if not slides[0]["hot"] else ""
         rows.append(
-            f'<div class="hot-snapshot__row" data-category="{safe_category}">'
+            f'<div class="hot-snapshot__row" data-category="{safe_category}" '
+            f'data-ticker-delay="{len(rows) * 520}" data-ticker-interval="{3000 + (len(rows) % 7) * 350}">'
             f'<span class="hot-snapshot__cat">{category_name}</span>'
             f'<div class="hot-snapshot__ticker">{"".join(slide_html)}</div>'
             f'<span class="hot-snapshot__hot"{hot_visible}>{first_hot}</span></div>'
@@ -658,18 +660,21 @@ body {
 }
 .hot-dock {
   display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0.1rem 0;
 }
 .hot-dock__group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  padding: 0.35rem 0.45rem;
-  border-radius: 0.5rem;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.22rem 0.3rem;
+  border-radius: 0.45rem;
   background: color-mix(in srgb, var(--group-accent, #888) 10%, transparent);
 }
 .hot-dock__item {
@@ -677,8 +682,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
-  width: 3.25rem;
+  gap: 0.15rem;
+  width: 2.85rem;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -718,7 +723,7 @@ body {
   .hot-dock--ready .hot-dock__icon { background-color: #2a2b30; }
 }
 .hot-dock__name {
-  max-width: 3.25rem;
+  max-width: 2.85rem;
   color: var(--text-muted);
   font-size: 0.65rem;
   line-height: 1.2;
@@ -907,13 +912,16 @@ body {
   .hot-dock-wrap {
     padding: 0.45rem 0.35rem 0.55rem;
   }
+  .hot-dock {
+    gap: 0.2rem;
+  }
   .hot-dock__group {
-    gap: 0.1rem;
-    padding: 0.2rem 0.25rem;
-    border-radius: 0.4rem;
+    gap: 0.08rem;
+    padding: 0.15rem 0.2rem;
+    border-radius: 0.35rem;
   }
   .hot-dock__item {
-    width: 2.75rem;
+    width: 2.5rem;
     gap: 0;
   }
   .hot-dock__name {
@@ -962,7 +970,9 @@ JS = """
     const hotEl = row.querySelector('.hot-snapshot__hot');
     if (slides.length <= 1) return;
     let index = 0;
-    setInterval(function () {
+    const interval = parseInt(row.getAttribute('data-ticker-interval') || '3500', 10);
+    const delay = parseInt(row.getAttribute('data-ticker-delay') || '0', 10);
+    function tick() {
       slides[index].classList.remove('is-active');
       index = (index + 1) % slides.length;
       slides[index].classList.add('is-active');
@@ -970,7 +980,10 @@ JS = """
       const hot = slides[index].getAttribute('data-hot') || '';
       hotEl.textContent = hot;
       hotEl.style.visibility = hot ? 'visible' : 'hidden';
-    }, 3500);
+    }
+    setTimeout(function () {
+      setInterval(tick, interval);
+    }, delay);
   });
 })();
 (function () {
