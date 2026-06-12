@@ -8,7 +8,7 @@
       :class="{ active: isActive(item) }"
       :title="item.title"
     >
-      <i :class="item.icon" aria-hidden="true"></i>
+      <Icon :name="item.icon" aria-hidden="true" />
     </RouterLink>
   </nav>
 </template>
@@ -17,6 +17,7 @@
 import { computed } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import { getPlatform } from "../config/platforms";
+import Icon from "./Icon.vue";
 
 const props = defineProps({
   site: { type: String, default: "douyu" },
@@ -27,11 +28,11 @@ const route = useRoute();
 const items = computed(() => {
   const site = props.site || "douyu";
   return [
-    { icon: "ri-home-smile-line", link: `/${site}`, title: "首页" },
-    { icon: "ri-apps-2-line", link: `/${site}/category`, title: "分类" },
-    { icon: "ri-heart-line", link: "/follow", title: "关注" },
-    { icon: "ri-search-line", link: "/search", title: "搜索" },
-    { icon: "ri-user-smile-line", link: "/user", title: "用户" },
+    { icon: "home", link: `/${site}`, title: "首页" },
+    { icon: "apps", link: `/${site}/category`, title: "分类" },
+    { icon: "heart", link: "/follow", title: "关注" },
+    { icon: "search", link: "/search", title: "搜索" },
+    { icon: "user", link: "/user", title: "用户" },
   ];
 });
 

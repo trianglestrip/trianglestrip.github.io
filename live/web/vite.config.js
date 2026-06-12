@@ -8,19 +8,20 @@ const flvSrc = resolve(root, "node_modules/flv.js/dist/flv.min.js");
 const publicDir = resolve(root, "public");
 const flvDest = resolve(publicDir, "flv.min.js");
 
-function copyFlvJs() {
+function copyStaticAssets() {
   return {
-    name: "copy-flvjs",
+    name: "copy-static-assets",
     buildStart() {
-      if (!existsSync(flvSrc)) return;
       if (!existsSync(publicDir)) mkdirSync(publicDir, { recursive: true });
-      copyFileSync(flvSrc, flvDest);
+      if (existsSync(flvSrc)) {
+        copyFileSync(flvSrc, flvDest);
+      }
     },
   };
 }
 
 export default defineConfig({
-  plugins: [copyFlvJs(), vue()],
+  plugins: [copyStaticAssets(), vue()],
   base: "/",
   publicDir: "public",
   build: {

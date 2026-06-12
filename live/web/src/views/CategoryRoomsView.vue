@@ -3,11 +3,11 @@
     <div class="category-rooms-page">
       <header class="page-header">
         <RouterLink :to="`/${site}/category`" class="back-link" title="返回分类">
-          <i class="ri-arrow-left-line"></i>
+          <Icon name="arrow-left" />
         </RouterLink>
         <h1 class="page-title">{{ listTitle }}</h1>
         <button type="button" class="refresh-btn" :disabled="loadingRooms" title="刷新" @click="refresh">
-          <i class="ri-refresh-line"></i>
+          <Icon name="refresh" />
         </button>
       </header>
 
@@ -34,6 +34,7 @@ import { RouterLink, useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import InfiniteScroll from "../components/InfiniteScroll.vue";
 import RoomGrid from "../components/RoomGrid.vue";
+import Icon from "../components/Icon.vue";
 import { roomKey } from "../api/browse.js";
 import { getPlatform } from "../config/platforms";
 import { useBrowse } from "../composables/useBrowse.js";

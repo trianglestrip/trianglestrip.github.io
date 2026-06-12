@@ -2,10 +2,10 @@
   <AppLayout :active-site="site">
     <div class="play-layout" :class="{ 'play-layout--webscreen': webscreen }">
       <section class="play-main">
-        <header class="play-header">
+        <header v-if="headerReady" class="play-header">
           <RouterLink :to="`/${site}`" class="play-back" title="返回">
-            <i class="ri-arrow-left-line"></i>
-          </RouterLink>
+          <Icon name="arrow-left" />
+        </RouterLink>
           <h1 class="play-title">{{ displayTitle }}</h1>
         </header>
 
@@ -13,55 +13,78 @@
           <div class="video-shell">
             <PlayerPanel
               ref="playerPanelRef"
-              :playing="playing"
+              :stream-active="streamActive"
               :placeholder="notice || '加载中...'"
             />
-            <div v-if="notice && !playing" class="play-overlay">{{ notice }}</div>
+            <DanmakuOverlay
+              v-if="danmakuReady && payload"
+              :messages="danmakuMessages"
+              :settings="overlaySettings"
+              :stream-active="streamActive"
+              :playing="playing"
+            />
+            <PlayerControls
+              v-if="controlsReady"
+              overlay
+              :show="showControls"
+              :playing="playing"
+              :qualities="qualityOpts"
+              :lines="lineOpts"
+              :quality-index="qualityIndex"
+              :line-index="lineIndex"
+              :notice="controlNotice"
+              :is-followed="isFollowed(site, id)"
+              :danmaku-on="overlaySettings.show"
+              :webscreen="webscreen"
+              :fullscreen="isFullscreen"
+              :picture-in-picture="pictureInPicture"
+              @toggle-play="togglePlay"
+              @webscreen="toggleWebscreen"
+              @fullscreen="toggleFullscreen"
+              @quality-change="onQualityChange"
+              @line-change="onLineChange"
+              @toggle-follow="onToggleFollow"
+              @refresh="onRefresh"
+              @toggle-danmaku="onToggleDanmaku"
+              @toggle-pip="onTogglePiP"
+            />
+            <div v-if="notice && !streamActive" class="play-overlay">{{ notice }}</div>
           </div>
-          <PlayerControls
-            :show="showControls"
-            :playing="playing"
-            :qualities="qualityOptions()"
-            :lines="lineOptions()"
-            :quality-index="qualityIndex"
-            :line-index="lineIndex"
-            :notice="controlNotice"
-            @toggle-play="togglePlay"
-            @stop="onStop"
-            @webscreen="toggleWebscreen"
-            @fullscreen="toggleFullscreen"
-            @quality-change="onQualityChange"
-            @line-change="onLineChange"
-          />
         </div>
       </section>
 
       <PlaySidePanel
-        v-if="!webscreen"
-        v-model:room-input="roomInput"
-        :placeholder="inputPlaceholder"
-        :loading="loading"
+        v-if="sideReady && !webscreen"
+        v-model:overlay-settings="overlaySettings"
+        v-model:chat-settings="chatSettings"
         :status-text="statusText"
-        :status-kind="statusKind"
         :payload="payload"
-        :follow-rooms="followRooms"
-        @play="onPlay"
-        @select-room="onSelectFollow"
+        :danmaku-messages="danmakuMessages"
+        :danmaku-status="danmakuStatus"
+        :follow-list="follows"
+        :is-followed="isFollowed(site, id)"
+        @play-room="onPlayFollow"
+        @unfollow="onUnfollow"
+        @toggle-follow="onToggleFollow"
       />
     </div>
   </AppLayout>
 </template>
 
 <script setup>
-import { ref, computed, watch, onBeforeUnmount, onMounted } from "vue";
+import { ref, computed, watch, onBeforeUnmount, onMounted, nextTick, defineAsyncComponent } from "vue";
 import { RouterLink, useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import PlayerPanel from "../components/PlayerPanel.vue";
-import PlayerControls from "../components/PlayerControls.vue";
-import PlaySidePanel from "../components/PlaySidePanel.vue";
-import { roomKey, fetchRecommendRooms } from "../api/browse.js";
+import Icon from "../components/Icon.vue";
 import { getPlatform } from "../config/platforms";
 import { useRoom, usePlayer } from "../composables/useLive.js";
+import { useDanmaku } from "../composables/useDanmaku.js";
+import { useFollow } from "../composables/useFollow.js";
+
+const PlayerControls = defineAsyncComponent(() => import("../components/PlayerControls.vue"));
+const PlaySidePanel = defineAsyncComponent(() => import("../components/PlaySidePanel.vue"));
+const DanmakuOverlay = defineAsyncComponent(() => import("../components/DanmakuOverlay.vue"));
 
 const props = defineProps({
   site: { type: String, required: true },
@@ -73,16 +96,21 @@ const siteRef = ref(props.site);
 const roomInput = ref(props.id);
 const playerPanelRef = ref(null);
 const frameRef = ref(null);
-const followRooms = ref([]);
 const webscreen = ref(false);
 const showControls = ref(true);
 const controlNotice = ref("");
+const isFullscreen = ref(false);
+const pictureInPicture = ref(false);
+const hideControlsTimer = ref(null);
 const lastPlayedRoom = ref("");
+const headerReady = ref(false);
+const controlsReady = ref(false);
+const sideReady = ref(false);
+const danmakuReady = ref(false);
+let chromeRaf = 0;
+let playRaf = 0;
 
 const platform = computed(() => getPlatform(props.site));
-const inputPlaceholder = computed(() =>
-  platform.value?.defaultRoom ? `例如 ${platform.value.defaultRoom}` : "房间号",
-);
 const displayTitle = computed(
   () => payload.value?.title || payload.value?.anchor_name || `房间 ${props.id}`,
 );
@@ -104,27 +132,152 @@ const {
   buildMetaText,
 } = useRoom(siteRef);
 
-const { playing, destroy, playFlv } = usePlayer();
-const notice = computed(() => (loading.value ? "加载中..." : statusKind.value === "err" ? statusText.value : ""));
+const qualityOpts = computed(() => qualityOptions());
+const lineOpts = computed(() => lineOptions());
 
-async function loadFollowList() {
+const { playing, streamActive, destroy, playFlv, togglePlay } = usePlayer();
+const {
+  messages: danmakuMessages,
+  status: danmakuStatus,
+  overlaySettings,
+  chatSettings,
+  connect: connectDm,
+  disconnect: disconnectDm,
+} = useDanmaku(siteRef, roomInput);
+const { follows, isFollowed, toggleFollow, unfollow } = useFollow();
+
+const notice = computed(() =>
+  loading.value ? "加载中..." : statusKind.value === "err" ? statusText.value : "",
+);
+
+function scheduleDeferredChrome() {
+  headerReady.value = false;
+  controlsReady.value = false;
+  sideReady.value = false;
+  danmakuReady.value = false;
+  cancelAnimationFrame(chromeRaf);
+  chromeRaf = requestAnimationFrame(() => {
+    headerReady.value = true;
+    controlsReady.value = true;
+  });
+}
+
+function runIdle(fn) {
+  if (typeof requestIdleCallback === "function") {
+    requestIdleCallback(fn, { timeout: 2500 });
+  } else {
+    setTimeout(fn, 48);
+  }
+}
+
+/** 起播后再挂载弹幕层、侧栏并连接 WS，避免与解析/拉流抢资源 */
+function onPlaybackReady() {
+  danmakuReady.value = true;
+  runIdle(() => {
+    sideReady.value = true;
+    connectDm();
+  });
+}
+
+function schedulePlay(room) {
+  cancelAnimationFrame(playRaf);
+  playRaf = requestAnimationFrame(() => {
+    nextTick(() => playRoom(room));
+  });
+}
+
+function syncRouteState(site, id) {
+  siteRef.value = site;
+  roomInput.value = id;
+  destroy();
+  disconnectDm();
+  payload.value = null;
+  lastPlayedRoom.value = "";
+  document.title = "Lemon live";
+  scheduleDeferredChrome();
+}
+
+async function ensureVideoEl() {
+  if (playerPanelRef.value?.videoEl) return playerPanelRef.value.videoEl;
+  await nextTick();
+  if (playerPanelRef.value?.videoEl) return playerPanelRef.value.videoEl;
+  await new Promise((resolve) => requestAnimationFrame(resolve));
+  const el = playerPanelRef.value?.videoEl;
+  if (!el) throw new Error("播放器未就绪");
+  return el;
+}
+
+function onToggleDanmaku() {
+  overlaySettings.value.show = !overlaySettings.value.show;
+}
+
+async function onTogglePiP() {
+  const video = playerPanelRef.value?.videoEl;
+  if (!video) return;
   try {
-    const data = await fetchRecommendRooms(props.site, 1);
-    followRooms.value = (data.list || []).filter((r) => roomKey(r) !== props.id).slice(0, 12);
+    if (document.pictureInPictureElement) {
+      await document.exitPictureInPicture();
+    } else {
+      await video.requestPictureInPicture();
+    }
   } catch {
-    followRooms.value = [];
+    /* unsupported or denied */
+  }
+}
+
+function revealControls() {
+  showControls.value = true;
+  clearTimeout(hideControlsTimer.value);
+  if (playing.value) {
+    hideControlsTimer.value = setTimeout(() => {
+      if (playing.value) showControls.value = false;
+    }, 3000);
+  }
+}
+
+function onToggleFollow() {
+  if (!payload.value) return;
+  toggleFollow({
+    site: props.site,
+    id: roomInput.value,
+    title: payload.value.title || displayTitle.value,
+    anchor: payload.value.anchor_name || "",
+    cover: payload.value.cover || "",
+  });
+}
+
+function onUnfollow(room) {
+  unfollow(room.site, room.id);
+}
+
+function onPlayFollow(room) {
+  router.push({ name: "play", params: { site: room.site, id: room.id } });
+}
+
+async function onRefresh() {
+  if (!payload.value || loading.value) return;
+  destroy();
+  disconnectDm();
+  danmakuReady.value = false;
+  sideReady.value = false;
+  try {
+    await startPlayback();
+  } catch (err) {
+    setStatus(`刷新失败: ${err.message}`, "err");
   }
 }
 
 async function startPlayback() {
   const { url } = await resolvePlayUrl();
-  const videoEl = playerPanelRef.value?.videoEl;
-  if (!videoEl) throw new Error("播放器未就绪");
+  const videoEl = await ensureVideoEl();
   playFlv(videoEl, url, {
     onError: () => setStatus(`${buildMetaText(url)}\n播放中断，可尝试切换线路`, "err"),
     onReady: () => {
       setStatus(`${buildMetaText(url)}\n播放中`, "ok");
-      document.title = displayTitle.value;
+      queueMicrotask(() => {
+        document.title = displayTitle.value;
+        onPlaybackReady();
+      });
     },
   });
 }
@@ -133,6 +286,7 @@ async function playRoom(room) {
   if (!room || lastPlayedRoom.value === room) return;
   roomInput.value = room;
   destroy();
+  disconnectDm();
   payload.value = null;
   try {
     await loadRoom(room, { autoPlay: true, playFn: startPlayback });
@@ -142,39 +296,9 @@ async function playRoom(room) {
   }
 }
 
-async function onPlay() {
-  if (!platform.value?.enabled) {
-    setStatus("该平台尚未接入", "err");
-    return;
-  }
-  destroy();
-  payload.value = null;
-  lastPlayedRoom.value = "";
-  try {
-    const roomId = await loadRoom(roomInput.value, { autoPlay: true, playFn: startPlayback });
-    if (roomId && roomId !== props.id) {
-      router.replace({ name: "play", params: { site: props.site, id: roomId } });
-    }
-  } catch {
-    /* setStatus done */
-  }
-}
-
-function onStop() {
-  destroy();
-  lastPlayedRoom.value = "";
-  setStatus("已停止");
-}
-
-function togglePlay() {
-  const video = playerPanelRef.value?.videoEl;
-  if (!video) return;
-  if (video.paused) video.play();
-  else video.pause();
-}
-
 function toggleWebscreen() {
   webscreen.value = !webscreen.value;
+  revealControls();
 }
 
 function toggleFullscreen() {
@@ -182,6 +306,15 @@ function toggleFullscreen() {
   if (!el) return;
   if (document.fullscreenElement) document.exitFullscreen();
   else el.requestFullscreen?.();
+  revealControls();
+}
+
+function onFullscreenChange() {
+  isFullscreen.value = !!document.fullscreenElement;
+}
+
+function onPiPChange() {
+  pictureInPicture.value = document.pictureInPictureElement === playerPanelRef.value?.videoEl;
 }
 
 async function onQualityChange(index) {
@@ -206,37 +339,32 @@ async function onLineChange(index) {
   }
 }
 
-function onSelectFollow(room) {
-  const id = roomKey(room);
-  if (!id) return;
-  router.push({ name: "play", params: { site: props.site, id } });
-}
-
 watch(
   () => [props.site, props.id],
-  async ([site, id]) => {
-    siteRef.value = site;
-    roomInput.value = id;
-    destroy();
-    payload.value = null;
-    lastPlayedRoom.value = "";
-    document.title = "Lemon live";
-    if (platform.value?.enabled) {
-      await playRoom(id);
-      loadFollowList();
-    }
+  ([site, id]) => {
+    syncRouteState(site, id);
+    if (!getPlatform(site)?.enabled) return;
+    schedulePlay(id);
   },
   { immediate: true },
 );
 
 onMounted(() => {
-  frameRef.value?.addEventListener("mousemove", () => {
-    showControls.value = true;
-  });
+  frameRef.value?.addEventListener("mousemove", revealControls);
+  document.addEventListener("fullscreenchange", onFullscreenChange);
+  document.addEventListener("enterpictureinpicture", onPiPChange);
+  document.addEventListener("leavepictureinpicture", onPiPChange);
 });
 
 onBeforeUnmount(() => {
+  cancelAnimationFrame(chromeRaf);
+  cancelAnimationFrame(playRaf);
   destroy();
+  disconnectDm();
+  clearTimeout(hideControlsTimer.value);
+  document.removeEventListener("fullscreenchange", onFullscreenChange);
+  document.removeEventListener("enterpictureinpicture", onPiPChange);
+  document.removeEventListener("leavepictureinpicture", onPiPChange);
   document.title = "Lemon live";
 });
 </script>
@@ -334,6 +462,7 @@ onBeforeUnmount(() => {
   color: var(--amber);
   font-size: .95rem;
   pointer-events: none;
+  z-index: 3;
 }
 
 .play-layout--webscreen .play-main {

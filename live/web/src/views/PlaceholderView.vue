@@ -1,7 +1,7 @@
 <template>
   <AppLayout active-site="douyu">
     <div class="placeholder-page">
-      <i :class="icon" class="placeholder-icon"></i>
+      <Icon :name="iconName" class="placeholder-icon" />
       <h1>{{ title }}</h1>
       <p>{{ message }}</p>
       <RouterLink to="/douyu" class="btn btn-primary">返回首页</RouterLink>
@@ -13,20 +13,21 @@
 import { computed } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
+import Icon from "../components/Icon.vue";
 
 const route = useRoute();
 
 const meta = computed(() => {
   if (route.path === "/follow") {
-    return { icon: "ri-heart-line", title: "关注", message: "关注列表尚未接入，与 Lemon Live 一致预留入口。" };
+    return { icon: "heart", title: "关注", message: "关注列表尚未接入，与 Lemon Live 一致预留入口。" };
   }
   if (route.path === "/search") {
-    return { icon: "ri-search-line", title: "搜索", message: "搜索功能尚未接入。" };
+    return { icon: "search", title: "搜索", message: "搜索功能尚未接入。" };
   }
-  return { icon: "ri-user-smile-line", title: "用户", message: "用户中心尚未接入。" };
+  return { icon: "user", title: "用户", message: "用户中心尚未接入。" };
 });
 
-const icon = computed(() => meta.value.icon);
+const iconName = computed(() => meta.value.icon);
 const title = computed(() => meta.value.title);
 const message = computed(() => meta.value.message);
 </script>
@@ -42,7 +43,9 @@ const message = computed(() => meta.value.message);
 }
 
 .placeholder-icon {
-  font-size: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-self: center;
   color: var(--amber);
 }
 

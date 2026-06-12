@@ -1,9 +1,9 @@
 <template>
   <section class="player-panel">
     <div class="player-frame">
-      <video ref="videoEl" controls playsinline></video>
-      <div v-show="!playing" class="player-placeholder">
-        <span class="placeholder-icon"><i class="ri-play-circle-line"></i></span>
+      <video ref="videoEl" playsinline></video>
+      <div v-show="!streamActive" class="player-placeholder">
+        <span class="placeholder-icon"><Icon name="play-circle" /></span>
         <p>{{ placeholder }}</p>
       </div>
     </div>
@@ -12,9 +12,10 @@
 
 <script setup>
 import { ref } from "vue";
+import Icon from "./Icon.vue";
 
 defineProps({
-  playing: { type: Boolean, default: false },
+  streamActive: { type: Boolean, default: false },
   placeholder: { type: String, default: "输入房间号并点击播放" },
 });
 

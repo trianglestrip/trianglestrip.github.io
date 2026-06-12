@@ -1,37 +1,125 @@
 <template>
-  <div v-if="show" class="player-controls">
-    <div class="controls-row">
-      <select :value="qualityIndex" :disabled="!qualities.length" @change="onQuality">
-        <option v-for="item in qualities" :key="item.index" :value="item.index">
-          {{ item.loaded ? item.name : `${item.name}（待加载）` }}
-        </option>
-      </select>
-      <select :value="lineIndex" :disabled="!lines.length" @change="onLine">
-        <option v-for="(line, index) in lines" :key="index" :value="index">{{ line.name }}</option>
-      </select>
+  <div v-if="show" class="player-controls" :class="{ 'player-controls--overlay': overlay }">
+    <div class="controls-bar">
+      <button
+        type="button"
+        class="ctrl-icon"
+        :title="playing ? '暂停' : '播放'"
+        @click="$emit('toggle-play')"
+      >
+        <Icon :name="playing ? 'pause' : 'play'" />
+      </button>
+
+      <button
+        type="button"
+        class="ctrl-icon"
+        :class="{ 'ctrl-icon--active': isFollowed }"
+        :title="isFollowed ? '取消关注' : '关注'"
+        @click="$emit('toggle-follow')"
+      >
+        <Icon name="heart" :filled="isFollowed" />
+      </button>
+
+      <button type="button" class="ctrl-icon" title="刷新" @click="$emit('refresh')">
+        <Icon name="refresh" />
+      </button>
+
+      <button
+        type="button"
+        class="ctrl-icon"
+        :class="{ 'ctrl-icon--active': danmakuOn }"
+        title="弹幕开关"
+        @click="$emit('toggle-danmaku')"
+      >
+        <Icon name="chat" />
+      </button>
+
+      <div class="controls-spacer"></div>
+
+      <div class="controls-right">
+        <div ref="qualityRef" class="ctrl-dropdown">
+          <button
+            type="button"
+            class="ctrl-dropdown__trigger"
+            :disabled="!qualities.length"
+            @click.stop="toggleQualityMenu"
+          >
+            {{ qualityLabel }}
+          </button>
+          <div v-show="qualityOpen && qualities.length" class="ctrl-dropdown__menu">
+            <button
+              v-for="item in qualities"
+              :key="item.index"
+              type="button"
+              class="ctrl-dropdown__item"
+              :class="{ active: item.index === qualityIndex }"
+              @click="pickQuality(item.index)"
+            >
+              {{ item.loaded ? item.name : `${item.name}（待加载）` }}
+            </button>
+          </div>
+        </div>
+
+        <div ref="lineRef" class="ctrl-dropdown">
+          <button
+            type="button"
+            class="ctrl-dropdown__trigger"
+            :disabled="!lines.length"
+            @click.stop="toggleLineMenu"
+          >
+            {{ lineLabel }}
+          </button>
+          <div v-show="lineOpen && lines.length" class="ctrl-dropdown__menu">
+            <button
+              v-for="(line, index) in lines"
+              :key="index"
+              type="button"
+              class="ctrl-dropdown__item"
+              :class="{ active: index === lineIndex }"
+              @click="pickLine(index)"
+            >
+              {{ line.name }}
+            </button>
+          </div>
+        </div>
+
+        <button type="button" class="ctrl-icon ctrl-icon--pip" title="画中画" @click="$emit('toggle-pip')">
+          <Icon :name="pictureInPicture ? 'pip-exit' : 'pip'" />
+        </button>
+      </div>
+
+      <button
+        type="button"
+        class="ctrl-icon"
+        :class="{ 'ctrl-icon--active': webscreen }"
+        title="网页全屏"
+        @click="$emit('webscreen')"
+      >
+        <Icon name="webscreen" />
+      </button>
+
+      <button type="button" class="ctrl-icon" :title="fullscreen ? '退出全屏' : '全屏'" @click="$emit('fullscreen')">
+        <Icon :name="fullscreen ? 'fullscreen-exit' : 'fullscreen'" />
+      </button>
     </div>
-    <div class="controls-row controls-actions">
-      <button type="button" class="ctrl-btn" :title="playing ? '暂停' : '播放'" @click="$emit('toggle-play')">
-        <i :class="playing ? 'ri-pause-line' : 'ri-play-line'"></i>
-      </button>
-      <button type="button" class="ctrl-btn" title="停止" @click="$emit('stop')">
-        <i class="ri-stop-line"></i>
-      </button>
-      <button type="button" class="ctrl-btn" title="网页全屏" @click="$emit('webscreen')">
-        <i class="ri-layout-row-line"></i>
-      </button>
-      <button type="button" class="ctrl-btn" title="全屏" @click="$emit('fullscreen')">
-        <i class="ri-fullscreen-line"></i>
-      </button>
-    </div>
+
     <p v-if="notice" class="controls-notice">{{ notice }}</p>
   </div>
 </template>
 
 <script setup>
-defineProps({
+import { computed, onBeforeUnmount, onMounted, ref } from "vue";
+import Icon from "./Icon.vue";
+
+const props = defineProps({
   show: { type: Boolean, default: true },
+  overlay: { type: Boolean, default: false },
   playing: { type: Boolean, default: false },
+  isFollowed: { type: Boolean, default: false },
+  danmakuOn: { type: Boolean, default: true },
+  webscreen: { type: Boolean, default: false },
+  fullscreen: { type: Boolean, default: false },
+  pictureInPicture: { type: Boolean, default: false },
   qualities: { type: Array, default: () => [] },
   lines: { type: Array, default: () => [] },
   qualityIndex: { type: Number, default: 0 },
@@ -39,15 +127,62 @@ defineProps({
   notice: { type: String, default: "" },
 });
 
-const emit = defineEmits(["toggle-play", "stop", "webscreen", "fullscreen", "quality-change", "line-change"]);
+const emit = defineEmits([
+  "toggle-play",
+  "webscreen",
+  "fullscreen",
+  "quality-change",
+  "line-change",
+  "toggle-follow",
+  "refresh",
+  "toggle-danmaku",
+  "toggle-pip",
+]);
 
-function onQuality(event) {
-  emit("quality-change", Number(event.target.value) || 0);
+const qualityOpen = ref(false);
+const lineOpen = ref(false);
+const qualityRef = ref(null);
+const lineRef = ref(null);
+
+const qualityLabel = computed(() => {
+  const item = props.qualities[props.qualityIndex];
+  return item?.name || "清晰度";
+});
+
+const lineLabel = computed(() => props.lines[props.lineIndex]?.name || "线路");
+
+function closeMenus() {
+  qualityOpen.value = false;
+  lineOpen.value = false;
 }
 
-function onLine(event) {
-  emit("line-change", Number(event.target.value) || 0);
+function toggleQualityMenu() {
+  lineOpen.value = false;
+  qualityOpen.value = !qualityOpen.value;
 }
+
+function toggleLineMenu() {
+  qualityOpen.value = false;
+  lineOpen.value = !lineOpen.value;
+}
+
+function pickQuality(index) {
+  emit("quality-change", index);
+  closeMenus();
+}
+
+function pickLine(index) {
+  emit("line-change", index);
+  closeMenus();
+}
+
+function onDocumentClick(event) {
+  if (qualityRef.value?.contains(event.target) || lineRef.value?.contains(event.target)) return;
+  closeMenus();
+}
+
+onMounted(() => document.addEventListener("click", onDocumentClick));
+onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
 </script>
 
 <style scoped>
@@ -55,35 +190,126 @@ function onLine(event) {
   padding: .35rem .5rem .5rem;
 }
 
-.controls-row {
+.player-controls--overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 0;
+  pointer-events: auto;
+}
+
+.controls-bar {
   display: flex;
-  gap: .45rem;
   align-items: center;
-  flex-wrap: wrap;
+  gap: .75rem;
+  padding: .5rem 1rem;
+  background: rgba(0, 0, 0, .3);
 }
 
-.controls-row select {
+.controls-spacer {
   flex: 1;
-  min-width: 6rem;
+  min-width: .5rem;
 }
 
-.controls-actions {
-  margin-top: .45rem;
+.controls-right {
+  display: flex;
+  align-items: center;
+  gap: .15rem;
 }
 
-.ctrl-btn {
+.ctrl-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 1.5em;
+  height: 1.5em;
   padding: 0;
-  border-radius: 8px;
-  font-size: 1.1rem;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color .15s;
+}
+
+.ctrl-icon:hover,
+.ctrl-icon--active {
+  color: var(--amber);
+}
+
+.ctrl-icon--pip {
+  margin-left: .35rem;
+  font-size: 1.2rem;
+}
+
+.ctrl-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.ctrl-dropdown__trigger {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: .88rem;
+  padding: .25rem .35rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color .15s;
+}
+
+.ctrl-dropdown__trigger:hover:not(:disabled),
+.ctrl-dropdown__trigger:focus-visible {
+  color: var(--amber);
+  outline: none;
+}
+
+.ctrl-dropdown__trigger:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.ctrl-dropdown__menu {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  min-width: 6.5rem;
+  margin-bottom: .35rem;
+  padding: .15rem 0;
+  background: rgba(0, 0, 0, .88);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 6px;
+  text-align: center;
+  z-index: 5;
+}
+
+.ctrl-dropdown__item {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: .85rem;
+  padding: .35rem .65rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color .15s;
+}
+
+.ctrl-dropdown__item:hover,
+.ctrl-dropdown__item.active {
+  color: var(--amber);
 }
 
 .controls-notice {
-  margin: .45rem 0 0;
+  margin: .35rem 0 0;
+  padding: 0 1rem .35rem;
   font-size: .82rem;
   color: var(--amber);
 }
