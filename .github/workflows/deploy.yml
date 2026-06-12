@@ -3,9 +3,7 @@ on:
   push:
     branches: [ master ]
     paths-ignore:
-      - 'live/server/**'
-      - 'live/web/**'
-      - 'live/build/**'
+      - 'live/**'
       - 'news/**'
   discussion:
     types: [created, edited, deleted, transferred, labeled, unlabeled]
@@ -34,41 +32,15 @@ jobs:
           python3 scripts/prepare-posts.py
           python3 scripts/sync-discussions.py
           hugo --minify --contentDir .hugo-prepared/content
-      - name: 合并热榜静态页（news 独立模块，仅拷贝发布产物）
+      - name: 合并热榜静态页（news 独立 workflow 日常更新；全量发布时仍需拷贝）
         run: |
           mkdir -p public/news
           cp news/index.html news/icons-sprite.png news/icons-sprite-dock.png public/news/
-      - name: 合并直播前端（live/dist/web → /live/）
+      - name: 合并直播前端（live 独立 workflow 日常更新；全量发布时仍需拷贝）
         run: |
           mkdir -p public/live
           cp -r live/dist/web/* public/live/
           cp public/live/index.html public/live/404.html
-      - name: GitHub Pages 404（/live/* 深链回退到 SPA）
-        run: |
-          cat > public/404.html << 'EOF'
-          <!DOCTYPE html>
-          <html lang="zh-CN">
-          <head>
-            <meta charset="UTF-8">
-            <title>404</title>
-            <script>
-            (function () {
-              var path = location.pathname;
-              if (path.startsWith("/live")) {
-                var rest = path.replace(/^\/live/, "") || "/";
-                if (!/\.[a-z0-9]+$/i.test(rest)) {
-                  sessionStorage.setItem("live-gh-pages-path", rest + location.search + location.hash);
-                  location.replace("/live/");
-                  return;
-                }
-              }
-              location.replace("/");
-            })();
-            </script>
-          </head>
-          <body></body>
-          </html>
-          EOF
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:

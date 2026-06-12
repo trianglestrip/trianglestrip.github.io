@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>404</title>
+  <script>
+  (function () {
+    var path = location.pathname;
+    if (path.startsWith("/live")) {
+      var rest = path.replace(/^\/live/, "") || "/";
+      if (!/\.[a-z0-9]+$/i.test(rest)) {
+        sessionStorage.setItem("live-gh-pages-path", rest + location.search + location.hash);
+        location.replace("/live/");
+        return;
+      }
+    }
+    location.replace("/");
+  })();
+  </script>
+</head>
+<body></body>
+</html>

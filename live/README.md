@@ -10,8 +10,10 @@
 
 ## 线上 + 本地 API
 
-- 前端：https://trianglestrip.github.io/live/（部署 workflow 拷贝 `dist/web`）
-- API：本机 `dist\server\start.bat`，`config.json` 中 `api.baseUrl` 为 `http://127.0.0.1:8765`
+- 前端：https://trianglestrip.github.io/live/（**live-deploy.yml** 独立部署 `dist/web`，与 Hugo 解耦）
+- API：本机 `dist\server\start.bat`
+
+改 `live/dist/web/**` 会触发 `live-deploy.yml`；改博客不会。Hugo 全量发布（`deploy.yml`）时仍会拷贝一份 live/news，避免 `force_orphan` 清空子目录。
 
 ## 本地打包
 

@@ -1,0 +1,31 @@
+name: 部署直播前端
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'live/dist/web/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 准备发布目录
+        run: |
+          rm -rf live/publish
+          mkdir -p live/publish
+          cp -r live/dist/web/* live/publish/
+          cp live/publish/index.html live/publish/404.html
+
+      - name: 部署到 gh-pages /live/
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./live/publish
+          destination_dir: live
+          keep_files: true
