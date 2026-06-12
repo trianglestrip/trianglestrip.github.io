@@ -13,15 +13,15 @@ if not exist "%SERVER%\.venv\Scripts\python.exe" (
   exit /b 1
 )
 
+echo ==^> 清理 dist/server、dist/web
+call :cleanDir "%DIST%server" start.bat config.json
+call :cleanDir "%DIST%web" server.mjs config.json node.exe start.bat
+
 echo ==^> 构建前端 (本地根路径 /)
 pushd "%WEB%"
 call npm run build
 if errorlevel 1 exit /b 1
 popd
-
-echo ==^> 清理 dist/server、dist/web
-call :cleanDir "%DIST%server" start.bat config.json
-call :cleanDir "%DIST%web" server.mjs config.json node.exe
 
 echo ==^> PyInstaller 打包 API -^> dist/server/live-api.exe
 "%SERVER%\.venv\Scripts\python.exe" -m pip install pyinstaller -q
