@@ -445,6 +445,58 @@ def render_card(
 </section>"""
 
 
+def render_category_board(
+    categories: list[dict],
+    order: list[str],
+    platforms: dict,
+    platform_data: dict[str, dict | None],
+    now: datetime,
+    *,
+    category_names: dict[str, str],
+    icons: dict | None,
+    cards_per_page: int = 4,
+) -> str:
+    sections: list[str] = []
+    for cat in categories:
+        category_id = str(cat.get("id", ""))
+        if not category_id:
+            continue
+        category_name = html.escape(str(cat.get("name", category_id)))
+        safe_category = html.escape(category_id)
+        cards_html: list[str] = []
+        for platform_id, meta in category_platforms(order, platforms, category_id):
+            cards_html.append(
+                render_card(
+                    platform_id,
+                    meta,
+                    platform_data.get(platform_id),
+                    now,
+                    category_names=category_names,
+                    icons=icons,
+                )
+            )
+        if not cards_html:
+            continue
+        pages: list[str] = []
+        for index in range(0, len(cards_html), cards_per_page):
+            chunk = cards_html[index : index + cards_per_page]
+            pages.append(f'<div class="hot-section__page">{"".join(chunk)}</div>')
+        scroll_attr = ' data-scroll="1"' if len(cards_html) > cards_per_page else ""
+        delay = len(sections) * 800
+        sections.append(
+            f'<section class="hot-section" id="section-{safe_category}" '
+            f'data-category="{safe_category}"{scroll_attr} '
+            f'data-carousel-delay="{delay}">'
+            f'<h2 class="hot-section__title">{category_name}</h2>'
+            f'<div class="hot-section__viewport">'
+            f'<div class="hot-section__track">{"".join(pages)}</div>'
+            f"</div></section>"
+        )
+    if not sections:
+        return ""
+    return f'<div class="hot-board">{"".join(sections)}</div>'
+
+
 CSS = """
 :root {
   color-scheme: light dark;
@@ -863,38 +915,37 @@ body {
 }
 .hot-dock__item:hover .hot-dock__name { color: var(--link); }
 .hot-board {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--hot-card-min)), 1fr));
-  gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
   width: 100%;
   max-width: var(--hot-content-max);
   margin: 0 auto;
-  padding: 0 var(--hot-content-pad);
+  padding: 0.5rem var(--hot-content-pad) 1.5rem;
 }
-@media (min-width: 1920px) {
-  .hot-board {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-  }
-  .hot-card__link {
-    white-space: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    line-height: 1.35;
-  }
-  .hot-card__row {
-    align-items: flex-start;
-    padding: 0.5rem 1rem;
-  }
-  .hot-card__hot {
-    max-width: 5.5rem;
-  }
+.hot-section__title {
+  margin: 0 0 0.75rem;
+  padding-left: 0.55rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  border-left: 3px solid var(--link);
+  line-height: 1.3;
 }
-@media (min-width: 1600px) and (max-width: 1919.98px) {
-  .hot-board {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
+.hot-section__viewport {
+  overflow: hidden;
+}
+.hot-section__track {
+  display: flex;
+  transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.hot-section__page {
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.75rem, 1.2vw, 1rem);
+  min-width: 0;
 }
 .hot-card {
   display: flex;
@@ -1036,6 +1087,27 @@ body {
   text-align: center;
 }
 .hot-card__stale { color: #c97a1a; }
+@media (min-width: 1920px) {
+  .hot-card__link {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.35;
+  }
+  .hot-card__row {
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+  .hot-card__hot {
+    max-width: 5.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .hot-section__page {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 @media (max-width: 640px) {
   .hot-header,
   .hot-dock-wrap,
@@ -1089,9 +1161,12 @@ body {
     font-size: 0.92rem;
   }
   .hot-board {
-    grid-template-columns: minmax(0, 1fr);
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    gap: 1rem;
+  }
+  .hot-section__page {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 """
@@ -1113,46 +1188,27 @@ JS = """
   });
 })();
 (function () {
-  const TICKER_ANIM_MS = 500;
-  document.querySelectorAll('.hot-snapshot__row').forEach(function (row) {
-    const slides = row.querySelectorAll('.hot-snapshot__slide');
-    const hotEl = row.querySelector('.hot-snapshot__hot');
-    if (slides.length <= 1) return;
-    let index = 0;
-    let animating = false;
-    const interval = parseInt(row.getAttribute('data-ticker-interval') || '60000', 10);
-    const delay = parseInt(row.getAttribute('data-ticker-delay') || '0', 10);
-    function updateHot(slide) {
-      if (!hotEl) return;
-      const hot = slide.getAttribute('data-hot') || '';
-      hotEl.textContent = hot;
-      hotEl.style.visibility = hot ? 'visible' : 'hidden';
-    }
+  const CAROUSEL_INTERVAL = 60000;
+  document.querySelectorAll('.hot-section[data-scroll="1"]').forEach(function (section) {
+    const track = section.querySelector('.hot-section__track');
+    if (!track) return;
+    const pages = track.querySelectorAll('.hot-section__page');
+    if (pages.length <= 1) return;
+    let page = 0;
+    const delay = parseInt(section.getAttribute('data-carousel-delay') || '0', 10);
     function tick() {
-      if (animating) return;
-      animating = true;
-      const current = slides[index];
-      const nextIndex = (index + 1) % slides.length;
-      const next = slides[nextIndex];
-      current.classList.remove('is-active');
-      current.classList.add('is-exit');
-      next.classList.add('is-active');
-      updateHot(next);
-      setTimeout(function () {
-        current.classList.remove('is-exit');
-        index = nextIndex;
-        animating = false;
-      }, TICKER_ANIM_MS);
+      page = (page + 1) % pages.length;
+      track.style.transform = 'translateX(-' + (page * 100) + '%)';
     }
     setTimeout(function () {
-      setInterval(tick, interval);
+      setInterval(tick, CAROUSEL_INTERVAL);
     }, delay);
   });
 })();
 (function () {
   const nav = document.querySelector('.hot-nav');
-  const cards = document.querySelectorAll('.hot-card[data-category]');
-  if (!nav || !cards.length) return;
+  const sections = document.querySelectorAll('.hot-section[data-category]');
+  if (!nav || !sections.length) return;
   const buttons = nav.querySelectorAll('.hot-nav__btn');
   const groups = nav.querySelectorAll('.hot-nav__group');
   const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -1167,10 +1223,10 @@ JS = """
     }
   }
   function applyFilter(filter) {
-    cards.forEach((card) => {
-      card.style.display = filter === 'all' || card.dataset.category === filter ? '' : 'none';
+    sections.forEach(function (section) {
+      section.style.display = filter === 'all' || section.dataset.category === filter ? '' : 'none';
     });
-    buttons.forEach((btn) => {
+    buttons.forEach(function (btn) {
       btn.classList.toggle('is-active', btn.dataset.filter === filter);
     });
     try { localStorage.setItem(storageKey, filter); } catch (e) {}
@@ -1179,8 +1235,16 @@ JS = """
     const card = document.getElementById(targetId);
     if (!card) return;
     if (category) applyFilter(category);
-    requestAnimationFrame(() => {
+    requestAnimationFrame(function () {
       card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+  function scrollToSection(category) {
+    const section = document.getElementById('section-' + category);
+    if (!section) return;
+    applyFilter(category);
+    requestAnimationFrame(function () {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
   groups.forEach(function (group) {
@@ -1223,6 +1287,9 @@ JS = """
       closeMenus();
     }
     applyFilter(btn.dataset.filter || 'all');
+    if (btn.dataset.filter && btn.dataset.filter !== 'all') {
+      scrollToSection(btn.dataset.filter);
+    }
   });
   document.addEventListener('click', function (event) {
     if (!nav.contains(event.target)) closeMenus();
@@ -1366,30 +1433,15 @@ def build() -> Path:
     nav_html = render_nav(cfg.get("categories", []), platform_order, platforms, card_icons)
     category_ids = [cat["id"] for cat in cfg.get("categories", []) if cat.get("id")]
     platform_data = load_platform_data(platform_order)
-    snapshot_html = render_snapshot(
+    board_html = render_category_board(
         cfg.get("categories", []),
         platform_order,
         platforms,
         platform_data,
+        now,
+        category_names=category_names,
+        icons=card_icons,
     )
-    display_order = interleave_by_category(cfg.get("order", []), platforms, category_ids)
-    cards = []
-    for platform_id in display_order:
-        pmeta = platforms.get(platform_id)
-        if not pmeta:
-            continue
-        data = platform_data.get(platform_id)
-        cards.append(
-            render_card(
-                platform_id,
-                pmeta,
-                data,
-                now,
-                category_names=category_names,
-                icons=card_icons,
-            )
-        )
-
     dock_html = render_dock(platform_order, platforms, category_ids, icons_raw)
     dock_icons = icon_layer(icons_raw, "dock")
     page_js = JS + dock_sprite_js(dock_icons)
@@ -1412,9 +1464,8 @@ def build() -> Path:
     <header class="hot-header">
       <nav class="hot-nav" aria-label="热榜分类">{nav_html}</nav>
     </header>
-    {snapshot_html}
     {dock_html}
-    <div class="hot-board">{"".join(cards)}</div>
+    {board_html}
     <footer class="hot-footer">
       <p class="hot-footer__stats">
         <span id="busuanzi_container_site_uv">本站访客 <span id="busuanzi_value_site_uv">—</span></span>
