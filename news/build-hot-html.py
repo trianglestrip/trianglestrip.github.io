@@ -477,19 +477,16 @@ def render_category_board(
             )
         if not cards_html:
             continue
-        pages: list[str] = []
-        for index in range(0, len(cards_html), cards_per_page):
-            chunk = cards_html[index : index + cards_per_page]
-            pages.append(f'<div class="hot-section__page">{"".join(chunk)}</div>')
         scroll_attr = ' data-scroll="1"' if len(cards_html) > cards_per_page else ""
         delay = len(sections) * 800
         sections.append(
             f'<section class="hot-section" id="section-{safe_category}" '
             f'data-category="{safe_category}"{scroll_attr} '
-            f'data-carousel-delay="{delay}">'
+            f'data-carousel-delay="{delay}" '
+            f'data-carousel-visible="{cards_per_page}">'
             f'<h2 class="hot-section__title">{category_name}</h2>'
             f'<div class="hot-section__viewport">'
-            f'<div class="hot-section__track">{"".join(pages)}</div>'
+            f'<div class="hot-section__track">{"".join(cards_html)}</div>'
             f"</div></section>"
         )
     if not sections:
@@ -934,18 +931,24 @@ body {
 }
 .hot-section__viewport {
   overflow: hidden;
+  --hot-carousel-visible: 4;
+  --hot-carousel-gap: clamp(0.75rem, 1.2vw, 1rem);
 }
 .hot-section__track {
   display: flex;
+  gap: var(--hot-carousel-gap);
   transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
-.hot-section__page {
-  flex: 0 0 100%;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(0.75rem, 1.2vw, 1rem);
+.hot-section__track > .hot-card {
+  flex: 0 0 calc(
+    (100% - (var(--hot-carousel-visible) - 1) * var(--hot-carousel-gap))
+    / var(--hot-carousel-visible)
+  );
   min-width: 0;
+}
+.hot-card--clone {
+  pointer-events: none;
 }
 .hot-card {
   display: flex;
@@ -1104,8 +1107,8 @@ body {
   }
 }
 @media (max-width: 1200px) {
-  .hot-section__page {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .hot-section__viewport {
+    --hot-carousel-visible: 2;
   }
 }
 @media (max-width: 640px) {
@@ -1165,8 +1168,8 @@ body {
     padding-right: 0.5rem;
     gap: 1rem;
   }
-  .hot-section__page {
-    grid-template-columns: minmax(0, 1fr);
+  .hot-section__viewport {
+    --hot-carousel-visible: 1;
   }
 }
 """
@@ -1226,16 +1229,74 @@ JS = """
 })();
 (function () {
   const CAROUSEL_INTERVAL = 60000;
+  const CAROUSEL_ANIM_MS = 650;
   document.querySelectorAll('.hot-section[data-scroll="1"]').forEach(function (section) {
     const track = section.querySelector('.hot-section__track');
     if (!track) return;
-    const pages = track.querySelectorAll('.hot-section__page');
-    if (pages.length <= 1) return;
-    let page = 0;
+    const cards = Array.from(track.querySelectorAll('.hot-card:not(.hot-card--clone)'));
+    const viewport = section.querySelector('.hot-section__viewport');
+    if (!viewport || cards.length <= 1) return;
+
+    function visibleCount() {
+      const raw = getComputedStyle(viewport).getPropertyValue('--hot-carousel-visible').trim();
+      const parsed = parseInt(raw, 10);
+      if (parsed > 0) return parsed;
+      const fallback = parseInt(section.getAttribute('data-carousel-visible') || '4', 10);
+      return fallback > 0 ? fallback : 4;
+    }
+
+    function stepPx() {
+      const card = track.querySelector('.hot-card');
+      if (!card) return 0;
+      const gap = parseFloat(getComputedStyle(track).gap) || 0;
+      return card.offsetWidth + gap;
+    }
+
+    function setTranslate(index, animate) {
+      track.style.transition = animate ? '' : 'none';
+      track.style.transform = 'translateX(-' + (index * stepPx()) + 'px)';
+      if (!animate) {
+        track.offsetHeight;
+        track.style.transition = '';
+      }
+    }
+
+    function ensureClones(visible) {
+      track.querySelectorAll('.hot-card--clone').forEach(function (node) {
+        node.remove();
+      });
+      for (let i = 0; i < visible; i++) {
+        const clone = cards[i].cloneNode(true);
+        clone.classList.add('hot-card--clone');
+        clone.removeAttribute('id');
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
+      }
+    }
+
+    let index = 0;
+    let visible = visibleCount();
+    ensureClones(visible);
+
     const delay = parseInt(section.getAttribute('data-carousel-delay') || '0', 10);
     function tick() {
-      page = (page + 1) % pages.length;
-      track.style.transform = 'translateX(-' + (page * 100) + '%)';
+      const count = cards.length;
+      const nextVisible = visibleCount();
+      if (count <= nextVisible) return;
+      if (nextVisible !== visible) {
+        visible = nextVisible;
+        index = 0;
+        ensureClones(visible);
+        setTranslate(0, false);
+      }
+      index += 1;
+      setTranslate(index, true);
+      if (index >= count) {
+        setTimeout(function () {
+          index = 0;
+          setTranslate(0, false);
+        }, CAROUSEL_ANIM_MS);
+      }
     }
     setTimeout(function () {
       setInterval(tick, CAROUSEL_INTERVAL);
