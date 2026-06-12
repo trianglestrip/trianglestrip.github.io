@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-12T19:25:07+00:00",
+  "updated_at": "2026-06-12T22:45:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "CRISPR tech selectively shreds cancer cells, including \"undruggable\" cancers",
       "url": "https://innovativegenomics.org/news/crispr-technique-selectively-shreds-cancer-cells/",
-      "hot": "376"
+      "hot": "603"
     },
     {
       "rank": 2,
-      "title": "I Am Not a Reverse Centaur",
-      "url": "https://blog.miguelgrinberg.com/post/i-am-not-a-reverse-centaur",
-      "hot": "96"
+      "title": "Swift at Apple: Migrating the TrueType hinting interpreter",
+      "url": "https://www.swift.org/blog/migrating-truetype-hinting-to-swift/",
+      "hot": "80"
     },
     {
       "rank": 3,
-      "title": "How to Setup a Local Coding Agent on macOS",
+      "title": "How to setup a local coding agent on macOS",
       "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
-      "hot": "71"
+      "hot": "193"
     },
     {
       "rank": 4,
       "title": "Malware developers added nuclear and biological weapons text to to their spyware",
       "url": "https://twitter.com/jsrailton/status/2064661778978533571",
-      "hot": "120"
+      "hot": "243"
     },
     {
       "rank": 5,
       "title": "Pirates, a naval warfare game inspired by Sid Meier's Pirates",
       "url": "https://piwodlaiwo.github.io/pirates/",
-      "hot": "58"
+      "hot": "156"
     },
     {
       "rank": 6,
-      "title": "A PDF that changes based on how its read",
-      "url": "https://sgaud.com/texts/pdf",
-      "hot": "69"
+      "title": "Congress Just Rushed Through a Disastrous Copyright Office Overhaul",
+      "url": "https://www.eff.org/deeplinks/2026/06/congress-just-rushed-through-disastrous-copyright-office-overhaul",
+      "hot": "53"
     },
     {
       "rank": 7,
-      "title": "Slightly reducing the sloppiness of AI generated front end",
-      "url": "https://envs.net/~volpe/blog/posts/reduce-slop.html",
-      "hot": "122"
+      "title": "Palantir loses legal challenge against Swiss investigative magazine",
+      "url": "https://www.ft.com/content/7ffcace7-9dc0-4e7e-9912-895ac073f979",
+      "hot": "107"
     },
     {
       "rank": 8,
-      "title": "Looking Forward to Postgres 19: It's About Time",
-      "url": "https://www.pgedge.com/blog/looking-forward-to-postgres-19-its-about-time",
-      "hot": "62"
+      "title": "Mmorpg World of ClaudeCraft, vibe coded with Fable 5",
+      "url": "https://worldofclaudecraft.com/",
+      "hot": "64"
     },
     {
       "rank": 9,
-      "title": "A dumpster arrived behind my university's library",
-      "url": "https://yalereview.org/article/sheila-liming-the-end-of-books",
-      "hot": "120"
+      "title": "Slightly reducing the sloppiness of AI generated front end",
+      "url": "https://envs.net/~volpe/blog/posts/reduce-slop.html",
+      "hot": "152"
     },
     {
       "rank": 10,
-      "title": "Law Enforcement's \"Warrior\" Problem (2015)",
-      "url": "https://harvardlawreview.org/forum/vol-128/law-enforcements-warrior-problem/",
-      "hot": "32"
+      "title": "Can I Buy Your KV Cache?",
+      "url": "https://arxiv.org/abs/2606.13361",
+      "hot": "23"
     }
   ]
 }
