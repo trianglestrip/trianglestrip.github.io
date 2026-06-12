@@ -599,9 +599,25 @@ body {
 .hot-snapshot__heading {
   max-width: var(--hot-content-max);
   margin: 0 auto 0.55rem;
+  padding-inline: clamp(0.5rem, 2vw, 1rem);
   font-size: 0.92rem;
   font-weight: 600;
   color: var(--text);
+}
+@media (min-width: 900px) {
+  .hot-snapshot__heading {
+    padding-inline: clamp(0.75rem, 2.5vw, 1.5rem);
+  }
+}
+@media (min-width: 1400px) {
+  .hot-snapshot__heading {
+    padding-inline: clamp(1rem, 3vw, 2rem);
+  }
+}
+@media (min-width: 1920px) {
+  .hot-snapshot__heading {
+    padding-inline: clamp(1.25rem, 3.5vw, 2.5rem);
+  }
 }
 .hot-snapshot {
   display: grid;
@@ -609,22 +625,31 @@ body {
   gap: 0;
   max-width: var(--hot-content-max);
   margin: 0 auto;
+  padding-inline: clamp(0.5rem, 2vw, 1rem);
 }
 @media (min-width: 900px) {
   .hot-snapshot {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: clamp(1.25rem, 3vw, 2.5rem);
+    padding-inline: clamp(0.75rem, 2.5vw, 1.5rem);
   }
 }
 @media (min-width: 1400px) {
   .hot-snapshot {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: clamp(1.5rem, 3.5vw, 3rem);
+    padding-inline: clamp(1rem, 3vw, 2rem);
   }
 }
 @media (min-width: 1920px) {
   .hot-snapshot {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: clamp(1.5rem, 2vw, 2.5rem);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: clamp(1.75rem, 3vw, 3.5rem);
+    padding-inline: clamp(1.25rem, 3.5vw, 2.5rem);
+  }
+  /* 9 栏 4 列时末行仅 1 项，居中占两列 */
+  .hot-snapshot__row:last-child:nth-child(4n+1) {
+    grid-column: 2 / span 2;
   }
 }
 .hot-snapshot__row {
@@ -965,6 +990,33 @@ body {
 }
 .hot-card--clone {
   pointer-events: none;
+}
+.hot-board.is-filtered .hot-section__viewport {
+  overflow: visible;
+}
+.hot-board.is-filtered .hot-section__track {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--hot-carousel-gap);
+  transform: none !important;
+  transition: none;
+}
+.hot-board.is-filtered .hot-section__track > .hot-card {
+  flex: unset;
+  width: auto;
+}
+.hot-board.is-filtered .hot-card--clone {
+  display: none !important;
+}
+@media (max-width: 1200px) {
+  .hot-board.is-filtered .hot-section__track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .hot-board.is-filtered .hot-section__track {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 .hot-card {
   display: flex;
@@ -1322,6 +1374,8 @@ JS = """
 
     const delay = parseInt(section.getAttribute('data-carousel-delay') || '0', 10);
     function tick() {
+      const board = section.closest('.hot-board');
+      if (board && board.classList.contains('is-filtered')) return;
       const count = cards.length;
       const nextVisible = visibleCount();
       if (count <= nextVisible) return;
@@ -1354,6 +1408,7 @@ JS = """
   const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   const snapshotWrap = document.querySelector('.hot-snapshot-wrap');
   const dockWrap = document.querySelector('.hot-dock-wrap');
+  const board = document.querySelector('.hot-board');
   const storageKey = 'hot-board-filter';
   function closeMenus() {
     groups.forEach(function (group) {
@@ -1372,6 +1427,7 @@ JS = """
     buttons.forEach(function (btn) {
       btn.classList.toggle('is-active', btn.dataset.filter === filter);
     });
+    if (board) board.classList.toggle('is-filtered', !isAll);
     if (snapshotWrap) snapshotWrap.style.display = isAll ? '' : 'none';
     if (dockWrap) dockWrap.style.display = isAll ? '' : 'none';
     try { localStorage.setItem(storageKey, filter); } catch (e) {}
