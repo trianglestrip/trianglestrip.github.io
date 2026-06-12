@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""用 streamget 解析斗鱼直播流地址，并写入 stream.json 供播放器使用。"""
+"""用 streamget 解析斗鱼直播流地址（多档 douyucdn 直链）。"""
 
 from __future__ import annotations
 
@@ -10,26 +10,9 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
 from streamget import DouyuLiveStream
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT = ROOT / "stream.json"
-PROBE_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    ),
-    "Referer": "https://www.douyu.com/",
-}
-
-QUALITY_PRESETS: list[tuple[str, str]] = [
-    ("OD", "原画"),
-    ("UHD", "蓝光"),
-    ("HD", "高清"),
-    ("SD", "标清"),
-    ("LD", "流畅"),
-]
 
 
 def normalize_url(value: str) -> str:
@@ -41,49 +24,6 @@ def normalize_url(value: str) -> str:
     if not text.startswith("http"):
         return f"https://{text}"
     return text
-
-
-def candidate_urls(payload: dict) -> list[str]:
-    urls: list[str] = []
-    for key in ("flv_url", "record_url", "m3u8_url"):
-        value = payload.get(key) or ""
-        if value:
-            urls.append(value)
-    try:
-        extra = json.loads(payload.get("raw", "{}")).get("extra", {})
-        urls.extend(extra.get("backup_url_list", []))
-    except json.JSONDecodeError:
-        pass
-
-    def rank(item: str) -> tuple[int, str]:
-        if "douyucdn" in item:
-            return (0, item)
-        if "edgesrv.com" in item:
-            return (9, item)
-        return (1, item)
-
-    seen: set[str] = set()
-    ordered: list[str] = []
-    for item in sorted(urls, key=rank):
-        if "edgesrv.com" in item:
-            continue
-        if item not in seen:
-            seen.add(item)
-            ordered.append(item)
-    return ordered
-
-
-def probe_playable(url: str) -> bool:
-    try:
-        resp = requests.get(url, headers=PROBE_HEADERS, stream=True, timeout=12)
-        chunk = resp.raw.read(4)
-        return resp.status_code == 200 and (chunk.startswith(b"FLV") or url.endswith(".m3u8"))
-    except requests.RequestException:
-        return False
-
-
-def is_bad_play_url(url: str) -> bool:
-    return not url or "edgesrv.com" in url
 
 
 def is_douyucdn_url(url: str) -> bool:
@@ -179,89 +119,6 @@ async def resolve_douyu_cdn(url: str, *, preferred_cdn: str = "hw-h5") -> dict:
     }
 
 
-def pick_play_url(payload: dict) -> tuple[str, list[str]]:
-    candidates = candidate_urls(payload)
-    if not candidates:
-        return "", []
-
-    working = [url for url in candidates if probe_playable(url)]
-    if working:
-        return working[0], working
-    return "", []
-
-
-async def resolve(url: str, quality: str) -> dict:
-    live = DouyuLiveStream()
-    data = await live.fetch_web_stream_data(url)
-    stream = await live.fetch_stream_url(data, quality)
-    payload = {
-        "source_url": url,
-        "quality": quality,
-        "fetched_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
-        "platform": getattr(stream, "platform", "douyu"),
-        "anchor_name": getattr(stream, "anchor_name", ""),
-        "is_live": bool(getattr(stream, "is_live", False)),
-        "flv_url": getattr(stream, "flv_url", "") or "",
-        "m3u8_url": getattr(stream, "m3u8_url", "") or "",
-        "record_url": getattr(stream, "record_url", "") or "",
-        "raw": stream.to_json() if hasattr(stream, "to_json") else str(stream),
-    }
-    if not payload["is_live"]:
-        raise RuntimeError("房间未开播或解析失败")
-    if not payload["flv_url"] and not payload["m3u8_url"]:
-        raise RuntimeError("未获取到可播放地址")
-
-    play_url, all_urls = pick_play_url(payload)
-    payload["play_url"] = play_url
-    payload["backup_urls"] = [item for item in all_urls if item != play_url]
-    if play_url:
-        payload["flv_url"] = play_url
-    elif is_bad_play_url(payload.get("flv_url", "")):
-        payload["flv_url"] = ""
-    if not payload["play_url"]:
-        raise RuntimeError("未获取到可播放的 douyucdn 地址（edgesrv 线路不可用）")
-    return payload
-
-
-def _stream_payload(stream, *, source_url: str, quality: str, quality_name: str) -> dict | None:
-    payload = {
-        "source_url": source_url,
-        "quality": quality,
-        "quality_name": quality_name,
-        "fetched_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
-        "platform": getattr(stream, "platform", "douyu"),
-        "anchor_name": getattr(stream, "anchor_name", ""),
-        "is_live": bool(getattr(stream, "is_live", False)),
-        "flv_url": getattr(stream, "flv_url", "") or "",
-        "m3u8_url": getattr(stream, "m3u8_url", "") or "",
-        "record_url": getattr(stream, "record_url", "") or "",
-        "raw": stream.to_json() if hasattr(stream, "to_json") else str(stream),
-    }
-    if not payload["is_live"]:
-        return None
-    if not payload["flv_url"] and not payload["m3u8_url"]:
-        return None
-
-    play_url, all_urls = pick_play_url(payload)
-    if not play_url:
-        return None
-
-    lines = [{"name": "主线路", "url": play_url}]
-    backup_index = 2
-    for item in all_urls:
-        if item == play_url or is_bad_play_url(item):
-            continue
-        lines.append({"name": f"备用{backup_index}", "url": item})
-        backup_index += 1
-    return {
-        "name": quality_name,
-        "code": quality,
-        "lines": lines,
-        "play_url": play_url,
-        "backup_urls": [line["url"] for line in lines[1:]],
-    }
-
-
 async def resolve_all(url: str) -> dict:
     return await resolve_douyu_cdn(url)
 
@@ -292,22 +149,21 @@ def main() -> int:
         help="房间号或完整 URL，默认 9999",
     )
     parser.add_argument(
-        "--quality",
-        default="OD",
-        choices=["OD", "UHD", "HD", "SD", "LD"],
-        help="单档解析时使用，默认原画 OD",
-    )
-    parser.add_argument(
         "--compare",
         action="store_true",
         help="解析后与 muxia 对比档位与 FLV 文件名",
+    )
+    parser.add_argument(
+        "--out",
+        metavar="FILE",
+        help="可选：将 JSON 结果写入文件",
     )
     args = parser.parse_args()
 
     try:
         url = normalize_url(args.room)
         if args.compare:
-            from compare_streams import compare_room_payloads, flv_basename
+            from compare_streams import compare_room_payloads
             from muxia_api import fetch_room, normalize_room
 
             local = asyncio.run(resolve_all(url))
@@ -322,7 +178,6 @@ def main() -> int:
         print(f"解析失败: {exc}", file=sys.stderr)
         return 1
 
-    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"房间: {url}")
     print(f"主播: {payload['anchor_name']}")
     print(f"开播: {payload['is_live']}")
@@ -334,7 +189,12 @@ def main() -> int:
             print(f"  {group.get('name')}: {line.get('name')} {flv_basename(line.get('url', ''))}")
     elif payload.get("play_url"):
         print(f"播放: {payload['play_url'][:120]}...")
-    print(f"已写入: {OUTPUT}")
+
+    if args.out:
+        out_path = Path(args.out)
+        out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"已写入: {out_path}")
+
     return 0
 
 

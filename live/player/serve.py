@@ -17,7 +17,6 @@ from resolve_douyu import normalize_url as douyu_normalize_url
 from resolve_douyu import resolve_all as douyu_resolve_all
 
 ROOT = Path(__file__).resolve().parent
-STREAM_FILE = ROOT / "stream.json"
 ROOM_RE = re.compile(r"(?:douyu\.com/)?(\d+)$")
 
 
@@ -42,7 +41,6 @@ def resolve_local(room: str) -> dict:
     payload["source"] = "streamget"
     payload["site"] = "douyu"
     payload["room_id"] = room_id
-    STREAM_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return payload
 
 
@@ -87,9 +85,6 @@ class Handler(SimpleHTTPRequestHandler):
             return
         if parsed.path == "/api/compare":
             self._api_compare(parsed)
-            return
-        if parsed.path == "/api/stream":
-            self._send_stream_json()
             return
         if parsed.path == "/":
             self.path = "/player.html"
@@ -178,14 +173,6 @@ class Handler(SimpleHTTPRequestHandler):
             self._send_json(compare_room(site, room))
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
-
-    def _send_stream_json(self) -> None:
-        if not STREAM_FILE.exists():
-            self._send_json({"ok": False, "error": "stream.json 不存在，请先运行 resolve_douyu.py"}, status=404)
-            return
-        payload = json.loads(STREAM_FILE.read_text(encoding="utf-8"))
-        payload["source"] = "streamget"
-        self._send_json(finalize_payload(payload))
 
     def _cors(self) -> None:
         self.send_header("Access-Control-Allow-Origin", "*")
