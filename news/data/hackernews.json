@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-12T11:09:28+00:00",
+  "updated_at": "2026-06-12T14:16:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AI agent bankrupted their operator while trying to scan DN42",
       "url": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
-      "hot": "665"
+      "hot": "1000"
     },
     {
       "rank": 2,
-      "title": "The Future of Email",
-      "url": "https://www.fastmail.com/blog/the-future-of-email/",
-      "hot": "12"
+      "title": "Maxproof",
+      "url": "https://arxiv.org/abs/2606.13473",
+      "hot": "57"
     },
     {
       "rank": 3,
-      "title": "If you are asking for human attention, demonstrate human effort",
-      "url": "https://tombedor.dev/human-attention-and-human-effort/",
-      "hot": "813"
+      "title": "The Future of Email",
+      "url": "https://www.fastmail.com/blog/the-future-of-email/",
+      "hot": "110"
     },
     {
       "rank": 4,
-      "title": "Nobody ever gets credit for fixing problems that never happened (2001) [pdf]",
-      "url": "https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf",
-      "hot": "492"
+      "title": "If you are asking for human attention, demonstrate human effort",
+      "url": "https://tombedor.dev/human-attention-and-human-effort/",
+      "hot": "1085"
     },
     {
       "rank": 5,
-      "title": "Show HN: Homebrew 6.0.0",
-      "url": "https://brew.sh/2026/06/11/homebrew-6.0.0/",
-      "hot": "1258"
+      "title": "Nobody ever gets credit for fixing problems that never happened (2001) [pdf]",
+      "url": "https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf",
+      "hot": "587"
     },
     {
       "rank": 6,
-      "title": "Report on an Unidentified Space Station",
-      "url": "https://sseh.uchicago.edu/doc/roauss.htm",
-      "hot": "45"
+      "title": "SpaceX's president is floating a Tesla merger as the company begins trading",
+      "url": "https://qz.com/spacex-tesla-merger-gwynne-shotwell-ipo-061226",
+      "hot": "40"
     },
     {
       "rank": 7,
-      "title": "How we made hit video game Prince of Persia",
-      "url": "https://www.theguardian.com/culture/2026/jan/05/raiders-of-the-lost-ark-hit-video-game-prince-of-persia",
-      "hot": "135"
+      "title": "WASI 0.3.0 Released",
+      "url": "https://github.com/WebAssembly/WASI/releases/tag/v0.3.0",
+      "hot": "6"
     },
     {
       "rank": 8,
-      "title": "Show HN: FablePool – pool money behind a prompt, and Fable builds it in public",
-      "url": "https://fablepool.com",
-      "hot": "412"
+      "title": "Claude Fable is relentlessly proactive",
+      "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+      "hot": "590"
     },
     {
       "rank": 9,
-      "title": "Vinyl succumbs to Loudness War: more than just collateral damage (2025)",
-      "url": "https://magicvinyldigital.net/2025/04/27/vinyl-succumbs-to-loudness-war-more-than-just-collateral-damage/",
-      "hot": "83"
+      "title": "AUR Packages Compromised with Infostealer and Rootkit",
+      "url": "https://discourse.ifin.network/t/400-aur-packages-compromised-with-infostealer-and-rootkit/577",
+      "hot": "130"
     },
     {
       "rank": 10,
-      "title": "AUR Packages Compromised with Infostealer and Rootkit",
-      "url": "https://discourse.ifin.network/t/400-aur-packages-compromised-with-infostealer-and-rootkit/577",
-      "hot": "34"
+      "title": "Show HN: Homebrew 6.0.0",
+      "url": "https://brew.sh/2026/06/11/homebrew-6.0.0/",
+      "hot": "1332"
     }
   ]
 }

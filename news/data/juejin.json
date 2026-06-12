@@ -1,56 +1,56 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-12T11:09:08+00:00",
+  "updated_at": "2026-06-12T14:16:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "我用3个周末重构了公司的前端项目，老板没发现，但同事都来找我要代码了",
       "url": "https://juejin.cn/post/7649211548573925418",
-      "hot": "1836"
+      "hot": "1899"
     },
     {
       "rank": 2,
       "title": "又一个神级 Codex Skill 诞生了。",
       "url": "https://juejin.cn/post/7649329229150650378",
-      "hot": "1395"
+      "hot": "1485"
     },
     {
       "rank": 3,
       "title": "《置身钉内》之后：普通前端的出路在哪里？",
       "url": "https://juejin.cn/post/7650089863865565219",
-      "hot": "891"
+      "hot": "954"
     },
     {
       "rank": 4,
-      "title": "从纯文本到具身智能：魔珐星云让国产大模型 Agent 拥有 3D 具身躯壳",
-      "url": "https://juejin.cn/post/7649738148373823529",
-      "hot": "801"
+      "title": "Anthropic 为何限制中国大陆使用 Claude？",
+      "url": "https://juejin.cn/post/7649977961550987314",
+      "hot": "819"
     },
     {
       "rank": 5,
-      "title": "Anthropic 为何限制中国大陆使用 Claude？",
-      "url": "https://juejin.cn/post/7649977961550987314",
-      "hot": "801"
+      "title": "从纯文本到具身智能：魔珐星云让国产大模型 Agent 拥有 3D 具身躯壳",
+      "url": "https://juejin.cn/post/7649738148373823529",
+      "hot": "810"
     },
     {
       "rank": 6,
+      "title": "把 GitNexus 接进 Codex：安装、索引、Web UI 和项目分析实操",
+      "url": "https://juejin.cn/post/7649633479534182436",
+      "hot": "765"
+    },
+    {
+      "rank": 7,
       "title": "《Kingbase护城河》——数据库卡顿急救手册：会话状态深度解析与“僵尸进程”排查实战",
       "url": "https://juejin.cn/post/7649298814721900578",
       "hot": "720"
     },
     {
-      "rank": 7,
-      "title": "把 GitNexus 接进 Codex：安装、索引、Web UI 和项目分析实操",
-      "url": "https://juejin.cn/post/7649633479534182436",
-      "hot": "711"
-    },
-    {
       "rank": 8,
       "title": "Codex 不得不装的 12 个插件，都在这了",
       "url": "https://juejin.cn/post/7649738148373725225",
-      "hot": "567"
+      "hot": "585"
     },
     {
       "rank": 9,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "我把 Claude Code 切到 Fable 5，先别急着兴奋",
       "url": "https://juejin.cn/post/7649577388315017259",
-      "hot": "468"
+      "hot": "477"
     }
   ]
 }
