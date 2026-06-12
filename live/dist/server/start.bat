@@ -8,7 +8,7 @@ if exist "config.json" (
 )
 
 set PY=
-if exist "..\..\server\.venv\Scripts\python.exe" set PY=..\..\server\.venv\Scripts\python.exe
+if exist ".venv\Scripts\python.exe" set PY=.venv\Scripts\python.exe
 if not defined PY set PY=python
 
 echo 清理端口 %PORT%...
