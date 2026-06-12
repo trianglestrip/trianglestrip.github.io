@@ -388,7 +388,6 @@ def render_card(
     color = html.escape(meta.get("color", "#ccc"))
     category_id = str(meta.get("category", ""))
     category = html.escape(category_id)
-    category_label = html.escape(category_names.get(category_id, category_id))
     home_url = html.escape(platform_home_url(meta))
     icon_html = render_icon(platform_id, meta, icons)
 
@@ -436,7 +435,6 @@ def render_card(
       <span class="hot-card__icon-box">{icon_html}</span>
       <h2 class="hot-card__title">
         <a class="hot-card__title-link" href="{home_url}" target="_blank" rel="noopener noreferrer">{card_title}</a>
-        <span class="hot-card__category">{category_label}</span>
       </h2>
     </div>
     <div class="hot-card__head-right">{head_right}</div>
@@ -1028,16 +1026,6 @@ body {
   text-overflow: ellipsis;
 }
 .hot-card__title-link:hover { color: var(--hot-accent, var(--link)); }
-.hot-card__category {
-  flex-shrink: 0;
-  padding: 0.08rem 0.35rem;
-  border-radius: 0.2rem;
-  background: var(--border);
-  color: var(--text-muted);
-  font-size: 0.62rem;
-  font-weight: 500;
-  line-height: 1.3;
-}
 .hot-card__list {
   flex: 1;
   margin: 0;
