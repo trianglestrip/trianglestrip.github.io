@@ -7,21 +7,41 @@ import {
   streamByName,
   streamHasUrl,
   findQualityIndex,
+  findLineIndex,
   currentPlayUrl,
 } from "../api/room";
-import { getPlatform, PREFS_KEY } from "../config/platforms";
+import { getPlatform } from "../config/platforms";
+import { COOKIE_KEYS, getCookieJson, setCookieJson } from "../utils/cookieStore.js";
 
-function loadPrefs() {
-  try {
-    return JSON.parse(localStorage.getItem(PREFS_KEY) || "{}") || {};
-  } catch {
-    return {};
+function loadPlayPrefs() {
+  const fromCookie = getCookieJson(COOKIE_KEYS.quality);
+  if (fromCookie?.qualityName || fromCookie?.lineName) {
+    return {
+      qualityName: fromCookie.qualityName ? String(fromCookie.qualityName) : "",
+      lineName: fromCookie.lineName ? String(fromCookie.lineName) : "",
+    };
   }
+  try {
+    const legacy = JSON.parse(localStorage.getItem("live.web.prefs") || "{}");
+    if (legacy.qualityName) {
+      const migrated = {
+        qualityName: String(legacy.qualityName),
+        lineName: legacy.lineName ? String(legacy.lineName) : "",
+      };
+      setCookieJson(COOKIE_KEYS.quality, migrated);
+      return migrated;
+    }
+  } catch {
+    /* ignore */
+  }
+  return { qualityName: "", lineName: "" };
 }
 
-function savePrefs(patch) {
-  const next = { ...loadPrefs(), ...patch };
-  localStorage.setItem(PREFS_KEY, JSON.stringify(next));
+function savePlayPrefs(patch) {
+  const prev = loadPlayPrefs();
+  const next = { ...prev, ...patch };
+  if (!next.qualityName && !next.lineName) return;
+  setCookieJson(COOKIE_KEYS.quality, next);
 }
 
 export function useRoom(siteRef) {
@@ -37,15 +57,11 @@ export function useRoom(siteRef) {
     statusKind.value = kind;
   }
 
-  function fillFromPayload(data, preferredName = "") {
+  function fillFromPayload(data, prefs = loadPlayPrefs()) {
     const names = qualityNames(data);
-    const preferred = preferredName || loadPrefs().qualityName || "";
-    qualityIndex.value = findQualityIndex(names, preferred);
+    qualityIndex.value = findQualityIndex(names, prefs.qualityName);
     const stream = streamByName(data, names[qualityIndex.value]);
-    lineIndex.value = 0;
-    if (stream?.lines?.length) {
-      lineIndex.value = Math.min(lineIndex.value, stream.lines.length - 1);
-    }
+    lineIndex.value = findLineIndex(stream?.lines || [], prefs.lineName);
   }
 
   async function loadRoom(roomInput, { autoPlay = false, playFn } = {}) {
@@ -59,12 +75,12 @@ export function useRoom(siteRef) {
       if (!platform?.enabled) throw new Error("该平台尚未接入");
 
       const roomId = parseRoomId(roomInput);
-      const preferred = loadPrefs().qualityName || "";
+      const prefs = loadPlayPrefs();
       const data = await fetchRoom({
         site,
         room: roomId,
         mode: "lazy",
-        quality: preferred || undefined,
+        quality: prefs.qualityName || undefined,
       });
 
       if (!data.is_live && !data.status) {
@@ -73,11 +89,14 @@ export function useRoom(siteRef) {
       }
 
       payload.value = data;
-      fillFromPayload(data, preferred);
-      setStatus(`${platform.label} · 解析完成`);
+      fillFromPayload(data, prefs);
 
       if (autoPlay && playFn) {
+        loading.value = false;
+        setStatus("正在缓冲…");
         await playFn();
+      } else {
+        setStatus(`${platform.label} · 解析完成`);
       }
       return roomId;
     } catch (err) {
@@ -99,7 +118,7 @@ export function useRoom(siteRef) {
       quality: qualityName,
     });
     payload.value = mergePayload(payload.value, incoming);
-    fillFromPayload(payload.value, qualityName);
+    fillFromPayload(payload.value, loadPlayPrefs());
     return payload.value;
   }
 
@@ -107,7 +126,6 @@ export function useRoom(siteRef) {
     const names = qualityNames(payload.value);
     const qualityName = names[qualityIndex.value];
     if (!qualityName) throw new Error("未选择清晰度");
-    savePrefs({ qualityName });
     const data = await ensureQualityLoaded(qualityName);
     const url = currentPlayUrl(data, qualityIndex.value, lineIndex.value);
     if (!url) throw new Error(`档位 ${qualityName} 暂无播放地址`);
@@ -132,10 +150,26 @@ export function useRoom(siteRef) {
   function onQualityChange(index) {
     qualityIndex.value = Number(index) || 0;
     lineIndex.value = 0;
+    const names = qualityNames(payload.value);
+    const selected = names[qualityIndex.value];
+    const stream = streamByName(payload.value, selected);
+    const line = stream?.lines?.[0];
+    if (selected && names.includes(selected)) {
+      savePlayPrefs({
+        qualityName: selected,
+        lineName: line?.name || "",
+      });
+    }
   }
 
   function onLineChange(index) {
     lineIndex.value = Number(index) || 0;
+    const names = qualityNames(payload.value);
+    const stream = streamByName(payload.value, names[qualityIndex.value]);
+    const line = stream?.lines?.[lineIndex.value];
+    if (line?.name) {
+      savePlayPrefs({ lineName: line.name });
+    }
   }
 
   function buildMetaText(url) {
@@ -164,13 +198,16 @@ export function useRoom(siteRef) {
     onQualityChange,
     onLineChange,
     buildMetaText,
-    savePrefs,
   };
 }
 
 export function usePlayer() {
   const playing = ref(false);
+  const streamActive = ref(false);
+  const autoplayBlocked = ref(false);
+  const mutedAutoplay = ref(false);
   let player = null;
+  let videoEl = null;
 
   function flvjs() {
     const api = window.flvjs;
@@ -180,8 +217,37 @@ export function usePlayer() {
     return api;
   }
 
+  function syncPlaying() {
+    if (!videoEl) {
+      playing.value = false;
+      return;
+    }
+    playing.value = !videoEl.paused && !videoEl.ended;
+  }
+
+  function bindVideoEvents(el) {
+    if (videoEl === el) return;
+    unbindVideoEvents();
+    videoEl = el;
+    el.addEventListener("pause", syncPlaying);
+    el.addEventListener("playing", syncPlaying);
+    el.addEventListener("ended", syncPlaying);
+  }
+
+  function unbindVideoEvents() {
+    if (!videoEl) return;
+    videoEl.removeEventListener("pause", syncPlaying);
+    videoEl.removeEventListener("playing", syncPlaying);
+    videoEl.removeEventListener("ended", syncPlaying);
+    videoEl = null;
+  }
+
   function destroy() {
     playing.value = false;
+    streamActive.value = false;
+    autoplayBlocked.value = false;
+    mutedAutoplay.value = false;
+    unbindVideoEvents();
     if (player) {
       try {
         player.pause();
@@ -195,13 +261,88 @@ export function usePlayer() {
     }
   }
 
-  function playFlv(videoEl, url, { onError, onReady } = {}) {
+  async function resumePlayback() {
+    if (!videoEl) return false;
+    try {
+      if (player) player.play();
+      await videoEl.play();
+      autoplayBlocked.value = false;
+      mutedAutoplay.value = videoEl.muted;
+      syncPlaying();
+      return true;
+    } catch (err) {
+      if (err?.name !== "NotAllowedError") {
+        syncPlaying();
+        return false;
+      }
+      if (!videoEl.muted) {
+        videoEl.muted = true;
+        try {
+          if (player) player.play();
+          await videoEl.play();
+          autoplayBlocked.value = true;
+          mutedAutoplay.value = true;
+          syncPlaying();
+          return true;
+        } catch {
+          /* still blocked */
+        }
+      }
+      autoplayBlocked.value = true;
+      mutedAutoplay.value = false;
+      syncPlaying();
+      return false;
+    }
+  }
+
+  async function unlockAutoplay() {
+    if (!videoEl) return;
+    videoEl.muted = false;
+    mutedAutoplay.value = false;
+    autoplayBlocked.value = false;
+    const ok = await resumePlayback();
+    if (!ok) autoplayBlocked.value = true;
+  }
+
+  function pausePlayback() {
+    if (player) player.pause();
+    else videoEl?.pause();
+  }
+
+  function togglePlay() {
+    if (!streamActive.value) return;
+    if (autoplayBlocked.value || (videoEl?.muted && mutedAutoplay.value)) {
+      unlockAutoplay();
+      queueMicrotask(syncPlaying);
+      return;
+    }
+    if (playing.value) pausePlayback();
+    else resumePlayback();
+    queueMicrotask(syncPlaying);
+  }
+
+  function switchUrl(url) {
+    if (!url || !videoEl) return false;
+    if (player?.switchURL) {
+      try {
+        player.switchURL(url, true);
+        resumePlayback();
+        return true;
+      } catch {
+        return false;
+      }
+    }
+    return false;
+  }
+
+  function playFlv(el, url, { onError, onReady } = {}) {
     const flv = flvjs();
     if (!flv.isSupported()) {
       throw new Error("当前浏览器不支持 flv.js");
     }
     destroy();
-    playing.value = true;
+    bindVideoEvents(el);
+    streamActive.value = true;
 
     player = flv.createPlayer(
       {
@@ -221,22 +362,34 @@ export function usePlayer() {
       },
     );
 
-    player.attachMediaElement(videoEl);
+    player.attachMediaElement(el);
+    el.muted = false;
+    el.playsInline = true;
     player.on(flv.Events.ERROR, () => {
-      if (!playing.value) return;
+      if (!streamActive.value) return;
       onError?.();
     });
     player.on(flv.Events.MEDIA_INFO, () => {
-      videoEl.play().catch(() => {});
+      resumePlayback();
     });
-    const onPlaying = () => {
-      playing.value = true;
+    const onFirstPlaying = () => {
+      syncPlaying();
       onReady?.();
     };
-    videoEl.addEventListener("playing", onPlaying, { once: true });
+    el.addEventListener("playing", onFirstPlaying, { once: true });
     player.load();
-    player.play().catch(() => {});
+    resumePlayback();
   }
 
-  return { playing, destroy, playFlv };
+  return {
+    playing,
+    streamActive,
+    autoplayBlocked,
+    mutedAutoplay,
+    destroy,
+    playFlv,
+    togglePlay,
+    switchUrl,
+    unlockAutoplay,
+  };
 }

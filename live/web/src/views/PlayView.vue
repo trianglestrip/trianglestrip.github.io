@@ -49,6 +49,15 @@
               @toggle-pip="onTogglePiP"
             />
             <div v-if="notice && !streamActive" class="play-overlay">{{ notice }}</div>
+            <button
+              v-if="streamActive && autoplayBlocked"
+              type="button"
+              class="play-overlay play-overlay--unlock"
+              @click="unlockAutoplay"
+            >
+              {{ playing ? "点击开启声音" : "点击开始播放" }}
+              <span class="play-overlay__hint">浏览器限制需手动确认</span>
+            </button>
           </div>
         </div>
       </section>
@@ -135,7 +144,7 @@ const {
 const qualityOpts = computed(() => qualityOptions());
 const lineOpts = computed(() => lineOptions());
 
-const { playing, streamActive, destroy, playFlv, togglePlay } = usePlayer();
+const { playing, streamActive, autoplayBlocked, destroy, playFlv, togglePlay, unlockAutoplay } = usePlayer();
 const {
   messages: danmakuMessages,
   status: danmakuStatus,
@@ -463,6 +472,20 @@ onBeforeUnmount(() => {
   font-size: .95rem;
   pointer-events: none;
   z-index: 3;
+}
+
+.play-overlay--unlock {
+  pointer-events: auto;
+  cursor: pointer;
+  border: none;
+  flex-direction: column;
+  gap: .35rem;
+  font: inherit;
+}
+
+.play-overlay__hint {
+  font-size: .75rem;
+  color: var(--muted);
 }
 
 .play-layout--webscreen .play-main {
