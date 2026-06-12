@@ -31,13 +31,14 @@ const items = computed(() => {
     { icon: "home", link: `/${site}`, title: "首页" },
     { icon: "apps", link: `/${site}/category`, title: "分类" },
     { icon: "heart", link: "/follow", title: "关注" },
+    { icon: "timer", link: "/time", title: "耗时" },
     { icon: "search", link: "/search", title: "搜索" },
     { icon: "user", link: "/user", title: "用户" },
   ];
 });
 
 function isActive(item) {
-  if (item.link === "/follow" || item.link === "/search" || item.link === "/user") {
+  if (item.link === "/follow" || item.link === "/search" || item.link === "/user" || item.link === "/time") {
     return route.path === item.link;
   }
   if (item.link.endsWith("/category")) {

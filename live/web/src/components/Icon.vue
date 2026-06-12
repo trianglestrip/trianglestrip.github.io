@@ -38,6 +38,7 @@ const PATHS = {
   fullscreen: "M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5",
   "fullscreen-exit": "M9 4H4v5M20 9h-5V4M9 20H4v-5M20 15h-5v5",
   "play-circle": "M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9Zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14Zm-1.2 4.5v7l6.5-3.5-6.5-3.5Z",
+  timer: "M12 8v5l3 1.5M12 3a9 9 0 1 0 9 9",
   delete: "M9 3h6l1 2h4v2H4V5h4l1-2Zm1 6h2v9h-2V9Zm4 0h2v9h-2V9ZM7 9h2v11a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9h2v11a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3V9Z",
 };
 

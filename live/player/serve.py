@@ -23,6 +23,7 @@ from resolve_cache import get as cache_get
 from resolve_cache import set as cache_set
 from resolve_cache import stats as cache_stats
 from resolve_service import resolve_room_sync
+from resolve_timing import build_time_report
 
 ROOT = Path(__file__).resolve().parent
 WEB_ROOT = ROOT.parent / "web"
@@ -180,6 +181,9 @@ class Handler(SimpleHTTPRequestHandler):
                 return
             if parsed.path == "/api/rooms":
                 self._api_rooms(parsed)
+                return
+            if parsed.path == "/api/time":
+                self._api_time(parsed)
                 return
             self.send_error(404)
             return
@@ -352,6 +356,19 @@ class Handler(SimpleHTTPRequestHandler):
                     result["pid"] = pid
             cache_set(cache_key, result, ttl=60)
             self._send_json({"ok": True, "site": site, **result})
+        except Exception as exc:  # noqa: BLE001
+            self._send_json({"ok": False, "error": str(exc)}, status=500)
+
+    def _api_time(self, parsed) -> None:
+        query = parse_qs(parsed.query)
+        site = query.get("site", ["douyu"])[0]
+        room = query.get("room", query.get("id", ["252140"]))[0]
+        quality = query.get("quality", [""])[0] or None
+        run = query.get("run", ["0"])[0].lower() in ("1", "true", "yes")
+        try:
+            room_id = parse_room_id(room, site)
+            payload = build_time_report(site, room_id, quality=quality, run=run)
+            self._send_json(payload)
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 

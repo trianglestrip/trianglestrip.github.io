@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import SiteHomeView from "./views/SiteHomeView.vue";
 import CategoryIndexView from "./views/CategoryIndexView.vue";
 import CategoryRoomsView from "./views/CategoryRoomsView.vue";
-import PlayView from "./views/PlayView.vue";
+import FollowView from "./views/FollowView.vue";
+import TimeView from "./views/TimeView.vue";
 import PlaceholderView from "./views/PlaceholderView.vue";
 import { PLATFORMS } from "./config/platforms";
 
@@ -12,13 +13,14 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", redirect: "/douyu" },
-    { path: "/follow", name: "follow", component: PlaceholderView },
+    { path: "/follow", name: "follow", component: FollowView },
+    { path: "/time", name: "time", component: TimeView },
     { path: "/search", name: "search", component: PlaceholderView },
     { path: "/user", name: "user", component: PlaceholderView },
     {
       path: "/:site/play/:id",
       name: "play",
-      component: PlayView,
+      component: () => import("./views/PlayView.vue"),
       props: true,
       beforeEnter: (to) => enabledSites.has(to.params.site) || "/douyu",
     },
