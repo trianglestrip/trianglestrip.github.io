@@ -5,7 +5,10 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)));
 const PORT = Number(process.argv[2]) || 8080;
-const BASE = (process.env.LIVE_BASE || "/live").replace(/\/$/, "") || "";
+const BASE = (() => {
+  const trimmed = String(process.env.LIVE_BASE || "/live").trim().replace(/\/+$/, "");
+  return trimmed || "/live";
+})();
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
