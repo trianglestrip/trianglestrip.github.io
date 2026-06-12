@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""本地直播 API 服务：解析后端 + 托管 live/web 前端。"""
+"""直播解析 API 服务（默认仅 API，静态托管由 config.json 控制）。"""
 
 from __future__ import annotations
 
@@ -11,6 +11,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
+from app_config import load_config, resolve_static_root
 from compare_streams import compare_room_payloads
 from muxia_api import (
     fetch_categories,
@@ -27,70 +28,7 @@ from resolve_timing import build_time_report
 from text_sanitize import sanitize_unicode
 
 ROOT = Path(__file__).resolve().parent
-WEB_ROOT = ROOT.parent / "web"
-WEB_DIST = WEB_ROOT / "dist"
-DEBUG_LOG = ROOT.parent.parent / "debug-79f7ec.log"
 
-BUILD_HINT_HTML = """<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live · 请先构建前端</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; }
-    code, pre { background: #f4f4f5; border-radius: 6px; }
-    pre { padding: 1rem; overflow-x: auto; }
-  </style>
-</head>
-<body>
-  <h1>Vue 前端尚未构建</h1>
-  <p>当前 <code>serve.py</code> 只托管 <code>live/web/dist/</code>，不能直接打开源码
-  <code>index.html</code>（浏览器无法解析 <code>import "vue"</code> 等裸模块名）。</p>
-  <p><strong>生产联调（:8765）</strong></p>
-  <pre>cd live/web
-npm install
-npm run build
-
-cd ../server
-python serve.py</pre>
-  <p><strong>开发热更新（:5173，推荐改 UI）</strong></p>
-  <pre># 终端 1
-cd live/server &amp;&amp; python serve.py
-
-# 终端 2
-cd live/web &amp;&amp; npm run dev</pre>
-  <p>然后打开 <a href="http://127.0.0.1:5173/">http://127.0.0.1:5173/</a>（API 已 proxy 到 :8765）。</p>
-</body>
-</html>
-"""
-
-
-def resolve_web_root(web_root: Path) -> Path | None:
-    """仅托管 Vue 构建产物 dist/；无 dist 时返回 None（展示构建说明页）。"""
-    dist_index = web_root / "dist" / "index.html"
-    if dist_index.is_file():
-        return web_root / "dist"
-    return None
-
-
-def _agent_log(hypothesis_id: str, location: str, message: str, data: dict) -> None:
-    # #region agent log
-    try:
-        payload = {
-            "sessionId": "79f7ec",
-            "hypothesisId": hypothesis_id,
-            "location": location,
-            "message": message,
-            "data": data,
-            "timestamp": int(__import__("time").time() * 1000),
-            "runId": "serve",
-        }
-        with DEBUG_LOG.open("a", encoding="utf-8") as fh:
-            fh.write(json.dumps(payload, ensure_ascii=False) + "\n")
-    except OSError:
-        pass
-    # #endregion
 ROOM_RES = {
     "douyu": re.compile(r"(?:douyu\.com/)?(\d+)$"),
     "huya": re.compile(r"(?:huya\.com/)?(\d+)$"),
@@ -151,8 +89,9 @@ def compare_room(site: str, room: str) -> dict:
 
 
 class Handler(SimpleHTTPRequestHandler):
-    def __init__(self, *args, web_root: Path | None = None, **kwargs):
-        self.web_root = web_root or WEB_ROOT
+    def __init__(self, *args, web_root: Path | None = None, server_config: dict | None = None, **kwargs):
+        self.web_root = web_root
+        self.server_config = server_config or {}
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
     def do_OPTIONS(self) -> None:
@@ -201,7 +140,7 @@ class Handler(SimpleHTTPRequestHandler):
 
     def _serve_web(self, path: str) -> None:
         if self.web_root is None:
-            self._send_build_hint()
+            self._send_api_only()
             return
 
         rel = path.lstrip("/") or "index.html"
@@ -213,7 +152,6 @@ class Handler(SimpleHTTPRequestHandler):
         if target.is_dir():
             target = target / "index.html"
         if not target.is_file():
-            # Vue Router history：非静态资源回退 index.html
             fallback = self.web_root / "index.html"
             if fallback.is_file() and not rel.startswith("api/"):
                 target = fallback
@@ -222,38 +160,21 @@ class Handler(SimpleHTTPRequestHandler):
                 return
         content = target.read_bytes()
         content_type = self.guess_type(str(target))
-        index_kind = "unknown"
-        if target.name == "index.html":
-            index_kind = "broken-src" if b"/src/main.js" in content else "dist"
-            _agent_log(
-                "H1",
-                "serve.py:_serve_web",
-                "serve index.html",
-                {
-                    "path": path,
-                    "web_root": str(self.web_root),
-                    "target": str(target),
-                    "index_kind": index_kind,
-                    "bytes": len(content),
-                },
-            )
         self.send_response(200)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(content)))
         self._web_headers()
-        if index_kind != "unknown":
-            self.send_header("X-Live-Index-Kind", index_kind)
         self.end_headers()
         self.wfile.write(content)
 
-    def _send_build_hint(self) -> None:
-        content = BUILD_HINT_HTML.encode("utf-8")
-        self.send_response(503)
-        self.send_header("Content-Type", "text/html; charset=utf-8")
-        self.send_header("Content-Length", str(len(content)))
-        self._cors()
-        self.end_headers()
-        self.wfile.write(content)
+    def _send_api_only(self) -> None:
+        self._send_json(
+            {
+                "ok": False,
+                "error": "本服务仅提供 API。请单独部署前端，或在 server/config.json 中开启 static.enabled。",
+            },
+            status=404,
+        )
 
     def _web_headers(self) -> None:
         self._cors()
@@ -263,14 +184,14 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_header("X-Live-Web-Root", str(self.web_root))
 
     def _api_health(self) -> None:
-        web_root = self.web_root
-        dist_index = WEB_DIST / "index.html"
+        static_cfg = self.server_config.get("static") or {}
         payload = {
             "ok": True,
-            "web_root": str(web_root) if web_root else None,
-            "dist_built": dist_index.is_file(),
-            "mode": "dist" if web_root else "build-required",
-            "dist_index": str(dist_index) if dist_index.is_file() else None,
+            "mode": "static+api" if self.web_root else "api-only",
+            "host": self.server_config.get("host"),
+            "port": self.server_config.get("port"),
+            "static_enabled": bool(static_cfg.get("enabled")),
+            "static_root": str(self.web_root) if self.web_root else None,
             "browse_api": True,
             "resolve_cache": cache_stats(),
         }
@@ -418,7 +339,9 @@ class Handler(SimpleHTTPRequestHandler):
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 
     def _cors(self) -> None:
-        self.send_header("Access-Control-Allow-Origin", "*")
+        cors = self.server_config.get("cors") or {}
+        if cors.get("enabled", True):
+            self.send_header("Access-Control-Allow-Origin", cors.get("allowOrigin", "*"))
 
     def _send_json(self, payload: dict, *, status: int = 200) -> None:
         data = json.dumps(sanitize_unicode(payload), ensure_ascii=False).encode("utf-8")
@@ -434,39 +357,47 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="启动直播 API + Web 前端")
-    parser.add_argument("--port", type=int, default=8765)
-    parser.add_argument("--web-root", type=Path, default=WEB_ROOT)
+    parser = argparse.ArgumentParser(description="启动直播解析 API 服务")
+    parser.add_argument("--config", type=Path, default=None, help="配置文件路径，默认 server/config.json")
+    parser.add_argument("--port", type=int, default=None, help="覆盖 config.json 中的 port")
     args = parser.parse_args()
 
-    served_root = resolve_web_root(args.web_root)
+    cfg = load_config(args.config)
+    if args.port is not None:
+        cfg["port"] = args.port
+
+    host = str(cfg.get("host") or "127.0.0.1")
+    port = int(cfg.get("port") or 8765)
+    served_root = resolve_static_root(cfg)
+
     if served_root is not None:
-        print(f"前端: 托管构建产物 {served_root}")
-    elif not args.web_root.is_dir():
-        print(f"警告: 前端目录不存在 {args.web_root}，仅提供 API")
+        print(f"静态托管: {served_root}")
     else:
-        print(f"警告: 未找到 {WEB_DIST / 'index.html'}")
-        print("      请先: cd live/web && npm install && npm run build")
-        print("      开发 UI 请用: cd live/web && npm run dev  →  http://127.0.0.1:5173/")
+        static_cfg = cfg.get("static") or {}
+        if static_cfg.get("enabled"):
+            print("警告: static.enabled=true 但未找到 dist/index.html，仅提供 API")
+        else:
+            print("模式: 仅 API（前后端解耦，前端请单独部署）")
 
     def handler_factory(*handler_args, **handler_kwargs):
-        return Handler(*handler_args, web_root=served_root, **handler_kwargs)
+        return Handler(*handler_args, web_root=served_root, server_config=cfg, **handler_kwargs)
 
     try:
-        server = ThreadingHTTPServer(("127.0.0.1", args.port), handler_factory)
+        server = ThreadingHTTPServer((host, port), handler_factory)
     except OSError as exc:
-        print(f"错误: 无法绑定 127.0.0.1:{args.port}（{exc}）")
+        print(f"错误: 无法绑定 {host}:{port}（{exc}）")
         print("      可能已有旧 serve.py 在运行。Windows 可先执行:")
-        print(f"      netstat -ano | findstr :{args.port}")
+        print(f"      netstat -ano | findstr :{port}")
         print("      taskkill /PID <pid> /F")
         print("      或直接运行: .\\start.ps1")
         return 1
 
-    print(f"Web 页面: http://127.0.0.1:{args.port}/")
-    print("API: GET /api/room?site=douyu|huya&room=<id>&mode=lazy|full")
+    print(f"API: http://{host}:{port}/api/health")
+    print("     GET /api/room?site=douyu|huya&room=<id>&mode=lazy|full")
     print("     GET /api/categories?site=douyu|huya")
     print("     GET /api/rooms?site=douyu|huya&cid=<id>&page=1")
     print("     GET /api/rooms?site=douyu|huya&recommend=1&page=1")
+    print("配置: server/config.json（可选 config.local.json 覆盖）")
     print("按 Ctrl+C 停止")
     try:
         server.serve_forever()

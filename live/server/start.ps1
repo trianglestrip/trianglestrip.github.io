@@ -1,6 +1,16 @@
 $ErrorActionPreference = "Stop"
-$Port = 8765
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
+$Port = 8765
+
+$configPath = Join-Path $Root "config.json"
+if (Test-Path $configPath) {
+  try {
+    $cfg = Get-Content $configPath -Raw | ConvertFrom-Json
+    if ($cfg.port) { $Port = [int]$cfg.port }
+  } catch {
+    Write-Host "警告: 无法解析 config.json，使用默认端口 $Port"
+  }
+}
 
 Write-Host "清理端口 $Port 上的旧进程..."
 $connections = netstat -ano | Select-String ":$Port\s+.*LISTENING"
@@ -14,5 +24,5 @@ foreach ($line in $connections) {
 }
 
 Set-Location $Root
-Write-Host "启动 serve.py ..."
-& "$Root\.venv\Scripts\python.exe" "$Root\serve.py" --port $Port
+Write-Host "启动 serve.py (port=$Port) ..."
+& "$Root\.venv\Scripts\python.exe" "$Root\serve.py"

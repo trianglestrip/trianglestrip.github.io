@@ -1,75 +1,64 @@
 # live/web
 
-Vue 3 多页面聚合直播前端（参考 [Lemon Live](https://lemonlive.deno.dev/) 布局）。功能规划见 [FEATURES.md](./FEATURES.md)。
+Vue 3 聚合直播前端，通过 `public/config.json` 配置 API 地址，与 `live/server` **完全解耦**。
+
+## 配置 `public/config.json`
+
+```json
+{
+  "appTitle": "Lemon live",
+  "api": {
+    "baseUrl": "",
+    "devBaseUrl": "http://127.0.0.1:8765"
+  }
+}
+```
+
+| 字段 | 说明 |
+|------|------|
+| `appTitle` | 页面标题 |
+| `api.devBaseUrl` | 开发环境 API 根地址；留空则使用 Vite 代理 `/api` → server |
+| `api.baseUrl` | 生产构建后的 API 根地址；与 API 同域可留空 |
+
+本地覆盖：复制为 `public/config.local.json`（gitignore），或在部署时直接改 `dist/config.json`。
+
+`vite.config.js` 会读取 `../server/config.json` 的 `port` 作为开发代理目标。
 
 ## 结构
 
 ```
 web/
-  FEATURES.md           # 功能规划
-  package.json
-  vite.config.js
-  index.html
-  src/
-    main.js
-    App.vue
-    router.js
-    config/platforms.js
-    api/room.js
-    composables/useLive.js
-    components/         # AppLayout, PlayerPanel, ControlPanel…
-    views/              # Home, Platform, Watch
-    styles/main.css
-  dist/                 # npm run build 产物（serve.py 托管）
+  public/config.json    # 前端运行时配置（构建时复制到 dist/）
+  config.example.json
+  src/config/app.js     # 加载 config.json，导出 apiBase()
+  src/                  # Vue 源码
+  dist/                 # npm run build（单独部署）
 ```
-
-## 路由
-
-| 路径 | 页面 |
-|------|------|
-| `/` | 首页 · 平台入口卡片 |
-| `/platform/:site` | 平台详情（douyu / huya / bilibili / douyin） |
-| `/watch/:site/:room?` | 播放页（Lemon 主布局） |
 
 ## 开发
 
-**方式 A — Vite 热更新（推荐改 UI 时）**
-
 ```powershell
-# 终端 1：API
+# 终端 1
 cd live/server
-.\.venv\Scripts\python serve.py
+.\start.ps1
 
-# 终端 2：前端
+# 终端 2
 cd live/web
 npm install
 npm run dev
 ```
 
-浏览器打开 http://127.0.0.1:5173/（`/api` 已 proxy 到 `:8765`）
+打开 http://127.0.0.1:5173/
 
-**方式 B — 构建后由 serve.py 统一托管**
+## 生产构建
 
 ```powershell
 cd live/web
-npm install
 npm run build
-
-cd ../server
-.\.venv\Scripts\python serve.py
 ```
 
-浏览器打开 http://127.0.0.1:8765/
+将 `dist/` 部署到任意静态托管；确保 `dist/config.json` 中 `api.baseUrl` 指向你的 API。
 
-- `/` — Vue 前端（**必须**先 `npm run build`，仅托管 `dist/`；无 dist 时显示构建说明页）
-- `/api/room` — 解析 API
+## API
 
-> **勿**在未 build 的情况下指望 `:8765` 加载源码 `index.html`：浏览器无法解析 `import "vue"`。改 UI 请用 `npm run dev`（`:5173`）。
-
-> **控制台** 若出现 `Permissions policy violation: unload`，来自 flv.js 内部；已在 serve/Vite 设置 `Permissions-Policy: unload=(self)`，一般可忽略，不影响播放。
-
-## API 对接
-
-`GET /api/room?site=douyu|huya&room=<id>&mode=lazy|full&quality=<档名>`
-
-详见 [FEATURES.md](./FEATURES.md) 与 [`../server/README.md`](../server/README.md)。
+前端通过 `apiBase()` 请求 `${apiBase}/api/room` 等，详见 [FEATURES.md](./FEATURES.md) 与 [`../server/README.md`](../server/README.md)。

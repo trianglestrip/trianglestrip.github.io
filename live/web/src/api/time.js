@@ -1,4 +1,4 @@
-import { apiBase } from "../config/platforms";
+import { apiBase } from "../config/app.js";
 
 export async function fetchTimeReport({ site = "douyu", room = "252140", quality = "", run = false } = {}) {
   const params = new URLSearchParams({ site, room });

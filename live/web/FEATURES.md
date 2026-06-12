@@ -80,21 +80,22 @@
 ```
 ┌─────────────────┐     HTTP      ┌──────────────────┐
 │  live/web       │ ────────────► │  live/server     │
-│  Vue 前端       │  /api/room    │  serve.py + 解析  │
+│  Vue 前端       │  /api/*       │  纯 API 服务      │
+│  config.json    │               │  config.json     │
 └─────────────────┘               └──────────────────┘
         │                                   │
-        │ npm run build                     │ streamget / 缓存
+        │ npm run build → 独立部署            │ streamget / 缓存
         ▼                                   ▼
-   live/web/dist/                    resolve_*.py
+   GitHub Pages / CDN                  resolve_*.py
 ```
 
-| 模块 | 职责 | 依赖 |
+| 模块 | 职责 | 配置 |
 |------|------|------|
-| **前端** `live/web` | 路由、UI、flv.js 播放、localStorage 偏好 | API 契约稳定即可 |
-| **后端** `live/server` | 解析、缓存、CORS、静态托管 dist | 无前端框架依赖 |
-| **部署** | `npm run build` → `dist/`；`serve.py` 优先 `web/dist` | 先 build 再启动 serve |
+| **前端** `live/web` | 路由、UI、flv.js 播放 | `public/config.json` → `api.baseUrl` / `api.devBaseUrl` |
+| **后端** `live/server` | 解析、缓存、CORS | `config.json` → `host` / `port` / `cors` |
+| **部署** | 前后端分别部署；默认可 `static.enabled: false` | 可选 `config.local.json` 本地覆盖 |
 
-前端不嵌入 Python；后端不生成 Vue 产物。联调：dev 时 Vite `:5173` + proxy `/api` → `:8765`。
+前端通过 `src/config/app.js` 启动时加载 `/config.json`；开发时 Vite 将 `/api` 代理到 server 的 `port`。
 
 ## 5. Vue Router 设计
 
@@ -118,7 +119,7 @@ routes = [
 | M1 | Vue 3 + Vite 脚手架、`dist` 构建 | ✅ |
 | M2 | 首页 / 平台页 / 播放页 + Lemon 布局 | ✅ |
 | M3 | `/api/room` 对接 + flv 播放 | ✅ |
-| M4 | `serve.py` 优先 dist + SPA fallback | ✅ |
+| M4 | 前后端 config.json 解耦部署 | ✅ |
 | M5 | README、build 联调 | ✅ |
 | M6 | 哔哩 / 抖音解析接入 | 待办 |
 | M7 | M3U8 / HLS 非 FLV 平台 | 待办 |
@@ -137,6 +138,7 @@ live/web/
     main.js
     App.vue
     router.js
+    config/app.js           # 加载 public/config.json
     config/platforms.js
     api/room.js
     composables/useRoom.js

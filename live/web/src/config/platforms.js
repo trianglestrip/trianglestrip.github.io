@@ -42,7 +42,3 @@ export const PREFS_KEY = "live.web.prefs";
 export function getPlatform(site) {
   return PLATFORMS.find((item) => item.id === site) || null;
 }
-
-export function apiBase() {
-  return "";
-}

@@ -1,4 +1,4 @@
-import { apiBase } from "../config/platforms";
+import { apiBase } from "../config/app.js";
 
 export async function fetchRoom({ site, room, mode = "lazy", quality } = {}) {
   const params = new URLSearchParams({

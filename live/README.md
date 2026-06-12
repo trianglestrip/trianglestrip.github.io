@@ -1,37 +1,55 @@
 # live
 
-博客直播实验目录：
+博客直播实验目录（**前后端完全解耦**）：
 
-| 子目录 | 说明 |
-|--------|------|
-| [web/](web/) | Vue 3 聚合直播前端（Lemon Live 风格，多路由） |
-| [server/](server/) | 解析 API 后端（meta/tier 分层 + streamget） |
+| 子目录 | 说明 | 配置 |
+|--------|------|------|
+| [web/](web/) | Vue 3 前端 | `web/public/config.json` |
+| [server/](server/) | 解析 API | `server/config.json` |
 
 ## 快速启动
 
 ```powershell
-# 1. 构建前端（首次或改 UI 后）
+# 终端 1：API
+cd live/server
+.\start.ps1
+
+# 终端 2：前端（开发）
 cd live/web
 npm install
-npm run build
-
-# 2. 启动 API + 托管 dist
-cd ../server
-.\.venv\Scripts\python serve.py
+npm run dev
 ```
 
-浏览器打开 http://127.0.0.1:8765/
+- 前端：http://127.0.0.1:5173/
+- API：http://127.0.0.1:8765/api/health
 
-| URL | 说明 |
-|-----|------|
-| `/` | Vue 前端（优先 `web/dist/`） |
-| `/watch/douyu/5720533` | 播放页（可分享） |
-| `/api/room?site=douyu&room=<id>` | 解析 API |
+## 配置说明
 
-## 开发模式
+**后端** `live/server/config.json`：端口、CORS、是否托管静态页（默认 `static.enabled: false`）。
 
-前端热更新：`cd live/web && npm run dev` → http://127.0.0.1:5173/（需另开终端运行 `serve.py` 提供 API）。
+**前端** `live/web/public/config.json`：
+
+```json
+{
+  "appTitle": "Lemon live",
+  "api": {
+    "baseUrl": "",
+    "devBaseUrl": "http://127.0.0.1:8765"
+  }
+}
+```
+
+| 字段 | 开发 | 生产构建 |
+|------|------|----------|
+| `api.devBaseUrl` | 直连 API 或留空走 Vite 代理 | — |
+| `api.baseUrl` | — | 填 API 根地址，如 `https://api.example.com`；同域部署可留空 |
+
+本地敏感覆盖：复制为 `config.local.json`（server / web/public 均可，已 gitignore）。
+
+## 生产部署（分离）
+
+1. 前端：`cd live/web && npm run build`，将 `dist/` 部署到 GitHub Pages / Nginx
+2. 后端：在服务器运行 `live/server`，`config.json` 中开启 CORS
+3. 前端 `config.json` 的 `api.baseUrl` 指向后端公网地址
 
 功能规划：[web/FEATURES.md](web/FEATURES.md)
-
-本地虚拟环境在 `server/.venv/`（已 gitignore，勿提交）。

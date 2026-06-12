@@ -1,4 +1,4 @@
-import { apiBase } from "../config/platforms";
+import { apiBase } from "../config/app.js";
 
 async function readJson(res) {
   const text = await res.text();
