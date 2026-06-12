@@ -12,10 +12,11 @@ import random
 import sys
 import time
 import urllib.parse
-from datetime import datetime, timezone
 from pathlib import Path
 
 from streamget import HuyaLiveStream
+
+from room_schema import build_room_payload, pick_quality_name
 
 ROOT = Path(__file__).resolve().parent
 
@@ -91,15 +92,7 @@ def _quality_items(web_data: dict) -> list[dict]:
 
 
 def _pick_quality_item(items: list[dict], quality_name: str | None) -> dict:
-    if quality_name:
-        for item in items:
-            name = str(item.get("name") or "")
-            if quality_name == name or quality_name in name or name in quality_name:
-                return item
-    for item in items:
-        if "高清" in str(item.get("name") or "") or "超清" in str(item.get("name") or ""):
-            return item
-    return items[0]
+    return pick_quality_name(items, quality_name)
 
 
 def _stream_lines(web_data: dict, *, ratio: int | str = "") -> list[dict]:
@@ -144,73 +137,70 @@ async def _load_play_context(url: str) -> dict:
     }
 
 
+async def load_meta(url: str) -> dict:
+    ctx = await _load_play_context(url)
+    return meta_from_context(ctx)
+
+
+def meta_from_context(ctx: dict) -> dict:
+    return {
+        "site": "huya",
+        "room_id": ctx["room_id"],
+        "source_url": ctx["url"],
+        "anchor_name": ctx["anchor_name"],
+        "title": ctx["title"] or ctx["anchor_name"],
+        "cover": ctx["cover"],
+        "available_qualities": ctx["qualities"],
+        "context": {"web_data": ctx["web_data"]},
+    }
+
+
+async def resolve_tier(meta: dict, quality_name: str | None = None) -> dict:
+    web_data = meta["context"]["web_data"]
+    quality = _pick_quality_item(meta["available_qualities"], quality_name)
+    tier = _tier_from_quality(web_data, quality)
+    if not tier:
+        raise RuntimeError(f"未获取到档位 {quality.get('name') or quality_name} 的播放地址")
+    return tier
+
+
+async def resolve_all_tiers(meta: dict) -> list[dict]:
+    web_data = meta["context"]["web_data"]
+    streams: list[dict] = []
+    for quality in meta["available_qualities"]:
+        tier = _tier_from_quality(web_data, quality)
+        if tier:
+            streams.append(tier)
+    if not streams:
+        raise RuntimeError("未获取到可播放的虎牙 FLV 地址")
+    return streams
+
+
 def _finalize_payload(
-    ctx: dict,
+    meta: dict,
     streams: list[dict],
     *,
     partial: bool = False,
     quality_name: str | None = None,
 ) -> dict:
-    if not streams:
-        raise RuntimeError("未获取到可播放的虎牙 FLV 地址")
-
-    active = streams[0]
-    if quality_name:
-        matched = next((group for group in streams if group["name"] == quality_name), None)
-        if matched:
-            active = matched
-
-    play_url = active["play_url"]
-    backup_urls = [
-        line["url"]
-        for group in streams
-        for line in group["lines"]
-        if line.get("url") and line["url"] != play_url
-    ]
-
-    payload = {
-        "source_url": ctx["url"],
-        "source": "streamget",
-        "fetched_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
-        "platform": "huya",
-        "site": "huya",
-        "room_id": ctx["room_id"],
-        "anchor_name": ctx["anchor_name"],
-        "title": ctx["title"] or ctx["anchor_name"],
-        "cover": ctx["cover"],
-        "is_live": True,
-        "status": True,
-        "streams": [{"name": group["name"], "lines": group["lines"]} for group in streams],
-        "available_qualities": ctx["qualities"],
-        "play_url": play_url,
-        "flv_url": play_url,
-        "m3u8_url": "",
-        "backup_urls": backup_urls,
-        "ok": True,
-    }
-    if partial:
-        payload["partial"] = True
-        payload["quality"] = active["name"]
-    return payload
+    return build_room_payload(
+        meta,
+        streams,
+        partial=partial,
+        active_quality=quality_name or (streams[0]["name"] if partial else None),
+    )
 
 
 async def resolve_huya_lazy(url: str, *, quality_name: str | None = None) -> dict:
-    ctx = await _load_play_context(url)
-    quality = _pick_quality_item(ctx["qualities"], quality_name)
-    tier = _tier_from_quality(ctx["web_data"], quality)
-    if not tier:
-        raise RuntimeError(f"未获取到档位 {quality.get('name') or quality_name} 的播放地址")
-    return _finalize_payload(ctx, [tier], partial=True, quality_name=str(tier["name"]))
+    meta = await load_meta(url)
+    tier = await resolve_tier(meta, quality_name)
+    return _finalize_payload(meta, [tier], partial=True, quality_name=tier["name"])
 
 
 async def resolve_huya_all(url: str) -> dict:
-    ctx = await _load_play_context(url)
-    streams: list[dict] = []
-    for quality in ctx["qualities"]:
-        tier = _tier_from_quality(ctx["web_data"], quality)
-        if tier:
-            streams.append(tier)
-    return _finalize_payload(ctx, streams)
+    meta = await load_meta(url)
+    streams = await resolve_all_tiers(meta)
+    return _finalize_payload(meta, streams)
 
 
 async def resolve_all(url: str) -> dict:

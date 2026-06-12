@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""本地直播测试服务：纯解析 API、muxia 对比与播放器页面（无流转发）。"""
+"""本地直播 API 服务：解析后端 + 托管 live/web 前端。"""
 
 from __future__ import annotations
 
 import argparse
-import asyncio
 import json
 import re
 from concurrent.futures import ThreadPoolExecutor
@@ -16,14 +15,10 @@ from compare_streams import compare_room_payloads
 from muxia_api import fetch_room, normalize_room
 from resolve_cache import get as cache_get
 from resolve_cache import set as cache_set
-from resolve_douyu import normalize_url as douyu_normalize_url
-from resolve_douyu import resolve_all as douyu_resolve_all
-from resolve_douyu import resolve_douyu_lazy
-from resolve_huya import normalize_url as huya_normalize_url
-from resolve_huya import resolve_all as huya_resolve_all
-from resolve_huya import resolve_huya_lazy
+from resolve_service import resolve_room_sync
 
 ROOT = Path(__file__).resolve().parent
+WEB_ROOT = ROOT.parent / "web"
 ROOM_RES = {
     "douyu": re.compile(r"(?:douyu\.com/)?(\d+)$"),
     "huya": re.compile(r"(?:huya\.com/)?(\d+)$"),
@@ -49,33 +44,7 @@ def finalize_payload(payload: dict) -> dict:
 
 def resolve_local(site: str, room: str, *, mode: str = "lazy", quality: str | None = None) -> dict:
     room_id = parse_room_id(room, site)
-    quality_key = (quality or "").strip() or "*"
-    cache_key = f"local:{site}:{room_id}:{mode}:{quality_key}"
-    cached = cache_get(cache_key)
-    if cached:
-        cached["cached"] = True
-        return cached
-
-    if site == "huya":
-        url = huya_normalize_url(room_id)
-        if mode == "full":
-            payload = asyncio.run(huya_resolve_all(url))
-        else:
-            payload = asyncio.run(resolve_huya_lazy(url, quality_name=quality or None))
-    elif site == "douyu":
-        url = douyu_normalize_url(room_id)
-        if mode == "full":
-            payload = asyncio.run(douyu_resolve_all(url))
-        else:
-            payload = asyncio.run(resolve_douyu_lazy(url, quality_name=quality or None))
-    else:
-        raise ValueError(f"暂不支持平台: {site}")
-
-    payload["source"] = "streamget"
-    payload["site"] = site
-    payload["room_id"] = room_id
-    cache_set(cache_key, payload)
-    return payload
+    return resolve_room_sync(site, room_id, mode=mode, quality=quality)
 
 
 def resolve_muxia(site: str, room: str) -> dict:
@@ -110,7 +79,8 @@ def compare_room(site: str, room: str) -> dict:
 
 
 class Handler(SimpleHTTPRequestHandler):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, web_root: Path | None = None, **kwargs):
+        self.web_root = web_root or WEB_ROOT
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
     def do_OPTIONS(self) -> None:
@@ -124,15 +94,19 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_response(204)
             self.end_headers()
             return
-        if parsed.path == "/api/room":
-            self._api_room(parsed)
+        if parsed.path.startswith("/api/"):
+            if parsed.path == "/api/room":
+                self._api_room(parsed)
+                return
+            if parsed.path == "/api/compare":
+                self._api_compare(parsed)
+                return
+            self.send_error(404)
             return
-        if parsed.path == "/api/compare":
-            self._api_compare(parsed)
-            return
-        if parsed.path == "/":
+        if parsed.path == "/legacy":
             self.path = "/player.html"
-        return super().do_GET()
+            return super().do_GET()
+        return self._serve_web(parsed.path)
 
     def do_POST(self) -> None:
         parsed = urlparse(self.path)
@@ -143,6 +117,30 @@ class Handler(SimpleHTTPRequestHandler):
             self._api_compare_post(parsed)
             return
         self.send_error(404)
+
+    def _serve_web(self, path: str) -> None:
+        rel = path.lstrip("/") or "index.html"
+        target = (self.web_root / rel).resolve()
+        if not str(target).startswith(str(self.web_root.resolve())):
+            self.send_error(403)
+            return
+        if target.is_dir():
+            target = target / "index.html"
+        if not target.is_file():
+            fallback = self.web_root / "index.html"
+            if fallback.is_file():
+                target = fallback
+            else:
+                self.send_error(404)
+                return
+        content = target.read_bytes()
+        content_type = self.guess_type(str(target))
+        self.send_response(200)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(len(content)))
+        self._cors()
+        self.end_headers()
+        self.wfile.write(content)
 
     def _read_json_body(self) -> dict:
         length = int(self.headers.get("Content-Length", "0"))
@@ -239,13 +237,21 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="启动直播测试服务（纯解析）")
+    parser = argparse.ArgumentParser(description="启动直播 API + Web 前端")
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--web-root", type=Path, default=WEB_ROOT)
     args = parser.parse_args()
 
-    server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
-    print(f"播放页: http://127.0.0.1:{args.port}/")
-    print("API: GET /api/room?mode=lazy&quality=<档名> | GET /api/compare?room=<id>")
+    if not args.web_root.is_dir():
+        print(f"警告: 前端目录不存在 {args.web_root}，仅提供 API 与 /legacy 调试页")
+
+    def handler_factory(*handler_args, **handler_kwargs):
+        return Handler(*handler_args, web_root=args.web_root, **handler_kwargs)
+
+    server = ThreadingHTTPServer(("127.0.0.1", args.port), handler_factory)
+    print(f"Web 页面: http://127.0.0.1:{args.port}/")
+    print(f"Legacy 调试: http://127.0.0.1:{args.port}/legacy")
+    print("API: GET /api/room?site=douyu|huya&room=<id>&mode=lazy|full")
     print("按 Ctrl+C 停止")
     try:
         server.serve_forever()

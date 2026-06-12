@@ -7,10 +7,11 @@ import argparse
 import asyncio
 import json
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 from streamget import DouyuLiveStream
+
+from room_schema import build_room_payload, pick_quality_name
 
 ROOT = Path(__file__).resolve().parent
 
@@ -51,15 +52,7 @@ def _cache_white_key(live: DouyuLiveStream, white: dict) -> None:
 
 
 def _pick_quality_item(multirates: list[dict], quality_name: str | None) -> dict:
-    if quality_name:
-        for item in multirates:
-            name = str(item.get("name") or "")
-            if quality_name == name or quality_name in name or name in quality_name:
-                return item
-    for item in multirates:
-        if "高清" in str(item.get("name") or ""):
-            return item
-    return multirates[0]
+    return pick_quality_name(_available_qualities(multirates), quality_name)
 
 
 def _available_qualities(multirates: list[dict]) -> list[dict]:
@@ -122,12 +115,86 @@ async def _load_play_context(url: str, *, preferred_cdn: str = "hw-h5") -> dict:
         "rid": rid,
         "url": url,
         "anchor_name": room_data.get("anchor_name") or "",
+        "white": white,
         "base": base,
         "multirates": multirates,
         "cdns": cdns,
         "line_label": _line_name_for_cdn(cdns, preferred_cdn),
         "preferred_cdn": preferred_cdn,
     }
+
+
+def meta_from_context(ctx: dict) -> dict:
+    return {
+        "site": "douyu",
+        "room_id": ctx["rid"],
+        "source_url": ctx["url"],
+        "anchor_name": ctx["anchor_name"],
+        "title": ctx["anchor_name"],
+        "cover": "",
+        "available_qualities": _available_qualities(ctx["multirates"]),
+        "context": {
+            "rid": ctx["rid"],
+            "url": ctx["url"],
+            "anchor_name": ctx["anchor_name"],
+            "multirates": ctx["multirates"],
+            "cdns": ctx["cdns"],
+            "line_label": ctx["line_label"],
+            "preferred_cdn": ctx["preferred_cdn"],
+            "white": ctx["white"],
+            "base": ctx["base"],
+        },
+    }
+
+
+def _context_from_meta(meta: dict) -> dict:
+    blob = meta["context"]
+    live = DouyuLiveStream()
+    _cache_white_key(live, blob["white"])
+    return {
+        "live": live,
+        "rid": blob["rid"],
+        "url": blob["url"],
+        "anchor_name": blob["anchor_name"],
+        "base": blob["base"],
+        "multirates": blob["multirates"],
+        "cdns": blob["cdns"],
+        "line_label": blob["line_label"],
+        "preferred_cdn": blob["preferred_cdn"],
+    }
+
+
+async def load_meta(url: str, *, preferred_cdn: str = "hw-h5") -> dict:
+    ctx = await _load_play_context(url, preferred_cdn=preferred_cdn)
+    return meta_from_context(ctx)
+
+
+async def resolve_tier(meta: dict, quality_name: str | None = None) -> dict:
+    ctx = _context_from_meta(meta)
+    item = _pick_quality_item(ctx["multirates"], quality_name)
+    resp = await _fetch_tier_response(ctx, item)
+    tier = _tier_from_response(item, resp, line_label=ctx["line_label"])
+    if not tier:
+        raise RuntimeError(f"未获取到档位 {item.get('name') or quality_name} 的播放地址")
+    return tier
+
+
+async def resolve_all_tiers(meta: dict) -> list[dict]:
+    ctx = _context_from_meta(meta)
+
+    async def fetch_tier(item: dict) -> tuple[dict, dict]:
+        return item, await _fetch_tier_response(ctx, item)
+
+    tier_results = await asyncio.gather(*[fetch_tier(item) for item in ctx["multirates"]])
+    streams: list[dict] = []
+    seen_paths: set[str] = set()
+    for item, resp in tier_results:
+        tier = _tier_from_response(item, resp, line_label=ctx["line_label"], seen_paths=seen_paths)
+        if tier:
+            streams.append(tier)
+    if not streams:
+        raise RuntimeError("未获取到可播放的 douyucdn 地址")
+    return streams
 
 
 async def _fetch_tier_response(ctx: dict, item: dict) -> dict:
@@ -142,84 +209,30 @@ async def _fetch_tier_response(ctx: dict, item: dict) -> dict:
 
 
 def _finalize_payload(
-    ctx: dict,
+    meta: dict,
     streams: list[dict],
     *,
     partial: bool = False,
     quality_name: str | None = None,
 ) -> dict:
-    if not streams:
-        raise RuntimeError("未获取到可播放的 douyucdn 地址")
-
-    active = streams[0]
-    if quality_name:
-        matched = next((group for group in streams if group["name"] == quality_name), None)
-        if matched:
-            active = matched
-
-    play_url = active["play_url"]
-    backup_urls = [
-        line["url"]
-        for group in streams
-        for line in group["lines"]
-        if line.get("url") and line["url"] != play_url
-    ]
-
-    payload = {
-        "source_url": ctx["url"],
-        "source": "streamget",
-        "fetched_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
-        "platform": "douyu",
-        "site": "douyu",
-        "room_id": ctx["rid"],
-        "anchor_name": ctx["anchor_name"],
-        "title": ctx["anchor_name"],
-        "is_live": True,
-        "status": True,
-        "streams": [{"name": group["name"], "lines": group["lines"]} for group in streams],
-        "available_qualities": _available_qualities(ctx["multirates"]),
-        "play_url": play_url,
-        "flv_url": play_url,
-        "m3u8_url": "",
-        "backup_urls": backup_urls,
-        "ok": True,
-    }
-    if partial:
-        payload["partial"] = True
-        payload["quality"] = active["name"]
-    return payload
+    return build_room_payload(
+        meta,
+        streams,
+        partial=partial,
+        active_quality=quality_name or (streams[0]["name"] if partial else None),
+    )
 
 
 async def resolve_douyu_lazy(url: str, *, quality_name: str | None = None, preferred_cdn: str = "hw-h5") -> dict:
-    """懒加载：只解析一个档位，并返回全部档位名供前端切换。"""
-    ctx = await _load_play_context(url, preferred_cdn=preferred_cdn)
-    item = _pick_quality_item(ctx["multirates"], quality_name)
-    resp = await _fetch_tier_response(ctx, item)
-    tier = _tier_from_response(item, resp, line_label=ctx["line_label"])
-    if not tier:
-        raise RuntimeError(f"未获取到档位 {item.get('name') or quality_name} 的播放地址")
-    return _finalize_payload(ctx, [tier], partial=True, quality_name=str(tier["name"]))
+    meta = await load_meta(url, preferred_cdn=preferred_cdn)
+    tier = await resolve_tier(meta, quality_name)
+    return _finalize_payload(meta, [tier], partial=True, quality_name=tier["name"])
 
 
 async def resolve_douyu_cdn(url: str, *, preferred_cdn: str = "hw-h5") -> dict:
-    """全量解析：一次返回全部档位直链。"""
-    ctx = await _load_play_context(url, preferred_cdn=preferred_cdn)
-
-    async def fetch_tier(item: dict) -> tuple[dict, dict]:
-        return item, await _fetch_tier_response(ctx, item)
-
-    tier_results = await asyncio.gather(*[fetch_tier(item) for item in ctx["multirates"]])
-
-    streams: list[dict] = []
-    seen_paths: set[str] = set()
-    for item, resp in tier_results:
-        tier = _tier_from_response(item, resp, line_label=ctx["line_label"], seen_paths=seen_paths)
-        if tier:
-            streams.append(tier)
-
-    payload = _finalize_payload(ctx, streams)
-    payload.pop("partial", None)
-    return payload
+    meta = await load_meta(url, preferred_cdn=preferred_cdn)
+    streams = await resolve_all_tiers(meta)
+    return _finalize_payload(meta, streams)
 
 
 async def resolve_all(url: str) -> dict:

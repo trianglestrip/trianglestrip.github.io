@@ -1,10 +1,11 @@
 # live
 
-博客直播实验目录，各方案独立子目录：
+博客直播实验目录：
 
 | 子目录 | 说明 |
 |--------|------|
-| [player/](player/) | 斗鱼 / 虎牙链接转 FLV 直链 + muxia 对比 + flv.js 播放（[斗鱼转换说明](player/streamget-douyu.md)） |
+| [web/](web/) | 聚合直播前端（Lemon Live 风格布局） |
+| [player/](player/) | 解析 API 后端（meta/tier 分层 + streamget） |
 
 ```powershell
 cd live/player
@@ -12,5 +13,9 @@ cd live/player
 ```
 
 浏览器打开 http://127.0.0.1:8765/
+
+- 首页 `/` → `live/web`
+- 调试页 `/legacy` → 旧版 `player.html`
+- API `/api/room?site=douyu|huya&room=<id>`
 
 本地虚拟环境在 `player/.venv/`（已 gitignore，勿提交）。

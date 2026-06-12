@@ -1,23 +1,25 @@
 # 直播解析与播放
 
-博客根目录下的直播实验模块，参考 [lemon-live](https://github.com/lemonfog/lemon-live)：
+博客根目录下的直播实验模块，参考 [lemon-live](https://github.com/lemonfog/lemon-live) / [Lemon Live](https://lemonlive.deno.dev/)：
 
-- **解析**：本机 `streamget`（getH5PlayV1 + hw-h5，douyucdn 直链）
-- **对照**：可与 `live.muxia.site` 对比档位名、线路名、FLV 文件名是否一致
-- **播放**：flv.js 浏览器直连 CDN（**无本机流代理**）
-- **技术文档**：[streamget-douyu.md](streamget-douyu.md) — 房间链接如何转换为 FLV 直链（逐步说明）
+- **解析**：本机 `streamget`（斗鱼 getH5PlayV1、虎牙页面 + anti-code）
+- **架构**：`room_schema` meta/tier 分层 + `resolve_service` 统一调度
+- **前端**：[`../web/`](../web/) 聚合页；本目录 `player.html` 为 `/legacy` 调试页
 
 ## 目录
 
 ```
 live/player/
-  serve.py           # 本地 HTTP 服务（页面 + 纯解析 API）
-  resolve_douyu.py   # streamget 斗鱼多档解析（CLI）
-  resolve_huya.py    # streamget 虎牙多档多线路解析（CLI）
+  serve.py           # API + 托管 ../web 前端
+  resolve_service.py # meta/tier 缓存与多平台调度
+  room_schema.py     # 统一 meta/tier/payload 结构
+  resolve_douyu.py   # 斗鱼适配
+  resolve_huya.py    # 虎牙适配
+  resolve_cache.py   # 分层缓存
   compare_streams.py # 对比逻辑（serve / CLI --compare 共用）
   muxia_api.py       # muxia 解析封装（对照用）
-  player.html        # 播放页
-  static/            # 样式与脚本
+  player.html        # Legacy 调试页（/legacy）
+  streamget-douyu.md # 斗鱼转换说明
 ```
 
 ## 安装
@@ -35,7 +37,7 @@ streamget install-node
 .\.venv\Scripts\python serve.py
 ```
 
-浏览器打开 http://127.0.0.1:8765/
+浏览器打开 http://127.0.0.1:8765/（Web 前端）或 http://127.0.0.1:8765/legacy（调试页）
 
 - **播放**：点「播放」→ 仅解析默认档（浏览器 localStorage 记住上次选的清晰度）
 - **切档**：换清晰度时再请求该档；已解析过的档 45s 内走服务端缓存
