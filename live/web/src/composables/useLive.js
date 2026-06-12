@@ -50,7 +50,7 @@ export function useRoom(siteRef) {
     lineIndex.value = findLineIndex(stream?.lines || [], prefs.lineName);
   }
 
-  async function loadRoom(roomInput, { autoPlay = false, playFn } = {}) {
+  async function loadRoom(roomInput, { autoPlay = false, playFn, force = false } = {}) {
     if (loading.value) return;
     loading.value = true;
     setStatus("正在解析…");
@@ -67,6 +67,7 @@ export function useRoom(siteRef) {
         room: roomId,
         mode: "lazy",
         quality: prefs.qualityName || undefined,
+        force,
       });
 
       if (!data.is_live && !data.status) {
@@ -93,26 +94,43 @@ export function useRoom(siteRef) {
     }
   }
 
-  async function ensureQualityLoaded(qualityName) {
+  async function ensureQualityLoaded(qualityName, { force = false } = {}) {
     const existing = streamByName(payload.value, qualityName);
-    if (streamHasUrl(existing)) return payload.value;
+    if (!force && streamHasUrl(existing)) return payload.value;
     setStatus(`加载档位 ${qualityName}…`);
     const incoming = await fetchRoom({
       site: siteRef.value,
       room: payload.value?.room_id || "",
       mode: "lazy",
       quality: qualityName,
+      force,
     });
     payload.value = mergePayload(payload.value, incoming);
     fillFromPayload(payload.value, loadPlayPrefs(siteRef.value));
     return payload.value;
   }
 
-  async function resolvePlayUrl() {
+  async function refetchRoom({ force = true } = {}) {
+    const prefs = loadPlayPrefs(siteRef.value);
+    const names = qualityNames(payload.value);
+    const qualityName = names[qualityIndex.value] || prefs.qualityName || undefined;
+    const data = await fetchRoom({
+      site: siteRef.value,
+      room: payload.value?.room_id || "",
+      mode: "lazy",
+      quality: qualityName,
+      force,
+    });
+    payload.value = data;
+    fillFromPayload(data, prefs);
+    return data;
+  }
+
+  async function resolvePlayUrl({ force = false } = {}) {
     const names = qualityNames(payload.value);
     const qualityName = names[qualityIndex.value];
     if (!qualityName) throw new Error("未选择清晰度");
-    const data = await ensureQualityLoaded(qualityName);
+    const data = await ensureQualityLoaded(qualityName, { force });
     const url = currentPlayUrl(data, qualityIndex.value, lineIndex.value);
     if (!url) throw new Error(`档位 ${qualityName} 暂无播放地址`);
     return { url, data, qualityName };
@@ -178,6 +196,7 @@ export function useRoom(siteRef) {
     lineIndex,
     setStatus,
     loadRoom,
+    refetchRoom,
     resolvePlayUrl,
     qualityOptions,
     lineOptions,

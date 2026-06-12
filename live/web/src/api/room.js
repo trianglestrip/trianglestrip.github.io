@@ -1,6 +1,6 @@
 import { apiBase } from "../config/app.js";
 
-export async function fetchRoom({ site, room, mode = "lazy", quality } = {}) {
+export async function fetchRoom({ site, room, mode = "lazy", quality, force = false } = {}) {
   const params = new URLSearchParams({
     site,
     room,
@@ -8,6 +8,7 @@ export async function fetchRoom({ site, room, mode = "lazy", quality } = {}) {
     mode,
   });
   if (quality) params.set("quality", quality);
+  if (force) params.set("force", "1");
 
   const res = await fetch(`${apiBase()}/api/room?${params.toString()}`, { cache: "no-store" });
   const data = await res.json();

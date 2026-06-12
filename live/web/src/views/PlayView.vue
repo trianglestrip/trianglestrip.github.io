@@ -53,18 +53,6 @@
               @toggle-mute="toggleMute"
             />
             <div v-if="notice && !streamActive" class="play-overlay">{{ notice }}</div>
-            <button
-              v-if="showPlayMask"
-              type="button"
-              class="play-unlock-mask"
-              title="点击开启声音"
-              @click.stop="onPlayMaskClick"
-            >
-              <span class="play-unlock-mask__btn" aria-hidden="true">
-                <Icon name="volume-up" class="play-unlock-mask__icon" />
-              </span>
-              <span class="play-unlock-mask__hint">点击开启声音</span>
-            </button>
           </div>
         </div>
       </section>
@@ -126,6 +114,8 @@ const sideReady = ref(false);
 const danmakuReady = ref(false);
 let chromeRaf = 0;
 let playRaf = 0;
+let unmuteMoveBound = false;
+let playRetrying = false;
 
 const platform = computed(() => getPlatform(props.site));
 const displayTitle = computed(
@@ -141,6 +131,7 @@ const {
   lineIndex,
   setStatus,
   loadRoom,
+  refetchRoom,
   resolvePlayUrl,
   qualityOptions,
   lineOptions,
@@ -179,12 +170,32 @@ const notice = computed(() =>
   loading.value ? "加载中..." : statusKind.value === "err" ? statusText.value : "",
 );
 
-const showPlayMask = computed(() => streamActive.value && muted.value);
+async function retryPlaybackAfterError() {
+  if (playRetrying || loading.value) return;
+  playRetrying = true;
+  setStatus("播放地址失效，正在重新解析…", "info");
+  try {
+    playUrl.value = "";
+    destroy();
+    await refetchRoom({ force: true });
+    await startPlayback();
+  } catch (err) {
+    setStatus(`播放失败: ${err.message}`, "err");
+  } finally {
+    playRetrying = false;
+  }
+}
 
 function buildPlayCallbacks(url, { onReadyExtra } = {}) {
   return {
     site: siteRef.value,
-    onError: () => setStatus(`${buildMetaText(url)}\n播放出错`, "err"),
+    onError: () => {
+      if (playRetrying) {
+        setStatus(`${buildMetaText(url)}\n播放出错`, "err");
+        return;
+      }
+      retryPlaybackAfterError();
+    },
     onReady: () => {
       const suffix = muted.value ? "（静音）" : "";
       setStatus(`${buildMetaText(url)}\n播放中${suffix}`, "ok");
@@ -194,16 +205,29 @@ function buildPlayCallbacks(url, { onReadyExtra } = {}) {
   };
 }
 
-function onPlayMaskClick() {
-  unmutePlayback();
-  revealControls();
+function bindEntryUnmuteMove() {
+  if (unmuteMoveBound) return;
+  document.addEventListener("mousemove", onDocumentMousemove);
+  unmuteMoveBound = true;
+}
+
+function unbindEntryUnmuteMove() {
+  if (!unmuteMoveBound) return;
+  document.removeEventListener("mousemove", onDocumentMousemove);
+  unmuteMoveBound = false;
+}
+
+/** 仅初次进房后第一次移动鼠标：开声并永久移除监听 */
+function onDocumentMousemove() {
+  unbindEntryUnmuteMove();
+  if (muted.value) unmutePlayback();
 }
 
 function onVideoShellClick(event) {
   if (!streamActive.value) return;
   const target = event.target;
   if (!(target instanceof Element)) return;
-  if (target.closest(".player-controls, .play-unlock-mask, .play-overlay")) return;
+  if (target.closest(".player-controls, .play-overlay")) return;
   revealControls();
 }
 
@@ -245,6 +269,7 @@ function schedulePlay(room) {
 function syncRouteState(site, id) {
   siteRef.value = site;
   roomInput.value = id;
+  unbindEntryUnmuteMove();
   destroy();
   disconnectDm();
   payload.value = null;
@@ -264,8 +289,8 @@ async function ensureVideoEl() {
   return el;
 }
 
-async function prefetchPlayUrl() {
-  const { url } = await resolvePlayUrl();
+async function prefetchPlayUrl({ force = false } = {}) {
+  const { url } = await resolvePlayUrl({ force });
   playUrl.value = url;
   return url;
 }
@@ -325,15 +350,17 @@ async function onRefresh() {
   sideReady.value = false;
   playUrl.value = "";
   try {
-    await loadRoom(roomInput.value);
-    await startPlayback();
+    await loadRoom(roomInput.value, { force: true });
+    await startPlayback({ freshUrl: true });
   } catch (err) {
     setStatus(`刷新失败: ${err.message}`, "err");
   }
 }
 
-async function startPlayback({ startMuted = true } = {}) {
-  const url = playUrl.value || (await prefetchPlayUrl());
+async function startPlayback({ startMuted = true, freshUrl = false } = {}) {
+  const url = freshUrl
+    ? await prefetchPlayUrl({ force: true })
+    : playUrl.value || (await prefetchPlayUrl());
   setStatus(`${buildMetaText(url)}\n正在缓冲…`);
   const videoEl = await ensureVideoEl();
   const firstReady = !danmakuReady.value;
@@ -357,8 +384,9 @@ async function playRoom(room) {
   payload.value = null;
   playUrl.value = "";
   try {
-    await loadRoom(room);
-    await startPlayback();
+    await loadRoom(room, { force: true });
+    await startPlayback({ freshUrl: true });
+    bindEntryUnmuteMove();
     lastPlayedRoom.value = room;
   } catch {
     lastPlayedRoom.value = "";
@@ -393,7 +421,7 @@ async function onQualityChange(index) {
   disconnectDm();
   danmakuReady.value = false;
   try {
-    await startPlayback();
+    await startPlayback({ freshUrl: true });
   } catch (err) {
     setStatus(`切换失败: ${err.message}`, "err");
   }
@@ -404,7 +432,7 @@ async function onLineChange(index) {
   setLine(index);
   destroy();
   try {
-    await startPlayback();
+    await startPlayback({ freshUrl: true });
   } catch (err) {
     setStatus(`切换线路失败: ${err.message}`, "err");
   }
@@ -433,6 +461,7 @@ onBeforeUnmount(() => {
   destroy();
   disconnectDm();
   clearTimeout(hideControlsTimer.value);
+  unbindEntryUnmuteMove();
   document.removeEventListener("fullscreenchange", onFullscreenChange);
   document.removeEventListener("enterpictureinpicture", onPiPChange);
   document.removeEventListener("leavepictureinpicture", onPiPChange);
@@ -534,56 +563,6 @@ onBeforeUnmount(() => {
   font-size: .95rem;
   pointer-events: none;
   z-index: 3;
-}
-
-.play-unlock-mask {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  gap: .65rem;
-  border: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, .45);
-  color: var(--amber);
-  cursor: pointer;
-  transition: background .15s;
-}
-
-.play-unlock-mask:hover {
-  background: rgba(0, 0, 0, .55);
-}
-
-.play-unlock-mask__btn {
-  display: grid;
-  place-items: center;
-  width: clamp(4.5rem, 14vw, 6.5rem);
-  height: clamp(4.5rem, 14vw, 6.5rem);
-  border-radius: 50%;
-  background: rgba(0, 0, 0, .35);
-  border: 2px solid rgba(255, 180, 80, .85);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, .45);
-  transition: transform .15s;
-}
-
-.play-unlock-mask:hover .play-unlock-mask__btn {
-  transform: scale(1.06);
-}
-
-.play-unlock-mask__icon {
-  width: 42%;
-  height: 42%;
-}
-
-.play-unlock-mask__hint {
-  font-size: .85rem;
-  color: var(--text);
-  text-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 }
 
 .play-layout--webscreen .play-main {

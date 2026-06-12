@@ -46,8 +46,7 @@ for (let i = 0; i < 16; i += 1) {
   if (i === 15) console.log("OK: 8s 稳定播放", s);
 }
 
-await page.waitForSelector(".play-unlock-mask", { timeout: 10000 });
-await page.click(".play-unlock-mask");
+await page.mouse.move(400, 300);
 await page.waitForFunction(
   () => {
     const v = document.querySelector("video");

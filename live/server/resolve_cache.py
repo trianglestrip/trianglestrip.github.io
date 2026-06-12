@@ -7,9 +7,9 @@ import time
 from collections import OrderedDict
 from threading import Lock
 
-# 播放 URL 带签名，不宜长缓存
-PAYLOAD_TTL = 45.0
-TIER_TTL = 45.0
+# 播放 URL 带 wsAuth/token，斗鱼 CDN 过期很快
+PAYLOAD_TTL = 20.0
+TIER_TTL = 20.0
 # 房间 meta（档位列表、base 响应）可稍长，减少重复 betard + getEncryption
 META_TTL = 180.0
 
