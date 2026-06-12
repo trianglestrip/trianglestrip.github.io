@@ -1188,6 +1188,43 @@ JS = """
   });
 })();
 (function () {
+  const TICKER_ANIM_MS = 500;
+  document.querySelectorAll('.hot-snapshot__row').forEach(function (row) {
+    const slides = row.querySelectorAll('.hot-snapshot__slide');
+    const hotEl = row.querySelector('.hot-snapshot__hot');
+    if (slides.length <= 1) return;
+    let index = 0;
+    let animating = false;
+    const interval = parseInt(row.getAttribute('data-ticker-interval') || '60000', 10);
+    const delay = parseInt(row.getAttribute('data-ticker-delay') || '0', 10);
+    function updateHot(slide) {
+      if (!hotEl) return;
+      const hot = slide.getAttribute('data-hot') || '';
+      hotEl.textContent = hot;
+      hotEl.style.visibility = hot ? 'visible' : 'hidden';
+    }
+    function tick() {
+      if (animating) return;
+      animating = true;
+      const current = slides[index];
+      const nextIndex = (index + 1) % slides.length;
+      const next = slides[nextIndex];
+      current.classList.remove('is-active');
+      current.classList.add('is-exit');
+      next.classList.add('is-active');
+      updateHot(next);
+      setTimeout(function () {
+        current.classList.remove('is-exit');
+        index = nextIndex;
+        animating = false;
+      }, TICKER_ANIM_MS);
+    }
+    setTimeout(function () {
+      setInterval(tick, interval);
+    }, delay);
+  });
+})();
+(function () {
   const CAROUSEL_INTERVAL = 60000;
   document.querySelectorAll('.hot-section[data-scroll="1"]').forEach(function (section) {
     const track = section.querySelector('.hot-section__track');
@@ -1433,6 +1470,12 @@ def build() -> Path:
     nav_html = render_nav(cfg.get("categories", []), platform_order, platforms, card_icons)
     category_ids = [cat["id"] for cat in cfg.get("categories", []) if cat.get("id")]
     platform_data = load_platform_data(platform_order)
+    snapshot_html = render_snapshot(
+        cfg.get("categories", []),
+        platform_order,
+        platforms,
+        platform_data,
+    )
     board_html = render_category_board(
         cfg.get("categories", []),
         platform_order,
@@ -1464,6 +1507,7 @@ def build() -> Path:
     <header class="hot-header">
       <nav class="hot-nav" aria-label="热榜分类">{nav_html}</nav>
     </header>
+    {snapshot_html}
     {dock_html}
     {board_html}
     <footer class="hot-footer">

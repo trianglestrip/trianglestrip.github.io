@@ -1,0 +1,68 @@
+{
+  "source": "earthquake",
+  "title": "地震速报",
+  "updated_at": "2026-06-12T13:46:12+08:00",
+  "fetch_ok": true,
+  "items": [
+    {
+      "rank": 1,
+      "title": "新疆巴音郭楞州若羌县 发生 4.1 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260611142926/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-11 14:29:26\n参考位置：新疆巴音郭楞州若羌县\n震级 (M)：4.1\n纬度 (°)：38.799999\n经度 (°)：88.639999\n深度 (千米)：19.0"
+    },
+    {
+      "rank": 2,
+      "title": "内蒙古阿拉善盟阿拉善右旗 发生 3.7 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260611142444/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-11 14:24:44\n参考位置：内蒙古阿拉善盟阿拉善右旗\n震级 (M)：3.7\n纬度 (°)：39.259998\n经度 (°)：102.089996\n深度 (千米)：10.0"
+    },
+    {
+      "rank": 3,
+      "title": "新疆吐鲁番市托克逊县 发生 3.0 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260611063226/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-11 06:32:26\n参考位置：新疆吐鲁番市托克逊县\n震级 (M)：3.0\n纬度 (°)：43.189999\n经度 (°)：87.550003\n深度 (千米)：25.0"
+    },
+    {
+      "rank": 4,
+      "title": "青海玉树州囊谦县 发生 3.0 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260611051017/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-11 05:10:17\n参考位置：青海玉树州囊谦县\n震级 (M)：3.0\n纬度 (°)：32.52\n经度 (°)：95.769997\n深度 (千米)：10.0"
+    },
+    {
+      "rank": 5,
+      "title": "青海海西州直辖区 发生 3.3 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260610154023/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-10 15:40:23\n参考位置：青海海西州直辖区\n震级 (M)：3.3\n纬度 (°)：37.84\n经度 (°)：95.550003\n深度 (千米)：10.0"
+    },
+    {
+      "rank": 6,
+      "title": "新疆阿克苏地区库车市 发生 3.6 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260610060915/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-10 06:09:15\n参考位置：新疆阿克苏地区库车市\n震级 (M)：3.6\n纬度 (°)：41.25\n经度 (°)：83.25\n深度 (千米)：16.0"
+    },
+    {
+      "rank": 7,
+      "title": "新疆阿克苏地区拜城县 发生 3.8 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260610054346/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-10 05:43:46\n参考位置：新疆阿克苏地区拜城县\n震级 (M)：3.8\n纬度 (°)：42.25\n经度 (°)：81.330002\n深度 (千米)：10.0"
+    },
+    {
+      "rank": 8,
+      "title": "新疆阿克苏地区温宿县 发生 3.3 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260609190243/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-09 19:02:43\n参考位置：新疆阿克苏地区温宿县\n震级 (M)：3.3\n纬度 (°)：42.200001\n经度 (°)：80.550003\n深度 (千米)：10.0"
+    },
+    {
+      "rank": 9,
+      "title": "新疆阿克苏地区温宿县 发生 3.6 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260609101715/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-09 10:17:15\n参考位置：新疆阿克苏地区温宿县\n震级 (M)：3.6\n纬度 (°)：42.23\n经度 (°)：80.629997\n深度 (千米)：12.0"
+    },
+    {
+      "rank": 10,
+      "title": "四川甘孜州康定市 发生 3.4 级地震",
+      "url": "https://www.cenc.ac.cn/earthquake-manage-publish-web/product-list/20260608213951/summarize",
+      "hot": "发震时刻 (UTC+8)：2026-06-08 21:39:51\n参考位置：四川甘孜州康定市\n震级 (M)：3.4\n纬度 (°)：29.92\n经度 (°)：101.93\n深度 (千米)：11.0"
+    }
+  ]
+}
