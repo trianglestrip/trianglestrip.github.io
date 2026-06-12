@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-11T23:09:21+00:00",
+  "updated_at": "2026-06-12T01:38:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "刚刚，Anthropic道歉了",
-      "url": "https://www.51cto.com/article/846099.html",
-      "hot": "就在昨天，Anthropic 发布了他们的新模型 Claude Fable 5。模型很强，实力毋庸置疑，但很快便在 AI 研究社区激起骂声一片。"
+      "title": "Binwalk 路径遍历漏洞：将固件分析转化为代码执行",
+      "url": "https://www.51cto.com/article/846077.html",
+      "hot": "该漏洞被追踪为 CVE-2026-7179 。这是binwalk的WinCE ROM提取插件中的一个路径遍历漏洞(CWE-22)。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS ArkTS 打造儿童教育应用\"宝宝拼图\"：完整实战指南",
-      "url": "https://ost.51cto.com/posts/45899",
-      "hot": "写在前面在家庭教育场景中，拼图游戏是培养孩子观察力、逻辑思维和手眼协调能力的经典工具。但市面上的拼图应用普遍存在广告过多、难度固定..."
+      "title": "我的 SQL 查询突然慢了十倍，排查半天结果是这个索引没用上",
+      "url": "https://www.51cto.com/article/846086.html",
+      "hot": "上周五产品临时提了一个需求，要在导出时增加一个“最近30天活跃用户”的筛选条件我寻思这简单，加个WHERE子句的事，改完测试了一下，数据量小，没问题，结果周一上班就出事了。"
     },
     {
       "rank": 3,
-      "title": "HarmonyOS6 BindPopup 气泡提示实战：图标功能提示、表单验证气泡、长按预览卡片与新功能引导蒙层",
-      "url": "https://ost.51cto.com/posts/45896",
-      "hot": "气泡提示是App里出现频率最高的交互反馈之一。图标旁边的功能说明、输入框旁边的验证提示、长按消息弹出的预览卡片、新功能引导的步骤蒙层..."
+      "title": "Python 的导入陷阱：为什么你的模块加载有时候很慢",
+      "url": "https://www.51cto.com/article/846083.html",
+      "hot": "Python的import机制不像C的#include那样做文本替换。每次import，Python要做三件事：定位模块文件、编译字节码、执行模块顶层代码。"
     },
     {
       "rank": 4,
-      "title": "Anthropic 的 Claude Fable 5 被越狱生成堆栈漏洞利用代码",
-      "url": "https://www.51cto.com/article/846066.html",
-      "hot": "该事件还突显了保护多模型Agent管道的更广泛挑战：当一个越狱模型（Opus）可以协助另一个模型（Fable 5）规避控制时，单模型安全评估可能从根本上就不够充分。"
+      "title": "勒索软件的「上班时间」，从 16,699 条泄露帖看地下勒索的运营节律",
+      "url": "https://www.51cto.com/article/846071.html",
+      "hot": "16,699 条泄露帖揭示了勒索软件公开施压环节的一个现实：它正在按地下商业组织的节奏运转。"
     },
     {
       "rank": 5,
-      "title": "Mythos 对阵 360 智能体：全球 AI 漏洞挖掘分化成两大技术路线",
-      "url": "https://www.51cto.com/article/846045.html",
-      "hot": "一场关于AI安全的讨论在海外金融科技媒体与社交平台上悄然升温。华尔街内参（StreetInsider）率先发文，X平台上的技术博主跟进热议，国际安全社区也随之沸腾——他们讨论的核心，是两个截然不同的AI安全名字：Anthropic的Mythos，以及中国360的漏洞挖掘智能体。"
+      "title": "打造高效 mac 终端：oh-my-zsh 与插件配置",
+      "url": "https://www.51cto.com/article/846070.html",
+      "hot": "本文将在原生终端（系统默认的terminal或者iTerm2）的基础上配置oh-my-zsh，并引入五款实用插件，实现如下高效操作。"
     },
     {
       "rank": 6,
-      "title": "谷歌干掉了「等你说完才翻译」！70+语言边听边译",
-      "url": "https://www.51cto.com/article/846046.html",
-      "hot": "Google 发布 Gemini 3.5 Live Translate，把实时同传从「等你说完再翻」推进到「边听边说」，70+语言、几秒延迟、语气保留。"
+      "title": "SpringBoot 事件机制：ApplicationEvent 与监听器",
+      "url": "https://www.51cto.com/article/846032.html",
+      "hot": "Spring 事件机制，本质是标准的观察者模式（发布-订阅模式），核心目的是解耦发布者与订阅者，让两者之间没有直接依赖，仅通过“事件”进行通信。"
     },
     {
       "rank": 7,
-      "title": "指令遵循媲美Seedance 2.0！复旦腾讯联合提出Baton，多说话人场景M-WER暴降76%",
-      "url": "https://www.51cto.com/article/846047.html",
-      "hot": "复旦&腾讯Hunyuan团队提出了Baton——首个基于显式语义蓝图引导的联合视频—音频生成框架。"
+      "title": "Composable 的命名规矩和参数约定，别再瞎写了",
+      "url": "https://www.51cto.com/article/845978.html",
+      "hot": "Vue社区对Composables有一套公认的约定，虽然不是强制的，但大家都这么干，你跟着走准没错。"
     },
     {
       "rank": 8,
-      "title": "Mythos阴影里谷歌悄悄发模型，速度暴涨四倍",
-      "url": "https://www.51cto.com/article/846048.html",
-      "hot": "把生成图片的扩散模型，拿来写文字了，而且一出手就是4倍加速。"
+      "title": "深入浅出 Linux 内核（进程篇）：进程创建与退出",
+      "url": "https://www.51cto.com/article/845972.html",
+      "hot": "不管是终止整个进程的 exit_group，还是终止单个线程的 exit，最终都会走到 do_exit 函数里，把进程占的所有资源释放干净，等待父进程回收最后的进程描述符。"
     },
     {
       "rank": 9,
-      "title": "3D创作迎来ChatGPT时刻：Meshy发布全球首个3D AI Agent",
-      "url": "https://www.51cto.com/article/846049.html",
-      "hot": "他们率先在整个行业内把这个想法变成了现实——把3D创作带进Agent时代，推出了全球首个3D创作AI Agent：Meshy 3D Agent。"
+      "title": "RAG+rigrep，企业知识层检索的优秀范式",
+      "url": "https://www.51cto.com/article/846064.html",
+      "hot": "这篇文章想要分享的主题是：为什么 Agent 喜欢用 rg；为什么 rg 不能替代 RAG；以及企业知识层该怎样组合词面检索、语义检索和工具调用。"
     },
     {
       "rank": 10,
-      "title": "Anthropic CEO锐评AI现状和政策，但他只想保证自己的领先地位",
-      "url": "https://www.51cto.com/article/846050.html",
-      "hot": "Anthropic 总是试图将自己的观点传遍全世界。就像前些天他们呼吁全球停止 AI 研发，声称递归自我改进的 AI 进化过快。"
+      "title": "十万个why：Feign 超时时间明明设了三秒，为什么实际等了十秒才返回超时？",
+      "url": "https://www.51cto.com/article/846060.html",
+      "hot": "很多人不知道，在 ​​Spring Cloud 2020.0​​ 之前的版本（对应 Spring Boot 2.4 之前），Feign 底层的 HTTP 调用不是自己发出去的，而是委托给 Ribbon 的 LoadBalancerFeignClient 来执行的。"
     }
   ]
 }
