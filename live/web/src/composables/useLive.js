@@ -206,6 +206,8 @@ export function usePlayer() {
   const streamActive = ref(false);
   const autoplayBlocked = ref(false);
   const mutedAutoplay = ref(false);
+  const volume = ref(1);
+  const muted = ref(false);
   let player = null;
   let videoEl = null;
 
@@ -225,6 +227,16 @@ export function usePlayer() {
     playing.value = !videoEl.paused && !videoEl.ended;
   }
 
+  function syncVolume() {
+    if (!videoEl) {
+      volume.value = 1;
+      muted.value = false;
+      return;
+    }
+    volume.value = videoEl.volume;
+    muted.value = videoEl.muted;
+  }
+
   function bindVideoEvents(el) {
     if (videoEl === el) return;
     unbindVideoEvents();
@@ -232,6 +244,8 @@ export function usePlayer() {
     el.addEventListener("pause", syncPlaying);
     el.addEventListener("playing", syncPlaying);
     el.addEventListener("ended", syncPlaying);
+    el.addEventListener("volumechange", syncVolume);
+    syncVolume();
   }
 
   function unbindVideoEvents() {
@@ -239,6 +253,7 @@ export function usePlayer() {
     videoEl.removeEventListener("pause", syncPlaying);
     videoEl.removeEventListener("playing", syncPlaying);
     videoEl.removeEventListener("ended", syncPlaying);
+    videoEl.removeEventListener("volumechange", syncVolume);
     videoEl = null;
   }
 
@@ -247,6 +262,8 @@ export function usePlayer() {
     streamActive.value = false;
     autoplayBlocked.value = false;
     mutedAutoplay.value = false;
+    volume.value = 1;
+    muted.value = false;
     unbindVideoEvents();
     if (player) {
       try {
@@ -261,14 +278,31 @@ export function usePlayer() {
     }
   }
 
-  async function resumePlayback() {
-    if (!videoEl) return false;
+  function safePlayerPlay() {
+    if (!player) return;
     try {
-      if (player) player.play();
+      const pending = player.play();
+      pending?.catch?.(() => {});
+    } catch {
+      /* ignore */
+    }
+  }
+
+  async function resumePlayback({ preferSound = false } = {}) {
+    if (!videoEl) return false;
+    if (preferSound) videoEl.muted = false;
+
+    const attemptPlay = async () => {
+      safePlayerPlay();
       await videoEl.play();
-      autoplayBlocked.value = false;
+    };
+
+    try {
+      await attemptPlay();
       mutedAutoplay.value = videoEl.muted;
+      autoplayBlocked.value = false;
       syncPlaying();
+      syncVolume();
       return true;
     } catch (err) {
       if (err?.name !== "NotAllowedError") {
@@ -278,11 +312,11 @@ export function usePlayer() {
       if (!videoEl.muted) {
         videoEl.muted = true;
         try {
-          if (player) player.play();
-          await videoEl.play();
-          autoplayBlocked.value = true;
+          await attemptPlay();
           mutedAutoplay.value = true;
+          autoplayBlocked.value = false;
           syncPlaying();
+          syncVolume();
           return true;
         } catch {
           /* still blocked */
@@ -297,11 +331,47 @@ export function usePlayer() {
 
   async function unlockAutoplay() {
     if (!videoEl) return;
-    videoEl.muted = false;
     mutedAutoplay.value = false;
-    autoplayBlocked.value = false;
-    const ok = await resumePlayback();
-    if (!ok) autoplayBlocked.value = true;
+    const ok = await resumePlayback({ preferSound: true });
+    if (!ok) {
+      autoplayBlocked.value = true;
+      mutedAutoplay.value = videoEl.muted;
+    } else {
+      autoplayBlocked.value = false;
+    }
+    syncVolume();
+  }
+
+  function setVolume(value) {
+    if (!videoEl) return;
+    const next = Math.min(1, Math.max(0, Number(value)));
+    videoEl.volume = next;
+    if (next > 0) {
+      videoEl.muted = false;
+      mutedAutoplay.value = false;
+      autoplayBlocked.value = false;
+    } else {
+      videoEl.muted = true;
+    }
+    syncVolume();
+  }
+
+  function toggleMute() {
+    if (!videoEl) return;
+    if (autoplayBlocked.value || mutedAutoplay.value) {
+      unlockAutoplay();
+      return;
+    }
+    videoEl.muted = !videoEl.muted;
+    syncVolume();
+  }
+
+  /** 进房后立即静音 play()，尽量占用导航点击的用户手势窗口 */
+  function primeVideoForAutoplay(el) {
+    if (!el) return;
+    el.muted = true;
+    el.playsInline = true;
+    el.play().catch(() => {});
   }
 
   function pausePlayback() {
@@ -311,13 +381,13 @@ export function usePlayer() {
 
   function togglePlay() {
     if (!streamActive.value) return;
-    if (autoplayBlocked.value || (videoEl?.muted && mutedAutoplay.value)) {
+    if (playing.value) {
+      pausePlayback();
+    } else if (mutedAutoplay.value) {
       unlockAutoplay();
-      queueMicrotask(syncPlaying);
-      return;
+    } else {
+      resumePlayback();
     }
-    if (playing.value) pausePlayback();
-    else resumePlayback();
     queueMicrotask(syncPlaying);
   }
 
@@ -363,8 +433,10 @@ export function usePlayer() {
     );
 
     player.attachMediaElement(el);
-    el.muted = false;
+    el.muted = true;
     el.playsInline = true;
+    mutedAutoplay.value = true;
+    muted.value = true;
     player.on(flv.Events.ERROR, () => {
       if (!streamActive.value) return;
       onError?.();
@@ -378,7 +450,6 @@ export function usePlayer() {
     };
     el.addEventListener("playing", onFirstPlaying, { once: true });
     player.load();
-    resumePlayback();
   }
 
   return {
@@ -386,10 +457,17 @@ export function usePlayer() {
     streamActive,
     autoplayBlocked,
     mutedAutoplay,
+    volume,
+    muted,
     destroy,
     playFlv,
     togglePlay,
+    pausePlayback,
+    resumePlayback,
     switchUrl,
     unlockAutoplay,
+    primeVideoForAutoplay,
+    setVolume,
+    toggleMute,
   };
 }

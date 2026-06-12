@@ -1,6 +1,6 @@
 # Live Web 功能规划
 
-参考 [Lemon Live](https://lemonlive.deno.dev/) 的信息架构与布局，对接本仓库 `live/player` 解析 API，实现 Vue 多页面前端。
+参考 [Lemon Live](https://lemonlive.deno.dev/) 的信息架构与布局，对接本仓库 `live/server` 解析 API，实现 Vue 多页面前端。
 
 ## 1. 页面信息架构（IA）
 
@@ -21,7 +21,7 @@
 | `/` | 首页 | 各平台入口卡片、简介、默认房间快捷链接 |
 | `/platform/:site` | 平台详情 | 单平台说明、支持档位/线路、跳转播放 |
 | `/watch/:site/:room` | 播放页 | Lemon 主布局：播放器 + 房间信息 + 控制面板 |
-| `/legacy`（后端） | 旧调试页 | `player/player.html`，保留不动 |
+| `/legacy`（后端） | 旧调试页 | `server/legacy.html` |
 
 平台 Tab：斗鱼、虎牙（可用）；哔哩、抖音（占位 disabled）。
 
@@ -44,7 +44,7 @@
 
 平台详情页额外展示：平台中文名、是否接入、默认示例房间、说明文案。
 
-## 3. 与 live/player API 接口约定
+## 3. 与 live/server API 接口约定
 
 **Base URL**：与前端同源（`serve.py` 托管 `dist/` 时为空字符串；Vite dev 通过 proxy 转发）。
 
@@ -80,7 +80,7 @@
 
 ```
 ┌─────────────────┐     HTTP      ┌──────────────────┐
-│  live/web       │ ────────────► │  live/player     │
+│  live/web       │ ────────────► │  live/server     │
 │  Vue 前端       │  /api/room    │  serve.py + 解析  │
 └─────────────────┘               └──────────────────┘
         │                                   │
@@ -92,7 +92,7 @@
 | 模块 | 职责 | 依赖 |
 |------|------|------|
 | **前端** `live/web` | 路由、UI、flv.js 播放、localStorage 偏好 | API 契约稳定即可 |
-| **后端** `live/player` | 解析、缓存、CORS、静态托管 dist | 无前端框架依赖 |
+| **后端** `live/server` | 解析、缓存、CORS、静态托管 dist | 无前端框架依赖 |
 | **部署** | `npm run build` → `dist/`；`serve.py` 优先 `web/dist` | 先 build 再启动 serve |
 
 前端不嵌入 Python；后端不生成 Vue 产物。联调：dev 时 Vite `:5173` + proxy `/api` → `:8765`。

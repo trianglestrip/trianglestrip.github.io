@@ -350,7 +350,7 @@ Step 3b 对 rate=0,4,3,2 各请求一次，每次得到不同 rtmp_live：
 ## 9. 快速调用
 
 ```powershell
-cd live/player
+cd live/server
 
 # 转换并打印各档 FLV 文件名
 .\.venv\Scripts\python resolve_douyu.py 5720533

@@ -37,6 +37,27 @@
       <div class="controls-spacer"></div>
 
       <div class="controls-right">
+        <div class="ctrl-volume">
+          <button
+            type="button"
+            class="ctrl-icon"
+            :title="muted || volume === 0 ? '开启声音' : '静音'"
+            @click="$emit('toggle-mute')"
+          >
+            <Icon :name="muted || volume === 0 ? 'volume-off' : 'volume-up'" />
+          </button>
+          <input
+            class="ctrl-volume__slider"
+            type="range"
+            min="0"
+            max="1"
+            step="0.05"
+            :value="volume"
+            aria-label="音量"
+            @input="onVolumeInput"
+          />
+        </div>
+
         <div ref="qualityRef" class="ctrl-dropdown">
           <button
             type="button"
@@ -120,6 +141,8 @@ const props = defineProps({
   webscreen: { type: Boolean, default: false },
   fullscreen: { type: Boolean, default: false },
   pictureInPicture: { type: Boolean, default: false },
+  volume: { type: Number, default: 1 },
+  muted: { type: Boolean, default: false },
   qualities: { type: Array, default: () => [] },
   lines: { type: Array, default: () => [] },
   qualityIndex: { type: Number, default: 0 },
@@ -137,6 +160,8 @@ const emit = defineEmits([
   "refresh",
   "toggle-danmaku",
   "toggle-pip",
+  "volume-change",
+  "toggle-mute",
 ]);
 
 const qualityOpen = ref(false);
@@ -174,6 +199,10 @@ function pickQuality(index) {
 function pickLine(index) {
   emit("line-change", index);
   closeMenus();
+}
+
+function onVolumeInput(event) {
+  emit("volume-change", Number(event.target.value));
 }
 
 function onDocumentClick(event) {
@@ -217,6 +246,27 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   display: flex;
   align-items: center;
   gap: .15rem;
+}
+
+.ctrl-volume {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  margin-right: .15rem;
+}
+
+.ctrl-volume__slider {
+  width: 4.5rem;
+  height: .2rem;
+  margin: 0;
+  accent-color: var(--amber);
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .ctrl-volume__slider {
+    width: 3rem;
+  }
 }
 
 .ctrl-icon {

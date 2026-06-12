@@ -5,7 +5,7 @@
 | 子目录 | 说明 |
 |--------|------|
 | [web/](web/) | Vue 3 聚合直播前端（Lemon Live 风格，多路由） |
-| [player/](player/) | 解析 API 后端（meta/tier 分层 + streamget） |
+| [server/](server/) | 解析 API 后端（meta/tier 分层 + streamget） |
 
 ## 快速启动
 
@@ -16,7 +16,7 @@ npm install
 npm run build
 
 # 2. 启动 API + 托管 dist
-cd ../player
+cd ../server
 .\.venv\Scripts\python serve.py
 ```
 
@@ -26,7 +26,7 @@ cd ../player
 |-----|------|
 | `/` | Vue 前端（优先 `web/dist/`） |
 | `/watch/douyu/5720533` | 播放页（可分享） |
-| `/legacy` | 旧版 `player.html` 调试页 |
+| `/legacy` | 旧版 `legacy.html` 调试页 |
 | `/api/room?site=douyu&room=<id>` | 解析 API |
 
 ## 开发模式
@@ -35,4 +35,4 @@ cd ../player
 
 功能规划：[web/FEATURES.md](web/FEATURES.md)
 
-本地虚拟环境在 `player/.venv/`（已 gitignore，勿提交）。
+本地虚拟环境在 `server/.venv/`（已 gitignore，勿提交）。

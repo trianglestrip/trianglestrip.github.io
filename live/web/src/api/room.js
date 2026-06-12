@@ -59,12 +59,19 @@ export function findQualityIndex(names, preferred) {
   if (preferred) {
     const exact = names.findIndex((name) => name === preferred);
     if (exact >= 0) return exact;
-    const fuzzy = names.findIndex((name) => name.includes(preferred) || preferred.includes(name));
-    if (fuzzy >= 0) return fuzzy;
   }
-  for (const tag of ["高清", "超清", "蓝光"]) {
+  for (const tag of ["原画", "蓝光", "超清", "高清"]) {
     const index = names.findIndex((name) => name.includes(tag));
     if (index >= 0) return index;
+  }
+  return 0;
+}
+
+export function findLineIndex(lines, preferred) {
+  if (!lines?.length) return 0;
+  if (preferred) {
+    const exact = lines.findIndex((line) => line.name === preferred);
+    if (exact >= 0) return exact;
   }
   return 0;
 }

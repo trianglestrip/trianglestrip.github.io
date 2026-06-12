@@ -24,6 +24,7 @@ from resolve_cache import set as cache_set
 from resolve_cache import stats as cache_stats
 from resolve_service import resolve_room_sync
 from resolve_timing import build_time_report
+from text_sanitize import sanitize_unicode
 
 ROOT = Path(__file__).resolve().parent
 WEB_ROOT = ROOT.parent / "web"
@@ -51,11 +52,11 @@ BUILD_HINT_HTML = """<!DOCTYPE html>
 npm install
 npm run build
 
-cd ../player
+cd ../server
 python serve.py</pre>
   <p><strong>开发热更新（:5173，推荐改 UI）</strong></p>
   <pre># 终端 1
-cd live/player &amp;&amp; python serve.py
+cd live/server &amp;&amp; python serve.py
 
 # 终端 2
 cd live/web &amp;&amp; npm run dev</pre>
@@ -188,8 +189,11 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_error(404)
             return
         if parsed.path == "/legacy":
-            self.path = "/player.html"
+            self.path = "/legacy.html"
             return super().do_GET()
+        if parsed.path.startswith("/legacy-static/"):
+            self._serve_legacy_static(parsed.path.removeprefix("/legacy-static"))
+            return
         return self._serve_web(parsed.path)
 
     def do_POST(self) -> None:
@@ -201,6 +205,25 @@ class Handler(SimpleHTTPRequestHandler):
             self._api_compare_post(parsed)
             return
         self.send_error(404)
+
+    def _serve_legacy_static(self, rel: str) -> None:
+        root = (WEB_ROOT / "legacy-static").resolve()
+        target = (root / rel.lstrip("/")).resolve()
+        if not str(target).startswith(str(root)):
+            self.send_error(403)
+            return
+        if target.is_dir():
+            target = target / "index.html"
+        if not target.is_file():
+            self.send_error(404)
+            return
+        content = target.read_bytes()
+        self.send_response(200)
+        self.send_header("Content-Type", self.guess_type(str(target)))
+        self.send_header("Content-Length", str(len(content)))
+        self._cors()
+        self.end_headers()
+        self.wfile.write(content)
 
     def _serve_web(self, path: str) -> None:
         if self.web_root is None:
@@ -424,7 +447,7 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Origin", "*")
 
     def _send_json(self, payload: dict, *, status: int = 200) -> None:
-        data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+        data = json.dumps(sanitize_unicode(payload), ensure_ascii=False).encode("utf-8")
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(data)))

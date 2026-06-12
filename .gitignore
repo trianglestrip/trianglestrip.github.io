@@ -4,3 +4,7 @@
 .hugo_build.lock
 /themes/
 /.hugo-prepared/
+
+# live 开发临时文件
+debug-*.log
+_lemon_*

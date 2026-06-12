@@ -10,7 +10,7 @@
         </header>
 
         <div ref="frameRef" class="play-frame" :class="{ 'play-frame--webscreen': webscreen }">
-          <div class="video-shell">
+          <div class="video-shell" @click="onVideoShellClick">
             <PlayerPanel
               ref="playerPanelRef"
               :stream-active="streamActive"
@@ -38,6 +38,8 @@
               :webscreen="webscreen"
               :fullscreen="isFullscreen"
               :picture-in-picture="pictureInPicture"
+              :volume="volume"
+              :muted="muted"
               @toggle-play="togglePlay"
               @webscreen="toggleWebscreen"
               @fullscreen="toggleFullscreen"
@@ -47,16 +49,21 @@
               @refresh="onRefresh"
               @toggle-danmaku="onToggleDanmaku"
               @toggle-pip="onTogglePiP"
+              @volume-change="setVolume"
+              @toggle-mute="toggleMute"
             />
             <div v-if="notice && !streamActive" class="play-overlay">{{ notice }}</div>
             <button
-              v-if="streamActive && autoplayBlocked"
+              v-if="showPlayMask"
               type="button"
-              class="play-overlay play-overlay--unlock"
-              @click="unlockAutoplay"
+              class="play-unlock-mask"
+              :title="playMaskTitle"
+              @click.stop="onPlayMaskClick"
             >
-              {{ playing ? "点击开启声音" : "点击开始播放" }}
-              <span class="play-overlay__hint">浏览器限制需手动确认</span>
+              <span class="play-unlock-mask__btn" aria-hidden="true">
+                <Icon name="play" class="play-unlock-mask__icon" />
+              </span>
+              <span v-if="playMaskHint" class="play-unlock-mask__hint">{{ playMaskHint }}</span>
             </button>
           </div>
         </div>
@@ -144,7 +151,21 @@ const {
 const qualityOpts = computed(() => qualityOptions());
 const lineOpts = computed(() => lineOptions());
 
-const { playing, streamActive, autoplayBlocked, destroy, playFlv, togglePlay, unlockAutoplay } = usePlayer();
+const {
+  playing,
+  streamActive,
+  mutedAutoplay,
+  muted,
+  volume,
+  destroy,
+  playFlv,
+  togglePlay,
+  pausePlayback,
+  resumePlayback,
+  unlockAutoplay,
+  setVolume,
+  toggleMute,
+} = usePlayer();
 const {
   messages: danmakuMessages,
   status: danmakuStatus,
@@ -158,6 +179,42 @@ const { follows, isFollowed, toggleFollow, unfollow } = useFollow();
 const notice = computed(() =>
   loading.value ? "加载中..." : statusKind.value === "err" ? statusText.value : "",
 );
+
+const showPlayMask = computed(() => {
+  if (!streamActive.value) return false;
+  return !playing.value || mutedAutoplay.value || muted.value;
+});
+
+const playMaskTitle = computed(() => {
+  if (playing.value && (mutedAutoplay.value || muted.value)) return "点击开启声音";
+  return "点击播放";
+});
+
+const playMaskHint = computed(() => {
+  if (mutedAutoplay.value || muted.value) {
+    return playing.value ? "浏览器限制，需点击开启声音" : "点击后开始播放并开启声音";
+  }
+  return "";
+});
+
+async function onPlayMaskClick() {
+  if (mutedAutoplay.value || muted.value) {
+    await unlockAutoplay();
+  } else if (!playing.value) {
+    await resumePlayback();
+  }
+  revealControls();
+}
+
+function onVideoShellClick(event) {
+  if (!streamActive.value || !playing.value) return;
+  const target = event.target;
+  if (!(target instanceof Element)) return;
+  if (target.closest(".player-controls, .play-unlock-mask, .play-overlay")) return;
+  pausePlayback();
+  showControls.value = true;
+  revealControls();
+}
 
 function scheduleDeferredChrome() {
   headerReady.value = false;
@@ -474,18 +531,55 @@ onBeforeUnmount(() => {
   z-index: 3;
 }
 
-.play-overlay--unlock {
-  pointer-events: auto;
-  cursor: pointer;
+.play-unlock-mask {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: .65rem;
   border: none;
-  flex-direction: column;
-  gap: .35rem;
-  font: inherit;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .45);
+  color: var(--amber);
+  cursor: pointer;
+  transition: background .15s;
 }
 
-.play-overlay__hint {
-  font-size: .75rem;
-  color: var(--muted);
+.play-unlock-mask:hover {
+  background: rgba(0, 0, 0, .55);
+}
+
+.play-unlock-mask__btn {
+  display: grid;
+  place-items: center;
+  width: clamp(4.5rem, 14vw, 6.5rem);
+  height: clamp(4.5rem, 14vw, 6.5rem);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .35);
+  border: 2px solid rgba(255, 180, 80, .85);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .45);
+  transition: transform .15s;
+}
+
+.play-unlock-mask:hover .play-unlock-mask__btn {
+  transform: scale(1.06);
+}
+
+.play-unlock-mask__icon {
+  width: 42%;
+  height: 42%;
+  margin-left: .15em;
+}
+
+.play-unlock-mask__hint {
+  font-size: .85rem;
+  color: var(--text);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 }
 
 .play-layout--webscreen .play-main {

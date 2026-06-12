@@ -38,7 +38,7 @@ web/
 
 ```powershell
 # 终端 1：API
-cd live/player
+cd live/server
 .\.venv\Scripts\python serve.py
 
 # 终端 2：前端
@@ -56,14 +56,14 @@ cd live/web
 npm install
 npm run build
 
-cd ../player
+cd ../server
 .\.venv\Scripts\python serve.py
 ```
 
 浏览器打开 http://127.0.0.1:8765/
 
 - `/` — Vue 前端（**必须**先 `npm run build`，仅托管 `dist/`；无 dist 时显示构建说明页）
-- `/legacy` — 旧调试页（`player/player.html`）
+- `/legacy` — 旧调试页（`server/legacy.html`）
 - `/api/room` — 解析 API
 
 > **勿**在未 build 的情况下指望 `:8765` 加载源码 `index.html`：浏览器无法解析 `import "vue"`。改 UI 请用 `npm run dev`（`:5173`）。
@@ -74,4 +74,4 @@ cd ../player
 
 `GET /api/room?site=douyu|huya&room=<id>&mode=lazy|full&quality=<档名>`
 
-详见 [FEATURES.md](./FEATURES.md) 与 [`../player/README.md`](../player/README.md)。
+详见 [FEATURES.md](./FEATURES.md) 与 [`../server/README.md`](../server/README.md)。

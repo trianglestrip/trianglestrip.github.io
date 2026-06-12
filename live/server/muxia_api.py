@@ -9,6 +9,8 @@ from urllib.parse import urlencode
 import lzstring
 import requests
 
+from text_sanitize import sanitize_unicode
+
 MUXIA_BASE = "https://live.muxia.site/api/"
 MUXIA_HEADERS = {
     "User-Agent": (
@@ -28,7 +30,7 @@ def _decode_payload(raw: str) -> dict[str, Any]:
     payload = json.loads(text)
     if payload.get("code") != 200:
         raise RuntimeError(payload.get("msg") or "muxia API 错误")
-    return payload["data"]
+    return sanitize_unicode(payload["data"])
 
 
 def fetch_muxia(site: str, action: str, params: dict[str, Any] | None = None) -> Any:
