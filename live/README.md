@@ -6,7 +6,12 @@
 |--------|------|------|
 | [web/](web/) | Vue 3 前端 | `web/public/config.json` |
 | [server/](server/) | 解析 API | `server/config.json` |
-| [dist/](dist/) | 发布包（API exe + 前端静态 + node.exe） | `dist/server/config.json` |
+| [dist/](dist/) | 发布包；前端部署到站点 `/live/`，API 本机运行 | `dist/server/config.json` |
+
+## 线上 + 本地 API
+
+- 前端：https://trianglestrip.github.io/live/（部署 workflow 拷贝 `dist/web`）
+- API：本机 `dist\server\start.bat`，`config.json` 中 `api.baseUrl` 为 `http://127.0.0.1:8765`
 
 ## 本地打包
 

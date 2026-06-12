@@ -1,23 +1,23 @@
 # Live 发布目录
 
-运行 `live/package-dist.ps1` 可重新生成；**本目录已纳入 git**，克隆后可直接 `start-all.bat` 部署，无需再打包。
+**线上**：https://trianglestrip.github.io/live/（GitHub Pages 静态前端）  
+**API**：本机运行 `server\start.bat`（`live-api.exe` + `config.json`）
 
-| 目录 | 内容 |
-|------|------|
-| `server/` | `live-api.exe` + `config.json`（同 `live/server/config.json`）+ `start.bat` |
-| `web/` | Vite 构建产物 + `node.exe` + `server.mjs` + `config.json` + `start.bat` |
+前端 `config.json` 中 `api.baseUrl` 指向 `http://127.0.0.1:8765`，仅在本机同时开启 API 时可用。
 
-## 打包（开发机，需 Python venv 用于构建 exe）
+## 打包
 
 ```powershell
 cd live
 .\package-dist.ps1
 ```
 
-## 启动（拷贝整个 `dist/` 即可）
+## 本地
 
-- `server\start.bat` → http://127.0.0.1:8765
-- `web\start.bat` → http://127.0.0.1:8080
-- `start-all.bat` → 两个窗口
+- `server\start.bat` → API :8765
+- `web\start.bat` → http://127.0.0.1:8080/live/
+- `start-all.bat`
 
-配置：改 `server/config.json` 端口/CORS；改 `web/config.json` 的 `api.baseUrl` 指向 API 地址。
+## 注意
+
+HTTPS 页面访问本机 HTTP API 需浏览器允许（Chrome 私有网络访问）；API 已返回 `Access-Control-Allow-Private-Network`。仅本人本机使用，访客无法访问你的 127.0.0.1。

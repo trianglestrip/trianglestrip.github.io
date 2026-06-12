@@ -37,9 +37,9 @@ function Ensure-NodeExe {
   Copy-Item $nodeExe.FullName $dest -Force
 }
 
-Write-Host "==> 构建前端"
+Write-Host "==> 构建前端 (GitHub Pages /live/)"
 Push-Location $WebSrc
-npm run build
+npm run build:pages
 Pop-Location
 
 Write-Host "==> 清理 dist/server、dist/web"

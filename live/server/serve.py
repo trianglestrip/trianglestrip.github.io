@@ -342,6 +342,10 @@ class Handler(SimpleHTTPRequestHandler):
         cors = self.server_config.get("cors") or {}
         if cors.get("enabled", True):
             self.send_header("Access-Control-Allow-Origin", cors.get("allowOrigin", "*"))
+            self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+            self.send_header("Access-Control-Allow-Headers", "Content-Type")
+            # HTTPS 公网页（如 GitHub Pages）访问本机 API 时需要
+            self.send_header("Access-Control-Allow-Private-Network", "true")
 
     def _send_json(self, payload: dict, *, status: int = 200) -> None:
         data = json.dumps(sanitize_unicode(payload), ensure_ascii=False).encode("utf-8")

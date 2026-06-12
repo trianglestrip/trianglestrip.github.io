@@ -30,6 +30,11 @@ pagerSize = 10
     url = "/news/"
   [[menu.main]]
     weight = 4
+    identifier = "live"
+    name = "直播"
+    url = "/live/"
+  [[menu.main]]
+    weight = 5
     identifier = "about"
     name = "关于"
     url = "/about/"

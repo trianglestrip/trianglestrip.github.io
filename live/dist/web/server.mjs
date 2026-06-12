@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)));
 const PORT = Number(process.argv[2]) || 8080;
+const BASE = (process.env.LIVE_BASE || "/live").replace(/\/$/, "") || "";
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -16,8 +17,17 @@ const MIME = {
   ".woff2": "font/woff2",
 };
 
+function stripBase(urlPath) {
+  const p = decodeURIComponent((urlPath || "/").split("?")[0]);
+  if (BASE && (p === BASE || p.startsWith(`${BASE}/`))) {
+    const rest = p.slice(BASE.length) || "/";
+    return rest.startsWith("/") ? rest : `/${rest}`;
+  }
+  return p;
+}
+
 function resolveFile(urlPath) {
-  const rel = decodeURIComponent((urlPath || "/").split("?")[0]).replace(/^\/+/, "") || "index.html";
+  const rel = stripBase(urlPath).replace(/^\/+/, "") || "index.html";
   let filePath = path.resolve(ROOT, rel);
   const prefix = ROOT + path.sep;
   if (filePath !== ROOT && !filePath.startsWith(prefix)) return null;
@@ -50,5 +60,6 @@ http
     });
   })
   .listen(PORT, "127.0.0.1", () => {
-    console.log(`http://127.0.0.1:${PORT}/`);
+    const suffix = BASE ? `${BASE}/` : "/";
+    console.log(`http://127.0.0.1:${PORT}${suffix}`);
   });

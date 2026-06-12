@@ -12,6 +12,11 @@ function trimBase(url) {
   return String(url || "").replace(/\/$/, "");
 }
 
+function configUrl(name) {
+  const base = import.meta.env.BASE_URL || "/";
+  return `${base}${name}`;
+}
+
 export async function loadAppConfig() {
   async function fetchJson(url) {
     try {
@@ -23,8 +28,8 @@ export async function loadAppConfig() {
     }
   }
 
-  const base = (await fetchJson("/config.json")) || {};
-  const local = (await fetchJson("/config.local.json")) || {};
+  const base = (await fetchJson(configUrl("config.json"))) || {};
+  const local = (await fetchJson(configUrl("config.local.json"))) || {};
   appConfig = {
     ...DEFAULTS,
     ...base,

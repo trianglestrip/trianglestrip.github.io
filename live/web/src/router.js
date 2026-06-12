@@ -10,7 +10,7 @@ import { PLATFORMS } from "./config/platforms";
 const enabledSites = new Set(PLATFORMS.filter((p) => p.enabled).map((p) => p.id));
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: "/", redirect: "/douyu" },
     { path: "/follow", name: "follow", component: FollowView },
