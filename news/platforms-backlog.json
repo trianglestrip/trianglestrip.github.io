@@ -18,7 +18,7 @@
   "summary": {
     "live_platforms": 60,
     "live_rss_platforms": 10,
-    "live_ref": "data/config.json → order",
+    "live_ref": "hot-sources.json → display_order",
     "hotboard_supported": 47,
     "hotboard_gap": 4,
     "custom_drivers_live": 14,

@@ -11,6 +11,7 @@ from pathlib import Path
 
 NEWS_ROOT = Path(__file__).resolve().parent
 CONFIG_FILE = NEWS_ROOT / "data" / "config.json"
+SOURCES_FILE = NEWS_ROOT / "hot-sources.json"
 MANIFEST_FILE = NEWS_ROOT / "data" / "icons.json"
 SPRITE_CARD_FILE = NEWS_ROOT / "icons-sprite.png"
 SPRITE_DOCK_FILE = NEWS_ROOT / "icons-sprite-dock.png"
@@ -23,6 +24,19 @@ USER_AGENT = "Mozilla/5.0 (compatible; blog-hot-icons/1.0)"
 def load_config() -> dict:
     with CONFIG_FILE.open(encoding="utf-8") as fh:
         return json.load(fh)
+
+
+def load_platform_order(cfg: dict) -> list[str]:
+    platforms = cfg.get("platforms", {})
+    if SOURCES_FILE.exists():
+        with SOURCES_FILE.open(encoding="utf-8") as fh:
+            sources = json.load(fh)
+        order = sources.get("display_order") or []
+        known = [pid for pid in order if pid in platforms]
+        if known:
+            extras = [pid for pid in platforms if pid not in set(known)]
+            return known + extras
+    return cfg.get("order", [])
 
 
 def download_icon(domain: str) -> bytes | None:
@@ -128,7 +142,7 @@ def build_sprite() -> dict:
         raise SystemExit("请先安装 Pillow: pip install pillow") from exc
 
     cfg = load_config()
-    order = cfg.get("order", [])
+    order = load_platform_order(cfg)
     platforms = cfg.get("platforms", {})
     platform_ids = [pid for pid in order if pid in platforms]
     if not platform_ids:

@@ -13,6 +13,7 @@ from pathlib import Path
 NEWS_ROOT = Path(__file__).resolve().parent
 REPO_ROOT = NEWS_ROOT.parent
 DATA_DIR = NEWS_ROOT / "data"
+SOURCES_FILE = NEWS_ROOT / "hot-sources.json"
 OUTPUT = NEWS_ROOT / "index.html"
 SITE_URL = "https://trianglestrip.github.io/"
 
@@ -20,6 +21,19 @@ SITE_URL = "https://trianglestrip.github.io/"
 def load_json(path: Path) -> dict:
     with path.open(encoding="utf-8") as fh:
         return json.load(fh)
+
+
+def load_platform_order(cfg: dict) -> list[str]:
+    """展示顺序以 hot-sources.json display_order 为准。"""
+    platforms = cfg.get("platforms", {})
+    if SOURCES_FILE.exists():
+        sources = load_json(SOURCES_FILE)
+        order = sources.get("display_order") or []
+        known = [pid for pid in order if pid in platforms]
+        if known:
+            extras = [pid for pid in platforms if pid not in set(known)]
+            return known + extras
+    return cfg.get("order", [])
 
 
 def format_relative(iso_value: str, now: datetime) -> str:
@@ -1515,7 +1529,7 @@ def build() -> Path:
     }
 
     platforms = cfg.get("platforms", {})
-    platform_order = cfg.get("order", [])
+    platform_order = load_platform_order(cfg)
     baidu_id = load_baidu_id()
 
     nav_html = render_nav(cfg.get("categories", []), platform_order, platforms, card_icons)
