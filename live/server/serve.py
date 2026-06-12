@@ -61,7 +61,6 @@ cd live/server &amp;&amp; python serve.py
 # 终端 2
 cd live/web &amp;&amp; npm run dev</pre>
   <p>然后打开 <a href="http://127.0.0.1:5173/">http://127.0.0.1:5173/</a>（API 已 proxy 到 :8765）。</p>
-  <p>Legacy 调试页仍可用：<a href="/legacy">/legacy</a></p>
 </body>
 </html>
 """
@@ -188,12 +187,6 @@ class Handler(SimpleHTTPRequestHandler):
                 return
             self.send_error(404)
             return
-        if parsed.path == "/legacy":
-            self.path = "/legacy.html"
-            return super().do_GET()
-        if parsed.path.startswith("/legacy-static/"):
-            self._serve_legacy_static(parsed.path.removeprefix("/legacy-static"))
-            return
         return self._serve_web(parsed.path)
 
     def do_POST(self) -> None:
@@ -205,25 +198,6 @@ class Handler(SimpleHTTPRequestHandler):
             self._api_compare_post(parsed)
             return
         self.send_error(404)
-
-    def _serve_legacy_static(self, rel: str) -> None:
-        root = (WEB_ROOT / "legacy-static").resolve()
-        target = (root / rel.lstrip("/")).resolve()
-        if not str(target).startswith(str(root)):
-            self.send_error(403)
-            return
-        if target.is_dir():
-            target = target / "index.html"
-        if not target.is_file():
-            self.send_error(404)
-            return
-        content = target.read_bytes()
-        self.send_response(200)
-        self.send_header("Content-Type", self.guess_type(str(target)))
-        self.send_header("Content-Length", str(len(content)))
-        self._cors()
-        self.end_headers()
-        self.wfile.write(content)
 
     def _serve_web(self, path: str) -> None:
         if self.web_root is None:
@@ -469,7 +443,7 @@ def main() -> int:
     if served_root is not None:
         print(f"前端: 托管构建产物 {served_root}")
     elif not args.web_root.is_dir():
-        print(f"警告: 前端目录不存在 {args.web_root}，仅提供 API 与 /legacy 调试页")
+        print(f"警告: 前端目录不存在 {args.web_root}，仅提供 API")
     else:
         print(f"警告: 未找到 {WEB_DIST / 'index.html'}")
         print("      请先: cd live/web && npm install && npm run build")
@@ -489,7 +463,6 @@ def main() -> int:
         return 1
 
     print(f"Web 页面: http://127.0.0.1:{args.port}/")
-    print(f"Legacy 调试: http://127.0.0.1:{args.port}/legacy")
     print("API: GET /api/room?site=douyu|huya&room=<id>&mode=lazy|full")
     print("     GET /api/categories?site=douyu|huya")
     print("     GET /api/rooms?site=douyu|huya&cid=<id>&page=1")

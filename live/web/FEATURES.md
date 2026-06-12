@@ -21,7 +21,6 @@
 | `/` | 首页 | 各平台入口卡片、简介、默认房间快捷链接 |
 | `/platform/:site` | 平台详情 | 单平台说明、支持档位/线路、跳转播放 |
 | `/watch/:site/:room` | 播放页 | Lemon 主布局：播放器 + 房间信息 + 控制面板 |
-| `/legacy`（后端） | 旧调试页 | `server/legacy.html` |
 
 平台 Tab：斗鱼、虎牙（可用）；哔哩、抖音（占位 disabled）。
 
@@ -66,7 +65,7 @@
 
 1. 首次播放：`mode=lazy`，可选 `quality`（localStorage 记忆）。
 2. 切换清晰度：若该档 `streams` 无有效 URL，再请求 `quality=<档名>`。
-3. 合并多档响应：`streams` 按 `name` 合并（与 legacy `app.js` 一致）。
+3. 合并多档响应：`streams` 按 `name` 合并。
 4. 播放：优先 `streams[档].lines[线路].url`，过滤含 `edgesrv.com` 的占位地址。
 
 ### 其他端点（后续）
@@ -145,6 +144,5 @@ live/web/
     styles/main.css
     components/
     views/
-  legacy-static/          # 旧纯 HTML 雏形（归档）
   dist/                   # 构建产物（gitignore）
 ```

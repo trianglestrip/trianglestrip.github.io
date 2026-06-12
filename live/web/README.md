@@ -20,8 +20,7 @@ web/
     components/         # AppLayout, PlayerPanel, ControlPanel…
     views/              # Home, Platform, Watch
     styles/main.css
-  legacy-static/        # 旧纯 HTML 雏形归档
-  dist/                 # npm run build 产物（serve.py 优先托管）
+  dist/                 # npm run build 产物（serve.py 托管）
 ```
 
 ## 路由
@@ -63,7 +62,6 @@ cd ../server
 浏览器打开 http://127.0.0.1:8765/
 
 - `/` — Vue 前端（**必须**先 `npm run build`，仅托管 `dist/`；无 dist 时显示构建说明页）
-- `/legacy` — 旧调试页（`server/legacy.html`）
 - `/api/room` — 解析 API
 
 > **勿**在未 build 的情况下指望 `:8765` 加载源码 `index.html`：浏览器无法解析 `import "vue"`。改 UI 请用 `npm run dev`（`:5173`）。

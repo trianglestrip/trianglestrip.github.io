@@ -26,7 +26,6 @@ cd ../server
 |-----|------|
 | `/` | Vue 前端（优先 `web/dist/`） |
 | `/watch/douyu/5720533` | 播放页（可分享） |
-| `/legacy` | 旧版 `legacy.html` 调试页 |
 | `/api/room?site=douyu&room=<id>` | 解析 API |
 
 ## 开发模式

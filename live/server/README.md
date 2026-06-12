@@ -4,7 +4,7 @@
 
 - **解析**：本机 `streamget`（斗鱼 getH5PlayV1、虎牙页面 + anti-code）
 - **架构**：`room_schema` meta/tier 分层 + `resolve_service` 统一调度
-- **前端**：[`../web/`](../web/) Vue 聚合页；本目录 `legacy.html` 为 `/legacy` 调试页
+- **前端**：[`../web/`](../web/) Vue 聚合页（`npm run build` 后由本服务托管 `dist/`）
 
 ## 目录
 
@@ -21,8 +21,6 @@ live/server/
   compare_streams.py  # 对比逻辑（serve / CLI --compare 共用）
   muxia_api.py        # muxia 解析封装（对照用）
   benchmark_resolve.py # 本地解析压测（可选）
-  legacy.html         # Legacy 调试页（/legacy）
-  static/             # legacy.html 静态资源
   streamget-douyu.md  # 斗鱼转换说明（文档）
 ```
 
@@ -42,7 +40,7 @@ streamget install-node
 # 或 .\.venv\Scripts\python serve.py
 ```
 
-浏览器打开 http://127.0.0.1:8765/（Web 前端）或 http://127.0.0.1:8765/legacy（调试页）
+浏览器打开 http://127.0.0.1:8765/（需先 `cd ../web && npm run build`）
 
 ## API
 
