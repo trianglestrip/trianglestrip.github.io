@@ -27,12 +27,12 @@ export function parseOnlineCount(text) {
   return Number.isFinite(n) ? n : 0;
 }
 
-/** 排序档位：超关开播 → 普通开播 → 重播 → 离线 */
+/** 排序档位：超关开播 → 普通开播 → 重播 → 超关离线 → 普通离线 */
 export function followSortTier(room = {}) {
   const state = room.state || "offline";
   if (state === "live") return room.super ? 0 : 1;
   if (state === "replay") return 2;
-  return 3;
+  return room.super ? 3 : 4;
 }
 
 /** 重播/离线按「上次直播」先后；重播优先用本场开播时间 */
@@ -61,7 +61,7 @@ export function sortFollowRooms(rooms, statusMap = {}, options = {}) {
         if (byOnline !== 0) return byOnline;
       }
 
-      if (tierA === 2 || tierA === 3) {
+      if (tierA === 2 || tierA === 3 || tierA === 4) {
         const byRecent = recentLiveTimestamp(bRoom) - recentLiveTimestamp(aRoom);
         if (byRecent !== 0) return byRecent;
       }
