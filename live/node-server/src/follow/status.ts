@@ -1,5 +1,8 @@
 import { coverFromRoom, fetchBetard } from "../resolve/douyu/betard.js";
-import { formatOnline } from "../utils/format-online.js";
+import { huyaRoomState, profileNeedsPageCheck } from "./huya-state.js";
+import { fetchHuyaPageRoomFlags } from "../resolve/huya/web-stream.js";
+import { fetchHuyaGuardInfo, fetchHuyaVipCount } from "./huya-wup.js";
+import { formatCount, formatOnline } from "../utils/format-online.js";
 
 export type FollowState = "live" | "replay" | "offline";
 
@@ -14,6 +17,22 @@ export interface FollowSnapshot {
   category: string;
   fans: string;
   online: string;
+  /** 斗鱼：钻粉数 */
+  diamondFans: string;
+  /** 斗鱼：粉丝团人数 */
+  fanGroup: string;
+  /** 虎牙：守护总数 */
+  guard: string;
+  /** 虎牙：贵宾数 */
+  vip: string;
+  /** 虎牙：普通守护数（iGuardType=0，排序用） */
+  guardNormal: number;
+  /** 虎牙：超关守护数（iGuardType=2，排序用） */
+  guardSuper: number;
+  /** 离线：上次开播 Unix 秒时间戳 */
+  lastLiveAt: number;
+  /** 直播中/重播：本场开播 Unix 秒时间戳 */
+  liveStartAt: number;
 }
 
 const STATUS_ORDER: Record<FollowState, number> = { live: 0, replay: 1, offline: 2 };
@@ -40,6 +59,14 @@ function pickText(...values: unknown[]): string {
     if (text) return text;
   }
   return "";
+}
+
+function pickUnixTime(...values: unknown[]): number {
+  for (const value of values) {
+    const num = Number(value ?? 0);
+    if (Number.isFinite(num) && num > 1_000_000_000) return Math.trunc(num);
+  }
+  return 0;
 }
 
 function httpsUrl(text: string): string {
@@ -73,15 +100,13 @@ function douyuOnlineText(state: FollowState, hn: string): string {
   return text;
 }
 
-function huyaState(data: Record<string, unknown>): FollowState {
-  const statusRaw = String(data.liveStatus || data.realLiveStatus || "").toUpperCase();
-  if (statusRaw === "ON") return "live";
-  if (statusRaw === "REPLAY" || statusRaw === "VOD") return "replay";
-  const liveData = (data.liveData || {}) as Record<string, unknown>;
-  if (liveData.isReplay === 1 || liveData.isReplay === "1" || liveData.isReplay === true) {
-    return "replay";
+async function resolveHuyaFollowState(data: Record<string, unknown>, roomId: string): Promise<FollowState> {
+  let page: { isOn?: boolean; isReplay?: boolean } | undefined;
+  if (profileNeedsPageCheck(data)) {
+    const flags = await fetchHuyaPageRoomFlags(roomId);
+    if (flags) page = flags;
   }
-  return "offline";
+  return huyaRoomState(data, page);
 }
 
 function avatarFromHuya(profile: Record<string, unknown>): string {
@@ -123,44 +148,49 @@ async function fetchDouyuMobileRoom(rid: string): Promise<Record<string, unknown
   }
 }
 
-/** 斗鱼 lapi 粉丝接口已失效（60001），betard / m 端 room 信息亦无粉丝字段 */
-async function fetchDouyuFans(rid: string, ownerUid?: number | string): Promise<string> {
-  const uid = Number(ownerUid || 0);
-  const urls = [
-    `https://www.douyu.com/lapi/member/cp/getFansBadgeNum?room_id=${rid}${uid ? `&owner_uid=${uid}` : ""}`,
-    `https://www.douyu.com/lapi/web/anchor/anchorprofile/getAnchorProfile?room_id=${rid}`,
-  ];
-  for (const url of urls) {
-    try {
-      const res = await fetch(url, { headers: DOUYU_HEADERS, signal: AbortSignal.timeout(8000) });
-      if (!res.ok) continue;
-      const payload = (await res.json()) as Record<string, unknown>;
-      const data = (payload.data || payload) as Record<string, unknown>;
-      const raw =
-        data.fansNum ??
-        data.fans_num ??
-        data.fansCount ??
-        data.followNum ??
-        data.follow_num ??
-        data.num;
-      const text = formatOnline(raw as number | string);
-      if (text) return text;
-    } catch {
-      /* try next */
-    }
+async function fetchDouyuAnchorExtras(rid: string): Promise<{
+  fans: string;
+  diamondFans: string;
+  fanGroup: string;
+}> {
+  const empty = { fans: "", diamondFans: "", fanGroup: "" };
+  try {
+    const res = await fetch(
+      `https://www.douyu.com/wgapi/livenc/liveweb/getAnchorNewCard?rid=${rid}&client_sys=web`,
+      { headers: DOUYU_HEADERS, signal: AbortSignal.timeout(10000) },
+    );
+    if (!res.ok) return empty;
+    const payload = (await res.json()) as { data?: Record<string, unknown> };
+    const data = payload.data || {};
+    const anchorLevel = (data.anchorLevel || {}) as Record<string, unknown>;
+    const dFansInfo = (anchorLevel.dFansInfo || {}) as Record<string, unknown>;
+    const functionShow = (data.functionShow || {}) as Record<string, unknown>;
+    const fanGroup = (functionShow.fanGroup || {}) as Record<string, unknown>;
+    const roomInfo = (data.roomInfo || {}) as Record<string, unknown>;
+    return {
+      fans: formatCount(roomInfo.fansNum as number | string),
+      diamondFans: formatCount(dFansInfo.curDfansNum as number | string),
+      fanGroup: formatCount(fanGroup.cnt as number | string),
+    };
+  } catch {
+    return empty;
   }
-  return "";
 }
 
 async function fetchDouyuSnapshot(roomId: string): Promise<FollowSnapshot> {
   const rid = String(roomId).trim();
-  const [room, mobile] = await Promise.all([fetchBetard(rid), fetchDouyuMobileRoom(rid)]);
+  const [room, mobile, extras] = await Promise.all([
+    fetchBetard(rid),
+    fetchDouyuMobileRoom(rid),
+    fetchDouyuAnchorExtras(rid),
+  ]);
   const raw = room as unknown as Record<string, unknown>;
   const mobileInfo = mobile || {};
   const state = douyuState(raw);
   const hn = String(mobileInfo.hn || "").trim();
-  const ownerUid = mobileInfo.ownerId ?? raw.owner_uid;
-  const fans = await fetchDouyuFans(rid, ownerUid as number | string);
+  const lastLiveAt = state === "offline" ? pickUnixTime(mobileInfo.showTime, raw.show_time) : 0;
+  const liveStartAt =
+    state === "live" || state === "replay" ? pickUnixTime(mobileInfo.showTime, raw.show_time) : 0;
 
   return {
     site: "douyu",
@@ -178,8 +208,16 @@ async function fetchDouyuSnapshot(roomId: string): Promise<FollowSnapshot> {
       raw.game_name,
       raw.cate_name,
     ),
-    fans,
+    fans: extras.fans,
     online: douyuOnlineText(state, hn),
+    diamondFans: extras.diamondFans,
+    fanGroup: extras.fanGroup,
+    guard: "",
+    vip: "",
+    guardNormal: 0,
+    guardSuper: 0,
+    lastLiveAt,
+    liveStartAt,
   };
 }
 
@@ -201,20 +239,41 @@ async function fetchHuyaSnapshot(roomId: string): Promise<FollowSnapshot> {
   const data = (payload.data || {}) as Record<string, unknown>;
   const profile = (data.profileInfo || {}) as Record<string, unknown>;
   const liveData = (data.liveData || {}) as Record<string, unknown>;
+  const state = await resolveHuyaFollowState(data, rid);
   const fansRaw = profile.activityCount ?? liveData.activityCount;
   const onlineRaw = liveData.totalCount ?? liveData.userCount;
+  const presenterUid = Number(profile.uid || liveData.uid || 0);
+  const channelId = Number(liveData.liveChannel || liveData.channel || presenterUid);
+  const isLive = state === "live";
+  const [vip, guardInfo] = isLive
+    ? await Promise.all([
+        fetchHuyaVipCount(presenterUid, channelId),
+        fetchHuyaGuardInfo(presenterUid),
+      ])
+    : ["", { display: "", breakdown: { total: 0, normal: 0, super: 0, supreme: 0 } }];
+  const lastLiveAt = state === "offline" ? pickUnixTime(liveData.startTime, liveData.updateCacheTime) : 0;
+  const liveStartAt =
+    state === "live" || state === "replay" ? pickUnixTime(liveData.startTime) : 0;
 
   return {
     site: "huya",
     id: rid,
-    state: huyaState(data),
+    state,
     avatar: avatarFromHuya(profile),
     cover: httpsUrl(String(liveData.screenshot || liveData.cover || "")),
     title: String(liveData.introduction || liveData.roomName || profile.nick || ""),
     anchor: String(profile.nick || ""),
     category: pickText(liveData.gameHostName, liveData.sGameFullName, profile.gameHostName),
-    fans: formatOnline(fansRaw as number | string),
-    online: formatOnline(onlineRaw as number | string),
+    fans: formatCount(fansRaw as number | string),
+    online: state === "offline" ? "" : formatOnline(onlineRaw as number | string),
+    diamondFans: "",
+    fanGroup: "",
+    guard: guardInfo.display,
+    vip,
+    guardNormal: guardInfo.breakdown.normal,
+    guardSuper: guardInfo.breakdown.super + guardInfo.breakdown.supreme,
+    lastLiveAt,
+    liveStartAt,
   };
 }
 
@@ -230,6 +289,14 @@ function emptySnapshot(site: string, id: string): FollowSnapshot {
     category: "",
     fans: "",
     online: "",
+    diamondFans: "",
+    fanGroup: "",
+    guard: "",
+    vip: "",
+    guardNormal: 0,
+    guardSuper: 0,
+    lastLiveAt: 0,
+    liveStartAt: 0,
   };
 }
 

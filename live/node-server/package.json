@@ -17,5 +17,8 @@
     "esbuild": "^0.25.5",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@tars/stream": "^2.0.3"
   }
 }

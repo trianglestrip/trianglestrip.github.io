@@ -50,9 +50,11 @@ const FA_ICONS = {
   moon: "fa-moon",
 };
 
+const OUTLINE_WHEN_EMPTY = new Set(["star", "heart"]);
+
 const iconClasses = computed(() => {
   const fa = FA_ICONS[props.name] || FA_ICONS.home;
-  const style = props.name === "star" && !props.filled ? "fa-regular" : "fa-solid";
+  const style = OUTLINE_WHEN_EMPTY.has(props.name) && !props.filled ? "fa-regular" : "fa-solid";
   return [style, fa];
 });
 </script>

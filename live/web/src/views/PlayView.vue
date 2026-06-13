@@ -6,17 +6,27 @@
           <RouterLink :to="`/${site}`" class="play-back" title="返回">
             <Icon name="arrow-left" />
           </RouterLink>
+          <span
+            v-if="displayCategory"
+            class="play-header-category"
+            :style="categoryHeaderStyle"
+          >{{ displayCategory }}</span>
           <div class="play-header-main">
             <h1 class="play-title">{{ displayTitle }}</h1>
           </div>
           <div
-            v-if="showOnlineStat"
-            class="play-online-inline"
-            :class="{ 'play-online-inline--live': roomState === 'live' }"
-            :title="`观看 ${onlineText}`"
+            v-if="showRoomStats"
+            class="play-stats-inline"
+            :class="{ 'play-stats-inline--live': roomState === 'live' }"
           >
-            <Icon name="users" class="play-online-fa" />
-            <span>{{ onlineText }}</span>
+            <span
+              v-for="item in roomStatItems"
+              :key="item.label"
+              class="play-stat-item"
+              :class="`play-stat-item--${item.tone}`"
+            >
+              {{ item.label }}：{{ item.value }}
+            </span>
           </div>
         </header>
 
@@ -119,6 +129,8 @@ import { useDanmaku } from "../composables/useDanmaku.js";
 import { useFollow } from "../composables/useFollow.js";
 import { fetchFollowStatus } from "../api/follow.js";
 import { followKey } from "../utils/prefStore.js";
+import { displayCategoryName } from "../utils/categoryDisplay.js";
+import { getCategoryStyle } from "../utils/categoryColor.js";
 import { isSoundUnlocked, unlockSound, resetSoundSession } from "../utils/soundSession.js";
 
 const PlayerControls = defineAsyncComponent(() => import("../components/PlayerControls.vue"));
@@ -182,14 +194,62 @@ const displayTitle = computed(() => {
   return `房间 ${props.id}`;
 });
 
-const roomOnline = ref("");
-const roomState = ref("offline");
-const onlineText = computed(() => roomOnline.value || "—");
+function cachedFollowRoom() {
+  const rid = String(roomInput.value || props.id || "").trim();
+  if (!rid) return null;
+  const key = followKey(props.site, rid);
+  return follows.value.find((r) => followKey(r.site, r.id) === key) || null;
+}
 
-const showOnlineStat = computed(() => {
-  if (roomState.value === "offline") return false;
-  const online = String(roomOnline.value || "").trim();
-  return Boolean(online && online !== "—" && online !== "-");
+const displayCategory = computed(() => {
+  const fromApi = String(roomCategory.value || "").trim();
+  const cached = cachedFollowRoom();
+  const raw = fromApi || String(cached?.category || "").trim();
+  return displayCategoryName(props.site, raw, cached?.cid);
+});
+
+const categoryHeaderStyle = computed(() =>
+  getCategoryStyle(displayCategory.value, props.site, "", { bgAlpha: 0.09 }) || {},
+);
+
+const roomState = ref("offline");
+const roomCategory = ref("");
+const roomStatsReady = ref(false);
+const roomStats = ref({
+  online: "",
+  diamondFans: "",
+  fanGroup: "",
+  guard: "",
+  vip: "",
+});
+
+function statDisplay(value) {
+  const text = String(value || "").trim();
+  return text || "—";
+}
+
+const roomStatItems = computed(() => {
+  if (props.site === "douyu") {
+    return [
+      { label: "观众", value: statDisplay(roomStats.value.online), tone: "audience" },
+      { label: "钻粉", value: statDisplay(roomStats.value.diamondFans), tone: "diamond" },
+      { label: "粉丝团", value: statDisplay(roomStats.value.fanGroup), tone: "fangroup" },
+    ];
+  }
+  if (props.site === "huya") {
+    return [
+      { label: "观众", value: statDisplay(roomStats.value.online), tone: "audience" },
+      { label: "守护", value: statDisplay(roomStats.value.guard), tone: "guard" },
+      { label: "贵宾", value: statDisplay(roomStats.value.vip), tone: "vip" },
+    ];
+  }
+  return [{ label: "观众", value: statDisplay(roomStats.value.online), tone: "audience" }];
+});
+
+const showRoomStats = computed(() => {
+  if (!headerReady.value || roomState.value === "offline") return false;
+  if (props.site !== "douyu" && props.site !== "huya") return false;
+  return roomStatsReady.value;
 });
 
 const showMuteHint = computed(
@@ -210,46 +270,76 @@ const showPauseOverlay = computed(
 
 let onlineRefreshTimer = 0;
 
+function resetRoomStats() {
+  roomStatsReady.value = false;
+  roomStats.value = {
+    online: "",
+    diamondFans: "",
+    fanGroup: "",
+    guard: "",
+    vip: "",
+  };
+}
+
 function syncOnlineFromPayload() {
   const data = payload.value;
   if (!data) return;
-  if (data.is_live) {
+  const declared = data.room_state;
+  if (declared === "live" || declared === "replay" || declared === "offline") {
+    roomState.value = declared;
+    if (declared === "offline") resetRoomStats();
+    return;
+  }
+  const live = Boolean(data.is_live || data.status);
+  if (live) {
     roomState.value = "live";
   } else {
     roomState.value = "offline";
-    roomOnline.value = "";
+    resetRoomStats();
   }
 }
 
 function scheduleDeferredOnlineRefresh() {
   clearTimeout(onlineRefreshTimer);
+  roomStatsReady.value = true;
   onlineRefreshTimer = window.setTimeout(() => {
-    void refreshRoomOnline();
+    void refreshRoomStats();
   }, 2000);
 }
 
-async function refreshRoomOnline() {
+async function refreshRoomStats() {
   const rid = String(payload.value?.room_id || props.id || "").trim();
   if (!rid) {
-    roomOnline.value = "";
+    resetRoomStats();
     roomState.value = "offline";
     return;
   }
   try {
     const data = await fetchFollowStatus([{ site: props.site, id: rid }]);
     const snap = data.list?.[0];
-    roomOnline.value = snap?.online || "";
+    roomStats.value = {
+      online: snap?.online || "",
+      diamondFans: snap?.diamondFans || "",
+      fanGroup: snap?.fanGroup || "",
+      guard: snap?.guard || "",
+      vip: snap?.vip || "",
+    };
     roomState.value = snap?.state || "offline";
+    roomCategory.value = String(snap?.category || "").trim();
+    if (roomState.value === "offline") resetRoomStats();
+    else roomStatsReady.value = true;
   } catch {
     /* 保留上次 */
   }
 }
 
 watch(
-  () => [props.site, props.id, payload.value?.room_id, payload.value?.is_live],
+  () => [props.site, props.id, payload.value?.room_id, payload.value?.is_live, payload.value?.status, payload.value?.room_state],
   () => {
     syncOnlineFromPayload();
-    scheduleDeferredOnlineRefresh();
+    if (props.site === "douyu" || props.site === "huya") {
+      scheduleDeferredOnlineRefresh();
+    }
   },
   { immediate: true },
 );
@@ -453,10 +543,15 @@ function runIdle(fn) {
 
 function onPlaybackReady() {
   danmakuReady.value = true;
+  scheduleDeferredOnlineRefresh();
   runIdle(() => {
-    sideReady.value = true;
+    revealSidePanel();
     connectDm();
   });
+}
+
+function revealSidePanel() {
+  sideReady.value = true;
 }
 
 function schedulePlay(room) {
@@ -477,13 +572,14 @@ function syncRouteState(site, id) {
   payload.value = null;
   playUrl.value = "";
   lastPlayedRoom.value = "";
-  roomOnline.value = "";
+  roomCategory.value = "";
+  resetRoomStats();
+  roomState.value = "offline";
   document.title = "Lemon live";
   headerReady.value = true;
   controlsReady.value = true;
-  sideReady.value = true;
+  sideReady.value = false;
   danmakuReady.value = false;
-  nextTick(() => sidePanelRef.value?.refreshSide?.());
 }
 
 function resolveVideoEl(raw) {
@@ -539,7 +635,7 @@ function revealControls() {
   }
 }
 
-function cachedFollowRoom() {
+function cachedFollowRoomForFollow() {
   const rid = String(roomInput.value || props.id || "").trim();
   if (!rid) return null;
   const key = followKey(props.site, rid);
@@ -547,7 +643,7 @@ function cachedFollowRoom() {
 }
 
 function roomInfoForFollow() {
-  const cached = cachedFollowRoom();
+  const cached = cachedFollowRoomForFollow();
   const rid = String(roomInput.value || props.id || "").trim();
   return {
     site: props.site,
@@ -647,6 +743,7 @@ async function playRoom(room) {
     lastPlayedRoom.value = room;
   } catch {
     lastPlayedRoom.value = "";
+    revealSidePanel();
   }
 }
 
@@ -712,9 +809,6 @@ onMounted(() => {
     /* ignore */
   }
   syncRouteState(props.site, props.id);
-  headerReady.value = true;
-  controlsReady.value = true;
-  sideReady.value = true;
   if (getPlatform(props.site)?.enabled) {
     schedulePlay(props.id);
   }
@@ -766,10 +860,23 @@ onBeforeUnmount(() => {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 2rem;
-  padding: .25rem .5rem .5rem;
+  gap: .45rem;
+  min-height: 2.5rem;
+  padding: .35rem .5rem .45rem 2.75rem;
   flex-shrink: 0;
+}
+
+.play-header-category {
+  flex-shrink: 0;
+  max-width: 30%;
+  padding: .26rem .52rem;
+  border-radius: 5px;
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .play-back {
@@ -789,13 +896,11 @@ onBeforeUnmount(() => {
 .play-back:hover { color: var(--amber); }
 
 .play-header-main {
+  flex: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 5.5rem;
-  max-width: 100%;
-  min-width: 0;
-  flex: 1;
 }
 
 .play-title {
@@ -807,43 +912,79 @@ onBeforeUnmount(() => {
   text-overflow: ellipsis;
   white-space: nowrap;
   min-width: 0;
-  width: 100%;
+  max-width: 100%;
 }
 
-.play-online-inline {
-  position: absolute;
-  right: .5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-flex;
+.play-stats-inline {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  gap: .18rem;
-  flex-shrink: 0;
-  font-size: .82rem;
-  font-weight: 700;
-  line-height: 1.2;
-  padding: .14rem .28rem;
-  border-radius: 4px;
-  letter-spacing: .02em;
+  justify-content: flex-end;
+  gap: .34rem;
+  max-width: min(52vw, 24rem);
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: .01em;
   font-variant-numeric: tabular-nums;
-  color: #7eb0e8;
-  background: rgba(110, 181, 255, 0.18);
 }
 
-.play-online-inline--live {
-  color: #8ec0ff;
-  background: rgba(110, 181, 255, 0.24);
+.play-stat-item {
+  white-space: nowrap;
+  padding: .3rem .55rem;
+  border-radius: 6px;
 }
 
-.play-online-inline > span {
-  line-height: 1.15;
+.play-stat-item--audience {
+  color: #b8dcff;
+  background: rgba(72, 136, 220, 0.1);
 }
 
-.play-online-fa {
-  font-size: .95em;
-  line-height: 1;
-  flex-shrink: 0;
-  opacity: .9;
+.play-stat-item--diamond {
+  color: #f0b8ff;
+  background: rgba(168, 88, 210, 0.1);
+}
+
+.play-stat-item--fangroup {
+  color: #ffd4a0;
+  background: rgba(220, 140, 48, 0.1);
+}
+
+.play-stat-item--guard {
+  color: #ffe08a;
+  background: rgba(200, 150, 40, 0.1);
+}
+
+.play-stat-item--vip {
+  color: #d8c0ff;
+  background: rgba(120, 80, 200, 0.1);
+}
+
+.play-stats-inline--live .play-stat-item--audience {
+  color: #c8e8ff;
+  background: rgba(72, 136, 220, 0.14);
+}
+
+.play-stats-inline--live .play-stat-item--diamond {
+  color: #f8c8ff;
+  background: rgba(168, 88, 210, 0.12);
+}
+
+.play-stats-inline--live .play-stat-item--fangroup {
+  color: #ffe0b0;
+  background: rgba(220, 140, 48, 0.12);
+}
+
+.play-stats-inline--live .play-stat-item--guard {
+  color: #ffecb0;
+  background: rgba(200, 150, 40, 0.14);
+}
+
+.play-stats-inline--live .play-stat-item--vip {
+  color: #e8d0ff;
+  background: rgba(120, 80, 200, 0.14);
 }
 
 .play-frame {

@@ -2,8 +2,13 @@
   <aside class="play-side">
     <div class="side-header">
       <div class="room-aside">
-        <LazyImage v-if="displayAvatar" :src="displayAvatar" image-class="room-avatar" eager />
-        <div v-else class="room-avatar room-avatar--empty">{{ anchor?.slice(0, 1) || "?" }}</div>
+        <div class="room-aside-avatar">
+          <FollowAvatar
+            :src="displayAvatar"
+            :label="anchor?.slice(0, 1) || '?'"
+            eager
+          />
+        </div>
         <div class="room-aside-meta">
           <p class="room-anchor">{{ anchor || "—" }}</p>
           <p v-if="showFansStatForRoom" class="room-fans" :title="fansTitle">
@@ -11,6 +16,16 @@
             <span>{{ fansText }}</span>
           </p>
         </div>
+        <button
+          type="button"
+          class="follow-btn"
+          :class="{ 'follow-btn--active': roomIsFollowed }"
+          :title="roomIsFollowed ? '取消关注' : '关注'"
+          @click="onToggleFollow"
+        >
+          <Icon name="heart" class="follow-btn__icon" :filled="roomIsFollowed" />
+          <span class="follow-btn__text">{{ roomIsFollowed ? "已关注" : "关注" }}</span>
+        </button>
         <button
           type="button"
           class="super-follow-btn"
@@ -27,6 +42,7 @@
     <div class="tabs">
       <button type="button" :class="{ active: tab === 'chat' }" @click="tab = 'chat'">聊天</button>
       <button type="button" :class="{ active: tab === 'follow' }" @click="tab = 'follow'">关注</button>
+      <button type="button" :class="{ active: tab === 'recommend' }" @click="tab = 'recommend'">推荐</button>
       <button type="button" :class="{ active: tab === 'settings' }" @click="tab = 'settings'">设置</button>
     </div>
 
@@ -71,11 +87,24 @@
       />
       <FollowRoomList
         v-else
+        layout="grid"
         :rooms="filteredFollows"
         :loading="followStatusLoading"
         :show-delete="false"
         compact
         @select="$emit('play-room', $event)"
+      />
+    </div>
+
+    <div v-show="tab === 'recommend'" class="tab-content scrolly recommend-tab">
+      <p v-if="recommendLoading" class="recommend-hint">加载中…</p>
+      <p v-else-if="recommendError" class="recommend-hint recommend-hint--err">{{ recommendError }}</p>
+      <p v-else-if="!recommendPreviewRooms.length" class="recommend-hint">暂无推荐</p>
+      <FollowPreviewGrid
+        v-else
+        compact
+        :rooms="recommendPreviewRooms"
+        @select="onRecommendSelect"
       />
     </div>
 
@@ -111,14 +140,17 @@
 <script setup>
 import { ref, computed, watch, nextTick, toRef, onMounted } from "vue";
 import Icon from "./Icon.vue";
-import LazyImage from "./LazyImage.vue";
+import FollowAvatar from "./FollowAvatar.vue";
 import FollowRoomList from "./FollowRoomList.vue";
 import FollowPreviewGrid from "./FollowPreviewGrid.vue";
 import FollowPlatformFilter from "./FollowPlatformFilter.vue";
 import { fetchFollowStatus } from "../api/follow.js";
+import { fetchRelatedRecommendRooms, fetchMixedRecommendRooms, roomKey } from "../api/browse.js";
+import { useFollow } from "../composables/useFollow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
 import { loadGlobalPref, saveGlobalPref } from "../utils/prefStore.js";
 import { briefDanmakuStatus, briefPlayStatus } from "../utils/chatStatus.js";
+import { displayCategoryName } from "../utils/categoryDisplay.js";
 
 const props = defineProps({
   site: { type: String, default: "" },
@@ -133,9 +165,12 @@ const props = defineProps({
 
 const chatSettings = defineModel("chatSettings", { type: Object, required: true });
 
-defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
+const emit = defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
 
-const tab = ref("chat");
+const { isFollowed, toggleFollow } = useFollow();
+
+const tab = ref("follow");
+const followTabActive = computed(() => tab.value === "follow");
 const followSiteFilter = ref("");
 const followUiPref = loadGlobalPref("play_follow_ui", { previewCover: true });
 const previewCover = ref(followUiPref.previewCover !== false);
@@ -143,11 +178,12 @@ const chatListRef = ref(null);
 const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
   toRef(props, "followList"),
   {
+    active: followTabActive,
     getFocusCategory(merged) {
       const room = merged.find(
         (item) => item.site === props.site && String(item.id) === String(props.roomId),
       );
-      return room?.category || "";
+      return displayCategoryName(props.site, room?.category, room?.cid);
     },
   },
 );
@@ -166,37 +202,151 @@ function togglePreviewCover() {
   saveGlobalPref("play_follow_ui", { previewCover: previewCover.value });
 }
 
+const recommendRooms = ref([]);
+const recommendLoading = ref(false);
+const recommendError = ref("");
+const recommendLoaded = ref(false);
+
+const recommendPreviewRooms = computed(() =>
+  recommendRooms.value.map((room) => {
+    const site = room.siteId || room.site || props.site;
+    const offline = room.status === false || room.liveState === "offline";
+    return {
+      site,
+      id: roomKey(room),
+      anchor: room.nickname || room.title || roomKey(room),
+      cover: room.cover || "",
+      state: room.liveState || (room.status ? "live" : "offline"),
+      online: offline ? "" : room.online || "",
+    };
+  }),
+);
+
+function currentRoomCategory() {
+  const room = sortedFollows.value.find(
+    (item) => item.site === props.site && String(item.id) === String(props.roomId),
+  );
+  const raw = room?.category
+    ? String(room.category).trim()
+    : String(
+        props.followList?.find(
+          (item) => item.site === props.site && String(item.id) === String(props.roomId),
+        )?.category || "",
+      ).trim();
+  return displayCategoryName(props.site, raw, room?.cid);
+}
+
+async function loadRecommend() {
+  if (recommendLoaded.value || recommendLoading.value) return;
+  recommendLoading.value = true;
+  recommendError.value = "";
+  try {
+    const category = currentRoomCategory();
+    if (category) {
+      const data = await fetchRelatedRecommendRooms({
+        site: props.site,
+        category,
+        page: 1,
+        perSite: 5,
+      });
+      recommendRooms.value = (data.list || []).filter(
+        (room) =>
+          String(room.siteId || room.site) !== props.site ||
+          String(roomKey(room)) !== String(props.roomId),
+      );
+    } else {
+      recommendRooms.value = await fetchMixedRecommendRooms({ page: 1, perSite: 6 });
+    }
+    if (!recommendRooms.value.length) throw new Error("暂无推荐直播");
+    recommendLoaded.value = true;
+  } catch (err) {
+    recommendError.value = err.message;
+  } finally {
+    recommendLoading.value = false;
+  }
+}
+
+function onRecommendSelect(room) {
+  emit("play-room", room);
+}
+
 watch(tab, (value) => {
   if (value === "follow") refreshFollowStatus();
-});
+  if (value === "recommend") loadRecommend();
+}, { immediate: true });
+
+watch(
+  () => props.site,
+  () => {
+    recommendRooms.value = [];
+    recommendLoaded.value = false;
+    recommendError.value = "";
+  },
+);
+
+const roomIsFollowed = computed(() => isFollowed(props.site, props.roomId));
+
+function roomInfoForFollow() {
+  return {
+    site: props.site,
+    id: String(props.roomId || props.payload?.room_id || "").trim(),
+    title: props.payload?.title || "",
+    anchor: props.payload?.anchor_name || "",
+    cover: props.payload?.cover || "",
+    avatar: props.payload?.avatar || roomAvatar.value || "",
+  };
+}
+
+function onToggleFollow() {
+  const info = roomInfoForFollow();
+  if (!info.id) return;
+  toggleFollow(info);
+}
 
 const anchor = computed(() => props.payload?.anchor_name || "");
-const cover = computed(() => props.payload?.cover || "");
 
 const roomFans = ref("");
 const roomAvatar = ref("");
 
 const fansText = computed(() => roomFans.value || "—");
-const showFansStatForRoom = computed(() => {
-  if (roomFans.value) return true;
-  const site = String(props.site || props.payload?.platform || "").trim();
-  return site !== "douyu";
-});
+const showFansStatForRoom = computed(() => Boolean(roomFans.value));
 const fansTitle = computed(() => {
   if (roomFans.value) return `粉丝 ${roomFans.value}`;
-  if (props.site === "douyu") return "斗鱼未提供公开粉丝数";
   return "粉丝 —";
 });
-const displayAvatar = computed(() => roomAvatar.value || cover.value || "");
+const displayAvatar = computed(() => {
+  const fromPayload = String(props.payload?.avatar || "").trim();
+  if (fromPayload) return fromPayload;
+  const fromSnap = String(roomAvatar.value || "").trim();
+  if (fromSnap) return fromSnap;
+  const id = String(props.roomId || props.payload?.room_id || "").trim();
+  const site = String(props.site || props.payload?.platform || props.payload?.site || "").trim();
+  if (!id || !site) return "";
+  const room =
+    sortedFollows.value.find((item) => item.site === site && String(item.id) === id) ||
+    props.followList?.find((item) => item.site === site && String(item.id) === id);
+  return String(room?.avatar || "").trim();
+});
 
-async function refreshRoomMeta() {
+function syncAvatarFromFollowList() {
+  const id = String(props.roomId || props.payload?.room_id || "").trim();
+  const site = String(props.site || props.payload?.platform || props.payload?.site || "").trim();
+  if (!id || !site || roomAvatar.value) return;
+  const room =
+    sortedFollows.value.find((item) => item.site === site && String(item.id) === id) ||
+    props.followList?.find((item) => item.site === site && String(item.id) === id);
+  const avatar = String(room?.avatar || "").trim();
+  if (avatar) roomAvatar.value = avatar;
+}
+
+async function refreshRoomFans() {
   const site = String(
     props.payload?.platform || props.payload?.site || props.site || "",
   ).trim();
   const id = String(props.payload?.room_id || props.roomId || "").trim();
   if (!site || !id) {
     roomFans.value = "";
-    roomAvatar.value = "";
+    if (!props.payload?.avatar) roomAvatar.value = "";
     return;
   }
   try {
@@ -204,23 +354,42 @@ async function refreshRoomMeta() {
     const snap = data.list?.[0];
     if (!snap) return;
     roomFans.value = snap.fans || "";
-    roomAvatar.value = snap.avatar || "";
+    if (!roomAvatar.value && snap.avatar) roomAvatar.value = snap.avatar;
   } catch {
     /* 保留上次 */
   }
 }
 
 function refreshSide() {
-  refreshRoomMeta();
-  refreshFollowStatus();
+  const payloadAvatar = String(props.payload?.avatar || "").trim();
+  roomAvatar.value = payloadAvatar;
+  if (!payloadAvatar) syncAvatarFromFollowList();
+  void refreshRoomFans();
 }
 
 defineExpose({ refreshSide });
 
 watch(
-  () => [props.site, props.roomId, props.payload?.platform, props.payload?.site, props.payload?.room_id],
-  () => refreshRoomMeta(),
-  { immediate: true },
+  () => [
+    props.site,
+    props.roomId,
+    props.payload?.platform,
+    props.payload?.site,
+    props.payload?.room_id,
+    props.payload?.avatar,
+  ],
+  () => {
+    const payloadAvatar = String(props.payload?.avatar || "").trim();
+    roomAvatar.value = payloadAvatar;
+    if (!payloadAvatar) syncAvatarFromFollowList();
+    if (!props.payload?.room_id && !props.roomId) {
+      roomFans.value = "";
+      roomAvatar.value = "";
+      return;
+    }
+    roomFans.value = "";
+    void refreshRoomFans();
+  },
 );
 
 function scrollChatToBottom() {
@@ -235,7 +404,6 @@ function scrollChatToBottom() {
 }
 
 onMounted(() => {
-  if (tab.value === "follow") refreshFollowStatus();
   scrollChatToBottom();
 });
 
@@ -273,7 +441,7 @@ watch(tab, (value) => {
 }
 
 .side-header {
-  padding: .5rem .55rem;
+  padding: 0.2rem .55rem;
   border-bottom: 1px solid var(--gray-7);
 }
 
@@ -284,21 +452,16 @@ watch(tab, (value) => {
   width: 100%;
 }
 
-.room-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: #111;
+.room-aside-avatar {
   flex-shrink: 0;
+  line-height: 0;
 }
 
-.room-avatar--empty {
-  display: grid;
-  place-items: center;
-  font-size: .75rem;
-  color: var(--muted);
-  border: 1px dashed var(--border);
+.room-aside-avatar :deep(.follow-avatar),
+.room-aside-avatar :deep(.follow-avatar--empty) {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 4px;
 }
 
 .room-aside-meta {
@@ -333,6 +496,44 @@ watch(tab, (value) => {
   height: .78em;
   opacity: .7;
   flex-shrink: 0;
+}
+
+.follow-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: .14rem;
+  padding: .22rem .34rem;
+  border: 1px solid rgba(229, 57, 53, 0.35);
+  border-radius: 6px;
+  background: rgba(229, 57, 53, 0.1);
+  color: #f5a0a0;
+  font-size: .62rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color .12s ease, background-color .12s ease, color .12s ease;
+}
+
+.follow-btn:hover {
+  border-color: rgba(229, 57, 53, 0.55);
+  background: rgba(229, 57, 53, 0.18);
+  color: #ffc9c9;
+}
+
+.follow-btn--active {
+  border-color: #e53935;
+  background: rgba(229, 57, 53, 0.28);
+  color: #ffe0e0;
+}
+
+.follow-btn__icon {
+  width: .78rem;
+  height: .78rem;
+}
+
+.follow-btn__text {
+  white-space: nowrap;
 }
 
 .super-follow-btn {
@@ -466,6 +667,17 @@ watch(tab, (value) => {
   color: var(--amber);
   border-color: rgba(243, 208, 78, 0.45);
   background: rgba(243, 208, 78, 0.1);
+}
+
+.recommend-hint {
+  padding: 1rem .65rem;
+  text-align: center;
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+.recommend-hint--err {
+  color: var(--danger);
 }
 
 .chat-list {

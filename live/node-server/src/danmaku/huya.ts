@@ -1,3 +1,5 @@
+import { huyaRoomState } from "../follow/huya-state.js";
+
 const HEADERS = {
   "User-Agent":
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -49,6 +51,7 @@ export async function fetchHuyaDanmakuSession(roomId: string): Promise<HuyaDanma
   const baseList = stream.baseSteamInfoList || [];
   const profile = data.profileInfo || {};
   const liveData = data.liveData || {};
+  const roomState = huyaRoomState(data as Record<string, unknown>);
 
   const ayyuid = Number(profile.yyid || liveData.yyid || 0);
   let topSid = 0;
@@ -67,6 +70,6 @@ export async function fetchHuyaDanmakuSession(roomId: string): Promise<HuyaDanma
     room_id: room,
     ayyuid,
     topSid,
-    is_live: String(data.liveStatus || "").toUpperCase() === "ON",
+    is_live: roomState === "live",
   };
 }

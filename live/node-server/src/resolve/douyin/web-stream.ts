@@ -36,7 +36,11 @@ export interface DouyinRoomData {
   status?: number;
   title?: string;
   cover?: { url_list?: string[] };
-  owner?: { nickname?: string };
+  owner?: {
+    nickname?: string;
+    avatar_thumb?: { url_list?: string[] };
+    avatar_medium?: { url_list?: string[] };
+  };
   anchor_name?: string;
   live_url?: string;
   stream_url?: {

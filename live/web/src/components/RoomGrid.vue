@@ -5,7 +5,12 @@
       :key="roomKey(room)"
       type="button"
       class="room-item"
-      :class="{ 'room-item--selectable': selectMode, 'room-item--selected': isSelected(room) }"
+      :class="{
+        'room-item--selectable': selectMode,
+        'room-item--selected': isSelected(room),
+        'room-item--live': room.liveState === 'live',
+        'room-item--replay': room.liveState === 'replay',
+      }"
       @pointerenter="onItemHover(room)"
       @click="onItemClick(room)"
     >
@@ -13,6 +18,8 @@
         <div class="room-cover-wrap">
           <LazyImage v-if="room.cover" :src="room.cover" image-class="room-cover" />
           <div v-else class="room-cover room-cover--empty">无封面</div>
+          <PlatformCoverBadge v-if="roomSite(room)" :site="roomSite(room)" />
+          <CoverOnlineBadge :online="room.online" :live="room.status !== false && room.liveState !== 'offline'" />
           <span
             v-if="selectMode"
             class="room-check"
@@ -21,8 +28,7 @@
           />
           <span v-if="room.liveState === 'live'" class="room-badge room-badge--live">LIVE</span>
           <span v-else-if="room.liveState === 'replay'" class="room-badge room-badge--replay">录播</span>
-          <span v-if="room.category" class="room-badge room-badge--cat">{{ room.category }}</span>
-          <span v-if="room.online" class="room-badge room-badge--online">{{ room.online }}</span>
+          <span v-if="categoryLabel(room)" class="room-badge room-badge--cat">{{ categoryLabel(room) }}</span>
           <div v-if="room.status === false" class="room-offline">未开播</div>
         </div>
         <p class="room-title">{{ room.title || room.nickname }}</p>
@@ -38,7 +44,10 @@
 import { roomKey as keyOf } from "../api/browse.js";
 import { followKey } from "../utils/prefStore.js";
 import { prefetchRoom } from "../utils/roomPrefetch.js";
+import { displayCategoryName } from "../utils/categoryDisplay.js";
 import LazyImage from "./LazyImage.vue";
+import PlatformCoverBadge from "./PlatformCoverBadge.vue";
+import CoverOnlineBadge from "./CoverOnlineBadge.vue";
 
 const props = defineProps({
   rooms: { type: Array, default: () => [] },
@@ -51,6 +60,14 @@ const emit = defineEmits(["select", "toggle-select"]);
 
 function roomKey(room) {
   return keyOf(room);
+}
+
+function roomSite(room) {
+  return room.site || room.siteId || "";
+}
+
+function categoryLabel(room) {
+  return displayCategoryName(roomSite(room) || props.site, room.category, room.cid);
 }
 
 function selectionKey(room) {
@@ -130,7 +147,29 @@ function onItemClick(room) {
   border-radius: 12px;
   border: 2px solid transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
-  transition: border-color .15s, transform .12s;
+  transition: border-color .15s, box-shadow .15s ease, transform .12s;
+}
+
+.room-item--live .room-item-info {
+  border-color: rgba(229, 57, 53, 0.88);
+  box-shadow:
+    inset 0 0 28px 10px rgba(229, 57, 53, 0.38),
+    inset 0 0 12px 3px rgba(229, 57, 53, 0.22),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+  animation: room-cover-live-pulse 2.2s ease-in-out infinite;
+}
+
+.room-item--replay .room-item-info {
+  border-color: rgba(243, 208, 78, 0.88);
+  box-shadow:
+    inset 0 0 28px 10px rgba(243, 208, 78, 0.36),
+    inset 0 0 12px 3px rgba(243, 208, 78, 0.22),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.room-item--live:hover .room-item-info,
+.room-item--replay:hover .room-item-info {
+  border-color: rgba(243, 208, 78, 0.75);
 }
 
 .room-item:hover .room-item-info {
@@ -163,7 +202,8 @@ function onItemClick(room) {
 .room-check {
   position: absolute;
   top: .35rem;
-  left: .35rem;
+  right: .35rem;
+  left: auto;
   z-index: 3;
   width: 1.1rem;
   height: 1.1rem;
@@ -200,16 +240,9 @@ function onItemClick(room) {
   top: 0;
   left: 0;
   border-bottom-right-radius: 8px;
-  color: #fff;
-  background: #7b5ea7;
+  color: #1a1a1a;
+  background: var(--amber);
   font-weight: 600;
-}
-
-.room-badge--online {
-  right: 0;
-  bottom: 0;
-  border-top-left-radius: 8px;
-  color: var(--live);
 }
 
 .room-badge--cat {
@@ -221,6 +254,11 @@ function onItemClick(room) {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.room-cover-wrap :deep(.cover-online-badge) {
+  font-size: .78rem;
+  padding: .3rem .52rem;
 }
 
 .room-offline {
@@ -257,5 +295,20 @@ function onItemClick(room) {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+@keyframes room-cover-live-pulse {
+  0%, 100% {
+    box-shadow:
+      inset 0 0 24px 8px rgba(229, 57, 53, 0.34),
+      inset 0 0 10px 2px rgba(229, 57, 53, 0.18),
+      0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    box-shadow:
+      inset 0 0 34px 12px rgba(229, 57, 53, 0.46),
+      inset 0 0 14px 4px rgba(229, 57, 53, 0.26),
+      0 2px 8px rgba(0, 0, 0, 0.25);
+  }
 }
 </style>

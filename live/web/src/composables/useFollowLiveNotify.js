@@ -27,7 +27,7 @@ export function useFollowLiveNotify() {
     const platform = getPlatform(snap.site)?.label || snap.site;
     const payload = {
       site: snap.site,
-      id: String(snap.id || room?.id || ""),
+      roomId: String(snap.id || room?.id || ""),
       platform,
       message: label,
     };
@@ -99,8 +99,8 @@ export function useFollowLiveNotify() {
   }
 
   function onToastClick(toast) {
-    if (!toast?.site || !toast?.id) return;
-    router.push({ name: "play", params: { site: toast.site, id: toast.id } });
+    if (!toast?.site || !toast?.roomId) return;
+    router.push({ name: "play", params: { site: toast.site, id: toast.roomId } });
   }
 
   onMounted(() => {

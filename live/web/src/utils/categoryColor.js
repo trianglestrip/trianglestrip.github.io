@@ -1,4 +1,6 @@
-/** 分类名 → 稳定配色（跨平台同名同色） */
+import { displayCategoryName } from "./categoryDisplay.js";
+
+/** 分类名 → 稳定配色（跨平台同名同色，基于统一展示名） */
 const CATEGORY_PALETTE = [
   { color: "#6eb5ff", bg: "rgba(110, 181, 255, 0.18)" },
   { color: "#7dd87d", bg: "rgba(125, 216, 125, 0.18)" },
@@ -23,12 +25,17 @@ function hashCategory(name) {
   return Math.abs(hash);
 }
 
-export function getCategoryStyle(category) {
-  const name = String(category || "").trim();
+export function getCategoryStyle(category, site = "", cid = "", options = {}) {
+  const name = displayCategoryName(site, category, cid);
   if (!name) return null;
   const palette = CATEGORY_PALETTE[hashCategory(name) % CATEGORY_PALETTE.length];
+  const bgAlpha = Number(options.bgAlpha);
+  const backgroundColor =
+    Number.isFinite(bgAlpha) && bgAlpha >= 0
+      ? palette.bg.replace(/,\s*[\d.]+\)$/, `, ${bgAlpha})`)
+      : palette.bg;
   return {
     color: palette.color,
-    backgroundColor: palette.bg,
+    backgroundColor,
   };
 }

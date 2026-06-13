@@ -1,4 +1,4 @@
-import { computed, onBeforeUnmount, ref, watch } from "vue";
+import { computed, isRef, onBeforeUnmount, ref, unref, watch } from "vue";
 import { fetchFollowStatus } from "../api/follow.js";
 import { followKey } from "../utils/prefStore.js";
 import { mergeFollowRoom, sortFollowRooms } from "../utils/followDisplay.js";
@@ -6,6 +6,7 @@ import { mergeFollowRoom, sortFollowRooms } from "../utils/followDisplay.js";
 export function useFollowStatus(followsRef, { active = true, getFocusCategory, pollInterval = 0 } = {}) {
   const statusMap = ref({});
   const loading = ref(false);
+  const activeRef = isRef(active) ? active : ref(active);
   let refreshTimer = 0;
   let pollTimer = 0;
 
@@ -33,6 +34,14 @@ export function useFollowStatus(followsRef, { active = true, getFocusCategory, p
       if (snap.state) room.state = snap.state;
       if (snap.fans) room.fans = snap.fans;
       if (snap.online) room.online = snap.online;
+      if (snap.diamondFans) room.diamondFans = snap.diamondFans;
+      if (snap.fanGroup) room.fanGroup = snap.fanGroup;
+      if (snap.guard) room.guard = snap.guard;
+      if (snap.vip) room.vip = snap.vip;
+      if (snap.guardNormal != null) room.guardNormal = snap.guardNormal;
+      if (snap.guardSuper != null) room.guardSuper = snap.guardSuper;
+      if (snap.lastLiveAt) room.lastLiveAt = snap.lastLiveAt;
+      if (snap.liveStartAt) room.liveStartAt = snap.liveStartAt;
     }
   }
 
@@ -59,7 +68,7 @@ export function useFollowStatus(followsRef, { active = true, getFocusCategory, p
   function scheduleRefresh() {
     clearTimeout(refreshTimer);
     refreshTimer = setTimeout(() => {
-      if (active) refresh();
+      if (unref(activeRef)) refresh();
     }, 120);
   }
 
@@ -92,7 +101,7 @@ export function useFollowStatus(followsRef, { active = true, getFocusCategory, p
 
   if (pollInterval > 0) {
     pollTimer = setInterval(() => {
-      if (active) refresh();
+      if (unref(activeRef)) refresh();
     }, pollInterval);
   }
 

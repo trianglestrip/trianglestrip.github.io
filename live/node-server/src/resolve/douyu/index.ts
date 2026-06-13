@@ -1,5 +1,5 @@
 import { pickQualityName } from "../schema.js";
-import { fetchBetard, getRoomId, coverFromRoom, type BetardRoom } from "./betard.js";
+import { fetchBetard, getRoomId, coverFromRoom, resolveDouyuAvatar, type BetardRoom } from "./betard.js";
 import { fetchWhiteKey } from "./encryption.js";
 import { fetchH5PlayV1, flvFromApiData, isDouyucdnUrl, type PlayV1Response } from "./play-v1.js";
 import { normalizeUrl } from "./normalize.js";
@@ -17,6 +17,7 @@ export interface DouyuMeta {
   anchor_name: string;
   title: string;
   cover: string;
+  avatar: string;
   available_qualities: Array<{ name: string; rate: number }>;
   offline?: boolean;
   context?: {
@@ -84,6 +85,7 @@ interface LoadPlayContextOpts {
   rid?: string;
   roomRaw?: BetardRoom;
   white?: Awaited<ReturnType<typeof fetchWhiteKey>>;
+  avatar?: string;
 }
 
 async function loadPlayContext(url: string, preferredCdn = "hw-h5", opts?: LoadPlayContextOpts) {
@@ -113,6 +115,7 @@ async function loadPlayContext(url: string, preferredCdn = "hw-h5", opts?: LoadP
     anchor_name: roomRaw.nickname || "",
     title: roomRaw.room_name || roomRaw.nickname || "",
     cover: coverFromRoom(roomRaw),
+    avatar: opts?.avatar ?? await resolveDouyuAvatar(rid, roomRaw),
     white,
     base,
     multirates,
@@ -130,6 +133,7 @@ function metaFromContext(ctx: Awaited<ReturnType<typeof loadPlayContext>>): Douy
     anchor_name: ctx.anchor_name,
     title: ctx.title || ctx.anchor_name,
     cover: ctx.cover,
+    avatar: ctx.avatar,
     available_qualities: availableQualities(ctx.multirates),
     context: {
       rid: ctx.rid,
@@ -160,6 +164,7 @@ async function fetchTierResponse(ctx: DouyuPlayContext, item: { rate?: number })
 export async function loadMeta(url: string, preferredCdn = "hw-h5"): Promise<DouyuMeta> {
   const rid = await getRoomId(url);
   const [roomRaw, white] = await Promise.all([fetchBetard(rid), fetchWhiteKey()]);
+  const avatar = await resolveDouyuAvatar(rid, roomRaw);
   if (roomRaw.show_status !== 1) {
     return {
       site: "douyu",
@@ -168,11 +173,12 @@ export async function loadMeta(url: string, preferredCdn = "hw-h5"): Promise<Dou
       anchor_name: roomRaw.nickname || "",
       title: roomRaw.room_name || roomRaw.nickname || "",
       cover: coverFromRoom(roomRaw),
+      avatar,
       available_qualities: [],
       offline: true,
     };
   }
-  const ctx = await loadPlayContext(url, preferredCdn, { rid, roomRaw, white });
+  const ctx = await loadPlayContext(url, preferredCdn, { rid, roomRaw, white, avatar });
   return metaFromContext(ctx);
 }
 

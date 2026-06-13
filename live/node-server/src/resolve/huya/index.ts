@@ -1,6 +1,8 @@
 import { pickQualityName } from "../schema.js";
+import type { HuyaRoomState } from "../../follow/huya-state.js";
 import {
   fetchAppStreamData,
+  fetchHuyaProfileBrief,
   fetchWebStreamData,
   qualityItems,
   streamLines,
@@ -21,8 +23,10 @@ export interface HuyaMeta {
   anchor_name: string;
   title: string;
   cover: string;
+  avatar: string;
   available_qualities: Array<{ name: string; rate: number }>;
   offline?: boolean;
+  room_state?: HuyaRoomState;
   context?: {
     web_data: HuyaWebData;
     app_fallback_tier?: HuyaTier;
@@ -30,10 +34,15 @@ export interface HuyaMeta {
 }
 
 async function loadPlayContext(url: string) {
-  const webData = await fetchWebStreamData(url);
+  const roomId = url.replace(/\/$/, "").split("/").pop() || "";
+  const [webData, profileBrief] = await Promise.all([
+    fetchWebStreamData(url),
+    fetchHuyaProfileBrief(roomId),
+  ]);
   const gameInfo = webData.data?.[0]?.gameLiveInfo || {};
   const streamList = webData.data?.[0]?.gameStreamInfoList || [];
-  const roomId = url.replace(/\/$/, "").split("/").pop() || "";
+  const avatar = profileBrief.avatar;
+  const roomState = profileBrief.roomState;
 
   if (!streamList.length) {
     let appData: Awaited<ReturnType<typeof fetchAppStreamData>> = {};
@@ -49,6 +58,8 @@ async function loadPlayContext(url: string) {
         anchor_name: appData.anchor_name || String(gameInfo.nick || ""),
         title: appData.title || String(gameInfo.introduction || gameInfo.roomName || ""),
         cover: String(gameInfo.screenshot || ""),
+        avatar,
+        room_state: roomState,
         web_data: webData,
         qualities: [],
         offline: true,
@@ -67,6 +78,8 @@ async function loadPlayContext(url: string) {
         anchor_name: appData.anchor_name || String(gameInfo.nick || ""),
         title: appData.title || String(gameInfo.introduction || ""),
         cover: String(gameInfo.screenshot || ""),
+        avatar,
+        room_state: roomState,
         web_data: webData,
         qualities: [{ name: "默认", rate: 0 }],
         app_fallback_tier: tier,
@@ -81,6 +94,8 @@ async function loadPlayContext(url: string) {
     anchor_name: String(gameInfo.nick || ""),
     title: String(gameInfo.introduction || gameInfo.roomName || ""),
     cover: String(gameInfo.screenshot || ""),
+    avatar,
+    room_state: roomState,
     web_data: webData,
     qualities: qualityItems(webData),
   };
@@ -98,8 +113,10 @@ function metaFromContext(ctx: Awaited<ReturnType<typeof loadPlayContext>>): Huya
     anchor_name: ctx.anchor_name,
     title: ctx.title || ctx.anchor_name,
     cover: ctx.cover,
+    avatar: ctx.avatar,
     available_qualities: ctx.qualities,
     offline: Boolean(ctx.offline),
+    room_state: ctx.room_state,
     context,
   };
 }

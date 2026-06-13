@@ -9,6 +9,7 @@ import { buildTimeReport } from "../resolve/timing.js";
 import { fetchFollowSnapshots } from "../follow/status.js";
 import { loadFollowStore, normalizeStoredFollow, syncFollowStore } from "../follow/store.js";
 import { fetchHuyaDanmakuSession } from "../danmaku/huya.js";
+import { crossCategoryMapPayload } from "../browse/category-cross-map.js";
 import { applyCorsHeaders } from "../middleware/cors.js";
 import { sendJson } from "./json.js";
 
@@ -204,6 +205,47 @@ export async function handleApi(
       }
       ctx.cache.set(cacheKey, result, { ttl: 60 });
       sendJson(res, ctx.config, { ok: true, site, ...result });
+    } catch (err) {
+      sendApiError(res, ctx.config, err);
+    }
+    return true;
+  }
+
+  if (pathname === "/api/category-cross-map" && req.method === "GET") {
+    sendJson(res, ctx.config, { ok: true, ...crossCategoryMapPayload() });
+    return true;
+  }
+
+  if (pathname === "/api/recommend-related" && req.method === "GET") {
+    const query = readQuery(req);
+    const site = query.get("site") || "douyu";
+    const category = query.get("category") || "";
+    const cid = query.get("cid") || "";
+    const page = Number(query.get("page") || "1") || 1;
+    const perSite = Number(query.get("perSite") || "5") || 5;
+    const cacheKey = `browse:related:${site}:${category}:${cid}:${page}:${perSite}`;
+    const cached = ctx.cache.get(cacheKey);
+    if (cached && typeof cached === "object") {
+      sendJson(res, ctx.config, { ok: true, ...(cached as Record<string, unknown>), cached: true });
+      return true;
+    }
+    try {
+      const payload = await ctx.browseApi.fetchRelatedRecommendRooms(
+        site,
+        category,
+        cid,
+        page,
+        perSite,
+      );
+      const result = {
+        list: payload.list || [],
+        categoryKey: payload.categoryKey,
+        categoryName: payload.categoryName,
+        page,
+        perSite,
+      };
+      ctx.cache.set(cacheKey, result, { ttl: 60 });
+      sendJson(res, ctx.config, { ok: true, ...result });
     } catch (err) {
       sendApiError(res, ctx.config, err);
     }

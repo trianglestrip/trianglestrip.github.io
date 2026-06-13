@@ -51,6 +51,7 @@
         />
         <FollowRoomList
           v-else
+          layout="grid"
           :rooms="filteredFollows"
           :loading="followStatusLoading"
           :show-delete="false"

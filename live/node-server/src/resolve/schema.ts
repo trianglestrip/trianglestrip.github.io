@@ -34,12 +34,15 @@ export interface MetaLike {
   anchor_name?: string;
   title?: string;
   cover?: string;
+  avatar?: string;
   available_qualities?: QualityItem[];
   m3u8_url?: string;
   offline?: boolean;
+  room_state?: string;
 }
 
 export function buildOfflineRoomPayload(meta: MetaLike, opts?: { source?: string }): Record<string, unknown> {
+  const roomState = meta.room_state || "offline";
   return {
     source_url: meta.source_url,
     source: opts?.source || "streamget",
@@ -50,6 +53,8 @@ export function buildOfflineRoomPayload(meta: MetaLike, opts?: { source?: string
     anchor_name: meta.anchor_name || "",
     title: meta.title || meta.anchor_name || "",
     cover: meta.cover || "",
+    avatar: meta.avatar || "",
+    room_state: roomState,
     is_live: false,
     status: false,
     offline: true,
@@ -65,7 +70,9 @@ export function buildOfflineRoomPayload(meta: MetaLike, opts?: { source?: string
       title: meta.title || "",
       anchor_name: meta.anchor_name || "",
       cover: meta.cover || "",
+      avatar: meta.avatar || "",
       is_live: false,
+      room_state: roomState,
       available_qualities: [],
     },
     ok: true,
@@ -115,6 +122,7 @@ export function buildRoomPayload(
     .flatMap((tier) => tier.lines || [])
     .map((line) => line.url)
     .filter((url) => url && url !== playUrl);
+  const roomState = meta.room_state || "live";
 
   const payload: Record<string, unknown> = {
     source_url: meta.source_url,
@@ -126,8 +134,10 @@ export function buildRoomPayload(
     anchor_name: meta.anchor_name || "",
     title: meta.title || meta.anchor_name || "",
     cover: meta.cover || "",
-    is_live: true,
-    status: true,
+    avatar: meta.avatar || "",
+    room_state: roomState,
+    is_live: roomState === "live",
+    status: roomState === "live",
     streams: tiers.map((tier) => ({ name: tier.name, lines: tier.lines })),
     available_qualities: meta.available_qualities || [],
     play_url: playUrl,
@@ -140,7 +150,9 @@ export function buildRoomPayload(
       title: meta.title || "",
       anchor_name: meta.anchor_name || "",
       cover: meta.cover || "",
-      is_live: true,
+      avatar: meta.avatar || "",
+      is_live: roomState === "live",
+      room_state: roomState,
       available_qualities: meta.available_qualities || [],
     },
     ok: true,

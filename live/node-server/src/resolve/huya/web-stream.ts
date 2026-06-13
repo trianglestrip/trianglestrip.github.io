@@ -1,4 +1,6 @@
+import { huyaRoomState, profileNeedsPageCheck, type HuyaPageRoomFlags } from "../../follow/huya-state.js";
 import { buildAntiCode } from "./anti-code.js";
+import { httpsUrl } from "../../utils/https-url.js";
 
 const PC_HEADERS = {
   "User-Agent":
@@ -20,6 +22,84 @@ export interface HuyaWebData {
   }>;
   vMultiStreamInfo?: Array<{ sDisplayName?: string; iBitRate?: number }>;
   live_url?: string;
+}
+
+async function fetchHuyaProfilePayload(roomId: string): Promise<Record<string, unknown> | null> {
+  const rid = String(roomId || "").trim();
+  if (!rid) return null;
+  const params = new URLSearchParams({
+    m: "Live",
+    do: "profileRoom",
+    roomid: rid,
+    showSecret: "1",
+  });
+  const res = await fetch(`https://mp.huya.com/cache.php?${params}`, {
+    headers: PC_HEADERS,
+    signal: AbortSignal.timeout(12000),
+  });
+  if (!res.ok) return null;
+  const json = (await res.json()) as { data?: Record<string, unknown> };
+  return json.data || null;
+}
+
+export async function fetchHuyaProfileAvatar(roomId: string): Promise<string> {
+  try {
+    const data = await fetchHuyaProfilePayload(roomId);
+    if (!data) return "";
+    const profile = (data.profileInfo || {}) as Record<string, unknown>;
+    return httpsUrl(String(profile.avatar180 || profile.avatar || ""));
+  } catch {
+    return "";
+  }
+}
+
+export async function fetchHuyaPageRoomFlags(roomId: string): Promise<HuyaPageRoomFlags | null> {
+  const rid = String(roomId || "").trim();
+  if (!rid) return null;
+  try {
+    const res = await fetch(`https://www.huya.com/${rid}`, {
+      headers: PC_HEADERS,
+      signal: AbortSignal.timeout(12000),
+    });
+    if (!res.ok) return null;
+    const html = await res.text();
+    const match = html.match(/TT_ROOM_DATA\s*=\s*(\{[\s\S]*?\});/);
+    if (!match) return null;
+    const tt = JSON.parse(match[1]) as { isOn?: boolean; isReplay?: boolean };
+    return { isOn: Boolean(tt.isOn), isReplay: Boolean(tt.isReplay) };
+  } catch {
+    return null;
+  }
+}
+
+async function resolveHuyaRoomState(
+  data: Record<string, unknown>,
+  roomId: string,
+): Promise<ReturnType<typeof huyaRoomState>> {
+  let page: HuyaPageRoomFlags | undefined;
+  if (profileNeedsPageCheck(data)) {
+    const flags = await fetchHuyaPageRoomFlags(roomId);
+    if (flags) page = flags;
+  }
+  return huyaRoomState(data, page);
+}
+
+export async function fetchHuyaProfileBrief(roomId: string): Promise<{
+  avatar: string;
+  roomState: ReturnType<typeof huyaRoomState>;
+}> {
+  try {
+    const data = await fetchHuyaProfilePayload(roomId);
+    if (!data) return { avatar: "", roomState: "offline" };
+    const profile = (data.profileInfo || {}) as Record<string, unknown>;
+    const roomState = await resolveHuyaRoomState(data, roomId);
+    return {
+      avatar: httpsUrl(String(profile.avatar180 || profile.avatar || "")),
+      roomState,
+    };
+  } catch {
+    return { avatar: "", roomState: "offline" };
+  }
 }
 
 export async function fetchWebStreamData(url: string): Promise<HuyaWebData> {
@@ -88,9 +168,16 @@ export async function fetchAppStreamData(url: string): Promise<HuyaAppData> {
     };
   };
 
-  const anchorName = jsonData.data?.profileInfo?.nick || "";
-  const liveStatus = jsonData.data?.realLiveStatus;
-  if (liveStatus !== "ON") {
+  const profileData = (jsonData.data || {}) as Record<string, unknown>;
+  const profileInfo = (profileData.profileInfo || {}) as Record<string, unknown>;
+  const anchorName = String(profileInfo.nick || "");
+  let page: HuyaPageRoomFlags | undefined;
+  if (profileNeedsPageCheck(profileData)) {
+    const flags = await fetchHuyaPageRoomFlags(roomId);
+    if (flags) page = flags;
+  }
+  const roomState = huyaRoomState(profileData, page);
+  if (roomState !== "live") {
     return { anchor_name: anchorName, is_live: false };
   }
 

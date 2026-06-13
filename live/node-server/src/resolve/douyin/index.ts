@@ -29,6 +29,7 @@ export interface DouyinMeta {
   anchor_name: string;
   title: string;
   cover: string;
+  avatar: string;
   available_qualities: Array<{ name: string; rate: number }>;
   m3u8_url?: string;
   offline?: boolean;
@@ -70,6 +71,13 @@ function tiersFromRoomData(roomData: DouyinRoomData): DouyinTier[] {
   return tiers;
 }
 
+function avatarFromRoomData(roomData: DouyinRoomData): string {
+  const owner = roomData.owner || {};
+  const thumb = owner.avatar_thumb?.url_list || owner.avatar_medium?.url_list || [];
+  const url = thumb[0] || "";
+  return url.startsWith("//") ? `https:${url}` : url;
+}
+
 function metaFromRoomData(roomData: DouyinRoomData, webRid: string, sourceUrl: string): DouyinMeta {
   const tiers = tiersFromRoomData(roomData);
   const coverList = roomData.cover?.url_list || [];
@@ -80,6 +88,7 @@ function metaFromRoomData(roomData: DouyinRoomData, webRid: string, sourceUrl: s
     anchor_name: roomData.anchor_name || "",
     title: roomData.title || roomData.anchor_name || "",
     cover: coverList[0] || "",
+    avatar: avatarFromRoomData(roomData),
     available_qualities: tiers.map((tier, index) => ({ name: tier.name, rate: tiers.length - index })),
     m3u8_url: tiers[0]?.lines[0]?.url.includes(".m3u8") ? tiers[0].lines[0].url : "",
     context: { room_data: roomData },

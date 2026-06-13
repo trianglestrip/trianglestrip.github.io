@@ -28,6 +28,8 @@
           root-margin="160px"
         />
         <div v-else class="follow-preview-cover follow-preview-cover--empty">无画面</div>
+        <PlatformCoverBadge v-if="room.site" :site="room.site" />
+        <CoverOnlineBadge :online="room.online" :live="room.state !== 'offline'" />
         <span
           v-if="selectMode"
           class="follow-preview-check"
@@ -36,15 +38,43 @@
         />
         <div v-if="room.state === 'offline'" class="follow-preview-offline">未开播</div>
       </div>
-      <p class="follow-preview-anchor">{{ room.anchor || room.id }}</p>
+      <p class="follow-preview-anchor">
+        <span class="follow-preview-anchor-name">{{ room.anchor || room.id }}</span>
+        <span
+          v-if="room.state === 'offline' && lastLiveLabel(room)"
+          class="follow-preview-last-live"
+        >{{ lastLiveLabel(room) }}</span>
+      </p>
+      <p v-if="showPreviewStats(room)" class="follow-preview-stats">
+        <span
+          v-if="showOnlineStat(room)"
+          class="follow-preview-stat"
+          :title="`观看 ${room.online}`"
+        >
+          <Icon name="users" class="follow-preview-stat-fa" />
+          <span>{{ room.online }}</span>
+        </span>
+        <span
+          v-if="liveStartLabel(room)"
+          class="follow-preview-stat"
+          :title="`开播 ${liveStartLabel(room)}`"
+        >
+          <Icon name="timer" class="follow-preview-stat-fa" />
+          <span>{{ liveStartLabel(room) }}</span>
+        </span>
+      </p>
     </button>
   </div>
 </template>
 
 <script setup>
 import LazyImage from "./LazyImage.vue";
+import Icon from "./Icon.vue";
+import PlatformCoverBadge from "./PlatformCoverBadge.vue";
+import CoverOnlineBadge from "./CoverOnlineBadge.vue";
 import { followKey } from "../utils/prefStore.js";
 import { prefetchRoom } from "../utils/roomPrefetch.js";
+import { formatLastLiveAt } from "../utils/followDisplay.js";
 
 const props = defineProps({
   rooms: { type: Array, default: () => [] },
@@ -76,6 +106,27 @@ function onItemClick(room) {
   }
   emit("select", room);
 }
+
+function lastLiveLabel(room) {
+  if (room.state !== "offline") return "";
+  const text = formatLastLiveAt(room.lastLiveAt);
+  return text ? `上次 ${text}` : "";
+}
+
+function showOnlineStat(room) {
+  if (room.state === "offline") return false;
+  const online = String(room.online || "").trim();
+  return Boolean(online && online !== "—" && online !== "-");
+}
+
+function liveStartLabel(room) {
+  if (room.state === "offline") return "";
+  return formatLastLiveAt(room.liveStartAt);
+}
+
+function showPreviewStats(room) {
+  return showOnlineStat(room) || liveStartLabel(room);
+}
 </script>
 
 <style scoped>
@@ -100,6 +151,16 @@ function onItemClick(room) {
   font-size: .74rem;
 }
 
+.follow-preview-grid--compact :deep(.platform-cover-badge) {
+  font-size: .66rem;
+  padding: .22rem .4rem;
+}
+
+.follow-preview-grid--compact :deep(.cover-online-badge) {
+  font-size: .66rem;
+  padding: .22rem .4rem;
+}
+
 .follow-preview-item {
   padding: 0;
   border: none;
@@ -121,12 +182,18 @@ function onItemClick(room) {
 }
 
 .follow-preview-item--live .follow-preview-cover-wrap {
-  border-color: rgba(229, 57, 53, 0.85);
-  animation: follow-preview-live-pulse 2s ease-in-out infinite;
+  border-color: rgba(229, 57, 53, 0.88);
+  box-shadow:
+    inset 0 0 28px 10px rgba(229, 57, 53, 0.38),
+    inset 0 0 12px 3px rgba(229, 57, 53, 0.22);
+  animation: follow-preview-live-pulse 2.2s ease-in-out infinite;
 }
 
 .follow-preview-item--replay .follow-preview-cover-wrap {
-  border-color: rgba(180, 130, 220, 0.75);
+  border-color: rgba(243, 208, 78, 0.88);
+  box-shadow:
+    inset 0 0 28px 10px rgba(243, 208, 78, 0.36),
+    inset 0 0 12px 3px rgba(243, 208, 78, 0.22);
 }
 
 .follow-preview-item--offline .follow-preview-cover-wrap {
@@ -166,7 +233,8 @@ function onItemClick(room) {
 .follow-preview-check {
   position: absolute;
   top: .35rem;
-  left: .35rem;
+  right: .35rem;
+  left: auto;
   z-index: 2;
   width: 1.05rem;
   height: 1.05rem;
@@ -200,6 +268,55 @@ function onItemClick(room) {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: var(--text);
+  display: flex;
+  align-items: baseline;
+  gap: .28rem;
+}
+
+.follow-preview-last-live {
+  flex-shrink: 0;
+  font-size: .68rem;
+  color: var(--muted);
+}
+
+.follow-preview-stats {
+  margin: .22rem .15rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .2rem;
+  flex-wrap: wrap;
+}
+
+.follow-preview-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: .1rem;
+  flex-shrink: 0;
+  font-size: .65rem;
+  font-weight: 600;
+  line-height: 1.15;
+  padding: .08rem .18rem;
+  border-radius: 3px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.06);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.follow-preview-stat-fa {
+  font-size: .72em;
+  line-height: 1;
+  opacity: 0.88;
+}
+
+.follow-preview-grid--compact .follow-preview-stats {
+  margin-top: .18rem;
+}
+
+.follow-preview-grid--compact .follow-preview-stat {
+  font-size: .58rem;
+  padding: .06rem .16rem;
 }
 
 .follow-preview-item--offline .follow-preview-anchor {
@@ -207,7 +324,15 @@ function onItemClick(room) {
 }
 
 @keyframes follow-preview-live-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.35); }
-  50% { box-shadow: 0 0 0 3px rgba(229, 57, 53, 0.12); }
+  0%, 100% {
+    box-shadow:
+      inset 0 0 24px 8px rgba(229, 57, 53, 0.34),
+      inset 0 0 10px 2px rgba(229, 57, 53, 0.18);
+  }
+  50% {
+    box-shadow:
+      inset 0 0 34px 12px rgba(229, 57, 53, 0.46),
+      inset 0 0 14px 4px rgba(229, 57, 53, 0.26);
+  }
 }
 </style>

@@ -15,6 +15,7 @@ export interface BetardRoom {
   coverSrc?: string;
   room_src?: string;
   videoLoop?: number;
+  avatar?: string | { big?: string; middle?: string; small?: string };
 }
 
 export async function getRoomId(url: string): Promise<string> {
@@ -48,6 +49,46 @@ export async function fetchBetard(rid: string): Promise<BetardRoom> {
   }
   const data = (await res.json()) as { room: BetardRoom };
   return data.room;
+}
+
+import { httpsUrl } from "../../utils/https-url.js";
+
+export function avatarFromRoom(room: BetardRoom): string {
+  const raw = room as unknown as Record<string, unknown>;
+  const avatar = raw.avatar;
+  if (avatar && typeof avatar === "object") {
+    const obj = avatar as Record<string, unknown>;
+    return httpsUrl(String(obj.big || obj.middle || obj.small || ""));
+  }
+  return httpsUrl(String(avatar || ""));
+}
+
+export async function fetchDouyuRoomInfo(rid: string): Promise<Record<string, unknown> | null> {
+  const headers = {
+    "User-Agent": USER_AGENT,
+    Referer: "https://www.douyu.com/",
+    Origin: "https://www.douyu.com",
+    "Client-Type": "web",
+  };
+  try {
+    const res = await fetch(`https://m.douyu.com/api/room/info?rid=${rid}`, {
+      headers,
+      signal: AbortSignal.timeout(12000),
+    });
+    if (!res.ok) return null;
+    const payload = (await res.json()) as { code?: number; data?: { roomInfo?: Record<string, unknown> } };
+    if (Number(payload.code ?? -1) !== 0) return null;
+    return payload.data?.roomInfo || null;
+  } catch {
+    return null;
+  }
+}
+
+export async function resolveDouyuAvatar(rid: string, room: BetardRoom): Promise<string> {
+  const fromRoom = avatarFromRoom(room);
+  if (fromRoom) return fromRoom;
+  const info = await fetchDouyuRoomInfo(rid);
+  return httpsUrl(String(info?.avatar || ""));
 }
 
 export function coverFromRoom(room: BetardRoom): string {

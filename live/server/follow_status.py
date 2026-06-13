@@ -57,14 +57,28 @@ def _douyu_state(room: dict) -> str:
 
 
 def _huya_state(data: dict) -> str:
-    status_raw = str(data.get("liveStatus") or data.get("realLiveStatus") or "").upper()
-    if status_raw == "ON":
-        return "live"
-    if status_raw in {"REPLAY", "VOD"}:
-        return "replay"
     live_data = data.get("liveData") or {}
-    if live_data.get("isReplay") in (1, "1", True):
-        return "replay"
+    live_status = str(data.get("liveStatus") or "").upper()
+    real_live_status = str(data.get("realLiveStatus") or "").upper()
+    if live_status == "OFF" and real_live_status == "OFF":
+        return "offline"
+    stream = data.get("stream") or {}
+    has_flv = bool(stream.get("baseSteamInfoList"))
+    hls = str(live_data.get("hls") or live_data.get("hlsUrl") or "")
+    replay_hint = (
+        live_data.get("isReplay") in (1, "1", True)
+        or live_status in {"REPLAY", "VOD"}
+        or real_live_status in {"REPLAY", "VOD"}
+        or ("livereplay" in hls or "al-vod.cdn.huya.com" in hls or "/vhuya/clips/" in hls)
+    )
+    if live_status == "ON" or real_live_status == "ON":
+        if live_data.get("isReplay") in (1, "1", True):
+            return "replay"
+        return "live"
+    if replay_hint:
+        return "replay" if has_flv else "offline"
+    if has_flv and live_status != "OFF" and real_live_status != "OFF":
+        return "live"
     return "offline"
 
 

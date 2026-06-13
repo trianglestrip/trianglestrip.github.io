@@ -28,19 +28,14 @@
         :class="{ 'follow-check--on': isSelected(room) }"
         aria-hidden="true"
       />
-      <div
-        class="follow-avatar-wrap"
-        :class="avatarWrapClass(room)"
-        :aria-label="selectMode ? undefined : followStateLabel(room.state)"
-      >
-        <LazyImage
-          v-if="room.avatar"
-          :src="room.avatar"
-          image-class="follow-avatar"
-          root-margin="120px"
-        />
-        <div v-else class="follow-avatar follow-avatar--empty">{{ room.anchor?.slice(0, 1) || "?" }}</div>
-      </div>
+      <FollowAvatar
+        :src="room.avatar"
+        :label="room.anchor?.slice(0, 1) || '?'"
+        :state="room.state"
+        :compact="compact"
+        :grid="layout === 'grid'"
+        root-margin="120px"
+      />
       <div class="follow-main" :class="{ 'follow-main--compact': compact }">
         <div class="follow-body">
           <div class="follow-title-row">
@@ -50,15 +45,6 @@
               :title="platformLabel(room.site)"
             >{{ platformLabel(room.site) }}</span>
             <p class="follow-title">{{ displayRoomTitle(room) }}</p>
-          </div>
-          <div v-if="compact" class="follow-anchor-row follow-anchor-row--compact">
-            <span
-              v-if="room.category"
-              class="follow-category-tag"
-              :style="categoryStyle(room.category)"
-              :title="room.category"
-            >{{ room.category }}</span>
-            <span class="follow-anchor">{{ room.anchor || room.id }}</span>
             <span
               v-if="showOnlineStat(room)"
               class="follow-online-inline"
@@ -73,26 +59,28 @@
               <span>{{ room.online }}</span>
             </span>
           </div>
-          <div v-else class="follow-anchor-row">
+          <div class="follow-anchor-row" :class="{ 'follow-anchor-row--compact': compact }">
+            <div class="follow-anchor-main">
+              <span
+                v-if="categoryLabel(room)"
+                class="follow-category-tag"
+                :style="categoryStyle(room)"
+                :title="categoryLabel(room)"
+              >{{ categoryLabel(room) }}</span>
+              <span class="follow-anchor">{{ room.anchor || room.id }}</span>
+              <span
+                v-if="room.state === 'offline' && lastLiveLabel(room)"
+                class="follow-last-live"
+                :title="`上次直播 ${lastLiveLabel(room)}`"
+              >{{ lastLiveLabel(room) }}</span>
+            </div>
             <span
-              v-if="room.category"
-              class="follow-category-tag"
-              :style="categoryStyle(room.category)"
-              :title="room.category"
-            >{{ room.category }}</span>
-            <span class="follow-anchor">{{ room.anchor || room.id }}</span>
-            <span
-              v-if="showOnlineStat(room)"
-              class="follow-online-inline"
-              :class="{ 'follow-online-inline--live': room.state === 'live' }"
-              :title="`观看 ${room.online}`"
+              v-if="liveStartLabel(room)"
+              class="follow-live-start-inline"
+              :title="`开播 ${liveStartLabel(room)}`"
             >
-              <Icon
-                name="users"
-                class="follow-online-fa"
-                :class="{ 'fa-bounce': room.state === 'live' }"
-              />
-              <span>{{ room.online }}</span>
+              <Icon name="timer" class="follow-live-start-fa" />
+              <span>{{ liveStartLabel(room) }}</span>
             </span>
           </div>
           <p v-if="layout !== 'grid' && !compact" class="follow-meta">
@@ -115,12 +103,13 @@
 
 <script setup>
 import Icon from "./Icon.vue";
-import LazyImage from "./LazyImage.vue";
+import FollowAvatar from "./FollowAvatar.vue";
 import { getPlatform } from "../config/platforms";
 import { followKey } from "../utils/prefStore.js";
 import { prefetchRoom } from "../utils/roomPrefetch.js";
-import { followStateClass, FOLLOW_STATE_LABEL } from "../utils/followDisplay.js";
+import { followStateClass, formatLastLiveAt } from "../utils/followDisplay.js";
 import { getCategoryStyle } from "../utils/categoryColor.js";
+import { displayCategoryName } from "../utils/categoryDisplay.js";
 
 const props = defineProps({
   rooms: { type: Array, default: () => [] },
@@ -139,20 +128,12 @@ function platformLabel(site) {
   return getPlatform(site)?.label || site;
 }
 
-function followStateLabel(state) {
-  return FOLLOW_STATE_LABEL[state] || FOLLOW_STATE_LABEL.offline;
+function categoryLabel(room) {
+  return displayCategoryName(room.site, room.category, room.cid);
 }
 
-function avatarWrapClass(room) {
-  if (props.selectMode) return null;
-  const classes = [];
-  if (room.state === "live") classes.push("follow-avatar-wrap--live");
-  else if (room.state === "replay") classes.push("follow-avatar-wrap--replay");
-  return classes.length ? classes : null;
-}
-
-function categoryStyle(category) {
-  return getCategoryStyle(category) || {};
+function categoryStyle(room) {
+  return getCategoryStyle(room.category, room.site, room.cid) || {};
 }
 
 /** 离线或无观看数据时不占位 */
@@ -168,6 +149,17 @@ function showOnlineStat(room) {
   if (room.state === "offline") return false;
   const online = String(room.online || "").trim();
   return Boolean(online && online !== "—" && online !== "-");
+}
+
+function lastLiveLabel(room) {
+  if (room.state !== "offline") return "";
+  const text = formatLastLiveAt(room.lastLiveAt);
+  return text ? `上次 ${text}` : "";
+}
+
+function liveStartLabel(room) {
+  if (room.state === "offline") return "";
+  return formatLastLiveAt(room.liveStartAt);
 }
 
 function isSelected(room) {
@@ -203,6 +195,37 @@ function onItemClick(room) {
   align-content: flex-start;
 }
 
+.follow-room-list--grid .follow-item {
+  flex: 1 1 17.5rem;
+  max-width: 20rem;
+  width: auto;
+  min-width: 0;
+  border: 1px solid var(--gray-7);
+  border-radius: 10px;
+  border-bottom: 1px solid var(--gray-7);
+  padding: .45rem .42rem;
+  align-items: center;
+}
+
+.follow-room-list--grid :deep(.follow-avatar),
+.follow-room-list--grid :deep(.follow-avatar--empty),
+.follow-room-list--compact :deep(.follow-avatar),
+.follow-room-list--compact :deep(.follow-avatar--empty) {
+  width: calc(.75rem * 1.25 + .2rem + .72rem * 1.2);
+  height: calc(.75rem * 1.25 + .2rem + .72rem * 1.2);
+}
+
+.follow-room-list--grid:not(.follow-room-list--compact) :deep(.follow-avatar),
+.follow-room-list--grid:not(.follow-room-list--compact) :deep(.follow-avatar--empty) {
+  width: calc(.75rem * 1.25 + .2rem + .8rem * 1.2);
+  height: calc(.75rem * 1.25 + .2rem + .8rem * 1.2);
+}
+
+.follow-room-list--grid :deep(.follow-avatar-wrap),
+.follow-room-list--compact :deep(.follow-avatar-wrap) {
+  align-self: center;
+}
+
 .follow-item {
   display: flex;
   gap: .45rem;
@@ -218,18 +241,15 @@ function onItemClick(room) {
   position: relative;
 }
 
-.follow-room-list--grid .follow-item {
-  width: 15rem;
-  border: 1px solid var(--gray-7);
-  border-radius: 10px;
-  border-bottom: 1px solid var(--gray-7);
-  padding: .45rem .42rem;
+.follow-room-list--grid .empty-tip,
+.follow-room-list--grid .follow-loading {
+  width: 100%;
 }
 
 .follow-room-list--compact .follow-item {
   padding: .18rem .32rem;
   gap: .28rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .follow-room-list--compact .follow-body {
@@ -244,54 +264,6 @@ function onItemClick(room) {
 .follow-item--selected {
   border-color: var(--amber) !important;
   box-shadow: 0 0 0 1px rgba(243, 208, 78, .35);
-}
-
-.follow-avatar-wrap {
-  position: relative;
-  flex-shrink: 0;
-  line-height: 0;
-  align-self: flex-start;
-}
-
-.follow-avatar-wrap--live::after,
-.follow-avatar-wrap--replay::after {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  z-index: 2;
-  border-radius: 5px;
-  pointer-events: none;
-  box-sizing: border-box;
-}
-
-.follow-avatar-wrap--live::after {
-  border: 2.5px solid rgba(229, 57, 53, .92);
-  animation: follow-avatar-live-ring 2.2s ease-in-out infinite;
-}
-
-.follow-avatar-wrap--replay::after {
-  border: 2px solid rgba(243, 208, 78, .72);
-}
-
-.follow-room-list--grid .follow-avatar-wrap--live::after,
-.follow-room-list--grid .follow-avatar-wrap--replay::after {
-  border-radius: 6px;
-}
-
-.follow-room-list--compact .follow-avatar-wrap--live::after,
-.follow-room-list--compact .follow-avatar-wrap--replay::after {
-  border-radius: 4px;
-}
-
-@keyframes follow-avatar-live-ring {
-  0%, 100% {
-    border-color: rgba(229, 57, 53, .72);
-    box-shadow: 0 0 0 0 rgba(229, 57, 53, 0);
-  }
-  50% {
-    border-color: rgba(229, 57, 53, 1);
-    box-shadow: 0 0 0 2px rgba(229, 57, 53, .32), 0 0 10px rgba(229, 57, 53, .28);
-  }
 }
 
 .follow-platform-tag {
@@ -375,13 +347,12 @@ function onItemClick(room) {
   opacity: 0.75;
 }
 
-.follow-item--offline .follow-avatar,
 .follow-item--offline :deep(.follow-avatar) {
   filter: grayscale(1) brightness(0.78);
   opacity: 0.72;
 }
 
-.follow-item--offline .follow-avatar--empty {
+.follow-item--offline :deep(.follow-avatar--empty) {
   color: #666;
   border-color: rgba(255, 255, 255, 0.12);
 }
@@ -413,41 +384,6 @@ function onItemClick(room) {
 
 .follow-item--super.follow-item--selected {
   box-shadow: 0 0 0 1px rgba(243, 208, 78, .35);
-}
-
-.follow-avatar {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 4px;
-  object-fit: cover;
-  flex-shrink: 0;
-  display: block;
-  background: #1a1a1a;
-}
-
-.follow-room-list--grid .follow-avatar {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 5px;
-}
-
-/* 约两行文字高：标题 + 主播行 */
-.follow-room-list--compact .follow-avatar {
-  width: 1.72rem;
-  height: 1.72rem;
-  border-radius: 3px;
-}
-
-.follow-avatar--empty {
-  display: grid;
-  place-items: center;
-  font-size: .72rem;
-  color: var(--muted);
-  border: 1px dashed var(--border);
-}
-
-.follow-room-list--compact .follow-avatar--empty {
-  font-size: .64rem;
 }
 
 .follow-body {
@@ -485,6 +421,7 @@ function onItemClick(room) {
   align-items: center;
   gap: .22rem;
   min-width: 0;
+  width: 100%;
   flex-shrink: 0;
 }
 
@@ -495,6 +432,11 @@ function onItemClick(room) {
 .follow-title-row .follow-title {
   flex: 1;
   min-width: 0;
+}
+
+.follow-title-row .follow-online-inline {
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .follow-category-tag {
@@ -540,6 +482,7 @@ function onItemClick(room) {
   gap: .28rem;
   margin-top: 0;
   min-width: 0;
+  width: 100%;
   font-size: .8rem;
   line-height: 1.2;
   overflow: visible;
@@ -547,12 +490,21 @@ function onItemClick(room) {
 
 .follow-anchor-row--compact {
   gap: .22rem;
+  font-size: .72rem;
 }
 
-.follow-room-list--compact .follow-anchor-row--compact {
-  overflow-x: hidden;
-  overflow-y: visible;
-  font-size: .72rem;
+.follow-anchor-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: inherit;
+  overflow: hidden;
+}
+
+.follow-anchor-row .follow-live-start-inline {
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .follow-anchor {
@@ -566,6 +518,46 @@ function onItemClick(room) {
   white-space: nowrap;
   flex: 0 1 auto;
   min-width: 0;
+}
+
+.follow-last-live {
+  flex-shrink: 0;
+  font-size: .62rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.follow-room-list--compact .follow-last-live {
+  font-size: .56rem;
+}
+
+.follow-live-start-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: .1rem;
+  flex-shrink: 0;
+  font-size: .65rem;
+  font-weight: 600;
+  line-height: 1.15;
+  padding: .08rem .18rem;
+  border-radius: 3px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.06);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.follow-room-list--compact .follow-live-start-inline {
+  font-size: .58rem;
+  padding: .06rem .16rem;
+}
+
+.follow-live-start-fa {
+  font-size: .72em;
+  line-height: 1;
+  opacity: 0.88;
 }
 
 .follow-online-inline {
@@ -628,11 +620,6 @@ function onItemClick(room) {
 
 .delete-btn:hover {
   opacity: 1;
-}
-
-.follow-room-list--grid .empty-tip,
-.follow-room-list--grid .follow-loading {
-  width: 100%;
 }
 
 .empty-tip,
