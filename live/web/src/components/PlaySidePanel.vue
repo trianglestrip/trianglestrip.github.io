@@ -1,5 +1,5 @@
 <template>
-  <aside class="play-side">
+  <aside class="play-side" :class="{ 'play-side--settings': tab === 'settings' }">
     <div class="side-header">
       <div class="room-aside">
         <div class="room-aside-avatar">
@@ -113,7 +113,7 @@
       />
     </div>
 
-    <div v-show="tab === 'settings'" class="tab-content settings-tab scrolly">
+    <div v-show="tab === 'settings'" class="tab-content settings-tab">
       <div class="settings-groups">
         <section class="settings-group">
           <h4 class="settings-group__title">聊天弹幕</h4>
@@ -152,7 +152,7 @@
             <span class="settings-hint">粘贴关注数据后点确认</span>
             <textarea
               v-model="importFollowText"
-              class="settings-import__input scrolly"
+              class="settings-import__input"
               rows="4"
               placeholder='[["douyu","252140"],["huya","660000"]]'
             />
@@ -897,6 +897,9 @@ watch(tab, (value) => {
 .settings-tab {
   display: flex;
   flex-direction: column;
+  flex: 0 0 auto;
+  min-height: auto;
+  overflow: visible;
   width: 100%;
   max-width: 100%;
   align-self: stretch;
@@ -918,7 +921,7 @@ watch(tab, (value) => {
 }
 
 .settings-group {
-  flex: 1 1 0;
+  flex: 0 0 auto;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -1101,6 +1104,12 @@ watch(tab, (value) => {
     flex-shrink: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+  }
+
+  .play-side--settings {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
   }
 }
 
