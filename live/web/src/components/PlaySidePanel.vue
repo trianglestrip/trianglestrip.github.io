@@ -80,38 +80,6 @@
     <div v-show="tab === 'settings'" class="tab-content settings-tab scrolly">
       <div class="settings-groups">
         <section class="settings-group">
-          <h4 class="settings-group__title">屏幕弹幕</h4>
-          <label class="setting-row setting-row--toggle">
-            <span class="setting-label">飘屏</span>
-            <input v-model="overlaySettings.show" type="checkbox" class="setting-check">
-          </label>
-          <label class="setting-row">
-            <span class="setting-label">透明度</span>
-            <input v-model.number="overlaySettings.opacity" class="setting-range" type="range" min="10" max="100">
-            <span class="setting-value">{{ overlaySettings.opacity }}%</span>
-          </label>
-          <label class="setting-row">
-            <span class="setting-label">字号</span>
-            <input v-model.number="overlaySettings.fontSize" class="setting-range" type="range" min="12" max="36">
-            <span class="setting-value">{{ overlaySettings.fontSize }}</span>
-          </label>
-          <label class="setting-row">
-            <span class="setting-label">速度</span>
-            <input v-model.number="overlaySettings.speed" class="setting-range" type="range" min="1" max="10">
-            <span class="setting-value">{{ overlaySettings.speed }}</span>
-          </label>
-          <label class="setting-row">
-            <span class="setting-label">区域</span>
-            <select v-model.number="overlaySettings.area" class="setting-select">
-              <option :value="1">全屏</option>
-              <option :value="0.75">3/4</option>
-              <option :value="0.5">半屏</option>
-              <option :value="0.25">1/4</option>
-            </select>
-          </label>
-        </section>
-
-        <section class="settings-group">
           <h4 class="settings-group__title">聊天弹幕</h4>
           <label class="setting-row setting-row--toggle">
             <span class="setting-label">聊天</span>
@@ -161,12 +129,11 @@ const props = defineProps({
   isSuperFollowed: { type: Boolean, default: false },
 });
 
-const overlaySettings = defineModel("overlaySettings", { type: Object, required: true });
 const chatSettings = defineModel("chatSettings", { type: Object, required: true });
 
 defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
 
-const tab = ref("follow");
+const tab = ref("chat");
 const followSiteFilter = ref("");
 const followUiPref = loadGlobalPref("follow_ui", { previewCover: true });
 const previewCover = ref(followUiPref.previewCover !== false);

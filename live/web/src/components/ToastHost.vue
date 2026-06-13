@@ -1,23 +1,33 @@
 <template>
   <div class="toast-host" aria-live="polite">
     <TransitionGroup name="toast">
-      <button
+      <div
         v-for="item in toasts"
         :key="item.id"
-        type="button"
         class="toast-item"
         :class="`toast-item--${item.kind || 'info'}`"
-        @click="onClick(item)"
       >
-        <span class="toast-item__title">{{ item.title }}</span>
-        <span class="toast-item__text">{{ item.text || item.message }}</span>
-        <span v-if="item.platform" class="toast-item__meta">{{ item.platform }}</span>
-      </button>
+        <button type="button" class="toast-item__main" @click="onClick(item)">
+          <span class="toast-item__title">{{ item.title }}</span>
+          <span class="toast-item__text">{{ item.text || item.message }}</span>
+          <span v-if="item.platform" class="toast-item__meta">{{ item.platform }}</span>
+        </button>
+        <button
+          type="button"
+          class="toast-item__close"
+          title="关闭"
+          aria-label="关闭提醒"
+          @click="dismiss(item.id)"
+        >
+          <Icon name="close" />
+        </button>
+      </div>
     </TransitionGroup>
   </div>
 </template>
 
 <script setup>
+import Icon from "./Icon.vue";
 import { useToast } from "../composables/useToast.js";
 
 const props = defineProps({
@@ -48,18 +58,15 @@ function onClick(item) {
 
 .toast-item {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: .12rem;
+  gap: .35rem;
   width: 100%;
-  padding: .62rem .72rem;
+  padding: .55rem .5rem .55rem .72rem;
   border: 1px solid var(--border);
   border-radius: 10px;
   background: var(--panel);
   color: var(--text);
-  text-align: left;
   box-shadow: 0 8px 24px rgba(0, 0, 0, .22);
-  cursor: pointer;
   pointer-events: auto;
   transition: transform .18s ease, opacity .18s ease, border-color .18s ease;
 }
@@ -67,6 +74,46 @@ function onClick(item) {
 .toast-item:hover {
   transform: translateY(-1px);
   border-color: var(--amber);
+}
+
+.toast-item__main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .12rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.toast-item__close {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  margin: -.08rem -.05rem 0 0;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color .15s, background .15s;
+}
+
+.toast-item__close:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, .08);
 }
 
 .toast-item__title {

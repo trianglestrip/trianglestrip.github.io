@@ -36,6 +36,7 @@
             />
             <PlayerControls
               v-if="controlsReady"
+              v-model:overlay-settings="overlaySettings"
               overlay
               :show="showControls"
               :playing="playing"
@@ -69,7 +70,6 @@
       <PlaySidePanel
         v-if="sideReady && !webscreen"
         ref="sidePanelRef"
-        v-model:overlay-settings="overlaySettings"
         v-model:chat-settings="chatSettings"
         :site="site"
         :room-id="id"

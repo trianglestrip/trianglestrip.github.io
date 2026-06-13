@@ -43,6 +43,7 @@ const FA_ICONS = {
   "eye-off": "fa-eye-slash",
   list: "fa-list",
   delete: "fa-trash-can",
+  close: "fa-xmark",
   star: "fa-star",
   film: "fa-film",
   sun: "fa-sun",

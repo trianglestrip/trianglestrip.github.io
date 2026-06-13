@@ -14,15 +14,35 @@
         <Icon name="refresh" class="ctrl-fa" />
       </button>
 
-      <button
-        type="button"
-        class="ctrl-icon ctrl-icon--danmaku"
-        :class="{ 'ctrl-icon--active': danmakuOn }"
-        title="弹幕开关"
-        @click="$emit('toggle-danmaku')"
-      >
-        <span class="ctrl-danmaku-mark" aria-hidden="true"><span class="ctrl-danmaku-char">弹</span></span>
-      </button>
+      <div ref="danmakuRef" class="ctrl-danmaku-group">
+        <button
+          type="button"
+          class="ctrl-icon ctrl-icon--danmaku"
+          :class="{ 'ctrl-icon--active': danmakuOn }"
+          title="弹幕开关"
+          @click="$emit('toggle-danmaku')"
+        >
+          <span class="ctrl-danmaku-mark" aria-hidden="true"><span class="ctrl-danmaku-char">弹</span></span>
+        </button>
+        <button
+          type="button"
+          class="ctrl-danmaku-settings-btn"
+          :class="{ 'ctrl-danmaku-settings-btn--open': danmakuSettingsOpen }"
+          title="飘屏弹幕设置"
+          @click.stop="toggleDanmakuSettings"
+        >
+          弹幕设置
+        </button>
+        <div
+          v-show="danmakuSettingsOpen"
+          class="ctrl-danmaku-settings-pop"
+          role="dialog"
+          aria-label="飘屏弹幕设置"
+          @click.stop
+        >
+          <OverlayDanmakuSettingsPanel v-model="overlaySettings" />
+        </div>
+      </div>
 
       <div class="controls-spacer"></div>
 
@@ -124,6 +144,9 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import Icon from "./Icon.vue";
+import OverlayDanmakuSettingsPanel from "./OverlayDanmakuSettingsPanel.vue";
+
+const overlaySettings = defineModel("overlaySettings", { type: Object, required: true });
 
 const props = defineProps({
   show: { type: Boolean, default: true },
@@ -157,8 +180,10 @@ const emit = defineEmits([
 
 const qualityOpen = ref(false);
 const lineOpen = ref(false);
+const danmakuSettingsOpen = ref(false);
 const qualityRef = ref(null);
 const lineRef = ref(null);
+const danmakuRef = ref(null);
 
 const qualityLabel = computed(() => {
   const item = props.qualities[props.qualityIndex];
@@ -170,15 +195,24 @@ const lineLabel = computed(() => props.lines[props.lineIndex]?.name || "线路")
 function closeMenus() {
   qualityOpen.value = false;
   lineOpen.value = false;
+  danmakuSettingsOpen.value = false;
+}
+
+function toggleDanmakuSettings() {
+  qualityOpen.value = false;
+  lineOpen.value = false;
+  danmakuSettingsOpen.value = !danmakuSettingsOpen.value;
 }
 
 function toggleQualityMenu() {
   lineOpen.value = false;
+  danmakuSettingsOpen.value = false;
   qualityOpen.value = !qualityOpen.value;
 }
 
 function toggleLineMenu() {
   qualityOpen.value = false;
+  danmakuSettingsOpen.value = false;
   lineOpen.value = !lineOpen.value;
 }
 
@@ -197,7 +231,13 @@ function onVolumeInput(event) {
 }
 
 function onDocumentClick(event) {
-  if (qualityRef.value?.contains(event.target) || lineRef.value?.contains(event.target)) return;
+  if (
+    qualityRef.value?.contains(event.target)
+    || lineRef.value?.contains(event.target)
+    || danmakuRef.value?.contains(event.target)
+  ) {
+    return;
+  }
   closeMenus();
 }
 
@@ -324,6 +364,48 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
 
 .ctrl-icon--danmaku:not(.ctrl-icon--active) .ctrl-danmaku-mark {
   opacity: .72;
+}
+
+.ctrl-danmaku-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .1rem;
+  flex-shrink: 0;
+}
+
+.ctrl-danmaku-settings-btn {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: .82rem;
+  line-height: 1.2;
+  padding: .2rem .35rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color .15s;
+}
+
+.ctrl-danmaku-settings-btn:hover,
+.ctrl-danmaku-settings-btn--open {
+  color: var(--amber);
+}
+
+.ctrl-danmaku-settings-pop {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  margin-bottom: .4rem;
+  width: 15.5rem;
+  max-width: min(15.5rem, calc(100vw - 2rem));
+  padding: .45rem .5rem .5rem;
+  background: rgba(0, 0, 0, .9);
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .45);
+  z-index: 6;
+  box-sizing: border-box;
 }
 
 .ctrl-dropdown {
