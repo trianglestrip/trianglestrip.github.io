@@ -6,6 +6,7 @@
       type="button"
       class="room-item"
       :class="{ 'room-item--selectable': selectMode, 'room-item--selected': isSelected(room) }"
+      @pointerenter="onItemHover(room)"
       @click="onItemClick(room)"
     >
       <div class="room-item-info">
@@ -36,10 +37,12 @@
 <script setup>
 import { roomKey as keyOf } from "../api/browse.js";
 import { followKey } from "../utils/prefStore.js";
+import { prefetchRoom } from "../utils/roomPrefetch.js";
 import LazyImage from "./LazyImage.vue";
 
 const props = defineProps({
   rooms: { type: Array, default: () => [] },
+  site: { type: String, default: "" },
   selectMode: { type: Boolean, default: false },
   selectedKeys: { type: Array, default: () => [] },
 });
@@ -57,6 +60,14 @@ function selectionKey(room) {
 
 function isSelected(room) {
   return props.selectedKeys.includes(selectionKey(room));
+}
+
+function onItemHover(room) {
+  if (props.selectMode) return;
+  const site = props.site || room.site;
+  const id = room.site ? String(room.id ?? "") : roomKey(room);
+  if (!site || !id) return;
+  prefetchRoom(site, id);
 }
 
 function onItemClick(room) {

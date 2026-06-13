@@ -32,7 +32,7 @@ export function useFollowLiveNotify() {
       message: label,
     };
 
-    if (next === "live" && prev !== "live") {
+    if (prev === "offline" && next === "live") {
       notify({
         kind: "live",
         title: "开播提醒",
@@ -42,7 +42,7 @@ export function useFollowLiveNotify() {
       return;
     }
 
-    if (prev === "live" && next !== "live") {
+    if (prev === "live" && next === "offline") {
       notify({
         kind: "offline",
         title: "下播提醒",

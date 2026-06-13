@@ -594,18 +594,18 @@ async function onRefresh() {
   playUrl.value = "";
   try {
     await loadRoom(roomInput.value, { force: true });
-    await startPlayback({ freshUrl: true });
+    await startPlayback({ freshUrl: true, forceUrl: true });
   } catch (err) {
     setStatus(`刷新失败: ${err.message}`, "err");
   }
 }
 
-async function startPlayback({ startMuted, freshUrl = false } = {}) {
+async function startPlayback({ startMuted, freshUrl = false, forceUrl = false } = {}) {
   const wantSound = roomSwitchKeepSound || isSoundUnlocked();
   roomSwitchKeepSound = false;
   const useMuted = startMuted ?? !wantSound;
   const url = freshUrl
-    ? await prefetchPlayUrl({ force: true })
+    ? await prefetchPlayUrl({ force: forceUrl })
     : playUrl.value || (await prefetchPlayUrl());
   setStatus("缓冲中…");
   const videoEl = await ensureVideoEl();
@@ -642,8 +642,8 @@ async function playRoom(room) {
   payload.value = null;
   playUrl.value = "";
   try {
-    await loadRoom(room, { force: true });
-    await startPlayback({ freshUrl: true });
+    await loadRoom(room, { force: false });
+    await startPlayback();
     lastPlayedRoom.value = room;
   } catch {
     lastPlayedRoom.value = "";

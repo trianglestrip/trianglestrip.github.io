@@ -83,14 +83,13 @@ function tierFromResponse(
 interface LoadPlayContextOpts {
   rid?: string;
   roomRaw?: BetardRoom;
+  white?: Awaited<ReturnType<typeof fetchWhiteKey>>;
 }
 
 async function loadPlayContext(url: string, preferredCdn = "hw-h5", opts?: LoadPlayContextOpts) {
   const rid = opts?.rid ?? await getRoomId(url);
-  const [roomRaw, white] = await Promise.all([
-    opts?.roomRaw ? Promise.resolve(opts.roomRaw) : fetchBetard(rid),
-    fetchWhiteKey(),
-  ]);
+  const roomRaw = opts?.roomRaw ?? await fetchBetard(rid);
+  const white = opts?.white ?? await fetchWhiteKey();
 
   if (roomRaw.show_status !== 1) {
     throw new Error("房间未开播或解析失败");
@@ -160,7 +159,7 @@ async function fetchTierResponse(ctx: DouyuPlayContext, item: { rate?: number })
 
 export async function loadMeta(url: string, preferredCdn = "hw-h5"): Promise<DouyuMeta> {
   const rid = await getRoomId(url);
-  const roomRaw = await fetchBetard(rid);
+  const [roomRaw, white] = await Promise.all([fetchBetard(rid), fetchWhiteKey()]);
   if (roomRaw.show_status !== 1) {
     return {
       site: "douyu",
@@ -173,7 +172,7 @@ export async function loadMeta(url: string, preferredCdn = "hw-h5"): Promise<Dou
       offline: true,
     };
   }
-  const ctx = await loadPlayContext(url, preferredCdn, { rid, roomRaw });
+  const ctx = await loadPlayContext(url, preferredCdn, { rid, roomRaw, white });
   return metaFromContext(ctx);
 }
 

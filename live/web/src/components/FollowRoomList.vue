@@ -19,6 +19,7 @@
           'follow-item--super': room.super,
         },
       ]"
+      @pointerenter="onItemHover(room)"
       @click="onItemClick(room)"
     >
       <span
@@ -117,6 +118,7 @@ import Icon from "./Icon.vue";
 import LazyImage from "./LazyImage.vue";
 import { getPlatform } from "../config/platforms";
 import { followKey } from "../utils/prefStore.js";
+import { prefetchRoom } from "../utils/roomPrefetch.js";
 import { followStateClass, FOLLOW_STATE_LABEL } from "../utils/followDisplay.js";
 import { getCategoryStyle } from "../utils/categoryColor.js";
 
@@ -171,6 +173,12 @@ function showOnlineStat(room) {
 function isSelected(room) {
   const key = followKey(room.site, room.id);
   return props.selectedKeys.includes(key);
+}
+
+function onItemHover(room) {
+  if (props.selectMode) return;
+  if (!room.site || !room.id) return;
+  prefetchRoom(room.site, room.id);
 }
 
 function onItemClick(room) {

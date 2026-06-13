@@ -21,7 +21,7 @@
           :error="!!listError"
           @load="onLoad"
         >
-          <RoomGrid :rooms="rooms" @select="onSelectRoom" />
+          <RoomGrid :site="site" :rooms="rooms" @select="onSelectRoom" />
         </InfiniteScroll>
       </div>
     </div>
@@ -38,6 +38,7 @@ import Icon from "../components/Icon.vue";
 import { roomKey } from "../api/browse.js";
 import { getPlatform, supportsBrowse } from "../config/platforms";
 import { useBrowse } from "../composables/useBrowse.js";
+import { preloadPlayView } from "../utils/preloadPlayView.js";
 
 const props = defineProps({
   site: { type: String, required: true },
@@ -78,6 +79,7 @@ watch(
   ([site]) => {
     siteRef.value = site;
     if (getPlatform(site)?.enabled) loadPage();
+    preloadPlayView();
   },
   { immediate: true },
 );

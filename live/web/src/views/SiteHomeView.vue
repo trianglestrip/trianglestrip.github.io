@@ -37,7 +37,7 @@
           :error="!!listError"
           @load="onLoad"
         >
-          <RoomGrid :rooms="rooms" @select="onSelectRoom" />
+          <RoomGrid :site="site" :rooms="rooms" @select="onSelectRoom" />
         </InfiniteScroll>
       </template>
     </PlatformTabs>
@@ -55,6 +55,7 @@ import { roomKey } from "../api/browse.js";
 import { parseRoomId } from "../api/room.js";
 import { getPlatform, supportsBrowse } from "../config/platforms";
 import { useBrowse } from "../composables/useBrowse.js";
+import { preloadPlayView } from "../utils/preloadPlayView.js";
 
 const props = defineProps({
   site: { type: String, required: true },
@@ -81,6 +82,7 @@ watch(
     siteRef.value = value;
     roomInput.value = "";
     if (getPlatform(value)?.enabled && supportsBrowse(value)) loadRecommend();
+    preloadPlayView();
   },
   { immediate: true },
 );

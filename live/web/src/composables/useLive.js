@@ -16,6 +16,7 @@ import {
   migrateGlobalQualityToPlatform,
   savePlatformPref,
 } from "../utils/prefStore.js";
+import { getPrefetchedRoom } from "../utils/roomPrefetch.js";
 
 const DEFAULT_PLAY_PREFS = { qualityName: "", lineName: "" };
 const DEFAULT_VOLUME_PREFS = { volume: 1 };
@@ -74,13 +75,16 @@ export function useRoom(siteRef) {
 
       const roomId = parseRoomId(roomInput);
       const prefs = loadPlayPrefs(site);
-      const data = await fetchRoom({
-        site,
-        room: roomId,
-        mode: "lazy",
-        quality: prefs.qualityName || undefined,
-        force,
-      });
+      let data = !force ? getPrefetchedRoom(site, roomId) : null;
+      if (!data) {
+        data = await fetchRoom({
+          site,
+          room: roomId,
+          mode: "lazy",
+          quality: prefs.qualityName || undefined,
+          force,
+        });
+      }
 
       if (!data.is_live && !data.status) {
         payload.value = data;
@@ -222,7 +226,7 @@ function flvOptionsForSite(site) {
   const config = {
     enableWorker: false,
     enableStashBuffer: true,
-    stashInitialSize: 2 * 1024 * 1024,
+    stashInitialSize: 512 * 1024,
     lazyLoad: false,
     autoCleanupSourceBuffer: false,
     fixAudioTimestampGap: true,

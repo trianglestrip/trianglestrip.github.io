@@ -2,7 +2,7 @@ import { ref } from "vue";
 
 const toasts = ref([]);
 let seed = 0;
-const AUTO_DISMISS_MS = 5500;
+const AUTO_DISMISS_MS = 10000;
 const MAX_TOASTS = 5;
 
 export function useToast() {

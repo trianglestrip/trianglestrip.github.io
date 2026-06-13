@@ -17,6 +17,7 @@
         'follow-preview-item--selectable': selectMode,
         'follow-preview-item--selected': isSelected(room),
       }"
+      @pointerenter="onItemHover(room)"
       @click="onItemClick(room)"
     >
       <div class="follow-preview-cover-wrap">
@@ -43,6 +44,7 @@
 <script setup>
 import LazyImage from "./LazyImage.vue";
 import { followKey } from "../utils/prefStore.js";
+import { prefetchRoom } from "../utils/roomPrefetch.js";
 
 const props = defineProps({
   rooms: { type: Array, default: () => [] },
@@ -59,6 +61,12 @@ function previewSrc(room) {
 
 function isSelected(room) {
   return props.selectedKeys.includes(followKey(room.site, room.id));
+}
+
+function onItemHover(room) {
+  if (props.selectMode) return;
+  if (!room.site || !room.id) return;
+  prefetchRoom(room.site, room.id);
 }
 
 function onItemClick(room) {

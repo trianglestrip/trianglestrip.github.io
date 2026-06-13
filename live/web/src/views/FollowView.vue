@@ -69,7 +69,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
+import { computed, ref, onMounted } from "vue";
 import FollowPlatformFilter from "../components/FollowPlatformFilter.vue";
 import { useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
@@ -81,6 +81,7 @@ import { useFollow } from "../composables/useFollow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
 import { followRoomToGrid } from "../utils/followDisplay.js";
 import { followKey, loadGlobalPref, saveGlobalPref } from "../utils/prefStore.js";
+import { preloadPlayView } from "../utils/preloadPlayView.js";
 
 const router = useRouter();
 const { follows, unfollowMany } = useFollow();
@@ -100,6 +101,10 @@ const filteredFollows = computed(() => {
 });
 
 const gridRooms = computed(() => filteredFollows.value.map(followRoomToGrid));
+
+onMounted(() => {
+  preloadPlayView();
+});
 
 function togglePreviewCover() {
   previewCover.value = !previewCover.value;

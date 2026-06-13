@@ -17,7 +17,17 @@ function md5(text: string): string {
   return createHash("md5").update(text).digest("hex");
 }
 
+const WHITE_KEY_TTL_SEC = 300;
+
+let cachedWhite: WhiteKey | null = null;
+let cachedWhiteExpires = 0;
+
 export async function fetchWhiteKey(): Promise<WhiteKey> {
+  const now = Date.now() / 1000;
+  if (cachedWhite && now < cachedWhiteExpires) {
+    return cachedWhite;
+  }
+
   const url = `https://www.douyu.com/wgapi/livenc/liveweb/websec/getEncryption?did=${DEFAULT_DID}`;
   const res = await fetch(url, {
     headers: { "User-Agent": USER_AGENT },
@@ -30,7 +40,9 @@ export async function fetchWhiteKey(): Promise<WhiteKey> {
   if (data.error !== 0 || !data.data) {
     throw new Error("获取白名单密钥失败");
   }
-  return data.data;
+  cachedWhite = data.data;
+  cachedWhiteExpires = now + WHITE_KEY_TTL_SEC;
+  return cachedWhite;
 }
 
 export function computeAuth(rid: string, white: WhiteKey, ts: number): string {
