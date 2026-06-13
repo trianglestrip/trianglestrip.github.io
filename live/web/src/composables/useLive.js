@@ -249,6 +249,8 @@ export function usePlayer(siteRef) {
   let player = null;
   let videoEl = null;
   let onCanPlayResume = null;
+  /** playFlv 传入的静音意图；已开声切房时为 false，避免 startPlay 失败时误降级静音 */
+  let playMutedIntent = true;
 
   function cachedVolume() {
     return loadVolumePrefs(siteRef?.value).volume;
@@ -355,6 +357,7 @@ export function usePlayer(siteRef) {
     streamActive.value = false;
     volume.value = cachedVolume();
     muted.value = false;
+    playMutedIntent = true;
     teardownPlayer();
     unbindVideoEvents();
   }
@@ -391,7 +394,8 @@ export function usePlayer(siteRef) {
           syncPlaying();
           return true;
         } catch {
-          if (!videoEl.muted) {
+          if (!videoEl.muted && !playMutedIntent) return false;
+          if (!videoEl.muted && playMutedIntent) {
             videoEl.muted = true;
             syncVolume();
           }
@@ -470,6 +474,7 @@ export function usePlayer(siteRef) {
     teardownPlayer();
     bindVideoEvents(el);
     streamActive.value = true;
+    playMutedIntent = startMuted;
 
     player = flv.createPlayer(
       {

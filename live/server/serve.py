@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import asyncio
 import json
 import re
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -12,6 +13,8 @@ from urllib.parse import parse_qs, urlparse
 
 from app_config import load_config, resolve_static_root
 from browse_api import fetch_categories, fetch_category_rooms, fetch_recommend_rooms
+from follow_status import fetch_follow_snapshots
+from huya_danmaku import fetch_huya_danmaku_session
 from resolve_cache import get as cache_get
 from resolve_cache import set as cache_set
 from resolve_cache import stats as cache_stats
@@ -82,6 +85,9 @@ class Handler(SimpleHTTPRequestHandler):
             if parsed.path == "/api/time":
                 self._api_time(parsed)
                 return
+            if parsed.path == "/api/huya/danmaku":
+                self._api_huya_danmaku(parsed)
+                return
             self.send_error(404)
             return
         return self._serve_web(parsed.path)
@@ -90,6 +96,9 @@ class Handler(SimpleHTTPRequestHandler):
         parsed = urlparse(self.path)
         if parsed.path == "/api/resolve":
             self._api_resolve_post(parsed)
+            return
+        if parsed.path == "/api/follows/status":
+            self._api_follows_status()
             return
         self.send_error(404)
 
@@ -228,6 +237,18 @@ class Handler(SimpleHTTPRequestHandler):
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 
+    def _api_huya_danmaku(self, parsed) -> None:
+        query = parse_qs(parsed.query)
+        room = query.get("room", query.get("id", [""]))[0]
+        if not room:
+            self._send_json({"ok": False, "error": "缺少 room 参数"}, status=400)
+            return
+        try:
+            session = fetch_huya_danmaku_session(room)
+            self._send_json({"ok": True, **session})
+        except Exception as exc:  # noqa: BLE001
+            self._send_json({"ok": False, "error": str(exc)}, status=500)
+
     def _api_time(self, parsed) -> None:
         query = parse_qs(parsed.query)
         site = query.get("site", ["douyu"])[0]
@@ -238,6 +259,22 @@ class Handler(SimpleHTTPRequestHandler):
             room_id = parse_room_id(room, site)
             payload = build_time_report(site, room_id, quality=quality, run=run)
             self._send_json(payload)
+        except Exception as exc:  # noqa: BLE001
+            self._send_json({"ok": False, "error": str(exc)}, status=500)
+
+    def _api_follows_status(self) -> None:
+        try:
+            data = self._read_json_body()
+        except json.JSONDecodeError:
+            self._send_json({"ok": False, "error": "无效 JSON"}, status=400)
+            return
+        rooms = data.get("rooms")
+        if not isinstance(rooms, list):
+            self._send_json({"ok": False, "error": "缺少 rooms 数组"}, status=400)
+            return
+        try:
+            snapshots = asyncio.run(fetch_follow_snapshots(rooms))
+            self._send_json({"ok": True, "list": snapshots})
         except Exception as exc:  # noqa: BLE001
             self._send_json({"ok": False, "error": str(exc)}, status=500)
 

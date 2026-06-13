@@ -1,3 +1,5 @@
+import { parseHuyaChatMessages } from "../utils/huyaJce.js";
+
 function parseDouyuMsg(buffer) {
   const view = new DataView(buffer);
   const msgs = [];
@@ -32,10 +34,7 @@ function colorFromDouyu(value) {
   return `#${(n & 0xffffff).toString(16).padStart(6, "0")}`;
 }
 
-self.onmessage = (event) => {
-  const { type, buffer, seq } = event.data;
-  if (type !== "parse" || !(buffer instanceof ArrayBuffer)) return;
-
+function parseDouyuBuffer(buffer, seq) {
   const items = [];
   let localSeq = 0;
   for (const raw of parseDouyuMsg(buffer)) {
@@ -50,7 +49,29 @@ self.onmessage = (event) => {
       color: colorFromDouyu(msg.col),
     });
   }
+  return items;
+}
 
+function parseHuyaBuffer(buffer, seq) {
+  const items = [];
+  let localSeq = 0;
+  for (const chat of parseHuyaChatMessages(buffer)) {
+    localSeq += 1;
+    items.push({
+      id: `${seq}-${localSeq}`,
+      user: chat.user,
+      text: chat.text,
+      color: chat.color,
+    });
+  }
+  return items;
+}
+
+self.onmessage = (event) => {
+  const { type, site = "douyu", buffer, seq } = event.data;
+  if (type !== "parse" || !(buffer instanceof ArrayBuffer)) return;
+
+  const items = site === "huya" ? parseHuyaBuffer(buffer, seq) : parseDouyuBuffer(buffer, seq);
   if (items.length) {
     self.postMessage({ type: "messages", items });
   }

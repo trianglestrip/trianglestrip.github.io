@@ -1,0 +1,21 @@
+{
+  "name": "live-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "scripts": {
+    "build": "tsc && node scripts/bundle.mjs",
+    "dev": "tsx src/index.ts",
+    "start": "node live-api.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.25.5",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

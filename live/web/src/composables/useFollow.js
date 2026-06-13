@@ -35,6 +35,7 @@ export function useFollow() {
             title: roomInfo.title,
             anchor: roomInfo.anchor,
             cover: roomInfo.cover,
+            avatar: roomInfo.avatar,
             addedAt: Date.now(),
           },
         ])[0],

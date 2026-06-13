@@ -1,9 +1,7 @@
 @echo off
-setlocal
-cd /d "%~dp0web"
-
-set PORT=8080
-set LIVE_BASE=
-echo 启动前端 http://127.0.0.1:%PORT%/
-node.exe server.mjs %PORT%
+set "ROOT=%~dp0"
+call "%ROOT%_lib.bat" killport 8080
+cd /d "%ROOT%web"
+echo 启动前端 http://127.0.0.1:8080/
+"%ROOT%node.exe" server.mjs
 pause

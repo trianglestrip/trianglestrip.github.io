@@ -41,27 +41,12 @@
     </div>
 
     <div v-show="tab === 'follow'" class="tab-content scrolly">
-      <button
-        v-for="room in followList"
-        :key="`${room.site}-${room.id}`"
-        type="button"
-        class="follow-item"
-        @click="$emit('play-room', room)"
-      >
-        <LazyImage v-if="room.cover" :src="room.cover" image-class="follow-cover" />
-        <div v-else class="follow-cover follow-cover--empty"></div>
-        <div class="follow-info">
-          <p class="follow-title">{{ room.title || `房间 ${room.id}` }}</p>
-          <p class="follow-meta">{{ platformLabel(room.site) }} · {{ room.anchor || room.id }}</p>
-        </div>
-        <Icon
-          name="delete"
-          class="delete-btn"
-          title="取消关注"
-          @click.stop="$emit('unfollow', room)"
-        />
-      </button>
-      <div v-if="!followList.length" class="empty-tip">暂无关注，点击播放器控制条 ♥ 添加</div>
+      <FollowRoomList
+        :rooms="sortedFollows"
+        :loading="followStatusLoading"
+        @select="$emit('play-room', $event)"
+        @unfollow="$emit('unfollow', $event)"
+      />
     </div>
 
     <div v-show="tab === 'settings'" class="tab-content settings-tab scrolly">
@@ -124,10 +109,11 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, nextTick } from "vue";
-import { getPlatform } from "../config/platforms";
+import { ref, computed, watch, nextTick, toRef } from "vue";
 import Icon from "./Icon.vue";
 import LazyImage from "./LazyImage.vue";
+import FollowRoomList from "./FollowRoomList.vue";
+import { useFollowStatus } from "../composables/useFollowStatus.js";
 
 const props = defineProps({
   statusText: { type: String, default: "" },
@@ -145,15 +131,18 @@ defineEmits(["play-room", "unfollow", "toggle-follow"]);
 
 const tab = ref("chat");
 const chatListRef = ref(null);
+const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
+  toRef(props, "followList"),
+);
+
+watch(tab, (value) => {
+  if (value === "follow") refreshFollowStatus();
+});
 
 const title = computed(() => props.payload?.title || props.payload?.anchor_name || "等待播放");
 const anchor = computed(() => props.payload?.anchor_name || "");
 const cover = computed(() => props.payload?.cover || "");
 const isLive = computed(() => !!(props.payload?.is_live || props.payload?.status));
-
-function platformLabel(site) {
-  return getPlatform(site)?.label || site;
-}
 
 const chatItemStyle = computed(() => ({
   fontSize: `${chatSettings.value.fontSize || 14}px`,
@@ -334,69 +323,6 @@ watch(
 .chat-user { color: #8ab4f8; }
 
 .chat-text { color: var(--text); }
-
-.follow-item {
-  display: flex;
-  gap: .45rem;
-  width: 100%;
-  padding: .5rem;
-  border: none;
-  border-bottom: 1px solid var(--gray-7);
-  background: transparent;
-  color: inherit;
-  text-align: left;
-  cursor: pointer;
-  align-items: center;
-}
-
-.follow-item:hover { background: rgba(255, 255, 255, .03); }
-
-.follow-cover {
-  width: 56px;
-  height: 32px;
-  border-radius: 4px;
-  object-fit: cover;
-  flex-shrink: 0;
-  background: #000;
-}
-
-.follow-cover--empty {
-  border: 1px dashed var(--border);
-}
-
-.follow-info { min-width: 0; flex: 1; }
-
-.follow-title {
-  margin: 0;
-  font-size: .8rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.follow-meta {
-  margin: .15rem 0 0;
-  font-size: .72rem;
-  color: var(--muted);
-}
-
-.delete-btn {
-  color: var(--danger);
-  font-size: 1.1rem;
-  opacity: .5;
-  padding: .25rem;
-  cursor: pointer;
-}
-
-.delete-btn:hover { opacity: 1; }
-
-.empty-tip {
-  padding: 2rem 1rem;
-  text-align: center;
-  color: var(--muted);
-  font-size: .85rem;
-  line-height: 1.5;
-}
 
 .settings-tab {
   padding: .55rem .65rem .75rem;

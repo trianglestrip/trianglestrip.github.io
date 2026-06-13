@@ -144,6 +144,7 @@ async def _load_play_context(url: str) -> dict:
                 "anchor_name": app_data.get("anchor_name") or game_info.get("nick") or "",
                 "title": app_data.get("title") or game_info.get("introduction") or "",
                 "cover": game_info.get("screenshot") or "",
+                "avatar": game_info.get("avatar180") or game_info.get("avatar") or "",
                 "web_data": web_data,
                 "qualities": [{"name": "默认", "rate": 0}],
                 "app_fallback_tier": tier,
@@ -156,6 +157,7 @@ async def _load_play_context(url: str) -> dict:
         "anchor_name": game_info.get("nick") or "",
         "title": game_info.get("introduction") or game_info.get("roomName") or "",
         "cover": game_info.get("screenshot") or "",
+        "avatar": game_info.get("avatar180") or game_info.get("avatar") or "",
         "web_data": web_data,
         "qualities": _quality_items(web_data),
     }
@@ -177,6 +179,7 @@ def meta_from_context(ctx: dict) -> dict:
         "anchor_name": ctx["anchor_name"],
         "title": ctx["title"] or ctx["anchor_name"],
         "cover": ctx["cover"],
+        "avatar": ctx.get("avatar") or "",
         "available_qualities": ctx["qualities"],
         "context": context,
     }

@@ -62,6 +62,21 @@ def _available_qualities(multirates: list[dict]) -> list[dict]:
     ]
 
 
+def _cover_from_room(room: dict) -> str:
+    cover = str(room.get("room_pic") or room.get("coverSrc") or "").strip()
+    if not cover:
+        src = str(room.get("room_src") or "").strip()
+        if src.startswith("//"):
+            cover = f"https:{src}"
+        elif src.startswith("http"):
+            cover = src
+        elif src:
+            cover = f"https://rpic.douyucdn.cn/{src.lstrip('/')}"
+    elif cover.startswith("//"):
+        cover = f"https:{cover}"
+    return cover
+
+
 def _tier_from_response(
     item: dict,
     resp: dict,
@@ -89,14 +104,25 @@ def _tier_from_response(
     }
 
 
+def _avatar_from_room(room: dict) -> str:
+    avatar = room.get("avatar")
+    if isinstance(avatar, dict):
+        text = str(avatar.get("big") or avatar.get("middle") or avatar.get("small") or "").strip()
+    else:
+        text = str(avatar or "").strip()
+    if text.startswith("//"):
+        return f"https:{text}"
+    return text
+
+
 async def _load_play_context(url: str, *, preferred_cdn: str = "hw-h5") -> dict:
     live = DouyuLiveStream()
-    room_data, white = await asyncio.gather(
-        live.fetch_web_stream_data(url),
+    room_raw, white = await asyncio.gather(
+        live.fetch_web_stream_data(url, process_data=False),
         live._update_white_key(),
     )
-    rid = str(room_data["room_id"])
-    if not room_data.get("is_live"):
+    rid = str(room_raw["room_id"])
+    if room_raw.get("show_status") != 1:
         raise RuntimeError("房间未开播或解析失败")
 
     _cache_white_key(live, white)
@@ -114,7 +140,9 @@ async def _load_play_context(url: str, *, preferred_cdn: str = "hw-h5") -> dict:
         "live": live,
         "rid": rid,
         "url": url,
-        "anchor_name": room_data.get("anchor_name") or "",
+        "anchor_name": room_raw.get("nickname") or "",
+        "cover": _cover_from_room(room_raw),
+        "avatar": _avatar_from_room(room_raw),
         "white": white,
         "base": base,
         "multirates": multirates,
@@ -131,7 +159,8 @@ def meta_from_context(ctx: dict) -> dict:
         "source_url": ctx["url"],
         "anchor_name": ctx["anchor_name"],
         "title": ctx["anchor_name"],
-        "cover": "",
+        "cover": ctx.get("cover") or "",
+        "avatar": ctx.get("avatar") or "",
         "available_qualities": _available_qualities(ctx["multirates"]),
         "context": {
             "rid": ctx["rid"],

@@ -5,7 +5,8 @@
 | 子目录 | 说明 | 配置 |
 |--------|------|------|
 | [web/](web/) | Vue 3 前端 | `web/public/config.json` |
-| [server/](server/) | 解析 API | `server/config.json` |
+| [node-server/](node-server/) | 解析 API（Node，推荐） | `node-server/config.json` |
+| [server/](server/) | 解析 API（Python，过渡保留） | `server/config.json` |
 | [dist/](dist/) | 发布包；前端部署到站点 `/live/`，API 本机运行 | `dist/server/config.json` |
 
 ## 线上 + 本地 API
@@ -21,21 +22,27 @@
 cd live
 .\build-dist.bat        # 构建 dist（改源码后执行）
 cd dist
-.\start.bat             # 启动 server + web
+.\start.bat             # 一键启动 API + Web
+.\start-api.bat         # 仅 API
+.\start-web.bat         # 仅前端
 .\stop.bat              # 停止 API + 前端
 ```
 
 - API：http://127.0.0.1:8765
 - 前端：http://127.0.0.1:8080/
 
-也可分别运行 `server\start.bat`、`start-web.bat`。
+启动脚本均在 `dist/` 根目录，共用 `node.exe`。
 
 ## 开发模式（源码）
 
 ```powershell
-# 终端 1：API
-cd live/server
+# 终端 1：API（Node，推荐）
+cd live/node-server
 .\start.ps1
+
+# 或 Python 过渡版
+# cd live/server
+# .\start.ps1
 
 # 终端 2：前端
 cd live/web
@@ -48,7 +55,7 @@ npm run dev
 
 ## 配置说明
 
-**后端** `live/server/config.json`：端口、CORS、是否托管静态页（默认 `static.enabled: false`）。
+**后端** `live/node-server/config.json`（或过渡用 `live/server/config.json`）：端口、CORS、是否托管静态页（默认 `static.enabled: false`）。
 
 **前端** `live/web/public/config.json`：
 
@@ -83,7 +90,7 @@ npm run build:pages
 ## 生产部署（分离）
 
 1. 本地包：`npm run build`（根路径 `/`）；线上子路径：`npm run build:pages`
-2. 后端：在服务器运行 `live/server`，`config.json` 中开启 CORS
+2. 后端：在服务器运行 `live/node-server`（或 `dist/server` 包），`config.json` 中开启 CORS
 3. 前端 `config.json` 的 `api.baseUrl` 指向后端公网地址
 
 功能规划：[web/FEATURES.md](web/FEATURES.md)

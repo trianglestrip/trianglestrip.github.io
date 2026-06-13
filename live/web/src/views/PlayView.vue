@@ -85,6 +85,7 @@ import { getPlatform } from "../config/platforms";
 import { useRoom, usePlayer } from "../composables/useLive.js";
 import { useDanmaku } from "../composables/useDanmaku.js";
 import { useFollow } from "../composables/useFollow.js";
+import { followKey } from "../utils/prefStore.js";
 import { isSoundUnlocked, unlockSound, resetSoundSession } from "../utils/soundSession.js";
 
 const PlayerControls = defineAsyncComponent(() => import("../components/PlayerControls.vue"));
@@ -168,6 +169,16 @@ const {
 } = useDanmaku(siteRef, roomInput);
 const { follows, isFollowed, toggleFollow, unfollow } = useFollow();
 
+watch(payload, (data) => {
+  if (!data) return;
+  const key = followKey(props.site, roomInput.value);
+  const idx = follows.value.findIndex((r) => followKey(r.site, r.id) === key);
+  if (idx < 0) return;
+  const room = follows.value[idx];
+  if (data.cover && !room.cover) room.cover = data.cover;
+  if (data.avatar && !room.avatar) room.avatar = data.avatar;
+});
+
 const notice = computed(() =>
   loading.value ? "加载中..." : statusKind.value === "err" ? statusText.value : "",
 );
@@ -200,6 +211,7 @@ function buildPlayCallbacks(url, { onReadyExtra } = {}) {
     },
     onReady: () => {
       if (!playing.value) startPlay();
+      if (isSoundUnlocked() && muted.value) unmutePlayback();
       const suffix = muted.value ? "（静音）" : "";
       setStatus(`${buildMetaText(url)}\n播放中${suffix}`, "ok");
       document.title = displayTitle.value;
@@ -229,12 +241,12 @@ function markSoundUnlocked() {
   unbindEntryUnmuteGesture();
 }
 
-/** destroy 前记下当前已在有声播放，避免切房后丢失解锁状态 */
+/** destroy 前记下用户已开声，避免切房后丢失解锁状态 */
 function captureSoundUnlock() {
   if (isSoundUnlocked()) return;
   const video = resolveVideoEl(playerPanelRef.value?.videoEl);
   if (!streamActive.value || !video) return;
-  if (!video.muted && !video.paused) {
+  if (!video.muted) {
     unlockSound();
   }
 }
@@ -391,6 +403,7 @@ function onToggleFollow() {
     title: payload.value.title || displayTitle.value,
     anchor: payload.value.anchor_name || "",
     cover: payload.value.cover || "",
+    avatar: payload.value.avatar || "",
   });
 }
 
@@ -435,6 +448,7 @@ async function startPlayback({ startMuted, freshUrl = false } = {}) {
     startMuted: useMuted,
   });
   await startPlay();
+  if (isSoundUnlocked() && muted.value) await unmutePlayback();
   if (useMuted) bindEntryUnmuteGesture();
   else markSoundUnlocked();
 }

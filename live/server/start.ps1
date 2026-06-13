@@ -1,28 +1,7 @@
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
-$Port = 8765
+$NodeStart = Join-Path (Split-Path -Parent $Root) "node-server\start.ps1"
 
-$configPath = Join-Path $Root "config.json"
-if (Test-Path $configPath) {
-  try {
-    $cfg = Get-Content $configPath -Raw | ConvertFrom-Json
-    if ($cfg.port) { $Port = [int]$cfg.port }
-  } catch {
-    Write-Host "警告: 无法解析 config.json，使用默认端口 $Port"
-  }
-}
-
-Write-Host "清理端口 $Port 上的旧进程..."
-$connections = netstat -ano | Select-String ":$Port\s+.*LISTENING"
-foreach ($line in $connections) {
-  $parts = ($line -replace '\s+', ' ').Trim().Split(' ')
-  $procId = $parts[-1]
-  if ($procId -match '^\d+$' -and $procId -ne '0') {
-    Write-Host "  结束 PID $procId"
-    taskkill /PID $procId /F 2>$null | Out-Null
-  }
-}
-
-Set-Location $Root
-Write-Host "启动 serve.py (port=$Port) ..."
-& "$Root\.venv\Scripts\python.exe" "$Root\serve.py"
+Write-Host "提示: API 已切换到 Node，正在转发到 live\node-server\start.ps1"
+Write-Host "      （Python serve.py 已弃用，见 live\server\README.md）"
+& $NodeStart

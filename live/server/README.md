@@ -1,5 +1,7 @@
 # 直播解析 API（live/server）
 
+> **已弃用**：默认 API 已切换到 [`live/node-server`](../node-server/README.md)。`start.ps1` 会转发到 Node 版。本目录仅作过渡保留与对比基准。
+
 纯 API 服务，与 `live/web` 前端**完全解耦**。配置见 `config.json`（本地覆盖用 `config.local.json`，已 gitignore）。
 
 ## 配置 `config.json`

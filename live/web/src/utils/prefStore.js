@@ -10,6 +10,33 @@ export function platformPrefKey(site, category) {
   return `${PREFIX}.prefs.${site}.${category}`;
 }
 
+export function globalPrefKey(category) {
+  return `${PREFIX}.prefs.global.${category}`;
+}
+
+export function loadGlobalPref(category, defaults, legacyMigrators = []) {
+  const key = globalPrefKey(category);
+  const stored = loadJson(key);
+  if (stored && typeof stored === "object" && Object.keys(stored).length) {
+    return { ...defaults, ...stored };
+  }
+
+  for (const migrate of legacyMigrators) {
+    const legacy = migrate();
+    if (legacy && typeof legacy === "object" && Object.keys(legacy).length) {
+      const merged = { ...defaults, ...legacy };
+      saveJson(key, merged);
+      return merged;
+    }
+  }
+
+  return { ...defaults };
+}
+
+export function saveGlobalPref(category, value) {
+  saveJson(globalPrefKey(category), value);
+}
+
 export function loadJson(key, fallback = null) {
   if (typeof localStorage === "undefined") return fallback;
   try {
@@ -168,6 +195,7 @@ export function normalizeFollows(list) {
       title: item.title ? String(item.title) : "",
       anchor: item.anchor ? String(item.anchor) : "",
       cover: item.cover ? String(item.cover) : "",
+      avatar: item.avatar ? String(item.avatar) : "",
       addedAt: Number(item.addedAt) || Date.now(),
     });
   }

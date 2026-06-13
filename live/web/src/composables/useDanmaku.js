@@ -1,10 +1,17 @@
 import { ref, watch, onUnmounted } from "vue";
 import {
-  loadPlatformPref,
+  loadGlobalPref,
+  loadJson,
   migrateGlobalCookiePref,
   migrateLocalPref,
-  savePlatformPref,
+  platformPrefKey,
+  saveGlobalPref,
 } from "../utils/prefStore.js";
+import {
+  buildHuyaJoinPayload,
+  fetchHuyaDanmakuSession,
+  HUYA_HEARTBEAT,
+} from "../utils/huyaDanmaku.js";
 
 const DEFAULT_OVERLAY = {
   show: true,
@@ -21,16 +28,36 @@ const DEFAULT_CHAT = {
   gap: 4,
 };
 
-function loadOverlaySettings(site) {
-  return loadPlatformPref(site, "danmaku.overlay", DEFAULT_OVERLAY, [
-    migrateGlobalCookiePref(site, "danmaku.overlay", "lemon_dm_overlay", DEFAULT_OVERLAY, "douyu"),
-    migrateLocalPref(site, "danmaku.overlay", "lemon_danmaku_settings", "douyu"),
+const DANMAKU_PLATFORMS = ["douyu", "huya", "bilibili", "douyin"];
+
+function migratePlatformDanmakuPref(category) {
+  return () => {
+    for (const site of DANMAKU_PLATFORMS) {
+      const key = platformPrefKey(site, category);
+      const stored = loadJson(key);
+      if (stored && typeof stored === "object" && Object.keys(stored).length) {
+        if (typeof localStorage !== "undefined") {
+          localStorage.removeItem(key);
+        }
+        return stored;
+      }
+    }
+    return null;
+  };
+}
+
+function loadOverlaySettings() {
+  return loadGlobalPref("danmaku.overlay", DEFAULT_OVERLAY, [
+    migrateGlobalCookiePref("", "", "lemon_dm_overlay", DEFAULT_OVERLAY),
+    migrateLocalPref("", "", "lemon_danmaku_settings"),
+    migratePlatformDanmakuPref("danmaku.overlay"),
   ]);
 }
 
-function loadChatSettings(site) {
-  return loadPlatformPref(site, "danmaku.chat", DEFAULT_CHAT, [
-    migrateGlobalCookiePref(site, "danmaku.chat", "lemon_dm_chat", DEFAULT_CHAT, "douyu"),
+function loadChatSettings() {
+  return loadGlobalPref("danmaku.chat", DEFAULT_CHAT, [
+    migrateGlobalCookiePref("", "", "lemon_dm_chat", DEFAULT_CHAT),
+    migratePlatformDanmakuPref("danmaku.chat"),
   ]);
 }
 
@@ -50,32 +77,20 @@ function encodeDouyuMsg(msg) {
 export function useDanmaku(siteRef, roomIdRef) {
   const messages = ref([]);
   const status = ref("等待连接…");
-  const overlaySettings = ref(loadOverlaySettings(siteRef.value));
-  const chatSettings = ref(loadChatSettings(siteRef.value));
+  const overlaySettings = ref(loadOverlaySettings());
+  const chatSettings = ref(loadChatSettings());
 
   let ws = null;
   let heartbeat = null;
   let reconnectTimer = null;
   let parseWorker = null;
   let parseSeq = 0;
-  let syncingPrefs = false;
-
-  function reloadPlatformPrefs(site) {
-    syncingPrefs = true;
-    overlaySettings.value = loadOverlaySettings(site);
-    chatSettings.value = loadChatSettings(site);
-    syncingPrefs = false;
-  }
-
-  watch(siteRef, (site) => {
-    reloadPlatformPrefs(site);
-  });
+  let activeSite = null;
 
   watch(
     overlaySettings,
     (val) => {
-      if (syncingPrefs) return;
-      savePlatformPref(siteRef.value, "danmaku.overlay", val);
+      saveGlobalPref("danmaku.overlay", val);
     },
     { deep: true },
   );
@@ -83,8 +98,7 @@ export function useDanmaku(siteRef, roomIdRef) {
   watch(
     chatSettings,
     (val) => {
-      if (syncingPrefs) return;
-      savePlatformPref(siteRef.value, "danmaku.chat", val);
+      saveGlobalPref("danmaku.chat", val);
     },
     { deep: true },
   );
@@ -130,42 +144,19 @@ export function useDanmaku(siteRef, roomIdRef) {
     }, 3000);
   }
 
-  function connect() {
-    disconnect(false);
-    const site = siteRef.value;
-    const roomId = String(roomIdRef.value || "").trim();
-    if (!roomId) {
-      status.value = "缺少房间号";
-      return;
-    }
-    if (site !== "douyu") {
-      status.value = "暂不支持该平台弹幕";
-      return;
-    }
-
-    messages.value = [];
-    status.value = "开始连接弹幕服务器";
-    ensureParseWorker();
-
-    ws = new WebSocket("wss://danmuproxy.douyu.com:8506/");
+  function bindSocketHandlers(site) {
+    activeSite = site;
     ws.binaryType = "arraybuffer";
 
     ws.onopen = () => {
       status.value = "弹幕服务器连接成功";
-      ws.send(encodeDouyuMsg(`type@=loginreq/roomid@=${roomId}/`));
-      ws.send(encodeDouyuMsg(`type@=joingroup/rid@=${roomId}/gid@=-9999/`));
-      heartbeat = setInterval(() => {
-        if (ws?.readyState === WebSocket.OPEN) {
-          ws.send(encodeDouyuMsg("type@=mrkl/"));
-        }
-      }, 45000);
     };
 
     ws.onmessage = (event) => {
       const buffer = event.data;
       if (!(buffer instanceof ArrayBuffer)) return;
       parseSeq += 1;
-      ensureParseWorker().postMessage({ type: "parse", buffer, seq: parseSeq }, [buffer]);
+      ensureParseWorker().postMessage({ type: "parse", site: activeSite, buffer, seq: parseSeq }, [buffer]);
     };
 
     ws.onerror = () => {
@@ -179,9 +170,80 @@ export function useDanmaku(siteRef, roomIdRef) {
     };
   }
 
+  function connectDouyu(roomId) {
+    messages.value = [];
+    status.value = "开始连接弹幕服务器";
+    ensureParseWorker();
+
+    ws = new WebSocket("wss://danmuproxy.douyu.com:8506/");
+    bindSocketHandlers("douyu");
+
+    const prevOnOpen = ws.onopen;
+    ws.onopen = () => {
+      prevOnOpen?.();
+      ws.send(encodeDouyuMsg(`type@=loginreq/roomid@=${roomId}/`));
+      ws.send(encodeDouyuMsg(`type@=joingroup/rid@=${roomId}/gid@=-9999/`));
+      heartbeat = setInterval(() => {
+        if (ws?.readyState === WebSocket.OPEN) {
+          ws.send(encodeDouyuMsg("type@=mrkl/"));
+        }
+      }, 45000);
+    };
+  }
+
+  async function connectHuya(roomId) {
+    messages.value = [];
+    status.value = "正在获取虎牙房间信息…";
+    ensureParseWorker();
+
+    let session;
+    try {
+      session = await fetchHuyaDanmakuSession(roomId);
+    } catch (err) {
+      status.value = `虎牙弹幕参数获取失败：${err?.message || err}`;
+      scheduleReconnect();
+      return;
+    }
+
+    status.value = "开始连接虎牙弹幕服务器";
+    ws = new WebSocket("wss://cdnws.api.huya.com/");
+    bindSocketHandlers("huya");
+
+    const prevOnOpen = ws.onopen;
+    ws.onopen = () => {
+      prevOnOpen?.();
+      ws.send(buildHuyaJoinPayload(session.ayyuid, session.topSid));
+      heartbeat = setInterval(() => {
+        if (ws?.readyState === WebSocket.OPEN) {
+          ws.send(HUYA_HEARTBEAT);
+        }
+      }, 60000);
+    };
+  }
+
+  function connect() {
+    disconnect(false);
+    const site = siteRef.value;
+    const roomId = String(roomIdRef.value || "").trim();
+    if (!roomId) {
+      status.value = "缺少房间号";
+      return;
+    }
+    if (site === "douyu") {
+      connectDouyu(roomId);
+      return;
+    }
+    if (site === "huya") {
+      connectHuya(roomId);
+      return;
+    }
+    status.value = "暂不支持该平台弹幕";
+  }
+
   function disconnect(resetStatus = true) {
     clearTimers();
     releaseParseWorker();
+    activeSite = null;
     if (ws) {
       ws.onclose = null;
       ws.close();
