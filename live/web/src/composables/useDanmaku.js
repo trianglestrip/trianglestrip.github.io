@@ -28,6 +28,9 @@ const DEFAULT_CHAT = {
   gap: 4,
 };
 
+/** 聊天列表与飘屏共用的消息缓冲上限 */
+const MESSAGE_LIMIT = 100;
+
 const DANMAKU_PLATFORMS = ["douyu", "huya", "bilibili", "douyin"];
 
 function migratePlatformDanmakuPref(category) {
@@ -132,8 +135,8 @@ export function useDanmaku(siteRef, roomIdRef) {
   }
 
   function trimMessages() {
-    if (messages.value.length > 300) {
-      messages.value.splice(0, messages.value.length - 300);
+    if (messages.value.length > MESSAGE_LIMIT) {
+      messages.value.splice(0, messages.value.length - MESSAGE_LIMIT);
     }
   }
 

@@ -32,16 +32,18 @@
 
     <div v-show="tab === 'chat'" class="tab-content">
       <div ref="chatListRef" class="chat-list scrolly">
-        <div v-if="chatPlayStatus" class="chat-item sys">系统：{{ chatPlayStatus }}</div>
-        <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
-        <div
-          v-for="m in chatDanmakuMessages"
-          :key="m.id"
-          class="chat-item"
-          :style="chatItemStyle"
-        >
-          <span class="chat-user">{{ m.user }}：</span>
-          <span class="chat-text">{{ m.text }}</span>
+        <div class="chat-list__content">
+          <div v-if="chatPlayStatus" class="chat-item sys">系统：{{ chatPlayStatus }}</div>
+          <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
+          <div
+            v-for="m in chatDanmakuMessages"
+            :key="m.id"
+            class="chat-item"
+            :style="chatItemStyle"
+          >
+            <span class="chat-user">{{ m.user }}：</span>
+            <span class="chat-text">{{ m.text }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -221,8 +223,20 @@ watch(
   { immediate: true },
 );
 
+function scrollChatToBottom() {
+  if (tab.value !== "chat" || !chatListRef.value) return;
+  nextTick(() => {
+    requestAnimationFrame(() => {
+      const el = chatListRef.value;
+      if (!el) return;
+      el.scrollTop = el.scrollHeight;
+    });
+  });
+}
+
 onMounted(() => {
   if (tab.value === "follow") refreshFollowStatus();
+  scrollChatToBottom();
 });
 
 const chatItemStyle = computed(() => ({
@@ -238,18 +252,13 @@ const chatDanmakuMessages = computed(() => {
 });
 
 watch(
-  () => props.danmakuMessages.length,
-  () => {
-    if (tab.value !== "chat" || !chatListRef.value) return;
-    const el = chatListRef.value;
-    const atBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 60;
-    if (atBottom) {
-      nextTick(() => {
-        el.scrollTop = el.scrollHeight;
-      });
-    }
-  },
+  () => props.danmakuMessages.map((m) => m.id).join(),
+  () => scrollChatToBottom(),
 );
+
+watch(tab, (value) => {
+  if (value === "chat") scrollChatToBottom();
+});
 </script>
 
 <style scoped>
@@ -461,9 +470,18 @@ watch(
 
 .chat-list {
   flex: 1;
-  padding: .5rem;
+  min-height: 0;
   font-size: .85rem;
   line-height: 1.5;
+}
+
+.chat-list__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100%;
+  padding: .5rem;
+  box-sizing: border-box;
 }
 
 .chat-item {
