@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-13T10:37:37+00:00",
+  "updated_at": "2026-06-13T15:56:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Leaving Mozilla",
-      "url": "https://blog.unitedheroes.net/5751",
-      "hot": "188"
+      "title": "US bans differential privacy in Census data",
+      "url": "https://desfontain.es/blog/banning-noise.html",
+      "hot": "167"
     },
     {
       "rank": 2,
-      "title": "Electric motors with no rare earths",
-      "url": "https://www.renaultgroup.com/en/magazine/energy-and-powertrains/all-about-electric-motors-with-no-rare-earths/",
-      "hot": "480"
+      "title": "AI OSS tool repo goes archived over night after raising $7.3M Seed",
+      "url": "https://github.com/tensorzero/tensorzero",
+      "hot": "146"
     },
     {
       "rank": 3,
-      "title": "Statement on US government directive to suspend access to Fable 5 and Mythos 5",
-      "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "hot": "2350"
+      "title": "Treating pancreatic tumours may have revealed cancer's master switch",
+      "url": "https://economist.com/science-and-technology/2026/06/12/treating-pancreatic-tumours-may-have-revealed-cancers-master-switch",
+      "hot": "40"
     },
     {
       "rank": 4,
-      "title": "CRISPR tech selectively shreds cancer cells, including \"undruggable\" cancers",
-      "url": "https://innovativegenomics.org/news/crispr-technique-selectively-shreds-cancer-cells/",
-      "hot": "828"
+      "title": "Orthodox C++",
+      "url": "https://bkaradzic.github.io/posts/orthodoxc++/",
+      "hot": "21"
     },
     {
       "rank": 5,
-      "title": "Show HN: Paca – Lightweight Jira alternative for human-AI collaboration",
-      "url": "https://github.com/Paca-AI/paca",
-      "hot": "6"
+      "title": "A low-carbon computing platform from your retired phones",
+      "url": "https://research.google/blog/a-low-carbon-computing-platform-from-your-retired-phones/",
+      "hot": "149"
     },
     {
       "rank": 6,
-      "title": "Open source AI must win",
-      "url": "https://opensourceaimustwin.com/?share=v2",
-      "hot": "956"
+      "title": "Introduction to the experience of rendering Arabic typography&its technical debt",
+      "url": "https://lr0.org/blog/p/arabic/",
+      "hot": "45"
     },
     {
       "rank": 7,
-      "title": "A low-carbon computing platform from your retired phones",
-      "url": "https://research.google/blog/a-low-carbon-computing-platform-from-your-retired-phones/",
-      "hot": "6"
-    },
-    {
-      "rank": 8,
-      "title": "There is a shadow hanging over this Fable thing",
-      "url": "https://12gramsofcarbon.com/p/tech-things-there-is-a-massive-shadow",
-      "hot": "257"
-    },
-    {
-      "rank": 9,
-      "title": "Shepherd's Dog: A Game by the Most Dangerous AI Model",
-      "url": "https://koenvangilst.nl/lab/claude-fable-shepherds-dog",
+      "title": "Every Frame Perfect",
+      "url": "https://tonsky.me/blog/every-frame-perfect/",
       "hot": "90"
     },
     {
+      "rank": 8,
+      "title": "Show HN: I am building a map of people who lived in the Roman Empire",
+      "url": "https://new.roman-names.com/",
+      "hot": "49"
+    },
+    {
+      "rank": 9,
+      "title": "The state of building user interfaces in Rust",
+      "url": "https://areweguiyet.com/#ecosystem",
+      "hot": "93"
+    },
+    {
       "rank": 10,
-      "title": "Twenty One Zero-Days in FFmpeg",
-      "url": "https://depthfirst.com/research/21-zero-days-in-ffmpeg",
-      "hot": "214"
+      "title": "An Interview with Intel's Kira Boyko: Xeon 6's Product Director",
+      "url": "https://chipsandcheese.com/p/an-interview-with-intels-kira-boyko",
+      "hot": "35"
     }
   ]
 }
