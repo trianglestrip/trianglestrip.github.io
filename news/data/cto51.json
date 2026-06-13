@@ -1,38 +1,38 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-13T08:06:49+00:00",
+  "updated_at": "2026-06-13T10:37:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "把 1234.56 变成“壹仟贰佰叁拾肆元伍角陆分”——我在 HarmonyOS 写了个财务大写转换器",
+      "url": "https://ost.51cto.com/posts/46385",
+      "hot": "前言上个月报销差旅费，财务递过来一张单子，让我在&ldquo;大写金额&rdquo;那栏填上数字的中文写法。我对着13872.40想了半分钟，写出来的是&ldquo;一万三千..."
+    },
+    {
+      "rank": 2,
       "title": "与图灵奖得主对话AI未来！第八届北京智源大会正式启幕：智源世界模型与智能体最新成果集中亮相",
       "url": "https://www.51cto.com/article/846206.html",
       "hot": "本次大会于中关村国际创新中心正式拉开帷幕，汇聚200余位全球顶尖专家学者与40余位头部AI企业CEO与创始人，短短两天议程内，将落地超200场前沿主题演讲与技术分享。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "“智能体最后的考试”，Fable 5竟然不敌GPT 5.5",
       "url": "https://www.51cto.com/article/846183.html",
       "hot": "没想到打脸来得如此之快！！刚刚，UC伯克利放出了一场号称“智能体最后的考试”的全新基准测试。它把当今最强的AI Agent们拉到考场上，让它们干真正的活——在Siemens NX里建3D模型、在Unreal Engine里搭游戏场景、在Adobe After Effects里做特效合成。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "CVPR 2026 | 视觉脑机迈向双向交互！神经流模型 NeuroFlow 打通视觉与神经的双向通道",
       "url": "https://www.51cto.com/article/846185.html",
       "hot": "来自上海人工智能实验室、香港大学、香港中文大学等机构的研究团队，提出首个基于统一神经流模型的视觉-神经双向建模框架NeuroFlow。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "用鸿蒙ArkUI给自家宝宝做了个七巧板小游戏，拖拽旋转就能玩",
       "url": "https://ost.51cto.com/posts/46140",
       "hot": "用鸿蒙ArkUI给自家宝宝做了个七巧板小游戏，拖拽旋转就能玩写在前面家里小朋友三岁多，最近迷上了七巧板。买了一套实体的给他，结果没两天..."
-    },
-    {
-      "rank": 5,
-      "title": "写给未来的自己——在 HarmonyOS 里埋一个时间胶囊",
-      "url": "https://ost.51cto.com/posts/46139",
-      "hot": "前言上周末整理手机备忘录，翻到一条去年今日写下的记录：&ldquo;明年这个时候，你还在写代码吗？累的话就去吃顿好的。&rdquo;我盯着屏幕愣了几秒。去..."
     },
     {
       "rank": 6,
