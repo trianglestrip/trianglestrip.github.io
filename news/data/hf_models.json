@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-12T21:10:13+00:00",
+  "updated_at": "2026-06-13T04:46:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "google/diffusiongemma-26B-A4B-it",
       "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "hot": "604"
+      "hot": "628"
     },
     {
       "rank": 2,
       "title": "nvidia/LocateAnything-3B",
       "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "1918"
+      "hot": "1929"
     },
     {
       "rank": 3,
-      "title": "google/gemma-4-12B-it",
-      "url": "https://huggingface.co/google/gemma-4-12B-it",
-      "hot": "962"
+      "title": "moonshotai/Kimi-K2.7-Code",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "hot": "366"
     },
     {
       "rank": 4,
-      "title": "CohereLabs/North-Mini-Code-1.0",
-      "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0",
-      "hot": "331"
+      "title": "google/gemma-4-12B-it",
+      "url": "https://huggingface.co/google/gemma-4-12B-it",
+      "hot": "970"
     },
     {
       "rank": 5,
-      "title": "moonshotai/Kimi-K2.7-Code",
-      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
-      "hot": "314"
+      "title": "CohereLabs/North-Mini-Code-1.0",
+      "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0",
+      "hot": "335"
     },
     {
       "rank": 6,
-      "title": "bosonai/higgs-audio-v3-tts-4b",
-      "url": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
-      "hot": "384"
+      "title": "MiniMaxAI/MiniMax-M3",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "hot": "290"
     },
     {
       "rank": 7,
-      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "1722"
+      "title": "bosonai/higgs-audio-v3-tts-4b",
+      "url": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
+      "hot": "392"
     },
     {
       "rank": 8,
-      "title": "MiniMaxAI/MiniMax-M3",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "223"
+      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "hot": "1730"
     },
     {
       "rank": 9,
       "title": "OBLITERATUS/Gemma-4-12B-OBLITERATED",
       "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED",
-      "hot": "253"
+      "hot": "256"
     },
     {
       "rank": 10,
-      "title": "ideogram-ai/ideogram-4-fp8",
-      "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8",
-      "hot": "501"
+      "title": "unsloth/diffusiongemma-26B-A4B-it-GGUF",
+      "url": "https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF",
+      "hot": "215"
     }
   ]
 }
