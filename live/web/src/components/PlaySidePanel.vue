@@ -51,7 +51,7 @@
     </div>
 
     <div v-show="tab === 'chat'" class="tab-content">
-      <div ref="chatListRef" class="chat-list scrolly">
+      <div class="chat-list scrolly">
         <div class="chat-list__content">
           <div v-if="chatPlayStatus" class="chat-item sys">系统：{{ chatPlayStatus }}</div>
           <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
@@ -172,7 +172,7 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, nextTick, toRef, onMounted } from "vue";
+import { ref, computed, watch, toRef } from "vue";
 import Icon from "./Icon.vue";
 import FollowAvatar from "./FollowAvatar.vue";
 import FollowRoomList from "./FollowRoomList.vue";
@@ -220,7 +220,6 @@ const followTabActive = computed(() => tab.value === "follow");
 const followSiteFilter = ref("");
 const followUiPref = loadGlobalPref("play_follow_ui", { previewCover: true });
 const previewCover = ref(followUiPref.previewCover !== false);
-const chatListRef = ref(null);
 const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
   toRef(props, "followList"),
   {
@@ -559,27 +558,6 @@ watch(
   { immediate: true },
 );
 
-function scrollChatToBottom() {
-  if (tab.value !== "chat" || !chatListRef.value) return;
-  nextTick(() => {
-    requestAnimationFrame(() => {
-      const el = chatListRef.value;
-      if (!el) return;
-      const mobileFlow = window.matchMedia("(max-width: 1024px)").matches;
-      if (mobileFlow) {
-        const items = el.querySelectorAll(".chat-item");
-        items[items.length - 1]?.scrollIntoView({ block: "nearest" });
-        return;
-      }
-      el.scrollTop = el.scrollHeight;
-    });
-  });
-}
-
-onMounted(() => {
-  scrollChatToBottom();
-});
-
 const chatItemStyle = computed(() => ({
   fontSize: `${chatSettings.value.fontSize || 14}px`,
   opacity: (Number(chatSettings.value.opacity) || 100) / 100,
@@ -589,16 +567,7 @@ const chatItemStyle = computed(() => ({
 /** 非聊天 Tab 时不挂载弹幕列表，避免关注 Tab 下高频 patch 触发 Vue 更新异常 */
 const chatDanmakuMessages = computed(() => {
   if (tab.value !== "chat" || !chatSettings.value.show) return [];
-  return props.danmakuMessages;
-});
-
-watch(
-  () => props.danmakuMessages.map((m) => m.id).join(),
-  () => scrollChatToBottom(),
-);
-
-watch(tab, (value) => {
-  if (value === "chat") scrollChatToBottom();
+  return [...props.danmakuMessages].reverse();
 });
 </script>
 
@@ -886,8 +855,7 @@ watch(tab, (value) => {
 .chat-list__content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  min-height: 100%;
+  justify-content: flex-start;
   padding: .5rem;
   box-sizing: border-box;
 }
@@ -1134,11 +1102,6 @@ watch(tab, (value) => {
   .play-side--flow .chat-list {
     flex: 0 0 auto;
     min-height: auto;
-  }
-
-  .play-side--flow .chat-list__content {
-    min-height: auto;
-    justify-content: flex-start;
   }
 
   .play-side--flow .follow-tab,
