@@ -1,5 +1,5 @@
-export const PAYLOAD_TTL = 20;
-export const TIER_TTL = 20;
+export const PAYLOAD_TTL = 60;
+export const TIER_TTL = 60;
 export const META_TTL = 180;
 export const DEFAULT_TTL = PAYLOAD_TTL;
 export const MAX_ENTRIES = 100;

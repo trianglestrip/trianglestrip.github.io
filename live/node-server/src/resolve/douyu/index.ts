@@ -1,5 +1,5 @@
 import { pickQualityName } from "../schema.js";
-import { fetchBetard, getRoomId, coverFromRoom } from "./betard.js";
+import { fetchBetard, getRoomId, coverFromRoom, type BetardRoom } from "./betard.js";
 import { fetchWhiteKey } from "./encryption.js";
 import { fetchH5PlayV1, flvFromApiData, isDouyucdnUrl, type PlayV1Response } from "./play-v1.js";
 import { normalizeUrl } from "./normalize.js";
@@ -80,9 +80,17 @@ function tierFromResponse(
   };
 }
 
-async function loadPlayContext(url: string, preferredCdn = "hw-h5") {
-  const rid = await getRoomId(url);
-  const [roomRaw, white] = await Promise.all([fetchBetard(rid), fetchWhiteKey()]);
+interface LoadPlayContextOpts {
+  rid?: string;
+  roomRaw?: BetardRoom;
+}
+
+async function loadPlayContext(url: string, preferredCdn = "hw-h5", opts?: LoadPlayContextOpts) {
+  const rid = opts?.rid ?? await getRoomId(url);
+  const [roomRaw, white] = await Promise.all([
+    opts?.roomRaw ? Promise.resolve(opts.roomRaw) : fetchBetard(rid),
+    fetchWhiteKey(),
+  ]);
 
   if (roomRaw.show_status !== 1) {
     throw new Error("房间未开播或解析失败");
@@ -165,7 +173,7 @@ export async function loadMeta(url: string, preferredCdn = "hw-h5"): Promise<Dou
       offline: true,
     };
   }
-  const ctx = await loadPlayContext(url, preferredCdn);
+  const ctx = await loadPlayContext(url, preferredCdn, { rid, roomRaw });
   return metaFromContext(ctx);
 }
 

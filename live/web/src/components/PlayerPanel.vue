@@ -3,8 +3,10 @@
     <div class="player-frame">
       <video ref="videoEl" playsinline autoplay></video>
       <div v-show="!streamActive" class="player-placeholder">
-        <span class="placeholder-icon"><Icon name="play-circle" /></span>
-        <p>{{ placeholder }}</p>
+        <span class="placeholder-icon" :class="{ 'placeholder-icon--spin': loading }">
+          <Icon :name="loading ? 'refresh' : 'play-circle'" />
+        </span>
+        <p v-if="placeholder">{{ placeholder }}</p>
       </div>
     </div>
   </section>
@@ -16,7 +18,8 @@ import Icon from "./Icon.vue";
 
 defineProps({
   streamActive: { type: Boolean, default: false },
-  placeholder: { type: String, default: "输入房间号并点击播放" },
+  loading: { type: Boolean, default: false },
+  placeholder: { type: String, default: "" },
 });
 
 const videoEl = ref(null);
@@ -65,6 +68,16 @@ video {
   font-size: 2.75rem;
   color: var(--amber);
   opacity: .85;
+}
+
+.placeholder-icon--spin {
+  display: inline-flex;
+  animation: placeholder-spin 1s linear infinite;
+}
+
+@keyframes placeholder-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .player-placeholder p {

@@ -25,7 +25,8 @@
             <PlayerPanel
               ref="playerPanelRef"
               :stream-active="streamActive"
-              :placeholder="notice || '加载中...'"
+              :loading="panelLoading"
+              :placeholder="panelMessage"
             />
             <DanmakuOverlay
               v-if="danmakuReady && payload"
@@ -62,7 +63,25 @@
               @volume-change="onVolumeChange"
               @toggle-mute="onToggleMute"
             />
-            <div v-if="notice && !streamActive" class="play-overlay">{{ notice }}</div>
+            <button
+              v-if="showPauseOverlay"
+              type="button"
+              class="play-pause-overlay"
+              aria-label="播放"
+              @click.stop="onPauseOverlayClick"
+            >
+              <Icon name="play" class="play-pause-overlay__icon" />
+            </button>
+            <button
+              v-if="showMuteHint"
+              type="button"
+              class="mute-hint"
+              aria-label="点击解除静音"
+              @click.stop="onMuteHintClick"
+            >
+              <Icon name="volume-off" class="mute-hint__icon" />
+              <span>点击解除静音</span>
+            </button>
           </div>
         </div>
       </section>
@@ -135,6 +154,8 @@ const ENTRY_UNMUTE_EVENTS = ["pointerdown", "keydown"];
 let playRetrying = false;
 /** 侧栏点切房：保留「已开声」意图，避免 loadRoom 异步后丢失 session 解锁 */
 let roomSwitchKeepSound = false;
+/** 用户主动点了控制条静音，不展示解除静音提示 */
+const userChoseMute = ref(false);
 
 const platform = computed(() => getPlatform(props.site));
 
@@ -171,6 +192,42 @@ const showOnlineStat = computed(() => {
   return Boolean(online && online !== "—" && online !== "-");
 });
 
+const showMuteHint = computed(
+  () => streamActive.value && muted.value && !userChoseMute.value,
+);
+
+const panelLoading = computed(() => loading.value && !streamActive.value);
+
+const panelMessage = computed(() => {
+  if (loading.value) return "";
+  if (statusKind.value === "err") return statusText.value;
+  return "";
+});
+
+const showPauseOverlay = computed(
+  () => streamActive.value && !playing.value && !muted.value && !showMuteHint.value,
+);
+
+let onlineRefreshTimer = 0;
+
+function syncOnlineFromPayload() {
+  const data = payload.value;
+  if (!data) return;
+  if (data.is_live) {
+    roomState.value = "live";
+  } else {
+    roomState.value = "offline";
+    roomOnline.value = "";
+  }
+}
+
+function scheduleDeferredOnlineRefresh() {
+  clearTimeout(onlineRefreshTimer);
+  onlineRefreshTimer = window.setTimeout(() => {
+    void refreshRoomOnline();
+  }, 2000);
+}
+
 async function refreshRoomOnline() {
   const rid = String(payload.value?.room_id || props.id || "").trim();
   if (!rid) {
@@ -189,8 +246,11 @@ async function refreshRoomOnline() {
 }
 
 watch(
-  () => [props.site, props.id, payload.value?.room_id],
-  () => refreshRoomOnline(),
+  () => [props.site, props.id, payload.value?.room_id, payload.value?.is_live],
+  () => {
+    syncOnlineFromPayload();
+    scheduleDeferredOnlineRefresh();
+  },
   { immediate: true },
 );
 
@@ -230,9 +290,11 @@ watch(payload, (data) => {
   if (data.avatar && !room.avatar) room.avatar = data.avatar;
 });
 
-const notice = computed(() =>
-  loading.value ? "加载中..." : statusKind.value === "err" ? statusText.value : "",
-);
+async function onPauseOverlayClick() {
+  if (!streamActive.value) return;
+  revealControls();
+  togglePlay();
+}
 
 async function retryPlaybackAfterError() {
   if (playRetrying || loading.value) return;
@@ -333,7 +395,21 @@ function onEntryUnmuteGesture(event) {
 function onToggleMute() {
   const wasMuted = muted.value;
   toggleMute();
-  if (wasMuted && !muted.value) markSoundUnlocked();
+  if (wasMuted && !muted.value) {
+    markSoundUnlocked();
+    userChoseMute.value = false;
+  } else if (!wasMuted && muted.value) {
+    userChoseMute.value = true;
+  }
+}
+
+async function onMuteHintClick() {
+  if (!streamActive.value || !muted.value) return;
+  const ok = await unmutePlayback();
+  if (ok) {
+    markSoundUnlocked();
+    userChoseMute.value = false;
+  }
 }
 
 function onVolumeChange(value) {
@@ -345,14 +421,14 @@ async function onVideoShellClick(event) {
   if (!streamActive.value) return;
   const target = event.target;
   if (!(target instanceof Element)) return;
-  if (target.closest(".player-controls, .play-overlay")) return;
+  if (target.closest(".player-controls, .mute-hint, .play-pause-overlay")) return;
   revealControls();
   if (muted.value) {
     const ok = await unmutePlayback();
     if (ok) markSoundUnlocked();
     return;
   }
-  if (!playing.value) startPlay();
+  togglePlay();
 }
 
 function scheduleDeferredChrome() {
@@ -392,6 +468,7 @@ function schedulePlay(room) {
 
 function syncRouteState(site, id) {
   captureSoundUnlock();
+  userChoseMute.value = false;
   siteRef.value = site;
   roomInput.value = id;
   unbindEntryUnmuteGesture();
@@ -550,7 +627,10 @@ async function startPlayback({ startMuted, freshUrl = false } = {}) {
     return;
   }
   if (useMuted) bindEntryUnmuteGesture();
-  else markSoundUnlocked();
+  else {
+    markSoundUnlocked();
+    userChoseMute.value = false;
+  }
 }
 
 async function playRoom(room) {
@@ -647,6 +727,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   cancelAnimationFrame(chromeRaf);
   cancelAnimationFrame(playRaf);
+  clearTimeout(onlineRefreshTimer);
   destroy();
   disconnectDm();
   clearTimeout(hideControlsTimer.value);
@@ -806,6 +887,70 @@ onBeforeUnmount(() => {
   font-size: .95rem;
   pointer-events: none;
   z-index: 3;
+}
+
+.mute-hint {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .55rem .85rem;
+  border: 1px solid rgba(243, 208, 78, .45);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, .72);
+  color: var(--text);
+  font: inherit;
+  font-size: .9rem;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .35);
+  transition: border-color .15s, background .15s, transform .15s;
+}
+
+.mute-hint:hover {
+  border-color: var(--amber);
+  background: rgba(0, 0, 0, .82);
+  transform: translate(-50%, -50%) scale(1.02);
+}
+
+.mute-hint__icon {
+  font-size: 1.05rem;
+  color: var(--amber);
+}
+
+.play-pause-overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.25rem;
+  height: 4.25rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .55);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .35);
+  transition: background .15s, transform .15s;
+}
+
+.play-pause-overlay:hover {
+  background: rgba(0, 0, 0, .72);
+  transform: translate(-50%, -50%) scale(1.04);
+}
+
+.play-pause-overlay__icon {
+  font-size: 2rem;
+  color: var(--amber);
 }
 
 .play-layout--webscreen .play-main {
