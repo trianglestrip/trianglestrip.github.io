@@ -32,6 +32,8 @@ def main() -> None:
                     continue
                 full = os.path.join(root, name)
                 rel = os.path.relpath(full, SERVER_LOCAL).replace("\\", "/")
+                if rel.startswith("data/") or rel == "data":
+                    continue
                 zf.write(full, f"server/{rel}")
     print(f"zip {os.path.getsize(zip_path)} bytes", flush=True)
 

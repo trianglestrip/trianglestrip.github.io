@@ -754,16 +754,100 @@ function toggleWebscreen() {
   revealControls();
 }
 
-function toggleFullscreen() {
-  const el = frameRef.value;
-  if (!el) return;
-  if (document.fullscreenElement) document.exitFullscreen();
-  else el.requestFullscreen?.();
+function isMobilePlayViewport() {
+  return window.matchMedia("(max-width: 640px)").matches
+    || window.matchMedia("(pointer: coarse)").matches;
+}
+
+async function lockLandscapeOrientation() {
+  const orientation = screen.orientation;
+  if (!orientation?.lock) return;
+  try {
+    await orientation.lock("landscape");
+  } catch {
+    try {
+      await orientation.lock("landscape-primary");
+    } catch {
+      /* 部分浏览器不支持或需用户手势 */
+    }
+  }
+}
+
+function unlockLandscapeOrientation() {
+  try {
+    screen.orientation?.unlock?.();
+  } catch {
+    /* ignore */
+  }
+}
+
+function bindIosVideoFullscreen(video) {
+  if (!video || video.__iosFullscreenBound) return;
+  video.__iosFullscreenBound = true;
+  video.addEventListener("webkitbeginfullscreen", () => {
+    isFullscreen.value = true;
+  });
+  video.addEventListener("webkitendfullscreen", () => {
+    isFullscreen.value = false;
+  });
+}
+
+async function requestElementFullscreen(el) {
+  if (el.requestFullscreen) {
+    await el.requestFullscreen();
+    return;
+  }
+  if (el.webkitRequestFullscreen) {
+    await el.webkitRequestFullscreen();
+  }
+}
+
+async function toggleFullscreen() {
+  const frame = frameRef.value;
+  if (!frame) return;
+
+  if (document.fullscreenElement) {
+    await document.exitFullscreen().catch(() => {});
+    unlockLandscapeOrientation();
+    revealControls();
+    return;
+  }
+
+  const mobile = isMobilePlayViewport();
+  let video = null;
+  try {
+    video = await ensureVideoEl();
+  } catch {
+    video = resolveVideoEl(playerPanelRef.value?.videoEl);
+  }
+
+  if (video) bindIosVideoFullscreen(video);
+
+  if (mobile && video && typeof video.webkitEnterFullscreen === "function") {
+    try {
+      video.webkitEnterFullscreen();
+      isFullscreen.value = true;
+      revealControls();
+      return;
+    } catch {
+      /* Android 等继续走标准全屏 */
+    }
+  }
+
+  const target = mobile && video ? video : frame;
+  try {
+    await requestElementFullscreen(target);
+    if (mobile) await lockLandscapeOrientation();
+  } catch {
+    /* ignore */
+  }
   revealControls();
 }
 
 function onFullscreenChange() {
-  isFullscreen.value = !!document.fullscreenElement;
+  const fs = !!document.fullscreenElement;
+  isFullscreen.value = fs;
+  if (!fs) unlockLandscapeOrientation();
 }
 
 function onPiPChange() {
@@ -842,6 +926,10 @@ onBeforeUnmount(() => {
   height: 100%;
   min-height: 0;
   gap: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1024px) {
@@ -1006,6 +1094,40 @@ onBeforeUnmount(() => {
   border-radius: 0;
 }
 
+.play-frame:fullscreen,
+.play-frame:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  border-radius: 0;
+  background: #000;
+}
+
+.play-frame:fullscreen .video-shell,
+.play-frame:-webkit-full-screen .video-shell {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  aspect-ratio: unset;
+}
+
+.play-frame:fullscreen :deep(.player-panel),
+.play-frame:fullscreen :deep(.player-frame),
+.play-frame:-webkit-full-screen :deep(.player-panel),
+.play-frame:-webkit-full-screen :deep(.player-frame) {
+  width: 100%;
+  height: 100%;
+}
+
+.play-frame video:fullscreen,
+.play-frame video:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
 @media (min-width: 768px) {
   .play-frame--webscreen {
     inset: 0 0 0 var(--nav-width);
@@ -1098,5 +1220,63 @@ onBeforeUnmount(() => {
 
 .play-layout--webscreen .play-main {
   width: 100%;
+}
+
+@media (max-width: 640px) {
+  .play-header {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .22rem .35rem;
+    min-height: 0;
+    padding: .3rem .4rem .35rem 2.35rem;
+  }
+
+  .play-back {
+    left: .35rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1rem;
+  }
+
+  .play-header-category {
+    flex: 0 0 auto;
+    max-width: 32%;
+    padding: .18rem .38rem;
+    font-size: .72rem;
+  }
+
+  .play-header-main {
+    flex: 1 1 0;
+    min-width: 0;
+    justify-content: flex-start;
+  }
+
+  .play-title {
+    font-size: .88rem;
+    text-align: left;
+  }
+
+  .play-stats-inline {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-end;
+    gap: .22rem;
+    font-size: .72rem;
+  }
+
+  .play-stat-item {
+    padding: .18rem .38rem;
+  }
+
+  .play-frame {
+    border-radius: 0;
+  }
+
+  .video-shell {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 </style>

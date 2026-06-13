@@ -1094,9 +1094,83 @@ watch(tab, (value) => {
 @media (max-width: 1024px) {
   .play-side {
     width: 100%;
+    max-width: 100%;
     border-left: none;
     border-top: 1px solid var(--gray-7);
     height: 360px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 640px) {
+  .play-side {
+    height: 320px;
+  }
+
+  .side-header {
+    padding: .15rem .4rem;
+  }
+
+  .room-aside {
+    gap: .3rem;
+    min-width: 0;
+  }
+
+  .room-aside-avatar :deep(.follow-avatar),
+  .room-aside-avatar :deep(.follow-avatar--empty) {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .room-aside-meta {
+    min-height: 2.6rem;
+  }
+
+  .room-anchor {
+    font-size: .82rem;
+  }
+
+  .room-fans,
+  .room-live-start {
+    font-size: .72rem;
+  }
+
+  .room-aside-actions {
+    min-height: 2.6rem;
+    gap: .18rem;
+  }
+
+  .follow-btn,
+  .super-follow-btn {
+    padding: .16rem .26rem;
+    font-size: .58rem;
+    gap: .1rem;
+    min-width: 0;
+  }
+
+  .follow-btn__icon,
+  .super-follow-btn__icon {
+    width: .72rem;
+    height: .72rem;
+  }
+
+  .follow-btn__text,
+  .super-follow-btn__text {
+    display: inline;
+  }
+
+  .tabs {
+    gap: .5rem;
+    padding: 0 .35rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabs button {
+    padding: .5rem .15rem;
+    font-size: .82rem;
     flex-shrink: 0;
   }
 }

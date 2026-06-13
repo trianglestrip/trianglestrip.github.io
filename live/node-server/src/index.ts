@@ -93,7 +93,7 @@ export function startServer(cfg: ServerConfig, webRoot: string | null): void {
     console.log("     GET /api/rooms?site=douyu|huya&cid=<id>&page=1");
     console.log("     GET /api/rooms?site=douyu|huya&recommend=1&page=1");
     console.log("     GET /api/time?site=douyu|huya&room=<id>&run=0|1");
-    console.log("     GET/POST /api/follows/store  关注本地备份（data/follows-store.json）");
+    console.log("     GET/POST /api/follows/store  已禁用服务端共享（关注仅存浏览器）");
     console.log("配置: config.json（可选 config.local.json 覆盖）");
     console.log("按 Ctrl+C 停止");
   });

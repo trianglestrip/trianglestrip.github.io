@@ -46,7 +46,7 @@ async function syncBoth(applyMerged) {
   }
 }
 
-/** 浏览器 localStorage 为主；启动拉取备份，每 30 分钟异步与服务端文件双向合并 */
+/** @deprecated 多用户公服不共享关注；已停用，跨设备请用设置中的导出/导入 */
 export function startFollowSync(applyMerged) {
   if (started || typeof window === "undefined") return;
   started = true;

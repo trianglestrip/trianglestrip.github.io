@@ -7,7 +7,6 @@ import { parseRoomId } from "../resolve/parse-room-id.js";
 import type { ResolveService } from "../resolve/service.js";
 import { buildTimeReport } from "../resolve/timing.js";
 import { fetchFollowSnapshots } from "../follow/status.js";
-import { loadFollowStore, normalizeStoredFollow, syncFollowStore } from "../follow/store.js";
 import { fetchHuyaDanmakuSession } from "../danmaku/huya.js";
 import { crossCategoryMapPayload } from "../browse/category-cross-map.js";
 import { applyCorsHeaders } from "../middleware/cors.js";
@@ -278,33 +277,20 @@ export async function handleApi(
   }
 
   if (pathname === "/api/follows/store" && req.method === "GET") {
-    const payload = loadFollowStore();
-    sendJson(res, ctx.config, { ok: true, ...payload });
+    // 关注列表仅存各用户浏览器 localStorage，服务端不做共享备份
+    sendJson(res, ctx.config, { ok: true, follows: [], updatedAt: 0, serverStore: false });
     return true;
   }
 
   if (pathname === "/api/follows/store" && req.method === "POST") {
-    let data: Record<string, unknown>;
-    try {
-      data = await readJsonBody(req);
-    } catch {
-      sendJson(res, ctx.config, { ok: false, error: "无效 JSON" }, 400);
-      return true;
-    }
-    const rawFollows = data.follows;
-    if (!Array.isArray(rawFollows)) {
-      sendJson(res, ctx.config, { ok: false, error: "缺少 follows 数组" }, 400);
-      return true;
-    }
-    const incoming = rawFollows
-      .map((item) => normalizeStoredFollow(item as Record<string, unknown>))
-      .filter((item): item is NonNullable<typeof item> => Boolean(item));
-    try {
-      const payload = syncFollowStore(incoming);
-      sendJson(res, ctx.config, { ok: true, ...payload });
-    } catch (err) {
-      sendApiError(res, ctx.config, err);
-    }
+    // 忽略写入，避免多用户共用同一文件
+    sendJson(res, ctx.config, {
+      ok: true,
+      follows: [],
+      updatedAt: 0,
+      serverStore: false,
+      note: "关注仅存浏览器本地，请使用设置中的导出/导入",
+    });
     return true;
   }
 

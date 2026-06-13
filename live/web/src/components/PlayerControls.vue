@@ -10,7 +10,7 @@
         <Icon :name="playing ? 'pause' : 'play'" class="ctrl-fa" />
       </button>
 
-      <button type="button" class="ctrl-icon" title="刷新" @click="$emit('refresh')">
+      <button type="button" class="ctrl-icon ctrl--mobile-hide" title="刷新" @click="$emit('refresh')">
         <Icon name="refresh" class="ctrl-fa" />
       </button>
 
@@ -26,7 +26,7 @@
         </button>
         <button
           type="button"
-          class="ctrl-danmaku-settings-btn"
+          class="ctrl-danmaku-settings-btn ctrl--mobile-hide"
           :class="{ 'ctrl-danmaku-settings-btn--open': danmakuSettingsOpen }"
           title="飘屏弹幕设置"
           @click.stop="toggleDanmakuSettings"
@@ -60,7 +60,7 @@
             />
           </button>
           <input
-            class="ctrl-volume__slider"
+            class="ctrl-volume__slider ctrl--mobile-hide"
             type="range"
             min="0"
             max="1"
@@ -94,7 +94,7 @@
           </div>
         </div>
 
-        <div ref="lineRef" class="ctrl-dropdown">
+        <div v-if="lines.length > 1" ref="lineRef" class="ctrl-dropdown ctrl--mobile-hide">
           <button
             type="button"
             class="ctrl-dropdown__trigger"
@@ -117,14 +117,14 @@
           </div>
         </div>
 
-        <button type="button" class="ctrl-icon ctrl-icon--pip" title="画中画" @click="$emit('toggle-pip')">
+        <button type="button" class="ctrl-icon ctrl-icon--pip ctrl--mobile-hide" title="画中画" @click="$emit('toggle-pip')">
           <Icon :name="pictureInPicture ? 'pip-exit' : 'pip'" class="ctrl-fa" />
         </button>
       </div>
 
       <button
         type="button"
-        class="ctrl-icon"
+        class="ctrl-icon ctrl--mobile-hide"
         :class="{ 'ctrl-icon--active': webscreen }"
         title="网页全屏"
         @click="$emit('webscreen')"
@@ -295,8 +295,60 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
 }
 
 @media (max-width: 640px) {
+  .player-controls--overlay .controls-bar {
+    gap: .15rem;
+    padding: .28rem .35rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .ctrl--mobile-hide {
+    display: none !important;
+  }
+
+  .ctrl-icon {
+    width: 1.25em;
+    height: 1.25em;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+  }
+
+  .ctrl-danmaku-group {
+    gap: 0;
+  }
+
+  .controls-spacer {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .controls-right {
+    gap: 0;
+    min-width: 0;
+    flex-shrink: 1;
+  }
+
+  .ctrl-volume {
+    gap: 0;
+    margin-right: 0;
+  }
+
   .ctrl-volume__slider {
     width: 3rem;
+  }
+
+  .ctrl-dropdown__trigger {
+    font-size: .7rem;
+    padding: .12rem .18rem;
+    max-width: 3.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .controls-notice {
+    padding: 0 .35rem .28rem;
+    font-size: .72rem;
   }
 }
 
