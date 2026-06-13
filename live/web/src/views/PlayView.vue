@@ -107,6 +107,7 @@
         :danmaku-messages="danmakuMessages"
         :danmaku-status="danmakuStatus"
         :follow-list="follows"
+        :room-category="displayCategory"
         :is-super-followed="isSuperFollowed(site, id)"
         @play-room="onPlayFollow"
         @unfollow="onUnfollow"
@@ -552,6 +553,7 @@ function onPlaybackReady() {
 
 function revealSidePanel() {
   sideReady.value = true;
+  nextTick(() => sidePanelRef.value?.refreshSide?.());
 }
 
 function schedulePlay(room) {

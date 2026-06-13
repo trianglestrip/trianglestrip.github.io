@@ -31,6 +31,11 @@
         <PlatformCoverBadge v-if="room.site" :site="room.site" />
         <CoverOnlineBadge :online="room.online" :live="room.state !== 'offline'" />
         <span
+          v-if="categoryLabel(room)"
+          class="follow-preview-cat"
+          :title="categoryLabel(room)"
+        >{{ categoryLabel(room) }}</span>
+        <span
           v-if="selectMode"
           class="follow-preview-check"
           :class="{ 'follow-preview-check--on': isSelected(room) }"
@@ -45,7 +50,7 @@
           class="follow-preview-last-live"
         >{{ lastLiveLabel(room) }}</span>
       </p>
-      <p v-if="showPreviewStats(room)" class="follow-preview-stats">
+      <p v-if="showStats && showPreviewStats(room)" class="follow-preview-stats">
         <span
           v-if="showOnlineStat(room)"
           class="follow-preview-stat"
@@ -75,12 +80,14 @@ import CoverOnlineBadge from "./CoverOnlineBadge.vue";
 import { followKey } from "../utils/prefStore.js";
 import { prefetchRoom } from "../utils/roomPrefetch.js";
 import { formatLastLiveAt } from "../utils/followDisplay.js";
+import { displayCategoryName } from "../utils/categoryDisplay.js";
 
 const props = defineProps({
   rooms: { type: Array, default: () => [] },
   selectMode: { type: Boolean, default: false },
   selectedKeys: { type: Array, default: () => [] },
   compact: { type: Boolean, default: false },
+  showStats: { type: Boolean, default: true },
 });
 
 const emit = defineEmits(["select", "toggle-select"]);
@@ -126,6 +133,10 @@ function liveStartLabel(room) {
 
 function showPreviewStats(room) {
   return showOnlineStat(room) || liveStartLabel(room);
+}
+
+function categoryLabel(room) {
+  return displayCategoryName(room.site, room.category, room.cid);
 }
 </script>
 
@@ -258,6 +269,33 @@ function showPreviewStats(room) {
   background: rgba(0, 0, 0, 0.55);
   color: #fff;
   font-size: .78rem;
+}
+
+.follow-preview-cat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: .15rem .45rem;
+  font-size: .72rem;
+  line-height: 1.2;
+  background: var(--dark-6);
+  border-bottom-left-radius: 8px;
+  color: var(--text);
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.follow-preview-grid--compact .follow-preview-cat {
+  font-size: .66rem;
+  padding: .22rem .4rem;
+  border-bottom-left-radius: 6px;
+}
+
+.follow-preview-item--offline .follow-preview-cat {
+  opacity: 0.72;
 }
 
 .follow-preview-anchor {

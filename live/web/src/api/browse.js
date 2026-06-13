@@ -63,13 +63,15 @@ export async function fetchRelatedRecommendRooms({
   category = "",
   cid = "",
   page = 1,
-  perSite = 5,
+  perSite = 10,
+  limit = 20,
 } = {}) {
   const params = new URLSearchParams({
     site,
     category,
     page: String(page),
     perSite: String(perSite),
+    limit: String(limit),
   });
   if (cid) params.set("cid", String(cid));
   const res = await fetch(apiUrl(`/api/recommend-related?${params.toString()}`), { cache: "no-store" });

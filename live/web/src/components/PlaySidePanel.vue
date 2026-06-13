@@ -12,30 +12,34 @@
         <div class="room-aside-meta">
           <p class="room-anchor">{{ anchor || "—" }}</p>
           <p class="room-fans" :title="fansTitle">
-            <Icon name="users" class="room-stat-icon" />
             <span>{{ fansText }}</span>
           </p>
+          <p class="room-live-start" :title="liveStartTitle">
+            <span>{{ liveStartText }}</span>
+          </p>
         </div>
-        <button
-          type="button"
-          class="follow-btn"
-          :class="{ 'follow-btn--active': roomIsFollowed }"
-          :title="roomIsFollowed ? '取消关注' : '关注'"
-          @click="onToggleFollow"
-        >
-          <Icon name="heart" class="follow-btn__icon" :filled="roomIsFollowed" />
-          <span class="follow-btn__text">{{ roomIsFollowed ? "已关注" : "关注" }}</span>
-        </button>
-        <button
-          type="button"
-          class="super-follow-btn"
-          :class="{ 'super-follow-btn--active': isSuperFollowed }"
-          :title="isSuperFollowed ? '取消超级关注' : '超级关注'"
-          @click="$emit('toggle-super-follow')"
-        >
-          <Icon name="star" class="super-follow-btn__icon" :filled="isSuperFollowed" />
-          <span class="super-follow-btn__text">{{ isSuperFollowed ? "已超关" : "超关" }}</span>
-        </button>
+        <div class="room-aside-actions">
+          <button
+            type="button"
+            class="follow-btn"
+            :class="{ 'follow-btn--active': roomIsFollowed }"
+            :title="roomIsFollowed ? '取消关注' : '关注'"
+            @click="onToggleFollow"
+          >
+            <Icon name="heart" class="follow-btn__icon" :filled="roomIsFollowed" />
+            <span class="follow-btn__text">{{ roomIsFollowed ? "已关注" : "关注" }}</span>
+          </button>
+          <button
+            type="button"
+            class="super-follow-btn"
+            :class="{ 'super-follow-btn--active': isSuperFollowed }"
+            :title="isSuperFollowed ? '取消超级关注' : '超级关注'"
+            @click="$emit('toggle-super-follow')"
+          >
+            <Icon name="star" class="super-follow-btn__icon" :filled="isSuperFollowed" />
+            <span class="super-follow-btn__text">{{ isSuperFollowed ? "已超关" : "超关" }}</span>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -103,6 +107,7 @@
       <FollowPreviewGrid
         v-else
         compact
+        :show-stats="false"
         :rooms="recommendPreviewRooms"
         @select="onRecommendSelect"
       />
@@ -151,6 +156,7 @@ import { useFollowStatus } from "../composables/useFollowStatus.js";
 import { loadGlobalPref, saveGlobalPref } from "../utils/prefStore.js";
 import { briefDanmakuStatus, briefPlayStatus } from "../utils/chatStatus.js";
 import { displayCategoryName } from "../utils/categoryDisplay.js";
+import { formatLastLiveAt } from "../utils/followDisplay.js";
 
 const props = defineProps({
   site: { type: String, default: "" },
@@ -160,6 +166,8 @@ const props = defineProps({
   danmakuMessages: { type: Array, default: () => [] },
   danmakuStatus: { type: String, default: "" },
   followList: { type: Array, default: () => [] },
+  roomCategory: { type: String, default: "" },
+  roomCid: { type: String, default: "" },
   isSuperFollowed: { type: Boolean, default: false },
 });
 
@@ -202,6 +210,9 @@ function togglePreviewCover() {
   saveGlobalPref("play_follow_ui", { previewCover: previewCover.value });
 }
 
+const RECOMMEND_LIMIT = 20;
+const RECOMMEND_PER_SITE = 10;
+
 const recommendRooms = ref([]);
 const recommendLoading = ref(false);
 const recommendError = ref("");
@@ -218,22 +229,65 @@ const recommendPreviewRooms = computed(() =>
       cover: room.cover || "",
       state: room.liveState || (room.status ? "live" : "offline"),
       online: offline ? "" : room.online || "",
+      category: room.category || "",
+      cid: room.cid || "",
     };
   }),
 );
 
-function currentRoomCategory() {
-  const room = sortedFollows.value.find(
-    (item) => item.site === props.site && String(item.id) === String(props.roomId),
+function findCurrentFollowRoom() {
+  return (
+    sortedFollows.value.find(
+      (item) => item.site === props.site && String(item.id) === String(props.roomId),
+    ) ||
+    props.followList?.find(
+      (item) => item.site === props.site && String(item.id) === String(props.roomId),
+    ) ||
+    null
   );
-  const raw = room?.category
-    ? String(room.category).trim()
-    : String(
-        props.followList?.find(
-          (item) => item.site === props.site && String(item.id) === String(props.roomId),
-        )?.category || "",
-      ).trim();
-  return displayCategoryName(props.site, raw, room?.cid);
+}
+
+function excludeCurrentRoom(list) {
+  return (list || []).filter(
+    (room) =>
+      String(room.siteId || room.site) !== props.site ||
+      String(roomKey(room)) !== String(props.roomId),
+  );
+}
+
+async function resolveRecommendContext() {
+  const room = findCurrentFollowRoom();
+  const roomCid = props.roomCid || (room?.cid ? String(room.cid).trim() : "");
+
+  if (props.roomCategory) {
+    return { category: props.roomCategory, cid: roomCid };
+  }
+
+  const raw = room?.category ? String(room.category).trim() : "";
+  if (raw || roomCid) {
+    return {
+      category: displayCategoryName(props.site, raw, roomCid),
+      cid: roomCid,
+    };
+  }
+
+  if (props.site && props.roomId) {
+    try {
+      const data = await fetchFollowStatus([{ site: props.site, id: props.roomId }]);
+      const snap = data.list?.[0];
+      const cat = String(snap?.category || "").trim();
+      if (cat) {
+        return {
+          category: displayCategoryName(props.site, cat, roomCid),
+          cid: roomCid,
+        };
+      }
+    } catch {
+      /* ignore */
+    }
+  }
+
+  return { category: "", cid: roomCid };
 }
 
 async function loadRecommend() {
@@ -241,21 +295,20 @@ async function loadRecommend() {
   recommendLoading.value = true;
   recommendError.value = "";
   try {
-    const category = currentRoomCategory();
+    const { category, cid } = await resolveRecommendContext();
     if (category) {
       const data = await fetchRelatedRecommendRooms({
         site: props.site,
         category,
+        cid,
         page: 1,
-        perSite: 5,
+        perSite: RECOMMEND_PER_SITE,
+        limit: RECOMMEND_LIMIT,
       });
-      recommendRooms.value = (data.list || []).filter(
-        (room) =>
-          String(room.siteId || room.site) !== props.site ||
-          String(roomKey(room)) !== String(props.roomId),
-      );
+      recommendRooms.value = excludeCurrentRoom(data.list).slice(0, RECOMMEND_LIMIT);
     } else {
-      recommendRooms.value = await fetchMixedRecommendRooms({ page: 1, perSite: 6 });
+      const mixed = await fetchMixedRecommendRooms({ page: 1, perSite: RECOMMEND_PER_SITE });
+      recommendRooms.value = excludeCurrentRoom(mixed).slice(0, RECOMMEND_LIMIT);
     }
     if (!recommendRooms.value.length) throw new Error("暂无推荐直播");
     recommendLoaded.value = true;
@@ -276,11 +329,12 @@ watch(tab, (value) => {
 }, { immediate: true });
 
 watch(
-  () => props.site,
+  () => [props.site, props.roomId, props.roomCategory],
   () => {
     recommendRooms.value = [];
     recommendLoaded.value = false;
     recommendError.value = "";
+    if (tab.value === "recommend") loadRecommend();
   },
 );
 
@@ -306,13 +360,21 @@ function onToggleFollow() {
 const anchor = computed(() => props.payload?.anchor_name || "");
 
 const roomFans = ref("");
+const roomLiveStartAt = ref(0);
+const roomState = ref("offline");
 const roomAvatar = ref("");
 
-const fansText = computed(() => roomFans.value || "—");
-const fansTitle = computed(() => {
-  if (roomFans.value) return `粉丝 ${roomFans.value}`;
-  return "粉丝 —";
+const fansText = computed(() => {
+  const count = String(roomFans.value || "").trim();
+  return count ? `关注：${count}` : "关注：—";
 });
+const fansTitle = computed(() => fansText.value);
+const liveStartText = computed(() => {
+  if (roomState.value === "offline") return "开播：—";
+  const text = formatLastLiveAt(roomLiveStartAt.value);
+  return text ? `开播：${text}` : "开播：—";
+});
+const liveStartTitle = computed(() => liveStartText.value);
 const displayAvatar = computed(() => {
   const fromPayload = String(props.payload?.avatar || "").trim();
   if (fromPayload) return fromPayload;
@@ -327,15 +389,22 @@ const displayAvatar = computed(() => {
   return String(room?.avatar || "").trim();
 });
 
-function syncAvatarFromFollowList() {
+function syncMetaFromFollowList() {
   const id = String(props.roomId || props.payload?.room_id || "").trim();
   const site = String(props.site || props.payload?.platform || props.payload?.site || "").trim();
-  if (!id || !site || roomAvatar.value) return;
+  if (!id || !site) return;
   const room =
     sortedFollows.value.find((item) => item.site === site && String(item.id) === id) ||
     props.followList?.find((item) => item.site === site && String(item.id) === id);
-  const avatar = String(room?.avatar || "").trim();
-  if (avatar) roomAvatar.value = avatar;
+  if (!room) return;
+  if (!roomAvatar.value && room.avatar) roomAvatar.value = String(room.avatar).trim();
+  if (!roomFans.value && room.fans) roomFans.value = String(room.fans).trim();
+  if (room.state) roomState.value = room.state;
+  if (room.liveStartAt) roomLiveStartAt.value = Number(room.liveStartAt) || 0;
+}
+
+function syncAvatarFromFollowList() {
+  syncMetaFromFollowList();
 }
 
 async function refreshRoomFans() {
@@ -345,6 +414,8 @@ async function refreshRoomFans() {
   const id = String(props.payload?.room_id || props.roomId || "").trim();
   if (!site || !id) {
     roomFans.value = "";
+    roomLiveStartAt.value = 0;
+    roomState.value = "offline";
     if (!props.payload?.avatar) roomAvatar.value = "";
     return;
   }
@@ -353,6 +424,9 @@ async function refreshRoomFans() {
     const snap = data.list?.[0];
     if (!snap) return;
     roomFans.value = snap.fans || "";
+    if (snap.state) roomState.value = snap.state;
+    if (snap.liveStartAt) roomLiveStartAt.value = Number(snap.liveStartAt) || 0;
+    else if (snap.state === "offline") roomLiveStartAt.value = 0;
     if (!roomAvatar.value && snap.avatar) roomAvatar.value = snap.avatar;
   } catch {
     /* 保留上次 */
@@ -383,12 +457,17 @@ watch(
     if (!payloadAvatar) syncAvatarFromFollowList();
     if (!props.payload?.room_id && !props.roomId) {
       roomFans.value = "";
+      roomLiveStartAt.value = 0;
+      roomState.value = "offline";
       roomAvatar.value = "";
       return;
     }
     roomFans.value = "";
+    roomLiveStartAt.value = 0;
+    roomState.value = "offline";
     void refreshRoomFans();
   },
+  { immediate: true },
 );
 
 function scrollChatToBottom() {
@@ -468,13 +547,16 @@ watch(tab, (value) => {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 0.12rem;
+  justify-content: flex-start;
+  align-self: stretch;
+  min-height: 3.25rem;
+  gap: 0;
+  padding-top: 0;
 }
 
 .room-anchor {
   margin: 0;
-  font-size: .78rem;
+  font-size: .9rem;
   font-weight: 600;
   line-height: 1.25;
   overflow: hidden;
@@ -487,25 +569,39 @@ watch(tab, (value) => {
   display: flex;
   align-items: center;
   gap: .2rem;
-  margin: .16rem 0 0;
-  font-size: .7rem;
-  line-height: 1.15;
+  margin: 0.2rem 0 0;
+  font-size: .82rem;
+  line-height: 1.2;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
 
-.room-stat-icon {
-  width: .78em;
-  height: .78em;
-  opacity: .7;
+.room-live-start {
+  margin: 0.14rem 0 0;
+  font-size: .82rem;
+  line-height: 1.2;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.room-aside-actions {
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-self: stretch;
+  justify-content: center;
+  gap: .24rem;
+  min-height: 3.25rem;
 }
 
 .follow-btn {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: .14rem;
+  width: 100%;
   padding: .22rem .34rem;
   border: 1px solid rgba(229, 57, 53, 0.35);
   border-radius: 6px;
@@ -543,7 +639,9 @@ watch(tab, (value) => {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: .14rem;
+  width: 100%;
   padding: .22rem .34rem;
   border: 1px solid rgba(155, 89, 182, 0.35);
   border-radius: 6px;

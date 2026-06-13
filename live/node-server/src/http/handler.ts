@@ -222,8 +222,9 @@ export async function handleApi(
     const category = query.get("category") || "";
     const cid = query.get("cid") || "";
     const page = Number(query.get("page") || "1") || 1;
-    const perSite = Number(query.get("perSite") || "5") || 5;
-    const cacheKey = `browse:related:${site}:${category}:${cid}:${page}:${perSite}`;
+    const perSite = Number(query.get("perSite") || "10") || 10;
+    const limit = Number(query.get("limit") || "20") || 20;
+    const cacheKey = `browse:related:${site}:${category}:${cid}:${page}:${perSite}:${limit}`;
     const cached = ctx.cache.get(cacheKey);
     if (cached && typeof cached === "object") {
       sendJson(res, ctx.config, { ok: true, ...(cached as Record<string, unknown>), cached: true });
@@ -236,6 +237,7 @@ export async function handleApi(
         cid,
         page,
         perSite,
+        limit,
       );
       const result = {
         list: payload.list || [],
@@ -243,6 +245,7 @@ export async function handleApi(
         categoryName: payload.categoryName,
         page,
         perSite,
+        limit,
       };
       ctx.cache.set(cacheKey, result, { ttl: 60 });
       sendJson(res, ctx.config, { ok: true, ...result });

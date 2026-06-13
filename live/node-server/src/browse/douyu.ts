@@ -136,6 +136,52 @@ function normalizeDouyuRoom(item: Record<string, unknown>): RoomItem {
   };
 }
 
+function normalizeDouyuMixRoom(item: Record<string, unknown>, targetCid: string): RoomItem | null {
+  const cid2 = String(item.cid2 ?? "");
+  if (targetCid && cid2 && cid2 !== targetCid) return null;
+  const roomId = String(item.rid || "");
+  if (!roomId) return null;
+  let cover = String(item.rs16 || item.rs1 || "");
+  if (cover.startsWith("//")) {
+    cover = `https:${cover}`;
+  }
+  return {
+    roomId,
+    siteId: "douyu",
+    status: true,
+    title: String(item.rn || ""),
+    nickname: String(item.nn || ""),
+    cid: cid2,
+    category: String(item.c2name || item.c2name_display || ""),
+    online: formatOnline((item.ol ?? item.online) as number | string),
+    cover,
+  };
+}
+
+async function fetchDouyuCategoryMixList(
+  cid: string | number,
+  page: number,
+  limit = 30,
+): Promise<RoomsPayload> {
+  const cidText = String(cid);
+  const data = await getJson<{ code?: number; data?: Record<string, unknown> }>(
+    `https://www.douyu.com/gapi/rkc/directory/mixList/2_${cidText}/${page}`,
+  );
+  const items = (data.data?.rl as Array<Record<string, unknown>>) || [];
+  const list: RoomItem[] = [];
+  for (const item of items) {
+    const room = normalizeDouyuMixRoom(item, cidText);
+    if (!room) continue;
+    list.push(room);
+    if (list.length >= limit) break;
+  }
+  return {
+    list,
+    hasMore: items.length > 0 && list.length >= limit,
+    page,
+  };
+}
+
 async function enrichDouyuRoom(item: Record<string, unknown>): Promise<RoomItem> {
   const room = normalizeDouyuRoom(item);
   room.category = await douyuCategory(item);
@@ -143,10 +189,10 @@ async function enrichDouyuRoom(item: Record<string, unknown>): Promise<RoomItem>
 }
 
 export async function fetchDouyuRooms(cid: string | number | null, page: number, limit = 30): Promise<RoomsPayload> {
-  const params: Record<string, string | number> = { page, limit };
   if (cid != null && String(cid) !== "" && String(cid) !== "0") {
-    params.cate2Id = cid;
+    return fetchDouyuCategoryMixList(cid, page, limit);
   }
+  const params: Record<string, string | number> = { page, limit };
   const data = await getJson<{ data?: Record<string, unknown> }>("https://m.douyu.com/api/room/list", params);
   const payload = (data.data || {}) as Record<string, unknown>;
   const items = (payload.list as Array<Record<string, unknown>>) || [];

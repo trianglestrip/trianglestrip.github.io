@@ -34,6 +34,7 @@ export interface BrowseApi {
     contextCid?: string,
     page?: number,
     perSite?: number,
+    limit?: number,
   ): Promise<{
     list: RoomItem[];
     categoryKey: string | null;
@@ -79,10 +80,13 @@ export const browseApi: BrowseApi = {
     categoryName: string,
     contextCid = "",
     page = 1,
-    perSite = 5,
+    perSite = 10,
+    limit = 20,
   ) {
     const entry = findCrossCategory(contextSite, categoryName, contextCid);
     const lists: RoomItem[][] = [];
+    const perSiteCount =
+      perSite > 0 ? perSite : Math.max(1, Math.ceil(limit / BROWSE_SITES.length));
 
     for (const site of BROWSE_SITES) {
       try {
@@ -98,12 +102,20 @@ export const browseApi: BrowseApi = {
           payload = await browseApi.fetchCategoryRooms(site, mappedCid, page);
         } else if (site === contextSite && contextCid) {
           payload = await browseApi.fetchCategoryRooms(site, contextCid, page);
+        } else if (entry) {
+          lists.push([]);
+          continue;
         } else {
           payload = await browseApi.fetchRecommendRooms(site, page);
         }
 
         const tagged = (payload.list || [])
-          .slice(0, perSite)
+          .filter((room) => {
+            if (!mappedCid) return true;
+            const roomCid = String(room.cid || "").trim();
+            return !roomCid || roomCid === mappedCid;
+          })
+          .slice(0, perSiteCount)
           .map((room) => ({ ...room, siteId: site }));
         lists.push(tagged);
       } catch {
@@ -111,7 +123,10 @@ export const browseApi: BrowseApi = {
       }
     }
 
-    const list = interleaveRoomLists(lists);
+    let list = interleaveRoomLists(lists);
+    if (limit > 0) {
+      list = list.slice(0, limit);
+    }
     return {
       list: sanitizeUnicode(list),
       categoryKey: entry?.key ?? null,
