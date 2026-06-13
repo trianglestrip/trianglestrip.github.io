@@ -939,13 +939,13 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 1024px) {
-  .play-layout:has(.play-side--settings) {
+  .play-layout:has(.play-side--flow) {
     height: auto;
     min-height: calc(100vh - var(--nav-height));
     overflow-y: visible;
   }
 
-  .play-layout:has(.play-side--settings) .play-main {
+  .play-layout:has(.play-side--flow) .play-main {
     flex: 0 0 auto;
   }
 }

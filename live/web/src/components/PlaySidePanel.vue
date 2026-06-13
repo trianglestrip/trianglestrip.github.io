@@ -1,5 +1,5 @@
 <template>
-  <aside class="play-side" :class="{ 'play-side--settings': tab === 'settings' }">
+  <aside class="play-side" :class="{ 'play-side--flow': isMobileFlowTab }">
     <div class="side-header">
       <div class="room-aside">
         <div class="room-aside-avatar">
@@ -213,6 +213,9 @@ const importFollowOpen = ref(false);
 const importFollowText = ref("");
 
 const tab = ref("follow");
+const isMobileFlowTab = computed(() =>
+  ["chat", "follow", "recommend", "settings"].includes(tab.value),
+);
 const followTabActive = computed(() => tab.value === "follow");
 const followSiteFilter = ref("");
 const followUiPref = loadGlobalPref("play_follow_ui", { previewCover: true });
@@ -562,6 +565,12 @@ function scrollChatToBottom() {
     requestAnimationFrame(() => {
       const el = chatListRef.value;
       if (!el) return;
+      const mobileFlow = window.matchMedia("(max-width: 1024px)").matches;
+      if (mobileFlow) {
+        const items = el.querySelectorAll(".chat-item");
+        items[items.length - 1]?.scrollIntoView({ block: "nearest" });
+        return;
+      }
       el.scrollTop = el.scrollHeight;
     });
   });
@@ -1100,24 +1109,46 @@ watch(tab, (value) => {
     max-width: 100%;
     border-left: none;
     border-top: 1px solid var(--gray-7);
-    height: 360px;
+    height: auto;
     flex-shrink: 0;
     box-sizing: border-box;
     overflow-x: hidden;
   }
 
-  .play-side--settings {
+  .play-side--flow {
     height: auto;
     min-height: 0;
+    overflow: visible;
+  }
+
+  .play-side--flow .tab-content {
+    flex: 0 0 auto;
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .play-side--flow .scrolly {
+    overflow: visible;
+  }
+
+  .play-side--flow .chat-list {
+    flex: 0 0 auto;
+    min-height: auto;
+  }
+
+  .play-side--flow .chat-list__content {
+    min-height: auto;
+    justify-content: flex-start;
+  }
+
+  .play-side--flow .follow-tab,
+  .play-side--flow .recommend-tab,
+  .play-side--flow .settings-tab {
     overflow: visible;
   }
 }
 
 @media (max-width: 640px) {
-  .play-side {
-    height: 320px;
-  }
-
   .side-header {
     padding: .15rem .4rem;
   }
