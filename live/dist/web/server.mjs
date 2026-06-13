@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)));
 const PORT = Number(process.argv[2]) || 8080;
+const BIND = process.env.LIVE_BIND || "127.0.0.1";
 
 /** 空或 "/" 表示站点根路径；设为 "/live" 可兼容 GitHub Pages 子目录托管 */
 const BASE = (() => {
@@ -64,6 +65,17 @@ function resolveFile(urlPath) {
   return filePath;
 }
 
+function responseHeaders(filePath, ext) {
+  const headers = { "Content-Type": MIME[ext] || "application/octet-stream" };
+  const assetsDir = `${path.sep}assets${path.sep}`;
+  if (ext === ".html" || filePath.endsWith(`${path.sep}index.html`)) {
+    headers["Cache-Control"] = "no-cache, must-revalidate";
+  } else if (filePath.includes(assetsDir)) {
+    headers["Cache-Control"] = "public, max-age=31536000, immutable";
+  }
+  return headers;
+}
+
 function proxyApi(req, res) {
   const target = new URL(req.url || "/", API_ORIGIN);
   const headers = { ...req.headers, host: target.host };
@@ -105,12 +117,12 @@ http
         res.end("Not found");
         return;
       }
-      res.writeHead(200, { "Content-Type": MIME[ext] || "application/octet-stream" });
+      res.writeHead(200, responseHeaders(filePath, ext));
       res.end(data);
     });
   })
-  .listen(PORT, "127.0.0.1", () => {
+  .listen(PORT, BIND, () => {
     const suffix = BASE ? `${BASE}/` : "/";
-    console.log(`http://127.0.0.1:${PORT}${suffix}`);
+    console.log(`http://${BIND}:${PORT}${suffix}`);
     console.log(`API proxy -> ${API_ORIGIN}`);
   });
