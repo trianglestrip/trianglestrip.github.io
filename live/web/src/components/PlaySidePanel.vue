@@ -32,9 +32,8 @@
 
     <div v-show="tab === 'chat'" class="tab-content">
       <div ref="chatListRef" class="chat-list scrolly">
-        <div class="chat-item sys">系统：开始获取直播间信息</div>
-        <div v-if="statusText" class="chat-item sys">系统：{{ statusText }}</div>
-        <div class="chat-item sys">系统：{{ danmakuStatus }}</div>
+        <div v-if="chatPlayStatus" class="chat-item sys">系统：{{ chatPlayStatus }}</div>
+        <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
         <div
           v-for="m in chatDanmakuMessages"
           :key="m.id"
@@ -53,24 +52,12 @@
         <div class="follow-tab-toolbar__actions">
           <button
             type="button"
-            class="follow-refresh-btn"
-            title="刷新状态"
-            :disabled="followStatusLoading"
-            @click="refreshFollowStatus"
-          >
-            <Icon
-              name="refresh"
-              :class="{ 'fa-spin': followStatusLoading }"
-            />
-          </button>
-          <button
-            type="button"
-            class="follow-refresh-btn follow-preview-btn"
-            :class="{ 'follow-preview-btn--active': previewCover }"
-            title="封面预览：开=截图网格，关=关注列表"
+            class="follow-toolbar-btn follow-list-mode-btn"
+            :class="{ 'follow-list-mode-btn--active': !previewCover }"
+            title="列表视图"
             @click="togglePreviewCover"
           >
-            <Icon :name="previewCover ? 'eye' : 'eye-off'" />
+            <Icon name="list" />
           </button>
         </div>
       </div>
@@ -161,6 +148,7 @@ import FollowPlatformFilter from "./FollowPlatformFilter.vue";
 import { fetchFollowStatus } from "../api/follow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
 import { loadGlobalPref, saveGlobalPref } from "../utils/prefStore.js";
+import { briefDanmakuStatus, briefPlayStatus } from "../utils/chatStatus.js";
 
 const props = defineProps({
   site: { type: String, default: "" },
@@ -200,6 +188,9 @@ const filteredFollows = computed(() => {
   if (!site) return sortedFollows.value;
   return sortedFollows.value.filter((room) => room.site === site);
 });
+
+const chatPlayStatus = computed(() => briefPlayStatus(props.statusText));
+const chatDanmakuLine = computed(() => briefDanmakuStatus(props.danmakuStatus));
 
 function togglePreviewCover() {
   previewCover.value = !previewCover.value;
@@ -466,7 +457,7 @@ watch(
   flex-shrink: 0;
 }
 
-.follow-refresh-btn {
+.follow-toolbar-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -480,22 +471,22 @@ watch(
   flex-shrink: 0;
 }
 
-.follow-refresh-btn:hover:not(:disabled) {
+.follow-toolbar-btn:hover:not(:disabled) {
   color: var(--amber);
   border-color: var(--amber);
 }
 
-.follow-refresh-btn:disabled {
+.follow-toolbar-btn:disabled {
   opacity: .45;
   cursor: not-allowed;
 }
 
-.follow-refresh-btn :deep(.ui-icon) {
+.follow-toolbar-btn :deep(.ui-icon) {
   font-size: .88rem;
   line-height: 1;
 }
 
-.follow-preview-btn--active {
+.follow-list-mode-btn--active {
   color: var(--amber);
   border-color: rgba(243, 208, 78, 0.45);
   background: rgba(243, 208, 78, 0.1);

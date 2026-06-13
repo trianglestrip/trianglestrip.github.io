@@ -16,7 +16,8 @@ const canvasRef = ref(null);
 let ctx = null;
 let activeDanmakus = [];
 let rafId = null;
-let lastProcessedIndex = 0;
+/** 已飘屏的消息 id，避免按数组下标追踪时在 trim/暂停后漏发或停发 */
+const spawnedIds = new Set();
 
 function measureText(text, fontSize) {
   if (!ctx) return 0;
@@ -96,30 +97,52 @@ function loop() {
   rafId = requestAnimationFrame(loop);
 }
 
+function spawnPendingMessages(msgs) {
+  if (!props.settings.show || !props.playing || !msgs?.length) return;
+  for (const msg of msgs) {
+    if (!msg?.id || spawnedIds.has(msg.id)) continue;
+    spawnedIds.add(msg.id);
+    spawnDanmaku(msg);
+  }
+  if (spawnedIds.size > 500) {
+    const overflow = spawnedIds.size - 300;
+    let removed = 0;
+    for (const id of spawnedIds) {
+      spawnedIds.delete(id);
+      removed += 1;
+      if (removed >= overflow) break;
+    }
+  }
+}
+
 watch(
   () => props.messages,
   (newMsgs) => {
-    if (!props.settings.show || !props.playing) {
-      lastProcessedIndex = newMsgs.length;
+    if (!newMsgs.length) {
+      spawnedIds.clear();
+      activeDanmakus = [];
       return;
     }
-    if (lastProcessedIndex < newMsgs.length) {
-      for (let i = lastProcessedIndex; i < newMsgs.length; i += 1) {
-        spawnDanmaku(newMsgs[i]);
-      }
-      lastProcessedIndex = newMsgs.length;
-    } else if (newMsgs.length < lastProcessedIndex) {
-      lastProcessedIndex = newMsgs.length;
-      activeDanmakus = [];
-    }
+    spawnPendingMessages(newMsgs);
   },
   { deep: true },
 );
 
 watch(
+  () => props.playing,
+  (playing) => {
+    if (playing) spawnPendingMessages(props.messages);
+  },
+);
+
+watch(
   () => props.settings.show,
   (show) => {
-    if (!show) activeDanmakus = [];
+    if (!show) {
+      activeDanmakus = [];
+      return;
+    }
+    spawnPendingMessages(props.messages);
   },
 );
 

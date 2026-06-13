@@ -3,10 +3,13 @@ import App from "./App.vue";
 import router, { consumeGhPagesRedirect } from "./router";
 import { loadAppConfig } from "./config/app.js";
 import { applyPendingFollowImport } from "./utils/prefStore.js";
+import { initTheme } from "./utils/theme.js";
 import { startFollowSync } from "./utils/followSync.js";
 import { useFollow } from "./composables/useFollow.js";
 import "./styles/main.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+
+initTheme();
 
 loadAppConfig().then(() => {
   const pendingAdded = applyPendingFollowImport();

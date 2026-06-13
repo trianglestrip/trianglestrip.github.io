@@ -92,10 +92,10 @@ export function useRoom(siteRef) {
 
       if (autoPlay && playFn) {
         loading.value = false;
-        setStatus("正在缓冲…");
+        setStatus("缓冲中…");
         await playFn();
       } else {
-        setStatus(`${platform.label} · 解析完成`);
+        setStatus("解析完成");
       }
       return roomId;
     } catch (err) {

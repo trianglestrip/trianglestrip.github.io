@@ -1,4 +1,5 @@
-:root {
+:root,
+[data-theme="dark"] {
   color-scheme: dark;
   --bg: #181818;
   --bg-elevated: #1f1f1f;
@@ -17,7 +18,27 @@
   --nav-width: 70px;
   --nav-height: 56px;
   --play-sidebar-width: 320px;
+  --scrollbar-thumb: #ffffff30;
   font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f3f3f3;
+  --bg-elevated: #ffffff;
+  --bg-soft: #ebebeb;
+  --dark-6: #e4e4e4;
+  --dark-7: #fafafa;
+  --panel: #ffffff;
+  --border: #cfcfcf;
+  --gray-7: #d8d8d8;
+  --text: #1a1a1a;
+  --muted: #5c5c5c;
+  --lemon: #c9a000;
+  --amber: #b8860b;
+  --live: #1e9e5a;
+  --danger: #d93030;
+  --scrollbar-thumb: #00000028;
 }
 
 * { box-sizing: border-box; }
@@ -44,7 +65,7 @@ a { color: var(--amber); text-decoration: none; }
 }
 
 .scrolly::-webkit-scrollbar-thumb {
-  background: #ffffff30;
+  background: var(--scrollbar-thumb);
   border-radius: 4px;
 }
 

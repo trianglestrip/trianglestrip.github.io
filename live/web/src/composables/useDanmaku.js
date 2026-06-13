@@ -172,7 +172,7 @@ export function useDanmaku(siteRef, roomIdRef) {
     ws.binaryType = "arraybuffer";
 
     ws.onopen = () => {
-      status.value = "弹幕服务器连接成功";
+      status.value = "弹幕已连接";
     };
 
     ws.onmessage = (event) => {
@@ -187,7 +187,7 @@ export function useDanmaku(siteRef, roomIdRef) {
     };
 
     ws.onclose = () => {
-      status.value = "弹幕服务器已断开，3 秒后重连…";
+      status.value = "弹幕重连中…";
       clearTimers();
       scheduleReconnect();
     };
@@ -195,7 +195,7 @@ export function useDanmaku(siteRef, roomIdRef) {
 
   function connectDouyu(roomId) {
     messages.value = [];
-    status.value = "开始连接弹幕服务器";
+    status.value = "弹幕连接中…";
     ensureParseWorker();
 
     ws = new WebSocket("wss://danmuproxy.douyu.com:8506/");
@@ -216,7 +216,7 @@ export function useDanmaku(siteRef, roomIdRef) {
 
   async function connectHuya(roomId) {
     messages.value = [];
-    status.value = "正在获取虎牙房间信息…";
+    status.value = "弹幕准备中…";
     ensureParseWorker();
 
     let session;
@@ -228,7 +228,7 @@ export function useDanmaku(siteRef, roomIdRef) {
       return;
     }
 
-    status.value = "开始连接虎牙弹幕服务器";
+    status.value = "弹幕连接中…";
     ws = new WebSocket("wss://cdnws.api.huya.com/");
     bindSocketHandlers("huya");
 

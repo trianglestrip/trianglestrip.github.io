@@ -16,12 +16,12 @@
           </button>
           <button
             type="button"
-            class="btn btn-sm btn-preview"
-            :class="{ 'btn-preview--active': previewCover }"
-            title="封面预览：开=截图网格，关=关注列表"
+            class="btn btn-sm btn-list-mode"
+            :class="{ 'btn-list-mode--active': !previewCover }"
+            title="列表视图"
             @click="togglePreviewCover"
           >
-            <Icon :name="previewCover ? 'eye' : 'eye-off'" />
+            <Icon name="list" />
           </button>
           <FollowBatchImport inline />
           <template v-if="batchMode">
@@ -218,7 +218,7 @@ function confirmBatchDelete() {
   line-height: 1;
 }
 
-.btn-preview {
+.btn-list-mode {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -227,12 +227,12 @@ function confirmBatchDelete() {
   color: var(--muted);
 }
 
-.btn-preview :deep(.ui-icon) {
+.btn-list-mode :deep(.ui-icon) {
   font-size: .88rem;
   line-height: 1;
 }
 
-.btn-preview--active {
+.btn-list-mode--active {
   color: var(--amber);
   border-color: rgba(243, 208, 78, 0.45);
   background: rgba(243, 208, 78, 0.1);

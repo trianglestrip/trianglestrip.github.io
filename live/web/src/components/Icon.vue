@@ -41,9 +41,12 @@ const FA_ICONS = {
   timer: "fa-clock",
   eye: "fa-eye",
   "eye-off": "fa-eye-slash",
+  list: "fa-list",
   delete: "fa-trash-can",
   star: "fa-star",
   film: "fa-film",
+  sun: "fa-sun",
+  moon: "fa-moon",
 };
 
 const iconClasses = computed(() => {

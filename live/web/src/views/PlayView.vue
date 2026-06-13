@@ -8,10 +8,15 @@
           </RouterLink>
           <div class="play-header-main">
             <h1 class="play-title">{{ displayTitle }}</h1>
-            <div class="play-viewers">
-              <Icon name="eye" class="play-stat-icon" />
-              <span>{{ onlineText }}</span>
-            </div>
+          </div>
+          <div
+            v-if="showOnlineStat"
+            class="play-online-inline"
+            :class="{ 'play-online-inline--live': roomState === 'live' }"
+            :title="`观看 ${onlineText}`"
+          >
+            <Icon name="users" class="play-online-fa" />
+            <span>{{ onlineText }}</span>
           </div>
         </header>
 
@@ -148,7 +153,6 @@ const {
   lineOptions,
   onQualityChange: setQuality,
   onLineChange: setLine,
-  buildMetaText,
 } = useRoom(siteRef);
 
 const displayTitle = computed(() => {
@@ -158,17 +162,27 @@ const displayTitle = computed(() => {
 });
 
 const roomOnline = ref("");
+const roomState = ref("offline");
 const onlineText = computed(() => roomOnline.value || "—");
+
+const showOnlineStat = computed(() => {
+  if (roomState.value === "offline") return false;
+  const online = String(roomOnline.value || "").trim();
+  return Boolean(online && online !== "—" && online !== "-");
+});
 
 async function refreshRoomOnline() {
   const rid = String(payload.value?.room_id || props.id || "").trim();
   if (!rid) {
     roomOnline.value = "";
+    roomState.value = "offline";
     return;
   }
   try {
     const data = await fetchFollowStatus([{ site: props.site, id: rid }]);
-    roomOnline.value = data.list?.[0]?.online || "";
+    const snap = data.list?.[0];
+    roomOnline.value = snap?.online || "";
+    roomState.value = snap?.state || "offline";
   } catch {
     /* 保留上次 */
   }
@@ -241,7 +255,7 @@ function buildPlayCallbacks(url, { onReadyExtra } = {}) {
     site: siteRef.value,
     onError: () => {
       if (playRetrying) {
-        setStatus(`${buildMetaText(url)}\n播放出错`, "err");
+        setStatus("播放出错", "err");
         return;
       }
       retryPlaybackAfterError();
@@ -254,7 +268,7 @@ function buildPlayCallbacks(url, { onReadyExtra } = {}) {
         });
       }
       const suffix = muted.value ? "（静音）" : "";
-      setStatus(`${buildMetaText(url)}\n播放中${suffix}`, "ok");
+      setStatus(`播放中${suffix}`, "ok");
       document.title = displayTitle.value;
       onReadyExtra?.();
     },
@@ -516,7 +530,7 @@ async function startPlayback({ startMuted, freshUrl = false } = {}) {
   const url = freshUrl
     ? await prefetchPlayUrl({ force: true })
     : playUrl.value || (await prefetchPlayUrl());
-  setStatus(`${buildMetaText(url)}\n正在缓冲…`);
+  setStatus("缓冲中…");
   const videoEl = await ensureVideoEl();
   const firstReady = !danmakuReady.value;
   playFlv(videoEl, url, {
@@ -697,10 +711,10 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .45rem;
-  padding: 0 2.25rem;
+  padding: 0 5.5rem;
   max-width: 100%;
   min-width: 0;
+  flex: 1;
 }
 
 .play-title {
@@ -712,23 +726,43 @@ onBeforeUnmount(() => {
   text-overflow: ellipsis;
   white-space: nowrap;
   min-width: 0;
+  width: 100%;
 }
 
-.play-viewers {
-  display: flex;
+.play-online-inline {
+  position: absolute;
+  right: .5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
   align-items: center;
-  gap: .2rem;
+  gap: .18rem;
   flex-shrink: 0;
-  font-size: .78rem;
-  color: var(--muted);
+  font-size: .82rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: .14rem .28rem;
+  border-radius: 4px;
+  letter-spacing: .02em;
   font-variant-numeric: tabular-nums;
+  color: #7eb0e8;
+  background: rgba(110, 181, 255, 0.18);
 }
 
-.play-stat-icon {
-  width: .85em;
-  height: .85em;
-  opacity: .75;
+.play-online-inline--live {
+  color: #8ec0ff;
+  background: rgba(110, 181, 255, 0.24);
+}
+
+.play-online-inline > span {
+  line-height: 1.15;
+}
+
+.play-online-fa {
+  font-size: .95em;
+  line-height: 1;
   flex-shrink: 0;
+  opacity: .9;
 }
 
 .play-frame {
