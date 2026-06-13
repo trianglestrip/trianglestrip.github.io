@@ -11,8 +11,8 @@
         </div>
         <div class="room-aside-meta">
           <p class="room-anchor">{{ anchor || "—" }}</p>
-          <p v-if="showFansStatForRoom" class="room-fans" :title="fansTitle">
-            <Icon name="user" class="room-stat-icon" />
+          <p class="room-fans" :title="fansTitle">
+            <Icon name="users" class="room-stat-icon" />
             <span>{{ fansText }}</span>
           </p>
         </div>
@@ -309,7 +309,6 @@ const roomFans = ref("");
 const roomAvatar = ref("");
 
 const fansText = computed(() => roomFans.value || "—");
-const showFansStatForRoom = computed(() => Boolean(roomFans.value));
 const fansTitle = computed(() => {
   if (roomFans.value) return `粉丝 ${roomFans.value}`;
   return "粉丝 —";
@@ -467,6 +466,10 @@ watch(tab, (value) => {
 .room-aside-meta {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.12rem;
 }
 
 .room-anchor {

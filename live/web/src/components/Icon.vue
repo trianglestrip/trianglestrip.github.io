@@ -39,6 +39,7 @@ const FA_ICONS = {
   "volume-up": "fa-volume-high",
   "volume-off": "fa-volume-xmark",
   timer: "fa-clock",
+  "timer-outline": "fa-clock",
   eye: "fa-eye",
   "eye-off": "fa-eye-slash",
   list: "fa-list",
@@ -50,7 +51,7 @@ const FA_ICONS = {
   moon: "fa-moon",
 };
 
-const OUTLINE_WHEN_EMPTY = new Set(["star", "heart"]);
+const OUTLINE_WHEN_EMPTY = new Set(["star", "heart", "timer-outline"]);
 
 const iconClasses = computed(() => {
   const fa = FA_ICONS[props.name] || FA_ICONS.home;

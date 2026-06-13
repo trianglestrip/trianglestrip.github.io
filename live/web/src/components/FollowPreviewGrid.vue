@@ -56,10 +56,10 @@
         </span>
         <span
           v-if="liveStartLabel(room)"
-          class="follow-preview-stat"
+          class="follow-preview-stat follow-preview-stat--live-start"
           :title="`开播 ${liveStartLabel(room)}`"
         >
-          <Icon name="timer" class="follow-preview-stat-fa" />
+          <Icon name="timer-outline" class="follow-preview-stat-fa" />
           <span>{{ liveStartLabel(room) }}</span>
         </span>
       </p>
@@ -314,9 +314,20 @@ function showPreviewStats(room) {
   margin-top: .18rem;
 }
 
-.follow-preview-grid--compact .follow-preview-stat {
-  font-size: .58rem;
-  padding: .06rem .16rem;
+.follow-preview-stat--live-start {
+  font-size: .74rem;
+  gap: .12rem;
+  padding: .08rem .2rem;
+}
+
+.follow-preview-stat--live-start .follow-preview-stat-fa {
+  font-size: .9em;
+  opacity: 0.92;
+}
+
+.follow-preview-grid--compact .follow-preview-stat--live-start {
+  font-size: .68rem;
+  padding: .06rem .18rem;
 }
 
 .follow-preview-item--offline .follow-preview-anchor {

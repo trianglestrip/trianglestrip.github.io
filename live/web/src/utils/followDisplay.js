@@ -12,32 +12,60 @@ export function followStateClass(state) {
   return "follow-item--offline";
 }
 
-export function guardSortScore(room = {}) {
-  const superCount = Number(room.guardSuper) || 0;
-  const normal = Number(room.guardNormal) || 0;
-  const parsedGuard = Number(String(room.guard || "").replace(/[^\d]/g, "")) || 0;
-  const total = parsedGuard || superCount + normal;
-  // 总数优先，同总数时超关/至尊权重更高
-  return total * 10_000 + superCount * 100 + normal;
+export function parseOnlineCount(text) {
+  const s = String(text || "").trim();
+  if (!s) return 0;
+  if (s.endsWith("万")) {
+    const n = parseFloat(s.slice(0, -1));
+    return Number.isFinite(n) ? Math.round(n * 10_000) : 0;
+  }
+  if (s.endsWith("千")) {
+    const n = parseFloat(s.slice(0, -1));
+    return Number.isFinite(n) ? Math.round(n * 1_000) : 0;
+  }
+  const n = Number(s.replace(/,/g, ""));
+  return Number.isFinite(n) ? n : 0;
+}
+
+/** 排序档位：超关开播 → 普通开播 → 重播 → 离线 */
+export function followSortTier(room = {}) {
+  const state = room.state || "offline";
+  if (state === "live") return room.super ? 0 : 1;
+  if (state === "replay") return 2;
+  return 3;
+}
+
+/** 重播/离线按「上次直播」先后；重播优先用本场开播时间 */
+export function recentLiveTimestamp(room = {}) {
+  const last = Number(room.lastLiveAt) || 0;
+  const start = Number(room.liveStartAt) || 0;
+  if (room.state === "replay") return start || last;
+  return last;
 }
 
 export function sortFollowRooms(rooms, statusMap = {}, options = {}) {
-  const order = FOLLOW_STATE_ORDER;
+  void options;
   const indexed = rooms.map((room, index) => ({ room, index }));
 
   return indexed
     .sort((a, b) => {
-      const aState = statusMap[`${a.room.site}:${a.room.id}`]?.state || a.room.state || "offline";
-      const bState = statusMap[`${b.room.site}:${b.room.id}`]?.state || b.room.state || "offline";
-      const byState = (order[aState] ?? 9) - (order[bState] ?? 9);
-      if (byState !== 0) return byState;
+      const aRoom = statusMap[`${a.room.site}:${a.room.id}`] || a.room;
+      const bRoom = statusMap[`${b.room.site}:${b.room.id}`] || b.room;
 
-      if (aState === "live" && bState === "live") {
-        const byGuard = guardSortScore(b.room) - guardSortScore(a.room);
-        if (byGuard !== 0) return byGuard;
+      const tierA = followSortTier(aRoom);
+      const tierB = followSortTier(bRoom);
+      if (tierA !== tierB) return tierA - tierB;
+
+      if (tierA === 0 || tierA === 1) {
+        const byOnline = parseOnlineCount(bRoom.online) - parseOnlineCount(aRoom.online);
+        if (byOnline !== 0) return byOnline;
       }
 
-      // replay / offline 组内保持原顺序
+      if (tierA === 2 || tierA === 3) {
+        const byRecent = recentLiveTimestamp(bRoom) - recentLiveTimestamp(aRoom);
+        if (byRecent !== 0) return byRecent;
+      }
+
       return a.index - b.index;
     })
     .map((entry) => entry.room);

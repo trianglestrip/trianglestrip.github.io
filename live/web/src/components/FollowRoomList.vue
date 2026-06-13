@@ -68,20 +68,20 @@
                 :title="categoryLabel(room)"
               >{{ categoryLabel(room) }}</span>
               <span class="follow-anchor">{{ room.anchor || room.id }}</span>
-              <span
-                v-if="room.state === 'offline' && lastLiveLabel(room)"
-                class="follow-last-live"
-                :title="`上次直播 ${lastLiveLabel(room)}`"
-              >{{ lastLiveLabel(room) }}</span>
             </div>
             <span
               v-if="liveStartLabel(room)"
               class="follow-live-start-inline"
               :title="`开播 ${liveStartLabel(room)}`"
             >
-              <Icon name="timer" class="follow-live-start-fa" />
+              <Icon name="timer-outline" class="follow-live-start-fa" />
               <span>{{ liveStartLabel(room) }}</span>
             </span>
+            <span
+              v-else-if="room.state === 'offline' && lastLiveLabel(room)"
+              class="follow-last-live"
+              :title="`上次直播 ${lastLiveLabel(room)}`"
+            >{{ lastLiveLabel(room) }}</span>
           </div>
           <p v-if="layout !== 'grid' && !compact" class="follow-meta">
             {{ room.id }}
@@ -190,8 +190,8 @@ function onItemClick(room) {
 .follow-room-list--grid {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
-  padding: .55rem .65rem .65rem;
+  gap: .32rem;
+  padding: .25rem .5rem;
   align-content: flex-start;
 }
 
@@ -201,9 +201,9 @@ function onItemClick(room) {
   width: auto;
   min-width: 0;
   border: 1px solid var(--gray-7);
-  border-radius: 10px;
+  border-radius: 8px;
   border-bottom: 1px solid var(--gray-7);
-  padding: .45rem .42rem;
+  padding: .18rem .36rem;
   align-items: center;
 }
 
@@ -230,7 +230,7 @@ function onItemClick(room) {
   display: flex;
   gap: .45rem;
   width: 100%;
-  padding: .42rem .45rem;
+  padding: .28rem .45rem;
   border: none;
   border-bottom: 1px solid var(--gray-7);
   color: inherit;
@@ -247,8 +247,8 @@ function onItemClick(room) {
 }
 
 .follow-room-list--compact .follow-item {
-  padding: .18rem .32rem;
-  gap: .28rem;
+  padding: .02rem .28rem;
+  gap: .24rem;
   align-items: center;
 }
 
@@ -413,7 +413,7 @@ function onItemClick(room) {
 
 .follow-room-list--grid .follow-body,
 .follow-room-list--compact .follow-body {
-  gap: .2rem;
+  gap: .03rem;
 }
 
 .follow-title-row {
@@ -502,7 +502,8 @@ function onItemClick(room) {
   overflow: hidden;
 }
 
-.follow-anchor-row .follow-live-start-inline {
+.follow-anchor-row .follow-live-start-inline,
+.follow-anchor-row .follow-last-live {
   flex-shrink: 0;
   margin-left: auto;
 }
