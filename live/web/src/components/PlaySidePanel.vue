@@ -516,25 +516,27 @@ watch(
 .chat-text { color: var(--text); }
 
 .settings-tab {
-  padding: .55rem .65rem .75rem;
-  gap: .65rem;
+  display: flex;
+  flex-direction: column;
+  padding: .35rem .5rem .45rem;
+  gap: .38rem;
 }
 
 .settings-group {
   display: flex;
   flex-direction: column;
-  gap: .2rem;
-  padding: .45rem .5rem .5rem;
+  gap: 0;
+  padding: .28rem .38rem .32rem;
   border: 1px solid var(--gray-7);
   border-radius: 8px;
   background: rgba(255, 255, 255, .02);
 }
 
 .settings-group__title {
-  margin: 0 0 .15rem;
-  padding-bottom: .35rem;
+  margin: 0 0 .05rem;
+  padding-bottom: .22rem;
   border-bottom: 1px solid rgba(255, 255, 255, .06);
-  font-size: .78rem;
+  font-size: .72rem;
   font-weight: 600;
   letter-spacing: .02em;
   color: var(--amber);
@@ -542,43 +544,47 @@ watch(
 
 .setting-row {
   display: grid;
-  grid-template-columns: 3.1rem 1fr 2.1rem;
+  grid-template-columns: 2.75rem 1fr 1.85rem;
   align-items: center;
-  gap: .4rem;
-  min-height: 1.85rem;
-  padding: .1rem 0;
+  gap: .28rem;
+  min-height: 1.45rem;
+  padding: 0;
   cursor: pointer;
 }
 
 .setting-row--toggle {
-  grid-template-columns: 3.1rem 1fr;
+  grid-template-columns: 2.75rem 1fr;
+  min-height: 1.35rem;
 }
 
 .setting-label {
-  font-size: .78rem;
+  font-size: .72rem;
   color: var(--muted);
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 .setting-value {
-  font-size: .72rem;
+  font-size: .68rem;
   font-variant-numeric: tabular-nums;
   text-align: right;
   color: var(--amber);
+  line-height: 1.2;
 }
 
 .setting-select {
   grid-column: 2 / 4;
   width: 100%;
-  padding: .28rem .45rem;
-  font-size: .78rem;
-  border-radius: 6px;
+  padding: .15rem .35rem;
+  font-size: .72rem;
+  border-radius: 5px;
+  line-height: 1.25;
 }
 
 .setting-check {
   grid-column: 2;
-  width: 1rem;
-  height: 1rem;
+  width: .9rem;
+  height: .9rem;
   margin: 0;
   accent-color: var(--amber);
   cursor: pointer;
@@ -586,7 +592,7 @@ watch(
 
 .setting-range {
   width: 100%;
-  height: 4px;
+  height: 3px;
   margin: 0;
   padding: 0;
   border-radius: 999px;
@@ -597,8 +603,8 @@ watch(
 
 .setting-range::-webkit-slider-thumb {
   appearance: none;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border: 2px solid #1a1a1a;
   border-radius: 50%;
   background: var(--amber);
@@ -606,15 +612,15 @@ watch(
 }
 
 .setting-range::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border: 2px solid #1a1a1a;
   border-radius: 50%;
   background: var(--amber);
 }
 
 .setting-range::-moz-range-track {
-  height: 4px;
+  height: 3px;
   border: none;
   border-radius: 999px;
   background: rgba(255, 255, 255, .12);
