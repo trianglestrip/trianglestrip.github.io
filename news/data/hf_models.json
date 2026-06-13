@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-13T12:12:29+00:00",
+  "updated_at": "2026-06-13T19:58:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "google/diffusiongemma-26B-A4B-it",
       "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "hot": "651"
+      "hot": "693"
     },
     {
       "rank": 2,
-      "title": "nvidia/LocateAnything-3B",
-      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "1939"
+      "title": "moonshotai/Kimi-K2.7-Code",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "hot": "494"
     },
     {
       "rank": 3,
-      "title": "moonshotai/Kimi-K2.7-Code",
-      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
-      "hot": "429"
+      "title": "nvidia/LocateAnything-3B",
+      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "hot": "1954"
     },
     {
       "rank": 4,
       "title": "MiniMaxAI/MiniMax-M3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "341"
+      "hot": "403"
     },
     {
       "rank": 5,
       "title": "CohereLabs/North-Mini-Code-1.0",
       "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0",
-      "hot": "340"
+      "hot": "346"
     },
     {
       "rank": 6,
       "title": "google/gemma-4-12B-it",
       "url": "https://huggingface.co/google/gemma-4-12B-it",
-      "hot": "985"
+      "hot": "991"
     },
     {
       "rank": 7,
       "title": "bosonai/higgs-audio-v3-tts-4b",
       "url": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
-      "hot": "397"
+      "hot": "410"
     },
     {
       "rank": 8,
       "title": "unsloth/diffusiongemma-26B-A4B-it-GGUF",
       "url": "https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF",
-      "hot": "228"
+      "hot": "243"
     },
     {
       "rank": 9,
       "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
       "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "1741"
+      "hot": "1757"
     },
     {
       "rank": 10,
       "title": "OBLITERATUS/Gemma-4-12B-OBLITERATED",
       "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED",
-      "hot": "261"
+      "hot": "273"
     }
   ]
 }

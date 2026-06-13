@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-13T12:12:29+00:00",
+  "updated_at": "2026-06-13T19:58:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "92"
+      "hot": "93"
     },
     {
       "rank": 2,
@@ -18,51 +18,51 @@
     },
     {
       "rank": 3,
-      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
-      "url": "https://huggingface.co/papers/2606.03264",
-      "hot": "16"
-    },
-    {
-      "rank": 4,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
       "hot": "228"
     },
     {
+      "rank": 4,
+      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
+      "url": "https://huggingface.co/papers/2606.03264",
+      "hot": "16"
+    },
+    {
       "rank": 5,
-      "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
-      "url": "https://huggingface.co/papers/2606.13679",
-      "hot": "74"
-    },
-    {
-      "rank": 6,
-      "title": "Agents' Last Exam",
-      "url": "https://huggingface.co/papers/2606.05405",
-      "hot": "327"
-    },
-    {
-      "rank": 7,
-      "title": "Robust-U1: Can MLLMs Self-Recover Corrupted Visual Content for Robust Understanding?",
-      "url": "https://huggingface.co/papers/2606.08063",
-      "hot": "73"
-    },
-    {
-      "rank": 8,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "80"
     },
     {
-      "rank": 9,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "166"
+      "rank": 6,
+      "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
+      "url": "https://huggingface.co/papers/2606.13679",
+      "hot": "74"
     },
     {
-      "rank": 10,
+      "rank": 7,
       "title": "Kronos: A Foundation Model for the Language of Financial Markets",
       "url": "https://huggingface.co/papers/2508.02739",
       "hot": "40"
+    },
+    {
+      "rank": 8,
+      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+      "url": "https://huggingface.co/papers/2606.02800",
+      "hot": "119"
+    },
+    {
+      "rank": 9,
+      "title": "Agents' Last Exam",
+      "url": "https://huggingface.co/papers/2606.05405",
+      "hot": "329"
+    },
+    {
+      "rank": 10,
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "166"
     }
   ]
 }

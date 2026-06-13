@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-13T15:56:00+00:00",
+  "updated_at": "2026-06-13T19:58:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "US bans differential privacy in Census data",
       "url": "https://desfontain.es/blog/banning-noise.html",
-      "hot": "167"
+      "hot": "504"
     },
     {
       "rank": 2,
-      "title": "AI OSS tool repo goes archived over night after raising $7.3M Seed",
-      "url": "https://github.com/tensorzero/tensorzero",
-      "hot": "146"
+      "title": "GameBoy Workboy",
+      "url": "https://tcrf.net/Workboy",
+      "hot": "73"
     },
     {
       "rank": 3,
-      "title": "Treating pancreatic tumours may have revealed cancer's master switch",
-      "url": "https://economist.com/science-and-technology/2026/06/12/treating-pancreatic-tumours-may-have-revealed-cancers-master-switch",
-      "hot": "40"
+      "title": "Running DOS on Behringers DDX3216 with a DIY x86-Bios from Scratch",
+      "url": "https://chrisdevblog.com/2026/06/08/running-dos-on-behringers-ddx3216-using-a-diy-x86-bios/",
+      "hot": "14"
     },
     {
       "rank": 4,
-      "title": "Orthodox C++",
-      "url": "https://bkaradzic.github.io/posts/orthodoxc++/",
-      "hot": "21"
+      "title": "Treating pancreatic tumours may have revealed cancer's master switch",
+      "url": "https://economist.com/science-and-technology/2026/06/12/treating-pancreatic-tumours-may-have-revealed-cancers-master-switch",
+      "hot": "190"
     },
     {
       "rank": 5,
-      "title": "A low-carbon computing platform from your retired phones",
-      "url": "https://research.google/blog/a-low-carbon-computing-platform-from-your-retired-phones/",
-      "hot": "149"
+      "title": "Every Frame Perfect",
+      "url": "https://tonsky.me/blog/every-frame-perfect/",
+      "hot": "334"
     },
     {
       "rank": 6,
-      "title": "Introduction to the experience of rendering Arabic typography&its technical debt",
-      "url": "https://lr0.org/blog/p/arabic/",
-      "hot": "45"
+      "title": "Appreciating Exif",
+      "url": "https://brentfitzgerald.com/posts/appreciating-exif/",
+      "hot": "87"
     },
     {
       "rank": 7,
-      "title": "Every Frame Perfect",
-      "url": "https://tonsky.me/blog/every-frame-perfect/",
-      "hot": "90"
+      "title": "AI Coding at Home Without Going Broke",
+      "url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
+      "hot": "136"
     },
     {
       "rank": 8,
-      "title": "Show HN: I am building a map of people who lived in the Roman Empire",
-      "url": "https://new.roman-names.com/",
+      "title": "The adder at the heart of Intel's 8087 floating-point chip",
+      "url": "https://www.righto.com/2026/06/intel-8087-adder-reverse-engineered.html",
       "hot": "49"
     },
     {
       "rank": 9,
-      "title": "The state of building user interfaces in Rust",
-      "url": "https://areweguiyet.com/#ecosystem",
-      "hot": "93"
+      "title": "A low-carbon computing platform from your retired phones",
+      "url": "https://research.google/blog/a-low-carbon-computing-platform-from-your-retired-phones/",
+      "hot": "197"
     },
     {
       "rank": 10,
-      "title": "An Interview with Intel's Kira Boyko: Xeon 6's Product Director",
-      "url": "https://chipsandcheese.com/p/an-interview-with-intels-kira-boyko",
-      "hot": "35"
+      "title": "GLM 5.2 Is Out",
+      "url": "https://digg.com/tech/ii9xibgn",
+      "hot": "156"
     }
   ]
 }
