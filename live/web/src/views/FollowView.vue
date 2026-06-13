@@ -4,7 +4,7 @@
       <header class="follow-header">
         <h1>我的关注</h1>
         <div class="follow-header__actions">
-          <FollowPlatformFilter v-model="followSiteFilter" class="follow-header__filter" />
+          <FollowPlatformFilter v-model="followSiteFilter" compact class="follow-header__filter" />
           <button
             type="button"
             class="btn btn-sm btn-refresh"
@@ -41,9 +41,9 @@
 
       <div class="follow-list scrolly">
         <p v-if="!filteredFollows.length" class="page-msg">暂无关注，可使用批量加入</p>
-        <FollowPreviewGrid
+        <RoomGrid
           v-else-if="previewCover"
-          :rooms="filteredFollows"
+          :rooms="gridRooms"
           :select-mode="batchMode"
           :selected-keys="selectedKeys"
           @select="goPlay"
@@ -74,11 +74,12 @@ import FollowPlatformFilter from "../components/FollowPlatformFilter.vue";
 import { useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import FollowBatchImport from "../components/FollowBatchImport.vue";
-import FollowPreviewGrid from "../components/FollowPreviewGrid.vue";
 import FollowRoomList from "../components/FollowRoomList.vue";
+import RoomGrid from "../components/RoomGrid.vue";
 import Icon from "../components/Icon.vue";
 import { useFollow } from "../composables/useFollow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
+import { followRoomToGrid } from "../utils/followDisplay.js";
 import { followKey, loadGlobalPref, saveGlobalPref } from "../utils/prefStore.js";
 
 const router = useRouter();
@@ -97,6 +98,8 @@ const filteredFollows = computed(() => {
   if (!site) return sortedFollows.value;
   return sortedFollows.value.filter((room) => room.site === site);
 });
+
+const gridRooms = computed(() => filteredFollows.value.map(followRoomToGrid));
 
 function togglePreviewCover() {
   previewCover.value = !previewCover.value;

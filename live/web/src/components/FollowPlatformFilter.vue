@@ -1,5 +1,10 @@
 <template>
-  <div class="follow-platform-filter" role="radiogroup" aria-label="平台筛选">
+  <div
+    class="follow-platform-filter"
+    :class="{ 'follow-platform-filter--compact': compact }"
+    role="radiogroup"
+    aria-label="平台筛选"
+  >
     <button
       type="button"
       role="radio"
@@ -33,6 +38,10 @@ import { PLATFORMS } from "../config/platforms";
 
 const modelValue = defineModel({ type: String, default: "" });
 
+defineProps({
+  compact: { type: Boolean, default: false },
+});
+
 const filterPlatforms = PLATFORMS.filter((p) => p.enabled && p.id !== "bilibili");
 </script>
 
@@ -40,7 +49,7 @@ const filterPlatforms = PLATFORMS.filter((p) => p.enabled && p.id !== "bilibili"
 .follow-platform-filter {
   display: flex;
   align-items: center;
-  gap: .24rem;
+  gap: .36rem;
   flex: 1;
   min-width: 0;
   flex-wrap: wrap;
@@ -48,17 +57,27 @@ const filterPlatforms = PLATFORMS.filter((p) => p.enabled && p.id !== "bilibili"
 
 .follow-platform-filter__item {
   flex-shrink: 0;
-  padding: .16rem .32rem;
+  padding: .32rem .58rem;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 5px;
   background: rgba(255, 255, 255, 0.06);
   color: var(--muted);
-  font-size: .62rem;
+  font-size: .92rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: .02em;
   cursor: pointer;
   transition: border-color .12s ease, background-color .12s ease, color .12s ease;
+}
+
+.follow-platform-filter--compact {
+  gap: .24rem;
+}
+
+.follow-platform-filter--compact .follow-platform-filter__item {
+  padding: .16rem .32rem;
+  border-radius: 3px;
+  font-size: .62rem;
 }
 
 .follow-platform-filter__item:hover {

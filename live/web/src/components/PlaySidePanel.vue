@@ -444,6 +444,8 @@ watch(
 .tab-content {
   flex: 1;
   min-height: 0;
+  min-width: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -453,7 +455,7 @@ watch(
   align-items: center;
   justify-content: space-between;
   gap: .35rem;
-  padding: .35rem .45rem 0;
+  padding: .35rem .45rem .7rem;
   flex-shrink: 0;
 }
 
@@ -520,34 +522,43 @@ watch(
 .settings-tab {
   display: flex;
   flex-direction: column;
-  padding: .35rem .5rem .45rem;
+  width: 100%;
+  max-width: 100%;
+  align-self: stretch;
+  box-sizing: border-box;
+  padding: .35rem 0 .4rem;
   gap: .38rem;
 }
 
 .settings-groups {
   display: flex;
   align-items: stretch;
-  gap: .32rem;
+  gap: .25rem;
+  width: 100%;
+  max-width: 100%;
   min-width: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .settings-group {
-  flex: 1;
+  flex: 1 1 0;
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 0;
-  padding: .28rem .32rem .32rem;
+  gap: .3rem;
+  padding: .36rem .42rem .38rem;
   border: 1px solid var(--gray-7);
-  border-radius: 8px;
+  border-radius: 6px;
   background: rgba(255, 255, 255, .02);
+  box-sizing: border-box;
 }
 
 .settings-group__title {
-  margin: 0 0 .05rem;
-  padding-bottom: .22rem;
+  margin: 0 0 .06rem;
+  padding-bottom: .26rem;
   border-bottom: 1px solid rgba(255, 255, 255, .06);
-  font-size: .72rem;
+  font-size: .82rem;
   font-weight: 600;
   letter-spacing: .02em;
   color: var(--amber);
@@ -555,47 +566,56 @@ watch(
 
 .setting-row {
   display: grid;
-  grid-template-columns: 2.1rem 1fr 1.55rem;
+  grid-template-columns: 2.45rem minmax(0, 1fr) auto;
   align-items: center;
-  gap: .22rem;
-  min-height: 1.45rem;
-  padding: 0;
+  gap: .26rem;
+  min-height: 1.65rem;
+  padding: .1rem 0;
   cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .setting-row--toggle {
-  grid-template-columns: 2.1rem 1fr;
-  min-height: 1.35rem;
+  grid-template-columns: 2.45rem 1fr;
+  min-height: 1.55rem;
 }
 
 .setting-label {
-  font-size: .72rem;
+  font-size: .82rem;
   color: var(--muted);
   white-space: nowrap;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .setting-value {
-  font-size: .68rem;
+  font-size: .78rem;
   font-variant-numeric: tabular-nums;
   text-align: right;
   color: var(--amber);
-  line-height: 1.2;
+  line-height: 1.25;
+  justify-self: end;
+  min-width: 0;
+  padding-right: 0;
 }
 
 .setting-select {
   grid-column: 2 / 4;
   width: 100%;
-  padding: .15rem .35rem;
-  font-size: .72rem;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: .18rem .32rem;
+  font-size: .8rem;
   border-radius: 5px;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .setting-check {
   grid-column: 2;
-  width: .9rem;
-  height: .9rem;
+  width: 1rem;
+  height: 1rem;
   margin: 0;
   accent-color: var(--amber);
   cursor: pointer;
@@ -603,6 +623,7 @@ watch(
 
 .setting-range {
   width: 100%;
+  min-width: 0;
   height: 3px;
   margin: 0;
   padding: 0;
