@@ -91,60 +91,62 @@
     </div>
 
     <div v-show="tab === 'settings'" class="tab-content settings-tab scrolly">
-      <section class="settings-group">
-        <h4 class="settings-group__title">屏幕弹幕</h4>
-        <label class="setting-row setting-row--toggle">
-          <span class="setting-label">飘屏</span>
-          <input v-model="overlaySettings.show" type="checkbox" class="setting-check">
-        </label>
-        <label class="setting-row">
-          <span class="setting-label">透明度</span>
-          <input v-model.number="overlaySettings.opacity" class="setting-range" type="range" min="10" max="100">
-          <span class="setting-value">{{ overlaySettings.opacity }}%</span>
-        </label>
-        <label class="setting-row">
-          <span class="setting-label">字号</span>
-          <input v-model.number="overlaySettings.fontSize" class="setting-range" type="range" min="12" max="36">
-          <span class="setting-value">{{ overlaySettings.fontSize }}</span>
-        </label>
-        <label class="setting-row">
-          <span class="setting-label">速度</span>
-          <input v-model.number="overlaySettings.speed" class="setting-range" type="range" min="1" max="10">
-          <span class="setting-value">{{ overlaySettings.speed }}</span>
-        </label>
-        <label class="setting-row">
-          <span class="setting-label">区域</span>
-          <select v-model.number="overlaySettings.area" class="setting-select">
-            <option :value="1">全屏</option>
-            <option :value="0.75">3/4</option>
-            <option :value="0.5">半屏</option>
-            <option :value="0.25">1/4</option>
-          </select>
-        </label>
-      </section>
+      <div class="settings-groups">
+        <section class="settings-group">
+          <h4 class="settings-group__title">屏幕弹幕</h4>
+          <label class="setting-row setting-row--toggle">
+            <span class="setting-label">飘屏</span>
+            <input v-model="overlaySettings.show" type="checkbox" class="setting-check">
+          </label>
+          <label class="setting-row">
+            <span class="setting-label">透明度</span>
+            <input v-model.number="overlaySettings.opacity" class="setting-range" type="range" min="10" max="100">
+            <span class="setting-value">{{ overlaySettings.opacity }}%</span>
+          </label>
+          <label class="setting-row">
+            <span class="setting-label">字号</span>
+            <input v-model.number="overlaySettings.fontSize" class="setting-range" type="range" min="12" max="36">
+            <span class="setting-value">{{ overlaySettings.fontSize }}</span>
+          </label>
+          <label class="setting-row">
+            <span class="setting-label">速度</span>
+            <input v-model.number="overlaySettings.speed" class="setting-range" type="range" min="1" max="10">
+            <span class="setting-value">{{ overlaySettings.speed }}</span>
+          </label>
+          <label class="setting-row">
+            <span class="setting-label">区域</span>
+            <select v-model.number="overlaySettings.area" class="setting-select">
+              <option :value="1">全屏</option>
+              <option :value="0.75">3/4</option>
+              <option :value="0.5">半屏</option>
+              <option :value="0.25">1/4</option>
+            </select>
+          </label>
+        </section>
 
-      <section class="settings-group">
-        <h4 class="settings-group__title">聊天弹幕</h4>
-        <label class="setting-row setting-row--toggle">
-          <span class="setting-label">聊天</span>
-          <input v-model="chatSettings.show" type="checkbox" class="setting-check">
-        </label>
-        <label class="setting-row">
-          <span class="setting-label">透明度</span>
-          <input v-model.number="chatSettings.opacity" class="setting-range" type="range" min="10" max="100">
-          <span class="setting-value">{{ chatSettings.opacity }}%</span>
-        </label>
-        <label class="setting-row">
-          <span class="setting-label">字号</span>
-          <input v-model.number="chatSettings.fontSize" class="setting-range" type="range" min="12" max="24">
-          <span class="setting-value">{{ chatSettings.fontSize }}</span>
-        </label>
-        <label class="setting-row">
-          <span class="setting-label">间距</span>
-          <input v-model.number="chatSettings.gap" class="setting-range" type="range" min="0" max="16">
-          <span class="setting-value">{{ chatSettings.gap }}</span>
-        </label>
-      </section>
+        <section class="settings-group">
+          <h4 class="settings-group__title">聊天弹幕</h4>
+          <label class="setting-row setting-row--toggle">
+            <span class="setting-label">聊天</span>
+            <input v-model="chatSettings.show" type="checkbox" class="setting-check">
+          </label>
+          <label class="setting-row">
+            <span class="setting-label">透明度</span>
+            <input v-model.number="chatSettings.opacity" class="setting-range" type="range" min="10" max="100">
+            <span class="setting-value">{{ chatSettings.opacity }}%</span>
+          </label>
+          <label class="setting-row">
+            <span class="setting-label">字号</span>
+            <input v-model.number="chatSettings.fontSize" class="setting-range" type="range" min="12" max="24">
+            <span class="setting-value">{{ chatSettings.fontSize }}</span>
+          </label>
+          <label class="setting-row">
+            <span class="setting-label">间距</span>
+            <input v-model.number="chatSettings.gap" class="setting-range" type="range" min="0" max="16">
+            <span class="setting-value">{{ chatSettings.gap }}</span>
+          </label>
+        </section>
+      </div>
     </div>
   </aside>
 </template>
@@ -522,11 +524,20 @@ watch(
   gap: .38rem;
 }
 
+.settings-groups {
+  display: flex;
+  align-items: stretch;
+  gap: .32rem;
+  min-width: 0;
+}
+
 .settings-group {
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 0;
-  padding: .28rem .38rem .32rem;
+  padding: .28rem .32rem .32rem;
   border: 1px solid var(--gray-7);
   border-radius: 8px;
   background: rgba(255, 255, 255, .02);
@@ -544,16 +555,16 @@ watch(
 
 .setting-row {
   display: grid;
-  grid-template-columns: 2.75rem 1fr 1.85rem;
+  grid-template-columns: 2.1rem 1fr 1.55rem;
   align-items: center;
-  gap: .28rem;
+  gap: .22rem;
   min-height: 1.45rem;
   padding: 0;
   cursor: pointer;
 }
 
 .setting-row--toggle {
-  grid-template-columns: 2.75rem 1fr;
+  grid-template-columns: 2.1rem 1fr;
   min-height: 1.35rem;
 }
 
