@@ -137,7 +137,7 @@ defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
 
 const tab = ref("chat");
 const followSiteFilter = ref("");
-const followUiPref = loadGlobalPref("follow_ui", { previewCover: true });
+const followUiPref = loadGlobalPref("play_follow_ui", { previewCover: true });
 const previewCover = ref(followUiPref.previewCover !== false);
 const chatListRef = ref(null);
 const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
@@ -163,7 +163,7 @@ const chatDanmakuLine = computed(() => briefDanmakuStatus(props.danmakuStatus));
 
 function togglePreviewCover() {
   previewCover.value = !previewCover.value;
-  saveGlobalPref("follow_ui", { previewCover: previewCover.value });
+  saveGlobalPref("play_follow_ui", { previewCover: previewCover.value });
 }
 
 watch(tab, (value) => {
