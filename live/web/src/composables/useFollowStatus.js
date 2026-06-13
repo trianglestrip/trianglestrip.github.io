@@ -3,7 +3,7 @@ import { fetchFollowStatus } from "../api/follow.js";
 import { followKey } from "../utils/prefStore.js";
 import { mergeFollowRoom, sortFollowRooms } from "../utils/followDisplay.js";
 
-export function useFollowStatus(followsRef, { active = true } = {}) {
+export function useFollowStatus(followsRef, { active = true, getFocusCategory } = {}) {
   const statusMap = ref({});
   const loading = ref(false);
   let refreshTimer = 0;
@@ -28,6 +28,10 @@ export function useFollowStatus(followsRef, { active = true } = {}) {
       if (snap.cover) room.cover = snap.cover;
       if (snap.title) room.title = snap.title;
       if (snap.anchor) room.anchor = snap.anchor;
+      if (snap.category) room.category = snap.category;
+      if (snap.state) room.state = snap.state;
+      if (snap.fans) room.fans = snap.fans;
+      if (snap.online) room.online = snap.online;
     }
   }
 
@@ -63,9 +67,13 @@ export function useFollowStatus(followsRef, { active = true } = {}) {
       const snap = statusMap.value[followKey(room.site, room.id)] || {};
       return mergeFollowRoom(room, snap);
     });
-    return sortFollowRooms(merged, Object.fromEntries(
+    const statusEntries = Object.fromEntries(
       merged.map((room) => [followKey(room.site, room.id), room]),
-    ));
+    );
+    const focusCategory = typeof getFocusCategory === "function"
+      ? getFocusCategory(merged, statusMap.value)
+      : "";
+    return sortFollowRooms(merged, statusEntries, { focusCategory });
   });
 
   watch(

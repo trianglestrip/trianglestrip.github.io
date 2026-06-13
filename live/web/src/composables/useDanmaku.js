@@ -86,6 +86,9 @@ export function useDanmaku(siteRef, roomIdRef) {
   let parseWorker = null;
   let parseSeq = 0;
   let activeSite = null;
+  let pendingMsgs = [];
+  let flushRaf = 0;
+  let alive = true;
 
   watch(
     overlaySettings,
@@ -105,28 +108,48 @@ export function useDanmaku(siteRef, roomIdRef) {
 
   function ensureParseWorker() {
     if (parseWorker) return parseWorker;
-    parseWorker = new Worker(new URL("../workers/danmaku.worker.js", import.meta.url));
+    parseWorker = new Worker(new URL("../workers/danmaku.worker.js", import.meta.url), {
+      type: "module",
+    });
     parseWorker.onmessage = (event) => {
-      if (event.data?.type !== "messages") return;
-      for (const item of event.data.items) {
-        pushMsg(item);
-      }
+      if (!parseWorker || !alive || event.data?.type !== "messages") return;
+      queueMsgs(event.data.items || []);
     };
     return parseWorker;
   }
 
   function releaseParseWorker() {
+    if (flushRaf) {
+      cancelAnimationFrame(flushRaf);
+      flushRaf = 0;
+    }
+    pendingMsgs = [];
     if (!parseWorker) return;
+    parseWorker.onmessage = null;
     parseWorker.terminate();
     parseWorker = null;
     parseSeq = 0;
   }
 
-  function pushMsg(entry) {
-    messages.value.push(entry);
+  function trimMessages() {
     if (messages.value.length > 300) {
       messages.value.splice(0, messages.value.length - 300);
     }
+  }
+
+  function flushPendingMsgs() {
+    flushRaf = 0;
+    if (!alive || !pendingMsgs.length) return;
+    messages.value.push(...pendingMsgs);
+    pendingMsgs = [];
+    trimMessages();
+  }
+
+  function queueMsgs(items) {
+    if (!alive || !items.length) return;
+    pendingMsgs.push(...items);
+    if (flushRaf) return;
+    flushRaf = requestAnimationFrame(flushPendingMsgs);
   }
 
   function clearTimers() {
@@ -244,6 +267,8 @@ export function useDanmaku(siteRef, roomIdRef) {
     clearTimers();
     releaseParseWorker();
     activeSite = null;
+    pendingMsgs = [];
+    messages.value = [];
     if (ws) {
       ws.onclose = null;
       ws.close();
@@ -255,6 +280,7 @@ export function useDanmaku(siteRef, roomIdRef) {
   }
 
   onUnmounted(() => {
+    alive = false;
     disconnect();
   });
 

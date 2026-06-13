@@ -1,5 +1,6 @@
 import { ref } from "vue";
 import { fetchCategories, fetchCategoryRooms, fetchRecommendRooms } from "../api/browse.js";
+import { supportsBrowse } from "../config/platforms.js";
 
 export function useBrowse(siteRef) {
   const categories = ref([]);
@@ -14,7 +15,11 @@ export function useBrowse(siteRef) {
 
   async function loadCategories() {
     const site = siteRef.value;
-    if (!site) return;
+    if (!site || !supportsBrowse(site)) {
+      categories.value = [];
+      listError.value = "";
+      return;
+    }
     loadingCategories.value = true;
     try {
       const data = await fetchCategories(site);
@@ -29,7 +34,17 @@ export function useBrowse(siteRef) {
 
   async function loadRecommend(reset = true) {
     const site = siteRef.value;
-    if (!site) return;
+    if (!site || !supportsBrowse(site)) {
+      if (reset) {
+        page.value = 1;
+        rooms.value = [];
+        activeCategory.value = null;
+        listTitle.value = "推荐";
+      }
+      hasMore.value = false;
+      listError.value = "";
+      return;
+    }
     if (reset) {
       page.value = 1;
       rooms.value = [];
@@ -44,6 +59,7 @@ export function useBrowse(siteRef) {
       hasMore.value = !!data.hasMore;
     } catch (err) {
       if (reset) rooms.value = [];
+      hasMore.value = false;
       listError.value = err.message;
     } finally {
       loadingRooms.value = false;
@@ -53,7 +69,7 @@ export function useBrowse(siteRef) {
 
   async function loadCategoryRooms(category, reset = true) {
     const site = siteRef.value;
-    if (!site || !category) return;
+    if (!site || !supportsBrowse(site) || !category) return;
     if (reset) {
       page.value = 1;
       rooms.value = [];
@@ -72,6 +88,7 @@ export function useBrowse(siteRef) {
       hasMore.value = !!data.hasMore;
     } catch (err) {
       if (reset) rooms.value = [];
+      hasMore.value = false;
       listError.value = err.message;
     } finally {
       loadingRooms.value = false;

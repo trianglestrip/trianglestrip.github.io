@@ -36,7 +36,47 @@ export interface MetaLike {
   cover?: string;
   available_qualities?: QualityItem[];
   m3u8_url?: string;
+  offline?: boolean;
 }
+
+export function buildOfflineRoomPayload(meta: MetaLike, opts?: { source?: string }): Record<string, unknown> {
+  return {
+    source_url: meta.source_url,
+    source: opts?.source || "streamget",
+    fetched_at: fetchedAtIso(),
+    platform: meta.site,
+    site: meta.site,
+    room_id: meta.room_id,
+    anchor_name: meta.anchor_name || "",
+    title: meta.title || meta.anchor_name || "",
+    cover: meta.cover || "",
+    is_live: false,
+    status: false,
+    offline: true,
+    streams: [],
+    available_qualities: [],
+    play_url: "",
+    flv_url: "",
+    m3u8_url: meta.m3u8_url || "",
+    backup_urls: [],
+    meta: {
+      site: meta.site,
+      room_id: meta.room_id,
+      title: meta.title || "",
+      anchor_name: meta.anchor_name || "",
+      cover: meta.cover || "",
+      is_live: false,
+      available_qualities: [],
+    },
+    ok: true,
+  };
+}
+
+function isOfflineMeta(meta: MetaLike): boolean {
+  return Boolean(meta.offline) || !meta.available_qualities?.length;
+}
+
+export { isOfflineMeta };
 
 function fetchedAtIso(): string {
   const d = new Date();

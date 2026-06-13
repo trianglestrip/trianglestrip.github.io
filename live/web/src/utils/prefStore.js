@@ -1,9 +1,13 @@
-/** 偏好与关注：按平台/房间号存储，不依赖站点 URL 或 Cookie 域 */
+/** 偏好与关注：键名不依赖站点 URL；关注另写 Cookie(path=/) 以便同主机不同端口共享 */
 
 const PREFIX = "lemon_live";
 
 export function followStorageKey() {
   return `${PREFIX}.follows`;
+}
+
+export function pendingFollowImportKey() {
+  return `${PREFIX}.pending_follow_import`;
 }
 
 export function platformPrefKey(site, category) {
@@ -156,26 +160,81 @@ export function migrateGlobalQualityToPlatform(site, platforms = ["douyu", "huya
   };
 }
 
-export function loadFollows() {
-  const key = followStorageKey();
-  const stored = loadJson(key);
-  if (Array.isArray(stored)) {
-    return normalizeFollows(stored);
-  }
+const FOLLOWS_COOKIE = `${PREFIX}.follows`;
 
-  const legacy = loadJson("lemon_follow_list");
-  if (Array.isArray(legacy) && legacy.length) {
-    const normalized = normalizeFollows(legacy);
-    saveJson(key, normalized);
-    localStorage.removeItem("lemon_follow_list");
-    return normalized;
-  }
-
-  return [];
+/** Cookie 不按端口隔离，用于同主机不同端口间同步关注（localStorage 按 origin 含端口隔离） */
+function readFollowsCookie() {
+  const raw = readLegacyCookie(FOLLOWS_COOKIE);
+  if (!Array.isArray(raw) || !raw.length) return [];
+  return normalizeFollows(raw);
 }
 
-export function saveFollows(list) {
-  saveJson(followStorageKey(), normalizeFollows(list));
+function syncFollowsCookie(list) {
+  if (typeof document === "undefined") return;
+  const normalized = normalizeFollows(list);
+  if (!normalized.length) {
+    clearLegacyCookie(FOLLOWS_COOKIE);
+    return;
+  }
+  const payload = encodeURIComponent(JSON.stringify(normalized));
+  if (payload.length > 3800) return;
+  document.cookie = `${FOLLOWS_COOKIE}=${payload}; path=/; SameSite=Lax; max-age=31536000`;
+}
+
+export function loadFollows() {
+  const key = followStorageKey();
+  let result = [];
+
+  const stored = loadJson(key);
+  if (Array.isArray(stored)) {
+    result = normalizeFollows(stored);
+  } else {
+    const legacy = loadJson("lemon_follow_list");
+    if (Array.isArray(legacy) && legacy.length) {
+      result = normalizeFollows(legacy);
+      saveJson(key, result);
+      localStorage.removeItem("lemon_follow_list");
+    }
+  }
+
+  const fromCookie = readFollowsCookie();
+  if (fromCookie.length) {
+    const merged = mergeFollows(result, fromCookie);
+    if (merged.length !== result.length) {
+      result = merged;
+      saveJson(key, result);
+    }
+  }
+
+  if (result.length) syncFollowsCookie(result);
+
+  return result;
+}
+
+export function saveFollows(list, { touchUpdatedAt = false } = {}) {
+  const now = Date.now();
+  const normalized = normalizeFollows(
+    (list || []).map((item) => ({
+      ...item,
+      clientUpdatedAt: touchUpdatedAt ? now : (Number(item.clientUpdatedAt) || Number(item.addedAt) || now),
+    })),
+  );
+  saveJson(followStorageKey(), normalized);
+  syncFollowsCookie(normalized);
+}
+
+/** Tampermonkey / 跨页写入的待导入关注，合并后清除 */
+export function applyPendingFollowImport() {
+  const key = pendingFollowImportKey();
+  const pending = loadJson(key);
+  if (!Array.isArray(pending) || !pending.length) return 0;
+
+  const before = loadFollows();
+  const beforeKeys = new Set(before.map((r) => followKey(r.site, r.id)));
+  const merged = mergeFollows(before, pending);
+  saveFollows(merged);
+  localStorage.removeItem(key);
+  return merged.filter((r) => !beforeKeys.has(followKey(r.site, r.id))).length;
 }
 
 /** 关注仅以 platform + roomId 为唯一键，忽略 URL 类字段 */
@@ -197,6 +256,8 @@ export function normalizeFollows(list) {
       cover: item.cover ? String(item.cover) : "",
       avatar: item.avatar ? String(item.avatar) : "",
       addedAt: Number(item.addedAt) || Date.now(),
+      super: Boolean(item.super),
+      clientUpdatedAt: Number(item.clientUpdatedAt) || Number(item.addedAt) || Date.now(),
     });
   }
   return out;
@@ -204,4 +265,33 @@ export function normalizeFollows(list) {
 
 export function followKey(site, id) {
   return `${site}:${id}`;
+}
+
+/** 合并关注列表，以 platform + roomId 去重，保留较早的 addedAt */
+export function mergeFollows(existing, incoming) {
+  return normalizeFollows([...(existing || []), ...(incoming || [])]);
+}
+
+/** 与远端备份合并：较新的 clientUpdatedAt 优先，super 取并集 */
+export function mergeFollowsWithRemote(local, remote) {
+  const map = new Map();
+  for (const raw of [...(local || []), ...(remote || [])]) {
+    const item = normalizeFollows([raw])[0];
+    if (!item) continue;
+    const key = followKey(item.site, item.id);
+    const prev = map.get(key);
+    if (!prev) {
+      map.set(key, item);
+      continue;
+    }
+    const takeIncoming = item.clientUpdatedAt >= prev.clientUpdatedAt;
+    const base = takeIncoming ? item : prev;
+    const other = takeIncoming ? prev : item;
+    map.set(key, {
+      ...base,
+      super: Boolean(base.super || other.super),
+      addedAt: Math.min(Number(prev.addedAt) || Date.now(), Number(item.addedAt) || Date.now()),
+    });
+  }
+  return [...map.values()];
 }

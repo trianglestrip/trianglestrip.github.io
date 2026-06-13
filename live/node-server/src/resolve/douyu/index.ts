@@ -18,7 +18,8 @@ export interface DouyuMeta {
   title: string;
   cover: string;
   available_qualities: Array<{ name: string; rate: number }>;
-  context: {
+  offline?: boolean;
+  context?: {
     rid: string;
     url: string;
     anchor_name: string;
@@ -30,6 +31,8 @@ export interface DouyuMeta {
     base: PlayV1Response;
   };
 }
+
+type DouyuPlayContext = NonNullable<DouyuMeta["context"]>;
 
 function lineNameForCdn(cdns: Array<{ name?: string; cdn?: string }>, cdnCode: string): string {
   for (const item of cdns) {
@@ -101,6 +104,7 @@ async function loadPlayContext(url: string, preferredCdn = "hw-h5") {
     rid,
     url,
     anchor_name: roomRaw.nickname || "",
+    title: roomRaw.room_name || roomRaw.nickname || "",
     cover: coverFromRoom(roomRaw),
     white,
     base,
@@ -117,7 +121,7 @@ function metaFromContext(ctx: Awaited<ReturnType<typeof loadPlayContext>>): Douy
     room_id: ctx.rid,
     source_url: ctx.url,
     anchor_name: ctx.anchor_name,
-    title: ctx.anchor_name,
+    title: ctx.title || ctx.anchor_name,
     cover: ctx.cover,
     available_qualities: availableQualities(ctx.multirates),
     context: {
@@ -134,11 +138,11 @@ function metaFromContext(ctx: Awaited<ReturnType<typeof loadPlayContext>>): Douy
   };
 }
 
-function contextFromMeta(meta: DouyuMeta) {
+function contextFromMeta(meta: DouyuMeta): DouyuPlayContext | undefined {
   return meta.context;
 }
 
-async function fetchTierResponse(ctx: ReturnType<typeof contextFromMeta>, item: { rate?: number }): Promise<PlayV1Response> {
+async function fetchTierResponse(ctx: DouyuPlayContext, item: { rate?: number }): Promise<PlayV1Response> {
   const rate = String(item.rate ?? 0);
   if (rate === "0") {
     return ctx.base;
@@ -147,12 +151,29 @@ async function fetchTierResponse(ctx: ReturnType<typeof contextFromMeta>, item: 
 }
 
 export async function loadMeta(url: string, preferredCdn = "hw-h5"): Promise<DouyuMeta> {
+  const rid = await getRoomId(url);
+  const roomRaw = await fetchBetard(rid);
+  if (roomRaw.show_status !== 1) {
+    return {
+      site: "douyu",
+      room_id: rid,
+      source_url: url,
+      anchor_name: roomRaw.nickname || "",
+      title: roomRaw.room_name || roomRaw.nickname || "",
+      cover: coverFromRoom(roomRaw),
+      available_qualities: [],
+      offline: true,
+    };
+  }
   const ctx = await loadPlayContext(url, preferredCdn);
   return metaFromContext(ctx);
 }
 
 export async function resolveTier(meta: DouyuMeta, qualityName?: string): Promise<DouyuTier> {
   const ctx = contextFromMeta(meta);
+  if (!ctx) {
+    throw new Error("房间未开播");
+  }
   const item = pickQualityName(meta.available_qualities, qualityName);
   const resp = await fetchTierResponse(ctx, item);
   const tier = tierFromResponse(item, resp, ctx.line_label);
@@ -164,6 +185,9 @@ export async function resolveTier(meta: DouyuMeta, qualityName?: string): Promis
 
 export async function resolveAllTiers(meta: DouyuMeta): Promise<DouyuTier[]> {
   const ctx = contextFromMeta(meta);
+  if (!ctx) {
+    throw new Error("房间未开播");
+  }
   const results = await Promise.all(
     ctx.multirates.map(async (item) => ({ item, resp: await fetchTierResponse(ctx, item) })),
   );

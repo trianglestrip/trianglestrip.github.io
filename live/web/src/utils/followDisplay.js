@@ -12,13 +12,30 @@ export function followStateClass(state) {
   return "follow-item--offline";
 }
 
-export function sortFollowRooms(rooms, statusMap = {}) {
+function normalizeCategory(category) {
+  return String(category || "").trim();
+}
+
+export function sortFollowRooms(rooms, statusMap = {}, options = {}) {
   const order = FOLLOW_STATE_ORDER;
+  const focusCategory = normalizeCategory(options.focusCategory);
+
   return [...rooms].sort((a, b) => {
-    const aState = statusMap[`${a.site}:${a.id}`]?.state || "offline";
-    const bState = statusMap[`${b.site}:${b.id}`]?.state || "offline";
+    const aState = statusMap[`${a.site}:${a.id}`]?.state || a.state || "offline";
+    const bState = statusMap[`${b.site}:${b.id}`]?.state || b.state || "offline";
     const byState = (order[aState] ?? 9) - (order[bState] ?? 9);
     if (byState !== 0) return byState;
+
+    const bySuper = Number(Boolean(b.super)) - Number(Boolean(a.super));
+    if (bySuper !== 0) return bySuper;
+
+    if (focusCategory) {
+      const aFocus = normalizeCategory(a.category) === focusCategory;
+      const bFocus = normalizeCategory(b.category) === focusCategory;
+      const byFocus = Number(bFocus) - Number(aFocus);
+      if (byFocus !== 0) return byFocus;
+    }
+
     return (Number(b.addedAt) || 0) - (Number(a.addedAt) || 0);
   });
 }
@@ -26,10 +43,14 @@ export function sortFollowRooms(rooms, statusMap = {}) {
 export function mergeFollowRoom(room, snapshot = {}) {
   return {
     ...room,
+    super: Boolean(room.super),
     title: snapshot.title || room.title,
     anchor: snapshot.anchor || room.anchor,
+    category: snapshot.category || room.category || "",
     cover: snapshot.cover || room.cover,
     avatar: snapshot.avatar || room.avatar,
     state: snapshot.state || room.state || "offline",
+    fans: snapshot.fans || room.fans || "",
+    online: snapshot.online || room.online || "",
   };
 }

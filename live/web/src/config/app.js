@@ -46,20 +46,16 @@ export function getAppConfig() {
   return appConfig;
 }
 
-function localApiFallback() {
-  if (typeof window === "undefined") return "";
-  const { protocol, hostname } = window.location;
-  if (hostname === "127.0.0.1" || hostname === "localhost") {
-    return `${protocol}//${hostname}:8765`;
-  }
-  return "";
-}
-
-/** 生产：api.baseUrl；开发：api.devBaseUrl（空字符串则走 Vite /api 代理） */
+/** 生产：api.baseUrl（空则同源 /api，由 server.mjs 反代）；开发：api.devBaseUrl（空则走 Vite /api 代理） */
 export function apiBase() {
   if (import.meta.env.DEV) {
-    const dev = trimBase(appConfig.api?.devBaseUrl);
-    return dev;
+    return trimBase(appConfig.api?.devBaseUrl);
   }
-  return trimBase(appConfig.api?.baseUrl) || localApiFallback();
+  return trimBase(appConfig.api?.baseUrl);
+}
+
+export function apiUrl(path) {
+  const p = path.startsWith("/") ? path : `/${path}`;
+  const base = apiBase();
+  return base ? `${base}${p}` : p;
 }

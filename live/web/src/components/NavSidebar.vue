@@ -16,7 +16,7 @@
 <script setup>
 import { computed } from "vue";
 import { RouterLink, useRoute } from "vue-router";
-import { getPlatform } from "../config/platforms";
+import { getPlatform, supportsBrowse } from "../config/platforms";
 import Icon from "./Icon.vue";
 
 const props = defineProps({
@@ -27,14 +27,15 @@ const route = useRoute();
 
 const items = computed(() => {
   const site = props.site || "douyu";
-  return [
+  const list = [
     { icon: "home", link: `/${site}`, title: "首页" },
-    { icon: "apps", link: `/${site}/category`, title: "分类" },
+    { icon: "apps", link: `/${site}/category`, title: "分类", browse: true },
     { icon: "heart", link: "/follow", title: "关注" },
     { icon: "timer", link: "/time", title: "耗时" },
     { icon: "search", link: "/search", title: "搜索" },
     { icon: "user", link: "/user", title: "用户" },
   ];
+  return list.filter((item) => item.browse !== true || supportsBrowse(site));
 });
 
 function isActive(item) {

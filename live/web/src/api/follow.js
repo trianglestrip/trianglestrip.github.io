@@ -23,3 +23,21 @@ export async function fetchFollowStatus(rooms) {
   });
   return readJson(res);
 }
+
+export async function fetchFollowStore() {
+  const res = await fetch(`${apiBase()}/api/follows/store`, {
+    method: "GET",
+    cache: "no-store",
+  });
+  return readJson(res);
+}
+
+export async function pushFollowStore(follows) {
+  const res = await fetch(`${apiBase()}/api/follows/store`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ follows }),
+    cache: "no-store",
+  });
+  return readJson(res);
+}

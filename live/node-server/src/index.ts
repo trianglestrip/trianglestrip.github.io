@@ -88,11 +88,12 @@ export function startServer(cfg: ServerConfig, webRoot: string | null): void {
       console.log("模式: 仅 API（前后端解耦，前端请单独部署）");
     }
     console.log(`API: http://${host}:${port}/api/health`);
-    console.log("     GET /api/room?site=douyu|huya&room=<id>&mode=lazy|full");
+    console.log("     GET /api/room?site=douyu|huya|douyin&room=<id>&mode=lazy|full");
     console.log("     GET /api/categories?site=douyu|huya");
     console.log("     GET /api/rooms?site=douyu|huya&cid=<id>&page=1");
     console.log("     GET /api/rooms?site=douyu|huya&recommend=1&page=1");
-    console.log("     GET /api/huya/danmaku?room=<id>");
+    console.log("     GET /api/time?site=douyu|huya&room=<id>&run=0|1");
+    console.log("     GET/POST /api/follows/store  关注本地备份（data/follows-store.json）");
     console.log("配置: config.json（可选 config.local.json 覆盖）");
     console.log("按 Ctrl+C 停止");
   });

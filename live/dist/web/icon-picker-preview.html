@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>播放控制条图标参考</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #1a1a1e;
+      color: #e8e8ec;
+      padding: 24px;
+      line-height: 1.5;
+    }
+    h1 { font-size: 1.25rem; margin: 0 0 8px; }
+    p.hint { color: #888; font-size: 0.875rem; margin: 0 0 24px; }
+    h2 { font-size: 1rem; color: #f3d078; margin: 28px 0 12px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+    .card {
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card-head {
+      padding: 10px 14px;
+      background: #222;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+    .card-head strong { color: #fff; font-size: 0.95rem; }
+    .bar {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 16px;
+      background: rgba(0, 0, 0, 0.45);
+      border-top: 1px solid #2a2a2a;
+    }
+    .bar .play {
+      width: 28px; height: 28px;
+      opacity: 0.35;
+      flex-shrink: 0;
+    }
+    .bar .icon-slot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+    }
+    .bar svg {
+      width: 28px;
+      height: 28px;
+      stroke: #e8e8ec;
+      fill: none;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .bar .active svg { stroke: #f3d078; }
+    .note { padding: 8px 14px 12px; font-size: 0.78rem; color: #777; }
+    .combo {
+      margin-top: 32px;
+      padding: 16px;
+      border: 1px dashed #444;
+      border-radius: 8px;
+    }
+    .combo .bar { border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>播放控制条图标参考</h1>
+  <p class="hint">开发时打开 <code>http://127.0.0.1:8080/icon-picker-preview.html</code> · 回复例如「刷新 R-B、弹幕 D-C」</p>
+
+  <h2>刷新（R-A ~ R-D）</h2>
+  <div class="grid" id="refresh-grid"></div>
+
+  <h2>弹幕开关（D-A ~ D-E）</h2>
+  <div class="grid" id="danmaku-grid"></div>
+
+  <div class="combo">
+    <p class="hint" style="margin-bottom:12px">推荐组合预览</p>
+    <div class="bar">
+      <svg class="play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5L8 5.5Z" fill="currentColor" stroke="none"/></svg>
+      <span class="icon-slot" id="combo-refresh"></span>
+      <span class="icon-slot active" id="combo-danmaku"></span>
+      <span style="color:#666;font-size:13px">R-B + D-C（示例）</span>
+    </div>
+  </div>
+
+  <script>
+    const PLAY = '<svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5L8 5.5Z" fill="currentColor" stroke="none"/></svg>';
+
+    const REFRESH = {
+      A: { name: 'R-A 双弧箭头', note: '当前 · Heroicons', d: 'M16.023 7.977a7 7 0 0 0-10.08 0M7.977 16.023a7 7 0 0 0 10.08 0M3 4v4h4M21 20v-4h-4' },
+      B: { name: 'R-B 圆环箭头', note: 'Lucide · 最常见', d: 'M21 12a9 9 0 0 0-9-9 9 9 0 0 0-6.74 2.74M21 3v5h-5' },
+      C: { name: 'R-C 直角箭头', note: 'Bootstrap 风格', d: 'M16 4h2v5h-5M3.05 13a9 9 0 1 0 .5-4.5M3 4v5h5' },
+      D: { name: 'R-D 细圆弧', note: '更轻、弧线完整', d: 'M20 12a8 8 0 1 1-2.2-5.7M20 4v4h-4' },
+    };
+
+    const DANMAKU = {
+      A: { name: 'D-A 字幕 CC', note: '当前 · 字幕条', d: 'M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm2 4v2h4V9H6Zm6 0v2h6V9h-6Z' },
+      B: { name: 'D-B 对话气泡', note: '聊天评论', d: 'M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H8l-4 3v-3H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm2 3v2h3V8H6Zm5 0v2h7V8h-7Z' },
+      C: { name: 'D-C 三行文字', note: '飘字 · 简洁', d: 'M4 7h16M4 12h12M4 17h8' },
+      D: { name: 'D-D 消息方框', note: '方形消息', d: 'M4 4h16v12H8l-4 4v-4H4V4Z' },
+      E: { name: 'D-E 飘字条', note: '上下两条', d: 'M3 6h18M5 18h10M15 18h4' },
+    };
+
+    function svg(d) {
+      return `<svg viewBox="0 0 24 24"><path d="${d}"/></svg>`;
+    }
+
+    function card(id, item, active) {
+      return `
+        <div class="card">
+          <div class="card-head"><strong>${id}</strong> · ${item.name}</div>
+          <div class="bar">
+            ${PLAY}
+            <span class="icon-slot ${active ? 'active' : ''}">${svg(item.d)}</span>
+          </div>
+          <div class="note">${item.note}</div>
+        </div>`;
+    }
+
+    document.getElementById('refresh-grid').innerHTML =
+      Object.entries(REFRESH).map(([k, v]) => card(k, v, k === 'A')).join('');
+    document.getElementById('danmaku-grid').innerHTML =
+      Object.entries(DANMAKU).map(([k, v]) => card(k, v, k === 'A')).join('');
+
+    document.getElementById('combo-refresh').innerHTML = svg(REFRESH.B.d);
+    document.getElementById('combo-danmaku').innerHTML = svg(DANMAKU.C.d);
+  </script>
+</body>
+</html>

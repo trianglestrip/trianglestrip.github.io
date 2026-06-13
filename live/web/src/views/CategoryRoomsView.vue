@@ -7,7 +7,7 @@
         </RouterLink>
         <h1 class="page-title">{{ listTitle }}</h1>
         <button type="button" class="refresh-btn" :disabled="loadingRooms" title="刷新" @click="refresh">
-          <Icon name="refresh" />
+          <Icon name="refresh" :class="{ 'fa-spin': loadingRooms }" />
         </button>
       </header>
 
@@ -36,7 +36,7 @@ import InfiniteScroll from "../components/InfiniteScroll.vue";
 import RoomGrid from "../components/RoomGrid.vue";
 import Icon from "../components/Icon.vue";
 import { roomKey } from "../api/browse.js";
-import { getPlatform } from "../config/platforms";
+import { getPlatform, supportsBrowse } from "../config/platforms";
 import { useBrowse } from "../composables/useBrowse.js";
 
 const props = defineProps({
@@ -62,6 +62,12 @@ const {
 } = useBrowse(siteRef);
 
 async function loadPage(reset = true) {
+  if (!supportsBrowse(props.site)) {
+    listError.value = "该平台暂不支持分类浏览";
+    hasMore.value = false;
+    rooms.value = [];
+    return;
+  }
   if (!categories.value.length) await loadCategories();
   const category = findCategory(props.cid, props.pid);
   await loadCategoryRooms(category, reset);
@@ -128,6 +134,11 @@ function onSelectRoom(room) {
 
 .back-link:hover, .refresh-btn:hover:not(:disabled) {
   color: var(--amber);
+}
+
+.refresh-btn :deep(.ui-icon) {
+  font-size: .92em;
+  line-height: 1;
 }
 
 .page-title {

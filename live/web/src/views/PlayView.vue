@@ -4,9 +4,15 @@
       <section class="play-main">
         <header v-if="headerReady" class="play-header">
           <RouterLink :to="`/${site}`" class="play-back" title="返回">
-          <Icon name="arrow-left" />
-        </RouterLink>
-          <h1 class="play-title">{{ displayTitle }}</h1>
+            <Icon name="arrow-left" />
+          </RouterLink>
+          <div class="play-header-main">
+            <h1 class="play-title">{{ displayTitle }}</h1>
+            <div class="play-viewers">
+              <Icon name="eye" class="play-stat-icon" />
+              <span>{{ onlineText }}</span>
+            </div>
+          </div>
         </header>
 
         <div ref="frameRef" class="play-frame" :class="{ 'play-frame--webscreen': webscreen }">
@@ -33,7 +39,6 @@
               :quality-index="qualityIndex"
               :line-index="lineIndex"
               :notice="controlNotice"
-              :is-followed="isFollowed(site, id)"
               :danmaku-on="overlaySettings.show"
               :webscreen="webscreen"
               :fullscreen="isFullscreen"
@@ -45,7 +50,6 @@
               @fullscreen="toggleFullscreen"
               @quality-change="onQualityChange"
               @line-change="onLineChange"
-              @toggle-follow="onToggleFollow"
               @refresh="onRefresh"
               @toggle-danmaku="onToggleDanmaku"
               @toggle-pip="onTogglePiP"
@@ -59,17 +63,20 @@
 
       <PlaySidePanel
         v-if="sideReady && !webscreen"
+        ref="sidePanelRef"
         v-model:overlay-settings="overlaySettings"
         v-model:chat-settings="chatSettings"
+        :site="site"
+        :room-id="id"
         :status-text="statusText"
         :payload="payload"
         :danmaku-messages="danmakuMessages"
         :danmaku-status="danmakuStatus"
         :follow-list="follows"
-        :is-followed="isFollowed(site, id)"
+        :is-super-followed="isSuperFollowed(site, id)"
         @play-room="onPlayFollow"
         @unfollow="onUnfollow"
-        @toggle-follow="onToggleFollow"
+        @toggle-super-follow="onToggleSuperFollow"
       />
     </div>
   </AppLayout>
@@ -80,16 +87,17 @@ import { ref, computed, watch, onBeforeUnmount, onMounted, nextTick, defineAsync
 import { RouterLink, useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import PlayerPanel from "../components/PlayerPanel.vue";
+import PlaySidePanel from "../components/PlaySidePanel.vue";
 import Icon from "../components/Icon.vue";
 import { getPlatform } from "../config/platforms";
 import { useRoom, usePlayer } from "../composables/useLive.js";
 import { useDanmaku } from "../composables/useDanmaku.js";
 import { useFollow } from "../composables/useFollow.js";
+import { fetchFollowStatus } from "../api/follow.js";
 import { followKey } from "../utils/prefStore.js";
 import { isSoundUnlocked, unlockSound, resetSoundSession } from "../utils/soundSession.js";
 
 const PlayerControls = defineAsyncComponent(() => import("../components/PlayerControls.vue"));
-const PlaySidePanel = defineAsyncComponent(() => import("../components/PlaySidePanel.vue"));
 const DanmakuOverlay = defineAsyncComponent(() => import("../components/DanmakuOverlay.vue"));
 
 const props = defineProps({
@@ -101,6 +109,7 @@ const router = useRouter();
 const siteRef = ref(props.site);
 const roomInput = ref(props.id);
 const playerPanelRef = ref(null);
+const sidePanelRef = ref(null);
 const frameRef = ref(null);
 const webscreen = ref(false);
 const showControls = ref(true);
@@ -121,9 +130,6 @@ const ENTRY_UNMUTE_EVENTS = ["pointerdown", "keydown"];
 let playRetrying = false;
 
 const platform = computed(() => getPlatform(props.site));
-const displayTitle = computed(
-  () => payload.value?.title || payload.value?.anchor_name || `房间 ${props.id}`,
-);
 
 const {
   payload,
@@ -142,6 +148,35 @@ const {
   onLineChange: setLine,
   buildMetaText,
 } = useRoom(siteRef);
+
+const displayTitle = computed(() => {
+  const title = String(payload.value?.title || payload.value?.meta?.title || "").trim();
+  if (title) return title;
+  return `房间 ${props.id}`;
+});
+
+const roomOnline = ref("");
+const onlineText = computed(() => roomOnline.value || "—");
+
+async function refreshRoomOnline() {
+  const rid = String(payload.value?.room_id || props.id || "").trim();
+  if (!rid) {
+    roomOnline.value = "";
+    return;
+  }
+  try {
+    const data = await fetchFollowStatus([{ site: props.site, id: rid }]);
+    roomOnline.value = data.list?.[0]?.online || "";
+  } catch {
+    /* 保留上次 */
+  }
+}
+
+watch(
+  () => [props.site, props.id, payload.value?.room_id],
+  () => refreshRoomOnline(),
+  { immediate: true },
+);
 
 const qualityOpts = computed(() => qualityOptions());
 const lineOpts = computed(() => lineOptions());
@@ -167,7 +202,7 @@ const {
   connect: connectDm,
   disconnect: disconnectDm,
 } = useDanmaku(siteRef, roomInput);
-const { follows, isFollowed, toggleFollow, unfollow } = useFollow();
+const { follows, isSuperFollowed, toggleSuperFollow, unfollow } = useFollow();
 
 watch(payload, (data) => {
   if (!data) return;
@@ -338,8 +373,13 @@ function syncRouteState(site, id) {
   payload.value = null;
   playUrl.value = "";
   lastPlayedRoom.value = "";
+  roomOnline.value = "";
   document.title = "Lemon live";
-  scheduleDeferredChrome();
+  headerReady.value = true;
+  controlsReady.value = true;
+  sideReady.value = true;
+  danmakuReady.value = false;
+  nextTick(() => sidePanelRef.value?.refreshSide?.());
 }
 
 function resolveVideoEl(raw) {
@@ -395,16 +435,30 @@ function revealControls() {
   }
 }
 
-function onToggleFollow() {
-  if (!payload.value) return;
-  toggleFollow({
+function cachedFollowRoom() {
+  const rid = String(roomInput.value || props.id || "").trim();
+  if (!rid) return null;
+  const key = followKey(props.site, rid);
+  return follows.value.find((r) => followKey(r.site, r.id) === key) || null;
+}
+
+function roomInfoForFollow() {
+  const cached = cachedFollowRoom();
+  const rid = String(roomInput.value || props.id || "").trim();
+  return {
     site: props.site,
-    id: roomInput.value,
-    title: payload.value.title || displayTitle.value,
-    anchor: payload.value.anchor_name || "",
-    cover: payload.value.cover || "",
-    avatar: payload.value.avatar || "",
-  });
+    id: rid,
+    title: payload.value?.title || displayTitle.value || cached?.title || "",
+    anchor: payload.value?.anchor_name || cached?.anchor || "",
+    cover: payload.value?.cover || cached?.cover || "",
+    avatar: payload.value?.avatar || cached?.avatar || "",
+  };
+}
+
+function onToggleSuperFollow() {
+  const info = roomInfoForFollow();
+  if (!info.id) return;
+  toggleSuperFollow(info);
 }
 
 function onUnfollow(room) {
@@ -412,6 +466,11 @@ function onUnfollow(room) {
 }
 
 function onPlayFollow(room) {
+  if (room.site === props.site && room.id === props.id) {
+    onRefresh();
+    sidePanelRef.value?.refreshSide?.();
+    return;
+  }
   router.push({ name: "play", params: { site: room.site, id: room.id } });
 }
 
@@ -420,7 +479,6 @@ async function onRefresh() {
   destroy();
   disconnectDm();
   danmakuReady.value = false;
-  sideReady.value = false;
   playUrl.value = "";
   try {
     await loadRoom(roomInput.value, { force: true });
@@ -532,6 +590,9 @@ onMounted(() => {
     /* ignore */
   }
   syncRouteState(props.site, props.id);
+  headerReady.value = true;
+  controlsReady.value = true;
+  sideReady.value = true;
   if (getPlatform(props.site)?.enabled) {
     schedulePlay(props.id);
   }
@@ -579,14 +640,20 @@ onBeforeUnmount(() => {
 }
 
 .play-header {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: .5rem;
+  justify-content: center;
+  min-height: 2rem;
   padding: .25rem .5rem .5rem;
   flex-shrink: 0;
 }
 
 .play-back {
+  position: absolute;
+  left: .5rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-flex;
   width: 2rem;
   height: 2rem;
@@ -598,14 +665,42 @@ onBeforeUnmount(() => {
 
 .play-back:hover { color: var(--amber); }
 
+.play-header-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  padding: 0 2.25rem;
+  max-width: 100%;
+  min-width: 0;
+}
+
 .play-title {
-  flex: 1;
   margin: 0;
   font-size: clamp(.95rem, 2vw, 1.15rem);
   font-weight: 600;
+  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-width: 0;
+}
+
+.play-viewers {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+  flex-shrink: 0;
+  font-size: .78rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.play-stat-icon {
+  width: .85em;
+  height: .85em;
+  opacity: .75;
+  flex-shrink: 0;
 }
 
 .play-frame {

@@ -1,25 +1,30 @@
 import type { ResolveCache } from "../cache/resolve-cache.js";
 import * as douyuAdapter from "./douyu/index.js";
+import * as douyinAdapter from "./douyin/index.js";
 import * as huyaAdapter from "./huya/index.js";
-import { buildRoomPayload, pickQualityName, type MetaLike, type TierLike } from "./schema.js";
+import { buildRoomPayload, buildOfflineRoomPayload, isOfflineMeta, pickQualityName, type MetaLike, type TierLike } from "./schema.js";
 
 const SITE_LOAD_META: Record<string, (url: string) => Promise<MetaLike>> = {
   douyu: (url) => douyuAdapter.loadMeta(url) as Promise<MetaLike>,
+  douyin: (url) => douyinAdapter.loadMeta(url) as Promise<MetaLike>,
   huya: (url) => huyaAdapter.loadMeta(url) as Promise<MetaLike>,
 };
 
 const SITE_RESOLVE_TIER: Record<string, (meta: MetaLike, quality?: string) => Promise<TierLike>> = {
   douyu: (meta, quality) => douyuAdapter.resolveTier(meta as never, quality) as Promise<TierLike>,
+  douyin: (meta, quality) => douyinAdapter.resolveTier(meta as never, quality) as Promise<TierLike>,
   huya: (meta, quality) => huyaAdapter.resolveTier(meta as never, quality) as Promise<TierLike>,
 };
 
 const SITE_RESOLVE_ALL_TIERS: Record<string, (meta: MetaLike) => Promise<TierLike[]>> = {
   douyu: (meta) => douyuAdapter.resolveAllTiers(meta as never) as Promise<TierLike[]>,
+  douyin: (meta) => douyinAdapter.resolveAllTiers(meta as never) as Promise<TierLike[]>,
   huya: (meta) => huyaAdapter.resolveAllTiers(meta as never) as Promise<TierLike[]>,
 };
 
 const SITE_NORMALIZE_URL: Record<string, (roomId: string) => string> = {
   douyu: douyuAdapter.normalizeUrl,
+  douyin: douyinAdapter.normalizeUrl,
   huya: huyaAdapter.normalizeUrl,
 };
 
@@ -119,7 +124,9 @@ export function createResolveService(cache: ResolveCache): ResolveService {
       timing.meta_cached = Boolean(meta.cached_meta);
 
       let payload: Record<string, unknown>;
-      if (mode === "full") {
+      if (isOfflineMeta(meta)) {
+        payload = buildOfflineRoomPayload(meta, { source: "streamget" });
+      } else if (mode === "full") {
         const tTier = performance.now();
         const resolver = SITE_RESOLVE_ALL_TIERS[site];
         if (!resolver) {

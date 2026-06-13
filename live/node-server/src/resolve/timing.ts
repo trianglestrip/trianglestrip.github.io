@@ -7,7 +7,7 @@ function wallResolve(
   room: string,
   quality: string | null | undefined,
   force: boolean,
-) {
+): Promise<Record<string, unknown>> {
   const t0 = performance.now();
   return resolveService
     .resolveRoom({ site, roomId: room, mode: "lazy", quality, force })
@@ -24,7 +24,18 @@ function wallResolve(
         anchor: String(payload.anchor_name || payload.title || ""),
         is_live: payload.is_live,
       };
-    });
+    })
+    .catch((err) => ({
+      wall_ms: Math.trunc(performance.now() - t0),
+      timing: {},
+      cached: false,
+      cached_meta: false,
+      cached_tier: false,
+      payload_cached: false,
+      anchor: "",
+      is_live: null,
+      error: err instanceof Error ? err.message : String(err),
+    }));
 }
 
 export function buildTimeReport(

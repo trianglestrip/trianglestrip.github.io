@@ -2,6 +2,10 @@
   <AppLayout :active-site="site">
     <PlatformTabs :active-site="site" category-mode>
       <p v-if="!platform?.enabled" class="page-msg">该平台尚未接入</p>
+      <section v-else-if="!browseEnabled" class="page-msg">
+        <p>该平台暂不支持分类浏览。</p>
+        <RouterLink :to="`/${site}`">返回首页输入房间号</RouterLink>
+      </section>
       <p v-else-if="loadingCategories" class="page-msg">加载分类...</p>
       <p v-else-if="listError" class="page-msg page-msg--err">{{ listError }}</p>
       <template v-else>
@@ -18,11 +22,12 @@
 
 <script setup>
 import { ref, computed, watch } from "vue";
+import { RouterLink } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import PlatformTabs from "../components/PlatformTabs.vue";
 import CategoryGroupTabs from "../components/CategoryGroupTabs.vue";
 import CategoryGrid from "../components/CategoryGrid.vue";
-import { getPlatform } from "../config/platforms";
+import { getPlatform, supportsBrowse } from "../config/platforms";
 import { useBrowse } from "../composables/useBrowse.js";
 
 const props = defineProps({
@@ -31,6 +36,7 @@ const props = defineProps({
 
 const siteRef = ref(props.site);
 const platform = computed(() => getPlatform(props.site));
+const browseEnabled = computed(() => supportsBrowse(props.site));
 const activeGroupIndex = ref(0);
 
 const {
@@ -50,7 +56,7 @@ watch(
   (value) => {
     siteRef.value = value;
     activeGroupIndex.value = 0;
-    if (getPlatform(value)?.enabled) loadCategories();
+    if (getPlatform(value)?.enabled && supportsBrowse(value)) loadCategories();
   },
   { immediate: true },
 );

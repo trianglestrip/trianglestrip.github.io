@@ -22,7 +22,8 @@ export interface HuyaMeta {
   title: string;
   cover: string;
   available_qualities: Array<{ name: string; rate: number }>;
-  context: {
+  offline?: boolean;
+  context?: {
     web_data: HuyaWebData;
     app_fallback_tier?: HuyaTier;
   };
@@ -42,7 +43,16 @@ async function loadPlayContext(url: string) {
       appData = {};
     }
     if (appData.is_live === false) {
-      throw new Error("房间未开播");
+      return {
+        url,
+        room_id: roomId,
+        anchor_name: appData.anchor_name || String(gameInfo.nick || ""),
+        title: appData.title || String(gameInfo.introduction || gameInfo.roomName || ""),
+        cover: String(gameInfo.screenshot || ""),
+        web_data: webData,
+        qualities: [],
+        offline: true,
+      };
     }
     if (appData.flv_url) {
       const flvUrl = appData.flv_url.replace("http://", "https://");
@@ -77,8 +87,8 @@ async function loadPlayContext(url: string) {
 }
 
 function metaFromContext(ctx: Awaited<ReturnType<typeof loadPlayContext>>): HuyaMeta {
-  const context: HuyaMeta["context"] = { web_data: ctx.web_data };
-  if (ctx.app_fallback_tier) {
+  const context: HuyaMeta["context"] = ctx.web_data ? { web_data: ctx.web_data } : undefined;
+  if (ctx.app_fallback_tier && context) {
     context.app_fallback_tier = ctx.app_fallback_tier;
   }
   return {
@@ -89,6 +99,7 @@ function metaFromContext(ctx: Awaited<ReturnType<typeof loadPlayContext>>): Huya
     title: ctx.title || ctx.anchor_name,
     cover: ctx.cover,
     available_qualities: ctx.qualities,
+    offline: Boolean(ctx.offline),
     context,
   };
 }
@@ -111,11 +122,15 @@ export async function loadMeta(url: string): Promise<HuyaMeta> {
 }
 
 export async function resolveTier(meta: HuyaMeta, qualityName?: string): Promise<HuyaTier> {
-  const fallback = meta.context.app_fallback_tier;
+  const ctx = meta.context;
+  if (!ctx) {
+    throw new Error("房间未开播");
+  }
+  const fallback = ctx.app_fallback_tier;
   if (fallback) {
     return fallback;
   }
-  const webData = meta.context.web_data;
+  const webData = ctx.web_data;
   const quality = pickQualityName(meta.available_qualities, qualityName);
   const tier = tierFromQuality(webData, quality);
   if (!tier) {
@@ -125,11 +140,15 @@ export async function resolveTier(meta: HuyaMeta, qualityName?: string): Promise
 }
 
 export async function resolveAllTiers(meta: HuyaMeta): Promise<HuyaTier[]> {
-  const fallback = meta.context.app_fallback_tier;
+  const ctx = meta.context;
+  if (!ctx) {
+    throw new Error("房间未开播");
+  }
+  const fallback = ctx.app_fallback_tier;
   if (fallback) {
     return [fallback];
   }
-  const webData = meta.context.web_data;
+  const webData = ctx.web_data;
   const streams: HuyaTier[] = [];
   for (const quality of meta.available_qualities) {
     const tier = tierFromQuality(webData, quality);

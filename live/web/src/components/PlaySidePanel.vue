@@ -1,23 +1,25 @@
 <template>
   <aside class="play-side">
     <div class="side-header">
-      <div class="room-info">
-        <LazyImage v-if="cover" :src="cover" image-class="room-cover" eager />
-        <div v-else class="room-cover room-cover--empty">无封面</div>
-        <div class="room-detail">
-          <p class="room-title">{{ title }}</p>
-          <div class="room-meta">
-            <span class="room-anchor">{{ anchor || "—" }}</span>
-            <span class="live-tag" :class="{ on: isLive }">{{ isLive ? "直播中" : "未开播" }}</span>
-          </div>
+      <div class="room-aside">
+        <LazyImage v-if="displayAvatar" :src="displayAvatar" image-class="room-avatar" eager />
+        <div v-else class="room-avatar room-avatar--empty">{{ anchor?.slice(0, 1) || "?" }}</div>
+        <div class="room-aside-meta">
+          <p class="room-anchor">{{ anchor || "—" }}</p>
+          <p v-if="showFansStatForRoom" class="room-fans" :title="fansTitle">
+            <Icon name="user" class="room-stat-icon" />
+            <span>{{ fansText }}</span>
+          </p>
         </div>
         <button
           type="button"
-          class="follow-btn"
-          :title="isFollowed ? '取消关注' : '关注'"
-          @click="$emit('toggle-follow')"
+          class="super-follow-btn"
+          :class="{ 'super-follow-btn--active': isSuperFollowed }"
+          :title="isSuperFollowed ? '取消超级关注' : '超级关注'"
+          @click="$emit('toggle-super-follow')"
         >
-          <Icon name="heart" :filled="isFollowed" />
+          <Icon name="star" class="super-follow-btn__icon" :filled="isSuperFollowed" />
+          <span class="super-follow-btn__text">{{ isSuperFollowed ? "已超关" : "超关" }}</span>
         </button>
       </div>
     </div>
@@ -33,19 +35,41 @@
         <div class="chat-item sys">系统：开始获取直播间信息</div>
         <div v-if="statusText" class="chat-item sys">系统：{{ statusText }}</div>
         <div class="chat-item sys">系统：{{ danmakuStatus }}</div>
-        <div v-for="m in danmakuMessages" v-show="chatSettings.show" :key="m.id" class="chat-item" :style="chatItemStyle">
+        <div
+          v-for="m in chatDanmakuMessages"
+          :key="m.id"
+          class="chat-item"
+          :style="chatItemStyle"
+        >
           <span class="chat-user">{{ m.user }}：</span>
           <span class="chat-text">{{ m.text }}</span>
         </div>
       </div>
     </div>
 
-    <div v-show="tab === 'follow'" class="tab-content scrolly">
+    <div v-show="tab === 'follow'" class="tab-content scrolly follow-tab">
+      <div class="follow-tab-toolbar">
+        <FollowPlatformFilter v-model="followSiteFilter" />
+        <button
+          type="button"
+          class="follow-refresh-btn"
+          title="刷新状态"
+          :disabled="followStatusLoading"
+          @click="refreshFollowStatus"
+        >
+          <Icon
+            name="refresh"
+            :class="{ 'fa-spin': followStatusLoading }"
+          />
+        </button>
+      </div>
+      <FollowBatchImport />
       <FollowRoomList
-        :rooms="sortedFollows"
+        :rooms="filteredFollows"
         :loading="followStatusLoading"
+        :show-delete="false"
+        compact
         @select="$emit('play-room', $event)"
-        @unfollow="$emit('unfollow', $event)"
       />
     </div>
 
@@ -109,46 +133,124 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, nextTick, toRef } from "vue";
+import { ref, computed, watch, nextTick, toRef, onMounted } from "vue";
 import Icon from "./Icon.vue";
 import LazyImage from "./LazyImage.vue";
 import FollowRoomList from "./FollowRoomList.vue";
+import FollowBatchImport from "./FollowBatchImport.vue";
+import FollowPlatformFilter from "./FollowPlatformFilter.vue";
+import { fetchFollowStatus } from "../api/follow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
 
 const props = defineProps({
+  site: { type: String, default: "" },
+  roomId: { type: String, default: "" },
   statusText: { type: String, default: "" },
   payload: { type: Object, default: null },
   danmakuMessages: { type: Array, default: () => [] },
   danmakuStatus: { type: String, default: "" },
   followList: { type: Array, default: () => [] },
-  isFollowed: { type: Boolean, default: false },
+  isSuperFollowed: { type: Boolean, default: false },
 });
 
 const overlaySettings = defineModel("overlaySettings", { type: Object, required: true });
 const chatSettings = defineModel("chatSettings", { type: Object, required: true });
 
-defineEmits(["play-room", "unfollow", "toggle-follow"]);
+defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
 
-const tab = ref("chat");
+const tab = ref("follow");
+const followSiteFilter = ref("");
 const chatListRef = ref(null);
 const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
   toRef(props, "followList"),
+  {
+    getFocusCategory(merged) {
+      const room = merged.find(
+        (item) => item.site === props.site && String(item.id) === String(props.roomId),
+      );
+      return room?.category || "";
+    },
+  },
 );
+
+const filteredFollows = computed(() => {
+  const site = followSiteFilter.value;
+  if (!site) return sortedFollows.value;
+  return sortedFollows.value.filter((room) => room.site === site);
+});
 
 watch(tab, (value) => {
   if (value === "follow") refreshFollowStatus();
 });
 
-const title = computed(() => props.payload?.title || props.payload?.anchor_name || "等待播放");
 const anchor = computed(() => props.payload?.anchor_name || "");
 const cover = computed(() => props.payload?.cover || "");
-const isLive = computed(() => !!(props.payload?.is_live || props.payload?.status));
+
+const roomFans = ref("");
+const roomAvatar = ref("");
+
+const fansText = computed(() => roomFans.value || "—");
+const showFansStatForRoom = computed(() => {
+  if (roomFans.value) return true;
+  const site = String(props.site || props.payload?.platform || "").trim();
+  return site !== "douyu";
+});
+const fansTitle = computed(() => {
+  if (roomFans.value) return `粉丝 ${roomFans.value}`;
+  if (props.site === "douyu") return "斗鱼未提供公开粉丝数";
+  return "粉丝 —";
+});
+const displayAvatar = computed(() => roomAvatar.value || cover.value || "");
+
+async function refreshRoomMeta() {
+  const site = String(
+    props.payload?.platform || props.payload?.site || props.site || "",
+  ).trim();
+  const id = String(props.payload?.room_id || props.roomId || "").trim();
+  if (!site || !id) {
+    roomFans.value = "";
+    roomAvatar.value = "";
+    return;
+  }
+  try {
+    const data = await fetchFollowStatus([{ site, id }]);
+    const snap = data.list?.[0];
+    if (!snap) return;
+    roomFans.value = snap.fans || "";
+    roomAvatar.value = snap.avatar || "";
+  } catch {
+    /* 保留上次 */
+  }
+}
+
+function refreshSide() {
+  refreshRoomMeta();
+  refreshFollowStatus();
+}
+
+defineExpose({ refreshSide });
+
+watch(
+  () => [props.site, props.roomId, props.payload?.platform, props.payload?.site, props.payload?.room_id],
+  () => refreshRoomMeta(),
+  { immediate: true },
+);
+
+onMounted(() => {
+  if (tab.value === "follow") refreshFollowStatus();
+});
 
 const chatItemStyle = computed(() => ({
   fontSize: `${chatSettings.value.fontSize || 14}px`,
   opacity: (Number(chatSettings.value.opacity) || 100) / 100,
   marginBottom: `${chatSettings.value.gap ?? 4}px`,
 }));
+
+/** 非聊天 Tab 时不挂载弹幕列表，避免关注 Tab 下高频 patch 触发 Vue 更新异常 */
+const chatDanmakuMessages = computed(() => {
+  if (tab.value !== "chat" || !chatSettings.value.show) return [];
+  return props.danmakuMessages;
+});
 
 watch(
   () => props.danmakuMessages.length,
@@ -177,91 +279,104 @@ watch(
 }
 
 .side-header {
-  padding: .75rem .65rem;
+  padding: .5rem .55rem;
   border-bottom: 1px solid var(--gray-7);
 }
 
-.room-info {
+.room-aside {
   display: flex;
-  gap: .55rem;
-  align-items: flex-start;
+  align-items: center;
+  gap: .4rem;
+  width: 100%;
 }
 
-.room-cover {
-  width: 48px;
-  height: 48px;
-  border-radius: 6px;
+.room-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   object-fit: cover;
-  background: #000;
+  background: #111;
   flex-shrink: 0;
 }
 
-.room-cover--empty {
+.room-avatar--empty {
   display: grid;
   place-items: center;
-  font-size: .65rem;
+  font-size: .75rem;
   color: var(--muted);
   border: 1px dashed var(--border);
 }
 
-.room-detail {
-  min-width: 0;
+.room-aside-meta {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.room-title {
-  margin: 0 0 .25rem;
-  font-size: .88rem;
-  line-height: 1.35;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.room-meta {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
+  min-width: 0;
 }
 
 .room-anchor {
-  font-size: .8rem;
-  color: var(--muted);
-}
-
-.live-tag {
-  display: inline-block;
-  font-size: .72rem;
-  padding: .1rem .35rem;
-  border-radius: 4px;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  line-height: 1;
-}
-
-.live-tag.on {
-  border-color: rgba(61, 220, 132, .45);
+  margin: 0;
+  font-size: .78rem;
+  font-weight: 600;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   color: var(--live);
 }
 
-.follow-btn {
-  flex-shrink: 0;
-  width: 2rem;
-  height: 2rem;
-  padding: 0;
-  border: none;
-  background: transparent;
+.room-fans {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+  margin: .16rem 0 0;
+  font-size: .7rem;
+  line-height: 1.15;
   color: var(--muted);
-  font-size: 1.15rem;
-  cursor: pointer;
+  font-variant-numeric: tabular-nums;
 }
 
-.follow-btn:hover,
-.follow-btn .ui-icon--filled {
-  color: var(--danger);
+.room-stat-icon {
+  width: .78em;
+  height: .78em;
+  opacity: .7;
+  flex-shrink: 0;
+}
+
+.super-follow-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: .14rem;
+  padding: .22rem .34rem;
+  border: 1px solid rgba(155, 89, 182, 0.35);
+  border-radius: 6px;
+  background: rgba(155, 89, 182, 0.1);
+  color: #b794f6;
+  font-size: .62rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color .12s ease, background-color .12s ease, color .12s ease;
+}
+
+.super-follow-btn:hover {
+  border-color: rgba(155, 89, 182, 0.55);
+  background: rgba(155, 89, 182, 0.18);
+  color: #d6bcfa;
+}
+
+.super-follow-btn--active {
+  border-color: #9b59b6;
+  background: rgba(155, 89, 182, 0.28);
+  color: #e9d5ff;
+}
+
+.super-follow-btn__icon {
+  width: .78rem;
+  height: .78rem;
+}
+
+.super-follow-btn__text {
+  white-space: nowrap;
 }
 
 .tabs {
@@ -304,6 +419,48 @@ watch(
   min-height: 0;
   display: flex;
   flex-direction: column;
+}
+
+.follow-tab .follow-batch {
+  border-bottom: 1px solid var(--gray-7);
+}
+
+.follow-tab-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .35rem;
+  padding: .35rem .45rem 0;
+  flex-shrink: 0;
+}
+
+.follow-refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .28rem .35rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.follow-refresh-btn:hover:not(:disabled) {
+  color: var(--amber);
+  border-color: var(--amber);
+}
+
+.follow-refresh-btn:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.follow-refresh-btn :deep(.ui-icon) {
+  font-size: .88rem;
+  line-height: 1;
 }
 
 .chat-list {

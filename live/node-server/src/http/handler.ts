@@ -7,6 +7,7 @@ import { parseRoomId } from "../resolve/parse-room-id.js";
 import type { ResolveService } from "../resolve/service.js";
 import { buildTimeReport } from "../resolve/timing.js";
 import { fetchFollowSnapshots } from "../follow/status.js";
+import { loadFollowStore, normalizeStoredFollow, syncFollowStore } from "../follow/store.js";
 import { fetchHuyaDanmakuSession } from "../danmaku/huya.js";
 import { applyCorsHeaders } from "../middleware/cors.js";
 import { sendJson } from "./json.js";
@@ -44,6 +45,32 @@ async function readJsonBody(req: IncomingMessage): Promise<Record<string, unknow
 function finalizePayload(payload: Record<string, unknown>): Record<string, unknown> {
   payload.ok = true;
   return payload;
+}
+
+function errorMessage(err: unknown): string {
+  return err instanceof Error ? err.message : String(err);
+}
+
+/** 解析/上游业务错误映射为 HTTP 状态码，避免不可用房间返回 500 */
+function apiErrorStatus(message: string): number {
+  if (message.includes("暂不支持平台") || message.includes("无效") || message.includes("缺少")) {
+    return 400;
+  }
+  if (
+    message.includes("房间未开播") ||
+    message.includes("暂时无法") ||
+    message.includes("获取失败") ||
+    message.includes("未获取到") ||
+    message.includes("not supported")
+  ) {
+    return 404;
+  }
+  return 500;
+}
+
+function sendApiError(res: ServerResponse, config: ServerConfig, err: unknown): void {
+  const message = errorMessage(err);
+  sendJson(res, config, { ok: false, error: message }, apiErrorStatus(message));
 }
 
 export async function handleApi(
@@ -85,13 +112,9 @@ export async function handleApi(
         quality,
         force,
       });
-      if (!payload.is_live && !payload.status) {
-        sendJson(res, ctx.config, { ok: false, error: "房间未开播" }, 404);
-        return true;
-      }
       sendJson(res, ctx.config, finalizePayload(payload));
     } catch (err) {
-      sendJson(res, ctx.config, { ok: false, error: String(err) }, 500);
+      sendApiError(res, ctx.config, err);
     }
     return true;
   }
@@ -121,7 +144,7 @@ export async function handleApi(
       });
       sendJson(res, ctx.config, finalizePayload(payload));
     } catch (err) {
-      sendJson(res, ctx.config, { ok: false, error: String(err) }, 500);
+      sendApiError(res, ctx.config, err);
     }
     return true;
   }
@@ -139,7 +162,7 @@ export async function handleApi(
       ctx.cache.set(cacheKey, categories, { ttl: 300 });
       sendJson(res, ctx.config, { ok: true, site, categories });
     } catch (err) {
-      sendJson(res, ctx.config, { ok: false, error: String(err) }, 500);
+      sendApiError(res, ctx.config, err);
     }
     return true;
   }
@@ -182,7 +205,7 @@ export async function handleApi(
       ctx.cache.set(cacheKey, result, { ttl: 60 });
       sendJson(res, ctx.config, { ok: true, site, ...result });
     } catch (err) {
-      sendJson(res, ctx.config, { ok: false, error: String(err) }, 500);
+      sendApiError(res, ctx.config, err);
     }
     return true;
   }
@@ -204,7 +227,38 @@ export async function handleApi(
       const list = await fetchFollowSnapshots(rooms as Array<{ site?: string; id?: string; roomId?: string }>);
       sendJson(res, ctx.config, { ok: true, list });
     } catch (err) {
-      sendJson(res, ctx.config, { ok: false, error: String(err) }, 500);
+      sendApiError(res, ctx.config, err);
+    }
+    return true;
+  }
+
+  if (pathname === "/api/follows/store" && req.method === "GET") {
+    const payload = loadFollowStore();
+    sendJson(res, ctx.config, { ok: true, ...payload });
+    return true;
+  }
+
+  if (pathname === "/api/follows/store" && req.method === "POST") {
+    let data: Record<string, unknown>;
+    try {
+      data = await readJsonBody(req);
+    } catch {
+      sendJson(res, ctx.config, { ok: false, error: "无效 JSON" }, 400);
+      return true;
+    }
+    const rawFollows = data.follows;
+    if (!Array.isArray(rawFollows)) {
+      sendJson(res, ctx.config, { ok: false, error: "缺少 follows 数组" }, 400);
+      return true;
+    }
+    const incoming = rawFollows
+      .map((item) => normalizeStoredFollow(item as Record<string, unknown>))
+      .filter((item): item is NonNullable<typeof item> => Boolean(item));
+    try {
+      const payload = syncFollowStore(incoming);
+      sendJson(res, ctx.config, { ok: true, ...payload });
+    } catch (err) {
+      sendApiError(res, ctx.config, err);
     }
     return true;
   }
@@ -220,7 +274,7 @@ export async function handleApi(
       const session = await fetchHuyaDanmakuSession(room);
       sendJson(res, ctx.config, { ok: true, ...session });
     } catch (err) {
-      sendJson(res, ctx.config, { ok: false, error: String(err) }, 500);
+      sendApiError(res, ctx.config, err);
     }
     return true;
   }
@@ -239,7 +293,7 @@ export async function handleApi(
       });
       sendJson(res, ctx.config, payload);
     } catch (err) {
-      sendJson(res, ctx.config, { ok: false, error: String(err) }, 500);
+      sendApiError(res, ctx.config, err);
     }
     return true;
   }

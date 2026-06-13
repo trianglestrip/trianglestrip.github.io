@@ -43,8 +43,8 @@ const message = computed(() => meta.value.message);
 }
 
 .placeholder-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  font-size: 2.5rem;
+  line-height: 1;
   justify-self: center;
   color: var(--amber);
 }

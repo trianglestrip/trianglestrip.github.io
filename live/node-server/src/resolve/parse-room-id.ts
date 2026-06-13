@@ -1,6 +1,7 @@
 const ROOM_RES: Record<string, RegExp> = {
   douyu: /(?:douyu\.com\/)?(\d+)$/,
   huya: /(?:huya\.com\/)?(\d+)$/,
+  douyin: /(?:(?:live\.)?douyin\.com\/)?(\d+)$/,
 };
 
 export function parseRoomId(value: string, site = "douyu"): string {

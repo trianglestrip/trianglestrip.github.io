@@ -18,6 +18,7 @@ npm start       # node ../dist/server/live-api.mjs
 ```
 
 - 健康检查：http://127.0.0.1:8765/api/health
+- 支持平台：`douyu`、`huya`、`douyin`（`GET /api/room?site=douyin&room=<web_rid>`）
 - 配置：`config.json`（可选 `config.local.json` 覆盖）
 
 ## 构建

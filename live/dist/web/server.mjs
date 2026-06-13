@@ -14,6 +14,20 @@ const BASE = (() => {
   return trimmed;
 })();
 
+const API_ORIGIN = (() => {
+  if (process.env.LIVE_API) {
+    return String(process.env.LIVE_API).trim().replace(/\/+$/, "");
+  }
+  try {
+    const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, "config.json"), "utf8"));
+    const base = String(cfg?.api?.baseUrl || "").trim().replace(/\/+$/, "");
+    if (base) return base;
+  } catch {
+    /* ignore */
+  }
+  return "http://127.0.0.1:8765";
+})();
+
 const MIME = {
   ".html": "text/html; charset=utf-8",
   ".js": "application/javascript; charset=utf-8",
@@ -44,15 +58,40 @@ function resolveFile(urlPath) {
   }
   if (!fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
     const ext = path.extname(rel).toLowerCase();
-    // 静态资源缺失时返回 404，避免把 index.html 当 JS/CSS 导致白屏
     if (ext && MIME[ext]) return null;
     filePath = path.join(ROOT, "index.html");
   }
   return filePath;
 }
 
+function proxyApi(req, res) {
+  const target = new URL(req.url || "/", API_ORIGIN);
+  const headers = { ...req.headers, host: target.host };
+  delete headers.connection;
+
+  const upstream = http.request(
+    target,
+    { method: req.method, headers },
+    (up) => {
+      res.writeHead(up.statusCode || 502, up.headers);
+      up.pipe(res);
+    },
+  );
+  upstream.on("error", (err) => {
+    res.writeHead(502, { "Content-Type": "text/plain; charset=utf-8" });
+    res.end(`API proxy error: ${err.message}`);
+  });
+  req.pipe(upstream);
+}
+
 http
   .createServer((req, res) => {
+    const apiPath = stripBase(req.url);
+    if (apiPath.startsWith("/api/")) {
+      proxyApi(req, res);
+      return;
+    }
+
     const filePath = resolveFile(req.url);
     if (!filePath) {
       res.writeHead(404);
@@ -73,4 +112,5 @@ http
   .listen(PORT, "127.0.0.1", () => {
     const suffix = BASE ? `${BASE}/` : "/";
     console.log(`http://127.0.0.1:${PORT}${suffix}`);
+    console.log(`API proxy -> ${API_ORIGIN}`);
   });

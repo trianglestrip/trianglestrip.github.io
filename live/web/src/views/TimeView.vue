@@ -85,7 +85,7 @@
                 <td>{{ timingCell(row, "meta_ms") }}</td>
                 <td>{{ timingCell(row, "tier_ms") }}</td>
                 <td>{{ cacheFlags(row) }}</td>
-                <td>{{ row.anchor || "—" }}</td>
+                <td>{{ row.error || row.anchor || "—" }}</td>
               </tr>
             </tbody>
           </table>

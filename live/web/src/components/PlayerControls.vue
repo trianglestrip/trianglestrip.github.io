@@ -7,31 +7,21 @@
         :title="playing ? '暂停' : '播放'"
         @click="$emit('toggle-play')"
       >
-        <Icon :name="playing ? 'pause' : 'play'" />
-      </button>
-
-      <button
-        type="button"
-        class="ctrl-icon"
-        :class="{ 'ctrl-icon--active': isFollowed }"
-        :title="isFollowed ? '取消关注' : '关注'"
-        @click="$emit('toggle-follow')"
-      >
-        <Icon name="heart" :filled="isFollowed" />
+        <Icon :name="playing ? 'pause' : 'play'" class="ctrl-fa" />
       </button>
 
       <button type="button" class="ctrl-icon" title="刷新" @click="$emit('refresh')">
-        <Icon name="refresh" />
+        <Icon name="refresh" class="ctrl-fa" />
       </button>
 
       <button
         type="button"
-        class="ctrl-icon"
+        class="ctrl-icon ctrl-icon--danmaku"
         :class="{ 'ctrl-icon--active': danmakuOn }"
         title="弹幕开关"
         @click="$emit('toggle-danmaku')"
       >
-        <Icon name="chat" />
+        <span class="ctrl-danmaku-mark" aria-hidden="true"><span class="ctrl-danmaku-char">弹</span></span>
       </button>
 
       <div class="controls-spacer"></div>
@@ -44,7 +34,10 @@
             :title="muted || volume === 0 ? '开启声音' : '静音'"
             @click="$emit('toggle-mute')"
           >
-            <Icon :name="muted || volume === 0 ? 'volume-off' : 'volume-up'" />
+            <Icon
+              :name="muted || volume === 0 ? 'volume-off' : 'volume-up'"
+              class="ctrl-fa"
+            />
           </button>
           <input
             class="ctrl-volume__slider"
@@ -105,7 +98,7 @@
         </div>
 
         <button type="button" class="ctrl-icon ctrl-icon--pip" title="画中画" @click="$emit('toggle-pip')">
-          <Icon :name="pictureInPicture ? 'pip-exit' : 'pip'" />
+          <Icon :name="pictureInPicture ? 'pip-exit' : 'pip'" class="ctrl-fa" />
         </button>
       </div>
 
@@ -116,11 +109,11 @@
         title="网页全屏"
         @click="$emit('webscreen')"
       >
-        <Icon name="webscreen" />
+        <Icon name="webscreen" class="ctrl-fa" />
       </button>
 
       <button type="button" class="ctrl-icon" :title="fullscreen ? '退出全屏' : '全屏'" @click="$emit('fullscreen')">
-        <Icon :name="fullscreen ? 'fullscreen-exit' : 'fullscreen'" />
+        <Icon :name="fullscreen ? 'fullscreen-exit' : 'fullscreen'" class="ctrl-fa" />
       </button>
     </div>
 
@@ -136,7 +129,6 @@ const props = defineProps({
   show: { type: Boolean, default: true },
   overlay: { type: Boolean, default: false },
   playing: { type: Boolean, default: false },
-  isFollowed: { type: Boolean, default: false },
   danmakuOn: { type: Boolean, default: true },
   webscreen: { type: Boolean, default: false },
   fullscreen: { type: Boolean, default: false },
@@ -156,7 +148,6 @@ const emit = defineEmits([
   "fullscreen",
   "quality-change",
   "line-change",
-  "toggle-follow",
   "refresh",
   "toggle-danmaku",
   "toggle-pip",
@@ -293,6 +284,46 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
 .ctrl-icon--pip {
   margin-left: .35rem;
   font-size: 1.2rem;
+}
+
+.ctrl-icon :deep(.ui-icon),
+.ctrl-fa,
+.ctrl-danmaku-mark {
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.ctrl-icon :deep(.ui-icon) {
+  display: block;
+}
+
+.ctrl-fa {
+  font-size: 1em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.ctrl-danmaku-mark {
+  font-size: inherit;
+  font-weight: 700;
+  border: 2px solid currentColor;
+  border-radius: 3px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.ctrl-danmaku-char {
+  font-size: .64em;
+  line-height: 1;
+}
+
+.ctrl-icon--danmaku:not(.ctrl-icon--active) .ctrl-danmaku-mark {
+  opacity: .72;
 }
 
 .ctrl-dropdown {

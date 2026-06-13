@@ -79,7 +79,7 @@ function writeDistConfig() {
         const cfg = {
           appTitle: "Lemon live",
           api: {
-            baseUrl: `http://127.0.0.1:${apiPort}`,
+            baseUrl: "",
             devBaseUrl: "",
           },
         };
@@ -99,7 +99,7 @@ export default defineConfig({
     emptyOutDir: false,
   },
   server: {
-    port: 5173,
+    port: 8080,
     host: "127.0.0.1",
     proxy: {
       "/api": {
