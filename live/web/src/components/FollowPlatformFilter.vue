@@ -40,7 +40,7 @@ const filterPlatforms = PLATFORMS.filter((p) => p.enabled && p.id !== "bilibili"
 .follow-platform-filter {
   display: flex;
   align-items: center;
-  gap: .32rem;
+  gap: .24rem;
   flex: 1;
   min-width: 0;
   flex-wrap: wrap;
@@ -48,14 +48,15 @@ const filterPlatforms = PLATFORMS.filter((p) => p.enabled && p.id !== "bilibili"
 
 .follow-platform-filter__item {
   flex-shrink: 0;
-  padding: .28rem .52rem;
+  padding: .16rem .32rem;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 3px;
   background: rgba(255, 255, 255, 0.06);
   color: var(--muted);
-  font-size: .82rem;
-  font-weight: 600;
+  font-size: .62rem;
+  font-weight: 700;
   line-height: 1.2;
+  letter-spacing: .02em;
   cursor: pointer;
   transition: border-color .12s ease, background-color .12s ease, color .12s ease;
 }

@@ -5,12 +5,21 @@
       :key="roomKey(room)"
       type="button"
       class="room-item"
-      @click="$emit('select', room)"
+      :class="{ 'room-item--selectable': selectMode, 'room-item--selected': isSelected(room) }"
+      @click="onItemClick(room)"
     >
       <div class="room-item-info">
         <div class="room-cover-wrap">
           <LazyImage v-if="room.cover" :src="room.cover" image-class="room-cover" />
           <div v-else class="room-cover room-cover--empty">无封面</div>
+          <span
+            v-if="selectMode"
+            class="room-check"
+            :class="{ 'room-check--on': isSelected(room) }"
+            aria-hidden="true"
+          />
+          <span v-if="room.liveState === 'live'" class="room-badge room-badge--live">LIVE</span>
+          <span v-else-if="room.liveState === 'replay'" class="room-badge room-badge--replay">录播</span>
           <span v-if="room.category" class="room-badge room-badge--cat">{{ room.category }}</span>
           <span v-if="room.online" class="room-badge room-badge--online">{{ room.online }}</span>
           <div v-if="room.status === false" class="room-offline">未开播</div>
@@ -26,16 +35,36 @@
 
 <script setup>
 import { roomKey as keyOf } from "../api/browse.js";
+import { followKey } from "../utils/prefStore.js";
 import LazyImage from "./LazyImage.vue";
 
-defineProps({
+const props = defineProps({
   rooms: { type: Array, default: () => [] },
+  selectMode: { type: Boolean, default: false },
+  selectedKeys: { type: Array, default: () => [] },
 });
 
-defineEmits(["select"]);
+const emit = defineEmits(["select", "toggle-select"]);
 
 function roomKey(room) {
   return keyOf(room);
+}
+
+function selectionKey(room) {
+  if (room.site && room.id) return followKey(room.site, room.id);
+  return String(room.roomId ?? room.id ?? "");
+}
+
+function isSelected(room) {
+  return props.selectedKeys.includes(selectionKey(room));
+}
+
+function onItemClick(room) {
+  if (props.selectMode) {
+    emit("toggle-select", room);
+    return;
+  }
+  emit("select", room);
 }
 </script>
 
@@ -75,6 +104,15 @@ function roomKey(room) {
   cursor: pointer;
 }
 
+.room-item--selectable .room-item-info {
+  cursor: pointer;
+}
+
+.room-item--selected .room-item-info {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 1px rgba(243, 208, 78, .35);
+}
+
 .room-item-info {
   position: relative;
   overflow: hidden;
@@ -111,12 +149,49 @@ function roomKey(room) {
   color: var(--muted);
 }
 
+.room-check {
+  position: absolute;
+  top: .35rem;
+  left: .35rem;
+  z-index: 3;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 3px;
+  border: 2px solid rgba(255, 255, 255, .75);
+  background: rgba(0, 0, 0, .45);
+}
+
+.room-check--on {
+  background: var(--amber);
+  border-color: var(--amber);
+  box-shadow: inset 0 0 0 2px #1a1a1a;
+}
+
 .room-badge {
   position: absolute;
   padding: .15rem .45rem;
   font-size: .72rem;
   line-height: 1.2;
   background: var(--dark-6);
+}
+
+.room-badge--live {
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 8px;
+  color: #fff;
+  background: #e53935;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.room-badge--replay {
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 8px;
+  color: #fff;
+  background: #7b5ea7;
+  font-weight: 600;
 }
 
 .room-badge--online {

@@ -40,6 +40,7 @@ const FA_ICONS = {
   "volume-off": "fa-volume-xmark",
   timer: "fa-clock",
   eye: "fa-eye",
+  "eye-off": "fa-eye-slash",
   delete: "fa-trash-can",
   star: "fa-star",
   film: "fa-film",

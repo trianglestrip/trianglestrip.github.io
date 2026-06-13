@@ -3,10 +3,11 @@ import { fetchFollowStatus } from "../api/follow.js";
 import { followKey } from "../utils/prefStore.js";
 import { mergeFollowRoom, sortFollowRooms } from "../utils/followDisplay.js";
 
-export function useFollowStatus(followsRef, { active = true, getFocusCategory } = {}) {
+export function useFollowStatus(followsRef, { active = true, getFocusCategory, pollInterval = 0 } = {}) {
   const statusMap = ref({});
   const loading = ref(false);
   let refreshTimer = 0;
+  let pollTimer = 0;
 
   function applySnapshots(list = []) {
     const next = { ...statusMap.value };
@@ -86,7 +87,14 @@ export function useFollowStatus(followsRef, { active = true, getFocusCategory } 
 
   onBeforeUnmount(() => {
     clearTimeout(refreshTimer);
+    if (pollTimer) clearInterval(pollTimer);
   });
+
+  if (pollInterval > 0) {
+    pollTimer = setInterval(() => {
+      if (active) refresh();
+    }, pollInterval);
+  }
 
   return { sortedFollows, statusMap, loading, refresh };
 }

@@ -107,13 +107,5 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
-    headers: {
-      "Permissions-Policy": "unload=(self)",
-    },
-  },
-  preview: {
-    headers: {
-      "Permissions-Policy": "unload=(self)",
-    },
   },
 });

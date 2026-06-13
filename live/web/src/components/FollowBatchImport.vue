@@ -1,7 +1,12 @@
 <template>
-  <div class="follow-batch">
-    <button type="button" class="follow-batch__toggle" @click="expanded = !expanded">
-      {{ expanded ? "收起批量加入" : "批量加入关注" }}
+  <div class="follow-batch" :class="{ 'follow-batch--inline': inline }">
+    <button
+      type="button"
+      class="follow-batch__toggle"
+      :class="{ 'btn btn-sm': inline }"
+      @click="expanded = !expanded"
+    >
+      {{ expanded ? "收起" : "批量加入" }}
     </button>
     <div v-if="expanded" class="follow-batch__panel">
       <div class="platform-radio-group" role="radiogroup" aria-label="选择平台">
@@ -43,6 +48,10 @@ import { PLATFORMS } from "../config/platforms.js";
 import { useFollow } from "../composables/useFollow.js";
 import { parseFollowImport } from "../utils/parseFollowImport.js";
 
+defineProps({
+  inline: { type: Boolean, default: false },
+});
+
 const { importFollows } = useFollow();
 
 const expanded = ref(false);
@@ -73,6 +82,25 @@ function submit() {
   flex-shrink: 0;
   padding: .5rem .55rem .45rem;
   border-bottom: 1px solid var(--gray-7);
+}
+
+.follow-batch--inline {
+  display: contents;
+}
+
+.follow-batch--inline .follow-batch__toggle {
+  width: auto;
+  padding: .38rem .65rem;
+  border-color: var(--border);
+  background: transparent;
+  white-space: nowrap;
+}
+
+.follow-batch--inline .follow-batch__panel {
+  flex-basis: 100%;
+  width: 100%;
+  margin-top: 0;
+  padding-bottom: .15rem;
 }
 
 .follow-batch__toggle {

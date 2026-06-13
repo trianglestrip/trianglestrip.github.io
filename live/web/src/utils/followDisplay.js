@@ -54,3 +54,20 @@ export function mergeFollowRoom(room, snapshot = {}) {
     online: snapshot.online || room.online || "",
   };
 }
+
+/** 关注页封面网格（与 browse RoomGrid 字段对齐） */
+export function followRoomToGrid(room) {
+  const offline = room.state === "offline";
+  return {
+    roomId: `${room.site}:${room.id}`,
+    site: room.site,
+    id: room.id,
+    title: room.title || `房间 ${room.id}`,
+    nickname: room.anchor || room.id,
+    cover: room.cover || "",
+    category: room.category || "",
+    online: offline ? "" : room.online || "",
+    status: !offline,
+    liveState: room.state || "offline",
+  };
+}

@@ -128,6 +128,8 @@ let playRaf = 0;
 let unmuteGestureBound = false;
 const ENTRY_UNMUTE_EVENTS = ["pointerdown", "keydown"];
 let playRetrying = false;
+/** 侧栏点切房：保留「已开声」意图，避免 loadRoom 异步后丢失 session 解锁 */
+let roomSwitchKeepSound = false;
 
 const platform = computed(() => getPlatform(props.site));
 
@@ -246,7 +248,11 @@ function buildPlayCallbacks(url, { onReadyExtra } = {}) {
     },
     onReady: () => {
       if (!playing.value) startPlay();
-      if (isSoundUnlocked() && muted.value) unmutePlayback();
+      if (isSoundUnlocked() && muted.value) {
+        void unmutePlayback({ soft: true }).then((ok) => {
+          if (ok) markSoundUnlocked();
+        });
+      }
       const suffix = muted.value ? "（静音）" : "";
       setStatus(`${buildMetaText(url)}\n播放中${suffix}`, "ok");
       document.title = displayTitle.value;
@@ -278,16 +284,22 @@ function markSoundUnlocked() {
 
 /** destroy 前记下用户已开声，避免切房后丢失解锁状态 */
 function captureSoundUnlock() {
-  if (isSoundUnlocked()) return;
   const video = resolveVideoEl(playerPanelRef.value?.videoEl);
   if (!streamActive.value || !video) return;
-  if (!video.muted) {
-    unlockSound();
-  }
+  if (!video.muted) unlockSound();
+}
+
+function shouldSkipEntryUnmute(event) {
+  const target = event.target;
+  if (!(target instanceof Element)) return false;
+  return !!target.closest(
+    ".follow-room-list, .follow-tab, .follow-batch, .follow-tab-toolbar, .play-side",
+  );
 }
 
 /** 首次静音进房：pointerdown / keydown 才算有效手势（mousemove 无法解除自动播放静音） */
-async function onEntryUnmuteGesture(event) {
+function onEntryUnmuteGesture(event) {
+  if (shouldSkipEntryUnmute(event)) return;
   if (event.type === "keydown") {
     const key = event.key;
     if (key === "Shift" || key === "Control" || key === "Alt" || key === "Meta" || key === "Tab") {
@@ -295,8 +307,9 @@ async function onEntryUnmuteGesture(event) {
     }
   }
   if (muted.value) {
-    const ok = await unmutePlayback();
-    if (ok) markSoundUnlocked();
+    void unmutePlayback().then((ok) => {
+      if (ok) markSoundUnlocked();
+    });
     return;
   }
   markSoundUnlocked();
@@ -466,7 +479,14 @@ function onUnfollow(room) {
 }
 
 function onPlayFollow(room) {
+  captureSoundUnlock();
+  const keepSound = isSoundUnlocked() || (!muted.value && streamActive.value);
+  if (keepSound) {
+    unlockSound();
+    roomSwitchKeepSound = true;
+  }
   if (room.site === props.site && room.id === props.id) {
+    roomSwitchKeepSound = false;
     onRefresh();
     sidePanelRef.value?.refreshSide?.();
     return;
@@ -476,6 +496,7 @@ function onPlayFollow(room) {
 
 async function onRefresh() {
   if (!payload.value || loading.value) return;
+  captureSoundUnlock();
   destroy();
   disconnectDm();
   danmakuReady.value = false;
@@ -489,7 +510,9 @@ async function onRefresh() {
 }
 
 async function startPlayback({ startMuted, freshUrl = false } = {}) {
-  const useMuted = startMuted ?? !isSoundUnlocked();
+  const wantSound = roomSwitchKeepSound || isSoundUnlocked();
+  roomSwitchKeepSound = false;
+  const useMuted = startMuted ?? !wantSound;
   const url = freshUrl
     ? await prefetchPlayUrl({ force: true })
     : playUrl.value || (await prefetchPlayUrl());
@@ -506,7 +529,12 @@ async function startPlayback({ startMuted, freshUrl = false } = {}) {
     startMuted: useMuted,
   });
   await startPlay();
-  if (isSoundUnlocked() && muted.value) await unmutePlayback();
+  if (wantSound && muted.value) {
+    const ok = await unmutePlayback({ soft: true });
+    if (ok) markSoundUnlocked();
+    else bindEntryUnmuteGesture();
+    return;
+  }
   if (useMuted) bindEntryUnmuteGesture();
   else markSoundUnlocked();
 }

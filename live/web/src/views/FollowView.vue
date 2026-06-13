@@ -8,15 +8,22 @@
           <button
             type="button"
             class="btn btn-sm btn-refresh"
-            title="刷新状态"
+            title="刷新封面与状态"
             :disabled="followStatusLoading"
             @click="refreshFollowStatus"
           >
-            <Icon
-              name="refresh"
-              :class="{ 'fa-spin': followStatusLoading }"
-            />
+            <Icon name="refresh" :class="{ 'fa-spin': followStatusLoading }" />
           </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-preview"
+            :class="{ 'btn-preview--active': previewCover }"
+            title="封面预览：开=截图网格，关=关注列表"
+            @click="togglePreviewCover"
+          >
+            <Icon :name="previewCover ? 'eye' : 'eye-off'" />
+          </button>
+          <FollowBatchImport inline />
           <template v-if="batchMode">
             <button type="button" class="btn btn-sm" @click="exitBatchMode">取消</button>
             <button
@@ -32,13 +39,20 @@
         </div>
       </header>
 
-      <FollowBatchImport class="follow-batch-wrap" />
-
       <div class="follow-list scrolly">
+        <p v-if="!filteredFollows.length" class="page-msg">暂无关注，可使用批量加入</p>
+        <FollowPreviewGrid
+          v-else-if="previewCover"
+          :rooms="filteredFollows"
+          :select-mode="batchMode"
+          :selected-keys="selectedKeys"
+          @select="goPlay"
+          @toggle-select="toggleSelect"
+        />
         <FollowRoomList
+          v-else
           :rooms="filteredFollows"
           :loading="followStatusLoading"
-          layout="grid"
           :show-delete="false"
           :select-mode="batchMode"
           :selected-keys="selectedKeys"
@@ -46,6 +60,9 @@
           @select="goPlay"
           @toggle-select="toggleSelect"
         />
+        <p v-if="filteredFollows.length && followStatusLoading" class="follow-sync-hint">
+          {{ previewCover ? "更新封面中…" : "更新状态中…" }}
+        </p>
       </div>
     </div>
   </AppLayout>
@@ -57,15 +74,22 @@ import FollowPlatformFilter from "../components/FollowPlatformFilter.vue";
 import { useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import FollowBatchImport from "../components/FollowBatchImport.vue";
+import FollowPreviewGrid from "../components/FollowPreviewGrid.vue";
 import FollowRoomList from "../components/FollowRoomList.vue";
 import Icon from "../components/Icon.vue";
 import { useFollow } from "../composables/useFollow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
-import { followKey } from "../utils/prefStore.js";
+import { followKey, loadGlobalPref, saveGlobalPref } from "../utils/prefStore.js";
 
 const router = useRouter();
 const { follows, unfollowMany } = useFollow();
-const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(follows);
+const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
+  follows,
+  { pollInterval: 90000 },
+);
+
+const followUiPref = loadGlobalPref("follow_ui", { previewCover: true });
+const previewCover = ref(followUiPref.previewCover !== false);
 
 const followSiteFilter = ref("");
 const filteredFollows = computed(() => {
@@ -74,11 +98,19 @@ const filteredFollows = computed(() => {
   return sortedFollows.value.filter((room) => room.site === site);
 });
 
+function togglePreviewCover() {
+  previewCover.value = !previewCover.value;
+  saveGlobalPref("follow_ui", { previewCover: previewCover.value });
+}
+
 const batchMode = ref(false);
 const selectedKeys = ref([]);
 
 function goPlay(room) {
-  router.push({ name: "play", params: { site: room.site, id: room.id } });
+  const site = room.site || followSiteFilter.value;
+  const id = room.id || String(room.roomId || "").split(":").pop();
+  if (!site || !id) return;
+  router.push({ name: "play", params: { site, id } });
 }
 
 function enterBatchMode() {
@@ -92,7 +124,10 @@ function exitBatchMode() {
 }
 
 function toggleSelect(room) {
-  const key = followKey(room.site, room.id);
+  const site = room.site;
+  const id = room.id;
+  if (!site || !id) return;
+  const key = followKey(site, id);
   const idx = selectedKeys.value.indexOf(key);
   if (idx >= 0) {
     selectedKeys.value.splice(idx, 1);
@@ -180,18 +215,43 @@ function confirmBatchDelete() {
   line-height: 1;
 }
 
-.follow-batch-wrap {
-  border-bottom: none;
-  padding: 0 1rem .5rem;
+.btn-preview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .38rem .5rem;
+  line-height: 1;
+  color: var(--muted);
 }
 
-.follow-batch-wrap :deep(.follow-batch) {
-  padding: 0;
-  border-bottom: none;
+.btn-preview :deep(.ui-icon) {
+  font-size: .88rem;
+  line-height: 1;
+}
+
+.btn-preview--active {
+  color: var(--amber);
+  border-color: rgba(243, 208, 78, 0.45);
+  background: rgba(243, 208, 78, 0.1);
 }
 
 .follow-list {
   flex: 1;
   min-height: 0;
+}
+
+.page-msg {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.follow-sync-hint {
+  margin: 0;
+  padding: .35rem 1rem .75rem;
+  text-align: center;
+  font-size: .78rem;
+  color: var(--muted);
 }
 </style>

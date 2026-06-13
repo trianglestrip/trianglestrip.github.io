@@ -142,8 +142,6 @@ class Handler(SimpleHTTPRequestHandler):
 
     def _web_headers(self) -> None:
         self._cors()
-        # flv.js 等库可能注册 unload 监听；允许 self 可避免控制台 Permissions-Policy 警告
-        self.send_header("Permissions-Policy", "unload=(self)")
         if self.web_root is not None:
             self.send_header("X-Live-Web-Root", str(self.web_root))
 

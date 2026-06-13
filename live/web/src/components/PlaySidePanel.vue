@@ -50,21 +50,38 @@
     <div v-show="tab === 'follow'" class="tab-content scrolly follow-tab">
       <div class="follow-tab-toolbar">
         <FollowPlatformFilter v-model="followSiteFilter" />
-        <button
-          type="button"
-          class="follow-refresh-btn"
-          title="刷新状态"
-          :disabled="followStatusLoading"
-          @click="refreshFollowStatus"
-        >
-          <Icon
-            name="refresh"
-            :class="{ 'fa-spin': followStatusLoading }"
-          />
-        </button>
+        <div class="follow-tab-toolbar__actions">
+          <button
+            type="button"
+            class="follow-refresh-btn"
+            title="刷新状态"
+            :disabled="followStatusLoading"
+            @click="refreshFollowStatus"
+          >
+            <Icon
+              name="refresh"
+              :class="{ 'fa-spin': followStatusLoading }"
+            />
+          </button>
+          <button
+            type="button"
+            class="follow-refresh-btn follow-preview-btn"
+            :class="{ 'follow-preview-btn--active': previewCover }"
+            title="封面预览：开=截图网格，关=关注列表"
+            @click="togglePreviewCover"
+          >
+            <Icon :name="previewCover ? 'eye' : 'eye-off'" />
+          </button>
+        </div>
       </div>
-      <FollowBatchImport />
+      <FollowPreviewGrid
+        v-if="previewCover"
+        compact
+        :rooms="filteredFollows"
+        @select="$emit('play-room', $event)"
+      />
       <FollowRoomList
+        v-else
         :rooms="filteredFollows"
         :loading="followStatusLoading"
         :show-delete="false"
@@ -137,10 +154,11 @@ import { ref, computed, watch, nextTick, toRef, onMounted } from "vue";
 import Icon from "./Icon.vue";
 import LazyImage from "./LazyImage.vue";
 import FollowRoomList from "./FollowRoomList.vue";
-import FollowBatchImport from "./FollowBatchImport.vue";
+import FollowPreviewGrid from "./FollowPreviewGrid.vue";
 import FollowPlatformFilter from "./FollowPlatformFilter.vue";
 import { fetchFollowStatus } from "../api/follow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
+import { loadGlobalPref, saveGlobalPref } from "../utils/prefStore.js";
 
 const props = defineProps({
   site: { type: String, default: "" },
@@ -160,6 +178,8 @@ defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
 
 const tab = ref("follow");
 const followSiteFilter = ref("");
+const followUiPref = loadGlobalPref("follow_ui", { previewCover: true });
+const previewCover = ref(followUiPref.previewCover !== false);
 const chatListRef = ref(null);
 const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
   toRef(props, "followList"),
@@ -178,6 +198,11 @@ const filteredFollows = computed(() => {
   if (!site) return sortedFollows.value;
   return sortedFollows.value.filter((room) => room.site === site);
 });
+
+function togglePreviewCover() {
+  previewCover.value = !previewCover.value;
+  saveGlobalPref("follow_ui", { previewCover: previewCover.value });
+}
 
 watch(tab, (value) => {
   if (value === "follow") refreshFollowStatus();
@@ -421,16 +446,19 @@ watch(
   flex-direction: column;
 }
 
-.follow-tab .follow-batch {
-  border-bottom: 1px solid var(--gray-7);
-}
-
 .follow-tab-toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: .35rem;
   padding: .35rem .45rem 0;
+  flex-shrink: 0;
+}
+
+.follow-tab-toolbar__actions {
+  display: flex;
+  align-items: center;
+  gap: .28rem;
   flex-shrink: 0;
 }
 
@@ -461,6 +489,12 @@ watch(
 .follow-refresh-btn :deep(.ui-icon) {
   font-size: .88rem;
   line-height: 1;
+}
+
+.follow-preview-btn--active {
+  color: var(--amber);
+  border-color: rgba(243, 208, 78, 0.45);
+  background: rgba(243, 208, 78, 0.1);
 }
 
 .chat-list {

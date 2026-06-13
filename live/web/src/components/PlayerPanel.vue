@@ -1,7 +1,7 @@
 <template>
   <section class="player-panel">
     <div class="player-frame">
-      <video ref="videoEl" playsinline muted autoplay></video>
+      <video ref="videoEl" playsinline autoplay></video>
       <div v-show="!streamActive" class="player-placeholder">
         <span class="placeholder-icon"><Icon name="play-circle" /></span>
         <p>{{ placeholder }}</p>

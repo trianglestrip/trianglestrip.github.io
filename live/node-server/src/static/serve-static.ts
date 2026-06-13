@@ -67,9 +67,7 @@ export function sendApiOnly(
 }
 
 export function webHeaders(webRoot: string | null): Record<string, string> {
-  const headers: Record<string, string> = {
-    "Permissions-Policy": "unload=(self)",
-  };
+  const headers: Record<string, string> = {};
   if (webRoot) {
     headers["X-Live-Web-Root"] = webRoot;
   }

@@ -449,7 +449,7 @@ export function usePlayer(siteRef) {
   }
 
   /** 在用户操作时直接取消静音，勿重建播放器（重建会打断 CDN 连接导致断流） */
-  async function unmutePlayback() {
+  async function unmutePlayback({ soft = false } = {}) {
     if (!videoEl) return false;
     videoEl.muted = false;
     const v = cachedVolume() > 0 ? cachedVolume() : 1;
@@ -457,9 +457,11 @@ export function usePlayer(siteRef) {
     syncVolume();
     const ok = await startPlay();
     if (!ok || videoEl.paused) {
-      videoEl.muted = true;
-      syncVolume();
-      await startPlay();
+      if (!soft) {
+        videoEl.muted = true;
+        syncVolume();
+        await startPlay();
+      }
       return false;
     }
     return true;
