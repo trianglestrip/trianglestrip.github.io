@@ -102,7 +102,19 @@ export function useFollow() {
   function importFollows(items) {
     const incoming = normalizeFollows(items);
     const beforeKeys = new Set(follows.value.map((r) => followKey(r.site, r.id)));
-    const merged = mergeFollows(follows.value, incoming);
+    const map = new Map(follows.value.map((r) => [followKey(r.site, r.id), r]));
+    for (const item of incoming) {
+      const key = followKey(item.site, item.id);
+      const prev = map.get(key);
+      if (!prev) {
+        map.set(key, item);
+        continue;
+      }
+      if (item.super && !prev.super) {
+        map.set(key, { ...prev, super: true });
+      }
+    }
+    const merged = [...map.values()];
     const added = merged.filter((r) => !beforeKeys.has(followKey(r.site, r.id))).length;
     follows.value = merged;
     return added;

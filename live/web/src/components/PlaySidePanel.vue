@@ -137,6 +137,35 @@
             <span class="setting-value">{{ chatSettings.gap }}</span>
           </label>
         </section>
+        <section class="settings-group">
+          <h4 class="settings-group__title">关注列表</h4>
+          <p class="settings-hint">导出「平台+房间号」到剪贴板，可在其他设备粘贴导入并合并。</p>
+          <div class="settings-follow-actions">
+            <button type="button" class="settings-action-btn" @click="onExportFollows">
+              导出关注
+            </button>
+            <button type="button" class="settings-action-btn" @click="onImportFollows">
+              导入关注
+            </button>
+          </div>
+          <label v-if="importFollowOpen" class="settings-import">
+            <span class="settings-hint">粘贴关注数据后点确认</span>
+            <textarea
+              v-model="importFollowText"
+              class="settings-import__input scrolly"
+              rows="4"
+              placeholder='[["douyu","252140"],["huya","660000"]]'
+            />
+            <div class="settings-follow-actions">
+              <button type="button" class="settings-action-btn settings-action-btn--primary" @click="onConfirmImportFollows">
+                确认导入
+              </button>
+              <button type="button" class="settings-action-btn" @click="importFollowOpen = false">
+                取消
+              </button>
+            </div>
+          </label>
+        </section>
       </div>
     </div>
   </aside>
@@ -153,10 +182,12 @@ import { fetchFollowStatus } from "../api/follow.js";
 import { fetchRelatedRecommendRooms, fetchMixedRecommendRooms, roomKey } from "../api/browse.js";
 import { useFollow } from "../composables/useFollow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
+import { useToast } from "../composables/useToast.js";
 import { loadGlobalPref, saveGlobalPref } from "../utils/prefStore.js";
 import { briefDanmakuStatus, briefPlayStatus } from "../utils/chatStatus.js";
 import { displayCategoryName } from "../utils/categoryDisplay.js";
 import { formatLastLiveAt } from "../utils/followDisplay.js";
+import { serializeFollowsMinimal, parseFollowsMinimal } from "../utils/followExport.js";
 
 const props = defineProps({
   site: { type: String, default: "" },
@@ -175,7 +206,11 @@ const chatSettings = defineModel("chatSettings", { type: Object, required: true 
 
 const emit = defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
 
-const { isFollowed, toggleFollow } = useFollow();
+const { follows, isFollowed, toggleFollow, importFollows } = useFollow();
+const { notify } = useToast();
+
+const importFollowOpen = ref(false);
+const importFollowText = ref("");
 
 const tab = ref("follow");
 const followTabActive = computed(() => tab.value === "follow");
@@ -321,6 +356,57 @@ async function loadRecommend() {
 
 function onRecommendSelect(room) {
   emit("play-room", room);
+}
+
+async function onExportFollows() {
+  const list = follows.value || [];
+  if (!list.length) {
+    notify({ kind: "info", title: "暂无关注可导出" });
+    return;
+  }
+  const text = serializeFollowsMinimal(list);
+  try {
+    await navigator.clipboard.writeText(text);
+    notify({ kind: "live", title: `已复制 ${list.length} 个关注到剪贴板` });
+  } catch {
+    notify({ kind: "offline", title: "复制失败，请检查浏览器剪贴板权限" });
+  }
+}
+
+async function onImportFollows() {
+  importFollowText.value = "";
+  try {
+    const clip = await navigator.clipboard.readText();
+    if (clip?.trim()) {
+      const applied = applyImportedFollows(clip);
+      if (applied !== null) return;
+    }
+  } catch {
+    /* 无权限或未授权时展开手动粘贴 */
+  }
+  importFollowOpen.value = true;
+}
+
+function applyImportedFollows(text) {
+  const items = parseFollowsMinimal(text);
+  if (!items.length) {
+    notify({ kind: "offline", title: "未识别到有效关注数据" });
+    return null;
+  }
+  const added = importFollows(items);
+  importFollowOpen.value = false;
+  importFollowText.value = "";
+  refreshFollowStatus();
+  const total = follows.value.length;
+  notify({
+    kind: "live",
+    title: added > 0 ? `已导入 ${added} 个新关注（共 ${total} 个）` : `已合并，无新增（共 ${total} 个）`,
+  });
+  return added;
+}
+
+function onConfirmImportFollows() {
+  applyImportedFollows(importFollowText.value);
 }
 
 watch(tab, (value) => {
@@ -821,8 +907,9 @@ watch(tab, (value) => {
 
 .settings-groups {
   display: flex;
+  flex-direction: column;
   align-items: stretch;
-  gap: .25rem;
+  gap: .38rem;
   width: 100%;
   max-width: 100%;
   min-width: 0;
@@ -945,6 +1032,63 @@ watch(tab, (value) => {
   border: none;
   border-radius: 999px;
   background: rgba(255, 255, 255, .12);
+}
+
+.settings-hint {
+  margin: 0;
+  font-size: .74rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.settings-follow-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+}
+
+.settings-action-btn {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: .32rem .5rem;
+  font-size: .78rem;
+  border: 1px solid var(--gray-7);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, .04);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.settings-action-btn:hover {
+  border-color: rgba(243, 208, 78, .35);
+  background: rgba(243, 208, 78, .08);
+}
+
+.settings-action-btn--primary {
+  border-color: rgba(243, 208, 78, .45);
+  color: var(--amber);
+}
+
+.settings-import {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.settings-import__input {
+  width: 100%;
+  min-height: 4.5rem;
+  max-height: 8rem;
+  padding: .35rem .4rem;
+  font-size: .74rem;
+  font-family: ui-monospace, Consolas, monospace;
+  line-height: 1.35;
+  border: 1px solid var(--gray-7);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, .22);
+  color: var(--text);
+  resize: vertical;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
