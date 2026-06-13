@@ -7,9 +7,9 @@
     "node": ">=20.18.1"
   },
   "scripts": {
-    "build": "tsc && node scripts/bundle.mjs",
+    "build": "tsc && node scripts/bundle.mjs && node scripts/publish-dist.mjs",
     "dev": "tsx src/index.ts",
-    "start": "node live-api.mjs",
+    "start": "node ../dist/server/live-api.mjs",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

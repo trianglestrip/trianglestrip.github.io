@@ -1,6 +1,6 @@
 # 直播解析 API（live/server）
 
-> **已弃用**：默认 API 已切换到 [`live/node-server`](../node-server/README.md)。`start.ps1` 会转发到 Node 版。本目录仅作过渡保留与对比基准。
+> **已弃用**：默认 API 已切换到 [`live/node-server`](../node-server/README.md)。请使用 `node-server\start.bat`。本目录仅作过渡保留与对比基准。
 
 纯 API 服务，与 `live/web` 前端**完全解耦**。配置见 `config.json`（本地覆盖用 `config.local.json`，已 gitignore）。
 
@@ -33,7 +33,8 @@ streamget install-node
 ## 启动
 
 ```powershell
-.\start.ps1
+cd ..\node-server
+.\start.bat
 ```
 
 浏览器或前端配置中的 API 地址：`http://127.0.0.1:8765`

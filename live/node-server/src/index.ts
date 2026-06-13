@@ -75,7 +75,7 @@ export function startServer(cfg: ServerConfig, webRoot: string | null): void {
     console.error("      可能已有旧服务在运行。Windows 可先执行:");
     console.error(`      netstat -ano | findstr :${port}`);
     console.error("      taskkill /PID <pid> /F");
-    console.error("      或直接运行: .\\start.ps1");
+    console.error("      或直接运行: .\\start.bat");
     process.exit(1);
   });
 

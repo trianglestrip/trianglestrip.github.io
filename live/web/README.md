@@ -38,8 +38,8 @@ web/
 
 ```powershell
 # 终端 1
-cd live/server
-.\start.ps1
+cd live/node-server
+.\start.bat
 
 # 终端 2
 cd live/web
@@ -60,4 +60,4 @@ npm run build
 
 ## API
 
-前端通过 `apiBase()` 请求 `${apiBase}/api/room` 等，详见 [FEATURES.md](./FEATURES.md) 与 [`../server/README.md`](../server/README.md)。
+前端通过 `apiBase()` 请求 `${apiBase}/api/room` 等，详见 [`../node-server/README.md`](../node-server/README.md)。

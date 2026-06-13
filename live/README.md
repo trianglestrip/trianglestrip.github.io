@@ -19,9 +19,13 @@
 ## 本地打包与启动
 
 ```powershell
-cd live
-.\build-dist.bat        # 构建 dist（改源码后执行）
-cd dist
+cd live/web
+.\build.bat             # 或 npm run build
+
+cd ../node-server
+.\build.bat             # 或 npm run build
+
+cd ../dist
 .\start.bat             # 一键启动 API + Web
 .\start-api.bat         # 仅 API
 .\start-web.bat         # 仅前端
@@ -38,11 +42,7 @@ cd dist
 ```powershell
 # 终端 1：API（Node，推荐）
 cd live/node-server
-.\start.ps1
-
-# 或 Python 过渡版
-# cd live/server
-# .\start.ps1
+.\start.bat
 
 # 终端 2：前端
 cd live/web
@@ -92,5 +92,3 @@ npm run build:pages
 1. 本地包：`npm run build`（根路径 `/`）；线上子路径：`npm run build:pages`
 2. 后端：在服务器运行 `live/node-server`（或 `dist/server` 包），`config.json` 中开启 CORS
 3. 前端 `config.json` 的 `api.baseUrl` 指向后端公网地址
-
-功能规划：[web/FEATURES.md](web/FEATURES.md)

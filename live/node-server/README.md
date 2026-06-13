@@ -6,7 +6,7 @@
 
 ```powershell
 cd live/node-server
-.\start.ps1
+.\start.bat
 ```
 
 或：
@@ -14,7 +14,7 @@ cd live/node-server
 ```powershell
 npm install
 npm run build   # 首次或改源码后
-npm start       # node live-api.mjs
+npm start       # node ../dist/server/live-api.mjs
 ```
 
 - 健康检查：http://127.0.0.1:8765/api/health
@@ -23,9 +23,9 @@ npm start       # node live-api.mjs
 ## 构建
 
 ```powershell
-npm run build   # tsc + esbuild -> live-api.mjs
+.\build.bat     # 或 npm run build
 ```
 
-发布包由 `live/build-dist.bat` 复制 `node.exe` + `live-api.mjs` + `config.json` 到 `dist/server/`。
+`tsc` + esbuild 混淆打包为 `../dist/server/live-api.mjs`，并确保 `../dist/node.exe`。
 
 详见 [MIGRATION.md](./MIGRATION.md)。

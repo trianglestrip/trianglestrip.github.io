@@ -18,7 +18,7 @@ const publicDir = resolve(root, "public");
 const flvDest = resolve(publicDir, "flv.min.js");
 
 function readServerConfig() {
-  const path = resolve(root, "../server/config.json");
+  const path = resolve(root, "../node-server/config.json");
   if (!existsSync(path)) return { port: 8765 };
   try {
     return JSON.parse(readFileSync(path, "utf8"));
@@ -75,15 +75,17 @@ function writeDistConfig() {
   return {
     name: "write-dist-config",
     closeBundle() {
-      if (process.env.npm_lifecycle_event === "build:pages") return;
-      const cfg = {
-        appTitle: "Lemon live",
-        api: {
-          baseUrl: `http://127.0.0.1:${apiPort}`,
-          devBaseUrl: "",
-        },
-      };
-      writeFileSync(resolve(distWeb, "config.json"), `${JSON.stringify(cfg, null, 2)}\n`);
+      if (process.env.npm_lifecycle_event !== "build:pages") {
+        const cfg = {
+          appTitle: "Lemon live",
+          api: {
+            baseUrl: `http://127.0.0.1:${apiPort}`,
+            devBaseUrl: "",
+          },
+        };
+        writeFileSync(resolve(distWeb, "config.json"), `${JSON.stringify(cfg, null, 2)}\n`);
+      }
+      copyFileSync(resolve(root, "server.mjs"), resolve(distWeb, "server.mjs"));
     },
   };
 }

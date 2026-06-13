@@ -149,7 +149,7 @@ live/node-server/
 └── start.ps1                   # 开发启动（替代 server/start.ps1）
 ```
 
-**与旧目录关系**：迁移完成前 `live/server/` 只读保留；`build-dist.bat` 逐步改为构建 `node-server` 输出到 `dist/server/`。
+**与旧目录关系**：迁移完成前 `live/server/` 只读保留；`node-server` 的 `npm run build` 输出到 `dist/server/`。
 
 ---
 
@@ -167,7 +167,7 @@ live/node-server/
 
 **任务清单**
 
-- [ ] 初始化 `live/node-server/package.json`（`"type": "module"`，Node `>=20.18.1` 与 [`build-dist.bat`](../build-dist.bat) 对齐）
+- [ ] 初始化 `live/node-server/package.json`（`"type": "module"`，Node `>=20.18.1`）
 - [ ] 实现 `src/config/load-config.ts`：`DEFAULT_CONFIG`、深合并、`config.local.json`、frozen 模式下 exe 同目录解析（对齐 [`app_config.py`](../server/app_config.py)）
 - [ ] 实现 `src/middleware/cors.ts`：`OPTIONS → 204`，头含 `Access-Control-Allow-Private-Network: true`
 - [ ] 实现 `src/middleware/sanitize-json.ts`：孤立 surrogate 清理（对齐 [`text_sanitize.py`](../server/text_sanitize.py)）
@@ -425,8 +425,7 @@ export interface ResolveService {
 
 **任务清单**
 
-- [ ] 修改 [`live/build-dist.bat`](../build-dist.bat)：删除 PyInstaller 步骤，改为 `cd node-server && npm ci && npm run build`
-- [ ] 同步 [`live/package-dist.ps1`](../package-dist.ps1)
+- [ ] `node-server`：`npm run build` 直接产出 `dist/server/live-api.mjs`
 - [ ] 产出布局（推荐方案）：
   ```
   dist/server/
@@ -444,7 +443,7 @@ export interface ResolveService {
 
 **验收标准**
 
-- 干净环境执行 `live/build-dist.bat` 成功，无需 Python
+- 干净环境分别在 `live/web`、`live/node-server` 执行 `npm run build` 成功，无需 Python
 - `dist/start.bat` 启动后 `GET /api/health` 正常
 - 包体积与启动耗时可记录（对比旧 `live-api.exe`）
 
@@ -812,9 +811,9 @@ const SITE_REGISTRY = {
 
 ## 8. 构建与发布变更
 
-### 8.1 当前流程（Python）
+### 8.1 旧流程（Python，已废弃）
 
-[`live/build-dist.bat`](../build-dist.bat)：
+原 `live/build-dist.bat`：
 
 1. `live/web` → `npm run build` → `dist/web`
 2. PyInstaller `live-api.spec` → `dist/server/live-api.exe`
@@ -823,14 +822,12 @@ const SITE_REGISTRY = {
 ### 8.2 目标流程（Node）
 
 ```
-live/build-dist.bat
-  ├─ web: npm run build          → dist/web（不变）
-  └─ node-server:
-        npm ci
-        npm run build            → dist/server/live-api.mjs（+ 可选 bundled deps）
-        复制 node.exe（共用 Node 缓存逻辑）
-        复制 config.json
-        生成 start.bat
+live/web: npm run build
+  → dist/web（Vite 产物 + server.mjs + config.json）
+
+live/node-server: npm run build
+  → dist/server/live-api.mjs + config.json
+  → scripts/publish-dist.mjs 确保 dist/node.exe
 ```
 
 ### 8.3 启动脚本变更
@@ -912,7 +909,7 @@ live/build-dist.bat
 | E | `src/resolve/huya/*` |
 | F | `src/resolve/service.ts`, `src/resolve/schema.ts`, `src/routes/room.ts`, `src/routes/resolve.ts` |
 | G | `src/resolve/timing.ts`, `src/routes/time.ts` |
-| H | `live/build-dist.bat`, `live/package-dist.ps1`, `dist/server/start.bat`, `start.ps1` |
+| H | `node-server/scripts/publish-dist.mjs`, `dist/server/start.bat`, `start.ps1` |
 | I | `scripts/compare-with-python.mjs`, `tests/contract/*` |
 
 ## 附录 B：推荐分工示例（多 agent）
