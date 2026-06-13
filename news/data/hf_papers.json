@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-13T04:46:32+00:00",
+  "updated_at": "2026-06-13T12:12:29+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -32,25 +32,25 @@
       "rank": 5,
       "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
       "url": "https://huggingface.co/papers/2606.13679",
-      "hot": "73"
+      "hot": "74"
     },
     {
       "rank": 6,
       "title": "Agents' Last Exam",
       "url": "https://huggingface.co/papers/2606.05405",
-      "hot": "325"
+      "hot": "327"
     },
     {
       "rank": 7,
-      "title": "Rethinking the Divergence Regularization in LLM RL",
-      "url": "https://huggingface.co/papers/2606.09821",
-      "hot": "32"
+      "title": "Robust-U1: Can MLLMs Self-Recover Corrupted Visual Content for Robust Understanding?",
+      "url": "https://huggingface.co/papers/2606.08063",
+      "hot": "73"
     },
     {
       "rank": 8,
-      "title": "Robust-U1: Can MLLMs Self-Recover Corrupted Visual Content for Robust Understanding?",
-      "url": "https://huggingface.co/papers/2606.08063",
-      "hot": "72"
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "80"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
-      "url": "https://huggingface.co/papers/2309.06180",
-      "hot": "58"
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "40"
     }
   ]
 }
