@@ -23,8 +23,40 @@ export function parseOnlineCount(text) {
     const n = parseFloat(s.slice(0, -1));
     return Number.isFinite(n) ? Math.round(n * 1_000) : 0;
   }
+  const wk = s.replace(/\+$/u, "").match(/^([\d.]+)\s*([wkWK])$/u);
+  if (wk) {
+    const n = parseFloat(wk[1]);
+    const unit = wk[2].toLowerCase();
+    if (Number.isFinite(n) && n > 0) {
+      return Math.round(n * (unit === "w" ? 10_000 : 1_000));
+    }
+  }
   const n = Number(s.replace(/,/g, ""));
   return Number.isFinite(n) ? n : 0;
+}
+
+/** 抖音观看人数：≥1 万显示为 X万 / X.X万，否则完整数字 */
+export function formatDouyinOnline(text) {
+  const raw = String(text || "").trim();
+  if (!raw) return "";
+  const value = parseOnlineCount(raw);
+  if (value <= 0) return raw;
+  if (value >= 10_000) {
+    const wan = value / 10_000;
+    const num = Number.isInteger(wan) ? String(wan) : wan.toFixed(1).replace(/\.0$/, "");
+    return `${num}万`;
+  }
+  return String(value);
+}
+
+/** 已是「万/千」缩写则保留；纯数字 ≥1 万则格式化为 X万（分类页等兜底） */
+export function formatOnlineWanIfNeeded(text) {
+  const raw = String(text || "").trim();
+  if (!raw) return "";
+  if (raw.endsWith("万") || raw.endsWith("千")) return raw;
+  const value = parseOnlineCount(raw);
+  if (value >= 10_000) return formatDouyinOnline(raw);
+  return raw;
 }
 
 /** 排序档位：超关开播 → 普通开播 → 重播 → 超关离线 → 普通离线 */
@@ -94,7 +126,9 @@ export function mergeFollowRoom(room, snapshot = {}) {
     avatar: snapshot.avatar || room.avatar,
     state: snapshot.state || room.state || "offline",
     fans: snapshot.fans || room.fans || "",
-    online: snapshot.online || room.online || "",
+    online: snapshot.site === "douyin" || room.site === "douyin"
+      ? formatDouyinOnline(snapshot.online || room.online || "")
+      : (snapshot.online || room.online || ""),
     diamondFans: snapshot.diamondFans || room.diamondFans || "",
     fanGroup: snapshot.fanGroup || room.fanGroup || "",
     guard: snapshot.guard || room.guard || "",
@@ -117,8 +151,11 @@ export function followRoomToGrid(room) {
     nickname: room.anchor || room.id,
     cover: room.cover || "",
     category: room.category || "",
-    online: offline ? "" : room.online || "",
+    online: offline
+      ? ""
+      : (room.site === "douyin" ? formatDouyinOnline(room.online || "") : (room.online || "")),
     status: !offline,
     liveState: room.state || "offline",
+    super: Boolean(room.super),
   };
 }

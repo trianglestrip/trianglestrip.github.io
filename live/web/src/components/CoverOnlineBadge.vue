@@ -4,6 +4,7 @@
 
 <script setup>
 import { computed } from "vue";
+import { formatOnlineWanIfNeeded } from "../utils/followDisplay.js";
 
 const props = defineProps({
   online: { type: String, default: "" },
@@ -14,7 +15,7 @@ const displayText = computed(() => {
   if (!props.live) return "";
   const text = String(props.online || "").trim();
   if (!text || text === "—" || text === "-") return "";
-  return text;
+  return formatOnlineWanIfNeeded(text);
 });
 </script>
 

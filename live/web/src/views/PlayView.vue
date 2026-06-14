@@ -7,7 +7,7 @@
     >
       <section class="play-main">
         <header v-if="headerReady && !webscreen" class="play-header">
-          <RouterLink :to="`/${site}`" class="play-back" title="返回">
+          <RouterLink :to="playBackTo" class="play-back" title="返回">
             <Icon name="arrow-left" />
           </RouterLink>
           <span
@@ -120,6 +120,8 @@
         :danmaku-status="danmakuStatus"
         :follow-list="follows"
         :room-category="displayCategory"
+        :room-cid="browseRoomCid"
+        :room-pid="browseRoomPid"
         :is-super-followed="isSuperFollowed(site, id)"
         @play-room="onPlayFollow"
         @unfollow="onUnfollow"
@@ -147,6 +149,8 @@ import { followKey } from "../utils/prefStore.js";
 import { displayCategoryName } from "../utils/categoryDisplay.js";
 import { briefPlayStatus } from "../utils/chatStatus.js";
 import { getCategoryStyle } from "../utils/categoryColor.js";
+import { browseBackTarget, loadBrowseContext } from "../utils/browseContext.js";
+import { formatDouyinOnline } from "../utils/followDisplay.js";
 import { isSoundUnlocked, unlockSound, resetSoundSession } from "../utils/soundSession.js";
 
 const PlayerControls = defineAsyncComponent(() => import("../components/PlayerControls.vue"));
@@ -227,6 +231,23 @@ const displayCategory = computed(() => {
   const cached = cachedFollowRoom();
   const raw = fromApi || String(cached?.category || "").trim();
   return displayCategoryName(props.site, raw, cached?.cid);
+});
+
+const browseContext = computed(() => loadBrowseContext(props.site));
+const playBackTo = computed(() => browseBackTarget(props.site));
+const browseRoomCid = computed(() => {
+  const ctx = browseContext.value;
+  if (ctx?.type === "category" && ctx.cid != null && String(ctx.cid) !== "") {
+    return String(ctx.cid);
+  }
+  return "";
+});
+const browseRoomPid = computed(() => {
+  const ctx = browseContext.value;
+  if (ctx?.type === "category" && ctx.pid != null && String(ctx.pid) !== "") {
+    return String(ctx.pid);
+  }
+  return "";
 });
 
 const categoryHeaderStyle = computed(() =>
@@ -361,7 +382,9 @@ async function refreshRoomStats() {
     const data = await fetchFollowStatus([{ site: props.site, id: rid }]);
     const snap = data.list?.[0];
     roomStats.value = {
-      online: snap?.online || "",
+      online: props.site === "douyin"
+        ? formatDouyinOnline(snap?.online || "")
+        : (snap?.online || ""),
       fans: snap?.fans || "",
       diamondFans: snap?.diamondFans || "",
       fanGroup: snap?.fanGroup || "",

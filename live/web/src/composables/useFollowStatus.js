@@ -1,7 +1,7 @@
 import { computed, isRef, onBeforeUnmount, ref, unref, watch } from "vue";
 import { fetchFollowStatus } from "../api/follow.js";
 import { followKey } from "../utils/prefStore.js";
-import { mergeFollowRoom, sortFollowRooms } from "../utils/followDisplay.js";
+import { mergeFollowRoom, sortFollowRooms, formatDouyinOnline } from "../utils/followDisplay.js";
 
 export function useFollowStatus(followsRef, {
   active = true,
@@ -41,7 +41,9 @@ export function useFollowStatus(followsRef, {
       if (snap.category) room.category = snap.category;
       if (snap.state) room.state = snap.state;
       if (snap.fans) room.fans = snap.fans;
-      if (snap.online) room.online = snap.online;
+      if (snap.online) {
+        room.online = snap.site === "douyin" ? formatDouyinOnline(snap.online) : snap.online;
+      }
       if (snap.diamondFans) room.diamondFans = snap.diamondFans;
       if (snap.fanGroup) room.fanGroup = snap.fanGroup;
       if (snap.guard) room.guard = snap.guard;
