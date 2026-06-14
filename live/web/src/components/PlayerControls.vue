@@ -68,9 +68,9 @@
             type="range"
             min="0"
             max="1"
-            step="0.05"
+            step="any"
             :value="volume"
-            :style="{ '--volume-percent': `${volume * 100}%` }"
+            :style="{ '--volume-ratio': volume }"
             aria-label="音量"
             @input="onVolumeInput"
           />
@@ -305,11 +305,14 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   align-items: center;
   gap: .25rem;
   margin-right: .15rem;
+  overflow: visible;
 }
 
 .ctrl-volume__slider {
+  --volume-thumb: 10px;
+  --volume-thumb-half: calc(var(--volume-thumb) / 2);
   width: 4.5rem;
-  height: .2rem;
+  height: var(--volume-thumb);
   margin: 0;
   padding: 0;
   border: none;
@@ -317,6 +320,7 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   background: transparent;
   appearance: none;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .ctrl-volume__slider::-webkit-slider-runnable-track {
@@ -324,18 +328,18 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   border-radius: 999px;
   background: linear-gradient(
     to right,
-    var(--amber) 0%,
-    var(--amber) var(--volume-percent, 0%),
-    var(--play-range-track) var(--volume-percent, 0%),
+    var(--amber) 0,
+    var(--amber) calc(var(--volume-thumb-half) + (100% - var(--volume-thumb)) * var(--volume-ratio, 0)),
+    var(--play-range-track) calc(var(--volume-thumb-half) + (100% - var(--volume-thumb)) * var(--volume-ratio, 0)),
     var(--play-range-track) 100%
   );
 }
 
 .ctrl-volume__slider::-webkit-slider-thumb {
   appearance: none;
-  width: 10px;
-  height: 10px;
-  margin-top: calc((.2rem - 10px) / 2);
+  width: var(--volume-thumb);
+  height: var(--volume-thumb);
+  margin-top: calc((.2rem - var(--volume-thumb)) / 2);
   border: 2px solid #1a1a1a;
   border-radius: 50%;
   background: var(--amber);
@@ -356,11 +360,12 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
 }
 
 .ctrl-volume__slider::-moz-range-thumb {
-  width: 10px;
-  height: 10px;
+  width: var(--volume-thumb);
+  height: var(--volume-thumb);
   border: 2px solid #1a1a1a;
   border-radius: 50%;
   background: var(--amber);
+  box-sizing: border-box;
 }
 
 @media (max-width: 640px) {

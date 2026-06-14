@@ -316,7 +316,7 @@ export function usePlayer(siteRef) {
       muted.value = false;
       return;
     }
-    volume.value = videoEl.volume;
+    volume.value = Math.round(videoEl.volume * 100) / 100;
     muted.value = videoEl.muted;
   }
 
@@ -444,7 +444,7 @@ export function usePlayer(siteRef) {
 
   function setVolume(value) {
     if (!videoEl) return;
-    const next = Math.min(1, Math.max(0, Number(value)));
+    const next = Math.round(Math.min(1, Math.max(0, Number(value))) * 100) / 100;
     videoEl.volume = next;
     videoEl.muted = next === 0;
     syncVolume();
