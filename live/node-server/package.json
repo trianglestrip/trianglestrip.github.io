@@ -12,6 +12,7 @@
     "start": "node ../dist/server/live-api.mjs",
     "typecheck": "tsc --noEmit",
     "sync:cross-map": "tsx scripts/sync-category-cross-map.mjs",
+    "verify:cross-map": "tsx scripts/verify-cross-map.mjs",
     "sync:douyin-icons": "npm run build && node scripts/sync-douyin-game-icons.mjs"
   },
   "devDependencies": {

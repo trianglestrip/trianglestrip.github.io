@@ -134,6 +134,38 @@ async function fetchCrossRoomsForSite(
 
 ): Promise<{ list: RoomItem[]; hasMore: boolean }> {
 
+  if (site === "douyin" && entry.douyinPartitions?.length) {
+
+    const parts = entry.douyinPartitions.slice(0, 3);
+
+    const perPart = Math.max(1, Math.ceil(limit / parts.length));
+
+    const lists = await Promise.all(
+
+      parts.map((part) =>
+
+        browseApi
+
+          .fetchCategoryRooms(site, part.cid, page, part.pid || douyinPidForEntry(entry))
+
+          .then((payload) => (payload.list || []).slice(0, perPart)),
+
+      ),
+
+    );
+
+    const list = interleaveRoomLists(lists)
+
+      .slice(0, limit)
+
+      .map((room) => ({ ...room, siteId: site }));
+
+    return { list, hasMore: list.length >= limit };
+
+  }
+
+
+
   const mappedCid = crossGameCidForSite(entry, site);
 
   if (!mappedCid) return { list: [], hasMore: false };

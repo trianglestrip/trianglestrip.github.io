@@ -1,5 +1,7 @@
 import { ref } from "vue";
-import { fetchCrossCategoryRooms, fetchHotCategories } from "../api/crossBrowse.js";
+import { fetchCrossCategoryRooms } from "../api/crossBrowse.js";
+import { loadCrossCategoryItems } from "../utils/crossCategoryItems.js";
+import { resolveCrossCategoryKey } from "../utils/categoryDisplay.js";
 import { scheduleIdleTask } from "../utils/runIdle.js";
 
 export function useCrossBrowse() {
@@ -17,10 +19,11 @@ export function useCrossBrowse() {
     loadingCategories.value = true;
     listError.value = "";
     try {
-      const data = await fetchHotCategories();
-      hotCategories.value = data.categories || [];
+      hotCategories.value = await loadCrossCategoryItems();
       if (!activeKey.value && hotCategories.value.length) {
         activeKey.value = hotCategories.value[0].key;
+      } else if (activeKey.value) {
+        activeKey.value = resolveCrossCategoryKey(activeKey.value);
       }
     } catch (err) {
       hotCategories.value = [];
@@ -31,7 +34,7 @@ export function useCrossBrowse() {
   }
 
   async function loadCrossRooms(reset = true) {
-    const key = String(activeKey.value || "").trim();
+    const key = resolveCrossCategoryKey(activeKey.value);
     if (!key) {
       rooms.value = [];
       hasMore.value = false;
@@ -75,7 +78,7 @@ export function useCrossBrowse() {
   }
 
   async function selectCategory(key) {
-    activeKey.value = String(key || "");
+    activeKey.value = resolveCrossCategoryKey(key);
     await loadCrossRooms(true);
   }
 

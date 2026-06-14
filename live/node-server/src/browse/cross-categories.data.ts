@@ -47,16 +47,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "1123",
   },
   {
-    key: "g6385_1010096",
-    name: "暗黑破坏神：不朽",
-    aliases: ["暗黑破坏神：不朽"],
-
-    huya: "6385",
-    douyin: "1010096",
-    douyinPid: "1",
-  },
-  {
-    key: "g3133_7209_1010018_502",
+    key: "aqtw",
     name: "暗区突围",
     aliases: ["暗区突围"],
     sites: {
@@ -91,7 +82,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "3865",
   },
   {
-    key: "g347_1010383_164",
+    key: "g347_164",
     name: "堡垒之夜",
     aliases: ["堡垒之夜"],
     sites: {
@@ -99,11 +90,9 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "347",
-    douyin: "1010383",
-    douyinPid: "1",
   },
   {
-    key: "g3379_7349_1010043_549",
+    key: "bhxy",
     name: "崩坏：星穹铁道",
     aliases: ["崩坏：星穹铁道"],
     sites: {
@@ -116,7 +105,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g380_1010020_40",
+    key: "3",
     name: "崩坏3",
     aliases: ["崩坏3"],
     sites: {
@@ -124,11 +113,9 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "380",
-    douyin: "1010020",
-    douyinPid: "1",
   },
   {
-    key: "g4112_6147_1010640_385",
+    key: "g4112_6147_385",
     name: "博德之门3",
     aliases: ["博德之门3"],
     sites: {
@@ -137,8 +124,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
 
     douyu: "4112",
     huya: "6147",
-    douyin: "1010640",
-    douyinPid: "1",
   },
   {
     key: "g10821_1011089",
@@ -170,24 +155,14 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "1898",
   },
   {
-    key: "g4275_2327_601",
+    key: "g2327_601",
     name: "彩虹六号",
     aliases: ["彩虹六号"],
     sites: {
       bilibili: { cid: "601", pid: "2" }
     },
 
-    douyu: "4275",
     huya: "2327",
-  },
-  {
-    key: "g1476_1011238",
-    name: "超级兔子人",
-    aliases: ["超级兔子人"],
-
-    douyu: "1476",
-    douyin: "1011238",
-    douyinPid: "1",
   },
   {
     key: "g3586_778",
@@ -213,14 +188,13 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g187_983_695",
+    key: "g983_695",
     name: "传奇",
     aliases: ["传奇"],
     sites: {
       bilibili: { cid: "695", pid: "2" }
     },
 
-    douyu: "187",
     huya: "983",
   },
   {
@@ -275,10 +249,10 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huyaTabId: "2",
     huyaGroup: "100002",
     douyinGroupIds: ["3"],
-    douyinPartitions: [{ cid: "1011359", pid: "1" }, { cid: "1010324", pid: "1" }],
+    douyinPartitions: [{ cid: "1011136", pid: "1" }, { cid: "1011393", pid: "1" }],
   },
   {
-    key: "g3358_6909_1010011_571",
+    key: "dzpd",
     name: "蛋仔派对",
     aliases: ["蛋仔派对"],
     sites: {
@@ -302,39 +276,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "3641",
   },
   {
-    key: "g1701_1010099",
-    name: "地铁跑酷",
-    aliases: ["地铁跑酷"],
-
-    huya: "1701",
-    douyin: "1010099",
-    douyinPid: "1",
-  },
-  {
-    key: "dnf",
-    name: "DNF",
-    aliases: ["DNF", "dnf", "地下城与勇士"],
-
-    sites: {
-      bilibili: { cid: "78", pid: "2" }
-    },
-
-    douyu: "40",
-    huya: "2",
-    douyin: "1010092",
-    douyinPid: "1",
-  },
-  {
-    key: "g4835_548",
-    name: "帝国时代4",
-    aliases: ["帝国时代4"],
-    sites: {
-      bilibili: { cid: "548", pid: "6" }
-    },
-
-    huya: "4835",
-  },
-  {
     key: "g2618_784",
     name: "第七史诗",
     aliases: ["第七史诗"],
@@ -345,7 +286,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "2618",
   },
   {
-    key: "g356_3115_1010041_163",
+    key: "dwrg",
     name: "第五人格",
     aliases: ["第五人格"],
     sites: {
@@ -368,11 +309,12 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "3822",
   },
   {
-    key: "g3352_1010007",
+    key: "g3352_6979_1010007",
     name: "巅峰极速",
     aliases: ["巅峰极速"],
 
     douyu: "3352",
+    huya: "6979",
     douyin: "1010007",
     douyinPid: "1",
   },
@@ -402,16 +344,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "6381",
   },
   {
-    key: "g3823_283",
-    name: "独立游戏",
-    aliases: ["独立游戏"],
-    sites: {
-      bilibili: { cid: "283", pid: "6" }
-    },
-
-    huya: "3823",
-  },
-  {
     key: "g859_6039",
     name: "对马岛之魂",
     aliases: ["对马岛之魂"],
@@ -439,12 +371,14 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "3877",
   },
   {
-    key: "g174_2633",
+    key: "g174_2633_104",
     name: "二次元",
     aliases: ["二次元"],
 
     douyu: "174",
     huya: "2633",
+    douyin: "104",
+    douyinPid: "4",
   },
   {
     key: "g254_100091",
@@ -575,15 +509,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g1991_1010385",
-    name: "海岛奇兵",
-    aliases: ["海岛奇兵"],
-
-    douyu: "1991",
-    douyin: "1010385",
-    douyinPid: "1",
-  },
-  {
     key: "g1883_1010231_504",
     name: "航海王热血航线",
     aliases: ["航海王热血航线"],
@@ -628,7 +553,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "1877",
   },
   {
-    key: "g2075_6111_1010358_804",
+    key: "hmwk",
     name: "黑神话：悟空",
     aliases: ["黑神话：悟空"],
     sites: {
@@ -662,19 +587,9 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "4201",
   },
   {
-    key: "g722_507",
-    name: "胡闹厨房",
-    aliases: ["胡闹厨房"],
-    sites: {
-      bilibili: { cid: "507", pid: "6" }
-    },
-
-    douyu: "722",
-  },
-  {
-    key: "g124_2165",
+    key: "huwai",
     name: "户外",
-    aliases: ["户外"],
+    aliases: ["户外", "运动", "生活", "旅游", "体育"],
 
     douyu: "124",
     huya: "2165",
@@ -755,7 +670,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g625_4613_1010138_469",
+    key: "g625_1010138_469",
     name: "荒野乱斗",
     aliases: ["荒野乱斗"],
     sites: {
@@ -763,17 +678,15 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "625",
-    huya: "4613",
     douyin: "1010138",
     douyinPid: "1",
   },
   {
-    key: "g190_2439_1010230",
+    key: "g190_1010230",
     name: "皇室战争",
     aliases: ["皇室战争"],
 
     douyu: "190",
-    huya: "2439",
     douyin: "1010230",
     douyinPid: "1",
   },
@@ -820,18 +733,17 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "15",
-    douyin: "1010405",
-    douyinPid: "1",
+    huya: "406",
   },
   {
-    key: "g9421_1010686_852",
+    key: "g4070_1010686_852",
     name: "极品飞车：集结",
     aliases: ["极品飞车：集结"],
     sites: {
       bilibili: { cid: "852", pid: "3" }
     },
 
-    huya: "9421",
+    douyu: "4070",
     douyin: "1010686",
     douyinPid: "1",
   },
@@ -856,9 +768,9 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "897",
   },
   {
-    key: "3",
+    key: "jx3",
     name: "剑网3",
-    aliases: ["剑网3"],
+    aliases: ["剑网3", "剑网三"],
     sites: {
       bilibili: { cid: "82", pid: "2" }
     },
@@ -867,16 +779,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "900",
     douyin: "1010249",
     douyinPid: "1",
-  },
-  {
-    key: "g3074_499",
-    name: "剑网3缘起",
-    aliases: ["剑网3缘起"],
-    sites: {
-      bilibili: { cid: "499", pid: "2" }
-    },
-
-    douyu: "3074",
   },
   {
     key: "g10567_1011081_988",
@@ -899,7 +801,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "5999",
   },
   {
-    key: "g155_206_649",
+    key: "g155_649",
     name: "街头篮球",
     aliases: ["街头篮球"],
     sites: {
@@ -907,7 +809,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "155",
-    huya: "206",
   },
   {
     key: "g10961_1010260_915",
@@ -932,7 +833,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "68167",
   },
   {
-    key: "g2556_7185_1010055_514",
+    key: "jcc",
     name: "金铲铲之战",
     aliases: ["金铲铲之战"],
     sites: {
@@ -951,26 +852,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
 
     douyu: "412",
     huya: "2420",
-  },
-  {
-    key: "g6065_1010247",
-    name: "禁闭求生",
-    aliases: ["禁闭求生"],
-
-    huya: "6065",
-    douyin: "1010247",
-    douyinPid: "1",
-  },
-  {
-    key: "g1010044_777",
-    name: "晶核",
-    aliases: ["晶核"],
-    sites: {
-      bilibili: { cid: "777", pid: "3" }
-    },
-
-    douyin: "1010044",
-    douyinPid: "1",
   },
   {
     key: "g4346_78211_1061",
@@ -996,29 +877,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g1010057_140",
-    name: "决战！平安京",
-    aliases: ["决战！平安京"],
-    sites: {
-      bilibili: { cid: "140", pid: "3" }
-    },
-
-    douyin: "1010057",
-    douyinPid: "1",
-  },
-  {
-    key: "g1011000_875",
-    name: "绝地潜兵2",
-    aliases: ["绝地潜兵2"],
-    sites: {
-      bilibili: { cid: "875", pid: "6" }
-    },
-
-    douyin: "1011000",
-    douyinPid: "1",
-  },
-  {
-    key: "g3671_7711_1010155_662",
+    key: "jql",
     name: "绝区零",
     aliases: ["绝区零"],
     sites: {
@@ -1039,7 +898,17 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "100133",
   },
   {
-    key: "g3010_9073_1010168_782",
+    key: "g74087_1045",
+    name: "卡厄思梦境",
+    aliases: ["卡厄思梦境"],
+    sites: {
+      bilibili: { cid: "1045", pid: "3" }
+    },
+
+    huya: "74087",
+  },
+  {
+    key: "g3010_1010168_782",
     name: "卡拉彼丘",
     aliases: ["卡拉彼丘"],
     sites: {
@@ -1047,19 +916,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "3010",
-    huya: "9073",
     douyin: "1010168",
-    douyinPid: "1",
-  },
-  {
-    key: "g1010360_1009",
-    name: "空洞骑士：丝之歌",
-    aliases: ["空洞骑士：丝之歌"],
-    sites: {
-      bilibili: { cid: "1009", pid: "6" }
-    },
-
-    douyin: "1010360",
     douyinPid: "1",
   },
   {
@@ -1085,14 +942,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "6205",
   },
   {
-    key: "g2046_6679",
-    name: "恐惧之间",
-    aliases: ["恐惧之间"],
-
-    douyu: "2046",
-    huya: "6679",
-  },
-  {
     key: "g260_2785_1010313_41",
     name: "狼人杀",
     aliases: ["狼人杀"],
@@ -1106,7 +955,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g1819_6131_1010029_479",
+    key: "g1819_6131_479",
     name: "黎明觉醒：生机",
     aliases: ["黎明觉醒：生机"],
     sites: {
@@ -1115,8 +964,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
 
     douyu: "1819",
     huya: "6131",
-    douyin: "1010029",
-    douyinPid: "1",
   },
   {
     key: "g1026_1010441",
@@ -1136,15 +983,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "2282",
   },
   {
-    key: "g847_2772",
-    name: "流放者柯南",
-    aliases: ["流放者柯南"],
-
-    douyu: "847",
-    huya: "2772",
-  },
-  {
-    key: "g427_1010411_551",
+    key: "g427_551",
     name: "流放之路",
     aliases: ["流放之路"],
     sites: {
@@ -1152,8 +991,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     huya: "427",
-    douyin: "1010411",
-    douyinPid: "1",
   },
   {
     key: "g4050_1011359",
@@ -1210,15 +1047,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g3704_2430",
-    name: "罗马复兴",
-    aliases: ["罗马复兴"],
-
-    douyu: "3704",
-    huya: "2430",
-  },
-  {
-    key: "g4249_2864_1010203_669",
+    key: "g4249_669",
     name: "洛克王国",
     aliases: ["洛克王国"],
     sites: {
@@ -1226,9 +1055,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "4249",
-    huya: "2864",
-    douyin: "1010203",
-    douyinPid: "1",
   },
   {
     key: "g11043_958",
@@ -1251,14 +1077,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "1907",
   },
   {
-    key: "g994_2303",
-    name: "漫漫长夜",
-    aliases: ["漫漫长夜"],
-
-    douyu: "994",
-    huya: "2303",
-  },
-  {
     key: "g4252_1011240_922",
     name: "漫威争锋",
     aliases: ["漫威争锋"],
@@ -1268,15 +1086,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
 
     douyu: "4252",
     douyin: "1011240",
-    douyinPid: "1",
-  },
-  {
-    key: "g524_1010327",
-    name: "猫和老鼠",
-    aliases: ["猫和老鼠"],
-
-    douyu: "524",
-    douyin: "1010327",
     douyinPid: "1",
   },
   {
@@ -1301,20 +1110,19 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g1843_6165_1010038_384",
+    key: "g6165_1010038_384",
     name: "猛兽派对",
     aliases: ["猛兽派对"],
     sites: {
       bilibili: { cid: "384", pid: "6" }
     },
 
-    douyu: "1843",
     huya: "6165",
     douyin: "1010038",
     douyinPid: "1",
   },
   {
-    key: "g500_1010394_178",
+    key: "g500_178",
     name: "梦幻模拟战",
     aliases: ["梦幻模拟战"],
     sites: {
@@ -1322,8 +1130,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "500",
-    douyin: "1010394",
-    douyinPid: "1",
   },
   {
     key: "g69_1010053",
@@ -1343,15 +1149,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyin: "1010051",
-    douyinPid: "1",
-  },
-  {
-    key: "g1583_1010315",
-    name: "梦幻新诛仙",
-    aliases: ["梦幻新诛仙"],
-
-    douyu: "1583",
-    douyin: "1010315",
     douyinPid: "1",
   },
   {
@@ -1385,14 +1182,13 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "74371",
   },
   {
-    key: "g3972_7363_1001",
+    key: "g7363_1001",
     name: "明末：渊虚之羽",
     aliases: ["明末：渊虚之羽"],
     sites: {
       bilibili: { cid: "1001", pid: "6" }
     },
 
-    douyu: "3972",
     huya: "7363",
   },
   {
@@ -1422,7 +1218,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g430_3483_1010006_189",
+    key: "g430_1010006_189",
     name: "明日之后",
     aliases: ["明日之后"],
     sites: {
@@ -1430,7 +1226,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "430",
-    huya: "3483",
     douyin: "1010006",
     douyinPid: "1",
   },
@@ -1482,14 +1277,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "3058",
     douyin: "1010233",
     douyinPid: "1",
-  },
-  {
-    key: "g3692_2891",
-    name: "魔力宝贝",
-    aliases: ["魔力宝贝"],
-
-    douyu: "3692",
-    huya: "2891",
   },
   {
     key: "g5_8_1010150_83",
@@ -1563,15 +1350,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "7575",
   },
   {
-    key: "g3534_1010472",
-    name: "暖雪",
-    aliases: ["暖雪"],
-
-    douyu: "3534",
-    douyin: "1010472",
-    douyinPid: "1",
-  },
-  {
     key: "g90_162_1010331_664",
     name: "跑跑卡丁车",
     aliases: ["跑跑卡丁车"],
@@ -1595,26 +1373,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "2620",
   },
   {
-    key: "g633_440",
-    name: "泡泡堂",
-    aliases: ["泡泡堂"],
-
-    douyu: "633",
-    huya: "440",
-  },
-  {
-    key: "g1010320_812",
-    name: "匹诺曹的谎言",
-    aliases: ["匹诺曹的谎言"],
-    sites: {
-      bilibili: { cid: "812", pid: "6" }
-    },
-
-    douyin: "1010320",
-    douyinPid: "1",
-  },
-  {
-    key: "g4188_9995_1010558_857",
+    key: "g4188_1010558_857",
     name: "七日世界",
     aliases: ["七日世界"],
     sites: {
@@ -1622,19 +1381,8 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "4188",
-    huya: "9995",
     douyin: "1010558",
     douyinPid: "1",
-  },
-  {
-    key: "g3069_235",
-    name: "其他单机",
-    aliases: ["其他单机"],
-    sites: {
-      bilibili: { cid: "235", pid: "6" }
-    },
-
-    huya: "3069",
   },
   {
     key: "g491_326",
@@ -1645,15 +1393,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "491",
-  },
-  {
-    key: "g4069_1010626",
-    name: "潜水员戴夫",
-    aliases: ["潜水员戴夫"],
-
-    douyu: "4069",
-    douyin: "1010626",
-    douyinPid: "1",
   },
   {
     key: "g496_251",
@@ -1676,17 +1415,14 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g3956_5023_1010199_243",
+    key: "g5023_243",
     name: "全境封锁2",
     aliases: ["全境封锁2"],
     sites: {
       bilibili: { cid: "243", pid: "6" }
     },
 
-    douyu: "3956",
     huya: "5023",
-    douyin: "1010199",
-    douyinPid: "1",
   },
   {
     key: "g2231_3521_257",
@@ -1710,23 +1446,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "4043",
   },
   {
-    key: "g3844_1010180",
-    name: "全明星街球派对",
-    aliases: ["全明星街球派对"],
-
-    douyu: "3844",
-    douyin: "1010180",
-    douyinPid: "1",
-  },
-  {
-    key: "g702_2884",
-    name: "缺氧",
-    aliases: ["缺氧"],
-
-    douyu: "702",
-    huya: "2884",
-  },
-  {
     key: "g7107_803",
     name: "雀魂麻将",
     aliases: ["雀魂麻将"],
@@ -1746,25 +1465,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g5429_677",
-    name: "人间地狱",
-    aliases: ["人间地狱"],
-    sites: {
-      bilibili: { cid: "677", pid: "2" }
-    },
-
-    huya: "5429",
-  },
-  {
-    key: "g701_1010774",
-    name: "仁王",
-    aliases: ["仁王"],
-
-    douyu: "701",
-    douyin: "1010774",
-    douyinPid: "1",
-  },
-  {
     key: "g2081_5795",
     name: "仁王2",
     aliases: ["仁王2"],
@@ -1773,7 +1473,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "5795",
   },
   {
-    key: "g566_4041_1010129_203",
+    key: "g566_4041_203",
     name: "忍者必须死3",
     aliases: ["忍者必须死3"],
     sites: {
@@ -1782,8 +1482,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
 
     douyu: "566",
     huya: "4041",
-    douyin: "1010129",
-    douyinPid: "1",
   },
   {
     key: "g397_2369",
@@ -1794,14 +1492,12 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "2369",
   },
   {
-    key: "g3793_7883_1010082",
+    key: "g3793_7883",
     name: "塞尔达传说：王国之泪",
     aliases: ["塞尔达传说：王国之泪"],
 
     douyu: "3793",
     huya: "7883",
-    douyin: "1010082",
-    douyinPid: "1",
   },
   {
     key: "2077",
@@ -1813,17 +1509,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
 
     douyu: "836",
     douyin: "1010128",
-    douyinPid: "1",
-  },
-  {
-    key: "g1010521_667",
-    name: "赛尔号",
-    aliases: ["赛尔号"],
-    sites: {
-      bilibili: { cid: "667", pid: "2" }
-    },
-
-    douyin: "1010521",
     douyinPid: "1",
   },
   {
@@ -1860,23 +1545,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "657",
   },
   {
-    key: "g1795_6047",
-    name: "三国战纪",
-    aliases: ["三国战纪"],
-
-    douyu: "1795",
-    huya: "6047",
-  },
-  {
-    key: "g2085_1010514",
-    name: "三国志14",
-    aliases: ["三国志14"],
-
-    douyu: "2085",
-    douyin: "1010514",
-    douyinPid: "1",
-  },
-  {
     key: "g1581_5619",
     name: "三国志战略版",
     aliases: ["三国志战略版"],
@@ -1885,9 +1553,9 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "5619",
   },
   {
-    key: "g4133_9449_1011032_878",
+    key: "sjz",
     name: "三角洲行动",
-    aliases: ["三角洲行动"],
+    aliases: ["三角洲行动", "三角洲"],
     sites: {
       bilibili: { cid: "878", pid: "2" }
     },
@@ -1906,14 +1574,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "7943",
     douyin: "1010783",
     douyinPid: "1",
-  },
-  {
-    key: "g390_3601",
-    name: "杀戮尖塔",
-    aliases: ["杀戮尖塔"],
-
-    douyu: "390",
-    huya: "3601",
   },
   {
     key: "g2458_39",
@@ -1936,15 +1596,17 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "2647",
   },
   {
-    key: "4",
-    name: "神武4电脑版",
-    aliases: ["神武4电脑版"],
+    key: "g3777_886",
+    name: "射雕",
+    aliases: ["射雕"],
+    sites: {
+      bilibili: { cid: "886", pid: "3" }
+    },
 
-    douyu: "1136",
-    huya: "3227",
+    douyu: "3777",
   },
   {
-    key: "g1680_8013",
+    key: "4",
     name: "生化危机4重制版",
     aliases: ["生化危机4重制版"],
 
@@ -1981,25 +1643,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "4319",
-  },
-  {
-    key: "rust",
-    name: "失控进化-RUST",
-    aliases: ["失控进化-RUST"],
-
-    douyu: "4288",
-    huya: "70953",
-  },
-  {
-    key: "g1010675_643",
-    name: "时空猎人3",
-    aliases: ["时空猎人3"],
-    sites: {
-      bilibili: { cid: "643", pid: "3" }
-    },
-
-    douyin: "1010675",
-    douyinPid: "1",
   },
   {
     key: "g474_3741_1010030",
@@ -2044,7 +1687,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huyaTabId: "3",
     huyaGroup: "100004",
     douyinGroupIds: ["4", "6", "7"],
-    douyinPartitions: [{ cid: "1010063", pid: "1" }, { cid: "1010040", pid: "1" }, { cid: "1010053", pid: "1" }, { cid: "1010271", pid: "1" }, { cid: "1010324", pid: "1" }, { cid: "1010043", pid: "1" }],
+    douyinPartitions: [{ cid: "1010012", pid: "1" }, { cid: "1010094", pid: "1" }, { cid: "1010268", pid: "1" }, { cid: "1010078", pid: "1" }, { cid: "1010009", pid: "1" }, { cid: "1010105", pid: "1" }],
   },
   {
     key: "g148_2174_1010339_87",
@@ -2057,15 +1700,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "148",
     huya: "2174",
     douyin: "1010339",
-    douyinPid: "1",
-  },
-  {
-    key: "g6169_1010381",
-    name: "曙光英雄",
-    aliases: ["曙光英雄"],
-
-    huya: "6169",
-    douyin: "1010381",
     douyinPid: "1",
   },
   {
@@ -2159,15 +1793,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g4137_1010058",
-    name: "逃跑吧！少年",
-    aliases: ["逃跑吧！少年"],
-
-    huya: "4137",
-    douyin: "1010058",
-    douyinPid: "1",
-  },
-  {
     key: "g517_100135_500",
     name: "体育游戏",
     aliases: ["体育游戏"],
@@ -2177,16 +1802,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
 
     douyu: "517",
     huya: "100135",
-  },
-  {
-    key: "g1593_448",
-    name: "天地劫：幽城再临",
-    aliases: ["天地劫：幽城再临"],
-    sites: {
-      bilibili: { cid: "448", pid: "3" }
-    },
-
-    douyu: "1593",
   },
   {
     key: "g4279_69105",
@@ -2207,7 +1822,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g59_1219_1010119_596",
+    key: "g59_1219_596",
     name: "天涯明月刀",
     aliases: ["天涯明月刀"],
     sites: {
@@ -2216,8 +1831,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
 
     douyu: "59",
     huya: "1219",
-    douyin: "1010119",
-    douyinPid: "1",
   },
   {
     key: "g669_2765_691",
@@ -2296,35 +1909,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huyaTabId: "1",
     huyaGroup: "100023",
     douyinGroupIds: ["1", "2"],
-    douyinPartitions: [{ cid: "1010037", pid: "1" }, { cid: "1010026", pid: "1" }, { cid: "1010014", pid: "1" }, { cid: "1010045", pid: "1" }],
-  },
-  {
-    key: "g6007_1010533",
-    name: "妄想山海",
-    aliases: ["妄想山海"],
-
-    huya: "6007",
-    douyin: "1010533",
-    douyinPid: "1",
-  },
-  {
-    key: "g1693_2694",
-    name: "围棋",
-    aliases: ["围棋"],
-
-    douyu: "1693",
-    huya: "2694",
-  },
-  {
-    key: "g1010289_787",
-    name: "蔚蓝档案",
-    aliases: ["蔚蓝档案"],
-    sites: {
-      bilibili: { cid: "787", pid: "3" }
-    },
-
-    douyin: "1010289",
-    douyinPid: "1",
+    douyinPartitions: [{ cid: "1010026", pid: "1" }, { cid: "1010213", pid: "1" }, { cid: "1010131", pid: "1" }, { cid: "1010430", pid: "1" }],
   },
   {
     key: "g107_1010116_670",
@@ -2352,12 +1937,14 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g532_2566",
+    key: "g532_2566_1010413",
     name: "无人深空",
     aliases: ["无人深空"],
 
     douyu: "532",
     huya: "2566",
+    douyin: "1010413",
+    douyinPid: "1",
   },
   {
     key: "valorant",
@@ -2407,6 +1994,19 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "4297",
   },
   {
+    key: "wudao",
+    name: "舞蹈",
+    aliases: ["舞蹈", "舞见", "才艺"],
+    sites: {
+      bilibili: { cid: "207", pid: "1" }
+    },
+
+    douyu: "175",
+    huya: "3793",
+    douyin: "105",
+    douyinPid: "4",
+  },
+  {
     key: "ol",
     name: "希望OL",
     aliases: ["希望OL"],
@@ -2415,42 +2015,12 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "1161",
   },
   {
-    key: "g1010050_689",
-    name: "香肠派对",
-    aliases: ["香肠派对"],
-    sites: {
-      bilibili: { cid: "689", pid: "3" }
-    },
-
-    douyin: "1010050",
-    douyinPid: "1",
-  },
-  {
-    key: "g1011133_586",
-    name: "消逝的光芒",
-    aliases: ["消逝的光芒"],
-    sites: {
-      bilibili: { cid: "586", pid: "6" }
-    },
-
-    douyin: "1011133",
-    douyinPid: "1",
-  },
-  {
     key: "g3529_7581",
     name: "消逝的光芒2",
     aliases: ["消逝的光芒2"],
 
     douyu: "3529",
     huya: "7581",
-  },
-  {
-    key: "g1962_6259",
-    name: "新剑侠情缘手游",
-    aliases: ["新剑侠情缘手游"],
-
-    douyu: "1962",
-    huya: "6259",
   },
   {
     key: "g5671_653",
@@ -2496,19 +2066,18 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g816_2443_1010791",
+    key: "g816_1010791",
     name: "星露谷物语",
     aliases: ["星露谷物语"],
 
     douyu: "816",
-    huya: "2443",
     douyin: "1010791",
     douyinPid: "1",
   },
   {
     key: "xingxiu",
     name: "星秀",
-    aliases: ["星秀", "颜值"],
+    aliases: ["星秀"],
 
     douyu: "1008",
     huya: "1663",
@@ -2524,9 +2093,9 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "1557",
   },
   {
-    key: "g201_2168_145",
+    key: "yanzhi",
     name: "颜值",
-    aliases: ["颜值"],
+    aliases: ["颜值", "颜值（横屏）"],
     sites: {
       bilibili: { cid: "145", pid: "1" }
     },
@@ -2548,7 +2117,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g366_3082_1010412_913",
+    key: "g366_1010412_913",
     name: "一梦江湖",
     aliases: ["一梦江湖"],
     sites: {
@@ -2556,7 +2125,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     douyu: "366",
-    huya: "3082",
     douyin: "1010412",
     douyinPid: "1",
   },
@@ -2577,17 +2145,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "6613",
   },
   {
-    key: "g1010088_755",
-    name: "以闪亮之名",
-    aliases: ["以闪亮之名"],
-    sites: {
-      bilibili: { cid: "755", pid: "3" }
-    },
-
-    douyin: "1010088",
-    douyinPid: "1",
-  },
-  {
     key: "g4272_68169_940",
     name: "异环",
     aliases: ["异环"],
@@ -2597,25 +2154,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
 
     douyu: "4272",
     huya: "68169",
-  },
-  {
-    key: "g68127_956",
-    name: "异人之下",
-    aliases: ["异人之下"],
-    sites: {
-      bilibili: { cid: "956", pid: "3" }
-    },
-
-    huya: "68127",
-  },
-  {
-    key: "g3682_1010560",
-    name: "弈仙牌",
-    aliases: ["弈仙牌"],
-
-    douyu: "3682",
-    douyin: "1010560",
-    douyinPid: "1",
   },
   {
     key: "g240_2598_1010025_36",
@@ -2639,23 +2177,14 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "2761",
   },
   {
-    key: "g77_1830_690",
+    key: "g1830_690",
     name: "英魂之刃",
     aliases: ["英魂之刃"],
     sites: {
       bilibili: { cid: "690", pid: "2" }
     },
 
-    douyu: "77",
     huya: "1830",
-  },
-  {
-    key: "g1837_6609",
-    name: "英灵神殿",
-    aliases: ["英灵神殿"],
-
-    douyu: "1837",
-    huya: "6609",
   },
   {
     key: "lol",
@@ -2730,7 +2259,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "446",
   },
   {
-    key: "g1227_6219_1010016_666",
+    key: "yjwj",
     name: "永劫无间",
     aliases: ["永劫无间"],
     sites: {
@@ -2764,7 +2293,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "7669",
   },
   {
-    key: "g4451_1010378_407",
+    key: "g4451_407",
     name: "游戏王：决斗链接",
     aliases: ["游戏王：决斗链接"],
     sites: {
@@ -2772,8 +2301,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     huya: "4451",
-    douyin: "1010378",
-    douyinPid: "1",
   },
   {
     key: "group-yule",
@@ -2788,7 +2315,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huyaTabId: "8",
     huyaGroup: "100022",
     douyinGroupIds: ["5"],
-    douyinPartitions: [{ cid: "1010011", pid: "1" }, { cid: "1010022", pid: "1" }],
+    douyinPartitions: [{ cid: "1011640", pid: "1" }, { cid: "1010806", pid: "1" }],
   },
   {
     key: "g4149_9521_1010263_822",
@@ -2804,16 +2331,7 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g536_1010343",
-    name: "元气骑士",
-    aliases: ["元气骑士"],
-
-    douyu: "536",
-    douyin: "1010343",
-    douyinPid: "1",
-  },
-  {
-    key: "g1223_5489_1010039_321",
+    key: "ys",
     name: "原神",
     aliases: ["原神"],
     sites: {
@@ -2826,23 +2344,33 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g3806_7925_1010176",
+    key: "g3806_7925",
     name: "原子之心",
     aliases: ["原子之心"],
 
     douyu: "3806",
     huya: "7925",
-    douyin: "1010176",
-    douyinPid: "1",
   },
   {
-    key: "g1010024_215",
+    key: "84",
+    name: "远光84",
+    aliases: ["远光84"],
+    sites: {
+      bilibili: { cid: "965", pid: "2" }
+    },
+
+    douyu: "3992",
+  },
+  {
+    key: "g588_4339_1010024_215",
     name: "月圆之夜",
     aliases: ["月圆之夜"],
     sites: {
       bilibili: { cid: "215", pid: "3" }
     },
 
+    douyu: "588",
+    huya: "4339",
     douyin: "1010024",
     douyinPid: "1",
   },
@@ -2854,33 +2382,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "917",
     huya: "5485",
     douyin: "1010005",
-    douyinPid: "1",
-  },
-  {
-    key: "40k",
-    name: "战锤40K：暗潮",
-    aliases: ["战锤40K：暗潮"],
-
-    douyu: "3773",
-    huya: "3016",
-  },
-  {
-    key: "6",
-    name: "战地风云6",
-    aliases: ["战地风云6"],
-    sites: {
-      bilibili: { cid: "597", pid: "6" }
-    },
-
-    huya: "4371",
-  },
-  {
-    key: "g3969_1010108",
-    name: "战火勋章",
-    aliases: ["战火勋章"],
-
-    douyu: "3969",
-    douyin: "1010108",
     douyinPid: "1",
   },
   {
@@ -2897,34 +2398,12 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g1010788_579",
-    name: "战神",
-    aliases: ["战神"],
-    sites: {
-      bilibili: { cid: "579", pid: "6" }
-    },
-
-    douyin: "1010788",
-    douyinPid: "1",
-  },
-  {
     key: "g1382_1010445",
     name: "战术小队",
     aliases: ["战术小队"],
 
     douyu: "1382",
     douyin: "1010445",
-    douyinPid: "1",
-  },
-  {
-    key: "g1010089_293",
-    name: "战双帕弥什",
-    aliases: ["战双帕弥什"],
-    sites: {
-      bilibili: { cid: "293", pid: "3" }
-    },
-
-    douyin: "1010089",
     douyinPid: "1",
   },
   {
@@ -2948,14 +2427,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "624",
     douyin: "1010170",
     douyinPid: "1",
-  },
-  {
-    key: "g1034_1599",
-    name: "真三国无双",
-    aliases: ["真三国无双"],
-
-    douyu: "1034",
-    huya: "1599",
   },
   {
     key: "g1105_485_1010324_309",
@@ -3011,25 +2482,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyinPid: "1",
   },
   {
-    key: "g3868_1010435",
-    name: "至暗时刻",
-    aliases: ["至暗时刻"],
-
-    douyu: "3868",
-    douyin: "1010435",
-    douyinPid: "1",
-  },
-  {
-    key: "g4196_858",
-    name: "致命公司",
-    aliases: ["致命公司"],
-    sites: {
-      bilibili: { cid: "858", pid: "6" }
-    },
-
-    douyu: "4196",
-  },
-  {
     key: "g543_1671",
     name: "中国象棋",
     aliases: ["中国象棋"],
@@ -3072,29 +2524,12 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "100032",
   },
   {
-    key: "g3562_2276",
-    name: "装甲战争",
-    aliases: ["装甲战争"],
-
-    douyu: "3562",
-    huya: "2276",
-  },
-  {
     key: "g3690_100029",
     name: "综合手游",
     aliases: ["综合手游"],
 
     douyu: "3690",
     huya: "100029",
-  },
-  {
-    key: "nba",
-    name: "最强NBA",
-    aliases: ["最强NBA"],
-
-    douyu: "318",
-    douyin: "1010107",
-    douyinPid: "1",
   },
   {
     key: "14",
@@ -3114,6 +2549,16 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "5011",
     douyin: "1010002",
     douyinPid: "1",
+  },
+  {
+    key: "arcraiders",
+    name: "ARC Raiders",
+    aliases: ["ARC Raiders"],
+    sites: {
+      bilibili: { cid: "1023", pid: "2" }
+    },
+
+    douyu: "3897",
   },
   {
     key: "g178_2413_333",
@@ -3156,6 +2601,19 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "6",
     huya: "862",
     douyin: "1010003",
+    douyinPid: "1",
+  },
+  {
+    key: "dnf",
+    name: "DNF",
+    aliases: ["DNF", "dnf", "地下城与勇士"],
+    sites: {
+      bilibili: { cid: "78", pid: "2" }
+    },
+
+    douyu: "40",
+    huya: "2",
+    douyin: "1010092",
     douyinPid: "1",
   },
   {
@@ -3264,15 +2722,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     douyu: "438",
   },
   {
-    key: "picopark",
-    name: "PICO PARK",
-    aliases: ["PICO PARK"],
-
-    douyu: "3016",
-    douyin: "1011299",
-    douyinPid: "1",
-  },
-  {
     key: "g331_9_610",
     name: "QQ飞车",
     aliases: ["QQ飞车"],
@@ -3313,14 +2762,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     },
 
     huya: "1090",
-  },
-  {
-    key: "g710_2440",
-    name: "QQ炫舞",
-    aliases: ["QQ炫舞"],
-
-    douyu: "710",
-    huya: "2440",
   },
   {
     key: "scum",

@@ -49,6 +49,8 @@ export function buildHuyaPicIndex(huyaGroups) {
 
 export function lookupHuyaPic({ huyaCid, name }, index) {
   if (huyaCid) {
+    const fromIndex = index?.byCid?.get(String(huyaCid));
+    if (fromIndex) return fromIndex;
     const pic = huyaPicFromCid(huyaCid);
     if (pic) return pic;
   }

@@ -222,12 +222,12 @@ import {
   buildCategorySections,
   normalizeBrowseCategoryGroups,
 } from "../utils/drawerCategories.js";
-import { fetchHotCategories } from "../api/crossBrowse.js";
+import { loadCrossCategoryItems } from "../utils/crossCategoryItems.js";
 import { useBrowse } from "../composables/useBrowse.js";
 import { useFollow } from "../composables/useFollow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
 import { useHoverUi } from "../composables/useHoverUi.js";
-import { displayCategoryName } from "../utils/categoryDisplay.js";
+import { crossCategoryKeysEqual, displayCategoryName } from "../utils/categoryDisplay.js";
 
 const DRAWER_ITEMS_PER_SECTION = 18;
 
@@ -296,8 +296,7 @@ async function loadHotCategories() {
   loadingHot.value = true;
   hotError.value = "";
   try {
-    const data = await fetchHotCategories();
-    hotCategories.value = data.categories || [];
+    hotCategories.value = await loadCrossCategoryItems();
   } catch (err) {
     hotCategories.value = [];
     hotError.value = err.message;
@@ -310,6 +309,8 @@ const crossDrawerItems = computed(() =>
   (hotCategories.value || []).map((item) => ({
     key: item.key,
     name: item.name,
+    pic: item.pic,
+    huyaCid: item.huyaCid,
   })),
 );
 
@@ -332,7 +333,7 @@ function categoryLabel(item) {
 function isCategoryItemActive(item) {
   if (item.key != null) {
     return route.name === "all-category-rooms"
-      && String(route.params.key || "") === String(item.key || "");
+      && crossCategoryKeysEqual(item.key, route.params.key);
   }
   if (route.name !== "category-rooms") return false;
   if (String(route.params.site || "") !== drawerSite.value) return false;

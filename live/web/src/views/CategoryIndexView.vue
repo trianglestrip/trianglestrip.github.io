@@ -77,7 +77,10 @@ async function loadCrossCategories() {
   loadingCross.value = true;
   crossError.value = "";
   try {
-    crossItems.value = await loadCrossCategoryItems();
+    crossItems.value = await loadCrossCategoryItems({ force: true });
+    if (!crossItems.value.length) {
+      crossError.value = "暂无分类数据";
+    }
   } catch (err) {
     crossItems.value = [];
     crossError.value = err.message;

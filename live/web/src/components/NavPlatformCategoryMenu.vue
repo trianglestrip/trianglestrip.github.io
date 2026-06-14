@@ -19,7 +19,7 @@
           :key="item.key"
           :to="crossLink(item)"
           class="nav-platform-menu__hot-item"
-          :class="{ active: item.key === activeCrossKey }"
+          :class="{ active: isActiveCrossItem(item) }"
           @click="onNavigate"
         >
           {{ item.name }}
@@ -64,8 +64,8 @@ import {
   normalizeBrowseCategoryGroups,
 } from "../utils/drawerCategories.js";
 import { fetchCategories } from "../api/browse.js";
-import { fetchHotCategories } from "../api/crossBrowse.js";
-import { displayCategoryName } from "../utils/categoryDisplay.js";
+import { loadCrossCategoryItems } from "../utils/crossCategoryItems.js";
+import { crossCategoryKeysEqual, displayCategoryName } from "../utils/categoryDisplay.js";
 
 const props = defineProps({
   platformId: { type: String, required: true },
@@ -91,6 +91,10 @@ const activeCrossKey = computed(() => {
   }
   return "";
 });
+
+function isActiveCrossItem(item) {
+  return crossCategoryKeysEqual(item.key, activeCrossKey.value);
+}
 
 function categoryLink(item) {
   const query = item.pid != null ? { pid: String(item.pid) } : undefined;
@@ -144,8 +148,8 @@ async function loadHot() {
     return;
   }
   if (!hotCache.promise) {
-    hotCache.promise = fetchHotCategories()
-      .then((data) => (data.categories || []).map((item) => ({
+    hotCache.promise = loadCrossCategoryItems()
+      .then((items) => items.map((item) => ({
         key: item.key,
         name: item.name,
       })))

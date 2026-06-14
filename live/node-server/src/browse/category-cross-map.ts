@@ -105,6 +105,9 @@ export function findCrossCategory(
       if (isGroupEntry(entry)) continue;
       const mapped = gameCidForSite(entry, site);
       if (mapped && mapped === cidText) return entry;
+      if (site === "douyin" && entry.douyinPartitions?.some((part) => part.cid === cidText)) {
+        return entry;
+      }
     }
     for (const entry of CROSS_CATEGORIES) {
       if (!isGroupEntry(entry)) continue;

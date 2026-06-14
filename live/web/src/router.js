@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { PLATFORMS, supportsBrowse, supportsCrossBrowse } from "./config/platforms";
+import { resolveCrossCategoryKey } from "./utils/categoryDisplay.js";
 import { useSearchDialog } from "./composables/useSearchDialog.js";
 
 const SiteHomeView = () => import("./views/SiteHomeView.vue");
@@ -51,7 +52,15 @@ const router = createRouter({
       name: "all-category-rooms",
       component: AllPlatformCategoryRoomsView,
       props: (route) => ({ crossKey: String(route.params.key || "") }),
-      beforeEnter: () => (supportsCrossBrowse("all") ? true : "/all"),
+      beforeEnter: (to) => {
+        if (!supportsCrossBrowse("all")) return "/all";
+        const raw = String(to.params.key || "").trim();
+        const key = resolveCrossCategoryKey(raw);
+        if (key && key !== raw) {
+          return { name: "all-category-rooms", params: { key }, replace: true };
+        }
+        return true;
+      },
     },
     { path: "/follow", name: "follow", component: FollowView },
     { path: "/time", name: "time", component: TimeView },

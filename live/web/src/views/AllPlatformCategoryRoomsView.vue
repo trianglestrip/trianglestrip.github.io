@@ -31,6 +31,7 @@ import { roomKey } from "../api/browse.js";
 import { useCrossBrowse } from "../composables/useCrossBrowse.js";
 import { preloadPlayView } from "../utils/preloadPlayView.js";
 import { saveBrowseContext } from "../utils/browseContext.js";
+import { resolveCrossCategoryKey } from "../utils/categoryDisplay.js";
 
 const props = defineProps({
   crossKey: { type: String, default: "" },
@@ -51,7 +52,7 @@ const {
 } = useCrossBrowse();
 
 async function loadForKey(key) {
-  const text = String(key || "").trim();
+  const text = resolveCrossCategoryKey(key);
   if (!text) return;
   await loadHotCategories();
   await selectCategory(text);
