@@ -1,69 +1,68 @@
 {
   "source": "zhihu",
   "title": "知乎热榜",
-  "updated_at": "2026-06-14T10:07:25+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-06-14T12:09:19+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "WSBK艾米莉亚罗马涅站，张雪机车获得第一回合的冠军，如何评价德比斯和张雪机车的表现？",
-      "url": "https://www.zhihu.com/question/2049229235466810282",
-      "hot": "833"
+      "title": "网友揭秘「安徽无为板鸭其实是鹅」，协会会长证实鹅肉制成的板鸭风味更佳，鹅肉和鸭肉的口感大吗？差异在哪？",
+      "url": "https://www.zhihu.com/question/2048711037625578836",
+      "hot": "911"
     },
     {
       "rank": 2,
-      "title": "如何评价智谱 6 月 13 日发布的 GLM5.2 模型？",
-      "url": "https://www.zhihu.com/question/2049161661567723164",
-      "hot": "833"
+      "title": "25-26赛季NBA总决赛G5尼克斯94比90马刺，以总比分4比1夺得NBA总冠军，如何评价本场比赛？",
+      "url": "https://www.zhihu.com/question/2049285900409091751",
+      "hot": "785"
     },
     {
       "rank": 3,
-      "title": "路虎揽胜极光 L 售价跌破 18 万，曾落地近 90 万，这说明了什么？",
-      "url": "https://www.zhihu.com/question/2048499018230149377",
-      "hot": "199"
+      "title": "如何看待张雪机车获得第六冠？",
+      "url": "https://www.zhihu.com/question/2049232780756783941",
+      "hot": "719"
     },
     {
       "rank": 4,
-      "title": "Lisa 世界杯歌曲因充斥炫富歌词和性感舞蹈被批低俗，50 万韩国网友请愿「换人」，如何看待此事？",
-      "url": "https://www.zhihu.com/question/2043273255205832365",
-      "hot": "145"
+      "title": "阿里合伙人周靖人被曝刚任首席科学家 6 天拟离职，阿里巴巴称消息不实，具体什么情况？",
+      "url": "https://www.zhihu.com/question/2049059459964613573",
+      "hot": "436"
     },
     {
       "rank": 5,
-      "title": "2026年世界杯小组赛B 组，卡塔尔补时绝平，1比1绝平瑞士，如何评价本场比赛？",
-      "url": "https://www.zhihu.com/question/2048794573590065913",
-      "hot": "114"
+      "title": "西湖大学本科生学费内地生每年6000元，外籍生35万元，相差近58倍，如何看待这种定价？是国际惯例吗？",
+      "url": "https://www.zhihu.com/question/2047264542703597437",
+      "hot": "350"
     },
     {
       "rank": 6,
-      "title": "加油站会在什么时候大批量的倒闭？",
-      "url": "https://www.zhihu.com/question/2030910414037458949",
-      "hot": "113"
+      "title": "女子考编第一被低分者顶替，维权后岗位取消，相关部门立案调查，为何会出现这一情况？招聘公平性如何保障？",
+      "url": "https://www.zhihu.com/question/2049225127036990849",
+      "hot": "334"
     },
     {
       "rank": 7,
-      "title": "日本炸鸡店称一锅油反复用 66 年，从食品安全和健康角度看，这种做法存在哪些潜在风险？",
-      "url": "https://www.zhihu.com/question/2048692040377033581",
-      "hot": "113"
+      "title": "为什么汉语里可以说“把门开开”但是不能说“把门关关”？",
+      "url": "https://www.zhihu.com/question/2041152963666764363",
+      "hot": "317"
     },
     {
       "rank": 8,
-      "title": "谢苗长的也行，他的身手不比李连杰和吴京差，为何谢苗一直无法走向大红大紫？",
-      "url": "https://www.zhihu.com/question/2048504030540968117",
-      "hot": "108"
+      "title": "日本炸鸡店一锅油反复用 66 年，店主称「只要油好好保养，味道没问题」，这种油真的不会带来健康隐患吗？",
+      "url": "https://www.zhihu.com/question/2048711796341432495",
+      "hot": "285"
     },
     {
       "rank": 9,
-      "title": "2026年世界杯小组赛D组，巴西vs摩洛哥，如何评价本场比赛？",
-      "url": "https://www.zhihu.com/question/2048794857506698964",
-      "hot": "104"
+      "title": "有什么你去了巴西才知道的事情？",
+      "url": "https://www.zhihu.com/question/546244199",
+      "hot": "246"
     },
     {
       "rank": 10,
-      "title": "吕秀才穷酸还自负，为啥郭芙蓉一个千金小姐能看上他？",
-      "url": "https://www.zhihu.com/question/2047372994247496254",
-      "hot": "103"
+      "title": "《潜伏》里的吴站长私下会偷卖重要情报换金条吗？",
+      "url": "https://www.zhihu.com/question/1368248757",
+      "hot": "217"
     }
   ]
 }

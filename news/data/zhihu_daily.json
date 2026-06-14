@@ -1,57 +1,56 @@
 {
   "source": "zhihu_daily",
   "title": "知乎日报",
-  "updated_at": "2026-06-14T10:08:56+00:00",
-  "fetch_ok": false,
-  "error": "<urlopen error [Errno 101] Network is unreachable>",
+  "updated_at": "2026-06-14T12:09:20+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "给孩子取名沐兮很傻吗?",
+      "url": "https://daily.zhihu.com/story/9790398",
+      "hot": "作者 / 萧半杨"
+    },
+    {
+      "rank": 2,
       "title": "有些动物失去肢体后会自己长出来，为啥人类不行？",
       "url": "https://daily.zhihu.com/story/9790380",
       "hot": "作者 / 梧桐"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "有哪些看完后惊呼「卧槽」的历史真实事件或冷知识？",
       "url": "https://daily.zhihu.com/story/9790355",
       "hot": "作者 / 知乎用户"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "欧美有哪些传统食物可以反映历史上人民生活的艰难时期？",
       "url": "https://daily.zhihu.com/story/9790333",
       "hot": "作者 / 永乐通宝"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "历史上哪些著名人物拥有大胃袋？",
       "url": "https://daily.zhihu.com/story/9790309",
       "hot": "作者 / 例不虚发探花郎"
     },
     {
-      "rank": 5,
-      "title": "为什么编程语言里的乘法符号是 * 而不是 × ，后者不应该更符合主流吗？",
-      "url": "https://daily.zhihu.com/story/9790302",
-      "hot": "作者 / icon-meh"
-    },
-    {
       "rank": 6,
-      "title": "为什么博物馆的展板说明总是写得看不懂，能不能用「人话」解释？",
-      "url": "https://daily.zhihu.com/story/9790381",
-      "hot": "宁南左侯 · 3 分钟阅读"
+      "title": "可以推荐一下冷门但确实美丽的花卉吗？",
+      "url": "https://daily.zhihu.com/story/9790405",
+      "hot": "小星有鬼 · 6 分钟阅读"
     },
     {
       "rank": 7,
-      "title": "如果让你推荐一件「有故事」的文物，你会推荐哪个？",
-      "url": "https://daily.zhihu.com/story/9790390",
-      "hot": "小帽officials · 5 分钟阅读"
+      "title": "《基督山伯爵》这种纯种爽文为什么被评为名著？",
+      "url": "https://daily.zhihu.com/story/9790415",
+      "hot": "杪秋 · 7 分钟阅读"
     },
     {
       "rank": 8,
-      "title": "为什么大家都说人生的容错率大到无法想象?",
-      "url": "https://daily.zhihu.com/story/9790396",
-      "hot": "知乎用户 · 6 分钟阅读"
+      "title": "你觉得你能扛得住严刑拷打吗?",
+      "url": "https://daily.zhihu.com/story/9790421",
+      "hot": "莫也 · 6 分钟阅读"
     }
   ]
 }
