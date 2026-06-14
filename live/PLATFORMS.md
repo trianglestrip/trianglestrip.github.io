@@ -82,14 +82,37 @@
 
 ---
 
-## Bilibili（占位，Wave 2）
+## Bilibili (bilibili)
 
-| 能力 | 计划 API | 状态 |
-|------|----------|------|
-| Resolve | `room/v1/Room/get_info`, `xlive/web-room/v2/index/getRoomPlayInfo` | 待实现 |
-| Browse | `room/v1/Area/getList`, `getRoomList`, `second/getList` | 待实现 |
-| Danmaku | `getDanmuInfo` + WS op=7/2 | 待实现 |
-| crossWeight | 1 | registry 占位 |
+| 能力 | 模块 | 说明 |
+|------|------|------|
+| Resolve | `resolve/bilibili/` | get_info + getRoomPlayInfo，qn 10000/400/250/150/80 |
+| Browse | `browse/bilibili.ts` | Area/getList、getRoomList、second/getList（失败降级 get_user_recommend） |
+| Danmaku | `danmaku/bilibili.ts` + 前端 WS | getDanmuInfo（失败降级 getConf）→ op=7 鉴权、op=2 心跳 |
+| 图标 | 分类 API `pic` | 随 categories 返回 |
+| crossWeight | 1 | 跨平台聚合权重 2:2:1:1 |
+
+**Resolve API**
+
+| 接口 | 用途 |
+|------|------|
+| `room/v1/Room/get_info` | 房间 meta、live_status |
+| `xlive/web-room/v2/index/getRoomPlayInfo` | 多档 FLV（http_stream/flv） |
+
+**Browse API**
+
+| 接口 | 用途 |
+|------|------|
+| `room/v1/Area/getList` | 分类树（parent 2/3/6/1 → 网游/手游/单机/娱乐） |
+| `room/v1/Area/getRoomList` | 分区房间（cid=area_id, pid=parent_area_id） |
+| `xlive/web-interface/v1/second/getList` | 推荐（风控时降级 `room/v1/Room/get_user_recommend`） |
+
+**Danmaku**
+
+| 接口 / 协议 | 说明 |
+|-------------|------|
+| `xlive/web-room/v1/index/getDanmuInfo` | host_list + token（失败降级 `room/v1/Danmu/getConf`） |
+| WS `wss://{host}:{port}/sub` | 鉴权 op=7，心跳 op=2，消息 op=5（Brotli + DANMU_MSG） |
 
 ---
 

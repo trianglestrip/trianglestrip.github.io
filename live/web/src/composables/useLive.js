@@ -246,6 +246,11 @@ function flvOptionsForSite(site) {
       Referer: "https://live.douyin.com/",
       Origin: "https://live.douyin.com",
     };
+  } else if (site === "bilibili") {
+    config.headers = {
+      Referer: "https://live.bilibili.com/",
+      Origin: "https://live.bilibili.com",
+    };
   }
   return config;
 }

@@ -43,7 +43,7 @@ defineProps({
 });
 
 const filterPlatforms = PLATFORMS.filter(
-  (p) => p.enabled && p.id !== "bilibili" && p.id !== "all",
+  (p) => p.enabled && p.id !== "all",
 );
 </script>
 

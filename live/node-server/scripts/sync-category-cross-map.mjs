@@ -5,6 +5,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { fetchBilibiliCategories } from "../src/browse/bilibili.ts";
 import { fetchDouyuCategories } from "../src/browse/douyu.ts";
 import { fetchHuyaCategories } from "../src/browse/huya.ts";
 import { fetchDouyinGameCategories } from "../src/browse/douyin.ts";
@@ -138,6 +139,7 @@ const GROUP_MANUAL = [
     douyuGroup: "1",
     huyaTabId: "1",
     huyaGroup: "100023",
+    bilibiliParent: "2",
     douyinGroupIds: ["1", "2"],
   },
   {
@@ -148,6 +150,7 @@ const GROUP_MANUAL = [
     douyuGroup: "9",
     huyaTabId: "3",
     huyaGroup: "100004",
+    bilibiliParent: "3",
     douyinGroupIds: ["4", "6", "7"],
   },
   {
@@ -158,6 +161,7 @@ const GROUP_MANUAL = [
     douyuGroup: "15",
     huyaTabId: "2",
     huyaGroup: "100002",
+    bilibiliParent: "6",
     douyinGroupIds: ["3"],
   },
   {
@@ -168,6 +172,7 @@ const GROUP_MANUAL = [
     douyuGroup: "2",
     huyaTabId: "8",
     huyaGroup: "100022",
+    bilibiliParent: "1",
     douyinGroupIds: ["5"],
   },
 ];
@@ -191,6 +196,9 @@ function buildGroupEntries(douyinGroups) {
   return GROUP_MANUAL.map((entry) => ({
     ...entry,
     douyinPartitions: resolveDouyinPartitions(entry.douyinGroupIds, douyinGroups),
+    ...(entry.bilibiliParent
+      ? { sites: { bilibili: { groupId: String(entry.bilibiliParent) } } }
+      : {}),
   }));
 }
 
@@ -208,15 +216,16 @@ function flatCategories(groups) {
 }
 
 function platformCount(entry) {
-  return [entry.douyu, entry.huya, entry.douyin].filter(Boolean).length;
+  return [entry.douyu, entry.huya, entry.douyin, entry.sites?.bilibili?.cid].filter(Boolean).length;
 }
 
-function manualCovered(name, douyu, huya, douyin, manualEntries) {
+function manualCovered(name, douyu, huya, douyin, bilibili, manualEntries) {
   for (const entry of manualEntries) {
     if (entry.name === name) return true;
     if (douyu && entry.douyu === douyu) return true;
     if (huya && entry.huya === huya) return true;
     if (douyin && entry.douyin === douyin) return true;
+    if (bilibili && entry.sites?.bilibili?.cid === bilibili) return true;
   }
   return false;
 }
@@ -245,9 +254,23 @@ function escapeString(value) {
   return JSON.stringify(value);
 }
 
+function formatSitesBlock(entry) {
+  const sites = entry.sites;
+  if (!sites || !Object.keys(sites).length) return "";
+  const parts = Object.entries(sites).map(([site, ref]) => {
+    const fields = [];
+    if (ref.cid) fields.push(`cid: ${escapeString(ref.cid)}`);
+    if (ref.pid) fields.push(`pid: ${escapeString(ref.pid)}`);
+    if (ref.groupId) fields.push(`groupId: ${escapeString(ref.groupId)}`);
+    return `      ${site}: { ${fields.join(", ")} }`;
+  });
+  return `    sites: {\n${parts.join(",\n")}\n    },\n`;
+}
+
 function formatSiteFields(entry) {
   const lines = [];
   if (entry.kind) lines.push(`    kind: ${escapeString(entry.kind)},`);
+  lines.push(formatSitesBlock(entry));
   if (entry.douyu) lines.push(`    douyu: ${escapeString(entry.douyu)},`);
   if (entry.huya) lines.push(`    huya: ${escapeString(entry.huya)},`);
   if (entry.douyin) lines.push(`    douyin: ${escapeString(entry.douyin)},`);
@@ -289,6 +312,16 @@ function formatEntryJs(entry) {
     `aliases: [${aliases.map((a) => escapeString(a)).join(", ")}]`,
   ];
   if (entry.kind) parts.push(`kind: ${escapeString(entry.kind)}`);
+  if (entry.sites && Object.keys(entry.sites).length) {
+    const siteParts = Object.entries(entry.sites).map(([site, ref]) => {
+      const fields = [];
+      if (ref.cid) fields.push(`cid: ${escapeString(ref.cid)}`);
+      if (ref.pid) fields.push(`pid: ${escapeString(ref.pid)}`);
+      if (ref.groupId) fields.push(`groupId: ${escapeString(ref.groupId)}`);
+      return `${site}: { ${fields.join(", ")} }`;
+    });
+    parts.push(`sites: { ${siteParts.join(", ")} }`);
+  }
   if (entry.douyu) parts.push(`douyu: ${escapeString(entry.douyu)}`);
   if (entry.huya) parts.push(`huya: ${escapeString(entry.huya)}`);
   if (entry.douyin) parts.push(`douyin: ${escapeString(entry.douyin)}`);
@@ -331,6 +364,8 @@ function norm(text) {
 }
 
 function gameCidForSite(entry, site) {
+  const ref = entry.sites?.[site];
+  if (ref?.cid) return ref.cid;
   if (site === "douyu") return entry.douyu;
   if (site === "huya") return entry.huya;
   if (site === "douyin") return entry.douyin;
@@ -338,6 +373,8 @@ function gameCidForSite(entry, site) {
 }
 
 function groupCidForSite(entry, site) {
+  const ref = entry.sites?.[site];
+  if (ref?.groupId) return ref.groupId;
   if (site === "douyu") return entry.douyuGroup;
   if (site === "huya") return entry.huyaGroup;
   return undefined;
@@ -385,6 +422,13 @@ export function displayCategoryName(site, categoryName, cid) {
   return entry?.name || raw;
 }
 
+export function displayCategoryGroupName(site, categoryName, cid) {
+  const raw = String(categoryName || "").trim();
+  if (!raw) return "";
+  if (site === "douyin" || site === "douyu" || site === "huya" || site === "bilibili") return raw;
+  return displayCategoryName(site, raw, cid);
+}
+
 export async function loadCategoryCrossMap() {
   if (loadPromise) return loadPromise;
   loadPromise = (async () => {
@@ -404,44 +448,83 @@ export async function loadCategoryCrossMap() {
 `;
 }
 
-const [douyuGroups, huyaGroups, douyinGroups] = await Promise.all([
+function enrichWithBilibili(entry, bilibiliMap) {
+  if (entry.sites?.bilibili?.cid || entry.sites?.bilibili?.groupId) return entry;
+  const hit = bilibiliMap.get(entry.name);
+  if (!hit?.cid) return entry;
+  return {
+    ...entry,
+    sites: {
+      ...(entry.sites || {}),
+      bilibili: { cid: hit.cid, ...(hit.pid ? { pid: hit.pid } : {}) },
+    },
+  };
+}
+
+const [douyuGroups, huyaGroups, douyinGroups, bilibiliGroups] = await Promise.all([
   fetchDouyuCategories(),
   fetchHuyaCategories(),
   fetchDouyinGameCategories(),
+  fetchBilibiliCategories(),
 ]);
 const douyuMap = flatCategories(douyuGroups);
 const huyaMap = flatCategories(huyaGroups);
 const douyinMap = flatCategories(douyinGroups);
+const bilibiliMap = flatCategories(bilibiliGroups);
 
 const usedKeys = new Set([...MANUAL, ...GROUP_MANUAL].map((entry) => entry.key));
 const entries = [...MANUAL.map((entry) => ({ ...entry })), ...buildGroupEntries(douyinGroups)];
 
-const allNames = new Set([...douyuMap.keys(), ...huyaMap.keys(), ...douyinMap.keys()]);
+const allNames = new Set([
+  ...douyuMap.keys(),
+  ...huyaMap.keys(),
+  ...douyinMap.keys(),
+  ...bilibiliMap.keys(),
+]);
 for (const name of allNames) {
   const douyu = douyuMap.get(name)?.cid;
   const huya = huyaMap.get(name)?.cid;
   const douyinInfo = douyinMap.get(name);
   const douyin = douyinInfo?.cid;
   const douyinPid = douyinInfo?.pid || "1";
+  const bilibiliInfo = bilibiliMap.get(name);
+  const bilibili = bilibiliInfo?.cid;
+  const bilibiliPid = bilibiliInfo?.pid;
 
-  if (platformCount({ douyu, huya, douyin }) < 2) continue;
-  if (manualCovered(name, douyu, huya, douyin, MANUAL)) continue;
+  if (platformCount({ douyu, huya, douyin, sites: bilibili ? { bilibili: { cid: bilibili } } : undefined }) < 2) {
+    continue;
+  }
+  if (manualCovered(name, douyu, huya, douyin, bilibili, MANUAL)) continue;
+
+  const sites = bilibili
+    ? { bilibili: { cid: bilibili, ...(bilibiliPid ? { pid: bilibiliPid } : {}) } }
+    : undefined;
 
   entries.push({
-    key: makeKey(name, [douyu, huya, douyin], usedKeys),
+    key: makeKey(name, [douyu, huya, douyin, bilibili], usedKeys),
     name,
     aliases: [name],
+    ...(sites ? { sites } : {}),
     ...(douyu ? { douyu } : {}),
     ...(huya ? { huya } : {}),
     ...(douyin ? { douyin, douyinPid } : {}),
   });
 }
 
+for (let i = 0; i < entries.length; i += 1) {
+  entries[i] = enrichWithBilibili(entries[i], bilibiliMap);
+}
+
 entries.sort((a, b) => a.name.localeCompare(b.name, "zh"));
 
 const withDouyin = entries.filter((e) => e.douyin || e.douyinPartitions?.length).length;
-const withThree = entries.filter(
-  (e) => (e.douyu || e.douyuGroup) && (e.huya || e.huyaGroup) && (e.douyin || e.douyinPartitions?.length),
+const withBilibili = entries.filter((e) => e.sites?.bilibili?.cid || e.sites?.bilibili?.groupId).length;
+const withFour = entries.filter(
+  (e) =>
+    (e.douyu || e.douyuGroup) &&
+    (e.huya || e.huyaGroup) &&
+    (e.douyin || e.douyinPartitions?.length) &&
+    (e.sites?.bilibili?.cid || e.sites?.bilibili?.groupId),
 ).length;
 const groupCount = entries.filter((e) => e.kind === "group").length;
 
@@ -456,6 +539,6 @@ ${entries.map(formatEntry).join(",\n")}
 fs.writeFileSync(OUT_TS, tsBody, "utf8");
 fs.writeFileSync(OUT_FALLBACK_JS, buildFallbackJs(entries), "utf8");
 
-console.log(`同步完成: ${entries.length} 条映射（大类 ${groupCount}，含抖音 ${withDouyin} 条，三平台 ${withThree} 条）`);
+console.log(`同步完成: ${entries.length} 条映射（大类 ${groupCount}，含抖音 ${withDouyin} 条，含 B 站 ${withBilibili} 条，四平台 ${withFour} 条）`);
 console.log(`  -> ${OUT_TS}`);
 console.log(`  -> ${OUT_FALLBACK_JS}`);

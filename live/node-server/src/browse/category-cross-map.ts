@@ -8,7 +8,7 @@ export interface DouyinPartitionRef {
 }
 
 export interface CrossCategorySiteRef {
-  cid: string;
+  cid?: string;
   pid?: string;
   groupId?: string;
 }
@@ -85,6 +85,13 @@ export function crossGroupCidForSite(entry: CrossCategoryEntry, site: string): s
 export function douyinPidForEntry(entry: CrossCategoryEntry): string {
   const pid = entry.sites?.douyin?.pid ?? entry.douyinPid;
   return String(pid || "1");
+}
+
+export function sitePidForEntry(entry: CrossCategoryEntry, site: string): string | undefined {
+  const ref = siteRefFor(entry, site);
+  if (ref?.pid) return ref.pid;
+  if (site === "douyin") return douyinPidForEntry(entry);
+  return undefined;
 }
 
 export function findCrossCategory(

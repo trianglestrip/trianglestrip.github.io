@@ -13,16 +13,6 @@ export function connectDouyin(ctx, roomId) {
     status.value = "弹幕已连接";
   });
 
-  eventSourceRef.current.addEventListener("meta", (event) => {
-    try {
-      const item = JSON.parse(event.data);
-      if (item?.liveStartAt) roomMeta.value.liveStartAt = Number(item.liveStartAt) || 0;
-      if (item?.fanGroup) roomMeta.value.fanGroup = String(item.fanGroup);
-    } catch {
-      /* ignore malformed payload */
-    }
-  });
-
   eventSourceRef.current.addEventListener("chat", (event) => {
     try {
       const item = JSON.parse(event.data);

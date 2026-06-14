@@ -1,3 +1,9 @@
+import {
+  fetchBilibiliCategories,
+  fetchBilibiliCategoryRooms,
+  fetchBilibiliGroupRooms,
+  fetchBilibiliRecommendRooms,
+} from "../browse/bilibili.js";
 import { fetchDouyuCategories, fetchDouyuGroupRooms, fetchDouyuRooms } from "../browse/douyu.js";
 import {
   fetchDouyinGameCategories,
@@ -5,8 +11,10 @@ import {
   fetchDouyinRecommendRooms,
 } from "../browse/douyin.js";
 import { fetchHuyaCategories, fetchHuyaLiveList } from "../browse/huya.js";
+import { fetchBilibiliDanmakuSession } from "../danmaku/bilibili.js";
 import { fetchDouyinDanmakuSession } from "../danmaku/douyin.js";
 import { fetchHuyaDanmakuSession } from "../danmaku/huya.js";
+import * as bilibiliResolve from "../resolve/bilibili/index.js";
 import * as douyinResolve from "../resolve/douyin/index.js";
 import * as douyuResolve from "../resolve/douyu/index.js";
 import * as huyaResolve from "../resolve/huya/index.js";
@@ -58,12 +66,23 @@ const douyinBrowse: BrowseAdapter = {
   },
 };
 
+const bilibiliBrowse: BrowseAdapter = {
+  fetchCategories: fetchBilibiliCategories,
+  fetchRecommendRooms: fetchBilibiliRecommendRooms,
+  fetchCategoryRooms: (cid, page, pid) => fetchBilibiliCategoryRooms(cid, page, pid),
+  fetchGroupRooms: (groupId, page, limit) => fetchBilibiliGroupRooms(groupId, page, limit),
+};
+
 const huyaDanmaku: DanmakuAdapter = {
   fetchSession: async (roomId) => fetchHuyaDanmakuSession(roomId) as unknown as Record<string, unknown>,
 };
 
 const douyinDanmaku: DanmakuAdapter = {
   fetchSession: async (roomId) => fetchDouyinDanmakuSession(roomId) as unknown as Record<string, unknown>,
+};
+
+const bilibiliDanmaku: DanmakuAdapter = {
+  fetchSession: async (roomId) => fetchBilibiliDanmakuSession(roomId) as unknown as Record<string, unknown>,
 };
 
 export const PLATFORMS: Record<string, PlatformDef> = {
@@ -89,6 +108,14 @@ export const PLATFORMS: Record<string, PlatformDef> = {
     danmaku: douyinDanmaku,
     crossWeight: 1,
     roomIdPattern: /(?:(?:live\.)?douyin\.com\/)?(\d+)$/,
+  },
+  bilibili: {
+    id: "bilibili",
+    resolve: asResolveAdapter(bilibiliResolve as never),
+    browse: bilibiliBrowse,
+    danmaku: bilibiliDanmaku,
+    crossWeight: 1,
+    roomIdPattern: /(?:live\.)?bilibili\.com\/(?:blanc\/)?(\d+)$/,
   },
 };
 
