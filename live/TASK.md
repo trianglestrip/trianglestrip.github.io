@@ -9,8 +9,8 @@
 |------|------|
 | Wave 0 | ✅ 已完成（commit `170420b`） |
 | Wave 1 | ✅ 已完成（commit `170420b`） |
-| Wave 2 | ✅ 代码完成，待 commit |
-| Wave 3 | ✅ 代码完成（platforms.js 已启用 B 站），待 commit |
+| Wave 2 | ✅ 已完成（commit `2cf461e`，已 push `daba4bc`） |
+| Wave 3 | ✅ 已完成（commit `2cf461e`，已 push `daba4bc`） |
 
 ---
 
