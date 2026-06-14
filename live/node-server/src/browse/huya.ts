@@ -57,6 +57,10 @@ interface HuyaGameRecord {
 
 let categoryCache: CategoryGroup[] | null = null;
 
+export function clearHuyaCategoryCache(): void {
+  categoryCache = null;
+}
+
 function huyaPic(cid: number | string): string {
   return HUYA_GAME_PIC.replace("{cid}", String(cid));
 }

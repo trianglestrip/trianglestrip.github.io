@@ -51,8 +51,10 @@ def main() -> None:
     cmds = [
         f"mkdir -p {DEPLOY_ROOT}/server/data",
         f"test -f {DEPLOY_ROOT}/server/data/follows-store.json && cp {DEPLOY_ROOT}/server/data/follows-store.json /tmp/follows-store.json.bak || true",
+        f"test -f {DEPLOY_ROOT}/server/data/categories-cache.json && cp {DEPLOY_ROOT}/server/data/categories-cache.json /tmp/categories-cache.json.bak || true",
         f"unzip -o {REMOTE_ZIP} -d {DEPLOY_ROOT}",
         "test -f /tmp/follows-store.json.bak && mv /tmp/follows-store.json.bak " + f"{DEPLOY_ROOT}/server/data/follows-store.json || true",
+        "test -f /tmp/categories-cache.json.bak && mv /tmp/categories-cache.json.bak " + f"{DEPLOY_ROOT}/server/data/categories-cache.json || true",
         "systemctl restart live-api",
         "sleep 2",
         "systemctl is-active live-api",

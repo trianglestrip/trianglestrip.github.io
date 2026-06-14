@@ -55,7 +55,7 @@
         <div v-if="chatPlayStatus" class="chat-item sys">系统：{{ chatPlayStatus }}</div>
         <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
       </div>
-      <div ref="chatListRef" class="chat-list scrolly">
+      <div ref="chatListRef" class="chat-list">
         <div ref="chatContentRef" class="chat-list__content">
           <div
             v-for="m in chatDanmakuMessages"
@@ -140,6 +140,27 @@
             <input v-model.number="chatSettings.gap" class="setting-range" type="range" min="0" max="16">
             <span class="setting-value">{{ chatSettings.gap }}</span>
           </label>
+          <label class="setting-row setting-row--speed">
+            <span class="setting-label">速度</span>
+            <div class="setting-speed-controls">
+              <input
+                v-model="chatSettings.speedLimit"
+                type="checkbox"
+                class="setting-check setting-check--inline"
+                title="开启限速"
+              >
+              <input
+                v-model.number="chatSettings.speed"
+                class="setting-range"
+                type="range"
+                min="1"
+                max="10"
+                :disabled="!chatSettings.speedLimit"
+              >
+            </div>
+            <span class="setting-value">{{ chatSettings.speedLimit ? `每${chatSettings.speed}秒` : "全量" }}</span>
+          </label>
+          <p class="settings-hint">关闭开关显示全部弹幕；开启后每隔 N 秒续显 N 条，满屏后从顶部滑出旧弹幕。</p>
         </section>
         <section class="settings-group">
           <h4 class="settings-group__title">关注列表</h4>
@@ -224,7 +245,7 @@ const props = defineProps({
 
 const chatSettings = defineModel("chatSettings", { type: Object, required: true });
 
-const emit = defineEmits(["play-room", "unfollow", "toggle-super-follow", "trim-chat"]);
+const emit = defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
 
 const { follows, isFollowed, toggleFollow, importFollows } = useFollow();
 const { notify } = useToast();
@@ -236,8 +257,15 @@ const exportFollowText = ref("");
 const exportFollowInputRef = ref(null);
 
 const tab = ref("follow");
+const playMobileLayout = ref(false);
+
+function syncPlayMobileLayout() {
+  if (typeof window === "undefined") return;
+  playMobileLayout.value = window.matchMedia("(max-width: 1024px)").matches;
+}
+
 const isMobileFlowTab = computed(() =>
-  ["chat", "follow", "recommend", "settings"].includes(tab.value),
+  playMobileLayout.value && ["chat", "follow", "recommend", "settings"].includes(tab.value),
 );
 const followTabActive = computed(() => tab.value === "follow");
 const followSiteFilter = ref("");
@@ -607,21 +635,127 @@ const chatItemStyle = computed(() => ({
   marginBottom: `${chatSettings.value.gap ?? 4}px`,
 }));
 
+/** 在 danmakuMessages 上取连续窗口 [start, end)，保证列表无断层、满屏连贯上滚 */
+let chatDisplayStart = 0;
+let chatDisplayEnd = 0;
+let chatIntervalElapsed = 0;
+let chatFlowRafId = null;
+let chatFlowLastTickAt = 0;
+
+function chatIntervalSeconds() {
+  const raw = Number(chatSettings.value.speed);
+  if (!Number.isFinite(raw)) return 5;
+  return Math.min(10, Math.max(1, Math.round(raw)));
+}
+
+function resetChatFlow() {
+  chatDisplayStart = 0;
+  chatDisplayEnd = 0;
+  chatIntervalElapsed = 0;
+}
+
+function syncChatWindowAfterParentTrim(removed) {
+  const n = Math.max(0, Number(removed) || 0);
+  if (!n) return;
+  chatDisplayStart = Math.max(0, chatDisplayStart - n);
+  chatDisplayEnd = Math.max(chatDisplayStart, chatDisplayEnd - n);
+}
+
+function chatSpeedLimitOn() {
+  return Boolean(chatSettings.value.speedLimit);
+}
+
+function syncChatAllMessages() {
+  chatDisplayEnd = props.danmakuMessages.length;
+}
+
+async function fillChatViewportIfNeeded() {
+  if (!chatSpeedLimitOn() || tab.value !== "chat" || !chatSettings.value.show) return;
+  const total = props.danmakuMessages.length;
+  const container = chatListRef.value;
+  const content = chatContentRef.value;
+  if (!container || !content || !total) return;
+
+  const maxH = container.clientHeight;
+  if (maxH < 24) return;
+
+  let guard = 0;
+  while (chatDisplayEnd < total && content.scrollHeight < maxH - 2 && guard < 200) {
+    chatDisplayEnd += 1;
+    guard += 1;
+    await nextTick();
+  }
+}
+
+function releaseChatMessages(dt) {
+  if (!chatSpeedLimitOn()) return false;
+  chatIntervalElapsed += dt;
+  const intervalSec = chatIntervalSeconds();
+  if (chatIntervalElapsed < intervalSec) return false;
+  chatIntervalElapsed = 0;
+
+  const total = props.danmakuMessages.length;
+  if (chatDisplayEnd >= total) return false;
+
+  chatDisplayEnd = Math.min(total, chatDisplayEnd + intervalSec);
+  return true;
+}
+
+function chatFlowShouldRun() {
+  return tab.value === "chat" && chatSettings.value.show && chatSpeedLimitOn();
+}
+
+function stopChatFlowLoop() {
+  if (!chatFlowRafId) return;
+  cancelAnimationFrame(chatFlowRafId);
+  chatFlowRafId = null;
+}
+
+function chatFlowLoop(now) {
+  if (!chatFlowShouldRun()) {
+    chatFlowRafId = null;
+    return;
+  }
+  const dt = Math.min(0.12, (now - chatFlowLastTickAt) / 1000);
+  chatFlowLastTickAt = now;
+  if (releaseChatMessages(dt)) void syncChatOverflow();
+  chatFlowRafId = requestAnimationFrame(chatFlowLoop);
+}
+
+function startChatFlowLoop() {
+  if (chatFlowRafId) return;
+  chatFlowLastTickAt = performance.now();
+  chatFlowRafId = requestAnimationFrame(chatFlowLoop);
+}
+
+function syncChatFlowState() {
+  if (!chatSettings.value.show || tab.value !== "chat") {
+    stopChatFlowLoop();
+    return;
+  }
+  if (!chatSpeedLimitOn()) {
+    stopChatFlowLoop();
+    syncChatAllMessages();
+    void syncChatOverflow();
+    return;
+  }
+  startChatFlowLoop();
+}
+
+
 /** 非聊天 Tab 时不挂载弹幕列表，避免关注 Tab 下高频 patch 触发 Vue 更新异常 */
 const chatDanmakuMessages = computed(() => {
   if (tab.value !== "chat" || !chatSettings.value.show) return [];
-  return props.danmakuMessages;
+  const msgs = props.danmakuMessages;
+  if (!msgs.length || chatDisplayStart >= msgs.length) return [];
+  const end = chatSpeedLimitOn() ? chatDisplayEnd : msgs.length;
+  if (end <= chatDisplayStart) return [];
+  return msgs.slice(chatDisplayStart, end);
 });
 
 const chatListRef = ref(null);
 const chatContentRef = ref(null);
 let chatResizeObserver = null;
-
-function scrollChatToBottom() {
-  const el = chatListRef.value;
-  if (!el) return;
-  el.scrollTop = el.scrollHeight;
-}
 
 async function syncChatOverflow() {
   if (tab.value !== "chat" || !chatSettings.value.show) return;
@@ -633,37 +767,70 @@ async function syncChatOverflow() {
   if (maxH < 24) return;
 
   let iter = 0;
-  while (content.scrollHeight > maxH + 1 && props.danmakuMessages.length > 1 && iter < 24) {
-    const count = Math.max(1, props.danmakuMessages.length);
+  while (
+    content.scrollHeight > maxH + 1
+    && chatDisplayEnd - chatDisplayStart > 1
+    && iter < 48
+  ) {
+    const count = Math.max(1, chatDisplayEnd - chatDisplayStart);
     const avg = content.scrollHeight / count;
     const overflow = content.scrollHeight - maxH;
     const remove = Math.max(1, Math.ceil(overflow / Math.max(avg, 6)));
-    emit("trim-chat", remove);
+    chatDisplayStart = Math.min(chatDisplayEnd - 1, chatDisplayStart + remove);
     iter += 1;
     await nextTick();
   }
-  scrollChatToBottom();
+
+  await fillChatViewportIfNeeded();
 }
 
 watch(
   () => props.danmakuMessages.length,
-  () => {
+  (len, prevLen) => {
+    const prev = typeof prevLen === "number" ? prevLen : 0;
+    if (!len) {
+      resetChatFlow();
+      void syncChatOverflow();
+      return;
+    }
+    if (len < prev) {
+      syncChatWindowAfterParentTrim(prev - len);
+    }
+    if (!chatSpeedLimitOn()) {
+      syncChatAllMessages();
+    }
+    syncChatFlowState();
     void syncChatOverflow();
   },
 );
 
 watch(
-  () => [chatSettings.value.fontSize, chatSettings.value.gap, chatSettings.value.show],
+  () => [
+    chatSettings.value.fontSize,
+    chatSettings.value.gap,
+    chatSettings.value.show,
+    chatSettings.value.speed,
+    chatSettings.value.speedLimit,
+  ],
   () => {
+    chatIntervalElapsed = 0;
+    syncChatFlowState();
     void syncChatOverflow();
   },
 );
 
 watch(tab, (value) => {
-  if (value === "chat") void syncChatOverflow();
+  if (value === "chat") {
+    syncChatFlowState();
+    void syncChatOverflow();
+    return;
+  }
+  stopChatFlowLoop();
 });
 
 onMounted(() => {
+  syncPlayMobileLayout();
+  window.addEventListener("resize", syncPlayMobileLayout);
   if (typeof ResizeObserver === "undefined") return;
   chatResizeObserver = new ResizeObserver(() => {
     void syncChatOverflow();
@@ -678,6 +845,8 @@ watch(chatListRef, (el, prev) => {
 });
 
 onBeforeUnmount(() => {
+  window.removeEventListener("resize", syncPlayMobileLayout);
+  stopChatFlowLoop();
   chatResizeObserver?.disconnect();
   chatResizeObserver = null;
 });
@@ -1016,7 +1185,10 @@ onBeforeUnmount(() => {
 }
 
 .chat-tab {
+  flex: 1;
   min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-sys-bar {
@@ -1030,20 +1202,24 @@ onBeforeUnmount(() => {
 }
 
 .chat-list {
+  position: relative;
   flex: 1;
   min-height: 0;
   font-size: .85rem;
   line-height: 1.5;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
 }
 
 .chat-list__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: auto;
-  min-height: min-content;
   padding: .5rem;
   box-sizing: border-box;
 }
@@ -1124,6 +1300,25 @@ onBeforeUnmount(() => {
 .setting-row--toggle {
   grid-template-columns: 2.45rem 1fr;
   min-height: 1.55rem;
+}
+
+.setting-row--speed .setting-speed-controls {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  min-width: 0;
+}
+
+.setting-row--speed .setting-range {
+  flex: 1;
+  min-width: 0;
+}
+
+.setting-check--inline {
+  flex-shrink: 0;
+  width: .95rem;
+  height: .95rem;
+  margin: 0;
 }
 
 .setting-label {
@@ -1283,13 +1478,21 @@ onBeforeUnmount(() => {
     overflow: visible;
   }
 
+  .play-side--flow .chat-tab {
+    flex: 0 0 auto;
+    min-height: min(52vh, 28rem);
+    max-height: min(60vh, 32rem);
+    overflow: hidden;
+  }
+
   .play-side--flow .scrolly {
     overflow: visible;
   }
 
   .play-side--flow .chat-list {
-    flex: 0 0 auto;
-    min-height: auto;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
   }
 
   .play-side--flow .follow-tab,

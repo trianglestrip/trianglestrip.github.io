@@ -85,10 +85,12 @@ def install_node(client: paramiko.SSHClient) -> None:
 def deploy_files(client: paramiko.SSHClient) -> None:
     run(client, f"mkdir -p {DEPLOY_ROOT}/server/data")
     run(client, f"test -f {DEPLOY_ROOT}/server/data/follows-store.json && cp {DEPLOY_ROOT}/server/data/follows-store.json /tmp/follows-store.json.bak || true")
+    run(client, f"test -f {DEPLOY_ROOT}/server/data/categories-cache.json && cp {DEPLOY_ROOT}/server/data/categories-cache.json /tmp/categories-cache.json.bak || true")
     code, _ = run(client, f"unzip -o {REMOTE_ZIP} -d {DEPLOY_ROOT}")
     if code != 0:
         raise RuntimeError("unzip failed")
     run(client, "test -f /tmp/follows-store.json.bak && mv /tmp/follows-store.json.bak " + f"{DEPLOY_ROOT}/server/data/follows-store.json || true")
+    run(client, "test -f /tmp/categories-cache.json.bak && mv /tmp/categories-cache.json.bak " + f"{DEPLOY_ROOT}/server/data/categories-cache.json || true")
 
     config = """{
   "host": "0.0.0.0",
@@ -133,6 +135,7 @@ ExecStart={node} server.mjs 8080
 Restart=on-failure
 RestartSec=3
 Environment=LIVE_API=http://127.0.0.1:8765
+Environment=LIVE_BIND=0.0.0.0
 
 [Install]
 WantedBy=multi-user.target

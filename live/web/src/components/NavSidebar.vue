@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="nav-group nav-group--bottom">
+    <div class="nav-group nav-group--tools">
       <button
         type="button"
         class="nav-item nav-theme"
@@ -71,27 +71,16 @@
         <Icon name="search" aria-hidden="true" />
         <span class="nav-label">搜索</span>
       </button>
-      <RouterLink
-        v-for="item in bottomItems"
-        :key="item.link"
-        :to="item.link"
-        class="nav-item"
-        :class="{ active: isActive(item) }"
-        :title="item.title"
-      >
-        <Icon :name="item.icon" aria-hidden="true" />
-        <span class="nav-label">{{ item.title }}</span>
-      </RouterLink>
     </div>
   </nav>
 </template>
 
 <script setup>
-import { computed, ref, onMounted } from "vue";
+import { computed, ref, onMounted, toRef } from "vue";
 import { RouterLink, useRoute } from "vue-router";
-import { PLATFORMS, supportsBrowse } from "../config/platforms";
 import { getTheme, toggleTheme } from "../utils/theme.js";
 import { useSearchDialog } from "../composables/useSearchDialog.js";
+import { useNavPlatforms } from "../composables/useNavPlatforms.js";
 import AccentColorPicker from "./AccentColorPicker.vue";
 import Icon from "./Icon.vue";
 import PlatformIcon from "./PlatformIcon.vue";
@@ -105,26 +94,14 @@ const route = useRoute();
 const theme = ref("dark");
 const hoveredPlatform = ref("");
 const { openSearch } = useSearchDialog();
+const siteRef = toRef(props, "site");
 
-const showCenterPlatforms = computed(
-  () =>
-    route.name === "all-home" ||
-    route.name === "site-home" ||
-    route.name === "category-index" ||
-    route.name === "category-rooms",
-);
-
-const categoryNavMode = computed(
-  () => route.name === "category-index" || route.name === "category-rooms",
-);
-
-function platformNavLink(platformId) {
-  if (platformId === "all") return "/all";
-  if (categoryNavMode.value && supportsBrowse(platformId)) {
-    return `/${platformId}/category`;
-  }
-  return `/${platformId}`;
-}
+const {
+  showCenterPlatforms,
+  activePlatformId,
+  navPlatforms,
+  platformNavLink,
+} = useNavPlatforms(siteRef);
 
 onMounted(() => {
   theme.value = getTheme();
@@ -138,38 +115,33 @@ function onOpenSearch() {
   openSearch(props.site || "douyu");
 }
 
-const activePlatformId = computed(() => {
-  if (route.name === "all-home") return "all";
-  return props.site || "douyu";
-});
-
-const navPlatforms = computed(() =>
-  PLATFORMS.filter((p) => p.enabled && (p.crossBrowse || supportsBrowse(p.id))),
-);
-
 const allItems = computed(() => {
   const site = props.site || "douyu";
   const homeLink = site === "all" ? "/all" : `/${site}`;
-  const list = [
+  return [
     { icon: "home", link: homeLink, title: "首页", zone: "top" },
-    { icon: "apps", link: `/${site === "all" ? "douyu" : site}/category`, title: "分类", browse: true, zone: "top" },
+    { icon: "apps", link: `/${site}/category`, title: "分类", zone: "top" },
     { icon: "heart", link: "/follow", title: "关注", zone: "top" },
   ];
-  return list.filter((item) => item.browse !== true || site !== "all");
 });
 
 const topItems = computed(() => allItems.value.filter((item) => item.zone === "top"));
-const bottomItems = computed(() => allItems.value.filter((item) => item.zone === "bottom"));
 
 function isActive(item) {
   if (item.link === "/follow") {
     return route.path === item.link;
   }
+  if (item.title === "首页") {
+    if (route.name === "all-home") return true;
+    const site = props.site || "douyu";
+    if (site === "all") return false;
+    return route.path === `/${site}` || route.path === `/${site}/`;
+  }
+  if (item.title === "分类") {
+    return route.path.includes("/category");
+  }
   if (item.link === "/all") {
     return route.name === "all-home";
-  }
-  if (item.link.endsWith("/category")) {
-    return route.path.includes("/category");
   }
   const site = props.site || "douyu";
   if (site === "all") {
@@ -197,10 +169,6 @@ function isActive(item) {
   background: var(--dark-7);
 }
 
-.nav-sidebar--home {
-  position: relative;
-}
-
 .nav-group {
   display: flex;
   align-items: center;
@@ -210,28 +178,14 @@ function isActive(item) {
   flex: 1;
   justify-content: center;
   gap: .15rem;
-}
-
-.nav-sidebar--home .nav-group--top {
-  flex: 0 1 auto;
-  justify-content: flex-start;
+  min-width: 0;
 }
 
 .nav-group--center {
   display: none;
-  gap: .15rem;
 }
 
-.nav-sidebar--home .nav-group--center {
-  display: flex;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  gap: .12rem;
-}
-
-.nav-group--bottom {
+.nav-group--tools {
   flex-shrink: 0;
   gap: .15rem;
 }
@@ -344,25 +298,27 @@ function isActive(item) {
   }
 
   .nav-sidebar--home .nav-group--center {
+    display: flex;
     position: static;
     transform: none;
     justify-self: center;
     gap: .2rem;
   }
 
-  .nav-sidebar--home .nav-group--bottom {
+  .nav-sidebar--home .nav-group--tools {
     justify-self: end;
     gap: .2rem;
     padding-right: .15rem;
   }
 
   .nav-group--top {
+    flex: none;
     justify-content: flex-start;
     gap: .2rem;
     padding-left: .15rem;
   }
 
-  .nav-group--bottom {
+  .nav-group--tools {
     gap: .2rem;
     padding-right: .15rem;
   }

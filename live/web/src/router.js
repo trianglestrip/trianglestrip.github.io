@@ -1,18 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router";
 import SiteHomeView from "./views/SiteHomeView.vue";
 import AllPlatformHomeView from "./views/AllPlatformHomeView.vue";
+import AllPlatformCategoryRoomsView from "./views/AllPlatformCategoryRoomsView.vue";
 import CategoryIndexView from "./views/CategoryIndexView.vue";
 import CategoryRoomsView from "./views/CategoryRoomsView.vue";
 import FollowView from "./views/FollowView.vue";
 import TimeView from "./views/TimeView.vue";
 import PlaceholderView from "./views/PlaceholderView.vue";
-import { PLATFORMS, supportsBrowse } from "./config/platforms";
+import { PLATFORMS, supportsBrowse, supportsCrossBrowse } from "./config/platforms";
 import { useSearchDialog } from "./composables/useSearchDialog.js";
 
 const enabledSites = new Set(PLATFORMS.filter((p) => p.enabled).map((p) => p.id));
 
 function categoryRouteGuard(to) {
   const site = String(to.params.site || "");
+  if (site === "all") {
+    return supportsCrossBrowse("all") ? true : "/all";
+  }
   if (!enabledSites.has(site)) {
     return supportsBrowse("douyu") ? "/douyu/category" : "/douyu";
   }
@@ -41,6 +45,13 @@ const router = createRouter({
   routes: [
     { path: "/", redirect: "/all" },
     { path: "/all", name: "all-home", component: AllPlatformHomeView },
+    {
+      path: "/all/category/:key",
+      name: "all-category-rooms",
+      component: AllPlatformCategoryRoomsView,
+      props: (route) => ({ crossKey: String(route.params.key || "") }),
+      beforeEnter: () => (supportsCrossBrowse("all") ? true : "/all"),
+    },
     { path: "/follow", name: "follow", component: FollowView },
     { path: "/time", name: "time", component: TimeView },
     { path: "/search", name: "search", redirect: "/douyu" },

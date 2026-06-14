@@ -9,6 +9,7 @@ import { buildTimeReport } from "../resolve/timing.js";
 import { fetchFollowSnapshots } from "../follow/status.js";
 import { fetchHuyaDanmakuSession } from "../danmaku/huya.js";
 import { crossCategoryMapPayload } from "../browse/category-cross-map.js";
+import { refreshCategoryCaches, resolveCategories } from "../browse/category-cache.js";
 import { applyCorsHeaders } from "../middleware/cors.js";
 import { sendJson } from "./json.js";
 
@@ -18,6 +19,15 @@ export interface AppContext {
   resolveService: ResolveService;
   browseApi: BrowseApi;
   webRoot: string | null;
+}
+
+function checkAdminToken(req: IncomingMessage, query: URLSearchParams): boolean {
+  const required = process.env.LIVE_ADMIN_TOKEN?.trim();
+  if (!required) return true;
+  const header = req.headers["x-live-admin-token"];
+  const fromHeader = typeof header === "string" ? header : Array.isArray(header) ? header[0] : "";
+  const token = (query.get("token") || fromHeader || "").trim();
+  return token === required;
 }
 
 function queryBool(value: string | null, truthy = ["1", "true", "yes"]): boolean {
@@ -155,18 +165,40 @@ export async function handleApi(
     return true;
   }
 
-  if (pathname === "/api/categories" && req.method === "GET") {
-    const site = readQuery(req).get("site") || "douyu";
-    const cacheKey = `browse:categories:${site}`;
-    const cached = ctx.cache.get(cacheKey);
-    if (cached) {
-      sendJson(res, ctx.config, { ok: true, site, categories: cached, cached: true });
+  if (pathname === "/api/categories/refresh" && (req.method === "POST" || req.method === "GET")) {
+    const query = readQuery(req);
+    if (!checkAdminToken(req, query)) {
+      sendJson(res, ctx.config, { ok: false, error: "未授权" }, 401);
       return true;
     }
+    const site = query.get("site")?.trim() || "";
+    const sites = site ? [site] : undefined;
     try {
-      const categories = await ctx.browseApi.fetchCategories(site);
-      ctx.cache.set(cacheKey, categories, { ttl: 300 });
-      sendJson(res, ctx.config, { ok: true, site, categories });
+      const result = await refreshCategoryCaches(ctx.browseApi, sites);
+      sendJson(res, ctx.config, {
+        ok: Object.keys(result.failed).length === 0,
+        ...result,
+      });
+    } catch (err) {
+      sendApiError(res, ctx.config, err);
+    }
+    return true;
+  }
+
+  if (pathname === "/api/categories" && req.method === "GET") {
+    const query = readQuery(req);
+    const site = query.get("site") || "douyu";
+    const force = queryBool(query.get("force"));
+    try {
+      const result = await resolveCategories(ctx.browseApi, site, { force });
+      sendJson(res, ctx.config, {
+        ok: true,
+        site,
+        categories: result.categories,
+        cached: result.cached,
+        ...(result.stale ? { stale: true } : {}),
+        ...(result.fetchedAt ? { fetchedAt: result.fetchedAt } : {}),
+      });
     } catch (err) {
       sendApiError(res, ctx.config, err);
     }

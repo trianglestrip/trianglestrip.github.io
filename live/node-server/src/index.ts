@@ -89,7 +89,8 @@ export function startServer(cfg: ServerConfig, webRoot: string | null): void {
     }
     console.log(`API: http://${host}:${port}/api/health`);
     console.log("     GET /api/room?site=douyu|huya|douyin&room=<id>&mode=lazy|full");
-    console.log("     GET /api/categories?site=douyu|huya|douyin");
+    console.log("     GET /api/categories?site=douyu|huya|douyin&force=0|1");
+    console.log("     GET|POST /api/categories/refresh?site=douyu|huya|douyin");
     console.log("     GET /api/rooms?site=douyu|huya|douyin&cid=<id>&page=1");
     console.log("     GET /api/rooms?site=douyu|huya|douyin&recommend=1&page=1");
     console.log("     GET /api/time?site=douyu|huya&room=<id>&run=0|1");

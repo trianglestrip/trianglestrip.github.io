@@ -21,8 +21,10 @@
         'app-main--home': usesDrawerLayout,
         'app-main--home-drawer': drawerEligible,
         'app-main--drawer-open': drawerEligible && drawerOpen,
+        'app-main--mobile-strip': showMobilePlatformStrip,
       }"
     >
+      <NavPlatformStrip v-if="showMobilePlatformStrip" :site="activeSite" />
       <div class="app-main-inner">
         <slot />
       </div>
@@ -34,6 +36,7 @@
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import NavSidebar from "./NavSidebar.vue";
+import NavPlatformStrip from "./NavPlatformStrip.vue";
 import DirectoryDrawer from "./DirectoryDrawer.vue";
 import { loadDrawerPref, saveDrawerOpen } from "../utils/drawerPref.js";
 
@@ -48,12 +51,14 @@ const drawerOpen = ref(loadDrawerPref().open);
 const usesDrawerLayout = computed(
   () =>
     route.name === "all-home" ||
+    route.name === "all-category-rooms" ||
     route.name === "site-home" ||
     route.name === "category-index" ||
     route.name === "category-rooms",
 );
 
 const drawerEligible = computed(() => desktopNav.value);
+const showMobilePlatformStrip = computed(() => !desktopNav.value && usesDrawerLayout.value);
 
 function setDrawerOpen(open) {
   drawerOpen.value = open;
@@ -96,6 +101,10 @@ onBeforeUnmount(() => {
   overflow: hidden;
   box-sizing: border-box;
   padding: 0 .35rem var(--nav-height);
+}
+
+.app-main--mobile-strip {
+  padding-top: 0;
 }
 
 .app-main-inner {

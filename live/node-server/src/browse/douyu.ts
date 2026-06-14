@@ -10,6 +10,10 @@ const DOUYU_HEADERS = {
 
 let cate2NameCache: Record<string, string> | null = null;
 
+export function clearDouyuCate2NameCache(): void {
+  cate2NameCache = null;
+}
+
 async function getJson<T>(url: string, params?: Record<string, string | number>): Promise<T> {
   const u = new URL(url);
   if (params) {

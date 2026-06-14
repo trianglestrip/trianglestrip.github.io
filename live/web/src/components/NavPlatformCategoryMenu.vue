@@ -1,10 +1,13 @@
 <template>
   <div
     class="nav-platform-menu"
-    :class="{ 'nav-platform-menu--cross': isCrossSite }"
-    role="tooltip"
-    @mouseenter="$emit('pointerenter')"
-    @mouseleave="$emit('pointerleave')"
+    :class="{
+      'nav-platform-menu--cross': isCrossSite,
+      'nav-platform-menu--embedded': embedded,
+    }"
+    :role="embedded ? 'region' : 'tooltip'"
+    @mouseenter="!embedded && $emit('pointerenter')"
+    @mouseleave="!embedded && $emit('pointerleave')"
   >
     <p v-if="loading" class="nav-platform-menu__hint">加载分类…</p>
     <p v-else-if="error" class="nav-platform-menu__hint nav-platform-menu__hint--err">{{ error }}</p>
@@ -16,6 +19,7 @@
           :to="crossLink(item)"
           class="nav-platform-menu__hot-item"
           :class="{ active: item.key === activeCrossKey }"
+          @click="onNavigate"
         >
           {{ item.name }}
         </RouterLink>
@@ -36,6 +40,7 @@
               :to="categoryLink(item)"
               class="nav-platform-menu__item"
               :title="item.name"
+              @click="onNavigate"
             >
               {{ item.name }}
             </RouterLink>
@@ -60,9 +65,10 @@ import { fetchHotCategories } from "../api/crossBrowse.js";
 
 const props = defineProps({
   platformId: { type: String, required: true },
+  embedded: { type: Boolean, default: false },
 });
 
-defineEmits(["pointerenter", "pointerleave"]);
+const emit = defineEmits(["pointerenter", "pointerleave", "navigate"]);
 
 const route = useRoute();
 const loading = ref(false);
@@ -74,7 +80,12 @@ const categoryCache = new Map();
 const hotCache = { data: null, promise: null };
 
 const isCrossSite = computed(() => props.platformId === "all");
-const activeCrossKey = computed(() => String(route.query.key || "").trim());
+const activeCrossKey = computed(() => {
+  if (route.name === "all-category-rooms") {
+    return String(route.params.key || "").trim();
+  }
+  return "";
+});
 
 function categoryLink(item) {
   const query = item.pid != null ? { pid: String(item.pid) } : undefined;
@@ -87,9 +98,13 @@ function categoryLink(item) {
 
 function crossLink(item) {
   return {
-    name: "all-home",
-    query: { key: String(item.key || "") },
+    name: "all-category-rooms",
+    params: { key: String(item.key || "") },
   };
+}
+
+function onNavigate() {
+  if (props.embedded) emit("navigate");
 }
 
 async function loadSections(platformId) {
@@ -283,6 +298,53 @@ watch(
 .nav-platform-menu__hot-item:hover {
   color: var(--amber);
   background: var(--sidebar-chip-hover-bg);
+}
+
+.nav-platform-menu--embedded {
+  position: static;
+  transform: none;
+  min-width: 0;
+  max-width: none;
+  width: 100%;
+  max-height: none;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: .45rem .55rem .65rem;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.nav-platform-menu--embedded::before {
+  display: none;
+}
+
+.nav-platform-menu--embedded .nav-platform-menu__columns,
+.nav-platform-menu--embedded .nav-platform-menu__hot {
+  flex: 1;
+  min-height: 0;
+  max-height: none;
+}
+
+.nav-platform-menu--embedded.nav-platform-menu--cross {
+  min-width: 0;
+  max-width: none;
+  padding-inline: .55rem;
+}
+
+.nav-platform-menu--embedded .nav-platform-menu__hot {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .12rem .2rem;
+}
+
+.nav-platform-menu--embedded .nav-platform-menu__item,
+.nav-platform-menu--embedded .nav-platform-menu__hot-item {
+  padding: .28rem .2rem;
+  font-size: .82rem;
 }
 
 .nav-platform-menu__hot-item.active {

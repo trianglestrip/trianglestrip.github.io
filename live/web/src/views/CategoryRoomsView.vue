@@ -166,4 +166,26 @@ function onSelectRoom(room) {
 .page-msg--err {
   color: var(--danger);
 }
+
+@media (max-width: 767px) {
+  .page-header {
+    padding: .28rem .35rem .42rem;
+    gap: .35rem;
+  }
+
+  .page-title {
+    font-size: .92rem;
+  }
+
+  .back-link,
+  .refresh-btn {
+    width: 1.85rem;
+    height: 1.85rem;
+    font-size: 1rem;
+  }
+
+  .page-body {
+    height: calc(100% - 2.75rem);
+  }
+}
 </style>

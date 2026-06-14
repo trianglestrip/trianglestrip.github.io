@@ -1,6 +1,10 @@
 import { ref } from "vue";
 import { fetchCategories, fetchCategoryRooms, fetchRecommendRooms } from "../api/browse.js";
 import { supportsBrowse } from "../config/platforms.js";
+import {
+  enrichGroupsWithDouyuPic,
+  prepareDouyuPicFallback,
+} from "../utils/douyuCategoryPic.js";
 
 export function useBrowse(siteRef) {
   const categories = ref([]);
@@ -25,7 +29,12 @@ export function useBrowse(siteRef) {
     categories.value = [];
     try {
       const data = await fetchCategories(site);
-      categories.value = data.categories || [];
+      let groups = data.categories || [];
+      if (site === "huya" || site === "douyin") {
+        const index = await prepareDouyuPicFallback();
+        groups = enrichGroupsWithDouyuPic(groups, site, index);
+      }
+      categories.value = groups;
     } catch (err) {
       categories.value = [];
       listError.value = err.message;

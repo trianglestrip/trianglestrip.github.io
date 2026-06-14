@@ -108,6 +108,10 @@ let sessionCookie: string | null = null;
 let sessionCookieAt = 0;
 let categoryCache: CategoryGroup[] | null = null;
 
+export function clearDouyinCategoryCache(): void {
+  categoryCache = null;
+}
+
 interface CategoryPicSources {
   byDouyinId: Map<string, string>;
   byName: Map<string, string>;

@@ -21,8 +21,8 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
-import { useRoute, useRouter } from "vue-router";
+import { onMounted, watch } from "vue";
+import { useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import PlatformTabs from "../components/PlatformTabs.vue";
 import InfiniteScroll from "../components/InfiniteScroll.vue";
@@ -31,8 +31,11 @@ import { roomKey } from "../api/browse.js";
 import { useCrossBrowse } from "../composables/useCrossBrowse.js";
 import { preloadPlayView } from "../utils/preloadPlayView.js";
 
+const props = defineProps({
+  crossKey: { type: String, default: "" },
+});
+
 const router = useRouter();
-const route = useRoute();
 
 const {
   rooms,
@@ -43,18 +46,27 @@ const {
   loadHotCategories,
   loadCrossRooms,
   loadMore,
+  selectCategory,
 } = useCrossBrowse();
 
-onMounted(async () => {
-  const legacyKey = String(route.query.key || "").trim();
-  if (legacyKey) {
-    router.replace({ name: "all-category-rooms", params: { key: legacyKey } });
-    return;
-  }
-  preloadPlayView();
+async function loadForKey(key) {
+  const text = String(key || "").trim();
+  if (!text) return;
   await loadHotCategories();
-  await loadCrossRooms(true);
+  await selectCategory(text);
+}
+
+onMounted(async () => {
+  preloadPlayView();
+  await loadForKey(props.crossKey);
 });
+
+watch(
+  () => props.crossKey,
+  (key) => {
+    void loadForKey(key);
+  },
+);
 
 function onLoad() {
   if (listError.value) {

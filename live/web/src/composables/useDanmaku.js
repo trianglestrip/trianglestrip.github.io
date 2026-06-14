@@ -26,6 +26,9 @@ const DEFAULT_CHAT = {
   opacity: 100,
   fontSize: 14,
   gap: 4,
+  speedLimit: false,
+  /** 开启限速后，每隔 N 秒续显 N 条 */
+  speed: 5,
 };
 
 /** 聊天列表与飘屏共用的消息缓冲上限 */
