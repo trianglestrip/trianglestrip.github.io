@@ -21,6 +21,7 @@
         image-class="follow-avatar"
         :root-margin="rootMargin"
         :eager="eager"
+        :priority="priority"
       />
       <div v-else class="follow-avatar follow-avatar--empty">{{ label }}</div>
     </div>
@@ -40,6 +41,7 @@ defineProps({
   state: { type: String, default: "" },
   eager: { type: Boolean, default: false },
   rootMargin: { type: String, default: "120px" },
+  priority: { type: String, default: "auto" },
   hideLiveFrame: { type: Boolean, default: false },
   isSuper: { type: Boolean, default: false },
 });

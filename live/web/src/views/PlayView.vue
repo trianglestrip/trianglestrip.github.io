@@ -82,6 +82,7 @@
               @toggle-pip="onTogglePiP"
               @volume-change="onVolumeChange"
               @toggle-mute="onToggleMute"
+              @interact="revealControls"
             />
             <button
               v-if="showPauseOverlay"
@@ -123,6 +124,8 @@
         :room-cid="browseRoomCid"
         :room-pid="browseRoomPid"
         :is-super-followed="isSuperFollowed(site, id)"
+        :secondary-ready="secondaryApiReady"
+        :room-side-meta="roomSideMeta"
         @play-room="onPlayFollow"
         @unfollow="onUnfollow"
         @toggle-super-follow="onToggleSuperFollow"
@@ -138,7 +141,6 @@ import { ref, computed, watch, onBeforeUnmount, onMounted, nextTick, defineAsync
 import { RouterLink, useRouter } from "vue-router";
 import AppLayout from "../components/AppLayout.vue";
 import PlayerPanel from "../components/PlayerPanel.vue";
-import PlaySidePanel from "../components/PlaySidePanel.vue";
 import Icon from "../components/Icon.vue";
 import { getPlatform } from "../config/platforms";
 import { useRoom, usePlayer } from "../composables/useLive.js";
@@ -153,9 +155,11 @@ import { compactMediaQuery } from "../utils/breakpoints.js";
 import { browseBackTarget, loadBrowseContext } from "../utils/browseContext.js";
 import { formatDouyinOnline } from "../utils/followDisplay.js";
 import { isSoundUnlocked, unlockSound, resetSoundSession } from "../utils/soundSession.js";
+import { runIdle } from "../utils/runIdle.js";
 
 const PlayerControls = defineAsyncComponent(() => import("../components/PlayerControls.vue"));
 const DanmakuOverlay = defineAsyncComponent(() => import("../components/DanmakuOverlay.vue"));
+const PlaySidePanel = defineAsyncComponent(() => import("../components/PlaySidePanel.vue"));
 
 const props = defineProps({
   site: { type: String, required: true },
@@ -182,7 +186,8 @@ const headerReady = ref(false);
 const controlsReady = ref(false);
 const sideReady = ref(false);
 const danmakuReady = ref(false);
-let chromeRaf = 0;
+const secondaryApiReady = ref(false);
+const roomSideMeta = ref(null);
 let playRaf = 0;
 let unmuteGestureBound = false;
 const ENTRY_UNMUTE_EVENTS = ["pointerdown", "keydown"];
@@ -365,6 +370,14 @@ function syncOnlineFromPayload() {
 }
 
 function scheduleDeferredOnlineRefresh() {
+  if (
+    props.site !== "douyu"
+    && props.site !== "huya"
+    && props.site !== "douyin"
+    && props.site !== "bilibili"
+  ) {
+    return;
+  }
   clearTimeout(onlineRefreshTimer);
   roomStatsReady.value = true;
   onlineRefreshTimer = window.setTimeout(() => {
@@ -376,6 +389,7 @@ async function refreshRoomStats() {
   const rid = String(payload.value?.room_id || props.id || "").trim();
   if (!rid) {
     resetRoomStats();
+    roomSideMeta.value = null;
     roomState.value = "offline";
     return;
   }
@@ -394,6 +408,12 @@ async function refreshRoomStats() {
     };
     roomState.value = snap?.state || "offline";
     roomCategory.value = String(snap?.category || "").trim();
+    roomSideMeta.value = {
+      fans: snap?.fans || "",
+      liveStartAt: Number(snap?.liveStartAt) || 0,
+      avatar: snap?.avatar || payload.value?.avatar || "",
+      state: snap?.state || "offline",
+    };
     if (roomState.value === "offline") resetRoomStats();
     else roomStatsReady.value = true;
   } catch {
@@ -405,9 +425,6 @@ watch(
   () => [props.site, props.id, payload.value?.room_id, payload.value?.is_live, payload.value?.status, payload.value?.room_state],
   () => {
     syncOnlineFromPayload();
-    if (props.site === "douyu" || props.site === "huya" || props.site === "douyin" || props.site === "bilibili") {
-      scheduleDeferredOnlineRefresh();
-    }
   },
   { immediate: true },
 );
@@ -642,32 +659,13 @@ async function onVideoShellClick(event) {
   togglePlay();
 }
 
-function scheduleDeferredChrome() {
-  headerReady.value = false;
-  controlsReady.value = false;
-  sideReady.value = false;
-  danmakuReady.value = false;
-  cancelAnimationFrame(chromeRaf);
-  chromeRaf = requestAnimationFrame(() => {
-    headerReady.value = true;
-    controlsReady.value = true;
-  });
-}
-
-function runIdle(fn) {
-  if (typeof requestIdleCallback === "function") {
-    requestIdleCallback(fn, { timeout: 2500 });
-  } else {
-    setTimeout(fn, 48);
-  }
-}
-
 function onPlaybackReady() {
   danmakuReady.value = true;
-  scheduleDeferredOnlineRefresh();
   runIdle(() => {
     revealSidePanel();
     connectDm();
+    scheduleDeferredOnlineRefresh();
+    secondaryApiReady.value = true;
   });
 }
 
@@ -702,6 +700,8 @@ function syncRouteState(site, id, { keepSide = false } = {}) {
   controlsReady.value = true;
   if (!keepSide) sideReady.value = false;
   danmakuReady.value = false;
+  secondaryApiReady.value = false;
+  roomSideMeta.value = null;
 }
 
 function refreshSidePanel() {
@@ -751,14 +751,33 @@ async function onTogglePiP() {
   }
 }
 
+function shouldAutoHideControls() {
+  if (!playing.value) return false;
+  const immersive = isFullscreen.value || webscreen.value;
+  if (isMobilePlayViewport()) return immersive;
+  return !immersive;
+}
+
+function scheduleHideControls() {
+  clearTimeout(hideControlsTimer.value);
+  if (!shouldAutoHideControls()) return;
+  hideControlsTimer.value = setTimeout(() => {
+    if (shouldAutoHideControls()) showControls.value = false;
+  }, 3000);
+}
+
 function revealControls() {
   showControls.value = true;
+  scheduleHideControls();
+}
+
+function enterImmersiveControls() {
   clearTimeout(hideControlsTimer.value);
-  if (playing.value && !isMobilePlayViewport() && !isFullscreen.value && !webscreen.value) {
-    hideControlsTimer.value = setTimeout(() => {
-      if (playing.value && !isFullscreen.value && !webscreen.value) showControls.value = false;
-    }, 3000);
+  if (isMobilePlayViewport() && (isFullscreen.value || webscreen.value) && playing.value) {
+    showControls.value = false;
+    return;
   }
+  revealControls();
 }
 
 function cachedFollowRoomForFollow() {
@@ -824,13 +843,15 @@ async function startPlayback({ startMuted, freshUrl = false, forceUrl = false } 
   const wantSound = roomSwitchKeepSound || isSoundUnlocked();
   roomSwitchKeepSound = false;
   const useMuted = startMuted ?? !wantSound;
-  const url = freshUrl
-    ? await prefetchPlayUrl({ force: forceUrl })
-    : playUrl.value || (await prefetchPlayUrl());
+  const urlPromise = freshUrl
+    ? prefetchPlayUrl({ force: forceUrl })
+    : playUrl.value
+      ? Promise.resolve(playUrl.value)
+      : prefetchPlayUrl();
   setStatus("缓冲中…");
-  const videoEl = await ensureVideoEl();
+  const [url, videoEl] = await Promise.all([urlPromise, ensureVideoEl()]);
   const firstReady = !danmakuReady.value;
-  playFlv(videoEl, url, {
+  await playFlv(videoEl, url, {
     ...buildPlayCallbacks(url, {
       onReadyExtra: () => {
         if (!firstReady) return;
@@ -930,7 +951,7 @@ async function toggleWebscreen() {
     webscreen.value = false;
     syncWebscreenChrome(false);
   }
-  revealControls();
+  enterImmersiveControls();
 }
 
 function isMobilePlayViewport() {
@@ -1001,7 +1022,7 @@ async function toggleFullscreen() {
   } catch {
     /* ignore */
   }
-  revealControls();
+  enterImmersiveControls();
 }
 
 function onFullscreenChange() {
@@ -1015,10 +1036,11 @@ function onFullscreenChange() {
       webscreen.value = false;
       syncWebscreenChrome(false);
     }
+    revealControls();
     return;
   }
 
-  revealControls();
+  enterImmersiveControls();
 
   if (fsEl === frameRef.value) {
     void lockLandscapeOrientation();
@@ -1067,6 +1089,15 @@ watch(
   },
 );
 
+watch(playing, (isPlaying) => {
+  if (isPlaying) {
+    scheduleHideControls();
+  } else {
+    clearTimeout(hideControlsTimer.value);
+    showControls.value = true;
+  }
+});
+
 let frameMouseMoveHandler = null;
 
 onMounted(() => {
@@ -1095,7 +1126,6 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
-  cancelAnimationFrame(chromeRaf);
   cancelAnimationFrame(playRaf);
   clearTimeout(onlineRefreshTimer);
   destroy();

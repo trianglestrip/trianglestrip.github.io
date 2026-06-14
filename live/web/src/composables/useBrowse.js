@@ -5,6 +5,7 @@ import {
   enrichGroupsWithDouyuPic,
   prepareDouyuPicFallback,
 } from "../utils/douyuCategoryPic.js";
+import { scheduleIdleTask } from "../utils/runIdle.js";
 
 export function useBrowse(siteRef) {
   const categories = ref([]);
@@ -75,7 +76,7 @@ export function useBrowse(siteRef) {
     } finally {
       loadingRooms.value = false;
     }
-    if (reset) await prefetchUntil();
+    if (reset) scheduleIdleTask(() => { void prefetchUntil(12); });
   }
 
   async function loadCategoryRooms(category, reset = true) {
@@ -104,7 +105,7 @@ export function useBrowse(siteRef) {
     } finally {
       loadingRooms.value = false;
     }
-    if (reset) await prefetchUntil();
+    if (reset) scheduleIdleTask(() => { void prefetchUntil(12); });
   }
 
   async function loadMore() {

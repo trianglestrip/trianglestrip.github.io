@@ -6,7 +6,9 @@ import { applyPendingFollowImport } from "./utils/prefStore.js";
 import { initTheme } from "./utils/theme.js";
 import { loadCategoryCrossMap } from "./utils/categoryDisplay.js";
 import "./styles/main.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
+import "@fortawesome/fontawesome-free/css/solid.min.css";
+import "@fortawesome/fontawesome-free/css/regular.min.css";
 
 initTheme();
 

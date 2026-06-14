@@ -1,14 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
-import SiteHomeView from "./views/SiteHomeView.vue";
-import AllPlatformHomeView from "./views/AllPlatformHomeView.vue";
-import AllPlatformCategoryRoomsView from "./views/AllPlatformCategoryRoomsView.vue";
-import CategoryIndexView from "./views/CategoryIndexView.vue";
-import CategoryRoomsView from "./views/CategoryRoomsView.vue";
-import FollowView from "./views/FollowView.vue";
-import TimeView from "./views/TimeView.vue";
-import PlaceholderView from "./views/PlaceholderView.vue";
 import { PLATFORMS, supportsBrowse, supportsCrossBrowse } from "./config/platforms";
 import { useSearchDialog } from "./composables/useSearchDialog.js";
+
+const SiteHomeView = () => import("./views/SiteHomeView.vue");
+const AllPlatformHomeView = () => import("./views/AllPlatformHomeView.vue");
+const AllPlatformCategoryRoomsView = () => import("./views/AllPlatformCategoryRoomsView.vue");
+const CategoryIndexView = () => import("./views/CategoryIndexView.vue");
+const CategoryRoomsView = () => import("./views/CategoryRoomsView.vue");
+const FollowView = () => import("./views/FollowView.vue");
+const TimeView = () => import("./views/TimeView.vue");
+const PlaceholderView = () => import("./views/PlaceholderView.vue");
 
 const enabledSites = new Set(PLATFORMS.filter((p) => p.enabled).map((p) => p.id));
 

@@ -3,6 +3,8 @@
     v-if="show"
     class="player-controls on-video-surface"
     :class="{ 'player-controls--overlay': overlay, 'player-controls--fullscreen': fullscreen }"
+    @pointerdown="emit('interact')"
+    @keydown="emit('interact')"
   >
     <div class="controls-bar">
       <button
@@ -63,21 +65,15 @@
               class="ctrl-fa"
             />
           </button>
-          <div
-            class="ctrl-volume__track"
-            role="slider"
-            tabindex="0"
-            :aria-valuenow="volumePercent"
-            aria-valuemin="0"
-            aria-valuemax="100"
+          <RangeSlider
+            :model-value="volume"
+            :min="0"
+            :max="1"
+            :step="0.01"
+            size="compact"
             aria-label="音量"
-            :style="{ '--volume-ratio': volumeRatio }"
-            @pointerdown="onVolumeTrackPointerDown"
-            @keydown="onVolumeTrackKeydown"
-          >
-            <div class="ctrl-volume__fill" aria-hidden="true"></div>
-            <div class="ctrl-volume__thumb" aria-hidden="true"></div>
-          </div>
+            @update:model-value="$emit('volume-change', $event)"
+          />
         </div>
 
         <div ref="qualityRef" class="ctrl-dropdown">
@@ -154,6 +150,7 @@
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import Icon from "./Icon.vue";
 import OverlayDanmakuSettingsPanel from "./OverlayDanmakuSettingsPanel.vue";
+import RangeSlider from "./RangeSlider.vue";
 
 const overlaySettings = defineModel("overlaySettings", { type: Object, required: true });
 
@@ -185,6 +182,7 @@ const emit = defineEmits([
   "toggle-pip",
   "volume-change",
   "toggle-mute",
+  "interact",
 ]);
 
 const qualityOpen = ref(false);
@@ -244,52 +242,6 @@ function pickQuality(index) {
 function pickLine(index) {
   emit("line-change", index);
   closeMenus();
-}
-
-const VOLUME_THUMB = 10;
-
-const volumeRatio = computed(() => Math.min(1, Math.max(0, Number(props.volume) || 0)));
-const volumePercent = computed(() => Math.round(volumeRatio.value * 100));
-
-function volumeFromPointer(clientX, trackEl) {
-  const rect = trackEl.getBoundingClientRect();
-  const inner = Math.max(rect.width - VOLUME_THUMB, 1);
-  const offset = Math.min(Math.max(clientX - rect.left - VOLUME_THUMB / 2, 0), inner);
-  return Math.round((offset / inner) * 100) / 100;
-}
-
-function emitVolumeFromPointer(event) {
-  const track = event.currentTarget;
-  if (!(track instanceof HTMLElement)) return;
-  emit("volume-change", volumeFromPointer(event.clientX, track));
-}
-
-function onVolumeTrackPointerDown(event) {
-  if (event.button !== 0) return;
-  const track = event.currentTarget;
-  if (!(track instanceof HTMLElement)) return;
-  event.preventDefault();
-  emitVolumeFromPointer(event);
-  track.setPointerCapture(event.pointerId);
-  const onMove = (moveEvent) => emitVolumeFromPointer(moveEvent);
-  const onUp = (upEvent) => {
-    track.releasePointerCapture(upEvent.pointerId);
-    track.removeEventListener("pointermove", onMove);
-    track.removeEventListener("pointerup", onUp);
-    track.removeEventListener("pointercancel", onUp);
-  };
-  track.addEventListener("pointermove", onMove);
-  track.addEventListener("pointerup", onUp);
-  track.addEventListener("pointercancel", onUp);
-}
-
-function onVolumeTrackKeydown(event) {
-  let next = volumeRatio.value;
-  if (event.key === "ArrowRight" || event.key === "ArrowUp") next += 0.05;
-  else if (event.key === "ArrowLeft" || event.key === "ArrowDown") next -= 0.05;
-  else return;
-  event.preventDefault();
-  emit("volume-change", Math.min(1, Math.max(0, Math.round(next * 100) / 100)));
 }
 
 function onDocumentClick(event) {
@@ -361,63 +313,6 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   overflow: visible;
 }
 
-.ctrl-volume__track {
-  --volume-thumb: 10px;
-  --volume-thumb-half: calc(var(--volume-thumb) / 2);
-  position: relative;
-  width: 4.5rem;
-  height: var(--volume-thumb);
-  flex-shrink: 0;
-  cursor: pointer;
-  touch-action: none;
-  user-select: none;
-  outline: none;
-}
-
-.ctrl-volume__track::before {
-  content: "";
-  position: absolute;
-  left: var(--volume-thumb-half);
-  right: var(--volume-thumb-half);
-  top: 50%;
-  height: .2rem;
-  transform: translateY(-50%);
-  border-radius: 999px;
-  background: var(--play-range-track);
-  pointer-events: none;
-}
-
-.ctrl-volume__fill {
-  position: absolute;
-  left: var(--volume-thumb-half);
-  top: 50%;
-  width: calc((100% - var(--volume-thumb)) * var(--volume-ratio, 0));
-  height: .2rem;
-  transform: translateY(-50%);
-  border-radius: 999px;
-  background: var(--amber);
-  pointer-events: none;
-}
-
-.ctrl-volume__thumb {
-  position: absolute;
-  left: calc(var(--volume-thumb-half) + (100% - var(--volume-thumb)) * var(--volume-ratio, 0));
-  top: 50%;
-  width: var(--volume-thumb);
-  height: var(--volume-thumb);
-  border: 2px solid #1a1a1a;
-  border-radius: 50%;
-  background: var(--amber);
-  box-sizing: border-box;
-  box-shadow: 0 0 0 1px var(--primary-ring);
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
-
-.ctrl-volume__track:focus-visible .ctrl-volume__thumb {
-  box-shadow: 0 0 0 2px var(--primary-ring);
-}
-
 @media (max-width: 640px) {
   .player-controls--overlay {
     overflow: visible;
@@ -481,10 +376,6 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   .ctrl-volume {
     gap: .12rem;
     margin-right: 0;
-  }
-
-  .ctrl-volume__track {
-    width: 3.25rem;
   }
 
   .ctrl-dropdown__trigger {

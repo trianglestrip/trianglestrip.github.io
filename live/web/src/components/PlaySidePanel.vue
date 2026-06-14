@@ -12,7 +12,8 @@
           <FollowAvatar
             :src="displayAvatar"
             :label="anchor?.slice(0, 1) || '?'"
-            eager
+            priority="low"
+            root-margin="160px"
           />
         </div>
         <div class="room-aside-meta">
@@ -150,17 +151,17 @@
           </label>
           <label class="setting-row">
             <span class="setting-label">透明度</span>
-            <input v-model.number="chatSettings.opacity" class="setting-range" type="range" min="10" max="100">
+            <RangeSlider v-model="chatSettings.opacity" :min="10" :max="100" aria-label="聊天弹幕透明度" />
             <span class="setting-value">{{ chatSettings.opacity }}%</span>
           </label>
           <label class="setting-row">
             <span class="setting-label">字号</span>
-            <input v-model.number="chatSettings.fontSize" class="setting-range" type="range" min="12" max="24">
+            <RangeSlider v-model="chatSettings.fontSize" :min="12" :max="24" aria-label="聊天弹幕字号" />
             <span class="setting-value">{{ chatSettings.fontSize }}</span>
           </label>
           <label class="setting-row">
             <span class="setting-label">间距</span>
-            <input v-model.number="chatSettings.gap" class="setting-range" type="range" min="0" max="16">
+            <RangeSlider v-model="chatSettings.gap" :min="0" :max="16" aria-label="聊天弹幕间距" />
             <span class="setting-value">{{ chatSettings.gap }}</span>
           </label>
           <label class="setting-row setting-row--speed">
@@ -172,14 +173,13 @@
                 class="setting-check setting-check--inline"
                 title="开启限速"
               >
-              <input
-                v-model.number="chatSettings.speed"
-                class="setting-range"
-                type="range"
-                min="1"
-                max="10"
+              <RangeSlider
+                v-model="chatSettings.speed"
+                :min="1"
+                :max="10"
                 :disabled="!chatSettings.speedLimit"
-              >
+                aria-label="聊天弹幕速度"
+              />
             </div>
             <span class="setting-value">{{ chatSettings.speedLimit ? `每${chatSettings.speed}秒1条` : "全量" }}</span>
           </label>
@@ -237,6 +237,7 @@
 <script setup>
 import { ref, computed, watch, toRef, nextTick, onMounted, onBeforeUnmount } from "vue";
 import Icon from "./Icon.vue";
+import RangeSlider from "./RangeSlider.vue";
 import FollowAvatar from "./FollowAvatar.vue";
 import FollowRoomList from "./FollowRoomList.vue";
 import FollowPreviewGrid from "./FollowPreviewGrid.vue";
@@ -267,6 +268,10 @@ const props = defineProps({
   roomPid: { type: String, default: "" },
   isSuperFollowed: { type: Boolean, default: false },
   webscreen: { type: Boolean, default: false },
+  /** 首帧播放完成后再拉次要 API */
+  secondaryReady: { type: Boolean, default: true },
+  /** 父级已拉取的房间状态，避免重复 POST */
+  roomSideMeta: { type: Object, default: null },
 });
 
 const chatSettings = defineModel("chatSettings", { type: Object, required: true });
@@ -298,6 +303,7 @@ const isMobileFlowTab = computed(() =>
   && ["chat", "follow", "recommend", "settings"].includes(tab.value),
 );
 const followTabActive = computed(() => tab.value === "follow");
+const followStatusActive = computed(() => followTabActive.value && props.secondaryReady);
 const followSiteFilter = ref("");
 const followUiPref = loadGlobalPref("play_follow_ui", { previewCover: true });
 const previewCover = ref(followUiPref.previewCover !== false);
@@ -307,7 +313,7 @@ const PLAY_FOLLOW_MIN_REFRESH_MS = 60000;
 const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
   toRef(props, "followList"),
   {
-    active: followTabActive,
+    active: followStatusActive,
     pollInterval: PLAY_FOLLOW_POLL_MS,
     minRefreshMs: PLAY_FOLLOW_MIN_REFRESH_MS,
     shallowWatch: true,
@@ -621,6 +627,7 @@ function syncAvatarFromFollowList() {
 }
 
 async function refreshRoomFans() {
+  if (props.roomSideMeta || !props.secondaryReady) return;
   const site = String(
     props.payload?.platform || props.payload?.site || props.site || "",
   ).trim();
@@ -646,14 +653,35 @@ async function refreshRoomFans() {
   }
 }
 
+function applyRoomSideMeta(meta) {
+  if (!meta) return;
+  if (meta.fans != null) roomFans.value = meta.fans || "";
+  if (meta.state) roomState.value = meta.state;
+  if (meta.liveStartAt) roomLiveStartAt.value = Number(meta.liveStartAt) || 0;
+  else if (meta.state === "offline") roomLiveStartAt.value = 0;
+  if (meta.avatar) roomAvatar.value = meta.avatar;
+}
+
 function refreshSide() {
   const payloadAvatar = String(props.payload?.avatar || "").trim();
   roomAvatar.value = payloadAvatar;
   if (!payloadAvatar) syncAvatarFromFollowList();
+  if (props.roomSideMeta) {
+    applyRoomSideMeta(props.roomSideMeta);
+    return;
+  }
   void refreshRoomFans();
 }
 
 defineExpose({ refreshSide });
+
+watch(
+  () => props.roomSideMeta,
+  (meta) => {
+    applyRoomSideMeta(meta);
+  },
+  { deep: true, immediate: true },
+);
 
 watch(
   () => [
@@ -663,11 +691,16 @@ watch(
     props.payload?.site,
     props.payload?.room_id,
     props.payload?.avatar,
+    props.secondaryReady,
   ],
   () => {
     const payloadAvatar = String(props.payload?.avatar || "").trim();
     roomAvatar.value = payloadAvatar;
     if (!payloadAvatar) syncAvatarFromFollowList();
+    if (props.roomSideMeta) {
+      applyRoomSideMeta(props.roomSideMeta);
+      return;
+    }
     if (!props.payload?.room_id && !props.roomId) {
       roomFans.value = "";
       roomLiveStartAt.value = 0;
@@ -675,6 +708,7 @@ watch(
       roomAvatar.value = "";
       return;
     }
+    if (!props.secondaryReady) return;
     roomFans.value = "";
     roomLiveStartAt.value = 0;
     roomState.value = "offline";
@@ -1497,7 +1531,7 @@ onBeforeUnmount(() => {
   min-width: 0;
 }
 
-.setting-row--speed .setting-range {
+.setting-row--speed .setting-speed-controls :deep(.range-slider__track) {
   flex: 1;
   min-width: 0;
 }
@@ -1546,43 +1580,6 @@ onBeforeUnmount(() => {
   margin: 0;
   accent-color: var(--amber);
   cursor: pointer;
-}
-
-.setting-range {
-  width: 100%;
-  min-width: 0;
-  height: 3px;
-  margin: 0;
-  padding: 0;
-  border-radius: 999px;
-  background: var(--play-range-track);
-  appearance: none;
-  cursor: pointer;
-}
-
-.setting-range::-webkit-slider-thumb {
-  appearance: none;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #1a1a1a;
-  border-radius: 50%;
-  background: var(--amber);
-  box-shadow: 0 0 0 1px var(--primary-ring);
-}
-
-.setting-range::-moz-range-thumb {
-  width: 10px;
-  height: 10px;
-  border: 2px solid #1a1a1a;
-  border-radius: 50%;
-  background: var(--amber);
-}
-
-.setting-range::-moz-range-track {
-  height: 3px;
-  border: none;
-  border-radius: 999px;
-  background: var(--play-range-track);
 }
 
 .settings-hint {

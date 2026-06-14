@@ -97,6 +97,15 @@ export default defineConfig({
   build: {
     outDir: distWeb,
     emptyOutDir: false,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules/vue-router")) return "vue-router";
+          if (id.includes("node_modules/vue/") || id.includes("node_modules/@vue/")) return "vue";
+          if (id.includes("/views/PlayView.vue")) return "play";
+        },
+      },
+    },
   },
   server: {
     port: 8080,

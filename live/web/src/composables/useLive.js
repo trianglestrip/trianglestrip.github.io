@@ -17,6 +17,7 @@ import {
   savePlatformPref,
 } from "../utils/prefStore.js";
 import { getPrefetchedRoom } from "../utils/roomPrefetch.js";
+import { loadFlvJs } from "../utils/loadFlv.js";
 
 const DEFAULT_PLAY_PREFS = { qualityName: "", lineName: "" };
 const DEFAULT_VOLUME_PREFS = { volume: 1 };
@@ -79,15 +80,14 @@ export function useRoom(siteRef) {
 
       const roomId = parseRoomId(roomInput);
       const prefs = loadPlayPrefs(site);
-      const needFresh = force || bilibiliNeedsFreshStream(site);
-      let data = !needFresh ? getPrefetchedRoom(site, roomId) : null;
+      let data = !force ? getPrefetchedRoom(site, roomId) : null;
       if (!data) {
         data = await fetchRoom({
           site,
           room: roomId,
           mode: "lazy",
           quality: prefs.qualityName || undefined,
-          force: needFresh,
+          force: force || bilibiliNeedsFreshStream(site),
         });
       }
 
@@ -308,8 +308,8 @@ export function usePlayer(siteRef) {
 
   function flvjs() {
     const api = window.flvjs;
-    if (!api) {
-      throw new Error("flv.js 未加载，请确认 index.html 已引入 /flv.min.js");
+    if (!api?.isSupported) {
+      throw new Error("flv.js 未加载");
     }
     return api;
   }
@@ -493,7 +493,8 @@ export function usePlayer(siteRef) {
     return true;
   }
 
-  function playFlv(el, url, { site = "", roomId = "", onError, onReady, startMuted = true } = {}) {
+  async function playFlv(el, url, { site = "", roomId = "", onError, onReady, startMuted = true } = {}) {
+    await loadFlvJs();
     const flv = flvjs();
     if (!flv.isSupported()) {
       throw new Error("当前浏览器不支持 flv.js");

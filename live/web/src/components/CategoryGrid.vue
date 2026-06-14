@@ -10,6 +10,8 @@
         :src="item.pic"
         :fallback="defaultIcon"
         image-class="category-icon"
+        priority="low"
+        root-margin="120px"
       />
       <p class="category-name">{{ item.name }}</p>
     </RouterLink>

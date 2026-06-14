@@ -87,12 +87,14 @@ import { useFollowStatus } from "../composables/useFollowStatus.js";
 import { followRoomToGrid } from "../utils/followDisplay.js";
 import { followKey, loadGlobalPref, saveGlobalPref } from "../utils/prefStore.js";
 import { preloadPlayView } from "../utils/preloadPlayView.js";
+import { runIdle } from "../utils/runIdle.js";
 
 const router = useRouter();
 const { follows, unfollowMany } = useFollow();
+const statusActive = ref(false);
 const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
   follows,
-  { pollInterval: 90000 },
+  { active: statusActive, pollInterval: 90000 },
 );
 
 const followUiPref = loadGlobalPref("follow_ui", { previewCover: true });
@@ -109,6 +111,9 @@ const gridRooms = computed(() => filteredFollows.value.map(followRoomToGrid));
 
 onMounted(() => {
   preloadPlayView();
+  runIdle(() => {
+    statusActive.value = true;
+  });
 });
 
 function togglePreviewCover() {

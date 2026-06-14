@@ -1,7 +1,7 @@
 <template>
   <div v-if="rooms.length" class="room-grid">
     <button
-      v-for="room in rooms"
+      v-for="(room, index) in rooms"
       :key="roomKey(room)"
       type="button"
       class="room-item"
@@ -19,7 +19,14 @@
     >
       <div class="room-item-info">
         <div class="room-cover-wrap">
-          <LazyImage v-if="room.cover" :src="room.cover" image-class="room-cover" />
+          <LazyImage
+            v-if="room.cover"
+            :src="room.cover"
+            image-class="room-cover"
+            :eager="index < gridCols"
+            :priority="index < gridCols ? 'high' : 'low'"
+            root-margin="120px"
+          />
           <div v-else class="room-cover room-cover--empty">无封面</div>
           <PlatformCoverBadge
             v-if="roomSite(room) && room.liveState !== 'live' && room.liveState !== 'replay'"
@@ -47,10 +54,12 @@
 </template>
 
 <script setup>
+import { onBeforeUnmount, onMounted, ref } from "vue";
 import { roomKey as keyOf } from "../api/browse.js";
 import { followKey } from "../utils/prefStore.js";
 import { prefetchRoom } from "../utils/roomPrefetch.js";
 import { displayCategoryName } from "../utils/categoryDisplay.js";
+import { estimateRoomGridCols } from "../utils/gridCols.js";
 import LazyImage from "./LazyImage.vue";
 import PlatformCoverBadge from "./PlatformCoverBadge.vue";
 import CoverOnlineBadge from "./CoverOnlineBadge.vue";
@@ -64,6 +73,21 @@ const props = defineProps({
 });
 
 const emit = defineEmits(["select", "toggle-select"]);
+
+const gridCols = ref(estimateRoomGridCols());
+
+function syncGridCols() {
+  gridCols.value = estimateRoomGridCols();
+}
+
+onMounted(() => {
+  syncGridCols();
+  window.addEventListener("resize", syncGridCols, { passive: true });
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", syncGridCols);
+});
 
 function roomKey(room) {
   return keyOf(room);
@@ -112,21 +136,27 @@ function onItemClick(room) {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .room-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .room-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1024px) {
   .room-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .room-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
@@ -143,6 +173,8 @@ function onItemClick(room) {
   color: inherit;
   text-align: left;
   cursor: pointer;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 220px;
 }
 
 .room-item--selectable .room-item-info {
@@ -229,6 +261,11 @@ function onItemClick(room) {
   background: #000;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
+}
+
+.room-cover-wrap :deep(.lazy-image) {
+  position: absolute;
+  inset: 0;
 }
 
 .room-cover {

@@ -1,9 +1,13 @@
 let preloadPromise = null;
 
-/** 列表页预拉 PlayView 路由 chunk，减少首次进房 JS 等待 */
+/** 列表页预拉 PlayView 及播放相关 chunk，减少首次进房 JS 等待 */
 export function preloadPlayView() {
   if (!preloadPromise) {
-    preloadPromise = import("../views/PlayView.vue");
+    preloadPromise = Promise.all([
+      import("../views/PlayView.vue"),
+      import("../components/PlayerControls.vue"),
+      import("../components/DanmakuOverlay.vue"),
+    ]);
   }
   return preloadPromise;
 }

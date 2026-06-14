@@ -118,6 +118,10 @@ export function useFollowStatus(followsRef, {
     );
   }
 
+  watch(activeRef, (on) => {
+    if (on) scheduleRefresh();
+  });
+
   onBeforeUnmount(() => {
     clearTimeout(refreshTimer);
     if (pollTimer) clearInterval(pollTimer);

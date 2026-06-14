@@ -1,5 +1,6 @@
 import { ref } from "vue";
 import { fetchCrossCategoryRooms, fetchHotCategories } from "../api/crossBrowse.js";
+import { scheduleIdleTask } from "../utils/runIdle.js";
 
 export function useCrossBrowse() {
   const hotCategories = ref([]);
@@ -58,7 +59,7 @@ export function useCrossBrowse() {
     } finally {
       loadingRooms.value = false;
     }
-    if (reset) await prefetchUntil();
+    if (reset) scheduleIdleTask(() => { void prefetchUntil(12); });
   }
 
   async function loadMore() {

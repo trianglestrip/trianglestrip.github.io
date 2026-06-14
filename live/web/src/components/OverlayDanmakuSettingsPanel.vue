@@ -7,17 +7,17 @@
     </label>
     <label class="overlay-settings__row">
       <span class="overlay-settings__label">透明度</span>
-      <input v-model.number="settings.opacity" class="overlay-settings__range" type="range" min="10" max="100">
+      <RangeSlider v-model="settings.opacity" :min="10" :max="100" aria-label="飘屏弹幕透明度" />
       <span class="overlay-settings__value">{{ settings.opacity }}%</span>
     </label>
     <label class="overlay-settings__row">
       <span class="overlay-settings__label">字号</span>
-      <input v-model.number="settings.fontSize" class="overlay-settings__range" type="range" min="12" max="36">
+      <RangeSlider v-model="settings.fontSize" :min="12" :max="36" aria-label="飘屏弹幕字号" />
       <span class="overlay-settings__value">{{ settings.fontSize }}</span>
     </label>
     <label class="overlay-settings__row">
       <span class="overlay-settings__label">速度</span>
-      <input v-model.number="settings.speed" class="overlay-settings__range" type="range" min="1" max="10">
+      <RangeSlider v-model="settings.speed" :min="1" :max="10" aria-label="飘屏弹幕速度" />
       <span class="overlay-settings__value">{{ settings.speed }}</span>
     </label>
     <label class="overlay-settings__row">
@@ -33,6 +33,8 @@
 </template>
 
 <script setup>
+import RangeSlider from "./RangeSlider.vue";
+
 const settings = defineModel({ type: Object, required: true });
 </script>
 
@@ -93,14 +95,6 @@ const settings = defineModel({ type: Object, required: true });
   grid-column: 2;
   width: 1rem;
   height: 1rem;
-  margin: 0;
-  accent-color: var(--amber);
-  cursor: pointer;
-}
-
-.overlay-settings__range {
-  width: 100%;
-  min-width: 0;
   margin: 0;
   accent-color: var(--amber);
   cursor: pointer;

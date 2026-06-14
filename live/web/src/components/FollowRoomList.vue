@@ -242,6 +242,8 @@ function onItemClick(room) {
   align-items: flex-start;
   transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
   position: relative;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 72px;
 }
 
 .follow-room-list--grid .empty-tip,
