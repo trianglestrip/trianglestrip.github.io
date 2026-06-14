@@ -70,6 +70,7 @@
             max="1"
             step="0.05"
             :value="volume"
+            :style="{ '--volume-percent': `${volume * 100}%` }"
             aria-label="音量"
             @input="onVolumeInput"
           />
@@ -310,8 +311,56 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   width: 4.5rem;
   height: .2rem;
   margin: 0;
-  accent-color: var(--amber);
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  appearance: none;
   cursor: pointer;
+}
+
+.ctrl-volume__slider::-webkit-slider-runnable-track {
+  height: .2rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--amber) 0%,
+    var(--amber) var(--volume-percent, 0%),
+    var(--play-range-track) var(--volume-percent, 0%),
+    var(--play-range-track) 100%
+  );
+}
+
+.ctrl-volume__slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  margin-top: calc((.2rem - 10px) / 2);
+  border: 2px solid #1a1a1a;
+  border-radius: 50%;
+  background: var(--amber);
+  box-shadow: 0 0 0 1px var(--primary-ring);
+}
+
+.ctrl-volume__slider::-moz-range-track {
+  height: .2rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--play-range-track);
+}
+
+.ctrl-volume__slider::-moz-range-progress {
+  height: .2rem;
+  border-radius: 999px;
+  background: var(--amber);
+}
+
+.ctrl-volume__slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #1a1a1a;
+  border-radius: 50%;
+  background: var(--amber);
 }
 
 @media (max-width: 640px) {
