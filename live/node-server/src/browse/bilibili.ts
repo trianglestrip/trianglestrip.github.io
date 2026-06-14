@@ -28,6 +28,7 @@ interface BilibiliAreaParent {
 
 interface BilibiliRoomRecord {
   roomid?: number | string;
+  room_id?: number | string;
   title?: string;
   uname?: string;
   online?: number | string;
@@ -35,6 +36,10 @@ interface BilibiliRoomRecord {
   area_id?: number | string;
   area_name?: string;
   parent_area_name?: string;
+  area_v2_id?: number | string;
+  area_v2_parent_id?: number | string;
+  area_v2_name?: string;
+  area_v2_parent_name?: string;
   cover?: string;
   user_cover?: string;
   keyframe?: string;
@@ -75,14 +80,21 @@ function normalizeRoom(item: BilibiliRoomRecord, defaultLive = false): RoomItem 
   const cover = normalizeCover(String(item.user_cover || item.cover || item.keyframe || ""));
   const live =
     item.live_status != null ? Number(item.live_status) === 1 : defaultLive;
+  const cid = item.area_id ?? item.area_v2_id ?? "";
+  const category =
+    item.area_name ||
+    item.area_v2_name ||
+    item.parent_area_name ||
+    item.area_v2_parent_name ||
+    "";
   return {
-    roomId: String(item.roomid || ""),
+    roomId: String(item.roomid || item.room_id || ""),
     siteId: "bilibili",
     status: live,
     title: String(item.title || ""),
     nickname: String(item.uname || ""),
-    cid: String(item.area_id || ""),
-    category: String(item.area_name || item.parent_area_name || ""),
+    cid: String(cid),
+    category: String(category),
     online: formatOnline(item.online as number | string),
     cover,
   };
@@ -90,8 +102,12 @@ function normalizeRoom(item: BilibiliRoomRecord, defaultLive = false): RoomItem 
 
 function roomListFromPayload(data: unknown): BilibiliRoomRecord[] {
   if (Array.isArray(data)) return data as BilibiliRoomRecord[];
-  const record = data as { list?: BilibiliRoomRecord[] };
-  return record.list || [];
+  const record = data as {
+    list?: BilibiliRoomRecord[];
+    recommend_room_list?: BilibiliRoomRecord[];
+    rooms?: BilibiliRoomRecord[];
+  };
+  return record.recommend_room_list || record.list || record.rooms || [];
 }
 
 function buildCategoryGroups(parents: BilibiliAreaParent[]): CategoryGroup[] {
@@ -139,30 +155,49 @@ export async function fetchBilibiliCategoryRooms(
   };
 }
 
+/** webMain 推荐位每页固定约 12 条，与请求的 page_size 无关 */
+const BILIBILI_CURATED_PAGE_SIZE = 12;
+
+function dedupeRoomRecords(items: BilibiliRoomRecord[]): BilibiliRoomRecord[] {
+  const seen = new Set<string>();
+  const merged: BilibiliRoomRecord[] = [];
+  for (const item of items) {
+    const id = String(item.roomid || item.room_id || "");
+    if (!id || seen.has(id)) continue;
+    seen.add(id);
+    merged.push(item);
+  }
+  return merged;
+}
+
 export async function fetchBilibiliRecommendRooms(page: number, pageSize = 30): Promise<RoomsPayload> {
-  try {
-    const data = await fetchJson<unknown>("https://api.live.bilibili.com/xlive/web-interface/v1/second/getList", {
-      platform: "web",
-      page,
-      page_size: pageSize,
-    });
-    const items = roomListFromPayload(data);
-    if (items.length) {
-      const list = items.map((item) => normalizeRoom(item, true)).filter((room) => room.roomId);
-      return { list, hasMore: list.length >= pageSize, page };
+  const data = await fetchJson<unknown>("https://api.live.bilibili.com/room/v1/Area/getRoomList", {
+    page,
+    page_size: pageSize,
+  });
+  let items = roomListFromPayload(data);
+
+  if (page === 1) {
+    try {
+      const curatedData = await fetchJson<unknown>(
+        "https://api.live.bilibili.com/xlive/web-interface/v1/webMain/getList",
+        {
+          platform: "web",
+          page: 1,
+          page_size: BILIBILI_CURATED_PAGE_SIZE,
+        },
+      );
+      items = dedupeRoomRecords([...roomListFromPayload(curatedData), ...items]);
+    } catch {
+      /* 推荐位失败时仍展示全站列表 */
     }
-  } catch {
-    /* fallback */
   }
 
-  const fallback = await fetchJson<{ list?: BilibiliRoomRecord[] }>(
-    "https://api.live.bilibili.com/room/v1/Room/get_user_recommend",
-    { page, page_size: pageSize },
-  );
-  const list = (fallback.list || []).map((item) => normalizeRoom(item, true)).filter((room) => room.roomId);
+  const list = items.map((item) => normalizeRoom(item, true)).filter((room) => room.roomId);
+  const broadCount = roomListFromPayload(data).length;
   return {
     list,
-    hasMore: list.length >= pageSize,
+    hasMore: broadCount >= pageSize,
     page,
   };
 }
