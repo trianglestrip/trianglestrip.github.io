@@ -34,6 +34,7 @@
         :state="room.state"
         :compact="compact"
         :grid="layout === 'grid'"
+        :hide-live-frame="hideLiveFrame"
         root-margin="120px"
       />
       <div class="follow-main" :class="{ 'follow-main--compact': compact }">
@@ -120,6 +121,7 @@ const props = defineProps({
   selectMode: { type: Boolean, default: false },
   selectedKeys: { type: Array, default: () => [] },
   emptyText: { type: String, default: "暂无关注，可使用侧栏批量加入" },
+  hideLiveFrame: { type: Boolean, default: false },
 });
 
 const emit = defineEmits(["select", "unfollow", "toggle-select"]);
@@ -133,7 +135,7 @@ function categoryLabel(room) {
 }
 
 function categoryStyle(room) {
-  return getCategoryStyle(room.category, room.site, room.cid) || {};
+  return getCategoryStyle(room.category, room.site, room.cid, props.compact ? { opaque: true } : {}) || {};
 }
 
 /** 离线或无观看数据时不占位 */
@@ -200,9 +202,9 @@ function onItemClick(room) {
   max-width: 20rem;
   width: auto;
   min-width: 0;
-  border: 1px solid var(--gray-7);
+  border: 1px solid var(--chrome-border);
   border-radius: 8px;
-  border-bottom: 1px solid var(--gray-7);
+  border-bottom: 1px solid var(--chrome-border);
   padding: .18rem .36rem;
   align-items: center;
 }
@@ -232,7 +234,7 @@ function onItemClick(room) {
   width: 100%;
   padding: .28rem .45rem;
   border: none;
-  border-bottom: 1px solid var(--gray-7);
+  border-bottom: 1px solid var(--chrome-border);
   color: inherit;
   text-align: left;
   cursor: pointer;
@@ -263,7 +265,7 @@ function onItemClick(room) {
 
 .follow-item--selected {
   border-color: var(--amber) !important;
-  box-shadow: 0 0 0 1px rgba(243, 208, 78, .35);
+  box-shadow: 0 0 0 1px var(--primary-ring);
 }
 
 .follow-platform-tag {
@@ -275,22 +277,22 @@ function onItemClick(room) {
   border-radius: 3px;
   letter-spacing: .02em;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--follow-tag-default-bg, var(--dark-6));
 }
 
 .follow-platform-tag--douyu {
-  color: #ff8a2a;
-  background: rgba(255, 138, 42, 0.18);
+  color: var(--platform-douyu-text);
+  background: var(--follow-tag-douyu-bg, var(--sidebar-tag-douyu-bg));
 }
 
 .follow-platform-tag--huya {
-  color: #ffb800;
-  background: rgba(255, 184, 0, 0.18);
+  color: var(--platform-huya-text);
+  background: var(--follow-tag-huya-bg, var(--sidebar-tag-huya-bg));
 }
 
 .follow-platform-tag--douyin {
-  color: #fe2c55;
-  background: rgba(254, 44, 85, 0.18);
+  color: var(--platform-douyin-text);
+  background: var(--follow-tag-douyin-bg, var(--sidebar-tag-douyin-bg));
 }
 
 .follow-check {
@@ -308,7 +310,7 @@ function onItemClick(room) {
 .follow-check--on {
   border-color: var(--amber);
   background: var(--amber);
-  box-shadow: inset 0 0 0 2px #1a1a1a;
+  box-shadow: inset 0 0 0 2px var(--primary-on);
 }
 
 .follow-item:hover {
@@ -316,30 +318,30 @@ function onItemClick(room) {
 }
 
 .follow-item--live {
-  background: rgba(46, 160, 67, 0.16);
+  background: var(--follow-item-live-bg, rgba(46, 160, 67, 0.16));
 }
 
 .follow-item--replay {
-  background: rgba(243, 208, 78, 0.14);
+  background: var(--follow-item-replay-bg, #3a3418);
 }
 
 .follow-item--offline {
-  background: rgba(255, 255, 255, 0.03);
-  color: #777;
+  background: var(--follow-item-offline-bg, var(--follow-state-offline-bg));
+  color: var(--follow-state-muted-text);
 }
 
 .follow-item--offline .follow-title,
 .follow-item--offline .follow-anchor,
 .follow-item--offline .follow-meta {
-  color: #777;
+  color: var(--follow-state-muted-text);
 }
 
 .follow-item--offline .follow-platform-tag,
 .follow-item--offline .follow-platform-tag--douyu,
 .follow-item--offline .follow-platform-tag--huya,
 .follow-item--offline .follow-platform-tag--douyin {
-  color: #666;
-  background: rgba(255, 255, 255, 0.06);
+  color: var(--follow-state-muted-text);
+  background: var(--follow-meta-chip-bg, var(--dark-6));
 }
 
 .follow-item--offline .follow-category-tag {
@@ -353,13 +355,13 @@ function onItemClick(room) {
 }
 
 .follow-item--offline :deep(.follow-avatar--empty) {
-  color: #666;
-  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--follow-state-muted-text);
+  border-color: var(--border);
 }
 
 .follow-item--offline .follow-online-inline {
-  color: #666;
-  background: rgba(255, 255, 255, 0.06);
+  color: var(--follow-state-muted-text);
+  background: var(--follow-meta-chip-bg, var(--dark-6));
 }
 
 .follow-item--offline .follow-online-fa {
@@ -367,23 +369,23 @@ function onItemClick(room) {
 }
 
 .follow-item--super {
-  background: rgba(120, 62, 150, 0.34);
+  background: var(--follow-item-super-bg, rgba(120, 62, 150, 0.34));
 }
 
 .follow-item--super.follow-item--live {
-  background: rgba(120, 62, 150, 0.38);
+  background: var(--follow-item-super-live-bg, rgba(120, 62, 150, 0.38));
 }
 
 .follow-item--super.follow-item--replay {
-  background: rgba(120, 62, 150, 0.34);
+  background: var(--follow-item-super-replay-bg, rgba(120, 62, 150, 0.34));
 }
 
 .follow-item--super.follow-item--offline {
-  background: rgba(95, 48, 118, 0.32);
+  background: var(--follow-item-super-offline-bg, rgba(95, 48, 118, 0.32));
 }
 
 .follow-item--super.follow-item--selected {
-  box-shadow: 0 0 0 1px rgba(243, 208, 78, .35);
+  box-shadow: 0 0 0 1px var(--primary-ring);
 }
 
 .follow-body {
@@ -545,7 +547,7 @@ function onItemClick(room) {
   padding: .08rem .18rem;
   border-radius: 3px;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--follow-meta-chip-bg, var(--dark-6));
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -580,13 +582,13 @@ function onItemClick(room) {
 }
 
 .follow-online-inline {
-  color: #7eb0e8;
-  background: rgba(110, 181, 255, 0.18);
+  color: var(--follow-online-text, var(--follow-online-chip-text, #d0e8ff));
+  background: var(--follow-online-bg, var(--follow-online-chip-bg, #3a5878));
 }
 
 .follow-online-inline--live {
-  color: #8ec0ff;
-  background: rgba(110, 181, 255, 0.24);
+  color: var(--follow-online-live-text, var(--follow-online-chip-live-text, #e0f0ff));
+  background: var(--follow-online-live-bg, var(--follow-online-chip-live-bg, #345070));
 }
 
 .follow-room-list--compact .follow-online-inline {

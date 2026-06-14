@@ -33,6 +33,7 @@ export interface DouyinMeta {
   available_qualities: Array<{ name: string; rate: number }>;
   m3u8_url?: string;
   offline?: boolean;
+  room_state?: string;
   context?: {
     room_data: DouyinRoomData;
   };
@@ -105,6 +106,7 @@ export async function loadMeta(url: string): Promise<DouyinMeta> {
       ...meta,
       available_qualities: [],
       offline: true,
+      room_state: "offline",
       context: { room_data: roomData },
     };
   }
@@ -112,7 +114,7 @@ export async function loadMeta(url: string): Promise<DouyinMeta> {
   if (!meta.available_qualities.length) {
     throw new Error("未获取到可播放地址");
   }
-  return meta;
+  return { ...meta, room_state: "live" };
 }
 
 export async function resolveTier(meta: DouyinMeta, qualityName?: string): Promise<DouyinTier> {

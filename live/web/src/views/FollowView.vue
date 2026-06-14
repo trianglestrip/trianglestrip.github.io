@@ -14,15 +14,6 @@
             >
               <Icon name="refresh" :class="{ 'fa-spin': followStatusLoading }" />
             </button>
-            <button
-              type="button"
-              class="btn btn-sm btn-list-mode"
-              :class="{ 'btn-list-mode--active': !previewCover }"
-              title="列表视图"
-              @click="togglePreviewCover"
-            >
-              <Icon name="list" />
-            </button>
             <FollowBatchImport inline />
             <template v-if="batchMode">
               <button type="button" class="btn btn-sm" @click="exitBatchMode">取消</button>
@@ -38,7 +29,18 @@
             <button v-else type="button" class="btn btn-sm" @click="enterBatchMode">批量删除</button>
           </div>
         </div>
-        <FollowPlatformFilter v-model="followSiteFilter" compact class="follow-header__filter" />
+        <div class="follow-header__filter-row">
+          <button
+            type="button"
+            class="btn btn-sm btn-list-mode"
+            :class="{ 'btn-list-mode--active': !previewCover }"
+            title="列表视图"
+            @click="togglePreviewCover"
+          >
+            <Icon name="list" />
+          </button>
+          <FollowPlatformFilter v-model="followSiteFilter" class="follow-header__filter" />
+        </div>
       </header>
 
       <div class="follow-list scrolly">
@@ -198,8 +200,21 @@ function confirmBatchDelete() {
   justify-content: flex-end;
 }
 
-.follow-header__filter {
+.follow-header__filter-row {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
   min-width: 0;
+}
+
+.follow-header__filter {
+  flex: 1;
+  min-width: 0;
+}
+
+.follow-header__filter :deep(.follow-platform-filter__item) {
+  font-size: 1rem;
+  padding: .28rem .54rem;
 }
 
 .btn-sm {
@@ -208,14 +223,14 @@ function confirmBatchDelete() {
 }
 
 .btn-danger {
-  border-color: rgba(255, 107, 107, .55);
+  border-color: color-mix(in srgb, var(--danger) 55%, var(--border));
   color: var(--danger);
 }
 
 .btn-danger:hover:not(:disabled) {
   border-color: var(--danger);
   color: #fff;
-  background: rgba(255, 107, 107, .18);
+  background: color-mix(in srgb, var(--danger) 18%, transparent);
 }
 
 .btn-refresh {
@@ -238,6 +253,7 @@ function confirmBatchDelete() {
   padding: .38rem .5rem;
   line-height: 1;
   color: var(--muted);
+  flex-shrink: 0;
 }
 
 .btn-list-mode :deep(.ui-icon) {
@@ -247,8 +263,8 @@ function confirmBatchDelete() {
 
 .btn-list-mode--active {
   color: var(--amber);
-  border-color: rgba(243, 208, 78, 0.45);
-  background: rgba(243, 208, 78, 0.1);
+  border-color: var(--primary-border-strong);
+  background: var(--primary-soft-10);
 }
 
 .follow-list {

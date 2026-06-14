@@ -25,6 +25,8 @@ const FA_ICONS = {
   user: "fa-user",
   users: "fa-users",
   "arrow-left": "fa-arrow-left",
+  "chevron-left": "fa-chevron-left",
+  "chevron-right": "fa-chevron-right",
   play: "fa-play",
   pause: "fa-pause",
   refresh: "fa-arrows-rotate",

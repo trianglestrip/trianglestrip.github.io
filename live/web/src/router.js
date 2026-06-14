@@ -5,9 +5,21 @@ import CategoryRoomsView from "./views/CategoryRoomsView.vue";
 import FollowView from "./views/FollowView.vue";
 import TimeView from "./views/TimeView.vue";
 import PlaceholderView from "./views/PlaceholderView.vue";
-import { PLATFORMS } from "./config/platforms";
+import { PLATFORMS, supportsBrowse } from "./config/platforms";
+import { useSearchDialog } from "./composables/useSearchDialog.js";
 
 const enabledSites = new Set(PLATFORMS.filter((p) => p.enabled).map((p) => p.id));
+
+function categoryRouteGuard(to) {
+  const site = String(to.params.site || "");
+  if (!enabledSites.has(site)) {
+    return supportsBrowse("douyu") ? "/douyu/category" : "/douyu";
+  }
+  if (!supportsBrowse(site)) {
+    return { name: "site-home", params: { site } };
+  }
+  return true;
+}
 
 const GH_PAGES_REDIRECT_KEY = "live-gh-pages-path";
 
@@ -29,7 +41,7 @@ const router = createRouter({
     { path: "/", redirect: "/douyu" },
     { path: "/follow", name: "follow", component: FollowView },
     { path: "/time", name: "time", component: TimeView },
-    { path: "/search", name: "search", component: PlaceholderView },
+    { path: "/search", name: "search", redirect: "/douyu" },
     { path: "/user", name: "user", component: PlaceholderView },
     {
       path: "/:site/play/:id",
@@ -47,13 +59,14 @@ const router = createRouter({
         cid: route.params.cid,
         pid: route.query.pid ? String(route.query.pid) : "",
       }),
-      beforeEnter: (to) => enabledSites.has(to.params.site) || "/douyu/category",
+      beforeEnter: categoryRouteGuard,
     },
     {
       path: "/:site/category",
       name: "category-index",
       component: CategoryIndexView,
       props: true,
+      beforeEnter: categoryRouteGuard,
     },
     {
       path: "/:site",
@@ -85,6 +98,15 @@ const router = createRouter({
       redirect: (to) => `/${to.params.site}`,
     },
   ],
+});
+
+const { openSearch } = useSearchDialog();
+
+router.beforeEach((to, from) => {
+  if (to.name !== "search") return true;
+  const fromSite = typeof from.params?.site === "string" ? from.params.site : "";
+  openSearch(enabledSites.has(fromSite) ? fromSite : "douyu");
+  return true;
 });
 
 export default router;

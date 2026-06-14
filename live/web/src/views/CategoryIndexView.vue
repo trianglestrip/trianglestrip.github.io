@@ -1,17 +1,18 @@
 <template>
   <AppLayout :active-site="site">
-    <PlatformTabs :active-site="site" category-mode>
+    <PlatformTabs :active-site="site" hide-headers>
       <p v-if="!platform?.enabled" class="page-msg">该平台尚未接入</p>
       <section v-else-if="!browseEnabled" class="page-msg">
         <p>该平台暂不支持分类浏览。</p>
         <RouterLink :to="`/${site}`">返回首页输入房间号</RouterLink>
       </section>
-      <p v-else-if="loadingCategories" class="page-msg">加载分类...</p>
+      <p v-else-if="loadingCategories" class="page-msg">加载游戏分类...</p>
       <p v-else-if="listError" class="page-msg page-msg--err">{{ listError }}</p>
       <template v-else>
         <CategoryGroupTabs
           v-if="categories.length > 1"
           v-model:active-index="activeGroupIndex"
+          :site="site"
           :groups="categories"
         />
         <CategoryGrid :site="site" :items="activeItems" />

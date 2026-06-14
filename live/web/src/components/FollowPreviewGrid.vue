@@ -10,7 +10,7 @@
       type="button"
       class="follow-preview-item"
       :class="{
-        'follow-preview-item--live': room.state === 'live',
+        'follow-preview-item--live': room.state === 'live' && !hideLiveFrame,
         'follow-preview-item--replay': room.state === 'replay',
         'follow-preview-item--offline': room.state === 'offline',
         'follow-preview-item--super': room.super,
@@ -88,6 +88,7 @@ const props = defineProps({
   selectedKeys: { type: Array, default: () => [] },
   compact: { type: Boolean, default: false },
   showStats: { type: Boolean, default: true },
+  hideLiveFrame: { type: Boolean, default: false },
 });
 
 const emit = defineEmits(["select", "toggle-select"]);
@@ -201,10 +202,10 @@ function categoryLabel(room) {
 }
 
 .follow-preview-item--replay .follow-preview-cover-wrap {
-  border-color: rgba(243, 208, 78, 0.88);
+  border-color: var(--primary-border-solid);
   box-shadow:
-    inset 0 0 28px 10px rgba(243, 208, 78, 0.36),
-    inset 0 0 12px 3px rgba(243, 208, 78, 0.22);
+    inset 0 0 28px 10px var(--primary-inset-36),
+    inset 0 0 12px 3px var(--primary-inset-22);
 }
 
 .follow-preview-item--offline .follow-preview-cover-wrap {
@@ -214,17 +215,17 @@ function categoryLabel(room) {
 
 .follow-preview-item--super {
   border-radius: 8px;
-  background: rgba(120, 62, 150, 0.22);
+  background: var(--follow-preview-super-bg, var(--follow-state-super-bg, #3a2048));
   padding: .2rem;
 }
 
 .follow-preview-item--selected .follow-preview-cover-wrap {
   border-color: var(--amber);
-  box-shadow: 0 0 0 1px rgba(243, 208, 78, 0.35);
+  box-shadow: 0 0 0 1px var(--primary-ring);
 }
 
 .follow-preview-item:hover .follow-preview-cover-wrap {
-  border-color: rgba(243, 208, 78, 0.55);
+  border-color: var(--primary-border-mid);
 }
 
 .follow-preview-cover {
@@ -337,7 +338,7 @@ function categoryLabel(room) {
   padding: .08rem .18rem;
   border-radius: 3px;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--follow-meta-chip-bg, rgba(255, 255, 255, 0.06));
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }

@@ -116,7 +116,7 @@ function onSelectRoom(room) {
   align-items: center;
   gap: .5rem;
   padding: .35rem .5rem .65rem;
-  border-bottom: 1px solid var(--gray-7);
+  border-bottom: 1px solid var(--chrome-border);
   flex-shrink: 0;
 }
 

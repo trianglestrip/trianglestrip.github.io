@@ -21,9 +21,6 @@ const meta = computed(() => {
   if (route.path === "/follow") {
     return { icon: "heart", title: "关注", message: "关注列表尚未接入，与 Lemon Live 一致预留入口。" };
   }
-  if (route.path === "/search") {
-    return { icon: "search", title: "搜索", message: "搜索功能尚未接入。" };
-  }
   return { icon: "user", title: "用户", message: "用户中心尚未接入。" };
 });
 

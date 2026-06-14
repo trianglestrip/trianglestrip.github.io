@@ -1,0 +1,12 @@
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.text-amber {
+  color: var(--primary);
+}
+
+.hover-amber:hover {
+  color: var(--primary);
+}

@@ -1,8 +1,9 @@
 import { coverFromRoom, fetchBetard } from "../resolve/douyu/betard.js";
+import { fetchDouyinUserFollowInfo, fetchWebStreamData } from "../resolve/douyin/web-stream.js";
 import { huyaRoomState, profileNeedsPageCheck } from "./huya-state.js";
 import { fetchHuyaPageRoomFlags } from "../resolve/huya/web-stream.js";
 import { fetchHuyaGuardInfo, fetchHuyaVipCount } from "./huya-wup.js";
-import { formatCount, formatOnline } from "../utils/format-online.js";
+import { formatCount, formatOnline, formatPlainCount } from "../utils/format-online.js";
 
 export type FollowState = "live" | "replay" | "offline";
 
@@ -221,6 +222,53 @@ async function fetchDouyuSnapshot(roomId: string): Promise<FollowSnapshot> {
   };
 }
 
+async function fetchDouyinSnapshot(roomId: string): Promise<FollowSnapshot> {
+  const rid = String(roomId).trim();
+  const roomData = await fetchWebStreamData(rid);
+  const status = Number(roomData.status || 0);
+  const state: FollowState = status === 2 ? "live" : "offline";
+  const coverList = roomData.cover?.url_list || [];
+  const owner = roomData.owner || {};
+  const avatarThumb = owner.avatar_thumb?.url_list || owner.avatar_medium?.url_list || [];
+
+  let fans = "";
+  const ownerFans = owner.follow_info?.follower_count;
+  if (ownerFans) {
+    fans = formatCount(ownerFans);
+  } else if (owner.id_str) {
+    const followInfo = await fetchDouyinUserFollowInfo(owner.id_str);
+    if (followInfo?.follower_count) {
+      fans = formatCount(followInfo.follower_count);
+    }
+  }
+
+  const onlineRaw =
+    roomData.user_count_str ||
+    roomData.user_count ||
+    "";
+
+  return {
+    site: "douyin",
+    id: rid,
+    state,
+    avatar: httpsUrl(avatarThumb[0] || ""),
+    cover: httpsUrl(coverList[0] || ""),
+    title: roomData.title || roomData.anchor_name || "",
+    anchor: roomData.anchor_name || owner.nickname || "",
+    category: "",
+    fans,
+    online: state === "live" ? formatPlainCount(onlineRaw) : "",
+    diamondFans: "",
+    fanGroup: "",
+    guard: "",
+    vip: "",
+    guardNormal: 0,
+    guardSuper: 0,
+    lastLiveAt: 0,
+    liveStartAt: 0,
+  };
+}
+
 async function fetchHuyaSnapshot(roomId: string): Promise<FollowSnapshot> {
   const rid = String(roomId).trim();
   const url = new URL("https://mp.huya.com/cache.php");
@@ -309,6 +357,7 @@ async function fetchOne(site: string, roomId: string): Promise<FollowSnapshot> {
   try {
     if (normalizedSite === "douyu") return await fetchDouyuSnapshot(rid);
     if (normalizedSite === "huya") return await fetchHuyaSnapshot(rid);
+    if (normalizedSite === "douyin") return await fetchDouyinSnapshot(rid);
   } catch {
     /* fall through */
   }

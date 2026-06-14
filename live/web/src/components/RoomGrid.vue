@@ -99,8 +99,8 @@ function onItemClick(room) {
 <style scoped>
 .room-grid {
   display: grid;
-  gap: 1rem;
-  padding: .5rem;
+  gap: .85rem 1rem;
+  padding: 0 .35rem .35rem;
   justify-content: space-evenly;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -123,6 +123,12 @@ function onItemClick(room) {
   }
 }
 
+@media (min-width: 1920px) {
+  .room-grid {
+    grid-template-columns: repeat(var(--room-grid-cols-wide, 6), minmax(0, 1fr));
+  }
+}
+
 .room-item {
   padding: 0;
   border: none;
@@ -138,7 +144,7 @@ function onItemClick(room) {
 
 .room-item--selected .room-item-info {
   border-color: var(--amber);
-  box-shadow: 0 0 0 1px rgba(243, 208, 78, .35);
+  box-shadow: 0 0 0 1px var(--primary-ring);
 }
 
 .room-item-info {
@@ -151,29 +157,32 @@ function onItemClick(room) {
 }
 
 .room-item--live .room-item-info {
-  border-color: rgba(229, 57, 53, 0.88);
+  border-color: var(--danger-border);
   box-shadow:
-    inset 0 0 28px 10px rgba(229, 57, 53, 0.38),
-    inset 0 0 12px 3px rgba(229, 57, 53, 0.22),
+    inset 0 0 28px 10px var(--danger-glow-38),
+    inset 0 0 12px 3px var(--danger-glow-22),
     0 2px 8px rgba(0, 0, 0, 0.25);
   animation: room-cover-live-pulse 2.2s ease-in-out infinite;
 }
 
 .room-item--replay .room-item-info {
-  border-color: rgba(243, 208, 78, 0.88);
+  border-color: var(--primary-border-solid);
   box-shadow:
-    inset 0 0 28px 10px rgba(243, 208, 78, 0.36),
-    inset 0 0 12px 3px rgba(243, 208, 78, 0.22),
+    inset 0 0 28px 10px var(--primary-inset-36),
+    inset 0 0 12px 3px var(--primary-inset-22),
     0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.room-item--live:hover .room-item-info,
+.room-item--live:hover .room-item-info {
+  border-color: color-mix(in srgb, var(--danger) 95%, transparent);
+}
+
 .room-item--replay:hover .room-item-info {
-  border-color: rgba(243, 208, 78, 0.75);
+  border-color: var(--primary-border-hover);
 }
 
 .room-item:hover .room-item-info {
-  border-color: rgba(243, 208, 78, .55);
+  border-color: var(--primary-border-mid);
 }
 
 .room-cover-wrap {
@@ -215,7 +224,7 @@ function onItemClick(room) {
 .room-check--on {
   background: var(--amber);
   border-color: var(--amber);
-  box-shadow: inset 0 0 0 2px #1a1a1a;
+  box-shadow: inset 0 0 0 2px var(--primary-on);
 }
 
 .room-badge {
@@ -231,7 +240,7 @@ function onItemClick(room) {
   left: 0;
   border-bottom-right-radius: 8px;
   color: #fff;
-  background: #e53935;
+  background: var(--danger);
   font-weight: 700;
   letter-spacing: .04em;
 }
@@ -240,7 +249,7 @@ function onItemClick(room) {
   top: 0;
   left: 0;
   border-bottom-right-radius: 8px;
-  color: #1a1a1a;
+  color: var(--primary-on);
   background: var(--amber);
   font-weight: 600;
 }
@@ -300,14 +309,14 @@ function onItemClick(room) {
 @keyframes room-cover-live-pulse {
   0%, 100% {
     box-shadow:
-      inset 0 0 24px 8px rgba(229, 57, 53, 0.34),
-      inset 0 0 10px 2px rgba(229, 57, 53, 0.18),
+      inset 0 0 24px 8px var(--danger-glow-34),
+      inset 0 0 10px 2px var(--danger-glow-22),
       0 2px 8px rgba(0, 0, 0, 0.25);
   }
   50% {
     box-shadow:
-      inset 0 0 34px 12px rgba(229, 57, 53, 0.46),
-      inset 0 0 14px 4px rgba(229, 57, 53, 0.26),
+      inset 0 0 34px 12px var(--danger-glow-46),
+      inset 0 0 14px 4px color-mix(in srgb, var(--danger) 26%, transparent),
       0 2px 8px rgba(0, 0, 0, 0.25);
   }
 }

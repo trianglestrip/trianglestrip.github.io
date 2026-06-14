@@ -40,18 +40,20 @@ cd ../dist
 ## 开发模式（源码）
 
 ```powershell
-# 终端 1：API（Node，推荐）
+# 终端 1：API 源码（改 node-server/src 后重启此终端）
 cd live/node-server
-.\start.bat
+.\start-dev.bat
 
-# 终端 2：前端
+# 终端 2：前端源码（Vite 热更新）
 cd live/web
 npm install
-npm run dev
+.\start-dev.bat
 ```
 
-- 前端：http://127.0.0.1:5173/
-- API：http://127.0.0.1:8765/api/health
+- 前端：http://127.0.0.1:8080/（`web/src` 直读，保存即热更新）
+- API：http://127.0.0.1:8765/api/health（`node-server/src`，**不会**随前端一起更新）
+
+若用 `node-server\start.bat` 或 `dist\start-api.bat`，跑的是 **已编译** 的 `dist/server/live-api.mjs`，改完 `src` 须先 `npm run build` 再重启 API。
 
 ## 配置说明
 

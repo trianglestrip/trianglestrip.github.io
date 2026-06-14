@@ -1,0 +1,188 @@
+/* 侧栏容器：播放页侧栏 + 分类抽屉 */
+.play-side,
+.directory-drawer {
+  background: var(--sidebar-bg);
+  --follow-item-live-bg: var(--sidebar-follow-live-bg);
+  --follow-item-replay-bg: var(--sidebar-follow-replay-bg);
+  --follow-item-offline-bg: var(--sidebar-follow-offline-bg);
+  --follow-item-super-bg: var(--sidebar-follow-super-bg);
+  --follow-item-super-live-bg: var(--sidebar-follow-super-live-bg);
+  --follow-item-super-replay-bg: var(--sidebar-follow-super-bg);
+  --follow-item-super-offline-bg: var(--sidebar-follow-super-offline-bg);
+  --follow-tag-default-bg: var(--sidebar-tag-default-bg);
+  --follow-tag-douyu-bg: var(--sidebar-tag-douyu-bg);
+  --follow-tag-huya-bg: var(--sidebar-tag-huya-bg);
+  --follow-tag-douyin-bg: var(--sidebar-tag-douyin-bg);
+  --follow-filter-bg: var(--sidebar-chip-bg);
+  --follow-filter-active-bg: var(--sidebar-chip-active-bg);
+  --follow-filter-douyu-bg: var(--sidebar-filter-douyu-bg);
+  --follow-filter-douyu-active-bg: var(--sidebar-filter-douyu-active-bg);
+  --follow-filter-huya-bg: var(--sidebar-filter-huya-bg);
+  --follow-filter-huya-active-bg: var(--sidebar-filter-huya-active-bg);
+  --follow-filter-douyin-bg: var(--sidebar-filter-douyin-bg);
+  --follow-filter-douyin-active-bg: var(--sidebar-filter-douyin-active-bg);
+  --follow-online-bg: var(--sidebar-online-bg);
+  --follow-online-live-bg: var(--sidebar-online-live-bg);
+  --follow-online-text: var(--sidebar-online-text);
+  --follow-online-live-text: var(--sidebar-online-live-text);
+  --follow-meta-chip-bg: var(--sidebar-meta-chip-bg);
+  --follow-preview-super-bg: var(--sidebar-follow-super-bg);
+}
+
+.play-side .side-header {
+  background: var(--sidebar-header-bg);
+}
+
+.directory-drawer__toggle {
+  background: var(--sidebar-bg);
+}
+
+.directory-drawer__follow-wrap {
+  background: var(--sidebar-header-bg);
+}
+
+.directory-drawer__platform-tabs,
+.directory-drawer__rail-platforms {
+  background: var(--sidebar-header-bg);
+}
+
+/* 播放页侧栏 · 关注列表：各状态不透明实色（深绿/深紫等） */
+.play-side {
+  --follow-item-live-bg: var(--follow-state-live-bg);
+  --follow-item-replay-bg: var(--follow-state-replay-bg);
+  --follow-item-offline-bg: var(--follow-state-offline-bg);
+  --follow-item-super-bg: var(--follow-state-super-bg);
+  --follow-item-super-live-bg: var(--follow-state-super-live-bg);
+  --follow-item-super-replay-bg: var(--follow-state-super-bg);
+  --follow-item-super-offline-bg: var(--follow-state-super-offline-bg);
+  --follow-preview-super-bg: var(--follow-state-super-bg);
+}
+
+.play-side .follow-tab-toolbar {
+  background: var(--sidebar-header-bg);
+}
+
+.play-side .follow-item--live {
+  background: var(--follow-state-live-bg);
+}
+
+.play-side .follow-item--replay {
+  background: var(--follow-state-replay-bg);
+}
+
+.play-side .follow-item--offline {
+  background: var(--follow-state-offline-bg);
+  color: var(--follow-state-muted-text);
+}
+
+.play-side .follow-item--offline .follow-title,
+.play-side .follow-item--offline .follow-anchor,
+.play-side .follow-item--offline .follow-meta {
+  color: var(--follow-state-muted-text);
+}
+
+.play-side .follow-item--super {
+  background: var(--follow-state-super-bg);
+}
+
+.play-side .follow-item--super.follow-item--live {
+  background: var(--follow-state-super-live-bg);
+}
+
+.play-side .follow-item--super.follow-item--replay {
+  background: var(--follow-state-super-bg);
+}
+
+.play-side .follow-item--super.follow-item--offline {
+  background: var(--follow-state-super-offline-bg);
+}
+
+.play-side .follow-item--live,
+.play-side .follow-item--replay,
+.play-side .follow-item--super {
+  color: var(--follow-state-on-text);
+}
+
+.play-side .follow-preview-item--live {
+  border-radius: 8px;
+  padding: .2rem;
+  background: var(--follow-state-live-bg);
+}
+
+.play-side .follow-preview-item--replay {
+  border-radius: 8px;
+  padding: .2rem;
+  background: var(--follow-state-replay-bg);
+}
+
+.play-side .follow-preview-item--offline {
+  border-radius: 8px;
+  padding: .2rem;
+  background: var(--follow-state-offline-bg);
+}
+
+.play-side .follow-preview-item--super {
+  background: var(--follow-state-super-bg);
+}
+
+.play-side .follow-preview-item--live,
+.play-side .follow-preview-item--replay,
+.play-side .follow-preview-item--super {
+  color: var(--follow-state-on-text);
+}
+
+.play-side .follow-preview-item--offline {
+  color: var(--follow-state-muted-text);
+}
+
+.play-side .follow-preview-item--offline .follow-preview-anchor {
+  color: var(--follow-state-muted-text);
+}
+
+.play-side .follow-platform-tag {
+  background: var(--sidebar-tag-default-bg);
+}
+
+.play-side .follow-platform-tag--douyu {
+  background: var(--sidebar-tag-douyu-bg);
+}
+
+.play-side .follow-platform-tag--huya {
+  background: var(--sidebar-tag-huya-bg);
+}
+
+.play-side .follow-platform-tag--douyin {
+  background: var(--sidebar-tag-douyin-bg);
+}
+
+.play-side .follow-online-inline {
+  color: var(--follow-online-text);
+  background: var(--follow-online-bg);
+}
+
+.play-side .follow-online-inline--live {
+  color: var(--follow-online-live-text);
+  background: var(--follow-online-live-bg);
+}
+
+.play-side .follow-item--live .follow-anchor {
+  color: var(--follow-state-live-accent);
+}
+
+.play-side .follow-item--replay .follow-anchor {
+  color: var(--follow-state-replay-accent);
+}
+
+.play-side .follow-item--super .follow-anchor {
+  color: var(--follow-state-super-accent);
+}
+
+.play-side .follow-live-start-inline,
+.play-side .follow-item--offline .follow-platform-tag,
+.play-side .follow-item--offline .follow-online-inline {
+  background: var(--sidebar-meta-chip-bg);
+}
+
+.play-side .follow-preview-stat {
+  background: var(--sidebar-meta-chip-bg);
+}

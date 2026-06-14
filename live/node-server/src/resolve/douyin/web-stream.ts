@@ -3,32 +3,57 @@ import { abSign } from "./ab-sign.js";
 const PC_HEADERS = {
   "user-agent":
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
-  "accept-language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+  "accept-language": "zh-CN,zh;q=0.9",
   referer: "https://live.douyin.com/",
 };
 
-const FALLBACK_COOKIE =
-  "ttwid=1%7CmDcInbJ7AJ-2PGtsgrG4xj7SOiNMzePqQBF1LMO2Qkg%7C1761107324%7Cbbf97c2cd9f8eae8e8c36db4ef50c323deaa4b161179170aaf659590867c162d";
+const SESSION_COOKIE_TTL_MS = 60_000;
+let sessionCookie: string | null = null;
+let sessionCookieAt = 0;
 
-async function bootstrapCookie(webRid: string): Promise<string> {
+function randomHex(len: number): string {
+  const chars = "0123456789abcdef";
+  let out = "";
+  for (let i = 0; i < len; i++) out += chars[Math.floor(Math.random() * chars.length)];
+  return out;
+}
+
+async function bootstrapCookie(): Promise<string> {
+  const acNonce = randomHex(21);
+  const seed = `__ac_nonce=${acNonce}; odin_tt=${randomHex(160)}`;
   try {
-    const res = await fetch(`https://live.douyin.com/${webRid}`, {
-      headers: PC_HEADERS,
+    // 从首页拿 ttwid 等 cookie；直接访问房间页易触发验证码中间页
+    const res = await fetch("https://live.douyin.com/", {
+      headers: { ...PC_HEADERS, cookie: seed },
       redirect: "follow",
       signal: AbortSignal.timeout(12_000),
     });
-    const parts: string[] = [];
+    const parts = [`__ac_nonce=${acNonce}`];
     for (const item of res.headers.getSetCookie?.() || []) {
       const nameValue = item.split(";")[0]?.trim();
       if (nameValue) parts.push(nameValue);
     }
-    if (parts.length) {
+    if (parts.length > 1) {
       return parts.join("; ");
     }
   } catch {
     // ignore
   }
-  return FALLBACK_COOKIE;
+  return seed;
+}
+
+async function getSessionCookie(): Promise<string> {
+  if (sessionCookie && Date.now() - sessionCookieAt < SESSION_COOKIE_TTL_MS) {
+    return sessionCookie;
+  }
+  sessionCookie = await bootstrapCookie();
+  sessionCookieAt = Date.now();
+  return sessionCookie;
+}
+
+export interface DouyinUserFollowInfo {
+  follower_count?: number;
+  following_count?: number;
 }
 
 export interface DouyinRoomData {
@@ -37,15 +62,25 @@ export interface DouyinRoomData {
   title?: string;
   cover?: { url_list?: string[] };
   owner?: {
+    id_str?: string;
+    sec_uid?: string;
     nickname?: string;
+    follow_info?: {
+      follower_count?: number;
+      following_count?: number;
+    };
     avatar_thumb?: { url_list?: string[] };
     avatar_medium?: { url_list?: string[] };
   };
   anchor_name?: string;
+  user_count?: number;
+  user_count_str?: string;
   live_url?: string;
   stream_url?: {
+    stream_orientation?: number;
     flv_pull_url?: Record<string, string>;
     hls_pull_url_map?: Record<string, string>;
+    pull_datas?: Record<string, { stream_data?: string }>;
     live_core_sdk_data?: {
       pull_data?: { stream_data?: string };
     };
@@ -93,6 +128,45 @@ function mergeOriginStreams(roomData: DouyinRoomData): DouyinRoomData {
   return roomData;
 }
 
+function applyPortraitPullDatas(roomData: DouyinRoomData): DouyinRoomData {
+  const streamUrl = roomData.stream_url;
+  if (!streamUrl) return roomData;
+  const orientation = Number(streamUrl.stream_orientation || 1);
+  const pullDatas = streamUrl.pull_datas;
+  if (orientation !== 2 || !pullDatas || !Object.keys(pullDatas).length) {
+    return roomData;
+  }
+  const first = Object.values(pullDatas)[0];
+  if (!first?.stream_data) return roomData;
+  try {
+    const streamData = JSON.parse(first.stream_data) as {
+      data?: Record<string, { main?: { flv?: string; hls?: string } }>;
+    };
+    const flvMap: Record<string, string> = {};
+    const hlsMap: Record<string, string> = {};
+    for (const [key, value] of Object.entries(streamData.data || {})) {
+      const main = value?.main;
+      if (!main) continue;
+      if (main.flv) flvMap[key] = main.flv;
+      if (main.hls) hlsMap[key] = main.hls;
+    }
+    streamUrl.flv_pull_url = flvMap;
+    streamUrl.hls_pull_url_map = hlsMap;
+  } catch {
+    return roomData;
+  }
+  return roomData;
+}
+
+function normalizeLiveStreamData(roomData: DouyinRoomData): DouyinRoomData {
+  const portrait = applyPortraitPullDatas(roomData);
+  const flvMap = portrait.stream_url?.flv_pull_url || {};
+  if (Object.keys(flvMap).length) {
+    return portrait;
+  }
+  return mergeOriginStreams(portrait);
+}
+
 export async function fetchWebStreamData(webRid: string): Promise<DouyinRoomData> {
   const params = new URLSearchParams({
     aid: "6383",
@@ -100,10 +174,14 @@ export async function fetchWebStreamData(webRid: string): Promise<DouyinRoomData
     live_id: "1",
     device_platform: "web",
     language: "zh-CN",
+    enter_from: "web_live",
+    cookie_enabled: "true",
+    screen_width: "1920",
+    screen_height: "1080",
     browser_language: "zh-CN",
     browser_platform: "Win32",
     browser_name: "Chrome",
-    browser_version: "116.0.0.0",
+    browser_version: "141.0.0.0",
     web_rid: webRid,
     is_need_double_stream: "false",
     msToken: "",
@@ -112,10 +190,14 @@ export async function fetchWebStreamData(webRid: string): Promise<DouyinRoomData
   const baseApi = `https://live.douyin.com/webcast/room/web/enter/?${query}`;
   const aBogus = abSign(query, PC_HEADERS["user-agent"]);
   const api = `${baseApi}&a_bogus=${encodeURIComponent(aBogus)}`;
-  const cookie = await bootstrapCookie(webRid);
+  const cookie = await getSessionCookie();
 
   const res = await fetch(api, {
-    headers: { ...PC_HEADERS, cookie },
+    headers: {
+      ...PC_HEADERS,
+      referer: `https://live.douyin.com/${webRid}`,
+      cookie,
+    },
     signal: AbortSignal.timeout(15_000),
   });
   if (!res.ok) {
@@ -127,6 +209,7 @@ export async function fetchWebStreamData(webRid: string): Promise<DouyinRoomData
   }
 
   let json: {
+    status_code?: number;
     data?: {
       data?: DouyinRoomData[];
       user?: { nickname?: string };
@@ -142,7 +225,14 @@ export async function fetchWebStreamData(webRid: string): Promise<DouyinRoomData
 
   const payload = json.data;
   if (!payload?.data?.length) {
-    throw new Error(payload?.prompts || payload?.message || "抖音房间信息获取失败");
+    const prompt = payload?.prompts || payload?.message || "";
+    if (json.status_code === 4001038 || prompt.includes("无法查看")) {
+      throw new Error(prompt || "该直播间暂不可查看");
+    }
+    if (!prompt && !text.trim()) {
+      throw new Error("抖音接口触发风控，请稍后重试");
+    }
+    throw new Error(prompt || "抖音房间信息获取失败");
   }
 
   const roomData = payload.data[0];
@@ -157,5 +247,57 @@ export async function fetchWebStreamData(webRid: string): Promise<DouyinRoomData
     return roomData;
   }
 
-  return mergeOriginStreams(roomData);
+  return normalizeLiveStreamData(roomData);
+}
+
+export async function fetchDouyinUserFollowInfo(
+  targetUid: string,
+): Promise<DouyinUserFollowInfo | null> {
+  const uid = String(targetUid || "").trim();
+  if (!uid) return null;
+
+  const params = new URLSearchParams({
+    aid: "6383",
+    app_name: "douyin_web",
+    live_id: "1",
+    device_platform: "web",
+    language: "zh-CN",
+    cookie_enabled: "true",
+    screen_width: "1920",
+    screen_height: "1080",
+    browser_language: "zh-CN",
+    browser_platform: "Win32",
+    browser_name: "Chrome",
+    browser_version: "141.0.0.0",
+    target_uid: uid,
+    packed: "false",
+    msToken: "",
+  });
+  const query = params.toString();
+  const api = `https://live.douyin.com/webcast/user/?${query}&a_bogus=${encodeURIComponent(abSign(query, PC_HEADERS["user-agent"]))}`;
+  const cookie = await getSessionCookie();
+
+  const res = await fetch(api, {
+    headers: { ...PC_HEADERS, cookie },
+    signal: AbortSignal.timeout(12_000),
+  });
+  if (!res.ok) return null;
+
+  const text = await res.text();
+  if (!text || text.startsWith("<!DOCTYPE")) return null;
+
+  let json: {
+    status_code?: number;
+    data?: {
+      user?: { follow_info?: DouyinUserFollowInfo };
+      follow_info?: DouyinUserFollowInfo;
+    };
+  };
+  try {
+    json = JSON.parse(text) as typeof json;
+  } catch {
+    return null;
+  }
+  if (Number(json.status_code || 0) !== 0) return null;
+  return json.data?.user?.follow_info || json.data?.follow_info || null;
 }

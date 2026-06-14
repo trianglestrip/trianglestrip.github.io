@@ -22,14 +22,19 @@ const scenarios = [
   {
     id: "douyin-home",
     path: "/douyin",
-    waitMs: 1500,
+    waitMs: 4000,
+    check: async (page) => {
+      const cards = await page.locator(".room-item").count();
+      if (cards === 0) errors.push("douyin-home: 无游戏推荐卡片");
+    },
+  },
+  {
+    id: "douyin-category",
+    path: "/douyin/category",
+    waitMs: 3000,
     check: async (page) => {
       const text = await page.locator("#app").innerText();
-      if (!text.includes("暂不支持推荐列表") && !text.includes("输入房间号")) {
-        errors.push("douyin-home: 缺少直连房间提示");
-      }
-      const bad = apiCalls.filter((u) => u.includes("/api/rooms") && u.includes("site=douyin"));
-      if (bad.length) errors.push(`douyin-home: 不应请求列表 API (${bad.length} 次)`);
+      if (!text.includes("游戏")) errors.push("douyin-category: 缺少游戏分类");
     },
   },
   {

@@ -29,12 +29,13 @@ export const PLATFORMS = [
   {
     id: "douyin",
     label: "抖音",
-    tabLabel: "抖音直播",
+    tabLabel: "抖音游戏",
     enabled: true,
-    browse: false,
-    defaultRoom: "",
-    description: "本机 API 解析 · FLV/HLS 多档 · 输入房间号观看",
-    features: ["原画/蓝光/高清", "FLV 直链", "本机 API"],
+    browse: true,
+    browseGameOnly: true,
+    defaultRoom: "64040369495",
+    description: "游戏直播分类 · 本机 API 解析 · 多档 FLV/HLS",
+    features: ["游戏分类", "原画/蓝光/高清", "本机 API"],
   },
 ];
 

@@ -28,6 +28,7 @@ export interface CategoryItem {
   cid: number;
   name: string;
   pic: string;
+  pid?: number | string;
 }
 
 export interface CategoryGroup {
@@ -136,7 +137,7 @@ function normalizeDouyuRoom(item: Record<string, unknown>): RoomItem {
   };
 }
 
-function normalizeDouyuMixRoom(item: Record<string, unknown>, targetCid: string): RoomItem | null {
+function normalizeDouyuMixRoom(item: Record<string, unknown>, targetCid?: string): RoomItem | null {
   const cid2 = String(item.cid2 ?? "");
   if (targetCid && cid2 && cid2 !== targetCid) return null;
   const roomId = String(item.rid || "");
@@ -171,6 +172,30 @@ async function fetchDouyuCategoryMixList(
   const list: RoomItem[] = [];
   for (const item of items) {
     const room = normalizeDouyuMixRoom(item, cidText);
+    if (!room) continue;
+    list.push(room);
+    if (list.length >= limit) break;
+  }
+  return {
+    list,
+    hasMore: items.length > 0 && list.length >= limit,
+    page,
+  };
+}
+
+export async function fetchDouyuGroupRooms(
+  cate1Id: string | number,
+  page: number,
+  limit = 30,
+): Promise<RoomsPayload> {
+  const cidText = String(cate1Id);
+  const data = await getJson<{ code?: number; data?: Record<string, unknown> }>(
+    `https://www.douyu.com/gapi/rkc/directory/mixList/1_${cidText}/${page}`,
+  );
+  const items = (data.data?.rl as Array<Record<string, unknown>>) || [];
+  const list: RoomItem[] = [];
+  for (const item of items) {
+    const room = normalizeDouyuMixRoom(item);
     if (!room) continue;
     list.push(room);
     if (list.length >= limit) break;

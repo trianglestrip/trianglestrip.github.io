@@ -61,7 +61,7 @@ video {
   text-align: center;
   color: var(--muted);
   pointer-events: none;
-  background: rgba(0, 0, 0, .55);
+  background: var(--on-video-bg-hint);
 }
 
 .placeholder-icon {

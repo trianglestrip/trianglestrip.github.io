@@ -9,7 +9,7 @@
     <div
       class="follow-avatar-wrap"
       :class="{
-        'follow-avatar-wrap--live': state === 'live',
+        'follow-avatar-wrap--live': state === 'live' && !hideLiveFrame,
         'follow-avatar-wrap--replay': state === 'replay',
       }"
     >
@@ -38,6 +38,7 @@ defineProps({
   state: { type: String, default: "" },
   eager: { type: Boolean, default: false },
   rootMargin: { type: String, default: "120px" },
+  hideLiveFrame: { type: Boolean, default: false },
 });
 </script>
 
@@ -61,12 +62,12 @@ defineProps({
 }
 
 .follow-avatar-wrap--live::after {
-  border: 2.5px solid rgba(229, 57, 53, .92);
+  border: 2.5px solid var(--danger-border);
   animation: follow-avatar-live-ring 2.2s ease-in-out infinite;
 }
 
 .follow-avatar-wrap--replay::after {
-  border: 2px solid rgba(243, 208, 78, .72);
+  border: 2px solid var(--primary-border-72);
 }
 
 .follow-avatar-root--grid .follow-avatar-wrap--live::after,
@@ -81,12 +82,12 @@ defineProps({
 
 @keyframes follow-avatar-live-ring {
   0%, 100% {
-    border-color: rgba(229, 57, 53, .72);
-    box-shadow: 0 0 0 0 rgba(229, 57, 53, 0);
+    border-color: color-mix(in srgb, var(--danger) 72%, transparent);
+    box-shadow: 0 0 0 0 transparent;
   }
   50% {
-    border-color: rgba(229, 57, 53, 1);
-    box-shadow: 0 0 0 2px rgba(229, 57, 53, .32), 0 0 10px rgba(229, 57, 53, .28);
+    border-color: var(--danger);
+    box-shadow: 0 0 0 2px var(--danger-glow-22), 0 0 10px color-mix(in srgb, var(--danger) 28%, transparent);
   }
 }
 
@@ -97,7 +98,7 @@ defineProps({
   object-fit: cover;
   flex-shrink: 0;
   display: block;
-  background: #1a1a1a;
+  background: var(--bg-soft);
 }
 
 .follow-avatar--empty {
@@ -111,7 +112,7 @@ defineProps({
   font-size: .72rem;
   color: var(--muted);
   border: 1px dashed var(--border);
-  background: #1a1a1a;
+  background: var(--bg-soft);
 }
 
 .follow-avatar-root--compact :deep(.follow-avatar),

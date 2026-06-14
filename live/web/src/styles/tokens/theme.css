@@ -1,0 +1,330 @@
+/* 品牌与语义色：改主色只需调整 --primary 系列 */
+
+:root {
+
+  /* 视频黑底上的控件文字：浅色/深色主题均保持浅色 */
+
+  --on-video-text: rgba(255, 255, 255, 0.87);
+  --on-video-muted: rgba(255, 255, 255, 0.55);
+  --on-video-border: rgba(255, 255, 255, 0.14);
+  --on-video-bg-bar: #141414;
+  --on-video-bg-panel: #1a1a1a;
+  --on-video-bg-hint: #1a1a1a;
+  --on-video-bg-chip: #242424;
+
+
+
+  --primary: #f3d04e;
+
+  --primary-rgb: 243, 208, 78;
+
+  --primary-hover: #ffe066;
+
+  --primary-on: #1a1400;
+
+  /* 关注项状态色：中等饱和度实底，深浅主题观感一致 */
+  --follow-state-live-bg: #487860;
+  --follow-state-replay-bg: #726848;
+  --follow-state-offline-bg: #5a5a5a;
+  --follow-state-super-bg: #605078;
+  --follow-state-super-live-bg: #685880;
+  --follow-state-super-offline-bg: #544868;
+  --follow-state-on-text: rgba(255, 255, 255, 0.9);
+  --follow-state-muted-text: rgba(255, 255, 255, 0.58);
+  --follow-state-live-accent: #90e8a8;
+  --follow-state-replay-accent: #f5dc70;
+  --follow-state-super-accent: #dcb0f0;
+
+  /* 观看人数 chip：实底蓝，深浅主题一致，叠在彩色关注项上也可读 */
+  --follow-online-chip-bg: #3a5878;
+  --follow-online-chip-text: #d0e8ff;
+  --follow-online-chip-live-bg: #345070;
+  --follow-online-chip-live-text: #e0f0ff;
+
+  /* 语义色：日夜共用 */
+  --live: #32c874;
+  --danger: #e55050;
+
+  /* 平台 / 统计 / 按钮色相锚点（日夜用 color-mix 派生） */
+  --platform-douyu: #a05020;
+  --platform-huya: #a08018;
+  --platform-douyin: #c02848;
+  --stat-audience: #284868;
+  --stat-diamond: #482868;
+  --stat-fangroup: #886030;
+  --stat-guard: #887028;
+  --stat-vip: #483878;
+  --play-follow-tone: #7a3030;
+  --play-super-tone: #583878;
+
+  /* 平台标签文字色（从色相锚点派生） */
+  --platform-douyu-text: color-mix(in srgb, var(--platform-douyu) 78%, var(--text));
+  --platform-huya-text: color-mix(in srgb, var(--platform-huya) 78%, var(--text));
+  --platform-douyin-text: color-mix(in srgb, var(--platform-douyin) 78%, var(--text));
+  --platform-douyu-text-em: color-mix(in srgb, var(--platform-douyu) 58%, #fff);
+  --platform-huya-text-em: color-mix(in srgb, var(--platform-huya) 58%, #fff);
+  --platform-douyin-text-em: color-mix(in srgb, var(--platform-douyin) 58%, #fff);
+
+  --danger-border: color-mix(in srgb, var(--danger) 88%, transparent);
+  --danger-glow-38: color-mix(in srgb, var(--danger) 38%, transparent);
+  --danger-glow-22: color-mix(in srgb, var(--danger) 22%, transparent);
+  --danger-glow-34: color-mix(in srgb, var(--danger) 34%, transparent);
+  --danger-glow-46: color-mix(in srgb, var(--danger) 46%, transparent);
+
+}
+
+
+
+:root,
+
+[data-theme="dark"] {
+
+  color-scheme: dark;
+
+
+
+  --primary-soft: rgba(var(--primary-rgb), 0.16);
+
+  --primary-soft-08: rgba(var(--primary-rgb), 0.08);
+
+  --primary-soft-10: rgba(var(--primary-rgb), 0.1);
+
+  --primary-border: rgba(var(--primary-rgb), 0.44);
+
+  --chrome-border: var(--border);
+  --chrome-border-strong: var(--border);
+
+  --primary-ring: rgba(var(--primary-rgb), 0.35);
+
+  --primary-glow-22: rgba(var(--primary-rgb), 0.22);
+
+  --primary-border-strong: rgba(var(--primary-rgb), 0.45);
+
+  --primary-border-mid: rgba(var(--primary-rgb), 0.55);
+
+  --primary-border-hover: rgba(var(--primary-rgb), 0.75);
+
+  --primary-border-72: rgba(var(--primary-rgb), 0.72);
+
+  --primary-border-solid: rgba(var(--primary-rgb), 0.88);
+
+  --primary-inset-36: rgba(var(--primary-rgb), 0.36);
+
+  --primary-inset-22: rgba(var(--primary-rgb), 0.22);
+
+
+
+  --bg: #181818;
+
+  --bg-elevated: #1f1f1f;
+
+  --bg-soft: #141414;
+
+  --dark-6: #2a2a2a;
+
+  --dark-7: #181818;
+
+  --panel: #222;
+
+  --border: #3a3a3a;
+
+  --gray-7: #3a3a3a;
+
+  --text: #ffffffde;
+
+  --muted: #ffffff8c;
+
+  --lemon: var(--primary);
+
+  --amber: var(--primary);
+
+  --scrollbar-thumb: var(--primary);
+
+  --scrollbar-thumb-hover: var(--primary-hover);
+
+  --scrollbar-track: transparent;
+
+  --play-stat-audience-bg: color-mix(in srgb, var(--stat-audience) 86%, #0a0a0a);
+  --play-stat-audience-text: #b8dcff;
+  --play-stat-diamond-bg: color-mix(in srgb, var(--stat-diamond) 86%, #0a0a0a);
+  --play-stat-diamond-text: #f0b8ff;
+  --play-stat-fangroup-bg: color-mix(in srgb, var(--stat-fangroup) 82%, #0a0a0a);
+  --play-stat-fangroup-text: #ffd4a0;
+  --play-stat-guard-bg: color-mix(in srgb, var(--stat-guard) 82%, #0a0a0a);
+  --play-stat-guard-text: #ffe08a;
+  --play-stat-vip-bg: color-mix(in srgb, var(--stat-vip) 86%, #0a0a0a);
+  --play-stat-vip-text: #d8c0ff;
+
+  --play-follow-bg: color-mix(in srgb, var(--play-follow-tone) 68%, #101010);
+  --play-follow-border: color-mix(in srgb, var(--play-follow-tone) 52%, #606060);
+  --play-follow-text: #ffb8b8;
+  --play-follow-bg-hover: color-mix(in srgb, var(--play-follow-tone) 58%, #181818);
+  --play-follow-bg-active: color-mix(in srgb, var(--play-follow-tone) 48%, #282828);
+  --play-follow-text-active: #ffe0e0;
+  --play-super-bg: color-mix(in srgb, var(--play-super-tone) 72%, #101010);
+  --play-super-border: color-mix(in srgb, var(--play-super-tone) 48%, #606060);
+  --play-super-text: #c9a0f0;
+  --play-super-bg-hover: color-mix(in srgb, var(--play-super-tone) 62%, #181818);
+  --play-super-bg-active: color-mix(in srgb, var(--play-super-tone) 52%, #282828);
+  --play-super-text-active: #e9d5ff;
+  --play-chip-bg: var(--dark-6);
+  --play-input-bg: var(--bg-soft);
+  --play-range-track: #4a4a4a;
+
+  --sidebar-bg: var(--bg-elevated);
+  --sidebar-header-bg: color-mix(in srgb, var(--bg-elevated) 88%, #ffffff 12%);
+  --sidebar-chip-bg: var(--dark-6);
+  --sidebar-chip-hover-bg: color-mix(in srgb, var(--dark-6) 80%, #ffffff 20%);
+  --sidebar-chip-active-bg: color-mix(in srgb, var(--dark-6) 70%, #ffffff 30%);
+  --sidebar-follow-live-bg: var(--follow-state-live-bg);
+  --sidebar-follow-replay-bg: var(--follow-state-replay-bg);
+  --sidebar-follow-offline-bg: var(--follow-state-offline-bg);
+  --sidebar-follow-super-bg: var(--follow-state-super-bg);
+  --sidebar-follow-super-live-bg: var(--follow-state-super-live-bg);
+  --sidebar-follow-super-offline-bg: var(--follow-state-super-offline-bg);
+  --sidebar-tag-default-bg: var(--dark-6);
+  --sidebar-tag-douyu-bg: color-mix(in srgb, var(--platform-douyu) 52%, #1a1a1a);
+  --sidebar-tag-huya-bg: color-mix(in srgb, var(--platform-huya) 52%, #1a1a1a);
+  --sidebar-tag-douyin-bg: color-mix(in srgb, var(--platform-douyin) 52%, #1a1a1a);
+  --sidebar-filter-douyu-bg: color-mix(in srgb, var(--platform-douyu) 52%, #1a1a1a);
+  --sidebar-filter-douyu-active-bg: color-mix(in srgb, var(--platform-douyu) 68%, #1a1a1a);
+  --sidebar-filter-huya-bg: color-mix(in srgb, var(--platform-huya) 52%, #1a1a1a);
+  --sidebar-filter-huya-active-bg: color-mix(in srgb, var(--platform-huya) 68%, #1a1a1a);
+  --sidebar-filter-douyin-bg: color-mix(in srgb, var(--platform-douyin) 52%, #1a1a1a);
+  --sidebar-filter-douyin-active-bg: color-mix(in srgb, var(--platform-douyin) 68%, #1a1a1a);
+  --sidebar-online-bg: var(--follow-online-chip-bg);
+  --sidebar-online-live-bg: var(--follow-online-chip-live-bg);
+  --sidebar-online-text: var(--follow-online-chip-text);
+  --sidebar-online-live-text: var(--follow-online-chip-live-text);
+  --sidebar-meta-chip-bg: var(--dark-6);
+
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+
+}
+
+
+
+[data-theme="light"] {
+
+  color-scheme: light;
+
+
+
+  --primary-soft: rgba(var(--primary-rgb), 0.2);
+
+  --primary-soft-08: rgba(var(--primary-rgb), 0.08);
+
+  --primary-soft-10: rgba(var(--primary-rgb), 0.1);
+
+  --primary-border: rgba(var(--primary-rgb), 0.44);
+
+  --chrome-border: var(--border);
+  --chrome-border-strong: var(--border);
+
+  --primary-ring: rgba(var(--primary-rgb), 0.35);
+
+  --primary-glow-22: rgba(var(--primary-rgb), 0.22);
+
+  --primary-border-strong: rgba(var(--primary-rgb), 0.45);
+
+  --primary-border-mid: rgba(var(--primary-rgb), 0.55);
+
+  --primary-border-hover: rgba(var(--primary-rgb), 0.75);
+
+  --primary-border-72: rgba(var(--primary-rgb), 0.72);
+
+  --primary-border-solid: rgba(var(--primary-rgb), 0.88);
+
+  --primary-inset-36: rgba(var(--primary-rgb), 0.36);
+
+  --primary-inset-22: rgba(var(--primary-rgb), 0.22);
+
+
+
+  /* 暖灰底：比上一版略亮，仍保持暖灰不发白 */
+
+  --bg: #e4e1dc;
+
+  --bg-elevated: #ebe8e3;
+
+  --bg-soft: #dbd8d2;
+
+  --dark-6: #d0cdc6;
+
+  --dark-7: #e6e3de;
+
+  --panel: #e8e5e0;
+
+  --border: #c4c2bc;
+
+  --gray-7: #ccc9c3;
+
+  --text: #1a1a1a;
+
+  --muted: #5c5c5c;
+
+  --lemon: var(--primary);
+
+  --amber: var(--primary);
+
+  --scrollbar-thumb: var(--primary);
+
+  --scrollbar-thumb-hover: var(--primary-hover);
+
+  --scrollbar-track: transparent;
+
+  --play-stat-audience-bg: color-mix(in srgb, var(--stat-audience) 24%, var(--panel));
+  --play-stat-audience-text: color-mix(in srgb, var(--stat-audience) 88%, #0a1018);
+  --play-stat-diamond-bg: color-mix(in srgb, var(--stat-diamond) 24%, var(--panel));
+  --play-stat-diamond-text: color-mix(in srgb, var(--stat-diamond) 88%, #0a1018);
+  --play-stat-fangroup-bg: color-mix(in srgb, var(--stat-fangroup) 22%, var(--panel));
+  --play-stat-fangroup-text: color-mix(in srgb, var(--stat-fangroup) 88%, #0a1018);
+  --play-stat-guard-bg: color-mix(in srgb, var(--stat-guard) 22%, var(--panel));
+  --play-stat-guard-text: color-mix(in srgb, var(--stat-guard) 88%, #0a1018);
+  --play-stat-vip-bg: color-mix(in srgb, var(--stat-vip) 24%, var(--panel));
+  --play-stat-vip-text: color-mix(in srgb, var(--stat-vip) 88%, #0a1018);
+
+  --play-follow-bg: color-mix(in srgb, var(--play-follow-tone) 16%, var(--panel));
+  --play-follow-border: color-mix(in srgb, var(--play-follow-tone) 38%, var(--border));
+  --play-follow-text: color-mix(in srgb, var(--play-follow-tone) 72%, #101010);
+  --play-follow-bg-hover: color-mix(in srgb, var(--play-follow-tone) 22%, var(--panel));
+  --play-follow-bg-active: color-mix(in srgb, var(--play-follow-tone) 28%, var(--panel));
+  --play-follow-text-active: color-mix(in srgb, var(--play-follow-tone) 82%, #080808);
+  --play-super-bg: color-mix(in srgb, var(--play-super-tone) 18%, var(--panel));
+  --play-super-border: color-mix(in srgb, var(--play-super-tone) 36%, var(--border));
+  --play-super-text: color-mix(in srgb, var(--play-super-tone) 72%, #101010);
+  --play-super-bg-hover: color-mix(in srgb, var(--play-super-tone) 24%, var(--panel));
+  --play-super-bg-active: color-mix(in srgb, var(--play-super-tone) 30%, var(--panel));
+  --play-super-text-active: color-mix(in srgb, var(--play-super-tone) 82%, #080808);
+  --play-chip-bg: var(--dark-6);
+  --play-input-bg: var(--bg-soft);
+  --play-range-track: var(--border);
+
+  --sidebar-bg: var(--bg-elevated);
+  --sidebar-header-bg: color-mix(in srgb, var(--bg-elevated) 82%, #ffffff 18%);
+  --sidebar-chip-bg: var(--dark-6);
+  --sidebar-chip-hover-bg: color-mix(in srgb, var(--dark-6) 72%, #ffffff 28%);
+  --sidebar-chip-active-bg: color-mix(in srgb, var(--dark-6) 62%, #ffffff 38%);
+  --sidebar-follow-live-bg: var(--follow-state-live-bg);
+  --sidebar-follow-replay-bg: var(--follow-state-replay-bg);
+  --sidebar-follow-offline-bg: var(--follow-state-offline-bg);
+  --sidebar-follow-super-bg: var(--follow-state-super-bg);
+  --sidebar-follow-super-live-bg: var(--follow-state-super-live-bg);
+  --sidebar-follow-super-offline-bg: var(--follow-state-super-offline-bg);
+  --sidebar-tag-default-bg: var(--dark-6);
+  --sidebar-tag-douyu-bg: color-mix(in srgb, var(--platform-douyu) 20%, var(--panel));
+  --sidebar-tag-huya-bg: color-mix(in srgb, var(--platform-huya) 20%, var(--panel));
+  --sidebar-tag-douyin-bg: color-mix(in srgb, var(--platform-douyin) 20%, var(--panel));
+  --sidebar-filter-douyu-bg: color-mix(in srgb, var(--platform-douyu) 20%, var(--panel));
+  --sidebar-filter-douyu-active-bg: color-mix(in srgb, var(--platform-douyu) 32%, var(--panel));
+  --sidebar-filter-huya-bg: color-mix(in srgb, var(--platform-huya) 20%, var(--panel));
+  --sidebar-filter-huya-active-bg: color-mix(in srgb, var(--platform-huya) 32%, var(--panel));
+  --sidebar-filter-douyin-bg: color-mix(in srgb, var(--platform-douyin) 20%, var(--panel));
+  --sidebar-filter-douyin-active-bg: color-mix(in srgb, var(--platform-douyin) 32%, var(--panel));
+  --sidebar-online-bg: var(--follow-online-chip-bg);
+  --sidebar-online-live-bg: var(--follow-online-chip-live-bg);
+  --sidebar-online-text: var(--follow-online-chip-text);
+  --sidebar-online-live-text: var(--follow-online-chip-live-text);
+  --sidebar-meta-chip-bg: var(--dark-6);
+}
+

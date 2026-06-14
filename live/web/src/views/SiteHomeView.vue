@@ -1,6 +1,6 @@
 <template>
   <AppLayout :active-site="site">
-    <PlatformTabs :active-site="site">
+    <PlatformTabs :active-site="site" hide-headers class="platform-tabs--home">
       <p v-if="!platform?.enabled" class="page-msg">该平台尚未接入</p>
       <section v-else-if="!browseEnabled" class="direct-page">
         <p class="direct-lead">{{ platform.description }}</p>
@@ -110,7 +110,7 @@ function onSelectRoom(room) {
 
 <style scoped>
 .page-msg {
-  padding: 2rem 1rem;
+  padding: 1rem;
   text-align: center;
   color: var(--muted);
 }

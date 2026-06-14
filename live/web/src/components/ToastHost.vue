@@ -113,7 +113,7 @@ function onClick(item) {
 
 .toast-item__close:hover {
   color: var(--text);
-  background: rgba(255, 255, 255, .08);
+  background: var(--dark-6);
 }
 
 .toast-item__title {
@@ -135,7 +135,7 @@ function onClick(item) {
 }
 
 .toast-item--live {
-  border-color: rgba(61, 220, 132, .45);
+  border-color: color-mix(in srgb, var(--live) 45%, var(--border));
 }
 
 .toast-item--live .toast-item__title {
@@ -143,7 +143,7 @@ function onClick(item) {
 }
 
 .toast-item--offline {
-  border-color: rgba(255, 255, 255, .12);
+  border-color: var(--chrome-border);
 }
 
 .toast-enter-active,

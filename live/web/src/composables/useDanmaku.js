@@ -140,6 +140,12 @@ export function useDanmaku(siteRef, roomIdRef) {
     }
   }
 
+  /** 聊天侧栏按可视高度裁剪时，从头部删除最旧消息 */
+  function trimFromStart(count) {
+    const n = Math.min(Math.max(0, Number(count) || 0), messages.value.length);
+    if (n > 0) messages.value.splice(0, n);
+  }
+
   function flushPendingMsgs() {
     flushRaf = 0;
     if (!alive || !pendingMsgs.length) return;
@@ -294,5 +300,6 @@ export function useDanmaku(siteRef, roomIdRef) {
     chatSettings,
     connect,
     disconnect,
+    trimFromStart,
   };
 }

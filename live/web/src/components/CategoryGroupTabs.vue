@@ -8,13 +8,16 @@
       :class="{ active: index === activeIndex }"
       @click="$emit('update:activeIndex', index)"
     >
-      {{ group.name }}
+      {{ displayCategoryGroupName(site, group.name, group.id) }}
     </button>
   </div>
 </template>
 
 <script setup>
+import { displayCategoryGroupName } from "../utils/categoryDisplay.js";
+
 defineProps({
+  site: { type: String, required: true },
   groups: { type: Array, default: () => [] },
   activeIndex: { type: Number, default: 0 },
 });
@@ -29,7 +32,7 @@ defineEmits(["update:activeIndex"]);
   gap: .35rem;
   justify-content: center;
   padding: .35rem .5rem .65rem;
-  border-bottom: 1px solid var(--gray-7);
+  border-bottom: 1px solid var(--chrome-border);
 }
 
 .group-tab {
@@ -50,6 +53,6 @@ defineEmits(["update:activeIndex"]);
 
 .group-tab.active {
   color: var(--amber);
-  background: rgba(243, 208, 78, .1);
+  background: var(--primary-soft-10);
 }
 </style>

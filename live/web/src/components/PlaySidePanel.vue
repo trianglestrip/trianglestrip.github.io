@@ -50,11 +50,13 @@
       <button type="button" :class="{ active: tab === 'settings' }" @click="tab = 'settings'">设置</button>
     </div>
 
-    <div v-show="tab === 'chat'" class="tab-content">
-      <div class="chat-list scrolly">
-        <div class="chat-list__content">
-          <div v-if="chatPlayStatus" class="chat-item sys">系统：{{ chatPlayStatus }}</div>
-          <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
+    <div v-show="tab === 'chat'" class="tab-content chat-tab">
+      <div v-if="chatPlayStatus || chatDanmakuLine" class="chat-sys-bar">
+        <div v-if="chatPlayStatus" class="chat-item sys">系统：{{ chatPlayStatus }}</div>
+        <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
+      </div>
+      <div ref="chatListRef" class="chat-list scrolly">
+        <div ref="chatContentRef" class="chat-list__content">
           <div
             v-for="m in chatDanmakuMessages"
             :key="m.id"
@@ -86,12 +88,14 @@
       <FollowPreviewGrid
         v-if="previewCover"
         compact
+        hide-live-frame
         :rooms="filteredFollows"
         @select="$emit('play-room', $event)"
       />
       <FollowRoomList
         v-else
         layout="grid"
+        hide-live-frame
         :rooms="filteredFollows"
         :loading="followStatusLoading"
         :show-delete="false"
@@ -139,7 +143,7 @@
         </section>
         <section class="settings-group">
           <h4 class="settings-group__title">关注列表</h4>
-          <p class="settings-hint">导出「平台+房间号」到剪贴板，可在其他设备粘贴导入并合并。</p>
+          <p class="settings-hint">导出紧凑格式到剪贴板，如 douyu:[252140],huya:[660000]，可在其他设备粘贴导入并合并。</p>
           <div class="settings-follow-actions">
             <button type="button" class="settings-action-btn" @click="onExportFollows">
               导出关注
@@ -148,13 +152,28 @@
               导入关注
             </button>
           </div>
+          <label v-if="exportFollowOpen" class="settings-import">
+            <span class="settings-hint">请手动全选复制下方内容</span>
+            <textarea
+              ref="exportFollowInputRef"
+              v-model="exportFollowText"
+              class="settings-import__input"
+              rows="3"
+              readonly
+            />
+            <div class="settings-follow-actions">
+              <button type="button" class="settings-action-btn" @click="exportFollowOpen = false">
+                关闭
+              </button>
+            </div>
+          </label>
           <label v-if="importFollowOpen" class="settings-import">
             <span class="settings-hint">粘贴关注数据后点确认</span>
             <textarea
               v-model="importFollowText"
               class="settings-import__input"
               rows="4"
-              placeholder='[["douyu","252140"],["huya","660000"]]'
+              placeholder='douyu:[252140,6188551],huya:[660000]'
             />
             <div class="settings-follow-actions">
               <button type="button" class="settings-action-btn settings-action-btn--primary" @click="onConfirmImportFollows">
@@ -172,7 +191,7 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, toRef } from "vue";
+import { ref, computed, watch, toRef, nextTick, onMounted, onBeforeUnmount } from "vue";
 import Icon from "./Icon.vue";
 import FollowAvatar from "./FollowAvatar.vue";
 import FollowRoomList from "./FollowRoomList.vue";
@@ -188,6 +207,7 @@ import { briefDanmakuStatus, briefPlayStatus } from "../utils/chatStatus.js";
 import { displayCategoryName } from "../utils/categoryDisplay.js";
 import { formatLastLiveAt } from "../utils/followDisplay.js";
 import { serializeFollowsMinimal, parseFollowsMinimal } from "../utils/followExport.js";
+import { copyTextToClipboard } from "../utils/copyText.js";
 
 const props = defineProps({
   site: { type: String, default: "" },
@@ -204,13 +224,16 @@ const props = defineProps({
 
 const chatSettings = defineModel("chatSettings", { type: Object, required: true });
 
-const emit = defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
+const emit = defineEmits(["play-room", "unfollow", "toggle-super-follow", "trim-chat"]);
 
 const { follows, isFollowed, toggleFollow, importFollows } = useFollow();
 const { notify } = useToast();
 
 const importFollowOpen = ref(false);
 const importFollowText = ref("");
+const exportFollowOpen = ref(false);
+const exportFollowText = ref("");
+const exportFollowInputRef = ref(null);
 
 const tab = ref("follow");
 const isMobileFlowTab = computed(() =>
@@ -220,10 +243,16 @@ const followTabActive = computed(() => tab.value === "follow");
 const followSiteFilter = ref("");
 const followUiPref = loadGlobalPref("play_follow_ui", { previewCover: true });
 const previewCover = ref(followUiPref.previewCover !== false);
+const PLAY_FOLLOW_POLL_MS = 180000;
+const PLAY_FOLLOW_MIN_REFRESH_MS = 60000;
+
 const { sortedFollows, loading: followStatusLoading, refresh: refreshFollowStatus } = useFollowStatus(
   toRef(props, "followList"),
   {
     active: followTabActive,
+    pollInterval: PLAY_FOLLOW_POLL_MS,
+    minRefreshMs: PLAY_FOLLOW_MIN_REFRESH_MS,
+    shallowWatch: true,
     getFocusCategory(merged) {
       const room = merged.find(
         (item) => item.site === props.site && String(item.id) === String(props.roomId),
@@ -367,16 +396,27 @@ async function onExportFollows() {
     return;
   }
   const text = serializeFollowsMinimal(list);
-  try {
-    await navigator.clipboard.writeText(text);
+  importFollowOpen.value = false;
+  const copied = await copyTextToClipboard(text);
+  if (copied) {
+    exportFollowOpen.value = false;
     notify({ kind: "live", title: `已复制 ${list.length} 个关注到剪贴板` });
-  } catch {
-    notify({ kind: "offline", title: "复制失败，请检查浏览器剪贴板权限" });
+    return;
   }
+  exportFollowText.value = text;
+  exportFollowOpen.value = true;
+  await nextTick();
+  const input = exportFollowInputRef.value;
+  if (input) {
+    input.focus();
+    input.select();
+  }
+  notify({ kind: "info", title: "无法自动写入剪贴板，请手动复制下方内容" });
 }
 
 async function onImportFollows() {
   importFollowText.value = "";
+  exportFollowOpen.value = false;
   try {
     const clip = await navigator.clipboard.readText();
     if (clip?.trim()) {
@@ -398,7 +438,7 @@ function applyImportedFollows(text) {
   const added = importFollows(items);
   importFollowOpen.value = false;
   importFollowText.value = "";
-  refreshFollowStatus();
+  refreshFollowStatus({ force: true });
   const total = follows.value.length;
   notify({
     kind: "live",
@@ -412,9 +452,12 @@ function onConfirmImportFollows() {
 }
 
 watch(tab, (value) => {
-  if (value === "follow") refreshFollowStatus();
   if (value === "recommend") loadRecommend();
 }, { immediate: true });
+
+watch(followTabActive, (active) => {
+  if (active) refreshFollowStatus();
+});
 
 watch(
   () => [props.site, props.roomId, props.roomCategory],
@@ -567,7 +610,76 @@ const chatItemStyle = computed(() => ({
 /** 非聊天 Tab 时不挂载弹幕列表，避免关注 Tab 下高频 patch 触发 Vue 更新异常 */
 const chatDanmakuMessages = computed(() => {
   if (tab.value !== "chat" || !chatSettings.value.show) return [];
-  return [...props.danmakuMessages].reverse();
+  return props.danmakuMessages;
+});
+
+const chatListRef = ref(null);
+const chatContentRef = ref(null);
+let chatResizeObserver = null;
+
+function scrollChatToBottom() {
+  const el = chatListRef.value;
+  if (!el) return;
+  el.scrollTop = el.scrollHeight;
+}
+
+async function syncChatOverflow() {
+  if (tab.value !== "chat" || !chatSettings.value.show) return;
+  await nextTick();
+  const container = chatListRef.value;
+  const content = chatContentRef.value;
+  if (!container || !content) return;
+  const maxH = container.clientHeight;
+  if (maxH < 24) return;
+
+  let iter = 0;
+  while (content.scrollHeight > maxH + 1 && props.danmakuMessages.length > 1 && iter < 24) {
+    const count = Math.max(1, props.danmakuMessages.length);
+    const avg = content.scrollHeight / count;
+    const overflow = content.scrollHeight - maxH;
+    const remove = Math.max(1, Math.ceil(overflow / Math.max(avg, 6)));
+    emit("trim-chat", remove);
+    iter += 1;
+    await nextTick();
+  }
+  scrollChatToBottom();
+}
+
+watch(
+  () => props.danmakuMessages.length,
+  () => {
+    void syncChatOverflow();
+  },
+);
+
+watch(
+  () => [chatSettings.value.fontSize, chatSettings.value.gap, chatSettings.value.show],
+  () => {
+    void syncChatOverflow();
+  },
+);
+
+watch(tab, (value) => {
+  if (value === "chat") void syncChatOverflow();
+});
+
+onMounted(() => {
+  if (typeof ResizeObserver === "undefined") return;
+  chatResizeObserver = new ResizeObserver(() => {
+    void syncChatOverflow();
+  });
+  if (chatListRef.value) chatResizeObserver.observe(chatListRef.value);
+});
+
+watch(chatListRef, (el, prev) => {
+  if (!chatResizeObserver) return;
+  if (prev) chatResizeObserver.unobserve(prev);
+  if (el) chatResizeObserver.observe(el);
+});
+
+onBeforeUnmount(() => {
+  chatResizeObserver?.disconnect();
+  chatResizeObserver = null;
 });
 </script>
 
@@ -575,16 +687,15 @@ const chatDanmakuMessages = computed(() => {
 .play-side {
   flex-shrink: 0;
   width: var(--play-sidebar-width);
-  border-left: 1px solid var(--gray-7);
+  border-left: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   min-height: 0;
-  background: var(--bg);
 }
 
 .side-header {
   padding: 0.2rem .55rem;
-  border-bottom: 1px solid var(--gray-7);
+  border-bottom: 1px solid var(--chrome-border);
 }
 
 .room-aside {
@@ -667,10 +778,10 @@ const chatDanmakuMessages = computed(() => {
   gap: .14rem;
   width: 100%;
   padding: .22rem .34rem;
-  border: 1px solid rgba(229, 57, 53, 0.35);
+  border: 1px solid var(--play-follow-border);
   border-radius: 6px;
-  background: rgba(229, 57, 53, 0.1);
-  color: #f5a0a0;
+  background: var(--play-follow-bg);
+  color: var(--play-follow-text);
   font-size: .62rem;
   font-weight: 600;
   line-height: 1;
@@ -679,15 +790,15 @@ const chatDanmakuMessages = computed(() => {
 }
 
 .follow-btn:hover {
-  border-color: rgba(229, 57, 53, 0.55);
-  background: rgba(229, 57, 53, 0.18);
-  color: #ffc9c9;
+  border-color: var(--play-follow-border);
+  background: var(--play-follow-bg-hover);
+  color: var(--play-follow-text);
 }
 
 .follow-btn--active {
-  border-color: #e53935;
-  background: rgba(229, 57, 53, 0.28);
-  color: #ffe0e0;
+  border-color: var(--play-follow-border);
+  background: var(--play-follow-bg-active);
+  color: var(--play-follow-text-active);
 }
 
 .follow-btn__icon {
@@ -707,10 +818,10 @@ const chatDanmakuMessages = computed(() => {
   gap: .14rem;
   width: 100%;
   padding: .22rem .34rem;
-  border: 1px solid rgba(155, 89, 182, 0.35);
+  border: 1px solid var(--play-super-border);
   border-radius: 6px;
-  background: rgba(155, 89, 182, 0.1);
-  color: #b794f6;
+  background: var(--play-super-bg);
+  color: var(--play-super-text);
   font-size: .62rem;
   font-weight: 600;
   line-height: 1;
@@ -719,15 +830,15 @@ const chatDanmakuMessages = computed(() => {
 }
 
 .super-follow-btn:hover {
-  border-color: rgba(155, 89, 182, 0.55);
-  background: rgba(155, 89, 182, 0.18);
-  color: #d6bcfa;
+  border-color: var(--play-super-border);
+  background: var(--play-super-bg-hover);
+  color: var(--play-super-text);
 }
 
 .super-follow-btn--active {
-  border-color: #9b59b6;
-  background: rgba(155, 89, 182, 0.28);
-  color: #e9d5ff;
+  border-color: var(--play-super-border);
+  background: var(--play-super-bg-active);
+  color: var(--play-super-text-active);
 }
 
 .super-follow-btn__icon {
@@ -743,7 +854,7 @@ const chatDanmakuMessages = computed(() => {
   display: flex;
   padding: 0 .5rem;
   gap: 1rem;
-  border-bottom: 1px solid var(--gray-7);
+  border-bottom: 1px solid var(--chrome-border);
   flex-shrink: 0;
 }
 
@@ -820,7 +931,7 @@ const chatDanmakuMessages = computed(() => {
   padding: .28rem .35rem;
   border: 1px solid var(--border);
   border-radius: 6px;
-  background: transparent;
+  background: var(--follow-filter-bg, transparent);
   color: var(--muted);
   cursor: pointer;
   line-height: 1;
@@ -844,8 +955,53 @@ const chatDanmakuMessages = computed(() => {
 
 .follow-list-mode-btn--active {
   color: var(--amber);
-  border-color: rgba(243, 208, 78, 0.45);
-  background: rgba(243, 208, 78, 0.1);
+  border-color: var(--primary-border-strong);
+  background: var(--play-chip-bg);
+}
+
+.follow-tab :deep(.follow-room-list--grid) {
+  padding: 0;
+  gap: 0;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.follow-tab :deep(.follow-room-list--grid .follow-item) {
+  border-radius: 0;
+  flex: none;
+  width: 100%;
+  max-width: none;
+  border: none;
+  border-bottom: 1px solid var(--chrome-border);
+}
+
+.follow-tab :deep(.follow-room-list--grid .follow-item),
+.follow-tab :deep(.follow-room-list--compact .follow-item) {
+  padding: 0;
+  gap: 0;
+}
+
+.follow-tab :deep(.follow-preview-grid),
+.follow-tab :deep(.follow-preview-grid--compact) {
+  padding: 0;
+  gap: 0;
+}
+
+.follow-tab :deep(.follow-preview-grid--compact .follow-preview-anchor) {
+  margin-top: 0;
+}
+
+.follow-tab :deep(.follow-preview-item--super) {
+  border-radius: 0;
+  padding: 0;
+}
+
+.follow-tab :deep(.follow-preview-cover-wrap) {
+  border-radius: 0;
+}
+
+.follow-tab :deep(.follow-body) {
+  gap: 0;
 }
 
 .recommend-hint {
@@ -859,17 +1015,35 @@ const chatDanmakuMessages = computed(() => {
   color: var(--danger);
 }
 
+.chat-tab {
+  min-height: 0;
+}
+
+.chat-sys-bar {
+  flex-shrink: 0;
+  padding: .35rem .5rem 0;
+  border-bottom: 1px solid var(--chrome-border);
+}
+
+.chat-sys-bar .chat-item {
+  margin-bottom: .28rem;
+}
+
 .chat-list {
   flex: 1;
   min-height: 0;
   font-size: .85rem;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-list__content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  margin-top: auto;
+  min-height: min-content;
   padding: .5rem;
   box-sizing: border-box;
 }
@@ -918,16 +1092,16 @@ const chatDanmakuMessages = computed(() => {
   flex-direction: column;
   gap: .3rem;
   padding: .36rem .42rem .38rem;
-  border: 1px solid var(--gray-7);
+  border: 1px solid var(--chrome-border);
   border-radius: 6px;
-  background: rgba(255, 255, 255, .02);
+  background: var(--play-chip-bg);
   box-sizing: border-box;
 }
 
 .settings-group__title {
   margin: 0 0 .06rem;
   padding-bottom: .26rem;
-  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  border-bottom: 1px solid var(--chrome-border);
   font-size: .82rem;
   font-weight: 600;
   letter-spacing: .02em;
@@ -998,7 +1172,7 @@ const chatDanmakuMessages = computed(() => {
   margin: 0;
   padding: 0;
   border-radius: 999px;
-  background: rgba(255, 255, 255, .12);
+  background: var(--play-range-track);
   appearance: none;
   cursor: pointer;
 }
@@ -1010,7 +1184,7 @@ const chatDanmakuMessages = computed(() => {
   border: 2px solid #1a1a1a;
   border-radius: 50%;
   background: var(--amber);
-  box-shadow: 0 0 0 1px rgba(243, 208, 78, .35);
+  box-shadow: 0 0 0 1px var(--primary-ring);
 }
 
 .setting-range::-moz-range-thumb {
@@ -1025,7 +1199,7 @@ const chatDanmakuMessages = computed(() => {
   height: 3px;
   border: none;
   border-radius: 999px;
-  background: rgba(255, 255, 255, .12);
+  background: var(--play-range-track);
 }
 
 .settings-hint {
@@ -1046,20 +1220,20 @@ const chatDanmakuMessages = computed(() => {
   min-width: 0;
   padding: .32rem .5rem;
   font-size: .78rem;
-  border: 1px solid var(--gray-7);
+  border: 1px solid var(--chrome-border);
   border-radius: 5px;
-  background: rgba(255, 255, 255, .04);
+  background: var(--play-chip-bg);
   color: var(--text);
   cursor: pointer;
 }
 
 .settings-action-btn:hover {
-  border-color: rgba(243, 208, 78, .35);
-  background: rgba(243, 208, 78, .08);
+  border-color: var(--primary-ring);
+  background: var(--bg-soft);
 }
 
 .settings-action-btn--primary {
-  border-color: rgba(243, 208, 78, .45);
+  border-color: var(--primary-border-strong);
   color: var(--amber);
 }
 
@@ -1077,9 +1251,9 @@ const chatDanmakuMessages = computed(() => {
   font-size: .74rem;
   font-family: ui-monospace, Consolas, monospace;
   line-height: 1.35;
-  border: 1px solid var(--gray-7);
+  border: 1px solid var(--chrome-border);
   border-radius: 5px;
-  background: rgba(0, 0, 0, .22);
+  background: var(--play-input-bg);
   color: var(--text);
   resize: vertical;
   box-sizing: border-box;
@@ -1090,7 +1264,7 @@ const chatDanmakuMessages = computed(() => {
     width: 100%;
     max-width: 100%;
     border-left: none;
-    border-top: 1px solid var(--gray-7);
+    border-top: 1px solid var(--border);
     height: auto;
     flex-shrink: 0;
     box-sizing: border-box;

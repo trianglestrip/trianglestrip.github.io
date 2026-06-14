@@ -3,12 +3,20 @@ import { fetchFollowStatus } from "../api/follow.js";
 import { followKey } from "../utils/prefStore.js";
 import { mergeFollowRoom, sortFollowRooms } from "../utils/followDisplay.js";
 
-export function useFollowStatus(followsRef, { active = true, getFocusCategory, pollInterval = 0 } = {}) {
+export function useFollowStatus(followsRef, {
+  active = true,
+  getFocusCategory,
+  pollInterval = 0,
+  minRefreshMs = 0,
+  shallowWatch = false,
+  refreshDebounceMs = 120,
+} = {}) {
   const statusMap = ref({});
   const loading = ref(false);
   const activeRef = isRef(active) ? active : ref(active);
   let refreshTimer = 0;
   let pollTimer = 0;
+  let lastRefreshAt = 0;
 
   function applySnapshots(list = []) {
     const next = { ...statusMap.value };
@@ -45,12 +53,13 @@ export function useFollowStatus(followsRef, { active = true, getFocusCategory, p
     }
   }
 
-  async function refresh() {
+  async function refresh({ force = false } = {}) {
     const rooms = followsRef.value || [];
     if (!rooms.length) {
       statusMap.value = {};
       return;
     }
+    if (!force && minRefreshMs > 0 && Date.now() - lastRefreshAt < minRefreshMs) return;
     loading.value = true;
     try {
       const data = await fetchFollowStatus(
@@ -58,6 +67,7 @@ export function useFollowStatus(followsRef, { active = true, getFocusCategory, p
       );
       applySnapshots(data.list || []);
       persistSnapshots(data.list || []);
+      lastRefreshAt = Date.now();
     } catch {
       /* 保留上次状态 */
     } finally {
@@ -69,7 +79,13 @@ export function useFollowStatus(followsRef, { active = true, getFocusCategory, p
     clearTimeout(refreshTimer);
     refreshTimer = setTimeout(() => {
       if (unref(activeRef)) refresh();
-    }, 120);
+    }, refreshDebounceMs);
+  }
+
+  function followWatchSignature() {
+    return (followsRef.value || [])
+      .map((room) => `${followKey(room.site, room.id)}:${room.super ? 1 : 0}`)
+      .join("|");
   }
 
   const sortedFollows = computed(() => {
@@ -86,13 +102,19 @@ export function useFollowStatus(followsRef, { active = true, getFocusCategory, p
     return sortFollowRooms(merged, statusEntries, { focusCategory });
   });
 
-  watch(
-    followsRef,
-    () => {
+  if (shallowWatch) {
+    watch(followWatchSignature, () => {
       scheduleRefresh();
-    },
-    { deep: true, immediate: true },
-  );
+    }, { immediate: true });
+  } else {
+    watch(
+      followsRef,
+      () => {
+        scheduleRefresh();
+      },
+      { deep: true, immediate: true },
+    );
+  }
 
   onBeforeUnmount(() => {
     clearTimeout(refreshTimer);

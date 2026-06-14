@@ -59,7 +59,7 @@ const filterPlatforms = PLATFORMS.filter((p) => p.enabled && p.id !== "bilibili"
   padding: .32rem .58rem;
   border: 1px solid transparent;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--follow-filter-bg, var(--dark-6));
   color: var(--muted);
   font-size: .92rem;
   font-weight: 700;
@@ -84,41 +84,41 @@ const filterPlatforms = PLATFORMS.filter((p) => p.enabled && p.id !== "bilibili"
 }
 
 .follow-platform-filter__item--active {
-  border-color: rgba(255, 255, 255, 0.22);
+  border-color: var(--border);
   color: var(--text);
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--follow-filter-active-bg, var(--sidebar-chip-active-bg, var(--dark-6)));
 }
 
 .follow-platform-filter__item--douyu {
-  color: #ff8a2a;
-  background: rgba(255, 138, 42, 0.14);
+  color: var(--platform-douyu-text);
+  background: var(--follow-filter-douyu-bg, var(--sidebar-filter-douyu-bg));
 }
 
 .follow-platform-filter__item--douyu.follow-platform-filter__item--active {
-  border-color: rgba(255, 138, 42, 0.45);
-  background: rgba(255, 138, 42, 0.28);
-  color: #ffb066;
+  border-color: color-mix(in srgb, var(--platform-douyu) 55%, var(--border));
+  background: var(--follow-filter-douyu-active-bg, var(--sidebar-filter-douyu-active-bg));
+  color: var(--platform-douyu-text-em);
 }
 
 .follow-platform-filter__item--huya {
-  color: #ffb800;
-  background: rgba(255, 184, 0, 0.14);
+  color: var(--platform-huya-text);
+  background: var(--follow-filter-huya-bg, var(--sidebar-filter-huya-bg));
 }
 
 .follow-platform-filter__item--huya.follow-platform-filter__item--active {
-  border-color: rgba(255, 184, 0, 0.45);
-  background: rgba(255, 184, 0, 0.28);
-  color: #ffd24a;
+  border-color: color-mix(in srgb, var(--platform-huya) 55%, var(--border));
+  background: var(--follow-filter-huya-active-bg, var(--sidebar-filter-huya-active-bg));
+  color: var(--platform-huya-text-em);
 }
 
 .follow-platform-filter__item--douyin {
-  color: #fe2c55;
-  background: rgba(254, 44, 85, 0.14);
+  color: var(--platform-douyin-text);
+  background: var(--follow-filter-douyin-bg, var(--sidebar-filter-douyin-bg));
 }
 
 .follow-platform-filter__item--douyin.follow-platform-filter__item--active {
-  border-color: rgba(254, 44, 85, 0.45);
-  background: rgba(254, 44, 85, 0.28);
-  color: #ff6b8a;
+  border-color: color-mix(in srgb, var(--platform-douyin) 55%, var(--border));
+  background: var(--follow-filter-douyin-active-bg, var(--sidebar-filter-douyin-active-bg));
+  color: var(--platform-douyin-text-em);
 }
 </style>

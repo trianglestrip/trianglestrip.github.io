@@ -89,9 +89,9 @@ export function startServer(cfg: ServerConfig, webRoot: string | null): void {
     }
     console.log(`API: http://${host}:${port}/api/health`);
     console.log("     GET /api/room?site=douyu|huya|douyin&room=<id>&mode=lazy|full");
-    console.log("     GET /api/categories?site=douyu|huya");
-    console.log("     GET /api/rooms?site=douyu|huya&cid=<id>&page=1");
-    console.log("     GET /api/rooms?site=douyu|huya&recommend=1&page=1");
+    console.log("     GET /api/categories?site=douyu|huya|douyin");
+    console.log("     GET /api/rooms?site=douyu|huya|douyin&cid=<id>&page=1");
+    console.log("     GET /api/rooms?site=douyu|huya|douyin&recommend=1&page=1");
     console.log("     GET /api/time?site=douyu|huya&room=<id>&run=0|1");
     console.log("     GET/POST /api/follows/store  已禁用服务端共享（关注仅存浏览器）");
     console.log("配置: config.json（可选 config.local.json 覆盖）");

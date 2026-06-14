@@ -2,100 +2,37 @@
  * 跨平台直播分类映射（统一名 → 各平台 cid/gid）
  * 用于侧栏「推荐」按当前房间分类拉取相关直播。
  */
+export interface DouyinPartitionRef {
+  cid: string;
+  pid?: string;
+}
+
 export interface CrossCategoryEntry {
   key: string;
   name: string;
   aliases: string[];
+  /** game=具体游戏；group=网游/手游/单机/娱乐等大类 */
+  kind?: "game" | "group";
   douyu?: string;
   huya?: string;
+  douyin?: string;
+  /** 抖音 partition_type，默认 1 */
+  douyinPid?: string;
+  /** 斗鱼 cate1，与 douyu(cate2) 区分避免 id 冲突 */
+  douyuGroup?: string;
+  /** 虎牙分类页 Tab id（bussType：1 网游 / 2 单机 / 3 手游 / 8 娱乐） */
+  huyaTabId?: string;
+  /** 虎牙大类聚合 gid（如 100023 网游竞技） */
+  huyaGroup?: string;
+  /** 抖音顶层分区组 id（如 1 射击、2 竞技 → 网游） */
+  douyinGroupIds?: string[];
+  /** 抖音大类：多个子分区取样 */
+  douyinPartitions?: DouyinPartitionRef[];
 }
 
-export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
-  {
-    key: "lol",
-    name: "英雄联盟",
-    aliases: ["英雄联盟", "lol", "league of legends", "英雄联盟赛事"],
-    douyu: "1",
-    huya: "1",
-  },
-  {
-    key: "cs2",
-    name: "CS2",
-    aliases: ["cs2", "csgo", "反恐精英", "counter-strike", "cs:go"],
-    douyu: "6",
-    huya: "862",
-  },
-  {
-    key: "wzry",
-    name: "王者荣耀",
-    aliases: ["王者荣耀", "王者"],
-    douyu: "181",
-    huya: "2336",
-  },
-  {
-    key: "hpjy",
-    name: "和平精英",
-    aliases: ["和平精英", "绝地求生", "pubg", "吃鸡"],
-    douyu: "270",
-    huya: "3203",
-  },
-  {
-    key: "valorant",
-    name: "无畏契约",
-    aliases: ["无畏契约", "valorant", "瓦罗兰特"],
-    douyu: "5937",
-    huya: "5937",
-  },
-  {
-    key: "dota2",
-    name: "DOTA2",
-    aliases: ["dota2", "dota 2", "刀塔"],
-    douyu: "7",
-    huya: "7",
-  },
-  {
-    key: "cf",
-    name: "穿越火线",
-    aliases: ["穿越火线", "cf"],
-    douyu: "4",
-    huya: "4",
-  },
-  {
-    key: "dnf",
-    name: "地下城与勇士",
-    aliases: ["地下城与勇士", "dnf"],
-    douyu: "2",
-    huya: "2",
-  },
-  {
-    key: "hs",
-    name: "炉石传说",
-    aliases: ["炉石传说", "炉石"],
-    douyu: "393",
-    huya: "393",
-  },
-  {
-    key: "tft",
-    name: "云顶之弈",
-    aliases: ["云顶之弈", "lol云顶之弈", "tft"],
-    douyu: "5485",
-    huya: "5485",
-  },
-  {
-    key: "xingxiu",
-    name: "星秀",
-    aliases: ["星秀", "颜值", "娱乐"],
-    douyu: "1008",
-    huya: "897",
-  },
-  {
-    key: "host",
-    name: "主机游戏",
-    aliases: ["主机", "主机游戏", "单机", "switch", "ps5"],
-    douyu: "1282",
-    huya: "1964",
-  },
-];
+export { CROSS_CATEGORIES } from "./cross-categories.data.js";
+
+import { CROSS_CATEGORIES } from "./cross-categories.data.js";
 
 function norm(text: string): string {
   return String(text || "")
@@ -104,10 +41,25 @@ function norm(text: string): string {
     .replace(/\s+/g, "");
 }
 
-function cidForSite(entry: CrossCategoryEntry, site: string): string | undefined {
+function isGroupEntry(entry: CrossCategoryEntry): boolean {
+  return entry.kind === "group";
+}
+
+function gameCidForSite(entry: CrossCategoryEntry, site: string): string | undefined {
   if (site === "douyu") return entry.douyu;
   if (site === "huya") return entry.huya;
+  if (site === "douyin") return entry.douyin;
   return undefined;
+}
+
+function groupCidForSite(entry: CrossCategoryEntry, site: string): string | undefined {
+  if (site === "douyu") return entry.douyuGroup;
+  if (site === "huya") return entry.huyaGroup;
+  return undefined;
+}
+
+export function douyinPidForEntry(entry: CrossCategoryEntry): string {
+  return String(entry.douyinPid || "1");
 }
 
 export function findCrossCategory(
@@ -118,8 +70,20 @@ export function findCrossCategory(
   const cidText = String(cid || "").trim();
   if (cidText) {
     for (const entry of CROSS_CATEGORIES) {
-      const mapped = cidForSite(entry, site);
+      if (isGroupEntry(entry)) continue;
+      const mapped = gameCidForSite(entry, site);
       if (mapped && mapped === cidText) return entry;
+    }
+    for (const entry of CROSS_CATEGORIES) {
+      if (!isGroupEntry(entry)) continue;
+      const groupCid = groupCidForSite(entry, site);
+      if (groupCid && groupCid === cidText) return entry;
+      if (site === "huya" && entry.huyaTabId && entry.huyaTabId === cidText) return entry;
+      if (site === "douyin") {
+        if (entry.douyinGroupIds?.some((id) => id === cidText)) return entry;
+        const hit = entry.douyinPartitions?.some((part) => part.cid === cidText);
+        if (hit) return entry;
+      }
     }
   }
 
@@ -138,4 +102,8 @@ export function findCrossCategory(
 
 export function crossCategoryMapPayload(): { categories: CrossCategoryEntry[] } {
   return { categories: CROSS_CATEGORIES };
+}
+
+export function isGroupCategoryEntry(entry: CrossCategoryEntry | null | undefined): boolean {
+  return Boolean(entry && isGroupEntry(entry));
 }

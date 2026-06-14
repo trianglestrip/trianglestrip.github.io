@@ -241,6 +241,11 @@ function flvOptionsForSite(site) {
       Referer: "https://www.huya.com/",
       Origin: "https://www.huya.com",
     };
+  } else if (site === "douyin") {
+    config.headers = {
+      Referer: "https://live.douyin.com/",
+      Origin: "https://live.douyin.com",
+    };
   }
   return config;
 }

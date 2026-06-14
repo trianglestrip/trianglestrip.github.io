@@ -10,7 +10,9 @@
     "build": "tsc && node scripts/bundle.mjs && node scripts/publish-dist.mjs",
     "dev": "tsx src/index.ts",
     "start": "node ../dist/server/live-api.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "sync:cross-map": "tsx scripts/sync-category-cross-map.mjs",
+    "sync:douyin-icons": "npm run build && node scripts/sync-douyin-game-icons.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",

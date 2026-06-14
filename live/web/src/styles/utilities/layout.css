@@ -1,0 +1,9 @@
+.page-fill {
+  height: calc(100vh - var(--nav-height));
+}
+
+@media (min-width: 768px) {
+  .page-fill {
+    height: calc(100vh - var(--nav-height));
+  }
+}

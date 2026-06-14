@@ -1,5 +1,9 @@
 <template>
-  <div v-if="show" class="player-controls" :class="{ 'player-controls--overlay': overlay, 'player-controls--fullscreen': fullscreen }">
+  <div
+    v-if="show"
+    class="player-controls on-video-surface"
+    :class="{ 'player-controls--overlay': overlay, 'player-controls--fullscreen': fullscreen }"
+  >
     <div class="controls-bar">
       <button
         type="button"
@@ -35,7 +39,7 @@
         </button>
         <div
           v-show="danmakuSettingsOpen"
-          class="ctrl-danmaku-settings-pop"
+          class="ctrl-danmaku-settings-pop on-video-surface"
           role="dialog"
           aria-label="飘屏弹幕设置"
           @click.stop
@@ -80,7 +84,7 @@
           >
             {{ qualityLabel }}
           </button>
-          <div v-show="qualityOpen && qualities.length" class="ctrl-dropdown__menu">
+          <div v-show="qualityOpen && qualities.length" class="ctrl-dropdown__menu on-video-surface">
             <button
               v-for="item in qualities"
               :key="item.index"
@@ -103,7 +107,7 @@
           >
             {{ lineLabel }}
           </button>
-          <div v-show="lineOpen && lines.length" class="ctrl-dropdown__menu">
+          <div v-show="lineOpen && lines.length" class="ctrl-dropdown__menu on-video-surface">
             <button
               v-for="(line, index) in lines"
               :key="index"
@@ -281,7 +285,7 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   align-items: center;
   gap: .75rem;
   padding: .5rem 1rem;
-  background: rgba(0, 0, 0, .3);
+  background: var(--on-video-bg-bar);
 }
 
 .controls-spacer {
@@ -504,8 +508,8 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   width: 14.5rem;
   max-width: min(14.5rem, calc(100vw - 2rem));
   padding: .32rem .38rem .38rem;
-  background: rgba(0, 0, 0, .9);
-  border: 1px solid rgba(255, 255, 255, .1);
+  background: var(--on-video-bg-panel);
+  border: 1px solid var(--on-video-border);
   border-radius: 7px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, .45);
   z-index: 6;
@@ -553,8 +557,8 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   min-width: 6.5rem;
   margin-bottom: .35rem;
   padding: .15rem 0;
-  background: rgba(0, 0, 0, .88);
-  border: 1px solid rgba(255, 255, 255, .08);
+  background: var(--on-video-bg-panel);
+  border: 1px solid var(--on-video-border);
   border-radius: 6px;
   text-align: center;
   z-index: 5;

@@ -1,84 +1,96 @@
 import { normalizeFollows } from "./prefStore.js";
 
 /**
- * 关注最小导出格式：JSON 数组，每项为 [平台, 房间号] 或 [平台, 房间号, 1]（超关）
- * 例：[["douyu","252140"],["huya","660000",1]]
+ * 关注紧凑导出：douyu:[252140,6188551],huya:[660000,123*]
+ * 超关房间号后缀 *，例 huya:[660000*]
  */
 export function serializeFollowsMinimal(follows) {
-  const list = (follows || []).map((room) => {
+  const siteOrder = [];
+  const bySite = new Map();
+
+  for (const room of follows || []) {
     const site = String(room.site || "").trim();
     const id = String(room.id || "").trim();
-    if (!site || !id) return null;
-    if (room.super) return [site, id, 1];
-    return [site, id];
-  }).filter(Boolean);
-  return JSON.stringify(list);
-}
-
-function rowsFromJson(data) {
-  if (!Array.isArray(data)) return [];
-  if (!data.length) return [];
-
-  if (Array.isArray(data[0])) {
-    return data.map((row) => ({
-      site: row[0],
-      id: row[1],
-      super: row[2] === 1 || row[2] === true || row[2] === "super",
-    }));
+    if (!site || !id) continue;
+    if (!bySite.has(site)) {
+      bySite.set(site, []);
+      siteOrder.push(site);
+    }
+    bySite.get(site).push(formatCompactId(id, room.super));
   }
 
-  if (typeof data[0] === "object" && data[0]) {
-    return data.map((item) => ({
-      site: item.site || item.platform || item.siteId,
-      id: item.id || item.roomId || item.room,
-      super: Boolean(item.super),
-    }));
-  }
-
-  return [];
+  return siteOrder
+    .map((site) => `${site}:[${bySite.get(site).join(",")}]`)
+    .join(",");
 }
 
-function rowsFromLines(text) {
-  const out = [];
-  for (const line of text.split(/\r?\n/)) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith("#") || trimmed.startsWith("//")) continue;
+function formatCompactId(id, superFollow) {
+  const token = superFollow ? `${id}*` : id;
+  if (/^\d+$/.test(id)) return token;
+  return JSON.stringify(token);
+}
 
-    const jsonLine = trimmed.startsWith("[") || trimmed.startsWith("{");
-    if (jsonLine) {
-      try {
-        out.push(...rowsFromJson(JSON.parse(trimmed)));
-        continue;
-      } catch {
-        /* fall through */
+function parseIdToken(token) {
+  let raw = String(token || "").trim();
+  if (!raw) return null;
+
+  if ((raw.startsWith('"') && raw.endsWith('"')) || (raw.startsWith("'") && raw.endsWith("'"))) {
+    raw = raw.slice(1, -1);
+  }
+
+  const superFlag = raw.endsWith("*");
+  const id = superFlag ? raw.slice(0, -1).trim() : raw;
+  if (!id) return null;
+  return { id, super: superFlag };
+}
+
+function splitBracketItems(inner) {
+  const items = [];
+  let current = "";
+  let inQuote = false;
+  let quote = "";
+
+  for (const ch of inner) {
+    if ((ch === '"' || ch === "'") && (!inQuote || ch === quote)) {
+      inQuote = !inQuote;
+      quote = inQuote ? ch : "";
+      current += ch;
+      continue;
+    }
+    if (ch === "," && !inQuote) {
+      if (current.trim()) items.push(current.trim());
+      current = "";
+      continue;
+    }
+    current += ch;
+  }
+
+  if (current.trim()) items.push(current.trim());
+  return items;
+}
+
+function rowsFromCompact(text) {
+  const rows = [];
+  const re = /([a-z][a-z0-9]*)\s*:\s*\[([^\]]*)\]/gi;
+  let match = re.exec(text);
+  while (match) {
+    const site = match[1].toLowerCase();
+    const inner = match[2].trim();
+    if (inner) {
+      for (const part of splitBracketItems(inner)) {
+        const parsed = parseIdToken(part);
+        if (parsed) rows.push({ site, id: parsed.id, super: parsed.super });
       }
     }
-
-    const match = trimmed.match(
-      /^([a-z][a-z0-9]*)\s*[:/,\s]\s*([^\s#]+?)(?:\s+(?:\*|super|超关))?$/i,
-    );
-    if (!match) continue;
-    const site = match[1].toLowerCase();
-    const id = match[2].replace(/[,;]+$/, "");
-    const superFlag = /\s+(\*|super|超关)\s*$/i.test(trimmed);
-    out.push({ site, id, super: superFlag });
+    match = re.exec(text);
   }
-  return out;
+  return rows;
 }
 
 /** 解析剪贴板/文本为关注条目，无效项会被 normalize 丢弃 */
 export function parseFollowsMinimal(text) {
   const raw = String(text || "").trim();
   if (!raw) return [];
-
-  try {
-    const data = JSON.parse(raw);
-    if (Array.isArray(data)) return normalizeFollows(rowsFromJson(data));
-    if (data && Array.isArray(data.list)) return normalizeFollows(rowsFromJson(data.list));
-    if (data && Array.isArray(data.follows)) return normalizeFollows(rowsFromJson(data.follows));
-  } catch {
-    /* 尝试行格式 */
-  }
-
-  return normalizeFollows(rowsFromLines(raw));
+  const compact = rowsFromCompact(raw.replace(/\r?\n/g, ","));
+  return normalizeFollows(compact);
 }

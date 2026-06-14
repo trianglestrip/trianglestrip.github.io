@@ -26,3 +26,37 @@ export function formatCount(count: number | string | null | undefined): string {
   if (Number.isNaN(value) || value <= 0) return "";
   return String(Math.trunc(value));
 }
+
+/** 在线人数：始终显示完整数字，不缩写；兼容「1.2万」「3万+」「3w+」等 */
+export function formatPlainCount(count: number | string | null | undefined): string {
+  if (typeof count === "number" && Number.isFinite(count)) {
+    if (count <= 0) return "";
+    return String(Math.trunc(count));
+  }
+
+  const s = String(count ?? "").trim();
+  if (!s) return "";
+
+  const cleaned = s.replace(/\+$/u, "").trim();
+  if (cleaned.endsWith("万")) {
+    const n = parseFloat(cleaned.slice(0, -1));
+    if (Number.isFinite(n) && n > 0) return String(Math.round(n * 10_000));
+  }
+  if (cleaned.endsWith("千")) {
+    const n = parseFloat(cleaned.slice(0, -1));
+    if (Number.isFinite(n) && n > 0) return String(Math.round(n * 1_000));
+  }
+
+  const wk = cleaned.match(/^([\d.]+)\s*([wkWK])$/u);
+  if (wk) {
+    const n = parseFloat(wk[1]);
+    const unit = wk[2].toLowerCase();
+    if (Number.isFinite(n) && n > 0) {
+      return String(Math.round(n * (unit === "w" ? 10_000 : 1_000)));
+    }
+  }
+
+  const value = Number(cleaned.replace(/,/g, ""));
+  if (Number.isNaN(value) || value <= 0) return "";
+  return String(Math.trunc(value));
+}

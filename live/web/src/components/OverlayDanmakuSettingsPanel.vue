@@ -47,7 +47,7 @@ const settings = defineModel({ type: Object, required: true });
 .overlay-settings__title {
   margin: 0;
   padding-bottom: .2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  border-bottom: 1px solid var(--on-video-border);
   font-size: .76rem;
   font-weight: 600;
   color: var(--amber);

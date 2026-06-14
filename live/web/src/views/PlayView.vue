@@ -83,7 +83,7 @@
             <button
               v-if="showPauseOverlay"
               type="button"
-              class="play-pause-overlay"
+              class="play-pause-overlay on-video-surface"
               aria-label="播放"
               @click.stop="onPauseOverlayClick"
             >
@@ -92,7 +92,7 @@
             <button
               v-if="showMuteHint"
               type="button"
-              class="mute-hint"
+              class="mute-hint on-video-surface"
               aria-label="点击解除静音"
               @pointerdown.stop.prevent="onMuteHintClick"
               @click.stop.prevent
@@ -120,6 +120,7 @@
         @play-room="onPlayFollow"
         @unfollow="onUnfollow"
         @toggle-super-follow="onToggleSuperFollow"
+        @trim-chat="trimDanmakuFromStart"
       />
     </div>
   </AppLayout>
@@ -222,7 +223,7 @@ const displayCategory = computed(() => {
 });
 
 const categoryHeaderStyle = computed(() =>
-  getCategoryStyle(displayCategory.value, props.site, "", { bgAlpha: 0.09 }) || {},
+  getCategoryStyle(displayCategory.value, props.site, "", { opaque: true }) || {},
 );
 
 const roomState = ref("offline");
@@ -230,6 +231,7 @@ const roomCategory = ref("");
 const roomStatsReady = ref(false);
 const roomStats = ref({
   online: "",
+  fans: "",
   diamondFans: "",
   fanGroup: "",
   guard: "",
@@ -256,12 +258,18 @@ const roomStatItems = computed(() => {
       { label: "贵宾", value: statDisplay(roomStats.value.vip), tone: "vip" },
     ];
   }
+  if (props.site === "douyin") {
+    return [
+      { label: "观众", value: statDisplay(roomStats.value.online), tone: "audience" },
+      { label: "关注", value: statDisplay(roomStats.value.fans), tone: "fans" },
+    ];
+  }
   return [{ label: "观众", value: statDisplay(roomStats.value.online), tone: "audience" }];
 });
 
 const showRoomStats = computed(() => {
   if (!headerReady.value || roomState.value === "offline") return false;
-  if (props.site !== "douyu" && props.site !== "huya") return false;
+  if (props.site !== "douyu" && props.site !== "huya" && props.site !== "douyin") return false;
   return roomStatsReady.value;
 });
 
@@ -287,6 +295,7 @@ function resetRoomStats() {
   roomStatsReady.value = false;
   roomStats.value = {
     online: "",
+    fans: "",
     diamondFans: "",
     fanGroup: "",
     guard: "",
@@ -332,6 +341,7 @@ async function refreshRoomStats() {
     const snap = data.list?.[0];
     roomStats.value = {
       online: snap?.online || "",
+      fans: snap?.fans || "",
       diamondFans: snap?.diamondFans || "",
       fanGroup: snap?.fanGroup || "",
       guard: snap?.guard || "",
@@ -350,7 +360,7 @@ watch(
   () => [props.site, props.id, payload.value?.room_id, payload.value?.is_live, payload.value?.status, payload.value?.room_state],
   () => {
     syncOnlineFromPayload();
-    if (props.site === "douyu" || props.site === "huya") {
+    if (props.site === "douyu" || props.site === "huya" || props.site === "douyin") {
       scheduleDeferredOnlineRefresh();
     }
   },
@@ -380,6 +390,7 @@ const {
   chatSettings,
   connect: connectDm,
   disconnect: disconnectDm,
+  trimFromStart: trimDanmakuFromStart,
 } = useDanmaku(siteRef, roomInput);
 const { follows, isSuperFollowed, toggleSuperFollow, unfollow } = useFollow();
 
@@ -577,7 +588,7 @@ function onPlaybackReady() {
 
 function revealSidePanel() {
   sideReady.value = true;
-  nextTick(() => sidePanelRef.value?.refreshSide?.());
+  refreshSidePanel();
 }
 
 function schedulePlay(room) {
@@ -587,7 +598,7 @@ function schedulePlay(room) {
   });
 }
 
-function syncRouteState(site, id) {
+function syncRouteState(site, id, { keepSide = false } = {}) {
   captureSoundUnlock();
   userChoseMute.value = false;
   siteRef.value = site;
@@ -604,8 +615,12 @@ function syncRouteState(site, id) {
   document.title = "Lemon live";
   headerReady.value = true;
   controlsReady.value = true;
-  sideReady.value = false;
+  if (!keepSide) sideReady.value = false;
   danmakuReady.value = false;
+}
+
+function refreshSidePanel() {
+  nextTick(() => sidePanelRef.value?.refreshSide?.());
 }
 
 function resolveVideoEl(raw) {
@@ -701,7 +716,7 @@ function onPlayFollow(room) {
   if (room.site === props.site && room.id === props.id) {
     roomSwitchKeepSound = false;
     onRefresh();
-    sidePanelRef.value?.refreshSide?.();
+    refreshSidePanel();
     return;
   }
   router.push({ name: "play", params: { site: room.site, id: room.id } });
@@ -894,10 +909,15 @@ async function onLineChange(index) {
   }
 }
 
+let playRouteReady = false;
+
 watch(
   () => [props.site, props.id],
   ([site, id]) => {
-    syncRouteState(site, id);
+    const keepSide = playRouteReady && sideReady.value;
+    syncRouteState(site, id, { keepSide });
+    if (keepSide) refreshSidePanel();
+    playRouteReady = true;
     if (!getPlatform(site)?.enabled) return;
     schedulePlay(id);
   },
@@ -913,6 +933,7 @@ onMounted(() => {
     /* ignore */
   }
   syncRouteState(props.site, props.id);
+  playRouteReady = true;
   if (getPlatform(props.site)?.enabled) {
     schedulePlay(props.id);
   }
@@ -1000,6 +1021,7 @@ onBeforeUnmount(() => {
   min-height: 2.5rem;
   padding: .35rem .5rem .45rem 2.75rem;
   flex-shrink: 0;
+  border-bottom: 1px solid var(--chrome-border);
 }
 
 .play-header-category {
@@ -1071,6 +1093,17 @@ onBeforeUnmount(() => {
   font-variant-numeric: tabular-nums;
 }
 
+@media (max-width: 900px) {
+  .play-stats-inline .play-stat-item:not(.play-stat-item--audience) {
+    display: none;
+  }
+
+  .play-stats-inline {
+    max-width: none;
+    flex-wrap: nowrap;
+  }
+}
+
 .play-stat-item {
   white-space: nowrap;
   padding: .3rem .55rem;
@@ -1078,53 +1111,63 @@ onBeforeUnmount(() => {
 }
 
 .play-stat-item--audience {
-  color: #b8dcff;
-  background: rgba(72, 136, 220, 0.1);
+  color: var(--play-stat-audience-text);
+  background: var(--play-stat-audience-bg);
 }
 
 .play-stat-item--diamond {
-  color: #f0b8ff;
-  background: rgba(168, 88, 210, 0.1);
+  color: var(--play-stat-diamond-text);
+  background: var(--play-stat-diamond-bg);
 }
 
 .play-stat-item--fangroup {
-  color: #ffd4a0;
-  background: rgba(220, 140, 48, 0.1);
+  color: var(--play-stat-fangroup-text);
+  background: var(--play-stat-fangroup-bg);
+}
+
+.play-stat-item--fans {
+  color: var(--play-stat-fangroup-text);
+  background: var(--play-stat-fangroup-bg);
 }
 
 .play-stat-item--guard {
-  color: #ffe08a;
-  background: rgba(200, 150, 40, 0.1);
+  color: var(--play-stat-guard-text);
+  background: var(--play-stat-guard-bg);
 }
 
 .play-stat-item--vip {
-  color: #d8c0ff;
-  background: rgba(120, 80, 200, 0.1);
+  color: var(--play-stat-vip-text);
+  background: var(--play-stat-vip-bg);
 }
 
 .play-stats-inline--live .play-stat-item--audience {
-  color: #c8e8ff;
-  background: rgba(72, 136, 220, 0.14);
+  color: var(--play-stat-audience-text);
+  background: var(--play-stat-audience-bg);
 }
 
 .play-stats-inline--live .play-stat-item--diamond {
-  color: #f8c8ff;
-  background: rgba(168, 88, 210, 0.12);
+  color: var(--play-stat-diamond-text);
+  background: var(--play-stat-diamond-bg);
 }
 
 .play-stats-inline--live .play-stat-item--fangroup {
-  color: #ffe0b0;
-  background: rgba(220, 140, 48, 0.12);
+  color: var(--play-stat-fangroup-text);
+  background: var(--play-stat-fangroup-bg);
+}
+
+.play-stats-inline--live .play-stat-item--fans {
+  color: var(--play-stat-fangroup-text);
+  background: var(--play-stat-fangroup-bg);
 }
 
 .play-stats-inline--live .play-stat-item--guard {
-  color: #ffecb0;
-  background: rgba(200, 150, 40, 0.14);
+  color: var(--play-stat-guard-text);
+  background: var(--play-stat-guard-bg);
 }
 
 .play-stats-inline--live .play-stat-item--vip {
-  color: #e8d0ff;
-  background: rgba(120, 80, 200, 0.14);
+  color: var(--play-stat-vip-text);
+  background: var(--play-stat-vip-bg);
 }
 
 .play-frame {
@@ -1139,9 +1182,15 @@ onBeforeUnmount(() => {
 
 .play-frame--webscreen {
   position: fixed;
-  inset: var(--nav-height) 0 0 0;
+  inset: 0 0 var(--nav-height) 0;
   z-index: 20;
   border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .play-frame--webscreen {
+    inset: var(--nav-height) 0 0 0;
+  }
 }
 
 .play-frame:fullscreen,
@@ -1203,12 +1252,6 @@ onBeforeUnmount(() => {
   background: #000;
 }
 
-@media (min-width: 768px) {
-  .play-frame--webscreen {
-    inset: 0 0 0 var(--nav-width);
-  }
-}
-
 .video-shell {
   position: relative;
   flex: 1;
@@ -1222,7 +1265,7 @@ onBeforeUnmount(() => {
   inset: 0;
   display: grid;
   place-items: center;
-  background: rgba(0, 0, 0, .55);
+  background: var(--on-video-bg-hint);
   color: var(--amber);
   font-size: .95rem;
   pointer-events: none;
@@ -1239,10 +1282,10 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: .45rem;
   padding: .55rem .85rem;
-  border: 1px solid rgba(243, 208, 78, .45);
+  border: 1px solid var(--primary-border-strong);
   border-radius: 999px;
-  background: rgba(0, 0, 0, .72);
-  color: var(--text);
+  background: var(--on-video-bg-hint);
+  color: var(--on-video-text);
   font: inherit;
   font-size: .9rem;
   line-height: 1.2;
@@ -1254,7 +1297,7 @@ onBeforeUnmount(() => {
 @media (hover: hover) and (pointer: fine) {
   .mute-hint:hover {
     border-color: var(--amber);
-    background: rgba(0, 0, 0, .82);
+    background: var(--on-video-bg-chip);
     transform: translate(-50%, -50%) scale(1.02);
   }
 }
@@ -1278,8 +1321,8 @@ onBeforeUnmount(() => {
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: rgba(0, 0, 0, .55);
-  color: var(--text);
+  background: var(--on-video-bg-hint);
+  color: var(--on-video-text);
   cursor: pointer;
   box-shadow: 0 6px 24px rgba(0, 0, 0, .35);
   transition: background .15s, transform .15s;
@@ -1287,7 +1330,7 @@ onBeforeUnmount(() => {
 
 @media (hover: hover) and (pointer: fine) {
   .play-pause-overlay:hover {
-    background: rgba(0, 0, 0, .72);
+    background: var(--on-video-bg-chip);
     transform: translate(-50%, -50%) scale(1.04);
   }
 }

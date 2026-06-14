@@ -30,7 +30,7 @@
         v-model="text"
         class="follow-batch__input"
         rows="3"
-        placeholder="房间号，用英文逗号分隔"
+        :placeholder="batchPlaceholder"
       />
       <div class="follow-batch__actions">
         <button type="button" class="btn btn-primary btn-sm" :disabled="submitting" @click="submit">
@@ -62,6 +62,12 @@ const submitting = ref(false);
 
 const enabledPlatforms = computed(() => PLATFORMS.filter((p) => p.enabled));
 
+const batchPlaceholder = computed(() =>
+  site.value === "douyin"
+    ? "房间号或 live.douyin.com/xxx 链接，逗号分隔"
+    : "房间号，用英文逗号分隔",
+);
+
 function submit() {
   message.value = "";
   const items = parseFollowImport(text.value, site.value);
@@ -81,7 +87,7 @@ function submit() {
 .follow-batch {
   flex-shrink: 0;
   padding: .5rem .55rem .45rem;
-  border-bottom: 1px solid var(--gray-7);
+  border-bottom: 1px solid var(--chrome-border);
 }
 
 .follow-batch--inline {
@@ -108,7 +114,7 @@ function submit() {
   padding: .45rem .55rem;
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: rgba(255, 255, 255, .03);
+  background: var(--bg-soft);
   color: var(--muted);
   font: inherit;
   font-size: .82rem;
@@ -155,36 +161,36 @@ function submit() {
 }
 
 .platform-radio--douyu {
-  color: #ff8a2a;
-  background: rgba(255, 138, 42, 0.18);
+  color: var(--platform-douyu-text);
+  background: var(--follow-tag-douyu-bg, var(--sidebar-tag-douyu-bg));
 }
 
 .platform-radio--huya {
-  color: #ffb800;
-  background: rgba(255, 184, 0, 0.18);
+  color: var(--platform-huya-text);
+  background: var(--follow-tag-huya-bg, var(--sidebar-tag-huya-bg));
 }
 
 .platform-radio--douyin {
-  color: #fe2c55;
-  background: rgba(254, 44, 85, 0.18);
+  color: var(--platform-douyin-text);
+  background: var(--follow-tag-douyin-bg, var(--sidebar-tag-douyin-bg));
 }
 
 .platform-radio--douyu.active {
-  border-color: rgba(255, 138, 42, 0.45);
-  background: rgba(255, 138, 42, 0.28);
-  color: #ffb066;
+  border-color: color-mix(in srgb, var(--platform-douyu) 55%, var(--border));
+  background: var(--follow-filter-douyu-active-bg, var(--sidebar-filter-douyu-active-bg));
+  color: var(--platform-douyu-text-em);
 }
 
 .platform-radio--huya.active {
-  border-color: rgba(255, 184, 0, 0.45);
-  background: rgba(255, 184, 0, 0.28);
-  color: #ffd24a;
+  border-color: color-mix(in srgb, var(--platform-huya) 55%, var(--border));
+  background: var(--follow-filter-huya-active-bg, var(--sidebar-filter-huya-active-bg));
+  color: var(--platform-huya-text-em);
 }
 
 .platform-radio--douyin.active {
-  border-color: rgba(254, 44, 85, 0.45);
-  background: rgba(254, 44, 85, 0.28);
-  color: #ff6b8a;
+  border-color: color-mix(in srgb, var(--platform-douyin) 55%, var(--border));
+  background: var(--follow-filter-douyin-active-bg, var(--sidebar-filter-douyin-active-bg));
+  color: var(--platform-douyin-text-em);
 }
 
 .platform-radio:hover {
@@ -192,7 +198,7 @@ function submit() {
 }
 
 .platform-radio.active {
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 1px var(--chrome-border);
 }
 
 .platform-radio__input {

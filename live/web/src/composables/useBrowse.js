@@ -21,6 +21,8 @@ export function useBrowse(siteRef) {
       return;
     }
     loadingCategories.value = true;
+    listError.value = "";
+    categories.value = [];
     try {
       const data = await fetchCategories(site);
       categories.value = data.categories || [];
