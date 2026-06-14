@@ -47,6 +47,7 @@ const FA_ICONS = {
   close: "fa-xmark",
   star: "fa-star",
   film: "fa-film",
+  sliders: "fa-sliders",
   sun: "fa-sun",
   moon: "fa-moon",
 };

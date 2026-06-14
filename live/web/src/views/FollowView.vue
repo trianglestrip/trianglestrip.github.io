@@ -2,41 +2,43 @@
   <AppLayout active-site="douyu">
     <div class="follow-page">
       <header class="follow-header">
-        <h1>我的关注</h1>
-        <div class="follow-header__actions">
-          <FollowPlatformFilter v-model="followSiteFilter" compact class="follow-header__filter" />
-          <button
-            type="button"
-            class="btn btn-sm btn-refresh"
-            title="刷新封面与状态"
-            :disabled="followStatusLoading"
-            @click="refreshFollowStatus"
-          >
-            <Icon name="refresh" :class="{ 'fa-spin': followStatusLoading }" />
-          </button>
-          <button
-            type="button"
-            class="btn btn-sm btn-list-mode"
-            :class="{ 'btn-list-mode--active': !previewCover }"
-            title="列表视图"
-            @click="togglePreviewCover"
-          >
-            <Icon name="list" />
-          </button>
-          <FollowBatchImport inline />
-          <template v-if="batchMode">
-            <button type="button" class="btn btn-sm" @click="exitBatchMode">取消</button>
+        <div class="follow-header__top">
+          <h1>我的关注</h1>
+          <div class="follow-header__actions">
             <button
               type="button"
-              class="btn btn-sm btn-danger"
-              :disabled="selectedKeys.length === 0"
-              @click="confirmBatchDelete"
+              class="btn btn-sm btn-refresh"
+              title="刷新封面与状态"
+              :disabled="followStatusLoading"
+              @click="refreshFollowStatus"
             >
-              删除选中 ({{ selectedKeys.length }})
+              <Icon name="refresh" :class="{ 'fa-spin': followStatusLoading }" />
             </button>
-          </template>
-          <button v-else type="button" class="btn btn-sm" @click="enterBatchMode">批量删除</button>
+            <button
+              type="button"
+              class="btn btn-sm btn-list-mode"
+              :class="{ 'btn-list-mode--active': !previewCover }"
+              title="列表视图"
+              @click="togglePreviewCover"
+            >
+              <Icon name="list" />
+            </button>
+            <FollowBatchImport inline />
+            <template v-if="batchMode">
+              <button type="button" class="btn btn-sm" @click="exitBatchMode">取消</button>
+              <button
+                type="button"
+                class="btn btn-sm btn-danger"
+                :disabled="selectedKeys.length === 0"
+                @click="confirmBatchDelete"
+              >
+                删除选中 ({{ selectedKeys.length }})
+              </button>
+            </template>
+            <button v-else type="button" class="btn btn-sm" @click="enterBatchMode">批量删除</button>
+          </div>
         </div>
+        <FollowPlatformFilter v-model="followSiteFilter" compact class="follow-header__filter" />
       </header>
 
       <div class="follow-list scrolly">
@@ -169,10 +171,16 @@ function confirmBatchDelete() {
 
 .follow-header {
   display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  padding: .75rem 1rem .35rem;
+}
+
+.follow-header__top {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: .75rem;
-  padding: .75rem 1rem .35rem;
 }
 
 .follow-header h1 {
@@ -191,7 +199,6 @@ function confirmBatchDelete() {
 }
 
 .follow-header__filter {
-  flex: 1;
   min-width: 0;
 }
 

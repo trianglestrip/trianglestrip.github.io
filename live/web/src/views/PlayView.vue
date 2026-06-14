@@ -30,7 +30,14 @@
           </div>
         </header>
 
-        <div ref="frameRef" class="play-frame" :class="{ 'play-frame--webscreen': webscreen }">
+        <div
+          ref="frameRef"
+          class="play-frame"
+          :class="{
+            'play-frame--webscreen': webscreen,
+            'play-frame--landscape-fallback': fullscreenLandscapeFallback,
+          }"
+        >
           <div class="video-shell" @click="onVideoShellClick">
             <PlayerPanel
               ref="playerPanelRef"
@@ -87,7 +94,8 @@
               type="button"
               class="mute-hint"
               aria-label="点击解除静音"
-              @click.stop="onMuteHintClick"
+              @pointerdown.stop.prevent="onMuteHintClick"
+              @click.stop.prevent
             >
               <Icon name="volume-off" class="mute-hint__icon" />
               <span>点击解除静音</span>
@@ -152,6 +160,7 @@ const webscreen = ref(false);
 const showControls = ref(true);
 const controlNotice = ref("");
 const isFullscreen = ref(false);
+const fullscreenLandscapeFallback = ref(false);
 const pictureInPicture = ref(false);
 const hideControlsTimer = ref(null);
 const lastPlayedRoom = ref("");
@@ -164,6 +173,9 @@ let chromeRaf = 0;
 let playRaf = 0;
 let unmuteGestureBound = false;
 const ENTRY_UNMUTE_EVENTS = ["pointerdown", "keydown"];
+/** 解除静音后短暂忽略画面点击，避免按钮消失时误触暂停 */
+let videoShellActionLockUntil = 0;
+const VIDEO_SHELL_ACTION_LOCK_MS = 480;
 let playRetrying = false;
 /** 侧栏点切房：保留「已开声」意图，避免 loadRoom 异步后丢失 session 解锁 */
 let roomSwitchKeepSound = false;
@@ -450,6 +462,14 @@ function markSoundUnlocked() {
 }
 
 /** destroy 前记下用户已开声，避免切房后丢失解锁状态 */
+function lockVideoShellAction(ms = VIDEO_SHELL_ACTION_LOCK_MS) {
+  videoShellActionLockUntil = Date.now() + ms;
+}
+
+function isVideoShellActionLocked() {
+  return Date.now() < videoShellActionLockUntil;
+}
+
 function captureSoundUnlock() {
   const video = resolveVideoEl(playerPanelRef.value?.videoEl);
   if (!streamActive.value || !video) return;
@@ -474,6 +494,7 @@ function onEntryUnmuteGesture(event) {
     }
   }
   if (muted.value) {
+    lockVideoShellAction();
     void unmutePlayback().then((ok) => {
       if (ok) markSoundUnlocked();
     });
@@ -496,6 +517,7 @@ function onToggleMute() {
 
 async function onMuteHintClick() {
   if (!streamActive.value || !muted.value) return;
+  lockVideoShellAction();
   const ok = await unmutePlayback();
   if (ok) {
     markSoundUnlocked();
@@ -509,16 +531,18 @@ function onVolumeChange(value) {
 }
 
 async function onVideoShellClick(event) {
-  if (!streamActive.value) return;
+  if (!streamActive.value || isVideoShellActionLocked()) return;
   const target = event.target;
   if (!(target instanceof Element)) return;
   if (target.closest(".player-controls, .mute-hint, .play-pause-overlay")) return;
   revealControls();
   if (muted.value) {
+    lockVideoShellAction();
     const ok = await unmutePlayback();
     if (ok) markSoundUnlocked();
     return;
   }
+  if (isMobilePlayViewport()) return;
   togglePlay();
 }
 
@@ -630,9 +654,9 @@ async function onTogglePiP() {
 function revealControls() {
   showControls.value = true;
   clearTimeout(hideControlsTimer.value);
-  if (playing.value) {
+  if (playing.value && !isMobilePlayViewport() && !isFullscreen.value) {
     hideControlsTimer.value = setTimeout(() => {
-      if (playing.value) showControls.value = false;
+      if (playing.value && !isFullscreen.value) showControls.value = false;
     }, 3000);
   }
 }
@@ -759,21 +783,32 @@ function isMobilePlayViewport() {
     || window.matchMedia("(pointer: coarse)").matches;
 }
 
+function shouldUseLandscapeFallback() {
+  return isMobilePlayViewport() && window.matchMedia("(orientation: portrait)").matches;
+}
+
 async function lockLandscapeOrientation() {
+  if (!document.fullscreenElement) return false;
+
   const orientation = screen.orientation;
-  if (!orientation?.lock) return;
-  try {
-    await orientation.lock("landscape");
-  } catch {
-    try {
-      await orientation.lock("landscape-primary");
-    } catch {
-      /* 部分浏览器不支持或需用户手势 */
+  if (orientation?.lock) {
+    for (const mode of ["landscape", "landscape-primary", "landscape-secondary"]) {
+      try {
+        await orientation.lock(mode);
+        fullscreenLandscapeFallback.value = false;
+        return true;
+      } catch {
+        /* try next mode */
+      }
     }
   }
+
+  fullscreenLandscapeFallback.value = shouldUseLandscapeFallback();
+  return false;
 }
 
 function unlockLandscapeOrientation() {
+  fullscreenLandscapeFallback.value = false;
   try {
     screen.orientation?.unlock?.();
   } catch {
@@ -781,15 +816,13 @@ function unlockLandscapeOrientation() {
   }
 }
 
-function bindIosVideoFullscreen(video) {
-  if (!video || video.__iosFullscreenBound) return;
-  video.__iosFullscreenBound = true;
-  video.addEventListener("webkitbeginfullscreen", () => {
-    isFullscreen.value = true;
-  });
-  video.addEventListener("webkitendfullscreen", () => {
-    isFullscreen.value = false;
-  });
+function onOrientationChange() {
+  if (!document.fullscreenElement) return;
+  if (window.matchMedia("(orientation: landscape)").matches) {
+    fullscreenLandscapeFallback.value = false;
+    return;
+  }
+  void lockLandscapeOrientation();
 }
 
 async function requestElementFullscreen(el) {
@@ -813,31 +846,9 @@ async function toggleFullscreen() {
     return;
   }
 
-  const mobile = isMobilePlayViewport();
-  let video = null;
   try {
-    video = await ensureVideoEl();
-  } catch {
-    video = resolveVideoEl(playerPanelRef.value?.videoEl);
-  }
-
-  if (video) bindIosVideoFullscreen(video);
-
-  if (mobile && video && typeof video.webkitEnterFullscreen === "function") {
-    try {
-      video.webkitEnterFullscreen();
-      isFullscreen.value = true;
-      revealControls();
-      return;
-    } catch {
-      /* Android 等继续走标准全屏 */
-    }
-  }
-
-  const target = mobile && video ? video : frame;
-  try {
-    await requestElementFullscreen(target);
-    if (mobile) await lockLandscapeOrientation();
+    await requestElementFullscreen(frame);
+    await lockLandscapeOrientation();
   } catch {
     /* ignore */
   }
@@ -847,7 +858,12 @@ async function toggleFullscreen() {
 function onFullscreenChange() {
   const fs = !!document.fullscreenElement;
   isFullscreen.value = fs;
-  if (!fs) unlockLandscapeOrientation();
+  if (fs) {
+    revealControls();
+    void lockLandscapeOrientation();
+  } else {
+    unlockLandscapeOrientation();
+  }
 }
 
 function onPiPChange() {
@@ -887,6 +903,8 @@ watch(
   },
 );
 
+let frameMouseMoveHandler = null;
+
 onMounted(() => {
   try {
     const nav = performance.getEntriesByType("navigation")[0];
@@ -898,8 +916,15 @@ onMounted(() => {
   if (getPlatform(props.site)?.enabled) {
     schedulePlay(props.id);
   }
-  frameRef.value?.addEventListener("mousemove", revealControls);
+  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    frameMouseMoveHandler = revealControls;
+    frameRef.value?.addEventListener("mousemove", frameMouseMoveHandler);
+  }
   document.addEventListener("fullscreenchange", onFullscreenChange);
+  document.addEventListener("orientationchange", onOrientationChange);
+  if (screen.orientation) {
+    screen.orientation.addEventListener("change", onOrientationChange);
+  }
   document.addEventListener("enterpictureinpicture", onPiPChange);
   document.addEventListener("leavepictureinpicture", onPiPChange);
 });
@@ -911,8 +936,17 @@ onBeforeUnmount(() => {
   destroy();
   disconnectDm();
   clearTimeout(hideControlsTimer.value);
+  unlockLandscapeOrientation();
+  if (frameMouseMoveHandler) {
+    frameRef.value?.removeEventListener("mousemove", frameMouseMoveHandler);
+    frameMouseMoveHandler = null;
+  }
   unbindEntryUnmuteGesture();
   document.removeEventListener("fullscreenchange", onFullscreenChange);
+  document.removeEventListener("orientationchange", onOrientationChange);
+  if (screen.orientation) {
+    screen.orientation.removeEventListener("change", onOrientationChange);
+  }
   document.removeEventListener("enterpictureinpicture", onPiPChange);
   document.removeEventListener("leavepictureinpicture", onPiPChange);
   document.title = "Lemon live";
@@ -995,7 +1029,11 @@ onBeforeUnmount(() => {
   font-size: 1.15rem;
 }
 
-.play-back:hover { color: var(--amber); }
+@media (hover: hover) and (pointer: fine) {
+  .play-back:hover {
+    color: var(--amber);
+  }
+}
 
 .play-header-main {
   flex: 1;
@@ -1113,6 +1151,7 @@ onBeforeUnmount(() => {
   max-height: none;
   border-radius: 0;
   background: #000;
+  overflow: visible;
 }
 
 .play-frame:fullscreen .video-shell,
@@ -1122,6 +1161,30 @@ onBeforeUnmount(() => {
   height: 100%;
   max-height: none;
   aspect-ratio: unset;
+  overflow: visible;
+}
+
+.play-frame:fullscreen :deep(.player-controls--overlay),
+.play-frame:-webkit-full-screen :deep(.player-controls--overlay) {
+  z-index: 12;
+}
+
+.play-frame:fullscreen :deep(.player-controls--overlay .controls-bar),
+.play-frame:-webkit-full-screen :deep(.player-controls--overlay .controls-bar) {
+  overflow: visible;
+}
+
+.play-frame--landscape-fallback:fullscreen,
+.play-frame--landscape-fallback:-webkit-full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh !important;
+  height: 100vw !important;
+  max-width: none;
+  max-height: none;
+  transform: rotate(90deg) translateY(-100vw);
+  transform-origin: top left;
 }
 
 .play-frame:fullscreen :deep(.player-panel),
@@ -1188,10 +1251,12 @@ onBeforeUnmount(() => {
   transition: border-color .15s, background .15s, transform .15s;
 }
 
-.mute-hint:hover {
-  border-color: var(--amber);
-  background: rgba(0, 0, 0, .82);
-  transform: translate(-50%, -50%) scale(1.02);
+@media (hover: hover) and (pointer: fine) {
+  .mute-hint:hover {
+    border-color: var(--amber);
+    background: rgba(0, 0, 0, .82);
+    transform: translate(-50%, -50%) scale(1.02);
+  }
 }
 
 .mute-hint__icon {
@@ -1220,9 +1285,11 @@ onBeforeUnmount(() => {
   transition: background .15s, transform .15s;
 }
 
-.play-pause-overlay:hover {
-  background: rgba(0, 0, 0, .72);
-  transform: translate(-50%, -50%) scale(1.04);
+@media (hover: hover) and (pointer: fine) {
+  .play-pause-overlay:hover {
+    background: rgba(0, 0, 0, .72);
+    transform: translate(-50%, -50%) scale(1.04);
+  }
 }
 
 .play-pause-overlay__icon {
@@ -1283,12 +1350,24 @@ onBeforeUnmount(() => {
 
   .play-frame {
     border-radius: 0;
+    overflow: visible;
   }
 
   .video-shell {
     aspect-ratio: 16 / 9;
     width: 100%;
     max-width: 100%;
+    overflow: visible;
+  }
+
+  .mute-hint {
+    padding: .72rem 1.05rem;
+    font-size: 1rem;
+    gap: .5rem;
+  }
+
+  .mute-hint__icon {
+    font-size: 1.2rem;
   }
 }
 </style>

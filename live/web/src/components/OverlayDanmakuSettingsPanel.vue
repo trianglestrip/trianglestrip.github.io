@@ -40,40 +40,40 @@ const settings = defineModel({ type: Object, required: true });
 .overlay-settings {
   display: flex;
   flex-direction: column;
-  gap: .28rem;
+  gap: .2rem;
   min-width: 0;
 }
 
 .overlay-settings__title {
   margin: 0;
-  padding-bottom: .28rem;
+  padding-bottom: .2rem;
   border-bottom: 1px solid rgba(255, 255, 255, .08);
-  font-size: .82rem;
+  font-size: .76rem;
   font-weight: 600;
   color: var(--amber);
 }
 
 .overlay-settings__row {
   display: grid;
-  grid-template-columns: 2.6rem minmax(0, 1fr) auto;
+  grid-template-columns: 2.4rem minmax(0, 1fr) auto;
   align-items: center;
-  gap: .3rem;
-  min-height: 1.6rem;
+  gap: .22rem;
+  min-height: 1.35rem;
   cursor: pointer;
 }
 
 .overlay-settings__row--toggle {
-  grid-template-columns: 2.6rem 1fr;
+  grid-template-columns: 2.4rem 1fr;
 }
 
 .overlay-settings__label {
-  font-size: .8rem;
+  font-size: .74rem;
   color: var(--muted);
   white-space: nowrap;
 }
 
 .overlay-settings__value {
-  font-size: .76rem;
+  font-size: .7rem;
   font-variant-numeric: tabular-nums;
   color: var(--amber);
   justify-self: end;
@@ -84,9 +84,9 @@ const settings = defineModel({ type: Object, required: true });
   width: 100%;
   min-width: 0;
   margin: 0;
-  padding: .18rem .32rem;
-  font-size: .8rem;
-  border-radius: 5px;
+  padding: .12rem .26rem;
+  font-size: .74rem;
+  border-radius: 4px;
 }
 
 .overlay-settings__check {

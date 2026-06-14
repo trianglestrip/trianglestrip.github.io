@@ -50,7 +50,6 @@ const filterPlatforms = PLATFORMS.filter((p) => p.enabled && p.id !== "bilibili"
   display: flex;
   align-items: center;
   gap: .36rem;
-  flex: 1;
   min-width: 0;
   flex-wrap: wrap;
 }

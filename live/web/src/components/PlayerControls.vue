@@ -1,5 +1,5 @@
 <template>
-  <div v-if="show" class="player-controls" :class="{ 'player-controls--overlay': overlay }">
+  <div v-if="show" class="player-controls" :class="{ 'player-controls--overlay': overlay, 'player-controls--fullscreen': fullscreen }">
     <div class="controls-bar">
       <button
         type="button"
@@ -26,7 +26,7 @@
         </button>
         <button
           type="button"
-          class="ctrl-danmaku-settings-btn ctrl--mobile-hide"
+          class="ctrl-danmaku-settings-btn"
           :class="{ 'ctrl-danmaku-settings-btn--open': danmakuSettingsOpen }"
           title="飘屏弹幕设置"
           @click.stop="toggleDanmakuSettings"
@@ -60,7 +60,7 @@
             />
           </button>
           <input
-            class="ctrl-volume__slider ctrl--mobile-hide"
+            class="ctrl-volume__slider"
             type="range"
             min="0"
             max="1"
@@ -184,6 +184,7 @@ const danmakuSettingsOpen = ref(false);
 const qualityRef = ref(null);
 const lineRef = ref(null);
 const danmakuRef = ref(null);
+let suppressOutsideCloseUntil = 0;
 
 const qualityLabel = computed(() => {
   const item = props.qualities[props.qualityIndex];
@@ -198,22 +199,32 @@ function closeMenus() {
   danmakuSettingsOpen.value = false;
 }
 
+function suppressOutsideClose() {
+  suppressOutsideCloseUntil = Date.now() + 400;
+}
+
 function toggleDanmakuSettings() {
   qualityOpen.value = false;
   lineOpen.value = false;
-  danmakuSettingsOpen.value = !danmakuSettingsOpen.value;
+  const next = !danmakuSettingsOpen.value;
+  danmakuSettingsOpen.value = next;
+  if (next) suppressOutsideClose();
 }
 
 function toggleQualityMenu() {
   lineOpen.value = false;
   danmakuSettingsOpen.value = false;
-  qualityOpen.value = !qualityOpen.value;
+  const next = !qualityOpen.value;
+  qualityOpen.value = next;
+  if (next) suppressOutsideClose();
 }
 
 function toggleLineMenu() {
   qualityOpen.value = false;
   danmakuSettingsOpen.value = false;
-  lineOpen.value = !lineOpen.value;
+  const next = !lineOpen.value;
+  lineOpen.value = next;
+  if (next) suppressOutsideClose();
 }
 
 function pickQuality(index) {
@@ -231,6 +242,7 @@ function onVolumeInput(event) {
 }
 
 function onDocumentClick(event) {
+  if (Date.now() < suppressOutsideCloseUntil) return;
   if (
     qualityRef.value?.contains(event.target)
     || lineRef.value?.contains(event.target)
@@ -258,6 +270,10 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   z-index: 2;
   padding: 0;
   pointer-events: auto;
+}
+
+.player-controls--fullscreen .controls-bar {
+  padding-bottom: max(.35rem, env(safe-area-inset-bottom, 0px));
 }
 
 .controls-bar {
@@ -295,12 +311,16 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
 }
 
 @media (max-width: 640px) {
+  .player-controls--overlay {
+    overflow: visible;
+  }
+
   .player-controls--overlay .controls-bar {
     gap: .15rem;
     padding: .28rem .35rem;
     max-width: 100%;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .ctrl--mobile-hide {
@@ -315,7 +335,28 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   }
 
   .ctrl-danmaku-group {
-    gap: 0;
+    gap: .05rem;
+  }
+
+  .ctrl-danmaku-settings-btn {
+    padding: .06rem .14rem;
+    font-size: .6rem;
+    line-height: 1.1;
+  }
+
+  .ctrl-dropdown__menu {
+    top: auto;
+    bottom: 100%;
+    margin-top: 0;
+    margin-bottom: .35rem;
+    z-index: 8;
+  }
+
+  .ctrl-danmaku-settings-pop {
+    bottom: 100%;
+    margin-bottom: .28rem;
+    z-index: 8;
+    width: min(14.5rem, calc(100vw - 1.5rem));
   }
 
   .controls-spacer {
@@ -330,12 +371,13 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   }
 
   .ctrl-volume {
-    gap: 0;
+    gap: .12rem;
     margin-right: 0;
   }
 
   .ctrl-volume__slider {
-    width: 3rem;
+    width: 2.75rem;
+    flex-shrink: 0;
   }
 
   .ctrl-dropdown__trigger {
@@ -368,9 +410,14 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   transition: color .15s;
 }
 
-.ctrl-icon:hover,
 .ctrl-icon--active {
   color: var(--amber);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ctrl-icon:hover {
+    color: var(--amber);
+  }
 }
 
 .ctrl-icon--pip {
@@ -431,30 +478,35 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   background: transparent;
   color: var(--text);
   font: inherit;
-  font-size: .82rem;
-  line-height: 1.2;
-  padding: .2rem .35rem;
+  font-size: .72rem;
+  line-height: 1.1;
+  padding: .12rem .2rem;
   cursor: pointer;
   white-space: nowrap;
   transition: color .15s;
 }
 
-.ctrl-danmaku-settings-btn:hover,
 .ctrl-danmaku-settings-btn--open {
   color: var(--amber);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ctrl-danmaku-settings-btn:hover {
+    color: var(--amber);
+  }
 }
 
 .ctrl-danmaku-settings-pop {
   position: absolute;
   left: 0;
   bottom: 100%;
-  margin-bottom: .4rem;
-  width: 15.5rem;
-  max-width: min(15.5rem, calc(100vw - 2rem));
-  padding: .45rem .5rem .5rem;
+  margin-bottom: .3rem;
+  width: 14.5rem;
+  max-width: min(14.5rem, calc(100vw - 2rem));
+  padding: .32rem .38rem .38rem;
   background: rgba(0, 0, 0, .9);
   border: 1px solid rgba(255, 255, 255, .1);
-  border-radius: 8px;
+  border-radius: 7px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, .45);
   z-index: 6;
   box-sizing: border-box;
@@ -477,15 +529,20 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   transition: color .15s;
 }
 
-.ctrl-dropdown__trigger:hover:not(:disabled),
-.ctrl-dropdown__trigger:focus-visible {
-  color: var(--amber);
-  outline: none;
-}
-
 .ctrl-dropdown__trigger:disabled {
   opacity: .45;
   cursor: not-allowed;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ctrl-dropdown__trigger:hover:not(:disabled) {
+    color: var(--amber);
+  }
+}
+
+.ctrl-dropdown__trigger:focus-visible {
+  color: var(--amber);
+  outline: none;
 }
 
 .ctrl-dropdown__menu {
@@ -517,9 +574,14 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   transition: color .15s;
 }
 
-.ctrl-dropdown__item:hover,
 .ctrl-dropdown__item.active {
   color: var(--amber);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ctrl-dropdown__item:hover {
+    color: var(--amber);
+  }
 }
 
 .controls-notice {

@@ -70,7 +70,6 @@
 
     <div v-show="tab === 'follow'" class="tab-content scrolly follow-tab">
       <div class="follow-tab-toolbar">
-        <FollowPlatformFilter v-model="followSiteFilter" />
         <div class="follow-tab-toolbar__actions">
           <button
             type="button"
@@ -82,6 +81,7 @@
             <Icon name="list" />
           </button>
         </div>
+        <FollowPlatformFilter v-model="followSiteFilter" class="follow-tab-toolbar__filter" />
       </div>
       <FollowPreviewGrid
         v-if="previewCover"
@@ -786,10 +786,24 @@ const chatDanmakuMessages = computed(() => {
 .follow-tab-toolbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: .35rem;
   padding: .35rem .45rem .7rem;
   flex-shrink: 0;
+}
+
+.follow-tab-toolbar__filter {
+  flex: 0 1 auto;
+  margin-left: auto;
+}
+
+.follow-tab-toolbar__filter :deep(.follow-platform-filter) {
+  gap: .28rem;
+}
+
+.follow-tab-toolbar__filter :deep(.follow-platform-filter__item) {
+  padding: .22rem .44rem;
+  border-radius: 4px;
+  font-size: .8rem;
 }
 
 .follow-tab-toolbar__actions {
@@ -1109,6 +1123,11 @@ const chatDanmakuMessages = computed(() => {
   .play-side--flow .settings-tab {
     overflow: visible;
   }
+
+  .tabs button {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1165,16 +1184,17 @@ const chatDanmakuMessages = computed(() => {
   }
 
   .tabs {
-    gap: .5rem;
-    padding: 0 .35rem;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    gap: 0;
+    padding: 0;
+    overflow-x: visible;
   }
 
   .tabs button {
-    padding: .5rem .15rem;
-    font-size: .82rem;
-    flex-shrink: 0;
+    flex: 1;
+    padding: .68rem .1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-align: center;
   }
 }
 </style>
