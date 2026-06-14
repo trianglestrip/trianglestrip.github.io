@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-14T10:31:42+00:00",
+  "updated_at": "2026-06-14T14:26:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Honda Civics and the Evil Valet",
-      "url": "https://juniperspring.org/posts/honda-evil-valet/",
-      "hot": "273"
+      "title": "The Birth and Death of JavaScript (2014)",
+      "url": "https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript",
+      "hot": "75"
     },
     {
       "rank": 2,
-      "title": "Free SQL→ER diagram tool, runs in the browser, nothing uploaded",
-      "url": "https://sqltoerdiagram.com/",
-      "hot": "142"
+      "title": "Firewood Splitting Simulator",
+      "url": "https://screen.toys/firewood/",
+      "hot": "126"
     },
     {
       "rank": 3,
-      "title": "GLM 5.2 Is Out",
-      "url": "https://twitter.com/jietang/status/2065784751345287314",
-      "hot": "593"
+      "title": "FarOutCompany",
+      "url": "https://faroutcompany.com/",
+      "hot": "6"
     },
     {
       "rank": 4,
-      "title": "Noise infusion banned from statistical products published by Census Bureau",
-      "url": "https://desfontain.es/blog/banning-noise.html",
-      "hot": "826"
+      "title": "Lisp's Influence on Ruby",
+      "url": "https://blog.tacoda.dev/lisps-influence-on-ruby-6a54f1a7740e",
+      "hot": "76"
     },
     {
       "rank": 5,
-      "title": "Every Frame Perfect",
-      "url": "https://tonsky.me/blog/every-frame-perfect/",
-      "hot": "723"
+      "title": "How did Atari apply side art to Arcade Cabinets?",
+      "url": "https://arcadeblogger.com/2026/06/14/how-did-atari-apply-side-art-to-arcade-cabinets/",
+      "hot": "16"
     },
     {
       "rank": 6,
-      "title": "Cooling in Space",
-      "url": "https://guille.site/posts/space-cooling/",
-      "hot": "13"
+      "title": "Free SQL→ER diagram tool, runs in the browser, nothing uploaded",
+      "url": "https://sqltoerdiagram.com/",
+      "hot": "277"
     },
     {
       "rank": 7,
-      "title": "500-year-old monasteries outperform at digital transformation (U. of Zurich)",
-      "url": "https://phys.org/news/2026-05-historic-monasteries-digital-countries.html",
-      "hot": "19"
+      "title": "Honda Civics and the Evil Valet",
+      "url": "https://juniperspring.org/posts/honda-evil-valet/",
+      "hot": "342"
     },
     {
       "rank": 8,
-      "title": "Don't trust large context windows",
-      "url": "https://garrit.xyz/posts/2026-05-06-dont-trust-large-context-windows",
-      "hot": "100"
+      "title": "How to Earn a Billion Dollars",
+      "url": "https://paulgraham.com/earn.html",
+      "hot": "103"
     },
     {
       "rank": 9,
-      "title": "Treating pancreatic tumours may have revealed cancer's master switch",
-      "url": "https://economist.com/science-and-technology/2026/06/12/treating-pancreatic-tumours-may-have-revealed-cancers-master-switch",
-      "hot": "370"
+      "title": "GLM 5.2 Is Out",
+      "url": "https://twitter.com/jietang/status/2065784751345287314",
+      "hot": "692"
     },
     {
       "rank": 10,
-      "title": "Tribblix: The retro Illumos distribution",
-      "url": "http://tribblix.org/",
-      "hot": "40"
+      "title": "Caddy compatibility for zeroserve: 3x throughput and 70% lower latency",
+      "url": "https://su3.io/posts/zeroserve-caddy-compat",
+      "hot": "4"
     }
   ]
 }
