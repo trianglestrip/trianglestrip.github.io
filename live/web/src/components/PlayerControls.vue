@@ -2,7 +2,11 @@
   <div
     v-if="show"
     class="player-controls on-video-surface"
-    :class="{ 'player-controls--overlay': overlay, 'player-controls--fullscreen': fullscreen }"
+    :class="{
+      'player-controls--overlay': overlay,
+      'player-controls--fullscreen': fullscreen,
+      'player-controls--immersive-mobile': immersiveMobile,
+    }"
     @pointerdown="emit('interact')"
     @keydown="emit('interact')"
   >
@@ -50,7 +54,7 @@
         </div>
       </div>
 
-      <div class="controls-spacer"></div>
+      <div v-if="!immersiveMobile" class="controls-spacer"></div>
 
       <div class="controls-right">
         <div class="ctrl-volume">
@@ -122,12 +126,35 @@
           </div>
         </div>
 
-        <button type="button" class="ctrl-icon ctrl-icon--pip ctrl--mobile-hide" title="画中画" @click="$emit('toggle-pip')">
+        <button
+          v-if="!immersiveMobile"
+          type="button"
+          class="ctrl-icon ctrl-icon--pip ctrl--mobile-hide"
+          title="画中画"
+          @click="$emit('toggle-pip')"
+        >
           <Icon :name="pictureInPicture ? 'pip-exit' : 'pip'" class="ctrl-fa" />
         </button>
       </div>
 
+      <div v-if="immersiveMobile" class="controls-spacer"></div>
+
+      <div v-if="immersiveMobile" class="controls-trailing">
+        <button type="button" class="ctrl-icon ctrl-icon--pip" title="画中画" @click="$emit('toggle-pip')">
+          <Icon :name="pictureInPicture ? 'pip-exit' : 'pip'" class="ctrl-fa" />
+        </button>
+        <button
+          type="button"
+          class="ctrl-icon ctrl-icon--fullscreen-btn"
+          :title="fullscreen ? '退出全屏' : '全屏'"
+          @click="$emit('fullscreen')"
+        >
+          <Icon :name="fullscreen ? 'fullscreen-exit' : 'fullscreen'" class="ctrl-fa" />
+        </button>
+      </div>
+
       <button
+        v-if="!hideWebscreen"
         type="button"
         class="ctrl-icon ctrl--mobile-hide"
         :class="{ 'ctrl-icon--active': webscreen }"
@@ -137,7 +164,13 @@
         <Icon name="webscreen" class="ctrl-fa" />
       </button>
 
-      <button type="button" class="ctrl-icon" :title="fullscreen ? '退出全屏' : '全屏'" @click="$emit('fullscreen')">
+      <button
+        v-if="!immersiveMobile"
+        type="button"
+        class="ctrl-icon ctrl-icon--fullscreen-btn"
+        :title="fullscreen ? '退出全屏' : '全屏'"
+        @click="$emit('fullscreen')"
+      >
         <Icon :name="fullscreen ? 'fullscreen-exit' : 'fullscreen'" class="ctrl-fa" />
       </button>
     </div>
@@ -169,6 +202,8 @@ const props = defineProps({
   qualityIndex: { type: Number, default: 0 },
   lineIndex: { type: Number, default: 0 },
   notice: { type: String, default: "" },
+  hideWebscreen: { type: Boolean, default: false },
+  immersiveMobile: { type: Boolean, default: false },
 });
 
 const emit = defineEmits([
@@ -311,6 +346,29 @@ onBeforeUnmount(() => document.removeEventListener("click", onDocumentClick));
   margin-right: .15rem;
   flex-shrink: 0;
   overflow: visible;
+}
+
+.player-controls--immersive-mobile .controls-bar {
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-right: min(17.5rem, 78vw);
+}
+
+.player-controls--immersive-mobile .controls-spacer {
+  flex: 1 1 auto;
+  min-width: .25rem;
+}
+
+.player-controls--immersive-mobile .controls-trailing {
+  display: flex;
+  align-items: center;
+  gap: .15rem;
+  flex-shrink: 0;
+}
+
+.player-controls--immersive-mobile .controls-right {
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 @media (max-width: 640px) {

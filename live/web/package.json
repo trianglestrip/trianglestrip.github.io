@@ -8,7 +8,8 @@
     "build": "vite build",
     "build:pages": "vite build --base /live/",
     "preview": "vite preview",
-    "benchmark:startup": "node scripts/benchmark-startup.mjs"
+    "benchmark:startup": "node scripts/benchmark-startup.mjs",
+    "benchmark:four": "node scripts/benchmark-four-checks.mjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.2.0",

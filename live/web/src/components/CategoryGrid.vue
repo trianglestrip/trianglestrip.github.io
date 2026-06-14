@@ -13,7 +13,7 @@
         priority="low"
         root-margin="120px"
       />
-      <p class="category-name">{{ item.name }}</p>
+      <p class="category-name">{{ categoryLabel(item) }}</p>
     </RouterLink>
   </div>
 </template>
@@ -22,6 +22,7 @@
 import { RouterLink } from "vue-router";
 import LazyImage from "./LazyImage.vue";
 import { DEFAULT_CATEGORY_ICON } from "../utils/categoryIcon.js";
+import { displayCategoryName } from "../utils/categoryDisplay.js";
 
 const defaultIcon = DEFAULT_CATEGORY_ICON;
 
@@ -50,38 +51,33 @@ function categoryLink(item) {
     query,
   };
 }
+
+function categoryLabel(item) {
+  if (props.cross) return displayCategoryName("huya", item.name, item.huyaCid || item.cid);
+  return displayCategoryName(props.site, item.name, item.cid);
+}
 </script>
 
 <style scoped>
 .category-grid {
   display: grid;
-  gap: .85rem .75rem;
+  align-items: start;
+  justify-content: start;
+  gap: .5rem;
   padding: .5rem .65rem 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-@media (min-width: 640px) {
-  .category-grid {
-    gap: 1rem;
-    padding: .5rem 1rem 1rem;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 768px) {
-  .category-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); padding-inline: .5rem; }
-}
-
-@media (min-width: 1024px) {
-  .category-grid { grid-template-columns: repeat(10, minmax(0, 1fr)); }
-}
-
-@media (min-width: 1280px) {
-  .category-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  grid-template-columns: repeat(auto-fill, calc(88px + .5rem));
 }
 
 .category-item {
-  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .28rem;
+  width: calc(88px + .5rem);
+  padding: .25rem;
+  box-sizing: border-box;
+  color: var(--text);
   text-align: center;
   cursor: pointer;
 }
@@ -90,25 +86,39 @@ function categoryLink(item) {
   color: var(--amber);
 }
 
+.category-item :deep(.lazy-image) {
+  display: block;
+  width: 88px;
+  height: 88px;
+  flex: 0 0 auto;
+}
+
+.category-item :deep(.lazy-image img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .category-icon {
   width: 100%;
-  aspect-ratio: 1;
-  border-radius: 10px;
+  height: 100%;
+  border-radius: 8px;
   object-fit: cover;
   background: var(--dark-6);
   display: block;
 }
 
 .category-name {
-  margin: .35rem 0 0;
-  font-size: .8rem;
-  line-height: 1.3;
+  margin: 0;
+  width: 100%;
+  flex: 0 0 auto;
+  color: var(--text);
+  font-size: .72rem;
+  line-height: 1.15;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-@media (min-width: 768px) {
-  .category-name { font-size: .82rem; }
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-word;
 }
 </style>

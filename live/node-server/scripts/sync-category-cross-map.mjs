@@ -81,9 +81,10 @@ const MANUAL = [
   },
   {
     key: "dnf",
-    name: "地下城与勇士",
-    aliases: ["地下城与勇士", "dnf"],
-    douyu: "2",
+    name: "DNF",
+    aliases: ["DNF", "dnf", "地下城与勇士"],
+    sites: { bilibili: { cid: "78", pid: "2" } },
+    douyu: "40",
     huya: "2",
     douyin: "1010092",
     douyinPid: "1",

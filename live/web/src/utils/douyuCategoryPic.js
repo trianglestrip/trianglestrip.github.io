@@ -1,5 +1,9 @@
 import { fetchCategories } from "../api/browse.js";
-import { findCrossCategory, loadCategoryCrossMap } from "./categoryDisplay.js";
+import {
+  douyuCidForCrossKey,
+  findCrossCategory,
+  loadCategoryCrossMap,
+} from "./categoryDisplay.js";
 
 function normName(name) {
   return String(name || "")
@@ -63,6 +67,7 @@ export function lookupDouyuPic({ douyuCid, name }, index) {
 
 export function resolveDouyuCidForItem(site, item) {
   const entry = findCrossCategory(site, item.name, item.cid);
+  if (entry?.key) return douyuCidForCrossKey(entry.key, entry.douyu);
   return entry?.douyu ? String(entry.douyu) : "";
 }
 

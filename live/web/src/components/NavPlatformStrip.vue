@@ -12,12 +12,10 @@
           class="nav-platform-strip__tab"
           :class="{
             active: platform.id === activePlatformId,
-            'nav-platform-strip__tab--all': platform.id === 'all',
           }"
           :aria-selected="platform.id === activePlatformId"
         >
-          <PlatformIcon v-if="platform.id !== 'all'" :id="platform.id" size="xs" />
-          <Icon v-else name="apps" class="nav-platform-strip__all-icon" />
+          <PlatformIcon :id="platform.id" size="xs" />
           <span class="nav-platform-strip__label">{{ platform.label }}</span>
         </RouterLink>
         <button
@@ -101,11 +99,6 @@ function openSheet(platformId) {
 
 .nav-platform-strip__tab.active {
   color: var(--amber);
-}
-
-.nav-platform-strip__all-icon {
-  font-size: 1rem;
-  line-height: 1;
 }
 
 .nav-platform-strip__cat {

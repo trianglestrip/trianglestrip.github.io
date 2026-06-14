@@ -29,17 +29,25 @@ const props = defineProps({
   alt: { type: String, default: "" },
   imageClass: { type: [String, Object, Array], default: "" },
   /** 进入视口前预加载的距离 */
-  rootMargin: { type: String, default: "120px" },
+  rootMargin: { type: String, default: "80px" },
   /** 首屏可见图可设为 true，跳过错峰加载 */
   eager: { type: Boolean, default: false },
-  /** high | low | auto — 映射 fetchpriority */
-  priority: { type: String, default: "auto" },
+  /** 首屏外条目延迟挂载 IO，避免可见区内多行同时开图 */
+  hold: { type: Boolean, default: false },
+  /** hold 时无滚动则延后释放（ms） */
+  holdFallbackMs: { type: Number, default: 1200 },
 });
 
 const imgRef = ref(null);
 const loaded = ref(false);
 let observer = null;
 let usingFallback = false;
+let holdCleanup = null;
+
+function clearHold() {
+  holdCleanup?.();
+  holdCleanup = null;
+}
 
 const fetchPriority = computed(() => {
   if (props.priority === "high") return "high";
@@ -48,14 +56,10 @@ const fetchPriority = computed(() => {
   return "auto";
 });
 
-function marginPx() {
-  const parsed = parseInt(String(props.rootMargin), 10);
-  return Number.isFinite(parsed) ? parsed : 120;
-}
-
 function teardown() {
   observer?.disconnect();
   observer = null;
+  clearHold();
 }
 
 function primarySrc() {
@@ -99,29 +103,10 @@ function loadNow() {
   teardown();
 }
 
-function isNearViewport(el) {
-  const root = findScrollRoot(el);
-  const rect = el.getBoundingClientRect();
-  if (!rect.width && !rect.height) return true;
-  const margin = marginPx();
-  if (!root) {
-    return rect.bottom >= -margin && rect.top <= window.innerHeight + margin;
-  }
-  const rootRect = root.getBoundingClientRect();
-  return rect.bottom >= rootRect.top - margin && rect.top <= rootRect.bottom + margin;
-}
-
-async function setup() {
-  teardown();
-  loaded.value = false;
+async function setupObserver() {
   await nextTick();
   const el = imgRef.value;
   if (!el || (!props.src && !props.fallback)) return;
-
-  if (props.eager || isNearViewport(el)) {
-    loadNow();
-    return;
-  }
 
   const root = findScrollRoot(el);
   observer = new IntersectionObserver(
@@ -133,11 +118,56 @@ async function setup() {
   observer.observe(el);
 }
 
+function waitForHoldRelease(onRelease) {
+  const el = imgRef.value;
+  if (!el) return;
+  const root = findScrollRoot(el);
+  let released = false;
+  const release = () => {
+    if (released) return;
+    released = true;
+    clearHold();
+    onRelease();
+  };
+  const onScroll = () => {
+    const top = root?.scrollTop ?? window.scrollY ?? 0;
+    if (top > 32) release();
+  };
+  if (root) root.addEventListener("scroll", onScroll, { passive: true });
+  else window.addEventListener("scroll", onScroll, { passive: true });
+  const timer = setTimeout(release, props.holdFallbackMs);
+  holdCleanup = () => {
+    if (root) root.removeEventListener("scroll", onScroll);
+    else window.removeEventListener("scroll", onScroll);
+    clearTimeout(timer);
+  };
+}
+
+async function setup() {
+  teardown();
+  loaded.value = false;
+  await nextTick();
+  const el = imgRef.value;
+  if (!el || (!props.src && !props.fallback)) return;
+
+  if (props.eager) {
+    loadNow();
+    return;
+  }
+
+  if (props.hold) {
+    waitForHoldRelease(() => { void setupObserver(); });
+    return;
+  }
+
+  await setupObserver();
+}
+
 onMounted(setup);
 onBeforeUnmount(teardown);
 
 watch(
-  () => [props.src, props.fallback, props.eager, props.rootMargin, props.priority],
+  () => [props.src, props.fallback, props.eager, props.rootMargin, props.priority, props.hold],
   () => {
     usingFallback = false;
     loaded.value = false;

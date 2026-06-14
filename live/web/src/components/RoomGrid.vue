@@ -24,8 +24,9 @@
             :src="room.cover"
             image-class="room-cover"
             :eager="index < gridCols"
+            :hold="index >= gridCols"
             :priority="index < gridCols ? 'high' : 'low'"
-            root-margin="120px"
+            root-margin="0px"
           />
           <div v-else class="room-cover room-cover--empty">无封面</div>
           <PlatformCoverBadge

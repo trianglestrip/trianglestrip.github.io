@@ -102,8 +102,12 @@ export default defineConfig({
         manualChunks(id) {
           if (id.includes("node_modules/vue-router")) return "vue-router";
           if (id.includes("node_modules/vue/") || id.includes("node_modules/@vue/")) return "vue";
-          if (id.includes("/views/PlayView.vue")) return "play";
         },
+      },
+    },
+    modulePreload: {
+      resolveDependencies(_filename, deps) {
+        return deps.filter((dep) => !/\/play[-.]/.test(dep) && !dep.includes("PlayView"));
       },
     },
   },

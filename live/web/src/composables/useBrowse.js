@@ -6,6 +6,7 @@ import {
   prepareDouyuPicFallback,
 } from "../utils/douyuCategoryPic.js";
 import { scheduleIdleTask } from "../utils/runIdle.js";
+import { displayCategoryName } from "../utils/categoryDisplay.js";
 
 export function useBrowse(siteRef) {
   const categories = ref([]);
@@ -86,7 +87,7 @@ export function useBrowse(siteRef) {
       page.value = 1;
       rooms.value = [];
       activeCategory.value = category;
-      listTitle.value = category.name || "分类";
+      listTitle.value = displayCategoryName(site, category.name, category.cid) || "分类";
     }
     loadingRooms.value = true;
     listError.value = "";

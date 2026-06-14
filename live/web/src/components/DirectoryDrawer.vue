@@ -12,14 +12,14 @@
   </button>
 
   <aside
+    ref="drawerRoot"
     class="directory-drawer"
     :class="{ 'directory-drawer--open': open && eligible }"
     aria-label="分类导航"
   >
     <div
       class="directory-drawer__follow-wrap"
-      @mouseenter="followHover = true"
-      @mouseleave="followHover = false"
+      v-bind="followWrapListeners"
     >
       <RouterLink
         v-if="open"
@@ -41,8 +41,7 @@
         v-if="followHover"
         class="directory-drawer__follow-flyout scrolly"
         role="tooltip"
-        @mouseenter="followHover = true"
-        @mouseleave="followHover = false"
+        v-bind="followFlyoutListeners"
       >
         <p class="directory-drawer__flyout-title">开播中</p>
         <p v-if="!liveFollows.length" class="directory-drawer__flyout-empty">暂无开播</p>
@@ -66,17 +65,13 @@
           class="directory-drawer__platform-tab"
           :class="{
             'directory-drawer__platform-tab--active': platform.id === drawerSite,
-            'directory-drawer__platform-tab--all': platform.id === 'all',
           }"
           :title="platform.label"
           :aria-label="platform.label"
           :aria-selected="platform.id === drawerSite"
           @click="drawerSite = platform.id"
         >
-          <PlatformIcon v-if="platform.id !== 'all'" :id="platform.id" size="md" />
-          <span v-else class="directory-drawer__platform-all">
-            <Icon name="apps" class="directory-drawer__platform-all-icon" />
-          </span>
+          <PlatformIcon :id="platform.id" size="md" />
         </button>
       </div>
 
@@ -92,9 +87,10 @@
                 :key="drawerItemKey(item)"
                 :to="categoryLink(item)"
                 class="directory-drawer__cat-item"
-                :title="item.name"
+                :class="{ 'directory-drawer__cat-item--active': isCategoryItemActive(item) }"
+                :title="categoryLabel(item)"
               >
-                <span class="directory-drawer__cat-name">{{ item.name }}</span>
+                <span class="directory-drawer__cat-name">{{ categoryLabel(item) }}</span>
               </RouterLink>
             </div>
             <p v-else class="directory-drawer__hint">暂无分类数据</p>
@@ -112,9 +108,10 @@
                   :key="drawerItemKey(item)"
                   :to="categoryLink(item)"
                   class="directory-drawer__cat-item"
-                  :title="item.name"
+                  :class="{ 'directory-drawer__cat-item--active': isCategoryItemActive(item) }"
+                  :title="categoryLabel(item)"
                 >
-                  <span class="directory-drawer__cat-name">{{ item.name }}</span>
+                  <span class="directory-drawer__cat-name">{{ categoryLabel(item) }}</span>
                 </RouterLink>
               </div>
             </section>
@@ -131,8 +128,7 @@
             v-for="platform in enabledPlatforms"
             :key="platform.id"
             class="directory-drawer__rail-platform-wrap"
-            @mouseenter="onRailPlatformEnter(platform.id)"
-            @mouseleave="onRailPlatformLeave"
+            v-bind="railPlatformListeners(platform.id)"
           >
             <button
               type="button"
@@ -140,24 +136,20 @@
               class="directory-drawer__rail-platform"
               :class="{
                 'directory-drawer__rail-platform--active': platform.id === drawerSite,
-                'directory-drawer__rail-platform--all': platform.id === 'all',
+                'directory-drawer__rail-platform--flyout': platform.id === 'all' && hoveredRailPlatform === 'all',
               }"
               :title="platform.label"
               :aria-label="platform.label"
               :aria-selected="platform.id === drawerSite"
-              @click="drawerSite = platform.id"
+              @click="onRailPlatformClick(platform.id)"
             >
-              <PlatformIcon v-if="platform.id !== 'all'" :id="platform.id" size="md" />
-              <span v-else class="directory-drawer__platform-all">
-                <Icon name="apps" class="directory-drawer__platform-all-icon" />
-              </span>
+              <PlatformIcon :id="platform.id" size="md" />
             </button>
             <div
               v-if="platform.id === 'all' && hoveredRailPlatform === 'all'"
               class="directory-drawer__cat-flyout directory-drawer__cat-flyout--cross scrolly"
               role="tooltip"
-              @mouseenter="onRailPlatformEnter('all')"
-              @mouseleave="onRailPlatformLeave"
+              v-bind="railPlatformListeners('all')"
             >
               <p v-if="crossFlyoutLoading" class="directory-drawer__rail-hint">加载分类…</p>
               <p v-else-if="crossFlyoutError" class="directory-drawer__hint directory-drawer__hint--err">{{ crossFlyoutError }}</p>
@@ -167,9 +159,10 @@
                   :key="drawerItemKey(item)"
                   :to="categoryLink(item)"
                   class="directory-drawer__cat-item"
-                  :title="item.name"
+                  :class="{ 'directory-drawer__cat-item--active': isCategoryItemActive(item) }"
+                  :title="categoryLabel(item)"
                 >
-                  <span class="directory-drawer__cat-name">{{ item.name }}</span>
+                  <span class="directory-drawer__cat-name">{{ categoryLabel(item) }}</span>
                 </RouterLink>
               </div>
               <p v-else class="directory-drawer__rail-hint">暂无分类数据</p>
@@ -185,16 +178,16 @@
               v-for="section in drawerSections"
               :key="section.id"
               class="directory-drawer__rail-section"
-              @mouseenter="hoveredSection = section.id"
-              @mouseleave="hoveredSection = ''"
+              :class="{ 'directory-drawer__rail-section--open': hoveredSection === section.id }"
+              @click="onRailSectionClick(section.id)"
+              v-bind="railSectionListeners(section.id)"
             >
               <span class="directory-drawer__rail-label">{{ section.short }}</span>
               <div
                 v-if="hoveredSection === section.id"
                 class="directory-drawer__cat-flyout scrolly"
                 role="tooltip"
-                @mouseenter="hoveredSection = section.id"
-                @mouseleave="hoveredSection = ''"
+                v-bind="railSectionListeners(section.id)"
               >
                 <p class="directory-drawer__cat-flyout-title">{{ section.name }}</p>
                 <div class="directory-drawer__cat-grid">
@@ -203,9 +196,10 @@
                     :key="drawerItemKey(item)"
                     :to="categoryLink(item)"
                     class="directory-drawer__cat-item"
-                    :title="item.name"
+                    :class="{ 'directory-drawer__cat-item--active': isCategoryItemActive(item) }"
+                    :title="categoryLabel(item)"
                   >
-                    <span class="directory-drawer__cat-name">{{ item.name }}</span>
+                    <span class="directory-drawer__cat-name">{{ categoryLabel(item) }}</span>
                   </RouterLink>
                 </div>
               </div>
@@ -218,8 +212,8 @@
 </template>
 
 <script setup>
-import { computed, ref, watch } from "vue";
-import { RouterLink, useRouter } from "vue-router";
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from "vue";
+import { RouterLink, useRoute, useRouter } from "vue-router";
 import Icon from "./Icon.vue";
 import PlatformIcon from "./PlatformIcon.vue";
 import FollowPreviewGrid from "./FollowPreviewGrid.vue";
@@ -232,6 +226,8 @@ import { fetchHotCategories } from "../api/crossBrowse.js";
 import { useBrowse } from "../composables/useBrowse.js";
 import { useFollow } from "../composables/useFollow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
+import { useHoverUi } from "../composables/useHoverUi.js";
+import { displayCategoryName } from "../utils/categoryDisplay.js";
 
 const DRAWER_ITEMS_PER_SECTION = 18;
 
@@ -248,8 +244,11 @@ const props = defineProps({
 defineEmits(["close", "open"]);
 
 const router = useRouter();
+const route = useRoute();
 const drawerSite = ref(props.initialSite || "douyu");
 const followHover = ref(false);
+const drawerRoot = ref(null);
+const { hoverUi } = useHoverUi();
 const hoveredSection = ref("");
 const hoveredRailPlatform = ref("");
 const drawerActive = computed(() => props.eligible);
@@ -325,6 +324,51 @@ function drawerItemKey(item) {
   return `${item.cid}-${item.pid ?? ""}`;
 }
 
+function categoryLabel(item) {
+  if (item.key != null) return item.name;
+  return displayCategoryName(drawerSite.value, item.name, item.cid);
+}
+
+function isCategoryItemActive(item) {
+  if (item.key != null) {
+    return route.name === "all-category-rooms"
+      && String(route.params.key || "") === String(item.key || "");
+  }
+  if (route.name !== "category-rooms") return false;
+  if (String(route.params.site || "") !== drawerSite.value) return false;
+  if (String(route.params.cid || "") !== String(item.cid || "")) return false;
+  const routePid = route.query.pid ? String(route.query.pid) : "";
+  const itemPid = item.pid != null ? String(item.pid) : "";
+  return routePid === itemPid;
+}
+
+const followWrapListeners = computed(() =>
+  hoverUi.value
+    ? {
+        onMouseenter: () => { followHover.value = true; },
+        onMouseleave: () => { followHover.value = false; },
+      }
+    : {},
+);
+
+const followFlyoutListeners = followWrapListeners;
+
+function railPlatformListeners(platformId) {
+  if (!hoverUi.value) return {};
+  return {
+    onMouseenter: () => onRailPlatformEnter(platformId),
+    onMouseleave: onRailPlatformLeave,
+  };
+}
+
+function railSectionListeners(sectionId) {
+  if (!hoverUi.value) return {};
+  return {
+    onMouseenter: () => onRailSectionEnter(sectionId),
+    onMouseleave: onRailSectionLeave,
+  };
+}
+
 function onRailPlatformEnter(platformId) {
   hoveredRailPlatform.value = platformId;
   if (platformId === "all" && supportsCrossBrowse("all")) {
@@ -335,6 +379,50 @@ function onRailPlatformEnter(platformId) {
 function onRailPlatformLeave() {
   hoveredRailPlatform.value = "";
 }
+
+function onRailPlatformClick(platformId) {
+  if (platformId === "all" && supportsCrossBrowse("all")) {
+    hoveredSection.value = "";
+    drawerSite.value = platformId;
+    void loadHotCategories();
+    nextTick(() => {
+      hoveredRailPlatform.value = "all";
+    });
+    return;
+  }
+  hoveredRailPlatform.value = "";
+  hoveredSection.value = "";
+  drawerSite.value = platformId;
+}
+
+function onRailSectionEnter(sectionId) {
+  hoveredSection.value = sectionId;
+}
+
+function onRailSectionLeave() {
+  hoveredSection.value = "";
+}
+
+function onRailSectionClick(sectionId) {
+  hoveredSection.value = sectionId;
+}
+
+function onPointerDownOutside(event) {
+  if (props.open) return;
+  const root = drawerRoot.value;
+  if (!root?.contains(event.target)) {
+    hoveredRailPlatform.value = "";
+    hoveredSection.value = "";
+  }
+}
+
+onMounted(() => {
+  document.addEventListener("pointerdown", onPointerDownOutside);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener("pointerdown", onPointerDownOutside);
+});
 
 function categoryLink(item) {
   if (item.key != null) {
@@ -378,7 +466,9 @@ watch(
   ([site, active]) => {
     if (!active) return;
     hoveredSection.value = "";
-    hoveredRailPlatform.value = "";
+    if (site !== "all") {
+      hoveredRailPlatform.value = "";
+    }
     if (site === "all") {
       if (!supportsCrossBrowse("all")) return;
       void loadHotCategories();
@@ -446,12 +536,6 @@ watch(
   left: var(--directory-drawer-width);
 }
 
-.directory-drawer__toggle:hover {
-  color: var(--drawer-accent);
-  background: var(--bg-soft);
-  border-color: var(--drawer-accent-35);
-}
-
 .directory-drawer__follow-wrap {
   position: relative;
   flex-shrink: 0;
@@ -468,11 +552,6 @@ watch(
   font-size: .9rem;
   font-weight: 600;
   transition: color .15s, background .15s;
-}
-
-.directory-drawer__follow:hover {
-  color: var(--drawer-accent);
-  background: transparent;
 }
 
 .directory-drawer__follow-icon {
@@ -535,43 +614,23 @@ watch(
 }
 
 .directory-drawer__platform-tab {
-  flex: 1;
+  flex: 1 1 0;
   min-width: 0;
+  aspect-ratio: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: .35rem .25rem;
+  padding: .2rem;
   border: 1px solid transparent;
   border-radius: 8px;
   background: transparent;
   cursor: pointer;
-  transition: border-color .15s, background .15s, box-shadow .15s;
-}
-
-.directory-drawer__platform-tab:hover {
-  background: transparent;
+  transition: border-color .15s, background .15s;
 }
 
 .directory-drawer__platform-tab--active {
   border-color: var(--primary);
   background: var(--sidebar-chip-active-bg);
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 55%, transparent);
-}
-
-.directory-drawer__platform-all {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-.directory-drawer__platform-all-icon {
-  font-size: 1.35rem;
-  line-height: 1;
-  color: var(--text);
 }
 
 .directory-drawer__body {
@@ -615,18 +674,22 @@ watch(
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
   min-width: 0;
-  min-height: 1.45rem;
-  padding: .08rem .22rem;
+  min-height: 1.85rem;
+  padding: .18rem .16rem;
+  border: 1px solid transparent;
   border-radius: 4px;
   color: inherit;
   background: var(--sidebar-chip-bg);
-  transition: color .12s, background .12s;
+  transition: color .12s, background .12s, border-color .12s;
 }
 
-.directory-drawer__cat-item:hover {
-  color: var(--drawer-accent);
-  background: var(--sidebar-chip-hover-bg);
+.directory-drawer__cat-item--active {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--sidebar-chip-active-bg);
 }
 
 .directory-drawer__cat-name {
@@ -647,10 +710,6 @@ watch(
   padding: .5rem 0;
   color: var(--drawer-accent);
   transition: background .15s;
-}
-
-.directory-drawer__rail-follow:hover {
-  background: transparent;
 }
 
 .directory-drawer__rail-platforms {
@@ -675,17 +734,18 @@ watch(
   border-radius: 8px;
   background: transparent;
   cursor: pointer;
-  transition: border-color .15s, background .15s, box-shadow .15s;
-}
-
-.directory-drawer__rail-platform:hover {
-  background: transparent;
+  touch-action: manipulation;
+  transition: border-color .15s, background .15s;
 }
 
 .directory-drawer__rail-platform--active {
   border-color: var(--primary);
   background: var(--sidebar-chip-active-bg);
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 55%, transparent);
+}
+
+.directory-drawer__rail-platform--flyout:not(.directory-drawer__rail-platform--active) {
+  border-color: color-mix(in srgb, var(--primary) 45%, transparent);
+  background: var(--sidebar-chip-hover-bg);
 }
 
 .directory-drawer__rail-main {
@@ -724,7 +784,8 @@ watch(
   min-height: 2.65rem;
   padding: .62rem 2px;
   border-bottom: 1px solid var(--chrome-border);
-  cursor: default;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 .directory-drawer__rail-section:last-child {
@@ -742,7 +803,7 @@ watch(
   transition: color .15s;
 }
 
-.directory-drawer__rail-section:hover .directory-drawer__rail-label {
+.directory-drawer__rail-section--open .directory-drawer__rail-label {
   color: var(--drawer-accent);
 }
 
@@ -778,5 +839,45 @@ watch(
   font-size: .72rem;
   font-weight: 600;
   color: var(--muted);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .directory-drawer__toggle:hover {
+    color: var(--drawer-accent);
+    background: var(--bg-soft);
+    border-color: var(--drawer-accent-35);
+  }
+
+  .directory-drawer__follow:hover {
+    color: var(--drawer-accent);
+    background: transparent;
+  }
+
+  .directory-drawer__platform-tab:hover {
+    background: transparent;
+  }
+
+  .directory-drawer__cat-item:hover {
+    color: var(--drawer-accent);
+    background: var(--sidebar-chip-hover-bg);
+  }
+
+  .directory-drawer__cat-item--active:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--sidebar-chip-active-bg);
+  }
+
+  .directory-drawer__rail-follow:hover {
+    background: transparent;
+  }
+
+  .directory-drawer__rail-platform:hover {
+    background: transparent;
+  }
+
+  .directory-drawer__rail-section:hover .directory-drawer__rail-label {
+    color: var(--drawer-accent);
+  }
 }
 </style>

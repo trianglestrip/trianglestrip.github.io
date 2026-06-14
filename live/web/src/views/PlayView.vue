@@ -36,12 +36,14 @@
 
         <div
           ref="frameRef"
+          id="play-frame"
           class="play-frame"
           :class="{
             'play-frame--landscape-fallback': fullscreenLandscapeFallback,
           }"
+          @click="onPlayFrameClick"
         >
-          <div class="video-shell" @click="onVideoShellClick">
+          <div class="video-shell">
             <PlayerPanel
               ref="playerPanelRef"
               :stream-active="streamActive"
@@ -69,6 +71,8 @@
               :danmaku-on="overlaySettings.show"
               :webscreen="webscreen"
               :fullscreen="isFullscreen || webscreen"
+              :hide-webscreen="isMobilePlayViewport()"
+              :immersive-mobile="isImmersivePlayMode"
               :picture-in-picture="pictureInPicture"
               :volume="volume"
               :muted="muted"
@@ -104,12 +108,24 @@
               <Icon name="volume-off" class="mute-hint__icon" />
               <span>点击解除静音</span>
             </button>
+            <PlayImmersiveSideSheet
+              v-if="sideReady && isImmersivePlayMode"
+              v-model:open="immersiveSideOpen"
+              :site="site"
+              :room-id="id"
+              :room-category="displayCategory"
+              :room-cid="browseRoomCid"
+              :room-pid="browseRoomPid"
+              :follow-list="follows"
+              :secondary-ready="secondaryApiReady"
+              @play-room="onPlayFollow"
+            />
           </div>
         </div>
       </section>
 
       <PlaySidePanel
-        v-if="sideReady"
+        v-if="sideReady && !isImmersivePlayMode"
         ref="sidePanelRef"
         v-model:chat-settings="chatSettings"
         :webscreen="webscreen"
@@ -156,6 +172,7 @@ import { browseBackTarget, loadBrowseContext } from "../utils/browseContext.js";
 import { formatDouyinOnline } from "../utils/followDisplay.js";
 import { isSoundUnlocked, unlockSound, resetSoundSession } from "../utils/soundSession.js";
 import { runIdle } from "../utils/runIdle.js";
+import PlayImmersiveSideSheet from "../components/PlayImmersiveSideSheet.vue";
 
 const PlayerControls = defineAsyncComponent(() => import("../components/PlayerControls.vue"));
 const DanmakuOverlay = defineAsyncComponent(() => import("../components/DanmakuOverlay.vue"));
@@ -180,6 +197,7 @@ const isFullscreen = ref(false);
 const fullscreenLandscapeFallback = ref(false);
 const pictureInPicture = ref(false);
 const hideControlsTimer = ref(null);
+const immersiveSideOpen = ref(false);
 const lastPlayedRoom = ref("");
 const playUrl = ref("");
 const headerReady = ref(false);
@@ -336,6 +354,12 @@ const panelMessage = computed(() => {
 const showPauseOverlay = computed(
   () => streamActive.value && !playing.value && !muted.value && !showMuteHint.value,
 );
+
+const isImmersivePlayMode = computed(
+  () => isMobilePlayViewport() && (isFullscreen.value || webscreen.value),
+);
+
+const IMMERSIVE_SIDE_RIGHT_RATIO = 0.5;
 
 let onlineRefreshTimer = 0;
 
@@ -640,11 +664,41 @@ function onVolumeChange(value) {
   if (Number(value) > 0 && !muted.value) markSoundUnlocked();
 }
 
-async function onVideoShellClick(event) {
+async function onPlayFrameClick(event) {
   if (!streamActive.value || isVideoShellActionLocked()) return;
   const target = event.target;
   if (!(target instanceof Element)) return;
-  if (target.closest(".player-controls, .mute-hint, .play-pause-overlay")) return;
+  if (target.closest(".player-controls, .mute-hint, .play-pause-overlay, .play-immersive-side__panel")) {
+    return;
+  }
+
+  if (isImmersivePlayMode.value) {
+    if (immersiveSideOpen.value) {
+      closeImmersiveSide();
+      revealControls();
+    } else {
+      const frame = frameRef.value;
+      if (frame instanceof HTMLElement) {
+        const rect = frame.getBoundingClientRect();
+        const tapRatio = (event.clientX - rect.left) / Math.max(rect.width, 1);
+        if (tapRatio >= IMMERSIVE_SIDE_RIGHT_RATIO) {
+          revealImmersiveSide();
+        } else {
+          revealControls();
+        }
+      }
+    }
+    if (muted.value) {
+      lockVideoShellAction();
+      const ok = await unmutePlayback();
+      if (ok) {
+        markSoundUnlocked();
+        syncPlayingStatus();
+      }
+    }
+    return;
+  }
+
   revealControls();
   if (muted.value) {
     lockVideoShellAction();
@@ -773,11 +827,22 @@ function revealControls() {
 
 function enterImmersiveControls() {
   clearTimeout(hideControlsTimer.value);
+  closeImmersiveSide();
   if (isMobilePlayViewport() && (isFullscreen.value || webscreen.value) && playing.value) {
     showControls.value = false;
     return;
   }
   revealControls();
+}
+
+function revealImmersiveSide() {
+  immersiveSideOpen.value = true;
+  showControls.value = false;
+  clearTimeout(hideControlsTimer.value);
+}
+
+function closeImmersiveSide() {
+  immersiveSideOpen.value = false;
 }
 
 function cachedFollowRoomForFollow() {
@@ -1096,6 +1161,14 @@ watch(playing, (isPlaying) => {
     clearTimeout(hideControlsTimer.value);
     showControls.value = true;
   }
+});
+
+watch(isImmersivePlayMode, (active) => {
+  if (!active) closeImmersiveSide();
+});
+
+watch(immersiveSideOpen, (open) => {
+  if (!open && isImmersivePlayMode.value) revealControls();
 });
 
 let frameMouseMoveHandler = null;

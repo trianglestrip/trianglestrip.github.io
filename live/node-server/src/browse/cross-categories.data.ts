@@ -312,10 +312,14 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
   },
   {
     key: "dnf",
-    name: "地下城与勇士",
-    aliases: ["地下城与勇士", "dnf"],
+    name: "DNF",
+    aliases: ["DNF", "dnf", "地下城与勇士"],
 
-    douyu: "2",
+    sites: {
+      bilibili: { cid: "78", pid: "2" }
+    },
+
+    douyu: "40",
     huya: "2",
     douyin: "1010092",
     douyinPid: "1",
@@ -3153,16 +3157,6 @@ export const CROSS_CATEGORIES: CrossCategoryEntry[] = [
     huya: "862",
     douyin: "1010003",
     douyinPid: "1",
-  },
-  {
-    key: "g40_78",
-    name: "DNF",
-    aliases: ["DNF"],
-    sites: {
-      bilibili: { cid: "78", pid: "2" }
-    },
-
-    douyu: "40",
   },
   {
     key: "g1092_4921_343",

@@ -23,8 +23,7 @@
         v-for="platform in navPlatforms"
         :key="platform.id"
         class="nav-platform-wrap"
-        @mouseenter="hoveredPlatform = platform.id"
-        @mouseleave="hoveredPlatform = ''"
+        v-bind="platformWrapListeners(platform.id)"
       >
         <RouterLink
           :to="platformNavLink(platform.id)"
@@ -32,16 +31,14 @@
           class="nav-platform-tab"
           :class="{
             active: platform.id === activePlatformId,
-            'nav-platform-tab--all': platform.id === 'all',
           }"
           :aria-selected="platform.id === activePlatformId"
         >
-          <PlatformIcon v-if="platform.id !== 'all'" :id="platform.id" size="sm" />
-          <Icon v-else name="apps" class="nav-platform-all-icon" />
+          <PlatformIcon :id="platform.id" size="sm" />
           <span class="nav-platform-label">{{ platform.label }}</span>
         </RouterLink>
         <NavPlatformCategoryMenu
-          v-if="hoveredPlatform === platform.id"
+          v-if="hoverUi && hoveredPlatform === platform.id"
           :platform-id="platform.id"
           @pointerenter="hoveredPlatform = platform.id"
           @pointerleave="hoveredPlatform = ''"
@@ -81,6 +78,7 @@ import { RouterLink, useRoute } from "vue-router";
 import { getTheme, toggleTheme } from "../utils/theme.js";
 import { useSearchDialog } from "../composables/useSearchDialog.js";
 import { useNavPlatforms } from "../composables/useNavPlatforms.js";
+import { useHoverUi } from "../composables/useHoverUi.js";
 import AccentColorPicker from "./AccentColorPicker.vue";
 import Icon from "./Icon.vue";
 import PlatformIcon from "./PlatformIcon.vue";
@@ -93,6 +91,7 @@ const props = defineProps({
 const route = useRoute();
 const theme = ref("dark");
 const hoveredPlatform = ref("");
+const { hoverUi } = useHoverUi();
 const { openSearch } = useSearchDialog();
 const siteRef = toRef(props, "site");
 
@@ -113,6 +112,14 @@ function onToggleTheme() {
 
 function onOpenSearch() {
   openSearch(props.site || "douyu");
+}
+
+function platformWrapListeners(platformId) {
+  if (!hoverUi.value) return {};
+  return {
+    onMouseenter: () => { hoveredPlatform.value = platformId; },
+    onMouseleave: () => { hoveredPlatform.value = ""; },
+  };
 }
 
 const allItems = computed(() => {
@@ -211,20 +218,12 @@ function isActive(item) {
   display: none;
 }
 
-.nav-item:hover {
-  color: var(--amber);
-}
-
 .nav-item.active {
   color: var(--amber);
 }
 
 .nav-theme {
   cursor: pointer;
-}
-
-.nav-theme:hover {
-  background: var(--bg-soft);
 }
 
 .nav-platform-wrap {
@@ -250,19 +249,9 @@ function isActive(item) {
   transition: color .15s, border-color .15s, background .15s;
 }
 
-.nav-platform-tab:hover:not(.disabled) {
-  color: var(--text);
-  background: var(--bg-soft);
-}
-
 .nav-platform-tab.active {
   color: var(--amber);
   border-bottom-color: var(--amber);
-}
-
-.nav-platform-all-icon {
-  font-size: 1.1rem;
-  line-height: 1;
 }
 
 .nav-platform-tab.disabled {
@@ -346,6 +335,21 @@ function isActive(item) {
 
   .nav-platform-label {
     display: inline;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-item:hover {
+    color: var(--amber);
+  }
+
+  .nav-theme:hover {
+    background: var(--bg-soft);
+  }
+
+  .nav-platform-tab:hover:not(.disabled) {
+    color: var(--text);
+    background: var(--bg-soft);
   }
 }
 </style>

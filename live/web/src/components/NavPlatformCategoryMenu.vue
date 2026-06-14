@@ -42,10 +42,10 @@
               :key="`${item.cid}-${item.pid ?? ''}`"
               :to="categoryLink(item)"
               class="nav-platform-menu__item"
-              :title="item.name"
+              :title="categoryLabel(item)"
               @click="onNavigate"
             >
-              {{ item.name }}
+              {{ categoryLabel(item) }}
             </RouterLink>
           </div>
         </div>
@@ -65,6 +65,7 @@ import {
 } from "../utils/drawerCategories.js";
 import { fetchCategories } from "../api/browse.js";
 import { fetchHotCategories } from "../api/crossBrowse.js";
+import { displayCategoryName } from "../utils/categoryDisplay.js";
 
 const props = defineProps({
   platformId: { type: String, required: true },
@@ -109,6 +110,11 @@ function crossLink(item) {
 
 function onNavigate() {
   if (props.embedded) emit("navigate");
+}
+
+function categoryLabel(item) {
+  if (item.key != null) return item.name;
+  return displayCategoryName(props.platformId, item.name, item.cid);
 }
 
 async function loadSections(platformId) {

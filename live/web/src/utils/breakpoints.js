@@ -13,3 +13,8 @@ export function playStackMediaQuery() {
 export function compactMediaQuery() {
   return `(max-width: ${BP_COMPACT}px)`;
 }
+
+/** 仅精确指针 + 真实 hover 时启用悬停 UI（手机/触屏 Pad 为 false） */
+export function hoverUiMediaQuery() {
+  return "(hover: hover) and (pointer: fine)";
+}

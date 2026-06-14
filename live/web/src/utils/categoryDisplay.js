@@ -30,7 +30,7 @@ const FALLBACK_CATEGORIES = [
   { key: "g3358_6909_1010011_571", name: "蛋仔派对", aliases: ["蛋仔派对"], sites: { bilibili: { cid: "571", pid: "3" } }, douyu: "3358", huya: "6909", douyin: "1010011", douyinPid: "1" },
   { key: "g389_3641_341", name: "盗贼之海", aliases: ["盗贼之海"], sites: { bilibili: { cid: "341", pid: "6" } }, douyu: "389", huya: "3641" },
   { key: "g1701_1010099", name: "地铁跑酷", aliases: ["地铁跑酷"], huya: "1701", douyin: "1010099", douyinPid: "1" },
-  { key: "dnf", name: "地下城与勇士", aliases: ["地下城与勇士", "dnf"], douyu: "2", huya: "2", douyin: "1010092", douyinPid: "1" },
+  { key: "dnf", name: "DNF", aliases: ["DNF", "dnf", "地下城与勇士"], sites: { bilibili: { cid: "78", pid: "2" } }, douyu: "40", huya: "2", douyin: "1010092", douyinPid: "1" },
   { key: "g4835_548", name: "帝国时代4", aliases: ["帝国时代4"], sites: { bilibili: { cid: "548", pid: "6" } }, huya: "4835" },
   { key: "g2618_784", name: "第七史诗", aliases: ["第七史诗"], sites: { bilibili: { cid: "784", pid: "3" } }, douyu: "2618" },
   { key: "g356_3115_1010041_163", name: "第五人格", aliases: ["第五人格"], sites: { bilibili: { cid: "163", pid: "3" } }, douyu: "356", huya: "3115", douyin: "1010041", douyinPid: "1" },
@@ -301,7 +301,6 @@ const FALLBACK_CATEGORIES = [
   { key: "cfhd", name: "CFHD", aliases: ["CFHD"], sites: { bilibili: { cid: "472", pid: "2" } }, douyu: "1997", huya: "6079" },
   { key: "cod", name: "COD手游", aliases: ["COD手游"], douyu: "767", huya: "4769" },
   { key: "cs2", name: "CS2", aliases: ["cs2", "csgo", "反恐精英", "counter-strike", "cs:go"], sites: { bilibili: { cid: "89", pid: "2" } }, douyu: "6", huya: "862", douyin: "1010003", douyinPid: "1" },
-  { key: "g40_78", name: "DNF", aliases: ["DNF"], sites: { bilibili: { cid: "78", pid: "2" } }, douyu: "40" },
   { key: "g1092_4921_343", name: "DNF手游", aliases: ["DNF手游"], sites: { bilibili: { cid: "343", pid: "3" } }, douyu: "1092", huya: "4921" },
   { key: "dota1", name: "DOTA1", aliases: ["DOTA1"], huya: "6", douyin: "1010341", douyinPid: "1" },
   { key: "dota2", name: "DOTA2", aliases: ["dota2", "dota 2", "刀塔"], sites: { bilibili: { cid: "92", pid: "2" } }, douyu: "7", huya: "7", douyin: "1010093", douyinPid: "1" },
@@ -323,6 +322,38 @@ const FALLBACK_CATEGORIES = [
 
 let categories = FALLBACK_CATEGORIES;
 let loadPromise = null;
+
+/** 各平台 cid 不同，跨平台 key 对应斗鱼 cid 需手工校正 */
+const CROSS_DOUYU_CID_PATCH = {
+  dnf: "40",
+};
+
+export function findCrossCategoryByKey(key) {
+  const text = String(key || "").trim();
+  if (!text) return null;
+  const entry =
+    categories.find((e) => e.key === text) ||
+    FALLBACK_CATEGORIES.find((e) => e.key === text) ||
+    null;
+  if (!entry) return null;
+  const patchDouyu = CROSS_DOUYU_CID_PATCH[text];
+  if (patchDouyu && entry.douyu !== patchDouyu) {
+    return { ...entry, douyu: patchDouyu };
+  }
+  return entry;
+}
+
+export function douyuCidForCrossKey(key, fallback) {
+  const entry = findCrossCategoryByKey(key);
+  if (entry?.douyu) return String(entry.douyu);
+  return String(fallback || "");
+}
+
+export function huyaCidForCrossKey(key, fallback) {
+  const entry = findCrossCategoryByKey(key);
+  if (entry?.huya) return String(entry.huya);
+  return String(fallback || "");
+}
 
 function norm(text) {
   return String(text || "")
