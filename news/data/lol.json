@@ -1,8 +1,9 @@
 {
   "source": "lol",
   "title": "英雄联盟",
-  "updated_at": "2026-06-13T22:18:07+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-06-14T10:56:18+00:00",
+  "fetch_ok": false,
+  "error": "Command '['hotboard', 'lol', '--format', 'json']' timed out after 60 seconds",
   "items": [
     {
       "rank": 1,

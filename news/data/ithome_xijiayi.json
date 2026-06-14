@@ -1,8 +1,9 @@
 {
   "source": "ithome_xijiayi",
   "title": "IT之家喜加一",
-  "updated_at": "2026-06-13T22:17:55+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-06-14T10:53:08+00:00",
+  "fetch_ok": false,
+  "error": "Command '['hotboard', 'ithome', '--type', 'xijiayi', '--format', 'json']' timed out after 60 seconds",
   "items": [
     {
       "rank": 1,
