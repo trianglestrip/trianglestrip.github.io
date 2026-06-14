@@ -2,21 +2,28 @@
   <div
     v-if="rooms.length"
     class="follow-preview-grid"
-    :class="{ 'follow-preview-grid--compact': compact }"
+    :class="{
+      'follow-preview-grid--compact': compact && !drawer,
+      'follow-preview-grid--drawer': drawer,
+    }"
   >
     <button
       v-for="room in rooms"
       :key="`${room.site}-${room.id}`"
       type="button"
       class="follow-preview-item"
-      :class="{
-        'follow-preview-item--live': room.state === 'live' && !hideLiveFrame,
-        'follow-preview-item--replay': room.state === 'replay',
-        'follow-preview-item--offline': room.state === 'offline',
-        'follow-preview-item--super': room.super,
-        'follow-preview-item--selectable': selectMode,
-        'follow-preview-item--selected': isSelected(room),
-      }"
+      :class="[
+        drawer ? drawerItemClass(room) : {
+          'follow-preview-item--live': room.state === 'live' && !hideLiveFrame,
+          'follow-preview-item--replay': room.state === 'replay',
+          'follow-preview-item--offline': room.state === 'offline',
+          'follow-preview-item--super': room.super,
+        },
+        {
+          'follow-preview-item--selectable': selectMode,
+          'follow-preview-item--selected': isSelected(room),
+        },
+      ]"
       @pointerenter="onItemHover(room)"
       @click="onItemClick(room)"
     >
@@ -28,10 +35,14 @@
           root-margin="160px"
         />
         <div v-else class="follow-preview-cover follow-preview-cover--empty">无画面</div>
-        <PlatformCoverBadge v-if="room.site" :site="room.site" />
-        <CoverOnlineBadge :online="room.online" :live="room.state !== 'offline'" />
+        <PlatformCoverBadge v-if="room.site && !drawer" :site="room.site" />
+        <CoverOnlineBadge
+          v-if="!drawer"
+          :online="room.online"
+          :live="room.state !== 'offline'"
+        />
         <span
-          v-if="categoryLabel(room)"
+          v-if="!drawer && categoryLabel(room)"
           class="follow-preview-cat"
           :title="categoryLabel(room)"
         >{{ categoryLabel(room) }}</span>
@@ -41,12 +52,12 @@
           :class="{ 'follow-preview-check--on': isSelected(room) }"
           aria-hidden="true"
         />
-        <div v-if="room.state === 'offline'" class="follow-preview-offline">未开播</div>
+        <div v-if="!drawer && room.state === 'offline'" class="follow-preview-offline">未开播</div>
       </div>
       <p class="follow-preview-anchor">
         <span class="follow-preview-anchor-name">{{ room.anchor || room.id }}</span>
         <span
-          v-if="room.state === 'offline' && lastLiveLabel(room)"
+          v-if="showStats && room.state === 'offline' && lastLiveLabel(room)"
           class="follow-preview-last-live"
         >{{ lastLiveLabel(room) }}</span>
       </p>
@@ -89,6 +100,7 @@ const props = defineProps({
   compact: { type: Boolean, default: false },
   showStats: { type: Boolean, default: true },
   hideLiveFrame: { type: Boolean, default: false },
+  drawer: { type: Boolean, default: false },
 });
 
 const emit = defineEmits(["select", "toggle-select"]);
@@ -113,6 +125,14 @@ function onItemClick(room) {
     return;
   }
   emit("select", room);
+}
+
+function drawerItemClass(room) {
+  if (room.super) return { "follow-preview-item--drawer-super": true };
+  const state = room.state || "offline";
+  if (state === "live") return { "follow-preview-item--drawer-live": true };
+  if (state === "replay") return { "follow-preview-item--drawer-replay": true };
+  return { "follow-preview-item--drawer-offline": true };
 }
 
 function lastLiveLabel(room) {
@@ -371,6 +391,99 @@ function categoryLabel(room) {
 
 .follow-preview-item--offline .follow-preview-anchor {
   color: var(--muted);
+}
+
+.follow-preview-grid--drawer {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .22rem .14rem;
+  padding: 0;
+  justify-items: stretch;
+}
+
+.follow-preview-grid--drawer .follow-preview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  padding: .22rem .12rem .26rem;
+  border-radius: 6px;
+  background: var(--sidebar-chip-bg);
+  transition: background .12s, filter .12s;
+}
+
+.follow-preview-grid--drawer .follow-preview-item:hover {
+  filter: brightness(1.04);
+  color: var(--drawer-accent, var(--primary));
+}
+
+.follow-preview-grid--drawer .follow-preview-item--drawer-live {
+  background: var(--sidebar-follow-live-bg);
+  color: var(--follow-state-on-text);
+}
+
+.follow-preview-grid--drawer .follow-preview-item--drawer-replay {
+  background: var(--sidebar-follow-replay-bg);
+  color: var(--follow-state-on-text);
+}
+
+.follow-preview-grid--drawer .follow-preview-item--drawer-offline {
+  background: var(--sidebar-follow-offline-bg);
+  color: var(--follow-state-muted-text);
+}
+
+.follow-preview-grid--drawer .follow-preview-item--drawer-super {
+  background: var(--sidebar-follow-super-bg);
+  color: var(--follow-state-on-text);
+}
+
+.follow-preview-grid--drawer .follow-preview-cover-wrap {
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  animation: none;
+}
+
+.follow-preview-grid--drawer .follow-preview-item--live .follow-preview-cover-wrap,
+.follow-preview-grid--drawer .follow-preview-item--replay .follow-preview-cover-wrap {
+  border: none;
+  box-shadow: none;
+  animation: none;
+}
+
+.follow-preview-grid--drawer .follow-preview-item--drawer-offline .follow-preview-cover-wrap {
+  filter: grayscale(0.55);
+  opacity: 0.82;
+}
+
+.follow-preview-grid--drawer .follow-preview-item:hover .follow-preview-cover-wrap {
+  border-color: transparent;
+}
+
+.follow-preview-grid--drawer .follow-preview-cover--empty {
+  font-size: .58rem;
+}
+
+.follow-preview-grid--drawer .follow-preview-anchor {
+  margin: .28rem 0 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: .68rem;
+  line-height: 1.25;
+}
+
+.follow-preview-grid--drawer .follow-preview-anchor-name {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.follow-preview-grid--drawer .follow-preview-item--drawer-offline .follow-preview-anchor {
+  color: var(--follow-state-muted-text);
 }
 
 @keyframes follow-preview-live-pulse {

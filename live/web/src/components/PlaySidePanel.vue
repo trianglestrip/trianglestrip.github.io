@@ -107,8 +107,9 @@
       </div>
       <FollowPreviewGrid
         v-if="previewCover"
-        compact
+        drawer
         hide-live-frame
+        :show-stats="false"
         :rooms="filteredFollows"
         @select="$emit('play-room', $event)"
       />
@@ -239,7 +240,7 @@ import FollowRoomList from "./FollowRoomList.vue";
 import FollowPreviewGrid from "./FollowPreviewGrid.vue";
 import FollowPlatformFilter from "./FollowPlatformFilter.vue";
 import { fetchFollowStatus } from "../api/follow.js";
-import { fetchRelatedRecommendRooms, fetchMixedRecommendRooms, roomKey } from "../api/browse.js";
+import { fetchCategoryRooms, fetchRelatedRecommendRooms, fetchMixedRecommendRooms, roomKey } from "../api/browse.js";
 import { useFollow } from "../composables/useFollow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
 import { useToast } from "../composables/useToast.js";
@@ -257,10 +258,10 @@ const props = defineProps({
   payload: { type: Object, default: null },
   danmakuMessages: { type: Array, default: () => [] },
   danmakuStatus: { type: String, default: "" },
-  danmakuMeta: { type: Object, default: () => ({ liveStartAt: 0, fanGroup: "" }) },
   followList: { type: Array, default: () => [] },
   roomCategory: { type: String, default: "" },
   roomCid: { type: String, default: "" },
+  roomPid: { type: String, default: "" },
   isSuperFollowed: { type: Boolean, default: false },
   webscreen: { type: Boolean, default: false },
 });
@@ -386,6 +387,17 @@ function excludeCurrentRoom(list) {
 }
 
 async function resolveRecommendContext() {
+  const browseCid = String(props.roomCid || "").trim();
+  const browsePid = String(props.roomPid || "").trim();
+  if (browseCid) {
+    return {
+      category: props.roomCategory || "",
+      cid: browseCid,
+      pid: browsePid,
+      fromBrowse: true,
+    };
+  }
+
   const room = findCurrentFollowRoom();
   const roomCid = props.roomCid || (room?.cid ? String(room.cid).trim() : "");
 
@@ -425,8 +437,11 @@ async function loadRecommend() {
   recommendLoading.value = true;
   recommendError.value = "";
   try {
-    const { category, cid } = await resolveRecommendContext();
-    if (category) {
+    const { category, cid, pid, fromBrowse } = await resolveRecommendContext();
+    if (fromBrowse && cid && props.site === "douyin") {
+      const data = await fetchCategoryRooms(props.site, { cid, pid, page: 1 });
+      recommendRooms.value = excludeCurrentRoom(data.list).slice(0, RECOMMEND_LIMIT);
+    } else if (category) {
       const data = await fetchRelatedRecommendRooms({
         site: props.site,
         category,
@@ -524,7 +539,7 @@ watch(followTabActive, (active) => {
 });
 
 watch(
-  () => [props.site, props.roomId, props.roomCategory],
+  () => [props.site, props.roomId, props.roomCategory, props.roomCid, props.roomPid],
   () => {
     recommendRooms.value = [];
     recommendLoaded.value = false;
@@ -663,15 +678,6 @@ watch(
     void refreshRoomFans();
   },
   { immediate: true },
-);
-
-watch(
-  () => props.danmakuMeta,
-  (meta) => {
-    if (props.site !== "douyin" || !meta) return;
-    if (meta.liveStartAt) roomLiveStartAt.value = Number(meta.liveStartAt) || 0;
-  },
-  { deep: true },
 );
 
 const chatItemStyle = computed(() => ({
@@ -1232,23 +1238,10 @@ onBeforeUnmount(() => {
   gap: 0;
 }
 
-.follow-tab :deep(.follow-preview-grid),
-.follow-tab :deep(.follow-preview-grid--compact) {
-  padding: 0;
-  gap: 0;
-}
-
-.follow-tab :deep(.follow-preview-grid--compact .follow-preview-anchor) {
-  margin-top: 0;
-}
-
-.follow-tab :deep(.follow-preview-item--super) {
-  border-radius: 0;
-  padding: 0;
-}
-
-.follow-tab :deep(.follow-preview-cover-wrap) {
-  border-radius: 0;
+.follow-tab :deep(.follow-preview-grid--drawer) {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .28rem .22rem;
+  padding: .35rem .4rem .5rem;
 }
 
 .follow-tab :deep(.follow-body) {

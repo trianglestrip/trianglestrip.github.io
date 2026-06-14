@@ -8,7 +8,7 @@
       :class="{
         'room-item--selectable': selectMode,
         'room-item--selected': isSelected(room),
-        'room-item--live': room.liveState === 'live',
+        'room-item--live': room.liveState === 'live' && !hideLiveFrame,
         'room-item--replay': room.liveState === 'replay',
       }"
       @pointerenter="onItemHover(room)"
@@ -54,6 +54,7 @@ const props = defineProps({
   site: { type: String, default: "" },
   selectMode: { type: Boolean, default: false },
   selectedKeys: { type: Array, default: () => [] },
+  hideLiveFrame: { type: Boolean, default: false },
 });
 
 const emit = defineEmits(["select", "toggle-select"]);

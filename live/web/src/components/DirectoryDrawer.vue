@@ -46,24 +46,13 @@
       >
         <p class="directory-drawer__flyout-title">开播中</p>
         <p v-if="!liveFollows.length" class="directory-drawer__flyout-empty">暂无开播</p>
-        <div v-else class="directory-drawer__follow-grid">
-          <RouterLink
-            v-for="room in liveFollows"
-            :key="`${room.site}-${room.id}`"
-            :to="{ name: 'play', params: { site: room.site, id: room.id } }"
-            class="directory-drawer__follow-item"
-            :class="followFlyoutClass(room)"
-          >
-            <FollowAvatar
-              :src="room.avatar"
-              :label="room.anchor?.slice(0, 1) || '?'"
-              :state="room.state"
-              grid
-              eager
-            />
-            <span class="directory-drawer__follow-name">{{ room.anchor || room.id }}</span>
-          </RouterLink>
-        </div>
+        <FollowPreviewGrid
+          v-else
+          drawer
+          :show-stats="false"
+          :rooms="liveFollows"
+          @select="onDrawerFollowSelect"
+        />
       </div>
     </div>
 
@@ -230,10 +219,10 @@
 
 <script setup>
 import { computed, ref, watch } from "vue";
-import { RouterLink } from "vue-router";
+import { RouterLink, useRouter } from "vue-router";
 import Icon from "./Icon.vue";
 import PlatformIcon from "./PlatformIcon.vue";
-import FollowAvatar from "./FollowAvatar.vue";
+import FollowPreviewGrid from "./FollowPreviewGrid.vue";
 import { PLATFORMS, supportsBrowse, supportsCrossBrowse } from "../config/platforms.js";
 import {
   buildCategorySections,
@@ -258,6 +247,7 @@ const props = defineProps({
 
 defineEmits(["close", "open"]);
 
+const router = useRouter();
 const drawerSite = ref(props.initialSite || "douyu");
 const followHover = ref(false);
 const hoveredSection = ref("");
@@ -361,14 +351,9 @@ function categoryLink(item) {
   };
 }
 
-function followFlyoutClass(room) {
-  const state = room.state || "offline";
-  return {
-    "directory-drawer__follow-item--super": !!room.super,
-    "directory-drawer__follow-item--live": state === "live" && !room.super,
-    "directory-drawer__follow-item--replay": state === "replay" && !room.super,
-    "directory-drawer__follow-item--offline": state !== "live" && state !== "replay",
-  };
+function onDrawerFollowSelect(room) {
+  if (!room.site || !room.id) return;
+  router.push({ name: "play", params: { site: room.site, id: room.id } });
 }
 
 watch(
@@ -538,71 +523,6 @@ watch(
   font-size: .78rem;
   color: var(--muted);
   text-align: left;
-}
-
-.directory-drawer__follow-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: .22rem .14rem;
-  justify-items: stretch;
-  width: 100%;
-  padding: 0;
-}
-
-.directory-drawer__follow-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: .28rem;
-  min-width: 0;
-  width: 100%;
-  padding: .22rem .12rem .26rem;
-  border-radius: 6px;
-  color: var(--text);
-  background: var(--sidebar-chip-bg);
-  transition: background .12s, filter .12s;
-}
-
-.directory-drawer__follow-item:hover {
-  filter: brightness(1.04);
-  color: var(--drawer-accent);
-}
-
-.directory-drawer__follow-item--live {
-  background: var(--sidebar-follow-live-bg);
-  color: var(--follow-state-on-text);
-}
-
-.directory-drawer__follow-item--replay {
-  background: var(--sidebar-follow-replay-bg);
-  color: var(--follow-state-on-text);
-}
-
-.directory-drawer__follow-item--offline {
-  background: var(--sidebar-follow-offline-bg);
-  color: var(--follow-state-muted-text);
-}
-
-.directory-drawer__follow-item--super {
-  background: var(--sidebar-follow-super-bg);
-  color: var(--follow-state-on-text);
-}
-
-.directory-drawer__follow-flyout :deep(.follow-avatar-wrap--live::after),
-.directory-drawer__follow-flyout :deep(.follow-avatar-wrap--replay::after) {
-  content: none;
-  display: none;
-}
-
-.directory-drawer__follow-name {
-  width: 100%;
-  font-size: .68rem;
-  line-height: 1.25;
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .directory-drawer__platform-tabs {
