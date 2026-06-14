@@ -113,6 +113,17 @@ const filterPlatforms = PLATFORMS.filter(
   color: var(--platform-huya-text-em);
 }
 
+.follow-platform-filter__item--bilibili {
+  color: var(--platform-bilibili-text);
+  background: var(--follow-filter-bilibili-bg, var(--sidebar-filter-bilibili-bg));
+}
+
+.follow-platform-filter__item--bilibili.follow-platform-filter__item--active {
+  border-color: color-mix(in srgb, var(--platform-bilibili) 55%, var(--border));
+  background: var(--follow-filter-bilibili-active-bg, var(--sidebar-filter-bilibili-active-bg));
+  color: var(--platform-bilibili-text-em);
+}
+
 .follow-platform-filter__item--douyin {
   color: var(--platform-douyin-text);
   background: var(--follow-filter-douyin-bg, var(--sidebar-filter-douyin-bg));

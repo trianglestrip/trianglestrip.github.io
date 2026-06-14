@@ -3,9 +3,12 @@
     v-if="rooms.length"
     class="follow-preview-grid"
     :class="{
-      'follow-preview-grid--compact': compact && !drawer,
+      'follow-preview-grid--compact': (compact || sidebar) && !drawer,
       'follow-preview-grid--drawer': drawer,
+      'follow-preview-grid--sidebar': sidebar,
+      'follow-preview-grid--hide-live-frame': hideLiveFrame,
     }"
+    :style="sidebar ? { '--follow-preview-cols': 2 } : undefined"
   >
     <button
       v-for="room in rooms"
@@ -14,7 +17,7 @@
       class="follow-preview-item"
       :class="[
         drawer ? drawerItemClass(room) : {
-          'follow-preview-item--live': room.state === 'live' && !hideLiveFrame,
+          'follow-preview-item--live': room.state === 'live',
           'follow-preview-item--replay': room.state === 'replay',
           'follow-preview-item--offline': room.state === 'offline',
           'follow-preview-item--super': room.super,
@@ -101,6 +104,7 @@ const props = defineProps({
   showStats: { type: Boolean, default: true },
   hideLiveFrame: { type: Boolean, default: false },
   drawer: { type: Boolean, default: false },
+  sidebar: { type: Boolean, default: false },
 });
 
 const emit = defineEmits(["select", "toggle-select"]);
@@ -164,7 +168,7 @@ function categoryLabel(room) {
 <style scoped>
 .follow-preview-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--follow-preview-cols, 2), minmax(0, 1fr));
   gap: .65rem;
   padding: .5rem .65rem .75rem;
 }
@@ -221,6 +225,17 @@ function categoryLabel(room) {
   animation: follow-preview-live-pulse 2.2s ease-in-out infinite;
 }
 
+.follow-preview-grid--hide-live-frame .follow-preview-item--live .follow-preview-cover-wrap {
+  border-color: transparent;
+  box-shadow: none;
+  animation: none;
+}
+
+.follow-preview-grid--hide-live-frame .follow-preview-item--replay .follow-preview-cover-wrap {
+  border-color: transparent;
+  box-shadow: none;
+}
+
 .follow-preview-item--replay .follow-preview-cover-wrap {
   border-color: var(--primary-border-solid);
   box-shadow:
@@ -233,7 +248,7 @@ function categoryLabel(room) {
   opacity: 0.82;
 }
 
-.follow-preview-item--super {
+.follow-preview-grid:not(.follow-preview-grid--sidebar) .follow-preview-item--super {
   border-radius: 8px;
   background: var(--follow-preview-super-bg, var(--follow-state-super-bg, #3a2048));
   padding: .2rem;
@@ -389,12 +404,17 @@ function categoryLabel(room) {
   padding: .06rem .18rem;
 }
 
+.follow-preview-grid--sidebar {
+  --follow-preview-cols: 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .follow-preview-item--offline .follow-preview-anchor {
   color: var(--muted);
 }
 
 .follow-preview-grid--drawer {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  --follow-preview-cols: 5;
   gap: .22rem .14rem;
   padding: 0;
   justify-items: stretch;
@@ -435,6 +455,7 @@ function categoryLabel(room) {
 .follow-preview-grid--drawer .follow-preview-item--drawer-super {
   background: var(--sidebar-follow-super-bg);
   color: var(--follow-state-on-text);
+  box-shadow: 0 0 0 2px var(--follow-state-super-accent);
 }
 
 .follow-preview-grid--drawer .follow-preview-cover-wrap {

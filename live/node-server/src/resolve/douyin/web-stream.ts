@@ -44,13 +44,183 @@ async function bootstrapCookie(): Promise<string> {
   return seed;
 }
 
-export async function fetchDouyinSessionCookie(): Promise<string> {
-  if (sessionCookie && Date.now() - sessionCookieAt < SESSION_COOKIE_TTL_MS) {
+export function clearDouyinSessionCookie(): void {
+  sessionCookie = null;
+  sessionCookieAt = 0;
+}
+
+export async function fetchDouyinSessionCookie(force = false): Promise<string> {
+  if (!force && sessionCookie && Date.now() - sessionCookieAt < SESSION_COOKIE_TTL_MS) {
     return sessionCookie;
   }
   sessionCookie = await bootstrapCookie();
   sessionCookieAt = Date.now();
   return sessionCookie;
+}
+
+function isDouyinRiskControlBody(text: string): boolean {
+  const trimmed = text.trim();
+  return !trimmed || trimmed.startsWith("<!DOCTYPE") || trimmed.startsWith("<html");
+}
+
+function decodeHtmlEscapes(value: string): string {
+  return value.replace(/\\u0026/g, "&").replace(/\\\//g, "/");
+}
+
+function lastMatchBefore(html: string, end: number, re: RegExp): RegExpMatchArray | null {
+  const slice = html.slice(0, Math.max(0, end));
+  const matches = [...slice.matchAll(re)];
+  return matches.at(-1) || null;
+}
+
+function extractEscapedUrlMap(html: string, key: string): Record<string, string> {
+  const marker = `\\"${key}\\":{`;
+  const start = html.indexOf(marker);
+  if (start < 0) return {};
+  const block = html.slice(start, start + 12_000);
+  const map: Record<string, string> = {};
+  const re = /\\"([A-Z0-9_]+)\\":\\"((?:https?:\\\/\\\/|http:\\\/\\\/)[^"\\]*(?:\\u0026[^"\\]*)*)\\"/g;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(block))) {
+    map[match[1]] = decodeHtmlEscapes(match[2]);
+  }
+  return map;
+}
+
+async function fetchRoomPageHtml(webRid: string, cookie: string): Promise<string> {
+  const res = await fetch(`https://live.douyin.com/${webRid}`, {
+    headers: {
+      ...PC_HEADERS,
+      referer: `https://live.douyin.com/${webRid}`,
+      cookie,
+    },
+    redirect: "follow",
+    signal: AbortSignal.timeout(15_000),
+  });
+  if (!res.ok) {
+    throw new Error(`抖音房间页 HTTP ${res.status}`);
+  }
+  return res.text();
+}
+
+function parseRoomDataFromHtml(html: string, webRid: string): DouyinRoomData | null {
+  const flvIdx = html.indexOf('\\"flv_pull_url\\":{');
+  if (flvIdx < 0) return null;
+
+  const flvMap = extractEscapedUrlMap(html, "flv_pull_url");
+  const hlsMap = extractEscapedUrlMap(html, "hls_pull_url_map");
+  if (!Object.keys(flvMap).length && !Object.keys(hlsMap).length) return null;
+
+  const idMatch = lastMatchBefore(html, flvIdx, /\\"id_str\\":\\"(\d+)\\"/g);
+  const statusMatch = lastMatchBefore(html, flvIdx, /\\"status\\":(\d+)/g);
+  const titleMatch = lastMatchBefore(html, flvIdx, /\\"title\\":\\"([^"\\]+)\\"/g);
+  const nickMatch = lastMatchBefore(html, flvIdx, /\\"nickname\\":\\"([^"\\]+)\\"/g);
+
+  const roomData: DouyinRoomData = {
+    id_str: idMatch?.[1] || "",
+    status: Number(statusMatch?.[1] || 0),
+    title: titleMatch?.[1] || "",
+    anchor_name: nickMatch?.[1] || "",
+    owner: nickMatch?.[1] ? { nickname: nickMatch[1] } : undefined,
+    live_url: `https://live.douyin.com/${webRid}`,
+    stream_url: {
+      flv_pull_url: flvMap,
+      hls_pull_url_map: hlsMap,
+    },
+  };
+  return roomData;
+}
+
+async function fetchRoomDataFromPage(webRid: string): Promise<DouyinRoomData> {
+  const cookie = await fetchDouyinSessionCookie();
+  const html = await fetchRoomPageHtml(webRid, cookie);
+  const roomData = parseRoomDataFromHtml(html, webRid);
+  if (!roomData) {
+    throw new Error("抖音房间页未解析到流地址");
+  }
+  if (roomData.status === 4) {
+    return roomData;
+  }
+  return normalizeLiveStreamData(roomData);
+}
+
+function buildEnterApi(webRid: string): string {
+  const params = new URLSearchParams({
+    aid: "6383",
+    app_name: "douyin_web",
+    live_id: "1",
+    device_platform: "web",
+    language: "zh-CN",
+    enter_from: "web_live",
+    cookie_enabled: "true",
+    screen_width: "1920",
+    screen_height: "1080",
+    browser_language: "zh-CN",
+    browser_platform: "Win32",
+    browser_name: "Chrome",
+    browser_version: "141.0.0.0",
+    web_rid: webRid,
+    is_need_double_stream: "false",
+    msToken: "",
+  });
+  const query = params.toString();
+  const aBogus = abSign(query, PC_HEADERS["user-agent"]);
+  return `https://live.douyin.com/webcast/room/web/enter/?${query}&a_bogus=${encodeURIComponent(aBogus)}`;
+}
+
+async function fetchEnterRoomData(webRid: string, cookie: string): Promise<DouyinRoomData> {
+  const api = buildEnterApi(webRid);
+  const res = await fetch(api, {
+    headers: {
+      ...PC_HEADERS,
+      referer: `https://live.douyin.com/${webRid}`,
+      cookie,
+    },
+    signal: AbortSignal.timeout(15_000),
+  });
+  if (!res.ok) {
+    throw new Error(`抖音房间接口 HTTP ${res.status}`);
+  }
+  const text = await res.text();
+  if (isDouyinRiskControlBody(text)) {
+    throw new Error("抖音接口触发风控");
+  }
+
+  let json: {
+    status_code?: number;
+    data?: {
+      data?: DouyinRoomData[];
+      user?: { nickname?: string };
+      prompts?: string;
+      message?: string;
+    };
+  };
+  try {
+    json = JSON.parse(text) as typeof json;
+  } catch {
+    throw new Error("抖音接口返回非 JSON");
+  }
+
+  const payload = json.data;
+  if (!payload?.data?.length) {
+    const prompt = payload?.prompts || payload?.message || "";
+    if (json.status_code === 4001038 || prompt.includes("无法查看")) {
+      throw new Error(prompt || "该直播间暂不可查看");
+    }
+    throw new Error(prompt || "抖音房间信息获取失败");
+  }
+
+  const roomData = payload.data[0];
+  if (!roomData) {
+    throw new Error("VR live is not supported");
+  }
+
+  roomData.anchor_name = payload.user?.nickname || roomData.owner?.nickname || "";
+  roomData.live_url = `https://live.douyin.com/${webRid}`;
+  if (roomData.status === 4) {
+    return roomData;
+  }
+  return normalizeLiveStreamData(roomData);
 }
 
 export interface DouyinUserFollowInfo {
@@ -192,86 +362,74 @@ function normalizeLiveStreamData(roomData: DouyinRoomData): DouyinRoomData {
 }
 
 export async function fetchWebStreamData(webRid: string): Promise<DouyinRoomData> {
+  const rid = String(webRid).trim();
+  let lastError: Error | null = null;
+
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const cookie = await fetchDouyinSessionCookie(attempt > 0);
+      return await fetchEnterRoomData(rid, cookie);
+    } catch (err) {
+      lastError = err instanceof Error ? err : new Error(String(err));
+      const retryable =
+        lastError.message.includes("风控") ||
+        lastError.message.includes("非 JSON") ||
+        lastError.message.includes("获取失败");
+      if (!retryable || attempt > 0) break;
+      clearDouyinSessionCookie();
+    }
+  }
+
+  try {
+    return await fetchRoomDataFromPage(rid);
+  } catch (pageErr) {
+    const pageMessage = pageErr instanceof Error ? pageErr.message : String(pageErr);
+    throw new Error(lastError?.message || pageMessage || "抖音接口触发风控，请稍后重试");
+  }
+}
+
+export interface DouyinRoomInfoByUser {
+  create_time?: number;
+  finish_time?: number;
+  status?: number;
+}
+
+/** 通过主播 uid 拉取当前场次信息（enter 接口常无 create_time） */
+export async function fetchDouyinRoomInfoByUser(
+  anchorUserId: string,
+  webRid: string,
+): Promise<DouyinRoomInfoByUser | null> {
+  const uid = String(anchorUserId || "").trim();
+  if (!uid) return null;
+
   const params = new URLSearchParams({
     aid: "6383",
     app_name: "douyin_web",
     live_id: "1",
     device_platform: "web",
-    language: "zh-CN",
-    enter_from: "web_live",
-    cookie_enabled: "true",
-    screen_width: "1920",
-    screen_height: "1080",
-    browser_language: "zh-CN",
-    browser_platform: "Win32",
-    browser_name: "Chrome",
-    browser_version: "141.0.0.0",
-    web_rid: webRid,
-    is_need_double_stream: "false",
-    msToken: "",
+    user_id: uid,
   });
   const query = params.toString();
-  const baseApi = `https://live.douyin.com/webcast/room/web/enter/?${query}`;
-  const aBogus = abSign(query, PC_HEADERS["user-agent"]);
-  const api = `${baseApi}&a_bogus=${encodeURIComponent(aBogus)}`;
+  const api = `https://live.douyin.com/webcast/room/info_by_user/?${query}&a_bogus=${encodeURIComponent(abSign(query, PC_HEADERS["user-agent"]))}`;
   const cookie = await fetchDouyinSessionCookie();
 
   const res = await fetch(api, {
-    headers: {
-      ...PC_HEADERS,
-      referer: `https://live.douyin.com/${webRid}`,
-      cookie,
-    },
-    signal: AbortSignal.timeout(15_000),
+    headers: { ...PC_HEADERS, referer: `https://live.douyin.com/${webRid}`, cookie },
+    signal: AbortSignal.timeout(12_000),
   });
-  if (!res.ok) {
-    throw new Error(`抖音房间接口 HTTP ${res.status}`);
-  }
-  const text = await res.text();
-  if (!text) {
-    throw new Error("抖音接口触发风控");
-  }
+  if (!res.ok) return null;
 
-  let json: {
-    status_code?: number;
-    data?: {
-      data?: DouyinRoomData[];
-      user?: { nickname?: string };
-      prompts?: string;
-      message?: string;
-    };
-  };
+  const text = await res.text();
+  if (!text || text.startsWith("<!DOCTYPE")) return null;
+
+  let json: { status_code?: number; data?: DouyinRoomInfoByUser };
   try {
     json = JSON.parse(text) as typeof json;
   } catch {
-    throw new Error("抖音接口返回非 JSON");
+    return null;
   }
-
-  const payload = json.data;
-  if (!payload?.data?.length) {
-    const prompt = payload?.prompts || payload?.message || "";
-    if (json.status_code === 4001038 || prompt.includes("无法查看")) {
-      throw new Error(prompt || "该直播间暂不可查看");
-    }
-    if (!prompt && !text.trim()) {
-      throw new Error("抖音接口触发风控，请稍后重试");
-    }
-    throw new Error(prompt || "抖音房间信息获取失败");
-  }
-
-  const roomData = payload.data[0];
-  if (!roomData) {
-    throw new Error("VR live is not supported");
-  }
-
-  roomData.anchor_name = payload.user?.nickname || roomData.owner?.nickname || "";
-  roomData.live_url = `https://live.douyin.com/${webRid}`;
-
-  if (roomData.status === 4) {
-    return roomData;
-  }
-
-  return normalizeLiveStreamData(roomData);
+  if (Number(json.status_code || 0) !== 0 || !json.data) return null;
+  return json.data;
 }
 
 export async function fetchDouyinUserFollowInfo(

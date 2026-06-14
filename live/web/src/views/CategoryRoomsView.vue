@@ -39,6 +39,7 @@ import { roomKey } from "../api/browse.js";
 import { getPlatform, supportsBrowse } from "../config/platforms";
 import { useBrowse } from "../composables/useBrowse.js";
 import { preloadPlayView } from "../utils/preloadPlayView.js";
+import { saveBrowseContext } from "../utils/browseContext.js";
 
 const props = defineProps({
   site: { type: String, required: true },
@@ -71,6 +72,14 @@ async function loadPage(reset = true) {
   }
   if (!categories.value.length) await loadCategories();
   const category = findCategory(props.cid, props.pid);
+  if (category?.cid != null) {
+    saveBrowseContext(props.site, {
+      type: "category",
+      cid: category.cid,
+      pid: category.pid,
+      name: category.name || "",
+    });
+  }
   await loadCategoryRooms(category, reset);
 }
 

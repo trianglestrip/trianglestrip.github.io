@@ -404,7 +404,7 @@ watch(
   () => [props.site, props.id, payload.value?.room_id, payload.value?.is_live, payload.value?.status, payload.value?.room_state],
   () => {
     syncOnlineFromPayload();
-    if (props.site === "douyu" || props.site === "huya" || props.site === "douyin") {
+    if (props.site === "douyu" || props.site === "huya" || props.site === "douyin" || props.site === "bilibili") {
       scheduleDeferredOnlineRefresh();
     }
   },
@@ -474,7 +474,7 @@ async function retryPlaybackAfterError() {
     playUrl.value = "";
     destroy();
     await refetchRoom({ force: true });
-    await startPlayback();
+    await startPlayback({ freshUrl: true, forceUrl: true });
   } catch (err) {
     setStatus(`播放失败: ${err.message}`, "err");
   } finally {
@@ -501,6 +501,7 @@ watch(muted, () => {
 function buildPlayCallbacks(url, { onReadyExtra } = {}) {
   return {
     site: siteRef.value,
+    roomId: String(roomInput.value || payload.value?.room_id || "").trim(),
     onError: () => {
       if (playRetrying) {
         setStatus("播放出错", "err");

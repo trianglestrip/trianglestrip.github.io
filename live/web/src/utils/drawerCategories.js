@@ -5,6 +5,7 @@ export const DRAWER_EXCLUDED_GROUP = /颜值|正能量|语音|科技文化/;
 export const DRAWER_GROUP_ORDER = {
   douyu: ["1", "15", "9", "22", "2"],
   huya: ["1", "3", "8", "2"],
+  douyin: ["1", "2", "3", "4", "5", "6", "7", "yule"],
 };
 
 /** 收起侧栏缩写（按平台原生一级 id） */
@@ -21,6 +22,9 @@ export const DRAWER_GROUP_SHORT = {
     2: "单机",
     3: "手游",
     8: "娱乐",
+  },
+  douyin: {
+    yule: "娱乐",
   },
 };
 
@@ -57,9 +61,9 @@ export function sortDrawerCategoryGroups(groups, site) {
   });
 }
 
-/** 斗鱼 / 虎牙 / 抖音游戏分类：过滤并排序 */
+/** 斗鱼 / 虎牙 / 抖音分类：过滤并排序 */
 export function normalizeBrowseCategoryGroups(groups, site) {
-  if (site === "douyin") return groups || [];
+  if (site === "douyin") return sortDrawerCategoryGroups(groups || [], site);
   if (site !== "douyu" && site !== "huya") return groups || [];
   const filtered = filterDrawerCategoryGroups(groups, site);
   return sortDrawerCategoryGroups(filtered, site);

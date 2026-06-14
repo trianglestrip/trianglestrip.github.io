@@ -31,8 +31,12 @@ export function createResolveService(cache: ResolveCache): ResolveService {
     if (!force) {
       const cached = cache.getMeta(site, roomId);
       if (cached) {
-        cached.cached_meta = true;
-        return cached as MetaLike & Record<string, unknown>;
+        const anchorName = String(cached.anchor_name || "").trim();
+        const needsAnchorRefresh = site === "bilibili" && !anchorName && !cached.offline;
+        if (!needsAnchorRefresh) {
+          cached.cached_meta = true;
+          return cached as MetaLike & Record<string, unknown>;
+        }
       }
     }
     const adapter = getPlatform(site)?.resolve;
@@ -64,7 +68,8 @@ export function createResolveService(cache: ResolveCache): ResolveService {
       throw new Error(`暂不支持平台: ${site}`);
     }
     const tier = await adapter.resolveTier(meta, qualityName);
-    cache.setTier(site, roomId, qualityName, tier as unknown as Record<string, unknown>);
+    const tierTtl = site === "bilibili" ? 30 : undefined;
+    cache.setTier(site, roomId, qualityName, tier as unknown as Record<string, unknown>, { ttl: tierTtl });
     return tier as TierLike & Record<string, unknown>;
   }
 

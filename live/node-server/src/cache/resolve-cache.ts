@@ -106,8 +106,14 @@ export class ResolveCache {
     return data && typeof data === "object" ? (data as Record<string, unknown>) : null;
   }
 
-  setTier(site: string, roomId: string, qualityName: string, tier: Record<string, unknown>): void {
-    this.set(tierKey(site, roomId, qualityName), tier, { ttl: TIER_TTL });
+  setTier(
+    site: string,
+    roomId: string,
+    qualityName: string,
+    tier: Record<string, unknown>,
+    opts?: { ttl?: number },
+  ): void {
+    this.set(tierKey(site, roomId, qualityName), tier, { ttl: opts?.ttl ?? TIER_TTL });
   }
 
   getPayload(

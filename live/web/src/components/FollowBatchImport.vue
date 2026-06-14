@@ -170,6 +170,11 @@ function submit() {
   background: var(--follow-tag-huya-bg, var(--sidebar-tag-huya-bg));
 }
 
+.platform-radio--bilibili {
+  color: var(--platform-bilibili-text);
+  background: var(--follow-tag-bilibili-bg, var(--sidebar-tag-bilibili-bg));
+}
+
 .platform-radio--douyin {
   color: var(--platform-douyin-text);
   background: var(--follow-tag-douyin-bg, var(--sidebar-tag-douyin-bg));
@@ -185,6 +190,12 @@ function submit() {
   border-color: color-mix(in srgb, var(--platform-huya) 55%, var(--border));
   background: var(--follow-filter-huya-active-bg, var(--sidebar-filter-huya-active-bg));
   color: var(--platform-huya-text-em);
+}
+
+.platform-radio--bilibili.active {
+  border-color: color-mix(in srgb, var(--platform-bilibili) 55%, var(--border));
+  background: var(--follow-filter-bilibili-active-bg, var(--sidebar-filter-bilibili-active-bg));
+  color: var(--platform-bilibili-text-em);
 }
 
 .platform-radio--douyin.active {

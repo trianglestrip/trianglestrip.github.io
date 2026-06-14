@@ -55,14 +55,18 @@ const douyinBrowse: BrowseAdapter = {
   fetchCategoryRooms: async (cid, page, pid) => {
     const groups = await fetchDouyinGameCategories();
     let partitionName = "";
+    let partitionType = pid;
     for (const group of groups) {
       const hit = group.list.find((item) => String(item.cid) === String(cid));
       if (hit) {
         partitionName = hit.name;
+        if (!partitionType && hit.pid != null) {
+          partitionType = String(hit.pid);
+        }
         break;
       }
     }
-    return fetchDouyinGameRooms(cid, page, pid || "1", partitionName);
+    return fetchDouyinGameRooms(cid, page, partitionType || "1", partitionName);
   },
 };
 

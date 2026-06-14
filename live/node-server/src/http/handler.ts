@@ -8,6 +8,7 @@ import type { ResolveService } from "../resolve/service.js";
 import { buildTimeReport } from "../resolve/timing.js";
 import { fetchFollowSnapshots } from "../follow/status.js";
 import { streamDouyinDanmaku } from "../danmaku/douyin.js";
+import { streamBilibiliDanmaku } from "../danmaku/bilibili.js";
 import { getPlatform } from "../platforms/registry.js";
 import { crossCategoryMapPayload } from "../browse/category-cross-map.js";
 import { refreshCategoryCaches, resolveCategories } from "../browse/category-cache.js";
@@ -412,6 +413,25 @@ export async function handleApi(
     }
     try {
       await streamDouyinDanmaku(room, req, res, ctx.config);
+    } catch (err) {
+      if (!res.headersSent) {
+        sendApiError(res, ctx.config, err);
+      } else if (!res.writableEnded) {
+        res.end();
+      }
+    }
+    return true;
+  }
+
+  if (pathname === "/api/bilibili/danmaku/stream" && req.method === "GET") {
+    const query = readQuery(req);
+    const room = query.get("room") || query.get("id") || "";
+    if (!room) {
+      sendJson(res, ctx.config, { ok: false, error: "缺少 room 参数" }, 400);
+      return true;
+    }
+    try {
+      await streamBilibiliDanmaku(room, req, res, ctx.config);
     } catch (err) {
       if (!res.headersSent) {
         sendApiError(res, ctx.config, err);

@@ -2,11 +2,11 @@ import { abSign } from "../resolve/douyin/ab-sign.js";
 import {
   DOUYIN_PC_HEADERS,
   fetchDouyinSessionCookie,
+  fetchDouyinRoomInfoByUser,
   type DouyinRoomData,
 } from "../resolve/douyin/web-stream.js";
 import { formatCount, formatPlainCount } from "../utils/format-online.js";
-import { getDouyinRoomMeta } from "../danmaku/douyin-meta.js";
-import { normalizeUnixTime } from "../danmaku/protobuf-lite.js";
+import { isPlausibleLiveStartAt, normalizeUnixTime } from "../danmaku/protobuf-lite.js";
 import type { FollowState } from "./status.js";
 
 function pickText(...values: unknown[]): string {
@@ -51,17 +51,40 @@ export function pickDouyinCategory(room: DouyinRoomData): string {
 export function pickDouyinLiveTimes(
   room: DouyinRoomData,
   state: FollowState,
+  session?: { create_time?: number; finish_time?: number },
 ): { liveStartAt: number; lastLiveAt: number } {
   const start = pickUnixTime(
     room.create_time,
     room.start_time,
     room.open_time,
     room.live_start_time,
+    session?.create_time,
   );
   if (state === "offline") {
-    return { liveStartAt: 0, lastLiveAt: start };
+    const last = pickUnixTime(session?.finish_time, session?.create_time, start);
+    return { liveStartAt: 0, lastLiveAt: last };
   }
   return { liveStartAt: start, lastLiveAt: 0 };
+}
+
+export async function resolveDouyinLiveTimes(
+  room: DouyinRoomData,
+  webRid: string,
+  state: FollowState,
+): Promise<{ liveStartAt: number; lastLiveAt: number }> {
+  let times = pickDouyinLiveTimes(room, state);
+  if (times.liveStartAt || (state === "offline" && times.lastLiveAt)) {
+    return times;
+  }
+  const anchorId = String(room.owner?.id_str || "").trim();
+  if (!anchorId) return times;
+  const session = await fetchDouyinRoomInfoByUser(anchorId, webRid);
+  if (!session) return times;
+  times = pickDouyinLiveTimes(room, state, session);
+  if (state === "live" && times.liveStartAt && !isPlausibleLiveStartAt(times.liveStartAt)) {
+    return { liveStartAt: 0, lastLiveAt: 0 };
+  }
+  return times;
 }
 
 function pickFanGroupFromRoom(room: DouyinRoomData): string {
@@ -100,6 +123,26 @@ async function signedDouyinGet(path: string, params: Record<string, string>, ref
   }
 }
 
+function pickRanklistCount(data: Record<string, unknown>): string {
+  const ranks = Array.isArray(data.ranks) ? data.ranks : [];
+  const total = data.total ?? data.total_user ?? data.count ?? data.total_count;
+  const totalNum = Number(total);
+  if (Number.isFinite(totalNum) && totalNum > 0) {
+    return formatPlainCount(totalNum);
+  }
+  if (ranks.length > 0) {
+    return formatCount(ranks.length);
+  }
+  const invisible = Number(data.invisible_total ?? NaN);
+  if (Number.isFinite(invisible) && invisible > 0) {
+    return formatPlainCount(invisible);
+  }
+  if (Number.isFinite(totalNum) && totalNum === 0) {
+    return "0";
+  }
+  return "";
+}
+
 async function fetchDouyinVipCount(internalRoomId: string, webRid: string): Promise<string> {
   const roomId = String(internalRoomId || "").trim();
   if (!roomId) return "";
@@ -129,13 +172,40 @@ async function fetchDouyinVipCount(internalRoomId: string, webRid: string): Prom
   );
   if (!json || Number(json.status_code || 0) !== 0) return "";
   const data = (json.data || {}) as Record<string, unknown>;
-  const total = data.total ?? data.total_user ?? data.count ?? data.total_count;
-  const totalNum = Number(total);
-  if (Number.isFinite(totalNum) && totalNum > 0) {
-    return formatPlainCount(totalNum);
-  }
-  const ranks = Array.isArray(data.ranks) ? data.ranks : [];
-  return ranks.length ? formatCount(ranks.length) : "";
+  return pickRanklistCount(data);
+}
+
+/** 本场粉丝团成员榜（rank_type=18，无需登录） */
+async function fetchDouyinFanGroupCount(internalRoomId: string, webRid: string): Promise<string> {
+  const roomId = String(internalRoomId || "").trim();
+  if (!roomId) return "";
+  const json = await signedDouyinGet(
+    "/webcast/ranklist/audience/",
+    {
+      aid: "6383",
+      app_name: "douyin_web",
+      live_id: "1",
+      device_platform: "web",
+      language: "zh-CN",
+      enter_from: "web_live",
+      cookie_enabled: "true",
+      screen_width: "1920",
+      screen_height: "1080",
+      browser_language: "zh-CN",
+      browser_platform: "Win32",
+      browser_name: "Chrome",
+      browser_version: "141.0.0.0",
+      webcast_sdk_version: "2450",
+      room_id: roomId,
+      rank_type: "18",
+      ignoreToast: "true",
+      msToken: "",
+    },
+    `https://live.douyin.com/${webRid}`,
+  );
+  if (!json || Number(json.status_code || 0) !== 0) return "";
+  const data = (json.data || {}) as Record<string, unknown>;
+  return pickRanklistCount(data);
 }
 
 export async function fetchDouyinAudienceExtras(
@@ -143,10 +213,15 @@ export async function fetchDouyinAudienceExtras(
   webRid: string,
 ): Promise<{ fanGroup: string; vip: string }> {
   const internalRoomId = String(room.id_str || room.id || "").trim();
-  const fanGroup = pickFanGroupFromRoom(room);
+  let fanGroup = pickFanGroupFromRoom(room);
   let vip = "";
   if (Number(room.status || 0) === 2) {
-    vip = await fetchDouyinVipCount(internalRoomId, webRid);
+    const [vipCount, fanCount] = await Promise.all([
+      fetchDouyinVipCount(internalRoomId, webRid),
+      fanGroup ? Promise.resolve("") : fetchDouyinFanGroupCount(internalRoomId, webRid),
+    ]);
+    vip = vipCount;
+    if (!fanGroup) fanGroup = fanCount;
   }
   return { fanGroup, vip };
 }

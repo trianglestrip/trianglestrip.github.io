@@ -12,6 +12,7 @@
   --follow-tag-default-bg: var(--sidebar-tag-default-bg);
   --follow-tag-douyu-bg: var(--sidebar-tag-douyu-bg);
   --follow-tag-huya-bg: var(--sidebar-tag-huya-bg);
+  --follow-tag-bilibili-bg: var(--sidebar-tag-bilibili-bg);
   --follow-tag-douyin-bg: var(--sidebar-tag-douyin-bg);
   --follow-filter-bg: var(--sidebar-chip-bg);
   --follow-filter-active-bg: var(--sidebar-chip-active-bg);
@@ -19,6 +20,8 @@
   --follow-filter-douyu-active-bg: var(--sidebar-filter-douyu-active-bg);
   --follow-filter-huya-bg: var(--sidebar-filter-huya-bg);
   --follow-filter-huya-active-bg: var(--sidebar-filter-huya-active-bg);
+  --follow-filter-bilibili-bg: var(--sidebar-filter-bilibili-bg);
+  --follow-filter-bilibili-active-bg: var(--sidebar-filter-bilibili-active-bg);
   --follow-filter-douyin-bg: var(--sidebar-filter-douyin-bg);
   --follow-filter-douyin-active-bg: var(--sidebar-filter-douyin-active-bg);
   --follow-online-bg: var(--sidebar-online-bg);
@@ -103,40 +106,66 @@
   color: var(--follow-state-on-text);
 }
 
-.play-side .follow-preview-item--live {
-  border-radius: 8px;
+/* 推荐 Tab 截图预览保持无状态底色 */
+.play-side .recommend-tab .follow-preview-grid .follow-preview-item--live,
+.play-side .recommend-tab .follow-preview-grid .follow-preview-item--replay,
+.play-side .recommend-tab .follow-preview-grid .follow-preview-item--offline,
+.play-side .recommend-tab .follow-preview-grid .follow-preview-item--super {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+}
+
+/* 关注 Tab 截图预览：与列表模式一致的状态底色 */
+.play-side .follow-tab .follow-preview-grid .follow-preview-item--live {
+  border-radius: 6px;
   padding: .2rem;
-  background: var(--follow-state-live-bg);
-}
-
-.play-side .follow-preview-item--replay {
-  border-radius: 8px;
-  padding: .2rem;
-  background: var(--follow-state-replay-bg);
-}
-
-.play-side .follow-preview-item--offline {
-  border-radius: 8px;
-  padding: .2rem;
-  background: var(--follow-state-offline-bg);
-}
-
-.play-side .follow-preview-item--super {
-  background: var(--follow-state-super-bg);
-}
-
-.play-side .follow-preview-item--live,
-.play-side .follow-preview-item--replay,
-.play-side .follow-preview-item--super {
+  background: var(--follow-item-live-bg, var(--follow-state-live-bg));
   color: var(--follow-state-on-text);
 }
 
-.play-side .follow-preview-item--offline {
+.play-side .follow-tab .follow-preview-grid .follow-preview-item--replay {
+  border-radius: 6px;
+  padding: .2rem;
+  background: var(--follow-item-replay-bg, var(--follow-state-replay-bg));
+  color: var(--follow-state-on-text);
+}
+
+.play-side .follow-tab .follow-preview-grid .follow-preview-item--offline {
+  border-radius: 6px;
+  padding: .2rem;
+  background: var(--follow-item-offline-bg, var(--follow-state-offline-bg));
   color: var(--follow-state-muted-text);
 }
 
-.play-side .follow-preview-item--offline .follow-preview-anchor {
+.play-side .follow-tab .follow-preview-grid .follow-preview-item--super {
+  border-radius: 6px;
+  padding: .2rem;
+  background: var(--follow-item-super-bg, var(--follow-state-super-bg));
+  color: var(--follow-state-on-text);
+}
+
+.play-side .follow-tab .follow-preview-grid .follow-preview-item--super.follow-preview-item--live {
+  background: var(--follow-item-super-live-bg, var(--follow-state-super-live-bg));
+}
+
+.play-side .follow-tab .follow-preview-grid .follow-preview-item--super.follow-preview-item--replay {
+  background: var(--follow-item-super-replay-bg, var(--follow-state-super-bg));
+}
+
+.play-side .follow-tab .follow-preview-grid .follow-preview-item--super.follow-preview-item--offline {
+  background: var(--follow-item-super-offline-bg, var(--follow-state-super-offline-bg));
   color: var(--follow-state-muted-text);
+}
+
+.play-side .follow-tab .follow-preview-grid .follow-preview-item--offline .follow-preview-anchor {
+  color: var(--follow-state-muted-text);
+}
+
+.play-side .follow-tab .follow-preview-grid,
+.play-side .recommend-tab .follow-preview-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .play-side .follow-platform-tag {
@@ -149,6 +178,10 @@
 
 .play-side .follow-platform-tag--huya {
   background: var(--sidebar-tag-huya-bg);
+}
+
+.play-side .follow-platform-tag--bilibili {
+  background: var(--sidebar-tag-bilibili-bg);
 }
 
 .play-side .follow-platform-tag--douyin {

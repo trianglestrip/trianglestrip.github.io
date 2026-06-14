@@ -4,6 +4,7 @@
     :class="{
       'nav-platform-menu--cross': isCrossSite,
       'nav-platform-menu--embedded': embedded,
+      'nav-platform-menu--dense': isCompactNav,
     }"
     :role="embedded ? 'region' : 'tooltip'"
     @mouseenter="!embedded && $emit('pointerenter')"
@@ -32,7 +33,9 @@
           :key="section.id"
           class="nav-platform-menu__column"
         >
-          <p class="nav-platform-menu__column-title">{{ section.name }}</p>
+          <p class="nav-platform-menu__column-title" :title="section.name">
+            {{ isCompactNav ? section.short : section.name }}
+          </p>
           <div class="nav-platform-menu__items">
             <RouterLink
               v-for="item in section.items"
@@ -80,6 +83,7 @@ const categoryCache = new Map();
 const hotCache = { data: null, promise: null };
 
 const isCrossSite = computed(() => props.platformId === "all");
+const isCompactNav = computed(() => props.platformId === "douyin" && !props.embedded);
 const activeCrossKey = computed(() => {
   if (route.name === "all-category-rooms") {
     return String(route.params.key || "").trim();
@@ -218,25 +222,50 @@ watch(
 .nav-platform-menu__columns {
   display: flex;
   flex-wrap: nowrap;
-  gap: .65rem;
+  gap: .35rem;
   overflow-x: auto;
   scrollbar-width: thin;
 }
 
 .nav-platform-menu__column {
   flex: 0 0 auto;
-  min-width: 6.5rem;
+  width: 5.5rem;
+  min-width: 0;
+}
+
+.nav-platform-menu--dense .nav-platform-menu__column {
+  width: 6.75rem;
+}
+
+.nav-platform-menu--dense {
+  padding: .4rem .4rem .45rem;
+}
+
+.nav-platform-menu--dense .nav-platform-menu__columns {
+  scrollbar-width: none;
+}
+
+.nav-platform-menu--dense .nav-platform-menu__columns::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-platform-menu__column-title {
   margin: 0 0 .28rem;
-  padding: 0 .1rem .28rem;
+  padding: 0 .06rem .28rem;
   border-bottom: 1px solid var(--chrome-border);
   font-size: .78rem;
   font-weight: 700;
   line-height: 1.25;
   color: var(--muted);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-platform-menu--dense .nav-platform-menu__column-title {
+  font-size: .72rem;
+  text-align: center;
+  padding-inline: 0;
 }
 
 .nav-platform-menu__items {
@@ -248,7 +277,8 @@ watch(
 .nav-platform-menu__item {
   display: block;
   margin: 0;
-  padding: .16rem .12rem;
+  min-width: 0;
+  padding: .14rem .06rem;
   border-radius: 4px;
   color: var(--text);
   font-size: .76rem;
@@ -259,6 +289,11 @@ watch(
   transition: color .12s, background .12s;
 }
 
+.nav-platform-menu--dense .nav-platform-menu__item {
+  font-size: .74rem;
+  padding: .12rem .06rem;
+}
+
 .nav-platform-menu__item:hover {
   color: var(--amber);
   background: var(--sidebar-chip-hover-bg);
@@ -266,7 +301,7 @@ watch(
 
 .nav-platform-menu__hot {
   display: grid;
-  grid-template-columns: repeat(3, minmax(6rem, 1fr));
+  grid-template-columns: repeat(3, minmax(4.75rem, 1fr));
   gap: 0;
   max-height: min(60vh, 22rem);
   overflow-y: auto;
@@ -274,9 +309,9 @@ watch(
 }
 
 .nav-platform-menu--cross {
-  min-width: 16rem;
+  min-width: 14rem;
   width: auto;
-  max-width: min(92vw, 26rem);
+  max-width: min(92vw, 22rem);
   padding: .45rem .5rem .45rem;
 }
 

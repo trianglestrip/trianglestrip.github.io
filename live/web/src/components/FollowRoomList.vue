@@ -32,6 +32,7 @@
         :src="room.avatar"
         :label="room.anchor?.slice(0, 1) || '?'"
         :state="room.state"
+        :is-super="room.super"
         :compact="compact"
         :grid="layout === 'grid'"
         :hide-live-frame="hideLiveFrame"
@@ -290,6 +291,11 @@ function onItemClick(room) {
   background: var(--follow-tag-huya-bg, var(--sidebar-tag-huya-bg));
 }
 
+.follow-platform-tag--bilibili {
+  color: var(--platform-bilibili-text);
+  background: var(--follow-tag-bilibili-bg, var(--sidebar-tag-bilibili-bg));
+}
+
 .follow-platform-tag--douyin {
   color: var(--platform-douyin-text);
   background: var(--follow-tag-douyin-bg, var(--sidebar-tag-douyin-bg));
@@ -339,6 +345,7 @@ function onItemClick(room) {
 .follow-item--offline .follow-platform-tag,
 .follow-item--offline .follow-platform-tag--douyu,
 .follow-item--offline .follow-platform-tag--huya,
+.follow-item--offline .follow-platform-tag--bilibili,
 .follow-item--offline .follow-platform-tag--douyin {
   color: var(--follow-state-muted-text);
   background: var(--follow-meta-chip-bg, var(--dark-6));

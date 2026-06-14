@@ -1,40 +1,39 @@
-import {
-  bilibiliDanmakuWsUrl,
-  buildBilibiliAuthPacket,
-  buildBilibiliHeartbeatPacket,
-  fetchBilibiliDanmakuSession,
-} from "../../utils/bilibiliDanmaku.js";
+import { apiUrl } from "../../config/app.js";
 
-export async function connectBilibili(ctx, roomId) {
-  const { bindSocketHandlers, clearTimers, ensureParseWorker, messages, scheduleReconnect, status, wsRef, heartbeatRef } =
-    ctx;
+export function connectBilibili(ctx, roomId) {
+  const { eventSourceRef, messages, queueMsgs, scheduleReconnect, status, aliveRef } = ctx;
 
   messages.value = [];
-  status.value = "弹幕准备中…";
-  ensureParseWorker();
-
-  let session;
-  try {
-    session = await fetchBilibiliDanmakuSession(roomId);
-  } catch (err) {
-    status.value = `B 站弹幕参数获取失败：${err?.message || err}`;
-    scheduleReconnect();
-    return;
-  }
-
   status.value = "弹幕连接中…";
-  wsRef.current = new WebSocket(bilibiliDanmakuWsUrl(session));
-  bindSocketHandlers("bilibili");
+  const url = apiUrl(`/api/bilibili/danmaku/stream?room=${encodeURIComponent(roomId)}`);
+  eventSourceRef.current = new EventSource(url);
 
-  const prevOnOpen = wsRef.current.onopen;
-  wsRef.current.onopen = () => {
-    prevOnOpen?.();
-    wsRef.current.send(buildBilibiliAuthPacket(session));
-    clearTimers();
-    heartbeatRef.current = setInterval(() => {
-      if (wsRef.current?.readyState === WebSocket.OPEN) {
-        wsRef.current.send(buildBilibiliHeartbeatPacket());
-      }
-    }, 30000);
+  eventSourceRef.current.addEventListener("ready", () => {
+    status.value = "弹幕已连接";
+  });
+
+  eventSourceRef.current.addEventListener("chat", (event) => {
+    try {
+      const item = JSON.parse(event.data);
+      if (item?.user && item?.text) queueMsgs([item]);
+    } catch {
+      /* ignore malformed payload */
+    }
+  });
+
+  eventSourceRef.current.addEventListener("close", () => {
+    if (!aliveRef.current) return;
+    status.value = "弹幕重连中…";
+    scheduleReconnect();
+  });
+
+  eventSourceRef.current.onerror = () => {
+    if (!aliveRef.current) return;
+    if (eventSourceRef.current?.readyState === EventSource.CLOSED) {
+      status.value = "弹幕重连中…";
+      scheduleReconnect();
+      return;
+    }
+    status.value = "弹幕连接出错";
   };
 }

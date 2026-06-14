@@ -58,6 +58,6 @@ const label = computed(() => {
 
 .platform-cover-badge--bilibili {
   color: #fff;
-  background: #fb7299;
+  background: var(--platform-bilibili, #00a1d6);
 }
 </style>

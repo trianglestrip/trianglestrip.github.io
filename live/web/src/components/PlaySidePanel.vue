@@ -107,7 +107,8 @@
       </div>
       <FollowPreviewGrid
         v-if="previewCover"
-        drawer
+        sidebar
+        compact
         hide-live-frame
         :show-stats="false"
         :rooms="filteredFollows"
@@ -131,6 +132,7 @@
       <p v-else-if="!recommendPreviewRooms.length" class="recommend-hint">暂无推荐</p>
       <FollowPreviewGrid
         v-else
+        sidebar
         compact
         :show-stats="false"
         :rooms="recommendPreviewRooms"
@@ -1236,12 +1238,6 @@ onBeforeUnmount(() => {
 .follow-tab :deep(.follow-room-list--compact .follow-item) {
   padding: 0;
   gap: 0;
-}
-
-.follow-tab :deep(.follow-preview-grid--drawer) {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: .28rem .22rem;
-  padding: .35rem .4rem .5rem;
 }
 
 .follow-tab :deep(.follow-body) {

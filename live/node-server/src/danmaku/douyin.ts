@@ -5,6 +5,7 @@ import path from "node:path";
 import { gunzipSync } from "node:zlib";
 import { fileURLToPath } from "node:url";
 import type { ServerResponse } from "node:http";
+import WebSocket from "ws";
 import {
   DOUYIN_PC_HEADERS,
   fetchDouyinSessionCookie,
@@ -212,6 +213,15 @@ function parseDouyinPushFrame(message: ArrayBuffer): {
   return { logId, payload: body, needAck, internalExt, chats, meta };
 }
 
+function toArrayBuffer(data: unknown): ArrayBuffer | null {
+  if (data instanceof ArrayBuffer) return data;
+  if (ArrayBuffer.isView(data)) {
+    const view = data as ArrayBufferView;
+    return view.buffer.slice(view.byteOffset, view.byteOffset + view.byteLength) as ArrayBuffer;
+  }
+  return null;
+}
+
 export async function streamDouyinDanmaku(
   webRid: string,
   req: { on: (event: string, cb: () => void) => void },
@@ -258,14 +268,12 @@ export async function streamDouyinDanmaku(
         cookie,
         "user-agent": DOUYIN_PC_HEADERS["user-agent"],
       },
-    } as unknown as string[]);
+    });
   } catch (err) {
     writeSse(res, "error", { message: err instanceof Error ? err.message : String(err) });
     cleanup();
     return;
   }
-
-  ws.binaryType = "arraybuffer";
 
   ws.onopen = () => {
     writeSse(res, "ready", { room_id: session.room_id });
@@ -278,8 +286,8 @@ export async function streamDouyinDanmaku(
 
   ws.onmessage = (event) => {
     if (closed) return;
-    const data = event.data;
-    if (!(data instanceof ArrayBuffer)) return;
+    const data = toArrayBuffer(event.data);
+    if (!data) return;
     const parsed = parseDouyinPushFrame(data);
     if (parsed.needAck && parsed.internalExt && ws?.readyState === WebSocket.OPEN) {
       const ack = encodePushFrame({

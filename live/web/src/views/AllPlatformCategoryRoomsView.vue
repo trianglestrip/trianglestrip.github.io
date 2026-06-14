@@ -30,6 +30,7 @@ import RoomGrid from "../components/RoomGrid.vue";
 import { roomKey } from "../api/browse.js";
 import { useCrossBrowse } from "../composables/useCrossBrowse.js";
 import { preloadPlayView } from "../utils/preloadPlayView.js";
+import { saveBrowseContext } from "../utils/browseContext.js";
 
 const props = defineProps({
   crossKey: { type: String, default: "" },
@@ -54,6 +55,7 @@ async function loadForKey(key) {
   if (!text) return;
   await loadHotCategories();
   await selectCategory(text);
+  saveBrowseContext("all", { type: "cross", key: text });
 }
 
 onMounted(async () => {
@@ -80,6 +82,14 @@ function onSelectRoom(room) {
   const site = room.siteId || room.site;
   const id = roomKey(room);
   if (!site || !id) return;
+  if (room.cid != null && String(room.cid) !== "") {
+    saveBrowseContext(site, {
+      type: "category",
+      cid: room.cid,
+      pid: room.pid,
+      name: room.category || "",
+    });
+  }
   router.push({ name: "play", params: { site, id } });
 }
 </script>

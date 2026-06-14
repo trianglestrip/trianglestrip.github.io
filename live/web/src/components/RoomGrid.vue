@@ -8,8 +8,11 @@
       :class="{
         'room-item--selectable': selectMode,
         'room-item--selected': isSelected(room),
-        'room-item--live': room.liveState === 'live' && !hideLiveFrame,
-        'room-item--replay': room.liveState === 'replay',
+        'room-item--live': room.liveState === 'live' && !hideLiveFrame && !room.super,
+        'room-item--replay': room.liveState === 'replay' && !room.super,
+        'room-item--super': room.super,
+        'room-item--super-live': room.super && room.liveState === 'live' && !hideLiveFrame,
+        'room-item--super-replay': room.super && room.liveState === 'replay',
       }"
       @pointerenter="onItemHover(room)"
       @click="onItemClick(room)"
@@ -182,6 +185,36 @@ function onItemClick(room) {
   border-color: var(--primary-border-hover);
 }
 
+.room-item--super .room-item-info {
+  border-color: color-mix(in srgb, var(--follow-state-super-accent) 78%, #fff);
+  box-shadow:
+    inset 0 0 24px 8px color-mix(in srgb, var(--follow-state-super-accent) 18%, transparent),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.room-item--super-live .room-item-info {
+  border-color: var(--follow-state-super-accent);
+  box-shadow:
+    inset 0 0 28px 10px color-mix(in srgb, var(--follow-state-super-accent) 28%, transparent),
+    inset 0 0 12px 3px color-mix(in srgb, var(--follow-state-super-accent) 16%, transparent),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+  animation: room-cover-super-live-pulse 2.2s ease-in-out infinite;
+}
+
+.room-item--super-replay .room-item-info {
+  border-color: color-mix(in srgb, var(--follow-state-super-accent) 72%, var(--primary-border-solid));
+  box-shadow:
+    inset 0 0 28px 10px color-mix(in srgb, var(--follow-state-super-accent) 22%, transparent),
+    inset 0 0 12px 3px color-mix(in srgb, var(--follow-state-super-accent) 12%, transparent),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.room-item--super:hover .room-item-info,
+.room-item--super-live:hover .room-item-info,
+.room-item--super-replay:hover .room-item-info {
+  border-color: color-mix(in srgb, var(--follow-state-super-accent) 92%, #fff);
+}
+
 .room-item:hover .room-item-info {
   border-color: var(--primary-border-mid);
 }
@@ -318,6 +351,21 @@ function onItemClick(room) {
     box-shadow:
       inset 0 0 34px 12px var(--danger-glow-46),
       inset 0 0 14px 4px color-mix(in srgb, var(--danger) 26%, transparent),
+      0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes room-cover-super-live-pulse {
+  0%, 100% {
+    box-shadow:
+      inset 0 0 24px 8px color-mix(in srgb, var(--follow-state-super-accent) 24%, transparent),
+      inset 0 0 10px 2px color-mix(in srgb, var(--follow-state-super-accent) 14%, transparent),
+      0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    box-shadow:
+      inset 0 0 34px 12px color-mix(in srgb, var(--follow-state-super-accent) 34%, transparent),
+      inset 0 0 14px 4px color-mix(in srgb, var(--follow-state-super-accent) 20%, transparent),
       0 2px 8px rgba(0, 0, 0, 0.25);
   }
 }

@@ -43,6 +43,10 @@ function saveVolumePrefs(site, volumeValue) {
   savePlatformPref(site, "volume", { volume: next });
 }
 
+function bilibiliNeedsFreshStream(site) {
+  return site === "bilibili";
+}
+
 export function useRoom(siteRef) {
   const payload = ref(null);
   const loading = ref(false);
@@ -75,14 +79,15 @@ export function useRoom(siteRef) {
 
       const roomId = parseRoomId(roomInput);
       const prefs = loadPlayPrefs(site);
-      let data = !force ? getPrefetchedRoom(site, roomId) : null;
+      const needFresh = force || bilibiliNeedsFreshStream(site);
+      let data = !needFresh ? getPrefetchedRoom(site, roomId) : null;
       if (!data) {
         data = await fetchRoom({
           site,
           room: roomId,
           mode: "lazy",
           quality: prefs.qualityName || undefined,
-          force,
+          force: needFresh,
         });
       }
 
@@ -111,15 +116,17 @@ export function useRoom(siteRef) {
   }
 
   async function ensureQualityLoaded(qualityName, { force = false } = {}) {
+    const site = siteRef.value;
+    const needFresh = force || bilibiliNeedsFreshStream(site);
     const existing = streamByName(payload.value, qualityName);
-    if (!force && streamHasUrl(existing)) return payload.value;
+    if (!needFresh && streamHasUrl(existing)) return payload.value;
     setStatus(`加载档位 ${qualityName}…`);
     const incoming = await fetchRoom({
-      site: siteRef.value,
+      site,
       room: payload.value?.room_id || "",
       mode: "lazy",
       quality: qualityName,
-      force,
+      force: needFresh,
     });
     payload.value = mergePayload(payload.value, incoming);
     fillFromPayload(payload.value, loadPlayPrefs(siteRef.value));
@@ -143,10 +150,12 @@ export function useRoom(siteRef) {
   }
 
   async function resolvePlayUrl({ force = false } = {}) {
+    const site = siteRef.value;
+    const needFresh = force || bilibiliNeedsFreshStream(site);
     const names = qualityNames(payload.value);
     const qualityName = names[qualityIndex.value];
     if (!qualityName) throw new Error("未选择清晰度");
-    const data = await ensureQualityLoaded(qualityName, { force });
+    const data = await ensureQualityLoaded(qualityName, { force: needFresh });
     const url = currentPlayUrl(data, qualityIndex.value, lineIndex.value);
     if (!url) throw new Error(`档位 ${qualityName} 暂无播放地址`);
     return { url, data, qualityName };
@@ -222,7 +231,7 @@ export function useRoom(siteRef) {
   };
 }
 
-function flvOptionsForSite(site) {
+function flvOptionsForSite(site, roomId = "") {
   const config = {
     enableWorker: false,
     enableStashBuffer: true,
@@ -247,9 +256,12 @@ function flvOptionsForSite(site) {
       Origin: "https://live.douyin.com",
     };
   } else if (site === "bilibili") {
+    const rid = String(roomId || "").trim();
     config.headers = {
-      Referer: "https://live.bilibili.com/",
+      Referer: rid ? `https://live.bilibili.com/${rid}` : "https://live.bilibili.com/",
       Origin: "https://live.bilibili.com",
+      "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
     };
   }
   return config;
@@ -481,7 +493,7 @@ export function usePlayer(siteRef) {
     return true;
   }
 
-  function playFlv(el, url, { site = "", onError, onReady, startMuted = true } = {}) {
+  function playFlv(el, url, { site = "", roomId = "", onError, onReady, startMuted = true } = {}) {
     const flv = flvjs();
     if (!flv.isSupported()) {
       throw new Error("当前浏览器不支持 flv.js");
@@ -501,7 +513,7 @@ export function usePlayer(siteRef) {
         hasVideo: true,
         cors: true,
       },
-      flvOptionsForSite(site),
+      flvOptionsForSite(site, roomId),
     );
 
     player.attachMediaElement(el);

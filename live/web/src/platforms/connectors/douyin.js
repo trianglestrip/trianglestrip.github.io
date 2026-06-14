@@ -22,6 +22,19 @@ export function connectDouyin(ctx, roomId) {
     }
   });
 
+  eventSourceRef.current.addEventListener("meta", (event) => {
+    try {
+      const item = JSON.parse(event.data);
+      if (!item || typeof item !== "object") return;
+      roomMeta.value = {
+        liveStartAt: Number(item.liveStartAt) || roomMeta.value.liveStartAt || 0,
+        fanGroup: String(item.fanGroup || "").trim() || roomMeta.value.fanGroup || "",
+      };
+    } catch {
+      /* ignore malformed payload */
+    }
+  });
+
   eventSourceRef.current.addEventListener("close", () => {
     if (!aliveRef.current) return;
     status.value = "弹幕重连中…";

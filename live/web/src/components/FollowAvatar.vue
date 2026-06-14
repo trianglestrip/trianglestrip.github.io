@@ -9,8 +9,10 @@
     <div
       class="follow-avatar-wrap"
       :class="{
-        'follow-avatar-wrap--live': state === 'live' && !hideLiveFrame,
-        'follow-avatar-wrap--replay': state === 'replay',
+        'follow-avatar-wrap--live': state === 'live' && !hideLiveFrame && !isSuper,
+        'follow-avatar-wrap--replay': state === 'replay' && !isSuper,
+        'follow-avatar-wrap--super-live': isSuper && state === 'live' && !hideLiveFrame,
+        'follow-avatar-wrap--super-replay': isSuper && state === 'replay',
       }"
     >
       <LazyImage
@@ -39,6 +41,7 @@ defineProps({
   eager: { type: Boolean, default: false },
   rootMargin: { type: String, default: "120px" },
   hideLiveFrame: { type: Boolean, default: false },
+  isSuper: { type: Boolean, default: false },
 });
 </script>
 
@@ -51,7 +54,9 @@ defineProps({
 }
 
 .follow-avatar-wrap--live::after,
-.follow-avatar-wrap--replay::after {
+.follow-avatar-wrap--replay::after,
+.follow-avatar-wrap--super-live::after,
+.follow-avatar-wrap--super-replay::after {
   content: "";
   position: absolute;
   inset: -2px;
@@ -70,13 +75,26 @@ defineProps({
   border: 2px solid var(--primary-border-72);
 }
 
+.follow-avatar-wrap--super-live::after {
+  border: 2.5px solid var(--follow-state-super-accent);
+  animation: follow-avatar-super-live-ring 2.2s ease-in-out infinite;
+}
+
+.follow-avatar-wrap--super-replay::after {
+  border: 2px solid color-mix(in srgb, var(--follow-state-super-accent) 72%, var(--primary-border-72));
+}
+
 .follow-avatar-root--grid .follow-avatar-wrap--live::after,
-.follow-avatar-root--grid .follow-avatar-wrap--replay::after {
+.follow-avatar-root--grid .follow-avatar-wrap--replay::after,
+.follow-avatar-root--grid .follow-avatar-wrap--super-live::after,
+.follow-avatar-root--grid .follow-avatar-wrap--super-replay::after {
   border-radius: 6px;
 }
 
 .follow-avatar-root--compact .follow-avatar-wrap--live::after,
-.follow-avatar-root--compact .follow-avatar-wrap--replay::after {
+.follow-avatar-root--compact .follow-avatar-wrap--replay::after,
+.follow-avatar-root--compact .follow-avatar-wrap--super-live::after,
+.follow-avatar-root--compact .follow-avatar-wrap--super-replay::after {
   border-radius: 4px;
 }
 
@@ -88,6 +106,19 @@ defineProps({
   50% {
     border-color: var(--danger);
     box-shadow: 0 0 0 2px var(--danger-glow-22), 0 0 10px color-mix(in srgb, var(--danger) 28%, transparent);
+  }
+}
+
+@keyframes follow-avatar-super-live-ring {
+  0%, 100% {
+    border-color: color-mix(in srgb, var(--follow-state-super-accent) 72%, transparent);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    border-color: var(--follow-state-super-accent);
+    box-shadow:
+      0 0 0 2px color-mix(in srgb, var(--follow-state-super-accent) 28%, transparent),
+      0 0 10px color-mix(in srgb, var(--follow-state-super-accent) 32%, transparent);
   }
 }
 

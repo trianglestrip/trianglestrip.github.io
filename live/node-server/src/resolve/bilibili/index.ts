@@ -116,13 +116,16 @@ export async function loadMeta(url: string): Promise<BilibiliMeta> {
 }
 
 export async function resolveTier(meta: BilibiliMeta, qualityName?: string): Promise<BilibiliTier> {
-  const codec = meta.context?.play_codec;
-  if (!codec || meta.offline) {
+  if (meta.offline) {
     throw new Error("房间未开播");
   }
   const quality = pickQualityName(meta.available_qualities, qualityName);
   const qn = Number(quality.rate ?? BILIBILI_QN_TIERS[0].qn);
   const tierName = String(quality.name || BILIBILI_QN_TIERS[0].name);
+  const codec = await fetchRoomPlayCodec(meta.room_id, qn);
+  if (!codec) {
+    throw new Error(`未获取到档位 ${tierName} 的播放地址`);
+  }
   const tier = tierFromQn(codec, qn, tierName);
   if (!tier) {
     throw new Error(`未获取到档位 ${tierName} 的播放地址`);
@@ -131,13 +134,15 @@ export async function resolveTier(meta: BilibiliMeta, qualityName?: string): Pro
 }
 
 export async function resolveAllTiers(meta: BilibiliMeta): Promise<BilibiliTier[]> {
-  const codec = meta.context?.play_codec;
-  if (!codec || meta.offline) {
+  if (meta.offline) {
     throw new Error("房间未开播");
   }
   const streams: BilibiliTier[] = [];
   for (const quality of meta.available_qualities) {
-    const tier = tierFromQn(codec, Number(quality.rate), String(quality.name));
+    const qn = Number(quality.rate);
+    const codec = await fetchRoomPlayCodec(meta.room_id, qn);
+    if (!codec) continue;
+    const tier = tierFromQn(codec, qn, String(quality.name));
     if (tier) streams.push(tier);
   }
   if (!streams.length) {

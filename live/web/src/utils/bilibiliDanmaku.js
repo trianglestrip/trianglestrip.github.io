@@ -2,7 +2,7 @@ import { apiBase } from "../config/app.js";
 
 export function buildBilibiliAuthPacket(session) {
   const body = JSON.stringify({
-    uid: Number(session.uid || 0),
+    uid: 0,
     roomid: Number(session.room_id),
     protover: 3,
     platform: "web",

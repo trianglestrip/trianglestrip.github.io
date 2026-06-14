@@ -81,12 +81,14 @@ export async function fetchAnchorInRoom(roomId: string): Promise<BilibiliAnchorI
 }
 
 export async function fetchRoomInfo(roomId: string): Promise<BilibiliRoomInfo> {
-  return fetchJson<BilibiliRoomInfo>("https://api.live.bilibili.com/room/v1/Room/get_info", {
-    room_id: roomId,
-  });
+  return fetchJson<BilibiliRoomInfo>(
+    "https://api.live.bilibili.com/room/v1/Room/get_info",
+    { room_id: roomId },
+    roomId,
+  );
 }
 
-function pickFlvCodec(data: Record<string, unknown> | undefined): BilibiliPlayCodec | null {
+function pickFlvCodec(data: Record<string, unknown> | undefined, preferQn?: number): BilibiliPlayCodec | null {
   const playurl = (data?.playurl_info as Record<string, unknown> | undefined)?.playurl as
     | Record<string, unknown>
     | undefined;
@@ -95,7 +97,17 @@ function pickFlvCodec(data: Record<string, unknown> | undefined): BilibiliPlayCo
   const formats = (httpStream?.format as Array<Record<string, unknown>>) || [];
   const flvFormat = formats.find((item) => item.format_name === "flv") || formats[0];
   const codecs = (flvFormat?.codec as BilibiliPlayCodec[]) || [];
-  return codecs[0] || null;
+  if (!codecs.length) return null;
+  const nonHevc = codecs.filter((c) => !String(c.base_url || "").includes("minihevc"));
+  const pool = nonHevc.length ? nonHevc : codecs;
+  if (preferQn != null) {
+    const matched = pool.find((c) => Number(c.current_qn) === preferQn);
+    if (matched) return matched;
+    return pool.reduce((best, item) =>
+      Number(item.current_qn ?? 0) > Number(best.current_qn ?? 0) ? item : best,
+    pool[0]);
+  }
+  return pool[0] || null;
 }
 
 export async function fetchRoomPlayCodec(roomId: string, qn = 10000): Promise<BilibiliPlayCodec | null> {
@@ -110,31 +122,30 @@ export async function fetchRoomPlayCodec(roomId: string, qn = 10000): Promise<Bi
       platform: "web",
       ptype: 8,
     },
+    roomId,
   );
-  return pickFlvCodec(data);
+  return pickFlvCodec(data, qn);
 }
 
-export function buildFlvUrl(codec: BilibiliPlayCodec, qn: number, lineIndex = 0): string {
+export function buildFlvUrl(codec: BilibiliPlayCodec, lineIndex = 0): string {
   const urlInfo = codec.url_info?.[lineIndex] || codec.url_info?.[0];
   if (!urlInfo?.host || !codec.base_url || !urlInfo.extra) {
     return "";
   }
-  const extra = urlInfo.extra.includes("qn=")
-    ? urlInfo.extra.replace(/qn=\d+/, `qn=${qn}`)
-    : `qn=${qn}&${urlInfo.extra}`;
-  return httpsUrl(`${urlInfo.host}${codec.base_url}${extra}`);
+  // B 站 CDN 校验 qn 与签名一致，必须原样使用 API 返回的 extra
+  return httpsUrl(`${urlInfo.host}${codec.base_url}${urlInfo.extra}`);
 }
 
-export function flvLinesForQn(codec: BilibiliPlayCodec, qn: number): Array<{ name: string; url: string }> {
+export function flvLinesForQn(codec: BilibiliPlayCodec, _qn?: number): Array<{ name: string; url: string }> {
   const lines: Array<{ name: string; url: string }> = [];
   const urlInfos = codec.url_info || [];
   if (!urlInfos.length) {
-    const url = buildFlvUrl(codec, qn, 0);
+    const url = buildFlvUrl(codec, 0);
     if (url) lines.push({ name: "线路1", url });
     return lines;
   }
   urlInfos.forEach((info, index) => {
-    const url = buildFlvUrl({ ...codec, url_info: [info] }, qn, 0);
+    const url = buildFlvUrl({ ...codec, url_info: [info] }, 0);
     if (url) {
       lines.push({ name: `线路${index + 1}`, url });
     }

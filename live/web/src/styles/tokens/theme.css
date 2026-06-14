@@ -48,6 +48,7 @@
   /* 平台 / 统计 / 按钮色相锚点（日夜用 color-mix 派生） */
   --platform-douyu: #a05020;
   --platform-huya: #a08018;
+  --platform-bilibili: #00a1d6;
   --platform-douyin: #c02848;
   --stat-audience: #284868;
   --stat-diamond: #482868;
@@ -60,9 +61,11 @@
   /* 平台标签文字色（从色相锚点派生） */
   --platform-douyu-text: color-mix(in srgb, var(--platform-douyu) 78%, var(--text));
   --platform-huya-text: color-mix(in srgb, var(--platform-huya) 78%, var(--text));
+  --platform-bilibili-text: color-mix(in srgb, var(--platform-bilibili) 78%, var(--text));
   --platform-douyin-text: color-mix(in srgb, var(--platform-douyin) 78%, var(--text));
   --platform-douyu-text-em: color-mix(in srgb, var(--platform-douyu) 58%, #fff);
   --platform-huya-text-em: color-mix(in srgb, var(--platform-huya) 58%, #fff);
+  --platform-bilibili-text-em: color-mix(in srgb, var(--platform-bilibili) 58%, #fff);
   --platform-douyin-text-em: color-mix(in srgb, var(--platform-douyin) 58%, #fff);
 
   --danger-border: color-mix(in srgb, var(--danger) 88%, transparent);
@@ -185,11 +188,14 @@
   --sidebar-tag-default-bg: var(--dark-6);
   --sidebar-tag-douyu-bg: color-mix(in srgb, var(--platform-douyu) 52%, #1a1a1a);
   --sidebar-tag-huya-bg: color-mix(in srgb, var(--platform-huya) 52%, #1a1a1a);
+  --sidebar-tag-bilibili-bg: color-mix(in srgb, var(--platform-bilibili) 52%, #1a1a1a);
   --sidebar-tag-douyin-bg: color-mix(in srgb, var(--platform-douyin) 52%, #1a1a1a);
   --sidebar-filter-douyu-bg: color-mix(in srgb, var(--platform-douyu) 52%, #1a1a1a);
   --sidebar-filter-douyu-active-bg: color-mix(in srgb, var(--platform-douyu) 68%, #1a1a1a);
   --sidebar-filter-huya-bg: color-mix(in srgb, var(--platform-huya) 52%, #1a1a1a);
   --sidebar-filter-huya-active-bg: color-mix(in srgb, var(--platform-huya) 68%, #1a1a1a);
+  --sidebar-filter-bilibili-bg: color-mix(in srgb, var(--platform-bilibili) 52%, #1a1a1a);
+  --sidebar-filter-bilibili-active-bg: color-mix(in srgb, var(--platform-bilibili) 68%, #1a1a1a);
   --sidebar-filter-douyin-bg: color-mix(in srgb, var(--platform-douyin) 52%, #1a1a1a);
   --sidebar-filter-douyin-active-bg: color-mix(in srgb, var(--platform-douyin) 68%, #1a1a1a);
   --sidebar-online-bg: var(--follow-online-chip-bg);
@@ -315,11 +321,14 @@
   --sidebar-tag-default-bg: var(--dark-6);
   --sidebar-tag-douyu-bg: color-mix(in srgb, var(--platform-douyu) 20%, var(--panel));
   --sidebar-tag-huya-bg: color-mix(in srgb, var(--platform-huya) 20%, var(--panel));
+  --sidebar-tag-bilibili-bg: color-mix(in srgb, var(--platform-bilibili) 20%, var(--panel));
   --sidebar-tag-douyin-bg: color-mix(in srgb, var(--platform-douyin) 20%, var(--panel));
   --sidebar-filter-douyu-bg: color-mix(in srgb, var(--platform-douyu) 20%, var(--panel));
   --sidebar-filter-douyu-active-bg: color-mix(in srgb, var(--platform-douyu) 32%, var(--panel));
   --sidebar-filter-huya-bg: color-mix(in srgb, var(--platform-huya) 20%, var(--panel));
   --sidebar-filter-huya-active-bg: color-mix(in srgb, var(--platform-huya) 32%, var(--panel));
+  --sidebar-filter-bilibili-bg: color-mix(in srgb, var(--platform-bilibili) 20%, var(--panel));
+  --sidebar-filter-bilibili-active-bg: color-mix(in srgb, var(--platform-bilibili) 32%, var(--panel));
   --sidebar-filter-douyin-bg: color-mix(in srgb, var(--platform-douyin) 20%, var(--panel));
   --sidebar-filter-douyin-active-bg: color-mix(in srgb, var(--platform-douyin) 32%, var(--panel));
   --sidebar-online-bg: var(--follow-online-chip-bg);

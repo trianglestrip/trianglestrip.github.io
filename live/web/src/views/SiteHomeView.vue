@@ -56,6 +56,7 @@ import { parseRoomId } from "../api/room.js";
 import { getPlatform, supportsBrowse } from "../config/platforms";
 import { useBrowse } from "../composables/useBrowse.js";
 import { preloadPlayView } from "../utils/preloadPlayView.js";
+import { saveBrowseContext } from "../utils/browseContext.js";
 
 const props = defineProps({
   site: { type: String, required: true },
@@ -81,7 +82,10 @@ watch(
   (value) => {
     siteRef.value = value;
     roomInput.value = "";
-    if (getPlatform(value)?.enabled && supportsBrowse(value)) loadRecommend();
+    if (getPlatform(value)?.enabled && supportsBrowse(value)) {
+      saveBrowseContext(value, { type: "home" });
+      loadRecommend();
+    }
     preloadPlayView();
   },
   { immediate: true },
