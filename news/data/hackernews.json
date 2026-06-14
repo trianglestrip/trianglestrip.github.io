@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-14T17:26:00+00:00",
+  "updated_at": "2026-06-14T20:12:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
-      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
-      "hot": "73"
+      "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
+      "url": "https://github.com/tamnd/kage",
+      "hot": "157"
     },
     {
       "rank": 2,
-      "title": "Firewood Splitting Simulator",
-      "url": "https://screen.toys/firewood/",
-      "hot": "322"
+      "title": "Chaosnet",
+      "url": "https://tumbleweed.nu/r/lm-3/uv/amber.html",
+      "hot": "26"
     },
     {
       "rank": 3,
-      "title": "The Birth and Death of JavaScript (2014)",
-      "url": "https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript",
-      "hot": "151"
+      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
+      "hot": "195"
     },
     {
       "rank": 4,
-      "title": "Swiss voters reject proposal to cap population at ten million",
-      "url": "https://www.swissinfo.ch/eng/swiss-politics/swiss-voters-reject-proposal-to-cap-population-at-ten-million/91548146",
-      "hot": "64"
+      "title": "Firewood Splitting Simulator",
+      "url": "https://screen.toys/firewood/",
+      "hot": "455"
     },
     {
       "rank": 5,
-      "title": "Perlisisms",
-      "url": "https://www.cs.yale.edu/homes/perlis-alan/quotes.html",
-      "hot": "40"
+      "title": "Segmented type appreciation corner (2018)",
+      "url": "https://aresluna.org/segmented-type/",
+      "hot": "35"
     },
     {
       "rank": 6,
-      "title": "Lisp's Influence on Ruby",
-      "url": "https://blog.tacoda.dev/lisps-influence-on-ruby-6a54f1a7740e",
-      "hot": "148"
+      "title": "Ask HN: What are you working on? (June 2026)",
+      "url": "https://news.ycombinator.com/item?id=48528779",
+      "hot": "83"
     },
     {
       "rank": 7,
       "title": "Caddy compatibility for zeroserve: 3x throughput and 70% lower latency",
       "url": "https://su3.io/posts/zeroserve-caddy-compat",
-      "hot": "73"
+      "hot": "114"
     },
     {
       "rank": 8,
-      "title": "FarOutCompany",
-      "url": "https://faroutcompany.com/",
-      "hot": "59"
+      "title": "Perlisisms",
+      "url": "https://www.cs.yale.edu/homes/perlis-alan/quotes.html",
+      "hot": "67"
     },
     {
       "rank": 9,
-      "title": "No, everyone is not using AI for everything",
-      "url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
-      "hot": "231"
+      "title": "Formal methods and the future of programming",
+      "url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1",
+      "hot": "114"
     },
     {
       "rank": 10,
-      "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
-      "url": "https://news.ycombinator.com/item?id=48528029",
-      "hot": "82"
+      "title": "FarOutCompany",
+      "url": "https://faroutcompany.com/",
+      "hot": "76"
     }
   ]
 }
