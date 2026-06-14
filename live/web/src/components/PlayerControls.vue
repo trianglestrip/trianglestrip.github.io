@@ -14,7 +14,7 @@
         <Icon :name="playing ? 'pause' : 'play'" class="ctrl-fa" />
       </button>
 
-      <button type="button" class="ctrl-icon ctrl--mobile-hide" title="刷新" @click="$emit('refresh')">
+      <button type="button" class="ctrl-icon ctrl--mobile-hide" title="刷新视频" @click="$emit('refresh')">
         <Icon name="refresh" class="ctrl-fa" />
       </button>
 

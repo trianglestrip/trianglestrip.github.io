@@ -1,4 +1,5 @@
 import { ref, watch, onUnmounted } from "vue";
+import { apiUrl } from "../config/app.js";
 import {
   loadGlobalPref,
   loadJson,
@@ -26,9 +27,9 @@ const DEFAULT_CHAT = {
   opacity: 100,
   fontSize: 14,
   gap: 4,
-  speedLimit: false,
-  /** 开启限速后，每隔 N 秒续显 N 条 */
-  speed: 5,
+  speedLimit: true,
+  /** 开启限速后，每隔 N 秒显示 1 条 */
+  speed: 1,
 };
 
 /** 聊天列表与飘屏共用的消息缓冲上限 */
@@ -83,10 +84,12 @@ function encodeDouyuMsg(msg) {
 export function useDanmaku(siteRef, roomIdRef) {
   const messages = ref([]);
   const status = ref("等待连接…");
+  const roomMeta = ref({ liveStartAt: 0, fanGroup: "" });
   const overlaySettings = ref(loadOverlaySettings());
   const chatSettings = ref(loadChatSettings());
 
   let ws = null;
+  let eventSource = null;
   let heartbeat = null;
   let reconnectTimer = null;
   let parseWorker = null;
@@ -256,6 +259,53 @@ export function useDanmaku(siteRef, roomIdRef) {
     };
   }
 
+  function connectDouyin(roomId) {
+    messages.value = [];
+    roomMeta.value = { liveStartAt: 0, fanGroup: "" };
+    status.value = "弹幕连接中…";
+    const url = apiUrl(`/api/douyin/danmaku/stream?room=${encodeURIComponent(roomId)}`);
+    eventSource = new EventSource(url);
+
+    eventSource.addEventListener("ready", () => {
+      status.value = "弹幕已连接";
+    });
+
+    eventSource.addEventListener("meta", (event) => {
+      try {
+        const item = JSON.parse(event.data);
+        if (item?.liveStartAt) roomMeta.value.liveStartAt = Number(item.liveStartAt) || 0;
+        if (item?.fanGroup) roomMeta.value.fanGroup = String(item.fanGroup);
+      } catch {
+        /* ignore malformed payload */
+      }
+    });
+
+    eventSource.addEventListener("chat", (event) => {
+      try {
+        const item = JSON.parse(event.data);
+        if (item?.user && item?.text) queueMsgs([item]);
+      } catch {
+        /* ignore malformed payload */
+      }
+    });
+
+    eventSource.addEventListener("close", () => {
+      if (!alive) return;
+      status.value = "弹幕重连中…";
+      scheduleReconnect();
+    });
+
+    eventSource.onerror = () => {
+      if (!alive) return;
+      if (eventSource?.readyState === EventSource.CLOSED) {
+        status.value = "弹幕重连中…";
+        scheduleReconnect();
+        return;
+      }
+      status.value = "弹幕连接出错";
+    };
+  }
+
   function connect() {
     disconnect(false);
     const site = siteRef.value;
@@ -272,6 +322,10 @@ export function useDanmaku(siteRef, roomIdRef) {
       connectHuya(roomId);
       return;
     }
+    if (site === "douyin") {
+      connectDouyin(roomId);
+      return;
+    }
     status.value = "暂不支持该平台弹幕";
   }
 
@@ -281,10 +335,15 @@ export function useDanmaku(siteRef, roomIdRef) {
     activeSite = null;
     pendingMsgs = [];
     messages.value = [];
+    roomMeta.value = { liveStartAt: 0, fanGroup: "" };
     if (ws) {
       ws.onclose = null;
       ws.close();
       ws = null;
+    }
+    if (eventSource) {
+      eventSource.close();
+      eventSource = null;
     }
     if (resetStatus) {
       status.value = "弹幕已断开";
@@ -299,6 +358,7 @@ export function useDanmaku(siteRef, roomIdRef) {
   return {
     messages,
     status,
+    roomMeta,
     overlaySettings,
     chatSettings,
     connect,

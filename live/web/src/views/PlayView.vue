@@ -1,8 +1,12 @@
 <template>
   <AppLayout :active-site="site">
-    <div class="play-layout" :class="{ 'play-layout--webscreen': webscreen }">
+    <div
+      ref="layoutRef"
+      class="play-layout"
+      :class="{ 'play-layout--webscreen': webscreen }"
+    >
       <section class="play-main">
-        <header v-if="headerReady" class="play-header">
+        <header v-if="headerReady && !webscreen" class="play-header">
           <RouterLink :to="`/${site}`" class="play-back" title="返回">
             <Icon name="arrow-left" />
           </RouterLink>
@@ -34,7 +38,6 @@
           ref="frameRef"
           class="play-frame"
           :class="{
-            'play-frame--webscreen': webscreen,
             'play-frame--landscape-fallback': fullscreenLandscapeFallback,
           }"
         >
@@ -65,7 +68,7 @@
               :notice="controlNotice"
               :danmaku-on="overlaySettings.show"
               :webscreen="webscreen"
-              :fullscreen="isFullscreen"
+              :fullscreen="isFullscreen || webscreen"
               :picture-in-picture="pictureInPicture"
               :volume="volume"
               :muted="muted"
@@ -105,15 +108,17 @@
       </section>
 
       <PlaySidePanel
-        v-if="sideReady && !webscreen"
+        v-if="sideReady"
         ref="sidePanelRef"
         v-model:chat-settings="chatSettings"
+        :webscreen="webscreen"
         :site="site"
         :room-id="id"
         :status-text="statusText"
         :payload="payload"
         :danmaku-messages="danmakuMessages"
         :danmaku-status="danmakuStatus"
+        :danmaku-meta="danmakuRoomMeta"
         :follow-list="follows"
         :room-category="displayCategory"
         :is-super-followed="isSuperFollowed(site, id)"
@@ -121,6 +126,7 @@
         @unfollow="onUnfollow"
         @toggle-super-follow="onToggleSuperFollow"
         @trim-chat="trimDanmakuFromStart"
+        @refresh-danmaku="onRefreshDanmaku"
       />
     </div>
   </AppLayout>
@@ -140,6 +146,7 @@ import { useFollow } from "../composables/useFollow.js";
 import { fetchFollowStatus } from "../api/follow.js";
 import { followKey } from "../utils/prefStore.js";
 import { displayCategoryName } from "../utils/categoryDisplay.js";
+import { briefPlayStatus } from "../utils/chatStatus.js";
 import { getCategoryStyle } from "../utils/categoryColor.js";
 import { isSoundUnlocked, unlockSound, resetSoundSession } from "../utils/soundSession.js";
 
@@ -157,6 +164,7 @@ const roomInput = ref(props.id);
 const playerPanelRef = ref(null);
 const sidePanelRef = ref(null);
 const frameRef = ref(null);
+const layoutRef = ref(null);
 const webscreen = ref(false);
 const showControls = ref(true);
 const controlNotice = ref("");
@@ -261,7 +269,8 @@ const roomStatItems = computed(() => {
   if (props.site === "douyin") {
     return [
       { label: "观众", value: statDisplay(roomStats.value.online), tone: "audience" },
-      { label: "关注", value: statDisplay(roomStats.value.fans), tone: "fans" },
+      { label: "粉丝团", value: statDisplay(roomStats.value.fanGroup), tone: "fangroup" },
+      { label: "贵宾", value: statDisplay(roomStats.value.vip), tone: "vip" },
     ];
   }
   return [{ label: "观众", value: statDisplay(roomStats.value.online), tone: "audience" }];
@@ -386,6 +395,7 @@ const {
 const {
   messages: danmakuMessages,
   status: danmakuStatus,
+  roomMeta: danmakuRoomMeta,
   overlaySettings,
   chatSettings,
   connect: connectDm,
@@ -393,6 +403,11 @@ const {
   trimFromStart: trimDanmakuFromStart,
 } = useDanmaku(siteRef, roomInput);
 const { follows, isSuperFollowed, toggleSuperFollow, unfollow } = useFollow();
+
+watch(danmakuRoomMeta, (meta) => {
+  if (props.site !== "douyin" || !meta) return;
+  if (meta.fanGroup) roomStats.value.fanGroup = meta.fanGroup;
+}, { deep: true });
 
 watch(payload, (data) => {
   if (!data) return;
@@ -426,6 +441,22 @@ async function retryPlaybackAfterError() {
   }
 }
 
+function syncPlayingStatus() {
+  if (!streamActive.value || !playing.value || statusKind.value === "err") return;
+  const brief = briefPlayStatus(statusText.value);
+  if (!brief || !/^播放中/.test(brief)) return;
+  setStatus(muted.value ? "播放中（静音）" : "播放中", "ok");
+}
+
+function onRefreshDanmaku() {
+  disconnectDm();
+  connectDm();
+}
+
+watch(muted, () => {
+  syncPlayingStatus();
+});
+
 function buildPlayCallbacks(url, { onReadyExtra } = {}) {
   return {
     site: siteRef.value,
@@ -440,7 +471,10 @@ function buildPlayCallbacks(url, { onReadyExtra } = {}) {
       if (!playing.value) startPlay();
       if (isSoundUnlocked() && muted.value) {
         void unmutePlayback({ soft: true }).then((ok) => {
-          if (ok) markSoundUnlocked();
+          if (ok) {
+            markSoundUnlocked();
+            syncPlayingStatus();
+          }
         });
       }
       const suffix = muted.value ? "（静音）" : "";
@@ -507,7 +541,10 @@ function onEntryUnmuteGesture(event) {
   if (muted.value) {
     lockVideoShellAction();
     void unmutePlayback().then((ok) => {
-      if (ok) markSoundUnlocked();
+      if (ok) {
+        markSoundUnlocked();
+        syncPlayingStatus();
+      }
     });
     return;
   }
@@ -524,6 +561,7 @@ function onToggleMute() {
   } else if (!wasMuted && muted.value) {
     userChoseMute.value = true;
   }
+  syncPlayingStatus();
 }
 
 async function onMuteHintClick() {
@@ -533,6 +571,7 @@ async function onMuteHintClick() {
   if (ok) {
     markSoundUnlocked();
     userChoseMute.value = false;
+    syncPlayingStatus();
   }
 }
 
@@ -550,7 +589,10 @@ async function onVideoShellClick(event) {
   if (muted.value) {
     lockVideoShellAction();
     const ok = await unmutePlayback();
-    if (ok) markSoundUnlocked();
+    if (ok) {
+      markSoundUnlocked();
+      syncPlayingStatus();
+    }
     return;
   }
   if (isMobilePlayViewport()) return;
@@ -669,9 +711,9 @@ async function onTogglePiP() {
 function revealControls() {
   showControls.value = true;
   clearTimeout(hideControlsTimer.value);
-  if (playing.value && !isMobilePlayViewport() && !isFullscreen.value) {
+  if (playing.value && !isMobilePlayViewport() && !isFullscreen.value && !webscreen.value) {
     hideControlsTimer.value = setTimeout(() => {
-      if (playing.value && !isFullscreen.value) showControls.value = false;
+      if (playing.value && !isFullscreen.value && !webscreen.value) showControls.value = false;
     }, 3000);
   }
 }
@@ -726,8 +768,6 @@ async function onRefresh() {
   if (!payload.value || loading.value) return;
   captureSoundUnlock();
   destroy();
-  disconnectDm();
-  danmakuReady.value = false;
   playUrl.value = "";
   try {
     await loadRoom(roomInput.value, { force: true });
@@ -759,8 +799,10 @@ async function startPlayback({ startMuted, freshUrl = false, forceUrl = false } 
   await startPlay();
   if (wantSound && muted.value) {
     const ok = await unmutePlayback({ soft: true });
-    if (ok) markSoundUnlocked();
-    else bindEntryUnmuteGesture();
+    if (ok) {
+      markSoundUnlocked();
+      syncPlayingStatus();
+    } else bindEntryUnmuteGesture();
     return;
   }
   if (useMuted) bindEntryUnmuteGesture();
@@ -788,8 +830,63 @@ async function playRoom(room) {
   }
 }
 
-function toggleWebscreen() {
-  webscreen.value = !webscreen.value;
+function syncWebscreenChrome(on) {
+  document.documentElement.classList.toggle("play-webscreen", on);
+}
+
+async function exitWebscreen() {
+  webscreen.value = false;
+  syncWebscreenChrome(false);
+  if (getFullscreenElement()) {
+    await document.exitFullscreen().catch(() => {});
+    unlockLandscapeOrientation();
+  }
+}
+
+function getFullscreenElement() {
+  return document.fullscreenElement || document.webkitFullscreenElement || null;
+}
+
+async function requestElementFullscreen(el, options) {
+  if (el.requestFullscreen) {
+    try {
+      await el.requestFullscreen(options);
+    } catch {
+      await el.requestFullscreen();
+    }
+    return;
+  }
+  if (el.webkitRequestFullscreen) {
+    await el.webkitRequestFullscreen();
+  }
+}
+
+async function toggleWebscreen() {
+  if (webscreen.value) {
+    await exitWebscreen();
+    revealControls();
+    return;
+  }
+
+  const layout = layoutRef.value;
+  if (!layout) return;
+
+  if (getFullscreenElement() === frameRef.value) {
+    await document.exitFullscreen().catch(() => {});
+    unlockLandscapeOrientation();
+  }
+
+  webscreen.value = true;
+  syncWebscreenChrome(true);
+  try {
+    await requestElementFullscreen(document.documentElement, { navigationUI: "hide" });
+    if (isMobilePlayViewport()) {
+      await lockLandscapeOrientation();
+    }
+  } catch {
+    webscreen.value = false;
+    syncWebscreenChrome(false);
+  }
   revealControls();
 }
 
@@ -803,7 +900,7 @@ function shouldUseLandscapeFallback() {
 }
 
 async function lockLandscapeOrientation() {
-  if (!document.fullscreenElement) return false;
+  if (!getFullscreenElement()) return false;
 
   const orientation = screen.orientation;
   if (orientation?.lock) {
@@ -832,7 +929,7 @@ function unlockLandscapeOrientation() {
 }
 
 function onOrientationChange() {
-  if (!document.fullscreenElement) return;
+  if (!getFullscreenElement()) return;
   if (window.matchMedia("(orientation: landscape)").matches) {
     fullscreenLandscapeFallback.value = false;
     return;
@@ -840,23 +937,17 @@ function onOrientationChange() {
   void lockLandscapeOrientation();
 }
 
-async function requestElementFullscreen(el) {
-  if (el.requestFullscreen) {
-    await el.requestFullscreen();
-    return;
-  }
-  if (el.webkitRequestFullscreen) {
-    await el.webkitRequestFullscreen();
-  }
-}
-
 async function toggleFullscreen() {
   const frame = frameRef.value;
   if (!frame) return;
 
-  if (document.fullscreenElement) {
-    await document.exitFullscreen().catch(() => {});
-    unlockLandscapeOrientation();
+  if (getFullscreenElement()) {
+    if (webscreen.value) {
+      await exitWebscreen();
+    } else {
+      await document.exitFullscreen().catch(() => {});
+      unlockLandscapeOrientation();
+    }
     revealControls();
     return;
   }
@@ -871,13 +962,23 @@ async function toggleFullscreen() {
 }
 
 function onFullscreenChange() {
-  const fs = !!document.fullscreenElement;
+  const fsEl = getFullscreenElement();
+  const fs = !!fsEl;
   isFullscreen.value = fs;
-  if (fs) {
-    revealControls();
-    void lockLandscapeOrientation();
-  } else {
+
+  if (!fs) {
     unlockLandscapeOrientation();
+    if (webscreen.value) {
+      webscreen.value = false;
+      syncWebscreenChrome(false);
+    }
+    return;
+  }
+
+  revealControls();
+
+  if (fsEl === frameRef.value) {
+    void lockLandscapeOrientation();
   }
 }
 
@@ -970,6 +1071,7 @@ onBeforeUnmount(() => {
   }
   document.removeEventListener("enterpictureinpicture", onPiPChange);
   document.removeEventListener("leavepictureinpicture", onPiPChange);
+  syncWebscreenChrome(false);
   document.title = "Lemon live";
 });
 </script>
@@ -1180,17 +1282,53 @@ onBeforeUnmount(() => {
   overflow: hidden;
 }
 
-.play-frame--webscreen {
-  position: fixed;
-  inset: 0 0 var(--nav-height) 0;
-  z-index: 20;
+.play-layout--webscreen {
+  flex-direction: row !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-width: none;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.play-layout:fullscreen,
+.play-layout:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  flex-direction: row !important;
+  overflow: hidden;
+  background: var(--bg);
+  box-sizing: border-box;
+}
+
+.play-layout:fullscreen .play-main,
+.play-layout:-webkit-full-screen .play-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.play-layout:fullscreen .play-frame,
+.play-layout:-webkit-full-screen .play-frame {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
   border-radius: 0;
 }
 
-@media (min-width: 768px) {
-  .play-frame--webscreen {
-    inset: var(--nav-height) 0 0 0;
-  }
+.play-layout--webscreen .play-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.play-layout--webscreen .play-frame {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  border-radius: 0;
 }
 
 .play-frame:fullscreen,
@@ -1341,7 +1479,8 @@ onBeforeUnmount(() => {
 }
 
 .play-layout--webscreen .play-main {
-  width: 100%;
+  width: auto;
+  flex: 1;
 }
 
 @media (max-width: 640px) {

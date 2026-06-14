@@ -7,3 +7,37 @@
     height: calc(100vh - var(--nav-height));
   }
 }
+
+/* 播放页网页全屏：隐藏站点导航，仅保留视频 + 弹幕侧栏 */
+html.play-webscreen .nav-sidebar,
+html.play-webscreen .directory-drawer,
+html.play-webscreen .nav-platform-strip {
+  display: none !important;
+}
+
+html.play-webscreen .app-main {
+  padding: 0 !important;
+  height: 100vh !important;
+}
+
+html.play-webscreen .app-main-inner {
+  height: 100%;
+}
+
+html.play-webscreen .app-shell {
+  height: 100vh;
+  overflow: hidden;
+}
+
+html.play-webscreen .play-layout {
+  height: 100%;
+  min-height: 0;
+}
+
+/* 全屏 API 不可用时的兜底：固定铺满视口 */
+html.play-webscreen:not(:fullscreen):not(:-webkit-full-screen) .play-layout--webscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  height: 100vh !important;
+}

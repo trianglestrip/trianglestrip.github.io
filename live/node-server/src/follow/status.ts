@@ -1,8 +1,14 @@
 import { coverFromRoom, fetchBetard } from "../resolve/douyu/betard.js";
 import { fetchDouyinUserFollowInfo, fetchWebStreamData } from "../resolve/douyin/web-stream.js";
+import {
+  fetchDouyinAudienceExtras,
+  pickDouyinCategory,
+  pickDouyinLiveTimes,
+} from "./douyin-extras.js";
 import { huyaRoomState, profileNeedsPageCheck } from "./huya-state.js";
 import { fetchHuyaPageRoomFlags } from "../resolve/huya/web-stream.js";
 import { fetchHuyaGuardInfo, fetchHuyaVipCount } from "./huya-wup.js";
+import { getDouyinRoomMeta } from "../danmaku/douyin-meta.js";
 import { formatCount, formatOnline, formatPlainCount } from "../utils/format-online.js";
 
 export type FollowState = "live" | "replay" | "offline";
@@ -231,6 +237,8 @@ async function fetchDouyinSnapshot(roomId: string): Promise<FollowSnapshot> {
   const coverList = roomData.cover?.url_list || [];
   const owner = roomData.owner || {};
   const avatarThumb = owner.avatar_thumb?.url_list || owner.avatar_medium?.url_list || [];
+  const { liveStartAt: startAt, lastLiveAt } = pickDouyinLiveTimes(roomData, state);
+  let liveStartAt = startAt;
 
   let fans = "";
   const ownerFans = owner.follow_info?.follower_count;
@@ -241,6 +249,19 @@ async function fetchDouyinSnapshot(roomId: string): Promise<FollowSnapshot> {
     if (followInfo?.follower_count) {
       fans = formatCount(followInfo.follower_count);
     }
+  }
+
+  const extras =
+    state === "live"
+      ? await fetchDouyinAudienceExtras(roomData, rid)
+      : { fanGroup: "", vip: "" };
+
+  const cachedMeta = getDouyinRoomMeta(rid);
+  if (cachedMeta?.liveStartAt && !liveStartAt) {
+    liveStartAt = cachedMeta.liveStartAt;
+  }
+  if (cachedMeta?.fanGroup && !extras.fanGroup) {
+    extras.fanGroup = cachedMeta.fanGroup;
   }
 
   const onlineRaw =
@@ -256,17 +277,17 @@ async function fetchDouyinSnapshot(roomId: string): Promise<FollowSnapshot> {
     cover: httpsUrl(coverList[0] || ""),
     title: roomData.title || roomData.anchor_name || "",
     anchor: roomData.anchor_name || owner.nickname || "",
-    category: "",
+    category: pickDouyinCategory(roomData),
     fans,
     online: state === "live" ? formatPlainCount(onlineRaw) : "",
     diamondFans: "",
-    fanGroup: "",
+    fanGroup: extras.fanGroup,
     guard: "",
-    vip: "",
+    vip: extras.vip,
     guardNormal: 0,
     guardSuper: 0,
-    lastLiveAt: 0,
-    liveStartAt: 0,
+    lastLiveAt,
+    liveStartAt,
   };
 }
 

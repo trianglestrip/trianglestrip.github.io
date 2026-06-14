@@ -42,7 +42,9 @@ defineProps({
   compact: { type: Boolean, default: false },
 });
 
-const filterPlatforms = PLATFORMS.filter((p) => p.enabled && p.id !== "bilibili");
+const filterPlatforms = PLATFORMS.filter(
+  (p) => p.enabled && p.id !== "bilibili" && p.id !== "all",
+);
 </script>
 
 <style scoped>

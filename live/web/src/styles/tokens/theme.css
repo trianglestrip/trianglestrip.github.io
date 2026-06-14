@@ -198,7 +198,8 @@
   --sidebar-online-live-text: var(--follow-online-chip-live-text);
   --sidebar-meta-chip-bg: var(--dark-6);
 
-  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-sans: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-family: var(--font-sans);
 
 }
 

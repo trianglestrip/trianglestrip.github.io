@@ -1,5 +1,5 @@
 import * as esbuild from "esbuild";
-import { copyFileSync, mkdirSync } from "node:fs";
+import { copyFileSync, cpSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -26,4 +26,8 @@ await esbuild.build({
 });
 
 copyFileSync(path.join(pkgRoot, "config.json"), path.join(distServer, "config.json"));
+const vendorSrc = path.join(pkgRoot, "vendor");
+const vendorDest = path.join(distServer, "vendor");
+mkdirSync(vendorDest, { recursive: true });
+cpSync(vendorSrc, vendorDest, { recursive: true });
 console.log(`Bundled -> ${outfile}`);

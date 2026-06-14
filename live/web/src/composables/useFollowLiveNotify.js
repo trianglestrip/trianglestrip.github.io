@@ -7,6 +7,7 @@ import { useFollow } from "./useFollow.js";
 import { useToast } from "./useToast.js";
 
 const POLL_MS = 90000;
+const CONFIRM_MS = 60000;
 
 function roomLabel(snap, room) {
   return String(snap.anchor || room?.anchor || snap.title || room?.title || room?.id || snap.id || "").trim();
@@ -18,9 +19,21 @@ export function useFollowLiveNotify() {
   const router = useRouter();
 
   const prevState = {};
+  const pendingConfirm = new Map();
   let baselineReady = false;
   let pollTimer = 0;
   let debounceTimer = 0;
+
+  function clearPendingConfirm(key) {
+    const pending = pendingConfirm.get(key);
+    if (!pending) return;
+    clearTimeout(pending.timer);
+    pendingConfirm.delete(key);
+  }
+
+  function clearAllPendingConfirm() {
+    for (const key of pendingConfirm.keys()) clearPendingConfirm(key);
+  }
 
   function emitChange(snap, room, prev, next) {
     const label = roomLabel(snap, room);
@@ -52,6 +65,33 @@ export function useFollowLiveNotify() {
     }
   }
 
+  function scheduleConfirm(snap, room, prev, next) {
+    const key = followKey(snap.site, snap.id);
+    const existing = pendingConfirm.get(key);
+    if (existing?.prev === prev && existing?.next === next) return;
+
+    clearPendingConfirm(key);
+
+    const timer = window.setTimeout(async () => {
+      pendingConfirm.delete(key);
+      if (prevState[key] !== next) return;
+
+      try {
+        const data = await fetchFollowStatus([{ site: snap.site, id: snap.id }]);
+        const confirmed = data.list?.[0];
+        const confirmedState = confirmed?.state || "offline";
+        if (confirmedState === next) {
+          emitChange(confirmed, room, prev, next);
+        }
+        prevState[key] = confirmedState;
+      } catch {
+        /* 保留上次状态 */
+      }
+    }, CONFIRM_MS);
+
+    pendingConfirm.set(key, { prev, next, timer, snap, room });
+  }
+
   function applySnapshots(list = [], rooms = []) {
     const roomByKey = new Map((rooms || []).map((room) => [followKey(room.site, room.id), room]));
 
@@ -60,8 +100,12 @@ export function useFollowLiveNotify() {
       const next = snap.state || "offline";
       const prev = prevState[key];
       if (baselineReady && prev !== undefined && prev !== next) {
-        emitChange(snap, roomByKey.get(key), prev, next);
+        scheduleConfirm(snap, roomByKey.get(key), prev, next);
       }
+
+      const pending = pendingConfirm.get(key);
+      if (pending && next !== pending.next) clearPendingConfirm(key);
+
       prevState[key] = next;
     }
 
@@ -72,13 +116,17 @@ export function useFollowLiveNotify() {
     const rooms = follows.value || [];
     if (!rooms.length) {
       for (const key of Object.keys(prevState)) delete prevState[key];
+      clearAllPendingConfirm();
       baselineReady = false;
       return;
     }
 
     const activeKeys = new Set(rooms.map((room) => followKey(room.site, room.id)));
     for (const key of Object.keys(prevState)) {
-      if (!activeKeys.has(key)) delete prevState[key];
+      if (!activeKeys.has(key)) {
+        delete prevState[key];
+        clearPendingConfirm(key);
+      }
     }
 
     try {
@@ -113,6 +161,7 @@ export function useFollowLiveNotify() {
   onBeforeUnmount(() => {
     clearInterval(pollTimer);
     clearTimeout(debounceTimer);
+    clearAllPendingConfirm();
   });
 
   return { onToastClick };

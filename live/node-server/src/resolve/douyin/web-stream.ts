@@ -1,11 +1,13 @@
 import { abSign } from "./ab-sign.js";
 
-const PC_HEADERS = {
+export const DOUYIN_PC_HEADERS = {
   "user-agent":
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
   "accept-language": "zh-CN,zh;q=0.9",
   referer: "https://live.douyin.com/",
 };
+
+const PC_HEADERS = DOUYIN_PC_HEADERS;
 
 const SESSION_COOKIE_TTL_MS = 60_000;
 let sessionCookie: string | null = null;
@@ -42,7 +44,7 @@ async function bootstrapCookie(): Promise<string> {
   return seed;
 }
 
-async function getSessionCookie(): Promise<string> {
+export async function fetchDouyinSessionCookie(): Promise<string> {
   if (sessionCookie && Date.now() - sessionCookieAt < SESSION_COOKIE_TTL_MS) {
     return sessionCookie;
   }
@@ -58,8 +60,30 @@ export interface DouyinUserFollowInfo {
 
 export interface DouyinRoomData {
   id?: number | string;
+  id_str?: string;
   status?: number;
   title?: string;
+  category?: string;
+  category_name?: string;
+  create_time?: number;
+  start_time?: number;
+  open_time?: number;
+  live_start_time?: number;
+  modify_time?: number;
+  game_tag?: { name?: string };
+  game_data?: {
+    game_tag_info?: {
+      game_tag_name?: string;
+      game_tag_id?: number | string;
+      is_game?: number;
+    };
+  };
+  partition_road_map?: Record<string, unknown>;
+  room_auth?: Record<string, unknown>;
+  fansclub?: Record<string, unknown>;
+  fansclub_total?: number | string;
+  fansclub_count?: number | string;
+  fan_ticket_count?: number | string;
   cover?: { url_list?: string[] };
   owner?: {
     id_str?: string;
@@ -190,7 +214,7 @@ export async function fetchWebStreamData(webRid: string): Promise<DouyinRoomData
   const baseApi = `https://live.douyin.com/webcast/room/web/enter/?${query}`;
   const aBogus = abSign(query, PC_HEADERS["user-agent"]);
   const api = `${baseApi}&a_bogus=${encodeURIComponent(aBogus)}`;
-  const cookie = await getSessionCookie();
+  const cookie = await fetchDouyinSessionCookie();
 
   const res = await fetch(api, {
     headers: {
@@ -275,7 +299,7 @@ export async function fetchDouyinUserFollowInfo(
   });
   const query = params.toString();
   const api = `https://live.douyin.com/webcast/user/?${query}&a_bogus=${encodeURIComponent(abSign(query, PC_HEADERS["user-agent"]))}`;
-  const cookie = await getSessionCookie();
+  const cookie = await fetchDouyinSessionCookie();
 
   const res = await fetch(api, {
     headers: { ...PC_HEADERS, cookie },
@@ -300,4 +324,34 @@ export async function fetchDouyinUserFollowInfo(
   }
   if (Number(json.status_code || 0) !== 0) return null;
   return json.data?.user?.follow_info || json.data?.follow_info || null;
+}
+
+export async function resolveDouyinInternalRoomId(
+  webRid: string,
+  roomData?: DouyinRoomData,
+): Promise<string> {
+  const fromData = String(roomData?.id_str || roomData?.id || "").trim();
+  if (fromData) return fromData;
+
+  const rid = String(webRid).trim();
+  if (!rid) return "";
+
+  try {
+    const cookie = await fetchDouyinSessionCookie();
+    const res = await fetch(`https://live.douyin.com/${rid}`, {
+      headers: {
+        ...PC_HEADERS,
+        referer: `https://live.douyin.com/${rid}`,
+        cookie,
+      },
+      redirect: "follow",
+      signal: AbortSignal.timeout(12_000),
+    });
+    if (!res.ok) return "";
+    const html = await res.text();
+    const match = html.match(/roomId\\":\\"(\d+)\\"/) || html.match(/"roomId":"(\d+)"/);
+    return match?.[1] || "";
+  } catch {
+    return "";
+  }
 }

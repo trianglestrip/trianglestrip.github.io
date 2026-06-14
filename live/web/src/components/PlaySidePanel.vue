@@ -1,5 +1,11 @@
 <template>
-  <aside class="play-side" :class="{ 'play-side--flow': isMobileFlowTab }">
+  <aside
+    class="play-side"
+    :class="{
+      'play-side--flow': isMobileFlowTab,
+      'play-side--webscreen': webscreen,
+    }"
+  >
     <div class="side-header">
       <div class="room-aside">
         <div class="room-aside-avatar">
@@ -51,9 +57,23 @@
     </div>
 
     <div v-show="tab === 'chat'" class="tab-content chat-tab">
-      <div v-if="chatPlayStatus || chatDanmakuLine" class="chat-sys-bar">
-        <div v-if="chatPlayStatus" class="chat-item sys">系统：{{ chatPlayStatus }}</div>
-        <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
+      <div v-if="chatPlayStatus || chatDanmakuLine || roomId" class="chat-sys-bar">
+        <div v-if="chatPlayStatus" class="chat-sys-line">
+          <div class="chat-item sys">系统：{{ chatPlayStatus }}</div>
+        </div>
+        <div v-if="chatDanmakuLine || roomId" class="chat-sys-line chat-sys-line--dm">
+          <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
+          <button
+            type="button"
+            class="chat-dm-refresh-btn"
+            title="重新连接弹幕"
+            :disabled="dmRefreshing"
+            @click="onRefreshDanmaku"
+          >
+            <Icon name="refresh" :class="{ 'chat-dm-refresh-btn__icon--spin': dmRefreshing }" />
+            <span>刷新弹幕</span>
+          </button>
+        </div>
       </div>
       <div ref="chatListRef" class="chat-list">
         <div ref="chatContentRef" class="chat-list__content">
@@ -158,9 +178,9 @@
                 :disabled="!chatSettings.speedLimit"
               >
             </div>
-            <span class="setting-value">{{ chatSettings.speedLimit ? `每${chatSettings.speed}秒` : "全量" }}</span>
+            <span class="setting-value">{{ chatSettings.speedLimit ? `每${chatSettings.speed}秒1条` : "全量" }}</span>
           </label>
-          <p class="settings-hint">关闭开关显示全部弹幕；开启后每隔 N 秒续显 N 条，满屏后从顶部滑出旧弹幕。</p>
+          <p class="settings-hint">关闭限速则一次显示全部弹幕；开启后严格按间隔逐条显示，满屏后从顶部滑出旧弹幕。</p>
         </section>
         <section class="settings-group">
           <h4 class="settings-group__title">关注列表</h4>
@@ -237,15 +257,19 @@ const props = defineProps({
   payload: { type: Object, default: null },
   danmakuMessages: { type: Array, default: () => [] },
   danmakuStatus: { type: String, default: "" },
+  danmakuMeta: { type: Object, default: () => ({ liveStartAt: 0, fanGroup: "" }) },
   followList: { type: Array, default: () => [] },
   roomCategory: { type: String, default: "" },
   roomCid: { type: String, default: "" },
   isSuperFollowed: { type: Boolean, default: false },
+  webscreen: { type: Boolean, default: false },
 });
 
 const chatSettings = defineModel("chatSettings", { type: Object, required: true });
 
-const emit = defineEmits(["play-room", "unfollow", "toggle-super-follow"]);
+const emit = defineEmits(["play-room", "unfollow", "toggle-super-follow", "refresh-danmaku", "trim-chat"]);
+
+const dmRefreshing = ref(false);
 
 const { follows, isFollowed, toggleFollow, importFollows } = useFollow();
 const { notify } = useToast();
@@ -265,7 +289,9 @@ function syncPlayMobileLayout() {
 }
 
 const isMobileFlowTab = computed(() =>
-  playMobileLayout.value && ["chat", "follow", "recommend", "settings"].includes(tab.value),
+  !props.webscreen
+  && playMobileLayout.value
+  && ["chat", "follow", "recommend", "settings"].includes(tab.value),
 );
 const followTabActive = computed(() => tab.value === "follow");
 const followSiteFilter = ref("");
@@ -298,6 +324,16 @@ const filteredFollows = computed(() => {
 
 const chatPlayStatus = computed(() => briefPlayStatus(props.statusText));
 const chatDanmakuLine = computed(() => briefDanmakuStatus(props.danmakuStatus));
+
+function onRefreshDanmaku() {
+  if (dmRefreshing.value) return;
+  dmRefreshing.value = true;
+  resetChatFlow();
+  emit("refresh-danmaku");
+  window.setTimeout(() => {
+    dmRefreshing.value = false;
+  }, 900);
+}
 
 function togglePreviewCover() {
   previewCover.value = !previewCover.value;
@@ -629,6 +665,15 @@ watch(
   { immediate: true },
 );
 
+watch(
+  () => props.danmakuMeta,
+  (meta) => {
+    if (props.site !== "douyin" || !meta) return;
+    if (meta.liveStartAt) roomLiveStartAt.value = Number(meta.liveStartAt) || 0;
+  },
+  { deep: true },
+);
+
 const chatItemStyle = computed(() => ({
   fontSize: `${chatSettings.value.fontSize || 14}px`,
   opacity: (Number(chatSettings.value.opacity) || 100) / 100,
@@ -638,9 +683,9 @@ const chatItemStyle = computed(() => ({
 /** 在 danmakuMessages 上取连续窗口 [start, end)，保证列表无断层、满屏连贯上滚 */
 let chatDisplayStart = 0;
 let chatDisplayEnd = 0;
-let chatIntervalElapsed = 0;
+let nextChatReleaseAt = 0;
 let chatFlowRafId = null;
-let chatFlowLastTickAt = 0;
+const CHAT_VISIBLE_MAX = 48;
 
 function chatIntervalSeconds() {
   const raw = Number(chatSettings.value.speed);
@@ -651,7 +696,35 @@ function chatIntervalSeconds() {
 function resetChatFlow() {
   chatDisplayStart = 0;
   chatDisplayEnd = 0;
-  chatIntervalElapsed = 0;
+  nextChatReleaseAt = 0;
+}
+
+function clampChatDisplayEnd() {
+  const total = props.danmakuMessages.length;
+  if (chatDisplayEnd > total) chatDisplayEnd = total;
+}
+
+function trimChatVisibleStart() {
+  if (chatDisplayEnd - chatDisplayStart > CHAT_VISIBLE_MAX) {
+    chatDisplayStart = chatDisplayEnd - CHAT_VISIBLE_MAX;
+  }
+}
+
+/** 缓冲满员轮换：长度不变但头部 id 变化，需回退释放游标，避免新弹幕瞬间全显 */
+function syncBufferRotation(msgs, oldMsgs) {
+  if (!chatSpeedLimitOn() || !oldMsgs?.length || !msgs.length) return;
+  if (msgs.length !== oldMsgs.length) return;
+
+  let rotated = 0;
+  const limit = Math.min(msgs.length, oldMsgs.length);
+  for (let i = 0; i < limit; i += 1) {
+    if (msgs[i]?.id === oldMsgs[i]?.id) break;
+    rotated += 1;
+  }
+  if (rotated <= 0) return;
+
+  chatDisplayEnd = Math.max(chatDisplayStart, chatDisplayEnd - rotated);
+  clampChatDisplayEnd();
 }
 
 function syncChatWindowAfterParentTrim(removed) {
@@ -659,6 +732,7 @@ function syncChatWindowAfterParentTrim(removed) {
   if (!n) return;
   chatDisplayStart = Math.max(0, chatDisplayStart - n);
   chatDisplayEnd = Math.max(chatDisplayStart, chatDisplayEnd - n);
+  clampChatDisplayEnd();
 }
 
 function chatSpeedLimitOn() {
@@ -667,37 +741,22 @@ function chatSpeedLimitOn() {
 
 function syncChatAllMessages() {
   chatDisplayEnd = props.danmakuMessages.length;
+  trimChatVisibleStart();
 }
 
-async function fillChatViewportIfNeeded() {
-  if (!chatSpeedLimitOn() || tab.value !== "chat" || !chatSettings.value.show) return;
-  const total = props.danmakuMessages.length;
-  const container = chatListRef.value;
-  const content = chatContentRef.value;
-  if (!container || !content || !total) return;
-
-  const maxH = container.clientHeight;
-  if (maxH < 24) return;
-
-  let guard = 0;
-  while (chatDisplayEnd < total && content.scrollHeight < maxH - 2 && guard < 200) {
-    chatDisplayEnd += 1;
-    guard += 1;
-    await nextTick();
-  }
-}
-
-function releaseChatMessages(dt) {
+function releaseChatMessages(now) {
   if (!chatSpeedLimitOn()) return false;
-  chatIntervalElapsed += dt;
-  const intervalSec = chatIntervalSeconds();
-  if (chatIntervalElapsed < intervalSec) return false;
-  chatIntervalElapsed = 0;
+
+  const intervalMs = chatIntervalSeconds() * 1000;
+  if (!nextChatReleaseAt) nextChatReleaseAt = now + intervalMs;
+  if (now < nextChatReleaseAt) return false;
+  nextChatReleaseAt = now + intervalMs;
 
   const total = props.danmakuMessages.length;
   if (chatDisplayEnd >= total) return false;
 
-  chatDisplayEnd = Math.min(total, chatDisplayEnd + intervalSec);
+  chatDisplayEnd += 1;
+  trimChatVisibleStart();
   return true;
 }
 
@@ -716,15 +775,12 @@ function chatFlowLoop(now) {
     chatFlowRafId = null;
     return;
   }
-  const dt = Math.min(0.12, (now - chatFlowLastTickAt) / 1000);
-  chatFlowLastTickAt = now;
-  if (releaseChatMessages(dt)) void syncChatOverflow();
+  if (releaseChatMessages(now)) void syncChatOverflow();
   chatFlowRafId = requestAnimationFrame(chatFlowLoop);
 }
 
 function startChatFlowLoop() {
   if (chatFlowRafId) return;
-  chatFlowLastTickAt = performance.now();
   chatFlowRafId = requestAnimationFrame(chatFlowLoop);
 }
 
@@ -739,6 +795,7 @@ function syncChatFlowState() {
     void syncChatOverflow();
     return;
   }
+  clampChatDisplayEnd();
   startChatFlowLoop();
 }
 
@@ -775,32 +832,41 @@ async function syncChatOverflow() {
     const count = Math.max(1, chatDisplayEnd - chatDisplayStart);
     const avg = content.scrollHeight / count;
     const overflow = content.scrollHeight - maxH;
-    const remove = Math.max(1, Math.ceil(overflow / Math.max(avg, 6)));
+    const remove = Math.min(3, Math.max(1, Math.ceil(overflow / Math.max(avg, 6))));
     chatDisplayStart = Math.min(chatDisplayEnd - 1, chatDisplayStart + remove);
     iter += 1;
     await nextTick();
   }
-
-  await fillChatViewportIfNeeded();
 }
 
 watch(
-  () => props.danmakuMessages.length,
-  (len, prevLen) => {
-    const prev = typeof prevLen === "number" ? prevLen : 0;
+  () => props.danmakuMessages,
+  (msgs, oldMsgs) => {
+    const len = msgs.length;
+    const prev = oldMsgs?.length ?? 0;
+
     if (!len) {
       resetChatFlow();
       void syncChatOverflow();
       return;
     }
+
+    syncBufferRotation(msgs, oldMsgs);
+
     if (len < prev) {
       syncChatWindowAfterParentTrim(prev - len);
     }
+
     if (!chatSpeedLimitOn()) {
       syncChatAllMessages();
+    } else {
+      clampChatDisplayEnd();
     }
+
     syncChatFlowState();
-    void syncChatOverflow();
+    if (!chatSpeedLimitOn()) {
+      void syncChatOverflow();
+    }
   },
 );
 
@@ -813,9 +879,15 @@ watch(
     chatSettings.value.speedLimit,
   ],
   () => {
-    chatIntervalElapsed = 0;
+    nextChatReleaseAt = 0;
+    if (chatSpeedLimitOn()) {
+      clampChatDisplayEnd();
+      trimChatVisibleStart();
+    }
     syncChatFlowState();
-    void syncChatOverflow();
+    if (!chatSpeedLimitOn()) {
+      void syncChatOverflow();
+    }
   },
 );
 
@@ -860,6 +932,16 @@ onBeforeUnmount(() => {
   display: flex;
   flex-direction: column;
   min-height: 0;
+}
+
+.play-side--webscreen {
+  width: var(--play-sidebar-width);
+  height: 100%;
+  max-width: none;
+  min-height: 0;
+  border-top: none;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
 .side-header {
@@ -1193,12 +1275,64 @@ onBeforeUnmount(() => {
 
 .chat-sys-bar {
   flex-shrink: 0;
-  padding: .35rem .5rem 0;
+  padding: .35rem .5rem .3rem;
   border-bottom: 1px solid var(--chrome-border);
+  display: flex;
+  flex-direction: column;
+  gap: .28rem;
 }
 
-.chat-sys-bar .chat-item {
-  margin-bottom: .28rem;
+.chat-sys-line {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  min-width: 0;
+}
+
+.chat-sys-line--dm {
+  flex-wrap: wrap;
+}
+
+.chat-sys-line .chat-item {
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.chat-dm-refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .28rem;
+  flex-shrink: 0;
+  padding: .22rem .5rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--sidebar-chip-bg);
+  color: var(--text);
+  font: inherit;
+  font-size: .72rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+
+.chat-dm-refresh-btn:hover:not(:disabled) {
+  background: var(--sidebar-chip-hover-bg);
+  color: var(--amber);
+}
+
+.chat-dm-refresh-btn:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+.chat-dm-refresh-btn__icon--spin {
+  animation: chat-dm-refresh-spin .8s linear infinite;
+}
+
+@keyframes chat-dm-refresh-spin {
+  to { transform: rotate(360deg); }
 }
 
 .chat-list {
@@ -1464,6 +1598,15 @@ onBeforeUnmount(() => {
     flex-shrink: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+  }
+
+  .play-side--webscreen {
+    width: var(--play-sidebar-width);
+    max-width: min(var(--play-sidebar-width), 42vw);
+    height: 100%;
+    border-left: 1px solid var(--border);
+    border-top: none;
+    overflow: hidden;
   }
 
   .play-side--flow {
