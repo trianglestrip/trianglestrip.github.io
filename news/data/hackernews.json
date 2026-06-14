@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-14T14:26:55+00:00",
+  "updated_at": "2026-06-14T17:26:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The Birth and Death of JavaScript (2014)",
-      "url": "https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript",
-      "hot": "75"
+      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
+      "hot": "73"
     },
     {
       "rank": 2,
       "title": "Firewood Splitting Simulator",
       "url": "https://screen.toys/firewood/",
-      "hot": "126"
+      "hot": "322"
     },
     {
       "rank": 3,
-      "title": "FarOutCompany",
-      "url": "https://faroutcompany.com/",
-      "hot": "6"
+      "title": "The Birth and Death of JavaScript (2014)",
+      "url": "https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript",
+      "hot": "151"
     },
     {
       "rank": 4,
-      "title": "Lisp's Influence on Ruby",
-      "url": "https://blog.tacoda.dev/lisps-influence-on-ruby-6a54f1a7740e",
-      "hot": "76"
+      "title": "Swiss voters reject proposal to cap population at ten million",
+      "url": "https://www.swissinfo.ch/eng/swiss-politics/swiss-voters-reject-proposal-to-cap-population-at-ten-million/91548146",
+      "hot": "64"
     },
     {
       "rank": 5,
-      "title": "How did Atari apply side art to Arcade Cabinets?",
-      "url": "https://arcadeblogger.com/2026/06/14/how-did-atari-apply-side-art-to-arcade-cabinets/",
-      "hot": "16"
+      "title": "Perlisisms",
+      "url": "https://www.cs.yale.edu/homes/perlis-alan/quotes.html",
+      "hot": "40"
     },
     {
       "rank": 6,
-      "title": "Free SQL→ER diagram tool, runs in the browser, nothing uploaded",
-      "url": "https://sqltoerdiagram.com/",
-      "hot": "277"
+      "title": "Lisp's Influence on Ruby",
+      "url": "https://blog.tacoda.dev/lisps-influence-on-ruby-6a54f1a7740e",
+      "hot": "148"
     },
     {
       "rank": 7,
-      "title": "Honda Civics and the Evil Valet",
-      "url": "https://juniperspring.org/posts/honda-evil-valet/",
-      "hot": "342"
+      "title": "Caddy compatibility for zeroserve: 3x throughput and 70% lower latency",
+      "url": "https://su3.io/posts/zeroserve-caddy-compat",
+      "hot": "73"
     },
     {
       "rank": 8,
-      "title": "How to Earn a Billion Dollars",
-      "url": "https://paulgraham.com/earn.html",
-      "hot": "103"
+      "title": "FarOutCompany",
+      "url": "https://faroutcompany.com/",
+      "hot": "59"
     },
     {
       "rank": 9,
-      "title": "GLM 5.2 Is Out",
-      "url": "https://twitter.com/jietang/status/2065784751345287314",
-      "hot": "692"
+      "title": "No, everyone is not using AI for everything",
+      "url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
+      "hot": "231"
     },
     {
       "rank": 10,
-      "title": "Caddy compatibility for zeroserve: 3x throughput and 70% lower latency",
-      "url": "https://su3.io/posts/zeroserve-caddy-compat",
-      "hot": "4"
+      "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
+      "url": "https://news.ycombinator.com/item?id=48528029",
+      "hot": "82"
     }
   ]
 }

@@ -1,32 +1,32 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-14T14:26:24+00:00",
+  "updated_at": "2026-06-14T17:25:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.2"
-    },
-    {
-      "rank": 2,
-      "title": "莫离",
-      "url": "https://movie.douban.com/subject/37234503/",
-      "hot": ""
-    },
-    {
-      "rank": 3,
       "title": "火遮眼",
       "url": "https://movie.douban.com/subject/36877245/",
       "hot": "评分 8.2"
     },
     {
-      "rank": 4,
+      "rank": 2,
       "title": "铁拳教育",
       "url": "https://movie.douban.com/subject/37071123/",
       "hot": "评分 8.8"
+    },
+    {
+      "rank": 3,
+      "title": "莫离",
+      "url": "https://movie.douban.com/subject/37234503/",
+      "hot": ""
+    },
+    {
+      "rank": 4,
+      "title": "给阿嬷的情书",
+      "url": "https://movie.douban.com/subject/37116446/",
+      "hot": "评分 9.2"
     },
     {
       "rank": 5,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "低智商犯罪",
-      "url": "https://movie.douban.com/subject/35517044/",
-      "hot": "评分 8.1"
+      "title": "揭秘日",
+      "url": "https://movie.douban.com/subject/36860212/",
+      "hot": "评分 6.5"
     }
   ]
 }

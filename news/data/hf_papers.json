@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-14T10:33:33+00:00",
+  "updated_at": "2026-06-14T17:26:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "94"
+      "hot": "95"
     },
     {
       "rank": 2,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "40"
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "url": "https://huggingface.co/papers/2605.23904",
+      "hot": "228"
     },
     {
       "rank": 3,
@@ -24,39 +24,39 @@
     },
     {
       "rank": 4,
-      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
-      "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "228"
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "40"
     },
     {
       "rank": 5,
-      "title": "SIA: Self Improving AI with Harness & Weight Updates",
-      "url": "https://huggingface.co/papers/2605.27276",
-      "hot": "14"
-    },
-    {
-      "rank": 6,
       "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
       "url": "https://huggingface.co/papers/2606.03264",
       "hot": "16"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "LMCache: An Efficient KV Cache Layer for Enterprise-Scale LLM Inference",
       "url": "https://huggingface.co/papers/2510.09665",
       "hot": "5"
     },
     {
+      "rank": 7,
+      "title": "SIA: Self Improving AI with Harness & Weight Updates",
+      "url": "https://huggingface.co/papers/2605.27276",
+      "hot": "14"
+    },
+    {
       "rank": 8,
-      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
-      "url": "https://huggingface.co/papers/2606.02800",
-      "hot": "119"
+      "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
+      "url": "https://huggingface.co/papers/2606.13679",
+      "hot": "76"
     },
     {
       "rank": 9,
-      "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
-      "url": "https://huggingface.co/papers/2606.13679",
-      "hot": "75"
+      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+      "url": "https://huggingface.co/papers/2606.02800",
+      "hot": "119"
     },
     {
       "rank": 10,
