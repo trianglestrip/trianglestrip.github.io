@@ -127,6 +127,14 @@ export function normalizeUnixTime(value: number): number {
   return 0;
 }
 
+/** 过滤明显不是「本场开播」的 Unix 秒级时间戳 */
+export function isPlausibleLiveStartAt(value: number): boolean {
+  const ts = normalizeUnixTime(value);
+  if (!ts) return false;
+  const now = Math.floor(Date.now() / 1000);
+  return ts >= now - 3 * 24 * 3600 && ts <= now + 120;
+}
+
 function parseUserName(userBuf: Uint8Array | null): string {
   if (!userBuf) return "";
   const userFields = decodeFields(userBuf);

@@ -25,6 +25,7 @@ import {
   parseEmojiChatMessage,
   parseUpdateFanTicketMessage,
   repeatedBytes,
+  isPlausibleLiveStartAt,
 } from "./protobuf-lite.js";
 import { patchDouyinRoomMeta } from "./douyin-meta.js";
 
@@ -199,7 +200,7 @@ function parseDouyinPushFrame(message: ArrayBuffer): {
     }
     if (method === "WebcastRoomStatsMessage") {
       const liveStartAt = parseCommonCreateTime(payload);
-      if (liveStartAt) meta.liveStartAt = liveStartAt;
+      if (liveStartAt && isPlausibleLiveStartAt(liveStartAt)) meta.liveStartAt = liveStartAt;
       continue;
     }
     if (method === "WebcastUpdateFanTicketMessage") {
