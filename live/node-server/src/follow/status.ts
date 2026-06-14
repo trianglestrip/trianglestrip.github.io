@@ -17,7 +17,7 @@ import { fetchHuyaPageRoomFlags } from "../resolve/huya/web-stream.js";
 import { fetchHuyaGuardInfo, fetchHuyaVipCount } from "./huya-wup.js";
 import { getDouyinRoomMeta } from "../danmaku/douyin-meta.js";
 import { isPlausibleLiveStartAt } from "../danmaku/protobuf-lite.js";
-import { formatCount, formatOnline, formatPlainCount } from "../utils/format-online.js";
+import { formatCount, formatOnline, formatOnlineWan } from "../utils/format-online.js";
 
 export type FollowState = "live" | "replay" | "offline";
 
@@ -287,7 +287,7 @@ async function fetchDouyinSnapshot(roomId: string): Promise<FollowSnapshot> {
     anchor: roomData.anchor_name || owner.nickname || "",
     category: pickDouyinCategory(roomData),
     fans,
-    online: state === "live" ? formatPlainCount(onlineRaw) : "",
+    online: state === "live" ? formatOnlineWan(onlineRaw) : "",
     diamondFans: "",
     fanGroup: extras.fanGroup,
     guard: "",

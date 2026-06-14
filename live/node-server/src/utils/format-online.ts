@@ -9,7 +9,7 @@ export function formatOnline(count: number | string | null | undefined): string 
     return "";
   }
   if (value >= 10000) {
-    return `${(value / 10000).toFixed(1)}万`;
+    return formatWan(value);
   }
   if (value >= 1000) {
     return `${(value / 1000).toFixed(1)}千`;
@@ -18,6 +18,23 @@ export function formatOnline(count: number | string | null | undefined): string 
     return String(Math.trunc(value));
   }
   return "";
+}
+
+function formatWan(value: number): string {
+  const wan = value / 10000;
+  const text = Number.isInteger(wan) ? String(wan) : wan.toFixed(1).replace(/\.0$/, "");
+  return `${text}万`;
+}
+
+/** 在线人数：过万显示 X万 / X.X万，否则完整数字；兼容抖音等 API 的「1.2万」「3w+」 */
+export function formatOnlineWan(count: number | string | null | undefined): string {
+  const plain = formatPlainCount(count);
+  if (!plain) return "";
+  const value = Number(plain);
+  if (value >= 10000) {
+    return formatWan(value);
+  }
+  return plain;
 }
 
 /** 贵宾/守护/钻粉等：显示实际数字，不做万/千省略 */

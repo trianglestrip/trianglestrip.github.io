@@ -1,23 +1,42 @@
 import { abSign } from "../resolve/douyin/ab-sign.js";
-import { formatPlainCount } from "../utils/format-online.js";
+import {
+  clearDouyinSessionCookie,
+  DOUYIN_PC_HEADERS,
+  fetchDouyinSessionCookie,
+} from "../resolve/douyin/web-stream.js";
+import { formatOnlineWan } from "../utils/format-online.js";
 import { CROSS_CATEGORIES } from "./cross-categories.data.js";
 import { DOUYIN_GAME_ICONS } from "./douyin-game-icons.data.js";
 import { resolveGameIconFromWeb } from "./douyin-game-icon-resolver.js";
 import type { CategoryGroup, CategoryItem, RoomItem, RoomsPayload } from "./douyu.js";
-const PC_HEADERS = {
-  "user-agent":
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
-  referer: "https://live.douyin.com/",
-  "accept-language": "zh-CN,zh;q=0.9",
-};
+const PC_HEADERS = DOUYIN_PC_HEADERS;
 
 const PAGE_SIZE = 15;
 /** 首页推荐默认分区：王者荣耀 */
 const DEFAULT_GAME_PARTITION = "1010045";
 const DEFAULT_PARTITION_TYPE = "1";
+const ENTERTAINMENT_PARTITION_TYPE = "4";
+const ENTERTAINMENT_GROUP_ID = "yule";
 
-const FALLBACK_COOKIE =
-  "ttwid=1%7CmDcInbJ7AJ-2PGtsgrG4xj7SOiNMzePqQBF1LMO2Qkg%7C1761107324%7Cbbf97c2cd9f8eae8e8c36db4ef50c323deaa4b161179170aaf659590867c162d";
+const ENTERTAINMENT_TAB_ORDER = [
+  "聊天",
+  "音乐",
+  "二次元",
+  "舞蹈",
+  "文化",
+  "生活",
+  "运动",
+] as const;
+
+const FALLBACK_ENTERTAINMENT_TABS: CategoryItem[] = [
+  { cid: 101, name: "聊天", pid: 4, pic: "" },
+  { cid: 102, name: "音乐", pid: 4, pic: "" },
+  { cid: 104, name: "二次元", pid: 4, pic: "" },
+  { cid: 105, name: "舞蹈", pid: 4, pic: "" },
+  { cid: 106, name: "文化", pid: 4, pic: "" },
+  { cid: 107, name: "生活", pid: 4, pic: "" },
+  { cid: 108, name: "运动", pid: 4, pic: "" },
+];
 
 const FALLBACK_GAME_GROUPS: CategoryGroup[] = [
   {
@@ -62,12 +81,13 @@ const FALLBACK_GAME_GROUPS: CategoryGroup[] = [
   },
 ];
 
-const SESSION_COOKIE_TTL_MS = 60_000;
 const HUYA_GAME_PIC = "https://huyaimg.msstatic.com/cdnimage/game/{cid}-MS.jpg";
 const HUYA_GAME_LIST_URL = "https://mp.huya.com/cache.php?m=Game&do=gameList&game_type=1";
 const FUZZY_NAME_MIN_LEN = 4;
 
 const GAME_TREE_MARKER = '\\"title\\":\\"游戏\\"},\\"sub_partition\\":';
+const ENTERTAINMENT_TAB_RE =
+  /\\"id_str\\":\\"(\d+)\\",\\"type\\":4,\\"title\\":\\"([^"\\]+)\\"/g;
 const PARTITION_RE =
   /\{\\"partition\\":\{\\"id_str\\":\\"(\d+)\\",\\"type\\":(\d+),\\"title\\":\\"([^"\\]+)\\"\},\\"has_parent_node\\":true,\\"second_node\\":\{\\"id_str\\":\\"(\d+)\\",\\"type\\":(\d+),\\"title\\":\\"([^"\\]+)\\"\},\\"first_node\\":\{\\"id_str\\":\\"(\d+)\\",\\"type\\":(\d+),\\"title\\":\\"([^"\\]+)\\"\}/g;
 
@@ -76,36 +96,44 @@ interface SubPartitionNode {
   sub_partition?: SubPartitionNode[];
 }
 
-function randomHex(len: number): string {
-  const chars = "0123456789abcdef";
-  let out = "";
-  for (let i = 0; i < len; i++) out += chars[Math.floor(Math.random() * chars.length)];
-  return out;
-}
-
-async function bootstrapCookie(): Promise<string> {
-  const acNonce = randomHex(21);
-  const seed = `__ac_nonce=${acNonce}; odin_tt=${randomHex(160)}`;
-  try {
-    const res = await fetch("https://live.douyin.com/", {
-      headers: { ...PC_HEADERS, cookie: seed },
-      redirect: "follow",
-      signal: AbortSignal.timeout(12_000),
-    });
-    const parts = [`__ac_nonce=${acNonce}`];
-    for (const item of res.headers.getSetCookie?.() || []) {
-      const nameValue = item.split(";")[0]?.trim();
-      if (nameValue) parts.push(nameValue);
-    }
-    if (parts.length) return parts.join("; ");
-  } catch {
-    /* ignore */
+function resolvePartitionType(cid: string, pid?: string): string {
+  const explicit = String(pid || "").trim();
+  if (explicit) return explicit;
+  const numericCid = Number(cid);
+  if (Number.isFinite(numericCid) && numericCid >= 100 && numericCid <= 199) {
+    return ENTERTAINMENT_PARTITION_TYPE;
   }
-  return `${seed}; ${FALLBACK_COOKIE}`;
+  return DEFAULT_PARTITION_TYPE;
 }
 
-let sessionCookie: string | null = null;
-let sessionCookieAt = 0;
+async function signedGet(
+  path: string,
+  params: Record<string, string>,
+  cookie = "",
+): Promise<Record<string, unknown>> {
+  let lastError: Error | null = null;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const activeCookie = cookie || (await fetchDouyinSessionCookie(attempt > 0));
+    const query = new URLSearchParams(params).toString();
+    const api = `https://live.douyin.com${path}?${query}&a_bogus=${encodeURIComponent(abSign(query, PC_HEADERS["user-agent"]))}`;
+    const res = await fetch(api, {
+      headers: { ...PC_HEADERS, cookie: activeCookie },
+      signal: AbortSignal.timeout(15_000),
+    });
+    const text = await res.text();
+    if (!text || text.startsWith("<!DOCTYPE")) {
+      lastError = new Error("抖音列表接口触发风控");
+      if (attempt === 0 && !cookie) {
+        clearDouyinSessionCookie();
+        continue;
+      }
+      throw lastError;
+    }
+    return JSON.parse(text) as Record<string, unknown>;
+  }
+  throw lastError || new Error("抖音列表接口触发风控");
+}
+
 let categoryCache: CategoryGroup[] | null = null;
 
 export function clearDouyinCategoryCache(): void {
@@ -121,33 +149,6 @@ let categoryPicSources: CategoryPicSources | null = null;
 const webIconByDouyinId = new Map<string, string>();
 const WEB_ICON_CONCURRENCY = 3;
 const WEB_ICON_BUDGET_MS = 25_000;
-async function getSessionCookie(): Promise<string> {
-  if (sessionCookie && Date.now() - sessionCookieAt < SESSION_COOKIE_TTL_MS) {
-    return sessionCookie;
-  }
-  sessionCookie = await bootstrapCookie();
-  sessionCookieAt = Date.now();
-  return sessionCookie;
-}
-
-async function signedGet(
-  path: string,
-  params: Record<string, string>,
-  cookie = "",
-): Promise<Record<string, unknown>> {
-  const activeCookie = cookie || (await getSessionCookie());
-  const query = new URLSearchParams(params).toString();
-  const api = `https://live.douyin.com${path}?${query}&a_bogus=${encodeURIComponent(abSign(query, PC_HEADERS["user-agent"]))}`;
-  const res = await fetch(api, {
-    headers: { ...PC_HEADERS, cookie: activeCookie },
-    signal: AbortSignal.timeout(15_000),
-  });
-  const text = await res.text();
-  if (!text || text.startsWith("<!DOCTYPE")) {
-    throw new Error("抖音列表接口触发风控");
-  }
-  return JSON.parse(text) as Record<string, unknown>;
-}
 
 function normCategoryName(name: string): string {
   return String(name || "")
@@ -368,6 +369,34 @@ function unescapeEmbeddedJson(text: string): string {
   return text.replace(/\\"/g, '"').replace(/\\\\/g, "\\");
 }
 
+function parseEntertainmentTabsFromHtml(html: string): CategoryItem[] {
+  const byName = new Map<string, CategoryItem>();
+  for (const match of html.matchAll(ENTERTAINMENT_TAB_RE)) {
+    const name = match[2];
+    if (!ENTERTAINMENT_TAB_ORDER.includes(name as (typeof ENTERTAINMENT_TAB_ORDER)[number])) continue;
+    if (!byName.has(name)) {
+      byName.set(name, {
+        cid: Number(match[1]),
+        name,
+        pic: "",
+        pid: Number(ENTERTAINMENT_PARTITION_TYPE),
+      });
+    }
+  }
+  const parsed = ENTERTAINMENT_TAB_ORDER.map((name) => byName.get(name)).filter(
+    (item): item is CategoryItem => Boolean(item),
+  );
+  return parsed.length ? parsed : FALLBACK_ENTERTAINMENT_TABS;
+}
+
+function buildEntertainmentGroup(html: string): CategoryGroup {
+  return {
+    id: ENTERTAINMENT_GROUP_ID,
+    name: "娱乐",
+    list: parseEntertainmentTabsFromHtml(html),
+  };
+}
+
 function parseGameTreeFromHtml(html: string): CategoryGroup[] {
   const idx = html.indexOf(GAME_TREE_MARKER);
   if (idx < 0) return [];
@@ -456,6 +485,7 @@ export async function fetchDouyinGameCategories(): Promise<CategoryGroup[]> {
   if (categoryCache) return categoryCache;
 
   let groups: CategoryGroup[] = FALLBACK_GAME_GROUPS;
+  let html = "";
   try {
     const res = await fetch("https://live.douyin.com/", {
       headers: PC_HEADERS,
@@ -463,12 +493,14 @@ export async function fetchDouyinGameCategories(): Promise<CategoryGroup[]> {
       signal: AbortSignal.timeout(12_000),
     });
     if (!res.ok) throw new Error(`抖音首页 HTTP ${res.status}`);
-    const html = await res.text();
+    html = await res.text();
     const parsed = parseGameCategoriesFromHtml(html);
     if (parsed.length) groups = parsed;
   } catch {
     /* fallback */
   }
+
+  groups = [...groups, buildEntertainmentGroup(html)];
 
   const picSources = await loadCategoryPicSources();
   groups = enrichCategoryPics(groups, picSources);
@@ -508,7 +540,7 @@ function normalizePartitionRoom(
     nickname: room.owner?.nickname || "",
     cid: partitionId,
     category: partitionName,
-    online: formatPlainCount(online),
+    online: formatOnlineWan(online),
     cover: httpsUrl(room.cover?.url_list?.[0] || ""),
   };
 }
@@ -520,7 +552,7 @@ export async function fetchDouyinGameRooms(
   partitionName = "",
 ): Promise<RoomsPayload> {
   const partition = String(partitionId || DEFAULT_GAME_PARTITION).trim();
-  const type = String(partitionType || DEFAULT_PARTITION_TYPE).trim();
+  const type = resolvePartitionType(partition, partitionType);
   const offset = Math.max(0, (Math.max(1, page) - 1) * PAGE_SIZE);
 
   const json = await signedGet("/webcast/web/partition/detail/room/v2/", {
