@@ -1,10 +1,10 @@
 .page-fill {
-  height: calc(100vh - var(--nav-height));
+  height: calc(var(--app-height) - var(--nav-chrome-height));
 }
 
 @media (min-width: 768px) {
   .page-fill {
-    height: calc(100vh - var(--nav-height));
+    height: calc(var(--app-height) - var(--nav-chrome-height));
   }
 }
 
@@ -17,7 +17,7 @@ html.play-webscreen .nav-platform-strip {
 
 html.play-webscreen .app-main {
   padding: 0 !important;
-  height: 100vh !important;
+  height: var(--app-height) !important;
 }
 
 html.play-webscreen .app-main-inner {
@@ -25,7 +25,7 @@ html.play-webscreen .app-main-inner {
 }
 
 html.play-webscreen .app-shell {
-  height: 100vh;
+  height: var(--app-height);
   overflow: hidden;
 }
 
@@ -39,5 +39,5 @@ html.play-webscreen:not(:fullscreen):not(:-webkit-full-screen) .play-layout--web
   position: fixed;
   inset: 0;
   z-index: 25;
-  height: 100vh !important;
+  height: var(--app-height) !important;
 }

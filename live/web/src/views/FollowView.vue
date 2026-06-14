@@ -286,4 +286,40 @@ function confirmBatchDelete() {
   font-size: .78rem;
   color: var(--muted);
 }
+
+@media (max-width: 768px) {
+  .follow-header {
+    padding: .55rem .65rem .25rem;
+    gap: .32rem;
+  }
+
+  .follow-header__top {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .follow-header h1 {
+    font-size: 1rem;
+  }
+
+  .follow-header__actions {
+    flex: 1 1 100%;
+    justify-content: flex-start;
+    gap: .32rem;
+  }
+
+  .follow-header__filter-row {
+    flex-wrap: wrap;
+  }
+
+  .follow-header__filter :deep(.follow-platform-filter__item) {
+    font-size: .82rem;
+    padding: .24rem .44rem;
+  }
+
+  .btn-sm {
+    padding: .34rem .58rem;
+    font-size: .78rem;
+  }
+}
 </style>

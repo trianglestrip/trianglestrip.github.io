@@ -149,6 +149,7 @@ import { followKey } from "../utils/prefStore.js";
 import { displayCategoryName } from "../utils/categoryDisplay.js";
 import { briefPlayStatus } from "../utils/chatStatus.js";
 import { getCategoryStyle } from "../utils/categoryColor.js";
+import { compactMediaQuery } from "../utils/breakpoints.js";
 import { browseBackTarget, loadBrowseContext } from "../utils/browseContext.js";
 import { formatDouyinOnline } from "../utils/followDisplay.js";
 import { isSoundUnlocked, unlockSound, resetSoundSession } from "../utils/soundSession.js";
@@ -933,7 +934,7 @@ async function toggleWebscreen() {
 }
 
 function isMobilePlayViewport() {
-  return window.matchMedia("(max-width: 640px)").matches
+  return window.matchMedia(compactMediaQuery()).matches
     || window.matchMedia("(pointer: coarse)").matches;
 }
 
@@ -1140,8 +1141,9 @@ onBeforeUnmount(() => {
 @media (max-width: 1024px) {
   .play-layout:has(.play-side--flow) {
     height: auto;
-    min-height: calc(100vh - var(--nav-height));
-    overflow-y: visible;
+    min-height: 0;
+    flex: 0 0 auto;
+    overflow-x: hidden;
   }
 
   .play-layout:has(.play-side--flow) .play-main {
@@ -1408,7 +1410,7 @@ onBeforeUnmount(() => {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh !important;
+  width: 100dvh !important;
   height: 100vw !important;
   max-width: none;
   max-height: none;
@@ -1536,8 +1538,8 @@ onBeforeUnmount(() => {
 
   .play-back {
     left: .35rem;
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
     font-size: 1rem;
   }
 

@@ -21,7 +21,10 @@
         <div class="room-cover-wrap">
           <LazyImage v-if="room.cover" :src="room.cover" image-class="room-cover" />
           <div v-else class="room-cover room-cover--empty">无封面</div>
-          <PlatformCoverBadge v-if="roomSite(room)" :site="roomSite(room)" />
+          <PlatformCoverBadge
+            v-if="roomSite(room) && room.liveState !== 'live' && room.liveState !== 'replay'"
+            :site="roomSite(room)"
+          />
           <CoverOnlineBadge :online="room.online" :live="room.status !== false && room.liveState !== 'offline'" />
           <span
             v-if="selectMode"
@@ -248,8 +251,8 @@ function onItemClick(room) {
   right: .35rem;
   left: auto;
   z-index: 3;
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.35rem;
+  height: 1.35rem;
   border-radius: 3px;
   border: 2px solid rgba(255, 255, 255, .75);
   background: rgba(0, 0, 0, .45);

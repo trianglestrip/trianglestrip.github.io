@@ -408,7 +408,7 @@ watch(
   display: flex;
   flex-direction: column;
   width: var(--directory-rail-width);
-  height: calc(100vh - var(--nav-chrome-height, var(--nav-height)));
+  height: calc(var(--app-height) - var(--nav-chrome-height, var(--nav-height)));
   border-right: 1px solid var(--chrome-border);
   box-shadow: 4px 0 16px rgba(0, 0, 0, .18);
   overflow: visible;
@@ -422,7 +422,7 @@ watch(
 
 .directory-drawer__toggle {
   position: fixed;
-  top: calc(var(--nav-chrome-height, var(--nav-height)) + (100vh - var(--nav-chrome-height, var(--nav-height))) / 2);
+  top: calc(var(--nav-chrome-height, var(--nav-height)) + (var(--app-height) - var(--nav-chrome-height, var(--nav-height))) / 2);
   left: var(--directory-rail-width);
   z-index: 12;
   display: inline-flex;

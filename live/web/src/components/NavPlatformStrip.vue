@@ -112,7 +112,8 @@ function openSheet(platformId) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
+  width: 2.75rem;
+  min-height: 2.75rem;
   padding: 0;
   border: none;
   border-left: 1px solid var(--chrome-border);

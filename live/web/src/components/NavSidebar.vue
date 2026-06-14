@@ -162,8 +162,9 @@ function isActive(item) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: var(--nav-height);
-  padding: 0 .35rem;
+  box-sizing: border-box;
+  min-height: var(--nav-chrome-height);
+  padding: 0 .35rem var(--nav-safe-bottom);
   border-top: 1px solid var(--chrome-border);
   border-bottom: none;
   background: var(--dark-7);
@@ -196,7 +197,7 @@ function isActive(item) {
   justify-content: center;
   gap: 0;
   width: 44px;
-  height: 40px;
+  height: 44px;
   padding: 0;
   border: none;
   border-radius: 12px;

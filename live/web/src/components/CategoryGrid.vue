@@ -67,7 +67,7 @@ function categoryLink(item) {
 }
 
 @media (min-width: 768px) {
-  .category-grid { grid-template-columns: repeat(8, minmax(0, 1fr)); padding-inline: .5rem; }
+  .category-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); padding-inline: .5rem; }
 }
 
 @media (min-width: 1024px) {

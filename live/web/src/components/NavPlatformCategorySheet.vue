@@ -53,7 +53,8 @@ const { platformLabel } = useNavPlatforms("douyu");
 
 .nav-cat-sheet__panel {
   width: 100%;
-  max-height: min(78vh, 32rem);
+  max-height: min(78dvh, 32rem);
+  padding-bottom: var(--nav-safe-bottom);
   display: flex;
   flex-direction: column;
   background: var(--panel);

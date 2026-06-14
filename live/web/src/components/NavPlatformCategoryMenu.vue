@@ -190,7 +190,7 @@ watch(
   transform: translateX(-50%);
   min-width: 12rem;
   max-width: min(92vw, 56rem);
-  max-height: min(70vh, 26rem);
+  max-height: min(70dvh, 26rem);
   padding: .55rem .6rem .6rem;
   background: var(--panel);
   border: 1px solid var(--border);
@@ -303,7 +303,7 @@ watch(
   display: grid;
   grid-template-columns: repeat(3, minmax(4.75rem, 1fr));
   gap: 0;
-  max-height: min(60vh, 22rem);
+  max-height: min(60dvh, 22rem);
   overflow-y: auto;
   scrollbar-width: thin;
 }

@@ -176,7 +176,7 @@ function onSelectRoom(room) {
   color: var(--danger);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .page-header {
     padding: .28rem .35rem .42rem;
     gap: .35rem;
@@ -188,8 +188,8 @@ function onSelectRoom(room) {
 
   .back-link,
   .refresh-btn {
-    width: 1.85rem;
-    height: 1.85rem;
+    width: 2.75rem;
+    height: 2.75rem;
     font-size: 1rem;
   }
 

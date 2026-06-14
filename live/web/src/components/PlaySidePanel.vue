@@ -58,12 +58,12 @@
 
     <div v-show="tab === 'chat'" class="tab-content chat-tab">
       <div v-if="chatPlayStatus || chatDanmakuLine || roomId" class="chat-sys-bar">
-        <div v-if="chatPlayStatus" class="chat-sys-line">
-          <div class="chat-item sys">系统：{{ chatPlayStatus }}</div>
-        </div>
-        <div v-if="chatDanmakuLine || roomId" class="chat-sys-line chat-sys-line--dm">
-          <div v-if="chatDanmakuLine" class="chat-item sys">系统：{{ chatDanmakuLine }}</div>
+        <div class="chat-sys-line">
+          <span v-if="chatPlayStatus" class="chat-sys-play">{{ chatPlayStatus }}</span>
+          <span class="chat-sys-spacer" aria-hidden="true"></span>
+          <span v-if="chatDanmakuLine" class="chat-sys-dm">{{ chatDanmakuLine }}</span>
           <button
+            v-if="roomId"
             type="button"
             class="chat-dm-refresh-btn"
             title="重新连接弹幕"
@@ -71,12 +71,12 @@
             @click="onRefreshDanmaku"
           >
             <Icon name="refresh" :class="{ 'chat-dm-refresh-btn__icon--spin': dmRefreshing }" />
-            <span>刷新弹幕</span>
+            <span>刷新</span>
           </button>
         </div>
       </div>
       <div ref="chatListRef" class="chat-list">
-        <div ref="chatContentRef" class="chat-list__content">
+        <div ref="chatContentRef" class="chat-list__content" :style="chatContentLayoutStyle">
           <div
             v-for="m in chatDanmakuMessages"
             :key="m.id"
@@ -252,6 +252,7 @@ import { displayCategoryName } from "../utils/categoryDisplay.js";
 import { formatLastLiveAt } from "../utils/followDisplay.js";
 import { serializeFollowsMinimal, parseFollowsMinimal } from "../utils/followExport.js";
 import { copyTextToClipboard } from "../utils/copyText.js";
+import { mobileMediaQuery, playStackMediaQuery } from "../utils/breakpoints.js";
 
 const props = defineProps({
   site: { type: String, default: "" },
@@ -288,7 +289,7 @@ const playMobileLayout = ref(false);
 
 function syncPlayMobileLayout() {
   if (typeof window === "undefined") return;
-  playMobileLayout.value = window.matchMedia("(max-width: 1024px)").matches;
+  playMobileLayout.value = window.matchMedia(playStackMediaQuery()).matches;
 }
 
 const isMobileFlowTab = computed(() =>
@@ -820,7 +821,49 @@ const chatDanmakuMessages = computed(() => {
 
 const chatListRef = ref(null);
 const chatContentRef = ref(null);
+const chatBottomInset = ref(0);
 let chatResizeObserver = null;
+
+function isMobilePortraitChat() {
+  if (typeof window === "undefined") return false;
+  if (window.matchMedia(mobileMediaQuery()).matches) return false;
+  if (!playMobileLayout.value || props.webscreen) return false;
+  return window.matchMedia("(orientation: portrait)").matches;
+}
+
+function navBarHeightPx() {
+  const raw = getComputedStyle(document.documentElement).getPropertyValue("--nav-height").trim();
+  return parseFloat(raw) || 56;
+}
+
+function syncChatBottomInset() {
+  if (!isMobilePortraitChat() || tab.value !== "chat") {
+    chatBottomInset.value = 0;
+    return;
+  }
+  const el = chatListRef.value;
+  if (!el) {
+    chatBottomInset.value = 0;
+    return;
+  }
+  const navTop = window.innerHeight - navBarHeightPx();
+  const overlap = el.getBoundingClientRect().bottom - navTop;
+  chatBottomInset.value = Math.max(0, Math.min(navBarHeightPx(), overlap));
+}
+
+const chatContentLayoutStyle = computed(() => {
+  const inset = chatBottomInset.value;
+  if (!inset) return undefined;
+  return {
+    bottom: `${inset}px`,
+    maxHeight: `calc(100% - ${inset}px)`,
+  };
+});
+
+function syncChatLayout() {
+  syncChatBottomInset();
+  void syncChatOverflow();
+}
 
 async function syncChatOverflow() {
   if (tab.value !== "chat" || !chatSettings.value.show) return;
@@ -902,19 +945,25 @@ watch(
 watch(tab, (value) => {
   if (value === "chat") {
     syncChatFlowState();
-    void syncChatOverflow();
+    syncChatLayout();
     return;
   }
   stopChatFlowLoop();
+  chatBottomInset.value = 0;
 });
+
+function onPlayMobileLayoutChange() {
+  syncPlayMobileLayout();
+  syncChatBottomInset();
+}
 
 onMounted(() => {
   syncPlayMobileLayout();
-  window.addEventListener("resize", syncPlayMobileLayout);
+  syncChatBottomInset();
+  window.addEventListener("resize", onPlayMobileLayoutChange);
+  window.addEventListener("scroll", syncChatBottomInset, { passive: true });
   if (typeof ResizeObserver === "undefined") return;
-  chatResizeObserver = new ResizeObserver(() => {
-    void syncChatOverflow();
-  });
+  chatResizeObserver = new ResizeObserver(syncChatLayout);
   if (chatListRef.value) chatResizeObserver.observe(chatListRef.value);
 });
 
@@ -925,7 +974,8 @@ watch(chatListRef, (el, prev) => {
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener("resize", syncPlayMobileLayout);
+  window.removeEventListener("resize", onPlayMobileLayoutChange);
+  window.removeEventListener("scroll", syncChatBottomInset);
   stopChatFlowLoop();
   chatResizeObserver?.disconnect();
   chatResizeObserver = null;
@@ -1264,44 +1314,53 @@ onBeforeUnmount(() => {
 
 .chat-sys-bar {
   flex-shrink: 0;
-  padding: .35rem .5rem .3rem;
+  padding: .28rem .45rem .24rem;
   border-bottom: 1px solid var(--chrome-border);
-  display: flex;
-  flex-direction: column;
-  gap: .28rem;
 }
 
 .chat-sys-line {
   display: flex;
   align-items: center;
-  gap: .4rem;
+  gap: .35rem;
   min-width: 0;
 }
 
-.chat-sys-line--dm {
-  flex-wrap: wrap;
+.chat-sys-play {
+  flex-shrink: 0;
+  font-size: .84rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text);
 }
 
-.chat-sys-line .chat-item {
-  margin-bottom: 0;
+.chat-sys-spacer {
   flex: 1;
-  min-width: 0;
+  min-width: .35rem;
+}
+
+.chat-sys-dm {
+  flex-shrink: 0;
+  font-size: .84rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
 .chat-dm-refresh-btn {
   display: inline-flex;
   align-items: center;
-  gap: .28rem;
+  gap: .2rem;
   flex-shrink: 0;
-  padding: .22rem .5rem;
+  padding: .18rem .4rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   background: var(--sidebar-chip-bg);
-  color: var(--text);
+  color: var(--muted);
   font: inherit;
-  font-size: .72rem;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: .84rem;
+  font-weight: 400;
+  line-height: 1.25;
   cursor: pointer;
   transition: background .15s, color .15s;
 }
@@ -1309,6 +1368,12 @@ onBeforeUnmount(() => {
 .chat-dm-refresh-btn:hover:not(:disabled) {
   background: var(--sidebar-chip-hover-bg);
   color: var(--amber);
+}
+
+@media (max-width: 767px) {
+  .chat-sys-bar {
+    display: none;
+  }
 }
 
 .chat-dm-refresh-btn:disabled {
@@ -1601,41 +1666,92 @@ onBeforeUnmount(() => {
   .play-side--flow {
     height: auto;
     min-height: 0;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
   .play-side--flow .tab-content {
     flex: 0 0 auto;
     min-height: auto;
-    overflow: visible;
+  }
+
+  .play-side--flow .follow-tab.scrolly,
+  .play-side--flow .recommend-tab.scrolly {
+    min-height: min(45vh, 24rem);
+    max-height: min(55vh, 30rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .play-side--flow .settings-tab {
+    max-height: min(55vh, 30rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .play-side--flow .chat-tab {
     flex: 0 0 auto;
-    min-height: min(52vh, 28rem);
-    max-height: min(60vh, 32rem);
+    min-height: min(40vh, 22rem);
+    max-height: min(50vh, 28rem);
     overflow: hidden;
-  }
-
-  .play-side--flow .scrolly {
-    overflow: visible;
   }
 
   .play-side--flow .chat-list {
     flex: 1;
     min-height: 0;
-    overflow: hidden;
-  }
-
-  .play-side--flow .follow-tab,
-  .play-side--flow .recommend-tab,
-  .play-side--flow .settings-tab {
-    overflow: visible;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .tabs button {
     font-size: 1.05rem;
     font-weight: 600;
+  }
+
+  .play-side--flow .room-aside-actions {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    min-height: 0;
+    gap: .2rem;
+  }
+
+  .play-side--flow .follow-btn,
+  .play-side--flow .super-follow-btn {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    min-height: 0;
+    padding: .46rem .28rem .28rem;
+    font-size: .74rem;
+    gap: .12rem;
+  }
+
+  .play-side--flow .follow-btn__icon,
+  .play-side--flow .super-follow-btn__icon {
+    width: .72rem;
+    height: .72rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .play-side--flow .chat-tab {
+    min-height: min(52vh, 28rem);
+    max-height: min(60vh, 32rem);
+  }
+
+  .play-side--flow .follow-tab.scrolly,
+  .play-side--flow .recommend-tab.scrolly {
+    min-height: min(50vh, 28rem);
+    max-height: min(62vh, 34rem);
+  }
+
+  .play-side--flow .settings-tab {
+    max-height: min(62vh, 34rem);
   }
 }
 
@@ -1647,6 +1763,7 @@ onBeforeUnmount(() => {
   .room-aside {
     gap: .3rem;
     min-width: 0;
+    align-items: center;
   }
 
   .room-aside-avatar :deep(.follow-avatar),
@@ -1656,7 +1773,16 @@ onBeforeUnmount(() => {
   }
 
   .room-aside-meta {
-    min-height: 2.6rem;
+    min-height: 0;
+    align-self: center;
+  }
+
+  .room-fans {
+    margin-top: .12rem;
+  }
+
+  .room-live-start {
+    margin-top: .08rem;
   }
 
   .room-anchor {
@@ -1669,27 +1795,36 @@ onBeforeUnmount(() => {
   }
 
   .room-aside-actions {
-    min-height: 2.6rem;
-    gap: .18rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    min-height: 0;
+    gap: .2rem;
   }
 
   .follow-btn,
   .super-follow-btn {
-    padding: .16rem .26rem;
-    font-size: .58rem;
-    gap: .1rem;
+    flex: 1 1 0;
+    width: auto;
     min-width: 0;
+    padding: .52rem .3rem .3rem;
+    font-size: .78rem;
+    gap: .12rem;
+    min-height: 0;
   }
 
   .follow-btn__icon,
   .super-follow-btn__icon {
-    width: .72rem;
-    height: .72rem;
+    width: .76rem;
+    height: .76rem;
+    flex-shrink: 0;
   }
 
   .follow-btn__text,
   .super-follow-btn__text {
     display: inline;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .tabs {

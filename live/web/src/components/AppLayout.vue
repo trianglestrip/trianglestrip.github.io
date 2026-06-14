@@ -39,6 +39,7 @@ import NavSidebar from "./NavSidebar.vue";
 import NavPlatformStrip from "./NavPlatformStrip.vue";
 import DirectoryDrawer from "./DirectoryDrawer.vue";
 import { loadDrawerPref, saveDrawerOpen } from "../utils/drawerPref.js";
+import { mobileMediaQuery } from "../utils/breakpoints.js";
 
 defineProps({
   activeSite: { type: String, default: "douyu" },
@@ -66,14 +67,14 @@ function setDrawerOpen(open) {
 }
 
 function syncDesktopNav() {
-  desktopNav.value = window.matchMedia("(min-width: 768px)").matches;
+  desktopNav.value = window.matchMedia(mobileMediaQuery()).matches;
 }
 
 let mediaQuery = null;
 
 onMounted(() => {
   syncDesktopNav();
-  mediaQuery = window.matchMedia("(min-width: 768px)");
+  mediaQuery = window.matchMedia(mobileMediaQuery());
   mediaQuery.addEventListener("change", syncDesktopNav);
 });
 
@@ -84,7 +85,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .app-shell {
-  height: 100vh;
+  height: var(--app-height);
   overflow: hidden;
   background: var(--bg);
   --room-grid-cols-wide: 6;
@@ -97,10 +98,10 @@ onBeforeUnmount(() => {
 .app-main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: var(--app-height);
   overflow: hidden;
   box-sizing: border-box;
-  padding: 0 .35rem var(--nav-height);
+  padding: 0 .35rem var(--nav-chrome-height);
 }
 
 .app-main--mobile-strip {
@@ -120,6 +121,19 @@ onBeforeUnmount(() => {
   min-height: 0;
 }
 
+.app-main-inner:has(.play-layout:has(.play-side--flow)) {
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-main-inner:has(.play-layout:has(.play-side--flow)) > :deep(*) {
+  flex: 0 0 auto;
+  min-height: auto;
+}
+
+/* --bp-mobile: 768px (see styles/tokens/layout.css) */
 @media (min-width: 768px) {
   .app-main {
     padding: var(--nav-height) .35rem 0;
@@ -128,7 +142,7 @@ onBeforeUnmount(() => {
 
   .app-main--home {
     padding-top: 0;
-    height: calc(100vh - var(--nav-height));
+    height: calc(var(--app-height) - var(--nav-chrome-height));
   }
 
   .app-main--home-drawer {
