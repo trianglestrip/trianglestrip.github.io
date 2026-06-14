@@ -2,6 +2,7 @@ import {
   avatarFromRoom,
   coverFromRoom,
   fetchAnchorInRoom,
+  fetchBilibiliGuardInfo,
   fetchRoomInfo,
 } from "../resolve/bilibili/web-stream.js";
 import { coverFromRoom as coverFromDouyuRoom, fetchBetard } from "../resolve/douyu/betard.js";
@@ -369,6 +370,11 @@ async function fetchBilibiliSnapshot(roomId: string): Promise<FollowSnapshot> {
   ]);
   const state: FollowState = Number(info.live_status) === 1 ? "live" : "offline";
   const liveStartAt = state === "live" ? parseBilibiliLiveTime(String(info.live_time || "")) : 0;
+  const anchorUid = Number(info.uid || 0);
+  const guardInfo =
+    state === "live"
+      ? await fetchBilibiliGuardInfo(rid, anchorUid).catch(() => ({ total: 0, captain: 0, admiral: 0 }))
+      : { total: 0, captain: 0, admiral: 0 };
 
   return {
     site: "bilibili",
@@ -383,10 +389,10 @@ async function fetchBilibiliSnapshot(roomId: string): Promise<FollowSnapshot> {
     online: state === "offline" ? "" : formatOnline(info.online as number | string),
     diamondFans: "",
     fanGroup: "",
-    guard: "",
+    guard: formatCount(guardInfo.total),
     vip: "",
-    guardNormal: 0,
-    guardSuper: 0,
+    guardNormal: guardInfo.captain,
+    guardSuper: guardInfo.admiral,
     lastLiveAt: 0,
     liveStartAt,
   };

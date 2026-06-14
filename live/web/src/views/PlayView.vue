@@ -118,7 +118,6 @@
         :payload="payload"
         :danmaku-messages="danmakuMessages"
         :danmaku-status="danmakuStatus"
-        :danmaku-meta="danmakuRoomMeta"
         :follow-list="follows"
         :room-category="displayCategory"
         :is-super-followed="isSuperFollowed(site, id)"
@@ -273,12 +272,25 @@ const roomStatItems = computed(() => {
       { label: "贵宾", value: statDisplay(roomStats.value.vip), tone: "vip" },
     ];
   }
+  if (props.site === "bilibili") {
+    return [
+      { label: "观众", value: statDisplay(roomStats.value.online), tone: "audience" },
+      { label: "大航海", value: statDisplay(roomStats.value.guard), tone: "guard" },
+    ];
+  }
   return [{ label: "观众", value: statDisplay(roomStats.value.online), tone: "audience" }];
 });
 
 const showRoomStats = computed(() => {
   if (!headerReady.value || roomState.value === "offline") return false;
-  if (props.site !== "douyu" && props.site !== "huya" && props.site !== "douyin") return false;
+  if (
+    props.site !== "douyu" &&
+    props.site !== "huya" &&
+    props.site !== "douyin" &&
+    props.site !== "bilibili"
+  ) {
+    return false;
+  }
   return roomStatsReady.value;
 });
 
@@ -404,10 +416,16 @@ const {
 } = useDanmaku(siteRef, roomInput);
 const { follows, isSuperFollowed, toggleSuperFollow, unfollow } = useFollow();
 
-watch(danmakuRoomMeta, (meta) => {
-  if (props.site !== "douyin" || !meta) return;
-  if (meta.fanGroup) roomStats.value.fanGroup = meta.fanGroup;
-}, { deep: true });
+watch(
+  () => danmakuRoomMeta.value.fanGroup,
+  (fanGroup) => {
+    if (props.site !== "douyin" || roomState.value !== "live") return;
+    const text = String(fanGroup || "").trim();
+    if (!text) return;
+    roomStats.value.fanGroup = text;
+    roomStatsReady.value = true;
+  },
+);
 
 watch(payload, (data) => {
   if (!data) return;

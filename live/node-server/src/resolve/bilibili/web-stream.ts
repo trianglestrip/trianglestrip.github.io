@@ -38,14 +38,22 @@ export interface BilibiliPlayCodec {
   url_info?: Array<{ host?: string; extra?: string }>;
 }
 
-async function fetchJson<T>(url: string, params?: Record<string, string | number>): Promise<T> {
+async function fetchJson<T>(
+  url: string,
+  params?: Record<string, string | number>,
+  roomId?: string,
+): Promise<T> {
   const u = new URL(url);
   if (params) {
     for (const [key, value] of Object.entries(params)) {
       u.searchParams.set(key, String(value));
     }
   }
-  const res = await fetch(u, { headers: PC_HEADERS, signal: AbortSignal.timeout(20000) });
+  const referer = roomId ? `https://live.bilibili.com/${roomId}` : PC_HEADERS.Referer;
+  const res = await fetch(u, {
+    headers: { ...PC_HEADERS, Referer: referer, Origin: "https://live.bilibili.com" },
+    signal: AbortSignal.timeout(20000),
+  });
   if (!res.ok) {
     throw new Error(`B 站 API HTTP ${res.status}`);
   }
@@ -140,4 +148,47 @@ export function coverFromRoom(info: BilibiliRoomInfo): string {
 
 export function avatarFromRoom(info: BilibiliRoomInfo): string {
   return httpsUrl(String(info.face || ""));
+}
+
+export interface BilibiliGuardInfo {
+  /** 大航海总人数，对应 UI「大航海」/ guard 字段 */
+  total: number;
+  /** 舰长（guard_level=3） */
+  captain: number;
+  /** 提督（2）+ 总督（1） */
+  admiral: number;
+}
+
+interface BilibiliGuardListItem {
+  guard_level?: number;
+}
+
+/** 大航海人数：guardTab/topList → data.info.num；分级从 top3+list 抽样统计 */
+export async function fetchBilibiliGuardInfo(
+  roomId: string,
+  anchorUid: number,
+): Promise<BilibiliGuardInfo> {
+  const rid = String(roomId).trim();
+  const ruid = Number(anchorUid || 0);
+  if (!rid || !ruid) return { total: 0, captain: 0, admiral: 0 };
+
+  const data = await fetchJson<{
+    info?: { num?: number };
+    top3?: BilibiliGuardListItem[];
+    list?: BilibiliGuardListItem[];
+  }>(
+    "https://api.live.bilibili.com/xlive/app-room/v2/guardTab/topList",
+    { roomid: rid, ruid, page: 1, page_size: 50 },
+    rid,
+  );
+
+  const total = Number(data.info?.num ?? 0);
+  let captain = 0;
+  let admiral = 0;
+  for (const item of [...(data.top3 || []), ...(data.list || [])]) {
+    const level = Number(item.guard_level ?? 0);
+    if (level === 3) captain += 1;
+    else if (level === 1 || level === 2) admiral += 1;
+  }
+  return { total, captain, admiral };
 }
