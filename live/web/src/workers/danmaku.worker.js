@@ -94,9 +94,16 @@ function splitPackets(buffer) {
   return packets;
 }
 
-async function decompressBrotli(buffer) {
-  const stream = new Blob([buffer]).stream().pipeThrough(new DecompressionStream("brotli"));
-  return new Response(stream).arrayBuffer();
+async function decompressBilibiliBody(buffer, ver) {
+  if (ver === 2) {
+    const stream = new Blob([buffer]).stream().pipeThrough(new DecompressionStream("deflate"));
+    return new Response(stream).arrayBuffer();
+  }
+  if (ver === 3) {
+    const stream = new Blob([buffer]).stream().pipeThrough(new DecompressionStream("brotli"));
+    return new Response(stream).arrayBuffer();
+  }
+  return buffer;
 }
 
 function danmakuTextFromInfo(info) {
@@ -148,12 +155,12 @@ async function parseBilibiliPackets(buffer, seq, localSeqRef) {
   const items = [];
   for (const packet of splitPackets(buffer)) {
     if (packet.op !== 5) continue;
-    if (packet.ver === 1) {
+    if (packet.ver === 2 || packet.ver === 3) {
       try {
-        const inflated = await decompressBrotli(packet.body);
+        const inflated = await decompressBilibiliBody(packet.body, packet.ver);
         items.push(...(await parseBilibiliPackets(inflated, seq, localSeqRef)));
       } catch {
-        /* brotli 解压失败 */
+        /* 解压失败 */
       }
       continue;
     }

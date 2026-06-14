@@ -1,14 +1,21 @@
-import { coverFromRoom, fetchBetard } from "../resolve/douyu/betard.js";
+import {
+  avatarFromRoom,
+  coverFromRoom,
+  fetchAnchorInRoom,
+  fetchRoomInfo,
+} from "../resolve/bilibili/web-stream.js";
+import { coverFromRoom as coverFromDouyuRoom, fetchBetard } from "../resolve/douyu/betard.js";
 import { fetchDouyinUserFollowInfo, fetchWebStreamData } from "../resolve/douyin/web-stream.js";
 import {
   fetchDouyinAudienceExtras,
   pickDouyinCategory,
-  pickDouyinLiveTimes,
+  resolveDouyinLiveTimes,
 } from "./douyin-extras.js";
 import { huyaRoomState, profileNeedsPageCheck } from "./huya-state.js";
 import { fetchHuyaPageRoomFlags } from "../resolve/huya/web-stream.js";
 import { fetchHuyaGuardInfo, fetchHuyaVipCount } from "./huya-wup.js";
 import { getDouyinRoomMeta } from "../danmaku/douyin-meta.js";
+import { isPlausibleLiveStartAt } from "../danmaku/protobuf-lite.js";
 import { formatCount, formatOnline, formatPlainCount } from "../utils/format-online.js";
 
 export type FollowState = "live" | "replay" | "offline";
@@ -205,7 +212,7 @@ async function fetchDouyuSnapshot(roomId: string): Promise<FollowSnapshot> {
     id: rid,
     state,
     avatar: httpsUrl(String(mobileInfo.avatar || "")) || avatarFromDouyu(raw),
-    cover: coverFromRoom(room),
+    cover: coverFromDouyuRoom(room),
     title: String(mobileInfo.roomName || raw.room_name || ""),
     anchor: String(mobileInfo.nickname || raw.nickname || ""),
     category: pickText(
@@ -237,7 +244,7 @@ async function fetchDouyinSnapshot(roomId: string): Promise<FollowSnapshot> {
   const coverList = roomData.cover?.url_list || [];
   const owner = roomData.owner || {};
   const avatarThumb = owner.avatar_thumb?.url_list || owner.avatar_medium?.url_list || [];
-  const { liveStartAt: startAt, lastLiveAt } = pickDouyinLiveTimes(roomData, state);
+  const { liveStartAt: startAt, lastLiveAt } = await resolveDouyinLiveTimes(roomData, rid, state);
   let liveStartAt = startAt;
 
   let fans = "";
@@ -257,7 +264,7 @@ async function fetchDouyinSnapshot(roomId: string): Promise<FollowSnapshot> {
       : { fanGroup: "", vip: "" };
 
   const cachedMeta = getDouyinRoomMeta(rid);
-  if (cachedMeta?.liveStartAt && !liveStartAt) {
+  if (!liveStartAt && cachedMeta?.liveStartAt && isPlausibleLiveStartAt(cachedMeta.liveStartAt)) {
     liveStartAt = cachedMeta.liveStartAt;
   }
   if (cachedMeta?.fanGroup && !extras.fanGroup) {
@@ -347,6 +354,44 @@ async function fetchHuyaSnapshot(roomId: string): Promise<FollowSnapshot> {
   };
 }
 
+function parseBilibiliLiveTime(text: string): number {
+  const value = String(text || "").trim();
+  if (!value) return 0;
+  const ms = Date.parse(`${value.replace(" ", "T")}+08:00`);
+  return Number.isFinite(ms) && ms > 0 ? Math.trunc(ms / 1000) : 0;
+}
+
+async function fetchBilibiliSnapshot(roomId: string): Promise<FollowSnapshot> {
+  const rid = String(roomId).trim();
+  const [info, anchor] = await Promise.all([
+    fetchRoomInfo(rid),
+    fetchAnchorInRoom(rid).catch(() => ({ uname: "", face: "" })),
+  ]);
+  const state: FollowState = Number(info.live_status) === 1 ? "live" : "offline";
+  const liveStartAt = state === "live" ? parseBilibiliLiveTime(String(info.live_time || "")) : 0;
+
+  return {
+    site: "bilibili",
+    id: rid,
+    state,
+    avatar: anchor.face || avatarFromRoom(info),
+    cover: coverFromRoom(info),
+    title: String(info.title || ""),
+    anchor: String(anchor.uname || info.uname || ""),
+    category: pickText(info.area_name, info.parent_area_name),
+    fans: formatCount(info.attention as number | string),
+    online: state === "offline" ? "" : formatOnline(info.online as number | string),
+    diamondFans: "",
+    fanGroup: "",
+    guard: "",
+    vip: "",
+    guardNormal: 0,
+    guardSuper: 0,
+    lastLiveAt: 0,
+    liveStartAt,
+  };
+}
+
 function emptySnapshot(site: string, id: string): FollowSnapshot {
   return {
     site,
@@ -380,6 +425,7 @@ async function fetchOne(site: string, roomId: string): Promise<FollowSnapshot> {
     if (normalizedSite === "douyu") return await fetchDouyuSnapshot(rid);
     if (normalizedSite === "huya") return await fetchHuyaSnapshot(rid);
     if (normalizedSite === "douyin") return await fetchDouyinSnapshot(rid);
+    if (normalizedSite === "bilibili") return await fetchBilibiliSnapshot(rid);
   } catch {
     /* fall through */
   }

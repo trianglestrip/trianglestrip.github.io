@@ -26,6 +26,9 @@ export interface BilibiliRoomInfo {
   face: string;
   parent_area_name: string;
   area_name: string;
+  attention?: number;
+  online?: number;
+  live_time?: string;
 }
 
 export interface BilibiliPlayCodec {
@@ -51,6 +54,22 @@ async function fetchJson<T>(url: string, params?: Record<string, string | number
     throw new Error(json.message || `B 站 API 错误 ${json.code ?? "unknown"}`);
   }
   return json.data as T;
+}
+
+export interface BilibiliAnchorInfo {
+  uname: string;
+  face: string;
+}
+
+export async function fetchAnchorInRoom(roomId: string): Promise<BilibiliAnchorInfo> {
+  const data = await fetchJson<{ info?: { uname?: string; face?: string } }>(
+    "https://api.live.bilibili.com/live_user/v1/UserInfo/get_anchor_in_room",
+    { roomid: roomId },
+  );
+  return {
+    uname: String(data.info?.uname || ""),
+    face: httpsUrl(String(data.info?.face || "")),
+  };
 }
 
 export async function fetchRoomInfo(roomId: string): Promise<BilibiliRoomInfo> {

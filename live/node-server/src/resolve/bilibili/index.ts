@@ -3,6 +3,7 @@ import {
   avatarFromRoom,
   BILIBILI_QN_TIERS,
   coverFromRoom,
+  fetchAnchorInRoom,
   fetchRoomInfo,
   fetchRoomPlayCodec,
   flvLinesForQn,
@@ -56,16 +57,21 @@ function tierFromQn(codec: BilibiliPlayCodec, qn: number, name: string): Bilibil
 
 async function loadPlayContext(url: string) {
   const roomId = roomIdFromUrl(url);
-  const info = await fetchRoomInfo(roomId);
+  const [info, anchor] = await Promise.all([
+    fetchRoomInfo(roomId),
+    fetchAnchorInRoom(roomId).catch(() => ({ uname: "", face: "" })),
+  ]);
+  const anchorName = String(info.uname || info.anchor_info?.base_info?.uname || anchor.uname || "");
+  const avatar = avatarFromRoom(info) || anchor.face;
 
   if (!isLive(info)) {
     return {
       url,
       room_id: roomId,
-      anchor_name: String(info.uname || info.anchor_info?.base_info?.uname || ""),
+      anchor_name: anchorName,
       title: String(info.title || ""),
       cover: coverFromRoom(info),
-      avatar: avatarFromRoom(info),
+      avatar,
       qualities: [] as Array<{ name: string; rate: number }>,
       offline: true,
     };
@@ -79,10 +85,10 @@ async function loadPlayContext(url: string) {
   return {
     url,
     room_id: roomId,
-    anchor_name: String(info.uname || info.anchor_info?.base_info?.uname || ""),
-    title: String(info.title || info.uname || ""),
+    anchor_name: anchorName,
+    title: String(info.title || anchorName),
     cover: coverFromRoom(info),
-    avatar: avatarFromRoom(info),
+    avatar,
     qualities: availableQualities(codec),
     play_codec: codec,
   };
