@@ -44,11 +44,11 @@
         @mouseenter="followHover = true"
         @mouseleave="followHover = false"
       >
-        <p class="directory-drawer__flyout-title">所有关注</p>
-        <p v-if="!sortedFollows.length" class="directory-drawer__flyout-empty">暂无关注</p>
+        <p class="directory-drawer__flyout-title">开播中</p>
+        <p v-if="!liveFollows.length" class="directory-drawer__flyout-empty">暂无开播</p>
         <div v-else class="directory-drawer__follow-grid">
           <RouterLink
-            v-for="room in sortedFollows"
+            v-for="room in liveFollows"
             :key="`${room.site}-${room.id}`"
             :to="{ name: 'play', params: { site: room.site, id: room.id } }"
             class="directory-drawer__follow-item"
@@ -75,31 +75,32 @@
           type="button"
           role="tab"
           class="directory-drawer__platform-tab"
-          :class="{ 'directory-drawer__platform-tab--active': platform.id === drawerSite }"
+          :class="{
+            'directory-drawer__platform-tab--active': platform.id === drawerSite,
+            'directory-drawer__platform-tab--all': platform.id === 'all',
+          }"
           :title="platform.label"
           :aria-label="platform.label"
           :aria-selected="platform.id === drawerSite"
           @click="drawerSite = platform.id"
         >
-          <PlatformIcon :id="platform.id" size="md" />
+          <PlatformIcon v-if="platform.id !== 'all'" :id="platform.id" size="md" />
+          <span v-else class="directory-drawer__platform-all">
+            <Icon name="apps" class="directory-drawer__platform-all-icon" />
+          </span>
         </button>
       </div>
 
       <div class="directory-drawer__body scrolly">
         <p v-if="!browseEnabled" class="directory-drawer__hint">该平台暂无分类</p>
-        <p v-else-if="loadingCategories" class="directory-drawer__hint">加载分类…</p>
-        <p v-else-if="listError" class="directory-drawer__hint directory-drawer__hint--err">{{ listError }}</p>
+        <p v-else-if="drawerLoading" class="directory-drawer__hint">加载分类…</p>
+        <p v-else-if="drawerError" class="directory-drawer__hint directory-drawer__hint--err">{{ drawerError }}</p>
         <template v-else>
-          <section
-            v-for="section in drawerSections"
-            :key="section.id"
-            class="directory-drawer__section"
-          >
-            <h3 class="directory-drawer__section-title">{{ section.name }}</h3>
-            <div class="directory-drawer__cat-grid">
+          <template v-if="isCrossDrawer">
+            <div v-if="crossDrawerItems.length" class="directory-drawer__cat-grid">
               <RouterLink
-                v-for="item in section.items"
-                :key="`${item.cid}-${item.pid ?? ''}`"
+                v-for="item in crossDrawerItems"
+                :key="drawerItemKey(item)"
                 :to="categoryLink(item)"
                 class="directory-drawer__cat-item"
                 :title="item.name"
@@ -107,54 +108,19 @@
                 <span class="directory-drawer__cat-name">{{ item.name }}</span>
               </RouterLink>
             </div>
-          </section>
-          <p v-if="!drawerSections.length" class="directory-drawer__hint">暂无分类数据</p>
-        </template>
-      </div>
-    </template>
-
-    <template v-else>
-      <div class="directory-drawer__rail-platforms" role="tablist" aria-label="平台">
-        <button
-          v-for="platform in enabledPlatforms"
-          :key="platform.id"
-          type="button"
-          role="tab"
-          class="directory-drawer__rail-platform"
-          :class="{ 'directory-drawer__rail-platform--active': platform.id === drawerSite }"
-          :title="platform.label"
-          :aria-label="platform.label"
-          :aria-selected="platform.id === drawerSite"
-          @click="drawerSite = platform.id"
-        >
-          <PlatformIcon :id="platform.id" size="md" />
-        </button>
-      </div>
-
-      <div class="directory-drawer__rail-body">
-        <p v-if="!browseEnabled" class="directory-drawer__rail-hint">—</p>
-        <p v-else-if="loadingCategories" class="directory-drawer__rail-hint">…</p>
-        <template v-else>
-          <div
-            v-for="section in drawerSections"
-            :key="section.id"
-            class="directory-drawer__rail-section"
-            @mouseenter="hoveredSection = section.id"
-            @mouseleave="hoveredSection = ''"
-          >
-            <span class="directory-drawer__rail-label">{{ section.short }}</span>
-            <div
-              v-if="hoveredSection === section.id"
-              class="directory-drawer__cat-flyout scrolly"
-              role="tooltip"
-              @mouseenter="hoveredSection = section.id"
-              @mouseleave="hoveredSection = ''"
+            <p v-else class="directory-drawer__hint">暂无分类数据</p>
+          </template>
+          <template v-else>
+            <section
+              v-for="section in drawerSections"
+              :key="section.id"
+              class="directory-drawer__section"
             >
-              <p class="directory-drawer__cat-flyout-title">{{ section.name }}</p>
+              <h3 class="directory-drawer__section-title">{{ section.name }}</h3>
               <div class="directory-drawer__cat-grid">
                 <RouterLink
                   v-for="item in section.items"
-                  :key="`${item.cid}-${item.pid ?? ''}`"
+                  :key="drawerItemKey(item)"
                   :to="categoryLink(item)"
                   class="directory-drawer__cat-item"
                   :title="item.name"
@@ -162,9 +128,103 @@
                   <span class="directory-drawer__cat-name">{{ item.name }}</span>
                 </RouterLink>
               </div>
-            </div>
-          </div>
+            </section>
+            <p v-if="!drawerSections.length" class="directory-drawer__hint">暂无分类数据</p>
+          </template>
         </template>
+      </div>
+    </template>
+
+    <template v-else>
+      <div
+        class="directory-drawer__rail-main"
+        :class="{ 'directory-drawer__rail-main--cross': isCrossDrawer }"
+        @mouseenter="isCrossDrawer && (crossRailHover = true)"
+        @mouseleave="isCrossDrawer && (crossRailHover = false)"
+      >
+        <div class="directory-drawer__rail-platforms" role="tablist" aria-label="平台">
+          <button
+            v-for="platform in enabledPlatforms"
+            :key="platform.id"
+            type="button"
+            role="tab"
+            class="directory-drawer__rail-platform"
+            :class="{
+              'directory-drawer__rail-platform--active': platform.id === drawerSite,
+              'directory-drawer__rail-platform--all': platform.id === 'all',
+            }"
+            :title="platform.label"
+            :aria-label="platform.label"
+            :aria-selected="platform.id === drawerSite"
+            @click="drawerSite = platform.id"
+          >
+            <PlatformIcon v-if="platform.id !== 'all'" :id="platform.id" size="md" />
+            <span v-else class="directory-drawer__platform-all">
+              <Icon name="apps" class="directory-drawer__platform-all-icon" />
+            </span>
+          </button>
+        </div>
+
+        <div
+          v-if="isCrossDrawer"
+          class="directory-drawer__rail-body directory-drawer__rail-body--cross"
+        >
+          <p v-if="drawerLoading" class="directory-drawer__rail-hint">…</p>
+        </div>
+        <div
+          v-if="isCrossDrawer && crossRailHover && crossDrawerItems.length"
+          class="directory-drawer__cat-flyout directory-drawer__cat-flyout--cross scrolly"
+          role="tooltip"
+          @mouseenter="crossRailHover = true"
+          @mouseleave="crossRailHover = false"
+        >
+          <div class="directory-drawer__cat-grid">
+            <RouterLink
+              v-for="item in crossDrawerItems"
+              :key="drawerItemKey(item)"
+              :to="categoryLink(item)"
+              class="directory-drawer__cat-item"
+              :title="item.name"
+            >
+              <span class="directory-drawer__cat-name">{{ item.name }}</span>
+            </RouterLink>
+          </div>
+        </div>
+        <div v-if="!isCrossDrawer" class="directory-drawer__rail-body">
+          <p v-if="!browseEnabled" class="directory-drawer__rail-hint">—</p>
+          <p v-else-if="drawerLoading" class="directory-drawer__rail-hint">…</p>
+          <template v-else>
+            <div
+              v-for="section in drawerSections"
+              :key="section.id"
+              class="directory-drawer__rail-section"
+              @mouseenter="hoveredSection = section.id"
+              @mouseleave="hoveredSection = ''"
+            >
+              <span class="directory-drawer__rail-label">{{ section.short }}</span>
+              <div
+                v-if="hoveredSection === section.id"
+                class="directory-drawer__cat-flyout scrolly"
+                role="tooltip"
+                @mouseenter="hoveredSection = section.id"
+                @mouseleave="hoveredSection = ''"
+              >
+                <p class="directory-drawer__cat-flyout-title">{{ section.name }}</p>
+                <div class="directory-drawer__cat-grid">
+                  <RouterLink
+                    v-for="item in section.items"
+                    :key="drawerItemKey(item)"
+                    :to="categoryLink(item)"
+                    class="directory-drawer__cat-item"
+                    :title="item.name"
+                  >
+                    <span class="directory-drawer__cat-name">{{ item.name }}</span>
+                  </RouterLink>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
       </div>
     </template>
   </aside>
@@ -176,11 +236,12 @@ import { RouterLink } from "vue-router";
 import Icon from "./Icon.vue";
 import PlatformIcon from "./PlatformIcon.vue";
 import FollowAvatar from "./FollowAvatar.vue";
-import { PLATFORMS, supportsBrowse } from "../config/platforms.js";
+import { PLATFORMS, supportsBrowse, supportsCrossBrowse } from "../config/platforms.js";
 import {
-  drawerGroupShort,
+  buildCategorySections,
   normalizeBrowseCategoryGroups,
 } from "../utils/drawerCategories.js";
+import { fetchHotCategories } from "../api/crossBrowse.js";
 import { useBrowse } from "../composables/useBrowse.js";
 import { useFollow } from "../composables/useFollow.js";
 import { useFollowStatus } from "../composables/useFollowStatus.js";
@@ -188,19 +249,7 @@ import { useFollowStatus } from "../composables/useFollowStatus.js";
 const DRAWER_ITEMS_PER_SECTION = 18;
 
 function buildNativeDrawerSections(groups, site) {
-  return groups
-    .map((group) => {
-      const items = (group.list || []).slice(0, DRAWER_ITEMS_PER_SECTION);
-      if (!items.length) return null;
-      const name = String(group.name || "").trim();
-      return {
-        id: String(group.id),
-        name,
-        short: drawerGroupShort(site, group),
-        items,
-      };
-    })
-    .filter(Boolean);
+  return buildCategorySections(groups, site, DRAWER_ITEMS_PER_SECTION);
 }
 
 const props = defineProps({
@@ -214,11 +263,21 @@ defineEmits(["close", "open"]);
 const drawerSite = ref(props.initialSite || "douyu");
 const followHover = ref(false);
 const hoveredSection = ref("");
+const crossRailHover = ref(false);
 const drawerActive = computed(() => props.eligible);
-const drawerSiteRef = computed(() => drawerSite.value);
+const isCrossDrawer = computed(() => drawerSite.value === "all");
+const browseSiteRef = computed(() => (isCrossDrawer.value ? "douyu" : drawerSite.value));
 
-const enabledPlatforms = computed(() => PLATFORMS.filter((p) => p.enabled));
-const browseEnabled = computed(() => supportsBrowse(drawerSite.value));
+const enabledPlatforms = computed(() =>
+  PLATFORMS.filter((p) => p.enabled && (p.crossBrowse || supportsBrowse(p.id))),
+);
+const browseEnabled = computed(() =>
+  isCrossDrawer.value ? supportsCrossBrowse("all") : supportsBrowse(drawerSite.value),
+);
+
+const hotCategories = ref([]);
+const loadingHot = ref(false);
+const hotError = ref("");
 
 const { follows } = useFollow();
 const { sortedFollows, refresh: refreshFollowStatus } = useFollowStatus(follows, {
@@ -226,12 +285,44 @@ const { sortedFollows, refresh: refreshFollowStatus } = useFollowStatus(follows,
   pollInterval: 90000,
 });
 
+const liveFollows = computed(() =>
+  sortedFollows.value.filter((room) => room.state === "live"),
+);
+
 const {
   categories,
   loadingCategories,
   listError,
   loadCategories,
-} = useBrowse(drawerSiteRef);
+} = useBrowse(browseSiteRef);
+
+const drawerLoading = computed(() =>
+  isCrossDrawer.value ? loadingHot.value : loadingCategories.value,
+);
+const drawerError = computed(() =>
+  isCrossDrawer.value ? hotError.value : listError.value,
+);
+
+async function loadHotCategories() {
+  loadingHot.value = true;
+  hotError.value = "";
+  try {
+    const data = await fetchHotCategories();
+    hotCategories.value = data.categories || [];
+  } catch (err) {
+    hotCategories.value = [];
+    hotError.value = err.message;
+  } finally {
+    loadingHot.value = false;
+  }
+}
+
+const crossDrawerItems = computed(() =>
+  (hotCategories.value || []).map((item) => ({
+    key: item.key,
+    name: item.name,
+  })),
+);
 
 const drawerSections = computed(() => {
   const site = drawerSite.value;
@@ -239,7 +330,18 @@ const drawerSections = computed(() => {
   return buildNativeDrawerSections(groups, site);
 });
 
+function drawerItemKey(item) {
+  if (isCrossDrawer.value) return item.key;
+  return `${item.cid}-${item.pid ?? ""}`;
+}
+
 function categoryLink(item) {
+  if (isCrossDrawer.value) {
+    return {
+      name: "all-home",
+      query: { key: String(item.key || "") },
+    };
+  }
   const query = item.pid != null ? { pid: String(item.pid) } : undefined;
   return {
     name: "category-rooms",
@@ -266,11 +368,17 @@ watch(
 );
 
 watch(
-  [drawerSiteRef, drawerActive],
+  [drawerSite, drawerActive],
   ([site, active]) => {
-    if (!active || !supportsBrowse(site)) return;
+    if (!active) return;
     hoveredSection.value = "";
-    loadCategories();
+    crossRailHover.value = false;
+    if (site === "all") {
+      if (!supportsCrossBrowse("all")) return;
+      void loadHotCategories();
+    } else if (supportsBrowse(site)) {
+      void loadCategories();
+    }
     refreshFollowStatus();
   },
   { immediate: true },
@@ -288,13 +396,13 @@ watch(
 
 .directory-drawer {
   position: fixed;
-  top: var(--nav-height);
+  top: var(--nav-chrome-height, var(--nav-height));
   left: 0;
   z-index: 11;
   display: flex;
   flex-direction: column;
   width: var(--directory-rail-width);
-  height: calc(100vh - var(--nav-height));
+  height: calc(100vh - var(--nav-chrome-height, var(--nav-height)));
   border-right: 1px solid var(--chrome-border);
   box-shadow: 4px 0 16px rgba(0, 0, 0, .18);
   overflow: visible;
@@ -308,7 +416,7 @@ watch(
 
 .directory-drawer__toggle {
   position: fixed;
-  top: calc(var(--nav-height) + (100vh - var(--nav-height)) / 2);
+  top: calc(var(--nav-chrome-height, var(--nav-height)) + (100vh - var(--nav-chrome-height, var(--nav-height))) / 2);
   left: var(--directory-rail-width);
   z-index: 12;
   display: inline-flex;
@@ -509,6 +617,22 @@ watch(
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 55%, transparent);
 }
 
+.directory-drawer__platform-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.directory-drawer__platform-all-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  color: var(--text);
+}
+
 .directory-drawer__body {
   flex: 1;
   min-height: 0;
@@ -618,11 +742,26 @@ watch(
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--primary) 55%, transparent);
 }
 
+.directory-drawer__rail-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.directory-drawer__rail-main--cross {
+  position: relative;
+}
+
 .directory-drawer__rail-body {
   flex: 1;
   min-height: 0;
   display: flex;
   flex-direction: column;
+}
+
+.directory-drawer__cat-flyout--cross {
+  top: 0;
 }
 
 .directory-drawer__rail-hint {

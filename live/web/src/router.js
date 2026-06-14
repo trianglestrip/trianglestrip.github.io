@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import SiteHomeView from "./views/SiteHomeView.vue";
+import AllPlatformHomeView from "./views/AllPlatformHomeView.vue";
 import CategoryIndexView from "./views/CategoryIndexView.vue";
 import CategoryRoomsView from "./views/CategoryRoomsView.vue";
 import FollowView from "./views/FollowView.vue";
@@ -38,7 +39,8 @@ export function consumeGhPagesRedirect(router) {
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: "/", redirect: "/douyu" },
+    { path: "/", redirect: "/all" },
+    { path: "/all", name: "all-home", component: AllPlatformHomeView },
     { path: "/follow", name: "follow", component: FollowView },
     { path: "/time", name: "time", component: TimeView },
     { path: "/search", name: "search", redirect: "/douyu" },

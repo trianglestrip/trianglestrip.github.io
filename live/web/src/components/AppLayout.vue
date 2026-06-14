@@ -46,7 +46,11 @@ const desktopNav = ref(false);
 const drawerOpen = ref(loadDrawerPref().open);
 
 const usesDrawerLayout = computed(
-  () => route.name === "site-home" || route.name === "category-index" || route.name === "category-rooms",
+  () =>
+    route.name === "all-home" ||
+    route.name === "site-home" ||
+    route.name === "category-index" ||
+    route.name === "category-rooms",
 );
 
 const drawerEligible = computed(() => desktopNav.value);

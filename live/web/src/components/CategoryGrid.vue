@@ -6,8 +6,11 @@
       :to="categoryLink(item)"
       class="category-item"
     >
-      <LazyImage v-if="item.pic" :src="item.pic" image-class="category-icon" />
-      <div v-else class="category-icon category-icon--empty">{{ item.name?.slice(0, 1) }}</div>
+      <LazyImage
+        :src="item.pic"
+        :fallback="defaultIcon"
+        image-class="category-icon"
+      />
       <p class="category-name">{{ item.name }}</p>
     </RouterLink>
   </div>
@@ -16,6 +19,9 @@
 <script setup>
 import { RouterLink } from "vue-router";
 import LazyImage from "./LazyImage.vue";
+import { DEFAULT_CATEGORY_ICON } from "../utils/categoryIcon.js";
+
+const defaultIcon = DEFAULT_CATEGORY_ICON;
 
 const props = defineProps({
   site: { type: String, required: true },
@@ -73,13 +79,6 @@ function categoryLink(item) {
   object-fit: cover;
   background: var(--dark-6);
   display: block;
-}
-
-.category-icon--empty {
-  display: grid;
-  place-items: center;
-  font-size: 1.2rem;
-  color: var(--amber);
 }
 
 .category-name {

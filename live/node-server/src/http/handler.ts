@@ -65,6 +65,12 @@ function apiErrorStatus(message: string): number {
   ) {
     return 404;
   }
+  if (/HTTP\s*5\d{2}/i.test(message) || /ECONNREFUSED|ETIMEDOUT|fetch failed|network/i.test(message)) {
+    return 502;
+  }
+  if (/HTTP\s*4\d{2}/i.test(message)) {
+    return 502;
+  }
   return 500;
 }
 
@@ -212,6 +218,45 @@ export async function handleApi(
 
   if (pathname === "/api/category-cross-map" && req.method === "GET") {
     sendJson(res, ctx.config, { ok: true, ...crossCategoryMapPayload() });
+    return true;
+  }
+
+  if (pathname === "/api/hot-categories" && req.method === "GET") {
+    const { listHotCrossCategories } = await import("../browse/hot-cross-categories.js");
+    sendJson(res, ctx.config, { ok: true, categories: listHotCrossCategories() });
+    return true;
+  }
+
+  if (pathname === "/api/cross-rooms" && req.method === "GET") {
+    const query = readQuery(req);
+    const crossKey = query.get("key") || query.get("crossKey") || "";
+    const page = Number(query.get("page") || "1") || 1;
+    const limit = Number(query.get("limit") || "21") || 21;
+    if (!crossKey) {
+      sendJson(res, ctx.config, { ok: false, error: "缺少 key 参数" }, 400);
+      return true;
+    }
+    const cacheKey = `browse:cross:${crossKey}:${page}:${limit}`;
+    const cached = ctx.cache.get(cacheKey);
+    if (cached && typeof cached === "object") {
+      sendJson(res, ctx.config, { ok: true, ...(cached as Record<string, unknown>), cached: true });
+      return true;
+    }
+    try {
+      const payload = await ctx.browseApi.fetchHotCrossCategoryRooms(crossKey, page, limit);
+      const result = {
+        list: payload.list || [],
+        categoryKey: payload.categoryKey,
+        categoryName: payload.categoryName,
+        hasMore: payload.hasMore,
+        page: payload.page,
+        limit,
+      };
+      ctx.cache.set(cacheKey, result, { ttl: 60 });
+      sendJson(res, ctx.config, { ok: true, ...result });
+    } catch (err) {
+      sendApiError(res, ctx.config, err);
+    }
     return true;
   }
 

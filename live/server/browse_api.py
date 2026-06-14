@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from typing import Any
 
 import requests
@@ -22,9 +23,24 @@ _DOUYU_HEADERS = {
 }
 
 _HUYA_GAME_PIC = "https://huyaimg.msstatic.com/cdnimage/game/{cid}-MS.jpg"
+_HUYA_GAME_LIST_URL = "https://mp.huya.com/cache.php?m=Game&do=gameList&game_type=1"
 
-# 虎牙分类页接口不稳定，使用常用分区；房间列表仍走 live.huya.com 实时接口。
-_HUYA_CATEGORY_GROUPS: list[dict[str, Any]] = [
+_HUYA_BUSS_GROUPS: list[dict[str, Any]] = [
+    {"id": "1", "name": "网游", "buss_type": 1},
+    {"id": "3", "name": "手游", "buss_type": 3},
+    {"id": "8", "name": "娱乐", "buss_type": 8},
+    {"id": "2", "name": "单机", "buss_type": 2},
+]
+
+_HUYA_CATEGORY_PAGES: list[dict[str, str]] = [
+    {"id": "1", "name": "网游", "url": "https://www.huya.com/g_ol"},
+    {"id": "3", "name": "手游", "url": "https://www.huya.com/g_sy"},
+    {"id": "8", "name": "娱乐", "url": "https://www.huya.com/g_yl"},
+    {"id": "2", "name": "单机", "url": "https://www.huya.com/g_pc"},
+]
+
+# 拉取失败时的兜底热门分区
+_HUYA_FALLBACK_GROUPS: list[dict[str, Any]] = [
     {
         "id": "1",
         "name": "热门",
@@ -40,11 +56,13 @@ _HUYA_CATEGORY_GROUPS: list[dict[str, Any]] = [
             {"cid": 7, "name": "DOTA2"},
             {"cid": 2, "name": "地下城与勇士"},
             {"cid": 802, "name": "坦克世界"},
-            {"cid": 897, "name": "星秀"},
-            {"cid": 1964, "name": "一起看"},
+            {"cid": 1663, "name": "星秀"},
+            {"cid": 2135, "name": "一起看"},
         ],
     },
 ]
+
+_huya_category_cache: list[dict[str, Any]] | None = None
 
 
 def _get_json(
@@ -120,9 +138,19 @@ def _fetch_huya_live_list(gid: int | str, *, page: int, page_size: int = 120) ->
     }
 
 
-def _fetch_huya_categories() -> list[dict[str, Any]]:
-    groups = []
-    for group in _HUYA_CATEGORY_GROUPS:
+def _parse_huya_game_list(html: str) -> list[dict[str, Any]]:
+    items: list[dict[str, Any]] = []
+    for match in re.finditer(r'data-gid="(\d+)" title=([^>]+)', html):
+        name = match.group(2).strip().strip('"')
+        items.append({"cid": int(match.group(1)), "name": sanitize_unicode(name)})
+    return items
+
+
+def _build_huya_category_groups(
+    source: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    groups: list[dict[str, Any]] = []
+    for group in source:
         items = []
         for item in group["list"]:
             cid = item["cid"]
@@ -135,6 +163,72 @@ def _fetch_huya_categories() -> list[dict[str, Any]]:
             )
         groups.append({"id": group["id"], "name": group["name"], "list": items})
     return groups
+
+
+def _group_huya_games_by_buss_type(games: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    buckets: dict[int, list[dict[str, Any]]] = {}
+    for game in games:
+        if game.get("isHide"):
+            continue
+        gid = game.get("gid")
+        name = sanitize_unicode(str(game.get("gameFullName") or "").strip())
+        buss_type = game.get("bussType")
+        if gid is None or not name or buss_type is None:
+            continue
+        buckets.setdefault(int(buss_type), []).append({"cid": int(gid), "name": name})
+
+    groups: list[dict[str, Any]] = []
+    for group in _HUYA_BUSS_GROUPS:
+        items = []
+        for item in buckets.get(int(group["buss_type"]), []):
+            cid = item["cid"]
+            items.append({"cid": cid, "name": item["name"], "pic": _huya_pic(cid)})
+        if items:
+            groups.append({"id": group["id"], "name": group["name"], "list": items})
+    return groups
+
+
+def _fetch_huya_categories_from_api() -> list[dict[str, Any]]:
+    payload = _get_json(_HUYA_GAME_LIST_URL)
+    if int(payload.get("status") or 0) != 200:
+        raise RuntimeError("huya game list status error")
+    games = payload.get("data") or []
+    if not games:
+        raise RuntimeError("huya game list empty")
+    groups = _group_huya_games_by_buss_type(games)
+    if not groups:
+        raise RuntimeError("huya category groups empty")
+    return groups
+
+
+def _fetch_huya_categories() -> list[dict[str, Any]]:
+    global _huya_category_cache
+    if _huya_category_cache is not None:
+        return _huya_category_cache
+
+    try:
+        groups = _fetch_huya_categories_from_api()
+        _huya_category_cache = groups
+        return groups
+    except Exception:
+        pass
+
+    try:
+        pages: list[dict[str, Any]] = []
+        for page in _HUYA_CATEGORY_PAGES:
+            resp = requests.get(page["url"], headers=_HEADERS, timeout=20)
+            resp.raise_for_status()
+            game_list = _parse_huya_game_list(resp.text)
+            if game_list:
+                pages.append({"id": page["id"], "name": page["name"], "list": game_list})
+        if pages:
+            groups = _build_huya_category_groups(pages)
+            _huya_category_cache = groups
+            return groups
+    except Exception:
+        pass
+
+    return _build_huya_category_groups(_HUYA_FALLBACK_GROUPS)
 
 
 _douyu_cate2_name_cache: dict[str, str] | None = None

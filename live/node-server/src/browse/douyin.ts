@@ -343,6 +343,7 @@ function httpsUrl(value: string): string {
   const text = String(value || "").trim();
   if (!text) return "";
   if (text.startsWith("//")) return `https:${text}`;
+  if (text.startsWith("http://")) return `https://${text.slice(7)}`;
   return text;
 }
 

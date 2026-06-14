@@ -1,5 +1,16 @@
 export const PLATFORMS = [
   {
+    id: "all",
+    label: "全平台",
+    tabLabel: "全平台",
+    enabled: true,
+    browse: true,
+    crossBrowse: true,
+    defaultRoom: "",
+    description: "热门游戏跨平台聚合 · 斗鱼/虎牙/抖音约 3:3:1",
+    features: ["热门分类", "跨平台聚合", "本机 API"],
+  },
+  {
     id: "douyu",
     label: "斗鱼",
     tabLabel: "斗鱼直播",
@@ -42,6 +53,11 @@ export const PLATFORMS = [
 export function supportsBrowse(site) {
   const platform = getPlatform(site);
   return Boolean(platform?.enabled && platform?.browse !== false);
+}
+
+export function supportsCrossBrowse(site) {
+  const platform = getPlatform(site);
+  return Boolean(platform?.enabled && platform?.crossBrowse);
 }
 
 export const PREFS_KEY = "live.web.prefs";

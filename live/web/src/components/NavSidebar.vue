@@ -19,18 +19,34 @@
     </div>
 
     <div v-if="showCenterPlatforms" class="nav-group nav-group--center" role="tablist" aria-label="平台">
-      <RouterLink
+      <div
         v-for="platform in navPlatforms"
         :key="platform.id"
-        :to="platformNavLink(platform.id)"
-        role="tab"
-        class="nav-platform-tab"
-        :class="{ active: platform.id === site }"
-        :aria-selected="platform.id === site"
+        class="nav-platform-wrap"
+        @mouseenter="hoveredPlatform = platform.id"
+        @mouseleave="hoveredPlatform = ''"
       >
-        <PlatformIcon :id="platform.id" size="sm" />
-        <span class="nav-platform-label">{{ platform.label }}</span>
-      </RouterLink>
+        <RouterLink
+          :to="platformNavLink(platform.id)"
+          role="tab"
+          class="nav-platform-tab"
+          :class="{
+            active: platform.id === activePlatformId,
+            'nav-platform-tab--all': platform.id === 'all',
+          }"
+          :aria-selected="platform.id === activePlatformId"
+        >
+          <PlatformIcon v-if="platform.id !== 'all'" :id="platform.id" size="sm" />
+          <Icon v-else name="apps" class="nav-platform-all-icon" />
+          <span class="nav-platform-label">{{ platform.label }}</span>
+        </RouterLink>
+        <NavPlatformCategoryMenu
+          v-if="hoveredPlatform === platform.id"
+          :platform-id="platform.id"
+          @pointerenter="hoveredPlatform = platform.id"
+          @pointerleave="hoveredPlatform = ''"
+        />
+      </div>
     </div>
 
     <div class="nav-group nav-group--bottom">
@@ -79,6 +95,7 @@ import { useSearchDialog } from "../composables/useSearchDialog.js";
 import AccentColorPicker from "./AccentColorPicker.vue";
 import Icon from "./Icon.vue";
 import PlatformIcon from "./PlatformIcon.vue";
+import NavPlatformCategoryMenu from "./NavPlatformCategoryMenu.vue";
 
 const props = defineProps({
   site: { type: String, default: "douyu" },
@@ -86,10 +103,15 @@ const props = defineProps({
 
 const route = useRoute();
 const theme = ref("dark");
+const hoveredPlatform = ref("");
 const { openSearch } = useSearchDialog();
 
 const showCenterPlatforms = computed(
-  () => route.name === "site-home" || route.name === "category-index" || route.name === "category-rooms",
+  () =>
+    route.name === "all-home" ||
+    route.name === "site-home" ||
+    route.name === "category-index" ||
+    route.name === "category-rooms",
 );
 
 const categoryNavMode = computed(
@@ -97,6 +119,7 @@ const categoryNavMode = computed(
 );
 
 function platformNavLink(platformId) {
+  if (platformId === "all") return "/all";
   if (categoryNavMode.value && supportsBrowse(platformId)) {
     return `/${platformId}/category`;
   }
@@ -115,16 +138,24 @@ function onOpenSearch() {
   openSearch(props.site || "douyu");
 }
 
-const navPlatforms = computed(() => PLATFORMS.filter((p) => p.enabled));
+const activePlatformId = computed(() => {
+  if (route.name === "all-home") return "all";
+  return props.site || "douyu";
+});
+
+const navPlatforms = computed(() =>
+  PLATFORMS.filter((p) => p.enabled && (p.crossBrowse || supportsBrowse(p.id))),
+);
 
 const allItems = computed(() => {
   const site = props.site || "douyu";
+  const homeLink = site === "all" ? "/all" : `/${site}`;
   const list = [
-    { icon: "home", link: `/${site}`, title: "首页", zone: "top" },
-    { icon: "apps", link: `/${site}/category`, title: "分类", browse: true, zone: "top" },
+    { icon: "home", link: homeLink, title: "首页", zone: "top" },
+    { icon: "apps", link: `/${site === "all" ? "douyu" : site}/category`, title: "分类", browse: true, zone: "top" },
     { icon: "heart", link: "/follow", title: "关注", zone: "top" },
   ];
-  return list.filter((item) => item.browse !== true || supportsBrowse(site));
+  return list.filter((item) => item.browse !== true || site !== "all");
 });
 
 const topItems = computed(() => allItems.value.filter((item) => item.zone === "top"));
@@ -134,10 +165,16 @@ function isActive(item) {
   if (item.link === "/follow") {
     return route.path === item.link;
   }
+  if (item.link === "/all") {
+    return route.name === "all-home";
+  }
   if (item.link.endsWith("/category")) {
     return route.path.includes("/category");
   }
   const site = props.site || "douyu";
+  if (site === "all") {
+    return route.name === "all-home";
+  }
   return route.path === `/${site}` || route.path === `/${site}/`;
 }
 </script>
@@ -235,6 +272,11 @@ function isActive(item) {
   background: var(--bg-soft);
 }
 
+.nav-platform-wrap {
+  position: relative;
+  flex: 0 0 auto;
+}
+
 .nav-platform-tab {
   display: inline-flex;
   align-items: center;
@@ -261,6 +303,11 @@ function isActive(item) {
 .nav-platform-tab.active {
   color: var(--amber);
   border-bottom-color: var(--amber);
+}
+
+.nav-platform-all-icon {
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 .nav-platform-tab.disabled {

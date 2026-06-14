@@ -47,7 +47,7 @@ const fallbackText = computed(() => label.value.slice(0, 1));
   border-radius: 8px;
   flex-shrink: 0;
   overflow: hidden;
-  background: var(--bg-soft);
+  background: transparent;
 }
 
 .platform-icon--sm {

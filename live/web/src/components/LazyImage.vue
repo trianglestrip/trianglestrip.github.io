@@ -1,6 +1,6 @@
 <template>
   <img
-    v-if="src"
+    v-if="src || fallback"
     ref="imgRef"
     :alt="alt"
     :class="imageClass"
@@ -14,6 +14,8 @@ import { findScrollRoot } from "../utils/scrollRoot.js";
 
 const props = defineProps({
   src: { type: String, default: "" },
+  /** 主图加载失败时回退 */
+  fallback: { type: String, default: "" },
   alt: { type: String, default: "" },
   imageClass: { type: [String, Object, Array], default: "" },
   /** 进入视口前预加载的距离 */
@@ -24,16 +26,42 @@ const props = defineProps({
 
 const imgRef = ref(null);
 let observer = null;
+let usingFallback = false;
 
 function teardown() {
   observer?.disconnect();
   observer = null;
 }
 
+function primarySrc() {
+  return String(props.src || "").trim();
+}
+
+function fallbackSrc() {
+  return String(props.fallback || "").trim();
+}
+
+function onImageError() {
+  const el = imgRef.value;
+  if (!el) return;
+  const fb = fallbackSrc();
+  if (fb && !usingFallback) {
+    usingFallback = true;
+    el.src = fb;
+    return;
+  }
+  el.removeAttribute("src");
+}
+
 function loadNow() {
   const el = imgRef.value;
-  if (!el || !props.src) return;
-  if (el.src !== props.src) el.src = props.src;
+  const url = primarySrc() || fallbackSrc();
+  if (!el || !url) return;
+  usingFallback = !primarySrc() && !!fallbackSrc();
+  if (el.src !== url) {
+    el.onerror = onImageError;
+    el.src = url;
+  }
   teardown();
 }
 
@@ -53,7 +81,7 @@ async function setup() {
   teardown();
   await nextTick();
   const el = imgRef.value;
-  if (!el || !props.src) return;
+  if (!el || (!props.src && !props.fallback)) return;
 
   if (props.eager || isNearViewport(el)) {
     loadNow();
@@ -74,8 +102,9 @@ onMounted(setup);
 onBeforeUnmount(teardown);
 
 watch(
-  () => [props.src, props.eager],
+  () => [props.src, props.fallback, props.eager],
   () => {
+    usingFallback = false;
     const el = imgRef.value;
     if (el) el.removeAttribute("src");
     setup();

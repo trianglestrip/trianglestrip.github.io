@@ -64,3 +64,22 @@ export function normalizeBrowseCategoryGroups(groups, site) {
   const filtered = filterDrawerCategoryGroups(groups, site);
   return sortDrawerCategoryGroups(filtered, site);
 }
+
+export const CATEGORY_SECTION_ITEM_LIMIT = 18;
+
+/** 一级分区 + 二级游戏列表（抽屉 / 导航分类栏共用） */
+export function buildCategorySections(groups, site, limit = CATEGORY_SECTION_ITEM_LIMIT) {
+  return (groups || [])
+    .map((group) => {
+      const items = (group.list || []).slice(0, limit);
+      if (!items.length) return null;
+      const name = String(group.name || "").trim();
+      return {
+        id: String(group.id),
+        name,
+        short: drawerGroupShort(site, group),
+        items,
+      };
+    })
+    .filter(Boolean);
+}

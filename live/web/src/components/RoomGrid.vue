@@ -81,8 +81,8 @@ function isSelected(room) {
 
 function onItemHover(room) {
   if (props.selectMode) return;
-  const site = props.site || room.site;
-  const id = room.site ? String(room.id ?? "") : roomKey(room);
+  const site = props.site || room.siteId || room.site;
+  const id = room.site || room.siteId ? String(room.id ?? "") : roomKey(room);
   if (!site || !id) return;
   prefetchRoom(site, id);
 }

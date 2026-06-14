@@ -1,20 +1,77 @@
 import { sanitizeUnicode } from "../middleware/sanitize-json.js";
-import {
-  crossCategoryMapPayload,
-  douyinPidForEntry,
-  findCrossCategory,
-  isGroupCategoryEntry,
-  type CrossCategoryEntry,
-} from "./category-cross-map.js";
-import { fetchDouyuCategories, fetchDouyuGroupRooms, fetchDouyuRooms, type RoomItem } from "./douyu.js";
+import { crossCategoryMapPayload, douyinPidForEntry, findCrossCategory, isGroupCategoryEntry, type CrossCategoryEntry } from "./category-cross-map.js";
+import { findCrossCategoryByKey, listHotCrossCategories } from "./hot-cross-categories.js";import { fetchDouyuCategories, fetchDouyuGroupRooms, fetchDouyuRooms, type RoomItem } from "./douyu.js";
 import { fetchDouyinGameCategories, fetchDouyinGameRooms, fetchDouyinRecommendRooms } from "./douyin.js";
 import { fetchHuyaCategories, fetchHuyaLiveList } from "./huya.js";
 import type { CategoryGroup, RoomsPayload } from "./douyu.js";
 
 export type { CategoryGroup, RoomsPayload, CrossCategoryEntry };
-export { crossCategoryMapPayload, findCrossCategory };
+export { crossCategoryMapPayload, findCrossCategory, listHotCrossCategories };
 
 const BROWSE_SITES = ["douyu", "huya", "douyin"] as const;
+const CROSS_SITE_WEIGHTS: Record<(typeof BROWSE_SITES)[number], number> = {
+  douyu: 3,
+  huya: 3,
+  douyin: 1,
+};
+
+function siteCountsForLimit(limit: number): Record<(typeof BROWSE_SITES)[number], number> {
+  const totalWeight = 7;
+  const douyu = Math.max(1, Math.round((limit * CROSS_SITE_WEIGHTS.douyu) / totalWeight));
+  const huya = Math.max(1, Math.round((limit * CROSS_SITE_WEIGHTS.huya) / totalWeight));
+  let douyin = Math.max(1, limit - douyu - huya);
+  if (douyu + huya + douyin > limit) {
+    douyin = Math.max(1, douyin - (douyu + huya + douyin - limit));
+  }
+  return { douyu, huya, douyin };
+}
+
+function interleaveWeightedRooms(
+  buckets: Record<string, RoomItem[]>,
+  weights: Record<string, number>,
+): RoomItem[] {
+  const indices: Record<string, number> = { douyu: 0, huya: 0, douyin: 0 };
+  const merged: RoomItem[] = [];
+  while (true) {
+    let roundAdded = false;
+    for (const site of BROWSE_SITES) {
+      const weight = weights[site] || 0;
+      const list = buckets[site] || [];
+      for (let w = 0; w < weight; w += 1) {
+        const idx = indices[site];
+        if (idx < list.length) {
+          merged.push(list[idx]);
+          indices[site] = idx + 1;
+          roundAdded = true;
+        }
+      }
+    }
+    if (!roundAdded) break;
+  }
+  return merged;
+}
+
+async function fetchCrossRoomsForSite(
+  site: string,
+  entry: CrossCategoryEntry,
+  page: number,
+  limit: number,
+): Promise<{ list: RoomItem[]; hasMore: boolean }> {
+  const mappedCid =
+    site === "douyu" ? entry.douyu : site === "huya" ? entry.huya : site === "douyin" ? entry.douyin : undefined;
+  if (!mappedCid) return { list: [], hasMore: false };
+
+  const pid = site === "douyin" ? douyinPidForEntry(entry) : undefined;
+  const payload = await browseApi.fetchCategoryRooms(site, mappedCid, page, pid);
+  const list = (payload.list || [])
+    .filter((room) => {
+      const roomCid = String(room.cid || "").trim();
+      return !roomCid || roomCid === mappedCid;
+    })
+    .slice(0, limit)
+    .map((room) => ({ ...room, siteId: site }));
+  return { list, hasMore: Boolean(payload.hasMore) || list.length >= limit };
+}
 
 function interleaveRoomLists(lists: RoomItem[][]): RoomItem[] {
   const merged: RoomItem[] = [];
@@ -69,6 +126,17 @@ export interface BrowseApi {
     list: RoomItem[];
     categoryKey: string | null;
     categoryName: string | null;
+  }>;
+  fetchHotCrossCategoryRooms(
+    crossKey: string,
+    page?: number,
+    limit?: number,
+  ): Promise<{
+    list: RoomItem[];
+    categoryKey: string;
+    categoryName: string;
+    hasMore: boolean;
+    page: number;
   }>;
 }
 export const browseApi: BrowseApi = {
@@ -192,6 +260,46 @@ export const browseApi: BrowseApi = {
       list: sanitizeUnicode(list),
       categoryKey: entry?.key ?? null,
       categoryName: entry?.name ?? (categoryName || null),
+    };
+  },
+
+  async fetchHotCrossCategoryRooms(crossKey: string, page = 1, limit = 21) {
+    const entry = findCrossCategoryByKey(crossKey);
+    if (!entry || isGroupCategoryEntry(entry)) {
+      throw new Error("无效的热门分类");
+    }
+
+    const counts = siteCountsForLimit(Math.max(7, limit));
+    const buckets: Record<string, RoomItem[]> = {};
+    let hasMore = false;
+
+    await Promise.all(
+      BROWSE_SITES.map(async (site) => {
+        const need = counts[site];
+        if (!need) {
+          buckets[site] = [];
+          return;
+        }
+        try {
+          const result = await fetchCrossRoomsForSite(site, entry, page, need);
+          buckets[site] = result.list;
+          if (result.hasMore) hasMore = true;
+        } catch {
+          buckets[site] = [];
+        }
+      }),
+    );
+
+    let list = interleaveWeightedRooms(buckets, CROSS_SITE_WEIGHTS);
+    if (limit > 0) list = list.slice(0, limit);
+    if (list.length >= limit) hasMore = true;
+
+    return {
+      list: sanitizeUnicode(list),
+      categoryKey: entry.key,
+      categoryName: entry.name,
+      hasMore,
+      page,
     };
   },
 };
