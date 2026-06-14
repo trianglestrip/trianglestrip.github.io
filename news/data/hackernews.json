@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-14T20:12:44+00:00",
+  "updated_at": "2026-06-14T22:49:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
-      "url": "https://github.com/tamnd/kage",
-      "hot": "157"
+      "title": "Did Anthropic Ask for This?",
+      "url": "https://www.verysane.ai/p/did-anthropic-ask-for-this",
+      "hot": "27"
     },
     {
       "rank": 2,
-      "title": "Chaosnet",
-      "url": "https://tumbleweed.nu/r/lm-3/uv/amber.html",
-      "hot": "26"
+      "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
+      "url": "https://github.com/tamnd/kage",
+      "hot": "322"
     },
     {
       "rank": 3,
       "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
       "url": "https://github.com/nex-agi/Nex-N2/issues/4",
-      "hot": "195"
+      "hot": "242"
     },
     {
       "rank": 4,
       "title": "Firewood Splitting Simulator",
       "url": "https://screen.toys/firewood/",
-      "hot": "455"
+      "hot": "561"
     },
     {
       "rank": 5,
-      "title": "Segmented type appreciation corner (2018)",
-      "url": "https://aresluna.org/segmented-type/",
-      "hot": "35"
+      "title": "Chaosnet (1981)",
+      "url": "https://tumbleweed.nu/r/lm-3/uv/amber.html",
+      "hot": "47"
     },
     {
       "rank": 6,
-      "title": "Ask HN: What are you working on? (June 2026)",
-      "url": "https://news.ycombinator.com/item?id=48528779",
-      "hot": "83"
-    },
-    {
-      "rank": 7,
-      "title": "Caddy compatibility for zeroserve: 3x throughput and 70% lower latency",
-      "url": "https://su3.io/posts/zeroserve-caddy-compat",
-      "hot": "114"
-    },
-    {
-      "rank": 8,
-      "title": "Perlisisms",
-      "url": "https://www.cs.yale.edu/homes/perlis-alan/quotes.html",
+      "title": "Why Is Claude Turning into an a**Hole?",
+      "url": "https://bramcohen.com/p/why-is-claude-turning-into-an-asshole",
       "hot": "67"
     },
     {
+      "rank": 7,
+      "title": "Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call",
+      "url": "https://traceapp.info",
+      "hot": "66"
+    },
+    {
+      "rank": 8,
+      "title": "Ask HN: What are you working on? (June 2026)",
+      "url": "https://news.ycombinator.com/item?id=48528779",
+      "hot": "131"
+    },
+    {
       "rank": 9,
-      "title": "Formal methods and the future of programming",
-      "url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1",
-      "hot": "114"
+      "title": "AI is code – and can't be prompted into being smarter",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
+      "hot": "17"
     },
     {
       "rank": 10,
-      "title": "FarOutCompany",
-      "url": "https://faroutcompany.com/",
-      "hot": "76"
+      "title": "Segmented type appreciation corner (2018)",
+      "url": "https://aresluna.org/segmented-type/",
+      "hot": "53"
     }
   ]
 }
