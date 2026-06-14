@@ -7,12 +7,20 @@ export interface DouyinPartitionRef {
   pid?: string;
 }
 
+export interface CrossCategorySiteRef {
+  cid: string;
+  pid?: string;
+  groupId?: string;
+}
+
 export interface CrossCategoryEntry {
   key: string;
   name: string;
   aliases: string[];
   /** game=具体游戏；group=网游/手游/单机/娱乐等大类 */
   kind?: "game" | "group";
+  /** 通用 per-site 映射（Wave 2 sync 写入；旧字段仍作 fallback） */
+  sites?: Partial<Record<string, CrossCategorySiteRef>>;
   douyu?: string;
   huya?: string;
   douyin?: string;
@@ -45,7 +53,13 @@ function isGroupEntry(entry: CrossCategoryEntry): boolean {
   return entry.kind === "group";
 }
 
+function siteRefFor(entry: CrossCategoryEntry, site: string): CrossCategorySiteRef | undefined {
+  return entry.sites?.[site];
+}
+
 function gameCidForSite(entry: CrossCategoryEntry, site: string): string | undefined {
+  const ref = siteRefFor(entry, site);
+  if (ref?.cid) return ref.cid;
   if (site === "douyu") return entry.douyu;
   if (site === "huya") return entry.huya;
   if (site === "douyin") return entry.douyin;
@@ -53,13 +67,24 @@ function gameCidForSite(entry: CrossCategoryEntry, site: string): string | undef
 }
 
 function groupCidForSite(entry: CrossCategoryEntry, site: string): string | undefined {
+  const ref = siteRefFor(entry, site);
+  if (ref?.groupId) return ref.groupId;
   if (site === "douyu") return entry.douyuGroup;
   if (site === "huya") return entry.huyaGroup;
   return undefined;
 }
 
+export function crossGameCidForSite(entry: CrossCategoryEntry, site: string): string | undefined {
+  return gameCidForSite(entry, site);
+}
+
+export function crossGroupCidForSite(entry: CrossCategoryEntry, site: string): string | undefined {
+  return groupCidForSite(entry, site);
+}
+
 export function douyinPidForEntry(entry: CrossCategoryEntry): string {
-  return String(entry.douyinPid || "1");
+  const pid = entry.sites?.douyin?.pid ?? entry.douyinPid;
+  return String(pid || "1");
 }
 
 export function findCrossCategory(

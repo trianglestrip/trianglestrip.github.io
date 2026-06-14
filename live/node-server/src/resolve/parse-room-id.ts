@@ -1,8 +1,6 @@
-const ROOM_RES: Record<string, RegExp> = {
-  douyu: /(?:douyu\.com\/)?(\d+)$/,
-  huya: /(?:huya\.com\/)?(\d+)$/,
-  douyin: /(?:(?:live\.)?douyin\.com\/)?(\d+)$/,
-};
+import { ROOM_ID_PATTERNS, getPlatform } from "../platforms/registry.js";
+
+export { ROOM_ID_PATTERNS };
 
 export function parseRoomId(value: string, site = "douyu"): string {
   const text = value.trim();
@@ -10,7 +8,7 @@ export function parseRoomId(value: string, site = "douyu"): string {
     return text;
   }
   const cleaned = text.replace(/^https?:\/\//, "");
-  const pattern = ROOM_RES[site] || ROOM_RES.douyu;
+  const pattern = getPlatform(site)?.roomIdPattern ?? ROOM_ID_PATTERNS.douyu;
   const match = cleaned.match(pattern);
   if (match) {
     return match[1];

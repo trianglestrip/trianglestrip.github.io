@@ -7,8 +7,8 @@ import { parseRoomId } from "../resolve/parse-room-id.js";
 import type { ResolveService } from "../resolve/service.js";
 import { buildTimeReport } from "../resolve/timing.js";
 import { fetchFollowSnapshots } from "../follow/status.js";
-import { fetchHuyaDanmakuSession } from "../danmaku/huya.js";
-import { fetchDouyinDanmakuSession, streamDouyinDanmaku } from "../danmaku/douyin.js";
+import { streamDouyinDanmaku } from "../danmaku/douyin.js";
+import { getPlatform } from "../platforms/registry.js";
 import { crossCategoryMapPayload } from "../browse/category-cross-map.js";
 import { refreshCategoryCaches, resolveCategories } from "../browse/category-cache.js";
 import { applyCorsHeaders } from "../middleware/cors.js";
@@ -88,6 +88,29 @@ function apiErrorStatus(message: string): number {
 function sendApiError(res: ServerResponse, config: ServerConfig, err: unknown): void {
   const message = errorMessage(err);
   sendJson(res, config, { ok: false, error: message }, apiErrorStatus(message));
+}
+
+async function handleDanmakuSession(
+  res: ServerResponse,
+  ctx: AppContext,
+  site: string,
+  room: string,
+): Promise<void> {
+  if (!room) {
+    sendJson(res, ctx.config, { ok: false, error: "缺少 room 参数" }, 400);
+    return;
+  }
+  const adapter = getPlatform(site)?.danmaku;
+  if (!adapter) {
+    sendJson(res, ctx.config, { ok: false, error: `暂不支持平台: ${site}` }, 400);
+    return;
+  }
+  try {
+    const session = await adapter.fetchSession(room);
+    sendJson(res, ctx.config, { ok: true, ...session });
+  } catch (err) {
+    sendApiError(res, ctx.config, err);
+  }
 }
 
 export async function handleApi(
@@ -372,35 +395,11 @@ export async function handleApi(
     return true;
   }
 
-  if (pathname === "/api/huya/danmaku" && req.method === "GET") {
+  const danmakuMatch = pathname.match(/^\/api\/([^/]+)\/danmaku$/);
+  if (danmakuMatch && req.method === "GET") {
     const query = readQuery(req);
     const room = query.get("room") || query.get("id") || "";
-    if (!room) {
-      sendJson(res, ctx.config, { ok: false, error: "缺少 room 参数" }, 400);
-      return true;
-    }
-    try {
-      const session = await fetchHuyaDanmakuSession(room);
-      sendJson(res, ctx.config, { ok: true, ...session });
-    } catch (err) {
-      sendApiError(res, ctx.config, err);
-    }
-    return true;
-  }
-
-  if (pathname === "/api/douyin/danmaku" && req.method === "GET") {
-    const query = readQuery(req);
-    const room = query.get("room") || query.get("id") || "";
-    if (!room) {
-      sendJson(res, ctx.config, { ok: false, error: "缺少 room 参数" }, 400);
-      return true;
-    }
-    try {
-      const session = await fetchDouyinDanmakuSession(room);
-      sendJson(res, ctx.config, { ok: true, ...session });
-    } catch (err) {
-      sendApiError(res, ctx.config, err);
-    }
+    await handleDanmakuSession(res, ctx, danmakuMatch[1], room);
     return true;
   }
 

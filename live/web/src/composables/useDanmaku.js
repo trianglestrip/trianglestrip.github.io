@@ -1,5 +1,5 @@
 import { ref, watch, onUnmounted } from "vue";
-import { apiUrl } from "../config/app.js";
+import { getDanmakuConnector } from "../platforms/danmakuRegistry.js";
 import {
   loadGlobalPref,
   loadJson,
@@ -8,11 +8,6 @@ import {
   platformPrefKey,
   saveGlobalPref,
 } from "../utils/prefStore.js";
-import {
-  buildHuyaJoinPayload,
-  fetchHuyaDanmakuSession,
-  HUYA_HEARTBEAT,
-} from "../utils/huyaDanmaku.js";
 
 const DEFAULT_OVERLAY = {
   show: true,
@@ -68,19 +63,6 @@ function loadChatSettings() {
   ]);
 }
 
-function encodeDouyuMsg(msg) {
-  const payload = new TextEncoder().encode(`${msg}\0`);
-  const len = payload.length + 8;
-  const buf = new ArrayBuffer(len + 4);
-  const view = new DataView(buf);
-  view.setInt32(0, len, true);
-  view.setInt32(4, len, true);
-  view.setInt16(8, 689, true);
-  view.setInt16(10, 0, true);
-  new Uint8Array(buf, 12).set(payload);
-  return buf;
-}
-
 export function useDanmaku(siteRef, roomIdRef) {
   const messages = ref([]);
   const status = ref("等待连接…");
@@ -88,16 +70,16 @@ export function useDanmaku(siteRef, roomIdRef) {
   const overlaySettings = ref(loadOverlaySettings());
   const chatSettings = ref(loadChatSettings());
 
-  let ws = null;
-  let eventSource = null;
-  let heartbeat = null;
+  const wsRef = { current: null };
+  const eventSourceRef = { current: null };
+  const heartbeatRef = { current: null };
   let reconnectTimer = null;
   let parseWorker = null;
   let parseSeq = 0;
   let activeSite = null;
   let pendingMsgs = [];
   let flushRaf = 0;
-  let alive = true;
+  const aliveRef = { current: true };
 
   watch(
     overlaySettings,
@@ -121,7 +103,7 @@ export function useDanmaku(siteRef, roomIdRef) {
       type: "module",
     });
     parseWorker.onmessage = (event) => {
-      if (!parseWorker || !alive || event.data?.type !== "messages") return;
+      if (!parseWorker || !aliveRef.current || event.data?.type !== "messages") return;
       queueMsgs(event.data.items || []);
     };
     return parseWorker;
@@ -154,23 +136,23 @@ export function useDanmaku(siteRef, roomIdRef) {
 
   function flushPendingMsgs() {
     flushRaf = 0;
-    if (!alive || !pendingMsgs.length) return;
+    if (!aliveRef.current || !pendingMsgs.length) return;
     messages.value.push(...pendingMsgs);
     pendingMsgs = [];
     trimMessages();
   }
 
   function queueMsgs(items) {
-    if (!alive || !items.length) return;
+    if (!aliveRef.current || !items.length) return;
     pendingMsgs.push(...items);
     if (flushRaf) return;
     flushRaf = requestAnimationFrame(flushPendingMsgs);
   }
 
   function clearTimers() {
-    clearInterval(heartbeat);
+    clearInterval(heartbeatRef.current);
     clearTimeout(reconnectTimer);
-    heartbeat = null;
+    heartbeatRef.current = null;
     reconnectTimer = null;
   }
 
@@ -184,127 +166,44 @@ export function useDanmaku(siteRef, roomIdRef) {
 
   function bindSocketHandlers(site) {
     activeSite = site;
-    ws.binaryType = "arraybuffer";
+    wsRef.current.binaryType = "arraybuffer";
 
-    ws.onopen = () => {
+    wsRef.current.onopen = () => {
       status.value = "弹幕已连接";
     };
 
-    ws.onmessage = (event) => {
+    wsRef.current.onmessage = (event) => {
       const buffer = event.data;
       if (!(buffer instanceof ArrayBuffer)) return;
       parseSeq += 1;
       ensureParseWorker().postMessage({ type: "parse", site: activeSite, buffer, seq: parseSeq }, [buffer]);
     };
 
-    ws.onerror = () => {
+    wsRef.current.onerror = () => {
       status.value = "弹幕连接出错";
     };
 
-    ws.onclose = () => {
+    wsRef.current.onclose = () => {
       status.value = "弹幕重连中…";
       clearTimers();
       scheduleReconnect();
     };
   }
 
-  function connectDouyu(roomId) {
-    messages.value = [];
-    status.value = "弹幕连接中…";
-    ensureParseWorker();
-
-    ws = new WebSocket("wss://danmuproxy.douyu.com:8506/");
-    bindSocketHandlers("douyu");
-
-    const prevOnOpen = ws.onopen;
-    ws.onopen = () => {
-      prevOnOpen?.();
-      ws.send(encodeDouyuMsg(`type@=loginreq/roomid@=${roomId}/`));
-      ws.send(encodeDouyuMsg(`type@=joingroup/rid@=${roomId}/gid@=-9999/`));
-      heartbeat = setInterval(() => {
-        if (ws?.readyState === WebSocket.OPEN) {
-          ws.send(encodeDouyuMsg("type@=mrkl/"));
-        }
-      }, 45000);
-    };
-  }
-
-  async function connectHuya(roomId) {
-    messages.value = [];
-    status.value = "弹幕准备中…";
-    ensureParseWorker();
-
-    let session;
-    try {
-      session = await fetchHuyaDanmakuSession(roomId);
-    } catch (err) {
-      status.value = `虎牙弹幕参数获取失败：${err?.message || err}`;
-      scheduleReconnect();
-      return;
-    }
-
-    status.value = "弹幕连接中…";
-    ws = new WebSocket("wss://cdnws.api.huya.com/");
-    bindSocketHandlers("huya");
-
-    const prevOnOpen = ws.onopen;
-    ws.onopen = () => {
-      prevOnOpen?.();
-      ws.send(buildHuyaJoinPayload(session.ayyuid, session.topSid));
-      heartbeat = setInterval(() => {
-        if (ws?.readyState === WebSocket.OPEN) {
-          ws.send(HUYA_HEARTBEAT);
-        }
-      }, 60000);
-    };
-  }
-
-  function connectDouyin(roomId) {
-    messages.value = [];
-    roomMeta.value = { liveStartAt: 0, fanGroup: "" };
-    status.value = "弹幕连接中…";
-    const url = apiUrl(`/api/douyin/danmaku/stream?room=${encodeURIComponent(roomId)}`);
-    eventSource = new EventSource(url);
-
-    eventSource.addEventListener("ready", () => {
-      status.value = "弹幕已连接";
-    });
-
-    eventSource.addEventListener("meta", (event) => {
-      try {
-        const item = JSON.parse(event.data);
-        if (item?.liveStartAt) roomMeta.value.liveStartAt = Number(item.liveStartAt) || 0;
-        if (item?.fanGroup) roomMeta.value.fanGroup = String(item.fanGroup);
-      } catch {
-        /* ignore malformed payload */
-      }
-    });
-
-    eventSource.addEventListener("chat", (event) => {
-      try {
-        const item = JSON.parse(event.data);
-        if (item?.user && item?.text) queueMsgs([item]);
-      } catch {
-        /* ignore malformed payload */
-      }
-    });
-
-    eventSource.addEventListener("close", () => {
-      if (!alive) return;
-      status.value = "弹幕重连中…";
-      scheduleReconnect();
-    });
-
-    eventSource.onerror = () => {
-      if (!alive) return;
-      if (eventSource?.readyState === EventSource.CLOSED) {
-        status.value = "弹幕重连中…";
-        scheduleReconnect();
-        return;
-      }
-      status.value = "弹幕连接出错";
-    };
-  }
+  const connectorCtx = {
+    messages,
+    status,
+    roomMeta,
+    wsRef,
+    eventSourceRef,
+    heartbeatRef,
+    aliveRef,
+    bindSocketHandlers,
+    clearTimers,
+    ensureParseWorker,
+    queueMsgs,
+    scheduleReconnect,
+  };
 
   function connect() {
     disconnect(false);
@@ -314,19 +213,12 @@ export function useDanmaku(siteRef, roomIdRef) {
       status.value = "缺少房间号";
       return;
     }
-    if (site === "douyu") {
-      connectDouyu(roomId);
+    const connector = getDanmakuConnector(site);
+    if (!connector) {
+      status.value = "暂不支持该平台弹幕";
       return;
     }
-    if (site === "huya") {
-      connectHuya(roomId);
-      return;
-    }
-    if (site === "douyin") {
-      connectDouyin(roomId);
-      return;
-    }
-    status.value = "暂不支持该平台弹幕";
+    connector(connectorCtx, roomId);
   }
 
   function disconnect(resetStatus = true) {
@@ -336,14 +228,14 @@ export function useDanmaku(siteRef, roomIdRef) {
     pendingMsgs = [];
     messages.value = [];
     roomMeta.value = { liveStartAt: 0, fanGroup: "" };
-    if (ws) {
-      ws.onclose = null;
-      ws.close();
-      ws = null;
+    if (wsRef.current) {
+      wsRef.current.onclose = null;
+      wsRef.current.close();
+      wsRef.current = null;
     }
-    if (eventSource) {
-      eventSource.close();
-      eventSource = null;
+    if (eventSourceRef.current) {
+      eventSourceRef.current.close();
+      eventSourceRef.current = null;
     }
     if (resetStatus) {
       status.value = "弹幕已断开";
@@ -351,7 +243,7 @@ export function useDanmaku(siteRef, roomIdRef) {
   }
 
   onUnmounted(() => {
-    alive = false;
+    aliveRef.current = false;
     disconnect();
   });
 

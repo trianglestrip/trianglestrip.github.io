@@ -1,12 +1,13 @@
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { appRoot } from "../config/load-config.js";
+import { BROWSE_SITE_IDS } from "../platforms/registry.js";
 import type { CategoryGroup } from "./douyu.js";
 
 export const CATEGORY_CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 export const CATEGORY_CACHE_TTL_SEC = CATEGORY_CACHE_TTL_MS / 1000;
 
-export const BROWSE_CATEGORY_SITES = ["douyu", "huya", "douyin"] as const;
+export const BROWSE_CATEGORY_SITES = BROWSE_SITE_IDS as readonly string[];
 export type BrowseCategorySite = (typeof BROWSE_CATEGORY_SITES)[number];
 
 export interface SiteCategoryCache {
