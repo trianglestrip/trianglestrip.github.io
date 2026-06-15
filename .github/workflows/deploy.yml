@@ -3,7 +3,6 @@ on:
   push:
     branches: [ master ]
     paths-ignore:
-      - 'live/**'
       - 'news/**'
   discussion:
     types: [created, edited, deleted, transferred, labeled, unlabeled]
@@ -36,11 +35,6 @@ jobs:
         run: |
           mkdir -p public/news
           cp news/index.html news/icons-sprite.png news/icons-sprite-dock.png public/news/
-      - name: 合并直播前端（live 独立 workflow 日常更新；全量发布时仍需拷贝）
-        run: |
-          mkdir -p public/live
-          cp -r live/dist/web/* public/live/
-          cp public/live/index.html public/live/404.html
       - name: 部署到 gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
