@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-15T07:38:42+00:00",
+  "updated_at": "2026-06-15T13:37:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "curl 项目即将开启“幸福之夏”，创始人宣布 7 月停止接受漏洞报告",
+      "url": "https://www.oschina.net/news/459181",
+      "hot": "Mon, 15 Jun 2026 19:29:53 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "红帽发布 RHEL 10.2 RISC-V 第二个开发者预览版，迈出正式支持关键一步",
+      "url": "https://www.oschina.net/news/459121",
+      "hot": "Mon, 15 Jun 2026 17:48:05 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "C++ Web 框架 Paozhu 1.11.0发布",
+      "url": "https://www.oschina.net/news/459120",
+      "hot": "Mon, 15 Jun 2026 17:45:58 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Vibe Coder 和软件工程师是两种人",
+      "url": "https://www.oschina.net/news/459086",
+      "hot": "Mon, 15 Jun 2026 17:12:09 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "开源免费首发！首款真正的 AI 大屏诞生 JimuBI，一句话生成炫酷大屏",
+      "url": "https://www.oschina.net/news/459010",
+      "hot": "Mon, 15 Jun 2026 15:50:01 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Windows 应用兼容引擎 V3.6.1 上线：优化双击 .exe 安装，提升运行成功率",
+      "url": "https://www.oschina.net/news/459004",
+      "hot": "Mon, 15 Jun 2026 15:34:50 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "强强联合！deepin X FlagOS 完成深度适配，共筑国产算力新底座",
+      "url": "https://www.oschina.net/news/459000",
+      "hot": "Mon, 15 Jun 2026 15:32:50 +0800"
+    },
+    {
+      "rank": 8,
       "title": "Linus Torvalds 发布 Linux 7.1，一次跨时区的常规升级",
       "url": "https://www.oschina.net/news/458999",
       "hot": "Mon, 15 Jun 2026 15:31:52 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "Fable 5 被禁当晚，智谱宣布 GLM-5.2 完全开源：“前沿智能属于每一个人”",
       "url": "https://www.oschina.net/news/458995",
       "hot": "Mon, 15 Jun 2026 15:27:00 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "🎉重大更新！NocoBase 2.1 正式版发布",
       "url": "https://www.oschina.net/news/458978",
       "hot": "Mon, 15 Jun 2026 14:57:43 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "美国政府下令 Anthropic 暂停 Fable 5 与 Mythos 5 访问",
-      "url": "https://www.oschina.net/news/458969",
-      "hot": "Mon, 15 Jun 2026 14:44:39 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "“去 Google 化”移动操作系统 /e/OS 4.0 发布",
-      "url": "https://www.oschina.net/news/458952/e-os-4-0",
-      "hot": "Mon, 15 Jun 2026 14:32:56 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "🔥🔥【AI桌面硬件大赏】 WioDeck - Wio 终端的赛博朋克多功能工具 HUD",
-      "url": "https://www.oschina.net/ai-creation/details/2806",
-      "hot": "Mon, 15 Jun 2026 14:04:17 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "🔥🔥【AI桌面硬件大赏】带3D打印心形外壳的BPM监测系统",
-      "url": "https://www.oschina.net/ai-creation/details/2805",
-      "hot": "Mon, 15 Jun 2026 14:03:44 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "把易经六十四卦做成了 AI 推理引擎，端到端只要 0.79 毫秒",
-      "url": "https://www.oschina.net/news/458885",
-      "hot": "Mon, 15 Jun 2026 13:10:41 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "smart-servlet v3.2 发布：Spring Boot 内嵌 Tomcat，是进步还是退步？",
-      "url": "https://www.oschina.net/news/458830",
-      "hot": "Mon, 15 Jun 2026 11:41:22 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "智谱 AI 编程工具 ZCode 3.0 正式发布，全面切换自研 ZCode Agent 内核",
-      "url": "https://www.oschina.net/news/458812",
-      "hot": "Mon, 15 Jun 2026 11:09:31 +0800"
     }
   ]
 }

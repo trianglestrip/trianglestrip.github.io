@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-15T07:38:25+00:00",
+  "updated_at": "2026-06-15T13:37:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Fable 5 的系统提示词被人扒出来了，精彩，太精彩了。",
       "url": "https://juejin.cn/post/7650052991786401832",
-      "hot": "2412"
+      "hot": "2916"
     },
     {
       "rank": 2,
-      "title": "Claude Code 的产品哲学：当价值观成为架构",
-      "url": "https://juejin.cn/post/7649936611648667686",
-      "hot": "1305"
+      "title": "小米版Claude Code正式发布，这次开源给到夯。",
+      "url": "https://juejin.cn/post/7650451521307770923",
+      "hot": "1620"
     },
     {
       "rank": 3,
-      "title": "小米版Claude Code正式发布，这次开源给到夯。",
-      "url": "https://juejin.cn/post/7650451521307770923",
-      "hot": "1260"
+      "title": "瑞幸 skill 引发的一些思考",
+      "url": "https://juejin.cn/post/7650146543882518591",
+      "hot": "963"
     },
     {
       "rank": 4,
-      "title": "真多线程！Bun作者要给JS大手术",
-      "url": "https://juejin.cn/post/7649936611648700454",
-      "hot": "918"
+      "title": "现代 Android 官方为什么更推荐 Repository 暴露 `suspend fun`，而不是在内部 `launch`",
+      "url": "https://juejin.cn/post/7650074080125599790",
+      "hot": "531"
     },
     {
       "rank": 5,
-      "title": "瑞幸 skill 引发的一些思考",
-      "url": "https://juejin.cn/post/7650146543882518591",
-      "hot": "774"
+      "title": "从“生成一篇知识点”到“面对面讲清一道题”：我用魔珐星云改造 AI 教育助手的实践",
+      "url": "https://juejin.cn/post/7651268339474202643",
+      "hot": "522"
     },
     {
       "rank": 6,
-      "title": "Flutter 又为 AI 时代添砖加瓦：全新 ComponentLibrary 提议",
-      "url": "https://juejin.cn/post/7649666537947807780",
-      "hot": "558"
+      "title": "告别 AI 乱码！Vue3+TS 项目的 AI 编码助手规范实践",
+      "url": "https://juejin.cn/post/7650089863866286115",
+      "hot": "468"
     },
     {
       "rank": 7,
-      "title": "让 Claude Code 拥有自我进化和记忆系统｜得物技术",
-      "url": "https://juejin.cn/post/7649571695950856234",
-      "hot": "558"
+      "title": "小米MiMoCode官网颜值高？Codex：拿来吧，您嘞！1:1完美复刻～",
+      "url": "https://juejin.cn/post/7650352436700774400",
+      "hot": "414"
     },
     {
       "rank": 8,
-      "title": "现代 Android 官方为什么更推荐 Repository 暴露 `suspend fun`，而不是在内部 `launch`",
-      "url": "https://juejin.cn/post/7650074080125599790",
-      "hot": "459"
+      "title": "解析华为 DevEco Code 和小米 MiMo Code，都基于 OpenCode ，有什么区别？",
+      "url": "https://juejin.cn/post/7650935690218209321",
+      "hot": "369"
     },
     {
       "rank": 9,
-      "title": "MarkItDown 再次登顶GitHub榜",
-      "url": "https://juejin.cn/post/7649674172486090752",
-      "hot": "441"
+      "title": "面试官坏笑：“你用 AI 编程一年了，怎么保证 Claude Code 写出来的代码是对的？”我：“直接上 Claude Fable 5 啊！”",
+      "url": "https://juejin.cn/post/7650809417412509732",
+      "hot": "279"
     },
     {
       "rank": 10,
-      "title": "告别 AI 乱码！Vue3+TS 项目的 AI 编码助手规范实践",
-      "url": "https://juejin.cn/post/7650089863866286115",
-      "hot": "360"
+      "title": "Vite 8 换上 Rolldown 后，前端构建真的会快很多吗？",
+      "url": "https://juejin.cn/post/7650313866518446143",
+      "hot": "261"
     }
   ]
 }

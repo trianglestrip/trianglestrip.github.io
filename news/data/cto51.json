@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-15T07:38:36+00:00",
+  "updated_at": "2026-06-15T13:37:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "【HarmonyOS 7】鸿蒙应用 AI Coding 工具链 DevEco Code 到 DevEco CLI",
+      "url": "https://ost.51cto.com/posts/46859",
+      "hot": "【HarmonyOS7】鸿蒙应用AICoding工具链DevEcoCode到DevEcoCLI最近，HarmonyOS开发者技术发布了一篇文章，介绍了两个新工具：DevEcoCode和De..."
+    },
+    {
+      "rank": 2,
+      "title": "【 HarmonyOS 7.0 】三分钟理解 compatibleSdkVersion ， compileSdkVersion与 targetSdkVersion",
+      "url": "https://ost.51cto.com/posts/46857",
+      "hot": "【HarmonyOS7.0】三分钟理解compatibleSdkVersion，compileSdkVersion与targetSdkVersion一、前言在HarmonyOS工程配置中，你可能会看到类似..."
+    },
+    {
+      "rank": 3,
+      "title": "全网实测Kimi K2.7 Code！黑洞、燃烧动画、水波渲染全卷起来了",
+      "url": "https://www.51cto.com/article/846431.html",
+      "hot": "新模型代码能力、Agent能力全面进阶，改善了长程任务里“过度思考”的问题，平均Token消耗直接减少30%，长周期复杂任务的成功率也再上新台阶。"
+    },
+    {
+      "rank": 4,
+      "title": "突发！Anthropic即将启用实名制刷脸",
+      "url": "https://www.51cto.com/article/846433.html",
+      "hot": "出大事了：Anthropic突发通知，Claude用户7月或将面临实名制「查户口」！从此，每次使用Claude，或许都要准备好身份证了。"
+    },
+    {
+      "rank": 5,
       "title": "Fable 5突遭封禁，Anthropic大会差点黄了！",
       "url": "https://www.51cto.com/article/846406.html",
       "hot": "地表最强Fable 5惨遭一纸禁令「物理封印」，官方开发者日竟然没了主角！Anthropic高管连夜飞往华盛顿灭火，全网都在等一个反转。"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "把真实GitHub仓库转化为可执行终端轨迹！TerminalTraj入选ICML 2026",
       "url": "https://www.51cto.com/article/846408.html",
       "hot": "至知创新研究院、曼彻斯特大学、Multimodal Art Projection Research Community等共同提出TerminalTraj——一个面向终端智能体的大规模轨迹生成管道（pipeline）。"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "低成本复刻Fable 5的路子找到了：OrcaRouter多模型组队，性能反超",
       "url": "https://www.51cto.com/article/846409.html",
       "hot": "当整个圈子都在为了下一个未知数倾注赌注时，一种更具确定性的工程范式正在悄然成型。"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "国产模型，打平了Claude Fable 5！已上线OpenRouter",
       "url": "https://www.51cto.com/article/846410.html",
       "hot": "OpenRouter 上线了一个叫 Fusion 的新功能，把同一道题丢给一组模型，再让一个裁判模型把答案揉成一份。结果是，几个便宜的开源模型组起团来，能直接打平 Fable 5，价格只有其一半。"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "谷歌CEO斯坦福再被嘘！竟被逼不敢提AI",
       "url": "https://www.51cto.com/article/846411.html",
       "hot": "6月14日，谷歌CEO皮查伊登上斯坦福毕业典礼，用一场「选择乐观」的沉默演讲，暴露出硅谷AI胜利叙事正在年轻人面前失灵。"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "微软CEO长文：以后两种资本，人力资本+Token资本",
       "url": "https://www.51cto.com/article/846412.html",
       "hot": "纳德拉深刻探讨了在 AI 驱动的经济时代下，企业未来的形态、数字主权以及 AI 发展的社会经济影响。"
-    },
-    {
-      "rank": 7,
-      "title": "田渊栋的递归AI发布首份成果：三个基准拿下SOTA",
-      "url": "https://www.51cto.com/article/846414.html",
-      "hot": "Recursive 系统会自动识别并整合各种创新成果，从而创造出比那些由各领域专家精心设计的现有解决方案更优的方案。"
-    },
-    {
-      "rank": 8,
-      "title": "Kimi K2.7 Code 开源，代码能力全面提升，token 省30%",
-      "url": "https://www.51cto.com/article/846415.html",
-      "hot": "Kimi Code Bench v2 覆盖10余种主流编程语言和完整生产技术栈，任务来自内部工程需求、线上生产事故、真实开源项目，偏后端、基础设施、性能调优、安全、前端和 ML 数据工程。"
-    },
-    {
-      "rank": 9,
-      "title": "开源自荐：“随机头像”App",
-      "url": "https://ost.51cto.com/posts/46825",
-      "hot": "开源独立开发的App项目&ldquo;随机头像&rdquo;随机头像是一款专注于通过算法生成图像纯鸿蒙系统App，涉及SVG图像生成、Canvas绘制、图像类型转换等方..."
-    },
-    {
-      "rank": 10,
-      "title": "JOIN 多表查询卡死，MySQL 大表关联查询该怎么优化才不崩 SQL 库",
-      "url": "https://www.51cto.com/article/846254.html",
-      "hot": "大表 JOIN 卡死说到底就三个原因：数据量没控制住、索引没跟上、执行顺序瞎搞。紧急的时候先止血控制数据量加索引，平时老老实实按规范写 SQL，架构上该拆就拆别心疼。"
     }
   ]
 }
