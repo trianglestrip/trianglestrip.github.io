@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-14T22:49:32+00:00",
+  "updated_at": "2026-06-15T02:13:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "轻轨迹鸿蒙开发实战8：SQLite（RelationalStore）多级复杂轨迹高性能落盘避坑",
-      "url": "https://ost.51cto.com/posts/46415",
-      "hot": "[toc]轻轨迹鸿蒙开发实战8：SQLite（RelationalStore）多级复杂轨迹高性能落盘避坑背景介绍在高精度的轨迹保活追踪中，如果设备内存因低电..."
+      "title": "一镜到底转场动效完全实战指南",
+      "url": "https://ost.51cto.com/posts/46653",
+      "hot": "一镜到底转场动效完全实战指南前言：为什么你的应用需要&ldquo;一镜到底&rdquo;？在移动应用设计中，页面转场动画不仅仅是装饰，它是连接用户操作与界..."
     },
     {
       "rank": 2,
-      "title": "抄表这种小页面，HarmonyOS 里也要把输入、异常和回执分清楚",
-      "url": "https://ost.51cto.com/posts/46410",
-      "hot": "古早程序员老薛，照常每天跟大家分享一些东西。这篇想写一个不起眼的小页面：小区水表抄表录入。它不炫，甚至有点土，页面上也就是上期读数..."
+      "title": "MySQL 的JSON类型，违反第一范式吗？",
+      "url": "https://www.51cto.com/article/846346.html",
+      "hot": "MySQL 在 5.7 版本中正式引入了原生的 JSON 数据类型，网上很多人关于 JSON 违反了数据库第一范式的争议，那么，JSON 真对违反了数据库第一范式吗？我们来聊一聊。"
     },
     {
       "rank": 3,
-      "title": "与图灵奖得主对话AI未来！第八届北京智源大会正式启幕：智源世界模型与智能体最新成果集中亮相",
-      "url": "https://www.51cto.com/article/846206.html",
-      "hot": "本次大会于中关村国际创新中心正式拉开帷幕，汇聚200余位全球顶尖专家学者与40余位头部AI企业CEO与创始人，短短两天议程内，将落地超200场前沿主题演讲与技术分享。"
+      "title": "别再用 if-else 判断标志位了！C 语言位操作从入门到嵌入式实战",
+      "url": "https://www.51cto.com/article/846263.html",
+      "hot": "嵌入式、驱动、协议解析、网络编程……位操作无处不在。这篇文章，我们从基础开始，把常用技巧和嵌入式实战手法全部讲透。"
     },
     {
       "rank": 4,
-      "title": "“智能体最后的考试”，Fable 5竟然不敌GPT 5.5",
-      "url": "https://www.51cto.com/article/846183.html",
-      "hot": "没想到打脸来得如此之快！！刚刚，UC伯克利放出了一场号称“智能体最后的考试”的全新基准测试。它把当今最强的AI Agent们拉到考场上，让它们干真正的活——在Siemens NX里建3D模型、在Unreal Engine里搭游戏场景、在Adobe After Effects里做特效合成。"
+      "title": "别再盲装 Claude 插件：项目事实才是入口",
+      "url": "https://www.51cto.com/article/846337.html",
+      "hot": "读完这篇文章，你至少能带走三个东西：为什么 Claude Code 配置不能靠“插件收藏夹”；MCP、Skill、Hook、Subagent、Plugin 这五层能力到底各管什么；以及如果自己实现一个 setup 推荐器，应该如何从项目事实推导自动化配置。"
     },
     {
       "rank": 5,
-      "title": "CVPR 2026 | 视觉脑机迈向双向交互！神经流模型 NeuroFlow 打通视觉与神经的双向通道",
-      "url": "https://www.51cto.com/article/846185.html",
-      "hot": "来自上海人工智能实验室、香港大学、香港中文大学等机构的研究团队，提出首个基于统一神经流模型的视觉-神经双向建模框架NeuroFlow。"
+      "title": "BudgetMem：给Runtime Agent Memory装上「预算路由器」，让记忆系统学会按需分配运行成本",
+      "url": "https://www.51cto.com/article/846301.html",
+      "hot": "BudgetMem 的核心观点是：未来的 Agent Memory 不应只是固定地存储、检索和压缩历史，而应根据当前 query 的需求，动态决定投入多少计算来提取和组织记忆。"
     },
     {
       "rank": 6,
-      "title": "刚刚，地表最强Claude 5被攻破！",
-      "url": "https://www.51cto.com/article/846184.html",
-      "hot": "地表最强Claude Fable 5，三天内被被黑客当众破解了，12万字核心机密全网泄露！但这还不是最炸的——Anthropic偷偷在自家模型里埋了一把刀，刀尖，正对着那些每天靠它做研究的人。"
+      "title": "KimiCode vs ClaudeCode：kimi2.7code preview 工程实测",
+      "url": "https://www.51cto.com/article/846334.html",
+      "hot": "这篇文章，我主要聊 Kimi K2.7 Code Preview。Kimi 这次最明显的进步，不是单步回答更短，而是 Agent 长任务里明显少绕路。"
     },
     {
       "rank": 7,
-      "title": "全程零次打开剪辑软件！揭秘Claude Fable 5如何纯靠写代码剪完自己的4K宣传片",
-      "url": "https://www.51cto.com/article/846172.html",
-      "hot": "Claude Code的团队成员Thariq分享了他Claude Code里用Claude Fable 5，剪辑了Fable 5的发布视频，全程没有打开任何视频剪辑软件。"
+      "title": "DI 三种注入方式横向对比，生产到底该用哪种？",
+      "url": "https://www.51cto.com/article/846261.html",
+      "hot": "Spring官方从Spring 4.3开始主推构造器注入，Spring 6.0直接废弃字段注入兼容提示。"
     },
     {
       "rank": 8,
-      "title": "具身智能数据基建升级！神经腕带+全景头环，补全物理操作信号",
-      "url": "https://www.51cto.com/article/846169.html",
-      "hot": "具身智能正在从实验室演示走向真实场景。越往真实世界走，数据问题越明显：视频能看到动作结果，动捕能记录轨迹，机器人日志能记录执行，但它们往往很难完整捕捉人类操作背后的意图、发力趋势、微控制和反馈修正。围绕这一缺口，一类新的人类操控数据基建正在出现。"
+      "title": "面试官：你们项目里的线程池是怎么用的？怎么管理的？",
+      "url": "https://www.51cto.com/article/846333.html",
+      "hot": "如果线程池里有 10 个线程，某一段时间内任务突然变多，那么前 10 个任务会被线程执行，后面的任务就会一直进入队列。因为队列几乎没有上限，所以线程池不会拒绝任务，任务只会越堆越多。如果任务生产速度一直大于消费速度，最后占用的就是堆内存，严重时就会导致 OOM。所以 FixedThreadPool 最大的问题不是“线程数固定”，而是“队列没限制”。"
     },
     {
       "rank": 9,
-      "title": "OpenSpec 和 Superpowers 串不起来跑？问题出在交接格式上",
-      "url": "https://www.51cto.com/article/846162.html",
-      "hot": "有人直接点出了痛点：\"Superpowers并不会用OpenSpec的输出成果来推进，两者之间有很多断点。\"另一位读者观察得更细：\"Superpowers会根据​​task.md​​重新生成计划，按自己的理解再来一遍，跟OpenSpec的设计之间有差异。\"这两个问题说到点子上了。这篇就来回答：断点卡在哪，以及我们怎么解决的。"
+      "title": "仅一行代码，Fable 5复活了！",
+      "url": "https://www.51cto.com/article/846296.html",
+      "hot": "一行代码，原地复活！Fable 5突遭全网下架，幕后推手竟是「头号金主」。Dario硬刚拒改Bug，惨遭拔网线。"
     },
     {
       "rank": 10,
-      "title": "AI 总忽略已有代码自己新建？三个结构性解法",
-      "url": "https://www.51cto.com/article/846145.html",
-      "hot": "上一篇用AI写代码，需求补不完，代码总有偏差把\"为什么偏\"拆清楚了：AI拿到模糊输入时不追问，直接推理补位；代码越多它\"看不见\"的越多，方向和人类完全相反。这篇解决\"怎么治\"——不靠更好的prompt，靠改变你的项目结构和工作流。"
+      "title": "AI圈懵了：一家巴西市政IT公司开源的大模型，杀进了全球第一梯队",
+      "url": "https://www.51cto.com/article/846332.html",
+      "hot": "有推特博主发现，一个由巴西里约热内卢市政府旗下 IT 公司开源的模型 Rio 3.5 397B，在多项基准测试中超越了 Qwen 3.7 Plus 等开源模型，而这个模型的基础模型还是 Qwen3.5-397B-A17B。"
     }
   ]
 }
