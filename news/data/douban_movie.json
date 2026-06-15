@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-15T13:37:06+00:00",
+  "updated_at": "2026-06-15T18:13:37+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,39 +30,39 @@
     },
     {
       "rank": 5,
-      "title": "家业",
-      "url": "https://movie.douban.com/subject/36883114/",
-      "hot": "评分 7.3"
-    },
-    {
-      "rank": 6,
       "title": "主角",
       "url": "https://movie.douban.com/subject/35295564/",
       "hot": "评分 8.1"
     },
     {
+      "rank": 6,
+      "title": "家业",
+      "url": "https://movie.douban.com/subject/36883114/",
+      "hot": "评分 7.3"
+    },
+    {
       "rank": 7,
+      "title": "揭秘日",
+      "url": "https://movie.douban.com/subject/36860212/",
+      "hot": "评分 6.5"
+    },
+    {
+      "rank": 8,
       "title": "翘楚",
       "url": "https://movie.douban.com/subject/36894289/",
       "hot": "评分 5.1"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "校园之外 第一季",
       "url": "https://movie.douban.com/subject/37061179/",
       "hot": "评分 8.4"
     },
     {
-      "rank": 9,
-      "title": "耀眼",
-      "url": "https://movie.douban.com/subject/37112008/",
-      "hot": "评分 5.9"
-    },
-    {
       "rank": 10,
-      "title": "揭秘日",
-      "url": "https://movie.douban.com/subject/36860212/",
-      "hot": "评分 6.5"
+      "title": "诺曼底72小时",
+      "url": "https://movie.douban.com/subject/36916000/",
+      "hot": "评分 8.2"
     }
   ]
 }

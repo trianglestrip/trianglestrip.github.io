@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-15T13:37:41+00:00",
+  "updated_at": "2026-06-15T18:14:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Salesforce to Acquire Fin (formerly Intercom) for $3.6BN",
-      "url": "https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/?bc=HL",
-      "hot": "85"
+      "title": "Iroh 1.0",
+      "url": "https://www.iroh.computer/blog/v1",
+      "hot": "484"
     },
     {
       "rank": 2,
-      "title": "What the Fuck Happened to Nerds",
-      "url": "https://mrmarket.lol/what-the-fuck-happened-to-nerds/",
-      "hot": "467"
+      "title": "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
+      "url": "https://tinywind.io",
+      "hot": "168"
     },
     {
       "rank": 3,
-      "title": "Your ePub Is fine",
-      "url": "https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/",
-      "hot": "735"
+      "title": "My Homelab AI Dev Platform",
+      "url": "https://rsgm.dev/post/ai-dev-platform/",
+      "hot": "92"
     },
     {
       "rank": 4,
-      "title": "Apple Foundation Models",
-      "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
-      "hot": "270"
+      "title": "Launch HN: Drafted (YC P26) – Models for residential architecture",
+      "url": "https://news.ycombinator.com/item?id=48543908",
+      "hot": "20"
     },
     {
       "rank": 5,
-      "title": "Ported my C game to WASM, here's everybug that I hit",
-      "url": "http://ernesernesto.github.io/writes/portingmatchmorphosistowasm/",
-      "hot": "49"
+      "title": "How TimescaleDB compresses time-series data",
+      "url": "https://roszigit.com/en/blog/timescaledb-compression-hypercore",
+      "hot": "21"
     },
     {
       "rank": 6,
-      "title": "Openrouter Fusion API",
-      "url": "https://openrouter.ai/openrouter/fusion",
-      "hot": "96"
+      "title": "Making glass-to-metal seals for home­made vacuum tubes",
+      "url": "https://maurycyz.com/projects/glass/1/",
+      "hot": "66"
     },
     {
       "rank": 7,
-      "title": "Show HN: I wrote a C++ ray tracer from scratch without AI",
-      "url": "https://github.com/themartiano/luz",
-      "hot": "47"
+      "title": "Memory safety CVEs differ between Rust and C/C++",
+      "url": "https://kobzol.github.io/rust/2026/06/15/how-memory-safety-cves-differ-between-rust-and-c-cpp.html",
+      "hot": "42"
     },
     {
       "rank": 8,
-      "title": "Even more batteries included with Emacs",
-      "url": "https://karthinks.com/software/even-more-batteries-included-with-emacs/",
-      "hot": "265"
+      "title": "Copper transport drug restores memory and clears toxic Alzheimer's proteins",
+      "url": "https://www.monash.edu/news/articles/copper-drug-restores-memory-and-clears-toxic-alzheimers-proteins",
+      "hot": "136"
     },
     {
       "rank": 9,
-      "title": "Asciline – real-time ASCII video rendering engine",
-      "url": "https://github.com/YusufB5/ASCILINE",
-      "hot": "23"
+      "title": "Fox to buy Roku",
+      "url": "https://www.wsj.com/business/deals/fox-roku-deal-f6e564f9",
+      "hot": "161"
     },
     {
       "rank": 10,
-      "title": "Anthropic's Safety Superpower",
-      "url": "https://stratechery.com/2026/anthropics-safety-superpower/",
-      "hot": "132"
+      "title": "Hetzner Price Adjustment",
+      "url": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/#cloud-servers",
+      "hot": "98"
     }
   ]
 }

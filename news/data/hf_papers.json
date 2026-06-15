@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-15T07:38:51+00:00",
+  "updated_at": "2026-06-15T18:14:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "96"
-    },
-    {
-      "rank": 2,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
       "hot": "229"
+    },
+    {
+      "rank": 2,
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://huggingface.co/papers/2412.20138",
+      "hot": "97"
     },
     {
       "rank": 3,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "Cosmos 3: Omnimodal World Models for Physical AI",
-      "url": "https://huggingface.co/papers/2606.02800",
-      "hot": "119"
+      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
+      "url": "https://huggingface.co/papers/2309.06180",
+      "hot": "58"
     }
   ]
 }
