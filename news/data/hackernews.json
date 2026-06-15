@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-15T02:13:12+00:00",
+  "updated_at": "2026-06-15T07:38:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Your ePub Is Fine. Kobo Disagrees. Blame Adobe",
+      "title": "Your ePub Is fine",
       "url": "https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/",
-      "hot": "189"
+      "hot": "496"
     },
     {
       "rank": 2,
-      "title": "Write for One Person",
-      "url": "https://wizardzines.com/comics/write-for-one-person/",
-      "hot": "81"
+      "title": "Even more batteries included with Emacs",
+      "url": "https://karthinks.com/software/even-more-batteries-included-with-emacs/",
+      "hot": "156"
     },
     {
       "rank": 3,
-      "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
-      "url": "https://github.com/tamnd/kage",
-      "hot": "406"
+      "title": "Curl will not accept vulnerability reports during July 2026",
+      "url": "https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/",
+      "hot": "227"
     },
     {
       "rank": 4,
-      "title": "Bitsy",
-      "url": "https://bitsy.org/",
-      "hot": "31"
+      "title": "Apple Foundation Models",
+      "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
+      "hot": "40"
     },
     {
       "rank": 5,
-      "title": "Firewood Splitting Simulator",
-      "url": "https://screen.toys/firewood/",
-      "hot": "647"
+      "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
+      "url": "https://github.com/tamnd/kage",
+      "hot": "524"
     },
     {
       "rank": 6,
-      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
-      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
-      "hot": "285"
+      "title": "Bitsy",
+      "url": "https://bitsy.org/",
+      "hot": "162"
     },
     {
       "rank": 7,
-      "title": "Chaosnet (1981)",
-      "url": "https://tumbleweed.nu/r/lm-3/uv/amber.html",
-      "hot": "66"
+      "title": "There Is(Ǝ) – Such That (∋)",
+      "url": "https://www.fractalkitty.com/there-is-3-such-that/",
+      "hot": "12"
     },
     {
       "rank": 8,
-      "title": "21 years and counting of 'eight fallacies of distributed computing' (2025)",
-      "url": "https://blog.apnic.net/2025/12/08/21-years-and-counting-of-eight-fallacies-of-distributed-computing/",
-      "hot": "9"
+      "title": "Firewood Splitting Simulator",
+      "url": "https://screen.toys/firewood/",
+      "hot": "771"
     },
     {
       "rank": 9,
-      "title": "Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call",
-      "url": "https://traceapp.info",
-      "hot": "102"
+      "title": "The Last Surviving Japanese Porsche 912 Police Car",
+      "url": "https://kottke.org/26/06/the-last-surviving-japanese-porsche-912-police-car",
+      "hot": "59"
     },
     {
       "rank": 10,
-      "title": "AI is code – and can't be prompted into being smarter",
-      "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
-      "hot": "80"
+      "title": "21 years and counting of 'eight fallacies of distributed computing' (2025)",
+      "url": "https://blog.apnic.net/2025/12/08/21-years-and-counting-of-eight-fallacies-of-distributed-computing/",
+      "hot": "66"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-14T23:55:04+00:00",
+  "updated_at": "2026-06-15T07:38:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "google/diffusiongemma-26B-A4B-it",
       "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "hot": "790"
+      "hot": "812"
     },
     {
       "rank": 2,
       "title": "moonshotai/Kimi-K2.7-Code",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
-      "hot": "622"
+      "hot": "663"
     },
     {
       "rank": 3,
       "title": "MiniMaxAI/MiniMax-M3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "484"
+      "hot": "522"
     },
     {
       "rank": 4,
       "title": "nvidia/LocateAnything-3B",
       "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "1998"
+      "hot": "2019"
     },
     {
       "rank": 5,
       "title": "CohereLabs/North-Mini-Code-1.0",
       "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0",
-      "hot": "368"
+      "hot": "374"
     },
     {
       "rank": 6,
-      "title": "google/gemma-4-12B-it",
-      "url": "https://huggingface.co/google/gemma-4-12B-it",
-      "hot": "1008"
+      "title": "prefeitura-rio/Rio-3.5-Open-397B",
+      "url": "https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B",
+      "hot": "289"
     },
     {
       "rank": 7,
-      "title": "prefeitura-rio/Rio-3.5-Open-397B",
-      "url": "https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B",
-      "hot": "270"
+      "title": "unsloth/diffusiongemma-26B-A4B-it-GGUF",
+      "url": "https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF",
+      "hot": "263"
     },
     {
       "rank": 8,
-      "title": "unsloth/diffusiongemma-26B-A4B-it-GGUF",
-      "url": "https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF",
-      "hot": "261"
+      "title": "google/gemma-4-12B-it",
+      "url": "https://huggingface.co/google/gemma-4-12B-it",
+      "hot": "1015"
     },
     {
       "rank": 9,
       "title": "OBLITERATUS/Gemma-4-12B-OBLITERATED",
       "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED",
-      "hot": "297"
+      "hot": "306"
     },
     {
       "rank": 10,
       "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
       "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "1805"
+      "hot": "1817"
     }
   ]
 }
