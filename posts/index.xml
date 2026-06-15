@@ -1,0 +1,562 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - 随手记录</title><link>https://trianglestrip.github.io/posts/</link><description>所有文章 | 随手记录</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 09:56:10 +0000</lastBuildDate><atom:link href="https://trianglestrip.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Lumen 在 Falcor 中的实现计划</title><link>https://trianglestrip.github.io/posts/d-21/</link><pubDate>Wed, 10 Jun 2026 09:56:10 +0000</pubDate><author>xxxx</author><guid>https://trianglestrip.github.io/posts/d-21/</guid><description><![CDATA[<h1 id="lumen-在-falcor-中的实现计划">Lumen 在 Falcor 中的实现计划</h1>
+<blockquote>
+<p><strong>目标</strong>: 在 FalcorRendering 框架中实现 UE5 Lumen 风格的实时动态全局光照系统。
+<strong>基础</strong>: Falcor 已有的 DXR 光追、SDF 体系、RenderGraph、RTXDI、后处理管线。
+<strong>日期</strong>: 2026-06-09</p>
+</blockquote>
+<hr>
+<h2 id="目录">目录</h2>
+<ol>
+<li><a href="#1-lumen-%e7%b3%bb%e7%bb%9f%e6%a6%82%e8%bf%b0" rel="">Lumen 系统概述</a></li>
+<li><a href="#2-falcor-%e7%8e%b0%e6%9c%89%e8%83%bd%e5%8a%9b%e8%af%84%e4%bc%b0" rel="">Falcor 现有能力评估</a></li>
+<li><a href="#3-%e6%80%bb%e4%bd%93%e6%9e%b6%e6%9e%84%e8%ae%be%e8%ae%a1" rel="">总体架构设计</a></li>
+<li><a href="#4-%e5%88%86%e9%98%b6%e6%ae%b5%e5%ae%9e%e7%8e%b0%e8%ae%a1%e5%88%92" rel="">分阶段实现计划</a></li>
+<li><a href="#5-phase-1-%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd%e5%b1%82" rel="">Phase 1: 基础设施层</a></li>
+<li><a href="#6-phase-2-surface-cache" rel="">Phase 2: Surface Cache</a></li>
+<li><a href="#7-phase-3-screen-probe-gather" rel="">Phase 3: Screen Probe Gather</a></li>
+<li><a href="#8-phase-4-radiance-cache" rel="">Phase 4: Radiance Cache</a></li>
+<li><a href="#9-phase-5-%e5%8f%8d%e5%b0%84%e7%b3%bb%e7%bb%9f" rel="">Phase 5: 反射系统</a></li>
+<li><a href="#10-phase-6-%e7%a1%ac%e4%bb%b6%e5%85%89%e8%bf%bd%e9%9b%86%e6%88%90" rel="">Phase 6: 硬件光追集成</a></li>
+<li><a href="#11-phase-7-%e9%9b%86%e6%88%90%e4%b8%8e%e4%bc%98%e5%8c%96" rel="">Phase 7: 集成与优化</a></li>
+<li><a href="#12-%e6%96%87%e4%bb%b6%e6%b8%85%e5%8d%95" rel="">文件清单</a></li>
+<li><a href="#13-%e9%87%8c%e7%a8%8b%e7%a2%91%e4%b8%8e%e6%97%b6%e9%97%b4%e4%bc%b0%e7%ae%97" rel="">里程碑与时间估算</a></li>
+</ol>
+<hr>
+<h2 id="1-lumen-系统概述">1. Lumen 系统概述</h2>
+<p>Lumen 是 UE5 的实时动态全局光照系统，核心特性：</p>
+<table>
+	<thead>
+			<tr>
+					<th>特性</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>完全不依赖预烘焙</strong></td>
+					<td>所有光照实时计算，支持动态几何/光源/材质</td>
+			</tr>
+			<tr>
+					<td><strong>多层级追踪</strong></td>
+					<td>屏幕空间追踪 → 距离场追踪 → 硬件光追 (自动降级)</td>
+			</tr>
+			<tr>
+					<td><strong>Surface Cache</strong></td>
+					<td>将场景几何参数化为 Card，缓存表面属性</td>
+			</tr>
+			<tr>
+					<td><strong>Radiance Cache</strong></td>
+					<td>世界空间 3D 探针网格存储辐照度</td>
+			</tr>
+			<tr>
+					<td><strong>Screen Probe Gather</strong></td>
+					<td>屏幕空间探针 + 世界空间探针的混合 GI</td>
+			</tr>
+			<tr>
+					<td><strong>高质量反射</strong></td>
+					<td>支持多次弹射的镜面反射</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="11-lumen-管线流程图">1.1 Lumen 管线流程图</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">┌─────────────────────────────────────────────────────────────────────┐
+</span></span><span class="line"><span class="cl">│                        Lumen GI Pipeline                            │
+</span></span><span class="line"><span class="cl">├─────────────────────────────────────────────────────────────────────┤
+</span></span><span class="line"><span class="cl">│                                                                     │
+</span></span><span class="line"><span class="cl">│  ┌──────────┐    ┌──────────────┐    ┌───────────────────┐         │
+</span></span><span class="line"><span class="cl">│  │ GBuffer   │───▶│ Surface Cache│───▶│ Screen Probe      │         │
+</span></span><span class="line"><span class="cl">│  │ (已有)    │    │ (Card Atlas) │    │ Gather (SS GI)    │         │
+</span></span><span class="line"><span class="cl">│  └──────────┘    └──────┬───────┘    └────────┬──────────┘         │
+</span></span><span class="line"><span class="cl">│                         │                     │                     │
+</span></span><span class="line"><span class="cl">│                         ▼                     ▼                     │
+</span></span><span class="line"><span class="cl">│                  ┌──────────────┐    ┌───────────────────┐         │
+</span></span><span class="line"><span class="cl">│                  │ Mesh Distance │    │ Radiance Cache    │         │
+</span></span><span class="line"><span class="cl">│                  │ Fields (SDF)  │    │ (World Probes)    │         │
+</span></span><span class="line"><span class="cl">│                  └──────┬───────┘    └────────┬──────────┘         │
+</span></span><span class="line"><span class="cl">│                         │                     │                     │
+</span></span><span class="line"><span class="cl">│                         └──────────┬──────────┘                     │
+</span></span><span class="line"><span class="cl">│                                    ▼                                │
+</span></span><span class="line"><span class="cl">│                           ┌───────────────────┐                     │
+</span></span><span class="line"><span class="cl">│                           │ Lumen Reflections │                     │
+</span></span><span class="line"><span class="cl">│                           │ (Specular GI)     │                     │
+</span></span><span class="line"><span class="cl">│                           └────────┬──────────┘                     │
+</span></span><span class="line"><span class="cl">│                                    │                                │
+</span></span><span class="line"><span class="cl">│                                    ▼                                │
+</span></span><span class="line"><span class="cl">│                           ┌───────────────────┐                     │
+</span></span><span class="line"><span class="cl">│                           │ Final Lighting    │                     │
+</span></span><span class="line"><span class="cl">│                           │ Composite         │                     │
+</span></span><span class="line"><span class="cl">│                           └───────────────────┘                     │
+</span></span><span class="line"><span class="cl">│                                                                     │
+</span></span><span class="line"><span class="cl">│  ┌──────────────────────────────────────────────────────────┐      │
+</span></span><span class="line"><span class="cl">│  │ 可选硬件光追后端 (DXR) - 替代 SDF 追踪提供更高精度       │      │
+</span></span><span class="line"><span class="cl">│  └──────────────────────────────────────────────────────────┘      │
+</span></span><span class="line"><span class="cl">└─────────────────────────────────────────────────────────────────────┘</span></span></code></pre></div></div>
+<hr>
+<h2 id="2-falcor-现有能力评估">2. Falcor 现有能力评估</h2>
+<h3 id="21--可直接复用">2.1 ✅ 可直接复用</h3>
+<table>
+	<thead>
+			<tr>
+					<th>Falcor 能力</th>
+					<th>对应 Lumen 需求</th>
+					<th>复用程度</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>DXR 光追基础设施</strong> (<code>Core/API/Raytracing.h</code>, <code>RtAccelerationStructure</code>, <code>RtStateObject</code>, <code>ShaderTable</code>)</td>
+					<td>硬件光追后端</td>
+					<td>🔥 100%</td>
+			</tr>
+			<tr>
+					<td><strong>SDF 体系</strong> (<code>Scene/SDFs/</code>, <code>SDFSVSVoxelizer.cs.slang</code>, <code>SDFVoxelTypes</code>)</td>
+					<td>Mesh Distance Field 生成与追踪</td>
+					<td>🔥 80%</td>
+			</tr>
+			<tr>
+					<td><strong>RenderGraph</strong> (<code>RenderGraph.h/cpp</code>, <code>RenderPass.h/cpp</code>)</td>
+					<td>所有 Pass 的调度与资源管理</td>
+					<td>🔥 100%</td>
+			</tr>
+			<tr>
+					<td><strong>GBuffer</strong> (<code>GBuffer/</code> pass, Forward PBR)</td>
+					<td>Surface Cache 数据源</td>
+					<td>🔥 90%</td>
+			</tr>
+			<tr>
+					<td><strong>球谐函数</strong> (<code>FilamentIBL</code> 9-band SH, <code>EnvMapSampler</code>)</td>
+					<td>Radiance Cache 探针存储</td>
+					<td>🔥 70%</td>
+			</tr>
+			<tr>
+					<td><strong>RTXDI</strong> (<code>Rendering/RTXDI/</code>)</td>
+					<td>直接光照采样 (与 GI 互补)</td>
+					<td>🔥 80%</td>
+			</tr>
+			<tr>
+					<td><strong>NRD 降噪</strong> (<code>NRDPass/</code>, NVIDIA Realistic Denoising)</td>
+					<td>GI/反射降噪</td>
+					<td>🔥 90%</td>
+			</tr>
+			<tr>
+					<td><strong>TAA</strong> (<code>TAA/</code> pass)</td>
+					<td>时序累积</td>
+					<td>🔥 90%</td>
+			</tr>
+			<tr>
+					<td><strong>NanoVDB</strong> (依赖)</td>
+					<td>稀疏体素 (可选加速结构)</td>
+					<td>🔥 60%</td>
+			</tr>
+			<tr>
+					<td><strong>Slang 着色器编译器</strong></td>
+					<td>所有 Lumen 着色器</td>
+					<td>🔥 100%</td>
+			</tr>
+			<tr>
+					<td><strong>后处理管线</strong> (Bloom, DoF, ToneMapping)</td>
+					<td>最终合成</td>
+					<td>🔥 100%</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="22--需要扩展">2.2 ⚠️ 需要扩展</h3>
+<table>
+	<thead>
+			<tr>
+					<th>需求</th>
+					<th>现状</th>
+					<th>差距</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Card 表示</strong></td>
+					<td>无</td>
+					<td>需从零实现 Card 生成/选择/Atlas</td>
+			</tr>
+			<tr>
+					<td><strong>Mesh SDF 生成</strong></td>
+					<td>有基础 SDF 体系但无 Mesh→SDF 工具链</td>
+					<td>需写 Compute Shader 生成 Mesh SDF</td>
+			</tr>
+			<tr>
+					<td><strong>Global Distance Field</strong></td>
+					<td>无</td>
+					<td>需合并 Mesh SDF 为全局低精度 SDF</td>
+			</tr>
+			<tr>
+					<td><strong>Screen Probe Gather</strong></td>
+					<td>无</td>
+					<td>需实现屏幕探针放置/追踪/积分</td>
+			</tr>
+			<tr>
+					<td><strong>Radiance Cache 3D Grid</strong></td>
+					<td>无</td>
+					<td>需实现世界空间探针网格</td>
+			</tr>
+			<tr>
+					<td><strong>Surface Cache 反馈</strong></td>
+					<td>无</td>
+					<td>需实现 Card 更新策略</td>
+			</tr>
+			<tr>
+					<td><strong>多次弹射 GI</strong></td>
+					<td>无 (现有 GI 仅一次弹射)</td>
+					<td>需实现递归/迭代弹射</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="23--缺失">2.3 ❌ 缺失</h3>
+<ul>
+<li>无任何形式的实时 GI 缓存系统</li>
+<li>无 Card/Surfel 表示</li>
+<li>无世界空间辐照度探针</li>
+<li>无 Mesh Distance Field 预计算管线</li>
+</ul>
+<hr>
+<h2 id="3-总体架构设计">3. 总体架构设计</h2>
+<h3 id="31-模块划分">3.1 模块划分</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Source/
+</span></span><span class="line"><span class="cl">├── RenderPasses/
+</span></span><span class="line"><span class="cl">│   ├── Lumen/                              # ★ 新目录: Lumen 所有 Pass
+</span></span><span class="line"><span class="cl">│   │   ├── LumenSurfaceCache/              # Surface Cache (Card 生成与管理)
+</span></span><span class="line"><span class="cl">│   │   ├── LumenMeshSDF/                   # Mesh Distance Field 生成
+</span></span><span class="line"><span class="cl">│   │   ├── LumenGlobalSDF/                 # Global Distance Field (合并)
+</span></span><span class="line"><span class="cl">│   │   ├── LumenScreenProbeGather/         # 屏幕探针收集
+</span></span><span class="line"><span class="cl">│   │   ├── LumenRadianceCache/             # 世界空间探针网格
+</span></span><span class="line"><span class="cl">│   │   ├── LumenReflections/               # Lumen 反射
+</span></span><span class="line"><span class="cl">│   │   ├── LumenSceneLighting/             # 最终光照合成
+</span></span><span class="line"><span class="cl">│   │   └── LumenVisualize/                 # 调试可视化
+</span></span><span class="line"><span class="cl">│   └── ... (现有 Pass)
+</span></span><span class="line"><span class="cl">│
+</span></span><span class="line"><span class="cl">├── Shaders/
+</span></span><span class="line"><span class="cl">│   └── Lumen/                              # ★ 新目录: Lumen Slang 着色器库
+</span></span><span class="line"><span class="cl">│       ├── LumenCard.slang                 # Card 数据结构
+</span></span><span class="line"><span class="cl">│       ├── LumenSurfaceCache.slang         # Surface Cache 着色器
+</span></span><span class="line"><span class="cl">│       ├── LumenMeshSDF.slang              # Mesh SDF 生成
+</span></span><span class="line"><span class="cl">│       ├── LumenGlobalSDF.slang            # 全局 SDF 追踪
+</span></span><span class="line"><span class="cl">│       ├── LumenScreenProbeGather.slang    # 屏幕探针
+</span></span><span class="line"><span class="cl">│       ├── LumenRadianceCache.slang        # 辐照度缓存
+</span></span><span class="line"><span class="cl">│       ├── LumenReflections.slang          # 反射追踪
+</span></span><span class="line"><span class="cl">│       ├── LumenTracing.slang              # 统一追踪接口
+</span></span><span class="line"><span class="cl">│       └── LumenUtils.slang                # 共享工具函数
+</span></span><span class="line"><span class="cl">│
+</span></span><span class="line"><span class="cl">├── Samples/
+</span></span><span class="line"><span class="cl">│   └── LumenDemo/                          # ★ 新 Sample: Lumen 演示程序
+</span></span><span class="line"><span class="cl">│       └── LumenDemo.cpp/h
+</span></span><span class="line"><span class="cl">│
+</span></span><span class="line"><span class="cl">└── Falcor/
+</span></span><span class="line"><span class="cl">    └── Rendering/
+</span></span><span class="line"><span class="cl">        └── Lumen/                          # ★ 新目录: Lumen C++ 基础设施
+</span></span><span class="line"><span class="cl">            ├── LumenTypes.h                # 共享数据类型
+</span></span><span class="line"><span class="cl">            ├── LumenCard.h/cpp             # Card 生成与管理
+</span></span><span class="line"><span class="cl">            ├── LumenMeshSDF.h/cpp          # Mesh SDF 管理
+</span></span><span class="line"><span class="cl">            └── LumenSettings.h             # 全局配置</span></span></code></pre></div></div>
+<h3 id="32-数据流设计">3.2 数据流设计</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">每帧数据流:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">1. GBuffer Render (已有)
+</span></span><span class="line"><span class="cl">   ├── Albedo, Normal, Depth, Roughness, Metallic, Emissive
+</span></span><span class="line"><span class="cl">   └── → Surface Cache Update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">2. Surface Cache Update
+</span></span><span class="line"><span class="cl">   ├── 输入: GBuffer + 上一帧 Card 状态
+</span></span><span class="line"><span class="cl">   ├── Card 选择 (哪些 Mesh 需要更新)
+</span></span><span class="line"><span class="cl">   ├── Card Rasterize (渲染 Card 到 Atlas)
+</span></span><span class="line"><span class="cl">   └── → Card Atlas (Albedo, Normal, Depth, Emissive)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">3. Mesh Distance Field Update (异步 / 按需)
+</span></span><span class="line"><span class="cl">   ├── 输入: Mesh 几何
+</span></span><span class="line"><span class="cl">   ├── Compute Shader: 32³/64³ jump flood → SDF
+</span></span><span class="line"><span class="cl">   ├── Mip SDF 金字塔
+</span></span><span class="line"><span class="cl">   └── → Per-Mesh SDF Textures
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">4. Global Distance Field Update
+</span></span><span class="line"><span class="cl">   ├── 输入: 所有动态 Mesh 的 SDF + 变换
+</span></span><span class="line"><span class="cl">   ├── Object→World min SDF 合并
+</span></span><span class="line"><span class="cl">   └── → Global SDF Volume
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">5. Screen Probe Gather
+</span></span><span class="line"><span class="cl">   ├── 输入: GBuffer + Card Atlas + Global SDF / HW RT
+</span></span><span class="line"><span class="cl">   ├── 自适应屏幕探针放置
+</span></span><span class="line"><span class="cl">   ├── 半球追踪 (SDF 或 HW RT)
+</span></span><span class="line"><span class="cl">   ├── Card 采样积分
+</span></span><span class="line"><span class="cl">   └── → Screen Probe Irradiance (SH)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">6. Radiance Cache Update
+</span></span><span class="line"><span class="cl">   ├── 输入: Screen Probe 结果 / 上一帧 Cache
+</span></span><span class="line"><span class="cl">   ├── 世界空间探针标记 (哪些需要更新)
+</span></span><span class="line"><span class="cl">   ├── 探针追踪积分
+</span></span><span class="line"><span class="cl">   └── → World Space Radiance Cache (SH)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">7. Lumen Reflections
+</span></span><span class="line"><span class="cl">   ├── 输入: GBuffer Roughness + Radiance Cache + Global SDF
+</span></span><span class="line"><span class="cl">   ├── 屏幕空间追踪 → 距离场追踪 → HW RT
+</span></span><span class="line"><span class="cl">   └── → Specular Indirect
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">8. Final Lighting Composite
+</span></span><span class="line"><span class="cl">   ├── Direct Light (RTXDI / 已有)
+</span></span><span class="line"><span class="cl">   ├── + Indirect Diffuse (Radiance Cache)
+</span></span><span class="line"><span class="cl">   ├── + Indirect Specular (Reflections)
+</span></span><span class="line"><span class="cl">   └── → HDR Output → PostFX Pipeline</span></span></code></pre></div></div>
+<hr>
+<h2 id="4-分阶段实现计划">4. 分阶段实现计划</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Phase 1  ████████░░░░░░░░░░░░  基础设施 (Mesh SDF, Card 数据结构)
+</span></span><span class="line"><span class="cl">Phase 2  ████████████████░░░░  Surface Cache
+</span></span><span class="line"><span class="cl">Phase 3  ████████████████████  Screen Probe Gather
+</span></span><span class="line"><span class="cl">Phase 4  ████████████████░░░░  Radiance Cache
+</span></span><span class="line"><span class="cl">Phase 5  ████████████████░░░░  反射系统
+</span></span><span class="line"><span class="cl">Phase 6  ████████░░░░░░░░░░░░  硬件光追集成
+</span></span><span class="line"><span class="cl">Phase 7  ████████████████████  集成优化 &amp; Demo</span></span></code></pre></div></div>
+<hr>
+<h2 id="5-phase-1-基础设施层">5. Phase 1: 基础设施层</h2>
+<h3 id="51-mesh-distance-field-生成">5.1 Mesh Distance Field 生成</h3>
+<p><strong>目标</strong>: 为每个 Mesh 生成高精度 SDF，合并为全局低精度 SDF。</p>]]></description></item><item><title>Nanite 在 FalcorRendering 中的生成工具与显示流程</title><link>https://trianglestrip.github.io/posts/d-20/</link><pubDate>Wed, 10 Jun 2026 09:55:35 +0000</pubDate><author>xxxx</author><guid>https://trianglestrip.github.io/posts/d-20/</guid><description><![CDATA[<blockquote>
+<p>目标: 在 FalcorRendering 中实现一套 Nanite 风格的虚拟化微多边形几何系统，包含离线资产生成工具、运行时资源加载、GPU 可见性筛选、LOD 选择、光栅化显示、调试可视化和验证流程。
+基础: 依托 Falcor 现有的 <code>SceneBuilder</code>、<code>Scene</code> 全局几何缓冲、<code>RenderPass</code>、<code>RenderGraph</code>、DX12/Vulkan 图形接口、Compute/Graphics Slang Shader、<code>Source/Tools</code> 工具目录和 <code>Source/Samples</code> 示例程序。
+范围: 本文是实现流程设计文档，不直接等同于 UE5 Nanite 的完整复制。优先实现静态三角网格的 Cluster/ClusterGroup 虚拟几何显示，再逐步扩展材质、遮挡、流式加载、动画和光追兼容。</p>
+</blockquote>
+<hr>
+<h2 id="1-总体目标">1. 总体目标</h2>
+<p>Nanite 风格系统要解决的问题是: 输入高面数模型，离线切分成小规模 Cluster，构建层级 LOD 和依赖关系，运行时只提交当前视角真正需要的 Cluster，并用 GPU 完成筛选与绘制。</p>
+<p>最小可用版本需要达成以下能力:</p>
+<ol>
+<li>离线工具把普通三角网格转换为 Nanite 资产。</li>
+<li>每个 Nanite 资产包含 Cluster、ClusterGroup、层级节点、误差度量、包围体、材质段和压缩顶点/索引数据。</li>
+<li>Falcor 运行时能加载该资产并创建 GPU Buffer。</li>
+<li>渲染端根据相机、屏幕误差、视锥和 HZB 遮挡筛选可见 Cluster。</li>
+<li>可见 Cluster 通过软件光栅化或 mesh/task shader 路径写入 Visibility Buffer。</li>
+<li>后续材质阶段根据 Visibility Buffer 解析三角、重建属性并执行 Falcor 现有材质/光照。</li>
+<li>提供调试视图: Cluster ID、LOD、屏幕误差、遮挡状态、材质 ID、overdraw、三角密度。</li>
+</ol>
+<hr>
+<h2 id="2-模块落点">2. 模块落点</h2>
+<p>建议新增以下模块和文件:</p>
+<table>
+	<thead>
+			<tr>
+					<th>模块</th>
+					<th>目录</th>
+					<th>职责</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Nanite 工具集</td>
+					<td><code>Source/Tools/Nanite</code></td>
+					<td>离线生成、加载、校验 <code>.fnanite</code> 资产</td>
+			</tr>
+			<tr>
+					<td>Nanite 核心数据</td>
+					<td><code>Source/Falcor/Scene/Nanite</code></td>
+					<td>资产格式、加载器、运行时资源对象</td>
+			</tr>
+			<tr>
+					<td>Nanite Scene 集成</td>
+					<td><code>Source/Falcor/Scene</code></td>
+					<td><code>SceneData</code> 增加 Nanite 几何描述和实例数据</td>
+			</tr>
+			<tr>
+					<td>Nanite RenderPass</td>
+					<td><code>Source/RenderPasses/NaniteRaster</code></td>
+					<td>GPU 筛选、光栅化和 Visibility Buffer</td>
+			</tr>
+			<tr>
+					<td>Nanite 示例</td>
+					<td><code>Source/Samples/NaniteViewer</code></td>
+					<td>独立显示、调试和性能验证</td>
+			</tr>
+			<tr>
+					<td>文档与测试资源</td>
+					<td><code>docs/</code>、<code>data/nanite/</code></td>
+					<td>示例资产、截图和流程说明</td>
+			</tr>
+	</tbody>
+</table>
+<p>首个版本不建议直接替换 <code>GBuffer</code>。先新增独立 <code>NaniteRaster</code> pass，输出 <code>visibility</code>、<code>depth</code>、<code>normal</code>、<code>baseColor</code> 等调试/材质解析纹理，再与现有 <code>GBuffer</code> 或 PBRT/Filament 示例逐步合并。</p>
+<hr>
+<h2 id="3-离线生成工具完整流程">3. 离线生成工具完整流程</h2>
+<h3 id="31-输入">3.1 输入</h3>
+<p><code>NaniteBuilder</code> 支持以下输入:</p>
+<ul>
+<li>glTF/OBJ/PBRT 导入后的三角网格。</li>
+<li>仅处理 <code>Vao::Topology::TriangleList</code>。</li>
+<li>静态网格优先，跳过 skinned mesh、curve、SDF 和 procedural primitive。</li>
+<li>材质按 Falcor <code>MaterialID</code> 或导入器材质名拆分。</li>
+<li>必须具备 position，normal/texcoord/tangent 可缺省并在构建阶段补齐。</li>
+</ul>
+<p>命令示例:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-powershell">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">NaniteBuilder</span><span class="p">.</span><span class="py">exe</span> <span class="p">-</span><span class="n">-input</span> <span class="n">data</span><span class="p">/</span><span class="n">models</span><span class="p">/</span><span class="n">statue</span><span class="p">/</span><span class="n">statue</span><span class="p">.</span><span class="py">gltf</span> <span class="p">-</span><span class="n">-output</span> <span class="n">data</span><span class="p">/</span><span class="n">nanite</span><span class="p">/</span><span class="n">statue</span><span class="p">.</span><span class="py">fnanite</span> <span class="p">-</span><span class="n">-cluster-tris</span> <span class="mf">128</span> <span class="p">-</span><span class="n">-group-clusters</span> <span class="mf">32</span> <span class="p">-</span><span class="n">-target-error</span> <span class="mf">1.0</span></span></span></code></pre></div></div>
+<h3 id="32-网格预处理">3.2 网格预处理</h3>
+<p>处理步骤:</p>
+<ol>
+<li>导入模型并提取每个 mesh 的三角列表。</li>
+<li>统一坐标、三角绕序和单位尺度。</li>
+<li>删除退化三角形和重复索引。</li>
+<li>根据材质拆分 mesh section，避免一个 Cluster 内跨多个材质。</li>
+<li>生成缺失 normal/tangent/texcoord。</li>
+<li>计算每个三角的面积、法线、质心和 AABB。</li>
+<li>建立原始三角到资产三角的 remap 表，供调试和回归使用。</li>
+</ol>
+<p>建议复用 <code>SceneBuilder::processMesh()</code> 的数据约定，保持顶点属性与 Falcor 的 <code>PackedStaticVertexData</code> 能互相转换。</p>
+<h3 id="33-cluster-构建">3.3 Cluster 构建</h3>
+<p>Cluster 是运行时筛选和绘制的基本单位。建议约束:</p>
+<ul>
+<li>每个 Cluster 目标 64 到 128 个三角。</li>
+<li>顶点数建议不超过 256，便于本地索引使用 <code>uint8_t</code> 或 <code>uint16_t</code>。</li>
+<li>Cluster 内只包含一种材质。</li>
+<li>Cluster 必须记录 object-space AABB、bounding sphere、cone normal、cone angle、surface area。</li>
+<li>Cluster 保存局部顶点表和局部三角索引。</li>
+</ul>
+<p>构建算法:</p>
+<ol>
+<li>对三角按空间位置和法线一致性分区。</li>
+<li>使用 graph partition 或 Morton 排序初版切分。</li>
+<li>控制每个 Cluster 的三角数、顶点数和材质一致性。</li>
+<li>对每个 Cluster 重新生成局部顶点表。</li>
+<li>计算 cluster error，表示该 Cluster 被父级 LOD 替代时的几何误差。</li>
+</ol>
+<p>初版可以用 Morton code + 贪心填充实现，后续再替换为基于 mesh adjacency 的图划分。</p>
+<h3 id="34-clustergroup-与-lod-层级">3.4 ClusterGroup 与 LOD 层级</h3>
+<p>ClusterGroup 表示一组 sibling clusters，也是 LOD 选择的依赖单位。</p>
+<p>构建步骤:</p>
+<ol>
+<li>将底层 Cluster 按空间相邻关系合并为 ClusterGroup。</li>
+<li>对每个 ClusterGroup 的三角集合执行简化，生成父层 Cluster。</li>
+<li>记录 child group 到 parent cluster 的依赖关系。</li>
+<li>重复简化直到根层只剩一个或少量 Cluster。</li>
+<li>为每个节点计算:
+<ul>
+<li>object-space bounds</li>
+<li>parent error</li>
+<li>child error</li>
+<li>LOD level</li>
+<li>material range</li>
+<li>page range</li>
+</ul>
+</li>
+</ol>
+<p>LOD 选择标准:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-text">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">screen_error = object_error * projection_scale / distance_to_camera</span></span></code></pre></div></div>
+<p>当 <code>screen_error &lt;= threshold</code> 时可以使用当前 Cluster，否则继续展开子节点。</p>
+<h3 id="35-顶点和索引压缩">3.5 顶点和索引压缩</h3>
+<p>建议资产内存布局:</p>
+<ul>
+<li>position 使用 Cluster 局部 AABB 量化到 16 bit 或 20 bit。</li>
+<li>normal/tangent 使用 octahedral encoding。</li>
+<li>texcoord 使用 16 bit 或按材质需求保留 32 bit。</li>
+<li>index 使用 Cluster 局部索引。</li>
+<li>material ID 单独存储，避免每顶点重复。</li>
+</ul>
+<p>初版可以先使用未压缩 <code>float3 position + packed normal + float2 uv</code>，保证正确性。压缩作为第二阶段优化。</p>
+<h3 id="36-page-与流式数据">3.6 Page 与流式数据</h3>
+<p>Page 是运行时加载和上传的单位。</p>
+<p>推荐规则:</p>
+<ul>
+<li>每个 page 包含多个 Cluster。</li>
+<li>page 大小目标 64 KB 到 256 KB。</li>
+<li>顶层常驻 page 必须在资产头中标记。</li>
+<li>child page 可按需加载。</li>
+<li>每个 Cluster 记录 <code>pageID</code> 和 page 内偏移。</li>
+</ul>
+<p>初版可以不做磁盘流式，全部加载到 GPU。资产格式仍保留 page 表，避免后续重构。</p>
+<h3 id="37-输出资产格式">3.7 输出资产格式</h3>
+<p>建议扩展名: <code>.fnanite</code></p>
+<p>文件布局:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-text">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">FNaniteHeader
+</span></span><span class="line"><span class="cl">ChunkTable
+</span></span><span class="line"><span class="cl">MaterialTable
+</span></span><span class="line"><span class="cl">MeshTable
+</span></span><span class="line"><span class="cl">InstanceTable
+</span></span><span class="line"><span class="cl">ClusterPageTable
+</span></span><span class="line"><span class="cl">ClusterTable
+</span></span><span class="line"><span class="cl">ClusterGroupTable
+</span></span><span class="line"><span class="cl">HierarchyNodeTable
+</span></span><span class="line"><span class="cl">VertexData
+</span></span><span class="line"><span class="cl">IndexData
+</span></span><span class="line"><span class="cl">DebugRemapData</span></span></code></pre></div></div>
+<p>核心结构草案:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-cpp">
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">FNaniteHeader</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">magic</span><span class="p">;</span>          <span class="c1">// &#39;FNAN&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">version</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">flags</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">meshCount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">clusterCount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">clusterGroupCount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">pageCount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint64_t</span> <span class="n">chunkTableOffset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">NaniteClusterDesc</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">pageID</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">vertexOffset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">vertexCount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">indexOffset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">triangleCount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">materialID</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">groupID</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">lodLevel</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">float4</span> <span class="n">boundingSphere</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">float3</span> <span class="n">boundsMin</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">float3</span> <span class="n">boundsMax</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">geometricError</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">flags</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">NaniteHierarchyNode</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">childNodeOffset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">childNodeCount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">clusterOffset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint32_t</span> <span class="n">clusterCount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">float4</span> <span class="n">boundingSphere</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">minError</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">maxError</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span></span></span></code></pre></div></div>
+<hr>
+<h2 id="4-falcor-运行时加载流程">4. Falcor 运行时加载流程</h2>
+<h3 id="41-scene-集成">4.1 Scene 集成</h3>
+<p>建议新增数据类型:</p>]]></description></item><item><title>我的讨论文章</title><link>https://trianglestrip.github.io/posts/d-18/</link><pubDate>Wed, 10 Jun 2026 09:24:22 +0000</pubDate><author>xxxx</author><guid>https://trianglestrip.github.io/posts/d-18/</guid><description>&lt;p>测试讨论一下。&lt;/p></description></item></channel></rss>
