@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-15T21:26:25+00:00",
+  "updated_at": "2026-06-16T01:48:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【HarmonyOS 7】鸿蒙应用 AI Coding 工具链 DevEco Code 到 DevEco CLI",
-      "url": "https://ost.51cto.com/posts/46859",
-      "hot": "【HarmonyOS7】鸿蒙应用AICoding工具链DevEcoCode到DevEcoCLI最近，HarmonyOS开发者技术发布了一篇文章，介绍了两个新工具：DevEcoCode和De..."
+      "title": "SpringBoot 安全加固：HTTPS 配置与 HTTP/2",
+      "url": "https://www.51cto.com/article/846447.html",
+      "hot": "在企业项目开发中，HTTP 协议的明文传输缺陷的是数据安全的重大隐患，而 HTTPS + HTTP/2 是目前企业级项目的标准安全+性能组合方案，先搞懂底层逻辑，再落地配置，避免踩坑。"
     },
     {
       "rank": 2,
-      "title": "【 HarmonyOS 7.0 】三分钟理解 compatibleSdkVersion ， compileSdkVersion与 targetSdkVersion",
-      "url": "https://ost.51cto.com/posts/46857",
-      "hot": "【HarmonyOS7.0】三分钟理解compatibleSdkVersion，compileSdkVersion与targetSdkVersion一、前言在HarmonyOS工程配置中，你可能会看到类似..."
+      "title": "97.6% cache 命中率：Claude Code 里感觉不到 Context Rot 的真正原因",
+      "url": "https://www.51cto.com/article/846487.html",
+      "hot": "本文要告诉你真相：不是 rot 不存在，是 Harness 替你把 97.6% 的冲击挡在了幕后。这篇讲幕后是什么、代价是什么。"
     },
     {
       "rank": 3,
-      "title": "全网实测Kimi K2.7 Code！黑洞、燃烧动画、水波渲染全卷起来了",
-      "url": "https://www.51cto.com/article/846431.html",
-      "hot": "新模型代码能力、Agent能力全面进阶，改善了长程任务里“过度思考”的问题，平均Token消耗直接减少30%，长周期复杂任务的成功率也再上新台阶。"
+      "title": "HarmonyOS HMRouter 完全指南：从基础跳转到高级拦截的实战手册",
+      "url": "https://ost.51cto.com/posts/46876",
+      "hot": "HarmonyOSHMRouter完全指南：从基础跳转到高级拦截的实战手册手把手教你用华为官方路由框架打造优雅的页面导航系统一、为什么要用HMRouter..."
     },
     {
       "rank": 4,
-      "title": "突发！Anthropic即将启用实名制刷脸",
-      "url": "https://www.51cto.com/article/846433.html",
-      "hot": "出大事了：Anthropic突发通知，Claude用户7月或将面临实名制「查户口」！从此，每次使用Claude，或许都要准备好身份证了。"
+      "title": "完整梳理 Bean 生命周期，实例化到销毁全流程",
+      "url": "https://www.51cto.com/article/846441.html",
+      "hot": "在实际开发中，很多问题比作用域更隐蔽，这些问题本质都指向同一个知识点：Bean的完整生命周期。"
     },
     {
       "rank": 5,
-      "title": "Fable 5突遭封禁，Anthropic大会差点黄了！",
-      "url": "https://www.51cto.com/article/846406.html",
-      "hot": "地表最强Fable 5惨遭一纸禁令「物理封印」，官方开发者日竟然没了主角！Anthropic高管连夜飞往华盛顿灭火，全网都在等一个反转。"
+      "title": "硬核干货！Linux PCI 设备驱动详解",
+      "url": "https://www.51cto.com/article/846367.html",
+      "hot": "Linux 扫描 PCI 总线，其实就是从 Root Complex 往下走，遇到 Bridge 就继续扫下一层，遇到 Endpoint 就创建对应的 pci_dev。"
     },
     {
       "rank": 6,
-      "title": "把真实GitHub仓库转化为可执行终端轨迹！TerminalTraj入选ICML 2026",
-      "url": "https://www.51cto.com/article/846408.html",
-      "hot": "至知创新研究院、曼彻斯特大学、Multimodal Art Projection Research Community等共同提出TerminalTraj——一个面向终端智能体的大规模轨迹生成管道（pipeline）。"
+      "title": "Linux Permission denied 权限不足终极解决方案",
+      "url": "https://www.51cto.com/article/846327.html",
+      "hot": "本文将带你彻底搞懂 Linux 权限模型，学会 3 种最常见的解决手段，从此不再被 Permission denied 拦住。"
     },
     {
       "rank": 7,
-      "title": "低成本复刻Fable 5的路子找到了：OrcaRouter多模型组队，性能反超",
-      "url": "https://www.51cto.com/article/846409.html",
-      "hot": "当整个圈子都在为了下一个未知数倾注赌注时，一种更具确定性的工程范式正在悄然成型。"
+      "title": "以Deep Research构建Rubric：面向开放任务的强化学习框架-DR-Rubric",
+      "url": "https://www.51cto.com/article/846260.html",
+      "hot": "下面来看一个有趣的思路-DR-Rubric（Deep Research as Rubric） 框架，将评估准则的构建本身定义为深度研究任务，借助智能体多轮检索与知识合成能力生成证据驱动的细粒度准则，搭配GRPO算法完成模型优化，同时支持模型自举生成准则，大幅提升训练效率与任务适配能力。"
     },
     {
       "rank": 8,
-      "title": "国产模型，打平了Claude Fable 5！已上线OpenRouter",
-      "url": "https://www.51cto.com/article/846410.html",
-      "hot": "OpenRouter 上线了一个叫 Fusion 的新功能，把同一道题丢给一组模型，再让一个裁判模型把答案揉成一份。结果是，几个便宜的开源模型组起团来，能直接打平 Fable 5，价格只有其一半。"
+      "title": "新玩具 Loop Engineering 来了：从写 Prompt 到设计循环！",
+      "url": "https://www.51cto.com/article/846348.html",
+      "hot": "龙虾之父的意思是：你不该再去 prompt 编程 Agent，而该去设计那个替你 prompt 的循环。Cherny 说得更直接，他已经不自己 prompt Claude 了，而是写好循环、让循环去 prompt Claude 并决定下一步，他的活就是写循环。"
     },
     {
       "rank": 9,
-      "title": "谷歌CEO斯坦福再被嘘！竟被逼不敢提AI",
-      "url": "https://www.51cto.com/article/846411.html",
-      "hot": "6月14日，谷歌CEO皮查伊登上斯坦福毕业典礼，用一场「选择乐观」的沉默演讲，暴露出硅谷AI胜利叙事正在年轻人面前失灵。"
+      "title": "# 码上鸿蒙•智绘未来#【HarmonyOS 7】DevEco CLI使用初体验，AI生成完整鸿蒙应用",
+      "url": "https://ost.51cto.com/posts/46872",
+      "hot": "1、介绍DevEcoCLI将DevEcoStudio工具链统一封装为一个CLI，内置ohpm、hvigor、hdc、emulator、hilog，同时集成HarmonyOS技能安装、项目脚手..."
     },
     {
       "rank": 10,
-      "title": "微软CEO长文：以后两种资本，人力资本+Token资本",
-      "url": "https://www.51cto.com/article/846412.html",
-      "hot": "纳德拉深刻探讨了在 AI 驱动的经济时代下，企业未来的形态、数字主权以及 AI 发展的社会经济影响。"
+      "title": "Claude-Mem：跨会话持久记忆组件深度指南",
+      "url": "https://www.51cto.com/article/846429.html",
+      "hot": "claude-mem 是社区开源项目，Star 81K+，定位是给 Claude Code（以及 Gemini CLI、OpenCode、OpenClaw 等多个 AI 编码工具）装上持久化记忆。它不在对话中注入你的配置，而是把 AI 工具每轮交互中产生的观察自动捕获、压缩、存入向量数据库，在后续会话中按需检索注入。"
     }
   ]
 }
