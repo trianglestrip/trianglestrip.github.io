@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-16T07:10:10+00:00",
+  "updated_at": "2026-06-16T12:22:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The time the x86 emulator team found code so bad they fixed it during emulation",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419",
-      "hot": "151"
+      "title": "Mechanical Watch",
+      "url": "https://ciechanow.ski/mechanical-watch/",
+      "hot": "63"
     },
     {
       "rank": 2,
-      "title": "John Carmack on Fabrice Bellard",
-      "url": "https://twitter.com/ID_AA_Carmack/status/2064095424420487226",
-      "hot": "89"
+      "title": "The time the x86 emulator team found code so bad they fixed it during emulation",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419",
+      "hot": "326"
     },
     {
       "rank": 3,
-      "title": "I Could've Rickrolled the FIFA World Cup. All I Needed Was My ID",
-      "url": "https://bobdahacker.com/blog/fifa-hack",
-      "hot": "165"
+      "title": "John Carmack on Fabrice Bellard",
+      "url": "https://twitter.com/ID_AA_Carmack/status/2064095424420487226",
+      "hot": "393"
     },
     {
       "rank": 4,
       "title": "A backdoor in a LinkedIn job offer",
       "url": "https://roman.pt/posts/linkedin-backdoor/",
-      "hot": "1018"
+      "hot": "1292"
     },
     {
       "rank": 5,
-      "title": "Banned Book Library in a Wi-Fi Smart Light Bulb",
-      "url": "https://www.richardosgood.com/posts/banned-book-library/",
-      "hot": "320"
+      "title": "Trinket.io shutting down, so we saved it and hosted it a trinket.strivemath.org",
+      "url": "https://trinket.strivemath.org/",
+      "hot": "48"
     },
     {
       "rank": 6,
-      "title": "Iroh 1.0",
-      "url": "https://www.iroh.computer/blog/v1",
-      "hot": "1110"
+      "title": "Getting Creative with Perlin Noise Fields",
+      "url": "https://sighack.com/post/getting-creative-with-perlin-noise-fields",
+      "hot": "61"
     },
     {
       "rank": 7,
-      "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
-      "url": "https://news.ycombinator.com/item?id=48542100",
-      "hot": "892"
+      "title": "Correlated randomness in Slay the Spire 2",
+      "url": "https://tck.mn/blog/correlated-randomness-sts2/",
+      "hot": "15"
     },
     {
       "rank": 8,
-      "title": "Show HN: Garden of Flowers – an archive of pictorial typography before ASCII art",
-      "url": "https://garden-of-flowers.heikkilotvonen.com/",
-      "hot": "39"
+      "title": "Iroh 1.0",
+      "url": "https://www.iroh.computer/blog/v1",
+      "hot": "1244"
     },
     {
       "rank": 9,
-      "title": "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
-      "url": "https://tinywind.io",
-      "hot": "758"
+      "title": "Banned Book Library in a Wi-Fi Smart Light Bulb",
+      "url": "https://www.richardosgood.com/posts/banned-book-library/",
+      "hot": "438"
     },
     {
       "rank": 10,
-      "title": "I hacked into the worst e-bike and fixed it [video]",
-      "url": "https://www.youtube.com/watch?v=hPrtVGimBYs",
-      "hot": "57"
+      "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
+      "url": "https://news.ycombinator.com/item?id=48542100",
+      "hot": "1086"
     }
   ]
 }

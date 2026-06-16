@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-16T01:48:18+00:00",
+  "updated_at": "2026-06-16T12:22:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "231"
+      "hot": "233"
     },
     {
       "rank": 2,
@@ -26,7 +26,7 @@
       "rank": 4,
       "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
       "url": "https://huggingface.co/papers/2606.14066",
-      "hot": "2"
+      "hot": "46"
     },
     {
       "rank": 5,
@@ -48,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "166"
-    },
-    {
-      "rank": 9,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "58"
+    },
+    {
+      "rank": 9,
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "166"
     },
     {
       "rank": 10,

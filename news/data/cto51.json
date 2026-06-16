@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-16T07:10:09+00:00",
+  "updated_at": "2026-06-16T12:22:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "喵屿性能优化之路：HarmonyOS 惰性加载技术详解",
+      "url": "https://ost.51cto.com/posts/46927",
+      "hot": "喵屿性能优化之路：HarmonyOS惰性加载技术详解1.什么是惰性加载1.1概念定义惰性加载（LazyLoading）是一种按需渲染策略：仅当UI元素进入屏..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS Navigation 路由实战：NavPathStack 从入门到踩坑",
+      "url": "https://ost.51cto.com/posts/47109",
+      "hot": "新项目搭架子，第一件事就是搞路由。HarmonyOS的路由方案有好几种&mdash;&mdash;router、Navigation、Tabs。纠结了一圈，最终选了Navigation+NavPathS..."
+    },
+    {
+      "rank": 3,
+      "title": "Anthropic撤回第三方订阅限制，「虾马」全面解禁！",
+      "url": "https://www.51cto.com/article/846536.html",
+      "hot": "大反转！Anthropic深夜听劝，撤回Claude第三方调用订阅的封杀令。然而喜忧参半，因用量严重缩水，它在同一天又被告上了法庭。"
+    },
+    {
+      "rank": 4,
       "title": "Karpahty被踢？美或将外籍天才逼出ASI核心圈",
       "url": "https://www.51cto.com/article/846537.html",
       "hot": "Karpathy入职不到一个月，就要被自家模型锁在门外？以后能不能碰美国的最强AI，或许不再看能力，而是护照上的国籍。"
     },
     {
-      "rank": 2,
+      "rank": 5,
+      "title": "视觉latent reasoning为什么不稳？这篇论文从特征空间找到了关键缺口",
+      "url": "https://www.51cto.com/article/846538.html",
+      "hot": "来自阿里 Qwen 大模型应用团队、滑铁卢大学、浙江大学和 Vector Institute 的研究者提出 GAP。"
+    },
+    {
+      "rank": 6,
       "title": "林俊旸新公司「卜拉格」亮相！首轮估值135亿，腾讯高榕红杉全投了",
       "url": "https://www.51cto.com/article/846540.html",
       "hot": "据The Information消息，前阿里Qwen负责人林俊旸创办的AI实验室已完成首轮融资，总额数亿美元，投后估值约20亿美元（约135亿元人民币）。"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "谷歌突然开源Agent OKF新标准！Karpathy力推的AI知识库终于有了通用格式了",
       "url": "https://www.51cto.com/article/846541.html",
       "hot": "过去一年，一个模式在开发者中悄悄流行起来：用 Markdown 文件给 AI agent 建一个知识库，让 agent 自己去读、去更新。"
     },
     {
-      "rank": 4,
-      "title": "HarmonyOS Canvas 实战：手撸一个签名板组件，从画线到保存相册一条龙",
-      "url": "https://ost.51cto.com/posts/47047",
-      "hot": "上周接了个需求，合同签署页面要加一个手写签名的功能。就是那种，用户在屏幕上手写个名字，然后把签名保存成图片上传到服务器。说实话这种..."
-    },
-    {
-      "rank": 5,
-      "title": "HarmonyOS 手势交互实战：拖拽、捏合、旋转全搞定，做个能玩的图片查看器",
-      "url": "https://ost.51cto.com/posts/47040",
-      "hot": "HarmonyOS手势交互实战：拖拽、捏合、旋转全搞定，上次做完转场动画之后，产品经理又来找我了：&quot;你看微信那个图片查看器，能放大能缩小还能..."
-    },
-    {
-      "rank": 6,
+      "rank": 8,
       "title": "Cursor再爆猛料：曾占Anthropic一半收入！",
       "url": "https://www.51cto.com/article/846522.html",
       "hot": "Cursor曾养活Anthropic半条命，如今被ClaudeCode逼到梭哈马斯克。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "SearchLeak：微软 M365 Copilot 致命漏洞，一次点击即可窃取企业敏感数据",
       "url": "https://www.51cto.com/article/846516.html",
       "hot": "微软已根据 CVE-2026-42824 对该漏洞进行了修复，并给出了最高的严重性评级：严重。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "函数也能当参数传？C 语言回调机制从原理到手写事件系统全解析",
       "url": "https://www.51cto.com/article/846514.html",
       "hot": "这篇文章，我们从函数指针的基础语法出发，讲透回调机制的原理，最后用不到 60 行代码手写一个简易事件系统——让你真正理解这套机制是怎么工作的。"
-    },
-    {
-      "rank": 9,
-      "title": "AI进化的极限在哪？谷歌DeepMind带你看清AGI到ASI的演化路径",
-      "url": "https://www.51cto.com/article/846513.html",
-      "hot": "谷歌 DeepMind 近期发布了一份长达数万字的深度报告，全景剖析了人工智能在跨越人类水平后，究竟会如何朝着超级智能的方向演进。"
-    },
-    {
-      "rank": 10,
-      "title": "超越Scaling！千分之一的数据，省几百倍算力的类脑模型来了",
-      "url": "https://www.51cto.com/article/846511.html",
-      "hot": "类脑架构和训练目标的联合设计，把预训练的算力门槛砍掉两个数量级，实现了超越Scaling的高效预训练。"
     }
   ]
 }
