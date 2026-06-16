@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-16T12:22:32+00:00",
+  "updated_at": "2026-06-16T20:28:12+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,33 +24,33 @@
     },
     {
       "rank": 4,
-      "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
-      "url": "https://huggingface.co/papers/2606.14066",
-      "hot": "46"
+      "title": "JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence",
+      "url": "https://huggingface.co/papers/2606.14777",
+      "hot": "157"
     },
     {
       "rank": 5,
+      "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
+      "url": "https://huggingface.co/papers/2606.14066",
+      "hot": "76"
+    },
+    {
+      "rank": 6,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "80"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
       "url": "https://huggingface.co/papers/2606.03264",
       "hot": "16"
     },
     {
-      "rank": 7,
-      "title": "LMCache: An Efficient KV Cache Layer for Enterprise-Scale LLM Inference",
-      "url": "https://huggingface.co/papers/2510.09665",
-      "hot": "5"
-    },
-    {
       "rank": 8,
-      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
-      "url": "https://huggingface.co/papers/2309.06180",
-      "hot": "58"
+      "title": "DreamX-World 1.0: A General-Purpose Interactive World Model",
+      "url": "https://huggingface.co/papers/2606.16993",
+      "hot": "78"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "SIA: Self Improving AI with Harness & Weight Updates",
-      "url": "https://huggingface.co/papers/2605.27276",
-      "hot": "14"
+      "title": "LMCache: An Efficient KV Cache Layer for Enterprise-Scale LLM Inference",
+      "url": "https://huggingface.co/papers/2510.09665",
+      "hot": "5"
     }
   ]
 }
