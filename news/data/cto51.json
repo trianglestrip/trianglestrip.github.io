@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-16T01:48:01+00:00",
+  "updated_at": "2026-06-16T07:10:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "SpringBoot 安全加固：HTTPS 配置与 HTTP/2",
-      "url": "https://www.51cto.com/article/846447.html",
-      "hot": "在企业项目开发中，HTTP 协议的明文传输缺陷的是数据安全的重大隐患，而 HTTPS + HTTP/2 是目前企业级项目的标准安全+性能组合方案，先搞懂底层逻辑，再落地配置，避免踩坑。"
+      "title": "Karpahty被踢？美或将外籍天才逼出ASI核心圈",
+      "url": "https://www.51cto.com/article/846537.html",
+      "hot": "Karpathy入职不到一个月，就要被自家模型锁在门外？以后能不能碰美国的最强AI，或许不再看能力，而是护照上的国籍。"
     },
     {
       "rank": 2,
-      "title": "97.6% cache 命中率：Claude Code 里感觉不到 Context Rot 的真正原因",
-      "url": "https://www.51cto.com/article/846487.html",
-      "hot": "本文要告诉你真相：不是 rot 不存在，是 Harness 替你把 97.6% 的冲击挡在了幕后。这篇讲幕后是什么、代价是什么。"
+      "title": "林俊旸新公司「卜拉格」亮相！首轮估值135亿，腾讯高榕红杉全投了",
+      "url": "https://www.51cto.com/article/846540.html",
+      "hot": "据The Information消息，前阿里Qwen负责人林俊旸创办的AI实验室已完成首轮融资，总额数亿美元，投后估值约20亿美元（约135亿元人民币）。"
     },
     {
       "rank": 3,
-      "title": "HarmonyOS HMRouter 完全指南：从基础跳转到高级拦截的实战手册",
-      "url": "https://ost.51cto.com/posts/46876",
-      "hot": "HarmonyOSHMRouter完全指南：从基础跳转到高级拦截的实战手册手把手教你用华为官方路由框架打造优雅的页面导航系统一、为什么要用HMRouter..."
+      "title": "谷歌突然开源Agent OKF新标准！Karpathy力推的AI知识库终于有了通用格式了",
+      "url": "https://www.51cto.com/article/846541.html",
+      "hot": "过去一年，一个模式在开发者中悄悄流行起来：用 Markdown 文件给 AI agent 建一个知识库，让 agent 自己去读、去更新。"
     },
     {
       "rank": 4,
-      "title": "完整梳理 Bean 生命周期，实例化到销毁全流程",
-      "url": "https://www.51cto.com/article/846441.html",
-      "hot": "在实际开发中，很多问题比作用域更隐蔽，这些问题本质都指向同一个知识点：Bean的完整生命周期。"
+      "title": "HarmonyOS Canvas 实战：手撸一个签名板组件，从画线到保存相册一条龙",
+      "url": "https://ost.51cto.com/posts/47047",
+      "hot": "上周接了个需求，合同签署页面要加一个手写签名的功能。就是那种，用户在屏幕上手写个名字，然后把签名保存成图片上传到服务器。说实话这种..."
     },
     {
       "rank": 5,
-      "title": "硬核干货！Linux PCI 设备驱动详解",
-      "url": "https://www.51cto.com/article/846367.html",
-      "hot": "Linux 扫描 PCI 总线，其实就是从 Root Complex 往下走，遇到 Bridge 就继续扫下一层，遇到 Endpoint 就创建对应的 pci_dev。"
+      "title": "HarmonyOS 手势交互实战：拖拽、捏合、旋转全搞定，做个能玩的图片查看器",
+      "url": "https://ost.51cto.com/posts/47040",
+      "hot": "HarmonyOS手势交互实战：拖拽、捏合、旋转全搞定，上次做完转场动画之后，产品经理又来找我了：&quot;你看微信那个图片查看器，能放大能缩小还能..."
     },
     {
       "rank": 6,
-      "title": "Linux Permission denied 权限不足终极解决方案",
-      "url": "https://www.51cto.com/article/846327.html",
-      "hot": "本文将带你彻底搞懂 Linux 权限模型，学会 3 种最常见的解决手段，从此不再被 Permission denied 拦住。"
+      "title": "Cursor再爆猛料：曾占Anthropic一半收入！",
+      "url": "https://www.51cto.com/article/846522.html",
+      "hot": "Cursor曾养活Anthropic半条命，如今被ClaudeCode逼到梭哈马斯克。"
     },
     {
       "rank": 7,
-      "title": "以Deep Research构建Rubric：面向开放任务的强化学习框架-DR-Rubric",
-      "url": "https://www.51cto.com/article/846260.html",
-      "hot": "下面来看一个有趣的思路-DR-Rubric（Deep Research as Rubric） 框架，将评估准则的构建本身定义为深度研究任务，借助智能体多轮检索与知识合成能力生成证据驱动的细粒度准则，搭配GRPO算法完成模型优化，同时支持模型自举生成准则，大幅提升训练效率与任务适配能力。"
+      "title": "SearchLeak：微软 M365 Copilot 致命漏洞，一次点击即可窃取企业敏感数据",
+      "url": "https://www.51cto.com/article/846516.html",
+      "hot": "微软已根据 CVE-2026-42824 对该漏洞进行了修复，并给出了最高的严重性评级：严重。"
     },
     {
       "rank": 8,
-      "title": "新玩具 Loop Engineering 来了：从写 Prompt 到设计循环！",
-      "url": "https://www.51cto.com/article/846348.html",
-      "hot": "龙虾之父的意思是：你不该再去 prompt 编程 Agent，而该去设计那个替你 prompt 的循环。Cherny 说得更直接，他已经不自己 prompt Claude 了，而是写好循环、让循环去 prompt Claude 并决定下一步，他的活就是写循环。"
+      "title": "函数也能当参数传？C 语言回调机制从原理到手写事件系统全解析",
+      "url": "https://www.51cto.com/article/846514.html",
+      "hot": "这篇文章，我们从函数指针的基础语法出发，讲透回调机制的原理，最后用不到 60 行代码手写一个简易事件系统——让你真正理解这套机制是怎么工作的。"
     },
     {
       "rank": 9,
-      "title": "# 码上鸿蒙•智绘未来#【HarmonyOS 7】DevEco CLI使用初体验，AI生成完整鸿蒙应用",
-      "url": "https://ost.51cto.com/posts/46872",
-      "hot": "1、介绍DevEcoCLI将DevEcoStudio工具链统一封装为一个CLI，内置ohpm、hvigor、hdc、emulator、hilog，同时集成HarmonyOS技能安装、项目脚手..."
+      "title": "AI进化的极限在哪？谷歌DeepMind带你看清AGI到ASI的演化路径",
+      "url": "https://www.51cto.com/article/846513.html",
+      "hot": "谷歌 DeepMind 近期发布了一份长达数万字的深度报告，全景剖析了人工智能在跨越人类水平后，究竟会如何朝着超级智能的方向演进。"
     },
     {
       "rank": 10,
-      "title": "Claude-Mem：跨会话持久记忆组件深度指南",
-      "url": "https://www.51cto.com/article/846429.html",
-      "hot": "claude-mem 是社区开源项目，Star 81K+，定位是给 Claude Code（以及 Gemini CLI、OpenCode、OpenClaw 等多个 AI 编码工具）装上持久化记忆。它不在对话中注入你的配置，而是把 AI 工具每轮交互中产生的观察自动捕获、压缩、存入向量数据库，在后续会话中按需检索注入。"
+      "title": "超越Scaling！千分之一的数据，省几百倍算力的类脑模型来了",
+      "url": "https://www.51cto.com/article/846511.html",
+      "hot": "类脑架构和训练目标的联合设计，把预训练的算力门槛砍掉两个数量级，实现了超越Scaling的高效预训练。"
     }
   ]
 }

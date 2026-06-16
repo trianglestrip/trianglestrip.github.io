@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-16T01:48:08+00:00",
+  "updated_at": "2026-06-16T07:10:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Pinterest 利用内容指纹技术，在数百万个域名中实现 URL 去重",
+      "url": "https://www.infoq.cn/article/ptleqt2rgIC96zXp5Tzu?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 16 Jun 2026 13:54:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "亚马逊云科技发布新一代 Amazon OpenSearch Serverless",
+      "url": "https://www.infoq.cn/article/1JmJurL7fQtvpujOTIMg?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 16 Jun 2026 11:38:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "蚂蚁全链路 AI 研发，SDD规范驱动与 Harness 工程实践｜AICon上海",
+      "url": "https://www.infoq.cn/article/5Ke1HD7F6R7aYr4jERyk?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 16 Jun 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 4,
       "title": "Gemma 4 12B 通过无编码器架构实现设备端多模态主动工作流",
       "url": "https://www.infoq.cn/article/7djN3gq1MaqGitDAPkhe?utm_source=rss&utm_medium=article",
       "hot": "Tue, 16 Jun 2026 09:44:17 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "前 OpenAI 高管清华演讲：比失业更可怕的，是 AI 时代我们不知道“我是谁”",
       "url": "https://www.infoq.cn/article/BVEc18iUtotFGN2mpRSI?utm_source=rss&utm_medium=article",
       "hot": "Mon, 15 Jun 2026 22:31:48 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "腾讯撑场、60亿豪赌，“GPU四小龙”最后一龙刚刚过会",
       "url": "https://www.infoq.cn/article/OLS2A0uPEfmqoktKKGWg?utm_source=rss&utm_medium=article",
       "hot": "Mon, 15 Jun 2026 22:26:54 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "Java 近期新闻：JDK 27 进入收尾阶段、JDK 28 专家组、GlassFish、Infinispan、Kotlin",
       "url": "https://www.infoq.cn/article/UkvVZm81ZerzhmEsTgHD?utm_source=rss&utm_medium=article",
       "hot": "Mon, 15 Jun 2026 20:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "普通人创作千万播放量爆款视频不是梦！从字节走出的产品人，做了一款AIGC视频神器",
       "url": "https://www.infoq.cn/article/pfJ4soZQji2VsfuX1DMm?utm_source=rss&utm_medium=article",
       "hot": "Mon, 15 Jun 2026 18:40:26 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "智能体加速金融创新 | TF技术前线179期报名",
       "url": "https://www.infoq.cn/article/Bim80Njzp6ZYQJVm8dh7?utm_source=rss&utm_medium=article",
       "hot": "Mon, 15 Jun 2026 18:39:02 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Microsoft Discovery 正式上线 Azure ，为 Majorana 2 量子芯片的研发提供代理式 AI 支持",
       "url": "https://www.infoq.cn/article/TVaWScbjordM7XP3FuPg?utm_source=rss&utm_medium=article",
       "hot": "Mon, 15 Jun 2026 18:11:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Fable 5 被禁竟因不听劝，Anthropic开启退款；阿里辟谣合伙人周靖人离职消息；智谱GLM-5.2全量开放：前沿智能不应被随时收回｜AI周报",
-      "url": "https://www.infoq.cn/article/iuD87mUGUbkR8RGbiqNr?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 15 Jun 2026 16:48:46 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Terraform 1.15 在动态模块源和功能弃用方面缩小了与 OpenTofu 的差距",
-      "url": "https://www.infoq.cn/article/ScTqcQpgcS4hoKuGeMPO?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 15 Jun 2026 16:08:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "微软在 Build 2026 大会上推出 Logic Apps Automation 功能",
-      "url": "https://www.infoq.cn/article/MpPRbdlVPsucjYBoNMjB?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 15 Jun 2026 14:10:00 GMT"
     }
   ]
 }
