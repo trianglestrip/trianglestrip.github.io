@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-16T22:28:28+00:00",
+  "updated_at": "2026-06-17T02:17:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "GrapheneOS has been ported to Android 17 and official releases are coming soon",
+      "title": "GrapheneOS has been ported to Android 17",
       "url": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
-      "hot": "127"
+      "hot": "409"
     },
     {
       "rank": 2,
       "title": "Running local models is good now",
       "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
-      "hot": "877"
+      "hot": "1031"
     },
     {
       "rank": 3,
-      "title": "SpaceX to buy Cursor for $60B",
-      "url": "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/",
-      "hot": "766"
+      "title": "Humiliating IIS servers for fun and jail time",
+      "url": "https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/",
+      "hot": "97"
     },
     {
       "rank": 4,
-      "title": "GPT‑NL: a sovereign language model for the Netherlands",
-      "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
-      "hot": "111"
+      "title": "SpaceX to buy Cursor for $60B",
+      "url": "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/",
+      "hot": "893"
     },
     {
       "rank": 5,
-      "title": "Calvin and Hobbes and the price of integrity",
-      "url": "https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of",
-      "hot": "187"
+      "title": "Wolfram Language and Mathematica Version 15, AI Assistant, Symbolic Music, More",
+      "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
+      "hot": "79"
     },
     {
       "rank": 6,
       "title": "TIL: You can make HTTP requests without curl using Bash /dev/TCP",
       "url": "https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/",
-      "hot": "191"
+      "hot": "273"
     },
     {
       "rank": 7,
       "title": "Mechanical Watch (2022)",
       "url": "https://ciechanow.ski/mechanical-watch/",
-      "hot": "591"
+      "hot": "630"
     },
     {
       "rank": 8,
-      "title": "Stop Using JWTs",
-      "url": "https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452",
-      "hot": "169"
+      "title": "Calvin and Hobbes and the price of integrity",
+      "url": "https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of",
+      "hot": "288"
     },
     {
       "rank": 9,
-      "title": "Apple is about to make Hide My Email useless",
-      "url": "https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless/",
-      "hot": "298"
+      "title": "Stop Using JWTs",
+      "url": "https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452",
+      "hot": "255"
     },
     {
       "rank": 10,
-      "title": "But yak shaving is fun (2019)",
-      "url": "https://parksb.github.io/en/article/32.html",
-      "hot": "175"
+      "title": "The Magic Roundabout of Seattle Area",
+      "url": "https://kirklandroundabouts.com",
+      "hot": "28"
     }
   ]
 }

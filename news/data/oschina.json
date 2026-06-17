@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-16T22:28:31+00:00",
+  "updated_at": "2026-06-17T02:17:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "GLM-5.2 上线并开源",
+      "url": "https://www.oschina.net/news/460037",
+      "hot": "Wed, 17 Jun 2026 10:07:39 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Spring AI 的 ToolSearch 与 Solon AI 的 ToolGateway!",
+      "url": "https://www.oschina.net/news/460036",
+      "hot": "Wed, 17 Jun 2026 10:02:35 +0800"
+    },
+    {
+      "rank": 3,
       "title": "Google Cloud 发布开放知识格式 OKF，用 Markdown + YAML 终结 AI 智能体的知识孤岛",
       "url": "https://www.oschina.net/news/459806",
       "hot": "Tue, 16 Jun 2026 19:30:50 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "AI 本质上是代码，不可能通过 prompt 变得更聪明",
       "url": "https://www.oschina.net/news/459779",
       "hot": "Tue, 16 Jun 2026 18:25:33 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "字节跳动发布 Seedance 2.0 Mini 视频生成模型",
       "url": "https://www.oschina.net/news/459778",
       "hot": "Tue, 16 Jun 2026 18:25:23 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "DeepSeek 首轮融资落地：超过 74 亿美元、500 亿估值与一场精心设计的控制权隔离",
       "url": "https://www.oschina.net/news/459762",
       "hot": "Tue, 16 Jun 2026 17:48:32 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "AI Coding 的风吹到了鸿蒙",
       "url": "https://my.oschina.net/u/4487475/blog/19705863",
       "hot": "Tue, 16 Jun 2026 17:36:29 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "Cursor 的狂野崛起：一个 25 岁少年、一段与 Anthropic 的诡异关系，和一场 600 亿美元的豪赌",
       "url": "https://www.oschina.net/news/459727",
       "hot": "Tue, 16 Jun 2026 17:13:05 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Git Extensions v7.1.0 RC1 发布，独立的 Git 仓库 UI 管理工具",
       "url": "https://www.oschina.net/news/459716/gitextensions-v7-1-0-rc1",
       "hot": "Tue, 16 Jun 2026 16:56:38 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "[分享] Kiwi v1.0.0 发布：基于 Operaton 的开源 BPMN 工作流平台（Java 25 + Angular 21）",
       "url": "https://www.oschina.net/news/459703",
       "hot": "Tue, 16 Jun 2026 16:48:58 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "程序员和软件还有前途吗 —— 从 NocoBase 收入再翻倍谈起",
-      "url": "https://my.oschina.net/u/5453274/blog/19705561",
-      "hot": "Tue, 16 Jun 2026 16:08:13 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "GitHub 算力告急，微软被迫向 AWS 租用计算容量",
-      "url": "https://www.oschina.net/news/459641",
-      "hot": "Tue, 16 Jun 2026 15:29:43 +0800"
     }
   ]
 }
