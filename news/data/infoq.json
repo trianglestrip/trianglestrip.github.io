@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-17T02:17:48+00:00",
+  "updated_at": "2026-06-17T07:30:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Fable 5被禁3天后Anthropic认怂！连夜急派员工赴华盛顿谈判：GPT 5.5有同款漏洞",
+      "url": "https://www.infoq.cn/article/mBHRVxO514Uki3Eyikxl?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 17 Jun 2026 15:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "同属 Oracle，OpenJDK 与 GraalVM 对 AI 代码贡献态度相反",
+      "url": "https://www.infoq.cn/article/hfTxUTc6pj2cHm1Hk5DD?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 17 Jun 2026 14:30:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Lyft借助地图智能技术缓解封闭式小区接驾难题",
+      "url": "https://www.infoq.cn/article/mo0XQK6h2xAcVEqafKVN?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 17 Jun 2026 11:53:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "全网首份指令级拆解：看华为昇腾 950DT 芯片如何撬动 DeepSeek 75%降价与字节锁单",
+      "url": "https://www.infoq.cn/article/y9letxDfTZ72Ls1JX27u?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 17 Jun 2026 11:12:03 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "2026年中国智能体工程化人才与组织发展报告",
+      "url": "https://www.infoq.cn/minibook/Rhz3a9NjqbRYCWNQJerz?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 17 Jun 2026 10:46:17 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "三年百万级服务器排障实战，OpenCloudOS开源OS层 AI诊断系统",
+      "url": "https://www.infoq.cn/article/N8OtrKJAucsocHwY650b?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 17 Jun 2026 10:37:53 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "场景泛化能力反超主流VLA模型？大晓机器人开源新世界模型，以极小代价直达家庭",
+      "url": "https://www.infoq.cn/article/jpXp2TDdHMgvwkcA3sf1?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 17 Jun 2026 10:22:29 GMT"
+    },
+    {
+      "rank": 8,
+      "title": "人形机器人价格大跳水，比iPhone还便宜：一场关于生产力而非形态的产业竞速",
+      "url": "https://www.infoq.cn/article/9jUgTpozqbBvjIBXiVXD?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 17 Jun 2026 10:12:35 GMT"
+    },
+    {
+      "rank": 9,
       "title": "全新世界模型悟界·Physis将开源，22岁北大本科生担任负责人｜智源大会",
       "url": "https://www.infoq.cn/article/DSWOGK8XvrirsxTIITdY?utm_source=rss&utm_medium=article",
       "hot": "Wed, 17 Jun 2026 10:09:05 GMT"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "AI Native人机协同重构内容安全新范式｜AICon上海",
       "url": "https://www.infoq.cn/article/HYuYyycPfMcAatwxNWwy?utm_source=rss&utm_medium=article",
       "hot": "Wed, 17 Jun 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 3,
-      "title": "利用“项目即服务”构建和扩展平台",
-      "url": "https://www.infoq.cn/article/u7v5y362ZR206BBUrdZ7?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 17 Jun 2026 09:43:41 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "微软开源用于数据库内持久执行的 PostgreSQL 扩展",
-      "url": "https://www.infoq.cn/article/iC6rdCT79aKOaG5mp0Tx?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 16 Jun 2026 19:00:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "DeepSeek 融资交易曝光：腾讯、宁德时代等被锁5年，且没投票权，梁文锋绝对控制",
-      "url": "https://www.infoq.cn/article/IRLrMM9Rifv5Dmqr2fYR?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 16 Jun 2026 18:50:59 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "IBM Vault Enterprise 2.0 为企业身份安全带来自动化 LDAP 密钥管理",
-      "url": "https://www.infoq.cn/article/opKi68pYLdwYETCOzR4t?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 16 Jun 2026 17:07:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "AICon 深圳 2026 启动｜Agent 时代，哪些方向正在成为行业关键变量？",
-      "url": "https://www.infoq.cn/article/5YWzfAHFxQhOWtkJmWgG?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 16 Jun 2026 16:16:23 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "超20亿元B轮融资落地，硅基流动进入产业资本密集下注阶段",
-      "url": "https://www.infoq.cn/article/6plxDB37CLvi5xWT0Abb?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 16 Jun 2026 15:57:45 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Pinterest 利用内容指纹技术，在数百万个域名中实现 URL 去重",
-      "url": "https://www.infoq.cn/article/ptleqt2rgIC96zXp5Tzu?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 16 Jun 2026 13:54:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "亚马逊云科技发布新一代 Amazon OpenSearch Serverless",
-      "url": "https://www.infoq.cn/article/1JmJurL7fQtvpujOTIMg?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 16 Jun 2026 11:38:00 GMT"
     }
   ]
 }

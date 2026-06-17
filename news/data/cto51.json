@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-17T02:17:41+00:00",
+  "updated_at": "2026-06-17T07:30:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": ".NET 开发者必知的六个现代 C# 特性",
-      "url": "https://www.51cto.com/article/846640.html",
-      "hot": "本文将按实用优先级，介绍六个能切实提升你日常编码效率的现代 C# 特性，并通过对比示例展示它们的威力。"
+      "title": "40万次Claude Code会话实锤：这才是AI时代最值钱的本事！",
+      "url": "https://www.51cto.com/article/846669.html",
+      "hot": "Anthropic用40万次会话Claude Code实锤:能从 AI 身上榨出几倍产能的,不是代码力,是更懂行。"
     },
     {
       "rank": 2,
-      "title": "拼多多三面：索引建了为啥不走？只懂最左前缀，你还只是皮毛",
-      "url": "https://www.51cto.com/article/846634.html",
-      "hot": "这篇把MySQL隐形失效逻辑扒透，拼多多/字节/阿里面试直接满分，线上再也不慢查询。"
+      "title": "刚被马斯克收购，Cursor掏出新模型：10万卡加持，和Opus、GPT一样大",
+      "url": "https://www.51cto.com/article/846665.html",
+      "hot": "本周二，Cursor 宣布了一个新的 1.5 万亿 + 参数模型，该模型在超过 10 万块 GPU 上进行了预训练。"
     },
     {
       "rank": 3,
-      "title": "AI 编程又变天了？最近爆火的 Loop Engineering，才是程序员真正的生产力王炸",
-      "url": "https://www.51cto.com/article/846630.html",
-      "hot": "今天我们聊聊 Loop Engineering 到底是什么、为什么今年突然爆火、实实在在能解决哪些开发痛点，同时也聊聊这套新玩法当下存在的现实问题。"
+      "title": "ACL 2026 | 蚂蚁EGSS算法破解Test Time Scaling困局",
+      "url": "https://www.51cto.com/article/846667.html",
+      "hot": "Test-Time Scaling（TTS）是通过在推理阶段投入更多计算资源，让Agent多次尝试、探索不同推理路径再选最优的关键范式，是当前LLM在复杂任务上取得SOTA的核心方法。"
     },
     {
       "rank": 4,
-      "title": "Vue 3 provideinject 常见报错排查与性能优化完全指南",
-      "url": "https://www.51cto.com/article/846585.html",
-      "hot": "本文将聚焦于实际开发中最常遇到的问题，帮助你在面对报错时能够快速定位、精准解决，同时掌握性能优化的核心策略。"
+      "title": "刚刚，Fable-5之下，智谱开源的GLM-5.2拿下AI编程第一！",
+      "url": "https://www.51cto.com/article/846668.html",
+      "hot": "要知道，此前提到AI界的御三家，那大概率指向的是Claude、OpenAI和谷歌，不过这一次，从实打实的榜单能力来看，谷歌的Gemini实实在在地被GLM淘汰掉了。"
     },
     {
       "rank": 5,
-      "title": "SpringBoot 整合 MyBatis 完整实战",
-      "url": "https://www.51cto.com/article/846580.html",
-      "hot": "本篇文章就来介绍一下 SpringBoot 如何整合 MyBatis，实现数据表的增删改查。"
+      "title": "李飞飞刚立规矩才13天，国产卡上「真物理」就来了！",
+      "url": "https://www.51cto.com/article/846670.html",
+      "hot": "被算力荒逼出来的硬核奇迹！腾讯米哈游老兵组成的「草根」团队，硬在国产芯片上炼出了超10分钟的绝对物理一致性。画面可以糙，物理绝不能假，这就是通往AGI的真正基石。"
     },
     {
       "rank": 6,
-      "title": "GLM-5.2 正式发布：开源之王来了，摸到了Opus-4.8",
-      "url": "https://www.51cto.com/article/846614.html",
-      "hot": "GLM-5.2让我更加确信阿迪王的末日论就是个笑话，现在Anthropic和OpenAI所剩下的，只有更多的RL环境和规模。"
+      "title": "HarmonyOS 评论回复弹窗完全指南：软键盘、表情面板与@好友的终极实现",
+      "url": "https://ost.51cto.com/posts/47306",
+      "hot": "HarmonyOS评论回复弹窗完全指南：软键盘、表情面板与好友的终极实现从弹窗选型到图文混排，手把手打造一个完整的评论回复系统写在前面：为..."
     },
     {
       "rank": 7,
-      "title": "Anthropic谈判陷僵局！大佬联名要求解禁Fable",
-      "url": "https://www.51cto.com/article/846613.html",
-      "hot": "结果出来了：谈判破裂，Fable 5依然下线！外媒透露，这是一场沟通灾难——硅谷精英和特朗普政府，根本在说两种语言。百位顶尖专家联名上书也没用，Fable 5和Mythos 5解禁依然遥遥无期。"
+      "title": "鸿蒙 DevEco CLI 与 DevEco Code 全攻略",
+      "url": "https://ost.51cto.com/posts/47288",
+      "hot": "鸿蒙DevEcoCLI与DevEcoCode全攻略万少：华为HDE、鸿蒙极客个人主页：https:blog.zbztb.cn2025年参与孵化了20+鸿蒙应用、技术文章300+、鸿蒙..."
     },
     {
       "rank": 8,
-      "title": "Loop Engineering 认知篇——决定 AI 上限的，不是更聪明的大脑，而是更优秀的循环",
-      "url": "https://www.51cto.com/article/846625.html",
-      "hot": "Prompt Engineering 决定了你从哪里出发。Loop Engineering 决定了你能走多远。如果说 Prompt Engineering 是教 AI 如何开始工作，那么 Loop Engineering 则是在教 AI 如何持续进步。"
+      "title": "同一个模型，换套框架成绩差27%：SWE-bench分数到底谁说了算？",
+      "url": "https://www.51cto.com/article/846653.html",
+      "hot": "Agent 的能力由模型和 harness 共同决定，同一模型换一套 harness，在 SWE-bench、Terminal-bench 等评测上的得分可相差十几甚至二十多个百分点，差距堪比模型换代。"
     },
     {
       "rank": 9,
-      "title": "一个模型控制手脚腰身！机器人终于学会全身协同干精细活了",
-      "url": "https://www.51cto.com/article/846612.html",
-      "hot": "对于机器人来说，移动与操作从来不是两个独立问题，而是一个统一问题。Curr-0所解决的，正是这种全身灵巧操作（Loco-Dexterous Manipulation）能力。"
+      "title": "模型越强，人的判断力越值钱：微软CEO破解“AI替代”焦虑",
+      "url": "https://www.51cto.com/article/846652.html",
+      "hot": "纳德拉认为，当下出现了真正的质变：人与数字系统之间，第一次可以建立认知闭环（cognitive closed loop）。"
     },
     {
       "rank": 10,
-      "title": "别再只堆Agent了：清华团队把Session重新做成了多智能体系统的核心",
-      "url": "https://www.51cto.com/article/846610.html",
-      "hot": "来自清华大学、中山大学和香港中文大学的Rath Team把他们的解法开源了，叫OpenRath。"
+      "title": "马斯克麾下最惨打工人：手滑删掉xAI三周训练数据",
+      "url": "https://www.51cto.com/article/846651.html",
+      "hot": "偷师、借道、换血、误删……折腾到最后，xAI成了给对手供电的人。"
     }
   ]
 }
