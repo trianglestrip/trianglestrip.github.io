@@ -1,50 +1,50 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-17T07:30:23+00:00",
+  "updated_at": "2026-06-17T12:06:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 权限申请全流程实战：从声明到拒绝后再引导",
+      "url": "https://ost.51cto.com/posts/47358",
+      "hot": "做App开发，权限是绑不开的。拍照要相机权限，定位要位置权限，网络请求倒是不用权限（鸿蒙默认就有网络访问能力），但基本上每个稍微复杂..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS RDB 关系型数据库实战：从建表到增删改查一篇打通",
+      "url": "https://ost.51cto.com/posts/47357",
+      "hot": "之前写数据持久化那篇的时候，主要讲的是Preferences用户首选项，适合存一些简单的键值对，比如用户设置、登录状态之类的。但实际项目里，..."
+    },
+    {
+      "rank": 3,
       "title": "40万次Claude Code会话实锤：这才是AI时代最值钱的本事！",
       "url": "https://www.51cto.com/article/846669.html",
       "hot": "Anthropic用40万次会话Claude Code实锤:能从 AI 身上榨出几倍产能的,不是代码力,是更懂行。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "刚被马斯克收购，Cursor掏出新模型：10万卡加持，和Opus、GPT一样大",
       "url": "https://www.51cto.com/article/846665.html",
       "hot": "本周二，Cursor 宣布了一个新的 1.5 万亿 + 参数模型，该模型在超过 10 万块 GPU 上进行了预训练。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "ACL 2026 | 蚂蚁EGSS算法破解Test Time Scaling困局",
       "url": "https://www.51cto.com/article/846667.html",
       "hot": "Test-Time Scaling（TTS）是通过在推理阶段投入更多计算资源，让Agent多次尝试、探索不同推理路径再选最优的关键范式，是当前LLM在复杂任务上取得SOTA的核心方法。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "刚刚，Fable-5之下，智谱开源的GLM-5.2拿下AI编程第一！",
       "url": "https://www.51cto.com/article/846668.html",
       "hot": "要知道，此前提到AI界的御三家，那大概率指向的是Claude、OpenAI和谷歌，不过这一次，从实打实的榜单能力来看，谷歌的Gemini实实在在地被GLM淘汰掉了。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "李飞飞刚立规矩才13天，国产卡上「真物理」就来了！",
       "url": "https://www.51cto.com/article/846670.html",
       "hot": "被算力荒逼出来的硬核奇迹！腾讯米哈游老兵组成的「草根」团队，硬在国产芯片上炼出了超10分钟的绝对物理一致性。画面可以糙，物理绝不能假，这就是通往AGI的真正基石。"
-    },
-    {
-      "rank": 6,
-      "title": "HarmonyOS 评论回复弹窗完全指南：软键盘、表情面板与@好友的终极实现",
-      "url": "https://ost.51cto.com/posts/47306",
-      "hot": "HarmonyOS评论回复弹窗完全指南：软键盘、表情面板与好友的终极实现从弹窗选型到图文混排，手把手打造一个完整的评论回复系统写在前面：为..."
-    },
-    {
-      "rank": 7,
-      "title": "鸿蒙 DevEco CLI 与 DevEco Code 全攻略",
-      "url": "https://ost.51cto.com/posts/47288",
-      "hot": "鸿蒙DevEcoCLI与DevEcoCode全攻略万少：华为HDE、鸿蒙极客个人主页：https:blog.zbztb.cn2025年参与孵化了20+鸿蒙应用、技术文章300+、鸿蒙..."
     },
     {
       "rank": 8,

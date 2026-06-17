@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-17T07:30:29+00:00",
+  "updated_at": "2026-06-17T12:06:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "本地模型终于好用了？一位资深开发者的本地 AI 编程实测报告",
+      "url": "https://www.oschina.net/news/460366",
+      "hot": "Wed, 17 Jun 2026 19:04:51 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "模数开源主理人学院首期毕业路演明日举行",
+      "url": "https://www.oschina.net/news/460365",
+      "hot": "Wed, 17 Jun 2026 19:00:49 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "支付宝回应“阿宝”邀请码交易：从未授权付费售卖",
+      "url": "https://www.oschina.net/news/460347",
+      "hot": "Wed, 17 Jun 2026 18:24:26 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "京东发布智能体自主支付协议 A2P2 协议",
+      "url": "https://www.oschina.net/news/460301",
+      "hot": "Wed, 17 Jun 2026 17:21:34 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "AIGC 创意对决落幕！「未来城市・遇见小亦」IP 创作赛决赛暨颁奖典礼圆满举办",
+      "url": "https://www.oschina.net/news/460300/aigc-for-future-2026-ip-yizhuang",
+      "hot": "Wed, 17 Jun 2026 17:21:31 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "ProxyPin v1.2.9 已经发布，全平台 HTTP 抓包工具",
+      "url": "https://www.oschina.net/news/460294",
+      "hot": "Wed, 17 Jun 2026 17:13:02 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "GenUI SDK v1.2.0 来了！包体更小、流式更稳，Playground 全面升级",
+      "url": "https://my.oschina.net/u/6769809/blog/19705861",
+      "hot": "Wed, 17 Jun 2026 16:45:11 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "ChatGPT 市场份额首次跌破 50%",
+      "url": "https://www.oschina.net/news/460241",
+      "hot": "Wed, 17 Jun 2026 15:51:34 +0800"
+    },
+    {
+      "rank": 9,
       "title": "Cursor 发布 Origin：面向 Agent 打造的代码托管平台、对标传统 Git 产品",
       "url": "https://www.oschina.net/news/460211/cursor-orgin",
       "hot": "Wed, 17 Jun 2026 15:18:24 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "GrapheneOS 宣布完成 Android 17 移植，正式版即将发布",
       "url": "https://www.oschina.net/news/460198",
       "hot": "Wed, 17 Jun 2026 15:00:03 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "Android 17 正式发布，气泡多任务、临时权限和折叠屏游戏模式齐上线",
-      "url": "https://www.oschina.net/news/460184",
-      "hot": "Wed, 17 Jun 2026 14:49:29 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "VirtualBox 7.2.10 发布",
-      "url": "https://www.oschina.net/news/460181/virtualbox-7-2-10-released",
-      "hot": "Wed, 17 Jun 2026 14:47:24 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Dgraph v25.3.5 发布，具有图形后端的原生 GraphQL 数据库",
-      "url": "https://www.oschina.net/news/460172/dgraph-25-3-5-released",
-      "hot": "Wed, 17 Jun 2026 14:31:57 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "昆仑万维发布“天工 3.1”",
-      "url": "https://www.oschina.net/news/460133",
-      "hot": "Wed, 17 Jun 2026 13:51:10 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "TimescaleDB 2.28.0 发布，基于 PostgreSQL 的时序数据库",
-      "url": "https://www.oschina.net/news/460077/timescaledb-2-28-0-released",
-      "hot": "Wed, 17 Jun 2026 11:33:03 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "动效开发不踩坑：几种动效实现方案对比与实战选型",
-      "url": "https://my.oschina.net/vivotech/blog/19701225",
-      "hot": "Wed, 17 Jun 2026 11:12:43 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "VCF 生成器 Lite v6.0.0 已经发布，批量导入手机通讯录",
-      "url": "https://www.oschina.net/news/460061",
-      "hot": "Wed, 17 Jun 2026 11:04:15 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "中国开源 AI 如何用 token 洪流淹没闭源护城河",
-      "url": "https://www.oschina.net/news/460057",
-      "hot": "Wed, 17 Jun 2026 10:59:02 +0800"
     }
   ]
 }
