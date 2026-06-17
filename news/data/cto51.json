@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-17T20:31:04+00:00",
+  "updated_at": "2026-06-17T23:54:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 权限申请全流程实战：从声明到拒绝后再引导",
-      "url": "https://ost.51cto.com/posts/47358",
-      "hot": "做App开发，权限是绑不开的。拍照要相机权限，定位要位置权限，网络请求倒是不用权限（鸿蒙默认就有网络访问能力），但基本上每个稍微复杂..."
+      "title": "我用 Python 写 CLI 工具时，被 argparse 这个默认行为整了两小时",
+      "url": "https://www.51cto.com/article/846737.html",
+      "hot": "现在我的 CLI 工具基本上都用 click 了，不是说 argparse 不好，它其实是标准库，不需要额外安装，但 click 在用户体验上确实更胜一筹。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS RDB 关系型数据库实战：从建表到增删改查一篇打通",
-      "url": "https://ost.51cto.com/posts/47357",
-      "hot": "之前写数据持久化那篇的时候，主要讲的是Preferences用户首选项，适合存一些简单的键值对，比如用户设置、登录状态之类的。但实际项目里，..."
+      "title": "从上电到系统可用：ARM + U-Boot 嵌入式 Linux 启动流程",
+      "url": "https://www.51cto.com/article/846712.html",
+      "hot": "今天就带大家从头到尾，剖析基于 ARM 架构的嵌入式 Linux 系统最为典型的启动过程：BootROM → U-Boot → Kernel → RootFS。"
     },
     {
       "rank": 3,
-      "title": "40万次Claude Code会话实锤：这才是AI时代最值钱的本事！",
-      "url": "https://www.51cto.com/article/846669.html",
-      "hot": "Anthropic用40万次会话Claude Code实锤:能从 AI 身上榨出几倍产能的,不是代码力,是更懂行。"
+      "title": "Vue 3 defineAsyncComponent 的使用方式与选项配置完全解析",
+      "url": "https://www.51cto.com/article/846710.html",
+      "hot": "本文我们来详细看看 defineAsyncComponent 这个函数到底怎么用、有哪些可以配置的选项。"
     },
     {
       "rank": 4,
-      "title": "刚被马斯克收购，Cursor掏出新模型：10万卡加持，和Opus、GPT一样大",
-      "url": "https://www.51cto.com/article/846665.html",
-      "hot": "本周二，Cursor 宣布了一个新的 1.5 万亿 + 参数模型，该模型在超过 10 万块 GPU 上进行了预训练。"
+      "title": "SpringBoot 多模块项目搭建：service/dao/web 分层设计",
+      "url": "https://www.51cto.com/article/846707.html",
+      "hot": "SpringBoot 多模块架构不仅仅是把代码拆成几个文件夹，而是真正意义上的工程化、规范化、分层解耦，也是后端开发者从“会写代码”走向“会做架构”的重要一步。"
     },
     {
       "rank": 5,
-      "title": "ACL 2026 | 蚂蚁EGSS算法破解Test Time Scaling困局",
-      "url": "https://www.51cto.com/article/846667.html",
-      "hot": "Test-Time Scaling（TTS）是通过在推理阶段投入更多计算资源，让Agent多次尝试、探索不同推理路径再选最优的关键范式，是当前LLM在复杂任务上取得SOTA的核心方法。"
+      "title": "想要转型 AI Agent 开发？现在开始学，还不晚",
+      "url": "https://www.51cto.com/article/846700.html",
+      "hot": "AI Agent 开发不是什么神秘技能，它的核心是工程能力 + 对 LLM 特性的理解。有后端开发经验的程序员，4-5 个月内完全可以达到能独立承接项目的水平。 技术窗口期还在。现在开始学，还不晚。"
     },
     {
       "rank": 6,
-      "title": "刚刚，Fable-5之下，智谱开源的GLM-5.2拿下AI编程第一！",
-      "url": "https://www.51cto.com/article/846668.html",
-      "hot": "要知道，此前提到AI界的御三家，那大概率指向的是Claude、OpenAI和谷歌，不过这一次，从实打实的榜单能力来看，谷歌的Gemini实实在在地被GLM淘汰掉了。"
+      "title": "Fable 5榜单第一靠作弊？代码泄露，模型真实身份曝光",
+      "url": "https://www.51cto.com/article/846702.html",
+      "hot": "12万字密档惊天泄露，Anthropic新王牌Fable 5遭扒皮：你以为它是个大模型，其实人家是个能自主进化的Agent！"
     },
     {
       "rank": 7,
-      "title": "李飞飞刚立规矩才13天，国产卡上「真物理」就来了！",
-      "url": "https://www.51cto.com/article/846670.html",
-      "hot": "被算力荒逼出来的硬核奇迹！腾讯米哈游老兵组成的「草根」团队，硬在国产芯片上炼出了超10分钟的绝对物理一致性。画面可以糙，物理绝不能假，这就是通往AGI的真正基石。"
+      "title": "HyperSpec(OpenSpec+Superpowers)的知识检索太慢了，我们打算加两个知识图谱工具",
+      "url": "https://www.51cto.com/article/846699.html",
+      "hot": "HyperSpec是一个AI编程工作流编排工具——它不写代码，只负责把\"需求→设计→实现→归档\"这整个流程串起来。你给它一个需求，它调用OpenSpec生成规格文档，调用Superpowers做TDD实现和代码审查，最后归档变更。"
     },
     {
       "rank": 8,
-      "title": "同一个模型，换套框架成绩差27%：SWE-bench分数到底谁说了算？",
-      "url": "https://www.51cto.com/article/846653.html",
-      "hot": "Agent 的能力由模型和 harness 共同决定，同一模型换一套 harness，在 SWE-bench、Terminal-bench 等评测上的得分可相差十几甚至二十多个百分点，差距堪比模型换代。"
+      "title": "从埋点需求到规则资产：Hermes Agent 重构得物数仓工作流",
+      "url": "https://www.51cto.com/article/846734.html",
+      "hot": "在埋点和指标需求里，最消耗数据承接方的往往是把分散的信息重新拼起来：需求文档里的动作到底要不要采集，历史上有没有类似点位，指标口径有没有被下游使用，新增字段要改哪几层表，发布前又该由谁确认。"
     },
     {
       "rank": 9,
-      "title": "模型越强，人的判断力越值钱：微软CEO破解“AI替代”焦虑",
-      "url": "https://www.51cto.com/article/846652.html",
-      "hot": "纳德拉认为，当下出现了真正的质变：人与数字系统之间，第一次可以建立认知闭环（cognitive closed loop）。"
+      "title": "硅谷抢钱大战: OpenAI 和 Anthropic 如何把 AI 卖给世界500强",
+      "url": "https://www.51cto.com/article/846695.html",
+      "hot": "本文从 OpenAI 和 Anthropic 的公开招聘数据[1]切入，观察两家顶级 AI 公司如何进入大企业市场。数据覆盖 Anthropic 的 390 个在招岗位和 OpenAI 的 703 个在招岗位，招聘能清晰反映公司正在把资源投向哪里。"
     },
     {
       "rank": 10,
-      "title": "马斯克麾下最惨打工人：手滑删掉xAI三周训练数据",
-      "url": "https://www.51cto.com/article/846651.html",
-      "hot": "偷师、借道、换血、误删……折腾到最后，xAI成了给对手供电的人。"
+      "title": "一文讲透 Agent Skill 的底层逻辑与落地应用",
+      "url": "https://www.51cto.com/article/846701.html",
+      "hot": "如果只从算法眼光看，Agent Skill 确实谈不上颠覆性的技术创新。它更像是对现有能力的一次朴素重组：把散落在各处的 Prompt、脚本和知识，收拢成清晰的能力边界，再用渐进式披露的方式让这些能力在对话过程中按需显现。"
     }
   ]
 }
