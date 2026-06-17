@@ -1,8 +1,9 @@
 {
   "source": "douban",
   "title": "豆瓣",
-  "updated_at": "2026-06-17T15:58:28+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-06-17T18:13:46+00:00",
+  "fetch_ok": false,
+  "error": "HTTP Error 403: Forbidden",
   "items": [
     {
       "rank": 1,
