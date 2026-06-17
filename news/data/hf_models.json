@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-17T07:30:41+00:00",
+  "updated_at": "2026-06-17T15:59:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "hot": "1251"
+      "hot": "1376"
     },
     {
       "rank": 2,
       "title": "google/diffusiongemma-26B-A4B-it",
       "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "hot": "957"
+      "hot": "969"
     },
     {
       "rank": 3,
       "title": "MiniMaxAI/MiniMax-M3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "1035"
+      "hot": "1054"
     },
     {
       "rank": 4,
-      "title": "moonshotai/Kimi-K2.7-Code",
-      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
-      "hot": "815"
+      "title": "zai-org/GLM-5.2",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "hot": "893"
     },
     {
       "rank": 5,
-      "title": "zai-org/GLM-5.2",
-      "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "673"
+      "title": "moonshotai/Kimi-K2.7-Code",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "hot": "836"
     },
     {
       "rank": 6,
       "title": "nvidia/LocateAnything-3B",
       "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "2111"
+      "hot": "2128"
     },
     {
       "rank": 7,
       "title": "prefeitura-rio/Rio-3.5-Open-397B",
       "url": "https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B",
-      "hot": "318"
+      "hot": "317"
     },
     {
       "rank": 8,
       "title": "unsloth/diffusiongemma-26B-A4B-it-GGUF",
       "url": "https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF",
-      "hot": "291"
+      "hot": "292"
     },
     {
       "rank": 9,
-      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "1901"
+      "title": "WeiboAI/VibeThinker-3B",
+      "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
+      "hot": "276"
     },
     {
       "rank": 10,
-      "title": "Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
-      "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
-      "hot": "224"
+      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "hot": "1915"
     }
   ]
 }
