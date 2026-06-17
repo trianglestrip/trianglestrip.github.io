@@ -1,19 +1,19 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-06-17T18:12:48+00:00",
+  "updated_at": "2026-06-17T20:30:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "葡萄牙vs民主刚果",
-      "url": "https://s.weibo.com/weibo?q=%E8%91%A1%E8%90%84%E7%89%99vs%E6%B0%91%E4%B8%BB%E5%88%9A%E6%9E%9C",
+      "title": "C罗状态",
+      "url": "https://s.weibo.com/weibo?q=C%E7%BD%97%E7%8A%B6%E6%80%81",
       "hot": ""
     },
     {
       "rank": 2,
-      "title": "看C罗",
-      "url": "https://s.weibo.com/weibo?q=%E7%9C%8BC%E7%BD%97",
+      "title": "英格兰vs克罗地亚",
+      "url": "https://s.weibo.com/weibo?q=%E8%8B%B1%E6%A0%BC%E5%85%B0vs%E5%85%8B%E7%BD%97%E5%9C%B0%E4%BA%9A",
       "hot": ""
     },
     {
@@ -24,44 +24,44 @@
     },
     {
       "rank": 4,
-      "title": "葡萄牙进球",
-      "url": "https://s.weibo.com/weibo?q=%E8%91%A1%E8%90%84%E7%89%99%E8%BF%9B%E7%90%83",
+      "title": "天猫618正日子巅峰冲刺",
+      "url": "https://s.weibo.com/weibo?q=%E5%A4%A9%E7%8C%AB618%E6%AD%A3%E6%97%A5%E5%AD%90%E5%B7%85%E5%B3%B0%E5%86%B2%E5%88%BA",
       "hot": ""
     },
     {
       "rank": 5,
-      "title": "民主刚果扳平",
-      "url": "https://s.weibo.com/weibo?q=%E6%B0%91%E4%B8%BB%E5%88%9A%E6%9E%9C%E6%89%B3%E5%B9%B3",
+      "title": "葡萄牙vs民主刚果",
+      "url": "https://s.weibo.com/weibo?q=%E8%91%A1%E8%90%84%E7%89%99vs%E6%B0%91%E4%B8%BB%E5%88%9A%E6%9E%9C",
       "hot": ""
     },
     {
       "rank": 6,
-      "title": "美联储",
-      "url": "https://s.weibo.com/weibo?q=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "title": "C罗全场0射正",
+      "url": "https://s.weibo.com/weibo?q=C%E7%BD%97%E5%85%A8%E5%9C%BA0%E5%B0%84%E6%AD%A3",
       "hot": ""
     },
     {
       "rank": 7,
-      "title": "京东国民好车抽至高2618元购车券",
-      "url": "https://s.weibo.com/weibo?q=%E4%BA%AC%E4%B8%9C%E5%9B%BD%E6%B0%91%E5%A5%BD%E8%BD%A6%E6%8A%BD%E8%87%B3%E9%AB%982618%E5%85%83%E8%B4%AD%E8%BD%A6%E5%88%B8",
-      "hot": ""
-    },
-    {
-      "rank": 8,
       "title": "C罗 刚果保镖",
       "url": "https://s.weibo.com/weibo?q=C%E7%BD%97%20%E5%88%9A%E6%9E%9C%E4%BF%9D%E9%95%96",
       "hot": ""
     },
     {
+      "rank": 8,
+      "title": "葡萄牙1比1民主刚果",
+      "url": "https://s.weibo.com/weibo?q=%E8%91%A1%E8%90%84%E7%89%991%E6%AF%941%E6%B0%91%E4%B8%BB%E5%88%9A%E6%9E%9C",
+      "hot": ""
+    },
+    {
       "rank": 9,
-      "title": "葡萄牙半场1比1民主刚果",
-      "url": "https://s.weibo.com/weibo?q=%E8%91%A1%E8%90%84%E7%89%99%E5%8D%8A%E5%9C%BA1%E6%AF%941%E6%B0%91%E4%B8%BB%E5%88%9A%E6%9E%9C",
+      "title": "葡萄牙 西班牙",
+      "url": "https://s.weibo.com/weibo?q=%E8%91%A1%E8%90%84%E7%89%99%20%E8%A5%BF%E7%8F%AD%E7%89%99",
       "hot": ""
     },
     {
       "rank": 10,
-      "title": "马宁世界杯工资",
-      "url": "https://s.weibo.com/weibo?q=%E9%A9%AC%E5%AE%81%E4%B8%96%E7%95%8C%E6%9D%AF%E5%B7%A5%E8%B5%84",
+      "title": "美联储",
+      "url": "https://s.weibo.com/weibo?q=%E7%BE%8E%E8%81%94%E5%82%A8",
       "hot": ""
     }
   ]

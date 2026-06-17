@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-17T18:14:16+00:00",
+  "updated_at": "2026-06-17T20:31:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Epic Games announces Lore version control system",
+      "title": "Lore – Open source version control system designed for scalability",
       "url": "https://lore.org/",
-      "hot": "547"
+      "hot": "749"
     },
     {
       "rank": 2,
-      "title": "Only 16 Percent of Americans Think AI Will Have a Positive Impact on Society",
-      "url": "https://techcrunch.com/2026/06/17/only-16-percent-of-americans-think-ai-will-have-a-positive-impact-on-society-a-new-study-shows/",
-      "hot": "129"
+      "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
+      "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+      "hot": "192"
     },
     {
       "rank": 3,
-      "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
-      "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
-      "hot": "91"
+      "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+      "url": "https://github.com/Adam-CAD/CADAM",
+      "hot": "100"
     },
     {
       "rank": 4,
-      "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
-      "url": "https://github.com/Adam-CAD/CADAM",
-      "hot": "59"
+      "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
+      "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+      "hot": "677"
     },
     {
       "rank": 5,
-      "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
-      "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
-      "hot": "604"
+      "title": "How we run Firecracker VMs inside EC2 and start browsers in less than 1s",
+      "url": "https://browser-use.com/posts/firecracker-browser-infra",
+      "hot": "109"
     },
     {
       "rank": 6,
-      "title": "Sixty percent of US consumers say 'AI' in brand messaging is a turnoff",
-      "url": "https://wpvip.com/future-of-the-web-2026/",
-      "hot": "812"
+      "title": "Show HN: An 8-bit live gamecast for baseball",
+      "url": "https://ribbie.tv/watch",
+      "hot": "140"
     },
     {
       "rank": 7,
-      "title": "RFC 10008: The new HTTP Query Method",
-      "url": "https://www.rfc-editor.org/info/rfc10008/",
-      "hot": "229"
+      "title": "Krugman: Musk, a Human Ponzi Scheme",
+      "url": "https://paulkrugman.substack.com/p/elon-musk-human-ponzi-scheme",
+      "hot": "44"
     },
     {
       "rank": 8,
-      "title": "French physicist and media star loses doctorate after plagiarism investigation",
-      "url": "https://www.science.org/content/article/french-physicist-and-media-star-loses-doctorate-after-plagiarism-investigation",
-      "hot": "96"
+      "title": "RFC 10008: The new HTTP Query Method",
+      "url": "https://www.rfc-editor.org/info/rfc10008/",
+      "hot": "273"
     },
     {
       "rank": 9,
-      "title": "Show HN: An 8-bit live gamecast for baseball",
-      "url": "https://ribbie.tv/watch",
-      "hot": "84"
+      "title": "U.S. science is in chaos",
+      "url": "https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/",
+      "hot": "433"
     },
     {
       "rank": 10,
-      "title": "How we run Firecracker VMs inside EC2 and start browsers in less than 1s",
-      "url": "https://browser-use.com/posts/firecracker-browser-infra",
-      "hot": "33"
+      "title": "Volkswagen started blocking GrapheneOS users",
+      "url": "https://discuss.grapheneos.org/d/35949-volkswagen-app?page=3",
+      "hot": "348"
     }
   ]
 }

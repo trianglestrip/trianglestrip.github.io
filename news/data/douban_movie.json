@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-17T18:13:52+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-06-17T20:30:41+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -61,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "诺曼底72小时",
-      "url": "https://movie.douban.com/subject/36916000/",
-      "hot": "评分 8.2"
+      "title": "低智商犯罪",
+      "url": "https://movie.douban.com/subject/35517044/",
+      "hot": "评分 8.1"
     }
   ]
 }
