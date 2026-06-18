@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-18T07:04:32+00:00",
+  "updated_at": "2026-06-18T11:16:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS Telephony Kit 实战：拨号、短信与通话状态，普通应用能做什么",
+      "url": "https://ost.51cto.com/posts/47617",
+      "hot": "做过外卖App、客服App或者CRM的人应该都有过这种需求&mdash;&mdash;用户点了个电话号码，要直接跳拨号界面；或者点&quot;发送短信&quot;要自动填好内容。听着挺..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 富文本显示实战：StyledString 从选型到四种场景实现",
+      "url": "https://ost.51cto.com/posts/47612",
+      "hot": "做过社交App或者社区App的人应该都有过这种经历：产品拿着一张UI图跑过来，说&quot;这里要有高亮、话题链接、点击能跳转、中间还要插个emoji表情..."
+    },
+    {
+      "rank": 3,
       "title": "从“零日漏洞”到国家级封禁：Fable 5与Mythos 5下架背后的AI安全权力博弈",
       "url": "https://www.51cto.com/article/846823.html",
       "hot": "这两款模型刚在几天前正式亮相，却因所谓的\"国家安全担忧\"而被迫下线，引发了业界广泛的质疑与讨论。这场事件不仅是技术与政策的碰撞，更是关于\"安全\"定义、AI伦理以及全球科技竞争格局的深刻思考。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "RAG新SOTA，还在五亿条数据上跑进秒级，只有它了",
       "url": "https://www.51cto.com/article/846824.html",
       "hot": "AI 圈扒完之后发现，最有意思的地方不是模型，而是 Claude Code 这个 Coding Agent 外面那层运行系统。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Dario访谈首曝：Mythos被称为「超级武器」",
       "url": "https://www.51cto.com/article/846825.html",
       "hot": "在这场69分钟完整访谈里，Dario Amodei 说人类真正面对的不是某个突然降临的奇点，而是一条已经开始垂直起飞的指数曲线。"
     },
     {
-      "rank": 4,
-      "title": "HarmonyOS 图片组件进阶实战：Image 组件你可能不知道的10个技巧",
-      "url": "https://ost.51cto.com/posts/47563",
-      "hot": "Image组件是ArkUI里用得最多的组件之一。但大多数人只会最基本的用法&mdash;&mdash;传个URL、设个宽高。其实Image组件还有很多进阶能力：裁剪模式、占..."
-    },
-    {
-      "rank": 5,
-      "title": "HarmonyOS 数据加密实战：AES 加密存储与安全通信",
-      "url": "https://ost.51cto.com/posts/47544",
-      "hot": "数据安全越来越重要。用户密码、Token、身份证号、银行卡号这些敏感信息，明文存到数据库或文件里就是裸奔。鸿蒙提供了cryptoFramework（加..."
-    },
-    {
       "rank": 6,
+      "title": "Code Arena全球可用模型第一！智谱GLM-5.2上线并开源",
+      "url": "https://www.51cto.com/article/846826.html",
+      "hot": "全球百万用户参与盲测的前端开发评估系统Code Arena上，GLM-5.2取得全球可用模型第一（Claude Fable 5未解禁）。"
+    },
+    {
+      "rank": 7,
       "title": "鹅厂面试官：“来讲讲什么是 CoT？为啥效果好？它有什么缺点或局限性？”我：“CoT 就是让模型一步步思考，效果会更好”",
       "url": "https://www.51cto.com/article/846811.html",
       "hot": "CoT 真不是一句「让模型一步一步想」能糊弄过去的。它为什么有效、什么时候反而起反作用、怎么和 Few-shot 搭配，得连着讲清楚。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "AI 编码进阶：从手动 Prompt 到自驱系统，14 步构建你的第一个 Loop 系统",
       "url": "https://www.51cto.com/article/846810.html",
       "hot": "这篇文章把当下社区最流行的 14 步 Loop Engineering 路线图 展示出来，给大家呈现的就是一套你可以立刻上手的日常工作流：任务卡 → 任务清单 → 验证记录 → 进度快照 → 放行检查。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "人工智能和智能体时代的本体论和知识图谱",
       "url": "https://www.51cto.com/article/846809.html",
       "hot": "本体和知识图谱是截然不同但又深度互补的两种工具。本体提供语义骨架：它是一个正式的、有意义的领域模型，不仅编码结构，还编码概念关系、层级结构和定义，反映了组织对其业务的特定理解。知识图谱在此骨架之上构建真实数据，用实际实体、属性值及其之间的链接填充语义框架，从而创建组织知识的丰富关联且可查询的表示。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "VS Code 官宣支持 Vite+？尤雨溪的下一盘大棋曝光了",
       "url": "https://www.51cto.com/article/846785.html",
       "hot": "很多人第一次看到这个 PR，可能会觉得：新增一个 vp 配置项，没什么大不了。但对于前端生态来说，它释放出的信号非常明确：下一代 JavaScript 工具链，正在从\"多个工具拼装\"走向\"统一平台\"。"
-    },
-    {
-      "rank": 10,
-      "title": "突发！Transformer之父告别谷歌，转投OpenAI",
-      "url": "https://www.51cto.com/article/846806.html",
-      "hot": "奥特曼赢麻了！Transformer八子之一、Gemini技术联合负责人Noam Shazeer正式加盟OpenAI，任新的「架构负责人」，去造下一个超级智能。"
     }
   ]
 }

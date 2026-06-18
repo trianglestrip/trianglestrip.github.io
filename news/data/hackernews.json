@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-18T07:04:33+00:00",
+  "updated_at": "2026-06-18T11:16:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Midjourney Medical",
       "url": "https://www.midjourney.com/medical/blogpost",
-      "hot": "526"
+      "hot": "819"
     },
     {
       "rank": 2,
-      "title": "Local Qwen isn't a worse Opus, it's a different tool",
-      "url": "https://blog.alexellis.io/local-ai-is-not-opus/",
-      "hot": "130"
+      "title": "I need your clothes, your boots, and your motorcycle",
+      "url": "https://rbelmont.mameworld.info/?p=1725",
+      "hot": "46"
     },
     {
       "rank": 3,
       "title": "DeepSeek Introduces Vision",
       "url": "https://chat.deepseek.com/",
-      "hot": "25"
+      "hot": "176"
     },
     {
       "rank": 4,
-      "title": "The Australian Government to Require SMS/MMS Sender ID Registraion",
-      "url": "https://www.acma.gov.au/sms-sender-id-register",
-      "hot": "17"
+      "title": "Local Qwen isn't a worse Opus, it's a different tool",
+      "url": "https://blog.alexellis.io/local-ai-is-not-opus/",
+      "hot": "242"
     },
     {
       "rank": 5,
       "title": "Lore – Open source version control system designed for scalability",
       "url": "https://lore.org/",
-      "hot": "1092"
+      "hot": "1156"
     },
     {
       "rank": 6,
-      "title": "How to Become a Person After Smartphones Have Rotted Your Brain",
-      "url": "https://www.thenewatlantis.com/publications/how-to-become-a-person-after-smartphones-have-rotted-your-brain",
-      "hot": "14"
+      "title": "Hospitals and universities repurposing drugs at 90% lower cost",
+      "url": "https://www.kcl.ac.uk/news/hospitals-and-universities-repurposing-drugs-at-90-lower-cost",
+      "hot": "11"
     },
     {
       "rank": 7,
-      "title": "Apple boss Tim Cook says prices to rise due to memory chip costs",
-      "url": "https://www.bbc.com/news/articles/c3wyxvqdx1zo",
-      "hot": "54"
+      "title": "I hate compilers",
+      "url": "https://xeiaso.net/notes/2026/anubis-wasm-vendor-binary/",
+      "hot": "83"
     },
     {
       "rank": 8,
-      "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
-      "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
-      "hot": "433"
+      "title": "The Forge We Deserve",
+      "url": "https://btao.org/posts/2026-05-09-the-forge-we-deserve/",
+      "hot": "27"
     },
     {
       "rank": 9,
-      "title": "Taxonomy of the Occlupanida (parasitoids on bread bag tags)",
-      "url": "https://www.horg.com/horg/?page_id=921",
-      "hot": "129"
+      "title": "AMD silently removes memory encryption from consumer Ryzen CPUs",
+      "url": "https://www.tomshardware.com/pc-components/cpus/amd-silently-removes-memory-encryption-from-consumer-ryzen-cpus-leaving-users-unaware-that-they-may-be-vulnerable-security-feature-vanishes-after-newer-agesa-firmware-amd-engineers-go-radio-silent-when-pressed-about-the-change",
+      "hot": "140"
     },
     {
       "rank": 10,
-      "title": "Nim Conf 2026 (Online, Sat June 20)",
-      "url": "https://conf.nim-lang.org/",
-      "hot": "26"
+      "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
+      "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+      "hot": "465"
     }
   ]
 }

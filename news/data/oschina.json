@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-18T07:04:36+00:00",
+  "updated_at": "2026-06-18T11:16:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "美团海报生成 AIGC 技术创新与实践",
+      "url": "https://my.oschina.net/meituantech/blog/19707227",
+      "hot": "Thu, 18 Jun 2026 18:44:34 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "IvorySQL 5.4 发布：升级 PostgreSQL 18.4，强化 AI 能力与云原生生态",
+      "url": "https://www.oschina.net/news/460848/ivorysql-5-4-released",
+      "hot": "Thu, 18 Jun 2026 17:25:02 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "MoonBit 社区开发者开发了一个依赖健康诊断工具 MoonBit Depsight，效果堪比 npm audit",
+      "url": "https://www.oschina.net/news/460845",
+      "hot": "Thu, 18 Jun 2026 17:21:13 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "GLM-5.2 登顶开源权重模型榜首：编程能力超越 GPT-5.5，MIT 许可免费可用",
+      "url": "https://www.oschina.net/news/460824",
+      "hot": "Thu, 18 Jun 2026 16:48:01 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Firefox 151 已切换至 Rust 版 zlib-rs",
+      "url": "https://www.oschina.net/news/460816/zlib-rs-in-firefox",
+      "hot": "Thu, 18 Jun 2026 16:36:56 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "我国正式发行首套 AI 主题邮票",
+      "url": "https://www.oschina.net/news/460761",
+      "hot": "Thu, 18 Jun 2026 15:13:22 +0800"
+    },
+    {
+      "rank": 7,
       "title": "Mapbox GL JS 3.25.0 发布，WEB GIS 开发框架",
       "url": "https://www.oschina.net/news/460747/mapbox-gl-js-3-25-0-released",
       "hot": "Thu, 18 Jun 2026 14:55:32 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "CodeForge 26.2.0 发布:把一整套专业级 Git 装进编辑器,从分块暂存到交互式变基全部图形化",
       "url": "https://www.oschina.net/news/460746/codeforge-26-2-0-released",
       "hot": "Thu, 18 Jun 2026 14:53:33 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "Linux 最终停止对 AppleTalk 协议的支持",
       "url": "https://www.oschina.net/news/460727",
       "hot": "Thu, 18 Jun 2026 14:18:29 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "摩根大通：到 2030 年 AI 基础设施建设总花费将达 5.5 万亿美元",
       "url": "https://www.oschina.net/news/460719",
       "hot": "Thu, 18 Jun 2026 14:03:27 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Mongoose 9.7.1 发布，MongoDB 异步对象模型工具",
-      "url": "https://www.oschina.net/news/460708/mongoose-9-7-1-released",
-      "hot": "Thu, 18 Jun 2026 13:46:20 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Epic 做了个游戏版 Git，可能是继 Linus 之后最重要的开源 VCS",
-      "url": "https://my.oschina.net/u/4487475/blog/19707172",
-      "hot": "Thu, 18 Jun 2026 12:20:04 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "从埋点需求到规则资产：Hermes Agent 重构得物数仓工作流",
-      "url": "https://my.oschina.net/u/5783135/blog/19707115",
-      "hot": "Thu, 18 Jun 2026 11:59:14 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "通义实验室开源首个统一科学大模型 LOGOS",
-      "url": "https://www.oschina.net/news/460648",
-      "hot": "Thu, 18 Jun 2026 11:39:18 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Qt Creator 20 发布",
-      "url": "https://www.oschina.net/news/460644/qt-creator-20-released",
-      "hot": "Thu, 18 Jun 2026 11:28:28 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Electron 42.4.1 发布",
-      "url": "https://www.oschina.net/news/460614/electron-42-4-1-released",
-      "hot": "Thu, 18 Jun 2026 10:43:17 +0800"
     }
   ]
 }
