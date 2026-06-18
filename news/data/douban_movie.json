@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-18T14:24:43+00:00",
+  "updated_at": "2026-06-18T17:38:37+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "铁拳教育",
-      "url": "https://movie.douban.com/subject/37071123/",
-      "hot": "评分 8.8"
-    },
-    {
-      "rank": 3,
       "title": "莫离",
       "url": "https://movie.douban.com/subject/37234503/",
       "hot": ""
+    },
+    {
+      "rank": 3,
+      "title": "铁拳教育",
+      "url": "https://movie.douban.com/subject/37071123/",
+      "hot": "评分 8.8"
     },
     {
       "rank": 4,
@@ -48,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "家业",
-      "url": "https://movie.douban.com/subject/36883114/",
-      "hot": "评分 7.3"
-    },
-    {
-      "rank": 9,
       "title": "校园之外 第一季",
       "url": "https://movie.douban.com/subject/37061179/",
       "hot": "评分 8.4"
+    },
+    {
+      "rank": 9,
+      "title": "南部档案",
+      "url": "https://movie.douban.com/subject/35465012/",
+      "hot": ""
     },
     {
       "rank": 10,
