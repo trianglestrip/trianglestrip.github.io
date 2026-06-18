@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-17T23:54:34+00:00",
+  "updated_at": "2026-06-18T02:08:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "我用 Python 写 CLI 工具时，被 argparse 这个默认行为整了两小时",
-      "url": "https://www.51cto.com/article/846737.html",
-      "hot": "现在我的 CLI 工具基本上都用 click 了，不是说 argparse 不好，它其实是标准库，不需要额外安装，但 click 在用户体验上确实更胜一筹。"
+      "title": "HarmonyOS RichEditor 富文本编辑器实战：从零搭建笔记应用",
+      "url": "https://ost.51cto.com/posts/47373",
+      "hot": "做过笔记App或者社交App的人都知道，纯文本输入框不够用。用户想加粗、想改颜色、想插图片、想搞个列表。这就需要一个富文本编辑器。鸿蒙从..."
     },
     {
       "rank": 2,
-      "title": "从上电到系统可用：ARM + U-Boot 嵌入式 Linux 启动流程",
-      "url": "https://www.51cto.com/article/846712.html",
-      "hot": "今天就带大家从头到尾，剖析基于 ARM 架构的嵌入式 Linux 系统最为典型的启动过程：BootROM → U-Boot → Kernel → RootFS。"
+      "title": "攻击者滥用云日志服务逃避检测并削弱防御者可见性",
+      "url": "https://www.51cto.com/article/846793.html",
+      "hot": "研究人员将这些攻击分为两大主要战术：防御规避和持续可见性。在防御规避场景中，攻击者专注于禁用或篡改日志机制以避免被发现。"
     },
     {
       "rank": 3,
-      "title": "Vue 3 defineAsyncComponent 的使用方式与选项配置完全解析",
-      "url": "https://www.51cto.com/article/846710.html",
-      "hot": "本文我们来详细看看 defineAsyncComponent 这个函数到底怎么用、有哪些可以配置的选项。"
+      "title": "哈？Q1狂烧250亿！OpenAI财报泄露全网炸锅",
+      "url": "https://www.51cto.com/article/846792.html",
+      "hot": "这才过去一个季度，OpenAI就狂烧了37亿美元（约合人民币250亿元）。啥概念呢？Q1一共就赚了57亿美元，一半以上都给烧了出去。"
     },
     {
       "rank": 4,
-      "title": "SpringBoot 多模块项目搭建：service/dao/web 分层设计",
-      "url": "https://www.51cto.com/article/846707.html",
-      "hot": "SpringBoot 多模块架构不仅仅是把代码拆成几个文件夹，而是真正意义上的工程化、规范化、分层解耦，也是后端开发者从“会写代码”走向“会做架构”的重要一步。"
+      "title": "京东二面惨案：线程池还背 N+1/2N ？面试官：敢上线就等着背锅！",
+      "url": "https://www.51cto.com/article/846791.html",
+      "hot": "今天带你扒透源码，教你京东P7级生产级线程池配置，面试直接封神，线上绝不雪崩。"
     },
     {
       "rank": 5,
-      "title": "想要转型 AI Agent 开发？现在开始学，还不晚",
-      "url": "https://www.51cto.com/article/846700.html",
-      "hot": "AI Agent 开发不是什么神秘技能，它的核心是工程能力 + 对 LLM 特性的理解。有后端开发经验的程序员，4-5 个月内完全可以达到能独立承接项目的水平。 技术窗口期还在。现在开始学，还不晚。"
+      "title": "AI编程实战：用gstack + OpenSpec + Superpowers + Ralph 做到真正的AI 驱动开发",
+      "url": "https://www.51cto.com/article/846788.html",
+      "hot": "gstack 帮你想清楚，OpenSpec 帮你说清楚，Superpowers 帮你做规范，Ralph 帮你自动跑完。四个工具各守一道关口，缺了哪个都会漏。"
     },
     {
       "rank": 6,
-      "title": "Fable 5榜单第一靠作弊？代码泄露，模型真实身份曝光",
-      "url": "https://www.51cto.com/article/846702.html",
-      "hot": "12万字密档惊天泄露，Anthropic新王牌Fable 5遭扒皮：你以为它是个大模型，其实人家是个能自主进化的Agent！"
+      "title": "Rancher 太重了？领导叫用这款轻量级 Kubernetes 多集群管理神器",
+      "url": "https://www.51cto.com/article/846787.html",
+      "hot": "如果你已经被 kubectl​ 和 kubeconfig​ 折磨得头大，不妨试试 Kite​。说不定它会成为你的下一款 Kubernetes 管理神器。​"
     },
     {
       "rank": 7,
-      "title": "HyperSpec(OpenSpec+Superpowers)的知识检索太慢了，我们打算加两个知识图谱工具",
-      "url": "https://www.51cto.com/article/846699.html",
-      "hot": "HyperSpec是一个AI编程工作流编排工具——它不写代码，只负责把\"需求→设计→实现→归档\"这整个流程串起来。你给它一个需求，它调用OpenSpec生成规格文档，调用Superpowers做TDD实现和代码审查，最后归档变更。"
+      "title": "从内核视角，看 Linux 文件读写过程",
+      "url": "https://www.51cto.com/article/846713.html",
+      "hot": "今天我们从内核文件系统的角度，拆解文件读写过程，搞懂“我们写的内容，到底是怎么存到磁盘里的”。"
     },
     {
       "rank": 8,
-      "title": "从埋点需求到规则资产：Hermes Agent 重构得物数仓工作流",
-      "url": "https://www.51cto.com/article/846734.html",
-      "hot": "在埋点和指标需求里，最消耗数据承接方的往往是把分散的信息重新拼起来：需求文档里的动作到底要不要采集，历史上有没有类似点位，指标口径有没有被下游使用，新增字段要改哪几层表，发布前又该由谁确认。"
+      "title": "Vercel 放大招：前端 Agent 框架 Eve 来了！",
+      "url": "https://www.51cto.com/article/846767.html",
+      "hot": "这次发布的重点不只是一个新框架，而是一个信号：Agent 开发开始进入框架化阶段了。"
     },
     {
       "rank": 9,
-      "title": "硅谷抢钱大战: OpenAI 和 Anthropic 如何把 AI 卖给世界500强",
-      "url": "https://www.51cto.com/article/846695.html",
-      "hot": "本文从 OpenAI 和 Anthropic 的公开招聘数据[1]切入，观察两家顶级 AI 公司如何进入大企业市场。数据覆盖 Anthropic 的 390 个在招岗位和 OpenAI 的 703 个在招岗位，招聘能清晰反映公司正在把资源投向哪里。"
+      "title": "小红书数据平台部 ICDE 2026 新成果：RedParrot 以语义缓存加速企业级自然语言数据分析",
+      "url": "https://www.51cto.com/article/846766.html",
+      "hot": "小红书数据平台部联合浙江大学在 ICDE 2026 发表论文《RedParrot: Accelerating NL-to-DSL for Business Analytics via Query Semantic Caching》，提出了一种面向企业级商业分析场景的自然语言到 DSL（NL-to-DSL）加速框架。"
     },
     {
       "rank": 10,
-      "title": "一文讲透 Agent Skill 的底层逻辑与落地应用",
-      "url": "https://www.51cto.com/article/846701.html",
-      "hot": "如果只从算法眼光看，Agent Skill 确实谈不上颠覆性的技术创新。它更像是对现有能力的一次朴素重组：把散落在各处的 Prompt、脚本和知识，收拢成清晰的能力边界，再用渐进式披露的方式让这些能力在对话过程中按需显现。"
+      "title": "最值得关注的新一代 HTML 和 CSS API",
+      "url": "https://www.51cto.com/article/846761.html",
+      "hot": "从现在开始，真正理解这些能力的开发者，会写出更轻、更快、更 accessible（可访问）的 UI（用户界面）。下面就是你需要知道的部分。"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-17T23:54:38+00:00",
+  "updated_at": "2026-06-18T02:08:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Visual Studio Code 1.125 发布",
+      "url": "https://www.oschina.net/news/460595/vs-code-1-125-released",
+      "hot": "Thu, 18 Jun 2026 10:06:38 +0800"
+    },
+    {
+      "rank": 2,
       "title": "本地模型终于好用了？一位资深开发者的本地 AI 编程实测报告",
       "url": "https://www.oschina.net/news/460366",
       "hot": "Wed, 17 Jun 2026 19:04:51 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "模数开源主理人学院首期毕业路演明日举行",
       "url": "https://www.oschina.net/news/460365",
       "hot": "Wed, 17 Jun 2026 19:00:49 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "支付宝回应“阿宝”邀请码交易：从未授权付费售卖",
       "url": "https://www.oschina.net/news/460347",
       "hot": "Wed, 17 Jun 2026 18:24:26 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "京东发布智能体自主支付协议 A2P2 协议",
       "url": "https://www.oschina.net/news/460301",
       "hot": "Wed, 17 Jun 2026 17:21:34 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "AIGC 创意对决落幕！「未来城市・遇见小亦」IP 创作赛决赛暨颁奖典礼圆满举办",
       "url": "https://www.oschina.net/news/460300/aigc-for-future-2026-ip-yizhuang",
       "hot": "Wed, 17 Jun 2026 17:21:31 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "ProxyPin v1.2.9 已经发布，全平台 HTTP 抓包工具",
       "url": "https://www.oschina.net/news/460294",
       "hot": "Wed, 17 Jun 2026 17:13:02 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "GenUI SDK v1.2.0 来了！包体更小、流式更稳，Playground 全面升级",
       "url": "https://my.oschina.net/u/6769809/blog/19705861",
       "hot": "Wed, 17 Jun 2026 16:45:11 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "ChatGPT 市场份额首次跌破 50%",
       "url": "https://www.oschina.net/news/460241",
       "hot": "Wed, 17 Jun 2026 15:51:34 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Cursor 发布 Origin：面向 Agent 打造的代码托管平台、对标传统 Git 产品",
       "url": "https://www.oschina.net/news/460211/cursor-orgin",
       "hot": "Wed, 17 Jun 2026 15:18:24 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "GrapheneOS 宣布完成 Android 17 移植，正式版即将发布",
-      "url": "https://www.oschina.net/news/460198",
-      "hot": "Wed, 17 Jun 2026 15:00:03 +0800"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-17T23:54:35+00:00",
+  "updated_at": "2026-06-18T02:08:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Lore – Open source version control system designed for scalability",
       "url": "https://lore.org/",
-      "hot": "911"
+      "hot": "983"
     },
     {
       "rank": 2,
-      "title": "Storied Colors – a catalogue of named colors",
-      "url": "https://storiedcolors.com/",
-      "hot": "56"
+      "title": "Taxonomy of the Occlupanida (parasitoids on bread bag tags)",
+      "url": "https://www.horg.com/horg/?page_id=921",
+      "hot": "60"
     },
     {
       "rank": 3,
       "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
       "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
-      "hot": "298"
+      "hot": "357"
     },
     {
       "rank": 4,
-      "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
-      "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
-      "hot": "182"
+      "title": "Storied Colors – a catalogue of named colors",
+      "url": "https://storiedcolors.com/",
+      "hot": "95"
     },
     {
       "rank": 5,
-      "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
-      "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
-      "hot": "756"
+      "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
+      "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
+      "hot": "309"
     },
     {
       "rank": 6,
-      "title": "How we run Firecracker VMs inside EC2 and start browsers in less than 1s",
-      "url": "https://browser-use.com/posts/firecracker-browser-infra",
-      "hot": "178"
+      "title": "U.S. science is in chaos",
+      "url": "https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/",
+      "hot": "677"
     },
     {
       "rank": 7,
-      "title": "Loreline – Tools for writing interactive fiction",
-      "url": "https://loreline.app/en/",
-      "hot": "45"
+      "title": "How we run Firecracker VMs inside EC2 and start browsers in less than 1s",
+      "url": "https://browser-use.com/posts/firecracker-browser-infra",
+      "hot": "205"
     },
     {
       "rank": 8,
-      "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
-      "url": "https://github.com/Adam-CAD/CADAM",
-      "hot": "141"
+      "title": "Clojure Hosted on Go",
+      "url": "https://github.com/glojurelang/glojure",
+      "hot": "24"
     },
     {
       "rank": 9,
-      "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
-      "url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/",
-      "hot": "141"
+      "title": "Loreline – Tools for writing interactive fiction",
+      "url": "https://loreline.app/en/",
+      "hot": "67"
     },
     {
       "rank": 10,
-      "title": "U.S. science is in chaos",
-      "url": "https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/",
-      "hot": "608"
+      "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+      "url": "https://github.com/Adam-CAD/CADAM",
+      "hot": "156"
     }
   ]
 }
