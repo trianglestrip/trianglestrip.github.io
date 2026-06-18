@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-18T02:08:16+00:00",
+  "updated_at": "2026-06-18T07:04:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Terraform MCP Server 发布，助力 AI 助手对接 Terraform 基础设施",
+      "url": "https://www.infoq.cn/article/ftrYiDYaJmOeZcexSUMc?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 18 Jun 2026 14:18:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "TDSQL 分布式计算引擎版本演进介绍 | 腾讯云数据库 DBTalk",
+      "url": "https://www.infoq.cn/video/bXpetQKhD4AcfU8dRQlP?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 18 Jun 2026 14:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Cursor 1.5T新模型放弃Kimi基座！600亿美元股票换Cursor，马斯克第一刀砍向微软GitHub",
+      "url": "https://www.infoq.cn/article/pl4x24FzEJDfhBRgiWAc?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 18 Jun 2026 12:02:51 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Chrome 推出 WebMCP 标准提案（Origin Trial）：为智能体提供原生 Web 操作能力",
+      "url": "https://www.infoq.cn/article/wCUdx4sZt94siodQI7u0?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 18 Jun 2026 11:35:00 GMT"
+    },
+    {
+      "rank": 5,
       "title": "Agentic AI 如何破解金融反欺诈的深层困局｜AICon上海",
       "url": "https://www.infoq.cn/article/by1X8kCw2mUUUGpajgJI?utm_source=rss&utm_medium=article",
       "hot": "Thu, 18 Jun 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "从独立版到一体化：TDSQL 的能力演进与企业级数据库实践 | 腾讯云数据库 DBTalk",
       "url": "https://www.infoq.cn/video/Zt9VFw53woH6vsa9cBTR?utm_source=rss&utm_medium=article",
       "hot": "Thu, 18 Jun 2026 09:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "Slack 淘汰 SSH：700+ EMR 作业迁移至基于 REST 的调度架构",
       "url": "https://www.infoq.cn/article/2tlRd4jkgZwYWmzLA5Kt?utm_source=rss&utm_medium=article",
       "hot": "Thu, 18 Jun 2026 09:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "SpaceX 600 亿美元收购 Cursor！马斯克不补课，直接买课代表",
       "url": "https://www.infoq.cn/article/D9oPd77E8bEpRvpE7oM4?utm_source=rss&utm_medium=article",
       "hot": "Thu, 18 Jun 2026 00:46:05 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "万亿估值前夜，OpenAI 被曝一年亏约 2600 亿",
       "url": "https://www.infoq.cn/article/XHlhul82geYax30TcJbP?utm_source=rss&utm_medium=article",
       "hot": "Thu, 18 Jun 2026 00:44:03 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "轻装上阵，能力不减：TDSQL 基础版的“小而美”之道 | 腾讯云数据库 DBTalk",
       "url": "https://www.infoq.cn/video/psxhwD4phyyE27DLXPZ7?utm_source=rss&utm_medium=article",
       "hot": "Wed, 17 Jun 2026 19:11:32 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "AWS 推出 CDK Mixins：让基础设施抽象支持灵活组合",
-      "url": "https://www.infoq.cn/article/18TJbucoqyvqfRzsNjBN?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 17 Jun 2026 19:05:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "大模型已经够聪明了，为什么 95% 的 AI 项目还是跑不出 ROI？",
-      "url": "https://www.infoq.cn/article/wyjzqyE7A1Z3XSprDRq5?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 17 Jun 2026 18:59:30 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "极佳视界再获10亿元B2轮融资，首款家用机器人拾光S1引发强烈反响",
-      "url": "https://www.infoq.cn/article/WTOJWohLb3Ie7uhNfceO?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 17 Jun 2026 18:17:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "“零数据”机器人来了，验证两月即可上岗！这群清华博士破局世界模型，靠“本能”让机器人上手就会",
-      "url": "https://www.infoq.cn/article/mxw8pKVvLpuF20CQJr6j?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 17 Jun 2026 18:01:54 GMT"
     }
   ]
 }

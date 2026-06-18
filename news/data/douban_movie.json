@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-18T02:07:39+00:00",
+  "updated_at": "2026-06-18T07:04:00+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -26,7 +26,7 @@
       "rank": 4,
       "title": "给阿嬷的情书",
       "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.2"
+      "hot": "评分 9.3"
     },
     {
       "rank": 5,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "低智商犯罪",
       "url": "https://movie.douban.com/subject/35517044/",
-      "hot": "评分 8.1"
+      "hot": "评分 8.2"
     }
   ]
 }

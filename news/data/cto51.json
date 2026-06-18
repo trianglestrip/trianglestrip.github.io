@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-18T02:08:11+00:00",
+  "updated_at": "2026-06-18T07:04:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS RichEditor 富文本编辑器实战：从零搭建笔记应用",
-      "url": "https://ost.51cto.com/posts/47373",
-      "hot": "做过笔记App或者社交App的人都知道，纯文本输入框不够用。用户想加粗、想改颜色、想插图片、想搞个列表。这就需要一个富文本编辑器。鸿蒙从..."
+      "title": "从“零日漏洞”到国家级封禁：Fable 5与Mythos 5下架背后的AI安全权力博弈",
+      "url": "https://www.51cto.com/article/846823.html",
+      "hot": "这两款模型刚在几天前正式亮相，却因所谓的\"国家安全担忧\"而被迫下线，引发了业界广泛的质疑与讨论。这场事件不仅是技术与政策的碰撞，更是关于\"安全\"定义、AI伦理以及全球科技竞争格局的深刻思考。"
     },
     {
       "rank": 2,
-      "title": "攻击者滥用云日志服务逃避检测并削弱防御者可见性",
-      "url": "https://www.51cto.com/article/846793.html",
-      "hot": "研究人员将这些攻击分为两大主要战术：防御规避和持续可见性。在防御规避场景中，攻击者专注于禁用或篡改日志机制以避免被发现。"
+      "title": "RAG新SOTA，还在五亿条数据上跑进秒级，只有它了",
+      "url": "https://www.51cto.com/article/846824.html",
+      "hot": "AI 圈扒完之后发现，最有意思的地方不是模型，而是 Claude Code 这个 Coding Agent 外面那层运行系统。"
     },
     {
       "rank": 3,
-      "title": "哈？Q1狂烧250亿！OpenAI财报泄露全网炸锅",
-      "url": "https://www.51cto.com/article/846792.html",
-      "hot": "这才过去一个季度，OpenAI就狂烧了37亿美元（约合人民币250亿元）。啥概念呢？Q1一共就赚了57亿美元，一半以上都给烧了出去。"
+      "title": "Dario访谈首曝：Mythos被称为「超级武器」",
+      "url": "https://www.51cto.com/article/846825.html",
+      "hot": "在这场69分钟完整访谈里，Dario Amodei 说人类真正面对的不是某个突然降临的奇点，而是一条已经开始垂直起飞的指数曲线。"
     },
     {
       "rank": 4,
-      "title": "京东二面惨案：线程池还背 N+1/2N ？面试官：敢上线就等着背锅！",
-      "url": "https://www.51cto.com/article/846791.html",
-      "hot": "今天带你扒透源码，教你京东P7级生产级线程池配置，面试直接封神，线上绝不雪崩。"
+      "title": "HarmonyOS 图片组件进阶实战：Image 组件你可能不知道的10个技巧",
+      "url": "https://ost.51cto.com/posts/47563",
+      "hot": "Image组件是ArkUI里用得最多的组件之一。但大多数人只会最基本的用法&mdash;&mdash;传个URL、设个宽高。其实Image组件还有很多进阶能力：裁剪模式、占..."
     },
     {
       "rank": 5,
-      "title": "AI编程实战：用gstack + OpenSpec + Superpowers + Ralph 做到真正的AI 驱动开发",
-      "url": "https://www.51cto.com/article/846788.html",
-      "hot": "gstack 帮你想清楚，OpenSpec 帮你说清楚，Superpowers 帮你做规范，Ralph 帮你自动跑完。四个工具各守一道关口，缺了哪个都会漏。"
+      "title": "HarmonyOS 数据加密实战：AES 加密存储与安全通信",
+      "url": "https://ost.51cto.com/posts/47544",
+      "hot": "数据安全越来越重要。用户密码、Token、身份证号、银行卡号这些敏感信息，明文存到数据库或文件里就是裸奔。鸿蒙提供了cryptoFramework（加..."
     },
     {
       "rank": 6,
-      "title": "Rancher 太重了？领导叫用这款轻量级 Kubernetes 多集群管理神器",
-      "url": "https://www.51cto.com/article/846787.html",
-      "hot": "如果你已经被 kubectl​ 和 kubeconfig​ 折磨得头大，不妨试试 Kite​。说不定它会成为你的下一款 Kubernetes 管理神器。​"
+      "title": "鹅厂面试官：“来讲讲什么是 CoT？为啥效果好？它有什么缺点或局限性？”我：“CoT 就是让模型一步步思考，效果会更好”",
+      "url": "https://www.51cto.com/article/846811.html",
+      "hot": "CoT 真不是一句「让模型一步一步想」能糊弄过去的。它为什么有效、什么时候反而起反作用、怎么和 Few-shot 搭配，得连着讲清楚。"
     },
     {
       "rank": 7,
-      "title": "从内核视角，看 Linux 文件读写过程",
-      "url": "https://www.51cto.com/article/846713.html",
-      "hot": "今天我们从内核文件系统的角度，拆解文件读写过程，搞懂“我们写的内容，到底是怎么存到磁盘里的”。"
+      "title": "AI 编码进阶：从手动 Prompt 到自驱系统，14 步构建你的第一个 Loop 系统",
+      "url": "https://www.51cto.com/article/846810.html",
+      "hot": "这篇文章把当下社区最流行的 14 步 Loop Engineering 路线图 展示出来，给大家呈现的就是一套你可以立刻上手的日常工作流：任务卡 → 任务清单 → 验证记录 → 进度快照 → 放行检查。"
     },
     {
       "rank": 8,
-      "title": "Vercel 放大招：前端 Agent 框架 Eve 来了！",
-      "url": "https://www.51cto.com/article/846767.html",
-      "hot": "这次发布的重点不只是一个新框架，而是一个信号：Agent 开发开始进入框架化阶段了。"
+      "title": "人工智能和智能体时代的本体论和知识图谱",
+      "url": "https://www.51cto.com/article/846809.html",
+      "hot": "本体和知识图谱是截然不同但又深度互补的两种工具。本体提供语义骨架：它是一个正式的、有意义的领域模型，不仅编码结构，还编码概念关系、层级结构和定义，反映了组织对其业务的特定理解。知识图谱在此骨架之上构建真实数据，用实际实体、属性值及其之间的链接填充语义框架，从而创建组织知识的丰富关联且可查询的表示。"
     },
     {
       "rank": 9,
-      "title": "小红书数据平台部 ICDE 2026 新成果：RedParrot 以语义缓存加速企业级自然语言数据分析",
-      "url": "https://www.51cto.com/article/846766.html",
-      "hot": "小红书数据平台部联合浙江大学在 ICDE 2026 发表论文《RedParrot: Accelerating NL-to-DSL for Business Analytics via Query Semantic Caching》，提出了一种面向企业级商业分析场景的自然语言到 DSL（NL-to-DSL）加速框架。"
+      "title": "VS Code 官宣支持 Vite+？尤雨溪的下一盘大棋曝光了",
+      "url": "https://www.51cto.com/article/846785.html",
+      "hot": "很多人第一次看到这个 PR，可能会觉得：新增一个 vp 配置项，没什么大不了。但对于前端生态来说，它释放出的信号非常明确：下一代 JavaScript 工具链，正在从\"多个工具拼装\"走向\"统一平台\"。"
     },
     {
       "rank": 10,
-      "title": "最值得关注的新一代 HTML 和 CSS API",
-      "url": "https://www.51cto.com/article/846761.html",
-      "hot": "从现在开始，真正理解这些能力的开发者，会写出更轻、更快、更 accessible（可访问）的 UI（用户界面）。下面就是你需要知道的部分。"
+      "title": "突发！Transformer之父告别谷歌，转投OpenAI",
+      "url": "https://www.51cto.com/article/846806.html",
+      "hot": "奥特曼赢麻了！Transformer八子之一、Gemini技术联合负责人Noam Shazeer正式加盟OpenAI，任新的「架构负责人」，去造下一个超级智能。"
     }
   ]
 }
