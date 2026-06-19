@@ -1,26 +1,26 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-19T19:17:51+00:00",
+  "updated_at": "2026-06-19T21:40:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Redis 作者反驳「中国模型之所以强，是因为通过 API 蒸馏了美国模型」",
       "url": "https://juejin.cn/post/7651812581206491142",
-      "hot": "1638"
+      "hot": "1647"
     },
     {
       "rank": 2,
       "title": "《Kingbase护城河》——数据库存储空间全景探测与精细化瘦身实战",
       "url": "https://juejin.cn/post/7652513657561792563",
-      "hot": "1089"
+      "hot": "1098"
     },
     {
       "rank": 3,
       "title": "ksql 里这些命令不用加分号，但日常查库少不了",
       "url": "https://juejin.cn/post/7652377935778070578",
-      "hot": "909"
+      "hot": "927"
     },
     {
       "rank": 4,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "由于 iOS 26 的键盘变化，Flutter 又要重构键盘区域逻辑",
-      "url": "https://juejin.cn/post/7651505036707512383",
-      "hot": "558"
+      "title": "Qoder 提供免费 Qwen3.7-Max，无需订阅",
+      "url": "https://juejin.cn/post/7651476660258078766",
+      "hot": "567"
     },
     {
       "rank": 8,
-      "title": "Qoder 提供免费 Qwen3.7-Max，无需订阅",
-      "url": "https://juejin.cn/post/7651476660258078766",
+      "title": "由于 iOS 26 的键盘变化，Flutter 又要重构键盘区域逻辑",
+      "url": "https://juejin.cn/post/7651505036707512383",
       "hot": "558"
     },
     {
       "rank": 9,
       "title": "又一款国产模型诞生，StepPlan性价比杀疯了！",
       "url": "https://juejin.cn/post/7651450218761650227",
-      "hot": "414"
+      "hot": "423"
     },
     {
       "rank": 10,
       "title": "KMP / CMP 鸿蒙版本 Beta 发布，他有什么特别之处？",
       "url": "https://juejin.cn/post/7651954728705212422",
-      "hot": "396"
+      "hot": "405"
     }
   ]
 }

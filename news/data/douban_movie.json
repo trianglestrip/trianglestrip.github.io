@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-19T19:12:50+00:00",
-  "fetch_ok": false,
-  "error": "<urlopen error timed out>",
+  "updated_at": "2026-06-19T21:40:09+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
