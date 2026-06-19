@@ -1,68 +1,68 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-06-19T07:29:26+00:00",
+  "updated_at": "2026-06-19T11:48:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "【原创C&C++】SysRestoreDriver - 从零实现基于写时重定向的 NTFS 卷过滤还原驱动",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2112307",
+      "hot": "[md]# SysRestoreDriver：基于写时重定向的 NTFS 卷过滤还原驱动设计与实现\n\n\n\n## 〇、前言\n\n这是一个 Windows 内核态卷过滤驱动，做的事情是：**开启保护后，系统盘上任何写入都会被悄悄重定向到空闲扇区。重启之 ..."
+    },
+    {
+      "rank": 2,
+      "title": "YOLO识别拼图过滑块验证",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2112042",
+      "hot": "本文章中所有内容仅供学习交流使用，不用于其他任何目的，严禁用于商业用途和非法用途，否则由此产生的一切后果均与作者无关！若有侵权，请联系作者删除。 \n\n\n由于对上一篇逆向分析中，使用滑块手动验证一直耿耿于怀 ..."
+    },
+    {
+      "rank": 3,
       "title": "web逆向基础知识--- js 事件 事件循环 和异步",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111598",
       "hot": ""
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "某企业加固dex vmp简单分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111432",
       "hot": "前言\n本人小白一枚，想尝试学习一些加固，在身边朋友的推荐下选择了这个壳子.恰巧最近论坛上也有很多大佬发布了自己的分析贴（比如乐子人大佬的帖子），只是复现下来后发现后续的dex vmp相关帖子比较少（很不幸只找到了 ..."
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "【多栈实战】某黑产软件全链路逆向实录 (中)",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111428",
       "hot": "【多栈实战】\n某黑产软件全链路逆向实录 (中) ——\nFlutter / Web 逆向伪造邀请请求会员全流程\n\n开篇严正声明：本文仅用于学习逆向工程与网络安全相关技术，未掺杂任何不良目的。文中的软件已对其名字、图标及相关 ..."
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "内存访问蜜罐页的五次进化：从静态陷阱到多维度 PMU 统计检测",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111376",
       "hot": "[md]# 蜜罐页的五次进化：从静态陷阱到多维度 PMU 统计检测\n\n&gt; ARM64 Android 平台 `process_vm_readv` 跨进程内存读取的检测方案演进\n\n## 摘要\n\n在 ARM64 Android (Linux 5.4.210) 平台上，本文设计并实验验证了五代蜜罐页（Honey Page）检测方案，探索从简单的 ..."
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "跨进程内存读写的攻防博弈：从内核缺页陷阱到应用层数据溯源",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111373",
       "hot": "[md]# 跨进程内存读写的攻防博弈：从内核缺页陷阱到应用层数据溯源\n\n&gt; ARM64 Android 平台 `process_vm_readv` / `process_vm_writev` 检测方法的完整探索、实验验证与攻防进化\n\n## 摘要\n\n本文系统研究 Android ARM64 平台上跨进程内存读写的可检测性。通过构建检 ..."
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "libjdg.so VM 逆向分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2110046",
       "hot": "[md]&gt; **作者：** 人生导师\n&gt; **日期：** 2025 年 5 月 28 日\n\n结论先说：京东 `libjdg.so` 内部有一套寄存器 VM，保护签名算法和反调试逻辑。最终还原结果——`b4 = Base64(RC4(a11 XOR timestamp, zlib.compress(json_plaintext)))`，标准算法组合没有魔改。这篇从 ..."
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "最新易盾web滑块逆向分析。",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2108119",
       "hot": "以下内容主要作为学习使用，如有侵权请联系删除。\n网址：aHR0cHM6Ly9pZC4xNjMuY29tL21haWwvcmV0cmlldmVwYXNzd29yZD9wZD1tYWlsMTYzJnBraWQ9Q3ZWaUh6bCMvdmVyaWZ5QWNjb3VudA==\n\n易盾一共需要发送的数据包一共有4个 \n分 ..."
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "企业微信聊天记录导出全解析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2107745",
       "hot": ""
-    },
-    {
-      "rank": 9,
-      "title": "Vibe Coding 从源码阅读到模块开发：基于最新版 Magisk Zygisk，移植实现一个带 We...",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2107426",
-      "hot": "[md]# Vibe Coding 从源码阅读到模块开发：基于最新版 Magisk Zygisk，移植实现一个带 WebUI、支持 Android 16 的 Zygisk 等效模块r0zygisk(一)\n\n\n这篇文章主要记录了基于最新版 `Magisk` 的 `Zygisk`，整理并移植到  ..."
-    },
-    {
-      "rank": 10,
-      "title": "从POC到EXP：从0基础到v8 CVE-2021-38003复现",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2107373",
-      "hot": "[md]# 从POC到EXP：从0基础到v8 CVE-2021-38003复现\n\n&gt; 此文章首发于**奇安信攻防社区**https://forum.butian.net/share/4851\n\n## 参考文献\n\n[TheHole New World - how a small leak will sink a great browser (CVE-2021-38003)](https://starlabs.sg/blog/2022/ ..."
     }
   ]
 }
