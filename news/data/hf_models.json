@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-18T21:55:08+00:00",
+  "updated_at": "2026-06-19T07:29:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "hot": "1687"
+      "hot": "1737"
     },
     {
       "rank": 2,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "1320"
+      "hot": "1391"
     },
     {
       "rank": 3,
       "title": "MiniMaxAI/MiniMax-M3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "1096"
+      "hot": "1108"
     },
     {
       "rank": 4,
       "title": "moonshotai/Kimi-K2.7-Code",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
-      "hot": "876"
+      "hot": "889"
     },
     {
       "rank": 5,
       "title": "google/diffusiongemma-26B-A4B-it",
       "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "hot": "997"
+      "hot": "1005"
     },
     {
       "rank": 6,
       "title": "WeiboAI/VibeThinker-3B",
       "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
-      "hot": "402"
+      "hot": "415"
     },
     {
       "rank": 7,
       "title": "prefeitura-rio/Rio-3.5-Open-397B",
       "url": "https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B",
-      "hot": "322"
+      "hot": "324"
     },
     {
       "rank": 8,
       "title": "nvidia/LocateAnything-3B",
       "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "2158"
+      "hot": "2172"
     },
     {
       "rank": 9,
-      "title": "Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
-      "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
-      "hot": "249"
+      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "hot": "1975"
     },
     {
       "rank": 10,
-      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "1964"
+      "title": "microsoft/FastContext-1.0-4B-SFT",
+      "url": "https://huggingface.co/microsoft/FastContext-1.0-4B-SFT",
+      "hot": "210"
     }
   ]
 }

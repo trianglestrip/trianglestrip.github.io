@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-19T02:15:39+00:00",
+  "updated_at": "2026-06-19T07:29:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Zero-Touch OAuth for MCP",
-      "url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+      "title": "DuckDB Internals: Why Is DuckDB Fast? (Part 1)",
+      "url": "https://www.greybeam.ai/blog/duckdb-internals-part-1",
       "hot": "99"
     },
     {
       "rank": 2,
-      "title": "How Japan's railways stayed one while splitting apart",
-      "url": "https://arun.is/blog/jr-logo/",
-      "hot": "30"
+      "title": "To study how chips work, MIT researchers built their own operating system",
+      "url": "https://news.mit.edu/2026/to-study-how-chips-really-work-mit-researchers-built-their-own-operating-system-0610",
+      "hot": "147"
     },
     {
       "rank": 3,
-      "title": "GLM-5.2: The Most Powerful Open Model yet and the Brutal Reality of Running It",
-      "url": "https://vettedconsumer.com/glm-5-2-the-most-powerful-open-weight-model-yet-and-the-brutal-reality-of-running-it-locally/",
-      "hot": "7"
+      "title": "So You Want to Define a Well-Known URI",
+      "url": "https://mnot.net/blog/2026/well_known_uris",
+      "hot": "19"
     },
     {
       "rank": 4,
-      "title": "I found 10k GitHub repositories distributing Trojan malware",
-      "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
-      "hot": "665"
+      "title": "Gribouille 0.3.0: A Grammar of Graphics for Typst",
+      "url": "https://mickael.canouil.fr/posts/2026-06-15-gribouille-0-3/",
+      "hot": "51"
     },
     {
       "rank": 5,
-      "title": "Datasette Apps: Host custom HTML applications inside Datasette",
-      "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/",
-      "hot": "22"
+      "title": "Zen and the Art of Machine Learning Research",
+      "url": "https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning",
+      "hot": "27"
     },
     {
       "rank": 6,
-      "title": "Cell-based architecture for resilient payment systems",
-      "url": "https://americanexpress.io/cell-based-architecture-for-resilient-payment-systems/",
-      "hot": "88"
+      "title": "I found 10k GitHub repositories distributing Trojan malware",
+      "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
+      "hot": "765"
     },
     {
       "rank": 7,
-      "title": "Ubiquiti: Enterprise NAS, Built on ZFS",
-      "url": "https://blog.ui.com/article/introducing-enterprise-nas",
-      "hot": "259"
+      "title": "Generative AI Is Having Its Herbalife Moment",
+      "url": "https://www.whatwelo.st/p/generative-ai-is-having-its-herbalife",
+      "hot": "16"
     },
     {
       "rank": 8,
-      "title": "Zork name origin got an update on Wikipedia",
-      "url": "https://www.dpolakovic.space/blogs/zork-part2#update",
-      "hot": "56"
+      "title": "Zero-Touch OAuth for MCP",
+      "url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+      "hot": "179"
     },
     {
       "rank": 9,
-      "title": "CS 6120: Advanced Compilers: The Self-Guided Online Course (2020)",
-      "url": "https://www.cs.cornell.edu/courses/cs6120/2025fa/self-guided/",
-      "hot": "308"
+      "title": "DARPA Heavy Life Challenge",
+      "url": "https://www.darpa.mil/research/challenges/lift",
+      "hot": "12"
     },
     {
       "rank": 10,
-      "title": "Hospitals and universities repurposing drugs at lower cost",
-      "url": "https://www.kcl.ac.uk/news/hospitals-and-universities-repurposing-drugs-at-90-lower-cost",
-      "hot": "283"
+      "title": "Datasette Apps: Host custom HTML applications inside Datasette",
+      "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/",
+      "hot": "68"
     }
   ]
 }
