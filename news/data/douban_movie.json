@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-19T14:31:24+00:00",
+  "updated_at": "2026-06-19T16:59:59+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "莫离",
-      "url": "https://movie.douban.com/subject/37234503/",
-      "hot": ""
-    },
-    {
-      "rank": 3,
       "title": "铁拳教育",
       "url": "https://movie.douban.com/subject/37071123/",
       "hot": "评分 8.8"
+    },
+    {
+      "rank": 3,
+      "title": "莫离",
+      "url": "https://movie.douban.com/subject/37234503/",
+      "hot": ""
     },
     {
       "rank": 4,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "主角",
-      "url": "https://movie.douban.com/subject/35295564/",
-      "hot": "评分 8.1"
+      "title": "镖人：风起大漠",
+      "url": "https://movie.douban.com/subject/36474027/",
+      "hot": "评分 7.5"
     },
     {
       "rank": 7,
-      "title": "翘楚",
-      "url": "https://movie.douban.com/subject/36894289/",
-      "hot": "评分 5.1"
+      "title": "我看见两朵一样的云",
+      "url": "https://movie.douban.com/subject/35211447/",
+      "hot": ""
     },
     {
       "rank": 8,
-      "title": "校园之外 第一季",
-      "url": "https://movie.douban.com/subject/37061179/",
-      "hot": "评分 8.4"
-    },
-    {
-      "rank": 9,
       "title": "南部档案",
       "url": "https://movie.douban.com/subject/35465012/",
       "hot": ""
     },
     {
+      "rank": 9,
+      "title": "校园之外 第一季",
+      "url": "https://movie.douban.com/subject/37061179/",
+      "hot": "评分 8.4"
+    },
+    {
       "rank": 10,
-      "title": "低智商犯罪",
-      "url": "https://movie.douban.com/subject/35517044/",
-      "hot": "评分 8.2"
+      "title": "主角",
+      "url": "https://movie.douban.com/subject/35295564/",
+      "hot": "评分 8.1"
     }
   ]
 }

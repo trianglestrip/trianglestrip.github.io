@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-19T14:31:54+00:00",
+  "updated_at": "2026-06-19T17:00:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28",
       "url": "https://www.jvm-weekly.com/p/project-valhalla-explained-how-a",
-      "hot": "326"
+      "hot": "415"
     },
     {
       "rank": 2,
-      "title": "DuckDB Internals: Why Is DuckDB Fast? (Part 1)",
-      "url": "https://www.greybeam.ai/blog/duckdb-internals-part-1",
-      "hot": "288"
+      "title": "Amateur may have cracked Linear A, a 120-year-old puzzle",
+      "url": "https://aiclambake.com/clamtakes/linear-a/",
+      "hot": "34"
     },
     {
       "rank": 3,
-      "title": "Zen and the Art of Machine Learning Research",
-      "url": "https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning",
-      "hot": "136"
+      "title": "The Productivity J-Curve [pdf] (2018)",
+      "url": "https://ide.mit.edu/sites/default/files/publications/jcurve.pdf",
+      "hot": "28"
     },
     {
       "rank": 4,
-      "title": "To study how chips work, MIT researchers built their own operating system",
-      "url": "https://news.mit.edu/2026/to-study-how-chips-really-work-mit-researchers-built-their-own-operating-system-0610",
-      "hot": "262"
+      "title": "DuckDB Internals: Why Is DuckDB Fast? (Part 1)",
+      "url": "https://www.greybeam.ai/blog/duckdb-internals-part-1",
+      "hot": "346"
     },
     {
       "rank": 5,
-      "title": "Ten years of ClickHouse in open source",
-      "url": "https://clickhouse.com/blog/open-source-10",
-      "hot": "137"
+      "title": "Zen and the Art of Machine Learning Research",
+      "url": "https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning",
+      "hot": "172"
     },
     {
       "rank": 6,
-      "title": "I found 10k GitHub repositories distributing Trojan malware",
-      "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
-      "hot": "867"
+      "title": "Ten years of ClickHouse in open source",
+      "url": "https://clickhouse.com/blog/open-source-10",
+      "hot": "192"
     },
     {
       "rank": 7,
-      "title": "So You Want to Define a Well-Known URI",
-      "url": "https://mnot.net/blog/2026/well_known_uris",
-      "hot": "114"
+      "title": "To study how chips work, MIT researchers built their own operating system",
+      "url": "https://news.mit.edu/2026/to-study-how-chips-really-work-mit-researchers-built-their-own-operating-system-0610",
+      "hot": "300"
     },
     {
       "rank": 8,
-      "title": "The Productivity J-Curve [pdf] (2018)",
-      "url": "https://ide.mit.edu/sites/default/files/publications/jcurve.pdf",
-      "hot": "3"
+      "title": "Telescope Ranchers",
+      "url": "https://kottke.org/26/06/telescope-ranchers",
+      "hot": "16"
     },
     {
       "rank": 9,
-      "title": "Gribouille 0.3.0: A Grammar of Graphics for Typst",
-      "url": "https://mickael.canouil.fr/posts/2026-06-15-gribouille-0-3/",
-      "hot": "136"
+      "title": "I found 10k GitHub repositories distributing Trojan malware",
+      "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
+      "hot": "894"
     },
     {
       "rank": 10,
-      "title": "The AirPods Effect",
-      "url": "https://www.theescapenewsletter.com/p/the-airpods-effect",
-      "hot": "211"
+      "title": "Gribouille 0.3.0: A Grammar of Graphics for Typst",
+      "url": "https://mickael.canouil.fr/posts/2026-06-15-gribouille-0-3/",
+      "hot": "166"
     }
   ]
 }
