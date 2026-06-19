@@ -1,8 +1,9 @@
 {
   "source": "douban",
   "title": "豆瓣",
-  "updated_at": "2026-06-19T16:59:58+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-06-19T19:08:19+00:00",
+  "fetch_ok": false,
+  "error": "<urlopen error timed out>",
   "items": [
     {
       "rank": 1,
