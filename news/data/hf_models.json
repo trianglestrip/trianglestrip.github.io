@@ -1,44 +1,44 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-19T07:29:51+00:00",
+  "updated_at": "2026-06-19T14:32:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "hot": "1737"
+      "hot": "1778"
     },
     {
       "rank": 2,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "1391"
+      "hot": "1463"
     },
     {
       "rank": 3,
       "title": "MiniMaxAI/MiniMax-M3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "1108"
+      "hot": "1117"
     },
     {
       "rank": 4,
       "title": "moonshotai/Kimi-K2.7-Code",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
-      "hot": "889"
+      "hot": "896"
     },
     {
       "rank": 5,
-      "title": "google/diffusiongemma-26B-A4B-it",
-      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "hot": "1005"
+      "title": "WeiboAI/VibeThinker-3B",
+      "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
+      "hot": "428"
     },
     {
       "rank": 6,
-      "title": "WeiboAI/VibeThinker-3B",
-      "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
-      "hot": "415"
+      "title": "google/diffusiongemma-26B-A4B-it",
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "hot": "1008"
     },
     {
       "rank": 7,
@@ -50,19 +50,19 @@
       "rank": 8,
       "title": "nvidia/LocateAnything-3B",
       "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "2172"
+      "hot": "2184"
     },
     {
       "rank": 9,
       "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
       "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "1975"
+      "hot": "1989"
     },
     {
       "rank": 10,
       "title": "microsoft/FastContext-1.0-4B-SFT",
       "url": "https://huggingface.co/microsoft/FastContext-1.0-4B-SFT",
-      "hot": "210"
+      "hot": "216"
     }
   ]
 }

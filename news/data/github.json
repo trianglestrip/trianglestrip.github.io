@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-06-19T07:29:13+00:00",
+  "updated_at": "2026-06-19T14:31:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Python] google-research/timesfm",
-      "url": "https://github.com/google-research/timesfm",
-      "hot": "23,543"
+      "title": "[C] DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "hot": "7,688"
     },
     {
       "rank": 2,
-      "title": "[Rust] n0-computer/iroh",
-      "url": "https://github.com/n0-computer/iroh",
-      "hot": "10,081"
+      "title": "[Python] google-research/timesfm",
+      "url": "https://github.com/google-research/timesfm",
+      "hot": "23,908"
     },
     {
       "rank": 3,
-      "title": "[TypeScript] freeCodeCamp/freeCodeCamp",
-      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "hot": "449,658"
+      "title": "[Swift] palmier-io/palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "hot": "1,508"
     },
     {
       "rank": 4,
-      "title": "[Shell] obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "hot": "232,674"
+      "title": "[TypeScript] koala73/worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "hot": "56,929"
     },
     {
       "rank": 5,
-      "title": "zai-org/GLM-5",
-      "url": "https://github.com/zai-org/GLM-5",
-      "hot": "4,268"
+      "title": "[HTML] aishwaryanr/awesome-generative-ai-guide",
+      "url": "https://github.com/aishwaryanr/awesome-generative-ai-guide",
+      "hot": "27,475"
     },
     {
       "rank": 6,
-      "title": "[C] DeusData/codebase-memory-mcp",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "hot": "7,315"
+      "title": "[TypeScript] BuilderIO/agent-native",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "hot": "861"
     },
     {
       "rank": 7,
-      "title": "[C++] alibaba/zvec",
-      "url": "https://github.com/alibaba/zvec",
-      "hot": "11,352"
+      "title": "[Python] chopratejas/headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "hot": "37,098"
     },
     {
       "rank": 8,
-      "title": "[TypeScript] withastro/flue",
-      "url": "https://github.com/withastro/flue",
-      "hot": "5,581"
+      "title": "[Python] calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "hot": "5,973"
     },
     {
       "rank": 9,
-      "title": "[TypeScript] Kilo-Org/kilocode",
-      "url": "https://github.com/Kilo-Org/kilocode",
-      "hot": "22,412"
+      "title": "zai-org/GLM-5",
+      "url": "https://github.com/zai-org/GLM-5",
+      "hot": "4,387"
     },
     {
       "rank": 10,
-      "title": "[TypeScript] makeplane/plane",
-      "url": "https://github.com/makeplane/plane",
-      "hot": "51,935"
+      "title": "[TypeScript] withastro/flue",
+      "url": "https://github.com/withastro/flue",
+      "hot": "5,687"
     }
   ]
 }
