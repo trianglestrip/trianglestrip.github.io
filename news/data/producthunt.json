@@ -1,68 +1,68 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-06-20T13:07:03+00:00",
+  "updated_at": "2026-06-20T19:43:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Basedash Access Controls",
-      "url": "https://www.producthunt.com/products/basedash",
-      "hot": "2026-06-19T09:05:30-07:00"
-    },
-    {
-      "rank": 2,
       "title": "Pixlie",
       "url": "https://www.producthunt.com/products/pixlie",
       "hot": "2026-06-19T04:37:24-07:00"
     },
     {
+      "rank": 2,
+      "title": "ReleaseDock",
+      "url": "https://www.producthunt.com/products/releasedock",
+      "hot": "2026-06-16T08:15:07-07:00"
+    },
+    {
       "rank": 3,
-      "title": "Slackbot’s MCP Client",
-      "url": "https://www.producthunt.com/products/slack",
-      "hot": "2026-06-18T12:14:40-07:00"
-    },
-    {
-      "rank": 4,
-      "title": "Mellum by JetBrains",
-      "url": "https://www.producthunt.com/products/jetbrains",
-      "hot": "2026-06-11T03:37:46-07:00"
-    },
-    {
-      "rank": 5,
-      "title": "pumaDB",
-      "url": "https://www.producthunt.com/products/pumadb",
-      "hot": "2026-06-18T19:39:34-07:00"
-    },
-    {
-      "rank": 6,
       "title": "WorkClaw",
       "url": "https://www.producthunt.com/products/workclaw",
       "hot": "2026-05-28T07:08:40-07:00"
     },
     {
-      "rank": 7,
+      "rank": 4,
       "title": "Foyer",
       "url": "https://www.producthunt.com/products/foyer-4",
       "hot": "2026-06-12T02:17:40-07:00"
     },
     {
-      "rank": 8,
+      "rank": 5,
       "title": "Reframe",
       "url": "https://www.producthunt.com/products/reframe-7",
       "hot": "2026-06-18T19:16:03-07:00"
     },
     {
+      "rank": 6,
+      "title": "pumaDB",
+      "url": "https://www.producthunt.com/products/pumadb",
+      "hot": "2026-06-18T19:39:34-07:00"
+    },
+    {
+      "rank": 7,
+      "title": "Basedash Access Controls",
+      "url": "https://www.producthunt.com/products/basedash",
+      "hot": "2026-06-19T09:05:30-07:00"
+    },
+    {
+      "rank": 8,
+      "title": "Mellum by JetBrains",
+      "url": "https://www.producthunt.com/products/jetbrains",
+      "hot": "2026-06-11T03:37:46-07:00"
+    },
+    {
       "rank": 9,
-      "title": "GitSync for macOS",
-      "url": "https://www.producthunt.com/products/gitsync-for-macos",
-      "hot": "2026-06-19T14:52:21-07:00"
+      "title": "Slackbot’s MCP Client",
+      "url": "https://www.producthunt.com/products/slack",
+      "hot": "2026-06-18T12:14:40-07:00"
     },
     {
       "rank": 10,
-      "title": "Are you in the Weights?",
-      "url": "https://www.producthunt.com/products/are-you-in-the-weights",
-      "hot": "2026-06-19T17:56:01-07:00"
+      "title": "GitSync for macOS",
+      "url": "https://www.producthunt.com/products/gitsync-for-macos",
+      "hot": "2026-06-19T14:52:21-07:00"
     }
   ]
 }

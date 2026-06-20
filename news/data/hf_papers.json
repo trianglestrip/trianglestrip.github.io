@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-20T13:08:15+00:00",
+  "updated_at": "2026-06-20T19:44:12+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,7 +14,7 @@
       "rank": 2,
       "title": "GLM-5: from Vibe Coding to Agentic Engineering",
       "url": "https://huggingface.co/papers/2602.15763",
-      "hot": "169"
+      "hot": "170"
     },
     {
       "rank": 3,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "81"
-    },
-    {
-      "rank": 7,
-      "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
-      "url": "https://huggingface.co/papers/2606.14066",
-      "hot": "85"
-    },
-    {
-      "rank": 8,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "43"
-    },
-    {
-      "rank": 9,
       "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
       "url": "https://huggingface.co/papers/2601.02163",
       "hot": "7"
     },
     {
+      "rank": 7,
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "81"
+    },
+    {
+      "rank": 8,
+      "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
+      "url": "https://huggingface.co/papers/2606.14066",
+      "hot": "86"
+    },
+    {
+      "rank": 9,
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "43"
+    },
+    {
       "rank": 10,
-      "title": "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models",
-      "url": "https://huggingface.co/papers/2606.16140",
-      "hot": "100"
+      "title": "LTX-2: Efficient Joint Audio-Visual Foundation Model",
+      "url": "https://huggingface.co/papers/2601.03233",
+      "hot": "183"
     }
   ]
 }
