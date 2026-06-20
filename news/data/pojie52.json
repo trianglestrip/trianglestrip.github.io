@@ -1,14 +1,14 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-06-20T18:01:55+00:00",
+  "updated_at": "2026-06-20T20:56:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "web逆向基础知识--- js 事件 事件循环 和异步",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111598",
-      "hot": ""
+      "title": "【原创C&C++】SysRestoreDriver - 从零实现基于写时重定向的 NTFS 卷过滤还原驱动",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2112307",
+      "hot": "[md]# SysRestoreDriver：基于写时重定向的 NTFS 卷过滤还原驱动设计与实现\n\n\n\n## 〇、前言\n\n这是一个 Windows 内核态卷过滤驱动，做的事情是：**开启保护后，系统盘上任何写入都会被悄悄重定向到空闲扇区。重启之 ..."
     },
     {
       "rank": 2,
