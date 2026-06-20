@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-20T06:06:27+00:00",
+  "updated_at": "2026-06-20T09:34:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Redis 作者反驳「中国模型之所以强，是因为通过 API 蒸馏了美国模型」",
-      "url": "https://juejin.cn/post/7651812581206491142",
-      "hot": "1719"
+      "title": "ksql 里这些命令不用加分号，但日常查库少不了",
+      "url": "https://juejin.cn/post/7652377935778070578",
+      "hot": "1233"
     },
     {
       "rank": 2,
-      "title": "ksql 里这些命令不用加分号，但日常查库少不了",
-      "url": "https://juejin.cn/post/7652377935778070578",
+      "title": "《Kingbase护城河》——数据库存储空间全景探测与精细化瘦身实战",
+      "url": "https://juejin.cn/post/7652513657561792563",
       "hot": "1125"
     },
     {
       "rank": 3,
-      "title": "《Kingbase护城河》——数据库存储空间全景探测与精细化瘦身实战",
-      "url": "https://juejin.cn/post/7652513657561792563",
-      "hot": "1116"
+      "title": "Android 17 正式版发布，全新 AI 和各种破坏性更新",
+      "url": "https://juejin.cn/post/7651930056574517289",
+      "hot": "783"
     },
     {
       "rank": 4,
-      "title": "Android 17 正式版发布，全新 AI 和各种破坏性更新",
-      "url": "https://juejin.cn/post/7651930056574517289",
-      "hot": "747"
-    },
-    {
-      "rank": 5,
-      "title": "由于 iOS 26 的键盘变化，Flutter 又要重构键盘区域逻辑",
-      "url": "https://juejin.cn/post/7651505036707512383",
-      "hot": "576"
-    },
-    {
-      "rank": 6,
-      "title": "又一款国产模型诞生，StepPlan性价比杀疯了！",
-      "url": "https://juejin.cn/post/7651450218761650227",
+      "title": "KMP / CMP 鸿蒙版本 Beta 发布，他有什么特别之处？",
+      "url": "https://juejin.cn/post/7651954728705212422",
       "hot": "450"
     },
     {
+      "rank": 5,
+      "title": "深入vue3源码解读 --  1、响应式的基础概念",
+      "url": "https://juejin.cn/post/7652180405778087946",
+      "hot": "324"
+    },
+    {
+      "rank": 6,
+      "title": "老板：“请说出一个录用你的理由。”我脱口而出：“每个月 AI 支出都超过我的生活费了！”老板愣了一下，随即哈哈大笑：“好吧，你被录用了。”",
+      "url": "https://juejin.cn/post/7652201148235382803",
+      "hot": "279"
+    },
+    {
       "rank": 7,
-      "title": "KMP / CMP 鸿蒙版本 Beta 发布，他有什么特别之处？",
-      "url": "https://juejin.cn/post/7651954728705212422",
-      "hot": "432"
+      "title": "DeepSeek 杀入多模态，识图功能正式上线！",
+      "url": "https://juejin.cn/post/7652384976291495974",
+      "hot": "279"
     },
     {
       "rank": 8,
-      "title": "面试翻车现场：`Array(100).map(() => 1)` 为什么全为空？",
-      "url": "https://juejin.cn/post/7651534382439694351",
-      "hot": "423"
+      "title": "刚刚，Fable-5之下，智谱开源的GLM-5.2拿下AI编程第一！",
+      "url": "https://juejin.cn/post/7651812531246678026",
+      "hot": "270"
     },
     {
       "rank": 9,
-      "title": "AI 写代码越快，为什么 Code Review 越不能省？",
-      "url": "https://juejin.cn/post/7651794244281516041",
-      "hot": "387"
+      "title": "学完 Spring Boot 再看 FastAPI，我破防了",
+      "url": "https://juejin.cn/post/7652012624294215707",
+      "hot": "261"
     },
     {
       "rank": 10,
-      "title": "深入vue3源码解读 --  1、响应式的基础概念",
-      "url": "https://juejin.cn/post/7652180405778087946",
-      "hot": "306"
+      "title": "都AI时代了，我为何还在学习前端基础知识？",
+      "url": "https://juejin.cn/post/7652548338932924470",
+      "hot": "261"
     }
   ]
 }
