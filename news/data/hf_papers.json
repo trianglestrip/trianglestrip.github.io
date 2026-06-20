@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-20T06:06:46+00:00",
+  "updated_at": "2026-06-20T13:08:15+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,21 +12,21 @@
     },
     {
       "rank": 2,
+      "title": "GLM-5: from Vibe Coding to Agentic Engineering",
+      "url": "https://huggingface.co/papers/2602.15763",
+      "hot": "169"
+    },
+    {
+      "rank": 3,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "101"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
       "hot": "240"
-    },
-    {
-      "rank": 4,
-      "title": "GLM-5: from Vibe Coding to Agentic Engineering",
-      "url": "https://huggingface.co/papers/2602.15763",
-      "hot": "169"
     },
     {
       "rank": 5,
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "43"
+      "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
+      "url": "https://huggingface.co/papers/2606.14066",
+      "hot": "85"
     },
     {
       "rank": 8,
-      "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
-      "url": "https://huggingface.co/papers/2606.14066",
-      "hot": "84"
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "43"
     },
     {
       "rank": 9,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models",
       "url": "https://huggingface.co/papers/2606.16140",
-      "hot": "99"
+      "hot": "100"
     }
   ]
 }

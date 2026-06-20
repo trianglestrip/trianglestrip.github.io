@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-20T09:34:46+00:00",
+  "updated_at": "2026-06-20T13:07:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "I Stored a Website in a Favicon",
-      "url": "https://www.timwehrle.de/blog/i-stored-a-website-in-a-favicon/",
-      "hot": "121"
+      "title": "CSSQuake",
+      "url": "https://cssquake.com/",
+      "hot": "98"
     },
     {
       "rank": 2,
-      "title": "Where to Find the Colors Your Screen Can't Show You",
-      "url": "https://moultano.wordpress.com/2026/06/19/where-to-find-the-colors-your-screen-cant-show-you/",
-      "hot": "99"
+      "title": "I Stored a Website in a Favicon",
+      "url": "https://www.timwehrle.de/blog/i-stored-a-website-in-a-favicon/",
+      "hot": "190"
     },
     {
       "rank": 3,
-      "title": "Data Compression Explained (2012)",
-      "url": "https://mattmahoney.net/dc/dce.html",
-      "hot": "118"
+      "title": "Where to Find the Colors Your Screen Can't Show You",
+      "url": "https://moultano.wordpress.com/2026/06/19/where-to-find-the-colors-your-screen-cant-show-you/",
+      "hot": "217"
     },
     {
       "rank": 4,
-      "title": "There are no instances in ATProto",
-      "url": "https://overreacted.io/there-are-no-instances-in-atproto/",
-      "hot": "439"
+      "title": "16-year-old SATA II SSD survives 1 petabyte of writes, 25x the drive's rating",
+      "url": "https://www.tomshardware.com/pc-components/ssds/16-year-old-sata-ii-ssd-survives-1-petabyte-of-writes-25x-over-the-drives-tbw-rating",
+      "hot": "34"
     },
     {
       "rank": 5,
-      "title": "Can you see three trees?",
-      "url": "https://www.not-ship.com/can-you-see-three-trees/",
-      "hot": "110"
+      "title": "The Cold War's Accidental Whale Observatory",
+      "url": "https://thereader.mitpress.mit.edu/the-cold-wars-accidental-whale-observatory/",
+      "hot": "19"
     },
     {
       "rank": 6,
-      "title": "The discovery that changed how scientists think about memory",
-      "url": "https://www.ibm.com/think/news/discovery-changed-how-scientists-think-about-memory-kavli-prize",
-      "hot": "52"
+      "title": "Data Compression Explained (2012)",
+      "url": "https://mattmahoney.net/dc/dce.html",
+      "hot": "149"
     },
     {
       "rank": 7,
-      "title": "Surprising economics of load-balanced systems",
-      "url": "https://brooker.co.za/blog/2020/08/06/erlang.html",
-      "hot": "108"
+      "title": "Can you see three trees?",
+      "url": "https://www.not-ship.com/can-you-see-three-trees/",
+      "hot": "180"
     },
     {
       "rank": 8,
-      "title": "Hyundai buys Boston Dynamics",
-      "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
-      "hot": "825"
+      "title": "There are no instances in ATProto",
+      "url": "https://overreacted.io/there-are-no-instances-in-atproto/",
+      "hot": "472"
     },
     {
       "rank": 9,
-      "title": "How many of the 170k English words do you know?",
-      "url": "https://vocabowl-870366514258.us-west1.run.app/",
-      "hot": "365"
+      "title": "Bootimus – A Self-Contained PXE and HTTP Boot Server",
+      "url": "https://bootimus.com",
+      "hot": "5"
     },
     {
       "rank": 10,
       "title": "GPT-5.5 hallucinates 3x more than MIT-licensed GLM-5.2",
       "url": "https://arrowtsx.dev/bigger-models/",
-      "hot": "142"
+      "hot": "284"
     }
   ]
 }
