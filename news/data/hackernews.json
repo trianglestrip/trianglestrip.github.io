@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-20T13:07:58+00:00",
+  "updated_at": "2026-06-20T15:10:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "CSSQuake",
       "url": "https://cssquake.com/",
-      "hot": "98"
+      "hot": "218"
     },
     {
       "rank": 2,
-      "title": "I Stored a Website in a Favicon",
-      "url": "https://www.timwehrle.de/blog/i-stored-a-website-in-a-favicon/",
-      "hot": "190"
+      "title": "I restarted a 10 year old Xeon 174 times to delete 12 flags and gain 4 tps",
+      "url": "https://point.free/blog/delete-12-flags/",
+      "hot": "33"
     },
     {
       "rank": 3,
-      "title": "Where to Find the Colors Your Screen Can't Show You",
-      "url": "https://moultano.wordpress.com/2026/06/19/where-to-find-the-colors-your-screen-cant-show-you/",
-      "hot": "217"
+      "title": "Bootimus – A Self-Contained PXE and HTTP Boot Server",
+      "url": "https://bootimus.com",
+      "hot": "47"
     },
     {
       "rank": 4,
-      "title": "16-year-old SATA II SSD survives 1 petabyte of writes, 25x the drive's rating",
-      "url": "https://www.tomshardware.com/pc-components/ssds/16-year-old-sata-ii-ssd-survives-1-petabyte-of-writes-25x-over-the-drives-tbw-rating",
-      "hot": "34"
+      "title": "From PGP to Mythos: a brief history of export controls that didn't stop anyone",
+      "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
+      "hot": "44"
     },
     {
       "rank": 5,
-      "title": "The Cold War's Accidental Whale Observatory",
-      "url": "https://thereader.mitpress.mit.edu/the-cold-wars-accidental-whale-observatory/",
-      "hot": "19"
+      "title": "I Stored a Website in a Favicon",
+      "url": "https://www.timwehrle.de/blog/i-stored-a-website-in-a-favicon/",
+      "hot": "231"
     },
     {
       "rank": 6,
-      "title": "Data Compression Explained (2012)",
-      "url": "https://mattmahoney.net/dc/dce.html",
-      "hot": "149"
-    },
-    {
-      "rank": 7,
-      "title": "Can you see three trees?",
-      "url": "https://www.not-ship.com/can-you-see-three-trees/",
-      "hot": "180"
-    },
-    {
-      "rank": 8,
-      "title": "There are no instances in ATProto",
-      "url": "https://overreacted.io/there-are-no-instances-in-atproto/",
-      "hot": "472"
-    },
-    {
-      "rank": 9,
-      "title": "Bootimus – A Self-Contained PXE and HTTP Boot Server",
-      "url": "https://bootimus.com",
+      "title": "The European Social Stack",
+      "url": "https://european.social",
       "hot": "5"
     },
     {
+      "rank": 7,
+      "title": "Where to Find the Colors Your Screen Can't Show You",
+      "url": "https://moultano.wordpress.com/2026/06/19/where-to-find-the-colors-your-screen-cant-show-you/",
+      "hot": "295"
+    },
+    {
+      "rank": 8,
+      "title": "The Cold War's Accidental Whale Observatory",
+      "url": "https://thereader.mitpress.mit.edu/the-cold-wars-accidental-whale-observatory/",
+      "hot": "40"
+    },
+    {
+      "rank": 9,
+      "title": "Lithuanian startup launches open-source network to detect Shahed-type drones",
+      "url": "https://www.lrt.lt/en/news-in-english/19/2965205/lithuanian-startup-launches-open-source-network-to-detect-shahed-type-drones",
+      "hot": "61"
+    },
+    {
       "rank": 10,
-      "title": "GPT-5.5 hallucinates 3x more than MIT-licensed GLM-5.2",
-      "url": "https://arrowtsx.dev/bigger-models/",
-      "hot": "284"
+      "title": "Computed goto for efficient dispatch tables (2012)",
+      "url": "https://eli.thegreenplace.net/2012/07/12/computed-goto-for-efficient-dispatch-tables",
+      "hot": "16"
     }
   ]
 }
