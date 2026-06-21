@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-21T11:51:34+00:00",
+  "updated_at": "2026-06-21T15:25:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "#码上鸿蒙•智绘未来# 签名板能画线还不够：XComponent 渲染面、快照和释放边界怎么验",
-      "url": "https://ost.51cto.com/posts/48124",
-      "hot": "大家好，我是新手程序员Kevin(老K)。这篇想聊一个看起来很小、但一放进真实项目就容易写乱的HarmonyOS页面：验收签名板。我说的不是复杂电..."
+      "title": "麻省理工学院新研究：过度依赖聊天机器人或削弱批判思维",
+      "url": "https://www.51cto.com/article/846894.html",
+      "hot": "据英国《卫报》19 日报道，麻省理工学院的最新研究发现，过度依赖聊天机器人可能削弱批判性思维，甚至让人们越来越难以独立辨别错误信息。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS使用NDK构建UI组件开发实战",
-      "url": "https://ost.51cto.com/posts/48112",
-      "hot": "HarmonyOS使用NDK构建UI组件开发实战项目地址：https:gitcode.comHarmonyOSSamplesndkcreateui项目概述本项目演示了HarmonyOS平台下使用NDK..."
+      "title": "哈？改个URL就行！alphaXiv甩出论文复现神器，单卡也能跑",
+      "url": "https://www.51cto.com/article/846926.html",
+      "hot": "最近，alphaXiv 推出了一个面向 arXiv 论文的 autoresearch 功能。"
     },
     {
       "rank": 3,
-      "title": "从“零日漏洞”到国家级封禁：Fable 5与Mythos 5下架背后的AI安全权力博弈",
-      "url": "https://www.51cto.com/article/846823.html",
-      "hot": "这两款模型刚在几天前正式亮相，却因所谓的\"国家安全担忧\"而被迫下线，引发了业界广泛的质疑与讨论。这场事件不仅是技术与政策的碰撞，更是关于\"安全\"定义、AI伦理以及全球科技竞争格局的深刻思考。"
+      "title": "【$7,000】HackerOne 平台最新高危漏洞披露",
+      "url": "https://www.51cto.com/article/846902.html",
+      "hot": "HackerOne 作为全球漏洞赏金领域的标杆，此次被“自家平台”挖出高危漏洞，再次印证了一个道理：安全不是护城河，而是持续迭代的工程实践。"
     },
     {
       "rank": 4,
-      "title": "RAG新SOTA，还在五亿条数据上跑进秒级，只有它了",
-      "url": "https://www.51cto.com/article/846824.html",
-      "hot": "AI 圈扒完之后发现，最有意思的地方不是模型，而是 Claude Code 这个 Coding Agent 外面那层运行系统。"
+      "title": "Mythos引爆数字虫灾，全球几十亿设备裸奔！",
+      "url": "https://www.51cto.com/article/846913.html",
+      "hot": "Mythos化身赛博武器，引爆全球「数字虫灾」！白宫急下90分钟断网通牒，大模型惨遭封杀。顶级黑客火线救援，揭秘这场惊心动魄的生死博弈。"
     },
     {
       "rank": 5,
-      "title": "Dario访谈首曝：Mythos被称为「超级武器」",
-      "url": "https://www.51cto.com/article/846825.html",
-      "hot": "在这场69分钟完整访谈里，Dario Amodei 说人类真正面对的不是某个突然降临的奇点，而是一条已经开始垂直起飞的指数曲线。"
+      "title": "史上首次，Agent流量超越人类！",
+      "url": "https://www.51cto.com/article/846912.html",
+      "hot": "马斯克震惊！AI Agent网络流量占比已达57.5%，人类首次沦为互联网少数派。"
     },
     {
       "rank": 6,
-      "title": "Code Arena全球可用模型第一！智谱GLM-5.2上线并开源",
-      "url": "https://www.51cto.com/article/846826.html",
-      "hot": "全球百万用户参与盲测的前端开发评估系统Code Arena上，GLM-5.2取得全球可用模型第一（Claude Fable 5未解禁）。"
+      "title": "清华唐杰正面硬刚马斯克：中国AI达到Fable水平，还要更快！",
+      "url": "https://www.51cto.com/article/846911.html",
+      "hot": "硅谷教父Marc Andreessen亲自转发唐杰的回应，附上「Interesting」。这件事彻底出圈了。中国AI大佬正面硬刚马斯克的预测，意味着什么？或许，美国把一切都搞反了。"
     },
     {
       "rank": 7,
-      "title": "鹅厂面试官：“来讲讲什么是 CoT？为啥效果好？它有什么缺点或局限性？”我：“CoT 就是让模型一步步思考，效果会更好”",
-      "url": "https://www.51cto.com/article/846811.html",
-      "hot": "CoT 真不是一句「让模型一步一步想」能糊弄过去的。它为什么有效、什么时候反而起反作用、怎么和 Few-shot 搭配，得连着讲清楚。"
+      "title": "奥德赛全网爆火，三天狂揽三万星！顶流网红搓出本地版ChatGPT",
+      "url": "https://www.51cto.com/article/846910.html",
+      "hot": "顶流网红PewDiePie手搓的「本地版ChatGPT」，上线三天狂揽3万星！0订阅、拒交隐私，还自带Agent帮你打工。这款刷屏外网的自托管AI神器，竟然险些胜过科技巨头？"
     },
     {
       "rank": 8,
-      "title": "AI 编码进阶：从手动 Prompt 到自驱系统，14 步构建你的第一个 Loop 系统",
-      "url": "https://www.51cto.com/article/846810.html",
-      "hot": "这篇文章把当下社区最流行的 14 步 Loop Engineering 路线图 展示出来，给大家呈现的就是一套你可以立刻上手的日常工作流：任务卡 → 任务清单 → 验证记录 → 进度快照 → 放行检查。"
+      "title": "谷歌开源DiffusionGemma，自送差评，速度却快四倍",
+      "url": "https://www.51cto.com/article/846909.html",
+      "hot": "大厂发新模型，话术从来是「更强」。可谷歌这次的官方指南里写着：它不如自家旧款。"
     },
     {
       "rank": 9,
-      "title": "人工智能和智能体时代的本体论和知识图谱",
-      "url": "https://www.51cto.com/article/846809.html",
-      "hot": "本体和知识图谱是截然不同但又深度互补的两种工具。本体提供语义骨架：它是一个正式的、有意义的领域模型，不仅编码结构，还编码概念关系、层级结构和定义，反映了组织对其业务的特定理解。知识图谱在此骨架之上构建真实数据，用实际实体、属性值及其之间的链接填充语义框架，从而创建组织知识的丰富关联且可查询的表示。"
+      "title": "奥特曼押注2028：让AI学会造AI",
+      "url": "https://www.51cto.com/article/846908.html",
+      "hot": "秘密提交IPO文件的同一天，OpenAI没急着谈上市时间，反而立下三大目标：造自动化AI研究员、加速经济、让全球人手一个个人AGI。"
     },
     {
       "rank": 10,
-      "title": "VS Code 官宣支持 Vite+？尤雨溪的下一盘大棋曝光了",
-      "url": "https://www.51cto.com/article/846785.html",
-      "hot": "很多人第一次看到这个 PR，可能会觉得：新增一个 vp 配置项，没什么大不了。但对于前端生态来说，它释放出的信号非常明确：下一代 JavaScript 工具链，正在从\"多个工具拼装\"走向\"统一平台\"。"
+      "title": "G7惊魂2.5小时！奥特曼笑坐，达里奥「受审」",
+      "url": "https://www.51cto.com/article/846907.html",
+      "hot": "G7峰会惊变AI战场！特朗普一纸禁令掐断盟友AI命脉，全球巨头齐聚法国饭桌。奥特曼笑坐总统身旁，Dario Amodei却被隔离对面「受审」。2.5小时闭门午餐，一场没有硝烟的科技冷战正在上演！"
     }
   ]
 }

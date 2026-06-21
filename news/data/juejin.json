@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-21T11:51:19+00:00",
+  "updated_at": "2026-06-21T15:25:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "《Kingbase护城河》——数据库存储空间全景探测与精细化瘦身实战",
       "url": "https://juejin.cn/post/7652513657561792563",
-      "hot": "1206"
+      "hot": "1224"
     },
     {
       "rank": 2,
       "title": "KMP / CMP 鸿蒙版本 Beta 发布，他有什么特别之处？",
       "url": "https://juejin.cn/post/7651954728705212422",
-      "hot": "549"
+      "hot": "567"
     },
     {
       "rank": 3,
       "title": "老板：“请说出一个录用你的理由。”我脱口而出：“每个月 AI 支出都超过我的生活费了！”老板愣了一下，随即哈哈大笑：“好吧，你被录用了。”",
       "url": "https://juejin.cn/post/7652201148235382803",
-      "hot": "432"
+      "hot": "468"
     },
     {
       "rank": 4,
       "title": "我用 AI 一周写完了整个项目，上线第一天就崩了——这是我踩过最贵的 5 个坑",
       "url": "https://juejin.cn/post/7652581847890133018",
-      "hot": "414"
+      "hot": "459"
     },
     {
       "rank": 5,
-      "title": "DeepSeek 杀入多模态，识图功能正式上线！",
-      "url": "https://juejin.cn/post/7652384976291495974",
-      "hot": "414"
-    },
-    {
-      "rank": 6,
       "title": "HarmonyOS开发中错误处理策略：网络异常统一处理",
       "url": "https://juejin.cn/post/7652636952518754340",
       "hot": "288"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "HarmonyOS开发中RESTful API封装：网络层架构设计",
       "url": "https://juejin.cn/post/7652636952518721572",
       "hot": "279"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "HarmonyOS开发中请求拦截器链：日志、认证、重试",
       "url": "https://juejin.cn/post/7652976567262675007",
       "hot": "270"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "HarmonyOS APP事件驱动大揭秘",
       "url": "https://juejin.cn/post/7652676128406306859",
-      "hot": "234"
+      "hot": "243"
+    },
+    {
+      "rank": 9,
+      "title": "一套 Spec-First 的 AI 编程工作流",
+      "url": "https://juejin.cn/post/7652581847889330202",
+      "hot": "243"
     },
     {
       "rank": 10,
-      "title": "一套 Spec-First 的 AI 编程工作流",
-      "url": "https://juejin.cn/post/7652581847889330202",
-      "hot": "216"
+      "title": "Android 协程并发控制：别动线程池，控制好并发语义就够了",
+      "url": "https://juejin.cn/post/7652257652502298662",
+      "hot": "207"
     }
   ]
 }
