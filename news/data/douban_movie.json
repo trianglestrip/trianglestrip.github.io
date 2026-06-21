@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-21T18:19:59+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-06-21T21:39:29+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -25,45 +24,45 @@
     },
     {
       "rank": 4,
-      "title": "揭秘日",
-      "url": "https://movie.douban.com/subject/36860212/",
-      "hot": "评分 6.5"
-    },
-    {
-      "rank": 5,
-      "title": "我看见两朵一样的云",
-      "url": "https://movie.douban.com/subject/35211447/",
-      "hot": ""
-    },
-    {
-      "rank": 6,
-      "title": "莫离",
-      "url": "https://movie.douban.com/subject/37234503/",
-      "hot": ""
-    },
-    {
-      "rank": 7,
-      "title": "镖人：风起大漠",
-      "url": "https://movie.douban.com/subject/36474027/",
-      "hot": "评分 7.5"
-    },
-    {
-      "rank": 8,
       "title": "玩具总动员5",
       "url": "https://movie.douban.com/subject/36238849/",
       "hot": "评分 8.0"
     },
     {
+      "rank": 5,
+      "title": "揭秘日",
+      "url": "https://movie.douban.com/subject/36860212/",
+      "hot": "评分 6.5"
+    },
+    {
+      "rank": 6,
+      "title": "镖人：风起大漠",
+      "url": "https://movie.douban.com/subject/36474027/",
+      "hot": "评分 7.5"
+    },
+    {
+      "rank": 7,
+      "title": "我看见两朵一样的云",
+      "url": "https://movie.douban.com/subject/35211447/",
+      "hot": ""
+    },
+    {
+      "rank": 8,
+      "title": "抓特务",
+      "url": "https://movie.douban.com/subject/36812879/",
+      "hot": "评分 7.5"
+    },
+    {
       "rank": 9,
-      "title": "南部档案",
-      "url": "https://movie.douban.com/subject/35465012/",
+      "title": "莫离",
+      "url": "https://movie.douban.com/subject/37234503/",
       "hot": ""
     },
     {
       "rank": 10,
-      "title": "抓特务",
-      "url": "https://movie.douban.com/subject/36812879/",
-      "hot": "评分 7.5"
+      "title": "南部档案",
+      "url": "https://movie.douban.com/subject/35465012/",
+      "hot": ""
     }
   ]
 }

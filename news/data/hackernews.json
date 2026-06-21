@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-21T18:20:29+00:00",
+  "updated_at": "2026-06-21T21:39:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Code duplication is far cheaper than the wrong abstraction (2016)",
-      "url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
-      "hot": "188"
+      "title": "JSON-LD Explained for Personal Websites",
+      "url": "https://hawksley.dev/blog/json-ld-explained-for-personal-websites/",
+      "hot": "111"
     },
     {
       "rank": 2,
-      "title": "Burnout Is Real in the OSS World, Says John-David Dalton, Creator of Lodash",
-      "url": "https://openjsf.org/blog/burnout-is-real-for-open-source-maintainers",
-      "hot": "34"
+      "title": "The Anatomy of an AI-Native Org",
+      "url": "https://ajeygore.in/content/the-anatomy-of-an-ai-native-org",
+      "hot": "8"
     },
     {
       "rank": 3,
-      "title": "(How to Write a (Lisp) Interpreter (In Python)) (2010)",
-      "url": "https://norvig.com/lispy.html",
-      "hot": "73"
+      "title": "Prefer duplication over the wrong abstraction (2016)",
+      "url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
+      "hot": "371"
     },
     {
       "rank": 4,
-      "title": "Beyond All Reason (Free Total Annihilation Inspired RTS)",
-      "url": "https://www.beyondallreason.info",
-      "hot": "304"
+      "title": "Apertus – Open Foundation Model for Sovereign AI",
+      "url": "https://apertvs.ai/",
+      "hot": "5"
     },
     {
       "rank": 5,
-      "title": "The Minimum Viable Unit of Saleable Software",
-      "url": "https://brandur.org/minimum-viable-unit",
-      "hot": "33"
+      "title": "Identity verification on Claude",
+      "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+      "hot": "427"
     },
     {
       "rank": 6,
-      "title": "Identity verification on Claude",
-      "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
-      "hot": "154"
+      "title": "Beyond All Reason (Free Total Annihilation Inspired RTS)",
+      "url": "https://www.beyondallreason.info",
+      "hot": "387"
     },
     {
       "rank": 7,
-      "title": "The Commodore Callback 8020 smart flip phone",
-      "url": "https://www.wired.me/story/commodore-made-a-digital-detox-phone-that-isnt-dumb",
-      "hot": "86"
+      "title": "(How to Write a (Lisp) Interpreter (In Python)) (2010)",
+      "url": "https://norvig.com/lispy.html",
+      "hot": "145"
     },
     {
       "rank": 8,
-      "title": "Occupancy Math on the AMD MI355X: A From-First-Principles Guide",
-      "url": "https://indianspeedster.github.io/blog/occupancy-math-mi355x/",
-      "hot": "18"
+      "title": "Ask for no, don't ask for yes (2022)",
+      "url": "https://www.mooreds.com/wordpress/archives/3518",
+      "hot": "49"
     },
     {
       "rank": 9,
-      "title": "Loupe – A iOS app that raises awareness about what native apps can see",
-      "url": "https://github.com/mysk-research/loupe",
-      "hot": "462"
+      "title": "The minimum viable unit of saleable software",
+      "url": "https://brandur.org/minimum-viable-unit",
+      "hot": "89"
     },
     {
       "rank": 10,
-      "title": "Developers don't understand CORS (2019)",
-      "url": "https://fosterelli.co/developers-dont-understand-cors",
-      "hot": "299"
+      "title": "Stop wasting tokens and re explaining your project between sessions",
+      "url": "https://github.com/raiyanyahya/recall",
+      "hot": "4"
     }
   ]
 }
