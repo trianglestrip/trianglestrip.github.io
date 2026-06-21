@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-21T09:06:30+00:00",
+  "updated_at": "2026-06-21T11:51:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Google Hits 50% IPv6",
-      "url": "https://blog.apnic.net/2026/04/28/google-hits-50-ipv6/",
-      "hot": "27"
+      "title": "A 3D voxel game engine written in APL",
+      "url": "https://github.com/namgyaaal/avoxelgame",
+      "hot": "66"
     },
     {
       "rank": 2,
-      "title": "A 3D voxel game engine written in APL",
-      "url": "https://github.com/namgyaaal/avoxelgame",
-      "hot": "22"
+      "title": "Google Hits 50% IPv6",
+      "url": "https://blog.apnic.net/2026/04/28/google-hits-50-ipv6/",
+      "hot": "160"
     },
     {
       "rank": 3,
       "title": "Developers don't understand CORS (2019)",
       "url": "https://fosterelli.co/developers-dont-understand-cors",
-      "hot": "184"
+      "hot": "229"
     },
     {
       "rank": 4,
-      "title": "Zigzag Decoding with AVX-512",
-      "url": "https://zeux.io/2026/06/17/zigzag-decoding-avx512/",
-      "hot": "67"
+      "title": "Loupe – A iOS app that raises awareness about what native apps can see",
+      "url": "https://github.com/mysk-research/loupe",
+      "hot": "335"
     },
     {
       "rank": 5,
-      "title": "Loupe – A iOS app that raises awareness about what native apps can see",
-      "url": "https://github.com/mysk-research/loupe",
-      "hot": "269"
+      "title": "Zigzag Decoding with AVX-512",
+      "url": "https://zeux.io/2026/06/17/zigzag-decoding-avx512/",
+      "hot": "82"
     },
     {
       "rank": 6,
-      "title": "Renting a sewing machine from the library",
-      "url": "https://www.bbc.com/future/article/20260618-the-weird-and-wonderful-libraries-of-finland",
-      "hot": "220"
+      "title": "Running MicroVMs in Proxmox VE, the Easy Way",
+      "url": "https://taoofmac.com/space/blog/2026/06/18/1845",
+      "hot": "85"
     },
     {
       "rank": 7,
-      "title": "Epoll vs. io_uring in Linux",
-      "url": "https://sibexi.co/posts/epoll-vs-io_uring/",
-      "hot": "151"
+      "title": "Renting a sewing machine from the library",
+      "url": "https://www.bbc.com/future/article/20260618-the-weird-and-wonderful-libraries-of-finland",
+      "hot": "249"
     },
     {
       "rank": 8,
-      "title": "Building reliable agentic AI systems",
-      "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
-      "hot": "95"
+      "title": "Windows UI evolution: Clicking an unassociated file",
+      "url": "https://movq.de/blog/postings/2026-06-20/0/POSTING-en.html",
+      "hot": "47"
     },
     {
       "rank": 9,
-      "title": "Slow breathing modulates brain function and risk behavior",
-      "url": "https://www.cell.com/neuron/fulltext/S0896-6273(26)00339-9",
-      "hot": "189"
+      "title": "Epoll vs. io_uring in Linux",
+      "url": "https://sibexi.co/posts/epoll-vs-io_uring/",
+      "hot": "185"
     },
     {
       "rank": 10,
-      "title": "Show HN: TownSquare, a tiny presence layer for websites",
-      "url": "https://townsquare.cauenapier.com/",
-      "hot": "166"
+      "title": "Slow breathing modulates brain function and risk behavior",
+      "url": "https://www.cell.com/neuron/fulltext/S0896-6273(26)00339-9",
+      "hot": "227"
     }
   ]
 }

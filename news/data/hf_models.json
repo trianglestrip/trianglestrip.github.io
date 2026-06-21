@@ -1,38 +1,38 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-21T05:22:51+00:00",
+  "updated_at": "2026-06-21T11:51:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "hot": "1996"
+      "hot": "2021"
     },
     {
       "rank": 2,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "1711"
+      "hot": "1740"
     },
     {
       "rank": 3,
       "title": "MiniMaxAI/MiniMax-M3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "1165"
+      "hot": "1168"
     },
     {
       "rank": 4,
       "title": "WeiboAI/VibeThinker-3B",
       "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
-      "hot": "518"
+      "hot": "532"
     },
     {
       "rank": 5,
       "title": "moonshotai/Kimi-K2.7-Code",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
-      "hot": "932"
+      "hot": "938"
     },
     {
       "rank": 6,
@@ -44,25 +44,25 @@
       "rank": 7,
       "title": "microsoft/FastContext-1.0-4B-SFT",
       "url": "https://huggingface.co/microsoft/FastContext-1.0-4B-SFT",
-      "hot": "247"
+      "hot": "252"
     },
     {
       "rank": 8,
       "title": "nvidia/LocateAnything-3B",
       "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "2221"
+      "hot": "2228"
     },
     {
       "rank": 9,
       "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
       "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2048"
+      "hot": "2057"
     },
     {
       "rank": 10,
       "title": "unsloth/GLM-5.2-GGUF",
       "url": "https://huggingface.co/unsloth/GLM-5.2-GGUF",
-      "hot": "208"
+      "hot": "213"
     }
   ]
 }
