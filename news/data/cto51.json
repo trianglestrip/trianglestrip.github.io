@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-22T04:14:33+00:00",
+  "updated_at": "2026-06-22T10:16:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "在手机上找城市，敲几个字母就够了——我用 HarmonyOS 的 Search 组件做了个城市速查器",
-      "url": "https://ost.51cto.com/posts/48513",
-      "hot": "前言上个周末，我在一个旅行App上订机票，填目的地的时候，它让我从200多个城市里选。我划了半分钟屏幕，才找到&ldquo;成都&rdquo;&mdash;&mdash;一边划一边想，..."
+      "title": "# 码上鸿蒙•智绘未来# 会议日程管理：Calendar Kit 事件 + Notification Kit 提醒 + User Auth 签到",
+      "url": "https://ost.51cto.com/posts/48689",
+      "hot": "开会最怕两件事：忘了开会时间，以及会议签到的繁琐流程。这篇用三个Kit做一个会议管理工具：CalendarKit：创建会议日历事件NotificationKi..."
     },
     {
       "rank": 2,
-      "title": "那个加减号背后的数学——我在 HarmonyOS 里用 Counter 组件搭了个购物车",
-      "url": "https://ost.51cto.com/posts/48509",
-      "hot": "前言你有没有在网上买过菜？手机屏幕上，每样商品旁边都有一对小小的加减号，手指一戳，数量就变了，屏幕底部的总价也跟着悄悄跳动。这个交..."
+      "title": "# 码上鸿蒙•智绘未来#  阅读书签助手：Vision Kit 文字识别 + RichEditor 批注 + Preferences 阅读记录",
+      "url": "https://ost.51cto.com/posts/48688",
+      "hot": "爱看书的人都有个习惯：看到好的段落想标记下来，写几句感想。纸质书用书签和笔，电子书用App的标注功能。这篇做一个&quot;阅读书签助手&quot;&mdash;&mdash;从..."
     },
     {
       "rank": 3,
+      "title": "清华NANO滤波器：非线性贝叶斯状态估计迈入优化迭代计算的新范式",
+      "url": "https://www.51cto.com/article/847027.html",
+      "hot": "NANO滤波器是一种新的非线性贝叶斯状态估计方法，它不依赖线性化模型，而是将预测和更新步骤转化为优化问题。这种方法在高斯分布空间中使用自然梯度，更精确地逼近最优后验，同时利用Stein引理避免显式求导，提升鲁棒性。"
+    },
+    {
+      "rank": 4,
+      "title": "美国新提案：「国有化」AI巨头，「全民持股」50%",
+      "url": "https://www.51cto.com/article/847028.html",
+      "hot": "84岁的桑德斯宣布，他的新提案将主张对OpenAI、Anthropic、xAI征收50%的股权税，建一个全民共享的 AI 主权财富基金。"
+    },
+    {
+      "rank": 5,
+      "title": "Claude下一代神级模型秘密出炉！Sonnet-5被曝下周上线",
+      "url": "https://www.51cto.com/article/847009.html",
+      "hot": "Claude新模型要来了？据悉，Sonnet-5已经现身，下一代神级模型Fennec最快下周上线！而且，Mythos 5.1或6，已经在内部完成训练，Mythos升级版仅用60天跨代诞生。全面封锁，反而让Anthropic的迭代疯狂加速了！"
+    },
+    {
+      "rank": 6,
       "title": "老码农眼中的提示词注入攻防—13种拆解",
       "url": "https://www.51cto.com/article/847000.html",
       "hot": "安全，永远不容忽视，大模型时代依然如此。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "你真的清楚LLM、RAG、Agent 之间到底什么关系？这五张图讲清楚",
       "url": "https://www.51cto.com/article/846984.html",
       "hot": "这篇文章不从机器学习训练讲起，也不讲损失函数、特征工程、过拟合这些传统机器学习概念。我们只关心一件事：今天的大模型应用到底由哪些核心概念组成，它们分别控制什么，以及它们如何一起构成一个可用的 AI 系统。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "20万行祖传代码一键变可视化图谱！这个爆火开源神器支持各大主流AI工具",
       "url": "https://www.51cto.com/article/846983.html",
       "hot": "Understand Anything 是一个 Claude Code 插件,最初由开发者 Lum1104 创建,目前由 Egonex 团队维护并开源,使用 MIT 协议。"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "Claude Code之父删了IDE！干掉提示词，只写循环",
       "url": "https://www.51cto.com/article/846965.html",
       "hot": "Claude Code之父删掉IDE，并表示以后只写循环，不再写提示词了：你苦练两年的提示词工程，真要被一夜干掉了吗？"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "告别「单科专家」：首个Agent全面进化框架EEVEE发布",
       "url": "https://www.51cto.com/article/846982.html",
       "hot": "来自上海交通大学与普林斯顿大学的研究团队发布了 EEVEE，一个面向 LLM Agent 的测试时提示学习框架。"
-    },
-    {
-      "rank": 8,
-      "title": "Fable 5准备复活？Anthropic联创：我们彻底低估了Scaling",
-      "url": "https://www.51cto.com/article/846963.html",
-      "hot": "Fable 5回来了？Claude安卓版的「模型选择器」中，消失一周的Fable 5意外现身。"
-    },
-    {
-      "rank": 9,
-      "title": "5.4万亿！英伟达成AI最大地主，大模型巨头沦为算力佃农",
-      "url": "https://www.51cto.com/article/846962.html",
-      "hot": "当AI神话被账本照亮，最刺眼的真相终于浮出水面。退潮时刻，狂欢结束。探照灯打过来，谁在裸泳，一目了然。"
-    },
-    {
-      "rank": 10,
-      "title": "LangGraph 新手入门：手把手搭建一个会调用工具的天气查询 Agent",
-      "url": "https://www.51cto.com/article/846981.html",
-      "hot": "LangGraph 是面向有状态、可循环、可恢复执行的 Agent 编排运行时，而不只是把多个步骤简单串起来。这也是它比普通链更适合 Agent 的核心原因。这篇文章我们就从零开始，搭一个最小可运行的天气查询 Agent，让你真正理解：什么是 State，什么是 Node，什么是 Router..."
     }
   ]
 }

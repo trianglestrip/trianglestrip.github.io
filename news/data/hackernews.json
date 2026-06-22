@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-22T04:14:35+00:00",
+  "updated_at": "2026-06-22T10:16:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Did my old job only exist because of fraud?",
-      "url": "https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud/",
-      "hot": "313"
+      "title": "Deno Desktop",
+      "url": "https://docs.deno.com/runtime/desktop/",
+      "hot": "382"
     },
     {
       "rank": 2,
-      "title": "Apertus – Open Foundation Model for Sovereign AI",
-      "url": "https://apertvs.ai/",
-      "hot": "262"
+      "title": "Help I accidentally a wigglegram",
+      "url": "https://lmao.center/blog/wiggle-accidents/",
+      "hot": "251"
     },
     {
       "rank": 3,
-      "title": "Help I accidentally a wigglegram",
-      "url": "https://lmao.center/blog/wiggle-accidents/",
-      "hot": "48"
+      "title": "Did my old job only exist because of fraud?",
+      "url": "https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud/",
+      "hot": "562"
     },
     {
       "rank": 4,
-      "title": "Sakana Fugu",
-      "url": "https://sakana.ai/fugu/",
-      "hot": "54"
+      "title": "Apertus – Open Foundation Model for Sovereign AI",
+      "url": "https://apertvs.ai/",
+      "hot": "387"
     },
     {
       "rank": 5,
-      "title": "Memory Safe Inline Assembly",
-      "url": "https://fil-c.org/inlineasm",
-      "hot": "47"
+      "title": "GLM 5.2 vs. Opus",
+      "url": "https://techstackups.com/comparisons/glm-5.2-vs-opus/",
+      "hot": "132"
     },
     {
       "rank": 6,
-      "title": "Everything is logarithms",
-      "url": "https://alexkritchevsky.com/2026/05/25/everything-is-logarithms.html",
-      "hot": "146"
+      "title": "Munich 1991: The Roots of the Current AI Boom",
+      "url": "https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html",
+      "hot": "65"
     },
     {
       "rank": 7,
-      "title": "There is minimal downside to switching to open models",
-      "url": "https://www.marble.onl/posts/cancel_claude.html",
-      "hot": "103"
+      "title": "Investors get real-time view of UK bond market activity for the first time",
+      "url": "https://www.fca.org.uk/news/press-releases/investors-get-real-time-view-uk-bond-market-activity-first-time",
+      "hot": "15"
     },
     {
       "rank": 8,
-      "title": "The Flat Curve Society",
-      "url": "https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b",
-      "hot": "13"
+      "title": "Codex logging bug may write TBs to local SSDs",
+      "url": "https://github.com/openai/codex/issues/28224",
+      "hot": "90"
     },
     {
       "rank": 9,
-      "title": "1983 Northern Telecom Commodore Phone",
-      "url": "https://www.oldtelephoneroom.ca/1983-northern-telecom-commodore-phone/",
-      "hot": "30"
+      "title": "Memory Safe Inline Assembly",
+      "url": "https://fil-c.org/inlineasm",
+      "hot": "115"
     },
     {
       "rank": 10,
-      "title": "How I play video games with spinal muscular atrophy",
-      "url": "https://www.openassistivetech.org/how-i-actually-play-video-games-with-sma-the-tools-i-use-every-day/",
-      "hot": "57"
+      "title": "Lisp in the Rust Type System",
+      "url": "https://github.com/playX18/lisp-in-types/",
+      "hot": "73"
     }
   ]
 }
