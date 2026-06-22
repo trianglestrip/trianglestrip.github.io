@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-22T10:16:07+00:00",
+  "updated_at": "2026-06-22T15:34:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Deno Desktop",
-      "url": "https://docs.deno.com/runtime/desktop/",
-      "hot": "382"
+      "title": "Pledging Another $400k to the Zig Software Foundation",
+      "url": "https://mitchellh.com/writing/zig-donation-2026",
+      "hot": "323"
     },
     {
       "rank": 2,
-      "title": "Help I accidentally a wigglegram",
-      "url": "https://lmao.center/blog/wiggle-accidents/",
-      "hot": "251"
+      "title": "Never Give Them Your Face",
+      "url": "https://nevergivethemyourface.com/",
+      "hot": "265"
     },
     {
       "rank": 3,
-      "title": "Did my old job only exist because of fraud?",
-      "url": "https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud/",
-      "hot": "562"
+      "title": "Claude Code's \"extended thinking\" is a summary- not authentic thinking",
+      "url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/",
+      "hot": "61"
     },
     {
       "rank": 4,
-      "title": "Apertus – Open Foundation Model for Sovereign AI",
-      "url": "https://apertvs.ai/",
-      "hot": "387"
+      "title": "Deno Desktop",
+      "url": "https://docs.deno.com/runtime/desktop/",
+      "hot": "769"
     },
     {
       "rank": 5,
-      "title": "GLM 5.2 vs. Opus",
-      "url": "https://techstackups.com/comparisons/glm-5.2-vs-opus/",
-      "hot": "132"
+      "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+      "url": "https://hustvl.github.io/Moebius/",
+      "hot": "37"
     },
     {
       "rank": 6,
-      "title": "Munich 1991: The Roots of the Current AI Boom",
-      "url": "https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html",
-      "hot": "65"
+      "title": "Chevron signs 20-year power agreement with Microsoft for West Texas data center",
+      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
+      "hot": "22"
     },
     {
       "rank": 7,
-      "title": "Investors get real-time view of UK bond market activity for the first time",
-      "url": "https://www.fca.org.uk/news/press-releases/investors-get-real-time-view-uk-bond-market-activity-first-time",
-      "hot": "15"
+      "title": "GLM 5.2 vs. Opus",
+      "url": "https://techstackups.com/comparisons/glm-5.2-vs-opus/",
+      "hot": "332"
     },
     {
       "rank": 8,
       "title": "Codex logging bug may write TBs to local SSDs",
       "url": "https://github.com/openai/codex/issues/28224",
-      "hot": "90"
+      "hot": "293"
     },
     {
       "rank": 9,
-      "title": "Memory Safe Inline Assembly",
-      "url": "https://fil-c.org/inlineasm",
-      "hot": "115"
+      "title": "Die analysis of the 8087 math coprocessor's fast bit shifter",
+      "url": "https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html",
+      "hot": "18"
     },
     {
       "rank": 10,
-      "title": "Lisp in the Rust Type System",
-      "url": "https://github.com/playX18/lisp-in-types/",
-      "hot": "73"
+      "title": "I built Ponytrail, a local audit trail for AI coding-agent edits",
+      "url": "https://github.com/0xroylee/ponytrail",
+      "hot": "14"
     }
   ]
 }
