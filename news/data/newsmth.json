@@ -1,68 +1,68 @@
 {
   "source": "newsmth",
   "title": "水木社区",
-  "updated_at": "2026-06-21T23:59:53+00:00",
+  "updated_at": "2026-06-22T04:14:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "凑个热闹",
-      "url": "https://wap.newsmth.net/article/9f3ef2f4fb83cf5dbb7fa43ef10db94e?title=%E8%B0%88%E6%83%85%E8%AF%B4%E7%88%B1&from=home",
-      "hot": "免责声明：以下内容，纯属造谣。如有雷同，实属见鬼。所有后果，概不负责。 近期贵版出现关于一系列乡男小坎小作文，可惜开篇被删了，我都没看全回帖。从各篇回帖中也可以看出，大家都有一些疑问，因为作者本来也没想把事情说明白，既然如此，就有了发挥的空间，加上一些不负责任的猜想，似乎可以得到一些好玩的结论。 首先我在第三篇中提出一……"
-    },
-    {
-      "rank": 2,
-      "title": "电费已经足够便宜了，但是很多公共场所不开足空调",
-      "url": "https://wap.newsmth.net/article/b3b27dcd35e7496fbe6fb0fab4d05f6a?title=%E5%AE%B6%E5%BA%AD%E7%94%9F%E6%B4%BB&from=home",
-      "hot": "体感很不爽"
-    },
-    {
-      "rank": 3,
-      "title": "用过下面软件中两个以上的人，就可以算老了",
-      "url": "https://wap.newsmth.net/article/2ee0cbca71510946b940c2e90804a5bc?title=%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4&from=home",
-      "hot": ""
-    },
-    {
-      "rank": 4,
-      "title": "中考这套规则设计真是有点儿变态。",
-      "url": "https://wap.newsmth.net/article/23ab24176c57f07e0be2062e75357dad?title=%E5%84%BF%E7%AB%A5%E6%95%99%E8%82%B2&from=home",
-      "hot": ""
-    },
-    {
-      "rank": 5,
-      "title": "为啥国足不能像日本这样进步。。",
-      "url": "https://wap.newsmth.net/article/a1aab49c6deb4c20af8bd2a3dc63644e?title=%E5%9B%BD%E9%99%85%E8%B6%B3%E7%90%83&from=home",
-      "hot": ""
-    },
-    {
-      "rank": 6,
-      "title": "看了一个巴尔的摩街头视频感觉老美很难过300年周期律",
-      "url": "https://wap.newsmth.net/article/5f2bcc7870b5dc98af4fd1b56782739e?title=%E5%9C%B0%E7%90%86&from=home",
-      "hot": "巴尔的摩整个情况基本是晚清感觉"
-    },
-    {
-      "rank": 7,
-      "title": "为啥东大没人搞大的创新",
-      "url": "https://wap.newsmth.net/article/6cd5309592361232f45a461ade1b1476?title=%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9&from=home",
-      "hot": "那么多家跟风Spacex，最后成功的肯定是九死一生，像火箭实验室stoke航天那样创新也是九死一生，为啥不选择创新模式？至少将来航天史还有个失败案例 --发自&nbsp;ismth(丝滑版)"
-    },
-    {
-      "rank": 8,
-      "title": "请教临床专业",
-      "url": "https://wap.newsmth.net/article/8f8d808cf1d6a99e567e7e6772879301?title=%E9%AB%98%E8%80%83%C2%B7%E5%A4%A7%E5%AD%A6&from=home",
-      "hot": "--发自&nbsp;ismth(丝滑版)"
-    },
-    {
-      "rank": 9,
       "title": "联合早报说，乌克兰计划输出无人机技术给日菲台，乌的技术很好",
       "url": "https://wap.newsmth.net/article/42d10b62f835ee99e95ab6c009d987f4?title=%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9&from=home",
       "hot": ""
     },
     {
+      "rank": 2,
+      "title": "用过下面软件中两个以上的人，就可以算老了",
+      "url": "https://wap.newsmth.net/article/2ee0cbca71510946b940c2e90804a5bc?title=%E4%BC%BC%E6%B0%B4%E6%B5%81%E5%B9%B4&from=home",
+      "hot": ""
+    },
+    {
+      "rank": 3,
+      "title": "为啥国足不能像日本这样进步。。",
+      "url": "https://wap.newsmth.net/article/a1aab49c6deb4c20af8bd2a3dc63644e?title=%E5%9B%BD%E9%99%85%E8%B6%B3%E7%90%83&from=home",
+      "hot": ""
+    },
+    {
+      "rank": 4,
+      "title": "为啥东大没人搞大的创新",
+      "url": "https://wap.newsmth.net/article/6cd5309592361232f45a461ade1b1476?title=%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9&from=home",
+      "hot": "那么多家跟风Spacex，最后成功的肯定是九死一生，像火箭实验室stoke航天那样创新也是九死一生，为啥不选择创新模式？至少将来航天史还有个失败案例 --发自&nbsp;ismth(丝滑版)"
+    },
+    {
+      "rank": 5,
+      "title": "中考这套规则设计真是有点儿变态。",
+      "url": "https://wap.newsmth.net/article/23ab24176c57f07e0be2062e75357dad?title=%E5%84%BF%E7%AB%A5%E6%95%99%E8%82%B2&from=home",
+      "hot": ""
+    },
+    {
+      "rank": 6,
+      "title": "雷军回应小女孩事件：大家笑一笑就好",
+      "url": "https://wap.newsmth.net/article/f7dc27e680052409ee6ad5277ca9f1c7?title=%E6%B1%BD%E8%BD%A6%E4%B8%96%E7%95%8C&from=home",
+      "hot": "6月21日，作家刘震云和小米集团创始人雷军举行跨界对话。活动中，雷军回应了6月15日在武汉“过早”时，被路过的小女孩吐槽，“吃早饭还要这么多人拍照！” 雷军表示他回武汉参加世界青年发展论坛，早晨的时候跟同事们说要不去过个早（吃早饭），同事说要不记录下来，然后也帮家乡宣传一下，雷军答应了，结果蹲在路边吃早饭时，来了很多人……"
+    },
+    {
+      "rank": 7,
+      "title": "有没有可能菊花的智驾，即使睡觉也比某车的黄毛驾驶安全啊？",
+      "url": "https://wap.newsmth.net/article/585a526c8208137ec559079900a1894b?title=%E6%B1%BD%E8%BD%A6%E4%B8%96%E7%95%8C&from=home",
+      "hot": "智驾，你不能拿差生的成绩订全校的课程表吧。"
+    },
+    {
+      "rank": 8,
+      "title": "欢迎回帖 感兴趣的小区，我来帖小区的成交详情",
+      "url": "https://wap.newsmth.net/article/3fe7d8644b2456d3c1a850ca26dc06e7?title=%E4%BA%8C%E6%89%8B%E6%88%BF%E4%BA%A4%E6%B5%81&from=home",
+      "hot": "信息时代，尤其还是几百万的单子。"
+    },
+    {
+      "rank": 9,
+      "title": "男光棍真是无敌之人",
+      "url": "https://wap.newsmth.net/article/7a34de93a20cccd5a44027b21d0a1a95?title=%E5%AE%B6%E5%BA%AD%E7%94%9F%E6%B4%BB&from=home",
+      "hot": "我们小区群昨天吵起来了，源于一家小孩在小区下面踢球，经常挡住别人走路，，又是下班高峰期。然后一个男光棍在小区群里说，谁家小孩，不管管，开始是跟孩子妈妈在吵，后面孩子爸爸也加进来了，这个男光棍根本吵不过，这两个家长也是很嚣张之人，说你要是不服，咱们去小区门口碰一下子，那个男光棍就说，那就干呗，我没老婆没孩子，户口本就我一……"
+    },
+    {
       "rank": 10,
-      "title": "堆雷达的Z驾没有小灶了",
-      "url": "https://wap.newsmth.net/article/7543c03cfa261075812161279175df1e?title=%E6%B1%BD%E8%BD%A6%E4%B8%96%E7%95%8C&from=home",
-      "hot": "第2版Z驾征求意见稿彻底删除激光雷达、毫米波雷达、摄像头数量、硬件组合全部名词，替换为纯性能约束 厂家自主选择技术路线 结果导向 纯视觉也好，堆满雷达也好，谁能通过测试谁N。"
+      "title": "现代西医进行双盲实验仅仅70余年，之前的西医都不科学？",
+      "url": "https://wap.newsmth.net/article/d9858469366ce21ad4f461dd4d3bd4be?title=%E6%88%91%E7%9A%84%E5%AE%B6%E5%BA%AD&from=home",
+      "hot": "都不能治病？ --发自&nbsp;ismth(丝滑版)"
     }
   ]
 }

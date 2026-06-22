@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-22T00:00:05+00:00",
+  "updated_at": "2026-06-22T04:14:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "我在 C++ 里写了个类，它的内存长啥样？",
-      "url": "https://www.51cto.com/article/846933.html",
-      "hot": "C++ 对象的内存布局，从普通成员、到虚函数、到多继承、再到虚继承，每一步都有明确的规则可循。"
+      "title": "在手机上找城市，敲几个字母就够了——我用 HarmonyOS 的 Search 组件做了个城市速查器",
+      "url": "https://ost.51cto.com/posts/48513",
+      "hot": "前言上个周末，我在一个旅行App上订机票，填目的地的时候，它让我从200多个城市里选。我划了半分钟屏幕，才找到&ldquo;成都&rdquo;&mdash;&mdash;一边划一边想，..."
     },
     {
       "rank": 2,
-      "title": "搞懂 Linux 内核 BPF 技术，才算真正吃透 Linux 内核底层",
-      "url": "https://www.51cto.com/article/846897.html",
-      "hot": "BPF 程序本质上跑在一个寄存器虚拟机上。跟 JVM 这种通用虚拟机不一样，BPF 虚拟机是高度受限的。"
+      "title": "那个加减号背后的数学——我在 HarmonyOS 里用 Counter 组件搭了个购物车",
+      "url": "https://ost.51cto.com/posts/48509",
+      "hot": "前言你有没有在网上买过菜？手机屏幕上，每样商品旁边都有一对小小的加减号，手指一戳，数量就变了，屏幕底部的总价也跟着悄悄跳动。这个交..."
     },
     {
       "rank": 3,
-      "title": "DrissionPage，甩 Selenium 几条街",
-      "url": "https://www.51cto.com/article/846903.html",
-      "hot": "不是说Selenium不好，它毕竟生态大、文档多。但如果你重新开始一个项目，或者像我一样被反爬搞得很痛苦，真的建议试试DrissionPage。"
+      "title": "老码农眼中的提示词注入攻防—13种拆解",
+      "url": "https://www.51cto.com/article/847000.html",
+      "hot": "安全，永远不容忽视，大模型时代依然如此。"
     },
     {
       "rank": 4,
-      "title": "@Lazy 延迟加载：解决循环依赖+项目启动慢双难题",
-      "url": "https://www.51cto.com/article/846901.html",
-      "hot": "@Lazy看似简单，实则是Spring容器非常精妙的底层设计，既能解决工程痛点，又存在极强的使用边界。​"
+      "title": "你真的清楚LLM、RAG、Agent 之间到底什么关系？这五张图讲清楚",
+      "url": "https://www.51cto.com/article/846984.html",
+      "hot": "这篇文章不从机器学习训练讲起，也不讲损失函数、特征工程、过拟合这些传统机器学习概念。我们只关心一件事：今天的大模型应用到底由哪些核心概念组成，它们分别控制什么，以及它们如何一起构成一个可用的 AI 系统。"
     },
     {
       "rank": 5,
-      "title": "Linux 怎么查看当前目录路径？pwd 命令详解",
-      "url": "https://www.51cto.com/article/846900.html",
-      "hot": "别看 pwd 简单，关于它有两个容易踩的坑：软链接路径和 符号链接的物理位置。搞懂这些，你才算真正掌握了 pwd。"
+      "title": "20万行祖传代码一键变可视化图谱！这个爆火开源神器支持各大主流AI工具",
+      "url": "https://www.51cto.com/article/846983.html",
+      "hot": "Understand Anything 是一个 Claude Code 插件,最初由开发者 Lum1104 创建,目前由 Egonex 团队维护并开源,使用 MIT 协议。"
     },
     {
       "rank": 6,
-      "title": "你的 Harness 工作流真的在进步吗？我们用一场考试撕掉了遮羞布",
-      "url": "https://www.51cto.com/article/846899.html",
-      "hot": "Harness Eval：一套面向 Harness 工作流的、轻量的、可回归的闭环评测系统。"
+      "title": "Claude Code之父删了IDE！干掉提示词，只写循环",
+      "url": "https://www.51cto.com/article/846965.html",
+      "hot": "Claude Code之父删掉IDE，并表示以后只写循环，不再写提示词了：你苦练两年的提示词工程，真要被一夜干掉了吗？"
     },
     {
       "rank": 7,
-      "title": "Claude Code 这篇实践指南，真正讲透的是 “指令该放哪”",
-      "url": "https://www.51cto.com/article/846887.html",
-      "hot": "这篇文章的价值就在于，它不是单纯介绍工具，而是在回答一个更实用的问题：当你想让 Claude 按你的方式工作时，到底该把哪条指令放在哪一层？我自己的理解是，Claude Code 的配置思路，核心不是 “大一统”，而是 “分层治理”。"
+      "title": "告别「单科专家」：首个Agent全面进化框架EEVEE发布",
+      "url": "https://www.51cto.com/article/846982.html",
+      "hot": "来自上海交通大学与普林斯顿大学的研究团队发布了 EEVEE，一个面向 LLM Agent 的测试时提示学习框架。"
     },
     {
       "rank": 8,
-      "title": "40个 Claude 隐藏技巧：90%用户都没用过",
-      "url": "https://www.51cto.com/article/846942.html",
-      "hot": "如果某个提示词你已经写过两次以上，就应该把它保存下来。创建一个叫 prompts.md 的文本文件。每次你写出一个效果不错的提示词，就把它复制进去。下次遇到类似任务，直接粘贴使用。"
+      "title": "Fable 5准备复活？Anthropic联创：我们彻底低估了Scaling",
+      "url": "https://www.51cto.com/article/846963.html",
+      "hot": "Fable 5回来了？Claude安卓版的「模型选择器」中，消失一周的Fable 5意外现身。"
     },
     {
       "rank": 9,
-      "title": "把 Claude Code 调教成生产级编程助理，我只做了这四步",
-      "url": "https://www.51cto.com/article/846886.html",
-      "hot": "Skills 不是\"自定义命令\"，而是一套工作流编程语言。它能记住你的工作模式、自动感知上下文触发、控制 AI 的调用权限、注入动态数据，甚至启动独立的子 Agent 并行工作。"
+      "title": "5.4万亿！英伟达成AI最大地主，大模型巨头沦为算力佃农",
+      "url": "https://www.51cto.com/article/846962.html",
+      "hot": "当AI神话被账本照亮，最刺眼的真相终于浮出水面。退潮时刻，狂欢结束。探照灯打过来，谁在裸泳，一目了然。"
     },
     {
       "rank": 10,
-      "title": "深入 Linux 动态链接：so 库构建与运行逻辑",
-      "url": "https://www.51cto.com/article/846874.html",
-      "hot": "本文从动态链接底层逻辑切入，拆解 so 库完整构建流程，厘清编译参数、符号导出、版本控制等关键要点，补齐只懂实操不懂原理的知识短板。"
+      "title": "LangGraph 新手入门：手把手搭建一个会调用工具的天气查询 Agent",
+      "url": "https://www.51cto.com/article/846981.html",
+      "hot": "LangGraph 是面向有状态、可循环、可恢复执行的 Agent 编排运行时，而不只是把多个步骤简单串起来。这也是它比普通链更适合 Agent 的核心原因。这篇文章我们就从零开始，搭一个最小可运行的天气查询 Agent，让你真正理解：什么是 State，什么是 Node，什么是 Router..."
     }
   ]
 }

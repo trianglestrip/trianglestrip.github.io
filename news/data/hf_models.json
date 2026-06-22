@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-21T18:20:44+00:00",
+  "updated_at": "2026-06-22T04:14:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "hot": "2060"
+      "title": "zai-org/GLM-5.2",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "hot": "1854"
     },
     {
       "rank": 2,
-      "title": "zai-org/GLM-5.2",
-      "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "1781"
+      "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "hot": "2095"
     },
     {
       "rank": 3,
-      "title": "MiniMaxAI/MiniMax-M3",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "1174"
+      "title": "WeiboAI/VibeThinker-3B",
+      "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
+      "hot": "566"
     },
     {
       "rank": 4,
-      "title": "WeiboAI/VibeThinker-3B",
-      "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
-      "hot": "548"
+      "title": "MiniMaxAI/MiniMax-M3",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "hot": "1177"
     },
     {
       "rank": 5,
       "title": "moonshotai/Kimi-K2.7-Code",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
-      "hot": "942"
+      "hot": "946"
     },
     {
       "rank": 6,
-      "title": "microsoft/FastContext-1.0-4B-SFT",
-      "url": "https://huggingface.co/microsoft/FastContext-1.0-4B-SFT",
-      "hot": "258"
+      "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "hot": "289"
     },
     {
       "rank": 7,
-      "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "hot": "253"
+      "title": "microsoft/FastContext-1.0-4B-SFT",
+      "url": "https://huggingface.co/microsoft/FastContext-1.0-4B-SFT",
+      "hot": "267"
     },
     {
       "rank": 8,
-      "title": "google/diffusiongemma-26B-A4B-it",
-      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "hot": "1031"
+      "title": "unsloth/GLM-5.2-GGUF",
+      "url": "https://huggingface.co/unsloth/GLM-5.2-GGUF",
+      "hot": "229"
     },
     {
       "rank": 9,
       "title": "nvidia/LocateAnything-3B",
       "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "2237"
+      "hot": "2250"
     },
     {
       "rank": 10,
-      "title": "unsloth/GLM-5.2-GGUF",
-      "url": "https://huggingface.co/unsloth/GLM-5.2-GGUF",
-      "hot": "219"
+      "title": "google/diffusiongemma-26B-A4B-it",
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "hot": "1037"
     }
   ]
 }
