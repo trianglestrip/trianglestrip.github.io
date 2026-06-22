@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-22T19:00:06+00:00",
+  "updated_at": "2026-06-22T21:31:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Steam Machine",
-      "url": "https://store.steampowered.com/hardware/steammachine",
-      "hot": "365"
+      "title": "Steam Machine launches today",
+      "url": "https://store.steampowered.com/news/group/45479024/view/685257114654870245",
+      "hot": "856"
     },
     {
       "rank": 2,
-      "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
-      "url": "https://hustvl.github.io/Moebius/",
-      "hot": "143"
+      "title": "British Columbia, Time Zones, and Postgres",
+      "url": "https://www.crunchydata.com/blog/british-columbia-and-time-zone-changes",
+      "hot": "54"
     },
     {
       "rank": 3,
-      "title": "Deno Desktop",
-      "url": "https://docs.deno.com/runtime/desktop/",
-      "hot": "909"
+      "title": "Canyon HUD helmet for road riding",
+      "url": "https://media-centre.canyon.com/en-INT/266866-new-canyon-heads-up-display-helmet-could-be-a-safety-gamechanger-for-road-riding/",
+      "hot": "39"
     },
     {
       "rank": 4,
-      "title": "Show HN: Oak – Git replacement designed for agents",
-      "url": "https://oak.space/oak/oak",
-      "hot": "68"
+      "title": "Optocam Zero: a Pi Zero based digital camera made using off the shelf components",
+      "url": "https://github.com/dorukkumkumoglu/optocamzero",
+      "hot": "36"
     },
     {
       "rank": 5,
       "title": "My Mathematical Regression",
       "url": "https://blog.dahl.dev/posts/my-mathematical-regression/",
-      "hot": "41"
+      "hot": "138"
     },
     {
       "rank": 6,
-      "title": "Prompt Injection as Role Confusion",
-      "url": "https://role-confusion.github.io",
-      "hot": "64"
+      "title": "Deno Desktop",
+      "url": "https://docs.deno.com/runtime/desktop/",
+      "hot": "974"
     },
     {
       "rank": 7,
-      "title": "Nintendo Wii U games running from a 1980's Bernoulli disk [video]",
-      "url": "https://www.youtube.com/watch?v=8GZDOpV2OXk",
-      "hot": "46"
+      "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+      "url": "https://hustvl.github.io/Moebius/",
+      "hot": "184"
     },
     {
       "rank": 8,
-      "title": "Codex logging bug may write TBs to local SSDs",
-      "url": "https://github.com/openai/codex/issues/28224",
-      "hot": "377"
+      "title": "Japanese symbols that speak without words",
+      "url": "https://arun.is/blog/japan-symbols/",
+      "hot": "30"
     },
     {
       "rank": 9,
-      "title": "Pledging another $400k to the Zig software foundation",
-      "url": "https://mitchellh.com/writing/zig-donation-2026",
-      "hot": "584"
+      "title": "Show HN: Oak – Git alternative designed for agents",
+      "url": "https://oak.space/oak/oak",
+      "hot": "111"
     },
     {
       "rank": 10,
-      "title": "Finding the Best Dog Treat with Statistics",
-      "url": "https://www.wespiser.com/posts/2026-06-19-best-dog-treat.html",
-      "hot": "20"
+      "title": "Flock-Powered Police Chiefs Stalking Women Shows Why Warrants Are Needed",
+      "url": "https://ipvm.com/reports/police-chiefs-track",
+      "hot": "121"
     }
   ]
 }
