@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-22T15:34:21+00:00",
+  "updated_at": "2026-06-22T19:00:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Pledging Another $400k to the Zig Software Foundation",
-      "url": "https://mitchellh.com/writing/zig-donation-2026",
-      "hot": "323"
+      "title": "Steam Machine",
+      "url": "https://store.steampowered.com/hardware/steammachine",
+      "hot": "365"
     },
     {
       "rank": 2,
-      "title": "Never Give Them Your Face",
-      "url": "https://nevergivethemyourface.com/",
-      "hot": "265"
+      "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+      "url": "https://hustvl.github.io/Moebius/",
+      "hot": "143"
     },
     {
       "rank": 3,
-      "title": "Claude Code's \"extended thinking\" is a summary- not authentic thinking",
-      "url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/",
-      "hot": "61"
+      "title": "Deno Desktop",
+      "url": "https://docs.deno.com/runtime/desktop/",
+      "hot": "909"
     },
     {
       "rank": 4,
-      "title": "Deno Desktop",
-      "url": "https://docs.deno.com/runtime/desktop/",
-      "hot": "769"
+      "title": "Show HN: Oak – Git replacement designed for agents",
+      "url": "https://oak.space/oak/oak",
+      "hot": "68"
     },
     {
       "rank": 5,
-      "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
-      "url": "https://hustvl.github.io/Moebius/",
-      "hot": "37"
+      "title": "My Mathematical Regression",
+      "url": "https://blog.dahl.dev/posts/my-mathematical-regression/",
+      "hot": "41"
     },
     {
       "rank": 6,
-      "title": "Chevron signs 20-year power agreement with Microsoft for West Texas data center",
-      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
-      "hot": "22"
+      "title": "Prompt Injection as Role Confusion",
+      "url": "https://role-confusion.github.io",
+      "hot": "64"
     },
     {
       "rank": 7,
-      "title": "GLM 5.2 vs. Opus",
-      "url": "https://techstackups.com/comparisons/glm-5.2-vs-opus/",
-      "hot": "332"
+      "title": "Nintendo Wii U games running from a 1980's Bernoulli disk [video]",
+      "url": "https://www.youtube.com/watch?v=8GZDOpV2OXk",
+      "hot": "46"
     },
     {
       "rank": 8,
       "title": "Codex logging bug may write TBs to local SSDs",
       "url": "https://github.com/openai/codex/issues/28224",
-      "hot": "293"
+      "hot": "377"
     },
     {
       "rank": 9,
-      "title": "Die analysis of the 8087 math coprocessor's fast bit shifter",
-      "url": "https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html",
-      "hot": "18"
+      "title": "Pledging another $400k to the Zig software foundation",
+      "url": "https://mitchellh.com/writing/zig-donation-2026",
+      "hot": "584"
     },
     {
       "rank": 10,
-      "title": "I built Ponytrail, a local audit trail for AI coding-agent edits",
-      "url": "https://github.com/0xroylee/ponytrail",
-      "hot": "14"
+      "title": "Finding the Best Dog Treat with Statistics",
+      "url": "https://www.wespiser.com/posts/2026-06-19-best-dog-treat.html",
+      "hot": "20"
     }
   ]
 }
