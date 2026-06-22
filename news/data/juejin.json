@@ -1,7 +1,7 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-21T21:39:43+00:00",
+  "updated_at": "2026-06-21T23:59:58+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -20,19 +20,19 @@
       "rank": 3,
       "title": "我用 AI 一周写完了整个项目，上线第一天就崩了——这是我踩过最贵的 5 个坑",
       "url": "https://juejin.cn/post/7652581847890133018",
-      "hot": "540"
+      "hot": "549"
     },
     {
       "rank": 4,
       "title": "老板：“请说出一个录用你的理由。”我脱口而出：“每个月 AI 支出都超过我的生活费了！”老板愣了一下，随即哈哈大笑：“好吧，你被录用了。”",
       "url": "https://juejin.cn/post/7652201148235382803",
-      "hot": "486"
+      "hot": "495"
     },
     {
       "rank": 5,
       "title": "HarmonyOS开发中错误处理策略：网络异常统一处理",
       "url": "https://juejin.cn/post/7652636952518754340",
-      "hot": "297"
+      "hot": "306"
     },
     {
       "rank": 6,
@@ -42,14 +42,14 @@
     },
     {
       "rank": 7,
-      "title": "HarmonyOS开发中请求拦截器链：日志、认证、重试",
-      "url": "https://juejin.cn/post/7652976567262675007",
-      "hot": "279"
+      "title": "一套 Spec-First 的 AI 编程工作流",
+      "url": "https://juejin.cn/post/7652581847889330202",
+      "hot": "288"
     },
     {
       "rank": 8,
-      "title": "一套 Spec-First 的 AI 编程工作流",
-      "url": "https://juejin.cn/post/7652581847889330202",
+      "title": "HarmonyOS开发中请求拦截器链：日志、认证、重试",
+      "url": "https://juejin.cn/post/7652976567262675007",
       "hot": "279"
     },
     {
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "Android 协程并发控制：别动线程池，控制好并发语义就够了",
       "url": "https://juejin.cn/post/7652257652502298662",
-      "hot": "225"
+      "hot": "234"
     }
   ]
 }

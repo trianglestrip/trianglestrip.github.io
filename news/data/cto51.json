@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-21T21:39:51+00:00",
+  "updated_at": "2026-06-22T00:00:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "麻省理工学院新研究：过度依赖聊天机器人或削弱批判思维",
-      "url": "https://www.51cto.com/article/846894.html",
-      "hot": "据英国《卫报》19 日报道，麻省理工学院的最新研究发现，过度依赖聊天机器人可能削弱批判性思维，甚至让人们越来越难以独立辨别错误信息。"
+      "title": "我在 C++ 里写了个类，它的内存长啥样？",
+      "url": "https://www.51cto.com/article/846933.html",
+      "hot": "C++ 对象的内存布局，从普通成员、到虚函数、到多继承、再到虚继承，每一步都有明确的规则可循。"
     },
     {
       "rank": 2,
-      "title": "哈？改个URL就行！alphaXiv甩出论文复现神器，单卡也能跑",
-      "url": "https://www.51cto.com/article/846926.html",
-      "hot": "最近，alphaXiv 推出了一个面向 arXiv 论文的 autoresearch 功能。"
+      "title": "搞懂 Linux 内核 BPF 技术，才算真正吃透 Linux 内核底层",
+      "url": "https://www.51cto.com/article/846897.html",
+      "hot": "BPF 程序本质上跑在一个寄存器虚拟机上。跟 JVM 这种通用虚拟机不一样，BPF 虚拟机是高度受限的。"
     },
     {
       "rank": 3,
-      "title": "【$7,000】HackerOne 平台最新高危漏洞披露",
-      "url": "https://www.51cto.com/article/846902.html",
-      "hot": "HackerOne 作为全球漏洞赏金领域的标杆，此次被“自家平台”挖出高危漏洞，再次印证了一个道理：安全不是护城河，而是持续迭代的工程实践。"
+      "title": "DrissionPage，甩 Selenium 几条街",
+      "url": "https://www.51cto.com/article/846903.html",
+      "hot": "不是说Selenium不好，它毕竟生态大、文档多。但如果你重新开始一个项目，或者像我一样被反爬搞得很痛苦，真的建议试试DrissionPage。"
     },
     {
       "rank": 4,
-      "title": "Mythos引爆数字虫灾，全球几十亿设备裸奔！",
-      "url": "https://www.51cto.com/article/846913.html",
-      "hot": "Mythos化身赛博武器，引爆全球「数字虫灾」！白宫急下90分钟断网通牒，大模型惨遭封杀。顶级黑客火线救援，揭秘这场惊心动魄的生死博弈。"
+      "title": "@Lazy 延迟加载：解决循环依赖+项目启动慢双难题",
+      "url": "https://www.51cto.com/article/846901.html",
+      "hot": "@Lazy看似简单，实则是Spring容器非常精妙的底层设计，既能解决工程痛点，又存在极强的使用边界。​"
     },
     {
       "rank": 5,
-      "title": "史上首次，Agent流量超越人类！",
-      "url": "https://www.51cto.com/article/846912.html",
-      "hot": "马斯克震惊！AI Agent网络流量占比已达57.5%，人类首次沦为互联网少数派。"
+      "title": "Linux 怎么查看当前目录路径？pwd 命令详解",
+      "url": "https://www.51cto.com/article/846900.html",
+      "hot": "别看 pwd 简单，关于它有两个容易踩的坑：软链接路径和 符号链接的物理位置。搞懂这些，你才算真正掌握了 pwd。"
     },
     {
       "rank": 6,
-      "title": "清华唐杰正面硬刚马斯克：中国AI达到Fable水平，还要更快！",
-      "url": "https://www.51cto.com/article/846911.html",
-      "hot": "硅谷教父Marc Andreessen亲自转发唐杰的回应，附上「Interesting」。这件事彻底出圈了。中国AI大佬正面硬刚马斯克的预测，意味着什么？或许，美国把一切都搞反了。"
+      "title": "你的 Harness 工作流真的在进步吗？我们用一场考试撕掉了遮羞布",
+      "url": "https://www.51cto.com/article/846899.html",
+      "hot": "Harness Eval：一套面向 Harness 工作流的、轻量的、可回归的闭环评测系统。"
     },
     {
       "rank": 7,
-      "title": "奥德赛全网爆火，三天狂揽三万星！顶流网红搓出本地版ChatGPT",
-      "url": "https://www.51cto.com/article/846910.html",
-      "hot": "顶流网红PewDiePie手搓的「本地版ChatGPT」，上线三天狂揽3万星！0订阅、拒交隐私，还自带Agent帮你打工。这款刷屏外网的自托管AI神器，竟然险些胜过科技巨头？"
+      "title": "Claude Code 这篇实践指南，真正讲透的是 “指令该放哪”",
+      "url": "https://www.51cto.com/article/846887.html",
+      "hot": "这篇文章的价值就在于，它不是单纯介绍工具，而是在回答一个更实用的问题：当你想让 Claude 按你的方式工作时，到底该把哪条指令放在哪一层？我自己的理解是，Claude Code 的配置思路，核心不是 “大一统”，而是 “分层治理”。"
     },
     {
       "rank": 8,
-      "title": "谷歌开源DiffusionGemma，自送差评，速度却快四倍",
-      "url": "https://www.51cto.com/article/846909.html",
-      "hot": "大厂发新模型，话术从来是「更强」。可谷歌这次的官方指南里写着：它不如自家旧款。"
+      "title": "40个 Claude 隐藏技巧：90%用户都没用过",
+      "url": "https://www.51cto.com/article/846942.html",
+      "hot": "如果某个提示词你已经写过两次以上，就应该把它保存下来。创建一个叫 prompts.md 的文本文件。每次你写出一个效果不错的提示词，就把它复制进去。下次遇到类似任务，直接粘贴使用。"
     },
     {
       "rank": 9,
-      "title": "奥特曼押注2028：让AI学会造AI",
-      "url": "https://www.51cto.com/article/846908.html",
-      "hot": "秘密提交IPO文件的同一天，OpenAI没急着谈上市时间，反而立下三大目标：造自动化AI研究员、加速经济、让全球人手一个个人AGI。"
+      "title": "把 Claude Code 调教成生产级编程助理，我只做了这四步",
+      "url": "https://www.51cto.com/article/846886.html",
+      "hot": "Skills 不是\"自定义命令\"，而是一套工作流编程语言。它能记住你的工作模式、自动感知上下文触发、控制 AI 的调用权限、注入动态数据，甚至启动独立的子 Agent 并行工作。"
     },
     {
       "rank": 10,
-      "title": "G7惊魂2.5小时！奥特曼笑坐，达里奥「受审」",
-      "url": "https://www.51cto.com/article/846907.html",
-      "hot": "G7峰会惊变AI战场！特朗普一纸禁令掐断盟友AI命脉，全球巨头齐聚法国饭桌。奥特曼笑坐总统身旁，Dario Amodei却被隔离对面「受审」。2.5小时闭门午餐，一场没有硝烟的科技冷战正在上演！"
+      "title": "深入 Linux 动态链接：so 库构建与运行逻辑",
+      "url": "https://www.51cto.com/article/846874.html",
+      "hot": "本文从动态链接底层逻辑切入，拆解 so 库完整构建流程，厘清编译参数、符号导出、版本控制等关键要点，补齐只懂实操不懂原理的知识短板。"
     }
   ]
 }
