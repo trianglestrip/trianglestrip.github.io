@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-23T20:26:39+00:00",
+  "updated_at": "2026-06-23T22:57:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Anthropic updates their terms to verify age or identity",
-      "url": "https://www.anthropic.com/legal/privacy",
-      "hot": "90"
-    },
-    {
-      "rank": 2,
-      "title": "Jerry's Map",
-      "url": "http://www.jerrysmap.com/the-map",
-      "hot": "138"
-    },
-    {
-      "rank": 3,
-      "title": "Swift Package Index joins Apple",
-      "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
+      "title": "California AB 2047 makes 3d printers off-limits to students, educators, business",
+      "url": "https://www.the3dprintingnerd.com/ab2047",
       "hot": "94"
     },
     {
+      "rank": 2,
+      "title": "United Wizards of the Coast recognized by NLRB",
+      "url": "https://unitedwizardsofthecoast.com/news/2026-06-23-we-have-a-union",
+      "hot": "57"
+    },
+    {
+      "rank": 3,
+      "title": "Jerry's Map",
+      "url": "http://www.jerrysmap.com/the-map",
+      "hot": "272"
+    },
+    {
       "rank": 4,
-      "title": "AI Hiring Tools Yield Racial Bias and Systemic Rejection; 26% Black & 15% Asian",
-      "url": "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection",
-      "hot": "38"
+      "title": "Don't verify email addresses by sending spam to them",
+      "url": "https://milek7.pl/mailverifyspam/",
+      "hot": "106"
     },
     {
       "rank": 5,
-      "title": "Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX",
-      "url": "https://tikz.dev/editor/",
-      "hot": "271"
+      "title": "Swift Package Index joins Apple",
+      "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
+      "hot": "148"
     },
     {
       "rank": 6,
-      "title": "F3",
-      "url": "https://github.com/future-file-format/f3",
-      "hot": "494"
+      "title": "FUTO Swipe – A new swipe typing model",
+      "url": "https://swipe.futo.tech/",
+      "hot": "172"
     },
     {
       "rank": 7,
-      "title": "FUTO Swipe – A new swipe typing model",
-      "url": "https://swipe.futo.tech/",
-      "hot": "49"
+      "title": "Printing Gaussian Splats",
+      "url": "https://www.patreon.com/DanyBittel/posts/printing-splats-161333338",
+      "hot": "111"
     },
     {
       "rank": 8,
-      "title": "Unlimited OCR: One-shot long-horizon parsing",
-      "url": "https://github.com/baidu/Unlimited-OCR",
-      "hot": "386"
+      "title": "The worthlessness of Vitamin D is mildly exaggerated",
+      "url": "https://dynomight.net/vitamin-d/",
+      "hot": "153"
     },
     {
       "rank": 9,
-      "title": "The worthlessness of Vitamin D is mildly exaggerated",
-      "url": "https://dynomight.net/vitamin-d/",
-      "hot": "85"
+      "title": "Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX",
+      "url": "https://tikz.dev/editor/",
+      "hot": "293"
     },
     {
       "rank": 10,
-      "title": "San Diego photologs from the 1970s",
-      "url": "https://www.beautifulpublicdata.com/san-diego-photologs-from-the-1970s/",
-      "hot": "114"
+      "title": "AI's Affordability Crisis",
+      "url": "https://blog.dshr.org/2026/06/ais-affordability-crisis.html",
+      "hot": "215"
     }
   ]
 }
