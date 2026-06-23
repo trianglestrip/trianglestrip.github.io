@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-23T04:32:44+00:00",
+  "updated_at": "2026-06-23T08:05:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "# 码上鸿蒙•智绘未来#  数据分享实战：系统分享面板接入，文字图片文件一键分享到其他应用",
+      "url": "https://ost.51cto.com/posts/48942",
+      "hot": "几乎所有应用都有分享需求。新闻App分享文章、电商App分享商品、笔记App分享文档。鸿蒙提供了ShareKit来统一处理分享逻辑，调用系统分享面..."
+    },
+    {
+      "rank": 2,
+      "title": "94毫秒延迟、监控胜率100%！国产视频模型干翻Gemini",
+      "url": "https://www.51cto.com/article/847178.html",
+      "hot": "京东开源JoyAI-VL-Interaction，把视频AI从「你问我答」的轮次对话，推进到「持续在场、主动开口、按时机说话」的流式交互新范式。"
+    },
+    {
+      "rank": 3,
+      "title": "机器人终于不瞎抓了！港大阿里联手开源FineVLA：用哪只手、抓哪里，一句话全搞定",
+      "url": "https://www.51cto.com/article/847179.html",
+      "hot": "近日，来自香港大学XLANG Lab和阿里巴巴Qwen团队的研究人员提出了FineVLA，一个面向可控VLA策略的开源框架。"
+    },
+    {
+      "rank": 4,
+      "title": "战胜Mythos 5，OpenAI安全专用GPT-5.5-Cyber完全体来了",
+      "url": "https://www.51cto.com/article/847168.html",
+      "hot": "今天，OpenAI 宣布扩展 Daybreak 安全计划，推出更新版 GPT-5.5-Cyber、Codex Security 插件、Daybreak Cyber Partner Program，以及面向开源生态的 Patch the Planet 计划等。"
+    },
+    {
+      "rank": 5,
+      "title": "你的AI正在「见人下菜」，亚马逊团队ACL高分论文，首次系统测评「记忆」如何影响LLM情商",
+      "url": "https://www.51cto.com/article/847171.html",
+      "hot": "近日，位于亚马逊的研究科学家们发现，这种 “见人下菜” 的现象确实大量存在于大语言模型中：用户记忆会改变模型的回答内容，也会改变模型对相同时间的情感理解和建议方式，引发带来新的公平问题。"
+    },
+    {
+      "rank": 6,
+      "title": "GPT-5.6大量实测流出：本周四或登场",
+      "url": "https://www.51cto.com/article/847175.html",
+      "hot": "OpenAI重大更新曝光：GPT-5.6即将上线，已有大量实测流出，不仅能凭空创作名画，GPT-Bidi-1还能解锁「真·真人级」双向对谈。本周四，一起见证OpenAI的绝地反击。"
+    },
+    {
+      "rank": 7,
+      "title": "从 @Builder 到 @LocalBuilder：鸿蒙ArkUI 复用与插槽机制深度解析",
+      "url": "https://ost.51cto.com/posts/48926",
+      "hot": "在ArkUI声明式开发中，UI复用有三个选择：Component、Builder、LocalBuilder。大部分人都知道Builder轻量，但一碰到嵌套刷新失效和this指向..."
+    },
+    {
+      "rank": 8,
       "title": "Claude Agent 进入 IntelliJ IDEA 公测，Java 开发方式真的要变了",
       "url": "https://www.51cto.com/article/847091.html",
       "hot": "Claude Agent 进入 IntelliJ IDEA 公测，对 Java 开发者来说，不只是一次插件更新。它说明 AI Coding 正在进入 Java 开发最核心的工作环境，也说明 IDE 的角色正在发生变化。它不再只是编写代码、运行项目和调试程序的工具，还会成为开发者管理 Agent、审查改动和控制工程任务的地方。"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "Anthropic 40万大样本揭秘：AI 时代为什么“专家”身价暴涨？",
       "url": "https://www.51cto.com/article/847103.html",
       "hot": "大模型并没有让专家的经验贬值，反而像一把高压水枪，正在迅速冲刷掉代码工程中的淤泥，让真正拥有“业务品味”和“领域常识”的金子，闪耀出前所未有的夺目光芒。"
     },
     {
-      "rank": 3,
-      "title": "HarmonyOS 多设备音乐界面开发实战：一次编写，多端部署的完整方案",
-      "url": "https://ost.51cto.com/posts/48816",
-      "hot": "HarmonyOS多设备音乐界面开发实战：一次编写，多端部署的完整方案从手机到平板、从折叠屏到手表，一套代码适配所有屏幕形态一、为什么需要..."
-    },
-    {
-      "rank": 4,
-      "title": "HarmonyOS 窗口管理实战：从沉浸式登录到验证码弹窗的完整实现",
-      "url": "https://ost.51cto.com/posts/48803",
-      "hot": "HarmonyOS窗口管理实战：从沉浸式登录到验证码弹窗的完整实现手把手教你实现多窗口管理、跨窗口通信与沉浸式交互一、为什么需要窗口管理？..."
-    },
-    {
-      "rank": 5,
+      "rank": 10,
       "title": "尴尬了！OpenAI刚派GPT-5.5-Cyber修补地球，Codex却爆出致命bug",
       "url": "https://www.51cto.com/article/847143.html",
       "hot": "今天，OpenAI祭出满血GPT-5.5-Cyber，要给全世界的开源代码修漏洞。结果话音刚落，Codex被扒出史诗级bug：一年狂写640TB，能把SSD直接写废。"
-    },
-    {
-      "rank": 6,
-      "title": "200块薅出1.4万算力！OpenAI被薅秃了？",
-      "url": "https://www.51cto.com/article/847141.html",
-      "hot": "你以为自己在薅AI羊毛？OpenAI和Anthropic却在笑看账本。200美元的个人订阅，根本不是在卖服务，而是在批量培养「病毒式销售员」。"
-    },
-    {
-      "rank": 7,
-      "title": "Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统",
-      "url": "https://www.51cto.com/article/847137.html",
-      "hot": "Loop Engineering 被视为继 Prompt Engineering、Context & Harness Engineering 之后的\"AI 编程第三次革命\"——开发者角色从\"提示词工程师\"彻底升级为\"AI 系统架构师\"。"
-    },
-    {
-      "rank": 8,
-      "title": "Linux 服务器运维实战：拿到一台新服务器后该做的那些事",
-      "url": "https://www.51cto.com/article/847136.html",
-      "hot": "服务器安全不是一个\"配置清单\"，做完就打勾。它是一个持续的过程。你的服务器比别人的安全，不是因为你配置得多好，而是因为你维护得多勤快。"
-    },
-    {
-      "rank": 9,
-      "title": "借助 Claude Mythos Preview 发现的 29 年\"Squidbleed\"漏洞",
-      "url": "https://www.51cto.com/article/847134.html",
-      "hot": "该漏洞影响所有默认配置下的Squid版本，且已潜伏近三十年之久，甚至早于Squid在GitHub仓库中的所有可用提交记录。"
-    },
-    {
-      "rank": 10,
-      "title": "一文带你学会 Agent 如何实现自迭代",
-      "url": "https://www.51cto.com/article/847133.html",
-      "hot": "这篇文章不做泛泛感想，而是按实现机制来拆：它解决什么问题，整体机制怎么运转，一条错误如何流转，边界在哪里，以及我们如何借鉴它建立自己的自迭代体系。"
     }
   ]
 }
