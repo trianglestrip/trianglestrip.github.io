@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-23T11:27:53+00:00",
+  "updated_at": "2026-06-23T13:59:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "人人都是 Builder 的时代，企业的真正挑战是“怎么管”？",
+      "url": "https://www.infoq.cn/article/UXZBCoYhBRFN0WRLVR5x?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 23 Jun 2026 21:13:23 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "数据库到底该怎么选？TDSQL 用一套内核给出了三个答案",
+      "url": "https://www.infoq.cn/article/aWFuheF4r0CGI5tor4VH?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 23 Jun 2026 19:32:55 GMT"
+    },
+    {
+      "rank": 3,
       "title": "拿下OpenAI Offer后，她复盘了57场面试：Transformer要会手写，LeetCode还得刷",
       "url": "https://www.infoq.cn/article/85A9DVFo51jUHia88mQ4?utm_source=rss&utm_medium=article",
       "hot": "Tue, 23 Jun 2026 19:09:50 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Meta 几周内毁掉二十年工程文化，给所有“AI 优先”公司上了一课",
       "url": "https://www.infoq.cn/article/CuH2KDSV1bvb6btQOeRf?utm_source=rss&utm_medium=article",
       "hot": "Tue, 23 Jun 2026 19:04:13 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "主题征文｜跟鸿蒙一起迈入 Agent 时代，大展“鸿图”！",
       "url": "https://www.infoq.cn/article/p0LYKZdFku7y5BkSMNQN?utm_source=rss&utm_medium=article",
       "hot": "Tue, 23 Jun 2026 18:35:51 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "腾讯云发布边缘 Web 与 AI Agent 托管平台 EdgeOne Makers：一键开发部署，分钟级全球上线",
       "url": "https://www.infoq.cn/article/5iz5ew8NpQXIvvpFphDk?utm_source=rss&utm_medium=article",
       "hot": "Tue, 23 Jun 2026 17:46:31 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "使用Azure Container Apps Sandboxes安全运行不受信任的AI智能体代码",
       "url": "https://www.infoq.cn/article/2yiUMe6JxKGXK61luSIJ?utm_source=rss&utm_medium=article",
       "hot": "Tue, 23 Jun 2026 17:12:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "Angular官方的智能体Skills助力AI编程工具生成现代化的Angular代码",
       "url": "https://www.infoq.cn/article/0yjp8ZXwUkA656NjsdPC?utm_source=rss&utm_medium=article",
       "hot": "Tue, 23 Jun 2026 16:15:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "谷歌推出Colab CLI：面向开发者、自动化与AI智能体的命令行工具",
       "url": "https://www.infoq.cn/article/UWmllxei7QLmEqZY5SrY?utm_source=rss&utm_medium=article",
       "hot": "Tue, 23 Jun 2026 14:00:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "探索 Snowflake 与 Postgres 之间的双向数据流动模式 ｜ 技术实践",
       "url": "https://www.infoq.cn/article/wvtzppvWzOlKYDVRzlYN?utm_source=rss&utm_medium=article",
       "hot": "Tue, 23 Jun 2026 11:46:51 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "谷歌LiteRT-LM通过Gemma 4多Token预测将本地推理速度提升了最高2.2倍",
-      "url": "https://www.infoq.cn/article/lv6xh4HeBfWaYubLv54y?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 23 Jun 2026 11:11:13 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "2026下半年中美AI创业机会：从技术红利到商业验证｜AICon上海",
-      "url": "https://www.infoq.cn/article/gk0VlPy3hufsH4zKTh2X?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 23 Jun 2026 10:00:00 GMT"
     }
   ]
 }
