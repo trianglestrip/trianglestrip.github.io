@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-23T04:32:59+00:00",
+  "updated_at": "2026-06-23T11:28:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "2055"
+      "hot": "2104"
     },
     {
       "rank": 2,
       "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "hot": "2178"
+      "hot": "2200"
     },
     {
       "rank": 3,
       "title": "WeiboAI/VibeThinker-3B",
       "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
-      "hot": "616"
+      "hot": "633"
     },
     {
       "rank": 4,
       "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "hot": "389"
+      "hot": "409"
     },
     {
       "rank": 5,
-      "title": "MiniMaxAI/MiniMax-M3",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "1209"
+      "title": "baidu/Unlimited-OCR",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "hot": "322"
     },
     {
       "rank": 6,
       "title": "unsloth/GLM-5.2-GGUF",
       "url": "https://huggingface.co/unsloth/GLM-5.2-GGUF",
-      "hot": "259"
+      "hot": "268"
     },
     {
       "rank": 7,
-      "title": "baidu/Unlimited-OCR",
-      "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "213"
+      "title": "MiniMaxAI/MiniMax-M3",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "hot": "1217"
     },
     {
       "rank": 8,
-      "title": "nvidia/LocateAnything-3B",
-      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "2294"
+      "title": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+      "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+      "hot": "645"
     },
     {
       "rank": 9,
-      "title": "nvidia/nemotron-3.5-asr-streaming-0.6b",
-      "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
-      "hot": "633"
+      "title": "nvidia/LocateAnything-3B",
+      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "hot": "2303"
     },
     {
       "rank": 10,
       "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
       "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2120"
+      "hot": "2129"
     }
   ]
 }

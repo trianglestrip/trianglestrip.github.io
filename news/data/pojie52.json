@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-06-23T08:05:45+00:00",
+  "updated_at": "2026-06-23T11:27:43+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,9 +48,9 @@
     },
     {
       "rank": 8,
-      "title": "libjdg.so VM 逆向分析",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2110046",
-      "hot": "[md]&gt; **作者：** 人生导师\n&gt; **日期：** 2025 年 5 月 28 日\n\n结论先说：京东 `libjdg.so` 内部有一套寄存器 VM，保护签名算法和反调试逻辑。最终还原结果——`b4 = Base64(RC4(a11 XOR timestamp, zlib.compress(json_plaintext)))`，标准算法组合没有魔改。这篇从 ..."
+      "title": "Qt QML资源在PE文件中的存储结构分析",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2110319",
+      "hot": "[md]Qt QML资源在PE文件中存储结构分析\n最近分析了一个Qt QML程序，第一次接触Qt应用，记录分享一下。\n开始以为它是个纯Qt程序，用IDA跟踪没有头绪，查了一下引入的动态库发现是Qt QML应用，感觉从QML的存储机制入手更 ..."
     },
     {
       "rank": 9,

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-23T08:05:55+00:00",
+  "updated_at": "2026-06-23T11:27:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "TypeScript 7.0 RC 发布：编译器用 Go 重写，类型检查提速 10 倍",
-      "url": "https://www.oschina.net/news/465915/typescript-7-0-rc",
-      "hot": "Tue, 23 Jun 2026 15:44:24 +0800"
+      "title": "2026红帽媒体Open讲在京举行，阐述“未来的平台即是选择”重要理念",
+      "url": "https://www.oschina.net/news/466057",
+      "hot": "Tue, 23 Jun 2026 19:22:22 +0800"
     },
     {
       "rank": 2,
-      "title": "OpenAI 高调“入股”，Rust 党可以开香槟了？",
-      "url": "https://my.oschina.net/u/4487475/blog/19709010",
-      "hot": "Tue, 23 Jun 2026 15:12:39 +0800"
+      "title": "AI 编程圈最近在吹的“Loop Engineering（循环工程）”是什么？",
+      "url": "https://www.oschina.net/news/466052",
+      "hot": "Tue, 23 Jun 2026 19:16:12 +0800"
     },
     {
       "rank": 3,
-      "title": "OpenAI Codex CLI 被曝致命 Bug，静默写入日志直至耗尽 SSD 寿命",
-      "url": "https://www.oschina.net/news/465890",
-      "hot": "Tue, 23 Jun 2026 15:11:14 +0800"
+      "title": "一份 AI 博士的求职笔记，万字长文揭开工业界研究科学家招聘的真实面纱",
+      "url": "https://www.oschina.net/news/466029",
+      "hot": "Tue, 23 Jun 2026 18:43:22 +0800"
     },
     {
       "rank": 4,
-      "title": "字节 Seedance 2.0 支持原生 4K 直出",
-      "url": "https://www.oschina.net/news/465864",
-      "hot": "Tue, 23 Jun 2026 14:29:59 +0800"
+      "title": "TimescaleDB 2.28.1 发布，基于 PostgreSQL 的时序数据库",
+      "url": "https://www.oschina.net/news/465993/timescaledb-2-28-1-released",
+      "hot": "Tue, 23 Jun 2026 17:47:56 +0800"
     },
     {
       "rank": 5,
-      "title": "EasyPostman v6.0.8 已经发布，开源接口调试与压测工具",
-      "url": "https://www.oschina.net/news/465858",
-      "hot": "Tue, 23 Jun 2026 14:23:38 +0800"
+      "title": "🔥🔥「AI桌面硬件大赏」Vibeboard -- 为 Vibe Coding 而生的按键板",
+      "url": "https://www.oschina.net/ai-creation/details/2815",
+      "hot": "Tue, 23 Jun 2026 17:24:54 +0800"
     },
     {
       "rank": 6,
-      "title": "Easysearch v2.3.0 发布 | 管理体验升级，稳定性与兼容性全面增强",
-      "url": "https://www.oschina.net/news/465851/easysearch-2-3-0-released",
-      "hot": "Tue, 23 Jun 2026 14:15:54 +0800"
+      "title": "🔥🔥开源了一款“雷达信号研究”的毫米波雷达",
+      "url": "https://www.oschina.net/ai-creation/details/2821",
+      "hot": "Tue, 23 Jun 2026 17:22:42 +0800"
     },
     {
       "rank": 7,
-      "title": "豆包视频生成大模型 Seedance 2.5 亮相，预计 7 月初正式发布",
-      "url": "https://www.oschina.net/news/465850",
-      "hot": "Tue, 23 Jun 2026 14:15:53 +0800"
+      "title": "桌面端监控新范式：阿里云推出 Electron SDK",
+      "url": "https://my.oschina.net/u/3874284/blog/19709177",
+      "hot": "Tue, 23 Jun 2026 17:19:26 +0800"
     },
     {
       "rank": 8,
-      "title": "豆包大模型 2.1 发布",
-      "url": "https://www.oschina.net/news/465849",
-      "hot": "Tue, 23 Jun 2026 14:14:38 +0800"
+      "title": "从一张 287 美元账单到 4.4 万 star 的开源传奇：Netflix 工程师如何用 Headroom 为 AI Agent “瘦身” 90% 的 Token",
+      "url": "https://www.oschina.net/news/465967",
+      "hot": "Tue, 23 Jun 2026 16:59:49 +0800"
     },
     {
       "rank": 9,
-      "title": "RediSearch v2.10.31 发布，高性能全文搜索引擎",
-      "url": "https://www.oschina.net/news/465843/redisearch-2-10-31-released",
-      "hot": "Tue, 23 Jun 2026 14:03:49 +0800"
+      "title": "Subtitle Edit 5 发布，重构以实现跨平台支持",
+      "url": "https://www.oschina.net/news/465948/subtitle-edit-5-0-0-released",
+      "hot": "Tue, 23 Jun 2026 16:35:59 +0800"
     },
     {
       "rank": 10,
-      "title": "“一个声音、14 种语言”：网易有道首发零口音免参考文本的跨语种语音克隆模型",
-      "url": "https://www.oschina.net/news/465823",
-      "hot": "Tue, 23 Jun 2026 13:20:29 +0800"
+      "title": "TypeScript 7.0 RC 发布：编译器用 Go 重写，类型检查提速 10 倍",
+      "url": "https://www.oschina.net/news/465915/typescript-7-0-rc",
+      "hot": "Tue, 23 Jun 2026 15:44:24 +0800"
     }
   ]
 }
