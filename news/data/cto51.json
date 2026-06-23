@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-23T00:18:00+00:00",
+  "updated_at": "2026-06-23T04:32:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "为什么 print(obj) 总是一串看不懂的东西？",
-      "url": "https://www.51cto.com/article/847079.html",
-      "hot": "__str__​ 和 __repr__​ 不是 Python 里最难理解的魔法方法，但却是最容易被忽视的。"
+      "title": "Claude Agent 进入 IntelliJ IDEA 公测，Java 开发方式真的要变了",
+      "url": "https://www.51cto.com/article/847091.html",
+      "hot": "Claude Agent 进入 IntelliJ IDEA 公测，对 Java 开发者来说，不只是一次插件更新。它说明 AI Coding 正在进入 Java 开发最核心的工作环境，也说明 IDE 的角色正在发生变化。它不再只是编写代码、运行项目和调试程序的工具，还会成为开发者管理 Agent、审查改动和控制工程任务的地方。"
     },
     {
       "rank": 2,
-      "title": "一文吃透 Java 并发基础：从三类问题到线程状态机",
-      "url": "https://www.51cto.com/article/847075.html",
-      "hot": "本文从并发的基础概念出发，梳理了线程的安全性、活跃性、性能三类核心问题，并串起了线程的创建方式、状态流转、上下文切换以及死锁等高频考点。"
+      "title": "Anthropic 40万大样本揭秘：AI 时代为什么“专家”身价暴涨？",
+      "url": "https://www.51cto.com/article/847103.html",
+      "hot": "大模型并没有让专家的经验贬值，反而像一把高压水枪，正在迅速冲刷掉代码工程中的淤泥，让真正拥有“业务品味”和“领域常识”的金子，闪耀出前所未有的夺目光芒。"
     },
     {
       "rank": 3,
-      "title": "Node Plus ？比 pnpm 快 24 倍！",
-      "url": "https://www.51cto.com/article/847067.html",
-      "hot": "Nub 这个项目最值得关注的地方，不是“比 pnpm 快多少倍”，也不是“能不能干掉 npx”。"
+      "title": "HarmonyOS 多设备音乐界面开发实战：一次编写，多端部署的完整方案",
+      "url": "https://ost.51cto.com/posts/48816",
+      "hot": "HarmonyOS多设备音乐界面开发实战：一次编写，多端部署的完整方案从手机到平板、从折叠屏到手表，一套代码适配所有屏幕形态一、为什么需要..."
     },
     {
       "rank": 4,
-      "title": "BeanPostProcessor 扩展点，Spring 最强钩子接口实战",
-      "url": "https://www.51cto.com/article/847059.html",
-      "hot": "整体而言，BeanPostProcessor是Spring框架的核心灵魂扩展点，掌握这套机制，就掌握了自定义Spring容器行为的能力。"
+      "title": "HarmonyOS 窗口管理实战：从沉浸式登录到验证码弹窗的完整实现",
+      "url": "https://ost.51cto.com/posts/48803",
+      "hot": "HarmonyOS窗口管理实战：从沉浸式登录到验证码弹窗的完整实现手把手教你实现多窗口管理、跨窗口通信与沉浸式交互一、为什么需要窗口管理？..."
     },
     {
       "rank": 5,
-      "title": "零元使用 Claude Code 搭建个人的AI知识库，比付费版查得更准，附搭建教程",
-      "url": "https://www.51cto.com/article/846989.html",
-      "hot": "打开账单，那个 AI 知识库会员又扣了三百多块。不多，但每次看到这笔钱，我心里都会冒出一个念头：这个月我打开过它几次？答案是：不超过三次。而且其中两次搜出来的东西，说实话，不太对。"
+      "title": "尴尬了！OpenAI刚派GPT-5.5-Cyber修补地球，Codex却爆出致命bug",
+      "url": "https://www.51cto.com/article/847143.html",
+      "hot": "今天，OpenAI祭出满血GPT-5.5-Cyber，要给全世界的开源代码修漏洞。结果话音刚落，Codex被扒出史诗级bug：一年狂写640TB，能把SSD直接写废。"
     },
     {
       "rank": 6,
-      "title": "Claude Code 里的七种自定义方式，90% 的人只用了 CLAUDE.md 一种",
-      "url": "https://www.51cto.com/article/847034.html",
-      "hot": "Claude Code 的 7 种自定义方式不是「哪个更好」的问题，是「什么场景用什么」的问题。 把所有规则塞进 CLAUDE.md，就像把所有衣服扔进一个抽屉——你当然能塞进去，但找的时候全乱。拆开来各司其职，Claude 的表现会好很多。"
+      "title": "200块薅出1.4万算力！OpenAI被薅秃了？",
+      "url": "https://www.51cto.com/article/847141.html",
+      "hot": "你以为自己在薅AI羊毛？OpenAI和Anthropic却在笑看账本。200美元的个人订阅，根本不是在卖服务，而是在批量培养「病毒式销售员」。"
     },
     {
       "rank": 7,
-      "title": "企业 AI 原生的数字员工架构设计和落地实践",
-      "url": "https://www.51cto.com/article/847066.html",
-      "hot": "下一个十年，AI Native 要让我们不再操心 AI 怎么在具体业务里干活。通过 AgentTeams 这套如同 Kubernetes 一样的控制治理平面，组织结构、通信边界、网关凭证与共享存储被统一纳入声明式 API 的控制循环（Reconcile）中。"
+      "title": "Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统",
+      "url": "https://www.51cto.com/article/847137.html",
+      "hot": "Loop Engineering 被视为继 Prompt Engineering、Context & Harness Engineering 之后的\"AI 编程第三次革命\"——开发者角色从\"提示词工程师\"彻底升级为\"AI 系统架构师\"。"
     },
     {
       "rank": 8,
-      "title": "失控的\"数字雇佣兵\"：当AI智能体扛着100Gbps\"大炮\"打蚊子，谁来买单？",
-      "url": "https://www.51cto.com/article/847021.html",
-      "hot": "DN42这场闹剧用1894美元的真实罚款给所有人提了个醒：没有任何自治系统可以成为人类操作者免责的挡箭牌。当我们把无限算力和生产数据库密钥交到一个仍处于\"婴儿期\"、极易陷入逻辑混乱和幻觉的大模型手中时，配套的物理铁笼一刻都不能缺席。"
+      "title": "Linux 服务器运维实战：拿到一台新服务器后该做的那些事",
+      "url": "https://www.51cto.com/article/847136.html",
+      "hot": "服务器安全不是一个\"配置清单\"，做完就打勾。它是一个持续的过程。你的服务器比别人的安全，不是因为你配置得多好，而是因为你维护得多勤快。"
     },
     {
       "rank": 9,
-      "title": "我试了33个Claude技能",
-      "url": "https://www.51cto.com/article/846986.html",
-      "hot": "多数技能都放在类似“marketplace”的地方。你可以把它理解成 Claude 的应用商店。官方技能已经连接好了，所以你只需要安装。"
+      "title": "借助 Claude Mythos Preview 发现的 29 年\"Squidbleed\"漏洞",
+      "url": "https://www.51cto.com/article/847134.html",
+      "hot": "该漏洞影响所有默认配置下的Squid版本，且已潜伏近三十年之久，甚至早于Squid在GitHub仓库中的所有可用提交记录。"
     },
     {
       "rank": 10,
-      "title": "# 码上鸿蒙•智绘未来# 会议日程管理：Calendar Kit 事件 + Notification Kit 提醒 + User Auth 签到",
-      "url": "https://ost.51cto.com/posts/48689",
-      "hot": "开会最怕两件事：忘了开会时间，以及会议签到的繁琐流程。这篇用三个Kit做一个会议管理工具：CalendarKit：创建会议日历事件NotificationKi..."
+      "title": "一文带你学会 Agent 如何实现自迭代",
+      "url": "https://www.51cto.com/article/847133.html",
+      "hot": "这篇文章不做泛泛感想，而是按实现机制来拆：它解决什么问题，整体机制怎么运转，一条错误如何流转，边界在哪里，以及我们如何借鉴它建立自己的自迭代体系。"
     }
   ]
 }

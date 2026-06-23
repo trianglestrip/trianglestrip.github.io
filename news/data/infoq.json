@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-23T00:18:06+00:00",
+  "updated_at": "2026-06-23T04:32:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "探索 Snowflake 与 Postgres 之间的双向数据流动模式 ｜ 技术实践",
+      "url": "https://www.infoq.cn/article/wvtzppvWzOlKYDVRzlYN?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 23 Jun 2026 11:46:51 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "谷歌LiteRT-LM通过Gemma 4多Token预测将本地推理速度提升了最高2.2倍",
+      "url": "https://www.infoq.cn/article/lv6xh4HeBfWaYubLv54y?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 23 Jun 2026 11:11:13 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "2026下半年中美AI创业机会：从技术红利到商业验证｜AICon上海",
+      "url": "https://www.infoq.cn/article/gk0VlPy3hufsH4zKTh2X?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 23 Jun 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Dropbox发布Nova：用于大规模运行AI编程智能体的内部平台",
+      "url": "https://www.infoq.cn/article/5UOHryk6Ck66376bCULb?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 23 Jun 2026 09:40:37 GMT"
+    },
+    {
+      "rank": 5,
       "title": "Netflix如何实时绘制数千个微服务的拓扑图",
       "url": "https://www.infoq.cn/article/kp5s7thcxtELg8TpdQYY?utm_source=rss&utm_medium=article",
       "hot": "Mon, 22 Jun 2026 19:07:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Java新闻汇总：WildFly、Micronaut、Spring AI、Apache Fory、GlassFish插件和Open Liberty",
       "url": "https://www.infoq.cn/article/uxOetuGQdWIU0dzEG89v?utm_source=rss&utm_medium=article",
       "hot": "Mon, 22 Jun 2026 18:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "吴恩达戳破AI幻象：炒作过头了，未来公司是10人小队＋Agent重做数据架构",
       "url": "https://www.infoq.cn/article/9ubrcrTRdxROBUo5igpy?utm_source=rss&utm_medium=article",
       "hot": "Mon, 22 Jun 2026 16:55:45 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "xAI发布Grok Skills并更新用于工具调用的Responses API",
       "url": "https://www.infoq.cn/article/hmME4JhKTJUYJy9DNEJ2?utm_source=rss&utm_medium=article",
       "hot": "Mon, 22 Jun 2026 16:49:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "Discord以自动化重构数据库运维，以管理超大规模的ScyllaDB",
       "url": "https://www.infoq.cn/article/hsg1FAk30lT5KVpIpDf1?utm_source=rss&utm_medium=article",
       "hot": "Mon, 22 Jun 2026 14:44:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "让开关自我消亡：AI 赋能的 Feature Flag 全生命周期治理",
       "url": "https://www.infoq.cn/article/qAbbFlvzvDM2OZD9ulkE?utm_source=rss&utm_medium=article",
       "hot": "Mon, 22 Jun 2026 14:16:02 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "优步通过实时信号与Listwise排序改进餐厅推荐",
-      "url": "https://www.infoq.cn/article/yz1xWttyNqlIdBbF7GOR?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 22 Jun 2026 12:00:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "传统数据架构，还够用吗？",
-      "url": "https://www.infoq.cn/video/LwxokkXxwsf5YECuhzi9?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 22 Jun 2026 11:24:25 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "内核级的真相：为什么eBPF正在取代基于用户空间的Agent成为安全可观测性的首选",
-      "url": "https://www.infoq.cn/article/spibFV8QPwbvac8LAluZ?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 22 Jun 2026 10:20:48 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "复旦大学教授邱锡鹏确认出席AICon上海站，分享MOSS 多模态模型的创新与实践",
-      "url": "https://www.infoq.cn/article/Lp2yijsaRsNZNzlgCRCx?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 22 Jun 2026 10:00:00 GMT"
     }
   ]
 }

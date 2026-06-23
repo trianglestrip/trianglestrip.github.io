@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-23T00:18:01+00:00",
+  "updated_at": "2026-06-23T04:32:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Steam Machine launches today",
       "url": "https://store.steampowered.com/news/group/45479024/view/685257114654870245",
-      "hot": "1108"
+      "hot": "1346"
     },
     {
       "rank": 2,
-      "title": "Unsloth GLM-5.2 – How to Run Locally",
+      "title": "GLM-5.2 – How to Run Locally",
       "url": "https://unsloth.ai/docs/models/glm-5.2",
-      "hot": "115"
+      "hot": "253"
     },
     {
       "rank": 3,
-      "title": "Optocam Zero: a Pi Zero based digital camera made using off the shelf components",
-      "url": "https://github.com/dorukkumkumoglu/optocamzero",
-      "hot": "83"
-    },
-    {
-      "rank": 4,
-      "title": "British Columbia, Time Zones, and Postgres",
-      "url": "https://www.crunchydata.com/blog/british-columbia-and-time-zone-changes",
-      "hot": "93"
-    },
-    {
-      "rank": 5,
-      "title": "My Mathematical Regression",
-      "url": "https://blog.dahl.dev/posts/my-mathematical-regression/",
-      "hot": "181"
-    },
-    {
-      "rank": 6,
-      "title": "Japanese symbols that speak without words",
-      "url": "https://arun.is/blog/japan-symbols/",
+      "title": "In praise of memcached",
+      "url": "https://jchri.st/blog/in-praise-of-memcached/",
       "hot": "81"
     },
     {
-      "rank": 7,
-      "title": "Cyberdecks, going analog, and convivial technology",
-      "url": "https://blog.hydroponictrash.solar/cyberdecks-going-analog-and-convivial-technology/",
-      "hot": "7"
+      "rank": 4,
+      "title": "VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO",
+      "url": "https://arxiv.org/abs/2606.16140",
+      "hot": "49"
     },
     {
-      "rank": 8,
-      "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
-      "url": "https://hustvl.github.io/Moebius/",
-      "hot": "216"
+      "rank": 5,
+      "title": "Polymarket has flooded social media with deceptive videos by paid creators",
+      "url": "https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2",
+      "hot": "90"
     },
     {
-      "rank": 9,
-      "title": "Is it time for a new Embedded Linux build system?",
-      "url": "https://yoebuild.org/blog/time-for-a-new-build-system/",
+      "rank": 6,
+      "title": "An Introduction to YOLO26",
+      "url": "https://blog.roboflow.com/yolo26/",
       "hot": "20"
     },
     {
+      "rank": 7,
+      "title": "Will It Mythos?",
+      "url": "https://swelljoe.com/post/will-it-mythos/",
+      "hot": "4"
+    },
+    {
+      "rank": 8,
+      "title": "Cyberdecks, going analog, and convivial technology",
+      "url": "https://blog.hydroponictrash.solar/cyberdecks-going-analog-and-convivial-technology/",
+      "hot": "68"
+    },
+    {
+      "rank": 9,
+      "title": "Optocam Zero: a Pi Zero based digital camera made using off the shelf components",
+      "url": "https://github.com/dorukkumkumoglu/optocamzero",
+      "hot": "130"
+    },
+    {
       "rank": 10,
-      "title": "Show HN: Oak – Git alternative designed for agents",
-      "url": "https://oak.space/oak/oak",
-      "hot": "137"
+      "title": "Giant Banana Pulled Over: Driver Says Cops Have Stopped Him 100s of Times",
+      "url": "https://cowboystatedaily.com/2026/06/18/giant-banana-pulled-over-in-montana-driver-says-cops-have-stopped-him-100s-of-times/",
+      "hot": "12"
     }
   ]
 }
