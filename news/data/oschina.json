@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-24T01:49:26+00:00",
+  "updated_at": "2026-06-24T05:53:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "2026红帽媒体Open讲在京举行，阐述“未来的平台即是选择”重要理念",
-      "url": "https://www.oschina.net/news/466057",
-      "hot": "Tue, 23 Jun 2026 19:22:22 +0800"
+      "title": "HeidiSQL 12.20 发布，bugfix 版本",
+      "url": "https://www.oschina.net/news/466522/heidisql-12-20-released",
+      "hot": "Wed, 24 Jun 2026 13:47:16 +0800"
     },
     {
       "rank": 2,
-      "title": "AI 编程圈最近在吹的“Loop Engineering（循环工程）”是什么？",
-      "url": "https://www.oschina.net/news/466052",
-      "hot": "Tue, 23 Jun 2026 19:16:12 +0800"
+      "title": "软件工程领域 LLM 驱动的自迭代知识引擎",
+      "url": "https://my.oschina.net/u/3874284/blog/19708698",
+      "hot": "Wed, 24 Jun 2026 11:26:24 +0800"
     },
     {
       "rank": 3,
-      "title": "一份 AI 博士的求职笔记，万字长文揭开工业界研究科学家招聘的真实面纱",
-      "url": "https://www.oschina.net/news/466029",
-      "hot": "Tue, 23 Jun 2026 18:43:22 +0800"
+      "title": "豆包专业版正式上线，标准套餐连续包月 68 元",
+      "url": "https://www.oschina.net/news/466434",
+      "hot": "Wed, 24 Jun 2026 11:15:55 +0800"
     },
     {
       "rank": 4,
-      "title": "TimescaleDB 2.28.1 发布，基于 PostgreSQL 的时序数据库",
-      "url": "https://www.oschina.net/news/465993/timescaledb-2-28-1-released",
-      "hot": "Tue, 23 Jun 2026 17:47:56 +0800"
+      "title": "Logback 1.5.35 发布，Java 日志框架",
+      "url": "https://www.oschina.net/news/466431/logback-1-5-35-released",
+      "hot": "Wed, 24 Jun 2026 11:07:38 +0800"
     },
     {
       "rank": 5,
-      "title": "🔥🔥「AI桌面硬件大赏」Vibeboard -- 为 Vibe Coding 而生的按键板",
-      "url": "https://www.oschina.net/ai-creation/details/2815",
-      "hot": "Tue, 23 Jun 2026 17:24:54 +0800"
+      "title": "Firefox 152.0.2 发布",
+      "url": "https://www.oschina.net/news/466411/firefox-152-0-2-released",
+      "hot": "Wed, 24 Jun 2026 10:30:24 +0800"
     },
     {
       "rank": 6,
-      "title": "🔥🔥开源了一款“雷达信号研究”的毫米波雷达",
-      "url": "https://www.oschina.net/ai-creation/details/2821",
-      "hot": "Tue, 23 Jun 2026 17:22:42 +0800"
+      "title": "Material UI 9.1.2 发布，Material Design React 组件",
+      "url": "https://www.oschina.net/news/466408/material-ui-9-1-2-released",
+      "hot": "Wed, 24 Jun 2026 10:27:41 +0800"
     },
     {
       "rank": 7,
-      "title": "桌面端监控新范式：阿里云推出 Electron SDK",
-      "url": "https://my.oschina.net/u/3874284/blog/19709177",
-      "hot": "Tue, 23 Jun 2026 17:19:26 +0800"
+      "title": ":fire: 我偏不锁代码：一个独立开发者凭啥 2 年攒下 2 万用户",
+      "url": "https://www.oschina.net/news/466403",
+      "hot": "Wed, 24 Jun 2026 10:23:44 +0800"
     },
     {
       "rank": 8,
-      "title": "从一张 287 美元账单到 4.4 万 star 的开源传奇：Netflix 工程师如何用 Headroom 为 AI Agent “瘦身” 90% 的 Token",
-      "url": "https://www.oschina.net/news/465967",
-      "hot": "Tue, 23 Jun 2026 16:59:49 +0800"
+      "title": "FastDFS V6.15.5 已经发布，轻量级分布式对象存储",
+      "url": "https://www.oschina.net/news/466360/fastdfs-6-15-5-released",
+      "hot": "Wed, 24 Jun 2026 09:27:13 +0800"
     },
     {
       "rank": 9,
-      "title": "Subtitle Edit 5 发布，重构以实现跨平台支持",
-      "url": "https://www.oschina.net/news/465948/subtitle-edit-5-0-0-released",
-      "hot": "Tue, 23 Jun 2026 16:35:59 +0800"
+      "title": "VibeCoding v1.1.50 已经发布，单文件的code agent工具",
+      "url": "https://www.oschina.net/news/466179/vibecoding-1-1-50-released",
+      "hot": "Tue, 23 Jun 2026 23:09:58 +0800"
     },
     {
       "rank": 10,
-      "title": "TypeScript 7.0 RC 发布：编译器用 Go 重写，类型检查提速 10 倍",
-      "url": "https://www.oschina.net/news/465915/typescript-7-0-rc",
-      "hot": "Tue, 23 Jun 2026 15:44:24 +0800"
+      "title": "墨转 — macOS 电子书转换 + Kindle 封面修复，免费开源",
+      "url": "https://www.oschina.net/news/466111",
+      "hot": "Tue, 23 Jun 2026 20:59:42 +0800"
     }
   ]
 }

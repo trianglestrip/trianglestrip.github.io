@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-24T01:49:22+00:00",
+  "updated_at": "2026-06-24T05:52:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Vulnerability reports are not special anymore",
       "url": "https://words.filippo.io/vuln-reports/",
-      "hot": "60"
+      "hot": "179"
     },
     {
       "rank": 2,
       "title": "Jerry's Map",
       "url": "http://www.jerrysmap.com/the-map",
-      "hot": "332"
+      "hot": "402"
     },
     {
       "rank": 3,
-      "title": "A man was gifted his dream car by Kevin Mitnick, who he helped put in prison",
-      "url": "https://www.thedrive.com/news/this-man-was-gifted-his-dream-car-by-the-notorious-hacker-he-put-in-prison",
-      "hot": "66"
+      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
+      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
+      "hot": "38"
     },
     {
       "rank": 4,
-      "title": "FUTO Swipe – A new swipe typing model",
-      "url": "https://swipe.futo.tech/",
-      "hot": "275"
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://arxiv.org/abs/2606.24597",
+      "hot": "33"
     },
     {
       "rank": 5,
-      "title": "Usbliter8: an A12/A13 SecureROM Exploit",
-      "url": "https://ps.tc/pages/blog-usbliter8.html",
-      "hot": "66"
+      "title": "FUTO Swipe – A new swipe typing model",
+      "url": "https://swipe.futo.tech/",
+      "hot": "425"
     },
     {
       "rank": 6,
-      "title": "Swift Package Index joins Apple",
-      "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
-      "hot": "171"
+      "title": "Show HN: An ASCII 3D Rendering Engine",
+      "url": "https://glyphcss.com",
+      "hot": "39"
     },
     {
       "rank": 7,
-      "title": "Printing Gaussian Splats",
-      "url": "https://www.patreon.com/DanyBittel/posts/printing-splats-161333338",
-      "hot": "171"
+      "title": "In memory of the man who put red and green squiggles under words",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
+      "hot": "277"
     },
     {
       "rank": 8,
-      "title": "In memory of the man who put red and green squiggles under words",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
-      "hot": "147"
+      "title": "Printing Gaussian Splats",
+      "url": "https://www.patreon.com/DanyBittel/posts/printing-splats-161333338",
+      "hot": "241"
     },
     {
       "rank": 9,
-      "title": "Extreme Heat conference cancelled due to extreme heat warning",
-      "url": "https://www.lse.ac.uk/granthaminstitute/events/extreme-heat-improving-governance-and-strengthening-action-around-the-world/",
-      "hot": "130"
+      "title": "DiffusionBench: Towards Holistic Evaluation of Generative Diffusion Transformers",
+      "url": "https://github.com/End2End-Diffusion/diffusion-bench",
+      "hot": "24"
     },
     {
       "rank": 10,
-      "title": "Show HN: Y – A malleable coding-agent desktop app built with Electron",
-      "url": "https://github.com/y-times-y/y",
-      "hot": "13"
+      "title": "Swift Package Index joins Apple",
+      "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
+      "hot": "192"
     }
   ]
 }

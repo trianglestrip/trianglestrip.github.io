@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-24T01:49:21+00:00",
+  "updated_at": "2026-06-24T05:52:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude要把Cowork塞进手机，关掉App活儿照跑",
-      "url": "https://www.51cto.com/article/847229.html",
-      "hot": "Claude把Cowork塞进手机，Codex钻进ChatGPT，两巨头抢上同一块屏，可谁都没让手机真正干活。被改写的，是写代码的你。"
+      "title": "# 码上鸿蒙•智绘未来# uni-app x 鸿蒙平台登录功能实战：登录、用户信息获取完整实现",
+      "url": "https://ost.51cto.com/posts/49311",
+      "hot": "前言登录这玩意儿，看着简单，不就是调个uni.login嘛。结果真正用起来，坑也不少。先是provider配置，manifest.json里得配unioauth模块，一..."
     },
     {
       "rank": 2,
-      "title": "Agent 的七类越界数据采集行为与防护方案",
-      "url": "https://www.51cto.com/article/847130.html",
-      "hot": "Agent 隐私治理不能只看输出审核，还必须前移到工具调用、数据返回和上下文准入阶段。"
+      "title": "uni-app x 鸿蒙本地存储实战：数据持久化、缓存管理完整指南",
+      "url": "https://ost.51cto.com/posts/49308",
+      "hot": "前言本地存储这玩意儿，看着简单，不就是存个keyvalue嘛。结果真正用起来，坑也不少。先是类型问题，存进去的对象取出来变成any了，得手动a..."
     },
     {
       "rank": 3,
-      "title": "Skill 怎么设计才有用？五种模式和一套评测方法",
-      "url": "https://www.51cto.com/article/847211.html",
-      "hot": "Agent 先看到轻量的技能列表，再按需加载 SKILL.md，必要时继续加载外部资源。它避免把所有知识都塞进系统提示，也让每个 Skill 可以被单独设计、测试和迭代。下面这 5 种模式，可以当作写 Skill 时的基本分类。"
+      "title": "ICML‘26 Oral | TRM思考奖励模型上线，大模型推理质量终于能量化了",
+      "url": "https://www.51cto.com/article/847298.html",
+      "hot": "来自上海人工智能实验室、上海交通大学、香港中文大学的研究团队提出了TRM（Thinking Reward Model）。"
     },
     {
       "rank": 4,
-      "title": "面试官问：什么是 Harness 工程？可以这样回答",
-      "url": "https://www.51cto.com/article/847208.html",
-      "hot": "Harness Engineering，也被叫做驾驭工程，是给 AI Agent 设计工作环境的一套工程方法，包括上下文管理、工具调用、沙箱环境、权限控制、测试验证、日志观测、评审机制和反馈回路，目的是为了让Agent在真实工程系统中更可靠、更可控，并持续完成任务。"
+      "title": "以为Anthropic全是科学家？数据告诉你，他们要的是基础设施老兵",
+      "url": "https://www.51cto.com/article/847286.html",
+      "hot": "Fonzi AI的人才工程主管Seb扒了1680份Anthropic工程师简历，发现这家公司要的压根不是研究员，是一群能造系统的人。"
     },
     {
       "rank": 5,
-      "title": "警惕！你的AI助手可能已经\"中毒\"——智能体Skills安全危机全解析",
-      "url": "https://www.51cto.com/article/847165.html",
-      "hot": "我们用它写报告、整理数据、自动化流程，甚至让它帮我们管理日历和邮件。然而，当我们沉浸在这股AI浪潮带来的便利中时，是否曾停下来想一想：这些赋予AI\"技能\"的组件—“智能体Skills”究竟是谁写的？里面装的，真的是我们以为的那些东西吗？"
+      "title": "人类最后考试已不够用，Agent最后考试来了！",
+      "url": "https://www.51cto.com/article/847285.html",
+      "hot": "人类最后考试已不够用，伯克利牵头、250 多位行业专家参与的研究团队开始给AI上难度， Agents' Last Exam（智能体最后的考试，ALE）诞生。"
     },
     {
       "rank": 6,
-      "title": "# 码上鸿蒙•智绘未来#  数据分享实战：系统分享面板接入，文字图片文件一键分享到其他应用",
-      "url": "https://ost.51cto.com/posts/48942",
-      "hot": "几乎所有应用都有分享需求。新闻App分享文章、电商App分享商品、笔记App分享文档。鸿蒙提供了ShareKit来统一处理分享逻辑，调用系统分享面..."
+      "title": "Claude惊人真相被教授曝光：思考过程加密，给钱也看不到！",
+      "url": "https://www.51cto.com/article/847281.html",
+      "hot": "当初，Anthropic推出extended thinking的时候，把它包装成「让用户看到思考过程」的透明标杆。现在真相是：你看到的只是他们允许你看到的部分。那些被加密、被压缩、被锁在全局密钥里的内容，藏着什么？"
     },
     {
       "rank": 7,
-      "title": "94毫秒延迟、监控胜率100%！国产视频模型干翻Gemini",
-      "url": "https://www.51cto.com/article/847178.html",
-      "hot": "京东开源JoyAI-VL-Interaction，把视频AI从「你问我答」的轮次对话，推进到「持续在场、主动开口、按时机说话」的流式交互新范式。"
+      "title": "不安全指令，一拒了之？TRIAD用三路决策：修复AI智能体的危险计划",
+      "url": "https://www.51cto.com/article/847280.html",
+      "hot": "TRIAD是为AI智能体设计的一种新型安全框架，通过三类决策（继续、更新、拒绝）和自然语言反馈，帮助Agent在被误导时修正计划，完成用户真实需求。相比传统方法，TRIAD更智能，能区分任务污染程度，既防风险又不误任务。"
     },
     {
       "rank": 8,
-      "title": "机器人终于不瞎抓了！港大阿里联手开源FineVLA：用哪只手、抓哪里，一句话全搞定",
-      "url": "https://www.51cto.com/article/847179.html",
-      "hot": "近日，来自香港大学XLANG Lab和阿里巴巴Qwen团队的研究人员提出了FineVLA，一个面向可控VLA策略的开源框架。"
+      "title": "高危 FFmpeg 漏洞可使攻击者将媒体文件武器化",
+      "url": "https://www.51cto.com/article/847278.html",
+      "hot": "该漏洞已在修补的FFmpeg版本（如8.1.2或更高版本，应用了MagicYUV边界检查）中得到修复，强烈建议用户尽快升级其FFmpeg构建。"
     },
     {
       "rank": 9,
-      "title": "战胜Mythos 5，OpenAI安全专用GPT-5.5-Cyber完全体来了",
-      "url": "https://www.51cto.com/article/847168.html",
-      "hot": "今天，OpenAI 宣布扩展 Daybreak 安全计划，推出更新版 GPT-5.5-Cyber、Codex Security 插件、Daybreak Cyber Partner Program，以及面向开源生态的 Patch the Planet 计划等。"
+      "title": "研究揭示 AI 聊天机器人或成“妄想放大器”：个性化互动能让用户越聊越偏执",
+      "url": "https://www.51cto.com/article/847273.html",
+      "hot": "据外媒 Futurism 23 日报道，伦敦国王学院和德国新教应用科学大学的精神科医生在《自然》发表新论文，提出“放大螺旋”框架，用于解释 AI 如何助推妄想不断发展，以及聊天机器人的哪些设计特征可能让用户进一步脱离现实。"
     },
     {
       "rank": 10,
-      "title": "你的AI正在「见人下菜」，亚马逊团队ACL高分论文，首次系统测评「记忆」如何影响LLM情商",
-      "url": "https://www.51cto.com/article/847171.html",
-      "hot": "近日，位于亚马逊的研究科学家们发现，这种 “见人下菜” 的现象确实大量存在于大语言模型中：用户记忆会改变模型的回答内容，也会改变模型对相同时间的情感理解和建议方式，引发带来新的公平问题。"
+      "title": "一夜之间，Claude成我同事了",
+      "url": "https://www.51cto.com/article/847272.html",
+      "hot": "Claude 作为一个智能体同事，具备持续记忆，能主动介入工作，可以像团队成员一样加入 Slack。"
     }
   ]
 }
