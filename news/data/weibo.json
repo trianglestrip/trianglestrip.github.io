@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-06-24T19:20:52+00:00",
+  "updated_at": "2026-06-24T21:00:35+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,8 +24,8 @@
     },
     {
       "rank": 4,
-      "title": "内马尔首秀",
-      "url": "https://s.weibo.com/weibo?q=%E5%86%85%E9%A9%AC%E5%B0%94%E9%A6%96%E7%A7%80",
+      "title": "瑞士vs加拿大",
+      "url": "https://s.weibo.com/weibo?q=%E7%91%9E%E5%A3%ABvs%E5%8A%A0%E6%8B%BF%E5%A4%A7",
       "hot": ""
     },
     {
@@ -42,26 +42,26 @@
     },
     {
       "rank": 7,
-      "title": "王者荣耀婉拒逆水寒",
-      "url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E5%A9%89%E6%8B%92%E9%80%86%E6%B0%B4%E5%AF%92",
-      "hot": ""
-    },
-    {
-      "rank": 8,
-      "title": "毛晓彤吓到我了",
-      "url": "https://s.weibo.com/weibo?q=%E6%AF%9B%E6%99%93%E5%BD%A4%E5%90%93%E5%88%B0%E6%88%91%E4%BA%86",
-      "hot": ""
-    },
-    {
-      "rank": 9,
       "title": "客厅对于小家庭来说完全没必要",
       "url": "https://s.weibo.com/weibo?q=%E5%AE%A2%E5%8E%85%E5%AF%B9%E4%BA%8E%E5%B0%8F%E5%AE%B6%E5%BA%AD%E6%9D%A5%E8%AF%B4%E5%AE%8C%E5%85%A8%E6%B2%A1%E5%BF%85%E8%A6%81",
       "hot": ""
     },
     {
-      "rank": 10,
+      "rank": 8,
       "title": "李宛妲在十日终焉美得像bjd",
       "url": "https://s.weibo.com/weibo?q=%E6%9D%8E%E5%AE%9B%E5%A6%B2%E5%9C%A8%E5%8D%81%E6%97%A5%E7%BB%88%E7%84%89%E7%BE%8E%E5%BE%97%E5%83%8Fbjd",
+      "hot": ""
+    },
+    {
+      "rank": 9,
+      "title": "波黑vs卡塔尔",
+      "url": "https://s.weibo.com/weibo?q=%E6%B3%A2%E9%BB%91vs%E5%8D%A1%E5%A1%94%E5%B0%94",
+      "hot": ""
+    },
+    {
+      "rank": 10,
+      "title": "白鹿回复陆虎",
+      "url": "https://s.weibo.com/weibo?q=%E7%99%BD%E9%B9%BF%E5%9B%9E%E5%A4%8D%E9%99%86%E8%99%8E",
       "hot": ""
     }
   ]
