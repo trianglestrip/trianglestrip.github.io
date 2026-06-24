@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-24T08:47:43+00:00",
+  "updated_at": "2026-06-24T11:34:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Vulnerability reports are not special anymore",
-      "url": "https://words.filippo.io/vuln-reports/",
-      "hot": "247"
+      "title": "We're making Bunny DNS free: because a faster internet won't build itself",
+      "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
+      "hot": "216"
     },
     {
       "rank": 2,
-      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
-      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
-      "hot": "114"
+      "title": "Vulnerability reports are not special anymore",
+      "url": "https://words.filippo.io/vuln-reports/",
+      "hot": "298"
     },
     {
       "rank": 3,
-      "title": "Show HN: An ASCII 3D Rendering Engine",
-      "url": "https://glyphcss.com",
-      "hot": "108"
+      "title": "Statistics that live in your SQL",
+      "url": "https://kolistat.com/blog/the-stats-duck-v0-6-0/",
+      "hot": "21"
     },
     {
       "rank": 4,
-      "title": "Jerry's Map",
-      "url": "http://www.jerrysmap.com/the-map",
-      "hot": "457"
+      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
+      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
+      "hot": "154"
     },
     {
       "rank": 5,
-      "title": "FUTO Swipe – A new swipe typing model",
-      "url": "https://swipe.futo.tech/",
-      "hot": "519"
+      "title": "Jerry's Map",
+      "url": "http://www.jerrysmap.com/the-map",
+      "hot": "490"
     },
     {
       "rank": 6,
       "title": "In memory of the man who put red and green squiggles under words",
       "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
-      "hot": "361"
+      "hot": "427"
     },
     {
       "rank": 7,
-      "title": "Qwen-AgentWorld: Language World Models for General Agents",
-      "url": "https://arxiv.org/abs/2606.24597",
-      "hot": "90"
+      "title": "FUTO Swipe – A new swipe typing model",
+      "url": "https://swipe.futo.tech/",
+      "hot": "571"
     },
     {
       "rank": 8,
       "title": "Why eval startups fail (2025)",
       "url": "https://thomasliao.com/eval-startups",
-      "hot": "7"
+      "hot": "30"
     },
     {
       "rank": 9,
-      "title": "\"Fix\" MacBook Neo Cursor Lag: Record 1 Pixel of the Screen Every 10 Seconds",
-      "url": "https://gist.github.com/retroplasma/ec21767d0a8380c7ea9c2fbee1c7d6bf",
-      "hot": "85"
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://arxiv.org/abs/2606.24597",
+      "hot": "121"
     },
     {
       "rank": 10,
-      "title": "Printing Gaussian Splats",
-      "url": "https://www.patreon.com/DanyBittel/posts/printing-splats-161333338",
-      "hot": "291"
+      "title": "Show HN: An ASCII 3D Rendering Engine",
+      "url": "https://glyphcss.com",
+      "hot": "159"
     }
   ]
 }
