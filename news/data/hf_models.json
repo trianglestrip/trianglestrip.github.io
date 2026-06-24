@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-24T01:49:40+00:00",
+  "updated_at": "2026-06-24T08:47:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "2198"
+      "hot": "2250"
     },
     {
       "rank": 2,
       "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "hot": "2241"
+      "hot": "2257"
     },
     {
       "rank": 3,
-      "title": "WeiboAI/VibeThinker-3B",
-      "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
-      "hot": "664"
+      "title": "baidu/Unlimited-OCR",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "hot": "572"
     },
     {
       "rank": 4,
-      "title": "baidu/Unlimited-OCR",
-      "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "480"
+      "title": "WeiboAI/VibeThinker-3B",
+      "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
+      "hot": "674"
     },
     {
       "rank": 5,
       "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "hot": "449"
+      "hot": "468"
     },
     {
       "rank": 6,
       "title": "unsloth/GLM-5.2-GGUF",
       "url": "https://huggingface.co/unsloth/GLM-5.2-GGUF",
-      "hot": "303"
+      "hot": "314"
     },
     {
       "rank": 7,
-      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2158"
+      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "hot": "239"
     },
     {
       "rank": 8,
-      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-      "hot": "217"
+      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "hot": "2172"
     },
     {
       "rank": 9,
-      "title": "nvidia/LocateAnything-3B",
-      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-      "hot": "2317"
+      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "hot": "205"
     },
     {
       "rank": 10,
-      "title": "MiniMaxAI/MiniMax-M3",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-      "hot": "1221"
+      "title": "nvidia/LocateAnything-3B",
+      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "hot": "2328"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-24T05:52:57+00:00",
+  "updated_at": "2026-06-24T08:47:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "一文读懂 Claude Code 的架构设计",
+      "url": "https://www.51cto.com/article/847323.html",
+      "hot": "Claude Code 是一种代理式编程工具，可以代表用户运行 Shell 命令、编辑文件，并调用外部服务。本文通过分析公开可得的 TypeScript 源代码，描述其综合架构，并进一步将其与 OpenClaw 进行比较。"
+    },
+    {
+      "rank": 2,
+      "title": "暴涨 3810%！AI 已成暗网犯罪最强加速器",
+      "url": "https://www.51cto.com/article/847320.html",
+      "hot": "网络空间已经成为新的主战场。只是这片战场没有硝烟，没有边界，没有宣战书——有的只是某个深夜悄然运行的脚本，以及第二天早晨收到的一封邮件，或一个来自\"领导\"的电话。"
+    },
+    {
+      "rank": 3,
+      "title": "百度二面：MCP 和 Agent Skill 的区别是什么？",
+      "url": "https://www.51cto.com/article/847318.html",
+      "hot": "很多人把 MCP 和 Skill 当成同类概念。本文我把两者各自的定位和配合方式拆开讲清楚。"
+    },
+    {
+      "rank": 4,
+      "title": "HarmonyOS 从广播扫描到 SSAP 连接的全流程实战",
+      "url": "https://ost.51cto.com/posts/49329",
+      "hot": "HarmonyOS星闪服务开发完全指南：从广播扫描到SSAP连接的全流程实战手把手带你实现设备发现、连接通信与属性读写，掌握星闪核心开发技能写..."
+    },
+    {
+      "rank": 5,
+      "title": "机器学习算法实战指南",
+      "url": "https://www.51cto.com/article/847315.html",
+      "hot": "本文是一份实用指南。其目标是帮助您在营销工作中识别主要的机器学习算法，大致了解每种算法的工作原理，以及它们各自适用于哪种类型的营销问题。"
+    },
+    {
+      "rank": 6,
       "title": "# 码上鸿蒙•智绘未来# uni-app x 鸿蒙平台登录功能实战：登录、用户信息获取完整实现",
       "url": "https://ost.51cto.com/posts/49311",
       "hot": "前言登录这玩意儿，看着简单，不就是调个uni.login嘛。结果真正用起来，坑也不少。先是provider配置，manifest.json里得配unioauth模块，一..."
     },
     {
-      "rank": 2,
-      "title": "uni-app x 鸿蒙本地存储实战：数据持久化、缓存管理完整指南",
-      "url": "https://ost.51cto.com/posts/49308",
-      "hot": "前言本地存储这玩意儿，看着简单，不就是存个keyvalue嘛。结果真正用起来，坑也不少。先是类型问题，存进去的对象取出来变成any了，得手动a..."
-    },
-    {
-      "rank": 3,
-      "title": "ICML‘26 Oral | TRM思考奖励模型上线，大模型推理质量终于能量化了",
-      "url": "https://www.51cto.com/article/847298.html",
-      "hot": "来自上海人工智能实验室、上海交通大学、香港中文大学的研究团队提出了TRM（Thinking Reward Model）。"
-    },
-    {
-      "rank": 4,
-      "title": "以为Anthropic全是科学家？数据告诉你，他们要的是基础设施老兵",
-      "url": "https://www.51cto.com/article/847286.html",
-      "hot": "Fonzi AI的人才工程主管Seb扒了1680份Anthropic工程师简历，发现这家公司要的压根不是研究员，是一群能造系统的人。"
-    },
-    {
-      "rank": 5,
-      "title": "人类最后考试已不够用，Agent最后考试来了！",
-      "url": "https://www.51cto.com/article/847285.html",
-      "hot": "人类最后考试已不够用，伯克利牵头、250 多位行业专家参与的研究团队开始给AI上难度， Agents' Last Exam（智能体最后的考试，ALE）诞生。"
-    },
-    {
-      "rank": 6,
-      "title": "Claude惊人真相被教授曝光：思考过程加密，给钱也看不到！",
-      "url": "https://www.51cto.com/article/847281.html",
-      "hot": "当初，Anthropic推出extended thinking的时候，把它包装成「让用户看到思考过程」的透明标杆。现在真相是：你看到的只是他们允许你看到的部分。那些被加密、被压缩、被锁在全局密钥里的内容，藏着什么？"
-    },
-    {
       "rank": 7,
-      "title": "不安全指令，一拒了之？TRIAD用三路决策：修复AI智能体的危险计划",
-      "url": "https://www.51cto.com/article/847280.html",
-      "hot": "TRIAD是为AI智能体设计的一种新型安全框架，通过三类决策（继续、更新、拒绝）和自然语言反馈，帮助Agent在被误导时修正计划，完成用户真实需求。相比传统方法，TRIAD更智能，能区分任务污染程度，既防风险又不误任务。"
+      "title": "端侧跑大模型，现在也太简单了",
+      "url": "https://www.51cto.com/article/847301.html",
+      "hot": "在可行性和实用性方面，很多新模型已经实现了性能的跨越，不论智力、智能体（Agent）能力还是工具链成熟度，在最近半年里都有巨大的提升。"
     },
     {
       "rank": 8,
-      "title": "高危 FFmpeg 漏洞可使攻击者将媒体文件武器化",
-      "url": "https://www.51cto.com/article/847278.html",
-      "hot": "该漏洞已在修补的FFmpeg版本（如8.1.2或更高版本，应用了MagicYUV边界检查）中得到修复，强烈建议用户尽快升级其FFmpeg构建。"
+      "title": "直接从像素到单词：这个原生大模型统一单图、多图、视频和空间智能",
+      "url": "https://www.51cto.com/article/847300.html",
+      "hot": "如果直接抛开视觉编码器，让模型从原始像素一路学到语言，会怎么样？"
     },
     {
       "rank": 9,
-      "title": "研究揭示 AI 聊天机器人或成“妄想放大器”：个性化互动能让用户越聊越偏执",
-      "url": "https://www.51cto.com/article/847273.html",
-      "hot": "据外媒 Futurism 23 日报道，伦敦国王学院和德国新教应用科学大学的精神科医生在《自然》发表新论文，提出“放大螺旋”框架，用于解释 AI 如何助推妄想不断发展，以及聊天机器人的哪些设计特征可能让用户进一步脱离现实。"
+      "title": "世界模型来了因果技术标杆！具身大脑真要长脑子了",
+      "url": "https://www.51cto.com/article/847299.html",
+      "hot": "为了让机器真正理解物理世界，构建“世界模型”逐渐成了具身大脑近年来最拥挤的赛道，各式技术路线层出不穷。"
     },
     {
       "rank": 10,
-      "title": "一夜之间，Claude成我同事了",
-      "url": "https://www.51cto.com/article/847272.html",
-      "hot": "Claude 作为一个智能体同事，具备持续记忆，能主动介入工作，可以像团队成员一样加入 Slack。"
+      "title": "ICML‘26 Oral | TRM思考奖励模型上线，大模型推理质量终于能量化了",
+      "url": "https://www.51cto.com/article/847298.html",
+      "hot": "来自上海人工智能实验室、上海交通大学、香港中文大学的研究团队提出了TRM（Thinking Reward Model）。"
     }
   ]
 }

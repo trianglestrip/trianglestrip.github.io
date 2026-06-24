@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-24T05:52:58+00:00",
+  "updated_at": "2026-06-24T08:47:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Vulnerability reports are not special anymore",
       "url": "https://words.filippo.io/vuln-reports/",
-      "hot": "179"
+      "hot": "247"
     },
     {
       "rank": 2,
-      "title": "Jerry's Map",
-      "url": "http://www.jerrysmap.com/the-map",
-      "hot": "402"
+      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
+      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
+      "hot": "114"
     },
     {
       "rank": 3,
-      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
-      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
-      "hot": "38"
+      "title": "Show HN: An ASCII 3D Rendering Engine",
+      "url": "https://glyphcss.com",
+      "hot": "108"
     },
     {
       "rank": 4,
-      "title": "Qwen-AgentWorld: Language World Models for General Agents",
-      "url": "https://arxiv.org/abs/2606.24597",
-      "hot": "33"
+      "title": "Jerry's Map",
+      "url": "http://www.jerrysmap.com/the-map",
+      "hot": "457"
     },
     {
       "rank": 5,
       "title": "FUTO Swipe – A new swipe typing model",
       "url": "https://swipe.futo.tech/",
-      "hot": "425"
+      "hot": "519"
     },
     {
       "rank": 6,
-      "title": "Show HN: An ASCII 3D Rendering Engine",
-      "url": "https://glyphcss.com",
-      "hot": "39"
+      "title": "In memory of the man who put red and green squiggles under words",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
+      "hot": "361"
     },
     {
       "rank": 7,
-      "title": "In memory of the man who put red and green squiggles under words",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
-      "hot": "277"
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://arxiv.org/abs/2606.24597",
+      "hot": "90"
     },
     {
       "rank": 8,
-      "title": "Printing Gaussian Splats",
-      "url": "https://www.patreon.com/DanyBittel/posts/printing-splats-161333338",
-      "hot": "241"
+      "title": "Why eval startups fail (2025)",
+      "url": "https://thomasliao.com/eval-startups",
+      "hot": "7"
     },
     {
       "rank": 9,
-      "title": "DiffusionBench: Towards Holistic Evaluation of Generative Diffusion Transformers",
-      "url": "https://github.com/End2End-Diffusion/diffusion-bench",
-      "hot": "24"
+      "title": "\"Fix\" MacBook Neo Cursor Lag: Record 1 Pixel of the Screen Every 10 Seconds",
+      "url": "https://gist.github.com/retroplasma/ec21767d0a8380c7ea9c2fbee1c7d6bf",
+      "hot": "85"
     },
     {
       "rank": 10,
-      "title": "Swift Package Index joins Apple",
-      "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
-      "hot": "192"
+      "title": "Printing Gaussian Splats",
+      "url": "https://www.patreon.com/DanyBittel/posts/printing-splats-161333338",
+      "hot": "291"
     }
   ]
 }
