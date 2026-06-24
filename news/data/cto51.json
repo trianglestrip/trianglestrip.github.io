@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-23T22:57:22+00:00",
+  "updated_at": "2026-06-24T01:49:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Claude要把Cowork塞进手机，关掉App活儿照跑",
+      "url": "https://www.51cto.com/article/847229.html",
+      "hot": "Claude把Cowork塞进手机，Codex钻进ChatGPT，两巨头抢上同一块屏，可谁都没让手机真正干活。被改写的，是写代码的你。"
+    },
+    {
+      "rank": 2,
+      "title": "Agent 的七类越界数据采集行为与防护方案",
+      "url": "https://www.51cto.com/article/847130.html",
+      "hot": "Agent 隐私治理不能只看输出审核，还必须前移到工具调用、数据返回和上下文准入阶段。"
+    },
+    {
+      "rank": 3,
+      "title": "Skill 怎么设计才有用？五种模式和一套评测方法",
+      "url": "https://www.51cto.com/article/847211.html",
+      "hot": "Agent 先看到轻量的技能列表，再按需加载 SKILL.md，必要时继续加载外部资源。它避免把所有知识都塞进系统提示，也让每个 Skill 可以被单独设计、测试和迭代。下面这 5 种模式，可以当作写 Skill 时的基本分类。"
+    },
+    {
+      "rank": 4,
+      "title": "面试官问：什么是 Harness 工程？可以这样回答",
+      "url": "https://www.51cto.com/article/847208.html",
+      "hot": "Harness Engineering，也被叫做驾驭工程，是给 AI Agent 设计工作环境的一套工程方法，包括上下文管理、工具调用、沙箱环境、权限控制、测试验证、日志观测、评审机制和反馈回路，目的是为了让Agent在真实工程系统中更可靠、更可控，并持续完成任务。"
+    },
+    {
+      "rank": 5,
+      "title": "警惕！你的AI助手可能已经\"中毒\"——智能体Skills安全危机全解析",
+      "url": "https://www.51cto.com/article/847165.html",
+      "hot": "我们用它写报告、整理数据、自动化流程，甚至让它帮我们管理日历和邮件。然而，当我们沉浸在这股AI浪潮带来的便利中时，是否曾停下来想一想：这些赋予AI\"技能\"的组件—“智能体Skills”究竟是谁写的？里面装的，真的是我们以为的那些东西吗？"
+    },
+    {
+      "rank": 6,
       "title": "# 码上鸿蒙•智绘未来#  数据分享实战：系统分享面板接入，文字图片文件一键分享到其他应用",
       "url": "https://ost.51cto.com/posts/48942",
       "hot": "几乎所有应用都有分享需求。新闻App分享文章、电商App分享商品、笔记App分享文档。鸿蒙提供了ShareKit来统一处理分享逻辑，调用系统分享面..."
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "94毫秒延迟、监控胜率100%！国产视频模型干翻Gemini",
       "url": "https://www.51cto.com/article/847178.html",
       "hot": "京东开源JoyAI-VL-Interaction，把视频AI从「你问我答」的轮次对话，推进到「持续在场、主动开口、按时机说话」的流式交互新范式。"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "机器人终于不瞎抓了！港大阿里联手开源FineVLA：用哪只手、抓哪里，一句话全搞定",
       "url": "https://www.51cto.com/article/847179.html",
       "hot": "近日，来自香港大学XLANG Lab和阿里巴巴Qwen团队的研究人员提出了FineVLA，一个面向可控VLA策略的开源框架。"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "战胜Mythos 5，OpenAI安全专用GPT-5.5-Cyber完全体来了",
       "url": "https://www.51cto.com/article/847168.html",
       "hot": "今天，OpenAI 宣布扩展 Daybreak 安全计划，推出更新版 GPT-5.5-Cyber、Codex Security 插件、Daybreak Cyber Partner Program，以及面向开源生态的 Patch the Planet 计划等。"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "你的AI正在「见人下菜」，亚马逊团队ACL高分论文，首次系统测评「记忆」如何影响LLM情商",
       "url": "https://www.51cto.com/article/847171.html",
       "hot": "近日，位于亚马逊的研究科学家们发现，这种 “见人下菜” 的现象确实大量存在于大语言模型中：用户记忆会改变模型的回答内容，也会改变模型对相同时间的情感理解和建议方式，引发带来新的公平问题。"
-    },
-    {
-      "rank": 6,
-      "title": "GPT-5.6大量实测流出：本周四或登场",
-      "url": "https://www.51cto.com/article/847175.html",
-      "hot": "OpenAI重大更新曝光：GPT-5.6即将上线，已有大量实测流出，不仅能凭空创作名画，GPT-Bidi-1还能解锁「真·真人级」双向对谈。本周四，一起见证OpenAI的绝地反击。"
-    },
-    {
-      "rank": 7,
-      "title": "从 @Builder 到 @LocalBuilder：鸿蒙ArkUI 复用与插槽机制深度解析",
-      "url": "https://ost.51cto.com/posts/48926",
-      "hot": "在ArkUI声明式开发中，UI复用有三个选择：Component、Builder、LocalBuilder。大部分人都知道Builder轻量，但一碰到嵌套刷新失效和this指向..."
-    },
-    {
-      "rank": 8,
-      "title": "Claude Agent 进入 IntelliJ IDEA 公测，Java 开发方式真的要变了",
-      "url": "https://www.51cto.com/article/847091.html",
-      "hot": "Claude Agent 进入 IntelliJ IDEA 公测，对 Java 开发者来说，不只是一次插件更新。它说明 AI Coding 正在进入 Java 开发最核心的工作环境，也说明 IDE 的角色正在发生变化。它不再只是编写代码、运行项目和调试程序的工具，还会成为开发者管理 Agent、审查改动和控制工程任务的地方。"
-    },
-    {
-      "rank": 9,
-      "title": "Anthropic 40万大样本揭秘：AI 时代为什么“专家”身价暴涨？",
-      "url": "https://www.51cto.com/article/847103.html",
-      "hot": "大模型并没有让专家的经验贬值，反而像一把高压水枪，正在迅速冲刷掉代码工程中的淤泥，让真正拥有“业务品味”和“领域常识”的金子，闪耀出前所未有的夺目光芒。"
-    },
-    {
-      "rank": 10,
-      "title": "尴尬了！OpenAI刚派GPT-5.5-Cyber修补地球，Codex却爆出致命bug",
-      "url": "https://www.51cto.com/article/847143.html",
-      "hot": "今天，OpenAI祭出满血GPT-5.5-Cyber，要给全世界的开源代码修漏洞。结果话音刚落，Codex被扒出史诗级bug：一年狂写640TB，能把SSD直接写废。"
     }
   ]
 }
