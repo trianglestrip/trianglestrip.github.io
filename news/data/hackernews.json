@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-24T11:34:13+00:00",
+  "updated_at": "2026-06-24T13:40:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "We're making Bunny DNS free: because a faster internet won't build itself",
       "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
-      "hot": "216"
+      "hot": "405"
     },
     {
       "rank": 2,
-      "title": "Vulnerability reports are not special anymore",
-      "url": "https://words.filippo.io/vuln-reports/",
-      "hot": "298"
-    },
-    {
-      "rank": 3,
-      "title": "Statistics that live in your SQL",
-      "url": "https://kolistat.com/blog/the-stats-duck-v0-6-0/",
-      "hot": "21"
-    },
-    {
-      "rank": 4,
-      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
-      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
-      "hot": "154"
-    },
-    {
-      "rank": 5,
-      "title": "Jerry's Map",
-      "url": "http://www.jerrysmap.com/the-map",
-      "hot": "490"
-    },
-    {
-      "rank": 6,
-      "title": "In memory of the man who put red and green squiggles under words",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
-      "hot": "427"
-    },
-    {
-      "rank": 7,
-      "title": "FUTO Swipe – A new swipe typing model",
-      "url": "https://swipe.futo.tech/",
-      "hot": "571"
-    },
-    {
-      "rank": 8,
-      "title": "Why eval startups fail (2025)",
-      "url": "https://thomasliao.com/eval-startups",
+      "title": "Slate EV truck starts at $24,950",
+      "url": "https://www.slate.auto/en",
       "hot": "30"
     },
     {
+      "rank": 3,
+      "title": "Founding a company in Germany: €9600, 152 days and I still can't send an invoice",
+      "url": "https://paolino.me/founding-a-company-in-germany/",
+      "hot": "138"
+    },
+    {
+      "rank": 4,
+      "title": "Krea 2 Technical Report",
+      "url": "https://www.krea.ai/blog/krea-2-technical-report",
+      "hot": "62"
+    },
+    {
+      "rank": 5,
+      "title": "Minimus container images are now free",
+      "url": "https://images.minimus.io/",
+      "hot": "45"
+    },
+    {
+      "rank": 6,
+      "title": "Too many R packages: CRAN is inundated with submissions",
+      "url": "https://rworks.dev/posts/too-many-R-packages/",
+      "hot": "39"
+    },
+    {
+      "rank": 7,
+      "title": "Haystack: Open-Source AI Framework for Production Ready Agents, RAG",
+      "url": "https://haystack.deepset.ai/",
+      "hot": "21"
+    },
+    {
+      "rank": 8,
+      "title": "Statistics that live in your SQL",
+      "url": "https://kolistat.com/blog/the-stats-duck-v0-6-0/",
+      "hot": "71"
+    },
+    {
       "rank": 9,
-      "title": "Qwen-AgentWorld: Language World Models for General Agents",
-      "url": "https://arxiv.org/abs/2606.24597",
-      "hot": "121"
+      "title": "Vulnerability reports are not special anymore",
+      "url": "https://words.filippo.io/vuln-reports/",
+      "hot": "331"
     },
     {
       "rank": 10,
-      "title": "Show HN: An ASCII 3D Rendering Engine",
-      "url": "https://glyphcss.com",
-      "hot": "159"
+      "title": "In memory of the man who put red and green squiggles under words",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
+      "hot": "487"
     }
   ]
 }
