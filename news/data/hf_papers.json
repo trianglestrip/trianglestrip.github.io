@@ -1,26 +1,26 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-25T13:31:19+00:00",
+  "updated_at": "2026-06-25T20:27:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "27"
+      "hot": "28"
     },
     {
       "rank": 2,
-      "title": "A decoder-only foundation model for time-series forecasting",
-      "url": "https://huggingface.co/papers/2310.10688",
-      "hot": "36"
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "171"
     },
     {
       "rank": 3,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "170"
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "36"
     },
     {
       "rank": 4,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "GLM-5: from Vibe Coding to Agentic Engineering",
-      "url": "https://huggingface.co/papers/2602.15763",
-      "hot": "186"
-    },
-    {
-      "rank": 9,
       "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
       "url": "https://huggingface.co/papers/2606.03264",
       "hot": "23"
     },
     {
+      "rank": 9,
+      "title": "GLM-5: from Vibe Coding to Agentic Engineering",
+      "url": "https://huggingface.co/papers/2602.15763",
+      "hot": "186"
+    },
+    {
       "rank": 10,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "44"
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "82"
     }
   ]
 }
