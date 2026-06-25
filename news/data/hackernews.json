@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-25T13:31:07+00:00",
+  "updated_at": "2026-06-25T16:04:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Countries are competing to see which can carry out mass surveillance the best",
-      "url": "https://mullvad.net/en/why-privacy-matters/state-mass-surveillance",
-      "hot": "65"
+      "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
+      "url": "https://hackernewstrends.com",
+      "hot": "173"
     },
     {
       "rank": 2,
-      "title": "You can't unit test for taste",
-      "url": "https://dev.karltryggvason.com/you-cant-unit-test-for-taste/",
-      "hot": "32"
+      "title": "Ford rehires 350 engineers after AI fails to preserve expertise or train juniors",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/ford-has-been-rehiring-quality-inspectors-after-ai-fell-short",
+      "hot": "208"
     },
     {
       "rank": 3,
-      "title": "Half-Life 2 in a Browser",
-      "url": "https://hl2.slqnt.dev/",
-      "hot": "400"
+      "title": "You can't unit test for taste",
+      "url": "https://dev.karltryggvason.com/you-cant-unit-test-for-taste/",
+      "hot": "146"
     },
     {
       "rank": 4,
-      "title": "Apple announces significant price increases for MacBooks, iPads, more",
-      "url": "https://9to5mac.com/2026/06/25/apple-price-increases-mac-ipad-more/",
-      "hot": "72"
+      "title": "Zig's New BitCast Semantics and LLVM Back End Improvements",
+      "url": "https://ziglang.org/devlog/2026/#2026-06-25",
+      "hot": "47"
     },
     {
       "rank": 5,
-      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
-      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
-      "hot": "554"
+      "title": "Half-Life 2 in a Browser",
+      "url": "https://hl2.slqnt.dev/",
+      "hot": "511"
     },
     {
       "rank": 6,
-      "title": "You didn't vibe code it, you stole it from open source&enterprise-licensed code",
-      "url": "https://twitter.com/mfts0/status/2070080422482977095",
-      "hot": "108"
+      "title": "Apple increases MacBook and iPad prices by 20%",
+      "url": "https://www.ft.com/content/0f067265-2baf-4b6e-8fb2-ed56daef6f3c",
+      "hot": "78"
     },
     {
       "rank": 7,
-      "title": "LastPass notifies users of yet another data breach",
-      "url": "https://9to5mac.com/2026/06/23/lastpass-notifies-users-of-yet-another-data-breach/",
-      "hot": "130"
+      "title": "Show HN: Turn native language audio into flashcards and shadowing practice",
+      "url": "https://lingochunk.com/try",
+      "hot": "40"
     },
     {
       "rank": 8,
-      "title": "OpenAI unveils its first custom chip, built by Broadcom",
-      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
-      "hot": "743"
+      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
+      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+      "hot": "654"
     },
     {
       "rank": 9,
-      "title": "Cloudflare launched self-managed OAuth for all",
-      "url": "https://blog.cloudflare.com/oauth-for-all/",
-      "hot": "243"
+      "title": "Ask HN: What surprised you about Estonia e-Residency and running an Estonian OÜ?",
+      "url": "https://news.ycombinator.com/item?id=48673801",
+      "hot": "57"
     },
     {
       "rank": 10,
-      "title": "Bohemia Interactive: Cold War Assault Remastered Source Code on GitHub",
-      "url": "https://github.com/BohemiaInteractive/CWR",
-      "hot": "128"
+      "title": "LastPass notifies users of yet another data breach",
+      "url": "https://9to5mac.com/2026/06/23/lastpass-notifies-users-of-yet-another-data-breach/",
+      "hot": "290"
     }
   ]
 }
