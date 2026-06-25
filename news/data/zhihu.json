@@ -1,69 +1,68 @@
 {
   "source": "zhihu",
   "title": "知乎热榜",
-  "updated_at": "2026-06-24T23:38:43+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-06-25T01:35:08+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "全球 AI 交易降温，美股半导体相关 ETF 暴跌，闪迪、美光科技跌超 10%，发生了什么？",
-      "url": "https://www.zhihu.com/question/2052869201178652833",
-      "hot": "252"
+      "title": "世界杯小组赛 C 组，巴西 3-0 战胜苏格兰头名出线，内马尔替补登场，如何评价本场比赛？",
+      "url": "https://www.zhihu.com/question/2053071755242103665",
+      "hot": "273"
     },
     {
       "rank": 2,
-      "title": "曾经封神的《父母爱情》如今被大量观众批判、评价两极分化，该如何看待这种口碑转变？",
-      "url": "https://www.zhihu.com/question/2052817852818612758",
-      "hot": "245"
+      "title": "全球 AI 交易降温，美股半导体相关 ETF 暴跌，闪迪、美光科技跌超 10%，发生了什么？",
+      "url": "https://www.zhihu.com/question/2052869201178652833",
+      "hot": "268"
     },
     {
       "rank": 3,
-      "title": "蒋方舟硕士论文被曝造假，存在虚假注释、捏造引用出处的问题，是真的吗？若属实，她可能面临什么？",
-      "url": "https://www.zhihu.com/question/2052779185521649277",
-      "hot": "136"
+      "title": "如何看待网曝马宁不再担任世界杯主裁？可能有哪些原因？",
+      "url": "https://www.zhihu.com/question/2053189998958965437",
+      "hot": "263"
     },
     {
       "rank": 4,
       "title": "如何看待周星驰新电影《功夫女足》？",
       "url": "https://www.zhihu.com/question/2053067286899058574",
-      "hot": "111"
+      "hot": "260"
     },
     {
       "rank": 5,
-      "title": "中国赴日游客连续6个月减少，5月同比暴跌 60.4%，原因为何？客流断崖下滑，日本旅游业会受多大冲击？",
-      "url": "https://www.zhihu.com/question/2052721837830935858",
-      "hot": "103"
+      "title": "如何看待本次美国世界杯场馆没有遮雨棚，比赛期间暴雨所有观众和媒体都被惨浇，不装顶棚是因为气候还是成本？",
+      "url": "https://www.zhihu.com/question/2052696986457827081",
+      "hot": "220"
     },
     {
       "rank": 6,
-      "title": "家长发愁孩子高考后消费账单，一句「你只是高考完了，不是家里发财了」引发共鸣，如何看待这一说法？",
-      "url": "https://www.zhihu.com/question/2052870237394149872",
-      "hot": "101"
+      "title": "恋与深空新男主上线致玩家大规模退游，官方回应不会删男主，为何新男主登场会引发退游？官方该如何挽回玩家？",
+      "url": "https://www.zhihu.com/question/2052718434220073058",
+      "hot": "218"
     },
     {
       "rank": 7,
-      "title": "如何评价范志毅在世界杯期间的解说，你认为他的解说水平如何？",
-      "url": "https://www.zhihu.com/question/2053084083895235269",
-      "hot": "98"
+      "title": "为什么“分”和“秒”是现代才有的概念，却有“争分夺秒”这个成语？",
+      "url": "https://www.zhihu.com/question/1930938021059985455",
+      "hot": "216"
     },
     {
       "rank": 8,
-      "title": "如何看待本次美国世界杯场馆没有遮雨棚，比赛期间暴雨所有观众和媒体都被惨浇，不装顶棚是因为气候还是成本？",
-      "url": "https://www.zhihu.com/question/2052696986457827081",
-      "hot": "95"
+      "title": "有什么问题人类解决得如此出色，以至于年轻人都没意识到它曾经是个巨大的问题？",
+      "url": "https://www.zhihu.com/question/2050921459896292227",
+      "hot": "196"
     },
     {
       "rank": 9,
-      "title": "黄金跌破 4000 美元，白银跌破 60 美元，近7个月入场的投资者都已被套，普通投资者该如何应对？",
-      "url": "https://www.zhihu.com/question/2052784601471493284",
-      "hot": "91"
+      "title": "如何评价范志毅在世界杯期间的解说，你认为他的解说水平如何？",
+      "url": "https://www.zhihu.com/question/2053084083895235269",
+      "hot": "190"
     },
     {
       "rank": 10,
-      "title": "如何看待41岁C罗生物年龄仅28.9岁，他的食谱永远只有鸡肉、鱼类、蔬菜？普通人效仿可能面临哪些风险？",
-      "url": "https://www.zhihu.com/question/2053054134677239570",
-      "hot": "88"
+      "title": "新能源车让很多精妙的机械结构退出了历史舞台，其中哪些技术值得被记住？",
+      "url": "https://www.zhihu.com/question/2050234299232641923",
+      "hot": "179"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-24T22:22:41+00:00",
+  "updated_at": "2026-06-25T01:36:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Claude Code Hooks 详解和使用",
+      "url": "https://www.51cto.com/article/847419.html",
+      "hot": "Claude Code 每次调用工具、等待输入、结束会话，都会触发对应的生命周期事件。你可以在这些事件上挂脚本，拿到上下文 JSON，决定 Claude 要不要继续执行。"
+    },
+    {
+      "rank": 2,
+      "title": "异常检测：怎么用统计方法发现你数据里那些\"不对劲\"的地方",
+      "url": "https://www.51cto.com/article/847357.html",
+      "hot": "本文将深入讲解三种最实用的异常检测方法：Z-score、IQR和孤立森林，每种方法都配有完整的Python实现和真实业务场景分析。"
+    },
+    {
+      "rank": 3,
+      "title": "Python 继承：你以为省了十行代码，其实是挖了个坑",
+      "url": "https://www.51cto.com/article/847373.html",
+      "hot": "继承表达的就是一件事：子类是父类的一种。继承是\"我是一种\"，组合是\"我有一个\"。完全两码事，一定要注意区分。"
+    },
+    {
+      "rank": 4,
+      "title": "TCP、IP、HTTP、DNS……这些协议到底是什么关系？一张图全搞清楚",
+      "url": "https://www.51cto.com/article/847369.html",
+      "hot": "今天只讲了一件事，但这件事很重要：网络分层不是为了让你背定义，而是给你一张地图。"
+    },
+    {
+      "rank": 5,
+      "title": "数据中心监控预警系统，也能这么设计！",
+      "url": "https://www.51cto.com/article/847366.html",
+      "hot": "今天聊聊DC Monitor做的比较厉害的几个地方，这些点确实帮助运维管理人员大大提高效率。"
+    },
+    {
+      "rank": 6,
+      "title": "Vue 单文件组件到底是个啥？一个 Vue 文件凭啥装下模板逻辑和样式",
+      "url": "https://www.51cto.com/article/847352.html",
+      "hot": "Vue 的单文件组件（Single-File Component，简称SFC）的文件后缀是.vue，一个文件里同时装了三样东西：<template>、<script>和<style>。"
+    },
+    {
+      "rank": 7,
       "title": "# 码上鸿蒙•智绘未来#   鸿蒙平台 uni-app x dialogPage 实战：模态弹窗、自定义弹窗完整指南",
       "url": "https://ost.51cto.com/posts/49347",
       "hot": "dialogPage这玩意儿，一开始我还以为就是个普通的弹窗。结果一看文档，原来是个背景透明的页面。在鸿蒙平台上用uniappx写dialogPage，那叫..."
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "# 码上鸿蒙•智绘未来#HarmonyOS7 列表流实战-----分组列表吸顶原来就这几步",
       "url": "https://ost.51cto.com/posts/49339",
       "hot": "[toc](目录)源码获取如果你想一边对照文章一边实操，建议直接把示例工程拉到本地。项目Git地址：https:gitcode.comHarmonyOSSamplesCommonL..."
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "一文读懂 Claude Code 的架构设计",
       "url": "https://www.51cto.com/article/847323.html",
       "hot": "Claude Code 是一种代理式编程工具，可以代表用户运行 Shell 命令、编辑文件，并调用外部服务。本文通过分析公开可得的 TypeScript 源代码，描述其综合架构，并进一步将其与 OpenClaw 进行比较。"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "暴涨 3810%！AI 已成暗网犯罪最强加速器",
       "url": "https://www.51cto.com/article/847320.html",
       "hot": "网络空间已经成为新的主战场。只是这片战场没有硝烟，没有边界，没有宣战书——有的只是某个深夜悄然运行的脚本，以及第二天早晨收到的一封邮件，或一个来自\"领导\"的电话。"
-    },
-    {
-      "rank": 5,
-      "title": "百度二面：MCP 和 Agent Skill 的区别是什么？",
-      "url": "https://www.51cto.com/article/847318.html",
-      "hot": "很多人把 MCP 和 Skill 当成同类概念。本文我把两者各自的定位和配合方式拆开讲清楚。"
-    },
-    {
-      "rank": 6,
-      "title": "机器学习算法实战指南",
-      "url": "https://www.51cto.com/article/847315.html",
-      "hot": "本文是一份实用指南。其目标是帮助您在营销工作中识别主要的机器学习算法，大致了解每种算法的工作原理，以及它们各自适用于哪种类型的营销问题。"
-    },
-    {
-      "rank": 7,
-      "title": "端侧跑大模型，现在也太简单了",
-      "url": "https://www.51cto.com/article/847301.html",
-      "hot": "在可行性和实用性方面，很多新模型已经实现了性能的跨越，不论智力、智能体（Agent）能力还是工具链成熟度，在最近半年里都有巨大的提升。"
-    },
-    {
-      "rank": 8,
-      "title": "直接从像素到单词：这个原生大模型统一单图、多图、视频和空间智能",
-      "url": "https://www.51cto.com/article/847300.html",
-      "hot": "如果直接抛开视觉编码器，让模型从原始像素一路学到语言，会怎么样？"
-    },
-    {
-      "rank": 9,
-      "title": "世界模型来了因果技术标杆！具身大脑真要长脑子了",
-      "url": "https://www.51cto.com/article/847299.html",
-      "hot": "为了让机器真正理解物理世界，构建“世界模型”逐渐成了具身大脑近年来最拥挤的赛道，各式技术路线层出不穷。"
-    },
-    {
-      "rank": 10,
-      "title": "ICML‘26 Oral | TRM思考奖励模型上线，大模型推理质量终于能量化了",
-      "url": "https://www.51cto.com/article/847298.html",
-      "hot": "来自上海人工智能实验室、上海交通大学、香港中文大学的研究团队提出了TRM（Thinking Reward Model）。"
     }
   ]
 }

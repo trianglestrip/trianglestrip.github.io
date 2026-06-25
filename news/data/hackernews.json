@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-24T22:22:43+00:00",
+  "updated_at": "2026-06-25T01:36:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "OpenAI unveils its first custom chip, built by Broadcom",
       "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
-      "hot": "395"
+      "hot": "515"
     },
     {
       "rank": 2,
-      "title": "Qualcomm to Acquire Modular",
-      "url": "https://www.reuters.com/business/qualcomm-buy-ai-startup-modular-2026-06-24/",
-      "hot": "74"
+      "title": "LuaJIT 3.0 proposed syntax extensions",
+      "url": "https://github.com/LuaJIT/LuaJIT/issues/1475",
+      "hot": "32"
     },
     {
       "rank": 3,
-      "title": "RubyLLM: A Ruby framework for all major AI providers",
-      "url": "https://rubyllm.com/",
-      "hot": "316"
+      "title": "Blogging can just be stating the obvious",
+      "url": "https://blog.jim-nielsen.com/2026/blogging-stating-the-obvious/",
+      "hot": "52"
     },
     {
       "rank": 4,
-      "title": "We’re making Bunny DNS free",
-      "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
-      "hot": "799"
+      "title": "Qualcomm to Acquire Modular",
+      "url": "https://www.reuters.com/business/qualcomm-buy-ai-startup-modular-2026-06-24/",
+      "hot": "139"
     },
     {
       "rank": 5,
-      "title": "PR spam today looks like email spam in the early 2000s",
-      "url": "https://www.greptile.com/blog/prs-on-openclaw",
-      "hot": "146"
+      "title": "Dostoyevsky isn't difficult",
+      "url": "https://www.autodidacts.io/dostoyevsky-isnt-difficult/",
+      "hot": "23"
     },
     {
       "rank": 6,
-      "title": "Computer use in Gemini 3.5 Flash",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
-      "hot": "123"
+      "title": "RubyLLM: A Ruby framework for all major AI providers",
+      "url": "https://rubyllm.com/",
+      "hot": "345"
     },
     {
       "rank": 7,
-      "title": "The Xteink X4 E-Ink Reader",
-      "url": "https://blog.omgmog.net/post/xteink-x4-e-ink-reader/",
-      "hot": "121"
+      "title": "Computer use in Gemini 3.5 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+      "hot": "170"
     },
     {
       "rank": 8,
-      "title": "There are a few things that I look back on as my mistakes in the early days",
-      "url": "https://twitter.com/ID_AA_Carmack/status/2069799283369345247",
-      "hot": "450"
+      "title": "PR spam today looks like email spam in the early 2000s",
+      "url": "https://www.greptile.com/blog/prs-on-openclaw",
+      "hot": "179"
     },
     {
       "rank": 9,
-      "title": "Crawling BitTorrent DHTs for Fun and Profit [pdf]",
-      "url": "https://www.usenix.org/legacy/event/woot10/tech/full_papers/Wolchok.pdf",
-      "hot": "29"
+      "title": "45°C cooling design cuts data center water use to near zero",
+      "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
+      "hot": "187"
     },
     {
       "rank": 10,
-      "title": "Show HN: LookAway, a Mac break reminder that knows when not to interrupt",
-      "url": "https://lookaway.com",
-      "hot": "37"
+      "title": "GLM-5.2 is a step change for open agents",
+      "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+      "hot": "126"
     }
   ]
 }
