@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-25T05:50:02+00:00",
+  "updated_at": "2026-06-25T08:41:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "途虎养车基于 Apache Doris 构建统一 OLAP 数据底座，支撑用户画像与 BI 多维分析",
+      "url": "https://www.infoq.cn/article/QULg64hlN1FKcHNmb1wJ?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 25 Jun 2026 16:37:27 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "AI 编程代理拥有了自己的 Stack Overflow",
+      "url": "https://www.infoq.cn/article/hqc2uU1TPpbMyyz2pFy8?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 25 Jun 2026 16:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "覆盖百所高校、万名学员，360 ADE认证纳入工信部紧缺人才培养工程",
+      "url": "https://www.infoq.cn/article/mgdwNU3yV3XgBrcfJvGv?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 25 Jun 2026 15:29:35 GMT"
+    },
+    {
+      "rank": 4,
       "title": "Coinbase 事后分析报告揭示：AWS 局部故障如何导致了持续数小时的交易中断",
       "url": "https://www.infoq.cn/article/tNJCNG5TP8JoZcY9A3MZ?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 13:35:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "三家公司一周内出手，编码 Agent 进入团队基础设施时代",
       "url": "https://www.infoq.cn/article/w4sl1mazwewiJ6Th2XqV?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 12:50:19 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "这家Agent 公司从 Claude 切到 DeepSeek v4：一年省下数百万美元，迁移工作量却是预期的 100 倍",
       "url": "https://www.infoq.cn/article/KfCaAKEXqDsmrDCxr4P1?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 12:43:30 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "AI可以用任何手段、写任何东西，但你得是个“中年老登”",
       "url": "https://www.infoq.cn/article/l2lF7aoPeLGlotlX1tdt?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 12:12:13 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "PostgreSQL 19 Beta 版引入 SQL 图查询和并发表重新打包功能",
       "url": "https://www.infoq.cn/article/HOFzjxIov0SxEpmZccYT?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 11:03:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "上海交通大学教授冷静文确认出席AICon上海站，分享Token经济爆发下从评测到调度的全链路优化供给",
       "url": "https://www.infoq.cn/article/IMpqMxeFFGD1UabjiXHr?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 10:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Java 近期新闻：A2A Java SDK 1.0、Jakarta EE 12、JNoSQL、GraalVM、Micrometer、OpenXava、Gradle",
       "url": "https://www.infoq.cn/article/Ctbo8axuctQqNcJWQouI?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 09:08:34 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Xcode 27 扩展代理集成，全面改版用户界面，并引入了 DeviceHub",
-      "url": "https://www.infoq.cn/article/VGQNO8bH0sq4kFDb6B7H?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 24 Jun 2026 17:39:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "为什么大量企业Agent死在原型阶段？亚马逊云科技储瑞松：Agent工程是关键",
-      "url": "https://www.infoq.cn/article/zod9SeNbe75T8YtrIcEC?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 24 Jun 2026 17:22:20 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Anthropic 解释了 Claude 如何构建自己的执行框架",
-      "url": "https://www.infoq.cn/article/DYIUw7abCW7ZYI1OER9i?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 24 Jun 2026 16:16:00 GMT"
     }
   ]
 }

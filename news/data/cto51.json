@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-25T05:49:56+00:00",
+  "updated_at": "2026-06-25T08:41:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "#码上鸿蒙•智绘未来#  鸿蒙平台 uni-app x 陀螺仪数据实战：gyroscope 完整指南",
-      "url": "https://ost.51cto.com/posts/49516",
-      "hot": "陀螺仪数据，这玩意儿在实际开发中还挺有意思的。体感游戏、摇一摇功能、全景图浏览、手势识别，用户晃动手机就能触发各种操作。uni.startG..."
+      "title": "【Jack实战】如何在《时光旅记》中读取照片 EXIF 自动提取瞬间时间和地点",
+      "url": "https://ost.51cto.com/posts/49626",
+      "hot": "大家好我是鸿蒙Jack，本期以我的《时光旅记》APP为例，讲一下我是怎么在&ldquo;瞬间&rdquo;里做照片时间、地点智能提取的。这个能力说白了不是大模型..."
     },
     {
       "rank": 2,
-      "title": "#码上鸿蒙•智绘未来#  鸿蒙平台 uni-app x 罗盘数据实战：compass 完整指南",
-      "url": "https://ost.51cto.com/posts/49512",
-      "hot": "罗盘数据，这玩意儿在实际开发中还挺有意思的。指南针应用、方向导航、AR定位，用户旋转手机就能看到面对的方向度数。uni.onCompassChange..."
+      "title": "#码上鸿蒙•智绘未来# 鸿蒙平台 uni-app x 推送通知实战：uni-push 完整指南",
+      "url": "https://ost.51cto.com/posts/49615",
+      "hot": "推送通知，这功能几乎是每个App的标配了。电商App推订单状态，社交App推新消息，新闻App推热点资讯。用户不打开App也能收到消息，这就是推..."
     },
     {
       "rank": 3,
+      "title": "一个“小白”黑客，1000次对话，14家企业沦陷——AI Agent正在颠覆网络攻防的底层逻辑",
+      "url": "https://www.51cto.com/article/847457.html",
+      "hot": "对于我们每一个人来说，无论是开发者、安全从业者还是企业管理者，AI Agents的红利与风险并存。在潘多拉魔盒已开的今天，比拼的不再是谁拥有更强的防火墙，而是谁能更早地在AI赋能的下一代防御框架中找到位置。"
+    },
+    {
+      "rank": 4,
+      "title": "SIGGRAPH 2026 | 无需训练，一段单目视频解锁任意运镜与「子弹时间」",
+      "url": "https://www.51cto.com/article/847458.html",
+      "hot": "来自 UIUC、宾夕法尼亚大学和 Eyeline Labs 的研究团队给出的答案是：可以，而且不需要训练任何模型。"
+    },
+    {
+      "rank": 5,
+      "title": "Fable 5即将复活，代码已曝光？Anthropic CEO被白宫踢出来了！",
+      "url": "https://www.51cto.com/article/847459.html",
+      "hot": "刚被「封印」，Fable 5就要满血复活？最近，Claude Fable 5代码痕迹曝光，开发者圈一片欢呼，而外媒爆料，Anthropic最近一路顺利，背后竟是因为CEO被白宫赶下谈判桌！"
+    },
+    {
+      "rank": 6,
+      "title": "中国造出一颗「不怕死」的AI大脑，专接最要命的活儿",
+      "url": "https://www.51cto.com/article/847460.html",
+      "hot": "太硬核了！全球首个搭载AI大脑的防爆机器人，正式接管加油站。自主定位、拧盖、提枪、注油，全套动作行云流水，24小时无休作业，具身智能终于在高危场景一战封神。"
+    },
+    {
+      "rank": 7,
       "title": "不用装东西也能玩 Vue？在线演练场和脚手架 create-vue 全上手",
       "url": "https://www.51cto.com/article/847442.html",
       "hot": "其实吧，Vue官方早就替咱想好了：不需要在机器上安装任何东西，也能尝试基于单文件组件（SFC）的Vue开发体验。"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "从零到一带你速通 Marvis 马维斯",
       "url": "https://www.51cto.com/article/847441.html",
       "hot": "AI技术飞速发展的今天，能力强大的Agent产品层出不穷，但对普通用户来说，门槛也是真的高。"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "诺奖得主刚走，Gemini两大核心叛逃Anthropic！",
       "url": "https://www.51cto.com/article/847437.html",
       "hot": "谷歌留不住人了！诺奖得主离职后，Gemini两大核心将一同入职Anthropic。同一天，Gemini 3.5 Pro已延期至7月。"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "一个神奇的 Python 库：Streamlit，把脚本秒变 Web 应用",
       "url": "https://www.51cto.com/article/847434.html",
       "hot": "本文主要讲解streamlit的基本安装及简单示例，着重介绍了该项目能够使用的各种组件。。"
-    },
-    {
-      "rank": 7,
-      "title": "AI软递归自我提升，Hassabis夜不能寐：人类已至奇点山脚",
-      "url": "https://www.51cto.com/article/847433.html",
-      "hot": "AI递归自改进和AI研究自动化正在从概念走向现实。对此，哈萨比斯夜不能寐。"
-    },
-    {
-      "rank": 8,
-      "title": "美团面试官：用 Redis 实现分布式锁？你写的 SetNX 在线上就是个定时炸弹",
-      "url": "https://www.51cto.com/article/847432.html",
-      "hot": "当面试官问\"Redis 分布式锁怎么实现\"，按下面的结构回答，三个层次递进，展现你的技术深度。"
-    },
-    {
-      "rank": 9,
-      "title": "80%代码由Claude合并，Anthropic内部人员点破Agent真相：「Close the Loop」",
-      "url": "https://www.51cto.com/article/847431.html",
-      "hot": "有人认为 Claude 让自己效率翻倍，也有人认为提升了 10 倍。更重要的是，Claude 已经开始深入 Anthropic 自身的工程流程，「Anthropic 内部超过 80% 的代码由 Claude 合并。」"
-    },
-    {
-      "rank": 10,
-      "title": "AI生成的图片正在反向对齐人类的审美？ICML 2026观点论文Spotlight",
-      "url": "https://www.51cto.com/article/847430.html",
-      "hot": "本文主要讨论图像生成模型在美学对齐中对艺术表达的限制问题。本文的指导教授是 UBC 的 Khalad Hasan，主攻人机交互方向，以及 Shan Du，主要研究计算机视觉和计算机图形学。"
     }
   ]
 }

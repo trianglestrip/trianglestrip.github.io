@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-25T05:50:00+00:00",
+  "updated_at": "2026-06-25T08:41:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "文心一言发布服务升级公告，数据迁移即将开启",
+      "url": "https://www.oschina.net/news/467308",
+      "hot": "Thu, 25 Jun 2026 16:34:01 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "未来，什么才是 AI “正确的使用方式”",
+      "url": "https://my.oschina.net/vivotech/blog/19711685",
+      "hot": "Thu, 25 Jun 2026 16:19:47 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "BuildAdmin v2.3.6 发布！多处新增和优化",
+      "url": "https://www.oschina.net/news/467287/buildadmin-v2-3-6-released",
+      "hot": "Thu, 25 Jun 2026 16:15:02 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Pale Moon 34.3.1 发布，苍月浏览器",
+      "url": "https://www.oschina.net/news/467280/pale-moon-34-3-1-released",
+      "hot": "Thu, 25 Jun 2026 16:03:48 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "API 开发与管理平台 5.0 发布",
+      "url": "https://www.oschina.net/news/467242/crabc-5-0-released",
+      "hot": "Thu, 25 Jun 2026 14:58:14 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Yzncms v2.2.0 已经发布，内容管理系统",
+      "url": "https://www.oschina.net/news/467237",
+      "hot": "Thu, 25 Jun 2026 14:51:28 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "qData 数据中台开源版 v1.5.4 正式发布：中英日多语言支持全面就绪，全新 UI 体验定义中台交互美学",
+      "url": "https://www.oschina.net/news/467210/qdata-1-5-4-released",
+      "hot": "Thu, 25 Jun 2026 14:27:31 +0800"
+    },
+    {
+      "rank": 8,
       "title": "Tsuru 1.30.0 发布，基于 Docker 的 PaaS 框架",
       "url": "https://www.oschina.net/news/467124/tsuru-1-30-0-released",
       "hot": "Thu, 25 Jun 2026 11:48:21 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": ":tada:smart-servlet v3.3：Jakarta TCK 跑到了 99.8% 通过率",
       "url": "https://www.oschina.net/news/467118/smart-servlet-3-3-released",
       "hot": "Thu, 25 Jun 2026 11:38:21 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "谷歌将 Computer Use 能力原生集成到 Gemini 3.5 Flash",
       "url": "https://www.oschina.net/news/467115/introducing-computer-use-gemini-3-5-flash",
       "hot": "Thu, 25 Jun 2026 11:34:34 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "Servlet 其实从一开始就不是为现代 Web 设计的",
-      "url": "https://my.oschina.net/u/2385344/blog/19707494",
-      "hot": "Thu, 25 Jun 2026 11:16:11 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Elasticsearch 母公司 Elastic 裁员 7%",
-      "url": "https://www.oschina.net/news/467103",
-      "hot": "Thu, 25 Jun 2026 11:15:28 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "高通宣布 39 亿美元收购 AI 基础设施初创公司 Modular",
-      "url": "https://www.oschina.net/news/467095/qualcomm-to-acquire-modular",
-      "hot": "Thu, 25 Jun 2026 10:59:10 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "腾讯 Marvis（马维斯）iOS 版现已上线",
-      "url": "https://www.oschina.net/news/467093",
-      "hot": "Thu, 25 Jun 2026 10:56:26 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Spring Data 2025.0.13 发布，3.5.x 系列最后一个开源版本",
-      "url": "https://www.oschina.net/news/467086/spring-data-2025-0-13-released",
-      "hot": "Thu, 25 Jun 2026 10:43:52 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "OpenAI 发布首款‌定制 AI 芯片 Jalapeño：联合 Broadcom 打造，专为推理优化",
-      "url": "https://www.oschina.net/news/467076/openai-and-broadcom-announce-strategic-collaboration",
-      "hot": "Thu, 25 Jun 2026 10:29:38 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Visual Studio Code 1.126 发布",
-      "url": "https://www.oschina.net/news/467075/vs-code-1-126-released",
-      "hot": "Thu, 25 Jun 2026 10:29:33 +0800"
     }
   ]
 }
