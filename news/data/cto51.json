@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-25T01:36:04+00:00",
+  "updated_at": "2026-06-25T05:49:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude Code Hooks 详解和使用",
-      "url": "https://www.51cto.com/article/847419.html",
-      "hot": "Claude Code 每次调用工具、等待输入、结束会话，都会触发对应的生命周期事件。你可以在这些事件上挂脚本，拿到上下文 JSON，决定 Claude 要不要继续执行。"
+      "title": "#码上鸿蒙•智绘未来#  鸿蒙平台 uni-app x 陀螺仪数据实战：gyroscope 完整指南",
+      "url": "https://ost.51cto.com/posts/49516",
+      "hot": "陀螺仪数据，这玩意儿在实际开发中还挺有意思的。体感游戏、摇一摇功能、全景图浏览、手势识别，用户晃动手机就能触发各种操作。uni.startG..."
     },
     {
       "rank": 2,
-      "title": "异常检测：怎么用统计方法发现你数据里那些\"不对劲\"的地方",
-      "url": "https://www.51cto.com/article/847357.html",
-      "hot": "本文将深入讲解三种最实用的异常检测方法：Z-score、IQR和孤立森林，每种方法都配有完整的Python实现和真实业务场景分析。"
+      "title": "#码上鸿蒙•智绘未来#  鸿蒙平台 uni-app x 罗盘数据实战：compass 完整指南",
+      "url": "https://ost.51cto.com/posts/49512",
+      "hot": "罗盘数据，这玩意儿在实际开发中还挺有意思的。指南针应用、方向导航、AR定位，用户旋转手机就能看到面对的方向度数。uni.onCompassChange..."
     },
     {
       "rank": 3,
-      "title": "Python 继承：你以为省了十行代码，其实是挖了个坑",
-      "url": "https://www.51cto.com/article/847373.html",
-      "hot": "继承表达的就是一件事：子类是父类的一种。继承是\"我是一种\"，组合是\"我有一个\"。完全两码事，一定要注意区分。"
+      "title": "不用装东西也能玩 Vue？在线演练场和脚手架 create-vue 全上手",
+      "url": "https://www.51cto.com/article/847442.html",
+      "hot": "其实吧，Vue官方早就替咱想好了：不需要在机器上安装任何东西，也能尝试基于单文件组件（SFC）的Vue开发体验。"
     },
     {
       "rank": 4,
-      "title": "TCP、IP、HTTP、DNS……这些协议到底是什么关系？一张图全搞清楚",
-      "url": "https://www.51cto.com/article/847369.html",
-      "hot": "今天只讲了一件事，但这件事很重要：网络分层不是为了让你背定义，而是给你一张地图。"
+      "title": "从零到一带你速通 Marvis 马维斯",
+      "url": "https://www.51cto.com/article/847441.html",
+      "hot": "AI技术飞速发展的今天，能力强大的Agent产品层出不穷，但对普通用户来说，门槛也是真的高。"
     },
     {
       "rank": 5,
-      "title": "数据中心监控预警系统，也能这么设计！",
-      "url": "https://www.51cto.com/article/847366.html",
-      "hot": "今天聊聊DC Monitor做的比较厉害的几个地方，这些点确实帮助运维管理人员大大提高效率。"
+      "title": "诺奖得主刚走，Gemini两大核心叛逃Anthropic！",
+      "url": "https://www.51cto.com/article/847437.html",
+      "hot": "谷歌留不住人了！诺奖得主离职后，Gemini两大核心将一同入职Anthropic。同一天，Gemini 3.5 Pro已延期至7月。"
     },
     {
       "rank": 6,
-      "title": "Vue 单文件组件到底是个啥？一个 Vue 文件凭啥装下模板逻辑和样式",
-      "url": "https://www.51cto.com/article/847352.html",
-      "hot": "Vue 的单文件组件（Single-File Component，简称SFC）的文件后缀是.vue，一个文件里同时装了三样东西：<template>、<script>和<style>。"
+      "title": "一个神奇的 Python 库：Streamlit，把脚本秒变 Web 应用",
+      "url": "https://www.51cto.com/article/847434.html",
+      "hot": "本文主要讲解streamlit的基本安装及简单示例，着重介绍了该项目能够使用的各种组件。。"
     },
     {
       "rank": 7,
-      "title": "# 码上鸿蒙•智绘未来#   鸿蒙平台 uni-app x dialogPage 实战：模态弹窗、自定义弹窗完整指南",
-      "url": "https://ost.51cto.com/posts/49347",
-      "hot": "dialogPage这玩意儿，一开始我还以为就是个普通的弹窗。结果一看文档，原来是个背景透明的页面。在鸿蒙平台上用uniappx写dialogPage，那叫..."
+      "title": "AI软递归自我提升，Hassabis夜不能寐：人类已至奇点山脚",
+      "url": "https://www.51cto.com/article/847433.html",
+      "hot": "AI递归自改进和AI研究自动化正在从概念走向现实。对此，哈萨比斯夜不能寐。"
     },
     {
       "rank": 8,
-      "title": "# 码上鸿蒙•智绘未来#HarmonyOS7 列表流实战-----分组列表吸顶原来就这几步",
-      "url": "https://ost.51cto.com/posts/49339",
-      "hot": "[toc](目录)源码获取如果你想一边对照文章一边实操，建议直接把示例工程拉到本地。项目Git地址：https:gitcode.comHarmonyOSSamplesCommonL..."
+      "title": "美团面试官：用 Redis 实现分布式锁？你写的 SetNX 在线上就是个定时炸弹",
+      "url": "https://www.51cto.com/article/847432.html",
+      "hot": "当面试官问\"Redis 分布式锁怎么实现\"，按下面的结构回答，三个层次递进，展现你的技术深度。"
     },
     {
       "rank": 9,
-      "title": "一文读懂 Claude Code 的架构设计",
-      "url": "https://www.51cto.com/article/847323.html",
-      "hot": "Claude Code 是一种代理式编程工具，可以代表用户运行 Shell 命令、编辑文件，并调用外部服务。本文通过分析公开可得的 TypeScript 源代码，描述其综合架构，并进一步将其与 OpenClaw 进行比较。"
+      "title": "80%代码由Claude合并，Anthropic内部人员点破Agent真相：「Close the Loop」",
+      "url": "https://www.51cto.com/article/847431.html",
+      "hot": "有人认为 Claude 让自己效率翻倍，也有人认为提升了 10 倍。更重要的是，Claude 已经开始深入 Anthropic 自身的工程流程，「Anthropic 内部超过 80% 的代码由 Claude 合并。」"
     },
     {
       "rank": 10,
-      "title": "暴涨 3810%！AI 已成暗网犯罪最强加速器",
-      "url": "https://www.51cto.com/article/847320.html",
-      "hot": "网络空间已经成为新的主战场。只是这片战场没有硝烟，没有边界，没有宣战书——有的只是某个深夜悄然运行的脚本，以及第二天早晨收到的一封邮件，或一个来自\"领导\"的电话。"
+      "title": "AI生成的图片正在反向对齐人类的审美？ICML 2026观点论文Spotlight",
+      "url": "https://www.51cto.com/article/847430.html",
+      "hot": "本文主要讨论图像生成模型在美学对齐中对艺术表达的限制问题。本文的指导教授是 UBC 的 Khalad Hasan，主攻人机交互方向，以及 Shan Du，主要研究计算机视觉和计算机图形学。"
     }
   ]
 }

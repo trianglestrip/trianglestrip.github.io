@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-24T22:22:54+00:00",
+  "updated_at": "2026-06-25T05:50:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "23"
+      "hot": "25"
     },
     {
       "rank": 2,
@@ -18,33 +18,33 @@
     },
     {
       "rank": 3,
+      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
+      "url": "https://huggingface.co/papers/2309.06180",
+      "hot": "60"
+    },
+    {
+      "rank": 4,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "102"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
       "hot": "246"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "GLM-5: from Vibe Coding to Agentic Engineering",
       "url": "https://huggingface.co/papers/2602.15763",
       "hot": "186"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
       "url": "https://huggingface.co/papers/2601.02163",
       "hot": "8"
-    },
-    {
-      "rank": 7,
-      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
-      "url": "https://huggingface.co/papers/2606.03264",
-      "hot": "22"
     },
     {
       "rank": 8,
@@ -54,9 +54,9 @@
     },
     {
       "rank": 9,
-      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
-      "url": "https://huggingface.co/papers/2309.06180",
-      "hot": "60"
+      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
+      "url": "https://huggingface.co/papers/2606.03264",
+      "hot": "22"
     },
     {
       "rank": 10,
