@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-25T16:04:06+00:00",
+  "updated_at": "2026-06-25T18:21:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
-      "url": "https://hackernewstrends.com",
-      "hot": "173"
+      "title": "A Herculaneum scroll has been read for the first time",
+      "url": "https://scrollprize.org/firstscroll",
+      "hot": "191"
     },
     {
       "rank": 2,
-      "title": "Ford rehires 350 engineers after AI fails to preserve expertise or train juniors",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-25/ford-has-been-rehiring-quality-inspectors-after-ai-fell-short",
-      "hot": "208"
+      "title": "IBM debuts sub-1 nanometer chip technology",
+      "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+      "hot": "84"
     },
     {
       "rank": 3,
-      "title": "You can't unit test for taste",
-      "url": "https://dev.karltryggvason.com/you-cant-unit-test-for-taste/",
-      "hot": "146"
+      "title": "Zig's new bitCast semantics and LLVM back end improvements",
+      "url": "https://ziglang.org/devlog/2026/#2026-06-25",
+      "hot": "139"
     },
     {
       "rank": 4,
-      "title": "Zig's New BitCast Semantics and LLVM Back End Improvements",
-      "url": "https://ziglang.org/devlog/2026/#2026-06-25",
-      "hot": "47"
+      "title": "Oxide computer 3D rack guided tour",
+      "url": "https://explorer.oxide.computer/",
+      "hot": "28"
     },
     {
       "rank": 5,
-      "title": "Half-Life 2 in a Browser",
-      "url": "https://hl2.slqnt.dev/",
-      "hot": "511"
+      "title": "OS9Map",
+      "url": "https://yllan.org/software/OS9Map/",
+      "hot": "63"
     },
     {
       "rank": 6,
-      "title": "Apple increases MacBook and iPad prices by 20%",
-      "url": "https://www.ft.com/content/0f067265-2baf-4b6e-8fb2-ed56daef6f3c",
-      "hot": "78"
+      "title": "You can't unit test for taste",
+      "url": "https://dev.karltryggvason.com/you-cant-unit-test-for-taste/",
+      "hot": "195"
     },
     {
       "rank": 7,
-      "title": "Show HN: Turn native language audio into flashcards and shadowing practice",
-      "url": "https://lingochunk.com/try",
-      "hot": "40"
+      "title": "Apple raises prices of MacBooks, iPads",
+      "url": "https://www.reuters.com/world/asia-pacific/apple-raises-prices-macbooks-ipads-memory-costs-skyrocket-2026-06-25/",
+      "hot": "329"
     },
     {
       "rank": 8,
-      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
-      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
-      "hot": "654"
+      "title": "I built a GPU back end for Emacs",
+      "url": "https://en.andros.dev/blog/4b707a03/how-i-built-a-gpu-backend-for-emacs/",
+      "hot": "53"
     },
     {
       "rank": 9,
-      "title": "Ask HN: What surprised you about Estonia e-Residency and running an Estonian OÜ?",
-      "url": "https://news.ycombinator.com/item?id=48673801",
-      "hot": "57"
+      "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
+      "url": "https://hackernewstrends.com",
+      "hot": "449"
     },
     {
       "rank": 10,
-      "title": "LastPass notifies users of yet another data breach",
-      "url": "https://9to5mac.com/2026/06/23/lastpass-notifies-users-of-yet-another-data-breach/",
-      "hot": "290"
+      "title": "Windows 10 quietly gets one more year of support and updates",
+      "url": "https://www.neowin.net/news/windows-10-quietly-gets-one-more-year-of-support-and-updates/",
+      "hot": "100"
     }
   ]
 }
