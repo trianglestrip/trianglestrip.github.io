@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-25T11:21:56+00:00",
+  "updated_at": "2026-06-25T13:31:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Dolphin Emulator Progress Release 2606",
-      "url": "https://dolphin-emu.org/blog/2026/06/25/dolphin-progress-report-release-2606/",
-      "hot": "29"
+      "title": "Countries are competing to see which can carry out mass surveillance the best",
+      "url": "https://mullvad.net/en/why-privacy-matters/state-mass-surveillance",
+      "hot": "65"
     },
     {
       "rank": 2,
-      "title": "Half-Life 2 in a Browser",
-      "url": "https://hl2.slqnt.dev/",
-      "hot": "293"
+      "title": "You can't unit test for taste",
+      "url": "https://dev.karltryggvason.com/you-cant-unit-test-for-taste/",
+      "hot": "32"
     },
     {
       "rank": 3,
-      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
-      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
-      "hot": "462"
+      "title": "Half-Life 2 in a Browser",
+      "url": "https://hl2.slqnt.dev/",
+      "hot": "400"
     },
     {
       "rank": 4,
-      "title": "OpenAI unveils its first custom chip, built by Broadcom",
-      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
-      "hot": "715"
+      "title": "Apple announces significant price increases for MacBooks, iPads, more",
+      "url": "https://9to5mac.com/2026/06/25/apple-price-increases-mac-ipad-more/",
+      "hot": "72"
     },
     {
       "rank": 5,
-      "title": "Cloudflare launched self-managed OAuth for all",
-      "url": "https://blog.cloudflare.com/oauth-for-all/",
-      "hot": "187"
+      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
+      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+      "hot": "554"
     },
     {
       "rank": 6,
-      "title": "Bohemia Interactive: Cold War Assault Remastered Source Code on GitHub",
-      "url": "https://github.com/BohemiaInteractive/CWR",
-      "hot": "89"
+      "title": "You didn't vibe code it, you stole it from open source&enterprise-licensed code",
+      "url": "https://twitter.com/mfts0/status/2070080422482977095",
+      "hot": "108"
     },
     {
       "rank": 7,
-      "title": "Blogging can just be stating the obvious",
-      "url": "https://blog.jim-nielsen.com/2026/blogging-stating-the-obvious/",
-      "hot": "251"
+      "title": "LastPass notifies users of yet another data breach",
+      "url": "https://9to5mac.com/2026/06/23/lastpass-notifies-users-of-yet-another-data-breach/",
+      "hot": "130"
     },
     {
       "rank": 8,
-      "title": "LuaJIT 3.0 proposed syntax extensions",
-      "url": "https://github.com/LuaJIT/LuaJIT/issues/1475",
-      "hot": "167"
+      "title": "OpenAI unveils its first custom chip, built by Broadcom",
+      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+      "hot": "743"
     },
     {
       "rank": 9,
-      "title": "Markdy: Like Mermaid Diagrams, but for Motion",
-      "url": "https://markdy.com",
-      "hot": "77"
+      "title": "Cloudflare launched self-managed OAuth for all",
+      "url": "https://blog.cloudflare.com/oauth-for-all/",
+      "hot": "243"
     },
     {
       "rank": 10,
-      "title": "Words, Words, Words",
-      "url": "https://aeon.co/essays/literature-fans-should-welcome-ai-as-a-fellow-wordsmith",
-      "hot": "6"
+      "title": "Bohemia Interactive: Cold War Assault Remastered Source Code on GitHub",
+      "url": "https://github.com/BohemiaInteractive/CWR",
+      "hot": "128"
     }
   ]
 }
