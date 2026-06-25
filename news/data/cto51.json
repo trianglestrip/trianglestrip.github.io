@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-25T08:41:53+00:00",
+  "updated_at": "2026-06-25T11:21:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【Jack实战】如何在《时光旅记》中读取照片 EXIF 自动提取瞬间时间和地点",
-      "url": "https://ost.51cto.com/posts/49626",
-      "hot": "大家好我是鸿蒙Jack，本期以我的《时光旅记》APP为例，讲一下我是怎么在&ldquo;瞬间&rdquo;里做照片时间、地点智能提取的。这个能力说白了不是大模型..."
+      "title": "OpenClaw Skill 市场暴露 AI Agent 供应链恶意软件与金融欺诈风险",
+      "url": "https://www.51cto.com/article/847513.html",
+      "hot": "OpenClaw 是一种运行来自 ClawHub 专用市场第三方 skills 的 AI Agent。这些 skills 是基于 Markdown 的软件包，具有对本地系统的深度访问权限。"
     },
     {
       "rank": 2,
-      "title": "#码上鸿蒙•智绘未来# 鸿蒙平台 uni-app x 推送通知实战：uni-push 完整指南",
-      "url": "https://ost.51cto.com/posts/49615",
-      "hot": "推送通知，这功能几乎是每个App的标配了。电商App推订单状态，社交App推新消息，新闻App推热点资讯。用户不打开App也能收到消息，这就是推..."
+      "title": "# 码上鸿蒙•智绘未来# HarmonyOS7 列表流实战----自定义列表项别一股脑塞进 build 里",
+      "url": "https://ost.51cto.com/posts/49629",
+      "hot": "[toc](目录)源码获取如果你想一边对照文章一边实操，建议直接把示例工程拉到本地。项目Git地址：https:gitcode.comHarmonyOSSamplesCommonL..."
     },
     {
       "rank": 3,
+      "title": "# 码上鸿蒙•智绘未来# HarmonyOS7 列表流实战----嵌套滚动和 Tab 联动到底怎么配",
+      "url": "https://ost.51cto.com/posts/49628",
+      "hot": "[toc](目录)源码获取如果你想一边对照文章一边实操，建议直接把示例工程拉到本地。项目Git地址：https:gitcode.comHarmonyOSSamplesCommonL..."
+    },
+    {
+      "rank": 4,
       "title": "一个“小白”黑客，1000次对话，14家企业沦陷——AI Agent正在颠覆网络攻防的底层逻辑",
       "url": "https://www.51cto.com/article/847457.html",
       "hot": "对于我们每一个人来说，无论是开发者、安全从业者还是企业管理者，AI Agents的红利与风险并存。在潘多拉魔盒已开的今天，比拼的不再是谁拥有更强的防火墙，而是谁能更早地在AI赋能的下一代防御框架中找到位置。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "SIGGRAPH 2026 | 无需训练，一段单目视频解锁任意运镜与「子弹时间」",
       "url": "https://www.51cto.com/article/847458.html",
       "hot": "来自 UIUC、宾夕法尼亚大学和 Eyeline Labs 的研究团队给出的答案是：可以，而且不需要训练任何模型。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Fable 5即将复活，代码已曝光？Anthropic CEO被白宫踢出来了！",
       "url": "https://www.51cto.com/article/847459.html",
       "hot": "刚被「封印」，Fable 5就要满血复活？最近，Claude Fable 5代码痕迹曝光，开发者圈一片欢呼，而外媒爆料，Anthropic最近一路顺利，背后竟是因为CEO被白宫赶下谈判桌！"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "中国造出一颗「不怕死」的AI大脑，专接最要命的活儿",
       "url": "https://www.51cto.com/article/847460.html",
       "hot": "太硬核了！全球首个搭载AI大脑的防爆机器人，正式接管加油站。自主定位、拧盖、提枪、注油，全套动作行云流水，24小时无休作业，具身智能终于在高危场景一战封神。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "不用装东西也能玩 Vue？在线演练场和脚手架 create-vue 全上手",
       "url": "https://www.51cto.com/article/847442.html",
       "hot": "其实吧，Vue官方早就替咱想好了：不需要在机器上安装任何东西，也能尝试基于单文件组件（SFC）的Vue开发体验。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "从零到一带你速通 Marvis 马维斯",
       "url": "https://www.51cto.com/article/847441.html",
       "hot": "AI技术飞速发展的今天，能力强大的Agent产品层出不穷，但对普通用户来说，门槛也是真的高。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "诺奖得主刚走，Gemini两大核心叛逃Anthropic！",
       "url": "https://www.51cto.com/article/847437.html",
       "hot": "谷歌留不住人了！诺奖得主离职后，Gemini两大核心将一同入职Anthropic。同一天，Gemini 3.5 Pro已延期至7月。"
-    },
-    {
-      "rank": 10,
-      "title": "一个神奇的 Python 库：Streamlit，把脚本秒变 Web 应用",
-      "url": "https://www.51cto.com/article/847434.html",
-      "hot": "本文主要讲解streamlit的基本安装及简单示例，着重介绍了该项目能够使用的各种组件。。"
     }
   ]
 }

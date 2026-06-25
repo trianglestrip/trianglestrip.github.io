@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-25T08:41:56+00:00",
+  "updated_at": "2026-06-25T11:21:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "NumPy 2.5.0 发布",
+      "url": "https://www.oschina.net/news/467386/numpy-2-5-0-released",
+      "hot": "Thu, 25 Jun 2026 18:30:16 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "上线第二天，腾讯云 Makers 登顶 Product Hunt 日榜",
+      "url": "https://my.oschina.net/u/4487475/blog/19711940",
+      "hot": "Thu, 25 Jun 2026 17:56:04 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "基于 MoonBit 的开源深度学习训练框架 MoonXi-net ，性能达 PyTorch 2 倍",
+      "url": "https://www.oschina.net/news/467339",
+      "hot": "Thu, 25 Jun 2026 17:37:02 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "RoboScience 发布 Visics 大模型，实现跨场景自主执行",
+      "url": "https://www.oschina.net/news/467328",
+      "hot": "Thu, 25 Jun 2026 17:15:29 +0800"
+    },
+    {
+      "rank": 5,
       "title": "文心一言发布服务升级公告，数据迁移即将开启",
       "url": "https://www.oschina.net/news/467308",
       "hot": "Thu, 25 Jun 2026 16:34:01 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "未来，什么才是 AI “正确的使用方式”",
       "url": "https://my.oschina.net/vivotech/blog/19711685",
       "hot": "Thu, 25 Jun 2026 16:19:47 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "BuildAdmin v2.3.6 发布！多处新增和优化",
       "url": "https://www.oschina.net/news/467287/buildadmin-v2-3-6-released",
       "hot": "Thu, 25 Jun 2026 16:15:02 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "Pale Moon 34.3.1 发布，苍月浏览器",
       "url": "https://www.oschina.net/news/467280/pale-moon-34-3-1-released",
       "hot": "Thu, 25 Jun 2026 16:03:48 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "API 开发与管理平台 5.0 发布",
       "url": "https://www.oschina.net/news/467242/crabc-5-0-released",
       "hot": "Thu, 25 Jun 2026 14:58:14 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Yzncms v2.2.0 已经发布，内容管理系统",
       "url": "https://www.oschina.net/news/467237",
       "hot": "Thu, 25 Jun 2026 14:51:28 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "qData 数据中台开源版 v1.5.4 正式发布：中英日多语言支持全面就绪，全新 UI 体验定义中台交互美学",
-      "url": "https://www.oschina.net/news/467210/qdata-1-5-4-released",
-      "hot": "Thu, 25 Jun 2026 14:27:31 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Tsuru 1.30.0 发布，基于 Docker 的 PaaS 框架",
-      "url": "https://www.oschina.net/news/467124/tsuru-1-30-0-released",
-      "hot": "Thu, 25 Jun 2026 11:48:21 +0800"
-    },
-    {
-      "rank": 9,
-      "title": ":tada:smart-servlet v3.3：Jakarta TCK 跑到了 99.8% 通过率",
-      "url": "https://www.oschina.net/news/467118/smart-servlet-3-3-released",
-      "hot": "Thu, 25 Jun 2026 11:38:21 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "谷歌将 Computer Use 能力原生集成到 Gemini 3.5 Flash",
-      "url": "https://www.oschina.net/news/467115/introducing-computer-use-gemini-3-5-flash",
-      "hot": "Thu, 25 Jun 2026 11:34:34 +0800"
     }
   ]
 }
