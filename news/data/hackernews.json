@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-26T08:43:12+00:00",
+  "updated_at": "2026-06-26T11:32:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Why current LLM costs are not sustainable",
-      "url": "https://aditya.patadia.org/p/ai-and-cloud-costs",
-      "hot": "33"
+      "title": "We All Depend on Open Source. We Will Defend It Together",
+      "url": "https://akrites.org/letter/",
+      "hot": "199"
     },
     {
       "rank": 2,
       "title": "Om Malik has died",
       "url": "https://om.co/2026/06/24/1966-2026/",
-      "hot": "848"
+      "hot": "940"
     },
     {
       "rank": 3,
       "title": "An entire Herculaneum scroll has been read for the first time",
       "url": "https://scrollprize.org/firstscroll",
-      "hot": "1275"
+      "hot": "1341"
     },
     {
       "rank": 4,
       "title": "Libre Barcode Project",
       "url": "https://graphicore.github.io/librebarcode/",
-      "hot": "125"
+      "hot": "174"
     },
     {
       "rank": 5,
-      "title": "We All Depend on Open Source. We Will Defend It Together",
-      "url": "https://akrites.org/letter/",
-      "hot": "50"
+      "title": "Framework's 10G Ethernet module exposes USB-C's complexity",
+      "url": "https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/",
+      "hot": "195"
     },
     {
       "rank": 6,
       "title": "What happened after 2k people tried to hack my AI assistant",
       "url": "https://www.fernandoi.cl/posts/hackmyclaw/",
-      "hot": "127"
+      "hot": "192"
     },
     {
       "rank": 7,
-      "title": "Framework's 10G Ethernet module exposes USB-C's complexity",
-      "url": "https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/",
-      "hot": "149"
+      "title": "The 'papers, please' era of the internet will decimate your privacy",
+      "url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+      "hot": "767"
     },
     {
       "rank": 8,
-      "title": "The 'papers, please' era of the internet will decimate your privacy",
-      "url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
-      "hot": "674"
+      "title": "The Garbage Collection Handbook: The Art of Automatic Memory Management (2nd Ed) (2023)",
+      "url": "https://gchandbook.org/",
+      "hot": "153"
     },
     {
       "rank": 9,
-      "title": "The Garbage Collection Handbook: The Art of Automatic Memory Management (2nd Ed) (2023)",
-      "url": "https://gchandbook.org/",
-      "hot": "132"
+      "title": "A game where you're an OS and have to manage processes, memory and I/O events",
+      "url": "https://github.com/plbrault/youre-the-os",
+      "hot": "226"
     },
     {
       "rank": 10,
-      "title": "A game where you're an OS and have to manage processes, memory and I/O events",
-      "url": "https://github.com/plbrault/youre-the-os",
-      "hot": "197"
+      "title": "Microbubbles in Medicine",
+      "url": "https://worksinprogress.co/issue/microbubbles/",
+      "hot": "12"
     }
   ]
 }
