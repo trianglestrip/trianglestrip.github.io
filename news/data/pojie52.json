@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-06-26T05:48:51+00:00",
+  "updated_at": "2026-06-26T08:43:07+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,51 +18,51 @@
     },
     {
       "rank": 3,
-      "title": "破解 Trae CN 加密协议",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113927",
-      "hot": ""
-    },
-    {
-      "rank": 4,
       "title": "Sality病毒样本分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113452",
       "hot": "[md]# 前言\n本人小白一枚，第一次发帖，写的不好求轻喷 \n样本来源[https://www.52pojie.cn/thread-2104234-1-1.html](https://www.52pojie.cn/thread-2104234-1-1.html)\n\n# 样本概述\n样本为Sality病毒变种 ..."
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "【整活儿向】分析一款RPG游戏让足球赛小游戏敌方进球给我方白送分并制作修改器",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2112391",
       "hot": "[md]\n世界杯马上要开幕了，来聊个跟足球有关系的修改吧，这是一款由轨迹系列的游戏厂商早年开发的一款RPG游戏，分析一下如何通过技术手段让MiniGame的足球赛中，敌方进球给我方白送分，再分析一下免CD、一击必杀和无敌 ..."
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "【原创C&C++】SysRestoreDriver - 从零实现基于写时重定向的 NTFS 卷过滤还原驱动",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2112307",
       "hot": "[md]# SysRestoreDriver：基于写时重定向的 NTFS 卷过滤还原驱动设计与实现\n\n\n\n## 〇、前言\n\n这是一个 Windows 内核态卷过滤驱动，做的事情是：**开启保护后，系统盘上任何写入都会被悄悄重定向到空闲扇区。重启之 ..."
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "YOLO识别拼图过滑块验证",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2112042",
       "hot": "本文章中所有内容仅供学习交流使用，不用于其他任何目的，严禁用于商业用途和非法用途，否则由此产生的一切后果均与作者无关！若有侵权，请联系作者删除。 \n\n\n由于对上一篇逆向分析中，使用滑块手动验证一直耿耿于怀 ..."
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "web逆向基础知识--- js 事件 事件循环 和异步",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111598",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "某企业加固dex vmp简单分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111432",
       "hot": "前言\n本人小白一枚，想尝试学习一些加固，在身边朋友的推荐下选择了这个壳子.恰巧最近论坛上也有很多大佬发布了自己的分析贴（比如乐子人大佬的帖子），只是复现下来后发现后续的dex vmp相关帖子比较少（很不幸只找到了 ..."
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "【多栈实战】某黑产软件全链路逆向实录 (中)",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111428",
       "hot": "【多栈实战】\n某黑产软件全链路逆向实录 (中) ——\nFlutter / Web 逆向伪造邀请请求会员全流程\n\n开篇严正声明：本文仅用于学习逆向工程与网络安全相关技术，未掺杂任何不良目的。文中的软件已对其名字、图标及相关 ..."
+    },
+    {
+      "rank": 10,
+      "title": "内存访问蜜罐页的五次进化：从静态陷阱到多维度 PMU 统计检测",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2111376",
+      "hot": "[md]# 蜜罐页的五次进化：从静态陷阱到多维度 PMU 统计检测\n\n&gt; ARM64 Android 平台 `process_vm_readv` 跨进程内存读取的检测方案演进\n\n## 摘要\n\n在 ARM64 Android (Linux 5.4.210) 平台上，本文设计并实验验证了五代蜜罐页（Honey Page）检测方案，探索从简单的 ..."
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-26T05:48:54+00:00",
+  "updated_at": "2026-06-26T08:43:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "# 码上鸿蒙•智绘未来# 鸿蒙平台 uni-app x 进度条实战：progress 完整指南",
-      "url": "https://ost.51cto.com/posts/49781",
-      "hot": "进度条，UI里最常见的组件之一。文件上传、视频缓冲、任务完成度、表单填写进度...到处都要用。组件用起来很简单，属性不多，坑也相对少。..."
+      "title": "永无止境的守护：NIST数学证明揭示AI安全的\"西西弗斯（Sisyphus）困境\"",
+      "url": "https://www.51cto.com/article/847579.html",
+      "hot": "NIST的这份证明，不是对AI安全事业的判决书，而是一张新的出发证。它告诉我们：放下对\"一劳永逸\"的执念，拥抱永恒的守护——这才是AI时代真正意义上的安全智慧。"
     },
     {
       "rank": 2,
-      "title": "# 码上鸿蒙•智绘未来# 鸿蒙平台 uni-app x 文本组件实战：text 完整指南",
-      "url": "https://ost.51cto.com/posts/49771",
-      "hot": "text组件，看起来是最简单的组件，但其实踩坑最多。特别是从Web转过来的同学，经常犯一个错误：直接在view里写文字。在uniappx中，文字必须..."
+      "title": "Claude Code 创始人说：90% 的人把 AI 编程工具用成了聊天框",
+      "url": "https://www.51cto.com/article/847591.html",
+      "hot": "Claude Code 日安装量已经达到 2900 万次。这意味着有海量开发者每天都在用这个工具，但其中绝大多数人可能还在用我凌晨两点的那种方式：问一句，答一句，确认一句，改一句。"
     },
     {
       "rank": 3,
-      "title": "CVE-2026-20245 | Cisco SD-WAN 零日利用分析",
-      "url": "https://www.51cto.com/article/847567.html",
-      "hot": "本次攻击行动突显了“存活于边缘”(living off the edge) 的范式，即威胁行为体优先入侵网络设备，以绕过传统的安全边界。"
+      "title": "GPT-5.6紧急叫停！OpenAI最强模型被迫「一客一审」",
+      "url": "https://www.51cto.com/article/847592.html",
+      "hot": "三家最强模型，竟然一个都没用上！就在今天，GPT-5.6也被紧急叫停，进入「逐个审批」时代。"
     },
     {
       "rank": 4,
-      "title": "上下文越多，Agent 越笨？开源框架 Flow2Spec 给出另一种答案",
-      "url": "https://www.51cto.com/article/847566.html",
-      "hot": "在真实开发过程中，项目知识能不能被持续沉淀、自动路由、持续验证，并且随着代码一起演进。"
+      "title": "刚刚，翁荔博客上新：谨慎对待Scaling Law",
+      "url": "https://www.51cto.com/article/847593.html",
+      "hot": "就在几个小时前，翁荔新作《谨慎对待 Scaling Law》上线，瞬间引爆社交网络。"
     },
     {
       "rank": 5,
-      "title": "GUI Agent+多智能体：携程如何用AI将线上页面多语言质检成本降低 90%",
-      "url": "https://www.51cto.com/article/847564.html",
-      "hot": "我们构建了\"慧鉴天工\"——一套打通 \"页面采集-文字提取-多语言质量检测\" 的完整闭环的多智能体系统，融合GUI Agent、自我进化的LQA检测算法，实现从问题发现到自动修复的全流程自主运转。"
+      "title": "国产AI高考708分，这款模型靠什么成为「屏蔽生」？",
+      "url": "https://www.51cto.com/article/847594.html",
+      "hot": "羊城晚报教育发展研究院拉来 8 位 AI 考生全科作答，由 2 名资深教师独立盲评，总分按历史类和物理类分科方式统计。"
     },
     {
       "rank": 6,
-      "title": "React Compiler 杀进 Vite，又被 \"紧急撤回\"！尤雨溪公开喊话！",
-      "url": "https://www.51cto.com/article/847561.html",
-      "hot": "Boshen 撤回这个集成，本质不是否定 React Compiler，而是认为：不能让所有 Vite 用户默认付成本。"
+      "title": "SIGCOMM 2026 | 从「人眼看视频」到「AI理解视频」：北大提出面向AI的实时通信框架Artic",
+      "url": "https://www.51cto.com/article/847595.html",
+      "hot": "北京大学团队提出 Artic，一套面向 AI 的实时视频通信框架，系统性重构了 AI 视频助手场景下的码率自适应、视频编码、反馈控制和评测基准。"
     },
     {
       "rank": 7,
-      "title": "美团二面，面试官问我支付防重，我说\"先查后写\"，他叹了口气合上了简历",
-      "url": "https://www.51cto.com/article/847560.html",
-      "hot": "假如用户网络卡了，同一个支付请求发过来两次，你的代码怎么保证不扣两遍钱？如果在面试中遇到这道题，下面这个回答框架，能让你从\"有印象\"直接跳到\"有体系\"。"
+      "title": "CVPR‘26 Octopus｜大模型\"温故而知新\"实现了！无需历史数据，Octopus 效果超越全数据训练",
+      "url": "https://www.51cto.com/article/847596.html",
+      "hot": "现在，上海交通大学与vivo团队拿出了全新解法：一种全新的持续学习框架——Octopus。"
     },
     {
       "rank": 8,
-      "title": "万字长文深度剖析 Harness Engineering 案例完全指南：从 while True 到驾驭生产级 Agent 的 20 层架构演进（下）",
-      "url": "https://www.51cto.com/article/847559.html",
-      "hot": "上篇文章我们详细阐述了上半部分，本篇我们继续详细阐述下半部分。"
+      "title": "英伟达MoE新开源：一行import，微调加速3.7倍",
+      "url": "https://www.51cto.com/article/847597.html",
+      "hot": "英伟达最新研究成果现已开源：NeMo AutoModel，专为大规模构建和微调生成式AI模型而打造。"
     },
     {
       "rank": 9,
-      "title": "Claude Fable 5重新上线！GPT-5.6秒跟",
-      "url": "https://www.51cto.com/article/847555.html",
-      "hot": "有任何公告和新闻稿。在出口管制措施实施后，该产品经历了近两周的停产期，现在才以低调的方式重新上市。再简单介绍下这个Vibe Coder们的「模月光」吧——Fable 5，一个极致「暴力」的模型。"
+      "title": "让机器人学会“预判接触”：它石智航牵头四大顶尖机构发布TacForeSight，破解精细操作难题",
+      "url": "https://www.51cto.com/article/847599.html",
+      "hot": "近日，它石智航联合新加坡国立大学、上海交通大学、中科院自动化所、复旦大学发布论文“TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation”。"
     },
     {
       "rank": 10,
-      "title": "不懂 binfmt_misc，别再说你懂 Linux 程序执行机制了",
-      "url": "https://www.51cto.com/article/847508.html",
-      "hot": "不懂binfmt_misc，你看到的Linux程序执行只是“表面现象”，无法理解内核扩展执行能力的核心设计；不懂binfmt_misc，你遇到的跨架构、容器执行问题只能是“无头苍蝇式排查”，抓不住问题的本质。"
+      "title": "从需求到设计到代码，一个软件全搞定！TRAE Work Design实测来了",
+      "url": "https://www.51cto.com/article/847600.html",
+      "hot": "之前TRAE Work已经有Work模式聊需求、Code模式写代码，现在补上了Design——需求→设计→代码，全链路在一个平台里跑通了。"
     }
   ]
 }
