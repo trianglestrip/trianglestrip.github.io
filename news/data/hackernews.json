@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-26T15:42:09+00:00",
+  "updated_at": "2026-06-26T19:12:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Why have papers by one of history's most famous physicists been retracted?",
-      "url": "https://www.science.org/content/article/why-have-papers-one-history-s-most-famous-physicists-been-retracted",
-      "hot": "145"
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "hot": "384"
     },
     {
       "rank": 2,
-      "title": "Incident CVE-2026-LGTM",
-      "url": "https://nesbitt.io/2026/06/26/incident-report-cve-2026-lgtm.html",
-      "hot": "219"
+      "title": "MicroVMs: Run isolated sandboxes with full lifecycle control",
+      "url": "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/",
+      "hot": "166"
     },
     {
       "rank": 3,
-      "title": "New satellites from years to weeks, days, or hours",
-      "url": "https://arstechnica.com/space/2026/06/a-us-military-exercise-in-space-got-underway-with-barely-anyone-noticing/",
-      "hot": "19"
+      "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+      "url": "https://github.com/workweave/router",
+      "hot": "71"
     },
     {
       "rank": 4,
-      "title": "Jolla Phone, Over 13 500 units sold",
-      "url": "https://commerce.jolla.com/products/jolla-phone-october-2026",
-      "hot": "58"
+      "title": "U.S. government will decide who gets to use GPT-5.6",
+      "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
+      "hot": "98"
     },
     {
       "rank": 5,
-      "title": "Ultrasound Imaging of the Brain",
+      "title": "Ultrasound imaging of the brain",
       "url": "https://alephneuro.com/blog/ultrasound-brain",
-      "hot": "62"
+      "hot": "153"
     },
     {
       "rank": 6,
-      "title": "Om Malik has died",
-      "url": "https://om.co/2026/06/24/1966-2026/",
-      "hot": "1132"
+      "title": "Modern GPU Programming for MLSys",
+      "url": "https://mlc.ai/modern-gpu-programming-for-mlsys/",
+      "hot": "15"
     },
     {
       "rank": 7,
-      "title": "An entire Herculaneum scroll has been read for the first time",
-      "url": "https://scrollprize.org/firstscroll",
-      "hot": "1493"
+      "title": "Om Malik has died",
+      "url": "https://om.co/2026/06/24/1966-2026/",
+      "hot": "1228"
     },
     {
       "rank": 8,
-      "title": "Libre Barcode Project",
-      "url": "https://graphicore.github.io/librebarcode/",
-      "hot": "234"
+      "title": "An entire Herculaneum scroll has been read for the first time",
+      "url": "https://scrollprize.org/firstscroll",
+      "hot": "1579"
     },
     {
       "rank": 9,
-      "title": "Bipartite Matching Is in NC",
-      "url": "https://scottaaronson.blog/?p=9851",
-      "hot": "70"
+      "title": "Springer Nature has removed two studies by Max Planck",
+      "url": "https://www.science.org/content/article/why-have-papers-one-history-s-most-famous-physicists-been-retracted",
+      "hot": "280"
     },
     {
       "rank": 10,
-      "title": "What happened after 2k people tried to hack my AI assistant",
-      "url": "https://www.fernandoi.cl/posts/hackmyclaw/",
-      "hot": "285"
+      "title": "What is a Lithium-ion capacitor?",
+      "url": "https://www.jtekt.co.jp/e/products/capacitor/capacitor_about.html",
+      "hot": "15"
     }
   ]
 }
