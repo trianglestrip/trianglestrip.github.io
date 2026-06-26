@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-26T13:33:12+00:00",
+  "updated_at": "2026-06-26T20:55:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "33"
+      "hot": "34"
     },
     {
       "rank": 2,
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "A decoder-only foundation model for time-series forecasting",
-      "url": "https://huggingface.co/papers/2310.10688",
-      "hot": "36"
-    },
-    {
-      "rank": 4,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "102"
+    },
+    {
+      "rank": 4,
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "36"
     },
     {
       "rank": 5,
@@ -50,7 +50,7 @@
       "rank": 8,
       "title": "Qwen-AgentWorld: Language World Models for General Agents",
       "url": "https://huggingface.co/papers/2606.24597",
-      "hot": "122"
+      "hot": "123"
     },
     {
       "rank": 9,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "GLM-5: from Vibe Coding to Agentic Engineering",
       "url": "https://huggingface.co/papers/2602.15763",
-      "hot": "186"
+      "hot": "187"
     }
   ]
 }
