@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-25T23:14:05+00:00",
+  "updated_at": "2026-06-26T01:30:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "OpenClaw Skill 市场暴露 AI Agent 供应链恶意软件与金融欺诈风险",
-      "url": "https://www.51cto.com/article/847513.html",
-      "hot": "OpenClaw 是一种运行来自 ClawHub 专用市场第三方 skills 的 AI Agent。这些 skills 是基于 Markdown 的软件包，具有对本地系统的深度访问权限。"
+      "title": "Linux 内核：RCU 机制全解（读多写少场景的性能神器",
+      "url": "https://www.51cto.com/article/847506.html",
+      "hot": "RCU 的核心思想超级简单：读者可以随意读，几乎零开销；写者想改数据时，先拷贝一份副本，在副本上改完，再一次性把指针指向新数据。"
     },
     {
       "rank": 2,
-      "title": "# 码上鸿蒙•智绘未来# HarmonyOS7 列表流实战----自定义列表项别一股脑塞进 build 里",
-      "url": "https://ost.51cto.com/posts/49629",
-      "hot": "[toc](目录)源码获取如果你想一边对照文章一边实操，建议直接把示例工程拉到本地。项目Git地址：https:gitcode.comHarmonyOSSamplesCommonL..."
+      "title": "Vue 3 异步组件加载状态、错误处理与延迟加载实战完全解析",
+      "url": "https://www.51cto.com/article/847505.html",
+      "hot": "前两章我们学会了异步组件的基本概念和 defineAsyncComponent 的配置项。这一章咱们来搞点实际的——把这些配置项组合起来，打造一个完整的加载状态管理方案。"
     },
     {
       "rank": 3,
-      "title": "# 码上鸿蒙•智绘未来# HarmonyOS7 列表流实战----嵌套滚动和 Tab 联动到底怎么配",
-      "url": "https://ost.51cto.com/posts/49628",
-      "hot": "[toc](目录)源码获取如果你想一边对照文章一边实操，建议直接把示例工程拉到本地。项目Git地址：https:gitcode.comHarmonyOSSamplesCommonL..."
+      "title": "字节跳动面试反问一句：你简历里写\"三高架构\"，高性能和高可用打起来你站谁？",
+      "url": "https://www.51cto.com/article/847498.html",
+      "hot": "面试官问了一句：\"你项目里写了高性能、高可用。我只问你一件事——这两个东西打起架来，你选谁？\"我当时脑子一懵。"
     },
     {
       "rank": 4,
-      "title": "一个“小白”黑客，1000次对话，14家企业沦陷——AI Agent正在颠覆网络攻防的底层逻辑",
-      "url": "https://www.51cto.com/article/847457.html",
-      "hot": "对于我们每一个人来说，无论是开发者、安全从业者还是企业管理者，AI Agents的红利与风险并存。在潘多拉魔盒已开的今天，比拼的不再是谁拥有更强的防火墙，而是谁能更早地在AI赋能的下一代防御框架中找到位置。"
+      "title": "一个数据包的奇幻漂流：从你手机出发，到服务器收到，中间发生了什么？",
+      "url": "https://www.51cto.com/article/847497.html",
+      "hot": "今天的核心就一张图、一句话：发送方从上到下逐层封装，接收方从下到上逐层解封装，中间路由器只处理到网络层。"
     },
     {
       "rank": 5,
-      "title": "SIGGRAPH 2026 | 无需训练，一段单目视频解锁任意运镜与「子弹时间」",
-      "url": "https://www.51cto.com/article/847458.html",
-      "hot": "来自 UIUC、宾夕法尼亚大学和 Eyeline Labs 的研究团队给出的答案是：可以，而且不需要训练任何模型。"
+      "title": "别急着神化 Loop Engineering：先看懂这八个问题",
+      "url": "https://www.51cto.com/article/847008.html",
+      "hot": "Loop Engineering 代表了 Agent 系统走向“自主持续闭环”的新工程范式。但它并不适合所有场景。是否要做 Loop，关键不在概念新不新，而在任务是否重复、目标是否清晰、结果能否验证、风险是否可控。根据自身的实际情况，多一点判断，才是更务实的做法。​"
     },
     {
       "rank": 6,
-      "title": "Fable 5即将复活，代码已曝光？Anthropic CEO被白宫踢出来了！",
-      "url": "https://www.51cto.com/article/847459.html",
-      "hot": "刚被「封印」，Fable 5就要满血复活？最近，Claude Fable 5代码痕迹曝光，开发者圈一片欢呼，而外媒爆料，Anthropic最近一路顺利，背后竟是因为CEO被白宫赶下谈判桌！"
+      "title": "看懂太空算力，这一篇就够啦！",
+      "url": "https://www.51cto.com/article/847022.html",
+      "hot": "今年1月，SpaceX向美国联邦通信委员会（FCC）提交了轨道数据中心系统（Orbital Data Center System）‌申请。该系统计划在近地轨道部署最多100万颗卫星，专门用于运行人工智能模型。"
     },
     {
       "rank": 7,
-      "title": "中国造出一颗「不怕死」的AI大脑，专接最要命的活儿",
-      "url": "https://www.51cto.com/article/847460.html",
-      "hot": "太硬核了！全球首个搭载AI大脑的防爆机器人，正式接管加油站。自主定位、拧盖、提枪、注油，全套动作行云流水，24小时无休作业，具身智能终于在高危场景一战封神。"
+      "title": "小chunk和大段落，SproutRAG用注意力组起来了",
+      "url": "https://www.51cto.com/article/847002.html",
+      "hot": "SproutRAG 的核心贡献，可以压成一句话：它把长文档 RAG 的 chunk 大小问题，改成了树上多粒度检索问题。它不靠在线 LLM 调用来重新加工上下文，也不依赖有损摘要来压缩节点，而是用 SLLM attention 建树，用 progressive embeddings 表示不同粒度节点，再用 hierarchical beam search 沿树找证据。"
     },
     {
       "rank": 8,
-      "title": "不用装东西也能玩 Vue？在线演练场和脚手架 create-vue 全上手",
-      "url": "https://www.51cto.com/article/847442.html",
-      "hot": "其实吧，Vue官方早就替咱想好了：不需要在机器上安装任何东西，也能尝试基于单文件组件（SFC）的Vue开发体验。"
+      "title": "MySQL主从复制：三个被忽视的坑，让线上数据丢了两小时",
+      "url": "https://www.51cto.com/article/847236.html",
+      "hot": "主从复制远不止\"配一下\"那么简单。Binlog格式选错会导致主从数据不一致，复制延迟会让业务读到过期数据，主库宕机切换可能直接丢数据。这3个坑，每个都足以让团队在凌晨被拉起来排查。"
     },
     {
       "rank": 9,
-      "title": "从零到一带你速通 Marvis 马维斯",
-      "url": "https://www.51cto.com/article/847441.html",
-      "hot": "AI技术飞速发展的今天，能力强大的Agent产品层出不穷，但对普通用户来说，门槛也是真的高。"
+      "title": "Superpowers、OpenSpec、Spec-Kit 傻傻分不清楚",
+      "url": "https://www.51cto.com/article/847476.html",
+      "hot": "有些小伙伴在工作中可能遇到过这样的情况：你让AI帮你实现一个功能，它二话不说就开始写代码了。你只是让它加一个登录接口，结果它顺手把整个认证模块都重写了。你问它“测试过了吗”，它说“应该没问题”。你让它解释为什么这么改，它开始讲一堆听起来很合理、但你总觉得哪里不对的理由。"
     },
     {
       "rank": 10,
-      "title": "诺奖得主刚走，Gemini两大核心叛逃Anthropic！",
-      "url": "https://www.51cto.com/article/847437.html",
-      "hot": "谷歌留不住人了！诺奖得主离职后，Gemini两大核心将一同入职Anthropic。同一天，Gemini 3.5 Pro已延期至7月。"
+      "title": "AGENTS.md 开始反噬 Coding Agent，程序员别把团队规矩写成坑",
+      "url": "https://www.51cto.com/article/847322.html",
+      "hot": "大家的出发点很朴素：别让 Agent 每次都从零认识项目。把构建命令、代码风格、目录约定、禁区、测试方式都写进去，它就能少问几句，少犯几次低级错。"
     }
   ]
 }
