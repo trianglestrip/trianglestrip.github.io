@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-26T01:30:13+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-06-26T05:48:28+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -21,7 +20,7 @@
       "rank": 3,
       "title": "抓特务",
       "url": "https://movie.douban.com/subject/36812879/",
-      "hot": "评分 7.5"
+      "hot": "评分 7.4"
     },
     {
       "rank": 4,

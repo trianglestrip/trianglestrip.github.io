@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-26T01:30:44+00:00",
+  "updated_at": "2026-06-26T05:48:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "VS Code 1.123 新增两小时插件更新缓冲，防范供应链恶意攻击",
+      "url": "https://www.infoq.cn/article/iZskGZVEV04jivWZtR00?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 26 Jun 2026 12:44:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Fable 5还未解禁，Anthropic一纸诉状砸向Qwen，自家CEO却被白宫嫌“怪”踢出局！",
+      "url": "https://www.infoq.cn/article/MVDrYfoCovqj6zBNxr9e?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 26 Jun 2026 11:12:45 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "两年砸10亿，北森宣布All in AI：上线15个AI HR专家，造了一个“数字人事部”",
+      "url": "https://www.infoq.cn/article/j1XdsvKMeFio6oyHGTkK?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 26 Jun 2026 11:01:58 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "轻量级ADR与架构咨询例会如何支撑架构决策工作",
+      "url": "https://www.infoq.cn/article/jd3VGzLzCU67Cq2yWFGy?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 26 Jun 2026 10:30:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "云端 AI 治理：架构师实操指南",
+      "url": "https://www.infoq.cn/article/IeYP4QboeUV5g7wJRYkZ?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 26 Jun 2026 09:40:35 GMT"
+    },
+    {
+      "rank": 6,
       "title": "GitHub 推出 Copilot 桌面应用，支持并行 Agent 开发工作流",
       "url": "https://www.infoq.cn/article/GaAsWkrJQW2NFf06kgyG?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 19:06:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "AI 智能体的身份与权限挑战：Uber 和 Auth0 如何重新思考访问控制",
       "url": "https://www.infoq.cn/article/tDY9pS7LlrVIBq1pPotd?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 18:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "最大开源第一视角数据集 EgoLive 来了，名校站台、近百家机构争相申请",
       "url": "https://www.infoq.cn/article/3HqTDUKziZE3ukwbwHyC?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 17:04:58 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "Claude Code 工程一号位亲自给 Agent 热潮降温：狂烧 Token 时代已过，现在该算ROI了",
       "url": "https://www.infoq.cn/article/XebV3B8Vy3Yx0A4HZX4b?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 16:54:29 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "狂烧 Token 却赚不到钱？这家清华系 AI Infra 独角兽已破解算力成本难题",
       "url": "https://www.infoq.cn/article/szKShGMPxfQMVbOU4IbX?utm_source=rss&utm_medium=article",
       "hot": "Thu, 25 Jun 2026 16:50:01 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "途虎养车基于 Apache Doris 构建统一 OLAP 数据底座，支撑用户画像与 BI 多维分析",
-      "url": "https://www.infoq.cn/article/QULg64hlN1FKcHNmb1wJ?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 25 Jun 2026 16:37:27 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "AI 编程代理拥有了自己的 Stack Overflow",
-      "url": "https://www.infoq.cn/article/hqc2uU1TPpbMyyz2pFy8?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 25 Jun 2026 16:00:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "覆盖百所高校、万名学员，360 ADE认证纳入工信部紧缺人才培养工程",
-      "url": "https://www.infoq.cn/article/mgdwNU3yV3XgBrcfJvGv?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 25 Jun 2026 15:29:35 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Coinbase 事后分析报告揭示：AWS 局部故障如何导致了持续数小时的交易中断",
-      "url": "https://www.infoq.cn/article/tNJCNG5TP8JoZcY9A3MZ?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 25 Jun 2026 13:35:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "三家公司一周内出手，编码 Agent 进入团队基础设施时代",
-      "url": "https://www.infoq.cn/article/w4sl1mazwewiJ6Th2XqV?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 25 Jun 2026 12:50:19 GMT"
     }
   ]
 }

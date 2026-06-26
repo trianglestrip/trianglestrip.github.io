@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-25T20:27:06+00:00",
+  "updated_at": "2026-06-26T05:49:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "2461"
+      "hot": "2501"
     },
     {
       "rank": 2,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "870"
+      "hot": "916"
     },
     {
       "rank": 3,
-      "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "hot": "2353"
+      "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "hot": "627"
     },
     {
       "rank": 4,
-      "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "hot": "601"
+      "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "hot": "2368"
     },
     {
       "rank": 5,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "465"
+      "hot": "501"
     },
     {
       "rank": 6,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-      "hot": "381"
+      "hot": "400"
     },
     {
       "rank": 7,
       "title": "WeiboAI/VibeThinker-3B",
       "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
-      "hot": "712"
+      "hot": "716"
     },
     {
       "rank": 8,
-      "title": "unsloth/GLM-5.2-GGUF",
-      "url": "https://huggingface.co/unsloth/GLM-5.2-GGUF",
-      "hot": "380"
+      "title": "Qwen/Qwen-AgentWorld-35B-A3B",
+      "url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
+      "hot": "257"
     },
     {
       "rank": 9,
       "title": "krea/Krea-2-Turbo",
       "url": "https://huggingface.co/krea/Krea-2-Turbo",
-      "hot": "238"
+      "hot": "251"
     },
     {
       "rank": 10,
-      "title": "Qwen/Qwen-AgentWorld-35B-A3B",
-      "url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
-      "hot": "224"
+      "title": "unsloth/GLM-5.2-GGUF",
+      "url": "https://huggingface.co/unsloth/GLM-5.2-GGUF",
+      "hot": "390"
     }
   ]
 }

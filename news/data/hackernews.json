@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-26T01:30:40+00:00",
+  "updated_at": "2026-06-26T05:48:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Om Malik has died",
       "url": "https://om.co/2026/06/24/1966-2026/",
-      "hot": "407"
+      "hot": "727"
     },
     {
       "rank": 2,
       "title": "An entire Herculaneum scroll has been read for the first time",
       "url": "https://scrollprize.org/firstscroll",
-      "hot": "970"
+      "hot": "1139"
     },
     {
       "rank": 3,
-      "title": "The 'papers, please' era of the internet will decimate your privacy",
-      "url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
-      "hot": "388"
+      "title": "Libre Barcode Project",
+      "url": "https://graphicore.github.io/librebarcode/",
+      "hot": "61"
     },
     {
       "rank": 4,
-      "title": "Un-0: Generating Images with Coupled Oscillators",
-      "url": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
-      "hot": "107"
+      "title": "Framework's 10G Ethernet module exposes USB-C's complexity",
+      "url": "https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/",
+      "hot": "108"
     },
     {
       "rank": 5,
-      "title": "A game where you're an OS and have to manage processes, memory and I/O events",
-      "url": "https://github.com/plbrault/youre-the-os",
-      "hot": "91"
+      "title": "What happened after 2k people tried to hack my AI assistant",
+      "url": "https://www.fernandoi.cl/posts/hackmyclaw/",
+      "hot": "56"
     },
     {
       "rank": 6,
-      "title": "The Garbage Collection Handbook: The Art of Automatic Memory Management (2nd Ed)",
-      "url": "https://gchandbook.org/",
-      "hot": "35"
+      "title": "The 'papers, please' era of the internet will decimate your privacy",
+      "url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+      "hot": "567"
     },
     {
       "rank": 7,
-      "title": "Oxide computer 3D rack guided tour",
-      "url": "https://explorer.oxide.computer/",
-      "hot": "290"
+      "title": "Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/apple-to-skip-high-end-m6-mac-chips-to-launch-m7-pro-m7-max-m7-ultra-instead?embedded-checkout=true",
+      "hot": "184"
     },
     {
       "rank": 8,
-      "title": "IBM debuts sub-1 nanometer chip technology",
-      "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
-      "hot": "260"
+      "title": "The Garbage Collection Handbook: The Art of Automatic Memory Management (2nd Ed) (2023)",
+      "url": "https://gchandbook.org/",
+      "hot": "96"
     },
     {
       "rank": 9,
-      "title": "An oral history of Bank Python (2021)",
-      "url": "https://calpaterson.com/bank-python.html",
-      "hot": "71"
+      "title": "Overfitted a 900KB Transformer to Compress a 100MB CSV into 7MB",
+      "url": "https://news.ycombinator.com/item?id=48644463",
+      "hot": "77"
     },
     {
       "rank": 10,
-      "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
-      "url": "https://github.com/inkeep/open-knowledge",
-      "hot": "199"
+      "title": "A game where you're an OS and have to manage processes, memory and I/O events",
+      "url": "https://github.com/plbrault/youre-the-os",
+      "hot": "148"
     }
   ]
 }
