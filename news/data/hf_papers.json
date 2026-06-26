@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-26T05:49:07+00:00",
+  "updated_at": "2026-06-26T13:33:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "30"
+      "hot": "33"
     },
     {
       "rank": 2,
       "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
       "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "171"
+      "hot": "173"
     },
     {
       "rank": 3,
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
-      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
-      "url": "https://huggingface.co/papers/2309.06180",
-      "hot": "60"
-    },
-    {
-      "rank": 5,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "102"
     },
     {
-      "rank": 6,
-      "title": "Qwen-AgentWorld: Language World Models for General Agents",
-      "url": "https://huggingface.co/papers/2606.24597",
-      "hot": "117"
+      "rank": 5,
+      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
+      "url": "https://huggingface.co/papers/2309.06180",
+      "hot": "60"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
       "url": "https://huggingface.co/papers/2601.02163",
       "hot": "8"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "246"
+      "hot": "247"
+    },
+    {
+      "rank": 8,
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://huggingface.co/papers/2606.24597",
+      "hot": "122"
     },
     {
       "rank": 9,
-      "title": "GLM-5: from Vibe Coding to Agentic Engineering",
-      "url": "https://huggingface.co/papers/2602.15763",
-      "hot": "186"
-    },
-    {
-      "rank": 10,
       "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
       "url": "https://huggingface.co/papers/2606.03264",
       "hot": "23"
+    },
+    {
+      "rank": 10,
+      "title": "GLM-5: from Vibe Coding to Agentic Engineering",
+      "url": "https://huggingface.co/papers/2602.15763",
+      "hot": "186"
     }
   ]
 }
