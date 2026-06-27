@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-27T00:19:11+00:00",
+  "updated_at": "2026-06-27T04:20:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Previewing GPT‑5.6 Sol: a next-generation model",
       "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-      "hot": "779"
+      "hot": "895"
     },
     {
       "rank": 2,
-      "title": "A C++ implementation of a fast hash map and hash set using hopscotch hashing",
-      "url": "https://github.com/Tessil/hopscotch-map",
-      "hot": "51"
+      "title": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
+      "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed",
+      "hot": "142"
     },
     {
       "rank": 3,
-      "title": "US allows Anthropic to release Mythos to 'trusted partners'",
-      "url": "https://www.reuters.com/technology/us-releases-anthropic-model-mythos-some-us-companies-semafor-reports-2026-06-26/",
-      "hot": "136"
+      "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
+      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+      "hot": "296"
     },
     {
       "rank": 4,
-      "title": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
-      "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed",
-      "hot": "26"
+      "title": "WordStar: A Writer's Word Processor (1996)",
+      "url": "https://www.sfwriter.com/wordstar.htm",
+      "hot": "8"
     },
     {
       "rank": 5,
-      "title": "U.S. government will decide who gets to use GPT-5.6",
-      "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
-      "hot": "754"
+      "title": "Show HN: Hacker News on a train station-style flip board",
+      "url": "https://popflame.quickish.space/hn-flipboard/",
+      "hot": "32"
     },
     {
       "rank": 6,
-      "title": "The gap between open weights LLMs and closed source LLMs",
-      "url": "https://blog.doubleword.ai/frontier-os-llm",
-      "hot": "96"
+      "title": "Hellishly Slow Level 13 Deflate Compression",
+      "url": "https://kirill.korins.ky/articles/hellishly-slow-level-13-deflate-compression/",
+      "hot": "16"
     },
     {
       "rank": 7,
       "title": "MicroVMs: Run isolated sandboxes with full lifecycle control",
       "url": "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/",
-      "hot": "242"
+      "hot": "289"
     },
     {
       "rank": 8,
-      "title": "We can still stop California's 3D printer surveillance scheme",
-      "url": "https://www.eff.org/deeplinks/2026/06/we-can-still-stop-californias-3d-printer-surveillance-scheme",
-      "hot": "156"
+      "title": "AI in mathematics is forcing big questions",
+      "url": "https://spectrum.ieee.org/ai-in-mathematics",
+      "hot": "75"
     },
     {
       "rank": 9,
-      "title": "A Tiny Compiler for Data-Parallel Kernels",
-      "url": "https://healeycodes.com/a-tiny-compiler-for-data-parallel-kernels",
-      "hot": "14"
+      "title": "U.S. government will decide who gets to use GPT-5.6",
+      "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
+      "hot": "900"
     },
     {
       "rank": 10,
-      "title": "The \"Bizarre Headgear\" exhibit at the Sam Noble museum",
-      "url": "https://svpow.com/2026/05/15/the-bizarre-headgear-exhibit-at-the-sam-noble-museum-is-incredible/",
-      "hot": "65"
+      "title": "A C++ implementation of a fast hash map and hash set using hopscotch hashing",
+      "url": "https://github.com/Tessil/hopscotch-map",
+      "hot": "76"
     }
   ]
 }
