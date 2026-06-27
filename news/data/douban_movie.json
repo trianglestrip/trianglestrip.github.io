@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-06-27T15:37:56+00:00",
+  "updated_at": "2026-06-27T17:45:29+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "铁拳教育",
-      "url": "https://movie.douban.com/subject/37071123/",
-      "hot": "评分 8.8"
-    },
-    {
-      "rank": 3,
       "title": "抓特务",
       "url": "https://movie.douban.com/subject/36812879/",
       "hot": "评分 7.4"
+    },
+    {
+      "rank": 3,
+      "title": "镖人：风起大漠",
+      "url": "https://movie.douban.com/subject/36474027/",
+      "hot": "评分 7.5"
     },
     {
       "rank": 4,
@@ -30,9 +30,9 @@
     },
     {
       "rank": 5,
-      "title": "镖人：风起大漠",
-      "url": "https://movie.douban.com/subject/36474027/",
-      "hot": "评分 7.5"
+      "title": "铁拳教育",
+      "url": "https://movie.douban.com/subject/37071123/",
+      "hot": "评分 8.8"
     },
     {
       "rank": 6,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "诺曼底72小时",
-      "url": "https://movie.douban.com/subject/36916000/",
-      "hot": "评分 8.2"
+      "title": "后室",
+      "url": "https://movie.douban.com/subject/36235977/",
+      "hot": "评分 6.6"
     }
   ]
 }

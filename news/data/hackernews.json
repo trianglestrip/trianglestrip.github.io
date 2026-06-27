@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-27T15:38:28+00:00",
+  "updated_at": "2026-06-27T17:45:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
-      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
-      "hot": "591"
+      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+      "url": "https://github.com/bikini/exploitarium",
+      "hot": "254"
     },
     {
       "rank": 2,
       "title": "OpenRA",
       "url": "https://www.openra.net/",
-      "hot": "197"
+      "hot": "318"
     },
     {
       "rank": 3,
-      "title": "Fintech Engineering Handbook",
-      "url": "https://w.pitula.me/fintech-engineering-handbook/",
-      "hot": "261"
+      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+      "hot": "646"
     },
     {
       "rank": 4,
-      "title": "Underarm Bowling Incident of 1981",
-      "url": "https://en.wikipedia.org/wiki/Underarm_bowling_incident_of_1981",
-      "hot": "54"
+      "title": "Suspicious Discontinuities",
+      "url": "https://danluu.com/discontinuities/",
+      "hot": "114"
     },
     {
       "rank": 5,
-      "title": "Post-Mythos Cybersecurity: Keep calm and carry on",
-      "url": "https://cephalosec.com/blog/cybersecurity-in-the-post-mythos-era-keep-calm-and-carry-on/",
-      "hot": "27"
+      "title": "Fintech Engineering Handbook",
+      "url": "https://w.pitula.me/fintech-engineering-handbook/",
+      "hot": "329"
     },
     {
       "rank": 6,
-      "title": "Suspicious Discontinuities",
-      "url": "https://danluu.com/discontinuities/",
-      "hot": "39"
+      "title": "Post-Mythos Cybersecurity: Keep calm and carry on",
+      "url": "https://cephalosec.com/blog/cybersecurity-in-the-post-mythos-era-keep-calm-and-carry-on/",
+      "hot": "64"
     },
     {
       "rank": 7,
-      "title": "How H-E-B Became Texas' Most Beloved Brand (2024)",
-      "url": "https://texashighways.com/culture/how-heb-became-texas-most-beloved-brand/",
-      "hot": "41"
+      "title": "If you can't hold it, you don't own it",
+      "url": "https://dervis.de/physical/",
+      "hot": "215"
     },
     {
       "rank": 8,
       "title": "Zuckerberg's Increasingly Bizarre War on Whistleblowers",
       "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
-      "hot": "68"
+      "hot": "277"
     },
     {
       "rank": 9,
-      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-      "hot": "1064"
+      "title": "One man, two kernels, and a lot of RISC-V",
+      "url": "https://www.theregister.com/software/2026/06/26/one-man-two-kernels-and-a-lot-of-risc-v/5262858",
+      "hot": "32"
     },
     {
       "rank": 10,
-      "title": "Long Wave radio era set to end with switch-off",
-      "url": "https://www.economist.com/britain/2026/06/25/the-bbc-switches-off-its-oldest-service",
-      "hot": "107"
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "hot": "1081"
     }
   ]
 }

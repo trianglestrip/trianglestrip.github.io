@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-27T11:14:15+00:00",
+  "updated_at": "2026-06-27T17:46:14+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,21 +24,21 @@
     },
     {
       "rank": 4,
+      "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
+      "url": "https://huggingface.co/papers/2601.02163",
+      "hot": "8"
+    },
+    {
+      "rank": 5,
       "title": "A decoder-only foundation model for time-series forecasting",
       "url": "https://huggingface.co/papers/2310.10688",
       "hot": "37"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "60"
-    },
-    {
-      "rank": 6,
-      "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
-      "url": "https://huggingface.co/papers/2601.02163",
-      "hot": "8"
     },
     {
       "rank": 7,
@@ -56,7 +56,7 @@
       "rank": 9,
       "title": "Qwen-AgentWorld: Language World Models for General Agents",
       "url": "https://huggingface.co/papers/2606.24597",
-      "hot": "132"
+      "hot": "133"
     },
     {
       "rank": 10,
