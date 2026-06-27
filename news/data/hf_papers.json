@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-27T04:20:16+00:00",
+  "updated_at": "2026-06-27T11:14:15+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "Qwen-AgentWorld: Language World Models for General Agents",
-      "url": "https://huggingface.co/papers/2606.24597",
-      "hot": "128"
-    },
-    {
-      "rank": 9,
       "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
       "url": "https://huggingface.co/papers/2606.03264",
       "hot": "23"
+    },
+    {
+      "rank": 9,
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://huggingface.co/papers/2606.24597",
+      "hot": "132"
     },
     {
       "rank": 10,
