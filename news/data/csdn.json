@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-06-27T17:45:49+00:00",
+  "updated_at": "2026-06-27T20:01:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "鸿蒙 App 如何设计 Memory Center？一文讲透 Agent 的长期记忆架构",
       "url": "https://blog.csdn.net/qq_36478920/article/details/162306679",
-      "hot": "13239"
+      "hot": "13760"
     },
     {
       "rank": 2,
-      "title": "【LangChain-AI】：宏观认知",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/162333983",
-      "hot": "13156"
+      "title": "《如何通过Ansible解决：多节点人工采集Node Exporter采集Linux主机的CPU、内存、磁盘和网络指标自动化》",
+      "url": "https://blog.csdn.net/Dovis5884/article/details/162334133",
+      "hot": "13008"
     },
     {
       "rank": 3,
-      "title": "《如何通过Ansible解决：多节点人工采集Node Exporter采集Linux主机的CPU、内存、磁盘和网络指标自动化》",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/162334133",
-      "hot": "13027"
+      "title": "【LangChain-AI】：宏观认知",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/162333983",
+      "hot": "12792"
     },
     {
       "rank": 4,
       "title": "WorkBuddy 上手实战：打造一个可用的本地 AI 工作台",
       "url": "https://blog.csdn.net/2302_78391795/article/details/162316523",
-      "hot": "13005"
+      "hot": "12643"
     },
     {
       "rank": 5,
-      "title": "【Agent 学习日记】RAG 是怎么存文档的？我们来说说它的文档切割策略",
-      "url": "https://blog.csdn.net/2402_87298751/article/details/162314436",
-      "hot": "9434"
+      "title": "OpenClaw Docker 部署：从开发到生产的容器化实战",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/162362583",
+      "hot": "9499"
     },
     {
       "rank": 6,
-      "title": "OpenClaw Docker 部署：从开发到生产的容器化实战",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/162362583",
-      "hot": "9205"
+      "title": "【AI智能体】飞书 AI 智能客服机器人搭建与使用实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/161460618",
+      "hot": "8350"
     },
     {
       "rank": 7,
-      "title": "【AI智能体】飞书 AI 智能客服机器人搭建与使用实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/161460618",
-      "hot": "8134"
+      "title": "【MySQL 筑基篇】从零掌握 CRUD 核心操作：详解增删改查、聚合过滤与实战避坑指南",
+      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/162259007",
+      "hot": "8269"
     },
     {
       "rank": 8,
       "title": "社交媒体舆情监控实战：基于 Bright Data AI Studio 的比亚迪品牌口碑追踪方案",
       "url": "https://blog.csdn.net/m0_64336780/article/details/162265313",
-      "hot": "8031"
+      "hot": "8160"
     },
     {
       "rank": 9,
       "title": "【同济线性代数第五版】第三章 矩阵的初版变换与线性方程组",
       "url": "https://blog.csdn.net/he_zhidan/article/details/161949346",
-      "hot": "7909"
+      "hot": "7971"
     },
     {
       "rank": 10,
-      "title": "视觉Transformer实战 | Pyramid Vision Transformer（PVT）详解与实现",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/161871208",
-      "hot": "7891"
+      "title": "别把 Agent 写成全能选手——聊聊 Subagent 设计的正确姿势",
+      "url": "https://blog.csdn.net/2401_87961121/article/details/162315032",
+      "hot": "7782"
     }
   ]
 }

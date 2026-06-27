@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-27T17:45:59+00:00",
+  "updated_at": "2026-06-27T20:01:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
-      "url": "https://github.com/bikini/exploitarium",
-      "hot": "254"
-    },
-    {
-      "rank": 2,
-      "title": "OpenRA",
-      "url": "https://www.openra.net/",
-      "hot": "318"
-    },
-    {
-      "rank": 3,
-      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
-      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
-      "hot": "646"
-    },
-    {
-      "rank": 4,
-      "title": "Suspicious Discontinuities",
-      "url": "https://danluu.com/discontinuities/",
-      "hot": "114"
-    },
-    {
-      "rank": 5,
-      "title": "Fintech Engineering Handbook",
-      "url": "https://w.pitula.me/fintech-engineering-handbook/",
-      "hot": "329"
-    },
-    {
-      "rank": 6,
-      "title": "Post-Mythos Cybersecurity: Keep calm and carry on",
-      "url": "https://cephalosec.com/blog/cybersecurity-in-the-post-mythos-era-keep-calm-and-carry-on/",
-      "hot": "64"
-    },
-    {
-      "rank": 7,
-      "title": "If you can't hold it, you don't own it",
-      "url": "https://dervis.de/physical/",
-      "hot": "215"
-    },
-    {
-      "rank": 8,
-      "title": "Zuckerberg's Increasingly Bizarre War on Whistleblowers",
-      "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
-      "hot": "277"
-    },
-    {
-      "rank": 9,
-      "title": "One man, two kernels, and a lot of RISC-V",
-      "url": "https://www.theregister.com/software/2026/06/26/one-man-two-kernels-and-a-lot-of-risc-v/5262858",
+      "title": "Ships keep moving through Hormuz despite strike",
+      "url": "https://www.lloydslist.com/LL1157680/Ships-keep-moving-through-Hormuz-despite-strike-and-suspension-of-IMO-exit-strategy",
       "hot": "32"
     },
     {
+      "rank": 2,
+      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+      "url": "https://github.com/bikini/exploitarium",
+      "hot": "448"
+    },
+    {
+      "rank": 3,
+      "title": "AI Is Designing Radio Chips That Humans Couldn't Even Imagine",
+      "url": "https://spectrum.ieee.org/ai-radio-chip-design",
+      "hot": "110"
+    },
+    {
+      "rank": 4,
+      "title": "OpenRA",
+      "url": "https://www.openra.net/",
+      "hot": "436"
+    },
+    {
+      "rank": 5,
+      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+      "hot": "680"
+    },
+    {
+      "rank": 6,
+      "title": "IP Crawl: living atlas of open webcams discovered on the public internet",
+      "url": "https://ipcrawl.com/",
+      "hot": "15"
+    },
+    {
+      "rank": 7,
+      "title": "Turn your site into a place people can bump into each other",
+      "url": "https://cauenapier.com/blog/townsquare_release/",
+      "hot": "52"
+    },
+    {
+      "rank": 8,
+      "title": "Fintech Engineering Handbook",
+      "url": "https://w.pitula.me/fintech-engineering-handbook/",
+      "hot": "381"
+    },
+    {
+      "rank": 9,
+      "title": "Suspicious Discontinuities (2020)",
+      "url": "https://danluu.com/discontinuities/",
+      "hot": "151"
+    },
+    {
       "rank": 10,
-      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-      "hot": "1081"
+      "title": "Post-Mythos Cybersecurity: Keep calm and carry on",
+      "url": "https://cephalosec.com/blog/cybersecurity-in-the-post-mythos-era-keep-calm-and-carry-on/",
+      "hot": "93"
     }
   ]
 }
