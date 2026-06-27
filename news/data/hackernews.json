@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-27T12:19:42+00:00",
+  "updated_at": "2026-06-27T15:38:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "DeepSeek open-sources inference optimizations with 60–85% faster generation [pdf]",
+      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
       "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
-      "hot": "392"
+      "hot": "591"
     },
     {
       "rank": 2,
-      "title": "Fintech Engineering Handbook",
-      "url": "https://w.pitula.me/fintech-engineering-handbook/",
-      "hot": "92"
+      "title": "OpenRA",
+      "url": "https://www.openra.net/",
+      "hot": "197"
     },
     {
       "rank": 3,
-      "title": "Beer CSS – Build material design in record time",
-      "url": "https://www.beercss.com",
-      "hot": "49"
+      "title": "Fintech Engineering Handbook",
+      "url": "https://w.pitula.me/fintech-engineering-handbook/",
+      "hot": "261"
     },
     {
       "rank": 4,
-      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-      "hot": "1029"
+      "title": "Underarm Bowling Incident of 1981",
+      "url": "https://en.wikipedia.org/wiki/Underarm_bowling_incident_of_1981",
+      "hot": "54"
     },
     {
       "rank": 5,
-      "title": "Long Wave radio era set to end with switch-off",
-      "url": "https://www.economist.com/britain/2026/06/25/the-bbc-switches-off-its-oldest-service",
-      "hot": "62"
+      "title": "Post-Mythos Cybersecurity: Keep calm and carry on",
+      "url": "https://cephalosec.com/blog/cybersecurity-in-the-post-mythos-era-keep-calm-and-carry-on/",
+      "hot": "27"
     },
     {
       "rank": 6,
-      "title": "Linux on Older Hardware: The Complete Revival Guide",
-      "url": "https://www.fosslinux.com/158206/linux-on-older-hardware-revival-guide.htm",
-      "hot": "87"
+      "title": "Suspicious Discontinuities",
+      "url": "https://danluu.com/discontinuities/",
+      "hot": "39"
     },
     {
       "rank": 7,
-      "title": "WordStar: A Writer's Word Processor (1996)",
-      "url": "https://www.sfwriter.com/wordstar.htm",
-      "hot": "109"
+      "title": "How H-E-B Became Texas' Most Beloved Brand (2024)",
+      "url": "https://texashighways.com/culture/how-heb-became-texas-most-beloved-brand/",
+      "hot": "41"
     },
     {
       "rank": 8,
-      "title": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
-      "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed",
-      "hot": "267"
+      "title": "Zuckerberg's Increasingly Bizarre War on Whistleblowers",
+      "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
+      "hot": "68"
     },
     {
       "rank": 9,
-      "title": "Faster KNN search in Manticore: 2-pass HNSW, batched distances, and AVX-512",
-      "url": "https://medium.com/@s_nikolaev/faster-knn-search-in-manticore-2-pass-hnsw-batched-distances-and-avx-512-b85604647aab",
-      "hot": "22"
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "hot": "1064"
     },
     {
       "rank": 10,
-      "title": "The US Army Issued Ocarinas to Soldiers in World War II",
-      "url": "https://www.flutetunes.com/articles/my-flute-goes-to-war/",
-      "hot": "21"
+      "title": "Long Wave radio era set to end with switch-off",
+      "url": "https://www.economist.com/britain/2026/06/25/the-bbc-switches-off-its-oldest-service",
+      "hot": "107"
     }
   ]
 }

@@ -1,20 +1,20 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-06-27T12:19:37+00:00",
+  "updated_at": "2026-06-27T15:38:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "逆向分析某排八字软件的过程",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114056",
-      "hot": "[md]# 逆向排八字程序过程\n\n## 信息\n- 网：aHR0cDovL25mYmF6aS5jb20vcWl0YS9Eb3dubG9hZC5odG0=\n- 文件名：排八字.exe\n- 大小：3,249,664 字节\n\n## 初步分析\n\n看到了这个东西要安装 .NET 运行时，最近想找 .NET  ..."
+      "title": "iOS DeviceCheck：苹果设备身份链与黑灰产对抗的攻防博弈",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114213",
+      "hot": "[md]## 一、背景 &amp; 场景\n\n### 1.1 环境\n\n设备型号:iphone 14、iOS 版本:16.4.1、越狱方案:Dopamine\n\n工具链：Frida16.1.4、IDA pro 9.2\n\n### 1.2 引言\n\n对于大多数互联网风控攻防业务来说，真正棘手的往往不是 ..."
     },
     {
       "rank": 2,
-      "title": "破解 Trae CN 加密协议",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113927",
-      "hot": ""
+      "title": "逆向分析某排八字软件的过程",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114056",
+      "hot": "[md]# 逆向排八字程序过程\n\n## 信息\n- 网：aHR0cDovL25mYmF6aS5jb20vcWl0YS9Eb3dubG9hZC5odG0=\n- 文件名：排八字.exe\n- 大小：3,249,664 字节\n\n## 初步分析\n\n看到了这个东西要安装 .NET 运行时，最近想找 .NET  ..."
     },
     {
       "rank": 3,

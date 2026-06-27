@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-27T12:19:40+00:00",
+  "updated_at": "2026-06-27T15:38:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "新型 Linux pedit COW 漏洞：通过污染缓存二进制文件获取 Root 权限",
+      "url": "https://www.51cto.com/article/847654.html",
+      "hot": "该修复补丁于5月下旬登陆netdev邮件列表，被标记为常规数据损坏修复。可利用的细节在公开邮件列表上存在数周之久，既无CVE编号也无安全警告。"
+    },
+    {
+      "rank": 2,
       "title": "鸿蒙上 React Native OCR 文字识别：让手机看懂图片",
       "url": "https://ost.51cto.com/posts/50212",
       "hot": "从商品卖点播报说起做电商类应用的时候，产品提了一个需求：在商品详情页加一个&quot;语音播报&quot;按钮，把商品卖点读给用户听。特别是在用户开车、..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "# 码上鸿蒙•智绘未来#HarmonyOS 6.0 Canvas 绘图实战：从贝塞尔曲线到四个流畅动效的完整指南",
       "url": "https://ost.51cto.com/posts/50202",
       "hot": "HarmonyOS6.0Canvas绘图实战：从贝塞尔曲线到四个流畅动效的完整指南前言：为什么值得专门写一篇文章讲贝塞尔曲线？说实话我一开始对这套新..."
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "title": "GPT-5.6突然发布！Fable5痛失最强基模王座",
+      "url": "https://www.51cto.com/article/847650.html",
+      "hot": "就在刚刚，OpenAI一口气端出三款GPT 5.6系列模型。主打一个全家桶「多款齐发」——旗舰模型Sol（太阳）、平衡模型Terra（大地）、低成本高速款Luna（月亮）。"
+    },
+    {
+      "rank": 5,
+      "title": "刚刚，OpenAI最强GPT-5.6发布！「太阳系」爆发冲破神话",
+      "url": "https://www.51cto.com/article/847645.html",
+      "hot": "OpenAI首次启用太阳、大地、月亮命名，全新GPT-5.6正式登场。旗舰Sol编程屠榜，只当了17天第一的Claude Mythos 5，被一夜拉下王座。"
+    },
+    {
+      "rank": 6,
       "title": "永无止境的守护：NIST数学证明揭示AI安全的\"西西弗斯（Sisyphus）困境\"",
       "url": "https://www.51cto.com/article/847579.html",
       "hot": "NIST的这份证明，不是对AI安全事业的判决书，而是一张新的出发证。它告诉我们：放下对\"一劳永逸\"的执念，拥抱永恒的守护——这才是AI时代真正意义上的安全智慧。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "Claude Code 创始人说：90% 的人把 AI 编程工具用成了聊天框",
       "url": "https://www.51cto.com/article/847591.html",
       "hot": "Claude Code 日安装量已经达到 2900 万次。这意味着有海量开发者每天都在用这个工具，但其中绝大多数人可能还在用我凌晨两点的那种方式：问一句，答一句，确认一句，改一句。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "GPT-5.6紧急叫停！OpenAI最强模型被迫「一客一审」",
       "url": "https://www.51cto.com/article/847592.html",
       "hot": "三家最强模型，竟然一个都没用上！就在今天，GPT-5.6也被紧急叫停，进入「逐个审批」时代。"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "刚刚，翁荔博客上新：谨慎对待Scaling Law",
       "url": "https://www.51cto.com/article/847593.html",
       "hot": "就在几个小时前，翁荔新作《谨慎对待 Scaling Law》上线，瞬间引爆社交网络。"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "国产AI高考708分，这款模型靠什么成为「屏蔽生」？",
       "url": "https://www.51cto.com/article/847594.html",
       "hot": "羊城晚报教育发展研究院拉来 8 位 AI 考生全科作答，由 2 名资深教师独立盲评，总分按历史类和物理类分科方式统计。"
-    },
-    {
-      "rank": 8,
-      "title": "SIGCOMM 2026 | 从「人眼看视频」到「AI理解视频」：北大提出面向AI的实时通信框架Artic",
-      "url": "https://www.51cto.com/article/847595.html",
-      "hot": "北京大学团队提出 Artic，一套面向 AI 的实时视频通信框架，系统性重构了 AI 视频助手场景下的码率自适应、视频编码、反馈控制和评测基准。"
-    },
-    {
-      "rank": 9,
-      "title": "CVPR‘26 Octopus｜大模型\"温故而知新\"实现了！无需历史数据，Octopus 效果超越全数据训练",
-      "url": "https://www.51cto.com/article/847596.html",
-      "hot": "现在，上海交通大学与vivo团队拿出了全新解法：一种全新的持续学习框架——Octopus。"
-    },
-    {
-      "rank": 10,
-      "title": "英伟达MoE新开源：一行import，微调加速3.7倍",
-      "url": "https://www.51cto.com/article/847597.html",
-      "hot": "英伟达最新研究成果现已开源：NeMo AutoModel，专为大规模构建和微调生成式AI模型而打造。"
     }
   ]
 }
