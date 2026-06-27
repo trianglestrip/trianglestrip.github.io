@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-06-27T20:01:22+00:00",
+  "updated_at": "2026-06-27T22:15:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "鸿蒙 App 如何设计 Memory Center？一文讲透 Agent 的长期记忆架构",
       "url": "https://blog.csdn.net/qq_36478920/article/details/162306679",
-      "hot": "13760"
+      "hot": "13156"
     },
     {
       "rank": 2,
       "title": "《如何通过Ansible解决：多节点人工采集Node Exporter采集Linux主机的CPU、内存、磁盘和网络指标自动化》",
       "url": "https://blog.csdn.net/Dovis5884/article/details/162334133",
-      "hot": "13008"
+      "hot": "12624"
     },
     {
       "rank": 3,
       "title": "【LangChain-AI】：宏观认知",
       "url": "https://blog.csdn.net/2401_89899187/article/details/162333983",
-      "hot": "12792"
+      "hot": "12514"
     },
     {
       "rank": 4,
       "title": "WorkBuddy 上手实战：打造一个可用的本地 AI 工作台",
       "url": "https://blog.csdn.net/2302_78391795/article/details/162316523",
-      "hot": "12643"
+      "hot": "12413"
     },
     {
       "rank": 5,
       "title": "OpenClaw Docker 部署：从开发到生产的容器化实战",
       "url": "https://blog.csdn.net/sinat_41617212/article/details/162362583",
-      "hot": "9499"
+      "hot": "9436"
     },
     {
       "rank": 6,
-      "title": "【AI智能体】飞书 AI 智能客服机器人搭建与使用实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/161460618",
-      "hot": "8350"
+      "title": "Ansible批量部署Nginx：从主机清单到Playbook自动化执行",
+      "url": "https://blog.csdn.net/weixin_62765017/article/details/162298328",
+      "hot": "9207"
     },
     {
       "rank": 7,
-      "title": "【MySQL 筑基篇】从零掌握 CRUD 核心操作：详解增删改查、聚合过滤与实战避坑指南",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/162259007",
-      "hot": "8269"
+      "title": "【AI智能体】飞书 AI 智能客服机器人搭建与使用实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/161460618",
+      "hot": "8792"
     },
     {
       "rank": 8,
-      "title": "社交媒体舆情监控实战：基于 Bright Data AI Studio 的比亚迪品牌口碑追踪方案",
-      "url": "https://blog.csdn.net/m0_64336780/article/details/162265313",
-      "hot": "8160"
+      "title": "【MySQL 筑基篇】从零掌握 CRUD 核心操作：详解增删改查、聚合过滤与实战避坑指南",
+      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/162259007",
+      "hot": "8431"
     },
     {
       "rank": 9,
-      "title": "【同济线性代数第五版】第三章 矩阵的初版变换与线性方程组",
-      "url": "https://blog.csdn.net/he_zhidan/article/details/161949346",
-      "hot": "7971"
+      "title": "社交媒体舆情监控实战：基于 Bright Data AI Studio 的比亚迪品牌口碑追踪方案",
+      "url": "https://blog.csdn.net/m0_64336780/article/details/162265313",
+      "hot": "8143"
     },
     {
       "rank": 10,
-      "title": "别把 Agent 写成全能选手——聊聊 Subagent 设计的正确姿势",
-      "url": "https://blog.csdn.net/2401_87961121/article/details/162315032",
-      "hot": "7782"
+      "title": "【同济线性代数第五版】第三章 矩阵的初版变换与线性方程组",
+      "url": "https://blog.csdn.net/he_zhidan/article/details/161949346",
+      "hot": "7910"
     }
   ]
 }
