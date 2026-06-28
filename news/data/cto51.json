@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-28T21:16:12+00:00",
+  "updated_at": "2026-06-28T23:20:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "图解 C++ 智能指针，看图秒懂",
+      "url": "https://www.51cto.com/article/847668.html",
+      "hot": "智能指针是一个类，包装了裸指针，重载了->和\\*操作符，让你用得跟指针一样，但析构的时候自动释放资源。"
+    },
+    {
+      "rank": 2,
+      "title": "final/static/private 方法，为什么无法被 AOP 代理？",
+      "url": "https://www.51cto.com/article/847657.html",
+      "hot": "很多开发工作多年，只会死记「三类方法不支持AOP」，却不懂底层的 代理机制、字节码限制、Java语法本质。"
+    },
+    {
+      "rank": 3,
+      "title": "聊一聊我是怎么审查 Claude Code 写的代码：记一次复刻 Redis Set 审查随笔",
+      "url": "https://www.51cto.com/article/847656.html",
+      "hot": "本文前面用大量篇幅铺垫了AI时代下代码掌控的核心能力。然后，以本次的redis set复刻为例，做一次详细的审查。"
+    },
+    {
+      "rank": 4,
+      "title": "现在都转 PostgreSQL 了？MySQL 和 PG 怎么选，分库分表、分页、索引全面对比",
+      "url": "https://www.51cto.com/article/847655.html",
+      "hot": "有人说PG功能强、并发稳；也有人坚持MySQL简单好运维、互联网生态成熟。 不用人云亦云，咱们拿开发经常都要打交道的三件事：索引、分页、分库分表，做个对比参考。"
+    },
+    {
+      "rank": 5,
+      "title": "AI Agent协作运维在新浪微博的落地与演进",
+      "url": "https://www.51cto.com/article/847535.html",
+      "hot": "随着公司推进代码辅助编程，运维团队与研发一同探索如何提升效率。从最初的运维脚本自动化编写，到后来的自动化工具构建、运维系统开发，现在都能用 AI辅助开发来提效。运维系统的部分核心模块的代码覆盖率已经接近 100%。"
+    },
+    {
+      "rank": 6,
+      "title": "Google 上周推了个 agents-cli，我装完发现 Claude Code 多了七个超能力",
+      "url": "https://www.51cto.com/article/847649.html",
+      "hot": "如果你是 Claude Code 的日常用户，又对 AI Agent 开发感兴趣——装。​​adk-code​​ + ​​scaffold​​ + ​​eval​​ 这三个 Skill 组合起来，能把你的 Claude Code 从「写代码的助手」变成「帮你搭 Agent 系统的搭档」。"
+    },
+    {
+      "rank": 7,
       "title": "AGENTS.md 开始反噬 Coding Agent，程序员别把团队规矩写成坑",
       "url": "https://www.51cto.com/article/847322.html",
       "hot": "大家的出发点很朴素：别让 Agent 每次都从零认识项目。把构建命令、代码风格、目录约定、禁区、测试方式都写进去，它就能少问几句，少犯几次低级错。"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "不改参数，Agent自己改操作规则，未见任务通过率能提升吗",
       "url": "https://www.51cto.com/article/847062.html",
       "hot": "LLM agent 的表现并非仅由基座模型决定，还取决于包裹在模型外面的那层“harness”——系统提示词、工具定义、运行时策略、失败恢复机制等一系列非参数化的执行协议。同一个基座模型在不同 harness 下表现可以大相径庭。"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "别再把领域规则塞进字符串：用 .NET 值对象守住模型边界",
       "url": "https://www.51cto.com/article/847363.html",
       "hot": "这篇文章的核心不是“把所有 string 都换掉”，而是提醒我们：领域规则应该尽量靠近领域概念。\n当邮箱、币种、金额、数量都只是基础类型时，系统只能依赖每个开发者都记得手动校验。当这些概念变成值对象时，模型本身开始承担防守职责。"
     },
     {
-      "rank": 4,
-      "title": "架构排熵：Loop Engineering 的持续清理系统",
-      "url": "https://www.51cto.com/article/847292.html",
-      "hot": "放到 AI Agent 时代，这个问题会更明显。Agent 能更快写代码，也能更快把临时处理、旧误解和模糊边界沉积到系统里。Loop Engineering 如果只被理解成“让 Agent 一直跑”，它未必在治理复杂度，反而可能把复杂度自动化。"
-    },
-    {
-      "rank": 5,
-      "title": "拆解Loop Engineering六大模块：为什么\"没有反驳机制的循环＝AI在自我重复\"",
-      "url": "https://www.51cto.com/article/847142.html",
-      "hot": "Anthropic负责Claude Code的Boris Cherny也在公开场合说了一句让很多人重新审视自己工作方式的话：\"我已经不写prompt了。我跑的是循环。我的工作是写routine，这些routine负责去prompt agent。\""
-    },
-    {
-      "rank": 6,
-      "title": "模型不重要了？— Harness工程如何让10%的Benchmark差距变成0%的用户体验差距",
-      "url": "https://www.51cto.com/article/847036.html",
-      "hot": "斯坦福/MIT的研究表明，同一个模型换不同Harness可以产生6倍的性能差距；MarkTechPost的数据显示，三个不同Agent框架跑同一个Opus 4.5模型，效果差了2.3倍。这些数字揭示了一个深刻的产业真相：模型之间的竞赛正在被Harness工程抹平，真正的护城河已经转移。"
-    },
-    {
-      "rank": 7,
-      "title": "OpenCode 内置 12+ 开发工具保姆级使用指南，全网最全权限配置与自定义方案建议收藏",
-      "url": "https://www.51cto.com/article/847193.html",
-      "hot": "在实际使用中，个人开发项目可默认开启全部工具提升效率；企业 / 生产项目建议收紧 bash、edit 等高危工具权限，合理规划自定义工具命名避免冲突，搭配自动化格式化规范代码风格，兼顾效率与项目安全。​"
-    },
-    {
-      "rank": 8,
-      "title": "怎么用Deepagent实现一个Harness智能体？",
-      "url": "https://www.51cto.com/article/847293.html",
-      "hot": "Harness Agent的核心只有两个字——控制，由于模型本身的不可控性，所以就间接导致智能体存在一个问题——在真实的应用场景中，智能体会变得不可信。"
-    },
-    {
-      "rank": 9,
-      "title": "鸿蒙 ASCF 指南针 API，四行代码搞定方向感知",
-      "url": "https://ost.51cto.com/posts/50238",
-      "hot": "前阵子接了个户外导航类的元服务需求，里面有个小功能是实时显示用户当前面对的方向。本来以为要折腾设备方向传感器那一套，结果翻了下ASCF..."
-    },
-    {
       "rank": 10,
-      "title": "鸿蒙 ASCF 加速计 API 实战：三轴数据监听和实时可视化",
-      "url": "https://ost.51cto.com/posts/50235",
-      "hot": "最近在做一个元服务，需要检测手机的物理运动状态。比如用户摇一摇手机触发某个操作，或者把手机平放在桌面上时自动进入某种模式。这些场景..."
+      "title": "2026 最新开源大模型排行榜：这些 LLM 值得关注",
+      "url": "https://www.51cto.com/article/847652.html",
+      "hot": "所谓“最好”，取决于你的具体用途和硬件条件。当前值得重点关注的模型包括：适合代码和系统工程的 GLM-5，适合数学和推理的 DeepSeek-V3.2 Speciale，以及适合自主 Agent 工作流的 Kimi K2.5 或 MiMo-V2-Flash。"
     }
   ]
 }
