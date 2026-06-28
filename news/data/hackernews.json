@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-28T00:17:16+00:00",
+  "updated_at": "2026-06-28T04:55:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "IP Crawl: Living atlas of open webcams discovered on the public internet",
-      "url": "https://ipcrawl.com/",
-      "hot": "208"
+      "title": "Marfa Public Radio Puts You to Sleep",
+      "url": "https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep",
+      "hot": "88"
     },
     {
       "rank": 2,
-      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
-      "url": "https://github.com/bikini/exploitarium",
-      "hot": "627"
+      "title": "Show HN: Decomp Academy – Learn to decompile GameCube games into matching C",
+      "url": "https://decomp-academy.dev",
+      "hot": "67"
     },
     {
       "rank": 3,
-      "title": "OpenRA",
-      "url": "https://www.openra.net/",
-      "hot": "554"
-    },
-    {
-      "rank": 4,
-      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
-      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
-      "hot": "716"
-    },
-    {
-      "rank": 5,
-      "title": "Choosing a Public DNS Resolver",
-      "url": "https://evilbit.de/dns-resolver-guide.html",
-      "hot": "17"
-    },
-    {
-      "rank": 6,
-      "title": "Enhancing X11 Application Security with LXC",
-      "url": "https://dobrowolski.dev/article/enhancing-x11-application-security-with-lxc/",
-      "hot": "22"
-    },
-    {
-      "rank": 7,
-      "title": "AI learns the “dark art” of RFIC design",
-      "url": "https://spectrum.ieee.org/ai-radio-chip-design",
-      "hot": "173"
-    },
-    {
-      "rank": 8,
-      "title": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
-      "url": "https://github.com/kageroumado/adrafinil",
+      "title": "AMD Strix Halo RDMA Cluster Setup Guide",
+      "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
       "hot": "75"
     },
     {
+      "rank": 4,
+      "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+      "url": "https://github.com/itsthelore/wayfinder-router",
+      "hot": "4"
+    },
+    {
+      "rank": 5,
+      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+      "url": "https://github.com/bikini/exploitarium",
+      "hot": "723"
+    },
+    {
+      "rank": 6,
+      "title": "OpenRA",
+      "url": "https://www.openra.net/",
+      "hot": "622"
+    },
+    {
+      "rank": 7,
+      "title": "Choosing a Public DNS Resolver",
+      "url": "https://evilbit.de/dns-resolver-guide.html",
+      "hot": "100"
+    },
+    {
+      "rank": 8,
+      "title": "Ford hired AI and sacked humans. It backfired badly",
+      "url": "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html",
+      "hot": "61"
+    },
+    {
       "rank": 9,
-      "title": "Fintech Engineering Handbook",
-      "url": "https://w.pitula.me/fintech-engineering-handbook/",
-      "hot": "451"
+      "title": "Ancient Tablets Show Markets Worked 4k Years Before Economists Explained Them",
+      "url": "https://thedailyeconomy.org/article/ancient-clay-tablets-show-markets-worked-4000-years-before-economists-explained-them/",
+      "hot": "14"
     },
     {
       "rank": 10,
-      "title": "Turn your site into a place people can bump into each other",
-      "url": "https://cauenapier.com/blog/townsquare_release/",
-      "hot": "139"
+      "title": "Space Shuttle Endeavour's 20-story vertical display",
+      "url": "https://californiasciencecenter.org/about-us/samuel-oschin-air-and-space-center/go-for-stack",
+      "hot": "35"
     }
   ]
 }
