@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-28T14:11:11+00:00",
+  "updated_at": "2026-06-28T16:47:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "A way to exclude sensitive files issue still open for OpenAI Codex",
-      "url": "https://github.com/openai/codex/issues/2847",
-      "hot": "53"
+      "title": "EU Open Sources Ten-Year Network Development Planning Tools",
+      "url": "https://github.com/open-energy-transition/open-tyndp",
+      "hot": "134"
     },
     {
       "rank": 2,
-      "title": "The curious case of the disappearing Polish S",
-      "url": "https://aresluna.org/the-curious-case-of-the-disappearing-polish-s/",
-      "hot": "14"
+      "title": "5k Restaurant Menus, Years 1880-1920",
+      "url": "https://pudding.cool/2026/06/menu-collection/",
+      "hot": "110"
     },
     {
       "rank": 3,
-      "title": "Marfa Public Radio Puts You to Sleep",
-      "url": "https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep",
-      "hot": "310"
-    },
-    {
-      "rank": 4,
-      "title": "The MUMPS 76 Primer – anniversary edition",
-      "url": "https://github.com/rochus-keller/MUMPS/blob/main/docs/MUMPS_Primer.adoc",
+      "title": "Daisugi the Japanese Technique of Trees Out of Trees, Making Exact Straight Wood",
+      "url": "https://www.openculture.com/2020/10/daisugi.html",
       "hot": "14"
     },
     {
+      "rank": 4,
+      "title": "Examining circuit boards from the Space Shuttle's I/O Processor",
+      "url": "https://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
+      "hot": "16"
+    },
+    {
       "rank": 5,
-      "title": "DLL that was not present in memory despite not being formally unloaded",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260625-00/?p=112467",
-      "hot": "50"
+      "title": "The curious case of the disappearing Polish S (2015)",
+      "url": "https://aresluna.org/the-curious-case-of-the-disappearing-polish-s/",
+      "hot": "113"
     },
     {
       "rank": 6,
-      "title": "The origins of the school system aimed to produce independent, critical thinkers",
-      "url": "https://www.cbc.ca/radio/ideas/humboldt-education-system-bildung-1.7172093",
-      "hot": "23"
+      "title": "EU to legislate about Chat Control behind closed doors",
+      "url": "https://www.patrick-breyer.de/en/double-threat-to-private-communications-undemocratic-chat-control-backroom-deals-and-imminent-concessions-spark-relaunch-of-fightchatcontrol-eu/",
+      "hot": "245"
     },
     {
       "rank": 7,
-      "title": "Google limits Meta's use of its Gemini AI models",
-      "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
-      "hot": "13"
+      "title": "A way to exclude sensitive files issue still open for OpenAI Codex",
+      "url": "https://github.com/openai/codex/issues/2847",
+      "hot": "118"
     },
     {
       "rank": 8,
-      "title": "Bashblog – a single bash script to create blogs",
-      "url": "https://github.com/cfenollosa/bashblog",
-      "hot": "76"
+      "title": "Flock cameras track more than your license plate, and they're spreading fast",
+      "url": "https://www.engadget.com/2203000/flock-cameras-recording-license-plate/",
+      "hot": "194"
     },
     {
       "rank": 9,
-      "title": "AMD Strix Halo RDMA Cluster Setup Guide",
-      "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
-      "hot": "185"
+      "title": "Michigan bill would bar employers from requiring after-hours coms with workers",
+      "url": "https://www.cbsnews.com/detroit/news/workplace-boundaries-act-employees-after-hours/",
+      "hot": "84"
     },
     {
       "rank": 10,
-      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
-      "url": "https://github.com/bikini/exploitarium",
-      "hot": "877"
+      "title": "I used Claude Code to get a second opinion on my MRI",
+      "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+      "hot": "7"
     }
   ]
 }
