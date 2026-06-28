@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-06-28T18:55:47+00:00",
+  "updated_at": "2026-06-28T20:06:39+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,8 +12,8 @@
     },
     {
       "rank": 2,
-      "title": "四川",
-      "url": "https://s.weibo.com/weibo?q=%E5%9B%9B%E5%B7%9D",
+      "title": "南非vs加拿大",
+      "url": "https://s.weibo.com/weibo?q=%E5%8D%97%E9%9D%9Evs%E5%8A%A0%E6%8B%BF%E5%A4%A7",
       "hot": ""
     },
     {
@@ -24,20 +24,20 @@
     },
     {
       "rank": 4,
-      "title": "东风奕派M8开启预售",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%9C%E9%A3%8E%E5%A5%95%E6%B4%BEM8%E5%BC%80%E5%90%AF%E9%A2%84%E5%94%AE",
-      "hot": ""
-    },
-    {
-      "rank": 5,
       "title": "实习期把公司领导开除了",
       "url": "https://s.weibo.com/weibo?q=%E5%AE%9E%E4%B9%A0%E6%9C%9F%E6%8A%8A%E5%85%AC%E5%8F%B8%E9%A2%86%E5%AF%BC%E5%BC%80%E9%99%A4%E4%BA%86",
       "hot": ""
     },
     {
+      "rank": 5,
+      "title": "宜宾",
+      "url": "https://s.weibo.com/weibo?q=%E5%AE%9C%E5%AE%BE",
+      "hot": ""
+    },
+    {
       "rank": 6,
-      "title": "重庆震感",
-      "url": "https://s.weibo.com/weibo?q=%E9%87%8D%E5%BA%86%E9%9C%87%E6%84%9F",
+      "title": "加纳巫师预测佛得角淘汰阿根廷",
+      "url": "https://s.weibo.com/weibo?q=%E5%8A%A0%E7%BA%B3%E5%B7%AB%E5%B8%88%E9%A2%84%E6%B5%8B%E4%BD%9B%E5%BE%97%E8%A7%92%E6%B7%98%E6%B1%B0%E9%98%BF%E6%A0%B9%E5%BB%B7",
       "hot": ""
     },
     {
@@ -48,20 +48,20 @@
     },
     {
       "rank": 8,
-      "title": "成都震感",
-      "url": "https://s.weibo.com/weibo?q=%E6%88%90%E9%83%BD%E9%9C%87%E6%84%9F",
+      "title": "原来衣着打扮会影响对自己的感知",
+      "url": "https://s.weibo.com/weibo?q=%E5%8E%9F%E6%9D%A5%E8%A1%A3%E7%9D%80%E6%89%93%E6%89%AE%E4%BC%9A%E5%BD%B1%E5%93%8D%E5%AF%B9%E8%87%AA%E5%B7%B1%E7%9A%84%E6%84%9F%E7%9F%A5",
       "hot": ""
     },
     {
       "rank": 9,
-      "title": "宜宾",
-      "url": "https://s.weibo.com/weibo?q=%E5%AE%9C%E5%AE%BE",
+      "title": "四川",
+      "url": "https://s.weibo.com/weibo?q=%E5%9B%9B%E5%B7%9D",
       "hot": ""
     },
     {
       "rank": 10,
-      "title": "加纳巫师预测佛得角淘汰阿根廷",
-      "url": "https://s.weibo.com/weibo?q=%E5%8A%A0%E7%BA%B3%E5%B7%AB%E5%B8%88%E9%A2%84%E6%B5%8B%E4%BD%9B%E5%BE%97%E8%A7%92%E6%B7%98%E6%B1%B0%E9%98%BF%E6%A0%B9%E5%BB%B7",
+      "title": "白玉兰下沉市场",
+      "url": "https://s.weibo.com/weibo?q=%E7%99%BD%E7%8E%89%E5%85%B0%E4%B8%8B%E6%B2%89%E5%B8%82%E5%9C%BA",
       "hot": ""
     }
   ]
