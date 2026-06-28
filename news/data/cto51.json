@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-28T16:47:46+00:00",
+  "updated_at": "2026-06-28T18:56:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AGENTS.md 开始反噬 Coding Agent，程序员别把团队规矩写成坑",
+      "url": "https://www.51cto.com/article/847322.html",
+      "hot": "大家的出发点很朴素：别让 Agent 每次都从零认识项目。把构建命令、代码风格、目录约定、禁区、测试方式都写进去，它就能少问几句，少犯几次低级错。"
+    },
+    {
+      "rank": 2,
+      "title": "不改参数，Agent自己改操作规则，未见任务通过率能提升吗",
+      "url": "https://www.51cto.com/article/847062.html",
+      "hot": "LLM agent 的表现并非仅由基座模型决定，还取决于包裹在模型外面的那层“harness”——系统提示词、工具定义、运行时策略、失败恢复机制等一系列非参数化的执行协议。同一个基座模型在不同 harness 下表现可以大相径庭。"
+    },
+    {
+      "rank": 3,
+      "title": "别再把领域规则塞进字符串：用 .NET 值对象守住模型边界",
+      "url": "https://www.51cto.com/article/847363.html",
+      "hot": "这篇文章的核心不是“把所有 string 都换掉”，而是提醒我们：领域规则应该尽量靠近领域概念。\n当邮箱、币种、金额、数量都只是基础类型时，系统只能依赖每个开发者都记得手动校验。当这些概念变成值对象时，模型本身开始承担防守职责。"
+    },
+    {
+      "rank": 4,
+      "title": "架构排熵：Loop Engineering 的持续清理系统",
+      "url": "https://www.51cto.com/article/847292.html",
+      "hot": "放到 AI Agent 时代，这个问题会更明显。Agent 能更快写代码，也能更快把临时处理、旧误解和模糊边界沉积到系统里。Loop Engineering 如果只被理解成“让 Agent 一直跑”，它未必在治理复杂度，反而可能把复杂度自动化。"
+    },
+    {
+      "rank": 5,
+      "title": "拆解Loop Engineering六大模块：为什么\"没有反驳机制的循环＝AI在自我重复\"",
+      "url": "https://www.51cto.com/article/847142.html",
+      "hot": "Anthropic负责Claude Code的Boris Cherny也在公开场合说了一句让很多人重新审视自己工作方式的话：\"我已经不写prompt了。我跑的是循环。我的工作是写routine，这些routine负责去prompt agent。\""
+    },
+    {
+      "rank": 6,
+      "title": "模型不重要了？— Harness工程如何让10%的Benchmark差距变成0%的用户体验差距",
+      "url": "https://www.51cto.com/article/847036.html",
+      "hot": "斯坦福/MIT的研究表明，同一个模型换不同Harness可以产生6倍的性能差距；MarkTechPost的数据显示，三个不同Agent框架跑同一个Opus 4.5模型，效果差了2.3倍。这些数字揭示了一个深刻的产业真相：模型之间的竞赛正在被Harness工程抹平，真正的护城河已经转移。"
+    },
+    {
+      "rank": 7,
+      "title": "OpenCode 内置 12+ 开发工具保姆级使用指南，全网最全权限配置与自定义方案建议收藏",
+      "url": "https://www.51cto.com/article/847193.html",
+      "hot": "在实际使用中，个人开发项目可默认开启全部工具提升效率；企业 / 生产项目建议收紧 bash、edit 等高危工具权限，合理规划自定义工具命名避免冲突，搭配自动化格式化规范代码风格，兼顾效率与项目安全。​"
+    },
+    {
+      "rank": 8,
+      "title": "怎么用Deepagent实现一个Harness智能体？",
+      "url": "https://www.51cto.com/article/847293.html",
+      "hot": "Harness Agent的核心只有两个字——控制，由于模型本身的不可控性，所以就间接导致智能体存在一个问题——在真实的应用场景中，智能体会变得不可信。"
+    },
+    {
+      "rank": 9,
       "title": "鸿蒙 ASCF 指南针 API，四行代码搞定方向感知",
       "url": "https://ost.51cto.com/posts/50238",
       "hot": "前阵子接了个户外导航类的元服务需求，里面有个小功能是实时显示用户当前面对的方向。本来以为要折腾设备方向传感器那一套，结果翻了下ASCF..."
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "鸿蒙 ASCF 加速计 API 实战：三轴数据监听和实时可视化",
       "url": "https://ost.51cto.com/posts/50235",
       "hot": "最近在做一个元服务，需要检测手机的物理运动状态。比如用户摇一摇手机触发某个操作，或者把手机平放在桌面上时自动进入某种模式。这些场景..."
-    },
-    {
-      "rank": 3,
-      "title": "新型 Linux pedit COW 漏洞：通过污染缓存二进制文件获取 Root 权限",
-      "url": "https://www.51cto.com/article/847654.html",
-      "hot": "该修复补丁于5月下旬登陆netdev邮件列表，被标记为常规数据损坏修复。可利用的细节在公开邮件列表上存在数周之久，既无CVE编号也无安全警告。"
-    },
-    {
-      "rank": 4,
-      "title": "GPT-5.6突然发布！Fable5痛失最强基模王座",
-      "url": "https://www.51cto.com/article/847650.html",
-      "hot": "就在刚刚，OpenAI一口气端出三款GPT 5.6系列模型。主打一个全家桶「多款齐发」——旗舰模型Sol（太阳）、平衡模型Terra（大地）、低成本高速款Luna（月亮）。"
-    },
-    {
-      "rank": 5,
-      "title": "刚刚，OpenAI最强GPT-5.6发布！「太阳系」爆发冲破神话",
-      "url": "https://www.51cto.com/article/847645.html",
-      "hot": "OpenAI首次启用太阳、大地、月亮命名，全新GPT-5.6正式登场。旗舰Sol编程屠榜，只当了17天第一的Claude Mythos 5，被一夜拉下王座。"
-    },
-    {
-      "rank": 6,
-      "title": "永无止境的守护：NIST数学证明揭示AI安全的\"西西弗斯（Sisyphus）困境\"",
-      "url": "https://www.51cto.com/article/847579.html",
-      "hot": "NIST的这份证明，不是对AI安全事业的判决书，而是一张新的出发证。它告诉我们：放下对\"一劳永逸\"的执念，拥抱永恒的守护——这才是AI时代真正意义上的安全智慧。"
-    },
-    {
-      "rank": 7,
-      "title": "Claude Code 创始人说：90% 的人把 AI 编程工具用成了聊天框",
-      "url": "https://www.51cto.com/article/847591.html",
-      "hot": "Claude Code 日安装量已经达到 2900 万次。这意味着有海量开发者每天都在用这个工具，但其中绝大多数人可能还在用我凌晨两点的那种方式：问一句，答一句，确认一句，改一句。"
-    },
-    {
-      "rank": 8,
-      "title": "GPT-5.6紧急叫停！OpenAI最强模型被迫「一客一审」",
-      "url": "https://www.51cto.com/article/847592.html",
-      "hot": "三家最强模型，竟然一个都没用上！就在今天，GPT-5.6也被紧急叫停，进入「逐个审批」时代。"
-    },
-    {
-      "rank": 9,
-      "title": "刚刚，翁荔博客上新：谨慎对待Scaling Law",
-      "url": "https://www.51cto.com/article/847593.html",
-      "hot": "就在几个小时前，翁荔新作《谨慎对待 Scaling Law》上线，瞬间引爆社交网络。"
-    },
-    {
-      "rank": 10,
-      "title": "国产AI高考708分，这款模型靠什么成为「屏蔽生」？",
-      "url": "https://www.51cto.com/article/847594.html",
-      "hot": "羊城晚报教育发展研究院拉来 8 位 AI 考生全科作答，由 2 名资深教师独立盲评，总分按历史类和物理类分科方式统计。"
     }
   ]
 }
