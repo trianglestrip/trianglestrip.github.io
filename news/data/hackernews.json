@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-28T10:35:54+00:00",
+  "updated_at": "2026-06-28T14:11:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Marfa Public Radio Puts You to Sleep",
-      "url": "https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep",
-      "hot": "243"
-    },
-    {
-      "rank": 2,
-      "title": "Bashblog – a single bash script to create blogs",
-      "url": "https://github.com/cfenollosa/bashblog",
+      "title": "A way to exclude sensitive files issue still open for OpenAI Codex",
+      "url": "https://github.com/openai/codex/issues/2847",
       "hot": "53"
     },
     {
+      "rank": 2,
+      "title": "The curious case of the disappearing Polish S",
+      "url": "https://aresluna.org/the-curious-case-of-the-disappearing-polish-s/",
+      "hot": "14"
+    },
+    {
       "rank": 3,
-      "title": "AMD Strix Halo RDMA Cluster Setup Guide",
-      "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
-      "hot": "143"
+      "title": "Marfa Public Radio Puts You to Sleep",
+      "url": "https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep",
+      "hot": "310"
     },
     {
       "rank": 4,
-      "title": "OpenRA",
-      "url": "https://www.openra.net/",
-      "hot": "724"
+      "title": "The MUMPS 76 Primer – anniversary edition",
+      "url": "https://github.com/rochus-keller/MUMPS/blob/main/docs/MUMPS_Primer.adoc",
+      "hot": "14"
     },
     {
       "rank": 5,
-      "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
-      "url": "https://github.com/itsthelore/wayfinder-router",
-      "hot": "70"
+      "title": "DLL that was not present in memory despite not being formally unloaded",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260625-00/?p=112467",
+      "hot": "50"
     },
     {
       "rank": 6,
-      "title": "Show HN: Decomp Academy – Learn to decompile GameCube games into matching C",
-      "url": "https://decomp-academy.dev",
-      "hot": "130"
+      "title": "The origins of the school system aimed to produce independent, critical thinkers",
+      "url": "https://www.cbc.ca/radio/ideas/humboldt-education-system-bildung-1.7172093",
+      "hot": "23"
     },
     {
       "rank": 7,
-      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
-      "url": "https://github.com/bikini/exploitarium",
-      "hot": "820"
+      "title": "Google limits Meta's use of its Gemini AI models",
+      "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+      "hot": "13"
     },
     {
       "rank": 8,
-      "title": "Choosing a Public DNS Resolver",
-      "url": "https://evilbit.de/dns-resolver-guide.html",
-      "hot": "172"
+      "title": "Bashblog – a single bash script to create blogs",
+      "url": "https://github.com/cfenollosa/bashblog",
+      "hot": "76"
     },
     {
       "rank": 9,
-      "title": "Engineering for Bounded Cognition",
-      "url": "https://shapeofthesystem.com/posts/2026/02/03/bounded-cognition",
-      "hot": "42"
+      "title": "AMD Strix Halo RDMA Cluster Setup Guide",
+      "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
+      "hot": "185"
     },
     {
       "rank": 10,
-      "title": "Reflecting to optimise",
-      "url": "https://magnusross.github.io/posts/reflecting-to-optimise/",
-      "hot": "24"
+      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+      "url": "https://github.com/bikini/exploitarium",
+      "hot": "877"
     }
   ]
 }

@@ -1,26 +1,26 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-28T10:35:53+00:00",
+  "updated_at": "2026-06-28T14:11:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "鸿蒙 ASCF 指南针 API，四行代码搞定方向感知",
+      "url": "https://ost.51cto.com/posts/50238",
+      "hot": "前阵子接了个户外导航类的元服务需求，里面有个小功能是实时显示用户当前面对的方向。本来以为要折腾设备方向传感器那一套，结果翻了下ASCF..."
+    },
+    {
+      "rank": 2,
       "title": "鸿蒙 ASCF 加速计 API 实战：三轴数据监听和实时可视化",
       "url": "https://ost.51cto.com/posts/50235",
       "hot": "最近在做一个元服务，需要检测手机的物理运动状态。比如用户摇一摇手机触发某个操作，或者把手机平放在桌面上时自动进入某种模式。这些场景..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "新型 Linux pedit COW 漏洞：通过污染缓存二进制文件获取 Root 权限",
       "url": "https://www.51cto.com/article/847654.html",
       "hot": "该修复补丁于5月下旬登陆netdev邮件列表，被标记为常规数据损坏修复。可利用的细节在公开邮件列表上存在数周之久，既无CVE编号也无安全警告。"
-    },
-    {
-      "rank": 3,
-      "title": "鸿蒙上 React Native OCR 文字识别：让手机看懂图片",
-      "url": "https://ost.51cto.com/posts/50212",
-      "hot": "从商品卖点播报说起做电商类应用的时候，产品提了一个需求：在商品详情页加一个&quot;语音播报&quot;按钮，把商品卖点读给用户听。特别是在用户开车、..."
     },
     {
       "rank": 4,

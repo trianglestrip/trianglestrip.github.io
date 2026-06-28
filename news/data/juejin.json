@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-28T10:35:46+00:00",
+  "updated_at": "2026-06-28T14:11:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "他俩只靠写代码，登上了胡润财富榜！",
       "url": "https://juejin.cn/post/7655235192538873865",
-      "hot": "918"
+      "hot": "936"
     },
     {
       "rank": 2,
-      "title": "面试官问你：“AI 能写 80% 的代码了，公司为什么还需要你？”",
-      "url": "https://juejin.cn/post/7655245911811784750",
-      "hot": "900"
+      "title": "WorkBuddy 上手实战：打造一个可用的本地 AI 工作台",
+      "url": "https://juejin.cn/post/7655157905101062178",
+      "hot": "783"
     },
     {
       "rank": 3,
-      "title": "WorkBuddy 上手实战：打造一个可用的本地 AI 工作台",
-      "url": "https://juejin.cn/post/7655157905101062178",
-      "hot": "765"
-    },
-    {
-      "rank": 4,
       "title": "WHERE 条件别凭习惯写，常用查询先跑一遍",
       "url": "https://juejin.cn/post/7655235192540102665",
       "hot": "549"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "Vue 3 里被严重低估的 API：InjectionKey",
       "url": "https://juejin.cn/post/7654840513968537641",
-      "hot": "486"
+      "hot": "513"
+    },
+    {
+      "rank": 5,
+      "title": "尤雨溪转发：Vue-tui 0.1 发布！Vue 终于杀进终端！",
+      "url": "https://juejin.cn/post/7655263874610085929",
+      "hot": "333"
     },
     {
       "rank": 6,
-      "title": "试了下腾讯 Marvis，回不去了...",
-      "url": "https://juejin.cn/post/7655217832594440243",
-      "hot": "342"
+      "title": "连微软都用不起 AI 了",
+      "url": "https://juejin.cn/post/7655363315291996198",
+      "hot": "288"
     },
     {
       "rank": 7,
-      "title": "尤雨溪转发：Vue-tui 0.1 发布！Vue 终于杀进终端！",
-      "url": "https://juejin.cn/post/7655263874610085929",
-      "hot": "306"
+      "title": "DBX：15MB 的\"小钢炮\"，如何塞下 50+ 种数据库",
+      "url": "https://juejin.cn/post/7654787758995144731",
+      "hot": "279"
     },
     {
       "rank": 8,
-      "title": "DBX：15MB 的\"小钢炮\"，如何塞下 50+ 种数据库",
-      "url": "https://juejin.cn/post/7654787758995144731",
-      "hot": "270"
+      "title": "Java 26正式发布！这3个新特性，让代码量直接减半",
+      "url": "https://juejin.cn/post/7655226776235065344",
+      "hot": "252"
     },
     {
       "rank": 9,
-      "title": "连微软都用不起 AI 了",
-      "url": "https://juejin.cn/post/7655363315291996198",
-      "hot": "261"
+      "title": "学不动了，入门 Compose Styles API",
+      "url": "https://juejin.cn/post/7655245911813128238",
+      "hot": "243"
     },
     {
       "rank": 10,
-      "title": "Java 26正式发布！这3个新特性，让代码量直接减半",
-      "url": "https://juejin.cn/post/7655226776235065344",
-      "hot": "243"
+      "title": "白宫前脚下了限制令，OpenAI 后脚就把 GPT-5.6 发了",
+      "url": "https://juejin.cn/post/7655594666130554921",
+      "hot": "207"
     }
   ]
 }
