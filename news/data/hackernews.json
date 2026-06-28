@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-28T18:56:54+00:00",
+  "updated_at": "2026-06-28T21:16:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "5k Restaurant Menus, Years 1880-1920",
-      "url": "https://pudding.cool/2026/06/menu-collection/",
-      "hot": "229"
+      "title": "GLM 5.2 beats Claude in our benchmarks",
+      "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+      "hot": "96"
     },
     {
       "rank": 2,
       "title": "I used Claude Code to get a second opinion on my MRI",
       "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
-      "hot": "124"
+      "hot": "231"
     },
     {
       "rank": 3,
-      "title": "The Cost Yagni Was Never About – By Kent Beck",
-      "url": "https://newsletter.kentbeck.com/p/the-cost-yagni-was-never-about",
-      "hot": "11"
+      "title": "5k menus from the New York Public Library’s Buttolph Collection (1880-1920)",
+      "url": "https://pudding.cool/2026/06/menu-story/",
+      "hot": "288"
     },
     {
       "rank": 4,
-      "title": "Working around dragons with the Lemote Yeeloong laptop and OpenBSD",
-      "url": "http://oldvcr.blogspot.com/2026/06/working-around-dragons-with-lemote.html",
-      "hot": "45"
+      "title": "Historical memory prices 1960-2026",
+      "url": "https://dam.stanford.edu/memory-prices.html",
+      "hot": "50"
     },
     {
       "rank": 5,
-      "title": "Reflections on Software Engineering in the Age of AI",
-      "url": "https://adiamond.me/2026/06/software-engineering-in-the-age-of-ai/",
-      "hot": "61"
+      "title": "Librepods: AirPods liberated",
+      "url": "https://github.com/librepods-org/librepods",
+      "hot": "152"
     },
     {
       "rank": 6,
-      "title": "Daisugi, the Japanese technique of growing trees out of other trees (2020)",
-      "url": "https://www.openculture.com/2020/10/daisugi.html",
-      "hot": "54"
+      "title": "TOP500 at ISC'26: We Have a New Number 1 – By George Cozma",
+      "url": "https://chipsandcheese.com/p/top500-at-isc26-we-have-a-new-number",
+      "hot": "30"
     },
     {
       "rank": 7,
-      "title": "The Boeing 747 Begins Its Final Descent",
+      "title": "The Boeing 747 begins its final descent",
       "url": "https://www.theatlantic.com/magazine/2026/07/boeing-747-retirement/687304/",
-      "hot": "43"
+      "hot": "91"
     },
     {
       "rank": 8,
-      "title": "Show HN: Zanagrams",
-      "url": "https://zanagrams.com/",
-      "hot": "67"
+      "title": "Working around dragons with the Lemote Yeeloong laptop and OpenBSD",
+      "url": "http://oldvcr.blogspot.com/2026/06/working-around-dragons-with-lemote.html",
+      "hot": "68"
     },
     {
       "rank": 9,
-      "title": "Examining circuit boards from the Space Shuttle's I/O Processor",
-      "url": "https://www.righto.com/2026/06/space-shuttle-io-processor-boards.html",
-      "hot": "49"
+      "title": "Ford rehires 'gray beard' engineers after AI falls short",
+      "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+      "hot": "115"
     },
     {
       "rank": 10,
-      "title": "A way to exclude sensitive files issue still open for OpenAI Codex",
-      "url": "https://github.com/openai/codex/issues/2847",
-      "hot": "144"
+      "title": "Tokenmaxxing is dead, long live tokenmaxxing",
+      "url": "https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing",
+      "hot": "76"
     }
   ]
 }
