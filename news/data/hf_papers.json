@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-27T17:46:14+00:00",
+  "updated_at": "2026-06-28T00:17:30+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,7 +14,7 @@
       "rank": 2,
       "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
       "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "173"
+      "hot": "174"
     },
     {
       "rank": 3,
@@ -56,13 +56,13 @@
       "rank": 9,
       "title": "Qwen-AgentWorld: Language World Models for General Agents",
       "url": "https://huggingface.co/papers/2606.24597",
-      "hot": "133"
+      "hot": "135"
     },
     {
       "rank": 10,
       "title": "GLM-5: from Vibe Coding to Agentic Engineering",
       "url": "https://huggingface.co/papers/2602.15763",
-      "hot": "187"
+      "hot": "188"
     }
   ]
 }

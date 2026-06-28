@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-27T22:15:20+00:00",
+  "updated_at": "2026-06-28T00:17:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "IP Crawl: Living atlas of open webcams discovered on the public internet",
       "url": "https://ipcrawl.com/",
-      "hot": "137"
+      "hot": "208"
     },
     {
       "rank": 2,
       "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
       "url": "https://github.com/bikini/exploitarium",
-      "hot": "558"
+      "hot": "627"
     },
     {
       "rank": 3,
       "title": "OpenRA",
       "url": "https://www.openra.net/",
-      "hot": "504"
+      "hot": "554"
     },
     {
       "rank": 4,
-      "title": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
-      "url": "https://github.com/kageroumado/adrafinil",
-      "hot": "37"
+      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+      "hot": "716"
     },
     {
       "rank": 5,
-      "title": "AI learns the “dark art” of RFIC design",
-      "url": "https://spectrum.ieee.org/ai-radio-chip-design",
-      "hot": "159"
+      "title": "Choosing a Public DNS Resolver",
+      "url": "https://evilbit.de/dns-resolver-guide.html",
+      "hot": "17"
     },
     {
       "rank": 6,
-      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
-      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
-      "hot": "703"
+      "title": "Enhancing X11 Application Security with LXC",
+      "url": "https://dobrowolski.dev/article/enhancing-x11-application-security-with-lxc/",
+      "hot": "22"
     },
     {
       "rank": 7,
-      "title": "'Careless People' author claims Meta surveilled her for 12mos to enforce silence",
-      "url": "https://fortune.com/2026/06/26/meta-wynn-williams-surveillance-gag-order-lawsuit-2026/",
-      "hot": "82"
+      "title": "AI learns the “dark art” of RFIC design",
+      "url": "https://spectrum.ieee.org/ai-radio-chip-design",
+      "hot": "173"
     },
     {
       "rank": 8,
-      "title": "Turn your site into a place people can bump into each other",
-      "url": "https://cauenapier.com/blog/townsquare_release/",
-      "hot": "110"
+      "title": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
+      "url": "https://github.com/kageroumado/adrafinil",
+      "hot": "75"
     },
     {
       "rank": 9,
       "title": "Fintech Engineering Handbook",
       "url": "https://w.pitula.me/fintech-engineering-handbook/",
-      "hot": "424"
+      "hot": "451"
     },
     {
       "rank": 10,
-      "title": "Suspicious Discontinuities (2020)",
-      "url": "https://danluu.com/discontinuities/",
-      "hot": "188"
+      "title": "Turn your site into a place people can bump into each other",
+      "url": "https://cauenapier.com/blog/townsquare_release/",
+      "hot": "139"
     }
   ]
 }
