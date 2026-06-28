@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-06-28T04:55:45+00:00",
+  "updated_at": "2026-06-28T08:16:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "鸿蒙 App 如何设计 Memory Center？一文讲透 Agent 的长期记忆架构",
       "url": "https://blog.csdn.net/qq_36478920/article/details/162306679",
-      "hot": "13974"
+      "hot": "13703"
     },
     {
       "rank": 2,
       "title": "WorkBuddy 上手实战：打造一个可用的本地 AI 工作台",
       "url": "https://blog.csdn.net/2302_78391795/article/details/162316523",
-      "hot": "12746"
+      "hot": "12293"
     },
     {
       "rank": 3,
       "title": "【LangChain-AI】：宏观认知",
       "url": "https://blog.csdn.net/2401_89899187/article/details/162333983",
-      "hot": "12492"
+      "hot": "11865"
     },
     {
       "rank": 4,
       "title": "OpenClaw Docker 部署：从开发到生产的容器化实战",
       "url": "https://blog.csdn.net/sinat_41617212/article/details/162362583",
-      "hot": "10879"
+      "hot": "10000"
     },
     {
       "rank": 5,
       "title": "《如何通过Ansible解决：多节点人工采集Node Exporter采集Linux主机的CPU、内存、磁盘和网络指标自动化》",
       "url": "https://blog.csdn.net/Dovis5884/article/details/162334133",
-      "hot": "10264"
+      "hot": "9295"
     },
     {
       "rank": 6,
       "title": "解锁养老新方式：AI 当私人医生，守护长辈健康",
       "url": "https://blog.csdn.net/CC1991_/article/details/162314514",
-      "hot": "6801"
+      "hot": "7050"
     },
     {
       "rank": 7,
       "title": "【AI智能体】飞书 AI 智能客服机器人搭建与使用实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/161460618",
-      "hot": "6681"
+      "hot": "6665"
     },
     {
       "rank": 8,
-      "title": "Bright Data Data Firehose 电商价格监控实战：从 API 采集到 Firehose 实时推送全流程实战",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/162345260",
-      "hot": "6600"
+      "title": "出海 KOL 筛选：用 Bright Data 批量采集 Instagram + TikTok 网红数据",
+      "url": "https://blog.csdn.net/m0_63947499/article/details/162348205",
+      "hot": "5896"
     },
     {
       "rank": 9,
-      "title": "出海 KOL 筛选：用 Bright Data 批量采集 Instagram + TikTok 网红数据",
-      "url": "https://blog.csdn.net/m0_63947499/article/details/162348205",
-      "hot": "6519"
+      "title": "GitHub 热榜项目 - 周榜(2026-06-27)",
+      "url": "https://blog.csdn.net/u014390502/article/details/162362859",
+      "hot": "5404"
     },
     {
       "rank": 10,
-      "title": "【AI Agent工程化】工具会调用不等于能上线：参数契约、权限边界、幂等与回放测试",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/162017040",
-      "hot": "6437"
+      "title": "哪吒太重、Prometheus太复杂，这款轻量监控工具让我重新爱上了自建服务器",
+      "url": "https://blog.csdn.net/liu_chen_yang/article/details/162309894",
+      "hot": "5368"
     }
   ]
 }

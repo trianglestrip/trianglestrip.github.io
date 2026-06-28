@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-28T04:55:55+00:00",
+  "updated_at": "2026-06-28T08:16:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Marfa Public Radio Puts You to Sleep",
       "url": "https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep",
-      "hot": "88"
+      "hot": "188"
     },
     {
       "rank": 2,
-      "title": "Show HN: Decomp Academy – Learn to decompile GameCube games into matching C",
-      "url": "https://decomp-academy.dev",
-      "hot": "67"
+      "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+      "url": "https://github.com/itsthelore/wayfinder-router",
+      "hot": "51"
     },
     {
       "rank": 3,
-      "title": "AMD Strix Halo RDMA Cluster Setup Guide",
-      "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
-      "hot": "75"
+      "title": "Bashblog – a single bash script to create blogs",
+      "url": "https://github.com/cfenollosa/bashblog",
+      "hot": "27"
     },
     {
       "rank": 4,
-      "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
-      "url": "https://github.com/itsthelore/wayfinder-router",
-      "hot": "4"
+      "title": "AMD Strix Halo RDMA Cluster Setup Guide",
+      "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
+      "hot": "121"
     },
     {
       "rank": 5,
-      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
-      "url": "https://github.com/bikini/exploitarium",
-      "hot": "723"
+      "title": "Show HN: Decomp Academy – Learn to decompile GameCube games into matching C",
+      "url": "https://decomp-academy.dev",
+      "hot": "111"
     },
     {
       "rank": 6,
       "title": "OpenRA",
       "url": "https://www.openra.net/",
-      "hot": "622"
+      "hot": "685"
     },
     {
       "rank": 7,
-      "title": "Choosing a Public DNS Resolver",
-      "url": "https://evilbit.de/dns-resolver-guide.html",
-      "hot": "100"
+      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+      "url": "https://github.com/bikini/exploitarium",
+      "hot": "787"
     },
     {
       "rank": 8,
-      "title": "Ford hired AI and sacked humans. It backfired badly",
-      "url": "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html",
-      "hot": "61"
+      "title": "Choosing a Public DNS Resolver",
+      "url": "https://evilbit.de/dns-resolver-guide.html",
+      "hot": "144"
     },
     {
       "rank": 9,
-      "title": "Ancient Tablets Show Markets Worked 4k Years Before Economists Explained Them",
-      "url": "https://thedailyeconomy.org/article/ancient-clay-tablets-show-markets-worked-4000-years-before-economists-explained-them/",
-      "hot": "14"
+      "title": "Engineering for Bounded Cognition",
+      "url": "https://shapeofthesystem.com/posts/2026/02/03/bounded-cognition",
+      "hot": "24"
     },
     {
       "rank": 10,
-      "title": "Space Shuttle Endeavour's 20-story vertical display",
-      "url": "https://californiasciencecenter.org/about-us/samuel-oschin-air-and-space-center/go-for-stack",
-      "hot": "35"
+      "title": "Ford hired AI and sacked humans. It backfired badly",
+      "url": "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html",
+      "hot": "165"
     }
   ]
 }
