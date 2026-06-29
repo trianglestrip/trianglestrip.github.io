@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-06-29T22:08:57+00:00",
+  "updated_at": "2026-06-29T23:14:12+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,14 +24,14 @@
     },
     {
       "rank": 4,
-      "title": "巴西2比1日本",
-      "url": "https://s.weibo.com/weibo?q=%E5%B7%B4%E8%A5%BF2%E6%AF%941%E6%97%A5%E6%9C%AC",
+      "title": "原来还有收益更香的余额宝啊",
+      "url": "https://s.weibo.com/weibo?q=%E5%8E%9F%E6%9D%A5%E8%BF%98%E6%9C%89%E6%94%B6%E7%9B%8A%E6%9B%B4%E9%A6%99%E7%9A%84%E4%BD%99%E9%A2%9D%E5%AE%9D%E5%95%8A",
       "hot": ""
     },
     {
       "rank": 5,
-      "title": "日本淘汰",
-      "url": "https://s.weibo.com/weibo?q=%E6%97%A5%E6%9C%AC%E6%B7%98%E6%B1%B0",
+      "title": "巴西2比1日本",
+      "url": "https://s.weibo.com/weibo?q=%E5%B7%B4%E8%A5%BF2%E6%AF%941%E6%97%A5%E6%9C%AC",
       "hot": ""
     },
     {
@@ -42,26 +42,26 @@
     },
     {
       "rank": 7,
-      "title": "HORWIN号外定义真电摩",
-      "url": "https://s.weibo.com/weibo?q=HORWIN%E5%8F%B7%E5%A4%96%E5%AE%9A%E4%B9%89%E7%9C%9F%E7%94%B5%E6%91%A9",
-      "hot": ""
-    },
-    {
-      "rank": 8,
-      "title": "巴西醒醒 这是淘汰赛",
-      "url": "https://s.weibo.com/weibo?q=%E5%B7%B4%E8%A5%BF%E9%86%92%E9%86%92%20%E8%BF%99%E6%98%AF%E6%B7%98%E6%B1%B0%E8%B5%9B",
-      "hot": ""
-    },
-    {
-      "rank": 9,
       "title": "王源近几年没有路演了",
       "url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E6%BA%90%E8%BF%91%E5%87%A0%E5%B9%B4%E6%B2%A1%E6%9C%89%E8%B7%AF%E6%BC%94%E4%BA%86",
       "hot": ""
     },
     {
-      "rank": 10,
+      "rank": 8,
+      "title": "日本淘汰",
+      "url": "https://s.weibo.com/weibo?q=%E6%97%A5%E6%9C%AC%E6%B7%98%E6%B1%B0",
+      "hot": ""
+    },
+    {
+      "rank": 9,
       "title": "爱直接对嘴喝饮料的人天塌了",
       "url": "https://s.weibo.com/weibo?q=%E7%88%B1%E7%9B%B4%E6%8E%A5%E5%AF%B9%E5%98%B4%E5%96%9D%E9%A5%AE%E6%96%99%E7%9A%84%E4%BA%BA%E5%A4%A9%E5%A1%8C%E4%BA%86",
+      "hot": ""
+    },
+    {
+      "rank": 10,
+      "title": "恋与深空回应争议",
+      "url": "https://s.weibo.com/weibo?q=%E6%81%8B%E4%B8%8E%E6%B7%B1%E7%A9%BA%E5%9B%9E%E5%BA%94%E4%BA%89%E8%AE%AE",
       "hot": ""
     }
   ]

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-29T21:01:10+00:00",
+  "updated_at": "2026-06-29T23:15:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Qwen 3.6 27B is the sweet spot for local development",
-      "url": "https://quesma.com/blog/qwen-36-is-awesome/",
-      "hot": "393"
+      "title": ".self: A new top-level domain designed to support self-hosting",
+      "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
+      "hot": "212"
     },
     {
       "rank": 2,
-      "title": "Rocketlab acquires Iridium",
-      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
-      "hot": "301"
+      "title": "Qwen 3.6 27B is the sweet spot for local development",
+      "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+      "hot": "520"
     },
     {
       "rank": 3,
-      "title": "Ornith-1.0: self-improving open-source models for agentic coding",
-      "url": "https://github.com/deepreinforce-ai/Ornith-1",
-      "hot": "97"
+      "title": "Free the Icons",
+      "url": "https://weblog.rogueamoeba.com/2026/06/26/free-the-icons/",
+      "hot": "92"
     },
     {
       "rank": 4,
-      "title": "A native graphical shell for SSH",
-      "url": "https://probablymarcus.com/blocks/2026/06/28/native-graphical-shell-for-SSH.html",
-      "hot": "182"
+      "title": "Rocketlab acquires Iridium",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+      "hot": "332"
     },
     {
       "rank": 5,
-      "title": "WATaBoy: JIT-Ing Game Boy Instructions to WASM Beats a Native Interpreter",
-      "url": "https://humphri.es/blog/WATaBoy/",
-      "hot": "147"
+      "title": "Ornith-1.0: self-improving open-source models for agentic coding",
+      "url": "https://github.com/deepreinforce-ai/Ornith-1",
+      "hot": "128"
     },
     {
       "rank": 6,
-      "title": "Announcing .self: A New Top-Level Domain Designed to Support Self-Hosting",
-      "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
-      "hot": "49"
+      "title": "Scientists find molecular-level evidence for two structures in liquid water",
+      "url": "https://phys.org/news/2026-06-scientists-molecular-evidence-liquid.html",
+      "hot": "16"
     },
     {
       "rank": 7,
-      "title": "Wallace the 6 inch f/2.8 telescope, building it, and hiking with it",
-      "url": "https://lucassifoni.info/blog/hiking-with-wallace/",
-      "hot": "62"
+      "title": "A native graphical shell for SSH",
+      "url": "https://probablymarcus.com/blocks/2026/06/28/native-graphical-shell-for-SSH.html",
+      "hot": "212"
     },
     {
       "rank": 8,
-      "title": "JumpServer: Open-Source Privileged Access Management",
-      "url": "https://github.com/jumpserver/jumpserver",
-      "hot": "22"
+      "title": "WATaBoy: JIT-Ing Game Boy Instructions to WASM Beats a Native Interpreter",
+      "url": "https://humphri.es/blog/WATaBoy/",
+      "hot": "165"
     },
     {
       "rank": 9,
-      "title": "Micro-Agent: Beat Frontier Models with Collaboration Inside Model API",
-      "url": "https://vllm.ai/blog/2026-06-29-micro-agent-frontier-models",
-      "hot": "25"
+      "title": "Wallace the 6 inch f/2.8 telescope, building it, and hiking with it",
+      "url": "https://lucassifoni.info/blog/hiking-with-wallace/",
+      "hot": "93"
     },
     {
       "rank": 10,
-      "title": "US Supreme Court rules geofence warrants require constitutional protections",
-      "url": "https://www.theguardian.com/us-news/2026/jun/29/supreme-court-geofence-warrants-case-decision",
-      "hot": "304"
+      "title": "Is It Out Yet?",
+      "url": "https://outyet.ai",
+      "hot": "31"
     }
   ]
 }
