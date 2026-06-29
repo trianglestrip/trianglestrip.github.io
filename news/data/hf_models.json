@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-06-29T06:21:58+00:00",
+  "updated_at": "2026-06-29T14:58:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1266"
+      "hot": "1328"
     },
     {
       "rank": 2,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "2850"
+      "hot": "2892"
     },
     {
       "rank": 3,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "826"
+      "hot": "881"
     },
     {
       "rank": 4,
       "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "hot": "809"
+      "hot": "828"
     },
     {
       "rank": 5,
-      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-      "hot": "532"
+      "title": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
+      "hot": "445"
     },
     {
       "rank": 6,
-      "title": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
-      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
-      "hot": "424"
+      "title": "Qwen/Qwen-AgentWorld-35B-A3B",
+      "url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
+      "hot": "423"
     },
     {
       "rank": 7,
-      "title": "Qwen/Qwen-AgentWorld-35B-A3B",
-      "url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
-      "hot": "407"
+      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "hot": "548"
     },
     {
       "rank": 8,
       "title": "krea/Krea-2-Turbo",
       "url": "https://huggingface.co/krea/Krea-2-Turbo",
-      "hot": "362"
+      "hot": "385"
     },
     {
       "rank": 9,
       "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-      "hot": "2482"
+      "hot": "2493"
     },
     {
       "rank": 10,
       "title": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
       "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
-      "hot": "282"
+      "hot": "292"
     }
   ]
 }

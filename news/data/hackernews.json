@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-29T11:28:22+00:00",
+  "updated_at": "2026-06-29T14:57:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
-      "url": "https://danunparsed.com/p/hackerrank-open-source-ats",
-      "hot": "533"
+      "title": "Mag 7 starting to underperform [pdf]",
+      "url": "https://www.apollo.com/content/dam/apolloaem/pdf/daily-spark/2026/jun/28/062826-Mag7.pdf",
+      "hot": "48"
     },
     {
       "rank": 2,
-      "title": "GLM 5.2 beats Claude in our benchmarks",
-      "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
-      "hot": "887"
+      "title": "Building Principia for Windows XP",
+      "url": "https://voxelmanip.se/2026/06/28/building-principia-for-windows-xp/",
+      "hot": "40"
     },
     {
       "rank": 3,
-      "title": "Pollen (CEO Negus-Fancey, CTO Wright) tried to remove article, and Google helped",
-      "url": "https://blog.pragmaticengineer.com/pollen-tried-to-remove-my-article-about-callum-negus-fancey-and-google-is-assisting-to-it/",
-      "hot": "209"
+      "title": "What happens when you run a CUDA kernel?",
+      "url": "https://fergusfinn.com/blog/what-happens-when-you-run-a-gpu-kernel/",
+      "hot": "37"
     },
     {
       "rank": 4,
-      "title": "Dissecting Apple's Sparse Image Format (ASIF)",
-      "url": "https://schamper.dev/dissecting-apples-sparse-image-format-asif/",
-      "hot": "90"
+      "title": "A field guide to the modern front end for developers who hand-wrote HTML",
+      "url": "https://davidpoblador.com/deep-dives/the-descent/",
+      "hot": "28"
     },
     {
       "rank": 5,
-      "title": "NUMA: Cores, memory, and the distance between them",
-      "url": "https://edera.dev/stories/numa-part-1-cores-memory-and-the-distance-between-them",
-      "hot": "34"
+      "title": "RocketLab Acquires Iridium",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+      "hot": "18"
     },
     {
       "rank": 6,
-      "title": "Age verification is just a precursor to automated attribution of speech",
-      "url": "https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026",
-      "hot": "562"
+      "title": "Sandia National Labs SA3000 8085 CPU",
+      "url": "https://www.cpushack.com/2026/06/03/sandia-national-labs-sa3000-8085-cpu/",
+      "hot": "94"
     },
     {
       "rank": 7,
-      "title": "We found a bug in the hyper HTTP library",
-      "url": "https://blog.cloudflare.com/hyper-bug/",
-      "hot": "77"
+      "title": "Tidal AI Policy",
+      "url": "https://tidal.com/ai-policy",
+      "hot": "138"
     },
     {
       "rank": 8,
-      "title": "Historical memory prices 1960-2026",
-      "url": "https://dam.stanford.edu/memory-prices.html",
-      "hot": "323"
+      "title": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
+      "url": "https://danunparsed.com/p/hackerrank-open-source-ats",
+      "hot": "750"
     },
     {
       "rank": 9,
-      "title": "5k menus from the New York Public Library’s Buttolph Collection (1880-1920)",
-      "url": "https://pudding.cool/2026/06/menu-story/",
-      "hot": "376"
+      "title": "GLM 5.2 beats Claude in our benchmarks",
+      "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+      "hot": "1000"
     },
     {
       "rank": 10,
-      "title": "I used Claude Code to get a second opinion on my MRI",
-      "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
-      "hot": "450"
+      "title": "Instagram is incorporating users' photos in ads for Meta Glasses",
+      "url": "https://twitter.com/i/status/2071277885646868536",
+      "hot": "73"
     }
   ]
 }
