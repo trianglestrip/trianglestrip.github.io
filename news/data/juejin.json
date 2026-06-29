@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-29T06:21:28+00:00",
+  "updated_at": "2026-06-29T11:28:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Vue 3 里被严重低估的 API：InjectionKey",
-      "url": "https://juejin.cn/post/7654840513968537641",
-      "hot": "900"
+      "title": "React Renderer 分离的多平台架构",
+      "url": "https://juejin.cn/post/7656342465024540718",
+      "hot": "1035"
     },
     {
       "rank": 2,
-      "title": "WHERE 条件别凭习惯写，常用查询先跑一遍",
-      "url": "https://juejin.cn/post/7655235192540102665",
-      "hot": "648"
+      "title": "我把祖传项目的构建时间砍了90%，领导以为我只是在\"优化了一下\"，结果隔壁组的CI都崩了来问我配置",
+      "url": "https://juejin.cn/post/7655348005602361363",
+      "hot": "531"
     },
     {
       "rank": 3,
-      "title": "DBX：15MB 的\"小钢炮\"，如何塞下 50+ 种数据库",
-      "url": "https://juejin.cn/post/7654787758995144731",
-      "hot": "342"
+      "title": "白宫前脚下了限制令，OpenAI 后脚就把 GPT-5.6 发了",
+      "url": "https://juejin.cn/post/7655594666130554921",
+      "hot": "423"
     },
     {
       "rank": 4,
-      "title": "学不动了，入门 Compose Styles API",
-      "url": "https://juejin.cn/post/7655245911813128238",
-      "hot": "315"
+      "title": "`??` 和 `||` 搞混，线上用户头像全挂了",
+      "url": "https://juejin.cn/post/7655657102968438811",
+      "hot": "387"
     },
     {
       "rank": 5,
-      "title": "我把祖传项目的构建时间砍了90%，领导以为我只是在\"优化了一下\"，结果隔壁组的CI都崩了来问我配置",
-      "url": "https://juejin.cn/post/7655348005602361363",
-      "hot": "306"
+      "title": "学不动了，入门 Compose Styles API",
+      "url": "https://juejin.cn/post/7655245911813128238",
+      "hot": "378"
     },
     {
       "rank": 6,
-      "title": "我放弃了 Vue/React，选择自研框架",
-      "url": "https://juejin.cn/post/7655009852205187078",
-      "hot": "306"
+      "title": "DeepSeek这次招得太猛了，36个岗位，80%都要会Agent！",
+      "url": "https://juejin.cn/post/7656300675647373321",
+      "hot": "369"
     },
     {
       "rank": 7,
-      "title": "白宫前脚下了限制令，OpenAI 后脚就把 GPT-5.6 发了",
-      "url": "https://juejin.cn/post/7655594666130554921",
-      "hot": "306"
+      "title": "我偷偷把公司的祖传 jQuery 项目改成了 Vue3，CTO 没发现，但全组都来抄我的代码了",
+      "url": "https://juejin.cn/post/7655631091143704595",
+      "hot": "342"
     },
     {
       "rank": 8,
-      "title": "`??` 和 `||` 搞混，线上用户头像全挂了",
-      "url": "https://juejin.cn/post/7655657102968438811",
-      "hot": "288"
+      "title": "Rspack 2.1 发布：React Compiler 提速 10 倍！",
+      "url": "https://juejin.cn/post/7655529019282571291",
+      "hot": "297"
     },
     {
       "rank": 9,
-      "title": "Rspack 2.1 发布：React Compiler 提速 10 倍！",
-      "url": "https://juejin.cn/post/7655529019282571291",
-      "hot": "252"
+      "title": "AI 乱改代码？试试这套 SDD 规范驱动工作流",
+      "url": "https://juejin.cn/post/7656050265522913280",
+      "hot": "279"
     },
     {
       "rank": 10,
-      "title": "AI 乱改代码？试试这套 SDD 规范驱动工作流",
-      "url": "https://juejin.cn/post/7656050265522913280",
-      "hot": "198"
+      "title": "DSpark 讲透：DeepSeek 不换模型，硬把 V4 提速 85%，是怎么做到的？",
+      "url": "https://juejin.cn/post/7655691054172700718",
+      "hot": "261"
     }
   ]
 }

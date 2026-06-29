@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-29T06:21:40+00:00",
+  "updated_at": "2026-06-29T11:28:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS Scroll 嵌套滚动完全指南：四个真实场景的深度实战解析",
-      "url": "https://ost.51cto.com/posts/50583",
-      "hot": "HarmonyOSScroll嵌套滚动完全指南：四个真实场景的深度实战解析前言：为什么滚动交互是App体验的试金石？滚动是每个App里出现频率最高的交..."
+      "title": "react-native 鸿蒙 SafeAreaView 详解 — 避开状态栏和底部导航条",
+      "url": "https://ost.51cto.com/posts/50629",
+      "hot": "这个问题每个做跨平台App的都会遇到：iPhone有刘海，Android有挖孔，鸿蒙有顶部状态栏和底部导航条。你页面内容从屏幕最顶部开始渲染，肯定..."
     },
     {
       "rank": 2,
-      "title": "鸿蒙上 React Native Modal：弹窗交互的进阶玩法",
-      "url": "https://ost.51cto.com/posts/50562",
-      "hot": "从RN内置Modal到reactnativemodal搞RN鸿蒙开发的人都知道，RN自带的组件能用的东西其实不多&mdash;&mdash;就一个visible、一个animationType、一个tra..."
+      "title": "react-native 鸿蒙 ImageBackground 详解 — 图片背景+文字叠加",
+      "url": "https://ost.51cto.com/posts/50627",
+      "hot": "做电商App经常需要图片上面叠文字&mdash;&mdash;促销Banner、商品卡片、分类入口。方案无非两种：用Image+子元素absolute定位，或者直接用ImageBackgr..."
     },
     {
       "rank": 3,
-      "title": "GPT5.6惨遭切脑！Fable 5回归要变弱鸡版?",
-      "url": "https://www.51cto.com/article/847690.html",
-      "hot": "GPT-5.6 Sol被拆分、被按住，Fable 5被全球禁用72小时后才戴着镣铐回归。Anthropic和OpenAI最强模型，双双被「切脑」。"
+      "title": "有人把 5.7 万星 OpenSpec 和 24 万星 Superpowers 融合成一个工作流在 Github 开源......",
+      "url": "https://www.51cto.com/article/847758.html",
+      "hot": "OpenSpec 和 Superpowers，一个 5.7 万星，一个 24 万星，能走到今天这个位置，靠的是各自在自己领域做到极致。我对这两个框架的作者都充满敬意——它们的设计思路给了我很多启发。"
     },
     {
       "rank": 4,
-      "title": "一句「你确定吗」，大模型集体暴露「讨好型人格」？",
-      "url": "https://www.51cto.com/article/847689.html",
-      "hot": "近日，X 网友 shadcn@shadcn 发了一条帖子：「没有模型能扛住『are you sure?』这种追问，它们都会瞬间屈服。」"
+      "title": "如何让大模型“吐字”更快？解析DeepSeek最新推理加速方案DSpark",
+      "url": "https://www.51cto.com/article/847733.html",
+      "hot": "为了提速，业内普遍采用了一种名为“投机解码”（Speculative Decoding）的技术。它的原理很直观：让一个小巧的“草稿模型”先快速猜出一段文本，再由庞大的“目标模型”一次性进行批量验证。"
     },
     {
       "rank": 5,
-      "title": "未来，什么才是 AI “正确的使用方式”",
-      "url": "https://www.51cto.com/article/847718.html",
-      "hot": "本文以“大模型不是马，而是大脑”为核心视角，重新定义 AI 系统结构，指出当前问题不在模型能力，而在 Agent 作为“身体”的不成熟，分析感知、行动、反馈与调度等工程缺陷，并将 Harness 类系统比作 ICU 的生命维持机制，强调当下混乱源于最佳实践尚未收敛..."
+      "title": "Anthropic 450亿致命死穴，中国式「白菜价」反手出招！",
+      "url": "https://www.51cto.com/article/847782.html",
+      "hot": "今天，一张图刷屏了。Anthropic营收正式超越OpenAI，登顶全球AI新王。晋身450亿营收的B端霸主，他们凭什么打赢这场商业战？揭秘硅谷这场教科书级的史诗逆袭，内幕数据全曝光！"
     },
     {
       "rank": 6,
-      "title": "英伟达年度「最危险」论文！AI自繁衍代码，无限刷级进化",
-      "url": "https://www.51cto.com/article/847685.html",
-      "hot": "年度最危险论文发了！英伟达打破20年封印，让AI亲手造出更狠的「考官」淘汰自己。无休止的自我进化一旦开启，2028年ASI降临真不是玩笑。"
+      "title": "Anthropic 买下 Stainless：Agent 竞争转向工具连接层",
+      "url": "https://www.51cto.com/article/847796.html",
+      "hot": "Stainless 的核心能力是把 API 描述转成高质量 SDK、CLI 和文档。对传统 SaaS 来说，这是一层开发者体验工具。API 写得再好，如果 SDK 难用、类型不稳、文档跟不上，开发者集成成本就会上升。"
     },
     {
       "rank": 7,
-      "title": "四大顶级AI对决《文明VI》！Claude「核平」法国，结果还是输了",
-      "url": "https://www.51cto.com/article/847684.html",
-      "hot": "四大顶级大模型被丢进《文明6》，反手就花50回合造核弹把法国夷为平地，最后却连怎么输的都不知道。"
+      "title": "Nvidia都在点赞的LoopWM世界模型，竟然来自一家中国初创FaceMind？",
+      "url": "https://www.51cto.com/article/847800.html",
+      "hot": "这项工作提供的，不只是一个新模型，更是一种新的看法：世界模型的未来，不一定是永远更大；也可能是让同样的参数，学会更有层次地思考。"
     },
     {
       "rank": 8,
-      "title": "Anthropic最新报告摸透全球打工人：凌晨5点求睡眠，晚6点问菜谱",
-      "url": "https://www.51cto.com/article/847683.html",
-      "hot": "白天，Claude是高薪打工人的生产力引擎；深夜，它成了唯一知道你还醒着的那个。一份报告，意外照出了几百万人藏起来的24小时。"
+      "title": "多收170万！AI账单黑箱曝光，Anthropic退钱不认账",
+      "url": "https://www.51cto.com/article/847802.html",
+      "hot": "AI能提效不假，但账单却越来越看不懂了。"
     },
     {
       "rank": 9,
-      "title": "梁文锋署名的DSpark，看懂这十个点就够了！",
-      "url": "https://www.51cto.com/article/847682.html",
-      "hot": "Fireworks AI的联合创始人兼CTO、PyTorch核心维护者Dmytro Dzhulgakov将整篇论文梳理成了10个概念，从最底层的GPU访存特性讲到最上层的在线自适应调度。"
+      "title": "刚刚OpenRouter发布2026最值得关注的“开源F4”，开源追上闭源了，差距只剩三到六个月",
+      "url": "https://www.51cto.com/article/847804.html",
+      "hot": "在过去长达18个月的时间里，开源与闭源的差距稳定保持在3到6个月之间。至少就目前来看，闭源大厂完全没有甩开开源阵营的迹象。"
     },
     {
       "rank": 10,
-      "title": "太空算力的国产答案：用光子更高效！马斯克和老黄都太绕了",
-      "url": "https://www.51cto.com/article/847681.html",
-      "hot": "马斯克判断，到2032年，太阳能驱动的太空AI卫星，将成为全球成本最优的算力方案。"
+      "title": "答对了不等于答得好： Hugging Face 用一套新 Benchmark 量出了 Agent 用工具的真实代价",
+      "url": "https://www.51cto.com/article/847811.html",
+      "hot": "\"没有测试的功能等于不存在\"和\"没有文档的功能等于不存在\"——在 Agent 时代，这两条比以往任何时候都更紧密地绑在了一起。Agent 要使用你的工具，它需要可发现（discoverable）、API 清晰（clear）、文档完整（extensive）。"
     }
   ]
 }
