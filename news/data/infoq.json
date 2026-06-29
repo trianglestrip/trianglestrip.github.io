@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-29T01:34:59+00:00",
+  "updated_at": "2026-06-29T06:21:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AWS 推出开源框架 Blocks，面向 AI 智能体的后端开发工具",
+      "url": "https://www.infoq.cn/article/ZdA3CGtWNFGAoalSeiu8?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 29 Jun 2026 14:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "AWS Graviton5 正式发布，具备 192 个内核和经过正式验证的虚拟机隔离功能",
+      "url": "https://www.infoq.cn/article/ONqpdtmlUXgF32G1vqT2?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 29 Jun 2026 11:50:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "ML 模型投毒的机制及检测方法",
+      "url": "https://www.infoq.cn/article/GqFL7BV2JopihkBJWkt2?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 29 Jun 2026 10:14:27 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "不靠低价抢客户，月之暗面Kimi出海，凭什么硬刚海外AI“御三家”？",
+      "url": "https://www.infoq.cn/article/uJ7sK8HW50T256cMoVF1?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 29 Jun 2026 10:03:31 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "不设KPI，MiniMax发6亿港元股票，员工满年限即可全拿；曝苹果游说特朗普采购中国长鑫存储芯片；DeepSeek 与北大联合开源 DSpark | AI周报",
+      "url": "https://www.infoq.cn/article/6FP1sl5CrwdggVrXrwIN?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 29 Jun 2026 09:58:07 GMT"
+    },
+    {
+      "rank": 6,
       "title": "Bedrock 平台上的 Fable 5 模型需向 Anthropic 共享推理数据",
       "url": "https://www.infoq.cn/article/NodhKVrhWoYF9yGwm12j?utm_source=rss&utm_medium=article",
       "hot": "Sun, 28 Jun 2026 14:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "苹果推出 Core AI 框架，为自研芯片优化端侧生成式 AI",
       "url": "https://www.infoq.cn/article/x6KDPdgrdHzY7I38JK9U?utm_source=rss&utm_medium=article",
       "hot": "Sun, 28 Jun 2026 11:06:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "GitLab 19.0将Agentic AI嵌入凭证、合并请求与供应链安全",
       "url": "https://www.infoq.cn/article/ICdHZotGllYog0ocIrxA?utm_source=rss&utm_medium=article",
       "hot": "Sun, 28 Jun 2026 09:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": ".NET11第五个预览版：带来基于File的App改进、新C#特性与Blazor校验抖动效果",
       "url": "https://www.infoq.cn/article/9k2FtAR89wsZVgkh7BQv?utm_source=rss&utm_medium=article",
       "hot": "Sat, 27 Jun 2026 11:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "Ky 2.0 发布：重构 Hooks、改进超时机制，并内置 Schema 校验能力",
       "url": "https://www.infoq.cn/article/v1wsHJd54imD1b4yUeYf?utm_source=rss&utm_medium=article",
       "hot": "Sat, 27 Jun 2026 09:00:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "像玩剧本杀一样，玩好 Agentic AI",
-      "url": "https://www.infoq.cn/video/2hp32gR1vuPJuL0ISlB3?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 26 Jun 2026 22:21:52 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Athena 联盟成立：以协同防御应对开源软件安全风险",
-      "url": "https://www.infoq.cn/article/K5kVz7354Na4846mlNsJ?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 26 Jun 2026 19:00:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "AI确实可以用任何手段、写任何东西，但你得是个“中年老登”",
-      "url": "https://www.infoq.cn/article/l2lF7aoPeLGlotlX1tdt?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 26 Jun 2026 18:18:18 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "API7.ai创始人温铭：烧了几百亿Token，我用AI重写了生产级网关，总结出6条经验",
-      "url": "https://www.infoq.cn/article/5YIK6SvTf5h07YckXZd3?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 26 Jun 2026 18:16:12 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "不下班、不摸鱼，晓途机器狗已在上海“开工”：7×24小时自主巡逻执勤",
-      "url": "https://www.infoq.cn/article/BvOA2HoC0d1IzKMZjsdy?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 26 Jun 2026 17:55:54 GMT"
     }
   ]
 }

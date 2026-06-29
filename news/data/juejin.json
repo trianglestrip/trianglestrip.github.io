@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-29T01:34:46+00:00",
+  "updated_at": "2026-06-29T06:21:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Vue 3 里被严重低估的 API：InjectionKey",
       "url": "https://juejin.cn/post/7654840513968537641",
-      "hot": "693"
+      "hot": "900"
     },
     {
       "rank": 2,
       "title": "WHERE 条件别凭习惯写，常用查询先跑一遍",
       "url": "https://juejin.cn/post/7655235192540102665",
-      "hot": "585"
+      "hot": "648"
     },
     {
       "rank": 3,
-      "title": "尤雨溪转发：Vue-tui 0.1 发布！Vue 终于杀进终端！",
-      "url": "https://juejin.cn/post/7655263874610085929",
-      "hot": "486"
+      "title": "DBX：15MB 的\"小钢炮\"，如何塞下 50+ 种数据库",
+      "url": "https://juejin.cn/post/7654787758995144731",
+      "hot": "342"
     },
     {
       "rank": 4,
-      "title": "连微软都用不起 AI 了",
-      "url": "https://juejin.cn/post/7655363315291996198",
-      "hot": "378"
+      "title": "学不动了，入门 Compose Styles API",
+      "url": "https://juejin.cn/post/7655245911813128238",
+      "hot": "315"
     },
     {
       "rank": 5,
-      "title": "Java 26正式发布！这3个新特性，让代码量直接减半",
-      "url": "https://juejin.cn/post/7655226776235065344",
+      "title": "我把祖传项目的构建时间砍了90%，领导以为我只是在\"优化了一下\"，结果隔壁组的CI都崩了来问我配置",
+      "url": "https://juejin.cn/post/7655348005602361363",
       "hot": "306"
     },
     {
       "rank": 6,
-      "title": "DBX：15MB 的\"小钢炮\"，如何塞下 50+ 种数据库",
-      "url": "https://juejin.cn/post/7654787758995144731",
-      "hot": "297"
+      "title": "我放弃了 Vue/React，选择自研框架",
+      "url": "https://juejin.cn/post/7655009852205187078",
+      "hot": "306"
     },
     {
       "rank": 7,
-      "title": "学不动了，入门 Compose Styles API",
-      "url": "https://juejin.cn/post/7655245911813128238",
-      "hot": "270"
+      "title": "白宫前脚下了限制令，OpenAI 后脚就把 GPT-5.6 发了",
+      "url": "https://juejin.cn/post/7655594666130554921",
+      "hot": "306"
     },
     {
       "rank": 8,
-      "title": "白宫前脚下了限制令，OpenAI 后脚就把 GPT-5.6 发了",
-      "url": "https://juejin.cn/post/7655594666130554921",
-      "hot": "252"
+      "title": "`??` 和 `||` 搞混，线上用户头像全挂了",
+      "url": "https://juejin.cn/post/7655657102968438811",
+      "hot": "288"
     },
     {
       "rank": 9,
-      "title": "深入理解Claude Code：CLAUDE.md、Hooks、Skills、Subagents",
-      "url": "https://juejin.cn/post/7655263874610429993",
-      "hot": "243"
+      "title": "Rspack 2.1 发布：React Compiler 提速 10 倍！",
+      "url": "https://juejin.cn/post/7655529019282571291",
+      "hot": "252"
     },
     {
       "rank": 10,
-      "title": "我放弃了 Vue/React，选择自研框架",
-      "url": "https://juejin.cn/post/7655009852205187078",
-      "hot": "234"
+      "title": "AI 乱改代码？试试这套 SDD 规范驱动工作流",
+      "url": "https://juejin.cn/post/7656050265522913280",
+      "hot": "198"
     }
   ]
 }

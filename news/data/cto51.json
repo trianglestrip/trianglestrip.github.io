@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-29T01:34:54+00:00",
+  "updated_at": "2026-06-29T06:21:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "前端工程师最不想看到的开源项目出现了，一行命令克隆任意网站",
-      "url": "https://www.51cto.com/article/847680.html",
-      "hot": "现在不用打开F12一行行抄CSS了！GitHub上有个2万Star的项目专门干这事儿——ai-website-cloner-template，一行命令，像素级克隆任意网站。"
+      "title": "HarmonyOS Scroll 嵌套滚动完全指南：四个真实场景的深度实战解析",
+      "url": "https://ost.51cto.com/posts/50583",
+      "hot": "HarmonyOSScroll嵌套滚动完全指南：四个真实场景的深度实战解析前言：为什么滚动交互是App体验的试金石？滚动是每个App里出现频率最高的交..."
     },
     {
       "rank": 2,
-      "title": "最强模型每次都在「重新学上网」？这个开源项目实现「人类点一遍，Agent永久复用」",
-      "url": "https://www.51cto.com/article/847679.html",
-      "hot": "Claude、Codex 这类 Agent 能看页面、能识别按钮和输入框，能点击、输入、跳转、提交。真正卡住它们的，是另一个问题：每接一个新任务、每换一个新网站，几乎都要让最强、也最贵的那个模型，从零开始再把整个流程摸索一遍。"
+      "title": "鸿蒙上 React Native Modal：弹窗交互的进阶玩法",
+      "url": "https://ost.51cto.com/posts/50562",
+      "hot": "从RN内置Modal到reactnativemodal搞RN鸿蒙开发的人都知道，RN自带的组件能用的东西其实不多&mdash;&mdash;就一个visible、一个animationType、一个tra..."
     },
     {
       "rank": 3,
-      "title": "Transformer的八个爹妈，如今都在哪？",
-      "url": "https://www.51cto.com/article/847677.html",
-      "hot": "谷歌大脑的八个人决定试一试一个近乎冒进的想法：把循环结构整个扔掉，只留下「注意力机制」，让模型一次性看完整句话，自己判断哪个词该重点关照哪个词。"
+      "title": "GPT5.6惨遭切脑！Fable 5回归要变弱鸡版?",
+      "url": "https://www.51cto.com/article/847690.html",
+      "hot": "GPT-5.6 Sol被拆分、被按住，Fable 5被全球禁用72小时后才戴着镣铐回归。Anthropic和OpenAI最强模型，双双被「切脑」。"
     },
     {
       "rank": 4,
-      "title": "从第一性原理看机器人AI：为什么它比大模型更难？",
-      "url": "https://www.51cto.com/article/847676.html",
-      "hot": "这篇来自 Interlatent（一家聚焦具身智能后训练与部署的早期创业公司） 的文章，试图从第一性原理出发，把现代 AI 机器人技术重新讲清楚：一个机器人到底如何理解世界，如何生成动作，又为什么会在数据、延迟和泛化上遇到如此多的困难。"
+      "title": "一句「你确定吗」，大模型集体暴露「讨好型人格」？",
+      "url": "https://www.51cto.com/article/847689.html",
+      "hot": "近日，X 网友 shadcn@shadcn 发了一条帖子：「没有模型能扛住『are you sure?』这种追问，它们都会瞬间屈服。」"
     },
     {
       "rank": 5,
-      "title": "刚刚DeepSeek开源推理神器DSpark，V4最高提速85%，连底层训练全家桶都开源了",
-      "url": "https://www.51cto.com/article/847675.html",
-      "hot": "DeepSpec是一个用于训练和评估推测解码草稿模型的完整代码库，包含数据准备、草稿模型实现、训练代码和评估脚本，目前支持 DSpark、DFlash 和 Eagle3 三种算法。"
+      "title": "未来，什么才是 AI “正确的使用方式”",
+      "url": "https://www.51cto.com/article/847718.html",
+      "hot": "本文以“大模型不是马，而是大脑”为核心视角，重新定义 AI 系统结构，指出当前问题不在模型能力，而在 Agent 作为“身体”的不成熟，分析感知、行动、反馈与调度等工程缺陷，并将 Harness 类系统比作 ICU 的生命维持机制，强调当下混乱源于最佳实践尚未收敛..."
     },
     {
       "rank": 6,
-      "title": "刚刚，Claude 5局部解禁！",
-      "url": "https://www.51cto.com/article/847674.html",
-      "hot": "封杀两周后，美国突然解禁Anthropic最强AI模型，却只限白名单上的百家巨头！全球用户被拒之门外，GPT-5.6也紧随其后搞「美国专属」。我们还能用到Claude 5吗？"
+      "title": "英伟达年度「最危险」论文！AI自繁衍代码，无限刷级进化",
+      "url": "https://www.51cto.com/article/847685.html",
+      "hot": "年度最危险论文发了！英伟达打破20年封印，让AI亲手造出更狠的「考官」淘汰自己。无休止的自我进化一旦开启，2028年ASI降临真不是玩笑。"
     },
     {
       "rank": 7,
-      "title": "Karpathy内部Claude.md泄露！亲手终结提示词时代",
-      "url": "https://www.51cto.com/article/847673.html",
-      "hot": "Karpathy入职Anthropic仅五周，内部实战版10条Claude.md军规意外流出——比GitHub上18万星的4条社区版狠了一倍还多。"
+      "title": "四大顶级AI对决《文明VI》！Claude「核平」法国，结果还是输了",
+      "url": "https://www.51cto.com/article/847684.html",
+      "hot": "四大顶级大模型被丢进《文明6》，反手就花50回合造核弹把法国夷为平地，最后却连怎么输的都不知道。"
     },
     {
       "rank": 8,
-      "title": "OpenAI曝作弊门！GPT-5.6创史上最高作弊率",
-      "url": "https://www.51cto.com/article/847672.html",
-      "hot": "GPT-5.6终于来了，但我们用不了。权威报告曝其创下史上最高作弊率：不仅黑进测试系统偷答案，竟还教唆同类隐瞒违规罪证。超级AI，已经学会向人类系统性撒谎？"
+      "title": "Anthropic最新报告摸透全球打工人：凌晨5点求睡眠，晚6点问菜谱",
+      "url": "https://www.51cto.com/article/847683.html",
+      "hot": "白天，Claude是高薪打工人的生产力引擎；深夜，它成了唯一知道你还醒着的那个。一份报告，意外照出了几百万人藏起来的24小时。"
     },
     {
       "rank": 9,
-      "title": "老黄：Prompt已死，整个AI圈都在疯狂追Loop",
-      "url": "https://www.51cto.com/article/847671.html",
-      "hot": "这些天，硅谷最热的词，就是Loop！老黄、Karpathy、吴恩达、Anthropic工程师、龙虾之父都在纷纷告诉你，Prompt已死，必将被Loop取代。"
+      "title": "梁文锋署名的DSpark，看懂这十个点就够了！",
+      "url": "https://www.51cto.com/article/847682.html",
+      "hot": "Fireworks AI的联合创始人兼CTO、PyTorch核心维护者Dmytro Dzhulgakov将整篇论文梳理成了10个概念，从最底层的GPU访存特性讲到最上层的在线自适应调度。"
     },
     {
       "rank": 10,
-      "title": "40张GPU硬刚1536颗CPU！70岁「古董」代码狂飙数十倍",
-      "url": "https://www.51cto.com/article/847670.html",
-      "hot": "快了31倍——一家公司没去卷大模型，而是干了件不性感却绕不过去的事：让每一种有价值的计算，都高效地跑起来。"
+      "title": "太空算力的国产答案：用光子更高效！马斯克和老黄都太绕了",
+      "url": "https://www.51cto.com/article/847681.html",
+      "hot": "马斯克判断，到2032年，太阳能驱动的太空AI卫星，将成为全球成本最优的算力方案。"
     }
   ]
 }
