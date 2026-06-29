@@ -1,20 +1,20 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-29T17:32:15+00:00",
+  "updated_at": "2026-06-29T21:00:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "React Renderer 分离的多平台架构",
       "url": "https://juejin.cn/post/7656342465024540718",
-      "hot": "1116"
+      "hot": "1134"
     },
     {
       "rank": 2,
       "title": "我把祖传项目的构建时间砍了90%，领导以为我只是在\"优化了一下\"，结果隔壁组的CI都崩了来问我配置",
       "url": "https://juejin.cn/post/7655348005602361363",
-      "hot": "585"
+      "hot": "594"
     },
     {
       "rank": 3,
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "`??` 和 `||` 搞混，线上用户头像全挂了",
-      "url": "https://juejin.cn/post/7655657102968438811",
-      "hot": "441"
+      "title": "DeepSeek这次招得太猛了，36个岗位，80%都要会Agent！",
+      "url": "https://juejin.cn/post/7656300675647373321",
+      "hot": "450"
     },
     {
       "rank": 5,
-      "title": "DeepSeek这次招得太猛了，36个岗位，80%都要会Agent！",
-      "url": "https://juejin.cn/post/7656300675647373321",
-      "hot": "432"
+      "title": "`??` 和 `||` 搞混，线上用户头像全挂了",
+      "url": "https://juejin.cn/post/7655657102968438811",
+      "hot": "441"
     },
     {
       "rank": 6,
@@ -50,13 +50,13 @@
       "rank": 8,
       "title": "AI具身交互：实现一个会说话的3D虚拟伴侣",
       "url": "https://juejin.cn/post/7656050265523372032",
-      "hot": "333"
+      "hot": "342"
     },
     {
       "rank": 9,
       "title": "AI 乱改代码？试试这套 SDD 规范驱动工作流",
       "url": "https://juejin.cn/post/7656050265522913280",
-      "hot": "315"
+      "hot": "324"
     },
     {
       "rank": 10,
