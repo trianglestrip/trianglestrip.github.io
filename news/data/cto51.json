@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-28T23:20:01+00:00",
+  "updated_at": "2026-06-29T01:34:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "图解 C++ 智能指针，看图秒懂",
-      "url": "https://www.51cto.com/article/847668.html",
-      "hot": "智能指针是一个类，包装了裸指针，重载了->和\\*操作符，让你用得跟指针一样，但析构的时候自动释放资源。"
+      "title": "前端工程师最不想看到的开源项目出现了，一行命令克隆任意网站",
+      "url": "https://www.51cto.com/article/847680.html",
+      "hot": "现在不用打开F12一行行抄CSS了！GitHub上有个2万Star的项目专门干这事儿——ai-website-cloner-template，一行命令，像素级克隆任意网站。"
     },
     {
       "rank": 2,
-      "title": "final/static/private 方法，为什么无法被 AOP 代理？",
-      "url": "https://www.51cto.com/article/847657.html",
-      "hot": "很多开发工作多年，只会死记「三类方法不支持AOP」，却不懂底层的 代理机制、字节码限制、Java语法本质。"
+      "title": "最强模型每次都在「重新学上网」？这个开源项目实现「人类点一遍，Agent永久复用」",
+      "url": "https://www.51cto.com/article/847679.html",
+      "hot": "Claude、Codex 这类 Agent 能看页面、能识别按钮和输入框，能点击、输入、跳转、提交。真正卡住它们的，是另一个问题：每接一个新任务、每换一个新网站，几乎都要让最强、也最贵的那个模型，从零开始再把整个流程摸索一遍。"
     },
     {
       "rank": 3,
-      "title": "聊一聊我是怎么审查 Claude Code 写的代码：记一次复刻 Redis Set 审查随笔",
-      "url": "https://www.51cto.com/article/847656.html",
-      "hot": "本文前面用大量篇幅铺垫了AI时代下代码掌控的核心能力。然后，以本次的redis set复刻为例，做一次详细的审查。"
+      "title": "Transformer的八个爹妈，如今都在哪？",
+      "url": "https://www.51cto.com/article/847677.html",
+      "hot": "谷歌大脑的八个人决定试一试一个近乎冒进的想法：把循环结构整个扔掉，只留下「注意力机制」，让模型一次性看完整句话，自己判断哪个词该重点关照哪个词。"
     },
     {
       "rank": 4,
-      "title": "现在都转 PostgreSQL 了？MySQL 和 PG 怎么选，分库分表、分页、索引全面对比",
-      "url": "https://www.51cto.com/article/847655.html",
-      "hot": "有人说PG功能强、并发稳；也有人坚持MySQL简单好运维、互联网生态成熟。 不用人云亦云，咱们拿开发经常都要打交道的三件事：索引、分页、分库分表，做个对比参考。"
+      "title": "从第一性原理看机器人AI：为什么它比大模型更难？",
+      "url": "https://www.51cto.com/article/847676.html",
+      "hot": "这篇来自 Interlatent（一家聚焦具身智能后训练与部署的早期创业公司） 的文章，试图从第一性原理出发，把现代 AI 机器人技术重新讲清楚：一个机器人到底如何理解世界，如何生成动作，又为什么会在数据、延迟和泛化上遇到如此多的困难。"
     },
     {
       "rank": 5,
-      "title": "AI Agent协作运维在新浪微博的落地与演进",
-      "url": "https://www.51cto.com/article/847535.html",
-      "hot": "随着公司推进代码辅助编程，运维团队与研发一同探索如何提升效率。从最初的运维脚本自动化编写，到后来的自动化工具构建、运维系统开发，现在都能用 AI辅助开发来提效。运维系统的部分核心模块的代码覆盖率已经接近 100%。"
+      "title": "刚刚DeepSeek开源推理神器DSpark，V4最高提速85%，连底层训练全家桶都开源了",
+      "url": "https://www.51cto.com/article/847675.html",
+      "hot": "DeepSpec是一个用于训练和评估推测解码草稿模型的完整代码库，包含数据准备、草稿模型实现、训练代码和评估脚本，目前支持 DSpark、DFlash 和 Eagle3 三种算法。"
     },
     {
       "rank": 6,
-      "title": "Google 上周推了个 agents-cli，我装完发现 Claude Code 多了七个超能力",
-      "url": "https://www.51cto.com/article/847649.html",
-      "hot": "如果你是 Claude Code 的日常用户，又对 AI Agent 开发感兴趣——装。​​adk-code​​ + ​​scaffold​​ + ​​eval​​ 这三个 Skill 组合起来，能把你的 Claude Code 从「写代码的助手」变成「帮你搭 Agent 系统的搭档」。"
+      "title": "刚刚，Claude 5局部解禁！",
+      "url": "https://www.51cto.com/article/847674.html",
+      "hot": "封杀两周后，美国突然解禁Anthropic最强AI模型，却只限白名单上的百家巨头！全球用户被拒之门外，GPT-5.6也紧随其后搞「美国专属」。我们还能用到Claude 5吗？"
     },
     {
       "rank": 7,
-      "title": "AGENTS.md 开始反噬 Coding Agent，程序员别把团队规矩写成坑",
-      "url": "https://www.51cto.com/article/847322.html",
-      "hot": "大家的出发点很朴素：别让 Agent 每次都从零认识项目。把构建命令、代码风格、目录约定、禁区、测试方式都写进去，它就能少问几句，少犯几次低级错。"
+      "title": "Karpathy内部Claude.md泄露！亲手终结提示词时代",
+      "url": "https://www.51cto.com/article/847673.html",
+      "hot": "Karpathy入职Anthropic仅五周，内部实战版10条Claude.md军规意外流出——比GitHub上18万星的4条社区版狠了一倍还多。"
     },
     {
       "rank": 8,
-      "title": "不改参数，Agent自己改操作规则，未见任务通过率能提升吗",
-      "url": "https://www.51cto.com/article/847062.html",
-      "hot": "LLM agent 的表现并非仅由基座模型决定，还取决于包裹在模型外面的那层“harness”——系统提示词、工具定义、运行时策略、失败恢复机制等一系列非参数化的执行协议。同一个基座模型在不同 harness 下表现可以大相径庭。"
+      "title": "OpenAI曝作弊门！GPT-5.6创史上最高作弊率",
+      "url": "https://www.51cto.com/article/847672.html",
+      "hot": "GPT-5.6终于来了，但我们用不了。权威报告曝其创下史上最高作弊率：不仅黑进测试系统偷答案，竟还教唆同类隐瞒违规罪证。超级AI，已经学会向人类系统性撒谎？"
     },
     {
       "rank": 9,
-      "title": "别再把领域规则塞进字符串：用 .NET 值对象守住模型边界",
-      "url": "https://www.51cto.com/article/847363.html",
-      "hot": "这篇文章的核心不是“把所有 string 都换掉”，而是提醒我们：领域规则应该尽量靠近领域概念。\n当邮箱、币种、金额、数量都只是基础类型时，系统只能依赖每个开发者都记得手动校验。当这些概念变成值对象时，模型本身开始承担防守职责。"
+      "title": "老黄：Prompt已死，整个AI圈都在疯狂追Loop",
+      "url": "https://www.51cto.com/article/847671.html",
+      "hot": "这些天，硅谷最热的词，就是Loop！老黄、Karpathy、吴恩达、Anthropic工程师、龙虾之父都在纷纷告诉你，Prompt已死，必将被Loop取代。"
     },
     {
       "rank": 10,
-      "title": "2026 最新开源大模型排行榜：这些 LLM 值得关注",
-      "url": "https://www.51cto.com/article/847652.html",
-      "hot": "所谓“最好”，取决于你的具体用途和硬件条件。当前值得重点关注的模型包括：适合代码和系统工程的 GLM-5，适合数学和推理的 DeepSeek-V3.2 Speciale，以及适合自主 Agent 工作流的 Kimi K2.5 或 MiMo-V2-Flash。"
+      "title": "40张GPU硬刚1536颗CPU！70岁「古董」代码狂飙数十倍",
+      "url": "https://www.51cto.com/article/847670.html",
+      "hot": "快了31倍——一家公司没去卷大模型，而是干了件不性感却绕不过去的事：让每一种有价值的计算，都高效地跑起来。"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-28T23:20:02+00:00",
+  "updated_at": "2026-06-29T01:34:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "GLM 5.2 beats Claude in our benchmarks",
       "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
-      "hot": "301"
+      "hot": "425"
     },
     {
       "rank": 2,
-      "title": "A QNX-inspired operating system with selectable kernels",
-      "url": "https://qsoe.net",
-      "hot": "15"
+      "title": "Professor denounces mass AI fraud on an exam at Brown",
+      "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+      "hot": "244"
     },
     {
       "rank": 3,
-      "title": "Xonaly – Canada's Independent Search Engine",
-      "url": "https://xonaly.com/",
-      "hot": "13"
+      "title": "A QNX-inspired operating system with selectable kernels",
+      "url": "https://qsoe.net",
+      "hot": "34"
     },
     {
       "rank": 4,
-      "title": "5k menus from the New York Public Library’s Buttolph Collection (1880-1920)",
-      "url": "https://pudding.cool/2026/06/menu-story/",
-      "hot": "304"
+      "title": "Knowledge Distillation of Black-Box Large Language Models",
+      "url": "https://arxiv.org/abs/2401.07013",
+      "hot": "48"
     },
     {
       "rank": 5,
       "title": "Historical memory prices 1960-2026",
       "url": "https://dam.stanford.edu/memory-prices.html",
-      "hot": "109"
+      "hot": "157"
     },
     {
       "rank": 6,
-      "title": "I used Claude Code to get a second opinion on my MRI",
-      "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
-      "hot": "296"
+      "title": "5k menus from the New York Public Library’s Buttolph Collection (1880-1920)",
+      "url": "https://pudding.cool/2026/06/menu-story/",
+      "hot": "323"
     },
     {
       "rank": 7,
-      "title": "Knowledge Distillation of Black-Box Large Language Models",
-      "url": "https://arxiv.org/abs/2401.07013",
-      "hot": "11"
+      "title": "I used Claude Code to get a second opinion on my MRI",
+      "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+      "hot": "340"
     },
     {
       "rank": 8,
-      "title": "Professor denounces mass AI fraud on an exam at Brown",
-      "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
-      "hot": "141"
+      "title": "Sophon PFG-1: a monolithic-3D AI ASIC with 330 GB of on-die DRAM and no HBM",
+      "url": "https://www.phantafield.com/whitepaper",
+      "hot": "3"
     },
     {
       "rank": 9,
-      "title": "TOP500 at ISC’26: We have a New Number 1 Supercomputer",
-      "url": "https://chipsandcheese.com/p/top500-at-isc26-we-have-a-new-number",
-      "hot": "53"
+      "title": "Deciphering Basmala",
+      "url": "https://blog.plover.com/lang/bismillah.html",
+      "hot": "12"
     },
     {
       "rank": 10,
-      "title": "Librepods: AirPods liberated",
-      "url": "https://github.com/librepods-org/librepods",
-      "hot": "220"
+      "title": "TOP500 at ISC’26: We have a New Number 1 Supercomputer",
+      "url": "https://chipsandcheese.com/p/top500-at-isc26-we-have-a-new-number",
+      "hot": "71"
     }
   ]
 }
