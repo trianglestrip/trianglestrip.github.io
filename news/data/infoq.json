@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-06-30T04:38:57+00:00",
+  "updated_at": "2026-06-30T08:09:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Google OpenRL 是一个用于大型语言模型（LLM）后训练微调的实验性自托管 API",
+      "url": "https://www.infoq.cn/article/d5MOPSyGi5XPi1erhUW3?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 30 Jun 2026 15:21:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "3000块钱，这支中国团队把ChatGPT成功的“秘密”用在了机器人训练上",
+      "url": "https://www.infoq.cn/article/t78dBsMM5KZabshzEMuo?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 30 Jun 2026 15:07:50 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "AI 接进企业之后，API 安全开始成为新盲区",
+      "url": "https://www.infoq.cn/article/QODhrm0I3LSV0uGhFdWt?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 30 Jun 2026 14:15:38 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "从 VCloud 到 Agentic VCloud：Agent 时代的范式重构",
+      "url": "https://www.infoq.cn/article/4S4eBkKoq9Btx37VdTMW?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 30 Jun 2026 13:30:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "AWS 为 Cognito 增加多区域故障切换能力",
+      "url": "https://www.infoq.cn/article/5GF5hkjpFZqR7EMGkSvR?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 30 Jun 2026 13:00:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "Agent 狂吞 Token，表面是模型之争，底层全是煤电博弈",
       "url": "https://www.infoq.cn/article/5sAu5pdOatCpxaIU4vOw?utm_source=rss&utm_medium=article",
       "hot": "Tue, 30 Jun 2026 11:02:41 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Atlassian 揭秘 Forge 计费架构：如何在分布式环境下实现大规模用量计费",
       "url": "https://www.infoq.cn/article/5a8OTMYRHj6XZIpOTVoo?utm_source=rss&utm_medium=article",
       "hot": "Tue, 30 Jun 2026 10:50:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "非科班出身技术Geek，被DeepSeek改写人生（上集）",
       "url": "https://www.infoq.cn/video/wqJ2rxfB7CI3PMF50zD7?utm_source=rss&utm_medium=article",
       "hot": "Tue, 30 Jun 2026 10:22:29 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "AI 正在向软件生命周期的上游延伸：从代码审查到产品需求文档（PRD）治理",
       "url": "https://www.infoq.cn/article/30O5wT7GIPEtIpiXeAS0?utm_source=rss&utm_medium=article",
       "hot": "Tue, 30 Jun 2026 09:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "超越 CLEAN 和 MVP：在 Android 中构建离线优先的响应式数据层",
       "url": "https://www.infoq.cn/article/dPgYc639VWEXxbPzmBK1?utm_source=rss&utm_medium=article",
       "hot": "Mon, 29 Jun 2026 18:44:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "物理 AI 如何定义下一代平台革新？",
-      "url": "https://www.infoq.cn/article/sMq6bwGfrp5vRsc22hZj?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 29 Jun 2026 18:29:08 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "分库分表后查询变慢？TDSQL 全局索引破解数据定位难题",
-      "url": "https://www.infoq.cn/video/0Qd7LCv7PIRaoUL5MQ1m?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 29 Jun 2026 18:07:13 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "AI 时代的新可观测性：不只看系统崩没崩，还要看模型有没有胡说",
-      "url": "https://www.infoq.cn/article/HUri8txfhl93vIb9kHIJ?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 29 Jun 2026 18:06:26 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "被 AI 坑惨的福特，召回 350 名老工程师救场",
-      "url": "https://www.infoq.cn/article/TDVdahdBz82MSOry5B8p?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 29 Jun 2026 17:45:37 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Lucide 1.0 发布，移除品牌图标，并缩减数百万个项目的包大小",
-      "url": "https://www.infoq.cn/article/v5D4LerUDwm4F9PYXNI9?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 29 Jun 2026 17:15:00 GMT"
     }
   ]
 }

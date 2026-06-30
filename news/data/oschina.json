@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-06-30T04:38:56+00:00",
+  "updated_at": "2026-06-30T08:09:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Cursor 推出 iOS 端 App，把 AI 编程塞进了手机",
+      "url": "https://www.oschina.net/news/470150/cursor-mobile-app-for-ios",
+      "hot": "Tue, 30 Jun 2026 15:37:04 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Higress 迈入 CNCF Sandbox：v2.2.3 版本聚焦 AI Gateway 扩展与 Kubernetes Gateway API 兼容",
+      "url": "https://my.oschina.net/u/3874284/blog/19714455",
+      "hot": "Tue, 30 Jun 2026 15:31:45 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Tokenmaxxing 已死？Tokenmaxxing 万岁",
+      "url": "https://www.oschina.net/news/470129/agentics-tech-things-tokenmaxxing",
+      "hot": "Tue, 30 Jun 2026 15:08:25 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Kimi 估值升至 315 亿美元，收入曲线现 Anthropic 早期特征",
+      "url": "https://www.oschina.net/news/470103",
+      "hot": "Tue, 30 Jun 2026 14:12:59 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Electron 42.5.1 发布",
+      "url": "https://www.oschina.net/news/470093/electron-42-5-1-released",
+      "hot": "Tue, 30 Jun 2026 13:52:13 +0800"
+    },
+    {
+      "rank": 6,
       "title": "体积再小 10 倍，支持录屏，截图软件 ScreenCapture 2.4.6 发布",
       "url": "https://www.oschina.net/news/470060/screencapture-2-4-6-released",
       "hot": "Tue, 30 Jun 2026 11:59:47 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "HTTP QUERY 方法正式官宣，一个能带 Body 的 GET",
       "url": "https://www.oschina.net/news/470058",
       "hot": "Tue, 30 Jun 2026 11:57:16 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "美团开源 LongCat-2.0",
       "url": "https://www.oschina.net/news/470047",
       "hot": "Tue, 30 Jun 2026 11:42:45 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "SQLAlchemy 2.1.0b3 发布",
       "url": "https://www.oschina.net/news/470038/sqlalchemy-2-1-0b3-released",
       "hot": "Tue, 30 Jun 2026 11:22:57 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "DeepSeek V4 正式版将于 7 月中旬上线，采用峰谷定价机制",
       "url": "https://www.oschina.net/news/470031",
       "hot": "Tue, 30 Jun 2026 11:19:25 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "分布式系统架构：性能优化方法",
-      "url": "https://my.oschina.net/xiandafu/blog/19713866",
-      "hot": "Tue, 30 Jun 2026 11:07:25 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "ACL v1.0 发布，面向 AI 时代的“开源”商业许可证",
-      "url": "https://www.oschina.net/news/470024",
-      "hot": "Tue, 30 Jun 2026 11:04:30 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "微软推出 WSL Containers 首个公开预览版",
-      "url": "https://www.oschina.net/news/470021",
-      "hot": "Tue, 30 Jun 2026 10:57:40 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "TaiXu-Admin V0.1.1 发布，LLM+RAG+Agent 应用技术系统",
-      "url": "https://www.oschina.net/news/470017/taixu-admin-0-1-1-released",
-      "hot": "Tue, 30 Jun 2026 10:49:33 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Git for Windows v2.55.0 发布，将不再支持 Win8.1",
-      "url": "https://www.oschina.net/news/470010/git-for-windows-2-55-0-released",
-      "hot": "Tue, 30 Jun 2026 10:43:13 +0800"
     }
   ]
 }

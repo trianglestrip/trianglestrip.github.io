@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-30T04:38:53+00:00",
+  "updated_at": "2026-06-30T08:09:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 用 Canvas 构建一个能互动的治愈鱼缸",
-      "url": "https://ost.51cto.com/posts/50796",
-      "hot": "HarmonyOS桌面水族箱开发指南：用Canvas构建一个能互动的治愈鱼缸一、为什么要在屏幕上养一缸鱼？这篇文章我就把这个水族箱的完整开发过程..."
+      "title": "Claude Code之父最新判断：AI时代团队分工被重写，这「五种人」最吃香",
+      "url": "https://www.51cto.com/article/847922.html",
+      "hot": "近日，Anthropic Claude Code 团队负责人 Boris Cherny 在 X 上提出了一个很有意思的观察。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 红包雨实战：从 Canvas 绘制到状态管理 V2 的完整开发指南",
-      "url": "https://ost.51cto.com/posts/50792",
-      "hot": "HarmonyOS红包雨实战：从Canvas绘制到状态管理V2的完整开发指南一、为什么选择「红包雨」作为练手项目？这篇文章会把整个开发过程从头到尾..."
+      "title": "担心蒸馏问题，Meta限用Claude Code、Codex",
+      "url": "https://www.51cto.com/article/847949.html",
+      "hot": "据外媒 The Information 报道：Meta 正在限制员工在 AI 模型构建中使用 Claude Code 和 Codex，原因是担心涉及模型蒸馏。"
     },
     {
       "rank": 3,
-      "title": "刚刚，OpenClaw和Cursor杀入手机！Agent从此塞进口袋",
-      "url": "https://www.51cto.com/article/847910.html",
-      "hot": "AI彻底挣脱工位束缚！刚刚，OpenClaw和Cursor同日发布原生App，把满血Agent实打实塞进了iPhone。随时随地调遣AI军团的「掌心时代」，真的来了。"
+      "title": "AI圈刚开始谈Loop Engineering，两位95后博士已经盯上了人类闭环数据",
+      "url": "https://www.51cto.com/article/847950.html",
+      "hot": "真正可扩展的智能，不是一次性给出答案，而是在反馈中不断逼近正确结果。"
     },
     {
       "rank": 4,
-      "title": "新型 Claude Code 攻击可让攻击者完全控制开发者系统",
-      "url": "https://www.51cto.com/article/847905.html",
-      "hot": "根据 OWASP 基金会定义，提示注入被列为 LLM01:2025，是 AI 应用中最关键的安全漏洞。这项最新研究揭示了其危害性——它不仅是聊天机器人的小问题，而是能导致系统完全沦陷的攻击机制。"
+      "title": "DeepSeek点燃大模型效率之争，阶跃火速接棒：JetSpec让大模型解码速度最高提升近10倍",
+      "url": "https://www.51cto.com/article/847951.html",
+      "hot": "投机解码通过让轻量级草稿模型提前生成候选token，再由目标模型一次性并行验证这些候选结果，从而加速自回归生成。"
     },
     {
       "rank": 5,
-      "title": "TypeScript 类型检查、Vitest 测试和 ESLint 规范，Vue 项目质量三件套",
-      "url": "https://www.51cto.com/article/847869.html",
-      "hot": "TypeScript 就像给代码买了一份\"保险\"，在你按下保存键之前，就把那些潜在的类型错误揪出来，省得你上线之后被用户骂街。"
+      "title": "GLM-5.3你来定！智谱唐杰全球征集意见，评论区清一色：视觉",
+      "url": "https://www.51cto.com/article/847952.html",
+      "hot": "昨天先是畅聊AI认知，“AI的终局就是AGI，一场猎龙游戏”。引起广泛热议后，一觉醒来今天又在𝕏当众征集意见。"
     },
     {
       "rank": 6,
-      "title": "Python 处理 Excel 最全指南：从性能提升 500% 到让报表自动刷新",
-      "url": "https://www.51cto.com/article/847904.html",
-      "hot": "我用Python处理Excel已经五年，从最开始的openpyxl，到后来的pandas、xlwings，踩过的坑比写过的代码还多。今天这篇文章，就是把我五年积累的全部经验，整理成一套“选刀-磨刀-用刀”的完整指南。"
+      "title": "破天荒！DeepSeek V4正式版居然要涨价，而且翻着倍地涨",
+      "url": "https://www.51cto.com/article/847955.html",
+      "hot": "从V3到R1再到预览版V4，不断破圈的DeepSeek每次让人眼前一亮又一亮，一方面是模型能力本身出色，与此同时，价格也是它最锋利的一把刀。"
     },
     {
       "rank": 7,
-      "title": "字节二面：日增 1TB 的 ES 集群，90% 的人算错一笔账直接挂",
-      "url": "https://www.51cto.com/article/847868.html",
-      "hot": "背数字谁都会，但能从业务量推导出集群规模、从集群规模反推分片策略、从分片策略关联到 JVM 参数——这才叫架构思维。"
+      "title": "Agent之间，有互联网了！",
+      "url": "https://www.51cto.com/article/847957.html",
+      "hot": "当一个人只有一个Agent，这叫效率工具；当一个公司里开始出现十个、一百个、甚至更多 Agent，事情就没那么简单了。"
     },
     {
       "rank": 8,
-      "title": "DeepSeek推理再提速80%，V4正式版定档七月中旬",
-      "url": "https://www.51cto.com/article/847903.html",
-      "hot": "DeepSeek-V4正式版官宣定档7月中旬，也将受益于DSpark，推理速度大幅提升。"
+      "title": "AGI倒计时，OpenAI首席研究官重磅表态：留给人类的窗口「很小」",
+      "url": "https://www.51cto.com/article/847958.html",
+      "hot": "OpenAI首席研究官Mark Chen释放了一个强烈信号：OpenAI 并不认为scaling laws已经失效，恰恰相反，预训练、数据工程、推理训练和更长任务链条，仍是通向AGI的主干道路。"
     },
     {
       "rank": 9,
-      "title": "ClawHub Skills 暴露 AI Agents 面临远程控制后门与数据窃取攻击风险",
-      "url": "https://www.51cto.com/article/847901.html",
-      "hot": "ClawHub 恶意 skills 暴露 AI Agents 远程控制后门，24 万次安装致 230 万美元损失！"
+      "title": "HarmonyOS 习惯打卡器完全指南：从热力图到统计面板的完整实现",
+      "url": "https://ost.51cto.com/posts/50829",
+      "hot": "HarmonyOS习惯打卡器完全指南：从热力图到统计面板的完整实现一、可视化反馈不是你不够自律，是你没有可视化反馈。如果每天早起之后，能看..."
     },
     {
       "rank": 10,
-      "title": "51天一个新版本！ChatGPT和Claude狂飙，谷歌被甩出代差",
-      "url": "https://www.51cto.com/article/847900.html",
-      "hot": "AI圈彻底进入生死时速！OpenAI和Anthropic极限狂飙，平均51天空降一个新模型，直接把谷歌甩在了身后。"
+      "title": "HarmonyOS 天气动效引擎：从零构建 10 种天气的 Canvas 粒子动画全解",
+      "url": "https://ost.51cto.com/posts/50822",
+      "hot": "HarmonyOS天气动效引擎：从零构建10种天气的Canvas粒子动画全解一、一个天气App的&ldquo;灵魂&rdquo;在哪里？折腾了三天，我最终做出了10种天气动效：..."
     }
   ]
 }
