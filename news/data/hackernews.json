@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-30T19:21:35+00:00",
+  "updated_at": "2026-06-30T22:36:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Claude Sonnet 5",
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "hot": "402"
+      "hot": "757"
     },
     {
       "rank": 2,
       "title": "Claude Code is steganographically marking requests",
       "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
-      "hot": "787"
+      "hot": "1221"
     },
     {
       "rank": 3,
-      "title": "Claude Science",
-      "url": "https://claude.com/product/claude-science",
-      "hot": "156"
+      "title": "From brain waves to words: a new path to communication without surgery",
+      "url": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1",
+      "hot": "53"
     },
     {
       "rank": 4,
-      "title": "Nano Banana 2 Lite",
-      "url": "https://deepmind.google/models/gemini-image/flash-lite/",
-      "hot": "150"
+      "title": "Claude Science",
+      "url": "https://claude.com/product/claude-science",
+      "hot": "308"
     },
     {
       "rank": 5,
-      "title": "We Are the Last People Who Know How It Works",
-      "url": "https://unix.foo/posts/last-people-who-know-how-it-works/",
-      "hot": "174"
+      "title": "Nano Banana 2 Lite",
+      "url": "https://deepmind.google/models/gemini-image/flash-lite/",
+      "hot": "265"
     },
     {
       "rank": 6,
-      "title": "I built a mmWave material classification radar",
-      "url": "https://gauthier-lechevalier.com/radar",
-      "hot": "48"
+      "title": "How does a pull-back car work? Illustrated teardown",
+      "url": "https://mechanical-pencil.com/products/car",
+      "hot": "56"
     },
     {
       "rank": 7,
-      "title": "Looking Ahead to Postgres 19",
-      "url": "https://www.snowflake.com/en/blog/engineering/postgresql-19-features-beta/",
-      "hot": "182"
+      "title": "I built a mmWave material classification radar (2025)",
+      "url": "https://gauthier-lechevalier.com/radar",
+      "hot": "115"
     },
     {
       "rank": 8,
-      "title": "County with 37 Data Centers Asks Schools to 'Conserve Electricity'",
-      "url": "https://www.404media.co/henrico-virginia-datacenter-energy-cost-email/",
-      "hot": "245"
+      "title": "Stroustrup's Rule (2024)",
+      "url": "https://buttondown.com/hillelwayne/archive/stroustrups-rule/",
+      "hot": "30"
     },
     {
       "rank": 9,
-      "title": "Memoirs of Extraordinary Popular Delusions and the Madness of Crowds (1852)",
-      "url": "https://www.gutenberg.org/ebooks/24518",
-      "hot": "130"
+      "title": "I ported Kubernetes to the browser",
+      "url": "https://ngrok.com/blog/i-ported-kubernetes-to-the-browser",
+      "hot": "94"
     },
     {
       "rank": 10,
-      "title": "Knoppix",
-      "url": "https://www.knopper.net/knoppix/index-en.html",
-      "hot": "153"
+      "title": "TabFM: A zero-shot foundation model for tabular data",
+      "url": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/",
+      "hot": "5"
     }
   ]
 }
