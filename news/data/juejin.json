@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-06-29T23:15:07+00:00",
+  "updated_at": "2026-06-30T04:38:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "React Renderer 分离的多平台架构",
       "url": "https://juejin.cn/post/7656342465024540718",
-      "hot": "1134"
+      "hot": "1323"
     },
     {
       "rank": 2,
-      "title": "我把祖传项目的构建时间砍了90%，领导以为我只是在\"优化了一下\"，结果隔壁组的CI都崩了来问我配置",
-      "url": "https://juejin.cn/post/7655348005602361363",
-      "hot": "594"
+      "title": "DeepSeek这次招得太猛了，36个岗位，80%都要会Agent！",
+      "url": "https://juejin.cn/post/7656300675647373321",
+      "hot": "747"
     },
     {
       "rank": 3,
-      "title": "白宫前脚下了限制令，OpenAI 后脚就把 GPT-5.6 发了",
-      "url": "https://juejin.cn/post/7655594666130554921",
-      "hot": "477"
+      "title": "我偷偷把公司的祖传 jQuery 项目改成了 Vue3，CTO 没发现，但全组都来抄我的代码了",
+      "url": "https://juejin.cn/post/7655631091143704595",
+      "hot": "630"
     },
     {
       "rank": 4,
-      "title": "DeepSeek这次招得太猛了，36个岗位，80%都要会Agent！",
-      "url": "https://juejin.cn/post/7656300675647373321",
-      "hot": "450"
+      "title": "AI具身交互：实现一个会说话的3D虚拟伴侣",
+      "url": "https://juejin.cn/post/7656050265523372032",
+      "hot": "459"
     },
     {
       "rank": 5,
-      "title": "`??` 和 `||` 搞混，线上用户头像全挂了",
-      "url": "https://juejin.cn/post/7655657102968438811",
-      "hot": "441"
+      "title": "AI 乱改代码？试试这套 SDD 规范驱动工作流",
+      "url": "https://juejin.cn/post/7656050265522913280",
+      "hot": "450"
     },
     {
       "rank": 6,
-      "title": "我偷偷把公司的祖传 jQuery 项目改成了 Vue3，CTO 没发现，但全组都来抄我的代码了",
-      "url": "https://juejin.cn/post/7655631091143704595",
-      "hot": "414"
+      "title": "如何让 AI 快速搭建一套生产 Agent ？全面理解 Agent 架构。",
+      "url": "https://juejin.cn/post/7656055019972722731",
+      "hot": "387"
     },
     {
       "rank": 7,
-      "title": "学不动了，入门 Compose Styles API",
-      "url": "https://juejin.cn/post/7655245911813128238",
-      "hot": "405"
+      "title": "为什么越来越多的人使用FastAPI?",
+      "url": "https://juejin.cn/post/7656613897318907958",
+      "hot": "351"
     },
     {
       "rank": 8,
-      "title": "AI具身交互：实现一个会说话的3D虚拟伴侣",
-      "url": "https://juejin.cn/post/7656050265523372032",
+      "title": "虽迟但到！GPT-5.6 终于来了！",
+      "url": "https://juejin.cn/post/7655631091143917587",
       "hot": "342"
     },
     {
       "rank": 9,
-      "title": "AI 乱改代码？试试这套 SDD 规范驱动工作流",
-      "url": "https://juejin.cn/post/7656050265522913280",
-      "hot": "333"
+      "title": "DSpark 讲透：DeepSeek 不换模型，硬把 V4 提速 85%，是怎么做到的？",
+      "url": "https://juejin.cn/post/7655691054172700718",
+      "hot": "324"
     },
     {
       "rank": 10,
-      "title": "如何让 AI 快速搭建一套生产 Agent ？全面理解 Agent 架构。",
-      "url": "https://juejin.cn/post/7656055019972722731",
-      "hot": "315"
+      "title": "Main-safe：现代Android 架构真正的分水岭",
+      "url": "https://juejin.cn/post/7656080006646497307",
+      "hot": "270"
     }
   ]
 }

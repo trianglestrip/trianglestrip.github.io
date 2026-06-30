@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-29T23:15:13+00:00",
+  "updated_at": "2026-06-30T04:38:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "react-native 鸿蒙 SafeAreaView 详解 — 避开状态栏和底部导航条",
-      "url": "https://ost.51cto.com/posts/50629",
-      "hot": "这个问题每个做跨平台App的都会遇到：iPhone有刘海，Android有挖孔，鸿蒙有顶部状态栏和底部导航条。你页面内容从屏幕最顶部开始渲染，肯定..."
+      "title": "HarmonyOS 用 Canvas 构建一个能互动的治愈鱼缸",
+      "url": "https://ost.51cto.com/posts/50796",
+      "hot": "HarmonyOS桌面水族箱开发指南：用Canvas构建一个能互动的治愈鱼缸一、为什么要在屏幕上养一缸鱼？这篇文章我就把这个水族箱的完整开发过程..."
     },
     {
       "rank": 2,
-      "title": "react-native 鸿蒙 ImageBackground 详解 — 图片背景+文字叠加",
-      "url": "https://ost.51cto.com/posts/50627",
-      "hot": "做电商App经常需要图片上面叠文字&mdash;&mdash;促销Banner、商品卡片、分类入口。方案无非两种：用Image+子元素absolute定位，或者直接用ImageBackgr..."
+      "title": "HarmonyOS 红包雨实战：从 Canvas 绘制到状态管理 V2 的完整开发指南",
+      "url": "https://ost.51cto.com/posts/50792",
+      "hot": "HarmonyOS红包雨实战：从Canvas绘制到状态管理V2的完整开发指南一、为什么选择「红包雨」作为练手项目？这篇文章会把整个开发过程从头到尾..."
     },
     {
       "rank": 3,
-      "title": "有人把 5.7 万星 OpenSpec 和 24 万星 Superpowers 融合成一个工作流在 Github 开源......",
-      "url": "https://www.51cto.com/article/847758.html",
-      "hot": "OpenSpec 和 Superpowers，一个 5.7 万星，一个 24 万星，能走到今天这个位置，靠的是各自在自己领域做到极致。我对这两个框架的作者都充满敬意——它们的设计思路给了我很多启发。"
+      "title": "刚刚，OpenClaw和Cursor杀入手机！Agent从此塞进口袋",
+      "url": "https://www.51cto.com/article/847910.html",
+      "hot": "AI彻底挣脱工位束缚！刚刚，OpenClaw和Cursor同日发布原生App，把满血Agent实打实塞进了iPhone。随时随地调遣AI军团的「掌心时代」，真的来了。"
     },
     {
       "rank": 4,
-      "title": "如何让大模型“吐字”更快？解析DeepSeek最新推理加速方案DSpark",
-      "url": "https://www.51cto.com/article/847733.html",
-      "hot": "为了提速，业内普遍采用了一种名为“投机解码”（Speculative Decoding）的技术。它的原理很直观：让一个小巧的“草稿模型”先快速猜出一段文本，再由庞大的“目标模型”一次性进行批量验证。"
+      "title": "新型 Claude Code 攻击可让攻击者完全控制开发者系统",
+      "url": "https://www.51cto.com/article/847905.html",
+      "hot": "根据 OWASP 基金会定义，提示注入被列为 LLM01:2025，是 AI 应用中最关键的安全漏洞。这项最新研究揭示了其危害性——它不仅是聊天机器人的小问题，而是能导致系统完全沦陷的攻击机制。"
     },
     {
       "rank": 5,
-      "title": "Anthropic 450亿致命死穴，中国式「白菜价」反手出招！",
-      "url": "https://www.51cto.com/article/847782.html",
-      "hot": "今天，一张图刷屏了。Anthropic营收正式超越OpenAI，登顶全球AI新王。晋身450亿营收的B端霸主，他们凭什么打赢这场商业战？揭秘硅谷这场教科书级的史诗逆袭，内幕数据全曝光！"
+      "title": "TypeScript 类型检查、Vitest 测试和 ESLint 规范，Vue 项目质量三件套",
+      "url": "https://www.51cto.com/article/847869.html",
+      "hot": "TypeScript 就像给代码买了一份\"保险\"，在你按下保存键之前，就把那些潜在的类型错误揪出来，省得你上线之后被用户骂街。"
     },
     {
       "rank": 6,
-      "title": "Anthropic 买下 Stainless：Agent 竞争转向工具连接层",
-      "url": "https://www.51cto.com/article/847796.html",
-      "hot": "Stainless 的核心能力是把 API 描述转成高质量 SDK、CLI 和文档。对传统 SaaS 来说，这是一层开发者体验工具。API 写得再好，如果 SDK 难用、类型不稳、文档跟不上，开发者集成成本就会上升。"
+      "title": "Python 处理 Excel 最全指南：从性能提升 500% 到让报表自动刷新",
+      "url": "https://www.51cto.com/article/847904.html",
+      "hot": "我用Python处理Excel已经五年，从最开始的openpyxl，到后来的pandas、xlwings，踩过的坑比写过的代码还多。今天这篇文章，就是把我五年积累的全部经验，整理成一套“选刀-磨刀-用刀”的完整指南。"
     },
     {
       "rank": 7,
-      "title": "Nvidia都在点赞的LoopWM世界模型，竟然来自一家中国初创FaceMind？",
-      "url": "https://www.51cto.com/article/847800.html",
-      "hot": "这项工作提供的，不只是一个新模型，更是一种新的看法：世界模型的未来，不一定是永远更大；也可能是让同样的参数，学会更有层次地思考。"
+      "title": "字节二面：日增 1TB 的 ES 集群，90% 的人算错一笔账直接挂",
+      "url": "https://www.51cto.com/article/847868.html",
+      "hot": "背数字谁都会，但能从业务量推导出集群规模、从集群规模反推分片策略、从分片策略关联到 JVM 参数——这才叫架构思维。"
     },
     {
       "rank": 8,
-      "title": "多收170万！AI账单黑箱曝光，Anthropic退钱不认账",
-      "url": "https://www.51cto.com/article/847802.html",
-      "hot": "AI能提效不假，但账单却越来越看不懂了。"
+      "title": "DeepSeek推理再提速80%，V4正式版定档七月中旬",
+      "url": "https://www.51cto.com/article/847903.html",
+      "hot": "DeepSeek-V4正式版官宣定档7月中旬，也将受益于DSpark，推理速度大幅提升。"
     },
     {
       "rank": 9,
-      "title": "刚刚OpenRouter发布2026最值得关注的“开源F4”，开源追上闭源了，差距只剩三到六个月",
-      "url": "https://www.51cto.com/article/847804.html",
-      "hot": "在过去长达18个月的时间里，开源与闭源的差距稳定保持在3到6个月之间。至少就目前来看，闭源大厂完全没有甩开开源阵营的迹象。"
+      "title": "ClawHub Skills 暴露 AI Agents 面临远程控制后门与数据窃取攻击风险",
+      "url": "https://www.51cto.com/article/847901.html",
+      "hot": "ClawHub 恶意 skills 暴露 AI Agents 远程控制后门，24 万次安装致 230 万美元损失！"
     },
     {
       "rank": 10,
-      "title": "答对了不等于答得好： Hugging Face 用一套新 Benchmark 量出了 Agent 用工具的真实代价",
-      "url": "https://www.51cto.com/article/847811.html",
-      "hot": "\"没有测试的功能等于不存在\"和\"没有文档的功能等于不存在\"——在 Agent 时代，这两条比以往任何时候都更紧密地绑在了一起。Agent 要使用你的工具，它需要可发现（discoverable）、API 清晰（clear）、文档完整（extensive）。"
+      "title": "51天一个新版本！ChatGPT和Claude狂飙，谷歌被甩出代差",
+      "url": "https://www.51cto.com/article/847900.html",
+      "hot": "AI圈彻底进入生死时速！OpenAI和Anthropic极限狂飙，平均51天空降一个新模型，直接把谷歌甩在了身后。"
     }
   ]
 }
