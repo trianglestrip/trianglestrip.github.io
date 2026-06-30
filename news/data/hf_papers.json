@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-30T11:21:16+00:00",
+  "updated_at": "2026-06-30T17:29:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "42"
+      "hot": "43"
     },
     {
       "rank": 2,
@@ -32,19 +32,19 @@
       "rank": 5,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "248"
+      "hot": "249"
     },
     {
       "rank": 6,
-      "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
-      "url": "https://huggingface.co/papers/2601.02163",
-      "hot": "11"
-    },
-    {
-      "rank": 7,
       "title": "A decoder-only foundation model for time-series forecasting",
       "url": "https://huggingface.co/papers/2310.10688",
       "hot": "37"
+    },
+    {
+      "rank": 7,
+      "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
+      "url": "https://huggingface.co/papers/2601.02163",
+      "hot": "12"
     },
     {
       "rank": 8,
