@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-30T11:20:58+00:00",
+  "updated_at": "2026-06-30T15:44:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "European digital ID wallets are a gift to Google and Apple",
-      "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
-      "hot": "49"
+      "title": "The labor share of income in the US is at its lowest post-war level",
+      "url": "https://libertystreeteconomics.newyorkfed.org/2026/06/the-post-covid-decline-in-the-labor-share/",
+      "hot": "41"
     },
     {
       "rank": 2,
-      "title": "Building a custom octocopter from scratch with no prior hardware experience",
-      "url": "https://karolina.mgdubiel.com/drone/",
-      "hot": "59"
+      "title": "Looking Ahead to Postgres 19",
+      "url": "https://www.snowflake.com/en/blog/engineering/postgresql-19-features-beta/",
+      "hot": "85"
     },
     {
       "rank": 3,
-      "title": "Open Source Low Tech",
-      "url": "https://opensourcelowtech.org/",
-      "hot": "293"
+      "title": "Memoirs of Extraordinary Popular Delusions and the Madness of Crowds (1852)",
+      "url": "https://www.gutenberg.org/ebooks/24518",
+      "hot": "90"
     },
     {
       "rank": 4,
-      "title": "Antares Achieves Criticality of Mark-0 Reactor",
-      "url": "https://antaresindustries.com/updates/antares-achieves-criticality",
-      "hot": "26"
+      "title": "We moved our Bluesky data to Eurosky",
+      "url": "https://waag.org/en/article/why-we-moved-our-bluesky-data-eurosky/",
+      "hot": "14"
     },
     {
       "rank": 5,
-      "title": "Exercise intensity influences body composition in healthy older adults",
-      "url": "https://www.maturitas.org/article/S0378-5122(25)00571-7/fulltext",
-      "hot": "9"
+      "title": "Building a custom octocopter from scratch with no prior hardware experience",
+      "url": "https://karolina.mgdubiel.com/drone/",
+      "hot": "206"
     },
     {
       "rank": 6,
-      "title": "Qwen 3.6 27B is the sweet spot for local development",
-      "url": "https://quesma.com/blog/qwen-36-is-awesome/",
-      "hot": "960"
+      "title": "European digital ID wallets rely on safety services of Google and Apple",
+      "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
+      "hot": "537"
     },
     {
       "rank": 7,
-      "title": "Should every baby's DNA be sequenced?",
-      "url": "https://www.economist.com/science-and-technology/2026/06/29/should-every-babys-dna-be-sequenced",
-      "hot": "4"
+      "title": "Open Source Low Tech",
+      "url": "https://opensourcelowtech.org/",
+      "hot": "474"
     },
     {
       "rank": 8,
-      "title": ".self: A new top-level domain designed to support self-hosting",
-      "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
-      "hot": "539"
+      "title": "Zluda 6 release (run unmodified CUDA applications on non-Nvidia GPUs)",
+      "url": "https://vosen.github.io/ZLUDA/blog/zluda-update-q1q2-2026/",
+      "hot": "69"
     },
     {
       "rank": 9,
-      "title": "Sony erases digital content from libraries; reminded we don't own what we buy",
-      "url": "https://arstechnica.com/gadgets/2026/06/sony-erases-digital-content-from-libraries-were-reminded-we-dont-own-what-we-buy/",
-      "hot": "20"
+      "title": "Knoppix",
+      "url": "https://www.knopper.net/knoppix/index-en.html",
+      "hot": "47"
     },
     {
       "rank": 10,
-      "title": "Free the Icons",
-      "url": "https://weblog.rogueamoeba.com/2026/06/26/free-the-icons/",
-      "hot": "502"
+      "title": "Qwen 3.6 27B is the sweet spot for local development",
+      "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+      "hot": "1052"
     }
   ]
 }
