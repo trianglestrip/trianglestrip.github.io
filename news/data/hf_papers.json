@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-06-30T17:29:58+00:00",
+  "updated_at": "2026-06-30T23:48:05+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,15 +36,15 @@
     },
     {
       "rank": 6,
-      "title": "A decoder-only foundation model for time-series forecasting",
-      "url": "https://huggingface.co/papers/2310.10688",
-      "hot": "37"
-    },
-    {
-      "rank": 7,
       "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
       "url": "https://huggingface.co/papers/2601.02163",
       "hot": "12"
+    },
+    {
+      "rank": 7,
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "37"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
-      "url": "https://huggingface.co/papers/2606.03264",
-      "hot": "23"
+      "title": "olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language\n  Models",
+      "url": "https://huggingface.co/papers/2502.18443",
+      "hot": "12"
     },
     {
       "rank": 10,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "82"
+      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
+      "url": "https://huggingface.co/papers/2606.03264",
+      "hot": "23"
     }
   ]
 }
