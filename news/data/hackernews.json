@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-06-30T08:09:34+00:00",
+  "updated_at": "2026-06-30T11:20:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Qwen 3.6 27B is the sweet spot for local development",
-      "url": "https://quesma.com/blog/qwen-36-is-awesome/",
-      "hot": "879"
+      "title": "European digital ID wallets are a gift to Google and Apple",
+      "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
+      "hot": "49"
     },
     {
       "rank": 2,
-      "title": "Open Source Low Tech",
-      "url": "https://opensourcelowtech.org/",
-      "hot": "68"
+      "title": "Building a custom octocopter from scratch with no prior hardware experience",
+      "url": "https://karolina.mgdubiel.com/drone/",
+      "hot": "59"
     },
     {
       "rank": 3,
-      "title": ".self: A new top-level domain designed to support self-hosting",
-      "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
-      "hot": "481"
+      "title": "Open Source Low Tech",
+      "url": "https://opensourcelowtech.org/",
+      "hot": "293"
     },
     {
       "rank": 4,
-      "title": "Free the Icons",
-      "url": "https://weblog.rogueamoeba.com/2026/06/26/free-the-icons/",
-      "hot": "414"
-    },
-    {
-      "rank": 5,
-      "title": "LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active",
-      "url": "https://longcat.chat/blog/longcat-2.0/",
-      "hot": "120"
-    },
-    {
-      "rank": 6,
-      "title": "Memory Safe Context Switching",
-      "url": "https://fil-c.org/context_switches",
-      "hot": "109"
-    },
-    {
-      "rank": 7,
-      "title": "Old Computer Challenge",
-      "url": "http://occ.sdf.org/",
-      "hot": "55"
-    },
-    {
-      "rank": 8,
-      "title": "The end of the AArch64 desktop experiment",
-      "url": "https://marcin.juszkiewicz.com.pl/2026/06/26/the-end-of-the-aarch64-desktop-experiment/",
+      "title": "Antares Achieves Criticality of Mark-0 Reactor",
+      "url": "https://antaresindustries.com/updates/antares-achieves-criticality",
       "hot": "26"
     },
     {
+      "rank": 5,
+      "title": "Exercise intensity influences body composition in healthy older adults",
+      "url": "https://www.maturitas.org/article/S0378-5122(25)00571-7/fulltext",
+      "hot": "9"
+    },
+    {
+      "rank": 6,
+      "title": "Qwen 3.6 27B is the sweet spot for local development",
+      "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+      "hot": "960"
+    },
+    {
+      "rank": 7,
+      "title": "Should every baby's DNA be sequenced?",
+      "url": "https://www.economist.com/science-and-technology/2026/06/29/should-every-babys-dna-be-sequenced",
+      "hot": "4"
+    },
+    {
+      "rank": 8,
+      "title": ".self: A new top-level domain designed to support self-hosting",
+      "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
+      "hot": "539"
+    },
+    {
       "rank": 9,
-      "title": "Exploring PDP-1 Lisp (1960)",
-      "url": "https://obsolescence.dev/pdp1-lisp-introduction.html",
-      "hot": "58"
+      "title": "Sony erases digital content from libraries; reminded we don't own what we buy",
+      "url": "https://arstechnica.com/gadgets/2026/06/sony-erases-digital-content-from-libraries-were-reminded-we-dont-own-what-we-buy/",
+      "hot": "20"
     },
     {
       "rank": 10,
-      "title": "Rocketlab acquires Iridium",
-      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
-      "hot": "401"
+      "title": "Free the Icons",
+      "url": "https://weblog.rogueamoeba.com/2026/06/26/free-the-icons/",
+      "hot": "502"
     }
   ]
 }

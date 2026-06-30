@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-30T08:09:33+00:00",
+  "updated_at": "2026-06-30T11:20:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "#码上鸿蒙•智绘未来#  DevEco Code 的 Skill 怎么安装？目录放置和 Prompt 两种方案详解",
+      "url": "https://ost.51cto.com/posts/50835",
+      "hot": "[toc](目录)前言前两章我已经把DevEcoCode的安装，以及Agent模型的自定义配置讲清楚了。那接下来，肯定就该进入一个更实用的话题：怎么给De..."
+    },
+    {
+      "rank": 2,
+      "title": "那个右下角的小数字怎么“卡”住我打字——我用 HarmonyOS 自己写了一个字数限制输入框",
+      "url": "https://ost.51cto.com/posts/50833",
+      "hot": "前言发微博的时候，你有没有被那个右下角的数字制裁过？你正写得文思泉涌，突然&ldquo;198200&rdquo;变成了&ldquo;205200&rdquo;，那串数字变红了，输入框也像被..."
+    },
+    {
+      "rank": 3,
       "title": "Claude Code之父最新判断：AI时代团队分工被重写，这「五种人」最吃香",
       "url": "https://www.51cto.com/article/847922.html",
       "hot": "近日，Anthropic Claude Code 团队负责人 Boris Cherny 在 X 上提出了一个很有意思的观察。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "担心蒸馏问题，Meta限用Claude Code、Codex",
       "url": "https://www.51cto.com/article/847949.html",
       "hot": "据外媒 The Information 报道：Meta 正在限制员工在 AI 模型构建中使用 Claude Code 和 Codex，原因是担心涉及模型蒸馏。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "AI圈刚开始谈Loop Engineering，两位95后博士已经盯上了人类闭环数据",
       "url": "https://www.51cto.com/article/847950.html",
       "hot": "真正可扩展的智能，不是一次性给出答案，而是在反馈中不断逼近正确结果。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "DeepSeek点燃大模型效率之争，阶跃火速接棒：JetSpec让大模型解码速度最高提升近10倍",
       "url": "https://www.51cto.com/article/847951.html",
       "hot": "投机解码通过让轻量级草稿模型提前生成候选token，再由目标模型一次性并行验证这些候选结果，从而加速自回归生成。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "GLM-5.3你来定！智谱唐杰全球征集意见，评论区清一色：视觉",
       "url": "https://www.51cto.com/article/847952.html",
       "hot": "昨天先是畅聊AI认知，“AI的终局就是AGI，一场猎龙游戏”。引起广泛热议后，一觉醒来今天又在𝕏当众征集意见。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "破天荒！DeepSeek V4正式版居然要涨价，而且翻着倍地涨",
       "url": "https://www.51cto.com/article/847955.html",
       "hot": "从V3到R1再到预览版V4，不断破圈的DeepSeek每次让人眼前一亮又一亮，一方面是模型能力本身出色，与此同时，价格也是它最锋利的一把刀。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Agent之间，有互联网了！",
       "url": "https://www.51cto.com/article/847957.html",
       "hot": "当一个人只有一个Agent，这叫效率工具；当一个公司里开始出现十个、一百个、甚至更多 Agent，事情就没那么简单了。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "AGI倒计时，OpenAI首席研究官重磅表态：留给人类的窗口「很小」",
       "url": "https://www.51cto.com/article/847958.html",
       "hot": "OpenAI首席研究官Mark Chen释放了一个强烈信号：OpenAI 并不认为scaling laws已经失效，恰恰相反，预训练、数据工程、推理训练和更长任务链条，仍是通向AGI的主干道路。"
-    },
-    {
-      "rank": 9,
-      "title": "HarmonyOS 习惯打卡器完全指南：从热力图到统计面板的完整实现",
-      "url": "https://ost.51cto.com/posts/50829",
-      "hot": "HarmonyOS习惯打卡器完全指南：从热力图到统计面板的完整实现一、可视化反馈不是你不够自律，是你没有可视化反馈。如果每天早起之后，能看..."
-    },
-    {
-      "rank": 10,
-      "title": "HarmonyOS 天气动效引擎：从零构建 10 种天气的 Canvas 粒子动画全解",
-      "url": "https://ost.51cto.com/posts/50822",
-      "hot": "HarmonyOS天气动效引擎：从零构建10种天气的Canvas粒子动画全解一、一个天气App的&ldquo;灵魂&rdquo;在哪里？折腾了三天，我最终做出了10种天气动效：..."
     }
   ]
 }
