@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-01T06:22:40+00:00",
+  "updated_at": "2026-07-01T10:27:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude Code is steganographically marking requests",
-      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
-      "hot": "1700"
+      "title": "Asahi Linux 7.1 Progress Report",
+      "url": "https://asahilinux.org/2026/06/progress-report-7-1/",
+      "hot": "24"
     },
     {
       "rank": 2,
-      "title": "Claude Sonnet 5",
-      "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "hot": "1035"
+      "title": "Claude Code is steganographically marking requests",
+      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+      "hot": "2056"
     },
     {
       "rank": 3,
-      "title": "The first early human eggs from stem cells",
-      "url": "https://www.conception.bio/science-and-updates/the-first-early-human-eggs-from-stem-cells",
+      "title": "Newly discovered spider builds spring loaded snare to catch ants",
+      "url": "https://phys.org/news/2026-06-newly-australian-ballista-spider-snare.html",
       "hot": "36"
     },
     {
       "rank": 4,
-      "title": "Google copybara: moving code between repositories",
-      "url": "https://github.com/google/copybara",
-      "hot": "162"
+      "title": "Claude Sonnet 5",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "hot": "1137"
     },
     {
       "rank": 5,
-      "title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
-      "url": "https://twitter.com/AnthropicAI/status/2072106151890809341",
-      "hot": "542"
+      "title": "Godot will no longer accept AI-authored code contributions",
+      "url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
+      "hot": "173"
     },
     {
       "rank": 6,
       "title": "ArXiv's Next Chapter",
       "url": "https://blog.arxiv.org/2026/06/30/arxivs-next-chapter/",
-      "hot": "34"
+      "hot": "129"
     },
     {
       "rank": 7,
-      "title": "Claude Science",
-      "url": "https://claude.com/product/claude-science",
-      "hot": "441"
+      "title": "The first early human eggs from stem cells",
+      "url": "https://www.conception.bio/science-and-updates/the-first-early-human-eggs-from-stem-cells",
+      "hot": "125"
     },
     {
       "rank": 8,
-      "title": "Pystd, similar-ish functionality with a fraction of the compile time",
-      "url": "https://nibblestew.blogspot.com/2026/06/pystd-standard-library-similar-ish.html",
-      "hot": "15"
+      "title": "Google copybara: moving code between repositories",
+      "url": "https://github.com/google/copybara",
+      "hot": "215"
     },
     {
       "rank": 9,
-      "title": "Forestiere Underground Gardens",
-      "url": "https://en.wikipedia.org/wiki/Forestiere_Underground_Gardens",
-      "hot": "51"
+      "title": "Matrix Orthogonalization Improves Memory in Recurrent Models",
+      "url": "https://ayushtambde.com/blog/matrix-orthogonalization-improves-memory-in-recurrent-models/",
+      "hot": "43"
     },
     {
       "rank": 10,
-      "title": "Nano Banana 2 Lite",
-      "url": "https://deepmind.google/models/gemini-image/flash-lite/",
-      "hot": "347"
+      "title": "Claude Science",
+      "url": "https://claude.com/product/claude-science",
+      "hot": "498"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-01T06:22:45+00:00",
+  "updated_at": "2026-07-01T10:27:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "前后端一起消失：AI Coding 正在改写大厂工程师分工",
+      "url": "https://www.infoq.cn/article/rHiSH66JZwoQG5Dfvv6x?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 01 Jul 2026 17:59:33 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "有奖共建｜跑过数百万台服务器的AI运维系统开源了！提PR/报Bug/写体验，通通有奖",
+      "url": "https://xie.infoq.cn/article/bc3d416caccb50b6dc6044c04?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 29 Jun 2026 13:01:22 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Argo CD 3.5 推出内部双向 TLS 与源码完整性校验支持，强化软件供应链安全",
+      "url": "https://www.infoq.cn/article/MfHAiaeQbq6VWPHLD4pB?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 01 Jul 2026 17:32:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Anthropic 突发 Sonnet 5，但大家更期待 Fable 5 和 Mythos 5 明天解禁",
+      "url": "https://www.infoq.cn/article/S9zHYQqfFCXt8GoLlM5W?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 01 Jul 2026 17:09:25 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "从 QCon 到 AICon：参加 InfoQ 技术大会的第五年",
+      "url": "https://xie.infoq.cn/article/7810d0c988001188136144c14?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 17 Jun 2026 14:11:55 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "聚力 AI 硬件创新｜2026 首届 openvela AI 硬件开发者大赛火热报名中",
+      "url": "https://www.infoq.cn/article/arkN5tbl3ttDUTMM7v5J?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 01 Jul 2026 16:02:53 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "Cloudflare 如何解决了 quiche 中的一个拥塞漏洞",
+      "url": "https://www.infoq.cn/article/CHON5sllKKAMBg309xiZ?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 01 Jul 2026 15:01:00 GMT"
+    },
+    {
+      "rank": 8,
+      "title": "他用一条中文推文，点燃DeepSeek开源社区",
+      "url": "https://www.infoq.cn/video/7drQWlqtxBb5euT4eUYB?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 01 Jul 2026 14:36:45 GMT"
+    },
+    {
+      "rank": 9,
       "title": "Agent成为数据库新用户，AI数据库为什么必须走向湖库一体？",
       "url": "https://www.infoq.cn/article/1f1PdxW2458qx5gPfyeg?utm_source=rss&utm_medium=article",
       "hot": "Wed, 01 Jul 2026 14:11:36 GMT"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "Slack 概述了构建多云 AI 服务平台的四阶段发展路径",
       "url": "https://www.infoq.cn/article/GMuuiabHp38rbydKJVqW?utm_source=rss&utm_medium=article",
       "hot": "Wed, 01 Jul 2026 13:29:00 GMT"
-    },
-    {
-      "rank": 3,
-      "title": "Cloudflare 推出支持零信任部署和迁移的代理技能",
-      "url": "https://www.infoq.cn/article/fTk8yti9vUIP9hbP5Lcs?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 01 Jul 2026 11:00:00 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "在企业内部构建欧洲云编排平台",
-      "url": "https://www.infoq.cn/article/WauDgmzsNkHocILNI86f?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 01 Jul 2026 09:40:55 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "8 人起家年入上亿美元，推出自研大模型对战 Cursor、Claude Code？",
-      "url": "https://www.infoq.cn/article/lgKWA0PHN4zsOkB4C4Pv?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 30 Jun 2026 18:29:30 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "网易有道CEO周枫：Harness即产品",
-      "url": "https://www.infoq.cn/article/3X8E2FVCllu24XYVoPeK?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 30 Jun 2026 18:23:05 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Arm 计算平台加持，联想车计算推动 L4 级自动驾驶出租车规模化落地",
-      "url": "https://www.infoq.cn/article/Ny7RygQpB3cbBUvU57GW?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 30 Jun 2026 18:03:03 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "物理 AI 演进之路：从受控环境走向现实世界",
-      "url": "https://www.infoq.cn/article/erU6ZuSI5qowMlIGSr8i?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 30 Jun 2026 17:56:34 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Cursor、OpenClaw 同时出手，“口袋编程”时代来了：程序员只用“动嘴”！",
-      "url": "https://www.infoq.cn/article/6WCaAMdgSR8r46j3OZd4?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 30 Jun 2026 17:46:54 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Anthropic 负责人：HTML 比 MD 更利于人类跟进智能体协作流程",
-      "url": "https://www.infoq.cn/article/i3eauD7F8KF9gVY3SD18?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 30 Jun 2026 17:00:00 GMT"
     }
   ]
 }
