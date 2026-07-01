@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-01T13:19:30+00:00",
+  "updated_at": "2026-07-01T15:50:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Asahi Linux 7.1 Progress Report",
-      "url": "https://asahilinux.org/2026/06/progress-report-7-1/",
-      "hot": "279"
+      "title": "For First Time, a Cell Built from Scratch Grows and Divides",
+      "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
+      "hot": "95"
     },
     {
       "rank": 2,
-      "title": "Single Dose of Frog-Derived Gut Bacterium Eradicates 100% of Tumors in Mice",
-      "url": "https://www.thefocalpoints.com/p/new-study-frog-derived-gut-bacterium",
-      "hot": "159"
+      "title": "SpudCell: The first synthetic cell with a complete cell cycle",
+      "url": "https://biotic.org/research/spudcell/",
+      "hot": "38"
     },
     {
       "rank": 3,
-      "title": "Claude Code is steganographically marking requests",
-      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
-      "hot": "2213"
+      "title": "Asahi Linux 7.1 Progress Report",
+      "url": "https://asahilinux.org/2026/06/progress-report-7-1/",
+      "hot": "404"
     },
     {
       "rank": 4,
-      "title": "Newly discovered spider builds spring loaded snare to catch ants",
-      "url": "https://phys.org/news/2026-06-newly-australian-ballista-spider-snare.html",
-      "hot": "129"
+      "title": "Why I Stopped Arguing with People",
+      "url": "https://wangcong.org/2026-06-30-why-i-stopped-arguing-with-people.html",
+      "hot": "439"
     },
     {
       "rank": 5,
-      "title": "The Internet I Grew Up with Doesn't Exist Anymore",
-      "url": "https://cleberg.net/blog/internet.html",
-      "hot": "113"
+      "title": "Single Dose of Frog-Derived Gut Bacterium Eradicates 100% of Tumors in Mice",
+      "url": "https://www.thefocalpoints.com/p/new-study-frog-derived-gut-bacterium",
+      "hot": "331"
     },
     {
       "rank": 6,
-      "title": "Nintendo has raised its employees base salary by 10%",
-      "url": "https://mynintendonews.com/2026/06/26/nintendo-has-raised-its-employees-base-salary-by-10/",
-      "hot": "85"
+      "title": "Announcing Box3D :: Box2D",
+      "url": "https://box2d.org/posts/2026/06/announcing-box3d/",
+      "hot": "115"
     },
     {
       "rank": 7,
-      "title": "Claude Sonnet 5",
-      "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "hot": "1173"
+      "title": "Launch HN: Parsewise (YC P25) – Reason Across Documents with an API",
+      "url": "https://news.ycombinator.com/item?id=48746752",
+      "hot": "21"
     },
     {
       "rank": 8,
-      "title": "Godot will no longer accept AI-authored code contributions",
-      "url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
-      "hot": "353"
+      "title": "Nintendo has raised its employees base salary by 10%",
+      "url": "https://mynintendonews.com/2026/06/26/nintendo-has-raised-its-employees-base-salary-by-10/",
+      "hot": "314"
     },
     {
       "rank": 9,
-      "title": "Obfuscation: Building the final boss of cryptography (Part I)",
-      "url": "https://vitalik.eth.limo/general/2026/06/29/obfuscation1.html",
-      "hot": "24"
+      "title": "Monetization Gateway",
+      "url": "https://blog.cloudflare.com/monetization-gateway/",
+      "hot": "34"
     },
     {
       "rank": 10,
-      "title": "A deep dive into SmallVector:push_back",
-      "url": "https://maskray.me/blog/2026-06-27-a-deep-dive-into-smallvector-push-back",
-      "hot": "11"
+      "title": "Red Programming Language: Static linking support",
+      "url": "https://www.red-lang.org/2026/06/static-linking-support.html",
+      "hot": "27"
     }
   ]
 }
