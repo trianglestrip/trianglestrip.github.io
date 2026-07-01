@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-01T01:58:06+00:00",
+  "updated_at": "2026-07-01T06:22:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 选择控件完全指南：从 Toggle 开关到 Checkbox 多选的四个实战场景",
+      "url": "https://ost.51cto.com/posts/51017",
+      "hot": "HarmonyOS选择控件完全指南：从Toggle开关到Checkbox多选的四个实战场景一、选择控件：App交互的基石开关、单选、多选是每个App里出现频率..."
+    },
+    {
+      "rank": 2,
       "title": "刚刚，Fable 5全球解禁！",
       "url": "https://www.51cto.com/article/848064.html",
       "hot": "18天后，AI圈终于迎来了一场狂欢！今天，Anthropic官宣：美国商务部正式撤销对Anthropic旗下神级模型Fable 5（以及Mythos 5）的出口管制，明天恢复访问。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Claude Code官宣下一版大升级！你在聊天，后台把活干完了",
       "url": "https://www.51cto.com/article/848061.html",
       "hot": "Boris Cherny 官宣下版 Claude Code 子智能体默认后台运行、边聊边干活——软件工程的稀缺资源，正从「能写代码的手」换成「知道该写什么的脑子」。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Python 写循环的十个实用技巧：别人还在嵌套，你一行搞定",
       "url": "https://www.51cto.com/article/848060.html",
       "hot": "循环是Python里写得最多的结构，但大多数人写来写去就是for x in list加range(len())。那些能省掉嵌套、避免flag变量、让循环自解释的技巧，往往用到的时候才后悔没早点知道。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Anthropic偷偷在Claude Code中植入了隐形代码，只为识别中国用户",
       "url": "https://www.51cto.com/article/848059.html",
       "hot": "这两天，Claude大面积封号。国内的Claude用户，几乎被封完了。我的两个Max订阅账号，已经阵亡了一个了。。。剩下一个老号在苟延残喘，感觉过不了两天这个号基本上也会没了。而且非常骚的是，大家发现，Anthropic在给大家封号的邮件里，甚至还偷偷埋了一个地址追踪。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Python 的多态，其实比你想象的要简单",
       "url": "https://www.51cto.com/article/848058.html",
       "hot": "Python 的多态不需要继承关系，靠鸭子类型就够了。它把类型检查推迟到运行时，换来的是更少的样板代码和更灵活的扩展方式。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "退钱！Claude 4.8连夜大降智，GPT-5.6算力遭「腰斩」",
       "url": "https://www.51cto.com/article/848057.html",
       "hot": "最近，AI社区遭遇集体降智潮！OpenAI疑似暗中开启GPT-5.6灰度测试，神秘「Juice」测试引爆全网查成分；另一边，Anthropic的Claude Opus 4.8被曝断崖式降智，疑似被切脑。我们花钱买到的AI，究竟是什么版本？"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "普朗克被撤稿了？量子之父竟被算法绊了一跤",
       "url": "https://www.51cto.com/article/848052.html",
       "hot": "一篇新论文指出，普朗克发表于 1940 年和 1942 年的两篇文章，竟然在 Springer 的数字平台上被标记为「retracted」（撤回）。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "GitHub 安全公告数据库处理量创新高，漏洞报告数量远超审核能力",
       "url": "https://www.51cto.com/article/848056.html",
       "hot": "此次破纪录增长折射出网络安全领域的根本性转变，虽然带来运营压力，这也标志着软件供应链透明度和安全性提升的重要进展。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "刚刚，Anthropic发布Sonnet 5，性能接近Opus 4.8，但不一定更便宜",
       "url": "https://www.51cto.com/article/848048.html",
       "hot": "Sonnet 5 在推理、工具使用、编程和知识工作方面，相比 Sonnet 4.6 性能有显著提升，更接近 Opus 4.8，但价格更低。"
-    },
-    {
-      "rank": 10,
-      "title": "Claude Code 的 webapp-testing 到底怎么验收网页？从 CDP 原理到脚本断言讲透",
-      "url": "https://www.51cto.com/article/848010.html",
-      "hot": "本文将针对Anthropic官方提供的web自动化测试skill webapp-testing展开详细的分析和介绍。"
     }
   ]
 }
