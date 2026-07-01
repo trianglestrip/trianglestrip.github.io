@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-06-30T22:36:38+00:00",
+  "updated_at": "2026-07-01T01:58:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "#码上鸿蒙•智绘未来#  DevEco Code 的 Skill 怎么安装？目录放置和 Prompt 两种方案详解",
-      "url": "https://ost.51cto.com/posts/50835",
-      "hot": "[toc](目录)前言前两章我已经把DevEcoCode的安装，以及Agent模型的自定义配置讲清楚了。那接下来，肯定就该进入一个更实用的话题：怎么给De..."
+      "title": "刚刚，Fable 5全球解禁！",
+      "url": "https://www.51cto.com/article/848064.html",
+      "hot": "18天后，AI圈终于迎来了一场狂欢！今天，Anthropic官宣：美国商务部正式撤销对Anthropic旗下神级模型Fable 5（以及Mythos 5）的出口管制，明天恢复访问。"
     },
     {
       "rank": 2,
-      "title": "那个右下角的小数字怎么“卡”住我打字——我用 HarmonyOS 自己写了一个字数限制输入框",
-      "url": "https://ost.51cto.com/posts/50833",
-      "hot": "前言发微博的时候，你有没有被那个右下角的数字制裁过？你正写得文思泉涌，突然&ldquo;198200&rdquo;变成了&ldquo;205200&rdquo;，那串数字变红了，输入框也像被..."
+      "title": "Claude Code官宣下一版大升级！你在聊天，后台把活干完了",
+      "url": "https://www.51cto.com/article/848061.html",
+      "hot": "Boris Cherny 官宣下版 Claude Code 子智能体默认后台运行、边聊边干活——软件工程的稀缺资源，正从「能写代码的手」换成「知道该写什么的脑子」。"
     },
     {
       "rank": 3,
-      "title": "Claude Code之父最新判断：AI时代团队分工被重写，这「五种人」最吃香",
-      "url": "https://www.51cto.com/article/847922.html",
-      "hot": "近日，Anthropic Claude Code 团队负责人 Boris Cherny 在 X 上提出了一个很有意思的观察。"
+      "title": "Python 写循环的十个实用技巧：别人还在嵌套，你一行搞定",
+      "url": "https://www.51cto.com/article/848060.html",
+      "hot": "循环是Python里写得最多的结构，但大多数人写来写去就是for x in list加range(len())。那些能省掉嵌套、避免flag变量、让循环自解释的技巧，往往用到的时候才后悔没早点知道。"
     },
     {
       "rank": 4,
-      "title": "担心蒸馏问题，Meta限用Claude Code、Codex",
-      "url": "https://www.51cto.com/article/847949.html",
-      "hot": "据外媒 The Information 报道：Meta 正在限制员工在 AI 模型构建中使用 Claude Code 和 Codex，原因是担心涉及模型蒸馏。"
+      "title": "Anthropic偷偷在Claude Code中植入了隐形代码，只为识别中国用户",
+      "url": "https://www.51cto.com/article/848059.html",
+      "hot": "这两天，Claude大面积封号。国内的Claude用户，几乎被封完了。我的两个Max订阅账号，已经阵亡了一个了。。。剩下一个老号在苟延残喘，感觉过不了两天这个号基本上也会没了。而且非常骚的是，大家发现，Anthropic在给大家封号的邮件里，甚至还偷偷埋了一个地址追踪。"
     },
     {
       "rank": 5,
-      "title": "AI圈刚开始谈Loop Engineering，两位95后博士已经盯上了人类闭环数据",
-      "url": "https://www.51cto.com/article/847950.html",
-      "hot": "真正可扩展的智能，不是一次性给出答案，而是在反馈中不断逼近正确结果。"
+      "title": "Python 的多态，其实比你想象的要简单",
+      "url": "https://www.51cto.com/article/848058.html",
+      "hot": "Python 的多态不需要继承关系，靠鸭子类型就够了。它把类型检查推迟到运行时，换来的是更少的样板代码和更灵活的扩展方式。"
     },
     {
       "rank": 6,
-      "title": "DeepSeek点燃大模型效率之争，阶跃火速接棒：JetSpec让大模型解码速度最高提升近10倍",
-      "url": "https://www.51cto.com/article/847951.html",
-      "hot": "投机解码通过让轻量级草稿模型提前生成候选token，再由目标模型一次性并行验证这些候选结果，从而加速自回归生成。"
+      "title": "退钱！Claude 4.8连夜大降智，GPT-5.6算力遭「腰斩」",
+      "url": "https://www.51cto.com/article/848057.html",
+      "hot": "最近，AI社区遭遇集体降智潮！OpenAI疑似暗中开启GPT-5.6灰度测试，神秘「Juice」测试引爆全网查成分；另一边，Anthropic的Claude Opus 4.8被曝断崖式降智，疑似被切脑。我们花钱买到的AI，究竟是什么版本？"
     },
     {
       "rank": 7,
-      "title": "GLM-5.3你来定！智谱唐杰全球征集意见，评论区清一色：视觉",
-      "url": "https://www.51cto.com/article/847952.html",
-      "hot": "昨天先是畅聊AI认知，“AI的终局就是AGI，一场猎龙游戏”。引起广泛热议后，一觉醒来今天又在𝕏当众征集意见。"
+      "title": "普朗克被撤稿了？量子之父竟被算法绊了一跤",
+      "url": "https://www.51cto.com/article/848052.html",
+      "hot": "一篇新论文指出，普朗克发表于 1940 年和 1942 年的两篇文章，竟然在 Springer 的数字平台上被标记为「retracted」（撤回）。"
     },
     {
       "rank": 8,
-      "title": "破天荒！DeepSeek V4正式版居然要涨价，而且翻着倍地涨",
-      "url": "https://www.51cto.com/article/847955.html",
-      "hot": "从V3到R1再到预览版V4，不断破圈的DeepSeek每次让人眼前一亮又一亮，一方面是模型能力本身出色，与此同时，价格也是它最锋利的一把刀。"
+      "title": "GitHub 安全公告数据库处理量创新高，漏洞报告数量远超审核能力",
+      "url": "https://www.51cto.com/article/848056.html",
+      "hot": "此次破纪录增长折射出网络安全领域的根本性转变，虽然带来运营压力，这也标志着软件供应链透明度和安全性提升的重要进展。"
     },
     {
       "rank": 9,
-      "title": "Agent之间，有互联网了！",
-      "url": "https://www.51cto.com/article/847957.html",
-      "hot": "当一个人只有一个Agent，这叫效率工具；当一个公司里开始出现十个、一百个、甚至更多 Agent，事情就没那么简单了。"
+      "title": "刚刚，Anthropic发布Sonnet 5，性能接近Opus 4.8，但不一定更便宜",
+      "url": "https://www.51cto.com/article/848048.html",
+      "hot": "Sonnet 5 在推理、工具使用、编程和知识工作方面，相比 Sonnet 4.6 性能有显著提升，更接近 Opus 4.8，但价格更低。"
     },
     {
       "rank": 10,
-      "title": "AGI倒计时，OpenAI首席研究官重磅表态：留给人类的窗口「很小」",
-      "url": "https://www.51cto.com/article/847958.html",
-      "hot": "OpenAI首席研究官Mark Chen释放了一个强烈信号：OpenAI 并不认为scaling laws已经失效，恰恰相反，预训练、数据工程、推理训练和更长任务链条，仍是通向AGI的主干道路。"
+      "title": "Claude Code 的 webapp-testing 到底怎么验收网页？从 CDP 原理到脚本断言讲透",
+      "url": "https://www.51cto.com/article/848010.html",
+      "hot": "本文将针对Anthropic官方提供的web自动化测试skill webapp-testing展开详细的分析和介绍。"
     }
   ]
 }
