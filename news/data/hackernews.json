@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-01T10:27:40+00:00",
+  "updated_at": "2026-07-01T13:19:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Asahi Linux 7.1 Progress Report",
       "url": "https://asahilinux.org/2026/06/progress-report-7-1/",
-      "hot": "24"
+      "hot": "279"
     },
     {
       "rank": 2,
-      "title": "Claude Code is steganographically marking requests",
-      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
-      "hot": "2056"
+      "title": "Single Dose of Frog-Derived Gut Bacterium Eradicates 100% of Tumors in Mice",
+      "url": "https://www.thefocalpoints.com/p/new-study-frog-derived-gut-bacterium",
+      "hot": "159"
     },
     {
       "rank": 3,
-      "title": "Newly discovered spider builds spring loaded snare to catch ants",
-      "url": "https://phys.org/news/2026-06-newly-australian-ballista-spider-snare.html",
-      "hot": "36"
+      "title": "Claude Code is steganographically marking requests",
+      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+      "hot": "2213"
     },
     {
       "rank": 4,
-      "title": "Claude Sonnet 5",
-      "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "hot": "1137"
-    },
-    {
-      "rank": 5,
-      "title": "Godot will no longer accept AI-authored code contributions",
-      "url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
-      "hot": "173"
-    },
-    {
-      "rank": 6,
-      "title": "ArXiv's Next Chapter",
-      "url": "https://blog.arxiv.org/2026/06/30/arxivs-next-chapter/",
+      "title": "Newly discovered spider builds spring loaded snare to catch ants",
+      "url": "https://phys.org/news/2026-06-newly-australian-ballista-spider-snare.html",
       "hot": "129"
     },
     {
+      "rank": 5,
+      "title": "The Internet I Grew Up with Doesn't Exist Anymore",
+      "url": "https://cleberg.net/blog/internet.html",
+      "hot": "113"
+    },
+    {
+      "rank": 6,
+      "title": "Nintendo has raised its employees base salary by 10%",
+      "url": "https://mynintendonews.com/2026/06/26/nintendo-has-raised-its-employees-base-salary-by-10/",
+      "hot": "85"
+    },
+    {
       "rank": 7,
-      "title": "The first early human eggs from stem cells",
-      "url": "https://www.conception.bio/science-and-updates/the-first-early-human-eggs-from-stem-cells",
-      "hot": "125"
+      "title": "Claude Sonnet 5",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "hot": "1173"
     },
     {
       "rank": 8,
-      "title": "Google copybara: moving code between repositories",
-      "url": "https://github.com/google/copybara",
-      "hot": "215"
+      "title": "Godot will no longer accept AI-authored code contributions",
+      "url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
+      "hot": "353"
     },
     {
       "rank": 9,
-      "title": "Matrix Orthogonalization Improves Memory in Recurrent Models",
-      "url": "https://ayushtambde.com/blog/matrix-orthogonalization-improves-memory-in-recurrent-models/",
-      "hot": "43"
+      "title": "Obfuscation: Building the final boss of cryptography (Part I)",
+      "url": "https://vitalik.eth.limo/general/2026/06/29/obfuscation1.html",
+      "hot": "24"
     },
     {
       "rank": 10,
-      "title": "Claude Science",
-      "url": "https://claude.com/product/claude-science",
-      "hot": "498"
+      "title": "A deep dive into SmallVector:push_back",
+      "url": "https://maskray.me/blog/2026-06-27-a-deep-dive-into-smallvector-push-back",
+      "hot": "11"
     }
   ]
 }
