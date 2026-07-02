@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-02T05:45:56+00:00",
+  "updated_at": "2026-07-02T08:35:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "干净仓库也能骗 Claude Code 装后门，程序员别把初始化交给 Agent",
+      "url": "https://www.51cto.com/article/848258.html",
+      "hot": "真正刺眼的地方在于：AI 编程工具已经不只是“读代码给建议”，它开始能理解说明、调用终端、安装依赖、修改文件、运行测试。也就是说，陌生项目的初始化过程，正在从程序员手里的手动动作，变成 Agent 可以自动执行的一串命令。"
+    },
+    {
+      "rank": 2,
+      "title": "一个开源平台，编织起了Agent「互联网」",
+      "url": "https://www.51cto.com/article/848263.html",
+      "hot": "如今，以龙虾为代表的 Agent，正面临半个多世纪前 IBM System/360 等大型机所遭遇的困境：单体能力已经足够强，但系统仍是分散的。"
+    },
+    {
+      "rank": 3,
+      "title": "Agent的自演进，被刚刚开源的AReaL 2.0按下了加速键",
+      "url": "https://www.51cto.com/article/848265.html",
+      "hot": "Agent 正面临着又一次关键的节点：从「会使用工具并完成任务」转向「在使用中学习并改进完成任务的方法」。"
+    },
+    {
+      "rank": 4,
+      "title": "训练世界模型，开始从人类的肌肉和脑子里偷师了",
+      "url": "https://www.51cto.com/article/848271.html",
+      "hot": "这家由两位95后博士创立的公司，提出了一套全新的Ego-NeuroLoop数据范式。"
+    },
+    {
+      "rank": 5,
+      "title": "从库存明细页看窗口隐私模式不是一个开关就完事",
+      "url": "https://ost.51cto.com/posts/51307",
+      "hot": "大家好，我是新手程序员Kevin(老K)。这次我想拆一个很容易被低估的HarmonyOS页面问题：仓储盘点明细页切到后台、进入任务预览或从外部返回..."
+    },
+    {
+      "rank": 6,
       "title": "搞懂 C++ 函数重载，看完这篇就明白了",
       "url": "https://www.51cto.com/article/848224.html",
       "hot": "本文不会去弄很多晦涩难懂的官方术语，从编译预处理、符号改编、函数匹配、冲突校验这四个核心的环节着手，一步一步地去拆解重载的底层逻辑，把编译过程中的核心细节给讲明白，让开发者完完全全地搞懂函数重载的底层本质，不再依靠经验来编写代码，碰到报错的时候也能够去排查。"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "我刚被封号，Anthropic转头把我们都送给了Cursor和Codex",
       "url": "https://www.51cto.com/article/848223.html",
       "hot": "我们没有放弃用AI写代码，也没有放弃Claude系列的模型，我们只是换了个不会因为你是国内IP就把你一脚踢开的入口。Anthropic的风控团队关起门来清理了一批账号，转头这批用户全须全尾地，走进了Cursor和Codex的后台。"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "Claude Fable 5解禁，Sonnet 5发布，但各种骚操作封禁中国用户",
       "url": "https://www.51cto.com/article/848222.html",
       "hot": "安全研究者拆Claude Code的binary（二进制包）时，发现它在系统提示词里给中国时区和代理域名的请求偷偷打Unicode暗号。"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "踩坑预警：ORDER BY + LIMIT 分页数据重复又丢失，排序字段不唯一藏致命坑",
       "url": "https://www.51cto.com/article/848162.html",
       "hot": "ORDER BY​ 少写了一个 id，看起来功能正常，实则埋着数据重复、丢失的雷。 分页查询是最简单的SQL，也是最容易被忽视的坑。 加一个主键排序，零成本修复，彻底告别分页诡异BUG。​"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "卷不赢模型，Meta改行「算力包租公」！一夜炸崩美股AI链",
       "url": "https://www.51cto.com/article/848215.html",
       "hot": "模型卷不过，Meta 反手开门卖自家算力，直接抢 AWS 的饭碗——昔日金主 CoreWeave、Nebius 一夜被炸崩 17%。"
-    },
-    {
-      "rank": 6,
-      "title": "Claude Science几周干完两年活，十倍科研提速真来了？",
-      "url": "https://www.51cto.com/article/848190.html",
-      "hot": "这一回，Anthropic没有推更聪明的科研模型，而是动了科研的根：第一次把科研拆成了一条能被逐步审计的流水线。"
-    },
-    {
-      "rank": 7,
-      "title": "Anthropic承认了！Claude Code木马门被抓包，明天回滚",
-      "url": "https://www.51cto.com/article/848189.html",
-      "hot": "Anthropic偷偷把隐形代码藏在Claude Code，持续3个月余。被抓包后，Claude Code负责人辩解称：都是误会，马上移除！"
-    },
-    {
-      "rank": 8,
-      "title": "SpringBoot 中 AOP 实现权限校验（角色/权限）",
-      "url": "https://www.51cto.com/article/848159.html",
-      "hot": "SpringBoot + AOP 实现权限校验，是企业项目中最优雅、最高效的方案，核心逻辑就是「注解标记 + AOP 拦截 + 上下文校验」，全程不侵入业务代码，可扩展性极强。"
-    },
-    {
-      "rank": 9,
-      "title": "谷歌深夜双发！最便宜Nano Banana来了",
-      "url": "https://www.51cto.com/article/848188.html",
-      "hot": "谷歌深夜狂甩王炸：4秒极速出图，成本仅需两毛！新模型Nano Banana 2 Lite联手视频神器Omni Flash，彻底打通图生视频流水线，引爆AI创作效率革命。"
-    },
-    {
-      "rank": 10,
-      "title": "具身智能的Skill时刻！英伟达开源机器人技能库，Jim Fan：范式变了",
-      "url": "https://www.51cto.com/article/848187.html",
-      "hot": "刚刚，英伟达放出了一套能让机器人持续成长的技能库——ASPIRE。"
     }
   ]
 }

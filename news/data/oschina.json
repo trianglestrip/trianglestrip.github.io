@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-02T05:46:02+00:00",
+  "updated_at": "2026-07-02T08:35:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "报告：中国具身智能市场规模年均复合增长率 22% 至 23%",
+      "url": "https://www.oschina.net/news/471428",
+      "hot": "Thu, 02 Jul 2026 15:32:09 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Anthropic 正在移除 Claude Code 用于检测中国用户的隐藏代码",
+      "url": "https://www.oschina.net/news/471416/anthropic-removing-its-code-for-catching-chinese-competitors",
+      "hot": "Thu, 02 Jul 2026 15:17:01 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Godot 拒绝 Vibe Coding，明确更严格的 AI 贡献政策",
+      "url": "https://www.oschina.net/news/471412",
+      "hot": "Thu, 02 Jul 2026 15:10:20 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "大多数重写是工程师为了自我满足，而不是为了业务需求",
+      "url": "https://www.oschina.net/news/471405/when-to-rewrite-working-code",
+      "hot": "Thu, 02 Jul 2026 14:55:39 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "魔珐星云亮相 OSC 源创会上海站，共探 AI 创新产品新可能",
+      "url": "https://www.oschina.net/news/471393",
+      "hot": "Thu, 02 Jul 2026 14:35:54 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Agones v1.59.0 发布",
+      "url": "https://www.oschina.net/news/471363/agones-1-59-0-released",
+      "hot": "Thu, 02 Jul 2026 14:03:41 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "从 GIAC 到高校课堂：MoonBit 与开发者共同探索 AI 时代的编程语言",
+      "url": "https://www.oschina.net/news/471346",
+      "hot": "Thu, 02 Jul 2026 13:45:39 +0800"
+    },
+    {
+      "rank": 8,
       "title": "GitHub 终于做了原生 Stacked PR",
       "url": "https://www.oschina.net/news/471291/github-com-gh-stack",
       "hot": "Thu, 02 Jul 2026 11:51:59 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "Claude Code 官方 “投毒” 标记中国用户翻车，这次国外用户也怒了",
       "url": "https://my.oschina.net/u/4487475/blog/19715726",
       "hot": "Thu, 02 Jul 2026 11:48:09 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "葡萄牙开源国家级模型 Amália",
       "url": "https://www.oschina.net/news/471274",
       "hot": "Thu, 02 Jul 2026 11:28:41 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "花了千亿 Token 的大厂们开始踩刹车了",
-      "url": "https://www.oschina.net/news/471266",
-      "hot": "Thu, 02 Jul 2026 11:18:30 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "TeamCity 2026.1.2 和 2025.11.6 发布",
-      "url": "https://www.oschina.net/news/471255/teamcity-2026-1-2-and-2025-11-6",
-      "hot": "Thu, 02 Jul 2026 11:12:06 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "从狂野代码到按目标生产：得物推荐 AI Harness 的工程化实践",
-      "url": "https://my.oschina.net/u/5783135/blog/19714368",
-      "hot": "Thu, 02 Jul 2026 11:01:46 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "AI 质检翻车后，福特把 350 个资深工程师请回来了",
-      "url": "https://www.oschina.net/news/471233/ford-rehires-gray-beard-engineers-after-ai-falls-short",
-      "hot": "Thu, 02 Jul 2026 10:54:46 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Solon v4.0.3 更新发布",
-      "url": "https://www.oschina.net/news/471231/solon-4-0-3-released",
-      "hot": "Thu, 02 Jul 2026 10:52:44 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "1-5 月我国软件业务收入 62451 亿元，同比增长 10.3%",
-      "url": "https://www.oschina.net/news/471228",
-      "hot": "Thu, 02 Jul 2026 10:50:24 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "API 智能开发平台 5.1 发布",
-      "url": "https://www.oschina.net/news/471218/crabc-5-1-released",
-      "hot": "Thu, 02 Jul 2026 10:45:42 +0800"
     }
   ]
 }

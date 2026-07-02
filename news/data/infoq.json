@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-02T05:46:03+00:00",
+  "updated_at": "2026-07-02T08:35:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "行业智能体时代来临：出行、货运率先破局",
+      "url": "https://www.infoq.cn/article/k8tlXTTbFmTGOLojQVZB?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 02 Jul 2026 16:21:51 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "如何利用 AI Agent 实现热补丁的自动化生成",
+      "url": "https://www.infoq.cn/article/BXc66LG3pVL8ZMme0ehy?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 02 Jul 2026 16:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "从龙蜥孵化到上游贡献：SGLang Tracing 与 AI Agent 调优实践",
+      "url": "https://www.infoq.cn/article/o5BOhliYRHIe4ZZPrHY9?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 02 Jul 2026 15:12:15 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "GitLab 调研：AI 工具仅加快编码，整体软件交付效率并未提升",
+      "url": "https://www.infoq.cn/article/8WD205mNH9OGrkf8BRYO?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 02 Jul 2026 15:00:00 GMT"
+    },
+    {
+      "rank": 5,
       "title": "让Agent越用越强：AReaL 2.0开源，给智能体装上“成长系统”",
       "url": "https://www.infoq.cn/article/IeXGCZqbv5WQ5zFQXoup?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 12:45:20 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Vercel 推出开源 AI 智能体开发框架 Eve",
       "url": "https://www.infoq.cn/article/kY3j5x1kIEvedufYJ1rJ?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 10:54:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "代码是写给未来的讯息",
       "url": "https://www.infoq.cn/article/UIxTYxSIfevGUg2BZ567?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 10:41:33 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "当设计师和PM都开始写代码，产品构建方式又要变天了？",
       "url": "https://www.infoq.cn/article/cbDEPCWE9llMsjy15Eo8?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 10:35:28 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "Cloudflare CEO 警告：未来两年，Agent 会让互联网每周爆出一个 Log4j",
       "url": "https://www.infoq.cn/article/zhoGu6x9CdUJ3XMFvyK1?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 10:25:24 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Dapr 1.18 推出可验证执行功能，为 AI 智能体与工作流赋予密码学信任能力",
       "url": "https://www.infoq.cn/article/U3gIuyf8VccCdKZeiyCi?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 09:29:53 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "前后端一起消失：AI Coding 正在改写大厂工程师分工",
-      "url": "https://www.infoq.cn/article/rHiSH66JZwoQG5Dfvv6x?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 01 Jul 2026 17:59:33 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "有奖共建｜跑过数百万台服务器的AI运维系统开源了！提PR/报Bug/写体验，通通有奖",
-      "url": "https://xie.infoq.cn/article/bc3d416caccb50b6dc6044c04?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 29 Jun 2026 13:01:22 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Argo CD 3.5 推出内部双向 TLS 与源码完整性校验支持，强化软件供应链安全",
-      "url": "https://www.infoq.cn/article/MfHAiaeQbq6VWPHLD4pB?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 01 Jul 2026 17:32:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Anthropic 突发 Sonnet 5，但大家更期待 Fable 5 和 Mythos 5 明天解禁",
-      "url": "https://www.infoq.cn/article/S9zHYQqfFCXt8GoLlM5W?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 01 Jul 2026 17:09:25 GMT"
     }
   ]
 }

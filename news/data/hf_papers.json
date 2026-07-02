@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-02T01:51:38+00:00",
+  "updated_at": "2026-07-02T08:35:45+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,15 +30,15 @@
     },
     {
       "rank": 5,
-      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
-      "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "249"
-    },
-    {
-      "rank": 6,
       "title": "olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language\n  Models",
       "url": "https://huggingface.co/papers/2502.18443",
       "hot": "12"
+    },
+    {
+      "rank": 6,
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "url": "https://huggingface.co/papers/2605.23904",
+      "hot": "249"
     },
     {
       "rank": 7,
@@ -48,9 +48,9 @@
     },
     {
       "rank": 8,
-      "title": "A decoder-only foundation model for time-series forecasting",
-      "url": "https://huggingface.co/papers/2310.10688",
-      "hot": "37"
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "82"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "82"
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "37"
     }
   ]
 }
