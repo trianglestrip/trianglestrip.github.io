@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-02T08:35:32+00:00",
+  "updated_at": "2026-07-02T11:15:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Kimi K2.7 Code is generally available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/",
-      "hot": "113"
+      "title": "A new Android malware from Google",
+      "url": "https://f-droid.org/2026/07/01/adv-malware.html",
+      "hot": "686"
     },
     {
       "rank": 2,
-      "title": "A new Android malware from Google",
-      "url": "https://f-droid.org/2026/07/01/adv-malware.html",
-      "hot": "288"
+      "title": "Kimi K2.7 Code is generally available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/",
+      "hot": "184"
     },
     {
       "rank": 3,
-      "title": "ZCode – Harness for GLM-5.2",
-      "url": "https://zcode.z.ai/en",
-      "hot": "380"
+      "title": "The Fall of the Theorem Economy",
+      "url": "https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy",
+      "hot": "69"
     },
     {
       "rank": 4,
       "title": "Oomwoo, an open-source robot vacuum you build yourself",
       "url": "https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/",
-      "hot": "266"
+      "hot": "332"
     },
     {
       "rank": 5,
-      "title": "Bring back crappy forums",
-      "url": "https://tedium.co/2026/07/01/online-web-forums-retrospective/",
-      "hot": "232"
+      "title": "ZCode – Harness for GLM-5.2",
+      "url": "https://zcode.z.ai/en",
+      "hot": "412"
     },
     {
       "rank": 6,
-      "title": "Asymmetric Quantization: Near-Lossless Retrieval with 97% Storage Reduction",
-      "url": "https://www.mixedbread.com/blog/asymmetric-quant",
-      "hot": "13"
+      "title": "My Favorite Keyboards",
+      "url": "https://fabiensanglard.net/keyboards/index.html",
+      "hot": "46"
     },
     {
       "rank": 7,
-      "title": "CursorBench 3.1",
-      "url": "https://cursor.com/evals",
-      "hot": "45"
+      "title": "Asymmetric Quantization: Near-Lossless Retrieval with 97% Storage Reduction",
+      "url": "https://www.mixedbread.com/blog/asymmetric-quant",
+      "hot": "42"
     },
     {
       "rank": 8,
-      "title": "What to learn to be a graphics programmer",
-      "url": "https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/",
-      "hot": "328"
+      "title": "Bring back crappy forums",
+      "url": "https://tedium.co/2026/07/01/online-web-forums-retrospective/",
+      "hot": "311"
     },
     {
       "rank": 9,
-      "title": "FFmpeg 9.1's new AAC encoder",
-      "url": "https://hydrogenaudio.org/index.php/topic,129691.0.html",
-      "hot": "367"
+      "title": "Meta building cloud business to sell excess AI capacity",
+      "url": "https://www.reuters.com/business/meta-sell-excess-ai-computing-capacity-via-cloud-business-bloomberg-news-reports-2026-07-01/",
+      "hot": "14"
     },
     {
       "rank": 10,
-      "title": "Opening up 'Zero-Knowledge Proof' technology to promote privacy in age assurance",
-      "url": "https://blog.google/innovation-and-ai/technology/safety-security/opening-up-zero-knowledge-proof-technology-to-promote-privacy-in-age-assurance/",
-      "hot": "148"
+      "title": "What to learn to be a graphics programmer",
+      "url": "https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/",
+      "hot": "362"
     }
   ]
 }

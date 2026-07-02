@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-02T08:35:35+00:00",
+  "updated_at": "2026-07-02T11:15:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "CCleaner v7.9 发布，系统清理工具",
+      "url": "https://www.oschina.net/news/471445/ccleaner-v7-9",
+      "hot": "Thu, 02 Jul 2026 18:37:48 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "基于后验采样的图像恢复方法 LearnIR：人脸去阴影、去雾",
+      "url": "https://my.oschina.net/vivotech/blog/19715714",
+      "hot": "Thu, 02 Jul 2026 18:28:46 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "630GB 机密文件泄露，苹果供应链遭遇史上最严重安全事件",
+      "url": "https://www.oschina.net/news/471442/apple-tata-leak-iphone-18-pro",
+      "hot": "Thu, 02 Jul 2026 17:34:12 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Akka 2.10.20 发布，Scala 编写的 Actor 模型开发库",
+      "url": "https://www.oschina.net/news/471440/akka-2-10-20-released",
+      "hot": "Thu, 02 Jul 2026 17:15:43 +0800"
+    },
+    {
+      "rank": 5,
+      "title": ":fire: Solon AI v4.0.3 发布（智能体开发框架，兼容 Java8 到 Java26）",
+      "url": "https://www.oschina.net/news/471436",
+      "hot": "Thu, 02 Jul 2026 16:46:07 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "扮演操作系统是怎样一种体验？这个 Python 游戏在 GitHub 斩获 2.2K Star",
+      "url": "https://www.oschina.net/news/471435",
+      "hot": "Thu, 02 Jul 2026 16:37:12 +0800"
+    },
+    {
+      "rank": 7,
       "title": "报告：中国具身智能市场规模年均复合增长率 22% 至 23%",
       "url": "https://www.oschina.net/news/471428",
       "hot": "Thu, 02 Jul 2026 15:32:09 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Anthropic 正在移除 Claude Code 用于检测中国用户的隐藏代码",
       "url": "https://www.oschina.net/news/471416/anthropic-removing-its-code-for-catching-chinese-competitors",
       "hot": "Thu, 02 Jul 2026 15:17:01 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "Godot 拒绝 Vibe Coding，明确更严格的 AI 贡献政策",
       "url": "https://www.oschina.net/news/471412",
       "hot": "Thu, 02 Jul 2026 15:10:20 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "大多数重写是工程师为了自我满足，而不是为了业务需求",
       "url": "https://www.oschina.net/news/471405/when-to-rewrite-working-code",
       "hot": "Thu, 02 Jul 2026 14:55:39 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "魔珐星云亮相 OSC 源创会上海站，共探 AI 创新产品新可能",
-      "url": "https://www.oschina.net/news/471393",
-      "hot": "Thu, 02 Jul 2026 14:35:54 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Agones v1.59.0 发布",
-      "url": "https://www.oschina.net/news/471363/agones-1-59-0-released",
-      "hot": "Thu, 02 Jul 2026 14:03:41 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "从 GIAC 到高校课堂：MoonBit 与开发者共同探索 AI 时代的编程语言",
-      "url": "https://www.oschina.net/news/471346",
-      "hot": "Thu, 02 Jul 2026 13:45:39 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "GitHub 终于做了原生 Stacked PR",
-      "url": "https://www.oschina.net/news/471291/github-com-gh-stack",
-      "hot": "Thu, 02 Jul 2026 11:51:59 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Claude Code 官方 “投毒” 标记中国用户翻车，这次国外用户也怒了",
-      "url": "https://my.oschina.net/u/4487475/blog/19715726",
-      "hot": "Thu, 02 Jul 2026 11:48:09 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "葡萄牙开源国家级模型 Amália",
-      "url": "https://www.oschina.net/news/471274",
-      "hot": "Thu, 02 Jul 2026 11:28:41 +0800"
     }
   ]
 }

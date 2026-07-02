@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-02T08:35:37+00:00",
+  "updated_at": "2026-07-02T11:15:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "用户太蠢不配用 Fable？被Anthropic的回应气笑了：最贵的模型，最憋屈的体验",
+      "url": "https://www.infoq.cn/article/HDE9Hoe3RVyNlX3CCGzV?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 02 Jul 2026 18:36:08 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "被骂“退出AI竞赛”，Meta改行卖算力股价暴涨10%：卖铲子比淘金更赚？",
+      "url": "https://www.infoq.cn/article/vxgbzsNORRzQDz6xK1jv?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 02 Jul 2026 18:27:05 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Agent 狂欢热潮下的冷思考：为什么规模化落地总是陷入僵局？",
+      "url": "https://www.infoq.cn/article/KmDMAvlzBGgwu5A2kf7t?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 02 Jul 2026 17:19:52 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "亚马逊云科技推出 Lambda MicroVM，提供隔离式智能体与用户代码运行环境",
+      "url": "https://www.infoq.cn/article/QbFT0uMbBd8rcZ0zEfit?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 02 Jul 2026 17:18:00 GMT"
+    },
+    {
+      "rank": 5,
       "title": "行业智能体时代来临：出行、货运率先破局",
       "url": "https://www.infoq.cn/article/k8tlXTTbFmTGOLojQVZB?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 16:21:51 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "如何利用 AI Agent 实现热补丁的自动化生成",
       "url": "https://www.infoq.cn/article/BXc66LG3pVL8ZMme0ehy?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 16:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "从龙蜥孵化到上游贡献：SGLang Tracing 与 AI Agent 调优实践",
       "url": "https://www.infoq.cn/article/o5BOhliYRHIe4ZZPrHY9?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 15:12:15 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "GitLab 调研：AI 工具仅加快编码，整体软件交付效率并未提升",
       "url": "https://www.infoq.cn/article/8WD205mNH9OGrkf8BRYO?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 15:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "让Agent越用越强：AReaL 2.0开源，给智能体装上“成长系统”",
       "url": "https://www.infoq.cn/article/IeXGCZqbv5WQ5zFQXoup?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 12:45:20 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Vercel 推出开源 AI 智能体开发框架 Eve",
       "url": "https://www.infoq.cn/article/kY3j5x1kIEvedufYJ1rJ?utm_source=rss&utm_medium=article",
       "hot": "Thu, 02 Jul 2026 10:54:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "代码是写给未来的讯息",
-      "url": "https://www.infoq.cn/article/UIxTYxSIfevGUg2BZ567?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 02 Jul 2026 10:41:33 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "当设计师和PM都开始写代码，产品构建方式又要变天了？",
-      "url": "https://www.infoq.cn/article/cbDEPCWE9llMsjy15Eo8?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 02 Jul 2026 10:35:28 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Cloudflare CEO 警告：未来两年，Agent 会让互联网每周爆出一个 Log4j",
-      "url": "https://www.infoq.cn/article/zhoGu6x9CdUJ3XMFvyK1?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 02 Jul 2026 10:25:24 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Dapr 1.18 推出可验证执行功能，为 AI 智能体与工作流赋予密码学信任能力",
-      "url": "https://www.infoq.cn/article/U3gIuyf8VccCdKZeiyCi?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 02 Jul 2026 09:29:53 GMT"
     }
   ]
 }
