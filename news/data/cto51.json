@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-01T22:18:19+00:00",
+  "updated_at": "2026-07-02T01:51:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "从ReAct到Loop Engineering：一文讲透13种AI Agent设计模式与选型指南",
-      "url": "https://www.51cto.com/article/848022.html",
-      "hot": "13种设计模式，本质上是13种失败场景的解法。真正掌握它们的标志，不是能把每种模式的定义背出来，而是当你在traces里看到一个具体的失败，能立刻知道该用哪个模式、为什么、怎么实现。"
+      "title": "踩坑预警：ORDER BY + LIMIT 分页数据重复又丢失，排序字段不唯一藏致命坑",
+      "url": "https://www.51cto.com/article/848162.html",
+      "hot": "ORDER BY​ 少写了一个 id，看起来功能正常，实则埋着数据重复、丢失的雷。 分页查询是最简单的SQL，也是最容易被忽视的坑。 加一个主键排序，零成本修复，彻底告别分页诡异BUG。​"
     },
     {
       "rank": 2,
-      "title": "别再手工调 prompt 了，让 Agent 自己改自己的\"操作系统\"",
-      "url": "https://www.51cto.com/article/848032.html",
-      "hot": "Harness 是围绕语言模型的完整环境中介系统。它包括系统提示，但也远不止于此。它还包含工具定义、运行时控制策略（比如最大工具调用次数、错误重试上限）、验证规则、编排逻辑、故障恢复程序、子 agent 配置、技能定义。"
+      "title": "SpringBoot 中 AOP 实现权限校验（角色/权限）",
+      "url": "https://www.51cto.com/article/848159.html",
+      "hot": "SpringBoot + AOP 实现权限校验，是企业项目中最优雅、最高效的方案，核心逻辑就是「注解标记 + AOP 拦截 + 上下文校验」，全程不侵入业务代码，可扩展性极强。"
     },
     {
       "rank": 3,
-      "title": "Product Hunt 日榜第一！这个开源神器让 Agent 真正接管浏览器！",
-      "url": "https://www.51cto.com/article/848163.html",
-      "hot": "今天给大家介绍一款最近非常火的开源工具：BrowserAct，它是一款专门为 AI Agent 打造的浏览器自动化 CLI。"
+      "title": "千万别乱动数据库隔离级别，后果你真的扛不住",
+      "url": "https://www.51cto.com/article/848160.html",
+      "hot": "今天咱们就讲讲这个数据库隔离级别，为什么不能动，动了会怎么样，正确的路应该怎么走。"
     },
     {
       "rank": 4,
-      "title": "Karpathy又封神！掀翻RAG，把你的笔记变成第二大脑",
-      "url": "https://www.51cto.com/article/848069.html",
-      "hot": "知识第一次，能像代码一样利滚利。前OpenA 创始团队成员、特斯拉前 AI 高级总监 Andrej Karpathy，提出一个狠招：别再用 RAG 检索你的知识库，让大模型把它「编译」成一座持续生长的活 Wiki。两个多月，他在GitHub屠出 5000+ star。"
+      "title": "Vue 状态管理入门：状态、视图和交互到底是什么",
+      "url": "https://www.51cto.com/article/848154.html",
+      "hot": "状态、视图、交互三个角色怎么分工？状态回答的是：页面现在是什么样？视图回答的是：这些状态怎么被用户看到？交互回答的是：用户做了什么，状态要怎么变？"
     },
     {
       "rank": 5,
-      "title": "一句话生图要过时了？开源图像生成Agent进化出「工具编排」",
-      "url": "https://www.51cto.com/article/848095.html",
-      "hot": "GenEvolve 的意义在于，它把开放图像生成从单次 prompt 优化，推进到可学习的工具编排过程。对于需要外部知识、参考图一致性和多重硬约束的任务，智能体不只是「调用工具」，而是在训练中学会如何把工具结果转化为有效的生成程序。"
+      "title": "阿里二面：十亿数据查手机尾号，说用LIKE的当场就被请出去了",
+      "url": "https://www.51cto.com/article/848152.html",
+      "hot": "一道看似\"查手机号\"的面试题，筛掉了95%的候选人。问题不在SQL，而在你有没有架构师的脑子。"
     },
     {
       "rank": 6,
-      "title": "邢波再出手：上次「骂」完世界模型，这次轮到智能体了",
-      "url": "https://www.51cto.com/article/848097.html",
-      "hot": "近日，这个系列迎来新篇章，邢波教授与 Mingkai Deng 和 Jinyu Hou 的新作《智能体模型批评》上线 arXiv，把同样的「拆解-重建」套路对准了眼下发展最火热、却也最容易被滥用的一个词：「智能体」。"
+      "title": "CVE-2026-6307 | 一石二鸟， Chrome V8 沙箱逃逸漏洞深度解析",
+      "url": "https://www.51cto.com/article/848157.html",
+      "hot": "该漏洞在 Chrome 106 版本中引入，报告时可能影响 148 Beta 版本，并在 Chrome 147.0.7727.101 版本中修复。"
     },
     {
       "rank": 7,
-      "title": "卡帕西李飞飞辛顿都投了的Transformer专用芯片，签下10亿美元大单",
-      "url": "https://www.51cto.com/article/848098.html",
-      "hot": "他家从芯片、机柜、软件到制造方法一起设计都在着手，搞的是一整套面向前沿模型推理的集群系统。"
+      "title": "Linux 怎么复制文件和目录？cp 命令详解",
+      "url": "https://www.51cto.com/article/848149.html",
+      "hot": "本文将一次性讲透 cp 命令的所有核心用法，让你在复制文件时不再犹豫。"
     },
     {
       "rank": 8,
-      "title": "HarmonyOS 选择控件完全指南：从 Toggle 开关到 Checkbox 多选的四个实战场景",
-      "url": "https://ost.51cto.com/posts/51017",
-      "hot": "HarmonyOS选择控件完全指南：从Toggle开关到Checkbox多选的四个实战场景一、选择控件：App交互的基石开关、单选、多选是每个App里出现频率..."
+      "title": "AOP+IOC 叠加循环依赖冲突解决方案",
+      "url": "https://www.51cto.com/article/848145.html",
+      "hot": "Spring 三级缓存可以解决「普通原始Bean」的循环依赖，但是 无法兼容「需要AOP代理增强的Bean」循环依赖。"
     },
     {
       "rank": 9,
-      "title": "鸿蒙Canvas系列：绘制经典钟表·下",
-      "url": "https://ost.51cto.com/posts/51006",
-      "hot": "鸿蒙Canvas系列：绘制经典钟表&middot;下本文将介绍Canvas钟表的指针绘制和实时动画。通过计算时针、分针、秒针的角度，并用定时器驱动重绘，你可..."
+      "title": "Claude Code 27 条实用技巧，快速升级",
+      "url": "https://www.51cto.com/article/848038.html",
+      "hot": "Claude Code 进入真实项目以后，怎样少猜一点、少跑偏一点，最后还能留下能复盘的证据。下面仍然按 27 条讲，只是换一个更实用的顺序：先处理上下文和边界，再把验证放进过程，最后才谈并行、自动化和长期运行。"
     },
     {
       "rank": 10,
-      "title": "刚刚，Fable 5全球解禁！",
-      "url": "https://www.51cto.com/article/848064.html",
-      "hot": "18天后，AI圈终于迎来了一场狂欢！今天，Anthropic官宣：美国商务部正式撤销对Anthropic旗下神级模型Fable 5（以及Mythos 5）的出口管制，明天恢复访问。"
+      "title": "训检索器还在苦哈哈标正负样本?DREAM:让大模型自己“猜答案“就够了",
+      "url": "https://www.51cto.com/article/847991.html",
+      "hot": "DREAM 证明了你根本不需要任何人工标注的正负样本,只凭\"一篇文档能不能帮大模型预测出正确答案\"这一个信号,就能把稠密检索器训得很强;而它的关键诀窍,是把检索器算出的相似度分数注入到冻结大模型里那些\"本来就在替 query 寻找相关内容\"的注意力头中,让下一个词预测的损失顺着注意力这条路反向把检索器调教出来。"
     }
   ]
 }

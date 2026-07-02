@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-01T19:25:06+00:00",
+  "updated_at": "2026-07-02T01:51:38+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,21 +36,21 @@
     },
     {
       "rank": 6,
+      "title": "olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language\n  Models",
+      "url": "https://huggingface.co/papers/2502.18443",
+      "hot": "12"
+    },
+    {
+      "rank": 7,
       "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
       "url": "https://huggingface.co/papers/2601.02163",
       "hot": "12"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "A decoder-only foundation model for time-series forecasting",
       "url": "https://huggingface.co/papers/2310.10688",
       "hot": "37"
-    },
-    {
-      "rank": 8,
-      "title": "olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language\n  Models",
-      "url": "https://huggingface.co/papers/2502.18443",
-      "hot": "12"
     },
     {
       "rank": 9,
