@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-02T08:35:45+00:00",
+  "updated_at": "2026-07-02T15:28:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1603"
+      "hot": "1632"
     },
     {
       "rank": 2,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "1185"
+      "hot": "1209"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3193"
+      "hot": "3226"
     },
     {
       "rank": 4,
       "title": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
       "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
-      "hot": "625"
+      "hot": "640"
     },
     {
       "rank": 5,
       "title": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
       "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
-      "hot": "376"
+      "hot": "387"
     },
     {
       "rank": 6,
-      "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "hot": "929"
+      "title": "deepreinforce-ai/Ornith-1.0-9B",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B",
+      "hot": "340"
     },
     {
       "rank": 7,
-      "title": "deepreinforce-ai/Ornith-1.0-9B",
-      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B",
-      "hot": "336"
+      "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "hot": "942"
     },
     {
       "rank": 8,
-      "title": "Qwen/Qwen-AgentWorld-35B-A3B",
-      "url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
-      "hot": "500"
+      "title": "deepreinforce-ai/Ornith-1.0-35B",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B",
+      "hot": "302"
     },
     {
       "rank": 9,
-      "title": "deepreinforce-ai/Ornith-1.0-35B",
-      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B",
-      "hot": "296"
+      "title": "Qwen/Qwen-AgentWorld-35B-A3B",
+      "url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
+      "hot": "506"
     },
     {
       "rank": 10,
       "title": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark",
-      "hot": "284"
+      "hot": "293"
     }
   ]
 }
