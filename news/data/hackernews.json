@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-02T21:22:53+00:00",
+  "updated_at": "2026-07-02T23:42:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Exapunks (2018)",
-      "url": "https://www.zachtronics.com/exapunks/",
-      "hot": "154"
+      "title": "Virginia bans sale of geolocation data",
+      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
+      "hot": "312"
     },
     {
       "rank": 2,
-      "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
-      "url": "https://mathstodon.xyz/@iblech/116769502749142438",
-      "hot": "336"
+      "title": "crustc: entirety of `rustc`, translated to C",
+      "url": "https://github.com/FractalFir/crustc",
+      "hot": "42"
     },
     {
       "rank": 3,
-      "title": "EFF letter to FTC on X consent order (2 July 2026) [pdf]",
-      "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/EFF-letter-to-FTC-on-X-consent-order-7-2-26.pdf",
-      "hot": "48"
+      "title": "Exapunks (2018)",
+      "url": "https://www.zachtronics.com/exapunks/",
+      "hot": "207"
     },
     {
       "rank": 4,
-      "title": "Lightning Memory-Mapped Database Manager (LMDB) 1.0",
-      "url": "http://www.lmdb.tech/doc/",
-      "hot": "27"
+      "title": "Reality has a surprising amount of detail (2017)",
+      "url": "https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail",
+      "hot": "84"
     },
     {
       "rank": 5,
-      "title": "Podman v6.0.0",
-      "url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0/",
-      "hot": "241"
+      "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
+      "url": "https://mathstodon.xyz/@iblech/116769502749142438",
+      "hot": "380"
     },
     {
       "rank": 6,
-      "title": "PeerTube is a free, decentralized and federated video platform",
-      "url": "https://github.com/Chocobozzz/PeerTube",
-      "hot": "402"
+      "title": "Podman v6.0.0",
+      "url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0/",
+      "hot": "351"
     },
     {
       "rank": 7,
-      "title": "Vulkan is now available on NetBSD",
-      "url": "https://github.com/segaboy/vulkan-netbsd",
-      "hot": "38"
+      "title": "EFF letter to FTC on X consent order (2 July 2026) [pdf]",
+      "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/EFF-letter-to-FTC-on-X-consent-order-7-2-26.pdf",
+      "hot": "89"
     },
     {
       "rank": 8,
-      "title": "Android Developer Verification: Threat masquerading as protection",
-      "url": "https://f-droid.org/2026/07/01/adv-malware.html",
-      "hot": "1526"
+      "title": "PeerTube is a free, decentralized and federated video platform",
+      "url": "https://github.com/Chocobozzz/PeerTube",
+      "hot": "482"
     },
     {
       "rank": 9,
-      "title": "How to ask for help from people who don't know you",
-      "url": "https://pradyuprasad.com/writings/how-to-ask-for-help/",
-      "hot": "294"
+      "title": "Lightning Memory-Mapped Database Manager (LMDB) 1.0",
+      "url": "http://www.lmdb.tech/doc/",
+      "hot": "55"
     },
     {
       "rank": 10,
-      "title": "Postgres transactions are a distributed systems superpower",
-      "url": "https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data",
-      "hot": "46"
+      "title": "This is my attempt to get Vulkan going on NetBSD",
+      "url": "https://github.com/segaboy/vulkan-netbsd",
+      "hot": "78"
     }
   ]
 }
