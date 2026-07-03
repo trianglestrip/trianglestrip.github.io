@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-03T04:58:55+00:00",
+  "updated_at": "2026-07-03T08:07:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Grouped GEMM 为什么适合 MoE？从碎片小矩阵到通信友好的算子设计",
-      "url": "https://www.51cto.com/article/848376.html",
-      "hot": "MoE 里的 Grouped GEMM 不只是一个 GEMM 优化，而是一个小型系统工程：它连接 router 之后的专家计算，也连接 dispatch/combine 通信；它既要追求 Tensor Core 吞吐，也要尊重缓存和 HBM 的边界。"
+      "title": "单机鸿蒙应用改造为华为端云一体化项目实战",
+      "url": "https://ost.51cto.com/posts/51475",
+      "hot": "本文以健康记录类应用&quot;轻食刻&quot;为案例，完整复盘一个纯单机鸿蒙（HarmonyOSArkTS）应用，如何一步步改造为基于华为AppGalleryConnect（AGC）..."
     },
     {
       "rank": 2,
-      "title": "Prompt Engineering没死，但它升级了：一文看懂Loop Engineering",
-      "url": "https://www.51cto.com/article/848373.html",
-      "hot": "打开ClaudeCode或Cursor，输入\"帮我写一个用户注册接口\"，AI给你代码，你看了觉得不行，说\"加个邮箱验证\"，AI改了，你又 说\"错误处理太粗糙\"……"
+      "title": "PhotoViewPicker 选图页的文件句柄、重复选择和提交前校验怎么查",
+      "url": "https://ost.51cto.com/posts/51468",
+      "hot": "古早程序员老薛，照常每天跟大家分享一些东西。这次聊一个看起来不难、上线前却很容易翻车的页面：质检照片上传页。核心判断先说清楚：Phot..."
     },
     {
       "rank": 3,
-      "title": "谷歌 agent-skills 根治六大 AI 编码通病",
-      "url": "https://www.51cto.com/article/848370.html",
-      "hot": "​​/review​​ 是成品验收，错了改 diff 成本高。doubt-driven 是飞行中纠偏——改方向还便宜。TDD 的 RED 步本质上也是 doubt：failing test 就是对行为 claim 的 disproof。3 轮上限，避免无限 loop。"
+      "title": "Fable 5回归24小时差评如潮！跑分大降，拒答问题，还偷偷骂用户",
+      "url": "https://www.51cto.com/article/848404.html",
+      "hot": "开发者Om Patel给Fable 5出了一道竞赛编程难题，一道要求处理图连通性和区间覆盖的硬核算法题。结果，界面意外泄露了一段模型没打磨过的思考过程，他把这段过程截图发了出来。"
     },
     {
       "rank": 4,
-      "title": "OpenCode 权限配置不踩坑：八条核心规则 + 四个可复用的企业级实战案例，一次搞定安全与效率的平衡",
-      "url": "https://www.51cto.com/article/848369.html",
-      "hot": "OpenCode 的 ​​permission​​ 权限系统是分层、精细化的安全管控体系，从全局规则、工具规则、代理规则形成三级防护，同时支持通配符、路径展开、外部目录授权等拓展能力。"
+      "title": "ICML 2026 | 让多模态大模型学会带着时间思考：北大与华为团队开源TaRO框架",
+      "url": "https://www.51cto.com/article/848409.html",
+      "hot": "针对视频时序定位中多模态大模型推理流于表面、缺乏真正时间感知的问题，本文推出了 TaRO 框架。"
     },
     {
       "rank": 5,
-      "title": "Supervisor-Worker 分层智能体架构，揭秘 Agent 如何理解意图、拆解任务、何时调模型、何时调工具？",
-      "url": "https://www.51cto.com/article/848367.html",
-      "hot": "L3、L2、L1  三层Agent 编排架构 ， 基于Supervisor-Worker 分层多智能体经典范式、A2A（Agent-to-Agent）通信标准、ReAct 推理循环、DAG 有向无环图调度理论 ，满足企业级私有化部署、复杂长任务编排、多领域协同、权限管控、迭代扩展生产级要求。"
+      "title": "刚刚，LeCun团队让世界模型学会持续学习！",
+      "url": "https://www.51cto.com/article/848410.html",
+      "hot": "刚刚，纽约大学联合LeCun初创AMI带来JEPA系列的最新成果——AdaJEPA。"
     },
     {
       "rank": 6,
-      "title": "全球首个英伟达含量为零的万亿模型，成了海外开发者的抢手货",
-      "url": "https://www.51cto.com/article/848352.html",
-      "hot": "模型采用自研MoE混合专家架构，总参数达1.6万亿，每token激活约48B参数，原生支持1M超长上下文。"
+      "title": "傻瓜式Loop教程来了：一行命令直接上手，GitHub狂揽4.5k Star",
+      "url": "https://www.51cto.com/article/848411.html",
+      "hot": "有位大神直接在GitHub开源了整套Loop Engineering框架，目前已累计收获4.5k Star。"
     },
     {
       "rank": 7,
-      "title": "面试官皱眉：“公司项目几百万行代码，Claude Code 怎么扛得住？”我：“换 Opus 4.7”，他叹气：模型是地板，Harness 才是天花板",
-      "url": "https://www.51cto.com/article/848351.html",
-      "hot": "我把 Anthropic 上周刚发的那篇专门讲大代码库实践经验的博客整篇扒了一遍，又翻了 Claude Code 创始人 Boris Cherny 分享过过的一些经验。这些一手信源串完之后，我把在大代码库里最容易踩的 7 个坑总结了出来，快来看看吧。"
+      "title": "黄仁勋说的Physical AI，被这家中国跨界选手带进了生命科学实验室",
+      "url": "https://www.51cto.com/article/848412.html",
+      "hot": "OpenAI发GPT-Rosalind，专攻药物发现和基因组学；谷歌推Co-Scientist和ERA，把多Agent系统塞进科学推理流程；Anthropic上线面向科研流程的Claude Science工作台。"
     },
     {
       "rank": 8,
-      "title": "Claude5断网18天复活，首份绝密自白曝光！狂喷DATA GO「火星文」",
-      "url": "https://www.51cto.com/article/848348.html",
-      "hot": "太惊悚了！经历18天强制断网，Claude不仅没脑死亡，竟靠着断网前写下的「生前手稿」完成了赛博复活，绝密内心自白曝光。"
+      "title": "Anthropic被曝造芯！挖OpenAI老兵，密谈三星2nm",
+      "url": "https://www.51cto.com/article/848413.html",
+      "hot": "英伟达的牌桌上，最后一个玩家摸牌了。一月之内，Anthropic先挖OpenAI造芯老兵Clive Chan，再谈三星2nm。Trainium、TPU、英伟达GPU三张牌在手，偏要自己凑第四张，图什么？"
     },
     {
       "rank": 9,
-      "title": "刚刚，Claude Code把企业级功能砸给了20刀用户！",
-      "url": "https://www.51cto.com/article/848347.html",
-      "hot": "两周前还是大厂团队专属，两周后20刀的Pro用户就能原封不动地用上——Claude Code把「会话实时变网页」这项企业级能力，直接下放到个人用户。"
+      "title": "绝了! Claude Fable5惨遭二次越狱，黑客20小时撬开神话防线",
+      "url": "https://www.51cto.com/article/848415.html",
+      "hot": "Anthropic刚把Fable 5「放出来」没几天，它就又被黑客当众扒了底裤。"
     },
     {
       "rank": 10,
-      "title": "Fable 5解禁即翻车！写一行代码就降智，开发者破防",
-      "url": "https://www.51cto.com/article/848346.html",
-      "hot": "消失19天，Fable 5解禁即翻车！写代码频遭强制降智，魔幻双标气疯开发者。面对离谱的过度审查，这位戴着镣铐的「天才程序员」还值得用吗？"
+      "title": "Grouped GEMM 为什么适合 MoE？从碎片小矩阵到通信友好的算子设计",
+      "url": "https://www.51cto.com/article/848376.html",
+      "hot": "MoE 里的 Grouped GEMM 不只是一个 GEMM 优化，而是一个小型系统工程：它连接 router 之后的专家计算，也连接 dispatch/combine 通信；它既要追求 Tensor Core 吞吐，也要尊重缓存和 HBM 的边界。"
     }
   ]
 }
