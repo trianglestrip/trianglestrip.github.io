@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-03T08:07:38+00:00",
+  "updated_at": "2026-07-03T10:48:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Vite+ 发布 Beta 版本，一个命令搞定前端工具链",
+      "url": "https://www.oschina.net/news/471474/vite-plus-beta",
+      "hot": "Fri, 03 Jul 2026 18:44:50 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Podman v6.0.0 发布，网络栈全面转向 Netavark 与 nftables",
+      "url": "https://www.oschina.net/news/471473/podman-v6-0-0",
+      "hot": "Fri, 03 Jul 2026 18:40:55 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "阿里内部全面禁用 Claude Code",
+      "url": "https://www.oschina.net/news/471471",
+      "hot": "Fri, 03 Jul 2026 16:53:30 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "从 10 分钟到 1 秒：ES 深度分页任意跳页的三轮优化实战",
+      "url": "https://my.oschina.net/vivotech/blog/19715664",
+      "hot": "Fri, 03 Jul 2026 16:31:48 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Xbatis vs Spring Data JPA：两大 ORM 框架深度对决",
+      "url": "https://www.oschina.net/news/471469",
+      "hot": "Fri, 03 Jul 2026 16:23:27 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Xbatis vs MyBatis-Plus：两大 MyBatis 增强框架全方位对比",
+      "url": "https://www.oschina.net/news/471468",
+      "hot": "Fri, 03 Jul 2026 16:03:31 +0800"
+    },
+    {
+      "rank": 7,
       "title": "🔥🔥抢位开造 |「7%计划」DIIS苏州 48h OPC创客松",
       "url": "https://www.oschina.net/news/471467",
       "hot": "Fri, 03 Jul 2026 15:52:48 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "企业级后台开发痛点解决方案：SpringBoot3 全栈开发方案 Jboot-Plus 技术解析",
       "url": "https://www.oschina.net/news/471466",
       "hot": "Fri, 03 Jul 2026 15:46:24 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "OpenAI 提议向‌美国政府‌出让约‌ 5% 股权",
       "url": "https://www.oschina.net/news/471464/openai-proposed-donating-5-of-its-equity-us",
       "hot": "Fri, 03 Jul 2026 14:57:49 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "ShareX 21.0.0 发布，截图与屏幕录制工具",
       "url": "https://www.oschina.net/news/471463/sharex-21-0-0-released",
       "hot": "Fri, 03 Jul 2026 14:20:05 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "gRPC 1.82.0 发布，跨语言 RPC 框架",
-      "url": "https://www.oschina.net/news/471462/grpc-1-82-0-released",
-      "hot": "Fri, 03 Jul 2026 13:59:42 +0800"
-    },
-    {
-      "rank": 6,
-      "title": ":fire: xbatis-ddl-auto 1.0.1 发布全自动 DDL，最强 orm xbatis ！！！",
-      "url": "https://www.oschina.net/news/471460/xbatis-ddl-auto-1-0-1",
-      "hot": "Fri, 03 Jul 2026 11:57:49 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Memcached 1.6.43 发布，高性能分布式缓存系统",
-      "url": "https://www.oschina.net/news/471459/memcached-1-6-43-released",
-      "hot": "Fri, 03 Jul 2026 11:44:56 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "微软面向 AI PC 的 Copilot 操作系统曝光，取消了开始菜单",
-      "url": "https://www.oschina.net/news/471458",
-      "hot": "Fri, 03 Jul 2026 11:21:54 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "OceanBase GLM-5.2 长程任务实测",
-      "url": "https://my.oschina.net/u/5463153/blog/19716067",
-      "hot": "Fri, 03 Jul 2026 11:14:30 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "F-Droid 炮轰 Google：Android Developer Verifier 本身就是恶意软件",
-      "url": "https://www.oschina.net/news/471456/f-droid-adv-malware",
-      "hot": "Fri, 03 Jul 2026 11:01:24 +0800"
     }
   ]
 }
