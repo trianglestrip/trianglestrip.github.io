@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-07-03T12:31:56+00:00",
+  "updated_at": "2026-07-03T18:53:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Python] usestrix/strix",
       "url": "https://github.com/usestrix/strix",
-      "hot": "33,630"
+      "hot": "34,262"
     },
     {
       "rank": 2,
       "title": "[JavaScript] openai/codex-plugin-cc",
       "url": "https://github.com/openai/codex-plugin-cc",
-      "hot": "22,927"
+      "hot": "23,086"
     },
     {
       "rank": 3,
       "title": "[JavaScript] JuliusBrussee/caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
-      "hot": "82,394"
+      "hot": "82,730"
     },
     {
       "rank": 4,
       "title": "[Java] elastic/elasticsearch",
       "url": "https://github.com/elastic/elasticsearch",
-      "hot": "77,234"
+      "hot": "77,298"
     },
     {
       "rank": 5,
       "title": "[TypeScript] actions/checkout",
       "url": "https://github.com/actions/checkout",
-      "hot": "8,218"
+      "hot": "8,245"
     },
     {
       "rank": 6,
       "title": "[TypeScript] ChromeDevTools/chrome-devtools-mcp",
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "hot": "45,331"
+      "hot": "45,435"
     },
     {
       "rank": 7,
       "title": "[Python] ansible/ansible",
       "url": "https://github.com/ansible/ansible",
-      "hot": "69,092"
+      "hot": "69,159"
     },
     {
       "rank": 8,
       "title": "[TypeScript] facebook/astryx",
       "url": "https://github.com/facebook/astryx",
-      "hot": "4,107"
+      "hot": "4,414"
     },
     {
       "rank": 9,
       "title": "[Python] rommapp/romm",
       "url": "https://github.com/rommapp/romm",
-      "hot": "9,572"
+      "hot": "9,722"
     },
     {
       "rank": 10,
       "title": "[Python] harvard-edge/cs249r_book",
       "url": "https://github.com/harvard-edge/cs249r_book",
-      "hot": "25,956"
+      "hot": "26,075"
     }
   ]
 }
