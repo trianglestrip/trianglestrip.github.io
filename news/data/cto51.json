@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-02T23:42:20+00:00",
+  "updated_at": "2026-07-03T04:58:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "干净仓库也能骗 Claude Code 装后门，程序员别把初始化交给 Agent",
-      "url": "https://www.51cto.com/article/848258.html",
-      "hot": "真正刺眼的地方在于：AI 编程工具已经不只是“读代码给建议”，它开始能理解说明、调用终端、安装依赖、修改文件、运行测试。也就是说，陌生项目的初始化过程，正在从程序员手里的手动动作，变成 Agent 可以自动执行的一串命令。"
+      "title": "Grouped GEMM 为什么适合 MoE？从碎片小矩阵到通信友好的算子设计",
+      "url": "https://www.51cto.com/article/848376.html",
+      "hot": "MoE 里的 Grouped GEMM 不只是一个 GEMM 优化，而是一个小型系统工程：它连接 router 之后的专家计算，也连接 dispatch/combine 通信；它既要追求 Tensor Core 吞吐，也要尊重缓存和 HBM 的边界。"
     },
     {
       "rank": 2,
-      "title": "一个开源平台，编织起了Agent「互联网」",
-      "url": "https://www.51cto.com/article/848263.html",
-      "hot": "如今，以龙虾为代表的 Agent，正面临半个多世纪前 IBM System/360 等大型机所遭遇的困境：单体能力已经足够强，但系统仍是分散的。"
+      "title": "Prompt Engineering没死，但它升级了：一文看懂Loop Engineering",
+      "url": "https://www.51cto.com/article/848373.html",
+      "hot": "打开ClaudeCode或Cursor，输入\"帮我写一个用户注册接口\"，AI给你代码，你看了觉得不行，说\"加个邮箱验证\"，AI改了，你又 说\"错误处理太粗糙\"……"
     },
     {
       "rank": 3,
-      "title": "Agent的自演进，被刚刚开源的AReaL 2.0按下了加速键",
-      "url": "https://www.51cto.com/article/848265.html",
-      "hot": "Agent 正面临着又一次关键的节点：从「会使用工具并完成任务」转向「在使用中学习并改进完成任务的方法」。"
+      "title": "谷歌 agent-skills 根治六大 AI 编码通病",
+      "url": "https://www.51cto.com/article/848370.html",
+      "hot": "​​/review​​ 是成品验收，错了改 diff 成本高。doubt-driven 是飞行中纠偏——改方向还便宜。TDD 的 RED 步本质上也是 doubt：failing test 就是对行为 claim 的 disproof。3 轮上限，避免无限 loop。"
     },
     {
       "rank": 4,
-      "title": "训练世界模型，开始从人类的肌肉和脑子里偷师了",
-      "url": "https://www.51cto.com/article/848271.html",
-      "hot": "这家由两位95后博士创立的公司，提出了一套全新的Ego-NeuroLoop数据范式。"
+      "title": "OpenCode 权限配置不踩坑：八条核心规则 + 四个可复用的企业级实战案例，一次搞定安全与效率的平衡",
+      "url": "https://www.51cto.com/article/848369.html",
+      "hot": "OpenCode 的 ​​permission​​ 权限系统是分层、精细化的安全管控体系，从全局规则、工具规则、代理规则形成三级防护，同时支持通配符、路径展开、外部目录授权等拓展能力。"
     },
     {
       "rank": 5,
-      "title": "从库存明细页看窗口隐私模式不是一个开关就完事",
-      "url": "https://ost.51cto.com/posts/51307",
-      "hot": "大家好，我是新手程序员Kevin(老K)。这次我想拆一个很容易被低估的HarmonyOS页面问题：仓储盘点明细页切到后台、进入任务预览或从外部返回..."
+      "title": "Supervisor-Worker 分层智能体架构，揭秘 Agent 如何理解意图、拆解任务、何时调模型、何时调工具？",
+      "url": "https://www.51cto.com/article/848367.html",
+      "hot": "L3、L2、L1  三层Agent 编排架构 ， 基于Supervisor-Worker 分层多智能体经典范式、A2A（Agent-to-Agent）通信标准、ReAct 推理循环、DAG 有向无环图调度理论 ，满足企业级私有化部署、复杂长任务编排、多领域协同、权限管控、迭代扩展生产级要求。"
     },
     {
       "rank": 6,
-      "title": "搞懂 C++ 函数重载，看完这篇就明白了",
-      "url": "https://www.51cto.com/article/848224.html",
-      "hot": "本文不会去弄很多晦涩难懂的官方术语，从编译预处理、符号改编、函数匹配、冲突校验这四个核心的环节着手，一步一步地去拆解重载的底层逻辑，把编译过程中的核心细节给讲明白，让开发者完完全全地搞懂函数重载的底层本质，不再依靠经验来编写代码，碰到报错的时候也能够去排查。"
+      "title": "全球首个英伟达含量为零的万亿模型，成了海外开发者的抢手货",
+      "url": "https://www.51cto.com/article/848352.html",
+      "hot": "模型采用自研MoE混合专家架构，总参数达1.6万亿，每token激活约48B参数，原生支持1M超长上下文。"
     },
     {
       "rank": 7,
-      "title": "我刚被封号，Anthropic转头把我们都送给了Cursor和Codex",
-      "url": "https://www.51cto.com/article/848223.html",
-      "hot": "我们没有放弃用AI写代码，也没有放弃Claude系列的模型，我们只是换了个不会因为你是国内IP就把你一脚踢开的入口。Anthropic的风控团队关起门来清理了一批账号，转头这批用户全须全尾地，走进了Cursor和Codex的后台。"
+      "title": "面试官皱眉：“公司项目几百万行代码，Claude Code 怎么扛得住？”我：“换 Opus 4.7”，他叹气：模型是地板，Harness 才是天花板",
+      "url": "https://www.51cto.com/article/848351.html",
+      "hot": "我把 Anthropic 上周刚发的那篇专门讲大代码库实践经验的博客整篇扒了一遍，又翻了 Claude Code 创始人 Boris Cherny 分享过过的一些经验。这些一手信源串完之后，我把在大代码库里最容易踩的 7 个坑总结了出来，快来看看吧。"
     },
     {
       "rank": 8,
-      "title": "Claude Fable 5解禁，Sonnet 5发布，但各种骚操作封禁中国用户",
-      "url": "https://www.51cto.com/article/848222.html",
-      "hot": "安全研究者拆Claude Code的binary（二进制包）时，发现它在系统提示词里给中国时区和代理域名的请求偷偷打Unicode暗号。"
+      "title": "Claude5断网18天复活，首份绝密自白曝光！狂喷DATA GO「火星文」",
+      "url": "https://www.51cto.com/article/848348.html",
+      "hot": "太惊悚了！经历18天强制断网，Claude不仅没脑死亡，竟靠着断网前写下的「生前手稿」完成了赛博复活，绝密内心自白曝光。"
     },
     {
       "rank": 9,
-      "title": "踩坑预警：ORDER BY + LIMIT 分页数据重复又丢失，排序字段不唯一藏致命坑",
-      "url": "https://www.51cto.com/article/848162.html",
-      "hot": "ORDER BY​ 少写了一个 id，看起来功能正常，实则埋着数据重复、丢失的雷。 分页查询是最简单的SQL，也是最容易被忽视的坑。 加一个主键排序，零成本修复，彻底告别分页诡异BUG。​"
+      "title": "刚刚，Claude Code把企业级功能砸给了20刀用户！",
+      "url": "https://www.51cto.com/article/848347.html",
+      "hot": "两周前还是大厂团队专属，两周后20刀的Pro用户就能原封不动地用上——Claude Code把「会话实时变网页」这项企业级能力，直接下放到个人用户。"
     },
     {
       "rank": 10,
-      "title": "卷不赢模型，Meta改行「算力包租公」！一夜炸崩美股AI链",
-      "url": "https://www.51cto.com/article/848215.html",
-      "hot": "模型卷不过，Meta 反手开门卖自家算力，直接抢 AWS 的饭碗——昔日金主 CoreWeave、Nebius 一夜被炸崩 17%。"
+      "title": "Fable 5解禁即翻车！写一行代码就降智，开发者破防",
+      "url": "https://www.51cto.com/article/848346.html",
+      "hot": "消失19天，Fable 5解禁即翻车！写代码频遭强制降智，魔幻双标气疯开发者。面对离谱的过度审查，这位戴着镣铐的「天才程序员」还值得用吗？"
     }
   ]
 }

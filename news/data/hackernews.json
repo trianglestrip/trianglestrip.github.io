@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-02T23:42:21+00:00",
+  "updated_at": "2026-07-03T04:58:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Virginia bans sale of geolocation data",
-      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
-      "hot": "312"
+      "title": "The Free Market Lie: Why Switzerland Has 25 Gbit Internet and America Doesn't",
+      "url": "https://stefan.schueller.net/posts/the-free-market-lie/",
+      "hot": "115"
     },
     {
       "rank": 2,
-      "title": "crustc: entirety of `rustc`, translated to C",
-      "url": "https://github.com/FractalFir/crustc",
-      "hot": "42"
+      "title": "Virginia bans sale of geolocation data",
+      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
+      "hot": "633"
     },
     {
       "rank": 3,
-      "title": "Exapunks (2018)",
-      "url": "https://www.zachtronics.com/exapunks/",
-      "hot": "207"
+      "title": "CarPlay Is Additive",
+      "url": "https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts",
+      "hot": "137"
     },
     {
       "rank": 4,
-      "title": "Reality has a surprising amount of detail (2017)",
-      "url": "https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail",
-      "hot": "84"
+      "title": "Right to Local Intelligence",
+      "url": "https://righttointelligence.org/",
+      "hot": "101"
     },
     {
       "rank": 5,
-      "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
-      "url": "https://mathstodon.xyz/@iblech/116769502749142438",
-      "hot": "380"
+      "title": "crustc: entirety of `rustc`, translated to C",
+      "url": "https://github.com/FractalFir/crustc",
+      "hot": "194"
     },
     {
       "rank": 6,
-      "title": "Podman v6.0.0",
-      "url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0/",
-      "hot": "351"
+      "title": "Is the iPhone birth control? Causal evidence from AT&T's 2007-2011 monopoly [pdf]",
+      "url": "https://www.nber.org/system/files/working_papers/w35310/w35310.pdf",
+      "hot": "22"
     },
     {
       "rank": 7,
-      "title": "EFF letter to FTC on X consent order (2 July 2026) [pdf]",
-      "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/EFF-letter-to-FTC-on-X-consent-order-7-2-26.pdf",
-      "hot": "89"
+      "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
+      "url": "https://mathstodon.xyz/@iblech/116769502749142438",
+      "hot": "430"
     },
     {
       "rank": 8,
-      "title": "PeerTube is a free, decentralized and federated video platform",
-      "url": "https://github.com/Chocobozzz/PeerTube",
-      "hot": "482"
+      "title": "Reality has a surprising amount of detail (2017)",
+      "url": "https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail",
+      "hot": "194"
     },
     {
       "rank": 9,
-      "title": "Lightning Memory-Mapped Database Manager (LMDB) 1.0",
-      "url": "http://www.lmdb.tech/doc/",
-      "hot": "55"
+      "title": "Exapunks (2018)",
+      "url": "https://www.zachtronics.com/exapunks/",
+      "hot": "250"
     },
     {
       "rank": 10,
-      "title": "This is my attempt to get Vulkan going on NetBSD",
-      "url": "https://github.com/segaboy/vulkan-netbsd",
-      "hot": "78"
+      "title": "Wasmer: Fast, secure, lightweight containers based on WebAssembly",
+      "url": "https://wasmer.io/",
+      "hot": "8"
     }
   ]
 }
