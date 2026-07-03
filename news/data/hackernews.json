@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-03T20:07:27+00:00",
+  "updated_at": "2026-07-03T22:29:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "A Cali. farmer is giving away tons of nectarines that he's not allowed to sell",
-      "url": "https://apnews.com/article/california-farmer-nectarines-lawsuit-patent-4f7bc8ab185e8b9cbdd6d6ad4f2aabd1",
-      "hot": "43"
+      "title": "Espionage Against the European Parliament",
+      "url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/",
+      "hot": "159"
     },
     {
       "rank": 2,
-      "title": "Costco is the anti-Amazon",
-      "url": "https://phenomenalworld.org/analysis/the-anti-amazon/",
-      "hot": "112"
+      "title": "SearXNG: A free internet metasearch engine",
+      "url": "https://github.com/searxng/searxng",
+      "hot": "66"
     },
     {
       "rank": 3,
-      "title": "Jamesob's guide to running SOTA LLMs locally",
-      "url": "https://github.com/jamesob/local-llm",
-      "hot": "171"
+      "title": "Africans Are Turning to Starlink",
+      "url": "https://www.economist.com/middle-east-and-africa/2026/07/02/africans-are-turning-to-starlink",
+      "hot": "39"
     },
     {
       "rank": 4,
-      "title": "Factories are just rooms",
-      "url": "https://interconnected.org/home/2026/07/03/factories",
-      "hot": "116"
+      "title": "Goodbye, Forever, Probably",
+      "url": "https://whitep4nth3r.com/blog/goodbye-forever-probably/",
+      "hot": "17"
     },
     {
       "rank": 5,
-      "title": "Hunting a 16-year-old SQLite WAL bug with TLA+",
-      "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
-      "hot": "117"
+      "title": "Jamesob's guide to running SOTA LLMs locally",
+      "url": "https://github.com/jamesob/local-llm",
+      "hot": "236"
     },
     {
       "rank": 6,
-      "title": "Show HN: Mcpsnoop – Wireshark for MCP (transparent proxy and live TUI)",
-      "url": "https://github.com/kerlenton/mcpsnoop",
-      "hot": "28"
+      "title": "FreeBSD ate my RAM",
+      "url": "https://crocidb.com/post/freebsd-ate-my-ram/",
+      "hot": "60"
     },
     {
       "rank": 7,
-      "title": "PostgreSQL and the OOM killer: Why we use strict memory overcommit",
-      "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit",
-      "hot": "126"
+      "title": "Applied Category Theory Course (2018)",
+      "url": "https://math.ucr.edu/home/baez/act_course/index.html",
+      "hot": "19"
     },
     {
       "rank": 8,
-      "title": "My dad helped build North America's oat supply chain: Can it be remade?",
-      "url": "https://ambrook.com/offrange/perspective/how-we-lost-our-oats",
-      "hot": "61"
+      "title": "Kagi Changelog (July 2): Heads, tails, and an AI toggle",
+      "url": "https://kagi.com/changelog#10959",
+      "hot": "34"
     },
     {
       "rank": 9,
-      "title": "Instead of banning AI, I made a classroom contract with my students",
-      "url": "https://www.science.org/content/article/instead-banning-ai-i-made-classroom-contract-my-students",
-      "hot": "35"
+      "title": "The Demoralization of the White-Collar Worker",
+      "url": "https://nooneshappy.com/article/the-demoralization-of-the-white-collar-worker/",
+      "hot": "6"
     },
     {
       "rank": 10,
-      "title": "Valve open-source the Steam Machine e-ink screen so you can make your own",
-      "url": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/",
-      "hot": "444"
+      "title": "Costco is the anti-Amazon",
+      "url": "https://phenomenalworld.org/analysis/the-anti-amazon/",
+      "hot": "228"
     }
   ]
 }
