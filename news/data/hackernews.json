@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-03T17:49:25+00:00",
+  "updated_at": "2026-07-03T20:07:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude, please stop trying to memorize random crap",
-      "url": "https://12gramsofcarbon.com/p/agentics-memorizing-session-transcripts",
-      "hot": "75"
-    },
-    {
-      "rank": 2,
-      "title": "Half-Baked Product",
-      "url": "https://weli.dev/blog/half-baked-product/",
-      "hot": "990"
-    },
-    {
-      "rank": 3,
-      "title": "The Life and Times of Maxis, Part 1: SimEverything",
-      "url": "https://www.filfre.net/2026/07/the-life-and-times-of-maxis-part-1-simeverything/",
+      "title": "A Cali. farmer is giving away tons of nectarines that he's not allowed to sell",
+      "url": "https://apnews.com/article/california-farmer-nectarines-lawsuit-patent-4f7bc8ab185e8b9cbdd6d6ad4f2aabd1",
       "hot": "43"
     },
     {
-      "rank": 4,
+      "rank": 2,
+      "title": "Costco is the anti-Amazon",
+      "url": "https://phenomenalworld.org/analysis/the-anti-amazon/",
+      "hot": "112"
+    },
+    {
+      "rank": 3,
       "title": "Jamesob's guide to running SOTA LLMs locally",
       "url": "https://github.com/jamesob/local-llm",
-      "hot": "76"
+      "hot": "171"
+    },
+    {
+      "rank": 4,
+      "title": "Factories are just rooms",
+      "url": "https://interconnected.org/home/2026/07/03/factories",
+      "hot": "116"
     },
     {
       "rank": 5,
-      "title": "International chess federation sanctions Kramnik",
-      "url": "https://www.fide.com/fide-ethics-disciplinary-commission-issues-a-decision-in-case-involving-gm-vladimir-kramnik/",
-      "hot": "16"
+      "title": "Hunting a 16-year-old SQLite WAL bug with TLA+",
+      "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
+      "hot": "117"
     },
     {
       "rank": 6,
-      "title": "Factories Are Just Rooms",
-      "url": "https://interconnected.org/home/2026/07/03/factories",
-      "hot": "60"
+      "title": "Show HN: Mcpsnoop – Wireshark for MCP (transparent proxy and live TUI)",
+      "url": "https://github.com/kerlenton/mcpsnoop",
+      "hot": "28"
     },
     {
       "rank": 7,
-      "title": "Hunting a 16-year-old SQLite WAL bug with TLA+",
-      "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
-      "hot": "70"
+      "title": "PostgreSQL and the OOM killer: Why we use strict memory overcommit",
+      "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit",
+      "hot": "126"
     },
     {
       "rank": 8,
-      "title": "PostgreSQL and the OOM Killer: Why We Use Strict Memory Overcommit",
-      "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit",
-      "hot": "99"
+      "title": "My dad helped build North America's oat supply chain: Can it be remade?",
+      "url": "https://ambrook.com/offrange/perspective/how-we-lost-our-oats",
+      "hot": "61"
     },
     {
       "rank": 9,
-      "title": "My Dad Helped Build North America's Oat Supply Chain: Can It Be Remade?",
-      "url": "https://ambrook.com/offrange/perspective/how-we-lost-our-oats",
-      "hot": "30"
+      "title": "Instead of banning AI, I made a classroom contract with my students",
+      "url": "https://www.science.org/content/article/instead-banning-ai-i-made-classroom-contract-my-students",
+      "hot": "35"
     },
     {
       "rank": 10,
-      "title": "Give Smart People the Tools to Do Smart Things",
-      "url": "https://superuserdone.com/posts/2026-07-03-give-smart-people-the-tools/",
-      "hot": "64"
+      "title": "Valve open-source the Steam Machine e-ink screen so you can make your own",
+      "url": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/",
+      "hot": "444"
     }
   ]
 }
