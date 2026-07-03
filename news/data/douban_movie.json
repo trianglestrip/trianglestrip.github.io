@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-03T14:43:28+00:00",
+  "updated_at": "2026-07-03T17:49:01+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,21 +18,21 @@
     },
     {
       "rank": 3,
+      "title": "四渡",
+      "url": "https://movie.douban.com/subject/37191746/",
+      "hot": ""
+    },
+    {
+      "rank": 4,
       "title": "铁拳教育",
       "url": "https://movie.douban.com/subject/37071123/",
       "hot": "评分 8.7"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "南部档案",
       "url": "https://movie.douban.com/subject/35465012/",
       "hot": "评分 6.6"
-    },
-    {
-      "rank": 5,
-      "title": "四渡",
-      "url": "https://movie.douban.com/subject/37191746/",
-      "hot": ""
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.3"
-    },
-    {
-      "rank": 8,
-      "title": "抓特务",
-      "url": "https://movie.douban.com/subject/36812879/",
-      "hot": "评分 7.4"
-    },
-    {
-      "rank": 9,
       "title": "千香",
       "url": "https://movie.douban.com/subject/35633152/",
       "hot": ""
     },
     {
+      "rank": 8,
+      "title": "痴迷",
+      "url": "https://movie.douban.com/subject/37450627/",
+      "hot": "评分 7.7"
+    },
+    {
+      "rank": 9,
+      "title": "给阿嬷的情书",
+      "url": "https://movie.douban.com/subject/37116446/",
+      "hot": "评分 9.3"
+    },
+    {
       "rank": 10,
-      "title": "镖人：风起大漠",
-      "url": "https://movie.douban.com/subject/36474027/",
-      "hot": "评分 7.5"
+      "title": "抓特务",
+      "url": "https://movie.douban.com/subject/36812879/",
+      "hot": "评分 7.4"
     }
   ]
 }

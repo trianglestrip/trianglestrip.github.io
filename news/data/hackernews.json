@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-03T14:43:55+00:00",
+  "updated_at": "2026-07-03T17:49:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Half-Baked Product",
-      "url": "https://weli.dev/blog/half-baked-product/",
-      "hot": "683"
+      "title": "Claude, please stop trying to memorize random crap",
+      "url": "https://12gramsofcarbon.com/p/agentics-memorizing-session-transcripts",
+      "hot": "75"
     },
     {
       "rank": 2,
-      "title": "PostgreSQL and the OOM Killer: Why We Use Strict Memory Overcommit",
-      "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit",
-      "hot": "40"
+      "title": "Half-Baked Product",
+      "url": "https://weli.dev/blog/half-baked-product/",
+      "hot": "990"
     },
     {
       "rank": 3,
-      "title": "Valve open source the Steam Machine e-ink screen so you can make your own",
-      "url": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/",
-      "hot": "114"
+      "title": "The Life and Times of Maxis, Part 1: SimEverything",
+      "url": "https://www.filfre.net/2026/07/the-life-and-times-of-maxis-part-1-simeverything/",
+      "hot": "43"
     },
     {
       "rank": 4,
-      "title": "Wordgard: The new in-browser rich-text editor from the creator of ProseMirror",
-      "url": "https://wordgard.net/",
-      "hot": "102"
+      "title": "Jamesob's guide to running SOTA LLMs locally",
+      "url": "https://github.com/jamesob/local-llm",
+      "hot": "76"
     },
     {
       "rank": 5,
-      "title": "Please stop the AI confidence theater",
-      "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
-      "hot": "127"
+      "title": "International chess federation sanctions Kramnik",
+      "url": "https://www.fide.com/fide-ethics-disciplinary-commission-issues-a-decision-in-case-involving-gm-vladimir-kramnik/",
+      "hot": "16"
     },
     {
       "rank": 6,
-      "title": "Right to Local Intelligence",
-      "url": "https://righttointelligence.org/",
-      "hot": "370"
+      "title": "Factories Are Just Rooms",
+      "url": "https://interconnected.org/home/2026/07/03/factories",
+      "hot": "60"
     },
     {
       "rank": 7,
-      "title": "CarPlay Is Additive",
-      "url": "https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts",
-      "hot": "428"
+      "title": "Hunting a 16-year-old SQLite WAL bug with TLA+",
+      "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
+      "hot": "70"
     },
     {
       "rank": 8,
-      "title": "The Fall and Rise of Screwworm",
-      "url": "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm",
-      "hot": "9"
+      "title": "PostgreSQL and the OOM Killer: Why We Use Strict Memory Overcommit",
+      "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit",
+      "hot": "99"
     },
     {
       "rank": 9,
-      "title": "How working with a blind client revealed invisible accessibility gaps",
-      "url": "https://iinteractive.com/resources/blog/read-only",
-      "hot": "49"
+      "title": "My Dad Helped Build North America's Oat Supply Chain: Can It Be Remade?",
+      "url": "https://ambrook.com/offrange/perspective/how-we-lost-our-oats",
+      "hot": "30"
     },
     {
       "rank": 10,
-      "title": "The Safari MCP server for web developers",
-      "url": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/",
-      "hot": "163"
+      "title": "Give Smart People the Tools to Do Smart Things",
+      "url": "https://superuserdone.com/posts/2026-07-03-give-smart-people-the-tools/",
+      "hot": "64"
     }
   ]
 }
