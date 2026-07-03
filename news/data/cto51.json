@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-03T10:48:33+00:00",
+  "updated_at": "2026-07-03T14:43:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "突发！阿里全面禁用Claude，7月10日起卸载",
+      "url": "https://www.51cto.com/article/848456.html",
+      "hot": "Claude Code被曝暗藏后门、隐蔽标记中国用户，阿里将其列入高风险软件名单，全员限期卸载。"
+    },
+    {
+      "rank": 2,
       "title": "Claude Code 被曝存在隐形水印，阿里全面禁用 Claude Code",
       "url": "https://www.51cto.com/article/848450.html",
       "hot": "大致的意思说的是：它对 Claude Code 2.1.196 做逆向分析时发现，当用户设置 ANTHROPIC_BASE_URL，把请求接到代理、企业网关或模型路由器，程序会继续检查两类信息。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "单机鸿蒙应用改造为华为端云一体化项目实战",
       "url": "https://ost.51cto.com/posts/51475",
       "hot": "本文以健康记录类应用&quot;轻食刻&quot;为案例，完整复盘一个纯单机鸿蒙（HarmonyOSArkTS）应用，如何一步步改造为基于华为AppGalleryConnect（AGC）..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "PhotoViewPicker 选图页的文件句柄、重复选择和提交前校验怎么查",
       "url": "https://ost.51cto.com/posts/51468",
       "hot": "古早程序员老薛，照常每天跟大家分享一些东西。这次聊一个看起来不难、上线前却很容易翻车的页面：质检照片上传页。核心判断先说清楚：Phot..."
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Fable 5回归24小时差评如潮！跑分大降，拒答问题，还偷偷骂用户",
       "url": "https://www.51cto.com/article/848404.html",
       "hot": "开发者Om Patel给Fable 5出了一道竞赛编程难题，一道要求处理图连通性和区间覆盖的硬核算法题。结果，界面意外泄露了一段模型没打磨过的思考过程，他把这段过程截图发了出来。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "ICML 2026 | 让多模态大模型学会带着时间思考：北大与华为团队开源TaRO框架",
       "url": "https://www.51cto.com/article/848409.html",
       "hot": "针对视频时序定位中多模态大模型推理流于表面、缺乏真正时间感知的问题，本文推出了 TaRO 框架。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "刚刚，LeCun团队让世界模型学会持续学习！",
       "url": "https://www.51cto.com/article/848410.html",
       "hot": "刚刚，纽约大学联合LeCun初创AMI带来JEPA系列的最新成果——AdaJEPA。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "傻瓜式Loop教程来了：一行命令直接上手，GitHub狂揽4.5k Star",
       "url": "https://www.51cto.com/article/848411.html",
       "hot": "有位大神直接在GitHub开源了整套Loop Engineering框架，目前已累计收获4.5k Star。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "黄仁勋说的Physical AI，被这家中国跨界选手带进了生命科学实验室",
       "url": "https://www.51cto.com/article/848412.html",
       "hot": "OpenAI发GPT-Rosalind，专攻药物发现和基因组学；谷歌推Co-Scientist和ERA，把多Agent系统塞进科学推理流程；Anthropic上线面向科研流程的Claude Science工作台。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Anthropic被曝造芯！挖OpenAI老兵，密谈三星2nm",
       "url": "https://www.51cto.com/article/848413.html",
       "hot": "英伟达的牌桌上，最后一个玩家摸牌了。一月之内，Anthropic先挖OpenAI造芯老兵Clive Chan，再谈三星2nm。Trainium、TPU、英伟达GPU三张牌在手，偏要自己凑第四张，图什么？"
-    },
-    {
-      "rank": 10,
-      "title": "绝了! Claude Fable5惨遭二次越狱，黑客20小时撬开神话防线",
-      "url": "https://www.51cto.com/article/848415.html",
-      "hot": "Anthropic刚把Fable 5「放出来」没几天，它就又被黑客当众扒了底裤。"
     }
   ]
 }

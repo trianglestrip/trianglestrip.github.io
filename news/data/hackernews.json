@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-03T10:48:34+00:00",
+  "updated_at": "2026-07-03T14:43:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Half-Baked Product",
       "url": "https://weli.dev/blog/half-baked-product/",
-      "hot": "124"
+      "hot": "683"
     },
     {
       "rank": 2,
-      "title": "Virginia bans sale of geolocation data",
-      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
-      "hot": "811"
+      "title": "PostgreSQL and the OOM Killer: Why We Use Strict Memory Overcommit",
+      "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit",
+      "hot": "40"
     },
     {
       "rank": 3,
-      "title": "Right to Local Intelligence",
-      "url": "https://righttointelligence.org/",
-      "hot": "281"
+      "title": "Valve open source the Steam Machine e-ink screen so you can make your own",
+      "url": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/",
+      "hot": "114"
     },
     {
       "rank": 4,
-      "title": "CarPlay Is Additive",
-      "url": "https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts",
-      "hot": "320"
+      "title": "Wordgard: The new in-browser rich-text editor from the creator of ProseMirror",
+      "url": "https://wordgard.net/",
+      "hot": "102"
     },
     {
       "rank": 5,
-      "title": "Wordgard: The new in-browser rich-text editor from the creator of ProseMirror",
-      "url": "https://wordgard.net/",
-      "hot": "17"
+      "title": "Please stop the AI confidence theater",
+      "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
+      "hot": "127"
     },
     {
       "rank": 6,
-      "title": "Alibaba to ban Claude Code in workplace over alleged backdoor risks, source says",
-      "url": "https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/",
-      "hot": "90"
+      "title": "Right to Local Intelligence",
+      "url": "https://righttointelligence.org/",
+      "hot": "370"
     },
     {
       "rank": 7,
-      "title": "crustc: entirety of `rustc`, translated to C",
-      "url": "https://github.com/FractalFir/crustc",
-      "hot": "290"
+      "title": "CarPlay Is Additive",
+      "url": "https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts",
+      "hot": "428"
     },
     {
       "rank": 8,
-      "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
-      "url": "https://mathstodon.xyz/@iblech/116769502749142438",
-      "hot": "481"
+      "title": "The Fall and Rise of Screwworm",
+      "url": "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm",
+      "hot": "9"
     },
     {
       "rank": 9,
-      "title": "The Safari MCP server for web developers",
-      "url": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/",
-      "hot": "107"
+      "title": "How working with a blind client revealed invisible accessibility gaps",
+      "url": "https://iinteractive.com/resources/blog/read-only",
+      "hot": "49"
     },
     {
       "rank": 10,
-      "title": "How working with a blind client revealed invisible accessibility gaps",
-      "url": "https://iinteractive.com/resources/blog/read-only",
-      "hot": "23"
+      "title": "The Safari MCP server for web developers",
+      "url": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/",
+      "hot": "163"
     }
   ]
 }
