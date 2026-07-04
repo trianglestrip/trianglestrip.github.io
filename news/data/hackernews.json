@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-04T15:07:23+00:00",
+  "updated_at": "2026-07-04T17:22:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Potential session/cache leakage between workspace instances or consumer accounts",
       "url": "https://github.com/anthropics/claude-code/issues/74066",
-      "hot": "58"
+      "hot": "194"
     },
     {
       "rank": 2,
-      "title": "Explanation of everything you can see in htop/top on Linux",
-      "url": "https://peteris.rocks/blog/htop/",
-      "hot": "102"
+      "title": "Leaking YouTube Creators Private Videos",
+      "url": "https://javoriuski.com/post/youtube",
+      "hot": "49"
     },
     {
       "rank": 3,
-      "title": "Astrophysicists Puzzle over Webb’s New Universe",
-      "url": "https://www.quantamagazine.org/astrophysicists-puzzle-over-webbs-new-universe-20260702/",
-      "hot": "111"
+      "title": "Explanation of everything you can see in htop/top on Linux",
+      "url": "https://peteris.rocks/blog/htop/",
+      "hot": "229"
     },
     {
       "rank": 4,
-      "title": "Maybe you should learn something",
-      "url": "https://www.marginalia.nu/log/a_135_learn/",
-      "hot": "255"
+      "title": "Curveball",
+      "url": "https://mightyburger.net/projects/curveball/",
+      "hot": "14"
     },
     {
       "rank": 5,
-      "title": "Postgres data stored in Parquet on S3: LTAP architecture explained",
-      "url": "https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage",
-      "hot": "94"
+      "title": "Windows CE Dreamcast Community Edition (wince-dc)",
+      "url": "https://github.com/maximqaxd/wince-dc",
+      "hot": "28"
     },
     {
       "rank": 6,
-      "title": "The bottleneck might be the air in the room",
-      "url": "https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/",
-      "hot": "538"
+      "title": "Astrophysicists Puzzle over Webb’s New Universe",
+      "url": "https://www.quantamagazine.org/astrophysicists-puzzle-over-webbs-new-universe-20260702/",
+      "hot": "140"
     },
     {
       "rank": 7,
-      "title": "Breaking the Bird Barrier: Scientist Decodes Zebra Finch Language",
-      "url": "https://www.freepressjournal.in/education/breaking-the-bird-barrier-scientist-decodes-zebra-finch-language",
+      "title": "Designing DB partitions you don't have to babysit",
+      "url": "https://explainanalyze.com/p/designing-partitioning-you-dont-have-to-babysit/",
       "hot": "16"
     },
     {
       "rank": 8,
-      "title": "Performance per dollar is getting faster and cheaper",
-      "url": "https://www.wafer.ai/blog/glm52-amd",
-      "hot": "303"
+      "title": "Maybe you should learn something",
+      "url": "https://www.marginalia.nu/log/a_135_learn/",
+      "hot": "328"
     },
     {
       "rank": 9,
-      "title": "Leanstral 1.5: Proof abundance for all",
-      "url": "https://mistral.ai/news/leanstral-1-5/",
-      "hot": "304"
+      "title": "The Vespa at 80",
+      "url": "https://www.cbc.ca/news/world/vespa-italy-postwar-design-9.7252641",
+      "hot": "99"
     },
     {
       "rank": 10,
-      "title": "Night Witches – all-female Soviet aviator regiment WW2",
-      "url": "https://en.wikipedia.org/wiki/Night_Witches",
-      "hot": "42"
+      "title": "Postgres data stored in Parquet on S3: LTAP architecture explained",
+      "url": "https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage",
+      "hot": "123"
     }
   ]
 }
