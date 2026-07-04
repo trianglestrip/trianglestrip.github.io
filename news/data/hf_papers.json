@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-04T09:41:00+00:00",
+  "updated_at": "2026-07-04T16:14:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "48"
+      "hot": "49"
     },
     {
       "rank": 2,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
-      "url": "https://huggingface.co/papers/2601.02163",
-      "hot": "13"
-    },
-    {
-      "rank": 9,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "61"
     },
     {
+      "rank": 9,
+      "title": "EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning",
+      "url": "https://huggingface.co/papers/2601.02163",
+      "hot": "13"
+    },
+    {
       "rank": 10,
-      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
-      "url": "https://huggingface.co/papers/2606.03264",
-      "hot": "23"
+      "title": "PyTorch Distributed: Experiences on Accelerating Data Parallel Training",
+      "url": "https://huggingface.co/papers/2006.15704",
+      "hot": "10"
     }
   ]
 }
