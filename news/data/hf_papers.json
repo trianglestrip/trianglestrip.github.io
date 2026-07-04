@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-03T18:53:10+00:00",
+  "updated_at": "2026-07-04T01:38:24+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
-      "url": "https://huggingface.co/papers/2606.03264",
-      "hot": "23"
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "37"
     }
   ]
 }
