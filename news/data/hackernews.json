@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-04T09:40:38+00:00",
+  "updated_at": "2026-07-04T12:17:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "The bottleneck might be the air in the room",
       "url": "https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/",
-      "hot": "207"
+      "hot": "388"
     },
     {
       "rank": 2,
-      "title": "Agentic coding notes from Galapagos Island",
-      "url": "https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post",
-      "hot": "87"
+      "title": "Astrophysicists Puzzle over Webb's New Universe",
+      "url": "https://www.quantamagazine.org/astrophysicists-puzzle-over-webbs-new-universe-20260702/",
+      "hot": "46"
     },
     {
       "rank": 3,
-      "title": "Performance per dollar is getting faster and cheaper",
-      "url": "https://www.wafer.ai/blog/glm52-amd",
-      "hot": "245"
+      "title": "Mir Books – Books from the Soviet Era",
+      "url": "https://mirtitles.org",
+      "hot": "102"
     },
     {
       "rank": 4,
-      "title": "Mir Books – Books from the Soviet Era",
-      "url": "https://mirtitles.org",
-      "hot": "66"
+      "title": "Maybe you should learn something",
+      "url": "https://www.marginalia.nu/log/a_135_learn/",
+      "hot": "148"
     },
     {
       "rank": 5,
-      "title": "Leanstral 1.5: Proof abundance for all",
-      "url": "https://mistral.ai/news/leanstral-1-5/",
-      "hot": "229"
+      "title": "Performance per dollar is getting faster and cheaper",
+      "url": "https://www.wafer.ai/blog/glm52-amd",
+      "hot": "267"
     },
     {
       "rank": 6,
-      "title": "Postgres data stored in Parquet on S3: LTAP architecture explained",
-      "url": "https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage",
-      "hot": "20"
+      "title": "Leanstral 1.5: Proof abundance for all",
+      "url": "https://mistral.ai/news/leanstral-1-5/",
+      "hot": "264"
     },
     {
       "rank": 7,
-      "title": "Giant trees have no trouble pumping water to top branches: new research",
-      "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
-      "hot": "196"
+      "title": "Postgres data stored in Parquet on S3: LTAP architecture explained",
+      "url": "https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage",
+      "hot": "49"
     },
     {
       "rank": 8,
-      "title": "Synthesis is harder than analysis",
-      "url": "https://surfingcomplexity.blog/2026/07/03/synthesis-is-harder-than-analysis/",
-      "hot": "82"
+      "title": "Giant trees have no trouble pumping water to top branches: new research",
+      "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
+      "hot": "215"
     },
     {
       "rank": 9,
-      "title": "Maybe you should learn something",
-      "url": "https://www.marginalia.nu/log/a_135_learn/",
-      "hot": "78"
+      "title": "Agentic coding notes from Galapagos Island",
+      "url": "https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post",
+      "hot": "112"
     },
     {
       "rank": 10,
-      "title": "Steam Controller Auto-Charge – pilot to magnetic charging puck using CV",
-      "url": "https://github.com/FossPrime/Steam-Controller-Auto-Charge",
-      "hot": "138"
+      "title": "Ship traces journey Spanish Armada sailors made in 1588",
+      "url": "https://www.irishtimes.com/ireland/2026/06/30/it-is-a-huge-honour-ship-traces-journey-spanish-armada-sailors-made-in-1588/",
+      "hot": "9"
     }
   ]
 }
