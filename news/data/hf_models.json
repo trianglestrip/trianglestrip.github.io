@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-04T01:38:24+00:00",
+  "updated_at": "2026-07-04T09:40:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "1372"
+      "hot": "1400"
     },
     {
       "rank": 2,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3343"
+      "hot": "3360"
     },
     {
       "rank": 3,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1692"
+      "hot": "1697"
     },
     {
       "rank": 4,
       "title": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
       "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
-      "hot": "684"
+      "hot": "692"
     },
     {
       "rank": 5,
       "title": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark",
-      "hot": "343"
+      "hot": "354"
     },
     {
       "rank": 6,
       "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
       "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "hot": "992"
+      "hot": "997"
     },
     {
       "rank": 7,
-      "title": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
-      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
-      "hot": "415"
+      "title": "nvidia/Qwen3.6-27B-NVFP4",
+      "url": "https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4",
+      "hot": "234"
     },
     {
       "rank": 8,
       "title": "deepreinforce-ai/Ornith-1.0-9B",
       "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B",
-      "hot": "365"
+      "hot": "370"
     },
     {
       "rank": 9,
-      "title": "nvidia/Qwen3.6-27B-NVFP4",
-      "url": "https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4",
-      "hot": "229"
+      "title": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
+      "hot": "417"
     },
     {
       "rank": 10,
       "title": "InternScience/Agents-A1",
       "url": "https://huggingface.co/InternScience/Agents-A1",
-      "hot": "207"
+      "hot": "216"
     }
   ]
 }
