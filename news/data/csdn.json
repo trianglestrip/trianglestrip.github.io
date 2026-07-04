@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-04T17:22:32+00:00",
+  "updated_at": "2026-07-04T19:39:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "LLM 全解析：大语言模型原理、三种接入方案与 DeepSeek API 实战",
       "url": "https://blog.csdn.net/hanwangyyds/article/details/162383457",
-      "hot": "32997"
+      "hot": "31506"
     },
     {
       "rank": 2,
-      "title": "Codex + Claude Code 对抗式开发：双AI协同的安全加固实践",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/162530112",
-      "hot": "21271"
+      "title": "基于 Trae + DeepSeek 的 Vibe Coding 实践指南（四）：SpringBoot + 阿里云视觉的视频字幕提取系统全栈落地",
+      "url": "https://blog.csdn.net/2502_91499791/article/details/162521462",
+      "hot": "22732"
     },
     {
       "rank": 3,
-      "title": "从 0 到 1 构建企业级 RAG：一个中小企业可落地版本的完整架构",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/162525807",
-      "hot": "19205"
+      "title": "Codex + Claude Code 对抗式开发：双AI协同的安全加固实践",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/162530112",
+      "hot": "18765"
     },
     {
       "rank": 4,
-      "title": "【Agent 学习日记】从问题到答案：RAG系统完整处理流程与核心机制深度拆解",
-      "url": "https://blog.csdn.net/2402_87298751/article/details/162522155",
-      "hot": "16615"
+      "title": "【Linux网络】深入理解数据链路层：从MAC帧到ARP协议的底层原理",
+      "url": "https://blog.csdn.net/2503_91389547/article/details/161764122",
+      "hot": "17027"
     },
     {
       "rank": 5,
-      "title": "【Linux之旅】Linux 网络层协议详解：从 IP 报文到路由转发的底层逻辑",
-      "url": "https://blog.csdn.net/2302_80243065/article/details/162513122",
-      "hot": "15396"
+      "title": "【技术解析】WebRTC技术解析：浏览器如何实现P2P文件传输",
+      "url": "https://blog.csdn.net/xmflw/article/details/162506273",
+      "hot": "16811"
     },
     {
       "rank": 6,
-      "title": "【Linux网络】深入理解数据链路层：从MAC帧到ARP协议的底层原理",
-      "url": "https://blog.csdn.net/2503_91389547/article/details/161764122",
-      "hot": "15289"
+      "title": "【Java项目-企悦抽】02-AI赋能产品需求规格说明书",
+      "url": "https://blog.csdn.net/2301_81982617/article/details/162554892",
+      "hot": "16650"
     },
     {
       "rank": 7,
-      "title": "融合计算机视觉与自然语言处理的驾驶证识别技术，实现了从非结构化图像到结构化数据的高效转化，成为智慧交通数字化转型的关键支撑",
-      "url": "https://blog.csdn.net/dlf283870550/article/details/162558171",
-      "hot": "12540"
+      "title": "从 0 到 1 构建企业级 RAG：一个中小企业可落地版本的完整架构",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/162525807",
+      "hot": "14988"
     },
     {
       "rank": 8,
-      "title": "基于 Trae + DeepSeek 的 Vibe Coding 实践指南（三）：视频 OCR SDK 接入详解",
-      "url": "https://blog.csdn.net/2502_91499791/article/details/162465271",
-      "hot": "11021"
+      "title": "【Agent 学习日记】从问题到答案：RAG系统完整处理流程与核心机制深度拆解",
+      "url": "https://blog.csdn.net/2402_87298751/article/details/162522155",
+      "hot": "13674"
     },
     {
       "rank": 9,
       "title": "GitLab CI 制品（Artifacts）完全指南：从作用到配置实践",
       "url": "https://blog.csdn.net/qq_41840843/article/details/162580619",
-      "hot": "10981"
+      "hot": "12499"
     },
     {
       "rank": 10,
-      "title": "C/C++非常规知识(2.0)",
-      "url": "https://blog.csdn.net/oooooooooooohd/article/details/158975001",
-      "hot": "10940"
+      "title": "【Linux之旅】Linux 网络层协议详解：从 IP 报文到路由转发的底层逻辑",
+      "url": "https://blog.csdn.net/2302_80243065/article/details/162513122",
+      "hot": "11919"
     }
   ]
 }

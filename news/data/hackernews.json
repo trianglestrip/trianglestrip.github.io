@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-04T17:22:39+00:00",
+  "updated_at": "2026-07-04T19:39:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Potential session/cache leakage between workspace instances or consumer accounts",
-      "url": "https://github.com/anthropics/claude-code/issues/74066",
-      "hot": "194"
+      "title": "Leaking YouTube creators' private videos",
+      "url": "https://javoriuski.com/post/youtube",
+      "hot": "266"
     },
     {
       "rank": 2,
-      "title": "Leaking YouTube Creators Private Videos",
-      "url": "https://javoriuski.com/post/youtube",
-      "hot": "49"
+      "title": "Google Books (or similar) all book scans – $200k bounty (2025)",
+      "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
+      "hot": "151"
     },
     {
       "rank": 3,
-      "title": "Explanation of everything you can see in htop/top on Linux",
-      "url": "https://peteris.rocks/blog/htop/",
-      "hot": "229"
+      "title": "Potential session/cache leakage between workspace instances or consumer accounts",
+      "url": "https://github.com/anthropics/claude-code/issues/74066",
+      "hot": "232"
     },
     {
       "rank": 4,
-      "title": "Curveball",
-      "url": "https://mightyburger.net/projects/curveball/",
-      "hot": "14"
+      "title": "Explanation of everything you can see in htop/top on Linux (2019)",
+      "url": "https://peteris.rocks/blog/htop/",
+      "hot": "295"
     },
     {
       "rank": 5,
-      "title": "Windows CE Dreamcast Community Edition (wince-dc)",
-      "url": "https://github.com/maximqaxd/wince-dc",
-      "hot": "28"
+      "title": "Verizon is About to Break our Watches",
+      "url": "https://www.jefftk.com/p/verizon-is-about-to-break-our-watches",
+      "hot": "46"
     },
     {
       "rank": 6,
-      "title": "Astrophysicists Puzzle over Webb’s New Universe",
-      "url": "https://www.quantamagazine.org/astrophysicists-puzzle-over-webbs-new-universe-20260702/",
-      "hot": "140"
+      "title": "BareMetal RAM Dumper – Bare-metal x86 tool for Cold Boot Attack experiments",
+      "url": "https://github.com/pIat0n/BareMetal-RAM-Dumper",
+      "hot": "27"
     },
     {
       "rank": 7,
-      "title": "Designing DB partitions you don't have to babysit",
-      "url": "https://explainanalyze.com/p/designing-partitioning-you-dont-have-to-babysit/",
-      "hot": "16"
+      "title": "Windows CE Dreamcast Community Edition (wince-dc)",
+      "url": "https://github.com/maximqaxd/wince-dc",
+      "hot": "55"
     },
     {
       "rank": 8,
-      "title": "Maybe you should learn something",
-      "url": "https://www.marginalia.nu/log/a_135_learn/",
-      "hot": "328"
+      "title": "Plein Air",
+      "url": "https://art.joonas.wtf/",
+      "hot": "31"
     },
     {
       "rank": 9,
-      "title": "The Vespa at 80",
-      "url": "https://www.cbc.ca/news/world/vespa-italy-postwar-design-9.7252641",
-      "hot": "99"
+      "title": "Drone Physics",
+      "url": "https://iahmed.me/post/drone-physics/",
+      "hot": "5"
     },
     {
       "rank": 10,
-      "title": "Postgres data stored in Parquet on S3: LTAP architecture explained",
-      "url": "https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage",
-      "hot": "123"
+      "title": "Curveball",
+      "url": "https://mightyburger.net/projects/curveball/",
+      "hot": "29"
     }
   ]
 }
