@@ -1,9 +1,8 @@
 {
   "source": "ngabbs",
   "title": "NGA",
-  "updated_at": "2026-07-04T22:31:07+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-07-04T23:32:29+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -39,31 +38,31 @@
       "rank": 6,
       "title": "中立观众，新开一个户外团播的帖子吧(绝不隐藏和删帖，欢迎讨论)",
       "url": "https://bbs.nga.cn/read.php?tid=46985663",
-      "hot": "21130"
+      "hot": "21131"
     },
     {
       "rank": 7,
-      "title": "[F1]2026赛季 英国大奖赛 直播讨论",
-      "url": "https://bbs.nga.cn/read.php?tid=47086850",
-      "hot": "394"
+      "title": "[破事氵] 更新又加了一条",
+      "url": "https://bbs.nga.cn/read.php?tid=47109571",
+      "hot": "78"
     },
     {
       "rank": 8,
-      "title": "[破事氵]新公告来了:999夜解锁伤害上限，真红被动打空了不消耗",
-      "url": "https://bbs.nga.cn/read.php?tid=47109452",
-      "hot": "73"
-    },
-    {
-      "rank": 9,
       "title": "[怨仇的秘密告解室] 港区水楼第九期开业！",
       "url": "https://bbs.nga.cn/read.php?tid=46105655",
       "hot": "35377"
     },
     {
+      "rank": 9,
+      "title": "[F1]2026赛季 英国大奖赛 直播讨论",
+      "url": "https://bbs.nga.cn/read.php?tid=47086850",
+      "hot": "395"
+    },
+    {
       "rank": 10,
-      "title": "[破事氵] 更新又加了一条",
-      "url": "https://bbs.nga.cn/read.php?tid=47109571",
-      "hot": "77"
+      "title": "[破事氵]新公告来了:999夜解锁伤害上限，真红被动打空了不消耗",
+      "url": "https://bbs.nga.cn/read.php?tid=47109452",
+      "hot": "73"
     }
   ]
 }
