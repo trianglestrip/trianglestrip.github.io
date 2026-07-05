@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-05T05:12:16+00:00",
+  "updated_at": "2026-07-05T11:53:43+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "PyTorch Distributed: Experiences on Accelerating Data Parallel Training",
-      "url": "https://huggingface.co/papers/2006.15704",
-      "hot": "10"
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "37"
     }
   ]
 }
