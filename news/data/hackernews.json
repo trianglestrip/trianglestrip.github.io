@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-05T18:49:32+00:00",
+  "updated_at": "2026-07-05T21:12:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Organic Maps",
       "url": "https://organicmaps.app/",
-      "hot": "489"
+      "hot": "651"
     },
     {
       "rank": 2,
-      "title": "The Computers Used in Movies",
-      "url": "https://www.starringthecomputer.com/computers.html",
-      "hot": "58"
+      "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
+      "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+      "hot": "79"
     },
     {
       "rank": 3,
-      "title": "\"These cameras are just like the Eye of Sauron\"",
-      "url": "https://arxiv.org/abs/2602.09239",
-      "hot": "62"
+      "title": "The future of Flipper Zero development",
+      "url": "https://blog.flipper.net/future-of-flipper-zero-development/",
+      "hot": "129"
     },
     {
       "rank": 4,
-      "title": "It's not about physical vs. digital games, it's about ownership",
-      "url": "https://popcar.bearblog.dev/its-about-ownership/",
-      "hot": "76"
+      "title": "Starring the Computer",
+      "url": "https://www.starringthecomputer.com/computers.html",
+      "hot": "120"
     },
     {
       "rank": 5,
-      "title": "Introduction to Compilers and Language Design",
-      "url": "https://dthain.github.io/books/compiler/",
-      "hot": "221"
+      "title": "Mr. Baby Paint and accidentally discovering a new cellular automata",
+      "url": "https://tekstien-marginaalien-keskus.aalto.fi/residenssi/heikki/blog/004-december-2/",
+      "hot": "42"
     },
     {
       "rank": 6,
-      "title": "Run Windows 2000 on a DEC Alpha with a new es40 fork",
-      "url": "https://raymii.org/s/blog/Run_Windows_2000_for_Dec_Alpha_on_a_new_es40_fork.html",
-      "hot": "62"
+      "title": "It's not about physical vs. digital games, it's about ownership",
+      "url": "https://popcar.bearblog.dev/its-about-ownership/",
+      "hot": "190"
     },
     {
       "rank": 7,
-      "title": "Airplane Boneyards List and Map",
-      "url": "https://airplaneboneyards.com/airplane-boneyards-list-and-map.htm",
-      "hot": "60"
+      "title": "Introduction to Compilers and Language Design (2021)",
+      "url": "https://dthain.github.io/books/compiler/",
+      "hot": "241"
     },
     {
       "rank": 8,
-      "title": "The Great Blogging Collapse: What Happened to 100 Successful Blogs?",
-      "url": "https://danielstanica.com/posts/Great-Blogging-Collapse",
-      "hot": "72"
+      "title": "Run Windows 2000 on a DEC Alpha with a new es40 fork",
+      "url": "https://raymii.org/s/blog/Run_Windows_2000_for_Dec_Alpha_on_a_new_es40_fork.html",
+      "hot": "79"
     },
     {
       "rank": 9,
-      "title": "If you're a button, you have one job",
-      "url": "https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/",
-      "hot": "491"
+      "title": "Installing A/UX 1.1 like it's the 90s",
+      "url": "https://thomasw.dev/post/aux11/",
+      "hot": "32"
     },
     {
       "rank": 10,
-      "title": "Mark Zuckerberg tells staff that AI agents haven't progressed enough",
-      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
-      "hot": "97"
+      "title": "We Always Leave Things Unfinished",
+      "url": "https://bigreaderbadgrades.substack.com/p/we-always-leave-things-unfinished",
+      "hot": "9"
     }
   ]
 }
