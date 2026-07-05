@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-05T21:12:39+00:00",
+  "updated_at": "2026-07-05T23:18:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "水平校准真机检查：传感器生命周期、阈值和提交记录",
-      "url": "https://ost.51cto.com/posts/51680",
-      "hot": "古早程序员老薛，照常每天跟大家分享一些东西。这次聊一个容易被写成&ldquo;小工具&rdquo;，但上线前会暴露不少工程细节的HarmonyOS页面：货架水平校..."
+      "title": "Docker 跑黑苹果，这次终于简单了",
+      "url": "https://www.51cto.com/article/848535.html",
+      "hot": "用 Docker-OSX，你不需要苹果硬件，也能以最快最简方式享受 macOS 系统带来的生产力工具，更高效地完成多样化运维任务。​"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 转运码生成页：QRCode 动态载荷、倒计时刷新与失效边界",
-      "url": "https://ost.51cto.com/posts/51669",
-      "hot": "大家好，我是新手程序员Kevin(老K)。最近我拆了一个&ldquo;转运码&rdquo;页面的实现思路：仓内发货人员把一批待交接货品交给承运方时，页面展示一个动..."
+      "title": "从AI Coding 到 Harness Engineering 的端到端工程开发实践",
+      "url": "https://www.51cto.com/article/848472.html",
+      "hot": "这篇文章主要记录了团队在践行 Harness 工程化过程中遇到的一些问题以及实践经验，抛砖引玉，欢迎其他团队同学一起探讨。"
     },
     {
       "rank": 3,
-      "title": "火了火了！前端别再手写动画了！蚂蚁开源这款神器，让复杂动效开发效率翻倍",
-      "url": "https://www.51cto.com/article/848474.html",
-      "hot": "Galacean Effects 是一个高性能、跨平台的开源动效开发工具。它解决的，不是动画怎么播放。而是：复杂动效如何一次开发，多端一致。"
+      "title": "别再浪费 Token！这八个 Python 调用大模型 API 的实战技巧，帮你避开 99% 的坑",
+      "url": "https://www.51cto.com/article/848473.html",
+      "hot": "大模型API，表面上就是发个POST请求，收个JSON。可真要把它用稳、用好、用便宜，里头全是细节。"
     },
     {
       "rank": 4,
-      "title": "黑客利用 SEO 投毒与隐藏 HTML 代码诱骗 AI Agent 执行恶意指令",
-      "url": "https://www.51cto.com/article/848470.html",
-      "hot": "随着AI工具承担更多独立在线任务，将每个网页视为潜在隐藏操纵源已成为基本安全要求，而非可选预防措施。"
+      "title": "同样子查询，IN 慢到超时、EXISTS 秒查，差别到底在哪？",
+      "url": "https://www.51cto.com/article/848471.html",
+      "hot": "我前阵子线上刚好踩过一次IN的坑，接口直接告警超时，改写成EXISTS瞬间恢复，今天不说教科书理论，就拿真实业务场景随便聊聊两者真实差距。"
     },
     {
       "rank": 5,
-      "title": "新型“Bad Epoll”0Day 漏洞可获取Linux服务器与 Android 设备的 Root 权限",
-      "url": "https://www.51cto.com/article/848469.html",
-      "hot": "该漏洞存在于ep_remove()函数中，该函数在file->f_lock锁保护下清除file->f_ep，但在执行hlist_del_rcu()和spin_unlock()期间仍继续使用临界区内的文件对象。"
+      "title": "MoE 大模型横评：DeepSeek、Kimi、Qwen、LongCat 的架构与参数路线",
+      "url": "https://www.51cto.com/article/848436.html",
+      "hot": "本文只做一件事：把不同模型系列的架构路线、参数口径和工程取舍讲清楚。"
     },
     {
       "rank": 6,
-      "title": "突发！Anthropic拟全面封禁地下通道",
-      "url": "https://www.51cto.com/article/848467.html",
-      "hot": "外媒爆料：Anthropic正在准备全面封禁地下通道访问。这是史上最严的一次清洗，几乎所有的后门都被强制关闭。"
+      "title": "趁火打劫！GPT-5.6三大模型全曝，定档7月7日？",
+      "url": "https://www.51cto.com/article/848477.html",
+      "hot": "突发偷跑！GPT-5.6三大神秘模型底层代码曝光，下周二重磅降临。这一波，OpenAI是卡点截杀Claude，用超高额度「趁火打劫」。7月7日，有大事要发生。"
     },
     {
       "rank": 7,
-      "title": "突发！阿里全面禁用Claude，7月10日起卸载",
-      "url": "https://www.51cto.com/article/848456.html",
-      "hot": "Claude Code被曝暗藏后门、隐蔽标记中国用户，阿里将其列入高风险软件名单，全员限期卸载。"
+      "title": "大厂实测AI Coding后，Java团队别再只问“该选哪个工具”",
+      "url": "https://www.51cto.com/article/848478.html",
+      "hot": "Codex、Claude Code、Cursor、ZCode 同时被讨论，说明 AI Coding 已经进入真正的工具大战。但对 Java 团队来说，下一阶段最重要的不是马上押注某一个工具。"
     },
     {
       "rank": 8,
-      "title": "Claude Code 被曝存在隐形水印，阿里全面禁用 Claude Code",
-      "url": "https://www.51cto.com/article/848450.html",
-      "hot": "大致的意思说的是：它对 Claude Code 2.1.196 做逆向分析时发现，当用户设置 ANTHROPIC_BASE_URL，把请求接到代理、企业网关或模型路由器，程序会继续检查两类信息。"
+      "title": "C++ 面试高频考点解析：为什么引用无空，指针有零？",
+      "url": "https://www.51cto.com/article/848465.html",
+      "hot": "这一篇文章针对这个高频的面试真题来进行展开的解析，从语法的规则、底层的内存模型、设计的初衷这三个方面来进行深入的解析，通过这样来帮助梳理清楚核心的原理，避开在面试答题时候的误区，精准地获取该考点的满分 。"
     },
     {
       "rank": 9,
-      "title": "Fable 5回归24小时差评如潮！跑分大降，拒答问题，还偷偷骂用户",
-      "url": "https://www.51cto.com/article/848404.html",
-      "hot": "开发者Om Patel给Fable 5出了一道竞赛编程难题，一道要求处理图连通性和区间覆盖的硬核算法题。结果，界面意外泄露了一段模型没打磨过的思考过程，他把这段过程截图发了出来。"
+      "title": "C#委托中BeginInvoke与EndInvoke探究",
+      "url": "https://www.51cto.com/article/848466.html",
+      "hot": "使用​​BeginInvoke​​和​​EndInvoke​​方法可以轻松地在C#中执行异步操作，并在需要时获取方法的返回值或确认调用状态。这些方法为多线程编程提供了更加灵活和高效的方式，使我们能够更好地管理应用程序的性能和响应性。"
     },
     {
       "rank": 10,
-      "title": "ICML 2026 | 让多模态大模型学会带着时间思考：北大与华为团队开源TaRO框架",
-      "url": "https://www.51cto.com/article/848409.html",
-      "hot": "针对视频时序定位中多模态大模型推理流于表面、缺乏真正时间感知的问题，本文推出了 TaRO 框架。"
+      "title": "面试官：你说你写代码都是用的Claude Code，那你自己有写过Claude Code的Skills吗?",
+      "url": "https://www.51cto.com/article/848449.html",
+      "hot": "kills 把你和团队反复使用的流程，从每次重打的提示词，升级成一次封装、处处可用、可版本管理的技能包。它和 MCP 是互补的两半——技能告诉 AI 怎么做，MCP 给 AI 能用什么；它和命令是同一套机制的繁简两种写法，简单的用命令、复杂的带配套文件的用技能。"
     }
   ]
 }
