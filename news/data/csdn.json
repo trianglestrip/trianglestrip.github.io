@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-05T08:15:07+00:00",
+  "updated_at": "2026-07-05T10:27:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "LLM 全解析：大语言模型原理、三种接入方案与 DeepSeek API 实战",
       "url": "https://blog.csdn.net/hanwangyyds/article/details/162383457",
-      "hot": "34648"
+      "hot": "31508"
     },
     {
       "rank": 2,
       "title": "基于 Trae + DeepSeek 的 Vibe Coding 实践指南（四）：SpringBoot + 阿里云视觉的视频字幕提取系统全栈落地",
       "url": "https://blog.csdn.net/2502_91499791/article/details/162521462",
-      "hot": "23556"
+      "hot": "20627"
     },
     {
       "rank": 3,
       "title": "从 0 到 1 构建企业级 RAG：一个中小企业可落地版本的完整架构",
       "url": "https://blog.csdn.net/Mrxiao_bo/article/details/162525807",
-      "hot": "19686"
+      "hot": "19391"
     },
     {
       "rank": 4,
       "title": "Codex + Claude Code 对抗式开发：双AI协同的安全加固实践",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/162530112",
-      "hot": "18171"
+      "hot": "17154"
     },
     {
       "rank": 5,
       "title": "【Java项目-企悦抽】02-AI赋能产品需求规格说明书",
       "url": "https://blog.csdn.net/2301_81982617/article/details/162554892",
-      "hot": "15504"
+      "hot": "13924"
     },
     {
       "rank": 6,
-      "title": "融合计算机视觉与自然语言处理的驾驶证识别技术，实现了从非结构化图像到结构化数据的高效转化，成为智慧交通数字化转型的关键支撑",
-      "url": "https://blog.csdn.net/dlf283870550/article/details/162558171",
-      "hot": "15039"
+      "title": "【MySQL数据库学习】（MySQL访问、连接池原理与简易网站数据流动）",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/162573622",
+      "hot": "13496"
     },
     {
       "rank": 7,
-      "title": "GitLab CI 制品（Artifacts）完全指南：从作用到配置实践",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/162580619",
-      "hot": "13537"
+      "title": "【Linux网络】深入理解数据链路层：从MAC帧到ARP协议的底层原理",
+      "url": "https://blog.csdn.net/2503_91389547/article/details/161764122",
+      "hot": "13184"
     },
     {
       "rank": 8,
-      "title": "OpenClaw 实战案例：自动化运维系统构建",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/162554430",
-      "hot": "11786"
+      "title": "GitLab CI 制品（Artifacts）完全指南：从作用到配置实践",
+      "url": "https://blog.csdn.net/qq_41840843/article/details/162580619",
+      "hot": "13138"
     },
     {
       "rank": 9,
-      "title": "【MySQL数据库学习】（MySQL访问、连接池原理与简易网站数据流动）",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/162573622",
-      "hot": "11637"
+      "title": "OpenClaw 实战案例：自动化运维系统构建",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/162554430",
+      "hot": "11313"
     },
     {
       "rank": 10,
-      "title": "【Agent 学习日记】从问题到答案：RAG系统完整处理流程与核心机制深度拆解",
-      "url": "https://blog.csdn.net/2402_87298751/article/details/162522155",
-      "hot": "11585"
+      "title": "别让旧手机继续吃灰：把它改造成一台随时在线的个人博客服务器",
+      "url": "https://blog.csdn.net/2301_76297596/article/details/162548404",
+      "hot": "8711"
     }
   ]
 }
