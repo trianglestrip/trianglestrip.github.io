@@ -1,68 +1,68 @@
 {
   "source": "chinanews_finance",
   "title": "中新网财经",
-  "updated_at": "2026-07-05T01:18:56+00:00",
+  "updated_at": "2026-07-05T05:11:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "“科创中国·天府智汇加速科创发展行动”活动在蓉举行",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652990.shtml",
+      "hot": "Sun, 5 Jul 2026 11:29:33 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "（经济观察）以“数字”促增长 北京为数字之城定尺立标",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652986.shtml",
+      "hot": "Sun, 5 Jul 2026 10:45:38 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "“六张网”构建现代化基础设施体系",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652988.shtml",
+      "hot": "Sun, 5 Jul 2026 10:40:45 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "6月中国大宗商品价格指数环比下跌1.7%",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652979.shtml",
+      "hot": "Sun, 5 Jul 2026 10:38:13 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "加速走向全球 今年前5个月我国机器人出口近200亿元",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652982.shtml",
+      "hot": "Sun, 5 Jul 2026 10:36:57 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "中英服务贸易协定联合可行性研究技术磋商取得实质性进展",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652971.shtml",
+      "hot": "Sun, 5 Jul 2026 10:11:42 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "2026全球数字经济大会数字金融论坛在北京举办",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652961.shtml",
+      "hot": "Sun, 5 Jul 2026 10:09:54 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "用虚拟货币非法换汇超2亿！揭秘跨境“对敲”换汇黑产",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652964.shtml",
+      "hot": "Sun, 5 Jul 2026 09:58:35 +0800"
+    },
+    {
+      "rank": 9,
       "title": "6月份中国物流业景气指数升至50.6% 各区域均衡增长",
       "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652944.shtml",
       "hot": "Sun, 5 Jul 2026 09:06:28 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "国内航线燃油附加费今起下调 最高每航段降50元",
       "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652928.shtml",
       "hot": "Sun, 5 Jul 2026 08:37:40 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "从“中国制造”到“中国创造”，中国品牌何以圈粉世界",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652921.shtml",
-      "hot": "Sun, 5 Jul 2026 08:28:05 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "今年上半年全国共新开国际航空货运航线92条",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652918.shtml",
-      "hot": "Sun, 5 Jul 2026 07:55:41 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "5月国家能源局核发绿证3.58亿个",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-05/10652910.shtml",
-      "hot": "Sun, 5 Jul 2026 06:44:44 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "配镜行业新规征求意见！“五步查验”帮助消费者避坑",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-04/10652903.shtml",
-      "hot": "Sat, 4 Jul 2026 23:51:42 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "新专业“城市更新”具体学什么，就业前景如何？一文了解",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-04/10652902.shtml",
-      "hot": "Sat, 4 Jul 2026 23:40:52 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "中国品牌正在重塑韩国进口汽车市场格局",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-04/10652894.shtml",
-      "hot": "Sat, 4 Jul 2026 22:31:21 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "中国市场正在为世界创造新机遇",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-04/10652892.shtml",
-      "hot": "Sat, 4 Jul 2026 22:27:41 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "报告：北京稳居全球数字经济领跑城市 迈入体系引领新阶段",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-04/10652884.shtml",
-      "hot": "Sat, 4 Jul 2026 22:02:12 +0800"
     }
   ]
 }
