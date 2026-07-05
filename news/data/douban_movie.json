@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-05T15:52:28+00:00",
+  "updated_at": "2026-07-05T18:49:10+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,21 +12,21 @@
     },
     {
       "rank": 2,
+      "title": "痴迷",
+      "url": "https://movie.douban.com/subject/37450627/",
+      "hot": "评分 7.7"
+    },
+    {
+      "rank": 3,
       "title": "四渡",
       "url": "https://movie.douban.com/subject/37191746/",
       "hot": ""
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "玩具总动员5",
       "url": "https://movie.douban.com/subject/36238849/",
       "hot": "评分 8.0"
-    },
-    {
-      "rank": 4,
-      "title": "痴迷",
-      "url": "https://movie.douban.com/subject/37450627/",
-      "hot": "评分 7.7"
     },
     {
       "rank": 5,
@@ -36,9 +36,9 @@
     },
     {
       "rank": 6,
-      "title": "爱情有烟火",
-      "url": "https://movie.douban.com/subject/35452068/",
-      "hot": "评分 6.7"
+      "title": "特立独行",
+      "url": "https://movie.douban.com/subject/36953973/",
+      "hot": "评分 6.6"
     },
     {
       "rank": 7,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
+      "title": "爱情有烟火",
+      "url": "https://movie.douban.com/subject/35452068/",
+      "hot": "评分 6.7"
+    },
+    {
+      "rank": 9,
       "title": "南部档案",
       "url": "https://movie.douban.com/subject/35465012/",
       "hot": "评分 6.6"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "给阿嬷的情书",
       "url": "https://movie.douban.com/subject/37116446/",
       "hot": "评分 9.3"
-    },
-    {
-      "rank": 10,
-      "title": "特立独行",
-      "url": "https://movie.douban.com/subject/36953973/",
-      "hot": "评分 6.6"
     }
   ]
 }

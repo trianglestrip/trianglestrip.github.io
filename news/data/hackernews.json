@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-05T15:52:51+00:00",
+  "updated_at": "2026-07-05T18:49:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Organic Maps",
       "url": "https://organicmaps.app/",
-      "hot": "162"
+      "hot": "489"
     },
     {
       "rank": 2,
-      "title": "Phosh 0.56.0",
-      "url": "https://phosh.mobi/releases/rel-0.56.0/",
-      "hot": "107"
+      "title": "The Computers Used in Movies",
+      "url": "https://www.starringthecomputer.com/computers.html",
+      "hot": "58"
     },
     {
       "rank": 3,
-      "title": "Introduction to Compilers and Language Design",
-      "url": "https://dthain.github.io/books/compiler/",
-      "hot": "112"
+      "title": "\"These cameras are just like the Eye of Sauron\"",
+      "url": "https://arxiv.org/abs/2602.09239",
+      "hot": "62"
     },
     {
       "rank": 4,
-      "title": "Train and run transformers directly on Apple's Neural Engine",
-      "url": "https://github.com/christopherkarani/Espresso",
-      "hot": "12"
+      "title": "It's not about physical vs. digital games, it's about ownership",
+      "url": "https://popcar.bearblog.dev/its-about-ownership/",
+      "hot": "76"
     },
     {
       "rank": 5,
-      "title": "Run Windows 2000 on a DEC Alpha with a new es40 fork",
-      "url": "https://raymii.org/s/blog/Run_Windows_2000_for_Dec_Alpha_on_a_new_es40_fork.html",
-      "hot": "18"
+      "title": "Introduction to Compilers and Language Design",
+      "url": "https://dthain.github.io/books/compiler/",
+      "hot": "221"
     },
     {
       "rank": 6,
-      "title": "Show your hands honor for the power they bring you",
-      "url": "https://aresluna.org/show-your-hands-honor/",
-      "hot": "6"
+      "title": "Run Windows 2000 on a DEC Alpha with a new es40 fork",
+      "url": "https://raymii.org/s/blog/Run_Windows_2000_for_Dec_Alpha_on_a_new_es40_fork.html",
+      "hot": "62"
     },
     {
       "rank": 7,
       "title": "Airplane Boneyards List and Map",
       "url": "https://airplaneboneyards.com/airplane-boneyards-list-and-map.htm",
-      "hot": "28"
+      "hot": "60"
     },
     {
       "rank": 8,
-      "title": "Medieval-style fortifications are back in the Sahel",
-      "url": "https://www.economist.com/middle-east-and-africa/2026/06/25/medieval-style-fortifications-are-back-in-the-sahel",
-      "hot": "34"
+      "title": "The Great Blogging Collapse: What Happened to 100 Successful Blogs?",
+      "url": "https://danielstanica.com/posts/Great-Blogging-Collapse",
+      "hot": "72"
     },
     {
       "rank": 9,
       "title": "If you're a button, you have one job",
       "url": "https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/",
-      "hot": "411"
+      "hot": "491"
     },
     {
       "rank": 10,
-      "title": "Shadcn/UI now defaults to Base UI instead of Radix",
-      "url": "https://ui.shadcn.com/docs/changelog",
-      "hot": "222"
+      "title": "Mark Zuckerberg tells staff that AI agents haven't progressed enough",
+      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
+      "hot": "97"
     }
   ]
 }
