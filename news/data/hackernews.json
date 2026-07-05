@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-05T10:28:03+00:00",
+  "updated_at": "2026-07-05T13:00:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Shadcn/UI now defaults to Base UI instead of Radix",
       "url": "https://ui.shadcn.com/docs/changelog",
-      "hot": "133"
+      "hot": "180"
     },
     {
       "rank": 2,
       "title": "If you're a button, you have one job",
       "url": "https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/",
-      "hot": "233"
+      "hot": "315"
     },
     {
       "rank": 3,
-      "title": "Programmers need to start meditating now",
-      "url": "https://jacob.gold/posts/programmers-need-to-start-meditating-now/",
-      "hot": "39"
+      "title": "Claude Design System Prompt",
+      "url": "https://github.com/Trystan-SA/claude-design-system-prompt",
+      "hot": "49"
     },
     {
       "rank": 4,
-      "title": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable",
-      "url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main",
-      "hot": "575"
+      "title": "Fast Software, the Best Software (2019)",
+      "url": "https://craigmod.com/essays/fast_software/",
+      "hot": "58"
     },
     {
       "rank": 5,
-      "title": "Web-based cryptography is always snake oil",
-      "url": "https://www.devever.net/~hl/webcrypto",
-      "hot": "26"
+      "title": "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
+      "url": "https://github.com/openai/codex/issues/30364",
+      "hot": "316"
     },
     {
       "rank": 6,
-      "title": "Pandoc Lua Filters",
-      "url": "https://pandoc.org/lua-filters.html",
-      "hot": "69"
-    },
-    {
-      "rank": 7,
-      "title": "Apocketlypse",
-      "url": "https://0dd.company/galleries/triumph/1.html",
+      "title": "Functional Programming in hica",
+      "url": "https://www.hica.dev/docs/functional-programming/",
       "hot": "14"
     },
     {
+      "rank": 7,
+      "title": "Pandoc Lua Filters",
+      "url": "https://pandoc.org/lua-filters.html",
+      "hot": "90"
+    },
+    {
       "rank": 8,
-      "title": "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
-      "url": "https://github.com/openai/codex/issues/30364",
-      "hot": "278"
+      "title": "Trust your compiler: Modern C++",
+      "url": "https://categorica.io/blog/2026.06.29_trust_your_compiler/",
+      "hot": "11"
     },
     {
       "rank": 9,
       "title": "Jellyfish can heal wounds in minutes. Scientists want their secrets",
       "url": "https://www.mbl.edu/news/jellyfish-can-heal-wounds-minutes-scientists-want-their-secrets",
-      "hot": "127"
+      "hot": "154"
     },
     {
       "rank": 10,
-      "title": "Megawatts by Microwave",
-      "url": "https://computer.rip/2026-07-04-microwave-and-power.html",
-      "hot": "25"
+      "title": "Knowledge Should Not Be Gated",
+      "url": "https://www.formaly.io/blog/knowledge-should-not-be-gated",
+      "hot": "24"
     }
   ]
 }

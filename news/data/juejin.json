@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-05T10:27:55+00:00",
+  "updated_at": "2026-07-05T12:59:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "别被模型宣传骗了，真实 Agent 任务一跑就知道",
       "url": "https://juejin.cn/post/7658119907389554738",
-      "hot": "2205"
+      "hot": "2331"
     },
     {
       "rank": 2,
-      "title": "从 0 到 1 构建企业级 RAG：一个中小企业可落地版本的完整架构",
-      "url": "https://juejin.cn/post/7657791057036525614",
-      "hot": "1044"
+      "title": "用 Cesium 撸了一个森林火情监控大屏，弧线、粒子、发光效果都齐了",
+      "url": "https://juejin.cn/post/7657791057037131822",
+      "hot": "513"
     },
     {
       "rank": 3,
-      "title": "字段太多看不全，ksql 的展开模式和输出控制怎么用",
-      "url": "https://juejin.cn/post/7657831024920133659",
-      "hot": "981"
+      "title": "windows终端体验大升级，让你拥有macos级别的美化",
+      "url": "https://juejin.cn/post/7657755366327664680",
+      "hot": "360"
     },
     {
       "rank": 4,
-      "title": "用 Cesium 撸了一个森林火情监控大屏，弧线、粒子、发光效果都齐了",
-      "url": "https://juejin.cn/post/7657791057037131822",
-      "hot": "495"
+      "title": "Go语言第一章(入门)",
+      "url": "https://juejin.cn/post/7657567333606506505",
+      "hot": "324"
     },
     {
       "rank": 5,
-      "title": "windows终端体验大升级，让你拥有macos级别的美化",
-      "url": "https://juejin.cn/post/7657755366327664680",
-      "hot": "351"
+      "title": "IDEA 爽用 Claude Code 的终极方案，太丝滑。",
+      "url": "https://juejin.cn/post/7657794899358973986",
+      "hot": "270"
     },
     {
       "rank": 6,
-      "title": "Go语言第一章(入门)",
-      "url": "https://juejin.cn/post/7657567333606506505",
-      "hot": "315"
+      "title": "人均配了AI, 为什么公司还是没变快? 🤔 本质还是分布式系统问题",
+      "url": "https://juejin.cn/post/7657956930892136475",
+      "hot": "243"
     },
     {
       "rank": 7,
-      "title": "IDEA 爽用 Claude Code 的终极方案，太丝滑。",
-      "url": "https://juejin.cn/post/7657794899358973986",
-      "hot": "261"
-    },
-    {
-      "rank": 8,
-      "title": "被美国政府封杀18天，Claude Fable 5 回来了——但代价是什么？",
-      "url": "https://juejin.cn/post/7657743769991807017",
-      "hot": "252"
-    },
-    {
-      "rank": 9,
       "title": "别再被 worktree 绕晕了！AI 编程时代你必须掌握的 Git 隔离神器",
       "url": "https://juejin.cn/post/7657811451365982208",
       "hot": "243"
     },
     {
+      "rank": 8,
+      "title": "Rust、Golang、MoonBit 编译成 WASM，体积和速度差距有多大？",
+      "url": "https://juejin.cn/post/7658310488636538926",
+      "hot": "198"
+    },
+    {
+      "rank": 9,
+      "title": "AI Agent 组成：像人一样思考的智能体",
+      "url": "https://juejin.cn/post/7657811451365720064",
+      "hot": "198"
+    },
+    {
       "rank": 10,
-      "title": "人均配了AI, 为什么公司还是没变快? 🤔 本质还是分布式系统问题",
-      "url": "https://juejin.cn/post/7657956930892136475",
-      "hot": "234"
+      "title": "Room 3.0 正式发布！包名彻底重构，KMP 成为核心主线",
+      "url": "https://juejin.cn/post/7657822489852149806",
+      "hot": "189"
     }
   ]
 }
