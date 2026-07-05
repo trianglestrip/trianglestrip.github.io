@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-04T22:30:37+00:00",
+  "updated_at": "2026-07-05T01:19:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "LLM 全解析：大语言模型原理、三种接入方案与 DeepSeek API 实战",
       "url": "https://blog.csdn.net/hanwangyyds/article/details/162383457",
-      "hot": "31119"
+      "hot": "29865"
     },
     {
       "rank": 2,
       "title": "基于 Trae + DeepSeek 的 Vibe Coding 实践指南（四）：SpringBoot + 阿里云视觉的视频字幕提取系统全栈落地",
       "url": "https://blog.csdn.net/2502_91499791/article/details/162521462",
-      "hot": "24062"
+      "hot": "28104"
     },
     {
       "rank": 3,
-      "title": "Codex + Claude Code 对抗式开发：双AI协同的安全加固实践",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/162530112",
-      "hot": "18945"
+      "title": "【Java项目-企悦抽】02-AI赋能产品需求规格说明书",
+      "url": "https://blog.csdn.net/2301_81982617/article/details/162554892",
+      "hot": "18684"
     },
     {
       "rank": 4,
-      "title": "【Linux网络】深入理解数据链路层：从MAC帧到ARP协议的底层原理",
-      "url": "https://blog.csdn.net/2503_91389547/article/details/161764122",
-      "hot": "17170"
+      "title": "Codex + Claude Code 对抗式开发：双AI协同的安全加固实践",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/162530112",
+      "hot": "18069"
     },
     {
       "rank": 5,
-      "title": "【Java项目-企悦抽】02-AI赋能产品需求规格说明书",
-      "url": "https://blog.csdn.net/2301_81982617/article/details/162554892",
-      "hot": "16820"
+      "title": "【Linux网络】深入理解数据链路层：从MAC帧到ARP协议的底层原理",
+      "url": "https://blog.csdn.net/2503_91389547/article/details/161764122",
+      "hot": "16570"
     },
     {
       "rank": 6,
-      "title": "【技术解析】WebRTC技术解析：浏览器如何实现P2P文件传输",
-      "url": "https://blog.csdn.net/xmflw/article/details/162506273",
-      "hot": "15034"
+      "title": "从 0 到 1 构建企业级 RAG：一个中小企业可落地版本的完整架构",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/162525807",
+      "hot": "14794"
     },
     {
       "rank": 7,
       "title": "【Agent 学习日记】从问题到答案：RAG系统完整处理流程与核心机制深度拆解",
       "url": "https://blog.csdn.net/2402_87298751/article/details/162522155",
-      "hot": "13494"
+      "hot": "13385"
     },
     {
       "rank": 8,
-      "title": "【Linux之旅】Linux 网络层协议详解：从 IP 报文到路由转发的底层逻辑",
-      "url": "https://blog.csdn.net/2302_80243065/article/details/162513122",
-      "hot": "11753"
+      "title": "GitLab CI 制品（Artifacts）完全指南：从作用到配置实践",
+      "url": "https://blog.csdn.net/qq_41840843/article/details/162580619",
+      "hot": "11439"
     },
     {
       "rank": 9,
-      "title": "GitLab CI 制品（Artifacts）完全指南：从作用到配置实践",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/162580619",
-      "hot": "11524"
+      "title": "【Linux之旅】Linux 网络层协议详解：从 IP 报文到路由转发的底层逻辑",
+      "url": "https://blog.csdn.net/2302_80243065/article/details/162513122",
+      "hot": "10905"
     },
     {
       "rank": 10,
-      "title": "【MySQL】一文读懂 MySQL 事务控制与 MVCC 多版本并发控制底层原理",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/162494459",
-      "hot": "11294"
+      "title": "时序大模型 TimechoAI：赋能国家战略安全与工业可靠性分析",
+      "url": "https://blog.csdn.net/weixin_62765017/article/details/162562208",
+      "hot": "10298"
     }
   ]
 }
