@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-05T13:00:00+00:00",
+  "updated_at": "2026-07-05T15:52:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Shadcn/UI now defaults to Base UI instead of Radix",
-      "url": "https://ui.shadcn.com/docs/changelog",
-      "hot": "180"
+      "title": "Organic Maps",
+      "url": "https://organicmaps.app/",
+      "hot": "162"
     },
     {
       "rank": 2,
-      "title": "If you're a button, you have one job",
-      "url": "https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/",
-      "hot": "315"
+      "title": "Phosh 0.56.0",
+      "url": "https://phosh.mobi/releases/rel-0.56.0/",
+      "hot": "107"
     },
     {
       "rank": 3,
-      "title": "Claude Design System Prompt",
-      "url": "https://github.com/Trystan-SA/claude-design-system-prompt",
-      "hot": "49"
+      "title": "Introduction to Compilers and Language Design",
+      "url": "https://dthain.github.io/books/compiler/",
+      "hot": "112"
     },
     {
       "rank": 4,
-      "title": "Fast Software, the Best Software (2019)",
-      "url": "https://craigmod.com/essays/fast_software/",
-      "hot": "58"
+      "title": "Train and run transformers directly on Apple's Neural Engine",
+      "url": "https://github.com/christopherkarani/Espresso",
+      "hot": "12"
     },
     {
       "rank": 5,
-      "title": "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
-      "url": "https://github.com/openai/codex/issues/30364",
-      "hot": "316"
+      "title": "Run Windows 2000 on a DEC Alpha with a new es40 fork",
+      "url": "https://raymii.org/s/blog/Run_Windows_2000_for_Dec_Alpha_on_a_new_es40_fork.html",
+      "hot": "18"
     },
     {
       "rank": 6,
-      "title": "Functional Programming in hica",
-      "url": "https://www.hica.dev/docs/functional-programming/",
-      "hot": "14"
+      "title": "Show your hands honor for the power they bring you",
+      "url": "https://aresluna.org/show-your-hands-honor/",
+      "hot": "6"
     },
     {
       "rank": 7,
-      "title": "Pandoc Lua Filters",
-      "url": "https://pandoc.org/lua-filters.html",
-      "hot": "90"
+      "title": "Airplane Boneyards List and Map",
+      "url": "https://airplaneboneyards.com/airplane-boneyards-list-and-map.htm",
+      "hot": "28"
     },
     {
       "rank": 8,
-      "title": "Trust your compiler: Modern C++",
-      "url": "https://categorica.io/blog/2026.06.29_trust_your_compiler/",
-      "hot": "11"
+      "title": "Medieval-style fortifications are back in the Sahel",
+      "url": "https://www.economist.com/middle-east-and-africa/2026/06/25/medieval-style-fortifications-are-back-in-the-sahel",
+      "hot": "34"
     },
     {
       "rank": 9,
-      "title": "Jellyfish can heal wounds in minutes. Scientists want their secrets",
-      "url": "https://www.mbl.edu/news/jellyfish-can-heal-wounds-minutes-scientists-want-their-secrets",
-      "hot": "154"
+      "title": "If you're a button, you have one job",
+      "url": "https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/",
+      "hot": "411"
     },
     {
       "rank": 10,
-      "title": "Knowledge Should Not Be Gated",
-      "url": "https://www.formaly.io/blog/knowledge-should-not-be-gated",
-      "hot": "24"
+      "title": "Shadcn/UI now defaults to Base UI instead of Radix",
+      "url": "https://ui.shadcn.com/docs/changelog",
+      "hot": "222"
     }
   ]
 }

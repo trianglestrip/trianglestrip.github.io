@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-05T12:59:59+00:00",
+  "updated_at": "2026-07-05T15:52:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "水平校准真机检查：传感器生命周期、阈值和提交记录",
+      "url": "https://ost.51cto.com/posts/51680",
+      "hot": "古早程序员老薛，照常每天跟大家分享一些东西。这次聊一个容易被写成&ldquo;小工具&rdquo;，但上线前会暴露不少工程细节的HarmonyOS页面：货架水平校..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 转运码生成页：QRCode 动态载荷、倒计时刷新与失效边界",
+      "url": "https://ost.51cto.com/posts/51669",
+      "hot": "大家好，我是新手程序员Kevin(老K)。最近我拆了一个&ldquo;转运码&rdquo;页面的实现思路：仓内发货人员把一批待交接货品交给承运方时，页面展示一个动..."
+    },
+    {
+      "rank": 3,
+      "title": "火了火了！前端别再手写动画了！蚂蚁开源这款神器，让复杂动效开发效率翻倍",
+      "url": "https://www.51cto.com/article/848474.html",
+      "hot": "Galacean Effects 是一个高性能、跨平台的开源动效开发工具。它解决的，不是动画怎么播放。而是：复杂动效如何一次开发，多端一致。"
+    },
+    {
+      "rank": 4,
+      "title": "黑客利用 SEO 投毒与隐藏 HTML 代码诱骗 AI Agent 执行恶意指令",
+      "url": "https://www.51cto.com/article/848470.html",
+      "hot": "随着AI工具承担更多独立在线任务，将每个网页视为潜在隐藏操纵源已成为基本安全要求，而非可选预防措施。"
+    },
+    {
+      "rank": 5,
+      "title": "新型“Bad Epoll”0Day 漏洞可获取Linux服务器与 Android 设备的 Root 权限",
+      "url": "https://www.51cto.com/article/848469.html",
+      "hot": "该漏洞存在于ep_remove()函数中，该函数在file->f_lock锁保护下清除file->f_ep，但在执行hlist_del_rcu()和spin_unlock()期间仍继续使用临界区内的文件对象。"
+    },
+    {
+      "rank": 6,
+      "title": "突发！Anthropic拟全面封禁地下通道",
+      "url": "https://www.51cto.com/article/848467.html",
+      "hot": "外媒爆料：Anthropic正在准备全面封禁地下通道访问。这是史上最严的一次清洗，几乎所有的后门都被强制关闭。"
+    },
+    {
+      "rank": 7,
       "title": "突发！阿里全面禁用Claude，7月10日起卸载",
       "url": "https://www.51cto.com/article/848456.html",
       "hot": "Claude Code被曝暗藏后门、隐蔽标记中国用户，阿里将其列入高风险软件名单，全员限期卸载。"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Claude Code 被曝存在隐形水印，阿里全面禁用 Claude Code",
       "url": "https://www.51cto.com/article/848450.html",
       "hot": "大致的意思说的是：它对 Claude Code 2.1.196 做逆向分析时发现，当用户设置 ANTHROPIC_BASE_URL，把请求接到代理、企业网关或模型路由器，程序会继续检查两类信息。"
     },
     {
-      "rank": 3,
-      "title": "单机鸿蒙应用改造为华为端云一体化项目实战",
-      "url": "https://ost.51cto.com/posts/51475",
-      "hot": "本文以健康记录类应用&quot;轻食刻&quot;为案例，完整复盘一个纯单机鸿蒙（HarmonyOSArkTS）应用，如何一步步改造为基于华为AppGalleryConnect（AGC）..."
-    },
-    {
-      "rank": 4,
-      "title": "PhotoViewPicker 选图页的文件句柄、重复选择和提交前校验怎么查",
-      "url": "https://ost.51cto.com/posts/51468",
-      "hot": "古早程序员老薛，照常每天跟大家分享一些东西。这次聊一个看起来不难、上线前却很容易翻车的页面：质检照片上传页。核心判断先说清楚：Phot..."
-    },
-    {
-      "rank": 5,
+      "rank": 9,
       "title": "Fable 5回归24小时差评如潮！跑分大降，拒答问题，还偷偷骂用户",
       "url": "https://www.51cto.com/article/848404.html",
       "hot": "开发者Om Patel给Fable 5出了一道竞赛编程难题，一道要求处理图连通性和区间覆盖的硬核算法题。结果，界面意外泄露了一段模型没打磨过的思考过程，他把这段过程截图发了出来。"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "ICML 2026 | 让多模态大模型学会带着时间思考：北大与华为团队开源TaRO框架",
       "url": "https://www.51cto.com/article/848409.html",
       "hot": "针对视频时序定位中多模态大模型推理流于表面、缺乏真正时间感知的问题，本文推出了 TaRO 框架。"
-    },
-    {
-      "rank": 7,
-      "title": "刚刚，LeCun团队让世界模型学会持续学习！",
-      "url": "https://www.51cto.com/article/848410.html",
-      "hot": "刚刚，纽约大学联合LeCun初创AMI带来JEPA系列的最新成果——AdaJEPA。"
-    },
-    {
-      "rank": 8,
-      "title": "傻瓜式Loop教程来了：一行命令直接上手，GitHub狂揽4.5k Star",
-      "url": "https://www.51cto.com/article/848411.html",
-      "hot": "有位大神直接在GitHub开源了整套Loop Engineering框架，目前已累计收获4.5k Star。"
-    },
-    {
-      "rank": 9,
-      "title": "黄仁勋说的Physical AI，被这家中国跨界选手带进了生命科学实验室",
-      "url": "https://www.51cto.com/article/848412.html",
-      "hot": "OpenAI发GPT-Rosalind，专攻药物发现和基因组学；谷歌推Co-Scientist和ERA，把多Agent系统塞进科学推理流程；Anthropic上线面向科研流程的Claude Science工作台。"
-    },
-    {
-      "rank": 10,
-      "title": "Anthropic被曝造芯！挖OpenAI老兵，密谈三星2nm",
-      "url": "https://www.51cto.com/article/848413.html",
-      "hot": "英伟达的牌桌上，最后一个玩家摸牌了。一月之内，Anthropic先挖OpenAI造芯老兵Clive Chan，再谈三星2nm。Trainium、TPU、英伟达GPU三张牌在手，偏要自己凑第四张，图什么？"
     }
   ]
 }
