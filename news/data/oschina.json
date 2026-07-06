@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-05T23:18:58+00:00",
+  "updated_at": "2026-07-06T04:43:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "DBeaver 26.1.2 发布",
+      "url": "https://www.oschina.net/news/471492/dbeaver-26-1-2-released",
+      "hot": "Mon, 06 Jul 2026 11:20:30 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "MateClaw 1.7.0 正式版发布：从“能用”到“敢放进生产”",
+      "url": "https://www.oschina.net/news/471491/mateclaw-1-7-0-released",
+      "hot": "Mon, 06 Jul 2026 11:13:58 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "AI UITester：AI Native 的 UI 自动化测试新范式",
+      "url": "https://my.oschina.net/u/5783135/blog/19715669",
+      "hot": "Mon, 06 Jul 2026 11:00:30 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "IntelliJ IDEA 2026.1.4 发布",
+      "url": "https://www.oschina.net/news/471489/intellij-idea-2026-1-4",
+      "hot": "Mon, 06 Jul 2026 10:56:07 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Avo 4 发布，Rails 后台管理面板的 15 个月重构",
+      "url": "https://www.oschina.net/news/471488/avo-4",
+      "hot": "Mon, 06 Jul 2026 10:40:42 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "NumPy 2.5.1 发布",
+      "url": "https://www.oschina.net/news/471487/numpy-2-5-1-released",
+      "hot": "Mon, 06 Jul 2026 10:27:42 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "HAMi 晋升 CNCF 孵化项目",
+      "url": "https://www.oschina.net/news/471486",
+      "hot": "Mon, 06 Jul 2026 10:12:25 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "FastDFS V6.16 发布，支持部署多个 storage 实例",
+      "url": "https://www.oschina.net/news/471485",
+      "hot": "Mon, 06 Jul 2026 09:19:48 +0800"
+    },
+    {
+      "rank": 9,
       "title": ":fire: ReActAgent 使用指南：构建会思考、能行动的 AI Agent",
       "url": "https://www.oschina.net/news/471482",
       "hot": "Sun, 05 Jul 2026 08:42:40 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "MooTool 1.7.8 发布，开发者常备小工具",
       "url": "https://www.oschina.net/news/471481",
       "hot": "Sat, 04 Jul 2026 22:46:29 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "uniTerm v1.3 重磅发布：超轻量全能型终端，20+ 远程协议，内置 AI Agent",
-      "url": "https://www.oschina.net/news/471478",
-      "hot": "Sat, 04 Jul 2026 12:58:51 +0800"
-    },
-    {
-      "rank": 4,
-      "title": ":fire: 用 ChatModel 构建 LLM 驱动的 Java 应用",
-      "url": "https://www.oschina.net/news/471477",
-      "hot": "Sat, 04 Jul 2026 11:27:34 +0800"
-    },
-    {
-      "rank": 5,
-      "title": ":fire:JPA mybatis mybatis-plus xbatis 谁更强，比一比",
-      "url": "https://www.oschina.net/news/471476",
-      "hot": "Fri, 03 Jul 2026 21:49:17 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Google 就 Android 反垄断 41 亿欧元罚单上诉失败，八年拉锯战终结",
-      "url": "https://www.oschina.net/news/471475",
-      "hot": "Fri, 03 Jul 2026 18:49:21 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Vite+ 发布 Beta 版本，一个命令搞定前端工具链",
-      "url": "https://www.oschina.net/news/471474/vite-plus-beta",
-      "hot": "Fri, 03 Jul 2026 18:44:50 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Podman v6.0.0 发布，网络栈全面转向 Netavark 与 nftables",
-      "url": "https://www.oschina.net/news/471473/podman-v6-0-0",
-      "hot": "Fri, 03 Jul 2026 18:40:55 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "阿里内部全面禁用 Claude Code",
-      "url": "https://www.oschina.net/news/471471",
-      "hot": "Fri, 03 Jul 2026 16:53:30 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "从 10 分钟到 1 秒：ES 深度分页任意跳页的三轮优化实战",
-      "url": "https://my.oschina.net/vivotech/blog/19715664",
-      "hot": "Fri, 03 Jul 2026 16:31:48 +0800"
     }
   ]
 }

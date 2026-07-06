@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-05T23:19:00+00:00",
+  "updated_at": "2026-07-06T04:43:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Windows平台安全与保护AI智能体的竞赛",
+      "url": "https://www.infoq.cn/article/LT7lx2Qe5KkS9QCVSXCQ?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 11:21:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "73% PR 由AI生成！Claude Code之父对话Spotify：2900名工程师每天部署4500次，坐地铁都能提交代码",
+      "url": "https://www.infoq.cn/article/e6J4FbXQj28CiziktLuS?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 10:27:32 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "豆包、千问关停智能体功能；曝腾讯研发token额度1400元/月起步，有人过万；美团限豆包、阿里禁Claude Code｜AI周报",
+      "url": "https://www.infoq.cn/article/rs0HJTRdN6Pl88LIFh1a?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 10:22:58 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "让 Agent 成为音视频工作台：AI MediaKit CLI + Skill 发布",
+      "url": "https://www.infoq.cn/article/jpGdhU4YBXiXOloMEb2I?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 10:19:26 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "数亿元融资落地！光象科技自研物理原生基座模型，跳出 VLA 与世界模型路线",
+      "url": "https://www.infoq.cn/article/m4QJlWAyRq7Fp4yQImp9?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 10:06:52 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "Azure Functions在Build 2026发布Serverless智能体运行时",
+      "url": "https://www.infoq.cn/article/kGHZu2K5V8IrwYvo6Cm3?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 09:19:08 GMT"
+    },
+    {
+      "rank": 7,
       "title": "苹果首次将私有云计算平台扩展至谷歌云",
       "url": "https://www.infoq.cn/article/UoJtxVXj0d1QT1ftyjtd?utm_source=rss&utm_medium=article",
       "hot": "Sat, 04 Jul 2026 09:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Claude Code 80%的提示词说删就删，Anthropic用Fable 5打了个样：AI行业的“降本”才刚刚开始",
       "url": "https://www.infoq.cn/article/GEkEm7rkUJfF8bdwTuBt?utm_source=rss&utm_medium=article",
       "hot": "Fri, 03 Jul 2026 19:27:10 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "Agent 上岗之后，企业如何治理硅基团队？",
       "url": "https://www.infoq.cn/article/pNFHkLos3FoDNm8cQsyt?utm_source=rss&utm_medium=article",
       "hot": "Fri, 03 Jul 2026 19:03:18 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "从 Coding 到 Anything，Agent 正在重写工作流",
       "url": "https://www.infoq.cn/article/yM8ms1eDlrY7wvF3SXtY?utm_source=rss&utm_medium=article",
       "hot": "Fri, 03 Jul 2026 18:40:56 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "拒绝天价账单！OpenAI、Anthropic 自研芯片，剑指英伟达“暴利”护城河",
-      "url": "https://www.infoq.cn/article/MOqFJbvWYlJ9PXcfdfCC?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 03 Jul 2026 18:00:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "大晓机器人首席科学家陶大程：世界模型的使命不是完整复制世界，而是精准支撑行动",
-      "url": "https://www.infoq.cn/article/tZe66KJ12UsjrqpeSiaA?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 03 Jul 2026 15:17:15 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "从生成到交付，音视频 Agent 要有生产级开发套件",
-      "url": "https://www.infoq.cn/article/qA1Ucwbw3KZy5yIgCrVo?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 03 Jul 2026 11:48:25 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Java 实时系统扩容：事件驱动设计的隐性权衡",
-      "url": "https://www.infoq.cn/article/dbZRhCUeEqX4WdboztyG?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 03 Jul 2026 09:21:09 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "一人公司创业，如何找对方法论、选准装备库？",
-      "url": "https://www.infoq.cn/article/pxXOLZMIk90UTXOJ8aNE?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 02 Jul 2026 19:43:06 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "用户太蠢不配用 Fable？被Anthropic的回应气笑了：最贵的模型，最憋屈的体验",
-      "url": "https://www.infoq.cn/article/HDE9Hoe3RVyNlX3CCGzV?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 02 Jul 2026 18:36:08 GMT"
     }
   ]
 }

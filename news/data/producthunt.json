@@ -1,56 +1,56 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-07-05T18:48:56+00:00",
+  "updated_at": "2026-07-06T04:42:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "WorkBuddy",
-      "url": "https://www.producthunt.com/products/workbuddy-2",
-      "hot": "2026-06-29T19:39:48-07:00"
-    },
-    {
-      "rank": 2,
-      "title": "Toku Reader",
-      "url": "https://www.producthunt.com/products/toku-reader",
-      "hot": "2026-06-18T12:03:42-07:00"
-    },
-    {
-      "rank": 3,
       "title": "Pennen",
       "url": "https://www.producthunt.com/products/pennen",
       "hot": "2026-07-03T14:30:43-07:00"
     },
     {
-      "rank": 4,
-      "title": "TryCase",
-      "url": "https://www.producthunt.com/products/trycase",
-      "hot": "2026-06-08T15:02:08-07:00"
+      "rank": 2,
+      "title": "DocsAlot",
+      "url": "https://www.producthunt.com/products/docsalot-2",
+      "hot": "2026-07-01T16:09:51-07:00"
     },
     {
-      "rank": 5,
-      "title": "MentionDrop MCP",
-      "url": "https://www.producthunt.com/products/mentiondrop",
-      "hot": "2026-06-19T00:54:26-07:00"
-    },
-    {
-      "rank": 6,
+      "rank": 3,
       "title": "CircleChat",
       "url": "https://www.producthunt.com/products/circlechat",
       "hot": "2026-07-04T09:05:42-07:00"
     },
     {
-      "rank": 7,
+      "rank": 4,
+      "title": "WorkBuddy",
+      "url": "https://www.producthunt.com/products/workbuddy-2",
+      "hot": "2026-06-29T19:39:48-07:00"
+    },
+    {
+      "rank": 5,
       "title": "Endl",
       "url": "https://www.producthunt.com/products/endl",
       "hot": "2026-07-03T12:10:29-07:00"
     },
     {
+      "rank": 6,
+      "title": "TryCase",
+      "url": "https://www.producthunt.com/products/trycase",
+      "hot": "2026-06-08T15:02:08-07:00"
+    },
+    {
+      "rank": 7,
+      "title": "Toku Reader",
+      "url": "https://www.producthunt.com/products/toku-reader",
+      "hot": "2026-06-18T12:03:42-07:00"
+    },
+    {
       "rank": 8,
-      "title": "DocsAlot",
-      "url": "https://www.producthunt.com/products/docsalot-2",
-      "hot": "2026-07-01T16:09:51-07:00"
+      "title": "MentionDrop MCP",
+      "url": "https://www.producthunt.com/products/mentiondrop",
+      "hot": "2026-06-19T00:54:26-07:00"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "ChecklistFox",
-      "url": "https://www.producthunt.com/products/checklistfox",
-      "hot": "2026-07-03T13:40:09-07:00"
+      "title": "PhoneDeck",
+      "url": "https://www.producthunt.com/products/phonedeck",
+      "hot": "2026-06-03T03:23:56-07:00"
     }
   ]
 }

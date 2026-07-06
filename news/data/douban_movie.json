@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-05T23:18:32+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-07-06T04:43:02+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
