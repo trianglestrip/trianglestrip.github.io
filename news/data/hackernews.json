@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-06T20:15:04+00:00",
+  "updated_at": "2026-07-06T22:49:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "OpenWrt One – Open Hardware Router",
       "url": "https://openwrt.org/toh/openwrt/one",
-      "hot": "162"
+      "hot": "328"
     },
     {
       "rank": 2,
-      "title": "A global workspace in language models",
-      "url": "https://www.anthropic.com/research/global-workspace",
-      "hot": "90"
+      "title": "CoMaps – FOSS Offline Maps",
+      "url": "https://www.comaps.app/",
+      "hot": "232"
     },
     {
       "rank": 3,
-      "title": "CoMaps – FOSS Offline Maps",
-      "url": "https://www.comaps.app/",
-      "hot": "34"
+      "title": "How little exercise can you get away with?",
+      "url": "https://www.economist.com/science-and-technology/2026/07/03/how-little-exercise-can-you-get-away-with",
+      "hot": "22"
     },
     {
       "rank": 4,
-      "title": "Linux on the Atari Jaguar. No, really.",
-      "url": "https://cakehonolulu.github.io/linux-for-jaguar/",
-      "hot": "34"
+      "title": "A global workspace in language models",
+      "url": "https://www.anthropic.com/research/global-workspace",
+      "hot": "211"
     },
     {
       "rank": 5,
-      "title": "AMD Ryzen AI Halo – $4k AI Dev Kit",
-      "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
-      "hot": "218"
+      "title": "Pruning RAG context down to what the answer actually needs",
+      "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
+      "hot": "25"
     },
     {
       "rank": 6,
-      "title": "Price per 1M tokens is meaningless",
-      "url": "https://janilowski.pl/en/blog/2026/price-per-m-tokens/",
-      "hot": "12"
+      "title": "Python 3.14 compiled to metal – no interpreter",
+      "url": "https://github.com/can1357/pon",
+      "hot": "96"
     },
     {
       "rank": 7,
-      "title": "Resetting Xbox",
-      "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
-      "hot": "316"
+      "title": "Linux on the Atari Jaguar",
+      "url": "https://cakehonolulu.github.io/linux-for-jaguar/",
+      "hot": "83"
     },
     {
       "rank": 8,
-      "title": "Aluminum foil (2021)",
-      "url": "https://dernocua.github.io/notes/aluminum-foil.html",
-      "hot": "198"
+      "title": "AMD Ryzen AI Halo – $4k AI Dev Kit",
+      "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
+      "hot": "251"
     },
     {
       "rank": 9,
-      "title": "Kani: A Model Checker for Rust",
-      "url": "https://arxiv.org/abs/2607.01504",
-      "hot": "90"
+      "title": "Resetting Xbox",
+      "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
+      "hot": "419"
     },
     {
       "rank": 10,
-      "title": "Januscape: Guest-to-Host Escape in KVM/x86 [CVE-2026-53359]",
-      "url": "https://github.com/V4bel/Januscape",
-      "hot": "37"
+      "title": "GLM 5.2 and the coming AI margin collapse",
+      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+      "hot": "30"
     }
   ]
 }
