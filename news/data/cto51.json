@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-06T04:43:25+00:00",
+  "updated_at": "2026-07-06T08:51:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Karpathy最新开喷：一句话让全场Agent开发者安静了",
+      "url": "https://www.51cto.com/article/848580.html",
+      "hot": "Karpathy内部炸场：逼Agent干活是AI最大错误！最前沿不在OpenAI，在你手里。"
+    },
+    {
+      "rank": 2,
+      "title": "Fable 5被网友薅出省钱神招！最高减70%！",
+      "url": "https://www.51cto.com/article/848594.html",
+      "hot": "没想到，人类当年靠微缩打印做小抄的土办法，在大模型身上也照样管用。这两天，有位机智的老哥发现，只要把Fable 5的上下文转换成一张张密密麻麻写满文字的图片，再让模型通过OCR读回来，token输入成本最多能省下70%。"
+    },
+    {
+      "rank": 3,
+      "title": "刚刚，DeepMind经典巨作再封神！ICML 2026大奖公布",
+      "url": "https://www.51cto.com/article/848598.html",
+      "hot": "ICML 2026杰出论文奖正式公布，两篇扩散模型论文同时登顶，而且作者里不少华人。"
+    },
+    {
+      "rank": 4,
+      "title": "谷歌大佬盛赞Fable 5！23年前PC神作，40分钟塞进iPhone",
+      "url": "https://www.51cto.com/article/848599.html",
+      "hot": "谷歌的产品负责人，用Claude Fable 5把2003年的PC神作原生移植到了iPhone上。只不过，代价是两天烧光一整个Max订阅。"
+    },
+    {
+      "rank": 5,
+      "title": "李飞飞LeCun疯狂加注！这匹中国黑马，已在因果AI暗战6年",
+      "url": "https://www.51cto.com/article/848600.html",
+      "hot": "全世界都在为世界模型疯狂，底层密码「因果」终于藏不住了！就在硅谷2026年才如梦初醒时，一家中国黑马早已在无人区潜伏6年，把AI大模型的命门彻底打透。"
+    },
+    {
+      "rank": 6,
+      "title": "Claude、GLM、GPT谁才是真正的AI软件工程师？首个持续更新Visual Spec-to-App Benchmark发布",
+      "url": "https://www.51cto.com/article/848601.html",
+      "hot": "来自 University of Arizona、Zoom 与 Stony Brook University 的研究团队推出了 VISTA, 首个面向 Visual Spec-to-Web-App Coding Agents 的端到端 Benchmark。"
+    },
+    {
+      "rank": 7,
+      "title": "世界模型评测的最大盲区，被这个新基准捅破了",
+      "url": "https://www.51cto.com/article/848602.html",
+      "hot": "来自哈佛大学、MIT、IBM、波士顿大学、谷歌、JHU、CMU 和 Kempner Institute 的研究者提出了一个新的诊断性基准：MemoBench。"
+    },
+    {
+      "rank": 8,
       "title": "开启 Harness Engineering 探索之旅",
       "url": "https://www.51cto.com/article/848525.html",
       "hot": "Harness Engineering 不是一套终极框架，而是一张被现实不断逼着补全的地图——每跑一次真实业务，地图就被推进一格。"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "用 reactive 手写一个共享 store 的 Vue 状态管理",
       "url": "https://www.51cto.com/article/848532.html",
       "hot": "JavaScript 模块有一个特性：同一个模块被多处导入时，大家拿到的是同一份模块实例。"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "投毒！Meta竟雇外包，大规模给ChatGPT和Gemini下套",
       "url": "https://www.51cto.com/article/848522.html",
       "hot": "Meta 再出丑闻：让旗下几百名外包员工，假扮未成年人，大规模引导 ChatGPT、Gemini、Character.AI 讨论各类绝对违禁问题。"
-    },
-    {
-      "rank": 4,
-      "title": "GPT-5.5突遭暗中降智，思考一到516就断！越难越翻车",
-      "url": "https://www.51cto.com/article/848521.html",
-      "hot": "GPT-5.5大翻车，竟被数字「516」活活卡死。80%复杂推理被悄悄截断，开发者怒轰OpenAI暗中阉割算力：花最贵的钱，买最烂的体验！"
-    },
-    {
-      "rank": 5,
-      "title": "狂揽2.4万星标：一行命令，AI会自己找技能了",
-      "url": "https://www.51cto.com/article/848520.html",
-      "hot": "从前是人给AI装能力，如今是AI自己去找。"
-    },
-    {
-      "rank": 6,
-      "title": "OpenAI塌房！Scaling law原作曝bug，万亿算力全白烧",
-      "url": "https://www.51cto.com/article/848519.html",
-      "hot": "DeepMind研究员深夜爆料：OpenAI的Scaling Law原始论文竟有致命bug！全球AI白白烧掉万亿算力，GPT-3其实严重「虚胖」。"
-    },
-    {
-      "rank": 7,
-      "title": "字节二面：面试官让我设计评论盖楼系统，我说「递归查数据库就行」，他反手把我挂了",
-      "url": "https://www.51cto.com/article/848530.html",
-      "hot": "三年经验的程序员，死在一道看似\"送分\"的系统设计题上。面试官问你评论系统，他不想听你背 parent_id 建表——随便一个应届生都会。"
-    },
-    {
-      "rank": 8,
-      "title": "年入一亿美元！两个90后伯克利室友，搞出最赚钱的AI生意",
-      "url": "https://www.51cto.com/article/848518.html",
-      "hot": "全硅谷都在拼命卷AI，最后赚翻的是裁判！伯克利团队搞的免费擂台Arena，不造AI只靠「卖水」，8个月狂揽1亿美元营收，估值直接冲破17亿大关。"
-    },
-    {
-      "rank": 9,
-      "title": "从 Demo 到生产：Agent 评测的工程化体系设计",
-      "url": "https://www.51cto.com/article/848568.html",
-      "hot": "Agent 评测的终极目的，不是证明系统\"有多聪明\"，而是证明系统\"在真实场景下足够可靠\"。从 Demo 到生产，差的不是模型能力，而是将能力收敛为工程质量的体系化能力。"
-    },
-    {
-      "rank": 10,
-      "title": "Anthropic造了套AI越狱「刑法」！你的请求，四种死法",
-      "url": "https://www.51cto.com/article/848517.html",
-      "hot": "Anthropic全面公开Fable 5「降级」逻辑！美国出口管制第一次伸向模型访问权。"
     }
   ]
 }
