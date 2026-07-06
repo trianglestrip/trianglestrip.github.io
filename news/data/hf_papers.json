@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-06T04:43:43+00:00",
+  "updated_at": "2026-07-06T12:32:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "50"
+      "hot": "51"
     },
     {
       "rank": 2,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "104"
+      "hot": "105"
     },
     {
       "rank": 3,
@@ -36,27 +36,27 @@
     },
     {
       "rank": 6,
-      "title": "olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language\n  Models",
-      "url": "https://huggingface.co/papers/2502.18443",
-      "hot": "13"
-    },
-    {
-      "rank": 7,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "82"
     },
     {
+      "rank": 7,
+      "title": "olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language\n  Models",
+      "url": "https://huggingface.co/papers/2502.18443",
+      "hot": "13"
+    },
+    {
       "rank": 8,
-      "title": "OmniFlatten: An End-to-end GPT Model for Seamless Voice Conversation",
-      "url": "https://huggingface.co/papers/2410.17799",
-      "hot": "16"
+      "title": "Continuous Audio Language Models",
+      "url": "https://huggingface.co/papers/2509.06926",
+      "hot": "8"
     },
     {
       "rank": 9,
-      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
-      "url": "https://huggingface.co/papers/2309.06180",
-      "hot": "61"
+      "title": "OmniFlatten: An End-to-end GPT Model for Seamless Voice Conversation",
+      "url": "https://huggingface.co/papers/2410.17799",
+      "hot": "16"
     },
     {
       "rank": 10,

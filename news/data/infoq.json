@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-06T08:51:58+00:00",
+  "updated_at": "2026-07-06T12:31:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "世界模型炒作了半年，反应速度还不如 VLA？穆尧团队和百度智能云给出最新解法",
+      "url": "https://www.infoq.cn/article/Lb4pQTNTQdq657Gzj7EI?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 19:50:19 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "硬件原生FP8加持，摩尔线程完成美团LongCat-2.0 Day-0 极速适配",
+      "url": "https://www.infoq.cn/article/vRzlWZxXMaxC6aZM7Ufw?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 18:24:56 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Linus 再谈 AI：大模型能写 Demo，但对复杂系统要有敬畏之心",
+      "url": "https://www.infoq.cn/article/11fNtPYf59T76fyQkiPa?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 18:19:11 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Agentic 范式下的视频画质优化：火山引擎的新路径",
+      "url": "https://www.infoq.cn/article/Gx6eXWNCqcVkET9wFZq9?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 06 Jul 2026 17:06:04 GMT"
+    },
+    {
+      "rank": 5,
       "title": "腾讯混元Hy3正式发布，元宝同步上线Hy3 Agent能力、免费开放",
       "url": "https://www.infoq.cn/article/2IGjsbCMxxHjLGPJ7tls?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 16:22:01 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "亚马逊云科技推出 Workload Credentials Provider，用于自动化证书和密钥管理",
       "url": "https://www.infoq.cn/article/cE3cUpHYPN0IjSuIgcsh?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 16:00:08 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "“我一行代码都没读就发布了”，被OpenAI收购后，uv工具创始人开始反思AI编程",
       "url": "https://www.infoq.cn/article/katE2jJKMX7FaGskhvRL?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 15:46:52 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "GTLC 杭州站回顾｜AI 创业进入深水区，技术领导者都在关注什么？",
       "url": "https://www.infoq.cn/article/MOVBghUgQrXWr9igbK2p?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 15:02:49 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "Java 近期新闻：Spring Tools、Helidon、Open Liberty、TomEE、JobRunr、Hibernate、Commonhaus 基金会",
       "url": "https://www.infoq.cn/article/7UMpxj51V9IIvtcJOSfo?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 14:10:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Anthropic：Claude 已承担 95% 的内部数据分析查询工作",
       "url": "https://www.infoq.cn/article/eHH8RTgeeOUWODLCLWXS?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 13:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Windows平台安全与保护AI智能体的竞赛",
-      "url": "https://www.infoq.cn/article/LT7lx2Qe5KkS9QCVSXCQ?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 06 Jul 2026 11:21:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "73% PR 由AI生成！Claude Code之父对话Spotify：2900名工程师每天部署4500次，坐地铁都能提交代码",
-      "url": "https://www.infoq.cn/article/e6J4FbXQj28CiziktLuS?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 06 Jul 2026 10:27:32 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "豆包、千问关停智能体功能；曝腾讯研发token额度1400元/月起步，有人过万；美团限豆包、阿里禁Claude Code｜AI周报",
-      "url": "https://www.infoq.cn/article/rs0HJTRdN6Pl88LIFh1a?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 06 Jul 2026 10:22:58 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "让 Agent 成为音视频工作台：AI MediaKit CLI + Skill 发布",
-      "url": "https://www.infoq.cn/article/jpGdhU4YBXiXOloMEb2I?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 06 Jul 2026 10:19:26 GMT"
     }
   ]
 }
