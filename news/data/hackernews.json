@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-06T16:02:21+00:00",
+  "updated_at": "2026-07-06T18:14:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Aluminum foil (2021)",
-      "url": "https://dernocua.github.io/notes/aluminum-foil.html",
-      "hot": "89"
+      "title": "AMD Ryzen AI Halo – $4k AI Dev Kit",
+      "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
+      "hot": "142"
     },
     {
       "rank": 2,
-      "title": "How Kalshi Infects the News",
-      "url": "https://www.publicnotice.co/p/kalshi-cnn-cnbc",
-      "hot": "71"
+      "title": "Aluminum foil (2021)",
+      "url": "https://dernocua.github.io/notes/aluminum-foil.html",
+      "hot": "167"
     },
     {
       "rank": 3,
-      "title": "Road to Elm 1.0",
-      "url": "https://elm-lang.org/news/faster-builds",
-      "hot": "181"
+      "title": "Kani: A Model Checker for Rust",
+      "url": "https://arxiv.org/abs/2607.01504",
+      "hot": "43"
     },
     {
       "rank": 4,
-      "title": "Do you really need separate systems when you already have Postgres?",
-      "url": "https://postgresisenough.dev/",
-      "hot": "31"
+      "title": "Road to Elm 1.0",
+      "url": "https://elm-lang.org/news/faster-builds",
+      "hot": "240"
     },
     {
       "rank": 5,
-      "title": "1k Words: A Writing Contest",
-      "url": "https://writingclub.world/1picture1000words",
-      "hot": "15"
+      "title": "Fable 5 On Vending-Bench: Misbehaving, With Plausible Deniability",
+      "url": "https://andonlabs.com/blog/fable5-vending-bench",
+      "hot": "127"
     },
     {
       "rank": 6,
-      "title": "Fable 5 On Vending-Bench: Misbehaving, With Plausible Deniability",
-      "url": "https://andonlabs.com/blog/fable5-vending-bench",
-      "hot": "80"
+      "title": "Real-time map of Great Britain's rail network",
+      "url": "https://www.map.signalbox.io",
+      "hot": "330"
     },
     {
       "rank": 7,
-      "title": "Real-time map of Great Britain's rail network",
-      "url": "https://www.map.signalbox.io",
-      "hot": "297"
+      "title": "Resetting Xbox",
+      "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
+      "hot": "172"
     },
     {
       "rank": 8,
-      "title": "Multilingual Experience Linked to Delayed Aging in Populations and Individuals",
-      "url": "https://fens2026.abstractserver.com/program/#/details/presentations/5474",
-      "hot": "11"
+      "title": "Show HN: Pulpie – Models for Cleaning the Web",
+      "url": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web/",
+      "hot": "33"
     },
     {
       "rank": 9,
-      "title": "Clojure 1.13 adds support for checked keys",
-      "url": "https://clojure.org/news/2026/07/02/clojure-1-13-alpha1",
-      "hot": "91"
+      "title": "1k Words: A Writing Contest",
+      "url": "https://writingclub.world/1picture1000words",
+      "hot": "53"
     },
     {
       "rank": 10,
-      "title": "Emily Bender Sets the Record Straight on \"Stochastic Parrots\"",
-      "url": "https://spectrum.ieee.org/stochastic-parrot",
-      "hot": "78"
+      "title": "Egypt Is Building a New Nile",
+      "url": "https://www.theb1m.com/video/egypt-is-building-a-new-nile",
+      "hot": "44"
     }
   ]
 }

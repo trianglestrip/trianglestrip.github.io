@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-06T16:02:02+00:00",
+  "updated_at": "2026-07-06T18:14:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "单体还是微服务？中小企业的务实选择（一套代码双模式平滑演进）",
       "url": "https://blog.csdn.net/zhouzhongyan/article/details/162622772",
-      "hot": "17032"
+      "hot": "20722"
     },
     {
       "rank": 2,
-      "title": "GitHub 热榜项目 - 周榜(2026-07-04)",
-      "url": "https://blog.csdn.net/u014390502/article/details/162584085",
-      "hot": "14503"
+      "title": "【AI智能体】Hermes Agent 从部署到项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162558602",
+      "hot": "17131"
     },
     {
       "rank": 3,
-      "title": "Windows运维体验AMD AI云：领取算力到跑通PyTorch",
-      "url": "https://blog.csdn.net/weixin_47431459/article/details/162582280",
-      "hot": "12349"
+      "title": "OpenClaw 实战案例：内容创作系统构建",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/162612725",
+      "hot": "14465"
     },
     {
       "rank": 4,
       "title": "OpenCV-Python实战（32）——基于深度学习的物体分类与定位",
       "url": "https://blog.csdn.net/LOVEmy134611/article/details/161678530",
-      "hot": "11477"
+      "hot": "12837"
     },
     {
       "rank": 5,
-      "title": "【AI智能体】Hermes Agent 从部署到项目实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162558602",
-      "hot": "9401"
+      "title": "Windows运维体验AMD AI云：领取算力到跑通PyTorch",
+      "url": "https://blog.csdn.net/weixin_47431459/article/details/162582280",
+      "hot": "12790"
     },
     {
       "rank": 6,
-      "title": "OpenClaw 实战案例：内容创作系统构建",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/162612725",
-      "hot": "8303"
+      "title": "K8s - Helm管理工具",
+      "url": "https://blog.csdn.net/liu_chen_yang/article/details/161394380",
+      "hot": "10375"
     },
     {
       "rank": 7,
-      "title": "RuoYi-Vue3 企业级后台快速落地实战指南",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/161518987",
-      "hot": "8120"
+      "title": "GitHub 热榜项目 - 周榜(2026-07-04)",
+      "url": "https://blog.csdn.net/u014390502/article/details/162584085",
+      "hot": "10222"
     },
     {
       "rank": 8,
-      "title": "GitLab CI 制品（Artifacts）完全指南：从作用到配置实践",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/162580619",
-      "hot": "7937"
+      "title": "【LE Audio】CSIP精讲[5]: 蓝牙协同设备组的安全防护体系与实战规范",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/162498081",
+      "hot": "9183"
     },
     {
       "rank": 9,
-      "title": "K8s - Helm管理工具",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/161394380",
-      "hot": "7754"
+      "title": "GitLab CI 制品（Artifacts）完全指南：从作用到配置实践",
+      "url": "https://blog.csdn.net/qq_41840843/article/details/162580619",
+      "hot": "7696"
     },
     {
       "rank": 10,
-      "title": "不用Docker也能跑通消息队列:Linux原生部署RocketMQ实战",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/162630996",
-      "hot": "7413"
+      "title": "RuoYi-Vue3 企业级后台快速落地实战指南",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/161518987",
+      "hot": "6948"
     }
   ]
 }
