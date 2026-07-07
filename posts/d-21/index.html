@@ -1,0 +1,894 @@
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>Lumen 在 Falcor 中的实现计划 - 随手记录</title><meta name=Description content="个人博客，记录技术笔记与生活碎片。"><meta property="og:url" content="https://trianglestrip.github.io/posts/d-21/"><meta property="og:site_name" content="随手记录"><meta property="og:title" content="Lumen 在 Falcor 中的实现计划"><meta property="og:description" content="Lumen 在 Falcor 中的实现计划 目标: 在 FalcorRendering 框架中实现 UE5 Lumen 风格的实时动态全局光照系统。 基础: Falcor 已有的 DXR 光追、SDF 体系、RenderGraph、RTXDI、后处理管线。 日期: 2026-06-09
+目录 Lumen 系统概述 Falcor 现有能力评估 总体架构设计 分阶段实现计划 Phase 1: 基础设施层 Phase 2: Surface Cache Phase 3: Screen Probe Gather Phase 4: Radiance Cache Phase 5: 反射系统 Phase 6: 硬件光追集成 Phase 7: 集成与优化 文件清单 里程碑与时间估算 1. Lumen 系统概述 Lumen 是 UE5 的实时动态全局光照系统，核心特性：
+特性 说明 完全不依赖预烘焙 所有光照实时计算，支持动态几何/光源/材质 多层级追踪 屏幕空间追踪 → 距离场追踪 → 硬件光追 (自动降级) Surface Cache 将场景几何参数化为 Card，缓存表面属性 Radiance Cache 世界空间 3D 探针网格存储辐照度 Screen Probe Gather 屏幕空间探针 + 世界空间探针的混合 GI 高质量反射 支持多次弹射的镜面反射 1.1 Lumen 管线流程图 ┌─────────────────────────────────────────────────────────────────────┐ │ Lumen GI Pipeline │ ├─────────────────────────────────────────────────────────────────────┤ │ │ │ ┌──────────┐ ┌──────────────┐ ┌───────────────────┐ │ │ │ GBuffer │───▶│ Surface Cache│───▶│ Screen Probe │ │ │ │ (已有) │ │ (Card Atlas) │ │ Gather (SS GI) │ │ │ └──────────┘ └──────┬───────┘ └────────┬──────────┘ │ │ │ │ │ │ ▼ ▼ │ │ ┌──────────────┐ ┌───────────────────┐ │ │ │ Mesh Distance │ │ Radiance Cache │ │ │ │ Fields (SDF) │ │ (World Probes) │ │ │ └──────┬───────┘ └────────┬──────────┘ │ │ │ │ │ │ └──────────┬──────────┘ │ │ ▼ │ │ ┌───────────────────┐ │ │ │ Lumen Reflections │ │ │ │ (Specular GI) │ │ │ └────────┬──────────┘ │ │ │ │ │ ▼ │ │ ┌───────────────────┐ │ │ │ Final Lighting │ │ │ │ Composite │ │ │ └───────────────────┘ │ │ │ │ ┌──────────────────────────────────────────────────────────┐ │ │ │ 可选硬件光追后端 (DXR) - 替代 SDF 追踪提供更高精度 │ │ │ └──────────────────────────────────────────────────────────┘ │ └─────────────────────────────────────────────────────────────────────┘ 2. Falcor 现有能力评估 2.1 ✅ 可直接复用 Falcor 能力 对应 Lumen 需求 复用程度 DXR 光追基础设施 (Core/API/Raytracing.h, RtAccelerationStructure, RtStateObject, ShaderTable) 硬件光追后端 🔥 100% SDF 体系 (Scene/SDFs/, SDFSVSVoxelizer.cs.slang, SDFVoxelTypes) Mesh Distance Field 生成与追踪 🔥 80% RenderGraph (RenderGraph.h/cpp, RenderPass.h/cpp) 所有 Pass 的调度与资源管理 🔥 100% GBuffer (GBuffer/ pass, Forward PBR) Surface Cache 数据源 🔥 90% 球谐函数 (FilamentIBL 9-band SH, EnvMapSampler) Radiance Cache 探针存储 🔥 70% RTXDI (Rendering/RTXDI/) 直接光照采样 (与 GI 互补) 🔥 80% NRD 降噪 (NRDPass/, NVIDIA Realistic Denoising) GI/反射降噪 🔥 90% TAA (TAA/ pass) 时序累积 🔥 90% NanoVDB (依赖) 稀疏体素 (可选加速结构) 🔥 60% Slang 着色器编译器 所有 Lumen 着色器 🔥 100% 后处理管线 (Bloom, DoF, ToneMapping) 最终合成 🔥 100% 2.2 ⚠️ 需要扩展 需求 现状 差距 Card 表示 无 需从零实现 Card 生成/选择/Atlas Mesh SDF 生成 有基础 SDF 体系但无 Mesh→SDF 工具链 需写 Compute Shader 生成 Mesh SDF Global Distance Field 无 需合并 Mesh SDF 为全局低精度 SDF Screen Probe Gather 无 需实现屏幕探针放置/追踪/积分 Radiance Cache 3D Grid 无 需实现世界空间探针网格 Surface Cache 反馈 无 需实现 Card 更新策略 多次弹射 GI 无 (现有 GI 仅一次弹射) 需实现递归/迭代弹射 2.3 ❌ 缺失 无任何形式的实时 GI 缓存系统 无 Card/Surfel 表示 无世界空间辐照度探针 无 Mesh Distance Field 预计算管线 3. 总体架构设计 3.1 模块划分 Source/ ├── RenderPasses/ │ ├── Lumen/ # ★ 新目录: Lumen 所有 Pass │ │ ├── LumenSurfaceCache/ # Surface Cache (Card 生成与管理) │ │ ├── LumenMeshSDF/ # Mesh Distance Field 生成 │ │ ├── LumenGlobalSDF/ # Global Distance Field (合并) │ │ ├── LumenScreenProbeGather/ # 屏幕探针收集 │ │ ├── LumenRadianceCache/ # 世界空间探针网格 │ │ ├── LumenReflections/ # Lumen 反射 │ │ ├── LumenSceneLighting/ # 最终光照合成 │ │ └── LumenVisualize/ # 调试可视化 │ └── ... (现有 Pass) │ ├── Shaders/ │ └── Lumen/ # ★ 新目录: Lumen Slang 着色器库 │ ├── LumenCard.slang # Card 数据结构 │ ├── LumenSurfaceCache.slang # Surface Cache 着色器 │ ├── LumenMeshSDF.slang # Mesh SDF 生成 │ ├── LumenGlobalSDF.slang # 全局 SDF 追踪 │ ├── LumenScreenProbeGather.slang # 屏幕探针 │ ├── LumenRadianceCache.slang # 辐照度缓存 │ ├── LumenReflections.slang # 反射追踪 │ ├── LumenTracing.slang # 统一追踪接口 │ └── LumenUtils.slang # 共享工具函数 │ ├── Samples/ │ └── LumenDemo/ # ★ 新 Sample: Lumen 演示程序 │ └── LumenDemo.cpp/h │ └── Falcor/ └── Rendering/ └── Lumen/ # ★ 新目录: Lumen C++ 基础设施 ├── LumenTypes.h # 共享数据类型 ├── LumenCard.h/cpp # Card 生成与管理 ├── LumenMeshSDF.h/cpp # Mesh SDF 管理 └── LumenSettings.h # 全局配置 3.2 数据流设计 每帧数据流: 1. GBuffer Render (已有) ├── Albedo, Normal, Depth, Roughness, Metallic, Emissive └── → Surface Cache Update 2. Surface Cache Update ├── 输入: GBuffer + 上一帧 Card 状态 ├── Card 选择 (哪些 Mesh 需要更新) ├── Card Rasterize (渲染 Card 到 Atlas) └── → Card Atlas (Albedo, Normal, Depth, Emissive) 3. Mesh Distance Field Update (异步 / 按需) ├── 输入: Mesh 几何 ├── Compute Shader: 32³/64³ jump flood → SDF ├── Mip SDF 金字塔 └── → Per-Mesh SDF Textures 4. Global Distance Field Update ├── 输入: 所有动态 Mesh 的 SDF + 变换 ├── Object→World min SDF 合并 └── → Global SDF Volume 5. Screen Probe Gather ├── 输入: GBuffer + Card Atlas + Global SDF / HW RT ├── 自适应屏幕探针放置 ├── 半球追踪 (SDF 或 HW RT) ├── Card 采样积分 └── → Screen Probe Irradiance (SH) 6. Radiance Cache Update ├── 输入: Screen Probe 结果 / 上一帧 Cache ├── 世界空间探针标记 (哪些需要更新) ├── 探针追踪积分 └── → World Space Radiance Cache (SH) 7. Lumen Reflections ├── 输入: GBuffer Roughness + Radiance Cache + Global SDF ├── 屏幕空间追踪 → 距离场追踪 → HW RT └── → Specular Indirect 8. Final Lighting Composite ├── Direct Light (RTXDI / 已有) ├── + Indirect Diffuse (Radiance Cache) ├── + Indirect Specular (Reflections) └── → HDR Output → PostFX Pipeline 4. 分阶段实现计划 Phase 1 ████████░░░░░░░░░░░░ 基础设施 (Mesh SDF, Card 数据结构) Phase 2 ████████████████░░░░ Surface Cache Phase 3 ████████████████████ Screen Probe Gather Phase 4 ████████████████░░░░ Radiance Cache Phase 5 ████████████████░░░░ 反射系统 Phase 6 ████████░░░░░░░░░░░░ 硬件光追集成 Phase 7 ████████████████████ 集成优化 & Demo 5. Phase 1: 基础设施层 5.1 Mesh Distance Field 生成 目标: 为每个 Mesh 生成高精度 SDF，合并为全局低精度 SDF。"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-06-10T09:56:10+00:00"><meta property="article:modified_time" content="2026-06-10T09:56:10+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Lumen 在 Falcor 中的实现计划"><meta name=twitter:description content="Lumen 在 Falcor 中的实现计划 目标: 在 FalcorRendering 框架中实现 UE5 Lumen 风格的实时动态全局光照系统。 基础: Falcor 已有的 DXR 光追、SDF 体系、RenderGraph、RTXDI、后处理管线。 日期: 2026-06-09
+目录 Lumen 系统概述 Falcor 现有能力评估 总体架构设计 分阶段实现计划 Phase 1: 基础设施层 Phase 2: Surface Cache Phase 3: Screen Probe Gather Phase 4: Radiance Cache Phase 5: 反射系统 Phase 6: 硬件光追集成 Phase 7: 集成与优化 文件清单 里程碑与时间估算 1. Lumen 系统概述 Lumen 是 UE5 的实时动态全局光照系统，核心特性：
+特性 说明 完全不依赖预烘焙 所有光照实时计算，支持动态几何/光源/材质 多层级追踪 屏幕空间追踪 → 距离场追踪 → 硬件光追 (自动降级) Surface Cache 将场景几何参数化为 Card，缓存表面属性 Radiance Cache 世界空间 3D 探针网格存储辐照度 Screen Probe Gather 屏幕空间探针 + 世界空间探针的混合 GI 高质量反射 支持多次弹射的镜面反射 1.1 Lumen 管线流程图 ┌─────────────────────────────────────────────────────────────────────┐ │ Lumen GI Pipeline │ ├─────────────────────────────────────────────────────────────────────┤ │ │ │ ┌──────────┐ ┌──────────────┐ ┌───────────────────┐ │ │ │ GBuffer │───▶│ Surface Cache│───▶│ Screen Probe │ │ │ │ (已有) │ │ (Card Atlas) │ │ Gather (SS GI) │ │ │ └──────────┘ └──────┬───────┘ └────────┬──────────┘ │ │ │ │ │ │ ▼ ▼ │ │ ┌──────────────┐ ┌───────────────────┐ │ │ │ Mesh Distance │ │ Radiance Cache │ │ │ │ Fields (SDF) │ │ (World Probes) │ │ │ └──────┬───────┘ └────────┬──────────┘ │ │ │ │ │ │ └──────────┬──────────┘ │ │ ▼ │ │ ┌───────────────────┐ │ │ │ Lumen Reflections │ │ │ │ (Specular GI) │ │ │ └────────┬──────────┘ │ │ │ │ │ ▼ │ │ ┌───────────────────┐ │ │ │ Final Lighting │ │ │ │ Composite │ │ │ └───────────────────┘ │ │ │ │ ┌──────────────────────────────────────────────────────────┐ │ │ │ 可选硬件光追后端 (DXR) - 替代 SDF 追踪提供更高精度 │ │ │ └──────────────────────────────────────────────────────────┘ │ └─────────────────────────────────────────────────────────────────────┘ 2. Falcor 现有能力评估 2.1 ✅ 可直接复用 Falcor 能力 对应 Lumen 需求 复用程度 DXR 光追基础设施 (Core/API/Raytracing.h, RtAccelerationStructure, RtStateObject, ShaderTable) 硬件光追后端 🔥 100% SDF 体系 (Scene/SDFs/, SDFSVSVoxelizer.cs.slang, SDFVoxelTypes) Mesh Distance Field 生成与追踪 🔥 80% RenderGraph (RenderGraph.h/cpp, RenderPass.h/cpp) 所有 Pass 的调度与资源管理 🔥 100% GBuffer (GBuffer/ pass, Forward PBR) Surface Cache 数据源 🔥 90% 球谐函数 (FilamentIBL 9-band SH, EnvMapSampler) Radiance Cache 探针存储 🔥 70% RTXDI (Rendering/RTXDI/) 直接光照采样 (与 GI 互补) 🔥 80% NRD 降噪 (NRDPass/, NVIDIA Realistic Denoising) GI/反射降噪 🔥 90% TAA (TAA/ pass) 时序累积 🔥 90% NanoVDB (依赖) 稀疏体素 (可选加速结构) 🔥 60% Slang 着色器编译器 所有 Lumen 着色器 🔥 100% 后处理管线 (Bloom, DoF, ToneMapping) 最终合成 🔥 100% 2.2 ⚠️ 需要扩展 需求 现状 差距 Card 表示 无 需从零实现 Card 生成/选择/Atlas Mesh SDF 生成 有基础 SDF 体系但无 Mesh→SDF 工具链 需写 Compute Shader 生成 Mesh SDF Global Distance Field 无 需合并 Mesh SDF 为全局低精度 SDF Screen Probe Gather 无 需实现屏幕探针放置/追踪/积分 Radiance Cache 3D Grid 无 需实现世界空间探针网格 Surface Cache 反馈 无 需实现 Card 更新策略 多次弹射 GI 无 (现有 GI 仅一次弹射) 需实现递归/迭代弹射 2.3 ❌ 缺失 无任何形式的实时 GI 缓存系统 无 Card/Surfel 表示 无世界空间辐照度探针 无 Mesh Distance Field 预计算管线 3. 总体架构设计 3.1 模块划分 Source/ ├── RenderPasses/ │ ├── Lumen/ # ★ 新目录: Lumen 所有 Pass │ │ ├── LumenSurfaceCache/ # Surface Cache (Card 生成与管理) │ │ ├── LumenMeshSDF/ # Mesh Distance Field 生成 │ │ ├── LumenGlobalSDF/ # Global Distance Field (合并) │ │ ├── LumenScreenProbeGather/ # 屏幕探针收集 │ │ ├── LumenRadianceCache/ # 世界空间探针网格 │ │ ├── LumenReflections/ # Lumen 反射 │ │ ├── LumenSceneLighting/ # 最终光照合成 │ │ └── LumenVisualize/ # 调试可视化 │ └── ... (现有 Pass) │ ├── Shaders/ │ └── Lumen/ # ★ 新目录: Lumen Slang 着色器库 │ ├── LumenCard.slang # Card 数据结构 │ ├── LumenSurfaceCache.slang # Surface Cache 着色器 │ ├── LumenMeshSDF.slang # Mesh SDF 生成 │ ├── LumenGlobalSDF.slang # 全局 SDF 追踪 │ ├── LumenScreenProbeGather.slang # 屏幕探针 │ ├── LumenRadianceCache.slang # 辐照度缓存 │ ├── LumenReflections.slang # 反射追踪 │ ├── LumenTracing.slang # 统一追踪接口 │ └── LumenUtils.slang # 共享工具函数 │ ├── Samples/ │ └── LumenDemo/ # ★ 新 Sample: Lumen 演示程序 │ └── LumenDemo.cpp/h │ └── Falcor/ └── Rendering/ └── Lumen/ # ★ 新目录: Lumen C++ 基础设施 ├── LumenTypes.h # 共享数据类型 ├── LumenCard.h/cpp # Card 生成与管理 ├── LumenMeshSDF.h/cpp # Mesh SDF 管理 └── LumenSettings.h # 全局配置 3.2 数据流设计 每帧数据流: 1. GBuffer Render (已有) ├── Albedo, Normal, Depth, Roughness, Metallic, Emissive └── → Surface Cache Update 2. Surface Cache Update ├── 输入: GBuffer + 上一帧 Card 状态 ├── Card 选择 (哪些 Mesh 需要更新) ├── Card Rasterize (渲染 Card 到 Atlas) └── → Card Atlas (Albedo, Normal, Depth, Emissive) 3. Mesh Distance Field Update (异步 / 按需) ├── 输入: Mesh 几何 ├── Compute Shader: 32³/64³ jump flood → SDF ├── Mip SDF 金字塔 └── → Per-Mesh SDF Textures 4. Global Distance Field Update ├── 输入: 所有动态 Mesh 的 SDF + 变换 ├── Object→World min SDF 合并 └── → Global SDF Volume 5. Screen Probe Gather ├── 输入: GBuffer + Card Atlas + Global SDF / HW RT ├── 自适应屏幕探针放置 ├── 半球追踪 (SDF 或 HW RT) ├── Card 采样积分 └── → Screen Probe Irradiance (SH) 6. Radiance Cache Update ├── 输入: Screen Probe 结果 / 上一帧 Cache ├── 世界空间探针标记 (哪些需要更新) ├── 探针追踪积分 └── → World Space Radiance Cache (SH) 7. Lumen Reflections ├── 输入: GBuffer Roughness + Radiance Cache + Global SDF ├── 屏幕空间追踪 → 距离场追踪 → HW RT └── → Specular Indirect 8. Final Lighting Composite ├── Direct Light (RTXDI / 已有) ├── + Indirect Diffuse (Radiance Cache) ├── + Indirect Specular (Reflections) └── → HDR Output → PostFX Pipeline 4. 分阶段实现计划 Phase 1 ████████░░░░░░░░░░░░ 基础设施 (Mesh SDF, Card 数据结构) Phase 2 ████████████████░░░░ Surface Cache Phase 3 ████████████████████ Screen Probe Gather Phase 4 ████████████████░░░░ Radiance Cache Phase 5 ████████████████░░░░ 反射系统 Phase 6 ████████░░░░░░░░░░░░ 硬件光追集成 Phase 7 ████████████████████ 集成优化 & Demo 5. Phase 1: 基础设施层 5.1 Mesh Distance Field 生成 目标: 为每个 Mesh 生成高精度 SDF，合并为全局低精度 SDF。"><meta name=application-name content="随手记录"><meta name=apple-mobile-web-app-title content="随手记录"><meta name=referrer content="strict-origin-when-cross-origin"><meta name=theme-color content="#42b983"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://trianglestrip.github.io/posts/d-21/><link rel=prev href=https://trianglestrip.github.io/posts/d-20/><link rel=next href=https://trianglestrip.github.io/posts/d-25/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Lumen 在 Falcor 中的实现计划","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/trianglestrip.github.io\/posts\/d-21\/"},"genre":"posts","wordcount":9317,"url":"https:\/\/trianglestrip.github.io\/posts\/d-21\/","datePublished":"2026-06-10T09:56:10+00:00","dateModified":"2026-06-10T09:56:10+00:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"xxxx"},"description":""}</script><script>var _hmt=_hmt||[];(function(){var e,t=document.createElement("script");t.src="https://hm.baidu.com/hm.js?8ca36c3739321aa5b1917cdce386d850",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e)})()</script></head><body data-header-desktop=fixed data-header-mobile=auto><script>const query=window.matchMedia("(prefers-color-scheme: dark)");function applyTheme(){let e=window.localStorage?.getItem("theme")||"auto",t=e==="dark"||e==="auto"&&query.matches;document.body.setAttribute("theme",t?"dark":"light"),document.body.setAttribute("cfg-theme",e)}applyTheme(),query.addEventListener("change",applyTheme)</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=随手记录>随手记录</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/notes/>随手记 </a><a class=menu-item href=/news/>热榜 </a><a class=menu-item href=/live/>直播 </a><a class=menu-item href=/about/>关于 </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=随手记录>随手记录</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/notes/ title>随手记</a><a class=menu-item href=/news/ title>热榜</a><a class=menu-item href=/live/ title>直播</a><a class=menu-item href=/about/ title>关于</a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust" aria-hidden=true></i></a></div></div></header><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Lumen 在 Falcor 中的实现计划</h1><div class=post-meta><div class=post-meta-line></div><div class=post-meta-line><i class="far fa-calendar-alt" aria-hidden=true></i>&nbsp;<time datetime=2026-06-10>2026-06-10</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden=true></i>&nbsp;约 9317 字&nbsp;
+<i class="far fa-clock" aria-hidden=true></i>&nbsp;预计阅读 19 分钟&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#目录>目录</a></li><li><a href=#1-lumen-系统概述>1. Lumen 系统概述</a><ul><li><a href=#11-lumen-管线流程图>1.1 Lumen 管线流程图</a></li></ul></li><li><a href=#2-falcor-现有能力评估>2. Falcor 现有能力评估</a><ul><li><a href=#21--可直接复用>2.1 ✅ 可直接复用</a></li><li><a href=#22--需要扩展>2.2 ⚠️ 需要扩展</a></li><li><a href=#23--缺失>2.3 ❌ 缺失</a></li></ul></li><li><a href=#3-总体架构设计>3. 总体架构设计</a><ul><li><a href=#31-模块划分>3.1 模块划分</a></li><li><a href=#32-数据流设计>3.2 数据流设计</a></li></ul></li><li><a href=#4-分阶段实现计划>4. 分阶段实现计划</a></li><li><a href=#5-phase-1-基础设施层>5. Phase 1: 基础设施层</a><ul><li><a href=#51-mesh-distance-field-生成>5.1 Mesh Distance Field 生成</a></li><li><a href=#52-card-数据结构定义>5.2 Card 数据结构定义</a></li><li><a href=#53-统一追踪接口>5.3 统一追踪接口</a></li></ul></li><li><a href=#6-phase-2-surface-cache>6. Phase 2: Surface Cache</a><ul><li><a href=#61-概述>6.1 概述</a></li><li><a href=#62-card-生成策略>6.2 Card 生成策略</a></li><li><a href=#63-card-page-系统>6.3 Card Page 系统</a></li><li><a href=#64-实现文件>6.4 实现文件</a></li><li><a href=#65-接口设计>6.5 接口设计</a></li><li><a href=#66-关键着色器伪代码>6.6 关键着色器伪代码</a></li></ul></li><li><a href=#7-phase-3-screen-probe-gather>7. Phase 3: Screen Probe Gather</a><ul><li><a href=#71-概述>7.1 概述</a></li><li><a href=#72-探针放置策略>7.2 探针放置策略</a></li><li><a href=#73-半球追踪>7.3 半球追踪</a></li><li><a href=#74-sdf-追踪算法>7.4 SDF 追踪算法</a></li><li><a href=#75-实现文件>7.5 实现文件</a></li><li><a href=#76-接口设计>7.6 接口设计</a></li></ul></li><li><a href=#8-phase-4-radiance-cache>8. Phase 4: Radiance Cache</a><ul><li><a href=#81-概述>8.1 概述</a></li><li><a href=#82-探针网格设计>8.2 探针网格设计</a></li><li><a href=#83-探针更新策略>8.3 探针更新策略</a></li><li><a href=#84-与-screen-probe-gather-的融合>8.4 与 Screen Probe Gather 的融合</a></li><li><a href=#85-实现文件>8.5 实现文件</a></li><li><a href=#86-接口设计>8.6 接口设计</a></li></ul></li><li><a href=#9-phase-5-反射系统>9. Phase 5: 反射系统</a><ul><li><a href=#91-概述>9.1 概述</a></li><li><a href=#92-追踪流程>9.2 追踪流程</a></li><li><a href=#93-屏幕空间追踪-hi-z>9.3 屏幕空间追踪 (Hi-Z)</a></li><li><a href=#94-实现文件>9.4 实现文件</a></li></ul></li><li><a href=#10-phase-6-硬件光追集成-dxr-backend>10. Phase 6: 硬件光追集成 (DXR Backend)</a><ul><li><a href=#101-概述>10.1 概述</a></li><li><a href=#102-集成方案>10.2 集成方案</a></li><li><a href=#103-追踪方法选择逻辑>10.3 追踪方法选择逻辑</a></li><li><a href=#104-实现文件>10.4 实现文件</a></li></ul></li><li><a href=#11-phase-7-集成与优化>11. Phase 7: 集成与优化</a><ul><li><a href=#111-与现有管线的集成>11.1 与现有管线的集成</a></li><li><a href=#112-rendergraph-配置示例>11.2 RenderGraph 配置示例</a></li><li><a href=#113-性能优化策略>11.3 性能优化策略</a></li><li><a href=#114-调试与可视化>11.4 调试与可视化</a></li></ul></li><li><a href=#12-文件清单>12. 文件清单</a><ul><li><a href=#121-新建文件-c>12.1 新建文件 (C++)</a></li><li><a href=#122-新建文件-slang-着色器>12.2 新建文件 (Slang 着色器)</a></li><li><a href=#123-新建文件-sample-application>12.3 新建文件 (Sample Application)</a></li><li><a href=#124-修改的现有文件>12.4 修改的现有文件</a></li></ul></li><li><a href=#13-里程碑与时间估算>13. 里程碑与时间估算</a><ul><li><a href=#131-里程碑>13.1 里程碑</a></li><li><a href=#132-风险与缓解>13.2 风险与缓解</a></li></ul></li><li><a href=#附录-a-关键参考>附录 A: 关键参考</a></li><li><a href=#附录-b-术语对照>附录 B: 术语对照</a></li></ul></nav></div></div><div class=content id=content><h1 id=lumen-在-falcor-中的实现计划>Lumen 在 Falcor 中的实现计划</h1><blockquote><p><strong>目标</strong>: 在 FalcorRendering 框架中实现 UE5 Lumen 风格的实时动态全局光照系统。
+<strong>基础</strong>: Falcor 已有的 DXR 光追、SDF 体系、RenderGraph、RTXDI、后处理管线。
+<strong>日期</strong>: 2026-06-09</p></blockquote><hr><h2 id=目录>目录</h2><ol><li><a href=#1-lumen-%e7%b3%bb%e7%bb%9f%e6%a6%82%e8%bf%b0 rel>Lumen 系统概述</a></li><li><a href=#2-falcor-%e7%8e%b0%e6%9c%89%e8%83%bd%e5%8a%9b%e8%af%84%e4%bc%b0 rel>Falcor 现有能力评估</a></li><li><a href=#3-%e6%80%bb%e4%bd%93%e6%9e%b6%e6%9e%84%e8%ae%be%e8%ae%a1 rel>总体架构设计</a></li><li><a href=#4-%e5%88%86%e9%98%b6%e6%ae%b5%e5%ae%9e%e7%8e%b0%e8%ae%a1%e5%88%92 rel>分阶段实现计划</a></li><li><a href=#5-phase-1-%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd%e5%b1%82 rel>Phase 1: 基础设施层</a></li><li><a href=#6-phase-2-surface-cache rel>Phase 2: Surface Cache</a></li><li><a href=#7-phase-3-screen-probe-gather rel>Phase 3: Screen Probe Gather</a></li><li><a href=#8-phase-4-radiance-cache rel>Phase 4: Radiance Cache</a></li><li><a href=#9-phase-5-%e5%8f%8d%e5%b0%84%e7%b3%bb%e7%bb%9f rel>Phase 5: 反射系统</a></li><li><a href=#10-phase-6-%e7%a1%ac%e4%bb%b6%e5%85%89%e8%bf%bd%e9%9b%86%e6%88%90 rel>Phase 6: 硬件光追集成</a></li><li><a href=#11-phase-7-%e9%9b%86%e6%88%90%e4%b8%8e%e4%bc%98%e5%8c%96 rel>Phase 7: 集成与优化</a></li><li><a href=#12-%e6%96%87%e4%bb%b6%e6%b8%85%e5%8d%95 rel>文件清单</a></li><li><a href=#13-%e9%87%8c%e7%a8%8b%e7%a2%91%e4%b8%8e%e6%97%b6%e9%97%b4%e4%bc%b0%e7%ae%97 rel>里程碑与时间估算</a></li></ol><hr><h2 id=1-lumen-系统概述>1. Lumen 系统概述</h2><p>Lumen 是 UE5 的实时动态全局光照系统，核心特性：</p><table><thead><tr><th>特性</th><th>说明</th></tr></thead><tbody><tr><td><strong>完全不依赖预烘焙</strong></td><td>所有光照实时计算，支持动态几何/光源/材质</td></tr><tr><td><strong>多层级追踪</strong></td><td>屏幕空间追踪 → 距离场追踪 → 硬件光追 (自动降级)</td></tr><tr><td><strong>Surface Cache</strong></td><td>将场景几何参数化为 Card，缓存表面属性</td></tr><tr><td><strong>Radiance Cache</strong></td><td>世界空间 3D 探针网格存储辐照度</td></tr><tr><td><strong>Screen Probe Gather</strong></td><td>屏幕空间探针 + 世界空间探针的混合 GI</td></tr><tr><td><strong>高质量反射</strong></td><td>支持多次弹射的镜面反射</td></tr></tbody></table><h3 id=11-lumen-管线流程图>1.1 Lumen 管线流程图</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>┌─────────────────────────────────────────────────────────────────────┐
+</span></span><span class=line><span class=cl>│                        Lumen GI Pipeline                            │
+</span></span><span class=line><span class=cl>├─────────────────────────────────────────────────────────────────────┤
+</span></span><span class=line><span class=cl>│                                                                     │
+</span></span><span class=line><span class=cl>│  ┌──────────┐    ┌──────────────┐    ┌───────────────────┐         │
+</span></span><span class=line><span class=cl>│  │ GBuffer   │───▶│ Surface Cache│───▶│ Screen Probe      │         │
+</span></span><span class=line><span class=cl>│  │ (已有)    │    │ (Card Atlas) │    │ Gather (SS GI)    │         │
+</span></span><span class=line><span class=cl>│  └──────────┘    └──────┬───────┘    └────────┬──────────┘         │
+</span></span><span class=line><span class=cl>│                         │                     │                     │
+</span></span><span class=line><span class=cl>│                         ▼                     ▼                     │
+</span></span><span class=line><span class=cl>│                  ┌──────────────┐    ┌───────────────────┐         │
+</span></span><span class=line><span class=cl>│                  │ Mesh Distance │    │ Radiance Cache    │         │
+</span></span><span class=line><span class=cl>│                  │ Fields (SDF)  │    │ (World Probes)    │         │
+</span></span><span class=line><span class=cl>│                  └──────┬───────┘    └────────┬──────────┘         │
+</span></span><span class=line><span class=cl>│                         │                     │                     │
+</span></span><span class=line><span class=cl>│                         └──────────┬──────────┘                     │
+</span></span><span class=line><span class=cl>│                                    ▼                                │
+</span></span><span class=line><span class=cl>│                           ┌───────────────────┐                     │
+</span></span><span class=line><span class=cl>│                           │ Lumen Reflections │                     │
+</span></span><span class=line><span class=cl>│                           │ (Specular GI)     │                     │
+</span></span><span class=line><span class=cl>│                           └────────┬──────────┘                     │
+</span></span><span class=line><span class=cl>│                                    │                                │
+</span></span><span class=line><span class=cl>│                                    ▼                                │
+</span></span><span class=line><span class=cl>│                           ┌───────────────────┐                     │
+</span></span><span class=line><span class=cl>│                           │ Final Lighting    │                     │
+</span></span><span class=line><span class=cl>│                           │ Composite         │                     │
+</span></span><span class=line><span class=cl>│                           └───────────────────┘                     │
+</span></span><span class=line><span class=cl>│                                                                     │
+</span></span><span class=line><span class=cl>│  ┌──────────────────────────────────────────────────────────┐      │
+</span></span><span class=line><span class=cl>│  │ 可选硬件光追后端 (DXR) - 替代 SDF 追踪提供更高精度       │      │
+</span></span><span class=line><span class=cl>│  └──────────────────────────────────────────────────────────┘      │
+</span></span><span class=line><span class=cl>└─────────────────────────────────────────────────────────────────────┘</span></span></code></pre></div></div><hr><h2 id=2-falcor-现有能力评估>2. Falcor 现有能力评估</h2><h3 id=21--可直接复用>2.1 ✅ 可直接复用</h3><table><thead><tr><th>Falcor 能力</th><th>对应 Lumen 需求</th><th>复用程度</th></tr></thead><tbody><tr><td><strong>DXR 光追基础设施</strong> (<code>Core/API/Raytracing.h</code>, <code>RtAccelerationStructure</code>, <code>RtStateObject</code>, <code>ShaderTable</code>)</td><td>硬件光追后端</td><td>🔥 100%</td></tr><tr><td><strong>SDF 体系</strong> (<code>Scene/SDFs/</code>, <code>SDFSVSVoxelizer.cs.slang</code>, <code>SDFVoxelTypes</code>)</td><td>Mesh Distance Field 生成与追踪</td><td>🔥 80%</td></tr><tr><td><strong>RenderGraph</strong> (<code>RenderGraph.h/cpp</code>, <code>RenderPass.h/cpp</code>)</td><td>所有 Pass 的调度与资源管理</td><td>🔥 100%</td></tr><tr><td><strong>GBuffer</strong> (<code>GBuffer/</code> pass, Forward PBR)</td><td>Surface Cache 数据源</td><td>🔥 90%</td></tr><tr><td><strong>球谐函数</strong> (<code>FilamentIBL</code> 9-band SH, <code>EnvMapSampler</code>)</td><td>Radiance Cache 探针存储</td><td>🔥 70%</td></tr><tr><td><strong>RTXDI</strong> (<code>Rendering/RTXDI/</code>)</td><td>直接光照采样 (与 GI 互补)</td><td>🔥 80%</td></tr><tr><td><strong>NRD 降噪</strong> (<code>NRDPass/</code>, NVIDIA Realistic Denoising)</td><td>GI/反射降噪</td><td>🔥 90%</td></tr><tr><td><strong>TAA</strong> (<code>TAA/</code> pass)</td><td>时序累积</td><td>🔥 90%</td></tr><tr><td><strong>NanoVDB</strong> (依赖)</td><td>稀疏体素 (可选加速结构)</td><td>🔥 60%</td></tr><tr><td><strong>Slang 着色器编译器</strong></td><td>所有 Lumen 着色器</td><td>🔥 100%</td></tr><tr><td><strong>后处理管线</strong> (Bloom, DoF, ToneMapping)</td><td>最终合成</td><td>🔥 100%</td></tr></tbody></table><h3 id=22--需要扩展>2.2 ⚠️ 需要扩展</h3><table><thead><tr><th>需求</th><th>现状</th><th>差距</th></tr></thead><tbody><tr><td><strong>Card 表示</strong></td><td>无</td><td>需从零实现 Card 生成/选择/Atlas</td></tr><tr><td><strong>Mesh SDF 生成</strong></td><td>有基础 SDF 体系但无 Mesh→SDF 工具链</td><td>需写 Compute Shader 生成 Mesh SDF</td></tr><tr><td><strong>Global Distance Field</strong></td><td>无</td><td>需合并 Mesh SDF 为全局低精度 SDF</td></tr><tr><td><strong>Screen Probe Gather</strong></td><td>无</td><td>需实现屏幕探针放置/追踪/积分</td></tr><tr><td><strong>Radiance Cache 3D Grid</strong></td><td>无</td><td>需实现世界空间探针网格</td></tr><tr><td><strong>Surface Cache 反馈</strong></td><td>无</td><td>需实现 Card 更新策略</td></tr><tr><td><strong>多次弹射 GI</strong></td><td>无 (现有 GI 仅一次弹射)</td><td>需实现递归/迭代弹射</td></tr></tbody></table><h3 id=23--缺失>2.3 ❌ 缺失</h3><ul><li>无任何形式的实时 GI 缓存系统</li><li>无 Card/Surfel 表示</li><li>无世界空间辐照度探针</li><li>无 Mesh Distance Field 预计算管线</li></ul><hr><h2 id=3-总体架构设计>3. 总体架构设计</h2><h3 id=31-模块划分>3.1 模块划分</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Source/
+</span></span><span class=line><span class=cl>├── RenderPasses/
+</span></span><span class=line><span class=cl>│   ├── Lumen/                              # ★ 新目录: Lumen 所有 Pass
+</span></span><span class=line><span class=cl>│   │   ├── LumenSurfaceCache/              # Surface Cache (Card 生成与管理)
+</span></span><span class=line><span class=cl>│   │   ├── LumenMeshSDF/                   # Mesh Distance Field 生成
+</span></span><span class=line><span class=cl>│   │   ├── LumenGlobalSDF/                 # Global Distance Field (合并)
+</span></span><span class=line><span class=cl>│   │   ├── LumenScreenProbeGather/         # 屏幕探针收集
+</span></span><span class=line><span class=cl>│   │   ├── LumenRadianceCache/             # 世界空间探针网格
+</span></span><span class=line><span class=cl>│   │   ├── LumenReflections/               # Lumen 反射
+</span></span><span class=line><span class=cl>│   │   ├── LumenSceneLighting/             # 最终光照合成
+</span></span><span class=line><span class=cl>│   │   └── LumenVisualize/                 # 调试可视化
+</span></span><span class=line><span class=cl>│   └── ... (现有 Pass)
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├── Shaders/
+</span></span><span class=line><span class=cl>│   └── Lumen/                              # ★ 新目录: Lumen Slang 着色器库
+</span></span><span class=line><span class=cl>│       ├── LumenCard.slang                 # Card 数据结构
+</span></span><span class=line><span class=cl>│       ├── LumenSurfaceCache.slang         # Surface Cache 着色器
+</span></span><span class=line><span class=cl>│       ├── LumenMeshSDF.slang              # Mesh SDF 生成
+</span></span><span class=line><span class=cl>│       ├── LumenGlobalSDF.slang            # 全局 SDF 追踪
+</span></span><span class=line><span class=cl>│       ├── LumenScreenProbeGather.slang    # 屏幕探针
+</span></span><span class=line><span class=cl>│       ├── LumenRadianceCache.slang        # 辐照度缓存
+</span></span><span class=line><span class=cl>│       ├── LumenReflections.slang          # 反射追踪
+</span></span><span class=line><span class=cl>│       ├── LumenTracing.slang              # 统一追踪接口
+</span></span><span class=line><span class=cl>│       └── LumenUtils.slang                # 共享工具函数
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├── Samples/
+</span></span><span class=line><span class=cl>│   └── LumenDemo/                          # ★ 新 Sample: Lumen 演示程序
+</span></span><span class=line><span class=cl>│       └── LumenDemo.cpp/h
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>└── Falcor/
+</span></span><span class=line><span class=cl>    └── Rendering/
+</span></span><span class=line><span class=cl>        └── Lumen/                          # ★ 新目录: Lumen C++ 基础设施
+</span></span><span class=line><span class=cl>            ├── LumenTypes.h                # 共享数据类型
+</span></span><span class=line><span class=cl>            ├── LumenCard.h/cpp             # Card 生成与管理
+</span></span><span class=line><span class=cl>            ├── LumenMeshSDF.h/cpp          # Mesh SDF 管理
+</span></span><span class=line><span class=cl>            └── LumenSettings.h             # 全局配置</span></span></code></pre></div></div><h3 id=32-数据流设计>3.2 数据流设计</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>每帧数据流:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>1. GBuffer Render (已有)
+</span></span><span class=line><span class=cl>   ├── Albedo, Normal, Depth, Roughness, Metallic, Emissive
+</span></span><span class=line><span class=cl>   └── → Surface Cache Update
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>2. Surface Cache Update
+</span></span><span class=line><span class=cl>   ├── 输入: GBuffer + 上一帧 Card 状态
+</span></span><span class=line><span class=cl>   ├── Card 选择 (哪些 Mesh 需要更新)
+</span></span><span class=line><span class=cl>   ├── Card Rasterize (渲染 Card 到 Atlas)
+</span></span><span class=line><span class=cl>   └── → Card Atlas (Albedo, Normal, Depth, Emissive)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>3. Mesh Distance Field Update (异步 / 按需)
+</span></span><span class=line><span class=cl>   ├── 输入: Mesh 几何
+</span></span><span class=line><span class=cl>   ├── Compute Shader: 32³/64³ jump flood → SDF
+</span></span><span class=line><span class=cl>   ├── Mip SDF 金字塔
+</span></span><span class=line><span class=cl>   └── → Per-Mesh SDF Textures
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>4. Global Distance Field Update
+</span></span><span class=line><span class=cl>   ├── 输入: 所有动态 Mesh 的 SDF + 变换
+</span></span><span class=line><span class=cl>   ├── Object→World min SDF 合并
+</span></span><span class=line><span class=cl>   └── → Global SDF Volume
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>5. Screen Probe Gather
+</span></span><span class=line><span class=cl>   ├── 输入: GBuffer + Card Atlas + Global SDF / HW RT
+</span></span><span class=line><span class=cl>   ├── 自适应屏幕探针放置
+</span></span><span class=line><span class=cl>   ├── 半球追踪 (SDF 或 HW RT)
+</span></span><span class=line><span class=cl>   ├── Card 采样积分
+</span></span><span class=line><span class=cl>   └── → Screen Probe Irradiance (SH)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>6. Radiance Cache Update
+</span></span><span class=line><span class=cl>   ├── 输入: Screen Probe 结果 / 上一帧 Cache
+</span></span><span class=line><span class=cl>   ├── 世界空间探针标记 (哪些需要更新)
+</span></span><span class=line><span class=cl>   ├── 探针追踪积分
+</span></span><span class=line><span class=cl>   └── → World Space Radiance Cache (SH)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>7. Lumen Reflections
+</span></span><span class=line><span class=cl>   ├── 输入: GBuffer Roughness + Radiance Cache + Global SDF
+</span></span><span class=line><span class=cl>   ├── 屏幕空间追踪 → 距离场追踪 → HW RT
+</span></span><span class=line><span class=cl>   └── → Specular Indirect
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>8. Final Lighting Composite
+</span></span><span class=line><span class=cl>   ├── Direct Light (RTXDI / 已有)
+</span></span><span class=line><span class=cl>   ├── + Indirect Diffuse (Radiance Cache)
+</span></span><span class=line><span class=cl>   ├── + Indirect Specular (Reflections)
+</span></span><span class=line><span class=cl>   └── → HDR Output → PostFX Pipeline</span></span></code></pre></div></div><hr><h2 id=4-分阶段实现计划>4. 分阶段实现计划</h2><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Phase 1  ████████░░░░░░░░░░░░  基础设施 (Mesh SDF, Card 数据结构)
+</span></span><span class=line><span class=cl>Phase 2  ████████████████░░░░  Surface Cache
+</span></span><span class=line><span class=cl>Phase 3  ████████████████████  Screen Probe Gather
+</span></span><span class=line><span class=cl>Phase 4  ████████████████░░░░  Radiance Cache
+</span></span><span class=line><span class=cl>Phase 5  ████████████████░░░░  反射系统
+</span></span><span class=line><span class=cl>Phase 6  ████████░░░░░░░░░░░░  硬件光追集成
+</span></span><span class=line><span class=cl>Phase 7  ████████████████████  集成优化 &amp; Demo</span></span></code></pre></div></div><hr><h2 id=5-phase-1-基础设施层>5. Phase 1: 基础设施层</h2><h3 id=51-mesh-distance-field-生成>5.1 Mesh Distance Field 生成</h3><p><strong>目标</strong>: 为每个 Mesh 生成高精度 SDF，合并为全局低精度 SDF。</p><h4 id=511-技术方案>5.1.1 技术方案</h4><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Mesh SDF 生成流程:
+</span></span><span class=line><span class=cl>┌──────────────┐     ┌──────────────────┐     ┌─────────────────┐
+</span></span><span class=line><span class=cl>│ Triangle Mesh│────▶│ Voxelize +        │────▶│ Jump Flood      │
+</span></span><span class=line><span class=cl>│ (已有)       │     │ Signed Distance   │     │ Algorithm       │
+</span></span><span class=line><span class=cl>│              │     │ Init (Compute)    │     │ (2×JFA Passes)  │
+</span></span><span class=line><span class=cl>└──────────────┘     └──────────────────┘     └────────┬────────┘
+</span></span><span class=line><span class=cl>                                                       │
+</span></span><span class=line><span class=cl>                                                       ▼
+</span></span><span class=line><span class=cl>                                              ┌─────────────────┐
+</span></span><span class=line><span class=cl>                                              │ Mip SDF Pyramid │
+</span></span><span class=line><span class=cl>                                              │ (逐级下采样)    │
+</span></span><span class=line><span class=cl>                                              └────────┬────────┘
+</span></span><span class=line><span class=cl>                                                       │
+</span></span><span class=line><span class=cl>                                                       ▼
+</span></span><span class=line><span class=cl>                                              ┌─────────────────┐
+</span></span><span class=line><span class=cl>                                              │ Global SDF      │
+</span></span><span class=line><span class=cl>                                              │ (Object→World   │
+</span></span><span class=line><span class=cl>                                              │  min 合并)      │
+</span></span><span class=line><span class=cl>                                              └─────────────────┘</span></span></code></pre></div></div><p><strong>Jump Flood Algorithm (JFA)</strong>:</p><ul><li>输入: 二值体素 (内部/外部)</li><li>2×JFA Pass: 每个 Pass 传播最近表面点距离</li><li>输出: 32³ 或 64³ 有符号距离场 3D Texture</li><li>性能: O(N³ log N) → 实际 ~2ms @ 64³</li></ul><h4 id=512-实现文件>5.1.2 实现文件</h4><table><thead><tr><th>文件</th><th>类型</th><th>职责</th></tr></thead><tbody><tr><td><code>LumenMeshSDF.h/cpp</code></td><td>C++</td><td>SDF 资源管理, CPU 端生成调度</td></tr><tr><td><code>LumenMeshSDF.cs.slang</code></td><td>Slang Compute</td><td>体素化 + JFA SDF 生成</td></tr><tr><td><code>LumenGlobalSDF.h/cpp</code></td><td>C++</td><td>全局 SDF 合并管理</td></tr><tr><td><code>LumenGlobalSDF.cs.slang</code></td><td>Slang Compute</td><td>Object→World SDF 合并</td></tr></tbody></table><h4 id=513-关键数据结构>5.1.3 关键数据结构</h4><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cpp"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// LumenTypes.h
+</span></span></span><span class=line><span class=cl><span class=k>struct</span> <span class=nc>LumenMeshSDFData</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>uint3</span>   <span class=n>resolution</span><span class=p>;</span>      <span class=c1>// 32 or 64
+</span></span></span><span class=line><span class=cl>    <span class=n>float3</span>  <span class=n>localBoundsMin</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span>  <span class=n>localBoundsMax</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span>  <span class=n>localToWorldScale</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// GPU resources
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>pSDFTexture</span><span class=p>;</span>      <span class=c1>// 3D R32F
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>pMipSDFTextures</span><span class=p>[</span><span class=mi>4</span><span class=p>];</span> <span class=c1>// Mip chain
+</span></span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>struct</span> <span class=nc>LumenGlobalSDFData</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>uint3</span>   <span class=n>resolution</span><span class=p>;</span>       <span class=c1>// e.g. 128³ or 256³
+</span></span></span><span class=line><span class=cl>    <span class=n>float3</span>  <span class=n>worldBoundsMin</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span>  <span class=n>worldBoundsMax</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>float</span>   <span class=n>voxelSize</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>pGlobalSDF</span><span class=p>;</span>  <span class=c1>// 3D R32F
+</span></span></span><span class=line><span class=cl>    <span class=c1>// Clipmap levels for large worlds
+</span></span></span><span class=line><span class=cl>    <span class=n>uint</span>    <span class=n>numClipmapLevels</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>pClipmapSDF</span><span class=p>[</span><span class=mi>4</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=p>};</span></span></span></code></pre></div></div><h4 id=514-接口设计>5.1.4 接口设计</h4><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cpp"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=k>class</span> <span class=nc>LumenMeshSDF</span> <span class=o>:</span> <span class=k>public</span> <span class=n>Object</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=k>public</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=k>static</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>LumenMeshSDF</span><span class=o>&gt;</span> <span class=n>create</span><span class=p>(</span><span class=n>ref</span><span class=o>&lt;</span><span class=n>Device</span><span class=o>&gt;</span> <span class=n>pDevice</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 为指定 Mesh 生成/更新 SDF
+</span></span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=nf>generateSDF</span><span class=p>(</span><span class=n>ref</span><span class=o>&lt;</span><span class=n>RenderContext</span><span class=o>&gt;</span> <span class=n>pRenderContext</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>                     <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>TriangleMesh</span><span class=o>&gt;&amp;</span> <span class=n>pMesh</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 获取某个 Mesh 的 SDF (如果已生成)
+</span></span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>LumenMeshSDFData</span><span class=o>*</span> <span class=nf>getSDF</span><span class=p>(</span><span class=kt>uint32_t</span> <span class=n>meshID</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 当 Mesh Transform 变化时更新 Global SDF 中的对应区域
+</span></span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=nf>markDirty</span><span class=p>(</span><span class=kt>uint32_t</span> <span class=n>meshID</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 绑定 SDF 数据到着色器
+</span></span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=nf>bindShaderVars</span><span class=p>(</span><span class=k>const</span> <span class=n>ShaderVar</span><span class=o>&amp;</span> <span class=n>var</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl><span class=k>private</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>unordered_map</span><span class=o>&lt;</span><span class=kt>uint32_t</span><span class=p>,</span> <span class=n>LumenMeshSDFData</span><span class=o>&gt;</span> <span class=n>mMeshSDFs</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>};</span></span></span></code></pre></div></div><h3 id=52-card-数据结构定义>5.2 Card 数据结构定义</h3><h4 id=521-card-模型>5.2.1 Card 模型</h4><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Card (面片) = 场景中可见表面的轴对齐矩形表示
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Card 属性:
+</span></span><span class=line><span class=cl>┌──────────────────────────────────────────┐
+</span></span><span class=line><span class=cl>│  World Position (center)                 │
+</span></span><span class=line><span class=cl>│  World Normal                           │
+</span></span><span class=line><span class=cl>│  Extent (half-size in UV space)         │
+</span></span><span class=line><span class=cl>│  Atlas UV Rect (在 Card Atlas 中的位置)  │
+</span></span><span class=line><span class=cl>│  Origin Mesh ID                         │
+</span></span><span class=line><span class=cl>│  Last Update Frame                      │
+</span></span><span class=line><span class=cl>│  Visible / Occluded Flag                │
+</span></span><span class=line><span class=cl>└──────────────────────────────────────────┘</span></span></code></pre></div></div><h4 id=522-card-atlas>5.2.2 Card Atlas</h4><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Card Atlas: 2048×2048 (或更大) 纹理图集
+</span></span><span class=line><span class=cl>┌────────────────────────────────────────┐
+</span></span><span class=line><span class=cl>│ Card 0  │ Card 1  │ Card 2  │ Card 3  │
+</span></span><span class=line><span class=cl>│ (128²)  │ (128²)  │ (64²)   │ (128²)  │
+</span></span><span class=line><span class=cl>├─────────┼─────────┼─────────┼─────────│
+</span></span><span class=line><span class=cl>│ Card 4  │ Card 5  │ Card 6  │  ...    │
+</span></span><span class=line><span class=cl>│ ...     │         │         │         │
+</span></span><span class=line><span class=cl>└────────────────────────────────────────┘
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>每个 Card 存储:
+</span></span><span class=line><span class=cl>  - AtlasAlbedo (RGB8 or R11G11B10F)
+</span></span><span class=line><span class=cl>  - AtlasNormal (RGB10A2 or RGBA8)
+</span></span><span class=line><span class=cl>  - AtlasDepth  (R16F)
+</span></span><span class=line><span class=cl>  - AtlasEmissive (RGB8)</span></span></code></pre></div></div><h4 id=523-实现文件>5.2.3 实现文件</h4><table><thead><tr><th>文件</th><th>职责</th></tr></thead><tbody><tr><td><code>LumenCard.h/cpp</code></td><td>Card 生成/选择/淘汰逻辑 (CPU)</td></tr><tr><td><code>LumenCard.slang</code></td><td>Card 数据结构 (GPU)</td></tr><tr><td><code>LumenSurfaceCache.slang</code></td><td>Card Atlas 读写</td></tr></tbody></table><h3 id=53-统一追踪接口>5.3 统一追踪接口</h3><p><strong>目标</strong>: 提供统一的射线追踪接口，自动选择追踪方法。</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-slang"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=o>//</span> <span class=n>LumenTracing</span><span class=o>.</span><span class=n>slang</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>//</span> <span class=err>追踪质量等级</span>
+</span></span><span class=line><span class=cl><span class=k>enum</span> <span class=n>TracingQuality</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>kScreenSpace</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span>   <span class=o>//</span> <span class=err>屏幕空间追踪</span> <span class=p>(</span><span class=err>最快</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>kDistanceField</span> <span class=o>=</span> <span class=mi>1</span><span class=p>,</span> <span class=o>//</span> <span class=err>距离场追踪</span>
+</span></span><span class=line><span class=cl>    <span class=n>kHardwareRT</span> <span class=o>=</span> <span class=mi>2</span><span class=p>,</span>    <span class=o>//</span> <span class=err>硬件光追</span> <span class=p>(</span><span class=err>最优</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>//</span> <span class=err>追踪结果</span>
+</span></span><span class=line><span class=cl><span class=n>struct</span> <span class=n>LumenTraceResult</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span>  <span class=n>hitPosition</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span>  <span class=n>hitNormal</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span>  <span class=n>hitAlbedo</span><span class=p>;</span>      <span class=o>//</span> <span class=err>从</span> <span class=n>Surface</span> <span class=n>Cache</span> <span class=err>采样</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span>  <span class=n>hitEmissive</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=ne>float</span>   <span class=n>hitDistance</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=ne>bool</span>    <span class=n>bHit</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>uint</span>    <span class=n>tracingMethod</span><span class=p>;</span>  <span class=o>//</span> <span class=err>实际使用的追踪方法</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>//</span> <span class=err>统一追踪函数</span>
+</span></span><span class=line><span class=cl><span class=n>LumenTraceResult</span> <span class=n>traceLumenScene</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span> <span class=n>rayOrigin</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span> <span class=n>rayDirection</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=ne>float</span>  <span class=n>maxDistance</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>TracingQuality</span> <span class=n>minQuality</span>
+</span></span><span class=line><span class=cl><span class=p>);</span></span></span></code></pre></div></div><hr><h2 id=6-phase-2-surface-cache>6. Phase 2: Surface Cache</h2><h3 id=61-概述>6.1 概述</h3><p>Surface Cache 是 Lumen 的核心创新：将场景表面参数化为独立的面片 (Card)，缓存表面属性 (Albedo, Normal, Depth, Emissive) 到纹理图集中。后续 GI 计算不再访问原始几何，而是采样 Card Atlas。</p><h3 id=62-card-生成策略>6.2 Card 生成策略</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>每帧流程:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>1. Card 选择 (CPU)
+</span></span><span class=line><span class=cl>   ├── 可见性查询: 哪些 Mesh 在视锥体内?
+</span></span><span class=line><span class=cl>   ├── 距离 LOD: 近处用高精度 Card, 远处用低精度
+</span></span><span class=line><span class=cl>   ├── 增量更新: 只更新变化的 Card (位置/材质)
+</span></span><span class=line><span class=cl>   └── → Card Update List
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>2. Card Rasterize (GPU)
+</span></span><span class=line><span class=cl>   ├── 为每个待更新的 Card 渲染一个小视口
+</span></span><span class=line><span class=cl>   ├── 输出到 Card Atlas 对应 UV 区域
+</span></span><span class=line><span class=cl>   └── → Card Atlas Textures
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>3. Card 淘汰 (CPU+GPU)
+</span></span><span class=line><span class=cl>   ├── 不可见 Card: 延迟淘汰 (保留 N 帧)
+</span></span><span class=line><span class=cl>   ├── 被遮挡 Card: 降低精度
+</span></span><span class=line><span class=cl>   └── → Free Atlas Slots</span></span></code></pre></div></div><h3 id=63-card-page-系统>6.3 Card Page 系统</h3><p>借鉴虚拟纹理思想，Card Atlas 使用 Page Table 管理:</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Card Page Table (256×256 pages):
+</span></span><span class=line><span class=cl>┌─────────────────────────────────┐
+</span></span><span class=line><span class=cl>│ Page(0,0)  Page(1,0)  ...      │  ← 每个 Page 指向 Physical Atlas 中的一个区域
+</span></span><span class=line><span class=cl>│ Page(0,1)  ...                 │
+</span></span><span class=line><span class=cl>│ ...                            │
+</span></span><span class=line><span class=cl>└─────────────────────────────────┘
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Physical Atlas (2048×2048 or 4096×4096):
+</span></span><span class=line><span class=cl>  Page Size: 128×128 pixels
+</span></span><span class=line><span class=cl>  Total Pages: 16×16 = 256 (for 2048 Atlas)
+</span></span><span class=line><span class=cl>  或 32×32 = 1024 (for 4096 Atlas)</span></span></code></pre></div></div><h3 id=64-实现文件>6.4 实现文件</h3><table><thead><tr><th>文件</th><th>类型</th><th>职责</th></tr></thead><tbody><tr><td><code>LumenSurfaceCache.h/cpp</code></td><td>C++ RenderPass</td><td>Surface Cache Pass 主控</td></tr><tr><td><code>LumenSurfaceCache.slang</code></td><td>Slang Compute+Vertex+Pixel</td><td>Card 光栅化, Atlas 管理</td></tr><tr><td><code>LumenCardPageManager.h/cpp</code></td><td>C++</td><td>Page Table 管理</td></tr><tr><td><code>LumenCardPageManager.slang</code></td><td>Slang Compute</td><td>Page 分配/回收</td></tr></tbody></table><h3 id=65-接口设计>6.5 接口设计</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cpp"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=k>class</span> <span class=nc>LumenSurfaceCache</span> <span class=o>:</span> <span class=k>public</span> <span class=n>RenderPass</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=k>public</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=k>static</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>LumenSurfaceCache</span><span class=o>&gt;</span> <span class=n>create</span><span class=p>(</span><span class=n>ref</span><span class=o>&lt;</span><span class=n>Device</span><span class=o>&gt;</span> <span class=n>pDevice</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>                                          <span class=k>const</span> <span class=n>Dictionary</span><span class=o>&amp;</span> <span class=n>dict</span> <span class=o>=</span> <span class=p>{});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// RenderPass 标准接口
+</span></span></span><span class=line><span class=cl>    <span class=k>virtual</span> <span class=kt>void</span> <span class=nf>execute</span><span class=p>(</span><span class=n>RenderContext</span><span class=o>*</span> <span class=n>pRenderContext</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>                         <span class=k>const</span> <span class=n>RenderData</span><span class=o>&amp;</span> <span class=n>renderData</span><span class=p>)</span> <span class=k>override</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>virtual</span> <span class=kt>void</span> <span class=nf>renderUI</span><span class=p>(</span><span class=n>Gui</span><span class=o>::</span><span class=n>Widgets</span><span class=o>&amp;</span> <span class=n>widget</span><span class=p>)</span> <span class=k>override</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// Surface Cache 专用接口
+</span></span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=nf>updateCards</span><span class=p>(</span><span class=k>const</span> <span class=n>Scene</span><span class=o>&amp;</span> <span class=n>scene</span><span class=p>,</span> <span class=k>const</span> <span class=n>Camera</span><span class=o>&amp;</span> <span class=n>camera</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;&amp;</span> <span class=n>getCardAtlasAlbedo</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;&amp;</span> <span class=n>getCardAtlasNormal</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;&amp;</span> <span class=n>getCardAtlasDepth</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;&amp;</span> <span class=n>getCardAtlasEmissive</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Buffer</span><span class=o>&gt;&amp;</span> <span class=n>getCardDataBuffer</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>  <span class=c1>// StructuredBuffer&lt;LumenCard&gt;
+</span></span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// 设置
+</span></span></span><span class=line><span class=cl>    <span class=n>uint2</span> <span class=nf>getAtlasResolution</span><span class=p>()</span> <span class=k>const</span> <span class=p>{</span> <span class=k>return</span> <span class=p>{</span><span class=mi>2048</span><span class=p>,</span> <span class=mi>2048</span><span class=p>};</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>uint</span>  <span class=nf>getCardResolution</span><span class=p>()</span> <span class=k>const</span> <span class=p>{</span> <span class=k>return</span> <span class=mi>128</span><span class=p>;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>uint</span>  <span class=nf>getMaxCards</span><span class=p>()</span> <span class=k>const</span> <span class=p>{</span> <span class=k>return</span> <span class=mi>256</span><span class=p>;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>private</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Atlas 纹理
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpCardAtlasAlbedo</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpCardAtlasNormal</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpCardAtlasDepth</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpCardAtlasEmissive</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// Card 元数据
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Buffer</span><span class=o>&gt;</span> <span class=n>mpCardDataBuffer</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Buffer</span><span class=o>&gt;</span> <span class=n>mpCardPageTable</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 追踪状态
+</span></span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>vector</span><span class=o>&lt;</span><span class=n>LumenCard</span><span class=o>&gt;</span> <span class=n>mPendingCards</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>vector</span><span class=o>&lt;</span><span class=n>LumenCard</span><span class=o>&gt;</span> <span class=n>mActiveCards</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>};</span></span></span></code></pre></div></div><h3 id=66-关键着色器伪代码>6.6 关键着色器伪代码</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-slang"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>// LumenSurfaceCache.slang
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>// Card 光栅化入口 (per-card viewport)
+</span></span><span class=line><span class=cl>[shader(&#34;vertex&#34;)]
+</span></span><span class=line><span class=cl>void vsCardRasterize(
+</span></span><span class=line><span class=cl>    uint cardID : SV_InstanceID,
+</span></span><span class=line><span class=cl>    uint vertexID : SV_VertexID,
+</span></span><span class=line><span class=cl>    out float4 svPos : SV_Position,
+</span></span><span class=line><span class=cl>    out float2 uv : TEXCOORD0
+</span></span><span class=line><span class=cl>) {
+</span></span><span class=line><span class=cl>    LumenCard card = gCardData[cardID];
+</span></span><span class=line><span class=cl>    // Render a quad covering the card&#39;s extent
+</span></span><span class=line><span class=cl>    float3 worldPos = card.center 
+</span></span><span class=line><span class=cl>        + card.tangentU * (uv.x - 0.5) * card.extent.x
+</span></span><span class=line><span class=cl>        + card.tangentV * (uv.y - 0.5) * card.extent.y;
+</span></span><span class=line><span class=cl>    svPos = mul(gCameraViewProj, float4(worldPos, 1.0));
+</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>[shader(&#34;pixel&#34;)]
+</span></span><span class=line><span class=cl>void psCardRasterize(
+</span></span><span class=line><span class=cl>    float4 svPos : SV_Position,
+</span></span><span class=line><span class=cl>    float2 uv : TEXCOORD0,
+</span></span><span class=line><span class=cl>    out float4 outAlbedo : SV_Target0,
+</span></span><span class=line><span class=cl>    out float4 outNormal : SV_Target1,
+</span></span><span class=line><span class=cl>    out float  outDepth  : SV_Target2,
+</span></span><span class=line><span class=cl>    out float4 outEmissive : SV_Target3
+</span></span><span class=line><span class=cl>) {
+</span></span><span class=line><span class=cl>    // 采样原始 GBuffer (重投影到原始屏幕)
+</span></span><span class=line><span class=cl>    float2 screenUV = svPos.xy * gScreenResInv;
+</span></span><span class=line><span class=cl>    GBufferData gbuffer = sampleGBuffer(screenUV);
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    outAlbedo = float4(gbuffer.albedo, 1.0);
+</span></span><span class=line><span class=cl>    outNormal = float4(gbuffer.worldNormal * 0.5 + 0.5, 1.0);
+</span></span><span class=line><span class=cl>    outDepth = gbuffer.depth;
+</span></span><span class=line><span class=cl>    outEmissive = float4(gbuffer.emissive, 1.0);
+</span></span><span class=line><span class=cl>}</span></span></code></pre></div></div><hr><h2 id=7-phase-3-screen-probe-gather>7. Phase 3: Screen Probe Gather</h2><h3 id=71-概述>7.1 概述</h3><p>Screen Probe Gather 是 Lumen 的屏幕空间 GI 方案：</p><ul><li>在屏幕像素上自适应放置探针</li><li>每个探针在半球内追踪多条射线</li><li>射线命中后从 Surface Cache 采样光照</li><li>结果积分并降噪</li></ul><h3 id=72-探针放置策略>7.2 探针放置策略</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=err>自适应探针放置</span><span class=p>:</span>
+</span></span><span class=line><span class=cl><span class=err>┌────────────────────────────────────┐</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=mi>16</span><span class=err>×</span><span class=mi>16</span> <span class=n>pixel</span> <span class=n>tiles</span>                <span class=err>│</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=err>┌──┬──┬──┬──┐</span>                    <span class=err>│</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=err>│</span>  <span class=err>│</span>  <span class=err>│</span>  <span class=err>│</span>  <span class=err>│</span>  <span class=err>←</span> <span class=err>每个</span> <span class=n>tile</span> <span class=err>内</span>   <span class=err>│</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=err>├──┼──┼──┼──┤</span>     <span class=err>根据深度</span><span class=o>/</span><span class=err>法线</span>  <span class=err>│</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=err>│</span>  <span class=err>│●</span> <span class=err>│</span>  <span class=err>│●</span> <span class=err>│</span>     <span class=err>变化决定探针数</span>  <span class=err>│</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=err>├──┼──┼──┼──┤</span>                    <span class=err>│</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=err>│●</span> <span class=err>│</span>  <span class=err>│</span>  <span class=err>│</span>  <span class=err>│</span>     <span class=err>均匀区域</span><span class=p>:</span> <span class=mi>1</span> <span class=err>探针│</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=err>├──┼──┼──┼──┤</span>     <span class=err>高频区域</span><span class=p>:</span> <span class=mi>4</span> <span class=err>探针│</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=err>│</span>  <span class=err>│●</span> <span class=err>│</span>  <span class=err>│</span>  <span class=err>│</span>                    <span class=err>│</span>
+</span></span><span class=line><span class=cl><span class=err>│</span>  <span class=err>└──┴──┴──┴──┘</span>                    <span class=err>│</span>
+</span></span><span class=line><span class=cl><span class=err>└────────────────────────────────────┘</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=err>探针密度控制</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>  <span class=o>-</span> <span class=n>Uniform</span><span class=p>:</span> <span class=err>每</span> <span class=mi>16</span><span class=err>×</span><span class=mi>16</span> <span class=err>像素</span> <span class=mi>1</span> <span class=err>个探针</span>
+</span></span><span class=line><span class=cl>  <span class=o>-</span> <span class=n>Adaptive</span><span class=p>:</span> <span class=err>根据</span> <span class=n>depth</span> <span class=n>variance</span> <span class=err>动态调整</span>
+</span></span><span class=line><span class=cl>  <span class=o>-</span> <span class=n>Max</span> <span class=n>probes</span> <span class=n>per</span> <span class=n>frame</span><span class=p>:</span> <span class=o>~</span><span class=mi>16</span><span class=n>K</span> <span class=p>(</span><span class=mi>1080</span><span class=n>p</span><span class=p>),</span> <span class=o>~</span><span class=mi>36</span><span class=n>K</span> <span class=p>(</span><span class=mi>4</span><span class=n>K</span><span class=p>)</span></span></span></code></pre></div></div><h3 id=73-半球追踪>7.3 半球追踪</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>每个探针的追踪:
+</span></span><span class=line><span class=cl>┌─────────────────────┐
+</span></span><span class=line><span class=cl>│ Probe Position      │
+</span></span><span class=line><span class=cl>│ Probe Normal        │
+</span></span><span class=line><span class=cl>│                     │
+</span></span><span class=line><span class=cl>│ 发射 N 条射线:      │
+</span></span><span class=line><span class=cl>│  ────────────       │
+</span></span><span class=line><span class=cl>│  8 rays (低质量)    │
+</span></span><span class=line><span class=cl>│  16 rays (中等)     │
+</span></span><span class=line><span class=cl>│  32 rays (高质量)   │
+</span></span><span class=line><span class=cl>│                     │
+</span></span><span class=line><span class=cl>│ 每条射线:           │
+</span></span><span class=line><span class=cl>│  1. 从探针出发      │
+</span></span><span class=line><span class=cl>│  2. SDF 追踪        │
+</span></span><span class=line><span class=cl>│  3. 命中 → 采样     │
+</span></span><span class=line><span class=cl>│     Surface Cache   │
+</span></span><span class=line><span class=cl>│  4. 未命中 → 采样   │
+</span></span><span class=line><span class=cl>│     Sky/EnvMap      │
+</span></span><span class=line><span class=cl>└─────────────────────┘
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>射线方向: Fibonacci 半球分布
+</span></span><span class=line><span class=cl>最大距离: 根据场景尺度自适应 (默认 200-500 cm)</span></span></code></pre></div></div><h3 id=74-sdf-追踪算法>7.4 SDF 追踪算法</h3><p>使用 UE5 同款的 <strong>Sphere Tracing</strong> (Enhanced):</p><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-slang"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=o>//</span> <span class=n>LumenTracing</span><span class=o>.</span><span class=n>slang</span>
+</span></span><span class=line><span class=cl><span class=n>LumenTraceResult</span> <span class=n>traceDistanceField</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span> <span class=n>rayOrigin</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>float3</span> <span class=n>rayDirection</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=ne>float</span> <span class=n>maxDistance</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=ne>float</span> <span class=n>minHitDistance</span>
+</span></span><span class=line><span class=cl><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>uint</span> <span class=n>MAX_STEPS</span> <span class=o>=</span> <span class=mi>64</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=ne>float</span> <span class=n>CONE_STEP_FACTOR</span> <span class=o>=</span> <span class=mf>1.0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=ne>float</span> <span class=n>t</span> <span class=o>=</span> <span class=mf>0.0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=ne>float</span> <span class=n>lastDist</span> <span class=o>=</span> <span class=mf>0.0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=p>(</span><span class=n>uint</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>MAX_STEPS</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>float3</span> <span class=n>pos</span> <span class=o>=</span> <span class=n>rayOrigin</span> <span class=o>+</span> <span class=n>rayDirection</span> <span class=o>*</span> <span class=n>t</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=o>//</span> <span class=err>采样全局</span> <span class=n>SDF</span> <span class=p>(</span><span class=n>Clipmap</span> <span class=o>+</span> <span class=n>Mip</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=ne>float</span> <span class=n>dist</span> <span class=o>=</span> <span class=n>sampleGlobalSDF</span><span class=p>(</span><span class=n>pos</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=o>//</span> <span class=n>Cone</span> <span class=n>step</span> <span class=n>optimization</span> <span class=p>(</span><span class=n>UE5</span> <span class=err>关键优化</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=o>//</span> <span class=err>距离越远，步进越大</span>
+</span></span><span class=line><span class=cl>        <span class=ne>float</span> <span class=n>stepScale</span> <span class=o>=</span> <span class=mf>1.0</span> <span class=o>+</span> <span class=n>CONE_STEP_FACTOR</span> <span class=o>*</span> <span class=p>(</span><span class=n>t</span> <span class=o>/</span> <span class=n>maxDistance</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>t</span> <span class=o>+=</span> <span class=n>dist</span> <span class=o>*</span> <span class=n>stepScale</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=n>dist</span> <span class=o>&lt;</span> <span class=n>minHitDistance</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=o>//</span> <span class=err>命中</span>
+</span></span><span class=line><span class=cl>            <span class=n>float3</span> <span class=n>hitPos</span> <span class=o>=</span> <span class=n>rayOrigin</span> <span class=o>+</span> <span class=n>rayDirection</span> <span class=o>*</span> <span class=p>(</span><span class=n>t</span> <span class=o>-</span> <span class=n>lastDist</span> <span class=o>*</span> <span class=mf>0.5</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>float3</span> <span class=n>hitNormal</span> <span class=o>=</span> <span class=n>computeSDFNormal</span><span class=p>(</span><span class=n>hitPos</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            
+</span></span><span class=line><span class=cl>            <span class=o>//</span> <span class=err>采样</span> <span class=n>Surface</span> <span class=n>Cache</span>
+</span></span><span class=line><span class=cl>            <span class=n>LumenCardSample</span> <span class=n>cardSample</span> <span class=o>=</span> <span class=n>sampleSurfaceCache</span><span class=p>(</span><span class=n>hitPos</span><span class=p>,</span> <span class=n>hitNormal</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            
+</span></span><span class=line><span class=cl>            <span class=n>LumenTraceResult</span> <span class=n>result</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>result</span><span class=o>.</span><span class=n>hitPosition</span> <span class=o>=</span> <span class=n>hitPos</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>result</span><span class=o>.</span><span class=n>hitNormal</span> <span class=o>=</span> <span class=n>hitNormal</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>result</span><span class=o>.</span><span class=n>hitAlbedo</span> <span class=o>=</span> <span class=n>cardSample</span><span class=o>.</span><span class=n>albedo</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>result</span><span class=o>.</span><span class=n>hitEmissive</span> <span class=o>=</span> <span class=n>cardSample</span><span class=o>.</span><span class=n>emissive</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>result</span><span class=o>.</span><span class=n>hitDistance</span> <span class=o>=</span> <span class=n>t</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>result</span><span class=o>.</span><span class=n>bHit</span> <span class=o>=</span> <span class=bp>true</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>result</span><span class=o>.</span><span class=n>tracingMethod</span> <span class=o>=</span> <span class=n>kDistanceField</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=n>result</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=n>t</span> <span class=o>&gt;</span> <span class=n>maxDistance</span><span class=p>)</span> <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>lastDist</span> <span class=o>=</span> <span class=n>dist</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=o>//</span> <span class=err>未命中</span> <span class=err>→</span> <span class=err>环境光</span>
+</span></span><span class=line><span class=cl>    <span class=n>LumenTraceResult</span> <span class=n>result</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>result</span><span class=o>.</span><span class=n>bHit</span> <span class=o>=</span> <span class=bp>false</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>result</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h3 id=75-实现文件>7.5 实现文件</h3><table><thead><tr><th>文件</th><th>类型</th><th>职责</th></tr></thead><tbody><tr><td><code>LumenScreenProbeGather.h/cpp</code></td><td>C++ RenderPass</td><td>屏幕探针收集 Pass</td></tr><tr><td><code>LumenScreenProbeGather.cs.slang</code></td><td>Slang Compute</td><td>探针放置 + 追踪 + 积分</td></tr><tr><td><code>LumenScreenProbeFilter.cs.slang</code></td><td>Slang Compute</td><td>空间滤波降噪</td></tr><tr><td><code>LumenScreenProbeTemporal.cs.slang</code></td><td>Slang Compute</td><td>时序累积</td></tr></tbody></table><h3 id=76-接口设计>7.6 接口设计</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cpp"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=k>class</span> <span class=nc>LumenScreenProbeGather</span> <span class=o>:</span> <span class=k>public</span> <span class=n>RenderPass</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=k>public</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=k>static</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>LumenScreenProbeGather</span><span class=o>&gt;</span> <span class=n>create</span><span class=p>(</span><span class=n>ref</span><span class=o>&lt;</span><span class=n>Device</span><span class=o>&gt;</span> <span class=n>pDevice</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>virtual</span> <span class=kt>void</span> <span class=nf>execute</span><span class=p>(</span><span class=n>RenderContext</span><span class=o>*</span> <span class=n>pRenderContext</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>                         <span class=k>const</span> <span class=n>RenderData</span><span class=o>&amp;</span> <span class=n>renderData</span><span class=p>)</span> <span class=k>override</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 输出
+</span></span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;&amp;</span> <span class=n>getScreenProbeIrradiance</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;&amp;</span> <span class=n>getScreenProbeHitDistance</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// 设置
+</span></span></span><span class=line><span class=cl>    <span class=n>uint</span> <span class=nf>getNumRaysPerProbe</span><span class=p>()</span> <span class=k>const</span> <span class=p>{</span> <span class=k>return</span> <span class=n>mNumRaysPerProbe</span><span class=p>;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=nf>setNumRaysPerProbe</span><span class=p>(</span><span class=n>uint</span> <span class=n>v</span><span class=p>)</span> <span class=p>{</span> <span class=n>mNumRaysPerProbe</span> <span class=o>=</span> <span class=n>v</span><span class=p>;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>private</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>uint</span> <span class=n>mNumRaysPerProbe</span> <span class=o>=</span> <span class=mi>16</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>float</span> <span class=n>mMaxTraceDistance</span> <span class=o>=</span> <span class=mf>500.0f</span><span class=p>;</span> <span class=c1>// cm
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpScreenProbeIrradiance</span><span class=p>;</span> <span class=c1>// RGBA16F
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpScreenProbeHitDistance</span><span class=p>;</span> <span class=c1>// R16F
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpHistoryIrradiance</span><span class=p>;</span> <span class=c1>// For temporal
+</span></span></span><span class=line><span class=cl><span class=p>};</span></span></span></code></pre></div></div><hr><h2 id=8-phase-4-radiance-cache>8. Phase 4: Radiance Cache</h2><h3 id=81-概述>8.1 概述</h3><p>Radiance Cache 是世界空间的 3D 探针网格，弥补屏幕空间 GI 的不足：</p><ul><li>覆盖屏幕外/被遮挡区域</li><li>跨帧持久化，提供稳定低频 GI</li><li>探针存储球谐系数 (SH) 表示入射辐照度</li></ul><h3 id=82-探针网格设计>8.2 探针网格设计</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>世界空间探针网格:
+</span></span><span class=line><span class=cl>┌─────────────────────────────────────────┐
+</span></span><span class=line><span class=cl>│  Clip 0 (最密): 覆盖摄像机周围          │
+</span></span><span class=line><span class=cl>│  ┌───┬───┬───┬───┐                      │
+</span></span><span class=line><span class=cl>│  │ ● │ ● │ ● │ ● │  Cell Size: ~200 cm  │
+</span></span><span class=line><span class=cl>│  ├───┼───┼───┼───┤  探针间隔: ~400 cm   │
+</span></span><span class=line><span class=cl>│  │ ● │ ● │ ● │ ● │                      │
+</span></span><span class=line><span class=cl>│  ├───┼───┼───┼───┤                      │
+</span></span><span class=line><span class=cl>│  │ ● │ ● │ ● │ ● │                      │
+</span></span><span class=line><span class=cl>│  └───┴───┴───┴───┘                      │
+</span></span><span class=line><span class=cl>│                                          │
+</span></span><span class=line><span class=cl>│  Clip 1 (较疏): 覆盖更远区域             │
+</span></span><span class=line><span class=cl>│  Cell Size: ~400 cm, 间隔: ~800 cm      │
+</span></span><span class=line><span class=cl>│                                          │
+</span></span><span class=line><span class=cl>│  Clip 2 (最疏): 覆盖整个场景             │
+</span></span><span class=line><span class=cl>│  Cell Size: ~800 cm, 间隔: ~1600 cm     │
+</span></span><span class=line><span class=cl>└─────────────────────────────────────────┘
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>每个探针存储:
+</span></span><span class=line><span class=cl>  float3 SH[9]  (9 × float3 = 27 floats, 108 bytes)
+</span></span><span class=line><span class=cl>  或 Second Order SH: float3 SH[16] (更好的高频细节)
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>网格大小 (典型):
+</span></span><span class=line><span class=cl>  Clip 0: 32×32×16 = 16,384 probes
+</span></span><span class=line><span class=cl>  Clip 1: 16×16×8  =  2,048 probes
+</span></span><span class=line><span class=cl>  Clip 2: 8×8×4    =    256 probes
+</span></span><span class=line><span class=cl>  Total: ~18,688 probes × 108 bytes ≈ 2 MB</span></span></code></pre></div></div><h3 id=83-探针更新策略>8.3 探针更新策略</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>每帧更新流程:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>1. 探针标记 (GPU Compute)
+</span></span><span class=line><span class=cl>   ├── 摄像机动了 → 新探针需要追踪
+</span></span><span class=line><span class=cl>   ├── 光照变化 → 受影响的探针标记脏
+</span></span><span class=line><span class=cl>   ├── 时间限制: 每帧最多追踪 N 个探针
+</span></span><span class=line><span class=cl>   └── → Probe Update List
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>2. 探针追踪 (GPU Compute)
+</span></span><span class=line><span class=cl>   ├── 每个探针: 64-256 条射线半球追踪
+</span></span><span class=line><span class=cl>   ├── 追踪方法: SDF (默认) 或 HW RT (可选)
+</span></span><span class=line><span class=cl>   ├── 命中 → 采样 Surface Cache
+</span></span><span class=line><span class=cl>   └── → 入射辐照度 (每个方向)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>3. SH 投影 (GPU Compute)
+</span></span><span class=line><span class=cl>   ├── 将半球采样结果投影到 SH 基
+</span></span><span class=line><span class=cl>   ├── 与上一帧 SH 混合 (历史权重: ~0.8)
+</span></span><span class=line><span class=cl>   └── → Final SH Coefficients
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>4. 探针插值 (Pixel Shader / Compute)
+</span></span><span class=line><span class=cl>   ├── 对每个屏幕像素: 找周围 8 个探针
+</span></span><span class=line><span class=cl>   ├── 三线性插值 SH 系数
+</span></span><span class=line><span class=cl>   └── → Per-Pixel Indirect Irradiance</span></span></code></pre></div></div><h3 id=84-与-screen-probe-gather-的融合>8.4 与 Screen Probe Gather 的融合</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>最终 Diffuse GI:
+</span></span><span class=line><span class=cl>┌──────────────────────┐   ┌──────────────────────┐
+</span></span><span class=line><span class=cl>│ Screen Probe Gather  │   │ Radiance Cache        │
+</span></span><span class=line><span class=cl>│ (高频, 有屏幕边界)   │   │ (低频, 无屏幕边界)   │
+</span></span><span class=line><span class=cl>└────────┬─────────────┘   └──────────┬───────────┘
+</span></span><span class=line><span class=cl>         │                            │
+</span></span><span class=line><span class=cl>         │  根据距离混合:             │
+</span></span><span class=line><span class=cl>         │  weight_screen = smoothstep(│
+</span></span><span class=line><span class=cl>         │    nearPlane, farPlane,     │
+</span></span><span class=line><span class=cl>         │    hitDistance)             │
+</span></span><span class=line><span class=cl>         │                            │
+</span></span><span class=line><span class=cl>         └────────┬───────────────────┘
+</span></span><span class=line><span class=cl>                  ▼
+</span></span><span class=line><span class=cl>         ┌──────────────────────┐
+</span></span><span class=line><span class=cl>         │ Final Diffuse GI     │
+</span></span><span class=line><span class=cl>         │ (混合 + 时序累积)    │
+</span></span><span class=line><span class=cl>         └──────────────────────┘</span></span></code></pre></div></div><h3 id=85-实现文件>8.5 实现文件</h3><table><thead><tr><th>文件</th><th>类型</th><th>职责</th></tr></thead><tbody><tr><td><code>LumenRadianceCache.h/cpp</code></td><td>C++ RenderPass</td><td>Radiance Cache Pass 主控</td></tr><tr><td><code>LumenRadianceCache.cs.slang</code></td><td>Slang Compute</td><td>探针追踪 + SH 投影</td></tr><tr><td><code>LumenRadianceCacheUpdate.cs.slang</code></td><td>Slang Compute</td><td>探针标记与调度</td></tr><tr><td><code>LumenRadianceCacheInterpolate.cs.slang</code></td><td>Slang Compute</td><td>探针三线性插值</td></tr></tbody></table><h3 id=86-接口设计>8.6 接口设计</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cpp"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=k>class</span> <span class=nc>LumenRadianceCache</span> <span class=o>:</span> <span class=k>public</span> <span class=n>RenderPass</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=k>public</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=k>static</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>LumenRadianceCache</span><span class=o>&gt;</span> <span class=n>create</span><span class=p>(</span><span class=n>ref</span><span class=o>&lt;</span><span class=n>Device</span><span class=o>&gt;</span> <span class=n>pDevice</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=k>virtual</span> <span class=kt>void</span> <span class=nf>execute</span><span class=p>(</span><span class=n>RenderContext</span><span class=o>*</span> <span class=n>pRenderContext</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>                         <span class=k>const</span> <span class=n>RenderData</span><span class=o>&amp;</span> <span class=n>renderData</span><span class=p>)</span> <span class=k>override</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 获取辐照度数据
+</span></span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Buffer</span><span class=o>&gt;&amp;</span> <span class=n>getRadianceProbeBuffer</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;&amp;</span> <span class=n>getProbeIndirectionTexture</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span> <span class=c1>// 3D R32UI
+</span></span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 插值结果 (per-pixel irradiance)
+</span></span></span><span class=line><span class=cl>    <span class=k>const</span> <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;&amp;</span> <span class=n>getFinalIrradiance</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 设置
+</span></span></span><span class=line><span class=cl>    <span class=n>uint3</span> <span class=nf>getClip0Resolution</span><span class=p>()</span> <span class=k>const</span> <span class=p>{</span> <span class=k>return</span> <span class=p>{</span><span class=mi>32</span><span class=p>,</span> <span class=mi>32</span><span class=p>,</span> <span class=mi>16</span><span class=p>};</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=kt>float</span> <span class=nf>getProbeSpacing</span><span class=p>()</span> <span class=k>const</span> <span class=p>{</span> <span class=k>return</span> <span class=mf>400.0f</span><span class=p>;</span> <span class=p>}</span> <span class=c1>// cm
+</span></span></span><span class=line><span class=cl>    <span class=n>uint</span>  <span class=nf>getNumProbeRays</span><span class=p>()</span> <span class=k>const</span> <span class=p>{</span> <span class=k>return</span> <span class=mi>128</span><span class=p>;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>private</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// 探针数据
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Buffer</span><span class=o>&gt;</span> <span class=n>mpProbeSHBuffer</span><span class=p>;</span>           <span class=c1>// StructuredBuffer&lt;float3[9]&gt;
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpProbeIndirectionTexture</span><span class=p>;</span> <span class=c1>// 3D R32UI (probe index or INVALID)
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Buffer</span><span class=o>&gt;</span> <span class=n>mpProbeWorldPositions</span><span class=p>;</span>      <span class=c1>// StructuredBuffer&lt;float3&gt;
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Buffer</span><span class=o>&gt;</span> <span class=n>mpProbeUpdateList</span><span class=p>;</span>          <span class=c1>// Indirect dispatch args
+</span></span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 输出
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpIrradianceTexture</span><span class=p>;</span>       <span class=c1>// RGBA16F (per-pixel)
+</span></span></span><span class=line><span class=cl>    <span class=n>ref</span><span class=o>&lt;</span><span class=n>Texture</span><span class=o>&gt;</span> <span class=n>mpHistoryIrradiance</span><span class=p>;</span>       <span class=c1>// For temporal
+</span></span></span><span class=line><span class=cl><span class=p>};</span></span></span></code></pre></div></div><hr><h2 id=9-phase-5-反射系统>9. Phase 5: 反射系统</h2><h3 id=91-概述>9.1 概述</h3><p>Lumen Reflections 提供高质量镜面反射，同样使用多层级追踪策略：</p><ol><li><strong>屏幕空间追踪</strong> (SSR) → 最快</li><li><strong>距离场追踪</strong> → 回退方案</li><li><strong>硬件光追</strong> → 最高质量回退</li></ol><h3 id=92-追踪流程>9.2 追踪流程</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>每个像素的反射追踪:
+</span></span><span class=line><span class=cl>┌─────────────────────────────────────┐
+</span></span><span class=line><span class=cl>│ 输入: GBuffer (Normal, Roughness)   │
+</span></span><span class=line><span class=cl>│                                     │
+</span></span><span class=line><span class=cl>│ if (roughness &gt; threshold)         │
+</span></span><span class=line><span class=cl>│     skip (粗糙表面用 Diffuse GI)    │
+</span></span><span class=line><span class=cl>│                                     │
+</span></span><span class=line><span class=cl>│ Step 1: Screen-Space Trace         │
+</span></span><span class=line><span class=cl>│   ├── Hi-Z Buffer 加速             │
+</span></span><span class=line><span class=cl>│   ├── 命中 → 采样颜色              │
+</span></span><span class=line><span class=cl>│   └── 未命中 → Step 2              │
+</span></span><span class=line><span class=cl>│                                     │
+</span></span><span class=line><span class=cl>│ Step 2: Distance Field Trace       │
+</span></span><span class=line><span class=cl>│   ├── Global SDF 追踪              │
+</span></span><span class=line><span class=cl>│   ├── 命中 → 采样 Surface Cache    │
+</span></span><span class=line><span class=cl>│   ├── 采样 Radiance Cache          │
+</span></span><span class=line><span class=cl>│   └── 未命中 → Step 3 / Sky        │
+</span></span><span class=line><span class=cl>│                                     │
+</span></span><span class=line><span class=cl>│ Step 3: Hardware Ray Trace (可选)  │
+</span></span><span class=line><span class=cl>│   ├── DXR TraceRay                 │
+</span></span><span class=line><span class=cl>│   ├── 命中 → 采样 Surface Cache    │
+</span></span><span class=line><span class=cl>│   └── 未命中 → Sky/EnvMap          │
+</span></span><span class=line><span class=cl>│                                     │
+</span></span><span class=line><span class=cl>│ Step 4: Temporal Filter + Denoise  │
+</span></span><span class=line><span class=cl>│   └── NRD / Custom Denoiser        │
+</span></span><span class=line><span class=cl>└─────────────────────────────────────┘</span></span></code></pre></div></div><h3 id=93-屏幕空间追踪-hi-z>9.3 屏幕空间追踪 (Hi-Z)</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-slang"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>// 基于 Hi-Z 的屏幕空间反射追踪
+</span></span><span class=line><span class=cl>float2 traceScreenSpaceReflection(
+</span></span><span class=line><span class=cl>    float3 rayOriginView,
+</span></span><span class=line><span class=cl>    float3 rayDirectionView,
+</span></span><span class=line><span class=cl>    float maxSteps
+</span></span><span class=line><span class=cl>) {
+</span></span><span class=line><span class=cl>    // Hi-Z 加速: 每步跳过多个像素
+</span></span><span class=line><span class=cl>    float t = 0.02;
+</span></span><span class=line><span class=cl>    uint mipLevel = 0;
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    for (uint i = 0; i &lt; maxSteps; i++) {
+</span></span><span class=line><span class=cl>        float3 samplePos = rayOriginView + rayDirectionView * t;
+</span></span><span class=line><span class=cl>        float2 uv = viewToScreen(samplePos);
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        if (any(uv &lt; 0) || any(uv &gt; 1)) break; // 出屏幕
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        float sampleDepth = gHiZ.SampleLevel(gSampler, uv, mipLevel);
+</span></span><span class=line><span class=cl>        float surfaceDepth = samplePos.z;
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        if (surfaceDepth &gt; sampleDepth) {
+</span></span><span class=line><span class=cl>            // 在表面后面 → 缩小步长
+</span></span><span class=line><span class=cl>            if (mipLevel &gt; 0) {
+</span></span><span class=line><span class=cl>                mipLevel--;
+</span></span><span class=line><span class=cl>                t -= rayDirectionView.z * cellSize(mipLevel);
+</span></span><span class=line><span class=cl>            } else {
+</span></span><span class=line><span class=cl>                // 最精细 mip, 二分搜索
+</span></span><span class=line><span class=cl>                return uv;
+</span></span><span class=line><span class=cl>            }
+</span></span><span class=line><span class=cl>        } else {
+</span></span><span class=line><span class=cl>            mipLevel = min(mipLevel + 1, MAX_MIP);
+</span></span><span class=line><span class=cl>            t += rayDirectionView.z * cellSize(mipLevel);
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    return float2(-1, -1); // 未命中
+</span></span><span class=line><span class=cl>}</span></span></code></pre></div></div><h3 id=94-实现文件>9.4 实现文件</h3><table><thead><tr><th>文件</th><th>类型</th><th>职责</th></tr></thead><tbody><tr><td><code>LumenReflections.h/cpp</code></td><td>C++ RenderPass</td><td>反射 Pass 主控</td></tr><tr><td><code>LumenReflections.cs.slang</code></td><td>Slang Compute</td><td>分层追踪 (SSR→SDF→HW)</td></tr><tr><td><code>LumenReflectionDenoise.cs.slang</code></td><td>Slang Compute</td><td>反射降噪</td></tr><tr><td><code>LumenHiZ.cs.slang</code></td><td>Slang Compute</td><td>Hi-Z 金字塔生成</td></tr></tbody></table><hr><h2 id=10-phase-6-硬件光追集成-dxr-backend>10. Phase 6: 硬件光追集成 (DXR Backend)</h2><h3 id=101-概述>10.1 概述</h3><p>利用 Falcor 已有的 DXR 基础设施，为 Lumen 提供最高质量的追踪回退。</p><h3 id=102-集成方案>10.2 集成方案</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>DXR 后端架构:
+</span></span><span class=line><span class=cl>┌──────────────────────────────────────────┐
+</span></span><span class=line><span class=cl>│ LumenRayTracing.h/cpp (新)              │
+</span></span><span class=line><span class=cl>│ ─────────────────────────────            │
+</span></span><span class=line><span class=cl>│ - 封装 Falcor RtStateObject             │
+</span></span><span class=line><span class=cl>│ - 管理 TLAS/BLAS (复用 Scene 中的)      │
+</span></span><span class=line><span class=cl>│ - 提供 &#34;Lumen Ray Gen&#34; Shader           │
+</span></span><span class=line><span class=cl>│ - 可选的 Surface Cache 采样             │
+</span></span><span class=line><span class=cl>└──────────────┬───────────────────────────┘
+</span></span><span class=line><span class=cl>               │
+</span></span><span class=line><span class=cl>               ▼
+</span></span><span class=line><span class=cl>┌──────────────────────────────────────────┐
+</span></span><span class=line><span class=cl>│ LumenHardwareRayTracing.rt.slang (新)    │
+</span></span><span class=line><span class=cl>│ ─────────────────────────────────        │
+</span></span><span class=line><span class=cl>│ RayGeneration Shader:                    │
+</span></span><span class=line><span class=cl>│   - GI Rays (diffuse hemisphere)         │
+</span></span><span class=line><span class=cl>│   - Reflection Rays (specular)           │
+</span></span><span class=line><span class=cl>│   - Shadow Rays (visibility)             │
+</span></span><span class=line><span class=cl>│                                          │
+</span></span><span class=line><span class=cl>│ ClosestHit Shader:                       │
+</span></span><span class=line><span class=cl>│   - 采样 Surface Cache (替代实际材质)    │
+</span></span><span class=line><span class=cl>│   - 返回 Albedo + Emissive              │
+</span></span><span class=line><span class=cl>│                                          │
+</span></span><span class=line><span class=cl>│ Miss Shader:                             │
+</span></span><span class=line><span class=cl>│   - 采样 Sky/EnvMap                      │
+</span></span><span class=line><span class=cl>└──────────────────────────────────────────┘</span></span></code></pre></div></div><h3 id=103-追踪方法选择逻辑>10.3 追踪方法选择逻辑</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cpp"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// 每帧自动选择追踪方法
+</span></span></span><span class=line><span class=cl><span class=n>TracingMethod</span> <span class=nf>selectTracingMethod</span><span class=p>(</span><span class=k>const</span> <span class=n>LumenSettings</span><span class=o>&amp;</span> <span class=n>settings</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>settings</span><span class=p>.</span><span class=n>forceMethod</span> <span class=o>!=</span> <span class=n>kAuto</span><span class=p>)</span> 
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>settings</span><span class=p>.</span><span class=n>forceMethod</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// 从高到低尝试
+</span></span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>isHardwareRTSupported</span><span class=p>()</span> <span class=o>&amp;&amp;</span> 
+</span></span><span class=line><span class=cl>        <span class=n>settings</span><span class=p>.</span><span class=n>useHardwareRT</span> <span class=o>&amp;&amp;</span> 
+</span></span><span class=line><span class=cl>        <span class=o>!</span><span class=n>isHighQualityMode</span><span class=p>())</span> 
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// 高质量模式优先用 HW RT
+</span></span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>kHardwareRT</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>isDistanceFieldReady</span><span class=p>())</span> 
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>kDistanceField</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>kScreenSpace</span><span class=p>;</span> <span class=c1>// Fallback
+</span></span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// 混合模式: 近处 HW RT, 远处 SDF
+</span></span></span><span class=line><span class=cl><span class=kt>float</span> <span class=nf>getTracingMethodForDistance</span><span class=p>(</span><span class=kt>float</span> <span class=n>distance</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>distance</span> <span class=o>&lt;</span> <span class=n>kNearFieldThreshold</span><span class=p>)</span> 
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>kHardwareRT</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span> 
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>kDistanceField</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h3 id=104-实现文件>10.4 实现文件</h3><table><thead><tr><th>文件</th><th>类型</th><th>职责</th></tr></thead><tbody><tr><td><code>LumenHardwareRayTracing.h/cpp</code></td><td>C++</td><td>DXR 后端管理</td></tr><tr><td><code>LumenHardwareRayTracing.rt.slang</code></td><td>Slang RT</td><td>RayGen/ClosestHit/Miss Shaders</td></tr><tr><td><code>LumenHardwareRayTracingUtils.slang</code></td><td>Slang</td><td>共享 SH 投影/采样工具</td></tr></tbody></table><hr><h2 id=11-phase-7-集成与优化>11. Phase 7: 集成与优化</h2><h3 id=111-与现有管线的集成>11.1 与现有管线的集成</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>PBRTOfflineRenderer 管线修改:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Frame Sequence (修改后):
+</span></span><span class=line><span class=cl>┌─ CPU: Load scene, update cameras, build task graph
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Shadow Depth Pass (不变)
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Depth Prepass (不变)
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: GBuffer Render (扩展)
+</span></span><span class=line><span class=cl>│  └─ 额外输出: Emissive Buffer (R11G11B10F)
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Lumen Surface Cache Update ★新增
+</span></span><span class=line><span class=cl>│  ├─ Card Selection
+</span></span><span class=line><span class=cl>│  ├─ Card Rasterize → Card Atlas
+</span></span><span class=line><span class=cl>│  └─ Card Data Output
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Lumen Mesh SDF Update ★新增 (async/按需)
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Lumen Global SDF Update ★新增
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Lumen Screen Probe Gather ★新增
+</span></span><span class=line><span class=cl>│  ├─ Probe Placement
+</span></span><span class=line><span class=cl>│  ├─ Distance Field Trace
+</span></span><span class=line><span class=cl>│  └─ Card Atlas Sampling
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Lumen Radiance Cache Update ★新增
+</span></span><span class=line><span class=cl>│  ├─ Probe Marking
+</span></span><span class=line><span class=cl>│  ├─ Probe Trace + SH Project
+</span></span><span class=line><span class=cl>│  └─ Per-Pixel Interpolation
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Lumen Reflections ★新增
+</span></span><span class=line><span class=cl>│  ├─ Hi-Z Build
+</span></span><span class=line><span class=cl>│  ├─ Multi-Level Trace
+</span></span><span class=line><span class=cl>│  └─ Denoise
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Lumen Final Lighting Composite ★新增
+</span></span><span class=line><span class=cl>│  ├─ Direct Light (RTXDI)
+</span></span><span class=line><span class=cl>│  ├─ + Diffuse GI (Screen Probe + Radiance Cache)
+</span></span><span class=line><span class=cl>│  ├─ + Specular GI (Reflections)
+</span></span><span class=line><span class=cl>│  └─ → HDR Color Buffer
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>├─ GPU: Post-Processing (修改)
+</span></span><span class=line><span class=cl>│  ├─ Shadow Evaluation (不变)
+</span></span><span class=line><span class=cl>│  ├─ SSAO (可降级/禁用, Lumen 已提供 AO)
+</span></span><span class=line><span class=cl>│  ├─ Bloom, DoF, ColorGrading (不变)
+</span></span><span class=line><span class=cl>│  └─ TAA/FXAA (不变)
+</span></span><span class=line><span class=cl>│
+</span></span><span class=line><span class=cl>└─ Frame Display</span></span></code></pre></div></div><h3 id=112-rendergraph-配置示例>11.2 RenderGraph 配置示例</h3><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cpp"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// PBRTOfflineRenderer.cpp 修改
+</span></span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>PBRTOfflineRenderer</span><span class=o>::</span><span class=n>onFrameRender</span><span class=p>(</span><span class=n>RenderContext</span><span class=o>*</span> <span class=n>pRenderContext</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>                                         <span class=k>const</span> <span class=n>Fbo</span><span class=o>::</span><span class=n>SharedPtr</span><span class=o>&amp;</span> <span class=n>pTargetFbo</span><span class=p>)</span> 
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// ... existing setup ...
+</span></span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>mLumenEnabled</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// ★新增 Lumen Passes
+</span></span></span><span class=line><span class=cl>        <span class=n>renderGraph</span><span class=o>-&gt;</span><span class=n>addPass</span><span class=p>(</span><span class=s>&#34;LumenSurfaceCache&#34;</span><span class=p>,</span> <span class=s>&#34;LumenSurfaceCache&#34;</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>            <span class=p>[](</span><span class=n>RenderPass</span><span class=o>&amp;</span> <span class=n>pass</span><span class=p>,</span> <span class=k>const</span> <span class=n>RenderData</span><span class=o>&amp;</span> <span class=n>renderData</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=c1>// Input: GBuffer textures
+</span></span></span><span class=line><span class=cl>                <span class=c1>// Output: Card Atlas textures
+</span></span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;gbuffer_albedo&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;gbuffer_normal&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;gbuffer_depth&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addOutput</span><span class=p>(</span><span class=s>&#34;card_atlas_albedo&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addOutput</span><span class=p>(</span><span class=s>&#34;card_atlas_normal&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addOutput</span><span class=p>(</span><span class=s>&#34;card_atlas_depth&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addOutput</span><span class=p>(</span><span class=s>&#34;card_data_buffer&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=p>});</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=n>renderGraph</span><span class=o>-&gt;</span><span class=n>addPass</span><span class=p>(</span><span class=s>&#34;LumenScreenProbeGather&#34;</span><span class=p>,</span> <span class=s>&#34;LumenScreenProbeGather&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>            <span class=p>[](</span><span class=n>RenderPass</span><span class=o>&amp;</span> <span class=n>pass</span><span class=p>,</span> <span class=k>const</span> <span class=n>RenderData</span><span class=o>&amp;</span> <span class=n>renderData</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;card_atlas_albedo&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;card_atlas_normal&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;global_sdf&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addOutput</span><span class=p>(</span><span class=s>&#34;screen_probe_irradiance&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=p>});</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=n>renderGraph</span><span class=o>-&gt;</span><span class=n>addPass</span><span class=p>(</span><span class=s>&#34;LumenRadianceCache&#34;</span><span class=p>,</span> <span class=s>&#34;LumenRadianceCache&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>            <span class=p>[](</span><span class=n>RenderPass</span><span class=o>&amp;</span> <span class=n>pass</span><span class=p>,</span> <span class=k>const</span> <span class=n>RenderData</span><span class=o>&amp;</span> <span class=n>renderData</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;card_atlas_albedo&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;global_sdf&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addOutput</span><span class=p>(</span><span class=s>&#34;radiance_cache_sh&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addOutput</span><span class=p>(</span><span class=s>&#34;per_pixel_irradiance&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=p>});</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=n>renderGraph</span><span class=o>-&gt;</span><span class=n>addPass</span><span class=p>(</span><span class=s>&#34;LumenReflections&#34;</span><span class=p>,</span> <span class=s>&#34;LumenReflections&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>            <span class=p>[](</span><span class=n>RenderPass</span><span class=o>&amp;</span> <span class=n>pass</span><span class=p>,</span> <span class=k>const</span> <span class=n>RenderData</span><span class=o>&amp;</span> <span class=n>renderData</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;card_atlas_albedo&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;global_sdf&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;hiz_buffer&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addOutput</span><span class=p>(</span><span class=s>&#34;reflection_color&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=p>});</span>
+</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>        <span class=n>renderGraph</span><span class=o>-&gt;</span><span class=n>addPass</span><span class=p>(</span><span class=s>&#34;LumenComposite&#34;</span><span class=p>,</span> <span class=s>&#34;LumenSceneLighting&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>            <span class=p>[](</span><span class=n>RenderPass</span><span class=o>&amp;</span> <span class=n>pass</span><span class=p>,</span> <span class=k>const</span> <span class=n>RenderData</span><span class=o>&amp;</span> <span class=n>renderData</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;direct_lighting&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;screen_probe_irradiance&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;per_pixel_irradiance&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addInput</span><span class=p>(</span><span class=s>&#34;reflection_color&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>pass</span><span class=p>.</span><span class=n>addOutput</span><span class=p>(</span><span class=s>&#34;final_lighting&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=c1>// ... existing post-processing ...
+</span></span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h3 id=113-性能优化策略>11.3 性能优化策略</h3><table><thead><tr><th>优化</th><th>方法</th><th>预期收益</th></tr></thead><tbody><tr><td><strong>Card LOD</strong></td><td>远处使用低精度 Card (64²), 近处 128²</td><td>~30% Card Atlas 节省</td></tr><tr><td><strong>自适应探针密度</strong></td><td>平坦区域少探针, 高频区域多探针</td><td>~40% 探针数减少</td></tr><tr><td><strong>时序累积</strong></td><td>探针结果跨帧混合 (历史权重 0.7-0.9)</td><td>~50% 每帧射线减少</td></tr><tr><td><strong>SDF Mip</strong></td><td>远处使用低精度 SDF Mip</td><td>~3× 追踪速度提升</td></tr><tr><td><strong>Cone Tracing</strong></td><td>SDF 追踪使用锥形步进</td><td>~2× 步数减少</td></tr><tr><td><strong>异步 Compute</strong></td><td>SDF 更新在 Async Compute Queue</td><td>隐藏延迟</td></tr><tr><td><strong>NRD 集成</strong></td><td>复用已有 NRD 降噪</td><td>免费获得高质量降噪</td></tr><tr><td><strong>Half-Res</strong></td><td>探针/反射在半分辨率计算</td><td>~4× 像素减少</td></tr></tbody></table><h3 id=114-调试与可视化>11.4 调试与可视化</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cpp"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// LumenVisualize Pass
+</span></span></span><span class=line><span class=cl><span class=k>enum</span> <span class=k>class</span> <span class=nc>LumenVisualizeMode</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>kNone</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>kSurfaceCacheCards</span><span class=p>,</span>     <span class=c1>// 显示 Card 边界
+</span></span></span><span class=line><span class=cl>    <span class=n>kSurfaceCacheAlbedo</span><span class=p>,</span>    <span class=c1>// 显示 Card Atlas
+</span></span></span><span class=line><span class=cl>    <span class=n>kMeshSDF</span><span class=p>,</span>               <span class=c1>// 显示 Mesh SDF 切片
+</span></span></span><span class=line><span class=cl>    <span class=n>kGlobalSDF</span><span class=p>,</span>             <span class=c1>// 显示 Global SDF 切片
+</span></span></span><span class=line><span class=cl>    <span class=n>kScreenProbes</span><span class=p>,</span>          <span class=c1>// 显示屏幕探针位置
+</span></span></span><span class=line><span class=cl>    <span class=n>kScreenProbeIrradiance</span><span class=p>,</span> <span class=c1>// 显示探针积分结果
+</span></span></span><span class=line><span class=cl>    <span class=n>kRadianceCache</span><span class=p>,</span>         <span class=c1>// 显示世界探针网格
+</span></span></span><span class=line><span class=cl>    <span class=n>kReflections</span><span class=p>,</span>           <span class=c1>// 显示反射结果
+</span></span></span><span class=line><span class=cl>    <span class=n>kTracingMethod</span><span class=p>,</span>         <span class=c1>// 显示追踪方法 (颜色编码)
+</span></span></span><span class=line><span class=cl>    <span class=n>kNumModes</span>
+</span></span><span class=line><span class=cl><span class=p>};</span></span></span></code></pre></div></div><hr><h2 id=12-文件清单>12. 文件清单</h2><h3 id=121-新建文件-c>12.1 新建文件 (C++)</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Source/Falcor/Rendering/Lumen/
+</span></span><span class=line><span class=cl>├── LumenTypes.h                          # 共享数据类型定义
+</span></span><span class=line><span class=cl>├── LumenSettings.h                       # 全局配置参数
+</span></span><span class=line><span class=cl>├── LumenCard.h                           # Card 数据结构
+</span></span><span class=line><span class=cl>├── LumenCard.cpp
+</span></span><span class=line><span class=cl>├── LumenMeshSDF.h                        # Mesh SDF 管理
+</span></span><span class=line><span class=cl>├── LumenMeshSDF.cpp
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Source/RenderPasses/Lumen/
+</span></span><span class=line><span class=cl>├── LumenSurfaceCache/
+</span></span><span class=line><span class=cl>│   ├── LumenSurfaceCache.h               # Surface Cache Pass
+</span></span><span class=line><span class=cl>│   ├── LumenSurfaceCache.cpp
+</span></span><span class=line><span class=cl>│   ├── LumenCardPageManager.h            # Card Page 管理
+</span></span><span class=line><span class=cl>│   └── LumenCardPageManager.cpp
+</span></span><span class=line><span class=cl>├── LumenMeshSDF/
+</span></span><span class=line><span class=cl>│   ├── LumenMeshSDFPass.h                # Mesh SDF Pass (RenderPass 封装)
+</span></span><span class=line><span class=cl>│   └── LumenMeshSDFPass.cpp
+</span></span><span class=line><span class=cl>├── LumenGlobalSDF/
+</span></span><span class=line><span class=cl>│   ├── LumenGlobalSDFPass.h              # Global SDF Pass
+</span></span><span class=line><span class=cl>│   └── LumenGlobalSDFPass.cpp
+</span></span><span class=line><span class=cl>├── LumenScreenProbeGather/
+</span></span><span class=line><span class=cl>│   ├── LumenScreenProbeGather.h          # Screen Probe Gather Pass
+</span></span><span class=line><span class=cl>│   └── LumenScreenProbeGather.cpp
+</span></span><span class=line><span class=cl>├── LumenRadianceCache/
+</span></span><span class=line><span class=cl>│   ├── LumenRadianceCache.h              # Radiance Cache Pass
+</span></span><span class=line><span class=cl>│   └── LumenRadianceCache.cpp
+</span></span><span class=line><span class=cl>├── LumenReflections/
+</span></span><span class=line><span class=cl>│   ├── LumenReflections.h                # Reflections Pass
+</span></span><span class=line><span class=cl>│   └── LumenReflections.cpp
+</span></span><span class=line><span class=cl>├── LumenSceneLighting/
+</span></span><span class=line><span class=cl>│   ├── LumenSceneLighting.h              # Final Composite Pass
+</span></span><span class=line><span class=cl>│   └── LumenSceneLighting.cpp
+</span></span><span class=line><span class=cl>├── LumenHardwareRayTracing/
+</span></span><span class=line><span class=cl>│   ├── LumenHardwareRayTracing.h         # DXR 后端
+</span></span><span class=line><span class=cl>│   └── LumenHardwareRayTracing.cpp
+</span></span><span class=line><span class=cl>└── LumenVisualize/
+</span></span><span class=line><span class=cl>    ├── LumenVisualize.h                  # Debug 可视化
+</span></span><span class=line><span class=cl>    └── LumenVisualize.cpp</span></span></code></pre></div></div><h3 id=122-新建文件-slang-着色器>12.2 新建文件 (Slang 着色器)</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Source/Shaders/Lumen/
+</span></span><span class=line><span class=cl>├── LumenTypes.slang                      # GPU 端数据类型
+</span></span><span class=line><span class=cl>├── LumenCard.slang                       # Card 结构 &amp; 采样
+</span></span><span class=line><span class=cl>├── LumenTracing.slang                    # 统一追踪接口
+</span></span><span class=line><span class=cl>├── LumenUtils.slang                      # 共享工具函数 (SH, Sampling, etc.)
+</span></span><span class=line><span class=cl>├── LumenSurfaceCache.slang               # Card 光栅化 &amp; Atlas 管理
+</span></span><span class=line><span class=cl>├── LumenSurfaceCachePageManager.cs.slang # Page Table 管理
+</span></span><span class=line><span class=cl>├── LumenMeshSDF.cs.slang                 # Mesh SDF JFA 生成
+</span></span><span class=line><span class=cl>├── LumenGlobalSDF.cs.slang               # Global SDF 合并 &amp; 追踪
+</span></span><span class=line><span class=cl>├── LumenScreenProbeGather.cs.slang       # 屏幕探针 + SDF 追踪
+</span></span><span class=line><span class=cl>├── LumenScreenProbeFilter.cs.slang       # 探针空间滤波
+</span></span><span class=line><span class=cl>├── LumenScreenProbeTemporal.cs.slang     # 探针时序累积
+</span></span><span class=line><span class=cl>├── LumenRadianceCache.cs.slang           # 世界探针追踪 &amp; SH 投影
+</span></span><span class=line><span class=cl>├── LumenRadianceCacheUpdate.cs.slang     # 探针标记 &amp; 更新调度
+</span></span><span class=line><span class=cl>├── LumenRadianceCacheInterpolate.cs.slang # 探针插值
+</span></span><span class=line><span class=cl>├── LumenReflections.cs.slang             # 分层反射追踪
+</span></span><span class=line><span class=cl>├── LumenReflectionDenoise.cs.slang       # 反射降噪
+</span></span><span class=line><span class=cl>├── LumenHiZ.cs.slang                     # Hi-Z 金字塔
+</span></span><span class=line><span class=cl>├── LumenHardwareRayTracing.rt.slang      # DXR RayGen/Hit/Miss
+</span></span><span class=line><span class=cl>├── LumenHardwareRayTracingUtils.slang    # DXR 共享工具
+</span></span><span class=line><span class=cl>├── LumenSceneLighting.cs.slang           # 最终光照合成
+</span></span><span class=line><span class=cl>└── LumenVisualize.cs.slang               # 调试可视化</span></span></code></pre></div></div><h3 id=123-新建文件-sample-application>12.3 新建文件 (Sample Application)</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Source/Samples/LumenDemo/
+</span></span><span class=line><span class=cl>├── LumenDemo.h                           # Lumen 演示 App
+</span></span><span class=line><span class=cl>├── LumenDemo.cpp
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>data/LumenDemo/
+</span></span><span class=line><span class=cl>└── LumenDemo.py                          # Python 启动脚本
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>LumenDemo.bat                              # Windows 启动脚本</span></span></code></pre></div></div><h3 id=124-修改的现有文件>12.4 修改的现有文件</h3><table><thead><tr><th>文件</th><th>修改内容</th></tr></thead><tbody><tr><td><code>Source/Samples/PBRTOfflineRenderer/PBRTOfflineRenderer.h</code></td><td>添加 Lumen 成员变量, GI 开关</td></tr><tr><td><code>Source/Samples/PBRTOfflineRenderer/PBRTOfflineRenderer.cpp</code></td><td>添加 Lumen Pass 到 RenderGraph</td></tr><tr><td><code>Source/Samples/PBRTOfflineRenderer/PBRTOfflineRenderer.3d.slang</code></td><td>Forward Pass 增加 Emissive 输出</td></tr><tr><td><code>Source/RenderPasses/GBuffer/</code></td><td>可能的 Emissive G-Buffer 扩展</td></tr><tr><td><code>CMakeLists.txt</code> (RenderPasses)</td><td>添加 Lumen 子目录</td></tr><tr><td><code>CMakeLists.txt</code> (FalcorCore)</td><td>添加 Lumen 核心文件</td></tr><tr><td><code>Source/Falcor/Scene/Scene.h</code></td><td>添加 Lumen 相关查询接口</td></tr></tbody></table><hr><h2 id=13-里程碑与时间估算>13. 里程碑与时间估算</h2><h3 id=131-里程碑>13.1 里程碑</h3><table><thead><tr><th>里程碑</th><th>内容</th><th>可验证产出</th><th>时间估算</th></tr></thead><tbody><tr><td><strong>M1: 基础架构</strong></td><td>Mesh SDF + Card 数据结构 + 统一追踪接口</td><td>Mesh SDF 可视化, Card 结构编译通过</td><td>2-3 周</td></tr><tr><td><strong>M2: Surface Cache</strong></td><td>Card Atlas 渲染 + Page 管理</td><td>Card Atlas 可视化 (显示在屏幕上)</td><td>2-3 周</td></tr><tr><td><strong>M3: SDF GI</strong></td><td>Screen Probe Gather (仅 SDF 追踪)</td><td>屏幕上有 SDF 追踪的间接光照</td><td>3-4 周</td></tr><tr><td><strong>M4: Radiance Cache</strong></td><td>世界探针网格 + SH 存储/插值</td><td>离线区域的稳定 GI</td><td>2-3 周</td></tr><tr><td><strong>M5: 反射</strong></td><td>分层反射 (SSR→SDF)</td><td>场景中有镜面反射</td><td>2-3 周</td></tr><tr><td><strong>M6: HW RT</strong></td><td>DXR 后端集成</td><td>硬件光追 GI 正确显示</td><td>1-2 周</td></tr><tr><td><strong>M7: 集成优化</strong></td><td>完整管线 + 降噪 + 性能优化</td><td>30fps+ @ 1080p on RTX 3080</td><td>2-4 周</td></tr></tbody></table><p><strong>总计</strong>: 14-22 周 (约 3.5-5.5 个月, 单人全职)</p><h3 id=132-风险与缓解>13.2 风险与缓解</h3><table><thead><tr><th>风险</th><th>影响</th><th>缓解措施</th></tr></thead><tbody><tr><td>SDF 追踪精度不足</td><td>GI 漏光/暗斑</td><td>使用 Enhanced Sphere Tracing, 调优 minHitDistance</td></tr><tr><td>Card Atlas 容量不足</td><td>远处表面缺失</td><td>实现 Card LOD + 自适应 Page 分配</td></tr><tr><td>性能不达标</td><td>帧率过低</td><td>Half-res 探针, 时序累积, Async Compute</td></tr><tr><td>SH 低频光照不足</td><td>细节丢失</td><td>使用 2nd Order SH (16 系数) 替代 1st Order (9 系数)</td></tr><tr><td>与现有管线冲突</td><td>渲染错误</td><td>通过 RenderGraph 依赖明确分离</td></tr></tbody></table><hr><h2 id=附录-a-关键参考>附录 A: 关键参考</h2><ul><li><strong>UE5 Lumen 技术论文</strong>: <a href=https://advances.realtimerendering.com/s2022/SIGGRAPH2022-Advances-Lumen-Wright%20et%20al.pdf target=_blank rel="noopener noreffer">Lumen: Real-time Global Illumination in Unreal Engine 5</a></li><li><strong>Falcor 文档</strong>: <code>FalcorRendering/README.md</code>, <code>FalcorRendering/docs/</code></li><li><strong>NVIDIA RTXDI</strong>: <code>FalcorRendering/Source/Falcor/Rendering/RTXDI/</code></li><li><strong>Jump Flood Algorithm</strong>: Rong & Tan, &ldquo;Jump Flooding in GPU with Applications to Voronoi Diagram and Distance Transform&rdquo;</li><li><strong>Enhanced Sphere Tracing</strong>: &ldquo;Improved Sphere Tracing&rdquo; (Keinert et al.)</li></ul><h2 id=附录-b-术语对照>附录 B: 术语对照</h2><table><thead><tr><th>UE5 Lumen 术语</th><th>Falcor 对应</th></tr></thead><tbody><tr><td>Surface Cache / Card</td><td><code>LumenSurfaceCache</code> + <code>LumenCard</code></td></tr><tr><td>Mesh Distance Field</td><td><code>LumenMeshSDF</code></td></tr><tr><td>Global Distance Field</td><td><code>LumenGlobalSDF</code></td></tr><tr><td>Screen Probe Gather</td><td><code>LumenScreenProbeGather</code></td></tr><tr><td>Radiance Cache</td><td><code>LumenRadianceCache</code></td></tr><tr><td>Lumen Reflections</td><td><code>LumenReflections</code></td></tr><tr><td>Hardware Ray Tracing</td><td>DXR <code>RtStateObject</code> + <code>LumenHardwareRayTracing</code></td></tr><tr><td>Nanite</td><td>N/A (不在本计划范围)</td></tr><tr><td>Virtual Shadow Maps</td><td>已有 CSM (可后续升级)</td></tr></tbody></table></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2026-06-10</span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span></span></div></div></div><div class=post-info-more><section class=post-tags></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/posts/d-20/ class=prev rel=prev title="Nanite 在 FalcorRendering 中的生成工具与显示流程"><i class="fas fa-angle-left" aria-hidden=true></i>Nanite 在 FalcorRendering 中的生成工具与显示流程</a>
+<a href=/posts/d-25/ class=next rel=next title="Ignitement Fire Fluid 技术拆解与 Godot 实现对照">Ignitement Fire Fluid 技术拆解与 Godot 实现对照<i class="fas fa-angle-right" aria-hidden=true></i></a></div></div><div id=comments><script src=https://beaudar.lipk.org/client.js repo=trianglestrip/trianglestrip.github.io issue-term=title issue-label=pathname theme=github-light crossorigin=anonymous async></script><noscript>请启用 JavaScript 以查看评论（由 <a href=https://beaudar.lipk.org/>Beaudar</a> 提供）。</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright" aria-hidden=true></i><span itemprop=copyrightYear>2026</span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up" aria-hidden=true></i></a></div><div id=fixed-buttons-hidden><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment" aria-hidden=true></i></a></div><script src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script>window.config={comment:{}}</script><script src=/js/theme.js></script></body></html>
