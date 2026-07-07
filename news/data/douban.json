@@ -1,45 +1,44 @@
 {
   "source": "douban",
   "title": "豆瓣",
-  "updated_at": "2026-07-06T22:49:04+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-07-07T01:27:41+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "硫华菊一开花，奥森又拥有了油画样的风景",
       "url": "https://www.douban.com/group/topic/492631657/?_spm_id=MzY4NDM3Nzg",
-      "hot": "105喜欢"
+      "hot": "111喜欢"
     },
     {
       "rank": 2,
       "title": "煮了一碗面，我觉得很好，家人让我端出去",
       "url": "https://www.douban.com/group/topic/492709352/?_spm_id=MTcyMDU2MjA4",
-      "hot": "149喜欢"
+      "hot": "150喜欢"
     },
     {
       "rank": 3,
       "title": "轻舟已过万重山",
       "url": "https://www.douban.com/group/topic/492704891/?_spm_id=MTUxNjgxMTUz",
-      "hot": "547喜欢"
+      "hot": "567喜欢"
     },
     {
       "rank": 4,
       "title": "分享一个豆瓣好帖的读后感",
       "url": "https://www.douban.com/group/topic/492748727/?_spm_id=NDI1OTU2MDM",
-      "hot": "163喜欢"
+      "hot": "168喜欢"
     },
     {
       "rank": 5,
       "title": "穿搭分享合集",
       "url": "https://www.douban.com/group/topic/492844643/?_spm_id=MTc0MzQyOTUw",
-      "hot": "73喜欢"
+      "hot": "77喜欢"
     },
     {
       "rank": 6,
       "title": "因为英语够烂反而成功和外国人无障碍沟通交流",
       "url": "https://www.douban.com/group/topic/492910533/?_spm_id=MTMzMzY2Mzk0",
-      "hot": "204喜欢"
+      "hot": "206喜欢"
     },
     {
       "rank": 7,
@@ -51,19 +50,19 @@
       "rank": 8,
       "title": "农村大学生总结的10条实战职场生存大白话",
       "url": "https://www.douban.com/group/topic/492846970/?_spm_id=MTY3MDE1NTAy",
-      "hot": "202喜欢"
+      "hot": "212喜欢"
     },
     {
       "rank": 9,
       "title": "贵阳5天4晚 实测好吃的正餐吃饭记录",
       "url": "https://www.douban.com/group/topic/492822106/?_spm_id=MjMzODgzNzkx",
-      "hot": "119喜欢"
+      "hot": "123喜欢"
     },
     {
       "rank": 10,
       "title": "一下就明白了什么是山舞银蛇。。。原驰蜡象。。。。",
       "url": "https://www.douban.com/group/topic/492502779/?_spm_id=MjM0Njg0MTEx",
-      "hot": "3160喜欢"
+      "hot": "3176喜欢"
     }
   ]
 }

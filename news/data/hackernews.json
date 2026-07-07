@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-06T22:49:30+00:00",
+  "updated_at": "2026-07-07T01:28:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "OpenWrt One – Open Hardware Router",
       "url": "https://openwrt.org/toh/openwrt/one",
-      "hot": "328"
+      "hot": "436"
     },
     {
       "rank": 2,
-      "title": "CoMaps – FOSS Offline Maps",
-      "url": "https://www.comaps.app/",
-      "hot": "232"
+      "title": "Fable turned remarkable into Tom Riddle's diary from Harry Potter",
+      "url": "https://github.com/MaximeRivest/Riddle",
+      "hot": "117"
     },
     {
       "rank": 3,
-      "title": "How little exercise can you get away with?",
-      "url": "https://www.economist.com/science-and-technology/2026/07/03/how-little-exercise-can-you-get-away-with",
-      "hot": "22"
+      "title": "How to sequence your own DNA at home",
+      "url": "https://bradleywoolf.com/links-1/sequencing-my-own-dna-at-home",
+      "hot": "30"
     },
     {
       "rank": 4,
-      "title": "A global workspace in language models",
-      "url": "https://www.anthropic.com/research/global-workspace",
-      "hot": "211"
+      "title": "CoMaps – FOSS Offline Maps",
+      "url": "https://www.comaps.app/",
+      "hot": "305"
     },
     {
       "rank": 5,
-      "title": "Pruning RAG context down to what the answer actually needs",
-      "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
-      "hot": "25"
+      "title": "Ternlight – 7 MB embedding model that runs in browser (WASM)",
+      "url": "https://ternlight-demo.vercel.app/",
+      "hot": "64"
     },
     {
       "rank": 6,
-      "title": "Python 3.14 compiled to metal – no interpreter",
-      "url": "https://github.com/can1357/pon",
-      "hot": "96"
+      "title": "GLM 5.2 and the coming AI margin collapse",
+      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+      "hot": "147"
     },
     {
       "rank": 7,
-      "title": "Linux on the Atari Jaguar",
-      "url": "https://cakehonolulu.github.io/linux-for-jaguar/",
-      "hot": "83"
+      "title": "NSA and IETF: Fairness",
+      "url": "https://blog.cr.yp.to/20260706-fairness.html",
+      "hot": "25"
     },
     {
       "rank": 8,
-      "title": "AMD Ryzen AI Halo – $4k AI Dev Kit",
-      "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
-      "hot": "251"
+      "title": "A global workspace in language models",
+      "url": "https://www.anthropic.com/research/global-workspace",
+      "hot": "261"
     },
     {
       "rank": 9,
-      "title": "Resetting Xbox",
-      "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
-      "hot": "419"
+      "title": "Pruning RAG context down to what the answer actually needs",
+      "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
+      "hot": "52"
     },
     {
       "rank": 10,
-      "title": "GLM 5.2 and the coming AI margin collapse",
-      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
-      "hot": "30"
+      "title": "A 2048-spin bulk acoustic wave Ising machine for number partitioning and Sudoku",
+      "url": "https://arxiv.org/abs/2607.02112",
+      "hot": "20"
     }
   ]
 }
