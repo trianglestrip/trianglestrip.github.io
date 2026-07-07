@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-07T08:51:56+00:00",
+  "updated_at": "2026-07-07T11:34:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "我成长过程中所熟悉的互联网已经不复存在了",
+      "url": "https://www.oschina.net/news/471541",
+      "hot": "Tue, 07 Jul 2026 18:21:25 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Kdenlive 26.04.3 发布",
+      "url": "https://www.oschina.net/news/471540/kdenlive-26-04-3-released",
+      "hot": "Tue, 07 Jul 2026 17:25:13 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "字节 Seed 开源 EdgeBench 基准测试",
+      "url": "https://www.oschina.net/news/471539",
+      "hot": "Tue, 07 Jul 2026 17:15:31 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "分布式 API 设计 下：REST",
+      "url": "https://my.oschina.net/xiandafu/blog/18612369",
+      "hot": "Tue, 07 Jul 2026 16:50:49 +0800"
+    },
+    {
+      "rank": 5,
       "title": "Memcached 1.6.44 发布，高性能分布式缓存系统",
       "url": "https://www.oschina.net/news/471534/memcached-1-6-44-released",
       "hot": "Tue, 07 Jul 2026 15:31:43 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "TIOBE 7 月榜单：Rust 首次跻身 Top10",
       "url": "https://www.oschina.net/news/471533/tiobe-index-202607",
       "hot": "Tue, 07 Jul 2026 14:55:13 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "CSDI峰会开启：Agentic AI 落地应用的黄金期，智能系统重塑生产力",
       "url": "https://www.oschina.net/news/471531",
       "hot": "Tue, 07 Jul 2026 14:26:05 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "Fastify v5.10.0 发布，极速 Node.js Web 框架",
       "url": "https://www.oschina.net/news/471530/fastify-5-10-0-released",
       "hot": "Tue, 07 Jul 2026 14:08:53 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "HarmonyOS7开发者声音-问卷调查",
       "url": "https://qaxb95n3g50.feishu.cn/share/base/form/shrcn7XGp12Dk7rzbZvFbhpyfLc",
       "hot": "Tue, 07 Jul 2026 13:58:49 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "前 5 月机器人规上企业营收超 900 亿元",
       "url": "https://www.oschina.net/news/471527",
       "hot": "Tue, 07 Jul 2026 11:51:16 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Qoder 集成 STAROps，重塑 “编码 - 发布 - 诊断 - 修复” DevOps 闭环",
-      "url": "https://my.oschina.net/u/3874284/blog/19715962",
-      "hot": "Tue, 07 Jul 2026 11:39:47 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "CrateDB 6.4.0 发布，分布式 SQL 数据库",
-      "url": "https://www.oschina.net/news/471524/cratedb-6-4-0-released",
-      "hot": "Tue, 07 Jul 2026 11:12:47 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "“Linux 赢了”，这次没人反对",
-      "url": "https://www.oschina.net/news/471522",
-      "hot": "Tue, 07 Jul 2026 10:46:07 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "OpenSSH 10.4 发布",
-      "url": "https://www.oschina.net/news/471521/openssh-10-4-released",
-      "hot": "Tue, 07 Jul 2026 10:28:36 +0800"
     }
   ]
 }

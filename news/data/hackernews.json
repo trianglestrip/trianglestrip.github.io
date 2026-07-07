@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-07T08:51:54+00:00",
+  "updated_at": "2026-07-07T11:34:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Fable turned reMarkable into Tom Riddle's diary from Harry Potter",
-      "url": "https://github.com/MaximeRivest/Riddle",
-      "hot": "419"
+      "title": "OpenWrt One – Open Hardware Router",
+      "url": "https://openwrt.org/toh/openwrt/one",
+      "hot": "675"
     },
     {
       "rank": 2,
-      "title": "OpenWrt One – Open Hardware Router",
-      "url": "https://openwrt.org/toh/openwrt/one",
-      "hot": "592"
+      "title": "CoMaps – FOSS Offline Maps",
+      "url": "https://www.comaps.app/",
+      "hot": "611"
     },
     {
       "rank": 3,
-      "title": "CoMaps – FOSS Offline Maps",
-      "url": "https://www.comaps.app/",
-      "hot": "529"
+      "title": "GLM 5.2 and the coming AI margin collapse",
+      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+      "hot": "479"
     },
     {
       "rank": 4,
-      "title": "GLM 5.2 and the coming AI margin collapse",
-      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
-      "hot": "389"
+      "title": "Dolosse – a South African invention used over the world",
+      "url": "https://thisbugslife.com/2021/11/21/dolosse-a-south-african-invention-used-over-the-world/",
+      "hot": "74"
     },
     {
       "rank": 5,
       "title": "How to sequence your own DNA at home",
       "url": "https://bradleywoolf.com/links-1/sequencing-my-own-dna-at-home",
-      "hot": "196"
+      "hot": "250"
     },
     {
       "rank": 6,
       "title": "Small AI Models Gain Traction In places with unreliable networks",
       "url": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
-      "hot": "126"
+      "hot": "167"
     },
     {
       "rank": 7,
-      "title": "Dolosse – a South African invention used over the world",
-      "url": "https://thisbugslife.com/2021/11/21/dolosse-a-south-african-invention-used-over-the-world/",
-      "hot": "34"
+      "title": "Microsoft Can Track Users via a Windows Device ID",
+      "url": "https://www.pcmag.com/news/a-hackers-arrest-reveals-microsoft-can-track-users-via-a-windows-device",
+      "hot": "102"
     },
     {
       "rank": 8,
-      "title": "Ternlight – 7 MB embedding model that runs in browser (WASM)",
-      "url": "https://ternlight-demo.vercel.app/",
-      "hot": "213"
+      "title": "Fable turned reMarkable into Tom Riddle's diary from Harry Potter",
+      "url": "https://github.com/MaximeRivest/Riddle",
+      "hot": "497"
     },
     {
       "rank": 9,
-      "title": "A global workspace in language models",
-      "url": "https://www.anthropic.com/research/global-workspace",
-      "hot": "361"
+      "title": "Ternlight – 7 MB embedding model that runs in browser (WASM)",
+      "url": "https://ternlight-demo.vercel.app/",
+      "hot": "253"
     },
     {
       "rank": 10,
-      "title": "Resetting Xbox",
-      "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
-      "hot": "601"
+      "title": "Historic Photos of NASA's Cavernous Wind Tunnels",
+      "url": "https://www.theatlantic.com/photo/2018/05/historic-photos-of-nasas-cavernous-wind-tunnels/560660/",
+      "hot": "15"
     }
   ]
 }
