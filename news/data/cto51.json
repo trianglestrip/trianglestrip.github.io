@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-07T01:28:06+00:00",
+  "updated_at": "2026-07-07T05:32:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Cursor IDE 中的两个关键性 RCE 漏洞，通过零点击提示注入触发",
-      "url": "https://www.51cto.com/article/848634.html",
-      "hot": "这两个我们称为 \"DuneSlide\" 的 RCE 漏洞均获得了 9.8 的 CVSS 评分，涉及突破 IDE 的沙盒环境，并被分配了 CVE 编号 CVE-2026-50548 和 CVE-2026-50549。"
+      "title": "Reddit一张神图疯传！两年后，你的笔记本就能跑Fable 5",
+      "url": "https://www.51cto.com/article/848708.html",
+      "hot": "r/LocalLLaMA社区一张图刷屏AI圈：Fable 5级AI预计2年后可在笔记本上本地运行。"
     },
     {
       "rank": 2,
-      "title": "字节二面栽在 CHM 上，面试官冷笑着指出了三个 Bug",
-      "url": "https://www.51cto.com/article/848636.html",
-      "hot": "线程安全的类不等于线程安全的代码。原子性的边界，才是并发编程的及格线。"
+      "title": "告别 AI“草台班子”：一文读懂 Hermes Kanban 多智能体协同设计",
+      "url": "https://www.51cto.com/article/848706.html",
+      "hot": "早在 2026 年初，业界就有一个趋势：AI 智能体技术栈正在走向“控制面”（审计、权限）与“执行面”（快速迭代）的分化。\nHermes Kanban 的选择非常明确：死守执行面。"
     },
     {
       "rank": 3,
-      "title": "豆包千问同天下线智能体，我一开始想岔了",
-      "url": "https://www.51cto.com/article/848646.html",
-      "hot": "技术这半年跑得有多快，人心这半年就有多需要被兜住。总有一天，AI会替我们做完所有该做的事，但陪着我们熬过那些不想说话的夜晚，这件事该交给谁把关，大概才是真正难回答的题。"
+      "title": "Claude的脑子里，也长出了一块「意识」",
+      "url": "https://www.51cto.com/article/848705.html",
+      "hot": "人类的神经科学当中，有一个流传很广的理论叫「全局工作空间理论」。它把大脑比作一堆各自忙自己的专家系统，视觉系统处理视觉，运动系统处理运动，彼此并行，彼此隔离。"
     },
     {
       "rank": 4,
-      "title": "大厂二面深挖：Linux 如何验证 C++ 类内存布局？",
-      "url": "https://www.51cto.com/article/848538.html",
-      "hot": "我们可以利用 GCC 内置的功能来开展静态分析，还能够依靠 gdb 调试器去查看运行时对象真实的内存状况，也能够通过 objdump、readelf 来解析 ELF 二进制文件，从静态和动态这两个方面来校验类完整的内存结构。接下来会一层一层地去拆解各类工具的实操流程，带领你完完全全弄清楚 C++类内存布局底层的细节。"
+      "title": "刚刚，Anthropic切开Claude大脑！AI自发长出类人「意识器官」",
+      "url": "https://www.51cto.com/article/848704.html",
+      "hot": "没人设计过，Claude却在学习预测下一个token时，自发长出了一个和人脑「意识」惊人相似的结构！Anthropic开源「手术刀」J-Lens，第一次读出了AI咽回肚子里的念头。"
     },
     {
       "rank": 5,
-      "title": "边说话边出字幕，阿里升级语音实时识别大模型Fun-ASR-Realtime",
-      "url": "https://www.51cto.com/article/848630.html",
-      "hot": "7月6日，阿里升级语音实时识别大模型Fun-ASR-Realtime。作为一款流式模型，其识别准确率接近离线模型，首字延迟在百毫秒级别，长句尾字延迟低，支持16种方言和30种语言。"
+      "title": "Agent 记忆系统：为什么你的 AI 会失忆？",
+      "url": "https://www.51cto.com/article/848703.html",
+      "hot": "长文本中处于 中间位置 的信息最容易被忽略（即 ​​Lost in the Middle​​ 现象）。 把全部历史无差别塞进 Prompt，就像让顾问翻阅公司十年档案。信息过载 反而会导致关键事实被淹没。"
     },
     {
       "rank": 6,
-      "title": "各自为战vs统一协同：智能体产业迎来分水岭时刻",
-      "url": "https://www.51cto.com/article/848620.html",
-      "hot": "如果说大模型是AI时代的大脑，智能体是落地执行的手脚，那么当下的智能体产业正陷入一个尴尬的困局：无数个手脚各自为战，却没有一套通用的神经通路让它们彼此协同。"
+      "title": "2026年必须搞懂的20个 Agent 工程概念（运行机制篇）：大白话一次讲清",
+      "url": "https://www.51cto.com/article/848702.html",
+      "hot": "在工程上，“检索” 这件事情远没有看起来那么简单。因为 AI 世界的检索不是一个简单的数据库查询，而是一个决策系统：查什么、查多少、如何确保相关性、如何排序等等。"
     },
     {
       "rank": 7,
-      "title": "TIGRAG刚出手，GraphRAG最致命的问题暴露了",
-      "url": "https://www.51cto.com/article/848595.html",
-      "hot": "TIGRAG 用 token 共现图绕开 LLM 抽取,把 GraphRAG 的建图成本砍到 NaiveRAG 同档,同时用 PPR+神经重排+实体驱动多跳保住多跳检索质量。GraphRAG 终于不再被建图成本卡脖子。"
+      "title": "KV Cache 太多时，为什么要做 PD 分离？",
+      "url": "https://www.51cto.com/article/848701.html",
+      "hot": "PD 分离不是为了让 KV Cache 变小，而是为了让 KV Cache 的生产、传输和消费变得可调度。"
     },
     {
       "rank": 8,
-      "title": "Karpathy最新开喷：一句话让全场Agent开发者安静了",
-      "url": "https://www.51cto.com/article/848580.html",
-      "hot": "Karpathy内部炸场：逼Agent干活是AI最大错误！最前沿不在OpenAI，在你手里。"
+      "title": "Gemini 3.5 Pro绝密泄露，前端赶超Fable 5！",
+      "url": "https://www.51cto.com/article/848700.html",
+      "hot": "憋了整整两个月，Gemini 3.5 Pro终于要来了！前端代码一次生成，传闻7月17日正式亮相。"
     },
     {
       "rank": 9,
-      "title": "Fable 5被网友薅出省钱神招！最高减70%！",
-      "url": "https://www.51cto.com/article/848594.html",
-      "hot": "没想到，人类当年靠微缩打印做小抄的土办法，在大模型身上也照样管用。这两天，有位机智的老哥发现，只要把Fable 5的上下文转换成一张张密密麻麻写满文字的图片，再让模型通过OCR读回来，token输入成本最多能省下70%。"
+      "title": "AI折叠！Fable 5和GPT-5.6，正沦为少数人的特权",
+      "url": "https://www.51cto.com/article/848698.html",
+      "hot": "最近，LMArena负责人的这句话刷屏了：大众只配玩AI玩具，少数人正用GPT-5.6和Fable 5横扫一切，巨大的体验断层，正形成全新的鸿沟，你也被悄悄「折叠」了吗？"
     },
     {
       "rank": 10,
-      "title": "刚刚，DeepMind经典巨作再封神！ICML 2026大奖公布",
-      "url": "https://www.51cto.com/article/848598.html",
-      "hot": "ICML 2026杰出论文奖正式公布，两篇扩散模型论文同时登顶，而且作者里不少华人。"
+      "title": "1600代码造出水下曼哈顿， Fable 5让Karpathy看呆了",
+      "url": "https://www.51cto.com/article/848694.html",
+      "hot": "Fable 5重新上线，Arena.ai的Gostev在一段视频中甩出63个3D世界，几乎都是一次成型。看了视频，就连刚加盟Anthropic预训练团队的Karpathy，也直呼没想到。"
     }
   ]
 }

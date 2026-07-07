@@ -1,20 +1,20 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-07-06T20:14:26+00:00",
+  "updated_at": "2026-07-07T05:31:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Astryx",
-      "url": "https://www.producthunt.com/products/meta",
-      "hot": "2026-07-05T20:52:49-07:00"
+      "title": "Typeahead 2.0",
+      "url": "https://www.producthunt.com/products/typeahead",
+      "hot": "2026-07-02T14:39:18-07:00"
     },
     {
       "rank": 2,
-      "title": "Stanley Studio",
-      "url": "https://www.producthunt.com/products/stanley-studio",
-      "hot": "2026-07-05T20:37:29-07:00"
+      "title": "Sunrise",
+      "url": "https://www.producthunt.com/products/sunrise-5",
+      "hot": "2026-06-25T11:39:17-07:00"
     },
     {
       "rank": 3,
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
-      "title": "Edgee Claude Code Compressor V2",
-      "url": "https://www.producthunt.com/products/edgee",
-      "hot": "2026-07-02T21:38:17-07:00"
-    },
-    {
-      "rank": 5,
-      "title": "Sunrise",
-      "url": "https://www.producthunt.com/products/sunrise-5",
-      "hot": "2026-06-25T11:39:17-07:00"
-    },
-    {
-      "rank": 6,
-      "title": "Typeahead 2.0",
-      "url": "https://www.producthunt.com/products/typeahead",
-      "hot": "2026-07-02T14:39:18-07:00"
-    },
-    {
-      "rank": 7,
       "title": "AnySearch",
       "url": "https://www.producthunt.com/products/anysearch",
       "hot": "2026-07-01T01:58:38-07:00"
     },
     {
-      "rank": 8,
-      "title": "AirKaren",
-      "url": "https://www.producthunt.com/products/airkaren",
-      "hot": "2026-07-03T10:56:07-07:00"
+      "rank": 5,
+      "title": "Edgee Claude Code Compressor V2",
+      "url": "https://www.producthunt.com/products/edgee",
+      "hot": "2026-07-02T21:38:17-07:00"
     },
     {
-      "rank": 9,
+      "rank": 6,
       "title": "CodeMote",
       "url": "https://www.producthunt.com/products/codemote-remote-control-for-any-ai",
       "hot": "2026-07-05T06:39:06-07:00"
     },
     {
-      "rank": 10,
+      "rank": 7,
+      "title": "Astryx",
+      "url": "https://www.producthunt.com/products/meta",
+      "hot": "2026-07-05T20:52:49-07:00"
+    },
+    {
+      "rank": 8,
+      "title": "Cadence",
+      "url": "https://www.producthunt.com/products/cadence-13",
+      "hot": "2026-07-03T06:20:27-07:00"
+    },
+    {
+      "rank": 9,
       "title": "Mozaik",
       "url": "https://www.producthunt.com/products/mozaik-4",
       "hot": "2026-07-05T05:31:38-07:00"
+    },
+    {
+      "rank": 10,
+      "title": "Stanley Studio",
+      "url": "https://www.producthunt.com/products/stanley-studio",
+      "hot": "2026-07-05T20:37:29-07:00"
     }
   ]
 }
