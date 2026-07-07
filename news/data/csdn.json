@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-07T11:34:25+00:00",
+  "updated_at": "2026-07-07T13:39:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Hermes Agent 从部署到项目实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/162558602",
-      "hot": "26196"
+      "hot": "33324"
     },
     {
       "rank": 2,
       "title": "《C/C+++ Boost 轻量级搜索引擎实战：架构流程、技术栈与工程落地指南——HTML文件的清洗（上篇）》",
       "url": "https://blog.csdn.net/Dovis5884/article/details/156314185",
-      "hot": "17208"
+      "hot": "19052"
     },
     {
       "rank": 3,
-      "title": "OpenClaw 实战案例：内容创作系统构建",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/162612725",
-      "hot": "13248"
+      "title": "AI 专题学习手册",
+      "url": "https://blog.csdn.net/qq_35201802/article/details/162659405",
+      "hot": "15277"
     },
     {
       "rank": 4,
-      "title": "小米摄像头怎么接入RTSP？Go2RTC转流、EasyNVR录像与公网访问教程",
-      "url": "https://blog.csdn.net/qq_54796785/article/details/162630513",
-      "hot": "12271"
+      "title": "OpenCV-Python实战（32）——基于深度学习的物体分类与定位",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/161678530",
+      "hot": "13592"
     },
     {
       "rank": 5,
-      "title": "OpenCV-Python实战（32）——基于深度学习的物体分类与定位",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/161678530",
-      "hot": "12138"
+      "title": "Human Engineering：我们一直在给 AI 造 harness，却忘了给人写一份新的岗位说明书",
+      "url": "https://blog.csdn.net/qq_43078335/article/details/162641989",
+      "hot": "13292"
     },
     {
       "rank": 6,
-      "title": "单体还是微服务？中小企业的务实选择（一套代码双模式平滑演进）",
-      "url": "https://blog.csdn.net/zhouzhongyan/article/details/162622772",
-      "hot": "10591"
+      "title": "Anthropic《语言模型中的全局工作空间》深度分析报告",
+      "url": "https://blog.csdn.net/crazyjinks/article/details/162655824",
+      "hot": "13243"
     },
     {
       "rank": 7,
-      "title": "【LE Audio】CSIP精讲[5]: 蓝牙协同设备组的安全防护体系与实战规范",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/162498081",
-      "hot": "10303"
+      "title": "小米摄像头怎么接入RTSP？Go2RTC转流、EasyNVR录像与公网访问教程",
+      "url": "https://blog.csdn.net/qq_54796785/article/details/162630513",
+      "hot": "13050"
     },
     {
       "rank": 8,
-      "title": "K8s - Helm管理工具",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/161394380",
-      "hot": "10016"
+      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(基于PyTorch卷积层的MNIST分类实战:从卷积直觉到高效卷积设计)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/162464739",
+      "hot": "12614"
     },
     {
       "rank": 9,
-      "title": "GitHub 热榜项目 - 周榜(2026-07-04)",
-      "url": "https://blog.csdn.net/u014390502/article/details/162584085",
-      "hot": "9974"
+      "title": "OpenClaw 实战案例：内容创作系统构建",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/162612725",
+      "hot": "11889"
     },
     {
       "rank": 10,
-      "title": "代码安全别只靠人工看：用DeepAudit搭一套自己的AI审计平台",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/162661476",
-      "hot": "9921"
+      "title": "【LE Audio】CSIP精讲[5]: 蓝牙协同设备组的安全防护体系与实战规范",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/162498081",
+      "hot": "11885"
     }
   ]
 }
