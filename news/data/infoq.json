@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-07T05:32:25+00:00",
+  "updated_at": "2026-07-07T08:51:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "开源AI编程工具第一来啦：智谱GLM-5.2上线模力工场，还有专属折扣！",
+      "url": "https://www.infoq.cn/article/woKuALR13UH0o9XicUlZ?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 07 Jul 2026 15:04:51 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Elastic 开源了基于认知科学的 Atlas Agent Memory",
+      "url": "https://www.infoq.cn/article/pzYuRUO0ECSKktJjKV8P?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 07 Jul 2026 14:00:00 GMT"
+    },
+    {
+      "rank": 3,
       "title": "Java 近期新闻：Hardwood 1.0、Endive 1.0、Azul Payara、Quarkus、WildFly、LangChain4j、OSSI",
       "url": "https://www.infoq.cn/article/69BcusNft9EhAtSdqaYW?utm_source=rss&utm_medium=article",
       "hot": "Tue, 07 Jul 2026 12:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "1.5亿数据！蚂蚁灵波发布空间感知模型LingBot-Depth 2.0，看得更懂、更准",
       "url": "https://www.infoq.cn/article/mqY10ihiZ874id2JDeXu?utm_source=rss&utm_medium=article",
       "hot": "Tue, 07 Jul 2026 11:01:57 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "亚马逊云科技发布用于成本分析和优化的 FinOps Agent 预览版",
       "url": "https://www.infoq.cn/article/OtPug093U3A6NXXhxdiW?utm_source=rss&utm_medium=article",
       "hot": "Tue, 07 Jul 2026 10:31:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Swift 6.4 带来了新的语言特性以及 Swift 与 XCTest 之间的互操作性",
       "url": "https://www.infoq.cn/article/MrNN9S3ZTFiCaoaU3h4i?utm_source=rss&utm_medium=article",
       "hot": "Tue, 07 Jul 2026 09:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "世界模型炒作了半年，反应速度还不如 VLA？穆尧团队和百度智能云给出最新解法",
       "url": "https://www.infoq.cn/article/Lb4pQTNTQdq657Gzj7EI?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 19:50:19 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "硬件原生FP8加持，摩尔线程完成美团LongCat-2.0 Day-0 极速适配",
       "url": "https://www.infoq.cn/article/vRzlWZxXMaxC6aZM7Ufw?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 18:24:56 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Linus 再谈 AI：大模型能写 Demo，但对复杂系统要有敬畏之心",
       "url": "https://www.infoq.cn/article/11fNtPYf59T76fyQkiPa?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 18:19:11 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Agentic 范式下的视频画质优化：火山引擎的新路径",
       "url": "https://www.infoq.cn/article/Gx6eXWNCqcVkET9wFZq9?utm_source=rss&utm_medium=article",
       "hot": "Mon, 06 Jul 2026 17:06:04 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "腾讯混元Hy3正式发布，元宝同步上线Hy3 Agent能力、免费开放",
-      "url": "https://www.infoq.cn/article/2IGjsbCMxxHjLGPJ7tls?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 06 Jul 2026 16:22:01 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "亚马逊云科技推出 Workload Credentials Provider，用于自动化证书和密钥管理",
-      "url": "https://www.infoq.cn/article/cE3cUpHYPN0IjSuIgcsh?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 06 Jul 2026 16:00:08 GMT"
     }
   ]
 }

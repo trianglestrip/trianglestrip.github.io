@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-07T05:32:21+00:00",
+  "updated_at": "2026-07-07T08:51:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Fable turned reMarkable into Tom Riddle's diary from Harry Potter",
       "url": "https://github.com/MaximeRivest/Riddle",
-      "hot": "288"
+      "hot": "419"
     },
     {
       "rank": 2,
       "title": "OpenWrt One – Open Hardware Router",
       "url": "https://openwrt.org/toh/openwrt/one",
-      "hot": "507"
+      "hot": "592"
     },
     {
       "rank": 3,
-      "title": "How to sequence your own DNA at home",
-      "url": "https://bradleywoolf.com/links-1/sequencing-my-own-dna-at-home",
-      "hot": "124"
+      "title": "CoMaps – FOSS Offline Maps",
+      "url": "https://www.comaps.app/",
+      "hot": "529"
     },
     {
       "rank": 4,
-      "title": "CoMaps – FOSS Offline Maps",
-      "url": "https://www.comaps.app/",
-      "hot": "396"
+      "title": "GLM 5.2 and the coming AI margin collapse",
+      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+      "hot": "389"
     },
     {
       "rank": 5,
-      "title": "GLM 5.2 and the coming AI margin collapse",
-      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
-      "hot": "264"
+      "title": "How to sequence your own DNA at home",
+      "url": "https://bradleywoolf.com/links-1/sequencing-my-own-dna-at-home",
+      "hot": "196"
     },
     {
       "rank": 6,
       "title": "Small AI Models Gain Traction In places with unreliable networks",
       "url": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
-      "hot": "74"
+      "hot": "126"
     },
     {
       "rank": 7,
-      "title": "Ternlight – 7 MB embedding model that runs in browser (WASM)",
-      "url": "https://ternlight-demo.vercel.app/",
-      "hot": "148"
+      "title": "Dolosse – a South African invention used over the world",
+      "url": "https://thisbugslife.com/2021/11/21/dolosse-a-south-african-invention-used-over-the-world/",
+      "hot": "34"
     },
     {
       "rank": 8,
-      "title": "A global workspace in language models",
-      "url": "https://www.anthropic.com/research/global-workspace",
-      "hot": "323"
+      "title": "Ternlight – 7 MB embedding model that runs in browser (WASM)",
+      "url": "https://ternlight-demo.vercel.app/",
+      "hot": "213"
     },
     {
       "rank": 9,
-      "title": "Pruning RAG context down to what the answer actually needs",
-      "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
-      "hot": "75"
+      "title": "A global workspace in language models",
+      "url": "https://www.anthropic.com/research/global-workspace",
+      "hot": "361"
     },
     {
       "rank": 10,
       "title": "Resetting Xbox",
       "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
-      "hot": "546"
+      "hot": "601"
     }
   ]
 }

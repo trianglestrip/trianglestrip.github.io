@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-07T05:32:19+00:00",
+  "updated_at": "2026-07-07T08:51:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "都在卷「让大模型多循环几遍」，这个7B模型LoopCoder v2说：多循环一 次就够了",
+      "url": "https://www.51cto.com/article/848731.html",
+      "hot": "论文标题起得很干脆——《Only Loop Once》，只循环一次。背后是来自北京航空航天大学、IQuest Research、澜舟科技和中国人民大学的联合团队。"
+    },
+    {
+      "rank": 2,
+      "title": "世界模型太慢？西交大提出Fast LeWorldModel：用「动作前缀并行预测」让动态估计加速四倍",
+      "url": "https://www.51cto.com/article/848730.html",
+      "hot": "西安交通大学研究团队提出了 Fast LeWorldModel（Fast-LeWM），试图从根本上改变世界模型的预测方式：从 step-by-step rollout 变成 trajectory-level parallel prediction。"
+    },
+    {
+      "rank": 3,
+      "title": "刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了",
+      "url": "https://www.51cto.com/article/848729.html",
+      "hot": "虽然具身智能这几年确实很火，但真把它们丢进真实场景的时候，我们往往会发现很多问题会迅速回到最基础的一层。"
+    },
+    {
+      "rank": 4,
       "title": "Reddit一张神图疯传！两年后，你的笔记本就能跑Fable 5",
       "url": "https://www.51cto.com/article/848708.html",
       "hot": "r/LocalLLaMA社区一张图刷屏AI圈：Fable 5级AI预计2年后可在笔记本上本地运行。"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "告别 AI“草台班子”：一文读懂 Hermes Kanban 多智能体协同设计",
       "url": "https://www.51cto.com/article/848706.html",
       "hot": "早在 2026 年初，业界就有一个趋势：AI 智能体技术栈正在走向“控制面”（审计、权限）与“执行面”（快速迭代）的分化。\nHermes Kanban 的选择非常明确：死守执行面。"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "Claude的脑子里，也长出了一块「意识」",
       "url": "https://www.51cto.com/article/848705.html",
       "hot": "人类的神经科学当中，有一个流传很广的理论叫「全局工作空间理论」。它把大脑比作一堆各自忙自己的专家系统，视觉系统处理视觉，运动系统处理运动，彼此并行，彼此隔离。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "刚刚，Anthropic切开Claude大脑！AI自发长出类人「意识器官」",
       "url": "https://www.51cto.com/article/848704.html",
       "hot": "没人设计过，Claude却在学习预测下一个token时，自发长出了一个和人脑「意识」惊人相似的结构！Anthropic开源「手术刀」J-Lens，第一次读出了AI咽回肚子里的念头。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Agent 记忆系统：为什么你的 AI 会失忆？",
       "url": "https://www.51cto.com/article/848703.html",
       "hot": "长文本中处于 中间位置 的信息最容易被忽略（即 ​​Lost in the Middle​​ 现象）。 把全部历史无差别塞进 Prompt，就像让顾问翻阅公司十年档案。信息过载 反而会导致关键事实被淹没。"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "2026年必须搞懂的20个 Agent 工程概念（运行机制篇）：大白话一次讲清",
       "url": "https://www.51cto.com/article/848702.html",
       "hot": "在工程上，“检索” 这件事情远没有看起来那么简单。因为 AI 世界的检索不是一个简单的数据库查询，而是一个决策系统：查什么、查多少、如何确保相关性、如何排序等等。"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "KV Cache 太多时，为什么要做 PD 分离？",
       "url": "https://www.51cto.com/article/848701.html",
       "hot": "PD 分离不是为了让 KV Cache 变小，而是为了让 KV Cache 的生产、传输和消费变得可调度。"
-    },
-    {
-      "rank": 8,
-      "title": "Gemini 3.5 Pro绝密泄露，前端赶超Fable 5！",
-      "url": "https://www.51cto.com/article/848700.html",
-      "hot": "憋了整整两个月，Gemini 3.5 Pro终于要来了！前端代码一次生成，传闻7月17日正式亮相。"
-    },
-    {
-      "rank": 9,
-      "title": "AI折叠！Fable 5和GPT-5.6，正沦为少数人的特权",
-      "url": "https://www.51cto.com/article/848698.html",
-      "hot": "最近，LMArena负责人的这句话刷屏了：大众只配玩AI玩具，少数人正用GPT-5.6和Fable 5横扫一切，巨大的体验断层，正形成全新的鸿沟，你也被悄悄「折叠」了吗？"
-    },
-    {
-      "rank": 10,
-      "title": "1600代码造出水下曼哈顿， Fable 5让Karpathy看呆了",
-      "url": "https://www.51cto.com/article/848694.html",
-      "hot": "Fable 5重新上线，Arena.ai的Gostev在一段视频中甩出63个3D世界，几乎都是一次成型。看了视频，就连刚加盟Anthropic预训练团队的Karpathy，也直呼没想到。"
     }
   ]
 }

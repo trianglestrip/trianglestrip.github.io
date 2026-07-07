@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-07T05:32:24+00:00",
+  "updated_at": "2026-07-07T08:51:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Memcached 1.6.44 发布，高性能分布式缓存系统",
+      "url": "https://www.oschina.net/news/471534/memcached-1-6-44-released",
+      "hot": "Tue, 07 Jul 2026 15:31:43 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "TIOBE 7 月榜单：Rust 首次跻身 Top10",
+      "url": "https://www.oschina.net/news/471533/tiobe-index-202607",
+      "hot": "Tue, 07 Jul 2026 14:55:13 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "CSDI峰会开启：Agentic AI 落地应用的黄金期，智能系统重塑生产力",
+      "url": "https://www.oschina.net/news/471531",
+      "hot": "Tue, 07 Jul 2026 14:26:05 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Fastify v5.10.0 发布，极速 Node.js Web 框架",
+      "url": "https://www.oschina.net/news/471530/fastify-5-10-0-released",
+      "hot": "Tue, 07 Jul 2026 14:08:53 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "HarmonyOS7开发者声音-问卷调查",
+      "url": "https://qaxb95n3g50.feishu.cn/share/base/form/shrcn7XGp12Dk7rzbZvFbhpyfLc",
+      "hot": "Tue, 07 Jul 2026 13:58:49 +0800"
+    },
+    {
+      "rank": 6,
       "title": "前 5 月机器人规上企业营收超 900 亿元",
       "url": "https://www.oschina.net/news/471527",
       "hot": "Tue, 07 Jul 2026 11:51:16 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Qoder 集成 STAROps，重塑 “编码 - 发布 - 诊断 - 修复” DevOps 闭环",
       "url": "https://my.oschina.net/u/3874284/blog/19715962",
       "hot": "Tue, 07 Jul 2026 11:39:47 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "CrateDB 6.4.0 发布，分布式 SQL 数据库",
       "url": "https://www.oschina.net/news/471524/cratedb-6-4-0-released",
       "hot": "Tue, 07 Jul 2026 11:12:47 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "“Linux 赢了”，这次没人反对",
       "url": "https://www.oschina.net/news/471522",
       "hot": "Tue, 07 Jul 2026 10:46:07 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "OpenSSH 10.4 发布",
       "url": "https://www.oschina.net/news/471521/openssh-10-4-released",
       "hot": "Tue, 07 Jul 2026 10:28:36 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "xAI 正式更名为 SpaceXAI",
-      "url": "https://www.oschina.net/news/471520",
-      "hot": "Tue, 07 Jul 2026 10:15:53 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "从拖拽到 JOIN：CodeForge 26.4.0 把 SQL 查询变成搭积木",
-      "url": "https://www.oschina.net/news/471519/codeforge-26-4-0-released",
-      "hot": "Tue, 07 Jul 2026 09:51:09 +0800"
-    },
-    {
-      "rank": 8,
-      "title": ":fire::fire::fire:MDP 主数据平台 1.4.0 版本发布，开放平台安全加密体系全面重构升级",
-      "url": "https://www.oschina.net/news/471518",
-      "hot": "Tue, 07 Jul 2026 09:47:26 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Anthropic 每招一个人，就要为算力多支付 200 万美元",
-      "url": "https://www.oschina.net/news/471517/ai-spend-breakeven-2029",
-      "hot": "Mon, 06 Jul 2026 18:39:24 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "腾讯混元 Hy3 开源发布",
-      "url": "https://www.oschina.net/news/471516",
-      "hot": "Mon, 06 Jul 2026 18:14:49 +0800"
     }
   ]
 }
