@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-07T18:15:49+00:00",
+  "updated_at": "2026-07-07T20:16:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "StreetComplete: Fixing OpenStreetMap, one tiny quest at a time",
       "url": "https://streetcomplete.app/",
-      "hot": "443"
+      "hot": "550"
     },
     {
       "rank": 2,
-      "title": "Amazon without the knockoffs",
-      "url": "https://knockoff.shopping/",
-      "hot": "134"
+      "title": "Local, CPU-Friendly, High-Quality TTS (Text-to-Speech) with Kokoro",
+      "url": "https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/",
+      "hot": "60"
     },
     {
       "rank": 3,
-      "title": "30papers.com – Ilya's 30 essential ML papers, in a beginner friendly format",
-      "url": "https://30papers.com/",
-      "hot": "87"
+      "title": "AI Meets Cryptography 1: What AI Found in Cloudflare's Circl",
+      "url": "https://blog.zksecurity.xyz/posts/circl-bugs/",
+      "hot": "33"
     },
     {
       "rank": 4,
-      "title": "A better way to tie gym shorts (or any drawstring) [video]",
-      "url": "https://www.youtube.com/watch?v=3R0Lp86GEBk",
-      "hot": "323"
+      "title": "Chat Control 1.0 and 2.0 Explained",
+      "url": "https://fightchatcontrol.eu/chat-control-overview",
+      "hot": "225"
     },
     {
       "rank": 5,
-      "title": "Jim's TrueType QR Code Font",
-      "url": "https://github.com/jimparis/qr-font",
-      "hot": "38"
+      "title": "l: A new runtime for k and q",
+      "url": "https://lv1.sh/",
+      "hot": "45"
     },
     {
       "rank": 6,
-      "title": "Chat Control 1.0 and 2.0 Explained",
-      "url": "https://fightchatcontrol.eu/chat-control-overview",
-      "hot": "70"
+      "title": "30papers.com – Ilya's 30 essential ML papers, in a beginner friendly format",
+      "url": "https://30papers.com/",
+      "hot": "201"
     },
     {
       "rank": 7,
-      "title": "Why we built yet another Postgres connection pooler",
-      "url": "https://pgdog.dev/blog/why-yet-another-connection-pooler",
-      "hot": "29"
+      "title": "A better way to tie gym shorts (or any drawstring) [video]",
+      "url": "https://www.youtube.com/watch?v=3R0Lp86GEBk",
+      "hot": "382"
     },
     {
       "rank": 8,
-      "title": "Chat Control passed first round in EU Parliament",
-      "url": "https://www.heise.de/en/news/Showdown-in-Strasbourg-The-unexpected-return-of-Chat-Control-1-0-11356680.html",
-      "hot": "307"
-    },
-    {
-      "rank": 9,
-      "title": "MacSurf 1.68 – NetSurf on OS 9 Released",
-      "url": "https://github.com/mplsllc/macsurf/releases/tag/v1.86",
+      "title": "Notes on Software Quality",
+      "url": "https://anthonyhobday.com/blog/20260410",
       "hot": "28"
     },
     {
+      "rank": 9,
+      "title": "Jim's TrueType QR Code Font",
+      "url": "https://github.com/jimparis/qr-font",
+      "hot": "76"
+    },
+    {
       "rank": 10,
-      "title": "Microsoft fire idTech team at Id software",
-      "url": "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software/",
-      "hot": "288"
+      "title": "Herdr: One terminal to rule them all",
+      "url": "https://herdr.dev/",
+      "hot": "13"
     }
   ]
 }

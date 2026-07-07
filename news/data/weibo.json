@@ -1,19 +1,19 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-07-07T18:14:46+00:00",
+  "updated_at": "2026-07-07T20:15:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "阿根廷vs埃及",
-      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A0%B9%E5%BB%B7vs%E5%9F%83%E5%8F%8A",
+      "title": "阿根廷 脏",
+      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A0%B9%E5%BB%B7%20%E8%84%8F",
       "hot": ""
     },
     {
       "rank": 2,
-      "title": "裁判 偏心",
-      "url": "https://s.weibo.com/weibo?q=%E8%A3%81%E5%88%A4%20%E5%81%8F%E5%BF%83",
+      "title": "埃及抗议裁判判罚",
+      "url": "https://s.weibo.com/weibo?q=%E5%9F%83%E5%8F%8A%E6%8A%97%E8%AE%AE%E8%A3%81%E5%88%A4%E5%88%A4%E7%BD%9A",
       "hot": ""
     },
     {
@@ -24,8 +24,8 @@
     },
     {
       "rank": 4,
-      "title": "阿根廷 脏",
-      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A0%B9%E5%BB%B7%20%E8%84%8F",
+      "title": "裁判 偏心",
+      "url": "https://s.weibo.com/weibo?q=%E8%A3%81%E5%88%A4%20%E5%81%8F%E5%BF%83",
       "hot": ""
     },
     {
@@ -42,26 +42,26 @@
     },
     {
       "rank": 7,
+      "title": "裁判 忘穿阿根廷球衣了",
+      "url": "https://s.weibo.com/weibo?q=%E8%A3%81%E5%88%A4%20%E5%BF%98%E7%A9%BF%E9%98%BF%E6%A0%B9%E5%BB%B7%E7%90%83%E8%A1%A3%E4%BA%86",
+      "hot": ""
+    },
+    {
+      "rank": 8,
       "title": "世界杯冠军直接颁给门将吧",
       "url": "https://s.weibo.com/weibo?q=%E4%B8%96%E7%95%8C%E6%9D%AF%E5%86%A0%E5%86%9B%E7%9B%B4%E6%8E%A5%E9%A2%81%E7%BB%99%E9%97%A8%E5%B0%86%E5%90%A7",
       "hot": ""
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "阿根廷绝杀埃及",
       "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A0%B9%E5%BB%B7%E7%BB%9D%E6%9D%80%E5%9F%83%E5%8F%8A",
       "hot": ""
     },
     {
-      "rank": 9,
-      "title": "埃及进球被吹",
-      "url": "https://s.weibo.com/weibo?q=%E5%9F%83%E5%8F%8A%E8%BF%9B%E7%90%83%E8%A2%AB%E5%90%B9",
-      "hot": ""
-    },
-    {
       "rank": 10,
-      "title": "阿根廷点球被扑",
-      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A0%B9%E5%BB%B7%E7%82%B9%E7%90%83%E8%A2%AB%E6%89%91",
+      "title": "阿根廷vs埃及",
+      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A0%B9%E5%BB%B7vs%E5%9F%83%E5%8F%8A",
       "hot": ""
     }
   ]
