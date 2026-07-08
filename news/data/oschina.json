@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-08T04:28:12+00:00",
+  "updated_at": "2026-07-08T06:45:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "🔥🔥AI造物大赏7月活动——十分钟打造你的AI玄学硬件！",
+      "url": "https://www.oschina.net/news/471567",
+      "hot": "Wed, 08 Jul 2026 14:20:25 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "蚂蚁开源 LingBot-VLA 2.0",
+      "url": "https://www.oschina.net/news/471566",
+      "hot": "Wed, 08 Jul 2026 14:14:58 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "系统清理工具 BleachBit 发布 v6.0.2",
+      "url": "https://www.oschina.net/news/471565/bleachbit-602",
+      "hot": "Wed, 08 Jul 2026 13:55:28 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "SamWaf v1.3.21 开源、轻量级、私有化部署网站防火墙",
+      "url": "https://www.oschina.net/news/471564/samwaf-1-3-21-released",
+      "hot": "Wed, 08 Jul 2026 13:50:57 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Nebula 首个正式版：多云对象存储的统一桌面管理器，首发接入阿里云 OSS",
+      "url": "https://www.oschina.net/news/471563",
+      "hot": "Wed, 08 Jul 2026 13:40:50 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "时序、关系表、键值、JSON 文档、全文检索、向量检索、对象存储和消息队列八合一数据库 SonnetDB 3.0 正式发布",
+      "url": "https://www.oschina.net/news/471562",
+      "hot": "Wed, 08 Jul 2026 13:29:37 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "不吹不黑，DeepSeek 编程实测翻车：这些低级问题暴露真实水平",
+      "url": "https://www.oschina.net/news/471561",
+      "hot": "Wed, 08 Jul 2026 12:15:35 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "openKylin 社区 2026 年 6 月运营报告",
+      "url": "https://www.oschina.net/news/471560",
+      "hot": "Wed, 08 Jul 2026 12:14:39 +0800"
+    },
+    {
+      "rank": 9,
       "title": "SpaceXAI 与 Cursor 合体后的首款 AI 模型将于今日亮相",
       "url": "https://www.oschina.net/news/471558/spacexai-cursor-jointly-developed-ai-model-launch-nears",
       "hot": "Wed, 08 Jul 2026 12:00:51 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "DeepSeek 正在自研面向推理场景的 AI 芯片",
       "url": "https://www.oschina.net/news/471557",
       "hot": "Wed, 08 Jul 2026 11:46:40 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "Meta 在聊天机器人和 Instagram 中推出 AI 图像生成模型",
-      "url": "https://www.oschina.net/news/471556",
-      "hot": "Wed, 08 Jul 2026 11:34:58 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "快手 AB 场景提速 145 倍，从 Spark 到 Apache Doris 的加速实践",
-      "url": "https://my.oschina.net/selectdb/blog/19717121",
-      "hot": "Wed, 08 Jul 2026 11:19:56 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "知名 LLVM Linux 开发者高调回归",
-      "url": "https://www.oschina.net/news/471550",
-      "hot": "Wed, 08 Jul 2026 10:58:46 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "XWayland 24.1.13 发布",
-      "url": "https://www.oschina.net/news/471549/xwayland-24-1-13-released",
-      "hot": "Wed, 08 Jul 2026 10:44:18 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "英伟达开源统一音频智能模型 Nemotron-Labs-Audex-30B-A3B",
-      "url": "https://www.oschina.net/news/471548",
-      "hot": "Wed, 08 Jul 2026 10:34:36 +0800"
-    },
-    {
-      "rank": 8,
-      "title": ":tada:Feat v2.2.0 发布：像 SpringBoot 一样好写，比 Vert.x 快两倍",
-      "url": "https://www.oschina.net/news/471547/feat-2-2-0-released",
-      "hot": "Wed, 08 Jul 2026 10:18:46 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Openfire 5.1.1 发布",
-      "url": "https://www.oschina.net/news/471546/openfire-5-1-1-released",
-      "hot": "Wed, 08 Jul 2026 10:17:27 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Excelize 开源十周年，发布 2.11.0 版本",
-      "url": "https://www.oschina.net/news/471545",
-      "hot": "Wed, 08 Jul 2026 10:08:58 +0800"
     }
   ]
 }

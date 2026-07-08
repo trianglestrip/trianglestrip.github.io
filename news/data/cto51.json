@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-08T04:28:08+00:00",
+  "updated_at": "2026-07-08T06:45:12+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
+      "title": "当AI开始重写自己：EverMind的自进化智能体框架Raven，正在定义数字生命的下一个形态",
+      "url": "https://www.51cto.com/article/848886.html",
+      "hot": "今天，这个探索走到了一个新的节点：基于自研记忆系统 EverOS 的自进化Harness——Raven Agent 正式发布。"
+    },
+    {
+      "rank": 3,
+      "title": "HarmonyOS 库存提醒元服务卡片：FormExtensionAbility 刷新与点击回跳边界",
+      "url": "https://ost.51cto.com/posts/52073",
+      "hot": "古早程序员老薛，照常每天跟大家分享一些东西。这次聊HarmonyOS元服务卡片里的一个小而硬的场景：库存低位提醒。我的核心判断是，服务卡片..."
+    },
+    {
+      "rank": 4,
+      "title": "AI生图免训练提速1000%，办法：最简洁的“三阶段流水线”",
+      "url": "https://www.51cto.com/article/848885.html",
+      "hot": "来自北航、NTU、ETH的研究团队最近做了一个非常简洁的尝试：先低清打草稿，再放大，最后高清补一笔。"
+    },
+    {
+      "rank": 5,
       "title": "手把手带你上手鸿蒙应用开发利器 DevEcoCli",
       "url": "https://ost.51cto.com/posts/52070",
       "hot": "手把手带你上手鸿蒙应用开发利器DevEcoCli前言上周（7月2号）我在51CTO平台上做了一场关于鸿蒙应用开发工具DevEcoCli和DevEcoCode的直播，..."
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "中国科学院携手全球顶尖机构发布首个十亿参数级的手术视频基础模型SurgMotion！",
       "url": "https://www.51cto.com/article/848879.html",
       "hot": "近日，由中国科学院香港创新研究院人工智能与机器人创新中心领衔，联合中国科学院自动化所、香港中文大学等全球顶尖机构，正式发布了全球首个十亿级参数、最大规模数据集练成的手术视频原生基础模型 ——SurgMotion！"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "ASE 2026 | 提示词压缩竟成大模型新漏洞？港科大提出黑盒攻击框架COMA",
       "url": "https://www.51cto.com/article/848877.html",
       "hot": "香港科技大学的一项最新研究给出了否定答案。他们发现，这个原本用来 “提效” 的组件，竟然会悄悄重写系统的安全边界，成为大模型应用中的全新攻击面。"
     },
     {
-      "rank": 5,
-      "title": "HarmonyOS AdaptiveVideo自适应短视频播放核心技术揭秘（3）",
-      "url": "https://ost.51cto.com/posts/52067",
-      "hot": "HarmonyOSAdaptiveVideo自适应短视频播放核心技术揭秘（3）真机效果展示关键技术点1.自适应沉浸式（AdaptiveImmersion）AdaptiveImmersion...."
-    },
-    {
-      "rank": 6,
+      "rank": 8,
       "title": "渗透测试 Agent 套件：面向 Claude Code 及六大 AI 编程工具的全自动漏洞赏金框架",
       "url": "https://www.51cto.com/article/848871.html",
       "hot": "该框架仅授权用于负责任披露原则下的安全测试，内置rag-builder/工具可从146个资源库（含CTF存档、漏洞赏金报告和载荷集合）构建本地FAISS报告索引，所有破坏性操作均需显式--execute标志激活。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "一次真实任务复盘：我的 AI 分身为什么第一轮「不听话」？",
       "url": "https://www.51cto.com/article/848862.html",
       "hot": "这是一篇问题发现型文章，会话用 ​​my-digital-human​​ 处理「standard-contract-face-auth 真实案例的剩余任务拆解」因为这个需求已经部分开发，我根据AI的相关反馈信息，来明确AI是否真实使用​​my-digital-human​​技能得出具体的需求开发结论。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "谁在为 Agent 提示注入买单？StakeBench 揭示 Web Agent 的三类受害者风险",
       "url": "https://www.51cto.com/article/848859.html",
       "hot": "StakeBench 给出的答案并不复杂，但非常关键：Agent 安全评测必须从攻击视角，走向受害者视角。"
-    },
-    {
-      "rank": 9,
-      "title": "从一堆乱数据到AI燃料：高质量数据集建设实操指南",
-      "url": "https://www.51cto.com/article/848858.html",
-      "hot": "人工智能正以前所未有的速度融入各行各业，从效率提升到模式创新，从产业升级到生活服务，AI 技术不断突破边界，为数字化转型注入强劲动力，推动社会迈向更智能、高效、便捷的新时代。"
-    },
-    {
-      "rank": 10,
-      "title": "RL训练一层就够了！单层RL超越全参数训练，跨任务跨模型跨算法全部验证",
-      "url": "https://www.51cto.com/article/848855.html",
-      "hot": "RL 的收益究竟从网络的哪里产生？是所有层均等贡献，还是集中在特定层？"
     }
   ]
 }
