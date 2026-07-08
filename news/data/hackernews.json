@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-08T11:18:30+00:00",
+  "updated_at": "2026-07-08T15:04:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Decoding the obfuscated bash script on a Uniqlo t-shirt",
       "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/",
-      "hot": "257"
+      "hot": "826"
     },
     {
       "rank": 2,
-      "title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
-      "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
-      "hot": "224"
+      "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+      "url": "https://mistral.ai/news/robostral-navigate/",
+      "hot": "50"
     },
     {
       "rank": 3,
-      "title": "How to Build a Minimal ZFS NAS Without Synology, QNAP, TrueNAS (2024)",
-      "url": "https://neil.computer/notes/how-to-setup-minimal-zfs-nas-without-truenas/",
-      "hot": "208"
+      "title": "Cloudflare Meerkat - Globally distributed consensus",
+      "url": "https://blog.cloudflare.com/meerkat-introduction/",
+      "hot": "53"
     },
     {
       "rank": 4,
-      "title": "Geosql: A Claude/Codex skill for geospatial data",
-      "url": "https://github.com/dekart-xyz/geosql",
-      "hot": "21"
+      "title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+      "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+      "hot": "362"
     },
     {
       "rank": 5,
-      "title": "Tenda firmware (multiple versions) contains hidden authentication backdoor",
-      "url": "https://kb.cert.org/vuls/id/213560",
-      "hot": "234"
+      "title": "OpenBSD has a use-after-free allowing local privilege escalation to root",
+      "url": "https://nvd.nist.gov/vuln/detail/cve-2026-57589",
+      "hot": "30"
     },
     {
       "rank": 6,
-      "title": "Copy That Floppy – Cambridge guide for preserving data from fragile floppy disks",
-      "url": "https://www.digipres.org/the-floppy-guide/",
-      "hot": "84"
+      "title": "Apple to increase spend with Broadcom to produce billions more U.S. chips",
+      "url": "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/",
+      "hot": "163"
     },
     {
       "rank": 7,
-      "title": "Structure and Interpretation of Computer Programs Video Lectures (1986)",
-      "url": "https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/",
-      "hot": "198"
+      "title": "EVE Online's Carbon engine is now open source: Fenris Creations explains why",
+      "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why",
+      "hot": "187"
     },
     {
       "rank": 8,
-      "title": "Chat Control 1.0 and 2.0 Explained",
-      "url": "https://fightchatcontrol.eu/chat-control-overview",
-      "hot": "692"
+      "title": "How to Build a Minimal ZFS NAS Without Synology, QNAP, TrueNAS (2024)",
+      "url": "https://neil.computer/notes/how-to-setup-minimal-zfs-nas-without-truenas/",
+      "hot": "269"
     },
     {
       "rank": 9,
-      "title": "EVE Online's Carbon engine is now open source: Fenris Creations explains why",
-      "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why",
-      "hot": "59"
+      "title": "NoiseLang: Where N = 5 is a Dirac delta",
+      "url": "https://manualmeida.dev/articles/noiselang/",
+      "hot": "54"
     },
     {
       "rank": 10,
-      "title": "GAO: DOE Is Prematurely Excluding Less Expensive Options for Nuclear Cleanup",
-      "url": "https://www.gao.gov/products/gao-26-108193",
-      "hot": "214"
+      "title": "Japan's Hayabusa2 probe to conduct flyby of Torifune asteroid",
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/20260705_01/",
+      "hot": "41"
     }
   ]
 }
