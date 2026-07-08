@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-08T16:46:45+00:00",
+  "updated_at": "2026-07-08T22:51:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "1826"
+      "hot": "1844"
     },
     {
       "rank": 2,
       "title": "tencent/Hy3",
       "url": "https://huggingface.co/tencent/Hy3",
-      "hot": "545"
+      "hot": "559"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3647"
+      "hot": "3662"
     },
     {
       "rank": 4,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1859"
+      "hot": "1870"
     },
     {
       "rank": 5,
       "title": "InternScience/Agents-A1",
       "url": "https://huggingface.co/InternScience/Agents-A1",
-      "hot": "393"
+      "hot": "398"
     },
     {
       "rank": 6,
       "title": "google/tabfm-1.0.0-pytorch",
       "url": "https://huggingface.co/google/tabfm-1.0.0-pytorch",
-      "hot": "305"
+      "hot": "310"
     },
     {
       "rank": 7,
-      "title": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
-      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
-      "hot": "796"
+      "title": "AliesTaha/fable-traces",
+      "url": "https://huggingface.co/AliesTaha/fable-traces",
+      "hot": "187"
     },
     {
       "rank": 8,
-      "title": "AliesTaha/fable-traces",
-      "url": "https://huggingface.co/AliesTaha/fable-traces",
-      "hot": "185"
+      "title": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
+      "hot": "800"
     },
     {
       "rank": 9,
       "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
       "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2569"
+      "hot": "2574"
     },
     {
       "rank": 10,
       "title": "mistralai/Leanstral-1.5-119B-A6B",
       "url": "https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B",
-      "hot": "162"
+      "hot": "163"
     }
   ]
 }
