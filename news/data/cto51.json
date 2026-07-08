@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-08T01:07:20+00:00",
+  "updated_at": "2026-07-08T04:28:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "都在卷「让大模型多循环几遍」，这个7B模型LoopCoder v2说：多循环一 次就够了",
-      "url": "https://www.51cto.com/article/848731.html",
-      "hot": "论文标题起得很干脆——《Only Loop Once》，只循环一次。背后是来自北京航空航天大学、IQuest Research、澜舟科技和中国人民大学的联合团队。"
+      "title": "数据生成，虚拟仿真，实时推理：前沿物理 AI 技术如何落地产业应用",
+      "url": "https://www.51cto.com/article/848603.html",
+      "hot": "从仿真到推理，从虚拟世界验证到走进真实世界，NVIDIA 构建了一套覆盖硬件算力、仿真工具链与世界基础模型的完整解决方案体系，加速物理 AI 时代到来！"
     },
     {
       "rank": 2,
-      "title": "世界模型太慢？西交大提出Fast LeWorldModel：用「动作前缀并行预测」让动态估计加速四倍",
-      "url": "https://www.51cto.com/article/848730.html",
-      "hot": "西安交通大学研究团队提出了 Fast LeWorldModel（Fast-LeWM），试图从根本上改变世界模型的预测方式：从 step-by-step rollout 变成 trajectory-level parallel prediction。"
+      "title": "手把手带你上手鸿蒙应用开发利器 DevEcoCli",
+      "url": "https://ost.51cto.com/posts/52070",
+      "hot": "手把手带你上手鸿蒙应用开发利器DevEcoCli前言上周（7月2号）我在51CTO平台上做了一场关于鸿蒙应用开发工具DevEcoCli和DevEcoCode的直播，..."
     },
     {
       "rank": 3,
-      "title": "刚刚，首个空间原生的具身视觉基模开源！机器人更会看我们的世界了",
-      "url": "https://www.51cto.com/article/848729.html",
-      "hot": "虽然具身智能这几年确实很火，但真把它们丢进真实场景的时候，我们往往会发现很多问题会迅速回到最基础的一层。"
+      "title": "中国科学院携手全球顶尖机构发布首个十亿参数级的手术视频基础模型SurgMotion！",
+      "url": "https://www.51cto.com/article/848879.html",
+      "hot": "近日，由中国科学院香港创新研究院人工智能与机器人创新中心领衔，联合中国科学院自动化所、香港中文大学等全球顶尖机构，正式发布了全球首个十亿级参数、最大规模数据集练成的手术视频原生基础模型 ——SurgMotion！"
     },
     {
       "rank": 4,
-      "title": "Reddit一张神图疯传！两年后，你的笔记本就能跑Fable 5",
-      "url": "https://www.51cto.com/article/848708.html",
-      "hot": "r/LocalLLaMA社区一张图刷屏AI圈：Fable 5级AI预计2年后可在笔记本上本地运行。"
+      "title": "ASE 2026 | 提示词压缩竟成大模型新漏洞？港科大提出黑盒攻击框架COMA",
+      "url": "https://www.51cto.com/article/848877.html",
+      "hot": "香港科技大学的一项最新研究给出了否定答案。他们发现，这个原本用来 “提效” 的组件，竟然会悄悄重写系统的安全边界，成为大模型应用中的全新攻击面。"
     },
     {
       "rank": 5,
-      "title": "告别 AI“草台班子”：一文读懂 Hermes Kanban 多智能体协同设计",
-      "url": "https://www.51cto.com/article/848706.html",
-      "hot": "早在 2026 年初，业界就有一个趋势：AI 智能体技术栈正在走向“控制面”（审计、权限）与“执行面”（快速迭代）的分化。\nHermes Kanban 的选择非常明确：死守执行面。"
+      "title": "HarmonyOS AdaptiveVideo自适应短视频播放核心技术揭秘（3）",
+      "url": "https://ost.51cto.com/posts/52067",
+      "hot": "HarmonyOSAdaptiveVideo自适应短视频播放核心技术揭秘（3）真机效果展示关键技术点1.自适应沉浸式（AdaptiveImmersion）AdaptiveImmersion...."
     },
     {
       "rank": 6,
-      "title": "Claude的脑子里，也长出了一块「意识」",
-      "url": "https://www.51cto.com/article/848705.html",
-      "hot": "人类的神经科学当中，有一个流传很广的理论叫「全局工作空间理论」。它把大脑比作一堆各自忙自己的专家系统，视觉系统处理视觉，运动系统处理运动，彼此并行，彼此隔离。"
+      "title": "渗透测试 Agent 套件：面向 Claude Code 及六大 AI 编程工具的全自动漏洞赏金框架",
+      "url": "https://www.51cto.com/article/848871.html",
+      "hot": "该框架仅授权用于负责任披露原则下的安全测试，内置rag-builder/工具可从146个资源库（含CTF存档、漏洞赏金报告和载荷集合）构建本地FAISS报告索引，所有破坏性操作均需显式--execute标志激活。"
     },
     {
       "rank": 7,
-      "title": "刚刚，Anthropic切开Claude大脑！AI自发长出类人「意识器官」",
-      "url": "https://www.51cto.com/article/848704.html",
-      "hot": "没人设计过，Claude却在学习预测下一个token时，自发长出了一个和人脑「意识」惊人相似的结构！Anthropic开源「手术刀」J-Lens，第一次读出了AI咽回肚子里的念头。"
+      "title": "一次真实任务复盘：我的 AI 分身为什么第一轮「不听话」？",
+      "url": "https://www.51cto.com/article/848862.html",
+      "hot": "这是一篇问题发现型文章，会话用 ​​my-digital-human​​ 处理「standard-contract-face-auth 真实案例的剩余任务拆解」因为这个需求已经部分开发，我根据AI的相关反馈信息，来明确AI是否真实使用​​my-digital-human​​技能得出具体的需求开发结论。"
     },
     {
       "rank": 8,
-      "title": "Agent 记忆系统：为什么你的 AI 会失忆？",
-      "url": "https://www.51cto.com/article/848703.html",
-      "hot": "长文本中处于 中间位置 的信息最容易被忽略（即 ​​Lost in the Middle​​ 现象）。 把全部历史无差别塞进 Prompt，就像让顾问翻阅公司十年档案。信息过载 反而会导致关键事实被淹没。"
+      "title": "谁在为 Agent 提示注入买单？StakeBench 揭示 Web Agent 的三类受害者风险",
+      "url": "https://www.51cto.com/article/848859.html",
+      "hot": "StakeBench 给出的答案并不复杂，但非常关键：Agent 安全评测必须从攻击视角，走向受害者视角。"
     },
     {
       "rank": 9,
-      "title": "2026年必须搞懂的20个 Agent 工程概念（运行机制篇）：大白话一次讲清",
-      "url": "https://www.51cto.com/article/848702.html",
-      "hot": "在工程上，“检索” 这件事情远没有看起来那么简单。因为 AI 世界的检索不是一个简单的数据库查询，而是一个决策系统：查什么、查多少、如何确保相关性、如何排序等等。"
+      "title": "从一堆乱数据到AI燃料：高质量数据集建设实操指南",
+      "url": "https://www.51cto.com/article/848858.html",
+      "hot": "人工智能正以前所未有的速度融入各行各业，从效率提升到模式创新，从产业升级到生活服务，AI 技术不断突破边界，为数字化转型注入强劲动力，推动社会迈向更智能、高效、便捷的新时代。"
     },
     {
       "rank": 10,
-      "title": "KV Cache 太多时，为什么要做 PD 分离？",
-      "url": "https://www.51cto.com/article/848701.html",
-      "hot": "PD 分离不是为了让 KV Cache 变小，而是为了让 KV Cache 的生产、传输和消费变得可调度。"
+      "title": "RL训练一层就够了！单层RL超越全参数训练，跨任务跨模型跨算法全部验证",
+      "url": "https://www.51cto.com/article/848855.html",
+      "hot": "RL 的收益究竟从网络的哪里产生？是所有层均等贡献，还是集中在特定层？"
     }
   ]
 }
