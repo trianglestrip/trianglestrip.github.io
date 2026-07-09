@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-09T16:38:27+00:00",
+  "updated_at": "2026-07-09T20:13:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Show HN: 18 Words",
-      "url": "https://18words.com/",
-      "hot": "477"
+      "title": "GPT-5.6",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "hot": "703"
     },
     {
       "rank": 2,
-      "title": "EU Parliament greenlights Chat Control 1.0",
-      "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
-      "hot": "450"
+      "title": "GLM 5.2 is nearly as accurate as a human book keeper",
+      "url": "https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark",
+      "hot": "97"
     },
     {
       "rank": 3,
-      "title": "No leap second will be introduced at the end of December 2026",
-      "url": "https://datacenter.iers.org/data/latestVersion/bulletinC.txt",
-      "hot": "121"
+      "title": "ChatGPT Work",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "hot": "257"
     },
     {
       "rank": 4,
-      "title": "Hy3",
-      "url": "https://hy.tencent.com/research/hy3",
-      "hot": "57"
+      "title": "Show HN: 18 Words",
+      "url": "https://18words.com/",
+      "hot": "674"
     },
     {
       "rank": 5,
-      "title": "TLS certificates for internal services done right",
-      "url": "https://tuxnet.dev/posts/tls-for-internal-services/",
-      "hot": "41"
+      "title": "EU Parliament greenlights Chat Control 1.0",
+      "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
+      "hot": "727"
     },
     {
       "rank": 6,
-      "title": "Launch HN: Context.dev (YC S26) – API to get structured data from any website",
-      "url": "https://www.context.dev",
-      "hot": "23"
+      "title": "Hy3",
+      "url": "https://hy.tencent.com/research/hy3",
+      "hot": "245"
     },
     {
       "rank": 7,
-      "title": "A possible future for Damn Interesting",
-      "url": "https://www.damninteresting.com/a-possible-future/",
-      "hot": "32"
+      "title": "Buried Apple Feature Turns an iPhone into the Perfect Kids' Dumb Phone",
+      "url": "https://www.wired.com/story/this-buried-apple-feature-turns-an-iphone-into-the-perfect-kids-dumb-phone/",
+      "hot": "119"
     },
     {
       "rank": 8,
-      "title": "The glass backbone: Why the Army's logistics will break in the next war",
-      "url": "https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/",
-      "hot": "103"
+      "title": "How to Start a Ruby Meetup",
+      "url": "https://guides.rubyevents.org/meetups/",
+      "hot": "32"
     },
     {
       "rank": 9,
-      "title": "PostHog Open Sourced",
-      "url": "https://github.com/PostHog/posthog-foss",
-      "hot": "75"
+      "title": "A possible future for Damn Interesting",
+      "url": "https://www.damninteresting.com/a-possible-future/",
+      "hot": "147"
     },
     {
       "rank": 10,
-      "title": "Opinionated and Easy Pi.dev Configuration",
-      "url": "https://lazypi.org/",
-      "hot": "28"
+      "title": "Girls Just Wanna Have Fast MPMC Queues with Bounded Waiting",
+      "url": "https://nahla.dev/blog/waitfree_queue/",
+      "hot": "83"
     }
   ]
 }
