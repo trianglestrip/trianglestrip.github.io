@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-09T01:22:19+00:00",
+  "updated_at": "2026-07-09T05:13:47+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
-      "title": "当AI开始重写自己：EverMind的自进化智能体框架Raven，正在定义数字生命的下一个形态",
-      "url": "https://www.51cto.com/article/848886.html",
-      "hot": "今天，这个探索走到了一个新的节点：基于自研记忆系统 EverOS 的自进化Harness——Raven Agent 正式发布。"
+      "title": "Codex 与 Claude Code 免登录使用攻略：用 API Key 接入兼容网关",
+      "url": "https://www.51cto.com/article/849010.html",
+      "hot": "很多人想用 Codex 或 Claude Code 辅助写代码、改文档、跑脚本，却不想依赖官方订阅账号反复登录。一个常见做法是：通过 API Key 接入公司网关或兼容的模型服务。"
     },
     {
       "rank": 3,
-      "title": "HarmonyOS 库存提醒元服务卡片：FormExtensionAbility 刷新与点击回跳边界",
-      "url": "https://ost.51cto.com/posts/52073",
-      "hot": "古早程序员老薛，照常每天跟大家分享一些东西。这次聊HarmonyOS元服务卡片里的一个小而硬的场景：库存低位提醒。我的核心判断是，服务卡片..."
+      "title": "OpenAI发布GPT-Live：新一代语音模型，对话体验接近真人！",
+      "url": "https://www.51cto.com/article/849009.html",
+      "hot": "GPT-Live 适合需要流畅对话体验的场景：免提查询、语言练习、实时翻译、需要快速反复交流的任务。如果任务需要搜索或深度推理，建议 Go/Plus/Pro 用户选择 Medium 或 High 推理级别，让后台模型有更多思考时间。"
     },
     {
       "rank": 4,
-      "title": "AI生图免训练提速1000%，办法：最简洁的“三阶段流水线”",
-      "url": "https://www.51cto.com/article/848885.html",
-      "hot": "来自北航、NTU、ETH的研究团队最近做了一个非常简洁的尝试：先低清打草稿，再放大，最后高清补一笔。"
+      "title": "Harness架构下 AI Agent 的系统化评测方法论",
+      "url": "https://www.51cto.com/article/848996.html",
+      "hot": "Anthropic 引用了安全领域的\"瑞士奶酪模型\"（Swiss Cheese Model）：每一层防线都有漏洞（就像每片奶酪都有孔洞），但只要多层防线叠加在一起，就能覆盖绝大多数风险。"
     },
     {
       "rank": 5,
-      "title": "手把手带你上手鸿蒙应用开发利器 DevEcoCli",
-      "url": "https://ost.51cto.com/posts/52070",
-      "hot": "手把手带你上手鸿蒙应用开发利器DevEcoCli前言上周（7月2号）我在51CTO平台上做了一场关于鸿蒙应用开发工具DevEcoCli和DevEcoCode的直播，..."
+      "title": "把业务流程沉淀成高质量 Skill 的实践路径",
+      "url": "https://www.51cto.com/article/848986.html",
+      "hot": "使用Record & Replay创建的Skill，尽管创建流程简单，但它的本质实际是让 AI 去操作页面，这不但有可能影响我们对电脑的操作，还有可能无法稳定复现。如果流程长期一致，可以逐步升级为 API 操作，效率更高并且更稳定。"
     },
     {
       "rank": 6,
-      "title": "中国科学院携手全球顶尖机构发布首个十亿参数级的手术视频基础模型SurgMotion！",
-      "url": "https://www.51cto.com/article/848879.html",
-      "hot": "近日，由中国科学院香港创新研究院人工智能与机器人创新中心领衔，联合中国科学院自动化所、香港中文大学等全球顶尖机构，正式发布了全球首个十亿级参数、最大规模数据集练成的手术视频原生基础模型 ——SurgMotion！"
+      "title": "SDD 实战上篇，从 Vibe Coding 到渐进式 Spec驱动开发",
+      "url": "https://www.51cto.com/article/848970.html",
+      "hot": "AI 把编码变成了最便宜的一环，却把验收、维护和协作变成了更贵的问题。下半场的主矛盾，不是生成，而是正确性。"
     },
     {
       "rank": 7,
-      "title": "ASE 2026 | 提示词压缩竟成大模型新漏洞？港科大提出黑盒攻击框架COMA",
-      "url": "https://www.51cto.com/article/848877.html",
-      "hot": "香港科技大学的一项最新研究给出了否定答案。他们发现，这个原本用来 “提效” 的组件，竟然会悄悄重写系统的安全边界，成为大模型应用中的全新攻击面。"
+      "title": "跨国多学科研究团队发布深度学习情绪识别综述，开启下一代人机交互的情绪理解能力构建",
+      "url": "https://www.51cto.com/article/848963.html",
+      "hot": "情绪识别的研究并不是从深度学习开始的，早期的研究者更像是工匠，他们依赖特征工程，用手工挑选眉毛角度、嘴角弧度、心率变化、皮肤电导波形的统计特征，再用传统分类器去做判断。那时候的模型更像是规则系统，能用，但不稳。"
     },
     {
       "rank": 8,
-      "title": "渗透测试 Agent 套件：面向 Claude Code 及六大 AI 编程工具的全自动漏洞赏金框架",
-      "url": "https://www.51cto.com/article/848871.html",
-      "hot": "该框架仅授权用于负责任披露原则下的安全测试，内置rag-builder/工具可从146个资源库（含CTF存档、漏洞赏金报告和载荷集合）构建本地FAISS报告索引，所有破坏性操作均需显式--execute标志激活。"
+      "title": "金融 Agent 上线之后：四个生产架构、六类威胁与三个负面结果",
+      "url": "https://www.51cto.com/article/848962.html",
+      "hot": "Agent 安全进入强监管金融场景后，重点不只是“能不能防攻击”，而是每一次自动化动作能不能被解释、审计、追责和复盘。"
     },
     {
       "rank": 9,
-      "title": "一次真实任务复盘：我的 AI 分身为什么第一轮「不听话」？",
-      "url": "https://www.51cto.com/article/848862.html",
-      "hot": "这是一篇问题发现型文章，会话用 ​​my-digital-human​​ 处理「standard-contract-face-auth 真实案例的剩余任务拆解」因为这个需求已经部分开发，我根据AI的相关反馈信息，来明确AI是否真实使用​​my-digital-human​​技能得出具体的需求开发结论。"
+      "title": "字节二面：退款加了@Transactional，P0 事故",
+      "url": "https://www.51cto.com/article/848961.html",
+      "hot": "十个写 Spring 的兄弟，九个把 @Transactional 当万能保险，剩下那个……刚把生产库余额字段跑成负数。今天，咱们就把这玩意儿拆个底朝天。"
     },
     {
       "rank": 10,
-      "title": "谁在为 Agent 提示注入买单？StakeBench 揭示 Web Agent 的三类受害者风险",
-      "url": "https://www.51cto.com/article/848859.html",
-      "hot": "StakeBench 给出的答案并不复杂，但非常关键：Agent 安全评测必须从攻击视角，走向受害者视角。"
+      "title": "2026 年爆火的 Harness Engineering 到底是什么？从原理到实战一文讲透",
+      "url": "https://www.51cto.com/article/848959.html",
+      "hot": "AI 编程的瓶颈不在模型多聪明，而在你围绕模型搭的那套「缰绳」够不够好。本文从概念到五大核心模块再到代码实战，带你彻底搞懂 Harness Engineering。"
     }
   ]
 }

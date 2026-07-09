@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-09T01:22:20+00:00",
+  "updated_at": "2026-07-09T05:13:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "John Deere owners will get the right to repair equipment under FTC settlement",
       "url": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
-      "hot": "219"
+      "hot": "536"
     },
     {
       "rank": 2,
-      "title": "Separating signal from noise in coding evaluations",
-      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/",
-      "hot": "148"
+      "title": "Chatto is now open source",
+      "url": "https://www.hmans.dev/blog/chatto-is-open-source",
+      "hot": "839"
     },
     {
       "rank": 3,
-      "title": "A software engineering interview question I like: computing the median",
-      "url": "https://krisshamloo.com/blog/007",
-      "hot": "11"
+      "title": "Separating signal from noise in coding evaluations",
+      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/",
+      "hot": "190"
     },
     {
       "rank": 4,
-      "title": "Chatto is now open source",
-      "url": "https://www.hmans.dev/blog/chatto-is-open-source",
-      "hot": "720"
+      "title": "Cloudflare Drop",
+      "url": "https://www.cloudflare.com/drop/",
+      "hot": "341"
     },
     {
       "rank": 5,
-      "title": "We made Grok 4.5, GPT-5.5, and Claude build the same apps",
-      "url": "https://www.tryai.dev/blog/grok-4.5-vs-gpt-5.5-vs-claude-build-off",
-      "hot": "39"
+      "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+      "url": "https://mistral.ai/news/robostral-navigate/",
+      "hot": "445"
     },
     {
       "rank": 6,
-      "title": "Remote Attestation",
-      "url": "https://www.liamcvw.com/p/remote-attestation",
-      "hot": "14"
+      "title": "Patching MechCommander's \"left arm bug\" for fun and profit",
+      "url": "https://mhloppy.com/2026/05/mechcommander-weapons-left-arm-bug-fix/",
+      "hot": "39"
     },
     {
       "rank": 7,
-      "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
-      "url": "https://mistral.ai/news/robostral-navigate/",
-      "hot": "408"
+      "title": "Benchmarking coding agents on Databricks' multi-million line codebase",
+      "url": "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
+      "hot": "33"
     },
     {
       "rank": 8,
-      "title": "Unicode's transliteration rules are Turing-complete",
-      "url": "https://seriot.ch/computation/uts35/",
-      "hot": "24"
+      "title": "Show HN: Yamanote.fun – A complete soundscape for Tokyo's Yamanote line",
+      "url": "https://www.yamanote.fun/",
+      "hot": "100"
     },
     {
       "rank": 9,
-      "title": "Cloudflare Drop",
-      "url": "https://www.cloudflare.com/drop/",
-      "hot": "233"
+      "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+      "url": "https://microsoft.github.io/flint-chart/#/",
+      "hot": "236"
     },
     {
       "rank": 10,
-      "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
-      "url": "https://microsoft.github.io/flint-chart/#/",
-      "hot": "195"
+      "title": "Cargo-nextest: 3x faster than cargo test, per-test isolation, first-class CI",
+      "url": "https://nexte.st/",
+      "hot": "20"
     }
   ]
 }

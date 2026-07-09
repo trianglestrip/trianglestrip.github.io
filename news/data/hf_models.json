@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-08T22:51:21+00:00",
+  "updated_at": "2026-07-09T05:14:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "1844"
+      "hot": "1870"
     },
     {
       "rank": 2,
       "title": "tencent/Hy3",
       "url": "https://huggingface.co/tencent/Hy3",
-      "hot": "559"
+      "hot": "571"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3662"
+      "hot": "3676"
     },
     {
       "rank": 4,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1870"
+      "hot": "1877"
     },
     {
       "rank": 5,
       "title": "InternScience/Agents-A1",
       "url": "https://huggingface.co/InternScience/Agents-A1",
-      "hot": "398"
+      "hot": "404"
     },
     {
       "rank": 6,
       "title": "google/tabfm-1.0.0-pytorch",
       "url": "https://huggingface.co/google/tabfm-1.0.0-pytorch",
-      "hot": "310"
+      "hot": "314"
     },
     {
       "rank": 7,
       "title": "AliesTaha/fable-traces",
       "url": "https://huggingface.co/AliesTaha/fable-traces",
-      "hot": "187"
+      "hot": "188"
     },
     {
       "rank": 8,
       "title": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
       "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
-      "hot": "800"
+      "hot": "805"
     },
     {
       "rank": 9,
-      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2574"
+      "title": "mistralai/Leanstral-1.5-119B-A6B",
+      "url": "https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B",
+      "hot": "168"
     },
     {
       "rank": 10,
-      "title": "mistralai/Leanstral-1.5-119B-A6B",
-      "url": "https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B",
-      "hot": "163"
+      "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "hot": "1102"
     }
   ]
 }
