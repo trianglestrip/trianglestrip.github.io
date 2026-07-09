@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-09T08:45:20+00:00",
+  "updated_at": "2026-07-09T11:35:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "John Deere owners will get the right to repair equipment under FTC settlement",
       "url": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02",
-      "hot": "766"
+      "hot": "919"
     },
     {
       "rank": 2,
       "title": "Spider venom kills varroa mites without harming honeybees",
       "url": "https://connectsci.au/news/news-parent/9703/Spider-venom-kills-varroa-mites-without-harming",
-      "hot": "98"
+      "hot": "154"
     },
     {
       "rank": 3,
-      "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
-      "url": "https://github.com/malisper/pgrust",
-      "hot": "92"
+      "title": "Meta reuses old RAM in new servers with custom bridge chip",
+      "url": "https://www.networkworld.com/article/4192827/meta-reuses-old-ram-in-new-servers-with-custom-bridge-chip.html",
+      "hot": "75"
     },
     {
       "rank": 4,
-      "title": "Cargo-nextest: 3x faster than cargo test, per-test isolation, first-class CI",
-      "url": "https://nexte.st/",
-      "hot": "81"
+      "title": "My Thoughts on the Bun Rust Rewrite",
+      "url": "https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html",
+      "hot": "132"
     },
     {
       "rank": 5,
-      "title": "Benchmarking coding agents on Databricks' multi-million line codebase",
-      "url": "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
-      "hot": "79"
+      "title": "Bonnie Tyler, singer of Total Eclipse of the Heart, dies aged 75",
+      "url": "https://www.bbc.com/news/articles/cg5pd9z2487o",
+      "hot": "10"
     },
     {
       "rank": 6,
-      "title": "Cloudflare Drop",
-      "url": "https://www.cloudflare.com/drop/",
-      "hot": "413"
+      "title": "Why developers are ditching GitHub for Codeberg and self-hosting alternatives",
+      "url": "https://www.howtogeek.com/why-developers-are-ditching-github-for-codeberg-and-self-hosting-alternatives/",
+      "hot": "163"
     },
     {
       "rank": 7,
-      "title": "Separating signal from noise in coding evaluations",
-      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/",
-      "hot": "212"
+      "title": "EU Parliament greenlights Chat Control 1.0 – Breyer: \"Our children lose out\"",
+      "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
+      "hot": "41"
     },
     {
       "rank": 8,
-      "title": "Remote Attestation",
-      "url": "https://www.liamcvw.com/p/remote-attestation",
-      "hot": "89"
+      "title": "I Built the Only 2026 WWII Jeep",
+      "url": "https://www.theautopian.com/i-bet-my-company-on-an-impossible-jeep-build-then-a-miracle-happened/",
+      "hot": "62"
     },
     {
       "rank": 9,
-      "title": "Rewriting Bun in Rust",
-      "url": "https://bun.com/blog/bun-in-rust",
-      "hot": "553"
+      "title": "In-browser programmable robot simulator",
+      "url": "https://bittlex-sim.petoi.com/",
+      "hot": "29"
     },
     {
       "rank": 10,
-      "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
-      "url": "https://microsoft.github.io/flint-chart/#/",
-      "hot": "273"
+      "title": "Cargo-nextest: 3x faster than cargo test, per-test isolation, first-class CI",
+      "url": "https://nexte.st/",
+      "hot": "121"
     }
   ]
 }

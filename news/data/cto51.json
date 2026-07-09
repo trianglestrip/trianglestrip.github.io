@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-09T08:45:20+00:00",
+  "updated_at": "2026-07-09T11:35:51+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
+      "title": "算法的层级与类型：一文读懂AI算法的族谱与选用之道",
+      "url": "https://www.51cto.com/article/849058.html",
+      "hot": "这篇文章，我们就来系统梳理AI算法的层级、类型、适应场景和应用策略。"
+    },
+    {
+      "rank": 3,
+      "title": "SDD 实战下篇，从渐进式 SDD 到 Lattice Harness：AI Coding 的团队级闭环",
+      "url": "https://www.51cto.com/article/849056.html",
+      "hot": "如果说上篇讲的是“怎么让 AI Coding 不要从一句话需求直接跳到随机代码”，那这篇要继续回答另一个更难的问题：当团队已经有了 Spec，谁来证明这次交付真的做对了？"
+    },
+    {
+      "rank": 4,
+      "title": "从「失控」到「可控」：我用问题驱动迭代救了我的 AI 编程分身",
+      "url": "https://www.51cto.com/article/849050.html",
+      "hot": "我把症状记进 ​​skill-issues.jsonl​​，最后收敛成 5 个有效问题，覆盖执行流程、规则缺失、输出格式三个维度。下面是用问题驱动迭代，在 v2.4.0 + v2.4.1 两轮内修完并拉到 100% 测试通过的过程。"
+    },
+    {
+      "rank": 5,
+      "title": "手把手带你上手鸿蒙应用开发利器 DevEcoCode",
+      "url": "https://ost.51cto.com/posts/52199",
+      "hot": "手把手带你上手鸿蒙应用开发利器DevEcoCode前言接上篇《手把手带你上手鸿蒙应用开发利器DevEcoCli》DevEcoCli是一个面向HarmonyOS应用开发..."
+    },
+    {
+      "rank": 6,
       "title": "GPT-Live突袭发布！Google、xAI扎堆卷入语音赛道，GPT-Live凭什么成为OpenAI最智能的语音模型？",
       "url": "https://www.51cto.com/article/849046.html",
       "hot": "GPT-Live 是 OpenAI 全新一代的语音模型，专门用来驱动 ChatGPT 的“语音模式”，核心卖点是让 AI 说话更像真人聊天。"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "苦学四年，抵不过AI一次更新：当你的专业正在“坍塌”，该怎么办？",
       "url": "https://www.51cto.com/article/849043.html",
       "hot": "AI正在像GPS颠覆地图记忆一样，彻底瓦解网络攻击的技术门槛：过去只有国家级黑客掌握的钓鱼、漏洞利用、中间人攻击，如今被AI压缩为“即点即用”的能力，攻击速度更快、规模更大、伪装更逼真，传统依赖特征识别和经验判断的安全体系正遭遇结构性失效。"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "如何写高质量、低Token消耗的Loops，Claude官方教程来了",
       "url": "https://www.51cto.com/article/849034.html",
       "hot": "眼下，AI 来到了“自动驾驶”时代，你设定好目的地（目标），它自己会规划路线、自己驾驶、观察路况、修正方向，直到把你送到地方，全程不需要你手动操作方向盘。"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "现代AI之父新作：13个大模型实测，检索agent真的可信吗？",
       "url": "https://www.51cto.com/article/849033.html",
       "hot": "13个大模型在上网搜索时是否容易被虚假内容误导？结果显示，模型安全性差异显著，Claude表现最佳，但仍有沉默漂移和误拒风险；GPT在新场景中极易被攻击。这对依赖AI搜索的用户安全至关重要，提醒我们需全面评估模型及其防御机制。"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "GPT-6要来了！OpenAI彻底抛弃4T旧底座",
       "url": "https://www.51cto.com/article/849031.html",
       "hot": "OpenAI紧急提档GPT-6，彻底抛弃4T旧底座？而且，GPT-5.6正式解禁，周四就要上线！Sol、Terra、Luna三款模型全面开放，编码、科研、日常任务全覆盖。已经有早期测试者狂赞Sol模型「永不放弃」，现在，全体开发者已经在摩拳擦掌了。"
-    },
-    {
-      "rank": 7,
-      "title": "刚刚，全球首个具身专属的MoE视频模型，开源了！",
-      "url": "https://www.51cto.com/article/849030.html",
-      "hot": "全球首个面向具身智能的大规模MoE视频基础模型、视频物理引擎。"
-    },
-    {
-      "rank": 8,
-      "title": "60000小时炼出新开源VLA！20多种机器人都能用",
-      "url": "https://www.51cto.com/article/849029.html",
-      "hot": "一个新VLA（视觉-语言-动作），就这么水灵灵地被“喂”了出来，而且还是开源的那种。"
-    },
-    {
-      "rank": 9,
-      "title": "OpenAI深夜放出GPT-Live，ChatGPT终于像真人一样说话",
-      "url": "https://www.51cto.com/article/849027.html",
-      "hot": "这款新一代语音模型，把 ChatGPT Voice 往前推了一步：人与 AI 的交流开始更像一场真正的对话。"
-    },
-    {
-      "rank": 10,
-      "title": "Grok4.5来了！马斯克亲自背书：跑分逼近Opus，超低成本，问题是开发者该怎么用？",
-      "url": "https://www.51cto.com/article/849025.html",
-      "hot": "Grok4.5把“强模型”和“开发工具入口”绑得更紧了。从这个角度看，Grok4.5适合先当一个便宜、能跑、偏长任务的执行模型来试。复杂架构决策、生产变更和高风险合并，仍然要交给人审。"
     }
   ]
 }

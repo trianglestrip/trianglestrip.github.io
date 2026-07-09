@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-07-09T08:45:17+00:00",
+  "updated_at": "2026-07-09T11:35:47+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
+      "title": "iOS App的商业级环境检测手段 - 基于某讯A<E Framework 详解",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2115245",
+      "hot": "[md]# iOS App的商业级环境检测手段 - 基于某讯&amp;#197; anort -&gt; anogs\n```\n\n### 2.2 `anogs`核心分析\n\n#### 2.2.1 字符串加密模式\n\n直接用IDA Pro打开`anogs`二进制，左侧可以看到其导出表没有被混淆，先看`_AnoS ..."
+    },
+    {
+      "rank": 3,
       "title": "某rust开发语音识别软件获取专业版授权",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114894",
       "hot": "[md]## 1. 前言\n\n目标是一个基于 **Tauri 2.x** 框架构建的桌面应用程序，后端使用 Rust 编写，前端 WebView 渲染。该应用具有用户登录认证和许可证激活系统，未登录或未激活状态下部分功能受限。\n\n本文记录从零开始的完整本地破解过程，不涉及具体软件名称。\n\n ..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "iOS DeviceCheck：苹果设备身份链与黑灰产对抗的攻防博弈",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114213",
       "hot": "[md]## 一、背景 &amp; 场景\n\n### 1.1 环境\n\n设备型号:iphone 14、iOS 版本:16.4.1、越狱方案:Dopamine\n\n工具链：Frida16.1.4、IDA pro 9.2\n\n### 1.2 引言\n\n对于大多数互联网风控攻防业务来说，真正棘手的往往不是 ..."
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "title": "逆向分析某排八字软件的过程",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114056",
+      "hot": "[md]# 逆向排八字程序过程\n\n## 信息\n- 网：aHR0cDovL25mYmF6aS5jb20vcWl0YS9Eb3dubG9hZC5odG0=\n- 文件名：排八字.exe\n- 大小：3,249,664 字节\n\n## 初步分析\n\n看到了这个东西要安装 .NET 运行时，最近想找 .NET  ..."
+    },
+    {
+      "rank": 6,
       "title": "破解 Trae CN 加密协议",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113927",
       "hot": ""
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "领域特定虚拟机DSVM指令完整还原",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113743",
       "hot": "[md]# 领域特定虚拟机DSVM指令完整还原\n\n&gt; **副标题**：一款针对 UE4 移动游戏外挂的深度混淆分析与反混淆实践  \n&gt; **日期**：2026-06-21  \n&gt; **标签**：ARM64 · Unicorn · OLLVM · DSVM · UE4 · PhysX · 反混淆 · 字节码解释器\n\n---\n\n## 摘要\n\n本文记 ..."
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "【多栈实战】某黑产软件全链路逆向实录 (下)",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113640",
       "hot": "【多栈实战】\n某黑产软件全链路逆向实录 (下) ——\n从VIP裸链到金币视频JWT泄露越权实战 + 总结\n\n开篇严正声明：本文仅用于学习逆向工程与网络安全相关技术，未掺杂任何不良目的。文中的软件已对其名字、图标及相关 ..."
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Sality病毒样本分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113452",
       "hot": "[md]# 前言\n本人小白一枚，第一次发帖，写的不好求轻喷 \n样本来源[https://www.52pojie.cn/thread-2104234-1-1.html](https://www.52pojie.cn/thread-2104234-1-1.html)\n\n# 样本概述\n样本为Sality病毒变种 ..."
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "绕过DirtySepolicy 用户层检测root",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113265",
       "hot": "[md]# APatch KPM 开发：绕过 DirtySepolicy / Duck Detector 的 SELinux Root 检测\n\n&gt; 从 30 次死机重启中学到的：不是所有内核函数都能 hook，不是所有 syscall 都会经过文件系统，不是所有 kfunc 都存在于你的内核版 ..."
-    },
-    {
-      "rank": 9,
-      "title": "【整活儿向】分析一款RPG游戏让足球赛小游戏敌方进球给我方白送分并制作修改器",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2112391",
-      "hot": "[md]\n世界杯马上要开幕了，来聊个跟足球有关系的修改吧，这是一款由轨迹系列的游戏厂商早年开发的一款RPG游戏，分析一下如何通过技术手段让MiniGame的足球赛中，敌方进球给我方白送分，再分析一下免CD、一击必杀和无敌 ..."
-    },
-    {
-      "rank": 10,
-      "title": "【原创C&C++】SysRestoreDriver - 从零实现基于写时重定向的 NTFS 卷过滤还原驱动",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2112307",
-      "hot": "[md]# SysRestoreDriver：基于写时重定向的 NTFS 卷过滤还原驱动设计与实现\n\n\n\n## 〇、前言\n\n这是一个 Windows 内核态卷过滤驱动，做的事情是：**开启保护后，系统盘上任何写入都会被悄悄重定向到空闲扇区。重启之 ..."
     }
   ]
 }
