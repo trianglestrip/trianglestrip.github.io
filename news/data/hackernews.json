@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-10T12:18:14+00:00",
+  "updated_at": "2026-07-10T15:04:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "GPT-5.6",
-      "url": "https://openai.com/index/gpt-5-6/",
-      "hot": "1359"
+      "title": "Write code like a human will maintain it",
+      "url": "https://unstack.io/write-code-like-a-human-will-maintain-it",
+      "hot": "106"
     },
     {
       "rank": 2,
-      "title": "In Emacs, Everything Looks Like a Service",
-      "url": "http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html",
-      "hot": "60"
+      "title": "Late Bronze Age Collapse",
+      "url": "https://acoup.blog/2026/01/30/collections-the-late-bronze-age-collapse-a-very-brief-introduction/",
+      "hot": "127"
     },
     {
       "rank": 3,
-      "title": "Show HN: Getting GLM 5.2 running on my slow computer",
-      "url": "https://github.com/JustVugg/colibri",
-      "hot": "735"
+      "title": "Successful Companies Go Blind",
+      "url": "https://ianreppel.org/how-successful-companies-go-blind/",
+      "hot": "31"
     },
     {
       "rank": 4,
-      "title": "EU Parliament greenlights Chat Control 1.0",
-      "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
-      "hot": "1458"
+      "title": "Scarf has moved away from Haskell",
+      "url": "https://avi.press/posts/2026-07-10-after-7-years-in-production-scarf-has-reluctantly-moved-away-from-haskell.html",
+      "hot": "39"
     },
     {
       "rank": 5,
-      "title": "The mathematical secrets of Barcelona's Sagrada Familia",
-      "url": "https://mappingignorance.org/2026/06/30/sagrada-familia/",
-      "hot": "10"
+      "title": "GPT-5.6",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "hot": "1433"
     },
     {
       "rank": 6,
-      "title": "Train sim created by just one person is being called the best ever made",
-      "url": "https://kotaku.com/a-train-sim-created-by-just-one-person-is-being-called-the-best-ever-made-2000699429",
-      "hot": "668"
+      "title": "My burner email blocklist blocked me",
+      "url": "https://benjamin.piouffle.com/blog/burner-email-blocklists/",
+      "hot": "10"
     },
     {
       "rank": 7,
-      "title": "EU Commission: addictive design Instagram and Facebook in breach of the DSA",
-      "url": "https://ec.europa.eu/commission/presscorner/home/en",
-      "hot": "37"
+      "title": "The mathematical secrets of Barcelona's Sagrada Familia",
+      "url": "https://mappingignorance.org/2026/06/30/sagrada-familia/",
+      "hot": "54"
     },
     {
       "rank": 8,
-      "title": "Show HN: 18 Words",
-      "url": "https://18words.com/",
-      "hot": "1027"
+      "title": "Good Tools Are Invisible",
+      "url": "https://www.gingerbill.org/article/2026/07/10/good-tools-are-invisible/",
+      "hot": "116"
     },
     {
       "rank": 9,
-      "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
-      "url": "https://github.com/malisper/pgrust",
-      "hot": "719"
+      "title": "In Emacs, Everything Looks Like a Service",
+      "url": "http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html",
+      "hot": "100"
     },
     {
       "rank": 10,
-      "title": "Apple Silicon Exec Explains Mac Mini AI Demand and On-Device Future",
-      "url": "https://www.macrumors.com/2026/07/06/apple-silicon-exec-explains-mac-mini-ai-demand/",
-      "hot": "98"
+      "title": "Show HN: Getting GLM 5.2 running on my slow computer",
+      "url": "https://github.com/JustVugg/colibri",
+      "hot": "787"
     }
   ]
 }

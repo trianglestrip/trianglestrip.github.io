@@ -1,7 +1,7 @@
 {
   "source": "newsmth",
   "title": "水木社区",
-  "updated_at": "2026-07-10T12:17:21+00:00",
+  "updated_at": "2026-07-10T15:04:05+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "Re: 出手报告：最后一套京房也卖了。",
-      "url": "https://wap.newsmth.net/article/32d597871bf4f4062b4a832f19c906f2?title=%E4%BA%8C%E6%89%8B%E6%88%BF%E4%BA%A4%E6%B5%81&from=home",
-      "hot": "他们家分家了，他说的这些，是一个老父亲和两个儿子的资产，人家家里各有打算吧"
-    },
-    {
-      "rank": 3,
       "title": "Re: 这车又又烧了，网上的视频基本都已OTA了",
       "url": "https://wap.newsmth.net/article/fe39d97d88c913231e63e3b6bfb78a27?title=%E6%B1%BD%E8%BD%A6%E4%B8%96%E7%95%8C&from=home",
       "hot": "因为北京企业，完全无视国家法律法规"
+    },
+    {
+      "rank": 3,
+      "title": "Re: 出手报告：最后一套京房也卖了。",
+      "url": "https://wap.newsmth.net/article/32d597871bf4f4062b4a832f19c906f2?title=%E4%BA%8C%E6%89%8B%E6%88%BF%E4%BA%A4%E6%B5%81&from=home",
+      "hot": "他们家分家了，他说的这些，是一个老父亲和两个儿子的资产，人家家里各有打算吧"
     },
     {
       "rank": 4,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "总有人提三环，为啥我一年也去不了几次三环？",
-      "url": "https://wap.newsmth.net/article/2904ad621c4be88f98991c8f585ceb43?title=%E4%BA%8C%E6%89%8B%E6%88%BF%E4%BA%A4%E6%B5%81&from=home",
-      "hot": "是北京多数人都在三环以内上班吗？买房不能离三环太远。我进三环的几种情况，工作外出、约人吃饭、乘车经过。"
-    },
-    {
-      "rank": 9,
       "title": "Re: [讨论]这种婚姻还有必要坚持吗？",
       "url": "https://wap.newsmth.net/article/4114ed73a0e03c774e4b5365ec29efa2?title=%E7%A6%BB%E5%A9%9A&from=home",
       "hot": "为了给孩子一个爸爸吗？能理解，但是你很不容易"
     },
     {
+      "rank": 9,
+      "title": "一个提高数据库连接效率的方法-自愈式连接池",
+      "url": "https://wap.newsmth.net/article/7229bc9c438dc2ce389df0b48ccdf5f2?title=C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80&from=home",
+      "hot": "有一个提高效率的方法，完美解决了当年的数据库连接，长连接和短连接之争。 数据库连接句柄打开开销较大，一般需要30~40ms，如果在功能模块里开，性能降低一半不止。如果常开，在多线程服务器环境不合适。 所以采用了数据库连接池，虽然很多数据库提供了内建的连接池，那与我无关。 连接池在开始时是一个连接也不开。第一个使用者取用……"
+    },
+    {
       "rank": 10,
-      "title": "中国人怎么这么迷外国球队？",
-      "url": "https://wap.newsmth.net/article/2b51d8554ba3539667661a8180f69562?title=%E5%9B%BD%E9%99%85%E8%B6%B3%E7%90%83&from=home",
-      "hot": "无论是国家队还是俱乐部，无论是巴西阿根廷，还是巴萨阿森纳。 天天跟打了鸡血似的，跟着一堆八竿子打不着的外国人心情跌宕起伏。 犯得上吗？ 不觉得有点贱吗？ 我踢了几十年球，不迷任何一个外国队，也不迷任何一个外国人。当然，我有赞赏的球员，比如大罗。 但大罗被黑了，甚至被打了，对我而言，是无所谓的事。 国足虽然很烂，但唯一让……"
+      "title": "总有人提三环，为啥我一年也去不了几次三环？",
+      "url": "https://wap.newsmth.net/article/2904ad621c4be88f98991c8f585ceb43?title=%E4%BA%8C%E6%89%8B%E6%88%BF%E4%BA%A4%E6%B5%81&from=home",
+      "hot": "是北京多数人都在三环以内上班吗？买房不能离三环太远。我进三环的几种情况，工作外出、约人吃饭、乘车经过。"
     }
   ]
 }
