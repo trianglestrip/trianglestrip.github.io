@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-10T02:15:42+00:00",
+  "updated_at": "2026-07-10T09:55:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "tencent/Hy3",
       "url": "https://huggingface.co/tencent/Hy3",
-      "hot": "616"
+      "hot": "636"
     },
     {
       "rank": 2,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "1933"
+      "hot": "1946"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3729"
+      "hot": "3749"
     },
     {
       "rank": 4,
       "title": "InternScience/Agents-A1",
       "url": "https://huggingface.co/InternScience/Agents-A1",
-      "hot": "436"
+      "hot": "450"
     },
     {
       "rank": 5,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1903"
+      "hot": "1911"
     },
     {
       "rank": 6,
       "title": "google/tabfm-1.0.0-pytorch",
       "url": "https://huggingface.co/google/tabfm-1.0.0-pytorch",
-      "hot": "330"
+      "hot": "339"
     },
     {
       "rank": 7,
+      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "hot": "198"
+    },
+    {
+      "rank": 8,
       "title": "AliesTaha/fable-traces",
       "url": "https://huggingface.co/AliesTaha/fable-traces",
       "hot": "197"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "froggeric/Qwen-Fixed-Chat-Templates",
       "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
-      "hot": "822"
-    },
-    {
-      "rank": 9,
-      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "hot": "187"
+      "hot": "827"
     },
     {
       "rank": 10,
       "title": "mistralai/Leanstral-1.5-119B-A6B",
       "url": "https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B",
-      "hot": "179"
+      "hot": "181"
     }
   ]
 }
