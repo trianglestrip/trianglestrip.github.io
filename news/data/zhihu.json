@@ -1,69 +1,68 @@
 {
   "source": "zhihu",
   "title": "知乎热榜",
-  "updated_at": "2026-07-10T20:05:10+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-07-10T21:14:47+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "《功夫女足》首支长预告曝光，张小斐、迪丽热巴带队与各路高手功夫大乱斗，看完预告你期待这部电影吗？",
       "url": "https://www.zhihu.com/question/2058924914954827300",
-      "hot": "695"
+      "hot": "310"
     },
     {
       "rank": 2,
-      "title": "长十乙的「网系回收」和星舰的「筷子夹火箭」、以及猎鹰火箭相比，哪个技术难度更大，应用前景更好？",
-      "url": "https://www.zhihu.com/question/2058873625373930494",
-      "hot": "617"
+      "title": "怎样看待育碧紧急禁止《刺客信条：黑旗 记忆重置》的所有直播？",
+      "url": "https://www.zhihu.com/question/2057907070880442102",
+      "hot": "293"
     },
     {
       "rank": 3,
-      "title": "巴威减弱由强台风级改为台风级，可能不会擦过台湾岛，预计12日登陆浙江福建，当地情况如何？可做哪些准备？",
-      "url": "https://www.zhihu.com/question/2058543803955241209",
-      "hot": "564"
+      "title": "世界杯 1/4 决赛，西班牙 vs 比利时，如何评价本场比赛？",
+      "url": "https://www.zhihu.com/question/2058965616472450804",
+      "hot": "207"
     },
     {
       "rank": 4,
-      "title": "怎样看待育碧紧急禁止《刺客信条：黑旗 记忆重置》的所有直播？",
-      "url": "https://www.zhihu.com/question/2057907070880442102",
-      "hot": "297"
+      "title": "如何看待丘成桐回应「清华求真书院有学生未过考核」称将进一步改革招生方式，希望招到真正热爱数学的学生？",
+      "url": "https://www.zhihu.com/question/2058954188344616495",
+      "hot": "159"
     },
     {
       "rank": 5,
-      "title": "2026 MSI 败者组半决赛 LYON 3:0 爆冷淘汰 G2，如何评价这场比赛？",
-      "url": "https://www.zhihu.com/question/2058931519964632452",
-      "hot": "279"
+      "title": "长征十号乙运载火箭成功实现一子级可控回收，这一技术有多难？此次成功回收具有哪些重要意义？",
+      "url": "https://www.zhihu.com/question/2058516301257994660",
+      "hot": "159"
     },
     {
       "rank": 6,
       "title": "台风「巴威」来临，广东 IP 劝江浙沪网友囤货，这反映了哪些地域文化差异与应急心态？",
       "url": "https://www.zhihu.com/question/2058370202128195965",
-      "hot": "270"
+      "hot": "158"
     },
     {
       "rank": 7,
-      "title": "如何看待丘成桐回应「清华求真书院有学生未过考核」称将进一步改革招生方式，希望招到真正热爱数学的学生？",
-      "url": "https://www.zhihu.com/question/2058954188344616495",
-      "hot": "261"
+      "title": "姆巴佩罚点前被两次叫停、等待超 3 分钟，最终罚失点球，怎样看待主裁的做法？对姆巴佩影响有多大？",
+      "url": "https://www.zhihu.com/question/2058868557505639714",
+      "hot": "158"
     },
     {
       "rank": 8,
-      "title": "姆巴佩罚点前被两次叫停、等待超 3 分钟，最终罚失点球，怎样看待主裁的做法？对姆巴佩影响有多大？",
-      "url": "https://www.zhihu.com/question/2058868557505639714",
-      "hot": "248"
-    },
-    {
-      "rank": 9,
-      "title": "一位家长说自己不限制孩子玩手机，等到孩子玩腻了、感觉无聊了就不玩了，请问这有可能吗？",
-      "url": "https://www.zhihu.com/question/2056407322340103396",
+      "title": "长十乙的「网系回收」和星舰的「筷子夹火箭」、以及猎鹰火箭相比，哪个技术难度更大，应用前景更好？",
+      "url": "https://www.zhihu.com/question/2058873625373930494",
       "hot": "148"
     },
     {
+      "rank": 9,
+      "title": "2026 MSI 败者组半决赛 LYON 3:0 爆冷淘汰 G2，如何评价这场比赛？",
+      "url": "https://www.zhihu.com/question/2058931519964632452",
+      "hot": "147"
+    },
+    {
       "rank": 10,
-      "title": "晋江鞋厂火灾致 28 死，员工千人却仅 12 人参保，这种乱象背后存在哪些问题？",
-      "url": "https://www.zhihu.com/question/2058823246980571934",
-      "hot": "137"
+      "title": "巴威减弱由强台风级改为台风级，可能不会擦过台湾岛，预计12日登陆浙江福建，当地情况如何？可做哪些准备？",
+      "url": "https://www.zhihu.com/question/2058543803955241209",
+      "hot": "127"
     }
   ]
 }
