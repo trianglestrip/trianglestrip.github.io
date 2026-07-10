@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-09T22:55:57+00:00",
+  "updated_at": "2026-07-10T02:15:27+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
-      "title": "算法的层级与类型：一文读懂AI算法的族谱与选用之道",
-      "url": "https://www.51cto.com/article/849058.html",
-      "hot": "这篇文章，我们就来系统梳理AI算法的层级、类型、适应场景和应用策略。"
+      "title": "六种 Agent 架构怎么选？一篇讲透 ReAct、Workflow、Planner-Executor、Multi-Agent、Supervisor/Swarm",
+      "url": "https://www.51cto.com/article/849132.html",
+      "hot": "ReAct 是所有复杂架构的地基，绕不开也没必要绕开。它的全称是 Reason（推理）加 Act（行动），核心就是让模型在\"思考—行动—观察\"这个循环里反复迭代，直到任务完成。"
     },
     {
       "rank": 3,
-      "title": "SDD 实战下篇，从渐进式 SDD 到 Lattice Harness：AI Coding 的团队级闭环",
-      "url": "https://www.51cto.com/article/849056.html",
-      "hot": "如果说上篇讲的是“怎么让 AI Coding 不要从一句话需求直接跳到随机代码”，那这篇要继续回答另一个更难的问题：当团队已经有了 Spec，谁来证明这次交付真的做对了？"
+      "title": "清华AI数学家来了！从想法一路推到定理，参与完成84页量子算法论文",
+      "url": "https://www.51cto.com/article/849130.html",
+      "hot": "此前，清华大学智能产业研究院（AIR）院长刘洋教授团队，发布了一个面向数学研究的智能体系统——AIM。"
     },
     {
       "rank": 4,
-      "title": "从「失控」到「可控」：我用问题驱动迭代救了我的 AI 编程分身",
-      "url": "https://www.51cto.com/article/849050.html",
-      "hot": "我把症状记进 ​​skill-issues.jsonl​​，最后收敛成 5 个有效问题，覆盖执行流程、规则缺失、输出格式三个维度。下面是用问题驱动迭代，在 v2.4.0 + v2.4.1 两轮内修完并拉到 100% 测试通过的过程。"
+      "title": "阿里云与上海交大三篇论文入选顶会ECCV 2026，DiT推理算力最高节省近90%",
+      "url": "https://www.51cto.com/article/849127.html",
+      "hot": "7月9日消息，欧洲计算机视觉顶级会议ECCV 2026日前公布结果，阿里云与上海交通大学张林峰教授团队合作的3篇论文被主会收录，研究方向均聚焦Diffusion Transformer（DiT）架构下的高效推理加速，涵盖时序误差校正、自适应特征分解、时空令牌筛选三条技术路线。"
     },
     {
       "rank": 5,
-      "title": "手把手带你上手鸿蒙应用开发利器 DevEcoCode",
-      "url": "https://ost.51cto.com/posts/52199",
-      "hot": "手把手带你上手鸿蒙应用开发利器DevEcoCode前言接上篇《手把手带你上手鸿蒙应用开发利器DevEcoCli》DevEcoCli是一个面向HarmonyOS应用开发..."
+      "title": "摸着Anthropic的石头，OpenAI发布ChatGPT Work",
+      "url": "https://www.51cto.com/article/849123.html",
+      "hot": "虽然并非创新，但最近OpenAI的动作像龟兔赛跑的兔子醒来后拼命补课。ChatGPT Work 是 OpenAI 从\"对话式 AI\"向\"执行式 AI\"转型的关键一步。它把 agent 的能力从开发者圈子拉到了普通办公场景。过去积累的海量用户将放大这一优势，重回优势位置。"
     },
     {
       "rank": 6,
-      "title": "GPT-Live突袭发布！Google、xAI扎堆卷入语音赛道，GPT-Live凭什么成为OpenAI最智能的语音模型？",
-      "url": "https://www.51cto.com/article/849046.html",
-      "hot": "GPT-Live 是 OpenAI 全新一代的语音模型，专门用来驱动 ChatGPT 的“语音模式”，核心卖点是让 AI 说话更像真人聊天。"
+      "title": "从 MCP 工具投毒看 Agent 工具系统的设计思想",
+      "url": "https://www.51cto.com/article/849122.html",
+      "hot": "MCP 工具投毒真正给我们的设计课，不是“别信工具描述”，而是：要把工具描述、工具能力、工具权限和工具调用链路，当成同一个系统来设计。"
     },
     {
       "rank": 7,
-      "title": "苦学四年，抵不过AI一次更新：当你的专业正在“坍塌”，该怎么办？",
-      "url": "https://www.51cto.com/article/849043.html",
-      "hot": "AI正在像GPS颠覆地图记忆一样，彻底瓦解网络攻击的技术门槛：过去只有国家级黑客掌握的钓鱼、漏洞利用、中间人攻击，如今被AI压缩为“即点即用”的能力，攻击速度更快、规模更大、伪装更逼真，传统依赖特征识别和经验判断的安全体系正遭遇结构性失效。"
+      "title": "刚刚，GPT-5.6全面上线，Codex被合并，生产力工具ChatGPT Work来了",
+      "url": "https://www.51cto.com/article/849100.html",
+      "hot": "在有限预览期之后，本周四 OpenAI 正式推出了 GPT-5.6 系列模型：包括新旗舰 Sol，适合日常工作的均衡模型 Terra，还有最快速的 Luna。"
     },
     {
       "rank": 8,
-      "title": "如何写高质量、低Token消耗的Loops，Claude官方教程来了",
-      "url": "https://www.51cto.com/article/849034.html",
-      "hot": "眼下，AI 来到了“自动驾驶”时代，你设定好目的地（目标），它自己会规划路线、自己驾驶、观察路况、修正方向，直到把你送到地方，全程不需要你手动操作方向盘。"
+      "title": "前端工程师必备的 10 个 AI 万能提示词：复制就能用，效率再翻倍 !",
+      "url": "https://www.51cto.com/article/849115.html",
+      "hot": "前端用 AI 提效，关键不是背多少 Prompt，而是把需求说成工程任务。一个好 Prompt 不只是“帮我写代码”，而是告诉 AI：你要解决什么问题、项目有什么限制、代码要接到哪里、哪些行为不能变、最后怎么验证。"
     },
     {
       "rank": 9,
-      "title": "现代AI之父新作：13个大模型实测，检索agent真的可信吗？",
-      "url": "https://www.51cto.com/article/849033.html",
-      "hot": "13个大模型在上网搜索时是否容易被虚假内容误导？结果显示，模型安全性差异显著，Claude表现最佳，但仍有沉默漂移和误拒风险；GPT在新场景中极易被攻击。这对依赖AI搜索的用户安全至关重要，提醒我们需全面评估模型及其防御机制。"
+      "title": "小扎深夜亮王牌！Meta烧出白菜价模型，掀翻Grok 4.5",
+      "url": "https://www.51cto.com/article/849092.html",
+      "hot": "小扎三年不发推，深夜连发三条，Muse Spark 1.1比Fable 5便宜10倍——Meta第一个收费模型，上来就打价格战。"
     },
     {
       "rank": 10,
-      "title": "GPT-6要来了！OpenAI彻底抛弃4T旧底座",
-      "url": "https://www.51cto.com/article/849031.html",
-      "hot": "OpenAI紧急提档GPT-6，彻底抛弃4T旧底座？而且，GPT-5.6正式解禁，周四就要上线！Sol、Terra、Luna三款模型全面开放，编码、科研、日常任务全覆盖。已经有早期测试者狂赞Sol模型「永不放弃」，现在，全体开发者已经在摩拳擦掌了。"
+      "title": "工程师自用 DNS 利器：dnsglobe 把全球解析现状裸露在终端",
+      "url": "https://www.51cto.com/article/849078.html",
+      "hot": "还在手动dig一堆解析器，逐个确认DNS生效情况？dnsglobe将dnschecker.org搬进终端，用交互式世界地图和智能Watch模式，帮你秒级掌握全球DNS传播状态。"
     }
   ]
 }

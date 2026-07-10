@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-09T22:56:01+00:00",
+  "updated_at": "2026-07-10T02:15:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "vLLM 针对多模态模型的推理优化实践｜AICon深圳",
+      "url": "https://www.infoq.cn/article/ItOOYNuWf6t9KtfgeH7F?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 10 Jul 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "亚马逊云科技推出 Amazon S3 Annotations",
+      "url": "https://www.infoq.cn/article/RMeXD3ZlVLRPk3r0tyTx?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 10 Jul 2026 09:58:22 GMT"
+    },
+    {
+      "rank": 3,
       "title": "Agent 进化论：从对话到协作",
       "url": "https://www.infoq.cn/article/6StbVmZr0cicGREVjwZu?utm_source=rss&utm_medium=article",
       "hot": "Thu, 09 Jul 2026 17:58:01 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "AI Infra 拼什么？",
       "url": "https://www.infoq.cn/video/bN06GZ6lWP9tc5qVPOky?utm_source=rss&utm_medium=article",
       "hot": "Thu, 09 Jul 2026 16:18:51 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "百万上下文下的 DeepSeek V4：SGLang 推理优化实战｜AICon深圳",
       "url": "https://www.infoq.cn/article/qALuq71AxiG5VLmWqSzU?utm_source=rss&utm_medium=article",
       "hot": "Thu, 09 Jul 2026 16:15:15 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Snowflake CoWork：每位知识工作者的专属工作 Agent ｜ 技术趋势",
       "url": "https://www.infoq.cn/article/VoJ3wVeUv5txrOYqSYpR?utm_source=rss&utm_medium=article",
       "hot": "Thu, 09 Jul 2026 16:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "首个具身视频基模开源！LingBot-Video 如何为“机器人大脑”构建物理引擎？",
       "url": "https://www.infoq.cn/article/SCC8javdsA2zgBg0c2C1?utm_source=rss&utm_medium=article",
       "hot": "Thu, 09 Jul 2026 15:32:04 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "动态分区拆分：Netflix 大幅削减 Cassandra 读取延迟至毫秒级",
       "url": "https://www.infoq.cn/article/GRDxYebxA7ywxO4seBWy?utm_source=rss&utm_medium=article",
       "hot": "Thu, 09 Jul 2026 15:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "重磅发布 Cortex Sense：为未建模数据注入可信上下文 ｜ 技术趋势",
       "url": "https://www.infoq.cn/article/E4kV7CPQGeWujNoVTEAU?utm_source=rss&utm_medium=article",
       "hot": "Thu, 09 Jul 2026 14:50:56 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Claude“脑内小剧场”首曝光：隐藏工作空间自发涌现类人意识，谷歌DeepMind权威认证！",
       "url": "https://www.infoq.cn/article/7Rgp3820XIGYqEV9JPSq?utm_source=rss&utm_medium=article",
       "hot": "Thu, 09 Jul 2026 13:56:49 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "MCP 推出企业统一授权功能",
-      "url": "https://www.infoq.cn/article/NIPG4kmz1lDv8DIrsZ9O?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 09 Jul 2026 13:48:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Claude 在 Foundry 上正式可用，但欧洲企业无法部署",
-      "url": "https://www.infoq.cn/article/hOGtafDIR2GvccjYiLEc?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 09 Jul 2026 12:00:00 GMT"
     }
   ]
 }
