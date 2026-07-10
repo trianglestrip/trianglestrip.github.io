@@ -1,50 +1,50 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-10T17:05:38+00:00",
+  "updated_at": "2026-07-10T23:14:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "tencent/Hy3",
       "url": "https://huggingface.co/tencent/Hy3",
-      "hot": "650"
+      "hot": "663"
     },
     {
       "rank": 2,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "1955"
+      "hot": "1973"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3765"
+      "hot": "3782"
     },
     {
       "rank": 4,
       "title": "InternScience/Agents-A1",
       "url": "https://huggingface.co/InternScience/Agents-A1",
-      "hot": "460"
+      "hot": "467"
     },
     {
       "rank": 5,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1917"
+      "hot": "1921"
     },
     {
       "rank": 6,
       "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
       "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "hot": "205"
+      "hot": "211"
     },
     {
       "rank": 7,
       "title": "google/tabfm-1.0.0-pytorch",
       "url": "https://huggingface.co/google/tabfm-1.0.0-pytorch",
-      "hot": "341"
+      "hot": "345"
     },
     {
       "rank": 8,
@@ -56,13 +56,13 @@
       "rank": 9,
       "title": "froggeric/Qwen-Fixed-Chat-Templates",
       "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
-      "hot": "831"
+      "hot": "833"
     },
     {
       "rank": 10,
       "title": "meituan-longcat/LongCat-2.0",
       "url": "https://huggingface.co/meituan-longcat/LongCat-2.0",
-      "hot": "169"
+      "hot": "170"
     }
   ]
 }

@@ -1,21 +1,20 @@
 {
   "source": "lol",
   "title": "英雄联盟",
-  "updated_at": "2026-07-10T20:44:48+00:00",
-  "fetch_ok": false,
-  "error": "Command '['hotboard', 'lol', '--format', 'json']' timed out after 60 seconds",
+  "updated_at": "2026-07-10T23:15:06+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "璀璨臻彩召唤活动上新",
       "url": "https://lol.qq.com/news/detail.shtml?docid=10030730452781585955",
-      "hot": "6341"
+      "hot": "6370"
     },
     {
       "rank": 2,
       "title": "璀璨臻彩召唤活动上新",
       "url": "https://lol.qq.com/news/detail.shtml?docid=1535914344876214603",
-      "hot": "4402"
+      "hot": "4551"
     },
     {
       "rank": 3,
@@ -27,7 +26,7 @@
       "rank": 4,
       "title": "【云顶之弈】关于第18赛季PBE延期开启的说明",
       "url": "https://lol.qq.com/news/detail.shtml?docid=11203047984658257213",
-      "hot": "2427"
+      "hot": "2537"
     },
     {
       "rank": 5,
@@ -39,7 +38,7 @@
       "rank": 6,
       "title": "2026年6月26日 不停机更新公告",
       "url": "https://lol.qq.com/news/detail.shtml?docid=18156651661972345903",
-      "hot": "201334"
+      "hot": "201482"
     },
     {
       "rank": 7,
