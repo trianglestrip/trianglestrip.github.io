@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-10T02:15:29+00:00",
+  "updated_at": "2026-07-10T06:16:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Show HN: Getting GLM 5.2 running on my slow computer",
       "url": "https://github.com/JustVugg/colibri",
-      "hot": "393"
+      "hot": "530"
     },
     {
       "rank": 2,
       "title": "EU Parliament greenlights Chat Control 1.0",
       "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
-      "hot": "1012"
+      "hot": "1197"
     },
     {
       "rank": 3,
-      "title": "GPT-5.6",
-      "url": "https://openai.com/index/gpt-5-6/",
-      "hot": "1079"
+      "title": "Show HN: 18 Words",
+      "url": "https://18words.com/",
+      "hot": "919"
     },
     {
       "rank": 4,
-      "title": "Star Just Ate a Planet, and It's Not Done Yet",
-      "url": "https://www.nytimes.com/2026/07/09/science/space/planetary-engulfment-hungry-star.html",
-      "hot": "11"
+      "title": "Train sim created by just one person is being called the best ever made",
+      "url": "https://kotaku.com/a-train-sim-created-by-just-one-person-is-being-called-the-best-ever-made-2000699429",
+      "hot": "433"
     },
     {
       "rank": 5,
-      "title": "Show HN: 18 Words",
-      "url": "https://18words.com/",
-      "hot": "836"
+      "title": "GPT-5.6",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "hot": "1178"
     },
     {
       "rank": 6,
-      "title": "Train sim created by just one person is being called the best ever made",
-      "url": "https://kotaku.com/a-train-sim-created-by-just-one-person-is-being-called-the-best-ever-made-2000699429",
-      "hot": "300"
+      "title": "Apple Silicon Exec Explains Mac Mini AI Demand and On-Device Future",
+      "url": "https://www.macrumors.com/2026/07/06/apple-silicon-exec-explains-mac-mini-ai-demand/",
+      "hot": "48"
     },
     {
       "rank": 7,
-      "title": "Focus",
-      "url": "https://boz.com/articles/focus",
-      "hot": "18"
+      "title": "Study: \"Mommy, do you love your phone more than me?\"",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1766665/full",
+      "hot": "69"
     },
     {
       "rank": 8,
-      "title": "Interview with Mitchell Hashimoto about Ghostty and Zig",
-      "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
-      "hot": "130"
+      "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
+      "url": "https://github.com/malisper/pgrust",
+      "hot": "550"
     },
     {
       "rank": 9,
-      "title": "My Story of 3D Realms / Apogee Part I (2020)",
-      "url": "https://joesiegler.blog/2020/11/my-story-of-apogee-3dr/",
-      "hot": "33"
+      "title": "Interview with Mitchell Hashimoto about Ghostty and Zig",
+      "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
+      "hot": "190"
     },
     {
       "rank": 10,
       "title": "Hy3",
       "url": "https://hy.tencent.com/research/hy3",
-      "hot": "391"
+      "hot": "434"
     }
   ]
 }

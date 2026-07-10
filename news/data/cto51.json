@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-10T02:15:27+00:00",
+  "updated_at": "2026-07-10T06:16:16+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
-      "title": "六种 Agent 架构怎么选？一篇讲透 ReAct、Workflow、Planner-Executor、Multi-Agent、Supervisor/Swarm",
-      "url": "https://www.51cto.com/article/849132.html",
-      "hot": "ReAct 是所有复杂架构的地基，绕不开也没必要绕开。它的全称是 Reason（推理）加 Act（行动），核心就是让模型在\"思考—行动—观察\"这个循环里反复迭代，直到任务完成。"
+      "title": "用 Vue Router 跑通第一个应用",
+      "url": "https://www.51cto.com/article/849171.html",
+      "hot": "上一章我们手写的简易路由器，核心是\"路径表 + 监听 + 动态组件\"。这一章我们就把这三件套用起来，跑通一个真正的 Vue Router 应用。"
     },
     {
       "rank": 3,
-      "title": "清华AI数学家来了！从想法一路推到定理，参与完成84页量子算法论文",
-      "url": "https://www.51cto.com/article/849130.html",
-      "hot": "此前，清华大学智能产业研究院（AIR）院长刘洋教授团队，发布了一个面向数学研究的智能体系统——AIM。"
+      "title": "GPT5.6发布了，但OpenAI这次抄Anthropic抄得最狠的，不是模型",
+      "url": "https://www.51cto.com/article/849168.html",
+      "hot": "Work模式和Codex模式，底层用的是同一套插件系统，唯一的区别是，Codex模式会把技术细节亮给你看，代码、命令行、执行过程，全暴露在外面。Work模式呢，把这些全部摁下去，你只看得到目标和结果，中间那些怎么实现的，它帮你藏起来了。"
     },
     {
       "rank": 4,
-      "title": "阿里云与上海交大三篇论文入选顶会ECCV 2026，DiT推理算力最高节省近90%",
-      "url": "https://www.51cto.com/article/849127.html",
-      "hot": "7月9日消息，欧洲计算机视觉顶级会议ECCV 2026日前公布结果，阿里云与上海交通大学张林峰教授团队合作的3篇论文被主会收录，研究方向均聚焦Diffusion Transformer（DiT）架构下的高效推理加速，涵盖时序误差校正、自适应特征分解、时空令牌筛选三条技术路线。"
+      "title": "别再混淆缓存与内存！SRAM 与 DRAM 的本质区别",
+      "url": "https://www.51cto.com/article/849167.html",
+      "hot": "SRAM 和 DRAM 的区别，如果只记一句话：SRAM 离计算更近，拿速度和稳定性吃饭；DRAM 负责容量和成本，用刷新与控制复杂度换规模。"
     },
     {
       "rank": 5,
-      "title": "摸着Anthropic的石头，OpenAI发布ChatGPT Work",
-      "url": "https://www.51cto.com/article/849123.html",
-      "hot": "虽然并非创新，但最近OpenAI的动作像龟兔赛跑的兔子醒来后拼命补课。ChatGPT Work 是 OpenAI 从\"对话式 AI\"向\"执行式 AI\"转型的关键一步。它把 agent 的能力从开发者圈子拉到了普通办公场景。过去积累的海量用户将放大这一优势，重回优势位置。"
+      "title": "CVE-2026-46215：通过 DRM GEM change_handle 中的UAF功能获得ROOT权限",
+      "url": "https://www.51cto.com/article/849164.html",
+      "hot": "Puttimet先到一步，David Francis和Dave Airlie提供了更简洁的修复并决定弃用该ioctl而非持续修补，以及内核安全人员快速的周转。"
     },
     {
       "rank": 6,
-      "title": "从 MCP 工具投毒看 Agent 工具系统的设计思想",
-      "url": "https://www.51cto.com/article/849122.html",
-      "hot": "MCP 工具投毒真正给我们的设计课，不是“别信工具描述”，而是：要把工具描述、工具能力、工具权限和工具调用链路，当成同一个系统来设计。"
+      "title": "Electron、Tauri，该让位了！Vercel 造了个 6MB 原生框架！",
+      "url": "https://www.51cto.com/article/849161.html",
+      "hot": "Native SDK 直接绕开浏览器、WebView 和 JavaScript 引擎，用一套类似前端模板的 .native 语法写界面，再用 Zig 处理状态和业务逻辑，最终由自研渲染引擎，把像素直接画进系统窗口。"
     },
     {
       "rank": 7,
-      "title": "刚刚，GPT-5.6全面上线，Codex被合并，生产力工具ChatGPT Work来了",
-      "url": "https://www.51cto.com/article/849100.html",
-      "hot": "在有限预览期之后，本周四 OpenAI 正式推出了 GPT-5.6 系列模型：包括新旗舰 Sol，适合日常工作的均衡模型 Terra，还有最快速的 Luna。"
+      "title": "Claude Code 被点名后，程序员别再把 Agent 当插件装",
+      "url": "https://www.51cto.com/article/849160.html",
+      "hot": "很多人第一反应会是：这个工具还能不能用？是不是该换 Codex、Cursor、Copilot？我觉得这个问题太小了。真正的大问题是：我们已经把一类能读仓库、改文件、跑命令、接工具、开 PR 的软件，装进了研发流程，却还在用“装个插件”的心态管理它。"
     },
     {
       "rank": 8,
-      "title": "前端工程师必备的 10 个 AI 万能提示词：复制就能用，效率再翻倍 !",
-      "url": "https://www.51cto.com/article/849115.html",
-      "hot": "前端用 AI 提效，关键不是背多少 Prompt，而是把需求说成工程任务。一个好 Prompt 不只是“帮我写代码”，而是告诉 AI：你要解决什么问题、项目有什么限制、代码要接到哪里、哪些行为不能变、最后怎么验证。"
+      "title": "GPT-5.6发布，性能反超 Claude 5，能帮你省下75%的消耗",
+      "url": "https://www.51cto.com/article/849156.html",
+      "hot": "GPT-5.6 引入了更强的屏幕使用和界面检查能力。它把前端代码渲染出来后，会自己去 inspect 渲染后的画面。如果发现某个组件遮挡了文字，或者配色太丑不协调，它会在交付给我们之前自己默默改掉。"
     },
     {
       "rank": 9,
-      "title": "小扎深夜亮王牌！Meta烧出白菜价模型，掀翻Grok 4.5",
-      "url": "https://www.51cto.com/article/849092.html",
-      "hot": "小扎三年不发推，深夜连发三条，Muse Spark 1.1比Fable 5便宜10倍——Meta第一个收费模型，上来就打价格战。"
+      "title": "网络安全：2026 年最常见的五种攻击方式",
+      "url": "https://www.51cto.com/article/849153.html",
+      "hot": "2026年IBM《数据泄露成本报告》指出，拥有成熟安全培训体系的企业，其数据泄露平均成本比行业均值低123万美元。问题在于，许多组织将安全视为IT部门的专属职责，而非全员行为准则。"
     },
     {
       "rank": 10,
-      "title": "工程师自用 DNS 利器：dnsglobe 把全球解析现状裸露在终端",
-      "url": "https://www.51cto.com/article/849078.html",
-      "hot": "还在手动dig一堆解析器，逐个确认DNS生效情况？dnsglobe将dnschecker.org搬进终端，用交互式世界地图和智能Watch模式，帮你秒级掌握全球DNS传播状态。"
+      "title": "SpringBoot 声明式事务与编程式事务",
+      "url": "https://www.51cto.com/article/849149.html",
+      "hot": "实际开发中，经常有同学纠结：什么时候用声明式事务？什么时候用编程式事务？两者到底有什么区别？选错了不仅会增加开发成本，还可能导致事务失效、数据不一致等问题。"
     }
   ]
 }

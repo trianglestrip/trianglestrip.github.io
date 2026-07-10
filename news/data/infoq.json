@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-10T02:15:32+00:00",
+  "updated_at": "2026-07-10T06:16:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "GPT-5.6全面围剿Claude Fable 5，“超级应用”ChatGPT Work上位，Altman紧急澄清：不会取代Coedx",
+      "url": "https://www.infoq.cn/article/iqUrh3vqeO4xszUa1bCd?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 10 Jul 2026 14:10:30 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "从PostgreSQL切换到ClickHouse，提升系统性能与伸缩性",
+      "url": "https://www.infoq.cn/article/b1jJxXGv5rNXyMXqMGJr?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 10 Jul 2026 13:29:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "史上最高调的AI重写：Claude花11天搞定Bun，创始人花一个月才敢交底",
+      "url": "https://www.infoq.cn/article/uHkOoJ6Nfm6wNCsUryuO?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 10 Jul 2026 13:21:31 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "GitHub 的旧模式被 AI 击穿，Cursor、GitLab、Zed 各自开打",
+      "url": "https://www.infoq.cn/article/7ZSdewTwDBz1mrx6wmat?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 10 Jul 2026 13:14:51 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "HubSpot 如何将语义搜索扩展至 200 亿个向量",
+      "url": "https://www.infoq.cn/article/eRl25z5ewrRHjReWhOUX?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 10 Jul 2026 12:00:00 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "InfoQ 与九章云极深度解读 Toekn Factory 技术与产业发展",
+      "url": "https://www.infoq.cn/video/6GH7lb3Ptfw7Pjgrl9Cs?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 10 Jul 2026 11:36:17 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "当 AI 智能体遭遇“至暗时刻”，企业的最后防线是什么？｜ 技术趋势",
+      "url": "https://www.infoq.cn/article/zi38zKUQa1l31F0ilh2T?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 10 Jul 2026 11:32:02 GMT"
+    },
+    {
+      "rank": 8,
       "title": "vLLM 针对多模态模型的推理优化实践｜AICon深圳",
       "url": "https://www.infoq.cn/article/ItOOYNuWf6t9KtfgeH7F?utm_source=rss&utm_medium=article",
       "hot": "Fri, 10 Jul 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "亚马逊云科技推出 Amazon S3 Annotations",
       "url": "https://www.infoq.cn/article/RMeXD3ZlVLRPk3r0tyTx?utm_source=rss&utm_medium=article",
       "hot": "Fri, 10 Jul 2026 09:58:22 GMT"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "Agent 进化论：从对话到协作",
       "url": "https://www.infoq.cn/article/6StbVmZr0cicGREVjwZu?utm_source=rss&utm_medium=article",
       "hot": "Thu, 09 Jul 2026 17:58:01 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "AI Infra 拼什么？",
-      "url": "https://www.infoq.cn/video/bN06GZ6lWP9tc5qVPOky?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 09 Jul 2026 16:18:51 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "百万上下文下的 DeepSeek V4：SGLang 推理优化实战｜AICon深圳",
-      "url": "https://www.infoq.cn/article/qALuq71AxiG5VLmWqSzU?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 09 Jul 2026 16:15:15 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "Snowflake CoWork：每位知识工作者的专属工作 Agent ｜ 技术趋势",
-      "url": "https://www.infoq.cn/article/VoJ3wVeUv5txrOYqSYpR?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 09 Jul 2026 16:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "首个具身视频基模开源！LingBot-Video 如何为“机器人大脑”构建物理引擎？",
-      "url": "https://www.infoq.cn/article/SCC8javdsA2zgBg0c2C1?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 09 Jul 2026 15:32:04 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "动态分区拆分：Netflix 大幅削减 Cassandra 读取延迟至毫秒级",
-      "url": "https://www.infoq.cn/article/GRDxYebxA7ywxO4seBWy?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 09 Jul 2026 15:00:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "重磅发布 Cortex Sense：为未建模数据注入可信上下文 ｜ 技术趋势",
-      "url": "https://www.infoq.cn/article/E4kV7CPQGeWujNoVTEAU?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 09 Jul 2026 14:50:56 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Claude“脑内小剧场”首曝光：隐藏工作空间自发涌现类人意识，谷歌DeepMind权威认证！",
-      "url": "https://www.infoq.cn/article/7Rgp3820XIGYqEV9JPSq?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 09 Jul 2026 13:56:49 GMT"
     }
   ]
 }
