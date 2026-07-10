@@ -1,8 +1,9 @@
 {
   "source": "zhihu_daily",
   "title": "知乎日报",
-  "updated_at": "2026-07-10T17:04:02+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-07-10T20:06:42+00:00",
+  "fetch_ok": false,
+  "error": "<urlopen error [Errno 101] Network is unreachable>",
   "items": [
     {
       "rank": 1,

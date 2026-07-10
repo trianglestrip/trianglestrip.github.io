@@ -1,8 +1,9 @@
 {
   "source": "ithome",
   "title": "IT之家",
-  "updated_at": "2026-07-10T18:38:40+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-07-10T20:09:55+00:00",
+  "fetch_ok": false,
+  "error": "Command '['hotboard', 'ithome', '--format', 'json']' timed out after 60 seconds",
   "items": [
     {
       "rank": 1,
