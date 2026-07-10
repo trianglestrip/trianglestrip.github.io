@@ -1,7 +1,7 @@
 {
   "source": "newsmth",
   "title": "水木社区",
-  "updated_at": "2026-07-10T15:04:05+00:00",
+  "updated_at": "2026-07-10T17:05:00+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,27 +36,27 @@
     },
     {
       "rank": 6,
+      "title": "一个提高数据库连接效率的方法-自愈式连接池",
+      "url": "https://wap.newsmth.net/article/7229bc9c438dc2ce389df0b48ccdf5f2?title=C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80&from=home",
+      "hot": "有一个提高效率的方法，完美解决了当年的数据库连接，长连接和短连接之争。 数据库连接句柄打开开销较大，一般需要30~40ms，如果在功能模块里开，性能降低一半不止。如果常开，在多线程服务器环境不合适。 所以采用了数据库连接池，虽然很多数据库提供了内建的连接池，那与我无关。 连接池在开始时是一个连接也不开。第一个使用者取用……"
+    },
+    {
+      "rank": 7,
       "title": "固安合理房价600一平，原因如图",
       "url": "https://wap.newsmth.net/article/8f1c1352c5870e61637fb73dbcca8f0c?title=%E4%BA%8C%E6%89%8B%E6%88%BF%E4%BA%A4%E6%B5%81&from=home",
       "hot": ""
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "为啥科里纳孙保洁都认证判罚正确，还有不少瞎的埃及新粉",
       "url": "https://wap.newsmth.net/article/b8688fe9d3593e5d6c42ac7b3470acc4?title=2026%E7%BE%8E%E5%8A%A0%E5%A2%A8%E4%B8%96%E7%95%8C%E6%9D%AF&from=home",
       "hot": "但凡看了一帧一帧回放的，只要不是眼和心双瞎，都会认为判罚正确吧"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Re: [讨论]这种婚姻还有必要坚持吗？",
       "url": "https://wap.newsmth.net/article/4114ed73a0e03c774e4b5365ec29efa2?title=%E7%A6%BB%E5%A9%9A&from=home",
       "hot": "为了给孩子一个爸爸吗？能理解，但是你很不容易"
-    },
-    {
-      "rank": 9,
-      "title": "一个提高数据库连接效率的方法-自愈式连接池",
-      "url": "https://wap.newsmth.net/article/7229bc9c438dc2ce389df0b48ccdf5f2?title=C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80&from=home",
-      "hot": "有一个提高效率的方法，完美解决了当年的数据库连接，长连接和短连接之争。 数据库连接句柄打开开销较大，一般需要30~40ms，如果在功能模块里开，性能降低一半不止。如果常开，在多线程服务器环境不合适。 所以采用了数据库连接池，虽然很多数据库提供了内建的连接池，那与我无关。 连接池在开始时是一个连接也不开。第一个使用者取用……"
     },
     {
       "rank": 10,
