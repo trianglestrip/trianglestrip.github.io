@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-11T09:22:26+00:00",
+  "updated_at": "2026-07-11T11:34:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Fiber 节点 —— 一个数据结构如何承载整个 React 运行时",
       "url": "https://juejin.cn/post/7659763781161730102",
-      "hot": "5913"
+      "hot": "5922"
     },
     {
       "rank": 2,
-      "title": "凌晨睡不着，我给台风巴威写了个追踪网站",
-      "url": "https://juejin.cn/post/7659393583027896330",
-      "hot": "4806"
+      "title": "订单查询丢数据，查了半天原来是 WHERE 惹的祸",
+      "url": "https://juejin.cn/post/7659981643583782938",
+      "hot": "1494"
     },
     {
       "rank": 3,
-      "title": "订单查询丢数据，查了半天原来是 WHERE 惹的祸",
-      "url": "https://juejin.cn/post/7659981643583782938",
-      "hot": "1440"
+      "title": "Agent 不只是聊天框：用 ArkUI 做一个鸿蒙任务工作台",
+      "url": "https://juejin.cn/post/7660062528128516146",
+      "hot": "1485"
     },
     {
       "rank": 4,
-      "title": "Agent 不只是聊天框：用 ArkUI 做一个鸿蒙任务工作台",
-      "url": "https://juejin.cn/post/7660062528128516146",
-      "hot": "1413"
+      "title": "字节二面智力题：100只老虎和1只羊关在一起，这只羊会不会被吃？",
+      "url": "https://juejin.cn/post/7659936053578465315",
+      "hot": "1098"
     },
     {
       "rank": 5,
-      "title": "字节二面智力题：100只老虎和1只羊关在一起，这只羊会不会被吃？",
-      "url": "https://juejin.cn/post/7659936053578465315",
-      "hot": "1089"
+      "title": "一劳永逸解决Codex手机验证",
+      "url": "https://juejin.cn/post/7659854493060136975",
+      "hot": "900"
     },
     {
       "rank": 6,
-      "title": "一劳永逸解决Codex手机验证",
-      "url": "https://juejin.cn/post/7659854493060136975",
-      "hot": "882"
+      "title": "KES 优化行为避坑指南-那条从没被质疑过的 LEFT JOIN，在迁 KES 时终于露馅了",
+      "url": "https://juejin.cn/post/7660229701227675663",
+      "hot": "441"
     },
     {
       "rank": 7,
-      "title": "我多年积累的 100+ 简历优化经验，整理成了 Skill",
-      "url": "https://juejin.cn/post/7659275867992850486",
-      "hot": "837"
+      "title": "Vue 3.6 还没正式发布，但前端的方向已经被它定下来了",
+      "url": "https://juejin.cn/post/7660079523232399402",
+      "hot": "441"
     },
     {
       "rank": 8,
-      "title": "基于 Claude Code 的 AI 编程工作流探索",
-      "url": "https://juejin.cn/post/7659569188227285019",
-      "hot": "549"
+      "title": "Flutter material/cupertino 解耦最新进展，已经在做新样式了",
+      "url": "https://juejin.cn/post/7660030380293357609",
+      "hot": "423"
     },
     {
       "rank": 9,
-      "title": "为什么你的大文件断点续传，一遇到弱网就崩溃？",
-      "url": "https://juejin.cn/post/7659345269612855330",
-      "hot": "531"
+      "title": "GPT-5.6 官宣解禁，明天全量发布！",
+      "url": "https://juejin.cn/post/7659981643583684634",
+      "hot": "405"
     },
     {
       "rank": 10,
-      "title": "KES 优化行为避坑指南-那条从没被质疑过的 LEFT JOIN，在迁 KES 时终于露馅了",
-      "url": "https://juejin.cn/post/7660229701227675663",
-      "hot": "432"
+      "title": "从5万次到日均2000万次调用：大模型推理服务的性能工程实践",
+      "url": "https://juejin.cn/post/7660697495832035362",
+      "hot": "369"
     }
   ]
 }
