@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-11T19:16:34+00:00",
+  "updated_at": "2026-07-11T21:58:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Prefer Strict Tables in SQLite",
-      "url": "https://evanhahn.com/prefer-strict-tables-in-sqlite/",
-      "hot": "50"
+      "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
+      "url": "https://antjs.org",
+      "hot": "103"
     },
     {
       "rank": 2,
-      "title": "Who manages the agents?",
-      "url": "https://www.off-policy.com/dont-go-quietly-into-the-ai-night/",
-      "hot": "28"
+      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+      "hot": "94"
     },
     {
       "rank": 3,
-      "title": "How to Hide from Killer Drones",
-      "url": "https://www.economist.com/science-and-technology/2026/07/08/how-to-hide-from-killer-drones",
-      "hot": "26"
+      "title": "We scaled PgBouncer to 4x throughput",
+      "url": "https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres",
+      "hot": "153"
     },
     {
       "rank": 4,
-      "title": "We scaled PgBouncer to 4x throughput",
-      "url": "https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres",
-      "hot": "119"
-    },
-    {
-      "rank": 5,
-      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
-      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
-      "hot": "24"
-    },
-    {
-      "rank": 6,
-      "title": "Modern decor may be straining people's brains",
-      "url": "https://studyfinds.com/modern-decor-may-be-straining-peoples-brains/",
-      "hot": "104"
-    },
-    {
-      "rank": 7,
-      "title": "The early History of the Singular Value Decomposition (1993) [pdf]",
-      "url": "https://www.math.ucdavis.edu/~saito/courses/229A/stewart-svd.pdf",
+      "title": "UPI: Anatomy of a Payment Transaction",
+      "url": "https://timeseriesofindia.com/economy/reads/upi-architecture/",
       "hot": "56"
     },
     {
+      "rank": 5,
+      "title": "Prefer strict tables in SQLite",
+      "url": "https://evanhahn.com/prefer-strict-tables-in-sqlite/",
+      "hot": "159"
+    },
+    {
+      "rank": 6,
+      "title": "The early History of the Singular Value Decomposition (1993) [pdf]",
+      "url": "https://www.math.ucdavis.edu/~saito/courses/229A/stewart-svd.pdf",
+      "hot": "74"
+    },
+    {
+      "rank": 7,
+      "title": "Biff.graph: structure your Clojure codebase as a queryable graph",
+      "url": "https://github.com/jacobobryant/biff/tree/v2.x/libs/graph",
+      "hot": "62"
+    },
+    {
       "rank": 8,
-      "title": "Leaded Gas Was a Known Poison the Day It Was Invented (2016)",
-      "url": "https://www.smithsonianmag.com/smart-news/leaded-gas-poison-invented-180961368/",
-      "hot": "80"
+      "title": "ZeroFS vs. Amazon S3 Files",
+      "url": "https://www.zerofs.net/blog/zerofs-vs-aws-s3-files/",
+      "hot": "22"
     },
     {
       "rank": 9,
-      "title": "AI Can't Recreate the Thrust Game (But It Can Help You Understand It)",
-      "url": "https://www.jamesdrandall.com/posts/thrust_ai_powered_software_archaeology/",
-      "hot": "24"
+      "title": "Female US rower completes historic solo journey from California to Hawaii",
+      "url": "https://www.theguardian.com/us-news/2026/jul/04/california-hawaii-rowing-solo-journey",
+      "hot": "176"
     },
     {
       "rank": 10,
-      "title": "Female US rower completes historic solo journey from California to Hawaii",
-      "url": "https://www.theguardian.com/us-news/2026/jul/04/california-hawaii-rowing-solo-journey",
-      "hot": "98"
+      "title": "Show HN: Orbit – AR satellite tracker, watch 15k+ objects",
+      "url": "https://nagylukas.github.io/orbit.html",
+      "hot": "35"
     }
   ]
 }
