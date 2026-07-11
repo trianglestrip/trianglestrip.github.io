@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-11T14:04:00+00:00",
+  "updated_at": "2026-07-11T17:08:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Networking and the Internet, from First Principles",
-      "url": "https://fazamhd.com/mental-models/networking/",
-      "hot": "82"
+      "title": "Modern Decor May Be Straining People's Brains",
+      "url": "https://studyfinds.com/modern-decor-may-be-straining-peoples-brains/",
+      "hot": "21"
     },
     {
       "rank": 2,
-      "title": "Your code is fast – if you're lucky",
-      "url": "https://tiki.li/blog/lucky_code.html",
-      "hot": "56"
+      "title": "We scaled PgBouncer to 4x throughput",
+      "url": "https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres",
+      "hot": "71"
     },
     {
       "rank": 3,
-      "title": "Semantic/Hybrid Search in the Browser",
-      "url": "https://bart.degoe.de/semantic-search-in-your-browser/",
-      "hot": "8"
+      "title": "The early History of the Singular Value Decomposition (1993) [pdf]",
+      "url": "https://www.math.ucdavis.edu/~saito/courses/229A/stewart-svd.pdf",
+      "hot": "31"
     },
     {
       "rank": 4,
       "title": "Einstein's relativity rules chemical bonds in heavy elements, new research shows",
       "url": "https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity",
-      "hot": "306"
+      "hot": "342"
     },
     {
       "rank": 5,
       "title": "QuadRF can spot drones and see WiFi through my wall",
       "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
-      "hot": "641"
+      "hot": "683"
     },
     {
       "rank": 6,
       "title": "Google Search lets creators know more about their reach",
       "url": "https://www.theverge.com/tech/961955/google-search-console-reach-platform-properties",
-      "hot": "44"
+      "hot": "70"
     },
     {
       "rank": 7,
-      "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
-      "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
-      "hot": "1260"
+      "title": "Speculations Concerning the First Ultraintelligent Machine (1965) [pdf]",
+      "url": "https://languagelog.ldc.upenn.edu/myl/Good1964.pdf",
+      "hot": "59"
     },
     {
       "rank": 8,
-      "title": "Otary – Image and Geometry Python Library Now Has Tutorials",
-      "url": "https://alexandrepoupeau.com/otary/learn/",
-      "hot": "51"
+      "title": "Tropical forests facing increasing risks of exposure to critical temp thresholds",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2528622123",
+      "hot": "23"
     },
     {
       "rank": 9,
-      "title": "FCC Approves Test of Space Mirror to Light Night Sky Despite Outcry",
-      "url": "https://www.nytimes.com/2026/07/10/climate/fcc-space-mirror.html",
-      "hot": "35"
+      "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
+      "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+      "hot": "1410"
     },
     {
       "rank": 10,
-      "title": "An update on residential proxies and the scraper situation",
-      "url": "https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/",
-      "hot": "245"
+      "title": "Otary – Image and Geometry Python Library Now Has Tutorials",
+      "url": "https://alexandrepoupeau.com/otary/learn/",
+      "hot": "72"
     }
   ]
 }

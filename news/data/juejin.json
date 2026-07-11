@@ -1,44 +1,44 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-11T14:03:51+00:00",
+  "updated_at": "2026-07-11T17:08:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Fiber 节点 —— 一个数据结构如何承载整个 React 运行时",
       "url": "https://juejin.cn/post/7659763781161730102",
-      "hot": "5940"
+      "hot": "5985"
     },
     {
       "rank": 2,
       "title": "订单查询丢数据，查了半天原来是 WHERE 惹的祸",
       "url": "https://juejin.cn/post/7659981643583782938",
-      "hot": "1575"
+      "hot": "1674"
     },
     {
       "rank": 3,
       "title": "Agent 不只是聊天框：用 ArkUI 做一个鸿蒙任务工作台",
       "url": "https://juejin.cn/post/7660062528128516146",
-      "hot": "1557"
+      "hot": "1638"
     },
     {
       "rank": 4,
       "title": "字节二面智力题：100只老虎和1只羊关在一起，这只羊会不会被吃？",
       "url": "https://juejin.cn/post/7659936053578465315",
-      "hot": "1107"
+      "hot": "1125"
     },
     {
       "rank": 5,
       "title": "一劳永逸解决Codex手机验证",
       "url": "https://juejin.cn/post/7659854493060136975",
-      "hot": "909"
+      "hot": "927"
     },
     {
       "rank": 6,
       "title": "Vue 3.6 还没正式发布，但前端的方向已经被它定下来了",
       "url": "https://juejin.cn/post/7660079523232399402",
-      "hot": "459"
+      "hot": "531"
     },
     {
       "rank": 7,
@@ -50,7 +50,7 @@
       "rank": 8,
       "title": "Flutter material/cupertino 解耦最新进展，已经在做新样式了",
       "url": "https://juejin.cn/post/7660030380293357609",
-      "hot": "423"
+      "hot": "432"
     },
     {
       "rank": 9,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "从5万次到日均2000万次调用：大模型推理服务的性能工程实践",
       "url": "https://juejin.cn/post/7660697495832035362",
-      "hot": "378"
+      "hot": "387"
     }
   ]
 }
