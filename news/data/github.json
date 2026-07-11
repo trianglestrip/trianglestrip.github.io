@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-07-11T06:00:16+00:00",
+  "updated_at": "2026-07-11T12:33:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[TypeScript] wonderwhy-er/DesktopCommanderMCP",
-      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-      "hot": "7,444"
+      "title": "[C++] catchorg/Catch2",
+      "url": "https://github.com/catchorg/Catch2",
+      "hot": "20,700"
     },
     {
       "rank": 2,
-      "title": "[Rust] oven-sh/bun",
-      "url": "https://github.com/oven-sh/bun",
-      "hot": "94,363"
+      "title": "[C++] abseil/abseil-cpp",
+      "url": "https://github.com/abseil/abseil-cpp",
+      "hot": "17,592"
     },
     {
       "rank": 3,
-      "title": "[C++] abseil/abseil-cpp",
-      "url": "https://github.com/abseil/abseil-cpp",
-      "hot": "17,543"
+      "title": "[Python] davila7/claude-code-templates",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "hot": "28,875"
     },
     {
       "rank": 4,
-      "title": "[JavaScript] addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "hot": "76,960"
+      "title": "[TypeScript] google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "hot": "6,904"
     },
     {
       "rank": 5,
-      "title": "[C++] jbeder/yaml-cpp",
-      "url": "https://github.com/jbeder/yaml-cpp",
-      "hot": "6,098"
+      "title": "[Go] hashicorp/terraform",
+      "url": "https://github.com/hashicorp/terraform",
+      "hot": "49,268"
     },
     {
       "rank": 6,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "164,899"
+      "title": "[C++] zeux/meshoptimizer",
+      "url": "https://github.com/zeux/meshoptimizer",
+      "hot": "8,079"
     },
     {
       "rank": 7,
-      "title": "[Shell] obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "hot": "251,942"
+      "title": "[JavaScript] openai/plugins",
+      "url": "https://github.com/openai/plugins",
+      "hot": "4,311"
     },
     {
       "rank": 8,
-      "title": "[TypeScript] microsoft/TypeScript",
-      "url": "https://github.com/microsoft/TypeScript",
-      "hot": "109,813"
+      "title": "[TypeScript] wonderwhy-er/DesktopCommanderMCP",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "hot": "7,666"
     },
     {
       "rank": 9,
-      "title": "[C++] catchorg/Catch2",
-      "url": "https://github.com/catchorg/Catch2",
-      "hot": "20,633"
+      "title": "[C++] chriskohlhoff/asio",
+      "url": "https://github.com/chriskohlhoff/asio",
+      "hot": "6,106"
     },
     {
       "rank": 10,
-      "title": "[C++] chriskohlhoff/asio",
-      "url": "https://github.com/chriskohlhoff/asio",
-      "hot": "6,089"
+      "title": "[Rust] oven-sh/bun",
+      "url": "https://github.com/oven-sh/bun",
+      "hot": "94,488"
     }
   ]
 }
