@@ -1,8 +1,9 @@
 {
   "source": "qqnews",
   "title": "腾讯新闻",
-  "updated_at": "2026-07-11T14:04:10+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-07-11T15:05:36+00:00",
+  "fetch_ok": false,
+  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
   "items": [
     {
       "rank": 1,
