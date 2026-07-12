@@ -1,7 +1,7 @@
 {
   "source": "newsmth",
   "title": "水木社区",
-  "updated_at": "2026-07-12T11:44:25+00:00",
+  "updated_at": "2026-07-12T14:11:13+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,21 +12,21 @@
     },
     {
       "rank": 2,
+      "title": "Re: 生活的意义？该如何继续？",
+      "url": "https://wap.newsmth.net/article/6cc320fab576016b685ae58170c10d03?title=%E5%AE%B6%E5%BA%AD%E7%94%9F%E6%B4%BB&from=home",
+      "hot": "每个人都有自己的个性和私心，要做到彼此包容挺难的，现在挺喜欢一句话，不痴不聋，不做家翁 -&nbsp;来自&nbsp;水木说"
+    },
+    {
+      "rank": 3,
       "title": "其实最高估的大学是清华",
       "url": "https://wap.newsmth.net/article/ec884142dbfb236deb0eb02490fd4943?title=%E9%AB%98%E8%80%83%C2%B7%E5%A4%A7%E5%AD%A6&from=home",
       "hot": "大清也就工科凑合 但是热门工科跟浙大&nbsp;上交领先不多&nbsp;某些专科更是不如北航&nbsp;哈工大 清华理科就更差了&nbsp;数理化被北大吊打&nbsp;&nbsp;估计也不如中科大&nbsp;&nbsp;国科大 勉强跟复旦&nbsp;南京大学持平？ 医科更惨&nbsp;&nbsp;能进前10么？ 文科？……"
     },
     {
-      "rank": 3,
-      "title": "为啥马斯克回收之前，我们不回收？",
-      "url": "https://wap.newsmth.net/article/d0810b841e125471029e9d6cecebbfd8?title=%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9&from=home",
-      "hot": ""
-    },
-    {
       "rank": 4,
-      "title": "Re: 生活的意义？该如何继续？",
-      "url": "https://wap.newsmth.net/article/6cc320fab576016b685ae58170c10d03?title=%E5%AE%B6%E5%BA%AD%E7%94%9F%E6%B4%BB&from=home",
-      "hot": "每个人都有自己的个性和私心，要做到彼此包容挺难的，现在挺喜欢一句话，不痴不聋，不做家翁 -&nbsp;来自&nbsp;水木说"
+      "title": "Re: 为什么我们第一次回收就可以成功，而马斯克需要炸十几次才",
+      "url": "https://wap.newsmth.net/article/810b28dc24dc475d27c0202ddcaa48cf?title=%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9&from=home",
+      "hot": "不停试错，先说后做，都是老马的风格。 比如真空管，影还没有，他就在开始说载客运营了。 -&nbsp;来自&nbsp;水木社区APP&nbsp;v3.5.7"
     },
     {
       "rank": 5,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "Re: 为什么我们第一次回收就可以成功，而马斯克需要炸十几次才",
-      "url": "https://wap.newsmth.net/article/810b28dc24dc475d27c0202ddcaa48cf?title=%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9&from=home",
-      "hot": "不停试错，先说后做，都是老马的风格。 比如真空管，影还没有，他就在开始说载客运营了。 -&nbsp;来自&nbsp;水木社区APP&nbsp;v3.5.7"
-    },
-    {
-      "rank": 7,
-      "title": "一个提高数据库连接效率的方法-自愈式连接池",
-      "url": "https://wap.newsmth.net/article/7229bc9c438dc2ce389df0b48ccdf5f2?title=C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80&from=home",
-      "hot": "有一个提高效率的方法，完美解决了当年的数据库连接，长连接和短连接之争。 数据库连接句柄打开开销较大，一般需要30~40ms，如果在功能模块里开，性能降低一半不止。如果常开，在多线程服务器环境不合适。 所以采用了数据库连接池，虽然很多数据库提供了内建的连接池，那与我无关。 连接池在开始时是一个连接也不开。第一个使用者取用……"
-    },
-    {
-      "rank": 8,
       "title": "很奇怪，冯他们为什么要投资拍电影啊？",
       "url": "https://wap.newsmth.net/article/1072e31dff9cb20e5cf8808641b6e77a?title=%E5%AE%B6%E5%BA%AD%E7%94%9F%E6%B4%BB&from=home",
       "hot": "很奇怪，冯他们为什么要投资拍电影啊？当前影视寒冬，10年之内不投资不拍电影，也不用挨骂，应该是最佳策略"
     },
     {
-      "rank": 9,
+      "rank": 7,
       "title": "Re: 美国人普遍认为，净资产达到530万美元才算实现财务成功",
       "url": "https://wap.newsmth.net/article/0d8eff428000403e0615ef4403236283?title=%E5%9C%B0%E7%90%86&from=home",
       "hot": "和水木诸位觉得资产千万没有安全感，得5千万一个道理"
     },
     {
-      "rank": 10,
+      "rank": 8,
       "title": "为什么要假摔，不觉得奇怪么",
       "url": "https://wap.newsmth.net/article/ccb3d0828c8676b431982626abe99ce6?title=%E5%9B%BD%E9%99%85%E8%B6%B3%E7%90%83&from=home",
       "hot": "当时瑞士得势，看比赛阿根廷肯定维持不到结束，大概率输掉 那时在边线附近，没啥好处，顶多一个任意球 然后细胞都没碰到，就起跳 这个红牌是不是太重了，这可是八进四，跳一下就罚下去了，第二张黄牌不能酌情放一马？"
+    },
+    {
+      "rank": 9,
+      "title": "一个提高数据库连接效率的方法-自愈式连接池",
+      "url": "https://wap.newsmth.net/article/7229bc9c438dc2ce389df0b48ccdf5f2?title=C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80&from=home",
+      "hot": "有一个提高效率的方法，完美解决了当年的数据库连接，长连接和短连接之争。 数据库连接句柄打开开销较大，一般需要30~40ms，如果在功能模块里开，性能降低一半不止。如果常开，在多线程服务器环境不合适。 所以采用了数据库连接池，虽然很多数据库提供了内建的连接池，那与我无关。 连接池在开始时是一个连接也不开。第一个使用者取用……"
+    },
+    {
+      "rank": 10,
+      "title": "新买了吊带",
+      "url": "https://wap.newsmth.net/article/4233dc9c4c7ebafa11455b3b4e46381e?title=%E6%9C%8D%E9%A5%B0%E6%90%AD%E9%85%8D&from=home",
+      "hot": "给脑子跟那啥两套系统的某男一些小建议：找新老婆之前先问问人家那啥白不白，省得搞完了嫌黑还得给新老婆买美白精华涂，穷就多问两句，能省点钱是点。"
     }
   ]
 }
