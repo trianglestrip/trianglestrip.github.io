@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-12T09:14:25+00:00",
+  "updated_at": "2026-07-12T11:44:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Fiber 节点 —— 一个数据结构如何承载整个 React 运行时",
-      "url": "https://juejin.cn/post/7659763781161730102",
-      "hot": "6075"
-    },
-    {
-      "rank": 2,
-      "title": "字节二面智力题：100只老虎和1只羊关在一起，这只羊会不会被吃？",
-      "url": "https://juejin.cn/post/7659936053578465315",
-      "hot": "1188"
-    },
-    {
-      "rank": 3,
-      "title": "一劳永逸解决Codex手机验证",
-      "url": "https://juejin.cn/post/7659854493060136975",
-      "hot": "990"
-    },
-    {
-      "rank": 4,
       "title": "KES 优化行为避坑指南-那条从没被质疑过的 LEFT JOIN，在迁 KES 时终于露馅了",
       "url": "https://juejin.cn/post/7660229701227675663",
       "hot": "468"
     },
     {
-      "rank": 5,
+      "rank": 2,
       "title": "Flutter material/cupertino 解耦最新进展，已经在做新样式了",
       "url": "https://juejin.cn/post/7660030380293357609",
-      "hot": "459"
+      "hot": "468"
+    },
+    {
+      "rank": 3,
+      "title": "从5万次到日均2000万次调用：大模型推理服务的性能工程实践",
+      "url": "https://juejin.cn/post/7660697495832035362",
+      "hot": "423"
+    },
+    {
+      "rank": 4,
+      "title": "为什么我会主动给一个年轻程序员加薪、晋升？",
+      "url": "https://juejin.cn/post/7660529058778513460",
+      "hot": "378"
+    },
+    {
+      "rank": 5,
+      "title": "2026编程圈很火的10个Skills",
+      "url": "https://juejin.cn/post/7660712622825144374",
+      "hot": "360"
     },
     {
       "rank": 6,
-      "title": "从5万次到日均2000万次调用：大模型推理服务的性能工程实践",
-      "url": "https://juejin.cn/post/7660697495832035362",
-      "hot": "414"
+      "title": "图解 120 个大语言模型（LLM）核心概念（1-30）",
+      "url": "https://juejin.cn/post/7660708287620808739",
+      "hot": "351"
     },
     {
       "rank": 7,
-      "title": "为什么我会主动给一个年轻程序员加薪、晋升？",
-      "url": "https://juejin.cn/post/7660529058778513460",
-      "hot": "369"
+      "title": "工信部警告 Claude Code 有后门？我扒了一下，发现不止后门",
+      "url": "https://juejin.cn/post/7660360633646317618",
+      "hot": "351"
     },
     {
       "rank": 8,
-      "title": "Android 面试系列：Kotlin 协程的 delay 到底发生在哪个线程？",
-      "url": "https://juejin.cn/post/7659252393879896073",
-      "hot": "369"
+      "title": "Opencode从Tauri切回Electron，桌面端技术选型别被体积陷阱带偏了",
+      "url": "https://juejin.cn/post/7660513725813014578",
+      "hot": "342"
     },
     {
       "rank": 9,
-      "title": "图解 120 个大语言模型（LLM）核心概念（1-30）",
-      "url": "https://juejin.cn/post/7660708287620808739",
-      "hot": "342"
+      "title": "Android 架构这些年，其实一直在消灭碎片化异步",
+      "url": "https://juejin.cn/post/7660435816799273006",
+      "hot": "333"
     },
     {
       "rank": 10,
-      "title": "2026编程圈很火的10个Skills",
-      "url": "https://juejin.cn/post/7660712622825144374",
-      "hot": "342"
+      "title": "图解 120 个大语言模型（LLM）核心概念（31-60）",
+      "url": "https://juejin.cn/post/7660697431320690723",
+      "hot": "252"
     }
   ]
 }
