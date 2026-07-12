@@ -1,20 +1,20 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-07-11T19:15:28+00:00",
+  "updated_at": "2026-07-12T04:35:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "San Fran Sim",
-      "url": "https://www.producthunt.com/products/san-fran-sim",
-      "hot": "2026-07-10T01:07:45-07:00"
+      "title": "Cloudflare Drop",
+      "url": "https://www.producthunt.com/products/cloudflare",
+      "hot": "2026-07-08T10:36:25-07:00"
     },
     {
       "rank": 2,
-      "title": "Basedash SCIM",
-      "url": "https://www.producthunt.com/products/basedash",
-      "hot": "2026-07-10T19:40:25-07:00"
+      "title": "San Fran Sim",
+      "url": "https://www.producthunt.com/products/san-fran-sim",
+      "hot": "2026-07-10T01:07:45-07:00"
     },
     {
       "rank": 3,
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
-      "title": "Cloudflare Drop",
-      "url": "https://www.producthunt.com/products/cloudflare",
-      "hot": "2026-07-08T10:36:25-07:00"
-    },
-    {
-      "rank": 5,
-      "title": "Effects SDK",
-      "url": "https://www.producthunt.com/products/effects-sdk",
-      "hot": "2026-06-22T23:17:54-07:00"
-    },
-    {
-      "rank": 6,
-      "title": "SoundPipe",
-      "url": "https://www.producthunt.com/products/soundpipe",
-      "hot": "2026-07-10T15:27:30-07:00"
-    },
-    {
-      "rank": 7,
-      "title": "ChatGPT Work",
-      "url": "https://www.producthunt.com/products/chatgpt-work",
-      "hot": "2026-07-09T10:16:44-07:00"
-    },
-    {
-      "rank": 8,
       "title": "Kickbacks CLI",
       "url": "https://www.producthunt.com/products/kickbacks-cli",
       "hot": "2026-07-06T19:18:04-07:00"
     },
     {
+      "rank": 5,
+      "title": "ChatGPT Work",
+      "url": "https://www.producthunt.com/products/chatgpt-work",
+      "hot": "2026-07-09T10:16:44-07:00"
+    },
+    {
+      "rank": 6,
+      "title": "Effects SDK",
+      "url": "https://www.producthunt.com/products/effects-sdk",
+      "hot": "2026-06-22T23:17:54-07:00"
+    },
+    {
+      "rank": 7,
+      "title": "Basedash SCIM",
+      "url": "https://www.producthunt.com/products/basedash",
+      "hot": "2026-07-10T19:40:25-07:00"
+    },
+    {
+      "rank": 8,
+      "title": "SoundPipe",
+      "url": "https://www.producthunt.com/products/soundpipe",
+      "hot": "2026-07-10T15:27:30-07:00"
+    },
+    {
       "rank": 9,
-      "title": "ChatCut",
-      "url": "https://www.producthunt.com/products/chatcut-ai-video-editor",
-      "hot": "2026-07-08T23:50:16-07:00"
+      "title": "StoryChief Connect",
+      "url": "https://www.producthunt.com/products/storychief-io",
+      "hot": "2026-07-09T03:43:58-07:00"
     },
     {
       "rank": 10,
-      "title": "Mispher",
-      "url": "https://www.producthunt.com/products/mispher-agentic-transcription-for-mac",
-      "hot": "2026-07-09T02:36:54-07:00"
+      "title": "Sim",
+      "url": "https://www.producthunt.com/products/sim-studio",
+      "hot": "2026-07-08T11:55:06-07:00"
     }
   ]
 }
