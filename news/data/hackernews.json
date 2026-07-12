@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-12T19:22:14+00:00",
+  "updated_at": "2026-07-12T22:01:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
-      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
-      "hot": "93"
+      "title": "Since Chronium 148, Math.tanh is now fingerprintable to link underlying OS",
+      "url": "https://scrapfly.dev/posts/browser-math-os-fingerprint/",
+      "hot": "79"
     },
     {
       "rank": 2,
-      "title": "I love LLMs, I hate hype",
-      "url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
-      "hot": "25"
+      "title": "Tiny Emulators",
+      "url": "https://floooh.github.io/tiny8bit-preview/index.html",
+      "hot": "75"
     },
     {
       "rank": 3,
-      "title": "The shingles vaccine may reduce the risk of dementia",
-      "url": "https://www.economist.com/leaders/2026/07/09/a-no-brainer-for-protecting-your-brain",
-      "hot": "117"
+      "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+      "hot": "330"
     },
     {
       "rank": 4,
       "title": "Old and new apps, via modern coding agents",
       "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
-      "hot": "350"
+      "hot": "382"
     },
     {
       "rank": 5,
-      "title": "Don't you mean extinct?",
-      "url": "https://fabiensanglard.net/extinct/index.html",
-      "hot": "121"
+      "title": "Can we understand how large language models reason?",
+      "url": "https://cacm.acm.org/news/can-we-understand-how-large-language-models-reason/",
+      "hot": "56"
     },
     {
       "rank": 6,
-      "title": "Automation Without Understanding",
-      "url": "https://arxiv.org/abs/2607.06377",
-      "hot": "38"
+      "title": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+      "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+      "hot": "60"
     },
     {
       "rank": 7,
-      "title": "Why write code in 2026",
-      "url": "https://softwaredoug.com/blog/2026/07/09/write-code",
-      "hot": "21"
+      "title": "Irish datacenters now guzzle 23% of the country's electricity",
+      "url": "https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013",
+      "hot": "83"
     },
     {
       "rank": 8,
-      "title": "Show HN: Shirei, cross-platform GUI framework in native Go",
-      "url": "https://github.com/hasenj/go-shirei/",
-      "hot": "47"
+      "title": "Nuclear war survival guide reveals seven everyday items if disaster strikes",
+      "url": "https://www.dailymail.com/sciencetech/article-15795297/Forgotten-nuclear-war-survival-guide-reveals-seven-everyday-items-Americans-need-disaster-strikes.html",
+      "hot": "5"
     },
     {
       "rank": 9,
-      "title": "Can We Understand How Large Language Models Reason?",
-      "url": "https://cacm.acm.org/news/can-we-understand-how-large-language-models-reason/",
-      "hot": "13"
+      "title": "Why write code in 2026",
+      "url": "https://softwaredoug.com/blog/2026/07/09/write-code",
+      "hot": "69"
     },
     {
       "rank": 10,
-      "title": "Against Usefulness",
-      "url": "https://www.motivenotes.ai/p/against-usefulness",
-      "hot": "28"
+      "title": "Automation Without Understanding",
+      "url": "https://arxiv.org/abs/2607.06377",
+      "hot": "76"
     }
   ]
 }
