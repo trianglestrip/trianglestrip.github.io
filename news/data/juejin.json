@@ -1,44 +1,44 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-12T14:11:19+00:00",
+  "updated_at": "2026-07-12T16:11:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "KES 优化行为避坑指南-那条从没被质疑过的 LEFT JOIN，在迁 KES 时终于露馅了",
       "url": "https://juejin.cn/post/7660229701227675663",
-      "hot": "477"
+      "hot": "495"
     },
     {
       "rank": 2,
       "title": "Flutter material/cupertino 解耦最新进展，已经在做新样式了",
       "url": "https://juejin.cn/post/7660030380293357609",
-      "hot": "477"
+      "hot": "495"
     },
     {
       "rank": 3,
       "title": "从5万次到日均2000万次调用：大模型推理服务的性能工程实践",
       "url": "https://juejin.cn/post/7660697495832035362",
-      "hot": "432"
+      "hot": "441"
     },
     {
       "rank": 4,
+      "title": "2026编程圈很火的10个Skills",
+      "url": "https://juejin.cn/post/7660712622825144374",
+      "hot": "396"
+    },
+    {
+      "rank": 5,
       "title": "为什么我会主动给一个年轻程序员加薪、晋升？",
       "url": "https://juejin.cn/post/7660529058778513460",
       "hot": "396"
     },
     {
-      "rank": 5,
-      "title": "2026编程圈很火的10个Skills",
-      "url": "https://juejin.cn/post/7660712622825144374",
-      "hot": "387"
-    },
-    {
       "rank": 6,
       "title": "图解 120 个大语言模型（LLM）核心概念（1-30）",
       "url": "https://juejin.cn/post/7660708287620808739",
-      "hot": "378"
+      "hot": "387"
     },
     {
       "rank": 7,
@@ -48,14 +48,14 @@
     },
     {
       "rank": 8,
-      "title": "Android 架构这些年，其实一直在消灭碎片化异步",
-      "url": "https://juejin.cn/post/7660435816799273006",
-      "hot": "360"
+      "title": "工信部警告 Claude Code 有后门？我扒了一下，发现不止后门",
+      "url": "https://juejin.cn/post/7660360633646317618",
+      "hot": "369"
     },
     {
       "rank": 9,
-      "title": "工信部警告 Claude Code 有后门？我扒了一下，发现不止后门",
-      "url": "https://juejin.cn/post/7660360633646317618",
+      "title": "Android 架构这些年，其实一直在消灭碎片化异步",
+      "url": "https://juejin.cn/post/7660435816799273006",
       "hot": "360"
     },
     {

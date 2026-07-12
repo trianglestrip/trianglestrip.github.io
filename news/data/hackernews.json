@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-12T14:11:29+00:00",
+  "updated_at": "2026-07-12T16:11:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Old and new apps, via modern coding agents by Terry Tao",
       "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
-      "hot": "140"
+      "hot": "237"
     },
     {
       "rank": 2,
-      "title": "Yt-Dlp Sequence Diagrams",
-      "url": "https://app.ilograph.com/demo.ilograph.yt-dlp/Download%2520a%2520YouTube%2520Video",
-      "hot": "61"
+      "title": "AI Boosts Research Careers but Flattens Scientific Discovery",
+      "url": "https://spectrum.ieee.org/ai-science-research-flattens-discovery",
+      "hot": "66"
     },
     {
       "rank": 3,
       "title": "Understanding the Odin Programming Language",
       "url": "https://odinbook.com/",
-      "hot": "37"
+      "hot": "75"
     },
     {
       "rank": 4,
       "title": "Ghostel.el: Terminal emulator powered by libghostty",
       "url": "https://dakra.github.io/ghostel/",
-      "hot": "88"
+      "hot": "133"
     },
     {
       "rank": 5,
-      "title": "Vint Cerf, a “father of the Internet”, is retiring",
-      "url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
-      "hot": "177"
+      "title": "Gina Gallery of International Naive Art",
+      "url": "https://www.ginagallery.com/",
+      "hot": "17"
     },
     {
       "rank": 6,
       "title": "Unauthenticated RCE in Motorola's MR2600 Router",
       "url": "https://mrbruh.com/motorola/",
-      "hot": "20"
+      "hot": "49"
     },
     {
       "rank": 7,
-      "title": "Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
-      "url": "https://github.com/cosmtrek/mindwalk",
-      "hot": "108"
+      "title": "Vint Cerf, a “father of the Internet”, is retiring",
+      "url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
+      "hot": "217"
     },
     {
       "rank": 8,
-      "title": "AI Boosts Research Careers but Flattens Scientific Discovery",
-      "url": "https://spectrum.ieee.org/ai-science-research-flattens-discovery",
-      "hot": "4"
+      "title": "Lessons from the Vasa Shipwreck",
+      "url": "https://www.ft.com/content/200a6c44-9b66-4af3-82eb-98acb53898e4",
+      "hot": "15"
     },
     {
       "rank": 9,
-      "title": "Mesh LLM: distributed AI computing on iroh",
-      "url": "https://www.iroh.computer/blog/mesh-llm",
-      "hot": "293"
+      "title": "Ditching Zotero for a Text File",
+      "url": "https://atthis.link/blog/2026/57207.html",
+      "hot": "34"
     },
     {
       "rank": 10,
-      "title": "Lessons from the Vasa Shipwreck",
-      "url": "https://www.ft.com/content/200a6c44-9b66-4af3-82eb-98acb53898e4",
-      "hot": "7"
+      "title": "Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
+      "url": "https://github.com/cosmtrek/mindwalk",
+      "hot": "125"
     }
   ]
 }
