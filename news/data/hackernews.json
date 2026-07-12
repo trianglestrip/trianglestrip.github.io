@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-12T16:11:43+00:00",
+  "updated_at": "2026-07-12T19:22:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Old and new apps, via modern coding agents by Terry Tao",
-      "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
-      "hot": "237"
+      "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+      "hot": "93"
     },
     {
       "rank": 2,
-      "title": "AI Boosts Research Careers but Flattens Scientific Discovery",
-      "url": "https://spectrum.ieee.org/ai-science-research-flattens-discovery",
-      "hot": "66"
+      "title": "I love LLMs, I hate hype",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
+      "hot": "25"
     },
     {
       "rank": 3,
-      "title": "Understanding the Odin Programming Language",
-      "url": "https://odinbook.com/",
-      "hot": "75"
+      "title": "The shingles vaccine may reduce the risk of dementia",
+      "url": "https://www.economist.com/leaders/2026/07/09/a-no-brainer-for-protecting-your-brain",
+      "hot": "117"
     },
     {
       "rank": 4,
-      "title": "Ghostel.el: Terminal emulator powered by libghostty",
-      "url": "https://dakra.github.io/ghostel/",
-      "hot": "133"
+      "title": "Old and new apps, via modern coding agents",
+      "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+      "hot": "350"
     },
     {
       "rank": 5,
-      "title": "Gina Gallery of International Naive Art",
-      "url": "https://www.ginagallery.com/",
-      "hot": "17"
+      "title": "Don't you mean extinct?",
+      "url": "https://fabiensanglard.net/extinct/index.html",
+      "hot": "121"
     },
     {
       "rank": 6,
-      "title": "Unauthenticated RCE in Motorola's MR2600 Router",
-      "url": "https://mrbruh.com/motorola/",
-      "hot": "49"
+      "title": "Automation Without Understanding",
+      "url": "https://arxiv.org/abs/2607.06377",
+      "hot": "38"
     },
     {
       "rank": 7,
-      "title": "Vint Cerf, a “father of the Internet”, is retiring",
-      "url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
-      "hot": "217"
+      "title": "Why write code in 2026",
+      "url": "https://softwaredoug.com/blog/2026/07/09/write-code",
+      "hot": "21"
     },
     {
       "rank": 8,
-      "title": "Lessons from the Vasa Shipwreck",
-      "url": "https://www.ft.com/content/200a6c44-9b66-4af3-82eb-98acb53898e4",
-      "hot": "15"
+      "title": "Show HN: Shirei, cross-platform GUI framework in native Go",
+      "url": "https://github.com/hasenj/go-shirei/",
+      "hot": "47"
     },
     {
       "rank": 9,
-      "title": "Ditching Zotero for a Text File",
-      "url": "https://atthis.link/blog/2026/57207.html",
-      "hot": "34"
+      "title": "Can We Understand How Large Language Models Reason?",
+      "url": "https://cacm.acm.org/news/can-we-understand-how-large-language-models-reason/",
+      "hot": "13"
     },
     {
       "rank": 10,
-      "title": "Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
-      "url": "https://github.com/cosmtrek/mindwalk",
-      "hot": "125"
+      "title": "Against Usefulness",
+      "url": "https://www.motivenotes.ai/p/against-usefulness",
+      "hot": "28"
     }
   ]
 }
