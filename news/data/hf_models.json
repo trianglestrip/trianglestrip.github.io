@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-12T10:42:46+00:00",
+  "updated_at": "2026-07-12T17:15:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "tencent/Hy3",
       "url": "https://huggingface.co/tencent/Hy3",
-      "hot": "706"
+      "hot": "711"
     },
     {
       "rank": 2,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "2029"
+      "hot": "2034"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3843"
+      "hot": "3850"
     },
     {
       "rank": 4,
-      "title": "InternScience/Agents-A1",
-      "url": "https://huggingface.co/InternScience/Agents-A1",
-      "hot": "498"
+      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "hot": "253"
     },
     {
       "rank": 5,
-      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "hot": "243"
+      "title": "InternScience/Agents-A1",
+      "url": "https://huggingface.co/InternScience/Agents-A1",
+      "hot": "502"
     },
     {
       "rank": 6,
       "title": "froggeric/Qwen-Fixed-Chat-Templates",
       "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
-      "hot": "856"
+      "hot": "858"
     },
     {
       "rank": 7,
-      "title": "baidu/Unlimited-OCR",
-      "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1936"
+      "title": "conradlocke/krea2-identity-edit",
+      "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
+      "hot": "205"
     },
     {
       "rank": 8,
-      "title": "conradlocke/krea2-identity-edit",
-      "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
-      "hot": "198"
+      "title": "baidu/Unlimited-OCR",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "hot": "1937"
     },
     {
       "rank": 9,
-      "title": "meituan-longcat/LongCat-2.0",
-      "url": "https://huggingface.co/meituan-longcat/LongCat-2.0",
-      "hot": "179"
+      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "hot": "2668"
     },
     {
       "rank": 10,
-      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2662"
+      "title": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF",
+      "url": "https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF",
+      "hot": "199"
     }
   ]
 }
