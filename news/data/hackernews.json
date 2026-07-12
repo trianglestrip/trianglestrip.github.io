@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-11T21:58:20+00:00",
+  "updated_at": "2026-07-12T01:10:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
-      "url": "https://antjs.org",
-      "hot": "103"
+      "title": "Mesh LLM: distributed AI computing on iroh",
+      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "hot": "65"
     },
     {
       "rank": 2,
-      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
-      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
-      "hot": "94"
+      "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
+      "url": "https://antjs.org",
+      "hot": "170"
     },
     {
       "rank": 3,
-      "title": "We scaled PgBouncer to 4x throughput",
-      "url": "https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres",
-      "hot": "153"
+      "title": "RISCBoy is an open-source portable games console, designed from scratch",
+      "url": "https://github.com/Wren6991/RISCBoy",
+      "hot": "51"
     },
     {
       "rank": 4,
-      "title": "UPI: Anatomy of a Payment Transaction",
-      "url": "https://timeseriesofindia.com/economy/reads/upi-architecture/",
-      "hot": "56"
+      "title": "The fine print that follows you out the door: non-compete clauses are spreading",
+      "url": "https://oecdecoscope.blog/2026/07/07/the-fine-print-that-follows-you-out-the-door-non-compete-clauses-are-spreading-and-holding-back-growth/",
+      "hot": "20"
     },
     {
       "rank": 5,
-      "title": "Prefer strict tables in SQLite",
-      "url": "https://evanhahn.com/prefer-strict-tables-in-sqlite/",
-      "hot": "159"
+      "title": "A dock that wakes up reliably",
+      "url": "https://fabiensanglard.net/tb4/index.html",
+      "hot": "4"
     },
     {
       "rank": 6,
-      "title": "The early History of the Singular Value Decomposition (1993) [pdf]",
-      "url": "https://www.math.ucdavis.edu/~saito/courses/229A/stewart-svd.pdf",
-      "hot": "74"
+      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+      "hot": "151"
     },
     {
       "rank": 7,
-      "title": "Biff.graph: structure your Clojure codebase as a queryable graph",
-      "url": "https://github.com/jacobobryant/biff/tree/v2.x/libs/graph",
-      "hot": "62"
+      "title": "Billions of Sketches Reveal Hidden Cultural Variation in Human Concepts",
+      "url": "https://arxiv.org/abs/2607.07267",
+      "hot": "45"
     },
     {
       "rank": 8,
-      "title": "ZeroFS vs. Amazon S3 Files",
-      "url": "https://www.zerofs.net/blog/zerofs-vs-aws-s3-files/",
-      "hot": "22"
+      "title": "We scaled PgBouncer to 4x throughput",
+      "url": "https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres",
+      "hot": "175"
     },
     {
       "rank": 9,
-      "title": "Female US rower completes historic solo journey from California to Hawaii",
-      "url": "https://www.theguardian.com/us-news/2026/jul/04/california-hawaii-rowing-solo-journey",
-      "hot": "176"
+      "title": "UPI: Anatomy of a Payment Transaction",
+      "url": "https://timeseriesofindia.com/economy/reads/upi-architecture/",
+      "hot": "92"
     },
     {
       "rank": 10,
-      "title": "Show HN: Orbit – AR satellite tracker, watch 15k+ objects",
-      "url": "https://nagylukas.github.io/orbit.html",
-      "hot": "35"
+      "title": "Prefer strict tables in SQLite",
+      "url": "https://evanhahn.com/prefer-strict-tables-in-sqlite/",
+      "hot": "215"
     }
   ]
 }
