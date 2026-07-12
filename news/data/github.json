@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-07-12T04:36:03+00:00",
+  "updated_at": "2026-07-12T10:42:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[C++] catchorg/Catch2",
       "url": "https://github.com/catchorg/Catch2",
-      "hot": "21,115"
+      "hot": "21,246"
     },
     {
       "rank": 2,
       "title": "[C++] abseil/abseil-cpp",
       "url": "https://github.com/abseil/abseil-cpp",
-      "hot": "17,840"
+      "hot": "17,925"
     },
     {
       "rank": 3,
       "title": "[Python] davila7/claude-code-templates",
       "url": "https://github.com/davila7/claude-code-templates",
-      "hot": "29,060"
+      "hot": "29,125"
     },
     {
       "rank": 4,
       "title": "[TypeScript] google-labs-code/stitch-skills",
       "url": "https://github.com/google-labs-code/stitch-skills",
-      "hot": "7,119"
+      "hot": "7,205"
     },
     {
       "rank": 5,
       "title": "[Go] hashicorp/terraform",
       "url": "https://github.com/hashicorp/terraform",
-      "hot": "49,389"
+      "hot": "49,430"
     },
     {
       "rank": 6,
       "title": "[C++] zeux/meshoptimizer",
       "url": "https://github.com/zeux/meshoptimizer",
-      "hot": "8,153"
+      "hot": "8,174"
     },
     {
       "rank": 7,
       "title": "[JavaScript] openai/plugins",
       "url": "https://github.com/openai/plugins",
-      "hot": "4,446"
+      "hot": "4,480"
     },
     {
       "rank": 8,
       "title": "[TypeScript] wonderwhy-er/DesktopCommanderMCP",
       "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-      "hot": "7,809"
+      "hot": "7,848"
     },
     {
       "rank": 9,
       "title": "[C++] chriskohlhoff/asio",
       "url": "https://github.com/chriskohlhoff/asio",
-      "hot": "6,147"
+      "hot": "6,158"
     },
     {
       "rank": 10,
       "title": "[Rust] oven-sh/bun",
       "url": "https://github.com/oven-sh/bun",
-      "hot": "94,582"
+      "hot": "94,617"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-12T04:37:06+00:00",
+  "updated_at": "2026-07-12T10:42:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "tencent/Hy3",
       "url": "https://huggingface.co/tencent/Hy3",
-      "hot": "700"
+      "hot": "706"
     },
     {
       "rank": 2,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "2019"
+      "hot": "2029"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3836"
+      "hot": "3843"
     },
     {
       "rank": 4,
       "title": "InternScience/Agents-A1",
       "url": "https://huggingface.co/InternScience/Agents-A1",
-      "hot": "496"
+      "hot": "498"
     },
     {
       "rank": 5,
       "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
       "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "hot": "236"
+      "hot": "243"
     },
     {
       "rank": 6,
       "title": "froggeric/Qwen-Fixed-Chat-Templates",
       "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
-      "hot": "853"
+      "hot": "856"
     },
     {
       "rank": 7,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1932"
+      "hot": "1936"
     },
     {
       "rank": 8,
       "title": "conradlocke/krea2-identity-edit",
       "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
-      "hot": "192"
+      "hot": "198"
     },
     {
       "rank": 9,
       "title": "meituan-longcat/LongCat-2.0",
       "url": "https://huggingface.co/meituan-longcat/LongCat-2.0",
-      "hot": "177"
+      "hot": "179"
     },
     {
       "rank": 10,
       "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
       "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2654"
+      "hot": "2662"
     }
   ]
 }
