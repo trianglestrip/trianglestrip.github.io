@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-13T07:55:58+00:00",
+  "updated_at": "2026-07-13T10:48:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "2026编程圈很火的10个Skills",
       "url": "https://juejin.cn/post/7660712622825144374",
-      "hot": "1008"
+      "hot": "1278"
     },
     {
       "rank": 2,
       "title": "图解 120 个大语言模型（LLM）核心概念（1-30）",
       "url": "https://juejin.cn/post/7660708287620808739",
-      "hot": "576"
+      "hot": "657"
     },
     {
       "rank": 3,
-      "title": "从5万次到日均2000万次调用：大模型推理服务的性能工程实践",
-      "url": "https://juejin.cn/post/7660697495832035362",
-      "hot": "567"
+      "title": "AI 时代 Harness 工程在后台管理系统中的实践 🌈",
+      "url": "https://juejin.cn/post/7660780385584316454",
+      "hot": "477"
     },
     {
       "rank": 4,
-      "title": "AI 时代 Harness 工程在后台管理系统中的实践 🌈",
-      "url": "https://juejin.cn/post/7660780385584316454",
-      "hot": "369"
+      "title": "图解 120 个大语言模型（LLM）核心概念（31-60）",
+      "url": "https://juejin.cn/post/7660697431320690723",
+      "hot": "378"
     },
     {
       "rank": 5,
-      "title": "图解 120 个大语言模型（LLM）核心概念（31-60）",
-      "url": "https://juejin.cn/post/7660697431320690723",
-      "hot": "333"
+      "title": "一键还原任意网站，这套 Playwright + 多 Agent 工程流太猛了",
+      "url": "https://juejin.cn/post/7661439504077176847",
+      "hot": "324"
     },
     {
       "rank": 6,
-      "title": "一键还原任意网站，这套 Playwright + 多 Agent 工程流太猛了",
-      "url": "https://juejin.cn/post/7661439504077176847",
-      "hot": "261"
+      "title": "星云SDK + 油猴：给LLM塑造肉身，陪伴你在每个网页",
+      "url": "https://juejin.cn/post/7661754132202766371",
+      "hot": "306"
     },
     {
       "rank": 7,
-      "title": "AI 是怎么操作浏览器的——browser use 实现原理",
-      "url": "https://juejin.cn/post/7660466008562892835",
-      "hot": "261"
+      "title": "Flutter Windows 开始支持 Impeller ，还修复了多窗口 bug",
+      "url": "https://juejin.cn/post/7661123972889559046",
+      "hot": "297"
     },
     {
       "rank": 8,
-      "title": "Flutter Windows 开始支持 Impeller ，还修复了多窗口 bug",
-      "url": "https://juejin.cn/post/7661123972889559046",
-      "hot": "252"
+      "title": "没写一行代码！我用 ChatGPT 5.6 (Sol) 做了一个智慧充电站 3D 大屏",
+      "url": "https://juejin.cn/post/7661160753004904448",
+      "hot": "297"
     },
     {
       "rank": 9,
-      "title": "3位工程师靠“删AI代码”创业，一周收费1万美元：以后最贵的能力，可能不是写代码",
-      "url": "https://juejin.cn/post/7661251852345458697",
-      "hot": "234"
+      "title": "AI 是怎么操作浏览器的——browser use 实现原理",
+      "url": "https://juejin.cn/post/7660466008562892835",
+      "hot": "297"
     },
     {
       "rank": 10,
-      "title": "没写一行代码！我用 ChatGPT 5.6 (Sol) 做了一个智慧充电站 3D 大屏",
-      "url": "https://juejin.cn/post/7661160753004904448",
-      "hot": "216"
+      "title": "3位工程师靠“删AI代码”创业，一周收费1万美元：以后最贵的能力，可能不是写代码",
+      "url": "https://juejin.cn/post/7661251852345458697",
+      "hot": "288"
     }
   ]
 }
