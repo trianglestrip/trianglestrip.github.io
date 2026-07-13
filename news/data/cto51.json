@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-13T01:14:14+00:00",
+  "updated_at": "2026-07-13T04:47:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "数据生成，虚拟仿真，实时推理：前沿物理 AI 技术如何落地产业应用",
-      "url": "https://www.51cto.com/article/848603.html",
-      "hot": "从仿真到推理，从虚拟世界验证到走进真实世界，NVIDIA 构建了一套覆盖硬件算力、仿真工具链与世界基础模型的完整解决方案体系，加速物理 AI 时代到来！"
+      "title": "【HarmonyOS 7开发者前瞻】10 HarmonyOS 7 真实项目适配路线图：API 26、AI / Agent 与多端改造优先级",
+      "url": "https://ost.51cto.com/posts/52514",
+      "hot": "前言一个已有HarmonyOS6原生项目，到底应该怎样安排HarmonyOS7适配路线。这类项目通常已经有完整业务结构。比如会议类应用里，可能已经有会..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 多文件下载核心技术揭秘",
-      "url": "https://ost.51cto.com/posts/52364",
-      "hot": "HarmonyOS多文件下载核心技术揭秘项目地址：https:gitcode.comHarmonyOSSamplesmultifiledownload一、项目概述本项目演示了如何使用Harmony..."
+      "title": "AIOPS 智能运维转型实践与思考",
+      "url": "https://www.51cto.com/article/849351.html",
+      "hot": "如何借助 AI，把个人经验和工程能力放大成一套更可靠的系统 。"
     },
     {
       "rank": 3,
-      "title": "HarmonyOS画中画窗口从0到1",
-      "url": "https://ost.51cto.com/posts/52299",
-      "hot": "HarmonyOS画中画窗口从0到1项目地址：https:gitcode.comHarmonyOSSampleswindowpip项目概述本项目演示了HarmonyOS画中画（PictureinPicture..."
+      "title": "Agent并发干活像“三个和尚没水喝”？CoAgent新框架：让它们学会看懂冲突再动手",
+      "url": "https://www.51cto.com/article/849348.html",
+      "hot": "上海交通大学IPADS实验室的团队发现，在尝试把并发agent接入生产环境时，会出现奇怪的现象：两个（或者多个）agent明明按照要求做了，最后的结果却是错的。"
     },
     {
       "rank": 4,
-      "title": "GPT5.6正式发布！Sol杀穿榜单，ChatGPTWork取代Codex，Claude急了？",
-      "url": "https://www.51cto.com/article/849178.html",
-      "hot": "OpenAI把Sol、Terra、Luna放在一起推，其实是在教用户一件事：以后不要只想着召唤最强模型，要学会调度模型。复杂任务交给Sol，日常任务交给Terra，高频任务交给Luna。工具输出先处理，长任务再开multi-agent。"
+      "title": "GitHub 爆火！这个免费 UI 组件库收集了 3000+ 精美组件，前端再也不用重复造轮子",
+      "url": "https://www.51cto.com/article/849346.html",
+      "hot": "Uiverse 解决的不是一个技术问题。它解决的是：前端开发者为什么每天都在重复造轮子？"
     },
     {
       "rank": 5,
-      "title": "用 Vue Router 跑通第一个应用",
-      "url": "https://www.51cto.com/article/849171.html",
-      "hot": "上一章我们手写的简易路由器，核心是\"路径表 + 监听 + 动态组件\"。这一章我们就把这三件套用起来，跑通一个真正的 Vue Router 应用。"
+      "title": "面试官：“你知道大模型是怎么训练出来的？”，我：“训练就是给模型喂大量数据让它学习”，他：“就这？”",
+      "url": "https://www.51cto.com/article/849342.html",
+      "hot": "训练大模型真不是「喂数据」三个字。它是「预训练 → SFT → 对齐」三段流水线，每一段解决的问题不同，顺序还动不得。把这三段各自的角色拆开讲，整条主线才立得起来。"
     },
     {
       "rank": 6,
-      "title": "GPT5.6发布了，但OpenAI这次抄Anthropic抄得最狠的，不是模型",
-      "url": "https://www.51cto.com/article/849168.html",
-      "hot": "Work模式和Codex模式，底层用的是同一套插件系统，唯一的区别是，Codex模式会把技术细节亮给你看，代码、命令行、执行过程，全暴露在外面。Work模式呢，把这些全部摁下去，你只看得到目标和结果，中间那些怎么实现的，它帮你藏起来了。"
+      "title": "企业基于 SDD 的 AI 编程王炸：OpenSpec、Superpowers 与 Harness 架构三剑客深度解析",
+      "url": "https://www.51cto.com/article/849338.html",
+      "hot": "从“Vibe Coding（凭感觉编程）”走向“Agentic Engineering（智能体工程）”，中间差的不仅是模型的迭代，更是一套成熟的工业级基础设施。\nOpenSpec 定标准，Superpowers 保纪律，Harness 管团队。"
     },
     {
       "rank": 7,
-      "title": "别再混淆缓存与内存！SRAM 与 DRAM 的本质区别",
-      "url": "https://www.51cto.com/article/849167.html",
-      "hot": "SRAM 和 DRAM 的区别，如果只记一句话：SRAM 离计算更近，拿速度和稳定性吃饭；DRAM 负责容量和成本，用刷新与控制复杂度换规模。"
+      "title": "HarmonyOS7 主题与深色模式：一套换肤方案实战",
+      "url": "https://ost.51cto.com/posts/52513",
+      "hot": "前言现在的app基本都支持&quot;深色模式&quot;和&quot;换主题色&quot;。用户晚上刷手机不被亮瞎眼，品牌也能用主题色强化识别。HarmonyOS做主题切换不难，关键是..."
     },
     {
       "rank": 8,
-      "title": "CVE-2026-46215：通过 DRM GEM change_handle 中的UAF功能获得ROOT权限",
-      "url": "https://www.51cto.com/article/849164.html",
-      "hot": "Puttimet先到一步，David Francis和Dave Airlie提供了更简洁的修复并决定弃用该ioctl而非持续修补，以及内核安全人员快速的周转。"
+      "title": "253k Superpowers 和 60k OpenSpec 被融合了！spec-superflow 工作流登上热榜",
+      "url": "https://www.51cto.com/article/849311.html",
+      "hot": "spec-superflow 已经在 GitHub 开源，MIT 协议。如果你也被 AI 写代码的失控点折磨过，建议直接装上试试，源码就在仓库里，架构、契约模板、状态机都看得见。"
     },
     {
       "rank": 9,
-      "title": "Electron、Tauri，该让位了！Vercel 造了个 6MB 原生框架！",
-      "url": "https://www.51cto.com/article/849161.html",
-      "hot": "Native SDK 直接绕开浏览器、WebView 和 JavaScript 引擎，用一套类似前端模板的 .native 语法写界面，再用 Zig 处理状态和业务逻辑，最终由自研渲染引擎，把像素直接画进系统窗口。"
+      "title": "从 Bellman 到最优策略：值迭代和策略迭代到底差在哪里？",
+      "url": "https://www.51cto.com/article/849307.html",
+      "hot": "现在进入第一个真正的算法层：如果环境模型已知，怎样从 Bellman 方程求出最优策略？"
     },
     {
       "rank": 10,
-      "title": "Claude Code 被点名后，程序员别再把 Agent 当插件装",
-      "url": "https://www.51cto.com/article/849160.html",
-      "hot": "很多人第一反应会是：这个工具还能不能用？是不是该换 Codex、Cursor、Copilot？我觉得这个问题太小了。真正的大问题是：我们已经把一类能读仓库、改文件、跑命令、接工具、开 PR 的软件，装进了研发流程，却还在用“装个插件”的心态管理它。"
+      "title": "美团二面：短信被刷五万怎么防？六道防线全答完直接过了",
+      "url": "https://www.51cto.com/article/849268.html",
+      "hot": "面试官问你怎么防短信被刷，别开口就是\"前端倒计时\"——一开口就暴露了段位。先把这六道防线按从外到内的顺序捋出来。"
     }
   ]
 }

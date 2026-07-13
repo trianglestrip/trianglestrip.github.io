@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-13T01:14:19+00:00",
+  "updated_at": "2026-07-13T04:47:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "红帽决定聚焦中国企业的“多模型、多GPU、多云”选择权",
+      "url": "https://www.infoq.cn/article/aIP7uI00KLecpDYZBKXl?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 13 Jul 2026 12:07:33 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "MiniMax CEO称不再领取薪酬，将4%股份激励团队；吐槽DeepSeek面试的华为天才少年回应被控诈骗；宇树机器人给猪做手术登上Nature｜AI周报",
+      "url": "https://www.infoq.cn/article/ySJsUiKHrIF1zDtKsNDj?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 13 Jul 2026 12:07:24 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "从看见问题到解决问题，Agent 正重新定义可观测？",
+      "url": "https://www.infoq.cn/video/v00wiAfaypFe6jwaMOWP?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 13 Jul 2026 12:00:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "源络科技在国家级科研平台完成全球首个自主实验室落地",
+      "url": "https://www.infoq.cn/article/SikqTtFjSUbzBDz9LhKe?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 13 Jul 2026 11:50:26 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "UniRL：统一多模态 RL 框架的 2.4X 端到端性能优化实践｜AICon深圳",
+      "url": "https://www.infoq.cn/article/jeAxpYI4tgewlBdvXZBJ?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 13 Jul 2026 11:15:39 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "Circle CI推出Chunk Sidecars，将CI校验直接引入AI编码工作流",
+      "url": "https://www.infoq.cn/article/gfOWRGdLD5IaqsO0rFxR?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 13 Jul 2026 11:00:00 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "TSRX：一种与框架无关的JSX替代方案",
+      "url": "https://www.infoq.cn/article/Zd3aCWmlDJaAiwhEE4q6?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 13 Jul 2026 09:23:51 GMT"
+    },
+    {
+      "rank": 8,
       "title": "面向 Qwen 系列模型线性注意力的高性能优化实践｜AICon深圳",
       "url": "https://www.infoq.cn/article/wg5h3JBMvs5ZkoP0azha?utm_source=rss&utm_medium=article",
       "hot": "Sun, 12 Jul 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "苹果甩出41页PDF怒告OpenAI“偷师”其核心机密！网友：早知道就等印度开源了",
       "url": "https://www.infoq.cn/article/Rzh9umgPl90MgGolBcWm?utm_source=rss&utm_medium=article",
       "hot": "Sat, 11 Jul 2026 17:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "从 HAMi 到 HAMi-DRA：异构环境的算力资源管理实践｜AICon深圳",
       "url": "https://www.infoq.cn/article/fRMquPuKMsj6zkyFmO6P?utm_source=rss&utm_medium=article",
       "hot": "Sat, 11 Jul 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "Airbnb 分享 Kubernetes 动态配置 Sidecar Sitar-agent 的架构",
-      "url": "https://www.infoq.cn/article/fO5byVPuZwwlBPosijBV?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 11 Jul 2026 09:00:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "AI时代最被低估的创业资本，不是技术，是你的“老本行”",
-      "url": "https://www.infoq.cn/article/KAweBbBoUV2ufYlocaul?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 10 Jul 2026 17:49:06 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "精彩预告：从看见问题到解决问题，Agent 正重新定义可观测？",
-      "url": "https://www.infoq.cn/video/GqOVrgegDNS1TDrwGLK4?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 10 Jul 2026 15:30:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "从零开始预训练，蚂蚁灵波发布具身原生世界动作模型LingBot-VA 2.0",
-      "url": "https://www.infoq.cn/article/aU7GMFKF8qZRhT8VMWvY?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 10 Jul 2026 15:14:29 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "GPT-5.6全面围剿Claude Fable 5，“超级应用”ChatGPT Work上位，Altman紧急澄清：不会取代Coedx",
-      "url": "https://www.infoq.cn/article/iqUrh3vqeO4xszUa1bCd?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 10 Jul 2026 14:10:30 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "从PostgreSQL切换到ClickHouse，提升系统性能与伸缩性",
-      "url": "https://www.infoq.cn/article/b1jJxXGv5rNXyMXqMGJr?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 10 Jul 2026 13:29:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "史上最高调的AI重写：Claude花11天搞定Bun，创始人花一个月才敢交底",
-      "url": "https://www.infoq.cn/article/uHkOoJ6Nfm6wNCsUryuO?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 10 Jul 2026 13:21:31 GMT"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-13T01:14:06+00:00",
+  "updated_at": "2026-07-13T04:46:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "2026远程控制融合 AI 智能体，重构远程办公生产力",
       "url": "https://blog.csdn.net/m0_75215937/article/details/162817940",
-      "hot": "21672"
+      "hot": "21678"
     },
     {
       "rank": 2,
-      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从数据管道到训练驾驶舱-PyTorch数据处理与模型可视化展示)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/162693156",
-      "hot": "17053"
+      "title": "【Linux】文件描述符背后的底层逻辑：重定向、VFS 与用户态缓冲区",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/162751545",
+      "hot": "15631"
     },
     {
       "rank": 3,
-      "title": "【Linux】文件描述符背后的底层逻辑：重定向、VFS 与用户态缓冲区",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/162751545",
-      "hot": "16899"
+      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从数据管道到训练驾驶舱-PyTorch数据处理与模型可视化展示)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/162693156",
+      "hot": "13861"
     },
     {
       "rank": 4,
-      "title": "2026 年 7 月远控软件横评：哪个远程控制软件好用不卡顿？UU 远程毫秒低延迟实测完胜",
-      "url": "https://blog.csdn.net/user340/article/details/162730154",
-      "hot": "13282"
+      "title": "【Linux之旅】五种 IO 模型与阻塞 IO：带你彻底搞懂 Linux IO 设计哲学",
+      "url": "https://blog.csdn.net/2302_80243065/article/details/162765572",
+      "hot": "13650"
     },
     {
       "rank": 5,
-      "title": "【Linux之旅】五种 IO 模型与阻塞 IO：带你彻底搞懂 Linux IO 设计哲学",
-      "url": "https://blog.csdn.net/2302_80243065/article/details/162765572",
-      "hot": "9141"
+      "title": "安卓旧手机部署OpenList实操：内置存储挂载、文件上传与公网访问",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/162807569",
+      "hot": "10547"
     },
     {
       "rank": 6,
-      "title": "《精讲Spring Boot后端跑另一个端口：如何解决暴露服务器问题》",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/162749996",
-      "hot": "8440"
+      "title": "怎样区分人工智能、离身智能、具身智能、智能机器人与人形机器人",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/162728655",
+      "hot": "10058"
     },
     {
       "rank": 7,
-      "title": "视频切割脚本（Python版）",
-      "url": "https://blog.csdn.net/Miraitowa_6/article/details/162770956",
-      "hot": "8439"
+      "title": "中级OpenGL教程 017：几何体复用、材质区分与坐标变换详解",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/162795420",
+      "hot": "9734"
     },
     {
       "rank": 8,
-      "title": "从共享API到专属集群：大模型推理服务的弹性调度架构演进之路",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/162768246",
-      "hot": "8114"
+      "title": "Spring AI-2.0(alibaba) Agent 编程实战：从 Tool Calling 到 MCP 协议，附完整报文级日志",
+      "url": "https://blog.csdn.net/lilinhai548/article/details/162796038",
+      "hot": "9523"
     },
     {
       "rank": 9,
-      "title": "空间管理的进化革命：深度解析Oracle ASSM与MSSM自动与手动段空间管理的完整对比",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/162770931",
-      "hot": "7657"
+      "title": "GitHub 热榜项目 - 周榜(2026-07-11)",
+      "url": "https://blog.csdn.net/u014390502/article/details/162793206",
+      "hot": "9160"
     },
     {
       "rank": 10,
-      "title": "硬件盲盒任务示例以及硬件盲盒物料",
-      "url": "https://blog.csdn.net/zhuoqingjoking97298/article/details/162809887",
-      "hot": "6925"
+      "title": "空间管理的进化革命：深度解析Oracle ASSM与MSSM自动与手动段空间管理的完整对比",
+      "url": "https://blog.csdn.net/qq_41840843/article/details/162770931",
+      "hot": "8894"
     }
   ]
 }
