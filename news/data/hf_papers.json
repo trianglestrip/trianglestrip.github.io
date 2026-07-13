@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-12T23:41:36+00:00",
+  "updated_at": "2026-07-13T07:56:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Infinite Worlds with Versatile Interactions",
       "url": "https://huggingface.co/papers/2607.07534",
-      "hot": "31"
+      "hot": "33"
     },
     {
       "rank": 2,
       "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
       "url": "https://huggingface.co/papers/2607.07675",
-      "hot": "49"
+      "hot": "54"
     },
     {
       "rank": 3,
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "Continuous Audio Language Models",
-      "url": "https://huggingface.co/papers/2509.06926",
-      "hot": "11"
-    },
-    {
-      "rank": 5,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "110"
+    },
+    {
+      "rank": 5,
+      "title": "Continuous Audio Language Models",
+      "url": "https://huggingface.co/papers/2509.06926",
+      "hot": "11"
     },
     {
       "rank": 6,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "Unlimited OCR Works",
-      "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "54"
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "176"
     },
     {
       "rank": 10,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "175"
+      "title": "Unlimited OCR Works",
+      "url": "https://huggingface.co/papers/2606.23050",
+      "hot": "54"
     }
   ]
 }

@@ -1,50 +1,50 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-13T04:47:04+00:00",
+  "updated_at": "2026-07-13T07:56:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "ArkUI Refresh：告警列表@手动刷新、首屏加载与过期响应丢弃",
+      "url": "https://ost.51cto.com/posts/52515",
+      "hot": "大家好，我是新手程序员Kevin(老K)。做HarmonyOS列表页时，下拉刷新看起来只是把Refresh包在List外面，但真正上线前要处理的并不是&ldquo;能不能..."
+    },
+    {
+      "rank": 2,
       "title": "【HarmonyOS 7开发者前瞻】10 HarmonyOS 7 真实项目适配路线图：API 26、AI / Agent 与多端改造优先级",
       "url": "https://ost.51cto.com/posts/52514",
       "hot": "前言一个已有HarmonyOS6原生项目，到底应该怎样安排HarmonyOS7适配路线。这类项目通常已经有完整业务结构。比如会议类应用里，可能已经有会..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "AIOPS 智能运维转型实践与思考",
       "url": "https://www.51cto.com/article/849351.html",
       "hot": "如何借助 AI，把个人经验和工程能力放大成一套更可靠的系统 。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Agent并发干活像“三个和尚没水喝”？CoAgent新框架：让它们学会看懂冲突再动手",
       "url": "https://www.51cto.com/article/849348.html",
       "hot": "上海交通大学IPADS实验室的团队发现，在尝试把并发agent接入生产环境时，会出现奇怪的现象：两个（或者多个）agent明明按照要求做了，最后的结果却是错的。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "GitHub 爆火！这个免费 UI 组件库收集了 3000+ 精美组件，前端再也不用重复造轮子",
       "url": "https://www.51cto.com/article/849346.html",
       "hot": "Uiverse 解决的不是一个技术问题。它解决的是：前端开发者为什么每天都在重复造轮子？"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "面试官：“你知道大模型是怎么训练出来的？”，我：“训练就是给模型喂大量数据让它学习”，他：“就这？”",
       "url": "https://www.51cto.com/article/849342.html",
       "hot": "训练大模型真不是「喂数据」三个字。它是「预训练 → SFT → 对齐」三段流水线，每一段解决的问题不同，顺序还动不得。把这三段各自的角色拆开讲，整条主线才立得起来。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "企业基于 SDD 的 AI 编程王炸：OpenSpec、Superpowers 与 Harness 架构三剑客深度解析",
       "url": "https://www.51cto.com/article/849338.html",
       "hot": "从“Vibe Coding（凭感觉编程）”走向“Agentic Engineering（智能体工程）”，中间差的不仅是模型的迭代，更是一套成熟的工业级基础设施。\nOpenSpec 定标准，Superpowers 保纪律，Harness 管团队。"
-    },
-    {
-      "rank": 7,
-      "title": "HarmonyOS7 主题与深色模式：一套换肤方案实战",
-      "url": "https://ost.51cto.com/posts/52513",
-      "hot": "前言现在的app基本都支持&quot;深色模式&quot;和&quot;换主题色&quot;。用户晚上刷手机不被亮瞎眼，品牌也能用主题色强化识别。HarmonyOS做主题切换不难，关键是..."
     },
     {
       "rank": 8,

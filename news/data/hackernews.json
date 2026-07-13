@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-13T04:47:05+00:00",
+  "updated_at": "2026-07-13T07:56:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years",
-      "url": "https://nebusec.ai/research/ionstack-part-2/",
-      "hot": "153"
+      "title": "Beavis Ultrasound PnP ISA Sound Card Replica",
+      "url": "https://github.com/schlae/BeavisUltrasound",
+      "hot": "46"
     },
     {
       "rank": 2,
-      "title": "Cyberpunk Comics, Manga and Graphic Novels",
-      "url": "https://shellzine.net/cyberpunk-comics/",
-      "hot": "121"
+      "title": "GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years",
+      "url": "https://nebusec.ai/research/ionstack-part-2/",
+      "hot": "245"
     },
     {
       "rank": 3,
-      "title": "Ask HN: Add flag for AI-generated articles",
-      "url": "https://news.ycombinator.com/item?id=48886741",
-      "hot": "229"
+      "title": "Cyberpunk Comics, Manga and Graphic Novels",
+      "url": "https://shellzine.net/cyberpunk-comics/",
+      "hot": "171"
     },
     {
       "rank": 4,
-      "title": "Tiny Emulators",
-      "url": "https://floooh.github.io/tiny8bit-preview/index.html",
-      "hot": "180"
+      "title": "Backtrack-Free Cursive",
+      "url": "https://mmapped.blog/posts/52-backtrack-free-cursive",
+      "hot": "18"
     },
     {
       "rank": 5,
-      "title": "So you want to learn physics (second edition, 2021)",
-      "url": "https://www.susanrigetti.com/physics",
-      "hot": "135"
+      "title": "Tiny Emulators",
+      "url": "https://floooh.github.io/tiny8bit-preview/index.html",
+      "hot": "232"
     },
     {
       "rank": 6,
-      "title": "Designing and assembling my first PCB",
-      "url": "https://vilkeliskis.com/b/2026/0711.html",
-      "hot": "72"
+      "title": "So you want to learn physics (second edition, 2021)",
+      "url": "https://www.susanrigetti.com/physics",
+      "hot": "199"
     },
     {
       "rank": 7,
-      "title": "First look at Quest, the final ship of Antarctic explorer Shackleton",
-      "url": "https://www.cbc.ca/news/canada/quest-shipwreck-expedition-images-9.7262229",
-      "hot": "13"
+      "title": "The social physics of conversation: Communication patterns matter",
+      "url": "https://andiroberts.com/citizenship/the-social-physics-of-conversation-citizenship-leadership",
+      "hot": "8"
     },
     {
       "rank": 8,
-      "title": "Ask HN: What Are You Working On? (July 2026)",
-      "url": "https://news.ycombinator.com/item?id=48884984",
-      "hot": "100"
+      "title": "Ask HN: Add flag for AI-generated articles",
+      "url": "https://news.ycombinator.com/item?id=48886741",
+      "hot": "561"
     },
     {
       "rank": 9,
-      "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
-      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
-      "hot": "509"
+      "title": "Designing and assembling my first PCB",
+      "url": "https://vilkeliskis.com/b/2026/0711.html",
+      "hot": "98"
     },
     {
       "rank": 10,
-      "title": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
-      "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
-      "hot": "162"
+      "title": "Guy took Jupiter photo with Game Boy Camera, giant telescope, publishes tutorial",
+      "url": "https://www.engadget.com/2211886/guy-who-took-photo-of-jupiter-with-a-game-boy-camera-and-giant-telescope-publishes-diy-tutorial/",
+      "hot": "31"
     }
   ]
 }
