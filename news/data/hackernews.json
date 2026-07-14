@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-14T12:14:52+00:00",
+  "updated_at": "2026-07-14T14:14:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Codex starts encrypting sub-agent prompts",
       "url": "https://github.com/openai/codex/issues/28058",
-      "hot": "98"
+      "hot": "253"
     },
     {
       "rank": 2,
-      "title": "The Future Worth Building Is Human – Thinking Machines Lab",
-      "url": "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
-      "hot": "34"
+      "title": "Codex scraped the ICM website and discovered 2026 Fields Medal winner list",
+      "url": "https://phemex.com/news/article/2026-fields-medal-winners-list-leaked-includes-two-peking-university-alumni-92948",
+      "hot": "96"
     },
     {
       "rank": 3,
-      "title": "How to stop Claude from saying load-bearing",
-      "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
-      "hot": "34"
+      "title": "Proof of Care in the Age of A.I",
+      "url": "https://jacobfilipp.com/care/",
+      "hot": "50"
     },
     {
       "rank": 4,
-      "title": "Your 'App' Could Have Been a Webpage (so I fixed it for you)",
-      "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/",
-      "hot": "100"
+      "title": "Beautiful Type Erasure with C++26 Reflection",
+      "url": "https://ryanjk5.github.io/posts/rjk-duck/",
+      "hot": "30"
     },
     {
       "rank": 5,
-      "title": "Codex scraped the ICM website and discovered 2026 Fields Medal winner list",
-      "url": "https://phemex.com/news/article/2026-fields-medal-winners-list-leaked-includes-two-peking-university-alumni-92948",
-      "hot": "19"
+      "title": "Show HN: I RL-trained an agent that trains models with RL (for –$1.3k)",
+      "url": "https://github.com/Danau5tin/ai-trains-ai",
+      "hot": "35"
     },
     {
       "rank": 6,
-      "title": "The great digital fatigue: How digital burnout is changing social media use",
-      "url": "https://blog.incogni.com/digital-fatigue-and-burnout/",
-      "hot": "31"
+      "title": "Tensor Is the Might",
+      "url": "https://zserge.com/posts/tensor/",
+      "hot": "18"
     },
     {
       "rank": 7,
-      "title": "Actegories",
-      "url": "https://bartoszmilewski.com/2026/06/30/actegories/",
-      "hot": "15"
+      "title": "Kids (With Phones) Are Alright",
+      "url": "https://heatherburns.tech/2026/07/08/the-kids-with-phones-are-alright/",
+      "hot": "27"
     },
     {
       "rank": 8,
-      "title": "Alternative(s) to run CUDA on non-Nvidia hardware",
-      "url": "https://www.hpcwire.com/2026/07/09/spectral-compute-aims-to-set-cuda-free-will-it-succeed/",
-      "hot": "74"
+      "title": "Coding agents think ahead of time",
+      "url": "https://arxiv.org/abs/2607.05188",
+      "hot": "36"
     },
     {
       "rank": 9,
       "title": "Japan develops a method to recover up to 90% of lithium from used EV batteries",
       "url": "https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/",
-      "hot": "568"
+      "hot": "643"
     },
     {
       "rank": 10,
       "title": "Punch Yourself in the Face with Reality",
       "url": "https://adi.bio/reality",
-      "hot": "16"
+      "hot": "62"
     }
   ]
 }
