@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-14T14:14:32+00:00",
+  "updated_at": "2026-07-14T16:51:37+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,33 +24,33 @@
     },
     {
       "rank": 4,
-      "title": "后室",
-      "url": "https://movie.douban.com/subject/36235977/",
-      "hot": "评分 6.8"
-    },
-    {
-      "rank": 5,
-      "title": "特立独行",
-      "url": "https://movie.douban.com/subject/36953973/",
-      "hot": "评分 6.6"
-    },
-    {
-      "rank": 6,
-      "title": "小黄人与大怪兽",
-      "url": "https://movie.douban.com/subject/36962219/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 7,
       "title": "灿如繁星",
       "url": "https://movie.douban.com/subject/36466246/",
       "hot": ""
     },
     {
-      "rank": 8,
+      "rank": 5,
+      "title": "后室",
+      "url": "https://movie.douban.com/subject/36235977/",
+      "hot": "评分 6.8"
+    },
+    {
+      "rank": 6,
       "title": "野狗骨头",
       "url": "https://movie.douban.com/subject/36618951/",
       "hot": ""
+    },
+    {
+      "rank": 7,
+      "title": "小黄人与大怪兽",
+      "url": "https://movie.douban.com/subject/36962219/",
+      "hot": "评分 6.7"
+    },
+    {
+      "rank": 8,
+      "title": "特立独行",
+      "url": "https://movie.douban.com/subject/36953973/",
+      "hot": "评分 6.6"
     },
     {
       "rank": 9,

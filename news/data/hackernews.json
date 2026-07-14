@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-14T14:14:59+00:00",
+  "updated_at": "2026-07-14T16:54:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Codex starts encrypting sub-agent prompts",
-      "url": "https://github.com/openai/codex/issues/28058",
-      "hot": "253"
+      "title": "Show HN: Opening lines of famous literary works",
+      "url": "https://www.verbaprima.com/",
+      "hot": "64"
     },
     {
       "rank": 2,
-      "title": "Codex scraped the ICM website and discovered 2026 Fields Medal winner list",
-      "url": "https://phemex.com/news/article/2026-fields-medal-winners-list-leaked-includes-two-peking-university-alumni-92948",
-      "hot": "96"
+      "title": "Your 'app' could have been a webpage (so I fixed it for you)",
+      "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/",
+      "hot": "338"
     },
     {
       "rank": 3,
-      "title": "Proof of Care in the Age of A.I",
-      "url": "https://jacobfilipp.com/care/",
-      "hot": "50"
+      "title": "Are we offloading too much of our thinking to AI?",
+      "url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
+      "hot": "135"
     },
     {
       "rank": 4,
-      "title": "Beautiful Type Erasure with C++26 Reflection",
-      "url": "https://ryanjk5.github.io/posts/rjk-duck/",
-      "hot": "30"
+      "title": "Launch HN: Agnost AI (YC S26) – Extract user feedback from agent conversations",
+      "url": "https://agnost.ai",
+      "hot": "11"
     },
     {
       "rank": 5,
-      "title": "Show HN: I RL-trained an agent that trains models with RL (for –$1.3k)",
-      "url": "https://github.com/Danau5tin/ai-trains-ai",
-      "hot": "35"
+      "title": "How to stop Claude from saying load-bearing",
+      "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+      "hot": "136"
     },
     {
       "rank": 6,
-      "title": "Tensor Is the Might",
-      "url": "https://zserge.com/posts/tensor/",
-      "hot": "18"
+      "title": "Beautiful Type Erasure with C++26 Reflection",
+      "url": "https://ryanjk5.github.io/posts/rjk-duck/",
+      "hot": "71"
     },
     {
       "rank": 7,
-      "title": "Kids (With Phones) Are Alright",
-      "url": "https://heatherburns.tech/2026/07/08/the-kids-with-phones-are-alright/",
-      "hot": "27"
+      "title": "Measuring Input Latency on Linux: X11 vs. Wayland, VRR, and DXVK",
+      "url": "https://marco-nett.de/blog/measuring-input-latency-on-linux-x11-vs-wayland-vrr-dxvk/",
+      "hot": "10"
     },
     {
       "rank": 8,
-      "title": "Coding agents think ahead of time",
-      "url": "https://arxiv.org/abs/2607.05188",
-      "hot": "36"
+      "title": "Paxos Made Simple (2001)[pdf]",
+      "url": "https://lamport.azurewebsites.net/pubs/paxos-simple.pdf",
+      "hot": "33"
     },
     {
       "rank": 9,
-      "title": "Japan develops a method to recover up to 90% of lithium from used EV batteries",
-      "url": "https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/",
-      "hot": "643"
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "hot": "83"
     },
     {
       "rank": 10,
-      "title": "Punch Yourself in the Face with Reality",
+      "title": "Punch yourself in the face with reality",
       "url": "https://adi.bio/reality",
-      "hot": "62"
+      "hot": "120"
     }
   ]
 }
