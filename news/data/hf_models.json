@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-14T05:44:56+00:00",
+  "updated_at": "2026-07-14T12:15:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "2095"
+      "hot": "2112"
     },
     {
       "rank": 2,
       "title": "tencent/Hy3",
       "url": "https://huggingface.co/tencent/Hy3",
-      "hot": "758"
+      "hot": "773"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3909"
+      "hot": "3933"
     },
     {
       "rank": 4,
       "title": "conradlocke/krea2-identity-edit",
       "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
-      "hot": "266"
+      "hot": "275"
     },
     {
       "rank": 5,
       "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
       "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "hot": "315"
+      "hot": "326"
     },
     {
       "rank": 6,
       "title": "froggeric/Qwen-Fixed-Chat-Templates",
       "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
-      "hot": "890"
+      "hot": "892"
     },
     {
       "rank": 7,
       "title": "InternScience/Agents-A1",
       "url": "https://huggingface.co/InternScience/Agents-A1",
-      "hot": "527"
+      "hot": "533"
     },
     {
       "rank": 8,
       "title": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF",
       "url": "https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF",
-      "hot": "222"
+      "hot": "225"
     },
     {
       "rank": 9,
       "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
-      "hot": "162"
+      "hot": "167"
     },
     {
       "rank": 10,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "1965"
+      "hot": "1974"
     }
   ]
 }

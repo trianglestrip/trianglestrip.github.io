@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-14T09:27:06+00:00",
+  "updated_at": "2026-07-14T12:14:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "回到第一性原理：塑造 Snowflake 的理念，以及下一步 ｜ Summit 2026",
+      "url": "https://www.infoq.cn/video/ffZEu3m2LMOy0cPEbYXl?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 19:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "治理 Agentic Enterprise：营销领导者当下必须知道的事 ｜ 技术趋势",
+      "url": "https://www.infoq.cn/article/kMa4NtkHgLNFMJ02bIjJ?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 18:40:43 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "随时随地构建：CoCo 现已进入你的桌面、手机与 Slack ｜ 技术趋势",
+      "url": "https://www.infoq.cn/article/GDIRmc9ZvzZVT7bWVPCz?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 18:01:30 GMT"
+    },
+    {
+      "rank": 4,
       "title": "Agentic Enterprise：Snowflake AI 如何重新定义工作 ｜ Summit 2026",
       "url": "https://www.infoq.cn/video/7hqd5Z9AFMA6h9mtcrtA?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 16:43:09 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "用 Claude 重写 SQL 解析器，性能暴涨 70 倍：程序员做的不是写代码，而是搭建验证闭环",
       "url": "https://www.infoq.cn/article/kyteEZN46mi8l0eMiKuh?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 16:25:41 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "快手 AB 场景提速 145 倍，从 Spark 到 Apache Doris 的加速实践",
       "url": "https://www.infoq.cn/article/SEXa3rsGTsStXM7lV7al?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 16:18:27 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "AlloyDB 推出代理模型，用数据库本地推理替代外部大模型调用",
       "url": "https://www.infoq.cn/article/9RKrYlX2xWPNabO3ErVj?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 16:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "SpaceX联手Cursor的首个AI产品曝光！全能办公智能体内测中，ChatGPT Work迎来劲敌",
       "url": "https://www.infoq.cn/article/uwozdp7L5ex4Z2r7iZRC?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 15:10:48 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "模型广场邀请有礼，「荐」者有份！",
       "url": "https://www.infoq.cn/article/1iqM9w4qxPJgCfZrickm?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 14:42:52 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Node.js 26 带来默认启用的 Temporal API、V8 14.6 和一些功能弃用",
       "url": "https://www.infoq.cn/article/3ZmFy6tOFQgP7OI3BHwm?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 14:31:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "亚马逊云科技扩展了 DevOps 代理，新增基于 AI 的发布管理功能，可在代码投入生产前进行验证",
-      "url": "https://www.infoq.cn/article/Af9AUfyturjojjQvv6QI?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 14 Jul 2026 11:36:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "连Claude Code都搞不定的巨型代码库，我们靠一个“自愈循环”给盘活了",
-      "url": "https://www.infoq.cn/article/hSKvPpuMW3Y1GyyHtt3I?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 14 Jul 2026 11:08:39 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Fable 5 访问权限再延一周，但Anthropic 的“黑心账本”越来越藏不住了",
-      "url": "https://www.infoq.cn/article/eRwadJmvQIvuqaDZKBiz?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 14 Jul 2026 11:03:37 GMT"
     }
   ]
 }
