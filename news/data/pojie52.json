@@ -1,44 +1,44 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-07-14T00:06:05+00:00",
+  "updated_at": "2026-07-14T03:25:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "基于文本匹配的VMP还原思路",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2115425",
+      "hot": "[md]# 基于文本匹配的 VMP 还原\n\n## 一、问题定义\n\nVMP 逆向的传统路径很重：理解虚拟机架构 → 分析每条 handler 的语义 → 手动重建控制流 → 写复杂的模式匹配规则。\n\n但现在做逆向，trace 几乎已经是标配。unidbg 模拟执行也好、真机跑也罢，最终都会拿到一份 ..."
+    },
+    {
+      "rank": 2,
       "title": "iOS App的商业级环境检测手段 - 基于某讯A<E Framework 详解",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2115245",
       "hot": "[md]# iOS App的商业级环境检测手段 - 基于某讯&amp;#197; anort -&gt; anogs\n```\n\n### 2.2 `anogs`核心分析\n\n#### 2.2.1 字符串加密模式\n\n直接用IDA Pro打开`anogs`二进制，左侧可以看到其导出表没有被混淆，先看`_AnoS ..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "某rust开发语音识别软件获取专业版授权",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114894",
       "hot": "[md]## 1. 前言\n\n目标是一个基于 **Tauri 2.x** 框架构建的桌面应用程序，后端使用 Rust 编写，前端 WebView 渲染。该应用具有用户登录认证和许可证激活系统，未登录或未激活状态下部分功能受限。\n\n本文记录从零开始的完整本地破解过程，不涉及具体软件名称。\n\n ..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "iOS DeviceCheck：苹果设备身份链与黑灰产对抗的攻防博弈",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114213",
       "hot": "[md]## 一、背景 &amp; 场景\n\n### 1.1 环境\n\n设备型号:iphone 14、iOS 版本:16.4.1、越狱方案:Dopamine\n\n工具链：Frida16.1.4、IDA pro 9.2\n\n### 1.2 引言\n\n对于大多数互联网风控攻防业务来说，真正棘手的往往不是 ..."
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "逆向分析某排八字软件的过程",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114056",
       "hot": "[md]# 逆向排八字程序过程\n\n## 信息\n- 网：aHR0cDovL25mYmF6aS5jb20vcWl0YS9Eb3dubG9hZC5odG0=\n- 文件名：排八字.exe\n- 大小：3,249,664 字节\n\n## 初步分析\n\n看到了这个东西要安装 .NET 运行时，最近想找 .NET  ..."
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "破解 Trae CN 加密协议",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113927",
       "hot": ""
-    },
-    {
-      "rank": 6,
-      "title": "领域特定虚拟机DSVM指令完整还原",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113743",
-      "hot": "[md]# 领域特定虚拟机DSVM指令完整还原\n\n&gt; **副标题**：一款针对 UE4 移动游戏外挂的深度混淆分析与反混淆实践  \n&gt; **日期**：2026-06-21  \n&gt; **标签**：ARM64 · Unicorn · OLLVM · DSVM · UE4 · PhysX · 反混淆 · 字节码解释器\n\n---\n\n## 摘要\n\n本文记 ..."
     },
     {
       "rank": 7,
