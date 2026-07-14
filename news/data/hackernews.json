@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-14T21:08:25+00:00",
+  "updated_at": "2026-07-14T23:10:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
       "url": "https://prismml.com/news/bonsai-27b",
-      "hot": "212"
+      "hot": "340"
     },
     {
       "rank": 2,
-      "title": "The Tower Keeps Rising",
-      "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
-      "hot": "234"
+      "title": "Dependabot version updates introduce default package cooldown",
+      "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/",
+      "hot": "45"
     },
     {
       "rank": 3,
-      "title": "Cursor 0day: When Full Disclosure Becomes the Only Protection Left",
-      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
-      "hot": "92"
+      "title": "Financing the AI boom: from cash flows to debt [pdf]",
+      "url": "https://www.bis.org/publ/bisbull120.pdf",
+      "hot": "32"
     },
     {
       "rank": 4,
-      "title": "Your 'app' could have been a webpage (so I fixed it for you)",
-      "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/",
-      "hot": "602"
+      "title": "The Tower Keeps Rising",
+      "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
+      "hot": "296"
     },
     {
       "rank": 5,
-      "title": "The largest available Minecraft world, totalling 15 TB",
-      "url": "https://2b2t.place/1million",
-      "hot": "83"
+      "title": "Cursor 0day: When Full Disclosure Becomes the Only Protection Left",
+      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
+      "hot": "185"
     },
     {
       "rank": 6,
-      "title": "How to stop Claude from saying load-bearing",
-      "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
-      "hot": "341"
+      "title": "How I use HTMX with Go",
+      "url": "https://www.alexedwards.net/blog/how-i-use-htmx-with-go",
+      "hot": "64"
     },
     {
       "rank": 7,
-      "title": "Guardian Angels: LLM Personalization for Productivity and Security",
-      "url": "https://gwern.net/guardian-angel",
-      "hot": "18"
+      "title": "Your 'app' could have been a webpage (so I fixed it for you)",
+      "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/",
+      "hot": "668"
     },
     {
       "rank": 8,
-      "title": "Show HN: Opening lines of famous literary works",
-      "url": "https://www.verbaprima.com/",
-      "hot": "124"
+      "title": "The largest available Minecraft world, totalling 15 TB",
+      "url": "https://2b2t.place/1million",
+      "hot": "132"
     },
     {
       "rank": 9,
-      "title": "The zero-cost fallacy: open-source software in the agentic era",
-      "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
-      "hot": "75"
+      "title": "How to stop Claude from saying load-bearing",
+      "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+      "hot": "397"
     },
     {
       "rank": 10,
-      "title": "Are we offloading too much of our thinking to AI?",
-      "url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
-      "hot": "301"
+      "title": "Guardian Angels: LLM Personalization for Productivity and Security",
+      "url": "https://gwern.net/guardian-angel",
+      "hot": "46"
     }
   ]
 }

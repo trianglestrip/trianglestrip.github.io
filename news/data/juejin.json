@@ -1,14 +1,14 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-14T21:08:15+00:00",
+  "updated_at": "2026-07-14T23:09:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "LEFT JOIN 到底什么时候会被优化器偷偷改写成 INNER JOIN",
       "url": "https://juejin.cn/post/7660896500881981492",
-      "hot": "1359"
+      "hot": "1377"
     },
     {
       "rank": 2,
@@ -38,7 +38,7 @@
       "rank": 6,
       "title": "为什么 AI 写前端时，总是优先选择 React，而不是 Vue？",
       "url": "https://juejin.cn/post/7661833071121530926",
-      "hot": "630"
+      "hot": "639"
     },
     {
       "rank": 7,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "AI 大模型写故事，魔珐星云驱动 3D 数字人实时播报",
       "url": "https://juejin.cn/post/7661439504083582976",
-      "hot": "405"
+      "hot": "414"
     }
   ]
 }
