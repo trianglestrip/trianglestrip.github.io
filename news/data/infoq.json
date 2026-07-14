@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-14T05:44:47+00:00",
+  "updated_at": "2026-07-14T09:27:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Agentic Enterprise：Snowflake AI 如何重新定义工作 ｜ Summit 2026",
+      "url": "https://www.infoq.cn/video/7hqd5Z9AFMA6h9mtcrtA?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 16:43:09 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "用 Claude 重写 SQL 解析器，性能暴涨 70 倍：程序员做的不是写代码，而是搭建验证闭环",
+      "url": "https://www.infoq.cn/article/kyteEZN46mi8l0eMiKuh?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 16:25:41 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "快手 AB 场景提速 145 倍，从 Spark 到 Apache Doris 的加速实践",
+      "url": "https://www.infoq.cn/article/SEXa3rsGTsStXM7lV7al?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 16:18:27 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "AlloyDB 推出代理模型，用数据库本地推理替代外部大模型调用",
+      "url": "https://www.infoq.cn/article/9RKrYlX2xWPNabO3ErVj?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 16:00:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "SpaceX联手Cursor的首个AI产品曝光！全能办公智能体内测中，ChatGPT Work迎来劲敌",
+      "url": "https://www.infoq.cn/article/uwozdp7L5ex4Z2r7iZRC?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 15:10:48 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "模型广场邀请有礼，「荐」者有份！",
+      "url": "https://www.infoq.cn/article/1iqM9w4qxPJgCfZrickm?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 14:42:52 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "Node.js 26 带来默认启用的 Temporal API、V8 14.6 和一些功能弃用",
+      "url": "https://www.infoq.cn/article/3ZmFy6tOFQgP7OI3BHwm?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 14 Jul 2026 14:31:00 GMT"
+    },
+    {
+      "rank": 8,
       "title": "亚马逊云科技扩展了 DevOps 代理，新增基于 AI 的发布管理功能，可在代码投入生产前进行验证",
       "url": "https://www.infoq.cn/article/Af9AUfyturjojjQvv6QI?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 11:36:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "连Claude Code都搞不定的巨型代码库，我们靠一个“自愈循环”给盘活了",
       "url": "https://www.infoq.cn/article/hSKvPpuMW3Y1GyyHtt3I?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 11:08:39 GMT"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "Fable 5 访问权限再延一周，但Anthropic 的“黑心账本”越来越藏不住了",
       "url": "https://www.infoq.cn/article/eRwadJmvQIvuqaDZKBiz?utm_source=rss&utm_medium=article",
       "hot": "Tue, 14 Jul 2026 11:03:37 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "从上下文到经验资产：Agent 记忆系统的工程化路径与 MemOS 实践",
-      "url": "https://www.infoq.cn/article/RivZJwpYltVDJX5imMUX?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 14 Jul 2026 10:30:34 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "可复制的 AI Coding 全栈实战：比 OpenSpec 更轻量、更丝滑",
-      "url": "https://www.infoq.cn/article/XfXRhsGiL3CchrQNV4zj?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 14 Jul 2026 10:13:36 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "面向 Agentic 负载的下一代 LLM 推理引擎设计实践｜AICon深圳",
-      "url": "https://www.infoq.cn/article/fjkG0xhaV42S8sfCayFy?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 14 Jul 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "从 AI 取数到智能分析：企业级数据 Agent 的多阶段演进与工程化落地",
-      "url": "https://www.infoq.cn/article/LfO7mzdhxMWTtICFuTNb?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 14 Jul 2026 09:53:22 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Block将约450个JVM仓库迁入monorepo以降低依赖漂移",
-      "url": "https://www.infoq.cn/article/kCkoct1dbzjvDBsmjOFx?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 14 Jul 2026 09:44:44 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "小扎“消失”三年后发帖，只为它：Meta最强Agent模型进军编程，从免费开源到卖“低价”模型",
-      "url": "https://www.infoq.cn/article/Fg7xEo3RGENyoefojZVD?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 13 Jul 2026 18:28:11 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Java 近期新闻：严格字段初始化、GlassFish、GraalVM、JReleaser、RefactorFirst",
-      "url": "https://www.infoq.cn/article/m2WieH9TUbmLzzxwdrCk?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 13 Jul 2026 15:37:00 GMT"
     }
   ]
 }
