@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-15T18:20:51+00:00",
+  "updated_at": "2026-07-15T20:40:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Spring AI-2.0(alibaba) Agent 编程实战：从 Tool Calling 到 MCP 协议，附完整报文级日志",
-      "url": "https://blog.csdn.net/lilinhai548/article/details/162796038",
-      "hot": "25652"
+      "title": "【AI 测评】飞牛NAS部署PandaWiki实操：本地AI知识库、DeepSeek接入与公网访问",
+      "url": "https://blog.csdn.net/2402_87298751/article/details/162870226",
+      "hot": "20398"
     },
     {
       "rank": 2,
-      "title": "【AI 测评】飞牛NAS部署PandaWiki实操：本地AI知识库、DeepSeek接入与公网访问",
-      "url": "https://blog.csdn.net/2402_87298751/article/details/162870226",
-      "hot": "18390"
+      "title": "OpenClaw Agent 搭建全流程：从本机自托管到可用、可控、可审计的个人 AI 助手",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/162734765",
+      "hot": "16859"
     },
     {
       "rank": 3,
-      "title": "OpenClaw Agent 搭建全流程：从本机自托管到可用、可控、可审计的个人 AI 助手",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/162734765",
-      "hot": "16591"
+      "title": "【Linux】Ext 文件系统：从机械磁盘到 CHS/LBA，搞懂扇区、块与分区",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/162819127",
+      "hot": "15131"
     },
     {
       "rank": 4,
-      "title": "【Linux】Ext 文件系统：从机械磁盘到 CHS/LBA，搞懂扇区、块与分区",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/162819127",
-      "hot": "15150"
+      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从退化问题到信息高速公路:ResNet残差网络实战拆解)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/162719491",
+      "hot": "14998"
     },
     {
       "rank": 5,
-      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从退化问题到信息高速公路:ResNet残差网络实战拆解)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/162719491",
-      "hot": "15070"
+      "title": "MuMu模拟器6.0评测：480帧、安卓15、原生Root，四组实验拆给你看",
+      "url": "https://blog.csdn.net/IRpickstars/article/details/162844002",
+      "hot": "13793"
     },
     {
       "rank": 6,
-      "title": "MuMu模拟器6.0评测：480帧、安卓15、原生Root，四组实验拆给你看",
-      "url": "https://blog.csdn.net/IRpickstars/article/details/162844002",
-      "hot": "13736"
+      "title": "AI 到底能不能替代劳动力和股票？听完这场对谈，我改了三个判断",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/162912643",
+      "hot": "13381"
     },
     {
       "rank": 7,
-      "title": "AI 到底能不能替代劳动力和股票？听完这场对谈，我改了三个判断",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/162912643",
-      "hot": "13127"
+      "title": "k8s 部署 Headlamp",
+      "url": "https://blog.csdn.net/liu_chen_yang/article/details/162490414",
+      "hot": "13305"
     },
     {
       "rank": 8,
-      "title": "k8s 部署 Headlamp",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/162490414",
-      "hot": "12802"
-    },
-    {
-      "rank": 9,
       "title": "【AI智能体】Claude Code 插件从使用到项目实战详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/162382052",
       "hot": "11607"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "《Linux CPU频率为何忽高忽低：cpufreq、idle状态与性能抖动教程》",
       "url": "https://blog.csdn.net/Dovis5884/article/details/162864752",
-      "hot": "10123"
+      "hot": "10168"
+    },
+    {
+      "rank": 10,
+      "title": "【AI探索】向量检索策略与召回优化",
+      "url": "https://blog.csdn.net/weixin_62043600/article/details/162851881",
+      "hot": "9894"
     }
   ]
 }
