@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-15T05:44:35+00:00",
+  "updated_at": "2026-07-15T09:32:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Jurassic Park computers in excruciating detail",
       "url": "https://fabiensanglard.net/jurrasic_park_computers/index.html",
-      "hot": "183"
+      "hot": "423"
     },
     {
       "rank": 2,
-      "title": "Vancouver PD website features Quick Escape button that wipes itself from history",
-      "url": "https://vpd.ca/",
-      "hot": "206"
+      "title": "RISC-V Is Inevitable: State of the Union Keynote Argues",
+      "url": "https://www.eetimes.com/risc-v-is-inevitable-state-of-the-union-keynote-argues/",
+      "hot": "54"
     },
     {
       "rank": 3,
-      "title": "TS-2026-009: Insecure argument handling in Tailscale SSH permitted root access",
-      "url": "https://tailscale.com/security-bulletins",
-      "hot": "95"
+      "title": "I tricked Claude into leaking your deepest, darkest secrets",
+      "url": "https://www.ayush.digital/blog/the-memory-heist",
+      "hot": "271"
     },
     {
       "rank": 4,
-      "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
-      "url": "https://prismml.com/news/bonsai-27b",
-      "hot": "518"
+      "title": "Vancouver PD website features Quick Escape button that wipes itself from history",
+      "url": "https://vpd.ca/",
+      "hot": "265"
     },
     {
       "rank": 5,
-      "title": "Dependabot version updates introduce default package cooldown",
-      "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/",
-      "hot": "145"
+      "title": "Never argue with your boss (2009)",
+      "url": "https://righteousit.com/2009/03/12/never-argue-with-your-boss/",
+      "hot": "32"
     },
     {
       "rank": 6,
-      "title": "Andon (manufacturing)",
-      "url": "https://en.wikipedia.org/wiki/Andon_(manufacturing)",
-      "hot": "17"
+      "title": "TS-2026-009: Insecure argument handling in Tailscale SSH permitted root access",
+      "url": "https://tailscale.com/security-bulletins",
+      "hot": "147"
     },
     {
       "rank": 7,
-      "title": "The Tower Keeps Rising",
-      "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
-      "hot": "414"
+      "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "hot": "590"
     },
     {
       "rank": 8,
-      "title": "Cursor 0day: When Full Disclosure Becomes the Only Protection Left",
-      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
-      "hot": "309"
+      "title": "Who's running all those tiny RPKI servers?",
+      "url": "https://blog.apnic.net/2026/07/15/whos-running-all-those-tiny-rpki-servers/",
+      "hot": "23"
     },
     {
       "rank": 9,
-      "title": "Financing the AI boom: from cash flows to debt [pdf]",
-      "url": "https://www.bis.org/publ/bisbull120.pdf",
-      "hot": "132"
+      "title": "The Tower Keeps Rising",
+      "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
+      "hot": "464"
     },
     {
       "rank": 10,
-      "title": "Solving 20 Erdős Problems with 20 Codex Accounts Running in Parallel",
-      "url": "https://www.starfleetmath.com/",
-      "hot": "98"
+      "title": "Andon (manufacturing)",
+      "url": "https://en.wikipedia.org/wiki/Andon_(manufacturing)",
+      "hot": "51"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-15T03:21:14+00:00",
+  "updated_at": "2026-07-15T09:32:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "2162"
+      "hot": "2181"
     },
     {
       "rank": 2,
-      "title": "zai-org/GLM-5.2",
-      "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "3949"
+      "title": "prism-ml/Ternary-Bonsai-27B-gguf",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
+      "hot": "278"
     },
     {
       "rank": 3,
-      "title": "tencent/Hy3",
-      "url": "https://huggingface.co/tencent/Hy3",
-      "hot": "783"
+      "title": "zai-org/GLM-5.2",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "hot": "3958"
     },
     {
       "rank": 4,
-      "title": "conradlocke/krea2-identity-edit",
-      "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
-      "hot": "291"
+      "title": "tencent/Hy3",
+      "url": "https://huggingface.co/tencent/Hy3",
+      "hot": "789"
     },
     {
       "rank": 5,
       "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
       "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "hot": "345"
+      "hot": "356"
     },
     {
       "rank": 6,
-      "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
-      "hot": "190"
+      "title": "conradlocke/krea2-identity-edit",
+      "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
+      "hot": "295"
     },
     {
       "rank": 7,
-      "title": "prism-ml/Ternary-Bonsai-27B-gguf",
-      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-      "hot": "187"
+      "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
+      "hot": "202"
     },
     {
       "rank": 8,
       "title": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF",
       "url": "https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF",
-      "hot": "236"
+      "hot": "239"
     },
     {
       "rank": 9,
-      "title": "InternScience/Agents-A1",
-      "url": "https://huggingface.co/InternScience/Agents-A1",
-      "hot": "539"
+      "title": "prism-ml/Bonsai-27B-gguf",
+      "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
+      "hot": "175"
     },
     {
       "rank": 10,
-      "title": "froggeric/Qwen-Fixed-Chat-Templates",
-      "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
-      "hot": "904"
+      "title": "InternScience/Agents-A1",
+      "url": "https://huggingface.co/InternScience/Agents-A1",
+      "hot": "543"
     }
   ]
 }
