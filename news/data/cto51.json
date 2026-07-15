@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-14T23:10:03+00:00",
+  "updated_at": "2026-07-15T03:20:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "新型 MemGhost 攻击：一封邮件即可向 AI Agent 植入持久性虚假记忆",
-      "url": "https://www.51cto.com/article/849513.html",
-      "hot": "研究人员将这种攻击命名为隐身记忆注入（stealth memory injection），并开发出能自动编写此类邮件的工具。"
+      "title": "大厂二面：付款和取消撞车，三年经验被一道并发题送走",
+      "url": "https://www.51cto.com/article/849684.html",
+      "hot": "为什么一个看似\"先查后改\"的逻辑，在大厂眼里是 P0 级事故？ 今天咱就把这道题拆透，从根上把并发竞态这件事搞明白。"
     },
     {
       "rank": 2,
-      "title": "SpringBoot + 微信支付实现「扫码开门，取货自动扣款」智能售货柜",
-      "url": "https://www.51cto.com/article/849512.html",
-      "hot": "无人零售、微信支付商用开发是后端商业项目高频实战场景，很多开发者只做普通线上支付，对免密代扣、后结算整套流程不熟悉。"
+      "title": "提示词工程论文登上ICML 2026，网友吵翻了天",
+      "url": "https://www.51cto.com/article/849683.html",
+      "hot": "最近，有位老哥把一篇刚被ICML 2026接收的论文分享到了Reddit，结果帖子立马爆火，评论数蹭蹭涨。"
     },
     {
       "rank": 3,
-      "title": "字节跳动面挂：积分加字段存总数？面试官追问过期怎么算",
-      "url": "https://www.51cto.com/article/849511.html",
-      "hot": "积分系统从来不是计数器，它是一套完整的小型资产管理系统。今天我把这道题拆成 5 层，从青铜到王者，带你彻底搞懂。"
+      "title": "GPT-5.6仅用一小时攻破五十年数学难题！六十四个AI摘下图论皇冠",
+      "url": "https://www.51cto.com/article/849682.html",
+      "hot": "仅用1小时，GPT-5.6就攻破了困扰数学界整整 50 年的世纪难题「循环双覆盖猜想」！全球数学家沉默了"
     },
     {
       "rank": 4,
-      "title": "Python 循环的五种高效写法：从 for-in 到生成器表达式的性能与可读性权衡",
-      "url": "https://www.51cto.com/article/849509.html",
-      "hot": "Python 循环是代码中出现频率最高的结构之一，但写法不同，性能差距可达10倍。以下5种模式覆盖从基础迭代到高阶函数式编程的完整光谱，每种都有明确的适用场景。"
+      "title": "Agent 评测集，不该只是题库",
+      "url": "https://www.51cto.com/article/849681.html",
+      "hot": "Agent / Skill 评测集正在从“题目集合”变成“可执行的小世界”。这件事听起来有点抽象，但它会直接影响我们怎么设计自己的评测、怎么判断一个 Skill 值不值得维护，也会影响团队以后怎么选模型、选工具、选 Agent 框架。"
     },
     {
       "rank": 5,
-      "title": "Agent 每次调用工具都要问用户吗？Janus 揭示权限管理的三难困境",
-      "url": "https://www.51cto.com/article/849507.html",
-      "hot": "未来的 Agent 安全，不只是要检测提示注入，也不只是要给工具加权限开关。更重要的是建立一套能够理解上下文、约束工具行为、管理用户授权、记录执行链路的权限决策层。"
+      "title": "一文搞懂 Multi-Agent：AI 是如何分工、协作与决策的？",
+      "url": "https://www.51cto.com/article/849679.html",
+      "hot": "单个 agent 只需要处理一条时间线：感知、推理、行动、循环。一旦变成多个 agent，问题的维度立刻从一维变成了多维——谁该做哪一部分？谁需要知道谁发现了什么？谁的动作要等谁先完成？两个 agent 的判断打架了听谁的？系统怎么知道所有人都干完了？"
     },
     {
       "rank": 6,
-      "title": "Electron 时代要结束了？Vercel 发布 Native SDK，性能直接拉满",
-      "url": "https://www.51cto.com/article/849505.html",
-      "hot": "Native SDK 更像是一套开发工具，帮助开发者使用熟悉的 Web 技术，构建真正的桌面应用。"
+      "title": "Anthropic再次延长Fable 5免费期，并对Cursor中发现的新模型保持沉默",
+      "url": "https://www.51cto.com/article/849677.html",
+      "hot": "虽然 Fable 5 在诸如 SWE-bench Pro 等存储库级编码基准测试中仍保持着最强的已发布结果，但包括 OpenAI 的 GPT-5.6 Sol 和 xAI 的 Grok 4.5 在内的竞争对手，现在正以极低的价格瞄准同样的高端开发者市场。"
     },
     {
       "rank": 7,
-      "title": "完蛋！比 Vite+ 快 5.4 倍的前端工具链！正式发布！",
-      "url": "https://www.51cto.com/article/849504.html",
-      "hot": "Yuku 是一个用 Zig 编写的 JavaScript / TypeScript 编译器工具链。它的性能测试直接超过了很多人熟悉的 Oxc。"
+      "title": "Canvas 要凉了？GitHub 47K+ Star 神器，让 Web 动画性能直接起飞！",
+      "url": "https://www.51cto.com/article/849676.html",
+      "hot": "如果你正在做：数据可视化、AI 产品、H5 营销、游戏开发、编辑器、Canvas 项目， PixiJS 绝对值得收藏。"
     },
     {
       "rank": 8,
-      "title": "凌晨 3 点，200 条告警弹窗把我炸醒——AIOps 帮我告别了这种日子",
-      "url": "https://www.51cto.com/article/849493.html",
-      "hot": "AIOps 改变的不只是工作效率，更是运维人的工作方式和职业前景。"
+      "title": "基于人机协作的 AI 研发新体系架构：从 Harness 工程到 Loop 工程实践",
+      "url": "https://www.51cto.com/article/849675.html",
+      "hot": "本文完整呈现了企业级 AI Coding 落地的核心方法论：从 Harness 工程的微观/宏观定义，到 Loop 工程的六大构建模块，再到基于 SDD（规范驱动开发）的工程化落地路径。"
     },
     {
       "rank": 9,
-      "title": "别再让 AI 瞎改了：spec-superflow 完整使用指南",
-      "url": "https://www.51cto.com/article/849492.html",
-      "hot": "spec-superflow 已经在 GitHub 开源，MIT 协议。如果你也被 AI 写代码的失控点折磨过，建议直接装上试试，源码就在仓库里，架构、契约模板、状态机都看得见。"
+      "title": "攻击者利用 AI 构建自定义 PowerShell 侦察恶意软件",
+      "url": "https://www.51cto.com/article/849674.html",
+      "hot": "Huntress 发现一个由 AI 生成的 PowerShell 脚本，用于 AD 侦察，表明攻击者正利用 AI 创建定制化、具备规避能力的工具。"
     },
     {
       "rank": 10,
-      "title": "AI视觉原生统一！商汤开源视觉任务大统一模型SenseNova-Vision",
-      "url": "https://www.51cto.com/article/849491.html",
-      "hot": "长期以来，视觉AI沿着一个任务对应一个模型的路径演进，各任务彼此割裂。行业以往的统一视觉多是把检测、分割、深度预测等多个专家模型打包封装，本质仍是割裂的。"
+      "title": "一个 Table，掀翻所有 UI 组件库？支持九大前端框架！",
+      "url": "https://www.51cto.com/article/849672.html",
+      "hot": "TanStack Table v9 最大的变化之一：就是框架适配能力的大幅扩展。除了跨框架之外，v9 本身也带来了大量底层升级。"
     }
   ]
 }

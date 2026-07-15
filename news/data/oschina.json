@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-14T23:10:08+00:00",
+  "updated_at": "2026-07-15T03:21:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Dragonfly v2.5.0 发布",
+      "url": "https://www.oschina.net/news/471723/dragonfly-2-5-0-released",
+      "hot": "Wed, 15 Jul 2026 11:08:38 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Qwen-Audio-3.0-Realtime 实时语音交互对话模型发布",
+      "url": "https://www.oschina.net/news/471722",
+      "hot": "Wed, 15 Jul 2026 11:03:53 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "DataGear 6.0.0 发布，数据可视化分析平台",
+      "url": "https://www.oschina.net/news/471719",
+      "hot": "Wed, 15 Jul 2026 10:25:12 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "kkRepo v0.3.0 版本发布，完全开源平替 Nexus 的制品仓库",
+      "url": "https://www.oschina.net/news/471718",
+      "hot": "Wed, 15 Jul 2026 10:21:14 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "OpenCut 连冠第 2 天，但有个 Rust 小工具涨了 473 星，专防 AI 乱删你代码",
+      "url": "https://www.oschina.net/news/471712",
+      "hot": "Wed, 15 Jul 2026 08:58:40 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "小蚂蚁云 XiaoMaYi-EleVue 单体敏捷开发框架 v1.3.0 发布",
+      "url": "https://www.oschina.net/news/471711",
+      "hot": "Wed, 15 Jul 2026 08:12:14 +0800"
+    },
+    {
+      "rank": 7,
       "title": "UJCMS 12.1.0 发布，国内 Java CMS 网站内容管理系统",
       "url": "https://www.oschina.net/news/471710",
       "hot": "Tue, 14 Jul 2026 18:19:57 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Nebula 1.6.0 发布：跨区域桶自动路由、秒传、文本/PDF 预览一次到位",
       "url": "https://www.oschina.net/news/471702",
       "hot": "Tue, 14 Jul 2026 11:00:39 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": ":fire::fire:Skyeye 云零代码智能制造系统 - Saas 模块 - v3.19.12 发布",
       "url": "https://www.oschina.net/news/471701/win10-skyeye-3-19-12-released",
       "hot": "Tue, 14 Jul 2026 10:34:31 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "mica-mqtt 2.6.8 发布：集中修复重连、消息转发、会话清理与 MQTT 5.0 协议问题",
       "url": "https://www.oschina.net/news/471700/mica-mqtt-2-6-8-released",
       "hot": "Tue, 14 Jul 2026 10:08:49 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "openKylin 项目新增捐赠人",
-      "url": "https://www.oschina.net/news/471699",
-      "hot": "Mon, 13 Jul 2026 17:53:39 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "喜报｜openKylin 咨询委员会主任廖湘科当选中国科协第十一届全国委员会副主席",
-      "url": "https://www.oschina.net/news/471698",
-      "hot": "Mon, 13 Jul 2026 17:42:50 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "燃夏哈尔滨！线下沙龙集结！解锁金仓全栈兼容实战秘籍，赋能企业国产化稳行致远",
-      "url": "https://www.oschina.net/news/471696",
-      "hot": "Mon, 13 Jul 2026 16:11:58 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "超越 Vision Banana，商汤开源 SenseNova-Vision：视觉任务大统一",
-      "url": "https://www.oschina.net/news/471695",
-      "hot": "Mon, 13 Jul 2026 16:03:02 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "调问更新 6.27~7.11：调研效率再升级：任务分发全面升级+ 微信小程序上线",
-      "url": "https://www.oschina.net/news/471693",
-      "hot": "Mon, 13 Jul 2026 15:48:46 +0800"
-    },
-    {
-      "rank": 10,
-      "title": ":fire: SolonCode v2026.7.13 发布：多工作区协同、推理强度、任务分组",
-      "url": "https://www.oschina.net/news/471686/soloncode-2026-7-13",
-      "hot": "Mon, 13 Jul 2026 15:04:02 +0800"
     }
   ]
 }
