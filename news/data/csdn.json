@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-15T12:41:19+00:00",
+  "updated_at": "2026-07-15T15:59:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI 测评】飞牛NAS部署PandaWiki实操：本地AI知识库、DeepSeek接入与公网访问",
       "url": "https://blog.csdn.net/2402_87298751/article/details/162870226",
-      "hot": "27084"
+      "hot": "27715"
     },
     {
       "rank": 2,
       "title": "Spring AI-2.0(alibaba) Agent 编程实战：从 Tool Calling 到 MCP 协议，附完整报文级日志",
       "url": "https://blog.csdn.net/lilinhai548/article/details/162796038",
-      "hot": "21502"
+      "hot": "23497"
     },
     {
       "rank": 3,
       "title": "没有公网IP也能连数据库：把内网PostgreSQL开放给远程联调",
       "url": "https://blog.csdn.net/2302_79376097/article/details/162848309",
-      "hot": "21484"
+      "hot": "20852"
     },
     {
       "rank": 4,
       "title": "MuMu模拟器6.0评测：480帧、安卓15、原生Root，四组实验拆给你看",
       "url": "https://blog.csdn.net/IRpickstars/article/details/162844002",
-      "hot": "19758"
+      "hot": "20183"
     },
     {
       "rank": 5,
-      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从退化问题到信息高速公路:ResNet残差网络实战拆解)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/162719491",
-      "hot": "14100"
+      "title": "NAS、服务器、后台地址太多：给自己做一个随时能打开的私人导航台",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/162882752",
+      "hot": "13847"
     },
     {
       "rank": 6,
-      "title": "软件研发辅助：智能代码审查 + 测试用例生成 + 缺陷预测——基于 JiuwenSwarm 的群体智能实践",
-      "url": "https://blog.csdn.net/2401_83830408/article/details/162881602",
-      "hot": "12797"
+      "title": "k8s 部署 Headlamp",
+      "url": "https://blog.csdn.net/liu_chen_yang/article/details/162490414",
+      "hot": "13605"
     },
     {
       "rank": 7,
-      "title": "NAS、服务器、后台地址太多：给自己做一个随时能打开的私人导航台",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/162882752",
-      "hot": "12782"
+      "title": "软件研发辅助：智能代码审查 + 测试用例生成 + 缺陷预测——基于 JiuwenSwarm 的群体智能实践",
+      "url": "https://blog.csdn.net/2401_83830408/article/details/162881602",
+      "hot": "12693"
     },
     {
       "rank": 8,
-      "title": "OpenClaw Agent 搭建全流程：从本机自托管到可用、可控、可审计的个人 AI 助手",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/162734765",
-      "hot": "10952"
+      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从退化问题到信息高速公路:ResNet残差网络实战拆解)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/162719491",
+      "hot": "12440"
     },
     {
       "rank": 9,
-      "title": "k8s 部署 Headlamp",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/162490414",
-      "hot": "10739"
+      "title": "OpenClaw Agent 搭建全流程：从本机自托管到可用、可控、可审计的个人 AI 助手",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/162734765",
+      "hot": "12125"
     },
     {
       "rank": 10,
       "title": "【Linux】Ext 文件系统：从机械磁盘到 CHS/LBA，搞懂扇区、块与分区",
       "url": "https://blog.csdn.net/2402_87731470/article/details/162819127",
-      "hot": "10194"
+      "hot": "10021"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-15T09:32:29+00:00",
+  "updated_at": "2026-07-15T15:59:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Infinite Worlds with Versatile Interactions",
-      "url": "https://huggingface.co/papers/2607.07534",
-      "hot": "40"
-    },
-    {
-      "rank": 2,
-      "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
-      "url": "https://huggingface.co/papers/2607.07675",
-      "hot": "62"
-    },
-    {
-      "rank": 3,
       "title": "AutoDev: Automated AI-Driven Development",
       "url": "https://huggingface.co/papers/2403.08299",
       "hot": "15"
     },
     {
-      "rank": 4,
+      "rank": 2,
+      "title": "Infinite Worlds with Versatile Interactions",
+      "url": "https://huggingface.co/papers/2607.07534",
+      "hot": "41"
+    },
+    {
+      "rank": 3,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "111"
     },
     {
-      "rank": 5,
-      "title": "Continuous Audio Language Models",
-      "url": "https://huggingface.co/papers/2509.06926",
-      "hot": "11"
+      "rank": 4,
+      "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+      "url": "https://huggingface.co/papers/2607.07675",
+      "hot": "62"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
       "hot": "256"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
       "url": "https://huggingface.co/papers/2607.04439",
       "hot": "54"
     },
     {
+      "rank": 7,
+      "title": "Continuous Audio Language Models",
+      "url": "https://huggingface.co/papers/2509.06926",
+      "hot": "11"
+    },
+    {
       "rank": 8,
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "176"
+    },
+    {
+      "rank": 9,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "83"
     },
     {
-      "rank": 9,
-      "title": "Vision Pretraining for Dense Spatial Perception",
-      "url": "https://huggingface.co/papers/2607.05247",
-      "hot": "43"
-    },
-    {
       "rank": 10,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "176"
+      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
+      "url": "https://huggingface.co/papers/2606.03264",
+      "hot": "26"
     }
   ]
 }
