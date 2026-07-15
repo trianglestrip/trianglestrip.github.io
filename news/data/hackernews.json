@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-15T09:32:18+00:00",
+  "updated_at": "2026-07-15T12:41:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Jurassic Park computers in excruciating detail",
-      "url": "https://fabiensanglard.net/jurrasic_park_computers/index.html",
-      "hot": "423"
+      "title": "Sleep regularity is a stronger predictor of mortality risk than sleep duration",
+      "url": "https://academic.oup.com/sleep/article/47/1/zsad253/7280269",
+      "hot": "75"
     },
     {
       "rank": 2,
-      "title": "RISC-V Is Inevitable: State of the Union Keynote Argues",
-      "url": "https://www.eetimes.com/risc-v-is-inevitable-state-of-the-union-keynote-argues/",
-      "hot": "54"
+      "title": "Jurassic Park computers in excruciating detail",
+      "url": "https://fabiensanglard.net/jurrasic_park_computers/index.html",
+      "hot": "589"
     },
     {
       "rank": 3,
-      "title": "I tricked Claude into leaking your deepest, darkest secrets",
-      "url": "https://www.ayush.digital/blog/the-memory-heist",
-      "hot": "271"
+      "title": "Prioritize mental health, and why communication is so important",
+      "url": "https://ramones.dev/posts/mental-health/",
+      "hot": "26"
     },
     {
       "rank": 4,
-      "title": "Vancouver PD website features Quick Escape button that wipes itself from history",
-      "url": "https://vpd.ca/",
-      "hot": "265"
+      "title": "Make people pay to get into your inbox",
+      "url": "https://www.captchainbox.com",
+      "hot": "13"
     },
     {
       "rank": 5,
-      "title": "Never argue with your boss (2009)",
-      "url": "https://righteousit.com/2009/03/12/never-argue-with-your-boss/",
-      "hot": "32"
+      "title": "Weathergotchi – an open-source climate Tamagotchi",
+      "url": "https://github.com/Michael-Manning/E-Paper-Climate-Logger",
+      "hot": "18"
     },
     {
       "rank": 6,
-      "title": "TS-2026-009: Insecure argument handling in Tailscale SSH permitted root access",
-      "url": "https://tailscale.com/security-bulletins",
-      "hot": "147"
+      "title": "Show HN: For 10 World Cups, my model's 2 favorites had the champion every time",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7013338",
+      "hot": "14"
     },
     {
       "rank": 7,
-      "title": "Bonsai 27B: A 27B-Class model that runs on a phone",
-      "url": "https://prismml.com/news/bonsai-27b",
-      "hot": "590"
+      "title": "DSLs Enable Reliable Use of LLMs",
+      "url": "https://martinfowler.com/articles/llm-and-dsls.html",
+      "hot": "25"
     },
     {
       "rank": 8,
-      "title": "Who's running all those tiny RPKI servers?",
-      "url": "https://blog.apnic.net/2026/07/15/whos-running-all-those-tiny-rpki-servers/",
-      "hot": "23"
+      "title": "Societal Impacts: Claude's values across models and languages",
+      "url": "https://www.anthropic.com/research/claude-values-models-languages",
+      "hot": "11"
     },
     {
       "rank": 9,
-      "title": "The Tower Keeps Rising",
-      "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
-      "hot": "464"
+      "title": "Telegram Serverless",
+      "url": "https://core.telegram.org/bots/serverless",
+      "hot": "21"
     },
     {
       "rank": 10,
-      "title": "Andon (manufacturing)",
-      "url": "https://en.wikipedia.org/wiki/Andon_(manufacturing)",
-      "hot": "51"
+      "title": "Vancouver PD website features Quick Escape button that wipes itself from history",
+      "url": "https://vpd.ca/",
+      "hot": "305"
     }
   ]
 }
