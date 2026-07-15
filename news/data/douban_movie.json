@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-15T15:58:41+00:00",
+  "updated_at": "2026-07-15T18:20:36+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,27 +12,27 @@
     },
     {
       "rank": 2,
-      "title": "痴迷",
-      "url": "https://movie.douban.com/subject/37450627/",
-      "hot": "评分 7.7"
-    },
-    {
-      "rank": 3,
       "title": "三国第一部：争洛阳",
       "url": "https://movie.douban.com/subject/36752981/",
       "hot": "评分 8.1"
     },
     {
-      "rank": 4,
-      "title": "灿如繁星",
-      "url": "https://movie.douban.com/subject/36466246/",
-      "hot": ""
+      "rank": 3,
+      "title": "痴迷",
+      "url": "https://movie.douban.com/subject/37450627/",
+      "hot": "评分 7.7"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "后室",
       "url": "https://movie.douban.com/subject/36235977/",
       "hot": "评分 6.8"
+    },
+    {
+      "rank": 5,
+      "title": "灿如繁星",
+      "url": "https://movie.douban.com/subject/36466246/",
+      "hot": ""
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "小黄人与大怪兽",
-      "url": "https://movie.douban.com/subject/36962219/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 8,
-      "title": "特立独行",
-      "url": "https://movie.douban.com/subject/36953973/",
-      "hot": "评分 6.6"
-    },
-    {
-      "rank": 9,
       "title": "火遮眼",
       "url": "https://movie.douban.com/subject/36877245/",
       "hot": "评分 7.8"
     },
     {
-      "rank": 10,
+      "rank": 8,
+      "title": "小黄人与大怪兽",
+      "url": "https://movie.douban.com/subject/36962219/",
+      "hot": "评分 6.7"
+    },
+    {
+      "rank": 9,
       "title": "铁拳教育",
       "url": "https://movie.douban.com/subject/37071123/",
       "hot": "评分 8.7"
+    },
+    {
+      "rank": 10,
+      "title": "特立独行",
+      "url": "https://movie.douban.com/subject/36953973/",
+      "hot": "评分 6.6"
     }
   ]
 }
