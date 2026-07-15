@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-15T03:21:04+00:00",
+  "updated_at": "2026-07-15T05:44:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Odyssey 1.5.1 版本发布",
+      "url": "https://www.oschina.net/news/471726/odyssey-151-released",
+      "hot": "Wed, 15 Jul 2026 11:38:22 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "阿里云发布前端可观测新利器：基于 DOM 增量追踪的会话回放与热力图架构解析",
+      "url": "https://my.oschina.net/u/3874284/blog/19721142",
+      "hot": "Wed, 15 Jul 2026 11:29:35 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Firefox 152.0.6 发布",
+      "url": "https://www.oschina.net/news/471724/firefox-152-0-6-released",
+      "hot": "Wed, 15 Jul 2026 11:25:20 +0800"
+    },
+    {
+      "rank": 4,
       "title": "Dragonfly v2.5.0 发布",
       "url": "https://www.oschina.net/news/471723/dragonfly-2-5-0-released",
       "hot": "Wed, 15 Jul 2026 11:08:38 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "Qwen-Audio-3.0-Realtime 实时语音交互对话模型发布",
       "url": "https://www.oschina.net/news/471722",
       "hot": "Wed, 15 Jul 2026 11:03:53 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "DataGear 6.0.0 发布，数据可视化分析平台",
       "url": "https://www.oschina.net/news/471719",
       "hot": "Wed, 15 Jul 2026 10:25:12 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "kkRepo v0.3.0 版本发布，完全开源平替 Nexus 的制品仓库",
       "url": "https://www.oschina.net/news/471718",
       "hot": "Wed, 15 Jul 2026 10:21:14 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "OpenCut 连冠第 2 天，但有个 Rust 小工具涨了 473 星，专防 AI 乱删你代码",
       "url": "https://www.oschina.net/news/471712",
       "hot": "Wed, 15 Jul 2026 08:58:40 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "小蚂蚁云 XiaoMaYi-EleVue 单体敏捷开发框架 v1.3.0 发布",
       "url": "https://www.oschina.net/news/471711",
       "hot": "Wed, 15 Jul 2026 08:12:14 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "UJCMS 12.1.0 发布，国内 Java CMS 网站内容管理系统",
       "url": "https://www.oschina.net/news/471710",
       "hot": "Tue, 14 Jul 2026 18:19:57 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Nebula 1.6.0 发布：跨区域桶自动路由、秒传、文本/PDF 预览一次到位",
-      "url": "https://www.oschina.net/news/471702",
-      "hot": "Tue, 14 Jul 2026 11:00:39 +0800"
-    },
-    {
-      "rank": 9,
-      "title": ":fire::fire:Skyeye 云零代码智能制造系统 - Saas 模块 - v3.19.12 发布",
-      "url": "https://www.oschina.net/news/471701/win10-skyeye-3-19-12-released",
-      "hot": "Tue, 14 Jul 2026 10:34:31 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "mica-mqtt 2.6.8 发布：集中修复重连、消息转发、会话清理与 MQTT 5.0 协议问题",
-      "url": "https://www.oschina.net/news/471700/mica-mqtt-2-6-8-released",
-      "hot": "Tue, 14 Jul 2026 10:08:49 +0800"
     }
   ]
 }
