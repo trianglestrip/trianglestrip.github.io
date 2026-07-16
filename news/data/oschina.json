@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-16T04:11:51+00:00",
+  "updated_at": "2026-07-16T06:31:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "小米发布 Xiaomi-Robotics-1 具身基座模型",
+      "url": "https://www.oschina.net/news/471764",
+      "hot": "Thu, 16 Jul 2026 14:22:53 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "阿里确认通义千问集成至苹果智能系统",
+      "url": "https://www.oschina.net/news/471763",
+      "hot": "Thu, 16 Jul 2026 14:01:12 +0800"
+    },
+    {
+      "rank": 3,
       "title": "Linus 怒斥反 AI 的内核开发者——你可以不喜欢 AI，但别挡着别人用",
       "url": "https://www.oschina.net/news/471760",
       "hot": "Thu, 16 Jul 2026 11:46:44 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Blender 5.2 LTS 发布",
       "url": "https://www.oschina.net/news/471759/blender-5-2-lts",
       "hot": "Thu, 16 Jul 2026 11:33:11 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Tsuru 1.30.1 发布，基于 Docker 的 PaaS 框架",
       "url": "https://www.oschina.net/news/471758/tsuru-1-30-1-released",
       "hot": "Thu, 16 Jul 2026 11:26:21 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Visual Studio Code 1.129 发布",
       "url": "https://www.oschina.net/news/471757/vs-code-1-129-released",
       "hot": "Thu, 16 Jul 2026 11:11:53 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "TinyEngine 2.11 版本发布：AI 进一步融入画布，Vue 工程可一键转 DSL",
       "url": "https://my.oschina.net/u/6769809/blog/19722277",
       "hot": "Thu, 16 Jul 2026 10:27:12 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "SpaceXAI 宣布开源 Grok Build",
       "url": "https://www.oschina.net/news/471755/grok-build-open-source",
       "hot": "Thu, 16 Jul 2026 10:18:20 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "OpenAI 发布 GPT-5.6 系列：三款模型、多智能体协作、全新安全体系",
       "url": "https://www.oschina.net/news/471754/gpt-5-6",
       "hot": "Thu, 16 Jul 2026 10:17:36 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "FlyFlow 新版本优化与修复一览：让工作流转更顺畅",
       "url": "https://www.oschina.net/news/471752",
       "hot": "Wed, 15 Jul 2026 20:45:26 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "自动更新 SSL 证书，OCSP 支持 C++ Web 框架 paozhu 1.13.0 发布",
-      "url": "https://www.oschina.net/news/471751",
-      "hot": "Wed, 15 Jul 2026 19:41:26 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Git Extensions v7.2.0 发布，独立的 Git 仓库 UI 管理工具",
-      "url": "https://www.oschina.net/news/471750/gitextensions-v7-2-0-released",
-      "hot": "Wed, 15 Jul 2026 18:13:59 +0800"
     }
   ]
 }

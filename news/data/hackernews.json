@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-16T04:11:48+00:00",
+  "updated_at": "2026-07-16T06:31:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Inkling: Our Open-Weights Model",
-      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
-      "hot": "791"
+      "title": "The lost joy of music piracy",
+      "url": "https://www.pigeonsandplanes.com/read/music-piracy-what-cd-oink-nine-inch-nails-streaming",
+      "hot": "87"
     },
     {
       "rank": 2,
-      "title": "SQLite should have (Rust-style) editions",
-      "url": "https://mort.coffee/home/sqlite-editions/",
-      "hot": "154"
+      "title": "If you want to create a button from scratch, you must first create the universe",
+      "url": "https://madcampos.dev/blog/2026/07/accessibility-from-scratch/",
+      "hot": "59"
     },
     {
       "rank": 3,
-      "title": "Grok Build is open source",
-      "url": "https://github.com/xai-org/grok-build",
-      "hot": "322"
+      "title": "Inkling: Our Open-Weights Model",
+      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "hot": "872"
     },
     {
       "rank": 4,
-      "title": "G# – A modern .NET language with Go, Kotlin, and Swift ergonomics",
-      "url": "https://davidobando.github.io/gsharp/",
-      "hot": "58"
+      "title": "SQLite should have (Rust-style) editions",
+      "url": "https://mort.coffee/home/sqlite-editions/",
+      "hot": "203"
     },
     {
       "rank": 5,
-      "title": "Bluesky Trademarks ATProto",
-      "url": "https://atproto.com/blog/at-protocol-trademark",
-      "hot": "36"
+      "title": "Making 768 servers look like 1",
+      "url": "https://planetscale.com/blog/making-768-servers-look-like-1",
+      "hot": "41"
     },
     {
       "rank": 6,
-      "title": "Governments, companies, nonprofits should invest in free, open source AI [pdf]",
-      "url": "https://www.siegelendowment.org/wp-content/uploads/2026/07/fortune-david-siegel-open-source-ai.pdf",
-      "hot": "122"
+      "title": "Grok Build is open source",
+      "url": "https://github.com/xai-org/grok-build",
+      "hot": "373"
     },
     {
       "rank": 7,
-      "title": "The Tokio/Rayon Trap and Why Async/Await Fails Concurrency",
-      "url": "https://pmbanugo.me/blog/why-async-await-complect-concurrency",
-      "hot": "14"
+      "title": "Bluesky Trademarks ATProto",
+      "url": "https://atproto.com/blog/at-protocol-trademark",
+      "hot": "66"
     },
     {
       "rank": 8,
-      "title": "An Interactive Map of AI",
-      "url": "https://artifipedia.com/map",
-      "hot": "4"
+      "title": "1,300 Beautiful Wildlife Illustrations from the 19th Century Now Restored",
+      "url": "https://www.openculture.com/2026/07/explore-1300-beautiful-wildlife-illustrations-from-the-19th-century.html",
+      "hot": "33"
     },
     {
       "rank": 9,
-      "title": "If you want to create a button from scratch, you must first create the universe",
-      "url": "https://madcampos.dev/blog/2026/07/accessibility-from-scratch/",
-      "hot": "4"
+      "title": "Governments, companies, nonprofits should invest in free, open source AI [pdf]",
+      "url": "https://www.siegelendowment.org/wp-content/uploads/2026/07/fortune-david-siegel-open-source-ai.pdf",
+      "hot": "149"
     },
     {
       "rank": 10,
       "title": "Stripe and Advent have made a joint offer to acquire PayPal – sources",
       "url": "https://www.reuters.com/business/finance/stripe-advent-offer-buy-paypal-more-than-53-billion-sources-say-2026-07-15/",
-      "hot": "389"
+      "hot": "414"
     }
   ]
 }

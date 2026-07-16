@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-15T22:36:43+00:00",
+  "updated_at": "2026-07-16T06:31:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AutoDev: Automated AI-Driven Development",
       "url": "https://huggingface.co/papers/2403.08299",
-      "hot": "15"
+      "hot": "16"
     },
     {
       "rank": 2,
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
-      "url": "https://huggingface.co/papers/2607.07675",
-      "hot": "62"
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "url": "https://huggingface.co/papers/2605.23904",
+      "hot": "257"
     },
     {
       "rank": 5,
-      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
-      "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "256"
+      "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+      "url": "https://huggingface.co/papers/2607.07675",
+      "hot": "62"
     },
     {
       "rank": 6,
@@ -48,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "176"
-    },
-    {
-      "rank": 9,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "83"
+    },
+    {
+      "rank": 9,
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "176"
     },
     {
       "rank": 10,
