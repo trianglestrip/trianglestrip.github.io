@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-16T06:31:01+00:00",
+  "updated_at": "2026-07-16T08:42:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "ArkTS模块化import阶段性能优化",
+      "url": "https://ost.51cto.com/posts/52952",
+      "hot": "ArkTS模块化import阶段性能优化在鸿蒙应用开发中，冷启动性能是影响用户体验的关键因素。很多开发者会遇到这样的困惑：首页代码逻辑并不复..."
+    },
+    {
+      "rank": 2,
+      "title": "别指望大模型包办一切！AI先驱施密德胡伯：LLM只是预测器，Coding Agent还缺控制、反馈和行动能力",
+      "url": "https://www.51cto.com/article/849850.html",
+      "hot": "模型负责理解与生成，Controller负责计划与调度，工具连接真实环境，测试与日志提供反馈，运行时管理权限与隔离，Trace保存完整过程。"
+    },
+    {
+      "rank": 3,
+      "title": "一位失忆患者，揭开了AI记忆的误区",
+      "url": "https://www.51cto.com/article/849849.html",
+      "hot": "研究人员安排他看着镜子临摹复杂图案。虽然他完全不记得自己练习过这项任务，但日复一日下来，他的手法越来越熟练。身体记住了经验，可他的意识对此一无所知。"
+    },
+    {
+      "rank": 4,
       "title": "奥特曼回斯坦福认错：思考外包给AI，一代人大脑正在萎缩",
       "url": "https://www.51cto.com/article/849846.html",
       "hot": "学校没变，但奥特曼警告人类正在慢慢失掉思考的训练场。"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "OpenAI官方教你八招玩透ChatGPT！",
       "url": "https://www.51cto.com/article/849844.html",
       "hot": "如果你还没驯服ChatGPT，或者还在被它像毛线团一样越理越乱的回答折腾得苦不堪言，那么今天这篇OpenAI最新提示词指南，你一定要好好收藏！"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "绿灯变死局：当谷歌微软的CI/CD全线通过，攻击者已拿走了永久权限",
       "url": "https://www.51cto.com/article/849837.html",
       "hot": "在AI全速驱动软件工程的今天，防御的思维必须完成一次根本性的范式迁移：从\"在流水线末端盲目信任扫描器\"，转向\"在源头进行全生命周期的主权治理\"。企业不仅需要知道引入了什么，更需要深度治理这些组件和工作流，究竟以何种特权逻辑在流水线中运行。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "鸿蒙应用开发中的V1与V2状态管理：差别、优缺点与迁移指南",
       "url": "https://ost.51cto.com/posts/52946",
       "hot": "一、为什么需要两套状态管理体系？在鸿蒙ArkUI的声明式开发范式中，状态管理是连接数据与UI的桥梁&mdash;&mdash;当状态变量发生变化时，UI会自动刷新..."
     },
     {
-      "rank": 5,
-      "title": "鸿蒙应用开发中的MVVM架构：从概念到实战",
-      "url": "https://ost.51cto.com/posts/52945",
-      "hot": "一、什么是MVVM架构在鸿蒙应用开发中，随着业务复杂度的提升和用户交互需求的多样化，如何实现代码的高效维护、模块化协作以及动态数据响应..."
-    },
-    {
-      "rank": 6,
+      "rank": 8,
       "title": "快来查查，你 Codex 里的 GPT-5.6 有没有缩水",
       "url": "https://www.51cto.com/article/849829.html",
       "hot": "奇怪的是，我选的模型明明是 GPT-5.6-Sol。OpenAI 官网写得很清楚：它有 1,050,000 tokens 的 context window。105 万都能装满，我这次任务到底塞了多少东西？"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "一次 P0 故障复盘：告警泛滥，真正问题被海量信息淹没",
       "url": "https://www.51cto.com/article/849824.html",
       "hot": "为什么根因出现后，没有第一时间被识别？是告警设计问题，还是信息分发问题，或者现场协同问题？"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "智能运维终结了繁琐的手动询问！Prometheus 与 DeepSeek 联动实现告警自动分析",
       "url": "https://www.51cto.com/article/849816.html",
       "hot": "系统报警后自动生成带分析的智能报表，方便又高效。"
-    },
-    {
-      "rank": 9,
-      "title": "单上下文 Agent 为什么会在规模任务上失败",
-      "url": "https://www.51cto.com/article/849812.html",
-      "hot": "这篇只谈一件事：单上下文 Agent 为什么会在规模任务上失败。后两篇再写动态 workflow 把什么搬进代码，以及六种组织形状怎么选。失败机制先看清，后面的设计才不会落成功能清单。"
-    },
-    {
-      "rank": 10,
-      "title": "Function Calling 最大的骗局：AI 根本不会调用你的函数",
-      "url": "https://www.51cto.com/article/849810.html",
-      "hot": "这篇文章，我们就把这个误会彻底拆开揉碎，看看 Function Calling 这台“魔术”背后，到底是谁在拉线。"
     }
   ]
 }
