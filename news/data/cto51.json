@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-15T23:34:04+00:00",
+  "updated_at": "2026-07-16T04:11:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "大厂二面：付款和取消撞车，三年经验被一道并发题送走",
-      "url": "https://www.51cto.com/article/849684.html",
-      "hot": "为什么一个看似\"先查后改\"的逻辑，在大厂眼里是 P0 级事故？ 今天咱就把这道题拆透，从根上把并发竞态这件事搞明白。"
+      "title": "快来查查，你 Codex 里的 GPT-5.6 有没有缩水",
+      "url": "https://www.51cto.com/article/849829.html",
+      "hot": "奇怪的是，我选的模型明明是 GPT-5.6-Sol。OpenAI 官网写得很清楚：它有 1,050,000 tokens 的 context window。105 万都能装满，我这次任务到底塞了多少东西？"
     },
     {
       "rank": 2,
-      "title": "提示词工程论文登上ICML 2026，网友吵翻了天",
-      "url": "https://www.51cto.com/article/849683.html",
-      "hot": "最近，有位老哥把一篇刚被ICML 2026接收的论文分享到了Reddit，结果帖子立马爆火，评论数蹭蹭涨。"
+      "title": "一次 P0 故障复盘：告警泛滥，真正问题被海量信息淹没",
+      "url": "https://www.51cto.com/article/849824.html",
+      "hot": "为什么根因出现后，没有第一时间被识别？是告警设计问题，还是信息分发问题，或者现场协同问题？"
     },
     {
       "rank": 3,
-      "title": "GPT-5.6仅用一小时攻破五十年数学难题！六十四个AI摘下图论皇冠",
-      "url": "https://www.51cto.com/article/849682.html",
-      "hot": "仅用1小时，GPT-5.6就攻破了困扰数学界整整 50 年的世纪难题「循环双覆盖猜想」！全球数学家沉默了"
+      "title": "智能运维终结了繁琐的手动询问！Prometheus 与 DeepSeek 联动实现告警自动分析",
+      "url": "https://www.51cto.com/article/849816.html",
+      "hot": "系统报警后自动生成带分析的智能报表，方便又高效。"
     },
     {
       "rank": 4,
-      "title": "Agent 评测集，不该只是题库",
-      "url": "https://www.51cto.com/article/849681.html",
-      "hot": "Agent / Skill 评测集正在从“题目集合”变成“可执行的小世界”。这件事听起来有点抽象，但它会直接影响我们怎么设计自己的评测、怎么判断一个 Skill 值不值得维护，也会影响团队以后怎么选模型、选工具、选 Agent 框架。"
+      "title": "单上下文 Agent 为什么会在规模任务上失败",
+      "url": "https://www.51cto.com/article/849812.html",
+      "hot": "这篇只谈一件事：单上下文 Agent 为什么会在规模任务上失败。后两篇再写动态 workflow 把什么搬进代码，以及六种组织形状怎么选。失败机制先看清，后面的设计才不会落成功能清单。"
     },
     {
       "rank": 5,
-      "title": "一文搞懂 Multi-Agent：AI 是如何分工、协作与决策的？",
-      "url": "https://www.51cto.com/article/849679.html",
-      "hot": "单个 agent 只需要处理一条时间线：感知、推理、行动、循环。一旦变成多个 agent，问题的维度立刻从一维变成了多维——谁该做哪一部分？谁需要知道谁发现了什么？谁的动作要等谁先完成？两个 agent 的判断打架了听谁的？系统怎么知道所有人都干完了？"
+      "title": "Function Calling 最大的骗局：AI 根本不会调用你的函数",
+      "url": "https://www.51cto.com/article/849810.html",
+      "hot": "这篇文章，我们就把这个误会彻底拆开揉碎，看看 Function Calling 这台“魔术”背后，到底是谁在拉线。"
     },
     {
       "rank": 6,
-      "title": "Anthropic再次延长Fable 5免费期，并对Cursor中发现的新模型保持沉默",
-      "url": "https://www.51cto.com/article/849677.html",
-      "hot": "虽然 Fable 5 在诸如 SWE-bench Pro 等存储库级编码基准测试中仍保持着最强的已发布结果，但包括 OpenAI 的 GPT-5.6 Sol 和 xAI 的 Grok 4.5 在内的竞争对手，现在正以极低的价格瞄准同样的高端开发者市场。"
+      "title": "「分身请开发这个需求」：我让 AI 编码分身学会自动开工",
+      "url": "https://www.51cto.com/article/849809.html",
+      "hot": "v2.8.0新增路径E：听懂「分身请开发这个需求」，委托 ai-frontend-dev-workflow 的 mini 模式，从需求到代码全流程开工——不用再一步步催「接下来做什么」。"
     },
     {
       "rank": 7,
-      "title": "Canvas 要凉了？GitHub 47K+ Star 神器，让 Web 动画性能直接起飞！",
-      "url": "https://www.51cto.com/article/849676.html",
-      "hot": "如果你正在做：数据可视化、AI 产品、H5 营销、游戏开发、编辑器、Canvas 项目， PixiJS 绝对值得收藏。"
+      "title": "智元展示物理 AI 加速迈向真实世界部署，Arm 提供关键技术赋能",
+      "url": "https://server.51cto.com/article/849808.html",
+      "hot": "机器人技术正从原型演示迈向真实世界的规模化部署，下一代机器人所依托的计算平台必须具备 AI、感知、运动与控制的高效整合能力，并可支持规模化部署"
     },
     {
       "rank": 8,
-      "title": "基于人机协作的 AI 研发新体系架构：从 Harness 工程到 Loop 工程实践",
-      "url": "https://www.51cto.com/article/849675.html",
-      "hot": "本文完整呈现了企业级 AI Coding 落地的核心方法论：从 Harness 工程的微观/宏观定义，到 Loop 工程的六大构建模块，再到基于 SDD（规范驱动开发）的工程化落地路径。"
+      "title": "不er？谁家大模型12B版本跑分比975B的高啊",
+      "url": "https://www.51cto.com/article/849807.html",
+      "hot": "团队演示了一个操作：让Inkling在Tinker上给自己写微调任务、自己跑训练、自己评估结果。"
     },
     {
       "rank": 9,
-      "title": "攻击者利用 AI 构建自定义 PowerShell 侦察恶意软件",
-      "url": "https://www.51cto.com/article/849674.html",
-      "hot": "Huntress 发现一个由 AI 生成的 PowerShell 脚本，用于 AD 侦察，表明攻击者正利用 AI 创建定制化、具备规避能力的工具。"
+      "title": "进入代理式AI时代，NVIDIA突破了“三堵墙”",
+      "url": "https://server.51cto.com/article/849802.html",
+      "hot": "未来十年，AI基础设施的竞争，不再是单一芯片的军备竞赛，而是系统级效率的全面比拼。"
     },
     {
       "rank": 10,
-      "title": "一个 Table，掀翻所有 UI 组件库？支持九大前端框架！",
-      "url": "https://www.51cto.com/article/849672.html",
-      "hot": "TanStack Table v9 最大的变化之一：就是框架适配能力的大幅扩展。除了跨框架之外，v9 本身也带来了大量底层升级。"
+      "title": "统计学20年悬案，GPT-5.6用90分钟破解！伯克利教授直呼「心塞」",
+      "url": "https://www.51cto.com/article/849801.html",
+      "hot": "近日，宾夕法尼亚大学沃顿商学院统计学教授Edgar Dobriban发了一条推文，引爆了一场学术圈地震。"
     }
   ]
 }

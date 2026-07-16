@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-15T23:33:59+00:00",
+  "updated_at": "2026-07-16T04:11:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【AI 测评】飞牛NAS部署PandaWiki实操：本地AI知识库、DeepSeek接入与公网访问",
-      "url": "https://blog.csdn.net/2402_87298751/article/details/162870226",
-      "hot": "19741"
+      "title": "OpenClaw Agent 搭建全流程：从本机自托管到可用、可控、可审计的个人 AI 助手",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/162734765",
+      "hot": "17925"
     },
     {
       "rank": 2,
-      "title": "OpenClaw Agent 搭建全流程：从本机自托管到可用、可控、可审计的个人 AI 助手",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/162734765",
-      "hot": "16737"
+      "title": "【AI 测评】飞牛NAS部署PandaWiki实操：本地AI知识库、DeepSeek接入与公网访问",
+      "url": "https://blog.csdn.net/2402_87298751/article/details/162870226",
+      "hot": "16985"
     },
     {
       "rank": 3,
-      "title": "【Linux】Ext 文件系统：从机械磁盘到 CHS/LBA，搞懂扇区、块与分区",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/162819127",
-      "hot": "14967"
+      "title": "AI 到底能不能替代劳动力和股票？听完这场对谈，我改了三个判断",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/162912643",
+      "hot": "16773"
     },
     {
       "rank": 4,
-      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从退化问题到信息高速公路:ResNet残差网络实战拆解)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/162719491",
-      "hot": "14806"
+      "title": "【AI智能体】Claude Code 插件从使用到项目实战详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162382052",
+      "hot": "15969"
     },
     {
       "rank": 5,
-      "title": "MuMu模拟器6.0评测：480帧、安卓15、原生Root，四组实验拆给你看",
-      "url": "https://blog.csdn.net/IRpickstars/article/details/162844002",
-      "hot": "13613"
+      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从退化问题到信息高速公路:ResNet残差网络实战拆解)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/162719491",
+      "hot": "14773"
     },
     {
       "rank": 6,
-      "title": "k8s 部署 Headlamp",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/162490414",
-      "hot": "12896"
+      "title": "MuMu模拟器6.0评测：480帧、安卓15、原生Root，四组实验拆给你看",
+      "url": "https://blog.csdn.net/IRpickstars/article/details/162844002",
+      "hot": "13439"
     },
     {
       "rank": 7,
-      "title": "AI 到底能不能替代劳动力和股票？听完这场对谈，我改了三个判断",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/162912643",
-      "hot": "12754"
+      "title": "ToDesk AI 实测：从远程控制到远程干活，让AI填表、选品、剪辑",
+      "url": "https://blog.csdn.net/2401_85686768/article/details/162883215",
+      "hot": "10741"
     },
     {
       "rank": 8,
-      "title": "【AI智能体】Claude Code 插件从使用到项目实战详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162382052",
-      "hot": "11434"
+      "title": "软件研发辅助：智能代码审查 + 测试用例生成 + 缺陷预测——基于 JiuwenSwarm 的群体智能实践",
+      "url": "https://blog.csdn.net/2401_83830408/article/details/162881602",
+      "hot": "8546"
     },
     {
       "rank": 9,
-      "title": "《Linux CPU频率为何忽高忽低：cpufreq、idle状态与性能抖动教程》",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/162864752",
-      "hot": "10057"
+      "title": "没有公网IP也能连数据库：把内网PostgreSQL开放给远程联调",
+      "url": "https://blog.csdn.net/2302_79376097/article/details/162848309",
+      "hot": "8453"
     },
     {
       "rank": 10,
-      "title": "【AI探索】向量检索策略与召回优化",
-      "url": "https://blog.csdn.net/weixin_62043600/article/details/162851881",
-      "hot": "9704"
+      "title": "OpenCloudOS 9 小型服务器 Docker 部署实战：PostgreSQL+PostGIS、Redis、Nginx 安全加固与一键脚本",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/162913636",
+      "hot": "8358"
     }
   ]
 }
