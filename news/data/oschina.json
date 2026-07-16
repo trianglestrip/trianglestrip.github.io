@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-16T08:42:18+00:00",
+  "updated_at": "2026-07-16T12:05:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Rider 2026.2 RC 发布",
+      "url": "https://www.oschina.net/news/471982/rider-2026-2-release-candidate",
+      "hot": "Thu, 16 Jul 2026 18:02:41 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "GStreamer 1.28.5 发布，开源多媒体框架",
+      "url": "https://www.oschina.net/news/471901/gstreamer-1-28-5-released",
+      "hot": "Thu, 16 Jul 2026 17:02:45 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "AI 编码实战 | 0 行手写代码，2 天重构 2 万行 Vue 项目",
+      "url": "https://my.oschina.net/vivotech/blog/19722516",
+      "hot": "Thu, 16 Jul 2026 16:52:00 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "多款主流 Coding Agent 组团登陆 deepin 应用商店！",
+      "url": "https://www.oschina.net/news/471887",
+      "hot": "Thu, 16 Jul 2026 16:51:44 +0800"
+    },
+    {
+      "rank": 5,
       "title": "你的 Coding Agent 早就修过这个 bug 了，只是你不记得",
       "url": "https://www.oschina.net/news/471847",
       "hot": "Thu, 16 Jul 2026 16:08:55 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "PipeWire 1.6.8 发布，多媒体处理工具",
       "url": "https://www.oschina.net/news/471807/pipewire-1-6-8-released",
       "hot": "Thu, 16 Jul 2026 15:22:42 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "Debian 13.6 发布",
       "url": "https://www.oschina.net/news/471801/debian-13-6-released",
       "hot": "Thu, 16 Jul 2026 15:14:01 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "PeaZip 11.2 发布",
       "url": "https://www.oschina.net/news/471797/peazip-11-2-0-released",
       "hot": "Thu, 16 Jul 2026 15:07:18 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "Anaconda 收购 Kilo Code，要当企业 AI 开发的「治理层」",
       "url": "https://www.oschina.net/news/471787/anaconda-acquires-kilo-code",
       "hot": "Thu, 16 Jul 2026 14:47:56 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "DBPanel 1.0.0 正式版发布：新一代 Linux 服务器管理面板",
       "url": "https://www.oschina.net/news/471768",
       "hot": "Thu, 16 Jul 2026 14:36:49 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "小米发布 Xiaomi-Robotics-1 具身基座模型",
-      "url": "https://www.oschina.net/news/471764",
-      "hot": "Thu, 16 Jul 2026 14:22:53 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "阿里确认通义千问集成至苹果智能系统",
-      "url": "https://www.oschina.net/news/471763",
-      "hot": "Thu, 16 Jul 2026 14:01:12 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Linus 怒斥反 AI 的内核开发者——你可以不喜欢 AI，但别挡着别人用",
-      "url": "https://www.oschina.net/news/471760",
-      "hot": "Thu, 16 Jul 2026 11:46:44 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Blender 5.2 LTS 发布",
-      "url": "https://www.oschina.net/news/471759/blender-5-2-lts",
-      "hot": "Thu, 16 Jul 2026 11:33:11 +0800"
     }
   ]
 }
