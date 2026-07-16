@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-16T06:31:16+00:00",
+  "updated_at": "2026-07-16T14:16:46+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,21 +30,21 @@
     },
     {
       "rank": 5,
-      "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
-      "url": "https://huggingface.co/papers/2607.07675",
-      "hot": "62"
-    },
-    {
-      "rank": 6,
       "title": "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
       "url": "https://huggingface.co/papers/2607.04439",
       "hot": "54"
     },
     {
+      "rank": 6,
+      "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+      "url": "https://huggingface.co/papers/2607.07675",
+      "hot": "62"
+    },
+    {
       "rank": 7,
-      "title": "Continuous Audio Language Models",
-      "url": "https://huggingface.co/papers/2509.06926",
-      "hot": "11"
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "176"
     },
     {
       "rank": 8,
@@ -54,9 +54,9 @@
     },
     {
       "rank": 9,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "176"
+      "title": "Continuous Audio Language Models",
+      "url": "https://huggingface.co/papers/2509.06926",
+      "hot": "11"
     },
     {
       "rank": 10,
