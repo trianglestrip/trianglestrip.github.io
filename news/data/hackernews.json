@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-16T16:55:57+00:00",
+  "updated_at": "2026-07-16T19:06:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3 is now live",
       "url": "https://www.kimi.com/en",
-      "hot": "339"
+      "hot": "562"
     },
     {
       "rank": 2,
       "title": "Microsoft Comic Chat is now open source",
       "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
-      "hot": "77"
+      "hot": "239"
     },
     {
       "rank": 3,
       "title": "Decoy Font",
       "url": "https://www.mixfont.com/experiments/decoy-font",
-      "hot": "20"
+      "hot": "149"
     },
     {
       "rank": 4,
-      "title": "OnePlus halts operations in USA and Europe",
-      "url": "https://community.oneplus.com/thread/2170715118587871237",
-      "hot": "389"
+      "title": "Detecting LLM-Generated Texts with “Classical” Machine Learning",
+      "url": "https://blog.lyc8503.net/en/post/llm-classifier/",
+      "hot": "71"
     },
     {
       "rank": 5,
-      "title": "Detecting LLM-Generated Texts with \"Classical\" Machine Learning",
-      "url": "https://blog.lyc8503.net/en/post/llm-classifier/",
-      "hot": "9"
+      "title": "OnePlus halts operations in USA and Europe",
+      "url": "https://community.oneplus.com/thread/2170715118587871237",
+      "hot": "444"
     },
     {
       "rank": 6,
-      "title": "Goes-19 weather satellite enters Safe Hold mode",
-      "url": "https://www.spaceweather.gov/news/goes-19-safe-hold",
-      "hot": "94"
+      "title": "NotebookLM is now Gemini Notebook",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+      "hot": "87"
     },
     {
       "rank": 7,
-      "title": "'We used acid to sabotage Microsoft hyperscale data centre construction'",
-      "url": "https://techwerkers.nl/en/posts/aanval-microsoft-ai-datacentrum/",
-      "hot": "7"
+      "title": "Immersive Linear Algebra Book with Interactive Figures (2015)",
+      "url": "https://immersivemath.com/ila/",
+      "hot": "65"
     },
     {
       "rank": 8,
-      "title": "How Our Rust-to-Zig Rewrite Is Going",
-      "url": "https://rtfeldman.com/rust-to-zig",
-      "hot": "182"
+      "title": "Goes-19 weather satellite enters Safe Hold mode",
+      "url": "https://www.spaceweather.gov/news/goes-19-safe-hold",
+      "hot": "118"
     },
     {
       "rank": 9,
-      "title": "Launch HN: Traceforce (YC S26) – Secure AI apps, one device at a time",
-      "url": "https://news.ycombinator.com/item?id=48937020",
-      "hot": "2"
+      "title": "How Our Rust-to-Zig Rewrite Is Going",
+      "url": "https://rtfeldman.com/rust-to-zig",
+      "hot": "273"
     },
     {
       "rank": 10,
-      "title": "56,000 lines of DOOM, in a language I made up",
-      "url": "https://betlang.dev/about/",
-      "hot": "6"
+      "title": "The lost joy of music piracy",
+      "url": "https://www.pigeonsandplanes.com/read/music-piracy-what-cd-oink-nine-inch-nails-streaming",
+      "hot": "703"
     }
   ]
 }
