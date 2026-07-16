@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-16T19:06:48+00:00",
+  "updated_at": "2026-07-16T21:14:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Kimi K3 is now live",
-      "url": "https://www.kimi.com/en",
-      "hot": "562"
+      "title": "Kimi K3: Open Frontier Intelligence",
+      "url": "https://www.kimi.com/blog/kimi-k3",
+      "hot": "776"
     },
     {
       "rank": 2,
       "title": "Microsoft Comic Chat is now open source",
       "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
-      "hot": "239"
+      "hot": "390"
     },
     {
       "rank": 3,
       "title": "Decoy Font",
       "url": "https://www.mixfont.com/experiments/decoy-font",
-      "hot": "149"
+      "hot": "262"
     },
     {
       "rank": 4,
-      "title": "Detecting LLM-Generated Texts with “Classical” Machine Learning",
-      "url": "https://blog.lyc8503.net/en/post/llm-classifier/",
-      "hot": "71"
+      "title": "LM Studio Bionic: the AI agent for open models",
+      "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+      "hot": "23"
     },
     {
       "rank": 5,
-      "title": "OnePlus halts operations in USA and Europe",
-      "url": "https://community.oneplus.com/thread/2170715118587871237",
-      "hot": "444"
+      "title": "NotebookLM is now Gemini Notebook",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+      "hot": "162"
     },
     {
       "rank": 6,
-      "title": "NotebookLM is now Gemini Notebook",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
-      "hot": "87"
+      "title": "$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol",
+      "url": "https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6",
+      "hot": "18"
     },
     {
       "rank": 7,
-      "title": "Immersive Linear Algebra Book with Interactive Figures (2015)",
-      "url": "https://immersivemath.com/ila/",
-      "hot": "65"
+      "title": "Helium escaping from atmosphere of nearby rocky exoplanet in a habitable zone",
+      "url": "https://www.science.org/doi/10.1126/science.aea9708",
+      "hot": "13"
     },
     {
       "rank": 8,
-      "title": "Goes-19 weather satellite enters Safe Hold mode",
-      "url": "https://www.spaceweather.gov/news/goes-19-safe-hold",
-      "hot": "118"
+      "title": "Detecting LLM-Generated Texts with “Classical” Machine Learning",
+      "url": "https://blog.lyc8503.net/en/post/llm-classifier/",
+      "hot": "110"
     },
     {
       "rank": 9,
-      "title": "How Our Rust-to-Zig Rewrite Is Going",
-      "url": "https://rtfeldman.com/rust-to-zig",
-      "hot": "273"
+      "title": "OnePlus halts operations in USA and Europe",
+      "url": "https://community.oneplus.com/thread/2170715118587871237",
+      "hot": "486"
     },
     {
       "rank": 10,
-      "title": "The lost joy of music piracy",
-      "url": "https://www.pigeonsandplanes.com/read/music-piracy-what-cd-oink-nine-inch-nails-streaming",
-      "hot": "703"
+      "title": "Immersive Linear Algebra Book with Interactive Figures (2015)",
+      "url": "https://immersivemath.com/ila/",
+      "hot": "110"
     }
   ]
 }
