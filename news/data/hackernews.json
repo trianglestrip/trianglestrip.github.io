@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-17T00:12:32+00:00",
+  "updated_at": "2026-07-17T03:35:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3: Open Frontier Intelligence",
       "url": "https://www.kimi.com/blog/kimi-k3",
-      "hot": "1067"
+      "hot": "1261"
     },
     {
       "rank": 2,
-      "title": "LM Studio Bionic: the AI agent for open models",
-      "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
-      "hot": "128"
+      "title": "Microsoft Comic Chat is now open source",
+      "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
+      "hot": "578"
     },
     {
       "rank": 3,
-      "title": "Microsoft Comic Chat is now open source",
-      "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
-      "hot": "492"
+      "title": "LM Studio Bionic: the AI agent for open models",
+      "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+      "hot": "180"
     },
     {
       "rank": 4,
-      "title": "The Little Book of Reinforcement Learning",
-      "url": "https://github.com/alxndrTL/little-book-rl/",
-      "hot": "32"
+      "title": "Decoy Font",
+      "url": "https://www.mixfont.com/experiments/decoy-font",
+      "hot": "437"
     },
     {
       "rank": 5,
-      "title": "Decoy Font",
-      "url": "https://www.mixfont.com/experiments/decoy-font",
-      "hot": "361"
+      "title": "$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol",
+      "url": "https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6",
+      "hot": "162"
     },
     {
       "rank": 6,
-      "title": "My car's OTA update broke Android Auto, and it's a indictment of modern software",
-      "url": "https://imdanielkendall.com/the-great-software-regress-how-move-fast-and-break-things-broke-our-lives/",
-      "hot": "89"
+      "title": "M 3.9 Experimental Explosion – 147 Km ENE of Ponce Inlet, Florida",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t13l/executive",
+      "hot": "42"
     },
     {
       "rank": 7,
-      "title": "Mathematics of Data Science",
-      "url": "https://arxiv.org/abs/2607.11938",
-      "hot": "78"
+      "title": "An Engineer's Guide to USB Typе-С (2024)",
+      "url": "https://www.ti.com/lit/eb/slyy228/slyy228.pdf?ts=1759892558029",
+      "hot": "13"
     },
     {
       "rank": 8,
-      "title": "Show HN: Mojibake – a low-level Unicode library written in C",
-      "url": "https://mojibake.zaerl.com/",
-      "hot": "22"
+      "title": "NotebookLM is now Gemini Notebook",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+      "hot": "263"
     },
     {
       "rank": 9,
-      "title": "'Likweli': A new monkey species discovered in the Congo Basin",
-      "url": "https://news.yale.edu/2026/07/15/meet-likweli-new-monkey-species-discovered-congo-basin",
-      "hot": "28"
+      "title": "The Little Book of Reinforcement Learning",
+      "url": "https://github.com/alxndrTL/little-book-rl/",
+      "hot": "68"
     },
     {
       "rank": 10,
-      "title": "NotebookLM is now Gemini Notebook",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
-      "hot": "219"
+      "title": "Simulating everything, sort of: The promise and limits of world models",
+      "url": "https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models/",
+      "hot": "13"
     }
   ]
 }

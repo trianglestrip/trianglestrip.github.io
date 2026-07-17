@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-17T00:12:31+00:00",
+  "updated_at": "2026-07-17T03:35:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "ArkTS模块化import阶段性能优化",
-      "url": "https://ost.51cto.com/posts/52952",
-      "hot": "ArkTS模块化import阶段性能优化在鸿蒙应用开发中，冷启动性能是影响用户体验的关键因素。很多开发者会遇到这样的困惑：首页代码逻辑并不复..."
+      "title": "现代 UI 抢先看：微软发布 Visual Studio Code 1.129 正式版更新，AI Agent 能力加强",
+      "url": "https://www.51cto.com/article/849941.html",
+      "hot": "微软今日发布了 Visual Studio Code 1.129 版本。本次版本更新除了继续完善 AI Agent 能力外，还首次提供了现代化 UI 界面预览，并对 Agents 窗口、聊天交互和编辑体验进行了多项调整，例如 Agents 窗口中的新编辑器面板、支持用“!”前缀直接运行终端命令。"
     },
     {
       "rank": 2,
-      "title": "别指望大模型包办一切！AI先驱施密德胡伯：LLM只是预测器，Coding Agent还缺控制、反馈和行动能力",
-      "url": "https://www.51cto.com/article/849850.html",
-      "hot": "模型负责理解与生成，Controller负责计划与调度，工具连接真实环境，测试与日志提供反馈，运行时管理权限与隔离，Trace保存完整过程。"
+      "title": "前 OpenAI 科学家谈 Harness 工程的自我提升架构设计",
+      "url": "https://www.51cto.com/article/849935.html",
+      "hot": "本文聚焦 Harness 工程相关研究，以及它如何推动 RSI。近期许多关于自动化研究（auto-research）、自我改进智能体、进化式程序搜索的工作，都可以围绕这一问题来组织。"
     },
     {
       "rank": 3,
-      "title": "一位失忆患者，揭开了AI记忆的误区",
-      "url": "https://www.51cto.com/article/849849.html",
-      "hot": "研究人员安排他看着镜子临摹复杂图案。虽然他完全不记得自己练习过这项任务，但日复一日下来，他的手法越来越熟练。身体记住了经验，可他的意识对此一无所知。"
+      "title": "面试官：“讲讲 SFT 之后还有哪些 Post-Training 方法？”，我：“SFT 之后就是 RLHF 嘛”，他：“你只说了 RLHF，那 DPO 你跳过去了？”",
+      "url": "https://www.51cto.com/article/849924.html",
+      "hot": "Post-Training 不是「RLHF 一招走天下」，是 SFT 之后分叉出来的一整个家族：DPO、GRPO、RLAIF、拒绝采样各有各的位置。特别是 GRPO 这两年的爆火，不知道这段历史会显得跟不上节奏。"
     },
     {
       "rank": 4,
-      "title": "奥特曼回斯坦福认错：思考外包给AI，一代人大脑正在萎缩",
-      "url": "https://www.51cto.com/article/849846.html",
-      "hot": "学校没变，但奥特曼警告人类正在慢慢失掉思考的训练场。"
+      "title": "安全告警比运维告警还多？我用 AIOps 搭了一套智能安全响应体系",
+      "url": "https://www.51cto.com/article/849920.html",
+      "hot": "AI 把安全工程师从\"告警海洋\"里捞出来，让他们去做真正需要人脑判断的事。"
     },
     {
       "rank": 5,
-      "title": "OpenAI官方教你八招玩透ChatGPT！",
-      "url": "https://www.51cto.com/article/849844.html",
-      "hot": "如果你还没驯服ChatGPT，或者还在被它像毛线团一样越理越乱的回答折腾得苦不堪言，那么今天这篇OpenAI最新提示词指南，你一定要好好收藏！"
+      "title": "科技巨头耗资无数狂热布局生成式AI，真的值得吗？",
+      "url": "https://www.51cto.com/article/849919.html",
+      "hot": "我们经历过计算机技术突飞猛进的时代，即便是那时，电力消耗也没有增长如此迅猛。人们冷静下来，开始质问：“生成式AI”值得吗？"
     },
     {
       "rank": 6,
-      "title": "绿灯变死局：当谷歌微软的CI/CD全线通过，攻击者已拿走了永久权限",
-      "url": "https://www.51cto.com/article/849837.html",
-      "hot": "在AI全速驱动软件工程的今天，防御的思维必须完成一次根本性的范式迁移：从\"在流水线末端盲目信任扫描器\"，转向\"在源头进行全生命周期的主权治理\"。企业不仅需要知道引入了什么，更需要深度治理这些组件和工作流，究竟以何种特权逻辑在流水线中运行。"
+      "title": "80% AI 智能体项目栽在生产“最后一公里”！AgentOps 全流程运维实战给你实操落地指南",
+      "url": "https://www.51cto.com/article/849918.html",
+      "hot": "大多数智能体项目之所以在“最后一公里”失败，并非因为技术瓶颈，而是低估了自主系统带来的运维复杂性。"
     },
     {
       "rank": 7,
-      "title": "鸿蒙应用开发中的V1与V2状态管理：差别、优缺点与迁移指南",
-      "url": "https://ost.51cto.com/posts/52946",
-      "hot": "一、为什么需要两套状态管理体系？在鸿蒙ArkUI的声明式开发范式中，状态管理是连接数据与UI的桥梁&mdash;&mdash;当状态变量发生变化时，UI会自动刷新..."
+      "title": "机器人需要「看到三维未来」！RynnWorld-4D重塑4D具身世界模型",
+      "url": "https://www.51cto.com/article/849917.html",
+      "hot": "RynnWorld-4D 第一次在单一扩散框架内实现了 RGB - 深度 - 光流的协同生成，并证明这种 4D 预测能力可以直接转化为真机闭环控制的增益。"
     },
     {
       "rank": 8,
-      "title": "快来查查，你 Codex 里的 GPT-5.6 有没有缩水",
-      "url": "https://www.51cto.com/article/849829.html",
-      "hot": "奇怪的是，我选的模型明明是 GPT-5.6-Sol。OpenAI 官网写得很清楚：它有 1,050,000 tokens 的 context window。105 万都能装满，我这次任务到底塞了多少东西？"
+      "title": "平均每天Vibe Coding 16小时后，这是我觉得Fable 5和GPT-5.6时代最好用的AI开发流程",
+      "url": "https://www.51cto.com/article/849912.html",
+      "hot": "Codex的目标模式，做的真的比Claude Code的效果要好，可能是因为GPT系列一直以来幻觉率极低，Prompt遵从效果也好，所以超长程任务几乎都不会变形，Claude推着推着有时候就不知道干个什么鬼东西了，甚至还会陷入死循环。"
     },
     {
       "rank": 9,
-      "title": "一次 P0 故障复盘：告警泛滥，真正问题被海量信息淹没",
-      "url": "https://www.51cto.com/article/849824.html",
-      "hot": "为什么根因出现后，没有第一时间被识别？是告警设计问题，还是信息分发问题，或者现场协同问题？"
+      "title": "xAI用Grok Build把Agent落地边界讲透了",
+      "url": "https://www.51cto.com/article/849911.html",
+      "hot": "很多人第一反应还是去比模型——Grok 4.5 强不强、context 够不够、跟 Claude / Codex 谁赢。但官方开源公告里那句更狠：你现在能看见的，是 context 怎么拼、tool call 怎么派发、skills / plugins / hooks / MCP / 子 Agent 怎么被加载和调用。"
     },
     {
       "rank": 10,
-      "title": "智能运维终结了繁琐的手动询问！Prometheus 与 DeepSeek 联动实现告警自动分析",
-      "url": "https://www.51cto.com/article/849816.html",
-      "hot": "系统报警后自动生成带分析的智能报表，方便又高效。"
+      "title": "SKILL.md 瘦身指南：372 行压到 287 行的十一个压缩技术实战拆解",
+      "url": "https://www.51cto.com/article/849903.html",
+      "hot": "SKILL.md 压缩是在重排信息层级：对外简洁接口，对内复杂实现。Agent 只需知道「调用什么、得到什么」。"
     }
   ]
 }
