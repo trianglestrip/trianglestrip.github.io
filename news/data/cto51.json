@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-17T08:19:04+00:00",
+  "updated_at": "2026-07-17T11:40:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "生态覆盖持续扩散，一文看懂各行业企业鸿蒙化转型进度",
+      "url": "https://www.51cto.com/article/849991.html",
+      "hot": "当越来越多核心业务真正运行在鸿蒙之上，质量也将从应用发布前的一道测试流程，逐渐成为企业鸿蒙化转型的基础能力。"
+    },
+    {
+      "rank": 2,
       "title": "突发叫停！Gemini 3.5 Pro难产，谷歌跌入失望陷阱",
       "url": "https://www.51cto.com/article/849986.html",
       "hot": "彭博社的一则独家报道如同一盆冰水，浇灭了所有人的热情：Gemini 3.5 Pro发布延期了，而且不是延期几天，是数月的大延期！"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "烧掉16万美金，狂飙100万行代码！Bun之父用Claude重写底层",
       "url": "https://www.51cto.com/article/849985.html",
       "hot": "最近，Anthropic首次公开了CC大规模代码迁移「全流程」，六步框架让全网震撼。"
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "title": "飞抵 8861 米珠峰还剩30%电量！大疆无人机攻克世界屋脊极限科考",
+      "url": "https://www.51cto.com/article/849984.html",
+      "hot": "本次完成极限科考任务的 DJI EV50，搭载了全球无人机出货量第一的新能安电池。"
+    },
+    {
+      "rank": 5,
       "title": "零成本AI编程方案：Claude Code + CC Switch接入OpenCode免费模型",
       "url": "https://www.51cto.com/article/849963.html",
       "hot": "最近折腾了一套组合拳：Claude Code + CC Switch + OpenCode 的免费模型 Big Pickle，效果还挺香。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "写代码从来都不是软件工程的瓶颈！普林斯顿教授：AI越会写，程序员越要会判断，否则AI把代码写完了，程序员还在加班",
       "url": "https://www.51cto.com/article/849962.html",
       "hot": "当Agent又刷新一个编码榜单时，不妨少问一句“它还要多久替代我”，不妨多想一下：如果代码已经不再稀缺，我还能不能把问题选对，把系统交付好，并为最后的结果负责？"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "AI正在终结“眼见为实”：文件信任体系迎来重构时刻",
       "url": "https://www.51cto.com/article/849946.html",
       "hot": "试想这样一幅画面：某人在AI助手的对话框里输入几行字——\"请生成一份美国加州驾照，姓名：John Doe，地址：123 Main Street，有效期至2028年。\"不到五分钟，一份从纸张纹理、防伪标记到字体排版，都与真件毫无二致的\"完美证件\"，便出现在屏幕上。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "十万个why：明明 Spring Cloud Gateway 自带限流，为什么还要在 Nginx 层再做一道限流？",
       "url": "https://www.51cto.com/article/849945.html",
       "hot": "用 Spring Cloud Gateway 的团队基本都知道它自带限流功能，配合 Redis 就能实现令牌桶限流。但你去看任何一家稍有规模的公司的架构图，流量进来之后第一道限流几乎都在 Nginx 层，Gateway 的限流反而是第二道甚至第三道。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "手把手带你使用 DevEcoCli 和 DevEcoCode 快速接入 HarmonyOS7.0 新特性",
       "url": "https://ost.51cto.com/posts/52984",
       "hot": "手把手带你使用DevEcoCli和DevEcoCode快速接入HarmonyOS7.0新特性前言之前的章节中已经介绍了DevEcoCli（集HarmonyOS开发全链路功能的终端..."
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "手把手带你使用 DevEcoCli 和 DevEcoCode 快速开发三方库",
       "url": "https://ost.51cto.com/posts/52983",
       "hot": "手把手带你使用DevEcoCli和DevEcoCode快速开发三方库前言之前的章节中已经介绍了DevEcoCli（集HarmonyOS开发全链路功能的终端工具）和DevEc..."
-    },
-    {
-      "rank": 9,
-      "title": "现代 UI 抢先看：微软发布 Visual Studio Code 1.129 正式版更新，AI Agent 能力加强",
-      "url": "https://www.51cto.com/article/849941.html",
-      "hot": "微软今日发布了 Visual Studio Code 1.129 版本。本次版本更新除了继续完善 AI Agent 能力外，还首次提供了现代化 UI 界面预览，并对 Agents 窗口、聊天交互和编辑体验进行了多项调整，例如 Agents 窗口中的新编辑器面板、支持用“!”前缀直接运行终端命令。"
-    },
-    {
-      "rank": 10,
-      "title": "前 OpenAI 科学家谈 Harness 工程的自我提升架构设计",
-      "url": "https://www.51cto.com/article/849935.html",
-      "hot": "本文聚焦 Harness 工程相关研究，以及它如何推动 RSI。近期许多关于自动化研究（auto-research）、自我改进智能体、进化式程序搜索的工作，都可以围绕这一问题来组织。"
     }
   ]
 }

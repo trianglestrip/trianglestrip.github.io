@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-07-17T08:19:01+00:00",
+  "updated_at": "2026-07-17T11:40:52+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "破解 Trae CN 加密协议",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113927",
-      "hot": ""
-    },
-    {
-      "rank": 9,
       "title": "【多栈实战】某黑产软件全链路逆向实录 (下)",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113640",
       "hot": "【多栈实战】\n某黑产软件全链路逆向实录 (下) ——\n从VIP裸链到金币视频JWT泄露越权实战 + 总结\n\n开篇严正声明：本文仅用于学习逆向工程与网络安全相关技术，未掺杂任何不良目的。文中的软件已对其名字、图标及相关 ..."
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "Sality病毒样本分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113452",
       "hot": "[md]# 前言\n本人小白一枚，第一次发帖，写的不好求轻喷 \n样本来源[https://www.52pojie.cn/thread-2104234-1-1.html](https://www.52pojie.cn/thread-2104234-1-1.html)\n\n# 样本概述\n样本为Sality病毒变种 ..."
+    },
+    {
+      "rank": 10,
+      "title": "绕过DirtySepolicy 用户层检测root",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113265",
+      "hot": "[md]# APatch KPM 开发：绕过 DirtySepolicy / Duck Detector 的 SELinux Root 检测\n\n&gt; 从 30 次死机重启中学到的：不是所有内核函数都能 hook，不是所有 syscall 都会经过文件系统，不是所有 kfunc 都存在于你的内核版 ..."
     }
   ]
 }
