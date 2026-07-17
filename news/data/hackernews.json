@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-17T14:18:08+00:00",
+  "updated_at": "2026-07-17T16:47:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
       "url": "https://news.ycombinator.com/item?id=48945241",
-      "hot": "64"
+      "hot": "533"
     },
     {
       "rank": 2,
-      "title": "Multi-Primary Color Display Emerges as Next-Gen Color Reproduction Technology",
-      "url": "https://en.ubiresearchnet.com/multi-primary-color-display-technology-2026/",
-      "hot": "26"
+      "title": "Mozilla: The state of open source AI",
+      "url": "https://stateofopensource.ai/",
+      "hot": "149"
     },
     {
       "rank": 3,
-      "title": "Minikotlin",
-      "url": "https://minikotlin.run",
-      "hot": "55"
+      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+      "hot": "102"
     },
     {
       "rank": 4,
-      "title": "Kimi K3: Open Frontier Intelligence",
-      "url": "https://www.kimi.com/blog/kimi-k3",
-      "hot": "1829"
+      "title": "A Road to Lisp: Which Lisp",
+      "url": "https://scotto.me/blog/2026-07-17-which-lisp/",
+      "hot": "68"
     },
     {
       "rank": 5,
-      "title": "EEG shows brain can simultaneous encode two speech streams",
-      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003876",
-      "hot": "178"
+      "title": "Claude Code: Anatomy of a Misfeature",
+      "url": "https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature/",
+      "hot": "90"
     },
     {
       "rank": 6,
-      "title": "Apple targets dozens of OpenAI employees with legal letters",
-      "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
-      "hot": "120"
+      "title": "Show HN: Watch bots interact with an SSH honeypot in real time",
+      "url": "https://honeypotlive.cc/",
+      "hot": "66"
     },
     {
       "rank": 7,
-      "title": "Pebble Mega Update – July 2026",
-      "url": "https://repebble.com/blog/pebble-mega-update-july-2026",
-      "hot": "188"
+      "title": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+      "url": "https://blog.zksecurity.xyz/posts/openvm-bugs/",
+      "hot": "41"
     },
     {
       "rank": 8,
-      "title": "VulnHunter: Capital One's agentic AI code security tool",
-      "url": "https://www.capitalone.com/tech/open-source/announcing-vulnhunter/",
-      "hot": "13"
+      "title": "Three ways people respond to a problem (other than solving it)",
+      "url": "https://improvesomething.today/responses-to-problems/",
+      "hot": "67"
     },
     {
       "rank": 9,
-      "title": "Evidence of inconsistencies in evaluation process and selection of winners",
-      "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918#3498423",
-      "hot": "367"
+      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+      "hot": "38"
     },
     {
       "rank": 10,
-      "title": "After wearing the Pebble Time 2 for two weeks, I'll never buy another smartwatch",
-      "url": "https://www.androidauthority.com/pebble-time-2-smartwatch-hands-on-3680077/",
-      "hot": "46"
+      "title": "More Bounce to the Ounce",
+      "url": "https://mceglowski.substack.com/p/more-bounce-to-the-ounce",
+      "hot": "38"
     }
   ]
 }
