@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-17T03:35:32+00:00",
+  "updated_at": "2026-07-17T06:02:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "手把手带你使用 DevEcoCli 和 DevEcoCode 快速接入 HarmonyOS7.0 新特性",
+      "url": "https://ost.51cto.com/posts/52984",
+      "hot": "手把手带你使用DevEcoCli和DevEcoCode快速接入HarmonyOS7.0新特性前言之前的章节中已经介绍了DevEcoCli（集HarmonyOS开发全链路功能的终端..."
+    },
+    {
+      "rank": 2,
+      "title": "手把手带你使用 DevEcoCli 和 DevEcoCode 快速开发三方库",
+      "url": "https://ost.51cto.com/posts/52983",
+      "hot": "手把手带你使用DevEcoCli和DevEcoCode快速开发三方库前言之前的章节中已经介绍了DevEcoCli（集HarmonyOS开发全链路功能的终端工具）和DevEc..."
+    },
+    {
+      "rank": 3,
       "title": "现代 UI 抢先看：微软发布 Visual Studio Code 1.129 正式版更新，AI Agent 能力加强",
       "url": "https://www.51cto.com/article/849941.html",
       "hot": "微软今日发布了 Visual Studio Code 1.129 版本。本次版本更新除了继续完善 AI Agent 能力外，还首次提供了现代化 UI 界面预览，并对 Agents 窗口、聊天交互和编辑体验进行了多项调整，例如 Agents 窗口中的新编辑器面板、支持用“!”前缀直接运行终端命令。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "前 OpenAI 科学家谈 Harness 工程的自我提升架构设计",
       "url": "https://www.51cto.com/article/849935.html",
       "hot": "本文聚焦 Harness 工程相关研究，以及它如何推动 RSI。近期许多关于自动化研究（auto-research）、自我改进智能体、进化式程序搜索的工作，都可以围绕这一问题来组织。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "面试官：“讲讲 SFT 之后还有哪些 Post-Training 方法？”，我：“SFT 之后就是 RLHF 嘛”，他：“你只说了 RLHF，那 DPO 你跳过去了？”",
       "url": "https://www.51cto.com/article/849924.html",
       "hot": "Post-Training 不是「RLHF 一招走天下」，是 SFT 之后分叉出来的一整个家族：DPO、GRPO、RLAIF、拒绝采样各有各的位置。特别是 GRPO 这两年的爆火，不知道这段历史会显得跟不上节奏。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "安全告警比运维告警还多？我用 AIOps 搭了一套智能安全响应体系",
       "url": "https://www.51cto.com/article/849920.html",
       "hot": "AI 把安全工程师从\"告警海洋\"里捞出来，让他们去做真正需要人脑判断的事。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "科技巨头耗资无数狂热布局生成式AI，真的值得吗？",
       "url": "https://www.51cto.com/article/849919.html",
       "hot": "我们经历过计算机技术突飞猛进的时代，即便是那时，电力消耗也没有增长如此迅猛。人们冷静下来，开始质问：“生成式AI”值得吗？"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "80% AI 智能体项目栽在生产“最后一公里”！AgentOps 全流程运维实战给你实操落地指南",
       "url": "https://www.51cto.com/article/849918.html",
       "hot": "大多数智能体项目之所以在“最后一公里”失败，并非因为技术瓶颈，而是低估了自主系统带来的运维复杂性。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "机器人需要「看到三维未来」！RynnWorld-4D重塑4D具身世界模型",
       "url": "https://www.51cto.com/article/849917.html",
       "hot": "RynnWorld-4D 第一次在单一扩散框架内实现了 RGB - 深度 - 光流的协同生成，并证明这种 4D 预测能力可以直接转化为真机闭环控制的增益。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "平均每天Vibe Coding 16小时后，这是我觉得Fable 5和GPT-5.6时代最好用的AI开发流程",
       "url": "https://www.51cto.com/article/849912.html",
       "hot": "Codex的目标模式，做的真的比Claude Code的效果要好，可能是因为GPT系列一直以来幻觉率极低，Prompt遵从效果也好，所以超长程任务几乎都不会变形，Claude推着推着有时候就不知道干个什么鬼东西了，甚至还会陷入死循环。"
-    },
-    {
-      "rank": 9,
-      "title": "xAI用Grok Build把Agent落地边界讲透了",
-      "url": "https://www.51cto.com/article/849911.html",
-      "hot": "很多人第一反应还是去比模型——Grok 4.5 强不强、context 够不够、跟 Claude / Codex 谁赢。但官方开源公告里那句更狠：你现在能看见的，是 context 怎么拼、tool call 怎么派发、skills / plugins / hooks / MCP / 子 Agent 怎么被加载和调用。"
-    },
-    {
-      "rank": 10,
-      "title": "SKILL.md 瘦身指南：372 行压到 287 行的十一个压缩技术实战拆解",
-      "url": "https://www.51cto.com/article/849903.html",
-      "hot": "SKILL.md 压缩是在重排信息层级：对外简洁接口，对内复杂实现。Agent 只需知道「调用什么、得到什么」。"
     }
   ]
 }
