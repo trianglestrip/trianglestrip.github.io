@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-17T19:48:01+00:00",
+  "updated_at": "2026-07-17T22:12:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
-      "url": "https://news.ycombinator.com/item?id=48945241",
-      "hot": "815"
+      "title": "The Zilog Z80 has turned 50",
+      "url": "https://goliath32.com/blog/z80.html",
+      "hot": "110"
     },
     {
       "rank": 2,
-      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
-      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
-      "hot": "241"
+      "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
+      "url": "https://news.ycombinator.com/item?id=48945241",
+      "hot": "948"
     },
     {
       "rank": 3,
-      "title": "Learning a few things about running SQLite",
-      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
-      "hot": "53"
+      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+      "hot": "313"
     },
     {
       "rank": 4,
-      "title": "Frame – the first Linux Assembly X server",
-      "url": "https://isene.org/2026/07/Frame.html",
-      "hot": "89"
+      "title": "Thanks HN for 15 years of support and helping me find my life's work",
+      "url": "https://news.ycombinator.com/item?id=48949551",
+      "hot": "100"
     },
     {
       "rank": 5,
-      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
-      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
-      "hot": "166"
+      "title": "Learning a few things about running SQLite",
+      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
+      "hot": "108"
     },
     {
       "rank": 6,
-      "title": "Mozilla: The state of open source AI",
-      "url": "https://stateofopensource.ai/",
-      "hot": "284"
+      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+      "hot": "227"
     },
     {
       "rank": 7,
-      "title": "Three ways people respond to a problem (other than solving it)",
-      "url": "https://improvesomething.today/responses-to-problems/",
-      "hot": "138"
+      "title": "Frame – Linux X server in Assembly",
+      "url": "https://isene.org/2026/07/Frame.html",
+      "hot": "123"
     },
     {
       "rank": 8,
-      "title": "Frank Lloyd Wright's First Home",
-      "url": "https://www.architecturaldigest.com/story/frank-lloyd-wright-home-and-studio-everything-you-need-to-know",
-      "hot": "39"
+      "title": "Lobste.rs is now running on SQLite",
+      "url": "https://lobste.rs/s/ko1ji1",
+      "hot": "81"
     },
     {
       "rank": 9,
-      "title": "A Road to Lisp: Which Lisp",
-      "url": "https://scotto.me/blog/2026-07-17-which-lisp/",
-      "hot": "129"
+      "title": "I built a digital F1 garage to learn how Formula 1 cars work",
+      "url": "https://paddockpass.app",
+      "hot": "6"
     },
     {
       "rank": 10,
-      "title": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
-      "url": "https://blog.zksecurity.xyz/posts/openvm-bugs/",
-      "hot": "64"
+      "title": "The state of open source AI",
+      "url": "https://stateofopensource.ai/",
+      "hot": "334"
     }
   ]
 }
