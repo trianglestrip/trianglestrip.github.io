@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-17T03:35:44+00:00",
+  "updated_at": "2026-07-17T10:13:30+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,27 +24,27 @@
     },
     {
       "rank": 4,
-      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
-      "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "257"
-    },
-    {
-      "rank": 5,
       "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
       "url": "https://huggingface.co/papers/2607.07675",
       "hot": "63"
     },
     {
-      "rank": 6,
-      "title": "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
-      "url": "https://huggingface.co/papers/2607.04439",
-      "hot": "58"
+      "rank": 5,
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "url": "https://huggingface.co/papers/2605.23904",
+      "hot": "257"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "83"
+    },
+    {
+      "rank": 7,
+      "title": "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
+      "url": "https://huggingface.co/papers/2607.04439",
+      "hot": "58"
     },
     {
       "rank": 8,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "Geometric Context Transformer for Streaming 3D Reconstruction",
-      "url": "https://huggingface.co/papers/2604.14141",
-      "hot": "27"
+      "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+      "url": "https://huggingface.co/papers/2504.19413",
+      "hot": "67"
     }
   ]
 }

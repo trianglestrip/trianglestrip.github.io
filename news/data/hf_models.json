@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-17T03:35:44+00:00",
+  "updated_at": "2026-07-17T10:13:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "thinkingmachines/Inkling",
       "url": "https://huggingface.co/thinkingmachines/Inkling",
-      "hot": "827"
+      "hot": "878"
     },
     {
       "rank": 2,
       "title": "prism-ml/Ternary-Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-      "hot": "610"
+      "hot": "636"
     },
     {
       "rank": 3,
       "title": "prism-ml/Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
-      "hot": "344"
+      "hot": "361"
     },
     {
       "rank": 4,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "2240"
+      "hot": "2255"
     },
     {
       "rank": 5,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4030"
+      "hot": "4050"
     },
     {
       "rank": 6,
       "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
       "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "hot": "391"
+      "hot": "398"
     },
     {
       "rank": 7,
       "title": "conradlocke/krea2-identity-edit",
       "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
-      "hot": "322"
+      "hot": "328"
     },
     {
       "rank": 8,
-      "title": "tencent/Hy3",
-      "url": "https://huggingface.co/tencent/Hy3",
-      "hot": "813"
+      "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
+      "hot": "241"
     },
     {
       "rank": 9,
-      "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
-      "hot": "234"
+      "title": "tencent/Hy3",
+      "url": "https://huggingface.co/tencent/Hy3",
+      "hot": "815"
     },
     {
       "rank": 10,
       "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
       "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2788"
+      "hot": "2802"
     }
   ]
 }
