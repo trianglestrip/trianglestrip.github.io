@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-17T22:12:41+00:00",
+  "updated_at": "2026-07-18T03:20:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The Zilog Z80 has turned 50",
-      "url": "https://goliath32.com/blog/z80.html",
-      "hot": "110"
+      "title": "Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+      "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
+      "hot": "338"
     },
     {
       "rank": 2,
       "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
       "url": "https://news.ycombinator.com/item?id=48945241",
-      "hot": "948"
+      "hot": "1074"
     },
     {
       "rank": 3,
-      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
-      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
-      "hot": "313"
+      "title": "Thanks HN for 15 years of support and helping me find my life's work",
+      "url": "https://news.ycombinator.com/item?id=48949551",
+      "hot": "399"
     },
     {
       "rank": 4,
-      "title": "Thanks HN for 15 years of support and helping me find my life's work",
-      "url": "https://news.ycombinator.com/item?id=48949551",
-      "hot": "100"
+      "title": "The Zilog Z80 has turned 50",
+      "url": "https://goliath32.com/blog/z80.html",
+      "hot": "177"
     },
     {
       "rank": 5,
-      "title": "Learning a few things about running SQLite",
-      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
-      "hot": "108"
+      "title": "The Isomorphic Labs Drug Design Engine unlocks a new frontier beyond AlphaFold",
+      "url": "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier",
+      "hot": "46"
     },
     {
       "rank": 6,
-      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
-      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
-      "hot": "227"
+      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+      "hot": "387"
     },
     {
       "rank": 7,
-      "title": "Frame – Linux X server in Assembly",
-      "url": "https://isene.org/2026/07/Frame.html",
-      "hot": "123"
+      "title": "Moonstone: Modern, cross-platform Lua runtime and package manager written in Zig",
+      "url": "https://moonstone.sh/",
+      "hot": "13"
     },
     {
       "rank": 8,
-      "title": "Lobste.rs is now running on SQLite",
-      "url": "https://lobste.rs/s/ko1ji1",
-      "hot": "81"
+      "title": "Vāgdhenu: A Sanskrit Chanting TTS System",
+      "url": "https://prathosh.in/vagdhenu/",
+      "hot": "86"
     },
     {
       "rank": 9,
-      "title": "I built a digital F1 garage to learn how Formula 1 cars work",
-      "url": "https://paddockpass.app",
-      "hot": "6"
+      "title": "Learning a few things about running SQLite",
+      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
+      "hot": "182"
     },
     {
       "rank": 10,
-      "title": "The state of open source AI",
-      "url": "https://stateofopensource.ai/",
-      "hot": "334"
+      "title": "I Started a \"Dirt Notebook\"",
+      "url": "https://pinewind.bearblog.dev/i-started-a-dirt-notebook/",
+      "hot": "22"
     }
   ]
 }
