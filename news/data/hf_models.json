@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-18T05:39:45+00:00",
+  "updated_at": "2026-07-18T12:10:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "thinkingmachines/Inkling",
       "url": "https://huggingface.co/thinkingmachines/Inkling",
-      "hot": "974"
+      "hot": "1006"
     },
     {
       "rank": 2,
       "title": "prism-ml/Ternary-Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-      "hot": "686"
+      "hot": "702"
     },
     {
       "rank": 3,
       "title": "prism-ml/Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
-      "hot": "403"
+      "hot": "416"
     },
     {
       "rank": 4,
-      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "2281"
+      "title": "zai-org/GLM-5.2",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "hot": "4098"
     },
     {
       "rank": 5,
-      "title": "zai-org/GLM-5.2",
-      "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4078"
+      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "hot": "2286"
     },
     {
       "rank": 6,
-      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "hot": "418"
+      "title": "conradlocke/krea2-identity-edit",
+      "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
+      "hot": "369"
     },
     {
       "rank": 7,
-      "title": "conradlocke/krea2-identity-edit",
-      "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
-      "hot": "352"
+      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "hot": "427"
     },
     {
       "rank": 8,
-      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2835"
+      "title": "ATH-MaaS/OvisOCR2",
+      "url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
+      "hot": "158"
     },
     {
       "rank": 9,
-      "title": "ATH-MaaS/OvisOCR2",
-      "url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
-      "hot": "153"
+      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "hot": "2839"
     },
     {
       "rank": 10,
       "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
-      "hot": "251"
+      "hot": "252"
     }
   ]
 }
