@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-18T12:10:44+00:00",
+  "updated_at": "2026-07-18T18:29:41+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
-      "url": "https://huggingface.co/papers/2607.04439",
-      "hot": "60"
-    },
-    {
-      "rank": 8,
       "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
       "url": "https://huggingface.co/papers/2509.22186",
       "hot": "176"
+    },
+    {
+      "rank": 8,
+      "title": "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
+      "url": "https://huggingface.co/papers/2607.04439",
+      "hot": "60"
     },
     {
       "rank": 9,

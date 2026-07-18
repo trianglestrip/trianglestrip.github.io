@@ -1,68 +1,68 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-07-18T12:09:47+00:00",
+  "updated_at": "2026-07-18T18:29:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Mirage",
-      "url": "https://www.producthunt.com/products/mirage-15",
-      "hot": "2026-07-11T00:48:47-07:00"
-    },
-    {
-      "rank": 2,
       "title": "Clark",
       "url": "https://www.producthunt.com/products/clark-agent",
       "hot": "2026-05-27T02:38:52-07:00"
     },
     {
-      "rank": 3,
-      "title": "ZooData",
-      "url": "https://www.producthunt.com/products/zoodata",
-      "hot": "2026-07-07T02:57:18-07:00"
-    },
-    {
-      "rank": 4,
-      "title": "WX",
-      "url": "https://www.producthunt.com/products/wx",
-      "hot": "2026-07-14T07:38:29-07:00"
-    },
-    {
-      "rank": 5,
-      "title": "Mainichi",
-      "url": "https://www.producthunt.com/products/mainichi-2",
-      "hot": "2026-07-13T12:26:12-07:00"
-    },
-    {
-      "rank": 6,
+      "rank": 2,
       "title": "DocuSmart AI",
       "url": "https://www.producthunt.com/products/docusmart-ai",
       "hot": "2026-03-12T10:37:12-07:00"
     },
     {
-      "rank": 7,
-      "title": "Buzzy",
-      "url": "https://www.producthunt.com/products/buzzy-2",
-      "hot": "2026-06-30T07:36:15-07:00"
+      "rank": 3,
+      "title": "Mainichi",
+      "url": "https://www.producthunt.com/products/mainichi-2",
+      "hot": "2026-07-13T12:26:12-07:00"
     },
     {
-      "rank": 8,
+      "rank": 4,
       "title": "Acebuilder",
       "url": "https://www.producthunt.com/products/acebuilder",
       "hot": "2026-07-14T04:05:00-07:00"
     },
     {
-      "rank": 9,
+      "rank": 5,
+      "title": "ZooData",
+      "url": "https://www.producthunt.com/products/zoodata",
+      "hot": "2026-07-07T02:57:18-07:00"
+    },
+    {
+      "rank": 6,
+      "title": "LiveDemo",
+      "url": "https://www.producthunt.com/products/livedemo",
+      "hot": "2026-07-05T22:59:02-07:00"
+    },
+    {
+      "rank": 7,
+      "title": "WX",
+      "url": "https://www.producthunt.com/products/wx",
+      "hot": "2026-07-14T07:38:29-07:00"
+    },
+    {
+      "rank": 8,
       "title": "OpenMarkdown",
       "url": "https://www.producthunt.com/products/openmarkdown",
       "hot": "2026-07-14T21:32:04-07:00"
     },
     {
+      "rank": 9,
+      "title": "Mirage",
+      "url": "https://www.producthunt.com/products/mirage-15",
+      "hot": "2026-07-11T00:48:47-07:00"
+    },
+    {
       "rank": 10,
-      "title": "LiveDemo",
-      "url": "https://www.producthunt.com/products/livedemo",
-      "hot": "2026-07-05T22:59:02-07:00"
+      "title": "Kimi K3",
+      "url": "https://www.producthunt.com/products/kimi-ai-assistant",
+      "hot": "2026-07-16T19:39:47-07:00"
     }
   ]
 }
