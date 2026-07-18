@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-18T09:00:28+00:00",
+  "updated_at": "2026-07-18T11:26:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Regressive JPEGs",
       "url": "https://maurycyz.com/projects/bad_jpeg/",
-      "hot": "285"
+      "hot": "403"
     },
     {
       "rank": 2,
-      "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
-      "url": "https://news.ycombinator.com/item?id=48945241",
-      "hot": "1169"
+      "title": "LG monitors silently install software through Windows Update without consent",
+      "url": "https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent",
+      "hot": "79"
     },
     {
       "rank": 3,
-      "title": "Reviving a 15-year-old netbook with Arch Linux",
-      "url": "https://parksb.github.io/en/article/41.html",
-      "hot": "98"
+      "title": "Funny item co-occurrences in 3.2M Instacart orders",
+      "url": "https://rogerdickey.com/funny-item-co-occurrences-in-3-million-instacart-orders/",
+      "hot": "21"
     },
     {
       "rank": 4,
-      "title": "Thanks HN for 15 years of support and helping me find my life's work",
-      "url": "https://news.ycombinator.com/item?id=48949551",
-      "hot": "567"
+      "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
+      "url": "https://news.ycombinator.com/item?id=48945241",
+      "hot": "1213"
     },
     {
       "rank": 5,
-      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
-      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
-      "hot": "450"
+      "title": "Thanks HN for 15 years of support and helping me find my life's work",
+      "url": "https://news.ycombinator.com/item?id=48949551",
+      "hot": "632"
     },
     {
       "rank": 6,
-      "title": "Porting nanochat to a TPU: what carries over from PyTorch, and what breaks",
-      "url": "https://github.com/tucan9389/nanochat-jax/discussions/1",
-      "hot": "20"
+      "title": "Qubes OS Security in the Public Record",
+      "url": "https://arxiv.org/abs/2607.14587",
+      "hot": "14"
     },
     {
       "rank": 7,
-      "title": "The Zilog Z80 has turned 50",
-      "url": "https://goliath32.com/blog/z80.html",
-      "hot": "220"
+      "title": "Porting nanochat to a TPU: what carries over from PyTorch, and what breaks",
+      "url": "https://github.com/tucan9389/nanochat-jax/discussions/1",
+      "hot": "41"
     },
     {
       "rank": 8,
-      "title": "TP-Link Kasa cameras leaked home GPS via unauthenticated UDP for 6 years",
-      "url": "https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md",
-      "hot": "119"
+      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+      "hot": "467"
     },
     {
       "rank": 9,
-      "title": "Learning a few things about running SQLite",
-      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
-      "hot": "245"
+      "title": "Reviving a 15-year-old netbook with Arch Linux",
+      "url": "https://parksb.github.io/en/article/41.html",
+      "hot": "120"
     },
     {
       "rank": 10,
-      "title": "Stenchill: 3D Printable Solder Paste Stencil Generator",
-      "url": "https://www.stenchill.com/en/",
-      "hot": "48"
+      "title": "The Zilog Z80 has turned 50",
+      "url": "https://goliath32.com/blog/z80.html",
+      "hot": "235"
     }
   ]
 }
