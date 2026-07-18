@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-18T19:42:51+00:00",
+  "updated_at": "2026-07-18T22:06:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
-      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
-      "hot": "384"
+      "title": "Speech Recognition and TTS in less than 500kb",
+      "url": "https://github.com/moonshine-ai/moonshine/tree/main/micro",
+      "hot": "104"
     },
     {
       "rank": 2,
-      "title": "The Kimi K3 Moment",
-      "url": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/",
-      "hot": "55"
+      "title": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "hot": "462"
     },
     {
       "rank": 3,
-      "title": "Gleam Is Now on Tangled",
-      "url": "https://tangled.org/gleam.run/gleam",
-      "hot": "125"
+      "title": "Typing Speed Test, but for Developers",
+      "url": "https://haxxorwpm.0s.is/",
+      "hot": "56"
     },
     {
       "rank": 4,
-      "title": "Goodbye, and Thanks for All the Bikesheds",
-      "url": "https://queue.acm.org/detail.cfm?id=3818307",
-      "hot": "116"
+      "title": "If You Build It, They Will Come",
+      "url": "https://www.benlandautaylor.com/p/if-you-build-it-they-will-come",
+      "hot": "179"
     },
     {
       "rank": 5,
-      "title": "If You Build It, They Will Come",
-      "url": "https://www.benlandautaylor.com/p/if-you-build-it-they-will-come",
-      "hot": "90"
+      "title": "I'm Making Strandfall, a Solarpunk Orienteering Larp",
+      "url": "https://mssv.net/2026/04/29/im-making-strandfall-a-solarpunk-orienteering-larp/",
+      "hot": "53"
     },
     {
       "rank": 6,
       "title": "Is this the end of the once-mighty GoPro?",
       "url": "https://amateurphotographer.com/latest/photo-news/going-going-gone-is-this-the-end-of-the-once-mighty-gopro/",
-      "hot": "144"
+      "hot": "168"
     },
     {
       "rank": 7,
-      "title": "Our Approach to Bioresilience: Isomorphic Labs and Google DeepMind",
-      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
-      "hot": "35"
+      "title": "Gleam Is Now on Tangled",
+      "url": "https://tangled.org/gleam.run/gleam",
+      "hot": "167"
     },
     {
       "rank": 8,
-      "title": "Elixir-lang.org has a new design",
-      "url": "https://elixir-lang.org/",
-      "hot": "101"
+      "title": "Setting up your spare Mac for Claude Code to control, a step-by-step guide",
+      "url": "https://ykdojo.github.io/claude-controls-mac/",
+      "hot": "148"
     },
     {
       "rank": 9,
-      "title": "Setting up your spare Mac for Claude Code to control, a step-by-step guide",
-      "url": "https://ykdojo.github.io/claude-controls-mac/",
-      "hot": "105"
+      "title": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+      "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/",
+      "hot": "193"
     },
     {
       "rank": 10,
-      "title": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
-      "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/",
-      "hot": "169"
+      "title": "Regressive JPEGs",
+      "url": "https://maurycyz.com/projects/bad_jpeg/",
+      "hot": "635"
     }
   ]
 }
