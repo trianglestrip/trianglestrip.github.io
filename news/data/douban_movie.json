@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-18T13:45:20+00:00",
+  "updated_at": "2026-07-18T16:32:20+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,21 +12,21 @@
     },
     {
       "rank": 2,
+      "title": "八仙！",
+      "url": "https://movie.douban.com/subject/36882191/",
+      "hot": "评分 8.3"
+    },
+    {
+      "rank": 3,
       "title": "三国第一部：争洛阳",
       "url": "https://movie.douban.com/subject/36752981/",
       "hot": "评分 8.1"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "痴迷",
       "url": "https://movie.douban.com/subject/37450627/",
       "hot": "评分 7.7"
-    },
-    {
-      "rank": 4,
-      "title": "八仙！",
-      "url": "https://movie.douban.com/subject/36882191/",
-      "hot": "评分 8.3"
     },
     {
       "rank": 5,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "小黄人与大怪兽",
-      "url": "https://movie.douban.com/subject/36962219/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 10,
       "title": "铁拳教育",
       "url": "https://movie.douban.com/subject/37071123/",
       "hot": "评分 8.7"
+    },
+    {
+      "rank": 10,
+      "title": "小黄人与大怪兽",
+      "url": "https://movie.douban.com/subject/36962219/",
+      "hot": "评分 6.7"
     }
   ]
 }
