@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-18T03:20:03+00:00",
+  "updated_at": "2026-07-18T05:39:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
       "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
-      "hot": "338"
+      "hot": "425"
     },
     {
       "rank": 2,
       "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
       "url": "https://news.ycombinator.com/item?id=48945241",
-      "hot": "1074"
+      "hot": "1117"
     },
     {
       "rank": 3,
       "title": "Thanks HN for 15 years of support and helping me find my life's work",
       "url": "https://news.ycombinator.com/item?id=48949551",
-      "hot": "399"
+      "hot": "472"
     },
     {
       "rank": 4,
-      "title": "The Zilog Z80 has turned 50",
-      "url": "https://goliath32.com/blog/z80.html",
-      "hot": "177"
+      "title": "Reviving a 15-year-old netbook with Arch Linux",
+      "url": "https://parksb.github.io/en/article/41.html",
+      "hot": "34"
     },
     {
       "rank": 5,
-      "title": "The Isomorphic Labs Drug Design Engine unlocks a new frontier beyond AlphaFold",
-      "url": "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier",
-      "hot": "46"
+      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+      "hot": "412"
     },
     {
       "rank": 6,
-      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
-      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
-      "hot": "387"
+      "title": "The Zilog Z80 has turned 50",
+      "url": "https://goliath32.com/blog/z80.html",
+      "hot": "194"
     },
     {
       "rank": 7,
       "title": "Moonstone: Modern, cross-platform Lua runtime and package manager written in Zig",
       "url": "https://moonstone.sh/",
-      "hot": "13"
+      "hot": "30"
     },
     {
       "rank": 8,
-      "title": "Vāgdhenu: A Sanskrit Chanting TTS System",
-      "url": "https://prathosh.in/vagdhenu/",
-      "hot": "86"
+      "title": "I Started a \"Dirt Notebook\"",
+      "url": "https://pinewind.bearblog.dev/i-started-a-dirt-notebook/",
+      "hot": "37"
     },
     {
       "rank": 9,
-      "title": "Learning a few things about running SQLite",
-      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
-      "hot": "182"
+      "title": "TP-Link Kasa cameras leaked home GPS via unauthenticated UDP for 6 years",
+      "url": "https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md",
+      "hot": "71"
     },
     {
       "rank": 10,
-      "title": "I Started a \"Dirt Notebook\"",
-      "url": "https://pinewind.bearblog.dev/i-started-a-dirt-notebook/",
-      "hot": "22"
+      "title": "Learning a few things about running SQLite",
+      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
+      "hot": "204"
     }
   ]
 }
