@@ -1,67 +1,67 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-19T14:09:30+00:00",
+  "updated_at": "2026-07-19T17:12:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "前端圈7月大地震：TS 7发布、Bun 11天从Zig迁Rust、Kimi K3登顶、大厂裁员50%",
       "url": "https://juejin.cn/post/7663095491467411462",
-      "hot": "981"
+      "hot": "1044"
     },
     {
       "rank": 2,
       "title": "Harness 企业级落地(二) - 让 AI 读懂项目",
       "url": "https://juejin.cn/post/7662586328122982415",
-      "hot": "792"
+      "hot": "828"
     },
     {
       "rank": 3,
       "title": "用 Kimi K3 交付一个真实项目后：很强，但还有不足",
       "url": "https://juejin.cn/post/7663313773420462118",
-      "hot": "585"
+      "hot": "612"
     },
     {
       "rank": 4,
       "title": "Android CLI 完全指南",
       "url": "https://juejin.cn/post/7662627075259924506",
-      "hot": "315"
+      "hot": "333"
     },
     {
       "rank": 5,
-      "title": "别再说“全栈”了，AI 时代团队只认这 5 种人",
-      "url": "https://juejin.cn/post/7663028450609004554",
-      "hot": "306"
+      "title": "那个号称\"对标 Spring\"的国产框架 Solon，到底行不行？",
+      "url": "https://juejin.cn/post/7663075794353209371",
+      "hot": "243"
     },
     {
       "rank": 6,
-      "title": "那个号称\"对标 Spring\"的国产框架 Solon，到底行不行？",
-      "url": "https://juejin.cn/post/7663075794353209371",
-      "hot": "225"
+      "title": "曾经狂推的 Superpowers，今天我终于把它卸载了! 臃肿，Token吞金兽！",
+      "url": "https://juejin.cn/post/7662933531113324586",
+      "hot": "234"
     },
     {
       "rank": 7,
-      "title": "曾经狂推的 Superpowers，今天我终于把它卸载了! 臃肿，Token吞金兽！",
-      "url": "https://juejin.cn/post/7662933531113324586",
-      "hot": "216"
+      "title": "AI 写的 React 组件,合并前必查的 6 个坏味道——每个都有代码对比",
+      "url": "https://juejin.cn/post/7663028450609119242",
+      "hot": "225"
     },
     {
       "rank": 8,
-      "title": "AI 写的 React 组件,合并前必查的 6 个坏味道——每个都有代码对比",
-      "url": "https://juejin.cn/post/7663028450609119242",
-      "hot": "198"
+      "title": "学完 Spring Boot 再看 FastAPI，我破防了",
+      "url": "https://juejin.cn/post/7663295933393682467",
+      "hot": "171"
     },
     {
       "rank": 9,
-      "title": "Vibe Coding 时代，程序员该何去何从",
-      "url": "https://juejin.cn/post/7662933531112914986",
-      "hot": "198"
+      "title": "全网都在吹的 Kimi K3，到底怎么样？",
+      "url": "https://juejin.cn/post/7663685196478611506",
+      "hot": "162"
     },
     {
       "rank": 10,
-      "title": "学完 Spring Boot 再看 FastAPI，我破防了",
-      "url": "https://juejin.cn/post/7663295933393682467",
+      "title": "Agent 一次返回多个 Tool Call，应该并行还是顺序执行？",
+      "url": "https://juejin.cn/post/7663161716598898734",
       "hot": "162"
     }
   ]

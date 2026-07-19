@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-19T14:09:17+00:00",
+  "updated_at": "2026-07-19T17:12:25+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,14 +36,14 @@
     },
     {
       "rank": 6,
-      "title": "野狗骨头",
-      "url": "https://movie.douban.com/subject/36618951/",
+      "title": "灿如繁星",
+      "url": "https://movie.douban.com/subject/36466246/",
       "hot": ""
     },
     {
       "rank": 7,
-      "title": "灿如繁星",
-      "url": "https://movie.douban.com/subject/36466246/",
+      "title": "野狗骨头",
+      "url": "https://movie.douban.com/subject/36618951/",
       "hot": ""
     },
     {
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "铁拳教育",
-      "url": "https://movie.douban.com/subject/37071123/",
-      "hot": "评分 8.7"
+      "title": "雀骨",
+      "url": "https://movie.douban.com/subject/37317368/",
+      "hot": ""
     },
     {
       "rank": 10,
-      "title": "小黄人与大怪兽",
-      "url": "https://movie.douban.com/subject/36962219/",
-      "hot": "评分 6.7"
+      "title": "群星闪耀时",
+      "url": "https://movie.douban.com/subject/35875462/",
+      "hot": ""
     }
   ]
 }
