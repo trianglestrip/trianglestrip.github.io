@@ -1,13 +1,13 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-07-19T22:04:17+00:00",
+  "updated_at": "2026-07-19T23:02:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "西班牙vs阿根廷",
-      "url": "https://s.weibo.com/weibo?q=%E8%A5%BF%E7%8F%AD%E7%89%99vs%E9%98%BF%E6%A0%B9%E5%BB%B7",
+      "title": "西班牙冠军",
+      "url": "https://s.weibo.com/weibo?q=%E8%A5%BF%E7%8F%AD%E7%89%99%E5%86%A0%E5%86%9B",
       "hot": ""
     },
     {
@@ -24,44 +24,44 @@
     },
     {
       "rank": 4,
-      "title": "世界杯中场秀 不转播",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%96%E7%95%8C%E6%9D%AF%E4%B8%AD%E5%9C%BA%E7%A7%80%20%E4%B8%8D%E8%BD%AC%E6%92%AD",
+      "title": "CRYBABY心动了",
+      "url": "https://s.weibo.com/weibo?q=CRYBABY%E5%BF%83%E5%8A%A8%E4%BA%86",
       "hot": ""
     },
     {
       "rank": 5,
-      "title": "西班牙阿根廷加时赛",
-      "url": "https://s.weibo.com/weibo?q=%E8%A5%BF%E7%8F%AD%E7%89%99%E9%98%BF%E6%A0%B9%E5%BB%B7%E5%8A%A0%E6%97%B6%E8%B5%9B",
+      "title": "西班牙夺冠含金量太高了",
+      "url": "https://s.weibo.com/weibo?q=%E8%A5%BF%E7%8F%AD%E7%89%99%E5%A4%BA%E5%86%A0%E5%90%AB%E9%87%91%E9%87%8F%E5%A4%AA%E9%AB%98%E4%BA%86",
       "hot": ""
     },
     {
       "rank": 6,
-      "title": "大马丁 门神降临阿根廷",
-      "url": "https://s.weibo.com/weibo?q=%E5%A4%A7%E9%A9%AC%E4%B8%81%20%E9%97%A8%E7%A5%9E%E9%99%8D%E4%B8%B4%E9%98%BF%E6%A0%B9%E5%BB%B7",
+      "title": "西班牙vs阿根廷",
+      "url": "https://s.weibo.com/weibo?q=%E8%A5%BF%E7%8F%AD%E7%89%99vs%E9%98%BF%E6%A0%B9%E5%BB%B7",
       "hot": ""
     },
     {
       "rank": 7,
+      "title": "西班牙阿根廷冲突",
+      "url": "https://s.weibo.com/weibo?q=%E8%A5%BF%E7%8F%AD%E7%89%99%E9%98%BF%E6%A0%B9%E5%BB%B7%E5%86%B2%E7%AA%81",
+      "hot": ""
+    },
+    {
+      "rank": 8,
+      "title": "天文台辟谣新疆阿勒泰惊现UFO",
+      "url": "https://s.weibo.com/weibo?q=%E5%A4%A9%E6%96%87%E5%8F%B0%E8%BE%9F%E8%B0%A3%E6%96%B0%E7%96%86%E9%98%BF%E5%8B%92%E6%B3%B0%E6%83%8A%E7%8E%B0UFO",
+      "hot": ""
+    },
+    {
+      "rank": 9,
       "title": "劳塔罗不上了",
       "url": "https://s.weibo.com/weibo?q=%E5%8A%B3%E5%A1%94%E7%BD%97%E4%B8%8D%E4%B8%8A%E4%BA%86",
       "hot": ""
     },
     {
-      "rank": 8,
-      "title": "世界杯中场秀",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%96%E7%95%8C%E6%9D%AF%E4%B8%AD%E5%9C%BA%E7%A7%80",
-      "hot": ""
-    },
-    {
-      "rank": 9,
-      "title": "阿根廷被西班牙压着打",
-      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A0%B9%E5%BB%B7%E8%A2%AB%E8%A5%BF%E7%8F%AD%E7%89%99%E5%8E%8B%E7%9D%80%E6%89%93",
-      "hot": ""
-    },
-    {
       "rank": 10,
-      "title": "西班牙玄学 对手伤退",
-      "url": "https://s.weibo.com/weibo?q=%E8%A5%BF%E7%8F%AD%E7%89%99%E7%8E%84%E5%AD%A6%20%E5%AF%B9%E6%89%8B%E4%BC%A4%E9%80%80",
+      "title": "世界杯中场秀 不转播",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%96%E7%95%8C%E6%9D%AF%E4%B8%AD%E5%9C%BA%E7%A7%80%20%E4%B8%8D%E8%BD%AC%E6%92%AD",
       "hot": ""
     }
   ]
