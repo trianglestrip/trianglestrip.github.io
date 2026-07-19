@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-19T05:48:38+00:00",
+  "updated_at": "2026-07-19T07:51:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Transcribe.cpp",
       "url": "https://workshop.cjpais.com/projects/transcribe-cpp",
-      "hot": "305"
+      "hot": "417"
     },
     {
       "rank": 2,
-      "title": "Speech Recognition and TTS in less than 500kb",
-      "url": "https://github.com/moonshine-ai/moonshine/tree/main/micro",
-      "hot": "375"
+      "title": "Searchable field-level encryption on Supabase with CipherStash",
+      "url": "https://supabase.com/blog/searchable-field-level-encryption-with-cipherstash",
+      "hot": "29"
     },
     {
       "rank": 3,
-      "title": "FDA approves new kind of cholesterol pill",
-      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
-      "hot": "47"
+      "title": "Speech Recognition and TTS in less than 500kb",
+      "url": "https://github.com/moonshine-ai/moonshine/tree/main/micro",
+      "hot": "415"
     },
     {
       "rank": 4,
       "title": "Better and Cheaper Than IPTV",
       "url": "https://github.com/stupside/castor",
-      "hot": "103"
+      "hot": "157"
     },
     {
       "rank": 5,
-      "title": "Mathematicians still don't know the fastest way to multiply numbers",
-      "url": "https://www.scientificamerican.com/article/mathematicians-still-dont-know-the-fastest-way-to-multiply-numbers/",
-      "hot": "52"
+      "title": "Codex Resets",
+      "url": "https://codex-resets.com/",
+      "hot": "150"
     },
     {
       "rank": 6,
-      "title": "LLM-Integrated Multivariable Calculus Course",
-      "url": "https://calculus.academa.ai/",
-      "hot": "28"
+      "title": "Mathematicians still don't know the fastest way to multiply numbers",
+      "url": "https://www.scientificamerican.com/article/mathematicians-still-dont-know-the-fastest-way-to-multiply-numbers/",
+      "hot": "76"
     },
     {
       "rank": 7,
-      "title": "Classic Amiga titles, free to download",
-      "url": "https://amigafreeware.downer.tech/",
-      "hot": "86"
+      "title": "Scrying the AMD GFX1250 LLVM Tea Leaves",
+      "url": "https://chipsandcheese.com/p/scrying-the-amd-gfx1250-llvm-tea",
+      "hot": "15"
     },
     {
       "rank": 8,
-      "title": "If You Build It, They Will Come",
-      "url": "https://www.benlandautaylor.com/p/if-you-build-it-they-will-come",
-      "hot": "340"
+      "title": "The Kimi K3 Moment",
+      "url": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/",
+      "hot": "346"
     },
     {
       "rank": 9,
       "title": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
       "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
-      "hot": "537"
+      "hot": "552"
     },
     {
       "rank": 10,
-      "title": "A Visual Catalog of Retro Macintosh Software",
-      "url": "https://www.marciot.com/mac68k-visual-catalog/",
-      "hot": "21"
+      "title": "Hardcore IndieWeb: Run your own website 100% independently for only $0.01/day",
+      "url": "https://www.neatnik.net/hardcore-indieweb",
+      "hot": "146"
     }
   ]
 }

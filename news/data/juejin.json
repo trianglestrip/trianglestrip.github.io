@@ -1,67 +1,67 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-19T05:48:27+00:00",
+  "updated_at": "2026-07-19T07:51:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "停更的这一年，All In AI、陪媳妇生娃、还考了个研",
-      "url": "https://juejin.cn/post/7662691781214470180",
-      "hot": "3033"
+      "title": "曾经人手一个的Superpowers，为什么现在都在卸",
+      "url": "https://juejin.cn/post/7662691781214437412",
+      "hot": "1584"
     },
     {
       "rank": 2,
-      "title": "曾经人手一个的Superpowers，为什么现在都在卸",
-      "url": "https://juejin.cn/post/7662691781214437412",
-      "hot": "1539"
+      "title": "前端圈7月大地震：TS 7发布、Bun 11天从Zig迁Rust、Kimi K3登顶、大厂裁员50%",
+      "url": "https://juejin.cn/post/7663095491467411462",
+      "hot": "900"
     },
     {
       "rank": 3,
-      "title": "前端圈7月大地震：TS 7发布、Bun 11天从Zig迁Rust、Kimi K3登顶、大厂裁员50%",
-      "url": "https://juejin.cn/post/7663095491467411462",
-      "hot": "873"
-    },
-    {
-      "rank": 4,
       "title": "Harness 企业级落地(二) - 让 AI 读懂项目",
       "url": "https://juejin.cn/post/7662586328122982415",
       "hot": "756"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "前端大裁员背后的恐慌：我们还剩什么底牌？",
       "url": "https://juejin.cn/post/7662940929595768842",
+      "hot": "567"
+    },
+    {
+      "rank": 5,
+      "title": "用 Kimi K3 交付一个真实项目后：很强，但还有不足",
+      "url": "https://juejin.cn/post/7663313773420462118",
       "hot": "549"
     },
     {
       "rank": 6,
-      "title": "用 Kimi K3 交付一个真实项目后：很强，但还有不足",
-      "url": "https://juejin.cn/post/7663313773420462118",
+      "title": "Fluter 共享内存多线程正在落地，IsolateGroupBound 来了",
+      "url": "https://juejin.cn/post/7662326941523345450",
       "hot": "540"
     },
     {
       "rank": 7,
-      "title": "Fluter 共享内存多线程正在落地，IsolateGroupBound 来了",
-      "url": "https://juejin.cn/post/7662326941523345450",
+      "title": "AI Agent技术栈选择：Vue3 + NestJS + TypeScript 为什么是绝佳组合",
+      "url": "https://juejin.cn/post/7662273240988549135",
       "hot": "531"
     },
     {
       "rank": 8,
-      "title": "AI Agent技术栈选择：Vue3 + NestJS + TypeScript 为什么是绝佳组合",
-      "url": "https://juejin.cn/post/7662273240988549135",
-      "hot": "513"
+      "title": "雪花算法ID重复了？惨痛教训：请勿轻易造轮子！",
+      "url": "https://juejin.cn/post/7662887553263992884",
+      "hot": "369"
     },
     {
       "rank": 9,
-      "title": "雪花算法ID重复了？惨痛教训：请勿轻易造轮子！",
-      "url": "https://juejin.cn/post/7662887553263992884",
-      "hot": "360"
+      "title": "Skywalking已全面拥抱AI！",
+      "url": "https://juejin.cn/post/7662753651803684918",
+      "hot": "306"
     },
     {
       "rank": 10,
-      "title": "Skywalking已全面拥抱AI！",
-      "url": "https://juejin.cn/post/7662753651803684918",
+      "title": "Android CLI 完全指南",
+      "url": "https://juejin.cn/post/7662627075259924506",
       "hot": "297"
     }
   ]
