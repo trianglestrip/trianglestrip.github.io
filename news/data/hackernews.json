@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-19T10:55:52+00:00",
+  "updated_at": "2026-07-19T14:09:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude Code uses Bun written in Rust now",
-      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
-      "hot": "45"
+      "title": "Qwen 3.8 Max Preview",
+      "url": "https://www.qwencloud.com/pricing/token-plan",
+      "hot": "200"
     },
     {
       "rank": 2,
-      "title": "Qwen3.8 is launching and going open-weight soon",
-      "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
-      "hot": "195"
+      "title": "Minecraft: Java Edition now uses SDL3",
+      "url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4",
+      "hot": "49"
     },
     {
       "rank": 3,
-      "title": "Transcribe.cpp",
-      "url": "https://workshop.cjpais.com/projects/transcribe-cpp",
-      "hot": "549"
+      "title": "I burned all my tokens researching how to save tokens",
+      "url": "https://quesma.com/blog/custom-deep-research-pipeline/",
+      "hot": "45"
     },
     {
       "rank": 4,
-      "title": "Qwen 3.8 Max Preview",
-      "url": "https://www.qwencloud.com/pricing/token-plan",
-      "hot": "18"
+      "title": "Blender 5.2 LTS",
+      "url": "https://www.blender.org/download/releases/5-2/",
+      "hot": "129"
     },
     {
       "rank": 5,
-      "title": "Blender 5.2 LTS",
-      "url": "https://www.blender.org/download/releases/5-2-lts/",
-      "hot": "18"
+      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+      "hot": "136"
     },
     {
       "rank": 6,
-      "title": "Speech Recognition and TTS in less than 500kb",
-      "url": "https://github.com/moonshine-ai/moonshine/tree/main/micro",
-      "hot": "466"
+      "title": "Transcribe.cpp",
+      "url": "https://workshop.cjpais.com/projects/transcribe-cpp",
+      "hot": "604"
     },
     {
       "rank": 7,
-      "title": "Half a Second – a book about the XZ backdoor",
-      "url": "https://www.half-second.com/",
-      "hot": "9"
+      "title": "The death and rebirth of my home server",
+      "url": "https://sgt.hootr.club/blog/home-server-rebirth/",
+      "hot": "42"
     },
     {
       "rank": 8,
-      "title": "Better and Cheaper Than IPTV",
-      "url": "https://github.com/stupside/castor",
-      "hot": "215"
+      "title": "OpenAI reduces Codex Model Context Size from 372k to 272k",
+      "url": "https://github.com/openai/codex/pull/33972/files",
+      "hot": "89"
     },
     {
       "rank": 9,
-      "title": "Codex Resets",
-      "url": "https://codex-resets.com/",
-      "hot": "196"
+      "title": "Qwen3.8 is launching and going open-weight soon",
+      "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
+      "hot": "313"
     },
     {
       "rank": 10,
-      "title": "The Kimi K3 Moment",
-      "url": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/",
-      "hot": "433"
+      "title": "DRIVE – Operational Excellence for AI-accelerated engineering",
+      "url": "https://www.cortex.io/drive",
+      "hot": "4"
     }
   ]
 }
