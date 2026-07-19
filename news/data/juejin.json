@@ -1,32 +1,32 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-19T17:12:39+00:00",
+  "updated_at": "2026-07-19T19:23:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "前端圈7月大地震：TS 7发布、Bun 11天从Zig迁Rust、Kimi K3登顶、大厂裁员50%",
       "url": "https://juejin.cn/post/7663095491467411462",
-      "hot": "1044"
+      "hot": "1053"
     },
     {
       "rank": 2,
       "title": "Harness 企业级落地(二) - 让 AI 读懂项目",
       "url": "https://juejin.cn/post/7662586328122982415",
-      "hot": "828"
+      "hot": "846"
     },
     {
       "rank": 3,
       "title": "用 Kimi K3 交付一个真实项目后：很强，但还有不足",
       "url": "https://juejin.cn/post/7663313773420462118",
-      "hot": "612"
+      "hot": "621"
     },
     {
       "rank": 4,
       "title": "Android CLI 完全指南",
       "url": "https://juejin.cn/post/7662627075259924506",
-      "hot": "333"
+      "hot": "342"
     },
     {
       "rank": 5,
@@ -38,7 +38,7 @@
       "rank": 6,
       "title": "曾经狂推的 Superpowers，今天我终于把它卸载了! 臃肿，Token吞金兽！",
       "url": "https://juejin.cn/post/7662933531113324586",
-      "hot": "234"
+      "hot": "243"
     },
     {
       "rank": 7,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
+      "title": "全网都在吹的 Kimi K3，到底怎么样？",
+      "url": "https://juejin.cn/post/7663685196478611506",
+      "hot": "171"
+    },
+    {
+      "rank": 9,
       "title": "学完 Spring Boot 再看 FastAPI，我破防了",
       "url": "https://juejin.cn/post/7663295933393682467",
       "hot": "171"
     },
     {
-      "rank": 9,
-      "title": "全网都在吹的 Kimi K3，到底怎么样？",
-      "url": "https://juejin.cn/post/7663685196478611506",
-      "hot": "162"
-    },
-    {
       "rank": 10,
       "title": "Agent 一次返回多个 Tool Call，应该并行还是顺序执行？",
       "url": "https://juejin.cn/post/7663161716598898734",
-      "hot": "162"
+      "hot": "171"
     }
   ]
 }
