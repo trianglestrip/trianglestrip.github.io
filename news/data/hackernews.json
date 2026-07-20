@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-20T18:15:24+00:00",
+  "updated_at": "2026-07-20T21:03:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "China's open-weights AI strategy is winning",
       "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
-      "hot": "372"
+      "hot": "706"
     },
     {
       "rank": 2,
-      "title": "Czechia moves to ban mobile phones in schools from September 2027",
-      "url": "https://www.expats.cz/czech-news/article/czech-news-in-brief-for-july-20-2026-monday-top-afternoon-headlines",
-      "hot": "90"
+      "title": "Kimi Work",
+      "url": "https://www.kimi.com/products/kimi-work",
+      "hot": "201"
     },
     {
       "rank": 3,
-      "title": "Hyprland 0.55 announced the switch to Lua for its config files",
-      "url": "https://hypr.land/news/update55/",
-      "hot": "33"
+      "title": "Jelly UI: Soft-body physics for native HTML form controls",
+      "url": "https://jelly-ui.com/",
+      "hot": "189"
     },
     {
       "rank": 4,
       "title": "Hacker wipes Romania's land registry database",
       "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
-      "hot": "394"
+      "hot": "496"
     },
     {
       "rank": 5,
-      "title": "Over 30% of new ArXiv submissions now read as AI-written",
-      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
-      "hot": "90"
+      "title": "Nativ: Run frontier open models locally on your Mac",
+      "url": "https://blaizzy.github.io/nativ/",
+      "hot": "82"
     },
     {
       "rank": 6,
-      "title": "Corners Don't Look Like That: Regarding Screenspace Ambient Occlusion (2012)",
-      "url": "https://nothings.org/gamedev/ssao/",
-      "hot": "106"
+      "title": "Human mathematicians are being outcounterexampled",
+      "url": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
+      "hot": "49"
     },
     {
       "rank": 7,
-      "title": "Jelly UI: Soft-body physics for native HTML form controls",
-      "url": "https://jelly-ui.com/",
-      "hot": "44"
+      "title": "How we measured AI writing across arXiv, and where the measurement breaks",
+      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+      "hot": "170"
     },
     {
       "rank": 8,
-      "title": "Kimi Work",
-      "url": "https://www.kimi.com/products/kimi-work",
-      "hot": "35"
+      "title": "Corners Don't Look Like That: Regarding Screenspace Ambient Occlusion (2012)",
+      "url": "https://nothings.org/gamedev/ssao/",
+      "hot": "129"
     },
     {
       "rank": 9,
       "title": "Airport Simulator",
       "url": "https://airport.apunen.com/",
-      "hot": "459"
+      "hot": "576"
     },
     {
       "rank": 10,
-      "title": "Launch HN: Bloomy (YC S26) – AI-powered mastery learning for K-12",
-      "url": "https://news.ycombinator.com/item?id=48981136",
-      "hot": "19"
+      "title": "Agent swarms and the new model economics",
+      "url": "https://cursor.com/blog/agent-swarm-model-economics",
+      "hot": "49"
     }
   ]
 }
