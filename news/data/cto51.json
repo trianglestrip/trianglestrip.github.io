@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-19T22:05:38+00:00",
+  "updated_at": "2026-07-20T03:56:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "35 岁运维还能不能转 AIOps？关键不是年龄，是能力结构！",
-      "url": "https://www.51cto.com/article/850012.html",
-      "hot": "本文站在一线运维 / SRE的角度，聊聊 35 岁运维转 AIOps 到底有没有机会。"
+      "title": "面试官问：什么是 Harness 工程？可以这样回答",
+      "url": "https://www.51cto.com/article/850121.html",
+      "hot": "Harness 工程不是要替代工程师，其实只是要求工程师把过去很多的隐性经验，通过不同的方式暴露给AI，这样人也有更多的精力去做更有价值的事，目前看Harness 工程是Agent 时代的软件工程基本功。"
     },
     {
       "rank": 2,
-      "title": "工作 3 年+ 运维人必看：AIOps 时代，必备的 5 项核心进阶技能",
-      "url": "https://www.51cto.com/article/850011.html",
-      "hot": "运维人转型 AIOps，完成从体力运维到技术运维、价值运维的进阶，才能打破职业瓶颈，建立不可替代的职场核心竞争力。"
+      "title": "在数学上把稀疏注意力做对！腾讯Hy开源HiLS-Attention: 计算更少效果更好, 外推512倍",
+      "url": "https://www.51cto.com/article/850116.html",
+      "hot": "腾讯混元团队正式开源 HiLS-Attention（分层地标稀疏注意力），提出了一种全新的分块稀疏注意力范式，首次在数学层面上同时解决了 chunk 重要性估计的 \"表达力不足\" 和选择过程的 \"端到端不可导\" 两大根本难题，真正将稀疏注意力做到了 \"Done Right\"。"
     },
     {
       "rank": 3,
-      "title": "生态覆盖持续扩散，一文看懂各行业企业鸿蒙化转型进度",
-      "url": "https://www.51cto.com/article/849991.html",
-      "hot": "当越来越多核心业务真正运行在鸿蒙之上，质量也将从应用发布前的一道测试流程，逐渐成为企业鸿蒙化转型的基础能力。"
+      "title": "字节面试官：别再直接让 AI 写代码了，去学习一下 SDD 规格驱动开发",
+      "url": "https://www.51cto.com/article/850112.html",
+      "hot": "SDD，中文叫规格驱动开发，是在正式编码之前，先把需求变更的目标、范围、系统行为、设计约束和任务拆分通过文档（规格文档）确定下来，再让AI按照这些文档去开发，能够把模糊需求变成稳定的工程上下文，从而减少AI自己猜需求、误改历史逻辑和实现跑偏的问题。"
     },
     {
       "rank": 4,
-      "title": "突发叫停！Gemini 3.5 Pro难产，谷歌跌入失望陷阱",
-      "url": "https://www.51cto.com/article/849986.html",
-      "hot": "彭博社的一则独家报道如同一盆冰水，浇灭了所有人的热情：Gemini 3.5 Pro发布延期了，而且不是延期几天，是数月的大延期！"
+      "title": "浅谈具身智能 VLA技术发展趋势",
+      "url": "https://www.51cto.com/article/850105.html",
+      "hot": "具身智能的本质是人类的“能力扩音器式赋能工具”，在医疗领域是医生的“超级助手”辅助识别病灶，在创意领域是艺术家的“灵感伙伴”，放大人类能力却不替代核心决策。"
     },
     {
       "rank": 5,
-      "title": "烧掉16万美金，狂飙100万行代码！Bun之父用Claude重写底层",
-      "url": "https://www.51cto.com/article/849985.html",
-      "hot": "最近，Anthropic首次公开了CC大规模代码迁移「全流程」，六步框架让全网震撼。"
+      "title": "接到需求和 Bug，别让 Claude 直接开写：DAE + ATDD 实战流程",
+      "url": "https://www.51cto.com/article/850100.html",
+      "hot": "开源套件 Disciplined Agentic Engineering（DAE，前身 swingerman/atdd）盯的不是「写得更快」，而是：智能体负责打字时，谁定义「做完了」，以及如何防止定义被实现细节污染、被长会话冲掉。 核心就三句——后面所有真实命令都围着它们转。"
     },
     {
       "rank": 6,
-      "title": "飞抵 8861 米珠峰还剩30%电量！大疆无人机攻克世界屋脊极限科考",
-      "url": "https://www.51cto.com/article/849984.html",
-      "hot": "本次完成极限科考任务的 DJI EV50，搭载了全球无人机出货量第一的新能安电池。"
+      "title": "惊天巨骗！一夜刷爆全球榜单的「神秘实验室」，竟然是假的",
+      "url": "https://www.51cto.com/article/850099.html",
+      "hot": "一个名为「Basalt Labs」的神秘中国AI实验室，忽然空降。没有任何预热、没有任何预告，他们在X上扔出了一枚重磅消息——发布Monolith-1.0模型，登顶世界第一！"
     },
     {
       "rank": 7,
-      "title": "零成本AI编程方案：Claude Code + CC Switch接入OpenCode免费模型",
-      "url": "https://www.51cto.com/article/849963.html",
-      "hot": "最近折腾了一套组合拳：Claude Code + CC Switch + OpenCode 的免费模型 Big Pickle，效果还挺香。"
+      "title": "AI 编程的 Harness 工程化落地全案",
+      "url": "https://www.51cto.com/article/850097.html",
+      "hot": "当团队里每个人都能用 AI 秒级生成代码，拉开差距的不再是\"谁写得快\"，而是\"谁写得稳、写得可维护\"。而 Harness 做的事情，就是把\"好代码\"的标准写进系统，让 AI 在约束下自己干活。"
     },
     {
       "rank": 8,
-      "title": "写代码从来都不是软件工程的瓶颈！普林斯顿教授：AI越会写，程序员越要会判断，否则AI把代码写完了，程序员还在加班",
-      "url": "https://www.51cto.com/article/849962.html",
-      "hot": "当Agent又刷新一个编码榜单时，不妨少问一句“它还要多久替代我”，不妨多想一下：如果代码已经不再稀缺，我还能不能把问题选对，把系统交付好，并为最后的结果负责？"
+      "title": "六种 Workflow 组织形状，以及如何组合",
+      "url": "https://www.51cto.com/article/850095.html",
+      "hot": "前两篇分别写过：单上下文为什么会在规模任务上失败；动态 workflow 又把控制流、状态、覆盖搬进了代码。这篇落到更实用的一层——任务形状不同，组织方式也不同。"
     },
     {
       "rank": 9,
-      "title": "AI正在终结“眼见为实”：文件信任体系迎来重构时刻",
-      "url": "https://www.51cto.com/article/849946.html",
-      "hot": "试想这样一幅画面：某人在AI助手的对话框里输入几行字——\"请生成一份美国加州驾照，姓名：John Doe，地址：123 Main Street，有效期至2028年。\"不到五分钟，一份从纸张纹理、防伪标记到字体排版，都与真件毫无二致的\"完美证件\"，便出现在屏幕上。"
+      "title": "企业 AI 编程落地实践与 Harness 基建架构设计",
+      "url": "https://www.51cto.com/article/850089.html",
+      "hot": "AI 写代码的速度至少是人的 10 倍。90% 的代码由 AI 产出之后，理论上效率提升应该是数倍甚至一个数量级。10 倍和 1.6 倍之间消失的那部分，才是 AI Coding 落地的真实成本区。"
     },
     {
       "rank": 10,
-      "title": "十万个why：明明 Spring Cloud Gateway 自带限流，为什么还要在 Nginx 层再做一道限流？",
-      "url": "https://www.51cto.com/article/849945.html",
-      "hot": "用 Spring Cloud Gateway 的团队基本都知道它自带限流功能，配合 Redis 就能实现令牌桶限流。但你去看任何一家稍有规模的公司的架构图，流量进来之后第一道限流几乎都在 Nginx 层，Gateway 的限流反而是第二道甚至第三道。"
+      "title": "这届世界杯，大模型的“懂球”程度让我意外",
+      "url": "https://www.51cto.com/article/850088.html",
+      "hot": "大模型啃了海量数据，好歹该懂基础赛制吧？实在好奇，我找来千问、豆包、文心、元宝、DeepSeek和Kimi六款大模型，分别进行了三轮测试，看看到底是怎么个情况。"
     }
   ]
 }

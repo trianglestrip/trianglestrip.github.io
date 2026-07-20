@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-19T22:05:39+00:00",
+  "updated_at": "2026-07-20T03:56:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
       "url": "https://news.ycombinator.com/item?id=48968606",
-      "hot": "950"
+      "hot": "1740"
     },
     {
       "rank": 2,
-      "title": "Qwen 3.8",
-      "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
-      "hot": "709"
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+      "hot": "419"
     },
     {
       "rank": 3,
       "title": "The Zen of Parallel Programming",
       "url": "https://smolnero.com/posts/the-zen-of-parallel-programming",
-      "hot": "56"
+      "hot": "129"
     },
     {
       "rank": 4,
-      "title": "HomeLab #1: MikroTik as a Home Router",
-      "url": "https://justsomebody.dev/blog/mikrotik-home-router",
-      "hot": "44"
+      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+      "hot": "430"
     },
     {
       "rank": 5,
       "title": "Minecraft: Java Edition now uses SDL3",
       "url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4",
-      "hot": "237"
+      "hot": "286"
     },
     {
       "rank": 6,
-      "title": "Claude Code uses Bun written in Rust now",
-      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
-      "hot": "349"
+      "title": "A new Intel Itanium (IA-64) emulator that boots Windows",
+      "url": "https://raymii.org/s/blog/Intel_Itanium_IA-64-Emulator_that_boots_Windows.html",
+      "hot": "61"
     },
     {
       "rank": 7,
-      "title": "Blender 5.2 LTS",
-      "url": "https://www.blender.org/download/releases/5-2/",
-      "hot": "321"
+      "title": "Biggest Probabilistic Computer Turns Noise into Answers",
+      "url": "https://spectrum.ieee.org/biggest-probabilistic-computer",
+      "hot": "46"
     },
     {
       "rank": 8,
-      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
-      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
-      "hot": "371"
+      "title": "Orion Browser by Kagi",
+      "url": "https://orionbrowser.com/",
+      "hot": "86"
     },
     {
       "rank": 9,
-      "title": "Bananas sprout in Rayleigh Garden UK after 15 years",
-      "url": "https://www.bbc.com/news/articles/cvg8edqq5g5o",
-      "hot": "102"
+      "title": "Who Is America's Homer?",
+      "url": "https://www.plough.com/articles/who-is-americas-homer",
+      "hot": "47"
     },
     {
       "rank": 10,
-      "title": "OpenAI reduces Codex Model Context Size from 372k to 272k",
-      "url": "https://github.com/openai/codex/pull/33972/files",
-      "hot": "274"
+      "title": "Moonshine: Lets you stream games from your PC to any device running Moonlight",
+      "url": "https://github.com/hgaiser/moonshine",
+      "hot": "18"
     }
   ]
 }
