@@ -1,20 +1,20 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-07-20T21:03:40+00:00",
+  "updated_at": "2026-07-20T23:12:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "全网都在吹的 Kimi K3，到底怎么样？",
       "url": "https://juejin.cn/post/7663685196478611506",
-      "hot": "801"
+      "hot": "810"
     },
     {
       "rank": 2,
       "title": "为什么很多人觉得前端很简单？",
       "url": "https://juejin.cn/post/7664156897922351110",
-      "hot": "747"
+      "hot": "765"
     },
     {
       "rank": 3,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "阿里要求全员卸载 Claude Code：事件始末与深层逻辑",
       "url": "https://juejin.cn/post/7663822459978137646",
-      "hot": "414"
+      "hot": "432"
     },
     {
       "rank": 6,
@@ -50,7 +50,7 @@
       "rank": 8,
       "title": "万字长文谈谈Loop Engineering",
       "url": "https://juejin.cn/post/7663708874660364324",
-      "hot": "207"
+      "hot": "216"
     },
     {
       "rank": 9,
@@ -60,8 +60,8 @@
     },
     {
       "rank": 10,
-      "title": "不用 LangChain，手搓 AI Agent：给大模型装上“手”，让它自己读项目文件",
-      "url": "https://juejin.cn/post/7663854184966389806",
+      "title": "从文本到具身：我给 AI Agent 搭了套实时 3D 交互身体",
+      "url": "https://juejin.cn/post/7664150646267576374",
       "hot": "180"
     }
   ]

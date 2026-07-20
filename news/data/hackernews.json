@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-20T21:03:49+00:00",
+  "updated_at": "2026-07-20T23:12:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "China's open-weights AI strategy is winning",
+      "title": "China’s open-weights AI strategy is winning",
       "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
-      "hot": "706"
+      "hot": "876"
     },
     {
       "rank": 2,
       "title": "Kimi Work",
       "url": "https://www.kimi.com/products/kimi-work",
-      "hot": "201"
+      "hot": "317"
     },
     {
       "rank": 3,
-      "title": "Jelly UI: Soft-body physics for native HTML form controls",
-      "url": "https://jelly-ui.com/",
-      "hot": "189"
+      "title": "Who's Afraid of Chinese Models?",
+      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+      "hot": "75"
     },
     {
       "rank": 4,
-      "title": "Hacker wipes Romania's land registry database",
-      "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
-      "hot": "496"
+      "title": "Jelly UI: Soft-body physics for native HTML form controls",
+      "url": "https://jelly-ui.com/",
+      "hot": "279"
     },
     {
       "rank": 5,
-      "title": "Nativ: Run frontier open models locally on your Mac",
-      "url": "https://blaizzy.github.io/nativ/",
-      "hot": "82"
+      "title": "Human mathematicians are being outcounterexampled",
+      "url": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
+      "hot": "136"
     },
     {
       "rank": 6,
-      "title": "Human mathematicians are being outcounterexampled",
-      "url": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
-      "hot": "49"
+      "title": "Hacker wipes Romania's land registry database",
+      "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
+      "hot": "540"
     },
     {
       "rank": 7,
-      "title": "How we measured AI writing across arXiv, and where the measurement breaks",
-      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
-      "hot": "170"
+      "title": "Nativ: Run frontier open models locally on your Mac",
+      "url": "https://blaizzy.github.io/nativ/",
+      "hot": "135"
     },
     {
       "rank": 8,
-      "title": "Corners Don't Look Like That: Regarding Screenspace Ambient Occlusion (2012)",
-      "url": "https://nothings.org/gamedev/ssao/",
-      "hot": "129"
+      "title": "Airport Simulator",
+      "url": "https://airport.apunen.com/",
+      "hot": "647"
     },
     {
       "rank": 9,
-      "title": "Airport Simulator",
-      "url": "https://airport.apunen.com/",
-      "hot": "576"
+      "title": "Show HN: Immersive Gaussian Splat tour of grace cathedral, San Francisco",
+      "url": "https://vincentwoo.com/3d/grace_cathedral/",
+      "hot": "30"
     },
     {
       "rank": 10,
       "title": "Agent swarms and the new model economics",
       "url": "https://cursor.com/blog/agent-swarm-model-economics",
-      "hot": "49"
+      "hot": "85"
     }
   ]
 }

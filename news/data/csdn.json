@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-20T21:03:42+00:00",
+  "updated_at": "2026-07-20T23:12:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【Linux】库制作与原理：从源码到静态库，搞懂 ar、-I/-L/-l 与打包交付",
       "url": "https://blog.csdn.net/2402_87731470/article/details/163000934",
-      "hot": "22562"
+      "hot": "18407"
     },
     {
       "rank": 2,
       "title": "AI跨模态鉴伪技术实测",
       "url": "https://blog.csdn.net/wtyuong/article/details/163054806",
-      "hot": "12245"
+      "hot": "13168"
     },
     {
       "rank": 3,
-      "title": "Claude Code 接蓝耘实测：选第三方 API 的三条铁律",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163052500",
-      "hot": "11291"
+      "title": "MySQL/PostgreSQL 迁移金仓 KES：LEFT JOIN 丢数据排查与避坑指南",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/163026470",
+      "hot": "10979"
     },
     {
       "rank": 4,
-      "title": "MySQL/PostgreSQL 迁移金仓 KES：LEFT JOIN 丢数据排查与避坑指南",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/163026470",
-      "hot": "11135"
+      "title": "Claude Code 接蓝耘实测：选第三方 API 的三条铁律",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163052500",
+      "hot": "10835"
     },
     {
       "rank": 5,
       "title": "AI越来越会“造假“，跨模态鉴伪为什么正在成为AI时代的新基建？",
       "url": "https://blog.csdn.net/m0_73367097/article/details/163021269",
-      "hot": "11104"
+      "hot": "10798"
     },
     {
       "rank": 6,
-      "title": "PyTorch强化学习实战（19）——策略梯度法",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159690711",
-      "hot": "9997"
+      "title": "Re：Linux系统篇（四十五）信号篇·三：一文讲透 Linux 信号保存机制:block,pending,handler三张表到底在做什么",
+      "url": "https://blog.csdn.net/Z2314246476/article/details/162894593",
+      "hot": "9842"
     },
     {
       "rank": 7,
-      "title": "Re：Linux系统篇（四十五）信号篇·三：一文讲透 Linux 信号保存机制:block,pending,handler三张表到底在做什么",
-      "url": "https://blog.csdn.net/Z2314246476/article/details/162894593",
-      "hot": "9991"
+      "title": "PyTorch强化学习实战（19）——策略梯度法",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159690711",
+      "hot": "9727"
     },
     {
       "rank": 8,
-      "title": "人眼看不出的伪造，AI如何识别？实测合合信息跨模态鉴伪与去反光技术",
-      "url": "https://blog.csdn.net/weixin_51390582/article/details/163034837",
-      "hot": "9186"
+      "title": "GitHub 热榜项目 - 周榜(2026-07-18)",
+      "url": "https://blog.csdn.net/u014390502/article/details/162998093",
+      "hot": "8692"
     },
     {
       "rank": 9,
-      "title": "GitHub 热榜项目 - 周榜(2026-07-18)",
-      "url": "https://blog.csdn.net/u014390502/article/details/162998093",
-      "hot": "8813"
+      "title": "人眼看不出的伪造，AI如何识别？实测合合信息跨模态鉴伪与去反光技术",
+      "url": "https://blog.csdn.net/weixin_51390582/article/details/163034837",
+      "hot": "8375"
     },
     {
       "rank": 10,
       "title": "2026最新5大远程软件硬核横测：ToDesk_向日葵_TeamViewer_UU_AnyDesk，谁配叫画质天花板？",
       "url": "https://blog.csdn.net/2302_78391795/article/details/163033743",
-      "hot": "8476"
+      "hot": "8309"
     }
   ]
 }
