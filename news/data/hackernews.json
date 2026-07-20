@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-20T03:56:32+00:00",
+  "updated_at": "2026-07-20T06:38:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
       "url": "https://news.ycombinator.com/item?id=48968606",
-      "hot": "1740"
+      "hot": "2030"
     },
     {
       "rank": 2,
-      "title": "Claude Code uses Bun written in Rust now",
-      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
-      "hot": "419"
+      "title": "LoRA Speedrun – a public wall-clock leaderboard for fine-tuning techniques",
+      "url": "https://github.com/Saivineeth147/lora-speedrun",
+      "hot": "20"
     },
     {
       "rank": 3,
-      "title": "The Zen of Parallel Programming",
-      "url": "https://smolnero.com/posts/the-zen-of-parallel-programming",
-      "hot": "129"
+      "title": "Moonshine: Lets you stream games from your PC to any device running Moonlight",
+      "url": "https://github.com/hgaiser/moonshine",
+      "hot": "99"
     },
     {
       "rank": 4,
-      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
-      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
-      "hot": "430"
+      "title": "Xiaomi-Robotics-1",
+      "url": "https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+      "hot": "18"
     },
     {
       "rank": 5,
-      "title": "Minecraft: Java Edition now uses SDL3",
-      "url": "https://www.minecraft.net/en-us/article/minecraft-26-3-snapshot-4",
-      "hot": "286"
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+      "hot": "470"
     },
     {
       "rank": 6,
-      "title": "A new Intel Itanium (IA-64) emulator that boots Windows",
-      "url": "https://raymii.org/s/blog/Intel_Itanium_IA-64-Emulator_that_boots_Windows.html",
-      "hot": "61"
+      "title": "Korg PS-3300 is back",
+      "url": "https://www.korg.co.uk/blogs/updates/ps3300",
+      "hot": "26"
     },
     {
       "rank": 7,
-      "title": "Biggest Probabilistic Computer Turns Noise into Answers",
-      "url": "https://spectrum.ieee.org/biggest-probabilistic-computer",
-      "hot": "46"
+      "title": "Orion Browser by Kagi",
+      "url": "https://orionbrowser.com/",
+      "hot": "151"
     },
     {
       "rank": 8,
-      "title": "Orion Browser by Kagi",
-      "url": "https://orionbrowser.com/",
-      "hot": "86"
+      "title": "Power companies are using eminent domain to seize land for data centers",
+      "url": "https://fortune.com/2026/07/19/data-center-eminent-domain-public-use/",
+      "hot": "65"
     },
     {
       "rank": 9,
-      "title": "Who Is America's Homer?",
-      "url": "https://www.plough.com/articles/who-is-americas-homer",
-      "hot": "47"
+      "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+      "hot": "461"
     },
     {
       "rank": 10,
-      "title": "Moonshine: Lets you stream games from your PC to any device running Moonlight",
-      "url": "https://github.com/hgaiser/moonshine",
-      "hot": "18"
+      "title": "Self-Powered Trailers Promise Leaner Freight Runs",
+      "url": "https://spectrum.ieee.org/self-powered-trailers-freight-decarbonization",
+      "hot": "10"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-20T03:56:36+00:00",
+  "updated_at": "2026-07-20T06:38:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "企业级 Harness Engineering 实践：运营、数据、Coding 与办公智能体工程化落地｜AICon深圳",
+      "url": "https://www.infoq.cn/article/mbMDGFkUMj9oCaj2ICUq?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 20 Jul 2026 14:36:24 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "GMI Cloud联合InfoQ、10+企业重磅发布《中国AI产业核心要素出海发展白皮书》，汇聚 AI 产业共识，盘点出海方法论",
+      "url": "https://www.infoq.cn/article/cm9JyEjFfV4toUJabQ80?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 20 Jul 2026 14:30:40 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "AI 红利分层，“底座夯实”的团队获益最高——《DevData 2026 研发效能基准报告》正式发布！",
+      "url": "https://www.infoq.cn/article/qgQoeipS5mb1feHBpTpp?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 20 Jul 2026 14:27:17 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "九章云极DataCanvas亮相WAIC 2026，以AI规模化生产体系赋能智能新底座",
+      "url": "https://www.infoq.cn/article/tdDBIY9mFVPWbKtOqqFU?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 20 Jul 2026 14:01:03 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "谷歌发布A2UI v0.9：可移植、框架无关的生成式UI",
+      "url": "https://www.infoq.cn/article/StwWE73yux5uZgyaDaIL?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 20 Jul 2026 13:02:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "企业 AI：方法论易得，交付力难求",
       "url": "https://www.infoq.cn/article/PVEe5yav0IC8MygcVeOM?utm_source=rss&utm_medium=article",
       "hot": "Mon, 20 Jul 2026 11:32:56 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Grab构建安全的智能体AI工作负载平台",
       "url": "https://www.infoq.cn/article/yQb5j83sxQhXB1EDJrS1?utm_source=rss&utm_medium=article",
       "hot": "Mon, 20 Jul 2026 11:09:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "Agent 会执行，但谁来帮它记住过去？",
       "url": "https://www.infoq.cn/article/p0QuXLlwDxeg3Td9l67t?utm_source=rss&utm_medium=article",
       "hot": "Mon, 20 Jul 2026 10:51:02 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "为敏感的云系统设计连续授权",
       "url": "https://www.infoq.cn/article/1KqNGCc9UamMzojQYs9h?utm_source=rss&utm_medium=article",
       "hot": "Mon, 20 Jul 2026 09:22:51 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "寻找 AI 原生时代创业者：极客部落 OPC 入驻招募启动！",
       "url": "https://www.infoq.cn/article/yFAybPctMgHsNJUYMEtw?utm_source=rss&utm_medium=article",
       "hot": "Sun, 19 Jul 2026 12:34:19 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "边端AI不只缺算力：安谋科技重做CPU、NPU、VPU与AI操作系统",
-      "url": "https://www.infoq.cn/article/iIoJ2qhXbXCH2ozGqCJ6?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 19 Jul 2026 11:09:02 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "WAIC 2026现场，阡视科技发布超节点系统，专为Token工厂而生",
-      "url": "https://www.infoq.cn/article/TjLEm0VKwkrrkLxOds61?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 19 Jul 2026 10:59:42 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "三款AI推理芯片+超节点异构集群，云天励飞公布未来算力蓝图",
-      "url": "https://www.infoq.cn/article/LCMZqxPWHIFvQbuRIS6f?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 19 Jul 2026 10:52:02 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "从大模型到 AI 执行系统：构建企业级可控 Agent 体系｜AICon深圳",
-      "url": "https://www.infoq.cn/article/eTGhBWBHXum6AuVU45Ab?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 19 Jul 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "腾讯云发布ADP 4.0海外版：集成Google Workspace、Jira，定位AgentOps全生命周期管理",
-      "url": "https://www.infoq.cn/article/r6m3xASYYfM81h9dNBRE?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 19 Jul 2026 08:01:41 GMT"
     }
   ]
 }
