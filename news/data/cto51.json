@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-20T09:44:53+00:00",
+  "updated_at": "2026-07-20T12:04:22+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
+      "title": "HarmonyOS 用 relationalStore 做本地数据库的完整实战 —— 一个真实项目的 5 个决策",
+      "url": "https://ost.51cto.com/posts/53043",
+      "hot": "大家好，我又来啦上周三我在一个已经上架的鸿蒙App里改本地数据库结构，加两个字段。改完跑了一遍，App起不来。日志说nosuchcolumn。其实是..."
+    },
+    {
+      "rank": 3,
       "title": "赋能全球 AI 创新，GMI Cloud 携AI Cloud、MaaS、Agentbox等全栈智算解决方案重磅亮相 WAIC 2026",
       "url": "https://www.51cto.com/article/850136.html",
       "hot": "2026 年世界人工智能大会（WAIC）于 7 月 17 日至 20 日在上海盛大开展，全球领先的 AI Native Cloud 服务商 GMI Cloud 在此次大会上精彩亮相。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "开源 AIOps 平台，终于有人做出来了",
       "url": "https://www.51cto.com/article/850131.html",
       "hot": "今天我把亲手在生产环境里跑通的六个场景摆给你看。看完你就明白：AIOps 不是 PPT 里的概念，是真的能用的。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Rust 工具链再下一城！Rolldown 1.2 发布，前端构建进入新时代",
       "url": "https://www.51cto.com/article/850127.html",
       "hot": "Rolldown 1.2 并没有发布什么特别“炸裂”的新功能。但它释放了一个更重要的信号。Vite 背后的 Rust 工具链，正在快速成熟。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "面试官问：什么是 Harness 工程？可以这样回答",
       "url": "https://www.51cto.com/article/850121.html",
       "hot": "Harness 工程不是要替代工程师，其实只是要求工程师把过去很多的隐性经验，通过不同的方式暴露给AI，这样人也有更多的精力去做更有价值的事，目前看Harness 工程是Agent 时代的软件工程基本功。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "在数学上把稀疏注意力做对！腾讯Hy开源HiLS-Attention: 计算更少效果更好, 外推512倍",
       "url": "https://www.51cto.com/article/850116.html",
       "hot": "腾讯混元团队正式开源 HiLS-Attention（分层地标稀疏注意力），提出了一种全新的分块稀疏注意力范式，首次在数学层面上同时解决了 chunk 重要性估计的 \"表达力不足\" 和选择过程的 \"端到端不可导\" 两大根本难题，真正将稀疏注意力做到了 \"Done Right\"。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "字节面试官：别再直接让 AI 写代码了，去学习一下 SDD 规格驱动开发",
       "url": "https://www.51cto.com/article/850112.html",
       "hot": "SDD，中文叫规格驱动开发，是在正式编码之前，先把需求变更的目标、范围、系统行为、设计约束和任务拆分通过文档（规格文档）确定下来，再让AI按照这些文档去开发，能够把模糊需求变成稳定的工程上下文，从而减少AI自己猜需求、误改历史逻辑和实现跑偏的问题。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "浅谈具身智能 VLA技术发展趋势",
       "url": "https://www.51cto.com/article/850105.html",
       "hot": "具身智能的本质是人类的“能力扩音器式赋能工具”，在医疗领域是医生的“超级助手”辅助识别病灶，在创意领域是艺术家的“灵感伙伴”，放大人类能力却不替代核心决策。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "接到需求和 Bug，别让 Claude 直接开写：DAE + ATDD 实战流程",
       "url": "https://www.51cto.com/article/850100.html",
       "hot": "开源套件 Disciplined Agentic Engineering（DAE，前身 swingerman/atdd）盯的不是「写得更快」，而是：智能体负责打字时，谁定义「做完了」，以及如何防止定义被实现细节污染、被长会话冲掉。 核心就三句——后面所有真实命令都围着它们转。"
-    },
-    {
-      "rank": 10,
-      "title": "惊天巨骗！一夜刷爆全球榜单的「神秘实验室」，竟然是假的",
-      "url": "https://www.51cto.com/article/850099.html",
-      "hot": "一个名为「Basalt Labs」的神秘中国AI实验室，忽然空降。没有任何预热、没有任何预告，他们在X上扔出了一枚重磅消息——发布Monolith-1.0模型，登顶世界第一！"
     }
   ]
 }

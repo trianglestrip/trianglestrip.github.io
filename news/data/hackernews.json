@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-20T09:44:54+00:00",
+  "updated_at": "2026-07-20T12:04:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Exploit brokers pay $500k for WordPress RCEs. I found one with GPT5.6 and $25",
       "url": "https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/",
-      "hot": "49"
+      "hot": "174"
     },
     {
       "rank": 2,
       "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
       "url": "https://news.ycombinator.com/item?id=48968606",
-      "hot": "2314"
+      "hot": "2474"
     },
     {
       "rank": 3,
       "title": "Moonshine: Lets you stream games from your PC to any device running Moonlight",
       "url": "https://github.com/hgaiser/moonshine",
-      "hot": "182"
+      "hot": "223"
     },
     {
       "rank": 4,
-      "title": "LoRA Speedrun – a public wall-clock leaderboard for fine-tuning techniques",
-      "url": "https://github.com/Saivineeth147/lora-speedrun",
-      "hot": "75"
+      "title": "Airbus Takes Flight from AWS",
+      "url": "https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109",
+      "hot": "62"
     },
     {
       "rank": 5,
-      "title": "Sealed tomb filled with paintings and inscriptions discovered in Egypt",
-      "url": "https://www.labrujulaverde.com/en/2026/07/sealed-tomb-of-a-high-official-or-priest-filled-with-paintings-and-inscriptions-discovered-on-luxors-west-bank/",
-      "hot": "37"
+      "title": "LoRA Speedrun – a public wall-clock leaderboard for fine-tuning techniques",
+      "url": "https://github.com/Saivineeth147/lora-speedrun",
+      "hot": "97"
     },
     {
       "rank": 6,
-      "title": "US gas prices hit an average of $4 a gallon again",
-      "url": "https://apnews.com/article/gas-prices-iran-war-4-gallon-4b82825734ec3ded192351e53a4be69e",
-      "hot": "18"
+      "title": "Why is it so hard for the U.S. to win wars?",
+      "url": "https://www.npr.org/2026/07/18/g-s1-134037/why-is-it-so-hard-for-the-u-s-to-win-wars",
+      "hot": "14"
     },
     {
       "rank": 7,
-      "title": "Claude Code uses Bun written in Rust now",
-      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
-      "hot": "515"
+      "title": "Eliminating Go bounds checks with unsafe",
+      "url": "https://blog.andr2i.com/posts/2026-07-06-eliminating-go-bound-checks-with-unsafe",
+      "hot": "23"
     },
     {
       "rank": 8,
-      "title": "Eliminating Go bounds checks with unsafe",
-      "url": "https://blog.andr2i.com/posts/2026-07-06-eliminating-go-bound-checks-with-unsafe",
-      "hot": "9"
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+      "hot": "551"
     },
     {
       "rank": 9,
-      "title": "Self-Powered Trailers Promise Leaner Freight Runs",
-      "url": "https://spectrum.ieee.org/self-powered-trailers-freight-decarbonization",
-      "hot": "35"
+      "title": "What does the Riemann zeta function have to do with the distribution of primes?",
+      "url": "https://hidden-phenomena.com/articles/rh",
+      "hot": "17"
     },
     {
       "rank": 10,
       "title": "Orion Browser by Kagi",
       "url": "https://orionbrowser.com/",
-      "hot": "202"
+      "hot": "228"
     }
   ]
 }
