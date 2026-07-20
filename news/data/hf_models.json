@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-20T06:38:32+00:00",
+  "updated_at": "2026-07-20T14:28:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "thinkingmachines/Inkling",
       "url": "https://huggingface.co/thinkingmachines/Inkling",
-      "hot": "1168"
+      "hot": "1201"
     },
     {
       "rank": 2,
       "title": "prism-ml/Ternary-Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-      "hot": "805"
+      "hot": "825"
     },
     {
       "rank": 3,
       "title": "prism-ml/Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
-      "hot": "510"
+      "hot": "521"
     },
     {
       "rank": 4,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "2230"
+      "hot": "2333"
     },
     {
       "rank": 5,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4179"
+      "hot": "4199"
     },
     {
       "rank": 6,
       "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
       "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "2353"
+      "hot": "2360"
     },
     {
       "rank": 7,
       "title": "conradlocke/krea2-identity-edit",
       "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
-      "hot": "429"
+      "hot": "445"
     },
     {
       "rank": 8,
-      "title": "ATH-MaaS/OvisOCR2",
-      "url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
-      "hot": "199"
+      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "hot": "475"
     },
     {
       "rank": 9,
-      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
-      "hot": "466"
+      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "hot": "2922"
     },
     {
       "rank": 10,
-      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2906"
+      "title": "ATH-MaaS/OvisOCR2",
+      "url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
+      "hot": "210"
     }
   ]
 }
