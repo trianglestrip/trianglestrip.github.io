@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-21T08:46:05+00:00",
+  "updated_at": "2026-07-21T10:51:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Incremental – A library for incremental computations",
-      "url": "https://github.com/janestreet/incremental",
-      "hot": "165"
+      "title": "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge",
+      "url": "https://qwen.ai/blog?id=qwen-image-3.0",
+      "hot": "115"
     },
     {
       "rank": 2,
-      "title": "Who's afraid of Chinese models?",
-      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
-      "hot": "605"
+      "title": "Incremental – A library for incremental computations",
+      "url": "https://github.com/janestreet/incremental",
+      "hot": "218"
     },
     {
       "rank": 3,
-      "title": "Running Doom on Our Custom CPU and Going Viral",
-      "url": "https://www.armaangomes.com/blogs/doom/",
-      "hot": "59"
+      "title": "Who's afraid of Chinese models?",
+      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+      "hot": "675"
     },
     {
       "rank": 4,
-      "title": "Kimi Work",
-      "url": "https://www.kimi.com/products/kimi-work",
-      "hot": "528"
+      "title": "Arduino Launches Plug-and-Play Modules for Long-Range Sensor Projects",
+      "url": "https://www.allaboutcircuits.com/news/arduino-launches-plug-and-play-modules-for-long-range-sensor-projects/",
+      "hot": "21"
     },
     {
       "rank": 5,
       "title": "Linux kernel will support $ORIGIN, sort of",
       "url": "https://fzakaria.com/2026/07/20/linux-kernel-will-support-origin-sort-of",
-      "hot": "26"
+      "hot": "56"
     },
     {
       "rank": 6,
-      "title": "Jelly UI: Soft-body physics for native HTML form controls",
-      "url": "https://jelly-ui.com/",
-      "hot": "474"
+      "title": "Kimi Work",
+      "url": "https://www.kimi.com/products/kimi-work",
+      "hot": "568"
     },
     {
       "rank": 7,
-      "title": "Human mathematicians are being outcounterexampled",
-      "url": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
-      "hot": "329"
+      "title": "Jelly UI: Soft-body physics for native HTML form controls",
+      "url": "https://jelly-ui.com/",
+      "hot": "512"
     },
     {
       "rank": 8,
-      "title": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
-      "url": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding",
-      "hot": "259"
+      "title": "Running Doom on Our Custom CPU and Going Viral",
+      "url": "https://www.armaangomes.com/blogs/doom/",
+      "hot": "78"
     },
     {
       "rank": 9,
-      "title": "A Koi Pond Mosaic Made from 10 Pounds of 3D Printer Waste",
-      "url": "https://www.instructables.com/A-Koi-Pond-Mosaic-Made-From-10-Pounds-of-3D-Printe/",
-      "hot": "32"
+      "title": "Human mathematicians are being outcounterexampled",
+      "url": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
+      "hot": "356"
     },
     {
       "rank": 10,
       "title": "How to pack ternary numbers in 8-bit bytes",
       "url": "https://compilade.net/blog/ternary-packing",
-      "hot": "6"
+      "hot": "19"
     }
   ]
 }

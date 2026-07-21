@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-21T03:39:08+00:00",
+  "updated_at": "2026-07-21T10:51:39+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "Moonshine: Speech Recognition for Live Transcription and Voice Commands",
-      "url": "https://huggingface.co/papers/2410.15608",
-      "hot": "13"
-    },
-    {
-      "rank": 4,
       "title": "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices",
       "url": "https://huggingface.co/papers/2509.02523",
       "hot": "21"
+    },
+    {
+      "rank": 4,
+      "title": "Moonshine: Speech Recognition for Live Transcription and Voice Commands",
+      "url": "https://huggingface.co/papers/2410.15608",
+      "hot": "13"
     },
     {
       "rank": 5,
@@ -38,13 +38,13 @@
       "rank": 6,
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "258"
+      "hot": "259"
     },
     {
       "rank": 7,
       "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
       "url": "https://huggingface.co/papers/2607.15330",
-      "hot": "57"
+      "hot": "59"
     },
     {
       "rank": 8,
