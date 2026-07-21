@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-21T14:21:48+00:00",
+  "updated_at": "2026-07-21T17:08:38+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,26 +36,26 @@
     },
     {
       "rank": 6,
-      "title": "灿如繁星",
-      "url": "https://movie.douban.com/subject/36466246/",
-      "hot": ""
-    },
-    {
-      "rank": 7,
       "title": "雀骨",
       "url": "https://movie.douban.com/subject/37317368/",
       "hot": ""
     },
     {
+      "rank": 7,
+      "title": "群星闪耀时",
+      "url": "https://movie.douban.com/subject/35875462/",
+      "hot": ""
+    },
+    {
       "rank": 8,
-      "title": "野狗骨头",
-      "url": "https://movie.douban.com/subject/36618951/",
+      "title": "灿如繁星",
+      "url": "https://movie.douban.com/subject/36466246/",
       "hot": ""
     },
     {
       "rank": 9,
-      "title": "群星闪耀时",
-      "url": "https://movie.douban.com/subject/35875462/",
+      "title": "野狗骨头",
+      "url": "https://movie.douban.com/subject/36618951/",
       "hot": ""
     },
     {
