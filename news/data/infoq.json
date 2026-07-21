@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-21T06:15:57+00:00",
+  "updated_at": "2026-07-21T08:46:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Hugging Face遭攻击后，只能靠GLM 5.2救场？白宫AI顾问急眼喊话：“我们要没竞争力了”",
+      "url": "https://www.infoq.cn/article/xcmJWdpD1F509hxYy6N9?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 21 Jul 2026 16:14:20 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "OpenSQZ Glass：让端侧全双工全模态模型进入第一视角的可穿戴世界",
+      "url": "https://www.infoq.cn/article/UZ1j5LXmjNgiCfu5QL0s?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 21 Jul 2026 15:22:44 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "16 万 Star 的 OpenCode 彻底重写：API 全部重做、Bun 换 Node、桌面端迁移 Electron",
+      "url": "https://www.infoq.cn/article/6yN5sFxOqoBX2h32YtjC?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 21 Jul 2026 14:53:28 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "龙虾之父一条推文，Loop 时代终结？",
+      "url": "https://www.infoq.cn/article/58Vmogt2bAU6ciTIAuDt?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 21 Jul 2026 14:48:02 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "所有Harness终将长成“龙虾”，但最后活下来的只有几只",
+      "url": "https://www.infoq.cn/article/pFXQ6Q0XyNTuIxQsr7dM?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 21 Jul 2026 14:43:49 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "马斯克连夜开源Grok Build，但84万行代码里还留着上传用户整个代码库的痕迹",
+      "url": "https://www.infoq.cn/article/ob3ZAxR7XI1YiJzWwb1D?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 21 Jul 2026 14:40:10 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "微软跟进谷歌支持 Go 语言开发 AI 智能体，OpenAI 与 Anthropic 落后一步",
+      "url": "https://www.infoq.cn/article/JRHq6KiOTaA3IKMUD9TZ?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 21 Jul 2026 14:31:37 GMT"
+    },
+    {
+      "rank": 8,
+      "title": "DoorDash 如何打造了一款不完全依赖大型语言模型（LLM）的 AI 购物助手",
+      "url": "https://www.infoq.cn/article/QAIQh8E5yNr4i4RAYySz?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 21 Jul 2026 14:15:00 GMT"
+    },
+    {
+      "rank": 9,
       "title": "Java 近期新闻：TornadoVM 5、JHipster、Google ADK、OmniFish Build of Payara、Vidocq 发布",
       "url": "https://www.infoq.cn/article/pwI9ti1vx0uPcSZRg9zL?utm_source=rss&utm_medium=article",
       "hot": "Tue, 21 Jul 2026 11:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "业务研发中的 Loop Engineering：基于事前-事中-事后架构的实践｜AICon深圳",
       "url": "https://www.infoq.cn/article/kiNAVcGoJjaVXvJGZpyK?utm_source=rss&utm_medium=article",
       "hot": "Tue, 21 Jul 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 3,
-      "title": "OpenAI 将崩溃调试视为流行病学研究，修复了存在 18 之久年的 GNU libunwind 漏洞",
-      "url": "https://www.infoq.cn/article/6aAupoiW1H6WqbR0kO7W?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 21 Jul 2026 09:52:13 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "神州数码发布企业AI流程系统与智算产品，尝试打通应用和算力两端",
-      "url": "https://www.infoq.cn/article/jc1vll7xctqYlopcwIKe?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 20 Jul 2026 19:59:20 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "国产GPU分水岭时刻：当别家还在卷参数，摩尔线程早已训练出了世界模型",
-      "url": "https://www.infoq.cn/article/01aguG1Yrgxl0bpmfZps?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 20 Jul 2026 19:51:30 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "开源如何促进平台构建过程中的协作",
-      "url": "https://www.infoq.cn/article/MgFehj2q2FJFrf6XvEco?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 20 Jul 2026 17:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "无问芯穹夏立雪：数字世界与物理世界的所有AI生产力运行，都需要 Agentic Infra",
-      "url": "https://www.infoq.cn/article/AWhEVVgvNquuiKZdRQ0H?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 20 Jul 2026 16:41:21 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "亚马逊云科技概要介绍了某客户如何将 Lambda 函数扩展至 100 万个",
-      "url": "https://www.infoq.cn/article/bkhkOrQYPuIN672g20hi?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 20 Jul 2026 15:17:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "专访孙元浩：乘坐星环号，把数据库“移民火星”的人",
-      "url": "https://www.infoq.cn/article/xsZUSSR8PRtcjZobwkYA?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 20 Jul 2026 15:07:06 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "一句话上线 AI Agent 应用：火山 Supabase + IGA Pages 全栈部署实践",
-      "url": "https://www.infoq.cn/article/ZG1ipDQr8pjjHUQe7gbF?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 20 Jul 2026 14:47:38 GMT"
     }
   ]
 }

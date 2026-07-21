@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-21T06:15:56+00:00",
+  "updated_at": "2026-07-21T08:46:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Hyprland 0.56 发布",
+      "url": "https://www.oschina.net/news/476057/hyprland-0-56-released",
+      "hot": "Tue, 21 Jul 2026 16:40:08 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Mumble 1.5.915 发布",
+      "url": "https://www.oschina.net/news/476045/mumble-1-5.915released",
+      "hot": "Tue, 21 Jul 2026 16:31:36 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "C++ web框架 Paozhu 1.14.0 发布，html 生成 pdf 文件，xlsx 文件读写",
+      "url": "https://www.oschina.net/news/476009",
+      "hot": "Tue, 21 Jul 2026 15:52:04 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "她叫 Bard，谷歌后来把这个名字给了 AI",
+      "url": "https://www.oschina.net/news/475987",
+      "hot": "Tue, 21 Jul 2026 15:28:52 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Kimi K3 到底有多强？国产模型超越 Claude Fable 5，半天实战编码测评",
+      "url": "https://www.oschina.net/news/475974",
+      "hot": "Tue, 21 Jul 2026 15:16:01 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Fable 5 比开源模型贵三倍，Anthropic 的账怎么算？",
+      "url": "https://www.oschina.net/news/475956",
+      "hot": "Tue, 21 Jul 2026 14:58:38 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "Gartner：全球 AI 模型与平台市场 2026 年规模将达 640 亿美元",
+      "url": "https://www.oschina.net/news/475932",
+      "hot": "Tue, 21 Jul 2026 14:22:40 +0800"
+    },
+    {
+      "rank": 8,
       "title": "Notepad-- v3.8.2 已经发布，文本编辑器",
       "url": "https://www.oschina.net/news/475896",
       "hot": "Tue, 21 Jul 2026 13:47:49 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "MCP 协议将发布史上最大更新：不再有会话，不再有握手",
       "url": "https://www.oschina.net/news/475822",
       "hot": "Tue, 21 Jul 2026 12:01:19 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "NetworkManager 1.58 发布，Linux 网络管理软件",
       "url": "https://www.oschina.net/news/475818/networkmanager-1-58-released",
       "hot": "Tue, 21 Jul 2026 11:48:48 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "OpenAI 新高管一句话点炸了硅谷，中国开源权重模型是倾销？",
-      "url": "https://www.oschina.net/news/475813",
-      "hot": "Tue, 21 Jul 2026 11:43:32 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Monaco Editor 0.56.0 发布，微软开源的代码编辑器",
-      "url": "https://www.oschina.net/news/475799/monaco-editor-0-56-0-released",
-      "hot": "Tue, 21 Jul 2026 11:31:36 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Anthropic 获批 15 亿美元版权和解协议，向 50 万部作品支付赔偿",
-      "url": "https://www.oschina.net/news/475785",
-      "hot": "Tue, 21 Jul 2026 11:22:22 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "分布式系统架构：高可用实现",
-      "url": "https://my.oschina.net/xiandafu/blog/19722172",
-      "hot": "Tue, 21 Jul 2026 11:16:43 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "谁在害怕中国 AI 模型？硅谷科技分析师用一门 MBA 课把账算清楚了",
-      "url": "https://www.oschina.net/news/475755",
-      "hot": "Tue, 21 Jul 2026 11:12:43 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "DBPanel 1.0.1 发布：补强数据库安全、文件批量操作与在线安装链路",
-      "url": "https://www.oschina.net/news/475713",
-      "hot": "Tue, 21 Jul 2026 10:35:29 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Solon TeamAgent 协作协议：从 SEQUENTIAL 到 HIERARCHICAL",
-      "url": "https://www.oschina.net/news/475702",
-      "hot": "Tue, 21 Jul 2026 10:20:00 +0800"
     }
   ]
 }

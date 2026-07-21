@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-21T06:15:52+00:00",
+  "updated_at": "2026-07-21T08:46:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "NVIDIA Agent Toolkit 扩展全新 Omniverse 库，赋能 AI 智能体构建“仿真就绪”世界",
+      "url": "https://www.51cto.com/article/850280.html",
+      "hot": "NVIDIA Agent Toolkit 现已包含 NVIDIA Omniverse 库，为 AI 智能体提供多种工具和技能，以帮助软件开发者将物理 AI 功能集成到现有应用中。适用于 NVIDIA RTX 传感器仿真、GPU 加速物理仿真和支持仿真资产验证的全新 Omniverse 库现已在 GitHub 上公开发布。"
+    },
+    {
+      "rank": 2,
       "title": "严重 wp2shell RCE 漏洞：完整细节、PoC 及活跃利用情况",
       "url": "https://www.51cto.com/article/850266.html",
       "hot": "安全厂商强调，WAF 级阻止和 REST API 限制插件仅是临时的临时措施，可能会干扰正常的站点功能，而核心版本升级仍是唯一持久的修复方案。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Driver.js 火了八年，终于更新了！Vue、React 都能直接用",
       "url": "https://www.51cto.com/article/850265.html",
       "hot": "Driver.js 没有炫技、没有复杂配置，它只是把\"产品引导\"这一件事做到足够成熟。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "ICML 2026 | 多智能体系统也能搭积木？Agent Primitives让MAS走向模块化复用",
       "url": "https://www.51cto.com/article/850262.html",
       "hot": "多智能体系统是否也能拥有类似的抽象形式呢？是否可以把复杂的 Agent 工作流拆解成少量稳定、通用的计算单元，再像搭乐高一样，将它们按需组合起来呢？"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "告别熬夜值守！AI 智能体搞定 Linux 全自动巡检",
       "url": "https://www.51cto.com/article/850253.html",
       "hot": "AI 智能体 + Python 自动化正在彻底改写 Linux 运维工作模式。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "告别手动 “救火”！大模型重塑运维排查流程，实现秒级故障定位",
       "url": "https://www.51cto.com/article/850249.html",
       "hot": "本文分享一套已成功落地的大模型驱动 AI 运维分析平台。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "手把手做一个 Cursor Agent Window 插件：把个人 SDD AI 工作流变成团队默认能力",
       "url": "https://www.51cto.com/article/850247.html",
       "hot": "Cursor Agent Window 插件是一个可分发的能力包，把下面六类东西打成一个版本化整体，一起安装、一起升级。它改变的不是编辑器界面（那是 VS Code 扩展），而是 Agent 的工作环境。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "295B 参数开源，日均 Token 涨 20 倍：腾讯混元 Hy3 正式发布",
       "url": "https://www.51cto.com/article/850245.html",
       "hot": "腾讯混元 Hy3 正式发布了。距离 4 月底的 preview 版本过去两个多月，这次正式版有不少值得聊的地方。简单说就是：变强了，而且变得很实用。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "G行数据库异地灾备建设和切换实践",
       "url": "https://www.51cto.com/article/850244.html",
       "hot": "本文结合G行关键业务系统数据库升级实践，概述基于G行云上数据库构建“两地三中心”异地灾备体系的建设思路。方案以架构设计、数据库一致性保障、监控设计、系统灾备自动化切换为核心，形成从故障检测、数据追平到切换回切的闭环能力，为关键业务连续运行提供支撑。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "AI 时代的 HPC 硬件：为什么 CPU、GPU、网络和存储必须一起设计？",
       "url": "https://www.51cto.com/article/850243.html",
       "hot": "在高性能计算和大规模 AI 系统里，GPU 只是节点中的一个角色。真正决定系统上限的，是 CPU、加速器、显存、内存、网卡、本地存储、并行文件系统、冷却和调度能否匹配。"
-    },
-    {
-      "rank": 10,
-      "title": "AI 时代的复利游戏：为什么有些人越跑越快",
-      "url": "https://www.51cto.com/article/850242.html",
-      "hot": "有人一周干完别人一个月的活，有人还在用 AI 写周报润色，做PPT，还不熟练时好时不好等等。差距很少在「会不会用 AI」那一刻拉开，感觉都是会用AI的，但是往往确实差强人意的，更多是在那之后的每一天：你有没有把省下来的时间，变成下一轮的支点。"
     }
   ]
 }

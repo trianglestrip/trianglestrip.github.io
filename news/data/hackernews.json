@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-21T06:15:53+00:00",
+  "updated_at": "2026-07-21T08:46:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Incremental – A library for incremental computations",
       "url": "https://github.com/janestreet/incremental",
-      "hot": "91"
+      "hot": "165"
     },
     {
       "rank": 2,
       "title": "Who's afraid of Chinese models?",
       "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
-      "hot": "493"
+      "hot": "605"
     },
     {
       "rank": 3,
       "title": "Running Doom on Our Custom CPU and Going Viral",
       "url": "https://www.armaangomes.com/blogs/doom/",
-      "hot": "31"
+      "hot": "59"
     },
     {
       "rank": 4,
-      "title": "A Koi Pond Mosaic Made from 10 Pounds of 3D Printer Waste",
-      "url": "https://www.instructables.com/A-Koi-Pond-Mosaic-Made-From-10-Pounds-of-3D-Printe/",
-      "hot": "22"
+      "title": "Kimi Work",
+      "url": "https://www.kimi.com/products/kimi-work",
+      "hot": "528"
     },
     {
       "rank": 5,
-      "title": "Do we just want slaves?",
-      "url": "https://www.yashthapliyal.com/blog/do-we-just-want-slaves",
-      "hot": "39"
+      "title": "Linux kernel will support $ORIGIN, sort of",
+      "url": "https://fzakaria.com/2026/07/20/linux-kernel-will-support-origin-sort-of",
+      "hot": "26"
     },
     {
       "rank": 6,
-      "title": "Show HN: Ex Situ – Open-source spatial index of displaced cultural artifacts",
-      "url": "https://exsitu.app/map",
-      "hot": "15"
+      "title": "Jelly UI: Soft-body physics for native HTML form controls",
+      "url": "https://jelly-ui.com/",
+      "hot": "474"
     },
     {
       "rank": 7,
-      "title": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
-      "url": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding",
-      "hot": "142"
+      "title": "Human mathematicians are being outcounterexampled",
+      "url": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
+      "hot": "329"
     },
     {
       "rank": 8,
-      "title": "Kimi Work",
-      "url": "https://www.kimi.com/products/kimi-work",
-      "hot": "488"
+      "title": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
+      "url": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding",
+      "hot": "259"
     },
     {
       "rank": 9,
-      "title": "Reverse-engineering is cheap now",
-      "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/",
-      "hot": "14"
+      "title": "A Koi Pond Mosaic Made from 10 Pounds of 3D Printer Waste",
+      "url": "https://www.instructables.com/A-Koi-Pond-Mosaic-Made-From-10-Pounds-of-3D-Printe/",
+      "hot": "32"
     },
     {
       "rank": 10,
-      "title": "Jelly UI: Soft-body physics for native HTML form controls",
-      "url": "https://jelly-ui.com/",
-      "hot": "424"
+      "title": "How to pack ternary numbers in 8-bit bytes",
+      "url": "https://compilade.net/blog/ternary-packing",
+      "hot": "6"
     }
   ]
 }
