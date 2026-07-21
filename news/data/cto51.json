@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-20T23:12:45+00:00",
+  "updated_at": "2026-07-21T03:38:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "只会写代码的人不够用了！Netflix CPTO谈程序员未来十年：会写代码和“理解系统”是两回事",
-      "url": "https://www.51cto.com/article/850155.html",
-      "hot": "一种语言的语法和API，可以交给工具处理得越来越多。系统为何这样设计，数据怎样穿过不同服务，故障为什么会扩散，产品表现是否符合预期，这些问题仍然需要人来判断。"
+      "title": "严重 wp2shell RCE 漏洞：完整细节、PoC 及活跃利用情况",
+      "url": "https://www.51cto.com/article/850266.html",
+      "hot": "安全厂商强调，WAF 级阻止和 REST API 限制插件仅是临时的临时措施，可能会干扰正常的站点功能，而核心版本升级仍是唯一持久的修复方案。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 用 relationalStore 做本地数据库的完整实战 —— 一个真实项目的 5 个决策",
-      "url": "https://ost.51cto.com/posts/53043",
-      "hot": "大家好，我又来啦上周三我在一个已经上架的鸿蒙App里改本地数据库结构，加两个字段。改完跑了一遍，App起不来。日志说nosuchcolumn。其实是..."
+      "title": "Driver.js 火了八年，终于更新了！Vue、React 都能直接用",
+      "url": "https://www.51cto.com/article/850265.html",
+      "hot": "Driver.js 没有炫技、没有复杂配置，它只是把\"产品引导\"这一件事做到足够成熟。"
     },
     {
       "rank": 3,
-      "title": "赋能全球 AI 创新，GMI Cloud 携AI Cloud、MaaS、Agentbox等全栈智算解决方案重磅亮相 WAIC 2026",
-      "url": "https://www.51cto.com/article/850136.html",
-      "hot": "2026 年世界人工智能大会（WAIC）于 7 月 17 日至 20 日在上海盛大开展，全球领先的 AI Native Cloud 服务商 GMI Cloud 在此次大会上精彩亮相。"
+      "title": "ICML 2026 | 多智能体系统也能搭积木？Agent Primitives让MAS走向模块化复用",
+      "url": "https://www.51cto.com/article/850262.html",
+      "hot": "多智能体系统是否也能拥有类似的抽象形式呢？是否可以把复杂的 Agent 工作流拆解成少量稳定、通用的计算单元，再像搭乐高一样，将它们按需组合起来呢？"
     },
     {
       "rank": 4,
-      "title": "开源 AIOps 平台，终于有人做出来了",
-      "url": "https://www.51cto.com/article/850131.html",
-      "hot": "今天我把亲手在生产环境里跑通的六个场景摆给你看。看完你就明白：AIOps 不是 PPT 里的概念，是真的能用的。"
+      "title": "告别熬夜值守！AI 智能体搞定 Linux 全自动巡检",
+      "url": "https://www.51cto.com/article/850253.html",
+      "hot": "AI 智能体 + Python 自动化正在彻底改写 Linux 运维工作模式。"
     },
     {
       "rank": 5,
-      "title": "Rust 工具链再下一城！Rolldown 1.2 发布，前端构建进入新时代",
-      "url": "https://www.51cto.com/article/850127.html",
-      "hot": "Rolldown 1.2 并没有发布什么特别“炸裂”的新功能。但它释放了一个更重要的信号。Vite 背后的 Rust 工具链，正在快速成熟。"
+      "title": "告别手动 “救火”！大模型重塑运维排查流程，实现秒级故障定位",
+      "url": "https://www.51cto.com/article/850249.html",
+      "hot": "本文分享一套已成功落地的大模型驱动 AI 运维分析平台。"
     },
     {
       "rank": 6,
-      "title": "面试官问：什么是 Harness 工程？可以这样回答",
-      "url": "https://www.51cto.com/article/850121.html",
-      "hot": "Harness 工程不是要替代工程师，其实只是要求工程师把过去很多的隐性经验，通过不同的方式暴露给AI，这样人也有更多的精力去做更有价值的事，目前看Harness 工程是Agent 时代的软件工程基本功。"
+      "title": "手把手做一个 Cursor Agent Window 插件：把个人 SDD AI 工作流变成团队默认能力",
+      "url": "https://www.51cto.com/article/850247.html",
+      "hot": "Cursor Agent Window 插件是一个可分发的能力包，把下面六类东西打成一个版本化整体，一起安装、一起升级。它改变的不是编辑器界面（那是 VS Code 扩展），而是 Agent 的工作环境。"
     },
     {
       "rank": 7,
-      "title": "在数学上把稀疏注意力做对！腾讯Hy开源HiLS-Attention: 计算更少效果更好, 外推512倍",
-      "url": "https://www.51cto.com/article/850116.html",
-      "hot": "腾讯混元团队正式开源 HiLS-Attention（分层地标稀疏注意力），提出了一种全新的分块稀疏注意力范式，首次在数学层面上同时解决了 chunk 重要性估计的 \"表达力不足\" 和选择过程的 \"端到端不可导\" 两大根本难题，真正将稀疏注意力做到了 \"Done Right\"。"
+      "title": "295B 参数开源，日均 Token 涨 20 倍：腾讯混元 Hy3 正式发布",
+      "url": "https://www.51cto.com/article/850245.html",
+      "hot": "腾讯混元 Hy3 正式发布了。距离 4 月底的 preview 版本过去两个多月，这次正式版有不少值得聊的地方。简单说就是：变强了，而且变得很实用。"
     },
     {
       "rank": 8,
-      "title": "字节面试官：别再直接让 AI 写代码了，去学习一下 SDD 规格驱动开发",
-      "url": "https://www.51cto.com/article/850112.html",
-      "hot": "SDD，中文叫规格驱动开发，是在正式编码之前，先把需求变更的目标、范围、系统行为、设计约束和任务拆分通过文档（规格文档）确定下来，再让AI按照这些文档去开发，能够把模糊需求变成稳定的工程上下文，从而减少AI自己猜需求、误改历史逻辑和实现跑偏的问题。"
+      "title": "G行数据库异地灾备建设和切换实践",
+      "url": "https://www.51cto.com/article/850244.html",
+      "hot": "本文结合G行关键业务系统数据库升级实践，概述基于G行云上数据库构建“两地三中心”异地灾备体系的建设思路。方案以架构设计、数据库一致性保障、监控设计、系统灾备自动化切换为核心，形成从故障检测、数据追平到切换回切的闭环能力，为关键业务连续运行提供支撑。"
     },
     {
       "rank": 9,
-      "title": "浅谈具身智能 VLA技术发展趋势",
-      "url": "https://www.51cto.com/article/850105.html",
-      "hot": "具身智能的本质是人类的“能力扩音器式赋能工具”，在医疗领域是医生的“超级助手”辅助识别病灶，在创意领域是艺术家的“灵感伙伴”，放大人类能力却不替代核心决策。"
+      "title": "AI 时代的 HPC 硬件：为什么 CPU、GPU、网络和存储必须一起设计？",
+      "url": "https://www.51cto.com/article/850243.html",
+      "hot": "在高性能计算和大规模 AI 系统里，GPU 只是节点中的一个角色。真正决定系统上限的，是 CPU、加速器、显存、内存、网卡、本地存储、并行文件系统、冷却和调度能否匹配。"
     },
     {
       "rank": 10,
-      "title": "接到需求和 Bug，别让 Claude 直接开写：DAE + ATDD 实战流程",
-      "url": "https://www.51cto.com/article/850100.html",
-      "hot": "开源套件 Disciplined Agentic Engineering（DAE，前身 swingerman/atdd）盯的不是「写得更快」，而是：智能体负责打字时，谁定义「做完了」，以及如何防止定义被实现细节污染、被长会话冲掉。 核心就三句——后面所有真实命令都围着它们转。"
+      "title": "AI 时代的复利游戏：为什么有些人越跑越快",
+      "url": "https://www.51cto.com/article/850242.html",
+      "hot": "有人一周干完别人一个月的活，有人还在用 AI 写周报润色，做PPT，还不熟练时好时不好等等。差距很少在「会不会用 AI」那一刻拉开，感觉都是会用AI的，但是往往确实差强人意的，更多是在那之后的每一天：你有没有把省下来的时间，变成下一轮的支点。"
     }
   ]
 }

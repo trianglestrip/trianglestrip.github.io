@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-20T21:04:01+00:00",
+  "updated_at": "2026-07-21T03:39:08+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,9 +12,9 @@
     },
     {
       "rank": 2,
-      "title": "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices",
-      "url": "https://huggingface.co/papers/2509.02523",
-      "hot": "21"
+      "title": "Unlimited OCR Works",
+      "url": "https://huggingface.co/papers/2606.23050",
+      "hot": "55"
     },
     {
       "rank": 3,
@@ -24,9 +24,9 @@
     },
     {
       "rank": 4,
-      "title": "Unlimited OCR Works",
-      "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "55"
+      "title": "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices",
+      "url": "https://huggingface.co/papers/2509.02523",
+      "hot": "21"
     },
     {
       "rank": 5,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
-      "url": "https://huggingface.co/papers/2607.15330",
-      "hot": "53"
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "url": "https://huggingface.co/papers/2605.23904",
+      "hot": "258"
     },
     {
       "rank": 7,
+      "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+      "url": "https://huggingface.co/papers/2607.15330",
+      "hot": "57"
+    },
+    {
+      "rank": 8,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "83"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
       "url": "https://huggingface.co/papers/2509.22186",
       "hot": "176"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "AutoDev: Automated AI-Driven Development",
       "url": "https://huggingface.co/papers/2403.08299",
       "hot": "18"
-    },
-    {
-      "rank": 10,
-      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
-      "url": "https://huggingface.co/papers/2605.23904",
-      "hot": "258"
     }
   ]
 }

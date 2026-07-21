@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-20T23:12:46+00:00",
+  "updated_at": "2026-07-21T03:38:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "China’s open-weights AI strategy is winning",
-      "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
-      "hot": "876"
+      "title": "Who's afraid of Chinese models?",
+      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+      "hot": "363"
     },
     {
       "rank": 2,
-      "title": "Kimi Work",
-      "url": "https://www.kimi.com/products/kimi-work",
-      "hot": "317"
+      "title": "Jellyfin founder Andrew leaves team",
+      "url": "https://forum.jellyfin.org/t-project-leadership-changes",
+      "hot": "129"
     },
     {
       "rank": 3,
-      "title": "Who's Afraid of Chinese Models?",
-      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
-      "hot": "75"
+      "title": "Kimi Work",
+      "url": "https://www.kimi.com/products/kimi-work",
+      "hot": "429"
     },
     {
       "rank": 4,
       "title": "Jelly UI: Soft-body physics for native HTML form controls",
       "url": "https://jelly-ui.com/",
-      "hot": "279"
+      "hot": "381"
     },
     {
       "rank": 5,
       "title": "Human mathematicians are being outcounterexampled",
       "url": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
-      "hot": "136"
+      "hot": "256"
     },
     {
       "rank": 6,
       "title": "Hacker wipes Romania's land registry database",
       "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
-      "hot": "540"
+      "hot": "592"
     },
     {
       "rank": 7,
       "title": "Nativ: Run frontier open models locally on your Mac",
       "url": "https://blaizzy.github.io/nativ/",
-      "hot": "135"
+      "hot": "212"
     },
     {
       "rank": 8,
-      "title": "Airport Simulator",
-      "url": "https://airport.apunen.com/",
-      "hot": "647"
+      "title": "Flock Credibility Lost as It Repeatedly Lies to City Councils, Police, & Public",
+      "url": "https://www.aclu.org/news/privacy-technology/tracking-alpr-cameras/flock-safety-credibility-lost-as-it-repeatedly-lies-to-city-councils-police-departments-and-public-across-the-country",
+      "hot": "174"
     },
     {
       "rank": 9,
-      "title": "Show HN: Immersive Gaussian Splat tour of grace cathedral, San Francisco",
-      "url": "https://vincentwoo.com/3d/grace_cathedral/",
-      "hot": "30"
+      "title": "I wrote an bash enumerator because I was sick of xargs",
+      "url": "https://numerlab.org/2025/07/20/bashumerate-enumerator/",
+      "hot": "82"
     },
     {
       "rank": 10,
-      "title": "Agent swarms and the new model economics",
-      "url": "https://cursor.com/blog/agent-swarm-model-economics",
-      "hot": "85"
+      "title": "Airport Simulator",
+      "url": "https://airport.apunen.com/",
+      "hot": "749"
     }
   ]
 }
