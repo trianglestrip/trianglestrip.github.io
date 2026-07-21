@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-21T17:09:07+00:00",
+  "updated_at": "2026-07-21T19:57:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
-      "hot": "278"
+      "title": "FreeInk: Open ecosystem for e-readers",
+      "url": "https://freeink.org/",
+      "hot": "104"
     },
     {
       "rank": 2,
-      "title": "Long Presumed Dead, a Thriving Coral Reef Is Discovered in West Africa",
-      "url": "https://e360.yale.edu/digest/benin-coral-reef",
-      "hot": "74"
+      "title": "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+      "hot": "463"
     },
     {
       "rank": 3,
-      "title": "The World's 2,400 Castles",
-      "url": "https://thecastlemap.com/",
-      "hot": "52"
+      "title": "Long presumed dead, a thriving coral reef is discovered in West Africa",
+      "url": "https://e360.yale.edu/digest/benin-coral-reef",
+      "hot": "216"
     },
     {
       "rank": 4,
-      "title": "PCjs Machines",
-      "url": "https://www.pcjs.org/",
-      "hot": "94"
+      "title": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
+      "url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+      "hot": "87"
     },
     {
       "rank": 5,
-      "title": "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge",
-      "url": "https://qwen.ai/blog?id=qwen-image-3.0",
-      "hot": "458"
+      "title": "Apple has decided to compete for creativity app users",
+      "url": "https://alex4d.com/notes/item/apple-competing-for-creativity-app-users",
+      "hot": "35"
     },
     {
       "rank": 6,
-      "title": "France's Anssi Will Block PQC-Free Products from Certification Starting 2027",
-      "url": "https://postquantum.com/security-pqc/anssi-pqc-certification-2027/",
-      "hot": "23"
+      "title": "Apple Private Cloud Compute SoC 3 audit reports",
+      "url": "https://support.apple.com/guide/certifications/apple-private-cloud-compute-soc-3-audit-apc95a31b9d8/web",
+      "hot": "37"
     },
     {
       "rank": 7,
-      "title": "Apple Defeats Liability for Not Scanning iCloud for CSAM",
-      "url": "https://blog.ericgoldman.org/archives/2026/07/apple-defeats-liability-for-not-scanning-icloud-for-csam-but-the-judge-was-not-pleased-amy-v-apple.htm",
-      "hot": "161"
+      "title": "Show HN: A self-running space economy SIM in Rust and Bevy",
+      "url": "https://github.com/Kalcode/spaceprojectsim",
+      "hot": "25"
     },
     {
       "rank": 8,
-      "title": "Python 3.15's Ultra-Low Overhead Interpreter Profiling Mode – Ken Jin's Blog",
-      "url": "https://fidget-spinner.github.io/posts/ultra-fast-tracing.html",
-      "hot": "113"
+      "title": "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge",
+      "url": "https://qwen.ai/blog?id=qwen-image-3.0",
+      "hot": "497"
     },
     {
       "rank": 9,
-      "title": "Who's afraid of Chinese models?",
-      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
-      "hot": "898"
+      "title": "PCjs Machines",
+      "url": "https://www.pcjs.org/",
+      "hot": "149"
     },
     {
       "rank": 10,
-      "title": "Oracle could face $7B collateral bill for Wisconsin data centre",
-      "url": "https://www.ft.com/content/b37030b6-bda8-4ba9-8e08-e6b88687b8f5",
-      "hot": "79"
+      "title": "France's Anssi Will Block PQC-Free Products from Certification Starting 2027",
+      "url": "https://postquantum.com/security-pqc/anssi-pqc-certification-2027/",
+      "hot": "62"
     }
   ]
 }
