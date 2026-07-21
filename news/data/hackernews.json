@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-21T19:57:50+00:00",
+  "updated_at": "2026-07-21T22:06:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "FreeInk: Open ecosystem for e-readers",
-      "url": "https://freeink.org/",
-      "hot": "104"
+      "title": "OpenAI and Hugging Face address security incident during model evaluation",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+      "hot": "371"
     },
     {
       "rank": 2,
-      "title": "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
-      "hot": "463"
+      "title": "FreeInk: Open ecosystem for e-readers",
+      "url": "https://freeink.org/",
+      "hot": "281"
     },
     {
       "rank": 3,
-      "title": "Long presumed dead, a thriving coral reef is discovered in West Africa",
-      "url": "https://e360.yale.edu/digest/benin-coral-reef",
-      "hot": "216"
+      "title": "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+      "hot": "542"
     },
     {
       "rank": 4,
-      "title": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
-      "url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
-      "hot": "87"
+      "title": "A digestion of the Jacobian conjecture counterexample",
+      "url": "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/",
+      "hot": "41"
     },
     {
       "rank": 5,
-      "title": "Apple has decided to compete for creativity app users",
-      "url": "https://alex4d.com/notes/item/apple-competing-for-creativity-app-users",
-      "hot": "35"
+      "title": "Long presumed dead, a thriving coral reef is discovered in West Africa",
+      "url": "https://e360.yale.edu/digest/benin-coral-reef",
+      "hot": "257"
     },
     {
       "rank": 6,
-      "title": "Apple Private Cloud Compute SoC 3 audit reports",
-      "url": "https://support.apple.com/guide/certifications/apple-private-cloud-compute-soc-3-audit-apc95a31b9d8/web",
-      "hot": "37"
+      "title": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
+      "url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+      "hot": "172"
     },
     {
       "rank": 7,
-      "title": "Show HN: A self-running space economy SIM in Rust and Bevy",
-      "url": "https://github.com/Kalcode/spaceprojectsim",
-      "hot": "25"
+      "title": "'VPNs are lawful technical tools,' says EU Court in landmark copyright ruling",
+      "url": "https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling",
+      "hot": "216"
     },
     {
       "rank": 8,
-      "title": "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge",
-      "url": "https://qwen.ai/blog?id=qwen-image-3.0",
-      "hot": "497"
+      "title": "Apple defeats liability for not scanning iCloud for CSAM",
+      "url": "https://blog.ericgoldman.org/archives/2026/07/apple-defeats-liability-for-not-scanning-icloud-for-csam-but-the-judge-was-not-pleased-amy-v-apple.htm",
+      "hot": "286"
     },
     {
       "rank": 9,
-      "title": "PCjs Machines",
-      "url": "https://www.pcjs.org/",
-      "hot": "149"
+      "title": "\"Drawing\" the Mona Lisa with GPT-5.6, Claude, Gemini, and Grok",
+      "url": "https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok",
+      "hot": "17"
     },
     {
       "rank": 10,
-      "title": "France's Anssi Will Block PQC-Free Products from Certification Starting 2027",
-      "url": "https://postquantum.com/security-pqc/anssi-pqc-certification-2027/",
-      "hot": "62"
+      "title": "The Birth of Prolog (1996)",
+      "url": "https://dl.acm.org/doi/10.1145/234286.1057820",
+      "hot": "29"
     }
   ]
 }
