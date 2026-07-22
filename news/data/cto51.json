@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-21T22:06:17+00:00",
+  "updated_at": "2026-07-22T03:33:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "NVIDIA Agent Toolkit 扩展全新 Omniverse 库，赋能 AI 智能体构建“仿真就绪”世界",
-      "url": "https://www.51cto.com/article/850280.html",
-      "hot": "NVIDIA Agent Toolkit 现已包含 NVIDIA Omniverse 库，为 AI 智能体提供多种工具和技能，以帮助软件开发者将物理 AI 功能集成到现有应用中。适用于 NVIDIA RTX 传感器仿真、GPU 加速物理仿真和支持仿真资产验证的全新 Omniverse 库现已在 GitHub 上公开发布。"
+      "title": "无密码无钓鱼照样拖空数据：机器身份债务已成安全隐形炸弹",
+      "url": "https://www.51cto.com/article/850411.html",
+      "hot": "机器身份债务之所以危险，恰恰在于它通常不以故障形式出现。一个过期项目遗留的服务账号不会主动报警，一枚多年未轮换的令牌也不会影响业务运行，一项过度授权的OAuth集成甚至会让某些流程看起来更加顺畅。它们看起来都在\"正常工作\"，直到凭据落入了不该拥有它的人手中。"
     },
     {
       "rank": 2,
-      "title": "严重 wp2shell RCE 漏洞：完整细节、PoC 及活跃利用情况",
-      "url": "https://www.51cto.com/article/850266.html",
-      "hot": "安全厂商强调，WAF 级阻止和 REST API 限制插件仅是临时的临时措施，可能会干扰正常的站点功能，而核心版本升级仍是唯一持久的修复方案。"
+      "title": "具身智能或进入token时代，清华团队提出Harness VLA引领范式变迁",
+      "url": "https://www.51cto.com/article/850395.html",
+      "hot": "清华大学于超教授团队联合正行创新、无问芯穹提出的 Harness VLA，首次将 Harness Layer 引入具身智能。"
     },
     {
       "rank": 3,
-      "title": "Driver.js 火了八年，终于更新了！Vue、React 都能直接用",
-      "url": "https://www.51cto.com/article/850265.html",
-      "hot": "Driver.js 没有炫技、没有复杂配置，它只是把\"产品引导\"这一件事做到足够成熟。"
+      "title": "WAIC 20 亿大单引爆国产算力！HCIP/HCIE-AI 认证助力技术人抢占昇腾生态高薪赛道",
+      "url": "https://www.51cto.com/article/850381.html",
+      "hot": "华为 HCIA/HCIP/HCIE 三级 AI 认证，打通 “理论学习 -- 真机实操 -- 行业落地 -- 权威背书” 完整链路。"
     },
     {
       "rank": 4,
-      "title": "ICML 2026 | 多智能体系统也能搭积木？Agent Primitives让MAS走向模块化复用",
-      "url": "https://www.51cto.com/article/850262.html",
-      "hot": "多智能体系统是否也能拥有类似的抽象形式呢？是否可以把复杂的 Agent 工作流拆解成少量稳定、通用的计算单元，再像搭乐高一样，将它们按需组合起来呢？"
+      "title": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber",
+      "url": "https://www.51cto.com/article/850380.html",
+      "hot": "谷歌发布了三款新的人工智能模型，包括性能最强的 Gemini 3.6 Flash，以及专门针对网络安全优化的 Gemini 3.5 Flash Cyber。"
     },
     {
       "rank": 5,
-      "title": "告别熬夜值守！AI 智能体搞定 Linux 全自动巡检",
-      "url": "https://www.51cto.com/article/850253.html",
-      "hot": "AI 智能体 + Python 自动化正在彻底改写 Linux 运维工作模式。"
+      "title": "英伟达详解 Vera CPU：专为智能体 AI 构建，88 个 Olympus 核心、1.2 TB/s LPDDR5X 内存",
+      "url": "https://www.51cto.com/article/850379.html",
+      "hot": "英伟达7 月 21 日发布博文，从技术角度详细介绍了 Vera CPU，专为智能体 AI（Agentic AI）场景设计。"
     },
     {
       "rank": 6,
-      "title": "告别手动 “救火”！大模型重塑运维排查流程，实现秒级故障定位",
-      "url": "https://www.51cto.com/article/850249.html",
-      "hot": "本文分享一套已成功落地的大模型驱动 AI 运维分析平台。"
+      "title": "AIOps 安全加固实战：通过模型访问控制到数据脱敏全链路，安全事件减少 92%",
+      "url": "https://www.51cto.com/article/850378.html",
+      "hot": "大模型能访问运维数据，一旦被利用，后果比传统漏洞更严重。"
     },
     {
       "rank": 7,
-      "title": "手把手做一个 Cursor Agent Window 插件：把个人 SDD AI 工作流变成团队默认能力",
-      "url": "https://www.51cto.com/article/850247.html",
-      "hot": "Cursor Agent Window 插件是一个可分发的能力包，把下面六类东西打成一个版本化整体，一起安装、一起升级。它改变的不是编辑器界面（那是 VS Code 扩展），而是 Agent 的工作环境。"
+      "title": "小红书引擎架构团队OSDI 2026新成果：HELMSMAN重塑大规模向量检索基础设施",
+      "url": "https://www.51cto.com/article/850377.html",
+      "hot": "HELMSMAN 系统性回答了一个长期困扰工业向量检索的问题：当向量规模增长到百亿甚至更高、纯 DRAM 成本不可持续时，是否存在一条既满足在线 SLA、又能显著降低硬件成本的可落地路径。"
     },
     {
       "rank": 8,
-      "title": "295B 参数开源，日均 Token 涨 20 倍：腾讯混元 Hy3 正式发布",
-      "url": "https://www.51cto.com/article/850245.html",
-      "hot": "腾讯混元 Hy3 正式发布了。距离 4 月底的 preview 版本过去两个多月，这次正式版有不少值得聊的地方。简单说就是：变强了，而且变得很实用。"
+      "title": "多智能体不是越多越强：我用100行Python，拆穿AI Agent协作的真相",
+      "url": "https://www.51cto.com/article/850375.html",
+      "hot": "现实是什么？现实是我见过太多人把一个本来单智能体能干好的活，硬拆成五个角色，然后花两周时间调试“为什么产品经理说的话程序员理解错了”。最后系统跑通了，效果还不如原来那个单智能体，token 消耗翻了四倍。"
     },
     {
       "rank": 9,
-      "title": "G行数据库异地灾备建设和切换实践",
-      "url": "https://www.51cto.com/article/850244.html",
-      "hot": "本文结合G行关键业务系统数据库升级实践，概述基于G行云上数据库构建“两地三中心”异地灾备体系的建设思路。方案以架构设计、数据库一致性保障、监控设计、系统灾备自动化切换为核心，形成从故障检测、数据追平到切换回切的闭环能力，为关键业务连续运行提供支撑。"
+      "title": "AI 正在替代运维三类重复工作：日志排查、告警收敛、脚本编写，转型路线收好",
+      "url": "https://www.51cto.com/article/850374.html",
+      "hot": "AI 干重复性高、有规律、核心是经验积累这类活比人强得多。"
     },
     {
       "rank": 10,
-      "title": "AI 时代的 HPC 硬件：为什么 CPU、GPU、网络和存储必须一起设计？",
-      "url": "https://www.51cto.com/article/850243.html",
-      "hot": "在高性能计算和大规模 AI 系统里，GPU 只是节点中的一个角色。真正决定系统上限的，是 CPU、加速器、显存、内存、网卡、本地存储、并行文件系统、冷却和调度能否匹配。"
+      "title": "用老祖宗的智慧根治大模型幻觉",
+      "url": "https://www.51cto.com/article/850371.html",
+      "hot": "解决幻觉不能只靠一句「请准确回答」。还得让模型知道什么时候该停，什么时候该找证据。"
     }
   ]
 }
