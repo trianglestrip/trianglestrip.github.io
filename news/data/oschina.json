@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-22T08:43:48+00:00",
+  "updated_at": "2026-07-22T10:51:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "7-Zip曝出高危漏洞：解压即中招",
+      "url": "https://www.oschina.net/news/476990",
+      "hot": "Wed, 22 Jul 2026 18:47:21 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "RStudio 2026.07.1 发布，R 语言的集成开发环境",
+      "url": "https://www.oschina.net/news/476961/rstudio-2026-07-1",
+      "hot": "Wed, 22 Jul 2026 18:08:00 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "gRPC 1.83.0 发布，跨语言 RPC 框架",
+      "url": "https://www.oschina.net/news/476934/grpc-1-83-0-released",
+      "hot": "Wed, 22 Jul 2026 17:35:35 +0800"
+    },
+    {
+      "rank": 4,
       "title": "【论文解读】复数 CVNet：跳过 FFT，Jetson 上 2.75 ms 如何完成雷达手势识别？",
       "url": "https://my.oschina.net/u/9756519/blog/19725038",
       "hot": "Wed, 22 Jul 2026 16:34:15 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "VirtualBox 7.2.14 发布",
       "url": "https://www.oschina.net/news/476831/virtualbox-7-2-14-released",
       "hot": "Wed, 22 Jul 2026 15:58:46 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "开源直播与录制工具 OBS Studio 32.2.0 发布",
       "url": "https://www.oschina.net/news/476791/obs-studio-32-2-0-released",
       "hot": "Wed, 22 Jul 2026 15:39:51 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "他维护了“如何编写不可维护代码”作者遗留下来的代码",
       "url": "https://www.oschina.net/news/476776",
       "hot": "Wed, 22 Jul 2026 15:25:30 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "腾讯发布首个自研创意智能体 Miora",
       "url": "https://www.oschina.net/news/476728",
       "hot": "Wed, 22 Jul 2026 14:37:38 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "宇树科技发布 UnifoLM-OminiA-0.3",
       "url": "https://www.oschina.net/news/476701",
       "hot": "Wed, 22 Jul 2026 14:06:32 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Next.js v16.2.11 发布",
       "url": "https://www.oschina.net/news/476610/nextjs-16-2-11-released",
       "hot": "Wed, 22 Jul 2026 11:45:25 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "如何在 Elasticsearch 中使用 BBQ 将 Jina v5 嵌入缩小 29 倍而不损失召回率",
-      "url": "https://my.oschina.net/u/3343882/blog/19725387",
-      "hot": "Wed, 22 Jul 2026 11:23:52 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Firefox 153.0 发布",
-      "url": "https://www.oschina.net/news/476582/firefox-153-0-released",
-      "hot": "Wed, 22 Jul 2026 11:18:15 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Kimi K3 实战对标 Fable 5：开源模型在 SWE-bench 上几乎打平了",
-      "url": "https://www.oschina.net/news/476574/kimi-k3-fable-compared-by-fireworks-ai",
-      "hot": "Wed, 22 Jul 2026 11:10:50 +0800"
     }
   ]
 }
