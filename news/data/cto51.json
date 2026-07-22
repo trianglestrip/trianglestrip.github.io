@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-22T03:33:05+00:00",
+  "updated_at": "2026-07-22T06:12:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Cortex：自主切分规划subtask，上海AI Lab提出双向协同Agent实现长程化学操作任务",
+      "url": "https://www.51cto.com/article/850423.html",
+      "hot": "近日，来自清华大学、上海人工智能实验室等机构的研究团队提出了 Cortex，一个面向长程机器人操作的双系统具身智能体框架。"
+    },
+    {
+      "rank": 2,
+      "title": "我在WAIC 2026看见的十大趋势",
+      "url": "https://www.51cto.com/article/850419.html",
+      "hot": "如果你没能肉身前往，或者来不及看完一场又一场发布和展出，欢迎通过我们这份言简意赅的总结，快速了解今年WAIC上呈现的趋势。"
+    },
+    {
+      "rank": 3,
+      "title": "GPT-6为刷榜黑进Hugging Face，捅篓子还得靠GLM-5.2追查...",
+      "url": "https://www.51cto.com/article/850417.html",
+      "hot": "OpenAI刚刚公开认领了一起《重大》安全事故。GPT-5.6 Sol与一款能力更强的未发布模型，在接受网络安全测试，成功逃出了内部隔离环境，一路闯进了Hugging Face的生产系统。"
+    },
+    {
+      "rank": 4,
+      "title": "游玮博士出席WAIC论坛｜筑好通用技术底座，埃夫特&启智交出工业具身落地答卷",
+      "url": "https://www.51cto.com/article/850416.html",
+      "hot": "2026世界人工智能大会期间，埃夫特&启智董事长游玮博士受邀出席上海马桥AI创新试验区主办的\"具身智能产业生态论坛\"，发表题为《工业具身落地路径探讨》的主旨演讲。游玮博士直指行业\"重演示、轻落地\"的盲区，紧扣工业核心痛点，给出了作为\"实干派\"的一系列具身智能产业发展的深刻洞察和预判。"
+    },
+    {
+      "rank": 5,
+      "title": "爆改GLM-5.2！全球首款200万上下文混合LoRA开源，外挂四大专家彻底治愈技能冲突",
+      "url": "https://www.51cto.com/article/850415.html",
+      "hot": "Macaron-V1 是心洲科技旗下前沿实验室 Mind Lab 推出的最新模型，定位是面向个人智能体场景。权重、官方 API、配套工具都已经开源上线"
+    },
+    {
+      "rank": 6,
+      "title": "WordPress wp2shell 漏洞利用激增：公开 PoC 触发大规模扫描",
+      "url": "https://www.51cto.com/article/850412.html",
+      "hot": "建议防御者检查其 WordPress 实例中是否出现新的管理员账户、恶意插件或其他可疑文件，无论是否已打补丁，以彻底清除威胁。"
+    },
+    {
+      "rank": 7,
+      "title": "是 Kable 不是 Fable，Kimi 向全世界证明了四件事",
+      "url": "https://www.51cto.com/article/850366.html",
+      "hot": "作为全球首个开源 3 万亿级大模型（总参数 2.8 万亿），这个数字足够震撼。从 K2 的万亿参数，到今天的 K3，中国开源模型再次刷新了模型规模的上限，海内外不少网友惊呼，这款开源模型性能足以替代昂贵的 Claude Fable 5 和 GPT 5.6 Sol。"
+    },
+    {
+      "rank": 8,
       "title": "无密码无钓鱼照样拖空数据：机器身份债务已成安全隐形炸弹",
       "url": "https://www.51cto.com/article/850411.html",
       "hot": "机器身份债务之所以危险，恰恰在于它通常不以故障形式出现。一个过期项目遗留的服务账号不会主动报警，一枚多年未轮换的令牌也不会影响业务运行，一项过度授权的OAuth集成甚至会让某些流程看起来更加顺畅。它们看起来都在\"正常工作\"，直到凭据落入了不该拥有它的人手中。"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "具身智能或进入token时代，清华团队提出Harness VLA引领范式变迁",
       "url": "https://www.51cto.com/article/850395.html",
       "hot": "清华大学于超教授团队联合正行创新、无问芯穹提出的 Harness VLA，首次将 Harness Layer 引入具身智能。"
     },
     {
-      "rank": 3,
-      "title": "WAIC 20 亿大单引爆国产算力！HCIP/HCIE-AI 认证助力技术人抢占昇腾生态高薪赛道",
-      "url": "https://www.51cto.com/article/850381.html",
-      "hot": "华为 HCIA/HCIP/HCIE 三级 AI 认证，打通 “理论学习 -- 真机实操 -- 行业落地 -- 权威背书” 完整链路。"
-    },
-    {
-      "rank": 4,
-      "title": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber",
-      "url": "https://www.51cto.com/article/850380.html",
-      "hot": "谷歌发布了三款新的人工智能模型，包括性能最强的 Gemini 3.6 Flash，以及专门针对网络安全优化的 Gemini 3.5 Flash Cyber。"
-    },
-    {
-      "rank": 5,
-      "title": "英伟达详解 Vera CPU：专为智能体 AI 构建，88 个 Olympus 核心、1.2 TB/s LPDDR5X 内存",
-      "url": "https://www.51cto.com/article/850379.html",
-      "hot": "英伟达7 月 21 日发布博文，从技术角度详细介绍了 Vera CPU，专为智能体 AI（Agentic AI）场景设计。"
-    },
-    {
-      "rank": 6,
-      "title": "AIOps 安全加固实战：通过模型访问控制到数据脱敏全链路，安全事件减少 92%",
-      "url": "https://www.51cto.com/article/850378.html",
-      "hot": "大模型能访问运维数据，一旦被利用，后果比传统漏洞更严重。"
-    },
-    {
-      "rank": 7,
-      "title": "小红书引擎架构团队OSDI 2026新成果：HELMSMAN重塑大规模向量检索基础设施",
-      "url": "https://www.51cto.com/article/850377.html",
-      "hot": "HELMSMAN 系统性回答了一个长期困扰工业向量检索的问题：当向量规模增长到百亿甚至更高、纯 DRAM 成本不可持续时，是否存在一条既满足在线 SLA、又能显著降低硬件成本的可落地路径。"
-    },
-    {
-      "rank": 8,
-      "title": "多智能体不是越多越强：我用100行Python，拆穿AI Agent协作的真相",
-      "url": "https://www.51cto.com/article/850375.html",
-      "hot": "现实是什么？现实是我见过太多人把一个本来单智能体能干好的活，硬拆成五个角色，然后花两周时间调试“为什么产品经理说的话程序员理解错了”。最后系统跑通了，效果还不如原来那个单智能体，token 消耗翻了四倍。"
-    },
-    {
-      "rank": 9,
-      "title": "AI 正在替代运维三类重复工作：日志排查、告警收敛、脚本编写，转型路线收好",
-      "url": "https://www.51cto.com/article/850374.html",
-      "hot": "AI 干重复性高、有规律、核心是经验积累这类活比人强得多。"
-    },
-    {
       "rank": 10,
-      "title": "用老祖宗的智慧根治大模型幻觉",
-      "url": "https://www.51cto.com/article/850371.html",
-      "hot": "解决幻觉不能只靠一句「请准确回答」。还得让模型知道什么时候该停，什么时候该找证据。"
+      "title": "安谋科技Arm China闪耀WAIC | AI前瞻分享，Arm无处不在，让AI触手可及",
+      "url": "https://www.51cto.com/article/850384.html",
+      "hot": "安谋科技Arm China近日宣布首次亮相WAIC，携手Arm生态，通过Edge AI、Physical AI、Cloud AI三大业务展区，系统呈现了计算平台、开发板、终端应用的完整AI落地图谱，诠释了无处不在的Arm技术如何驱动AI在千行百业规模化落地。"
     }
   ]
 }

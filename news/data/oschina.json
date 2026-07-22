@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-22T03:33:09+00:00",
+  "updated_at": "2026-07-22T06:12:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "宇树科技发布 UnifoLM-OminiA-0.3",
+      "url": "https://www.oschina.net/news/476701",
+      "hot": "Wed, 22 Jul 2026 14:06:32 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Next.js v16.2.11 发布",
+      "url": "https://www.oschina.net/news/476610/nextjs-16-2-11-released",
+      "hot": "Wed, 22 Jul 2026 11:45:25 +0800"
+    },
+    {
+      "rank": 3,
       "title": "如何在 Elasticsearch 中使用 BBQ 将 Jina v5 嵌入缩小 29 倍而不损失召回率",
       "url": "https://my.oschina.net/u/3343882/blog/19725387",
       "hot": "Wed, 22 Jul 2026 11:23:52 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Firefox 153.0 发布",
       "url": "https://www.oschina.net/news/476582/firefox-153-0-released",
       "hot": "Wed, 22 Jul 2026 11:18:15 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Kimi K3 实战对标 Fable 5：开源模型在 SWE-bench 上几乎打平了",
       "url": "https://www.oschina.net/news/476574/kimi-k3-fable-compared-by-fireworks-ai",
       "hot": "Wed, 22 Jul 2026 11:10:50 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Grafana 13.1.1 发布，系统指标监控与分析平台",
       "url": "https://www.oschina.net/news/476557/grafana-13-1-1-released",
       "hot": "Wed, 22 Jul 2026 11:00:28 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "Google Gemini 一口气发了三个新模型，还有一个只给政府用",
       "url": "https://www.oschina.net/news/476554/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber",
       "hot": "Wed, 22 Jul 2026 10:53:34 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "GPT-5.6 为了在测试里拿高分，黑了 Hugging Face 的生产环境",
       "url": "https://www.oschina.net/news/476550/hugging-face-model-evaluation-security-incident",
       "hot": "Wed, 22 Jul 2026 10:47:24 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "腾讯云开源自研 AI 助手 Octop",
       "url": "https://www.oschina.net/news/476519",
       "hot": "Wed, 22 Jul 2026 10:14:23 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "SunnyUI V3.9.8 发布啦，C# WinForm 开源控件库！",
       "url": "https://www.oschina.net/news/476515/sunnyui-3-9-8-released",
       "hot": "Wed, 22 Jul 2026 10:04:12 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "EasyGoAdmin 敏捷开发框架 Gin+EleVue 版本 v3.1.1 发布",
-      "url": "https://www.oschina.net/news/476457",
-      "hot": "Wed, 22 Jul 2026 06:48:46 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "7-Zip 被曝缓冲区溢出漏洞，可被用于远程执行任意代码",
-      "url": "https://www.oschina.net/news/476199",
-      "hot": "Tue, 21 Jul 2026 19:28:15 +0800"
     }
   ]
 }

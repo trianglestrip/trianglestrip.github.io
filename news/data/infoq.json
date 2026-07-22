@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-22T03:33:10+00:00",
+  "updated_at": "2026-07-22T06:12:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Uber 如何构建具备区域故障容错能力的 OpenSearch 集群",
+      "url": "https://www.infoq.cn/article/o3bsr8iSF5bHNa6H4zrt?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 22 Jul 2026 14:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "智算集群基础设施运维通用技术要求",
+      "url": "https://www.infoq.cn/minibook/YooWx1oj7EFSLmGAj1mp?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 22 Jul 2026 12:54:03 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "2025龙蜥开源社区操作系统白皮书",
+      "url": "https://www.infoq.cn/minibook/VzOLqfq7R99d9jbZHlHh?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 22 Jul 2026 12:36:34 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Jiuwen Symbiosis深度解析：从数字世界走向物理世界，为Physical AI打造Symbiosis (共生)",
+      "url": "https://www.infoq.cn/article/BmyIPDkVKj11vspmB6su?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 22 Jul 2026 12:10:35 GMT"
+    },
+    {
+      "rank": 5,
       "title": "Google Cloud Workbench Notebooks 扩展将 VS Code 与 Google Cloud 的 Jupyter Notebooks 连接了起来",
       "url": "https://www.infoq.cn/article/xKwcWiDKrEymUNaLwkAL?utm_source=rss&utm_medium=article",
       "hot": "Wed, 22 Jul 2026 11:01:58 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "支付宝 xUI -- “阿宝”背后的 Agentic 终端交互引擎｜AICon深圳",
       "url": "https://www.infoq.cn/article/OJ0K1cGSLUNW0i07JGfL?utm_source=rss&utm_medium=article",
       "hot": "Wed, 22 Jul 2026 10:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "跟上 AI 的节奏：为演进式架构构建上下文存储库",
       "url": "https://www.infoq.cn/article/XEta3vMDDHVIeS6qQe2P?utm_source=rss&utm_medium=article",
       "hot": "Wed, 22 Jul 2026 09:50:52 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "营收破百亿后，平头哥把目光投向芯片之外",
       "url": "https://www.infoq.cn/article/a0vMjiamJhl9L91g9M5H?utm_source=rss&utm_medium=article",
       "hot": "Tue, 21 Jul 2026 21:20:25 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "GOAI 世界人工智能开源大赛四大赛道正式发布",
       "url": "https://www.infoq.cn/article/aBFeKFvlAt7vFfsv7arl?utm_source=rss&utm_medium=article",
       "hot": "Tue, 21 Jul 2026 20:17:22 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "通往数据主权之路：本地优先计算面临的挑战与优先事项",
       "url": "https://www.infoq.cn/article/p6lR4aHNP5N7mdmw3UiJ?utm_source=rss&utm_medium=article",
       "hot": "Tue, 21 Jul 2026 17:21:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Hugging Face遭攻击后，只能靠GLM 5.2救场？白宫AI顾问急眼喊话：“我们要没竞争力了”",
-      "url": "https://www.infoq.cn/article/xcmJWdpD1F509hxYy6N9?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 21 Jul 2026 16:14:20 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "OpenSQZ Glass：让端侧全双工全模态模型进入第一视角的可穿戴世界",
-      "url": "https://www.infoq.cn/article/UZ1j5LXmjNgiCfu5QL0s?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 21 Jul 2026 15:22:44 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "16 万 Star 的 OpenCode 彻底重写：API 全部重做、Bun 换 Node、桌面端迁移 Electron",
-      "url": "https://www.infoq.cn/article/6yN5sFxOqoBX2h32YtjC?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 21 Jul 2026 14:53:28 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "龙虾之父一条推文，Loop 时代终结？",
-      "url": "https://www.infoq.cn/article/58Vmogt2bAU6ciTIAuDt?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 21 Jul 2026 14:48:02 GMT"
     }
   ]
 }
