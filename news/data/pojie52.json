@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-07-22T06:12:47+00:00",
+  "updated_at": "2026-07-22T08:43:42+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,9 +48,9 @@
     },
     {
       "rank": 8,
-      "title": "逆向分析某排八字软件的过程",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114056",
-      "hot": "[md]# 逆向排八字程序过程\n\n## 信息\n- 网：aHR0cDovL25mYmF6aS5jb20vcWl0YS9Eb3dubG9hZC5odG0=\n- 文件名：排八字.exe\n- 大小：3,249,664 字节\n\n## 初步分析\n\n看到了这个东西要安装 .NET 运行时，最近想找 .NET  ..."
+      "title": "破解 Trae CN 加密协议",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113927",
+      "hot": ""
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "Sality病毒样本分析",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113452",
-      "hot": "[md]# 前言\n本人小白一枚，第一次发帖，写的不好求轻喷 \n样本来源[https://www.52pojie.cn/thread-2104234-1-1.html](https://www.52pojie.cn/thread-2104234-1-1.html)\n\n# 样本概述\n样本为Sality病毒变种 ..."
+      "title": "绕过DirtySepolicy 用户层检测root",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2113265",
+      "hot": "[md]# APatch KPM 开发：绕过 DirtySepolicy / Duck Detector 的 SELinux Root 检测\n\n&gt; 从 30 次死机重启中学到的：不是所有内核函数都能 hook，不是所有 syscall 都会经过文件系统，不是所有 kfunc 都存在于你的内核版 ..."
     }
   ]
 }

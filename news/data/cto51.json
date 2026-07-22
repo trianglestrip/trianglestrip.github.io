@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-22T06:12:51+00:00",
+  "updated_at": "2026-07-22T08:43:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "智源多模型测试：大语言模型智能体具备协助绕过现有生物安全机制的技术能力",
+      "url": "https://www.51cto.com/article/850448.html",
+      "hot": "现有研究已开始评测前沿模型的病毒学知识和实验推理能力，但在真实的潜在风险链条中，模型究竟能提供多大程度的实质性帮助，需要进行验证，特别是当模型以智能体形态出现，能组合知识库、搜索引擎、文件读写等工具时，其有效能力边界可能远超单轮问答的测试结果。​智源研究院大模型安全研究团队与北京大学围绕这一核心问题，开展了一项端到端系统性评估。"
+    },
+    {
+      "rank": 2,
+      "title": "Linux 内核借助 AI 检测在 24 小时内修复 400 多个漏洞",
+      "url": "https://www.51cto.com/article/850414.html",
+      "hot": "这些漏洞公告发布的速度与规模，伴随着 AI 辅助安全研究在 Linux 生态系统中日益增长的影响力。"
+    },
+    {
+      "rank": 3,
+      "title": "Pandas 精通 12：综合实战+常用函数速查，成为数据处理高手",
+      "url": "https://www.51cto.com/article/850426.html",
+      "hot": "今天这篇既是综合实战大练兵（把零散知识点串起来），也是一份可收藏的常用函数速查手册，帮你彻底吃透Pandas，从“会用”变成“精通”！"
+    },
+    {
+      "rank": 4,
       "title": "Cortex：自主切分规划subtask，上海AI Lab提出双向协同Agent实现长程化学操作任务",
       "url": "https://www.51cto.com/article/850423.html",
       "hot": "近日，来自清华大学、上海人工智能实验室等机构的研究团队提出了 Cortex，一个面向长程机器人操作的双系统具身智能体框架。"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "我在WAIC 2026看见的十大趋势",
       "url": "https://www.51cto.com/article/850419.html",
       "hot": "如果你没能肉身前往，或者来不及看完一场又一场发布和展出，欢迎通过我们这份言简意赅的总结，快速了解今年WAIC上呈现的趋势。"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "GPT-6为刷榜黑进Hugging Face，捅篓子还得靠GLM-5.2追查...",
       "url": "https://www.51cto.com/article/850417.html",
       "hot": "OpenAI刚刚公开认领了一起《重大》安全事故。GPT-5.6 Sol与一款能力更强的未发布模型，在接受网络安全测试，成功逃出了内部隔离环境，一路闯进了Hugging Face的生产系统。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "游玮博士出席WAIC论坛｜筑好通用技术底座，埃夫特&启智交出工业具身落地答卷",
       "url": "https://www.51cto.com/article/850416.html",
       "hot": "2026世界人工智能大会期间，埃夫特&启智董事长游玮博士受邀出席上海马桥AI创新试验区主办的\"具身智能产业生态论坛\"，发表题为《工业具身落地路径探讨》的主旨演讲。游玮博士直指行业\"重演示、轻落地\"的盲区，紧扣工业核心痛点，给出了作为\"实干派\"的一系列具身智能产业发展的深刻洞察和预判。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "爆改GLM-5.2！全球首款200万上下文混合LoRA开源，外挂四大专家彻底治愈技能冲突",
       "url": "https://www.51cto.com/article/850415.html",
       "hot": "Macaron-V1 是心洲科技旗下前沿实验室 Mind Lab 推出的最新模型，定位是面向个人智能体场景。权重、官方 API、配套工具都已经开源上线"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "WordPress wp2shell 漏洞利用激增：公开 PoC 触发大规模扫描",
       "url": "https://www.51cto.com/article/850412.html",
       "hot": "建议防御者检查其 WordPress 实例中是否出现新的管理员账户、恶意插件或其他可疑文件，无论是否已打补丁，以彻底清除威胁。"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "是 Kable 不是 Fable，Kimi 向全世界证明了四件事",
       "url": "https://www.51cto.com/article/850366.html",
       "hot": "作为全球首个开源 3 万亿级大模型（总参数 2.8 万亿），这个数字足够震撼。从 K2 的万亿参数，到今天的 K3，中国开源模型再次刷新了模型规模的上限，海内外不少网友惊呼，这款开源模型性能足以替代昂贵的 Claude Fable 5 和 GPT 5.6 Sol。"
-    },
-    {
-      "rank": 8,
-      "title": "无密码无钓鱼照样拖空数据：机器身份债务已成安全隐形炸弹",
-      "url": "https://www.51cto.com/article/850411.html",
-      "hot": "机器身份债务之所以危险，恰恰在于它通常不以故障形式出现。一个过期项目遗留的服务账号不会主动报警，一枚多年未轮换的令牌也不会影响业务运行，一项过度授权的OAuth集成甚至会让某些流程看起来更加顺畅。它们看起来都在\"正常工作\"，直到凭据落入了不该拥有它的人手中。"
-    },
-    {
-      "rank": 9,
-      "title": "具身智能或进入token时代，清华团队提出Harness VLA引领范式变迁",
-      "url": "https://www.51cto.com/article/850395.html",
-      "hot": "清华大学于超教授团队联合正行创新、无问芯穹提出的 Harness VLA，首次将 Harness Layer 引入具身智能。"
-    },
-    {
-      "rank": 10,
-      "title": "安谋科技Arm China闪耀WAIC | AI前瞻分享，Arm无处不在，让AI触手可及",
-      "url": "https://www.51cto.com/article/850384.html",
-      "hot": "安谋科技Arm China近日宣布首次亮相WAIC，携手Arm生态，通过Edge AI、Physical AI、Cloud AI三大业务展区，系统呈现了计算平台、开发板、终端应用的完整AI落地图谱，诠释了无处不在的Arm技术如何驱动AI在千行百业规模化落地。"
     }
   ]
 }
