@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-22T14:25:56+00:00",
+  "updated_at": "2026-07-22T17:07:52+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,33 +18,33 @@
     },
     {
       "rank": 3,
-      "title": "三国第一部：争洛阳",
-      "url": "https://movie.douban.com/subject/36752981/",
-      "hot": "评分 8.1"
-    },
-    {
-      "rank": 4,
-      "title": "痴迷",
-      "url": "https://movie.douban.com/subject/37450627/",
-      "hot": "评分 7.7"
-    },
-    {
-      "rank": 5,
-      "title": "后室",
-      "url": "https://movie.douban.com/subject/36235977/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 6,
       "title": "雀骨",
       "url": "https://movie.douban.com/subject/37317368/",
       "hot": ""
     },
     {
-      "rank": 7,
+      "rank": 4,
+      "title": "后室",
+      "url": "https://movie.douban.com/subject/36235977/",
+      "hot": "评分 6.7"
+    },
+    {
+      "rank": 5,
+      "title": "痴迷",
+      "url": "https://movie.douban.com/subject/37450627/",
+      "hot": "评分 7.7"
+    },
+    {
+      "rank": 6,
       "title": "群星闪耀时",
       "url": "https://movie.douban.com/subject/35875462/",
       "hot": ""
+    },
+    {
+      "rank": 7,
+      "title": "三国第一部：争洛阳",
+      "url": "https://movie.douban.com/subject/36752981/",
+      "hot": "评分 8.1"
     },
     {
       "rank": 8,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "火遮眼",
-      "url": "https://movie.douban.com/subject/36877245/",
-      "hot": "评分 7.8"
+      "title": "这一秒过火",
+      "url": "https://movie.douban.com/subject/37096230/",
+      "hot": ""
     }
   ]
 }

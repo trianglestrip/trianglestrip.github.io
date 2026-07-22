@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-22T14:26:28+00:00",
+  "updated_at": "2026-07-22T17:08:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Back to Kagi",
-      "url": "https://blog.melashri.net/micro/back-to-kagi/",
-      "hot": "104"
+      "title": "Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab)",
+      "url": "https://bento.page/slides/",
+      "hot": "199"
     },
     {
       "rank": 2,
-      "title": "Why Do You Suck at Juggling?",
-      "url": "https://pgadey.ca/notes/suck-at-juggling/",
-      "hot": "30"
+      "title": "Show HN: HN Hall of Fame – browse 3,100 legendary Hacker News links",
+      "url": "https://www.orangecrumbs.com/hall/",
+      "hot": "81"
     },
     {
       "rank": 3,
-      "title": "OpenAI and Hugging Face address security incident during model evaluation",
-      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
-      "hot": "1393"
+      "title": "Making",
+      "url": "https://beej.us/blog/data/ai-making/",
+      "hot": "70"
     },
     {
       "rank": 4,
-      "title": "Introduction to Formal Verification with Lean Part 1",
-      "url": "https://hashcloak.com/blog/tutorial-introduction-to-formal-verification-with-lean-(part-1)",
-      "hot": "143"
+      "title": "The startup's Postgres survival guide",
+      "url": "https://hatchet.run/blog/postgres-survival-guide",
+      "hot": "135"
     },
     {
       "rank": 5,
-      "title": "Kimi K3 Is Competitive with Fable; Kimi K3 and Fable Is SoTA",
-      "url": "https://fireworks.ai/blog/kimik3-fable",
-      "hot": "772"
-    },
-    {
-      "rank": 6,
-      "title": "Businesses with ugly AI menu redesigns",
-      "url": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
-      "hot": "89"
-    },
-    {
-      "rank": 7,
-      "title": "10 REM\"_(C2SLFF4",
-      "url": "https://beej.us/blog/data/mystery-comment/",
+      "title": "Airbus Full Scale Foldable Wing Extensions",
+      "url": "https://www.airbus.com/en/newsroom/press-releases/2026-07-airbus-launches-new-flight-test-programme-for-wing-of-tomorrow",
       "hot": "36"
     },
     {
+      "rank": 6,
+      "title": "Can a MUD evaluate LLMs? A $99 proof of concept",
+      "url": "https://cruciblebench.ai/",
+      "hot": "13"
+    },
+    {
+      "rank": 7,
+      "title": "Critical Minerals: Reducing U.S. Import Reliance with Substitution and Recycling",
+      "url": "https://www.gao.gov/products/gao-26-108687",
+      "hot": "18"
+    },
+    {
       "rank": 8,
-      "title": "Cornell's Interactive Wall of Birds",
-      "url": "https://academy.allaboutbirds.org/features/wallofbirds/?_hsmi=428996456",
-      "hot": "31"
+      "title": "10 REM\"_(C2SLFF4",
+      "url": "https://beej.us/blog/data/mystery-comment/",
+      "hot": "113"
     },
     {
       "rank": 9,
-      "title": "Intel Starts Shipping High-NA EUV Silicon",
-      "url": "https://morethanmoore.substack.com/p/intel-starts-shipping-high-na-euv",
-      "hot": "163"
+      "title": "Neo Radar: A browser-based orbital mechanics engine with 41k real asteroids",
+      "url": "https://neoradar.space",
+      "hot": "23"
     },
     {
       "rank": 10,
-      "title": "Original Apollo 11 Guidance Computer source code for command and lunar modules",
-      "url": "https://github.com/chrislgarry/Apollo-11",
-      "hot": "122"
+      "title": "Launch HN: Unlayer (YC W22) – Add email and document builders to your app",
+      "url": "https://unlayer.com",
+      "hot": "9"
     }
   ]
 }
