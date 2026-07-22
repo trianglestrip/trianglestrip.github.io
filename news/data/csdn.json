@@ -1,69 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-22T19:48:45+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-07-22T21:54:47+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude Code 接蓝耘实测：选第三方 API 的三条铁律",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163052500",
-      "hot": "23033"
+      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从有趣的词嵌入到文本卷积:用PyTorch拆解NLP文本分类的关键路径)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/162908843",
+      "hot": "18016"
     },
     {
       "rank": 2,
-      "title": "中级OpenGL教程 023：Assimp模型加载全解——从源码到架构的骈文探秘",
-      "url": "https://blog.csdn.net/2503_92624912/article/details/163005474",
-      "hot": "16578"
+      "title": "AI 造假泛滥下的跨模态鉴伪解决方案：技术原理与实用工具解析",
+      "url": "https://blog.csdn.net/yuan2019035055/article/details/163104519",
+      "hot": "15670"
     },
     {
       "rank": 3,
-      "title": "AI 造假泛滥下的跨模态鉴伪解决方案：技术原理与实用工具解析",
-      "url": "https://blog.csdn.net/yuan2019035055/article/details/163104519",
-      "hot": "14443"
+      "title": "【Linux库制作与原理进阶】从 ELF 装载到延迟绑定：搞懂动态库、GOT 与 PLT",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/163081648",
+      "hot": "12602"
     },
     {
       "rank": 4,
-      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从有趣的词嵌入到文本卷积:用PyTorch拆解NLP文本分类的关键路径)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/162908843",
-      "hot": "13784"
+      "title": "2026最新5大远程软件硬核横测：ToDesk_向日葵_TeamViewer_UU_AnyDesk，谁配叫画质天花板？",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/163033743",
+      "hot": "11904"
     },
     {
       "rank": 5,
-      "title": "2026最新5大远程软件硬核横测：ToDesk_向日葵_TeamViewer_UU_AnyDesk，谁配叫画质天花板？",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/163033743",
-      "hot": "12049"
+      "title": "Codex 长期任务五层工作系统：让 AI 跨小时、跨会话持续推进",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/162941467",
+      "hot": "11853"
     },
     {
       "rank": 6,
-      "title": "【Linux库制作与原理进阶】从 ELF 装载到延迟绑定：搞懂动态库、GOT 与 PLT",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/163081648",
-      "hot": "11913"
+      "title": "中级OpenGL教程 023：Assimp模型加载全解——从源码到架构的骈文探秘",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/163005474",
+      "hot": "11249"
     },
     {
       "rank": 7,
-      "title": "Codex 长期任务五层工作系统：让 AI 跨小时、跨会话持续推进",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/162941467",
-      "hot": "11462"
+      "title": "Claude Code 接蓝耘实测：选第三方 API 的三条铁律",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163052500",
+      "hot": "11186"
     },
     {
       "rank": 8,
-      "title": "破除工业 AI 业务落地壁垒：多模时序融合架构重塑设备全维度数据价值",
-      "url": "https://blog.csdn.net/2301_80350265/article/details/163084783",
-      "hot": "10771"
+      "title": "《STL 时空漫游指南》栈上的精灵：SSO 如何让 std::string 在时间的夹缝中起舞——string使用接口详解",
+      "url": "https://blog.csdn.net/buhuizhiyuci/article/details/163080954",
+      "hot": "9859"
     },
     {
       "rank": 9,
-      "title": "MySQL/PostgreSQL 迁移金仓 KES：LEFT JOIN 丢数据排查与避坑指南",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/163026470",
-      "hot": "10050"
+      "title": "【AI 测评】想用自己的声音给视频配音？Index-TTS本地部署这样做",
+      "url": "https://blog.csdn.net/2402_87298751/article/details/163048294",
+      "hot": "9733"
     },
     {
       "rank": 10,
-      "title": "【AVDTP】规范精讲[5]: 从源码到空中包，拆解AVDTP内部运行架构",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/162977553",
-      "hot": "9714"
+      "title": "当人眼分辨AI作品开始失效：我在线体验了合合信息 AI 跨模态鉴伪，图片、视频、文本如何被高效识别？",
+      "url": "https://blog.csdn.net/qq_44866828/article/details/163086315",
+      "hot": "9702"
     }
   ]
 }
