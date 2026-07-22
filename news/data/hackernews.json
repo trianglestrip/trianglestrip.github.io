@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-22T17:08:15+00:00",
+  "updated_at": "2026-07-22T19:48:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab)",
-      "url": "https://bento.page/slides/",
-      "hot": "199"
+      "title": "Terrence Tao's ChatGPT Conversation about the Jacobian Conjecture Counterexample",
+      "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+      "hot": "283"
     },
     {
       "rank": 2,
-      "title": "Show HN: HN Hall of Fame – browse 3,100 legendary Hacker News links",
-      "url": "https://www.orangecrumbs.com/hall/",
-      "hot": "81"
+      "title": "GigaToken: ~1000x faster Language model tokenization",
+      "url": "https://github.com/marcelroed/gigatoken/",
+      "hot": "160"
     },
     {
       "rank": 3,
-      "title": "Making",
-      "url": "https://beej.us/blog/data/ai-making/",
-      "hot": "70"
+      "title": "Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab)",
+      "url": "https://bento.page/slides/",
+      "hot": "460"
     },
     {
       "rank": 4,
-      "title": "The startup's Postgres survival guide",
-      "url": "https://hatchet.run/blog/postgres-survival-guide",
-      "hot": "135"
+      "title": "Are AI Labs Pelicanmaxxing?",
+      "url": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+      "hot": "130"
     },
     {
       "rank": 5,
-      "title": "Airbus Full Scale Foldable Wing Extensions",
-      "url": "https://www.airbus.com/en/newsroom/press-releases/2026-07-airbus-launches-new-flight-test-programme-for-wing-of-tomorrow",
-      "hot": "36"
+      "title": "Making",
+      "url": "https://beej.us/blog/data/ai-making/",
+      "hot": "189"
     },
     {
       "rank": 6,
-      "title": "Can a MUD evaluate LLMs? A $99 proof of concept",
-      "url": "https://cruciblebench.ai/",
-      "hot": "13"
+      "title": "Nobody knows what a used GPU cluster is worth",
+      "url": "https://ciphertalk.substack.com/p/nobody-knows-what-a-used-gpu-cluster",
+      "hot": "73"
     },
     {
       "rank": 7,
-      "title": "Critical Minerals: Reducing U.S. Import Reliance with Substitution and Recycling",
-      "url": "https://www.gao.gov/products/gao-26-108687",
-      "hot": "18"
+      "title": "The startup's Postgres survival guide",
+      "url": "https://hatchet.run/blog/postgres-survival-guide",
+      "hot": "223"
     },
     {
       "rank": 8,
-      "title": "10 REM\"_(C2SLFF4",
-      "url": "https://beej.us/blog/data/mystery-comment/",
-      "hot": "113"
+      "title": "Everyone Should Know SIMD",
+      "url": "https://mitchellh.com/writing/everyone-should-know-simd",
+      "hot": "41"
     },
     {
       "rank": 9,
-      "title": "Neo Radar: A browser-based orbital mechanics engine with 41k real asteroids",
-      "url": "https://neoradar.space",
-      "hot": "23"
+      "title": "Can a MUD evaluate LLMs? A $99 proof of concept",
+      "url": "https://cruciblebench.ai/",
+      "hot": "62"
     },
     {
       "rank": 10,
-      "title": "Launch HN: Unlayer (YC W22) – Add email and document builders to your app",
-      "url": "https://unlayer.com",
-      "hot": "9"
+      "title": "Ghost Cut – or why Cut and Paste is broken everywhere",
+      "url": "https://ishmael.textualize.io/blog/ghost-cut/",
+      "hot": "77"
     }
   ]
 }

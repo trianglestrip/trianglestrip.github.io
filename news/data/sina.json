@@ -1,69 +1,68 @@
 {
   "source": "sina",
   "title": "新浪热榜",
-  "updated_at": "2026-07-22T18:20:54+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-07-22T19:49:04+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "日媒播出731部队专题片",
       "url": "https://so.sina.cn/search/list.d.html?keyword=%E6%97%A5%E5%AA%92%E6%92%AD%E5%87%BA731%E9%83%A8%E9%98%9F%E4%B8%93%E9%A2%98%E7%89%87",
-      "hot": "361万"
+      "hot": "330万"
     },
     {
       "rank": 2,
       "title": "2026数字丝路发展论坛",
       "url": "https://so.sina.cn/search/list.d.html?keyword=2026%E6%95%B0%E5%AD%97%E4%B8%9D%E8%B7%AF%E5%8F%91%E5%B1%95%E8%AE%BA%E5%9D%9B",
-      "hot": "300万"
+      "hot": "281万"
     },
     {
       "rank": 3,
-      "title": "别再给AI乱传文件了",
-      "url": "https://so.sina.cn/search/list.d.html?keyword=%E5%88%AB%E5%86%8D%E7%BB%99AI%E4%B9%B1%E4%BC%A0%E6%96%87%E4%BB%B6%E4%BA%86",
-      "hot": "300万"
+      "title": "为什么要说尽量少跟AI倾诉聊天",
+      "url": "https://so.sina.cn/search/list.d.html?keyword=%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AF%B4%E5%B0%BD%E9%87%8F%E5%B0%91%E8%B7%9FAI%E5%80%BE%E8%AF%89%E8%81%8A%E5%A4%A9",
+      "hot": "279万"
     },
     {
       "rank": 4,
-      "title": "为什么要说尽量少跟AI倾诉聊天",
-      "url": "https://so.sina.cn/search/list.d.html?keyword=%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AF%B4%E5%B0%BD%E9%87%8F%E5%B0%91%E8%B7%9FAI%E5%80%BE%E8%AF%89%E8%81%8A%E5%A4%A9",
-      "hot": "297万"
+      "title": "谁发明的酒店半透明玻璃浴室",
+      "url": "https://so.sina.cn/search/list.d.html?keyword=%E8%B0%81%E5%8F%91%E6%98%8E%E7%9A%84%E9%85%92%E5%BA%97%E5%8D%8A%E9%80%8F%E6%98%8E%E7%8E%BB%E7%92%83%E6%B5%B4%E5%AE%A4",
+      "hot": "268万"
     },
     {
       "rank": 5,
-      "title": "东山精密光模块被盗",
-      "url": "https://so.sina.cn/search/list.d.html?keyword=%E4%B8%9C%E5%B1%B1%E7%B2%BE%E5%AF%86%E5%85%89%E6%A8%A1%E5%9D%97%E8%A2%AB%E7%9B%97",
-      "hot": "292万"
+      "title": "别再给AI乱传文件了",
+      "url": "https://so.sina.cn/search/list.d.html?keyword=%E5%88%AB%E5%86%8D%E7%BB%99AI%E4%B9%B1%E4%BC%A0%E6%96%87%E4%BB%B6%E4%BA%86",
+      "hot": "265万"
     },
     {
       "rank": 6,
-      "title": "和女同事开玩笑被打还被开除",
-      "url": "https://so.sina.cn/search/list.d.html?keyword=%E5%92%8C%E5%A5%B3%E5%90%8C%E4%BA%8B%E5%BC%80%E7%8E%A9%E7%AC%91%E8%A2%AB%E6%89%93%E8%BF%98%E8%A2%AB%E5%BC%80%E9%99%A4",
-      "hot": "291万"
+      "title": "王者牛年限定皮肤返场",
+      "url": "https://so.sina.cn/search/list.d.html?keyword=%E7%8E%8B%E8%80%85%E7%89%9B%E5%B9%B4%E9%99%90%E5%AE%9A%E7%9A%AE%E8%82%A4%E8%BF%94%E5%9C%BA",
+      "hot": "261万"
     },
     {
       "rank": 7,
-      "title": "谁发明的酒店半透明玻璃浴室",
-      "url": "https://so.sina.cn/search/list.d.html?keyword=%E8%B0%81%E5%8F%91%E6%98%8E%E7%9A%84%E9%85%92%E5%BA%97%E5%8D%8A%E9%80%8F%E6%98%8E%E7%8E%BB%E7%92%83%E6%B5%B4%E5%AE%A4",
-      "hot": "288万"
+      "title": "第五人格",
+      "url": "https://so.sina.cn/search/list.d.html?keyword=%E7%AC%AC%E4%BA%94%E4%BA%BA%E6%A0%BC",
+      "hot": "260万"
     },
     {
       "rank": 8,
       "title": "网传“养老服务师考试10月开考”不实",
       "url": "https://news.sina.com.cn/o/2026-07-21/doc-iniiqknx2435686.shtml",
-      "hot": "286万"
+      "hot": "260万"
     },
     {
       "rank": 9,
-      "title": "耐克一刀砍了滔搏22%生意体量",
-      "url": "https://so.sina.cn/search/list.d.html?keyword=%E8%80%90%E5%85%8B%E4%B8%80%E5%88%80%E7%A0%8D%E4%BA%86%E6%BB%94%E6%90%8F22%25%E7%94%9F%E6%84%8F%E4%BD%93%E9%87%8F",
-      "hot": "286万"
+      "title": "和女同事开玩笑被打还被开除",
+      "url": "https://so.sina.cn/search/list.d.html?keyword=%E5%92%8C%E5%A5%B3%E5%90%8C%E4%BA%8B%E5%BC%80%E7%8E%A9%E7%AC%91%E8%A2%AB%E6%89%93%E8%BF%98%E8%A2%AB%E5%BC%80%E9%99%A4",
+      "hot": "260万"
     },
     {
       "rank": 10,
-      "title": "李昀锐晒空姐给的玩具",
-      "url": "https://so.sina.cn/search/list.d.html?keyword=%E6%9D%8E%E6%98%80%E9%94%90%E6%99%92%E7%A9%BA%E5%A7%90%E7%BB%99%E7%9A%84%E7%8E%A9%E5%85%B7",
-      "hot": "285万"
+      "title": "BLG首发上单",
+      "url": "https://so.sina.cn/search/list.d.html?keyword=BLG%E9%A6%96%E5%8F%91%E4%B8%8A%E5%8D%95",
+      "hot": "259万"
     }
   ]
 }
