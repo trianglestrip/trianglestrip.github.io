@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-22T12:17:33+00:00",
+  "updated_at": "2026-07-22T18:20:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "thinkingmachines/Inkling",
       "url": "https://huggingface.co/thinkingmachines/Inkling",
-      "hot": "1404"
+      "hot": "1431"
     },
     {
       "rank": 2,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "2650"
+      "hot": "2685"
     },
     {
       "rank": 3,
       "title": "prism-ml/Ternary-Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-      "hot": "914"
+      "hot": "930"
     },
     {
       "rank": 4,
-      "title": "prism-ml/Bonsai-27B-gguf",
-      "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
-      "hot": "581"
+      "title": "poolside/Laguna-S-2.1",
+      "url": "https://huggingface.co/poolside/Laguna-S-2.1",
+      "hot": "362"
     },
     {
       "rank": 5,
-      "title": "poolside/Laguna-S-2.1",
-      "url": "https://huggingface.co/poolside/Laguna-S-2.1",
-      "hot": "292"
+      "title": "prism-ml/Bonsai-27B-gguf",
+      "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
+      "hot": "588"
     },
     {
       "rank": 6,
-      "title": "zai-org/GLM-5.2",
-      "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4307"
+      "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "hot": "310"
     },
     {
       "rank": 7,
-      "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "287"
+      "title": "zai-org/GLM-5.2",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "hot": "4330"
     },
     {
       "rank": 8,
-      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-      "hot": "2986"
+      "title": "Nanbeige/Nanbeige4.2-3B",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+      "hot": "208"
     },
     {
       "rank": 9,
-      "title": "conradlocke/krea2-identity-edit",
-      "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
-      "hot": "486"
+      "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "hot": "2994"
     },
     {
       "rank": 10,
-      "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-      "hot": "2395"
+      "title": "conradlocke/krea2-identity-edit",
+      "url": "https://huggingface.co/conradlocke/krea2-identity-edit",
+      "hot": "488"
     }
   ]
 }
