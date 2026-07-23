@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-23T12:56:10+00:00",
+  "updated_at": "2026-07-23T14:57:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Understanding the AI Economy",
-      "url": "https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/",
-      "hot": "47"
+      "title": "Astronomers may have found the first exomoon",
+      "url": "https://www.eso.org/public/news/eso2610/",
+      "hot": "66"
     },
     {
       "rank": 2,
-      "title": "Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample",
-      "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
-      "hot": "954"
+      "title": "Private healthcare makes industries less innovative. It's time for change",
+      "url": "https://werd.io/private-healthcare-makes-industries-less-innovative-its-time-for-change/",
+      "hot": "56"
     },
     {
       "rank": 3,
-      "title": "Cruller: Bun's Zig Runtime, Continued on Zig 0.16",
-      "url": "https://ziggit.dev/t/cruller-buns-zig-runtime-continued-on-zig-0-16/16734",
-      "hot": "86"
+      "title": "Software rendering in 500 lines of bare C++",
+      "url": "https://haqr.eu/tinyrenderer/",
+      "hot": "18"
     },
     {
       "rank": 4,
-      "title": "Quality non-fiction books are the antithesis of AI slop",
-      "url": "https://resobscura.substack.com/p/quality-non-fiction-books-are-the",
-      "hot": "412"
+      "title": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
+      "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
+      "hot": "148"
     },
     {
       "rank": 5,
-      "title": "The Unity CLI: manage Unity from your terminal",
-      "url": "https://unity.com/blog/meet-the-unity-cli",
-      "hot": "29"
+      "title": "Scanning for Pangram Errors",
+      "url": "https://veryfineprint.substack.com/p/scanning-for-pangram-errors",
+      "hot": "39"
     },
     {
       "rank": 6,
-      "title": "Escape IntelliJ: Scala and Kotlin LSPs on Emacs Eglot",
-      "url": "https://jointhefreeworld.org/blog/articles/emacs/emacs-eglot-scala-kotlin/index.html",
-      "hot": "97"
+      "title": "Writing by Hand is Good for your Brain",
+      "url": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
+      "hot": "23"
     },
     {
       "rank": 7,
-      "title": "New Framework Desktop Option with AMD Ryzen AI Max+ Pro 495 and 192GB Memory",
-      "url": "https://frame.work/desktop?tab=192gb-coming-soon",
-      "hot": "49"
+      "title": "The Telegarden (1995-2004)",
+      "url": "https://goldberg.berkeley.edu/garden/",
+      "hot": "14"
     },
     {
       "rank": 8,
-      "title": "Everyone should know SIMD",
-      "url": "https://mitchellh.com/writing/everyone-should-know-simd",
-      "hot": "498"
+      "title": "Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample",
+      "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+      "hot": "1017"
     },
     {
       "rank": 9,
-      "title": "Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab)",
-      "url": "https://bento.page/slides/",
-      "hot": "897"
+      "title": "Cruller: Bun's Zig Runtime, Continued on Zig 0.16",
+      "url": "https://ziggit.dev/t/cruller-buns-zig-runtime-continued-on-zig-0-16/16734",
+      "hot": "121"
     },
     {
       "rank": 10,
-      "title": "GigaToken: ~1000x faster Language model tokenization",
-      "url": "https://github.com/marcelroed/gigatoken/",
-      "hot": "543"
+      "title": "Quality non-fiction books are the antithesis of AI slop",
+      "url": "https://resobscura.substack.com/p/quality-non-fiction-books-are-the",
+      "hot": "450"
     }
   ]
 }
