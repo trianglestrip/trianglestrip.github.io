@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-23T01:11:28+00:00",
+  "updated_at": "2026-07-23T09:31:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "59"
+      "hot": "60"
     },
     {
       "rank": 2,
       "title": "Geometric Context Transformer for Streaming 3D Reconstruction",
       "url": "https://huggingface.co/papers/2604.14141",
-      "hot": "30"
+      "hot": "31"
     },
     {
       "rank": 3,
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
-      "title": "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices",
-      "url": "https://huggingface.co/papers/2509.02523",
-      "hot": "21"
-    },
-    {
-      "rank": 5,
       "title": "Moonshine: Speech Recognition for Live Transcription and Voice Commands",
       "url": "https://huggingface.co/papers/2410.15608",
       "hot": "13"
     },
     {
+      "rank": 5,
+      "title": "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices",
+      "url": "https://huggingface.co/papers/2509.02523",
+      "hot": "21"
+    },
+    {
       "rank": 6,
       "title": "Mage-Flow: An Efficient Native-Resolution Foundation Model for Image Generation and Editing",
       "url": "https://huggingface.co/papers/2607.19064",
-      "hot": "56"
+      "hot": "57"
     },
     {
       "rank": 7,
-      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "115"
-    },
-    {
-      "rank": 8,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "83"
-    },
-    {
-      "rank": 9,
       "title": "Efficient Guided Generation for Large Language Models",
       "url": "https://huggingface.co/papers/2307.09702",
       "hot": "8"
     },
     {
+      "rank": 8,
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://huggingface.co/papers/2412.20138",
+      "hot": "115"
+    },
+    {
+      "rank": 9,
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "83"
+    },
+    {
       "rank": 10,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "176"
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "47"
     }
   ]
 }

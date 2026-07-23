@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-23T07:07:22+00:00",
+  "updated_at": "2026-07-23T09:31:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "RAG 核心概念与原理：Chunking、Embedding、相似度、HNSW 与多路召回",
+      "url": "https://my.oschina.net/u/5783135/blog/19726047",
+      "hot": "Thu, 23 Jul 2026 17:24:36 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "DataX 执行引擎正式加入！qData 开源版 v1.6.0 大幅降低部署与使用门槛",
+      "url": "https://www.oschina.net/news/477795",
+      "hot": "Thu, 23 Jul 2026 17:22:27 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "MooTool Next 发布！使用 React 和 TypeScript 全新重写，带来更现代的界面与多窗口体验",
+      "url": "https://www.oschina.net/news/477698",
+      "hot": "Thu, 23 Jul 2026 15:50:06 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "IPFire 2.29 Core 203 发布",
+      "url": "https://www.oschina.net/news/477678/ipfire-2-29-core-update-203-released",
+      "hot": "Thu, 23 Jul 2026 15:36:49 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "腾讯云发布云端智能体 CodeBuddy NPC",
+      "url": "https://www.oschina.net/news/477664",
+      "hot": "Thu, 23 Jul 2026 15:25:15 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Pandoc 3.10.1 已发布，标记格式转换工具",
+      "url": "https://www.oschina.net/news/477660/pandoc-3-10-1-released",
+      "hot": "Thu, 23 Jul 2026 15:14:47 +0800"
+    },
+    {
+      "rank": 7,
       "title": "Kiwi TCMS 16.2 发布，开源测试管理系统",
       "url": "https://www.oschina.net/news/477601/kiwi-tcms-162",
       "hot": "Thu, 23 Jul 2026 14:15:55 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Solon AI：Tool 与 Talent 怎么选？从函数到领域专家",
       "url": "https://www.oschina.net/news/477562",
       "hot": "Thu, 23 Jul 2026 13:34:15 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "Alphabet 公布 Q2 财报，上调全年资本支出至最高 2050 亿美元",
       "url": "https://www.oschina.net/news/477500",
       "hot": "Thu, 23 Jul 2026 11:48:03 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "黄仁勋为中国 AI 模型站台：“优秀的开源模型就应该被使用”",
       "url": "https://www.oschina.net/news/477499",
       "hot": "Thu, 23 Jul 2026 11:46:25 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "百度飞桨开源 HPD-Parsing，高吞吐层级并行文档解析技术",
-      "url": "https://www.oschina.net/news/477490",
-      "hot": "Thu, 23 Jul 2026 11:37:06 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "MatrixOne Git4Data 技术详解（八）・AI 训练实践篇",
-      "url": "https://my.oschina.net/u/5472636/blog/19725829",
-      "hot": "Thu, 23 Jul 2026 11:18:41 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Visual Studio Code 1.130 发布",
-      "url": "https://www.oschina.net/news/477461/vs-code-1-130-released",
-      "hot": "Thu, 23 Jul 2026 11:03:49 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Electron 43.2.0 发布",
-      "url": "https://www.oschina.net/news/477453/electron-43-2-0-released",
-      "hot": "Thu, 23 Jul 2026 10:52:08 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "梁文锋四小时投资者交流会：为什么克制是 DeepSeek 最锋利的武器？",
-      "url": "https://www.oschina.net/news/477445",
-      "hot": "Thu, 23 Jul 2026 10:42:56 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "OpenAI 的人为失误如何导致了针对 Hugging Face 的 AI 驱动黑客攻击",
-      "url": "https://www.oschina.net/news/477422",
-      "hot": "Thu, 23 Jul 2026 10:16:27 +0800"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-23T07:07:17+00:00",
+  "updated_at": "2026-07-23T09:31:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "端到端测试是什么？Cypress 与 Playwright 如何选择？",
+      "url": "https://www.51cto.com/article/850620.html",
+      "hot": "市面上的 E2E 框架不少，Vue 官方推荐 Cypress 和 Playwright 为主。但具体怎么选？可以从四个维度衡量。"
+    },
+    {
+      "rank": 2,
+      "title": "重磅！无头 Vue3 UI 引擎发布！",
+      "url": "https://www.51cto.com/article/850614.html",
+      "hot": "从 Vue 2 时代的 Material Design 组件库，到今天的无头 Vue 3 UI 引擎，Vuetify 正在进行一次跨度很大的重构。"
+    },
+    {
+      "rank": 3,
+      "title": "【HarmonyOS AI】鸿蒙开发者需要搞懂的 AI Coding 概念",
+      "url": "https://ost.51cto.com/posts/53294",
+      "hot": "【HarmonyOSAI】鸿蒙开发者需要搞懂的AICoding概念一、前言最近群里聊AI、DevEcoCLI、DevEcoCode，Skill、MCP、知识库这几个词出镜率很高，..."
+    },
+    {
+      "rank": 4,
       "title": "从“动脑”到“动手”！AI智能体或许正在跨越生物安全的红线",
       "url": "https://www.51cto.com/article/850586.html",
       "hot": "现有研究已开始评测前沿模型的病毒学知识和实验推理能力，但在真实的潜在风险链条中，模型究竟能提供多大程度的实质性帮助，需要进行验证，特别是当模型以智能体形态出现，能组合知识库、搜索引擎、文件读写等工具时，其有效能力边界可能远超单轮问答的测试结果。"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "一份CUDA源码，跑上了苹果GPU",
       "url": "https://www.51cto.com/article/850584.html",
       "hot": "研究人员一直在做一件很多人认为「不太可能」的事情：让原本为 CUDA/HIP GPU 设计的高性能计算程序，跨过平台壁垒，运行到苹果自己的 Metal GPU 架构上。"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "Claude Agent突然大更新！狂塞500个技能，网友直呼疯狂",
       "url": "https://www.51cto.com/article/850582.html",
       "hot": "昨天Cowork刚迭代完，今天Anthropic又在托管智能体平台（CMA）上一口气推出了六项更新。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "AI PPT一改就崩？MemSlides登顶抱抱脸，让Agent记住你的改稿习惯",
       "url": "https://www.51cto.com/article/850578.html",
       "hot": "由北京邮电大学、清华大学、上海交通大学合作完成MemSlides 不是等到用户反复修改之后才开始「记住」，而是在首轮生成时就会根据当前任务意图检索用户画像，将兼容的长期偏好路由到当前工作记忆里，用来影响页面组织和表达方式。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "码上鸿蒙·智绘未来# (6/6) Core Vision Kit 骨骼点检测实战：识别 17 个人体关键点，做姿态分析",
       "url": "https://ost.51cto.com/posts/50496",
       "hot": "在CoreVisionKit实战系列的第5篇里，我们搞定了多目标识别。今天这篇是系列的最后一篇&mdash;&mdash;骨骼点检测。它能识别17个人体关键点，通过这些点..."
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "机器人为啥困在Demo？讯飞新公司爻方智能给出答案：缺一味「本体认知」",
       "url": "https://www.51cto.com/article/850563.html",
       "hot": "为什么大家都在争「大脑」？这背后其实是一个逐渐成型的共识：具身智能真正的瓶颈，从来不在身体，在大脑。"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "GPT-5.6推翻近30年数学猜想，全程对话公开：提示词只有58个单词？？？",
       "url": "https://www.51cto.com/article/850562.html",
       "hot": "一个在图论领域存在了近30年的Dinitz-Garg-Goemans猜想，刚刚被GPT-5.6 Pro找出反例。"
-    },
-    {
-      "rank": 8,
-      "title": "机器人双手迎来全栈训练系统：灵初智能EgoSteer让灵巧手无所不能",
-      "url": "https://www.51cto.com/article/850559.html",
-      "hot": "现如今，视觉基础模型在街景、室内等常见场景中已经取得了不错的效果，但无人机航拍中的复杂视角、尺度和环境变化仍会带来新的挑战。"
-    },
-    {
-      "rank": 9,
-      "title": "ECCV 2026｜把全球3D地图变成无人机训练场，国防科大AirZoo构建航拍几何3D视觉统一基准",
-      "url": "https://www.51cto.com/article/850553.html",
-      "hot": "近年来，大规模数据驱动的 3D 视觉基础模型在地面视角的检索、匹配与重建任务上进展迅速，但其主流训练语料长期集中于街景、室内和物体中心视角。"
-    },
-    {
-      "rank": 10,
-      "title": "WAIC 2026智能体站C位，超聚变展示智企进化新路径",
-      "url": "https://www.51cto.com/article/850527.html",
-      "hot": "在刚刚落幕的2026世界人工智能大会（W​​AI​C 2026)上，智能体站上“C位”。统计显示，在大会的百余场论坛与活动中，超过10%的场次主题与智能体有关；10款“镇馆之宝”中，就有4款是智能体产品，高度回应了大会“智能伙伴，共创未来”的主题，昭示AI正从技术工具走向协作伙伴，掀起时代之变！"
     }
   ]
 }
