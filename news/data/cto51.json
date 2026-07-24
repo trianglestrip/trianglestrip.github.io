@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-23T22:16:42+00:00",
+  "updated_at": "2026-07-24T03:39:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI预算为何越砍越焦虑？企业最大的盲区是不会给“AI劳动力”记账",
-      "url": "https://www.51cto.com/article/850637.html",
-      "hot": "AI投入不断增加，但CFO却越来越难回答：“这些钱到底换来了什么？”问题不在AI没有价值，而在企业仍用工业时代的会计体系管理AI时代的新型劳动力。"
+      "title": "刚刚，Claude爆改语音！11种语言，就是没中文",
+      "url": "https://www.51cto.com/article/850731.html",
+      "hot": "Claude这边，从只能跑Haiku升级到Opus 4.8和Sonnet 5全系列，不仅能在对话里调Gmail、日历、Slack，还扩增到11种语言，但没有中文。"
     },
     {
       "rank": 2,
-      "title": "AI最大的瓶颈，不是技术，而是老板自己：大部分企业都卡在这一步",
-      "url": "https://www.51cto.com/article/850635.html",
-      "hot": "AI时代，企业最大的挑战已经不是拥有先进模型，而是能否改变自己。思科、IBM、安永等企业发现，AI落地的真正瓶颈来自组织惯性、变革管理、战略模糊和决策迟缓。AI带来的价值并非简单提升效率，而是重塑业务流程、工作方式和竞争模式。"
+      "title": "梁文锋押注的方向，中国00后团队先交卷了！性能直逼Opus 4.8",
+      "url": "https://www.51cto.com/article/850723.html",
+      "hot": "7月15日，前OpenAI CTO Mira Murati在旧金山发布了Thinking Machines Lab的首个模型Inkling。"
     },
     {
       "rank": 3,
-      "title": "用 Sloth 自动生成告警规则：从手写到自动化的 SLO 工程实践",
-      "url": "https://www.51cto.com/article/850633.html",
-      "hot": "SLO 体系的核心价值在于决策——能不能发版、要不要回滚、优先修哪个故障。这些决策需要的是准确的数据和及时的告警，而不是工程师花时间手写 171 条 PromQL 规则。"
+      "title": "Google 开源 OKF：先搞清楚它有什么用，再谈它是什么",
+      "url": "https://www.51cto.com/article/850703.html",
+      "hot": "OKF 很轻，轻到一页规范。轻，才有机会被很多人说。它不保证知识正确，不做完整治理，也不会让 Agent 突然变聪明。它做的是更底一层的事：给该被共享的上下文一个不绑平台的家。"
     },
     {
       "rank": 4,
-      "title": "高级工程师会断档！斯坦福AI经济专家：AI先挤压初级岗位，其实是正在透支未来的高级工程师",
-      "url": "https://www.51cto.com/article/850630.html",
-      "hot": "AI确实会代替一部分工作，Erik没有粉饰这一点。初级软件工程师已经站在最先受到冲击的位置。企业若把“减少初级任务”顺手做成“取消人才培养”，几年后的高级工程师也会断档。"
+      "title": "别再依赖原生 HPA 被动扩容！一套组合方案解决 K8s 资源浪费、峰值超时难题",
+      "url": "https://www.51cto.com/article/850700.html",
+      "hot": "预测式扩容只负责\"提前量\"，真正的安全兜底仍然是原生 HPA。"
     },
     {
       "rank": 5,
-      "title": "JS/TS：TS 空值报错终结者：类型断言 + 可选链实操，彻底规避 Cannot read property",
-      "url": "https://www.51cto.com/article/850623.html",
-      "hot": "本文拆解可选链、类型断言核心语法，区分二者适用边界，结合接口返回数据、嵌套对象、数组取值真实案例演示组合写法，同时梳理各自优缺点与规范避坑，一套组合方案解决90% TS 空值报错问题。"
+      "title": "智能体蔓延正在成为生产事故新源头：SRE 解读 Datadog 2026 报告，70% 团队存在治理盲区",
+      "url": "https://www.51cto.com/article/850697.html",
+      "hot": "智能体基础设施的扩张速度，已经远远超过了大多数团队建立治理框架的速度。"
     },
     {
       "rank": 6,
-      "title": "端到端测试是什么？Cypress 与 Playwright 如何选择？",
-      "url": "https://www.51cto.com/article/850620.html",
-      "hot": "市面上的 E2E 框架不少，Vue 官方推荐 Cypress 和 Playwright 为主。但具体怎么选？可以从四个维度衡量。"
+      "title": "新晋菲尔兹奖得主，当天宣布加入OpenAI",
+      "url": "https://www.51cto.com/article/850694.html",
+      "hot": "当地时间7月23日，费城，国际数学家大会（ICM）开幕式。记者会上，有人问起未来打算，这位新科得主直接摊牌：很快入职OpenAI，方向是AI安全。"
     },
     {
       "rank": 7,
-      "title": "重磅！无头 Vue3 UI 引擎发布！",
-      "url": "https://www.51cto.com/article/850614.html",
-      "hot": "从 Vue 2 时代的 Material Design 组件库，到今天的无头 Vue 3 UI 引擎，Vuetify 正在进行一次跨度很大的重构。"
+      "title": "多模态大模型训练的显存与吞吐困局，被小红书开源的BigMac打破了",
+      "url": "https://www.51cto.com/article/850693.html",
+      "hot": "当前，覆盖更多输入模态并将理解、推理与生成纳入同一套模型体系，正在成为头部大模型厂商的重要技术方向。"
     },
     {
       "rank": 8,
-      "title": "【HarmonyOS AI】鸿蒙开发者需要搞懂的 AI Coding 概念",
-      "url": "https://ost.51cto.com/posts/53294",
-      "hot": "【HarmonyOSAI】鸿蒙开发者需要搞懂的AICoding概念一、前言最近群里聊AI、DevEcoCLI、DevEcoCode，Skill、MCP、知识库这几个词出镜率很高，..."
+      "title": "一个Skill为什么越改越好？腾讯SkillHone让Agent记住每次优化决策",
+      "url": "https://www.51cto.com/article/850691.html",
+      "hot": "最初为什么修改？试过的方案为什么失败？上一轮回退撤销了什么，又留下了什么？下一轮接手的 Agent 大多不知道。它拿到的只是结果，前几轮踩过的坑还得再来一遍。"
     },
     {
       "rank": 9,
-      "title": "从“动脑”到“动手”！AI智能体或许正在跨越生物安全的红线",
-      "url": "https://www.51cto.com/article/850586.html",
-      "hot": "现有研究已开始评测前沿模型的病毒学知识和实验推理能力，但在真实的潜在风险链条中，模型究竟能提供多大程度的实质性帮助，需要进行验证，特别是当模型以智能体形态出现，能组合知识库、搜索引擎、文件读写等工具时，其有效能力边界可能远超单轮问答的测试结果。"
+      "title": "Graph 工程三年记：LangGraph 的图工程架构设计实践与思考",
+      "url": "https://www.51cto.com/article/850690.html",
+      "hot": "市面上 agent 框架多如牛毛，LangGraph 之所以脱颖而出，是因为它在确定性路径与智能体化步骤之间取得了平衡。以下是我们多年来用图构建智能体系统学到的东西。"
     },
     {
       "rank": 10,
-      "title": "一份CUDA源码，跑上了苹果GPU",
-      "url": "https://www.51cto.com/article/850584.html",
-      "hot": "研究人员一直在做一件很多人认为「不太可能」的事情：让原本为 CUDA/HIP GPU 设计的高性能计算程序，跨过平台壁垒，运行到苹果自己的 Metal GPU 架构上。"
+      "title": "Vuex 彻底成为历史？Pinia 4.0 正式来了",
+      "url": "https://www.51cto.com/article/850667.html",
+      "hot": "这次更新没有疯狂加入新 API，没有推翻现有写法，而是选择了一条更加成熟的路线：稳定、现代、面向未来。"
     }
   ]
 }

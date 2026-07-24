@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-23T22:16:47+00:00",
+  "updated_at": "2026-07-24T03:39:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "圆桌访谈：具身智能的落地分水岭——哪些场景真的跑出了商业闭环？",
+      "url": "https://www.infoq.cn/video/8dRT4X0eMoQA8xP9YB7q?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 24 Jul 2026 10:58:13 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "你的数据是否已为 AI-Ready？用这套框架找到答案 ｜技术实践",
+      "url": "https://www.infoq.cn/article/8iTgfYJ5w2xpc7ElM1NE?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 24 Jul 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Agentic 浪潮袭来的当下，我们更需要追问：当 Agent 成为系统的“第一用户”，传统的数据库架构真的准备好了吗？",
+      "url": "https://www.infoq.cn/video/AwphwhFcWrhs76k5RWhy?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 24 Jul 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Agent 想用但不敢用？百度智能云企业级 Agent 安全落地实践｜AICon深圳",
+      "url": "https://www.infoq.cn/article/QHoyhD3AbiXIjm0yPjao?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 24 Jul 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "Cloudera CTO：技术自主，始于开源架构",
+      "url": "https://www.infoq.cn/article/JtSP2aYluESx55J8yr7e?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 24 Jul 2026 09:51:32 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "AWS Continuum 将为企业提供智能体代码安全解决方案",
+      "url": "https://www.infoq.cn/article/efrkvfZ2bcbztDfThycu?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 24 Jul 2026 09:27:10 GMT"
+    },
+    {
+      "rank": 7,
       "title": "圆桌访谈：AI 产业进入新阶段了吗？",
       "url": "https://www.infoq.cn/video/7RkQ9IXvQpwoMCPj4YiQ?utm_source=rss&utm_medium=article",
       "hot": "Thu, 23 Jul 2026 20:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "WAIC现场探展：从 Coding 到办公，AI 新物种出现了吗？",
       "url": "https://www.infoq.cn/video/foIhBcWJok2LdIfZ2qjw?utm_source=rss&utm_medium=article",
       "hot": "Thu, 23 Jul 2026 18:16:06 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "腾讯云发布首个“流程原生”研发智能体 CodeBuddy NPC",
       "url": "https://www.infoq.cn/article/w6DHDb3QUYPLC1vaU8z1?utm_source=rss&utm_medium=article",
       "hot": "Thu, 23 Jul 2026 18:01:13 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "Agent 越能干，安全越难做？",
       "url": "https://www.infoq.cn/video/G0R3FyRBpfeSsa2QqJIr?utm_source=rss&utm_medium=article",
       "hot": "Thu, 23 Jul 2026 17:08:05 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "AI用23秒，学走了老师傅的判断",
-      "url": "https://www.infoq.cn/article/TWXI9ulbiPjRYmPFTGST?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 23 Jul 2026 17:03:57 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "开发并部署一个既能让业务部门理解、又能真正满足开发者需求的平台",
-      "url": "https://www.infoq.cn/article/dgIQlw6lQc0qEol7VQE4?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 23 Jul 2026 17:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "医疗与生命科学领导者必须回答的 10 个 Agentic AI 关键问题 ｜ 技术实践",
-      "url": "https://www.infoq.cn/article/06XxocxibFHWsL53PPFc?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 23 Jul 2026 16:20:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "为什么决定法律 AI 成效的，是数据平台，而不是模型 ｜ 技术实践",
-      "url": "https://www.infoq.cn/article/PZ5Xe45iTQlOXtZveBKU?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 23 Jul 2026 15:36:29 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "全球首个端侧驱动本体的世界模型来了！大晓机器人首创“信息密度定律”，重写物理AI训练逻辑",
-      "url": "https://www.infoq.cn/article/u0hD10fj7HWAfb10Dbr3?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 23 Jul 2026 15:10:30 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Linkerd 2.20 发布：智能流量管理升级，资源占用大幅降低",
-      "url": "https://www.infoq.cn/article/TJL8TIiuD6Cev0Ig0AAS?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 23 Jul 2026 13:25:00 GMT"
     }
   ]
 }

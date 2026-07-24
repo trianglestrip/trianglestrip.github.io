@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-23T22:16:46+00:00",
+  "updated_at": "2026-07-24T03:39:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Mapbox GL JS 3.27.0 发布，WEB GIS 开发框架",
+      "url": "https://www.oschina.net/news/478297/mapbox-gl-js-3-27-0-released",
+      "hot": "Fri, 24 Jul 2026 11:09:32 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "echoFS - 一行命令秒变局域网文件中心",
+      "url": "https://www.oschina.net/news/478289",
+      "hot": "Fri, 24 Jul 2026 11:02:55 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "微软推出两款自研模型：MAI-Image-2.5-Pro 和 MAI-Voice-2-Flash",
+      "url": "https://www.oschina.net/news/478288/mai-image-2-5-pro-and-mai-voice-2-flash",
+      "hot": "Fri, 24 Jul 2026 11:01:24 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "91% 的 Token 花在读代码上，这套上下文交接术把成本砍掉了四成",
+      "url": "https://www.oschina.net/news/478278",
+      "hot": "Fri, 24 Jul 2026 10:44:59 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Logback 1.6.0 发布，Java 日志框架",
+      "url": "https://www.oschina.net/news/478260/logback-16-0-released",
+      "hot": "Fri, 24 Jul 2026 10:19:39 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "玲珑商店社区版 V3.5 正式上线！底层全量重构，体验全面革新！",
+      "url": "https://www.oschina.net/news/478231",
+      "hot": "Fri, 24 Jul 2026 09:37:20 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "uniTerm 1.5.2 发布：不到 10M的 全能终端软件，新增更换背景、RDP 功能优化",
+      "url": "https://www.oschina.net/news/477963/uniterm-1-5-2-released",
+      "hot": "Thu, 23 Jul 2026 20:49:27 +0800"
+    },
+    {
+      "rank": 8,
       "title": "CrateDB 6.4.1 发布，分布式 SQL 数据库",
       "url": "https://www.oschina.net/news/477826/cratedb-6-4-1-released",
       "hot": "Thu, 23 Jul 2026 17:53:12 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "Skills 模块上线！qKnow 开源版 v2.3.0 让 Agent 能力快速复用，提升智能体构建效率！",
       "url": "https://www.oschina.net/news/477812",
       "hot": "Thu, 23 Jul 2026 17:31:29 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "qData 数据中台专业版 V2.5.0 上线！重构数据开发工作台，增强血缘与整库同步能力!",
       "url": "https://www.oschina.net/news/477809",
       "hot": "Thu, 23 Jul 2026 17:28:59 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "RAG 核心概念与原理：Chunking、Embedding、相似度、HNSW 与多路召回",
-      "url": "https://my.oschina.net/u/5783135/blog/19726047",
-      "hot": "Thu, 23 Jul 2026 17:24:36 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "DataX 执行引擎正式加入！qData 开源版 v1.6.0 大幅降低部署与使用门槛",
-      "url": "https://www.oschina.net/news/477795",
-      "hot": "Thu, 23 Jul 2026 17:22:27 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "MooTool Next 发布！使用 React 和 TypeScript 全新重写，带来更现代的界面与多窗口体验",
-      "url": "https://www.oschina.net/news/477698",
-      "hot": "Thu, 23 Jul 2026 15:50:06 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "IPFire 2.29 Core 203 发布",
-      "url": "https://www.oschina.net/news/477678/ipfire-2-29-core-update-203-released",
-      "hot": "Thu, 23 Jul 2026 15:36:49 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "腾讯云发布云端智能体 CodeBuddy NPC",
-      "url": "https://www.oschina.net/news/477664",
-      "hot": "Thu, 23 Jul 2026 15:25:15 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Pandoc 3.10.1 已发布，标记格式转换工具",
-      "url": "https://www.oschina.net/news/477660/pandoc-3-10-1-released",
-      "hot": "Thu, 23 Jul 2026 15:14:47 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Kiwi TCMS 16.2 发布，开源测试管理系统",
-      "url": "https://www.oschina.net/news/477601/kiwi-tcms-162",
-      "hot": "Thu, 23 Jul 2026 14:15:55 +0800"
     }
   ]
 }
