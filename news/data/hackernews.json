@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-24T08:42:12+00:00",
+  "updated_at": "2026-07-24T12:06:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Flux 3",
-      "url": "https://bfl.ai/blog/flux-3",
-      "hot": "182"
+      "title": "Flux 3 X Mimic: The Next Generation of Video-Action Models",
+      "url": "https://bfl.ai/blog/flux-3-mimic",
+      "hot": "120"
     },
     {
       "rank": 2,
-      "title": "The PImpl idiom and the C++26 std:indirect type",
-      "url": "https://mariusbancila.ro/blog/2026/07/23/the-pimpl-idiom-and-the-cpp26-stdindirect-type/",
-      "hot": "35"
+      "title": "Flux 3",
+      "url": "https://bfl.ai/blog/flux-3",
+      "hot": "364"
     },
     {
       "rank": 3,
-      "title": "Writing by hand is good for your brain",
-      "url": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
-      "hot": "1278"
+      "title": "It's getting harder to focus every day",
+      "url": "https://glyphack.com/attention/",
+      "hot": "162"
     },
     {
       "rank": 4,
-      "title": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
-      "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
-      "hot": "910"
+      "title": "The case for MUDs in modern times",
+      "url": "https://www.andrewzigler.com/feed/the-case-for-muds-in-modern-times",
+      "hot": "10"
     },
     {
       "rank": 5,
-      "title": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
-      "url": "https://news.ycombinator.com/item?id=49026810",
-      "hot": "374"
+      "title": "Buz – A fork of Bun using modern Zig, with sub-1s incremental builds",
+      "url": "https://ziggit.dev/t/buz-a-drop-in-replacement-for-bun-using-modern-zig-with-sub-1s-incremental-builds/16891",
+      "hot": "47"
     },
     {
       "rank": 6,
-      "title": "The Beam Engine",
-      "url": "https://glinscott.github.io/beam-engine/",
-      "hot": "354"
+      "title": "Writing by hand is good for your brain",
+      "url": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
+      "hot": "1347"
     },
     {
       "rank": 7,
-      "title": "What happened to TheNumbers.com",
-      "url": "https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all",
-      "hot": "365"
+      "title": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+      "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+      "hot": "987"
     },
     {
       "rank": 8,
-      "title": "Claude Cookbook",
-      "url": "https://platform.claude.com/cookbook/",
-      "hot": "20"
+      "title": "The IBM PC, Part 1: Arrival",
+      "url": "https://technicshistory.com/2026/07/24/the-ibm-pc-part-1-arrival/",
+      "hot": "7"
     },
     {
       "rank": 9,
-      "title": "Why Software Factories Fail (or: harness engineering is not enough)",
-      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
-      "hot": "303"
+      "title": "Claude Cookbook",
+      "url": "https://platform.claude.com/cookbook/",
+      "hot": "118"
     },
     {
       "rank": 10,
-      "title": "What else do people draw on gradient.horse?",
-      "url": "https://rybakov.com/blog/what_else_do_people_draw_on_gradient-copy.horse/",
-      "hot": "127"
+      "title": "The Beam Engine",
+      "url": "https://glinscott.github.io/beam-engine/",
+      "hot": "417"
     }
   ]
 }
