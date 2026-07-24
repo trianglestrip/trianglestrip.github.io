@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-07-24T18:44:30+00:00",
+  "updated_at": "2026-07-24T21:13:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AI 造假泛滥下的跨模态鉴伪解决方案：技术原理与实用工具解析",
       "url": "https://blog.csdn.net/yuan2019035055/article/details/163104519",
-      "hot": "22135"
+      "hot": "21805"
     },
     {
       "rank": 2,
-      "title": "Codex Hooks 实战：给 AI 工作流增加确定性门禁",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/162941582",
-      "hot": "17001"
+      "title": "搭一套自己的智能自动化中枢：n8n、DeepSeek与公网Webhook实战(1)",
+      "url": "https://blog.csdn.net/SDFsoul/article/details/163143703",
+      "hot": "16945"
     },
     {
       "rank": 3,
-      "title": "搭一套自己的智能自动化中枢：n8n、DeepSeek与公网Webhook实战(1)",
-      "url": "https://blog.csdn.net/SDFsoul/article/details/163143703",
-      "hot": "16815"
+      "title": "Codex Hooks 实战：给 AI 工作流增加确定性门禁",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/162941582",
+      "hot": "16844"
     },
     {
       "rank": 4,
       "title": "PyTorch强化学习实战——基于策略梯度法解决Pong环境",
       "url": "https://blog.csdn.net/LOVEmy134611/article/details/159764009",
-      "hot": "15336"
+      "hot": "15795"
     },
     {
       "rank": 5,
       "title": "Spring Boot自动配置魔法: @EnableAutoConfiguration如何利用spring.factories加载所有配置类？",
       "url": "https://blog.csdn.net/qq_41840843/article/details/163161151",
-      "hot": "14348"
+      "hot": "14225"
     },
     {
       "rank": 6,
       "title": "【MYSQL】MYSQL学习的一大重点：基本查询（上）",
       "url": "https://blog.csdn.net/2401_89899187/article/details/163141581",
-      "hot": "12182"
+      "hot": "12141"
     },
     {
       "rank": 7,
       "title": "把极空间变成有声内容中心:Audiobookshelf部署与远程续听实战",
       "url": "https://blog.csdn.net/2401_87629362/article/details/163137043",
-      "hot": "11670"
+      "hot": "11239"
     },
     {
       "rank": 8,
       "title": "【LangChain系列】 with_structured_output 详解：大模型结构化输出全教程",
       "url": "https://blog.csdn.net/hanwangyyds/article/details/162739375",
-      "hot": "10384"
+      "hot": "10305"
     },
     {
       "rank": 9,
       "title": "【计算几何 第四章】线性规划：铸模制造",
       "url": "https://blog.csdn.net/he_zhidan/article/details/163023661",
-      "hot": "9229"
+      "hot": "8725"
     },
     {
       "rank": 10,
       "title": "数据库 mysql篇 八股1",
       "url": "https://blog.csdn.net/lihaoweiwudi_/article/details/163142248",
-      "hot": "8698"
+      "hot": "8721"
     }
   ]
 }

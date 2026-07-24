@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-24T18:44:36+00:00",
+  "updated_at": "2026-07-24T21:14:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Claude Opus 5",
       "url": "https://www.anthropic.com/news/claude-opus-5",
-      "hot": "630"
+      "hot": "994"
     },
     {
       "rank": 2,
       "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
       "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-      "hot": "86"
+      "hot": "340"
     },
     {
       "rank": 3,
-      "title": "My security camera shipped a GitHub admin token in its login page",
-      "url": "https://hhh.hn/hanwha-github-token/",
-      "hot": "387"
+      "title": "Postgres LISTEN/NOTIFY actually scales",
+      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
+      "hot": "103"
     },
     {
       "rank": 4,
-      "title": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
-      "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
-      "hot": "345"
+      "title": "My security camera shipped a GitHub admin token in its login page",
+      "url": "https://hhh.hn/hanwha-github-token/",
+      "hot": "436"
     },
     {
       "rank": 5,
-      "title": "Half-Life 2 running natively on HaikuOS",
-      "url": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18",
-      "hot": "182"
+      "title": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
+      "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
+      "hot": "394"
     },
     {
       "rank": 6,
-      "title": "I got into YC by hacking it",
-      "url": "https://obaid.wtf/jotbook/2026/07/18/how-i-got-into-yc-by-hacking-it.html",
-      "hot": "14"
+      "title": "Gsxui – Shadcn-style components for Go",
+      "url": "https://ui.gsxhq.dev/",
+      "hot": "41"
     },
     {
       "rank": 7,
-      "title": "The rise and fall of language diversity through the Holocene",
-      "url": "https://www.science.org/doi/10.1126/science.adx4343",
-      "hot": "34"
+      "title": "Fil-C: Garbage In, Memory Safety Out [video]",
+      "url": "https://www.youtube.com/watch?v=5F-2Y1LPRek",
+      "hot": "62"
     },
     {
       "rank": 8,
-      "title": "Be skeptical of OpenAI's rogue hacker agent story",
-      "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
-      "hot": "173"
+      "title": "Marimo Now Runs in PyCharm",
+      "url": "https://marimo.io/blog/pycharm",
+      "hot": "29"
     },
     {
       "rank": 9,
-      "title": "Proving a Human Wrote Something",
-      "url": "https://gjtorikian.online/posts/proving-a-human-wrote-something/",
-      "hot": "35"
+      "title": "Half-Life 2 running natively on HaikuOS",
+      "url": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18",
+      "hot": "225"
     },
     {
       "rank": 10,
-      "title": "The front end framework for correctness: built on Effect, architected like Elm",
-      "url": "https://foldkit.dev/",
-      "hot": "52"
+      "title": "I got into YC Startup School by hacking it",
+      "url": "https://obaid.wtf/jotbook/2026/07/18/how-i-got-into-yc-by-hacking-it.html",
+      "hot": "76"
     }
   ]
 }

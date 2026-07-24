@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-24T14:05:46+00:00",
+  "updated_at": "2026-07-24T21:14:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "2963"
+      "hot": "3002"
     },
     {
       "rank": 2,
       "title": "poolside/Laguna-S-2.1",
       "url": "https://huggingface.co/poolside/Laguna-S-2.1",
-      "hot": "565"
+      "hot": "595"
     },
     {
       "rank": 3,
       "title": "thinkingmachines/Inkling",
       "url": "https://huggingface.co/thinkingmachines/Inkling",
-      "hot": "1533"
+      "hot": "1542"
     },
     {
       "rank": 4,
       "title": "upstage/Solar-Open2-250B",
       "url": "https://huggingface.co/upstage/Solar-Open2-250B",
-      "hot": "523"
+      "hot": "537"
     },
     {
       "rank": 5,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "448"
+      "hot": "473"
     },
     {
       "rank": 6,
       "title": "Nanbeige/Nanbeige4.2-3B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
-      "hot": "351"
+      "hot": "362"
     },
     {
       "rank": 7,
       "title": "prism-ml/Ternary-Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-      "hot": "1000"
+      "hot": "1004"
     },
     {
       "rank": 8,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4401"
+      "hot": "4414"
     },
     {
       "rank": 9,
       "title": "prism-ml/Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
-      "hot": "626"
+      "hot": "631"
     },
     {
       "rank": 10,
       "title": "microsoft/Mage-Flow",
       "url": "https://huggingface.co/microsoft/Mage-Flow",
-      "hot": "204"
+      "hot": "223"
     }
   ]
 }
