@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-24T21:14:04+00:00",
+  "updated_at": "2026-07-24T23:18:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Claude Opus 5",
       "url": "https://www.anthropic.com/news/claude-opus-5",
-      "hot": "994"
+      "hot": "1180"
     },
     {
       "rank": 2,
-      "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
-      "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-      "hot": "340"
+      "title": "Postgres LISTEN/NOTIFY actually scales",
+      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
+      "hot": "154"
     },
     {
       "rank": 3,
-      "title": "Postgres LISTEN/NOTIFY actually scales",
-      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
-      "hot": "103"
+      "title": "Show HN: I simulated closing the Strait of Hormuz on real oil trade data",
+      "url": "https://globaloilnetwork.staffinganalytics.io/",
+      "hot": "41"
     },
     {
       "rank": 4,
       "title": "My security camera shipped a GitHub admin token in its login page",
       "url": "https://hhh.hn/hanwha-github-token/",
-      "hot": "436"
+      "hot": "482"
     },
     {
       "rank": 5,
-      "title": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
+      "title": "India's first privately-developed rocket reaches orbit on debut launch",
       "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
-      "hot": "394"
+      "hot": "453"
     },
     {
       "rank": 6,
-      "title": "Gsxui – Shadcn-style components for Go",
-      "url": "https://ui.gsxhq.dev/",
-      "hot": "41"
+      "title": "Opus 5 is currently #1 on Artificial Analysis Intelligence Leaderboard",
+      "url": "https://artificialanalysis.ai/models",
+      "hot": "42"
     },
     {
       "rank": 7,
-      "title": "Fil-C: Garbage In, Memory Safety Out [video]",
-      "url": "https://www.youtube.com/watch?v=5F-2Y1LPRek",
-      "hot": "62"
+      "title": "Designing an Ethernet Switch ASIC",
+      "url": "https://essenceia.github.io/projects/ethernet_switch_asic/",
+      "hot": "58"
     },
     {
       "rank": 8,
-      "title": "Marimo Now Runs in PyCharm",
-      "url": "https://marimo.io/blog/pycharm",
-      "hot": "29"
+      "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+      "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+      "hot": "446"
     },
     {
       "rank": 9,
-      "title": "Half-Life 2 running natively on HaikuOS",
-      "url": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18",
-      "hot": "225"
+      "title": "Fil-C: Garbage In, Memory Safety Out [video]",
+      "url": "https://www.youtube.com/watch?v=5F-2Y1LPRek",
+      "hot": "86"
     },
     {
       "rank": 10,
-      "title": "I got into YC Startup School by hacking it",
-      "url": "https://obaid.wtf/jotbook/2026/07/18/how-i-got-into-yc-by-hacking-it.html",
-      "hot": "76"
+      "title": "An old patent inspired the new \"Y-zipper\", a three-sided fastener",
+      "url": "https://news.mit.edu/2026/three-sided-y-zipper-design-0504",
+      "hot": "93"
     }
   ]
 }
