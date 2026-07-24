@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-24T12:06:35+00:00",
+  "updated_at": "2026-07-24T15:39:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "一次 40 分钟 P0 漏推事故：聊聊 Hermes + Alertmanager 钉钉告警建设",
+      "url": "https://www.51cto.com/article/850790.html",
+      "hot": "告警通道本身也要被监控。监控系统的\"最后一公里\"往往最脆弱。"
+    },
+    {
+      "rank": 2,
+      "title": "从 AIOps 到 AI SRE：智能体自主运维的边界，守住这七条安全底线才能平稳落地",
+      "url": "https://www.51cto.com/article/850789.html",
+      "hot": "安全护栏不是限制智能体发挥价值，而是让 AI SRE 智能体真正具备上线生产环境的可行性。"
+    },
+    {
+      "rank": 3,
+      "title": "HarmonyOS:折叠屏 × 沉浸光感-用 @ComponentV2 做一个会\"变色\"的鸿蒙音乐播放器",
+      "url": "https://ost.51cto.com/posts/53419",
+      "hot": "写鸿蒙播放器的文章很多，但绝大多数只做一件事：在固定尺寸的手机屏上把封面、进度条、控制按钮摆好看。可一旦设备变成折叠屏，或者用户希..."
+    },
+    {
+      "rank": 4,
       "title": "CVPR'26 | 亮点清华弄了个镜像错觉艺术生成器，支持3D打印",
       "url": "https://www.51cto.com/article/850744.html",
       "hot": "清华大学团队研发的AutoMIA系统，可将任意两张图片转化为具有镜像错觉效果的3D艺术品，实现正反两面不同图案的视觉呈现，并支持3D打印。"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "从一则真实入侵案例：看懂 AI 辅助域侦察攻击的防御新思路",
       "url": "https://www.51cto.com/article/850738.html",
       "hot": "没有任何经验丰富的渗透测试工程师或恶意软件开发者会用默认文件名保存自己精心打磨的工具。\"Untitled1\"是文本编辑器在用户来不及命名时自动生成的名字——它意味着，使用者复制了一段代码，打开了编辑器，然后直接按下了保存键。"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "Claude Opus5偷跑，第一波网友实测来了",
       "url": "https://www.51cto.com/article/850735.html",
       "hot": "Fable 5虽然一次成型，但帐篷是纯色平面，草地没有起伏，弹弓本体也少了张力、箭矢重量这些参数面板，细节密度上肉眼可见地输了一截。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "刚刚，Claude爆改语音！11种语言，就是没中文",
       "url": "https://www.51cto.com/article/850731.html",
       "hot": "Claude这边，从只能跑Haiku升级到Opus 4.8和Sonnet 5全系列，不仅能在对话里调Gmail、日历、Slack，还扩增到11种语言，但没有中文。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "梁文锋押注的方向，中国00后团队先交卷了！性能直逼Opus 4.8",
       "url": "https://www.51cto.com/article/850723.html",
       "hot": "7月15日，前OpenAI CTO Mira Murati在旧金山发布了Thinking Machines Lab的首个模型Inkling。"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "Google 开源 OKF：先搞清楚它有什么用，再谈它是什么",
       "url": "https://www.51cto.com/article/850703.html",
       "hot": "OKF 很轻，轻到一页规范。轻，才有机会被很多人说。它不保证知识正确，不做完整治理，也不会让 Agent 突然变聪明。它做的是更底一层的事：给该被共享的上下文一个不绑平台的家。"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "别再依赖原生 HPA 被动扩容！一套组合方案解决 K8s 资源浪费、峰值超时难题",
       "url": "https://www.51cto.com/article/850700.html",
       "hot": "预测式扩容只负责\"提前量\"，真正的安全兜底仍然是原生 HPA。"
-    },
-    {
-      "rank": 8,
-      "title": "浅谈 AI 时代的工程记忆结构",
-      "url": "https://www.51cto.com/article/850665.html",
-      "hot": "本文的目的，即利用 AI agent 记忆层的能力构建AI时代下的新的 web 工程结构。"
-    },
-    {
-      "rank": 9,
-      "title": "智能体蔓延正在成为生产事故新源头：SRE 解读 Datadog 2026 报告，70% 团队存在治理盲区",
-      "url": "https://www.51cto.com/article/850697.html",
-      "hot": "智能体基础设施的扩张速度，已经远远超过了大多数团队建立治理框架的速度。"
-    },
-    {
-      "rank": 10,
-      "title": "新晋菲尔兹奖得主，当天宣布加入OpenAI",
-      "url": "https://www.51cto.com/article/850694.html",
-      "hot": "当地时间7月23日，费城，国际数学家大会（ICM）开幕式。记者会上，有人问起未来打算，这位新科得主直接摊牌：很快入职OpenAI，方向是AI安全。"
     }
   ]
 }
