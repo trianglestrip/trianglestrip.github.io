@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-25T06:05:55+00:00",
+  "updated_at": "2026-07-25T08:21:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude Opus 5",
-      "url": "https://www.anthropic.com/news/claude-opus-5",
-      "hot": "1439"
+      "title": "Android May Soon Restrict On-Device ADB",
+      "url": "https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/",
+      "hot": "70"
     },
     {
       "rank": 2,
-      "title": "GC and Exceptions in Wasmtime",
-      "url": "https://bytecodealliance.org/articles/wasmtime-gc",
-      "hot": "34"
+      "title": "ARC-AGI Leaderboard",
+      "url": "https://arcprize.org/leaderboard",
+      "hot": "50"
     },
     {
       "rank": 3,
-      "title": "Postgres LISTEN/NOTIFY actually scales",
-      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
-      "hot": "265"
+      "title": "Claude Opus 5",
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "hot": "1514"
     },
     {
       "rank": 4,
-      "title": "Opus 5 is currently #1 on Artificial Analysis Intelligence Leaderboard",
-      "url": "https://artificialanalysis.ai/models",
-      "hot": "222"
+      "title": "GC and Exceptions in Wasmtime",
+      "url": "https://bytecodealliance.org/articles/wasmtime-gc",
+      "hot": "75"
     },
     {
       "rank": 5,
-      "title": "India's first privately-developed rocket reaches orbit on debut launch",
-      "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
-      "hot": "556"
+      "title": "Hannah Fry Wins the Leelavati Prize in 2026 for Mathematics Outreach",
+      "url": "https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize",
+      "hot": "142"
     },
     {
       "rank": 6,
-      "title": "Taylor Farms Called White House to Try to Delay Cyclospora Recall",
-      "url": "https://www.wsj.com/health/taylor-farms-cyclospora-recall-delay-call-41fef0bc",
-      "hot": "157"
+      "title": "UK AISI / Caisi Preliminary Assessment of Kimi K3's Cyber Capabilities",
+      "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
+      "hot": "49"
     },
     {
       "rank": 7,
-      "title": "UK AISI / Caisi Preliminary Assessment of Kimi K3's Cyber Capabilities",
-      "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
-      "hot": "11"
+      "title": "NYC Apartment Aquaponics",
+      "url": "https://erinmurphy.dev/projects/project-2/",
+      "hot": "12"
     },
     {
       "rank": 8,
-      "title": "My security camera shipped a GitHub admin token in its login page",
-      "url": "https://hhh.hn/hanwha-github-token/",
-      "hot": "550"
+      "title": "Postgres LISTEN/NOTIFY actually scales",
+      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
+      "hot": "296"
     },
     {
       "rank": 9,
-      "title": "If coding has been solved, why does software keep getting worse?",
-      "url": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
-      "hot": "679"
+      "title": "Opus 5 is currently #1 on Artificial Analysis Intelligence Leaderboard",
+      "url": "https://artificialanalysis.ai/models",
+      "hot": "269"
     },
     {
       "rank": 10,
-      "title": "Sperm Whales blow bubbles to achieve restful, vertical sleep",
-      "url": "https://news.st-andrews.ac.uk/archive/sperm-whales-blow-bubbles-to-achieve-restful-vertical-sleep/",
-      "hot": "70"
+      "title": "Extinct Media Museum Tokyo",
+      "url": "https://extinct-media-museum.blog.jp/otemachi/",
+      "hot": "13"
     }
   ]
 }
