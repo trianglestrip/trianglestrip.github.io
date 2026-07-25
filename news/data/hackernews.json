@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-25T11:20:16+00:00",
+  "updated_at": "2026-07-25T14:01:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Android May Soon Restrict On-Device ADB",
       "url": "https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/",
-      "hot": "292"
+      "hot": "470"
     },
     {
       "rank": 2,
-      "title": "Claude Opus 5",
-      "url": "https://www.anthropic.com/news/claude-opus-5",
-      "hot": "1587"
+      "title": "My Images Are Dithered",
+      "url": "https://dead.garden/blog/how-my-images-are-dithered.html",
+      "hot": "42"
     },
     {
       "rank": 3,
-      "title": "Hannah Fry Wins the Leelavati Prize in 2026 for Mathematics Outreach",
-      "url": "https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize",
-      "hot": "268"
+      "title": "League of Legends designer shares game design field manual",
+      "url": "https://areadenial.games/design/preface#00-01",
+      "hot": "12"
     },
     {
       "rank": 4,
-      "title": "Building a Tiny 3D Renderer for a Tiny Handheld",
-      "url": "https://saffroncr.itch.io/katavatis/devlog/1534514/building-a-tiny-3d-renderer-for-a-tiny-handheld",
-      "hot": "58"
+      "title": "Claude Opus 5",
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "hot": "1669"
     },
     {
       "rank": 5,
-      "title": "ARC-AGI Leaderboard",
-      "url": "https://arcprize.org/leaderboard",
-      "hot": "96"
+      "title": "Hannah Fry Wins the Leelavati Prize in 2026 for Mathematics Outreach",
+      "url": "https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize",
+      "hot": "383"
     },
     {
       "rank": 6,
-      "title": "GC and Exceptions in Wasmtime",
-      "url": "https://bytecodealliance.org/articles/wasmtime-gc",
-      "hot": "111"
+      "title": "The Fedora 45 Sausage Factory",
+      "url": "https://supakeen.com/weblog/the-fedora-45-sausage-factory/",
+      "hot": "28"
     },
     {
       "rank": 7,
-      "title": "NYC Apartment Aquaponics",
-      "url": "https://erinmurphy.dev/projects/project-2/",
-      "hot": "61"
+      "title": "Building a Tiny 3D Renderer for a Tiny Handheld",
+      "url": "https://saffroncr.itch.io/katavatis/devlog/1534514/building-a-tiny-3d-renderer-for-a-tiny-handheld",
+      "hot": "109"
     },
     {
       "rank": 8,
-      "title": "UK AISI / Caisi Preliminary Assessment of Kimi K3's Cyber Capabilities",
-      "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
-      "hot": "74"
+      "title": "NYC Apartment Aquaponics",
+      "url": "https://erinmurphy.dev/projects/project-2/",
+      "hot": "104"
     },
     {
       "rank": 9,
-      "title": "Charles Ross spent 50 yrs building Star Axis naked-eye observatory in New Mexico",
-      "url": "https://www.nytimes.com/2026/07/22/arts/design/charles-ross-star-axis-land-art.html",
-      "hot": "16"
+      "title": "ARC-AGI Leaderboard",
+      "url": "https://arcprize.org/leaderboard",
+      "hot": "122"
     },
     {
       "rank": 10,
-      "title": "Postgres LISTEN/NOTIFY actually scales",
-      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
-      "hot": "317"
+      "title": "Charles Ross spent 50 yrs building Star Axis naked-eye observatory in New Mexico",
+      "url": "https://www.nytimes.com/2026/07/22/arts/design/charles-ross-star-axis-land-art.html",
+      "hot": "54"
     }
   ]
 }
