@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-25T08:21:40+00:00",
+  "updated_at": "2026-07-25T11:20:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Android May Soon Restrict On-Device ADB",
       "url": "https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/",
-      "hot": "70"
+      "hot": "292"
     },
     {
       "rank": 2,
-      "title": "ARC-AGI Leaderboard",
-      "url": "https://arcprize.org/leaderboard",
-      "hot": "50"
+      "title": "Claude Opus 5",
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "hot": "1587"
     },
     {
       "rank": 3,
-      "title": "Claude Opus 5",
-      "url": "https://www.anthropic.com/news/claude-opus-5",
-      "hot": "1514"
+      "title": "Hannah Fry Wins the Leelavati Prize in 2026 for Mathematics Outreach",
+      "url": "https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize",
+      "hot": "268"
     },
     {
       "rank": 4,
-      "title": "GC and Exceptions in Wasmtime",
-      "url": "https://bytecodealliance.org/articles/wasmtime-gc",
-      "hot": "75"
+      "title": "Building a Tiny 3D Renderer for a Tiny Handheld",
+      "url": "https://saffroncr.itch.io/katavatis/devlog/1534514/building-a-tiny-3d-renderer-for-a-tiny-handheld",
+      "hot": "58"
     },
     {
       "rank": 5,
-      "title": "Hannah Fry Wins the Leelavati Prize in 2026 for Mathematics Outreach",
-      "url": "https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize",
-      "hot": "142"
+      "title": "ARC-AGI Leaderboard",
+      "url": "https://arcprize.org/leaderboard",
+      "hot": "96"
     },
     {
       "rank": 6,
-      "title": "UK AISI / Caisi Preliminary Assessment of Kimi K3's Cyber Capabilities",
-      "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
-      "hot": "49"
+      "title": "GC and Exceptions in Wasmtime",
+      "url": "https://bytecodealliance.org/articles/wasmtime-gc",
+      "hot": "111"
     },
     {
       "rank": 7,
       "title": "NYC Apartment Aquaponics",
       "url": "https://erinmurphy.dev/projects/project-2/",
-      "hot": "12"
+      "hot": "61"
     },
     {
       "rank": 8,
-      "title": "Postgres LISTEN/NOTIFY actually scales",
-      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
-      "hot": "296"
+      "title": "UK AISI / Caisi Preliminary Assessment of Kimi K3's Cyber Capabilities",
+      "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
+      "hot": "74"
     },
     {
       "rank": 9,
-      "title": "Opus 5 is currently #1 on Artificial Analysis Intelligence Leaderboard",
-      "url": "https://artificialanalysis.ai/models",
-      "hot": "269"
+      "title": "Charles Ross spent 50 yrs building Star Axis naked-eye observatory in New Mexico",
+      "url": "https://www.nytimes.com/2026/07/22/arts/design/charles-ross-star-axis-land-art.html",
+      "hot": "16"
     },
     {
       "rank": 10,
-      "title": "Extinct Media Museum Tokyo",
-      "url": "https://extinct-media-museum.blog.jp/otemachi/",
-      "hot": "13"
+      "title": "Postgres LISTEN/NOTIFY actually scales",
+      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
+      "hot": "317"
     }
   ]
 }
