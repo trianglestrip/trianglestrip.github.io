@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-24T23:18:52+00:00",
+  "updated_at": "2026-07-25T03:41:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Claude Opus 5",
       "url": "https://www.anthropic.com/news/claude-opus-5",
-      "hot": "1180"
+      "hot": "1375"
     },
     {
       "rank": 2,
       "title": "Postgres LISTEN/NOTIFY actually scales",
       "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
-      "hot": "154"
+      "hot": "233"
     },
     {
       "rank": 3,
-      "title": "Show HN: I simulated closing the Strait of Hormuz on real oil trade data",
-      "url": "https://globaloilnetwork.staffinganalytics.io/",
-      "hot": "41"
+      "title": "Sperm Whales blow bubbles to achieve restful, vertical sleep",
+      "url": "https://news.st-andrews.ac.uk/archive/sperm-whales-blow-bubbles-to-achieve-restful-vertical-sleep/",
+      "hot": "49"
     },
     {
       "rank": 4,
-      "title": "My security camera shipped a GitHub admin token in its login page",
-      "url": "https://hhh.hn/hanwha-github-token/",
-      "hot": "482"
+      "title": "Opus 5 is currently #1 on Artificial Analysis Intelligence Leaderboard",
+      "url": "https://artificialanalysis.ai/models",
+      "hot": "179"
     },
     {
       "rank": 5,
       "title": "India's first privately-developed rocket reaches orbit on debut launch",
       "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
-      "hot": "453"
+      "hot": "527"
     },
     {
       "rank": 6,
-      "title": "Opus 5 is currently #1 on Artificial Analysis Intelligence Leaderboard",
-      "url": "https://artificialanalysis.ai/models",
-      "hot": "42"
+      "title": "My security camera shipped a GitHub admin token in its login page",
+      "url": "https://hhh.hn/hanwha-github-token/",
+      "hot": "533"
     },
     {
       "rank": 7,
-      "title": "Designing an Ethernet Switch ASIC",
-      "url": "https://essenceia.github.io/projects/ethernet_switch_asic/",
-      "hot": "58"
+      "title": "Show HN: I simulated closing the Strait of Hormuz on real oil trade data",
+      "url": "https://globaloilnetwork.staffinganalytics.io/",
+      "hot": "122"
     },
     {
       "rank": 8,
-      "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
-      "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-      "hot": "446"
+      "title": "Taylor Farms Called White House to Try to Delay Cyclospora Recall",
+      "url": "https://www.wsj.com/health/taylor-farms-cyclospora-recall-delay-call-41fef0bc",
+      "hot": "22"
     },
     {
       "rank": 9,
-      "title": "Fil-C: Garbage In, Memory Safety Out [video]",
-      "url": "https://www.youtube.com/watch?v=5F-2Y1LPRek",
-      "hot": "86"
+      "title": "If coding has been solved, why does software keep getting worse?",
+      "url": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
+      "hot": "598"
     },
     {
       "rank": 10,
-      "title": "An old patent inspired the new \"Y-zipper\", a three-sided fastener",
-      "url": "https://news.mit.edu/2026/three-sided-y-zipper-design-0504",
-      "hot": "93"
+      "title": "Designing an Ethernet Switch ASIC",
+      "url": "https://essenceia.github.io/projects/ethernet_switch_asic/",
+      "hot": "130"
     }
   ]
 }

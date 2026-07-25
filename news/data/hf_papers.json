@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-24T21:14:14+00:00",
+  "updated_at": "2026-07-25T03:41:51+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,21 +36,21 @@
     },
     {
       "rank": 6,
-      "title": "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices",
-      "url": "https://huggingface.co/papers/2509.02523",
-      "hot": "21"
-    },
-    {
-      "rank": 7,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "115"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "Moonshine: Speech Recognition for Live Transcription and Voice Commands",
       "url": "https://huggingface.co/papers/2410.15608",
       "hot": "13"
+    },
+    {
+      "rank": 8,
+      "title": "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices",
+      "url": "https://huggingface.co/papers/2509.02523",
+      "hot": "21"
     },
     {
       "rank": 9,
