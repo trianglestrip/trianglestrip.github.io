@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-07-25T10:03:01+00:00",
+  "updated_at": "2026-07-25T16:11:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Rust] block/buzz",
       "url": "https://github.com/block/buzz",
-      "hot": "10,729"
+      "hot": "11,315"
     },
     {
       "rank": 2,
-      "title": "[TypeScript] koala73/worldmonitor",
-      "url": "https://github.com/koala73/worldmonitor",
-      "hot": "73,746"
+      "title": "[Go] alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "hot": "12,731"
     },
     {
       "rank": 3,
-      "title": "[Python] ComposioHQ/awesome-claude-skills",
-      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "hot": "70,296"
+      "title": "[JavaScript] citrolabs/ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "hot": "3,288"
     },
     {
       "rank": 4,
-      "title": "[Rust] Pumpkin-MC/Pumpkin",
-      "url": "https://github.com/Pumpkin-MC/Pumpkin",
-      "hot": "9,468"
+      "title": "[Python] ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "hot": "70,425"
     },
     {
       "rank": 5,
-      "title": "[Python] shiyu-coder/Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "hot": "33,624"
+      "title": "[Jupyter Notebook] anthropics/claude-cookbooks",
+      "url": "https://github.com/anthropics/claude-cookbooks",
+      "hot": "49,756"
     },
     {
       "rank": 6,
       "title": "[Rust] Automattic/harper",
       "url": "https://github.com/Automattic/harper",
-      "hot": "13,180"
+      "hot": "13,280"
     },
     {
       "rank": 7,
-      "title": "[TypeScript] likec4/likec4",
-      "url": "https://github.com/likec4/likec4",
-      "hot": "5,122"
+      "title": "[Python] shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "hot": "33,694"
     },
     {
       "rank": 8,
-      "title": "[JavaScript] citrolabs/ego-lite",
-      "url": "https://github.com/citrolabs/ego-lite",
-      "hot": "3,031"
+      "title": "[Shell] obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "hot": "260,926"
     },
     {
       "rank": 9,
-      "title": "[Go] yorukot/superfile",
-      "url": "https://github.com/yorukot/superfile",
-      "hot": "19,791"
+      "title": "[Rust] Pumpkin-MC/Pumpkin",
+      "url": "https://github.com/Pumpkin-MC/Pumpkin",
+      "hot": "9,583"
     },
     {
       "rank": 10,
-      "title": "[Rust] ruvnet/RuView",
-      "url": "https://github.com/ruvnet/RuView",
-      "hot": "86,153"
+      "title": "[Swift] permissionlesstech/bitchat",
+      "url": "https://github.com/permissionlesstech/bitchat",
+      "hot": "28,339"
     }
   ]
 }

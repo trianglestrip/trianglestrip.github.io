@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-25T10:03:12+00:00",
+  "updated_at": "2026-07-25T16:12:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3041"
+      "hot": "3071"
     },
     {
       "rank": 2,
       "title": "poolside/Laguna-S-2.1",
       "url": "https://huggingface.co/poolside/Laguna-S-2.1",
-      "hot": "627"
+      "hot": "646"
     },
     {
       "rank": 3,
-      "title": "thinkingmachines/Inkling",
-      "url": "https://huggingface.co/thinkingmachines/Inkling",
-      "hot": "1553"
+      "title": "upstage/Solar-Open2-250B",
+      "url": "https://huggingface.co/upstage/Solar-Open2-250B",
+      "hot": "555"
     },
     {
       "rank": 4,
-      "title": "upstage/Solar-Open2-250B",
-      "url": "https://huggingface.co/upstage/Solar-Open2-250B",
-      "hot": "545"
+      "title": "thinkingmachines/Inkling",
+      "url": "https://huggingface.co/thinkingmachines/Inkling",
+      "hot": "1561"
     },
     {
       "rank": 5,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "505"
+      "hot": "521"
     },
     {
       "rank": 6,
       "title": "Nanbeige/Nanbeige4.2-3B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
-      "hot": "377"
+      "hot": "390"
     },
     {
       "rank": 7,
       "title": "prism-ml/Ternary-Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-      "hot": "1010"
+      "hot": "1021"
     },
     {
       "rank": 8,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4426"
+      "hot": "4437"
     },
     {
       "rank": 9,
       "title": "microsoft/Mage-Flow",
       "url": "https://huggingface.co/microsoft/Mage-Flow",
-      "hot": "247"
+      "hot": "260"
     },
     {
       "rank": 10,
       "title": "prism-ml/Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
-      "hot": "633"
+      "hot": "636"
     }
   ]
 }
