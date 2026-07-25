@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-07-25T20:24:27+00:00",
+  "updated_at": "2026-07-25T21:12:48+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,32 +36,32 @@
     },
     {
       "rank": 6,
-      "title": "罗永浩怒斥电视机厂商",
-      "url": "https://s.weibo.com/weibo?q=%E7%BD%97%E6%B0%B8%E6%B5%A9%E6%80%92%E6%96%A5%E7%94%B5%E8%A7%86%E6%9C%BA%E5%8E%82%E5%95%86",
-      "hot": ""
-    },
-    {
-      "rank": 7,
       "title": "存款有100万的人舍不得花30万买车",
       "url": "https://s.weibo.com/weibo?q=%E5%AD%98%E6%AC%BE%E6%9C%89100%E4%B8%87%E7%9A%84%E4%BA%BA%E8%88%8D%E4%B8%8D%E5%BE%97%E8%8A%B130%E4%B8%87%E4%B9%B0%E8%BD%A6",
       "hot": ""
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "现在就出发4",
       "url": "https://s.weibo.com/weibo?q=%E7%8E%B0%E5%9C%A8%E5%B0%B1%E5%87%BA%E5%8F%914",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "被裁掉的女孩播放破2亿",
       "url": "https://s.weibo.com/weibo?q=%E8%A2%AB%E8%A3%81%E6%8E%89%E7%9A%84%E5%A5%B3%E5%AD%A9%E6%92%AD%E6%94%BE%E7%A0%B42%E4%BA%BF",
       "hot": ""
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "八仙",
       "url": "https://s.weibo.com/weibo?q=%E5%85%AB%E4%BB%99",
+      "hot": ""
+    },
+    {
+      "rank": 10,
+      "title": "西班牙21次犯规零牌",
+      "url": "https://s.weibo.com/weibo?q=%E8%A5%BF%E7%8F%AD%E7%89%9921%E6%AC%A1%E7%8A%AF%E8%A7%84%E9%9B%B6%E7%89%8C",
       "hot": ""
     }
   ]
