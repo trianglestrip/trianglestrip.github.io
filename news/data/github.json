@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-07-25T16:11:34+00:00",
+  "updated_at": "2026-07-25T23:08:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Rust] block/buzz",
       "url": "https://github.com/block/buzz",
-      "hot": "11,315"
+      "hot": "11,839"
     },
     {
       "rank": 2,
       "title": "[Go] alibaba/open-code-review",
       "url": "https://github.com/alibaba/open-code-review",
-      "hot": "12,731"
+      "hot": "12,920"
     },
     {
       "rank": 3,
       "title": "[JavaScript] citrolabs/ego-lite",
       "url": "https://github.com/citrolabs/ego-lite",
-      "hot": "3,288"
+      "hot": "3,534"
     },
     {
       "rank": 4,
       "title": "[Python] ComposioHQ/awesome-claude-skills",
       "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "hot": "70,425"
+      "hot": "70,556"
     },
     {
       "rank": 5,
       "title": "[Jupyter Notebook] anthropics/claude-cookbooks",
       "url": "https://github.com/anthropics/claude-cookbooks",
-      "hot": "49,756"
+      "hot": "49,861"
     },
     {
       "rank": 6,
       "title": "[Rust] Automattic/harper",
       "url": "https://github.com/Automattic/harper",
-      "hot": "13,280"
+      "hot": "13,399"
     },
     {
       "rank": 7,
       "title": "[Python] shiyu-coder/Kronos",
       "url": "https://github.com/shiyu-coder/Kronos",
-      "hot": "33,694"
+      "hot": "33,771"
     },
     {
       "rank": 8,
       "title": "[Shell] obra/superpowers",
       "url": "https://github.com/obra/superpowers",
-      "hot": "260,926"
+      "hot": "261,072"
     },
     {
       "rank": 9,
       "title": "[Rust] Pumpkin-MC/Pumpkin",
       "url": "https://github.com/Pumpkin-MC/Pumpkin",
-      "hot": "9,583"
+      "hot": "9,696"
     },
     {
       "rank": 10,
       "title": "[Swift] permissionlesstech/bitchat",
       "url": "https://github.com/permissionlesstech/bitchat",
-      "hot": "28,339"
+      "hot": "28,663"
     }
   ]
 }
