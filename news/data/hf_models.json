@@ -1,62 +1,62 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-26T06:27:22+00:00",
+  "updated_at": "2026-07-26T12:44:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3126"
+      "hot": "3151"
     },
     {
       "rank": 2,
       "title": "poolside/Laguna-S-2.1",
       "url": "https://huggingface.co/poolside/Laguna-S-2.1",
-      "hot": "668"
+      "hot": "679"
     },
     {
       "rank": 3,
       "title": "upstage/Solar-Open2-250B",
       "url": "https://huggingface.co/upstage/Solar-Open2-250B",
-      "hot": "573"
+      "hot": "582"
     },
     {
       "rank": 4,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "560"
+      "hot": "588"
     },
     {
       "rank": 5,
-      "title": "thinkingmachines/Inkling",
-      "url": "https://huggingface.co/thinkingmachines/Inkling",
-      "hot": "1572"
+      "title": "Nanbeige/Nanbeige4.2-3B",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+      "hot": "425"
     },
     {
       "rank": 6,
-      "title": "Nanbeige/Nanbeige4.2-3B",
-      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
-      "hot": "412"
+      "title": "thinkingmachines/Inkling",
+      "url": "https://huggingface.co/thinkingmachines/Inkling",
+      "hot": "1574"
     },
     {
       "rank": 7,
       "title": "microsoft/Mage-Flow",
       "url": "https://huggingface.co/microsoft/Mage-Flow",
-      "hot": "289"
+      "hot": "308"
     },
     {
       "rank": 8,
       "title": "prism-ml/Ternary-Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-      "hot": "1031"
+      "hot": "1041"
     },
     {
       "rank": 9,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4449"
+      "hot": "4457"
     },
     {
       "rank": 10,
