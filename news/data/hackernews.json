@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-26T06:27:08+00:00",
+  "updated_at": "2026-07-26T08:44:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "An ESP32 based plane radar for my desk",
-      "url": "https://blog.ktz.me/esp32-plane-radar/",
-      "hot": "86"
+      "title": "A shell colon does nothing. Use it anyway",
+      "url": "https://refp.se/articles/your-shell-and-the-magic-colon",
+      "hot": "135"
     },
     {
       "rank": 2,
-      "title": "A shell colon does nothing. Use it anyway",
-      "url": "https://refp.se/articles/your-shell-and-the-magic-colon",
-      "hot": "50"
+      "title": "An ESP32 based plane radar for my desk",
+      "url": "https://blog.ktz.me/esp32-plane-radar/",
+      "hot": "126"
     },
     {
       "rank": 3,
-      "title": "JetZero",
-      "url": "https://www.jetzero.aero",
-      "hot": "147"
+      "title": "The new rules of context engineering for Claude 5 generation models",
+      "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+      "hot": "309"
     },
     {
       "rank": 4,
       "title": "Show HN: I mapped every US golf course",
       "url": "https://golfcoursebrowser.com/",
-      "hot": "97"
+      "hot": "118"
     },
     {
       "rank": 5,
-      "title": "The new rules of context engineering for Claude 5 generation models",
-      "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
-      "hot": "261"
+      "title": "Stinkpot: SQLite-backed shell history",
+      "url": "https://tangled.org/oppi.li/stinkpot",
+      "hot": "46"
     },
     {
       "rank": 6,
       "title": "Inflect-Micro-v2: complete voice in 9.36M parameters",
       "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
-      "hot": "78"
+      "hot": "118"
     },
     {
       "rank": 7,
-      "title": "Rethinking Legal Education in the AI Era",
-      "url": "https://www.law.uchicago.edu/news/ai-strategy-statement",
-      "hot": "52"
+      "title": "GrapheneOS protections against data extraction from locked devices",
+      "url": "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices",
+      "hot": "21"
     },
     {
       "rank": 8,
-      "title": "Clinical failure rates over the decades: yikes",
-      "url": "https://www.science.org/content/blog-post/clinical-failure-rates-over-decades-yikes",
-      "hot": "85"
+      "title": "DeepSeek pause fundraise after comments on compute gap to US leaked (transcript) [pdf]",
+      "url": "https://github.com/demo-zexuan/liang-wenfeng-investor-meeting-2026-7-22/blob/master/%E6%A2%81%E6%96%87%E9%94%8B%E6%8A%95%E8%B5%84%E8%80%85%E4%BA%A4%E6%B5%81%E4%BC%9A-%E6%96%87%E5%AD%97%E7%A8%BF_1_18_translate_20260723201651.pdf",
+      "hot": "137"
     },
     {
       "rank": 9,
-      "title": "W4ME Station – a WASM-4 runtime for Java ME phones",
-      "url": "https://github.com/mulfyx/w4me-station",
-      "hot": "11"
+      "title": "Some more things about Django I've been enjoying",
+      "url": "https://jvns.ca/blog/2026/07/21/more-nice-django-things/",
+      "hot": "28"
     },
     {
       "rank": 10,
-      "title": "Systems and Delays",
-      "url": "https://martin.janiczek.cz/2026/07/24/systems-and-delays.html",
-      "hot": "50"
+      "title": "Cloudflare's new AI traffic options for customers",
+      "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+      "hot": "111"
     }
   ]
 }

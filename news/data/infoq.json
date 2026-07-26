@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-26T06:27:14+00:00",
+  "updated_at": "2026-07-26T08:44:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI Agent 与前沿部署工程：商业决策智能实践 ｜ Summit 2026",
+      "url": "https://www.infoq.cn/video/TV8xhCYdGPx6a38TuzEh?utm_source=rss&utm_medium=article",
+      "hot": "Sun, 26 Jul 2026 15:03:20 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "先有一致性，才有智能：AI 分析背后的隐性工程 ｜ Summit 2026",
+      "url": "https://www.infoq.cn/video/HDxIGC63e5vUWIy7q6qd?utm_source=rss&utm_medium=article",
+      "hot": "Sun, 26 Jul 2026 14:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "从迷雾到抓手：让 AI 融入工作本身，释放团队潜能 ｜ Summit 2026",
+      "url": "https://www.infoq.cn/video/ffh5hpEOijNNrYtkpNDA?utm_source=rss&utm_medium=article",
+      "hot": "Sun, 26 Jul 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 4,
       "title": "Agentic-Native 增长：Zilliz 如何用 AI Agent 支撑超线性业务扩张｜AICon深圳",
       "url": "https://www.infoq.cn/article/w9Xu1REwNa9kLUkjdBJA?utm_source=rss&utm_medium=article",
       "hot": "Sun, 26 Jul 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
+      "title": "基于 Snowflake 扩展研究数据平台 ｜ Summit 2026",
+      "url": "https://www.infoq.cn/video/GpMwjr8xkYwGHXLoDYs0?utm_source=rss&utm_medium=article",
+      "hot": "Sat, 25 Jul 2026 11:00:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "以 AI 对抗 AI：构建越用越强的 Agent Runtime 安全防线｜AICon深圳",
       "url": "https://www.infoq.cn/article/fovd670ZuVMSMI7Z0zO4?utm_source=rss&utm_medium=article",
       "hot": "Sat, 25 Jul 2026 10:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "GitHub Issues 大改造：用缓存和预取，让页面打开快了数倍",
       "url": "https://www.infoq.cn/article/yDgq3fh4YxZM93u21Kr5?utm_source=rss&utm_medium=article",
       "hot": "Sat, 25 Jul 2026 09:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "圆桌访谈：AI 创作场——当生成门槛降低，真正稀缺的是什么？",
       "url": "https://www.infoq.cn/video/rIOauXdfJLSyeIE1pbuQ?utm_source=rss&utm_medium=article",
       "hot": "Sat, 25 Jul 2026 08:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "“因为AI不再招研究生了！”菲尔兹奖得主转身加盟OpenAI：数学家这份工作很难维持",
       "url": "https://www.infoq.cn/article/7rHl2bfzSq4kNVPQ9219?utm_source=rss&utm_medium=article",
       "hot": "Fri, 24 Jul 2026 19:30:52 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "GKE 安全蓝图加入云厂商 AI 安全框架阵营",
       "url": "https://www.infoq.cn/article/DXKamMhJKJeV7CkeExzo?utm_source=rss&utm_medium=article",
       "hot": "Fri, 24 Jul 2026 18:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "深度对话：AI Agent 真落地，为什么需要 GPU 原生认知数据库？",
-      "url": "https://www.infoq.cn/video/WKDVJzq0LF6luzNAGwrP?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 24 Jul 2026 17:30:28 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "从“卷模型”到“算总账”：AI 产业竞争开始拼什么 | 请回答 WAIC 2026",
-      "url": "https://www.infoq.cn/article/SyHXRLS6AR3vI6VtVjDo?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 24 Jul 2026 16:45:21 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "开发者的 AI 助手升级了：Android Studio 支持多个 Agent 同时处理任务",
-      "url": "https://www.infoq.cn/article/j227Ip5mPV4SQFuFX63C?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 24 Jul 2026 16:15:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Java 近期新闻：值对象、WildFly 41、TornadoVM、LangChain4j、Oracle AI Agent Studio",
-      "url": "https://www.infoq.cn/article/SCpx11gzcAUXOFdkSEKC?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 24 Jul 2026 14:24:00 GMT"
     }
   ]
 }
