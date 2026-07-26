@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-26T03:52:21+00:00",
+  "updated_at": "2026-07-26T06:27:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "JetZero",
-      "url": "https://www.jetzero.aero",
-      "hot": "59"
+      "title": "An ESP32 based plane radar for my desk",
+      "url": "https://blog.ktz.me/esp32-plane-radar/",
+      "hot": "86"
     },
     {
       "rank": 2,
-      "title": "Show HN: I mapped every US golf course – 16k+ courses, free, no signup",
-      "url": "https://golfcoursebrowser.com/",
-      "hot": "33"
+      "title": "A shell colon does nothing. Use it anyway",
+      "url": "https://refp.se/articles/your-shell-and-the-magic-colon",
+      "hot": "50"
     },
     {
       "rank": 3,
-      "title": "An ESP32 based plane radar for my desk",
-      "url": "https://blog.ktz.me/esp32-plane-radar/",
-      "hot": "20"
+      "title": "JetZero",
+      "url": "https://www.jetzero.aero",
+      "hot": "147"
     },
     {
       "rank": 4,
-      "title": "Stolen Buttons",
-      "url": "https://anatolyzenkov.com/stolen-buttons",
-      "hot": "631"
+      "title": "Show HN: I mapped every US golf course",
+      "url": "https://golfcoursebrowser.com/",
+      "hot": "97"
     },
     {
       "rank": 5,
-      "title": "Systems and Delays",
-      "url": "https://martin.janiczek.cz/2026/07/24/systems-and-delays.html",
-      "hot": "34"
+      "title": "The new rules of context engineering for Claude 5 generation models",
+      "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+      "hot": "261"
     },
     {
       "rank": 6,
       "title": "Inflect-Micro-v2: complete voice in 9.36M parameters",
       "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
-      "hot": "38"
+      "hot": "78"
     },
     {
       "rank": 7,
-      "title": "Clinical failure rates over the decades: yikes",
-      "url": "https://www.science.org/content/blog-post/clinical-failure-rates-over-decades-yikes",
-      "hot": "67"
+      "title": "Rethinking Legal Education in the AI Era",
+      "url": "https://www.law.uchicago.edu/news/ai-strategy-statement",
+      "hot": "52"
     },
     {
       "rank": 8,
-      "title": "Cloudflare's new AI traffic options for customers",
-      "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
-      "hot": "60"
+      "title": "Clinical failure rates over the decades: yikes",
+      "url": "https://www.science.org/content/blog-post/clinical-failure-rates-over-decades-yikes",
+      "hot": "85"
     },
     {
       "rank": 9,
-      "title": "Humans Haven't Stopped Evolving",
-      "url": "https://www.harvardmagazine.com/research/harvard-human-evolution-genes-selective-pressure",
-      "hot": "7"
+      "title": "W4ME Station – a WASM-4 runtime for Java ME phones",
+      "url": "https://github.com/mulfyx/w4me-station",
+      "hot": "11"
     },
     {
       "rank": 10,
-      "title": "Git rebase -I is not that scary",
-      "url": "https://cachebag.sh/journal/interactive-rebasing/",
-      "hot": "35"
+      "title": "Systems and Delays",
+      "url": "https://martin.janiczek.cz/2026/07/24/systems-and-delays.html",
+      "hot": "50"
     }
   ]
 }
