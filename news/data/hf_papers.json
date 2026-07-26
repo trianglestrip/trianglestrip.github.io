@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-26T12:44:10+00:00",
+  "updated_at": "2026-07-26T19:46:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "65"
+      "hot": "66"
     },
     {
       "rank": 2,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
-      "url": "https://huggingface.co/papers/2607.19191",
-      "hot": "293"
-    },
-    {
-      "rank": 10,
       "title": "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices",
       "url": "https://huggingface.co/papers/2509.02523",
       "hot": "21"
+    },
+    {
+      "rank": 10,
+      "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
+      "url": "https://huggingface.co/papers/2607.19191",
+      "hot": "295"
     }
   ]
 }
