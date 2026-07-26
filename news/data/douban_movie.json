@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-26T14:16:57+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-07-26T16:29:42+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -19,21 +18,21 @@
     },
     {
       "rank": 3,
-      "title": "雀骨",
-      "url": "https://movie.douban.com/subject/37317368/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 4,
       "title": "痴迷",
       "url": "https://movie.douban.com/subject/37450627/",
       "hot": "评分 7.5"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "群星闪耀时",
       "url": "https://movie.douban.com/subject/35875462/",
       "hot": "评分 7.5"
+    },
+    {
+      "rank": 5,
+      "title": "雀骨",
+      "url": "https://movie.douban.com/subject/37317368/",
+      "hot": "评分 6.7"
     },
     {
       "rank": 6,
@@ -43,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "灿如繁星",
-      "url": "https://movie.douban.com/subject/36466246/",
-      "hot": "评分 6.8"
-    },
-    {
-      "rank": 8,
       "title": "野狗骨头",
       "url": "https://movie.douban.com/subject/36618951/",
       "hot": "评分 6.9"
+    },
+    {
+      "rank": 8,
+      "title": "灿如繁星",
+      "url": "https://movie.douban.com/subject/36466246/",
+      "hot": "评分 6.8"
     },
     {
       "rank": 9,
