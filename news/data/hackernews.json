@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-27T16:15:21+00:00",
+  "updated_at": "2026-07-27T19:08:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Kimi-K3 Technical Report [pdf]",
-      "url": "https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf",
-      "hot": "156"
+      "title": "MAI-Cyber 1",
+      "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+      "hot": "152"
     },
     {
       "rank": 2,
-      "title": "Kimi-K3 Releases on HuggingFace 7/27",
+      "title": "Kimi-K3 on HuggingFace",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "873"
+      "hot": "1124"
     },
     {
       "rank": 3,
-      "title": "Glue bonds to nonstick surfaces and wipes clean with ethanol",
-      "url": "https://cen.acs.org/materials/adhesives/glue-bonds-nonstick-surfaces-wipes-clean/104/web/2026/07",
-      "hot": "23"
+      "title": "Watching Go's new garbage collector move through the heap",
+      "url": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
+      "hot": "29"
     },
     {
       "rank": 4,
-      "title": "The Computer That Helped Win World War II",
-      "url": "https://spectrum.ieee.org/colossus-computer-ieee-milestone",
-      "hot": "48"
+      "title": "Decathlon Germany adds Wero payment option to decathlon.de website",
+      "url": "https://www.sgieurope.com/e-commerce/decathlon-germany-launches-wero-payment-on-its-website/122397.article",
+      "hot": "138"
     },
     {
       "rank": 5,
-      "title": "Removing React.js from the codebase and adapting Htmx for UI interactivity (2023)",
-      "url": "https://misago-project.org/t/removing-reactjs-from-the-codebase-and-adapting-htmx-for-ui-interactivity/1267/",
-      "hot": "119"
+      "title": "Glue bonds to nonstick surfaces and wipes clean with ethanol",
+      "url": "https://cen.acs.org/materials/adhesives/glue-bonds-nonstick-surfaces-wipes-clean/104/web/2026/07",
+      "hot": "88"
     },
     {
       "rank": 6,
-      "title": "All major LLMs are lib-left. Even Grok, half the time",
-      "url": "https://unslop.run/blog/political-compass-of-llms",
-      "hot": "8"
+      "title": "The computer that helped win World War II",
+      "url": "https://spectrum.ieee.org/colossus-computer-ieee-milestone",
+      "hot": "95"
     },
     {
       "rank": 7,
-      "title": "Apple Will 'Watch Everything Burn' When the AI Bubble Bursts",
-      "url": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
-      "hot": "136"
+      "title": "Show HN: FeyNoBg – Automatic background removal model and training library",
+      "url": "https://usefeyn.com/blog/feynobg/",
+      "hot": "36"
     },
     {
       "rank": 8,
-      "title": "DIY Home Solar System for under $5000",
-      "url": "https://www.gavinmai.com/1736354308000-diy-home-solar-backup-system",
-      "hot": "24"
+      "title": "Self-contained highly-portable Python distributions",
+      "url": "https://gregoryszorc.com/docs/python-build-standalone/main/",
+      "hot": "12"
     },
     {
       "rank": 9,
-      "title": "AI companies spend record sums on Washington lobbying",
-      "url": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
-      "hot": "80"
+      "title": "Exploiting Volvo/Eicher's fleet platform to gain control over all users/vehicles",
+      "url": "https://eaton-works.com/2026/07/27/my-eicher-hack/",
+      "hot": "49"
     },
     {
       "rank": 10,
-      "title": "Libsm64: Mario 64 as a library for use in external game engines",
-      "url": "https://github.com/libsm64/libsm64",
-      "hot": "95"
+      "title": "Exercise works for depression. So why isn't it treated like real medicine?",
+      "url": "https://bigthink.com/mind-behavior/exercise-works-for-depression-so-why-isnt-it-treated-like-real-medicine/",
+      "hot": "39"
     }
   ]
 }
