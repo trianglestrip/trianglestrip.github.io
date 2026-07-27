@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-27T13:58:57+00:00",
+  "updated_at": "2026-07-27T16:15:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Kimi-K3 Releases on HuggingFace 7/27",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "608"
+      "title": "Kimi-K3 Technical Report [pdf]",
+      "url": "https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf",
+      "hot": "156"
     },
     {
       "rank": 2,
-      "title": "Should you wash your solar panels?",
-      "url": "https://incoherency.co.uk/blog/stories/should-you-wash-your-solar-panels.html",
-      "hot": "27"
+      "title": "Kimi-K3 Releases on HuggingFace 7/27",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3",
+      "hot": "873"
     },
     {
       "rank": 3,
-      "title": "AI companies are shredding rare books",
-      "url": "https://xcancel.com/HedgieMarkets/status/2081534588485296565",
-      "hot": "245"
+      "title": "Glue bonds to nonstick surfaces and wipes clean with ethanol",
+      "url": "https://cen.acs.org/materials/adhesives/glue-bonds-nonstick-surfaces-wipes-clean/104/web/2026/07",
+      "hot": "23"
     },
     {
       "rank": 4,
-      "title": "How is the Bun Rewrite in Rust going?",
-      "url": "https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html",
-      "hot": "203"
+      "title": "The Computer That Helped Win World War II",
+      "url": "https://spectrum.ieee.org/colossus-computer-ieee-milestone",
+      "hot": "48"
     },
     {
       "rank": 5,
-      "title": "Removing React.js from the codebase and adapting Htmx for UI interactivity",
+      "title": "Removing React.js from the codebase and adapting Htmx for UI interactivity (2023)",
       "url": "https://misago-project.org/t/removing-reactjs-from-the-codebase-and-adapting-htmx-for-ui-interactivity/1267/",
-      "hot": "58"
+      "hot": "119"
     },
     {
       "rank": 6,
-      "title": "Libsm64: Mario 64 as a library for use in external game engines",
-      "url": "https://github.com/libsm64/libsm64",
-      "hot": "59"
+      "title": "All major LLMs are lib-left. Even Grok, half the time",
+      "url": "https://unslop.run/blog/political-compass-of-llms",
+      "hot": "8"
     },
     {
       "rank": 7,
-      "title": "PGSimCity - How PostgreSQL Works",
-      "url": "https://nikolays.github.io/PGSimCity/",
-      "hot": "749"
+      "title": "Apple Will 'Watch Everything Burn' When the AI Bubble Bursts",
+      "url": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
+      "hot": "136"
     },
     {
       "rank": 8,
-      "title": "Magnolias Are So Old That They're Pollinated by Beetles, Not Bees",
-      "url": "https://mymodernmet.com/magnolia-ancient-flowers-beetles/",
-      "hot": "142"
+      "title": "DIY Home Solar System for under $5000",
+      "url": "https://www.gavinmai.com/1736354308000-diy-home-solar-backup-system",
+      "hot": "24"
     },
     {
       "rank": 9,
-      "title": "Building a Fast Lock-Free Queue in Modern C++ from Scratch",
-      "url": "https://blog.jaysmito.dev/blog/04-fast-lockfree-queues/",
-      "hot": "32"
+      "title": "AI companies spend record sums on Washington lobbying",
+      "url": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
+      "hot": "80"
     },
     {
       "rank": 10,
-      "title": "Show HN: Physically accurate black hole you can put in your room",
-      "url": "https://blackhole.plav.in",
-      "hot": "392"
+      "title": "Libsm64: Mario 64 as a library for use in external game engines",
+      "url": "https://github.com/libsm64/libsm64",
+      "hot": "95"
     }
   ]
 }
