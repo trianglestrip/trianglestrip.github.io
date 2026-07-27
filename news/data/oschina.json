@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-27T08:17:57+00:00",
+  "updated_at": "2026-07-27T11:43:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "创客营招募倒计时｜不招学员，只招创业同行者",
+      "url": "https://www.oschina.net/news/480698",
+      "hot": "Mon, 27 Jul 2026 18:35:52 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "微服务退潮，单体回温：AI 时代，Java 后端需要一场 \"瘦身革命\"",
+      "url": "https://my.oschina.net/u/2385344/blog/19727454",
+      "hot": "Mon, 27 Jul 2026 18:06:48 +0800"
+    },
+    {
+      "rank": 3,
+      "title": ":fire: 审批通知渠道现支持按标题远程搜索：开源无代码 / 低代码平台 NocoBase",
+      "url": "https://www.oschina.net/news/480662",
+      "hot": "Mon, 27 Jul 2026 18:01:04 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Wine 11.14 发布",
+      "url": "https://www.oschina.net/news/480615/wine-11-14-released",
+      "hot": "Mon, 27 Jul 2026 17:12:42 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "模型开源，力破西方偏见",
+      "url": "https://www.oschina.net/news/480605",
+      "hot": "Mon, 27 Jul 2026 17:01:39 +0800"
+    },
+    {
+      "rank": 6,
       "title": "Kimi-K3 即将开源，第一个 3 万亿参数的开放权重模型",
       "url": "https://www.oschina.net/news/480560",
       "hot": "Mon, 27 Jul 2026 16:13:17 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "黄仁勋发布第一条推文，号召业界签署开源倡议支持开放权重模型",
       "url": "https://www.oschina.net/news/480507",
       "hot": "Mon, 27 Jul 2026 15:22:31 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "美团辟谣 LongCat 模型负责人离职",
       "url": "https://www.oschina.net/news/480448",
       "hot": "Mon, 27 Jul 2026 14:31:50 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "Apache Wicket 10.10.0 发布，开源 Java Web 框架",
       "url": "https://www.oschina.net/news/480420/apache-wicket-10-10-0-released",
       "hot": "Mon, 27 Jul 2026 13:59:41 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "Debian 就项目中的 LLM 使用进行决议",
       "url": "https://www.oschina.net/news/480266/debian-gr-llm-usage",
       "hot": "Mon, 27 Jul 2026 11:37:08 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "GPFS、Alluxio、JuiceFS 怎么选？一文看懂架构与适用场景",
-      "url": "https://my.oschina.net/u/5389802/blog/19726712",
-      "hot": "Mon, 27 Jul 2026 11:23:42 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "GNU C Library 2.44 发布",
-      "url": "https://www.oschina.net/news/480243/gnu-c-lib-2-44-released",
-      "hot": "Mon, 27 Jul 2026 11:10:13 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "首页推荐的幽灵手办怎么来的？对话海外大厂资深搜推算法专家傅聪",
-      "url": "https://my.oschina.net/u/4487475/blog/19727706",
-      "hot": "Mon, 27 Jul 2026 11:04:48 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "htmx 4.0 把源码塞进了 Game Boy 卡带",
-      "url": "https://www.oschina.net/news/480219",
-      "hot": "Mon, 27 Jul 2026 10:49:08 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "DataBuff v0.1.5 发布 · 写入性能大幅提升",
-      "url": "https://www.oschina.net/news/480213/databuff-0-1-5-released",
-      "hot": "Mon, 27 Jul 2026 10:39:33 +0800"
     }
   ]
 }

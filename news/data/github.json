@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-07-27T04:50:48+00:00",
+  "updated_at": "2026-07-27T11:43:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Swift] permissionlesstech/bitchat",
       "url": "https://github.com/permissionlesstech/bitchat",
-      "hot": "30,716"
+      "hot": "31,483"
     },
     {
       "rank": 2,
-      "title": "[JavaScript] citrolabs/ego-lite",
-      "url": "https://github.com/citrolabs/ego-lite",
-      "hot": "4,855"
-    },
-    {
-      "rank": 3,
-      "title": "[Rust] block/buzz",
-      "url": "https://github.com/block/buzz",
+      "title": "[C++] amnezia-vpn/amnezia-client",
+      "url": "https://github.com/amnezia-vpn/amnezia-client",
       "hot": "13,562"
     },
     {
+      "rank": 3,
+      "title": "[TypeScript] moeru-ai/airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "hot": "43,696"
+    },
+    {
       "rank": 4,
-      "title": "[TypeScript] pingdotgg/t3code",
-      "url": "https://github.com/pingdotgg/t3code",
-      "hot": "15,111"
+      "title": "[Go] yorukot/superfile",
+      "url": "https://github.com/yorukot/superfile",
+      "hot": "20,530"
     },
     {
       "rank": 5,
-      "title": "[TypeScript] CoreBunch/Instatic",
-      "url": "https://github.com/CoreBunch/Instatic",
-      "hot": "5,793"
+      "title": "[Python] NanmiCoder/MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "hot": "57,929"
     },
     {
       "rank": 6,
-      "title": "[Go] yorukot/superfile",
-      "url": "https://github.com/yorukot/superfile",
-      "hot": "20,354"
+      "title": "[JavaScript] pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "hot": "51,091"
     },
     {
       "rank": 7,
-      "title": "[JavaScript] nodejs/node",
-      "url": "https://github.com/nodejs/node",
-      "hot": "118,511"
+      "title": "[Python] shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "hot": "34,378"
     },
     {
       "rank": 8,
-      "title": "[Java] OtterMind/Chat2DB",
-      "url": "https://github.com/OtterMind/Chat2DB",
-      "hot": "27,232"
+      "title": "[Go] alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "hot": "14,362"
     },
     {
       "rank": 9,
-      "title": "[JavaScript] pbakaus/impeccable",
-      "url": "https://github.com/pbakaus/impeccable",
-      "hot": "50,831"
+      "title": "[Java] jenkinsci/jenkins",
+      "url": "https://github.com/jenkinsci/jenkins",
+      "hot": "25,801"
     },
     {
       "rank": 10,
-      "title": "[Python] shiyu-coder/Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "hot": "34,239"
+      "title": "[Python] bradautomates/claude-video",
+      "url": "https://github.com/bradautomates/claude-video",
+      "hot": "10,620"
     }
   ]
 }
