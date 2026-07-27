@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-26T23:32:55+00:00",
+  "updated_at": "2026-07-27T04:50:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "鸿蒙开发中的所有生命周期详解",
-      "url": "https://ost.51cto.com/posts/53537",
-      "hot": "本文深入解析鸿蒙Stage模型下从应用进程到UI组件的全生命周期体系，涵盖UIAbility、WindowStage、AbilityStage、页面和组件等各个层级。全..."
+      "title": "一文看懂AI原生组织架构：AI Infra、AI OS与Agent应用的全栈重构",
+      "url": "https://www.51cto.com/article/850916.html",
+      "hot": "AI Infra、AI OS、Agent应用、安全体系——这四层协同运作，才构成一个真正意义上的AI原生组织。缺任何一层，或者任何一层做得不到位，整个系统的效能都会大打折扣。"
     },
     {
       "rank": 2,
-      "title": "一次 40 分钟 P0 漏推事故：聊聊 Hermes + Alertmanager 钉钉告警建设",
-      "url": "https://www.51cto.com/article/850790.html",
-      "hot": "告警通道本身也要被监控。监控系统的\"最后一公里\"往往最脆弱。"
+      "title": "系统提示砍掉 80% 之后：短 AGENTS.md、JIT Skill，和确定性校验",
+      "url": "https://www.51cto.com/article/850871.html",
+      "hot": "Anthropic 发了一篇很刺眼的笔记：面向 Claude Opus 5、Claude Fable 5 这一代，他们把 Claude Code 的系统提示砍掉了八成以上，编码评测几乎没有掉分。同期还有 /doctor，专门帮你给 CLAUDE.md 和 Skill「瘦身」。"
     },
     {
       "rank": 3,
-      "title": "从 AIOps 到 AI SRE：智能体自主运维的边界，守住这七条安全底线才能平稳落地",
-      "url": "https://www.51cto.com/article/850789.html",
-      "hot": "安全护栏不是限制智能体发挥价值，而是让 AI SRE 智能体真正具备上线生产环境的可行性。"
+      "title": "Loop 已凉？Graph Engineering 已到来！",
+      "url": "https://www.51cto.com/article/850869.html",
+      "hot": "Graph Engineering 是一次命名事件，不是一次技术事件。一个 loop 打不住的时候才上图。 上图之前先把 verifier 和停止条件做扎实，图里每个节点还是一个循环，循环不可靠的图只会在更多地方同时崩。"
     },
     {
       "rank": 4,
-      "title": "HarmonyOS:折叠屏 × 沉浸光感-用 @ComponentV2 做一个会\"变色\"的鸿蒙音乐播放器",
-      "url": "https://ost.51cto.com/posts/53419",
-      "hot": "写鸿蒙播放器的文章很多，但绝大多数只做一件事：在固定尺寸的手机屏上把封面、进度条、控制按钮摆好看。可一旦设备变成折叠屏，或者用户希..."
+      "title": "OpenAI超强模型为抄答案黑进服务器！抱抱脸CEO要一亿美元算力做补偿",
+      "url": "https://www.51cto.com/article/850848.html",
+      "hot": "闯进来的那个智能体，底层是两个模型：OpenAI自家的GPT-5.6 Sol，外加一个更强的未发布模型。"
     },
     {
       "rank": 5,
-      "title": "CVPR'26 | 亮点清华弄了个镜像错觉艺术生成器，支持3D打印",
-      "url": "https://www.51cto.com/article/850744.html",
-      "hot": "清华大学团队研发的AutoMIA系统，可将任意两张图片转化为具有镜像错觉效果的3D艺术品，实现正反两面不同图案的视觉呈现，并支持3D打印。"
+      "title": "你的AI在干活，还是在刷分？OpenAI揭开模型讨好机制",
+      "url": "https://www.51cto.com/article/850846.html",
+      "hot": "一个强化学习智能体被奖励去捡金币，而金币总放在关卡最右端，它最后学会的是一路向右狂奔，跟金币没关系。"
     },
     {
       "rank": 6,
-      "title": "从一则真实入侵案例：看懂 AI 辅助域侦察攻击的防御新思路",
-      "url": "https://www.51cto.com/article/850738.html",
-      "hot": "没有任何经验丰富的渗透测试工程师或恶意软件开发者会用默认文件名保存自己精心打磨的工具。\"Untitled1\"是文本编辑器在用户来不及命名时自动生成的名字——它意味着，使用者复制了一段代码，打开了编辑器，然后直接按下了保存键。"
+      "title": "奥特曼马斯克豪言：我们已进入奇点！AGI加速窗口已至",
+      "url": "https://www.51cto.com/article/850845.html",
+      "hot": "奥特曼十年后重新复盘创业方法论，罕见认怂：Codex当年真打不过Claude Code，靠敢死队式冲刺绝地翻盘。"
     },
     {
       "rank": 7,
-      "title": "Claude Opus5偷跑，第一波网友实测来了",
-      "url": "https://www.51cto.com/article/850735.html",
-      "hot": "Fable 5虽然一次成型，但帐篷是纯色平面，草地没有起伏，弹弓本体也少了张力、箭矢重量这些参数面板，细节密度上肉眼可见地输了一截。"
+      "title": "20岁拿下博士、答辩席坐着费曼的狂人：AI是第一种「外星智能」",
+      "url": "https://www.51cto.com/article/850844.html",
+      "hot": "「计算不可约性」，简单一句话就是，有些系统复杂到，你想知道它下一步会变成什么样，唯一的办法就是老老实实把它一步步跑完。"
     },
     {
       "rank": 8,
-      "title": "刚刚，Claude爆改语音！11种语言，就是没中文",
-      "url": "https://www.51cto.com/article/850731.html",
-      "hot": "Claude这边，从只能跑Haiku升级到Opus 4.8和Sonnet 5全系列，不仅能在对话里调Gmail、日历、Slack，还扩增到11种语言，但没有中文。"
+      "title": "深度拆解计数变更与底层逻辑，告别面试和编码误区",
+      "url": "https://www.51cto.com/article/850868.html",
+      "hot": "本文可不搞那种模糊不清的概念讲解，要清清楚楚地梳理所有计数变化的各种情况，准确地去区分自增、自减的触发时机，帮大家完完全全弄明白移动、拷贝、重置、销毁等等操作的底层逻辑，避开日常编码还有面试里头的常见错误。"
     },
     {
       "rank": 9,
-      "title": "梁文锋押注的方向，中国00后团队先交卷了！性能直逼Opus 4.8",
-      "url": "https://www.51cto.com/article/850723.html",
-      "hot": "7月15日，前OpenAI CTO Mira Murati在旧金山发布了Thinking Machines Lab的首个模型Inkling。"
+      "title": "Claude写完代码不直接交了：四个Skill自查一遍，改好再找你",
+      "url": "https://www.51cto.com/article/850843.html",
+      "hot": "Claude写完代码，会自己先找错，改到没问题再回来找你。这意味着AI开始从「会写代码」，进化到「会检查自己写的代码」。"
     },
     {
       "rank": 10,
-      "title": "Google 开源 OKF：先搞清楚它有什么用，再谈它是什么",
-      "url": "https://www.51cto.com/article/850703.html",
-      "hot": "OKF 很轻，轻到一页规范。轻，才有机会被很多人说。它不保证知识正确，不做完整治理，也不会让 Agent 突然变聪明。它做的是更底一层的事：给该被共享的上下文一个不绑平台的家。"
+      "title": "李飞飞第一篇「触觉」论文：机器人会盲摸麻将了",
+      "url": "https://www.51cto.com/article/850842.html",
+      "hot": "有模型的、算力的、本体的、数据的等等…..在各自细分赛道上如雷贯耳的big name们，齐聚具身智能，但关注点嘛~一下就让人好奇起来"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-26T23:32:59+00:00",
+  "updated_at": "2026-07-27T04:51:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Debian 就项目中的 LLM 使用进行决议",
+      "url": "https://www.oschina.net/news/480266/debian-gr-llm-usage",
+      "hot": "Mon, 27 Jul 2026 11:37:08 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "GPFS、Alluxio、JuiceFS 怎么选？一文看懂架构与适用场景",
+      "url": "https://my.oschina.net/u/5389802/blog/19726712",
+      "hot": "Mon, 27 Jul 2026 11:23:42 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "GNU C Library 2.44 发布",
+      "url": "https://www.oschina.net/news/480243/gnu-c-lib-2-44-released",
+      "hot": "Mon, 27 Jul 2026 11:10:13 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "首页推荐的幽灵手办怎么来的？对话海外大厂资深搜推算法专家傅聪",
+      "url": "https://my.oschina.net/u/4487475/blog/19727706",
+      "hot": "Mon, 27 Jul 2026 11:04:48 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "htmx 4.0 把源码塞进了 Game Boy 卡带",
+      "url": "https://www.oschina.net/news/480219",
+      "hot": "Mon, 27 Jul 2026 10:49:08 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "DataBuff v0.1.5 发布 · 写入性能大幅提升",
+      "url": "https://www.oschina.net/news/480213/databuff-0-1-5-released",
+      "hot": "Mon, 27 Jul 2026 10:39:33 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "SQLite 3.53.4 发布",
+      "url": "https://www.oschina.net/news/480212/sqlite-3-53-4-released",
+      "hot": "Mon, 27 Jul 2026 10:39:14 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "TeXstudio 4.9.6 发布",
+      "url": "https://www.oschina.net/news/480203/texstudio-4-9-6-released",
+      "hot": "Mon, 27 Jul 2026 10:32:27 +0800"
+    },
+    {
+      "rank": 9,
       "title": "ZGI 正式上线 Gitee：让 Agent 不只被创建，也能被执行、追踪和管理",
       "url": "https://www.oschina.net/news/479885",
       "hot": "Sun, 26 Jul 2026 20:34:31 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "别再把 Coding Agent 当智能补全了：SolonCode 想做的是数字员工",
       "url": "https://www.oschina.net/news/479611",
       "hot": "Sun, 26 Jul 2026 13:32:39 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "tssh v0.1.26 已经发布，支持 trz/tsz 的 ssh 客户端",
-      "url": "https://www.oschina.net/news/479481",
-      "hot": "Sun, 26 Jul 2026 08:52:43 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "VLOOK 2026.7～主题天花板级大焕新+幻灯片视图～好看好用 Markdown 主题包与排版增强插件",
-      "url": "https://www.oschina.net/news/479243",
-      "hot": "Sat, 25 Jul 2026 19:57:26 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "调问更新 7.12~7.25丨150+ 优质模板上线！选人更高效，体验再升级",
-      "url": "https://www.oschina.net/news/479214",
-      "hot": "Sat, 25 Jul 2026 19:01:20 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "WePush v5.0.6 已经发布，消息批量推送工具",
-      "url": "https://www.oschina.net/news/478906",
-      "hot": "Sat, 25 Jul 2026 09:22:15 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "图灵平台：万亿级轨迹数据的秒级检索实战",
-      "url": "https://my.oschina.net/u/4939618/blog/19726402",
-      "hot": "Fri, 24 Jul 2026 17:47:45 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "✨License Manager 软件授权管理系统 v1.2.1 发布-支持产品试用许可",
-      "url": "https://www.oschina.net/news/478529",
-      "hot": "Fri, 24 Jul 2026 16:38:25 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "新晋菲尔兹奖得主 Tsimerman 官宣加入 OpenAI",
-      "url": "https://www.oschina.net/news/478486",
-      "hot": "Fri, 24 Jul 2026 15:50:13 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "G#：融合 Go/Kotlin/Swift 理念的 .NET 现代语言",
-      "url": "https://www.oschina.net/news/478468",
-      "hot": "Fri, 24 Jul 2026 15:40:33 +0800"
     }
   ]
 }

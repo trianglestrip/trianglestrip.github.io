@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-26T19:46:50+00:00",
+  "updated_at": "2026-07-27T04:51:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3190"
+      "hot": "3225"
     },
     {
       "rank": 2,
       "title": "poolside/Laguna-S-2.1",
       "url": "https://huggingface.co/poolside/Laguna-S-2.1",
-      "hot": "693"
+      "hot": "704"
     },
     {
       "rank": 3,
       "title": "upstage/Solar-Open2-250B",
       "url": "https://huggingface.co/upstage/Solar-Open2-250B",
-      "hot": "586"
+      "hot": "602"
     },
     {
       "rank": 4,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "619"
+      "hot": "647"
     },
     {
       "rank": 5,
       "title": "Nanbeige/Nanbeige4.2-3B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
-      "hot": "436"
+      "hot": "450"
     },
     {
       "rank": 6,
       "title": "thinkingmachines/Inkling",
       "url": "https://huggingface.co/thinkingmachines/Inkling",
-      "hot": "1578"
+      "hot": "1582"
     },
     {
       "rank": 7,
       "title": "microsoft/Mage-Flow",
       "url": "https://huggingface.co/microsoft/Mage-Flow",
-      "hot": "326"
+      "hot": "342"
     },
     {
       "rank": 8,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4472"
+      "hot": "4485"
     },
     {
       "rank": 9,
       "title": "prism-ml/Ternary-Bonsai-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
-      "hot": "1046"
+      "hot": "1052"
     },
     {
       "rank": 10,
       "title": "unsloth/Laguna-S-2.1-GGUF",
       "url": "https://huggingface.co/unsloth/Laguna-S-2.1-GGUF",
-      "hot": "198"
+      "hot": "203"
     }
   ]
 }
