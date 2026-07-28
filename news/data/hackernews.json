@@ -1,67 +1,67 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-28T04:19:30+00:00",
+  "updated_at": "2026-07-28T06:44:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Our position on open-weights models",
       "url": "https://www.anthropic.com/news/position-open-weights-models",
-      "hot": "599"
+      "hot": "744"
     },
     {
       "rank": 2,
       "title": "Using an open model feels surprisingly good",
       "url": "https://matthewsaltz.com/blog/using-an-open-model-feels-surprisingly-good/",
-      "hot": "83"
+      "hot": "214"
     },
     {
       "rank": 3,
-      "title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review",
-      "url": "https://fermisense.com/when-machines-take-the-wheel/",
-      "hot": "51"
-    },
-    {
-      "rank": 4,
-      "title": "Benchmarking Opus 5 on SlopCodeBench",
-      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
-      "hot": "184"
-    },
-    {
-      "rank": 5,
-      "title": "Astronauts describe persistent 'observer' sensation after 6 month missions",
-      "url": "https://spacedaily.com/sd-v-astronauts-returning-from-six-month-missions-describe-a-persistent-observer-sensation-the-feeling-of-watching-their-own-lives-from-a-half-step-outside-the-frame-weeks-after-theyr/",
-      "hot": "124"
-    },
-    {
-      "rank": 6,
-      "title": "RTX 2080 Ti Memory Upgrade to 22 GB",
-      "url": "https://gpusolutions.net/rbservices/graphics-card-upgrade/",
-      "hot": "54"
-    },
-    {
-      "rank": 7,
-      "title": "Residential Proxies Are a National Security Threat",
-      "url": "https://jacob.gold/posts/residential-proxies-are-a-national-security-threat/",
+      "title": "Ars Astronomica – English translations of rare Hebrew and Latin astronomy texts",
+      "url": "https://arsastronomica.com/",
       "hot": "24"
     },
     {
+      "rank": 4,
+      "title": "Neutrino-1 8B",
+      "url": "https://www.fermionresearch.com/models/neutrino-8b/",
+      "hot": "34"
+    },
+    {
+      "rank": 5,
+      "title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review",
+      "url": "https://fermisense.com/when-machines-take-the-wheel/",
+      "hot": "123"
+    },
+    {
+      "rank": 6,
+      "title": "Why do we think we understand the world more than we actually do?",
+      "url": "https://thedecisionlab.com/biases/the-illusion-of-explanatory-depth",
+      "hot": "41"
+    },
+    {
+      "rank": 7,
+      "title": "Benchmarking Opus 5 on SlopCodeBench",
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+      "hot": "229"
+    },
+    {
       "rank": 8,
-      "title": "EYG: A Programming Language for Humans",
-      "url": "https://crowdhailer.me/2026-06-08/a-programming-language-for-humans/",
-      "hot": "28"
+      "title": "PyTorch: A Reference Language",
+      "url": "https://docs.pytorch.org/devlogs/compiler/2026-07-25-pytorch-a-reference-language/",
+      "hot": "16"
     },
     {
       "rank": 9,
-      "title": "Watching Go's new garbage collector move through the heap",
-      "url": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
-      "hot": "182"
+      "title": "RTX 2080 Ti Memory Upgrade to 22 GB",
+      "url": "https://gpusolutions.net/rbservices/graphics-card-upgrade/",
+      "hot": "79"
     },
     {
       "rank": 10,
-      "title": "C/C++ projects packaged for Zig",
-      "url": "https://github.com/allyourcodebase",
+      "title": "An Uncomplicated Man – A review of The Odyssey, directed by Christopher Nolan",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man",
       "hot": "39"
     }
   ]

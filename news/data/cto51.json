@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-28T04:19:29+00:00",
+  "updated_at": "2026-07-28T06:44:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "让应用\"悬浮\"起来：HarmonyOS 闪控球（floatingBall）从接入到实战",
+      "url": "https://ost.51cto.com/posts/53893",
+      "hot": "一、先搞清楚：什么是鸿蒙&quot;闪控球&quot;在动手之前，必须把&quot;闪控球&quot;这个术语搞准确。这是本文最关键的认知前提&mdash;&mdash;&quot;闪控球&quot;在鸿蒙生态里是一个有..."
+    },
+    {
+      "rank": 2,
       "title": "大模型工程化怎么做？LLMOps 九大环节自动化实现方案",
       "url": "https://www.51cto.com/article/851009.html",
       "hot": "本文聚焦 LLMOps（大模型运维）全流程实践，帮助大家理解 LLMOps 如何用自动化串联模型迭代全环节。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "搜索智能体也需要「操作系统」：SearchOS 开源多智能体协作框架",
       "url": "https://www.51cto.com/article/851056.html",
       "hot": "来自人大和蚂蚁最新的研究工作 SearchOS 给出的答案，是把搜索状态做成一种可以调度的基础设施，并提供系统级的多智能体搜索协作。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "四十万美元、两亿张图：华为联合六校训出2K模型 Boogu-Image-0.1，比肩闭源",
       "url": "https://www.51cto.com/article/851055.html",
       "hot": "近日，华为香港莱布尼茨研究所小艺团队与港大、港科大、港中文等 6 校联合发布了 Boogu-Image-0.1。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "全球⾸个⼤规模 Agentic 扩散模型来了！",
       "url": "https://www.51cto.com/article/851053.html",
       "hot": "在人工智能的发展史上，长期取得决定性胜利的，往往不是人类精心编写了大量专业知识的系统，而是那些能够随着算力、数据和搜索规模不断扩展的通用学习方法。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "别再无脑开高推理！Opus 5高配会擅自重构代码乱加戏",
       "url": "https://www.51cto.com/article/851052.html",
       "hot": "只要评测能证明质量不掉，就大面积用low和medium去压成本和延迟，高档位留给真正硬核的长周期任务。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "一句话搭出九人旅行网站！奥特曼：ChatGPT Work名字起小了",
       "url": "https://www.51cto.com/article/851050.html",
       "hot": "ChatGPT Work很了不起，而且「work」这个名字把它说小了。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "马斯克彻底向ASI投降！十年后万亿财富都将「归零」",
       "url": "https://www.51cto.com/article/851048.html",
       "hot": "五 年内 AI 的综合智力将超过全人类总和，10 年内金钱失去意义，工作变成可选项。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Claude设计师被工程师卷到掉队，反手造出百万用户工具",
       "url": "https://www.51cto.com/article/851045.html",
       "hot": "当身边两个工程师突然狂飙，作为小组唯一设计师的Parrott被甩在了后面。他没有干等，而是自己动手，造出了追赶用的工具。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "CUDA 20年护城河一个周末崩了 ！Claude独自跑通AMD新GPU",
       "url": "https://www.51cto.com/article/851044.html",
       "hot": "Claude之以能实现对CUDA生态的「降维打击」，是因为AMD直接给AI开发了一套能上手调GPU的工具。"
-    },
-    {
-      "rank": 10,
-      "title": "菲尔兹奖得主预警：AI可能杀死数学！",
-      "url": "https://www.51cto.com/article/851043.html",
-      "hot": "2年之内，AI将在所有数学证明领域，彻底超越人类。"
     }
   ]
 }
