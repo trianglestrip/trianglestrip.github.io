@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-28T18:20:33+00:00",
+  "updated_at": "2026-07-28T21:00:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "You Could Have Come Up with Kimi Delta Attention",
-      "url": "https://blog.doubleword.ai/you-could-have-come-up-with-kimi-delta-attention",
-      "hot": "186"
+      "title": "Substack writers, you need a website",
+      "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
+      "hot": "258"
     },
     {
       "rank": 2,
       "title": "Steel Bank Common Lisp version 2.6.7",
       "url": "https://sbcl.org/all-news.html?2.6.7",
-      "hot": "46"
+      "hot": "134"
     },
     {
       "rank": 3,
-      "title": "Delayed Gratification – Proud to Be 'Last to Breaking News'",
-      "url": "https://www.slow-journalism.com/",
-      "hot": "101"
+      "title": "Kimi K3 Architecture Overview and Notes",
+      "url": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html",
+      "hot": "191"
     },
     {
       "rank": 4,
-      "title": "Zig's Incremental Compilation Internals",
-      "url": "https://mlugg.co.uk/posts/incremental-compilation-internals/",
-      "hot": "94"
+      "title": "MCP 2026-07-28 Specification: transport going stateless",
+      "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+      "hot": "58"
     },
     {
       "rank": 5,
-      "title": "7.1 Earthquake in Japan",
-      "url": "https://www.data.jma.go.jp/multi/quake/quake_detail.html?eventID=20260728163528&lang=en",
-      "hot": "720"
+      "title": "Delayed Gratification – Proud to Be 'Last to Breaking News'",
+      "url": "https://www.slow-journalism.com/",
+      "hot": "178"
     },
     {
       "rank": 6,
-      "title": "Kimi K3 Architecture Overview and Notes",
-      "url": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html",
-      "hot": "87"
+      "title": "The iPhone Upgrade Program is being replaced by Apple Upgrade",
+      "url": "https://www.apple.com/shop/iphone/iphone-upgrade-program",
+      "hot": "73"
     },
     {
       "rank": 7,
-      "title": "How Do I Profile eBPF Code?",
-      "url": "https://naveensrinivasan.com/posts/2026-07-22-how-do-i-profile-ebpf-code/",
-      "hot": "67"
+      "title": "The Fabled Flatbreads of Uzbekistan (2015)",
+      "url": "https://www.aramcoworld.com/articles/2015/the-fabled-flatbreads-of-uzbekistan",
+      "hot": "32"
     },
     {
       "rank": 8,
-      "title": "Discovering Cryptographic Weaknesses with Claude",
-      "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
-      "hot": "48"
+      "title": "Zig's Incremental Compilation Internals",
+      "url": "https://mlugg.co.uk/posts/incremental-compilation-internals/",
+      "hot": "139"
     },
     {
       "rank": 9,
-      "title": "Show HN: XY – A Fast, composable, GPU-accelerated interactive plotting library",
-      "url": "https://github.com/reflex-dev/xy",
-      "hot": "53"
+      "title": "Discovering Cryptographic Weaknesses with Claude",
+      "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+      "hot": "107"
     },
     {
       "rank": 10,
-      "title": "iPhone Upgrade Program",
-      "url": "https://www.apple.com/shop/iphone/iphone-upgrade-program",
-      "hot": "24"
+      "title": "How Do I Profile eBPF Code?",
+      "url": "https://naveensrinivasan.com/posts/2026-07-22-how-do-i-profile-ebpf-code/",
+      "hot": "91"
     }
   ]
 }
