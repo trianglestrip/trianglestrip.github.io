@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-28T11:33:04+00:00",
+  "updated_at": "2026-07-28T15:34:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "7.1 Earthquake in Japan",
       "url": "https://www.data.jma.go.jp/multi/quake/quake_detail.html?eventID=20260728163528&lang=en",
-      "hot": "283"
+      "hot": "591"
     },
     {
       "rank": 2,
-      "title": "About the security content of macOS Tahoe 26.6",
-      "url": "https://support.apple.com/en-us/128067",
-      "hot": "62"
+      "title": "New HIV vaccine shows unprecedented success in preclinical study",
+      "url": "https://www.lji.org/news-events/news/post/new-hiv-vaccine-shows-unprecedented-success-in-preclinical-study/",
+      "hot": "229"
     },
     {
       "rank": 3,
-      "title": "Our position on open-weights models",
-      "url": "https://www.anthropic.com/news/position-open-weights-models",
-      "hot": "956"
+      "title": "Kimi Linear: An Expressive, Efficient Attention Architecture",
+      "url": "https://arxiv.org/abs/2510.26692",
+      "hot": "124"
     },
     {
       "rank": 4,
-      "title": "Google's Beyond Zero: Enterprise Security for the AI Era",
-      "url": "https://spawn-queue.acm.org/doi/10.1145/3819083",
-      "hot": "16"
+      "title": "Show HN: Formally verified 3D CSG: Trust 93 lines spec, not 1000 lines AI code",
+      "url": "https://github.com/schildep/verified-3d-mesh-intersection",
+      "hot": "68"
     },
     {
       "rank": 5,
-      "title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review",
-      "url": "https://fermisense.com/when-machines-take-the-wheel/",
-      "hot": "216"
+      "title": "Show HN: tale.fyi, we deserve a home for fiction",
+      "url": "https://tale.fyi/@sam/announcing-tale-fyi-read-or-listen-to-an-entire-book-from-a-single-link",
+      "hot": "53"
     },
     {
       "rank": 6,
-      "title": "How to Survive Boiling Water",
-      "url": "https://taxa.substack.com/p/how-to-survive-boiling-water",
-      "hot": "50"
+      "title": "Harmony Explained: Progress Towards a Scientific Theory of Music (2012)",
+      "url": "https://arxiv.org/abs/1202.4212",
+      "hot": "5"
     },
     {
       "rank": 7,
-      "title": "Ars Astronomica – English translations of rare Hebrew and Latin astronomy texts",
-      "url": "https://arsastronomica.com/",
-      "hot": "72"
+      "title": "Solving Fermat: Andrew Wiles",
+      "url": "https://www.pbs.org/wgbh/nova/proof/wiles.html",
+      "hot": "34"
     },
     {
       "rank": 8,
-      "title": "Benchmarking Opus 5 on SlopCodeBench",
-      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
-      "hot": "312"
+      "title": "DMARC Has Been Public Since 2012. 68.4% of Domains Still Don't Enforce It",
+      "url": "https://ciphercue.com/blog/dmarc-enforcement-gap-rua-fragmentation-2026",
+      "hot": "72"
     },
     {
       "rank": 9,
-      "title": "Vehicle Motion Cues",
-      "url": "https://support.apple.com/guide/iphone/iphone-comfortably-riding-a-vehicle-iph55564cb22/ios",
-      "hot": "132"
+      "title": "Google's Beyond Zero: Enterprise Security for the AI Era",
+      "url": "https://spawn-queue.acm.org/doi/10.1145/3819083",
+      "hot": "86"
     },
     {
       "rank": 10,
-      "title": "Neutrino-1 8B",
-      "url": "https://www.fermionresearch.com/models/neutrino-8b/",
-      "hot": "95"
+      "title": "Our position on open-weights models",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "hot": "1081"
     }
   ]
 }
