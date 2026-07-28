@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-28T15:34:07+00:00",
+  "updated_at": "2026-07-28T18:20:12+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "后室",
-      "url": "https://movie.douban.com/subject/36235977/",
-      "hot": "评分 6.7"
+      "title": "寒战1994",
+      "url": "https://movie.douban.com/subject/36857924/",
+      "hot": "评分 7.1"
     },
     {
       "rank": 10,
-      "title": "三国第一部：争洛阳",
-      "url": "https://movie.douban.com/subject/36752981/",
-      "hot": "评分 8.0"
+      "title": "后室",
+      "url": "https://movie.douban.com/subject/36235977/",
+      "hot": "评分 6.7"
     }
   ]
 }

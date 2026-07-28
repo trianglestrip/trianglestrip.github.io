@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-28T15:34:33+00:00",
+  "updated_at": "2026-07-28T18:20:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "7.1 Earthquake in Japan",
-      "url": "https://www.data.jma.go.jp/multi/quake/quake_detail.html?eventID=20260728163528&lang=en",
-      "hot": "591"
+      "title": "You Could Have Come Up with Kimi Delta Attention",
+      "url": "https://blog.doubleword.ai/you-could-have-come-up-with-kimi-delta-attention",
+      "hot": "186"
     },
     {
       "rank": 2,
-      "title": "New HIV vaccine shows unprecedented success in preclinical study",
-      "url": "https://www.lji.org/news-events/news/post/new-hiv-vaccine-shows-unprecedented-success-in-preclinical-study/",
-      "hot": "229"
+      "title": "Steel Bank Common Lisp version 2.6.7",
+      "url": "https://sbcl.org/all-news.html?2.6.7",
+      "hot": "46"
     },
     {
       "rank": 3,
-      "title": "Kimi Linear: An Expressive, Efficient Attention Architecture",
-      "url": "https://arxiv.org/abs/2510.26692",
-      "hot": "124"
+      "title": "Delayed Gratification – Proud to Be 'Last to Breaking News'",
+      "url": "https://www.slow-journalism.com/",
+      "hot": "101"
     },
     {
       "rank": 4,
-      "title": "Show HN: Formally verified 3D CSG: Trust 93 lines spec, not 1000 lines AI code",
-      "url": "https://github.com/schildep/verified-3d-mesh-intersection",
-      "hot": "68"
+      "title": "Zig's Incremental Compilation Internals",
+      "url": "https://mlugg.co.uk/posts/incremental-compilation-internals/",
+      "hot": "94"
     },
     {
       "rank": 5,
-      "title": "Show HN: tale.fyi, we deserve a home for fiction",
-      "url": "https://tale.fyi/@sam/announcing-tale-fyi-read-or-listen-to-an-entire-book-from-a-single-link",
-      "hot": "53"
+      "title": "7.1 Earthquake in Japan",
+      "url": "https://www.data.jma.go.jp/multi/quake/quake_detail.html?eventID=20260728163528&lang=en",
+      "hot": "720"
     },
     {
       "rank": 6,
-      "title": "Harmony Explained: Progress Towards a Scientific Theory of Music (2012)",
-      "url": "https://arxiv.org/abs/1202.4212",
-      "hot": "5"
+      "title": "Kimi K3 Architecture Overview and Notes",
+      "url": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html",
+      "hot": "87"
     },
     {
       "rank": 7,
-      "title": "Solving Fermat: Andrew Wiles",
-      "url": "https://www.pbs.org/wgbh/nova/proof/wiles.html",
-      "hot": "34"
+      "title": "How Do I Profile eBPF Code?",
+      "url": "https://naveensrinivasan.com/posts/2026-07-22-how-do-i-profile-ebpf-code/",
+      "hot": "67"
     },
     {
       "rank": 8,
-      "title": "DMARC Has Been Public Since 2012. 68.4% of Domains Still Don't Enforce It",
-      "url": "https://ciphercue.com/blog/dmarc-enforcement-gap-rua-fragmentation-2026",
-      "hot": "72"
+      "title": "Discovering Cryptographic Weaknesses with Claude",
+      "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+      "hot": "48"
     },
     {
       "rank": 9,
-      "title": "Google's Beyond Zero: Enterprise Security for the AI Era",
-      "url": "https://spawn-queue.acm.org/doi/10.1145/3819083",
-      "hot": "86"
+      "title": "Show HN: XY – A Fast, composable, GPU-accelerated interactive plotting library",
+      "url": "https://github.com/reflex-dev/xy",
+      "hot": "53"
     },
     {
       "rank": 10,
-      "title": "Our position on open-weights models",
-      "url": "https://www.anthropic.com/news/position-open-weights-models",
-      "hot": "1081"
+      "title": "iPhone Upgrade Program",
+      "url": "https://www.apple.com/shop/iphone/iphone-upgrade-program",
+      "hot": "24"
     }
   ]
 }
