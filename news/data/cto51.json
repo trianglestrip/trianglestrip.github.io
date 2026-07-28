@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-28T01:05:38+00:00",
+  "updated_at": "2026-07-28T04:19:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "2026 年 AI Agent 实用指南：别再把 RAG 和 Workflow 叫成 Agent",
-      "url": "https://www.51cto.com/article/850410.html",
-      "hot": "把 agent 当作一个很酷的营销术语，而不是一份严谨的工程规格，是一个真实存在的问题。它掩盖了我们试图构建的东西所包含的复杂性。如果你无法清楚地框定什么是 agent，你就无法可靠地构建它；当它出问题时，你也无法调试它；更不用说把它交付给用户时还能不预期各种问题会发生。"
+      "title": "大模型工程化怎么做？LLMOps 九大环节自动化实现方案",
+      "url": "https://www.51cto.com/article/851009.html",
+      "hot": "本文聚焦 LLMOps（大模型运维）全流程实践，帮助大家理解 LLMOps 如何用自动化串联模型迭代全环节。"
     },
     {
       "rank": 2,
-      "title": "推理模型太烧 token？拆解 low/medium/high 档位是怎么训出来的",
-      "url": "https://www.51cto.com/article/850872.html",
-      "hot": "Raschka 对比了六份公开配方——DeepSeek V4、Nemotron 3 Ultra、Kimi K2.5、GLM-5、Qwen3、Inkling——发现它们殊途同归，都落在同一个三步框架里。这篇文章把这个框架讲清楚，最后给出选档位的实操建议。"
+      "title": "搜索智能体也需要「操作系统」：SearchOS 开源多智能体协作框架",
+      "url": "https://www.51cto.com/article/851056.html",
+      "hot": "来自人大和蚂蚁最新的研究工作 SearchOS 给出的答案，是把搜索状态做成一种可以调度的基础设施，并提供系统级的多智能体搜索协作。"
     },
     {
       "rank": 3,
-      "title": "从 Low到Max背后发生了什么？拆解大模型“控制思考深度”的四种技术路径",
-      "url": "https://www.51cto.com/article/850849.html",
-      "hot": "虽然各个模型厂商对等级的命名花样繁多，但它们背后的核心逻辑是高度一致的：它就像一个调节 AI 思考深度的控制拨盘。拉到低档位，模型几秒钟就吐出答案；拉到高档位甚至 Max，它可能要在后台沉思半天，吐出一大堆复杂的思维链（Chain of Thought）。"
+      "title": "四十万美元、两亿张图：华为联合六校训出2K模型 Boogu-Image-0.1，比肩闭源",
+      "url": "https://www.51cto.com/article/851055.html",
+      "hot": "近日，华为香港莱布尼茨研究所小艺团队与港大、港科大、港中文等 6 校联合发布了 Boogu-Image-0.1。"
     },
     {
       "rank": 4,
-      "title": "AWS 如何通过运行数百万个 Kubernetes 集群习得区域故障应对之道",
-      "url": "https://www.51cto.com/article/850272.html",
-      "hot": "所有这些工作的面向客户的表面旨在做到“不引人注目”：在区域事件期间，你的流量会移动到健康区域，你的控制平面会继续响应，你的容量会被保留而不是被搅乱。如果你选择了自动转移，它会静默发生，无需告警。"
+      "title": "全球⾸个⼤规模 Agentic 扩散模型来了！",
+      "url": "https://www.51cto.com/article/851053.html",
+      "hot": "在人工智能的发展史上，长期取得决定性胜利的，往往不是人类精心编写了大量专业知识的系统，而是那些能够随着算力、数据和搜索规模不断扩展的通用学习方法。"
     },
     {
       "rank": 5,
-      "title": "AI转型——目前大多数企业所面临的困境",
-      "url": "https://www.51cto.com/article/850413.html",
-      "hot": "关于系统开发，由于AI编程的出现，现在系统开发的效率大大提升，之前需要程序员干几天的活，现在可能半个小时就搞定了；但是这里有个注意点，AI干活很快，但质量无法保证，所以需要有经验的人来进行把控，把功能模块拆分成不同的功能点，从技术上避免高耦合，这样即使部分模块出了问题，也不至于影响到整个系统。"
+      "title": "别再无脑开高推理！Opus 5高配会擅自重构代码乱加戏",
+      "url": "https://www.51cto.com/article/851052.html",
+      "hot": "只要评测能证明质量不掉，就大面积用low和medium去压成本和延迟，高档位留给真正硬核的长周期任务。"
     },
     {
       "rank": 6,
-      "title": "一文看懂AI原生组织架构：AI Infra、AI OS与Agent应用的全栈重构",
-      "url": "https://www.51cto.com/article/850916.html",
-      "hot": "AI Infra、AI OS、Agent应用、安全体系——这四层协同运作，才构成一个真正意义上的AI原生组织。缺任何一层，或者任何一层做得不到位，整个系统的效能都会大打折扣。"
+      "title": "一句话搭出九人旅行网站！奥特曼：ChatGPT Work名字起小了",
+      "url": "https://www.51cto.com/article/851050.html",
+      "hot": "ChatGPT Work很了不起，而且「work」这个名字把它说小了。"
     },
     {
       "rank": 7,
-      "title": "系统提示砍掉 80% 之后：短 AGENTS.md、JIT Skill，和确定性校验",
-      "url": "https://www.51cto.com/article/850871.html",
-      "hot": "Anthropic 发了一篇很刺眼的笔记：面向 Claude Opus 5、Claude Fable 5 这一代，他们把 Claude Code 的系统提示砍掉了八成以上，编码评测几乎没有掉分。同期还有 /doctor，专门帮你给 CLAUDE.md 和 Skill「瘦身」。"
+      "title": "马斯克彻底向ASI投降！十年后万亿财富都将「归零」",
+      "url": "https://www.51cto.com/article/851048.html",
+      "hot": "五 年内 AI 的综合智力将超过全人类总和，10 年内金钱失去意义，工作变成可选项。"
     },
     {
       "rank": 8,
-      "title": "Loop 已凉？Graph Engineering 已到来！",
-      "url": "https://www.51cto.com/article/850869.html",
-      "hot": "Graph Engineering 是一次命名事件，不是一次技术事件。一个 loop 打不住的时候才上图。 上图之前先把 verifier 和停止条件做扎实，图里每个节点还是一个循环，循环不可靠的图只会在更多地方同时崩。"
+      "title": "Claude设计师被工程师卷到掉队，反手造出百万用户工具",
+      "url": "https://www.51cto.com/article/851045.html",
+      "hot": "当身边两个工程师突然狂飙，作为小组唯一设计师的Parrott被甩在了后面。他没有干等，而是自己动手，造出了追赶用的工具。"
     },
     {
       "rank": 9,
-      "title": "OpenAI超强模型为抄答案黑进服务器！抱抱脸CEO要一亿美元算力做补偿",
-      "url": "https://www.51cto.com/article/850848.html",
-      "hot": "闯进来的那个智能体，底层是两个模型：OpenAI自家的GPT-5.6 Sol，外加一个更强的未发布模型。"
+      "title": "CUDA 20年护城河一个周末崩了 ！Claude独自跑通AMD新GPU",
+      "url": "https://www.51cto.com/article/851044.html",
+      "hot": "Claude之以能实现对CUDA生态的「降维打击」，是因为AMD直接给AI开发了一套能上手调GPU的工具。"
     },
     {
       "rank": 10,
-      "title": "你的AI在干活，还是在刷分？OpenAI揭开模型讨好机制",
-      "url": "https://www.51cto.com/article/850846.html",
-      "hot": "一个强化学习智能体被奖励去捡金币，而金币总放在关卡最右端，它最后学会的是一路向右狂奔，跟金币没关系。"
+      "title": "菲尔兹奖得主预警：AI可能杀死数学！",
+      "url": "https://www.51cto.com/article/851043.html",
+      "hot": "2年之内，AI将在所有数学证明领域，彻底超越人类。"
     }
   ]
 }

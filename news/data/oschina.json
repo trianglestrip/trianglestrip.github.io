@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-28T01:05:43+00:00",
+  "updated_at": "2026-07-28T04:19:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "谷歌 AI 概览出现率一年升至 43%，AI 搜索成为主流入口",
+      "url": "https://www.oschina.net/news/481173",
+      "hot": "Tue, 28 Jul 2026 11:52:31 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Cloudflare 重构 AI 爬虫管控，从一键拦截到三段式分类",
+      "url": "https://www.oschina.net/news/481154",
+      "hot": "Tue, 28 Jul 2026 11:23:33 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Ventoy 1.1.17 发布，创建可启动 U 盘的工具",
+      "url": "https://www.oschina.net/news/481152/ventoy-1-1-17-released",
+      "hot": "Tue, 28 Jul 2026 11:22:48 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "火山引擎开源 Agent 驱动的搜索自迭代技术",
+      "url": "https://my.oschina.net/u/6210722/blog/19728179",
+      "hot": "Tue, 28 Jul 2026 10:54:00 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "TaiXu-Admin V0.1.2 发布，LLM+RAG+Agent 应用技术系统",
+      "url": "https://www.oschina.net/news/481112/taixu-admin-0-1-2-released",
+      "hot": "Tue, 28 Jul 2026 10:46:11 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Dario Amodei 发表长文谈开源：Anthropic 从未主张禁止开放权重模型",
+      "url": "https://www.oschina.net/news/481110/anthropic-position-open-weights-models",
+      "hot": "Tue, 28 Jul 2026 10:45:56 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "Kimi K3 开放模型权重、技术报告和关键 Infra 技术",
+      "url": "https://www.oschina.net/news/481061",
+      "hot": "Tue, 28 Jul 2026 10:03:15 +0800"
+    },
+    {
+      "rank": 8,
       "title": "创客营招募倒计时｜不招学员，只招创业同行者",
       "url": "https://www.oschina.net/news/480698",
       "hot": "Mon, 27 Jul 2026 18:35:52 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "微服务退潮，单体回温：AI 时代，Java 后端需要一场 \"瘦身革命\"",
       "url": "https://my.oschina.net/u/2385344/blog/19727454",
       "hot": "Mon, 27 Jul 2026 18:06:48 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": ":fire: 审批通知渠道现支持按标题远程搜索：开源无代码 / 低代码平台 NocoBase",
       "url": "https://www.oschina.net/news/480662",
       "hot": "Mon, 27 Jul 2026 18:01:04 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "Wine 11.14 发布",
-      "url": "https://www.oschina.net/news/480615/wine-11-14-released",
-      "hot": "Mon, 27 Jul 2026 17:12:42 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "模型开源，力破西方偏见",
-      "url": "https://www.oschina.net/news/480605",
-      "hot": "Mon, 27 Jul 2026 17:01:39 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Kimi-K3 即将开源，第一个 3 万亿参数的开放权重模型",
-      "url": "https://www.oschina.net/news/480560",
-      "hot": "Mon, 27 Jul 2026 16:13:17 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "黄仁勋发布第一条推文，号召业界签署开源倡议支持开放权重模型",
-      "url": "https://www.oschina.net/news/480507",
-      "hot": "Mon, 27 Jul 2026 15:22:31 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "美团辟谣 LongCat 模型负责人离职",
-      "url": "https://www.oschina.net/news/480448",
-      "hot": "Mon, 27 Jul 2026 14:31:50 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Apache Wicket 10.10.0 发布，开源 Java Web 框架",
-      "url": "https://www.oschina.net/news/480420/apache-wicket-10-10-0-released",
-      "hot": "Mon, 27 Jul 2026 13:59:41 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Debian 就项目中的 LLM 使用进行决议",
-      "url": "https://www.oschina.net/news/480266/debian-gr-llm-usage",
-      "hot": "Mon, 27 Jul 2026 11:37:08 +0800"
     }
   ]
 }

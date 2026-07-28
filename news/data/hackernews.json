@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-28T01:05:39+00:00",
+  "updated_at": "2026-07-28T04:19:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Our position on open-weights models",
       "url": "https://www.anthropic.com/news/position-open-weights-models",
-      "hot": "401"
+      "hot": "599"
     },
     {
       "rank": 2,
-      "title": "Benchmarking Opus 5 on SlopCodeBench",
-      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
-      "hot": "89"
+      "title": "Using an open model feels surprisingly good",
+      "url": "https://matthewsaltz.com/blog/using-an-open-model-feels-surprisingly-good/",
+      "hot": "83"
     },
     {
       "rank": 3,
-      "title": "DConf 2026 in London",
-      "url": "https://dconf.org/2026/index.html",
-      "hot": "38"
+      "title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review",
+      "url": "https://fermisense.com/when-machines-take-the-wheel/",
+      "hot": "51"
     },
     {
       "rank": 4,
-      "title": "Watching Go's new garbage collector move through the heap",
-      "url": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
-      "hot": "165"
+      "title": "Benchmarking Opus 5 on SlopCodeBench",
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+      "hot": "184"
     },
     {
       "rank": 5,
-      "title": "Show HN: Dowe – A full-stack language for server, web, desktop, Android, and iOS",
-      "url": "https://www.dowe.dev",
-      "hot": "18"
+      "title": "Astronauts describe persistent 'observer' sensation after 6 month missions",
+      "url": "https://spacedaily.com/sd-v-astronauts-returning-from-six-month-missions-describe-a-persistent-observer-sensation-the-feeling-of-watching-their-own-lives-from-a-half-step-outside-the-frame-weeks-after-theyr/",
+      "hot": "124"
     },
     {
       "rank": 6,
-      "title": "C/C++ projects packaged for Zig",
-      "url": "https://github.com/allyourcodebase",
-      "hot": "20"
+      "title": "RTX 2080 Ti Memory Upgrade to 22 GB",
+      "url": "https://gpusolutions.net/rbservices/graphics-card-upgrade/",
+      "hot": "54"
     },
     {
       "rank": 7,
-      "title": "Astronauts describe persistent 'observer' sensation after 6 month missions",
-      "url": "https://spacedaily.com/sd-v-astronauts-returning-from-six-month-missions-describe-a-persistent-observer-sensation-the-feeling-of-watching-their-own-lives-from-a-half-step-outside-the-frame-weeks-after-theyr/",
-      "hot": "22"
+      "title": "Residential Proxies Are a National Security Threat",
+      "url": "https://jacob.gold/posts/residential-proxies-are-a-national-security-threat/",
+      "hot": "24"
     },
     {
       "rank": 8,
-      "title": "Netflix employee fired for sharing personal details in retreat trust exercise",
-      "url": "https://www.inc.com/amaya-nichole/netflix-company-retreat-sparked-lawsuit-experts-say-real-damage-may-be-just-beginning/91380349",
-      "hot": "123"
+      "title": "EYG: A Programming Language for Humans",
+      "url": "https://crowdhailer.me/2026-06-08/a-programming-language-for-humans/",
+      "hot": "28"
     },
     {
       "rank": 9,
-      "title": "Launch HN: Rise Reforming (YC S26) – Turning Waste Gases into Valuable Chemicals",
-      "url": "https://www.rise-reforming.com",
-      "hot": "57"
+      "title": "Watching Go's new garbage collector move through the heap",
+      "url": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
+      "hot": "182"
     },
     {
       "rank": 10,
-      "title": "Self-contained highly-portable Python distributions",
-      "url": "https://gregoryszorc.com/docs/python-build-standalone/main/",
-      "hot": "109"
+      "title": "C/C++ projects packaged for Zig",
+      "url": "https://github.com/allyourcodebase",
+      "hot": "39"
     }
   ]
 }
