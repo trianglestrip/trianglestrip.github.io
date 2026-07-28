@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-27T21:46:56+00:00",
+  "updated_at": "2026-07-28T01:05:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Watching Go's new garbage collector move through the heap",
-      "url": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
-      "hot": "116"
+      "title": "Our position on open-weights models",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "hot": "401"
     },
     {
       "rank": 2,
-      "title": "Launch HN: Rise Reforming (YC S26) – Turning Waste Gases into Valuable Chemicals",
-      "url": "https://www.rise-reforming.com",
-      "hot": "36"
+      "title": "Benchmarking Opus 5 on SlopCodeBench",
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+      "hot": "89"
     },
     {
       "rank": 3,
-      "title": "Self-contained highly-portable Python distributions",
-      "url": "https://gregoryszorc.com/docs/python-build-standalone/main/",
-      "hot": "69"
+      "title": "DConf 2026 in London",
+      "url": "https://dconf.org/2026/index.html",
+      "hot": "38"
     },
     {
       "rank": 4,
-      "title": "Glue bonds to nonstick surfaces and wipes clean with ethanol",
-      "url": "https://cen.acs.org/materials/adhesives/glue-bonds-nonstick-surfaces-wipes-clean/104/web/2026/07",
-      "hot": "125"
+      "title": "Watching Go's new garbage collector move through the heap",
+      "url": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
+      "hot": "165"
     },
     {
       "rank": 5,
-      "title": "Ray tracing massive amounts of animated geometry using tetrahedral cages",
-      "url": "https://gpuopen.com/learn/ray-tracing-massive-amounts-animated-geometry/",
-      "hot": "33"
+      "title": "Show HN: Dowe – A full-stack language for server, web, desktop, Android, and iOS",
+      "url": "https://www.dowe.dev",
+      "hot": "18"
     },
     {
       "rank": 6,
-      "title": "The computer that helped win World War II",
-      "url": "https://spectrum.ieee.org/colossus-computer-ieee-milestone",
-      "hot": "145"
+      "title": "C/C++ projects packaged for Zig",
+      "url": "https://github.com/allyourcodebase",
+      "hot": "20"
     },
     {
       "rank": 7,
-      "title": "Bytecode-to-Source Mapping",
-      "url": "https://tidefield.dev/bytecode-to-source-mapping/",
-      "hot": "26"
+      "title": "Astronauts describe persistent 'observer' sensation after 6 month missions",
+      "url": "https://spacedaily.com/sd-v-astronauts-returning-from-six-month-missions-describe-a-persistent-observer-sensation-the-feeling-of-watching-their-own-lives-from-a-half-step-outside-the-frame-weeks-after-theyr/",
+      "hot": "22"
     },
     {
       "rank": 8,
-      "title": "Exploiting Volvo/Eicher's fleet platform to gain control over all users/vehicles",
-      "url": "https://eaton-works.com/2026/07/27/my-eicher-hack/",
-      "hot": "107"
+      "title": "Netflix employee fired for sharing personal details in retreat trust exercise",
+      "url": "https://www.inc.com/amaya-nichole/netflix-company-retreat-sparked-lawsuit-experts-say-real-damage-may-be-just-beginning/91380349",
+      "hot": "123"
     },
     {
       "rank": 9,
-      "title": "Judge Rejects Google's Attempt to DMCA Its Way Out of Being Scraped",
-      "url": "https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped/",
-      "hot": "167"
+      "title": "Launch HN: Rise Reforming (YC S26) – Turning Waste Gases into Valuable Chemicals",
+      "url": "https://www.rise-reforming.com",
+      "hot": "57"
     },
     {
       "rank": 10,
-      "title": "Show HN: FeyNoBg – Automatic background removal model and training library",
-      "url": "https://usefeyn.com/blog/feynobg/",
-      "hot": "66"
+      "title": "Self-contained highly-portable Python distributions",
+      "url": "https://gregoryszorc.com/docs/python-build-standalone/main/",
+      "hot": "109"
     }
   ]
 }

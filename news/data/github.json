@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-07-27T18:03:12+00:00",
+  "updated_at": "2026-07-28T01:05:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Swift] permissionlesstech/bitchat",
       "url": "https://github.com/permissionlesstech/bitchat",
-      "hot": "31,966"
+      "hot": "32,269"
     },
     {
       "rank": 2,
       "title": "[C++] amnezia-vpn/amnezia-client",
       "url": "https://github.com/amnezia-vpn/amnezia-client",
-      "hot": "13,698"
+      "hot": "13,816"
     },
     {
       "rank": 3,
       "title": "[TypeScript] moeru-ai/airi",
       "url": "https://github.com/moeru-ai/airi",
-      "hot": "43,903"
+      "hot": "44,031"
     },
     {
       "rank": 4,
-      "title": "[Go] yorukot/superfile",
-      "url": "https://github.com/yorukot/superfile",
-      "hot": "20,754"
+      "title": "[TypeScript] opengeos/GeoLibre",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "hot": "2,687"
     },
     {
       "rank": 5,
-      "title": "[Python] NanmiCoder/MediaCrawler",
-      "url": "https://github.com/NanmiCoder/MediaCrawler",
-      "hot": "58,092"
+      "title": "[Go] yorukot/superfile",
+      "url": "https://github.com/yorukot/superfile",
+      "hot": "20,888"
     },
     {
       "rank": 6,
-      "title": "[JavaScript] pbakaus/impeccable",
-      "url": "https://github.com/pbakaus/impeccable",
-      "hot": "51,366"
+      "title": "[Python] NanmiCoder/MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "hot": "58,183"
     },
     {
       "rank": 7,
-      "title": "[Python] shiyu-coder/Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "hot": "34,478"
+      "title": "[JavaScript] pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "hot": "51,546"
     },
     {
       "rank": 8,
-      "title": "[Go] alibaba/open-code-review",
-      "url": "https://github.com/alibaba/open-code-review",
-      "hot": "14,613"
+      "title": "[Python] shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "hot": "34,562"
     },
     {
       "rank": 9,
-      "title": "[Java] jenkinsci/jenkins",
-      "url": "https://github.com/jenkinsci/jenkins",
-      "hot": "25,851"
+      "title": "[Go] alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "hot": "14,811"
     },
     {
       "rank": 10,
-      "title": "[Python] bradautomates/claude-video",
-      "url": "https://github.com/bradautomates/claude-video",
-      "hot": "10,895"
+      "title": "[Java] jenkinsci/jenkins",
+      "url": "https://github.com/jenkinsci/jenkins",
+      "hot": "25,882"
     }
   ]
 }

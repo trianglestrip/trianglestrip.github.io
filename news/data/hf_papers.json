@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-27T18:04:59+00:00",
+  "updated_at": "2026-07-28T01:05:54+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
-      "url": "https://huggingface.co/papers/2607.21653",
-      "hot": "18"
-    },
-    {
-      "rank": 9,
       "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
       "url": "https://huggingface.co/papers/2509.22186",
       "hot": "177"
+    },
+    {
+      "rank": 9,
+      "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
+      "url": "https://huggingface.co/papers/2607.21653",
+      "hot": "24"
     },
     {
       "rank": 10,
