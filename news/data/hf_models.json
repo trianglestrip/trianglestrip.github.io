@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-29T13:16:34+00:00",
+  "updated_at": "2026-07-29T20:02:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "8436"
+      "hot": "8574"
     },
     {
       "rank": 2,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3480"
+      "hot": "3501"
     },
     {
       "rank": 3,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "890"
+      "hot": "918"
     },
     {
       "rank": 4,
       "title": "upstage/Solar-Open2-250B",
       "url": "https://huggingface.co/upstage/Solar-Open2-250B",
-      "hot": "686"
+      "hot": "690"
     },
     {
       "rank": 5,
       "title": "poolside/Laguna-S-2.1",
       "url": "https://huggingface.co/poolside/Laguna-S-2.1",
-      "hot": "808"
+      "hot": "824"
     },
     {
       "rank": 6,
       "title": "Nanbeige/Nanbeige4.2-3B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
-      "hot": "541"
+      "hot": "549"
     },
     {
       "rank": 7,
       "title": "Kwaipilot/KAT-Coder-V2.5-Dev",
       "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
-      "hot": "300"
+      "hot": "314"
     },
     {
       "rank": 8,
       "title": "owensong/Inflect-Micro-v2",
       "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
-      "hot": "279"
+      "hot": "285"
     },
     {
       "rank": 9,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4626"
+      "hot": "4635"
     },
     {
       "rank": 10,
-      "title": "thinkingmachines/Inkling",
-      "url": "https://huggingface.co/thinkingmachines/Inkling",
-      "hot": "1633"
+      "title": "microsoft/Fara1.5-27B",
+      "url": "https://huggingface.co/microsoft/Fara1.5-27B",
+      "hot": "197"
     }
   ]
 }
