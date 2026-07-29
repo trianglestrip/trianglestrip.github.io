@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-29T11:32:51+00:00",
+  "updated_at": "2026-07-29T15:20:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "National Security Determination Threat Posed by Foreign-Produced Robotic Devices [pdf]",
-      "url": "https://www.fcc.gov/sites/default/files/robots-nsd.pdf",
-      "hot": "20"
+      "title": "KOReader",
+      "url": "https://koreader.rocks/",
+      "hot": "385"
     },
     {
       "rank": 2,
-      "title": "More Tailscale tricks for your jailbroken Kindle",
-      "url": "https://tailscale.com/blog/jailbroken-kindle-proxy-tun-modes",
-      "hot": "230"
+      "title": "Handbook.md shows that long policy documents do not reliably govern agents",
+      "url": "https://arxiv.org/abs/2607.25398",
+      "hot": "120"
     },
     {
       "rank": 3,
-      "title": "SpecForge – A Platform for Authoring Formal Specifications",
-      "url": "https://docs.imiron.io/v/0.5.10/en/tour.html",
-      "hot": "19"
+      "title": "Darktable",
+      "url": "https://www.darktable.org/",
+      "hot": "80"
     },
     {
       "rank": 4,
-      "title": "Amiga Graphics Archive",
-      "url": "https://amiga.lychesis.net/index.html",
-      "hot": "17"
+      "title": "Shipping Godot VR and Porting to PSVR2: A Partial Post Mortem",
+      "url": "https://www.claire-blackshaw.com/blog/2026/07/shipping-godot-vr-and-porting-to-psvr2-a-partial-post-mortem/",
+      "hot": "31"
     },
     {
       "rank": 5,
-      "title": "User Interfaces of the Demo Scene",
-      "url": "https://www.datagubbe.se/scenegui/",
-      "hot": "239"
+      "title": "Hunter-gatherers introduced fish to a mountain lake 7000 years ago",
+      "url": "https://www.newscientist.com/article/2580119-hunter-gatherers-introduced-fish-to-a-mountain-lake-7000-years-ago/",
+      "hot": "41"
     },
     {
       "rank": 6,
-      "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
-      "url": "https://micrologics.org/blog/sqlite-in-production-optimizing-wal-mode-concurrency-and-vfs-layers-for-low-latency-app-servers",
-      "hot": "88"
+      "title": "More Tailscale tricks for your jailbroken Kindle",
+      "url": "https://tailscale.com/blog/jailbroken-kindle-proxy-tun-modes",
+      "hot": "325"
     },
     {
       "rank": 7,
-      "title": "Lisp moving Forth moving Lisp",
-      "url": "https://letoverlambda.com/textmode.cl/guest/chap8.html",
-      "hot": "39"
+      "title": "Amiga Graphics Archive",
+      "url": "https://amiga.lychesis.net/index.html",
+      "hot": "95"
     },
     {
       "rank": 8,
-      "title": "Codex Security",
-      "url": "https://github.com/openai/codex-security",
-      "hot": "516"
+      "title": "Choose DuckDB rather than SQLite",
+      "url": "https://tracewayapp.com/blog/sqlite-vs-duckdb",
+      "hot": "62"
     },
     {
       "rank": 9,
-      "title": "CSV Is Never Just CSV",
-      "url": "https://immaschinenraum.blog/en/funpark/never-just-csv/",
-      "hot": "12"
+      "title": "Document-borne AI worms can self-propagate through Copilot for Word",
+      "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+      "hot": "179"
     },
     {
       "rank": 10,
-      "title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
-      "url": "https://github.com/twalichiewicz/HNewhere",
-      "hot": "330"
+      "title": "TokenTown: A visual way to understand how LLMs work",
+      "url": "https://laurentiugabriel.github.io/token-town/",
+      "hot": "44"
     }
   ]
 }
