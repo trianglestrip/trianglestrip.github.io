@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-28T23:11:55+00:00",
+  "updated_at": "2026-07-29T03:33:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "让应用\"悬浮\"起来：HarmonyOS 闪控球（floatingBall）从接入到实战",
-      "url": "https://ost.51cto.com/posts/53893",
-      "hot": "一、先搞清楚：什么是鸿蒙&quot;闪控球&quot;在动手之前，必须把&quot;闪控球&quot;这个术语搞准确。这是本文最关键的认知前提&mdash;&mdash;&quot;闪控球&quot;在鸿蒙生态里是一个有..."
+      "title": "Kimi K3竟是GPT-2的22580倍，博主「肝」48小时发现：七年进化大模型不只是参数暴涨",
+      "url": "https://www.51cto.com/article/851196.html",
+      "hot": "Kimi K3 是一款总参数量达 2.8 万亿、上下文窗口达 100 万 token 的 MoE 大模型，更是全球首个落地的近 3 万亿参数级开源大模型，引起业界热议。"
     },
     {
       "rank": 2,
-      "title": "大模型工程化怎么做？LLMOps 九大环节自动化实现方案",
-      "url": "https://www.51cto.com/article/851009.html",
-      "hot": "本文聚焦 LLMOps（大模型运维）全流程实践，帮助大家理解 LLMOps 如何用自动化串联模型迭代全环节。"
+      "title": "【HarmonyOS 7开发者前瞻】11 HarmonyOS 7 Beta 更新后怎么办？开发者需要重新验证这些结论",
+      "url": "https://ost.51cto.com/posts/53945",
+      "hot": "前言Beta阶段最容易出现的情况，是前一轮验证刚整理完，下一轮版本、文档、SDK、工具链或者设备状态又发生变化。这个时候，很多结论都不能..."
     },
     {
       "rank": 3,
-      "title": "搜索智能体也需要「操作系统」：SearchOS 开源多智能体协作框架",
-      "url": "https://www.51cto.com/article/851056.html",
-      "hot": "来自人大和蚂蚁最新的研究工作 SearchOS 给出的答案，是把搜索状态做成一种可以调度的基础设施，并提供系统级的多智能体搜索协作。"
+      "title": "细粒度视觉SOTA！小红书9B视觉“显微镜”，超越Gemini-3.5-Flash",
+      "url": "https://www.51cto.com/article/851176.html",
+      "hot": "小红书dots团队提出的Vision-OPD（Vision On-Policy Distillation，视觉在线策略蒸馏）框架，仅用约6.2K条全自动合成数据，便让9B模型在多个细粒度视觉理解基准上取得SOTA。"
     },
     {
       "rank": 4,
-      "title": "四十万美元、两亿张图：华为联合六校训出2K模型 Boogu-Image-0.1，比肩闭源",
-      "url": "https://www.51cto.com/article/851055.html",
-      "hot": "近日，华为香港莱布尼茨研究所小艺团队与港大、港科大、港中文等 6 校联合发布了 Boogu-Image-0.1。"
+      "title": "SIGCOMM 2026｜两小时复现顶会网络系统！厦大团队让论文自动变成可运行代码",
+      "url": "https://www.51cto.com/article/851175.html",
+      "hot": "科研 Agent 的价值不只在于自动生成代码，更在于理解科研任务、组织专业知识并贯通研究流程。它可以协助研究者完成文献解析、系统搭建、环境配置、代码调试和结果验证等耗时工作，降低重复性工程投入，让科研人员将更多精力用于问题发现、方法设计和理论创新。"
     },
     {
       "rank": 5,
-      "title": "全球⾸个⼤规模 Agentic 扩散模型来了！",
-      "url": "https://www.51cto.com/article/851053.html",
-      "hot": "在人工智能的发展史上，长期取得决定性胜利的，往往不是人类精心编写了大量专业知识的系统，而是那些能够随着算力、数据和搜索规模不断扩展的通用学习方法。"
+      "title": "他让GPT-5.6 Sol连跑33小时攻关费马大定理，被系统强制终止",
+      "url": "https://www.51cto.com/article/851174.html",
+      "hot": "最近，菲尔兹奖公布，大家对于数学 + AI 的讨论非常热烈，相信也有不少人想象过我刚刚描述的「爽文」剧情。"
     },
     {
       "rank": 6,
-      "title": "别再无脑开高推理！Opus 5高配会擅自重构代码乱加戏",
-      "url": "https://www.51cto.com/article/851052.html",
-      "hot": "只要评测能证明质量不掉，就大面积用low和medium去压成本和延迟，高档位留给真正硬核的长周期任务。"
+      "title": "世界模型有触觉了！五十万小时视频，训出首个隐式触觉世界动作模型",
+      "url": "https://www.51cto.com/article/851173.html",
+      "hot": "模型先根据当前画面，预判接下来可能发生的接触，执行过程中再读取最新触觉，重新生成下一小段动作。"
     },
     {
       "rank": 7,
-      "title": "一句话搭出九人旅行网站！奥特曼：ChatGPT Work名字起小了",
-      "url": "https://www.51cto.com/article/851050.html",
-      "hot": "ChatGPT Work很了不起，而且「work」这个名字把它说小了。"
+      "title": "斯坦福新研究：AI尚未冲击就业，但应届生得注意了",
+      "url": "https://www.51cto.com/article/851172.html",
+      "hot": "AI或许还没有掀起席卷整个就业市场的海啸，经验的有无却可能已经先冲走了一部分职场入口。"
     },
     {
       "rank": 8,
-      "title": "马斯克彻底向ASI投降！十年后万亿财富都将「归零」",
-      "url": "https://www.51cto.com/article/851048.html",
-      "hot": "五 年内 AI 的综合智力将超过全人类总和，10 年内金钱失去意义，工作变成可选项。"
+      "title": "一文读懂自动驾驶 四大核心技术",
+      "url": "https://www.51cto.com/article/851171.html",
+      "hot": "自动驾驶的四大核心技术是支撑车辆实现自主驾驶的基础模块。环境感知、精准定位、路径规划和线控执行共同构成完整的技术闭环，分别负责识别周围环境、确定车辆位置、规划行驶路线以及控制车辆执行动作。"
     },
     {
       "rank": 9,
-      "title": "Claude设计师被工程师卷到掉队，反手造出百万用户工具",
-      "url": "https://www.51cto.com/article/851045.html",
-      "hot": "当身边两个工程师突然狂飙，作为小组唯一设计师的Parrott被甩在了后面。他没有干等，而是自己动手，造出了追赶用的工具。"
+      "title": "微软CEO纳德拉最新警告：单押一个大模型，是把公司命门交出去",
+      "url": "https://www.51cto.com/article/851170.html",
+      "hot": "任何失去数据、记忆和AI使用记录控制权的企业，都可能无法继续存在，因为它已经把自己的思考外包了～"
     },
     {
       "rank": 10,
-      "title": "CUDA 20年护城河一个周末崩了 ！Claude独自跑通AMD新GPU",
-      "url": "https://www.51cto.com/article/851044.html",
-      "hot": "Claude之以能实现对CUDA生态的「降维打击」，是因为AMD直接给AI开发了一套能上手调GPU的工具。"
+      "title": "国产AI登上《Cell》主刊！搭建统一生物表征空间实现虚拟试药",
+      "url": "https://www.51cto.com/article/851169.html",
+      "hot": "国际顶级学术期刊《Cell》主刊，刊出了一篇来自中国的AI生命科学研究论文《UniPert–G2CP》。"
     }
   ]
 }
