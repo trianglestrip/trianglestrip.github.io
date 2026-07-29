@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-29T15:20:53+00:00",
+  "updated_at": "2026-07-29T17:55:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "KOReader",
-      "url": "https://koreader.rocks/",
-      "hot": "385"
+      "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "hot": "311"
     },
     {
       "rank": 2,
-      "title": "Handbook.md shows that long policy documents do not reliably govern agents",
-      "url": "https://arxiv.org/abs/2607.25398",
-      "hot": "120"
+      "title": "Superlogical",
+      "url": "https://www.superlogical.com/",
+      "hot": "166"
     },
     {
       "rank": 3,
-      "title": "Darktable",
-      "url": "https://www.darktable.org/",
-      "hot": "80"
+      "title": "KOReader",
+      "url": "https://koreader.rocks/",
+      "hot": "523"
     },
     {
       "rank": 4,
-      "title": "Shipping Godot VR and Porting to PSVR2: A Partial Post Mortem",
-      "url": "https://www.claire-blackshaw.com/blog/2026/07/shipping-godot-vr-and-porting-to-psvr2-a-partial-post-mortem/",
-      "hot": "31"
+      "title": "Handbook.md shows that long policy documents do not reliably govern agents",
+      "url": "https://arxiv.org/abs/2607.25398",
+      "hot": "206"
     },
     {
       "rank": 5,
-      "title": "Hunter-gatherers introduced fish to a mountain lake 7000 years ago",
-      "url": "https://www.newscientist.com/article/2580119-hunter-gatherers-introduced-fish-to-a-mountain-lake-7000-years-ago/",
-      "hot": "41"
+      "title": "Keychron announces first open-source firmware for gaming mice",
+      "url": "https://www.digitalfoundry.net/news/2026/07/keychron-announces-first-open-source-firmware-for-gaming-mice",
+      "hot": "39"
     },
     {
       "rank": 6,
-      "title": "More Tailscale tricks for your jailbroken Kindle",
-      "url": "https://tailscale.com/blog/jailbroken-kindle-proxy-tun-modes",
-      "hot": "325"
+      "title": "Hugging Face: Anatomy of a frontier-lab agent intrusion",
+      "url": "https://huggingface-anatomy-of-frontier-lab-model-intrusion.static.hf.space/index.html",
+      "hot": "82"
     },
     {
       "rank": 7,
-      "title": "Amiga Graphics Archive",
-      "url": "https://amiga.lychesis.net/index.html",
-      "hot": "95"
+      "title": "Document-borne AI worms can self-propagate through Copilot for Word",
+      "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+      "hot": "247"
     },
     {
       "rank": 8,
-      "title": "Choose DuckDB rather than SQLite",
-      "url": "https://tracewayapp.com/blog/sqlite-vs-duckdb",
-      "hot": "62"
+      "title": "Launch HN: Tokenless (YC S26) – Automatic model switching to save money",
+      "url": "https://usetokenless.com/",
+      "hot": "31"
     },
     {
       "rank": 9,
-      "title": "Document-borne AI worms can self-propagate through Copilot for Word",
-      "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
-      "hot": "179"
+      "title": "A.I. companies are recruiting electricians and carpenters by the thousands",
+      "url": "https://www.nytimes.com/2026/07/29/business/economy/data-center-electricians-training.html",
+      "hot": "61"
     },
     {
       "rank": 10,
-      "title": "TokenTown: A visual way to understand how LLMs work",
-      "url": "https://laurentiugabriel.github.io/token-town/",
-      "hot": "44"
+      "title": "Hamburg's Stadtpark: A Park Built to Be Used",
+      "url": "https://alsterrunde.com/hamburgs-stadtpark-a-park-built-to-be-used/",
+      "hot": "47"
     }
   ]
 }
