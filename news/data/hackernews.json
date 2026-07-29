@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-29T03:33:05+00:00",
+  "updated_at": "2026-07-29T06:16:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Codex Security",
-      "url": "https://github.com/openai/codex-security",
-      "hot": "383"
+      "title": "More Tailscale tricks for your jailbroken Kindle",
+      "url": "https://tailscale.com/blog/jailbroken-kindle-proxy-tun-modes",
+      "hot": "59"
     },
     {
       "rank": 2,
-      "title": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
-      "url": "https://learnvector.ai/",
-      "hot": "57"
+      "title": "User Interfaces of the Demo Scene",
+      "url": "https://www.datagubbe.se/scenegui/",
+      "hot": "53"
     },
     {
       "rank": 3,
-      "title": "Chip stocks slide in US and Asia as AI jitters rattle investors",
-      "url": "https://www.bbc.com/news/articles/cly8zng43npo",
-      "hot": "22"
+      "title": "Codex Security",
+      "url": "https://github.com/openai/codex-security",
+      "hot": "450"
     },
     {
       "rank": 4,
-      "title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
-      "url": "https://github.com/twalichiewicz/HNewhere",
-      "hot": "172"
+      "title": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
+      "url": "https://learnvector.ai/",
+      "hot": "133"
     },
     {
       "rank": 5,
-      "title": "Half-Life ported to Mac OS 9",
-      "url": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
-      "hot": "174"
+      "title": "Cracking Windows Open: Porting RADV to Win32",
+      "url": "https://www.collabora.com/news-and-blog/news-and-events/cracking-windows-open-porting-radv-to-win32.html",
+      "hot": "21"
     },
     {
       "rank": 6,
-      "title": "Substack writers, you need a website",
-      "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
-      "hot": "438"
+      "title": "Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-Design",
+      "url": "https://transformer-transformer.github.io/",
+      "hot": "27"
     },
     {
       "rank": 7,
-      "title": "Hubble: Open-source notetaking app for you and your agents",
-      "url": "https://www.hubble.md/",
-      "hot": "56"
+      "title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
+      "url": "https://github.com/twalichiewicz/HNewhere",
+      "hot": "226"
     },
     {
       "rank": 8,
-      "title": "Teach yourself programming in ten years (1998)",
-      "url": "https://www.norvig.com/21-days.html",
-      "hot": "67"
+      "title": "Substack writers, you need a website",
+      "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
+      "hot": "482"
     },
     {
       "rank": 9,
-      "title": "Truth is not a direction: a Tarski attack on LLM probes",
-      "url": "https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html",
-      "hot": "33"
+      "title": "Half-Life ported to Mac OS 9",
+      "url": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
+      "hot": "206"
     },
     {
       "rank": 10,
-      "title": "Multiple Mouse Cursors in Wayland",
-      "url": "https://blinry.org/multi-seat-wayland/",
-      "hot": "31"
+      "title": "Truth is not a direction: a Tarski attack on LLM probes",
+      "url": "https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html",
+      "hot": "68"
     }
   ]
 }
