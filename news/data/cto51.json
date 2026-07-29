@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-29T06:16:08+00:00",
+  "updated_at": "2026-07-29T09:10:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "一套代码搞定音乐播放、进度条拖拽、歌单循环、环境音混合",
+      "url": "https://ost.51cto.com/posts/54025",
+      "hot": "一套代码搞定音乐播放、进度条拖拽、歌单循环、环境音混合一套代码搞定音乐播放、进度条拖拽、歌单循环、环境音混合，核心就三个字：状态机..."
+    },
+    {
+      "rank": 2,
+      "title": "AI想要落地其实很难！马克·库班：Agent会逐渐失效，也会慢慢偏离原来的运行状态",
+      "url": "https://www.51cto.com/article/851211.html",
+      "hot": "做出一个Agent，可能只需要几分钟。接进企业数据、处理权限、控制成本、复现故障，再保证模型升级后继续工作，软件工程从这里才真正开始。"
+    },
+    {
+      "rank": 3,
+      "title": "9MB 运行整个 JavaScript？这个新 Runtime 想挑战 Node.js",
+      "url": "https://www.51cto.com/article/851202.html",
+      "hot": "Ant 最有价值的地方不是宣布\"我要替代 Node\"，而是提出了一个新的方向：JavaScript Runtime 可以不用越来越重。"
+    },
+    {
+      "rank": 4,
+      "title": "海量指标告警杂乱难维护？基于时序 AI 自动校准 Prometheus 动态阈值落地实战",
+      "url": "https://www.51cto.com/article/851201.html",
+      "hot": "一套 Facebook Prophet 时序 AI + Prometheus 自动阈值校准方案"
+    },
+    {
+      "rank": 5,
+      "title": "少即是多，这次轮到大模型来证明",
+      "url": "https://www.51cto.com/article/851199.html",
+      "hot": "模型或许也一样。看发布会久了，我们很容易把注意力全部放在能力上限上，仿佛我们每天上班遇到的最大困难，是办公室里缺少一位能够证明黎曼猜想的同事。"
+    },
+    {
+      "rank": 6,
       "title": "Kimi K3竟是GPT-2的22580倍，博主「肝」48小时发现：七年进化大模型不只是参数暴涨",
       "url": "https://www.51cto.com/article/851196.html",
       "hot": "Kimi K3 是一款总参数量达 2.8 万亿、上下文窗口达 100 万 token 的 MoE 大模型，更是全球首个落地的近 3 万亿参数级开源大模型，引起业界热议。"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "【HarmonyOS 7开发者前瞻】11 HarmonyOS 7 Beta 更新后怎么办？开发者需要重新验证这些结论",
       "url": "https://ost.51cto.com/posts/53945",
       "hot": "前言Beta阶段最容易出现的情况，是前一轮验证刚整理完，下一轮版本、文档、SDK、工具链或者设备状态又发生变化。这个时候，很多结论都不能..."
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "细粒度视觉SOTA！小红书9B视觉“显微镜”，超越Gemini-3.5-Flash",
       "url": "https://www.51cto.com/article/851176.html",
       "hot": "小红书dots团队提出的Vision-OPD（Vision On-Policy Distillation，视觉在线策略蒸馏）框架，仅用约6.2K条全自动合成数据，便让9B模型在多个细粒度视觉理解基准上取得SOTA。"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "SIGCOMM 2026｜两小时复现顶会网络系统！厦大团队让论文自动变成可运行代码",
       "url": "https://www.51cto.com/article/851175.html",
       "hot": "科研 Agent 的价值不只在于自动生成代码，更在于理解科研任务、组织专业知识并贯通研究流程。它可以协助研究者完成文献解析、系统搭建、环境配置、代码调试和结果验证等耗时工作，降低重复性工程投入，让科研人员将更多精力用于问题发现、方法设计和理论创新。"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "他让GPT-5.6 Sol连跑33小时攻关费马大定理，被系统强制终止",
       "url": "https://www.51cto.com/article/851174.html",
       "hot": "最近，菲尔兹奖公布，大家对于数学 + AI 的讨论非常热烈，相信也有不少人想象过我刚刚描述的「爽文」剧情。"
-    },
-    {
-      "rank": 6,
-      "title": "世界模型有触觉了！五十万小时视频，训出首个隐式触觉世界动作模型",
-      "url": "https://www.51cto.com/article/851173.html",
-      "hot": "模型先根据当前画面，预判接下来可能发生的接触，执行过程中再读取最新触觉，重新生成下一小段动作。"
-    },
-    {
-      "rank": 7,
-      "title": "斯坦福新研究：AI尚未冲击就业，但应届生得注意了",
-      "url": "https://www.51cto.com/article/851172.html",
-      "hot": "AI或许还没有掀起席卷整个就业市场的海啸，经验的有无却可能已经先冲走了一部分职场入口。"
-    },
-    {
-      "rank": 8,
-      "title": "一文读懂自动驾驶 四大核心技术",
-      "url": "https://www.51cto.com/article/851171.html",
-      "hot": "自动驾驶的四大核心技术是支撑车辆实现自主驾驶的基础模块。环境感知、精准定位、路径规划和线控执行共同构成完整的技术闭环，分别负责识别周围环境、确定车辆位置、规划行驶路线以及控制车辆执行动作。"
-    },
-    {
-      "rank": 9,
-      "title": "微软CEO纳德拉最新警告：单押一个大模型，是把公司命门交出去",
-      "url": "https://www.51cto.com/article/851170.html",
-      "hot": "任何失去数据、记忆和AI使用记录控制权的企业，都可能无法继续存在，因为它已经把自己的思考外包了～"
-    },
-    {
-      "rank": 10,
-      "title": "国产AI登上《Cell》主刊！搭建统一生物表征空间实现虚拟试药",
-      "url": "https://www.51cto.com/article/851169.html",
-      "hot": "国际顶级学术期刊《Cell》主刊，刊出了一篇来自中国的AI生命科学研究论文《UniPert–G2CP》。"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-29T06:16:12+00:00",
+  "updated_at": "2026-07-29T09:10:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "谷歌解散 AlphaFold 团队，将重心放在 Gemini",
+      "url": "https://www.oschina.net/news/482258",
+      "hot": "Wed, 29 Jul 2026 16:52:46 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Kimi K3 能在本地 Mac 上跑起来，答案在架构里",
+      "url": "https://www.oschina.net/news/482218",
+      "hot": "Wed, 29 Jul 2026 16:06:38 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "SeaMonkey 2.53.24 发布，Mozilla 浏览器套件",
+      "url": "https://www.oschina.net/news/482140/seamonkey-2-53-24-released",
+      "hot": "Wed, 29 Jul 2026 14:43:11 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "苹果系统更新点名感谢 AI：Claude、Codex 揪出多项漏洞",
+      "url": "https://www.oschina.net/news/482125",
+      "hot": "Wed, 29 Jul 2026 14:26:45 +0800"
+    },
+    {
+      "rank": 5,
       "title": "重磅开源！UNICUT —— 纯 Web 端在线视频编辑器，功能比肩桌面端",
       "url": "https://www.oschina.net/news/482055",
       "hot": "Wed, 29 Jul 2026 12:49:53 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Apple 操作系统安全更新公告出现一串 AI 名字",
       "url": "https://www.oschina.net/news/482025",
       "hot": "Wed, 29 Jul 2026 11:50:46 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "Kimi K3 架构拆解——本质上是 Kimi Linear 的规模化生产版本",
       "url": "https://www.oschina.net/news/482012/kimi-k3-architecture-notes",
       "hot": "Wed, 29 Jul 2026 11:23:05 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "推荐系统体验的数字化突破：得物自动化评测平台的技术实践",
       "url": "https://my.oschina.net/u/5783135/blog/19728170",
       "hot": "Wed, 29 Jul 2026 11:22:01 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "OpenAI 发布开源版 Codex Security CLI",
       "url": "https://www.oschina.net/news/481986",
       "hot": "Wed, 29 Jul 2026 10:55:55 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Firefox 153.0.1 发布",
       "url": "https://www.oschina.net/news/481973/firefox-153-0-1-released",
       "hot": "Wed, 29 Jul 2026 10:41:14 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "跑一个 3T 开源模型，到底要多少显卡？",
-      "url": "https://www.oschina.net/news/481937",
-      "hot": "Wed, 29 Jul 2026 10:07:35 +0800"
-    },
-    {
-      "rank": 8,
-      "title": ":white_check_mark: 首个 AI 可靠读写数据 Agent 开源 :link: 腾讯 APIJSON 生态协议",
-      "url": "https://www.oschina.net/news/481862",
-      "hot": "Wed, 29 Jul 2026 08:03:27 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "uniTerm v1.6 发布：超轻量全能开源终端，新增 K8s 与容器管理、AI 技能与命令",
-      "url": "https://www.oschina.net/news/481563/uniterm-1-6-released",
-      "hot": "Tue, 28 Jul 2026 20:49:58 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "印度法院判决：OpenAI 用新闻内容训练 AI 不侵权",
-      "url": "https://www.oschina.net/news/481476",
-      "hot": "Tue, 28 Jul 2026 18:38:07 +0800"
     }
   ]
 }

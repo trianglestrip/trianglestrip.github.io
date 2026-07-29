@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-29T06:16:10+00:00",
+  "updated_at": "2026-07-29T09:10:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "More Tailscale tricks for your jailbroken Kindle",
       "url": "https://tailscale.com/blog/jailbroken-kindle-proxy-tun-modes",
-      "hot": "59"
+      "hot": "165"
     },
     {
       "rank": 2,
       "title": "User Interfaces of the Demo Scene",
       "url": "https://www.datagubbe.se/scenegui/",
-      "hot": "53"
+      "hot": "163"
     },
     {
       "rank": 3,
       "title": "Codex Security",
       "url": "https://github.com/openai/codex-security",
-      "hot": "450"
+      "hot": "492"
     },
     {
       "rank": 4,
-      "title": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
-      "url": "https://learnvector.ai/",
-      "hot": "133"
+      "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
+      "url": "https://micrologics.org/blog/sqlite-in-production-optimizing-wal-mode-concurrency-and-vfs-layers-for-low-latency-app-servers",
+      "hot": "23"
     },
     {
       "rank": 5,
-      "title": "Cracking Windows Open: Porting RADV to Win32",
-      "url": "https://www.collabora.com/news-and-blog/news-and-events/cracking-windows-open-porting-radv-to-win32.html",
-      "hot": "21"
+      "title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
+      "url": "https://github.com/twalichiewicz/HNewhere",
+      "hot": "304"
     },
     {
       "rank": 6,
-      "title": "Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-Design",
-      "url": "https://transformer-transformer.github.io/",
-      "hot": "27"
+      "title": "Lisp moving Forth moving Lisp",
+      "url": "https://letoverlambda.com/textmode.cl/guest/chap8.html",
+      "hot": "7"
     },
     {
       "rank": 7,
-      "title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
-      "url": "https://github.com/twalichiewicz/HNewhere",
-      "hot": "226"
+      "title": "Cracking Windows Open: Porting RADV to Win32",
+      "url": "https://www.collabora.com/news-and-blog/news-and-events/cracking-windows-open-porting-radv-to-win32.html",
+      "hot": "40"
     },
     {
       "rank": 8,
       "title": "Substack writers, you need a website",
       "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
-      "hot": "482"
+      "hot": "527"
     },
     {
       "rank": 9,
       "title": "Half-Life ported to Mac OS 9",
       "url": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
-      "hot": "206"
+      "hot": "237"
     },
     {
       "rank": 10,
-      "title": "Truth is not a direction: a Tarski attack on LLM probes",
-      "url": "https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html",
-      "hot": "68"
+      "title": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
+      "url": "https://learnvector.ai/",
+      "hot": "176"
     }
   ]
 }
