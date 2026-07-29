@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-29T09:10:15+00:00",
+  "updated_at": "2026-07-29T11:32:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Webpack v5.109.2 发布，模块打包器",
+      "url": "https://www.oschina.net/news/482347/webpack-5-109-2-released",
+      "hot": "Wed, 29 Jul 2026 17:57:07 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "扎克伯格反对‌美国政府封禁中国 AI 模型‌",
+      "url": "https://www.oschina.net/news/482309",
+      "hot": "Wed, 29 Jul 2026 17:31:10 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "阿里云 SysOM 巡检 Skill 正式开源",
+      "url": "https://my.oschina.net/u/3874284/blog/19729315",
+      "hot": "Wed, 29 Jul 2026 17:30:39 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "TimescaleDB 2.29.0 发布，基于 PostgreSQL 的时序数据库",
+      "url": "https://www.oschina.net/news/482275/timescaledb-2-29-0-released",
+      "hot": "Wed, 29 Jul 2026 17:10:29 +0800"
+    },
+    {
+      "rank": 5,
       "title": "谷歌解散 AlphaFold 团队，将重心放在 Gemini",
       "url": "https://www.oschina.net/news/482258",
       "hot": "Wed, 29 Jul 2026 16:52:46 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Kimi K3 能在本地 Mac 上跑起来，答案在架构里",
       "url": "https://www.oschina.net/news/482218",
       "hot": "Wed, 29 Jul 2026 16:06:38 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "SeaMonkey 2.53.24 发布，Mozilla 浏览器套件",
       "url": "https://www.oschina.net/news/482140/seamonkey-2-53-24-released",
       "hot": "Wed, 29 Jul 2026 14:43:11 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "苹果系统更新点名感谢 AI：Claude、Codex 揪出多项漏洞",
       "url": "https://www.oschina.net/news/482125",
       "hot": "Wed, 29 Jul 2026 14:26:45 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "重磅开源！UNICUT —— 纯 Web 端在线视频编辑器，功能比肩桌面端",
       "url": "https://www.oschina.net/news/482055",
       "hot": "Wed, 29 Jul 2026 12:49:53 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Apple 操作系统安全更新公告出现一串 AI 名字",
       "url": "https://www.oschina.net/news/482025",
       "hot": "Wed, 29 Jul 2026 11:50:46 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Kimi K3 架构拆解——本质上是 Kimi Linear 的规模化生产版本",
-      "url": "https://www.oschina.net/news/482012/kimi-k3-architecture-notes",
-      "hot": "Wed, 29 Jul 2026 11:23:05 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "推荐系统体验的数字化突破：得物自动化评测平台的技术实践",
-      "url": "https://my.oschina.net/u/5783135/blog/19728170",
-      "hot": "Wed, 29 Jul 2026 11:22:01 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "OpenAI 发布开源版 Codex Security CLI",
-      "url": "https://www.oschina.net/news/481986",
-      "hot": "Wed, 29 Jul 2026 10:55:55 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Firefox 153.0.1 发布",
-      "url": "https://www.oschina.net/news/481973/firefox-153-0-1-released",
-      "hot": "Wed, 29 Jul 2026 10:41:14 +0800"
     }
   ]
 }

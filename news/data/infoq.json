@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-29T09:10:16+00:00",
+  "updated_at": "2026-07-29T11:32:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "深度对话：做AI的最佳伙伴：定义Token从“生产”到“应用”的确定性旅程",
+      "url": "https://www.infoq.cn/video/G3qIla4jAZtDLCGhqvKx?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 29 Jul 2026 19:12:21 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "基于虚拟分段和原生播放的节拍同步移动音频流",
+      "url": "https://www.infoq.cn/article/5gHaEtygF94JOKLKyDBg?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 29 Jul 2026 19:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Yelp 借助 Training Orchestrator 实现机器学习模型训练的统一管理",
+      "url": "https://www.infoq.cn/article/J3AlWZvIwrQT3R7dsoJo?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 29 Jul 2026 17:49:42 GMT"
+    },
+    {
+      "rank": 4,
       "title": "深度访谈｜Agentic 时代，谁来重新定义数据库？",
       "url": "https://www.infoq.cn/video/r4pZtYkEzaYWlFlwJXTk?utm_source=rss&utm_medium=article",
       "hot": "Wed, 29 Jul 2026 17:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "语义贯通：在 Snowflake 上构建可信、高效的数据智能 ｜Snowflake Discover AI 技术实战周",
       "url": "https://www.infoq.cn/video/UVPhU4AzuNX9YkF0oQUG?utm_source=rss&utm_medium=article",
       "hot": "Wed, 29 Jul 2026 16:52:19 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "AI智能体正击穿生物安全防线！智源、北大实测11款商用大模型，均能生成绕过筛查的拆分方案",
       "url": "https://www.infoq.cn/article/JOOv0RAS1AEZO92E4KyU?utm_source=rss&utm_medium=article",
       "hot": "Wed, 29 Jul 2026 16:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "GPT“失控”被索赔1亿美元，微软反手扔王炸：新模型踩翻Mythos、价格砍半，还拉上“苦主”组了联盟",
       "url": "https://www.infoq.cn/article/HmUiGVoVoyMc0Y29cZXc?utm_source=rss&utm_medium=article",
       "hot": "Wed, 29 Jul 2026 14:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "全球六城联动，世界人工智能开源大赛（GOAI）线下宣讲即将启动",
       "url": "https://www.infoq.cn/article/LmqJqxbZBw9cUFY4Kb9c?utm_source=rss&utm_medium=article",
       "hot": "Wed, 29 Jul 2026 13:48:45 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "最强模型“跳票”，市值一夜蒸发2000亿美元！谷歌连上三款“省油”模型，死磕每一个token的钱",
       "url": "https://www.infoq.cn/article/It5CxXxYowEE0pE7IKJU?utm_source=rss&utm_medium=article",
       "hot": "Wed, 29 Jul 2026 11:58:35 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Netflix 如何打造 GenPage：一个用于构建个性化主页的生成式 AI 模型",
       "url": "https://www.infoq.cn/article/4M2Old24DsjxwT1ZIR3k?utm_source=rss&utm_medium=article",
       "hot": "Wed, 29 Jul 2026 11:53:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "黄仁勋首推引爆开源论战：Anthropic 员工催 CUDA、Windows 开源，吴恩达反击：你可以不开源，但别阻止别人",
-      "url": "https://www.infoq.cn/article/BXOUaAvzZQpGrzMg3lDK?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 29 Jul 2026 11:22:48 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "“企业搞AI，老板要先用”！周鸿祎发布纳米Work，率先帮1000家小企业AI落地",
-      "url": "https://www.infoq.cn/article/Ey2MtxSL1FaYWesfqLGE?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 29 Jul 2026 11:01:24 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "OpenSandbox：重新思考 Agent 时代的 Runtime",
-      "url": "https://www.infoq.cn/article/ZTpvXKGjyzpNUaS9Gp3b?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 29 Jul 2026 10:47:50 GMT"
     }
   ]
 }
