@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-29T06:16:26+00:00",
+  "updated_at": "2026-07-29T13:16:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "8215"
+      "hot": "8436"
     },
     {
       "rank": 2,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3439"
+      "hot": "3480"
     },
     {
       "rank": 3,
-      "title": "upstage/Solar-Open2-250B",
-      "url": "https://huggingface.co/upstage/Solar-Open2-250B",
-      "hot": "668"
+      "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "hot": "890"
     },
     {
       "rank": 4,
-      "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "867"
+      "title": "upstage/Solar-Open2-250B",
+      "url": "https://huggingface.co/upstage/Solar-Open2-250B",
+      "hot": "686"
     },
     {
       "rank": 5,
       "title": "poolside/Laguna-S-2.1",
       "url": "https://huggingface.co/poolside/Laguna-S-2.1",
-      "hot": "804"
+      "hot": "808"
     },
     {
       "rank": 6,
       "title": "Nanbeige/Nanbeige4.2-3B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
-      "hot": "532"
+      "hot": "541"
     },
     {
       "rank": 7,
-      "title": "microsoft/Mage-Flow",
-      "url": "https://huggingface.co/microsoft/Mage-Flow",
-      "hot": "423"
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "hot": "300"
     },
     {
       "rank": 8,
-      "title": "Kwaipilot/KAT-Coder-V2.5-Dev",
-      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
-      "hot": "293"
+      "title": "owensong/Inflect-Micro-v2",
+      "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
+      "hot": "279"
     },
     {
       "rank": 9,
-      "title": "owensong/Inflect-Micro-v2",
-      "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
-      "hot": "272"
+      "title": "zai-org/GLM-5.2",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "hot": "4626"
     },
     {
       "rank": 10,
-      "title": "zai-org/GLM-5.2",
-      "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4613"
+      "title": "thinkingmachines/Inkling",
+      "url": "https://huggingface.co/thinkingmachines/Inkling",
+      "hot": "1633"
     }
   ]
 }
