@@ -1,21 +1,20 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-07-30T20:18:41+00:00",
-  "fetch_ok": false,
-  "error": "too few items: 0",
+  "updated_at": "2026-07-30T22:40:41+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "某骗子黑产软件（手机远控）的分析",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117851",
-      "hot": "[md]# 某恶意 APK 分析\n## APK 信息\n- 文件名：`欣姐.apk`\n- 文件大小：`17.3 MB (18,238,424 字节)`\n- 应用名：`欣姐`\n\n\n## 行为\n### 应用程序启动时，会要求开启无障碍权限。\n\n\n\n这种招数已经见怪不怪，骗 ..."
-    },
-    {
-      "rank": 2,
       "title": "从时间片轮转到调用级并发：unidbg 单后端多线程架构重构",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117230",
       "hot": "[md]# 从时间片轮转到调用级并发：unidbg 单后端多线程架构重构\n\n&gt; 本文讨论的是 unidbg 在单 Unicorn 后端下模拟多线程 native 程序时的通用架构问题。文中的命令、线程、回调与返回值均为抽象示例，不对应任何具体 ..."
+    },
+    {
+      "rank": 2,
+      "title": "当游戏越来越漂亮，外挂却越来越丑：作弊技术摸底（2026）",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117216",
+      "hot": ""
     },
     {
       "rank": 3,

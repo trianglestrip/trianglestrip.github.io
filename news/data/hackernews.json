@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-30T20:18:44+00:00",
+  "updated_at": "2026-07-30T22:40:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Read this before you buy that TV streaming stick",
       "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
-      "hot": "267"
+      "hot": "424"
     },
     {
       "rank": 2,
-      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
-      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
-      "hot": "357"
+      "title": "Stacked PRs are now live on GitHub",
+      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "hot": "367"
     },
     {
       "rank": 3,
-      "title": "Making Postgres queues scale",
-      "url": "https://www.dbos.dev/blog/making-postgres-queues-scale",
-      "hot": "57"
+      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "hot": "424"
     },
     {
       "rank": 4,
-      "title": "2x, not 10x: coding with LLMs in 2026",
-      "url": "https://obryant.dev/p/2x-not-10x/",
-      "hot": "81"
+      "title": "Agent Skill to Force Docs in ASD-STE100 Simplified Technical English",
+      "url": "https://github.com/AminBlg/SimpleEnglish",
+      "hot": "88"
     },
     {
       "rank": 5,
-      "title": "Stacked PRs are now live on GitHub",
-      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
-      "hot": "213"
+      "title": "CodePen 2.0",
+      "url": "https://chriscoyier.net/2026/07/30/codepen-2-0/",
+      "hot": "101"
     },
     {
       "rank": 6,
-      "title": "So you want to use plants to reduce CO₂",
-      "url": "https://dynomight.net/plants/",
-      "hot": "50"
+      "title": "Rune 1.1: adds Python, an Emacs editor, a symbol index and is now free",
+      "url": "https://rune.build/blog/rune-1-1-release",
+      "hot": "9"
     },
     {
       "rank": 7,
       "title": "UEFA and its national associations will not participate in FIFA competitions",
       "url": "https://www.uefa.com/news-media/news/02a7-213a92896eb0-54dfbf454e3b-1000--statement-on-behalf-of-uefa-and-its-55-national-associations/",
-      "hot": "324"
+      "hot": "592"
     },
     {
       "rank": 8,
-      "title": "CodePen 2.0",
-      "url": "https://chriscoyier.net/2026/07/30/codepen-2-0/",
-      "hot": "59"
+      "title": "Physicists Solve a Muon Mystery. Now, Old Results Don't Add Up",
+      "url": "https://www.quantamagazine.org/physicists-solve-a-muon-mystery-now-old-results-dont-add-up-20260729/",
+      "hot": "155"
     },
     {
       "rank": 9,
       "title": "Advancing the price-performance frontier with GPT‑5.6",
       "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-      "hot": "374"
+      "hot": "443"
     },
     {
       "rank": 10,
-      "title": "Physicists Solve a Muon Mystery. Now, Old Results Don't Add Up",
-      "url": "https://www.quantamagazine.org/physicists-solve-a-muon-mystery-now-old-results-dont-add-up-20260729/",
-      "hot": "123"
+      "title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
+      "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+      "hot": "58"
     }
   ]
 }
