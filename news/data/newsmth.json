@@ -1,9 +1,8 @@
 {
   "source": "newsmth",
   "title": "水木社区",
-  "updated_at": "2026-07-29T22:29:57+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-07-30T00:07:38+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -25,27 +24,27 @@
     },
     {
       "rank": 4,
-      "title": "王虹同学：她在北大同班不是最优秀的，比她强的至少还有十几个",
-      "url": "https://wap.newsmth.net/article/5cefb86882ea6fd8eca7cb5014510abe?title=%E5%B9%BD%E9%BB%98%E5%85%A8%E6%96%B9%E4%BD%8D&from=home",
-      "hot": ""
-    },
-    {
-      "rank": 5,
-      "title": "【全校区合并·全专业加权】2026十六省市985物理类加权汇总",
-      "url": "https://wap.newsmth.net/article/c25bfe2154a7ef317df98e4cf9cb00ef?title=%E9%AB%98%E8%80%83%C2%B7%E5%A4%A7%E5%AD%A6&from=home",
-      "hot": "【全校区合并·全专业加权】2026十六省市985物理类加权汇总 『无单列，合并所有分校区/医学院』，包括生化环材农医等全部天坑、中外合办、国家专项、高校专项等所有物化组/物不限组专业/专业组，均按实际招生人数加权，各省市之间按直接平均汇总。"
-    },
-    {
-      "rank": 6,
       "title": "小地方体制内教师公务员真是爽",
       "url": "https://wap.newsmth.net/article/69208f082aa73eeb4604e42f9a578fb8?title=%E5%AE%B6%E5%BA%AD%E7%94%9F%E6%B4%BB&from=home",
       "hot": "一个亲戚教师，10多年前就不教书干点教委的工作，天天去喝茶看报纸，工资公积金在当地算高的，马上退休了说退休金1万多。"
     },
     {
-      "rank": 7,
+      "rank": 5,
+      "title": "通信工程 算是凉凉了吧",
+      "url": "https://wap.newsmth.net/article/f30efde7a7111fc8d88902272dfba3f7?title=%E9%AB%98%E8%80%83%C2%B7%E5%A4%A7%E5%AD%A6&from=home",
+      "hot": "之前，通信工程，分数比肩计算机。 小舅子当年报志愿，我们给报的通信工程。现在倒是还在当牛马。"
+    },
+    {
+      "rank": 6,
       "title": "一个住在电梯APARTMENT里的人非要瞎操住HOUSE的富人的心",
       "url": "https://wap.newsmth.net/article/7758d4649468483bb1f2c6a5e5b5776b?title=%E5%9C%B0%E7%90%86&from=home",
       "hot": "知道啥叫天壤之别么"
+    },
+    {
+      "rank": 7,
+      "title": "【全校区合并·全专业加权】2026十六省市985物理类加权汇总",
+      "url": "https://wap.newsmth.net/article/c25bfe2154a7ef317df98e4cf9cb00ef?title=%E9%AB%98%E8%80%83%C2%B7%E5%A4%A7%E5%AD%A6&from=home",
+      "hot": "【全校区合并·全专业加权】2026十六省市985物理类加权汇总 『无单列，合并所有分校区/医学院』，包括生化环材农医等全部天坑、中外合办、国家专项、高校专项等所有物化组/物不限组专业/专业组，均按实际招生人数加权，各省市之间按直接平均汇总。"
     },
     {
       "rank": 8,
@@ -55,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "我建议你们去看看2034杯",
-      "url": "https://wap.newsmth.net/article/9a41b776bbe0621e6df424b2f4086363?title=%E5%9B%BD%E9%99%85%E8%B6%B3%E7%90%83&from=home",
-      "hot": "大场面。"
+      "title": "王虹同学：她在北大同班不是最优秀的，比她强的至少还有十几个",
+      "url": "https://wap.newsmth.net/article/5cefb86882ea6fd8eca7cb5014510abe?title=%E5%B9%BD%E9%BB%98%E5%85%A8%E6%96%B9%E4%BD%8D&from=home",
+      "hot": ""
     },
     {
       "rank": 10,
-      "title": "教主上二狗了",
-      "url": "https://wap.newsmth.net/article/b6834376ea43a43cb83becc8cc546f09?title=%E7%A6%BB%E5%A9%9A&from=home",
-      "hot": "二狗这美颜是真不错，属于核心科技了，否则看的人少了很多"
+      "title": "我建议你们去看看2034杯",
+      "url": "https://wap.newsmth.net/article/9a41b776bbe0621e6df424b2f4086363?title=%E5%9B%BD%E9%99%85%E8%B6%B3%E7%90%83&from=home",
+      "hot": "大场面。"
     }
   ]
 }
