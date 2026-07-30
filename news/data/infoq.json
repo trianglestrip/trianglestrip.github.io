@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-30T03:21:19+00:00",
+  "updated_at": "2026-07-30T06:02:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI Agent 不是唯一答案，Expedia 用确定性工作流打造 AI 运维平台",
+      "url": "https://www.infoq.cn/article/msL3K1DAsj3XIwLmd4tN?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 30 Jul 2026 14:00:00 GMT"
+    },
+    {
+      "rank": 2,
       "title": "用于生产安全运维的多智能体 AI ：5G 核心网中的 A2A 和 MCP 架构",
       "url": "https://www.infoq.cn/article/v9Vmgcy4RZvUIcxPEP77?utm_source=rss&utm_medium=article",
       "hot": "Thu, 30 Jul 2026 10:51:26 GMT"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "首个突破90%成功率的桌面操作智能体！从堆模型到拼工程，实在Agent登顶OSWorld双冠",
       "url": "https://www.infoq.cn/article/4hUcQzeCeKm0wqkc4Zdc?utm_source=rss&utm_medium=article",
       "hot": "Thu, 30 Jul 2026 10:33:33 GMT"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "情报虾：跨平台情报信息全掌握！用skills一键扫荡小红书+微博+B站",
       "url": "https://www.infoq.cn/video/v1VMBH1RxmXyHvD6vo2d?utm_source=rss&utm_medium=article",
       "hot": "Thu, 30 Jul 2026 10:01:47 GMT"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "办公虾：秒级部署！用skills联动办公软件，效率翻倍",
       "url": "https://www.infoq.cn/video/s2ZOVJgO0ytfzxIAK7DB?utm_source=rss&utm_medium=article",
       "hot": "Thu, 30 Jul 2026 10:01:37 GMT"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "深度对话：AI 耳机下半场：从录音工具到办公 Agent 入口",
       "url": "https://www.infoq.cn/video/V6jFOIUOQtmruUil4WIA?utm_source=rss&utm_medium=article",
       "hot": "Thu, 30 Jul 2026 10:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "轻量化异构双臂 x VLA/世界模型：家庭服务具身机器人的落地实践｜AICon深圳",
       "url": "https://www.infoq.cn/article/SZaGmZI0g7INLtxalmvi?utm_source=rss&utm_medium=article",
       "hot": "Thu, 30 Jul 2026 10:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "GitLab 19.2 借助 AI 代理处理安全待办事项",
       "url": "https://www.infoq.cn/article/BSPHIPBaSTkEZT9eqgzL?utm_source=rss&utm_medium=article",
       "hot": "Thu, 30 Jul 2026 09:00:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "深度对话：做AI的最佳伙伴：定义Token从“生产”到“应用”的确定性旅程",
       "url": "https://www.infoq.cn/video/G3qIla4jAZtDLCGhqvKx?utm_source=rss&utm_medium=article",
       "hot": "Wed, 29 Jul 2026 19:12:21 GMT"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "基于虚拟分段和原生播放的节拍同步移动音频流",
       "url": "https://www.infoq.cn/article/5gHaEtygF94JOKLKyDBg?utm_source=rss&utm_medium=article",
       "hot": "Wed, 29 Jul 2026 19:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Yelp 借助 Training Orchestrator 实现机器学习模型训练的统一管理",
-      "url": "https://www.infoq.cn/article/J3AlWZvIwrQT3R7dsoJo?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 29 Jul 2026 17:49:42 GMT"
     }
   ]
 }
