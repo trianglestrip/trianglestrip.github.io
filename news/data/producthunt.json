@@ -1,14 +1,14 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-07-30T10:49:23+00:00",
+  "updated_at": "2026-07-30T17:45:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "agentOS",
-      "url": "https://www.producthunt.com/products/agentos-3",
-      "hot": "2026-07-21T12:56:36-07:00"
+      "title": "Claude Code usage tracking by LangWatch",
+      "url": "https://www.producthunt.com/products/langwatch",
+      "hot": "2026-07-28T06:03:23-07:00"
     },
     {
       "rank": 2,
@@ -18,51 +18,51 @@
     },
     {
       "rank": 3,
-      "title": "Laxis",
-      "url": "https://www.producthunt.com/products/laxis-2",
-      "hot": "2026-07-20T14:02:40-07:00"
-    },
-    {
-      "rank": 4,
-      "title": "Focus Room",
-      "url": "https://www.producthunt.com/products/focus-room",
-      "hot": "2026-07-29T10:02:29-07:00"
-    },
-    {
-      "rank": 5,
-      "title": "Caimera",
-      "url": "https://www.producthunt.com/products/caimera-2",
-      "hot": "2026-07-28T00:17:55-07:00"
-    },
-    {
-      "rank": 6,
-      "title": "PRNotch",
-      "url": "https://www.producthunt.com/products/prnotch",
-      "hot": "2026-07-29T06:52:23-07:00"
-    },
-    {
-      "rank": 7,
       "title": "SKI",
       "url": "https://www.producthunt.com/products/ski",
       "hot": "2026-07-28T03:29:37-07:00"
     },
     {
-      "rank": 8,
+      "rank": 4,
+      "title": "Sorinai",
+      "url": "https://www.producthunt.com/products/sorinai",
+      "hot": "2026-07-29T22:29:16-07:00"
+    },
+    {
+      "rank": 5,
+      "title": "Memmy Agent",
+      "url": "https://www.producthunt.com/products/memmy",
+      "hot": "2026-07-22T05:22:23-07:00"
+    },
+    {
+      "rank": 6,
       "title": "docktor",
       "url": "https://www.producthunt.com/products/docktor",
       "hot": "2026-07-29T12:22:45-07:00"
     },
     {
+      "rank": 7,
+      "title": "Yap",
+      "url": "https://www.producthunt.com/products/yap-5",
+      "hot": "2026-07-29T14:28:30-07:00"
+    },
+    {
+      "rank": 8,
+      "title": "AI Search Console",
+      "url": "https://www.producthunt.com/products/ai-search-console",
+      "hot": "2026-07-03T05:43:30-07:00"
+    },
+    {
       "rank": 9,
-      "title": "Premation",
-      "url": "https://www.producthunt.com/products/premation",
-      "hot": "2026-07-29T19:08:08-07:00"
+      "title": "NINA",
+      "url": "https://www.producthunt.com/products/agenq-nina-ai-product-assistant",
+      "hot": "2025-12-19T02:28:19-08:00"
     },
     {
       "rank": 10,
-      "title": "Virre",
-      "url": "https://www.producthunt.com/products/virre",
-      "hot": "2026-07-29T19:58:26-07:00"
+      "title": "Focus Room",
+      "url": "https://www.producthunt.com/products/focus-room",
+      "hot": "2026-07-29T10:02:29-07:00"
     }
   ]
 }

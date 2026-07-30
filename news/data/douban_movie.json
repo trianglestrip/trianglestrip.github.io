@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-07-30T14:34:28+00:00",
+  "updated_at": "2026-07-30T17:45:29+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,33 +12,33 @@
     },
     {
       "rank": 2,
-      "title": "痴迷",
-      "url": "https://movie.douban.com/subject/37450627/",
-      "hot": "评分 7.5"
-    },
-    {
-      "rank": 3,
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "hot": "评分 6.5"
-    },
-    {
-      "rank": 4,
       "title": "蜘蛛侠：崭新之日",
       "url": "https://movie.douban.com/subject/36246195/",
       "hot": "评分 7.8"
     },
     {
-      "rank": 5,
-      "title": "雀骨",
-      "url": "https://movie.douban.com/subject/37317368/",
-      "hot": "评分 6.7"
+      "rank": 3,
+      "title": "痴迷",
+      "url": "https://movie.douban.com/subject/37450627/",
+      "hot": "评分 7.5"
     },
     {
-      "rank": 6,
+      "rank": 4,
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
+      "hot": "评分 6.5"
+    },
+    {
+      "rank": 5,
       "title": "群星闪耀时",
       "url": "https://movie.douban.com/subject/35875462/",
       "hot": "评分 7.4"
+    },
+    {
+      "rank": 6,
+      "title": "雀骨",
+      "url": "https://movie.douban.com/subject/37317368/",
+      "hot": "评分 6.7"
     },
     {
       "rank": 7,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "灿如繁星",
-      "url": "https://movie.douban.com/subject/36466246/",
-      "hot": "评分 6.8"
-    },
-    {
-      "rank": 10,
       "title": "寒战1994",
       "url": "https://movie.douban.com/subject/36857924/",
       "hot": "评分 7.1"
+    },
+    {
+      "rank": 10,
+      "title": "灿如繁星",
+      "url": "https://movie.douban.com/subject/36466246/",
+      "hot": "评分 6.8"
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-07-30T10:51:43+00:00",
+  "updated_at": "2026-07-30T17:46:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3: Open Frontier Intelligence",
       "url": "https://huggingface.co/papers/2607.24653",
-      "hot": "373"
+      "hot": "385"
     },
     {
       "rank": 2,
@@ -18,45 +18,45 @@
     },
     {
       "rank": 3,
+      "title": "VibeVoice Technical Report",
+      "url": "https://huggingface.co/papers/2508.19205",
+      "hot": "176"
+    },
+    {
+      "rank": 4,
       "title": "Kronos: A Foundation Model for the Language of Financial Markets",
       "url": "https://huggingface.co/papers/2508.02739",
       "hot": "50"
     },
     {
-      "rank": 4,
-      "title": "VibeVoice Technical Report",
-      "url": "https://huggingface.co/papers/2508.19205",
-      "hot": "175"
-    },
-    {
       "rank": 5,
       "title": "Mage-VL: An Efficient Codec-Native Streaming Multimodal Foundation Model",
       "url": "https://huggingface.co/papers/2607.24904",
-      "hot": "25"
+      "hot": "26"
     },
     {
       "rank": 6,
+      "title": "Native and Compact Structured Latents for 3D Generation",
+      "url": "https://huggingface.co/papers/2512.14692",
+      "hot": "6"
+    },
+    {
+      "rank": 7,
       "title": "Geometric Context Transformer for Streaming 3D Reconstruction",
       "url": "https://huggingface.co/papers/2604.14141",
       "hot": "37"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
       "url": "https://huggingface.co/papers/2509.22186",
       "hot": "177"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "117"
-    },
-    {
-      "rank": 9,
-      "title": "Native and Compact Structured Latents for 3D Generation",
-      "url": "https://huggingface.co/papers/2512.14692",
-      "hot": "6"
     },
     {
       "rank": 10,
