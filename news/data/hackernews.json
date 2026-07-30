@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-30T06:02:48+00:00",
+  "updated_at": "2026-07-30T08:40:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AI's top startups are barely publishing their research",
       "url": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
-      "hot": "340"
+      "hot": "430"
     },
     {
       "rank": 2,
       "title": "The coolest use for the Vision Pro",
       "url": "https://christianselig.com/2026/07/vision-pro-house/",
-      "hot": "529"
+      "hot": "632"
     },
     {
       "rank": 3,
-      "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
-      "url": "https://github.com/drumih/turbo-fieldfare",
-      "hot": "720"
+      "title": "I Have Thoughts on the iPhone Air",
+      "url": "https://christianselig.com/2026/07/iphone-air-review/",
+      "hot": "21"
     },
     {
       "rank": 4,
-      "title": "Superlogical",
-      "url": "https://www.superlogical.com/",
-      "hot": "614"
+      "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "hot": "777"
     },
     {
       "rank": 5,
-      "title": "LLM Honeypot",
-      "url": "https://llm2human.pages.dev/",
-      "hot": "147"
+      "title": "Superlogical",
+      "url": "https://www.superlogical.com/",
+      "hot": "675"
     },
     {
       "rank": 6,
-      "title": "The Productivity Mirage",
-      "url": "https://frantic.im/mirage/",
-      "hot": "143"
+      "title": "LLM Honeypot",
+      "url": "https://llm2human.pages.dev/",
+      "hot": "223"
     },
     {
       "rank": 7,
-      "title": "Keychron announces first open-source firmware for gaming mice",
-      "url": "https://www.digitalfoundry.net/news/2026/07/keychron-announces-first-open-source-firmware-for-gaming-mice",
-      "hot": "336"
+      "title": "The Productivity Mirage",
+      "url": "https://frantic.im/mirage/",
+      "hot": "214"
     },
     {
       "rank": 8,
-      "title": "The Cold Email",
-      "url": "https://zachholman.com/posts/cold-email",
-      "hot": "154"
+      "title": "Keychron announces first open-source firmware for gaming mice",
+      "url": "https://www.digitalfoundry.net/news/2026/07/keychron-announces-first-open-source-firmware-for-gaming-mice",
+      "hot": "366"
     },
     {
       "rank": 9,
       "title": "Logic for Programmers",
       "url": "https://logicforprogrammers.com/",
-      "hot": "57"
+      "hot": "105"
     },
     {
       "rank": 10,
       "title": "Anatomy of a Frontier Lab Agent Intrusion: A Timeline of the July 2026 Incident",
       "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
-      "hot": "340"
+      "hot": "375"
     }
   ]
 }

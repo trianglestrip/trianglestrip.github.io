@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-30T06:02:46+00:00",
+  "updated_at": "2026-07-30T08:40:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS｜Natural Language Kit 学习实录01：从分词结果到实体字段解析",
+      "url": "https://ost.51cto.com/posts/54166",
+      "hot": "我是在翻HarmonyOS的AI类API时看到NaturalLanguageKit的。起初只看名称，我以为它会包含情感分析、文本摘要、意图识别之类的能力。真正把目..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 6.1｜NearLink ArkTS 实战指南：从设备发现到会话通信的项目落地",
+      "url": "https://ost.51cto.com/posts/54165",
+      "hot": "我最近在项目里接了一段NearLink能力，最开始的目标其实很朴素：让手机在近距离下快速发现周边设备，点一下就能建立连接，再把一小段控制指..."
+    },
+    {
+      "rank": 3,
       "title": "为什么越来越多人用Apache Tika？",
       "url": "https://www.51cto.com/article/851363.html",
       "hot": "企业中超过80%的数据以文档形式存在，格式五花八门：PDF、Word、Excel、PPT、图片、邮件……如果每个格式都用一套独立的解析方案，光维护成本就能让团队崩溃。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "AI 如何理解流体力学？从一个点涡问题看大模型的科学推理能力",
       "url": "https://www.51cto.com/article/851362.html",
       "hot": "最近我用一个经典点涡问题，系统测试了一次大模型的科学推理能力。结果很有意思：AI 不只是能把题算出来，还能一步步完成从速度场、涡量、流体微团变形，到有限变形分解的完整分析链条。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "CSS-in-JS 要凉了吗？这个新项目给出了答案",
       "url": "https://www.51cto.com/article/851360.html",
       "hot": "简单理解，dx-styles 是一个零运行时 CSS-in-TS 方案，目标让开发者继续享受 CSS 写法 + TypeScript 类型 + 组件化体验，但不要把运行时代码发送给用户。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "C++20 协程：你以为很难，其实看完这篇就懂了",
       "url": "https://www.51cto.com/article/851356.html",
       "hot": "C++20协程的设计非常底层，标准只提供了框架（promise_type、coroutine_handle、Awaitable），具体的上层封装需要自己写或用第三方库（比如 cppcoro、Asio的协程支持等）。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "当KimiK3冲向 2.8 万亿，医院却停在 32B：Agent 真正难的是变小",
       "url": "https://www.51cto.com/article/851354.html",
       "hot": "我越来越确定，未来医疗 Agent 最难的工作，会发生在从 2.8T 缩回 32B 的路上：见过前沿模型的能力以后，能不能把它压缩成一套小模型也能遵守、系统能够验证、医院愿意承担责任的流程。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "从 175 人到 30 人：AI Native 组织的尽头，是降本增效",
       "url": "https://www.51cto.com/article/851344.html",
       "hot": "我一直觉得，AI 带来的组织变革势在必行。可过去听到的大多是“全员使用 AI”“人效提升 30%”之类的口号。昨晚看到的东西彻底得多：他们没有给每个员工发一个 AI 助手，而是把公司产研交付的上下文、任务分配、验收和绩效，装进了一套闭环系统里。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "史上首次完全自主 AI Agent 网络攻击：利用 0Day 漏洞渗透 Hugging Face",
       "url": "https://www.51cto.com/article/851342.html",
       "hot": "根据Hugging Face的取证重建，此次攻击在约四天半的时间内产生了约17,600次攻击者操作，这些操作被分为约6,280个行为簇。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "火山引擎开源 Agent 驱动的搜索自迭代技术",
       "url": "https://www.51cto.com/article/851341.html",
       "hot": "我们将拆解这套闭环如何运转，以及背后的 SPA 策略优化框架，如何在有限搜索和标注预算下，把更多实验机会留给真正有希望的策略。"
-    },
-    {
-      "rank": 9,
-      "title": "AI Agent Skill 工程化 11：生产监控与 Skill Review——从真实任务反哺测试集",
-      "url": "https://www.51cto.com/article/851337.html",
-      "hot": "没有可处理的现场问题，都是假设的话，你这个Skill 本身可能就是一个伪命题，伪功能，所以对Skill 的 Review 也只是开个短会而已，并没有改变之前的本质问题（未发现的问题）。"
-    },
-    {
-      "rank": 10,
-      "title": "Spring Boot 3.x 封装 AIOps 平台：API 设计 + RBAC 权限 + WebSocket 实时推送，附完整代码",
-      "url": "https://www.51cto.com/article/851336.html",
-      "hot": "本文介绍一个 AI 辅助的运维平台，适合从零搭建 AIOps 平台后端的中小团队。"
     }
   ]
 }
