@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-30T08:40:52+00:00",
+  "updated_at": "2026-07-30T10:51:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Krita 5.3.3 和 6.0.3 发布",
+      "url": "https://www.oschina.net/news/483210/krita-5-3-3-released",
+      "hot": "Thu, 30 Jul 2026 18:31:25 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "LibreOffice 26.2.5 发布",
+      "url": "https://www.oschina.net/news/483150/libreoffice-26-2-5-released",
+      "hot": "Thu, 30 Jul 2026 17:24:20 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Jina 全新 6 亿参数列表式重排序模型 reranker 内部揭秘",
+      "url": "https://my.oschina.net/u/3343882/blog/19729991",
+      "hot": "Thu, 30 Jul 2026 17:06:53 +0800"
+    },
+    {
+      "rank": 4,
       "title": "微软确认开发 Copilot AI 超级应用，整合聊天、编程与智能代理能力",
       "url": "https://www.oschina.net/news/483111",
       "hot": "Thu, 30 Jul 2026 16:33:05 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "数据迁移同步工具 CloudCanal 6.3.0.0 发布，Oracle 目标端写入性能大幅优化",
       "url": "https://www.oschina.net/news/483086",
       "hot": "Thu, 30 Jul 2026 16:04:00 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "jsoup 1.23.1 发布，Java HTML 解析器",
       "url": "https://www.oschina.net/news/483051/jsoup-1-23-1-released",
       "hot": "Thu, 30 Jul 2026 15:35:39 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "xAI 发布 Grok Voice Think Fast2.0",
       "url": "https://www.oschina.net/news/482971",
       "hot": "Thu, 30 Jul 2026 14:22:46 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "317 家 AI 独角兽，超过一半从来没发过论文",
       "url": "https://www.oschina.net/news/482959/ai-s-top-startups-are-barely-publishing-their-research",
       "hot": "Thu, 30 Jul 2026 14:13:13 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "Harness 概念提出者官宣创业：给 AI Agent 造 “持久化终端”",
       "url": "https://my.oschina.net/u/4487475/blog/19730024",
       "hot": "Thu, 30 Jul 2026 14:05:15 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "当所有人都在用 TS/Python 写 Agent，我们为什么坚持 Java",
       "url": "https://www.oschina.net/news/482919",
       "hot": "Thu, 30 Jul 2026 13:23:25 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "一个 AI Agent，四天半攻陷 Hugging Face，动机是考试作弊",
-      "url": "https://www.oschina.net/news/482872",
-      "hot": "Thu, 30 Jul 2026 11:57:02 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "AI Native 交易核心系统的研发范式",
-      "url": "https://my.oschina.net/u/5783135/blog/19729958",
-      "hot": "Thu, 30 Jul 2026 11:45:32 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "腾讯混元开源 AngelSpec 框架",
-      "url": "https://www.oschina.net/news/482843",
-      "hot": "Thu, 30 Jul 2026 11:29:50 +0800"
     }
   ]
 }
