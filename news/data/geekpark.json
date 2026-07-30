@@ -1,69 +1,68 @@
 {
   "source": "geekpark",
   "title": "极客公园",
-  "updated_at": "2026-07-29T22:14:13+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-07-30T03:20:24+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "不到一周，众筹 1000 万美金，3D 打印的「Game Changer」，出现了",
-      "url": "https://www.geekpark.net/news/368150",
-      "hot": "537"
+      "title": "三星二季度利润同比增长 18 倍；Deepmind 拆散重组诺奖项目团队；Hugging Face 披露 AI 入侵全过程报告",
+      "url": "https://www.geekpark.net/news/368160",
+      "hot": "861"
     },
     {
       "rank": 2,
-      "title": "硅谷的「AI 加速精英」，开始真正担心他们造出了「天网」",
-      "url": "https://www.geekpark.net/news/368144",
-      "hot": "1721"
+      "title": "不到一周，众筹 1000 万美金，3D 打印的「Game Changer」，出现了",
+      "url": "https://www.geekpark.net/news/368150",
+      "hot": "1274"
     },
     {
       "rank": 3,
-      "title": "苹果市值首次突破 5 万亿美元；马斯克财富五天缩水 8800 亿；鸿蒙 HarmonyOS 7 百项更新曝光",
-      "url": "https://www.geekpark.net/news/368104",
-      "hot": "2107"
+      "title": "硅谷的「AI 加速精英」，开始真正担心他们造出了「天网」",
+      "url": "https://www.geekpark.net/news/368144",
+      "hot": "3169"
     },
     {
       "rank": 4,
-      "title": "上市暴涨的长鑫存储，直接把美国股市干崩了",
-      "url": "https://www.geekpark.net/news/368087",
-      "hot": "6289"
+      "title": "苹果市值首次突破 5 万亿美元；马斯克财富五天缩水 8800 亿；鸿蒙 HarmonyOS 7 百项更新曝光",
+      "url": "https://www.geekpark.net/news/368104",
+      "hot": "3038"
     },
     {
       "rank": 5,
-      "title": "为什么美国做不出顶尖开源模型？",
-      "url": "https://www.geekpark.net/news/368088",
-      "hot": "5848"
+      "title": "上市暴涨的长鑫存储，直接把美国股市干崩了",
+      "url": "https://www.geekpark.net/news/368087",
+      "hot": "7745"
     },
     {
       "rank": 6,
-      "title": "月之暗面开源 Kimi K3 模型，2.8 万亿参数；英伟达牵头成立开放安全 AI 联盟；QQ 宠物宣布回归，接入混元大模型｜极客早知道",
-      "url": "https://www.geekpark.net/news/368055",
-      "hot": "3989"
+      "title": "为什么美国做不出顶尖开源模型？",
+      "url": "https://www.geekpark.net/news/368088",
+      "hot": "7238"
     },
     {
       "rank": 7,
-      "title": "能实时改变的剧情、会行动的 AI 角色，Vivix 灵动时刻正式发布首个实时互动模型",
-      "url": "https://www.geekpark.net/news/368018",
-      "hot": "9640"
+      "title": "月之暗面开源 Kimi K3 模型，2.8 万亿参数；英伟达牵头成立开放安全 AI 联盟；QQ 宠物宣布回归，接入混元大模型｜极客早知道",
+      "url": "https://www.geekpark.net/news/368055",
+      "hot": "4769"
     },
     {
       "rank": 8,
-      "title": "OpenAI 和 Anthropic，正在砸钱抢这个市场",
-      "url": "https://www.geekpark.net/news/368019",
-      "hot": "9868"
+      "title": "能实时改变的剧情、会行动的 AI 角色，Vivix 灵动时刻正式发布首个实时互动模型",
+      "url": "https://www.geekpark.net/news/368018",
+      "hot": "10911"
     },
     {
       "rank": 9,
-      "title": "梁文锋不满会谈纪要外流，DeepSeek 第二轮融资紧急叫停；特斯拉 20 亿美金收购 AI 硬件公司；月之暗面 Kimi K3 庆功照流出",
-      "url": "https://www.geekpark.net/news/367977",
-      "hot": "9828"
+      "title": "OpenAI 和 Anthropic，正在砸钱抢这个市场",
+      "url": "https://www.geekpark.net/news/368019",
+      "hot": "11156"
     },
     {
       "rank": 10,
-      "title": "被罚51.79亿元，携程公布 19 项整改措施；传库克向特朗普力荐中国存储芯片，美光强烈反对；三星斩获博通2000亿美元巨额订单",
-      "url": "https://www.geekpark.net/news/367975",
-      "hot": "7305"
+      "title": "梁文锋不满会谈纪要外流，DeepSeek 第二轮融资紧急叫停；特斯拉 20 亿美金收购 AI 硬件公司；月之暗面 Kimi K3 庆功照流出",
+      "url": "https://www.geekpark.net/news/367977",
+      "hot": "10590"
     }
   ]
 }

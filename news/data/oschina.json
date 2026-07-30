@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-29T22:33:14+00:00",
+  "updated_at": "2026-07-30T03:21:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Visual Studio Code 1.131 发布",
+      "url": "https://www.oschina.net/news/482822/vs-code-1-131-released",
+      "hot": "Thu, 30 Jul 2026 11:06:47 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "fastjson 2.0.63 发布",
+      "url": "https://www.oschina.net/news/482790/fastjson-2-0-63-released",
+      "hot": "Thu, 30 Jul 2026 10:36:56 +0800"
+    },
+    {
+      "rank": 3,
       "title": "Webpack v5.109.2 发布，模块打包器",
       "url": "https://www.oschina.net/news/482347/webpack-5-109-2-released",
       "hot": "Wed, 29 Jul 2026 17:57:07 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "扎克伯格反对‌美国政府封禁中国 AI 模型‌",
       "url": "https://www.oschina.net/news/482309",
       "hot": "Wed, 29 Jul 2026 17:31:10 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "阿里云 SysOM 巡检 Skill 正式开源",
       "url": "https://my.oschina.net/u/3874284/blog/19729315",
       "hot": "Wed, 29 Jul 2026 17:30:39 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "TimescaleDB 2.29.0 发布，基于 PostgreSQL 的时序数据库",
       "url": "https://www.oschina.net/news/482275/timescaledb-2-29-0-released",
       "hot": "Wed, 29 Jul 2026 17:10:29 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "谷歌解散 AlphaFold 团队，将重心放在 Gemini",
       "url": "https://www.oschina.net/news/482258",
       "hot": "Wed, 29 Jul 2026 16:52:46 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "Kimi K3 能在本地 Mac 上跑起来，答案在架构里",
       "url": "https://www.oschina.net/news/482218",
       "hot": "Wed, 29 Jul 2026 16:06:38 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "SeaMonkey 2.53.24 发布，Mozilla 浏览器套件",
       "url": "https://www.oschina.net/news/482140/seamonkey-2-53-24-released",
       "hot": "Wed, 29 Jul 2026 14:43:11 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "苹果系统更新点名感谢 AI：Claude、Codex 揪出多项漏洞",
       "url": "https://www.oschina.net/news/482125",
       "hot": "Wed, 29 Jul 2026 14:26:45 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "重磅开源！UNICUT —— 纯 Web 端在线视频编辑器，功能比肩桌面端",
-      "url": "https://www.oschina.net/news/482055",
-      "hot": "Wed, 29 Jul 2026 12:49:53 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Apple 操作系统安全更新公告出现一串 AI 名字",
-      "url": "https://www.oschina.net/news/482025",
-      "hot": "Wed, 29 Jul 2026 11:50:46 +0800"
     }
   ]
 }

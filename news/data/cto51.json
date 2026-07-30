@@ -1,69 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-29T22:33:10+00:00",
-  "fetch_ok": false,
-  "error": "Command '['hotboard', 'cto51', '--format', 'json']' timed out after 60 seconds",
+  "updated_at": "2026-07-30T03:21:12+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "一套代码搞定音乐播放、进度条拖拽、歌单循环、环境音混合",
-      "url": "https://ost.51cto.com/posts/54025",
-      "hot": "一套代码搞定音乐播放、进度条拖拽、歌单循环、环境音混合一套代码搞定音乐播放、进度条拖拽、歌单循环、环境音混合，核心就三个字：状态机..."
+      "title": "AI 如何理解流体力学？从一个点涡问题看大模型的科学推理能力",
+      "url": "https://www.51cto.com/article/851362.html",
+      "hot": "最近我用一个经典点涡问题，系统测试了一次大模型的科学推理能力。结果很有意思：AI 不只是能把题算出来，还能一步步完成从速度场、涡量、流体微团变形，到有限变形分解的完整分析链条。"
     },
     {
       "rank": 2,
-      "title": "AI想要落地其实很难！马克·库班：Agent会逐渐失效，也会慢慢偏离原来的运行状态",
-      "url": "https://www.51cto.com/article/851211.html",
-      "hot": "做出一个Agent，可能只需要几分钟。接进企业数据、处理权限、控制成本、复现故障，再保证模型升级后继续工作，软件工程从这里才真正开始。"
+      "title": "CSS-in-JS 要凉了吗？这个新项目给出了答案",
+      "url": "https://www.51cto.com/article/851360.html",
+      "hot": "简单理解，dx-styles 是一个零运行时 CSS-in-TS 方案，目标让开发者继续享受 CSS 写法 + TypeScript 类型 + 组件化体验，但不要把运行时代码发送给用户。"
     },
     {
       "rank": 3,
-      "title": "9MB 运行整个 JavaScript？这个新 Runtime 想挑战 Node.js",
-      "url": "https://www.51cto.com/article/851202.html",
-      "hot": "Ant 最有价值的地方不是宣布\"我要替代 Node\"，而是提出了一个新的方向：JavaScript Runtime 可以不用越来越重。"
+      "title": "C++20 协程：你以为很难，其实看完这篇就懂了",
+      "url": "https://www.51cto.com/article/851356.html",
+      "hot": "C++20协程的设计非常底层，标准只提供了框架（promise_type、coroutine_handle、Awaitable），具体的上层封装需要自己写或用第三方库（比如 cppcoro、Asio的协程支持等）。"
     },
     {
       "rank": 4,
-      "title": "海量指标告警杂乱难维护？基于时序 AI 自动校准 Prometheus 动态阈值落地实战",
-      "url": "https://www.51cto.com/article/851201.html",
-      "hot": "一套 Facebook Prophet 时序 AI + Prometheus 自动阈值校准方案"
+      "title": "当KimiK3冲向 2.8 万亿，医院却停在 32B：Agent 真正难的是变小",
+      "url": "https://www.51cto.com/article/851354.html",
+      "hot": "我越来越确定，未来医疗 Agent 最难的工作，会发生在从 2.8T 缩回 32B 的路上：见过前沿模型的能力以后，能不能把它压缩成一套小模型也能遵守、系统能够验证、医院愿意承担责任的流程。"
     },
     {
       "rank": 5,
-      "title": "少即是多，这次轮到大模型来证明",
-      "url": "https://www.51cto.com/article/851199.html",
-      "hot": "模型或许也一样。看发布会久了，我们很容易把注意力全部放在能力上限上，仿佛我们每天上班遇到的最大困难，是办公室里缺少一位能够证明黎曼猜想的同事。"
+      "title": "从 175 人到 30 人：AI Native 组织的尽头，是降本增效",
+      "url": "https://www.51cto.com/article/851344.html",
+      "hot": "我一直觉得，AI 带来的组织变革势在必行。可过去听到的大多是“全员使用 AI”“人效提升 30%”之类的口号。昨晚看到的东西彻底得多：他们没有给每个员工发一个 AI 助手，而是把公司产研交付的上下文、任务分配、验收和绩效，装进了一套闭环系统里。"
     },
     {
       "rank": 6,
-      "title": "Kimi K3竟是GPT-2的22580倍，博主「肝」48小时发现：七年进化大模型不只是参数暴涨",
-      "url": "https://www.51cto.com/article/851196.html",
-      "hot": "Kimi K3 是一款总参数量达 2.8 万亿、上下文窗口达 100 万 token 的 MoE 大模型，更是全球首个落地的近 3 万亿参数级开源大模型，引起业界热议。"
+      "title": "史上首次完全自主 AI Agent 网络攻击：利用 0Day 漏洞渗透 Hugging Face",
+      "url": "https://www.51cto.com/article/851342.html",
+      "hot": "根据Hugging Face的取证重建，此次攻击在约四天半的时间内产生了约17,600次攻击者操作，这些操作被分为约6,280个行为簇。"
     },
     {
       "rank": 7,
-      "title": "【HarmonyOS 7开发者前瞻】11 HarmonyOS 7 Beta 更新后怎么办？开发者需要重新验证这些结论",
-      "url": "https://ost.51cto.com/posts/53945",
-      "hot": "前言Beta阶段最容易出现的情况，是前一轮验证刚整理完，下一轮版本、文档、SDK、工具链或者设备状态又发生变化。这个时候，很多结论都不能..."
+      "title": "火山引擎开源 Agent 驱动的搜索自迭代技术",
+      "url": "https://www.51cto.com/article/851341.html",
+      "hot": "我们将拆解这套闭环如何运转，以及背后的 SPA 策略优化框架，如何在有限搜索和标注预算下，把更多实验机会留给真正有希望的策略。"
     },
     {
       "rank": 8,
-      "title": "细粒度视觉SOTA！小红书9B视觉“显微镜”，超越Gemini-3.5-Flash",
-      "url": "https://www.51cto.com/article/851176.html",
-      "hot": "小红书dots团队提出的Vision-OPD（Vision On-Policy Distillation，视觉在线策略蒸馏）框架，仅用约6.2K条全自动合成数据，便让9B模型在多个细粒度视觉理解基准上取得SOTA。"
+      "title": "AI Agent Skill 工程化 11：生产监控与 Skill Review——从真实任务反哺测试集",
+      "url": "https://www.51cto.com/article/851337.html",
+      "hot": "没有可处理的现场问题，都是假设的话，你这个Skill 本身可能就是一个伪命题，伪功能，所以对Skill 的 Review 也只是开个短会而已，并没有改变之前的本质问题（未发现的问题）。"
     },
     {
       "rank": 9,
-      "title": "SIGCOMM 2026｜两小时复现顶会网络系统！厦大团队让论文自动变成可运行代码",
-      "url": "https://www.51cto.com/article/851175.html",
-      "hot": "科研 Agent 的价值不只在于自动生成代码，更在于理解科研任务、组织专业知识并贯通研究流程。它可以协助研究者完成文献解析、系统搭建、环境配置、代码调试和结果验证等耗时工作，降低重复性工程投入，让科研人员将更多精力用于问题发现、方法设计和理论创新。"
+      "title": "Spring Boot 3.x 封装 AIOps 平台：API 设计 + RBAC 权限 + WebSocket 实时推送，附完整代码",
+      "url": "https://www.51cto.com/article/851336.html",
+      "hot": "本文介绍一个 AI 辅助的运维平台，适合从零搭建 AIOps 平台后端的中小团队。"
     },
     {
       "rank": 10,
-      "title": "他让GPT-5.6 Sol连跑33小时攻关费马大定理，被系统强制终止",
-      "url": "https://www.51cto.com/article/851174.html",
-      "hot": "最近，菲尔兹奖公布，大家对于数学 + AI 的讨论非常热烈，相信也有不少人想象过我刚刚描述的「爽文」剧情。"
+      "title": "别再学框架了！250 行代码，从零写出一个真正的 AI Agent",
+      "url": "https://www.51cto.com/article/851335.html",
+      "hot": "本篇文章不用任何 Agent 框架，只用官方 openai SDK 调 DeepSeek，从一个 while 循环开始，最后把 Tool Calling、MCP、Skills、循环对话四个东西全部装进同一个文件里。核心逻辑不到 250 行，可以直接复制运行，运行五次会看到五种不同的行为。"
     }
   ]
 }

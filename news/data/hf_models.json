@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-07-29T20:02:37+00:00",
+  "updated_at": "2026-07-30T03:21:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "8574"
+      "hot": "8696"
     },
     {
       "rank": 2,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3501"
+      "hot": "3517"
     },
     {
       "rank": 3,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "918"
+      "hot": "950"
     },
     {
       "rank": 4,
-      "title": "upstage/Solar-Open2-250B",
-      "url": "https://huggingface.co/upstage/Solar-Open2-250B",
-      "hot": "690"
+      "title": "poolside/Laguna-S-2.1",
+      "url": "https://huggingface.co/poolside/Laguna-S-2.1",
+      "hot": "828"
     },
     {
       "rank": 5,
-      "title": "poolside/Laguna-S-2.1",
-      "url": "https://huggingface.co/poolside/Laguna-S-2.1",
-      "hot": "824"
+      "title": "upstage/Solar-Open2-250B",
+      "url": "https://huggingface.co/upstage/Solar-Open2-250B",
+      "hot": "700"
     },
     {
       "rank": 6,
-      "title": "Nanbeige/Nanbeige4.2-3B",
-      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
-      "hot": "549"
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "hot": "320"
     },
     {
       "rank": 7,
-      "title": "Kwaipilot/KAT-Coder-V2.5-Dev",
-      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
-      "hot": "314"
+      "title": "Nanbeige/Nanbeige4.2-3B",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+      "hot": "556"
     },
     {
       "rank": 8,
       "title": "owensong/Inflect-Micro-v2",
       "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
-      "hot": "285"
+      "hot": "292"
     },
     {
       "rank": 9,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4635"
+      "hot": "4644"
     },
     {
       "rank": 10,
       "title": "microsoft/Fara1.5-27B",
       "url": "https://huggingface.co/microsoft/Fara1.5-27B",
-      "hot": "197"
+      "hot": "203"
     }
   ]
 }

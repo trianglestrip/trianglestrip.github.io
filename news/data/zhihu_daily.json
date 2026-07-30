@@ -1,9 +1,8 @@
 {
   "source": "zhihu_daily",
   "title": "知乎日报",
-  "updated_at": "2026-07-29T22:09:17+00:00",
-  "fetch_ok": false,
-  "error": "<urlopen error [Errno 101] Network is unreachable>",
+  "updated_at": "2026-07-30T03:20:02+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -13,45 +12,45 @@
     },
     {
       "rank": 2,
+      "title": "大象和海象是同源吗？它们的名字相似是因为长相吗？",
+      "url": "https://daily.zhihu.com/story/9791542",
+      "hot": "作者 / 祥昊"
+    },
+    {
+      "rank": 3,
       "title": "为什么鲁宾逊漂流记这样一部以热带海岛为背景的作品，完全没有任何关于蚊虫的描写？",
       "url": "https://daily.zhihu.com/story/9791497",
       "hot": "作者 / Azonker"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "尼安德特人是一种怎样的存在？",
       "url": "https://daily.zhihu.com/story/9791480",
       "hot": "作者 / 不如喝茶听雨"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "卖鱼老婆婆说，“鱼直接捞放塑料袋比放在有水的桶里拎过去放生更容易活”，她这是哪门子道理？",
       "url": "https://daily.zhihu.com/story/9791407",
       "hot": "作者 / 祥昊"
     },
     {
-      "rank": 5,
-      "title": "人体能接受的安全电压是不高于 36V，那如果多了 0.001V 会怎么样？",
-      "url": "https://daily.zhihu.com/story/9791373",
-      "hot": "作者 / 野狸子"
-    },
-    {
       "rank": 6,
-      "title": "现代人能吃得惯古代普通老百姓家里的菜吗？",
-      "url": "https://daily.zhihu.com/story/9791525",
-      "hot": "哈哈哈哈 · 7 分钟阅读"
+      "title": "光伏板挡住了阳光，下面的草为啥长得更茂盛了？",
+      "url": "https://daily.zhihu.com/story/9791551",
+      "hot": "中国能建 · 2 分钟阅读"
     },
     {
       "rank": 7,
-      "title": "为什么中国古代有二十四史这样庞大的史书集，而外国著名的史书似乎很少？",
-      "url": "https://daily.zhihu.com/story/9791534",
-      "hot": "Neferhotep · 5 分钟阅读"
+      "title": "有哪些原来很贵的食材现在便宜了？",
+      "url": "https://daily.zhihu.com/story/9791556",
+      "hot": "看星空的仓鼠 · 4 分钟阅读"
     },
     {
       "rank": 8,
       "title": "瞎扯 · 如何正确地吐槽",
-      "url": "https://daily.zhihu.com/story/9791538",
-      "hot": "VOL.3955"
+      "url": "https://daily.zhihu.com/story/9791561",
+      "hot": "VOL.3956"
     }
   ]
 }
