@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-07-31T07:27:48+00:00",
+  "updated_at": "2026-07-31T10:04:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "DeepSeek-V4-Flash 官方 API 现已正式上线公测",
+      "url": "https://www.oschina.net/news/483929",
+      "hot": "Fri, 31 Jul 2026 16:45:43 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "纳德拉终于想起微软还有个操作系统了",
+      "url": "https://www.oschina.net/news/483871",
+      "hot": "Fri, 31 Jul 2026 15:49:25 +0800"
+    },
+    {
+      "rank": 3,
       "title": "英伟达又被开源大佬问候了，但这次不是祖师爷 Linus Torvalds",
       "url": "https://www.oschina.net/news/483844",
       "hot": "Fri, 31 Jul 2026 15:23:56 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
+      "title": ":fire: Solon AI v4.0.4 发布（智能体开发框架，支持 Java8 到 Java26）",
+      "url": "https://www.oschina.net/news/483694",
+      "hot": "Fri, 31 Jul 2026 11:44:30 +0800"
+    },
+    {
+      "rank": 5,
       "title": "我做了一个支持 CI/CD 流水线部署的床头闹钟",
       "url": "https://www.oschina.net/news/483672",
       "hot": "Fri, 31 Jul 2026 11:21:17 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "MiniMax H3 正式上线，视频模型也开始玩全模态了",
       "url": "https://www.oschina.net/news/483640",
       "hot": "Fri, 31 Jul 2026 10:49:36 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "Anthropic 的 AI 摸到了密码学天花板",
       "url": "https://www.oschina.net/news/483634",
       "hot": "Fri, 31 Jul 2026 10:45:21 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Krita 5.3.3 和 6.0.3 发布",
       "url": "https://www.oschina.net/news/483210/krita-5-3-3-released",
       "hot": "Thu, 30 Jul 2026 18:31:25 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "LibreOffice 26.2.5 发布",
       "url": "https://www.oschina.net/news/483150/libreoffice-26-2-5-released",
       "hot": "Thu, 30 Jul 2026 17:24:20 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Jina 全新 6 亿参数列表式重排序模型 reranker 内部揭秘",
       "url": "https://my.oschina.net/u/3343882/blog/19729991",
       "hot": "Thu, 30 Jul 2026 17:06:53 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "微软确认开发 Copilot AI 超级应用，整合聊天、编程与智能代理能力",
-      "url": "https://www.oschina.net/news/483111",
-      "hot": "Thu, 30 Jul 2026 16:33:05 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "数据迁移同步工具 CloudCanal 6.3.0.0 发布，Oracle 目标端写入性能大幅优化",
-      "url": "https://www.oschina.net/news/483086",
-      "hot": "Thu, 30 Jul 2026 16:04:00 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "jsoup 1.23.1 发布，Java HTML 解析器",
-      "url": "https://www.oschina.net/news/483051/jsoup-1-23-1-released",
-      "hot": "Thu, 30 Jul 2026 15:35:39 +0800"
     }
   ]
 }

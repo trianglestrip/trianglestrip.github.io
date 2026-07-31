@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-07-31T07:27:50+00:00",
+  "updated_at": "2026-07-31T10:04:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "从金融专业到资深Builder：我如何借多Agent开发工作流，一周做出MVP、一个月上线",
+      "url": "https://www.infoq.cn/article/DHDOQWmDXa4obvC4l99E?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 31 Jul 2026 17:54:18 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "NVIDIA Vera Rubin 正式登场：从芯片卷到电网，只为压低每一个 Token 的成本",
+      "url": "https://www.infoq.cn/article/3gb6NlxK6c0A9or5Zfbt?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 31 Jul 2026 17:16:02 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "为什么 Jotai 要重做 Store？一次高吞吐性能优化背后的架构取舍",
+      "url": "https://www.infoq.cn/article/A3Kb4dOvDtMWXiAYet8x?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 31 Jul 2026 17:00:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "枫清科技高雪峰：AI正在进入材料研发与化工生产全流程",
+      "url": "https://www.infoq.cn/article/zIm0P8HWsWHWuGC54BsU?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 31 Jul 2026 15:57:22 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "自构建智能体：一项 LangChain4j 实验",
+      "url": "https://www.infoq.cn/article/QSMNwS8RolhIE9sA2MbE?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 31 Jul 2026 15:41:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "GitHub AI Agent 翻车：攻击者不用黑客技术，只写一句话就能窃取数据",
       "url": "https://www.infoq.cn/article/u4rDqep8zVWUJsqVoQ23?utm_source=rss&utm_medium=article",
       "hot": "Fri, 31 Jul 2026 12:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "盯盘虾：让龙虾替你看盘！用skills实现财报抓取+异动告警自动化",
       "url": "https://www.infoq.cn/video/Emku5bsTgvr3BWj12gIM?utm_source=rss&utm_medium=article",
       "hot": "Fri, 31 Jul 2026 11:49:34 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "家教虾：提分不愁！用skills完成海量课件解析、智能出题，助力作业辅助与考",
       "url": "https://www.infoq.cn/video/U3E6bCFP9fgMYpEwxhKC?utm_source=rss&utm_medium=article",
       "hot": "Fri, 31 Jul 2026 11:49:28 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "AI浪潮中，如何定义自己的“确定性”之旅？",
       "url": "https://www.infoq.cn/article/PVdaiz9gRseK6wx54ajX?utm_source=rss&utm_medium=article",
       "hot": "Fri, 31 Jul 2026 11:39:44 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "微软、Meta 同日交财报：小扎把现金流烧到只剩7.84亿美元，纳德拉靠 Azure 赚疯了",
       "url": "https://www.infoq.cn/article/cWloUAofMHCLHpvscihh?utm_source=rss&utm_medium=article",
       "hot": "Fri, 31 Jul 2026 10:53:15 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "翁荔被爆重返OpenAI！两天前因身体原因从Thinking Machines Lab离职",
-      "url": "https://www.infoq.cn/article/im3GxWtxYPZpkodNRgVQ?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 31 Jul 2026 10:48:52 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "记者对话：请回答 WAIC 2026——期待 vs 现实",
-      "url": "https://www.infoq.cn/video/v68qTCHUc29dEl8LBmr5?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 31 Jul 2026 10:11:55 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "让团队记忆在共建中完善： TencentDB Agent Memory 的开源之路 | 腾讯云数据库 DBTalk",
-      "url": "https://www.infoq.cn/video/ylsc5EZdSya6DbkWwgdU?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 31 Jul 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "企业级 AI 新解法：从“第一性原理”到“5A路径”｜对话观远数据张进",
-      "url": "https://www.infoq.cn/article/pvr2j4G3vxdy4Od9RGPb?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 31 Jul 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "DataBuddy：数据语义驱动的企业 Agent Runtime 设计与落地｜AICon深圳",
-      "url": "https://www.infoq.cn/article/M9l2eJdhQkbruQlETEbt?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 31 Jul 2026 10:00:00 GMT"
     }
   ]
 }

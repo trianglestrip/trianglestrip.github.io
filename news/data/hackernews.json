@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-31T07:27:45+00:00",
+  "updated_at": "2026-07-31T10:04:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "The session you cannot take with you",
       "url": "https://earendil.com/posts/session-portability/",
-      "hot": "169"
+      "hot": "339"
     },
     {
       "rank": 2,
-      "title": "JEP 401: Value Objects (Preview) merged to OpenJDK master",
-      "url": "https://github.com/openjdk/jdk/pull/31120",
-      "hot": "52"
+      "title": "Danube's record low levels force shutdown of Hungary's only nuclear plant",
+      "url": "https://www.bbc.com/news/articles/cn0nqv05g0do",
+      "hot": "37"
     },
     {
       "rank": 3,
-      "title": "Stacked PRs are now live on GitHub",
-      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
-      "hot": "603"
+      "title": "JEP 401: Value Objects (Preview) merged to OpenJDK master",
+      "url": "https://github.com/openjdk/jdk/pull/31120",
+      "hot": "112"
     },
     {
       "rank": 4,
-      "title": "Where USB Memory Sticks are Born (2013)",
-      "url": "https://www.bunniestudios.com/blog/2013/where-usb-memory-sticks-are-born/",
-      "hot": "38"
+      "title": "DeepSeek-V4-Flash Update",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "hot": "273"
     },
     {
       "rank": 5,
-      "title": "DeepSeek-V4-Flash Update",
-      "url": "https://api-docs.deepseek.com/updates/",
-      "hot": "67"
+      "title": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
+      "url": "https://blog.google/security/chrome-stronger-with-every-update/",
+      "hot": "66"
     },
     {
       "rank": 6,
-      "title": "I flagged two research papers for fake authors and both were accepted as orals",
-      "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
-      "hot": "163"
+      "title": "Stacked PRs are now live on GitHub",
+      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "hot": "646"
     },
     {
       "rank": 7,
-      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
-      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
-      "hot": "538"
+      "title": "Show HN: Gander, an Android file viewer that asks for no permissions at all",
+      "url": "https://github.com/mokshablr/gander",
+      "hot": "57"
     },
     {
       "rank": 8,
       "title": "Show HN: What should the GUI for AI agents look like?",
       "url": "https://marbleos.com/demo",
-      "hot": "18"
+      "hot": "54"
     },
     {
       "rank": 9,
-      "title": "The mean means nothing: data visualization to debug a latency problem",
-      "url": "https://fzakaria.com/2026/07/27/the-mean-means-nothing",
-      "hot": "17"
+      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "hot": "560"
     },
     {
       "rank": 10,
-      "title": "The Religion of Speed",
-      "url": "https://graybeard.ing/the-religion-of-speed/",
-      "hot": "103"
+      "title": "I flagged two research papers for fake authors and both were accepted as orals",
+      "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
+      "hot": "195"
     }
   ]
 }
