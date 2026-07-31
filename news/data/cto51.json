@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-31T04:37:53+00:00",
+  "updated_at": "2026-07-31T07:27:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "让应用听懂中文——用 HarmonyOS Core Speech Kit 实现端侧语音识别",
+      "url": "https://ost.51cto.com/posts/54291",
+      "hot": "语音是最高效的人机交互方式之一：一句话就能说完的文字，用键盘要点十几次屏幕。HarmonyOS把语音识别做进了系统底层，开发者调几个API就能..."
+    },
+    {
+      "rank": 2,
       "title": "PostgreSQL 表膨胀完整治理指南：Vacuum 原理、阻塞根因、应急处理与长期预防方案",
       "url": "https://www.51cto.com/article/851467.html",
       "hot": "本文基于官方文档+大量线上故障复盘，完整拆解表膨胀形成逻辑、五大核心诱因、分级应急止损方案、无锁空间回收实操流程。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "告警救火、薪资触顶！传统运维出路在哪？AIOps 开启运维下一代晋升通道",
       "url": "https://www.51cto.com/article/851514.html",
       "hot": "能否跟上技术迭代节奏，直接决定未来 5 年你的薪资上限与职业选择权。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "直接优化策略：策略梯度、Actor-Critic、Advantage 与重要性采样",
       "url": "https://www.51cto.com/article/851511.html",
       "hot": "值函数方法的基本套路是：先学 或，再根据它们诱导出策略。而策略梯度方法走的是另一条路：直接把策略写成带参数的可导函数，然后直接优化它。这在连续动作、复杂策略结构以及需要随机策略的场景里尤其重要。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Claude Code 越聪明越烧钱？先检查后端有没有让它猜",
       "url": "https://www.51cto.com/article/851510.html",
       "hot": "状态散在十几个命令里，报错只说“权限不足”，工具定义一股脑塞进上下文。模型只能先猜、再试、再读日志、再改文件。每次返工，越来越长的会话又要重新送进模型。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "GPT-5.6一夜爆砍80%，一元屠杀最贵Claude！",
       "url": "https://www.51cto.com/article/851509.html",
       "hot": "GPT-5.6分三档：Sol是旗舰，Terra是日常平衡，Luna是最快最便宜那个。这次屠刀砍的是后两位。新旧一比更直观。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "循环里的 Task.Run 与无界 Parallel.ForEach：离生产事故只差一步",
       "url": "https://www.51cto.com/article/851508.html",
       "hot": "如果你在循环里用 Task.Run()，或放任 Parallel.ForEach() 无界并行，你离一次非常糟糕的生产部署，常常只差一组真实流量。 读完本文，你能直接带走三样东西：这两种写法真正炸掉的原因、可落地的限流/批处理并发模板、以及一套上线前能自查的清单。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "OpenAI突然杀疯！GPT 5.6系列价格最高暴降80%，AI竟开始自己改代码实现原地飞升",
       "url": "https://www.51cto.com/article/851499.html",
       "hot": "按照OpenAI说法是真正无限使用且极其廉价的AI时代正在加速到来。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "ChatGPT突发封杀令！全球AI写手一夜断粮",
       "url": "https://www.51cto.com/article/851506.html",
       "hot": "如今，这场争议已经动摇了用户对AI写作的基本预期。模型未必越写越好，提示词也不再长期有效。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "OpenAI公布秘术：两个设置，GPT-5.6 Sol ARC-AGI-3成绩暴涨三倍！",
       "url": "https://www.51cto.com/article/851461.html",
       "hot": "在官方测试框架下，GPT-5.6 Sol 在 ARC-AGI-3 公共测试集上的得分只有 13.3%；但换用与 ChatGPT、Codex 更接近的运行方式后，得分直接提升至 38.3%，约提升 3 倍。"
-    },
-    {
-      "rank": 10,
-      "title": "推荐系统只会「猜你喜欢」，却未必「听你的」？我们用多智能体给黑盒推荐做了一次外部可控性体检",
-      "url": "https://www.51cto.com/article/851460.html",
-      "hot": "推荐系统长期以来主要被视为一个预测问题：根据用户过去的行为，判断他下一步可能喜欢什么。"
     }
   ]
 }
