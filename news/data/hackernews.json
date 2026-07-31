@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-31T12:08:41+00:00",
+  "updated_at": "2026-07-31T14:31:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The session you cannot take with you",
-      "url": "https://earendil.com/posts/session-portability/",
-      "hot": "473"
+      "title": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-ga",
+      "hot": "242"
     },
     {
       "rank": 2,
-      "title": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
-      "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-ga",
-      "hot": "81"
+      "title": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
+      "url": "https://blog.google/security/chrome-stronger-with-every-update/",
+      "hot": "266"
     },
     {
       "rank": 3,
-      "title": "JEP 401: Value Objects (Preview) merged to OpenJDK master",
-      "url": "https://github.com/openjdk/jdk/pull/31120",
-      "hot": "147"
-    },
-    {
-      "rank": 4,
-      "title": "DeepSeek-V4-Flash Update",
-      "url": "https://api-docs.deepseek.com/updates/",
-      "hot": "369"
-    },
-    {
-      "rank": 5,
-      "title": "Stacked PRs are now live on GitHub",
-      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
-      "hot": "682"
-    },
-    {
-      "rank": 6,
-      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
-      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "title": "The session you cannot take with you",
+      "url": "https://earendil.com/posts/session-portability/",
       "hot": "575"
     },
     {
+      "rank": 4,
+      "title": "JEP 401: Value Objects (Preview) merged to OpenJDK master",
+      "url": "https://github.com/openjdk/jdk/pull/31120",
+      "hot": "183"
+    },
+    {
+      "rank": 5,
+      "title": "Show HN: Gander, an Android file viewer that asks for no permissions at all",
+      "url": "https://github.com/mokshablr/gander",
+      "hot": "134"
+    },
+    {
+      "rank": 6,
+      "title": "Stacked PRs are now live on GitHub",
+      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "hot": "727"
+    },
+    {
       "rank": 7,
-      "title": "I flagged two research papers for fake authors and both were accepted as orals",
-      "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
-      "hot": "224"
+      "title": "The End of an Era",
+      "url": "https://hughhowey.com/the-end-of-an-era/",
+      "hot": "204"
     },
     {
       "rank": 8,
-      "title": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
-      "url": "https://blog.google/security/chrome-stronger-with-every-update/",
-      "hot": "147"
+      "title": "Situational Awareness Down 67% in July in AI Stock Rout",
+      "url": "https://www.wsj.com/finance/investing/situational-awareness-down-67-in-july-in-ai-stock-rout-cd19901f",
+      "hot": "55"
     },
     {
       "rank": 9,
-      "title": "Show HN: Gander, an Android file viewer that asks for no permissions at all",
-      "url": "https://github.com/mokshablr/gander",
-      "hot": "95"
+      "title": "DeepSeek-V4-Flash Update",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "hot": "451"
     },
     {
       "rank": 10,
-      "title": "IMAX vs. IMAX 70mm: The difference between these two cinema formats",
-      "url": "https://www.engadget.com/2220571/differences-between-imax-70mm/",
-      "hot": "14"
+      "title": "I flagged two research papers for fake authors and both were accepted as orals",
+      "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
+      "hot": "250"
     }
   ]
 }
