@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-07-31T01:11:22+00:00",
+  "updated_at": "2026-07-31T04:37:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS｜Natural Language Kit 学习实录01：从分词结果到实体字段解析",
-      "url": "https://ost.51cto.com/posts/54166",
-      "hot": "我是在翻HarmonyOS的AI类API时看到NaturalLanguageKit的。起初只看名称，我以为它会包含情感分析、文本摘要、意图识别之类的能力。真正把目..."
+      "title": "PostgreSQL 表膨胀完整治理指南：Vacuum 原理、阻塞根因、应急处理与长期预防方案",
+      "url": "https://www.51cto.com/article/851467.html",
+      "hot": "本文基于官方文档+大量线上故障复盘，完整拆解表膨胀形成逻辑、五大核心诱因、分级应急止损方案、无锁空间回收实操流程。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 6.1｜NearLink ArkTS 实战指南：从设备发现到会话通信的项目落地",
-      "url": "https://ost.51cto.com/posts/54165",
-      "hot": "我最近在项目里接了一段NearLink能力，最开始的目标其实很朴素：让手机在近距离下快速发现周边设备，点一下就能建立连接，再把一小段控制指..."
+      "title": "告警救火、薪资触顶！传统运维出路在哪？AIOps 开启运维下一代晋升通道",
+      "url": "https://www.51cto.com/article/851514.html",
+      "hot": "能否跟上技术迭代节奏，直接决定未来 5 年你的薪资上限与职业选择权。"
     },
     {
       "rank": 3,
-      "title": "为什么越来越多人用Apache Tika？",
-      "url": "https://www.51cto.com/article/851363.html",
-      "hot": "企业中超过80%的数据以文档形式存在，格式五花八门：PDF、Word、Excel、PPT、图片、邮件……如果每个格式都用一套独立的解析方案，光维护成本就能让团队崩溃。"
+      "title": "直接优化策略：策略梯度、Actor-Critic、Advantage 与重要性采样",
+      "url": "https://www.51cto.com/article/851511.html",
+      "hot": "值函数方法的基本套路是：先学 或，再根据它们诱导出策略。而策略梯度方法走的是另一条路：直接把策略写成带参数的可导函数，然后直接优化它。这在连续动作、复杂策略结构以及需要随机策略的场景里尤其重要。"
     },
     {
       "rank": 4,
-      "title": "AI 如何理解流体力学？从一个点涡问题看大模型的科学推理能力",
-      "url": "https://www.51cto.com/article/851362.html",
-      "hot": "最近我用一个经典点涡问题，系统测试了一次大模型的科学推理能力。结果很有意思：AI 不只是能把题算出来，还能一步步完成从速度场、涡量、流体微团变形，到有限变形分解的完整分析链条。"
+      "title": "Claude Code 越聪明越烧钱？先检查后端有没有让它猜",
+      "url": "https://www.51cto.com/article/851510.html",
+      "hot": "状态散在十几个命令里，报错只说“权限不足”，工具定义一股脑塞进上下文。模型只能先猜、再试、再读日志、再改文件。每次返工，越来越长的会话又要重新送进模型。"
     },
     {
       "rank": 5,
-      "title": "CSS-in-JS 要凉了吗？这个新项目给出了答案",
-      "url": "https://www.51cto.com/article/851360.html",
-      "hot": "简单理解，dx-styles 是一个零运行时 CSS-in-TS 方案，目标让开发者继续享受 CSS 写法 + TypeScript 类型 + 组件化体验，但不要把运行时代码发送给用户。"
+      "title": "GPT-5.6一夜爆砍80%，一元屠杀最贵Claude！",
+      "url": "https://www.51cto.com/article/851509.html",
+      "hot": "GPT-5.6分三档：Sol是旗舰，Terra是日常平衡，Luna是最快最便宜那个。这次屠刀砍的是后两位。新旧一比更直观。"
     },
     {
       "rank": 6,
-      "title": "C++20 协程：你以为很难，其实看完这篇就懂了",
-      "url": "https://www.51cto.com/article/851356.html",
-      "hot": "C++20协程的设计非常底层，标准只提供了框架（promise_type、coroutine_handle、Awaitable），具体的上层封装需要自己写或用第三方库（比如 cppcoro、Asio的协程支持等）。"
+      "title": "循环里的 Task.Run 与无界 Parallel.ForEach：离生产事故只差一步",
+      "url": "https://www.51cto.com/article/851508.html",
+      "hot": "如果你在循环里用 Task.Run()，或放任 Parallel.ForEach() 无界并行，你离一次非常糟糕的生产部署，常常只差一组真实流量。 读完本文，你能直接带走三样东西：这两种写法真正炸掉的原因、可落地的限流/批处理并发模板、以及一套上线前能自查的清单。"
     },
     {
       "rank": 7,
-      "title": "当KimiK3冲向 2.8 万亿，医院却停在 32B：Agent 真正难的是变小",
-      "url": "https://www.51cto.com/article/851354.html",
-      "hot": "我越来越确定，未来医疗 Agent 最难的工作，会发生在从 2.8T 缩回 32B 的路上：见过前沿模型的能力以后，能不能把它压缩成一套小模型也能遵守、系统能够验证、医院愿意承担责任的流程。"
+      "title": "OpenAI突然杀疯！GPT 5.6系列价格最高暴降80%，AI竟开始自己改代码实现原地飞升",
+      "url": "https://www.51cto.com/article/851499.html",
+      "hot": "按照OpenAI说法是真正无限使用且极其廉价的AI时代正在加速到来。"
     },
     {
       "rank": 8,
-      "title": "从 175 人到 30 人：AI Native 组织的尽头，是降本增效",
-      "url": "https://www.51cto.com/article/851344.html",
-      "hot": "我一直觉得，AI 带来的组织变革势在必行。可过去听到的大多是“全员使用 AI”“人效提升 30%”之类的口号。昨晚看到的东西彻底得多：他们没有给每个员工发一个 AI 助手，而是把公司产研交付的上下文、任务分配、验收和绩效，装进了一套闭环系统里。"
+      "title": "ChatGPT突发封杀令！全球AI写手一夜断粮",
+      "url": "https://www.51cto.com/article/851506.html",
+      "hot": "如今，这场争议已经动摇了用户对AI写作的基本预期。模型未必越写越好，提示词也不再长期有效。"
     },
     {
       "rank": 9,
-      "title": "史上首次完全自主 AI Agent 网络攻击：利用 0Day 漏洞渗透 Hugging Face",
-      "url": "https://www.51cto.com/article/851342.html",
-      "hot": "根据Hugging Face的取证重建，此次攻击在约四天半的时间内产生了约17,600次攻击者操作，这些操作被分为约6,280个行为簇。"
+      "title": "OpenAI公布秘术：两个设置，GPT-5.6 Sol ARC-AGI-3成绩暴涨三倍！",
+      "url": "https://www.51cto.com/article/851461.html",
+      "hot": "在官方测试框架下，GPT-5.6 Sol 在 ARC-AGI-3 公共测试集上的得分只有 13.3%；但换用与 ChatGPT、Codex 更接近的运行方式后，得分直接提升至 38.3%，约提升 3 倍。"
     },
     {
       "rank": 10,
-      "title": "火山引擎开源 Agent 驱动的搜索自迭代技术",
-      "url": "https://www.51cto.com/article/851341.html",
-      "hot": "我们将拆解这套闭环如何运转，以及背后的 SPA 策略优化框架，如何在有限搜索和标注预算下，把更多实验机会留给真正有希望的策略。"
+      "title": "推荐系统只会「猜你喜欢」，却未必「听你的」？我们用多智能体给黑盒推荐做了一次外部可控性体检",
+      "url": "https://www.51cto.com/article/851460.html",
+      "hot": "推荐系统长期以来主要被视为一个预测问题：根据用户过去的行为，判断他下一步可能喜欢什么。"
     }
   ]
 }
