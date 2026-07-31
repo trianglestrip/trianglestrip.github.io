@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-07-31T14:31:49+00:00",
+  "updated_at": "2026-07-31T17:55:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
-      "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-ga",
-      "hot": "242"
+      "title": "Elevators",
+      "url": "https://john.fun/elevators",
+      "hot": "366"
     },
     {
       "rank": 2,
-      "title": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
-      "url": "https://blog.google/security/chrome-stronger-with-every-update/",
-      "hot": "266"
+      "title": "Big Food vs. the People",
+      "url": "https://www.lighthousereports.com/investigation/big-food-vs-the-people/",
+      "hot": "78"
     },
     {
       "rank": 3,
-      "title": "The session you cannot take with you",
-      "url": "https://earendil.com/posts/session-portability/",
-      "hot": "575"
+      "title": "Getting 25 Gbps Thunderbolt Ethernet on My Mac Studio",
+      "url": "https://www.jeffgeerling.com/blog/2026/getting-25g-ethernet-mac-thunderbolt/",
+      "hot": "35"
     },
     {
       "rank": 4,
-      "title": "JEP 401: Value Objects (Preview) merged to OpenJDK master",
-      "url": "https://github.com/openjdk/jdk/pull/31120",
-      "hot": "183"
+      "title": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-flash",
+      "hot": "424"
     },
     {
       "rank": 5,
-      "title": "Show HN: Gander, an Android file viewer that asks for no permissions at all",
-      "url": "https://github.com/mokshablr/gander",
-      "hot": "134"
+      "title": "Algorithms on billion-scale graph using 10GB RAM: I love DataFusion",
+      "url": "https://semyonsinchenko.github.io/ssinchenko/post/datafusion-graphs-cc-2/",
+      "hot": "33"
     },
     {
       "rank": 6,
-      "title": "Stacked PRs are now live on GitHub",
-      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
-      "hot": "727"
+      "title": "DeepSeek-V4-Flash Update",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "hot": "563"
     },
     {
       "rank": 7,
-      "title": "The End of an Era",
-      "url": "https://hughhowey.com/the-end-of-an-era/",
-      "hot": "204"
+      "title": "A GTK4 SSH-askpass in Zig",
+      "url": "https://xn--gckvb8fzb.com/a-gtk4-ssh-askpass-in-zig/",
+      "hot": "34"
     },
     {
       "rank": 8,
-      "title": "Situational Awareness Down 67% in July in AI Stock Rout",
-      "url": "https://www.wsj.com/finance/investing/situational-awareness-down-67-in-july-in-ai-stock-rout-cd19901f",
-      "hot": "55"
+      "title": "Arch Linux disables AUR package adoption",
+      "url": "https://lwn.net/Articles/1086489/",
+      "hot": "70"
     },
     {
       "rank": 9,
-      "title": "DeepSeek-V4-Flash Update",
-      "url": "https://api-docs.deepseek.com/updates/",
-      "hot": "451"
+      "title": "13 Models and 4 Agents on SWE Tasks: Go, Java, Python, Rust, TS",
+      "url": "https://swe-rebench.com",
+      "hot": "19"
     },
     {
       "rank": 10,
-      "title": "I flagged two research papers for fake authors and both were accepted as orals",
-      "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
-      "hot": "250"
+      "title": "The End of an Era",
+      "url": "https://hughhowey.com/the-end-of-an-era/",
+      "hot": "308"
     }
   ]
 }
