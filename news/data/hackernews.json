@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-01T19:32:00+00:00",
+  "updated_at": "2026-08-01T22:15:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "NetBSD 11.0 Released",
-      "url": "https://blog.netbsd.org/tnf/entry/netbsd_11_0_released",
-      "hot": "83"
+      "title": "The Silicon Valley Founder Meat Grinder",
+      "url": "https://zaksa.zip/blog/silicon-valley-founder-meat-grinder/",
+      "hot": "134"
     },
     {
       "rank": 2,
-      "title": "Postmortem for Kernel Soundness Bug #14576",
-      "url": "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/",
-      "hot": "33"
+      "title": "How Google helped destroy adoption of RSS feeds (2023)",
+      "url": "https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds",
+      "hot": "216"
     },
     {
       "rank": 3,
-      "title": "The Art of 64-bit Assembly",
-      "url": "https://nostarch.com/art-64-bit-assembly-v2",
-      "hot": "121"
+      "title": "Diátaxis",
+      "url": "https://diataxis.fr/",
+      "hot": "66"
     },
     {
       "rank": 4,
-      "title": "Kaisel – Routes as Values. Dart 3 Native Router for Flutter",
-      "url": "https://kaisel.dev/",
-      "hot": "29"
+      "title": "Seedance 2.5",
+      "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+      "hot": "23"
     },
     {
       "rank": 5,
-      "title": "Explorative modeling: Train on the best of K guesses",
-      "url": "https://alexiglad.github.io/blog/2026/explorative_modeling/",
-      "hot": "51"
+      "title": "Postmortem for Kernel Soundness Bug #14576",
+      "url": "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/",
+      "hot": "88"
     },
     {
       "rank": 6,
-      "title": "Pgtestdb's template cloning approach to testing is fast",
-      "url": "https://brandur.org/fragments/pgtestdb",
-      "hot": "40"
+      "title": "But can your calculator run Linux?",
+      "url": "https://raymii.org/s/articles/But_can_your_calculator_run_Linux.html",
+      "hot": "34"
     },
     {
       "rank": 7,
-      "title": "RipGrep musl binaries occasionally segfault during very-large searches",
-      "url": "https://github.com/BurntSushi/ripgrep/issues/3494",
-      "hot": "209"
+      "title": "The Art of 64-bit Assembly",
+      "url": "https://nostarch.com/art-64-bit-assembly-v2",
+      "hot": "161"
     },
     {
       "rank": 8,
-      "title": "Cursor removed cost information from the usage page and CSV export",
-      "url": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153",
-      "hot": "217"
+      "title": "Just because a game is on disc doesn't mean it will work in the future",
+      "url": "https://arstechnica.com/gaming/2026/07/the-disc-is-not-the-game-physical-releases-increasingly-require-extra-downloads/",
+      "hot": "53"
     },
     {
       "rank": 9,
-      "title": "A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention",
-      "url": "https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention/",
-      "hot": "200"
+      "title": "CISA Alert: Water Sector PLC Targeting",
+      "url": "https://censys.com/blog/cisa-alert-water-tower-plc-targeting/",
+      "hot": "29"
     },
     {
       "rank": 10,
-      "title": "Tell HN: I hate your fuzzy search",
-      "url": "https://news.ycombinator.com/item?id=49136990",
-      "hot": "54"
+      "title": "NetBSD 11.0",
+      "url": "https://blog.netbsd.org/tnf/entry/netbsd_11_0_released",
+      "hot": "170"
     }
   ]
 }
