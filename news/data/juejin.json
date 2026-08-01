@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-01T09:13:58+00:00",
+  "updated_at": "2026-08-01T11:49:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Flutter UI 解耦 - 天下大势，合久必分， 分久必合",
       "url": "https://juejin.cn/post/7667440437864300544",
-      "hot": "666"
+      "hot": "675"
     },
     {
       "rank": 2,
       "title": "为什么越来越多人用Apache Tika？",
       "url": "https://juejin.cn/post/7667853684410302490",
-      "hot": "549"
+      "hot": "558"
     },
     {
       "rank": 3,
-      "title": "工作 5 年后，决定你薪资上限的究竟是什么？",
-      "url": "https://juejin.cn/post/7667750500683120675",
-      "hot": "513"
+      "title": "KotlinLLM 开源 ，一个可以在运行时自己生成永久 Kotlin 代码的 Agent 库",
+      "url": "https://juejin.cn/post/7667863898348126271",
+      "hot": "414"
     },
     {
       "rank": 4,
-      "title": "KotlinLLM 开源 ，一个可以在运行时自己生成永久 Kotlin 代码的 Agent 库",
-      "url": "https://juejin.cn/post/7667863898348126271",
-      "hot": "405"
+      "title": "Nest.js 和 Spring Boot 为何如此像？写给前端转 Java 的同学",
+      "url": "https://juejin.cn/post/7667863898348093503",
+      "hot": "414"
     },
     {
       "rank": 5,
-      "title": "Nest.js 和 Spring Boot 为何如此像？写给前端转 Java 的同学",
-      "url": "https://juejin.cn/post/7667863898348093503",
-      "hot": "405"
+      "title": "MCP协议第5次更新，从打电话到微信聊天的巨大变革",
+      "url": "https://juejin.cn/post/7668204673984135178",
+      "hot": "369"
     },
     {
       "rank": 6,
-      "title": "别再用 nohup java -jar 了：Spring Boot 生产环境该怎么守护？",
-      "url": "https://juejin.cn/post/7667762010876936192",
+      "title": "Flutter Starling : 用 Swift和 Flutter 写了一个 Linux 桌面系统，震惊我一整年",
+      "url": "https://juejin.cn/post/7668191994554073142",
       "hot": "369"
     },
     {
       "rank": 7,
-      "title": "MCP协议第5次更新，从打电话到微信聊天的巨大变革",
-      "url": "https://juejin.cn/post/7668204673984135178",
-      "hot": "360"
+      "title": "我的AI工作流整理【个人向】",
+      "url": "https://juejin.cn/post/7668309258707386378",
+      "hot": "306"
     },
     {
       "rank": 8,
-      "title": "Flutter Starling : 用 Swift和 Flutter 写了一个 Linux 桌面系统，震惊我一整年",
-      "url": "https://juejin.cn/post/7668191994554073142",
-      "hot": "360"
-    },
-    {
-      "rank": 9,
       "title": "Android R8 为什么可以让 Kotlin 协程提速 2 倍？",
       "url": "https://juejin.cn/post/7667459437695778870",
       "hot": "306"
     },
     {
+      "rank": 9,
+      "title": "手把手书写你的第一个 AI Skill：从原则到工程化",
+      "url": "https://juejin.cn/post/7667440437864448000",
+      "hot": "225"
+    },
+    {
       "rank": 10,
-      "title": "我的AI工作流整理【个人向】",
-      "url": "https://juejin.cn/post/7668309258707386378",
-      "hot": "297"
+      "title": "Android 面试系列：Retrofit 的 suspend 是如何实现的？",
+      "url": "https://juejin.cn/post/7667873177859047470",
+      "hot": "198"
     }
   ]
 }
