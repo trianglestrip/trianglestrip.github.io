@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-01T16:14:50+00:00",
+  "updated_at": "2026-08-01T19:32:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The Art of 64-bit Assembly",
-      "url": "https://nostarch.com/art-64-bit-assembly-v2",
-      "hot": "56"
+      "title": "NetBSD 11.0 Released",
+      "url": "https://blog.netbsd.org/tnf/entry/netbsd_11_0_released",
+      "hot": "83"
     },
     {
       "rank": 2,
-      "title": "GitHub has alternatives, but no replacement",
-      "url": "https://lalitm.com/post/github-alternatives/",
-      "hot": "22"
+      "title": "Postmortem for Kernel Soundness Bug #14576",
+      "url": "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/",
+      "hot": "33"
     },
     {
       "rank": 3,
-      "title": "RipGrep musl binaries occasionally segfault during very-large searches",
-      "url": "https://github.com/BurntSushi/ripgrep/issues/3494",
-      "hot": "146"
+      "title": "The Art of 64-bit Assembly",
+      "url": "https://nostarch.com/art-64-bit-assembly-v2",
+      "hot": "121"
     },
     {
       "rank": 4,
-      "title": "Cursor removed cost information from the usage page and CSV export",
-      "url": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153",
-      "hot": "13"
+      "title": "Kaisel – Routes as Values. Dart 3 Native Router for Flutter",
+      "url": "https://kaisel.dev/",
+      "hot": "29"
     },
     {
       "rank": 5,
-      "title": "A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention",
-      "url": "https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention/",
-      "hot": "117"
+      "title": "Explorative modeling: Train on the best of K guesses",
+      "url": "https://alexiglad.github.io/blog/2026/explorative_modeling/",
+      "hot": "51"
     },
     {
       "rank": 6,
-      "title": "Charlie Stross – On the non-use of AI in my writing process",
-      "url": "https://www.antipope.org/charlie/blog-static/2026/08/on-the-non-use-of-ai-in-my-wri.html",
-      "hot": "32"
+      "title": "Pgtestdb's template cloning approach to testing is fast",
+      "url": "https://brandur.org/fragments/pgtestdb",
+      "hot": "40"
     },
     {
       "rank": 7,
-      "title": "Indexing the Data Lake for Online Point Queries",
-      "url": "https://engineering.atspotify.com/2026/7/indexing-the-data-lake-for-online-point-queries",
-      "hot": "7"
+      "title": "RipGrep musl binaries occasionally segfault during very-large searches",
+      "url": "https://github.com/BurntSushi/ripgrep/issues/3494",
+      "hot": "209"
     },
     {
       "rank": 8,
-      "title": "Elevators",
-      "url": "https://john.fun/elevators",
-      "hot": "1491"
+      "title": "Cursor removed cost information from the usage page and CSV export",
+      "url": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153",
+      "hot": "217"
     },
     {
       "rank": 9,
-      "title": "Crystal Wars – turn-based strategy on a fresh Voronoi map every match",
-      "url": "https://play.crystalwars.io",
-      "hot": "4"
+      "title": "A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention",
+      "url": "https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention/",
+      "hot": "200"
     },
     {
       "rank": 10,
-      "title": "Manual: •.,:;?·",
-      "url": "https://type.today/en/journal/dots",
-      "hot": "85"
+      "title": "Tell HN: I hate your fuzzy search",
+      "url": "https://news.ycombinator.com/item?id=49136990",
+      "hot": "54"
     }
   ]
 }

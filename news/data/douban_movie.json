@@ -1,20 +1,20 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-01T16:14:31+00:00",
+  "updated_at": "2026-08-01T19:31:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "八仙！",
-      "url": "https://movie.douban.com/subject/36882191/",
-      "hot": "评分 8.2"
-    },
-    {
-      "rank": 2,
       "title": "蜘蛛侠：崭新之日",
       "url": "https://movie.douban.com/subject/36246195/",
       "hot": "评分 7.8"
+    },
+    {
+      "rank": 2,
+      "title": "八仙！",
+      "url": "https://movie.douban.com/subject/36882191/",
+      "hot": "评分 8.2"
     },
     {
       "rank": 3,
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
+      "title": "年会不能停！2",
+      "url": "https://movie.douban.com/subject/36850814/",
+      "hot": "评分 7.0"
+    },
+    {
+      "rank": 5,
       "title": "功夫女足",
       "url": "https://movie.douban.com/subject/36452545/",
       "hot": "评分 6.4"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "群星闪耀时",
       "url": "https://movie.douban.com/subject/35875462/",
       "hot": "评分 7.4"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "雀骨",
       "url": "https://movie.douban.com/subject/37317368/",
       "hot": "评分 6.7"
     },
     {
-      "rank": 7,
-      "title": "这一秒过火",
-      "url": "https://movie.douban.com/subject/37096230/",
-      "hot": "评分 5.0"
-    },
-    {
       "rank": 8,
-      "title": "野狗骨头",
-      "url": "https://movie.douban.com/subject/36618951/",
-      "hot": "评分 6.9"
-    },
-    {
-      "rank": 9,
       "title": "寒战1994",
       "url": "https://movie.douban.com/subject/36857924/",
       "hot": "评分 7.0"
     },
     {
+      "rank": 9,
+      "title": "这一秒过火",
+      "url": "https://movie.douban.com/subject/37096230/",
+      "hot": "评分 5.0"
+    },
+    {
       "rank": 10,
-      "title": "年会不能停！2",
-      "url": "https://movie.douban.com/subject/36850814/",
-      "hot": "评分 7.0"
+      "title": "野狗骨头",
+      "url": "https://movie.douban.com/subject/36618951/",
+      "hot": "评分 6.9"
     }
   ]
 }
