@@ -1,25 +1,25 @@
 {
   "source": "taptap",
   "title": "TapTap",
-  "updated_at": "2026-08-01T01:09:45+00:00",
+  "updated_at": "2026-08-01T04:32:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "明日方舟",
+      "url": "https://www.taptap.cn/app/70253",
+      "hot": ""
+    },
+    {
+      "rank": 2,
       "title": "我的世界：移动版",
       "url": "https://www.taptap.cn/app/43639",
       "hot": ""
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Phigros测试",
       "url": "https://www.taptap.cn/app/165287",
-      "hot": ""
-    },
-    {
-      "rank": 3,
-      "title": "蛋仔派对",
-      "url": "https://www.taptap.cn/app/206776",
       "hot": ""
     },
     {
@@ -30,8 +30,8 @@
     },
     {
       "rank": 5,
-      "title": "明日方舟",
-      "url": "https://www.taptap.cn/app/70253",
+      "title": "蛋仔派对",
+      "url": "https://www.taptap.cn/app/206776",
       "hot": ""
     },
     {
@@ -42,26 +42,26 @@
     },
     {
       "rank": 7,
-      "title": "黄油猫",
-      "url": "https://www.taptap.cn/app/708247",
-      "hot": ""
-    },
-    {
-      "rank": 8,
       "title": "香肠派对",
       "url": "https://www.taptap.cn/app/58881",
       "hot": ""
     },
     {
+      "rank": 8,
+      "title": "黄油猫",
+      "url": "https://www.taptap.cn/app/708247",
+      "hot": ""
+    },
+    {
       "rank": 9,
-      "title": "TapAim测试",
-      "url": "https://www.taptap.cn/app/815993",
+      "title": "遗忘之海",
+      "url": "https://www.taptap.cn/app/755604",
       "hot": ""
     },
     {
       "rank": 10,
-      "title": "遗忘之海",
-      "url": "https://www.taptap.cn/app/755604",
+      "title": "TapAim测试",
+      "url": "https://www.taptap.cn/app/815993",
       "hot": ""
     }
   ]
