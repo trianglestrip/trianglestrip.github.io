@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-01T07:04:40+00:00",
+  "updated_at": "2026-08-01T09:13:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "解剖 Claude Code：逆向工程视角下的入口架构分析",
-      "url": "https://juejin.cn/post/7667096004731846682",
-      "hot": "2457"
+      "title": "Flutter UI 解耦 - 天下大势，合久必分， 分久必合",
+      "url": "https://juejin.cn/post/7667440437864300544",
+      "hot": "666"
     },
     {
       "rank": 2,
-      "title": "上线一个人静态网站需要多少钱，难不难？",
-      "url": "https://juejin.cn/post/7666490925375815718",
-      "hot": "1161"
+      "title": "为什么越来越多人用Apache Tika？",
+      "url": "https://juejin.cn/post/7667853684410302490",
+      "hot": "549"
     },
     {
       "rank": 3,
-      "title": "Flutter UI 解耦 - 天下大势，合久必分， 分久必合",
-      "url": "https://juejin.cn/post/7667440437864300544",
-      "hot": "657"
+      "title": "工作 5 年后，决定你薪资上限的究竟是什么？",
+      "url": "https://juejin.cn/post/7667750500683120675",
+      "hot": "513"
     },
     {
       "rank": 4,
-      "title": "为什么越来越多人用Apache Tika？",
-      "url": "https://juejin.cn/post/7667853684410302490",
-      "hot": "540"
+      "title": "KotlinLLM 开源 ，一个可以在运行时自己生成永久 Kotlin 代码的 Agent 库",
+      "url": "https://juejin.cn/post/7667863898348126271",
+      "hot": "405"
     },
     {
       "rank": 5,
-      "title": "终于在今天入选了 Gitee GVP，这真值得庆祝~",
-      "url": "https://juejin.cn/post/7667399814504202275",
-      "hot": "504"
+      "title": "Nest.js 和 Spring Boot 为何如此像？写给前端转 Java 的同学",
+      "url": "https://juejin.cn/post/7667863898348093503",
+      "hot": "405"
     },
     {
       "rank": 6,
-      "title": "工作 5 年后，决定你薪资上限的究竟是什么？",
-      "url": "https://juejin.cn/post/7667750500683120675",
-      "hot": "495"
+      "title": "别再用 nohup java -jar 了：Spring Boot 生产环境该怎么守护？",
+      "url": "https://juejin.cn/post/7667762010876936192",
+      "hot": "369"
     },
     {
       "rank": 7,
-      "title": "谷歌的一个优化建议，让我重新学了一遍Android里面如何正确处理位图",
-      "url": "https://juejin.cn/post/7667097178154319912",
-      "hot": "423"
-    },
-    {
-      "rank": 8,
-      "title": "KotlinLLM 开源 ，一个可以在运行时自己生成永久 Kotlin 代码的 Agent 库",
-      "url": "https://juejin.cn/post/7667863898348126271",
-      "hot": "396"
-    },
-    {
-      "rank": 9,
-      "title": "Nest.js 和 Spring Boot 为何如此像？写给前端转 Java 的同学",
-      "url": "https://juejin.cn/post/7667863898348093503",
-      "hot": "378"
-    },
-    {
-      "rank": 10,
       "title": "MCP协议第5次更新，从打电话到微信聊天的巨大变革",
       "url": "https://juejin.cn/post/7668204673984135178",
       "hot": "360"
+    },
+    {
+      "rank": 8,
+      "title": "Flutter Starling : 用 Swift和 Flutter 写了一个 Linux 桌面系统，震惊我一整年",
+      "url": "https://juejin.cn/post/7668191994554073142",
+      "hot": "360"
+    },
+    {
+      "rank": 9,
+      "title": "Android R8 为什么可以让 Kotlin 协程提速 2 倍？",
+      "url": "https://juejin.cn/post/7667459437695778870",
+      "hot": "306"
+    },
+    {
+      "rank": 10,
+      "title": "我的AI工作流整理【个人向】",
+      "url": "https://juejin.cn/post/7668309258707386378",
+      "hot": "297"
     }
   ]
 }
