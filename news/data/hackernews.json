@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-01T04:32:07+00:00",
+  "updated_at": "2026-08-01T07:04:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Flint: A Visualization Language for the AI Era",
-      "url": "https://microsoft.github.io/flint-chart/",
-      "hot": "32"
+      "title": "Elevators",
+      "url": "https://john.fun/elevators",
+      "hot": "1175"
     },
     {
       "rank": 2,
-      "title": "Elevators",
-      "url": "https://john.fun/elevators",
-      "hot": "1029"
+      "title": "Flint: A Visualization Language for the AI Era",
+      "url": "https://microsoft.github.io/flint-chart/",
+      "hot": "83"
     },
     {
       "rank": 3,
-      "title": "The development pipeline is a production system",
-      "url": "https://sundry.jerryorr.com/2026/07/31/development-pipeline-is-a-production-system",
-      "hot": "32"
+      "title": "Ten Ways NAS Is Getting Enshitified",
+      "url": "https://nascompares.com/2026/07/31/the-10-ways-nas-is-getting-enshitified/",
+      "hot": "24"
     },
     {
       "rank": 4,
       "title": "How to Exist",
       "url": "https://www.raptitude.com/2026/07/how-to-exist/",
-      "hot": "79"
+      "hot": "139"
     },
     {
       "rank": 5,
       "title": "qm – Multiplayer agent harness for work",
       "url": "https://github.com/yc-software/qm",
-      "hot": "511"
+      "hot": "532"
     },
     {
       "rank": 6,
-      "title": "Software for One",
-      "url": "https://www.ajwaxman.com/writing/software-for-one",
-      "hot": "53"
+      "title": "The development pipeline is a production system",
+      "url": "https://sundry.jerryorr.com/2026/07/31/development-pipeline-is-a-production-system",
+      "hot": "59"
     },
     {
       "rank": 7,
-      "title": "BMW Spider-Man in-car advertising",
-      "url": "https://consumerrights.wiki/w/BMW_Spider-Man_in-car_advertising",
-      "hot": "80"
+      "title": "What Liberal Arts Education Is for (2024)",
+      "url": "https://innig.net/teaching/liberal-arts-manifesto",
+      "hot": "31"
     },
     {
       "rank": 8,
       "title": "Progressive Web Components",
       "url": "https://arielsalminen.com/2026/progressive-web-components/",
-      "hot": "120"
+      "hot": "140"
     },
     {
       "rank": 9,
       "title": "A Week in Matrix",
       "url": "https://piegames.de/dumps/a-week-in-matrix/",
-      "hot": "17"
+      "hot": "42"
     },
     {
       "rank": 10,
-      "title": "June in Servo: real world compat, media queries, SharedWorker, and more",
-      "url": "https://servo.org/blog/2026/07/31/june-in-servo/",
-      "hot": "124"
+      "title": "The Absurdity of Albert Camus",
+      "url": "https://www.historytoday.com/archive/portrait-author-historian/absurdity-albert-camus",
+      "hot": "92"
     }
   ]
 }
