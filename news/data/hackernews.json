@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-02T16:16:15+00:00",
+  "updated_at": "2026-08-02T19:34:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Twenty Years of RISC OS Open",
-      "url": "https://www.riscosopen.org/news/articles/2026/06/20/twenty-years-of-risc-os-open",
-      "hot": "85"
+      "title": "Karpathy’s Pelican",
+      "url": "https://twitter.com/karpathy/status/2083749667410727319",
+      "hot": "191"
     },
     {
       "rank": 2,
-      "title": "F*: A general-purpose proof-oriented programming language",
-      "url": "https://fstar-lang.org/",
-      "hot": "63"
+      "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
+      "url": "https://github.com/wie-project/kakehashi",
+      "hot": "86"
     },
     {
       "rank": 3,
-      "title": "Meshdiff – visually compare two STL versions in the browser, client-side",
-      "url": "https://meshdiff.com/",
-      "hot": "118"
+      "title": "SwiftUI After 7 Years: A Story of Mediocrity",
+      "url": "https://ykvm.com/2026/07/swiftui-a-story-of-mediocrity/",
+      "hot": "16"
     },
     {
       "rank": 4,
-      "title": "How the words we teach English language learners changed",
-      "url": "https://pudding.cool/2026/07/essential-words/",
-      "hot": "8"
+      "title": "Developers are attached to tools because tools encode trust",
+      "url": "https://stackoverflow.blog/2026/07/29/developers-are-attached-to-tools-because-tools-encode-trust/",
+      "hot": "58"
     },
     {
       "rank": 5,
-      "title": "Folding Paper Globes",
-      "url": "https://foldingglobes.com/globes",
-      "hot": "64"
+      "title": "How the words we teach English language learners changed",
+      "url": "https://pudding.cool/2026/07/essential-words/",
+      "hot": "143"
     },
     {
       "rank": 6,
-      "title": "Fasttracker II clone in C using SDL 2",
-      "url": "https://16-bits.org/ft2.php",
-      "hot": "42"
+      "title": "Show HN: NixOS-DGX-Spark – Nix and NixOS on the DGX Spark",
+      "url": "https://github.com/graham33/nixos-dgx-spark",
+      "hot": "43"
     },
     {
       "rank": 7,
-      "title": "Show HN: Bor – Open-source policy management for Linux desktops",
-      "url": "https://getbor.dev/blog/2026-08-02-bor-v080-release/",
-      "hot": "124"
+      "title": "Rooting, firmware analysis and persistent credentials of TP-Link TL-841N",
+      "url": "https://blog.juni-mp4.com/posts/42/rooting-the-tplink-tl841n-pt1/",
+      "hot": "50"
     },
     {
       "rank": 8,
-      "title": "Artificial Intelligence: Ars Notoria and the Promise of Instant Knowledge",
-      "url": "https://publicdomainreview.org/essay/ars-notoria/",
-      "hot": "83"
+      "title": "Harvesting SSH Credentials: Insights from My Honeypot Network",
+      "url": "https://uphillsecurity.com/articles/harvesting-ssh-credentials-insights-from-my-honeypot-network/",
+      "hot": "17"
     },
     {
       "rank": 9,
-      "title": "A Rant About “Technology” (2005)",
-      "url": "https://www.ursulakleguin.com/a-rant-about-technology",
-      "hot": "80"
+      "title": "Twenty Years of RISC OS Open",
+      "url": "https://www.riscosopen.org/news/articles/2026/06/20/twenty-years-of-risc-os-open",
+      "hot": "120"
     },
     {
       "rank": 10,
-      "title": "Show HN: Fuse – statically typed functional programming language",
-      "url": "https://fuselang.org",
-      "hot": "55"
+      "title": "F*: A general-purpose proof-oriented programming language",
+      "url": "https://fstar-lang.org/",
+      "hot": "109"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-02T16:15:57+00:00",
+  "updated_at": "2026-08-02T19:33:22+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "雀骨",
-      "url": "https://movie.douban.com/subject/37317368/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 8,
       "title": "寒战1994",
       "url": "https://movie.douban.com/subject/36857924/",
       "hot": "评分 7.0"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "这一秒过火",
       "url": "https://movie.douban.com/subject/37096230/",
       "hot": "评分 5.0"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "野狗骨头",
       "url": "https://movie.douban.com/subject/36618951/",
       "hot": "评分 6.9"
+    },
+    {
+      "rank": 10,
+      "title": "雀骨",
+      "url": "https://movie.douban.com/subject/37317368/",
+      "hot": "评分 6.7"
     }
   ]
 }

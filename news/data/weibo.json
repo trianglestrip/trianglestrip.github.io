@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-02T18:12:42+00:00",
+  "updated_at": "2026-08-02T19:32:43+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,44 +24,44 @@
     },
     {
       "rank": 4,
+      "title": "壁虎断尾竟用在脸上",
+      "url": "https://s.weibo.com/weibo?q=%E5%A3%81%E8%99%8E%E6%96%AD%E5%B0%BE%E7%AB%9F%E7%94%A8%E5%9C%A8%E8%84%B8%E4%B8%8A",
+      "hot": ""
+    },
+    {
+      "rank": 5,
       "title": "蔡徐坤说终于撕掉爱豆标签",
       "url": "https://s.weibo.com/weibo?q=%E8%94%A1%E5%BE%90%E5%9D%A4%E8%AF%B4%E7%BB%88%E4%BA%8E%E6%92%95%E6%8E%89%E7%88%B1%E8%B1%86%E6%A0%87%E7%AD%BE",
       "hot": ""
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "河南三支一扶案件查实作弊",
       "url": "https://s.weibo.com/weibo?q=%E6%B2%B3%E5%8D%97%E4%B8%89%E6%94%AF%E4%B8%80%E6%89%B6%E6%A1%88%E4%BB%B6%E6%9F%A5%E5%AE%9E%E4%BD%9C%E5%BC%8A",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "胡一天演高中生被指违和",
       "url": "https://s.weibo.com/weibo?q=%E8%83%A1%E4%B8%80%E5%A4%A9%E6%BC%94%E9%AB%98%E4%B8%AD%E7%94%9F%E8%A2%AB%E6%8C%87%E8%BF%9D%E5%92%8C",
       "hot": ""
     },
     {
-      "rank": 7,
-      "title": "官方辟谣景德镇瓷柱路灯损坏赔16万",
-      "url": "https://s.weibo.com/weibo?q=%E5%AE%98%E6%96%B9%E8%BE%9F%E8%B0%A3%E6%99%AF%E5%BE%B7%E9%95%87%E7%93%B7%E6%9F%B1%E8%B7%AF%E7%81%AF%E6%8D%9F%E5%9D%8F%E8%B5%9416%E4%B8%87",
-      "hot": ""
-    },
-    {
       "rank": 8,
-      "title": "一个爱侧睡的人轻轻的碎了",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%80%E4%B8%AA%E7%88%B1%E4%BE%A7%E7%9D%A1%E7%9A%84%E4%BA%BA%E8%BD%BB%E8%BD%BB%E7%9A%84%E7%A2%8E%E4%BA%86",
+      "title": "青岛起火仓库母公司去年营收超4千亿",
+      "url": "https://s.weibo.com/weibo?q=%E9%9D%92%E5%B2%9B%E8%B5%B7%E7%81%AB%E4%BB%93%E5%BA%93%E6%AF%8D%E5%85%AC%E5%8F%B8%E5%8E%BB%E5%B9%B4%E8%90%A5%E6%94%B6%E8%B6%854%E5%8D%83%E4%BA%BF",
       "hot": ""
     },
     {
       "rank": 9,
-      "title": "心动的信号6 背调",
-      "url": "https://s.weibo.com/weibo?q=%E5%BF%83%E5%8A%A8%E7%9A%84%E4%BF%A1%E5%8F%B76%20%E8%83%8C%E8%B0%83",
+      "title": "手机不好卖 芯片出货量暴跌",
+      "url": "https://s.weibo.com/weibo?q=%E6%89%8B%E6%9C%BA%E4%B8%8D%E5%A5%BD%E5%8D%96%20%E8%8A%AF%E7%89%87%E5%87%BA%E8%B4%A7%E9%87%8F%E6%9A%B4%E8%B7%8C",
       "hot": ""
     },
     {
       "rank": 10,
-      "title": "手机不好卖 芯片出货量暴跌",
-      "url": "https://s.weibo.com/weibo?q=%E6%89%8B%E6%9C%BA%E4%B8%8D%E5%A5%BD%E5%8D%96%20%E8%8A%AF%E7%89%87%E5%87%BA%E8%B4%A7%E9%87%8F%E6%9A%B4%E8%B7%8C",
+      "title": "一个爱侧睡的人轻轻的碎了",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%80%E4%B8%AA%E7%88%B1%E4%BE%A7%E7%9D%A1%E7%9A%84%E4%BA%BA%E8%BD%BB%E8%BD%BB%E7%9A%84%E7%A2%8E%E4%BA%86",
       "hot": ""
     }
   ]

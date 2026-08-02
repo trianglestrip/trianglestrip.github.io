@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-02T12:40:27+00:00",
+  "updated_at": "2026-08-02T19:34:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "9563"
+      "hot": "9612"
     },
     {
       "rank": 2,
       "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "1571"
+      "hot": "1645"
     },
     {
       "rank": 3,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "1277"
+      "hot": "1307"
     },
     {
       "rank": 4,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3733"
+      "hot": "3752"
     },
     {
       "rank": 5,
       "title": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
       "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
-      "hot": "307"
+      "hot": "325"
     },
     {
       "rank": 6,
-      "title": "zai-org/GLM-5.2",
-      "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4745"
+      "title": "unsloth/Kimi-K3-GGUF",
+      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
+      "hot": "247"
     },
     {
       "rank": 7,
-      "title": "unsloth/Kimi-K3-GGUF",
-      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
-      "hot": "246"
+      "title": "zai-org/GLM-5.2",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "hot": "4750"
     },
     {
       "rank": 8,
       "title": "thinkingmachines/Inkling-Small",
       "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
-      "hot": "219"
+      "hot": "223"
     },
     {
       "rank": 9,
-      "title": "owensong/Inflect-Micro-v2",
-      "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
-      "hot": "367"
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "hot": "399"
     },
     {
       "rank": 10,
-      "title": "Kwaipilot/KAT-Coder-V2.5-Dev",
-      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
-      "hot": "394"
+      "title": "owensong/Inflect-Micro-v2",
+      "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
+      "hot": "370"
     }
   ]
 }
