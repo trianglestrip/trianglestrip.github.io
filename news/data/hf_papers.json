@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-01T17:14:46+00:00",
+  "updated_at": "2026-08-02T00:10:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3: Open Frontier Intelligence",
       "url": "https://huggingface.co/papers/2607.24653",
-      "hot": "423"
+      "hot": "426"
     },
     {
       "rank": 2,
@@ -44,7 +44,7 @@
       "rank": 7,
       "title": "Mage-VL: An Efficient Codec-Native Streaming Multimodal Foundation Model",
       "url": "https://huggingface.co/papers/2607.24904",
-      "hot": "27"
+      "hot": "28"
     },
     {
       "rank": 8,
