@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-02T19:34:38+00:00",
+  "updated_at": "2026-08-02T22:25:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Karpathy’s Pelican",
       "url": "https://twitter.com/karpathy/status/2083749667410727319",
-      "hot": "191"
+      "hot": "338"
     },
     {
       "rank": 2,
       "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
       "url": "https://github.com/wie-project/kakehashi",
-      "hot": "86"
+      "hot": "137"
     },
     {
       "rank": 3,
-      "title": "SwiftUI After 7 Years: A Story of Mediocrity",
-      "url": "https://ykvm.com/2026/07/swiftui-a-story-of-mediocrity/",
-      "hot": "16"
+      "title": "Note-Taking and Personal Knowledge Management",
+      "url": "https://unattributed.cc/note-taking-and-personal-knowledge-management",
+      "hot": "70"
     },
     {
       "rank": 4,
-      "title": "Developers are attached to tools because tools encode trust",
-      "url": "https://stackoverflow.blog/2026/07/29/developers-are-attached-to-tools-because-tools-encode-trust/",
-      "hot": "58"
+      "title": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
+      "url": "https://frogs.vaguespac.es/",
+      "hot": "61"
     },
     {
       "rank": 5,
-      "title": "How the words we teach English language learners changed",
-      "url": "https://pudding.cool/2026/07/essential-words/",
-      "hot": "143"
+      "title": "Sharing an X11 Server Across Hosts with FamilyWild",
+      "url": "https://dobrowolski.dev/article/sharing-an-x-server-across-hosts-with-familywild/",
+      "hot": "16"
     },
     {
       "rank": 6,
-      "title": "Show HN: NixOS-DGX-Spark – Nix and NixOS on the DGX Spark",
-      "url": "https://github.com/graham33/nixos-dgx-spark",
-      "hot": "43"
+      "title": "Developers are attached to tools because tools encode trust",
+      "url": "https://stackoverflow.blog/2026/07/29/developers-are-attached-to-tools-because-tools-encode-trust/",
+      "hot": "103"
     },
     {
       "rank": 7,
-      "title": "Rooting, firmware analysis and persistent credentials of TP-Link TL-841N",
-      "url": "https://blog.juni-mp4.com/posts/42/rooting-the-tplink-tl841n-pt1/",
-      "hot": "50"
+      "title": "Show HN: NixOS-DGX-Spark – Nix and NixOS on the DGX Spark",
+      "url": "https://github.com/graham33/nixos-dgx-spark",
+      "hot": "77"
     },
     {
       "rank": 8,
-      "title": "Harvesting SSH Credentials: Insights from My Honeypot Network",
-      "url": "https://uphillsecurity.com/articles/harvesting-ssh-credentials-insights-from-my-honeypot-network/",
-      "hot": "17"
+      "title": "Show HN: Make your Framework 12 sound like a creaky door",
+      "url": "https://github.com/ArcaEge/creakwork12",
+      "hot": "18"
     },
     {
       "rank": 9,
-      "title": "Twenty Years of RISC OS Open",
-      "url": "https://www.riscosopen.org/news/articles/2026/06/20/twenty-years-of-risc-os-open",
-      "hot": "120"
+      "title": "F*: A general-purpose proof-oriented programming language",
+      "url": "https://fstar-lang.org/",
+      "hot": "135"
     },
     {
       "rank": 10,
-      "title": "F*: A general-purpose proof-oriented programming language",
-      "url": "https://fstar-lang.org/",
-      "hot": "109"
+      "title": "Twenty Years of RISC OS Open",
+      "url": "https://www.riscosopen.org/news/articles/2026/06/20/twenty-years-of-risc-os-open",
+      "hot": "141"
     }
   ]
 }
