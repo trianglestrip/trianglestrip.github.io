@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-02T14:14:13+00:00",
+  "updated_at": "2026-08-02T16:16:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Twenty Years of RISC OS Open",
       "url": "https://www.riscosopen.org/news/articles/2026/06/20/twenty-years-of-risc-os-open",
-      "hot": "42"
+      "hot": "85"
     },
     {
       "rank": 2,
-      "title": "Meshdiff – visually compare two STL versions in the browser, client-side",
-      "url": "https://meshdiff.com/",
-      "hot": "82"
+      "title": "F*: A general-purpose proof-oriented programming language",
+      "url": "https://fstar-lang.org/",
+      "hot": "63"
     },
     {
       "rank": 3,
-      "title": "Show HN: Bor – Open-source policy management for Linux desktops",
-      "url": "https://getbor.dev/blog/2026-08-02-bor-v080-release/",
-      "hot": "87"
+      "title": "Meshdiff – visually compare two STL versions in the browser, client-side",
+      "url": "https://meshdiff.com/",
+      "hot": "118"
     },
     {
       "rank": 4,
-      "title": "Artificial Intelligence: Ars Notoria and the Promise of Instant Knowledge",
-      "url": "https://publicdomainreview.org/essay/ars-notoria/",
-      "hot": "58"
-    },
-    {
-      "rank": 5,
-      "title": "F*: A general-purpose proof-oriented programming language",
-      "url": "https://fstar-lang.org/",
+      "title": "How the words we teach English language learners changed",
+      "url": "https://pudding.cool/2026/07/essential-words/",
       "hot": "8"
     },
     {
+      "rank": 5,
+      "title": "Folding Paper Globes",
+      "url": "https://foldingglobes.com/globes",
+      "hot": "64"
+    },
+    {
       "rank": 6,
-      "title": "Show HN: Fuse – statically typed functional programming language",
-      "url": "https://fuselang.org",
-      "hot": "30"
-    },
-    {
-      "rank": 7,
-      "title": "Go 1.27 Interactive Tour",
-      "url": "https://victoriametrics.com/blog/go-1-27/index.html",
-      "hot": "276"
-    },
-    {
-      "rank": 8,
-      "title": "Show HN: Syncular – offline-first SQL sync with TypeScript and Rust cores",
-      "url": "https://github.com/syncular/syncular",
+      "title": "Fasttracker II clone in C using SDL 2",
+      "url": "https://16-bits.org/ft2.php",
       "hot": "42"
     },
     {
+      "rank": 7,
+      "title": "Show HN: Bor – Open-source policy management for Linux desktops",
+      "url": "https://getbor.dev/blog/2026-08-02-bor-v080-release/",
+      "hot": "124"
+    },
+    {
+      "rank": 8,
+      "title": "Artificial Intelligence: Ars Notoria and the Promise of Instant Knowledge",
+      "url": "https://publicdomainreview.org/essay/ars-notoria/",
+      "hot": "83"
+    },
+    {
       "rank": 9,
-      "title": "Show HN: I'm a 15 Year Old Wannabe Engineer, This Is a Cycloidal Gearbox I Built",
-      "url": "https://github.com/tom-ilan/cycloidal_gearbox",
-      "hot": "212"
+      "title": "A Rant About “Technology” (2005)",
+      "url": "https://www.ursulakleguin.com/a-rant-about-technology",
+      "hot": "80"
     },
     {
       "rank": 10,
-      "title": "Cyberscript",
-      "url": "https://cyberscript.dev",
-      "hot": "33"
+      "title": "Show HN: Fuse – statically typed functional programming language",
+      "url": "https://fuselang.org",
+      "hot": "55"
     }
   ]
 }

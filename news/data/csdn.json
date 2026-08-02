@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-02T14:14:06+00:00",
+  "updated_at": "2026-08-02T16:16:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Jenkins自动部署实战：Vue与Spring Boot构建、Nginx发布及Webhook触发",
       "url": "https://blog.csdn.net/2301_80840905/article/details/163374763",
-      "hot": "23357"
+      "hot": "23132"
     },
     {
       "rank": 2,
       "title": "Zookeeper - Zookeeper 的设计理念与核心解决的分布式问题",
       "url": "https://blog.csdn.net/qq_41187124/article/details/157688044",
-      "hot": "18605"
+      "hot": "18356"
     },
     {
       "rank": 3,
       "title": "通关打怪SpringMVC之传递参数篇3",
       "url": "https://blog.csdn.net/2501_93392325/article/details/163373420",
-      "hot": "16359"
+      "hot": "16151"
     },
     {
       "rank": 4,
       "title": "CentOS 7 搭建 GitLab CE，并通过 cpolar 实现公网远程访问（完整教程）",
       "url": "https://blog.csdn.net/weixin_52908342/article/details/163394250",
-      "hot": "16350"
+      "hot": "15990"
     },
     {
       "rank": 5,
       "title": "干货版《算法导论》16：比较模型与随机访问下的算法进阶之路",
       "url": "https://blog.csdn.net/2503_92624912/article/details/163376176",
-      "hot": "16190"
+      "hot": "15654"
     },
     {
       "rank": 6,
       "title": "Ansible定时清空日志实战：Playbook、Cron与远程主机接入",
       "url": "https://blog.csdn.net/2401_86326742/article/details/163383163",
-      "hot": "15577"
+      "hot": "15643"
     },
     {
       "rank": 7,
       "title": "AI 辅助研发内部复盘（3/5）：上下文工程与认知解码",
       "url": "https://blog.csdn.net/beautifulmemory/article/details/163375142",
-      "hot": "15073"
+      "hot": "14792"
     },
     {
       "rank": 8,
       "title": "蓝牙PBP公共广播协议：解锁LE Audio的公共音频新生态",
       "url": "https://blog.csdn.net/weixin_37800531/article/details/163252188",
-      "hot": "13928"
+      "hot": "13630"
     },
     {
       "rank": 9,
       "title": "处理2026年全国大学只能汽车竞赛分赛区比赛数据",
       "url": "https://blog.csdn.net/zhuoqingjoking97298/article/details/163407428",
-      "hot": "13190"
+      "hot": "13080"
     },
     {
       "rank": 10,
-      "title": "【Linux网络】深入理解Linux epoll：从内核原理到实战代码全解析",
-      "url": "https://blog.csdn.net/2503_91389547/article/details/162003253",
-      "hot": "9738"
+      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
+      "hot": "10590"
     }
   ]
 }
