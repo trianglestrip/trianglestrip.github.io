@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-01T22:15:42+00:00",
+  "updated_at": "2026-08-02T03:50:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The Silicon Valley Founder Meat Grinder",
-      "url": "https://zaksa.zip/blog/silicon-valley-founder-meat-grinder/",
-      "hot": "134"
+      "title": "The teenage hitmen recruited to kill across Europe",
+      "url": "https://www.bbc.com/news/articles/czrjyevmv61o",
+      "hot": "20"
     },
     {
       "rank": 2,
-      "title": "How Google helped destroy adoption of RSS feeds (2023)",
-      "url": "https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds",
-      "hot": "216"
+      "title": "Go 1.27 Interactive Tour",
+      "url": "https://victoriametrics.com/blog/go-1-27/index.html",
+      "hot": "65"
     },
     {
       "rank": 3,
-      "title": "Diátaxis",
-      "url": "https://diataxis.fr/",
-      "hot": "66"
+      "title": "Plug-in solar is coming. Plug-in batteries should follow",
+      "url": "https://www.regen.co.uk/insights/plug-in-solar-is-coming-plug-in-batteries-should-follow",
+      "hot": "22"
     },
     {
       "rank": 4,
-      "title": "Seedance 2.5",
-      "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
-      "hot": "23"
+      "title": "MkLinux and the pimped-out Apple Workgroup Server 9150",
+      "url": "http://oldvcr.blogspot.com/2026/08/mklinux-and-pimped-out-apple-workgroup.html",
+      "hot": "13"
     },
     {
       "rank": 5,
-      "title": "Postmortem for Kernel Soundness Bug #14576",
-      "url": "https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/",
-      "hot": "88"
+      "title": "Seedance 2.5",
+      "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+      "hot": "218"
     },
     {
       "rank": 6,
-      "title": "But can your calculator run Linux?",
-      "url": "https://raymii.org/s/articles/But_can_your_calculator_run_Linux.html",
-      "hot": "34"
+      "title": "Diátaxis",
+      "url": "https://diataxis.fr/",
+      "hot": "237"
     },
     {
       "rank": 7,
-      "title": "The Art of 64-bit Assembly",
-      "url": "https://nostarch.com/art-64-bit-assembly-v2",
-      "hot": "161"
+      "title": "ASRock BC-250: Building the Budget Steam Machine",
+      "url": "https://plug-world.com/posts/2026/asrock-bc250-the-budget-steam-machine/",
+      "hot": "24"
     },
     {
       "rank": 8,
-      "title": "Just because a game is on disc doesn't mean it will work in the future",
-      "url": "https://arstechnica.com/gaming/2026/07/the-disc-is-not-the-game-physical-releases-increasingly-require-extra-downloads/",
-      "hot": "53"
+      "title": "RFC 10015: Deprecating Obsolete Key Exchange Methods in TLS 1.2 and DTLS 1.2",
+      "url": "https://www.rfc-editor.org/rfc/rfc10015.html",
+      "hot": "38"
     },
     {
       "rank": 9,
-      "title": "CISA Alert: Water Sector PLC Targeting",
-      "url": "https://censys.com/blog/cisa-alert-water-tower-plc-targeting/",
-      "hot": "29"
+      "title": "AI financial advice is surprisingly good, especially if you ask right questions",
+      "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+      "hot": "208"
     },
     {
       "rank": 10,
-      "title": "NetBSD 11.0",
-      "url": "https://blog.netbsd.org/tnf/entry/netbsd_11_0_released",
-      "hot": "170"
+      "title": "Unraveling the mysteries of habit formation",
+      "url": "https://www.kyoto-u.ac.jp/en/research-news/2026-07-28",
+      "hot": "45"
     }
   ]
 }
