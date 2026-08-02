@@ -1,7 +1,7 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-02T06:23:03+00:00",
+  "updated_at": "2026-08-02T08:41:28+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,27 +12,27 @@
     },
     {
       "rank": 2,
+      "title": "我的AI工作流整理【个人向】",
+      "url": "https://juejin.cn/post/7668309258707386378",
+      "hot": "468"
+    },
+    {
+      "rank": 3,
       "title": "KotlinLLM 开源 ，一个可以在运行时自己生成永久 Kotlin 代码的 Agent 库",
       "url": "https://juejin.cn/post/7667863898348126271",
       "hot": "450"
     },
     {
-      "rank": 3,
-      "title": "我的AI工作流整理【个人向】",
-      "url": "https://juejin.cn/post/7668309258707386378",
-      "hot": "423"
-    },
-    {
       "rank": 4,
       "title": "Flutter Starling : 用 Swift和 Flutter 写了一个 Linux 桌面系统，震惊我一整年",
       "url": "https://juejin.cn/post/7668191994554073142",
-      "hot": "414"
+      "hot": "423"
     },
     {
       "rank": 5,
       "title": "MCP协议第5次更新，从打电话到微信聊天的巨大变革",
       "url": "https://juejin.cn/post/7668204673984135178",
-      "hot": "396"
+      "hot": "405"
     },
     {
       "rank": 6,
@@ -44,25 +44,25 @@
       "rank": 7,
       "title": "手把手书写你的第一个 AI Skill：从原则到工程化",
       "url": "https://juejin.cn/post/7667440437864448000",
-      "hot": "288"
+      "hot": "315"
     },
     {
       "rank": 8,
-      "title": "DeepSeek-V4-Flash 正式版来了！这次提升有点夸张。",
-      "url": "https://juejin.cn/post/7668634785267695625",
-      "hot": "261"
+      "title": "DeepSeek V4-Flash 更新：代码与 Agent 能力全面增强",
+      "url": "https://juejin.cn/post/7668540866239529010",
+      "hot": "279"
     },
     {
       "rank": 9,
-      "title": "DeepSeek V4-Flash 更新：代码与 Agent 能力全面增强",
-      "url": "https://juejin.cn/post/7668540866239529010",
-      "hot": "261"
+      "title": "DeepSeek-V4-Flash 正式版来了！这次提升有点夸张。",
+      "url": "https://juejin.cn/post/7668634785267695625",
+      "hot": "270"
     },
     {
       "rank": 10,
       "title": "Spring之父再次出山，开发了新的AI框架！",
       "url": "https://juejin.cn/post/7668305038255521838",
-      "hot": "207"
+      "hot": "225"
     }
   ]
 }
