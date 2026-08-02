@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-02T11:39:38+00:00",
+  "updated_at": "2026-08-02T14:14:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Is the Industrial Revolution a good precedent for explosive growth today?",
-      "url": "https://mattsclancy.github.io/2026/07/27/industrial-revolution-growth.html",
-      "hot": "20"
+      "title": "Twenty Years of RISC OS Open",
+      "url": "https://www.riscosopen.org/news/articles/2026/06/20/twenty-years-of-risc-os-open",
+      "hot": "42"
     },
     {
       "rank": 2,
-      "title": "Show HN: Bor – Open-source policy management for Linux desktops",
-      "url": "https://getbor.dev/blog/2026-08-02-bor-v080-release/",
-      "hot": "35"
+      "title": "Meshdiff – visually compare two STL versions in the browser, client-side",
+      "url": "https://meshdiff.com/",
+      "hot": "82"
     },
     {
       "rank": 3,
-      "title": "Artificial Intelligence: Ars Notoria and the Promise of Instant Knowledge",
-      "url": "https://publicdomainreview.org/essay/ars-notoria/",
-      "hot": "22"
+      "title": "Show HN: Bor – Open-source policy management for Linux desktops",
+      "url": "https://getbor.dev/blog/2026-08-02-bor-v080-release/",
+      "hot": "87"
     },
     {
       "rank": 4,
-      "title": "Show HN: Syncular – offline-first SQL sync with TypeScript and Rust cores",
-      "url": "https://github.com/syncular/syncular",
-      "hot": "19"
+      "title": "Artificial Intelligence: Ars Notoria and the Promise of Instant Knowledge",
+      "url": "https://publicdomainreview.org/essay/ars-notoria/",
+      "hot": "58"
     },
     {
       "rank": 5,
-      "title": "Go 1.27 Interactive Tour",
-      "url": "https://victoriametrics.com/blog/go-1-27/index.html",
-      "hot": "238"
+      "title": "F*: A general-purpose proof-oriented programming language",
+      "url": "https://fstar-lang.org/",
+      "hot": "8"
     },
     {
       "rank": 6,
-      "title": "Generative AI floods and dilutes the market for books",
-      "url": "https://arxiv.org/abs/2607.20349",
-      "hot": "4"
+      "title": "Show HN: Fuse – statically typed functional programming language",
+      "url": "https://fuselang.org",
+      "hot": "30"
     },
     {
       "rank": 7,
-      "title": "Show HN: I'm a 15 Year Old Wannabe Engineer, This Is a Cycloidal Gearbox I Built",
-      "url": "https://github.com/tom-ilan/cycloidal_gearbox",
-      "hot": "181"
+      "title": "Go 1.27 Interactive Tour",
+      "url": "https://victoriametrics.com/blog/go-1-27/index.html",
+      "hot": "276"
     },
     {
       "rank": 8,
-      "title": "A big win for Android interoperability",
-      "url": "https://www.openhomefoundation.org/blog/a-big-win-for-android-interoperability/",
-      "hot": "136"
+      "title": "Show HN: Syncular – offline-first SQL sync with TypeScript and Rust cores",
+      "url": "https://github.com/syncular/syncular",
+      "hot": "42"
     },
     {
       "rank": 9,
-      "title": "Seedance 2.5",
-      "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
-      "hot": "362"
+      "title": "Show HN: I'm a 15 Year Old Wannabe Engineer, This Is a Cycloidal Gearbox I Built",
+      "url": "https://github.com/tom-ilan/cycloidal_gearbox",
+      "hot": "212"
     },
     {
       "rank": 10,
-      "title": "Maze Toys",
-      "url": "https://maze.toys",
-      "hot": "12"
+      "title": "Cyberscript",
+      "url": "https://cyberscript.dev",
+      "hot": "33"
     }
   ]
 }
