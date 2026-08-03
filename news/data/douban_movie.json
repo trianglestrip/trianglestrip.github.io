@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-03T16:15:23+00:00",
+  "updated_at": "2026-08-03T19:51:23+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "这一秒过火",
-      "url": "https://movie.douban.com/subject/37096230/",
-      "hot": "评分 5.0"
+      "title": "奥德赛",
+      "url": "https://movie.douban.com/subject/36808876/",
+      "hot": "评分 8.3"
     },
     {
       "rank": 9,
-      "title": "野狗骨头",
-      "url": "https://movie.douban.com/subject/36618951/",
-      "hot": "评分 6.9"
+      "title": "悬案",
+      "url": "https://movie.douban.com/subject/36624136/",
+      "hot": "评分 7.5"
     },
     {
       "rank": 10,
-      "title": "雀骨",
-      "url": "https://movie.douban.com/subject/37317368/",
-      "hot": "评分 6.7"
+      "title": "金特务：本色回归",
+      "url": "https://movie.douban.com/subject/37523009/",
+      "hot": "评分 7.4"
     }
   ]
 }

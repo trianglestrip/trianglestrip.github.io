@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-03T16:15:39+00:00",
+  "updated_at": "2026-08-03T19:51:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AI漫剧制作、运营与商业化：从 0 到 1 搭建一个人的内容生产系统",
       "url": "https://blog.csdn.net/weixin_52908342/article/details/163400136",
-      "hot": "48058"
+      "hot": "39643"
     },
     {
       "rank": 2,
       "title": "【MYSQL】MYSQL学习的一大重点：事务（上）- 原子性与持久性",
       "url": "https://blog.csdn.net/2401_89899187/article/details/163377285",
-      "hot": "21580"
+      "hot": "21391"
     },
     {
       "rank": 3,
-      "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
-      "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
-      "hot": "19165"
+      "title": "SpringBoot+PostgreSQL + 硅基流动大模型从零搭建 Text-to-SQL 智能问答系统",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163398167",
+      "hot": "18584"
     },
     {
       "rank": 4,
-      "title": "PyTorch强化学习实战（21）——异步优势演员-评论家（Asynchronous Advantage Actor-Critic, A3C）",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766138",
-      "hot": "17383"
+      "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
+      "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
+      "hot": "18067"
     },
     {
       "rank": 5,
-      "title": "SpringBoot+PostgreSQL + 硅基流动大模型从零搭建 Text-to-SQL 智能问答系统",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163398167",
-      "hot": "15906"
+      "title": "私密日记不想放在云端？极空间部署DailyTxT完整教程",
+      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/163449761",
+      "hot": "17104"
     },
     {
       "rank": 6,
       "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
-      "hot": "15558"
+      "hot": "15942"
     },
     {
       "rank": 7,
-      "title": "私密日记不想放在云端？极空间部署DailyTxT完整教程",
-      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/163449761",
-      "hot": "14406"
+      "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
+      "hot": "14153"
     },
     {
       "rank": 8,
-      "title": "PyTorch模型训练:权重、偏置和参数初始化会怎样影响训练",
-      "url": "https://blog.csdn.net/weixin_61731209/article/details/163444871",
-      "hot": "12653"
+      "title": "React 的createClass 是怎么实现的?：深入解析 React 早期组件工厂的底层原理",
+      "url": "https://blog.csdn.net/qq_41840843/article/details/163437536",
+      "hot": "13180"
     },
     {
       "rank": 9,
-      "title": "Re：Linux系统篇（四十九）线程篇 · 二：为什么现代操作系统选择分页式存储？分页如何解决物理内存碎片？分页结构如何演化到页表、页目录、MMU？",
-      "url": "https://blog.csdn.net/Z2314246476/article/details/163282016",
-      "hot": "11264"
+      "title": "PyTorch强化学习实战（21）——异步优势演员-评论家（Asynchronous Advantage Actor-Critic, A3C）",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766138",
+      "hot": "12129"
     },
     {
       "rank": 10,
-      "title": "React 的createClass 是怎么实现的?：深入解析 React 早期组件工厂的底层原理",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/163437536",
-      "hot": "11216"
+      "title": "PyTorch模型训练:权重、偏置和参数初始化会怎样影响训练",
+      "url": "https://blog.csdn.net/weixin_61731209/article/details/163444871",
+      "hot": "11634"
     }
   ]
 }
