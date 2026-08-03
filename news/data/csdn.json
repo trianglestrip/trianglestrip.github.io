@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-02T22:24:59+00:00",
+  "updated_at": "2026-08-03T01:01:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Jenkins自动部署实战：Vue与Spring Boot构建、Nginx发布及Webhook触发",
       "url": "https://blog.csdn.net/2301_80840905/article/details/163374763",
-      "hot": "24366"
+      "hot": "24054"
     },
     {
       "rank": 2,
       "title": "AI 辅助研发内部复盘（3/5）：上下文工程与认知解码",
       "url": "https://blog.csdn.net/beautifulmemory/article/details/163375142",
-      "hot": "21070"
+      "hot": "19939"
     },
     {
       "rank": 3,
       "title": "通关打怪SpringMVC之传递参数篇3",
       "url": "https://blog.csdn.net/2501_93392325/article/details/163373420",
-      "hot": "19287"
+      "hot": "18417"
     },
     {
       "rank": 4,
       "title": "蓝牙PBP公共广播协议：解锁LE Audio的公共音频新生态",
       "url": "https://blog.csdn.net/weixin_37800531/article/details/163252188",
-      "hot": "16691"
+      "hot": "15516"
     },
     {
       "rank": 5,
       "title": "Ansible定时清空日志实战：Playbook、Cron与远程主机接入",
       "url": "https://blog.csdn.net/2401_86326742/article/details/163383163",
-      "hot": "15544"
+      "hot": "15077"
     },
     {
       "rank": 6,
       "title": "干货版《算法导论》16：比较模型与随机访问下的算法进阶之路",
       "url": "https://blog.csdn.net/2503_92624912/article/details/163376176",
-      "hot": "14198"
+      "hot": "13383"
     },
     {
       "rank": 7,
-      "title": "Zookeeper - Zookeeper 的设计理念与核心解决的分布式问题",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157688044",
-      "hot": "13032"
+      "title": "Re：Linux系统篇（四十九）线程篇 · 二：为什么现代操作系统选择分页式存储？分页如何解决物理内存碎片？分页结构如何演化到页表、页目录、MMU？",
+      "url": "https://blog.csdn.net/Z2314246476/article/details/163282016",
+      "hot": "12867"
     },
     {
       "rank": 8,
-      "title": "Re：Linux系统篇（四十九）线程篇 · 二：为什么现代操作系统选择分页式存储？分页如何解决物理内存碎片？分页结构如何演化到页表、页目录、MMU？",
-      "url": "https://blog.csdn.net/Z2314246476/article/details/163282016",
-      "hot": "12760"
+      "title": "AI漫剧制作、运营与商业化：从 0 到 1 搭建一个人的内容生产系统",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/163400136",
+      "hot": "11176"
     },
     {
       "rank": 9,
-      "title": "AI漫剧制作、运营与商业化：从 0 到 1 搭建一个人的内容生产系统",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/163400136",
-      "hot": "11799"
+      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
+      "hot": "10694"
     },
     {
       "rank": 10,
-      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
-      "hot": "11676"
+      "title": "群晖NAS也能当开发机?Code-Server部署与远程编程完整教程",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/163358188",
+      "hot": "10211"
     }
   ]
 }
