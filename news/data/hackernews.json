@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-03T11:24:05+00:00",
+  "updated_at": "2026-08-03T13:57:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Don't be a meat proxy",
-      "url": "https://gruhn.me/blog/2026-08-03/",
-      "hot": "708"
+      "title": "Critical CVE issued for hallucinated SQLite vulnerability",
+      "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "hot": "294"
     },
     {
       "rank": 2,
-      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
-      "url": "https://qwen.ai/blog?id=qwen3.8",
-      "hot": "639"
+      "title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
+      "url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+      "hot": "25"
     },
     {
       "rank": 3,
-      "title": "Bonsai: Janestreet's UI Library",
-      "url": "https://github.com/janestreet/bonsai",
-      "hot": "65"
+      "title": "Don't be a meat proxy",
+      "url": "https://gruhn.me/blog/2026-08-03/",
+      "hot": "1049"
     },
     {
       "rank": 4,
-      "title": "Prevent cognitive debt by manually retyping LLM-generated code",
-      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
-      "hot": "82"
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "hot": "798"
     },
     {
       "rank": 5,
-      "title": "What DMARC Protects You From, and What It Does Not",
-      "url": "https://senderledger.com/articles/what-dmarc-actually-protects-you-from",
-      "hot": "22"
+      "title": "AirLLM 70B inference with single 4GB GPU",
+      "url": "https://github.com/lyogavin/airllm",
+      "hot": "44"
     },
     {
       "rank": 6,
-      "title": "Rust project goals: Immobile types and guaranteed destructors",
-      "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
-      "hot": "92"
+      "title": "Bonsai: Janestreet's UI Library",
+      "url": "https://github.com/janestreet/bonsai",
+      "hot": "129"
     },
     {
       "rank": 7,
-      "title": "Octane – React's programming model, compiled",
-      "url": "https://octanejs.dev",
-      "hot": "33"
+      "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+      "url": "https://github.com/garagehq/nightcrawler/",
+      "hot": "41"
     },
     {
       "rank": 8,
-      "title": "The true power of regular expressions (2012)",
-      "url": "https://www.npopov.com/2012/06/15/The-true-power-of-regular-expressions.html",
-      "hot": "15"
+      "title": "The Abandoned Fish Sauce Terrorizing a Small Canadian Town",
+      "url": "https://defector.com/abandoned-fish-sauce-canada-interview",
+      "hot": "45"
     },
     {
       "rank": 9,
-      "title": "Show HN: Isopolis – Isometric pixel map of SF",
-      "url": "https://sf.isopolis.city/",
-      "hot": "238"
+      "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+      "hot": "173"
     },
     {
       "rank": 10,
-      "title": "Show HN: We Fixed UniFi's Slow PPPoE Performance with PPPoE Half-Bridge",
-      "url": "https://arcbox.dev/blog/unifi-pppoe-half-bridge-acceleration",
-      "hot": "15"
+      "title": "SPF Record Syntax: Mechanisms, Qualifiers, Modifiers, and Macros",
+      "url": "https://dmarcguard.io/blog/spf-record-syntax/",
+      "hot": "3"
     }
   ]
 }
