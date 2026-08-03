@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-03T08:00:42+00:00",
+  "updated_at": "2026-08-03T11:24:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Don't be a meat proxy",
       "url": "https://gruhn.me/blog/2026-08-03/",
-      "hot": "259"
+      "hot": "708"
     },
     {
       "rank": 2,
       "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
       "url": "https://qwen.ai/blog?id=qwen3.8",
-      "hot": "478"
+      "hot": "639"
     },
     {
       "rank": 3,
-      "title": "More German than many Germans",
-      "url": "https://mertbulan.com/more-german-than-many-germans/",
-      "hot": "144"
+      "title": "Bonsai: Janestreet's UI Library",
+      "url": "https://github.com/janestreet/bonsai",
+      "hot": "65"
     },
     {
       "rank": 4,
-      "title": "Rust project goals: Immobile types and guaranteed destructors",
-      "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
-      "hot": "31"
+      "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+      "hot": "82"
     },
     {
       "rank": 5,
-      "title": "Show HN: Isopolis – Isometric pixel map of SF",
-      "url": "https://sf.isopolis.city/",
-      "hot": "194"
+      "title": "What DMARC Protects You From, and What It Does Not",
+      "url": "https://senderledger.com/articles/what-dmarc-actually-protects-you-from",
+      "hot": "22"
     },
     {
       "rank": 6,
-      "title": "AI migrated legacy COBOL programs to Java, bugs included",
-      "url": "https://arxiv.org/abs/2607.28271",
-      "hot": "45"
+      "title": "Rust project goals: Immobile types and guaranteed destructors",
+      "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
+      "hot": "92"
     },
     {
       "rank": 7,
-      "title": "Karpathy’s Pelican",
-      "url": "https://twitter.com/karpathy/status/2083749667410727319",
-      "hot": "549"
+      "title": "Octane – React's programming model, compiled",
+      "url": "https://octanejs.dev",
+      "hot": "33"
     },
     {
       "rank": 8,
-      "title": "Show HN: ssh ssh.place",
-      "url": "https://ssh.place",
-      "hot": "103"
+      "title": "The true power of regular expressions (2012)",
+      "url": "https://www.npopov.com/2012/06/15/The-true-power-of-regular-expressions.html",
+      "hot": "15"
     },
     {
       "rank": 9,
-      "title": "Why we write our own C and C++ inference engines",
-      "url": "https://localai.io/blog/why-we-write-our-own-engines/",
-      "hot": "40"
+      "title": "Show HN: Isopolis – Isometric pixel map of SF",
+      "url": "https://sf.isopolis.city/",
+      "hot": "238"
     },
     {
       "rank": 10,
-      "title": "Convergence is not enough",
-      "url": "https://www.inkandswitch.com/livelymerge/notebook/lm-02/",
-      "hot": "28"
+      "title": "Show HN: We Fixed UniFi's Slow PPPoE Performance with PPPoE Half-Bridge",
+      "url": "https://arcbox.dev/blog/unifi-pppoe-half-bridge-acceleration",
+      "hot": "15"
     }
   ]
 }

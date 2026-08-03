@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-03T04:35:07+00:00",
+  "updated_at": "2026-08-03T11:24:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "9685"
+      "hot": "9756"
     },
     {
       "rank": 2,
       "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "1813"
+      "hot": "1930"
     },
     {
       "rank": 3,
-      "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "1359"
+      "title": "MiniMaxAI/MiniMax-H3",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "hot": "943"
     },
     {
       "rank": 4,
-      "title": "baidu/Unlimited-OCR",
-      "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3795"
+      "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "hot": "1386"
     },
     {
       "rank": 5,
-      "title": "MiniMaxAI/MiniMax-H3",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "407"
+      "title": "baidu/Unlimited-OCR",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "hot": "3810"
     },
     {
       "rank": 6,
       "title": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
       "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
-      "hot": "359"
+      "hot": "385"
     },
     {
       "rank": 7,
-      "title": "unsloth/Kimi-K3-GGUF",
-      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
-      "hot": "262"
+      "title": "Comfy-Org/MiniMax-H3",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "hot": "302"
     },
     {
       "rank": 8,
-      "title": "thinkingmachines/Inkling-Small",
-      "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
-      "hot": "243"
+      "title": "unsloth/Kimi-K3-GGUF",
+      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
+      "hot": "272"
     },
     {
       "rank": 9,
-      "title": "zai-org/GLM-5.2",
-      "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4769"
+      "title": "thinkingmachines/Inkling-Small",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
+      "hot": "252"
     },
     {
       "rank": 10,
-      "title": "Kwaipilot/KAT-Coder-V2.5-Dev",
-      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
-      "hot": "414"
+      "title": "zai-org/GLM-5.2",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "hot": "4784"
     }
   ]
 }
