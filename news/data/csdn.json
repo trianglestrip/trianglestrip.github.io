@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-03T04:34:48+00:00",
+  "updated_at": "2026-08-03T08:00:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Jenkins自动部署实战：Vue与Spring Boot构建、Nginx发布及Webhook触发",
-      "url": "https://blog.csdn.net/2301_80840905/article/details/163374763",
-      "hot": "26644"
+      "title": "AI漫剧制作、运营与商业化：从 0 到 1 搭建一个人的内容生产系统",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/163400136",
+      "hot": "22569"
     },
     {
       "rank": 2,
-      "title": "AI 辅助研发内部复盘（3/5）：上下文工程与认知解码",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/163375142",
-      "hot": "22931"
+      "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
+      "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
+      "hot": "14624"
     },
     {
       "rank": 3,
-      "title": "通关打怪SpringMVC之传递参数篇3",
-      "url": "https://blog.csdn.net/2501_93392325/article/details/163373420",
-      "hot": "20844"
+      "title": "Jenkins自动部署实战：Vue与Spring Boot构建、Nginx发布及Webhook触发",
+      "url": "https://blog.csdn.net/2301_80840905/article/details/163374763",
+      "hot": "13925"
     },
     {
       "rank": 4,
-      "title": "蓝牙PBP公共广播协议：解锁LE Audio的公共音频新生态",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/163252188",
-      "hot": "17146"
+      "title": "Re：Linux系统篇（四十九）线程篇 · 二：为什么现代操作系统选择分页式存储？分页如何解决物理内存碎片？分页结构如何演化到页表、页目录、MMU？",
+      "url": "https://blog.csdn.net/Z2314246476/article/details/163282016",
+      "hot": "13572"
     },
     {
       "rank": 5,
-      "title": "Ansible定时清空日志实战：Playbook、Cron与远程主机接入",
-      "url": "https://blog.csdn.net/2401_86326742/article/details/163383163",
-      "hot": "16617"
+      "title": "PyTorch强化学习实战（21）——异步优势演员-评论家（Asynchronous Advantage Actor-Critic, A3C）",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766138",
+      "hot": "12493"
     },
     {
       "rank": 6,
-      "title": "AI漫剧制作、运营与商业化：从 0 到 1 搭建一个人的内容生产系统",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/163400136",
-      "hot": "15366"
+      "title": "Ansible定时清空日志实战：Playbook、Cron与远程主机接入",
+      "url": "https://blog.csdn.net/2401_86326742/article/details/163383163",
+      "hot": "9695"
     },
     {
       "rank": 7,
-      "title": "干货版《算法导论》16：比较模型与随机访问下的算法进阶之路",
-      "url": "https://blog.csdn.net/2503_92624912/article/details/163376176",
-      "hot": "14514"
+      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
+      "hot": "9635"
     },
     {
       "rank": 8,
-      "title": "Re：Linux系统篇（四十九）线程篇 · 二：为什么现代操作系统选择分页式存储？分页如何解决物理内存碎片？分页结构如何演化到页表、页目录、MMU？",
-      "url": "https://blog.csdn.net/Z2314246476/article/details/163282016",
-      "hot": "13733"
+      "title": "蓝牙PBP公共广播协议：解锁LE Audio的公共音频新生态",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/163252188",
+      "hot": "9576"
     },
     {
       "rank": 9,
-      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
-      "hot": "11537"
+      "title": "SpringBoot+PostgreSQL + 硅基流动大模型从零搭建 Text-to-SQL 智能问答系统",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163398167",
+      "hot": "9517"
     },
     {
       "rank": 10,
-      "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
-      "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
-      "hot": "11454"
+      "title": "Linux 权限详解：从 rwx、chmod 到 umask、目录权限与粘滞位",
+      "url": "https://blog.csdn.net/Face_FeaR/article/details/163419309",
+      "hot": "9458"
     }
   ]
 }

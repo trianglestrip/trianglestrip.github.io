@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-03T04:34:58+00:00",
+  "updated_at": "2026-08-03T08:00:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "DBeaver 26.1.4 发布",
+      "url": "https://www.oschina.net/news/486167/dbeaver-26-1-4-released",
+      "hot": "Mon, 03 Aug 2026 14:51:41 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "自变量机器人开源 HOST 框架，让机器人看 29 秒视频就学会一个技能",
+      "url": "https://www.oschina.net/news/486146",
+      "hot": "Mon, 03 Aug 2026 14:29:31 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "snackjson v4.0.58 已经发布，高性能 Jsonpath 框架",
+      "url": "https://www.oschina.net/news/486130",
+      "hot": "Mon, 03 Aug 2026 14:03:58 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "RuleGo v0.37.0 发布：工业协议与时序库全面覆盖、Nacos 微服务发现、流计算 CEP",
+      "url": "https://www.oschina.net/news/486059/rulego-0-37-0-released",
+      "hot": "Mon, 03 Aug 2026 12:02:32 +0800"
+    },
+    {
+      "rank": 5,
       "title": "Qwen3.8-Max 发布，下周开源 Qwen3.8-27B",
       "url": "https://www.oschina.net/news/486035",
       "hot": "Mon, 03 Aug 2026 11:26:45 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Palantir 带火了本体，APM 排障有了本体就够吗？",
       "url": "https://my.oschina.net/pingpangkuangmo/blog/19730641",
       "hot": "Mon, 03 Aug 2026 11:21:56 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "MiniMax H3 开源：33B 全模态模型，一个视觉语言模型只够当它的编码器",
       "url": "https://www.oschina.net/news/486031",
       "hot": "Mon, 03 Aug 2026 11:19:31 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "SmartCall v1.0.2 发布，新增查看 AI 对话内容、录音打断配置",
       "url": "https://www.oschina.net/news/486023/smartcall-1-0-2-released",
       "hot": "Mon, 03 Aug 2026 11:13:24 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "Docker 29.7.1 发布",
       "url": "https://www.oschina.net/news/486022/docker-29-7-1-released",
       "hot": "Mon, 03 Aug 2026 11:12:08 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Ant Design 6.5.3 发布，企业级 UI 设计语言和 React 实现",
       "url": "https://www.oschina.net/news/486011/ant-design-6-5-3-released",
       "hot": "Mon, 03 Aug 2026 10:56:02 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "DeepSeek V4 Flash 跑分全解析，13 个最强模型里它最便宜",
-      "url": "https://www.oschina.net/news/485983",
-      "hot": "Mon, 03 Aug 2026 10:31:51 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "SparkX 企业智能体平台 2.0 版本发布",
-      "url": "https://www.oschina.net/news/485945/sparkx-2-0-released",
-      "hot": "Mon, 03 Aug 2026 09:44:24 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "DataBuff v0.1.6 发布 · Skywalking 平滑迁移到 Databuff",
-      "url": "https://www.oschina.net/news/485932/databuff-0-1-6-released",
-      "hot": "Mon, 03 Aug 2026 09:30:24 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "禅道开源版 22.4 发布，内置 DevOps4.0 正式版，提供从代码提交到交付的全生命周期的管理能力",
-      "url": "https://www.oschina.net/news/485911",
-      "hot": "Mon, 03 Aug 2026 08:42:10 +0800"
     }
   ]
 }

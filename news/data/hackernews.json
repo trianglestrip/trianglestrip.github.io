@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-03T04:34:55+00:00",
+  "updated_at": "2026-08-03T08:00:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
-      "url": "https://qwen.ai/blog?id=qwen3.8",
-      "hot": "186"
+      "title": "Don't be a meat proxy",
+      "url": "https://gruhn.me/blog/2026-08-03/",
+      "hot": "259"
     },
     {
       "rank": 2,
-      "title": "Show HN: Isopolis – Isometric pixel map of SF",
-      "url": "https://sf.isopolis.city/",
-      "hot": "105"
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "hot": "478"
     },
     {
       "rank": 3,
-      "title": "CP/M-386 – CP/M for 386 protected mode, derived from CP/M‑68K",
-      "url": "https://github.com/johnsonjh/cpm386",
-      "hot": "45"
+      "title": "More German than many Germans",
+      "url": "https://mertbulan.com/more-german-than-many-germans/",
+      "hot": "144"
     },
     {
       "rank": 4,
-      "title": "Karpathy’s Pelican",
-      "url": "https://twitter.com/karpathy/status/2083749667410727319",
-      "hot": "493"
+      "title": "Rust project goals: Immobile types and guaranteed destructors",
+      "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
+      "hot": "31"
     },
     {
       "rank": 5,
-      "title": "Show HN: ssh ssh.place",
-      "url": "https://ssh.place",
-      "hot": "66"
-    },
-    {
-      "rank": 6,
-      "title": "Show HN: A Handwritten Blogging Platform",
-      "url": "https://handwritten.blog/",
-      "hot": "37"
-    },
-    {
-      "rank": 7,
-      "title": "Why Book Corners won't sync contributions back to OpenStreetMap",
-      "url": "https://www.andreagrandi.it/posts/why-book-corners-wont-sync-contributions-back-to-openstreetmap/",
-      "hot": "66"
-    },
-    {
-      "rank": 8,
-      "title": "Autoregressive Language Model on the 6502 Processor",
-      "url": "https://mattbeton.com/blog/bitnet-6502.html",
-      "hot": "75"
-    },
-    {
-      "rank": 9,
-      "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
-      "url": "https://github.com/wie-project/kakehashi",
+      "title": "Show HN: Isopolis – Isometric pixel map of SF",
+      "url": "https://sf.isopolis.city/",
       "hot": "194"
     },
     {
+      "rank": 6,
+      "title": "AI migrated legacy COBOL programs to Java, bugs included",
+      "url": "https://arxiv.org/abs/2607.28271",
+      "hot": "45"
+    },
+    {
+      "rank": 7,
+      "title": "Karpathy’s Pelican",
+      "url": "https://twitter.com/karpathy/status/2083749667410727319",
+      "hot": "549"
+    },
+    {
+      "rank": 8,
+      "title": "Show HN: ssh ssh.place",
+      "url": "https://ssh.place",
+      "hot": "103"
+    },
+    {
+      "rank": 9,
+      "title": "Why we write our own C and C++ inference engines",
+      "url": "https://localai.io/blog/why-we-write-our-own-engines/",
+      "hot": "40"
+    },
+    {
       "rank": 10,
-      "title": "Note-Taking and Personal Knowledge Management",
-      "url": "https://unattributed.cc/note-taking-and-personal-knowledge-management",
-      "hot": "157"
+      "title": "Convergence is not enough",
+      "url": "https://www.inkandswitch.com/livelymerge/notebook/lm-02/",
+      "hot": "28"
     }
   ]
 }
