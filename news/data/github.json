@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-08-04T09:47:44+00:00",
+  "updated_at": "2026-08-04T17:21:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Jupyter Notebook] lyogavin/airllm",
-      "url": "https://github.com/lyogavin/airllm",
-      "hot": "27,837"
+      "title": "[TypeScript] TencentCloud/TencentDB-Agent-Memory",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "hot": "13,200"
     },
     {
       "rank": 2,
       "title": "[PowerShell] zhaoxuya520/reverse-skill",
       "url": "https://github.com/zhaoxuya520/reverse-skill",
-      "hot": "16,830"
+      "hot": "17,560"
     },
     {
       "rank": 3,
       "title": "[Rust] firecrawl/pdf-inspector",
       "url": "https://github.com/firecrawl/pdf-inspector",
-      "hot": "9,072"
+      "hot": "9,637"
     },
     {
       "rank": 4,
-      "title": "[Go] esengine/DeepSeek-Reasonix",
-      "url": "https://github.com/esengine/DeepSeek-Reasonix",
-      "hot": "30,392"
+      "title": "[Python] uber/ADR",
+      "url": "https://github.com/uber/ADR",
+      "hot": "598"
     },
     {
       "rank": 5,
-      "title": "[TypeScript] TencentCloud/TencentDB-Agent-Memory",
-      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "hot": "12,612"
+      "title": "[Shell] obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "hot": "266,288"
     },
     {
       "rank": 6,
-      "title": "[Jupyter Notebook] microsoft/AI-For-Beginners",
-      "url": "https://github.com/microsoft/AI-For-Beginners",
-      "hot": "61,374"
+      "title": "[Jupyter Notebook] microsoft/generative-ai-for-beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "hot": "116,146"
     },
     {
       "rank": 7,
-      "title": "[Jupyter Notebook] microsoft/generative-ai-for-beginners",
-      "url": "https://github.com/microsoft/generative-ai-for-beginners",
-      "hot": "115,948"
+      "title": "[TypeScript] cypress-io/cypress",
+      "url": "https://github.com/cypress-io/cypress",
+      "hot": "50,722"
     },
     {
       "rank": 8,
-      "title": "[Python] donnemartin/system-design-primer",
-      "url": "https://github.com/donnemartin/system-design-primer",
-      "hot": "360,835"
+      "title": "[Jupyter Notebook] lyogavin/airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "hot": "28,149"
     },
     {
       "rank": 9,
-      "title": "[C] antirez/ds4",
-      "url": "https://github.com/antirez/ds4",
-      "hot": "20,486"
+      "title": "[JavaScript] webpack/webpack",
+      "url": "https://github.com/webpack/webpack",
+      "hot": "65,901"
     },
     {
       "rank": 10,
-      "title": "[Python] shiyu-coder/Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "hot": "35,931"
+      "title": "[C++] gabime/spdlog",
+      "url": "https://github.com/gabime/spdlog",
+      "hot": "29,353"
     }
   ]
 }
