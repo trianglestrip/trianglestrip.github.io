@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-03T18:06:16+00:00",
+  "updated_at": "2026-08-04T01:11:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "9811"
+      "hot": "9847"
     },
     {
       "rank": 2,
       "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "2012"
+      "hot": "2056"
     },
     {
       "rank": 3,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "1277"
+      "hot": "1453"
     },
     {
       "rank": 4,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "1413"
+      "hot": "1430"
     },
     {
       "rank": 5,
-      "title": "baidu/Unlimited-OCR",
-      "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3837"
+      "title": "Comfy-Org/MiniMax-H3",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "hot": "444"
     },
     {
       "rank": 6,
       "title": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
       "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
-      "hot": "409"
+      "hot": "428"
     },
     {
       "rank": 7,
-      "title": "Comfy-Org/MiniMax-H3",
-      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
-      "hot": "399"
+      "title": "baidu/Unlimited-OCR",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "hot": "3846"
     },
     {
       "rank": 8,
-      "title": "unsloth/Kimi-K3-GGUF",
-      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
-      "hot": "279"
+      "title": "thinkingmachines/Inkling-Small",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
+      "hot": "262"
     },
     {
       "rank": 9,
-      "title": "thinkingmachines/Inkling-Small",
-      "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
-      "hot": "256"
+      "title": "unsloth/Kimi-K3-GGUF",
+      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
+      "hot": "281"
     },
     {
       "rank": 10,
       "title": "zai-org/GLM-5.2",
       "url": "https://huggingface.co/zai-org/GLM-5.2",
-      "hot": "4793"
+      "hot": "4797"
     }
   ]
 }
