@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-04T18:58:33+00:00",
+  "updated_at": "2026-08-04T20:22:00+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,44 +24,44 @@
     },
     {
       "rank": 4,
-      "title": "尊界时代旗舰MPV正式发布",
-      "url": "https://s.weibo.com/weibo?q=%E5%B0%8A%E7%95%8C%E6%97%B6%E4%BB%A3%E6%97%97%E8%88%B0MPV%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83",
-      "hot": ""
-    },
-    {
-      "rank": 5,
       "title": "鸿蒙智行回应竹知了事件",
       "url": "https://s.weibo.com/weibo?q=%E9%B8%BF%E8%92%99%E6%99%BA%E8%A1%8C%E5%9B%9E%E5%BA%94%E7%AB%B9%E7%9F%A5%E4%BA%86%E4%BA%8B%E4%BB%B6",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "怪不得有人看病能在诊室待很久",
       "url": "https://s.weibo.com/weibo?q=%E6%80%AA%E4%B8%8D%E5%BE%97%E6%9C%89%E4%BA%BA%E7%9C%8B%E7%97%85%E8%83%BD%E5%9C%A8%E8%AF%8A%E5%AE%A4%E5%BE%85%E5%BE%88%E4%B9%85",
       "hot": ""
     },
     {
+      "rank": 6,
+      "title": "中式片假名能不能离开我的生活",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E5%BC%8F%E7%89%87%E5%81%87%E5%90%8D%E8%83%BD%E4%B8%8D%E8%83%BD%E7%A6%BB%E5%BC%80%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB",
+      "hot": ""
+    },
+    {
       "rank": 7,
-      "title": "宜宾地震",
-      "url": "https://s.weibo.com/weibo?q=%E5%AE%9C%E5%AE%BE%E5%9C%B0%E9%9C%87",
+      "title": "娇兰蓝调淡香精",
+      "url": "https://s.weibo.com/weibo?q=%E5%A8%87%E5%85%B0%E8%93%9D%E8%B0%83%E6%B7%A1%E9%A6%99%E7%B2%BE",
       "hot": ""
     },
     {
       "rank": 8,
-      "title": "八仙",
-      "url": "https://s.weibo.com/weibo?q=%E5%85%AB%E4%BB%99",
-      "hot": ""
-    },
-    {
-      "rank": 9,
       "title": "金鹰奖 提名规则",
       "url": "https://s.weibo.com/weibo?q=%E9%87%91%E9%B9%B0%E5%A5%96%20%E6%8F%90%E5%90%8D%E8%A7%84%E5%88%99",
       "hot": ""
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "心理学上有个词叫螃蟹效应",
       "url": "https://s.weibo.com/weibo?q=%E5%BF%83%E7%90%86%E5%AD%A6%E4%B8%8A%E6%9C%89%E4%B8%AA%E8%AF%8D%E5%8F%AB%E8%9E%83%E8%9F%B9%E6%95%88%E5%BA%94",
+      "hot": ""
+    },
+    {
+      "rank": 10,
+      "title": "八仙",
+      "url": "https://s.weibo.com/weibo?q=%E5%85%AB%E4%BB%99",
       "hot": ""
     }
   ]
