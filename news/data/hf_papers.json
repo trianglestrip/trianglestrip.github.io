@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-04T01:11:13+00:00",
+  "updated_at": "2026-08-04T09:48:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3: Open Frontier Intelligence",
       "url": "https://huggingface.co/papers/2607.24653",
-      "hot": "446"
+      "hot": "449"
     },
     {
       "rank": 2,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "84"
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "177"
     },
     {
       "rank": 9,
       "title": "Scaling Properties of Text Conditioning in Visual Generation",
       "url": "https://huggingface.co/papers/2607.29679",
-      "hot": "24"
+      "hot": "31"
     },
     {
       "rank": 10,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "177"
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "84"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-04T07:09:31+00:00",
+  "updated_at": "2026-08-04T09:48:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Redisson 4.7.0 发布，官方推荐的 Redis 客户端",
+      "url": "https://www.oschina.net/news/487199/redisson-4-7-0-released",
+      "hot": "Tue, 04 Aug 2026 17:37:55 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Hugging Face CEO 发声：中国正在开源模型上碾压我们",
+      "url": "https://www.oschina.net/news/487177/hugging-face-china-ai-race-open-models",
+      "hot": "Tue, 04 Aug 2026 17:21:48 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "当 AI agent 把源码变成了最好的扩展系统，开发者工具必须开源",
+      "url": "https://www.oschina.net/news/487144",
+      "hot": "Tue, 04 Aug 2026 16:59:48 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Loop Engineering：让 AI Agent 自己跑起来的工程方法",
+      "url": "https://my.oschina.net/u/6769809/blog/19729119",
+      "hot": "Tue, 04 Aug 2026 16:53:13 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "DeepSeek Harness 宣布内测邀请，全网最大规模开源 Agent 路演现场诞生",
+      "url": "https://www.oschina.net/news/487110",
+      "hot": "Tue, 04 Aug 2026 16:26:30 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "商汤 SenseNova U1.5-Lite-Preview 开源",
+      "url": "https://www.oschina.net/news/487067",
+      "hot": "Tue, 04 Aug 2026 15:51:00 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "Ubuntu 将核心系统包从 deb 转成了 snap",
+      "url": "https://www.oschina.net/news/487026/ubuntu-hwctl-deb-to-snap-transition",
+      "hot": "Tue, 04 Aug 2026 15:11:53 +0800"
+    },
+    {
+      "rank": 8,
       "title": "Semi Design v2.102.0 发布，抖音企业级 UI 库",
       "url": "https://www.oschina.net/news/487021/semi-design-2-102-0-released",
       "hot": "Tue, 04 Aug 2026 15:08:05 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "智谱 GLM-5.3 提前曝光",
       "url": "https://www.oschina.net/news/487000",
       "hot": "Tue, 04 Aug 2026 14:44:09 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "API 智能开发平台 5.3 发布",
       "url": "https://www.oschina.net/news/486996/crabc-5-3-released",
       "hot": "Tue, 04 Aug 2026 14:40:09 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "Gitee AI 队友正式上线，免费领 500 Credits 体验额度",
-      "url": "https://www.oschina.net/news/486884",
-      "hot": "Tue, 04 Aug 2026 12:08:06 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Dario Amodei 担心新人来 Anthropic 只为金钱，不为使命",
-      "url": "https://www.oschina.net/news/486872",
-      "hot": "Tue, 04 Aug 2026 11:54:38 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "IBM 报告：1/4 的恶意攻击由 AI 驱动，单起平均造成 600 万美元损失",
-      "url": "https://www.oschina.net/news/486852",
-      "hot": "Tue, 04 Aug 2026 11:39:20 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "ShopXO 免费开源商城系统 v6.9.1 版本已发布",
-      "url": "https://www.oschina.net/news/486846",
-      "hot": "Tue, 04 Aug 2026 11:32:18 +0800"
-    },
-    {
-      "rank": 8,
-      "title": ":seedling: Qualia 开源：面向 Java 开发者的 AI Agent 框架",
-      "url": "https://www.oschina.net/news/486832",
-      "hot": "Tue, 04 Aug 2026 11:17:29 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "拒绝 “黑盒式” 治理：AgentLoop 如何通过语义链路还原，精准发现 AI 调用中的敏感数据泄漏？",
-      "url": "https://my.oschina.net/u/3874284/blog/19732275",
-      "hot": "Tue, 04 Aug 2026 11:14:37 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "FFmpeg 9.0 发布",
-      "url": "https://www.oschina.net/news/486817/ffmpeg-9-0-released",
-      "hot": "Tue, 04 Aug 2026 10:56:21 +0800"
     }
   ]
 }
