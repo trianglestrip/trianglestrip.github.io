@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-04T15:45:17+00:00",
+  "updated_at": "2026-08-04T18:59:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
-      "hot": "18503"
+      "title": "AI聊天也能拥有Live2D形象？Open-LLM-VTuber部署实战",
+      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163470652",
+      "hot": "19076"
     },
     {
       "rank": 2,
-      "title": "AI漫剧制作、运营与商业化：从 0 到 1 搭建一个人的内容生产系统",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/163400136",
-      "hot": "17680"
+      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
+      "hot": "18461"
     },
     {
       "rank": 3,
       "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
       "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
-      "hot": "15202"
+      "hot": "14327"
     },
     {
       "rank": 4,
-      "title": "【Linux网络】深入 HTTP 协议（五）:从 Cookie/Session 原理到 C++ 源码实战",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/163411345",
-      "hot": "13346"
+      "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
+      "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
+      "hot": "10427"
     },
     {
       "rank": 5,
-      "title": "【MYSQL】MYSQL学习的一大重点：事务（上）- 原子性与持久性",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/163377285",
-      "hot": "12159"
+      "title": "Zookeeper - 临时节点的生命周期与核心特性详解",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157688356",
+      "hot": "9913"
     },
     {
       "rank": 6,
-      "title": "Zookeeper - 临时节点的生命周期与核心特性详解",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157688356",
-      "hot": "11596"
+      "title": "React 的createClass 是怎么实现的?：深入解析 React 早期组件工厂的底层原理",
+      "url": "https://blog.csdn.net/qq_41840843/article/details/163437536",
+      "hot": "9396"
     },
     {
       "rank": 7,
-      "title": "React 的createClass 是怎么实现的?：深入解析 React 早期组件工厂的底层原理",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/163437536",
-      "hot": "11429"
+      "title": "PyTorch强化学习实战（21）——异步优势演员-评论家（Asynchronous Advantage Actor-Critic, A3C）",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766138",
+      "hot": "8826"
     },
     {
       "rank": 8,
-      "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
-      "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
-      "hot": "10449"
+      "title": "【MYSQL】MYSQL学习的一大重点：事务（上）- 原子性与持久性",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163377285",
+      "hot": "8541"
     },
     {
       "rank": 9,
-      "title": "AI聊天也能拥有Live2D形象？Open-LLM-VTuber部署实战",
-      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163470652",
-      "hot": "10076"
+      "title": "【AVDTP】规范精讲[8-1]: 从报文封装到分片机制，吃透蓝牙音视频流控制信令底层逻辑",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/163314299",
+      "hot": "8318"
     },
     {
       "rank": 10,
-      "title": "【AVDTP】规范精讲[8-1]: 从报文封装到分片机制，吃透蓝牙音视频流控制信令底层逻辑",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/163314299",
-      "hot": "10065"
+      "title": "【Linux网络】深入 HTTP 协议（五）:从 Cookie/Session 原理到 C++ 源码实战",
+      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/163411345",
+      "hot": "8094"
     }
   ]
 }
