@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-04T11:50:39+00:00",
+  "updated_at": "2026-08-04T15:45:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "FFmpeg 9.0",
-      "url": "https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES",
-      "hot": "223"
+      "title": "Ray Bradbury's \"There Will Come Soft Rains\" is set today (2026-08-04)",
+      "url": "https://short-stories.co/@raybradbury/there-will-come-soft-rains-6k8vr4xxlnmj",
+      "hot": "347"
     },
     {
       "rank": 2,
       "title": "DeepSeek V4 Flash on a Single AMD MI300X",
       "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
-      "hot": "63"
+      "hot": "237"
     },
     {
       "rank": 3,
-      "title": "LLMs reward expertise",
-      "url": "https://www.seangoedecke.com/llms-reward-expertise/",
-      "hot": "1024"
+      "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
+      "url": "https://toneyalexander.github.io/inclusive-color-space/",
+      "hot": "14"
     },
     {
       "rank": 4,
-      "title": "Harness Engineering for Self-Improvement",
-      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
-      "hot": "87"
+      "title": "Germany Records Historic 12B KWh Solar Feed-In in July 2026",
+      "url": "https://solarquarter.com/2026/08/03/germany-records-historic-12-billion-kwh-solar-feed-in-in-july-2026/",
+      "hot": "19"
     },
     {
       "rank": 5,
-      "title": "Mini retirements: like a sabbatical, but much smaller",
-      "url": "https://www.ssp.sh/brain/mini-retirements/",
-      "hot": "8"
+      "title": "Dates That Don't Exist (2015)",
+      "url": "https://blog.yossarian.net/2015/06/09/Dates-That-Dont-Exist",
+      "hot": "37"
     },
     {
       "rank": 6,
-      "title": "Buckminster Fuller: everything I know",
-      "url": "https://www.bfi.org/about-fuller/everything-i-know/",
-      "hot": "5"
+      "title": "LLMs reward expertise",
+      "url": "https://www.seangoedecke.com/llms-reward-expertise/",
+      "hot": "1197"
     },
     {
       "rank": 7,
-      "title": "Show HN: Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
-      "url": "https://github.com/leonickson1/Swiftlet",
-      "hot": "211"
+      "title": "Keyv and friends compromised in active Shai-Hulud supply chain attack",
+      "url": "https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack",
+      "hot": "101"
     },
     {
       "rank": 8,
-      "title": "Ten advances in mathematics and theoretical computer science",
-      "url": "https://openai.com/index/ten-advances-in-mathematics/",
-      "hot": "557"
+      "title": "Xbox goes down. You can't play games you own on disc",
+      "url": "https://birchtree.me/blog/xbox-goes-down-you-cant-play-games-you-own-on-disc/",
+      "hot": "322"
     },
     {
       "rank": 9,
-      "title": "Cyberpunk Video Games",
-      "url": "https://shellzine.net/cyberpunk-video-games/",
-      "hot": "20"
+      "title": "Agent skills that bring team coding standards to Claude Code and Codex",
+      "url": "https://github.com/tikalk/adlc-team-skills",
+      "hot": "39"
     },
     {
       "rank": 10,
-      "title": "You don't need React: creating a minimal UI library in Vanilla JavaScript",
-      "url": "https://pedroth.github.io/?p=post/NoNeedReact",
-      "hot": "72"
+      "title": "Buckminster Fuller: everything I know",
+      "url": "https://www.bfi.org/about-fuller/everything-i-know/",
+      "hot": "68"
     }
   ]
 }
