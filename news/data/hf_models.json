@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-04T17:21:24+00:00",
+  "updated_at": "2026-08-04T23:42:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "2241"
+      "hot": "2291"
     },
     {
       "rank": 2,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "1888"
+      "hot": "1997"
     },
     {
       "rank": 3,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "9981"
+      "hot": "10006"
     },
     {
       "rank": 4,
       "title": "Comfy-Org/MiniMax-H3",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
-      "hot": "569"
+      "hot": "593"
     },
     {
       "rank": 5,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "1494"
+      "hot": "1510"
     },
     {
       "rank": 6,
       "title": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
       "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
-      "hot": "460"
+      "hot": "468"
     },
     {
       "rank": 7,
       "title": "baidu/Unlimited-OCR",
       "url": "https://huggingface.co/baidu/Unlimited-OCR",
-      "hot": "3876"
+      "hot": "3880"
     },
     {
       "rank": 8,
       "title": "thinkingmachines/Inkling-Small",
       "url": "https://huggingface.co/thinkingmachines/Inkling-Small",
-      "hot": "278"
+      "hot": "283"
     },
     {
       "rank": 9,
       "title": "Audio8/Audio8-TTS-Preview-0.6b",
       "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b",
-      "hot": "235"
+      "hot": "246"
     },
     {
       "rank": 10,
       "title": "unsloth/Kimi-K3-GGUF",
       "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
-      "hot": "300"
+      "hot": "304"
     }
   ]
 }
