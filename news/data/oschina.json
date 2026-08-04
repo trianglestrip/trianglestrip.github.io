@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-04T09:48:01+00:00",
+  "updated_at": "2026-08-04T11:50:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "FFmpeg 9.0 发布：代号“Lei”，以此纪念中国开发者雷霄骅",
+      "url": "https://www.oschina.net/news/487289",
+      "hot": "Tue, 04 Aug 2026 19:18:23 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "梁文锋被扒出早年微博小号，孤身前往无人区来一场相当 deep 的 seek 旅行",
+      "url": "https://www.oschina.net/news/487233",
+      "hot": "Tue, 04 Aug 2026 18:05:37 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "亚马逊成本失控：AI 写代码烧掉 1215 万元，超预算 860%",
+      "url": "https://www.oschina.net/news/487225",
+      "hot": "Tue, 04 Aug 2026 17:57:25 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "九有数据库“可信多模 AI 数据底座关键技术及应用”通过科技成果评价",
+      "url": "https://www.oschina.net/news/487222",
+      "hot": "Tue, 04 Aug 2026 17:55:54 +0800"
+    },
+    {
+      "rank": 5,
       "title": "Redisson 4.7.0 发布，官方推荐的 Redis 客户端",
       "url": "https://www.oschina.net/news/487199/redisson-4-7-0-released",
       "hot": "Tue, 04 Aug 2026 17:37:55 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Hugging Face CEO 发声：中国正在开源模型上碾压我们",
       "url": "https://www.oschina.net/news/487177/hugging-face-china-ai-race-open-models",
       "hot": "Tue, 04 Aug 2026 17:21:48 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "当 AI agent 把源码变成了最好的扩展系统，开发者工具必须开源",
       "url": "https://www.oschina.net/news/487144",
       "hot": "Tue, 04 Aug 2026 16:59:48 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "Loop Engineering：让 AI Agent 自己跑起来的工程方法",
       "url": "https://my.oschina.net/u/6769809/blog/19729119",
       "hot": "Tue, 04 Aug 2026 16:53:13 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "DeepSeek Harness 宣布内测邀请，全网最大规模开源 Agent 路演现场诞生",
       "url": "https://www.oschina.net/news/487110",
       "hot": "Tue, 04 Aug 2026 16:26:30 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "商汤 SenseNova U1.5-Lite-Preview 开源",
       "url": "https://www.oschina.net/news/487067",
       "hot": "Tue, 04 Aug 2026 15:51:00 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Ubuntu 将核心系统包从 deb 转成了 snap",
-      "url": "https://www.oschina.net/news/487026/ubuntu-hwctl-deb-to-snap-transition",
-      "hot": "Tue, 04 Aug 2026 15:11:53 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Semi Design v2.102.0 发布，抖音企业级 UI 库",
-      "url": "https://www.oschina.net/news/487021/semi-design-2-102-0-released",
-      "hot": "Tue, 04 Aug 2026 15:08:05 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "智谱 GLM-5.3 提前曝光",
-      "url": "https://www.oschina.net/news/487000",
-      "hot": "Tue, 04 Aug 2026 14:44:09 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "API 智能开发平台 5.3 发布",
-      "url": "https://www.oschina.net/news/486996/crabc-5-3-released",
-      "hot": "Tue, 04 Aug 2026 14:40:09 +0800"
     }
   ]
 }
