@@ -1,68 +1,68 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-08-05T01:04:46+00:00",
+  "updated_at": "2026-08-05T04:20:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "某音 JSVMP bogus纯算",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2120914",
-      "hot": "[md]根据代码进行调试可以发现J是vmp的装载器\n\n```\n      function J(t, r, e, n) {\n        return (\n          Z.length ||\n            (function (t) {\n              var r = (function (t) {\n              ..."
-    },
-    {
-      "rank": 2,
       "title": "[长期更新] RV32IMAFDQ指令集模拟器 包含交互式汇编级调试器",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2119162",
       "hot": "[md]## 【原创C&amp;C++】RISCVemu：60/60通过riscv-tests的RV32IMA指令集模拟器，含完整交互式调试器【长期更新项目】\n### 0xfe. 已完成FDQ扩展 见回帖和v0.3tag\n(希望uint8够用）（笑）\n### 0x00. 为什么写这个模拟器？\n\nRISC-V 作为开源指令集架构，近年来在学术界 ..."
     },
     {
-      "rank": 3,
+      "rank": 2,
       "title": "某骗子黑产软件（手机远控）的分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117851",
       "hot": "[md]# 某恶意 APK 分析\n## APK 信息\n- 文件名：`欣姐.apk`\n- 文件大小：`17.3 MB (18,238,424 字节)`\n- 应用名：`欣姐`\n\n\n## 行为\n### 应用程序启动时，会要求开启无障碍权限。\n\n\n\n这种招数已经见怪不怪，骗 ..."
     },
     {
-      "rank": 4,
+      "rank": 3,
       "title": "从时间片轮转到调用级并发：unidbg 单后端多线程架构重构",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117230",
       "hot": "[md]# 从时间片轮转到调用级并发：unidbg 单后端多线程架构重构\n\n&gt; 本文讨论的是 unidbg 在单 Unicorn 后端下模拟多线程 native 程序时的通用架构问题。文中的命令、线程、回调与返回值均为抽象示例，不对应任何具体 ..."
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "当游戏越来越漂亮，外挂却越来越丑：作弊技术摸底（2026）",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117216",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "对某java保护器本体的逆向分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116474",
       "hot": "[md]## 0x00 前言\n\n最近在翻视频的时候发现了一个 Java 保护器，其官网宣称：\n\n&gt; 最佳的 Java 源代码保护方案\n\n然后一看价格，799 USD 一年，这么贵，那我可得看看你值不值了，开干。\n\n对于这个商业软件的名称，这里做三次 b64 化：\n\n```text\nWTBoS2RtUkhWbX ..."
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "SpongeMixer企业级勒索软件的加密逻辑及行为分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116347",
       "hot": "近期，一款企业级勒索软件SpongeMixer在国内多地呈现活跃态势。瞬犀安全实验室结合样本逆向分析、加密结构还原和行为链追踪，对其攻击特征进行了综合研判。\n逆向分析结果显示，该勒索软件会针对计算机系统恢复机制及第 ..."
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "某音a_bogus jsvmp反编译",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116186",
       "hot": "[md]上一篇文章[某q音乐jsvmp反编译](https://www.52pojie.cn/thread-2042090-1-1.html)介绍了寄存器类型的vmp反编译，bdms这个是基于堆栈的vmp，去年已经写好了，一直懒得总结，今天跟大家分享一下思路，如有不对的地方 ..."
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "Q音VMP初始化分析&SHA-1算法识别",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116112",
       "hot": "[md]# QQ音乐Sign逆向\n\n碎碎念\n\n本篇主要分析VMP初始化，识别VMP，识别SHA-1在VMP中的输出特征\n\n此VMP也比较有趣，一般来说VMP会将元操作抽离为某个case或者某个函数，但是此VMP中将多个元操作组合在一个函数中， ..."
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "基于文本匹配的VMP还原思路",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2115425",
       "hot": "[md]# 基于文本匹配的 VMP 还原\n\n## 一、问题定义\n\nVMP 逆向的传统路径很重：理解虚拟机架构 → 分析每条 handler 的语义 → 手动重建控制流 → 写复杂的模式匹配规则。\n\n但现在做逆向，trace 几乎已经是标配。unidbg 模拟执行也好、真机跑也罢，最终都会拿到一份 ..."
+    },
+    {
+      "rank": 10,
+      "title": "iOS App的商业级环境检测手段 - 基于某讯A<E Framework 详解",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2115245",
+      "hot": "[md]# iOS App的商业级环境检测手段 - 基于某讯&amp;#197; anort -&gt; anogs\n```\n\n### 2.2 `anogs`核心分析\n\n#### 2.2.1 字符串加密模式\n\n直接用IDA Pro打开`anogs`二进制，左侧可以看到其导出表没有被混淆，先看`_AnoS ..."
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-05T01:04:49+00:00",
+  "updated_at": "2026-08-05T04:20:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "libexpat now funded by the City of Munich for up to 6 months",
       "url": "https://blog.hartwork.org/posts/libexpat-city-of-munich-open-source-sabbatical/",
-      "hot": "91"
+      "hot": "196"
     },
     {
       "rank": 2,
-      "title": "Eight Myths on Software Engineering and GenAI",
-      "url": "https://queue.acm.org/detail.cfm?id=3807963",
-      "hot": "31"
+      "title": "After Losses, Retail Investors Flock to 3x Leverage as 2x Product Are Restricted",
+      "url": "https://www.asiae.co.kr/en/article/2026080416131786841",
+      "hot": "39"
     },
     {
       "rank": 3,
-      "title": "I am retiring from fulltime writing (& pseudonymity) to launch Guardian Angel",
-      "url": "https://twitter.com/gwern/status/2084739205071343837",
-      "hot": "142"
+      "title": "Pi's Minimalism Is Its Advantage",
+      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
+      "hot": "183"
     },
     {
       "rank": 4,
-      "title": "DuckDB – Data power tools for your laptop, now in Clojure (2023)",
-      "url": "https://techascent.com/blog/just-ducking-around.html",
-      "hot": "46"
+      "title": "Eight Myths on Software Engineering and GenAI",
+      "url": "https://queue.acm.org/detail.cfm?id=3807963",
+      "hot": "121"
     },
     {
       "rank": 5,
-      "title": "Pi's Minimalism Is Its Advantage",
-      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
-      "hot": "67"
+      "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "hot": "340"
     },
     {
       "rank": 6,
-      "title": "Pass the Passkey: A Novel Attack Surface in Passwordless Authentication",
-      "url": "https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/",
-      "hot": "31"
+      "title": "IP and DNS Leaks in WebKit Affecting Proxy Browsers and iCloud Private Relay",
+      "url": "https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/",
+      "hot": "61"
     },
     {
       "rank": 7,
-      "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
-      "url": "https://mistral.ai/news/shieldstral/",
-      "hot": "297"
+      "title": "Zigbee vs. Matter over Thread:Understanding IoT Protocol Performance in Practice",
+      "url": "https://arxiv.org/abs/2603.04221",
+      "hot": "44"
     },
     {
       "rank": 8,
-      "title": "We finally learned to center a div, then browsers added sidebars",
-      "url": "https://seg6.space/posts/center-div/",
-      "hot": "45"
+      "title": "DuckDB – Data power tools for your laptop, now in Clojure (2023)",
+      "url": "https://techascent.com/blog/just-ducking-around.html",
+      "hot": "68"
     },
     {
       "rank": 9,
-      "title": "IP and DNS Leaks in WebKit Affecting Proxy Browsers and iCloud Private Relay",
-      "url": "https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/",
-      "hot": "25"
+      "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
+      "url": "https://toneyalexander.github.io/inclusive-color-space/",
+      "hot": "479"
     },
     {
       "rank": 10,
-      "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
-      "url": "https://toneyalexander.github.io/inclusive-color-space/",
-      "hot": "458"
+      "title": "Show HN: Maple-Preview – ternary 20B MoE running at 120 tok/s on a iPhone",
+      "url": "https://deepgrove.ai/maple-preview",
+      "hot": "78"
     }
   ]
 }

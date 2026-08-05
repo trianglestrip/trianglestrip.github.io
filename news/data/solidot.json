@@ -1,8 +1,9 @@
 {
   "source": "solidot",
   "title": "Solidot",
-  "updated_at": "2026-08-05T01:03:50+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-08-05T04:20:13+00:00",
+  "fetch_ok": false,
+  "error": "<urlopen error _ssl.c:983: The handshake operation timed out>",
   "items": [
     {
       "rank": 1,

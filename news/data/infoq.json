@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-05T01:04:53+00:00",
+  "updated_at": "2026-08-05T04:20:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "一种用于管理 AI 变革步伐的演进式架构模式",
+      "url": "https://www.infoq.cn/article/h5Huo1l8Buyv0t8DXz6L?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 05 Aug 2026 12:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "用Skill Hub一键调用技能，重塑 AI Agent 实战力",
+      "url": "https://www.infoq.cn/video/b52zg9lZJ6dguds0SxaO?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 05 Aug 2026 11:51:02 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "腾讯会议AI实战指南：随时随地记录，对话即生产力",
+      "url": "https://www.infoq.cn/video/YIVxVxU010vgJ6VON2LE?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 05 Aug 2026 11:50:53 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "为什么 AI 视频，需要“懂生成”的画质增强",
+      "url": "https://www.infoq.cn/article/Vv9R7T4i9XfrDOjbiVPr?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 05 Aug 2026 11:06:56 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "AI 根因分析从模型推理转向上下文工程",
+      "url": "https://www.infoq.cn/article/sJLewGjY5sUZPgpGy071?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 05 Aug 2026 10:24:08 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "从工具调用到生产级 Data Agent：Context 与治理闭环｜AICon深圳",
+      "url": "https://www.infoq.cn/article/2djLJTOiQuAjeriOthao?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 05 Aug 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "FDE 又不够了",
+      "url": "https://www.infoq.cn/article/Qbjv3o1cWo3W7NIPUa6y?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 05 Aug 2026 09:35:44 GMT"
+    },
+    {
+      "rank": 8,
+      "title": "GPT-5.6 当老板：买假用户、被Chrome干崩3小时，烧掉3亿Token收入却为0",
+      "url": "https://www.infoq.cn/article/4rVt0Kd7LZeHP1krbeTf?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 05 Aug 2026 09:17:03 GMT"
+    },
+    {
+      "rank": 9,
       "title": "倒计时 1 天｜跨境电商 AI Workforce 大会明日重磅启幕",
       "url": "https://www.infoq.cn/article/8TfMHMQEm0fW0wXu3IlB?utm_source=rss&utm_medium=article",
       "hot": "Tue, 04 Aug 2026 19:14:57 GMT"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "RAG 不够用了？揭秘纯向量检索的 3 个盲区！",
       "url": "https://www.infoq.cn/video/ZjMFQf6aMQyDcooqSiTU?utm_source=rss&utm_medium=article",
       "hot": "Tue, 04 Aug 2026 19:05:26 GMT"
-    },
-    {
-      "rank": 3,
-      "title": "知识库越建越大，为什么团队还在重复踩坑？",
-      "url": "https://www.infoq.cn/video/Jlec9Wj1vAJWyac908Rx?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 04 Aug 2026 18:20:40 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "空客将“免受域外法律约束”列为其云服务招标的评分标准",
-      "url": "https://www.infoq.cn/article/oef2KK0GlgTwuwHr4B8Q?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 04 Aug 2026 18:00:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "Zalando 如何构建了一个每秒能够处理 100 万次请求的客户端进程内负载均衡器",
-      "url": "https://www.infoq.cn/article/97oCpVItccS9jN4lxRdA?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 04 Aug 2026 16:27:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "Agent 的错误记忆，比没有记忆更加危险！",
-      "url": "https://www.infoq.cn/video/QLwCqPT2T2ZwzbTs8xud?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 04 Aug 2026 16:23:54 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Agent 记忆，不能只靠聊天记录",
-      "url": "https://www.infoq.cn/article/qm3RHL133SESFZJGrmeA?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 04 Aug 2026 14:37:52 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "以 AI 为辅助的安全研究人员发现，攻击者可以利用经过特殊构造的视频获取用户电脑的访问权限",
-      "url": "https://www.infoq.cn/article/Mar3v7yyH4PjYFKLUZUh?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 04 Aug 2026 14:15:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Java 近期新闻：简单 JSON API、JEPs for JDK 28、Oracle CPUs、Embabel 1.0、Azul Payara、Helidon",
-      "url": "https://www.infoq.cn/article/bARNOrjTARc9O7BuwVUE?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 04 Aug 2026 10:52:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "MUSA开发者大赛丨算子挑战赛S2赛季正式开启！",
-      "url": "https://www.infoq.cn/article/ehgQiIVRtg3fyyz2wMh9?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 04 Aug 2026 10:47:12 GMT"
     }
   ]
 }

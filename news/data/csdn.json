@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-05T01:04:43+00:00",
+  "updated_at": "2026-08-05T04:20:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI聊天也能拥有Live2D形象？Open-LLM-VTuber部署实战",
-      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163470652",
-      "hot": "19090"
+      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
+      "hot": "18333"
     },
     {
       "rank": 2,
-      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
-      "hot": "18145"
+      "title": "从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从Q/K/V到拼音转汉字:用PyTorch从零拆解Transformer编码器)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/163221683",
+      "hot": "16045"
     },
     {
       "rank": 3,
-      "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
-      "hot": "13850"
+      "title": "AI聊天也能拥有Live2D形象？Open-LLM-VTuber部署实战",
+      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163470652",
+      "hot": "14416"
     },
     {
       "rank": 4,
-      "title": "从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从Q/K/V到拼音转汉字:用PyTorch从零拆解Transformer编码器)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/163221683",
-      "hot": "13637"
+      "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
+      "hot": "13679"
     },
     {
       "rank": 5,
       "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
       "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
-      "hot": "12429"
+      "hot": "11205"
     },
     {
       "rank": 6,
-      "title": "Zookeeper - 临时节点的生命周期与核心特性详解",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157688356",
-      "hot": "10859"
+      "title": "Grafana只能在内网看？配置HTTPS公网地址远程打开监控面板",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/163479423",
+      "hot": "9640"
     },
     {
       "rank": 7,
-      "title": "PyTorch强化学习实战（21）——异步优势演员-评论家（Asynchronous Advantage Actor-Critic, A3C）",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766138",
-      "hot": "9489"
+      "title": "ZooKeeper 3.7.1三节点集群部署：myid、选举与同步测试",
+      "url": "https://blog.csdn.net/COLLINSXU/article/details/163472165",
+      "hot": "9078"
     },
     {
       "rank": 8,
-      "title": "React 的createClass 是怎么实现的?：深入解析 React 早期组件工厂的底层原理",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/163437536",
-      "hot": "8601"
+      "title": "PyTorch强化学习实战（21）——异步优势演员-评论家（Asynchronous Advantage Actor-Critic, A3C）",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766138",
+      "hot": "8933"
     },
     {
       "rank": 9,
       "title": "【Linux网络】深入理解传输层 UDP 协议：从原理、源码分析到实战应用",
       "url": "https://blog.csdn.net/yhrxh_ymq/article/details/163428692",
-      "hot": "8304"
+      "hot": "8789"
     },
     {
       "rank": 10,
-      "title": "ZooKeeper 3.7.1三节点集群部署：myid、选举与同步测试",
-      "url": "https://blog.csdn.net/COLLINSXU/article/details/163472165",
-      "hot": "8266"
+      "title": "React 的createClass 是怎么实现的?：深入解析 React 早期组件工厂的底层原理",
+      "url": "https://blog.csdn.net/qq_41840843/article/details/163437536",
+      "hot": "8592"
     }
   ]
 }

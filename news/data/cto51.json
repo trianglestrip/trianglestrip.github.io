@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-05T01:04:48+00:00",
+  "updated_at": "2026-08-05T04:20:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "程序员远没到“完了”的时候！Sam Altman：OpenAI不包办一切，模型只是底座，开发者仍是AI生态的主角",
-      "url": "https://www.51cto.com/article/851894.html",
-      "hot": "在真实工作环境中。AI某些时候像天才，某些时候又会犯孩子才会犯的错误；模型可以生成代码，公司仍然需要人决定做什么、怎样验收以及出了问题由谁负责。"
+      "title": "深度解读HarmonyOS 7沉浸光感特性",
+      "url": "https://ost.51cto.com/posts/54792",
+      "hot": "大家好，今天跟大家分享一下HarmonyOS7中的沉浸光感特性。在API23中，HdsTabs、HdsNavigation等组件已经支持沉浸光感效果。到了API26，这项..."
     },
     {
       "rank": 2,
-      "title": "Orange Cyberdefense视角下的2026网络安全：韧性比完美防御更重要，协同比单打独斗更有效",
-      "url": "https://www.51cto.com/article/851891.html",
-      "hot": "安全必须被视为一场持续的对抗，而非一系列孤立事件。韧性比完美防御更重要，协同比单打独斗更有效。"
+      "title": "文件上传即可检索｜实时多模态向量链路落地实践分享",
+      "url": "https://www.51cto.com/article/852000.html",
+      "hot": "本文将介绍如何用火山引擎 Flink 与 VikingDB 搭建一条“文件上传后秒级可检索”的实时多模态数据链路，并给出两套完整 Flink SQL 参考方案。"
     },
     {
       "rank": 3,
-      "title": "为什么越来越多人用Sa-Token？",
-      "url": "https://www.51cto.com/article/851838.html",
-      "hot": "Spring Security虽然功能强大，但学习曲线陡峭，配置复杂。新手开发者常常陷入“我只是想加个登录，为什么需要理解整个过滤器链”的困惑中。"
+      "title": "一张表 17PB？记一次 MySQL 统计查询卡住与数据统计量爆炸的排查实录",
+      "url": "https://www.51cto.com/article/851965.html",
+      "hot": "最近我在统计一个MySQL实例的表空间大小时遇到了问题，今天就将这次排查过程复盘出来，希望能为遇到类似问题的朋友提供一些思路。"
     },
     {
       "rank": 4,
-      "title": "深入理解 Linux I2C 框架：内核子系统分层解析",
-      "url": "https://www.51cto.com/article/851836.html",
-      "hot": "对 Linux I2C 框架内核子系统的分层情况进行深入的解析，能够观察到其分层结构是非常精妙的。硬件层之中存在着 I2C 控制器以及从设备。适配器驱动层包含有 i2c_adapter 和 i2c_algorithm。"
+      "title": "draw.io 要凉了！一句话生成专业技术图，这个开源 Skill 火了",
+      "url": "https://www.51cto.com/article/851997.html",
+      "hot": "fireworks-tech-graph 是一个专门面向 Claude Code / Codex 的 Agent Skill，可以把自然语言描述转换成高质量 SVG、PNG 技术架构图。"
     },
     {
       "rank": 5,
-      "title": "颠覆 RN、Flutter、Electron！TypeScript 一夜翻盘！",
-      "url": "https://www.51cto.com/article/851835.html",
-      "hot": "过去 TypeScript 一直依赖 JavaScript Runtime。写完代码，需要经过浏览器、Node.js 或 Electron 才能运行。但现在有人开始尝试：让 TypeScript 直接变成 Native。"
+      "title": "公司要统一买 AI 开发工具了，Codex、Claude Code、Cursor 到底该选谁？",
+      "url": "https://www.51cto.com/article/851996.html",
+      "hot": "有人把 AI 开发工具当成一支更聪明的笔，希望写代码时一直陪在旁边；有人把它当成一名可以领任务的同事，交代完就等结果；还有人并不想“开发”，只是受够了每周复制几十次表格，想给自己做一个顺手的小工具。"
     },
     {
       "rank": 6,
-      "title": "Electron 太重了！这个 Rust 框架让桌面应用体积缩小 90%",
-      "url": "https://www.51cto.com/article/851832.html",
-      "hot": "Tauri 的目标非常直接，用现代 Web 技术开发桌面应用，但不要承担 Chromium 的重量。"
+      "title": "Java 开发：彻底搞定！MyBatis 批量插入/更新性能优化，告别慢 SQL 瓶颈",
+      "url": "https://www.51cto.com/article/851964.html",
+      "hot": "本文将从实际业务痛点出发，深度剖析MyBatis常规批量写法的性能瓶颈与底层原理，分享高并发、大数据量场景下的批量插入/更新极致优化方案。"
     },
     {
       "rank": 7,
-      "title": "TCP核心篇-第四篇：拥塞控制——别把网络挤爆了",
-      "url": "https://www.51cto.com/article/851805.html",
-      "hot": "本文从拥塞窗口的发现过程讲起——慢启动、拥塞避免、RTO 超时重传 vs 快速重传两种丢包应对。"
+      "title": "Vite+ DevTools 发布！功能太强大了！",
+      "url": "https://www.51cto.com/article/851995.html",
+      "hot": "Vite+ DevTools 目前还处于快速迭代阶段，但方向已经非常明确：下一代前端开发环境，可能不只是浏览器 DevTools，而是工程级 DevTools。"
     },
     {
       "rank": 8,
-      "title": "面试官冷笑：“什么是 Scaling Law？大模型的「涌现能力」是怎么回事？”，我：“就是模型越大越好嘛，参数越多效果越强”",
-      "url": "https://www.51cto.com/article/851830.html",
-      "hot": "问到 Scaling Law 和涌现能力，最重要的是把 Scaling Law 的本质讲清楚。它讲的是 loss 和参数 N、数据 D、算力 C 的幂律关系（loss ∝ N^-α）。OpenAI 2020 年提出，给业界传递了「规模可预测地带来效果」这个革命性结论，是后面所有大模型烧钱投入的理论基础。"
+      "title": "OpenAI彻底干掉语音延迟！六个月重写底层架构，GPT Live全双工技术揭秘",
+      "url": "https://www.51cto.com/article/851993.html",
+      "hot": "OpenAI团队在过去六个月里完全重构了模型推理、上下文管理和媒体传输层，打造了一个专为低延迟优化的新系统架构。"
     },
     {
       "rank": 9,
-      "title": "AI批量轰炸苹果bug赏金计划，审核团队已下线",
-      "url": "https://www.51cto.com/article/851827.html",
-      "hot": "AI大幅降低了找漏洞的门槛，大量业余选手用ChatGPT批量扫描代码、批量提交报告，其中夹杂着大量AI幻觉式的虚假漏洞。"
+      "title": "老黄垒二十年的CUDA护城河，AI刚刚用十小时凿开了",
+      "url": "https://www.51cto.com/article/851962.html",
+      "hot": "一家成立仅一年的小公司，用AI编程Agent，只花10小时，就搭出了一套「类CUDA软件」。"
     },
     {
       "rank": 10,
-      "title": "VQA高分是在看图，还是在记答案？ReKey只更新决定答案的那一小块",
-      "url": "https://www.51cto.com/article/851825.html",
-      "hot": "视觉问答模型的准确率不断提高，但高分未必来自视觉理解 —— 当基准图像与答案已进入训练语料，模型可能只是复现了记忆。浙江大学等团队提出 ReKey：保留原始真实场景，只更新决定答案的那一小块视觉线索，使每轮评测都面向未见过的内容。"
+      "title": "ICML'26 |大模型灾难性遗忘新解法：秩一联想记忆实现无损持续学习",
+      "url": "https://www.51cto.com/article/851961.html",
+      "hot": "来自澳大利亚新南威尔士大学（UNSW）Artificer AI Lab的研究团队，给出了一个新答案。他们把每一次模型更新，拆解为最小的rank-1「记忆原子」，让持续学习变成一座参数化记忆库的“little by little”增量生长——新知识一点点添进去，旧本领稳稳留在原地，还不需要额外的路由器来指挥。"
     }
   ]
 }
