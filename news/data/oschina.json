@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-05T06:46:24+00:00",
+  "updated_at": "2026-08-05T09:27:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "中国开源 AI 模型将豁免美国政府安全审查",
+      "url": "https://www.oschina.net/news/488173/china-s-open-weight-models-to-be-spared-us-tests-us-firms-told",
+      "hot": "Wed, 05 Aug 2026 17:17:28 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "NVIDIA 成为 LVFS / Fwupd 首席赞助商",
+      "url": "https://www.oschina.net/news/488134",
+      "hot": "Wed, 05 Aug 2026 16:36:52 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "LazyMind v0.2 正式发布",
+      "url": "https://my.oschina.net/u/8690838/blog/19733398",
+      "hot": "Wed, 05 Aug 2026 16:01:30 +0800"
+    },
+    {
+      "rank": 4,
+      "title": ":fire: SolonCode v2026.8.4 发布：界面字体可调、22 种语言、记忆搜索增强",
+      "url": "https://www.oschina.net/news/488087/soloncode-2026-8-4",
+      "hot": "Wed, 05 Aug 2026 15:55:50 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Simon Willison 重新拥抱 MCP：无状态协议如何改变游戏规则",
+      "url": "https://www.oschina.net/news/488038/stateless-mcp",
+      "hot": "Wed, 05 Aug 2026 15:10:24 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "一条“删库”命令跑 17 小时，算法工程师删光 89TB 数据只为干私活",
+      "url": "https://www.oschina.net/news/488025",
+      "hot": "Wed, 05 Aug 2026 14:55:42 +0800"
+    },
+    {
+      "rank": 7,
       "title": "TimescaleDB 2.29.1 发布，基于 PostgreSQL 的时序数据库",
       "url": "https://www.oschina.net/news/488001/timescaledb-2-29-1-released",
       "hot": "Wed, 05 Aug 2026 14:40:36 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Cloudflare 分享推理优化实践：KV cache 量化 + 权重压缩，吞吐量提升 41%，成本降 30%",
       "url": "https://www.oschina.net/news/487999",
       "hot": "Wed, 05 Aug 2026 14:39:06 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "腾讯混元 Hy ASR3.0preview 发布",
       "url": "https://www.oschina.net/news/487877",
       "hot": "Wed, 05 Aug 2026 12:01:45 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "Pale Moon 34.3.2 发布，苍月浏览器",
       "url": "https://www.oschina.net/news/487857/pale-moon-34-3-2-released",
       "hot": "Wed, 05 Aug 2026 11:41:17 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "deepin 25.2.1 正式版更新！",
-      "url": "https://www.oschina.net/news/487855/deepin-25-2-1-released",
-      "hot": "Wed, 05 Aug 2026 11:38:30 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "PostgreSQL 18/19 新特性深度解读",
-      "url": "https://my.oschina.net/u/5729420/blog/19732869",
-      "hot": "Wed, 05 Aug 2026 11:18:41 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "慕尼黑市政府为全职开源项目维护者提供资助",
-      "url": "https://www.oschina.net/news/487819/libexpat-city-of-munich-open-source-sabbatical",
-      "hot": "Wed, 05 Aug 2026 11:15:10 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "HeidiSQL 12.21 发布",
-      "url": "https://www.oschina.net/news/487801/heidisql-12-21-released",
-      "hot": "Wed, 05 Aug 2026 11:02:00 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Firefox 153.0.3 发布",
-      "url": "https://www.oschina.net/news/487769/firefox-153-0-3-released",
-      "hot": "Wed, 05 Aug 2026 10:39:35 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Cloudflare Computer 开源：你的 Agent 需要一台电脑，而不是一个容器",
-      "url": "https://www.oschina.net/news/487766/cloudflare-computer",
-      "hot": "Wed, 05 Aug 2026 10:38:30 +0800"
     }
   ]
 }
