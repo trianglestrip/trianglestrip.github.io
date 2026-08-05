@@ -1,7 +1,7 @@
 {
   "source": "solidot",
   "title": "Solidot",
-  "updated_at": "2026-08-05T11:35:28+00:00",
+  "updated_at": "2026-08-05T15:29:13+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
+      "title": "美国考虑禁止中国制造的数据中心设备",
+      "url": "https://www.solidot.org/story?sid=85008",
+      "hot": "Wed, 05 Aug 2026 12:26:25 +0800"
+    },
+    {
+      "rank": 9,
       "title": "惠普、华硕和宏碁开始少量使用长鑫内存",
       "url": "https://www.solidot.org/story?sid=85007",
       "hot": "Wed, 05 Aug 2026 00:10:31 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "西班牙提议出资 11.4 亿美元建造 30 米望远镜",
       "url": "https://www.solidot.org/story?sid=85006",
       "hot": "Tue, 04 Aug 2026 23:26:35 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "FFmpeg 9.0 释出",
-      "url": "https://www.solidot.org/story?sid=85005",
-      "hot": "Tue, 04 Aug 2026 20:58:42 +0800"
     }
   ]
 }

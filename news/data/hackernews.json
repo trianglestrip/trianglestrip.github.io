@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-05T11:36:26+00:00",
+  "updated_at": "2026-08-05T15:30:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "No Data Centers in My Backyard",
-      "url": "https://jasmi.news/p/no-data-centers-in-my-backyard",
-      "hot": "24"
+      "title": "Cloudflare OS: an open platform for agents, apps, and work",
+      "url": "https://blog.cloudflare.com/cloudflare-os/",
+      "hot": "170"
     },
     {
       "rank": 2,
-      "title": "Stateless MCP has recaptured my interest",
-      "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
-      "hot": "257"
+      "title": "Citigroup, Idaho, and Build-a-Bear Launched a Coordinated Attack on Me",
+      "url": "https://knock-knock.net/blog/citigroup-idaho-build-a-bear/",
+      "hot": "17"
     },
     {
       "rank": 3,
-      "title": "“Gravity is worth asking about”",
-      "url": "https://unsung.aresluna.org/gravity-is-worth-asking-about/",
-      "hot": "120"
+      "title": "Aristotle quotes on virtue, knowledge, and happiness",
+      "url": "https://www.campion.edu.au/blog/top-25-aristotle-quotes-on-virtue-knowledge-and-happiness/",
+      "hot": "39"
     },
     {
       "rank": 4,
-      "title": "Civilian plane crash in New Mexico tied to military GPS blocking",
-      "url": "https://www.wired.com/story/a-civilian-plane-crashed-in-new-mexico-was-the-militarys-tech-to-blame/",
-      "hot": "29"
+      "title": "Intelligence Is Not the Main Bottleneck",
+      "url": "https://www.writingruxandrabio.com/p/intelligence-is-not-the-main-bottleneck",
+      "hot": "26"
     },
     {
       "rank": 5,
-      "title": "Helsinki Hacker News Meetup",
-      "url": "https://calpaterson.com/helsinki-hn.html",
-      "hot": "100"
+      "title": "Building an Advanced Agentic Harness",
+      "url": "https://data4sci.com/blog/building-an-advanced-agentic-harness",
+      "hot": "31"
     },
     {
       "rank": 6,
-      "title": "Pi's Minimalism Is Its Advantage",
-      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
-      "hot": "403"
+      "title": "The Entropy of a Markov Chain",
+      "url": "https://chillphysicsenjoyer.substack.com/p/the-entropy-of-a-markov-chain",
+      "hot": "24"
     },
     {
       "rank": 7,
-      "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
-      "url": "https://mistral.ai/news/shieldstral/",
-      "hot": "439"
+      "title": "Position: LLMs Can't Jump",
+      "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DklU4737opt",
+      "hot": "157"
     },
     {
       "rank": 8,
-      "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
-      "url": "https://toneyalexander.github.io/inclusive-color-space/",
-      "hot": "550"
+      "title": "Faster Than Ninja",
+      "url": "https://build2.org/blog/faster-than-ninja.xhtml",
+      "hot": "29"
     },
     {
       "rank": 9,
-      "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
-      "url": "https://arxiv.org/abs/2607.29377",
-      "hot": "55"
+      "title": "Cloudflare OS",
+      "url": "https://os.cloudflare.app/",
+      "hot": "6"
     },
     {
       "rank": 10,
-      "title": "The Pneumatics of Hero of Alexandria (1851)",
-      "url": "https://www.thehopkinthomasproject.com/TheHopkinThomasProject/TimeLine/Wales/Steam/URochesterCollection/Hero/index-2.html",
-      "hot": "34"
+      "title": "Painting with Gaussians",
+      "url": "https://yogthos.net/posts/2026-08-03-splat-painter.html",
+      "hot": "15"
     }
   ]
 }
