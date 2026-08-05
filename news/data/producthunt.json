@@ -1,20 +1,20 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-08-05T13:15:49+00:00",
+  "updated_at": "2026-08-05T20:01:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "NextDoor.Company",
-      "url": "https://www.producthunt.com/products/nextdoor-company",
-      "hot": "2026-08-03T23:58:44-07:00"
+      "title": "AdAnt AI",
+      "url": "https://www.producthunt.com/products/adant-ai",
+      "hot": "2026-07-31T22:39:48-07:00"
     },
     {
       "rank": 2,
-      "title": "Hansel",
-      "url": "https://www.producthunt.com/products/hansel-2",
-      "hot": "2026-08-04T23:59:36-07:00"
+      "title": "Keytones",
+      "url": "https://www.producthunt.com/products/keytones-for-mac",
+      "hot": "2026-07-21T10:35:06-07:00"
     },
     {
       "rank": 3,
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
-      "title": "Wispr Flow Notetaker",
-      "url": "https://www.producthunt.com/products/wisprflow",
-      "hot": "2026-08-04T08:22:48-07:00"
+      "title": "NextDoor.Company",
+      "url": "https://www.producthunt.com/products/nextdoor-company",
+      "hot": "2026-08-03T23:58:44-07:00"
     },
     {
       "rank": 5,
-      "title": "Aegisora",
-      "url": "https://www.producthunt.com/products/aegisora",
-      "hot": "2026-07-31T21:06:08-07:00"
-    },
-    {
-      "rank": 6,
-      "title": "Dover MCP",
-      "url": "https://www.producthunt.com/products/dover",
-      "hot": "2026-08-04T16:35:35-07:00"
-    },
-    {
-      "rank": 7,
       "title": "ngrok AI Gateway",
       "url": "https://www.producthunt.com/products/ngrok-ai-gateway",
       "hot": "2026-07-23T12:29:44-07:00"
     },
     {
+      "rank": 6,
+      "title": "Capacity Desktop",
+      "url": "https://www.producthunt.com/products/capacity",
+      "hot": "2026-07-28T06:54:05-07:00"
+    },
+    {
+      "rank": 7,
+      "title": "StepGrab",
+      "url": "https://www.producthunt.com/products/stepgrab",
+      "hot": "2026-07-16T11:20:20-07:00"
+    },
+    {
       "rank": 8,
+      "title": "Aegisora",
+      "url": "https://www.producthunt.com/products/aegisora",
+      "hot": "2026-07-31T21:06:08-07:00"
+    },
+    {
+      "rank": 9,
       "title": "npm i -g hotcell",
       "url": "https://www.producthunt.com/products/npm-i-g-hotcell",
       "hot": "2026-08-02T19:39:07-07:00"
     },
     {
-      "rank": 9,
-      "title": "AdAnt AI",
-      "url": "https://www.producthunt.com/products/adant-ai",
-      "hot": "2026-07-31T22:39:48-07:00"
-    },
-    {
       "rank": 10,
-      "title": "Capacity Desktop",
-      "url": "https://www.producthunt.com/products/capacity",
-      "hot": "2026-07-28T06:54:05-07:00"
+      "title": "Dover MCP",
+      "url": "https://www.producthunt.com/products/dover",
+      "hot": "2026-08-04T16:35:35-07:00"
     }
   ]
 }

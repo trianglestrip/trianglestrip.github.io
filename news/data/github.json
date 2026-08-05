@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-08-05T13:16:15+00:00",
+  "updated_at": "2026-08-05T20:01:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[TypeScript] cloudflare/computer",
       "url": "https://github.com/cloudflare/computer",
-      "hot": "1,682"
+      "hot": "2,546"
     },
     {
       "rank": 2,
       "title": "[Python] huangruiteng/loopx",
       "url": "https://github.com/huangruiteng/loopx",
-      "hot": "1,789"
+      "hot": "2,004"
     },
     {
       "rank": 3,
       "title": "[TypeScript] TencentCloud/TencentDB-Agent-Memory",
       "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "hot": "14,698"
+      "hot": "14,944"
     },
     {
       "rank": 4,
       "title": "[Python] donnemartin/system-design-primer",
       "url": "https://github.com/donnemartin/system-design-primer",
-      "hot": "361,189"
+      "hot": "361,416"
     },
     {
       "rank": 5,
       "title": "[Rust] firecrawl/pdf-inspector",
       "url": "https://github.com/firecrawl/pdf-inspector",
-      "hot": "10,895"
+      "hot": "11,280"
     },
     {
       "rank": 6,
       "title": "[Go] esengine/DeepSeek-Reasonix",
       "url": "https://github.com/esengine/DeepSeek-Reasonix",
-      "hot": "31,271"
+      "hot": "31,500"
     },
     {
       "rank": 7,
       "title": "[JavaScript] addyosmani/agent-skills",
       "url": "https://github.com/addyosmani/agent-skills",
-      "hot": "81,792"
+      "hot": "81,923"
     },
     {
       "rank": 8,
       "title": "[Shell] obra/superpowers",
       "url": "https://github.com/obra/superpowers",
-      "hot": "266,979"
+      "hot": "267,210"
     },
     {
       "rank": 9,
       "title": "[Python] roboflow/supervision",
       "url": "https://github.com/roboflow/supervision",
-      "hot": "48,776"
+      "hot": "48,869"
     },
     {
       "rank": 10,
       "title": "[JavaScript] vercel/next.js",
       "url": "https://github.com/vercel/next.js",
-      "hot": "141,407"
+      "hot": "141,503"
     }
   ]
 }
