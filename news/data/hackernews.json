@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-05T21:18:06+00:00",
+  "updated_at": "2026-08-05T23:30:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Zed DeltaDB",
       "url": "https://zed.dev/deltadb",
-      "hot": "180"
+      "hot": "258"
     },
     {
       "rank": 2,
-      "title": "Discovery Loop",
-      "url": "https://www.discoveryloop.com/",
-      "hot": "431"
-    },
-    {
-      "rank": 3,
-      "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
-      "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
-      "hot": "297"
-    },
-    {
-      "rank": 4,
-      "title": "I'm switching my phone from Android to Linux",
-      "url": "https://runarcn.no/android-to-linux/",
-      "hot": "40"
-    },
-    {
-      "rank": 5,
-      "title": "Beating GPT-5.6 Sol on retrieval with 100x cheaper open models",
-      "url": "https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency",
-      "hot": "122"
-    },
-    {
-      "rank": 6,
-      "title": "Atlassian Rovo Exfiltrates Data, Bypassing Controls",
-      "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
-      "hot": "105"
-    },
-    {
-      "rank": 7,
-      "title": "GNU Hurd News 2026-Q2",
-      "url": "https://www.gnu.org/software/hurd/news/2026-q2.html",
-      "hot": "81"
-    },
-    {
-      "rank": 8,
-      "title": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
-      "url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
-      "hot": "112"
-    },
-    {
-      "rank": 9,
-      "title": "Celld: Self-hosted, distributed Durable Objects",
-      "url": "https://github.com/denoland/celld",
+      "title": "The title cards in Blade Runner are amazing",
+      "url": "https://randsinrepose.com/archives/blade-runner-title-cards/",
       "hot": "85"
     },
     {
+      "rank": 3,
+      "title": "Discovery Loop",
+      "url": "https://www.discoveryloop.com/",
+      "hot": "517"
+    },
+    {
+      "rank": 4,
+      "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
+      "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
+      "hot": "400"
+    },
+    {
+      "rank": 5,
+      "title": "NVIDIA’s Vera Whitepaper Has a Thread Loose",
+      "url": "https://chipsandcheese.com/p/nvidias-vera-whitepaper-has-a-thread",
+      "hot": "52"
+    },
+    {
+      "rank": 6,
+      "title": "I'm switching my phone from Android to Linux",
+      "url": "https://runarcn.no/android-to-linux/",
+      "hot": "151"
+    },
+    {
+      "rank": 7,
+      "title": "Beating GPT-5.6 Sol on retrieval with 100x cheaper open models",
+      "url": "https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency",
+      "hot": "182"
+    },
+    {
+      "rank": 8,
+      "title": "Atlassian Rovo Exfiltrates Data, Bypassing Controls",
+      "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
+      "hot": "142"
+    },
+    {
+      "rank": 9,
+      "title": "Prime Agent: A self-improving RLM agent",
+      "url": "https://www.primeintellect.ai/blog/prime-agent",
+      "hot": "65"
+    },
+    {
       "rank": 10,
-      "title": "Sula: A Gemini protocol server written in Scryer Prolog",
-      "url": "https://sagredo.dev/projects/sula/",
-      "hot": "21"
+      "title": "Muse Code and Muse Spark 1.2",
+      "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "hot": "138"
     }
   ]
 }

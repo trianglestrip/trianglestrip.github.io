@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-05T21:18:00+00:00",
+  "updated_at": "2026-08-05T23:30:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Grafana只能在内网看？配置HTTPS公网地址远程打开监控面板",
       "url": "https://blog.csdn.net/2501_91062530/article/details/163479423",
-      "hot": "22210"
+      "hot": "22350"
     },
     {
       "rank": 2,
       "title": "QQ 接入 DeepSeek：Docker 部署 AstrBot + NapCat 打造 AI 智能机器人（超详细教程）",
       "url": "https://blog.csdn.net/mrdeam/article/details/163469822",
-      "hot": "21141"
+      "hot": "22022"
     },
     {
       "rank": 3,
-      "title": "ZooKeeper 3.7.1三节点集群部署：myid、选举与同步测试",
-      "url": "https://blog.csdn.net/COLLINSXU/article/details/163472165",
-      "hot": "20222"
+      "title": "从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从Q/K/V到拼音转汉字:用PyTorch从零拆解Transformer编码器)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/163221683",
+      "hot": "20377"
     },
     {
       "rank": 4,
-      "title": "从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从Q/K/V到拼音转汉字:用PyTorch从零拆解Transformer编码器)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/163221683",
-      "hot": "19948"
+      "title": "ZooKeeper 3.7.1三节点集群部署：myid、选举与同步测试",
+      "url": "https://blog.csdn.net/COLLINSXU/article/details/163472165",
+      "hot": "20135"
     },
     {
       "rank": 5,
       "title": "Pixelle-Video部署教程：AI短视频生成配置与远程访问",
       "url": "https://blog.csdn.net/qq_61024956/article/details/163449742",
-      "hot": "19894"
+      "hot": "19985"
     },
     {
       "rank": 6,
-      "title": "【MYSQL】MYSQL学习的一大重点：事务（上）- 原子性与持久性",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/163377285",
-      "hot": "17878"
+      "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
+      "hot": "18036"
     },
     {
       "rank": 7,
-      "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
-      "hot": "17557"
+      "title": "【MYSQL】MYSQL学习的一大重点：事务（上）- 原子性与持久性",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163377285",
+      "hot": "17816"
     },
     {
       "rank": 8,
       "title": "KingbaseES V9 性能诊断三件套实战：从 KWR 报告到慢 SQL 定位与索引优化的全链路复现",
       "url": "https://blog.csdn.net/weixin_52908342/article/details/163469514",
-      "hot": "16578"
+      "hot": "17071"
     },
     {
       "rank": 9,
-      "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
-      "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
-      "hot": "11792"
+      "title": "FFmpeg 9.0 发布，代号“Lei“，纪念中国开发者雷霄骅",
+      "url": "https://blog.csdn.net/mengyidan/article/details/163491734",
+      "hot": "13665"
     },
     {
       "rank": 10,
       "title": "Java 应用数据库接入层工程实践：驱动、连接池与故障排查全解析",
       "url": "https://blog.csdn.net/2301_80350265/article/details/163481154",
-      "hot": "10954"
+      "hot": "10994"
     }
   ]
 }
