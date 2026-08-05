@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-05T18:25:52+00:00",
+  "updated_at": "2026-08-05T21:18:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Discovery Loop",
-      "url": "https://www.discoveryloop.com/",
-      "hot": "227"
+      "title": "Zed DeltaDB",
+      "url": "https://zed.dev/deltadb",
+      "hot": "180"
     },
     {
       "rank": 2,
-      "title": "Qwen 3.0 Image Pro",
-      "url": "https://www.qwencloud.com/models/qwen-image-3.0-pro",
-      "hot": "162"
+      "title": "Discovery Loop",
+      "url": "https://www.discoveryloop.com/",
+      "hot": "431"
     },
     {
       "rank": 3,
-      "title": "Changes to Google DeepMind teams",
+      "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
       "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
-      "hot": "79"
+      "hot": "297"
     },
     {
       "rank": 4,
-      "title": "Oracle Just Halved Its Always Free ARM Limits",
-      "url": "https://www.cnelecar.com/blog/oracle-always-free-arm-limits-cut-2026/",
-      "hot": "119"
+      "title": "I'm switching my phone from Android to Linux",
+      "url": "https://runarcn.no/android-to-linux/",
+      "hot": "40"
     },
     {
       "rank": 5,
-      "title": "Western Sahara",
-      "url": "https://en.wikipedia.org/wiki/Western_Sahara",
-      "hot": "58"
+      "title": "Beating GPT-5.6 Sol on retrieval with 100x cheaper open models",
+      "url": "https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency",
+      "hot": "122"
     },
     {
       "rank": 6,
-      "title": "Launch HN: HyperProbe (YC S26) – Agents that do read-only debugging in prod",
-      "url": "https://www.hyperprobe.co",
-      "hot": "16"
+      "title": "Atlassian Rovo Exfiltrates Data, Bypassing Controls",
+      "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
+      "hot": "105"
     },
     {
       "rank": 7,
-      "title": "The Valley of Webhooks",
-      "url": "https://weli.dev/blog/the-valley-of-webhooks/",
-      "hot": "52"
+      "title": "GNU Hurd News 2026-Q2",
+      "url": "https://www.gnu.org/software/hurd/news/2026-q2.html",
+      "hot": "81"
     },
     {
       "rank": 8,
-      "title": "Aristotle quotes on virtue, knowledge, and happiness",
-      "url": "https://www.campion.edu.au/blog/top-25-aristotle-quotes-on-virtue-knowledge-and-happiness/",
-      "hot": "115"
+      "title": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+      "url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+      "hot": "112"
     },
     {
       "rank": 9,
-      "title": "Discovery of a multicomponent alloy forged by the Hiroshima atomic blast",
-      "url": "https://www.science.org/doi/10.1126/sciadv.aeg8299",
-      "hot": "60"
+      "title": "Celld: Self-hosted, distributed Durable Objects",
+      "url": "https://github.com/denoland/celld",
+      "hot": "85"
     },
     {
       "rank": 10,
-      "title": "Cloudflare OS: an open platform for agents, apps, and work",
-      "url": "https://blog.cloudflare.com/cloudflare-os/",
-      "hot": "326"
+      "title": "Sula: A Gemini protocol server written in Scryer Prolog",
+      "url": "https://sagredo.dev/projects/sula/",
+      "hot": "21"
     }
   ]
 }

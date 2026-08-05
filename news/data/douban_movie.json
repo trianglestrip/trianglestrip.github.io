@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-05T18:25:30+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-08-05T21:17:47+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -37,9 +36,9 @@
     },
     {
       "rank": 6,
-      "title": "寒战1994",
-      "url": "https://movie.douban.com/subject/36857924/",
-      "hot": "评分 7.0"
+      "title": "消失的人",
+      "url": "https://movie.douban.com/subject/36965301/",
+      "hot": "评分 7.2"
     },
     {
       "rank": 7,
@@ -49,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "消失的人",
-      "url": "https://movie.douban.com/subject/36965301/",
-      "hot": "评分 7.2"
+      "title": "寒战1994",
+      "url": "https://movie.douban.com/subject/36857924/",
+      "hot": "评分 7.0"
     },
     {
       "rank": 9,
-      "title": "群星闪耀时",
-      "url": "https://movie.douban.com/subject/35875462/",
-      "hot": "评分 7.4"
+      "title": "悬案",
+      "url": "https://movie.douban.com/subject/36624136/",
+      "hot": "评分 7.5"
     },
     {
       "rank": 10,
