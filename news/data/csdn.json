@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-05T04:20:41+00:00",
+  "updated_at": "2026-08-05T06:46:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
-      "hot": "18333"
+      "title": "Pixelle-Video部署教程：AI短视频生成配置与远程访问",
+      "url": "https://blog.csdn.net/qq_61024956/article/details/163449742",
+      "hot": "25736"
     },
     {
       "rank": 2,
-      "title": "从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从Q/K/V到拼音转汉字:用PyTorch从零拆解Transformer编码器)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/163221683",
-      "hot": "16045"
+      "title": "Grafana只能在内网看？配置HTTPS公网地址远程打开监控面板",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/163479423",
+      "hot": "22162"
     },
     {
       "rank": 3,
-      "title": "AI聊天也能拥有Live2D形象？Open-LLM-VTuber部署实战",
-      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163470652",
-      "hot": "14416"
+      "title": "ZooKeeper 3.7.1三节点集群部署：myid、选举与同步测试",
+      "url": "https://blog.csdn.net/COLLINSXU/article/details/163472165",
+      "hot": "21912"
     },
     {
       "rank": 4,
-      "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
-      "hot": "13679"
+      "title": "QQ 接入 DeepSeek：Docker 部署 AstrBot + NapCat 打造 AI 智能机器人（超详细教程）",
+      "url": "https://blog.csdn.net/mrdeam/article/details/163469822",
+      "hot": "20209"
     },
     {
       "rank": 5,
-      "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
-      "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
-      "hot": "11205"
+      "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
+      "hot": "19823"
     },
     {
       "rank": 6,
-      "title": "Grafana只能在内网看？配置HTTPS公网地址远程打开监控面板",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/163479423",
-      "hot": "9640"
+      "title": "从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从Q/K/V到拼音转汉字:用PyTorch从零拆解Transformer编码器)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/163221683",
+      "hot": "17291"
     },
     {
       "rank": 7,
-      "title": "ZooKeeper 3.7.1三节点集群部署：myid、选举与同步测试",
-      "url": "https://blog.csdn.net/COLLINSXU/article/details/163472165",
-      "hot": "9078"
+      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
+      "hot": "15849"
     },
     {
       "rank": 8,
-      "title": "PyTorch强化学习实战（21）——异步优势演员-评论家（Asynchronous Advantage Actor-Critic, A3C）",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766138",
-      "hot": "8933"
+      "title": "【MYSQL】MYSQL学习的一大重点：事务（上）- 原子性与持久性",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163377285",
+      "hot": "15510"
     },
     {
       "rank": 9,
-      "title": "【Linux网络】深入理解传输层 UDP 协议：从原理、源码分析到实战应用",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/163428692",
-      "hot": "8789"
+      "title": "KingbaseES V9 性能诊断三件套实战：从 KWR 报告到慢 SQL 定位与索引优化的全链路复现",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/163469514",
+      "hot": "13655"
     },
     {
       "rank": 10,
-      "title": "React 的createClass 是怎么实现的?：深入解析 React 早期组件工厂的底层原理",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/163437536",
-      "hot": "8592"
+      "title": "8月份AI套餐怎么选，GLM、Kimi、Minimax、火山等整理汇总",
+      "url": "https://blog.csdn.net/zhangay1998/article/details/163389680",
+      "hot": "10839"
     }
   ]
 }

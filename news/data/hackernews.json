@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-05T04:20:50+00:00",
+  "updated_at": "2026-08-05T06:46:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "libexpat now funded by the City of Munich for up to 6 months",
-      "url": "https://blog.hartwork.org/posts/libexpat-city-of-munich-open-source-sabbatical/",
-      "hot": "196"
+      "title": "Stateless MCP has recaptured my interest",
+      "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
+      "hot": "90"
     },
     {
       "rank": 2,
-      "title": "After Losses, Retail Investors Flock to 3x Leverage as 2x Product Are Restricted",
-      "url": "https://www.asiae.co.kr/en/article/2026080416131786841",
-      "hot": "39"
+      "title": "Pi's Minimalism Is Its Advantage",
+      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
+      "hot": "257"
     },
     {
       "rank": 3,
-      "title": "Pi's Minimalism Is Its Advantage",
-      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
-      "hot": "183"
+      "title": "The Golden Age of British Ice Cream",
+      "url": "https://www.vittlesmagazine.com/p/the-golden-age-of-british-ice-cream",
+      "hot": "25"
     },
     {
       "rank": 4,
       "title": "Eight Myths on Software Engineering and GenAI",
       "url": "https://queue.acm.org/detail.cfm?id=3807963",
-      "hot": "121"
+      "hot": "171"
     },
     {
       "rank": 5,
-      "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
-      "url": "https://mistral.ai/news/shieldstral/",
-      "hot": "340"
+      "title": "\"Gravity is worth asking about.\"",
+      "url": "https://unsung.aresluna.org/gravity-is-worth-asking-about/",
+      "hot": "9"
     },
     {
       "rank": 6,
-      "title": "IP and DNS Leaks in WebKit Affecting Proxy Browsers and iCloud Private Relay",
-      "url": "https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/",
-      "hot": "61"
+      "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "hot": "371"
     },
     {
       "rank": 7,
-      "title": "Zigbee vs. Matter over Thread:Understanding IoT Protocol Performance in Practice",
-      "url": "https://arxiv.org/abs/2603.04221",
-      "hot": "44"
+      "title": "IP and DNS Leaks in WebKit Affecting Proxy Browsers and iCloud Private Relay",
+      "url": "https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/",
+      "hot": "84"
     },
     {
       "rank": 8,
-      "title": "DuckDB – Data power tools for your laptop, now in Clojure (2023)",
-      "url": "https://techascent.com/blog/just-ducking-around.html",
-      "hot": "68"
+      "title": "Why is it all in the kernel?",
+      "url": "https://lawrencecpaulson.github.io//2026/07/30/Collatz.html",
+      "hot": "19"
     },
     {
       "rank": 9,
-      "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
-      "url": "https://toneyalexander.github.io/inclusive-color-space/",
-      "hot": "479"
+      "title": "Rio-vt and librio: Rio's terminal engine, now embeddable",
+      "url": "https://rioterm.com/blog/2026/07/27/rio-vt-and-librio",
+      "hot": "19"
     },
     {
       "rank": 10,
-      "title": "Show HN: Maple-Preview – ternary 20B MoE running at 120 tok/s on a iPhone",
-      "url": "https://deepgrove.ai/maple-preview",
-      "hot": "78"
+      "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
+      "url": "https://arxiv.org/abs/2607.29377",
+      "hot": "8"
     }
   ]
 }

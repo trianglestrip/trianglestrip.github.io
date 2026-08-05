@@ -1,26 +1,26 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-04T23:42:26+00:00",
+  "updated_at": "2026-08-05T06:46:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3: Open Frontier Intelligence",
       "url": "https://huggingface.co/papers/2607.24653",
-      "hot": "458"
+      "hot": "463"
     },
     {
       "rank": 2,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "76"
+      "hot": "77"
     },
     {
       "rank": 3,
       "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
       "url": "https://huggingface.co/papers/2608.01964",
-      "hot": "126"
+      "hot": "134"
     },
     {
       "rank": 4,
@@ -30,15 +30,15 @@
     },
     {
       "rank": 5,
-      "title": "Native and Compact Structured Latents for 3D Generation",
-      "url": "https://huggingface.co/papers/2512.14692",
-      "hot": "6"
-    },
-    {
-      "rank": 6,
       "title": "LongCat-Video Technical Report",
       "url": "https://huggingface.co/papers/2510.22200",
       "hot": "40"
+    },
+    {
+      "rank": 6,
+      "title": "Native and Compact Structured Latents for 3D Generation",
+      "url": "https://huggingface.co/papers/2512.14692",
+      "hot": "6"
     },
     {
       "rank": 7,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
       "url": "https://huggingface.co/papers/2607.19191",
-      "hot": "308"
+      "hot": "309"
     }
   ]
 }
