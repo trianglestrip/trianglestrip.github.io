@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-05T09:27:14+00:00",
+  "updated_at": "2026-08-05T11:36:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Stateless MCP has recaptured my interest",
-      "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
-      "hot": "186"
+      "title": "No Data Centers in My Backyard",
+      "url": "https://jasmi.news/p/no-data-centers-in-my-backyard",
+      "hot": "24"
     },
     {
       "rank": 2,
-      "title": "“Gravity is worth asking about”",
-      "url": "https://unsung.aresluna.org/gravity-is-worth-asking-about/",
-      "hot": "61"
+      "title": "Stateless MCP has recaptured my interest",
+      "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
+      "hot": "257"
     },
     {
       "rank": 3,
-      "title": "Pi's Minimalism Is Its Advantage",
-      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
-      "hot": "352"
+      "title": "“Gravity is worth asking about”",
+      "url": "https://unsung.aresluna.org/gravity-is-worth-asking-about/",
+      "hot": "120"
     },
     {
       "rank": 4,
-      "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
-      "url": "https://mistral.ai/news/shieldstral/",
-      "hot": "410"
+      "title": "Civilian plane crash in New Mexico tied to military GPS blocking",
+      "url": "https://www.wired.com/story/a-civilian-plane-crashed-in-new-mexico-was-the-militarys-tech-to-blame/",
+      "hot": "29"
     },
     {
       "rank": 5,
-      "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
-      "url": "https://arxiv.org/abs/2607.29377",
-      "hot": "34"
+      "title": "Helsinki Hacker News Meetup",
+      "url": "https://calpaterson.com/helsinki-hn.html",
+      "hot": "100"
     },
     {
       "rank": 6,
-      "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
-      "url": "https://toneyalexander.github.io/inclusive-color-space/",
-      "hot": "528"
+      "title": "Pi's Minimalism Is Its Advantage",
+      "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
+      "hot": "403"
     },
     {
       "rank": 7,
-      "title": "The Pneumatics of Hero of Alexandria",
-      "url": "https://www.thehopkinthomasproject.com/TheHopkinThomasProject/TimeLine/Wales/Steam/URochesterCollection/Hero/index-2.html",
-      "hot": "28"
+      "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "hot": "439"
     },
     {
       "rank": 8,
-      "title": "IP and DNS Leaks in WebKit Affecting Proxy Browsers and iCloud Private Relay",
-      "url": "https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/",
-      "hot": "104"
+      "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
+      "url": "https://toneyalexander.github.io/inclusive-color-space/",
+      "hot": "550"
     },
     {
       "rank": 9,
-      "title": "Show HN: Maple-Preview – Ternary 20B MoE running at 120 tok/s on a iPhone",
-      "url": "https://deepgrove.ai/maple-preview",
-      "hot": "113"
+      "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
+      "url": "https://arxiv.org/abs/2607.29377",
+      "hot": "55"
     },
     {
       "rank": 10,
-      "title": "In Memory of My Wife, Elise Cawley, with Thanks for 36 Wonderful Years",
-      "url": "https://writings.stephenwolfram.com/2026/08/in-memory-of-my-wife-elise-cawley-1961-2026-with-thanks-for-36-wonderful-years/",
-      "hot": "1341"
+      "title": "The Pneumatics of Hero of Alexandria (1851)",
+      "url": "https://www.thehopkinthomasproject.com/TheHopkinThomasProject/TimeLine/Wales/Steam/URochesterCollection/Hero/index-2.html",
+      "hot": "34"
     }
   ]
 }

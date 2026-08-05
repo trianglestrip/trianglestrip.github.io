@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-05T09:27:04+00:00",
+  "updated_at": "2026-08-05T11:36:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Pixelle-Video部署教程：AI短视频生成配置与远程访问",
       "url": "https://blog.csdn.net/qq_61024956/article/details/163449742",
-      "hot": "26612"
+      "hot": "29506"
     },
     {
       "rank": 2,
-      "title": "Grafana只能在内网看？配置HTTPS公网地址远程打开监控面板",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/163479423",
-      "hot": "23050"
+      "title": "从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从Q/K/V到拼音转汉字:用PyTorch从零拆解Transformer编码器)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/163221683",
+      "hot": "24029"
     },
     {
       "rank": 3,
-      "title": "从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从Q/K/V到拼音转汉字:用PyTorch从零拆解Transformer编码器)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/163221683",
-      "hot": "22283"
+      "title": "Grafana只能在内网看？配置HTTPS公网地址远程打开监控面板",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/163479423",
+      "hot": "23356"
     },
     {
       "rank": 4,
-      "title": "ZooKeeper 3.7.1三节点集群部署：myid、选举与同步测试",
-      "url": "https://blog.csdn.net/COLLINSXU/article/details/163472165",
-      "hot": "20708"
+      "title": "QQ 接入 DeepSeek：Docker 部署 AstrBot + NapCat 打造 AI 智能机器人（超详细教程）",
+      "url": "https://blog.csdn.net/mrdeam/article/details/163469822",
+      "hot": "20553"
     },
     {
       "rank": 5,
-      "title": "QQ 接入 DeepSeek：Docker 部署 AstrBot + NapCat 打造 AI 智能机器人（超详细教程）",
-      "url": "https://blog.csdn.net/mrdeam/article/details/163469822",
-      "hot": "20625"
+      "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
+      "hot": "19624"
     },
     {
       "rank": 6,
-      "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
-      "hot": "20140"
+      "title": "ZooKeeper 3.7.1三节点集群部署：myid、选举与同步测试",
+      "url": "https://blog.csdn.net/COLLINSXU/article/details/163472165",
+      "hot": "19623"
     },
     {
       "rank": 7,
       "title": "【MYSQL】MYSQL学习的一大重点：事务（上）- 原子性与持久性",
       "url": "https://blog.csdn.net/2401_89899187/article/details/163377285",
-      "hot": "14887"
+      "hot": "13663"
     },
     {
       "rank": 8,
-      "title": "【AI智能体】Claude Code +Superpowers 项目实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162770920",
-      "hot": "14153"
+      "title": "KingbaseES V9 性能诊断三件套实战：从 KWR 报告到慢 SQL 定位与索引优化的全链路复现",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/163469514",
+      "hot": "13376"
     },
     {
       "rank": 9,
-      "title": "KingbaseES V9 性能诊断三件套实战：从 KWR 报告到慢 SQL 定位与索引优化的全链路复现",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/163469514",
-      "hot": "13508"
+      "title": "【Linux网络】从0手写Reactor反应堆（一）：核心框架搭建——连接抽象与事件派发",
+      "url": "https://blog.csdn.net/2503_91389547/article/details/162028149",
+      "hot": "13003"
     },
     {
       "rank": 10,
-      "title": "【Linux网络】从0手写Reactor反应堆（一）：核心框架搭建——连接抽象与事件派发",
-      "url": "https://blog.csdn.net/2503_91389547/article/details/162028149",
-      "hot": "11689"
+      "title": "企业Agent落地为什么需要RAG？",
+      "url": "https://blog.csdn.net/2401_89111612/article/details/163479542",
+      "hot": "10076"
     }
   ]
 }
