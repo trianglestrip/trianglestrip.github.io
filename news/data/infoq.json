@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-05T23:30:34+00:00",
+  "updated_at": "2026-08-06T03:57:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Terraform 推出基于 HCL 的策略即代码框架 tfpolicy",
+      "url": "https://www.infoq.cn/article/ciBqgGa8fJIjYJdVaiq6?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 06 Aug 2026 11:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "刚刚，哈萨比斯卸任谷歌 DeepMind CEO，27年老将Jeff Dean离职创业",
+      "url": "https://www.infoq.cn/article/VwMgA7ktV9fA4eGowJ1z?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 06 Aug 2026 10:59:57 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "蚂蚁灵光闪应用数据架构首次公开，OceanBase披露关键实践",
+      "url": "https://www.infoq.cn/article/ix9IT7I9LmH2X0w5xQck?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 06 Aug 2026 10:55:13 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "AWS 推出免费沙箱环境，可直接体验 Workshop",
+      "url": "https://www.infoq.cn/article/HtbD9e2YFkS3omFYgIyY?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 06 Aug 2026 09:21:03 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "从 Coding 到 Running：Al Native SRE Agent 的工程实践 （CloudQ ）｜AICon深圳",
+      "url": "https://www.infoq.cn/article/iNit5qqLKJSdi2kMt8HB?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 06 Aug 2026 09:00:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "近 300万人围观卡帕西亲测 Opus 5：两小时写完 5500 行代码， 却连自己写的游戏都玩不了",
       "url": "https://www.infoq.cn/article/YdQ7vD3WwZpib8yuzNfF?utm_source=rss&utm_medium=article",
       "hot": "Wed, 05 Aug 2026 22:59:14 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "苹果指控 OpenAI挖人、拿零件、偷文件，OpenAI 晒聊天记录全面反击！马斯克：别信 OpenAI",
       "url": "https://www.infoq.cn/article/rvVpcZspLiqGpPQq6HPw?utm_source=rss&utm_medium=article",
       "hot": "Wed, 05 Aug 2026 22:36:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "不碰核心代码、把7-Zip压缩速度提高97%：一个“外行”与 AI 的极致优化实验",
       "url": "https://www.infoq.cn/article/Qp04AcNuAM8YqtVQHyu3?utm_source=rss&utm_medium=article",
       "hot": "Wed, 05 Aug 2026 18:45:26 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "一个 npm 恶意包，2小时毁掉数十亿下载？GitHub 终于给自动升级按下暂停键",
       "url": "https://www.infoq.cn/article/mHKwxgo5SqfmtZEESCrN?utm_source=rss&utm_medium=article",
       "hot": "Wed, 05 Aug 2026 18:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "IPO冲刺中，智元机器人核心班底“华为化”：前谷歌科学家从合伙人名单消失",
       "url": "https://www.infoq.cn/article/mFDVYdsliuDByQKcWFkh?utm_source=rss&utm_medium=article",
       "hot": "Wed, 05 Aug 2026 17:00:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "AICon 深圳 2026 全日程揭晓｜聚焦 Agent 工程化，构建可靠智能的技术路径",
-      "url": "https://www.infoq.cn/article/1Xo5TimSeStpOARWhElb?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 05 Aug 2026 16:14:30 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "可观测性厂商 AI 大战开始：Grafana、Datadog、Splunk 全部入场",
-      "url": "https://www.infoq.cn/article/0slNEHoKwzuJdxD7D1fJ?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 05 Aug 2026 16:00:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Ming-Flash-Omni：全模态统一大模型的关键技术与实践",
-      "url": "https://www.infoq.cn/article/OlBv9DATXabu0bb4kAPt?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 05 Aug 2026 15:57:15 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "开出AI界最高薪的Anthropic，抱怨员工为钱而来？全网“阴阳”：和你死活反开源一样",
-      "url": "https://www.infoq.cn/article/qYp5NCloR64emA3Bq11F?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 05 Aug 2026 15:25:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "谷歌连发三模型，把机器人调教成“全能打工人”！几小时速配、从头控到脚，还能“组团”开干",
-      "url": "https://www.infoq.cn/article/Zx9Z9etgapBsdOL9FtW1?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 05 Aug 2026 15:19:35 GMT"
     }
   ]
 }

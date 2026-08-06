@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-05T23:30:27+00:00",
+  "updated_at": "2026-08-06T03:57:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【HarmonyOS 7 沉浸光感深度实战】 03 五档 ImmersiveStyle 到底怎么选",
-      "url": "https://ost.51cto.com/posts/54811",
-      "hot": "前言在之前接口和开关都确认以后，普通组件已经具备显示沉浸材质的基本条件。接下来，开发者很快就会遇到一个更具体的问题：五档ImmersiveS..."
+      "title": "【HarmonyOS 7 沉浸光感深度实战】 04 interactive、lightEffect 与完整参数实验",
+      "url": "https://ost.51cto.com/posts/54827",
+      "hot": "前言沉浸材质真正开始难调，通常出现在参数从一个变成一组之后。一张卡片可以同时设置材质样式、材质赋色、自动反色、系统阴影、按压形变和..."
     },
     {
       "rank": 2,
-      "title": "深度解读HarmonyOS 7沉浸光感特性",
-      "url": "https://ost.51cto.com/posts/54792",
-      "hot": "大家好，今天跟大家分享一下HarmonyOS7中的沉浸光感特性。在API23中，HdsTabs、HdsNavigation等组件已经支持沉浸光感效果。到了API26，这项..."
+      "title": "Zabbix 6.0 智能化改造：不改架构实现告警收敛率提升 83%",
+      "url": "https://www.51cto.com/article/852158.html",
+      "hot": "这份 \"Zabbix 老兵\" 的渐进式 AI 升级指南，包含完整代码和真实踩坑案例，帮你少走弯路。"
     },
     {
       "rank": 3,
-      "title": "文件上传即可检索｜实时多模态向量链路落地实践分享",
-      "url": "https://www.51cto.com/article/852000.html",
-      "hot": "本文将介绍如何用火山引擎 Flink 与 VikingDB 搭建一条“文件上传后秒级可检索”的实时多模态数据链路，并给出两套完整 Flink SQL 参考方案。"
+      "title": "Zabbix+DeepSeek 深度融合：搭建智能运维自动化报表完整方案",
+      "url": "https://www.51cto.com/article/852157.html",
+      "hot": "本文通过大模型与 Zabbix 的技术融合，搭建一套智能分析报表应用，让 AI 自动解析监控数据、生成专业分析报告，为运维决策提供精准支持。"
     },
     {
       "rank": 4,
-      "title": "一张表 17PB？记一次 MySQL 统计查询卡住与数据统计量爆炸的排查实录",
-      "url": "https://www.51cto.com/article/851965.html",
-      "hot": "最近我在统计一个MySQL实例的表空间大小时遇到了问题，今天就将这次排查过程复盘出来，希望能为遇到类似问题的朋友提供一些思路。"
+      "title": "面试官怒了：王者排位秒匹配，断线重连凭啥等半天？",
+      "url": "https://www.51cto.com/article/852146.html",
+      "hot": "王者荣耀排位匹配三秒就进，为什么断线重连的进度条要走半天？今天我把这道题的根挖出来，从帧同步原理、断线追帧机制、到匹配算法和聊天广播，一条龙讲透。"
     },
     {
       "rank": 5,
-      "title": "draw.io 要凉了！一句话生成专业技术图，这个开源 Skill 火了",
-      "url": "https://www.51cto.com/article/851997.html",
-      "hot": "fireworks-tech-graph 是一个专门面向 Claude Code / Codex 的 Agent Skill，可以把自然语言描述转换成高质量 SVG、PNG 技术架构图。"
+      "title": "LLM工具调用（Function Calling、MCP、Skill、CLI的区别）",
+      "url": "https://www.51cto.com/article/852145.html",
+      "hot": "工具定义使用JSON Schema描述，description字段是LLM判断是否调用的核心依据；运行时是「两轮对话+中间执行」的闭环流程；模型通过finish_reason为tool_calls来明确告知需要工具帮助；以及模型支持一次返回多个tool_calls实现并行调用。"
     },
     {
       "rank": 6,
-      "title": "公司要统一买 AI 开发工具了，Codex、Claude Code、Cursor 到底该选谁？",
-      "url": "https://www.51cto.com/article/851996.html",
-      "hot": "有人把 AI 开发工具当成一支更聪明的笔，希望写代码时一直陪在旁边；有人把它当成一名可以领任务的同事，交代完就等结果；还有人并不想“开发”，只是受够了每周复制几十次表格，想给自己做一个顺手的小工具。"
+      "title": "AI Infra 进阶：如何让大模型输出确定的结果",
+      "url": "https://www.51cto.com/article/852096.html",
+      "hot": "大模型在推理过程中导致Batch Variance的根本原因，在于底层算子为最大化硬件资源利用率，动态调整了规约轴（如 GEMM 中的 Split-K 或 Attention 中的 KV 轴）的切分策略，进而改变了浮点数累加树的拓扑结构。"
     },
     {
       "rank": 7,
-      "title": "Java 开发：彻底搞定！MyBatis 批量插入/更新性能优化，告别慢 SQL 瓶颈",
-      "url": "https://www.51cto.com/article/851964.html",
-      "hot": "本文将从实际业务痛点出发，深度剖析MyBatis常规批量写法的性能瓶颈与底层原理，分享高并发、大数据量场景下的批量插入/更新极致优化方案。"
+      "title": "走出数学与代码，大模型还能自我进化吗？",
+      "url": "https://www.51cto.com/article/852143.html",
+      "hot": "受到自监督学习的启发，作者提出了 RLSVR（Reinforcement Learning with Self-Verifiable Rewards）训练框架。"
     },
     {
       "rank": 8,
-      "title": "Vite+ DevTools 发布！功能太强大了！",
-      "url": "https://www.51cto.com/article/851995.html",
-      "hot": "Vite+ DevTools 目前还处于快速迭代阶段，但方向已经非常明确：下一代前端开发环境，可能不只是浏览器 DevTools，而是工程级 DevTools。"
+      "title": "李飞飞最新访谈：人也不全靠现实数据学习啊",
+      "url": "https://www.51cto.com/article/852142.html",
+      "hot": "World Labs CEO李飞飞便与SceniX的联合创始人李昀烛共同做客了a16z最新的一期访谈《Fei-Fei Li is Solving the Hardest Problem in Robotics》，首次公开剖析了双方正联手解决的核心难题：让AI不仅能看懂世界，还能动手改变世界。"
     },
     {
       "rank": 9,
-      "title": "OpenAI彻底干掉语音延迟！六个月重写底层架构，GPT Live全双工技术揭秘",
-      "url": "https://www.51cto.com/article/851993.html",
-      "hot": "OpenAI团队在过去六个月里完全重构了模型推理、上下文管理和媒体传输层，打造了一个专为低延迟优化的新系统架构。"
+      "title": "谷歌巨震！诺奖得主卸任DeepMind CEO，首席科学家Jeff Dean离职创业",
+      "url": "https://www.51cto.com/article/852140.html",
+      "hot": "未来，比拼的就是谁的AI能更快地「自动生出」下一代AI。研究速度将不再受限于人类，而是呈指数级、爆炸式的增长！"
     },
     {
       "rank": 10,
-      "title": "老黄垒二十年的CUDA护城河，AI刚刚用十小时凿开了",
-      "url": "https://www.51cto.com/article/851962.html",
-      "hot": "一家成立仅一年的小公司，用AI编程Agent，只花10小时，就搭出了一套「类CUDA软件」。"
+      "title": "前端又卷起来了！这个开源项目让网页拥有游戏级动画效果",
+      "url": "https://www.51cto.com/article/852141.html",
+      "hot": "Canvas UI 的出现,本质不是又一个 UI 库,而是在尝试解决一个新问题:如何让开发者更低成本地创造具有视觉冲击力的 Web 体验。"
     }
   ]
 }
