@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-06T06:21:29+00:00",
+  "updated_at": "2026-08-06T09:13:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "QQ 接入 DeepSeek：Docker 部署 AstrBot + NapCat 打造 AI 智能机器人（超详细教程）",
       "url": "https://blog.csdn.net/mrdeam/article/details/163469822",
-      "hot": "24305"
+      "hot": "21280"
     },
     {
       "rank": 2,
       "title": "Excel报表越做越乱？用Metabase搭建可更新的数据仪表盘",
       "url": "https://blog.csdn.net/m0_68390957/article/details/163499355",
-      "hot": "16029"
+      "hot": "15894"
     },
     {
       "rank": 3,
       "title": "查库存的 SQL 时灵时不灵，最后发现是 WHERE 里两个函数在打架",
       "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163446440",
-      "hot": "13372"
+      "hot": "13447"
     },
     {
       "rank": 4,
-      "title": "【MYSQL】MYSQL学习的一大重点：视图",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/163251282",
-      "hot": "12288"
+      "title": "【金仓数据库征文】让 AI 直接读懂你的金仓：基于 KES MCP Server 的自然语言数据库助手实战（Trae + DeepSeek）",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/163510716",
+      "hot": "13430"
     },
     {
       "rank": 5,
-      "title": "【Linux网络】从0手写Reactor反应堆（一）：核心框架搭建——连接抽象与事件派发",
-      "url": "https://blog.csdn.net/2503_91389547/article/details/162028149",
-      "hot": "10469"
+      "title": "【MYSQL】MYSQL学习的一大重点：事务（下）- InnoDB 事务隔离性原理（MVCC 视角）",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163398652",
+      "hot": "12080"
     },
     {
       "rank": 6,
-      "title": "KingbaseES V9 性能诊断三件套实战：从 KWR 报告到慢 SQL 定位与索引优化的全链路复现",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/163469514",
-      "hot": "10432"
+      "title": "【Linux网络】深入理解传输层 UDP 协议：从原理、源码分析到实战应用",
+      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/163428692",
+      "hot": "11103"
     },
     {
       "rank": 7,
       "title": "企业Agent落地为什么需要RAG？",
       "url": "https://blog.csdn.net/2401_89111612/article/details/163479542",
-      "hot": "10060"
+      "hot": "10167"
     },
     {
       "rank": 8,
-      "title": "Java 应用数据库接入层工程实践：驱动、连接池与故障排查全解析",
-      "url": "https://blog.csdn.net/2301_80350265/article/details/163481154",
-      "hot": "9919"
+      "title": "【码动四季】Spring AI 多模型编排：AtomCode 如何解决 GPT + Qwen + DeepSeek 混合调用的一致性难题",
+      "url": "https://blog.csdn.net/qq_35366330/article/details/163451530",
+      "hot": "10128"
     },
     {
       "rank": 9,
-      "title": "【Linux网络】深入理解传输层 UDP 协议：从原理、源码分析到实战应用",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/163428692",
-      "hot": "9566"
+      "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
+      "hot": "8543"
     },
     {
       "rank": 10,
-      "title": "【金仓数据库征文】让 AI 直接读懂你的金仓：基于 KES MCP Server 的自然语言数据库助手实战（Trae + DeepSeek）",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/163510716",
-      "hot": "9198"
+      "title": "KingbaseES V9 性能诊断三件套实战：从 KWR 报告到慢 SQL 定位与索引优化的全链路复现",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/163469514",
+      "hot": "8294"
     }
   ]
 }
