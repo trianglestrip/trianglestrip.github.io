@@ -1,68 +1,68 @@
 {
   "source": "solidot",
   "title": "Solidot",
-  "updated_at": "2026-08-06T09:12:52+00:00",
+  "updated_at": "2026-08-06T11:32:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "北极气温多次超过 32 摄氏度",
+      "url": "https://www.solidot.org/story?sid=85023",
+      "hot": "Thu, 06 Aug 2026 17:20:04 +0800"
+    },
+    {
+      "rank": 2,
       "title": "Rust 语言宣布 LLM 政策",
       "url": "https://www.solidot.org/story?sid=85022",
       "hot": "Thu, 06 Aug 2026 15:57:49 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "科学家拍到迄今最清晰的太阳表面图像",
       "url": "https://www.solidot.org/story?sid=85021",
       "hot": "Thu, 06 Aug 2026 15:35:29 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "2027 年全年内存产能已全部预定和售罄",
       "url": "https://www.solidot.org/story?sid=85020",
       "hot": "Thu, 06 Aug 2026 15:14:14 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Google DeepMind CEO Demis Hassabis 卸任",
       "url": "https://www.solidot.org/story?sid=85019",
       "hot": "Thu, 06 Aug 2026 01:08:13 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "微软要求工程师不要最大化 AI Token 使用",
       "url": "https://www.solidot.org/story?sid=85018",
       "hot": "Thu, 06 Aug 2026 00:12:38 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "AI 监督远程考试变成灾难，数万学生必须重考",
       "url": "https://www.solidot.org/story?sid=85017",
       "hot": "Wed, 05 Aug 2026 23:55:35 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "Waymo CEO 解释为什么光靠摄像头难以实现自动驾驶",
       "url": "https://www.solidot.org/story?sid=85016",
       "hot": "Wed, 05 Aug 2026 23:27:43 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Telegram 因用户分享 CSAM 材料被苹果短暂下架",
       "url": "https://www.solidot.org/story?sid=85015",
       "hot": "Wed, 05 Aug 2026 18:59:59 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "新药研发推动实验猴价格翻倍",
       "url": "https://www.solidot.org/story?sid=85014",
       "hot": "Wed, 05 Aug 2026 17:30:01 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "特斯拉在华销量持续下滑",
-      "url": "https://www.solidot.org/story?sid=85013",
-      "hot": "Wed, 05 Aug 2026 16:38:10 +0800"
     }
   ]
 }

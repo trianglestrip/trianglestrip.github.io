@@ -1,32 +1,32 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-06T03:57:54+00:00",
+  "updated_at": "2026-08-06T11:33:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3: Open Frontier Intelligence",
       "url": "https://huggingface.co/papers/2607.24653",
-      "hot": "468"
+      "hot": "471"
     },
     {
       "rank": 2,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "77"
+      "hot": "78"
     },
     {
       "rank": 3,
       "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
       "url": "https://huggingface.co/papers/2608.03974",
-      "hot": "79"
+      "hot": "81"
     },
     {
       "rank": 4,
       "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
       "url": "https://huggingface.co/papers/2608.01964",
-      "hot": "145"
+      "hot": "149"
     },
     {
       "rank": 5,
@@ -38,7 +38,7 @@
       "rank": 6,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "117"
+      "hot": "118"
     },
     {
       "rank": 7,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "LongCat-Video Technical Report",
-      "url": "https://huggingface.co/papers/2510.22200",
-      "hot": "40"
+      "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
+      "url": "https://huggingface.co/papers/2607.19191",
+      "hot": "309"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-06T09:14:10+00:00",
+  "updated_at": "2026-08-06T11:33:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Cherry Studio V2.0 发布，从聊天客户端到全能 AI 工作站",
+      "url": "https://www.oschina.net/news/489186/cherry-studio-2-0",
+      "hot": "Thu, 06 Aug 2026 19:17:49 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "让非法状态不可表示：一篇关于 ADT 的帖子在 Reddit 火了",
+      "url": "https://www.oschina.net/news/489175/the-bedrock-of-software-design",
+      "hot": "Thu, 06 Aug 2026 19:05:28 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Cloudflare 开源内部企业 AI 平台 Cloudflare OS",
+      "url": "https://www.oschina.net/news/489139/cloudflare-os",
+      "hot": "Thu, 06 Aug 2026 18:16:20 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "从混乱到秩序：我如何搭建一套「规范驱动」的 AI 协作开发体系",
+      "url": "https://my.oschina.net/vivotech/blog/19734056",
+      "hot": "Thu, 06 Aug 2026 17:15:38 +0800"
+    },
+    {
+      "rank": 5,
       "title": "Python 3.14.7 和 3.13.15 发布",
       "url": "https://www.oschina.net/news/489060/python-3147-31315",
       "hot": "Thu, 06 Aug 2026 16:34:58 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Deno 团队开源 Celld，可自托管的分布式 Durable Objects",
       "url": "https://www.oschina.net/news/488974",
       "hot": "Thu, 06 Aug 2026 15:10:27 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "Zed 推出 DeltaDB，一个记录 commit 之间所有操作的版本控制系统",
       "url": "https://www.oschina.net/news/488964",
       "hot": "Thu, 06 Aug 2026 14:58:33 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "SpaceXAI 单季资本开支达 183 亿美元",
       "url": "https://www.oschina.net/news/488955",
       "hot": "Thu, 06 Aug 2026 14:47:37 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "小米正式开源自研具身基座模型 Xiaomi-Robotics-1",
       "url": "https://www.oschina.net/news/488953/xiaomi-robotics-1",
       "hot": "Thu, 06 Aug 2026 14:43:00 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Meta 发布终端编程 Agent“Muse Code” 和 Muse Spark 1.2 模型",
       "url": "https://www.oschina.net/news/488929/muse-code-and-muse-spark-1-2",
       "hot": "Thu, 06 Aug 2026 14:23:30 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "字节发布 SeedRealtime 音视频全双工大模型",
-      "url": "https://www.oschina.net/news/488715",
-      "hot": "Thu, 06 Aug 2026 11:45:19 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "美团开源 LoHoSearch，用知识图谱校准 AI 能力认知",
-      "url": "https://my.oschina.net/meituantech/blog/19726797",
-      "hot": "Thu, 06 Aug 2026 11:27:56 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Syncthing 2.1.3 正式发布，连续文件同步工具",
-      "url": "https://www.oschina.net/news/488676/syncthing-2-1-3-released",
-      "hot": "Thu, 06 Aug 2026 11:06:00 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "DeepSeek 将上调 API 定价，涨幅较大",
-      "url": "https://www.oschina.net/news/488654",
-      "hot": "Thu, 06 Aug 2026 10:42:07 +0800"
     }
   ]
 }

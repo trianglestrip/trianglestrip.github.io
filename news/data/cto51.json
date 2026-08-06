@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-06T09:14:04+00:00",
+  "updated_at": "2026-08-06T11:33:00+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
+      "title": "为什么大家都说 DeepSeek 已经成为大模型的「斩杀线」？",
+      "url": "https://www.51cto.com/article/852144.html",
+      "hot": "DeepSeek V4 Flash 证明了什么？不是它有多强，而是它证明了一个道理：AI 应该是普通人用得起的工具，而不是只有\"专业用户\"才舍得花钱的奢侈品。"
+    },
+    {
+      "rank": 8,
       "title": "走出数学与代码，大模型还能自我进化吗？",
       "url": "https://www.51cto.com/article/852143.html",
       "hot": "受到自监督学习的启发，作者提出了 RLSVR（Reinforcement Learning with Self-Verifiable Rewards）训练框架。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "李飞飞最新访谈：人也不全靠现实数据学习啊",
       "url": "https://www.51cto.com/article/852142.html",
       "hot": "World Labs CEO李飞飞便与SceniX的联合创始人李昀烛共同做客了a16z最新的一期访谈《Fei-Fei Li is Solving the Hardest Problem in Robotics》，首次公开剖析了双方正联手解决的核心难题：让AI不仅能看懂世界，还能动手改变世界。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "谷歌巨震！诺奖得主卸任DeepMind CEO，首席科学家Jeff Dean离职创业",
       "url": "https://www.51cto.com/article/852140.html",
       "hot": "未来，比拼的就是谁的AI能更快地「自动生出」下一代AI。研究速度将不再受限于人类，而是呈指数级、爆炸式的增长！"
-    },
-    {
-      "rank": 10,
-      "title": "前端又卷起来了！这个开源项目让网页拥有游戏级动画效果",
-      "url": "https://www.51cto.com/article/852141.html",
-      "hot": "Canvas UI 的出现,本质不是又一个 UI 库,而是在尝试解决一个新问题:如何让开发者更低成本地创造具有视觉冲击力的 Web 体验。"
     }
   ]
 }
