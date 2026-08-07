@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-07T11:23:44+00:00",
+  "updated_at": "2026-08-07T14:28:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "US strikes $1.2B deal to pay German firm to halt offshore wind projects",
       "url": "https://www.bbc.com/news/articles/c1e1vg0gjl5o",
-      "hot": "121"
+      "hot": "592"
     },
     {
       "rank": 2,
-      "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
-      "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
-      "hot": "335"
+      "title": "US's largest newspaper chain partners with Palantir to analyze audience data",
+      "url": "https://www.niemanlab.org/2026/08/americas-largest-newspaper-chain-usa-today-co-partners-with-palantir-to-analyze-audience-data/",
+      "hot": "12"
     },
     {
       "rank": 3,
-      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
-      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
-      "hot": "706"
+      "title": "U.S. economy lost 23,000 jobs in July, a sudden reversal",
+      "url": "https://www.nbcnews.com/business/economy/july-2026-jobs-report-rcna591138",
+      "hot": "149"
     },
     {
       "rank": 4,
-      "title": "Taste Is All That's Left",
-      "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
-      "hot": "460"
+      "title": "Show HN: Wyzer Programming Language",
+      "url": "https://github.com/Wyzer-Lang/wyzer",
+      "hot": "22"
     },
     {
       "rank": 5,
-      "title": "Atomic Clocks",
-      "url": "https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work",
-      "hot": "85"
+      "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
+      "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
+      "hot": "460"
     },
     {
       "rank": 6,
-      "title": "Interviewing Engineers in the AI Era: Lessons from a Year of Rebuilding",
-      "url": "https://www.coinbase.com/blog/interviewing-engineers-in-the-ai-era-lessons-from-a-year-of-rebuilding",
-      "hot": "24"
+      "title": "AI psychosis is the new leadership blind spot",
+      "url": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
+      "hot": "76"
     },
     {
       "rank": 7,
-      "title": "Scientists discover Kelvin-Helmholtz Instability on the surface of the Sun",
-      "url": "https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/",
-      "hot": "241"
+      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "hot": "756"
     },
     {
       "rank": 8,
-      "title": "Bioengineered chewing gum may offer a way to fight HPV and other microbes",
-      "url": "https://www.sciencedaily.com/releases/2026/08/260803080917.htm",
-      "hot": "138"
+      "title": "U.S. Lost 23,000 Jobs in July, While Unemployment Ticked Lower",
+      "url": "https://www.wsj.com/economy/jobs/july-jobs-report-unemployment-0d7c08a7",
+      "hot": "20"
     },
     {
       "rank": 9,
-      "title": "A quine in Piet – a GIF image that prints itself [video]",
-      "url": "https://www.youtube.com/watch?v=GwMtzhjCzyc",
-      "hot": "15"
+      "title": "Kitesurf: Agent-first browser that runs in V8 isolates",
+      "url": "https://blog.cloudflare.com/kitesurf/",
+      "hot": "22"
     },
     {
       "rank": 10,
-      "title": "Parsers don't have to be complicated",
-      "url": "https://bkaradzic.github.io/posts/scanner/",
-      "hot": "51"
+      "title": "The web server deployment model breaks at hobby scale",
+      "url": "https://w.on-t.work/web-deployment-model",
+      "hot": "37"
     }
   ]
 }

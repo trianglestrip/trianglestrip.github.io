@@ -1,38 +1,38 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-07T07:44:19+00:00",
+  "updated_at": "2026-08-07T14:29:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3: Open Frontier Intelligence",
       "url": "https://huggingface.co/papers/2607.24653",
-      "hot": "480"
+      "hot": "483"
     },
     {
       "rank": 2,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "78"
+      "hot": "79"
     },
     {
       "rank": 3,
       "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
       "url": "https://huggingface.co/papers/2608.03974",
-      "hot": "83"
+      "hot": "84"
     },
     {
       "rank": 4,
-      "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
-      "url": "https://huggingface.co/papers/2608.01964",
-      "hot": "157"
-    },
-    {
-      "rank": 5,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "120"
+    },
+    {
+      "rank": 5,
+      "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
+      "url": "https://huggingface.co/papers/2608.01964",
+      "hot": "158"
     },
     {
       "rank": 6,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
-      "url": "https://huggingface.co/papers/2607.19191",
-      "hot": "309"
+      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
+      "url": "https://huggingface.co/papers/2309.06180",
+      "hot": "65"
     }
   ]
 }

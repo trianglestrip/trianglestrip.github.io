@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-07T11:23:47+00:00",
+  "updated_at": "2026-08-07T14:28:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "OpenAI 宣布为 GPT-5.6 Sol 调优，并让免费用户无限用 Luna",
+      "url": "https://www.oschina.net/news/490138/improving-gpt-5-6-sol-in-chatgpt",
+      "hot": "Fri, 07 Aug 2026 19:35:44 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "许多顶级实验室的人现在几乎不读论文了",
+      "url": "https://www.oschina.net/news/490131",
+      "hot": "Fri, 07 Aug 2026 19:26:18 +0800"
+    },
+    {
+      "rank": 3,
       "title": "xAI 前工程师评现代 AI 领域最重要 Top3 开源项目",
       "url": "https://www.oschina.net/news/490119",
       "hot": "Fri, 07 Aug 2026 19:09:17 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "✨License Manager 软件授权管理系统 v1.2.2 发布 - 升级经营看板",
       "url": "https://www.oschina.net/news/489989",
       "hot": "Fri, 07 Aug 2026 16:45:05 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "AMD 收购 AI 芯片创企 Taalas，旨在将模型权重刻进芯片以提升推理性能",
       "url": "https://www.oschina.net/news/489939/amd-acquires-ai-chip-startup-taala",
       "hot": "Fri, 07 Aug 2026 16:07:02 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "红帽在2026年Gartner云原生应用平台魔力象限中被评为领导者",
       "url": "https://www.oschina.net/news/489935",
       "hot": "Fri, 07 Aug 2026 15:53:21 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "IBM与红帽扩展Lightwell服务方案，构建适配AI时代开源生态的可信基础设施",
       "url": "https://www.oschina.net/news/489932",
       "hot": "Fri, 07 Aug 2026 15:48:49 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "GitHub 再次爆发大规模服务降级",
       "url": "https://www.oschina.net/news/489898",
       "hot": "Fri, 07 Aug 2026 15:30:47 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Prime Agent 开源发布：一个能自我改进的编程 Agent，ARC-AGI 3 超越人类专家基线",
       "url": "https://www.oschina.net/news/489878/primeintellect-prime-agent",
       "hot": "Fri, 07 Aug 2026 15:13:34 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Rust 项目团队宣布 LLM 政策：不禁止，但你要承认哪些代码不是你写的",
       "url": "https://www.oschina.net/news/489832/rust-langrust-is-adopting-an-llm-policy",
       "hot": "Fri, 07 Aug 2026 14:33:13 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "宇树科技 IPO 战略配售曝光：DeepSeek 获配 93.3 万股，锁定 36 个月",
-      "url": "https://www.oschina.net/news/489801",
-      "hot": "Fri, 07 Aug 2026 14:09:12 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "openKylin 2.0 SP2 第四次更新，系统稳定性全面跃升",
-      "url": "https://www.oschina.net/news/489795",
-      "hot": "Fri, 07 Aug 2026 13:56:07 +0800"
     }
   ]
 }
