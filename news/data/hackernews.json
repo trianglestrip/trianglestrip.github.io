@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-06T15:27:38+00:00",
+  "updated_at": "2026-08-07T00:29:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Mario Meets Pareto",
-      "url": "https://www.mayerowitz.io/blog/mario-meets-pareto",
-      "hot": "335"
+      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "hot": "310"
     },
     {
       "rank": 2,
-      "title": "Degrees of Wealth",
-      "url": "https://jaapgrolleman.com/degrees-of-wealth/",
-      "hot": "27"
+      "title": "Scientists discover Kelvin-Helmholtz Instability on the surface of the Sun",
+      "url": "https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/",
+      "hot": "124"
     },
     {
       "rank": 3,
-      "title": "Tiny Black Holes May Be Exploding Stars Across the Milky Way",
-      "url": "https://www.sciencedaily.com/releases/2026/07/260729051515.htm",
-      "hot": "34"
+      "title": "Welcoming the Nepalese Government to Have I Been Pwned",
+      "url": "https://www.troyhunt.com/welcoming-the-nepalese-government-to-have-i-been-pwned/",
+      "hot": "62"
     },
     {
       "rank": 4,
-      "title": "How to Make a Nintendo 64 Game in 2026",
-      "url": "https://phoboslab.org/log/2026/08/xibalba64-making-of",
-      "hot": "299"
+      "title": "Mario Meets Pareto",
+      "url": "https://www.mayerowitz.io/blog/mario-meets-pareto",
+      "hot": "850"
     },
     {
       "rank": 5,
-      "title": "Crime Pays but Botany Doesn't",
-      "url": "https://www.crimepaysbutbotanydoesnt.com/reading-list",
-      "hot": "432"
+      "title": "I stopped trusting USB-C cable labels and started testing them",
+      "url": "https://www.makeuseof.com/i-stopped-trusting-usb-c-cable-labels-started-testing-with-meter-instead/",
+      "hot": "54"
     },
     {
       "rank": 6,
-      "title": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
-      "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-      "hot": "103"
+      "title": "Herdr is joining Y Combinator. The runtime stays open",
+      "url": "https://herdr.dev/blog/herdr-is-joining-y-combinator/",
+      "hot": "129"
     },
     {
       "rank": 7,
-      "title": "Pareto Front",
-      "url": "https://en.wikipedia.org/wiki/Pareto_front",
-      "hot": "120"
+      "title": "Taste Is All That's Left",
+      "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
+      "hot": "175"
     },
     {
       "rank": 8,
-      "title": "Discovery Loop",
-      "url": "https://www.discoveryloop.com/",
-      "hot": "830"
+      "title": "Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)",
+      "url": "https://www.aleksagordic.com/blog/vllm",
+      "hot": "44"
     },
     {
       "rank": 9,
-      "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
-      "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
-      "hot": "751"
+      "title": "Launch HN: ProvenMetal (YC S26) delivers circuit boards in days instead of weeks",
+      "url": "https://provenmetal.com",
+      "hot": "183"
     },
     {
       "rank": 10,
-      "title": "Four simple rules behind Japan's most liveable cities",
-      "url": "https://www.bbc.com/travel/article/20260805-four-simple-rules-behind-japans-most-liveable-cities",
-      "hot": "10"
+      "title": "Almost no skill required to cook a steak",
+      "url": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+      "hot": "264"
     }
   ]
 }

@@ -1,32 +1,32 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-08-06T11:32:11+00:00",
+  "updated_at": "2026-08-07T00:28:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Cloudflare OS",
+      "url": "https://www.producthunt.com/products/cloudflare",
+      "hot": "2026-08-05T11:52:07-07:00"
+    },
+    {
+      "rank": 2,
       "title": "AI Spend Console by Rippling",
       "url": "https://www.producthunt.com/products/rippling",
       "hot": "2026-07-14T10:17:32-07:00"
     },
     {
-      "rank": 2,
-      "title": "Glyphi: Speed Reader",
-      "url": "https://www.producthunt.com/products/glyphi-speed-reader",
-      "hot": "2026-08-05T19:41:19-07:00"
-    },
-    {
       "rank": 3,
-      "title": "Channels SDK",
-      "url": "https://www.producthunt.com/products/copilotkit",
-      "hot": "2026-07-15T13:21:56-07:00"
+      "title": "Superlog Responder",
+      "url": "https://www.producthunt.com/products/superlog",
+      "hot": "2026-07-30T05:17:59-07:00"
     },
     {
       "rank": 4,
-      "title": "Shieldstral",
-      "url": "https://www.producthunt.com/products/mistral-7b",
-      "hot": "2026-08-05T20:49:38-07:00"
+      "title": "Brandfetch MCP",
+      "url": "https://www.producthunt.com/products/brandfetch",
+      "hot": "2026-08-05T04:55:55-07:00"
     },
     {
       "rank": 5,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "Chute",
-      "url": "https://www.producthunt.com/products/chute-better-airdrop",
-      "hot": "2026-08-05T15:44:20-07:00"
+      "title": "CopilotKit Channels SDK",
+      "url": "https://www.producthunt.com/products/copilotkit",
+      "hot": "2026-07-15T13:21:56-07:00"
     },
     {
       "rank": 7,
-      "title": "hey postcard - digital postcards",
-      "url": "https://www.producthunt.com/products/hey-postcard-slow-messaging",
-      "hot": "2026-08-05T22:29:41-07:00"
-    },
-    {
-      "rank": 8,
-      "title": "Brandfetch MCP",
-      "url": "https://www.producthunt.com/products/brandfetch",
-      "hot": "2026-08-05T04:55:55-07:00"
-    },
-    {
-      "rank": 9,
       "title": "UCP Radar",
       "url": "https://www.producthunt.com/products/ucp-radar",
       "hot": "2026-08-05T04:03:42-07:00"
     },
     {
+      "rank": 8,
+      "title": "Glyphi: Speed Reader",
+      "url": "https://www.producthunt.com/products/glyphi-speed-reader",
+      "hot": "2026-08-05T19:41:19-07:00"
+    },
+    {
+      "rank": 9,
+      "title": "Ticketdesk AI",
+      "url": "https://www.producthunt.com/products/ticketdesk-ai",
+      "hot": "2026-07-30T21:37:07-07:00"
+    },
+    {
       "rank": 10,
-      "title": "Annotate",
-      "url": "https://www.producthunt.com/products/annotate-8",
-      "hot": "2026-08-05T06:49:48-07:00"
+      "title": "hey postcard - digital postcards",
+      "url": "https://www.producthunt.com/products/hey-postcard-slow-messaging",
+      "hot": "2026-08-05T22:29:41-07:00"
     }
   ]
 }
