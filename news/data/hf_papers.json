@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-07T00:29:50+00:00",
+  "updated_at": "2026-08-07T07:44:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3: Open Frontier Intelligence",
       "url": "https://huggingface.co/papers/2607.24653",
-      "hot": "478"
+      "hot": "480"
     },
     {
       "rank": 2,
@@ -18,21 +18,21 @@
     },
     {
       "rank": 3,
-      "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
-      "url": "https://huggingface.co/papers/2608.01964",
-      "hot": "154"
+      "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
+      "url": "https://huggingface.co/papers/2608.03974",
+      "hot": "83"
     },
     {
       "rank": 4,
-      "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
-      "url": "https://huggingface.co/papers/2608.03974",
-      "hot": "81"
+      "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
+      "url": "https://huggingface.co/papers/2608.01964",
+      "hot": "157"
     },
     {
       "rank": 5,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "119"
+      "hot": "120"
     },
     {
       "rank": 6,
@@ -54,9 +54,9 @@
     },
     {
       "rank": 9,
-      "title": "Native and Compact Structured Latents for 3D Generation",
-      "url": "https://huggingface.co/papers/2512.14692",
-      "hot": "6"
+      "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+      "url": "https://huggingface.co/papers/2504.19413",
+      "hot": "69"
     },
     {
       "rank": 10,
