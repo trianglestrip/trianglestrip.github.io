@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-07T06:18:33+00:00",
+  "updated_at": "2026-08-07T08:40:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AMD 收购 AI 芯片创企 Taalas，旨在将模型权重刻进芯片以提升推理性能",
+      "url": "https://www.oschina.net/news/489939/amd-acquires-ai-chip-startup-taala",
+      "hot": "Fri, 07 Aug 2026 16:07:02 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "红帽在2026年Gartner云原生应用平台魔力象限中被评为领导者",
+      "url": "https://www.oschina.net/news/489935",
+      "hot": "Fri, 07 Aug 2026 15:53:21 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "IBM与红帽扩展Lightwell服务方案，构建适配AI时代开源生态的可信基础设施",
+      "url": "https://www.oschina.net/news/489932",
+      "hot": "Fri, 07 Aug 2026 15:48:49 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "GitHub 再次爆发大规模服务降级",
+      "url": "https://www.oschina.net/news/489898",
+      "hot": "Fri, 07 Aug 2026 15:30:47 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Prime Agent 开源发布：一个能自我改进的编程 Agent，ARC-AGI 3 超越人类专家基线",
+      "url": "https://www.oschina.net/news/489878/primeintellect-prime-agent",
+      "hot": "Fri, 07 Aug 2026 15:13:34 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Rust 项目团队宣布 LLM 政策：不禁止，但你要承认哪些代码不是你写的",
+      "url": "https://www.oschina.net/news/489832/rust-langrust-is-adopting-an-llm-policy",
+      "hot": "Fri, 07 Aug 2026 14:33:13 +0800"
+    },
+    {
+      "rank": 7,
       "title": "宇树科技 IPO 战略配售曝光：DeepSeek 获配 93.3 万股，锁定 36 个月",
       "url": "https://www.oschina.net/news/489801",
       "hot": "Fri, 07 Aug 2026 14:09:12 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "openKylin 2.0 SP2 第四次更新，系统稳定性全面跃升",
       "url": "https://www.oschina.net/news/489795",
       "hot": "Fri, 07 Aug 2026 13:56:07 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "SeimiRender V1.1.0 发布，面向 AI 的无屏浏览器服务",
       "url": "https://www.oschina.net/news/489765/seimi-render-1-1-0-released",
       "hot": "Fri, 07 Aug 2026 13:11:43 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "Easysearch 2.3.1 发布：强化集群运维能力，优化写入性能与稳定性体验",
       "url": "https://www.oschina.net/news/489704/easysearch-2-3-1-released",
       "hot": "Fri, 07 Aug 2026 12:06:18 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Docker 29.7.2 发布",
-      "url": "https://www.oschina.net/news/489698/docker-29-7-2-released",
-      "hot": "Fri, 07 Aug 2026 11:57:00 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "潮起潮落，你我仍在 | 2026 腾讯云粤港澳大湾区架构师峰会",
-      "url": "https://www.oschina.net/news/489697",
-      "hot": "Fri, 07 Aug 2026 11:54:44 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Apache Fluss 毕业成为顶级项目",
-      "url": "https://my.oschina.net/u/2828172/blog/19734701",
-      "hot": "Fri, 07 Aug 2026 11:44:39 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "马斯克 AI 百科项目 Grokipedia 被曝数月未更新",
-      "url": "https://www.oschina.net/news/489674",
-      "hot": "Fri, 07 Aug 2026 11:32:17 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "SkillUI v0.2.0 已经发布，跨平台编程助手 Skill 管理 GUI 面板",
-      "url": "https://www.oschina.net/news/489662",
-      "hot": "Fri, 07 Aug 2026 11:25:17 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Solon I18n：三种解析器，零样板代码",
-      "url": "https://www.oschina.net/news/489637",
-      "hot": "Fri, 07 Aug 2026 11:01:52 +0800"
     }
   ]
 }
