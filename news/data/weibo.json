@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-07T17:55:58+00:00",
+  "updated_at": "2026-08-07T18:40:46+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,20 +24,20 @@
     },
     {
       "rank": 4,
-      "title": "歌手总决赛 孙燕姿吴青峰太伟大了",
-      "url": "https://s.weibo.com/weibo?q=%E6%AD%8C%E6%89%8B%E6%80%BB%E5%86%B3%E8%B5%9B%20%E5%AD%99%E7%87%95%E5%A7%BF%E5%90%B4%E9%9D%92%E5%B3%B0%E5%A4%AA%E4%BC%9F%E5%A4%A7%E4%BA%86",
-      "hot": ""
-    },
-    {
-      "rank": 5,
       "title": "23岁博士回应确诊胃癌晚期",
       "url": "https://s.weibo.com/weibo?q=23%E5%B2%81%E5%8D%9A%E5%A3%AB%E5%9B%9E%E5%BA%94%E7%A1%AE%E8%AF%8A%E8%83%83%E7%99%8C%E6%99%9A%E6%9C%9F",
       "hot": ""
     },
     {
+      "rank": 5,
+      "title": "歌手总决赛 孙燕姿吴青峰太伟大了",
+      "url": "https://s.weibo.com/weibo?q=%E6%AD%8C%E6%89%8B%E6%80%BB%E5%86%B3%E8%B5%9B%20%E5%AD%99%E7%87%95%E5%A7%BF%E5%90%B4%E9%9D%92%E5%B3%B0%E5%A4%AA%E4%BC%9F%E5%A4%A7%E4%BA%86",
+      "hot": ""
+    },
+    {
       "rank": 6,
-      "title": "歌手排名",
-      "url": "https://s.weibo.com/weibo?q=%E6%AD%8C%E6%89%8B%E6%8E%92%E5%90%8D",
+      "title": "中餐厅",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E9%A4%90%E5%8E%85",
       "hot": ""
     },
     {
@@ -48,20 +48,20 @@
     },
     {
       "rank": 8,
+      "title": "歌手排名",
+      "url": "https://s.weibo.com/weibo?q=%E6%AD%8C%E6%89%8B%E6%8E%92%E5%90%8D",
+      "hot": ""
+    },
+    {
+      "rank": 9,
       "title": "Bin哥我们错了",
       "url": "https://s.weibo.com/weibo?q=Bin%E5%93%A5%E6%88%91%E4%BB%AC%E9%94%99%E4%BA%86",
       "hot": ""
     },
     {
-      "rank": 9,
-      "title": "中餐厅",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E9%A4%90%E5%8E%85",
-      "hot": ""
-    },
-    {
       "rank": 10,
-      "title": "湖人 詹姆斯",
-      "url": "https://s.weibo.com/weibo?q=%E6%B9%96%E4%BA%BA%20%E8%A9%B9%E5%A7%86%E6%96%AF",
+      "title": "小米高管玩梗被指越界",
+      "url": "https://s.weibo.com/weibo?q=%E5%B0%8F%E7%B1%B3%E9%AB%98%E7%AE%A1%E7%8E%A9%E6%A2%97%E8%A2%AB%E6%8C%87%E8%B6%8A%E7%95%8C",
       "hot": ""
     }
   ]
