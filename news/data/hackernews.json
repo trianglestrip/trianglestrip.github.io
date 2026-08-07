@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-07T08:40:10+00:00",
+  "updated_at": "2026-08-07T11:23:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "I won't read LLM authored fiction",
-      "url": "https://mccormick.cx/news/entries/why-i-won-t-read-llm-authored-fiction",
-      "hot": "33"
+      "title": "US strikes $1.2B deal to pay German firm to halt offshore wind projects",
+      "url": "https://www.bbc.com/news/articles/c1e1vg0gjl5o",
+      "hot": "121"
     },
     {
       "rank": 2,
-      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
-      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
-      "hot": "632"
+      "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
+      "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
+      "hot": "335"
     },
     {
       "rank": 3,
-      "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
-      "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
-      "hot": "223"
+      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "hot": "706"
     },
     {
       "rank": 4,
-      "title": "What is a product?",
-      "url": "https://roge.onwrite.app/what-is-a-product",
-      "hot": "39"
+      "title": "Taste Is All That's Left",
+      "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
+      "hot": "460"
     },
     {
       "rank": 5,
       "title": "Atomic Clocks",
       "url": "https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work",
-      "hot": "51"
+      "hot": "85"
     },
     {
       "rank": 6,
-      "title": "Taste Is All That's Left",
-      "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
-      "hot": "402"
+      "title": "Interviewing Engineers in the AI Era: Lessons from a Year of Rebuilding",
+      "url": "https://www.coinbase.com/blog/interviewing-engineers-in-the-ai-era-lessons-from-a-year-of-rebuilding",
+      "hot": "24"
     },
     {
       "rank": 7,
       "title": "Scientists discover Kelvin-Helmholtz Instability on the surface of the Sun",
       "url": "https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/",
-      "hot": "217"
+      "hot": "241"
     },
     {
       "rank": 8,
       "title": "Bioengineered chewing gum may offer a way to fight HPV and other microbes",
       "url": "https://www.sciencedaily.com/releases/2026/08/260803080917.htm",
-      "hot": "121"
+      "hot": "138"
     },
     {
       "rank": 9,
-      "title": "Parsers don't have to be complicated",
-      "url": "https://bkaradzic.github.io/posts/scanner/",
-      "hot": "10"
+      "title": "A quine in Piet – a GIF image that prints itself [video]",
+      "url": "https://www.youtube.com/watch?v=GwMtzhjCzyc",
+      "hot": "15"
     },
     {
       "rank": 10,
-      "title": "Sao Paulo resident transforms degraded area into urban forest",
-      "url": "https://saopaulosecreto.com/en/tiquatira-linear-park-en/",
-      "hot": "120"
+      "title": "Parsers don't have to be complicated",
+      "url": "https://bkaradzic.github.io/posts/scanner/",
+      "hot": "51"
     }
   ]
 }

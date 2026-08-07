@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-07T08:40:04+00:00",
+  "updated_at": "2026-08-07T11:23:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "企业Agent落地为什么需要RAG？",
       "url": "https://blog.csdn.net/2401_89111612/article/details/163479542",
-      "hot": "27277"
+      "hot": "20136"
     },
     {
       "rank": 2,
       "title": "从 Vibe Coding 到 LangGraph：AI 时代编程范式的演进与重构",
       "url": "https://blog.csdn.net/2502_94387000/article/details/163513233",
-      "hot": "18751"
+      "hot": "16945"
     },
     {
       "rank": 3,
-      "title": "【金仓数据库征文】让 AI 直接读懂你的金仓：基于 KES MCP Server 的自然语言数据库助手实战（Trae + DeepSeek）",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/163510716",
-      "hot": "17769"
+      "title": "Nous Research 开源AI Agent 框架",
+      "url": "https://blog.csdn.net/2602_94956987/article/details/163541684",
+      "hot": "14875"
     },
     {
       "rank": 4,
-      "title": "Nous Research 开源AI Agent 框架",
-      "url": "https://blog.csdn.net/2602_94956987/article/details/163541684",
-      "hot": "16263"
+      "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
+      "hot": "13106"
     },
     {
       "rank": 5,
-      "title": "第二十一届全国大学生智能车竞赛总决赛准备会议",
-      "url": "https://blog.csdn.net/zhuoqingjoking97298/article/details/163522332",
-      "hot": "16177"
+      "title": "【金仓数据库征文】让 AI 直接读懂你的金仓：基于 KES MCP Server 的自然语言数据库助手实战（Trae + DeepSeek）",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/163510716",
+      "hot": "11974"
     },
     {
       "rank": 6,
-      "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
-      "hot": "12156"
+      "title": "一句话做出会下五子棋的 AI：Claude Code × 蓝耘 GLM-5.2 实战",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/163559594",
+      "hot": "11511"
     },
     {
       "rank": 7,
-      "title": "实战落地 SpringBoot+LLM 搭建 Text-to-SQL 智能查询系统-如何安全执行sql和性能优化",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163483507",
-      "hot": "12029"
+      "title": "【自旋锁】用“忙等待“换“低延迟“——自旋锁原理与实战",
+      "url": "https://blog.csdn.net/2302_80243065/article/details/163478424",
+      "hot": "10328"
     },
     {
       "rank": 8,
-      "title": "【自旋锁】用“忙等待“换“低延迟“——自旋锁原理与实战",
-      "url": "https://blog.csdn.net/2302_80243065/article/details/163478424",
-      "hot": "11890"
+      "title": "Zookeeper - 超级管理员权限的配置与使用实操",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157688499",
+      "hot": "10255"
     },
     {
       "rank": 9,
-      "title": "PyTorch计算机视觉（4）——迁移学习（Transfer Learning）详解与实现",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/162009128",
-      "hot": "11873"
+      "title": "实战落地 SpringBoot+LLM 搭建 Text-to-SQL 智能查询系统-如何安全执行sql和性能优化",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163483507",
+      "hot": "8982"
     },
     {
       "rank": 10,
-      "title": "一句话做出会下五子棋的 AI：Claude Code × 蓝耘 GLM-5.2 实战",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/163559594",
-      "hot": "11720"
+      "title": "PyTorch计算机视觉（4）——迁移学习（Transfer Learning）详解与实现",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/162009128",
+      "hot": "8780"
     }
   ]
 }
