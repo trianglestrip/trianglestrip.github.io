@@ -1,14 +1,14 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-08-07T14:28:02+00:00",
+  "updated_at": "2026-08-07T21:02:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Rescript for Desktop",
-      "url": "https://www.producthunt.com/products/rescript-edit-videos-like-you-edit-text",
-      "hot": "2026-08-06T21:56:04-07:00"
+      "title": "BrowserOS neo",
+      "url": "https://www.producthunt.com/products/browseros_ai",
+      "hot": "2025-10-28T09:18:50-07:00"
     },
     {
       "rank": 2,
@@ -24,27 +24,27 @@
     },
     {
       "rank": 4,
-      "title": "Reference",
-      "url": "https://www.producthunt.com/products/reference-2",
-      "hot": "2026-08-04T22:07:59-07:00"
-    },
-    {
-      "rank": 5,
-      "title": "AndroMeld",
-      "url": "https://www.producthunt.com/products/andromeld",
-      "hot": "2026-08-05T06:06:47-07:00"
-    },
-    {
-      "rank": 6,
       "title": "Soloop",
       "url": "https://www.producthunt.com/products/soloop",
       "hot": "2026-08-06T03:36:29-07:00"
     },
     {
+      "rank": 5,
+      "title": "Coldtea.ai",
+      "url": "https://www.producthunt.com/products/coldtea",
+      "hot": "2026-07-17T01:59:06-07:00"
+    },
+    {
+      "rank": 6,
+      "title": "Crew",
+      "url": "https://www.producthunt.com/products/crew-a-tiny-crew-for-claude-code",
+      "hot": "2026-08-06T01:08:47-07:00"
+    },
+    {
       "rank": 7,
-      "title": "The new Firecrawl MCP",
-      "url": "https://www.producthunt.com/products/extract-by-firecrawl",
-      "hot": "2026-08-05T15:49:34-07:00"
+      "title": "Rescript for Desktop",
+      "url": "https://www.producthunt.com/products/rescript-edit-videos-like-you-edit-text",
+      "hot": "2026-08-06T21:56:04-07:00"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "HAR",
-      "url": "https://www.producthunt.com/products/har",
-      "hot": "2026-08-06T07:56:17-07:00"
+      "title": "AndroMeld",
+      "url": "https://www.producthunt.com/products/andromeld",
+      "hot": "2026-08-05T06:06:47-07:00"
     },
     {
       "rank": 10,
-      "title": "Crew",
-      "url": "https://www.producthunt.com/products/crew-a-tiny-crew-for-claude-code",
-      "hot": "2026-08-06T01:08:47-07:00"
+      "title": "Reference",
+      "url": "https://www.producthunt.com/products/reference-2",
+      "hot": "2026-08-04T22:07:59-07:00"
     }
   ]
 }
