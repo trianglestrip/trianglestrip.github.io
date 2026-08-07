@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-07T03:27:04+00:00",
+  "updated_at": "2026-08-07T06:18:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【金仓数据库征文】让 AI 直接读懂你的金仓：基于 KES MCP Server 的自然语言数据库助手实战（Trae + DeepSeek）",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/163510716",
-      "hot": "19587"
+      "title": "企业Agent落地为什么需要RAG？",
+      "url": "https://blog.csdn.net/2401_89111612/article/details/163479542",
+      "hot": "20540"
     },
     {
       "rank": 2,
-      "title": "企业Agent落地为什么需要RAG？",
-      "url": "https://blog.csdn.net/2401_89111612/article/details/163479542",
-      "hot": "17103"
+      "title": "【金仓数据库征文】让 AI 直接读懂你的金仓：基于 KES MCP Server 的自然语言数据库助手实战（Trae + DeepSeek）",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/163510716",
+      "hot": "16134"
     },
     {
       "rank": 3,
-      "title": "QQ 接入 DeepSeek：Docker 部署 AstrBot + NapCat 打造 AI 智能机器人（超详细教程）",
-      "url": "https://blog.csdn.net/mrdeam/article/details/163469822",
-      "hot": "14348"
+      "title": "从 Vibe Coding 到 LangGraph：AI 时代编程范式的演进与重构",
+      "url": "https://blog.csdn.net/2502_94387000/article/details/163513233",
+      "hot": "14460"
     },
     {
       "rank": 4,
-      "title": "OpenClaw 成本优化实战：Token 使用效率提升完全指南",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/163472890",
-      "hot": "12412"
+      "title": "PyTorch计算机视觉（4）——迁移学习（Transfer Learning）详解与实现",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/162009128",
+      "hot": "13529"
     },
     {
       "rank": 5,
-      "title": "PyTorch计算机视觉（4）——迁移学习（Transfer Learning）详解与实现",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/162009128",
-      "hot": "12262"
+      "title": "Nous Research 开源AI Agent 框架",
+      "url": "https://blog.csdn.net/2602_94956987/article/details/163541684",
+      "hot": "13217"
     },
     {
       "rank": 6,
-      "title": "从 Vibe Coding 到 LangGraph：AI 时代编程范式的演进与重构",
-      "url": "https://blog.csdn.net/2502_94387000/article/details/163513233",
-      "hot": "11995"
+      "title": "OpenClaw 成本优化实战：Token 使用效率提升完全指南",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/163472890",
+      "hot": "12448"
     },
     {
       "rank": 7,
-      "title": "【自旋锁】用“忙等待“换“低延迟“——自旋锁原理与实战",
-      "url": "https://blog.csdn.net/2302_80243065/article/details/163478424",
-      "hot": "10488"
+      "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
+      "hot": "11332"
     },
     {
       "rank": 8,
-      "title": "Nous Research 开源AI Agent 框架",
-      "url": "https://blog.csdn.net/2602_94956987/article/details/163541684",
-      "hot": "9789"
+      "title": "【自旋锁】用“忙等待“换“低延迟“——自旋锁原理与实战",
+      "url": "https://blog.csdn.net/2302_80243065/article/details/163478424",
+      "hot": "11197"
     },
     {
       "rank": 9,
       "title": "实战落地 SpringBoot+LLM 搭建 Text-to-SQL 智能查询系统-如何安全执行sql和性能优化",
       "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163483507",
-      "hot": "8296"
+      "hot": "11101"
     },
     {
       "rank": 10,
-      "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
-      "hot": "7917"
+      "title": "【LE Audio】PBP精讲[1]: 从场景痛点到协议初心，解析公共广播的设计根基",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/163415339",
+      "hot": "10111"
     }
   ]
 }

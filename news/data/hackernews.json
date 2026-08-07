@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-07T03:27:12+00:00",
+  "updated_at": "2026-08-07T06:18:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
       "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
-      "hot": "437"
+      "hot": "535"
     },
     {
       "rank": 2,
       "title": "Mario Meets Pareto",
       "url": "https://www.mayerowitz.io/blog/mario-meets-pareto",
-      "hot": "917"
+      "hot": "976"
     },
     {
       "rank": 3,
       "title": "Scientists discover Kelvin-Helmholtz Instability on the surface of the Sun",
       "url": "https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/",
-      "hot": "160"
+      "hot": "197"
     },
     {
       "rank": 4,
-      "title": "I stopped trusting USB-C cable labels and started testing them",
-      "url": "https://www.makeuseof.com/i-stopped-trusting-usb-c-cable-labels-started-testing-with-meter-instead/",
-      "hot": "106"
+      "title": "Taste Is All That's Left",
+      "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
+      "hot": "324"
     },
     {
       "rank": 5,
-      "title": "Hackers Stalked Me by Hijacking a Smartwatch for Kids",
-      "url": "https://www.wired.com/story/hackers-stalked-me-by-hijacking-a-smartwatch-for-kids/",
-      "hot": "10"
+      "title": "Atomic Clocks",
+      "url": "https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work",
+      "hot": "19"
     },
     {
       "rank": 6,
-      "title": "Welcoming the Nepalese Government to Have I Been Pwned",
-      "url": "https://www.troyhunt.com/welcoming-the-nepalese-government-to-have-i-been-pwned/",
-      "hot": "103"
+      "title": "Bioengineered chewing gum may offer a way to fight HPV and other microbes",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260803080917.htm",
+      "hot": "94"
     },
     {
       "rank": 7,
-      "title": "Taste Is All That's Left",
-      "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
-      "hot": "235"
+      "title": "Improving GPT‑5.6 Sol in ChatGPT, expanding GPT‑5.6 Luna access for free users",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      "hot": "203"
     },
     {
       "rank": 8,
-      "title": "Bioengineered chewing gum may offer a way to fight HPV and other microbes",
-      "url": "https://www.sciencedaily.com/releases/2026/08/260803080917.htm",
-      "hot": "66"
+      "title": "Welcoming the Nepalese Government to Have I Been Pwned",
+      "url": "https://www.troyhunt.com/welcoming-the-nepalese-government-to-have-i-been-pwned/",
+      "hot": "126"
     },
     {
       "rank": 9,
-      "title": "Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)",
-      "url": "https://www.aleksagordic.com/blog/vllm",
-      "hot": "76"
+      "title": "GitHub Actions and Pages are experiencing degraded availability",
+      "url": "https://www.githubstatus.com/incidents/qcvjkzcs7j74",
+      "hot": "372"
     },
     {
       "rank": 10,
-      "title": "Herdr is joining Y Combinator. The runtime stays open",
-      "url": "https://herdr.dev/blog/herdr-is-joining-y-combinator/",
-      "hot": "161"
+      "title": "Software development with AI is starting to feel like cooking steak",
+      "url": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+      "hot": "319"
     }
   ]
 }

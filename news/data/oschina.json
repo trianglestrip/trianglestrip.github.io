@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-07T03:27:15+00:00",
+  "updated_at": "2026-08-07T06:18:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "宇树科技 IPO 战略配售曝光：DeepSeek 获配 93.3 万股，锁定 36 个月",
+      "url": "https://www.oschina.net/news/489801",
+      "hot": "Fri, 07 Aug 2026 14:09:12 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "openKylin 2.0 SP2 第四次更新，系统稳定性全面跃升",
+      "url": "https://www.oschina.net/news/489795",
+      "hot": "Fri, 07 Aug 2026 13:56:07 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "SeimiRender V1.1.0 发布，面向 AI 的无屏浏览器服务",
+      "url": "https://www.oschina.net/news/489765/seimi-render-1-1-0-released",
+      "hot": "Fri, 07 Aug 2026 13:11:43 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Easysearch 2.3.1 发布：强化集群运维能力，优化写入性能与稳定性体验",
+      "url": "https://www.oschina.net/news/489704/easysearch-2-3-1-released",
+      "hot": "Fri, 07 Aug 2026 12:06:18 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Docker 29.7.2 发布",
+      "url": "https://www.oschina.net/news/489698/docker-29-7-2-released",
+      "hot": "Fri, 07 Aug 2026 11:57:00 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "潮起潮落，你我仍在 | 2026 腾讯云粤港澳大湾区架构师峰会",
+      "url": "https://www.oschina.net/news/489697",
+      "hot": "Fri, 07 Aug 2026 11:54:44 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "Apache Fluss 毕业成为顶级项目",
+      "url": "https://my.oschina.net/u/2828172/blog/19734701",
+      "hot": "Fri, 07 Aug 2026 11:44:39 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "马斯克 AI 百科项目 Grokipedia 被曝数月未更新",
+      "url": "https://www.oschina.net/news/489674",
+      "hot": "Fri, 07 Aug 2026 11:32:17 +0800"
+    },
+    {
+      "rank": 9,
       "title": "SkillUI v0.2.0 已经发布，跨平台编程助手 Skill 管理 GUI 面板",
       "url": "https://www.oschina.net/news/489662",
       "hot": "Fri, 07 Aug 2026 11:25:17 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "Solon I18n：三种解析器，零样板代码",
       "url": "https://www.oschina.net/news/489637",
       "hot": "Fri, 07 Aug 2026 11:01:52 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "Apache Doris 4.1 全面增强 Iceberg：支持 UPDATE、MERGE INTO 与 Iceberg V3",
-      "url": "https://my.oschina.net/selectdb/blog/19729366",
-      "hot": "Fri, 07 Aug 2026 10:38:00 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "PDFsam Basic 6.0.5 发布，PDF 文档多功能处理工具",
-      "url": "https://www.oschina.net/news/489590/pdfsam-basic-6-0-5-released",
-      "hot": "Fri, 07 Aug 2026 10:11:29 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "ProcHub v0.5.0 已经发布，跨平台桌面进程管理应用",
-      "url": "https://www.oschina.net/news/489465",
-      "hot": "Fri, 07 Aug 2026 03:17:16 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "张一鸣的三次否决：字节跳动为什么不蒸馏",
-      "url": "https://www.oschina.net/news/489199/bytedances-founder-rules-distillation-ai-models",
-      "hot": "Thu, 06 Aug 2026 19:32:50 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Cherry Studio V2.0 发布，从聊天客户端到全能 AI 工作站",
-      "url": "https://www.oschina.net/news/489186/cherry-studio-2-0",
-      "hot": "Thu, 06 Aug 2026 19:17:49 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "让非法状态不可表示：一篇关于 ADT 的帖子在 Reddit 火了",
-      "url": "https://www.oschina.net/news/489175/the-bedrock-of-software-design",
-      "hot": "Thu, 06 Aug 2026 19:05:28 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Cloudflare 开源内部企业 AI 平台 Cloudflare OS",
-      "url": "https://www.oschina.net/news/489139/cloudflare-os",
-      "hot": "Thu, 06 Aug 2026 18:16:20 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "从混乱到秩序：我如何搭建一套「规范驱动」的 AI 协作开发体系",
-      "url": "https://my.oschina.net/vivotech/blog/19734056",
-      "hot": "Thu, 06 Aug 2026 17:15:38 +0800"
     }
   ]
 }
