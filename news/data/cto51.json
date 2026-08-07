@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-07T00:29:35+00:00",
+  "updated_at": "2026-08-07T03:27:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【HarmonyOS 7 沉浸光感深度实战】 04 interactive、lightEffect 与完整参数实验",
-      "url": "https://ost.51cto.com/posts/54827",
-      "hot": "前言沉浸材质真正开始难调，通常出现在参数从一个变成一组之后。一张卡片可以同时设置材质样式、材质赋色、自动反色、系统阴影、按压形变和..."
+      "title": "【HarmonyOS 7 沉浸光感深度实战】 05 Popup、Menu、Tips 和 Sheet 的材质如何配置",
+      "url": "https://ost.51cto.com/posts/54847",
+      "hot": "前言页面里的材质卡片调顺以后，真正进入业务场景时，沉浸光感往往会先出现在各种浮层里。点击按钮弹出的说明气泡、承载操作项的菜单、鼠标..."
     },
     {
       "rank": 2,
-      "title": "Zabbix 6.0 智能化改造：不改架构实现告警收敛率提升 83%",
-      "url": "https://www.51cto.com/article/852158.html",
-      "hot": "这份 \"Zabbix 老兵\" 的渐进式 AI 升级指南，包含完整代码和真实踩坑案例，帮你少走弯路。"
+      "title": "Coding Agent 下一步，不是写更多代码，而是学会像工程师一样工作",
+      "url": "https://www.51cto.com/article/852298.html",
+      "hot": "未来的 Coding Agent，可能不只是被提示词驱动，而是可以通过真实工作过程不断学习。8 月 5 日，Hugging Face 社区展示了一套新的开源组合：把 TRL、OpenEnv 和 OpenCode 连接起来，让 Coding Agent 在隔离沙箱中完成完整的软件开发流程。"
     },
     {
       "rank": 3,
-      "title": "Zabbix+DeepSeek 深度融合：搭建智能运维自动化报表完整方案",
-      "url": "https://www.51cto.com/article/852157.html",
-      "hot": "本文通过大模型与 Zabbix 的技术融合，搭建一套智能分析报表应用，让 AI 自动解析监控数据、生成专业分析报告，为运维决策提供精准支持。"
+      "title": "一篇讲透 Agent 工程全景：工具、记忆、多智能体、安全与最终交付",
+      "url": "https://www.51cto.com/article/852297.html",
+      "hot": "很多人对 AI 的第一印象来自 ChatGPT 这样的 聊天机器人 。但我想先泼盆冷水：聊天机器人和 Agent，压根不是一回事，这不是能力强弱的差别，而是 物种的差别 。"
     },
     {
       "rank": 4,
-      "title": "面试官怒了：王者排位秒匹配，断线重连凭啥等半天？",
-      "url": "https://www.51cto.com/article/852146.html",
-      "hot": "王者荣耀排位匹配三秒就进，为什么断线重连的进度条要走半天？今天我把这道题的根挖出来，从帧同步原理、断线追帧机制、到匹配算法和聊天广播，一条龙讲透。"
+      "title": "Handroid：当一台机器人既可以是灵巧手，也可以是人形机器人",
+      "url": "https://www.51cto.com/article/852296.html",
+      "hot": "为了打破移动与精细操作之间的这道边界，来自北卡罗来纳大学教堂山分校和斯坦福大学的研究团队提出了 Handroid。"
     },
     {
       "rank": 5,
-      "title": "LLM工具调用（Function Calling、MCP、Skill、CLI的区别）",
-      "url": "https://www.51cto.com/article/852145.html",
-      "hot": "工具定义使用JSON Schema描述，description字段是LLM判断是否调用的核心依据；运行时是「两轮对话+中间执行」的闭环流程；模型通过finish_reason为tool_calls来明确告知需要工具帮助；以及模型支持一次返回多个tool_calls实现并行调用。"
+      "title": "办公Agent大战正酣，真正的胜负手却藏在看不见的地方",
+      "url": "https://www.51cto.com/article/852295.html",
+      "hot": "普林斯顿的研究者评测了 14 个 Agent 后也发现，尽管过去 18 个月里模型能力突飞猛进，可靠性的提升却微乎其微。"
     },
     {
       "rank": 6,
-      "title": "AI Infra 进阶：如何让大模型输出确定的结果",
-      "url": "https://www.51cto.com/article/852096.html",
-      "hot": "大模型在推理过程中导致Batch Variance的根本原因，在于底层算子为最大化硬件资源利用率，动态调整了规约轴（如 GEMM 中的 Split-K 或 Attention 中的 KV 轴）的切分策略，进而改变了浮点数累加树的拓扑结构。"
+      "title": "Java 开发：不止 @EventListener！Spring Boot 事件机制深度解析，吃透业务解耦核心技巧",
+      "url": "https://www.51cto.com/article/852259.html",
+      "hot": "本文将带你完整吃透Spring Boot ApplicationEvent 核心原理，帮你彻底摆脱代码耦合难题，写出更优雅、高拓展、符合设计模式的企业级代码。"
     },
     {
       "rank": 7,
-      "title": "为什么大家都说 DeepSeek 已经成为大模型的「斩杀线」？",
-      "url": "https://www.51cto.com/article/852144.html",
-      "hot": "DeepSeek V4 Flash 证明了什么？不是它有多强，而是它证明了一个道理：AI 应该是普通人用得起的工具，而不是只有\"专业用户\"才舍得花钱的奢侈品。"
+      "title": "ChatGPT免费版史诗升级！GPT-5.6可以无限白嫖了",
+      "url": "https://www.51cto.com/article/852290.html",
+      "hot": "今早，OpenAI重磅官宣，GPT-5.6 Luna的文本对话，不限量了。全球十亿人，直接免费用。"
     },
     {
       "rank": 8,
-      "title": "走出数学与代码，大模型还能自我进化吗？",
-      "url": "https://www.51cto.com/article/852143.html",
-      "hot": "受到自监督学习的启发，作者提出了 RLSVR（Reinforcement Learning with Self-Verifiable Rewards）训练框架。"
+      "title": "Go 密码学前掌门人亲自提案：crypto/passkey 要把“免密登录”这件事一次性做对",
+      "url": "https://www.51cto.com/article/852294.html",
+      "hot": "Passkey 不是一个新协议，而是 WebAuthn 可发现凭据（discoverable credential）的“消费级马甲名”。它由 FIDO 联盟主导、苹果谷歌微软三大平台联合推进，核心思路很简单：用一对公私钥取代密码。"
     },
     {
       "rank": 9,
-      "title": "李飞飞最新访谈：人也不全靠现实数据学习啊",
-      "url": "https://www.51cto.com/article/852142.html",
-      "hot": "World Labs CEO李飞飞便与SceniX的联合创始人李昀烛共同做客了a16z最新的一期访谈《Fei-Fei Li is Solving the Hardest Problem in Robotics》，首次公开剖析了双方正联手解决的核心难题：让AI不仅能看懂世界，还能动手改变世界。"
+      "title": "早于LeCun相似研究一年！千诀科技联合清华团队让神经网络「简单性」可测可优化",
+      "url": "https://www.51cto.com/article/852274.html",
+      "hot": "要理解 ED 解决了什么问题，还要回到深度学习中的一个经典谜题：为什么参数量远多于训练样本的神经网络，依然能在未见数据上表现良好？"
     },
     {
       "rank": 10,
-      "title": "谷歌巨震！诺奖得主卸任DeepMind CEO，首席科学家Jeff Dean离职创业",
-      "url": "https://www.51cto.com/article/852140.html",
-      "hot": "未来，比拼的就是谁的AI能更快地「自动生出」下一代AI。研究速度将不再受限于人类，而是呈指数级、爆炸式的增长！"
+      "title": "【$12,000】Taskcluster GraphQL 端点未授权 RCE 漏洞",
+      "url": "https://www.51cto.com/article/852254.html",
+      "hot": "该漏洞存在于Taskcluster的公共 /graphql 端点中，可导致整个持续集成/交付（CI/CD）环境完全沦陷。"
     }
   ]
 }

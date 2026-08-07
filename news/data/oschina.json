@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-07T00:29:39+00:00",
+  "updated_at": "2026-08-07T03:27:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "SkillUI v0.2.0 已经发布，跨平台编程助手 Skill 管理 GUI 面板",
+      "url": "https://www.oschina.net/news/489662",
+      "hot": "Fri, 07 Aug 2026 11:25:17 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Solon I18n：三种解析器，零样板代码",
+      "url": "https://www.oschina.net/news/489637",
+      "hot": "Fri, 07 Aug 2026 11:01:52 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Apache Doris 4.1 全面增强 Iceberg：支持 UPDATE、MERGE INTO 与 Iceberg V3",
+      "url": "https://my.oschina.net/selectdb/blog/19729366",
+      "hot": "Fri, 07 Aug 2026 10:38:00 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "PDFsam Basic 6.0.5 发布，PDF 文档多功能处理工具",
+      "url": "https://www.oschina.net/news/489590/pdfsam-basic-6-0-5-released",
+      "hot": "Fri, 07 Aug 2026 10:11:29 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "ProcHub v0.5.0 已经发布，跨平台桌面进程管理应用",
+      "url": "https://www.oschina.net/news/489465",
+      "hot": "Fri, 07 Aug 2026 03:17:16 +0800"
+    },
+    {
+      "rank": 6,
       "title": "张一鸣的三次否决：字节跳动为什么不蒸馏",
       "url": "https://www.oschina.net/news/489199/bytedances-founder-rules-distillation-ai-models",
       "hot": "Thu, 06 Aug 2026 19:32:50 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Cherry Studio V2.0 发布，从聊天客户端到全能 AI 工作站",
       "url": "https://www.oschina.net/news/489186/cherry-studio-2-0",
       "hot": "Thu, 06 Aug 2026 19:17:49 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "让非法状态不可表示：一篇关于 ADT 的帖子在 Reddit 火了",
       "url": "https://www.oschina.net/news/489175/the-bedrock-of-software-design",
       "hot": "Thu, 06 Aug 2026 19:05:28 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "Cloudflare 开源内部企业 AI 平台 Cloudflare OS",
       "url": "https://www.oschina.net/news/489139/cloudflare-os",
       "hot": "Thu, 06 Aug 2026 18:16:20 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "从混乱到秩序：我如何搭建一套「规范驱动」的 AI 协作开发体系",
       "url": "https://my.oschina.net/vivotech/blog/19734056",
       "hot": "Thu, 06 Aug 2026 17:15:38 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Python 3.14.7 和 3.13.15 发布",
-      "url": "https://www.oschina.net/news/489060/python-3147-31315",
-      "hot": "Thu, 06 Aug 2026 16:34:58 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Deno 团队开源 Celld，可自托管的分布式 Durable Objects",
-      "url": "https://www.oschina.net/news/488974",
-      "hot": "Thu, 06 Aug 2026 15:10:27 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Zed 推出 DeltaDB，一个记录 commit 之间所有操作的版本控制系统",
-      "url": "https://www.oschina.net/news/488964",
-      "hot": "Thu, 06 Aug 2026 14:58:33 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "SpaceXAI 单季资本开支达 183 亿美元",
-      "url": "https://www.oschina.net/news/488955",
-      "hot": "Thu, 06 Aug 2026 14:47:37 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "小米正式开源自研具身基座模型 Xiaomi-Robotics-1",
-      "url": "https://www.oschina.net/news/488953/xiaomi-robotics-1",
-      "hot": "Thu, 06 Aug 2026 14:43:00 +0800"
     }
   ]
 }
