@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-07T14:28:47+00:00",
+  "updated_at": "2026-08-07T17:57:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "US strikes $1.2B deal to pay German firm to halt offshore wind projects",
-      "url": "https://www.bbc.com/news/articles/c1e1vg0gjl5o",
-      "hot": "592"
+      "title": "Oracle bans AI-generated code from OpenJDK",
+      "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+      "hot": "15"
     },
     {
       "rank": 2,
-      "title": "US's largest newspaper chain partners with Palantir to analyze audience data",
-      "url": "https://www.niemanlab.org/2026/08/americas-largest-newspaper-chain-usa-today-co-partners-with-palantir-to-analyze-audience-data/",
-      "hot": "12"
+      "title": "An all-sky map of half a million supermassive black holes",
+      "url": "https://www.sdss.org/black-hole-mapper-release-20/",
+      "hot": "63"
     },
     {
       "rank": 3,
-      "title": "U.S. economy lost 23,000 jobs in July, a sudden reversal",
-      "url": "https://www.nbcnews.com/business/economy/july-2026-jobs-report-rcna591138",
-      "hot": "149"
+      "title": "Responding to the next frontier of critical cyber capabilities",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+      "hot": "58"
     },
     {
       "rank": 4,
-      "title": "Show HN: Wyzer Programming Language",
-      "url": "https://github.com/Wyzer-Lang/wyzer",
-      "hot": "22"
+      "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
+      "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
+      "hot": "603"
     },
     {
       "rank": 5,
-      "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
-      "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
-      "hot": "460"
+      "title": "Making Postgres 300x faster for analytics: batching, operator fusion, and SIMD",
+      "url": "https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/",
+      "hot": "130"
     },
     {
       "rank": 6,
-      "title": "AI psychosis is the new leadership blind spot",
-      "url": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
-      "hot": "76"
+      "title": "Show HN: Wyzer Programming Language",
+      "url": "https://github.com/Wyzer-Lang/wyzer",
+      "hot": "127"
     },
     {
       "rank": 7,
-      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
-      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
-      "hot": "756"
+      "title": "Möbius-Strip Crosswords",
+      "url": "https://quuxplusone.github.io/blog/2026/08/04/mobius-crossword/",
+      "hot": "18"
     },
     {
       "rank": 8,
-      "title": "U.S. Lost 23,000 Jobs in July, While Unemployment Ticked Lower",
-      "url": "https://www.wsj.com/economy/jobs/july-jobs-report-unemployment-0d7c08a7",
-      "hot": "20"
+      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "hot": "824"
     },
     {
       "rank": 9,
-      "title": "Kitesurf: Agent-first browser that runs in V8 isolates",
-      "url": "https://blog.cloudflare.com/kitesurf/",
-      "hot": "22"
+      "title": "Show HN: textlog – A quiet, text-only microblogging platform, open-source, no JS",
+      "url": "https://textlog.cc/about",
+      "hot": "83"
     },
     {
       "rank": 10,
-      "title": "The web server deployment model breaks at hobby scale",
-      "url": "https://w.on-t.work/web-deployment-model",
-      "hot": "37"
+      "title": "Kitesurf: Agent-first browser that runs in V8 isolates",
+      "url": "https://blog.cloudflare.com/kitesurf/",
+      "hot": "85"
     }
   ]
 }

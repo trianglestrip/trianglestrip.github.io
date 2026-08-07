@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-07T14:28:18+00:00",
+  "updated_at": "2026-08-07T17:56:37+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,15 +30,15 @@
     },
     {
       "rank": 5,
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "hot": "评分 6.4"
-    },
-    {
-      "rank": 6,
       "title": "消失的人",
       "url": "https://movie.douban.com/subject/36965301/",
       "hot": "评分 7.2"
+    },
+    {
+      "rank": 6,
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
+      "hot": "评分 6.4"
     },
     {
       "rank": 7,
@@ -48,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "寒战1994",
-      "url": "https://movie.douban.com/subject/36857924/",
-      "hot": "评分 7.0"
-    },
-    {
-      "rank": 9,
       "title": "悬案",
       "url": "https://movie.douban.com/subject/36624136/",
       "hot": "评分 7.5"
+    },
+    {
+      "rank": 9,
+      "title": "寒战1994",
+      "url": "https://movie.douban.com/subject/36857924/",
+      "hot": "评分 7.0"
     },
     {
       "rank": 10,

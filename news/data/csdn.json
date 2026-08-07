@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-07T14:28:36+00:00",
+  "updated_at": "2026-08-07T17:56:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
-      "hot": "18909"
+      "title": "【金仓数据库征文】让 AI 直接读懂你的金仓：基于 KES MCP Server 的自然语言数据库助手实战（Trae + DeepSeek）",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/163510716",
+      "hot": "14376"
     },
     {
       "rank": 2,
-      "title": "从 Vibe Coding 到 LangGraph：AI 时代编程范式的演进与重构",
-      "url": "https://blog.csdn.net/2502_94387000/article/details/163513233",
-      "hot": "18014"
+      "title": "Zookeeper - 超级管理员权限的配置与使用实操",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157688499",
+      "hot": "14338"
     },
     {
       "rank": 3,
-      "title": "【金仓数据库征文】让 AI 直接读懂你的金仓：基于 KES MCP Server 的自然语言数据库助手实战（Trae + DeepSeek）",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/163510716",
-      "hot": "15566"
+      "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
+      "hot": "13895"
     },
     {
       "rank": 4,
-      "title": "一句话做出会下五子棋的 AI：Claude Code × 蓝耘 GLM-5.2 实战",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/163559594",
-      "hot": "13940"
+      "title": "远程玩飞车类游戏,ToDesk三款功能免费体验:游戏键盘、游戏鼠标和外接手柄",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/163564164",
+      "hot": "11753"
     },
     {
       "rank": 5,
-      "title": "Nous Research 开源AI Agent 框架",
-      "url": "https://blog.csdn.net/2602_94956987/article/details/163541684",
-      "hot": "12999"
+      "title": "从慢 SQL 到系统瓶颈：一次金仓数据库性能调优实战复盘",
+      "url": "https://blog.csdn.net/lrq13965748542/article/details/163562693",
+      "hot": "11351"
     },
     {
       "rank": 6,
-      "title": "我搭了人生第一个能开口说话的 AI：一次跑通语音 Agent 的全过程记录",
-      "url": "https://blog.csdn.net/2401_86326742/article/details/163542254",
-      "hot": "11036"
+      "title": "一库融万象：金仓数据库多模融合在复杂业务场景下的实战落地",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/163562777",
+      "hot": "11105"
     },
     {
       "rank": 7,
-      "title": "Zookeeper - 超级管理员权限的配置与使用实操",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157688499",
-      "hot": "10097"
+      "title": "从 Vibe Coding 到 LangGraph：AI 时代编程范式的演进与重构",
+      "url": "https://blog.csdn.net/2502_94387000/article/details/163513233",
+      "hot": "10657"
     },
     {
       "rank": 8,
-      "title": "从慢 SQL 到系统瓶颈：一次金仓数据库性能调优实战复盘",
-      "url": "https://blog.csdn.net/lrq13965748542/article/details/163562693",
-      "hot": "9979"
+      "title": "一句话做出会下五子棋的 AI：Claude Code × 蓝耘 GLM-5.2 实战",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/163559594",
+      "hot": "10634"
     },
     {
       "rank": 9,
-      "title": "一库融万象：金仓数据库多模融合在复杂业务场景下的实战落地",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/163562777",
-      "hot": "9978"
+      "title": "我搭了人生第一个能开口说话的 AI：一次跑通语音 Agent 的全过程记录",
+      "url": "https://blog.csdn.net/2401_86326742/article/details/163542254",
+      "hot": "9841"
     },
     {
       "rank": 10,
-      "title": "KingbaseES 全文检索实战：中文分词、GIN 索引与相关性排名",
-      "url": "https://blog.csdn.net/m0_71592416/article/details/163558520",
-      "hot": "8723"
+      "title": "【Linux网络】从0手写Reactor反应堆（一）：核心框架搭建——连接抽象与事件派发",
+      "url": "https://blog.csdn.net/2503_91389547/article/details/162028149",
+      "hot": "9744"
     }
   ]
 }
