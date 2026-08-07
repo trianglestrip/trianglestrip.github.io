@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-07T20:18:29+00:00",
+  "updated_at": "2026-08-07T22:20:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "DeepSeek V4 Flash 0731",
       "url": "https://arcprize.org/results/deepseek-v4-flash-0731",
-      "hot": "208"
+      "hot": "336"
     },
     {
       "rank": 2,
       "title": "Assembly Hall of Shame",
       "url": "https://github.com/xoreaxeaxeax/asm-hall-of-shame",
-      "hot": "97"
+      "hot": "178"
     },
     {
       "rank": 3,
-      "title": "Databricks drove down AI coding spend 70%",
-      "url": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
-      "hot": "70"
+      "title": "Ancient Library – 1,060 Greek/Latin texts, click any word to parse it",
+      "url": "https://ancientlibrary.net/",
+      "hot": "91"
     },
     {
       "rank": 4,
-      "title": "Ancient Library – 1,060 Greek/Latin texts, click any word to parse it",
-      "url": "https://ancientlibrary.net/",
-      "hot": "31"
+      "title": "Responding to the next frontier of critical cyber capabilities",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+      "hot": "131"
     },
     {
       "rank": 5,
-      "title": "Oracle bans AI-generated code from OpenJDK",
-      "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-      "hot": "245"
+      "title": "What happens if an entire class of workers loses faith in their careers",
+      "url": "https://www.noemamag.com/why-is-everyone-in-tech-so-sad/",
+      "hot": "269"
     },
     {
       "rank": 6,
-      "title": "Responding to the next frontier of critical cyber capabilities",
-      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
-      "hot": "102"
+      "title": "An all-sky map of half a million supermassive black holes",
+      "url": "https://www.sdss.org/black-hole-mapper-release-20/",
+      "hot": "118"
     },
     {
       "rank": 7,
-      "title": "An all-sky map of half a million supermassive black holes",
-      "url": "https://www.sdss.org/black-hole-mapper-release-20/",
-      "hot": "100"
+      "title": "Oracle bans AI-generated code from OpenJDK",
+      "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+      "hot": "317"
     },
     {
       "rank": 8,
-      "title": "What happens if an entire class of workers loses faith in their careers",
-      "url": "https://www.noemamag.com/why-is-everyone-in-tech-so-sad/",
-      "hot": "153"
+      "title": "Water system controllers don't belong on the internet, says ex-NSA chief",
+      "url": "https://www.theregister.com/security/2026/08/07/water-system-controllers-dont-belong-on-the-internet-says-ex-nsa-chief-after-suspected-iran-attacks/5285070",
+      "hot": "35"
     },
     {
       "rank": 9,
-      "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
-      "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
-      "hot": "682"
+      "title": "Guarded Methods in OCaml",
+      "url": "https://xvw.lol/en/articles/oop-refl.html",
+      "hot": "29"
     },
     {
       "rank": 10,
-      "title": "App Store Rejection of the Week: Dark Hours",
-      "url": "https://daringfireball.net/2026/08/app_store_rejection_of_the_week_dark_hours",
-      "hot": "77"
+      "title": "Psychological Warfare in Reverse Engineering (2015)",
+      "url": "https://github.com/xoreaxeaxeax/repsych",
+      "hot": "33"
     }
   ]
 }
