@@ -44,6 +44,10 @@ pagerSize = 10
   dateFormat = "2006-01-02"
   description = "个人博客，记录技术笔记与生活碎片。"
 
+  [params.mermaid]
+    enable = true
+    theme = "default"
+
   [params.header.title]
     name = "随手记录"
 
