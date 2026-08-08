@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-08T19:46:53+00:00",
+  "updated_at": "2026-08-08T22:32:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "从 Vibe Coding 到 LangGraph：AI 时代编程范式的演进与重构",
       "url": "https://blog.csdn.net/2502_94387000/article/details/163513233",
-      "hot": "26975"
+      "hot": "26799"
     },
     {
       "rank": 2,
       "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
       "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
-      "hot": "19476"
+      "hot": "19326"
     },
     {
       "rank": 3,
       "title": "Zookeeper - 超级管理员权限的配置与使用实操",
       "url": "https://blog.csdn.net/qq_41187124/article/details/157688499",
-      "hot": "16237"
+      "hot": "16264"
     },
     {
       "rank": 4,
-      "title": "KingbaseES 全文检索实战：中文分词、GIN 索引与相关性排名",
-      "url": "https://blog.csdn.net/m0_71592416/article/details/163558520",
-      "hot": "14829"
+      "title": "Re：Linux系统篇（五十二）线程篇 · 五：直击 Linux 内核底层：TCB 与 LWP 一体两面全解析（附自定义线程封装）",
+      "url": "https://blog.csdn.net/Z2314246476/article/details/163481224",
+      "hot": "14060"
     },
     {
       "rank": 5,
-      "title": "Re：Linux系统篇（五十二）线程篇 · 五：直击 Linux 内核底层：TCB 与 LWP 一体两面全解析（附自定义线程封装）",
-      "url": "https://blog.csdn.net/Z2314246476/article/details/163481224",
-      "hot": "14223"
+      "title": "Day 10 · 邮件 + AI：智能分类与自动回复",
+      "url": "https://blog.csdn.net/2601_96428997/article/details/163397280",
+      "hot": "13136"
     },
     {
       "rank": 6,
-      "title": "Day 10 · 邮件 + AI：智能分类与自动回复",
-      "url": "https://blog.csdn.net/2601_96428997/article/details/163397280",
-      "hot": "13314"
+      "title": "KingbaseES 全文检索实战：中文分词、GIN 索引与相关性排名",
+      "url": "https://blog.csdn.net/m0_71592416/article/details/163558520",
+      "hot": "12746"
     },
     {
       "rank": 7,
-      "title": "DeepSeek 要涨价 30 倍？我算了一笔账：涨完可能比 GPT-5.5 还贵",
-      "url": "https://blog.csdn.net/qq_40374604/article/details/163595472",
-      "hot": "12685"
+      "title": "一句话做出会下五子棋的 AI：Claude Code × 蓝耘 GLM-5.2 实战",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/163559594",
+      "hot": "10900"
     },
     {
       "rank": 8,
-      "title": "从聊天到委派：AI Agent 如何推进长期任务",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/163494733",
-      "hot": "11068"
+      "title": "远程玩飞车类游戏,ToDesk三款功能免费体验:游戏键盘、游戏鼠标和外接手柄",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/163564164",
+      "hot": "10708"
     },
     {
       "rank": 9,
-      "title": "一句话做出会下五子棋的 AI：Claude Code × 蓝耘 GLM-5.2 实战",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/163559594",
-      "hot": "10951"
+      "title": "从聊天到委派：AI Agent 如何推进长期任务",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/163494733",
+      "hot": "10615"
     },
     {
       "rank": 10,
-      "title": "远程玩飞车类游戏,ToDesk三款功能免费体验:游戏键盘、游戏鼠标和外接手柄",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/163564164",
-      "hot": "10833"
+      "title": "【MYSQL】MYSQL学习的一大重点：用户与权限管理",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163281396",
+      "hot": "10427"
     }
   ]
 }
