@@ -32,9 +32,14 @@ pagerSize = 10
     weight = 4
     identifier = "live"
     name = "直播"
-    url = "/live/"
+    url = "http://106.14.46.209:8080/"
   [[menu.main]]
     weight = 5
+    identifier = "music"
+    name = "音乐"
+    url = "http://106.14.46.209:8080/SFMusic/"
+  [[menu.main]]
+    weight = 6
     identifier = "about"
     name = "关于"
     url = "/about/"
