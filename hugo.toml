@@ -90,7 +90,7 @@ pagerSize = 10
       enable = true
       host = "https://beaudar.lipk.org"
       repo = "trianglestrip/trianglestrip.github.io"
-      issueTerm = "title"
+      issueTerm = "pathname"
       issueLabel = "pathname"
       lightTheme = "github-light"
 
