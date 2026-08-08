@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-07T21:02:52+00:00",
+  "updated_at": "2026-08-08T04:16:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "2933"
+      "hot": "2978"
     },
     {
       "rank": 2,
       "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "2733"
+      "hot": "2761"
     },
     {
       "rank": 3,
       "title": "Comfy-Org/MiniMax-H3",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
-      "hot": "930"
+      "hot": "950"
     },
     {
       "rank": 4,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "10268"
+      "hot": "10292"
     },
     {
       "rank": 5,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "1702"
+      "hot": "1716"
     },
     {
       "rank": 6,
-      "title": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
-      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
-      "hot": "582"
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "hot": "430"
     },
     {
       "rank": 7,
-      "title": "larryvrh/MiniMax-H3-Turbo-Lora",
-      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
-      "hot": "406"
+      "title": "LiquidAI/LFM2.5-2.6B",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "hot": "386"
     },
     {
       "rank": 8,
-      "title": "LiquidAI/LFM2.5-2.6B",
-      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
-      "hot": "373"
+      "title": "ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
+      "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
+      "hot": "385"
     },
     {
       "rank": 9,
-      "title": "ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
-      "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
-      "hot": "376"
+      "title": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
+      "hot": "591"
     },
     {
       "rank": 10,
       "title": "deepgrove/maple-preview",
       "url": "https://huggingface.co/deepgrove/maple-preview",
-      "hot": "222"
+      "hot": "233"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-08T01:23:09+00:00",
+  "updated_at": "2026-08-08T04:16:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Zookeeper - 超级管理员权限的配置与使用实操",
       "url": "https://blog.csdn.net/qq_41187124/article/details/157688499",
-      "hot": "15170"
+      "hot": "19199"
     },
     {
       "rank": 2,
       "title": "【金仓数据库征文】让 AI 直接读懂你的金仓：基于 KES MCP Server 的自然语言数据库助手实战（Trae + DeepSeek）",
       "url": "https://blog.csdn.net/2302_78391795/article/details/163510716",
-      "hot": "14520"
+      "hot": "17123"
     },
     {
       "rank": 3,
-      "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
-      "hot": "12927"
+      "title": "从 Vibe Coding 到 LangGraph：AI 时代编程范式的演进与重构",
+      "url": "https://blog.csdn.net/2502_94387000/article/details/163513233",
+      "hot": "14195"
     },
     {
       "rank": 4,
-      "title": "一库融万象：金仓数据库多模融合在复杂业务场景下的实战落地",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/163562777",
-      "hot": "11953"
+      "title": "【CMake】换台机器就编译失败？用 Presets + vcpkg 固定依赖、工具链与 CI",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/163514465",
+      "hot": "12946"
     },
     {
       "rank": 5,
       "title": "一句话做出会下五子棋的 AI：Claude Code × 蓝耘 GLM-5.2 实战",
       "url": "https://blog.csdn.net/qq_57761637/article/details/163559594",
-      "hot": "10688"
+      "hot": "12673"
     },
     {
       "rank": 6,
-      "title": "Nous Research 开源AI Agent 框架",
-      "url": "https://blog.csdn.net/2602_94956987/article/details/163541684",
-      "hot": "10589"
+      "title": "一库融万象：金仓数据库多模融合在复杂业务场景下的实战落地",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/163562777",
+      "hot": "12566"
     },
     {
       "rank": 7,
       "title": "从144G到64G的极致压缩：K100_AI单卡部署MiniMax-H3全模态模型的实战（含详细部署步骤）",
       "url": "https://blog.csdn.net/pla88888888/article/details/163570600",
-      "hot": "10215"
+      "hot": "12249"
     },
     {
       "rank": 8,
-      "title": "远程玩飞车类游戏,ToDesk三款功能免费体验:游戏键盘、游戏鼠标和外接手柄",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/163564164",
-      "hot": "10196"
+      "title": "Nous Research 开源AI Agent 框架",
+      "url": "https://blog.csdn.net/2602_94956987/article/details/163541684",
+      "hot": "12199"
     },
     {
       "rank": 9,
-      "title": "从 Vibe Coding 到 LangGraph：AI 时代编程范式的演进与重构",
-      "url": "https://blog.csdn.net/2502_94387000/article/details/163513233",
-      "hot": "9880"
+      "title": "我搭了人生第一个能开口说话的 AI：一次跑通语音 Agent 的全过程记录",
+      "url": "https://blog.csdn.net/2401_86326742/article/details/163542254",
+      "hot": "11358"
     },
     {
       "rank": 10,
-      "title": "【Linux网络】从0手写Reactor反应堆（一）：核心框架搭建——连接抽象与事件派发",
-      "url": "https://blog.csdn.net/2503_91389547/article/details/162028149",
-      "hot": "9448"
+      "title": "远程玩飞车类游戏,ToDesk三款功能免费体验:游戏键盘、游戏鼠标和外接手柄",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/163564164",
+      "hot": "11348"
     }
   ]
 }
