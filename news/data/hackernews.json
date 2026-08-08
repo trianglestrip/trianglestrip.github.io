@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-08T15:39:11+00:00",
+  "updated_at": "2026-08-08T17:40:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "A domain can now say it is for sale, in DNS",
       "url": "https://specification.website/spec/foundations/for-sale-dns/",
-      "hot": "87"
+      "hot": "188"
     },
     {
       "rank": 2,
-      "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
-      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
-      "hot": "206"
+      "title": "Fastmail offers EU data region",
+      "url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/",
+      "hot": "40"
     },
     {
       "rank": 3,
-      "title": "Gateway 2000's hilariously bad ads in the 90s (Part II)",
-      "url": "https://buttondown.com/suchbadtechads/archive/gateway-2000-part-2/",
-      "hot": "28"
+      "title": "LinkedIn Feed Blocker",
+      "url": "https://github.com/andrewpollack/linkedin-feed-blocker",
+      "hot": "13"
     },
     {
       "rank": 4,
-      "title": "Voyager 1 FDS Computer Emulator",
-      "url": "https://zaneham.github.io/voyager-fds-emulator/",
-      "hot": "22"
+      "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "hot": "280"
     },
     {
       "rank": 5,
-      "title": "Don't use your phone while you poop",
-      "url": "https://nate.spot/no-phone-while-poop/",
-      "hot": "97"
+      "title": "Timeline of the OpenAI accidental attack against Hugging Face",
+      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+      "hot": "181"
     },
     {
       "rank": 6,
-      "title": "A physicist rigged his pet hamster’s wheel to upload to Strava",
-      "url": "https://www.runnersworld.com/news/a73355106/hamster-wheel-strava-running/",
-      "hot": "342"
+      "title": "Gateway 2000's hilariously bad ads in the 90s (Part II)",
+      "url": "https://buttondown.com/suchbadtechads/archive/gateway-2000-part-2/",
+      "hot": "61"
     },
     {
       "rank": 7,
-      "title": "Gentoo bugzilla closed due AI bot scraper overload",
-      "url": "https://social.treehouse.systems/@mgorny/117058483039362779",
-      "hot": "47"
+      "title": "Triton: DirectX 11 Driver for QEMU",
+      "url": "https://blog.getutm.app/2026/introducing-triton-directx-11-driver-for-qemu/",
+      "hot": "54"
     },
     {
       "rank": 8,
-      "title": "Hardware backdoors in some x86 CPUs",
-      "url": "https://github.com/xoreaxeaxeax/rosenbridge",
-      "hot": "239"
+      "title": "Voyager 1 FDS Computer Emulator",
+      "url": "https://zaneham.github.io/voyager-fds-emulator/",
+      "hot": "47"
     },
     {
       "rank": 9,
-      "title": "DeepSeek V4 Flash 0731",
-      "url": "https://arcprize.org/results/deepseek-v4-flash-0731",
-      "hot": "710"
+      "title": "From your doorbell to your home network",
+      "url": "https://adepts.of0x.cc/eufy-doorbell-hacking/",
+      "hot": "34"
     },
     {
       "rank": 10,
-      "title": "BYOC Is Not Just 'Deploy into Their Cloud'",
-      "url": "https://omnistrate.com/blog/byoc-anywhere-the-spectrum-of-bring-your-own-cloud-deployments",
-      "hot": "19"
+      "title": "US Military's cyber command unit grapples with cluster of deaths by suicide",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-06/us-military-s-cyber-command-unit-grapples-with-cluster-of-deaths-by-suicide",
+      "hot": "114"
     }
   ]
 }
