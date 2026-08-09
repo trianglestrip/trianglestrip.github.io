@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-08T22:32:27+00:00",
+  "updated_at": "2026-08-09T00:38:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Denmark Requires Oral Defenses for Students' Written Work to Counter AI Cheating",
-      "url": "https://mezha.net/eng/bukvy/ca117584_denmark_requires_oral/",
-      "hot": "410"
+      "title": "My server is a phone now",
+      "url": "https://seg6.space/posts/phone-server/",
+      "hot": "43"
     },
     {
       "rank": 2,
-      "title": "\"Code was never the hard part\" is an insult to all programmers",
-      "url": "https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers",
-      "hot": "476"
-    },
-    {
-      "rank": 3,
       "title": "Fastmail offers EU data region",
       "url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/",
-      "hot": "274"
-    },
-    {
-      "rank": 4,
-      "title": "Maryland Closes More of Cunningham Falls State Park After Second Beaver Attack",
-      "url": "https://news.maryland.gov/dnr/2026/08/05/dnr-closes-additional-areas-of-cunningham-falls-state-park-following-second-beaver-attack/",
-      "hot": "35"
-    },
-    {
-      "rank": 5,
-      "title": "A domain can now say it is for sale, in DNS",
-      "url": "https://specification.website/spec/foundations/for-sale-dns/",
       "hot": "306"
     },
     {
-      "rank": 6,
+      "rank": 3,
+      "title": "Improving Heuristics for A* Pathfinding",
+      "url": "https://www.redblobgames.com/pathfinding/heuristics/differential.html",
+      "hot": "20"
+    },
+    {
+      "rank": 4,
+      "title": "_for-sale DNS records",
+      "url": "https://specification.website/spec/foundations/for-sale-dns/",
+      "hot": "338"
+    },
+    {
+      "rank": 5,
       "title": "Open-source interactive map for the Aug 12 total solar eclipse",
       "url": "https://eclipsefan.org/?v=2&t=max&layers=eclipse%2Cbesselian%2Cumbra-live%2Cshadow-3d%2Ccloud-projection%2Cosm&lat=43.4623&lon=-3.8099&opacity=besselian%3A0.2%2Cumbra-live%3A0.2&zoom=6&palier=minute",
-      "hot": "48"
+      "hot": "80"
+    },
+    {
+      "rank": 6,
+      "title": "Making difficulty curves in games",
+      "url": "http://www.davetech.co.uk/difficultycurves",
+      "hot": "45"
     },
     {
       "rank": 7,
-      "title": "LinkedIn Feed Blocker",
-      "url": "https://github.com/andrewpollack/linkedin-feed-blocker",
-      "hot": "150"
+      "title": "Can Intel finally beat ARM on performance per Watt?",
+      "url": "https://hackaday.com/2026/08/08/want-energy-efficiency-dude-youre-getting-a-dell/",
+      "hot": "152"
     },
     {
       "rank": 8,
-      "title": "Can Intel finally beat ARM on performance per Watt?",
-      "url": "https://hackaday.com/2026/08/08/want-energy-efficiency-dude-youre-getting-a-dell/",
-      "hot": "125"
+      "title": "DDisasm: Reversible (bi-directional) Disassembler",
+      "url": "https://github.com/GrammaTech/ddisasm",
+      "hot": "16"
     },
     {
       "rank": 9,
-      "title": "Wikipedia's founder on his life's work: \"A propaganda tool\"",
-      "url": "https://nordictimes.com/world/wikipedias-founder-on-his-lifes-work-a-propaganda-tool/",
-      "hot": "8"
+      "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "hot": "370"
     },
     {
       "rank": 10,
-      "title": "Making difficulty curves in games",
-      "url": "http://www.davetech.co.uk/difficultycurves",
-      "hot": "14"
+      "title": "Timeline of the OpenAI accidental attack against Hugging Face",
+      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+      "hot": "320"
     }
   ]
 }
