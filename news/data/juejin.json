@@ -1,56 +1,56 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-09T02:38:20+00:00",
+  "updated_at": "2026-08-09T05:14:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "一线大厂的Git规范",
       "url": "https://juejin.cn/post/7671106436446011443",
-      "hot": "603"
+      "hot": "630"
     },
     {
       "rank": 2,
       "title": "Flutter  hit，一个可以灵活控制溢出点击的第三方包",
       "url": "https://juejin.cn/post/7670078525111861254",
-      "hot": "576"
+      "hot": "603"
     },
     {
       "rank": 3,
       "title": "DeepSeek 预计要涨价，而且涨幅较大，你怎么看？",
       "url": "https://juejin.cn/post/7670739142733381672",
-      "hot": "540"
+      "hot": "558"
     },
     {
       "rank": 4,
       "title": "速度太快了！本地可以跑 DeepSeek-V4-Flash 了",
       "url": "https://juejin.cn/post/7670558003235717135",
-      "hot": "450"
+      "hot": "468"
     },
     {
       "rank": 5,
-      "title": "堆了 20 套主题、10+ 组件，用户还是用不出来？我给设计 Skill 加了「自动驾驶」",
-      "url": "https://juejin.cn/post/7670092136000716843",
-      "hot": "387"
+      "title": "launch 不是用来切线程的：为什么我越来越少在它后面写 Dispatchers.IO",
+      "url": "https://juejin.cn/post/7670383736383832110",
+      "hot": "441"
     },
     {
       "rank": 6,
-      "title": "launch 不是用来切线程的：为什么我越来越少在它后面写 Dispatchers.IO",
-      "url": "https://juejin.cn/post/7670383736383832110",
-      "hot": "387"
+      "title": "堆了 20 套主题、10+ 组件，用户还是用不出来？我给设计 Skill 加了「自动驾驶」",
+      "url": "https://juejin.cn/post/7670092136000716843",
+      "hot": "405"
     },
     {
       "rank": 7,
       "title": "从“白菜价”到大幅涨价，DeepSeek正在经历什么？",
       "url": "https://juejin.cn/post/7670757585832820776",
-      "hot": "369"
+      "hot": "396"
     },
     {
       "rank": 8,
       "title": "为什么在 Flowable 时代还要写一个轻量工作流引擎",
       "url": "https://juejin.cn/post/7670053235008258099",
-      "hot": "324"
+      "hot": "333"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "React Router 进阶：路由守卫、登录鉴权与状态传递",
-      "url": "https://juejin.cn/post/7670593377075118131",
-      "hot": "234"
+      "title": "接手新项目不用硬啃源码，我的 TRAE Work 快速上手实战工作流",
+      "url": "https://juejin.cn/post/7671107889683087366",
+      "hot": "243"
     }
   ]
 }
