@@ -1,50 +1,50 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-09T16:45:10+00:00",
+  "updated_at": "2026-08-09T19:02:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "一线大厂的Git规范",
       "url": "https://juejin.cn/post/7671106436446011443",
-      "hot": "756"
+      "hot": "765"
     },
     {
       "rank": 2,
       "title": "从“白菜价”到大幅涨价，DeepSeek正在经历什么？",
       "url": "https://juejin.cn/post/7670757585832820776",
-      "hot": "522"
+      "hot": "549"
     },
     {
       "rank": 3,
       "title": "launch 不是用来切线程的：为什么我越来越少在它后面写 Dispatchers.IO",
       "url": "https://juejin.cn/post/7670383736383832110",
-      "hot": "468"
+      "hot": "477"
     },
     {
       "rank": 4,
       "title": "接手新项目不用硬啃源码，我的 TRAE Work 快速上手实战工作流",
       "url": "https://juejin.cn/post/7671107889683087366",
-      "hot": "288"
+      "hot": "306"
     },
     {
       "rank": 5,
+      "title": "Vue3+Cesium实现阴天乌云+下雨天气特效",
+      "url": "https://juejin.cn/post/7670747041917337600",
+      "hot": "216"
+    },
+    {
+      "rank": 6,
       "title": "useRef + Web Worker：React 中的耗时计算不卡页面",
       "url": "https://juejin.cn/post/7671152660225622026",
       "hot": "207"
     },
     {
-      "rank": 6,
-      "title": "Vue3+Cesium实现阴天乌云+下雨天气特效",
-      "url": "https://juejin.cn/post/7670747041917337600",
-      "hot": "198"
-    },
-    {
       "rank": 7,
       "title": "TRAE Work 实战，之前写一篇水文要半天，现在用 TRAE Work 2分钟交差!",
       "url": "https://juejin.cn/post/7671106436445257779",
-      "hot": "189"
+      "hot": "198"
     },
     {
       "rank": 8,
@@ -56,13 +56,13 @@
       "rank": 9,
       "title": "Boolean 变量到底该怎么命名？",
       "url": "https://juejin.cn/post/7670447828809302054",
-      "hot": "162"
+      "hot": "171"
     },
     {
       "rank": 10,
-      "title": "自定义业务 Hook：从零解剖一个 React + TypeScript Todo 应用：用金字塔思维看透前端架构",
-      "url": "https://juejin.cn/post/7671163789467025462",
-      "hot": "153"
+      "title": "我重写了自己用了两年的防抖节流Hook——发现里面藏着3个隐藏bug",
+      "url": "https://juejin.cn/post/7670703945447505983",
+      "hot": "162"
     }
   ]
 }
