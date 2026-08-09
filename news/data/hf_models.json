@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-09T05:14:40+00:00",
+  "updated_at": "2026-08-09T11:18:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "3127"
+      "hot": "3174"
     },
     {
       "rank": 2,
       "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "2866"
+      "hot": "2896"
     },
     {
       "rank": 3,
       "title": "Comfy-Org/MiniMax-H3",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
-      "hot": "1013"
+      "hot": "1031"
     },
     {
       "rank": 4,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "10347"
+      "hot": "10366"
     },
     {
       "rank": 5,
       "title": "larryvrh/MiniMax-H3-Turbo-Lora",
       "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
-      "hot": "494"
+      "hot": "509"
     },
     {
       "rank": 6,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "1768"
+      "hot": "1783"
     },
     {
       "rank": 7,
       "title": "LiquidAI/LFM2.5-2.6B",
       "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
-      "hot": "418"
+      "hot": "430"
     },
     {
       "rank": 8,
       "title": "ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
       "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
-      "hot": "406"
+      "hot": "411"
     },
     {
       "rank": 9,
       "title": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
       "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
-      "hot": "608"
+      "hot": "617"
     },
     {
       "rank": 10,
       "title": "deepgrove/maple-preview",
       "url": "https://huggingface.co/deepgrove/maple-preview",
-      "hot": "260"
+      "hot": "270"
     }
   ]
 }
