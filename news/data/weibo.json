@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-09T15:04:33+00:00",
+  "updated_at": "2026-08-09T15:39:47+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,44 +24,44 @@
     },
     {
       "rank": 4,
+      "title": "我叫巴威 是的我重生了",
+      "url": "https://s.weibo.com/weibo?q=%E6%88%91%E5%8F%AB%E5%B7%B4%E5%A8%81%20%E6%98%AF%E7%9A%84%E6%88%91%E9%87%8D%E7%94%9F%E4%BA%86",
+      "hot": ""
+    },
+    {
+      "rank": 5,
       "title": "沈腾 影帝",
       "url": "https://s.weibo.com/weibo?q=%E6%B2%88%E8%85%BE%20%E5%BD%B1%E5%B8%9D",
       "hot": ""
     },
     {
-      "rank": 5,
-      "title": "上海地铁",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%8A%E6%B5%B7%E5%9C%B0%E9%93%81",
-      "hot": ""
-    },
-    {
       "rank": 6,
-      "title": "龙餐馆 奥斯卡",
-      "url": "https://s.weibo.com/weibo?q=%E9%BE%99%E9%A4%90%E9%A6%86%20%E5%A5%A5%E6%96%AF%E5%8D%A1",
-      "hot": ""
-    },
-    {
-      "rank": 7,
       "title": "上海地铁停运",
       "url": "https://s.weibo.com/weibo?q=%E4%B8%8A%E6%B5%B7%E5%9C%B0%E9%93%81%E5%81%9C%E8%BF%90",
       "hot": ""
     },
     {
-      "rank": 8,
-      "title": "朱一龙鼻子怎么了",
-      "url": "https://s.weibo.com/weibo?q=%E6%9C%B1%E4%B8%80%E9%BE%99%E9%BC%BB%E5%AD%90%E6%80%8E%E4%B9%88%E4%BA%86",
+      "rank": 7,
+      "title": "伯爵熠眼心动",
+      "url": "https://s.weibo.com/weibo?q=%E4%BC%AF%E7%88%B5%E7%86%A0%E7%9C%BC%E5%BF%83%E5%8A%A8",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "张本兄妹 乒坛格局松动",
       "url": "https://s.weibo.com/weibo?q=%E5%BC%A0%E6%9C%AC%E5%85%84%E5%A6%B9%20%E4%B9%92%E5%9D%9B%E6%A0%BC%E5%B1%80%E6%9D%BE%E5%8A%A8",
       "hot": ""
     },
     {
+      "rank": 9,
+      "title": "龙餐馆 奥斯卡",
+      "url": "https://s.weibo.com/weibo?q=%E9%BE%99%E9%A4%90%E9%A6%86%20%E5%A5%A5%E6%96%AF%E5%8D%A1",
+      "hot": ""
+    },
+    {
       "rank": 10,
-      "title": "极氪7X充电起火",
-      "url": "https://s.weibo.com/weibo?q=%E6%9E%81%E6%B0%AA7X%E5%85%85%E7%94%B5%E8%B5%B7%E7%81%AB",
+      "title": "上海地铁",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%8A%E6%B5%B7%E5%9C%B0%E9%93%81",
       "hot": ""
     }
   ]
