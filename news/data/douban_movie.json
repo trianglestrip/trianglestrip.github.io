@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-09T14:38:51+00:00",
+  "updated_at": "2026-08-09T16:44:57+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,33 +24,33 @@
     },
     {
       "rank": 4,
-      "title": "痴迷",
-      "url": "https://movie.douban.com/subject/37450627/",
-      "hot": "评分 7.6"
-    },
-    {
-      "rank": 5,
       "title": "奥德赛",
       "url": "https://movie.douban.com/subject/36808876/",
       "hot": "评分 8.3"
     },
     {
+      "rank": 5,
+      "title": "痴迷",
+      "url": "https://movie.douban.com/subject/37450627/",
+      "hot": "评分 7.6"
+    },
+    {
       "rank": 6,
+      "title": "欢迎来龙餐馆",
+      "url": "https://movie.douban.com/subject/35811064/",
+      "hot": ""
+    },
+    {
+      "rank": 7,
       "title": "消失的人",
       "url": "https://movie.douban.com/subject/36965301/",
       "hot": "评分 7.2"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "功夫女足",
       "url": "https://movie.douban.com/subject/36452545/",
       "hot": "评分 6.4"
-    },
-    {
-      "rank": 8,
-      "title": "欢迎来龙餐馆",
-      "url": "https://movie.douban.com/subject/35811064/",
-      "hot": ""
     },
     {
       "rank": 9,
