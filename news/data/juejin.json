@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-09T07:40:51+00:00",
+  "updated_at": "2026-08-09T09:52:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "一线大厂的Git规范",
       "url": "https://juejin.cn/post/7671106436446011443",
-      "hot": "657"
+      "hot": "675"
     },
     {
       "rank": 2,
-      "title": "Flutter  hit，一个可以灵活控制溢出点击的第三方包",
-      "url": "https://juejin.cn/post/7670078525111861254",
-      "hot": "603"
+      "title": "DeepSeek 预计要涨价，而且涨幅较大，你怎么看？",
+      "url": "https://juejin.cn/post/7670739142733381672",
+      "hot": "585"
     },
     {
       "rank": 3,
-      "title": "DeepSeek 预计要涨价，而且涨幅较大，你怎么看？",
-      "url": "https://juejin.cn/post/7670739142733381672",
-      "hot": "567"
+      "title": "速度太快了！本地可以跑 DeepSeek-V4-Flash 了",
+      "url": "https://juejin.cn/post/7670558003235717135",
+      "hot": "486"
     },
     {
       "rank": 4,
-      "title": "速度太快了！本地可以跑 DeepSeek-V4-Flash 了",
-      "url": "https://juejin.cn/post/7670558003235717135",
-      "hot": "477"
-    },
-    {
-      "rank": 5,
       "title": "launch 不是用来切线程的：为什么我越来越少在它后面写 Dispatchers.IO",
       "url": "https://juejin.cn/post/7670383736383832110",
       "hot": "450"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "从“白菜价”到大幅涨价，DeepSeek正在经历什么？",
       "url": "https://juejin.cn/post/7670757585832820776",
-      "hot": "414"
+      "hot": "441"
+    },
+    {
+      "rank": 6,
+      "title": "接手新项目不用硬啃源码，我的 TRAE Work 快速上手实战工作流",
+      "url": "https://juejin.cn/post/7671107889683087366",
+      "hot": "252"
     },
     {
       "rank": 7,
-      "title": "堆了 20 套主题、10+ 组件，用户还是用不出来？我给设计 Skill 加了「自动驾驶」",
-      "url": "https://juejin.cn/post/7670092136000716843",
-      "hot": "414"
+      "title": "React Router 进阶：路由守卫、登录鉴权与状态传递",
+      "url": "https://juejin.cn/post/7670593377075118131",
+      "hot": "252"
     },
     {
       "rank": 8,
-      "title": "为什么在 Flowable 时代还要写一个轻量工作流引擎",
-      "url": "https://juejin.cn/post/7670053235008258099",
-      "hot": "333"
+      "title": "我用 Codex 自动剪视频，全靠这 9 个 视频 skills",
+      "url": "https://juejin.cn/post/7670567758656962595",
+      "hot": "225"
     },
     {
       "rank": 9,
-      "title": "接手新项目不用硬啃源码，我的 TRAE Work 快速上手实战工作流",
-      "url": "https://juejin.cn/post/7671107889683087366",
-      "hot": "243"
+      "title": "useRef + Web Worker：React 中的耗时计算不卡页面",
+      "url": "https://juejin.cn/post/7671152660225622026",
+      "hot": "189"
     },
     {
       "rank": 10,
-      "title": "React Router 进阶：路由守卫、登录鉴权与状态传递",
-      "url": "https://juejin.cn/post/7670593377075118131",
-      "hot": "243"
+      "title": "TRAE Work 实战，之前写一篇水文要半天，现在用 TRAE Work 2分钟交差!",
+      "url": "https://juejin.cn/post/7671106436445257779",
+      "hot": "180"
     }
   ]
 }

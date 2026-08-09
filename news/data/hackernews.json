@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-09T07:41:06+00:00",
+  "updated_at": "2026-08-09T09:53:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Microsoft Word for Windows 1.1a, Native X64 Port",
       "url": "https://github.com/jmarshall23/msword",
-      "hot": "33"
+      "hot": "72"
     },
     {
       "rank": 2,
       "title": "My server is a phone now",
       "url": "https://seg6.space/posts/phone-server/",
-      "hot": "272"
+      "hot": "328"
     },
     {
       "rank": 3,
-      "title": "Os8088: A powerful Mac-like OS for the IBM XT, 286, 386",
-      "url": "https://os8088.com/",
-      "hot": "142"
+      "title": "There Are Magic Hexagons of Every Order",
+      "url": "https://gukov.dev/math/2026/08/02/new-magic-hexagons.html",
+      "hot": "15"
     },
     {
       "rank": 4,
-      "title": "Melatonin impairs morning cognition in healthy young adults (2023)",
-      "url": "https://academic.oup.com/sleep/article/46/Supplement_1/A34/7181621",
-      "hot": "86"
+      "title": "Os8088: A powerful Mac-like OS for the IBM XT, 286, 386",
+      "url": "https://os8088.com/",
+      "hot": "173"
     },
     {
       "rank": 5,
-      "title": "The original URL for this prediction will no longer be available in 11 years (2011)",
-      "url": "http://longbets.org/601/",
-      "hot": "111"
+      "title": "Melatonin impairs morning cognition in healthy young adults (2023)",
+      "url": "https://academic.oup.com/sleep/article/46/Supplement_1/A34/7181621",
+      "hot": "124"
     },
     {
       "rank": 6,
       "title": "Improving Heuristics for A* Pathfinding",
       "url": "https://www.redblobgames.com/pathfinding/heuristics/differential.html",
-      "hot": "197"
+      "hot": "231"
     },
     {
       "rank": 7,
-      "title": "Shopify replaced Redis with MySQL for inventory reservations–and it scaled",
-      "url": "https://shopify.engineering/scaling-inventory-reservations",
-      "hot": "165"
+      "title": "Dithered QR Codes",
+      "url": "https://www.andrewt.net/dithered-qr-codes/wtf/",
+      "hot": "202"
     },
     {
       "rank": 8,
-      "title": "Dithered QR Codes",
-      "url": "https://www.andrewt.net/dithered-qr-codes/wtf/",
-      "hot": "145"
+      "title": "Fastmail offers EU data region",
+      "url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/",
+      "hot": "417"
     },
     {
       "rank": 9,
-      "title": "Fastmail offers EU data region",
-      "url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/",
-      "hot": "388"
+      "title": "Shopify replaced Redis with MySQL for inventory reservations–and it scaled",
+      "url": "https://shopify.engineering/scaling-inventory-reservations",
+      "hot": "199"
     },
     {
       "rank": 10,
-      "title": "Incentives are for losers",
-      "url": "https://www.experimental-history.com/p/incentives-are-for-losers",
-      "hot": "83"
+      "title": "The original URL for this prediction will no longer be available in 11 years (2011)",
+      "url": "http://longbets.org/601/",
+      "hot": "144"
     }
   ]
 }
