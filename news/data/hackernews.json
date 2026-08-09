@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-09T05:14:18+00:00",
+  "updated_at": "2026-08-09T07:41:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "My server is a phone now",
-      "url": "https://seg6.space/posts/phone-server/",
-      "hot": "199"
+      "title": "Microsoft Word for Windows 1.1a, Native X64 Port",
+      "url": "https://github.com/jmarshall23/msword",
+      "hot": "33"
     },
     {
       "rank": 2,
-      "title": "\"The original URL for this prediction will no longer be available in 11 years.\" (2011)",
-      "url": "https://longbets.org/601/",
-      "hot": "14"
+      "title": "My server is a phone now",
+      "url": "https://seg6.space/posts/phone-server/",
+      "hot": "272"
     },
     {
       "rank": 3,
       "title": "Os8088: A powerful Mac-like OS for the IBM XT, 286, 386",
       "url": "https://os8088.com/",
-      "hot": "102"
+      "hot": "142"
     },
     {
       "rank": 4,
-      "title": "Improving Heuristics for A* Pathfinding",
-      "url": "https://www.redblobgames.com/pathfinding/heuristics/differential.html",
-      "hot": "143"
+      "title": "Melatonin impairs morning cognition in healthy young adults (2023)",
+      "url": "https://academic.oup.com/sleep/article/46/Supplement_1/A34/7181621",
+      "hot": "86"
     },
     {
       "rank": 5,
-      "title": "Fastmail offers EU data region",
-      "url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/",
-      "hot": "355"
+      "title": "The original URL for this prediction will no longer be available in 11 years (2011)",
+      "url": "http://longbets.org/601/",
+      "hot": "111"
     },
     {
       "rank": 6,
-      "title": "Shopify replaced Redis with MySQL for inventory reservations–and it scaled",
-      "url": "https://shopify.engineering/scaling-inventory-reservations",
-      "hot": "114"
+      "title": "Improving Heuristics for A* Pathfinding",
+      "url": "https://www.redblobgames.com/pathfinding/heuristics/differential.html",
+      "hot": "197"
     },
     {
       "rank": 7,
-      "title": "Dithered QR Codes",
-      "url": "https://www.andrewt.net/dithered-qr-codes/wtf/",
-      "hot": "96"
+      "title": "Shopify replaced Redis with MySQL for inventory reservations–and it scaled",
+      "url": "https://shopify.engineering/scaling-inventory-reservations",
+      "hot": "165"
     },
     {
       "rank": 8,
-      "title": "Incentives Are for Losers",
-      "url": "https://www.experimental-history.com/p/incentives-are-for-losers",
-      "hot": "23"
+      "title": "Dithered QR Codes",
+      "url": "https://www.andrewt.net/dithered-qr-codes/wtf/",
+      "hot": "145"
     },
     {
       "rank": 9,
-      "title": "Unexpected events and prosocial behavior: the Batman effect",
-      "url": "https://www.nature.com/articles/s44184-025-00171-5",
-      "hot": "33"
+      "title": "Fastmail offers EU data region",
+      "url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/",
+      "hot": "388"
     },
     {
       "rank": 10,
-      "title": "_for-sale DNS records",
-      "url": "https://specification.website/spec/foundations/for-sale-dns/",
-      "hot": "373"
+      "title": "Incentives are for losers",
+      "url": "https://www.experimental-history.com/p/incentives-are-for-losers",
+      "hot": "83"
     }
   ]
 }
