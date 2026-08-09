@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-09T09:53:17+00:00",
+  "updated_at": "2026-08-09T12:17:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Microsoft Word for Windows 1.1a, Native X64 Port",
-      "url": "https://github.com/jmarshall23/msword",
-      "hot": "72"
+      "title": "There Are Magic Hexagons of Every Order",
+      "url": "https://gukov.dev/math/2026/08/02/new-magic-hexagons.html",
+      "hot": "61"
     },
     {
       "rank": 2,
       "title": "My server is a phone now",
       "url": "https://seg6.space/posts/phone-server/",
-      "hot": "328"
+      "hot": "366"
     },
     {
       "rank": 3,
-      "title": "There Are Magic Hexagons of Every Order",
-      "url": "https://gukov.dev/math/2026/08/02/new-magic-hexagons.html",
-      "hot": "15"
+      "title": "Microsoft Word for Windows 1.1a, Native X64 Port",
+      "url": "https://github.com/jmarshall23/msword",
+      "hot": "97"
     },
     {
       "rank": 4,
       "title": "Os8088: A powerful Mac-like OS for the IBM XT, 286, 386",
       "url": "https://os8088.com/",
-      "hot": "173"
+      "hot": "189"
     },
     {
       "rank": 5,
-      "title": "Melatonin impairs morning cognition in healthy young adults (2023)",
-      "url": "https://academic.oup.com/sleep/article/46/Supplement_1/A34/7181621",
-      "hot": "124"
+      "title": "The Grid That Doubles the Strength of the Ground",
+      "url": "https://practical.engineering/blog/2026/8/4/the-grid-that-doubles-the-strength-of-the-ground",
+      "hot": "37"
     },
     {
       "rank": 6,
-      "title": "Improving Heuristics for A* Pathfinding",
-      "url": "https://www.redblobgames.com/pathfinding/heuristics/differential.html",
-      "hot": "231"
+      "title": "Fastmail offers EU data region",
+      "url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/",
+      "hot": "442"
     },
     {
       "rank": 7,
-      "title": "Dithered QR Codes",
-      "url": "https://www.andrewt.net/dithered-qr-codes/wtf/",
-      "hot": "202"
+      "title": "Improving Heuristics for A* Pathfinding",
+      "url": "https://www.redblobgames.com/pathfinding/heuristics/differential.html",
+      "hot": "272"
     },
     {
       "rank": 8,
-      "title": "Fastmail offers EU data region",
-      "url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/",
-      "hot": "417"
+      "title": "Dithered QR Codes",
+      "url": "https://www.andrewt.net/dithered-qr-codes/wtf/",
+      "hot": "241"
     },
     {
       "rank": 9,
-      "title": "Shopify replaced Redis with MySQL for inventory reservations–and it scaled",
-      "url": "https://shopify.engineering/scaling-inventory-reservations",
-      "hot": "199"
+      "title": "The Alpha 21264 CPU: NT's Greatest RISC (1998)",
+      "url": "https://halfhill.com/byte/1998-12_alpha.html",
+      "hot": "14"
     },
     {
       "rank": 10,
-      "title": "The original URL for this prediction will no longer be available in 11 years (2011)",
-      "url": "http://longbets.org/601/",
-      "hot": "144"
+      "title": "Shopify replaced Redis with MySQL for inventory reservations–and it scaled",
+      "url": "https://shopify.engineering/scaling-inventory-reservations",
+      "hot": "235"
     }
   ]
 }

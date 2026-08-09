@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-09T09:52:54+00:00",
+  "updated_at": "2026-08-09T12:17:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "一线大厂的Git规范",
       "url": "https://juejin.cn/post/7671106436446011443",
-      "hot": "675"
+      "hot": "729"
     },
     {
       "rank": 2,
-      "title": "DeepSeek 预计要涨价，而且涨幅较大，你怎么看？",
-      "url": "https://juejin.cn/post/7670739142733381672",
-      "hot": "585"
+      "title": "速度太快了！本地可以跑 DeepSeek-V4-Flash 了",
+      "url": "https://juejin.cn/post/7670558003235717135",
+      "hot": "504"
     },
     {
       "rank": 3,
-      "title": "速度太快了！本地可以跑 DeepSeek-V4-Flash 了",
-      "url": "https://juejin.cn/post/7670558003235717135",
+      "title": "从“白菜价”到大幅涨价，DeepSeek正在经历什么？",
+      "url": "https://juejin.cn/post/7670757585832820776",
       "hot": "486"
     },
     {
       "rank": 4,
       "title": "launch 不是用来切线程的：为什么我越来越少在它后面写 Dispatchers.IO",
       "url": "https://juejin.cn/post/7670383736383832110",
-      "hot": "450"
+      "hot": "459"
     },
     {
       "rank": 5,
-      "title": "从“白菜价”到大幅涨价，DeepSeek正在经历什么？",
-      "url": "https://juejin.cn/post/7670757585832820776",
-      "hot": "441"
+      "title": "接手新项目不用硬啃源码，我的 TRAE Work 快速上手实战工作流",
+      "url": "https://juejin.cn/post/7671107889683087366",
+      "hot": "270"
     },
     {
       "rank": 6,
-      "title": "接手新项目不用硬啃源码，我的 TRAE Work 快速上手实战工作流",
-      "url": "https://juejin.cn/post/7671107889683087366",
-      "hot": "252"
+      "title": "useRef + Web Worker：React 中的耗时计算不卡页面",
+      "url": "https://juejin.cn/post/7671152660225622026",
+      "hot": "198"
     },
     {
       "rank": 7,
-      "title": "React Router 进阶：路由守卫、登录鉴权与状态传递",
-      "url": "https://juejin.cn/post/7670593377075118131",
-      "hot": "252"
-    },
-    {
-      "rank": 8,
-      "title": "我用 Codex 自动剪视频，全靠这 9 个 视频 skills",
-      "url": "https://juejin.cn/post/7670567758656962595",
-      "hot": "225"
-    },
-    {
-      "rank": 9,
-      "title": "useRef + Web Worker：React 中的耗时计算不卡页面",
-      "url": "https://juejin.cn/post/7671152660225622026",
-      "hot": "189"
-    },
-    {
-      "rank": 10,
       "title": "TRAE Work 实战，之前写一篇水文要半天，现在用 TRAE Work 2分钟交差!",
       "url": "https://juejin.cn/post/7671106436445257779",
       "hot": "180"
+    },
+    {
+      "rank": 8,
+      "title": "Vue3+Cesium实现阴天乌云+下雨天气特效",
+      "url": "https://juejin.cn/post/7670747041917337600",
+      "hot": "180"
+    },
+    {
+      "rank": 9,
+      "title": "我重写了自己用了两年的防抖节流Hook——发现里面藏着3个隐藏bug",
+      "url": "https://juejin.cn/post/7670703945447505983",
+      "hot": "153"
+    },
+    {
+      "rank": 10,
+      "title": "Boolean 变量到底该怎么命名？",
+      "url": "https://juejin.cn/post/7670447828809302054",
+      "hot": "153"
     }
   ]
 }

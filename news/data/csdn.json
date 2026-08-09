@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-09T09:52:56+00:00",
+  "updated_at": "2026-08-09T12:17:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "KingbaseES 全文检索实战：中文分词、GIN 索引与相关性排名",
       "url": "https://blog.csdn.net/m0_71592416/article/details/163558520",
-      "hot": "24746"
+      "hot": "25116"
     },
     {
       "rank": 2,
       "title": "从 Vibe Coding 到 LangGraph：AI 时代编程范式的演进与重构",
       "url": "https://blog.csdn.net/2502_94387000/article/details/163513233",
-      "hot": "23831"
+      "hot": "23423"
     },
     {
       "rank": 3,
       "title": "【MYSQL】MYSQL学习的一大重点：用户与权限管理",
       "url": "https://blog.csdn.net/2401_89899187/article/details/163281396",
-      "hot": "17271"
+      "hot": "17584"
     },
     {
       "rank": 4,
-      "title": "读懂 MCP 与 A2A 架构：AI 多智能体时代的企业级开发实践",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/163573581",
-      "hot": "14833"
+      "title": "【LangChain】 LLM 与 Embedding 深度解析：底层原理、提示词工程、原生接入与实战指南",
+      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/163474924",
+      "hot": "15794"
     },
     {
       "rank": 5,
-      "title": "【LangChain】 LLM 与 Embedding 深度解析：底层原理、提示词工程、原生接入与实战指南",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/163474924",
-      "hot": "14659"
+      "title": "读懂 MCP 与 A2A 架构：AI 多智能体时代的企业级开发实践",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/163573581",
+      "hot": "15195"
     },
     {
       "rank": 6,
       "title": "让日志清理自己跑起来：Ansible、Cron和远程SSH自动化实战",
       "url": "https://blog.csdn.net/2302_78391795/article/details/163562981",
-      "hot": "12531"
+      "hot": "13395"
     },
     {
       "rank": 7,
-      "title": "从慢 SQL 到系统瓶颈：一次金仓数据库性能调优实战复盘",
-      "url": "https://blog.csdn.net/lrq13965748542/article/details/163562693",
-      "hot": "10340"
+      "title": "KingbaseES多模架构下的MongoDB迁移方案",
+      "url": "https://blog.csdn.net/lrq13965748542/article/details/163592630",
+      "hot": "11260"
     },
     {
       "rank": 8,
-      "title": "一句话做出会下五子棋的 AI：Claude Code × 蓝耘 GLM-5.2 实战",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/163559594",
-      "hot": "9766"
+      "title": "AI 前沿日报 | 2026年08月08日 星期六",
+      "url": "https://blog.csdn.net/qq_36729037/article/details/163588873",
+      "hot": "11131"
     },
     {
       "rank": 9,
-      "title": "Re：Linux系统篇（五十二）线程篇 · 五：直击 Linux 内核底层：TCB 与 LWP 一体两面全解析（附自定义线程封装）",
-      "url": "https://blog.csdn.net/Z2314246476/article/details/163481224",
-      "hot": "9335"
+      "title": "从“自然语言问数“到“AI 自动调优“：我给金仓写了一个 MCP Server",
+      "url": "https://blog.csdn.net/2401_86326742/article/details/163594322",
+      "hot": "10663"
     },
     {
       "rank": 10,
-      "title": "从聊天到委派：AI Agent 如何推进长期任务",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/163494733",
-      "hot": "9303"
+      "title": "一句话做出会下五子棋的 AI：Claude Code × 蓝耘 GLM-5.2 实战",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/163559594",
+      "hot": "9602"
     }
   ]
 }
