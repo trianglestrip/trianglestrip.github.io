@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-10T13:54:22+00:00",
+  "updated_at": "2026-08-10T20:01:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "3366"
+      "hot": "3402"
     },
     {
       "rank": 2,
       "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "3012"
+      "hot": "3037"
     },
     {
       "rank": 3,
       "title": "Comfy-Org/MiniMax-H3",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
-      "hot": "1115"
+      "hot": "1136"
     },
     {
       "rank": 4,
-      "title": "larryvrh/MiniMax-H3-Turbo-Lora",
-      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
-      "hot": "577"
+      "title": "meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "hot": "602"
     },
     {
       "rank": 5,
-      "title": "moonshotai/Kimi-K3",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "10445"
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "hot": "595"
     },
     {
       "rank": 6,
-      "title": "LiquidAI/LFM2.5-2.6B",
-      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
-      "hot": "474"
+      "title": "moonshotai/Kimi-K3",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3",
+      "hot": "10461"
     },
     {
       "rank": 7,
-      "title": "ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
-      "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
-      "hot": "433"
+      "title": "LiquidAI/LFM2.5-2.6B",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "hot": "483"
     },
     {
       "rank": 8,
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "hot": "1839"
+      "hot": "1854"
     },
     {
       "rank": 9,
-      "title": "meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "hot": "323"
+      "title": "ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
+      "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
+      "hot": "438"
     },
     {
       "rank": 10,
       "title": "deepgrove/maple-preview",
       "url": "https://huggingface.co/deepgrove/maple-preview",
-      "hot": "303"
+      "hot": "307"
     }
   ]
 }
