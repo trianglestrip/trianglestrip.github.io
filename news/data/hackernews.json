@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-10T16:29:59+00:00",
+  "updated_at": "2026-08-10T19:13:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Meta Muse Glimmer – open weights 30B local coding model",
+      "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
       "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
-      "hot": "651"
+      "hot": "826"
     },
     {
       "rank": 2,
-      "title": "Mars Bar from 1991 found – and it's 20g bigger than today's",
-      "url": "https://www.bbc.com/news/articles/c1j1kjy7gewo",
-      "hot": "103"
+      "title": "Sonic Pi v5",
+      "url": "https://www.patreon.com/samaaron/posts/sonic-pi-v5-166001392",
+      "hot": "154"
     },
     {
       "rank": 3,
-      "title": "Magnitude 7.4 Earthquake – 5 km S of San José del Palmar, Colombia",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2/executive",
-      "hot": "24"
+      "title": "Launch HN: Stoa Markets (YC S26) – A Marketplace for GPUs and AI Servers",
+      "url": "https://www.stoaexchange.com",
+      "hot": "40"
     },
     {
       "rank": 4,
-      "title": "50k Boat Names",
-      "url": "https://www.beautifulpublicdata.com/boat-names/",
-      "hot": "92"
+      "title": "Show HN: Ante, a coding agent in a single binary that runs offline",
+      "url": "https://github.com/AntigmaLabs/ante",
+      "hot": "83"
     },
     {
       "rank": 5,
-      "title": "Squeak/Smalltalk 6.1 Release Notes",
-      "url": "https://squeak.org/release_notes/6.1/",
-      "hot": "95"
+      "title": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+      "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+      "hot": "123"
     },
     {
       "rank": 6,
-      "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
-      "url": "https://www.docker.com/products/docker-sandboxes/",
-      "hot": "462"
+      "title": "Exploiting System Management Mode with a very long interrupt",
+      "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
+      "hot": "72"
     },
     {
       "rank": 7,
-      "title": "'Pervert glasses': Backlash against Meta's smart glasses grows",
-      "url": "https://www.seattletimes.com/business/technology/pervert-glasses-backlash-against-metas-smart-glasses-grows/",
-      "hot": "79"
+      "title": "Midlife Vascular Risk Burden and Dementia-Free Survival Years",
+      "url": "https://www.neurology.org/doi/10.1212/WN9.0000000000000152",
+      "hot": "53"
     },
     {
       "rank": 8,
-      "title": "Ask HN: In your experience, what are sound conventions for e-ink UI development?",
-      "url": "https://news.ycombinator.com/item?id=49213660",
-      "hot": "22"
+      "title": "The Tragedy of the Cognitive Commons",
+      "url": "https://arxiv.org/abs/2607.29380",
+      "hot": "46"
     },
     {
       "rank": 9,
-      "title": "Kinney Drugs pulls back AI phone assistant after hundreds of customer complaints",
-      "url": "https://www.wcax.com/2026/08/07/kinney-drugs-pulls-back-ai-phone-assistant-after-hundreds-customer-complaints/",
-      "hot": "14"
+      "title": "Learning more about Claude's mathematical capabilities",
+      "url": "https://www.anthropic.com/research/riemann-zeta",
+      "hot": "84"
     },
     {
       "rank": 10,
-      "title": "Exploiting System Management Mode with a very long interrupt",
-      "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
-      "hot": "5"
+      "title": "The Psychedelic Toad of the Sonoran Desert",
+      "url": "https://en.wikipedia.org/wiki/Bufo_Alvarius:_the_Psychedelic_Toad_of_the_Sonoran_Desert",
+      "hot": "12"
     }
   ]
 }
