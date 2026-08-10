@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-10T13:53:34+00:00",
+  "updated_at": "2026-08-10T16:29:37+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,27 +18,27 @@
     },
     {
       "rank": 3,
-      "title": "年会不能停！2",
-      "url": "https://movie.douban.com/subject/36850814/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 4,
       "title": "奥德赛",
       "url": "https://movie.douban.com/subject/36808876/",
       "hot": "评分 8.3"
     },
     {
-      "rank": 5,
-      "title": "痴迷",
-      "url": "https://movie.douban.com/subject/37450627/",
-      "hot": "评分 7.6"
-    },
-    {
-      "rank": 6,
+      "rank": 4,
       "title": "欢迎来龙餐馆",
       "url": "https://movie.douban.com/subject/35811064/",
       "hot": ""
+    },
+    {
+      "rank": 5,
+      "title": "年会不能停！2",
+      "url": "https://movie.douban.com/subject/36850814/",
+      "hot": "评分 6.7"
+    },
+    {
+      "rank": 6,
+      "title": "痴迷",
+      "url": "https://movie.douban.com/subject/37450627/",
+      "hot": "评分 7.6"
     },
     {
       "rank": 7,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "寒战1994",
-      "url": "https://movie.douban.com/subject/36857924/",
-      "hot": "评分 7.0"
+      "title": "莫得闲",
+      "url": "https://movie.douban.com/subject/38407550/",
+      "hot": ""
     }
   ]
 }
