@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-10T08:21:45+00:00",
+  "updated_at": "2026-08-10T10:53:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "读懂 MCP 与 A2A 架构：AI 多智能体时代的企业级开发实践",
       "url": "https://blog.csdn.net/weixin_52908342/article/details/163573581",
-      "hot": "21705"
+      "hot": "21077"
     },
     {
       "rank": 2,
-      "title": "【LangChain】 LLM 与 Embedding 深度解析：底层原理、提示词工程、原生接入与实战指南",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/163474924",
-      "hot": "19511"
+      "title": "【MYSQL】MYSQL学习的一大重点：用户与权限管理",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163281396",
+      "hot": "17361"
     },
     {
       "rank": 3,
-      "title": "【MYSQL】MYSQL学习的一大重点：用户与权限管理",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/163281396",
-      "hot": "15533"
+      "title": "KingbaseES多模架构下的MongoDB迁移方案",
+      "url": "https://blog.csdn.net/lrq13965748542/article/details/163592630",
+      "hot": "16897"
     },
     {
       "rank": 4,
-      "title": "KingbaseES多模架构下的MongoDB迁移方案",
-      "url": "https://blog.csdn.net/lrq13965748542/article/details/163592630",
-      "hot": "14573"
+      "title": "【金仓数据库征文】从 MySQL 迁移到金仓数据库：哈工大智能造价项目的一次信创改造实践",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/163609837",
+      "hot": "13888"
     },
     {
       "rank": 5,
-      "title": "【金仓数据库征文】从 MySQL 迁移到金仓数据库：哈工大智能造价项目的一次信创改造实践",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/163609837",
-      "hot": "12505"
+      "title": "从聊天到委派：AI Agent 如何推进长期任务",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/163494733",
+      "hot": "13250"
     },
     {
       "rank": 6,
-      "title": "【Linux 系统篇(十四)】进程 (二) ：PCB、task_struct、fork系统调用",
-      "url": "https://blog.csdn.net/Huang_jin007/article/details/163505129",
-      "hot": "11593"
+      "title": "GitHub 热榜项目 - 周榜(2026-08-08)",
+      "url": "https://blog.csdn.net/u014390502/article/details/163583883",
+      "hot": "12984"
     },
     {
       "rank": 7,
       "title": "OpenClaw 测试策略实战：AI Agent 自动化测试体系搭建与落地",
       "url": "https://blog.csdn.net/sinat_41617212/article/details/163612055",
-      "hot": "11180"
+      "hot": "12952"
     },
     {
       "rank": 8,
       "title": "【金仓数据库征文】MySQL迁移人大金仓V9异构迁移全链路性能调优与稳定性保障",
       "url": "https://blog.csdn.net/weixin_37800531/article/details/163606266",
-      "hot": "10610"
+      "hot": "12683"
     },
     {
       "rank": 9,
-      "title": "从聊天到委派：AI Agent 如何推进长期任务",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/163494733",
-      "hot": "9944"
+      "title": "【Linux 系统篇(十四)】进程 (二) ：PCB、task_struct、fork系统调用",
+      "url": "https://blog.csdn.net/Huang_jin007/article/details/163505129",
+      "hot": "11620"
     },
     {
       "rank": 10,
       "title": "【AI智能体】基于Cursor 实现自然语言自动化运维实战详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/163450471",
-      "hot": "9848"
+      "hot": "11531"
     }
   ]
 }

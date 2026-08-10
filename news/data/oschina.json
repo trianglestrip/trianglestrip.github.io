@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-10T08:21:54+00:00",
+  "updated_at": "2026-08-10T10:53:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "他把芯片制造做成了“过山车大亨”：一个浏览器里的半导体工厂",
+      "url": "https://www.oschina.net/news/492323/chip-tycoon",
+      "hot": "Mon, 10 Aug 2026 18:44:40 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "一名开发者将 Android 手机换成了 Linux，称“AOSP 已死”",
+      "url": "https://www.oschina.net/news/492313/switch-android-to-linux",
+      "hot": "Mon, 10 Aug 2026 18:33:16 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "LLM 的极限不在算力，在语言本身",
+      "url": "https://www.oschina.net/news/492309/llms-cant-jump",
+      "hot": "Mon, 10 Aug 2026 18:26:53 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Atlassian Rovo 被曝可绕过管控泄露 Jira 和 Confluence 数据，厂商两个月没回复",
+      "url": "https://www.oschina.net/news/492298/atlassian-rovo-exfiltrates-data",
+      "hot": "Mon, 10 Aug 2026 18:20:41 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "一个 4B 开源模型，检索能力追平了 GPT-5.6 Sol，成本降到 1/100",
+      "url": "https://www.oschina.net/news/492295",
+      "hot": "Mon, 10 Aug 2026 18:16:40 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Vibelf：面向 Scratch 的 AI 编程助手",
+      "url": "https://www.oschina.net/news/492287/vibelf-scratch",
+      "hot": "Mon, 10 Aug 2026 18:08:42 +0800"
+    },
+    {
+      "rank": 7,
       "title": ":tada:为 AI 员工分配插件技能：开源无代码 / 低代码平台 NocoBase",
       "url": "https://www.oschina.net/news/492087",
       "hot": "Mon, 10 Aug 2026 15:16:37 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "字节跳动正在训练 10 万亿参数的 AI 模型",
       "url": "https://www.oschina.net/news/492049",
       "hot": "Mon, 10 Aug 2026 14:44:59 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "wastnet 开源首发，零依赖自研 Java HTTP/2 框架，性能对标 Undertow !",
       "url": "https://www.oschina.net/news/491960",
       "hot": "Mon, 10 Aug 2026 12:56:57 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "Windows 11 内置天气 App 占用内存超过 1GB",
       "url": "https://www.oschina.net/news/491873/windows-11-s-built-in-weather-app-wastes-more-than-1gb-of-ram",
       "hot": "Mon, 10 Aug 2026 11:27:38 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "2026 CSDI ：AGI 前夜，属于懂 Agent、更懂模型的长期深耕企业",
-      "url": "https://my.oschina.net/u/4806939/blog/19736176",
-      "hot": "Mon, 10 Aug 2026 11:14:00 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "DataBuff v0.1.7 发布 · 平台自监控与自排障",
-      "url": "https://www.oschina.net/news/491813",
-      "hot": "Mon, 10 Aug 2026 10:23:03 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "调问更新7.26~8.8 ：新增短信验证修改，考试能力升级",
-      "url": "https://www.oschina.net/news/491797",
-      "hot": "Mon, 10 Aug 2026 09:54:35 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Notion、Airtable、AI Agent 集成到桌面客户端 - Kition 开源",
-      "url": "https://my.oschina.net/u/9762637/blog/19736056",
-      "hot": "Mon, 10 Aug 2026 09:46:48 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "JimuChatBI 重磅发布 v1.0.0：首款免费开源对话式 Chat2BI 智能数据分析产品",
-      "url": "https://www.oschina.net/news/491587",
-      "hot": "Sun, 09 Aug 2026 22:50:25 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "HeteroFlow 异构算力调度平台于 2026 年 8 月 8 日推理服务正式发布",
-      "url": "https://www.oschina.net/news/491395",
-      "hot": "Sun, 09 Aug 2026 16:57:12 +0800"
     }
   ]
 }
