@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-10T05:43:26+00:00",
+  "updated_at": "2026-08-10T08:21:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HubSpot 采用规则引擎架构对 JITA 授权机制进行了重新设计",
+      "url": "https://www.infoq.cn/article/S2WFg2MRuLmZE1s27lf8?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 10 Aug 2026 16:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "AI推理规模上升后，华为开始重新定义“存储”的位置",
+      "url": "https://www.infoq.cn/article/qBHKWa0AabfP0Fs8rGrk?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 10 Aug 2026 15:24:04 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "行业新选手登场！中科慧思一口气发三款灵巧手新品，机器人也能组乐队现场演奏",
+      "url": "https://www.infoq.cn/article/6EXTXyTt834kMGkiqqDT?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 10 Aug 2026 15:20:09 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "33% 增速、126% 留存：Snowflake 用一份财报，把“AI落地难”讲成了印钞机故事",
+      "url": "https://www.infoq.cn/article/lWRKAhlso9f7OobiGXDI?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 10 Aug 2026 14:26:35 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "破局“数据困境”：橡木果发布全球首个“具身本能模型”Natus AGE-0，获招商局创投与蔚来资本天使轮投资",
+      "url": "https://www.infoq.cn/article/dXkqWgtLOtDEl82dzQR6?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 10 Aug 2026 14:24:34 GMT"
+    },
+    {
+      "rank": 6,
       "title": "Java 近期新闻：OpenJDK JEP、Jakarta EE、GraalVM、TornadoVM、Micronaut、Quarkus、JobRunr、Maven",
       "url": "https://www.infoq.cn/article/ETcjHcLADeCISiah5RfU?utm_source=rss&utm_medium=article",
       "hot": "Mon, 10 Aug 2026 13:26:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "通过保持变更局部性实现演进式架构",
       "url": "https://www.infoq.cn/article/ImsUql5IsVBqgcKp1aAh?utm_source=rss&utm_medium=article",
       "hot": "Mon, 10 Aug 2026 11:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "智能互动 Agent 在快手商业场景的落地实践｜AICon深圳",
       "url": "https://www.infoq.cn/article/KCw3ZLsEJcNYFegzd7dx?utm_source=rss&utm_medium=article",
       "hot": "Mon, 10 Aug 2026 10:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "微软发布搭载原生 Go 编译器的 TypeScript 7.0，构建速度提升 10 倍",
       "url": "https://www.infoq.cn/article/ciQHX2larGoSlHspZ9VK?utm_source=rss&utm_medium=article",
       "hot": "Mon, 10 Aug 2026 09:57:28 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "宇树科技今日申购，或出一批90后千万富豪；字节拟训练超5万亿参数模型，张一鸣：反对蒸馏；数百管理层被裁难找下家，猎头：没那么多岗｜AI周报",
       "url": "https://www.infoq.cn/article/xWWwhH3iPjwRakLOQiXQ?utm_source=rss&utm_medium=article",
       "hot": "Mon, 10 Aug 2026 09:31:25 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "涨价30倍仍是最便宜的模型，DeepSeek可能有这个底气",
-      "url": "https://www.infoq.cn/article/FEcOI8kYoGuFYq39acEo?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 10 Aug 2026 09:25:43 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "OpenAI给10亿用户免费换上GPT-5.6",
-      "url": "https://www.infoq.cn/article/RXRuR3TN9msNMAUWRtCl?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 09 Aug 2026 10:23:42 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "从失控到可控：基于系统控制论的 Agent 安全防御体系设计与实践｜AICon深圳",
-      "url": "https://www.infoq.cn/article/MMh1pkuNSPDlUAtuRelk?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 09 Aug 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "金融监管领域的 Harness 实践：让知识与数据驱动 Agent 稳定运行｜AICon深圳",
-      "url": "https://www.infoq.cn/article/hQp9boye2rpPH7ZWUvXL?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 08 Aug 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "AWS Lambda 取消代码存储配额，别误会：函数大小限制没变",
-      "url": "https://www.infoq.cn/article/OG03ezJaBkdOd1G3rc1b?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 08 Aug 2026 08:37:00 GMT"
     }
   ]
 }
