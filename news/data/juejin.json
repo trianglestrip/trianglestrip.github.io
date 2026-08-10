@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-10T02:27:03+00:00",
+  "updated_at": "2026-08-10T05:43:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "一线大厂的Git规范",
       "url": "https://juejin.cn/post/7671106436446011443",
-      "hot": "945"
+      "hot": "1107"
     },
     {
       "rank": 2,
       "title": "launch 不是用来切线程的：为什么我越来越少在它后面写 Dispatchers.IO",
       "url": "https://juejin.cn/post/7670383736383832110",
-      "hot": "504"
+      "hot": "531"
     },
     {
       "rank": 3,
-      "title": "接手新项目不用硬啃源码，我的 TRAE Work 快速上手实战工作流",
-      "url": "https://juejin.cn/post/7671107889683087366",
-      "hot": "360"
+      "title": "🍉 我把《天龙八部》喂给了 AI，问它\"段誉会什么武功？\"答案让我惊呆了",
+      "url": "https://juejin.cn/post/7671078538116546575",
+      "hot": "495"
     },
     {
       "rank": 4,
-      "title": "🍉 我把《天龙八部》喂给了 AI，问它\"段誉会什么武功？\"答案让我惊呆了",
-      "url": "https://juejin.cn/post/7671078538116546575",
-      "hot": "360"
+      "title": "接手新项目不用硬啃源码，我的 TRAE Work 快速上手实战工作流",
+      "url": "https://juejin.cn/post/7671107889683087366",
+      "hot": "405"
     },
     {
       "rank": 5,
       "title": "useRef + Web Worker：React 中的耗时计算不卡页面",
       "url": "https://juejin.cn/post/7671152660225622026",
-      "hot": "234"
+      "hot": "252"
     },
     {
       "rank": 6,
       "title": "TRAE Work 实战，之前写一篇水文要半天，现在用 TRAE Work 2分钟交差!",
       "url": "https://juejin.cn/post/7671106436445257779",
-      "hot": "216"
+      "hot": "234"
     },
     {
       "rank": 7,
       "title": "疯了！Fastjson 又爆出严重安全漏洞，Spring Boot 项目赶紧自查",
       "url": "https://juejin.cn/post/7670974075053097012",
-      "hot": "189"
+      "hot": "216"
     },
     {
       "rank": 8,
-      "title": "我重写了自己用了两年的防抖节流Hook——发现里面藏着3个隐藏bug",
-      "url": "https://juejin.cn/post/7670703945447505983",
-      "hot": "189"
+      "title": "做了个AI日志平台，零代码接入，嘎嘎好用",
+      "url": "https://juejin.cn/post/7670783499005362222",
+      "hot": "207"
     },
     {
       "rank": 9,
       "title": "AI 测试提效 ｜ 别搞万能 Skill，推荐用 5 个 Agent Skill 串起 UI 自动化全流程",
       "url": "https://juejin.cn/post/7670593377075773491",
-      "hot": "189"
+      "hot": "207"
     },
     {
       "rank": 10,
-      "title": "做了个AI日志平台，零代码接入，嘎嘎好用",
-      "url": "https://juejin.cn/post/7670783499005362222",
-      "hot": "180"
+      "title": "我重写了自己用了两年的防抖节流Hook——发现里面藏着3个隐藏bug",
+      "url": "https://juejin.cn/post/7670703945447505983",
+      "hot": "198"
     }
   ]
 }

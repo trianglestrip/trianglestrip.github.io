@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-10T02:27:10+00:00",
+  "updated_at": "2026-08-10T05:43:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS应用上架（一）：配置调试签名并完成真机调试",
+      "url": "https://ost.51cto.com/posts/54883",
+      "hot": "大家好，今天跟大家介绍一下，HarmonyOS应用开发完成后，如何在AppGalleryConnect中创建应用，并通过手动签名的方式完成真机调试。我们在De..."
+    },
+    {
+      "rank": 2,
       "title": "Sonnet 5.5大泄露！对标DeepSeek，新一代性价比之王",
       "url": "https://www.51cto.com/article/852453.html",
       "hot": "Anthropic 的最新 Sonnet 5.5 模型被爆出已经箭在弦上，内部代号「Fennec」（一种沙漠狐），爆料称大概率下个月发布。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "奥特曼笑疯！Claude Code之父「挖角」OpenAI网红高管，惨遭秒拒",
       "url": "https://www.51cto.com/article/852451.html",
       "hot": "Claude Code之父Boris Cherny亲自下场，当着几十万人的面，向OpenAI核心产品负责人甩出了入职邀请。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "KV缓存都命中了,为什么首token延迟还是很高?",
       "url": "https://www.51cto.com/article/852428.html",
       "hot": "TokTier 适合长会话中反复追加少量工具输出的 agent 流量，前提是服务愿意维护每个会话的 token 状态，并把输出逐次与冻结参考分词器保持一致。它解决的是 KV 缓存命中后仍需全量 tokenization 的前端成本，不会替代模型 prefill，也不会在 KV 状态已被逐出的场景中继续缩短端到端等待。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "LSTM之父最新97页综述：Agent如何真正学会「自我进化」？",
       "url": "https://www.51cto.com/article/852450.html",
       "hot": "近日，来自吉林大学、KAUST、阿尔伯塔大学和瑞士人工智能实验室等机构的研究团队发布综述，从系统层面重新定义「自我改进」，并将模型训练、记忆演化、工具创建和Agent架构搜索放进同一张地图。配套项目目前已整理312篇相关工作。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "让生成式模型「画」出空间智能，而非强迫LLM输出「坐标」! 浙大提出Agentic空间认知评估框架",
       "url": "https://www.51cto.com/article/852426.html",
       "hot": "近日，浙江大学 OmniAI 团队在 《Show, Don’t Tell: Evaluating Spatial Cognition in Generative Pixels Rather Than LLM Text》 中提出 ProVisE，让图像生成模型直接在图中回答空间问题，并将视觉答案还原为原 benchmark 可以评分的结构化预测。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "刚刚，OpenAI最大预训练模型Doug曝光",
       "url": "https://www.51cto.com/article/852425.html",
       "hot": "长期关注 OpenAI 模型动向的 X 用户 ChrisGPT 爆料称，OpenAI 正在推进一个代号为 Doug 的新一轮大型预训练模型。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "前OpenAI研究员看空大模型公司，Dwarkesh发文反驳：AGI会自己找工作",
       "url": "https://www.51cto.com/article/852424.html",
       "hot": "只要模型能力仍在快速增长，领先本身就能创造巨大的商业价值；一旦真正的 AGI 出现，它就会主动扩散。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "PDF当死，ARA该立！论文是时候Agent原生了",
       "url": "https://www.51cto.com/article/852423.html",
       "hot": "近日，IEEE Spectrum重点关注了一项新研究——ARA（Agent-Native Research Artifact）。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "AI倒查论文一百年！99.2%的顶刊都有问题...",
       "url": "https://www.51cto.com/article/852422.html",
       "hot": "2026年国际机器学习大会（ICML）上报告的92篇论文中，有58篇已经无法复现。真假？？莫非，猛发顶刊的机会真的来了？"
-    },
-    {
-      "rank": 10,
-      "title": "拓展JEPA至受控世界模型，清华团队揭示物理状态与动作转移的可辨识条件",
-      "url": "https://www.51cto.com/article/852420.html",
-      "hot": "面对图像、视频和传感器数据等多模态高维观测，世界模型通常先将其编码为紧凑的低维隐状态，再在隐空间中学习状态随时间和动作变化的规律，从而预测未来并辅助决策。"
     }
   ]
 }
