@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-10T19:13:58+00:00",
+  "updated_at": "2026-08-10T21:26:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
-      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
-      "hot": "826"
+      "title": "Illinois Just Passed a Law That Puts Linux on the Hook for Age Verification",
+      "url": "https://linuxstans.com/illinois-hb5511-operating-system-age-verification/",
+      "hot": "102"
     },
     {
       "rank": 2,
-      "title": "Sonic Pi v5",
-      "url": "https://www.patreon.com/samaaron/posts/sonic-pi-v5-166001392",
-      "hot": "154"
+      "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "hot": "930"
     },
     {
       "rank": 3,
-      "title": "Launch HN: Stoa Markets (YC S26) – A Marketplace for GPUs and AI Servers",
-      "url": "https://www.stoaexchange.com",
-      "hot": "40"
+      "title": "Sonic Pi v5",
+      "url": "https://www.patreon.com/samaaron/posts/sonic-pi-v5-166001392",
+      "hot": "235"
     },
     {
       "rank": 4,
-      "title": "Show HN: Ante, a coding agent in a single binary that runs offline",
-      "url": "https://github.com/AntigmaLabs/ante",
-      "hot": "83"
+      "title": "Rust SIMD on the GPU",
+      "url": "https://www.vectorware.com/blog/simd-on-gpu/",
+      "hot": "68"
     },
     {
       "rank": 5,
       "title": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
       "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
-      "hot": "123"
+      "hot": "244"
     },
     {
       "rank": 6,
-      "title": "Exploiting System Management Mode with a very long interrupt",
-      "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
-      "hot": "72"
+      "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
+      "url": "https://cactuscompute.com/needle",
+      "hot": "29"
     },
     {
       "rank": 7,
-      "title": "Midlife Vascular Risk Burden and Dementia-Free Survival Years",
-      "url": "https://www.neurology.org/doi/10.1212/WN9.0000000000000152",
-      "hot": "53"
+      "title": "Publishing Schematics Before \"Open Source\" Was a Word",
+      "url": "https://fabscene.medium.com/publishing-schematics-before-open-source-was-a-word-55-years-of-akizuki-denshi-japans-be7ca9629704",
+      "hot": "17"
     },
     {
       "rank": 8,
-      "title": "The Tragedy of the Cognitive Commons",
-      "url": "https://arxiv.org/abs/2607.29380",
-      "hot": "46"
+      "title": "Launch HN: Stoa Markets (YC S26) – A Marketplace for GPUs and AI Servers",
+      "url": "https://www.stoaexchange.com",
+      "hot": "58"
     },
     {
       "rank": 9,
-      "title": "Learning more about Claude's mathematical capabilities",
-      "url": "https://www.anthropic.com/research/riemann-zeta",
-      "hot": "84"
+      "title": "The Psychedelic Toad of the Sonoran Desert",
+      "url": "https://en.wikipedia.org/wiki/Bufo_Alvarius:_the_Psychedelic_Toad_of_the_Sonoran_Desert",
+      "hot": "43"
     },
     {
       "rank": 10,
-      "title": "The Psychedelic Toad of the Sonoran Desert",
-      "url": "https://en.wikipedia.org/wiki/Bufo_Alvarius:_the_Psychedelic_Toad_of_the_Sonoran_Desert",
-      "hot": "12"
+      "title": "Exploiting System Management Mode with a very long interrupt",
+      "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
+      "hot": "98"
     }
   ]
 }
