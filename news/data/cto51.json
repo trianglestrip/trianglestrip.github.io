@@ -1,38 +1,38 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-11T05:19:53+00:00",
+  "updated_at": "2026-08-11T07:24:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS应用上架（二）：正式打包与应用市场发布",
+      "url": "https://ost.51cto.com/posts/54901",
+      "hot": "大家好，昨天分享了鸿蒙应用通过手动签名完成真机调试的过程，今天继续往下，介绍应用开发完成后，如何申请正式证书、打包并上传到AppGalle..."
+    },
+    {
+      "rank": 2,
       "title": "模型换个Harness就「变笨」？EverMind把自进化从研究推向产品，让AI「越用越聪明」",
       "url": "https://www.51cto.com/article/852621.html",
       "hot": "EverMind 正试图用 HarnessBank、Raven 与 EverMe，把这两个问题接成同一条产品路径。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "刚刚，黄仁勋发长文：AI算力要变成一种「资产」",
       "url": "https://www.51cto.com/article/852620.html",
       "hot": "黄仁勋称，相关合作将建立独立的算力融资平台，目标是随着时间推移动员超过 5000 亿美元第三方资本，用于支持全球 AI 基础设施建设。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "好的 Harness，先把缓存命中做好",
       "url": "https://www.51cto.com/article/852619.html",
       "hot": "在 Transformer 的每一层注意力机制中，读过的 token 会形成 Key 和 Value。这些已经计算好的中间状态，就是 KV Cache。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "# 智绘鸿蒙·大有“视”界#  HarmonyOS7 新闻图用 AI 超分，算不算篡改？顺便把这个页面讲透",
       "url": "https://ost.51cto.com/posts/54896",
       "hot": "前言先抛个可能有争议的观点：这个功能，在新闻场景里必须谨慎用。技术上它很香。通讯员发来的现场图被微信压了三轮，糊得看不清，超分一下..."
-    },
-    {
-      "rank": 5,
-      "title": "HarmonyOS 6 上玩转 3DGS：从端侧重建到模拟器加载 3D 模型的初体验",
-      "url": "https://ost.51cto.com/posts/54895",
-      "hot": "前言HarmonyOS6.1.1的更新日志里，3DGS端侧重建被放在了显眼的位置。其实这个能力从5.0开始就陆续放出来了，但我一直没动手玩过。直到这次..."
     },
     {
       "rank": 6,
@@ -50,7 +50,7 @@
       "rank": 8,
       "title": "告别翻阅海量运维文档！这套 K8s‑RAG‑AIOps，内网离线实现集群智能故障排查",
       "url": "https://www.51cto.com/article/852608.html",
-      "hot": "处理过 P0 的人都懂。真正让你崩溃的，往往不是技术本身。"
+      "hot": "一套自研 K8s‑RAG‑AIOps 可视化故障诊断工具，结合本地向量知识库+DeepSeek 大模型，一键采集集群真实运行数据，检索企业内部运维文档，直接输出可落地的故障处置报告，降低运维排障门槛。"
     },
     {
       "rank": 9,

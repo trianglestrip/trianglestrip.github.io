@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-11T05:19:44+00:00",
+  "updated_at": "2026-08-11T07:24:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【金仓数据库征文】MySQL至金仓KES异构数据库平滑迁移与性能深度调优实战",
-      "url": "https://blog.csdn.net/2401_87042472/article/details/163609729",
-      "hot": "20469"
+      "title": "Smart Mermaid部署：用AI将文本转换为Mermaid图表",
+      "url": "https://blog.csdn.net/user340/article/details/163635805",
+      "hot": "20862"
     },
     {
       "rank": 2,
       "title": "OpenClaw 测试策略实战：AI Agent 自动化测试体系搭建与落地",
       "url": "https://blog.csdn.net/sinat_41617212/article/details/163612055",
-      "hot": "18760"
+      "hot": "20415"
     },
     {
       "rank": 3,
-      "title": "【MYSQL】MYSQL学习的一大重点：用户与权限管理",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/163281396",
-      "hot": "18705"
+      "title": "【金仓数据库征文】MySQL至金仓KES异构数据库平滑迁移与性能深度调优实战",
+      "url": "https://blog.csdn.net/2401_87042472/article/details/163609729",
+      "hot": "20241"
     },
     {
       "rank": 4,
-      "title": "Smart Mermaid部署：用AI将文本转换为Mermaid图表",
-      "url": "https://blog.csdn.net/user340/article/details/163635805",
-      "hot": "17988"
+      "title": "【MYSQL】MYSQL学习的一大重点：用户与权限管理",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163281396",
+      "hot": "20154"
     },
     {
       "rank": 5,
-      "title": "【AI智能体】基于Cursor 实现自然语言自动化运维实战详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/163450471",
-      "hot": "12712"
+      "title": "大模型内禀规模定律：能力由语义流形内禀维度而非参数量决定",
+      "url": "https://blog.csdn.net/zxb_1222/article/details/163592492",
+      "hot": "15057"
     },
     {
       "rank": 6,
-      "title": "MiniMax-H3开源模型768P视频2K超分实战：LoRA加速生成 + FlashVSR高清放大（海光K100_AI单卡部署）",
-      "url": "https://blog.csdn.net/pla88888888/article/details/163644534",
-      "hot": "9420"
+      "title": "【AI智能体】基于Cursor 实现自然语言自动化运维实战详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/163450471",
+      "hot": "14342"
     },
     {
       "rank": 7,
-      "title": "【Linux 系统篇(十四)】进程 (二) ：PCB、task_struct、fork系统调用",
-      "url": "https://blog.csdn.net/Huang_jin007/article/details/163505129",
-      "hot": "9399"
+      "title": "MiniMax-H3开源模型768P视频2K超分实战：LoRA加速生成 + FlashVSR高清放大（海光K100_AI单卡部署）",
+      "url": "https://blog.csdn.net/pla88888888/article/details/163644534",
+      "hot": "12972"
     },
     {
       "rank": 8,
-      "title": "【金仓数据库征文】MySQL迁移人大金仓V9异构迁移全链路性能调优与稳定性保障",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/163606266",
-      "hot": "9279"
+      "title": "awesome-llm-apps 开源项目详解：100+ AI Agent 与 RAG 模板一键复用",
+      "url": "https://blog.csdn.net/zhangay1998/article/details/162974701",
+      "hot": "11590"
     },
     {
       "rank": 9,
-      "title": "AtomCode与Rust语言的双向赋能：AI如何帮助学习Rust",
-      "url": "https://blog.csdn.net/u014727709/article/details/163595845",
-      "hot": "9159"
+      "title": "【金仓数据库征文】MySQL迁移人大金仓V9异构迁移全链路性能调优与稳定性保障",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/163606266",
+      "hot": "10816"
     },
     {
       "rank": 10,
-      "title": "awesome-llm-apps 开源项目详解：100+ AI Agent 与 RAG 模板一键复用",
-      "url": "https://blog.csdn.net/zhangay1998/article/details/162974701",
-      "hot": "9002"
+      "title": "【金仓数据库征文】从 MySQL 迁移到金仓数据库：哈工大智能造价项目的一次信创改造实践",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/163609837",
+      "hot": "10548"
     }
   ]
 }
