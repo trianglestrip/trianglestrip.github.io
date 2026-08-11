@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-10T23:54:37+00:00",
+  "updated_at": "2026-08-11T02:50:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Meta 发布 30B 参数的本地开放权重模型 “Muse Glimmer”",
+      "url": "https://www.oschina.net/news/492790/meta-muse-glimmer-open-agentic-model",
+      "hot": "Tue, 11 Aug 2026 10:38:05 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "找人！OSCHINA 技术影响力合伙人计划「交付之星」评选启动",
+      "url": "https://www.oschina.net/news/492760",
+      "hot": "Tue, 11 Aug 2026 09:56:21 +0800"
+    },
+    {
+      "rank": 3,
       "title": "Token 预算管理：长对话不崩溃的秘密",
       "url": "https://www.oschina.net/news/492373",
       "hot": "Mon, 10 Aug 2026 19:47:58 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Claude Code 将自动模式设为默认，称人类审批只抓到 13.6% 危险命令",
       "url": "https://www.oschina.net/news/492362/auto-mode-default-in-claude-code",
       "hot": "Mon, 10 Aug 2026 19:38:03 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "AI 辅助编程顶多是一台煎牛排机，当不了厨师",
       "url": "https://www.oschina.net/news/492343",
       "hot": "Mon, 10 Aug 2026 19:07:44 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "他把芯片制造做成了“过山车大亨”：一个浏览器里的半导体工厂",
       "url": "https://www.oschina.net/news/492323/chip-tycoon",
       "hot": "Mon, 10 Aug 2026 18:44:40 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "一名开发者将 Android 手机换成了 Linux，称“AOSP 已死”",
       "url": "https://www.oschina.net/news/492313/switch-android-to-linux",
       "hot": "Mon, 10 Aug 2026 18:33:16 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "LLM 的极限不在算力，在语言本身",
       "url": "https://www.oschina.net/news/492309/llms-cant-jump",
       "hot": "Mon, 10 Aug 2026 18:26:53 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Atlassian Rovo 被曝可绕过管控泄露 Jira 和 Confluence 数据，厂商两个月没回复",
       "url": "https://www.oschina.net/news/492298/atlassian-rovo-exfiltrates-data",
       "hot": "Mon, 10 Aug 2026 18:20:41 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "一个 4B 开源模型，检索能力追平了 GPT-5.6 Sol，成本降到 1/100",
       "url": "https://www.oschina.net/news/492295",
       "hot": "Mon, 10 Aug 2026 18:16:40 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Vibelf：面向 Scratch 的 AI 编程助手",
-      "url": "https://www.oschina.net/news/492287/vibelf-scratch",
-      "hot": "Mon, 10 Aug 2026 18:08:42 +0800"
-    },
-    {
-      "rank": 10,
-      "title": ":tada:为 AI 员工分配插件技能：开源无代码 / 低代码平台 NocoBase",
-      "url": "https://www.oschina.net/news/492087",
-      "hot": "Mon, 10 Aug 2026 15:16:37 +0800"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-10T23:54:33+00:00",
+  "updated_at": "2026-08-11T02:50:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【鸿蒙实战】第 03 篇：ArkUI 列表性能实战——为什么 200 条数据页面掉到 20fps，LazyForEach 怎么救?",
-      "url": "https://ost.51cto.com/posts/54884",
-      "hot": "仿新闻App的信息流首页，我第一版用ForEach渲染200条新闻，真机上滚动手感直接掉到20fps，卡顿明显。排查发现根因不是&quot;数据太多&quot;，而是渲染..."
+      "title": "模型换个Harness就「变笨」？EverMind把自进化从研究推向产品，让AI「越用越聪明」",
+      "url": "https://www.51cto.com/article/852621.html",
+      "hot": "EverMind 正试图用 HarnessBank、Raven 与 EverMe，把这两个问题接成同一条产品路径。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS应用上架（一）：配置调试签名并完成真机调试",
-      "url": "https://ost.51cto.com/posts/54883",
-      "hot": "大家好，今天跟大家介绍一下，HarmonyOS应用开发完成后，如何在AppGalleryConnect中创建应用，并通过手动签名的方式完成真机调试。我们在De..."
+      "title": "刚刚，黄仁勋发长文：AI算力要变成一种「资产」",
+      "url": "https://www.51cto.com/article/852620.html",
+      "hot": "黄仁勋称，相关合作将建立独立的算力融资平台，目标是随着时间推移动员超过 5000 亿美元第三方资本，用于支持全球 AI 基础设施建设。"
     },
     {
       "rank": 3,
-      "title": "Sonnet 5.5大泄露！对标DeepSeek，新一代性价比之王",
-      "url": "https://www.51cto.com/article/852453.html",
-      "hot": "Anthropic 的最新 Sonnet 5.5 模型被爆出已经箭在弦上，内部代号「Fennec」（一种沙漠狐），爆料称大概率下个月发布。"
+      "title": "好的 Harness，先把缓存命中做好",
+      "url": "https://www.51cto.com/article/852619.html",
+      "hot": "在 Transformer 的每一层注意力机制中，读过的 token 会形成 Key 和 Value。这些已经计算好的中间状态，就是 KV Cache。"
     },
     {
       "rank": 4,
-      "title": "奥特曼笑疯！Claude Code之父「挖角」OpenAI网红高管，惨遭秒拒",
-      "url": "https://www.51cto.com/article/852451.html",
-      "hot": "Claude Code之父Boris Cherny亲自下场，当着几十万人的面，向OpenAI核心产品负责人甩出了入职邀请。"
+      "title": "# 智绘鸿蒙·大有“视”界#  HarmonyOS7 新闻图用 AI 超分，算不算篡改？顺便把这个页面讲透",
+      "url": "https://ost.51cto.com/posts/54896",
+      "hot": "前言先抛个可能有争议的观点：这个功能，在新闻场景里必须谨慎用。技术上它很香。通讯员发来的现场图被微信压了三轮，糊得看不清，超分一下..."
     },
     {
       "rank": 5,
-      "title": "KV缓存都命中了,为什么首token延迟还是很高?",
-      "url": "https://www.51cto.com/article/852428.html",
-      "hot": "TokTier 适合长会话中反复追加少量工具输出的 agent 流量，前提是服务愿意维护每个会话的 token 状态，并把输出逐次与冻结参考分词器保持一致。它解决的是 KV 缓存命中后仍需全量 tokenization 的前端成本，不会替代模型 prefill，也不会在 KV 状态已被逐出的场景中继续缩短端到端等待。"
+      "title": "HarmonyOS 6 上玩转 3DGS：从端侧重建到模拟器加载 3D 模型的初体验",
+      "url": "https://ost.51cto.com/posts/54895",
+      "hot": "前言HarmonyOS6.1.1的更新日志里，3DGS端侧重建被放在了显眼的位置。其实这个能力从5.0开始就陆续放出来了，但我一直没动手玩过。直到这次..."
     },
     {
       "rank": 6,
-      "title": "LSTM之父最新97页综述：Agent如何真正学会「自我进化」？",
-      "url": "https://www.51cto.com/article/852450.html",
-      "hot": "近日，来自吉林大学、KAUST、阿尔伯塔大学和瑞士人工智能实验室等机构的研究团队发布综述，从系统层面重新定义「自我改进」，并将模型训练、记忆演化、工具创建和Agent架构搜索放进同一张地图。配套项目目前已整理312篇相关工作。"
+      "title": "Kubernetes 的 15 大典型应用场景：从微服务到 AI，让你彻底搞懂 K8s 的真正价值",
+      "url": "https://www.51cto.com/article/852616.html",
+      "hot": "本文将带你全面了解 Kubernetes 的 15 大核心应用场景，看看它在哪些地方真正闪光，能为企业带来哪些收益，以及 —— 什么时候不该用它。"
     },
     {
       "rank": 7,
-      "title": "让生成式模型「画」出空间智能，而非强迫LLM输出「坐标」! 浙大提出Agentic空间认知评估框架",
-      "url": "https://www.51cto.com/article/852426.html",
-      "hot": "近日，浙江大学 OmniAI 团队在 《Show, Don’t Tell: Evaluating Spatial Cognition in Generative Pixels Rather Than LLM Text》 中提出 ProVisE，让图像生成模型直接在图中回答空间问题，并将视觉答案还原为原 benchmark 可以评分的结构化预测。"
+      "title": "DuckDB 保姆级教程：从第一条 SQL 到千万行电商经营分析，一篇讲透",
+      "url": "https://www.51cto.com/article/852609.html",
+      "hot": "DuckDB 真正改变的，是一种数据处理习惯。学到这里，如果最后只记住一句 import duckdb，其实还不够。我更希望你顺手改掉一个用了很多年的默认习惯：拿到数据以后，不要第一反应就是先把它完整塞进 Python 内存。"
     },
     {
       "rank": 8,
-      "title": "刚刚，OpenAI最大预训练模型Doug曝光",
-      "url": "https://www.51cto.com/article/852425.html",
-      "hot": "长期关注 OpenAI 模型动向的 X 用户 ChrisGPT 爆料称，OpenAI 正在推进一个代号为 Doug 的新一轮大型预训练模型。"
+      "title": "告别翻阅海量运维文档！这套 K8s‑RAG‑AIOps，内网离线实现集群智能故障排查",
+      "url": "https://www.51cto.com/article/852608.html",
+      "hot": "处理过 P0 的人都懂。真正让你崩溃的，往往不是技术本身。"
     },
     {
       "rank": 9,
-      "title": "前OpenAI研究员看空大模型公司，Dwarkesh发文反驳：AGI会自己找工作",
-      "url": "https://www.51cto.com/article/852424.html",
-      "hot": "只要模型能力仍在快速增长，领先本身就能创造巨大的商业价值；一旦真正的 AGI 出现，它就会主动扩散。"
+      "title": "微软确认暂不为 Windows 11 加入透明效果自定义功能，建议用户使用第三方工具",
+      "url": "https://www.51cto.com/article/852607.html",
+      "hot": "微软已经确认，他们不会“立即调整”Windows 11 的透明效果选项，而是建议用户使用 Windhawk 等第三方工具，而不是在操作系统中原生加入类似 macOS “Liquid Glass（液态玻璃）”风格的透明控制功能。"
     },
     {
       "rank": 10,
-      "title": "PDF当死，ARA该立！论文是时候Agent原生了",
-      "url": "https://www.51cto.com/article/852423.html",
-      "hot": "近日，IEEE Spectrum重点关注了一项新研究——ARA（Agent-Native Research Artifact）。"
+      "title": "Claude Opus 5 在最新基准测试中将间接提示注入攻击成功率降至 2%",
+      "url": "https://www.51cto.com/article/852606.html",
+      "hot": "这一发现凸显了业界对间接提示注入日益增长的关注。这是一种安全问题，可能影响连接到文档、网站、电子邮件和业务工具的 AI Agent。"
     }
   ]
 }
