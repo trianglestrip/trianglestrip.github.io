@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-11T13:59:55+00:00",
+  "updated_at": "2026-08-11T16:43:24+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,33 +12,33 @@
     },
     {
       "rank": 2,
+      "title": "欢迎来龙餐馆",
+      "url": "https://movie.douban.com/subject/35811064/",
+      "hot": "评分 8.4"
+    },
+    {
+      "rank": 3,
       "title": "八仙！",
       "url": "https://movie.douban.com/subject/36882191/",
       "hot": "评分 8.2"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "奥德赛",
       "url": "https://movie.douban.com/subject/36808876/",
       "hot": "评分 8.3"
     },
     {
-      "rank": 4,
-      "title": "欢迎来龙餐馆",
-      "url": "https://movie.douban.com/subject/35811064/",
-      "hot": ""
-    },
-    {
       "rank": 5,
-      "title": "年会不能停！2",
-      "url": "https://movie.douban.com/subject/36850814/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 6,
       "title": "痴迷",
       "url": "https://movie.douban.com/subject/37450627/",
       "hot": "评分 7.6"
+    },
+    {
+      "rank": 6,
+      "title": "年会不能停！2",
+      "url": "https://movie.douban.com/subject/36850814/",
+      "hot": "评分 6.7"
     },
     {
       "rank": 7,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "悬案",
-      "url": "https://movie.douban.com/subject/36624136/",
-      "hot": "评分 7.5"
+      "title": "花开锦绣",
+      "url": "https://movie.douban.com/subject/36810153/",
+      "hot": ""
     },
     {
       "rank": 10,
-      "title": "莫得闲",
-      "url": "https://movie.douban.com/subject/38407550/",
-      "hot": ""
+      "title": "去你的岛",
+      "url": "https://movie.douban.com/subject/35275131/",
+      "hot": "评分 8.0"
     }
   ]
 }
