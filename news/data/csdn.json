@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-11T19:37:22+00:00",
+  "updated_at": "2026-08-11T22:00:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【金仓数据库征文】MySQL至金仓KES异构数据库平滑迁移与性能深度调优实战",
       "url": "https://blog.csdn.net/2401_87042472/article/details/163609729",
-      "hot": "17961"
+      "hot": "18783"
     },
     {
       "rank": 2,
       "title": "【Linux】两个毫无关系的进程怎么通信？命名管道 FIFO 从原理到 Server/Client 实战",
       "url": "https://blog.csdn.net/2402_87731470/article/details/163596007",
-      "hot": "15002"
+      "hot": "14761"
     },
     {
       "rank": 3,
       "title": "OpenClaw 测试策略实战：AI Agent 自动化测试体系搭建与落地",
       "url": "https://blog.csdn.net/sinat_41617212/article/details/163612055",
-      "hot": "14837"
+      "hot": "14648"
     },
     {
       "rank": 4,
       "title": "【Linux 网络篇】数据的 “循环系统“：协议认识与网络传输的流程",
       "url": "https://blog.csdn.net/buhuizhiyuci/article/details/163627074",
-      "hot": "14099"
+      "hot": "13874"
     },
     {
       "rank": 5,
-      "title": "Smart Mermaid部署：用AI将文本转换为Mermaid图表",
-      "url": "https://blog.csdn.net/user340/article/details/163635805",
-      "hot": "12725"
+      "title": "CentOS部署Kafka：ZooKeeper启动、消息测试与远程调试",
+      "url": "https://blog.csdn.net/SDFsoul/article/details/163671162",
+      "hot": "13668"
     },
     {
       "rank": 6,
-      "title": "CentOS部署Jenkins：结合cpolar实现Webhook自动构建与发布",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/163664797",
-      "hot": "11852"
+      "title": "Smart Mermaid部署：用AI将文本转换为Mermaid图表",
+      "url": "https://blog.csdn.net/user340/article/details/163635805",
+      "hot": "12388"
     },
     {
       "rank": 7,
-      "title": "CentOS部署Kafka：ZooKeeper启动、消息测试与远程调试",
-      "url": "https://blog.csdn.net/SDFsoul/article/details/163671162",
-      "hot": "11456"
+      "title": "CentOS部署Jenkins：结合cpolar实现Webhook自动构建与发布",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/163664797",
+      "hot": "11667"
     },
     {
       "rank": 8,
       "title": "【《智能驾驶拆解笔记：老周唠透车圈AI》第5篇】",
       "url": "https://blog.csdn.net/weixin_62244995/article/details/162998983",
-      "hot": "9372"
+      "hot": "9266"
     },
     {
       "rank": 9,
       "title": "awesome-llm-apps 开源项目详解：100+ AI Agent 与 RAG 模板一键复用",
       "url": "https://blog.csdn.net/zhangay1998/article/details/162974701",
-      "hot": "8415"
+      "hot": "8482"
     },
     {
       "rank": 10,
       "title": "CentOS部署Postgres Exporter：监控PostgreSQL并接入Prometheus",
       "url": "https://blog.csdn.net/weixin_44976692/article/details/163666074",
-      "hot": "8404"
+      "hot": "8365"
     }
   ]
 }
