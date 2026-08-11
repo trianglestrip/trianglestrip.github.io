@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-11T16:43:54+00:00",
+  "updated_at": "2026-08-11T19:37:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "England set to be one of the first countries to eliminate hepatitis C",
-      "url": "https://www.bbc.com/news/articles/c75gk620r22o",
-      "hot": "298"
+      "title": "Mojo 1.0",
+      "url": "https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here",
+      "hot": "76"
     },
     {
       "rank": 2,
-      "title": "Apple Silicon and macOS VMs: 11–16× Faster LLM Inference with Llama.cpp",
-      "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
-      "hot": "102"
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "url": "https://stolen-thoughts.com/",
+      "hot": "325"
     },
     {
       "rank": 3,
-      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "url": "https://stolen-thoughts.com/",
-      "hot": "158"
+      "title": "How we used to get jobs: A newspaper classifieds story",
+      "url": "https://ironicsans.ghost.io/how-we-used-to-get-jobs/",
+      "hot": "32"
     },
     {
       "rank": 4,
-      "title": "Show HN: Git-knife – edit commit messages, authors, and dates like a spreadsheet",
-      "url": "https://github.com/TheRealYT/git-knife",
-      "hot": "54"
+      "title": "Show HN: iPhone app takes simultaneous images from 2 lenses, fuses into 1 photo",
+      "url": "https://photosynthesis.camera",
+      "hot": "91"
     },
     {
       "rank": 5,
-      "title": "Manus will return to operating as an independent company",
-      "url": "https://manus.im/blog/a-note-to-our-users",
-      "hot": "44"
+      "title": "England set to be one of the first countries to eliminate hepatitis C",
+      "url": "https://www.bbc.com/news/articles/c75gk620r22o",
+      "hot": "424"
     },
     {
       "rank": 6,
-      "title": "Nvidia's Risky Business",
-      "url": "https://stratechery.com/2026/nvidias-risky-business/",
-      "hot": "144"
+      "title": "Making holograms with a pen plotter",
+      "url": "https://blog.jordan.matelsky.com/Penplotter-holography/",
+      "hot": "9"
     },
     {
       "rank": 7,
-      "title": "France to ban unsolicited telemarketing calls",
-      "url": "https://www.lemonde.fr/en/france/article/2026/08/06/france-to-ban-unsolicited-telemarketing-calls-from-august-11_6756208_7.html",
-      "hot": "843"
+      "title": "The whole of PyTorch on one page",
+      "url": "https://tensor.khalilli.ai/blog/part-0-the-map/",
+      "hot": "10"
     },
     {
       "rank": 8,
-      "title": "As AI eats the web, the internet’s collective memory is disappearing",
-      "url": "https://thewalrus.ca/google-search-is-dying/",
-      "hot": "672"
+      "title": "OpenSSH 10.5/10.5p1",
+      "url": "https://www.openssh.org/releasenotes.html#10.5",
+      "hot": "50"
     },
     {
       "rank": 9,
-      "title": "Launch HN: Keet (YC S24) – An app to create video courses on anything",
-      "url": "https://www.trykeet.com/",
-      "hot": "13"
+      "title": "Show HN: Git-knife – edit commit messages, authors, and dates like a spreadsheet",
+      "url": "https://github.com/TheRealYT/git-knife",
+      "hot": "85"
     },
     {
       "rank": 10,
-      "title": "H3-metal – Native MiniMax-H3 inference for Apple Silicon",
-      "url": "https://github.com/antirez/h3.c",
-      "hot": "388"
+      "title": "Manus will return to operating as an independent company",
+      "url": "https://manus.im/blog/a-note-to-our-users",
+      "hot": "95"
     }
   ]
 }
