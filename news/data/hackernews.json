@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-11T02:50:07+00:00",
+  "updated_at": "2026-08-11T05:19:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The UK's War on Anonymity Has Come to America",
-      "url": "https://www.effort.news/uk-lobby",
-      "hot": "263"
+      "title": "H3-metal – Native MiniMax-H3 inference for Apple Silicon",
+      "url": "https://github.com/antirez/h3.c",
+      "hot": "134"
     },
     {
       "rank": 2,
       "title": "Chicken Scheme 6.0",
       "url": "https://code.call-cc.org/releases/6.0.0/NEWS",
-      "hot": "63"
+      "hot": "115"
     },
     {
       "rank": 3,
       "title": "Show HN: Scroll through all 43252003274489856000 Rubik's Cube states",
       "url": "https://everycube.alen.is/",
-      "hot": "85"
+      "hot": "131"
     },
     {
       "rank": 4,
-      "title": "Antirez/h3.c: MiniMax H3 inference engine for Mac computers",
-      "url": "https://github.com/antirez/h3.c",
-      "hot": "21"
+      "title": "Recycle – Floppydisks",
+      "url": "https://www.floppydisk.com/recycle",
+      "hot": "38"
     },
     {
       "rank": 5,
       "title": "The “mechanical miracle” that ruined Mark Twain’s life",
       "url": "https://resobscura.substack.com/p/the-mechanical-miracle-that-ruined",
-      "hot": "63"
+      "hot": "94"
     },
     {
       "rank": 6,
       "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
       "url": "https://cactuscompute.com/needle",
-      "hot": "194"
+      "hot": "249"
     },
     {
       "rank": 7,
-      "title": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
-      "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
-      "hot": "394"
+      "title": "Hyperspace",
+      "url": "https://hypercritical.co/hyperspace/",
+      "hot": "34"
     },
     {
       "rank": 8,
-      "title": "World Train Map – 1247 train routes around the world",
-      "url": "https://worldtrainmap.com/",
-      "hot": "54"
+      "title": "LFM2.5 2.6B model competitive with 4x larger models",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "hot": "11"
     },
     {
       "rank": 9,
-      "title": "Rust SIMD on the GPU",
-      "url": "https://www.vectorware.com/blog/simd-on-gpu/",
-      "hot": "136"
+      "title": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+      "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+      "hot": "438"
     },
     {
       "rank": 10,
-      "title": "Sonic Pi v5",
-      "url": "https://www.patreon.com/samaaron/posts/sonic-pi-v5-166001392",
-      "hot": "320"
+      "title": "Stowaway – Take the window seat on any plane or satellite overhead",
+      "url": "https://stowaway.live/",
+      "hot": "193"
     }
   ]
 }
