@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-11T02:50:22+00:00",
+  "updated_at": "2026-08-11T09:31:50+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,21 +12,21 @@
     },
     {
       "rank": 2,
+      "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
+      "url": "https://huggingface.co/papers/2608.04205",
+      "hot": "22"
+    },
+    {
+      "rank": 3,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
       "hot": "79"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
       "url": "https://huggingface.co/papers/2608.03974",
       "hot": "90"
-    },
-    {
-      "rank": 4,
-      "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
-      "url": "https://huggingface.co/papers/2607.19191",
-      "hot": "310"
     },
     {
       "rank": 5,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
+      "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
+      "url": "https://huggingface.co/papers/2607.19191",
+      "hot": "310"
+    },
+    {
+      "rank": 7,
       "title": "Multi-module GRPO: Composing Policy Gradients and Prompt Optimization\n  for Language Model Programs",
       "url": "https://huggingface.co/papers/2508.04660",
       "hot": "7"
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "title": "Kimi K3: Open Frontier Intelligence",
+      "url": "https://huggingface.co/papers/2607.24653",
+      "hot": "488"
+    },
+    {
+      "rank": 9,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "84"
     },
     {
-      "rank": 8,
-      "title": "Kimi K3: Open Frontier Intelligence",
-      "url": "https://huggingface.co/papers/2607.24653",
-      "hot": "487"
-    },
-    {
-      "rank": 9,
+      "rank": 10,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "65"
-    },
-    {
-      "rank": 10,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
-      "hot": "177"
     }
   ]
 }
