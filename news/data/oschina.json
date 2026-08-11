@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-11T09:31:36+00:00",
+  "updated_at": "2026-08-11T11:55:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Claude 开始给生成内容打水印了，用户最担心的是代码",
+      "url": "https://www.oschina.net/news/493379",
+      "hot": "Tue, 11 Aug 2026 18:45:43 +0800"
+    },
+    {
+      "rank": 2,
       "title": "动态语言对 AI 编程更友好？开发者用三个真实任务给了答案",
       "url": "https://www.oschina.net/news/493223/pl-tokens",
       "hot": "Tue, 11 Aug 2026 17:13:20 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "MaxKB 开源企业级智能体平台 v2.10.5 LTS 版本发布，修复安全漏洞及相关问题",
       "url": "https://my.oschina.net/u/4736111/blog/19735596",
       "hot": "Tue, 11 Aug 2026 15:52:31 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "ERD Online5.0.0 数据库设计 Git + Figma",
       "url": "https://www.oschina.net/news/493105",
       "hot": "Tue, 11 Aug 2026 15:26:55 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Redis 之父又出手了：一个 C 写的原生 MiniMax-H3 推理引擎，让 Mac 本地跑视频生成",
       "url": "https://www.oschina.net/news/493089",
       "hot": "Tue, 11 Aug 2026 15:16:33 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Solon 的日志设计哲学：不只是用 SLF4J 做统一门面",
       "url": "https://www.oschina.net/news/493049",
       "hot": "Tue, 11 Aug 2026 14:42:19 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "智谱 ZCode 发布重大升级，并重置所有 GLM Coding Plan 使用额度",
       "url": "https://www.oschina.net/news/493033",
       "hot": "Tue, 11 Aug 2026 14:29:22 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "首发 | 如意玲珑打包 Agents： 用 AI 重构 Linux 生态打包体验",
       "url": "https://www.oschina.net/news/493018",
       "hot": "Tue, 11 Aug 2026 14:15:31 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "5 分钟用 wastnet 开发一个 HTTP/2 服务",
       "url": "https://www.oschina.net/news/492995",
       "hot": "Tue, 11 Aug 2026 13:43:48 +0800"
     },
     {
-      "rank": 9,
-      "title": "通过知识截止日期，反向推断 AI 模型的真实训练时间线",
-      "url": "https://www.oschina.net/news/492855/exploring-claudegpt-knowledge-cutoffs",
-      "hot": "Tue, 11 Aug 2026 11:39:52 +0800"
-    },
-    {
       "rank": 10,
-      "title": "扎克伯格发表万字长文，要重新定义「超级智能应该属于谁」",
-      "url": "https://www.oschina.net/news/492836/meta-zuck-thefutureisforeveryone",
-      "hot": "Tue, 11 Aug 2026 11:19:22 +0800"
+      "title": "Termexo 0.4.4 发布：统一管理 Claude Code、Codex 与多模型供应商",
+      "url": "https://www.oschina.net/news/492967",
+      "hot": "Tue, 11 Aug 2026 13:18:50 +0800"
     }
   ]
 }
