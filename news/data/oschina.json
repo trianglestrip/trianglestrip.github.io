@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-12T08:19:28+00:00",
+  "updated_at": "2026-08-12T10:38:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Gitee CLI 开源，无需离开终端，即可完成 Gitee 日常工作。",
+      "url": "https://gitee.com/oschina/gitee-cli",
+      "hot": "Wed, 12 Aug 2026 16:48:39 +0800"
+    },
+    {
+      "rank": 2,
       "title": "在 Windows 上管理多个 Claude Code / Codex 终端：Termexo 的 PTY、会话恢复与模型切换设计",
       "url": "https://my.oschina.net/gemron/blog/19737026",
       "hot": "Wed, 12 Aug 2026 15:45:21 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "林俊旸官宣创业公司“Pragmatik Labs”",
       "url": "https://www.oschina.net/news/501902",
       "hot": "Wed, 12 Aug 2026 15:41:42 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Mojo 1.0 稳定版正式发布：三年打磨，终于能用在生产环境了",
       "url": "https://www.oschina.net/news/501901/modular-26-5-mojo-1-0-is-here",
       "hot": "Wed, 12 Aug 2026 15:10:14 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "谷歌力撑 Go ，称其为 AI 辅助软件工程的理想编程语言",
       "url": "https://www.oschina.net/news/501900/go-is-an-ideal-language-for-ai-assisted-software-engineering",
       "hot": "Wed, 12 Aug 2026 14:52:26 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "黄仁勋的豪赌：当 AI 算力成为可投资的资产类别",
       "url": "https://www.oschina.net/news/501899/nvidias-risky-business",
       "hot": "Wed, 12 Aug 2026 14:36:14 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Manus 离开 Meta，重回独立运营",
       "url": "https://www.oschina.net/news/501898",
       "hot": "Wed, 12 Aug 2026 14:26:10 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "Grok Bot 正式官宣 —— SpaceXAI 也下场做 AI 同事了",
       "url": "https://www.oschina.net/news/501897/x-ai-grok-bot",
       "hot": "Wed, 12 Aug 2026 14:21:02 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "梁文锋身价一年暴涨 3850%，登顶全球亿万富豪增速榜首",
       "url": "https://www.oschina.net/news/501895",
       "hot": "Wed, 12 Aug 2026 14:12:32 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": ":fire::fire:开源 API 开发管理平台 5.5.0 发布",
       "url": "https://www.oschina.net/news/501217",
       "hot": "Wed, 12 Aug 2026 12:02:14 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "AI 编程助手能写代码，但提个 PR 还是得靠人点网页——Gitee CLI 想解决这件事",
-      "url": "https://www.oschina.net/news/501028",
-      "hot": "Wed, 12 Aug 2026 11:50:59 +0800"
     }
   ]
 }

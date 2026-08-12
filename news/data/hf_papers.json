@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-12T04:25:33+00:00",
+  "updated_at": "2026-08-12T10:39:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "257"
+      "hot": "447"
     },
     {
       "rank": 2,
@@ -20,7 +20,7 @@
       "rank": 3,
       "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
       "url": "https://huggingface.co/papers/2608.04205",
-      "hot": "27"
+      "hot": "31"
     },
     {
       "rank": 4,
@@ -38,7 +38,7 @@
       "rank": 6,
       "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
       "url": "https://huggingface.co/papers/2608.03974",
-      "hot": "90"
+      "hot": "91"
     },
     {
       "rank": 7,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU",
-      "url": "https://huggingface.co/papers/2607.19191",
-      "hot": "311"
+      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
+      "url": "https://huggingface.co/papers/2309.06180",
+      "hot": "66"
     },
     {
       "rank": 10,
-      "title": "Multi-module GRPO: Composing Policy Gradients and Prompt Optimization\n  for Language Model Programs",
-      "url": "https://huggingface.co/papers/2508.04660",
-      "hot": "7"
+      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+      "url": "https://huggingface.co/papers/2509.22186",
+      "hot": "177"
     }
   ]
 }
