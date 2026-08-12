@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-12T00:04:57+00:00",
+  "updated_at": "2026-08-12T02:36:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS7.0 Share Kit碰一碰位置信息指南 #智绘鸿蒙·大有“视”界#",
-      "url": "https://ost.51cto.com/posts/54907",
-      "hot": "HarmonyOS7.0ShareKit碰一碰位置信息指南智绘鸿蒙&middot;大有&ldquo;视&rdquo;界一、ShareKit碰一碰位置信息是什么？接收端精准响应HarmonyOS7.0（API26）..."
+      "title": "小艺开放平台Skill开发：从创建到真机测试与发布",
+      "url": "https://ost.51cto.com/posts/54942",
+      "hot": "大家好，今天跟大家分享一下小艺开放平台的Skill开发。Skill是AIAgent可以调用的标准化能力单元，可以把一项相对独立的能力封装起来，供Age..."
     },
     {
       "rank": 2,
-      "title": "《可可图片编辑》HarmonyOS 上接图片超分的全过程#智绘鸿蒙·大有“视”界#",
-      "url": "https://ost.51cto.com/posts/54906",
-      "hot": "《可可图片编辑》HarmonyOS上接图片超分的全过程智绘鸿蒙&middot;大有&ldquo;视&rdquo;界图片编辑App被问得最多的一句话是：&quot;这张照片太糊了，能救一下吗？&quot;..."
+      "title": "Codex每次重连五次？一招彻底解决！",
+      "url": "https://www.51cto.com/article/852636.html",
+      "hot": "这两天用 Codex，我碰到一个特别磨人的问题。在刚开始使用 Codex 的时候，或者代码刚写到一半，底部突然开始转圈。"
     },
     {
       "rank": 3,
-      "title": "模型换个Harness就「变笨」？EverMind把自进化从研究推向产品，让AI「越用越聪明」",
-      "url": "https://www.51cto.com/article/852621.html",
-      "hot": "EverMind 正试图用 HarnessBank、Raven 与 EverMe，把这两个问题接成同一条产品路径。"
+      "title": "AI 编程：建立变更契约，让需求迭代可追溯不返工，PRD 和原型不再整份重写",
+      "url": "https://www.51cto.com/article/852725.html",
+      "hot": "统一增量入口，让变更可见，让下游知道改哪、不改哪——这件事，和统一第一份 PRD 入口一样，值得自己先做。这个技能，后续还是需要在真实项目实践中进行多次迭代优化的。"
     },
     {
       "rank": 4,
-      "title": "刚刚，黄仁勋发长文：AI算力要变成一种「资产」",
-      "url": "https://www.51cto.com/article/852620.html",
-      "hot": "黄仁勋称，相关合作将建立独立的算力融资平台，目标是随着时间推移动员超过 5000 亿美元第三方资本，用于支持全球 AI 基础设施建设。"
+      "title": "OpenAI花470亿大规模回购股票，高管火速跳车离场！",
+      "url": "https://www.51cto.com/article/852724.html",
+      "hot": "一个在 OpenAI 经历了 8 年、一场宫斗和百亿级融资的人，在公司估值 8520 亿美元即将 IPO 时选择出走。"
     },
     {
       "rank": 5,
-      "title": "好的 Harness，先把缓存命中做好",
-      "url": "https://www.51cto.com/article/852619.html",
-      "hot": "在 Transformer 的每一层注意力机制中，读过的 token 会形成 Key 和 Value。这些已经计算好的中间状态，就是 KV Cache。"
+      "title": "看不见的地址翻译：虚拟内存、TLB 和 NUMA 怎样拖慢高性能程序？",
+      "url": "https://www.51cto.com/article/852723.html",
+      "hot": "虚拟内存、TLB、页表、NUMA，这些概念听起来像操作系统课里的内容，但它们早已进入高性能计算的主战场。"
     },
     {
       "rank": 6,
-      "title": "Kubernetes 的 15 大典型应用场景：从微服务到 AI，让你彻底搞懂 K8s 的真正价值",
-      "url": "https://www.51cto.com/article/852616.html",
-      "hot": "本文将带你全面了解 Kubernetes 的 15 大核心应用场景，看看它在哪些地方真正闪光，能为企业带来哪些收益，以及 —— 什么时候不该用它。"
+      "title": "我攒的AI技能包，终于不用在三个文件夹里各存一份了",
+      "url": "https://www.51cto.com/article/852722.html",
+      "hot": "Vercel牵头，拉着亚马逊（AWS）、微软旗下的GitHub、微软自己、OpenAI，还有我现在正敲着这篇稿子用的这个工具Cursor（背后公司叫Anysphere），坐一块儿，真把这件事标准化了。"
     },
     {
       "rank": 7,
-      "title": "DuckDB 保姆级教程：从第一条 SQL 到千万行电商经营分析，一篇讲透",
-      "url": "https://www.51cto.com/article/852609.html",
-      "hot": "DuckDB 真正改变的，是一种数据处理习惯。学到这里，如果最后只记住一句 import duckdb，其实还不够。我更希望你顺手改掉一个用了很多年的默认习惯：拿到数据以后，不要第一反应就是先把它完整塞进 Python 内存。"
+      "title": "阿里开源了一套让 Skill 从\"能用\"到\"可交付\"的完整方案",
+      "url": "https://www.51cto.com/article/852721.html",
+      "hot": "阿里巴巴最近开源的 https://github.com/alibaba/skill-up，正是为了解决这个痛点。它的核心理念很简单：把 Agent Skill 当成一件需要持续回归的交付物，而不是一份写完就放那的说明文档。"
     },
     {
       "rank": 8,
-      "title": "告别翻阅海量运维文档！这套 K8s‑RAG‑AIOps，内网离线实现集群智能故障排查",
-      "url": "https://www.51cto.com/article/852608.html",
-      "hot": "一套自研 K8s‑RAG‑AIOps 可视化故障诊断工具，结合本地向量知识库+DeepSeek 大模型，一键采集集群真实运行数据，检索企业内部运维文档，直接输出可落地的故障处置报告，降低运维排障门槛。"
+      "title": "Anthropic CEO整天神神叨叨，投资人受不了了",
+      "url": "https://www.51cto.com/article/852720.html",
+      "hot": "部分投资者认为，Dario对AI风险的警惕已经到了近乎偏执的程度。"
     },
     {
       "rank": 9,
-      "title": "微软确认暂不为 Windows 11 加入透明效果自定义功能，建议用户使用第三方工具",
-      "url": "https://www.51cto.com/article/852607.html",
-      "hot": "微软已经确认，他们不会“立即调整”Windows 11 的透明效果选项，而是建议用户使用 Windhawk 等第三方工具，而不是在操作系统中原生加入类似 macOS “Liquid Glass（液态玻璃）”风格的透明控制功能。"
+      "title": "刚刚，林俊旸官宣创业公司Pragmatik Labs！",
+      "url": "https://www.51cto.com/article/852719.html",
+      "hot": "这位曾经带领 Qwen 冲进全球大模型第一梯队的技术负责人，没有继续留在大厂，也没有把新公司的目标简单限定在基础模型上。"
     },
     {
       "rank": 10,
-      "title": "Claude Opus 5 在最新基准测试中将间接提示注入攻击成功率降至 2%",
-      "url": "https://www.51cto.com/article/852606.html",
-      "hot": "这一发现凸显了业界对间接提示注入日益增长的关注。这是一种安全问题，可能影响连接到文档、网站、电子邮件和业务工具的 AI Agent。"
+      "title": "Auto-Research「终极大考」：新基准撕下大模型科研伪装",
+      "url": "https://www.51cto.com/article/852717.html",
+      "hot": "来自伯克利、普林斯顿、清华等多家机构的研究者提出 MLS-Bench，试图在可执行环境中单独测量这项能力。"
     }
   ]
 }
