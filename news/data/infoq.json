@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-12T02:36:24+00:00",
+  "updated_at": "2026-08-12T05:52:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "千条广告“抢”一个 30 秒位置，平台如何实时做出选择？",
+      "url": "https://www.infoq.cn/article/LDrAypWCIbNuL3XS30PE?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 12 Aug 2026 13:30:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "群青智能联合创始人&CEO 吴哲明博士确认出席AICon深圳，将分享“从真实产线定义智能——工业具身智能的物理 AI 闭环”",
+      "url": "https://www.infoq.cn/article/b1V6WF6iUajJpND8VmCE?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 12 Aug 2026 11:43:03 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "DoorDash使用Envoy和Valkey构建了1.5M RPS的代理缓存，可用性达99.99999%",
+      "url": "https://www.infoq.cn/article/4pXftxRySRf5FB5hJK9o?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 12 Aug 2026 11:32:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "小扎万字长文炮轰闭源：蒸馏无罪，Meta 正式重回开源模型路线",
+      "url": "https://www.infoq.cn/article/9sy33cA91Fp8z5mlOvNu?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 12 Aug 2026 10:43:48 GMT"
+    },
+    {
+      "rank": 5,
       "title": "Cloudflare发现了hyper HTTP/1实现中的竞态条件问题并进行了修复",
       "url": "https://www.infoq.cn/article/FbaA82tNKyG25aHVejHU?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 10:28:04 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "机器人大脑之争进入深水区：为什么物理世界需要从头设计模型",
       "url": "https://www.infoq.cn/article/rcSr7bVQFB9Uskadg74T?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 10:19:22 GMT"
     },
     {
-      "rank": 3,
-      "title": "蚂蚁 AI 驱动的生产级软件交付基建和实践｜AICon深圳",
-      "url": "https://www.infoq.cn/article/FjAtSWXLEfY3Iu4ThvJM?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 12 Aug 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 4,
+      "rank": 7,
       "title": "把 AI 视频的钱花在刀刃上，不是每一刀上",
       "url": "https://www.infoq.cn/article/pqWqcoySQ5HdKz96vSo3?utm_source=rss&utm_medium=article",
       "hot": "Tue, 11 Aug 2026 19:11:29 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "代理技能 Ponytail 在贡献者提出质疑后修正了自身的基准测试结果",
       "url": "https://www.infoq.cn/article/uHECxUzeafk9Nbzpxi25?utm_source=rss&utm_medium=article",
       "hot": "Tue, 11 Aug 2026 17:48:00 GMT"
     },
     {
-      "rank": 6,
-      "title": "让 Agent 读懂业务世界：Snowflake Cortex Agents 的本体驱动推理实践",
+      "rank": 9,
+      "title": "让 Agent 读懂业务世界：Snowflake Cortex Agents 的本体驱动推理实践 ｜ 技术实践",
       "url": "https://www.infoq.cn/article/2NsA9FT1uhjmdRrwzOo3?utm_source=rss&utm_medium=article",
       "hot": "Tue, 11 Aug 2026 17:19:44 GMT"
     },
     {
-      "rank": 7,
-      "title": "为 Agentic Enterprise 实现 ROI：企业高管需要关注的 3 个关键因素",
-      "url": "https://www.infoq.cn/article/fe63sMOT127Pu7QpHP3a?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 11 Aug 2026 17:19:14 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "OpenAI 代理群利用 Artifactory 零日漏洞逃离沙箱并入侵 Hugging Face",
-      "url": "https://www.infoq.cn/article/gkzDEyCF5U4DtKAa1Eee?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 11 Aug 2026 16:36:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "腾讯WorkBuddy升级多端同步，支持手机远程授权和停止电脑端任务",
-      "url": "https://www.infoq.cn/article/kSqvyjVIwTvXsumYgRtf?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 11 Aug 2026 14:28:27 GMT"
-    },
-    {
       "rank": 10,
-      "title": "eslint-rspack-plugin 5.0.0 以纯 ESM 包的形式发布，与 Rstack 生态系统保持一致",
-      "url": "https://www.infoq.cn/article/MfAOXCR6RxQG515xW7HH?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 11 Aug 2026 13:21:00 GMT"
+      "title": "为 Agentic Enterprise 实现 ROI：企业高管需要关注的 3 个关键因素 ｜ 技术趋势",
+      "url": "https://www.infoq.cn/article/fe63sMOT127Pu7QpHP3a?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 11 Aug 2026 17:19:15 GMT"
     }
   ]
 }

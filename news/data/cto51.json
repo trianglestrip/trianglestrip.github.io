@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-12T02:36:19+00:00",
+  "updated_at": "2026-08-12T05:52:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "《置身谷内》！Jeff Dean上顶会自曝离职现场：被1500人围堵",
+      "url": "https://www.51cto.com/article/852752.html",
+      "hot": "这样耳熟能详的大佬，本来不必多做介绍。但要解释离职的空前盛况，还得回头看看他为谷歌留下了什么。"
+    },
+    {
+      "rank": 2,
+      "title": "文生图Scaling新变量，被字节Seed团队发现了",
+      "url": "https://www.51cto.com/article/852749.html",
+      "hot": "团队提出 Structured Prompt，并从 Diffusability 与 Promptability 两侧共同提升文本条件，最终在复杂组合、推理和世界知识生成任务上取得显著提升。"
+    },
+    {
+      "rank": 3,
       "title": "小艺开放平台Skill开发：从创建到真机测试与发布",
       "url": "https://ost.51cto.com/posts/54942",
       "hot": "大家好，今天跟大家分享一下小艺开放平台的Skill开发。Skill是AIAgent可以调用的标准化能力单元，可以把一项相对独立的能力封装起来，供Age..."
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Codex每次重连五次？一招彻底解决！",
       "url": "https://www.51cto.com/article/852636.html",
       "hot": "这两天用 Codex，我碰到一个特别磨人的问题。在刚开始使用 Codex 的时候，或者代码刚写到一半，底部突然开始转圈。"
     },
     {
-      "rank": 3,
+      "rank": 5,
+      "title": "【HarmonyOS 7 沉浸光感深度实战】 07 手势、动画与动态浮动面板怎么组合",
+      "url": "https://ost.51cto.com/posts/54939",
+      "hot": "前言悬浮面板和普通材质卡片相比，麻烦的地方在于它会同时处理好几种变化。手指按下时，组件需要有反馈；拖动标题区域时，面板要跟着手势移..."
+    },
+    {
+      "rank": 6,
       "title": "AI 编程：建立变更契约，让需求迭代可追溯不返工，PRD 和原型不再整份重写",
       "url": "https://www.51cto.com/article/852725.html",
       "hot": "统一增量入口，让变更可见，让下游知道改哪、不改哪——这件事，和统一第一份 PRD 入口一样，值得自己先做。这个技能，后续还是需要在真实项目实践中进行多次迭代优化的。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "OpenAI花470亿大规模回购股票，高管火速跳车离场！",
       "url": "https://www.51cto.com/article/852724.html",
       "hot": "一个在 OpenAI 经历了 8 年、一场宫斗和百亿级融资的人，在公司估值 8520 亿美元即将 IPO 时选择出走。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "看不见的地址翻译：虚拟内存、TLB 和 NUMA 怎样拖慢高性能程序？",
       "url": "https://www.51cto.com/article/852723.html",
       "hot": "虚拟内存、TLB、页表、NUMA，这些概念听起来像操作系统课里的内容，但它们早已进入高性能计算的主战场。"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "我攒的AI技能包，终于不用在三个文件夹里各存一份了",
       "url": "https://www.51cto.com/article/852722.html",
       "hot": "Vercel牵头，拉着亚马逊（AWS）、微软旗下的GitHub、微软自己、OpenAI，还有我现在正敲着这篇稿子用的这个工具Cursor（背后公司叫Anysphere），坐一块儿，真把这件事标准化了。"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "阿里开源了一套让 Skill 从\"能用\"到\"可交付\"的完整方案",
       "url": "https://www.51cto.com/article/852721.html",
       "hot": "阿里巴巴最近开源的 https://github.com/alibaba/skill-up，正是为了解决这个痛点。它的核心理念很简单：把 Agent Skill 当成一件需要持续回归的交付物，而不是一份写完就放那的说明文档。"
-    },
-    {
-      "rank": 8,
-      "title": "Anthropic CEO整天神神叨叨，投资人受不了了",
-      "url": "https://www.51cto.com/article/852720.html",
-      "hot": "部分投资者认为，Dario对AI风险的警惕已经到了近乎偏执的程度。"
-    },
-    {
-      "rank": 9,
-      "title": "刚刚，林俊旸官宣创业公司Pragmatik Labs！",
-      "url": "https://www.51cto.com/article/852719.html",
-      "hot": "这位曾经带领 Qwen 冲进全球大模型第一梯队的技术负责人，没有继续留在大厂，也没有把新公司的目标简单限定在基础模型上。"
-    },
-    {
-      "rank": 10,
-      "title": "Auto-Research「终极大考」：新基准撕下大模型科研伪装",
-      "url": "https://www.51cto.com/article/852717.html",
-      "hot": "来自伯克利、普林斯顿、清华等多家机构的研究者提出 MLS-Bench，试图在可执行环境中单独测量这项能力。"
     }
   ]
 }

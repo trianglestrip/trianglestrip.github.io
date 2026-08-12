@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-12T02:36:23+00:00",
+  "updated_at": "2026-08-12T05:52:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": ":fire::fire:开源 API 开发管理平台 5.5.0 发布",
+      "url": "https://www.oschina.net/news/501217",
+      "hot": "Wed, 12 Aug 2026 12:02:14 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "AI 编程助手能写代码，但提个 PR 还是得靠人点网页——Gitee CLI 想解决这件事",
+      "url": "https://www.oschina.net/news/501028",
+      "hot": "Wed, 12 Aug 2026 11:50:59 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "百万奖池，产业对接，征集全国优秀开源项目",
+      "url": "https://www.oschina.net/news/500590/shanghai-os2026",
+      "hot": "Wed, 12 Aug 2026 11:05:22 +0800"
+    },
+    {
+      "rank": 4,
       "title": "不止是命令行：Gitee CLI 如何成为 AI Agent 的「Gitee 之手」",
       "url": "https://www.oschina.net/news/500509/gitee-cli",
       "hot": "Wed, 12 Aug 2026 09:49:23 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "MothX v1.1.82 已经发布，单文件的 code agent 工具",
       "url": "https://www.oschina.net/news/495042",
       "hot": "Tue, 11 Aug 2026 20:35:23 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "Claude 开始给生成内容打水印了，用户最担心的是代码",
       "url": "https://www.oschina.net/news/493379",
       "hot": "Tue, 11 Aug 2026 18:45:43 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "动态语言对 AI 编程更友好？开发者用三个真实任务给了答案",
       "url": "https://www.oschina.net/news/493223/pl-tokens",
       "hot": "Tue, 11 Aug 2026 17:13:20 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "MaxKB 开源企业级智能体平台 v2.10.5 LTS 版本发布，修复安全漏洞及相关问题",
       "url": "https://my.oschina.net/u/4736111/blog/19735596",
       "hot": "Tue, 11 Aug 2026 15:52:31 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "ERD Online5.0.0 数据库设计 Git + Figma",
       "url": "https://www.oschina.net/news/493105",
       "hot": "Tue, 11 Aug 2026 15:26:55 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Redis 之父又出手了：一个 C 写的原生 MiniMax-H3 推理引擎，让 Mac 本地跑视频生成",
       "url": "https://www.oschina.net/news/493089",
       "hot": "Tue, 11 Aug 2026 15:16:33 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Solon 的日志设计哲学：不只是用 SLF4J 做统一门面",
-      "url": "https://www.oschina.net/news/493049",
-      "hot": "Tue, 11 Aug 2026 14:42:19 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "智谱 ZCode 发布重大升级，并重置所有 GLM Coding Plan 使用额度",
-      "url": "https://www.oschina.net/news/493033",
-      "hot": "Tue, 11 Aug 2026 14:29:22 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "首发 | 如意玲珑打包 Agents： 用 AI 重构 Linux 生态打包体验",
-      "url": "https://www.oschina.net/news/493018",
-      "hot": "Tue, 11 Aug 2026 14:15:31 +0800"
     }
   ]
 }
