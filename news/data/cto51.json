@@ -1,38 +1,38 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-12T05:52:43+00:00",
+  "updated_at": "2026-08-12T08:19:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "【鸿蒙实战】第 05 篇：鸿蒙网络请求架构实战——@ohos.net.http 到 Axios 封装、拦截器与统一错误处理",
+      "url": "https://ost.51cto.com/posts/54949",
+      "hot": "摘要:天气查询App上线前，我遇到一个诡异问题：真机上所有请求全部失败，Previewer里却一切正常。排查到最后，根因既不是代码也不是网络，..."
+    },
+    {
+      "rank": 2,
       "title": "《置身谷内》！Jeff Dean上顶会自曝离职现场：被1500人围堵",
       "url": "https://www.51cto.com/article/852752.html",
       "hot": "这样耳熟能详的大佬，本来不必多做介绍。但要解释离职的空前盛况，还得回头看看他为谷歌留下了什么。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "文生图Scaling新变量，被字节Seed团队发现了",
       "url": "https://www.51cto.com/article/852749.html",
       "hot": "团队提出 Structured Prompt，并从 Diffusability 与 Promptability 两侧共同提升文本条件，最终在复杂组合、推理和世界知识生成任务上取得显著提升。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "小艺开放平台Skill开发：从创建到真机测试与发布",
       "url": "https://ost.51cto.com/posts/54942",
       "hot": "大家好，今天跟大家分享一下小艺开放平台的Skill开发。Skill是AIAgent可以调用的标准化能力单元，可以把一项相对独立的能力封装起来，供Age..."
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Codex每次重连五次？一招彻底解决！",
       "url": "https://www.51cto.com/article/852636.html",
       "hot": "这两天用 Codex，我碰到一个特别磨人的问题。在刚开始使用 Codex 的时候，或者代码刚写到一半，底部突然开始转圈。"
-    },
-    {
-      "rank": 5,
-      "title": "【HarmonyOS 7 沉浸光感深度实战】 07 手势、动画与动态浮动面板怎么组合",
-      "url": "https://ost.51cto.com/posts/54939",
-      "hot": "前言悬浮面板和普通材质卡片相比，麻烦的地方在于它会同时处理好几种变化。手指按下时，组件需要有反馈；拖动标题区域时，面板要跟着手势移..."
     },
     {
       "rank": 6,
