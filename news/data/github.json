@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-08-11T21:59:56+00:00",
+  "updated_at": "2026-08-12T04:25:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Shell] msitarzewski/agency-agents",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "hot": "143,046"
+      "title": "[HTML] cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "hot": "7,201"
     },
     {
       "rank": 2,
-      "title": "[Python] semantica-agi/semantica",
-      "url": "https://github.com/semantica-agi/semantica",
-      "hot": "4,811"
+      "title": "[Shell] msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "hot": "143,567"
     },
     {
       "rank": 3,
-      "title": "[Shell] nvm-sh/nvm",
-      "url": "https://github.com/nvm-sh/nvm",
-      "hot": "94,471"
+      "title": "[Python] semantica-agi/semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "hot": "5,052"
     },
     {
       "rank": 4,
-      "title": "[JavaScript] addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "hot": "86,186"
+      "title": "[Shell] nvm-sh/nvm",
+      "url": "https://github.com/nvm-sh/nvm",
+      "hot": "94,513"
     },
     {
       "rank": 5,
-      "title": "[Python] ZhuLinsen/daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "hot": "62,079"
+      "title": "[JavaScript] addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "hot": "86,304"
     },
     {
       "rank": 6,
-      "title": "[Python] vitali87/code-graph-rag",
-      "url": "https://github.com/vitali87/code-graph-rag",
-      "hot": "3,784"
+      "title": "[Python] ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "hot": "62,270"
     },
     {
       "rank": 7,
-      "title": "[Python] anthropics/skills",
-      "url": "https://github.com/anthropics/skills",
-      "hot": "168,072"
+      "title": "[Python] vitali87/code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "hot": "3,885"
     },
     {
       "rank": 8,
-      "title": "[Python] 3b1b/manim",
-      "url": "https://github.com/3b1b/manim",
-      "hot": "90,133"
+      "title": "[Python] anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "hot": "168,245"
     },
     {
       "rank": 9,
-      "title": "[Python] HKUDS/DeepTutor",
-      "url": "https://github.com/HKUDS/DeepTutor",
-      "hot": "34,652"
+      "title": "[Python] 3b1b/manim",
+      "url": "https://github.com/3b1b/manim",
+      "hot": "90,283"
     },
     {
       "rank": 10,
-      "title": "[TypeScript] stablyai/orca",
-      "url": "https://github.com/stablyai/orca",
-      "hot": "42,675"
+      "title": "[Python] HKUDS/DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "hot": "34,861"
     }
   ]
 }
