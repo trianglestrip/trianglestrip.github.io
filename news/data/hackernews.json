@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-12T21:51:18+00:00",
+  "updated_at": "2026-08-12T23:55:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "DeepSeek V4 Pro 0813",
       "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
-      "hot": "607"
+      "hot": "695"
     },
     {
       "rank": 2,
       "title": "Delta",
       "url": "https://zed.dev/blog/introducing-delta",
-      "hot": "256"
+      "hot": "342"
     },
     {
       "rank": 3,
       "title": "Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug",
       "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
-      "hot": "667"
+      "hot": "741"
     },
     {
       "rank": 4,
       "title": "Qwen3.8-2.4T",
       "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "392"
+      "hot": "461"
     },
     {
       "rank": 5,
-      "title": "2026 Eclipse Webcams",
-      "url": "https://jonty.github.io/2026_eclipse_webcams/",
-      "hot": "442"
+      "title": "Why Target Common Lisp for Code Generation?",
+      "url": "http://funcall.blogspot.com/2026/08/why-vibe-code-in-lisp.html",
+      "hot": "13"
     },
     {
       "rank": 6,
-      "title": "Tim King, AmigaDOS developer, has died",
-      "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
-      "hot": "203"
+      "title": "2026 Eclipse Webcams",
+      "url": "https://jonty.github.io/2026_eclipse_webcams/",
+      "hot": "454"
     },
     {
       "rank": 7,
-      "title": "Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index",
-      "url": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
-      "hot": "275"
+      "title": "Tim King, AmigaDOS developer, has died",
+      "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
+      "hot": "221"
     },
     {
       "rank": 8,
       "title": "HTML over WebSockets: real-time SPAs with barely any JavaScript",
       "url": "https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/",
-      "hot": "90"
+      "hot": "128"
     },
     {
       "rank": 9,
       "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
       "url": "https://knownagents.com/insights",
-      "hot": "199"
+      "hot": "219"
     },
     {
       "rank": 10,
       "title": "Grok 4.6",
       "url": "https://x.ai/news/grok-4-6",
-      "hot": "307"
+      "hot": "363"
     }
   ]
 }
