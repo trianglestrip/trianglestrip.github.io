@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-12T19:33:50+00:00",
+  "updated_at": "2026-08-12T21:51:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "DeepSeek V4 Pro 0813",
       "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
-      "hot": "447"
+      "hot": "607"
     },
     {
       "rank": 2,
-      "title": "Zed: Delta",
+      "title": "Delta",
       "url": "https://zed.dev/blog/introducing-delta",
-      "hot": "119"
+      "hot": "256"
     },
     {
       "rank": 3,
       "title": "Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug",
       "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
-      "hot": "534"
+      "hot": "667"
     },
     {
       "rank": 4,
       "title": "Qwen3.8-2.4T",
       "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "273"
+      "hot": "392"
     },
     {
       "rank": 5,
       "title": "2026 Eclipse Webcams",
       "url": "https://jonty.github.io/2026_eclipse_webcams/",
-      "hot": "412"
+      "hot": "442"
     },
     {
       "rank": 6,
-      "title": "Your Key to Success Isn't More Luck or Hard Work",
-      "url": "https://julienreszka.com/blog/your-key-to-success-isn-t-more-luck-or-hard-work/",
-      "hot": "28"
+      "title": "Tim King, AmigaDOS developer, has died",
+      "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
+      "hot": "203"
     },
     {
       "rank": 7,
-      "title": "Tim King, AmigaDOS developer, has died",
-      "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
-      "hot": "152"
+      "title": "Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index",
+      "url": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+      "hot": "275"
     },
     {
       "rank": 8,
-      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
-      "url": "https://knownagents.com/insights",
-      "hot": "157"
+      "title": "HTML over WebSockets: real-time SPAs with barely any JavaScript",
+      "url": "https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/",
+      "hot": "90"
     },
     {
       "rank": 9,
-      "title": "HTML over WebSockets: real-time SPAs with barely any JavaScript",
-      "url": "https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/",
-      "hot": "47"
+      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
+      "url": "https://knownagents.com/insights",
+      "hot": "199"
     },
     {
       "rank": 10,
-      "title": "Why Tiny JPEGs Look Different in Chrome",
-      "url": "https://guillaumetech.github.io/posts/jpg-scaling-chrome/",
-      "hot": "182"
+      "title": "Grok 4.6",
+      "url": "https://x.ai/news/grok-4-6",
+      "hot": "307"
     }
   ]
 }
