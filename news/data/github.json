@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-08-12T10:38:37+00:00",
+  "updated_at": "2026-08-12T17:28:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[HTML] cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "hot": "8,045"
+      "title": "[Rust] macro-inc/macro",
+      "url": "https://github.com/macro-inc/macro",
+      "hot": "1,473"
     },
     {
       "rank": 2,
-      "title": "[Shell] msitarzewski/agency-agents",
-      "url": "https://github.com/msitarzewski/agency-agents",
-      "hot": "144,168"
+      "title": "[Python] semantica-agi/semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "hot": "5,552"
     },
     {
       "rank": 3,
-      "title": "[Python] semantica-agi/semantica",
-      "url": "https://github.com/semantica-agi/semantica",
-      "hot": "5,330"
+      "title": "[TypeScript] stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "hot": "43,641"
     },
     {
       "rank": 4,
-      "title": "[Shell] nvm-sh/nvm",
-      "url": "https://github.com/nvm-sh/nvm",
-      "hot": "94,550"
+      "title": "[Shell] msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "hot": "144,409"
     },
     {
       "rank": 5,
-      "title": "[JavaScript] addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "hot": "86,432"
+      "title": "[Python] shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "hot": "36,895"
     },
     {
       "rank": 6,
-      "title": "[Python] ZhuLinsen/daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "hot": "62,499"
+      "title": "[Python] NanmiCoder/MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "hot": "61,923"
     },
     {
       "rank": 7,
-      "title": "[Python] vitali87/code-graph-rag",
-      "url": "https://github.com/vitali87/code-graph-rag",
-      "hot": "3,987"
+      "title": "[Python] hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "hot": "45,419"
     },
     {
       "rank": 8,
-      "title": "[Python] anthropics/skills",
-      "url": "https://github.com/anthropics/skills",
-      "hot": "168,419"
+      "title": "[Go] infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "hot": "87,464"
     },
     {
       "rank": 9,
-      "title": "[Python] 3b1b/manim",
-      "url": "https://github.com/3b1b/manim",
-      "hot": "90,469"
+      "title": "[TypeScript] paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "hot": "77,593"
     },
     {
       "rank": 10,
-      "title": "[Python] HKUDS/DeepTutor",
-      "url": "https://github.com/HKUDS/DeepTutor",
-      "hot": "35,070"
+      "title": "[Rust] NVIDIA-NeMo/Switchyard",
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "hot": "710"
     }
   ]
 }
