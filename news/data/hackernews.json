@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-12T10:38:55+00:00",
+  "updated_at": "2026-08-12T13:38:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Tim Gowers: What sort of maths are LLMs good at?",
-      "url": "https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/",
-      "hot": "25"
+      "title": "2026 Eclipse Webcams",
+      "url": "https://jonty.github.io/2026_eclipse_webcams/",
+      "hot": "154"
     },
     {
       "rank": 2,
-      "title": "LinkedIn CringeBot 3000",
-      "url": "https://www.cringebot3000.com/",
-      "hot": "208"
+      "title": "What sort of maths are LLMs good at?",
+      "url": "https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/",
+      "hot": "138"
     },
     {
       "rank": 3,
       "title": "Show HN: Woxi - Open-source Mathematica / Wolfram Language reimplementation",
       "url": "https://woxi.ad-si.com",
-      "hot": "25"
+      "hot": "124"
     },
     {
       "rank": 4,
-      "title": "Dutch Train Map Simulator",
-      "url": "https://spoorkaart.zaza.dev",
-      "hot": "32"
-    },
-    {
-      "rank": 5,
-      "title": "Facebook is paying controversial creators to produce rage-bait content",
-      "url": "https://www.abc.net.au/news/2026-08-06/ragebait-how-facebook-is-paying-controversial-creators/106940696",
-      "hot": "64"
-    },
-    {
-      "rank": 6,
-      "title": "The hardest working font in Manhattan (2025)",
-      "url": "https://aresluna.org/the-hardest-working-font-in-manhattan/",
-      "hot": "211"
-    },
-    {
-      "rank": 7,
-      "title": "Compression is prediction",
-      "url": "https://ngrok.com/blog/compression-is-prediction",
-      "hot": "545"
-    },
-    {
-      "rank": 8,
-      "title": "Worms: The Future of Yesterday's Worms Today",
-      "url": "https://worm.net/",
+      "title": "Delphi 13 Community Edition Is Now Available",
+      "url": "https://blogs.embarcadero.com/delphi-13-community-edition-is-now-available/",
       "hot": "52"
     },
     {
-      "rank": 9,
+      "rank": 5,
+      "title": "LinkedIn CringeBot 3000",
+      "url": "https://www.cringebot3000.com/",
+      "hot": "377"
+    },
+    {
+      "rank": 6,
       "title": "High-Res Photo Shows Sand-Capped Butte Rising from Mars Plain of Polygons",
       "url": "https://petapixel.com/2026/08/04/amazing-high-res-photo-shows-a-butte-rising-from-mars/",
-      "hot": "5"
+      "hot": "67"
+    },
+    {
+      "rank": 7,
+      "title": "Facebook is paying controversial creators to produce rage-bait content",
+      "url": "https://www.abc.net.au/news/2026-08-06/ragebait-how-facebook-is-paying-controversial-creators/106940696",
+      "hot": "298"
+    },
+    {
+      "rank": 8,
+      "title": "The hardest working font in Manhattan (2025)",
+      "url": "https://aresluna.org/the-hardest-working-font-in-manhattan/",
+      "hot": "281"
+    },
+    {
+      "rank": 9,
+      "title": "Compression is prediction",
+      "url": "https://ngrok.com/blog/compression-is-prediction",
+      "hot": "597"
     },
     {
       "rank": 10,
-      "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
-      "url": "https://discoveredmaterials.com/research/",
-      "hot": "17"
+      "title": "Worms: The Future of Yesterday's Worms Today",
+      "url": "https://worm.net/",
+      "hot": "106"
     }
   ]
 }
