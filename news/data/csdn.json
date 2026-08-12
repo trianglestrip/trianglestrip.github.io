@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-12T13:38:12+00:00",
+  "updated_at": "2026-08-12T16:30:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "CentOS部署Kafka：ZooKeeper启动、消息测试与远程调试",
-      "url": "https://blog.csdn.net/SDFsoul/article/details/163671162",
-      "hot": "17280"
+      "title": "Zookeeper - Java API 实现节点的创建与删除开发",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157688811",
+      "hot": "17760"
     },
     {
       "rank": 2,
-      "title": "【《智能驾驶拆解笔记：老周唠透车圈AI》第5篇】",
-      "url": "https://blog.csdn.net/weixin_62244995/article/details/162998983",
-      "hot": "16257"
+      "title": "CentOS部署Kafka：ZooKeeper启动、消息测试与远程调试",
+      "url": "https://blog.csdn.net/SDFsoul/article/details/163671162",
+      "hot": "16469"
     },
     {
       "rank": 3,
-      "title": "Zookeeper - Java API 实现节点的创建与删除开发",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157688811",
-      "hot": "15742"
+      "title": "【《智能驾驶拆解笔记：老周唠透车圈AI》第5篇】",
+      "url": "https://blog.csdn.net/weixin_62244995/article/details/162998983",
+      "hot": "15576"
     },
     {
       "rank": 4,
-      "title": "DeepSeek Harness内测开启，AI Agent竞争升级",
-      "url": "https://blog.csdn.net/qq_19309473/article/details/163677009",
-      "hot": "11827"
+      "title": "一台安卓手机能跑AI Agent到什么程度？",
+      "url": "https://blog.csdn.net/qq_61024956/article/details/163665196",
+      "hot": "14813"
     },
     {
       "rank": 5,
-      "title": "一台安卓手机能跑AI Agent到什么程度？",
-      "url": "https://blog.csdn.net/qq_61024956/article/details/163665196",
-      "hot": "11745"
+      "title": "当AI开始自主攻击，你的AI防御跟上了吗？",
+      "url": "https://blog.csdn.net/weixin_46879208/article/details/163638433",
+      "hot": "12443"
     },
     {
       "rank": 6,
       "title": "从MongoDB迁移到KES：一次文档库国产化替换的实战手记",
       "url": "https://blog.csdn.net/qq_57761637/article/details/163618146",
-      "hot": "11246"
+      "hot": "12272"
     },
     {
       "rank": 7,
-      "title": "当AI开始自主攻击，你的AI防御跟上了吗？",
-      "url": "https://blog.csdn.net/weixin_46879208/article/details/163638433",
-      "hot": "10889"
+      "title": "DeepSeek Harness内测开启，AI Agent竞争升级",
+      "url": "https://blog.csdn.net/qq_19309473/article/details/163677009",
+      "hot": "11717"
     },
     {
       "rank": 8,
       "title": "CentOS部署Jenkins：结合cpolar实现Webhook自动构建与发布",
       "url": "https://blog.csdn.net/2501_91062530/article/details/163664797",
-      "hot": "10852"
+      "hot": "10997"
     },
     {
       "rank": 9,
       "title": "awesome-llm-apps 开源项目详解：100+ AI Agent 与 RAG 模板一键复用",
       "url": "https://blog.csdn.net/zhangay1998/article/details/162974701",
-      "hot": "10727"
+      "hot": "10901"
     },
     {
       "rank": 10,
-      "title": "PyTorch计算机视觉——WGAN-GP在图像生成中的应用",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/162238763",
-      "hot": "10562"
+      "title": "【Linux网络】从0手写Reactor反应堆（三）：代码收尾、连接生命周期管理与多Reactor扩展思路",
+      "url": "https://blog.csdn.net/2503_91389547/article/details/162089499",
+      "hot": "10882"
     }
   ]
 }

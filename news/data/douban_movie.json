@@ -1,20 +1,20 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-12T13:37:52+00:00",
+  "updated_at": "2026-08-12T16:29:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "蜘蛛侠：崭新之日",
-      "url": "https://movie.douban.com/subject/36246195/",
-      "hot": "评分 7.8"
-    },
-    {
-      "rank": 2,
       "title": "欢迎来龙餐馆",
       "url": "https://movie.douban.com/subject/35811064/",
       "hot": "评分 8.4"
+    },
+    {
+      "rank": 2,
+      "title": "蜘蛛侠：崭新之日",
+      "url": "https://movie.douban.com/subject/36246195/",
+      "hot": "评分 7.8"
     },
     {
       "rank": 3,
@@ -48,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "hot": "评分 6.4"
-    },
-    {
-      "rank": 9,
       "title": "花开锦绣",
       "url": "https://movie.douban.com/subject/36810153/",
       "hot": ""
+    },
+    {
+      "rank": 9,
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
+      "hot": "评分 6.4"
     },
     {
       "rank": 10,
