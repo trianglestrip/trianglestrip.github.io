@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-13T13:41:07+00:00",
+  "updated_at": "2026-08-13T20:07:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "meta-models/Muse-Glimmer-30B",
       "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "hot": "1371"
+      "hot": "1404"
     },
     {
       "rank": 2,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "3781"
+      "hot": "3812"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen3.8-2.4T-A95B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "700"
+      "hot": "761"
     },
     {
       "rank": 4,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "644"
+      "hot": "698"
     },
     {
       "rank": 5,
       "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "3293"
+      "hot": "3310"
     },
     {
       "rank": 6,
-      "title": "larryvrh/MiniMax-H3-Turbo-Lora",
-      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
-      "hot": "713"
+      "title": "lightx2v/Minimax-h3-Turbo",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "hot": "453"
     },
     {
       "rank": 7,
-      "title": "lightx2v/Minimax-h3-Turbo",
-      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
-      "hot": "436"
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "hot": "717"
     },
     {
       "rank": 8,
       "title": "Comfy-Org/MiniMax-H3",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
-      "hot": "1274"
+      "hot": "1286"
     },
     {
       "rank": 9,
       "title": "unsloth/Muse-Glimmer-30B-GGUF",
       "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF",
-      "hot": "379"
+      "hot": "387"
     },
     {
       "rank": 10,
       "title": "moonshotai/Kimi-K3",
       "url": "https://huggingface.co/moonshotai/Kimi-K3",
-      "hot": "10604"
+      "hot": "10618"
     }
   ]
 }
