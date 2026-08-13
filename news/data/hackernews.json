@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-13T11:23:06+00:00",
+  "updated_at": "2026-08-13T13:40:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "ChatGPT Desktop (Codex Desktop) for Linux",
-      "url": "https://openai.com/codex/",
-      "hot": "186"
+      "title": "Deutsche Bank becomes first foreign yuan clearing bank in Europe",
+      "url": "https://tradersunion.com/news/central-banks/show/2973571-deutsche-bank-becomes/",
+      "hot": "164"
     },
     {
       "rank": 2,
-      "title": "The lattice of sets of natural numbers is rich",
-      "url": "https://jdh.hamkins.org/the-lattice-of-sets-of-natural-numbers-is-rich/",
-      "hot": "29"
+      "title": "Choosing an AI model: one prompt, 11 models, different results",
+      "url": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
+      "hot": "25"
     },
     {
       "rank": 3,
-      "title": "DeepSeek V4 Pro 0813",
-      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
-      "hot": "951"
+      "title": "ChatGPT Desktop (Codex Desktop) for Linux",
+      "url": "https://openai.com/codex/",
+      "hot": "288"
     },
     {
       "rank": 4,
-      "title": "Tracking down the 16-year-old WAL-reset SQLite bug",
-      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
-      "hot": "1072"
+      "title": "Picking berries is my meditation",
+      "url": "https://www.tsoon.com/posts/picking-berries-meditation/",
+      "hot": "48"
     },
     {
       "rank": 5,
-      "title": "Qwen3.8-2.4T",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "643"
+      "title": "The lattice of sets of natural numbers is rich (2021)",
+      "url": "https://jdh.hamkins.org/the-lattice-of-sets-of-natural-numbers-is-rich/",
+      "hot": "71"
     },
     {
       "rank": 6,
-      "title": "Delta",
-      "url": "https://zed.dev/blog/introducing-delta",
-      "hot": "569"
+      "title": "Better Gaussian Splatting in Julia",
+      "url": "https://pxl-th.github.io/blog/better-gs-julia/",
+      "hot": "25"
     },
     {
       "rank": 7,
-      "title": "Principia Mathematica is modern and insightful",
-      "url": "https://okmij.org/ftp/Computation/Impressions/PrincipiaMathematica.html",
-      "hot": "175"
+      "title": "My Rules for Using Spreadsheets",
+      "url": "https://leancrew.com/all-this/2026/08/my-rules-for-using-spreadsheets/",
+      "hot": "7"
     },
     {
       "rank": 8,
-      "title": "Claude users are mad that Anthropic's new watermarks will catch them using it",
-      "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
-      "hot": "35"
+      "title": "DeepSeek V4 Pro 0813",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "hot": "984"
     },
     {
       "rank": 9,
-      "title": "Antiqua–Fraktur dispute",
-      "url": "https://en.wikipedia.org/wiki/Antiqua%E2%80%93Fraktur_dispute",
-      "hot": "107"
+      "title": "Tracking down the 16-year-old WAL-reset SQLite bug",
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "hot": "1118"
     },
     {
       "rank": 10,
-      "title": "The punched card tabulator",
-      "url": "https://www.ibm.com/history/punched-card-tabulator",
-      "hot": "18"
+      "title": "Qwen3.8-2.4T",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "hot": "680"
     }
   ]
 }
