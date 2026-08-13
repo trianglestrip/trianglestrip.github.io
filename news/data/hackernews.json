@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-13T09:21:41+00:00",
+  "updated_at": "2026-08-13T11:23:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "ChatGPT Desktop (Codex Desktop) for Linux",
       "url": "https://openai.com/codex/",
-      "hot": "100"
+      "hot": "186"
     },
     {
       "rank": 2,
-      "title": "DeepSeek V4 Pro 0813",
-      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
-      "hot": "916"
+      "title": "The lattice of sets of natural numbers is rich",
+      "url": "https://jdh.hamkins.org/the-lattice-of-sets-of-natural-numbers-is-rich/",
+      "hot": "29"
     },
     {
       "rank": 3,
-      "title": "Tracking down the 16-year-old WAL-reset SQLite bug",
-      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
-      "hot": "1024"
+      "title": "DeepSeek V4 Pro 0813",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "hot": "951"
     },
     {
       "rank": 4,
-      "title": "Qwen3.8-2.4T",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "616"
+      "title": "Tracking down the 16-year-old WAL-reset SQLite bug",
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "hot": "1072"
     },
     {
       "rank": 5,
-      "title": "Delta",
-      "url": "https://zed.dev/blog/introducing-delta",
-      "hot": "544"
+      "title": "Qwen3.8-2.4T",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "hot": "643"
     },
     {
       "rank": 6,
-      "title": "Principia Mathematica is modern and insightful",
-      "url": "https://okmij.org/ftp/Computation/Impressions/PrincipiaMathematica.html",
-      "hot": "148"
+      "title": "Delta",
+      "url": "https://zed.dev/blog/introducing-delta",
+      "hot": "569"
     },
     {
       "rank": 7,
-      "title": "Antiqua–Fraktur dispute",
-      "url": "https://en.wikipedia.org/wiki/Antiqua%E2%80%93Fraktur_dispute",
-      "hot": "81"
+      "title": "Principia Mathematica is modern and insightful",
+      "url": "https://okmij.org/ftp/Computation/Impressions/PrincipiaMathematica.html",
+      "hot": "175"
     },
     {
       "rank": 8,
-      "title": "The punched card tabulator",
-      "url": "https://www.ibm.com/history/punched-card-tabulator",
-      "hot": "9"
+      "title": "Claude users are mad that Anthropic's new watermarks will catch them using it",
+      "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
+      "hot": "35"
     },
     {
       "rank": 9,
-      "title": "Mushroom behind 'tiny people' hallucinations identified",
-      "url": "https://phys.org/news/2026-08-qa-mushroom-tiny-people-hallucinations.html",
-      "hot": "137"
+      "title": "Antiqua–Fraktur dispute",
+      "url": "https://en.wikipedia.org/wiki/Antiqua%E2%80%93Fraktur_dispute",
+      "hot": "107"
     },
     {
       "rank": 10,
-      "title": "2026 Eclipse Webcams",
-      "url": "https://jonty.github.io/2026_eclipse_webcams/",
-      "hot": "485"
+      "title": "The punched card tabulator",
+      "url": "https://www.ibm.com/history/punched-card-tabulator",
+      "hot": "18"
     }
   ]
 }
