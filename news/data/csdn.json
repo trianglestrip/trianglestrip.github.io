@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-13T06:43:47+00:00",
+  "updated_at": "2026-08-13T09:21:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "一台安卓手机能跑AI Agent到什么程度？",
       "url": "https://blog.csdn.net/qq_61024956/article/details/163665196",
-      "hot": "21808"
+      "hot": "21792"
     },
     {
       "rank": 2,
       "title": "【Cookie与Session】无状态 HTTP 如何“记住“你？——从 Cookie 协议到分布式 Session",
       "url": "https://blog.csdn.net/2302_80243065/article/details/163692595",
-      "hot": "16833"
+      "hot": "15881"
     },
     {
       "rank": 3,
       "title": "CentOS部署Kafka：ZooKeeper启动、消息测试与远程调试",
       "url": "https://blog.csdn.net/SDFsoul/article/details/163671162",
-      "hot": "16273"
+      "hot": "15307"
     },
     {
       "rank": 4,
-      "title": "SQL Server 迁移到 KingbaseES：一次复杂 BI 查询的性能实测",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163695754",
-      "hot": "13538"
+      "title": "AIRI 完全指南：Electron + Capacitor 多端自托管 LLM 虚拟角色",
+      "url": "https://blog.csdn.net/zhangay1998/article/details/163082242",
+      "hot": "12933"
     },
     {
       "rank": 5,
-      "title": "极空间部署 Dashlet：搭建自托管导航页并实现远程访问",
-      "url": "https://blog.csdn.net/m0_68390957/article/details/163686357",
-      "hot": "13176"
+      "title": "SQL Server 迁移到 KingbaseES：一次复杂 BI 查询的性能实测",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163695754",
+      "hot": "12275"
     },
     {
       "rank": 6,
-      "title": "AIRI 完全指南：Electron + Capacitor 多端自托管 LLM 虚拟角色",
-      "url": "https://blog.csdn.net/zhangay1998/article/details/163082242",
-      "hot": "13122"
+      "title": "DeepSeek Harness内测开启，AI Agent竞争升级",
+      "url": "https://blog.csdn.net/qq_19309473/article/details/163677009",
+      "hot": "11636"
     },
     {
       "rank": 7,
-      "title": "Zookeeper - Java API 实现节点的创建与删除开发",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157688811",
-      "hot": "12894"
+      "title": "极空间部署 Dashlet：搭建自托管导航页并实现远程访问",
+      "url": "https://blog.csdn.net/m0_68390957/article/details/163686357",
+      "hot": "11605"
     },
     {
       "rank": 8,
-      "title": "DeepSeek Harness内测开启，AI Agent竞争升级",
-      "url": "https://blog.csdn.net/qq_19309473/article/details/163677009",
-      "hot": "12445"
+      "title": "Linux 从0到1部署Jenkins + Docker 实现CICD自动化实战详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162806000",
+      "hot": "11433"
     },
     {
       "rank": 9,
-      "title": "Linux 从0到1部署Jenkins + Docker 实现CICD自动化实战详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162806000",
-      "hot": "12284"
+      "title": "腾讯云AISkills原来可以这么玩？使用WorkBuddy结合混元生3D快速生成3D的美利达自行车模型亲身实践指南",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163645735",
+      "hot": "11261"
     },
     {
       "rank": 10,
-      "title": "腾讯云AISkills原来可以这么玩？使用WorkBuddy结合混元生3D快速生成3D的美利达自行车模型亲身实践指南",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163645735",
-      "hot": "12123"
+      "title": "基于DolphinDB的生产数据分析与优化实战——从OEE到成本的全链路分析体系",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/163707387",
+      "hot": "11089"
     }
   ]
 }
