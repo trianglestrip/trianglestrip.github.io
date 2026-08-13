@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-13T03:19:07+00:00",
+  "updated_at": "2026-08-13T06:43:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "一台安卓手机能跑AI Agent到什么程度？",
       "url": "https://blog.csdn.net/qq_61024956/article/details/163665196",
-      "hot": "20247"
+      "hot": "21808"
     },
     {
       "rank": 2,
-      "title": "CentOS部署Kafka：ZooKeeper启动、消息测试与远程调试",
-      "url": "https://blog.csdn.net/SDFsoul/article/details/163671162",
-      "hot": "17040"
+      "title": "【Cookie与Session】无状态 HTTP 如何“记住“你？——从 Cookie 协议到分布式 Session",
+      "url": "https://blog.csdn.net/2302_80243065/article/details/163692595",
+      "hot": "16833"
     },
     {
       "rank": 3,
-      "title": "【《智能驾驶拆解笔记：老周唠透车圈AI》第5篇】",
-      "url": "https://blog.csdn.net/weixin_62244995/article/details/162998983",
-      "hot": "15782"
+      "title": "CentOS部署Kafka：ZooKeeper启动、消息测试与远程调试",
+      "url": "https://blog.csdn.net/SDFsoul/article/details/163671162",
+      "hot": "16273"
     },
     {
       "rank": 4,
-      "title": "Zookeeper - Java API 实现节点的创建与删除开发",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157688811",
-      "hot": "15428"
+      "title": "SQL Server 迁移到 KingbaseES：一次复杂 BI 查询的性能实测",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163695754",
+      "hot": "13538"
     },
     {
       "rank": 5,
-      "title": "SQL Server 迁移到 KingbaseES：一次复杂 BI 查询的性能实测",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163695754",
-      "hot": "14642"
+      "title": "极空间部署 Dashlet：搭建自托管导航页并实现远程访问",
+      "url": "https://blog.csdn.net/m0_68390957/article/details/163686357",
+      "hot": "13176"
     },
     {
       "rank": 6,
-      "title": "极空间部署 Dashlet：搭建自托管导航页并实现远程访问",
-      "url": "https://blog.csdn.net/m0_68390957/article/details/163686357",
-      "hot": "14351"
+      "title": "AIRI 完全指南：Electron + Capacitor 多端自托管 LLM 虚拟角色",
+      "url": "https://blog.csdn.net/zhangay1998/article/details/163082242",
+      "hot": "13122"
     },
     {
       "rank": 7,
-      "title": "DeepSeek Harness内测开启，AI Agent竞争升级",
-      "url": "https://blog.csdn.net/qq_19309473/article/details/163677009",
-      "hot": "13136"
+      "title": "Zookeeper - Java API 实现节点的创建与删除开发",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157688811",
+      "hot": "12894"
     },
     {
       "rank": 8,
-      "title": "【Linux网络】从0手写Reactor反应堆（三）：代码收尾、连接生命周期管理与多Reactor扩展思路",
-      "url": "https://blog.csdn.net/2503_91389547/article/details/162089499",
-      "hot": "11930"
+      "title": "DeepSeek Harness内测开启，AI Agent竞争升级",
+      "url": "https://blog.csdn.net/qq_19309473/article/details/163677009",
+      "hot": "12445"
     },
     {
       "rank": 9,
-      "title": "CentOS部署Jenkins：结合cpolar实现Webhook自动构建与发布",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/163664797",
-      "hot": "11507"
+      "title": "Linux 从0到1部署Jenkins + Docker 实现CICD自动化实战详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162806000",
+      "hot": "12284"
     },
     {
       "rank": 10,
       "title": "腾讯云AISkills原来可以这么玩？使用WorkBuddy结合混元生3D快速生成3D的美利达自行车模型亲身实践指南",
       "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163645735",
-      "hot": "11480"
+      "hot": "12123"
     }
   ]
 }

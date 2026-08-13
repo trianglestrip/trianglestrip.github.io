@@ -1,26 +1,26 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-12T23:56:14+00:00",
+  "updated_at": "2026-08-13T06:44:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "552"
+      "hot": "558"
     },
     {
       "rank": 2,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "121"
+      "hot": "122"
     },
     {
       "rank": 3,
       "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
       "url": "https://huggingface.co/papers/2608.04205",
-      "hot": "33"
+      "hot": "34"
     },
     {
       "rank": 4,
