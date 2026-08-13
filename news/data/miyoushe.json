@@ -1,68 +1,67 @@
 {
   "source": "miyoushe",
   "title": "米游社",
-  "updated_at": "2026-08-13T03:22:35+00:00",
-  "fetch_ok": false,
-  "error": "Command '['hotboard', 'miyoushe', '--format', 'json']' timed out after 60 seconds",
+  "updated_at": "2026-08-13T05:11:07+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "冬狩夜巡",
+      "url": "https://www.miyoushe.com/ys/article/77414375",
+      "hot": ""
+    },
+    {
+      "rank": 2,
       "title": "欢迎来到无神怜爱的雪国——至冬",
       "url": "https://www.miyoushe.com/ys/article/77381976",
       "hot": ""
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "「初雪将至时」特别活动",
       "url": "https://www.miyoushe.com/ys/article/77366233",
       "hot": ""
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "7.0版本活动祈愿预告第一期",
       "url": "https://www.miyoushe.com/ys/article/77350703",
       "hot": ""
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "《原神》角色预告-「奥黛塔：天真的挽歌」",
       "url": "https://www.miyoushe.com/ys/article/77344384",
       "hot": ""
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "米卡生日快乐 | 看着它和小鸟们一块起飞，就像在比赛一样…",
       "url": "https://www.miyoushe.com/ys/article/77344383",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "惬意的时光，至冬见...｜「阿蕾奇诺」·近闻",
       "url": "https://www.miyoushe.com/ys/article/77328412",
       "hot": ""
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "「无神怜爱的雪国」7.0版本活动速递第一期",
       "url": "https://www.miyoushe.com/ys/article/77322458",
       "hot": ""
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "《原神》角色预告-「阿罗夏：冬狩之围」",
       "url": "https://www.miyoushe.com/ys/article/77322296",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "安柏生日快乐 | 说起来，飞行还真不是件容易的事呢！",
       "url": "https://www.miyoushe.com/ys/article/77322293",
-      "hot": ""
-    },
-    {
-      "rank": 10,
-      "title": "7.0版本「无神怜爱的雪国」内容专题页上线！",
-      "url": "https://www.miyoushe.com/ys/article/77322292",
       "hot": ""
     }
   ]
