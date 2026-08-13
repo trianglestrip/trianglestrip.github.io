@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-13T19:33:39+00:00",
+  "updated_at": "2026-08-13T21:37:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Gemini 3.7 Flash",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
-      "hot": "314"
+      "hot": "469"
     },
     {
       "rank": 2,
       "title": "Accelerating GPT-5.6 Sol Ultrafast",
       "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
-      "hot": "137"
+      "hot": "286"
     },
     {
       "rank": 3,
-      "title": "Choose Boring Technology (2015)",
-      "url": "https://mcfunley.com/choose-boring-technology",
-      "hot": "102"
+      "title": "NP-Overrated",
+      "url": "https://gruhn.me/blog/2026-08-13/",
+      "hot": "54"
     },
     {
       "rank": 4,
       "title": "Donkey.bas is 45 Years Old – 131 line of Glory",
       "url": "https://donkeybas.com/",
-      "hot": "69"
+      "hot": "137"
     },
     {
       "rank": 5,
       "title": "Mistral OCR 4.1",
       "url": "https://docs.mistral.ai/models/ocr-4-1",
-      "hot": "127"
+      "hot": "198"
     },
     {
       "rank": 6,
       "title": "Spaghettifying DRAM",
       "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
-      "hot": "339"
+      "hot": "424"
     },
     {
       "rank": 7,
-      "title": "Where did the old web go? We followed 657,607 links to find out",
-      "url": "https://0.mk/blog/link-rot",
-      "hot": "44"
+      "title": "Choose Boring Technology (2015)",
+      "url": "https://mcfunley.com/choose-boring-technology",
+      "hot": "169"
     },
     {
       "rank": 8,
-      "title": "Tocharian Online",
-      "url": "https://lrc.la.utexas.edu/eieol/tokol/0",
-      "hot": "32"
+      "title": "Understanding is the new bottleneck",
+      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
+      "hot": "74"
     },
     {
       "rank": 9,
-      "title": "DeepSeek Harness developer preview",
-      "url": "https://deepseek.com/harness/en/",
-      "hot": "463"
+      "title": "How Gödel's Proof Works (2020)",
+      "url": "https://www.quantamagazine.org/how-godels-proof-works-20200714/",
+      "hot": "36"
     },
     {
       "rank": 10,
-      "title": "Single log line is 49KB+ (ext4) / 110KB+ (btrfs) of systemd-journald disk writes",
-      "url": "https://github.com/systemd/systemd/issues/40262",
-      "hot": "7"
+      "title": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
+      "url": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
+      "hot": "31"
     }
   ]
 }
