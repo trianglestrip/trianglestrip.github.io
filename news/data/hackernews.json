@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-13T21:37:15+00:00",
+  "updated_at": "2026-08-13T23:54:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Gemini 3.7 Flash",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
-      "hot": "469"
+      "hot": "558"
     },
     {
       "rank": 2,
       "title": "Accelerating GPT-5.6 Sol Ultrafast",
       "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
-      "hot": "286"
+      "hot": "383"
     },
     {
       "rank": 3,
       "title": "NP-Overrated",
       "url": "https://gruhn.me/blog/2026-08-13/",
-      "hot": "54"
+      "hot": "109"
     },
     {
       "rank": 4,
-      "title": "Donkey.bas is 45 Years Old – 131 line of Glory",
-      "url": "https://donkeybas.com/",
-      "hot": "137"
+      "title": "Understanding is the new bottleneck",
+      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
+      "hot": "153"
     },
     {
       "rank": 5,
-      "title": "Mistral OCR 4.1",
-      "url": "https://docs.mistral.ai/models/ocr-4-1",
-      "hot": "198"
+      "title": "Donkey.bas is 45 Years Old – 131 line of Glory",
+      "url": "https://donkeybas.com/",
+      "hot": "173"
     },
     {
       "rank": 6,
-      "title": "Spaghettifying DRAM",
-      "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
-      "hot": "424"
+      "title": "Mistral OCR 4.1",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "hot": "233"
     },
     {
       "rank": 7,
-      "title": "Choose Boring Technology (2015)",
-      "url": "https://mcfunley.com/choose-boring-technology",
-      "hot": "169"
+      "title": "DeepSeek Harness developer preview",
+      "url": "https://deepseek.com/harness/en/",
+      "hot": "531"
     },
     {
       "rank": 8,
-      "title": "Understanding is the new bottleneck",
-      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
-      "hot": "74"
+      "title": "Spaghettifying DRAM",
+      "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+      "hot": "469"
     },
     {
       "rank": 9,
-      "title": "How Gödel's Proof Works (2020)",
-      "url": "https://www.quantamagazine.org/how-godels-proof-works-20200714/",
-      "hot": "36"
+      "title": "Choose Boring Technology (2015)",
+      "url": "https://mcfunley.com/choose-boring-technology",
+      "hot": "219"
     },
     {
       "rank": 10,
-      "title": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
-      "url": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
-      "hot": "31"
+      "title": "Finite State Machines in Forth (1994)",
+      "url": "https://www.forth.org/literature/noble.html",
+      "hot": "30"
     }
   ]
 }
