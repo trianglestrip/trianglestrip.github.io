@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-12T23:56:04+00:00",
+  "updated_at": "2026-08-13T03:19:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "与运行时无关的 AI 工作流：一种兼顾生产环境稳定性和快速评估迭代的模式",
+      "url": "https://www.infoq.cn/article/Za8vaFWPCM7LtuRfhDmD?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 13 Aug 2026 11:06:51 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "智象未来 (HiDream.ai)算法科学家潘滢炜博士确认出席AICon深圳，将分享“从 Token 预测到状态预测：迈向世界模型的原生全模态之路”",
+      "url": "https://www.infoq.cn/article/9d9Oik3uZpqfjbfElZaq?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 13 Aug 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 3,
       "title": "从亚百毫秒级启动到生产级部署，腾讯云为何重构 Agent 沙箱？",
       "url": "https://www.infoq.cn/article/KwZX2bLcaHRjuLG95vHI?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 18:07:43 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Vercel 发布新语言 Zero：代码不是写给人看的，而是写给 AI 的",
       "url": "https://www.infoq.cn/article/KEq5kQG53vxPd0bXCY7y?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 17:22:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "别再所有人平分AI算力：顶级模型给资深工程师才省钱，新人刷题式成长已失效",
       "url": "https://www.infoq.cn/article/YBCpst8secs3xWqZwWLe?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 17:19:22 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "面壁智能正式启动IPO：中信证券辅导，端侧模型走向资本市场",
       "url": "https://www.infoq.cn/article/hMG80lZUX1kaJWpr58g1?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 16:48:13 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "SkiaSharp 4 连发多个版本：GPU 渲染提速，WebAssembly 支持升级",
       "url": "https://www.infoq.cn/article/pKprBfc9MPLZVaNpMQgg?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 15:28:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "群青智能联合创始人&CEO 吴哲明博士确认出席AICon深圳，将分享“从真实产线定义智能——工业具身智能的物理 AI 闭环”",
       "url": "https://www.infoq.cn/article/b1V6WF6iUajJpND8VmCE?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 14:25:14 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "千条广告“抢”一个 30 秒位置，平台如何实时做出选择？",
       "url": "https://www.infoq.cn/article/LDrAypWCIbNuL3XS30PE?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 13:30:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "DoorDash使用Envoy和Valkey构建了1.5M RPS的代理缓存，可用性达99.99999%",
       "url": "https://www.infoq.cn/article/4pXftxRySRf5FB5hJK9o?utm_source=rss&utm_medium=article",
       "hot": "Wed, 12 Aug 2026 11:32:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "小扎万字长文炮轰闭源：蒸馏无罪，Meta 正式重回开源模型路线",
-      "url": "https://www.infoq.cn/article/9sy33cA91Fp8z5mlOvNu?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 12 Aug 2026 10:43:48 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Cloudflare发现了hyper HTTP/1实现中的竞态条件问题并进行了修复",
-      "url": "https://www.infoq.cn/article/FbaA82tNKyG25aHVejHU?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 12 Aug 2026 10:28:04 GMT"
     }
   ]
 }

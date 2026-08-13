@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-12T23:55:57+00:00",
+  "updated_at": "2026-08-13T03:19:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【鸿蒙实战】第 05 篇：鸿蒙网络请求架构实战——@ohos.net.http 到 Axios 封装、拦截器与统一错误处理",
-      "url": "https://ost.51cto.com/posts/54949",
-      "hot": "摘要:天气查询App上线前，我遇到一个诡异问题：真机上所有请求全部失败，Previewer里却一切正常。排查到最后，根因既不是代码也不是网络，..."
+      "title": "简历上写精通 Raft算法，为什么经常被淘汰？",
+      "url": "https://www.51cto.com/article/852869.html",
+      "hot": "Leader 选举的核心流程为：Candidate 发起选举，任期编号+1，向其他节点发起 RequestVote RPC 投票请求，若获得大多数投票后成为 Leader；若收到 Leader 的心跳包，则 Candidate 恢复成 Follower 角色。"
     },
     {
       "rank": 2,
-      "title": "《置身谷内》！Jeff Dean上顶会自曝离职现场：被1500人围堵",
-      "url": "https://www.51cto.com/article/852752.html",
-      "hot": "这样耳熟能详的大佬，本来不必多做介绍。但要解释离职的空前盛况，还得回头看看他为谷歌留下了什么。"
+      "title": "滴滴一面：怎么做好 Harness？大部分面试者的回答只停留在怎么用，没有回答的更系统",
+      "url": "https://www.51cto.com/article/852865.html",
+      "hot": "在最近某大厂的一面真题里面试官就直接抛出了一个挺前沿的考点，就是问 Harness Engineering（安全绳/缰绳工程）具体怎么做。这道题现在已经是大模型相关岗位面试的经典必考题之一了。那今天我们就来把这套方法论给讲透了，帮你在回答这道题的时候能够更有深度一些。"
     },
     {
       "rank": 3,
-      "title": "文生图Scaling新变量，被字节Seed团队发现了",
-      "url": "https://www.51cto.com/article/852749.html",
-      "hot": "团队提出 Structured Prompt，并从 Diffusability 与 Promptability 两侧共同提升文本条件，最终在复杂组合、推理和世界知识生成任务上取得显著提升。"
+      "title": "肉眼根本看不见！一文看懂 Claude 是怎么在你的文字里偷偷“做手脚”的！",
+      "url": "https://www.51cto.com/article/852864.html",
+      "hot": "只要在 Claude 的字里行间打上这种微观的统计学水印，A 社就能在全网爬虫数据里快速“抓包”——哪家模型用了我的数据，检测工具一测一个准，分分钟就能递上律师函。"
     },
     {
       "rank": 4,
-      "title": "小艺开放平台Skill开发：从创建到真机测试与发布",
-      "url": "https://ost.51cto.com/posts/54942",
-      "hot": "大家好，今天跟大家分享一下小艺开放平台的Skill开发。Skill是AIAgent可以调用的标准化能力单元，可以把一项相对独立的能力封装起来，供Age..."
+      "title": "给机器人一个会预测未来的Critic，VLA强化学习直接起飞",
+      "url": "https://www.51cto.com/article/852863.html",
+      "hot": "近期，OpenMOSS 团队开源了 World Critic Model（WCM）。它提出了一个直接却常被忽略的问题：机器人控制天然是一个部分可观测问题。既然一帧画面看不清动态，为什么 Critic 还要“凭一帧图打分”？"
     },
     {
       "rank": 5,
-      "title": "Codex每次重连五次？一招彻底解决！",
-      "url": "https://www.51cto.com/article/852636.html",
-      "hot": "这两天用 Codex，我碰到一个特别磨人的问题。在刚开始使用 Codex 的时候，或者代码刚写到一半，底部突然开始转圈。"
+      "title": "Cloudflare财报会上刚认了，现在点开你文章的，一半可能不是人",
+      "url": "https://www.51cto.com/article/852862.html",
+      "hot": "Cloudflare的CEO马修·普林斯（Matthew Prince），在今年8月的第二季度财报电话会上说了一句挺重的话。他说，从今年第二季度开始，穿过Cloudflare这张网的所有流量里，超过一半已经不是人类产生的了。他原话大概是，人类历史上第一次，在他们网络里流转的流量，人类已经不是多数。"
     },
     {
       "rank": 6,
-      "title": "AI 编程：建立变更契约，让需求迭代可追溯不返工，PRD 和原型不再整份重写",
-      "url": "https://www.51cto.com/article/852725.html",
-      "hot": "统一增量入口，让变更可见，让下游知道改哪、不改哪——这件事，和统一第一份 PRD 入口一样，值得自己先做。这个技能，后续还是需要在真实项目实践中进行多次迭代优化的。"
+      "title": "720美元套出A社死藏的Opus原始思维链，还是Haiku泄露的，GPT/Gemini也中招",
+      "url": "https://www.51cto.com/article/852861.html",
+      "hot": "把大模型返回的加密推理块，转手扔给同一家公司的小模型，然后让小模型复述。结果，旗舰模型藏得严严实实的内心戏，就这么被自家小弟抖了出来。"
     },
     {
       "rank": 7,
-      "title": "OpenAI花470亿大规模回购股票，高管火速跳车离场！",
-      "url": "https://www.51cto.com/article/852724.html",
-      "hot": "一个在 OpenAI 经历了 8 年、一场宫斗和百亿级融资的人，在公司估值 8520 亿美元即将 IPO 时选择出走。"
+      "title": "从一次就医想到 AI 医疗：机器能否真正走进诊室和手术室？",
+      "url": "https://www.51cto.com/article/852860.html",
+      "hot": "这篇文章不打算给出一个非黑即白的答案。它只是我在一次疲劳就医之后，对 AI 医疗和具身智能前景的一些个人思考。"
     },
     {
       "rank": 8,
-      "title": "看不见的地址翻译：虚拟内存、TLB 和 NUMA 怎样拖慢高性能程序？",
-      "url": "https://www.51cto.com/article/852723.html",
-      "hot": "虚拟内存、TLB、页表、NUMA，这些概念听起来像操作系统课里的内容，但它们早已进入高性能计算的主战场。"
+      "title": "梁文锋突袭马斯克！DeepSeek V4 Pro对战Grok 4.6，首测夯爆了",
+      "url": "https://www.51cto.com/article/852859.html",
+      "hot": "让模型能在长任务里持续调用工具、修改代码、验证结果，最后交付一个真正能用的成品。"
     },
     {
       "rank": 9,
-      "title": "我攒的AI技能包，终于不用在三个文件夹里各存一份了",
-      "url": "https://www.51cto.com/article/852722.html",
-      "hot": "Vercel牵头，拉着亚马逊（AWS）、微软旗下的GitHub、微软自己、OpenAI，还有我现在正敲着这篇稿子用的这个工具Cursor（背后公司叫Anysphere），坐一块儿，真把这件事标准化了。"
+      "title": "即插即攻：将 USB 自动安装变成 Windows 11 的完整系统接管",
+      "url": "https://www.51cto.com/article/852817.html",
+      "hot": "每当将USB设备插入Windows计算机时，操作系统可能会从Microsoft静默下载一个软件包，并以 NT AUTHORITY\\SYSTEM 权限执行供应商代码。"
     },
     {
       "rank": 10,
-      "title": "阿里开源了一套让 Skill 从\"能用\"到\"可交付\"的完整方案",
-      "url": "https://www.51cto.com/article/852721.html",
-      "hot": "阿里巴巴最近开源的 https://github.com/alibaba/skill-up，正是为了解决这个痛点。它的核心理念很简单：把 Agent Skill 当成一件需要持续回归的交付物，而不是一份写完就放那的说明文档。"
+      "title": "Agentic-RL篇：WebThinker：让大推理模型在思考过程中自主联网深搜并即时写报告",
+      "url": "https://www.51cto.com/article/852858.html",
+      "hot": "大推理模型（LRM，如 OpenAI-o1、DeepSeek-R1）通过长链路思维在数、码、科学等任务上表现突出，但其知识被冻结在静态参数中。一旦遇到需要实时、跨网页综合信息的复杂研究型问题，纯靠内部知识的模型既搜不到最新事实，也无法产出结构完备、论据充分的研究报告。"
     }
   ]
 }
