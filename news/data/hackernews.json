@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-13T13:40:49+00:00",
+  "updated_at": "2026-08-13T16:31:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Deutsche Bank becomes first foreign yuan clearing bank in Europe",
-      "url": "https://tradersunion.com/news/central-banks/show/2973571-deutsche-bank-becomes/",
-      "hot": "164"
+      "title": "DeepSeek Harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "hot": "353"
     },
     {
       "rank": 2,
-      "title": "Choosing an AI model: one prompt, 11 models, different results",
-      "url": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
-      "hot": "25"
+      "title": "Gloomberb",
+      "url": "https://gloom.sh/",
+      "hot": "194"
     },
     {
       "rank": 3,
-      "title": "ChatGPT Desktop (Codex Desktop) for Linux",
-      "url": "https://openai.com/codex/",
-      "hot": "288"
+      "title": "Deutsche Bank becomes first foreign yuan clearing bank in Europe",
+      "url": "https://tradersunion.com/news/central-banks/show/2973571-deutsche-bank-becomes/",
+      "hot": "290"
     },
     {
       "rank": 4,
-      "title": "Picking berries is my meditation",
-      "url": "https://www.tsoon.com/posts/picking-berries-meditation/",
-      "hot": "48"
+      "title": "Spaghettifying DRAM",
+      "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+      "hot": "180"
     },
     {
       "rank": 5,
-      "title": "The lattice of sets of natural numbers is rich (2021)",
-      "url": "https://jdh.hamkins.org/the-lattice-of-sets-of-natural-numbers-is-rich/",
-      "hot": "71"
+      "title": "Come for ENIAC, Stay for UNIVAC and Skeduflo",
+      "url": "https://uniqueatpenn.wordpress.com/2026/08/05/come-for-eniac-stay-for-univac-and-skeduflo/",
+      "hot": "32"
     },
     {
       "rank": 6,
-      "title": "Better Gaussian Splatting in Julia",
-      "url": "https://pxl-th.github.io/blog/better-gs-julia/",
-      "hot": "25"
+      "title": "Kubernetes on Oxide: How customer needs shaped our integrations",
+      "url": "https://oxide.computer/blog/kubernetes-on-oxide",
+      "hot": "55"
     },
     {
       "rank": 7,
-      "title": "My Rules for Using Spreadsheets",
-      "url": "https://leancrew.com/all-this/2026/08/my-rules-for-using-spreadsheets/",
-      "hot": "7"
+      "title": "We eliminated 1,400 CVEs in NanoClaw's container images",
+      "url": "https://www.echo.ai/blog/echo-xnanoclaw-under-the-hood",
+      "hot": "29"
     },
     {
       "rank": 8,
-      "title": "DeepSeek V4 Pro 0813",
-      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
-      "hot": "984"
+      "title": "Codex in ChatGPT desktop app for Linux is now in preview",
+      "url": "https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027",
+      "hot": "362"
     },
     {
       "rank": 9,
-      "title": "Tracking down the 16-year-old WAL-reset SQLite bug",
-      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
-      "hot": "1118"
+      "title": "Show HN: MCP Memory – Fast Agent Memory Using Google's OKF and SQLite FTS5",
+      "url": "https://github.com/fellowgeek/mcp-memory",
+      "hot": "35"
     },
     {
       "rank": 10,
-      "title": "Qwen3.8-2.4T",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "680"
+      "title": "I built a 500k-domain search engine for makers in a weekend for $10",
+      "url": "https://alexmorleyfinch.github.io/marlin/history/v1/article/the_birth.html",
+      "hot": "52"
     }
   ]
 }
