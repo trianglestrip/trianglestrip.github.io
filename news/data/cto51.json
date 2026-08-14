@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-13T23:54:26+00:00",
+  "updated_at": "2026-08-14T03:14:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS BindPopup实战手册：从图标提示到引导蒙层，一套完整的气泡解决方案",
-      "url": "https://ost.51cto.com/posts/55011",
-      "hot": "HarmonyOSBindPopup实战手册：从图标提示到引导蒙层，一套完整的气泡解决方案这篇文章就把我从&quot;被产品经理教做人&quot;到&quot;用BindPopup搞定一切气..."
+      "title": "自动化会话超人工！Ramp Inspect Agent 接入 CI/告警，实现 AI SRE 自主处理线上事故",
+      "url": "https://www.51cto.com/article/852995.html",
+      "hot": "工程师还没来得及输入第一句 Prompt，Agent 已经开始干活了。"
     },
     {
       "rank": 2,
-      "title": "鸿蒙Canvas渐变填充实战：从入门到精通，让你的图形告别\"塑料感\"",
-      "url": "https://ost.51cto.com/posts/55010",
-      "hot": "鸿蒙Canvas渐变填充实战：从入门到精通，让你的图形告别&quot;塑料感&quot;如果你也想让你的Canvas图形从&quot;平面色块&quot;升级为&quot;有质感的设计稿&quot;，那这篇文..."
+      "title": "Vue 最强动画库！120+ 动画组件，实现复杂动画效果！",
+      "url": "https://www.51cto.com/article/852993.html",
+      "hot": "如果你正在使用 Vue 或 Nuxt 框架开发项目，不妨尝试 InspiraUI。它能帮你提升开发效率、优化界面效果，让前端开发变得更轻松、更出彩。"
     },
     {
       "rank": 3,
-      "title": "GDB+AI 崩溃诊断：Core Dump 分析时间从 30 分钟降到 3 分钟",
-      "url": "https://www.51cto.com/article/852887.html",
-      "hot": "这份「GDB + AI 崩溃诊断」实战指南，包含完整代码和真实踩坑案例，帮你把 Core Dump 分析时间降下来。"
+      "title": "告别盲目 AI 运维！分级自治 SRE 自愈框架，彻底终结告警爆炸",
+      "url": "https://www.51cto.com/article/852992.html",
+      "hot": "一套面向自愈基础设施的渐进式自治实用框架，帮助 SRE 团队摆脱被动救火模式。"
     },
     {
       "rank": 4,
-      "title": "EFK+DeepSeek 实战：基于 Docker Compose 搭建智能日志根因分析平台",
-      "url": "https://www.51cto.com/article/852871.html",
-      "hot": "本文引入 AI 运维模式，借助 DeepSeek 对 EFK 采集到的异常信息进行智能分析，提升运维效率与质量。"
+      "title": "从零到一带你速通DeepSeek Harness",
+      "url": "https://www.51cto.com/article/852991.html",
+      "hot": "你用的Claude Code、Codex、Workbuddy这些，本质都是Harness，要跟模型比如Claude Fable 5、GPT 5.6-Sol这些搭配起来用才行，要不然就是个纯空壳。"
     },
     {
       "rank": 5,
-      "title": "简历上写精通 Raft算法，为什么经常被淘汰？",
-      "url": "https://www.51cto.com/article/852869.html",
-      "hot": "Leader 选举的核心流程为：Candidate 发起选举，任期编号+1，向其他节点发起 RequestVote RPC 投票请求，若获得大多数投票后成为 Leader；若收到 Leader 的心跳包，则 Candidate 恢复成 Follower 角色。"
+      "title": "不止做大模型， DeepSeek 悄悄放出 Harness，本地 Agent 有了新底座",
+      "url": "https://www.51cto.com/article/852988.html",
+      "hot": "当前为「开发者预览探索版」，框架功能持续迭代、接口存在频繁变更，存在破坏性更新，仅适用于技术学习、功能探索、Agent 预研实验，严禁直接用于生产环境。开源协议为 MIT，可自由体验、学习及实验性商用探索。"
     },
     {
       "rank": 6,
-      "title": "滴滴一面：怎么做好 Harness？大部分面试者的回答只停留在怎么用，没有回答的更系统",
-      "url": "https://www.51cto.com/article/852865.html",
-      "hot": "在最近某大厂的一面真题里面试官就直接抛出了一个挺前沿的考点，就是问 Harness Engineering（安全绳/缰绳工程）具体怎么做。这道题现在已经是大模型相关岗位面试的经典必考题之一了。那今天我们就来把这套方法论给讲透了，帮你在回答这道题的时候能够更有深度一些。"
+      "title": "你的 MCP Server 该升 2.0 了，无状态到底解决了什么？",
+      "url": "https://www.51cto.com/article/852985.html",
+      "hot": "我试了 MCP 官方 Java SDK，它目前没有适配 2.0 的无状态特性，跑起来直接 500。langchain4j 的相关集成 SDK 也没跟上。相比之下，TypeScript SDK 是四个 Tier 1 SDK 里最先适配 2026-07-28 规范的，​​createMcpHandler​​ 一行搞定。"
     },
     {
       "rank": 7,
-      "title": "肉眼根本看不见！一文看懂 Claude 是怎么在你的文字里偷偷“做手脚”的！",
-      "url": "https://www.51cto.com/article/852864.html",
-      "hot": "只要在 Claude 的字里行间打上这种微观的统计学水印，A 社就能在全网爬虫数据里快速“抓包”——哪家模型用了我的数据，检测工具一测一个准，分分钟就能递上律师函。"
+      "title": "一夜之间，GPT-5.6 Sol被OpenAI加速了14倍",
+      "url": "https://www.51cto.com/article/852984.html",
+      "hot": "8 月 14 日凌晨，OpenAI 联合 AI 芯片厂商 Cerebras 正式预览了其旗舰模型 GPT-5.6 Sol 的全新服务层级「超高速模式」（Ultrafast Mode）。"
     },
     {
       "rank": 8,
-      "title": "给机器人一个会预测未来的Critic，VLA强化学习直接起飞",
-      "url": "https://www.51cto.com/article/852863.html",
-      "hot": "近期，OpenMOSS 团队开源了 World Critic Model（WCM）。它提出了一个直接却常被忽略的问题：机器人控制天然是一个部分可观测问题。既然一帧画面看不清动态，为什么 Critic 还要“凭一帧图打分”？"
+      "title": "反向图灵测试！这个「纯手工大模型」，把网友聊崩了",
+      "url": "https://www.51cto.com/article/852983.html",
+      "hot": "最近，有人在旧金山买了一块广告牌，大张旗鼓地宣传一个叫 ChatTJB 的「全新大语言模型」。"
     },
     {
       "rank": 9,
-      "title": "Cloudflare财报会上刚认了，现在点开你文章的，一半可能不是人",
-      "url": "https://www.51cto.com/article/852862.html",
-      "hot": "Cloudflare的CEO马修·普林斯（Matthew Prince），在今年8月的第二季度财报电话会上说了一句挺重的话。他说，从今年第二季度开始，穿过Cloudflare这张网的所有流量里，超过一半已经不是人类产生的了。他原话大概是，人类历史上第一次，在他们网络里流转的流量，人类已经不是多数。"
+      "title": "七亿年薪留不住！余家辉离职Meta创业",
+      "url": "https://www.51cto.com/article/852982.html",
+      "hot": "刚刚，余家辉官宣离开Meta创业。从2025年6月底加入，到2026年8月14日宣布离开，满打满算一年零一个多月。"
     },
     {
       "rank": 10,
-      "title": "720美元套出A社死藏的Opus原始思维链，还是Haiku泄露的，GPT/Gemini也中招",
-      "url": "https://www.51cto.com/article/852861.html",
-      "hot": "把大模型返回的加密推理块，转手扔给同一家公司的小模型，然后让小模型复述。结果，旗舰模型藏得严严实实的内心戏，就这么被自家小弟抖了出来。"
+      "title": "DeepSeek的「自进化」蓝图，曝光了",
+      "url": "https://www.51cto.com/article/852981.html",
+      "hot": "全文围绕Cordis展开，这是黑鲸的核心，一个可以随意插拔的「乐高底板」。在这里，万物皆插件，万物可重组。"
     }
   ]
 }

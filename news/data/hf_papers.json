@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-13T20:07:08+00:00",
+  "updated_at": "2026-08-14T03:14:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "592"
+      "hot": "593"
     },
     {
       "rank": 2,
@@ -20,7 +20,7 @@
       "rank": 3,
       "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
       "url": "https://huggingface.co/papers/2608.04205",
-      "hot": "34"
+      "hot": "35"
     },
     {
       "rank": 4,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
-      "url": "https://huggingface.co/papers/1910.03771",
-      "hot": "27"
-    },
-    {
-      "rank": 7,
       "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
       "url": "https://huggingface.co/papers/2608.03974",
       "hot": "92"
     },
     {
-      "rank": 8,
-      "title": "VibeVoice Technical Report",
-      "url": "https://huggingface.co/papers/2508.19205",
-      "hot": "177"
+      "rank": 7,
+      "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
+      "url": "https://huggingface.co/papers/1910.03771",
+      "hot": "27"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "84"
     },
     {
-      "rank": 10,
-      "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
-      "url": "https://huggingface.co/papers/2509.22186",
+      "rank": 9,
+      "title": "VibeVoice Technical Report",
+      "url": "https://huggingface.co/papers/2508.19205",
       "hot": "177"
+    },
+    {
+      "rank": 10,
+      "title": "LTX-2: Efficient Joint Audio-Visual Foundation Model",
+      "url": "https://huggingface.co/papers/2601.03233",
+      "hot": "187"
     }
   ]
 }

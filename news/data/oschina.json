@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-13T23:54:30+00:00",
+  "updated_at": "2026-08-14T03:14:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "wastnet 与 Undertow 性能压测对比报告",
+      "url": "https://www.oschina.net/news/501928",
+      "hot": "Fri, 14 Aug 2026 10:15:05 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "深圳 39 岁程序员公司厕所内猝死，未获工伤认定",
+      "url": "https://www.oschina.net/news/501927",
+      "hot": "Fri, 14 Aug 2026 10:08:02 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "2026 年 7 月国产数据库大事记",
+      "url": "https://my.oschina.net/u/4559794/blog/19738539",
+      "hot": "Fri, 14 Aug 2026 10:02:09 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "DeepSeek Harness 正式开源：一切皆插件，Agent 框架的新玩法",
+      "url": "https://www.oschina.net/news/501925/deepseek-harness-developer-preview",
+      "hot": "Fri, 14 Aug 2026 10:00:14 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Solon AOT &amp; Native：三段式编译，从 Java 到原生可执行文件",
+      "url": "https://www.oschina.net/news/501924",
+      "hot": "Fri, 14 Aug 2026 09:32:56 +0800"
+    },
+    {
+      "rank": 6,
       "title": "DeepSeek-V4-Pro 正式版上线",
       "url": "https://www.oschina.net/news/501923",
       "hot": "Thu, 13 Aug 2026 19:31:34 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Zed 推出多人协作 AI 编程环境 “Delta”",
       "url": "https://www.oschina.net/news/501922",
       "hot": "Thu, 13 Aug 2026 19:03:03 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "深度测评 SpaceXAI 的 Grok 4.6：Agent 能力突出、成本效率成杀手锏",
       "url": "https://www.oschina.net/news/501921/grok-4-6-benchmarks-and-analysis",
       "hot": "Thu, 13 Aug 2026 18:39:09 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "关于公开征集“元社区”研发设计类工业软件共性技术资源的通知",
       "url": "https://www.oschina.net/news/501920",
       "hot": "Thu, 13 Aug 2026 17:35:30 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "轻量级运维极速引擎 OpsFlash v0.1.0 正式发布",
       "url": "https://www.oschina.net/news/501919",
       "hot": "Thu, 13 Aug 2026 16:55:08 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Qwen 团队开源 Qwen3.8-2.4T，首次将 Max 级模型开放给社区",
-      "url": "https://www.oschina.net/news/501918",
-      "hot": "Thu, 13 Aug 2026 16:50:00 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "xAI 发布 Grok 4.6，智能指数追平 GPT-5.6 Sol",
-      "url": "https://www.oschina.net/news/501917/grok-4-6",
-      "hot": "Thu, 13 Aug 2026 15:54:52 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "研究者发现可以从商业 LLM API 中窃取推理轨迹",
-      "url": "https://www.oschina.net/news/501916/stolen-thoughts",
-      "hot": "Thu, 13 Aug 2026 15:29:52 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "和平之翼代码生成器帆版本尝鲜版三，蛋糕商城示例哑数据模式代码生成",
-      "url": "https://www.oschina.net/news/501915",
-      "hot": "Thu, 13 Aug 2026 15:26:59 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "DeepSeek V4 Pro 正式版 API 上线，增强 Agent 能力",
-      "url": "https://www.oschina.net/news/501912/deepseek-v4-pro-0813",
-      "hot": "Thu, 13 Aug 2026 10:53:13 +0800"
     }
   ]
 }
