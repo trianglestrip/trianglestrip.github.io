@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-14T16:10:54+00:00",
+  "updated_at": "2026-08-14T22:36:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "8314"
+      "hot": "8872"
     },
     {
       "rank": 2,
       "title": "meta-models/Muse-Glimmer-30B",
       "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "hot": "1483"
+      "hot": "1507"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen3.8-2.4T-A95B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "889"
+      "hot": "909"
     },
     {
       "rank": 4,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "3895"
+      "hot": "3916"
     },
     {
       "rank": 5,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "808"
+      "title": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "hot": "738"
     },
     {
       "rank": 6,
-      "title": "MiniMaxAI/MiniMax-Music3",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-      "hot": "588"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "848"
     },
     {
       "rank": 7,
-      "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "3367"
+      "title": "MiniMaxAI/MiniMax-Music3",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "hot": "645"
     },
     {
       "rank": 8,
-      "title": "unsloth/Muse-Glimmer-30B-GGUF",
-      "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF",
-      "hot": "407"
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "hot": "3380"
     },
     {
       "rank": 9,
       "title": "deepseek-ai/DeepSeek-V4-Pro-0813",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hot": "405"
+      "hot": "430"
     },
     {
       "rank": 10,
-      "title": "lightx2v/Minimax-h3-Turbo",
-      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
-      "hot": "485"
+      "title": "unsloth/Muse-Glimmer-30B-GGUF",
+      "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF",
+      "hot": "414"
     }
   ]
 }
