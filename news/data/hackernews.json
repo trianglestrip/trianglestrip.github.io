@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-14T11:26:46+00:00",
+  "updated_at": "2026-08-14T14:30:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "GLM-5.3: Frontier coding with emergent cyber capabilities",
       "url": "https://z.ai/blog/glm-5.3",
-      "hot": "564"
+      "hot": "764"
     },
     {
       "rank": 2,
-      "title": "DeepSeek peak/off-peak pricing update",
-      "url": "https://api-docs.deepseek.com/news/news260813/",
-      "hot": "44"
+      "title": "Don't classify, hallucinate!",
+      "url": "https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications",
+      "hot": "86"
     },
     {
       "rank": 3,
-      "title": "For the love of god stop using CPU limits in Kubernetes",
-      "url": "https://github.com/inevolin/k8s-cpu-limits-analyzed",
-      "hot": "29"
+      "title": "DeepSeek peak/off-peak pricing update",
+      "url": "https://api-docs.deepseek.com/news/news260813/",
+      "hot": "141"
     },
     {
       "rank": 4,
-      "title": "Major oil slick washes up on Iran coast after Hormuz ship strike",
-      "url": "https://www.bbc.com/news/articles/cr7kpdkg13zo",
-      "hot": "28"
+      "title": "In Australia, a Home Battery Boom Has Helped Cut Wholesale Power Prices in Half",
+      "url": "https://e360.yale.edu/digest/australia-home-batteries",
+      "hot": "18"
     },
     {
       "rank": 5,
-      "title": "Everyone talks about AI agents. This is what one looks from the inside",
-      "url": "https://pssah4.github.io/vault-operator/guides/capabilities",
-      "hot": "5"
+      "title": "Show HN: Lambdock – Wayland-native GTK4 dock with a live Lisp REPL",
+      "url": "https://codeberg.org/jjba23/lambdock",
+      "hot": "9"
     },
     {
       "rank": 6,
       "title": "Gemini 3.7 Flash",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
-      "hot": "871"
+      "hot": "914"
     },
     {
       "rank": 7,
-      "title": "Accelerating GPT-5.6 Sol Ultrafast",
-      "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
-      "hot": "629"
+      "title": "Why does Opus 5 feel worse to work with?",
+      "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
+      "hot": "296"
     },
     {
       "rank": 8,
-      "title": "Hello, me. It's been a while",
-      "url": "https://themech.net/2026/08/hello-me-its-been-a-while/",
-      "hot": "242"
+      "title": "Differential Heuristics",
+      "url": "https://www.redblobgames.com/blog/2026-08-08-differential-heuristics/",
+      "hot": "76"
     },
     {
       "rank": 9,
-      "title": "Show HN: C# Game Engine with its own scripting language and IDE",
-      "url": "https://github.com/ArcadeMakerSources/ArcadeMaker",
-      "hot": "55"
+      "title": "Protect Your Relays",
+      "url": "https://www.iroh.computer/blog/authenticated-relays",
+      "hot": "30"
     },
     {
       "rank": 10,
-      "title": "Why does Opus 5 feel worse to work with?",
-      "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
-      "hot": "78"
+      "title": "Hello, me. It's been a while",
+      "url": "https://themech.net/2026/08/hello-me-its-been-a-while/",
+      "hot": "311"
     }
   ]
 }
