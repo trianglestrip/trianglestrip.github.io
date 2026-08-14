@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-14T03:14:23+00:00",
+  "updated_at": "2026-08-14T06:18:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI 正在重塑故障处理流程，但棘手问题仍需人类解决",
+      "url": "https://www.infoq.cn/article/dxzigmlmI6BN4MWqYNI2?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 14 Aug 2026 13:54:40 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "走进 CTO 圆桌：构建 AI 原生组织的工程领导者经验分享 | 技术趋势",
+      "url": "https://www.infoq.cn/article/cFMO2oN8SyaR9vuUVUeQ?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 14 Aug 2026 11:30:09 GMT"
+    },
+    {
+      "rank": 3,
       "title": "AI 智能体开始参与交付，谁来证明它没有“动手脚”？IBM 与 Red Hat 给出一套新方案",
       "url": "https://www.infoq.cn/article/AJz1m242RSJLpXpsC1eg?utm_source=rss&utm_medium=article",
       "hot": "Fri, 14 Aug 2026 10:35:35 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Uno Platform 6.6 发布：Android 启动性能最高提升 61%",
       "url": "https://www.infoq.cn/article/s1HsC9y7mPAAXRN4VgYs?utm_source=rss&utm_medium=article",
       "hot": "Fri, 14 Aug 2026 10:20:50 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "涛思数据创始人&CEO陶建辉博士确认出席AICon深圳，将分享“大模型在工业场景落地的挑战与实践”",
       "url": "https://www.infoq.cn/article/Uiz6Ovab2eKT0T9q3Nzp?utm_source=rss&utm_medium=article",
       "hot": "Fri, 14 Aug 2026 10:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "从“开放模型”到“开放生态”，AI 开源进入下半场",
       "url": "https://www.infoq.cn/article/oEMzispbWkEP8TtKdUtf?utm_source=rss&utm_medium=article",
       "hot": "Thu, 13 Aug 2026 18:21:46 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "微软 AI Gateway 新层级引热议：统一治理背后的权限隐忧",
       "url": "https://www.infoq.cn/article/zYYwyGD3opKVwhTKYqaM?utm_source=rss&utm_medium=article",
       "hot": "Thu, 13 Aug 2026 17:46:14 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "软件不是文件：KDC 的知识工程主张",
       "url": "https://www.infoq.cn/article/N43yEF08JflwxI0S0Uec?utm_source=rss&utm_medium=article",
       "hot": "Thu, 13 Aug 2026 16:53:43 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "少开会、讲契约：平台团队如何降低跨团队协作成本？",
       "url": "https://www.infoq.cn/article/2uH7CYREyZV2VOqCesSV?utm_source=rss&utm_medium=article",
       "hot": "Thu, 13 Aug 2026 16:08:28 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "鸿蒙元服务的“体验密码” | 从京东到深圳万象城，看技术底层如何让服务直达用户",
       "url": "https://www.infoq.cn/article/idSeoMsu4WCrNlxYNC5H?utm_source=rss&utm_medium=article",
       "hot": "Thu, 13 Aug 2026 15:56:29 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "TanStack Table V9测试版：Tree-Shakable特性、TanStack Store状态与更低内存的使用",
-      "url": "https://www.infoq.cn/article/sw9Wgh5VPpzpuUmQvFo1?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 13 Aug 2026 14:23:01 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Azure Cosmos DB 严重漏洞曝光：一条查询可攻破所有租户数据库",
-      "url": "https://www.infoq.cn/article/L9IqUuWzSB4zgP0PBqG2?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 13 Aug 2026 11:53:15 GMT"
     }
   ]
 }

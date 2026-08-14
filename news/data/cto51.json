@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-14T03:14:18+00:00",
+  "updated_at": "2026-08-14T06:18:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "鸿蒙自定义弹窗Dialog组件设计与实践：从需求到开源库的完整沉淀",
+      "url": "https://ost.51cto.com/posts/55045",
+      "hot": "鸿蒙自定义弹窗Dialog组件设计与实践：从需求到开源库的完整沉淀从一次&quot;改弹窗改到崩溃&quot;的经历说起先讲个真事。去年我们在做一个企业内部管..."
+    },
+    {
+      "rank": 2,
+      "title": "从零搭建HarmonyOS应用：组件化开发与粒子化动画实战全记录",
+      "url": "https://ost.51cto.com/posts/55043",
+      "hot": "从零搭建HarmonyOS应用：组件化开发与粒子化动画实战全记录写在前面：一个&quot;从无到有&quot;的完整项目去年年底，团队接了一个内部工具App的开发任..."
+    },
+    {
+      "rank": 3,
       "title": "自动化会话超人工！Ramp Inspect Agent 接入 CI/告警，实现 AI SRE 自主处理线上事故",
       "url": "https://www.51cto.com/article/852995.html",
       "hot": "工程师还没来得及输入第一句 Prompt，Agent 已经开始干活了。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Vue 最强动画库！120+ 动画组件，实现复杂动画效果！",
       "url": "https://www.51cto.com/article/852993.html",
       "hot": "如果你正在使用 Vue 或 Nuxt 框架开发项目，不妨尝试 InspiraUI。它能帮你提升开发效率、优化界面效果，让前端开发变得更轻松、更出彩。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "告别盲目 AI 运维！分级自治 SRE 自愈框架，彻底终结告警爆炸",
       "url": "https://www.51cto.com/article/852992.html",
       "hot": "一套面向自愈基础设施的渐进式自治实用框架，帮助 SRE 团队摆脱被动救火模式。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "从零到一带你速通DeepSeek Harness",
       "url": "https://www.51cto.com/article/852991.html",
       "hot": "你用的Claude Code、Codex、Workbuddy这些，本质都是Harness，要跟模型比如Claude Fable 5、GPT 5.6-Sol这些搭配起来用才行，要不然就是个纯空壳。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "不止做大模型， DeepSeek 悄悄放出 Harness，本地 Agent 有了新底座",
       "url": "https://www.51cto.com/article/852988.html",
       "hot": "当前为「开发者预览探索版」，框架功能持续迭代、接口存在频繁变更，存在破坏性更新，仅适用于技术学习、功能探索、Agent 预研实验，严禁直接用于生产环境。开源协议为 MIT，可自由体验、学习及实验性商用探索。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "你的 MCP Server 该升 2.0 了，无状态到底解决了什么？",
       "url": "https://www.51cto.com/article/852985.html",
       "hot": "我试了 MCP 官方 Java SDK，它目前没有适配 2.0 的无状态特性，跑起来直接 500。langchain4j 的相关集成 SDK 也没跟上。相比之下，TypeScript SDK 是四个 Tier 1 SDK 里最先适配 2026-07-28 规范的，​​createMcpHandler​​ 一行搞定。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "一夜之间，GPT-5.6 Sol被OpenAI加速了14倍",
       "url": "https://www.51cto.com/article/852984.html",
       "hot": "8 月 14 日凌晨，OpenAI 联合 AI 芯片厂商 Cerebras 正式预览了其旗舰模型 GPT-5.6 Sol 的全新服务层级「超高速模式」（Ultrafast Mode）。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "反向图灵测试！这个「纯手工大模型」，把网友聊崩了",
       "url": "https://www.51cto.com/article/852983.html",
       "hot": "最近，有人在旧金山买了一块广告牌，大张旗鼓地宣传一个叫 ChatTJB 的「全新大语言模型」。"
-    },
-    {
-      "rank": 9,
-      "title": "七亿年薪留不住！余家辉离职Meta创业",
-      "url": "https://www.51cto.com/article/852982.html",
-      "hot": "刚刚，余家辉官宣离开Meta创业。从2025年6月底加入，到2026年8月14日宣布离开，满打满算一年零一个多月。"
-    },
-    {
-      "rank": 10,
-      "title": "DeepSeek的「自进化」蓝图，曝光了",
-      "url": "https://www.51cto.com/article/852981.html",
-      "hot": "全文围绕Cordis展开，这是黑鲸的核心，一个可以随意插拔的「乐高底板」。在这里，万物皆插件，万物可重组。"
     }
   ]
 }
