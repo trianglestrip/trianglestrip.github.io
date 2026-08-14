@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-14T06:18:31+00:00",
+  "updated_at": "2026-08-14T08:53:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Pi + DeepSeek-v4-Flash，这用着也太爽了。",
-      "url": "https://juejin.cn/post/7671964740780785670",
-      "hot": "3132"
+      "title": "DeepSeek 昨晚刚开源了 Harness：附万少的2 万字保姆级教程",
+      "url": "https://juejin.cn/post/7673390412729614390",
+      "hot": "2061"
     },
     {
       "rank": 2,
-      "title": "DeepSeek 昨晚刚开源了 Harness：附万少的2 万字保姆级教程",
-      "url": "https://juejin.cn/post/7673390412729614390",
-      "hot": "1413"
+      "title": "Flutter 3.47 发布，快来看看有什么更新吧",
+      "url": "https://juejin.cn/post/7673029031966474292",
+      "hot": "765"
     },
     {
       "rank": 3,
-      "title": "升级啦！纯前端打包下载离线地图",
-      "url": "https://juejin.cn/post/7671834850672427017",
-      "hot": "1395"
+      "title": "网页端, 6.5MB人脸识别模型, 谷歌框架, 又快又准",
+      "url": "https://juejin.cn/post/7672915108386570267",
+      "hot": "765"
     },
     {
       "rank": 4,
-      "title": "不用LangChain：用 200 行代码手搓 Agent 对话记忆与上下文压缩",
-      "url": "https://juejin.cn/post/7671855098491043866",
-      "hot": "1026"
-    },
-    {
-      "rank": 5,
-      "title": "Flutter 3.47 发布，快来看看有什么更新吧",
-      "url": "https://juejin.cn/post/7673029031966474292",
-      "hot": "729"
-    },
-    {
-      "rank": 6,
-      "title": "网页端, 6.5MB人脸识别模型, 谷歌框架, 又快又准",
-      "url": "https://juejin.cn/post/7672915108386570267",
-      "hot": "729"
-    },
-    {
-      "rank": 7,
-      "title": "小团队的最优解：单 Module + 包内 Clean 架构",
-      "url": "https://juejin.cn/post/7671994177554497582",
+      "title": "采购同事随口提了句比价，我用 TextIn xParse + WorkBuddy 做了个采购决策助手",
+      "url": "https://juejin.cn/post/7673062292059062322",
       "hot": "720"
     },
     {
-      "rank": 8,
+      "rank": 5,
       "title": "Deepseek涨价了，前后对比，竟然差这么多",
       "url": "https://juejin.cn/post/7673348268143132710",
-      "hot": "612"
+      "hot": "720"
+    },
+    {
+      "rank": 6,
+      "title": "Flutter 的另外一种形态？社区 DartNative 要来了。",
+      "url": "https://juejin.cn/post/7672292709405999147",
+      "hot": "603"
+    },
+    {
+      "rank": 7,
+      "title": "🔥 Network 里那坨 \"data:\" 我真看吐了，自制开源 Chrome 插件，AI 流式调试直接开挂",
+      "url": "https://juejin.cn/post/7672224177785995298",
+      "hot": "585"
+    },
+    {
+      "rank": 8,
+      "title": "今年裁了16万技术人——但字节前端岗反而涨了23%",
+      "url": "https://juejin.cn/post/7673390412728434742",
+      "hot": "414"
     },
     {
       "rank": 9,
-      "title": "采购同事随口提了句比价，我用 TextIn xParse + WorkBuddy 做了个采购决策助手",
-      "url": "https://juejin.cn/post/7673062292059062322",
-      "hot": "612"
+      "title": "使用飞书机器人让 Codex 24 小时在线：随时随地给你的 AI 工程师派活",
+      "url": "https://juejin.cn/post/7672957997422346303",
+      "hot": "369"
     },
     {
       "rank": 10,
-      "title": "Flutter 的另外一种形态？社区 DartNative 要来了。",
-      "url": "https://juejin.cn/post/7672292709405999147",
-      "hot": "594"
+      "title": "我用Claude Code两天干完了团队两周的排期——周报发出去那一刻我就后悔了",
+      "url": "https://juejin.cn/post/7672680924448538639",
+      "hot": "342"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-14T06:18:38+00:00",
+  "updated_at": "2026-08-14T08:53:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities",
+      "title": "GLM-5.3: Frontier coding with emergent cyber capabilities",
       "url": "https://z.ai/blog/glm-5.3",
-      "hot": "154"
+      "hot": "394"
     },
     {
       "rank": 2,
       "title": "Gemini 3.7 Flash",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
-      "hot": "748"
+      "hot": "812"
     },
     {
       "rank": 3,
       "title": "Accelerating GPT-5.6 Sol Ultrafast",
       "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
-      "hot": "531"
+      "hot": "579"
     },
     {
       "rank": 4,
       "title": "Hello, me. It's been a while",
       "url": "https://themech.net/2026/08/hello-me-its-been-a-while/",
-      "hot": "131"
+      "hot": "192"
     },
     {
       "rank": 5,
-      "title": "Bluesky Protocol Services",
-      "url": "https://atproto.com/blog/introducing-bluesky-protocol-services",
-      "hot": "129"
+      "title": "Show HN: C# Game Engine with its own scripting language and IDE",
+      "url": "https://github.com/ArcadeMakerSources/ArcadeMaker",
+      "hot": "32"
     },
     {
       "rank": 6,
-      "title": "DeepSeek Harness developer preview",
-      "url": "https://deepseek.com/harness/en/",
-      "hot": "616"
+      "title": "Show HN: Lumabri – Run Moe Models on a P2P Swarm with Colibri",
+      "url": "https://github.com/JustVugg/lumabri",
+      "hot": "8"
     },
     {
       "rank": 7,
-      "title": "Spaghettifying DRAM",
-      "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
-      "hot": "561"
+      "title": "Bluesky Protocol Services",
+      "url": "https://atproto.com/blog/introducing-bluesky-protocol-services",
+      "hot": "160"
     },
     {
       "rank": 8,
-      "title": "Mistral OCR 4.1",
-      "url": "https://docs.mistral.ai/models/ocr-4-1",
-      "hot": "298"
+      "title": "DeepSeek Harness developer preview",
+      "url": "https://deepseek.com/harness/en/",
+      "hot": "652"
     },
     {
       "rank": 9,
-      "title": "Choose Boring Technology (2015)",
-      "url": "https://mcfunley.com/choose-boring-technology",
-      "hot": "305"
+      "title": "Spaghettifying DRAM",
+      "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+      "hot": "610"
     },
     {
       "rank": 10,
-      "title": "Understanding is the new bottleneck",
-      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
-      "hot": "277"
+      "title": "Mistral OCR 4.1",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "hot": "336"
     }
   ]
 }
