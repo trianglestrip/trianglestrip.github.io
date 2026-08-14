@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-14T17:09:39+00:00",
+  "updated_at": "2026-08-14T19:46:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen 3.8 27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "184"
+      "hot": "556"
     },
     {
       "rank": 2,
-      "title": "Seven books I keep close because I love them",
-      "url": "https://blog.plover.com/2026/08/02/",
-      "hot": "107"
+      "title": "Count Binface receives over a quarter of votes in Clacton by-election",
+      "url": "https://www.bbc.com/news/articles/ce97mm3vvemo",
+      "hot": "329"
     },
     {
       "rank": 3,
-      "title": "Introducing Toast 1",
-      "url": "https://www.mixedbread.com/blog/toast-1",
-      "hot": "75"
+      "title": "Seven books I keep close because I love them",
+      "url": "https://blog.plover.com/2026/08/02/",
+      "hot": "208"
     },
     {
       "rank": 4,
       "title": "RustDesk now supports true unattended remote access on Wayland",
       "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
-      "hot": "35"
+      "hot": "124"
     },
     {
       "rank": 5,
-      "title": "GLM-5.3: Frontier coding with emergent cyber capabilities",
-      "url": "https://z.ai/blog/glm-5.3",
-      "hot": "904"
+      "title": "Why does Opus 5 feel worse to work with?",
+      "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
+      "hot": "577"
     },
     {
       "rank": 6,
-      "title": "Why does Opus 5 feel worse to work with?",
-      "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
-      "hot": "391"
+      "title": "Google is making private AI practical with homomorphic encryption",
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "hot": "128"
     },
     {
       "rank": 7,
-      "title": "Google is making private AI practical with homomorphic encryption",
-      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-      "hot": "39"
+      "title": "GLM-5.3: Frontier coding with emergent cyber capabilities",
+      "url": "https://z.ai/blog/glm-5.3",
+      "hot": "968"
     },
     {
       "rank": 8,
-      "title": "Every Fucking Website (2020)",
-      "url": "https://lxe.github.io/everywebsite/",
-      "hot": "511"
+      "title": "Z.ai Security Disclosure",
+      "url": "https://cvd.z.ai",
+      "hot": "10"
     },
     {
       "rank": 9,
-      "title": "In Australia, a home battery boom has helped cut wholesale power prices",
-      "url": "https://e360.yale.edu/digest/australia-home-batteries",
-      "hot": "199"
+      "title": "Introducing Toast 1",
+      "url": "https://www.mixedbread.com/blog/toast-1",
+      "hot": "130"
     },
     {
       "rank": 10,
-      "title": "RayforceDB – a pure C analytics database with a Lisp-like syntax",
-      "url": "https://rayforcedb.com/",
-      "hot": "15"
+      "title": "Maximizing the value of your Claude Code sessions",
+      "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+      "hot": "79"
     }
   ]
 }
