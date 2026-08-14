@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-14T19:46:23+00:00",
+  "updated_at": "2026-08-14T21:53:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen 3.8 27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "556"
+      "hot": "728"
     },
     {
       "rank": 2,
-      "title": "Count Binface receives over a quarter of votes in Clacton by-election",
-      "url": "https://www.bbc.com/news/articles/ce97mm3vvemo",
-      "hot": "329"
+      "title": "Study links coffee consumption to metabolic health and sex hormones",
+      "url": "https://www.oulu.fi/en/news/study-links-coffee-consumption-metabolic-health-and-sex-hormones",
+      "hot": "36"
     },
     {
       "rank": 3,
       "title": "Seven books I keep close because I love them",
       "url": "https://blog.plover.com/2026/08/02/",
-      "hot": "208"
+      "hot": "269"
     },
     {
       "rank": 4,
       "title": "RustDesk now supports true unattended remote access on Wayland",
       "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
-      "hot": "124"
+      "hot": "173"
     },
     {
       "rank": 5,
       "title": "Why does Opus 5 feel worse to work with?",
       "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
-      "hot": "577"
+      "hot": "666"
     },
     {
       "rank": 6,
-      "title": "Google is making private AI practical with homomorphic encryption",
-      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-      "hot": "128"
+      "title": "Everything is about to \"go dark\"",
+      "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
+      "hot": "27"
     },
     {
       "rank": 7,
-      "title": "GLM-5.3: Frontier coding with emergent cyber capabilities",
-      "url": "https://z.ai/blog/glm-5.3",
-      "hot": "968"
+      "title": "Google is making private AI practical with homomorphic encryption",
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "hot": "201"
     },
     {
       "rank": 8,
-      "title": "Z.ai Security Disclosure",
-      "url": "https://cvd.z.ai",
-      "hot": "10"
+      "title": "What You Gain by Building Your Own Game Engine",
+      "url": "https://eliasfarhan.ch/gamedev/cpp/2026/08/14/srnative-01-why-a-custom-engine.html",
+      "hot": "24"
     },
     {
       "rank": 9,
       "title": "Introducing Toast 1",
       "url": "https://www.mixedbread.com/blog/toast-1",
-      "hot": "130"
+      "hot": "151"
     },
     {
       "rank": 10,
-      "title": "Maximizing the value of your Claude Code sessions",
-      "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
-      "hot": "79"
+      "title": "AI by Hand",
+      "url": "https://www.byhand.ai/",
+      "hot": "134"
     }
   ]
 }
