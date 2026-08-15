@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-15T07:40:24+00:00",
+  "updated_at": "2026-08-15T09:53:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "The other Sean Byrne doesn't exist",
       "url": "https://conic.al/writing/the-other-sean-byrne-doesnt-exist/",
-      "hot": "71"
+      "hot": "145"
     },
     {
       "rank": 2,
       "title": "Qwen 3.8 27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "1087"
+      "hot": "1139"
     },
     {
       "rank": 3,
       "title": "Going Dark, and the era of law enforcement hacking",
       "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
-      "hot": "313"
+      "hot": "343"
     },
     {
       "rank": 4,
-      "title": "Magnitude 7.7 Earthquake – 68 km NNW of Ende, Indonesia",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2/executive",
-      "hot": "178"
+      "title": "In 1962, Egypt's Missile Program Lost Its Key Scientist Without a Trace",
+      "url": "https://www.popularmechanics.com/military/a73358518/nazi-rocket-scientist-disappearance/",
+      "hot": "37"
     },
     {
       "rank": 5,
-      "title": "eigendrum",
-      "url": "https://eigendrum.com/#p=circle",
-      "hot": "129"
+      "title": "Coin-sized device can hack a Boeing 737",
+      "url": "https://www.wired.com/story/this-coin-sized-device-can-hack-a-boeing-737/",
+      "hot": "75"
     },
     {
       "rank": 6,
-      "title": "Google is making private AI practical with homomorphic encryption",
-      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-      "hot": "364"
+      "title": "Understanding WCAG 2.2 as ePub and PDF",
+      "url": "https://doeken.org/wcag-ebook",
+      "hot": "14"
     },
     {
       "rank": 7,
-      "title": "Show HN: ThoughtDAG – An editable context graph for LLM conversations",
-      "url": "https://chenxiachan.github.io/thoughtdag/",
-      "hot": "11"
+      "title": "Magnitude 7.7 Earthquake – 68 km NNW of Ende, Indonesia",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2/executive",
+      "hot": "195"
     },
     {
       "rank": 8,
-      "title": "RustDesk now supports true unattended remote access on Wayland",
-      "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
-      "hot": "272"
+      "title": "Google is making private AI practical with homomorphic encryption",
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "hot": "389"
     },
     {
       "rank": 9,
-      "title": "The Ploopy A+ Trackball Is Here",
-      "url": "https://blog.ploopy.co/the-aplus-is-finally-here-499",
-      "hot": "93"
+      "title": "eigendrum",
+      "url": "https://eigendrum.com/#p=circle",
+      "hot": "157"
     },
     {
       "rank": 10,
-      "title": "Firefox is now the last major browser that still supports uBlock Origin",
-      "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
-      "hot": "852"
+      "title": "RustDesk now supports true unattended remote access on Wayland",
+      "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
+      "hot": "295"
     }
   ]
 }
