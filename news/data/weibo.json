@@ -1,67 +1,67 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-15T01:53:43+00:00",
+  "updated_at": "2026-08-15T02:40:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "旺旺集团面临重大经营危机",
-      "url": "https://s.weibo.com/weibo?q=%E6%97%BA%E6%97%BA%E9%9B%86%E5%9B%A2%E9%9D%A2%E4%B8%B4%E9%87%8D%E5%A4%A7%E7%BB%8F%E8%90%A5%E5%8D%B1%E6%9C%BA",
-      "hot": ""
-    },
-    {
-      "rank": 2,
-      "title": "特朗普称将宣布霍尔木兹海峡为美领土",
-      "url": "https://s.weibo.com/weibo?q=%E7%89%B9%E6%9C%97%E6%99%AE%E7%A7%B0%E5%B0%86%E5%AE%A3%E5%B8%83%E9%9C%8D%E5%B0%94%E6%9C%A8%E5%85%B9%E6%B5%B7%E5%B3%A1%E4%B8%BA%E7%BE%8E%E9%A2%86%E5%9C%9F",
-      "hot": ""
-    },
-    {
-      "rank": 3,
-      "title": "致敬生态保护者",
-      "url": "https://s.weibo.com/weibo?q=%E8%87%B4%E6%95%AC%E7%94%9F%E6%80%81%E4%BF%9D%E6%8A%A4%E8%80%85",
-      "hot": ""
-    },
-    {
-      "rank": 4,
       "title": "旺旺最大的对手竟是糖",
       "url": "https://s.weibo.com/weibo?q=%E6%97%BA%E6%97%BA%E6%9C%80%E5%A4%A7%E7%9A%84%E5%AF%B9%E6%89%8B%E7%AB%9F%E6%98%AF%E7%B3%96",
       "hot": ""
     },
     {
+      "rank": 2,
+      "title": "旺旺集团面临重大经营危机",
+      "url": "https://s.weibo.com/weibo?q=%E6%97%BA%E6%97%BA%E9%9B%86%E5%9B%A2%E9%9D%A2%E4%B8%B4%E9%87%8D%E5%A4%A7%E7%BB%8F%E8%90%A5%E5%8D%B1%E6%9C%BA",
+      "hot": ""
+    },
+    {
+      "rank": 3,
+      "title": "中国China成为潮流",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BDChina%E6%88%90%E4%B8%BA%E6%BD%AE%E6%B5%81",
+      "hot": ""
+    },
+    {
+      "rank": 4,
+      "title": "豪华旗舰神行者8震撼33.99万元起",
+      "url": "https://s.weibo.com/weibo?q=%E8%B1%AA%E5%8D%8E%E6%97%97%E8%88%B0%E7%A5%9E%E8%A1%8C%E8%80%858%E9%9C%87%E6%92%BC33.99%E4%B8%87%E5%85%83%E8%B5%B7",
+      "hot": ""
+    },
+    {
       "rank": 5,
+      "title": "日本 拜鬼",
+      "url": "https://s.weibo.com/weibo?q=%E6%97%A5%E6%9C%AC%20%E6%8B%9C%E9%AC%BC",
+      "hot": ""
+    },
+    {
+      "rank": 6,
       "title": "王传君体脂率25.5%",
       "url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E4%BC%A0%E5%90%9B%E4%BD%93%E8%84%82%E7%8E%8725.5%25",
       "hot": ""
     },
     {
-      "rank": 6,
-      "title": "母女被拐卖父亲被骗无偿工作11年",
-      "url": "https://s.weibo.com/weibo?q=%E6%AF%8D%E5%A5%B3%E8%A2%AB%E6%8B%90%E5%8D%96%E7%88%B6%E4%BA%B2%E8%A2%AB%E9%AA%97%E6%97%A0%E5%81%BF%E5%B7%A5%E4%BD%9C11%E5%B9%B4",
-      "hot": ""
-    },
-    {
       "rank": 7,
-      "title": "印尼7.7级地震",
-      "url": "https://s.weibo.com/weibo?q=%E5%8D%B0%E5%B0%BC7.7%E7%BA%A7%E5%9C%B0%E9%9C%87",
+      "title": "网友集体呼吁旺旺减糖",
+      "url": "https://s.weibo.com/weibo?q=%E7%BD%91%E5%8F%8B%E9%9B%86%E4%BD%93%E5%91%BC%E5%90%81%E6%97%BA%E6%97%BA%E5%87%8F%E7%B3%96",
       "hot": ""
     },
     {
       "rank": 8,
+      "title": "奇瑞捷豹路虎首搭华为乾崑智驾",
+      "url": "https://s.weibo.com/weibo?q=%E5%A5%87%E7%91%9E%E6%8D%B7%E8%B1%B9%E8%B7%AF%E8%99%8E%E9%A6%96%E6%90%AD%E5%8D%8E%E4%B8%BA%E4%B9%BE%E5%B4%91%E6%99%BA%E9%A9%BE",
+      "hot": ""
+    },
+    {
+      "rank": 9,
       "title": "国乒男单无缘八强",
       "url": "https://s.weibo.com/weibo?q=%E5%9B%BD%E4%B9%92%E7%94%B7%E5%8D%95%E6%97%A0%E7%BC%98%E5%85%AB%E5%BC%BA",
       "hot": ""
     },
     {
-      "rank": 9,
-      "title": "慢性压力导致幻想沉溺",
-      "url": "https://s.weibo.com/weibo?q=%E6%85%A2%E6%80%A7%E5%8E%8B%E5%8A%9B%E5%AF%BC%E8%87%B4%E5%B9%BB%E6%83%B3%E6%B2%89%E6%BA%BA",
-      "hot": ""
-    },
-    {
       "rank": 10,
-      "title": "牛来",
-      "url": "https://s.weibo.com/weibo?q=%E7%89%9B%E6%9D%A5",
+      "title": "印尼7.7级地震",
+      "url": "https://s.weibo.com/weibo?q=%E5%8D%B0%E5%B0%BC7.7%E7%BA%A7%E5%9C%B0%E9%9C%87",
       "hot": ""
     }
   ]

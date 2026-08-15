@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-15T00:27:43+00:00",
+  "updated_at": "2026-08-15T02:43:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Qwen 3.8 27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "854"
+      "title": "Magnitude 7.7 Earthquake – 68 km NNW of Ende, Indonesia",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2/executive",
+      "hot": "68"
     },
     {
       "rank": 2,
-      "title": "Going Dark, and the era of law enforcement hacking",
-      "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
-      "hot": "163"
+      "title": "Qwen 3.8 27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "hot": "934"
     },
     {
       "rank": 3,
-      "title": "RISC-V: They should have known better",
-      "url": "https://dmitry.gr/?r=06.%20Thoughts&proj=12.%20RV",
-      "hot": "81"
+      "title": "Going Dark, and the era of law enforcement hacking",
+      "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
+      "hot": "226"
     },
     {
       "rank": 4,
-      "title": "The case for overhauling American science",
-      "url": "https://www.economist.com/by-invitation/2026/08/13/the-case-for-overhauling-american-science",
-      "hot": "15"
+      "title": "Simplifying and Refactoring Introductory Calculus",
+      "url": "https://arxiv.org/abs/1811.03459",
+      "hot": "34"
     },
     {
       "rank": 5,
-      "title": "Why does Opus 5 feel worse to work with?",
-      "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
-      "hot": "760"
+      "title": "The Ploopy A+ Trackball Is Here",
+      "url": "https://blog.ploopy.co/the-aplus-is-finally-here-499",
+      "hot": "29"
     },
     {
       "rank": 6,
-      "title": "Stop sending me huge PRs; a rant",
-      "url": "https://getsmall.xyz/post/cmstjfl9l000if70ljmpzr4va",
-      "hot": "25"
+      "title": "Google is making private AI practical with homomorphic encryption",
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "hot": "295"
     },
     {
       "rank": 7,
       "title": "RustDesk now supports true unattended remote access on Wayland",
       "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
-      "hot": "210"
+      "hot": "232"
     },
     {
       "rank": 8,
-      "title": "Google is making private AI practical with homomorphic encryption",
-      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-      "hot": "263"
+      "title": "Hi-Fi Tape Recorder Changed Radio Forever",
+      "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
+      "hot": "13"
     },
     {
       "rank": 9,
-      "title": "Super Mario Derivations",
-      "url": "https://fzakaria.com/2026/08/05/super-mario-derivations",
-      "hot": "38"
+      "title": "Corgi kills short-lived website that ranked its female employees",
+      "url": "https://sf.gazetteer.co/corgi-kills-short-lived-website-that-ranked-its-female-employees",
+      "hot": "28"
     },
     {
       "rank": 10,
-      "title": "AI by Hand",
-      "url": "https://www.byhand.ai/",
-      "hot": "185"
+      "title": "Super Mario Derivations",
+      "url": "https://fzakaria.com/2026/08/05/super-mario-derivations",
+      "hot": "62"
     }
   ]
 }
