@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-15T17:26:44+00:00",
+  "updated_at": "2026-08-15T23:37:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "614"
+      "hot": "617"
     },
     {
       "rank": 2,
@@ -30,21 +30,21 @@
     },
     {
       "rank": 5,
+      "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
+      "url": "https://huggingface.co/papers/2608.04205",
+      "hot": "39"
+    },
+    {
+      "rank": 6,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
       "hot": "80"
     },
     {
-      "rank": 6,
-      "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
-      "url": "https://huggingface.co/papers/2608.04205",
-      "hot": "38"
-    },
-    {
       "rank": 7,
       "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
       "url": "https://huggingface.co/papers/2608.03974",
-      "hot": "92"
+      "hot": "93"
     },
     {
       "rank": 8,
