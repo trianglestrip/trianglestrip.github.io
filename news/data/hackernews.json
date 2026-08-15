@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-15T02:43:14+00:00",
+  "updated_at": "2026-08-15T04:53:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Magnitude 7.7 Earthquake – 68 km NNW of Ende, Indonesia",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2/executive",
-      "hot": "68"
+      "hot": "142"
     },
     {
       "rank": 2,
       "title": "Qwen 3.8 27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "934"
+      "hot": "991"
     },
     {
       "rank": 3,
       "title": "Going Dark, and the era of law enforcement hacking",
       "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
-      "hot": "226"
+      "hot": "259"
     },
     {
       "rank": 4,
-      "title": "Simplifying and Refactoring Introductory Calculus",
-      "url": "https://arxiv.org/abs/1811.03459",
-      "hot": "34"
+      "title": "The Ploopy A+ Trackball Is Here",
+      "url": "https://blog.ploopy.co/the-aplus-is-finally-here-499",
+      "hot": "61"
     },
     {
       "rank": 5,
-      "title": "The Ploopy A+ Trackball Is Here",
-      "url": "https://blog.ploopy.co/the-aplus-is-finally-here-499",
-      "hot": "29"
+      "title": "AI Driven Testing",
+      "url": "https://app.deltix.ai",
+      "hot": "13"
     },
     {
       "rank": 6,
       "title": "Google is making private AI practical with homomorphic encryption",
       "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-      "hot": "295"
+      "hot": "322"
     },
     {
       "rank": 7,
-      "title": "RustDesk now supports true unattended remote access on Wayland",
-      "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
-      "hot": "232"
+      "title": "eigendrum",
+      "url": "https://eigendrum.com/#p=circle",
+      "hot": "80"
     },
     {
       "rank": 8,
-      "title": "Hi-Fi Tape Recorder Changed Radio Forever",
-      "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
-      "hot": "13"
+      "title": "Simplifying and Refactoring Introductory Calculus",
+      "url": "https://arxiv.org/abs/1811.03459",
+      "hot": "61"
     },
     {
       "rank": 9,
-      "title": "Corgi kills short-lived website that ranked its female employees",
-      "url": "https://sf.gazetteer.co/corgi-kills-short-lived-website-that-ranked-its-female-employees",
-      "hot": "28"
+      "title": "RustDesk now supports true unattended remote access on Wayland",
+      "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
+      "hot": "249"
     },
     {
       "rank": 10,
-      "title": "Super Mario Derivations",
-      "url": "https://fzakaria.com/2026/08/05/super-mario-derivations",
-      "hot": "62"
+      "title": "Show HN: A website for exploring historical photographs of my city",
+      "url": "https://yesterdays.maprva.org/",
+      "hot": "13"
     }
   ]
 }
