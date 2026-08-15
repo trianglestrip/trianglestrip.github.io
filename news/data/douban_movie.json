@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-15T14:10:26+00:00",
+  "updated_at": "2026-08-15T16:25:27+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "蜘蛛侠：崭新之日",
-      "url": "https://movie.douban.com/subject/36246195/",
-      "hot": "评分 7.8"
-    },
-    {
-      "rank": 3,
       "title": "奥德赛",
       "url": "https://movie.douban.com/subject/36808876/",
       "hot": "评分 8.4"
+    },
+    {
+      "rank": 3,
+      "title": "蜘蛛侠：崭新之日",
+      "url": "https://movie.douban.com/subject/36246195/",
+      "hot": "评分 7.8"
     },
     {
       "rank": 4,
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "年会不能停！2",
-      "url": "https://movie.douban.com/subject/36850814/",
-      "hot": "评分 6.6"
-    },
-    {
-      "rank": 8,
       "title": "去你的岛",
       "url": "https://movie.douban.com/subject/35275131/",
       "hot": "评分 7.9"
+    },
+    {
+      "rank": 8,
+      "title": "年会不能停！2",
+      "url": "https://movie.douban.com/subject/36850814/",
+      "hot": "评分 6.6"
     },
     {
       "rank": 9,
