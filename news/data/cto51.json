@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-15T11:56:23+00:00",
+  "updated_at": "2026-08-15T14:10:52+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,51 +18,51 @@
     },
     {
       "rank": 3,
+      "title": "刚刚，GLM-5.3撕开闭源安全神话！0.1倍参数追平Mythos战力",
+      "url": "https://www.51cto.com/article/853070.html",
+      "hot": "两个月前，Anthropic的Mythos自主挖出FreeBSD里藏了17年的漏洞，安全圈集体失眠。就在刚刚，Cursor也被一个中国AI翻了。   清华NASP实验室用它深入底层架构，直接在权限校验逻辑里撕开了一道口子。攻击者一旦利用，可以任意写入文件，甚至接管Cursor整个开发环境。"
+    },
+    {
+      "rank": 4,
+      "title": "刚刚，GLM-5.3发布：Coding更接近Fable 5！潜伏40年的bug都被揪出来了",
+      "url": "https://www.51cto.com/article/853067.html",
+      "hot": "昨儿DeepSeek V4 Pro正式版+Harness、Grok 4.6“你方唱罢”，今儿GLM-5.3闪亮一记“我登场”——一出手便杀回开源一哥、国模一哥，甚至在Coding方面更加接近Claude Fable 5！"
+    },
+    {
+      "rank": 5,
       "title": "自动化会话超人工！Ramp Inspect Agent 接入 CI/告警，实现 AI SRE 自主处理线上事故",
       "url": "https://www.51cto.com/article/852995.html",
       "hot": "工程师还没来得及输入第一句 Prompt，Agent 已经开始干活了。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Vue 最强动画库！120+ 动画组件，实现复杂动画效果！",
       "url": "https://www.51cto.com/article/852993.html",
       "hot": "如果你正在使用 Vue 或 Nuxt 框架开发项目，不妨尝试 InspiraUI。它能帮你提升开发效率、优化界面效果，让前端开发变得更轻松、更出彩。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "告别盲目 AI 运维！分级自治 SRE 自愈框架，彻底终结告警爆炸",
       "url": "https://www.51cto.com/article/852992.html",
       "hot": "一套面向自愈基础设施的渐进式自治实用框架，帮助 SRE 团队摆脱被动救火模式。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "从零到一带你速通DeepSeek Harness",
       "url": "https://www.51cto.com/article/852991.html",
       "hot": "你用的Claude Code、Codex、Workbuddy这些，本质都是Harness，要跟模型比如Claude Fable 5、GPT 5.6-Sol这些搭配起来用才行，要不然就是个纯空壳。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "不止做大模型， DeepSeek 悄悄放出 Harness，本地 Agent 有了新底座",
       "url": "https://www.51cto.com/article/852988.html",
       "hot": "当前为「开发者预览探索版」，框架功能持续迭代、接口存在频繁变更，存在破坏性更新，仅适用于技术学习、功能探索、Agent 预研实验，严禁直接用于生产环境。开源协议为 MIT，可自由体验、学习及实验性商用探索。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "你的 MCP Server 该升 2.0 了，无状态到底解决了什么？",
       "url": "https://www.51cto.com/article/852985.html",
       "hot": "我试了 MCP 官方 Java SDK，它目前没有适配 2.0 的无状态特性，跑起来直接 500。langchain4j 的相关集成 SDK 也没跟上。相比之下，TypeScript SDK 是四个 Tier 1 SDK 里最先适配 2026-07-28 规范的，​​createMcpHandler​​ 一行搞定。"
-    },
-    {
-      "rank": 9,
-      "title": "一夜之间，GPT-5.6 Sol被OpenAI加速了14倍",
-      "url": "https://www.51cto.com/article/852984.html",
-      "hot": "8 月 14 日凌晨，OpenAI 联合 AI 芯片厂商 Cerebras 正式预览了其旗舰模型 GPT-5.6 Sol 的全新服务层级「超高速模式」（Ultrafast Mode）。"
-    },
-    {
-      "rank": 10,
-      "title": "反向图灵测试！这个「纯手工大模型」，把网友聊崩了",
-      "url": "https://www.51cto.com/article/852983.html",
-      "hot": "最近，有人在旧金山买了一块广告牌，大张旗鼓地宣传一个叫 ChatTJB 的「全新大语言模型」。"
     }
   ]
 }
