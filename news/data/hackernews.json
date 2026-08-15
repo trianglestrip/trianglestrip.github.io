@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-15T04:53:56+00:00",
+  "updated_at": "2026-08-15T07:40:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Magnitude 7.7 Earthquake – 68 km NNW of Ende, Indonesia",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2/executive",
-      "hot": "142"
+      "title": "The other Sean Byrne doesn't exist",
+      "url": "https://conic.al/writing/the-other-sean-byrne-doesnt-exist/",
+      "hot": "71"
     },
     {
       "rank": 2,
       "title": "Qwen 3.8 27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "991"
+      "hot": "1087"
     },
     {
       "rank": 3,
       "title": "Going Dark, and the era of law enforcement hacking",
       "url": "https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/",
-      "hot": "259"
+      "hot": "313"
     },
     {
       "rank": 4,
-      "title": "The Ploopy A+ Trackball Is Here",
-      "url": "https://blog.ploopy.co/the-aplus-is-finally-here-499",
-      "hot": "61"
+      "title": "Magnitude 7.7 Earthquake – 68 km NNW of Ende, Indonesia",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tkt2/executive",
+      "hot": "178"
     },
     {
       "rank": 5,
-      "title": "AI Driven Testing",
-      "url": "https://app.deltix.ai",
-      "hot": "13"
+      "title": "eigendrum",
+      "url": "https://eigendrum.com/#p=circle",
+      "hot": "129"
     },
     {
       "rank": 6,
       "title": "Google is making private AI practical with homomorphic encryption",
       "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-      "hot": "322"
+      "hot": "364"
     },
     {
       "rank": 7,
-      "title": "eigendrum",
-      "url": "https://eigendrum.com/#p=circle",
-      "hot": "80"
+      "title": "Show HN: ThoughtDAG – An editable context graph for LLM conversations",
+      "url": "https://chenxiachan.github.io/thoughtdag/",
+      "hot": "11"
     },
     {
       "rank": 8,
-      "title": "Simplifying and Refactoring Introductory Calculus",
-      "url": "https://arxiv.org/abs/1811.03459",
-      "hot": "61"
+      "title": "RustDesk now supports true unattended remote access on Wayland",
+      "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
+      "hot": "272"
     },
     {
       "rank": 9,
-      "title": "RustDesk now supports true unattended remote access on Wayland",
-      "url": "https://rustdesk.com/blog/unattended-remote-access-wayland/",
-      "hot": "249"
+      "title": "The Ploopy A+ Trackball Is Here",
+      "url": "https://blog.ploopy.co/the-aplus-is-finally-here-499",
+      "hot": "93"
     },
     {
       "rank": 10,
-      "title": "Show HN: A website for exploring historical photographs of my city",
-      "url": "https://yesterdays.maprva.org/",
-      "hot": "13"
+      "title": "Firefox is now the last major browser that still supports uBlock Origin",
+      "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+      "hot": "852"
     }
   ]
 }
