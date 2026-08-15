@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-15T22:25:26+00:00",
+  "updated_at": "2026-08-15T22:43:59+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -42,26 +42,26 @@
     },
     {
       "rank": 7,
+      "title": "岚图追光S四激光入20万级",
+      "url": "https://s.weibo.com/weibo?q=%E5%B2%9A%E5%9B%BE%E8%BF%BD%E5%85%89S%E5%9B%9B%E6%BF%80%E5%85%89%E5%85%A520%E4%B8%87%E7%BA%A7",
+      "hot": ""
+    },
+    {
+      "rank": 8,
       "title": "小沈阳秒了",
       "url": "https://s.weibo.com/weibo?q=%E5%B0%8F%E6%B2%88%E9%98%B3%E7%A7%92%E4%BA%86",
       "hot": ""
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "直观看见了女儿奴的诞生",
       "url": "https://s.weibo.com/weibo?q=%E7%9B%B4%E8%A7%82%E7%9C%8B%E8%A7%81%E4%BA%86%E5%A5%B3%E5%84%BF%E5%A5%B4%E7%9A%84%E8%AF%9E%E7%94%9F",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "汉奸石平参拜靖国神社",
       "url": "https://s.weibo.com/weibo?q=%E6%B1%89%E5%A5%B8%E7%9F%B3%E5%B9%B3%E5%8F%82%E6%8B%9C%E9%9D%96%E5%9B%BD%E7%A5%9E%E7%A4%BE",
-      "hot": ""
-    },
-    {
-      "rank": 10,
-      "title": "太干净的饭总有一种没吃的错觉",
-      "url": "https://s.weibo.com/weibo?q=%E5%A4%AA%E5%B9%B2%E5%87%80%E7%9A%84%E9%A5%AD%E6%80%BB%E6%9C%89%E4%B8%80%E7%A7%8D%E6%B2%A1%E5%90%83%E7%9A%84%E9%94%99%E8%A7%89",
       "hot": ""
     }
   ]
