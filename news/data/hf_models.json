@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-16T17:49:56+00:00",
+  "updated_at": "2026-08-16T23:59:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "10164"
+      "hot": "10270"
     },
     {
       "rank": 2,
       "title": "meta-models/Muse-Glimmer-30B",
       "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "hot": "1615"
+      "hot": "1625"
     },
     {
       "rank": 3,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "1403"
+      "hot": "1450"
     },
     {
       "rank": 4,
       "title": "Qwen/Qwen3.8-2.4T-A95B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "1002"
+      "hot": "1006"
     },
     {
       "rank": 5,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "996"
+      "hot": "1021"
     },
     {
       "rank": 6,
       "title": "MiniMaxAI/MiniMax-Music3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-      "hot": "810"
+      "hot": "833"
     },
     {
       "rank": 7,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "4017"
+      "hot": "4024"
     },
     {
       "rank": 8,
       "title": "deepseek-ai/DeepSeek-V4-Pro-0813",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hot": "523"
+      "hot": "532"
     },
     {
       "rank": 9,
       "title": "Qwen/Qwen3.8-27B-FP8",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "468"
+      "hot": "480"
     },
     {
       "rank": 10,
       "title": "unsloth/Muse-Glimmer-30B-GGUF",
       "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF",
-      "hot": "451"
+      "hot": "453"
     }
   ]
 }

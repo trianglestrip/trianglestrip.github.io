@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-16T21:50:19+00:00",
+  "updated_at": "2026-08-16T23:59:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The Case Against Formal Verification, 50 Years Later",
-      "url": "https://ivan-gavran.github.io/0-social-processes-paper",
-      "hot": "35"
+      "title": "A 3rd World Embedded Engineer Responds to \"RISC-V They Should Have Known Better\"",
+      "url": "https://rvembedded.com/blog_post/12/",
+      "hot": "323"
     },
     {
       "rank": 2,
-      "title": "A 3rd World Embedded Engineer Responds to \"RISC-V They Should Have Known Better\"",
-      "url": "https://rvembedded.com/blog_post/12/",
-      "hot": "247"
+      "title": "Claude: System Prompts",
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "hot": "503"
     },
     {
       "rank": 3,
-      "title": "Claude: System Prompts",
-      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "hot": "449"
+      "title": "SIMD in the 90s: Programming Intel's Pentium MMX",
+      "url": "https://pikuma.com/blog/programming-intel-pentium-mmx-simd",
+      "hot": "56"
     },
     {
       "rank": 4,
-      "title": "Protobuf has LSP support. You're welcome",
-      "url": "https://buf.build/blog/protobuf-lsp",
-      "hot": "70"
+      "title": "Low-Tech Ceramic Water Filter",
+      "url": "https://wiki.lowtechlab.org/wiki/Filtre_%C3%A0_eau_c%C3%A9ramique/en",
+      "hot": "72"
     },
     {
       "rank": 5,
-      "title": "SIMD in the 90s: Programming Intel's Pentium MMX",
-      "url": "https://pikuma.com/blog/programming-intel-pentium-mmx-simd",
-      "hot": "34"
+      "title": "A quick look at zero-knowledge proofs",
+      "url": "https://bernsteinbear.com/blog/zkp/",
+      "hot": "26"
     },
     {
       "rank": 6,
-      "title": "Low-Tech Ceramic Water Filter",
-      "url": "https://wiki.lowtechlab.org/wiki/Filtre_%C3%A0_eau_c%C3%A9ramique/en",
-      "hot": "32"
+      "title": "Models Are Getting Dumber on Purpose",
+      "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+      "hot": "226"
     },
     {
       "rank": 7,
-      "title": "The AI Credit Resale Economy",
-      "url": "https://vectoral.com/blog/who-are-the-token-brokers",
-      "hot": "191"
+      "title": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+      "hot": "133"
     },
     {
       "rank": 8,
-      "title": "Models Are Getting Dumber on Purpose",
-      "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
-      "hot": "174"
+      "title": "Protobuf has LSP support. You're welcome",
+      "url": "https://buf.build/blog/protobuf-lsp",
+      "hot": "97"
     },
     {
       "rank": 9,
-      "title": "MathCode, Mathematical Coding Agent",
-      "url": "https://math-ai-org.github.io/mathcode/",
-      "hot": "36"
+      "title": "The AI Credit Resale Economy",
+      "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+      "hot": "217"
     },
     {
       "rank": 10,
-      "title": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
-      "hot": "44"
+      "title": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+      "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+      "hot": "100"
     }
   ]
 }
