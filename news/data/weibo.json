@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-16T17:33:57+00:00",
+  "updated_at": "2026-08-16T17:49:34+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,32 +36,32 @@
     },
     {
       "rank": 6,
-      "title": "王俊凯口误了",
-      "url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E4%BF%8A%E5%87%AF%E5%8F%A3%E8%AF%AF%E4%BA%86",
-      "hot": ""
-    },
-    {
-      "rank": 7,
       "title": "女主播希望停止榜一大哥病态折磨",
       "url": "https://s.weibo.com/weibo?q=%E5%A5%B3%E4%B8%BB%E6%92%AD%E5%B8%8C%E6%9C%9B%E5%81%9C%E6%AD%A2%E6%A6%9C%E4%B8%80%E5%A4%A7%E5%93%A5%E7%97%85%E6%80%81%E6%8A%98%E7%A3%A8",
       "hot": ""
     },
     {
+      "rank": 7,
+      "title": "许昌暴雨60万人断水停电系谣言",
+      "url": "https://s.weibo.com/weibo?q=%E8%AE%B8%E6%98%8C%E6%9A%B4%E9%9B%A860%E4%B8%87%E4%BA%BA%E6%96%AD%E6%B0%B4%E5%81%9C%E7%94%B5%E7%B3%BB%E8%B0%A3%E8%A8%80",
+      "hot": ""
+    },
+    {
       "rank": 8,
+      "title": "王俊凯口误了",
+      "url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E4%BF%8A%E5%87%AF%E5%8F%A3%E8%AF%AF%E4%BA%86",
+      "hot": ""
+    },
+    {
+      "rank": 9,
       "title": "阿森纳3比0曼城",
       "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A3%AE%E7%BA%B33%E6%AF%940%E6%9B%BC%E5%9F%8E",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "盗墓笔记",
       "url": "https://s.weibo.com/weibo?q=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0",
-      "hot": ""
-    },
-    {
-      "rank": 10,
-      "title": "旺旺的无糖产品连店员都没听过",
-      "url": "https://s.weibo.com/weibo?q=%E6%97%BA%E6%97%BA%E7%9A%84%E6%97%A0%E7%B3%96%E4%BA%A7%E5%93%81%E8%BF%9E%E5%BA%97%E5%91%98%E9%83%BD%E6%B2%A1%E5%90%AC%E8%BF%87",
       "hot": ""
     }
   ]

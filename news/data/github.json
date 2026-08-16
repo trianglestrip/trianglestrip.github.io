@@ -1,56 +1,50 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-08-16T11:46:38+00:00",
+  "updated_at": "2026-08-16T17:49:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[TypeScript] cordiverse/cordis",
       "url": "https://github.com/cordiverse/cordis",
-      "hot": "4,408"
+      "hot": "4,603"
     },
     {
       "rank": 2,
       "title": "[Shell] basecamp/omarchy",
       "url": "https://github.com/basecamp/omarchy",
-      "hot": "25,072"
+      "hot": "25,250"
     },
     {
       "rank": 3,
       "title": "[Python] unslothai/unsloth",
       "url": "https://github.com/unslothai/unsloth",
-      "hot": "72,250"
+      "hot": "72,413"
     },
     {
       "rank": 4,
       "title": "[TypeScript] OpenCut-app/OpenCut",
       "url": "https://github.com/OpenCut-app/OpenCut",
-      "hot": "83,509"
+      "hot": "83,711"
     },
     {
       "rank": 5,
-      "title": "[Rust] akitaonrails/ai-memory",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "hot": "1,531"
+      "title": "[Python] public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "hot": "461,294"
     },
     {
       "rank": 6,
-      "title": "[Python] public-apis/public-apis",
-      "url": "https://github.com/public-apis/public-apis",
-      "hot": "460,799"
+      "title": "[JavaScript] ToolJet/ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "hot": "39,872"
     },
     {
       "rank": 7,
-      "title": "[JavaScript] ToolJet/ToolJet",
-      "url": "https://github.com/ToolJet/ToolJet",
-      "hot": "39,728"
-    },
-    {
-      "rank": 8,
       "title": "[Python] cactus-compute/needle",
       "url": "https://github.com/cactus-compute/needle",
-      "hot": "6,262"
+      "hot": "6,438"
     }
   ]
 }

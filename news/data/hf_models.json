@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-16T11:46:48+00:00",
+  "updated_at": "2026-08-16T17:49:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "10011"
+      "hot": "10164"
     },
     {
       "rank": 2,
       "title": "meta-models/Muse-Glimmer-30B",
       "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "hot": "1599"
+      "hot": "1615"
     },
     {
       "rank": 3,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "1332"
+      "hot": "1403"
     },
     {
       "rank": 4,
       "title": "Qwen/Qwen3.8-2.4T-A95B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "994"
+      "hot": "1002"
     },
     {
       "rank": 5,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "974"
+      "hot": "996"
     },
     {
       "rank": 6,
       "title": "MiniMaxAI/MiniMax-Music3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-      "hot": "795"
+      "hot": "810"
     },
     {
       "rank": 7,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "4002"
+      "hot": "4017"
     },
     {
       "rank": 8,
       "title": "deepseek-ai/DeepSeek-V4-Pro-0813",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hot": "515"
+      "hot": "523"
     },
     {
       "rank": 9,
-      "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "hot": "3438"
+      "title": "Qwen/Qwen3.8-27B-FP8",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "hot": "468"
     },
     {
       "rank": 10,
-      "title": "Qwen/Qwen3.8-27B-FP8",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "450"
+      "title": "unsloth/Muse-Glimmer-30B-GGUF",
+      "url": "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF",
+      "hot": "451"
     }
   ]
 }
