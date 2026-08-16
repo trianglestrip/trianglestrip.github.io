@@ -1,67 +1,67 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-16T04:13:51+00:00",
+  "updated_at": "2026-08-16T06:43:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Asus Bike Booster",
       "url": "https://www.asus.com/accessories/bike-booster/asus-oxiis/oxiis-intelligent-bike-booster/",
-      "hot": "179"
+      "hot": "288"
     },
     {
       "rank": 2,
       "title": "Asynchronous I/O in DuckDB: Work, Thread, Work",
       "url": "https://duckdb.org/2026/07/31/asynchronous-io",
-      "hot": "62"
+      "hot": "115"
     },
     {
       "rank": 3,
-      "title": "Semaglutide linked to lower predicted dementia risk",
-      "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432",
-      "hot": "376"
+      "title": "The quirky personal homepages of programming language creators",
+      "url": "https://breck.lol/plMakers.html",
+      "hot": "57"
     },
     {
       "rank": 4,
-      "title": "Show HN: Mic Drop, a real-time multiplayer karaoke game",
-      "url": "https://www.micdrop.gg/",
-      "hot": "28"
+      "title": "Semaglutide linked to lower predicted dementia risk",
+      "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432",
+      "hot": "402"
     },
     {
       "rank": 5,
-      "title": "I checked 30 frontier model cards. Here are the benchmarks labs report",
-      "url": "https://koutian.is-a.dev/benchmark-radar/?view=leaderboard",
-      "hot": "3"
+      "title": "Patterns and problems in emerging multi-agent systems",
+      "url": "https://www.anthropic.com/research/multiagent-systems",
+      "hot": "44"
     },
     {
       "rank": 6,
       "title": "Cultivating a state of mind where new ideas are born (2023)",
       "url": "https://www.henrikkarlsson.xyz/p/good-ideas",
-      "hot": "111"
+      "hot": "138"
     },
     {
       "rank": 7,
-      "title": "Guiding Ships with Moire Patterns",
-      "url": "https://tinkerings.org/2018/03/28/guiding-ships-with-moire-patterns/",
-      "hot": "14"
+      "title": "Targeted marine cloud brightening weakens subsequent El Niño",
+      "url": "https://www.science.org/doi/10.1126/sciadv.adx3012",
+      "hot": "15"
     },
     {
       "rank": 8,
-      "title": "AI in drug discovery – what it is, where we stand and the path forward",
-      "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
-      "hot": "114"
+      "title": "Super El Niño Keeps Growing as New Forecasts Reach Record Territory Ahead Winter",
+      "url": "https://www.severe-weather.eu/long-range-2/super-el-nino-growth-accelerating-to-record-strength-fall-winter-2026-2027-forecast-impact-united-states-canada-europe-fa/",
+      "hot": "170"
     },
     {
       "rank": 9,
-      "title": "Software Engineering fundamentals matter more",
-      "url": "https://rhonabwy.com/2026/08/15/software-engineering-fundamentals-matter-more-than-ever/",
-      "hot": "37"
+      "title": "Show HN: Mic Drop, a real-time multiplayer karaoke game",
+      "url": "https://www.micdrop.gg/",
+      "hot": "45"
     },
     {
       "rank": 10,
-      "title": "Tea5767-Radio-Tuner",
-      "url": "https://github.com/turtushig22-blip/tea5767-radio-tuner",
+      "title": "Guiding Ships with Moire Patterns",
+      "url": "https://tinkerings.org/2018/03/28/guiding-ships-with-moire-patterns/",
       "hot": "29"
     }
   ]
