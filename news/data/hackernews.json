@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-16T06:43:47+00:00",
+  "updated_at": "2026-08-16T09:01:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Asus Bike Booster",
-      "url": "https://www.asus.com/accessories/bike-booster/asus-oxiis/oxiis-intelligent-bike-booster/",
-      "hot": "288"
+      "title": "What happens when an LLM never sees material beyond fifth grade?",
+      "url": "https://littlelearner-ll.github.io/",
+      "hot": "76"
     },
     {
       "rank": 2,
-      "title": "Asynchronous I/O in DuckDB: Work, Thread, Work",
-      "url": "https://duckdb.org/2026/07/31/asynchronous-io",
-      "hot": "115"
+      "title": "Asus Bike Booster",
+      "url": "https://www.asus.com/accessories/bike-booster/asus-oxiis/oxiis-intelligent-bike-booster/",
+      "hot": "362"
     },
     {
       "rank": 3,
-      "title": "The quirky personal homepages of programming language creators",
-      "url": "https://breck.lol/plMakers.html",
-      "hot": "57"
+      "title": "Asynchronous I/O in DuckDB: Work, Thread, Work",
+      "url": "https://duckdb.org/2026/07/31/asynchronous-io",
+      "hot": "146"
     },
     {
       "rank": 4,
-      "title": "Semaglutide linked to lower predicted dementia risk",
-      "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432",
-      "hot": "402"
+      "title": "Patterns and problems in emerging multi-agent systems",
+      "url": "https://www.anthropic.com/research/multiagent-systems",
+      "hot": "75"
     },
     {
       "rank": 5,
-      "title": "Patterns and problems in emerging multi-agent systems",
-      "url": "https://www.anthropic.com/research/multiagent-systems",
-      "hot": "44"
+      "title": "Semaglutide linked to lower predicted dementia risk",
+      "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432",
+      "hot": "420"
     },
     {
       "rank": 6,
-      "title": "Cultivating a state of mind where new ideas are born (2023)",
-      "url": "https://www.henrikkarlsson.xyz/p/good-ideas",
-      "hot": "138"
+      "title": "Software Engineering fundamentals matter more",
+      "url": "https://rhonabwy.com/2026/08/15/software-engineering-fundamentals-matter-more-than-ever/",
+      "hot": "122"
     },
     {
       "rank": 7,
-      "title": "Targeted marine cloud brightening weakens subsequent El Niño",
-      "url": "https://www.science.org/doi/10.1126/sciadv.adx3012",
-      "hot": "15"
+      "title": "Cultivating a state of mind where new ideas are born (2023)",
+      "url": "https://www.henrikkarlsson.xyz/p/good-ideas",
+      "hot": "165"
     },
     {
       "rank": 8,
       "title": "Super El Niño Keeps Growing as New Forecasts Reach Record Territory Ahead Winter",
       "url": "https://www.severe-weather.eu/long-range-2/super-el-nino-growth-accelerating-to-record-strength-fall-winter-2026-2027-forecast-impact-united-states-canada-europe-fa/",
-      "hot": "170"
+      "hot": "233"
     },
     {
       "rank": 9,
-      "title": "Show HN: Mic Drop, a real-time multiplayer karaoke game",
-      "url": "https://www.micdrop.gg/",
-      "hot": "45"
+      "title": "Guiding Ships with Moire Patterns",
+      "url": "https://tinkerings.org/2018/03/28/guiding-ships-with-moire-patterns/",
+      "hot": "43"
     },
     {
       "rank": 10,
-      "title": "Guiding Ships with Moire Patterns",
-      "url": "https://tinkerings.org/2018/03/28/guiding-ships-with-moire-patterns/",
-      "hot": "29"
+      "title": "Show HN: Mic Drop, a real-time multiplayer karaoke game",
+      "url": "https://www.micdrop.gg/",
+      "hot": "55"
     }
   ]
 }
