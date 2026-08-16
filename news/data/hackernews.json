@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-16T15:19:54+00:00",
+  "updated_at": "2026-08-16T17:35:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Claude: System Prompts",
       "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "hot": "165"
+      "hot": "315"
     },
     {
       "rank": 2,
       "title": "The AI Credit Resale Economy",
       "url": "https://vectoral.com/blog/who-are-the-token-brokers",
-      "hot": "23"
+      "hot": "111"
     },
     {
       "rank": 3,
-      "title": "Firefox for iOS now has a native adblocker",
-      "url": "https://support.mozilla.org/en-US/kb/block-ads-firefox-ios",
-      "hot": "131"
+      "title": "St Lucie Nuclear Reactor Unit 1 manually shutdown, 3 control rods drop into core",
+      "url": "https://www.wptv.com/news/treasure-coast/region-st-lucie-county/saint-lucie-nuclear-power-plant-unit-1-manually-shut-down-after-3-control-rods-drop-into-reactor-core",
+      "hot": "67"
     },
     {
       "rank": 4,
-      "title": "Does anyone run Postgres without PgBouncer?",
-      "url": "https://brandur.org/fragments/postgres-without-pgbouncer",
-      "hot": "75"
+      "title": "NIH is ending a key grant for budding clinical researchers",
+      "url": "https://www.science.org/content/article/nih-ending-key-grant-budding-clinical-researchers",
+      "hot": "22"
     },
     {
       "rank": 5,
-      "title": "A True Telnet BBS on a Casio Calculator",
-      "url": "https://ei3lh.eu/2026/08/16/a-true-telnet-bbs-on-a-casio-calculator/",
-      "hot": "20"
+      "title": "Anton Chekhov played at love most of his life",
+      "url": "https://commonreader.wustl.edu/winning-and-losing-at-the-great-game-of-intimacy/",
+      "hot": "17"
     },
     {
       "rank": 6,
-      "title": "A SAT Attack on Tarski's High School Algebra Problem",
-      "url": "https://arxiv.org/abs/2608.08421",
-      "hot": "37"
+      "title": "GPS and the Lost Art of Getting Lost",
+      "url": "https://www.newyorker.com/news/annals-of-inquiry/gps-and-the-lost-art-of-getting-lost",
+      "hot": "27"
     },
     {
       "rank": 7,
-      "title": "Research papers using \"kidney disappointment\" instead of \"kidney failure\"",
-      "url": "https://scholar.google.com/scholar?q=%22kidney+disappointment%22",
-      "hot": "140"
+      "title": "Clamiga: Common Lisp for the Amiga",
+      "url": "https://nnamgreb.de/blog/Clamiga+-+Common+Lisp+for+the+Amiga",
+      "hot": "32"
     },
     {
       "rank": 8,
-      "title": "Asus Bike Booster",
-      "url": "https://www.asus.com/accessories/bike-booster/asus-oxiis/oxiis-intelligent-bike-booster/",
-      "hot": "532"
+      "title": "Archie G. Norcross' Maine Forest Fire Maps (1918–22)",
+      "url": "https://publicdomainreview.org/collection/maine-forest-fire-maps/",
+      "hot": "11"
     },
     {
       "rank": 9,
-      "title": "Chestnut – eGPU dock with open-source firmware",
-      "url": "https://hwbusters.com/news/comma-ai-egpu-dock-runs-open-source-firmware-249-bare-799-with-an-rx-9060/",
-      "hot": "73"
+      "title": "Firefox for iOS now has a native adblocker",
+      "url": "https://support.mozilla.org/en-US/kb/block-ads-firefox-ios",
+      "hot": "286"
     },
     {
       "rank": 10,
-      "title": "Asynchronous I/O in DuckDB: Work, Thread, Work",
-      "url": "https://duckdb.org/2026/07/31/asynchronous-io",
-      "hot": "226"
+      "title": "Before Rightmove, there was the Cosmorama",
+      "url": "https://www.ianvisits.co.uk/articles/before-rightmove-there-was-the-cosmorama-londons-forgotten-property-innovation-91687/",
+      "hot": "6"
     }
   ]
 }
