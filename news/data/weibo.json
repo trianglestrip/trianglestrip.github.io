@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-16T16:10:50+00:00",
+  "updated_at": "2026-08-16T16:39:34+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,32 +30,32 @@
     },
     {
       "rank": 5,
+      "title": "女主播希望停止榜一大哥病态折磨",
+      "url": "https://s.weibo.com/weibo?q=%E5%A5%B3%E4%B8%BB%E6%92%AD%E5%B8%8C%E6%9C%9B%E5%81%9C%E6%AD%A2%E6%A6%9C%E4%B8%80%E5%A4%A7%E5%93%A5%E7%97%85%E6%80%81%E6%8A%98%E7%A3%A8",
+      "hot": ""
+    },
+    {
+      "rank": 6,
+      "title": "邓紫棋",
+      "url": "https://s.weibo.com/weibo?q=%E9%82%93%E7%B4%AB%E6%A3%8B",
+      "hot": ""
+    },
+    {
+      "rank": 7,
+      "title": "送礼上淘宝",
+      "url": "https://s.weibo.com/weibo?q=%E9%80%81%E7%A4%BC%E4%B8%8A%E6%B7%98%E5%AE%9D",
+      "hot": ""
+    },
+    {
+      "rank": 8,
       "title": "请3天假连休13天",
       "url": "https://s.weibo.com/weibo?q=%E8%AF%B73%E5%A4%A9%E5%81%87%E8%BF%9E%E4%BC%9113%E5%A4%A9",
       "hot": ""
     },
     {
-      "rank": 6,
-      "title": "Jennie因服装问题道歉",
-      "url": "https://s.weibo.com/weibo?q=Jennie%E5%9B%A0%E6%9C%8D%E8%A3%85%E9%97%AE%E9%A2%98%E9%81%93%E6%AD%89",
-      "hot": ""
-    },
-    {
-      "rank": 7,
-      "title": "吴艳妮13秒12夺冠",
-      "url": "https://s.weibo.com/weibo?q=%E5%90%B4%E8%89%B3%E5%A6%AE13%E7%A7%9212%E5%A4%BA%E5%86%A0",
-      "hot": ""
-    },
-    {
-      "rank": 8,
-      "title": "TMEA获奖名单",
-      "url": "https://s.weibo.com/weibo?q=TMEA%E8%8E%B7%E5%A5%96%E5%90%8D%E5%8D%95",
-      "hot": ""
-    },
-    {
       "rank": 9,
-      "title": "阿森纳vs曼城",
-      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A3%AE%E7%BA%B3vs%E6%9B%BC%E5%9F%8E",
+      "title": "阿森纳3比0曼城",
+      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A3%AE%E7%BA%B33%E6%AF%940%E6%9B%BC%E5%9F%8E",
       "hot": ""
     },
     {
