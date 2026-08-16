@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-16T20:40:57+00:00",
+  "updated_at": "2026-08-16T20:56:12+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -42,26 +42,26 @@
     },
     {
       "rank": 7,
-      "title": "阿森纳3比0曼城",
-      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A3%AE%E7%BA%B33%E6%AF%940%E6%9B%BC%E5%9F%8E",
-      "hot": ""
-    },
-    {
-      "rank": 8,
       "title": "盗墓笔记",
       "url": "https://s.weibo.com/weibo?q=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "居民存款7月又少了6300亿",
       "url": "https://s.weibo.com/weibo?q=%E5%B1%85%E6%B0%91%E5%AD%98%E6%AC%BE7%E6%9C%88%E5%8F%88%E5%B0%91%E4%BA%866300%E4%BA%BF",
       "hot": ""
     },
     {
+      "rank": 9,
+      "title": "阿森纳3比0曼城",
+      "url": "https://s.weibo.com/weibo?q=%E9%98%BF%E6%A3%AE%E7%BA%B33%E6%AF%940%E6%9B%BC%E5%9F%8E",
+      "hot": ""
+    },
+    {
       "rank": 10,
-      "title": "王曼昱vs王艺迪",
-      "url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E6%9B%BC%E6%98%B1vs%E7%8E%8B%E8%89%BA%E8%BF%AA",
+      "title": "恋与深空",
+      "url": "https://s.weibo.com/weibo?q=%E6%81%8B%E4%B8%8E%E6%B7%B1%E7%A9%BA",
       "hot": ""
     }
   ]
