@@ -1,50 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-08-17T06:43:30+00:00",
+  "updated_at": "2026-08-17T13:09:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[TypeScript] cordiverse/cordis",
-      "url": "https://github.com/cordiverse/cordis",
-      "hot": "5,115"
+      "title": "[Python] harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "hot": "105,358"
     },
     {
       "rank": 2,
-      "title": "[Shell] basecamp/omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "hot": "25,612"
+      "title": "[Python] usestrix/strix",
+      "url": "https://github.com/usestrix/strix",
+      "hot": "53,687"
     },
     {
       "rank": 3,
-      "title": "[Python] unslothai/unsloth",
-      "url": "https://github.com/unslothai/unsloth",
-      "hot": "72,821"
+      "title": "[Rust] nautechsystems/nautilus_trader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "hot": "25,697"
     },
     {
       "rank": 4,
-      "title": "[TypeScript] OpenCut-app/OpenCut",
-      "url": "https://github.com/OpenCut-app/OpenCut",
-      "hot": "84,131"
+      "title": "[Python] mukul975/Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "hot": "28,127"
     },
     {
       "rank": 5,
-      "title": "[Python] public-apis/public-apis",
-      "url": "https://github.com/public-apis/public-apis",
-      "hot": "462,280"
+      "title": "[Rust] AlexsJones/llmfit",
+      "url": "https://github.com/AlexsJones/llmfit",
+      "hot": "32,042"
     },
     {
       "rank": 6,
-      "title": "[JavaScript] ToolJet/ToolJet",
-      "url": "https://github.com/ToolJet/ToolJet",
-      "hot": "40,228"
+      "title": "[JavaScript] santifer/career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "hot": "64,253"
     },
     {
       "rank": 7,
-      "title": "[Python] cactus-compute/needle",
-      "url": "https://github.com/cactus-compute/needle",
-      "hot": "6,798"
+      "title": "[Python] jundot/omlx",
+      "url": "https://github.com/jundot/omlx",
+      "hot": "18,855"
+    },
+    {
+      "rank": 8,
+      "title": "[TypeScript] immich-app/immich",
+      "url": "https://github.com/immich-app/immich",
+      "hot": "110,869"
+    },
+    {
+      "rank": 9,
+      "title": "[TypeScript] cordiverse/cordis",
+      "url": "https://github.com/cordiverse/cordis",
+      "hot": "5,396"
+    },
+    {
+      "rank": 10,
+      "title": "[TypeScript] agalwood/Motrix",
+      "url": "https://github.com/agalwood/Motrix",
+      "hot": "52,852"
     }
   ]
 }
