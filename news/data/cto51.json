@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-17T04:56:24+00:00",
+  "updated_at": "2026-08-17T07:39:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Codex正式开放1M上下文！解除GPT-5.6 Sol封印，三行配置搞定",
+      "url": "https://www.51cto.com/article/853178.html",
+      "hot": "非常简单，在Codex的config.toml文件开头输入以上咒语，重启客户端、开启新会话就OK。一直到约90万token时，GPT-5.6 Sol才会开始自动压缩历史内容。"
+    },
+    {
+      "rank": 2,
       "title": "从V1的\"状态焦虑\"到V2的\"状态自由\"：HarmonyOS状态管理装饰器完全指南",
       "url": "https://ost.51cto.com/posts/55176",
       "hot": "从V1的&quot;状态焦虑&quot;到V2的&quot;状态自由&quot;：HarmonyOS状态管理装饰器完全指南一段让我怀疑人生的调试经历去年秋天，我在做一个功能不算复杂的页面..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "当鸿蒙遇见Web：我用ArkWeb的五种武器搞定混合开发\"老大难\"",
       "url": "https://ost.51cto.com/posts/55171",
       "hot": "当鸿蒙遇见Web：我用ArkWeb的五种武器搞定混合开发&quot;老大难&quot;一个让我深夜改方案的需求事情是这样的。去年年底，我们接到一个需求：把一个已..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "AI宣布森多夫猜想告破！陶哲轩发现它隐藏的更强结果",
       "url": "https://www.51cto.com/article/853126.html",
       "hot": "森多夫猜想，被一位名叫 Lech Mazur 的初创科技公司 CEO，借助 AI 完成了证明。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "编程能力开源SOTA，网络安全提升两倍！智谱发布GLM-5.3",
       "url": "https://www.51cto.com/article/853141.html",
       "hot": "GLLM-5.3沿用GLM-5.2的底座，靠一个月后训练缩放，把coding与长程任务能力抬了一大截，顺带解锁涌现式网络能力。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "李飞飞最新访谈：AI咋能代替人呢？",
       "url": "https://www.51cto.com/article/853123.html",
       "hot": "在Huberman Lab最新一期访谈中，李飞飞还讨论了“为什么苏格拉底是人类历史上最顶尖的‘提示词工程师’”、“为什么不能一刀切地禁止学生们用AI”等非常有趣的话题，并给出了一个笃定的答案。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "说一个反常识的真相，Agent如今在真实工作场景的成功率依然很低",
       "url": "https://www.51cto.com/article/853144.html",
       "hot": "在AI的世界里，会解题，和会工作，中间确实还隔着一些比较遥远的距离。模型在Coding这个任务上，现在确实做的很好，跑的很快，但是在大量真实工作任务的场景中，还有很大的进步空间。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "奥特曼放话：半年内，GPT上下文覆盖你的一切",
       "url": "https://www.51cto.com/article/853122.html",
       "hot": "奥特曼到底想做什么？下一代GPT到底能帮我们解决什么问题？瞄准的是哪些用户群体？"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "AI也会“闹情绪”！中科大新研究：困惑和焦虑让AI更会干活儿",
       "url": "https://www.51cto.com/article/853121.html",
       "hot": "最近，中科大、牛津等机构研究者让AI用情绪向量替代文本做技能选择，结果发现——允许AI识别这些“内心情绪”并由此做出行动，能大幅提升AI的工作能力……"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Anthropic CEO辟谣！为亡父转AI，十年内灭癌症",
       "url": "https://www.51cto.com/article/853120.html",
       "hot": "Dario Amodei几乎从不碰社交媒体。但就在IPO估值被推到2万亿美元的节骨眼上，他罕见地发了一篇长文，正面回应硅谷对他最大的质疑。"
-    },
-    {
-      "rank": 10,
-      "title": "OpenAI研究员，曝光ASI降临时间线：大多数已成现实！",
-      "url": "https://www.51cto.com/article/853119.html",
-      "hot": "Anthropic 发布 Claude Mythos Preview 后，在 Project Glasswing 框架下把它部署到多个开源项目中，这个模型自主发现了数千个零日漏洞，有些在人类安全专家的审查下藏了十到二十年。"
     }
   ]
 }
