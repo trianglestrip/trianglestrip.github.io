@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-17T14:13:05+00:00",
+  "updated_at": "2026-08-17T16:36:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
-      "url": "https://blog.roboflow.com/openai-gpt-5-6/",
-      "hot": "92"
+      "title": "A Preview of DuckDB v2.0",
+      "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
+      "hot": "217"
     },
     {
       "rank": 2,
-      "title": "Incident with Github.com",
-      "url": "https://www.githubstatus.com/incidents/zkxwbgr0cnmx",
-      "hot": "249"
+      "title": "AI-Generated GitHub Copilot \"Autofix\" Allowed Compromise of Snowflake's Jira",
+      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "hot": "103"
     },
     {
       "rank": 3,
-      "title": "Show HN: Sokoban AI Solver",
-      "url": "https://mkornreich.me/projects/sokoban/",
-      "hot": "19"
+      "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+      "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "hot": "188"
     },
     {
       "rank": 4,
-      "title": "GitHub down again? no PR access",
-      "url": "https://news.ycombinator.com/item?id=49330632",
-      "hot": "55"
-    },
-    {
-      "rank": 5,
-      "title": "Tell HN: GitHub Is Experiencing Degraded Performance",
-      "url": "https://news.ycombinator.com/item?id=49330597",
-      "hot": "62"
-    },
-    {
-      "rank": 6,
-      "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
-      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "hot": "646"
-    },
-    {
-      "rank": 7,
-      "title": "How Go detects struct copies with sync.noCopy",
-      "url": "https://func25.dev/posts/go-sync-nocopy/",
+      "title": "Launch HN: Speko (YC S26) – OpenRouter for Voice AI",
+      "url": "https://speko.ai/",
       "hot": "25"
     },
     {
+      "rank": 5,
+      "title": "How to disable or avoid intrusive AI",
+      "url": "https://www.librarian.net/notoai/",
+      "hot": "77"
+    },
+    {
+      "rank": 6,
+      "title": "How to put 170 atoms in an atom",
+      "url": "https://signoregalilei.com/2026/08/02/how-to-put-170-atoms-in-an-atom/",
+      "hot": "42"
+    },
+    {
+      "rank": 7,
+      "title": "Ask HN: Alternatives to GitHub",
+      "url": "https://news.ycombinator.com/item?id=49331033",
+      "hot": "182"
+    },
+    {
       "rank": 8,
-      "title": "My Ten Years in No Man's Sky",
-      "url": "https://nmsspot.com/2026/08/09/my-ten-years-in-no-mans-sky/",
-      "hot": "12"
+      "title": "Olo (Color)",
+      "url": "https://en.wikipedia.org/wiki/Olo_(color)",
+      "hot": "57"
     },
     {
       "rank": 9,
-      "title": "On A.I. regulation and messaging",
-      "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
-      "hot": "160"
+      "title": "Apple's App Tracking Transparency treated its own apps better than rivals",
+      "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/EN/Pressemitteilungen/2026/08_17_2026_Apple_ATTF.html",
+      "hot": "167"
     },
     {
       "rank": 10,
-      "title": "Stripe to Buy OpenRouter for $7B",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
-      "hot": "51"
+      "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "hot": "706"
     }
   ]
 }
