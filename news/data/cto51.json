@@ -1,26 +1,26 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-17T07:39:08+00:00",
+  "updated_at": "2026-08-17T09:53:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "【鸿蒙实战】第 08 篇：冷启动从 2.8s 优化到 0.9s——耗时拆解与数据对比实战（HarmonyOS 7.x）",
+      "url": "https://ost.51cto.com/posts/55188",
+      "hot": "摘要:信息流App首版冷启动实测2.8秒，产品验收时被当场打回：&quot;用户点开图标到看到首页，3秒都够喝口水了。&quot;我原以为冷启动优化是&quot;玄学&quot;，直..."
+    },
+    {
+      "rank": 2,
       "title": "Codex正式开放1M上下文！解除GPT-5.6 Sol封印，三行配置搞定",
       "url": "https://www.51cto.com/article/853178.html",
       "hot": "非常简单，在Codex的config.toml文件开头输入以上咒语，重启客户端、开启新会话就OK。一直到约90万token时，GPT-5.6 Sol才会开始自动压缩历史内容。"
     },
     {
-      "rank": 2,
-      "title": "从V1的\"状态焦虑\"到V2的\"状态自由\"：HarmonyOS状态管理装饰器完全指南",
-      "url": "https://ost.51cto.com/posts/55176",
-      "hot": "从V1的&quot;状态焦虑&quot;到V2的&quot;状态自由&quot;：HarmonyOS状态管理装饰器完全指南一段让我怀疑人生的调试经历去年秋天，我在做一个功能不算复杂的页面..."
-    },
-    {
       "rank": 3,
-      "title": "当鸿蒙遇见Web：我用ArkWeb的五种武器搞定混合开发\"老大难\"",
-      "url": "https://ost.51cto.com/posts/55171",
-      "hot": "当鸿蒙遇见Web：我用ArkWeb的五种武器搞定混合开发&quot;老大难&quot;一个让我深夜改方案的需求事情是这样的。去年年底，我们接到一个需求：把一个已..."
+      "title": "HarmonyOS AI开发工具：DevEco CLI介绍与DevEco Code集成",
+      "url": "https://ost.51cto.com/posts/55179",
+      "hot": "在上一篇文章中为大家介绍了DevEcoCode，今天继续分享HarmonyOSAICoding的另一个重要工具：DevEcoCLI。DevEcoCLI是一款面向各类AIAgent使用..."
     },
     {
       "rank": 4,

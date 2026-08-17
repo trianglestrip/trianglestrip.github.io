@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-17T07:39:09+00:00",
+  "updated_at": "2026-08-17T09:53:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
       "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "hot": "362"
+      "hot": "468"
     },
     {
       "rank": 2,
-      "title": "Linear Algebra Done Right – Sheldon Axler",
-      "url": "https://linear.axler.net/",
-      "hot": "34"
+      "title": "Beware the Permanent Periphery",
+      "url": "https://asteriskmag.com/issues/15/beware-the-permanent-periphery",
+      "hot": "22"
     },
     {
       "rank": 3,
-      "title": "The Life and Death of Direct File [pdf]",
-      "url": "https://www.ischool.berkeley.edu/sites/default/files/vinton_report_5.pdf",
-      "hot": "180"
+      "title": "On A.I. regulation and messaging",
+      "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
+      "hot": "51"
     },
     {
       "rank": 4,
-      "title": "GIMP Development Update",
-      "url": "https://www.gimp.org/news/2026/08/16/dev-update-august-2026/",
-      "hot": "56"
+      "title": "A third world engineer responds to “RISC-V: They should have known better”",
+      "url": "https://rvembedded.com/blog_post/12/",
+      "hot": "506"
     },
     {
       "rank": 5,
-      "title": "A third world engineer responds to “RISC-V: They should have known better”",
-      "url": "https://rvembedded.com/blog_post/12/",
-      "hot": "474"
+      "title": "Anthropic's 'watermark' text adulteration in Claude is a perversion of writing",
+      "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+      "hot": "265"
     },
     {
       "rank": 6,
-      "title": "Reticulum – Decentralized Mesh Network",
-      "url": "https://reticulum.network/",
-      "hot": "101"
+      "title": "Linear algebra done right",
+      "url": "https://linear.axler.net/",
+      "hot": "80"
     },
     {
       "rank": 7,
-      "title": "Claude: System Prompts",
-      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "hot": "630"
+      "title": "Reticulum – Decentralized Mesh Network",
+      "url": "https://reticulum.network/",
+      "hot": "125"
     },
     {
       "rank": 8,
-      "title": "AGI-64 Brings Sierra Adventures to the Commodore 64",
-      "url": "https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64",
-      "hot": "69"
+      "title": "Claude: System Prompts",
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "hot": "661"
     },
     {
       "rank": 9,
-      "title": "Rhombus 1.1 is now available",
-      "url": "https://blog.racket-lang.org/2026/08/rhombus-v1.1.html",
-      "hot": "68"
+      "title": "The continuing \"Q collar\" scandal",
+      "url": "https://statmodeling.stat.columbia.edu/2026/08/13/we-should-probably-be-doing-more-coverage-of-science-adjacent-medical-scams-like-the-q-collar-and-less-on-repulsively-self-promoting-but-ultimately-less-harmful-academic-grifters/",
+      "hot": "8"
     },
     {
       "rank": 10,
-      "title": "Gakutensoku",
-      "url": "https://en.wikipedia.org/wiki/Gakutensoku",
-      "hot": "6"
+      "title": "GIMP Development Update",
+      "url": "https://www.gimp.org/news/2026/08/16/dev-update-august-2026/",
+      "hot": "171"
     }
   ]
 }
