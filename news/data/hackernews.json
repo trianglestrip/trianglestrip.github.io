@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-17T11:55:20+00:00",
+  "updated_at": "2026-08-17T14:13:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Self hosted email continues to steeply decline",
-      "url": "https://labs.ripe.net/author/artem-berezin/two-providers-a-stubborn-plateau-and-a-very-long-tail-email-in-the-tranco-top-1m/",
-      "hot": "26"
+      "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+      "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "hot": "92"
     },
     {
       "rank": 2,
-      "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
-      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "hot": "558"
+      "title": "Incident with Github.com",
+      "url": "https://www.githubstatus.com/incidents/zkxwbgr0cnmx",
+      "hot": "249"
     },
     {
       "rank": 3,
-      "title": "On A.I. regulation and messaging",
-      "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
-      "hot": "104"
+      "title": "Show HN: Sokoban AI Solver",
+      "url": "https://mkornreich.me/projects/sokoban/",
+      "hot": "19"
     },
     {
       "rank": 4,
-      "title": "Anthropic's 'watermark' text adulteration in Claude is a perversion of writing",
-      "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-      "hot": "359"
+      "title": "GitHub down again? no PR access",
+      "url": "https://news.ycombinator.com/item?id=49330632",
+      "hot": "55"
     },
     {
       "rank": 5,
-      "title": "A third world engineer responds to “RISC-V: They should have known better”",
-      "url": "https://rvembedded.com/blog_post/12/",
-      "hot": "540"
+      "title": "Tell HN: GitHub Is Experiencing Degraded Performance",
+      "url": "https://news.ycombinator.com/item?id=49330597",
+      "hot": "62"
     },
     {
       "rank": 6,
-      "title": "Reticulum – Decentralized Mesh Network",
-      "url": "https://reticulum.network/",
-      "hot": "145"
+      "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "hot": "646"
     },
     {
       "rank": 7,
       "title": "How Go detects struct copies with sync.noCopy",
       "url": "https://func25.dev/posts/go-sync-nocopy/",
-      "hot": "3"
+      "hot": "25"
     },
     {
       "rank": 8,
-      "title": "Claude: System Prompts",
-      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "hot": "682"
+      "title": "My Ten Years in No Man's Sky",
+      "url": "https://nmsspot.com/2026/08/09/my-ten-years-in-no-mans-sky/",
+      "hot": "12"
     },
     {
       "rank": 9,
-      "title": "Show HN: Desktopcolors.com – A museum for solid background colors of classic OS",
-      "url": "https://desktopcolors.com",
-      "hot": "22"
+      "title": "On A.I. regulation and messaging",
+      "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
+      "hot": "160"
     },
     {
       "rank": 10,
-      "title": "Gakutensoku",
-      "url": "https://en.wikipedia.org/wiki/Gakutensoku",
-      "hot": "40"
+      "title": "Stripe to Buy OpenRouter for $7B",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+      "hot": "51"
     }
   ]
 }
