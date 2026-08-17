@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-17T09:53:17+00:00",
+  "updated_at": "2026-08-17T11:55:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
-      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "hot": "468"
+      "title": "Self hosted email continues to steeply decline",
+      "url": "https://labs.ripe.net/author/artem-berezin/two-providers-a-stubborn-plateau-and-a-very-long-tail-email-in-the-tranco-top-1m/",
+      "hot": "26"
     },
     {
       "rank": 2,
-      "title": "Beware the Permanent Periphery",
-      "url": "https://asteriskmag.com/issues/15/beware-the-permanent-periphery",
-      "hot": "22"
+      "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "hot": "558"
     },
     {
       "rank": 3,
       "title": "On A.I. regulation and messaging",
       "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
-      "hot": "51"
+      "hot": "104"
     },
     {
       "rank": 4,
-      "title": "A third world engineer responds to “RISC-V: They should have known better”",
-      "url": "https://rvembedded.com/blog_post/12/",
-      "hot": "506"
+      "title": "Anthropic's 'watermark' text adulteration in Claude is a perversion of writing",
+      "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+      "hot": "359"
     },
     {
       "rank": 5,
-      "title": "Anthropic's 'watermark' text adulteration in Claude is a perversion of writing",
-      "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-      "hot": "265"
+      "title": "A third world engineer responds to “RISC-V: They should have known better”",
+      "url": "https://rvembedded.com/blog_post/12/",
+      "hot": "540"
     },
     {
       "rank": 6,
-      "title": "Linear algebra done right",
-      "url": "https://linear.axler.net/",
-      "hot": "80"
+      "title": "Reticulum – Decentralized Mesh Network",
+      "url": "https://reticulum.network/",
+      "hot": "145"
     },
     {
       "rank": 7,
-      "title": "Reticulum – Decentralized Mesh Network",
-      "url": "https://reticulum.network/",
-      "hot": "125"
+      "title": "How Go detects struct copies with sync.noCopy",
+      "url": "https://func25.dev/posts/go-sync-nocopy/",
+      "hot": "3"
     },
     {
       "rank": 8,
       "title": "Claude: System Prompts",
       "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "hot": "661"
+      "hot": "682"
     },
     {
       "rank": 9,
-      "title": "The continuing \"Q collar\" scandal",
-      "url": "https://statmodeling.stat.columbia.edu/2026/08/13/we-should-probably-be-doing-more-coverage-of-science-adjacent-medical-scams-like-the-q-collar-and-less-on-repulsively-self-promoting-but-ultimately-less-harmful-academic-grifters/",
-      "hot": "8"
+      "title": "Show HN: Desktopcolors.com – A museum for solid background colors of classic OS",
+      "url": "https://desktopcolors.com",
+      "hot": "22"
     },
     {
       "rank": 10,
-      "title": "GIMP Development Update",
-      "url": "https://www.gimp.org/news/2026/08/16/dev-update-august-2026/",
-      "hot": "171"
+      "title": "Gakutensoku",
+      "url": "https://en.wikipedia.org/wiki/Gakutensoku",
+      "hot": "40"
     }
   ]
 }
