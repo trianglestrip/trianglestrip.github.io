@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-16T23:59:33+00:00",
+  "updated_at": "2026-08-17T02:35:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7 音频可信识别实践：09｜重叠发言标记与多人语音结果复核设计 #智绘鸿蒙·大有“视”界#",
-      "url": "https://ost.51cto.com/posts/55098",
-      "hot": "系列：HarmonyOS7AI变声检测在音频可信识别中的应用实践（第09篇）第08篇把多人语音区间的边界修得更稳之后，我拿一段18分钟的小组讨论录音..."
+      "title": "HarmonyOS7 ArkUI Navigation 与闪控球实战#智绘鸿蒙·大有“视”界#",
+      "url": "https://ost.51cto.com/posts/55157",
+      "hot": "前言在HarmonyOS7应用里，页面导航和临时悬浮能力是两个很容易被低估的基础设施。导航栈没有和UI正确绑定，页面状态就会悄悄失控；闪控球的..."
     },
     {
       "rank": 2,
-      "title": "碰一下屏幕，素材自己\"飞\"到光标下 #智绘鸿蒙·大有“视”界#",
-      "url": "https://ost.51cto.com/posts/55097",
-      "hot": "一张配图，我折腾了20分钟在开会的前20分钟，我需要把一张刚从手机里刚拍的产品图，插进电脑上正在改的PPT第5页。结果呢，我先打开微信「文..."
+      "title": "HarmonyOS7 云函数开发教程：创建调试部署与端侧调用 #智绘鸿蒙·大有“视”界#",
+      "url": "https://ost.51cto.com/posts/55156",
+      "hot": "云函数是HarmonyOS端云一体化开发里最接近&ldquo;后端接口&rdquo;的能力。它运行在AGC云端，端侧ArkTS代码可以通过cloudFunction.call()直接调用，不..."
     },
     {
       "rank": 3,
-      "title": "刚刚，GLM-5.3撕开闭源安全神话！0.1倍参数追平Mythos战力",
-      "url": "https://www.51cto.com/article/853070.html",
-      "hot": "两个月前，Anthropic的Mythos自主挖出FreeBSD里藏了17年的漏洞，安全圈集体失眠。就在刚刚，Cursor也被一个中国AI翻了。   清华NASP实验室用它深入底层架构，直接在权限校验逻辑里撕开了一道口子。攻击者一旦利用，可以任意写入文件，甚至接管Cursor整个开发环境。"
+      "title": "AI宣布森多夫猜想告破！陶哲轩发现它隐藏的更强结果",
+      "url": "https://www.51cto.com/article/853126.html",
+      "hot": "森多夫猜想，被一位名叫 Lech Mazur 的初创科技公司 CEO，借助 AI 完成了证明。"
     },
     {
       "rank": 4,
-      "title": "刚刚，GLM-5.3发布：Coding更接近Fable 5！潜伏40年的bug都被揪出来了",
-      "url": "https://www.51cto.com/article/853067.html",
-      "hot": "昨儿DeepSeek V4 Pro正式版+Harness、Grok 4.6“你方唱罢”，今儿GLM-5.3闪亮一记“我登场”——一出手便杀回开源一哥、国模一哥，甚至在Coding方面更加接近Claude Fable 5！"
+      "title": "编程能力开源SOTA，网络安全提升两倍！智谱发布GLM-5.3",
+      "url": "https://www.51cto.com/article/853141.html",
+      "hot": "GLLM-5.3沿用GLM-5.2的底座，靠一个月后训练缩放，把coding与长程任务能力抬了一大截，顺带解锁涌现式网络能力。"
     },
     {
       "rank": 5,
-      "title": "自动化会话超人工！Ramp Inspect Agent 接入 CI/告警，实现 AI SRE 自主处理线上事故",
-      "url": "https://www.51cto.com/article/852995.html",
-      "hot": "工程师还没来得及输入第一句 Prompt，Agent 已经开始干活了。"
+      "title": "李飞飞最新访谈：AI咋能代替人呢？",
+      "url": "https://www.51cto.com/article/853123.html",
+      "hot": "在Huberman Lab最新一期访谈中，李飞飞还讨论了“为什么苏格拉底是人类历史上最顶尖的‘提示词工程师’”、“为什么不能一刀切地禁止学生们用AI”等非常有趣的话题，并给出了一个笃定的答案。"
     },
     {
       "rank": 6,
-      "title": "Vue 最强动画库！120+ 动画组件，实现复杂动画效果！",
-      "url": "https://www.51cto.com/article/852993.html",
-      "hot": "如果你正在使用 Vue 或 Nuxt 框架开发项目，不妨尝试 InspiraUI。它能帮你提升开发效率、优化界面效果，让前端开发变得更轻松、更出彩。"
+      "title": "说一个反常识的真相，Agent如今在真实工作场景的成功率依然很低",
+      "url": "https://www.51cto.com/article/853144.html",
+      "hot": "在AI的世界里，会解题，和会工作，中间确实还隔着一些比较遥远的距离。模型在Coding这个任务上，现在确实做的很好，跑的很快，但是在大量真实工作任务的场景中，还有很大的进步空间。"
     },
     {
       "rank": 7,
-      "title": "告别盲目 AI 运维！分级自治 SRE 自愈框架，彻底终结告警爆炸",
-      "url": "https://www.51cto.com/article/852992.html",
-      "hot": "一套面向自愈基础设施的渐进式自治实用框架，帮助 SRE 团队摆脱被动救火模式。"
+      "title": "奥特曼放话：半年内，GPT上下文覆盖你的一切",
+      "url": "https://www.51cto.com/article/853122.html",
+      "hot": "奥特曼到底想做什么？下一代GPT到底能帮我们解决什么问题？瞄准的是哪些用户群体？"
     },
     {
       "rank": 8,
-      "title": "从零到一带你速通DeepSeek Harness",
-      "url": "https://www.51cto.com/article/852991.html",
-      "hot": "你用的Claude Code、Codex、Workbuddy这些，本质都是Harness，要跟模型比如Claude Fable 5、GPT 5.6-Sol这些搭配起来用才行，要不然就是个纯空壳。"
+      "title": "AI也会“闹情绪”！中科大新研究：困惑和焦虑让AI更会干活儿",
+      "url": "https://www.51cto.com/article/853121.html",
+      "hot": "最近，中科大、牛津等机构研究者让AI用情绪向量替代文本做技能选择，结果发现——允许AI识别这些“内心情绪”并由此做出行动，能大幅提升AI的工作能力……"
     },
     {
       "rank": 9,
-      "title": "不止做大模型， DeepSeek 悄悄放出 Harness，本地 Agent 有了新底座",
-      "url": "https://www.51cto.com/article/852988.html",
-      "hot": "当前为「开发者预览探索版」，框架功能持续迭代、接口存在频繁变更，存在破坏性更新，仅适用于技术学习、功能探索、Agent 预研实验，严禁直接用于生产环境。开源协议为 MIT，可自由体验、学习及实验性商用探索。"
+      "title": "Anthropic CEO辟谣！为亡父转AI，十年内灭癌症",
+      "url": "https://www.51cto.com/article/853120.html",
+      "hot": "Dario Amodei几乎从不碰社交媒体。但就在IPO估值被推到2万亿美元的节骨眼上，他罕见地发了一篇长文，正面回应硅谷对他最大的质疑。"
     },
     {
       "rank": 10,
-      "title": "你的 MCP Server 该升 2.0 了，无状态到底解决了什么？",
-      "url": "https://www.51cto.com/article/852985.html",
-      "hot": "我试了 MCP 官方 Java SDK，它目前没有适配 2.0 的无状态特性，跑起来直接 500。langchain4j 的相关集成 SDK 也没跟上。相比之下，TypeScript SDK 是四个 Tier 1 SDK 里最先适配 2026-07-28 规范的，​​createMcpHandler​​ 一行搞定。"
+      "title": "OpenAI研究员，曝光ASI降临时间线：大多数已成现实！",
+      "url": "https://www.51cto.com/article/853119.html",
+      "hot": "Anthropic 发布 Claude Mythos Preview 后，在 Project Glasswing 框架下把它部署到多个开源项目中，这个模型自主发现了数千个零日漏洞，有些在人类安全专家的审查下藏了十到二十年。"
     }
   ]
 }

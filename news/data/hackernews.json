@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-16T23:59:34+00:00",
+  "updated_at": "2026-08-17T02:36:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "A 3rd World Embedded Engineer Responds to \"RISC-V They Should Have Known Better\"",
-      "url": "https://rvembedded.com/blog_post/12/",
-      "hot": "323"
+      "title": "The Life and Death of Direct File [pdf]",
+      "url": "https://www.ischool.berkeley.edu/sites/default/files/vinton_report_5.pdf",
+      "hot": "74"
     },
     {
       "rank": 2,
-      "title": "Claude: System Prompts",
-      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "hot": "503"
+      "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "hot": "81"
     },
     {
       "rank": 3,
-      "title": "SIMD in the 90s: Programming Intel's Pentium MMX",
-      "url": "https://pikuma.com/blog/programming-intel-pentium-mmx-simd",
-      "hot": "56"
+      "title": "AGI-64 Brings Sierra Adventures to the Commodore 64",
+      "url": "https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64",
+      "hot": "9"
     },
     {
       "rank": 4,
-      "title": "Low-Tech Ceramic Water Filter",
-      "url": "https://wiki.lowtechlab.org/wiki/Filtre_%C3%A0_eau_c%C3%A9ramique/en",
-      "hot": "72"
+      "title": "Rhombus 1.1 is now available",
+      "url": "https://blog.racket-lang.org/2026/08/rhombus-v1.1.html",
+      "hot": "23"
     },
     {
       "rank": 5,
-      "title": "A quick look at zero-knowledge proofs",
-      "url": "https://bernsteinbear.com/blog/zkp/",
-      "hot": "26"
+      "title": "A 3rd World Embedded Engineer Responds to \"RISC-V They Should Have Known Better\"",
+      "url": "https://rvembedded.com/blog_post/12/",
+      "hot": "388"
     },
     {
       "rank": 6,
-      "title": "Models Are Getting Dumber on Purpose",
-      "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
-      "hot": "226"
+      "title": "Claude: System Prompts",
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "hot": "556"
     },
     {
       "rank": 7,
-      "title": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
-      "hot": "133"
+      "title": "Interview with Amit Patel, Creator of \"Solar Realms Elite\"",
+      "url": "https://breakintochat.com/blog/2013/02/18/amit-patel-creator-of-solar-realms-elite/",
+      "hot": "15"
     },
     {
       "rank": 8,
-      "title": "Protobuf has LSP support. You're welcome",
-      "url": "https://buf.build/blog/protobuf-lsp",
-      "hot": "97"
+      "title": "SIMD in the 90s: Programming Intel's Pentium MMX",
+      "url": "https://pikuma.com/blog/programming-intel-pentium-mmx-simd",
+      "hot": "75"
     },
     {
       "rank": 9,
-      "title": "The AI Credit Resale Economy",
-      "url": "https://vectoral.com/blog/who-are-the-token-brokers",
-      "hot": "217"
+      "title": "Low-Tech Ceramic Water Filter",
+      "url": "https://wiki.lowtechlab.org/wiki/Filtre_%C3%A0_eau_c%C3%A9ramique/en",
+      "hot": "100"
     },
     {
       "rank": 10,
-      "title": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-      "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-      "hot": "100"
+      "title": "Reticulum – Decentralized Mesh Network",
+      "url": "https://reticulum.network/",
+      "hot": "20"
     }
   ]
 }

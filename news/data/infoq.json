@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-16T23:59:38+00:00",
+  "updated_at": "2026-08-17T02:36:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "盘古训练与推理通信优化实践：亲和昇腾平台的性能探索｜AICon深圳",
+      "url": "https://www.infoq.cn/article/jOPScUAQrlfpNwDAhaOL?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 17 Aug 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Netflix详述其基于Triton与vLLM的内部LLM服务平台",
+      "url": "https://www.infoq.cn/article/J9Zi9LELcpxFRe23PHdY?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 17 Aug 2026 09:56:24 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "中行回应“Token贷”：已投放3户800万元；头部AI大厂员工：90小时工作制成常态；宇树科技中签者不敢发朋友圈：怕被嫉妒｜AI 周报",
+      "url": "https://www.infoq.cn/article/GzEYHpjhJafhihcYc58x?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 17 Aug 2026 09:46:59 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "编程能力提高50%！GLM-5.3 满分通过了GPT-5.6给的Coding 测试",
+      "url": "https://www.infoq.cn/article/xWyWwu4ZNptlhpb15tia?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 17 Aug 2026 09:44:16 GMT"
+    },
+    {
+      "rank": 5,
       "title": "从代码生成到研发闭环：AI Coding 在金融科技 SDLC 中的落地实践｜AICon深圳",
       "url": "https://www.infoq.cn/article/LflwIiIVHRZlakxDgexC?utm_source=rss&utm_medium=article",
       "hot": "Sun, 16 Aug 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "一份数据，多种用途：Spotify 用 RAP 打通分析与在线服务",
       "url": "https://www.infoq.cn/article/iRjDa2ayZ9KLUtWylQZl?utm_source=rss&utm_medium=article",
       "hot": "Sun, 16 Aug 2026 10:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "MCP 走向无状态，开发者追问：这不就又变回 API 了吗？",
       "url": "https://www.infoq.cn/article/412hbBva0NF0AYP0CjzD?utm_source=rss&utm_medium=article",
       "hot": "Sun, 16 Aug 2026 08:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "Cloudflare Computer 发布：让 AI 智能体拥有持久化运行环境",
       "url": "https://www.infoq.cn/article/RaKIH7E4lA9uQ4Iasltb?utm_source=rss&utm_medium=article",
       "hot": "Sat, 15 Aug 2026 21:52:31 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "面向多模态推理的高效长上下文建模｜AICon深圳",
       "url": "https://www.infoq.cn/article/OgbViICigja8tasE0lwi?utm_source=rss&utm_medium=article",
       "hot": "Sat, 15 Aug 2026 10:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "33%增速、126%留存：Snowflake 用一份财报，把“AI落地难”讲成了印钞机故事",
       "url": "https://www.infoq.cn/article/55mbodVKkHgiHYqfqkFG?utm_source=rss&utm_medium=article",
       "hot": "Sat, 15 Aug 2026 00:19:32 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Gemini 3.7 Flash 突袭：性能逼近旗舰、价格打“骨折”！！DeepMind新帅重画性价比斩杀线",
-      "url": "https://www.infoq.cn/article/plZY01etBHv3ETOYG0af?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 15 Aug 2026 00:01:01 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "AI 圈上演神级互撕！Codex、Claude Code 两位负责人公开对喷",
-      "url": "https://www.infoq.cn/article/YWXm26HRwC9ySEGZ9Lpp?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 14 Aug 2026 23:41:55 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "InfoQ 2026 年趋势报告：文化与方法论篇",
-      "url": "https://www.infoq.cn/article/ZiLdF4HaE2o3ieYydQQv?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 14 Aug 2026 15:17:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "“写代码从来都不是难点”，这是对全世界所有程序员的严重侮辱",
-      "url": "https://www.infoq.cn/article/gkOdbZGI6RXGmN09pIeK?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 14 Aug 2026 14:55:20 GMT"
     }
   ]
 }
