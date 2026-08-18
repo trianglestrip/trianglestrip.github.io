@@ -1,13 +1,13 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-18T06:26:23+00:00",
+  "updated_at": "2026-08-18T07:12:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "天安门下半旗悼念朱镕基同志",
-      "url": "https://s.weibo.com/weibo?q=%E5%A4%A9%E5%AE%89%E9%97%A8%E4%B8%8B%E5%8D%8A%E6%97%97%E6%82%BC%E5%BF%B5%E6%9C%B1%E9%95%95%E5%9F%BA%E5%90%8C%E5%BF%97",
+      "title": "朱镕基同志遗体在京火化",
+      "url": "https://s.weibo.com/weibo?q=%E6%9C%B1%E9%95%95%E5%9F%BA%E5%90%8C%E5%BF%97%E9%81%97%E4%BD%93%E5%9C%A8%E4%BA%AC%E7%81%AB%E5%8C%96",
       "hot": ""
     },
     {
@@ -30,38 +30,38 @@
     },
     {
       "rank": 5,
-      "title": "BBA集体大降价",
-      "url": "https://s.weibo.com/weibo?q=BBA%E9%9B%86%E4%BD%93%E5%A4%A7%E9%99%8D%E4%BB%B7",
-      "hot": ""
-    },
-    {
-      "rank": 6,
       "title": "巴基斯坦博主看欢迎来龙餐馆不适",
       "url": "https://s.weibo.com/weibo?q=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E5%8D%9A%E4%B8%BB%E7%9C%8B%E6%AC%A2%E8%BF%8E%E6%9D%A5%E9%BE%99%E9%A4%90%E9%A6%86%E4%B8%8D%E9%80%82",
       "hot": ""
     },
     {
+      "rank": 6,
+      "title": "蜜雪冰城 盘账数杯子不数钱",
+      "url": "https://s.weibo.com/weibo?q=%E8%9C%9C%E9%9B%AA%E5%86%B0%E5%9F%8E%20%E7%9B%98%E8%B4%A6%E6%95%B0%E6%9D%AF%E5%AD%90%E4%B8%8D%E6%95%B0%E9%92%B1",
+      "hot": ""
+    },
+    {
       "rank": 7,
-      "title": "南京消防辟谣培训机构失火39人死亡",
-      "url": "https://s.weibo.com/weibo?q=%E5%8D%97%E4%BA%AC%E6%B6%88%E9%98%B2%E8%BE%9F%E8%B0%A3%E5%9F%B9%E8%AE%AD%E6%9C%BA%E6%9E%84%E5%A4%B1%E7%81%AB39%E4%BA%BA%E6%AD%BB%E4%BA%A1",
+      "title": "中国船舶国企开放日",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E8%88%B9%E8%88%B6%E5%9B%BD%E4%BC%81%E5%BC%80%E6%94%BE%E6%97%A5",
       "hot": ""
     },
     {
       "rank": 8,
-      "title": "中1签赚55万",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD1%E7%AD%BE%E8%B5%9A55%E4%B8%87",
+      "title": "厄尔尼诺事件大概率历史最强",
+      "url": "https://s.weibo.com/weibo?q=%E5%8E%84%E5%B0%94%E5%B0%BC%E8%AF%BA%E4%BA%8B%E4%BB%B6%E5%A4%A7%E6%A6%82%E7%8E%87%E5%8E%86%E5%8F%B2%E6%9C%80%E5%BC%BA",
       "hot": ""
     },
     {
       "rank": 9,
-      "title": "12345 滥用",
-      "url": "https://s.weibo.com/weibo?q=12345%20%E6%BB%A5%E7%94%A8",
+      "title": "BBA集体大降价",
+      "url": "https://s.weibo.com/weibo?q=BBA%E9%9B%86%E4%BD%93%E5%A4%A7%E9%99%8D%E4%BB%B7",
       "hot": ""
     },
     {
       "rank": 10,
-      "title": "蜜雪冰城 盘账数杯子不数钱",
-      "url": "https://s.weibo.com/weibo?q=%E8%9C%9C%E9%9B%AA%E5%86%B0%E5%9F%8E%20%E7%9B%98%E8%B4%A6%E6%95%B0%E6%9D%AF%E5%AD%90%E4%B8%8D%E6%95%B0%E9%92%B1",
+      "title": "12345 滥用",
+      "url": "https://s.weibo.com/weibo?q=12345%20%E6%BB%A5%E7%94%A8",
       "hot": ""
     }
   ]
