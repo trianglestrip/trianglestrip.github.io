@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-18T06:28:26+00:00",
+  "updated_at": "2026-08-18T08:56:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "How Bluesky draws its logo on screenshots",
       "url": "https://timmarinin.net/2026/bluesky-screenshots/",
-      "hot": "392"
+      "hot": "475"
     },
     {
       "rank": 2,
-      "title": "GPT-5.6 Sol Pricing Cut by 50%",
-      "url": "https://openrouter.ai/openai/gpt-5.6-sol",
-      "hot": "326"
+      "title": "Linux 7.3 improves performance when running out of vRAM",
+      "url": "https://pixelcluster.dev/VRAM-Overcommit/",
+      "hot": "8"
     },
     {
       "rank": 3,
-      "title": "Quake Shareware, a CD-ROM just a little too full",
-      "url": "https://fabiensanglard.net/quake_shareware_cd/index.html",
-      "hot": "272"
+      "title": "GPT-5.6 Sol Pricing Cut by 50%",
+      "url": "https://openrouter.ai/openai/gpt-5.6-sol",
+      "hot": "415"
     },
     {
       "rank": 4,
-      "title": "The Benchmarkpocalypse",
-      "url": "https://danluu.com/benchpocalypse/",
-      "hot": "54"
+      "title": "Quake Shareware, a CD-ROM just a little too full",
+      "url": "https://fabiensanglard.net/quake_shareware_cd/index.html",
+      "hot": "326"
     },
     {
       "rank": 5,
-      "title": "Shattered skeleton is first confirmed death from trebuchet",
-      "url": "https://www.science.org/content/article/shattered-skeleton-scottish-castle-first-confirmed-death-trebuchet",
-      "hot": "47"
+      "title": "Fairphone 6 and PostmarketOS working main camera",
+      "url": "https://catcrafts.net/posts/fairphone-6-postmarketos-working-main-camera",
+      "hot": "182"
     },
     {
       "rank": 6,
       "title": "A Preview of DuckDB v2.0",
       "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
-      "hot": "595"
+      "hot": "627"
     },
     {
       "rank": 7,
-      "title": "Fairphone 6 and PostmarketOS working main camera",
-      "url": "https://catcrafts.net/posts/fairphone-6-postmarketos-working-main-camera",
-      "hot": "136"
+      "title": "The Benchmarkpocalypse",
+      "url": "https://danluu.com/benchpocalypse/",
+      "hot": "87"
     },
     {
       "rank": 8,
-      "title": "Wellington second-hand bookstore's mysterious orders",
-      "url": "https://www.rnz.co.nz/life/books/wellington-second-hand-book-store-s-mysterious-orders",
-      "hot": "55"
+      "title": "Ranking the Most Brilliantly Colored Birds with Data",
+      "url": "https://moultano.wordpress.com/2026/08/14/fairly-ranking-the-most-brilliant-birds/",
+      "hot": "11"
     },
     {
       "rank": 9,
-      "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
-      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
-      "hot": "351"
+      "title": "Shattered skeleton is first confirmed death from trebuchet",
+      "url": "https://www.science.org/content/article/shattered-skeleton-scottish-castle-first-confirmed-death-trebuchet",
+      "hot": "65"
     },
     {
       "rank": 10,
-      "title": "The 37signals Manager Playbook",
-      "url": "https://basecamp.com/managers",
-      "hot": "23"
+      "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "hot": "367"
     }
   ]
 }

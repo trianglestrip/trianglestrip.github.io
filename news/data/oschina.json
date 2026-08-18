@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-18T06:28:29+00:00",
+  "updated_at": "2026-08-18T08:56:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Rust 编译器原生支持 GPU 卸载了：一份论文试图终结「安全」和「快」的二选一",
+      "url": "https://www.oschina.net/news/501985",
+      "hot": "Tue, 18 Aug 2026 15:48:45 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "GitHub 爆发严重宕机事故，开发者开始认真找退路",
+      "url": "https://www.oschina.net/news/501984",
+      "hot": "Tue, 18 Aug 2026 15:04:52 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "DuckDB 异步 I/O 让远程查询加速 20 倍",
+      "url": "https://www.oschina.net/news/501982/duckdb-asynchronous-io",
+      "hot": "Tue, 18 Aug 2026 14:38:34 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "StreamSQL v1.2.0 发布：边缘 SQL 流处理引擎，补齐 CEP 与分析函数能力",
+      "url": "https://www.oschina.net/news/501980",
+      "hot": "Tue, 18 Aug 2026 13:52:15 +0800"
+    },
+    {
+      "rank": 5,
       "title": "qKnow 专业版 v3.1.2 上线：文件中心无缝对接 HDFS/OSS，海量数据秒级入库！",
       "url": "https://www.oschina.net/news/501979",
       "hot": "Tue, 18 Aug 2026 11:43:47 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "GitHub 宕机超过 7 小时，AI 编码狂潮把基础设施压垮了",
       "url": "https://www.oschina.net/news/501978/github-outage-disrupts-developers-worldwide",
       "hot": "Tue, 18 Aug 2026 11:34:06 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "Google AI 重组内幕：创始人 Brin 亲自督战，DeepMind 权力洗牌",
       "url": "https://www.oschina.net/news/501977",
       "hot": "Tue, 18 Aug 2026 11:12:58 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "AI 文本水印是一场注定失败的战争",
       "url": "https://www.oschina.net/news/501976/text-ai-watermarks-always-be-trivial-to-remove",
       "hot": "Tue, 18 Aug 2026 10:58:47 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "Anthropic 公开 Claude 全系列模型 System Prompt 历史版本",
       "url": "https://www.oschina.net/news/501975/claude-system-prompts",
       "hot": "Tue, 18 Aug 2026 10:47:58 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "DuckDB v2.0 预览：自研 SQL 解析器、异步 I/O、40 倍递归查询提速",
       "url": "https://www.oschina.net/news/501974/duckdb-2-0-highlights-preview",
       "hot": "Tue, 18 Aug 2026 10:43:13 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Ollmo v0.1.0 正式发布｜生产级全功能 RAG+Agent 可视化平台上线",
-      "url": "https://www.oschina.net/news/501973",
-      "hot": "Tue, 18 Aug 2026 10:37:55 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Vercel 开发了专门给 AI Agent 用的编程语言 Zero",
-      "url": "https://www.oschina.net/news/501972/vercel-labs-zerolang",
-      "hot": "Tue, 18 Aug 2026 10:35:43 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "开源分销系统 EDEN-MACE 全新升级",
-      "url": "https://www.oschina.net/news/501968",
-      "hot": "Tue, 18 Aug 2026 07:17:50 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Pi 的上下文压缩如何工作？",
-      "url": "https://www.oschina.net/news/501967/compaction-in-pi",
-      "hot": "Mon, 17 Aug 2026 19:39:23 +0800"
     }
   ]
 }

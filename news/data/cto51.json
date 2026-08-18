@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-18T06:28:25+00:00",
+  "updated_at": "2026-08-18T08:56:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Agentic SRE：当AI不仅提出修复方案，还直接实施时会发生什么",
+      "url": "https://www.51cto.com/article/853338.html",
+      "hot": "Agentic AI 正推动 SRE 从“AI 辅助分析”迈向“AI 自主执行”，但自动化执行也带来了新的风险。本文探讨 Agentic SRE 如何在自动化与生产可靠性之间找到平衡。"
+    },
+    {
+      "rank": 2,
+      "title": "AI赋能SRE：打造自愈系统，让运维从故障响应走向自动恢复",
+      "url": "https://www.51cto.com/article/853328.html",
+      "hot": "一种面向自愈基础设施的渐进式自治实用框架，涵盖三个层级的故障修复方案，并基于策略驱动的故障影响范围来保障云端 SRE 团队的系统安全。"
+    },
+    {
+      "rank": 3,
       "title": "相册文搜图工程化落地：HarmonyOS 7.0 端侧 AI 检索全链路实战与 5 个踩坑解法 #智绘鸿蒙·大有\"视\"界#",
       "url": "https://ost.51cto.com/posts/55288",
       "hot": "摘要:相册里3万张照片，产品要&quot;去年团建在海边那张&quot;，翻40分钟没找到。HarmonyOS7.0的文搜图能力（CoreVisionKit的textSearchImage）让用户..."
     },
     {
-      "rank": 2,
+      "rank": 4,
+      "title": "Node.js 26.7.0 更新！测试、性能分析、FFI 全面补强",
+      "url": "https://www.51cto.com/article/853320.html",
+      "hot": "Node.js 26.7.0 并不是一个\"惊天动地\"的版本。它没有\"Node.js 变成另一个运行时\"，也没有\"一夜之间性能翻倍\"。但它做了一件非常重要的事情：继续把 Node.js 本身打磨得更加完整。"
+    },
+    {
+      "rank": 5,
       "title": "把\"毛玻璃\"玩出花：HarmonyOS视觉效果实战的四个\"真香\"瞬间",
       "url": "https://ost.51cto.com/posts/55255",
       "hot": "把&quot;毛玻璃&quot;玩出花：HarmonyOS视觉效果实战的四个&quot;真香&quot;瞬间一个让UI设计师&quot;当场焦虑&quot;的需求先交代一下背景。去年年底我们做一个内容类App，..."
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "DeepSeek Harness v0.1 四天 14 万星，对照 Claude Code 和 Codex 讲清三种 harness 设计原则",
       "url": "https://www.51cto.com/article/853267.html",
       "hot": "你在用 Claude Code 的 subagent 时踩过什么坑，嵌套失控、上下文串台、还是子任务一去不回，评论区聊聊，我想看看有多少人跟我受过一样的罪。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "即使 Agent 被劫持，也拿不到私钥：一种零信任 MCP 执行架构",
       "url": "https://www.51cto.com/article/853240.html",
       "hot": "不要想办法训练 Agent“永远不要泄露私钥”，而是从系统架构上，让 Agent 根本拿不到私钥。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "阿里二面：RAG的内容超出知识库范围，应该如何检测和拒绝回答，以避免幻觉产生？我说三点，面试官频频点头…",
       "url": "https://www.51cto.com/article/853266.html",
       "hot": "本文主要就是怎么判断一个问题已经超出了知识库的范围。然后呢，判断出来之后，又怎么让模型老老实实地跟你说\"不知道\"。而不是硬着头皮去编答案。"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "DeepSeek Harness 开源，下一代 Agent 基础设施长什么样？",
       "url": "https://www.51cto.com/article/853192.html",
       "hot": "DeepSeek Harness 的架构完成度已经很高，但“架构完整”不等于“接口稳定”。当前版本仍是 Developer Preview，兼容性破坏会发生，动态插件沙箱也不是强安全边界。直接用于重要生产仓库之前，需要固定版本、限制第三方插件来源、选择合适的 Sandbox Mode，并对凭据、网络和持久化目录进行额外隔离。"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Workbuddy + ima 打造个人 AI 知识库",
       "url": "https://www.51cto.com/article/853264.html",
       "hot": "她不是一个人。很多第一次打开 ima 的人都会在这个界面卡住。因为 ima 不是一个单一功能工具，它是一个「工作台」。你把它当成聊天工具、网盘、搜索引擎、写作助手，都能用，但如果你目标是搭建知识资产，就必须先理解它的结构。"
-    },
-    {
-      "rank": 8,
-      "title": "斯坦福辍学生奥特曼：AI时代，大学上两年就够了",
-      "url": "https://www.51cto.com/article/853263.html",
-      "hot": "在这个AI狂飙的时代，知识贬值得太快，比起读四年大学出来仍是一张白纸，直接进入产业开始实战会不会是一个更好的选择？"
-    },
-    {
-      "rank": 9,
-      "title": "黄仁勋提前锁定20年OpenAI芯片收入！第一轮150万GPU卖2000亿美元",
-      "url": "https://www.51cto.com/article/853262.html",
-      "hot": "5000亿美元，黄仁勋又“违背祖训”了。英伟达要亲自下场，帮客户搞定盖“AI工厂”所需的地皮、电力供应和厂房外壳，还把这些打包成了成了一种新概念“LPS”，即Land、Power、Shell。"
-    },
-    {
-      "rank": 10,
-      "title": "刚刚英伟达核弹级战略曝光！老黄宣布联手奥特曼圈地圈电，狂卷16GW算力霸权",
-      "url": "https://www.51cto.com/article/853236.html",
-      "hot": "在AI主导的经济体中，算力直接等于真金白银的收入。AI工厂是这个时代最具代表性的基础设施，它把算力、能源和数据源源不断地转化为驱动各行各业的智能。"
     }
   ]
 }
