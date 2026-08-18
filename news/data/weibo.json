@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-18T21:35:43+00:00",
+  "updated_at": "2026-08-18T21:52:19+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,32 +24,32 @@
     },
     {
       "rank": 4,
-      "title": "七夕送礼上淘宝最快半日达",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%83%E5%A4%95%E9%80%81%E7%A4%BC%E4%B8%8A%E6%B7%98%E5%AE%9D%E6%9C%80%E5%BF%AB%E5%8D%8A%E6%97%A5%E8%BE%BE",
-      "hot": ""
-    },
-    {
-      "rank": 5,
       "title": "做事千万不要有状态洁癖",
       "url": "https://s.weibo.com/weibo?q=%E5%81%9A%E4%BA%8B%E5%8D%83%E4%B8%87%E4%B8%8D%E8%A6%81%E6%9C%89%E7%8A%B6%E6%80%81%E6%B4%81%E7%99%96",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "何炅因年龄大被密室拒绝",
       "url": "https://s.weibo.com/weibo?q=%E4%BD%95%E7%82%85%E5%9B%A0%E5%B9%B4%E9%BE%84%E5%A4%A7%E8%A2%AB%E5%AF%86%E5%AE%A4%E6%8B%92%E7%BB%9D",
       "hot": ""
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "胖东来招聘不包含性侵犯罪人员",
       "url": "https://s.weibo.com/weibo?q=%E8%83%96%E4%B8%9C%E6%9D%A5%E6%8B%9B%E8%81%98%E4%B8%8D%E5%8C%85%E5%90%AB%E6%80%A7%E4%BE%B5%E7%8A%AF%E7%BD%AA%E4%BA%BA%E5%91%98",
       "hot": ""
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "吴泽林曾在现场情绪失控",
       "url": "https://s.weibo.com/weibo?q=%E5%90%B4%E6%B3%BD%E6%9E%97%E6%9B%BE%E5%9C%A8%E7%8E%B0%E5%9C%BA%E6%83%85%E7%BB%AA%E5%A4%B1%E6%8E%A7",
+      "hot": ""
+    },
+    {
+      "rank": 8,
+      "title": "公积金新规 通俗解读",
+      "url": "https://s.weibo.com/weibo?q=%E5%85%AC%E7%A7%AF%E9%87%91%E6%96%B0%E8%A7%84%20%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB",
       "hot": ""
     },
     {
@@ -60,8 +60,8 @@
     },
     {
       "rank": 10,
-      "title": "公积金新规 通俗解读",
-      "url": "https://s.weibo.com/weibo?q=%E5%85%AC%E7%A7%AF%E9%87%91%E6%96%B0%E8%A7%84%20%E9%80%9A%E4%BF%97%E8%A7%A3%E8%AF%BB",
+      "title": "公积金",
+      "url": "https://s.weibo.com/weibo?q=%E5%85%AC%E7%A7%AF%E9%87%91",
       "hot": ""
     }
   ]
