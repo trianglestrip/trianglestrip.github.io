@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-17T23:28:21+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-08-18T02:21:36+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -15,7 +14,7 @@
       "rank": 2,
       "title": "奥德赛",
       "url": "https://movie.douban.com/subject/36808876/",
-      "hot": "评分 8.4"
+      "hot": "评分 8.5"
     },
     {
       "rank": 3,

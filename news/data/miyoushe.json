@@ -1,8 +1,9 @@
 {
   "source": "miyoushe",
   "title": "米游社",
-  "updated_at": "2026-08-18T01:15:09+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-08-18T02:25:57+00:00",
+  "fetch_ok": false,
+  "error": "Command '['hotboard', 'miyoushe', '--format', 'json']' timed out after 60 seconds",
   "items": [
     {
       "rank": 1,
