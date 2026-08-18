@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-18T17:41:06+00:00",
+  "updated_at": "2026-08-18T19:53:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Using the railway network as a flatbed scanner",
-      "url": "https://philo.gay/linecam/",
-      "hot": "276"
+      "title": "Norway Should Buy OpenAI",
+      "url": "https://www.onethousandmeans.com/p/norway-should-buy-openai",
+      "hot": "63"
     },
     {
       "rank": 2,
-      "title": "Fixing a bricked Framework laptop",
-      "url": "https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools/",
-      "hot": "212"
+      "title": "Turbovec – Google's TurboQuant for vector search in Rust",
+      "url": "https://github.com/RyanCodrai/turbovec",
+      "hot": "94"
     },
     {
       "rank": 3,
       "title": "The Amazon tax",
       "url": "https://seths.blog/2026/08/the-amazon-tax/",
-      "hot": "472"
+      "hot": "625"
     },
     {
       "rank": 4,
-      "title": "Cursor launches Origin, GitHub alternative",
-      "url": "https://cursor.com/changelog/origin-code-hosting",
-      "hot": "210"
+      "title": "Using the railway network as a flatbed scanner",
+      "url": "https://philo.gay/linecam/",
+      "hot": "320"
     },
     {
       "rank": 5,
-      "title": "Launch HN: machine0 (YC S26) – Persistent CPU and GPU VMs from the CLI",
-      "url": "https://machine0.io",
-      "hot": "17"
+      "title": "Fixing a bricked Framework laptop",
+      "url": "https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools/",
+      "hot": "276"
     },
     {
       "rank": 6,
-      "title": "Linux 7.3 improves performance when running out of vRAM",
-      "url": "https://pixelcluster.dev/VRAM-Overcommit/",
-      "hot": "420"
+      "title": "Beware Management Consultants",
+      "url": "https://about.iceland.co.uk/our-story/the-dark-ages/beware-management-consultants/",
+      "hot": "8"
     },
     {
       "rank": 7,
-      "title": "Python Polars Cheatsheet (based on our O'Reilly book)",
-      "url": "https://opensource.posit.co/resources/cheatsheets/polars/",
-      "hot": "91"
+      "title": "Data centers raise nearby temperatures by up to 4 degrees in Phoenix",
+      "url": "https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban",
+      "hot": "206"
     },
     {
       "rank": 8,
-      "title": "We've flown a radiation-blocking vest to the Moon and back, and it worked",
-      "url": "https://arstechnica.com/science/2026/08/weve-flown-a-radiation-blocking-vest-to-the-moon-and-back-and-it-worked/",
-      "hot": "11"
+      "title": "How does IKEA come up with names for its products?",
+      "url": "https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html",
+      "hot": "101"
     },
     {
       "rank": 9,
-      "title": "Splitting a Git Commit",
-      "url": "https://blog.gnoack.org/post/git-history-split",
-      "hot": "59"
+      "title": "Cursor launches Origin, GitHub alternative",
+      "url": "https://cursor.com/changelog/origin-code-hosting",
+      "hot": "305"
     },
     {
       "rank": 10,
-      "title": "Teaching my kid to code with a modern MUD",
-      "url": "https://tau.dev/2026/08/07/canon",
-      "hot": "155"
+      "title": "Linux 7.3 improves performance when running out of vRAM",
+      "url": "https://pixelcluster.dev/VRAM-Overcommit/",
+      "hot": "455"
     }
   ]
 }
