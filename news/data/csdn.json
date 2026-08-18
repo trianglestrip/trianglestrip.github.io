@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-18T04:27:01+00:00",
+  "updated_at": "2026-08-18T06:28:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 生成高质量电商套图实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/163593776",
-      "hot": "24621"
+      "hot": "24179"
     },
     {
       "rank": 2,
-      "title": "PyTorch强化学习实战（22）——将强化学习应用于TextWorld互动小说游戏",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766159",
-      "hot": "17231"
+      "title": "【AI大模型接入SDK】人工智能核心概念与人工智能发展史",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163803148",
+      "hot": "18330"
     },
     {
       "rank": 3,
       "title": "AI已经能直接进设计画布了：我用Penpot MCP让Codex生成了5个UI页面",
       "url": "https://blog.csdn.net/2401_86326742/article/details/163830309",
-      "hot": "14465"
+      "hot": "16205"
     },
     {
       "rank": 4,
-      "title": "SQL Server数据迁移到金仓数据库复盘：从怕性能翻车，到TPS提升60%",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/163811264",
-      "hot": "13089"
+      "title": "PyTorch强化学习实战（22）——将强化学习应用于TextWorld互动小说游戏",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766159",
+      "hot": "15082"
     },
     {
       "rank": 5,
-      "title": "服务器挂了才发现?我用Beszel把多台主机和Docker状态集中到一个面板",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/163823700",
-      "hot": "12441"
+      "title": "【高等几何 线性代数】正交矩阵、正交变换、齐次矩阵",
+      "url": "https://blog.csdn.net/he_zhidan/article/details/163392422",
+      "hot": "12893"
     },
     {
       "rank": 6,
-      "title": "【高等几何 线性代数】正交矩阵、正交变换、齐次矩阵",
-      "url": "https://blog.csdn.net/he_zhidan/article/details/163392422",
-      "hot": "11717"
+      "title": "用 WorkBuddy 一键解读统计公报：从图片到 Word 报告与 HTML 看板（湖南省人口数据实战）",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163763951",
+      "hot": "12709"
     },
     {
       "rank": 7,
-      "title": "用 WorkBuddy 一键解读统计公报：从图片到 Word 报告与 HTML 看板（湖南省人口数据实战）",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163763951",
-      "hot": "11295"
+      "title": "SQL Server数据迁移到金仓数据库复盘：从怕性能翻车，到TPS提升60%",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/163811264",
+      "hot": "12554"
     },
     {
       "rank": 8,
       "title": "大模型工程化实战（二）：Golden Set + CI 评测，给LLM内容上量具",
       "url": "https://blog.csdn.net/xiaobing259/article/details/163800937",
-      "hot": "11264"
+      "hot": "11772"
     },
     {
       "rank": 9,
       "title": "AI 编程进入监督时代：从补全代码到管理执行系统",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/163614025",
-      "hot": "10953"
+      "hot": "10949"
     },
     {
       "rank": 10,
-      "title": "SQL Server数据迁移后性能反而暴涨？我用实测数据打消了所有疑虑",
-      "url": "https://blog.csdn.net/qq_32682301/article/details/163786110",
-      "hot": "9582"
+      "title": "飞牛NAS部署PandaWiki：搭建自托管AI知识库并实现远程访问",
+      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163843503",
+      "hot": "10371"
     }
   ]
 }
