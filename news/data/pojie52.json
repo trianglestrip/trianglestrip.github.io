@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-08-18T02:21:57+00:00",
+  "updated_at": "2026-08-18T04:27:04+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "当游戏越来越漂亮，外挂却越来越丑：作弊技术摸底（2026）",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117216",
-      "hot": ""
+      "title": "从时间片轮转到调用级并发：unidbg 单后端多线程架构重构",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117230",
+      "hot": "[md]# 从时间片轮转到调用级并发：unidbg 单后端多线程架构重构\n\n&gt; 本文讨论的是 unidbg 在单 Unicorn 后端下模拟多线程 native 程序时的通用架构问题。文中的命令、线程、回调与返回值均为抽象示例，不对应任何具体应 ..."
     }
   ]
 }
