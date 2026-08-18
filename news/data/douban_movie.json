@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-18T15:20:58+00:00",
+  "updated_at": "2026-08-18T17:40:48+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "hot": "评分 6.4"
+      "title": "火遮眼",
+      "url": "https://movie.douban.com/subject/36877245/",
+      "hot": "评分 7.7"
     },
     {
       "rank": 9,
-      "title": "去你的岛",
-      "url": "https://movie.douban.com/subject/35275131/",
-      "hot": "评分 7.9"
+      "title": "挽救计划",
+      "url": "https://movie.douban.com/subject/35010610/",
+      "hot": "评分 8.6"
     },
     {
       "rank": 10,
-      "title": "消失的人",
-      "url": "https://movie.douban.com/subject/36965301/",
-      "hot": "评分 7.2"
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
+      "hot": "评分 6.4"
     }
   ]
 }
