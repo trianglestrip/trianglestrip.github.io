@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-19T04:08:33+00:00",
+  "updated_at": "2026-08-19T06:17:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Valhalla 项目首次预览：JEP 401 重新定义 Java 对象的 == 运算符",
+      "url": "https://www.infoq.cn/article/8grNo7eCm3Rly0NV8bcS?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 19 Aug 2026 12:25:00 GMT"
+    },
+    {
+      "rank": 2,
       "title": "Embabel智能体框架发布1.0版本",
       "url": "https://www.infoq.cn/article/5LJARsierf0NbH3Rc6wc?utm_source=rss&utm_medium=article",
       "hot": "Wed, 19 Aug 2026 11:14:23 GMT"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "让 Agent 真正驱动销售增长——FDE 模式下的业务流重构实战｜AICon深圳",
       "url": "https://www.infoq.cn/article/vrlSsJUrdpfGqsj3CTZK?utm_source=rss&utm_medium=article",
       "hot": "Wed, 19 Aug 2026 10:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "谷歌发布 Angular v22，带来稳定的 Signal Forms、默认启用的 OnPush 以及实验性的 WebMCP",
       "url": "https://www.infoq.cn/article/J7CiEHSU79e9TYi3soro?utm_source=rss&utm_medium=article",
       "hot": "Tue, 18 Aug 2026 17:28:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Snowflake CoCo AI 成本优化指南：7 个关键方法 | 技术实践",
       "url": "https://www.infoq.cn/article/pOfV96f9DHG9Cw1KQAZB?utm_source=rss&utm_medium=article",
       "hot": "Tue, 18 Aug 2026 16:29:05 GMT"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "共识之外：Linux 生态系统中 AI 政策的碎片化现象",
       "url": "https://www.infoq.cn/article/jsqPaMGuPXFkhifJmTym?utm_source=rss&utm_medium=article",
       "hot": "Tue, 18 Aug 2026 16:15:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "阿里云的野心，不在 Agent Builder",
       "url": "https://www.infoq.cn/article/QekQuwv8UhxAcrOFgKM8?utm_source=rss&utm_medium=article",
       "hot": "Tue, 18 Aug 2026 15:32:44 GMT"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "豆包视频通话升级，火山引擎多模态传输系统提供技术支撑",
       "url": "https://www.infoq.cn/article/kJK3qG9m7UEYtf7siCgU?utm_source=rss&utm_medium=article",
       "hot": "Tue, 18 Aug 2026 14:46:57 GMT"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Stripe 利用 Graph Search 和状态机实现数据库修复自动化",
       "url": "https://www.infoq.cn/article/lHpgJMVERySthZ0KKIg4?utm_source=rss&utm_medium=article",
       "hot": "Tue, 18 Aug 2026 14:00:00 GMT"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "世界人工智能开源大赛（GOAI）初赛评审正式启动，全球AI创新项目进入首轮遴选",
       "url": "https://www.infoq.cn/article/gC7CU8lbYmha1QPMvqP7?utm_source=rss&utm_medium=article",
       "hot": "Tue, 18 Aug 2026 13:22:04 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "DeepSeek Harness 怎么入门？这套极简教程用一个项目给你讲清楚",
-      "url": "https://www.infoq.cn/article/1EP0hwuqRzccrWArR7GJ?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 18 Aug 2026 12:43:32 GMT"
     }
   ]
 }
