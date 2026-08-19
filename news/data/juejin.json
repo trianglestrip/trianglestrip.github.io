@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-19T06:17:20+00:00",
+  "updated_at": "2026-08-19T08:17:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "为什么越来越多人用 Pi ？ - 苏三说技术",
-      "url": "https://juejin.cn/post/7673855455463800847",
-      "hot": "4536"
+      "title": "为什么跳槽涨薪 30% 的时代彻底结束了？聊聊 2026 前端薪资的天花板",
+      "url": "https://juejin.cn/post/7674686524115353650",
+      "hot": "1485"
     },
     {
       "rank": 2,
-      "title": "为什么跳槽涨薪 30% 的时代彻底结束了？聊聊 2026 前端薪资的天花板",
-      "url": "https://juejin.cn/post/7674686524115353650",
-      "hot": "1368"
-    },
-    {
-      "rank": 3,
-      "title": "给运营导个 CSV，在 ksql 里用 \\copy 就够了",
-      "url": "https://juejin.cn/post/7673897632196919348",
-      "hot": "1242"
-    },
-    {
-      "rank": 4,
       "title": "一行代码集成 DWG/DXF 图纸查看：测量批注，数据不出站",
       "url": "https://juejin.cn/post/7674372498314936370",
       "hot": "1071"
     },
     {
-      "rank": 5,
+      "rank": 3,
       "title": "DeepSeek Harness必装的10个插件",
       "url": "https://juejin.cn/post/7674802907378303028",
-      "hot": "900"
+      "hot": "954"
     },
     {
-      "rank": 6,
+      "rank": 4,
       "title": "高级前端开发职业规划（2026—2035）",
       "url": "https://juejin.cn/post/7674794074013024310",
-      "hot": "900"
+      "hot": "936"
     },
     {
-      "rank": 7,
-      "title": "AI 时代 SVG 画图的潜力",
-      "url": "https://juejin.cn/post/7673872542772838451",
-      "hot": "783"
-    },
-    {
-      "rank": 8,
+      "rank": 5,
       "title": "SQL Server 迁移到 KingbaseES：一次复杂 BI 查询的性能实测",
       "url": "https://juejin.cn/post/7674686524114944050",
       "hot": "720"
     },
     {
-      "rank": 9,
+      "rank": 6,
       "title": "Dart 3.13 大更新，感觉比 Flutter 更带劲",
       "url": "https://juejin.cn/post/7674383173651824682",
+      "hot": "702"
+    },
+    {
+      "rank": 7,
+      "title": "AI写长篇小说为什么30章必崩",
+      "url": "https://juejin.cn/post/7674372498315460658",
       "hot": "684"
     },
     {
+      "rank": 8,
+      "title": "为什么同一段代码在 Safari 上永远有 Bug？",
+      "url": "https://juejin.cn/post/7674910507414159403",
+      "hot": "621"
+    },
+    {
+      "rank": 9,
+      "title": "苏神百万年薪简历翻车：一个包装争议，给后端同学的 5 个工程视角警示",
+      "url": "https://juejin.cn/post/7674907190973775882",
+      "hot": "450"
+    },
+    {
       "rank": 10,
-      "title": "AI写长篇小说为什么30章必崩",
-      "url": "https://juejin.cn/post/7674372498315460658",
-      "hot": "657"
+      "title": "DeepSeek Harness 插件推荐：4 款开源神器让写代码直接起飞",
+      "url": "https://juejin.cn/post/7674101873055662120",
+      "hot": "414"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-19T06:17:36+00:00",
+  "updated_at": "2026-08-19T08:18:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "再也不用登录罗技账号，9.1k star 的 Rust 开源替代品接管了 HID++",
+      "url": "https://www.oschina.net/news/502006",
+      "hot": "Wed, 19 Aug 2026 15:49:24 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Hugging Face 夏季开源报告：中国模型在前沿碾压，但下载量靠的是小模型",
+      "url": "https://www.oschina.net/news/502004/huggingface-state-of-open-models-summer-2026",
+      "hot": "Wed, 19 Aug 2026 15:03:09 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "几乎没人再关注 Web 标准了：5000 个网站只有 2.6% 完全符合规范",
+      "url": "https://www.oschina.net/news/502003/almost-nobody-pays-attention-to-web-standards-anymore",
+      "hot": "Wed, 19 Aug 2026 14:50:33 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Framework 官方 BIOS 更新导致用户电脑变砖，然后说不保修",
+      "url": "https://www.oschina.net/news/502002/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools",
+      "hot": "Wed, 19 Aug 2026 14:36:01 +0800"
+    },
+    {
+      "rank": 5,
       "title": "Anthropic 缩减 Claude Code 每周免费额度",
       "url": "https://www.oschina.net/news/501998",
       "hot": "Wed, 19 Aug 2026 11:45:27 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "WePush 5.0.9 发布，专注批量推送的小而美的工具",
       "url": "https://www.oschina.net/news/501997",
       "hot": "Wed, 19 Aug 2026 11:37:06 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "自动化测试工具 CueCast V1.2.2 发布：支持文件上传，优化 Hover 与 TreeSelect 回放",
       "url": "https://my.oschina.net/u/5170379/blog/19743104",
       "hot": "Wed, 19 Aug 2026 11:27:09 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "Linux 7.3 让显存耗尽不再崩溃：一次内核死锁的排查之旅",
       "url": "https://www.oschina.net/news/501995",
       "hot": "Wed, 19 Aug 2026 10:43:30 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "买下 OpenAI 要花多少钱？挪威主权基金的答案：800 亿美元",
       "url": "https://www.oschina.net/news/501994/norway-should-buy-openai",
       "hot": "Wed, 19 Aug 2026 10:38:36 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "如果最值钱的部分永久免费，做开源图什么？",
       "url": "https://www.oschina.net/news/501993",
       "hot": "Wed, 19 Aug 2026 10:15:27 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "轻量级运维极速引擎 OpsFlash v0.2.0 正式发布",
-      "url": "https://www.oschina.net/news/501992",
-      "hot": "Tue, 18 Aug 2026 23:08:24 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "MooTool Next 发布！全新重写，带来更现代的界面与多窗口体验",
-      "url": "https://www.oschina.net/news/501991",
-      "hot": "Tue, 18 Aug 2026 22:00:30 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "WePush 5.0.8 发布，专注批量推送的小而美的工具",
-      "url": "https://www.oschina.net/news/501990",
-      "hot": "Tue, 18 Aug 2026 21:58:16 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "WSL 上的 Ubuntu 用户数量将超过原生 Linux 桌面用户",
-      "url": "https://www.oschina.net/news/501989/canonical-wsl-growth",
-      "hot": "Tue, 18 Aug 2026 19:05:01 +0800"
     }
   ]
 }
