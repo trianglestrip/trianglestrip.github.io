@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-19T16:46:20+00:00",
+  "updated_at": "2026-08-19T17:04:49+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,26 +24,26 @@
     },
     {
       "rank": 4,
+      "title": "享界G9发布会",
+      "url": "https://s.weibo.com/weibo?q=%E4%BA%AB%E7%95%8CG9%E5%8F%91%E5%B8%83%E4%BC%9A",
+      "hot": ""
+    },
+    {
+      "rank": 5,
       "title": "空枪 李嘉诚儿子绑架案",
       "url": "https://s.weibo.com/weibo?q=%E7%A9%BA%E6%9E%AA%20%E6%9D%8E%E5%98%89%E8%AF%9A%E5%84%BF%E5%AD%90%E7%BB%91%E6%9E%B6%E6%A1%88",
       "hot": ""
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "黄金",
       "url": "https://s.weibo.com/weibo?q=%E9%BB%84%E9%87%91",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "难怪瘦的时候容易觉得疼",
       "url": "https://s.weibo.com/weibo?q=%E9%9A%BE%E6%80%AA%E7%98%A6%E7%9A%84%E6%97%B6%E5%80%99%E5%AE%B9%E6%98%93%E8%A7%89%E5%BE%97%E7%96%BC",
-      "hot": ""
-    },
-    {
-      "rank": 7,
-      "title": "与众09从容见优雅",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%8E%E4%BC%9709%E4%BB%8E%E5%AE%B9%E8%A7%81%E4%BC%98%E9%9B%85",
       "hot": ""
     },
     {
@@ -60,8 +60,8 @@
     },
     {
       "rank": 10,
-      "title": "七夕 去情人节化",
-      "url": "https://s.weibo.com/weibo?q=%E4%B8%83%E5%A4%95%20%E5%8E%BB%E6%83%85%E4%BA%BA%E8%8A%82%E5%8C%96",
+      "title": "Jennie发长文",
+      "url": "https://s.weibo.com/weibo?q=Jennie%E5%8F%91%E9%95%BF%E6%96%87",
       "hot": ""
     }
   ]
