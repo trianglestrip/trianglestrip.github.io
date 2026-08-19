@@ -1,9 +1,8 @@
 {
   "source": "kuaishou",
   "title": "快手热榜",
-  "updated_at": "2026-08-19T20:49:40+00:00",
-  "fetch_ok": false,
-  "error": "Command '['hotboard', 'kuaishou', '--format', 'json']' timed out after 60 seconds",
+  "updated_at": "2026-08-19T21:06:12+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -15,55 +14,55 @@
       "rank": 2,
       "title": "第18号台风沙德尔生成",
       "url": "https://www.kuaishou.com/short-video/3xq5nb9qjtqzscg",
-      "hot": "1319.5万"
+      "hot": "1189.4万"
     },
     {
       "rank": 3,
       "title": "高市早苗就诊6个半小时",
       "url": "https://www.kuaishou.com/short-video/3xmgsu5vm6492fa",
-      "hot": "1318.5万"
+      "hot": "1188.4万"
     },
     {
       "rank": 4,
       "title": "我国首次实现火箭陆地回收",
       "url": "https://www.kuaishou.com/short-video/3x5e3tjyhrj55ga",
-      "hot": "1249.2万"
+      "hot": "1177.1万"
     },
     {
       "rank": 5,
-      "title": "2人拒服兵役遭联合惩戒",
-      "url": "https://www.kuaishou.com/short-video/3x3m8u4x9rjaj29",
-      "hot": "1180万"
+      "title": "男子开车低头发现脚上有蛇",
+      "url": "https://www.kuaishou.com/short-video/3xkgqbvmrkkcdk6",
+      "hot": "1165.8万"
     },
     {
       "rank": 6,
-      "title": "李永金同志逝世",
-      "url": "https://www.kuaishou.com/short-video/3x3vdjbxscm95iy",
-      "hot": "1139.2万"
+      "title": "2人拒服兵役遭联合惩戒",
+      "url": "https://www.kuaishou.com/short-video/3x3m8u4x9rjaj29",
+      "hot": "1145.6万"
     },
     {
       "rank": 7,
-      "title": "伊拉克遭袭",
-      "url": "https://www.kuaishou.com/short-video/3xyw9b52h9rckh6",
-      "hot": "1118.8万"
+      "title": "男兽医遭女顾客滋扰立案",
+      "url": "https://www.kuaishou.com/short-video/3xsfcjb8i3qktpe",
+      "hot": "1125.4万"
     },
     {
       "rank": 8,
-      "title": "亚楠还是太权威了",
-      "url": "https://www.kuaishou.com/short-video/3xhyj92mhe6aec9",
-      "hot": "1098.3万"
+      "title": "美军航母士兵崩溃跳海",
+      "url": "https://www.kuaishou.com/short-video/3x73q2ixvk4jmzs",
+      "hot": "1103.3万"
     },
     {
       "rank": 9,
-      "title": "4岁男孩腿疼确诊白血病",
-      "url": "https://www.kuaishou.com/short-video/3xykkqzby9w64ey",
-      "hot": "1077.8万"
+      "title": "27岁男子确诊肾衰竭晚期",
+      "url": "https://www.kuaishou.com/short-video/3xnpuaeb2dryugi",
+      "hot": "1081.3万"
     },
     {
       "rank": 10,
-      "title": "27岁男子确诊肾衰竭晚期",
-      "url": "https://www.kuaishou.com/short-video/3xnpuaeb2dryugi",
-      "hot": "1055.6万"
+      "title": "俄乌持续互袭",
+      "url": "https://www.kuaishou.com/short-video/3xqju9tituxu2j2",
+      "hot": "1060.6万"
     }
   ]
 }
