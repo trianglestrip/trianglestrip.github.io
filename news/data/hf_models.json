@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-19T04:08:46+00:00",
+  "updated_at": "2026-08-19T10:17:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "11186"
+      "hot": "11290"
     },
     {
       "rank": 2,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "1841"
+      "hot": "1875"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen3.8-2.4T-A95B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-      "hot": "1071"
+      "hot": "1076"
     },
     {
       "rank": 4,
       "title": "MiniMaxAI/MiniMax-Music3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-      "hot": "972"
+      "hot": "992"
     },
     {
       "rank": 5,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "1237"
+      "hot": "1264"
     },
     {
       "rank": 6,
       "title": "deepseek-ai/DeepSeek-V4-Pro-0813",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hot": "606"
+      "hot": "615"
     },
     {
       "rank": 7,
       "title": "Qwen/Qwen3.8-27B-FP8",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "566"
+      "hot": "575"
     },
     {
       "rank": 8,
-      "title": "meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "hot": "1685"
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "hot": "567"
     },
     {
       "rank": 9,
-      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
-      "hot": "545"
+      "title": "meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "hot": "1691"
     },
     {
       "rank": 10,
       "title": "MiniMaxAI/MiniMax-H3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "4149"
+      "hot": "4159"
     }
   ]
 }
