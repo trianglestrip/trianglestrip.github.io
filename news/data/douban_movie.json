@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-19T15:23:59+00:00",
+  "updated_at": "2026-08-19T17:36:22+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,27 +30,27 @@
     },
     {
       "rank": 5,
-      "title": "痴迷",
-      "url": "https://movie.douban.com/subject/37450627/",
-      "hot": "评分 7.6"
-    },
-    {
-      "rank": 6,
       "title": "花开锦绣",
       "url": "https://movie.douban.com/subject/36810153/",
       "hot": ""
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "牛来",
       "url": "https://movie.douban.com/subject/38581618/",
       "hot": "评分 5.9"
     },
     {
+      "rank": 7,
+      "title": "痴迷",
+      "url": "https://movie.douban.com/subject/37450627/",
+      "hot": "评分 7.6"
+    },
+    {
       "rank": 8,
-      "title": "火遮眼",
-      "url": "https://movie.douban.com/subject/36877245/",
-      "hot": "评分 7.7"
+      "title": "空枪",
+      "url": "https://movie.douban.com/subject/37508847/",
+      "hot": ""
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "hot": "评分 6.4"
+      "title": "火遮眼",
+      "url": "https://movie.douban.com/subject/36877245/",
+      "hot": "评分 7.7"
     }
   ]
 }
