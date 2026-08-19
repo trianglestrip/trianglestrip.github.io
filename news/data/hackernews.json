@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-19T08:18:08+00:00",
+  "updated_at": "2026-08-19T10:49:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "OpenLogi",
       "url": "https://openlogi.org/en",
-      "hot": "494"
+      "hot": "750"
     },
     {
       "rank": 2,
-      "title": "Where Human Sleep Went Wrong",
-      "url": "https://nautil.us/where-human-sleep-went-wrong-1283797",
-      "hot": "13"
+      "title": "Cerebras CS-4",
+      "url": "https://www.cerebras.ai/cs4",
+      "hot": "293"
     },
     {
       "rank": 3,
-      "title": "Cerebras CS-4",
-      "url": "https://www.cerebras.ai/cs4",
-      "hot": "251"
+      "title": "The Two Factions of C++ (2024)",
+      "url": "https://herecomesthemoon.net/2024/11/two-factions-of-cpp/",
+      "hot": "36"
     },
     {
       "rank": 4,
-      "title": "Scientists stunned by children's lung recovery in ultra low emission zone",
-      "url": "https://www.bbc.com/news/articles/c1l1r1zne1ro",
-      "hot": "214"
+      "title": "Being ambitious and being a dad",
+      "url": "https://nicholascharriere.com/blog/being-ambitious-and-being-a-dad/",
+      "hot": "526"
     },
     {
       "rank": 5,
       "title": "Palomar: A registry of Lean verified mathematics",
       "url": "https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics/",
-      "hot": "90"
+      "hot": "110"
     },
     {
       "rank": 6,
       "title": "Supersonic Trebuchet [video]",
       "url": "https://www.youtube.com/watch?v=Co57SfcT-h0",
-      "hot": "85"
+      "hot": "115"
     },
     {
       "rank": 7,
-      "title": "Being ambitious and being a dad",
-      "url": "https://nicholascharriere.com/blog/being-ambitious-and-being-a-dad/",
-      "hot": "449"
+      "title": "A 3D fruit fly on macOS desktop powered by the real FlyWire connectome",
+      "url": "https://github.com/DenisSergeevitch/desktop-fly",
+      "hot": "288"
     },
     {
       "rank": 8,
-      "title": "A 3D fruit fly on macOS desktop powered by the real FlyWire connectome",
-      "url": "https://github.com/DenisSergeevitch/desktop-fly",
-      "hot": "257"
+      "title": "Air Theremin – a browser theremin you play by waving at your webcam",
+      "url": "https://theremin.bizibah.com/",
+      "hot": "3"
     },
     {
       "rank": 9,
-      "title": "The Vietnam Binh Chau (Chau Tan) Late Tang Wreck",
-      "url": "https://www.koh-antique.com/client/tangwreck/tangwreck.html",
-      "hot": "36"
+      "title": "Scientists stunned by children's lung recovery in ultra low emission zone",
+      "url": "https://www.bbc.com/news/articles/c1l1r1zne1ro",
+      "hot": "274"
     },
     {
       "rank": 10,
-      "title": "Solo – a .so loader for static Linux binaries",
-      "url": "https://github.com/pg83/solo",
-      "hot": "134"
+      "title": "λλ: A Programming Language for Silicon Photonics",
+      "url": "https://dl.acm.org/doi/10.1145/3789240.3829151",
+      "hot": "29"
     }
   ]
 }

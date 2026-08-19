@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-19T08:18:12+00:00",
+  "updated_at": "2026-08-19T10:49:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Pinterest 如何通过集中式 Terraform 管道在大规模环境中保障 AWS 基础设施的安全",
+      "url": "https://www.infoq.cn/article/0AR0FaYEllc9tk7iWu9U?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 19 Aug 2026 17:41:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "2026 世界杯：一个通过与 CoCo 对话构建的实时应用 | 技术实践",
+      "url": "https://www.infoq.cn/article/ZZYxRqKglT4RpYO454K3?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 19 Aug 2026 17:12:42 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "明道云举办首届 Real AI Contest，面向真实落地的企业 AI 应用",
+      "url": "https://xie.infoq.cn/article/6724ff083cc2192487d818695?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 19 Aug 2026 15:50:11 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "AI for Science进入新阶段：机器人正在成为科研新基础设施",
+      "url": "https://www.infoq.cn/article/LrAzoZZQiecRCtyVX1u9?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 19 Aug 2026 16:22:01 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "Java 近期新闻：Shenandoah GC、TeamCity CVE、A2A Java SDK、Camel、Gradle、GlassFish",
+      "url": "https://www.infoq.cn/article/aJvM0NaOObTK34dOAUTC?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 19 Aug 2026 16:11:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "网易传媒 AI 另辟赛道：近千亿研发，蜜蜂AI杀入年轻人社区",
       "url": "https://www.infoq.cn/article/eUqDCgNhzkbNpNxS7dYI?utm_source=rss&utm_medium=article",
       "hot": "Wed, 19 Aug 2026 15:02:20 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Canva 分享了基于 S3 的架构，用于管理数亿个会话的会话撤销",
       "url": "https://www.infoq.cn/article/H74fUrce5mmYgtDtM8tI?utm_source=rss&utm_medium=article",
       "hot": "Wed, 19 Aug 2026 14:24:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "Valhalla 项目首次预览：JEP 401 重新定义 Java 对象的 == 运算符",
       "url": "https://www.infoq.cn/article/8grNo7eCm3Rly0NV8bcS?utm_source=rss&utm_medium=article",
       "hot": "Wed, 19 Aug 2026 12:25:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "Embabel智能体框架发布1.0版本",
       "url": "https://www.infoq.cn/article/5LJARsierf0NbH3Rc6wc?utm_source=rss&utm_medium=article",
       "hot": "Wed, 19 Aug 2026 11:14:23 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "让 Agent 真正驱动销售增长——FDE 模式下的业务流重构实战｜AICon深圳",
       "url": "https://www.infoq.cn/article/vrlSsJUrdpfGqsj3CTZK?utm_source=rss&utm_medium=article",
       "hot": "Wed, 19 Aug 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "谷歌发布 Angular v22，带来稳定的 Signal Forms、默认启用的 OnPush 以及实验性的 WebMCP",
-      "url": "https://www.infoq.cn/article/J7CiEHSU79e9TYi3soro?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 18 Aug 2026 17:28:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Snowflake CoCo AI 成本优化指南：7 个关键方法 | 技术实践",
-      "url": "https://www.infoq.cn/article/pOfV96f9DHG9Cw1KQAZB?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 18 Aug 2026 16:29:05 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "共识之外：Linux 生态系统中 AI 政策的碎片化现象",
-      "url": "https://www.infoq.cn/article/jsqPaMGuPXFkhifJmTym?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 18 Aug 2026 16:15:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "阿里云的野心，不在 Agent Builder",
-      "url": "https://www.infoq.cn/article/QekQuwv8UhxAcrOFgKM8?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 18 Aug 2026 15:32:44 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "豆包视频通话升级，火山引擎多模态传输系统提供技术支撑",
-      "url": "https://www.infoq.cn/article/kJK3qG9m7UEYtf7siCgU?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 18 Aug 2026 14:46:57 GMT"
     }
   ]
 }
