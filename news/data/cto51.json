@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-19T01:41:16+00:00",
+  "updated_at": "2026-08-19T04:08:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "突发，Fable 5.1泄露了！Claude又叒叕全球大宕机",
+      "url": "https://www.51cto.com/article/853412.html",
+      "hot": "如果你在用Claude Web端时选择了Fable 5，或者你正在使用Claude Code ，那么你很可能已经被Fable 5.1悄悄接管了。"
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek Harness 如何基于 Cordis 实现插件化 Agent 模式",
+      "url": "https://www.51cto.com/article/853409.html",
+      "hot": "本文从 DSH 的启动、配置、运行时服务、Agent 执行循环和热更新五个层面，解释它如何建立在 Cordis 之上。"
+    },
+    {
+      "rank": 3,
+      "title": "翻翻乐\"翻车\"实录：一个看似简单的卡片游戏，我踩了五个坑",
+      "url": "https://ost.51cto.com/posts/55335",
+      "hot": "翻翻乐&quot;翻车&quot;实录：一个看似简单的卡片游戏，我踩了五个坑一个让我怀疑自己&quot;连翻牌都不会写&quot;的下午先说一个让我记忆犹新的场景。那天下午，..."
+    },
+    {
+      "rank": 4,
+      "title": "面向 Agent 的团队知识供给系统：架构设计与工程落地",
+      "url": "https://www.51cto.com/article/853406.html",
+      "hot": "这篇文章不谈理念，只讲怎么动手：知识卡片怎么设计、沉淀怎么焊进流程、过期知识怎么自动退场、注入怎么做前置、指标怎么定口径。文中的 Schema、SQL、Prompt、伪代码都可以直接抄走改。"
+    },
+    {
+      "rank": 5,
+      "title": "用Spring Boot复刻了“微信消息撤回”：真正难的根本不是DELETE，而是让所有人的聊天窗口同时消失",
+      "url": "https://www.51cto.com/article/853400.html",
+      "hot": "Spring Framework 原生提供 WebSocket 支持；WebSocket 本身建立的是客户端和服务器之间的双向通信通道，因此很适合聊天消息、状态变化等实时推送场景。"
+    },
+    {
+      "rank": 6,
+      "title": "【HarmonyOS 7 悬浮页签深度实战】02 从普通底栏到第一个悬浮页签",
+      "url": "https://ost.51cto.com/posts/55324",
+      "hot": "前言已有HarmonyOS项目准备把普通底部导航改成悬浮页签时，代码变化其实不算多。真正容易出问题的地方，通常是页面已经换成了悬浮样式，脑..."
+    },
+    {
+      "rank": 7,
       "title": "企业微信AI大跃进：机器人权限不管公司多大，这次彻底放开了",
       "url": "https://www.51cto.com/article/853398.html",
       "hot": "企业协作工具这几年发权限，一直照着「人」的架构在走。你是什么职级、在哪个部门，决定你能看什么系统、能碰什么数据。现在多出来一条新的授权对象，不是人，是你自己养的那个数字助理。它能不能读某份文档、能不能代表你说话，就看你愿不愿意点那个授权按钮，跟公司规模、跟你的职级，都没关系了。"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "对比与生成：抖音SOTA多模态表征模型DME",
       "url": "https://www.51cto.com/article/853397.html",
       "hot": "抖音搜索多模态团队联合中国人民大学高瓴人工智能学院，发布抖音多模态表征模型 DME，在多模态表征权威评测榜单 MMEB-v2上，DME 模型在 2B、9B 两个参数量级下均取得对应规模 SOTA，整体得分分别达到 74.8（2B）、78.4（9B），视频与视觉文档检索的优势尤为突出。"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "MyBatis 源码深度拆解（十一）：MyBatis 事务管理 & 与 Spring 整合原理",
       "url": "https://www.51cto.com/article/853396.html",
       "hot": "事务管理是持久层框架的核心能力之一。MyBatis 本身提供了轻量级的事务管理机制，但在与 Spring 整合后，事务控制权被透明地转移给了 Spring 的声明式事务管理。"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "ECharts 有对手了？TanStack Charts 重新定义图表库",
       "url": "https://www.51cto.com/article/853395.html",
       "hot": "TanStack Charts 真正值得关注的地方，是它提出了一种不同的思路：图表不应该属于 React，也不应该属于 Vue，更不应该被某一个 UI 框架绑定。"
-    },
-    {
-      "rank": 5,
-      "title": "突发！OpenAI停止强化学习训练两周",
-      "url": "https://www.51cto.com/article/853389.html",
-      "hot": "OpenAI 发文称，公司此前曾暂停其最新、计划用于部署的模型强化学习（RL）训练两周。"
-    },
-    {
-      "rank": 6,
-      "title": "解码提速15.1倍、多任务性能不降：复旦&引望WAM-Diff2打通自动驾驶VLA自回归—扩散转换",
-      "url": "https://www.51cto.com/article/853388.html",
-      "hot": "复旦大学与引望智能联合提出 WAM-Diff2，一种基于三级层次化蒸馏的多任务离散扩散 VLA 框架。"
-    },
-    {
-      "rank": 7,
-      "title": "再看Agent 之 MCP 的安全性",
-      "url": "https://www.51cto.com/article/853394.html",
-      "hot": "MCP作为AI Agent时代的核心基础设施之一，为企业数字化转型注入强大动力。但是，必须清醒地认识到：MCP不是装上就能用，安全不跟上，跑得越快，风险越大。"
-    },
-    {
-      "rank": 8,
-      "title": "OpenAI公开四加十条保命指南，专防AI自动化攻击",
-      "url": "https://www.51cto.com/article/853387.html",
-      "hot": "HuggingFace安全事件让外界第一次清楚看到，前沿AI Agent已经能够自主寻找安全漏洞，并跑通现实世界中的网络攻击链。"
-    },
-    {
-      "rank": 9,
-      "title": "云网智算篇-第七篇：智算服务器架构——Atlas 900T A3 整机剖析",
-      "url": "https://www.51cto.com/article/853324.html",
-      "hot": "本文我们以 A3 超节点的心脏——Atlas 900T A3 训练服务器（Atlas 900 A3 SuperPoD 计算节点）为解剖对象，把它的骨架、血脉、接口一次看清。"
-    },
-    {
-      "rank": 10,
-      "title": "开启Benchmark的Harness时代：十五家学术机构联合发布HarnessEval",
-      "url": "https://www.51cto.com/article/853374.html",
-      "hot": "今天一个 Agent 的最终能力，早已不能简单等同于底层模型能力。模型之外还有上下文管理、工具调用、记忆、任务拆解、执行环境、权限管理和结果验证。真正决定一个 Agent 能不能稳定完成复杂任务的，是这些组件能否被组织成一套稳定、可执行的工作流系统。"
     }
   ]
 }

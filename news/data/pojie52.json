@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-08-19T01:41:14+00:00",
+  "updated_at": "2026-08-19T04:08:25+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
+      "title": "当游戏越来越漂亮，外挂却越来越丑：作弊技术摸底（2026）",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117216",
+      "hot": ""
+    },
+    {
+      "rank": 7,
       "title": "对某java保护器本体的逆向分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116474",
       "hot": "[md]## 0x00 前言\n\n最近在翻视频的时候发现了一个 Java 保护器，其官网宣称：\n\n&gt; 最佳的 Java 源代码保护方案\n\n然后一看价格，799 USD 一年，这么贵，那我可得看看你值不值了，开干。\n\n对于这个商业软件的名称，这里做数据脱敏处理：\n\n```text\nWTBoS2RtUkhWb ..."
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "SpongeMixer企业级勒索软件的加密逻辑及行为分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116347",
       "hot": "近期，一款企业级勒索软件SpongeMixer在国内多地呈现活跃态势。瞬犀安全实验室结合样本逆向分析、加密结构还原和行为链追踪，对其攻击特征进行了综合研判。\n逆向分析结果显示，该勒索软件会针对计算机系统恢复机制及第 ..."
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "某音a_bogus jsvmp反编译",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116186",
       "hot": "[md]上一篇文章[某q音乐jsvmp反编译](https://www.52pojie.cn/thread-2042090-1-1.html)介绍了寄存器类型的vmp反编译，bdms这个是基于堆栈的vmp，去年已经写好了，一直懒得总结，今天跟大家分享一下思路，如有不对的地方 ..."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Q音VMP初始化分析&SHA-1算法识别",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116112",
       "hot": "[md]# QQ音乐Sign逆向\n\n碎碎念\n\n本篇主要分析VMP初始化，识别VMP，识别SHA-1在VMP中的输出特征\n\n此VMP也比较有趣，一般来说VMP会将元操作抽离为某个case或者某个函数，但是此VMP中将多个元操作组合在一个函数中， ..."
-    },
-    {
-      "rank": 10,
-      "title": "iOS App的商业级环境检测手段 - 基于某讯A<E Framework 详解",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2115245",
-      "hot": "[md]# iOS App的商业级环境检测手段 - 基于某讯&amp;#197; anort -&gt; anogs\n```\n\n### 2.2 `anogs`核心分析\n\n#### 2.2.1 字符串加密模式\n\n直接用IDA Pro打开`anogs`二进制，左侧可以看到其导出表没有被混淆，先看`_AnoS ..."
     }
   ]
 }

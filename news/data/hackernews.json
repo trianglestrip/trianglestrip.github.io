@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-19T01:41:17+00:00",
+  "updated_at": "2026-08-19T04:08:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "A 3D fruit fly on macOS desktop powered by the real FlyWire connectome",
-      "url": "https://github.com/DenisSergeevitch/desktop-fly",
-      "hot": "155"
+      "title": "New paper shows that 37% of workers in US saw real wages decline from 2021-2024 [pdf]",
+      "url": "https://bfi.uchicago.edu/wp-content/uploads/2026/08/BFI_WP_2026-108-1.pdf",
+      "hot": "274"
     },
     {
       "rank": 2,
-      "title": "The Amazon tax",
-      "url": "https://seths.blog/2026/08/the-amazon-tax/",
-      "hot": "932"
+      "title": "Meta's blockbuster trial draws parallels to big tobacco",
+      "url": "https://www.economist.com/business/2026/08/18/metas-blockbuster-trial-draws-parallels-to-big-tobacco",
+      "hot": "64"
     },
     {
       "rank": 3,
-      "title": "Cerebras CS4",
-      "url": "https://www.cerebras.ai/cs4",
-      "hot": "27"
+      "title": "OpenLogi",
+      "url": "https://openlogi.org/en",
+      "hot": "84"
     },
     {
       "rank": 4,
-      "title": "Solo – a .so loader for static Linux binaries",
-      "url": "https://github.com/pg83/solo",
-      "hot": "36"
+      "title": "Cerebras CS-4",
+      "url": "https://www.cerebras.ai/cs4",
+      "hot": "134"
     },
     {
       "rank": 5,
-      "title": "How does IKEA come up with names for its products?",
-      "url": "https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html",
-      "hot": "223"
+      "title": "Palomar: A registry of Lean verified mathematics",
+      "url": "https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics/",
+      "hot": "20"
     },
     {
       "rank": 6,
-      "title": "New paper shows that 37% of workers in US saw real wages decline from 2021-2024 [pdf]",
-      "url": "https://bfi.uchicago.edu/wp-content/uploads/2026/08/BFI_WP_2026-108-1.pdf",
-      "hot": "10"
+      "title": "A 3D fruit fly on macOS desktop powered by the real FlyWire connectome",
+      "url": "https://github.com/DenisSergeevitch/desktop-fly",
+      "hot": "196"
     },
     {
       "rank": 7,
-      "title": "Show HN: Interactive, animated architecture of any HuggingFace models",
-      "url": "https://modelmap.cc",
-      "hot": "29"
+      "title": "The Amazon tax",
+      "url": "https://seths.blog/2026/08/the-amazon-tax/",
+      "hot": "1011"
     },
     {
       "rank": 8,
       "title": "Scientists stunned by children's lung recovery in ultra low emission zone",
       "url": "https://www.bbc.com/news/articles/c1l1r1zne1ro",
-      "hot": "10"
+      "hot": "68"
     },
     {
       "rank": 9,
-      "title": "Turbovec – Google's TurboQuant for vector search in Rust",
-      "url": "https://github.com/RyanCodrai/turbovec",
-      "hot": "203"
+      "title": "Solo – a .so loader for static Linux binaries",
+      "url": "https://github.com/pg83/solo",
+      "hot": "71"
     },
     {
       "rank": 10,
-      "title": "Why crypto's best infrastructure companies stopped looking like crypto?",
-      "url": "https://konstantintkachuk.com/writing/depin-is-dead-long-live-infrastructure-as-a-service/",
-      "hot": "10"
+      "title": "How does IKEA come up with names for its products?",
+      "url": "https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html",
+      "hot": "259"
     }
   ]
 }
