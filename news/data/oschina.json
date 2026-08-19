@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-18T22:03:50+00:00",
+  "updated_at": "2026-08-19T01:41:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "轻量级运维极速引擎 OpsFlash v0.2.0 正式发布",
+      "url": "https://www.oschina.net/news/501992",
+      "hot": "Tue, 18 Aug 2026 23:08:24 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "MooTool Next 发布！全新重写，带来更现代的界面与多窗口体验",
+      "url": "https://www.oschina.net/news/501991",
+      "hot": "Tue, 18 Aug 2026 22:00:30 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "WePush 5.0.8 发布，专注批量推送的小而美的工具",
+      "url": "https://www.oschina.net/news/501990",
+      "hot": "Tue, 18 Aug 2026 21:58:16 +0800"
+    },
+    {
+      "rank": 4,
       "title": "WSL 上的 Ubuntu 用户数量将超过原生 Linux 桌面用户",
       "url": "https://www.oschina.net/news/501989/canonical-wsl-growth",
       "hot": "Tue, 18 Aug 2026 19:05:01 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "Firefox iOS 版内置原生广告拦截器，但搜索引擎广告例外",
       "url": "https://www.oschina.net/news/501988/block-ads-firefox-ios",
       "hot": "Tue, 18 Aug 2026 18:31:21 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "Bluesky 截图里多出来的 Logo 是怎么来的？一个 iOS 的「隐私功能」被用成了增长黑客",
       "url": "https://www.oschina.net/news/501987/bluesky-screenshots",
       "hot": "Tue, 18 Aug 2026 18:03:10 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "你想替代 GitHub，先得做到不依赖 GitHub",
       "url": "https://www.oschina.net/news/501986",
       "hot": "Tue, 18 Aug 2026 17:43:04 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Rust 编译器原生支持 GPU 卸载了：一份论文试图终结「安全」和「快」的二选一",
       "url": "https://www.oschina.net/news/501985",
       "hot": "Tue, 18 Aug 2026 15:48:45 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "GitHub 爆发严重宕机事故，开发者开始认真找退路",
       "url": "https://www.oschina.net/news/501984",
       "hot": "Tue, 18 Aug 2026 15:04:52 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "DuckDB 异步 I/O 让远程查询加速 20 倍",
       "url": "https://www.oschina.net/news/501982/duckdb-asynchronous-io",
       "hot": "Tue, 18 Aug 2026 14:38:34 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "StreamSQL v1.2.0 发布：边缘 SQL 流处理引擎，补齐 CEP 与分析函数能力",
-      "url": "https://www.oschina.net/news/501980",
-      "hot": "Tue, 18 Aug 2026 13:52:15 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "qKnow 专业版 v3.1.2 上线：文件中心无缝对接 HDFS/OSS，海量数据秒级入库！",
-      "url": "https://www.oschina.net/news/501979",
-      "hot": "Tue, 18 Aug 2026 11:43:47 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "GitHub 宕机超过 7 小时，AI 编码狂潮把基础设施压垮了",
-      "url": "https://www.oschina.net/news/501978/github-outage-disrupts-developers-worldwide",
-      "hot": "Tue, 18 Aug 2026 11:34:06 +0800"
     }
   ]
 }
