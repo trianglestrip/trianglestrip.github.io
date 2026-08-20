@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-19T23:55:07+00:00",
+  "updated_at": "2026-08-20T01:59:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "极空间部署Stirling PDF：搭建自托管PDF工具箱并实现远程访问",
       "url": "https://blog.csdn.net/Rqaqedamancy/article/details/163876441",
-      "hot": "18947"
+      "hot": "19549"
     },
     {
       "rank": 2,
-      "title": "用 WorkBuddy 一键解读统计公报：从图片到 Word 报告与 HTML 看板（湖南省人口数据实战）",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/163763951",
-      "hot": "17522"
+      "title": "分布式GPU智能算法深度研究2026年版（下）",
+      "url": "https://blog.csdn.net/kkiron/article/details/163874293",
+      "hot": "15695"
     },
     {
       "rank": 3,
-      "title": "大模型工程化实战（三）：LLM 灰度发布 + 自动熔断，1% 流量试错、指标劣化自动回滚",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/163801977",
-      "hot": "14962"
+      "title": "飞牛NAS部署PandaWiki：搭建自托管AI知识库并实现远程访问",
+      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163843503",
+      "hot": "14793"
     },
     {
       "rank": 4,
-      "title": "分布式GPU智能算法深度研究2026年版（下）",
-      "url": "https://blog.csdn.net/kkiron/article/details/163874293",
-      "hot": "14405"
+      "title": "大模型工程化实战（三）：LLM 灰度发布 + 自动熔断，1% 流量试错、指标劣化自动回滚",
+      "url": "https://blog.csdn.net/xiaobing259/article/details/163801977",
+      "hot": "14305"
     },
     {
       "rank": 5,
       "title": "SpringBoot3+Vue3+UniApp OA 即时通讯：单聊群聊、图片文件、PC 与手机同一会话",
       "url": "https://blog.csdn.net/zhouzhongyan/article/details/163865432",
-      "hot": "12049"
+      "hot": "10289"
     },
     {
       "rank": 6,
-      "title": "【高等几何 线性代数】正交矩阵、正交变换、齐次矩阵",
-      "url": "https://blog.csdn.net/he_zhidan/article/details/163392422",
-      "hot": "10181"
+      "title": "【HTTPS】一个“S“背后的战争：五轮迭代还原 HTTPS 设计全貌",
+      "url": "https://blog.csdn.net/2302_80243065/article/details/163824638",
+      "hot": "9194"
     },
     {
       "rank": 7,
-      "title": "飞牛NAS部署PandaWiki：搭建自托管AI知识库并实现远程访问",
-      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163843503",
-      "hot": "9184"
+      "title": "【机器学习】损失函数全解_从MSE到交叉熵",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/163848790",
+      "hot": "8918"
     },
     {
       "rank": 8,
-      "title": "【机器学习】损失函数全解_从MSE到交叉熵",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/163848790",
-      "hot": "9159"
+      "title": "HarmonyOS 应用 · 校园宿舍拼单订单页深度解析：状态机驱动的列表与时间线设计",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/163858686",
+      "hot": "8643"
     },
     {
       "rank": 9,
-      "title": "【HTTPS】一个“S“背后的战争：五轮迭代还原 HTTPS 设计全貌",
-      "url": "https://blog.csdn.net/2302_80243065/article/details/163824638",
-      "hot": "9134"
+      "title": "读懂微信 AI 底层逻辑：普通人、商家掘金完整手册",
+      "url": "https://blog.csdn.net/herosunly/article/details/163826553",
+      "hot": "8367"
     },
     {
       "rank": 10,
-      "title": "不用PyTorch，我用C++手写了一个能认手写数字的神经网络",
-      "url": "https://blog.csdn.net/chen1415886044/article/details/163864969",
-      "hot": "7691"
+      "title": "AI辅助芯片制造：算法与工程化落地",
+      "url": "https://blog.csdn.net/weixin_43178406/article/details/163829838",
+      "hot": "8091"
     }
   ]
 }

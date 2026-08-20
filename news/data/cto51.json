@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-19T23:55:11+00:00",
+  "updated_at": "2026-08-20T01:59:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "突发，Fable 5.1泄露了！Claude又叒叕全球大宕机",
-      "url": "https://www.51cto.com/article/853412.html",
-      "hot": "如果你在用Claude Web端时选择了Fable 5，或者你正在使用Claude Code ，那么你很可能已经被Fable 5.1悄悄接管了。"
+      "title": "字节二面若有所思：\"你说模仿Claude Code来精简提示词——删完你拿什么验证没翻车？\" 我刚想说\"跑一遍就行\"，突然觉得不对",
+      "url": "https://www.51cto.com/article/853506.html",
+      "hot": "提示词该怎么删？一套不会把Agent删崩的实操方法。大家道理都懂嘛。可具体怎么下手呢？删哪里、留哪里、怎么验证没删错？"
     },
     {
       "rank": 2,
-      "title": "DeepSeek Harness 如何基于 Cordis 实现插件化 Agent 模式",
-      "url": "https://www.51cto.com/article/853409.html",
-      "hot": "本文从 DSH 的启动、配置、运行时服务、Agent 执行循环和热更新五个层面，解释它如何建立在 Cordis 之上。"
+      "title": "Agent Plan x DeepSeek Harness 实践指南",
+      "url": "https://www.51cto.com/article/853495.html",
+      "hot": "最新的DeepSeek 智能体应用框架（DeepSeek Harness，简称DSH），Model、Tool、Memory、Sandbox 和 Agent 都是可组合、可替换、可扩展的插件。Harness 本身退到最薄——它只做三件事：调度模型与工具、在高危操作前请你审批、维护一份任务计划。"
     },
     {
       "rank": 3,
-      "title": "翻翻乐\"翻车\"实录：一个看似简单的卡片游戏，我踩了五个坑",
-      "url": "https://ost.51cto.com/posts/55335",
-      "hot": "翻翻乐&quot;翻车&quot;实录：一个看似简单的卡片游戏，我踩了五个坑一个让我怀疑自己&quot;连翻牌都不会写&quot;的下午先说一个让我记忆犹新的场景。那天下午，..."
+      "title": "用Spring Boot复刻了“微信未读红点”：1万条消息不逐条UPDATE，核心只是一个lastReadSeq",
+      "url": "https://www.51cto.com/article/853493.html",
+      "hot": "后来真正做到群聊、多设备和几万条历史消息以后才发现：如果给每一条消息逐条维护“已读/未读”，数据库很快就会变成灾难现场。"
     },
     {
       "rank": 4,
-      "title": "面向 Agent 的团队知识供给系统：架构设计与工程落地",
-      "url": "https://www.51cto.com/article/853406.html",
-      "hot": "这篇文章不谈理念，只讲怎么动手：知识卡片怎么设计、沉淀怎么焊进流程、过期知识怎么自动退场、注入怎么做前置、指标怎么定口径。文中的 Schema、SQL、Prompt、伪代码都可以直接抄走改。"
+      "title": "一封钓鱼邮件触发六个AI代理同时启动，SOC直接\"撞车\"：智能化运营那道被忽视的\"碰撞危机\"",
+      "url": "https://www.51cto.com/article/853455.html",
+      "hot": "代理碰撞真正暴露的，是一个更深层的架构问题——安全运营正在从\"人使用工具\"转向\"机器代表人行动\"，但今天绝大多数SOC的控制机制，仍然是围绕人类设计的。当机器开始拥有行动能力，过去依靠组织结构、职责分工和人工沟通解决的协调问题，就必须被重新设计成机器能够理解和执行的规则。"
     },
     {
       "rank": 5,
-      "title": "用Spring Boot复刻了“微信消息撤回”：真正难的根本不是DELETE，而是让所有人的聊天窗口同时消失",
-      "url": "https://www.51cto.com/article/853400.html",
-      "hot": "Spring Framework 原生提供 WebSocket 支持；WebSocket 本身建立的是客户端和服务器之间的双向通信通道，因此很适合聊天消息、状态变化等实时推送场景。"
+      "title": "Java 开发：颠覆静态编码！Java 反射，开发者必懂的底层黑科技",
+      "url": "https://www.51cto.com/article/853336.html",
+      "hot": "本文结合理论原理与真实开发场景，用简洁易懂、落地性强的方式层层拆解反射的核心原理、基础用法、真实实战场景与高频避坑要点。"
     },
     {
       "rank": 6,
-      "title": "【HarmonyOS 7 悬浮页签深度实战】02 从普通底栏到第一个悬浮页签",
-      "url": "https://ost.51cto.com/posts/55324",
-      "hot": "前言已有HarmonyOS项目准备把普通底部导航改成悬浮页签时，代码变化其实不算多。真正容易出问题的地方，通常是页面已经换成了悬浮样式，脑..."
+      "title": "Octopus：基于无历史数据的梯度正交化的学习框架｜CVPR 2026",
+      "url": "https://www.51cto.com/article/853492.html",
+      "hot": "Octopus提出了一种基于无历史数据的梯度正交化（HiFGO）的两阶段持续学习框架，通过梯度层面的正交约束有效缓解了任务间的干扰，同时提出两阶段训练策略实现可塑性与稳定性的良好平衡。Octopus在UCIT基准上实现了当前最优性能（SOTA），Avg和Last指标分别超越现有最优方法 2.14% 和 6.82%。"
     },
     {
       "rank": 7,
-      "title": "企业微信AI大跃进：机器人权限不管公司多大，这次彻底放开了",
-      "url": "https://www.51cto.com/article/853398.html",
-      "hot": "企业协作工具这几年发权限，一直照着「人」的架构在走。你是什么职级、在哪个部门，决定你能看什么系统、能碰什么数据。现在多出来一条新的授权对象，不是人，是你自己养的那个数字助理。它能不能读某份文档、能不能代表你说话，就看你愿不愿意点那个授权按钮，跟公司规模、跟你的职级，都没关系了。"
+      "title": "智谱唐杰：大模型只看参数的时代，结束了",
+      "url": "https://www.51cto.com/article/853479.html",
+      "hot": "清华大学教授唐杰在X上发表的一则有关Thoughts About Scaling Law的帖子，开头便把大模型发布会上最常见的那个问题拆了."
     },
     {
       "rank": 8,
-      "title": "对比与生成：抖音SOTA多模态表征模型DME",
-      "url": "https://www.51cto.com/article/853397.html",
-      "hot": "抖音搜索多模态团队联合中国人民大学高瓴人工智能学院，发布抖音多模态表征模型 DME，在多模态表征权威评测榜单 MMEB-v2上，DME 模型在 2B、9B 两个参数量级下均取得对应规模 SOTA，整体得分分别达到 74.8（2B）、78.4（9B），视频与视觉文档检索的优势尤为突出。"
+      "title": "马斯克直呼完了：Anthropic 73页论文刷屏，全球大模型中招思想病毒！",
+      "url": "https://www.51cto.com/article/853478.html",
+      "hot": "最近，Anthropic研究员的Jack Lindsey的一篇论文，已经在全网刷屏。"
     },
     {
       "rank": 9,
-      "title": "MyBatis 源码深度拆解（十一）：MyBatis 事务管理 & 与 Spring 整合原理",
-      "url": "https://www.51cto.com/article/853396.html",
-      "hot": "事务管理是持久层框架的核心能力之一。MyBatis 本身提供了轻量级的事务管理机制，但在与 Spring 整合后，事务控制权被透明地转移给了 Spring 的声明式事务管理。"
+      "title": "神级 Skill，上传一张图片，生成酷炫 3D 模型！",
+      "url": "https://www.51cto.com/article/853491.html",
+      "hot": "roadmap一路排到v2.0，环境重建、Unity和Unreal导出、自动绑骨都在名单上。11天5.3k Star，接下来必定又是一个爆火的项目。"
     },
     {
       "rank": 10,
-      "title": "ECharts 有对手了？TanStack Charts 重新定义图表库",
-      "url": "https://www.51cto.com/article/853395.html",
-      "hot": "TanStack Charts 真正值得关注的地方，是它提出了一种不同的思路：图表不应该属于 React，也不应该属于 Vue，更不应该被某一个 UI 框架绑定。"
+      "title": "OpenAI要输？Anthropic按下万亿IPO快进键，达里奥2%持股夺权",
+      "url": "https://www.51cto.com/article/853477.html",
+      "hot": "Anthropic计划上市之前给CEO达里奥，还有6位联创发一类带「额外投票权」的股票。"
     }
   ]
 }
