@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-20T18:04:06+00:00",
+  "updated_at": "2026-08-20T20:11:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "PyTorch强化学习实战——用预训练语言模型和ChatGPT玩转文本游戏",
       "url": "https://blog.csdn.net/LOVEmy134611/article/details/159917738",
-      "hot": "13768"
+      "hot": "13819"
     },
     {
       "rank": 2,
-      "title": "分布式GPU智能算法深度研究2026年版（下）",
-      "url": "https://blog.csdn.net/kkiron/article/details/163874293",
-      "hot": "12839"
+      "title": "把蓝耘模型装进OpenCode:实测开发一个GitHub Issue分诊助手",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/163664584",
+      "hot": "12679"
     },
     {
       "rank": 3,
       "title": "大模型工程化实战（三）：LLM 灰度发布 + 自动熔断，1% 流量试错、指标劣化自动回滚",
       "url": "https://blog.csdn.net/xiaobing259/article/details/163801977",
-      "hot": "12801"
+      "hot": "12552"
     },
     {
       "rank": 4,
-      "title": "把蓝耘模型装进OpenCode:实测开发一个GitHub Issue分诊助手",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/163664584",
-      "hot": "12772"
+      "title": "分布式GPU智能算法深度研究2026年版（下）",
+      "url": "https://blog.csdn.net/kkiron/article/details/163874293",
+      "hot": "12314"
     },
     {
       "rank": 5,
       "title": "Docker - 核心概念速通，镜像、容器、仓库一次弄懂",
       "url": "https://blog.csdn.net/qq_41187124/article/details/157611426",
-      "hot": "11920"
+      "hot": "11789"
     },
     {
       "rank": 6,
       "title": "多个内网服务怎么统一入口？部署 Nginx Proxy Manager 配置反向代理与 SSL",
       "url": "https://blog.csdn.net/2602_94956987/article/details/163917380",
-      "hot": "11241"
+      "hot": "11127"
     },
     {
       "rank": 7,
-      "title": "飞牛NAS部署PandaWiki：搭建自托管AI知识库并实现远程访问",
-      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163843503",
-      "hot": "10922"
+      "title": "不用守着直播间：在飞牛NAS部署Bililive-go，自动监控并保存直播录像",
+      "url": "https://blog.csdn.net/weixin_44976692/article/details/163914426",
+      "hot": "10147"
     },
     {
       "rank": 8,
-      "title": "不用守着直播间：在飞牛NAS部署Bililive-go，自动监控并保存直播录像",
-      "url": "https://blog.csdn.net/weixin_44976692/article/details/163914426",
-      "hot": "10671"
+      "title": "飞牛NAS部署PandaWiki：搭建自托管AI知识库并实现远程访问",
+      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163843503",
+      "hot": "9586"
     },
     {
       "rank": 9,
-      "title": "MySQL迁移KaiwuDB性能对比：TPC-C测试实录",
-      "url": "https://blog.csdn.net/u014727709/article/details/163832165",
-      "hot": "10026"
+      "title": "把Blinko放进极空间:Docker 部署自托管笔记，并实现多设备远程访问",
+      "url": "https://blog.csdn.net/2301_76341691/article/details/163914606",
+      "hot": "9403"
     },
     {
       "rank": 10,
-      "title": "时序数据库超表架构深度体验（下篇）：压缩、分布式和真实战场上的表现",
-      "url": "https://blog.csdn.net/qq_32682301/article/details/163897512",
-      "hot": "9815"
+      "title": "MySQL迁移KaiwuDB性能对比：TPC-C测试实录",
+      "url": "https://blog.csdn.net/u014727709/article/details/163832165",
+      "hot": "9317"
     }
   ]
 }
