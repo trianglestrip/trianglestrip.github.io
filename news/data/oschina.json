@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-20T06:20:13+00:00",
+  "updated_at": "2026-08-20T08:21:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "OpenCode × DeepSeek 配置方案完成重大升级：应对 API 涨价",
+      "url": "https://www.oschina.net/news/502035",
+      "hot": "Thu, 20 Aug 2026 15:56:43 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Unsloth Dynamic 3.0 GGUF 发布，同体积下准确率再提 10%",
+      "url": "https://www.oschina.net/news/502032/unsloth-ai-dynamic-3.0-ggufs",
+      "hot": "Thu, 20 Aug 2026 14:39:21 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "2026北京开源行业解决方案创新赛正式启动报名",
+      "url": "https://www.oschina.net/news/502031",
+      "hot": "Thu, 20 Aug 2026 14:33:44 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "openKylin X-Kernel 走出实验室：一场关于“高校与企业如何做开源”的分享",
+      "url": "https://www.oschina.net/news/502028",
+      "hot": "Thu, 20 Aug 2026 13:46:15 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Goodlink v3.0.0 发布, 全网最简单, 最快的免费内网穿透",
+      "url": "https://www.oschina.net/news/502025",
+      "hot": "Thu, 20 Aug 2026 12:59:58 +0800"
+    },
+    {
+      "rank": 6,
       "title": "GitHub Copilot 的自动修复把 Snowflake 的 Jira 搞穿了",
       "url": "https://www.oschina.net/news/502024/wiz-red-agent-snowflake-copilot-cicd-bug",
       "hot": "Thu, 20 Aug 2026 12:06:18 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
+      "title": "纯开源制品仓库 kkRepo v0.9.0 发布，新增 Alpine、Hugging Face Models 与全局搜索",
+      "url": "https://www.oschina.net/news/502023",
+      "hot": "Thu, 20 Aug 2026 11:50:59 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "Erupt 2.0.4：一个注解，让表格行能拖着排序了",
+      "url": "https://www.oschina.net/news/502022",
+      "hot": "Thu, 20 Aug 2026 11:49:27 +0800"
+    },
+    {
+      "rank": 9,
       "title": "杨植麟玩摇滚有啥用啊？",
       "url": "https://www.oschina.net/news/502021",
       "hot": "Thu, 20 Aug 2026 11:11:53 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "谷歌将 Pixel 内核源码获取方式从 Git tags 改成了“填表等几周”",
       "url": "https://www.oschina.net/news/502020",
       "hot": "Thu, 20 Aug 2026 11:05:48 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "PostgreSQL for Everything？PG 到底能不能替代 Kafka、Elasticsearch、Redis、MongoDB",
-      "url": "https://www.oschina.net/news/502019/postgresql-for-everything",
-      "hot": "Thu, 20 Aug 2026 11:00:19 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "程序员为 8 岁女儿创建了一个游戏引擎，教她写代码",
-      "url": "https://www.oschina.net/news/502018",
-      "hot": "Thu, 20 Aug 2026 10:48:47 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "DeepSeek  Harness 、ChatGPT 登陆玲珑商店，Linux 发行版热门 AI 工具",
-      "url": "https://www.oschina.net/news/502017",
-      "hot": "Thu, 20 Aug 2026 10:14:43 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Go 1.27 发布：泛型方法来了，JSON 包重写，还内置了 UUID 和 SIMD",
-      "url": "https://www.oschina.net/news/502015/golang-1-27",
-      "hot": "Thu, 20 Aug 2026 10:11:17 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "OpenRouter 加入 Stripe，「LLM 的 Stripe」真的成了 Stripe 的一部分",
-      "url": "https://www.oschina.net/news/502014/openrouter-is-joining-stripe",
-      "hot": "Thu, 20 Aug 2026 10:10:06 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Bun 1.4 迟迟未至：一场高调 Rust 重写背后的现实考验",
-      "url": "https://www.oschina.net/news/502012",
-      "hot": "Thu, 20 Aug 2026 08:51:25 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "AI 换台电脑就失忆？我们自己写了个开源项目解决它",
-      "url": "https://www.oschina.net/news/502011",
-      "hot": "Wed, 19 Aug 2026 22:36:06 +0800"
     }
   ]
 }
