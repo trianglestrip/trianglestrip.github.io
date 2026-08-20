@@ -1,9 +1,8 @@
 {
   "source": "kuaishou",
   "title": "快手热榜",
-  "updated_at": "2026-08-19T23:41:36+00:00",
-  "fetch_ok": false,
-  "error": "Command '['hotboard', 'kuaishou', '--format', 'json']' timed out after 60 seconds",
+  "updated_at": "2026-08-20T00:29:24+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -15,55 +14,55 @@
       "rank": 2,
       "title": "第18号台风沙德尔生成",
       "url": "https://www.kuaishou.com/short-video/3xq5nb9qjtqzscg",
-      "hot": "1323万"
+      "hot": "1220.4万"
     },
     {
       "rank": 3,
-      "title": "央视七夕晚会",
-      "url": "https://www.kuaishou.com/short-video/3xub8krpr7qpebe",
-      "hot": "1239.1万"
+      "title": "台风沙德尔会抵达江浙沪吗",
+      "url": "https://www.kuaishou.com/short-video/3xwrrxi3zccfn5s",
+      "hot": "1219.9万"
     },
     {
       "rank": 4,
       "title": "我国首次实现火箭陆地回收",
       "url": "https://www.kuaishou.com/short-video/3x5e3tjyhrj55ga",
-      "hot": "1190.6万"
+      "hot": "1219.6万"
     },
     {
       "rank": 5,
-      "title": "西游记为何今年又火了",
-      "url": "https://www.kuaishou.com/short-video/3xma8b2nkg4zekq",
-      "hot": "1142.1万"
+      "title": "央视七夕晚会",
+      "url": "https://www.kuaishou.com/short-video/3xub8krpr7qpebe",
+      "hot": "1219.4万"
     },
     {
       "rank": 6,
-      "title": "日本人排队5小时买中国相机",
-      "url": "https://www.kuaishou.com/short-video/3xwrcwftshkimws",
-      "hot": "1099.7万"
+      "title": "金与正否认朝鲜向俄增兵",
+      "url": "https://www.kuaishou.com/short-video/3xfcr348nv44jmy",
+      "hot": "1123.3万"
     },
     {
       "rank": 7,
-      "title": "27岁男子确诊肾衰竭晚期",
-      "url": "https://www.kuaishou.com/short-video/3xnpuaeb2dryugi",
-      "hot": "1078.6万"
+      "title": "外交部提醒谨慎赴帕劳旅游",
+      "url": "https://www.kuaishou.com/short-video/3xzpfp3cu4j96hk",
+      "hot": "1101.2万"
     },
     {
       "rank": 8,
-      "title": "在戏曲中看到自己的爱情",
-      "url": "https://www.kuaishou.com/short-video/3xcsdtk4jex6t94",
-      "hot": "1035.7万"
+      "title": "朱雀三号回收到底牛在哪",
+      "url": "https://www.kuaishou.com/short-video/3xtereq9ncxrzw9",
+      "hot": "1090.3万"
     },
     {
       "rank": 9,
-      "title": "75款APP被通报违规",
-      "url": "https://www.kuaishou.com/short-video/3xxay9jbpc3rwn2",
-      "hot": "1014.9万"
+      "title": "网友用龙餐馆钓鱼",
+      "url": "https://www.kuaishou.com/short-video/3x8adcdfk9b3nh9",
+      "hot": "1079.5万"
     },
     {
       "rank": 10,
       "title": "高市早苗就诊6个半小时",
       "url": "https://www.kuaishou.com/short-video/3xmgsu5vm6492fa",
-      "hot": "1012万"
+      "hot": "1017.8万"
     }
   ]
 }
