@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-20T10:39:25+00:00",
+  "updated_at": "2026-08-20T13:16:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "极空间部署Stirling PDF：搭建自托管PDF工具箱并实现远程访问",
       "url": "https://blog.csdn.net/Rqaqedamancy/article/details/163876441",
-      "hot": "21062"
+      "hot": "20562"
     },
     {
       "rank": 2,
       "title": "分布式GPU智能算法深度研究2026年版（下）",
       "url": "https://blog.csdn.net/kkiron/article/details/163874293",
-      "hot": "18542"
+      "hot": "17838"
     },
     {
       "rank": 3,
       "title": "飞牛NAS部署PandaWiki：搭建自托管AI知识库并实现远程访问",
       "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/163843503",
-      "hot": "12621"
+      "hot": "14094"
     },
     {
       "rank": 4,
-      "title": "AI辅助芯片制造：算法与工程化落地",
-      "url": "https://blog.csdn.net/weixin_43178406/article/details/163829838",
-      "hot": "10849"
+      "title": "PyTorch强化学习实战——用预训练语言模型和ChatGPT玩转文本游戏",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159917738",
+      "hot": "10400"
     },
     {
       "rank": 5,
       "title": "大模型工程化实战（三）：LLM 灰度发布 + 自动熔断，1% 流量试错、指标劣化自动回滚",
       "url": "https://blog.csdn.net/xiaobing259/article/details/163801977",
-      "hot": "10290"
+      "hot": "9934"
     },
     {
       "rank": 6,
-      "title": "HarmonyOS 应用 · 校园宿舍拼单订单页深度解析：状态机驱动的列表与时间线设计",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/163858686",
-      "hot": "9936"
+      "title": "不用守着直播间：在飞牛NAS部署Bililive-go，自动监控并保存直播录像",
+      "url": "https://blog.csdn.net/weixin_44976692/article/details/163914426",
+      "hot": "9915"
     },
     {
       "rank": 7,
-      "title": "不用守着直播间：在飞牛NAS部署Bililive-go，自动监控并保存直播录像",
-      "url": "https://blog.csdn.net/weixin_44976692/article/details/163914426",
-      "hot": "9920"
+      "title": "Docker - 核心概念速通，镜像、容器、仓库一次弄懂",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157611426",
+      "hot": "9896"
     },
     {
       "rank": 8,
-      "title": "Docker - 核心概念速通，镜像、容器、仓库一次弄懂",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157611426",
-      "hot": "9214"
+      "title": "把Blinko放进极空间:Docker 部署自托管笔记，并实现多设备远程访问",
+      "url": "https://blog.csdn.net/2301_76341691/article/details/163914606",
+      "hot": "9827"
     },
     {
       "rank": 9,
-      "title": "PyTorch强化学习实战——用预训练语言模型和ChatGPT玩转文本游戏",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159917738",
-      "hot": "9201"
+      "title": "HarmonyOS 应用 · 校园宿舍拼单订单页深度解析：状态机驱动的列表与时间线设计",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/163858686",
+      "hot": "9798"
     },
     {
       "rank": 10,
       "title": "时序数据库超表架构深度体验（下篇）：压缩、分布式和真实战场上的表现",
       "url": "https://blog.csdn.net/qq_32682301/article/details/163897512",
-      "hot": "9109"
+      "hot": "9505"
     }
   ]
 }

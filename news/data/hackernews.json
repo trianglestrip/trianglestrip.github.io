@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-20T10:39:29+00:00",
+  "updated_at": "2026-08-20T13:16:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Don't Paste the AI, please",
       "url": "https://dontpastetheai.com/",
-      "hot": "293"
+      "hot": "673"
     },
     {
       "rank": 2,
-      "title": "Windows brings out the Rorschach test in everyone",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20030825-00/?p=42803",
-      "hot": "190"
+      "title": "AliExpress runs silent WebAudio fingerprinting that breaks Bluetooth multipoint",
+      "url": "https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html",
+      "hot": "229"
     },
     {
       "rank": 3,
-      "title": "AliExpress runs silent WebAudio fingerprinting that breaks Bluetooth multipoint",
-      "url": "https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html",
-      "hot": "12"
+      "title": "Show HN: I trained a 125M model to autocomplete piano on-device",
+      "url": "https://simedw.com/2026/08/20/midi-autocomplete/",
+      "hot": "57"
     },
     {
       "rank": 4,
-      "title": "OpenRouter is joining Stripe",
-      "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
-      "hot": "849"
+      "title": "Windows brings out the Rorschach test in everyone (2003)",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20030825-00/?p=42803",
+      "hot": "260"
     },
     {
       "rank": 5,
-      "title": "Turns are Better than Radians (2022)",
-      "url": "https://www.computerenhance.com/p/turns-are-better-than-radians",
-      "hot": "216"
+      "title": "OpenRouter is joining Stripe",
+      "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
+      "hot": "902"
     },
     {
       "rank": 6,
-      "title": "Go 1.27",
-      "url": "https://go.dev/blog/go1.27",
-      "hot": "653"
+      "title": "Turns are Better than Radians (2022)",
+      "url": "https://www.computerenhance.com/p/turns-are-better-than-radians",
+      "hot": "256"
     },
     {
       "rank": 7,
       "title": "Google has stopped pushing Git tags for some Android source code",
       "url": "https://grapheneos.social/@GrapheneOS/117057099753905023",
-      "hot": "583"
+      "hot": "694"
     },
     {
       "rank": 8,
-      "title": "A faster way to calculate the day of the week",
-      "url": "https://www.benjoffe.com/fast-day-of-week",
-      "hot": "159"
+      "title": "Go 1.27",
+      "url": "https://go.dev/blog/go1.27",
+      "hot": "701"
     },
     {
       "rank": 9,
-      "title": "A joke domain purchase turned in geopolitical warfare",
-      "url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/",
-      "hot": "910"
+      "title": "Seeing beyond BMI: Estimating cardiometabolic risk with smartphone imagery",
+      "url": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
+      "hot": "16"
     },
     {
       "rank": 10,
-      "title": "Manabu Kosaka's Handmade Paper Sculptures",
-      "url": "https://coca11272000.wixsite.com/manabukosaka",
-      "hot": "134"
+      "title": "A faster way to calculate the day of the week",
+      "url": "https://www.benjoffe.com/fast-day-of-week",
+      "hot": "197"
     }
   ]
 }
