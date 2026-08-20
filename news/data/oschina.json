@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-20T01:59:25+00:00",
+  "updated_at": "2026-08-20T04:18:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "GitHub Copilot 的自动修复把 Snowflake 的 Jira 搞穿了",
+      "url": "https://www.oschina.net/news/502024/wiz-red-agent-snowflake-copilot-cicd-bug",
+      "hot": "Thu, 20 Aug 2026 12:06:18 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "杨植麟玩摇滚有啥用啊？",
+      "url": "https://www.oschina.net/news/502021",
+      "hot": "Thu, 20 Aug 2026 11:11:53 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "谷歌将 Pixel 内核源码获取方式从 Git tags 改成了“填表等几周”",
+      "url": "https://www.oschina.net/news/502020",
+      "hot": "Thu, 20 Aug 2026 11:05:48 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "PostgreSQL for Everything？PG 到底能不能替代 Kafka、Elasticsearch、Redis、MongoDB",
+      "url": "https://www.oschina.net/news/502019/postgresql-for-everything",
+      "hot": "Thu, 20 Aug 2026 11:00:19 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "程序员为 8 岁女儿创建了一个游戏引擎，教她写代码",
+      "url": "https://www.oschina.net/news/502018",
+      "hot": "Thu, 20 Aug 2026 10:48:47 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "DeepSeek  Harness 、ChatGPT 登陆玲珑商店，Linux 发行版热门 AI 工具",
+      "url": "https://www.oschina.net/news/502017",
+      "hot": "Thu, 20 Aug 2026 10:14:43 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "Go 1.27 发布：泛型方法来了，JSON 包重写，还内置了 UUID 和 SIMD",
+      "url": "https://www.oschina.net/news/502015/golang-1-27",
+      "hot": "Thu, 20 Aug 2026 10:11:17 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "OpenRouter 加入 Stripe，「LLM 的 Stripe」真的成了 Stripe 的一部分",
+      "url": "https://www.oschina.net/news/502014/openrouter-is-joining-stripe",
+      "hot": "Thu, 20 Aug 2026 10:10:06 +0800"
+    },
+    {
+      "rank": 9,
       "title": "Bun 1.4 迟迟未至：一场高调 Rust 重写背后的现实考验",
       "url": "https://www.oschina.net/news/502012",
       "hot": "Thu, 20 Aug 2026 08:51:25 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "AI 换台电脑就失忆？我们自己写了个开源项目解决它",
       "url": "https://www.oschina.net/news/502011",
       "hot": "Wed, 19 Aug 2026 22:36:06 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "算力互联、调度协同、生态共创｜开源中国携手超智算科技、共绩科技达成战略合作",
-      "url": "https://www.oschina.net/news/502010",
-      "hot": "Wed, 19 Aug 2026 19:01:35 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "GLM-5.3 拿下 AA 评测 60 分，将前沿模型的单任务成本打到了最低",
-      "url": "https://www.oschina.net/news/502007",
-      "hot": "Wed, 19 Aug 2026 16:21:30 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "再也不用登录罗技账号，9.1k star 的 Rust 开源替代品接管了 HID++",
-      "url": "https://www.oschina.net/news/502006",
-      "hot": "Wed, 19 Aug 2026 15:49:24 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Hugging Face 夏季开源报告：中国模型在前沿碾压，但下载量靠的是小模型",
-      "url": "https://www.oschina.net/news/502004/huggingface-state-of-open-models-summer-2026",
-      "hot": "Wed, 19 Aug 2026 15:03:09 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "几乎没人再关注 Web 标准了：5000 个网站只有 2.6% 完全符合规范",
-      "url": "https://www.oschina.net/news/502003/almost-nobody-pays-attention-to-web-standards-anymore",
-      "hot": "Wed, 19 Aug 2026 14:50:33 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Framework 官方 BIOS 更新导致用户电脑变砖，然后说不保修",
-      "url": "https://www.oschina.net/news/502002/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools",
-      "hot": "Wed, 19 Aug 2026 14:36:01 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Anthropic 缩减 Claude Code 每周免费额度",
-      "url": "https://www.oschina.net/news/501998",
-      "hot": "Wed, 19 Aug 2026 11:45:27 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "WePush 5.0.9 发布，专注批量推送的小而美的工具",
-      "url": "https://www.oschina.net/news/501997",
-      "hot": "Wed, 19 Aug 2026 11:37:06 +0800"
     }
   ]
 }

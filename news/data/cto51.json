@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-20T01:59:22+00:00",
+  "updated_at": "2026-08-20T04:18:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "字节二面若有所思：\"你说模仿Claude Code来精简提示词——删完你拿什么验证没翻车？\" 我刚想说\"跑一遍就行\"，突然觉得不对",
-      "url": "https://www.51cto.com/article/853506.html",
-      "hot": "提示词该怎么删？一套不会把Agent删崩的实操方法。大家道理都懂嘛。可具体怎么下手呢？删哪里、留哪里、怎么验证没删错？"
+      "title": "Jackson 凭什么成为 SpringBoot 的默认 JSON 序列化方案？",
+      "url": "https://www.51cto.com/article/853536.html",
+      "hot": "开发对于 SpringBoot 这样的生态级框架来说，稳定性、兼容性、生态广度，比极致性能和简洁 API 重要得多。Jackson 在这些维度上的优势，让它成为了不可替代的选择。"
     },
     {
       "rank": 2,
-      "title": "Agent Plan x DeepSeek Harness 实践指南",
-      "url": "https://www.51cto.com/article/853495.html",
-      "hot": "最新的DeepSeek 智能体应用框架（DeepSeek Harness，简称DSH），Model、Tool、Memory、Sandbox 和 Agent 都是可组合、可替换、可扩展的插件。Harness 本身退到最薄——它只做三件事：调度模型与工具、在高危操作前请你审批、维护一份任务计划。"
+      "title": "任何错误只犯一次：TencentDB Agent Memory 的团队记忆实践",
+      "url": "https://www.51cto.com/article/853530.html",
+      "hot": "本文从 OPC、协作带宽和孙天祥提出的三层 AI 组织架构出发，重点介绍 TencentDB Agent Memory 在团队记忆上的工程实践。"
     },
     {
       "rank": 3,
-      "title": "用Spring Boot复刻了“微信未读红点”：1万条消息不逐条UPDATE，核心只是一个lastReadSeq",
-      "url": "https://www.51cto.com/article/853493.html",
-      "hot": "后来真正做到群聊、多设备和几万条历史消息以后才发现：如果给每一条消息逐条维护“已读/未读”，数据库很快就会变成灾难现场。"
+      "title": "告别 MLOps 思维，LLMOps 如何管好 LLM 全生命周期？",
+      "url": "https://www.51cto.com/article/853528.html",
+      "hot": "企业落地大模型，只懂 RAG 和提示词远远不够。本文带你掌握大模型从开发、部署到监控的全生命周期运维方案。"
     },
     {
       "rank": 4,
-      "title": "一封钓鱼邮件触发六个AI代理同时启动，SOC直接\"撞车\"：智能化运营那道被忽视的\"碰撞危机\"",
-      "url": "https://www.51cto.com/article/853455.html",
-      "hot": "代理碰撞真正暴露的，是一个更深层的架构问题——安全运营正在从\"人使用工具\"转向\"机器代表人行动\"，但今天绝大多数SOC的控制机制，仍然是围绕人类设计的。当机器开始拥有行动能力，过去依靠组织结构、职责分工和人工沟通解决的协调问题，就必须被重新设计成机器能够理解和执行的规则。"
+      "title": "Agent 落地最大坑：凭感觉评测？一套标准化评估体系，解决智能体迭代的 “盲人摸象”",
+      "url": "https://www.51cto.com/article/853518.html",
+      "hot": "从定义清晰标准，到搭建动态任务集；从设计高质任务，到分层判定机制；再到构建评测框架与持续迭代基准 ，这六步法构成了 AI 智能体评估的完整闭环。"
     },
     {
       "rank": 5,
-      "title": "Java 开发：颠覆静态编码！Java 反射，开发者必懂的底层黑科技",
-      "url": "https://www.51cto.com/article/853336.html",
-      "hot": "本文结合理论原理与真实开发场景，用简洁易懂、落地性强的方式层层拆解反射的核心原理、基础用法、真实实战场景与高频避坑要点。"
+      "title": "Spring Boot 4.1 + JDK 25 DDD开源脚手架，面向 AI 编程",
+      "url": "https://www.51cto.com/article/853517.html",
+      "hot": "这个 springboot4ddd 脚手架，最打动我的不是它用了多新的技术栈，而是它抓住了 AI 编程时代的核心痛点：AI 不缺写代码的能力，缺的是清晰、一致、可参考的工程基准。"
     },
     {
       "rank": 6,
-      "title": "Octopus：基于无历史数据的梯度正交化的学习框架｜CVPR 2026",
-      "url": "https://www.51cto.com/article/853492.html",
-      "hot": "Octopus提出了一种基于无历史数据的梯度正交化（HiFGO）的两阶段持续学习框架，通过梯度层面的正交约束有效缓解了任务间的干扰，同时提出两阶段训练策略实现可塑性与稳定性的良好平衡。Octopus在UCIT基准上实现了当前最优性能（SOTA），Avg和Last指标分别超越现有最优方法 2.14% 和 6.82%。"
+      "title": "WRC2026首日直击｜埃夫特×启智Openmind把具身智能从秀场搬进产线",
+      "url": "https://www.51cto.com/article/853516.html",
+      "hot": "​8月19日，2026世界机器人大会于北京盛大启幕，主题聚焦“人机共生，产需共融”。埃夫特×启智Openmind于A106展位系统性展出全栈自主可控的通用技术底座，并携复合机器人、智能焊接/喷涂/防爆工作站等落地成果亮相。现场通过“底座+整机+工艺”的全链路闭环，实证工业具身智能从单点技术验证向规模化产业落地的关键跨越。"
     },
     {
       "rank": 7,
-      "title": "智谱唐杰：大模型只看参数的时代，结束了",
-      "url": "https://www.51cto.com/article/853479.html",
-      "hot": "清华大学教授唐杰在X上发表的一则有关Thoughts About Scaling Law的帖子，开头便把大模型发布会上最常见的那个问题拆了."
+      "title": "阿里惨遭 npm 木马投毒！npm 被迫新增人工审核！",
+      "url": "https://www.51cto.com/article/853515.html",
+      "hot": "攻击者不再只是发布一个明显的恶意包，而是开始模仿企业内部依赖、拆分攻击代码，并针对具体开发环境设计完整攻击链。"
     },
     {
       "rank": 8,
-      "title": "马斯克直呼完了：Anthropic 73页论文刷屏，全球大模型中招思想病毒！",
-      "url": "https://www.51cto.com/article/853478.html",
-      "hot": "最近，Anthropic研究员的Jack Lindsey的一篇论文，已经在全网刷屏。"
+      "title": "GitHub 又爆了！一个 HTML 做出了沉浸式 3D 世界",
+      "url": "https://www.51cto.com/article/853513.html",
+      "hot": "官方 GitHub 明确说明，Kage 使用 Three.js 实时移动 WebGL Camera，并结合程序化建筑、灯笼光、雾、雨、漂浮树叶、月亮以及 Bloom 后处理等效果。"
     },
     {
       "rank": 9,
-      "title": "神级 Skill，上传一张图片，生成酷炫 3D 模型！",
-      "url": "https://www.51cto.com/article/853491.html",
-      "hot": "roadmap一路排到v2.0，环境重建、Unity和Unreal导出、自动绑骨都在名单上。11天5.3k Star，接下来必定又是一个爆火的项目。"
+      "title": "从单 GPU 到万卡集群：GPU 并行计算如何支撑今天的大模型训练",
+      "url": "https://www.51cto.com/article/853512.html",
+      "hot": "本文重点解释大模型为什么一定会走向集群，以及并行训练的基本组织方式。"
     },
     {
       "rank": 10,
-      "title": "OpenAI要输？Anthropic按下万亿IPO快进键，达里奥2%持股夺权",
-      "url": "https://www.51cto.com/article/853477.html",
-      "hot": "Anthropic计划上市之前给CEO达里奥，还有6位联创发一类带「额外投票权」的股票。"
+      "title": "HarmonyOS列表性能优化：LazyForEach和Repeat懒加载",
+      "url": "https://ost.51cto.com/posts/55385",
+      "hot": "大家好，今天要介绍的是HarmonyOS中常用的两种列表性能优化方案：LazyForEach和Repeat。在应用开发中，列表是非常常见的页面结构。例如消息..."
     }
   ]
 }
