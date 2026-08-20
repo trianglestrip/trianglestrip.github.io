@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-19T22:56:57+00:00",
+  "updated_at": "2026-08-20T04:57:09+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -26,7 +26,7 @@
       "rank": 4,
       "title": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds",
       "url": "https://huggingface.co/papers/2608.16859",
-      "hot": "116"
+      "hot": "118"
     },
     {
       "rank": 5,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "A decoder-only foundation model for time-series forecasting",
-      "url": "https://huggingface.co/papers/2310.10688",
-      "hot": "37"
-    },
-    {
-      "rank": 8,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "54"
-    },
-    {
-      "rank": 9,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "84"
     },
     {
+      "rank": 8,
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "37"
+    },
+    {
+      "rank": 9,
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "54"
+    },
+    {
       "rank": 10,
-      "title": "Unlimited OCR Works",
-      "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "84"
+      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
+      "url": "https://huggingface.co/papers/2309.06180",
+      "hot": "66"
     }
   ]
 }
