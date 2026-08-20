@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-20T17:15:00+00:00",
+  "updated_at": "2026-08-20T23:37:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "11683"
+      "hot": "11740"
     },
     {
       "rank": 2,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "2303"
+      "hot": "2352"
     },
     {
       "rank": 3,
       "title": "MiniMaxAI/MiniMax-Music3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-      "hot": "1089"
+      "hot": "1104"
     },
     {
       "rank": 4,
       "title": "Qwen/Qwen3.8-27B-FP8",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-      "hot": "626"
+      "hot": "633"
     },
     {
       "rank": 5,
-      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
-      "hot": "663"
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-MLX",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX",
+      "hot": "710"
     },
     {
       "rank": 6,
-      "title": "orcarouter/Qwen3.8-27B-Uncensored-MLX",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX",
-      "hot": "687"
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "hot": "675"
     },
     {
       "rank": 7,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "1390"
+      "hot": "1413"
     },
     {
       "rank": 8,
       "title": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
       "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
-      "hot": "504"
+      "hot": "510"
     },
     {
       "rank": 9,
-      "title": "deepseek-ai/DeepSeek-V4-Pro-0813",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
-      "hot": "672"
+      "title": "MiniMaxAI/MiniMax-H3",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "hot": "4238"
     },
     {
       "rank": 10,
-      "title": "MiniMaxAI/MiniMax-H3",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-      "hot": "4220"
+      "title": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "hot": "678"
     }
   ]
 }
