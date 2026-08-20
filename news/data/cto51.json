@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-20T04:18:08+00:00",
+  "updated_at": "2026-08-20T06:20:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "CoSnitch：当你的 Copilot 助手变成“告密者”",
+      "url": "https://www.51cto.com/article/853540.html",
+      "hot": "CoSnitch 的独特之处在于 Copilot 是如何暴露其自身漏洞的，我们将这种方法称为“元黑客攻击”。 我们的研究人员无需对漏洞进行逆向工程。"
+    },
+    {
+      "rank": 2,
+      "title": "刚花600亿买下Cursor，马斯克又要对Devin下手",
+      "url": "https://www.51cto.com/article/853555.html",
+      "hot": "8月19日，彭博社独家爆料，SpaceX曾接洽AI编程创业公司Cognition，探讨潜在收购。Cognition就是自主AI软件工程师Devin的开发商。"
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code神话破灭？大量用户正在取消订阅",
+      "url": "https://www.51cto.com/article/853554.html",
+      "hot": "「Anthropic完蛋了，现在有大量用户正在疯狂取消订阅。」开发者的一条X，引发了社区热议。"
+    },
+    {
+      "rank": 4,
+      "title": "利用路径遍历进入 Cron 并绕过 DNS 限制回调，将盲文件上传提升为 RCE",
+      "url": "https://www.51cto.com/article/853538.html",
+      "hot": "本文遵循了这个进展：证明写入操作到达了真实文件系统，将目录创建失败转化为一个盲文件系统\"预言机\"，并确定一个既无法控制文件名又无法回读路径的上传是否仍然可以被提升为代码执行。"
+    },
+    {
+      "rank": 5,
       "title": "Jackson 凭什么成为 SpringBoot 的默认 JSON 序列化方案？",
       "url": "https://www.51cto.com/article/853536.html",
       "hot": "开发对于 SpringBoot 这样的生态级框架来说，稳定性、兼容性、生态广度，比极致性能和简洁 API 重要得多。Jackson 在这些维度上的优势，让它成为了不可替代的选择。"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "任何错误只犯一次：TencentDB Agent Memory 的团队记忆实践",
       "url": "https://www.51cto.com/article/853530.html",
       "hot": "本文从 OPC、协作带宽和孙天祥提出的三层 AI 组织架构出发，重点介绍 TencentDB Agent Memory 在团队记忆上的工程实践。"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "告别 MLOps 思维，LLMOps 如何管好 LLM 全生命周期？",
       "url": "https://www.51cto.com/article/853528.html",
       "hot": "企业落地大模型，只懂 RAG 和提示词远远不够。本文带你掌握大模型从开发、部署到监控的全生命周期运维方案。"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "Agent 落地最大坑：凭感觉评测？一套标准化评估体系，解决智能体迭代的 “盲人摸象”",
       "url": "https://www.51cto.com/article/853518.html",
       "hot": "从定义清晰标准，到搭建动态任务集；从设计高质任务，到分层判定机制；再到构建评测框架与持续迭代基准 ，这六步法构成了 AI 智能体评估的完整闭环。"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "Spring Boot 4.1 + JDK 25 DDD开源脚手架，面向 AI 编程",
       "url": "https://www.51cto.com/article/853517.html",
       "hot": "这个 springboot4ddd 脚手架，最打动我的不是它用了多新的技术栈，而是它抓住了 AI 编程时代的核心痛点：AI 不缺写代码的能力，缺的是清晰、一致、可参考的工程基准。"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "WRC2026首日直击｜埃夫特×启智Openmind把具身智能从秀场搬进产线",
       "url": "https://www.51cto.com/article/853516.html",
       "hot": "​8月19日，2026世界机器人大会于北京盛大启幕，主题聚焦“人机共生，产需共融”。埃夫特×启智Openmind于A106展位系统性展出全栈自主可控的通用技术底座，并携复合机器人、智能焊接/喷涂/防爆工作站等落地成果亮相。现场通过“底座+整机+工艺”的全链路闭环，实证工业具身智能从单点技术验证向规模化产业落地的关键跨越。"
-    },
-    {
-      "rank": 7,
-      "title": "阿里惨遭 npm 木马投毒！npm 被迫新增人工审核！",
-      "url": "https://www.51cto.com/article/853515.html",
-      "hot": "攻击者不再只是发布一个明显的恶意包，而是开始模仿企业内部依赖、拆分攻击代码，并针对具体开发环境设计完整攻击链。"
-    },
-    {
-      "rank": 8,
-      "title": "GitHub 又爆了！一个 HTML 做出了沉浸式 3D 世界",
-      "url": "https://www.51cto.com/article/853513.html",
-      "hot": "官方 GitHub 明确说明，Kage 使用 Three.js 实时移动 WebGL Camera，并结合程序化建筑、灯笼光、雾、雨、漂浮树叶、月亮以及 Bloom 后处理等效果。"
-    },
-    {
-      "rank": 9,
-      "title": "从单 GPU 到万卡集群：GPU 并行计算如何支撑今天的大模型训练",
-      "url": "https://www.51cto.com/article/853512.html",
-      "hot": "本文重点解释大模型为什么一定会走向集群，以及并行训练的基本组织方式。"
-    },
-    {
-      "rank": 10,
-      "title": "HarmonyOS列表性能优化：LazyForEach和Repeat懒加载",
-      "url": "https://ost.51cto.com/posts/55385",
-      "hot": "大家好，今天要介绍的是HarmonyOS中常用的两种列表性能优化方案：LazyForEach和Repeat。在应用开发中，列表是非常常见的页面结构。例如消息..."
     }
   ]
 }

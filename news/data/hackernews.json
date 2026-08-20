@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-20T04:18:09+00:00",
+  "updated_at": "2026-08-20T06:20:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "OpenRouter is joining Stripe",
       "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
-      "hot": "717"
+      "hot": "778"
     },
     {
       "rank": 2,
-      "title": "Go 1.27",
-      "url": "https://go.dev/blog/go1.27",
-      "hot": "506"
+      "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+      "url": "https://openai.com/index/asana/",
+      "hot": "9"
     },
     {
       "rank": 3,
-      "title": "Turns are Better than Radians",
+      "title": "Turns are Better than Radians (2022)",
       "url": "https://www.computerenhance.com/p/turns-are-better-than-radians",
-      "hot": "49"
+      "hot": "124"
     },
     {
       "rank": 4,
-      "title": "A faster way to calculate the day of the week",
-      "url": "https://www.benjoffe.com/fast-day-of-week",
-      "hot": "45"
+      "title": "Why Microsoft Entertainment Pack had a sticker announcing that it had Tetris?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260818-00/?p=112621",
+      "hot": "20"
     },
     {
       "rank": 5,
-      "title": "Google replaced Git tags for certain source code with obtaining via Google Drive",
-      "url": "https://grapheneos.social/@GrapheneOS/117057099753905023",
-      "hot": "358"
+      "title": "Go 1.27",
+      "url": "https://go.dev/blog/go1.27",
+      "hot": "566"
     },
     {
       "rank": 6,
-      "title": "Manabu Kosaka's Handmade Paper Sculptures",
-      "url": "https://coca11272000.wixsite.com/manabukosaka",
-      "hot": "69"
+      "title": "A faster way to calculate the day of the week",
+      "url": "https://www.benjoffe.com/fast-day-of-week",
+      "hot": "91"
     },
     {
       "rank": 7,
-      "title": "Unlocking a locked/deactivated e-waste Cricut Maker",
-      "url": "https://sprocketfox.io/xssfox/2026/07/01/cricut-unlock/",
-      "hot": "159"
+      "title": "Google has stopped pushing Git tags for some Android source code",
+      "url": "https://grapheneos.social/@GrapheneOS/117057099753905023",
+      "hot": "420"
     },
     {
       "rank": 8,
-      "title": "A joke domain purchase turned in geopolitical warfare",
-      "url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/",
-      "hot": "800"
+      "title": "Manabu Kosaka's Handmade Paper Sculptures",
+      "url": "https://coca11272000.wixsite.com/manabukosaka",
+      "hot": "99"
     },
     {
       "rank": 9,
-      "title": "Unsloth Dynamic 3.0 GGUFs",
-      "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
-      "hot": "204"
+      "title": "Unlocking a locked/deactivated e-waste Cricut Maker",
+      "url": "https://sprocketfox.io/xssfox/2026/07/01/cricut-unlock/",
+      "hot": "183"
     },
     {
       "rank": 10,
-      "title": "Error by AI scribe during medical appointment leaves patient devastated",
-      "url": "https://www.abc.net.au/news/2026-08-14/ai-medical-scribe-error-leaves-patient-devastated/107031672",
-      "hot": "17"
+      "title": "A joke domain purchase turned in geopolitical warfare",
+      "url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/",
+      "hot": "830"
     }
   ]
 }
