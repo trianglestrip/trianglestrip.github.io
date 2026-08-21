@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-21T07:55:21+00:00",
+  "updated_at": "2026-08-21T10:12:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "DeepSeek V4-Flash 补上视觉能力，多模态 Agent 接近 Opus 4.8",
+      "url": "https://www.oschina.net/news/502065",
+      "hot": "Fri, 21 Aug 2026 17:49:00 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "百万奖金怎么拿？这有一份上海开源大赛攻略",
+      "url": "https://www.oschina.net/news/502061",
+      "hot": "Fri, 21 Aug 2026 16:20:04 +0800"
+    },
+    {
+      "rank": 3,
       "title": "中美 AI 差距正在消失。不是预测，是正在发生的事。",
       "url": "https://www.oschina.net/news/502059/2026-us-china-ai-race",
       "hot": "Fri, 21 Aug 2026 15:12:49 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
+      "title": "开源语义切片利器 Pragmatic Chunker 发布：一条命令打通 RAG 检索全链路",
+      "url": "https://www.oschina.net/news/502058",
+      "hot": "Fri, 21 Aug 2026 15:08:59 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "iForge V0.0.1 首个版本正式发布｜自托管一体化研发协作平台",
+      "url": "https://www.oschina.net/news/502056",
+      "hot": "Fri, 21 Aug 2026 14:48:36 +0800"
+    },
+    {
+      "rank": 6,
       "title": "禅道开源版 22.5 发布，编辑器中@人员后增加消息通知，完善多处用户体验",
       "url": "https://www.oschina.net/news/502055",
       "hot": "Fri, 21 Aug 2026 14:03:07 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "FydeOS v23 发布，全新的开源安卓子系统，远程桌面与VNC能力一起升级",
       "url": "https://www.oschina.net/news/502052/fydeos-release-note-v23",
       "hot": "Fri, 21 Aug 2026 12:49:11 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "美团高管反思「全员养虾」，8 万人日耗千万算力没带来生产力提升",
       "url": "https://www.oschina.net/news/502051",
       "hot": "Fri, 21 Aug 2026 11:10:26 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "演出前一晚机器人集体拖拍，宇树团队通宵重写代码保住王力宏演唱会",
       "url": "https://www.oschina.net/news/502049",
       "hot": "Fri, 21 Aug 2026 10:59:39 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "AIGCPanel v2.2.0 一句话让图片动起来，AIGCPanel 把视频生成装进了桌面",
       "url": "https://www.oschina.net/news/502048",
       "hot": "Fri, 21 Aug 2026 10:55:20 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "AI 正吞噬一切，开源基础软件如何求生？",
-      "url": "https://my.oschina.net/u/4487475/blog/19745346",
-      "hot": "Fri, 21 Aug 2026 10:45:51 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "GitHub 8 月 17 日宕机复盘，负载均衡配置错误引爆重试风暴",
-      "url": "https://www.oschina.net/news/502045/github-the-august-17-outage-and-the-work-ahead",
-      "hot": "Fri, 21 Aug 2026 10:15:26 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "DeepSeek Harness 公测一周迎来多模态大招，纯文本模型也能“看图”了",
-      "url": "https://www.oschina.net/news/502044/deepseek-harness-0-1-0-rc8",
-      "hot": "Fri, 21 Aug 2026 09:44:46 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Kairoa v1.1.24 发布：开发者工具箱新增 SAML 解码器与日期差计算器",
-      "url": "https://www.oschina.net/news/502042",
-      "hot": "Thu, 20 Aug 2026 22:42:36 +0800"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-08-21T07:55:16+00:00",
+  "updated_at": "2026-08-21T10:12:36+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
-      "title": "某骗子黑产软件（手机远控）的分析",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117851",
-      "hot": "[md]# 某恶意 APK 分析\n## APK 信息\n- 文件名：`欣姐.apk`\n- 文件大小：`17.3 MB (18,238,424 字节)`\n- 应用名：`欣姐`\n\n\n## 行为\n### 应用程序启动时，会要求开启无障碍权限。\n\n\n\n这种招数已经见怪不怪，骗 ..."
-    },
-    {
-      "rank": 5,
       "title": "从时间片轮转到调用级并发：unidbg 单后端多线程架构重构",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117230",
       "hot": "[md]# 从时间片轮转到调用级并发：unidbg 单后端多线程架构重构\n\n&gt; 本文讨论的是 unidbg 在单 Unicorn 后端下模拟多线程 native 程序时的通用架构问题。文中的命令、线程、回调与返回值均为抽象示例，不对应任何具体应 ..."
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "当游戏越来越漂亮，外挂却越来越丑：作弊技术摸底（2026）",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117216",
       "hot": ""
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "对某java保护器本体的逆向分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116474",
       "hot": "[md]## 0x00 前言\n\n最近在翻视频的时候发现了一个 Java 保护器，其官网宣称：\n\n&gt; 最佳的 Java 源代码保护方案\n\n然后一看价格，799 USD 一年，这么贵，那我可得看看你值不值了，开干。\n\n对于这个商业软件的名称，这里做数据脱敏处理：\n\n```text\nWTBoS2RtUkhWb ..."
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "SpongeMixer企业级勒索软件的加密逻辑及行为分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116347",
       "hot": "近期，一款企业级勒索软件SpongeMixer在国内多地呈现活跃态势。瞬犀安全实验室结合样本逆向分析、加密结构还原和行为链追踪，对其攻击特征进行了综合研判。\n逆向分析结果显示，该勒索软件会针对计算机系统恢复机制及第 ..."
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "某音a_bogus jsvmp反编译",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116186",
       "hot": "[md]上一篇文章[某q音乐jsvmp反编译](https://www.52pojie.cn/thread-2042090-1-1.html)介绍了寄存器类型的vmp反编译，bdms这个是基于堆栈的vmp，去年已经写好了，一直懒得总结，今天跟大家分享一下思路，如有不对的地方 ..."
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "Q音VMP初始化分析&SHA-1算法识别",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2116112",
       "hot": "[md]# QQ音乐Sign逆向\n\n碎碎念\n\n本篇主要分析VMP初始化，识别VMP，识别SHA-1在VMP中的输出特征\n\n此VMP也比较有趣，一般来说VMP会将元操作抽离为某个case或者某个函数，但是此VMP中将多个元操作组合在一个函数中， ..."
+    },
+    {
+      "rank": 10,
+      "title": "iOS DeviceCheck：苹果设备身份链与黑灰产对抗的攻防博弈",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2114213",
+      "hot": "[md]## 一、背景 &amp; 场景\n\n### 1.1 环境\n\n设备型号:iphone 14、iOS 版本:16.4.1、越狱方案:Dopamine\n\n工具链：Frida16.1.4、IDA pro 9.2\n\n### 1.2 引言\n\n对于大多数互联网风控攻防业务来说，真正棘手的往往不是 ..."
     }
   ]
 }
