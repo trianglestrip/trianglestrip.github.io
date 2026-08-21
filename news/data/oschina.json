@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-21T03:14:54+00:00",
+  "updated_at": "2026-08-21T05:15:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "美团高管反思「全员养虾」，8 万人日耗千万算力没带来生产力提升",
+      "url": "https://www.oschina.net/news/502051",
+      "hot": "Fri, 21 Aug 2026 11:10:26 +0800"
+    },
+    {
+      "rank": 2,
       "title": "演出前一晚机器人集体拖拍，宇树团队通宵重写代码保住王力宏演唱会",
       "url": "https://www.oschina.net/news/502049",
       "hot": "Fri, 21 Aug 2026 10:59:39 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "AIGCPanel v2.2.0 一句话让图片动起来，AIGCPanel 把视频生成装进了桌面",
       "url": "https://www.oschina.net/news/502048",
       "hot": "Fri, 21 Aug 2026 10:55:20 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "AI 正吞噬一切，开源基础软件如何求生？",
       "url": "https://my.oschina.net/u/4487475/blog/19745346",
       "hot": "Fri, 21 Aug 2026 10:45:51 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "GitHub 8 月 17 日宕机复盘，负载均衡配置错误引爆重试风暴",
       "url": "https://www.oschina.net/news/502045/github-the-august-17-outage-and-the-work-ahead",
       "hot": "Fri, 21 Aug 2026 10:15:26 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "DeepSeek Harness 公测一周迎来多模态大招，纯文本模型也能“看图”了",
       "url": "https://www.oschina.net/news/502044/deepseek-harness-0-1-0-rc8",
       "hot": "Fri, 21 Aug 2026 09:44:46 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Kairoa v1.1.24 发布：开发者工具箱新增 SAML 解码器与日期差计算器",
       "url": "https://www.oschina.net/news/502042",
       "hot": "Thu, 20 Aug 2026 22:42:36 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "开源终端 uniTerm v1.8.0 发布：新增 SOCKS5 隧道、密钥库等 50 余项功能更新，仅 14MB 覆盖 27 种协议",
       "url": "https://www.oschina.net/news/502041",
       "hot": "Thu, 20 Aug 2026 21:51:31 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "WePush 5.1.1 发布，专注批量推送的小而美的工具",
       "url": "https://www.oschina.net/news/502039",
       "hot": "Thu, 20 Aug 2026 17:57:34 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Vercel 发布 fx：Zig 语言实现的轻量 Agent，能直接在浏览器里跑",
       "url": "https://www.oschina.net/news/502038/vercel-fx",
       "hot": "Thu, 20 Aug 2026 17:27:42 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "OpenCode × DeepSeek 配置方案完成重大升级：应对 API 涨价",
-      "url": "https://www.oschina.net/news/502035",
-      "hot": "Thu, 20 Aug 2026 15:56:43 +0800"
     }
   ]
 }

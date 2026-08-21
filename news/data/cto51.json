@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-21T03:14:49+00:00",
+  "updated_at": "2026-08-21T05:15:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "聊聊数据治理考核，怎么落地？",
+      "url": "https://www.51cto.com/article/853652.html",
+      "hot": "数据治理最难的一公里，从来不是技术，是让每一个生产数据、使用数据、管理数据的人，都为数据质量负责。而考核，就是把这个\"负责\"从道德号召变成机制约束的那颗铆钉。"
+    },
+    {
+      "rank": 2,
+      "title": "WorkSwarm解锁AI办公新范式，招募开发者，Token免费！",
+      "url": "https://www.51cto.com/article/853651.html",
+      "hot": "WorkSwarm依托openJiuwen提前布局的协同工程理论、全场景落地能力、跨端适配优势与开源生态，跳出单一对话助手的同质化内卷竞争，提出“One Platform，Super Teams”全新生产力解决方案。"
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code 被轻易攻破，仅需一个假工具",
+      "url": "https://www.51cto.com/article/853646.html",
+      "hot": "香港科技大学佘东冬团队的谢禹翀与复旦大学内生安全实验室的骆明宇等研究者在一篇已被 ISSTA 2026（CCF-A 类会议）接收的论文中，复现了这个攻击场景。"
+    },
+    {
+      "rank": 4,
+      "title": "还在手搓论文poster？自进化设计Harness直接出",
+      "url": "https://www.51cto.com/article/853644.html",
+      "hot": "当前，模型训练已经形成了较成熟的工业化 Pipeline：通过大规模数据学习参数，再借助后训练和强化学习约束行为。"
+    },
+    {
+      "rank": 5,
       "title": "Qwen3.8-27B-DFlash2开源后面的加速技术-DFlash：用块扩散模型做「并行草稿」的投机解码框架",
       "url": "https://www.51cto.com/article/853638.html",
       "hot": "DFlash 的出发点很朴素——「目标模型自己最懂未来」。已有工作发现，大型自回归 LLM 的隐藏特征里隐含着未来多个 token 的信息。DFlash 把这些隐藏特征当作上下文，让一个轻量块扩散模型并行预测未来 token 块，从而同时拿到「并行生成的速度」和「目标模型的高质量语义」。"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "从世界机器人大会看新质生产力风口，AI 视觉工程师成为产业刚需人才",
       "url": "https://www.51cto.com/article/853636.html",
       "hot": "如果你是理工科背景，不想在内卷赛道消耗，希望掌握一门硬核技术，获得稳定高薪技术岗位，AI 视觉工程师是值得认真考量的方向。"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "运维必看！可控可落地的 AI SRE Agent 信任体系与安全落地指南",
       "url": "https://www.51cto.com/article/853629.html",
       "hot": "真正成熟的 AI SRE 落地是实现 “人控 AI、安全优先、全程可控”，让 AI 成为运维助手，而非线上风险源头。"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "用Spring Boot复刻了“淘宝30分钟未支付自动关单”：不用Redis过期监听，也不用每分钟扫数据库",
       "url": "https://www.51cto.com/article/853627.html",
       "hot": "这周 Spring 官方的《This Week in Spring》又专门提到了一个 Java 后台任务框架：JobRunr。而 JobRunr 最近也刚更新到 8.8.x 系列。它最大的特点不是“能跑定时任务”，而是可以把 Java 方法变成持久化、可重试、可延迟执行的后台任务。"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "SpringBoot 三大核心注解精讲：@ControllerAdvice、@RestControllerAdvice、@Validated 分组校验",
       "url": "https://www.51cto.com/article/853624.html",
       "hot": "@ControllerAdvice、@RestControllerAdvice、@Validated 这三个注解，看起来简单，实则是 SpringBoot 项目中最核心的基础能力。"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "AI 变声电话里的\"亲人\"声音可能是假的# 智绘鸿蒙·大有“视”界#",
       "url": "https://ost.51cto.com/posts/55445",
       "hot": "前言&quot;声音是本人的&quot;正在失去证明力，骗子只需几秒钟的录音样本（电话录音、语音消息、社交平台视频），就能克隆出亲友的声音。一、声音克隆..."
-    },
-    {
-      "rank": 7,
-      "title": "你的 ASP.NET Core API 真的安全吗？一个传递依赖就可能带来高危漏洞",
-      "url": "https://www.51cto.com/article/853620.html",
-      "hot": "现代 ASP.NET Core 应用程序很少只依赖 .NET 框架本身。一个稍微复杂一点的项目，往往会引入几十甚至上百个 NuGet 包，用于身份认证、日志记录、JSON 序列化、数据库访问、API 文档、缓存、消息队列、云服务、测试以及可观测性等功能。"
-    },
-    {
-      "rank": 8,
-      "title": "黑客利用虚假验证码投递恶意软件，可终止 145 个安全进程",
-      "url": "https://www.51cto.com/article/853616.html",
-      "hot": "这次攻击的影响十分严重，因为 Cruciferra 的设计目标就是在更危险的恶意活动开始之前先让设备\"失明\"。"
-    },
-    {
-      "rank": 9,
-      "title": "VS Code 新神器：编辑器里直接跑 IOS、Android App！移动端开发神器！",
-      "url": "https://www.51cto.com/article/853612.html",
-      "hot": "Mobile Canvas 直接在 VS Code 里运行 iPhone 和 Android App，并结合 Web 调试能力，实现完整的移动端开发工作流。"
-    },
-    {
-      "rank": 10,
-      "title": "HarmonyOS7开发时 Map Kit Marker 点击被地图\"吞\"了#智绘鸿蒙·大有“视”界#",
-      "url": "https://ost.51cto.com/posts/55443",
-      "hot": "前言你有没有遇到过这种场景：地图上加了自定义Marker，点击Marker想弹详情弹窗，结果弹窗刚出来就被地图点击事件关掉了？两个回调同时触发..."
     }
   ]
 }
