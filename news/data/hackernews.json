@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-21T05:15:54+00:00",
+  "updated_at": "2026-08-21T07:55:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Codex on AWS bedrock bug causing 10x charges",
-      "url": "https://github.com/openai/codex/issues/37674",
-      "hot": "44"
+      "title": "We Rebuilt the Linux MicroVM Stack on Apple Silicon",
+      "url": "https://encore.dev/blog/firecracker-apple-silicon",
+      "hot": "14"
     },
     {
       "rank": 2,
       "title": "The August 17 outage",
       "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
-      "hot": "417"
+      "hot": "480"
     },
     {
       "rank": 3,
       "title": "I like 'em thick: an apology to my English teachers",
       "url": "https://www.experimental-history.com/p/i-like-em-thick",
-      "hot": "637"
+      "hot": "700"
     },
     {
       "rank": 4,
       "title": "HTML Can Do That",
       "url": "https://chrisburnell.com/html-can-do-that/",
-      "hot": "652"
+      "hot": "745"
     },
     {
       "rank": 5,
-      "title": "Malicious Rust crate Arrayref runs a build-time payload",
-      "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
-      "hot": "432"
+      "title": "The Religious Experience of Philip K. Dick by R. Crumb (1986)",
+      "url": "https://philipdick.com/resources/miscellaneous/the-religious-experience-of-philip-k-dick-by-r-crumb-from-weirdo-17/",
+      "hot": "23"
     },
     {
       "rank": 6,
-      "title": "I should have loved biology (2020)",
-      "url": "https://jsomers.net/i-should-have-loved-biology/",
-      "hot": "225"
+      "title": "Version Control for Everything",
+      "url": "https://tyoverby.com/posts/version-control-for-everything-else/",
+      "hot": "21"
     },
     {
       "rank": 7,
-      "title": "Ox Alpha",
-      "url": "https://openrouter.ai/stealth/ox-alpha",
-      "hot": "68"
+      "title": "The Lost Treasure of Sid Meier's Pirates",
+      "url": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates/",
+      "hot": "4"
     },
     {
       "rank": 8,
-      "title": "Captain Zilog",
-      "url": "https://www.zilog.com/captain_zilog/",
-      "hot": "27"
+      "title": "Malicious Rust crate Arrayref runs a build-time payload",
+      "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+      "hot": "478"
     },
     {
       "rank": 9,
-      "title": "There's no such thing as a small software team anymore",
-      "url": "https://jacob.gold/posts/theres-no-such-thing-as-a-small-software-team/",
-      "hot": "52"
+      "title": "Ox Alpha",
+      "url": "https://openrouter.ai/stealth/ox-alpha",
+      "hot": "122"
     },
     {
       "rank": 10,
-      "title": "AI companies destroy physical books – let's scan rare books before it's too late",
-      "url": "https://annas-archive.gl/blog/physical-destruction.html",
-      "hot": "185"
+      "title": "I should have loved biology (2020)",
+      "url": "https://jsomers.net/i-should-have-loved-biology/",
+      "hot": "262"
     }
   ]
 }
