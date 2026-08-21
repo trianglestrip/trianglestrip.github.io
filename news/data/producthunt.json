@@ -1,68 +1,68 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-08-21T11:55:39+00:00",
+  "updated_at": "2026-08-21T18:02:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Plow Latch",
-      "url": "https://www.producthunt.com/products/plow-latch",
-      "hot": "2026-08-19T16:12:47-07:00"
-    },
-    {
-      "rank": 2,
       "title": "Surfdeck",
       "url": "https://www.producthunt.com/products/surfdeck",
       "hot": "2026-08-19T15:40:36-07:00"
     },
     {
+      "rank": 2,
+      "title": "Plow Latch",
+      "url": "https://www.producthunt.com/products/plow-latch",
+      "hot": "2026-08-19T16:12:47-07:00"
+    },
+    {
       "rank": 3,
-      "title": "Antigravity IDE Extensions",
-      "url": "https://www.producthunt.com/products/google-antigravity",
-      "hot": "2026-08-20T23:58:44-07:00"
-    },
-    {
-      "rank": 4,
-      "title": "Supernova",
-      "url": "https://www.producthunt.com/products/supernova-ai",
-      "hot": "2026-08-11T07:58:45-07:00"
-    },
-    {
-      "rank": 5,
-      "title": "Mindcase",
-      "url": "https://www.producthunt.com/products/mindcase",
-      "hot": "2026-08-14T16:56:00-07:00"
-    },
-    {
-      "rank": 6,
-      "title": "fx (by Vercel)",
-      "url": "https://www.producthunt.com/products/fx-by-vercel",
-      "hot": "2026-08-20T01:24:52-07:00"
-    },
-    {
-      "rank": 7,
-      "title": "Local",
-      "url": "https://www.producthunt.com/products/local-7",
-      "hot": "2026-08-19T18:43:17-07:00"
-    },
-    {
-      "rank": 8,
       "title": "Dockhand",
       "url": "https://www.producthunt.com/products/dockhand",
       "hot": "2026-08-20T05:06:37-07:00"
     },
     {
+      "rank": 4,
+      "title": "Antigravity IDE Extensions",
+      "url": "https://www.producthunt.com/products/google-antigravity",
+      "hot": "2026-08-20T23:58:44-07:00"
+    },
+    {
+      "rank": 5,
+      "title": "ShogunAI",
+      "url": "https://www.producthunt.com/products/shogunai",
+      "hot": "2026-08-21T00:04:00-07:00"
+    },
+    {
+      "rank": 6,
+      "title": "OneCLI",
+      "url": "https://www.producthunt.com/products/onecli",
+      "hot": "2026-08-19T00:59:04-07:00"
+    },
+    {
+      "rank": 7,
+      "title": "fx (by Vercel)",
+      "url": "https://www.producthunt.com/products/fx-by-vercel",
+      "hot": "2026-08-20T01:24:52-07:00"
+    },
+    {
+      "rank": 8,
+      "title": "Mindcase",
+      "url": "https://www.producthunt.com/products/mindcase",
+      "hot": "2026-08-14T16:56:00-07:00"
+    },
+    {
       "rank": 9,
-      "title": "Flunkey",
-      "url": "https://www.producthunt.com/products/flunkey",
-      "hot": "2026-08-20T11:50:24-07:00"
+      "title": "Local",
+      "url": "https://www.producthunt.com/products/local-7",
+      "hot": "2026-08-19T18:43:17-07:00"
     },
     {
       "rank": 10,
-      "title": "Outlook Google Calendar Sync for Mac",
-      "url": "https://www.producthunt.com/products/outlook-google-calendar-sync-for-mac",
-      "hot": "2026-06-27T16:04:37-07:00"
+      "title": "Epho",
+      "url": "https://www.producthunt.com/products/epho-claude-code-in-the-cloud",
+      "hot": "2026-08-20T08:33:36-07:00"
     }
   ]
 }
