@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-22T20:53:48+00:00",
+  "updated_at": "2026-08-22T21:08:27+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,20 +48,20 @@
     },
     {
       "rank": 8,
+      "title": "MG07发布10.59万起",
+      "url": "https://s.weibo.com/weibo?q=MG07%E5%8F%91%E5%B8%8310.59%E4%B8%87%E8%B5%B7",
+      "hot": ""
+    },
+    {
+      "rank": 9,
       "title": "那英边唱边哭",
       "url": "https://s.weibo.com/weibo?q=%E9%82%A3%E8%8B%B1%E8%BE%B9%E5%94%B1%E8%BE%B9%E5%93%AD",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "必须从速从严处置甲醛白菜",
       "url": "https://s.weibo.com/weibo?q=%E5%BF%85%E9%A1%BB%E4%BB%8E%E9%80%9F%E4%BB%8E%E4%B8%A5%E5%A4%84%E7%BD%AE%E7%94%B2%E9%86%9B%E7%99%BD%E8%8F%9C",
-      "hot": ""
-    },
-    {
-      "rank": 10,
-      "title": "台湾节目嘉宾说北京没有冰箱引群嘲",
-      "url": "https://s.weibo.com/weibo?q=%E5%8F%B0%E6%B9%BE%E8%8A%82%E7%9B%AE%E5%98%89%E5%AE%BE%E8%AF%B4%E5%8C%97%E4%BA%AC%E6%B2%A1%E6%9C%89%E5%86%B0%E7%AE%B1%E5%BC%95%E7%BE%A4%E5%98%B2",
       "hot": ""
     }
   ]
