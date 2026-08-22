@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-22T13:47:17+00:00",
+  "updated_at": "2026-08-22T19:55:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "12064"
+      "hot": "12105"
     },
     {
       "rank": 2,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "2576"
+      "hot": "2604"
     },
     {
       "rank": 3,
-      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
-      "hot": "931"
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-MLX",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX",
+      "hot": "875"
     },
     {
       "rank": 4,
-      "title": "orcarouter/Qwen3.8-27B-Uncensored-MLX",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX",
-      "hot": "853"
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "hot": "974"
     },
     {
       "rank": 5,
-      "title": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
-      "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
-      "hot": "596"
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "hot": "516"
     },
     {
       "rank": 6,
-      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-      "hot": "490"
+      "title": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+      "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+      "hot": "613"
     },
     {
       "rank": 7,
       "title": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
       "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
-      "hot": "460"
+      "hot": "478"
     },
     {
       "rank": 8,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "1538"
+      "hot": "1552"
     },
     {
       "rank": 9,
       "title": "MiniMaxAI/MiniMax-Music3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-      "hot": "1170"
+      "hot": "1177"
     },
     {
       "rank": 10,
       "title": "ornith-ai/Ornith-1.5-35B-A3B",
       "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
-      "hot": "308"
+      "hot": "314"
     }
   ]
 }
