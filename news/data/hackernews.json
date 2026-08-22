@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-22T04:53:30+00:00",
+  "updated_at": "2026-08-22T07:19:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "There's no reason for software to be slow anymore",
-      "url": "https://danluu.com/perf-opt/",
-      "hot": "189"
+      "title": "Felony Bench",
+      "url": "https://www.felonybench.com/",
+      "hot": "640"
     },
     {
       "rank": 2,
-      "title": "Felony Bench",
-      "url": "https://www.felonybench.com/",
-      "hot": "590"
+      "title": "Kobo can run apps now",
+      "url": "https://bandarlabs.github.io/Cobalt/",
+      "hot": "504"
     },
     {
       "rank": 3,
-      "title": "Kobo can run apps now",
-      "url": "https://bandarlabs.github.io/Cobalt/",
-      "hot": "471"
+      "title": "Rust Glancer: Rust LSP using 100x less RAM",
+      "url": "https://rust-glancer.github.io/blog/hello-world/",
+      "hot": "122"
     },
     {
       "rank": 4,
-      "title": "Rust Glancer: Rust LSP using 100x less RAM",
-      "url": "https://rust-glancer.github.io/blog/hello-world/",
-      "hot": "86"
+      "title": "Optimizing meshoptimizer to process billions of triangles in minutes (2025)",
+      "url": "https://zeux.io/2025/09/30/billions-of-triangles-in-minutes/",
+      "hot": "14"
     },
     {
       "rank": 5,
-      "title": "Initial focus for our partnership with Motorola is a regular non-folding device",
-      "url": "https://grapheneos.social/@GrapheneOS/117136278553665985",
-      "hot": "46"
+      "title": "There's no reason for software to be slow anymore",
+      "url": "https://danluu.com/perf-opt/",
+      "hot": "322"
     },
     {
       "rank": 6,
-      "title": "Early Humans Likely Ate Carbs and Sugary Foods",
-      "url": "https://www.history.com/articles/early-human-ancestors-diet-sugar-carbs",
-      "hot": "20"
+      "title": "Felony charges for citizen deleting phone data at US Border",
+      "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
+      "hot": "722"
     },
     {
       "rank": 7,
       "title": "Three important steps in my maturation process",
       "url": "https://thomasdullien.github.io/posts/2026-08-21-three-important-steps-in-my-maturation-process/",
-      "hot": "93"
+      "hot": "119"
     },
     {
       "rank": 8,
-      "title": "Scientists release biggest 2D map of the universe",
-      "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
-      "hot": "169"
+      "title": "Kagi added a setting for removing paywalled links from search results",
+      "url": "https://kagi.com/changelog#11296",
+      "hot": "1087"
     },
     {
       "rank": 9,
-      "title": "Kagi added a setting for removing paywalled links from search results",
-      "url": "https://kagi.com/changelog#11296",
-      "hot": "1054"
+      "title": "I accidentally logged hundreds of thousands of phone calls to military bases",
+      "url": "https://lina.sh/blog/hijacking-e164-arpa",
+      "hot": "512"
     },
     {
       "rank": 10,
-      "title": "Felony charges for citizen deleting phone data at US Border",
-      "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
-      "hot": "642"
+      "title": "Scientists release biggest 2D map of the universe",
+      "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
+      "hot": "185"
     }
   ]
 }
