@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-22T09:33:06+00:00",
+  "updated_at": "2026-08-22T11:48:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Rust Glancer: Rust LSP using 100x less RAM",
-      "url": "https://rust-glancer.github.io/blog/hello-world/",
-      "hot": "204"
+      "title": "Canada suspends trade negotiations with USA and match tariffs dollar for dollar",
+      "url": "https://www.pm.gc.ca/en/news/statements/2026/08/21/statement-prime-minister-carney-canada-us-trade-negotiations",
+      "hot": "186"
     },
     {
       "rank": 2,
-      "title": "Felony Bench",
-      "url": "https://www.felonybench.com/",
-      "hot": "699"
+      "title": "Z80–The 1970s Microprocessor Still Alive",
+      "url": "https://www.computer.org/csdl/magazine/mi/2021/06/09623402/1yJTvlRLmhi",
+      "hot": "21"
     },
     {
       "rank": 3,
-      "title": "Kobo can run apps now",
-      "url": "https://bandarlabs.github.io/Cobalt/",
-      "hot": "541"
+      "title": "Munder Difflin – Agent harness to run an office of your clones",
+      "url": "https://munderdiffl.in/",
+      "hot": "26"
     },
     {
       "rank": 4,
-      "title": "There's no reason for software to be slow anymore",
-      "url": "https://danluu.com/perf-opt/",
-      "hot": "395"
+      "title": "Rust Glancer: Rust LSP using 100x less RAM",
+      "url": "https://rust-glancer.github.io/blog/hello-world/",
+      "hot": "277"
     },
     {
       "rank": 5,
-      "title": "Felony charges for citizen deleting phone data at US Border",
-      "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
-      "hot": "779"
+      "title": "Felony Bench",
+      "url": "https://www.felonybench.com/",
+      "hot": "737"
     },
     {
       "rank": 6,
-      "title": "I accidentally logged hundreds of thousands of phone calls to military bases",
-      "url": "https://lina.sh/blog/hijacking-e164-arpa",
-      "hot": "541"
+      "title": "Kobo can run apps now",
+      "url": "https://bandarlabs.github.io/Cobalt/",
+      "hot": "572"
     },
     {
       "rank": 7,
-      "title": "Kagi added a setting for removing paywalled links from search results",
-      "url": "https://kagi.com/changelog#11296",
-      "hot": "1118"
+      "title": "Felony charges for citizen deleting phone data at US Border",
+      "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
+      "hot": "832"
     },
     {
       "rank": 8,
-      "title": "Three important steps in my maturation process",
-      "url": "https://thomasdullien.github.io/posts/2026-08-21-three-important-steps-in-my-maturation-process/",
-      "hot": "136"
+      "title": "There's no reason for software to be slow anymore",
+      "url": "https://danluu.com/perf-opt/",
+      "hot": "458"
     },
     {
       "rank": 9,
-      "title": "Zig’s io.threaded is neat",
-      "url": "https://matklad.github.io/2026/08/06/neat-io-threaded.html",
-      "hot": "71"
+      "title": "I accidentally logged hundreds of thousands of phone calls to military bases",
+      "url": "https://lina.sh/blog/hijacking-e164-arpa",
+      "hot": "571"
     },
     {
       "rank": 10,
-      "title": "Scientists release biggest 2D map of the universe",
-      "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
-      "hot": "202"
+      "title": "Kagi added a setting for removing paywalled links from search results",
+      "url": "https://kagi.com/changelog#11296",
+      "hot": "1151"
     }
   ]
 }
