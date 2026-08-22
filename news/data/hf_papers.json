@@ -1,55 +1,55 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-22T07:19:21+00:00",
+  "updated_at": "2026-08-22T13:47:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "702"
+      "hot": "708"
     },
     {
       "rank": 2,
-      "title": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
-      "url": "https://huggingface.co/papers/2608.20335",
-      "hot": "59"
+      "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
+      "url": "https://huggingface.co/papers/2608.16157",
+      "hot": "75"
     },
     {
       "rank": 3,
+      "title": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
+      "url": "https://huggingface.co/papers/2608.20335",
+      "hot": "62"
+    },
+    {
+      "rank": 4,
       "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
       "url": "https://huggingface.co/papers/2607.05391",
       "hot": "18"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
       "url": "https://huggingface.co/papers/2606.31227",
       "hot": "14"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation",
       "url": "https://huggingface.co/papers/2605.31264",
       "hot": "129"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "LongCat-Video Technical Report",
       "url": "https://huggingface.co/papers/2510.22200",
       "hot": "40"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "123"
-    },
-    {
-      "rank": 8,
-      "title": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds",
-      "url": "https://huggingface.co/papers/2608.16859",
       "hot": "123"
     },
     {
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture",
-      "url": "https://huggingface.co/papers/2605.12500",
-      "hot": "197"
+      "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+      "url": "https://huggingface.co/papers/2608.19880",
+      "hot": "245"
     }
   ]
 }
