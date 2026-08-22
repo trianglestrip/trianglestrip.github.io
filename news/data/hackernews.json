@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-22T02:20:21+00:00",
+  "updated_at": "2026-08-22T04:53:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "There's no reason for software to be slow anymore",
       "url": "https://danluu.com/perf-opt/",
-      "hot": "51"
+      "hot": "189"
     },
     {
       "rank": 2,
       "title": "Felony Bench",
       "url": "https://www.felonybench.com/",
-      "hot": "540"
+      "hot": "590"
     },
     {
       "rank": 3,
       "title": "Kobo can run apps now",
       "url": "https://bandarlabs.github.io/Cobalt/",
-      "hot": "446"
+      "hot": "471"
     },
     {
       "rank": 4,
       "title": "Rust Glancer: Rust LSP using 100x less RAM",
       "url": "https://rust-glancer.github.io/blog/hello-world/",
-      "hot": "37"
+      "hot": "86"
     },
     {
       "rank": 5,
       "title": "Initial focus for our partnership with Motorola is a regular non-folding device",
       "url": "https://grapheneos.social/@GrapheneOS/117136278553665985",
-      "hot": "14"
+      "hot": "46"
     },
     {
       "rank": 6,
-      "title": "Scientists release biggest 2D map of the universe",
-      "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
-      "hot": "154"
+      "title": "Early Humans Likely Ate Carbs and Sugary Foods",
+      "url": "https://www.history.com/articles/early-human-ancestors-diet-sugar-carbs",
+      "hot": "20"
     },
     {
       "rank": 7,
       "title": "Three important steps in my maturation process",
       "url": "https://thomasdullien.github.io/posts/2026-08-21-three-important-steps-in-my-maturation-process/",
-      "hot": "59"
+      "hot": "93"
     },
     {
       "rank": 8,
-      "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
-      "url": "https://ozbrain.com",
-      "hot": "41"
+      "title": "Scientists release biggest 2D map of the universe",
+      "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
+      "hot": "169"
     },
     {
       "rank": 9,
       "title": "Kagi added a setting for removing paywalled links from search results",
       "url": "https://kagi.com/changelog#11296",
-      "hot": "1022"
+      "hot": "1054"
     },
     {
       "rank": 10,
-      "title": "I accidentally logged hundreds of thousands of phone calls to military bases",
-      "url": "https://lina.sh/blog/hijacking-e164-arpa",
-      "hot": "456"
+      "title": "Felony charges for citizen deleting phone data at US Border",
+      "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
+      "hot": "642"
     }
   ]
 }
