@@ -1,20 +1,20 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-23T10:57:32+00:00",
+  "updated_at": "2026-08-23T13:00:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "备份完不算完，先还原到临时库验一遍",
       "url": "https://juejin.cn/post/7676421042796412968",
-      "hot": "468"
+      "hot": "513"
     },
     {
       "rank": 2,
       "title": "从零封装一个合同审查助手：用 WorkBuddy + 腾讯云 OCR 三件套跑通 5 种格式合同的自动审阅",
       "url": "https://juejin.cn/post/7676162994423119918",
-      "hot": "369"
+      "hot": "378"
     },
     {
       "rank": 3,
@@ -32,30 +32,30 @@
       "rank": 5,
       "title": "虚拟滚动真的比普通滚动性能更好吗？",
       "url": "https://juejin.cn/post/7676091857219272742",
-      "hot": "261"
+      "hot": "270"
     },
     {
       "rank": 6,
       "title": "这个本地模型，让我 token 自由了",
       "url": "https://juejin.cn/post/7676709710489419786",
-      "hot": "234"
+      "hot": "252"
     },
     {
       "rank": 7,
       "title": "为什么越来越多人用 kkFileView？",
       "url": "https://juejin.cn/post/7676641074035605550",
-      "hot": "189"
+      "hot": "198"
     },
     {
       "rank": 8,
-      "title": "从零开发一个 Coding Agent（十三）：实现安全的 read 文件读取工具",
-      "url": "https://juejin.cn/post/7676098169944047643",
-      "hot": "171"
+      "title": "Go 1.27 升了一波，泛型方法和 JSON v2 真香但有个坑",
+      "url": "https://juejin.cn/post/7675914752422805514",
+      "hot": "180"
     },
     {
       "rank": 9,
-      "title": "Go 1.27 升了一波，泛型方法和 JSON v2 真香但有个坑",
-      "url": "https://juejin.cn/post/7675914752422805514",
+      "title": "从零开发一个 Coding Agent（十三）：实现安全的 read 文件读取工具",
+      "url": "https://juejin.cn/post/7676098169944047643",
       "hot": "171"
     },
     {
