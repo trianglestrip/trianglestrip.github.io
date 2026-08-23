@@ -1,50 +1,50 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-08-23T14:14:40+00:00",
+  "updated_at": "2026-08-23T20:34:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Yattayo",
+      "url": "https://www.producthunt.com/products/yattayo",
+      "hot": "2026-08-16T18:36:09-07:00"
+    },
+    {
+      "rank": 2,
       "title": "Construct Computer",
       "url": "https://www.producthunt.com/products/construct-computer",
       "hot": "2026-07-01T22:08:02-07:00"
     },
     {
-      "rank": 2,
-      "title": "Local Music Organizer for Mac",
-      "url": "https://www.producthunt.com/products/local-music-organizer-for-mac",
-      "hot": "2026-07-29T00:22:30-07:00"
-    },
-    {
       "rank": 3,
-      "title": "Tab Notes",
-      "url": "https://www.producthunt.com/products/tab-notes",
-      "hot": "2026-08-16T03:41:15-07:00"
+      "title": "Plask",
+      "url": "https://www.producthunt.com/products/plask-3",
+      "hot": "2026-08-18T14:46:27-07:00"
     },
     {
       "rank": 4,
-      "title": "Aximote",
-      "url": "https://www.producthunt.com/products/aximote",
-      "hot": "2026-08-08T00:06:40-07:00"
+      "title": "OpenLogi",
+      "url": "https://www.producthunt.com/products/openlogi",
+      "hot": "2026-08-22T10:13:58-07:00"
     },
     {
       "rank": 5,
-      "title": "Claude Academy",
-      "url": "https://www.producthunt.com/products/claude-academy",
-      "hot": "2026-08-20T17:47:05-07:00"
-    },
-    {
-      "rank": 6,
       "title": "FetchSandbox MCP",
       "url": "https://www.producthunt.com/products/fetchsandbox",
       "hot": "2026-08-14T14:18:26-07:00"
     },
     {
+      "rank": 6,
+      "title": "Local Music Organizer for Mac",
+      "url": "https://www.producthunt.com/products/local-music-organizer-for-mac",
+      "hot": "2026-07-29T00:22:30-07:00"
+    },
+    {
       "rank": 7,
-      "title": "ANCBuddy for Bose QC Ultra",
-      "url": "https://www.producthunt.com/products/ancbuddy-for-bose-qc-ultra",
-      "hot": "2026-07-13T03:52:01-07:00"
+      "title": "Claude Academy",
+      "url": "https://www.producthunt.com/products/claude-academy",
+      "hot": "2026-08-20T17:47:05-07:00"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "Plask",
-      "url": "https://www.producthunt.com/products/plask-3",
-      "hot": "2026-08-18T14:46:27-07:00"
+      "title": "Yatko",
+      "url": "https://www.producthunt.com/products/yatko",
+      "hot": "2026-08-19T19:28:21-07:00"
     },
     {
       "rank": 10,
-      "title": "Yattayo",
-      "url": "https://www.producthunt.com/products/yattayo",
-      "hot": "2026-08-16T18:36:09-07:00"
+      "title": "KanaSensei",
+      "url": "https://www.producthunt.com/products/kanasensei",
+      "hot": "2026-08-20T12:24:28-07:00"
     }
   ]
 }
