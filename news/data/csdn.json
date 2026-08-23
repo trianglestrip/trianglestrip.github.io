@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-23T13:00:08+00:00",
+  "updated_at": "2026-08-23T15:16:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【Flask SSE 实时大屏】从数据库新增记录到 ECharts 更新的完整演示链路",
       "url": "https://blog.csdn.net/2402_87731470/article/details/163596547",
-      "hot": "21171"
+      "hot": "21187"
     },
     {
       "rank": 2,
-      "title": "人工智能究竟是如何运行的？从高维空间拟合、反向传播到大模型推理全链路拆解",
-      "url": "https://blog.csdn.net/qq_46987323/article/details/163926173",
-      "hot": "18646"
+      "title": "AI Agent 最大的安全风险：拿着权限做错事",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/163614095",
+      "hot": "14367"
     },
     {
       "rank": 3,
-      "title": "AI Agent 最大的安全风险：拿着权限做错事",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/163614095",
-      "hot": "14888"
+      "title": "从Redis指标采集到异常告警：redis_exporter + Prometheus 完整实战",
+      "url": "https://blog.csdn.net/Dovis5884/article/details/163972133",
+      "hot": "12045"
     },
     {
       "rank": 4,
-      "title": "从Redis指标采集到异常告警：redis_exporter + Prometheus 完整实战",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/163972133",
-      "hot": "13884"
+      "title": "海光K100_AI单卡ComfyUI+MiniMax-H3环境调优实战：视频生成速度大幅提升",
+      "url": "https://blog.csdn.net/pla88888888/article/details/163998150",
+      "hot": "10995"
     },
     {
       "rank": 5,
-      "title": "海光K100_AI单卡ComfyUI+MiniMax-H3环境调优实战：视频生成速度大幅提升",
-      "url": "https://blog.csdn.net/pla88888888/article/details/163998150",
-      "hot": "10759"
+      "title": "【AI大模型接入SDK】项目的数据结构设计",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163996021",
+      "hot": "10795"
     },
     {
       "rank": 6,
       "title": "备份完不算完，先还原到临时库验一遍",
       "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163981244",
-      "hot": "10704"
+      "hot": "10491"
     },
     {
       "rank": 7,
-      "title": "【AI大模型接入SDK】项目的数据结构设计",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/163996021",
-      "hot": "10592"
+      "title": "Horse3D 游戏引擎研发笔记（七）：Clydesdale——从流式日志到多输出订阅",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/163973512",
+      "hot": "9743"
     },
     {
       "rank": 8,
-      "title": "Horse3D 游戏引擎研发笔记（七）：Clydesdale——从流式日志到多输出订阅",
-      "url": "https://blog.csdn.net/2503_92624912/article/details/163973512",
-      "hot": "10264"
+      "title": "深入理解 TCP 协议（二）：TCP 可靠传输与高效通信机制详解",
+      "url": "https://blog.csdn.net/Felix_kiss_L/article/details/163950356",
+      "hot": "9515"
     },
     {
       "rank": 9,
-      "title": "【AI智能体】Codex 制作AI视频实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/163803397",
-      "hot": "9852"
+      "title": "Harness开源: DeepSeek向左, OpenAI向右",
+      "url": "https://blog.csdn.net/fitbit/article/details/163944246",
+      "hot": "7370"
     },
     {
       "rank": 10,
       "title": "k8s集群部署的方法原理",
       "url": "https://blog.csdn.net/2301_81073010/article/details/163973811",
-      "hot": "9529"
+      "hot": "6387"
     }
   ]
 }
