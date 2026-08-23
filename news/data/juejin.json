@@ -1,14 +1,14 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-23T19:24:41+00:00",
+  "updated_at": "2026-08-23T21:32:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "备份完不算完，先还原到临时库验一遍",
       "url": "https://juejin.cn/post/7676421042796412968",
-      "hot": "657"
+      "hot": "666"
     },
     {
       "rank": 2,
@@ -20,7 +20,7 @@
       "rank": 3,
       "title": "这个本地模型，让我 token 自由了",
       "url": "https://juejin.cn/post/7676709710489419786",
-      "hot": "360"
+      "hot": "369"
     },
     {
       "rank": 4,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "Flutter A2UI 的正确用法，怎么把 AI 和动态 UI 结合有效生产",
       "url": "https://juejin.cn/post/7675633667490267179",
-      "hot": "333"
+      "hot": "342"
     },
     {
       "rank": 6,
@@ -50,7 +50,7 @@
       "rank": 8,
       "title": "AI 时代写给前端同行：什么在贬值，什么在涨价",
       "url": "https://juejin.cn/post/7676369124041654307",
-      "hot": "207"
+      "hot": "216"
     },
     {
       "rank": 9,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "Go 1.27 升了一波，泛型方法和 JSON v2 真香但有个坑",
       "url": "https://juejin.cn/post/7675914752422805514",
-      "hot": "180"
+      "hot": "189"
     }
   ]
 }
