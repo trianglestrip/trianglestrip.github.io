@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-08-22T19:55:19+00:00",
+  "updated_at": "2026-08-23T02:07:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Rust] openai/codex",
       "url": "https://github.com/openai/codex",
-      "hot": "112,984"
+      "hot": "113,518"
     },
     {
       "rank": 2,
       "title": "[Shell] mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "hot": "231,696"
+      "hot": "232,156"
     },
     {
       "rank": 3,
       "title": "[JavaScript] affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "hot": "242,113"
+      "hot": "242,190"
     },
     {
       "rank": 4,
       "title": "[Shell] obra/superpowers",
       "url": "https://github.com/obra/superpowers",
-      "hot": "276,111"
+      "hot": "276,207"
     },
     {
       "rank": 5,
       "title": "[Go] Wei-Shaw/sub2api",
       "url": "https://github.com/Wei-Shaw/sub2api",
-      "hot": "38,758"
+      "hot": "38,803"
     },
     {
       "rank": 6,
       "title": "[TypeScript] makeplane/plane",
       "url": "https://github.com/makeplane/plane",
-      "hot": "57,162"
+      "hot": "57,240"
     },
     {
       "rank": 7,
       "title": "[TypeScript] n8n-io/n8n",
       "url": "https://github.com/n8n-io/n8n",
-      "hot": "201,745"
+      "hot": "201,838"
     },
     {
       "rank": 8,
       "title": "[Python] anthropics/claude-code",
       "url": "https://github.com/anthropics/claude-code",
-      "hot": "142,480"
+      "hot": "142,558"
     },
     {
       "rank": 9,
       "title": "[Rust] AprilNEA/OpenLogi",
       "url": "https://github.com/AprilNEA/OpenLogi",
-      "hot": "13,737"
+      "hot": "13,983"
     },
     {
       "rank": 10,
       "title": "[Mojo] modular/modular",
       "url": "https://github.com/modular/modular",
-      "hot": "28,815"
+      "hot": "28,853"
     }
   ]
 }
