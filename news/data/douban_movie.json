@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-23T15:15:54+00:00",
+  "updated_at": "2026-08-23T17:16:26+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "花开锦绣",
-      "url": "https://movie.douban.com/subject/36810153/",
-      "hot": ""
-    },
-    {
-      "rank": 8,
       "title": "痴迷",
       "url": "https://movie.douban.com/subject/37450627/",
       "hot": "评分 7.6"
+    },
+    {
+      "rank": 8,
+      "title": "花开锦绣",
+      "url": "https://movie.douban.com/subject/36810153/",
+      "hot": ""
     },
     {
       "rank": 9,
