@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-23T08:47:35+00:00",
+  "updated_at": "2026-08-23T10:57:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【Flask SSE 实时大屏】从数据库新增记录到 ECharts 更新的完整演示链路",
       "url": "https://blog.csdn.net/2402_87731470/article/details/163596547",
-      "hot": "24558"
+      "hot": "24663"
     },
     {
       "rank": 2,
-      "title": "从Redis指标采集到异常告警：redis_exporter + Prometheus 完整实战",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/163972133",
-      "hot": "16706"
+      "title": "人工智能究竟是如何运行的？从高维空间拟合、反向传播到大模型推理全链路拆解",
+      "url": "https://blog.csdn.net/qq_46987323/article/details/163926173",
+      "hot": "18183"
     },
     {
       "rank": 3,
-      "title": "RAG 实战教程（三）：向量数据库检索算法，KNN、IVF、HNSW 与 Faiss 实战",
-      "url": "https://blog.csdn.net/2401_83830408/article/details/163916717",
-      "hot": "16510"
+      "title": "从Redis指标采集到异常告警：redis_exporter + Prometheus 完整实战",
+      "url": "https://blog.csdn.net/Dovis5884/article/details/163972133",
+      "hot": "17065"
     },
     {
       "rank": 4,
       "title": "【Linux 网络篇】网络传输的通信端口：Socket 创建、文件描述符底层运行机制",
       "url": "https://blog.csdn.net/buhuizhiyuci/article/details/163675970",
-      "hot": "13937"
+      "hot": "14967"
     },
     {
       "rank": 5,
-      "title": "人工智能究竟是如何运行的？从高维空间拟合、反向传播到大模型推理全链路拆解",
-      "url": "https://blog.csdn.net/qq_46987323/article/details/163926173",
-      "hot": "11583"
+      "title": "备份完不算完，先还原到临时库验一遍",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163981244",
+      "hot": "10865"
     },
     {
       "rank": 6,
-      "title": "备份完不算完，先还原到临时库验一遍",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/163981244",
-      "hot": "11001"
+      "title": "Horse3D 游戏引擎研发笔记（七）：Clydesdale——从流式日志到多输出订阅",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/163973512",
+      "hot": "9895"
     },
     {
       "rank": 7,
-      "title": "Horse3D 游戏引擎研发笔记（七）：Clydesdale——从流式日志到多输出订阅",
-      "url": "https://blog.csdn.net/2503_92624912/article/details/163973512",
-      "hot": "9483"
+      "title": "k8s集群部署的方法原理",
+      "url": "https://blog.csdn.net/2301_81073010/article/details/163973811",
+      "hot": "9384"
     },
     {
       "rank": 8,
-      "title": "Harness开源: DeepSeek向左, OpenAI向右",
-      "url": "https://blog.csdn.net/fitbit/article/details/163944246",
-      "hot": "8948"
+      "title": "总结k8s集群部署的方法原理",
+      "url": "https://blog.csdn.net/2402_88968251/article/details/163973767",
+      "hot": "9063"
     },
     {
       "rank": 9,
-      "title": "飞算JavaAI能读懂复杂业务逻辑吗？ReleaseGuard发布审批实测",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/163920502",
-      "hot": "6636"
+      "title": "Harness开源: DeepSeek向左, OpenAI向右",
+      "url": "https://blog.csdn.net/fitbit/article/details/163944246",
+      "hot": "8285"
     },
     {
       "rank": 10,
-      "title": "AI Tool 设计：粒度、参数与错误恢复怎么做",
-      "url": "https://blog.csdn.net/2403_87933448/article/details/163978856",
-      "hot": "6361"
+      "title": "飞算JavaAI能读懂复杂业务逻辑吗？ReleaseGuard发布审批实测",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/163920502",
+      "hot": "8262"
     }
   ]
 }
