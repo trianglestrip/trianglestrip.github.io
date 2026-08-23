@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-23T02:08:06+00:00",
+  "updated_at": "2026-08-23T04:35:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Figmimic – A bookmarklet to copy any webpage into Figma as editable layers",
-      "url": "https://marcua.net/minitools/figmimic/",
-      "hot": "30"
+      "title": "MartyPC is a cross-platform emulator of early PCs written in Rust",
+      "url": "https://martypc.net/",
+      "hot": "8"
     },
     {
       "rank": 2,
-      "title": "NanoGPT Speedrun Frontier",
-      "url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
-      "hot": "45"
+      "title": "Scrap (2006)",
+      "url": "https://twitter.com/moxie/status/2091218652133732491",
+      "hot": "343"
     },
     {
       "rank": 3,
       "title": "Why your local LLM feels dumber than it is",
       "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
-      "hot": "186"
+      "hot": "235"
     },
     {
       "rank": 4,
-      "title": "Scrap (2006)",
-      "url": "https://twitter.com/moxie/status/2091218652133732491",
-      "hot": "315"
+      "title": "NanoGPT Speedrun Frontier",
+      "url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
+      "hot": "68"
     },
     {
       "rank": 5,
-      "title": "Hister – A private, full content search index that you control",
-      "url": "https://hister.org/",
-      "hot": "240"
+      "title": "ElevenLabs, TwelveLabs, ThirteenLabs",
+      "url": "https://quantumi.sh/public/labs.html",
+      "hot": "342"
     },
     {
       "rank": 6,
-      "title": "ElevenLabs, TwelveLabs, ThirteenLabs",
-      "url": "https://quantumi.sh/public/labs.html",
-      "hot": "310"
+      "title": "Hister – A private, full content search index that you control",
+      "url": "https://hister.org/",
+      "hot": "277"
     },
     {
       "rank": 7,
-      "title": "NetBSD and my life (2005)",
-      "url": "https://mail-index.netbsd.org/netbsd-advocacy/2005/09/10/0000.html",
-      "hot": "97"
+      "title": "I Dream of Quieter Computing",
+      "url": "https://henry.codes/writing/i-dream-of-quieter-computing/",
+      "hot": "7"
     },
     {
       "rank": 8,
-      "title": "typ.ing",
-      "url": "https://typ.ing/",
-      "hot": "186"
+      "title": "The Art and Beauty of Blade Runner",
+      "url": "https://nappertime.com/the-art-of-and-beauty-of-blade-runner/",
+      "hot": "19"
     },
     {
       "rank": 9,
-      "title": "RF Cafe",
-      "url": "https://www.rfcafe.com/",
-      "hot": "151"
+      "title": "typ.ing",
+      "url": "https://typ.ing/",
+      "hot": "213"
     },
     {
       "rank": 10,
-      "title": "I set a trap for a book-marketing scammer (2025)",
-      "url": "https://rwwgreene.substack.com/p/i-set-a-trap-for-a-book-marketing",
-      "hot": "7"
+      "title": "RF Cafe",
+      "url": "https://www.rfcafe.com/",
+      "hot": "172"
     }
   ]
 }

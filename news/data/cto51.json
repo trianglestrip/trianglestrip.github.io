@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-23T02:08:05+00:00",
+  "updated_at": "2026-08-23T04:35:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "DeepSeek 多模态正式发布，终于开眼了：能力接近 Opus-4.8，单图最高按 384 token 计费",
+      "url": "https://www.51cto.com/article/853701.html",
+      "hot": "光看「能看图」没意思，得看加了视觉后文本能力掉没掉。官方给的答案是，纯文本 Agent、推理、世界知识，和 V4-Flash 正式版持平，加视觉没有牺牲老本行。"
+    },
+    {
+      "rank": 2,
+      "title": "重磅，DeepSeek多模态模型上线了！",
+      "url": "https://www.51cto.com/article/853699.html",
+      "hot": "DeepSeek在纯文本模型领域已经做到了行业顶尖水平，V4系列在Agent、推理、代码生成等维度的表现有目共睹。但一直有一个硬伤：它看不见东西。"
+    },
+    {
+      "rank": 3,
       "title": "HarmonyOS 翻页时钟：从 0 到 1 实现一个丝滑的 3D 翻转动画#智绘鸿蒙·大有“视”界#",
       "url": "https://ost.51cto.com/posts/55473",
       "hot": "前言用了一下午的时间终于捣鼓出来这个效果了，虽然有瑕疵但是思路应该是对的，就是有些麻烦，这篇文章把整个实现过程拆开讲，看完你也能自..."
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "机器人GPT-3时刻震动硅谷！零行代码，看一遍秒会，黄仁勋李飞飞参投",
       "url": "https://www.51cto.com/article/853684.html",
       "hot": "以前教一个机器人拧瓶盖，工程师要编程三个月。现在需要的全部投入是一段三秒钟的演示，和零行代码。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "失业小哥7000行代码，复刻了AMD重金收购的AI芯片！",
       "url": "https://www.51cto.com/article/853681.html",
       "hot": "一位失业工程师，轻描淡写地说——「过去6个月，我把Taalas的专利拆解研究了一遍。我觉得他们的方案还能做得更好……所以我写了一个大约7000行代码的编译器。」"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "端到端论文生成系统：假结论检出率92%，自动跑实验、画图、直出论文初稿",
       "url": "https://www.51cto.com/article/853680.html",
       "hot": "CodingAgent 的发展重塑了传统科研流程，成为 AI 辅助科研的新范式：智能体负责科研任务规划、方案生成与任务执行等全流程工作，显著提升了科研效率。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "不藏了！Meta曝光Muse Spark 1.2核心具身能力",
       "url": "https://www.51cto.com/article/853679.html",
       "hot": "以Coding能力见长的Muse Spark 1.2，突然长出了具身手脚：读画面、拆任务、定路线、调工具，再根据每一步的新观察修正行动，直到完成任务。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "2026 Google 开发者大会探展：AI 不止商业，技术亦有温度",
       "url": "https://www.51cto.com/article/853673.html",
       "hot": "在 2026 Google 开发者大会 AI 公益展区，我们看见了 AI 温暖的一面。技术的终点，不只有商业，这也是本届大会「智体新境」带给我们的思考。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "程序员岗位被AI掏空了！前OpenAI高管参与AGI激辩：AI替代岗位，可能根本没有裁员通知",
       "url": "https://www.51cto.com/article/853656.html",
       "hot": "在职开发者不能只盯着裁员名单。团队还剩多少新人，谁在理解整套系统，谁能看懂Agent失败的原因，出了事故又由谁接手，这些问题会决定几年后还有没有人能维护今天写下的代码。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "AI 时代的 GPU 资源调度：有没有类似 Kubernetes 的标准答案？",
       "url": "https://www.51cto.com/article/853653.html",
       "hot": "从训练、推理和多租户治理三个场景，梳理 GPU 调度的核心问题、主流方案与选型思路。"
-    },
-    {
-      "rank": 9,
-      "title": "聊聊数据治理考核，怎么落地？",
-      "url": "https://www.51cto.com/article/853652.html",
-      "hot": "数据治理最难的一公里，从来不是技术，是让每一个生产数据、使用数据、管理数据的人，都为数据质量负责。而考核，就是把这个\"负责\"从道德号召变成机制约束的那颗铆钉。"
-    },
-    {
-      "rank": 10,
-      "title": "WorkSwarm解锁AI办公新范式，招募开发者，Token免费！",
-      "url": "https://www.51cto.com/article/853651.html",
-      "hot": "WorkSwarm依托openJiuwen提前布局的协同工程理论、全场景落地能力、跨端适配优势与开源生态，跳出单一对话助手的同质化内卷竞争，提出“One Platform，Super Teams”全新生产力解决方案。"
     }
   ]
 }
