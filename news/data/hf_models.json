@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-23T20:35:11+00:00",
+  "updated_at": "2026-08-24T03:12:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "12296"
+      "hot": "12337"
     },
     {
       "rank": 2,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "2723"
+      "hot": "2742"
     },
     {
       "rank": 3,
       "title": "orcarouter/Qwen3.8-27B-Uncensored-MLX",
       "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX",
-      "hot": "945"
+      "hot": "962"
     },
     {
       "rank": 4,
-      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
-      "hot": "1038"
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "hot": "642"
     },
     {
       "rank": 5,
-      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-      "hot": "613"
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "hot": "1051"
     },
     {
       "rank": 6,
       "title": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
       "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
-      "hot": "530"
+      "hot": "539"
     },
     {
       "rank": 7,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "1633"
+      "hot": "1645"
     },
     {
       "rank": 8,
       "title": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
       "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
-      "hot": "645"
+      "hot": "652"
     },
     {
       "rank": 9,
       "title": "ornith-ai/Ornith-1.5-35B-A3B",
       "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
-      "hot": "360"
+      "hot": "368"
     },
     {
       "rank": 10,
       "title": "MiniMaxAI/MiniMax-Music3",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-      "hot": "1202"
+      "hot": "1207"
     }
   ]
 }
