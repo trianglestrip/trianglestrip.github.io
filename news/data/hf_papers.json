@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-24T09:45:40+00:00",
+  "updated_at": "2026-08-24T16:01:21+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -20,19 +20,19 @@
       "rank": 3,
       "title": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
       "url": "https://huggingface.co/papers/2608.20335",
-      "hot": "70"
+      "hot": "72"
     },
     {
       "rank": 4,
-      "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
-      "url": "https://huggingface.co/papers/2606.31227",
-      "hot": "15"
-    },
-    {
-      "rank": 5,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "125"
+    },
+    {
+      "rank": 5,
+      "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
+      "url": "https://huggingface.co/papers/2606.31227",
+      "hot": "15"
     },
     {
       "rank": 6,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
-      "url": "https://huggingface.co/papers/2608.19880",
-      "hot": "257"
+      "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
+      "url": "https://huggingface.co/papers/2608.01964",
+      "hot": "180"
     },
     {
       "rank": 10,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "85"
+      "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+      "url": "https://huggingface.co/papers/2608.19880",
+      "hot": "258"
     }
   ]
 }

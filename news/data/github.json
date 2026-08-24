@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-08-24T09:45:16+00:00",
+  "updated_at": "2026-08-24T16:01:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Rust] openai/codex",
-      "url": "https://github.com/openai/codex",
-      "hot": "116,492"
+      "title": "[Python] Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "hot": "48,662"
     },
     {
       "rank": 2,
-      "title": "[JavaScript] freestylefly/awesome-gpt-image-2",
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "hot": "14,537"
+      "title": "[Rust] openai/codex",
+      "url": "https://github.com/openai/codex",
+      "hot": "116,829"
     },
     {
       "rank": 3,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "234,628"
+      "title": "[Python] MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "hot": "33,657"
     },
     {
       "rank": 4,
-      "title": "[Shell] basecamp/omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "hot": "29,563"
+      "title": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "hot": "206,266"
     },
     {
       "rank": 5,
-      "title": "[Rust] AprilNEA/OpenLogi",
-      "url": "https://github.com/AprilNEA/OpenLogi",
-      "hot": "15,376"
+      "title": "[TypeScript] makeplane/plane",
+      "url": "https://github.com/makeplane/plane",
+      "hot": "57,753"
     },
     {
       "rank": 6,
-      "title": "[Rust] block/buzz",
-      "url": "https://github.com/block/buzz",
-      "hot": "30,329"
+      "title": "[Python] NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "hot": "235,570"
     },
     {
       "rank": 7,
-      "title": "[TypeScript] apache/maka",
-      "url": "https://github.com/apache/maka",
-      "hot": "2,508"
+      "title": "[Python] anthropics/claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "hot": "1,248"
     },
     {
       "rank": 8,
-      "title": "[Python] Alishahryar1/free-claude-code",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
-      "hot": "48,341"
+      "title": "[Rust] AprilNEA/OpenLogi",
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "hot": "15,623"
     },
     {
       "rank": 9,
-      "title": "[Rust] tinyhumansai/openhuman",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "hot": "36,974"
+      "title": "[TypeScript] apache/maka",
+      "url": "https://github.com/apache/maka",
+      "hot": "2,746"
     },
     {
       "rank": 10,
-      "title": "[JavaScript] affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "hot": "242,734"
+      "title": "[Python] PostHog/posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "hot": "38,887"
     }
   ]
 }
