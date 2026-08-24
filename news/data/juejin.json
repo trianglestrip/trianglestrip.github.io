@@ -1,32 +1,32 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-24T14:03:10+00:00",
+  "updated_at": "2026-08-24T16:44:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "这个本地模型，让我 token 自由了",
       "url": "https://juejin.cn/post/7676709710489419786",
-      "hot": "1359"
+      "hot": "1404"
     },
     {
       "rank": 2,
       "title": "备份完不算完，先还原到临时库验一遍",
       "url": "https://juejin.cn/post/7676421042796412968",
-      "hot": "1179"
+      "hot": "1224"
     },
     {
       "rank": 3,
       "title": "在浏览器里对比 DWG/DXF 图纸 ——  @mlightcad/cad-diff-viewer",
       "url": "https://juejin.cn/post/7677109639176749090",
-      "hot": "558"
+      "hot": "567"
     },
     {
       "rank": 4,
       "title": "为什么越来越多人用 kkFileView？",
       "url": "https://juejin.cn/post/7676641074035605550",
-      "hot": "504"
+      "hot": "513"
     },
     {
       "rank": 5,
@@ -38,31 +38,31 @@
       "rank": 6,
       "title": "客户只想看个页面，我却做了一个静态演示发布系统",
       "url": "https://juejin.cn/post/7676301268526841856",
-      "hot": "351"
+      "hot": "378"
     },
     {
       "rank": 7,
       "title": "一行 CSS 新特性干掉 20 行 JavaScript ?",
       "url": "https://juejin.cn/post/7677254638324350986",
-      "hot": "279"
+      "hot": "306"
     },
     {
       "rank": 8,
       "title": "Sandbox（沙箱）到底是什么?",
       "url": "https://juejin.cn/post/7676165309280796698",
-      "hot": "279"
+      "hot": "306"
     },
     {
       "rank": 9,
-      "title": "JWT 3：为什么 Token 要放进 Authorization？Axios 拦截器到底解决了什么？",
-      "url": "https://juejin.cn/post/7676826408547041289",
-      "hot": "261"
+      "title": "华为新上Pura X View阔直板手机，特殊屏幕比例设备下，前端应该怎么去适配更完美？送你一套完整工具代码",
+      "url": "https://juejin.cn/post/7676375370356047899",
+      "hot": "288"
     },
     {
       "rank": 10,
-      "title": "华为新上Pura X View阔直板手机，特殊屏幕比例设备下，前端应该怎么去适配更完美？送你一套完整工具代码",
-      "url": "https://juejin.cn/post/7676375370356047899",
-      "hot": "261"
+      "title": "JWT 3：为什么 Token 要放进 Authorization？Axios 拦截器到底解决了什么？",
+      "url": "https://juejin.cn/post/7676826408547041289",
+      "hot": "270"
     }
   ]
 }

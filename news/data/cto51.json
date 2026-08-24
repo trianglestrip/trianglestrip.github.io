@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-24T14:03:18+00:00",
+  "updated_at": "2026-08-24T16:44:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "刚刚，奥特曼炮轰达里奥「反人类」！绝密模型同日曝光",
+      "url": "https://www.51cto.com/article/853783.html",
+      "hot": "最近，OpenAI员工在GitHub上的一次「手滑」，意外暴露了模型的代号——gpt-nathree。很多人分析，GPT-6 Astra马上就要来了。"
+    },
+    {
+      "rank": 2,
       "title": "【HarmonyOS 7 悬浮页签深度实战】03 barFloatingStyle 的宽度、底部间距与遮罩如何配置",
       "url": "https://ost.51cto.com/posts/55542",
       "hot": "前言悬浮页签能够正常显示以后，宽度、底部距离和渐变遮罩就要开始调整了。宽度不合适，三个入口会显得拥挤或相隔太远；底部距离不合适，页..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "RBAC+数据权限这种链路，飞算 JavaAI 真能从一句需求拆到代码？",
       "url": "https://www.51cto.com/article/853771.html",
       "hot": "飞算 JavaAI 处理 RBAC+数据权限这类复杂业务时，走的是「智能引导」的通用场景，能把代码拆到位。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "HarmonyOS Game Service Kit 联合登录完全指南：从零到一接入华为游戏服务",
       "url": "https://ost.51cto.com/posts/55540",
       "hot": "HarmonyOSGameServiceKit联合登录完全指南：从零到一接入华为游戏服务一、为什么游戏需要联合登录？你有没有想过，当用户打开一款游戏时，..."
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "工具碎片化、故障处置慢？DeepSeek Harness 帮助运维人员搭建全自动智能运维闭环",
       "url": "https://www.51cto.com/article/853770.html",
       "hot": "DeepSeek Harness 的核心价值是解决了 AI 运维 “只会想、不会做” 的行业痛点，以极致插件化、全流程可追溯、闭环可执行的核心能力，重构传统运维体系。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "刚刚，Claude两个新模型曝光！",
       "url": "https://www.51cto.com/article/853766.html",
       "hot": "有开发者在 Anthropic 的 API 中发现了两个从未公开的模型代号：claude-marshmallow-eap 和 claude-melon-eap。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Anthropic滑跪认错！Claude暗中降智实锤",
       "url": "https://www.51cto.com/article/853765.html",
       "hot": "就在昨天，开发者argofowl花了整整一个下午，差点把Claude Code翻了个底朝天。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "吴恩达：构建和部署AI应用必须啃下这六块硬骨头",
       "url": "https://www.51cto.com/article/853750.html",
       "hot": "吴恩达研究了大量招聘信息，做了系统的专家访谈和问卷调查，最终把「会做AI应用」这件事拆成了6块。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "智身科技亮相2026世界机器人大会，定义\"真正干活的机器人\"",
       "url": "https://www.51cto.com/article/853768.html",
       "hot": "2026年8月19日—23日，2026世界机器人大会（WRC）在北京举行。本届大会，智身科技以\"真正干活的机器人\"为核心定位，通过五大展区集中展示从核心关节、整机本体、机械臂到运动控制（小脑）、智能决策（大脑）的全栈技术能力，回答行业之问：机器人什么时候能真正创造社会价值？"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "让AI Agent「试玩」世界模型，长程目标评测有了新基准PlayWorld",
       "url": "https://www.51cto.com/article/853749.html",
       "hot": "来自香港大学、香港中文大学、浙江大学和快手可灵团队的研究者使用 Agent Player 操作世界模型：只给定 “场景” 和 “长程目标”，由 Agent Player 在交互过程中观察生成视频的几何一致性、交互正确性和事物演化的合理性。他们对多个 SOTA 模型进行了系统评测与分析，并已开源评测集和代码。"
-    },
-    {
-      "rank": 10,
-      "title": "300多组控制实验、70万余TPU小时，普林斯顿团队给出全开放文生图配方i1",
-      "url": "https://www.51cto.com/article/853748.html",
-      "hot": "如果存在一个性能出色，同时从训练代码到训练数据完全公开可复现的模型的话，研究者们就可以在统一起点上做更多拓展和控制消融实验，从而更准确地分析、理解不同设计带来的实际影响。"
     }
   ]
 }
