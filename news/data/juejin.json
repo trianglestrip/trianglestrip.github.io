@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-23T23:37:54+00:00",
+  "updated_at": "2026-08-24T02:04:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "备份完不算完，先还原到临时库验一遍",
       "url": "https://juejin.cn/post/7676421042796412968",
-      "hot": "684"
+      "hot": "792"
     },
     {
       "rank": 2,
-      "title": "从零封装一个合同审查助手：用 WorkBuddy + 腾讯云 OCR 三件套跑通 5 种格式合同的自动审阅",
-      "url": "https://juejin.cn/post/7676162994423119918",
-      "hot": "396"
+      "title": "这个本地模型，让我 token 自由了",
+      "url": "https://juejin.cn/post/7676709710489419786",
+      "hot": "675"
     },
     {
       "rank": 3,
-      "title": "这个本地模型，让我 token 自由了",
-      "url": "https://juejin.cn/post/7676709710489419786",
-      "hot": "378"
+      "title": "虚拟滚动真的比普通滚动性能更好吗？",
+      "url": "https://juejin.cn/post/7676091857219272742",
+      "hot": "423"
     },
     {
       "rank": 4,
       "title": "超好用 R8 Configuration Analyzer， 优化你的 App 大小和内存",
       "url": "https://juejin.cn/post/7676092674902868010",
-      "hot": "351"
+      "hot": "387"
     },
     {
       "rank": 5,
       "title": "Flutter A2UI 的正确用法，怎么把 AI 和动态 UI 结合有效生产",
       "url": "https://juejin.cn/post/7675633667490267179",
-      "hot": "342"
+      "hot": "360"
     },
     {
       "rank": 6,
-      "title": "虚拟滚动真的比普通滚动性能更好吗？",
-      "url": "https://juejin.cn/post/7676091857219272742",
-      "hot": "324"
+      "title": "AI 时代写给前端同行：什么在贬值，什么在涨价",
+      "url": "https://juejin.cn/post/7676369124041654307",
+      "hot": "288"
     },
     {
       "rank": 7,
       "title": "为什么越来越多人用 kkFileView？",
       "url": "https://juejin.cn/post/7676641074035605550",
-      "hot": "216"
+      "hot": "270"
     },
     {
       "rank": 8,
-      "title": "AI 时代写给前端同行：什么在贬值，什么在涨价",
-      "url": "https://juejin.cn/post/7676369124041654307",
+      "title": "给 AI 时代找工作的同学一些实用建议",
+      "url": "https://juejin.cn/post/7676277362519113763",
       "hot": "216"
     },
     {
       "rank": 9,
-      "title": "从零开发一个 Coding Agent（十三）：实现安全的 read 文件读取工具",
-      "url": "https://juejin.cn/post/7676098169944047643",
-      "hot": "189"
+      "title": "Go 1.27 升了一波，泛型方法和 JSON v2 真香但有个坑",
+      "url": "https://juejin.cn/post/7675914752422805514",
+      "hot": "207"
     },
     {
       "rank": 10,
-      "title": "Go 1.27 升了一波，泛型方法和 JSON v2 真香但有个坑",
-      "url": "https://juejin.cn/post/7675914752422805514",
-      "hot": "189"
+      "title": "从零开发一个 Coding Agent（十三）：实现安全的 read 文件读取工具",
+      "url": "https://juejin.cn/post/7676098169944047643",
+      "hot": "198"
     }
   ]
 }
