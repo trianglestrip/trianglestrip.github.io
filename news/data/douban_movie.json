@@ -1,14 +1,14 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-24T02:03:49+00:00",
+  "updated_at": "2026-08-24T04:56:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "欢迎来龙餐馆",
       "url": "https://movie.douban.com/subject/35811064/",
-      "hot": "评分 8.6"
+      "hot": "评分 8.7"
     },
     {
       "rank": 2,
@@ -20,7 +20,7 @@
       "rank": 3,
       "title": "空枪",
       "url": "https://movie.douban.com/subject/37508847/",
-      "hot": "评分 7.1"
+      "hot": "评分 7.2"
     },
     {
       "rank": 4,
@@ -38,7 +38,7 @@
       "rank": 6,
       "title": "牛来",
       "url": "https://movie.douban.com/subject/38581618/",
-      "hot": "评分 5.9"
+      "hot": "评分 6.0"
     },
     {
       "rank": 7,
@@ -50,7 +50,7 @@
       "rank": 8,
       "title": "花开锦绣",
       "url": "https://movie.douban.com/subject/36810153/",
-      "hot": ""
+      "hot": "评分 7.1"
     },
     {
       "rank": 9,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "火遮眼",
       "url": "https://movie.douban.com/subject/36877245/",
-      "hot": "评分 7.7"
+      "hot": "评分 7.6"
     }
   ]
 }
