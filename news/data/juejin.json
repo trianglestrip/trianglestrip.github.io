@@ -1,44 +1,44 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-24T07:14:29+00:00",
+  "updated_at": "2026-08-24T09:45:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "这个本地模型，让我 token 自由了",
       "url": "https://juejin.cn/post/7676709710489419786",
-      "hot": "981"
+      "hot": "1242"
     },
     {
       "rank": 2,
       "title": "备份完不算完，先还原到临时库验一遍",
       "url": "https://juejin.cn/post/7676421042796412968",
-      "hot": "963"
+      "hot": "1071"
     },
     {
       "rank": 3,
-      "title": "虚拟滚动真的比普通滚动性能更好吗？",
-      "url": "https://juejin.cn/post/7676091857219272742",
+      "title": "在浏览器里对比 DWG/DXF 图纸 ——  @mlightcad/cad-diff-viewer",
+      "url": "https://juejin.cn/post/7677109639176749090",
       "hot": "531"
     },
     {
       "rank": 4,
       "title": "AI 时代写给前端同行：什么在贬值，什么在涨价",
       "url": "https://juejin.cn/post/7676369124041654307",
-      "hot": "441"
+      "hot": "522"
     },
     {
       "rank": 5,
-      "title": "超好用 R8 Configuration Analyzer， 优化你的 App 大小和内存",
-      "url": "https://juejin.cn/post/7676092674902868010",
-      "hot": "432"
+      "title": "为什么越来越多人用 kkFileView？",
+      "url": "https://juejin.cn/post/7676641074035605550",
+      "hot": "468"
     },
     {
       "rank": 6,
-      "title": "为什么越来越多人用 kkFileView？",
-      "url": "https://juejin.cn/post/7676641074035605550",
-      "hot": "387"
+      "title": "超好用 R8 Configuration Analyzer， 优化你的 App 大小和内存",
+      "url": "https://juejin.cn/post/7676092674902868010",
+      "hot": "468"
     },
     {
       "rank": 7,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "华为新上Pura X View阔直板手机，特殊屏幕比例设备下，前端应该怎么去适配更完美？送你一套完整工具代码",
-      "url": "https://juejin.cn/post/7676375370356047899",
-      "hot": "234"
+      "title": "客户只想看个页面，我却做了一个静态演示发布系统",
+      "url": "https://juejin.cn/post/7676301268526841856",
+      "hot": "297"
     },
     {
       "rank": 9,
-      "title": "在浏览器里对比 DWG/DXF 图纸 ——  @mlightcad/cad-diff-viewer",
-      "url": "https://juejin.cn/post/7677109639176749090",
-      "hot": "225"
+      "title": "华为新上Pura X View阔直板手机，特殊屏幕比例设备下，前端应该怎么去适配更完美？送你一套完整工具代码",
+      "url": "https://juejin.cn/post/7676375370356047899",
+      "hot": "252"
     },
     {
       "rank": 10,
-      "title": "从零开发一个 Coding Agent（十三）：实现安全的 read 文件读取工具",
-      "url": "https://juejin.cn/post/7676098169944047643",
-      "hot": "225"
+      "title": "JWT 3：为什么 Token 要放进 Authorization？Axios 拦截器到底解决了什么？",
+      "url": "https://juejin.cn/post/7676826408547041289",
+      "hot": "243"
     }
   ]
 }
