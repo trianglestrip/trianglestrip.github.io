@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-24T19:27:07+00:00",
+  "updated_at": "2026-08-24T19:52:55+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,26 +24,26 @@
     },
     {
       "rank": 4,
+      "title": "中国好药各有真招",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E5%A5%BD%E8%8D%AF%E5%90%84%E6%9C%89%E7%9C%9F%E6%8B%9B",
+      "hot": ""
+    },
+    {
+      "rank": 5,
       "title": "湖北长阳通报韩红基金会救护车",
       "url": "https://s.weibo.com/weibo?q=%E6%B9%96%E5%8C%97%E9%95%BF%E9%98%B3%E9%80%9A%E6%8A%A5%E9%9F%A9%E7%BA%A2%E5%9F%BA%E9%87%91%E4%BC%9A%E6%95%91%E6%8A%A4%E8%BD%A6",
       "hot": ""
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "王菲不承认沈凌模仿的自己",
       "url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E8%8F%B2%E4%B8%8D%E6%89%BF%E8%AE%A4%E6%B2%88%E5%87%8C%E6%A8%A1%E4%BB%BF%E7%9A%84%E8%87%AA%E5%B7%B1",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "以为练普拉提很体面",
       "url": "https://s.weibo.com/weibo?q=%E4%BB%A5%E4%B8%BA%E7%BB%83%E6%99%AE%E6%8B%89%E6%8F%90%E5%BE%88%E4%BD%93%E9%9D%A2",
-      "hot": ""
-    },
-    {
-      "rank": 7,
-      "title": "联想AI平板拯救者Y700无极",
-      "url": "https://s.weibo.com/weibo?q=%E8%81%94%E6%83%B3AI%E5%B9%B3%E6%9D%BF%E6%8B%AF%E6%95%91%E8%80%85Y700%E6%97%A0%E6%9E%81",
       "hot": ""
     },
     {
@@ -54,14 +54,14 @@
     },
     {
       "rank": 9,
-      "title": "颜安去给王橹杰化妆吧",
-      "url": "https://s.weibo.com/weibo?q=%E9%A2%9C%E5%AE%89%E5%8E%BB%E7%BB%99%E7%8E%8B%E6%A9%B9%E6%9D%B0%E5%8C%96%E5%A6%86%E5%90%A7",
+      "title": "发现高精力和高体力是两种人群",
+      "url": "https://s.weibo.com/weibo?q=%E5%8F%91%E7%8E%B0%E9%AB%98%E7%B2%BE%E5%8A%9B%E5%92%8C%E9%AB%98%E4%BD%93%E5%8A%9B%E6%98%AF%E4%B8%A4%E7%A7%8D%E4%BA%BA%E7%BE%A4",
       "hot": ""
     },
     {
       "rank": 10,
-      "title": "发现高精力和高体力是两种人群",
-      "url": "https://s.weibo.com/weibo?q=%E5%8F%91%E7%8E%B0%E9%AB%98%E7%B2%BE%E5%8A%9B%E5%92%8C%E9%AB%98%E4%BD%93%E5%8A%9B%E6%98%AF%E4%B8%A4%E7%A7%8D%E4%BA%BA%E7%BE%A4",
+      "title": "硕士被安排打螺丝300人被迫离职",
+      "url": "https://s.weibo.com/weibo?q=%E7%A1%95%E5%A3%AB%E8%A2%AB%E5%AE%89%E6%8E%92%E6%89%93%E8%9E%BA%E4%B8%9D300%E4%BA%BA%E8%A2%AB%E8%BF%AB%E7%A6%BB%E8%81%8C",
       "hot": ""
     }
   ]
