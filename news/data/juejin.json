@@ -1,26 +1,26 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-24T16:44:36+00:00",
+  "updated_at": "2026-08-24T18:59:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "这个本地模型，让我 token 自由了",
       "url": "https://juejin.cn/post/7676709710489419786",
-      "hot": "1404"
+      "hot": "1422"
     },
     {
       "rank": 2,
       "title": "备份完不算完，先还原到临时库验一遍",
       "url": "https://juejin.cn/post/7676421042796412968",
-      "hot": "1224"
+      "hot": "1251"
     },
     {
       "rank": 3,
       "title": "在浏览器里对比 DWG/DXF 图纸 ——  @mlightcad/cad-diff-viewer",
       "url": "https://juejin.cn/post/7677109639176749090",
-      "hot": "567"
+      "hot": "576"
     },
     {
       "rank": 4,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "超好用 R8 Configuration Analyzer， 优化你的 App 大小和内存",
       "url": "https://juejin.cn/post/7676092674902868010",
-      "hot": "477"
+      "hot": "486"
     },
     {
       "rank": 6,
@@ -44,25 +44,25 @@
       "rank": 7,
       "title": "一行 CSS 新特性干掉 20 行 JavaScript ?",
       "url": "https://juejin.cn/post/7677254638324350986",
-      "hot": "306"
+      "hot": "324"
     },
     {
       "rank": 8,
       "title": "Sandbox（沙箱）到底是什么?",
       "url": "https://juejin.cn/post/7676165309280796698",
-      "hot": "306"
+      "hot": "315"
     },
     {
       "rank": 9,
       "title": "华为新上Pura X View阔直板手机，特殊屏幕比例设备下，前端应该怎么去适配更完美？送你一套完整工具代码",
       "url": "https://juejin.cn/post/7676375370356047899",
-      "hot": "288"
+      "hot": "297"
     },
     {
       "rank": 10,
       "title": "JWT 3：为什么 Token 要放进 Authorization？Axios 拦截器到底解决了什么？",
       "url": "https://juejin.cn/post/7676826408547041289",
-      "hot": "270"
+      "hot": "288"
     }
   ]
 }

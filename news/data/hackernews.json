@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-24T16:44:46+00:00",
+  "updated_at": "2026-08-24T19:00:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
       "url": "https://twitter.com/lemire/status/2091894299289874926",
-      "hot": "239"
+      "hot": "450"
     },
     {
       "rank": 2,
       "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
       "url": "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/",
-      "hot": "110"
+      "hot": "289"
     },
     {
       "rank": 3,
       "title": "IPFS Maintainers Winding Down",
       "url": "https://ipshipyard.com/blog/2026-the-end-of-ipfs-at-shipyard/",
-      "hot": "70"
+      "hot": "196"
     },
     {
       "rank": 4,
-      "title": "How Europe is killing makers and micro-entrepreneurs",
-      "url": "https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs",
-      "hot": "595"
+      "title": "The entire city of San Francisco as a video game",
+      "url": "https://sf.thijs.gg/",
+      "hot": "95"
     },
     {
       "rank": 5,
-      "title": "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
-      "url": "https://developers.openai.com/api/docs/pricing",
-      "hot": "101"
+      "title": "How Europe is killing makers and micro-entrepreneurs",
+      "url": "https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs",
+      "hot": "761"
     },
     {
       "rank": 6,
-      "title": "A Blackstone real estate company exposed SSN digits, DOBs, addresses and more",
-      "url": "https://alexschapiro.com/security/vulnerability/2026/07/16/beam-living-graphql-data-exposure",
-      "hot": "12"
+      "title": "Hot Chips 2026: CUDA Targets RISC-V – By Chester Lam",
+      "url": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc",
+      "hot": "39"
     },
     {
       "rank": 7,
-      "title": "Coding expertise is going to collapse from AI reliance",
-      "url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
-      "hot": "92"
+      "title": "Jabber/XMPP: 25 Years of Digital Independence",
+      "url": "https://gultsch.de/posts/25-years-of-digital-independence/",
+      "hot": "61"
     },
     {
       "rank": 8,
-      "title": "SeL4 security proofs now complete on AArch64",
-      "url": "https://proofcraft.systems/news-2026/#2026-08-21",
-      "hot": "128"
+      "title": "Show HN: GlassBox – what the browser reveals, and how identifiable you are",
+      "url": "https://glassbox.codecanary.org",
+      "hot": "49"
     },
     {
       "rank": 9,
-      "title": "Hot Chips 2026: Applying High Bandwidth Flash (HBF)",
-      "url": "https://chipsandcheese.com/p/hot-chips-2026-applying-high-bandwidth",
-      "hot": "26"
+      "title": "Anger, Anxiety and Agency",
+      "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+      "hot": "7"
     },
     {
       "rank": 10,
-      "title": "I were 17, I'd learn how to build LLMs from scratch",
-      "url": "https://twitter.com/paulg/status/2091544343589060625",
-      "hot": "379"
+      "title": "Show HN: PicoMQ – Durable Streams over HTTP, on object storage",
+      "url": "https://picomq.com/",
+      "hot": "39"
     }
   ]
 }
