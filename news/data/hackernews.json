@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-24T09:45:28+00:00",
+  "updated_at": "2026-08-24T11:49:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Everything I own, owned",
-      "url": "https://schlarp.com/posts/everything-i-own-owned/",
-      "hot": "890"
+      "title": "I were 17, I'd learn how to build LLMs from scratch",
+      "url": "https://twitter.com/paulg/status/2091544343589060625",
+      "hot": "201"
     },
     {
       "rank": 2,
-      "title": "I were 17, I'd learn how to build LLMs from scratch",
-      "url": "https://twitter.com/paulg/status/2091544343589060625",
-      "hot": "102"
+      "title": "Everything I own, owned",
+      "url": "https://schlarp.com/posts/everything-i-own-owned/",
+      "hot": "1028"
     },
     {
       "rank": 3,
       "title": "FDA clears blood test to aid evaluation for Alzheimer's disease",
       "url": "https://medicine.washu.edu/news/fda-clears-blood-test-to-aid-evaluation-for-alzheimers-disease/",
-      "hot": "39"
+      "hot": "68"
     },
     {
       "rank": 4,
-      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
-      "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
-      "hot": "508"
+      "title": "Executable Is a SQLite Database",
+      "url": "https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database",
+      "hot": "136"
     },
     {
       "rank": 5,
-      "title": "OCR It – pull text out of un-copyable documents for your LLM",
-      "url": "https://github.com/thiagotigaz/ocr-it",
-      "hot": "27"
+      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+      "hot": "575"
     },
     {
       "rank": 6,
-      "title": "How I find problems to solve as a staff engineer",
-      "url": "https://lalitm.com/post/find-problems-staff-engineer/",
-      "hot": "411"
+      "title": "The Future Belongs to the Weird",
+      "url": "https://essays.georgestrakhov.com/weird/",
+      "hot": "24"
     },
     {
       "rank": 7,
-      "title": "Andreessen Horowitz is investing billions into a bleak future",
-      "url": "https://www.modelrepublic.org/articles/a16z-portfolio",
-      "hot": "132"
+      "title": "Fast drilldown dashboards from a single Parquet file",
+      "url": "https://www.hamiltonulmer.com/customer-dashboards-r2-hyparquet/",
+      "hot": "35"
     },
     {
       "rank": 8,
-      "title": "Executable Is a SQLite Database",
-      "url": "https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database",
-      "hot": "55"
+      "title": "Omakase Computing",
+      "url": "https://learn.omacom.io/3/omacom/76/omakase-computing",
+      "hot": "3"
     },
     {
       "rank": 9,
-      "title": "I built a low-latency AI companion that plays Skyrim with me",
-      "url": "https://pantel.is/projects/ai-gaming-companion/",
-      "hot": "157"
+      "title": "OCR It – pull text out of un-copyable documents for your LLM",
+      "url": "https://github.com/thiagotigaz/ocr-it",
+      "hot": "62"
     },
     {
       "rank": 10,
-      "title": "New EU-wide product repair rules come into force",
-      "url": "https://www.rte.ie/news/business/2026/0824/1588931-repair-rules/",
-      "hot": "120"
+      "title": "How I find problems to solve as a staff engineer",
+      "url": "https://lalitm.com/post/find-problems-staff-engineer/",
+      "hot": "434"
     }
   ]
 }
