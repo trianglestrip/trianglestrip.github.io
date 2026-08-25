@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-24T23:34:14+00:00",
+  "updated_at": "2026-08-25T01:45:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "刚刚，奥特曼炮轰达里奥「反人类」！绝密模型同日曝光",
-      "url": "https://www.51cto.com/article/853783.html",
-      "hot": "最近，OpenAI员工在GitHub上的一次「手滑」，意外暴露了模型的代号——gpt-nathree。很多人分析，GPT-6 Astra马上就要来了。"
+      "title": "GitHub 39.1K+ Star！ 这个数据库神器火了",
+      "url": "https://www.51cto.com/article/853880.html",
+      "hot": "drawDB 不需要注册、不需要装客户端、打开网页就能画图导 SQL 的这种\"零摩擦\"体验,可能正是它能拿下 38k Star 的原因。"
     },
     {
       "rank": 2,
-      "title": "【HarmonyOS 7 悬浮页签深度实战】03 barFloatingStyle 的宽度、底部间距与遮罩如何配置",
-      "url": "https://ost.51cto.com/posts/55542",
-      "hot": "前言悬浮页签能够正常显示以后，宽度、底部距离和渐变遮罩就要开始调整了。宽度不合适，三个入口会显得拥挤或相隔太远；底部距离不合适，页..."
+      "title": "ThreeUI 爆火！一个基于 Three.js 的160+ 3D 组件全开源！",
+      "url": "https://www.51cto.com/article/853878.html",
+      "hot": "ThreeUI 就是一套专门给 Three.js / WebGL 做的视觉组件库。它已经按照正常 UI 组件库的方式，把各种效果整理成完整目录。"
     },
     {
       "rank": 3,
-      "title": "RBAC+数据权限这种链路，飞算 JavaAI 真能从一句需求拆到代码？",
-      "url": "https://www.51cto.com/article/853771.html",
-      "hot": "飞算 JavaAI 处理 RBAC+数据权限这类复杂业务时，走的是「智能引导」的通用场景，能把代码拆到位。"
+      "title": "【HarmonyOS 7 悬浮页签深度实战】04 HdsTabsController 如何协调页签切换与显隐",
+      "url": "https://ost.51cto.com/posts/55556",
+      "hot": "前言任务列表里常见一个入口：用户在首页看到&ldquo;查看待办&rdquo;，点击以后直接进入任务页。页面已经采用HdsTabs时，这次跳转不能再由业务代码模..."
     },
     {
       "rank": 4,
-      "title": "HarmonyOS Game Service Kit 联合登录完全指南：从零到一接入华为游戏服务",
-      "url": "https://ost.51cto.com/posts/55540",
-      "hot": "HarmonyOSGameServiceKit联合登录完全指南：从零到一接入华为游戏服务一、为什么游戏需要联合登录？你有没有想过，当用户打开一款游戏时，..."
+      "title": "微软 AI 智能体系统 Aion 曝光：以 Copilot 为核心、重塑桌面体验",
+      "url": "https://www.51cto.com/article/853877.html",
+      "hot": "科技媒体 Windows Latest 8 月 24 日发布博文，从 BetaWiki Discord 频道挖掘出更多线索，指出微软 Project Aion 主要面向企业用户，定位为没有开始菜单的 AI 系统。"
     },
     {
       "rank": 5,
-      "title": "工具碎片化、故障处置慢？DeepSeek Harness 帮助运维人员搭建全自动智能运维闭环",
-      "url": "https://www.51cto.com/article/853770.html",
-      "hot": "DeepSeek Harness 的核心价值是解决了 AI 运维 “只会想、不会做” 的行业痛点，以极致插件化、全流程可追溯、闭环可执行的核心能力，重构传统运维体系。"
+      "title": "英伟达震撼首测Vera Rubin，DeepSeek吞吐暴涨三十倍！",
+      "url": "https://www.51cto.com/article/853876.html",
+      "hot": "就在刚刚，英伟达史上首次公布了下一代旗舰级机柜 Vera Rubin NVL72 的首次片上实测数据。"
     },
     {
       "rank": 6,
-      "title": "刚刚，Claude两个新模型曝光！",
-      "url": "https://www.51cto.com/article/853766.html",
-      "hot": "有开发者在 Anthropic 的 API 中发现了两个从未公开的模型代号：claude-marshmallow-eap 和 claude-melon-eap。"
+      "title": "Cybermes - 用于自动化渗透测试的 AI 红队 Agent",
+      "url": "https://www.51cto.com/article/853875.html",
+      "hot": "Cybermes 的核心功能是自动化处理人类渗透测试人员传统上手动完成的“侦察到报告”全流程。"
     },
     {
       "rank": 7,
-      "title": "Anthropic滑跪认错！Claude暗中降智实锤",
-      "url": "https://www.51cto.com/article/853765.html",
-      "hot": "就在昨天，开发者argofowl花了整整一个下午，差点把Claude Code翻了个底朝天。"
+      "title": "英伟达服务器涨价超15%！百亿AI基建的「内存难题」",
+      "url": "https://www.51cto.com/article/853874.html",
+      "hot": "据彭博社报道，英伟达的一些最大客户已经收到通知：搭载英伟达 AI 芯片的服务器，价格将上涨超过 15%。"
     },
     {
       "rank": 8,
-      "title": "吴恩达：构建和部署AI应用必须啃下这六块硬骨头",
-      "url": "https://www.51cto.com/article/853750.html",
-      "hot": "吴恩达研究了大量招聘信息，做了系统的专家访谈和问卷调查，最终把「会做AI应用」这件事拆成了6块。"
+      "title": "斯坦福教授直播训练535B大模型，模型训练背后的「黑箱」正在被打开？",
+      "url": "https://www.51cto.com/article/853873.html",
+      "hot": "斯坦福大学教授、Simile AI 创始人 Percy Liang@percyliang 宣布由 Marin 开放实验室启动训练 Marin 535B-A23B 模型，并且整个训练过程将全程公开进行。"
     },
     {
       "rank": 9,
-      "title": "智身科技亮相2026世界机器人大会，定义\"真正干活的机器人\"",
-      "url": "https://www.51cto.com/article/853768.html",
-      "hot": "2026年8月19日—23日，2026世界机器人大会（WRC）在北京举行。本届大会，智身科技以\"真正干活的机器人\"为核心定位，通过五大展区集中展示从核心关节、整机本体、机械臂到运动控制（小脑）、智能决策（大脑）的全栈技术能力，回答行业之问：机器人什么时候能真正创造社会价值？"
+      "title": "登上Science Robotics顶刊！清华团队耗时22年，终于教会机器人踢足球",
+      "url": "https://www.51cto.com/article/853871.html",
+      "hot": "《Science Robotics》推出人形机器人专题特刊，汇聚了全球人形机器人领域的最新研究成果。本期特刊全球仅收录三家人形机器人公司平台 —— 加速进化、宇树、波士顿动力，代表了全球人形机器人研究的最前沿阵列。"
     },
     {
       "rank": 10,
-      "title": "让AI Agent「试玩」世界模型，长程目标评测有了新基准PlayWorld",
-      "url": "https://www.51cto.com/article/853749.html",
-      "hot": "来自香港大学、香港中文大学、浙江大学和快手可灵团队的研究者使用 Agent Player 操作世界模型：只给定 “场景” 和 “长程目标”，由 Agent Player 在交互过程中观察生成视频的几何一致性、交互正确性和事物演化的合理性。他们对多个 SOTA 模型进行了系统评测与分析，并已开源评测集和代码。"
+      "title": "视频世界模型困在像素网格里：腾讯开源SCoPE，用射线空间重写位置关系",
+      "url": "https://www.51cto.com/article/853870.html",
+      "hot": "香港大学、香港科技大学与腾讯 ARC Lab 联合提出 SCoPE（Sightline-Coordinate Positional Encoding），一套面向视频 DiT 的射线空间位置编码：让视频模型处理位置关系的基底从张量网格转向射线空间。"
     }
   ]
 }
