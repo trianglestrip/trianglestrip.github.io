@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-24T22:31:17+00:00",
+  "updated_at": "2026-08-25T04:51:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
-      "hot": "88"
+      "hot": "90"
     },
     {
       "rank": 2,
@@ -20,7 +20,7 @@
       "rank": 3,
       "title": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
       "url": "https://huggingface.co/papers/2608.20335",
-      "hot": "73"
+      "hot": "74"
     },
     {
       "rank": 4,
@@ -56,7 +56,7 @@
       "rank": 9,
       "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
       "url": "https://huggingface.co/papers/2608.01964",
-      "hot": "180"
+      "hot": "181"
     },
     {
       "rank": 10,
