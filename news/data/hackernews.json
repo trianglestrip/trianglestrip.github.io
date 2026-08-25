@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-25T10:51:26+00:00",
+  "updated_at": "2026-08-25T12:59:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Why some US restaurants are banning tips",
-      "url": "https://www.bbc.com/news/articles/c4g36yze692o",
-      "hot": "73"
+      "title": "Don't Wordle",
+      "url": "https://dontwordle.com/",
+      "hot": "65"
     },
     {
       "rank": 2,
-      "title": "iCloud+ Hide My Email addresses will remain on icloud.com",
-      "url": "https://developer.apple.com/news/?id=1ptvdtcm",
-      "hot": "480"
+      "title": "France's tax agency got hacked (in French)",
+      "url": "https://www.cybernetica.fr/piratage-des-impots-comment-en-est-on-arrive-la/",
+      "hot": "11"
     },
     {
       "rank": 3,
-      "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
-      "url": "https://twitter.com/lemire/status/2091894299289874926",
-      "hot": "886"
+      "title": "HelloAssembly The smallest possible complete Windows application",
+      "url": "https://github.com/PlummersSoftwareLLC/HelloAssembly",
+      "hot": "16"
     },
     {
       "rank": 4,
-      "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
-      "url": "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/",
-      "hot": "726"
+      "title": "iCloud+ Hide My Email addresses will remain on icloud.com",
+      "url": "https://developer.apple.com/news/?id=1ptvdtcm",
+      "hot": "515"
     },
     {
       "rank": 5,
-      "title": "How Universities Should Prepare Founders",
-      "url": "https://paulgraham.com/prepare.html",
-      "hot": "135"
+      "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
+      "url": "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/",
+      "hot": "759"
     },
     {
       "rank": 6,
-      "title": "SiFive's First Server Platform",
-      "url": "https://chipsandcheese.com/p/sifives-first-server-platform",
-      "hot": "61"
+      "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
+      "url": "https://twitter.com/lemire/status/2091894299289874926",
+      "hot": "917"
     },
     {
       "rank": 7,
-      "title": "Moon (2024)",
-      "url": "https://ciechanow.ski/moon/",
-      "hot": "202"
+      "title": "How Universities Should Prepare Founders",
+      "url": "https://paulgraham.com/prepare.html",
+      "hot": "169"
     },
     {
       "rank": 8,
-      "title": "How Europe is killing makers and micro-entrepreneurs",
-      "url": "https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs",
-      "hot": "1396"
+      "title": "SiFive's First Server Platform",
+      "url": "https://chipsandcheese.com/p/sifives-first-server-platform",
+      "hot": "80"
     },
     {
       "rank": 9,
-      "title": "The entire city of San Francisco as a video game",
-      "url": "https://sf.thijs.gg/",
-      "hot": "478"
+      "title": "How Europe is killing makers and micro-entrepreneurs",
+      "url": "https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs",
+      "hot": "1468"
     },
     {
       "rank": 10,
-      "title": "What's new in Emacs 31.1",
-      "url": "https://www.masteringemacs.org/article/whats-new-in-emacs-311",
-      "hot": "151"
+      "title": "The entire city of San Francisco as a video game",
+      "url": "https://sf.thijs.gg/",
+      "hot": "518"
     }
   ]
 }
