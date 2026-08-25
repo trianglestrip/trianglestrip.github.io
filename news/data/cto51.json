@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-25T04:11:14+00:00",
+  "updated_at": "2026-08-25T06:20:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI开始替人类调用AI！token用量已是人类5.2倍",
+      "url": "https://www.51cto.com/article/853920.html",
+      "hot": "OpenRouter是全球最大的模型网关之一，一头接着约70家模型供应商，一头接着开发者，一周要处理28万亿token。按它的联合创始人兼COO Chris Clark估算，这大约是全球推理量的1%，其中一半来自美国。这1%的token，又是怎么分出哪些是人、哪些是Agent的？"
+    },
+    {
+      "rank": 2,
+      "title": "GPT、Kimi、DeepSeek 多模态能力实测：open design设计任务中的公平对比",
+      "url": "https://www.51cto.com/article/853898.html",
+      "hot": "我做了一个实验。同样三个设计任务，同时交给 GPT-5.6、Kimi K3 和 DeepSeek V4 Flash Vision Exp。三组模型使用同一版 OpenDesign、同一批素材、同样的浏览器工具，每个任务允许一轮修复。结果挺意外：三家最终全部通过，DeepSeek 只花了约 1.35 元，速度也是最快的；GPT 的首版最稳；Kimi 做出了完整产品，但最依赖浏览器闭环。"
+    },
+    {
+      "rank": 3,
       "title": "HarmonyOS 从零构建完整的账单管理系统",
       "url": "https://ost.51cto.com/posts/55559",
       "hot": "HarmonyOS从零构建完整的账单管理系统写在前面：为什么要写这篇文章？你好，朋友！如果你正在寻找一篇能够真正带你动手的HarmonyOS数据库教..."
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "DeepSeek-V4-Flash 正式版发布，Agent 能力继续变强",
       "url": "https://www.51cto.com/article/853885.html",
       "hot": "这次更新真正值得讨论的有两个问题：后训练究竟做了什么，以及成绩提升有多少来自模型、多少来自 DeepSeek Harness。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "HarmonyOS 电子盲盒开发实战：从零打造一个让人上瘾的收藏系应用",
       "url": "https://ost.51cto.com/posts/55558",
       "hot": "HarmonyOS电子盲盒开发实战：从零打造一个让人上瘾的收藏系应用一、为什么做电子盲盒？1.1那些年我们拆过的盲盒上周末逛商场，路过泡泡玛特..."
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Loop 没死，Graph 也不新：Agent 最终还是回到了软件工程",
       "url": "https://www.51cto.com/article/853884.html",
       "hot": "我这半年一边写《Harness Engineering 实战》，一边反复用 Codex、Claude Code 跑真实任务，感受很明显：Agent 看起来一直在发明新范式，实际却一步一步走回了软件工程最熟悉的地方。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "GitHub 39.1K+ Star！ 这个数据库神器火了",
       "url": "https://www.51cto.com/article/853880.html",
       "hot": "drawDB 不需要注册、不需要装客户端、打开网页就能画图导 SQL 的这种\"零摩擦\"体验,可能正是它能拿下 38k Star 的原因。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "ThreeUI 爆火！一个基于 Three.js 的160+ 3D 组件全开源！",
       "url": "https://www.51cto.com/article/853878.html",
       "hot": "ThreeUI 就是一套专门给 Three.js / WebGL 做的视觉组件库。它已经按照正常 UI 组件库的方式，把各种效果整理成完整目录。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "微软 AI 智能体系统 Aion 曝光：以 Copilot 为核心、重塑桌面体验",
       "url": "https://www.51cto.com/article/853877.html",
       "hot": "科技媒体 Windows Latest 8 月 24 日发布博文，从 BetaWiki Discord 频道挖掘出更多线索，指出微软 Project Aion 主要面向企业用户，定位为没有开始菜单的 AI 系统。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "英伟达震撼首测Vera Rubin，DeepSeek吞吐暴涨三十倍！",
       "url": "https://www.51cto.com/article/853876.html",
       "hot": "就在刚刚，英伟达史上首次公布了下一代旗舰级机柜 Vera Rubin NVL72 的首次片上实测数据。"
-    },
-    {
-      "rank": 9,
-      "title": "Cybermes - 用于自动化渗透测试的 AI 红队 Agent",
-      "url": "https://www.51cto.com/article/853875.html",
-      "hot": "Cybermes 的核心功能是自动化处理人类渗透测试人员传统上手动完成的“侦察到报告”全流程。"
-    },
-    {
-      "rank": 10,
-      "title": "英伟达服务器涨价超15%！百亿AI基建的「内存难题」",
-      "url": "https://www.51cto.com/article/853874.html",
-      "hot": "据彭博社报道，英伟达的一些最大客户已经收到通知：搭载英伟达 AI 芯片的服务器，价格将上涨超过 15%。"
     }
   ]
 }
