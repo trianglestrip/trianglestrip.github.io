@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-25T05:18:52+00:00",
+  "updated_at": "2026-08-25T05:50:31+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,26 +30,26 @@
     },
     {
       "rank": 5,
+      "title": "成都蛋烘糕奶奶儿子已因病去世",
+      "url": "https://s.weibo.com/weibo?q=%E6%88%90%E9%83%BD%E8%9B%8B%E7%83%98%E7%B3%95%E5%A5%B6%E5%A5%B6%E5%84%BF%E5%AD%90%E5%B7%B2%E5%9B%A0%E7%97%85%E5%8E%BB%E4%B8%96",
+      "hot": ""
+    },
+    {
+      "rank": 6,
       "title": "官方确认帮扶老人遭索赔店主不担责",
       "url": "https://s.weibo.com/weibo?q=%E5%AE%98%E6%96%B9%E7%A1%AE%E8%AE%A4%E5%B8%AE%E6%89%B6%E8%80%81%E4%BA%BA%E9%81%AD%E7%B4%A2%E8%B5%94%E5%BA%97%E4%B8%BB%E4%B8%8D%E6%8B%85%E8%B4%A3",
       "hot": ""
     },
     {
-      "rank": 6,
-      "title": "金晨我不是迪丽热巴",
-      "url": "https://s.weibo.com/weibo?q=%E9%87%91%E6%99%A8%E6%88%91%E4%B8%8D%E6%98%AF%E8%BF%AA%E4%B8%BD%E7%83%AD%E5%B7%B4",
-      "hot": ""
-    },
-    {
       "rank": 7,
-      "title": "被奈雪这杯酸奶昔治愈了",
-      "url": "https://s.weibo.com/weibo?q=%E8%A2%AB%E5%A5%88%E9%9B%AA%E8%BF%99%E6%9D%AF%E9%85%B8%E5%A5%B6%E6%98%94%E6%B2%BB%E6%84%88%E4%BA%86",
+      "title": "关晓彤每年一道出圈健康餐",
+      "url": "https://s.weibo.com/weibo?q=%E5%85%B3%E6%99%93%E5%BD%A4%E6%AF%8F%E5%B9%B4%E4%B8%80%E9%81%93%E5%87%BA%E5%9C%88%E5%81%A5%E5%BA%B7%E9%A4%90",
       "hot": ""
     },
     {
       "rank": 8,
-      "title": "电影八仙",
-      "url": "https://s.weibo.com/weibo?q=%E7%94%B5%E5%BD%B1%E5%85%AB%E4%BB%99",
+      "title": "金晨我不是迪丽热巴",
+      "url": "https://s.weibo.com/weibo?q=%E9%87%91%E6%99%A8%E6%88%91%E4%B8%8D%E6%98%AF%E8%BF%AA%E4%B8%BD%E7%83%AD%E5%B7%B4",
       "hot": ""
     },
     {
@@ -60,8 +60,8 @@
     },
     {
       "rank": 10,
-      "title": "成都蛋烘糕奶奶儿子已因病去世",
-      "url": "https://s.weibo.com/weibo?q=%E6%88%90%E9%83%BD%E8%9B%8B%E7%83%98%E7%B3%95%E5%A5%B6%E5%A5%B6%E5%84%BF%E5%AD%90%E5%B7%B2%E5%9B%A0%E7%97%85%E5%8E%BB%E4%B8%96",
+      "title": "电影八仙",
+      "url": "https://s.weibo.com/weibo?q=%E7%94%B5%E5%BD%B1%E5%85%AB%E4%BB%99",
       "hot": ""
     }
   ]
