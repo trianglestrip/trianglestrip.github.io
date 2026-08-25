@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-25T08:34:43+00:00",
+  "updated_at": "2026-08-25T10:51:25+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
+      "title": "六个Claude Code神作，Anthropic亲选",
+      "url": "https://www.51cto.com/article/853931.html",
+      "hot": "Claude 官方晒出了不少很酷的 Claude Code 项目。这些「神作」来自普通用户，覆盖实用工具、可视化创意和趣味应用。"
+    },
+    {
+      "rank": 3,
       "title": "AI Coding 多需求并行怎么不乱？Worktree + Submodule 的多仓 Git 实践",
       "url": "https://www.51cto.com/article/853930.html",
       "hot": "我花了点时间，结合大厂研发团队常见的多仓协作方式，整理了这套 AI Coding 实践：如何让多个 Agent 并行处理不同需求，如何让一个任务安全地修改多个仓库，以及最后如何完成提交、验证和交付。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "全球首个！十万小时人类数据全开源，Hugging Face罕见站台",
       "url": "https://www.51cto.com/article/853929.html",
       "hot": "数据集叫EgoSuite-Open100K，与Hugging Face联合发布，首批已上线Hugging Face Hub和AtomGit。学术研究能用，商业训练也能用。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Agent 死循环，max_turns 只解决了三分之一：剩下两道防护怎么补",
       "url": "https://www.51cto.com/article/853927.html",
       "hot": "Agent 依旧可能在 10 轮里反复搜索同一个问题、连续重试一个持续返回 HTTP 500 的接口，最后带着一句“完成了”退出。请求停了，钱花了，任务没完成。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "花三个月做十个没人用的App：AI提效之后，真正的问题来了",
       "url": "https://www.51cto.com/article/853925.html",
       "hot": "模型会换，产品入口会改，今天热门的 Agent 框架明年未必还在。我更想写模型外面那层相对稳定的工程系统。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Claude Code 都这么强了，我们还要自己造 Agent 吗？",
       "url": "https://www.51cto.com/article/853923.html",
       "hot": "这篇文章不只讨论“为什么不用造”。我把现在的做法收敛成三样可以直接拿走的东西：一套默认架构、一张七问清单，以及一套决定是否升级到自定义 Loop 的验收方法。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "AI开始替人类调用AI！token用量已是人类5.2倍",
       "url": "https://www.51cto.com/article/853920.html",
       "hot": "OpenRouter是全球最大的模型网关之一，一头接着约70家模型供应商，一头接着开发者，一周要处理28万亿token。按它的联合创始人兼COO Chris Clark估算，这大约是全球推理量的1%，其中一半来自美国。这1%的token，又是怎么分出哪些是人、哪些是Agent的？"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "悬浮页签实战：从官方 API 到自定义实现，给电商首页换上毛玻璃悬浮底栏",
       "url": "https://ost.51cto.com/posts/55572",
       "hot": "打开手机里任意一个系统级应用，留意它的底部导航：它不再是一根通栏的色块死死占着屏幕下方，而是变成了一枚圆角胶囊&mdash;&mdash;窄窄一条、离屏幕..."
     },
     {
-      "rank": 9,
-      "title": "GPT、Kimi、DeepSeek 多模态能力实测：open design设计任务中的公平对比",
-      "url": "https://www.51cto.com/article/853898.html",
-      "hot": "我做了一个实验。同样三个设计任务，同时交给 GPT-5.6、Kimi K3 和 DeepSeek V4 Flash Vision Exp。三组模型使用同一版 OpenDesign、同一批素材、同样的浏览器工具，每个任务允许一轮修复。结果挺意外：三家最终全部通过，DeepSeek 只花了约 1.35 元，速度也是最快的；GPT 的首版最稳；Kimi 做出了完整产品，但最依赖浏览器闭环。"
-    },
-    {
       "rank": 10,
-      "title": "HarmonyOS 从零构建完整的账单管理系统",
-      "url": "https://ost.51cto.com/posts/55559",
-      "hot": "HarmonyOS从零构建完整的账单管理系统写在前面：为什么要写这篇文章？你好，朋友！如果你正在寻找一篇能够真正带你动手的HarmonyOS数据库教..."
+      "title": "智体新境｜技术进阶不停步！这些开发者资源值得收藏",
+      "url": "https://www.51cto.com/article/853899.html",
+      "hot": "2026 Google 开发者大会圆满落幕，开发者的技术进阶与出海探索从未停止。不止有大咖探会带来的深度对谈，Google 谷歌更为你备好了专属成长资源包，"
     }
   ]
 }
