@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-08-25T17:08:43+00:00",
+  "updated_at": "2026-08-25T23:31:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[JavaScript] freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "hot": "17,263"
+      "hot": "17,589"
     },
     {
       "rank": 2,
       "title": "[Python] anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "hot": "1,631"
+      "hot": "1,722"
     },
     {
       "rank": 3,
       "title": "[TypeScript] apache/maka",
       "url": "https://github.com/apache/maka",
-      "hot": "3,222"
+      "hot": "3,310"
     },
     {
       "rank": 4,
       "title": "[Python] TauricResearch/TradingAgents",
       "url": "https://github.com/TauricResearch/TradingAgents",
-      "hot": "100,020"
+      "hot": "100,206"
     },
     {
       "rank": 5,
       "title": "[Python] AgriciDaniel/claude-obsidian",
       "url": "https://github.com/AgriciDaniel/claude-obsidian",
-      "hot": "12,497"
+      "hot": "12,686"
     },
     {
       "rank": 6,
       "title": "[Python] rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "hot": "48,783"
+      "hot": "48,923"
     },
     {
       "rank": 7,
       "title": "[Rust] tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "hot": "37,635"
+      "hot": "37,747"
     },
     {
       "rank": 8,
       "title": "[Shell] basecamp/omarchy",
       "url": "https://github.com/basecamp/omarchy",
-      "hot": "30,978"
+      "hot": "31,204"
     },
     {
       "rank": 9,
       "title": "[Python] Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "hot": "134,092"
+      "hot": "134,217"
     },
     {
       "rank": 10,
       "title": "multica-ai/andrej-karpathy-skills",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "hot": "207,041"
+      "hot": "207,169"
     }
   ]
 }
