@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-08-25T23:30:51+00:00",
+  "updated_at": "2026-08-25T23:49:57+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,32 +36,32 @@
     },
     {
       "rank": 6,
-      "title": "这种黑色小飞虫是移动病菌库",
-      "url": "https://s.weibo.com/weibo?q=%E8%BF%99%E7%A7%8D%E9%BB%91%E8%89%B2%E5%B0%8F%E9%A3%9E%E8%99%AB%E6%98%AF%E7%A7%BB%E5%8A%A8%E7%97%85%E8%8F%8C%E5%BA%93",
-      "hot": ""
-    },
-    {
-      "rank": 7,
-      "title": "GucciPrimavera",
-      "url": "https://s.weibo.com/weibo?q=GucciPrimavera",
-      "hot": ""
-    },
-    {
-      "rank": 8,
-      "title": "在嫌疑人住处发现在韩遇害女生遗体",
-      "url": "https://s.weibo.com/weibo?q=%E5%9C%A8%E5%AB%8C%E7%96%91%E4%BA%BA%E4%BD%8F%E5%A4%84%E5%8F%91%E7%8E%B0%E5%9C%A8%E9%9F%A9%E9%81%87%E5%AE%B3%E5%A5%B3%E7%94%9F%E9%81%97%E4%BD%93",
-      "hot": ""
-    },
-    {
-      "rank": 9,
       "title": "13岁上海女孩靠AI三天赚1.8万元",
       "url": "https://s.weibo.com/weibo?q=13%E5%B2%81%E4%B8%8A%E6%B5%B7%E5%A5%B3%E5%AD%A9%E9%9D%A0AI%E4%B8%89%E5%A4%A9%E8%B5%9A1.8%E4%B8%87%E5%85%83",
       "hot": ""
     },
     {
-      "rank": 10,
+      "rank": 7,
+      "title": "在嫌疑人住处发现在韩遇害女生遗体",
+      "url": "https://s.weibo.com/weibo?q=%E5%9C%A8%E5%AB%8C%E7%96%91%E4%BA%BA%E4%BD%8F%E5%A4%84%E5%8F%91%E7%8E%B0%E5%9C%A8%E9%9F%A9%E9%81%87%E5%AE%B3%E5%A5%B3%E7%94%9F%E9%81%97%E4%BD%93",
+      "hot": ""
+    },
+    {
+      "rank": 8,
+      "title": "这种黑色小飞虫是移动病菌库",
+      "url": "https://s.weibo.com/weibo?q=%E8%BF%99%E7%A7%8D%E9%BB%91%E8%89%B2%E5%B0%8F%E9%A3%9E%E8%99%AB%E6%98%AF%E7%A7%BB%E5%8A%A8%E7%97%85%E8%8F%8C%E5%BA%93",
+      "hot": ""
+    },
+    {
+      "rank": 9,
       "title": "30多国准备派兵乌克兰",
       "url": "https://s.weibo.com/weibo?q=30%E5%A4%9A%E5%9B%BD%E5%87%86%E5%A4%87%E6%B4%BE%E5%85%B5%E4%B9%8C%E5%85%8B%E5%85%B0",
+      "hot": ""
+    },
+    {
+      "rank": 10,
+      "title": "早春晴朗",
+      "url": "https://s.weibo.com/weibo?q=%E6%97%A9%E6%98%A5%E6%99%B4%E6%9C%97",
       "hot": ""
     }
   ]
