@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-25T17:42:31+00:00",
+  "updated_at": "2026-08-25T19:49:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
+      "title": "Apple introduces M6 and M5 Ultra",
       "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
-      "hot": "602"
+      "hot": "765"
     },
     {
       "rank": 2,
-      "title": "Nitter project received cease and desist",
-      "url": "https://github.com/zedeus/nitter/issues/1442",
-      "hot": "59"
+      "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
+      "hot": "28"
     },
     {
       "rank": 3,
       "title": "New Mac Studio with M5 Max and M5 Ultra",
       "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
-      "hot": "507"
+      "hot": "614"
     },
     {
       "rank": 4,
-      "title": "Bomb fishing is wreaking havoc on Indonesia's coral reefs",
-      "url": "https://e360.yale.edu/digest/bomb-fishing-coral-reefs",
-      "hot": "150"
+      "title": "Black hole singularity is a surface not a point",
+      "url": "https://arxiv.org/abs/2608.21590",
+      "hot": "95"
     },
     {
       "rank": 5,
-      "title": "New Mac mini, featuring M6 and M5 Pro",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/",
-      "hot": "271"
+      "title": "Show HN: I made a Raspberry with Qwen my local car AI",
+      "url": "https://github.com/ThinkOffApp/CarWatch",
+      "hot": "22"
     },
     {
       "rank": 6,
-      "title": "Black hole singularity is a surface not a point",
-      "url": "https://arxiv.org/abs/2608.21590",
-      "hot": "23"
+      "title": "My Friend Aaron",
+      "url": "https://rorz.io/writing/my-friend-aaron",
+      "hot": "199"
     },
     {
       "rank": 7,
-      "title": "SpaceX – Starbase, LA",
-      "url": "https://www.spacex.com/sites/starbase-la",
-      "hot": "27"
+      "title": "Pgbot: A 5.9 MB read-only Postgres tool for humans and agents",
+      "url": "https://pgbot.dev/",
+      "hot": "32"
     },
     {
       "rank": 8,
-      "title": "Qwen 3.8-Flash-Next releasing tomorrow (125B a6B)",
-      "url": "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
-      "hot": "233"
+      "title": "Run OpenBSD on DigitalOcean for $4/month",
+      "url": "https://nil.wallyjones.com/run-openbsd-on-digitalocean-for-4month/",
+      "hot": "52"
     },
     {
       "rank": 9,
-      "title": "Water Behind the Watts: The Hidden Risk of Powering Data Centers",
-      "url": "https://www.ceres.org/resources/reports/water-behind-the-watts-the-hidden-risk-of-powering-data-centers",
-      "hot": "11"
+      "title": "New Mac mini, featuring M6 and M5 Pro",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/",
+      "hot": "346"
     },
     {
       "rank": 10,
-      "title": "My Friend Aaron",
-      "url": "https://rorz.io/writing/my-friend-aaron",
-      "hot": "22"
+      "title": "Dolly Parton has died",
+      "url": "https://www.theguardian.com/music/2026/aug/25/dolly-parton-country-singer-dead",
+      "hot": "564"
     }
   ]
 }

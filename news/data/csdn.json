@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-25T17:42:25+00:00",
+  "updated_at": "2026-08-25T19:49:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "用蓝耘元生代做 GitHub 热榜解读：Dify Chatflow 接入和真实项目分析",
       "url": "https://blog.csdn.net/Mrxiao_bo/article/details/164029855",
-      "hot": "48022"
+      "hot": "47575"
     },
     {
       "rank": 2,
       "title": "【AI智能体】Codex 插件从使用到项目开发实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/163613455",
-      "hot": "18396"
+      "hot": "19116"
     },
     {
       "rank": 3,
       "title": "AI 训练数据湖：为什么 RustFS 是 S3 兼容存储的新选择",
       "url": "https://blog.csdn.net/rustfs_contrib/article/details/163943909",
-      "hot": "17325"
+      "hot": "17130"
     },
     {
       "rank": 4,
       "title": "ValidX时间注解完全指南：10种时间验证注解详解",
       "url": "https://blog.csdn.net/vipxieliang/article/details/164056727",
-      "hot": "11987"
+      "hot": "16015"
     },
     {
       "rank": 5,
-      "title": "PyTorch强化学习实战（23）——强化学习在网页导航中的应用",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766221",
-      "hot": "11167"
+      "title": "一个网页管理多种远程连接：Docker 部署 Next Terminal 与资产审计",
+      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/164051664",
+      "hot": "11588"
     },
     {
       "rank": 6,
-      "title": "AI Agent 最大的安全风险：拿着权限做错事",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/163614095",
-      "hot": "10963"
+      "title": "【AI大模型接入SDK】C++日志体系与spdlog封装的理论部分",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163889743",
+      "hot": "10625"
     },
     {
       "rank": 7,
-      "title": "一个网页管理多种远程连接：Docker 部署 Next Terminal 与资产审计",
-      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/164051664",
-      "hot": "10906"
+      "title": "PyTorch强化学习实战（23）——强化学习在网页导航中的应用",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766221",
+      "hot": "10620"
     },
     {
       "rank": 8,
       "title": "NAS 运维到 Playbook：Ansible + cpolar 远程自动化实战",
       "url": "https://blog.csdn.net/user340/article/details/164025192",
-      "hot": "10700"
+      "hot": "10570"
     },
     {
       "rank": 9,
-      "title": "【AI大模型接入SDK】C++日志体系与spdlog封装的理论部分",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/163889743",
-      "hot": "10194"
+      "title": "AI Agent 最大的安全风险：拿着权限做错事",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/163614095",
+      "hot": "10534"
     },
     {
       "rank": 10,
       "title": "Vue3+dhtmlx-gantt 企业甘特图：任务依赖、拖拽改期、工时回写与 SPA 单例",
       "url": "https://blog.csdn.net/zhouzhongyan/article/details/164034425",
-      "hot": "9843"
+      "hot": "9695"
     }
   ]
 }
