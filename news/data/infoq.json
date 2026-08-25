@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-25T06:20:25+00:00",
+  "updated_at": "2026-08-25T08:34:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "主要前沿模型提供商采用水印技术以满足欧盟法规要求",
+      "url": "https://www.infoq.cn/article/4mIQfr4w5gPLXSIW7YST?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 25 Aug 2026 16:16:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Grafana 正式发布 gcx 和 MCP 服务器，助力基于遥测的智能代理开发",
+      "url": "https://www.infoq.cn/article/9UoCxEhRcFG5ovFxTkXS?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 25 Aug 2026 14:31:00 GMT"
+    },
+    {
+      "rank": 3,
       "title": "Cloudflare 将 CI 管道转变为 TypeScript 工作流",
       "url": "https://www.infoq.cn/article/xIctLq7L5cK9dIrVVCvd?utm_source=rss&utm_medium=article",
       "hot": "Tue, 25 Aug 2026 12:12:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Snowflake Summit 2026：Whatnot 如何将超高速增长中的数据转化为清晰的业务洞察 | 技术趋势",
       "url": "https://www.infoq.cn/article/9a0qIhdK6QBwSEh1KQyY?utm_source=rss&utm_medium=article",
       "hot": "Tue, 25 Aug 2026 10:52:50 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "SpaceXAI 推出面向自主 AI 智能代理的 Grok Bot",
       "url": "https://www.infoq.cn/article/a2Y7bOxLHZfCVWtKhAtQ?utm_source=rss&utm_medium=article",
       "hot": "Tue, 25 Aug 2026 09:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Next.js 16.3 发布：即时导航、开发内存最高降低 90%，构建速度大幅提升",
       "url": "https://www.infoq.cn/article/NedlVNN6E9uWbIE3WV07?utm_source=rss&utm_medium=article",
       "hot": "Mon, 24 Aug 2026 17:15:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "多个 AI 智能体“同住”一台 EC2：AgentCore 推出持久计算",
       "url": "https://www.infoq.cn/article/2IBWc7BuB2qoGao5tlQT?utm_source=rss&utm_medium=article",
       "hot": "Mon, 24 Aug 2026 15:43:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "“我们破坏了你们所有的应用”：React Router v8 引发争议，有开发者转向 TanStack Router",
       "url": "https://www.infoq.cn/article/yEKcMO03wXvuyZpj1C1d?utm_source=rss&utm_medium=article",
       "hot": "Mon, 24 Aug 2026 14:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "GitHub 公开预览 Stacked Pull Requests 功能",
       "url": "https://www.infoq.cn/article/zdc3HzpvqA96jwWA6lGb?utm_source=rss&utm_medium=article",
       "hot": "Mon, 24 Aug 2026 12:19:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Netflix 开源了一个用于因果推理的智能代理工作流",
       "url": "https://www.infoq.cn/article/4h2jb2eOcBrP5AG5hLYt?utm_source=rss&utm_medium=article",
       "hot": "Mon, 24 Aug 2026 10:44:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "完全相信AI代码的Uncle Bob，坦诚这条路还没走通",
-      "url": "https://www.infoq.cn/article/ogFMPSyD3LqR9RtbIRky?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 24 Aug 2026 10:16:52 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "DeepSeek 再度调价；英伟达AI服务器涨价超 15%；“AI红娘”承诺三年不结婚就退款，前 Kimi搜索负责人创业目标：拉高10%结婚率 | AI周报",
-      "url": "https://www.infoq.cn/article/ONGSA7k86LcxFyU64N2z?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 24 Aug 2026 10:11:16 GMT"
     }
   ]
 }
