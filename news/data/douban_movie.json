@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-25T15:14:27+00:00",
+  "updated_at": "2026-08-25T17:42:08+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "火遮眼",
-      "url": "https://movie.douban.com/subject/36877245/",
-      "hot": "评分 7.6"
+      "title": "九门",
+      "url": "https://movie.douban.com/subject/26811535/",
+      "hot": "评分 6.7"
     }
   ]
 }

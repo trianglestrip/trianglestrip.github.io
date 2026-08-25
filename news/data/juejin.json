@@ -1,44 +1,44 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-25T15:14:44+00:00",
+  "updated_at": "2026-08-25T17:42:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "备份完不算完，先还原到临时库验一遍",
       "url": "https://juejin.cn/post/7676421042796412968",
-      "hot": "1800"
+      "hot": "1854"
     },
     {
       "rank": 2,
       "title": "走进 AI Agent 第二篇：决定 AI Agent 能力上限的关键技术",
       "url": "https://juejin.cn/post/7677562804154531890",
-      "hot": "999"
+      "hot": "1026"
     },
     {
       "rank": 3,
-      "title": "在浏览器里对比 DWG/DXF 图纸 ——  @mlightcad/cad-diff-viewer",
-      "url": "https://juejin.cn/post/7677109639176749090",
-      "hot": "738"
+      "title": "一行 CSS 新特性干掉 20 行 JavaScript ?",
+      "url": "https://juejin.cn/post/7677254638324350986",
+      "hot": "747"
     },
     {
       "rank": 4,
-      "title": "一行 CSS 新特性干掉 20 行 JavaScript ?",
-      "url": "https://juejin.cn/post/7677254638324350986",
-      "hot": "738"
+      "title": "在浏览器里对比 DWG/DXF 图纸 ——  @mlightcad/cad-diff-viewer",
+      "url": "https://juejin.cn/post/7677109639176749090",
+      "hot": "747"
     },
     {
       "rank": 5,
       "title": "向量数据库不该成为新孤岛：KingbaseES 多模融合架构如何减少数据搬运",
       "url": "https://juejin.cn/post/7677418026090528794",
-      "hot": "639"
+      "hot": "675"
     },
     {
       "rank": 6,
       "title": "用蓝耘元生代做 GitHub 热榜解读：Dify Chatflow 接入和真实项目分析",
       "url": "https://juejin.cn/post/7677428850284675082",
-      "hot": "630"
+      "hot": "666"
     },
     {
       "rank": 7,
@@ -50,19 +50,19 @@
       "rank": 8,
       "title": "客户只想看个页面，我却做了一个静态演示发布系统",
       "url": "https://juejin.cn/post/7676301268526841856",
-      "hot": "540"
+      "hot": "549"
     },
     {
       "rank": 9,
-      "title": "图解 AI Agent ①：大模型接上 API，为什么还不算 Agent？",
-      "url": "https://juejin.cn/post/7677170455305879562",
-      "hot": "522"
+      "title": "Sandbox（沙箱）到底是什么?",
+      "url": "https://juejin.cn/post/7676165309280796698",
+      "hot": "540"
     },
     {
       "rank": 10,
-      "title": "Sandbox（沙箱）到底是什么?",
-      "url": "https://juejin.cn/post/7676165309280796698",
-      "hot": "522"
+      "title": "图解 AI Agent ①：大模型接上 API，为什么还不算 Agent？",
+      "url": "https://juejin.cn/post/7677170455305879562",
+      "hot": "531"
     }
   ]
 }
