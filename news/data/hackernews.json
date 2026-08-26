@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-26T11:19:07+00:00",
+  "updated_at": "2026-08-26T13:20:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Oldinsurancemaps.net is now a Charter Project",
-      "url": "https://openstreetmap.us/news/2026/08/oim-charter-project/",
-      "hot": "56"
+      "title": "AWS Acquires DuckDB",
+      "url": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
+      "hot": "112"
     },
     {
       "rank": 2,
-      "title": "RAG Is Simpler Than You Think",
-      "url": "https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think",
-      "hot": "77"
+      "title": "Bill Gates: The turbulent AI era is here",
+      "url": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+      "hot": "31"
     },
     {
       "rank": 3,
-      "title": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
-      "hot": "79"
-    },
-    {
-      "rank": 4,
-      "title": "Show HN: Buslens – where can I get to by bus? (UK)",
-      "url": "https://rupertlinacre.com/buslens/",
+      "title": "Qwen3.8-Flash-Next: A New Architecture, Towards Ultimate Cost-Efficiency",
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
       "hot": "40"
     },
     {
+      "rank": 4,
+      "title": "RAG Is Simpler Than You Think",
+      "url": "https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think",
+      "hot": "188"
+    },
+    {
       "rank": 5,
-      "title": "Apple introduces M6 and M5 Ultra",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
-      "hot": "1170"
+      "title": "Oldinsurancemaps.net is now a Charter Project",
+      "url": "https://openstreetmap.us/news/2026/08/oim-charter-project/",
+      "hot": "107"
     },
     {
       "rank": 6,
-      "title": "Value Classes Still Need Compiler Sympathy",
-      "url": "https://johan-sjolen.github.io/post/compiler-sympathy/compiler-sympathy/",
-      "hot": "24"
+      "title": "A curmudgeon tries a language server",
+      "url": "https://entropicthoughts.com/curmudgeon-tries-language-server",
+      "hot": "6"
     },
     {
       "rank": 7,
-      "title": "Stalking the Wily Hacker: 40 years later – Cliff Stoll [video]",
-      "url": "https://www.youtube.com/watch?v=656058JxTM0",
-      "hot": "122"
+      "title": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
+      "hot": "230"
     },
     {
       "rank": 8,
-      "title": "It's Not the End of Programming",
-      "url": "https://mathstodon.xyz/@abuseofnotation/117161292083848755",
-      "hot": "7"
+      "title": "Apple introduces M6 and M5 Ultra",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+      "hot": "1221"
     },
     {
       "rank": 9,
-      "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
-      "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
-      "hot": "421"
+      "title": "XCancel and Nitter are receiving C&D letters from XCorp",
+      "url": "https://news.ycombinator.com/item?id=49446210",
+      "hot": "146"
     },
     {
       "rank": 10,
-      "title": "Queryable Executables",
-      "url": "https://fzakaria.com/2026/08/24/actually-queryable-executables",
-      "hot": "209"
+      "title": "Omarchy development practices lead to predictable security issues",
+      "url": "https://blog.happyfellow.dev/merchants-of-insecurity/",
+      "hot": "188"
     }
   ]
 }
