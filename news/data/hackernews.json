@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-26T13:20:49+00:00",
+  "updated_at": "2026-08-26T16:15:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AWS Acquires DuckDB",
       "url": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
-      "hot": "112"
+      "hot": "604"
     },
     {
       "rank": 2,
-      "title": "Bill Gates: The turbulent AI era is here",
-      "url": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
-      "hot": "31"
+      "title": "GLM-5.3-Flash",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "hot": "339"
     },
     {
       "rank": 3,
       "title": "Qwen3.8-Flash-Next: A New Architecture, Towards Ultimate Cost-Efficiency",
       "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
-      "hot": "40"
+      "hot": "350"
     },
     {
       "rank": 4,
-      "title": "RAG Is Simpler Than You Think",
-      "url": "https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think",
-      "hot": "188"
+      "title": "Nebula Sans",
+      "url": "https://www.nebulasans.com",
+      "hot": "82"
     },
     {
       "rank": 5,
-      "title": "Oldinsurancemaps.net is now a Charter Project",
-      "url": "https://openstreetmap.us/news/2026/08/oim-charter-project/",
-      "hot": "107"
+      "title": "GLM-5.3-Flash Intelligence, Performance and Price Analysis",
+      "url": "https://artificialanalysis.ai/models/glm-5-3-flash",
+      "hot": "57"
     },
     {
       "rank": 6,
-      "title": "A curmudgeon tries a language server",
-      "url": "https://entropicthoughts.com/curmudgeon-tries-language-server",
-      "hot": "6"
+      "title": "Taylor Farms: How One Company's Reach Became a National Risk",
+      "url": "https://farmaction.us/taylorfarmsreport/",
+      "hot": "72"
     },
     {
       "rank": 7,
-      "title": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
-      "hot": "230"
+      "title": "France reaches 94.9% fiber coverage in 2026",
+      "url": "https://cartefibre.arcep.fr",
+      "hot": "86"
     },
     {
       "rank": 8,
-      "title": "Apple introduces M6 and M5 Ultra",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
-      "hot": "1221"
+      "title": "Launch HN: Risklytics (YC S26) – Insurance brokerage for frontier tech companies",
+      "url": "https://www.risklytics.ai/",
+      "hot": "3"
     },
     {
       "rank": 9,
-      "title": "XCancel and Nitter are receiving C&D letters from XCorp",
-      "url": "https://news.ycombinator.com/item?id=49446210",
-      "hot": "146"
+      "title": "Disruption with Some GitHub Services",
+      "url": "https://www.githubstatus.com/incidents/hcbtzksccj2f",
+      "hot": "86"
     },
     {
       "rank": 10,
-      "title": "Omarchy development practices lead to predictable security issues",
-      "url": "https://blog.happyfellow.dev/merchants-of-insecurity/",
-      "hot": "188"
+      "title": "WebMCP: Teaching Your Website to Talk to AI Agents",
+      "url": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/",
+      "hot": "35"
     }
   ]
 }
