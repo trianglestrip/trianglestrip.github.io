@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-26T11:48:53+00:00",
+  "updated_at": "2026-08-26T19:00:40+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,13 +14,13 @@
       "rank": 2,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "179"
+      "hot": "181"
     },
     {
       "rank": 3,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "754"
+      "hot": "755"
     },
     {
       "rank": 4,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "Prime Agent: A Self-Improving RLM Harness",
       "url": "https://huggingface.co/papers/2608.23552",
-      "hot": "37"
+      "hot": "38"
     },
     {
       "rank": 6,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
-      "url": "https://huggingface.co/papers/2508.16279",
-      "hot": "68"
+      "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+      "url": "https://huggingface.co/papers/2308.04079",
+      "hot": "203"
     },
     {
       "rank": 10,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "85"
+      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
+      "url": "https://huggingface.co/papers/2508.16279",
+      "hot": "68"
     }
   ]
 }

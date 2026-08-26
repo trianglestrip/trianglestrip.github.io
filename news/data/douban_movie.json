@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-26T16:14:47+00:00",
+  "updated_at": "2026-08-26T18:59:57+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,27 +24,27 @@
     },
     {
       "rank": 4,
+      "title": "花开锦绣",
+      "url": "https://movie.douban.com/subject/36810153/",
+      "hot": "评分 7.1"
+    },
+    {
+      "rank": 5,
       "title": "蜘蛛侠：崭新之日",
       "url": "https://movie.douban.com/subject/36246195/",
       "hot": "评分 7.8"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "牛来",
       "url": "https://movie.douban.com/subject/38581618/",
       "hot": "评分 6.0"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "八仙！",
       "url": "https://movie.douban.com/subject/36882191/",
       "hot": "评分 8.2"
-    },
-    {
-      "rank": 7,
-      "title": "花开锦绣",
-      "url": "https://movie.douban.com/subject/36810153/",
-      "hot": "评分 7.1"
     },
     {
       "rank": 8,
