@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-26T05:00:55+00:00",
+  "updated_at": "2026-08-26T07:02:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Apple introduces M6 and M5 Ultra",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
-      "hot": "1029"
+      "title": "More than half of adults in U.S. say they lack basic statistical understanding",
+      "url": "https://www.psu.edu/news/research/story/more-half-adults-us-say-they-lack-basic-statistical-understanding",
+      "hot": "41"
     },
     {
       "rank": 2,
-      "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
-      "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
-      "hot": "324"
+      "title": "Apple introduces M6 and M5 Ultra",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+      "hot": "1079"
     },
     {
       "rank": 3,
-      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
-      "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
-      "hot": "386"
+      "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
+      "hot": "355"
     },
     {
       "rank": 4,
-      "title": "New Mac Studio with M5 Max and M5 Ultra",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
-      "hot": "726"
+      "title": "Stalking the Wily Hacker: 40 years later – Cliff Stoll [video]",
+      "url": "https://www.youtube.com/watch?v=656058JxTM0",
+      "hot": "35"
     },
     {
       "rank": 5,
-      "title": "Queryable Executables",
-      "url": "https://fzakaria.com/2026/08/24/actually-queryable-executables",
-      "hot": "58"
+      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+      "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "hot": "431"
     },
     {
       "rank": 6,
-      "title": "Black hole singularity is a surface not a point",
-      "url": "https://arxiv.org/abs/2608.21590",
-      "hot": "213"
+      "title": "Queryable Executables",
+      "url": "https://fzakaria.com/2026/08/24/actually-queryable-executables",
+      "hot": "115"
     },
     {
       "rank": 7,
-      "title": "Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others",
-      "url": "https://github.com/runetes/maiao",
-      "hot": "48"
+      "title": "New Mac Studio with M5 Max and M5 Ultra",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+      "hot": "750"
     },
     {
       "rank": 8,
-      "title": "New Mac mini, featuring M6 and M5 Pro",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/",
-      "hot": "457"
+      "title": "Secret Cold War IBM Supercomputer Was Built for One Job",
+      "url": "https://spectrum.ieee.org/cold-war-codebreaker-nsa-ibm",
+      "hot": "7"
     },
     {
       "rank": 9,
-      "title": "When str.lower() is a security vulnerability in Python – Seth Larson",
-      "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
-      "hot": "89"
+      "title": "Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others",
+      "url": "https://github.com/runetes/maiao",
+      "hot": "64"
     },
     {
       "rank": 10,
-      "title": "C2PA Cameras Do Not Survive Contact with Reality",
-      "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
-      "hot": "107"
+      "title": "Black hole singularity is a surface not a point",
+      "url": "https://arxiv.org/abs/2608.21590",
+      "hot": "225"
     }
   ]
 }
