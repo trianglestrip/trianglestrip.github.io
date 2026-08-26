@@ -1,32 +1,32 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-25T23:31:20+00:00",
+  "updated_at": "2026-08-26T05:36:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
-      "hot": "93"
+      "hot": "94"
     },
     {
       "rank": 2,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "172"
+      "hot": "176"
     },
     {
       "rank": 3,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "752"
+      "hot": "753"
     },
     {
       "rank": 4,
       "title": "Prime Agent: A Self-Improving RLM Harness",
       "url": "https://huggingface.co/papers/2608.23552",
-      "hot": "32"
+      "hot": "34"
     },
     {
       "rank": 5,
