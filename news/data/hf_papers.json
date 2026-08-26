@@ -1,38 +1,38 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-26T05:36:55+00:00",
+  "updated_at": "2026-08-26T11:48:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
-      "hot": "94"
+      "hot": "97"
     },
     {
       "rank": 2,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "176"
+      "hot": "179"
     },
     {
       "rank": 3,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "753"
+      "hot": "754"
     },
     {
       "rank": 4,
-      "title": "Prime Agent: A Self-Improving RLM Harness",
-      "url": "https://huggingface.co/papers/2608.23552",
-      "hot": "34"
-    },
-    {
-      "rank": 5,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "125"
+    },
+    {
+      "rank": 5,
+      "title": "Prime Agent: A Self-Improving RLM Harness",
+      "url": "https://huggingface.co/papers/2608.23552",
+      "hot": "37"
     },
     {
       "rank": 6,
@@ -54,9 +54,9 @@
     },
     {
       "rank": 9,
-      "title": "LongCat-Video Technical Report",
-      "url": "https://huggingface.co/papers/2510.22200",
-      "hot": "40"
+      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
+      "url": "https://huggingface.co/papers/2508.16279",
+      "hot": "68"
     },
     {
       "rank": 10,
