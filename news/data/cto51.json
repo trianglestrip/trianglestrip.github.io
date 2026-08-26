@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-26T07:02:23+00:00",
+  "updated_at": "2026-08-26T09:08:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【鸿蒙实战】第 11 篇：让应用\"悬浮\"起来——闪控球（floatingBall）从接入到实战全链路（HarmonyOS 7.x）",
-      "url": "https://ost.51cto.com/posts/55605",
-      "hot": "摘要:做购物比价功能时，产品要求加一个全局悬浮球，用户在任何页面都能一键看比价结果。我原以为就是画个按钮浮在屏幕上，结果一查文档发..."
+      "title": "HarmonyOS7 WaterFlow 加了 sections 分组后列表划不动？itemsCount 对齐才是关键",
+      "url": "https://ost.51cto.com/posts/55608",
+      "hot": "前言这篇文章要解决的是社区里的一个真实问题：用WaterFlow的sections做分组混合布局&mdash;&mdash;顶部满宽banner轮播+下方双列商品瀑布流，滚动连成..."
     },
     {
       "rank": 2,
-      "title": "【Jack实战】如何给《时光旅记》接入API26的图像超分让老照片变得清晰",
-      "url": "https://ost.51cto.com/posts/55604",
-      "hot": "大家好，我是鸿蒙Jack。本期以我的《时光旅记》APP为例，聊一聊我怎样在HarmonyOS6.0、API26上接入CoreVisionKit的图像超分能力，并把它真..."
+      "title": "HarmonyOS 7 空间交互开发手记01｜用 ArkUI 沉浸光感重构卡片层级与空间反馈",
+      "url": "https://ost.51cto.com/posts/55607",
+      "hot": "我这次重新做首页卡片，最先不满意的其实不是颜色，也不是排版，而是&ldquo;碰上去没感觉&rdquo;。信息都在，模块也不少，可卡片一多，页面很快就会陷..."
     },
     {
       "rank": 3,
+      "title": "突发，OpenAI首颗「辣椒」芯片压倒英伟达！GPT-6干崩CUDA",
+      "url": "https://www.51cto.com/article/854034.html",
+      "hot": "今天的Jalapeño只是第一代，后面还有Gen2、Gen3，以及10GW的算力版图。哪怕核心高管离场，也挡不住这条路线继续向前。"
+    },
+    {
+      "rank": 4,
       "title": "细数LLM Benchmark模型是如何作弊的",
       "url": "https://www.51cto.com/article/853755.html",
       "hot": "反作弊 prompt 便宜，有用，但不够。不用改评测环境，解题率不掉，有时作弊情况还会上升，当防作弊的第一层没坏处。但最高档下仍有 8 个模型靠作弊过关，4 个越禁越搜，路子还会从搜网页换到翻容器。prompt 盖不住的地方，得靠断网和沙箱。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "八组原生 API：这些 npm 依赖还要装吗？",
       "url": "https://www.51cto.com/article/853751.html",
       "hot": "咱们前端谁的项目里没几个\"祖传依赖\"。我做了个实验，特别笨的那种。新建一个空文件夹，npm init -y，然后只装五个包：lodash、qs、uuid、dayjs、element-resize-detector。都是这些年前端项目里最常见的那几个。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "具身智能的技术挑战和研究方向",
       "url": "https://www.51cto.com/article/854015.html",
       "hot": "当下AI早已不局限于屏幕里的文字对话，拥有实体、能看能走能互动的具身智能，正成为人工智能赛道的核心风口。从人形机器人、四足机器狗到自动驾驶汽车，都是具身智能的落地载体。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "深入理解 Java Unsafe：从底层魔法到被淘汰的命运",
       "url": "https://www.51cto.com/article/854007.html",
       "hot": "Unsafe 是 JDK 内部提供的一个魔法类，可以绕过 Java 的所有安全机制，直接操作底层内存、线程、CAS。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "面试官：讲一下生产环境完整的Agent缓存体系，哪些数据可以做缓存，哪些不能做缓存？",
       "url": "https://www.51cto.com/article/853847.html",
       "hot": "生产环境里我不会把 Agent 缓存理解成一层 Redis，而会先区分结果缓存、计算缓存和业务状态。结果缓存会改变本次执行路径，因此要检查是否无副作用、Key 是否覆盖全部依赖、允许旧多久、租户与 ACL 能否隔离，以及缓存能否回源重建。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Agent 跨会话记忆的生产落地：LangGraph MemoryStore 如何让 Agent 记住你是谁",
       "url": "https://www.51cto.com/article/853758.html",
       "hot": "不是所有 Agent 都需要跨会话记忆。如果你的 Agent 场景是\"每次对话独立、用户不关心上下文延续\"，比如一次性的文档问答、单次代码生成，那会话内记忆就够用了。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "硬核可视化：用 CesiumJS 打造专业级时变路径图形系统",
       "url": "https://www.51cto.com/article/854014.html",
       "hot": "本文介绍的时变路径图形系统,完整展示了CesiumJS + CZML在时空数据可视化领域的强大能力。"
-    },
-    {
-      "rank": 10,
-      "title": "硅基生命的自我雕琢：现代智能体系统中递归进化的全景解析",
-      "url": "https://www.51cto.com/article/853514.html",
-      "hot": "现代智能体系统的自我改进，正以双螺旋的形态交织向上。一条链是由\"内在示范\"、\"评估反馈\"与\"外在探索\"构成的基础模型参数雕琢之路，它缓慢、沉重却能在物理底层夯实认知的能力边界；另一条链是由\"提示词演化\"、\"记忆重构\"等构成的敏捷脚手架迭代，它灵动、多变，赋予了机器在复杂现实中即兴发挥和快速试错的战术智慧。"
     }
   ]
 }
