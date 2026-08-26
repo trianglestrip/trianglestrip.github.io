@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-26T00:03:37+00:00",
+  "updated_at": "2026-08-26T02:55:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "gtk-zlang v0.7.14.0发布，基于 zlang 编程语言的 GTK 封装包装库",
+      "url": "https://www.oschina.net/news/502127",
+      "hot": "Wed, 26 Aug 2026 09:14:00 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "zlang v0.12.2.0 发布，支持中文编程、支持Web开发/桌面应用开发的国产全自研编程语言",
+      "url": "https://www.oschina.net/news/502126",
+      "hot": "Wed, 26 Aug 2026 09:09:20 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "告别背命令：Pragmatic AI Shell 把自然语言带进日常终端操作",
+      "url": "https://www.oschina.net/news/502123",
+      "hot": "Tue, 25 Aug 2026 21:53:04 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "让经典回归：极点五笔在 openKylin 3.0的新生",
+      "url": "https://www.oschina.net/news/502122",
+      "hot": "Tue, 25 Aug 2026 21:30:14 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "MemOS Skill 上线｜一句话即可接入 MemOS Cloud",
+      "url": "https://www.oschina.net/news/502121",
+      "hot": "Tue, 25 Aug 2026 21:16:55 +0800"
+    },
+    {
+      "rank": 6,
       "title": "Linus Torvalds 的“地狱级调试”：AI 帮了大忙，但也多次准备放弃",
       "url": "https://www.oschina.net/news/502120/linus-torvalds-debug-ai",
       "hot": "Tue, 25 Aug 2026 19:07:17 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Go Agent 框架 covonaut v1.0.8 发布：新增行内补全与多后端可观测性支持",
       "url": "https://www.oschina.net/news/502119",
       "hot": "Tue, 25 Aug 2026 18:47:36 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "从GPU池化到节省token，上海开源大赛「智算云赛道」情报公开",
       "url": "https://www.oschina.net/news/502117",
       "hot": "Tue, 25 Aug 2026 16:33:38 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "deepin 电脑管家正式上线，一键守护你的系统安全！",
       "url": "https://www.oschina.net/news/502113",
       "hot": "Tue, 25 Aug 2026 13:46:15 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "qData数据中台专业版V2.6.0发布：血缘全链路再升级，在线接口测试与帮助中心正式上线",
       "url": "https://www.oschina.net/news/502112",
       "hot": "Tue, 25 Aug 2026 13:36:32 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "qData 开源版 v1.6.1 发布：数据集成和数据开发日志持续优化，任务执行更清晰",
-      "url": "https://www.oschina.net/news/502111",
-      "hot": "Tue, 25 Aug 2026 11:56:08 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "qKnow开源版v2.4.1发布：非结构化抽取逻辑优化，打造更丝滑的知识治理体验",
-      "url": "https://www.oschina.net/news/502110",
-      "hot": "Tue, 25 Aug 2026 11:52:41 +0800"
-    },
-    {
-      "rank": 8,
-      "title": ":fire::fire: API 智能管理平台 6.0 发布",
-      "url": "https://www.oschina.net/news/502109",
-      "hot": "Tue, 25 Aug 2026 11:47:57 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "天工机器人捂脸跑夺冠，团队：没找人教，它自己决定的",
-      "url": "https://www.oschina.net/news/502105",
-      "hot": "Tue, 25 Aug 2026 10:29:25 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "【AI 报表】JimuReport v2.5.1 版本发布，免费开源的 AI 报表工具",
-      "url": "https://www.oschina.net/news/502104",
-      "hot": "Tue, 25 Aug 2026 09:48:16 +0800"
     }
   ]
 }

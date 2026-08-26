@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-26T00:03:29+00:00",
+  "updated_at": "2026-08-26T02:55:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "用蓝耘元生代做 GitHub 热榜解读：Dify Chatflow 接入和真实项目分析",
       "url": "https://blog.csdn.net/Mrxiao_bo/article/details/164029855",
-      "hot": "45231"
+      "hot": "44841"
     },
     {
       "rank": 2,
       "title": "【AI智能体】Codex 插件从使用到项目开发实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/163613455",
-      "hot": "19198"
+      "hot": "21964"
     },
     {
       "rank": 3,
-      "title": "ValidX时间注解完全指南：10种时间验证注解详解",
-      "url": "https://blog.csdn.net/vipxieliang/article/details/164056727",
-      "hot": "17765"
+      "title": "AI 训练数据湖：为什么 RustFS 是 S3 兼容存储的新选择",
+      "url": "https://blog.csdn.net/rustfs_contrib/article/details/163943909",
+      "hot": "16509"
     },
     {
       "rank": 4,
-      "title": "AI 训练数据湖：为什么 RustFS 是 S3 兼容存储的新选择",
-      "url": "https://blog.csdn.net/rustfs_contrib/article/details/163943909",
-      "hot": "16773"
+      "title": "ValidX时间注解完全指南：10种时间验证注解详解",
+      "url": "https://blog.csdn.net/vipxieliang/article/details/164056727",
+      "hot": "14022"
     },
     {
       "rank": 5,
       "title": "一个网页管理多种远程连接：Docker 部署 Next Terminal 与资产审计",
       "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/164051664",
-      "hot": "10834"
+      "hot": "12242"
     },
     {
       "rank": 6,
-      "title": "【AI大模型接入SDK】C++日志体系与spdlog封装的理论部分",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/163889743",
-      "hot": "10451"
+      "title": "达梦VS金仓：数据库替换真正拉开差距的，是迁移工具的工程效率",
+      "url": "https://blog.csdn.net/lrq13965748542/article/details/164062548",
+      "hot": "11499"
     },
     {
       "rank": 7,
       "title": "NAS 运维到 Playbook：Ansible + cpolar 远程自动化实战",
       "url": "https://blog.csdn.net/user340/article/details/164025192",
-      "hot": "10389"
+      "hot": "9489"
     },
     {
       "rank": 8,
-      "title": "AI Agent 最大的安全风险：拿着权限做错事",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/163614095",
-      "hot": "10343"
+      "title": "临时要处理PDF,电脑又不在身边?自建Stirling-PDF在线工具箱",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/164028234",
+      "hot": "9425"
     },
     {
       "rank": 9,
-      "title": "PyTorch强化学习实战（23）——强化学习在网页导航中的应用",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/159766221",
-      "hot": "10003"
+      "title": "从 Prompt Engineering 到 AI 工作流自动化：用大模型搭建第二收入引擎",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/164056216",
+      "hot": "9003"
     },
     {
       "rank": 10,
-      "title": "Vue3+dhtmlx-gantt 企业甘特图：任务依赖、拖拽改期、工时回写与 SPA 单例",
-      "url": "https://blog.csdn.net/zhouzhongyan/article/details/164034425",
-      "hot": "9494"
+      "title": "【AI大模型接入SDK】C++日志体系与spdlog封装的理论部分",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/163889743",
+      "hot": "8966"
     }
   ]
 }

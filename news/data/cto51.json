@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-26T00:03:33+00:00",
+  "updated_at": "2026-08-26T02:55:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "「重置之神」Tibo：Codex真的有一个「重置」按钮，实体的",
-      "url": "https://www.51cto.com/article/853932.html",
-      "hot": "Tibo，真名叫 Thibault Sottiaux，网友还给他取了很多外号，包括但不限于「古希腊掌管重置的神」「掌管Code x 额度重置的赛博义父」「重置按钮先生」……"
+      "title": "【HarmonyOS 7 悬浮页签深度实战】05 MiniBar 的展开、收起与持续状态管理",
+      "url": "https://ost.51cto.com/posts/55597",
+      "hot": "前言下载一份离线资料时，用户通常不会持续停留在任务页。他可能返回首页继续浏览，也可能切换到&ldquo;我的&rdquo;修改设置。任务还在运行，进度和暂..."
     },
     {
       "rank": 2,
-      "title": "六个Claude Code神作，Anthropic亲选",
-      "url": "https://www.51cto.com/article/853931.html",
-      "hot": "Claude 官方晒出了不少很酷的 Claude Code 项目。这些「神作」来自普通用户，覆盖实用工具、可视化创意和趣味应用。"
+      "title": "八组原生 API：这些 npm 依赖还要装吗？",
+      "url": "https://www.51cto.com/article/853751.html",
+      "hot": "咱们前端谁的项目里没几个\"祖传依赖\"。我做了个实验，特别笨的那种。新建一个空文件夹，npm init -y，然后只装五个包：lodash、qs、uuid、dayjs、element-resize-detector。都是这些年前端项目里最常见的那几个。"
     },
     {
       "rank": 3,
-      "title": "AI Coding 多需求并行怎么不乱？Worktree + Submodule 的多仓 Git 实践",
-      "url": "https://www.51cto.com/article/853930.html",
-      "hot": "我花了点时间，结合大厂研发团队常见的多仓协作方式，整理了这套 AI Coding 实践：如何让多个 Agent 并行处理不同需求，如何让一个任务安全地修改多个仓库，以及最后如何完成提交、验证和交付。"
+      "title": "文件目录核心操作完全指南（含工具类封装与批量上传）",
+      "url": "https://ost.51cto.com/posts/55591",
+      "hot": "文件目录核心操作完全指南（含工具类封装与批量上传）前言：为什么需要掌握文件目录操作？在HarmonyOS应用开发中，几乎每个应用都离不开文..."
     },
     {
       "rank": 4,
-      "title": "全球首个！十万小时人类数据全开源，Hugging Face罕见站台",
-      "url": "https://www.51cto.com/article/853929.html",
-      "hot": "数据集叫EgoSuite-Open100K，与Hugging Face联合发布，首批已上线Hugging Face Hub和AtomGit。学术研究能用，商业训练也能用。"
+      "title": "具身智能的技术挑战和研究方向",
+      "url": "https://www.51cto.com/article/854015.html",
+      "hot": "当下AI早已不局限于屏幕里的文字对话，拥有实体、能看能走能互动的具身智能，正成为人工智能赛道的核心风口。从人形机器人、四足机器狗到自动驾驶汽车，都是具身智能的落地载体。"
     },
     {
       "rank": 5,
-      "title": "Agent 死循环，max_turns 只解决了三分之一：剩下两道防护怎么补",
-      "url": "https://www.51cto.com/article/853927.html",
-      "hot": "Agent 依旧可能在 10 轮里反复搜索同一个问题、连续重试一个持续返回 HTTP 500 的接口，最后带着一句“完成了”退出。请求停了，钱花了，任务没完成。"
+      "title": "深入理解 Java Unsafe：从底层魔法到被淘汰的命运",
+      "url": "https://www.51cto.com/article/854007.html",
+      "hot": "Unsafe 是 JDK 内部提供的一个魔法类，可以绕过 Java 的所有安全机制，直接操作底层内存、线程、CAS。"
     },
     {
       "rank": 6,
-      "title": "花三个月做十个没人用的App：AI提效之后，真正的问题来了",
-      "url": "https://www.51cto.com/article/853925.html",
-      "hot": "模型会换，产品入口会改，今天热门的 Agent 框架明年未必还在。我更想写模型外面那层相对稳定的工程系统。"
+      "title": "面试官：讲一下生产环境完整的Agent缓存体系，哪些数据可以做缓存，哪些不能做缓存？",
+      "url": "https://www.51cto.com/article/853847.html",
+      "hot": "生产环境里我不会把 Agent 缓存理解成一层 Redis，而会先区分结果缓存、计算缓存和业务状态。结果缓存会改变本次执行路径，因此要检查是否无副作用、Key 是否覆盖全部依赖、允许旧多久、租户与 ACL 能否隔离，以及缓存能否回源重建。"
     },
     {
       "rank": 7,
-      "title": "Claude Code 都这么强了，我们还要自己造 Agent 吗？",
-      "url": "https://www.51cto.com/article/853923.html",
-      "hot": "这篇文章不只讨论“为什么不用造”。我把现在的做法收敛成三样可以直接拿走的东西：一套默认架构、一张七问清单，以及一套决定是否升级到自定义 Loop 的验收方法。"
+      "title": "硬核可视化：用 CesiumJS 打造专业级时变路径图形系统",
+      "url": "https://www.51cto.com/article/854014.html",
+      "hot": "本文介绍的时变路径图形系统,完整展示了CesiumJS + CZML在时空数据可视化领域的强大能力。"
     },
     {
       "rank": 8,
-      "title": "AI开始替人类调用AI！token用量已是人类5.2倍",
-      "url": "https://www.51cto.com/article/853920.html",
-      "hot": "OpenRouter是全球最大的模型网关之一，一头接着约70家模型供应商，一头接着开发者，一周要处理28万亿token。按它的联合创始人兼COO Chris Clark估算，这大约是全球推理量的1%，其中一半来自美国。这1%的token，又是怎么分出哪些是人、哪些是Agent的？"
+      "title": "硅基生命的自我雕琢：现代智能体系统中递归进化的全景解析",
+      "url": "https://www.51cto.com/article/853514.html",
+      "hot": "现代智能体系统的自我改进，正以双螺旋的形态交织向上。一条链是由\"内在示范\"、\"评估反馈\"与\"外在探索\"构成的基础模型参数雕琢之路，它缓慢、沉重却能在物理底层夯实认知的能力边界；另一条链是由\"提示词演化\"、\"记忆重构\"等构成的敏捷脚手架迭代，它灵动、多变，赋予了机器在复杂现实中即兴发挥和快速试错的战术智慧。"
     },
     {
       "rank": 9,
-      "title": "悬浮页签实战：从官方 API 到自定义实现，给电商首页换上毛玻璃悬浮底栏",
-      "url": "https://ost.51cto.com/posts/55572",
-      "hot": "打开手机里任意一个系统级应用，留意它的底部导航：它不再是一根通栏的色块死死占着屏幕下方，而是变成了一枚圆角胶囊&mdash;&mdash;窄窄一条、离屏幕..."
+      "title": "React 开发：告别 Props 层层穿透！useContext+useReducer 搞定 React 全局状态",
+      "url": "https://www.51cto.com/article/854003.html",
+      "hot": "本文将从核心原理、实战场景、代码封装全方位带你吃透 useContext+useReducer 这组高频组合。"
     },
     {
       "rank": 10,
-      "title": "智体新境｜技术进阶不停步！这些开发者资源值得收藏",
-      "url": "https://www.51cto.com/article/853899.html",
-      "hot": "2026 Google 开发者大会圆满落幕，开发者的技术进阶与出海探索从未停止。不止有大咖探会带来的深度对谈，Google 谷歌更为你备好了专属成长资源包，"
+      "title": "一文读懂人形机器人软硬件技术",
+      "url": "https://www.51cto.com/article/854013.html",
+      "hot": "具身智能(Embodied Intelligence)，顾名思义，是要赋予AI大模型一副身体，以实现AI与物理现实的互相影响、自主交互，进而对人类的生产和生活产生积极影响。"
     }
   ]
 }
