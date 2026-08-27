@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-27T11:09:02+00:00",
+  "updated_at": "2026-08-27T21:02:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Nvidia agrees to acquire Hugging Face for $13B",
-      "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
-      "hot": "1214"
+      "title": "Saving 100 terabytes of memory by optimizing 1.1.1.1's DNS cache",
+      "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+      "hot": "305"
     },
     {
       "rank": 2,
-      "title": "Mechanical Turk shutting down September 30",
-      "url": "https://www.mturk.com/",
-      "hot": "388"
+      "title": "Small Models Have Arrived",
+      "url": "https://calv.info/small-models-have-arrived",
+      "hot": "286"
     },
     {
       "rank": 3,
-      "title": "GLM-5.3-Flash",
-      "url": "https://z.ai/blog/glm-5.3-flash",
-      "hot": "1043"
+      "title": "507 Mechanical Movements",
+      "url": "https://507movements.com/",
+      "hot": "388"
     },
     {
       "rank": 4,
-      "title": "U.S. State Department pauses immigrant visa applications",
-      "url": "https://www.wsj.com/politics/policy/u-s-state-department-pauses-immigrant-visa-applications-25b31b23",
-      "hot": "551"
+      "title": "Nvidia Starts Pac as AI Chip Maker Builds DC Influence Force",
+      "url": "https://news.bgov.com/bloomberg-government-news/nvidia-starts-a-pac-as-ai-chip-maker-buids-influence-force-in-dc",
+      "hot": "68"
     },
     {
       "rank": 5,
-      "title": "Tailcat – Like netcat, but over Tailscale’s data plane",
-      "url": "https://github.com/tailscale/tailcat",
-      "hot": "587"
+      "title": "We found a division by zero bug in FFmpeg with a vibecoded fuzzer",
+      "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
+      "hot": "94"
     },
     {
       "rank": 6,
-      "title": "Asahi Linux Progress Report: Linux 7.2",
-      "url": "https://asahilinux.org/2026/08/progress-report-7-2/",
-      "hot": "298"
+      "title": "Gemini Omni 1.1 Flash",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+      "hot": "138"
     },
     {
       "rank": 7,
-      "title": "Worst-case glacial lake flood scenarios in a transboundary Himalayan basin 2022",
-      "url": "https://nhess.copernicus.org/articles/22/3765/2022/nhess-22-3765-2022.html",
-      "hot": "195"
+      "title": "Microduck",
+      "url": "https://pollen-robotics.com/microduck/",
+      "hot": "420"
     },
     {
       "rank": 8,
-      "title": "An ongoing 3D-printer AGPL violation",
-      "url": "https://lwn.net/SubscriberLink/1089390/46116614cc74b814/",
-      "hot": "416"
+      "title": "Decompiling a Nintendo 64 game in 84 days",
+      "url": "https://blog.chrislewis.au/decompiling-a-nintendo-64-game-in-84-days/",
+      "hot": "129"
     },
     {
       "rank": 9,
-      "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
-      "url": "https://github.com/SenteLabsAI/OpenExecutive",
-      "hot": "653"
+      "title": "M5Stack Launches PaperMono",
+      "url": "https://shop.m5stack.com/blogs/news/m5stack-launches-papermono-a-compact-e-ink-development-terminal-for-connected-projects",
+      "hot": "57"
     },
     {
       "rank": 10,
-      "title": "Stripe acquires Clerky",
-      "url": "https://www.clerky.com/blog/clerky-is-joining-stripe",
-      "hot": "185"
+      "title": "Afterglow: Run classic After Dark screen savers on modern macOS",
+      "url": "https://morphing.cloud/afterglow/",
+      "hot": "48"
     }
   ]
 }
