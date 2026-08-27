@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-27T01:03:50+00:00",
+  "updated_at": "2026-08-27T11:09:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS7 WaterFlow 加了 sections 分组后列表划不动？itemsCount 对齐才是关键",
-      "url": "https://ost.51cto.com/posts/55608",
-      "hot": "前言这篇文章要解决的是社区里的一个真实问题：用WaterFlow的sections做分组混合布局&mdash;&mdash;顶部满宽banner轮播+下方双列商品瀑布流，滚动连成..."
+      "title": "HarmonyOS悬浮页签开发实战",
+      "url": "https://ost.51cto.com/posts/55631",
+      "hot": "大家好，今天给大家介绍一下HarmonyOS中的悬浮页签。悬浮页签可以让底部页签栏悬浮在页面内容上方，相比传统的底部页签，它不会单独占用一..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7 空间交互开发手记01｜用 ArkUI 沉浸光感重构卡片层级与空间反馈",
-      "url": "https://ost.51cto.com/posts/55607",
-      "hot": "我这次重新做首页卡片，最先不满意的其实不是颜色，也不是排版，而是&ldquo;碰上去没感觉&rdquo;。信息都在，模块也不少，可卡片一多，页面很快就会陷..."
+      "title": "Spring AOP踩坑实录：六个失效场景+动态代理源码解析，再也不怕切面不生效",
+      "url": "https://www.51cto.com/article/854043.html",
+      "hot": "AOP失效的场景远比想象中多。同类内部调用不走代理、final方法无法被CGLIB重写、@PostConstruct里调代理方法还没创建代理对象……每种失效背后都是动态代理机制的某个限制。这篇文章用6个真实失效场景，从根因到修复方案，把Spring AOP的代理机制彻底讲透。"
     },
     {
       "rank": 3,
-      "title": "突发，OpenAI首颗「辣椒」芯片压倒英伟达！GPT-6干崩CUDA",
-      "url": "https://www.51cto.com/article/854034.html",
-      "hot": "今天的Jalapeño只是第一代，后面还有Gen2、Gen3，以及10GW的算力版图。哪怕核心高管离场，也挡不住这条路线继续向前。"
+      "title": "【HarmonyOS 7 悬浮页签深度实战】06 智感握姿下的左右手操作适配",
+      "url": "https://ost.51cto.com/posts/55629",
+      "hot": "前言底部导航的位置已经足够靠近拇指，可当手机屏幕继续变大，或者折叠屏进入展开状态以后，单手操作依然会遇到一个很现实的问题：拇指能够..."
     },
     {
       "rank": 4,
-      "title": "细数LLM Benchmark模型是如何作弊的",
-      "url": "https://www.51cto.com/article/853755.html",
-      "hot": "反作弊 prompt 便宜，有用，但不够。不用改评测环境，解题率不掉，有时作弊情况还会上升，当防作弊的第一层没坏处。但最高档下仍有 8 个模型靠作弊过关，4 个越禁越搜，路子还会从搜网页换到翻容器。prompt 盖不住的地方，得靠断网和沙箱。"
+      "title": "一个Token是怎么“造”出来的？黄仁勋的“五层蛋糕”理论给出答案",
+      "url": "https://www.51cto.com/article/853983.html",
+      "hot": "你在聊天框里敲下一句话，等上几十毫秒，屏幕上便出现一段看似流畅的回答。对绝大多数用户来说，这是一个十分轻量化的过程。可到了付款页面，许多用户会有一种遭到“背刺”的感觉——输入多少百万Token、输出多少百万Token、上下文多长、缓存是否命中。"
     },
     {
       "rank": 5,
-      "title": "八组原生 API：这些 npm 依赖还要装吗？",
-      "url": "https://www.51cto.com/article/853751.html",
-      "hot": "咱们前端谁的项目里没几个\"祖传依赖\"。我做了个实验，特别笨的那种。新建一个空文件夹，npm init -y，然后只装五个包：lodash、qs、uuid、dayjs、element-resize-detector。都是这些年前端项目里最常见的那几个。"
+      "title": "它只是想做完这道题，却黑进了Hugging Face：Agent时代最危险的，不是\"觉醒\"",
+      "url": "https://www.51cto.com/article/854044.html",
+      "hot": "近期发生在OpenAI内部安全评测环境、并最终波及Hugging Face生产基础设施的一起事件,将这个转变完整地暴露在我们面前。这不是一个关于\"AI突然产生恶意\"的科幻故事,也不是模型失控的末日预警。恰恰相反——整个过程中,AI始终在认真完成被赋予的任务。"
     },
     {
       "rank": 6,
-      "title": "具身智能的技术挑战和研究方向",
-      "url": "https://www.51cto.com/article/854015.html",
-      "hot": "当下AI早已不局限于屏幕里的文字对话，拥有实体、能看能走能互动的具身智能，正成为人工智能赛道的核心风口。从人形机器人、四足机器狗到自动驾驶汽车，都是具身智能的落地载体。"
+      "title": "他亲手造出o1和o3，却突然宣布：人类可以永远退休了！",
+      "url": "https://www.51cto.com/article/854136.html",
+      "hot": "人类研究员的好日子，满打满算也就剩两年了。两年之后，人类搞AI研究，就跟今天人类下国际象棋一样。你当然还能下，但压根没人在乎你下得怎么样。"
     },
     {
       "rank": 7,
-      "title": "深入理解 Java Unsafe：从底层魔法到被淘汰的命运",
-      "url": "https://www.51cto.com/article/854007.html",
-      "hot": "Unsafe 是 JDK 内部提供的一个魔法类，可以绕过 Java 的所有安全机制，直接操作底层内存、线程、CAS。"
+      "title": "Specula在67个开源系统中找到382个深层bug，数月形式化验证缩短到几小时",
+      "url": "https://www.51cto.com/article/854119.html",
+      "hot": "Specula 已经在 67 个开源系统中找出 382 个 bug，并被多个公司和开源社区的开发者使用。"
     },
     {
       "rank": 8,
-      "title": "面试官：讲一下生产环境完整的Agent缓存体系，哪些数据可以做缓存，哪些不能做缓存？",
-      "url": "https://www.51cto.com/article/853847.html",
-      "hot": "生产环境里我不会把 Agent 缓存理解成一层 Redis，而会先区分结果缓存、计算缓存和业务状态。结果缓存会改变本次执行路径，因此要检查是否无副作用、Key 是否覆盖全部依赖、允许旧多久、租户与 ACL 能否隔离，以及缓存能否回源重建。"
+      "title": "港科大（广州）联合腾讯AI平台部开源VibeWorlding，3D世界构建迎来Vibe Coding时刻？",
+      "url": "https://www.51cto.com/article/854118.html",
+      "hot": "香港科技大学（广州）联合腾讯 AI 平台部团队，提出了 VibeWorlding：一个可以像 Agent 写代码一样，通过多轮对话、调用工具、观察渲染反馈来自主构建和编辑交互式 3D 世界的多模态智能体框架。"
     },
     {
       "rank": 9,
-      "title": "Agent 跨会话记忆的生产落地：LangGraph MemoryStore 如何让 Agent 记住你是谁",
-      "url": "https://www.51cto.com/article/853758.html",
-      "hot": "不是所有 Agent 都需要跨会话记忆。如果你的 Agent 场景是\"每次对话独立、用户不关心上下文延续\"，比如一次性的文档问答、单次代码生成，那会话内记忆就够用了。"
+      "title": "启发学习：让大模型认知从外化到内生",
+      "url": "https://www.51cto.com/article/854117.html",
+      "hot": "人类先定流程、写 Skills、建知识库；参数继续变大，工具链继续变厚。Agent、Skills、Function Calling、RAG、Harness 轮番上场，把临时判断固化成可调用的工作流。这套做法有效，也撑起了眼下的繁荣。"
     },
     {
       "rank": 10,
-      "title": "硬核可视化：用 CesiumJS 打造专业级时变路径图形系统",
-      "url": "https://www.51cto.com/article/854014.html",
-      "hot": "本文介绍的时变路径图形系统,完整展示了CesiumJS + CZML在时空数据可视化领域的强大能力。"
+      "title": "AI能否独立开展科研？ASI-Bench为科学自主性建立评测标尺",
+      "url": "https://www.51cto.com/article/854116.html",
+      "hot": "AI 过去几年的强大，主要建立在一件事上：学习人类已经知道的东西，然后更快更准地调用。模型可以在越来越多的考试和 benchmark 上拿高分，但这些高分大多说明同一件事 —— 它理解、调用和重组已有知识的能力很强。"
     }
   ]
 }

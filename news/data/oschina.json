@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-27T01:03:54+00:00",
+  "updated_at": "2026-08-27T11:09:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "“05 后”开发者两周建起 20K Star 的开源项目社区",
-      "url": "https://www.oschina.net/news/502135",
-      "hot": "Wed, 26 Aug 2026 18:04:52 +0800"
+      "title": "Agent 协作工作空间 Lody 开源：共享、隔离与持久化",
+      "url": "https://www.oschina.net/news/502156/lody-is-now-open-source",
+      "hot": "Thu, 27 Aug 2026 18:05:32 +0800"
     },
     {
       "rank": 2,
-      "title": "DeepSeek 今年前七个月营收约 4.75 亿元",
-      "url": "https://www.oschina.net/news/502134",
-      "hot": "Wed, 26 Aug 2026 17:54:12 +0800"
+      "title": "kkRepo 1.0.0 正式发布，新增 R/CRAN、Go Hosted 和多套 UI 主题",
+      "url": "https://www.oschina.net/news/502155",
+      "hot": "Thu, 27 Aug 2026 16:00:10 +0800"
     },
     {
       "rank": 3,
-      "title": "PHASE-Tree｜为长线 AI 角色构建可演化的人格骨架",
-      "url": "https://www.oschina.net/news/502133",
-      "hot": "Wed, 26 Aug 2026 17:42:43 +0800"
+      "title": "SamWaf v1.3.24 开源、轻量级、私有化部署网站防火墙",
+      "url": "https://www.oschina.net/news/502154",
+      "hot": "Thu, 27 Aug 2026 15:46:09 +0800"
     },
     {
       "rank": 4,
-      "title": "PHASE-Tree｜CPC 不只要会聊、会打，还要会成长：AI 队友的状态演化难题",
-      "url": "https://www.oschina.net/news/502132",
-      "hot": "Wed, 26 Aug 2026 17:24:45 +0800"
+      "title": "MooTool Next 1.1.3 发布！全新重写，带来更现代的界面与多窗口体验",
+      "url": "https://www.oschina.net/news/502152",
+      "hot": "Thu, 27 Aug 2026 14:51:41 +0800"
     },
     {
       "rank": 5,
-      "title": "从导航工具到AI基础设施，上海开源大赛百度地图命题公布",
-      "url": "https://www.oschina.net/news/502131",
-      "hot": "Wed, 26 Aug 2026 15:32:41 +0800"
+      "title": "Tailscale 开源 Tailcat：像 netcat 一样用，加密 + NAT 穿透，不需要账号",
+      "url": "https://www.oschina.net/news/502151",
+      "hot": "Thu, 27 Aug 2026 14:42:58 +0800"
     },
     {
       "rank": 6,
-      "title": "扎心：Anthropic 最贵的模型，企业几乎不用",
-      "url": "https://www.oschina.net/news/502129",
-      "hot": "Wed, 26 Aug 2026 12:03:22 +0800"
+      "title": "AWS 收购 DuckLabs：数据库界的“MIT 许可保卫战”",
+      "url": "https://www.oschina.net/news/502150/ducklabs-to-join-aws",
+      "hot": "Thu, 27 Aug 2026 14:24:02 +0800"
     },
     {
       "rank": 7,
-      "title": "苦等四年，JPEG XL 终于要进 Mozilla 和 Chrome 浏览器了",
-      "url": "https://www.oschina.net/news/502128",
-      "hot": "Wed, 26 Aug 2026 11:56:25 +0800"
+      "title": "英伟达 130 亿美元虎视 Hugging Face，开源 AI 的“中立社区”要沦陷了？",
+      "url": "https://www.oschina.net/news/502149/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars",
+      "hot": "Thu, 27 Aug 2026 14:18:08 +0800"
     },
     {
       "rank": 8,
-      "title": "gtk-zlang v0.7.14.0发布，基于 zlang 编程语言的 GTK 封装包装库",
-      "url": "https://www.oschina.net/news/502127",
-      "hot": "Wed, 26 Aug 2026 09:14:00 +0800"
+      "title": "工单系统 WGCAT v1.3.0 支持 AI 派单",
+      "url": "https://www.oschina.net/news/502147",
+      "hot": "Thu, 27 Aug 2026 13:30:06 +0800"
     },
     {
       "rank": 9,
-      "title": "zlang v0.12.2.0 发布，支持中文编程、支持Web开发/桌面应用开发的国产全自研编程语言",
-      "url": "https://www.oschina.net/news/502126",
-      "hot": "Wed, 26 Aug 2026 09:09:20 +0800"
+      "title": "Qwen3.8-Flash 发布：125B MoE，激活 6B，训练成本仅前代的 1/9",
+      "url": "https://www.oschina.net/news/502145/qwen3-8-flash-next",
+      "hot": "Thu, 27 Aug 2026 11:39:05 +0800"
     },
     {
       "rank": 10,
-      "title": "告别背命令：Pragmatic AI Shell 把自然语言带进日常终端操作",
-      "url": "https://www.oschina.net/news/502123",
-      "hot": "Tue, 25 Aug 2026 21:53:04 +0800"
+      "title": "智谱正式上线并开源 GLM-5.3-Flash：320B 模型打到 Opus 4.8 水平，定价只要 1/40",
+      "url": "https://www.oschina.net/news/502144",
+      "hot": "Thu, 27 Aug 2026 11:06:36 +0800"
     }
   ]
 }

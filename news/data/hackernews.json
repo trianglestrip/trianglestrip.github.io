@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-27T01:03:52+00:00",
+  "updated_at": "2026-08-27T11:09:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Mechanical Turk shutting down September 30",
-      "url": "https://www.mturk.com/",
-      "hot": "70"
+      "title": "Nvidia agrees to acquire Hugging Face for $13B",
+      "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+      "hot": "1214"
     },
     {
       "rank": 2,
-      "title": "Zohran and the Short Link",
-      "url": "https://iamwillwang.com/notes/zohran-and-the-short-link/",
-      "hot": "52"
+      "title": "Mechanical Turk shutting down September 30",
+      "url": "https://www.mturk.com/",
+      "hot": "388"
     },
     {
       "rank": 3,
       "title": "GLM-5.3-Flash",
       "url": "https://z.ai/blog/glm-5.3-flash",
-      "hot": "869"
+      "hot": "1043"
     },
     {
       "rank": 4,
-      "title": "Tailcat – Like netcat, but over Tailscale’s data plane",
-      "url": "https://github.com/tailscale/tailcat",
-      "hot": "463"
+      "title": "U.S. State Department pauses immigrant visa applications",
+      "url": "https://www.wsj.com/politics/policy/u-s-state-department-pauses-immigrant-visa-applications-25b31b23",
+      "hot": "551"
     },
     {
       "rank": 5,
-      "title": "Worst-case glacial lake flood scenarios in a transboundary Himalayan basin 2022",
-      "url": "https://nhess.copernicus.org/articles/22/3765/2022/nhess-22-3765-2022.html",
-      "hot": "50"
+      "title": "Tailcat – Like netcat, but over Tailscale’s data plane",
+      "url": "https://github.com/tailscale/tailcat",
+      "hot": "587"
     },
     {
       "rank": 6,
-      "title": "AWS Acquires DuckLabs",
-      "url": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
-      "hot": "960"
+      "title": "Asahi Linux Progress Report: Linux 7.2",
+      "url": "https://asahilinux.org/2026/08/progress-report-7-2/",
+      "hot": "298"
     },
     {
       "rank": 7,
-      "title": "GitHub Outage Tracker: Is GitHub Cooked?",
-      "url": "https://isgithubcooked.com/",
-      "hot": "172"
+      "title": "Worst-case glacial lake flood scenarios in a transboundary Himalayan basin 2022",
+      "url": "https://nhess.copernicus.org/articles/22/3765/2022/nhess-22-3765-2022.html",
+      "hot": "195"
     },
     {
       "rank": 8,
       "title": "An ongoing 3D-printer AGPL violation",
       "url": "https://lwn.net/SubscriberLink/1089390/46116614cc74b814/",
-      "hot": "301"
+      "hot": "416"
     },
     {
       "rank": 9,
-      "title": "Actinide is first startup to produce high-assay low-enriched uranium (HALEU)",
-      "url": "https://www.actinideinc.com/press/actinide-becomes-first-startup-to-ever-enrich-natural-uranium-to-produce-haleu",
-      "hot": "132"
+      "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
+      "url": "https://github.com/SenteLabsAI/OpenExecutive",
+      "hot": "653"
     },
     {
       "rank": 10,
-      "title": "Qwen3.8-Flash-Next",
-      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
-      "hot": "611"
+      "title": "Stripe acquires Clerky",
+      "url": "https://www.clerky.com/blog/clerky-is-joining-stripe",
+      "hot": "185"
     }
   ]
 }
