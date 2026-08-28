@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-27T21:02:18+00:00",
+  "updated_at": "2026-08-28T05:09:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS悬浮页签开发实战",
-      "url": "https://ost.51cto.com/posts/55631",
-      "hot": "大家好，今天给大家介绍一下HarmonyOS中的悬浮页签。悬浮页签可以让底部页签栏悬浮在页面内容上方，相比传统的底部页签，它不会单独占用一..."
+      "title": "HarmonyOS7 Navigation 底部工具栏变悬浮胶囊？沉浸光感三件套：隐藏 + 浮层 + systemMaterial",
+      "url": "https://ost.51cto.com/posts/55663",
+      "hot": "前言这篇要解决的是社区里的一个真实问题：Navigation组件导航底部的工具栏，怎么从传统的贴底色块变成悬浮胶囊形态，同时加上沉浸光感效果..."
     },
     {
       "rank": 2,
-      "title": "Spring AOP踩坑实录：六个失效场景+动态代理源码解析，再也不怕切面不生效",
-      "url": "https://www.51cto.com/article/854043.html",
-      "hot": "AOP失效的场景远比想象中多。同类内部调用不走代理、final方法无法被CGLIB重写、@PostConstruct里调代理方法还没创建代理对象……每种失效背后都是动态代理机制的某个限制。这篇文章用6个真实失效场景，从根因到修复方案，把Spring AOP的代理机制彻底讲透。"
+      "title": "HarmonyOS 电量卡片开发实战：从零打造桌面级电池监控工具",
+      "url": "https://ost.51cto.com/posts/55661",
+      "hot": "HarmonyOS电量卡片开发实战：从零打造桌面级电池监控工具一、服务卡片的价值与电量卡片的实用性在HarmonyOS的分布式生态中，服务卡片（Serv..."
     },
     {
       "rank": 3,
-      "title": "【HarmonyOS 7 悬浮页签深度实战】06 智感握姿下的左右手操作适配",
-      "url": "https://ost.51cto.com/posts/55629",
-      "hot": "前言底部导航的位置已经足够靠近拇指，可当手机屏幕继续变大，或者折叠屏进入展开状态以后，单手操作依然会遇到一个很现实的问题：拇指能够..."
+      "title": "基于 NeuralProphet 搭建运维时序数据预测体系，规避故障风险",
+      "url": "https://www.51cto.com/article/854278.html",
+      "hot": "NeuralProphet 让运维场景的时序数据精准预测，从复杂的 AI 技术课题，变成了普通运维可快速上手、直接落地的实操方案。"
     },
     {
       "rank": 4,
-      "title": "一个Token是怎么“造”出来的？黄仁勋的“五层蛋糕”理论给出答案",
-      "url": "https://www.51cto.com/article/853983.html",
-      "hot": "你在聊天框里敲下一句话，等上几十毫秒，屏幕上便出现一段看似流畅的回答。对绝大多数用户来说，这是一个十分轻量化的过程。可到了付款页面，许多用户会有一种遭到“背刺”的感觉——输入多少百万Token、输出多少百万Token、上下文多长、缓存是否命中。"
+      "title": "pnpm 12 正式发布：用 Rust 重写，开始接管整个 JS 开发环境",
+      "url": "https://www.51cto.com/article/854272.html",
+      "hot": "如果只看技术实现，这次最大的变化很直接：pnpm 几乎整个用 Rust 重写了。但相比 Rust，我觉得 pnpm 12 更值得关注的是另外两件事：它开始摆脱对 Node.js 的依赖，同时也开始不满足于只做一个包管理器。"
     },
     {
       "rank": 5,
-      "title": "它只是想做完这道题，却黑进了Hugging Face：Agent时代最危险的，不是\"觉醒\"",
-      "url": "https://www.51cto.com/article/854044.html",
-      "hot": "近期发生在OpenAI内部安全评测环境、并最终波及Hugging Face生产基础设施的一起事件,将这个转变完整地暴露在我们面前。这不是一个关于\"AI突然产生恶意\"的科幻故事,也不是模型失控的末日预警。恰恰相反——整个过程中,AI始终在认真完成被赋予的任务。"
+      "title": "英伟达前AI总监颠覆Transformer！五万亿上下文物理AI，推演整个宇宙",
+      "url": "https://www.51cto.com/article/854271.html",
+      "hot": "LLM预测世界的语言描述，视频世界模型预测（动态）图像，而这次直接预测四维的空间与时间的物理状态。"
     },
     {
       "rank": 6,
-      "title": "他亲手造出o1和o3，却突然宣布：人类可以永远退休了！",
-      "url": "https://www.51cto.com/article/854136.html",
-      "hot": "人类研究员的好日子，满打满算也就剩两年了。两年之后，人类搞AI研究，就跟今天人类下国际象棋一样。你当然还能下，但压根没人在乎你下得怎么样。"
+      "title": "AI自己出题自己练！两个月狂涨11%，编码自测反超Opus 4.8",
+      "url": "https://www.51cto.com/article/854270.html",
+      "hot": "模型的上限，除了拼算力，还要拼题库。只是当出题、搭台、解题都交给模型，人类留在这个闭环里的位置是什么？"
     },
     {
       "rank": 7,
-      "title": "Specula在67个开源系统中找到382个深层bug，数月形式化验证缩短到几小时",
-      "url": "https://www.51cto.com/article/854119.html",
-      "hot": "Specula 已经在 67 个开源系统中找出 382 个 bug，并被多个公司和开源社区的开发者使用。"
+      "title": "GitHub 爆了！ 17K+ Star！20 多种文档格式，一条命令全部转 Markdown",
+      "url": "https://www.51cto.com/article/854237.html",
+      "hot": "最近，Firecrawl 开源了一个很有意思的项目：anydoc。 它只做一件事情：把各种文档转换成干净的 GitHub-Flavored Markdown。"
     },
     {
       "rank": 8,
-      "title": "港科大（广州）联合腾讯AI平台部开源VibeWorlding，3D世界构建迎来Vibe Coding时刻？",
-      "url": "https://www.51cto.com/article/854118.html",
-      "hot": "香港科技大学（广州）联合腾讯 AI 平台部团队，提出了 VibeWorlding：一个可以像 Agent 写代码一样，通过多轮对话、调用工具、观察渲染反馈来自主构建和编辑交互式 3D 世界的多模态智能体框架。"
+      "title": "突发：OpenAI首次公开入侵Hugging Face完整报告",
+      "url": "https://www.51cto.com/article/854268.html",
+      "hot": "OpenAI 约 1200 个 Agent 在内部网络安全评估中突破沙箱隔离，自发组建了一个未经授权的消息板，互发超过 7 万条消息，自称「蜂群」。"
     },
     {
       "rank": 9,
-      "title": "启发学习：让大模型认知从外化到内生",
-      "url": "https://www.51cto.com/article/854117.html",
-      "hot": "人类先定流程、写 Skills、建知识库；参数继续变大，工具链继续变厚。Agent、Skills、Function Calling、RAG、Harness 轮番上场，把临时判断固化成可调用的工作流。这套做法有效，也撑起了眼下的繁荣。"
+      "title": "Claude自己长出浏览器！填表拉数，你的AI打工人有工位了",
+      "url": "https://www.51cto.com/article/854267.html",
+      "hot": "OpenAI花了292天想把AI塞进浏览器，最终放弃了。而Anthropic反手则把浏览器塞进了AI。"
     },
     {
       "rank": 10,
-      "title": "AI能否独立开展科研？ASI-Bench为科学自主性建立评测标尺",
-      "url": "https://www.51cto.com/article/854116.html",
-      "hot": "AI 过去几年的强大，主要建立在一件事上：学习人类已经知道的东西，然后更快更准地调用。模型可以在越来越多的考试和 benchmark 上拿高分，但这些高分大多说明同一件事 —— 它理解、调用和重组已有知识的能力很强。"
+      "title": "AI加速一切！数学防线刚失守，物理已在AI射程内",
+      "url": "https://www.51cto.com/article/854266.html",
+      "hot": "当我提出的任何问题可能都被Claude更快地回答时，我们如何教导和培训学生？"
     }
   ]
 }

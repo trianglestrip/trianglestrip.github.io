@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-27T21:02:22+00:00",
+  "updated_at": "2026-08-28T05:09:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "DjangoAdmin 敏捷开发框架 Flask+AntdVue 版本 v2.8.1 发布",
+      "url": "https://www.oschina.net/news/502161",
+      "hot": "Fri, 28 Aug 2026 09:15:29 +0800"
+    },
+    {
+      "rank": 2,
       "title": "Red Hat 卖了，GitHub 卖了，Hugging Face，据报道也要卖给英伟达了",
       "url": "https://www.oschina.net/news/502160/oschina-futurex",
       "hot": "Thu, 27 Aug 2026 21:22:49 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Java Web 服务器 wastnet 路由开发实战",
       "url": "https://www.oschina.net/news/502159",
       "hot": "Thu, 27 Aug 2026 20:20:02 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "无远弗届，驭光而至，通用代码生成器：光船尝鲜版，蛋糕船示例生成演示",
       "url": "https://www.oschina.net/news/502158",
       "hot": "Thu, 27 Aug 2026 20:05:21 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "以后在 Linux 上打包，一句话就行",
       "url": "https://www.oschina.net/news/502157",
       "hot": "Thu, 27 Aug 2026 19:15:33 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Agent 协作工作空间 Lody 开源：共享、隔离与持久化",
       "url": "https://www.oschina.net/news/502156/lody-is-now-open-source",
       "hot": "Thu, 27 Aug 2026 18:05:32 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "kkRepo 1.0.0 正式发布，新增 R/CRAN、Go Hosted 和多套 UI 主题",
       "url": "https://www.oschina.net/news/502155",
       "hot": "Thu, 27 Aug 2026 16:00:10 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "SamWaf v1.3.24 开源、轻量级、私有化部署网站防火墙",
       "url": "https://www.oschina.net/news/502154",
       "hot": "Thu, 27 Aug 2026 15:46:09 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "MooTool Next 1.1.3 发布！全新重写，带来更现代的界面与多窗口体验",
       "url": "https://www.oschina.net/news/502152",
       "hot": "Thu, 27 Aug 2026 14:51:41 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Tailscale 开源 Tailcat：像 netcat 一样用，加密 + NAT 穿透，不需要账号",
       "url": "https://www.oschina.net/news/502151",
       "hot": "Thu, 27 Aug 2026 14:42:58 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "AWS 收购 DuckLabs：数据库界的“MIT 许可保卫战”",
-      "url": "https://www.oschina.net/news/502150/ducklabs-to-join-aws",
-      "hot": "Thu, 27 Aug 2026 14:24:02 +0800"
     }
   ]
 }

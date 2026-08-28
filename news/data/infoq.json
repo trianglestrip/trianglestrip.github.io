@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-08-27T21:02:23+00:00",
+  "updated_at": "2026-08-28T05:09:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "世界人工智能开源大赛（GOAI）初赛评审结果暨晋级名单公告",
-      "url": "https://www.infoq.cn/article/Y410fSRGi67fUrNUuzYb?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 17:56:39 GMT"
+      "title": "从云原生数据库到数据基础设施：架构、弹性与智能化演进 | 腾讯云数据库 DBTalk",
+      "url": "https://www.infoq.cn/video/gaAV7GRNCXWITqLRGu0H?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 28 Aug 2026 12:31:09 GMT"
     },
     {
       "rank": 2,
-      "title": "给 Agent 做“CT”：大规模 Agent 的可观测与质量保障体系",
-      "url": "https://www.infoq.cn/article/QqDSrCEGWitk7kkJg7Kj?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 17:52:32 GMT"
+      "title": "S3 兼容不代表具备 S3 级别的安全性",
+      "url": "https://www.infoq.cn/article/xr3L0bkiFZGzYmtZwscB?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 28 Aug 2026 12:30:00 GMT"
     },
     {
       "rank": 3,
-      "title": "大模型推理加速全链路：内存管理、编译优化、量化与并行策略",
-      "url": "https://www.infoq.cn/article/AN2AuAT58V9fe8KXD2zi?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 17:47:44 GMT"
+      "title": "从数据格式到完整引擎：2026 数据库系统演进趋势与 TDSQL 实践 | 腾讯云数据库 DBTalk",
+      "url": "https://www.infoq.cn/video/7Idl1NaRyb6MPku1W1Vv?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 28 Aug 2026 12:07:33 GMT"
     },
     {
       "rank": 4,
-      "title": "Cloudflare 利用 AI 智能体将 Astro GitHub 问题减少 85%",
-      "url": "https://www.infoq.cn/article/iJu3eUyEhEI373KeYhYN?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 17:00:00 GMT"
+      "title": "你的 Agent 已经上线生产环境，下一步怎么办？ | 技术实践",
+      "url": "https://www.infoq.cn/article/mKFB15kPm6Uw8fNG4Y7e?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 28 Aug 2026 11:53:03 GMT"
     },
     {
       "rank": 5,
-      "title": "Azure DevOps Remote MCP 服务器正式发布，暂不支持 Claude、ChatGPT 及 Cursor",
-      "url": "https://www.infoq.cn/article/SvTBvljtvGctvWPQRqr7?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 15:27:00 GMT"
+      "title": "1周半写64个PR、完成30%项目重构：一家成熟SaaS公司把Agent塞进研发全流程后",
+      "url": "https://www.infoq.cn/article/0yv69MyNwHiwY3IZXPQt?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 28 Aug 2026 11:43:17 GMT"
     },
     {
       "rank": 6,
-      "title": "不做手机缩小版：AI 健康记录迁到手腕，要跨过哪些工程鸿沟？",
-      "url": "https://www.infoq.cn/article/9TmFlNIk6EamqpvJIOkI?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 15:10:25 GMT"
+      "title": "智谱认领“牛来”模型，实测：“牛马”友好",
+      "url": "https://www.infoq.cn/article/sTYSudHtvkbNJvuSbp31?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 28 Aug 2026 11:32:33 GMT"
     },
     {
       "rank": 7,
-      "title": "研发投入增长40%，拼多多的增长逻辑变了",
-      "url": "https://www.infoq.cn/article/ktdCqUp8DUg22Y9lKiOQ?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 14:57:04 GMT"
+      "title": "谷歌落后一个时代？CEO 亲自官宣“语音转文字”模型，网友：你们看不清形势啊",
+      "url": "https://www.infoq.cn/article/MCTm2NvWob0ZHulXe0AQ?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 28 Aug 2026 10:58:42 GMT"
     },
     {
       "rank": 8,
-      "title": "非结构化数据的结构化处理：基于 Snowflake Cortex AI Functions | 技术实践",
-      "url": "https://www.infoq.cn/article/Xw6Nlqq7N2J0CKA0ehx8?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 14:02:54 GMT"
+      "title": "Cloudflare 将工程规范改造为 AI 强制执行的管控系统",
+      "url": "https://www.infoq.cn/article/TEgX02zINMmLVbYPyP0N?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 28 Aug 2026 10:53:07 GMT"
     },
     {
       "rank": 9,
-      "title": "Aspire 13.5 正式发布：终端进入仪表板，TypeScript AppHost 转正",
-      "url": "https://www.infoq.cn/article/cV1s25pv0lLTvYB9diU3?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 13:33:00 GMT"
+      "title": "曝英伟达129 亿美元收购Hugging Face！黄仁勋：我只后悔没有更早、更多投资OpenAI、Anthropic",
+      "url": "https://www.infoq.cn/article/Z9bIWfsMCIA9yiLUSDvJ?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 28 Aug 2026 09:29:22 GMT"
     },
     {
       "rank": 10,
-      "title": "Flux 推出 Mirror 插件：只让可信制品进入 Kubernetes 集群",
-      "url": "https://www.infoq.cn/article/p8qELFuWcdBic11PXG72?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 27 Aug 2026 12:00:00 GMT"
+      "title": "世界人工智能开源大赛（GOAI）初赛评审结果暨晋级名单公告",
+      "url": "https://www.infoq.cn/article/Y410fSRGi67fUrNUuzYb?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 27 Aug 2026 17:56:39 GMT"
     }
   ]
 }
