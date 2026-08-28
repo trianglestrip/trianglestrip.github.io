@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-28T05:09:15+00:00",
+  "updated_at": "2026-08-28T17:25:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS7 Navigation 底部工具栏变悬浮胶囊？沉浸光感三件套：隐藏 + 浮层 + systemMaterial",
-      "url": "https://ost.51cto.com/posts/55663",
-      "hot": "前言这篇要解决的是社区里的一个真实问题：Navigation组件导航底部的工具栏，怎么从传统的贴底色块变成悬浮胶囊形态，同时加上沉浸光感效果..."
+      "title": "HarmonyOS7 @Watch 迁 @Monitor 后级联逻辑读到旧值？异步回调时序要这样改",
+      "url": "https://ost.51cto.com/posts/55668",
+      "hot": "前言这篇要解决的是社区里的一个真实问题：地址表单的省市区三级联动，选择城市后要同步加载区县列表，并立刻基于新区县数量更新一段表单摘..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 电量卡片开发实战：从零打造桌面级电池监控工具",
-      "url": "https://ost.51cto.com/posts/55661",
-      "hot": "HarmonyOS电量卡片开发实战：从零打造桌面级电池监控工具一、服务卡片的价值与电量卡片的实用性在HarmonyOS的分布式生态中，服务卡片（Serv..."
+      "title": "HarmonyOS7 V2 状态管理倒计时不同步？flushUIUpdates 强制同帧刷新才是正解",
+      "url": "https://ost.51cto.com/posts/55667",
+      "hot": "前言这篇要解决的是社区里的一个真实问题：支付倒计时弹窗用V1装饰器（State）时，毫秒级进度环和秒级倒计时数字基本同帧变化，视觉上没问..."
     },
     {
       "rank": 3,
