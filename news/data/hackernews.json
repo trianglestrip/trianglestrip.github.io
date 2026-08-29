@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-29T01:02:29+00:00",
+  "updated_at": "2026-08-29T07:46:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Does the Sumerian King List Align with Paleoclimate Events?",
-      "url": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer/",
-      "hot": "36"
+      "title": "Samsung's Processing-in-Memory (PIM)",
+      "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+      "hot": "21"
     },
     {
       "rank": 2,
-      "title": "GUIs should be fully keyboard-driven",
-      "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
-      "hot": "594"
+      "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
+      "url": "https://github.com/Lakr233/vphone-cli",
+      "hot": "236"
     },
     {
       "rank": 3,
-      "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
-      "url": "https://github.com/Lakr233/vphone-cli",
-      "hot": "37"
+      "title": "GUIs should be fully keyboard-driven",
+      "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
+      "hot": "753"
     },
     {
       "rank": 4,
-      "title": "Htmx 4.0",
-      "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
-      "hot": "515"
+      "title": "TurboKV: Insanely fast Rust key-value store",
+      "url": "https://github.com/kingroryg/turbokv",
+      "hot": "78"
     },
     {
       "rank": 5,
-      "title": "PPWR lands another blow to an precarious tabletop industry",
-      "url": "https://www.rascal.news/ppwr-lands-another-blow-to-an-already-precarious-tabletop-industry/",
-      "hot": "14"
+      "title": "Htmx 4.0",
+      "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+      "hot": "628"
     },
     {
       "rank": 6,
       "title": "U.S. sanctions against the A/I Collective",
       "url": "https://www.inventati.org/",
-      "hot": "468"
+      "hot": "565"
     },
     {
       "rank": 7,
-      "title": "Just the rumour of a bug is enough to find an exploit these days",
-      "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
-      "hot": "253"
+      "title": "e is a customizable self-aware Emacs-like editor written in Chez Scheme",
+      "url": "https://github.com/paveluv/e",
+      "hot": "7"
     },
     {
       "rank": 8,
-      "title": "Inception-style curved map for turn-by-turn directions",
-      "url": "https://www.orbify.eu/demo/",
-      "hot": "421"
+      "title": "Does the Sumerian King List Align with Paleoclimate Events?",
+      "url": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer/",
+      "hot": "91"
     },
     {
       "rank": 9,
-      "title": "9th Circuit sides with states in Kalshi gambling fight",
-      "url": "https://azmirror.com/2026/08/28/9th-circuit-sides-with-states-in-kalshi-gambling-fight-potentially-reviving-arizonas-prosecution/",
-      "hot": "10"
+      "title": "I accidentally turned LLM memory into program analysis",
+      "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+      "hot": "112"
     },
     {
       "rank": 10,
-      "title": "Identifying fake cosmetics using AI",
-      "url": "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html",
-      "hot": "23"
+      "title": "Just the rumour of a bug is enough to find an exploit these days",
+      "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+      "hot": "300"
     }
   ]
 }

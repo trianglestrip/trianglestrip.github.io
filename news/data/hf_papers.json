@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-29T01:02:46+00:00",
+  "updated_at": "2026-08-29T07:46:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "760"
+      "hot": "761"
     },
     {
       "rank": 2,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
       "url": "https://huggingface.co/papers/2608.24053",
-      "hot": "63"
+      "hot": "64"
     },
     {
       "rank": 6,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
-      "url": "https://huggingface.co/papers/2407.17789",
-      "hot": "46"
-    },
-    {
-      "rank": 10,
       "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
       "url": "https://huggingface.co/papers/2508.16279",
       "hot": "68"
+    },
+    {
+      "rank": 10,
+      "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
+      "url": "https://huggingface.co/papers/2407.17789",
+      "hot": "46"
     }
   ]
 }
