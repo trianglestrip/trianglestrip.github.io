@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-29T07:46:35+00:00",
+  "updated_at": "2026-08-29T13:23:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Samsung's Processing-in-Memory (PIM)",
-      "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
-      "hot": "21"
+      "title": "Iceland votes on whether to restart talks on joining EU",
+      "url": "https://www.bbc.com/news/articles/cn45vdxyvvlo",
+      "hot": "134"
     },
     {
       "rank": 2,
-      "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
-      "url": "https://github.com/Lakr233/vphone-cli",
-      "hot": "236"
+      "title": "Samsung's Processing-in-Memory (PIM)",
+      "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+      "hot": "144"
     },
     {
       "rank": 3,
       "title": "GUIs should be fully keyboard-driven",
       "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
-      "hot": "753"
+      "hot": "882"
     },
     {
       "rank": 4,
-      "title": "TurboKV: Insanely fast Rust key-value store",
-      "url": "https://github.com/kingroryg/turbokv",
-      "hot": "78"
+      "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
+      "url": "https://github.com/Lakr233/vphone-cli",
+      "hot": "313"
     },
     {
       "rank": 5,
-      "title": "Htmx 4.0",
-      "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
-      "hot": "628"
+      "title": "Europe's last regular standard-gauge steam passenger service",
+      "url": "https://parowozowniawolsztyn.pl/?page_id=2141",
+      "hot": "66"
     },
     {
       "rank": 6,
-      "title": "U.S. sanctions against the A/I Collective",
-      "url": "https://www.inventati.org/",
-      "hot": "565"
+      "title": "Htmx 4.0",
+      "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+      "hot": "710"
     },
     {
       "rank": 7,
-      "title": "e is a customizable self-aware Emacs-like editor written in Chez Scheme",
-      "url": "https://github.com/paveluv/e",
-      "hot": "7"
+      "title": "Hunting Down a Go Runtime Bug on 32-Bit Embedded Systems",
+      "url": "https://sigma-star.at/blog/2026/08/go-runtime-netpoll-bug/",
+      "hot": "48"
     },
     {
       "rank": 8,
-      "title": "Does the Sumerian King List Align with Paleoclimate Events?",
-      "url": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer/",
-      "hot": "91"
+      "title": "U.S. sanctions against the A/I Collective",
+      "url": "https://www.inventati.org/",
+      "hot": "638"
     },
     {
       "rank": 9,
-      "title": "I accidentally turned LLM memory into program analysis",
-      "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
-      "hot": "112"
+      "title": "StemDeck, a free, open-source and local AI stem separator",
+      "url": "https://github.com/stemdeckapp/stemdeck",
+      "hot": "138"
     },
     {
       "rank": 10,
-      "title": "Just the rumour of a bug is enough to find an exploit these days",
-      "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
-      "hot": "300"
+      "title": "I accidentally turned LLM memory into program analysis",
+      "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+      "hot": "185"
     }
   ]
 }

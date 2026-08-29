@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-29T07:46:39+00:00",
+  "updated_at": "2026-08-29T13:23:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "「中国词元」：芯片、模型、绿电的算术题",
+      "url": "https://www.oschina.net/news/502199",
+      "hot": "Sat, 29 Aug 2026 18:14:00 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "AI 时代的代码库，为什么成了兵家必争之地",
+      "url": "https://www.oschina.net/news/502198",
+      "hot": "Sat, 29 Aug 2026 18:10:03 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "中国版 Hugging Face 是怎么造出来的",
+      "url": "https://www.oschina.net/news/502197",
+      "hot": "Sat, 29 Aug 2026 18:00:46 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "巨头拿着支票来了，开源创业者该不该卖？",
+      "url": "https://www.oschina.net/news/502196",
+      "hot": "Sat, 29 Aug 2026 17:57:09 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "AI 时代，开源为什么越来越值钱",
+      "url": "https://www.oschina.net/news/502195",
+      "hot": "Sat, 29 Aug 2026 17:51:29 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "全球开源平台的宿命，都逃不过被收购 ？",
+      "url": "https://www.oschina.net/news/502194",
+      "hot": "Sat, 29 Aug 2026 17:42:49 +0800"
+    },
+    {
+      "rank": 7,
       "title": "Neton 1.0.0-beta1 发布：Kotlin/Native 服务端时代，从这一刻开始",
       "url": "https://www.oschina.net/news/502186",
       "hot": "Sat, 29 Aug 2026 12:38:28 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "MsgTrans 2.0 Beta 1：把“高性能传输”升级为“可证明高性能可靠”",
       "url": "https://www.oschina.net/news/502185",
       "hot": "Sat, 29 Aug 2026 12:10:02 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "🔥MakuBoot 5.2 发布，低代码开发平台，快速开发利器",
       "url": "https://www.oschina.net/news/502184",
       "hot": "Fri, 28 Aug 2026 21:00:27 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "腾讯混元发布 Hy4 preview：总参数 770 B、1M 上下文，开源并接入游戏引擎和 MCP",
       "url": "https://www.oschina.net/news/502183",
       "hot": "Fri, 28 Aug 2026 19:32:20 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "🔥 新增 DeepSeek V4 Flash，支持推理续调与联网搜索：开源 AI 无代码平台 NocoBase",
-      "url": "https://www.oschina.net/news/502182",
-      "hot": "Fri, 28 Aug 2026 19:24:47 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Ultralytics YOLO Vision 2026 报名开启！开放视界，为现实而生",
-      "url": "https://www.oschina.net/event/8598381",
-      "hot": "Fri, 28 Aug 2026 18:21:11 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "给 AI 以“情感”，魔珐科技寻找有活人感的 Agent 作品",
-      "url": "https://www.oschina.net/news/502174",
-      "hot": "Fri, 28 Aug 2026 16:57:53 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "产品更新｜Memmy 支持 Linux 啦！",
-      "url": "https://www.oschina.net/news/502173",
-      "hot": "Fri, 28 Aug 2026 16:54:12 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "【AI 智能运维平台】本周更新：APM应用性能监测功能正式发布，性能瓶颈一目了然",
-      "url": "https://www.oschina.net/news/502170",
-      "hot": "Fri, 28 Aug 2026 16:10:14 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "内核跃迁，智能原生 | openKylin 3.0 正式发布",
-      "url": "https://www.oschina.net/news/502168",
-      "hot": "Fri, 28 Aug 2026 14:15:58 +0800"
     }
   ]
 }

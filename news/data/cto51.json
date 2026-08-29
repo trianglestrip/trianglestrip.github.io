@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-29T07:46:35+00:00",
+  "updated_at": "2026-08-29T13:23:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS7 @Watch 迁 @Monitor 后级联逻辑读到旧值？异步回调时序要这样改",
-      "url": "https://ost.51cto.com/posts/55668",
-      "hot": "前言这篇要解决的是社区里的一个真实问题：地址表单的省市区三级联动，选择城市后要同步加载区县列表，并立刻基于新区县数量更新一段表单摘..."
+      "title": "鸿蒙开发学习记录：onVisibleAreaApproximateChange 降低信息流曝光回调频率",
+      "url": "https://ost.51cto.com/posts/55702",
+      "hot": "页面只是正常滑动，日志窗口却一直往上跳：卡片刚露出一点、被遮住一部分、离开可见区域，每次变化都可能带来回调。如果回调中还做日志组装..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS7 V2 状态管理倒计时不同步？flushUIUpdates 强制同帧刷新才是正解",
-      "url": "https://ost.51cto.com/posts/55667",
-      "hot": "前言这篇要解决的是社区里的一个真实问题：支付倒计时弹窗用V1装饰器（State）时，毫秒级进度环和秒级倒计时数字基本同帧变化，视觉上没问..."
+      "title": "HarmonyOS7功能理解10：XComponent黑屏后怎么判断Surface已经失效",
+      "url": "https://ost.51cto.com/posts/55699",
+      "hot": "昨天同时查了一个XComponent黑屏问题。我也顺便看了看，页面结构还在，按钮也能点，日志里渲染线程仍然运行，画面就是一片黑。把页面退出再..."
     },
     {
       "rank": 3,
