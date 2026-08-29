@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-08-29T13:22:56+00:00",
+  "updated_at": "2026-08-29T17:14:36+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "挽救计划",
-      "url": "https://movie.douban.com/subject/35010610/",
-      "hot": "评分 8.6"
-    },
-    {
-      "rank": 10,
       "title": "重器",
       "url": "https://movie.douban.com/subject/36554071/",
       "hot": "评分 7.3"
+    },
+    {
+      "rank": 10,
+      "title": "挽救计划",
+      "url": "https://movie.douban.com/subject/35010610/",
+      "hot": "评分 8.6"
     }
   ]
 }
