@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-29T19:45:54+00:00",
+  "updated_at": "2026-08-29T21:59:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The Internet Is Kind of a Predatory Cesspit Now",
-      "url": "https://www.stephendiehl.com/posts/internet_predatory_cesspit/",
-      "hot": "165"
+      "title": "Tencent Releases and Open-Sources Tencent Hy4 Preview",
+      "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      "hot": "78"
     },
     {
       "rank": 2,
-      "title": "Warp builds self-improving agents on Claude",
-      "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
-      "hot": "19"
+      "title": "$44M Solar-Powered EV Production Deal Struck",
+      "url": "https://frequal.com/aptera/ProductionDealAug2026.html",
+      "hot": "10"
     },
     {
       "rank": 3,
-      "title": "Calibrate Before You Accelerate: Bias Toward Action in a New Role",
-      "url": "https://tucker.wales/writing/bias-towards-action/",
-      "hot": "35"
+      "title": "vLLM v0.28.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+      "hot": "55"
     },
     {
       "rank": 4,
-      "title": "SQLite as a Document Database (2020)",
-      "url": "https://dgl.cx/2020/06/sqlite-json-support",
-      "hot": "116"
+      "title": "Tether: iMessage, SMS, etc. on Linux",
+      "url": "https://zackbartel.com/blog/2026/08/tether/",
+      "hot": "244"
     },
     {
       "rank": 5,
-      "title": "Tether: iMessage, SMS, etc. on Linux",
-      "url": "https://zackbartel.com/blog/2026/08/tether/",
-      "hot": "168"
+      "title": "Calibrate Before You Accelerate: Bias Toward Action in a New Role",
+      "url": "https://tucker.wales/writing/bias-towards-action/",
+      "hot": "70"
     },
     {
       "rank": 6,
-      "title": "DHS is using obscure law to snoop on journalists, non-profits, unions",
-      "url": "https://www.theguardian.com/us-news/2026/aug/29/trump-dhs-1509-summons-records-journalists-nonprofits",
-      "hot": "65"
+      "title": "Nancy Grace Roman Space Telescope Launches this Sunday",
+      "url": "https://www.npr.org/2026/08/28/nx-s1-5905370/nasa-nancy-grace-roman-space-telescope-dark-energy-supernova",
+      "hot": "27"
     },
     {
       "rank": 7,
-      "title": "The growing divide between AI hype and software engineering reality",
-      "url": "https://optimizedbyotto.com/post/why-open-source-projects-ban-ai/",
-      "hot": "36"
+      "title": "What we want is a hunter gatherer lifestyle with space age tools",
+      "url": "https://www.strangeloopcanon.com/p/what-we-want-is-a-hunter-gatherer",
+      "hot": "20"
     },
     {
       "rank": 8,
-      "title": "Indirect Calling of Nested Functions on GCC Without Executable Stack",
-      "url": "https://uecker.codeberg.page/2026-08-29.html",
-      "hot": "52"
+      "title": "SQLite as a Document Database (2020)",
+      "url": "https://dgl.cx/2020/06/sqlite-json-support",
+      "hot": "142"
     },
     {
       "rank": 9,
-      "title": "Sleepwalker: Passive Backdoor with Its Own Command Language",
-      "url": "https://r136a1.dev/2026/08/24/sleepwalker-a-passive-backdoor-with-its-own-command-language/",
-      "hot": "37"
+      "title": "Functional State Machines in Rust: Typestate and Newtype Patterns",
+      "url": "https://dl.acm.org/doi/10.1145/3830438.3830958",
+      "hot": "17"
     },
     {
       "rank": 10,
-      "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
-      "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
-      "hot": "80"
+      "title": "Domain-Driven Agents",
+      "url": "https://coldtake.dev/blog/domain-driven-agents",
+      "hot": "18"
     }
   ]
 }
