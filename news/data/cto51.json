@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-30T07:29:17+00:00",
+  "updated_at": "2026-08-30T13:07:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "鸿蒙开发学习记录：onVisibleAreaApproximateChange 降低信息流曝光回调频率",
-      "url": "https://ost.51cto.com/posts/55702",
-      "hot": "页面只是正常滑动，日志窗口却一直往上跳：卡片刚露出一点、被遮住一部分、离开可见区域，每次变化都可能带来回调。如果回调中还做日志组装..."
+      "title": "HarmonyOS7开发探讨：组件离开可见区域后资源订阅什么时候停",
+      "url": "https://ost.51cto.com/posts/55736",
+      "hot": "页面滑走了，日志还在刷。视频预览已经被下一页盖住，解码线程仍跑；地图卡片滚出屏幕，定位回调继续进来；一个透明度为0的动效组件，每帧..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS7功能理解10：XComponent黑屏后怎么判断Surface已经失效",
-      "url": "https://ost.51cto.com/posts/55699",
-      "hot": "昨天同时查了一个XComponent黑屏问题。我也顺便看了看，页面结构还在，按钮也能点，日志里渲染线程仍然运行，画面就是一片黑。把页面退出再..."
+      "title": "HarmonyOS 校园应用系列之状态机驱动：鸿蒙 ArkUI下，错题本复习计划页 Tab 下划线筛选与进度卡片",
+      "url": "https://ost.51cto.com/posts/55726",
+      "hot": "HarmonyOS校园应用系列之状态机驱动：鸿蒙ArkUI下，错题本复习计划页Tab下划线筛选与进度卡片本文基于「错题本」应用的复习计划页（Func2Ta..."
     },
     {
       "rank": 3,
