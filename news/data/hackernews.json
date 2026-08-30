@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-30T19:55:34+00:00",
+  "updated_at": "2026-08-30T22:09:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Creepy Crawlies",
       "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
-      "hot": "545"
+      "hot": "756"
     },
     {
       "rank": 2,
-      "title": "Haiku R1/beta6 has been released",
-      "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
-      "hot": "166"
+      "title": "Cores in space: The core memory module from a 1980 Spacelab computer",
+      "url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
+      "hot": "38"
     },
     {
       "rank": 3,
-      "title": "Coordination Headwind: How Organizations Are Like Slime Molds",
-      "url": "https://komoroske.com/slime-mold/",
-      "hot": "72"
+      "title": "Haiku R1/beta6 has been released",
+      "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
+      "hot": "207"
     },
     {
       "rank": 4,
-      "title": "Why open source rocks – a new SM750 (Silicon Motion GPU) HDMI Driver",
-      "url": "https://github.com/KodeMunkie/sm750hdmifb",
-      "hot": "17"
+      "title": "NFC Energy-Harvesting PCB Business Card with an MCU",
+      "url": "https://wilsonharper.net/projects/businesscard/",
+      "hot": "49"
     },
     {
       "rank": 5,
-      "title": "METR and Redwood Offer Holy %^ Postmortem of the HuggingFace Hack",
-      "url": "https://thezvi.wordpress.com/2026/08/29/metr-and-redwood-offer-holy-postmortem-of-the-huggingface-hack/",
-      "hot": "121"
-    },
-    {
-      "rank": 6,
-      "title": "Hacking IKEA Furniture",
-      "url": "https://greenlightning.eu/diy/hacking-ikea-furniture/",
-      "hot": "209"
-    },
-    {
-      "rank": 7,
-      "title": "Zig: Pointer Stability for ArrayLists",
-      "url": "https://ziglang.org/devlog/2026/#2026-08-27",
-      "hot": "50"
-    },
-    {
-      "rank": 8,
-      "title": "Sort branches by last commit date",
-      "url": "https://ryangreenberg.com/til/git-branches-by-commit-date/",
-      "hot": "7"
-    },
-    {
-      "rank": 9,
-      "title": "Running SQLite Apps on Docker and Kubernetes with Litestream",
-      "url": "https://openrun.dev/blog/litestream/",
+      "title": "Continuous Diffusion Language Models (CDLM's)",
+      "url": "https://sander.ai/2026/08/24/continuous-dlms.html",
       "hot": "20"
     },
     {
+      "rank": 6,
+      "title": "Why open source rocks – a new SM750 (Silicon Motion GPU) HDMI Driver",
+      "url": "https://github.com/KodeMunkie/sm750hdmifb",
+      "hot": "48"
+    },
+    {
+      "rank": 7,
+      "title": "Sort branches by last commit date",
+      "url": "https://ryangreenberg.com/til/git-branches-by-commit-date/",
+      "hot": "45"
+    },
+    {
+      "rank": 8,
+      "title": "Coordination Headwind: How Organizations Are Like Slime Molds",
+      "url": "https://komoroske.com/slime-mold/",
+      "hot": "107"
+    },
+    {
+      "rank": 9,
+      "title": "Hacking IKEA Furniture",
+      "url": "https://greenlightning.eu/diy/hacking-ikea-furniture/",
+      "hot": "238"
+    },
+    {
       "rank": 10,
-      "title": "European Commission Revives Push for Encryption Backdoors in ProtectEU Strategy",
-      "url": "https://reclaimthenet.org/eu-protecteu-strategy-encryption-backdoor-law-enforcement",
-      "hot": "236"
+      "title": "METR and Redwood Offer Holy %^ Postmortem of the HuggingFace Hack",
+      "url": "https://thezvi.wordpress.com/2026/08/29/metr-and-redwood-offer-holy-postmortem-of-the-huggingface-hack/",
+      "hot": "184"
     }
   ]
 }
