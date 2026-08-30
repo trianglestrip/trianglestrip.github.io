@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-29T23:51:48+00:00",
+  "updated_at": "2026-08-30T07:29:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "762"
+      "hot": "764"
     },
     {
       "rank": 2,
@@ -26,13 +26,13 @@
       "rank": 4,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "200"
+      "hot": "201"
     },
     {
       "rank": 5,
       "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
       "url": "https://huggingface.co/papers/2608.24053",
-      "hot": "65"
+      "hot": "66"
     },
     {
       "rank": 6,
@@ -48,9 +48,9 @@
     },
     {
       "rank": 8,
-      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
-      "url": "https://huggingface.co/papers/2508.16279",
-      "hot": "68"
+      "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+      "url": "https://huggingface.co/papers/2308.04079",
+      "hot": "204"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
-      "url": "https://huggingface.co/papers/2308.04079",
-      "hot": "204"
+      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
+      "url": "https://huggingface.co/papers/2508.16279",
+      "hot": "68"
     }
   ]
 }
