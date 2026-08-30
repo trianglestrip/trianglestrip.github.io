@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-30T07:29:32+00:00",
+  "updated_at": "2026-08-30T17:24:20+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,9 +48,9 @@
     },
     {
       "rank": 8,
-      "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
-      "url": "https://huggingface.co/papers/2308.04079",
-      "hot": "204"
+      "title": "FunAudioLLM: Voice Understanding and Generation Foundation Models for\n  Natural Interaction Between Humans and LLMs",
+      "url": "https://huggingface.co/papers/2407.04051",
+      "hot": "40"
     },
     {
       "rank": 9,

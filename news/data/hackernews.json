@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-30T13:07:05+00:00",
+  "updated_at": "2026-08-30T17:24:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Arbitrary code execution in QubesOS via copy-to-VM error reporting backchannel",
-      "url": "https://www.qubes-os.org/news/2026/08/29/qsb-118/",
-      "hot": "94"
+      "title": "Creepy Crawlies",
+      "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
+      "hot": "314"
     },
     {
       "rank": 2,
-      "title": "Longest Straight Line Paths on Water or Land on the Earth (2018)",
-      "url": "https://arxiv.org/abs/1804.07389",
-      "hot": "116"
+      "title": "Omarchy: Any User Process Can Escalate to Root",
+      "url": "https://0xcc.io/posts/omarchy-root-creds/",
+      "hot": "138"
     },
     {
       "rank": 3,
-      "title": "Casey Muratori – The Root of the Root of All Evil – BSC 2026 [video]",
-      "url": "https://www.youtube.com/watch?v=hpj6r6CjJf8",
-      "hot": "52"
+      "title": "Haiku R1/beta6 has been released",
+      "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
+      "hot": "71"
     },
     {
       "rank": 4,
-      "title": "Hacking IKEA Furniture",
-      "url": "https://greenlightning.eu/diy/hacking-ikea-furniture/",
-      "hot": "14"
+      "title": "Coordination Headwind: How Organizations Are Like Slime Molds",
+      "url": "https://komoroske.com/slime-mold/",
+      "hot": "20"
     },
     {
       "rank": 5,
-      "title": "Everyone Should Build Their Own Network Stack",
-      "url": "https://blog.lyc8503.net/en/post/dn42-2-dnet/",
-      "hot": "49"
+      "title": "Hacking IKEA Furniture",
+      "url": "https://greenlightning.eu/diy/hacking-ikea-furniture/",
+      "hot": "169"
     },
     {
       "rank": 6,
-      "title": "Brits would quite like their private messages to stay private",
-      "url": "https://www.theregister.com/security/2026/08/30/turns-out-brits-would-quite-like-their-private-messages-to-stay-private/5292994",
-      "hot": "175"
+      "title": "Electric rain can eat through metal",
+      "url": "https://www.scientificamerican.com/article/electric-rain-can-eat-through-metal/",
+      "hot": "18"
     },
     {
       "rank": 7,
-      "title": "Claude Session URL appended to commit messages and PR descriptions by default",
-      "url": "https://github.com/anthropics/claude-code/issues/66504",
-      "hot": "7"
+      "title": "European Commission Revives Push for Encryption Backdoors in ProtectEU Strategy",
+      "url": "https://reclaimthenet.org/eu-protecteu-strategy-encryption-backdoor-law-enforcement",
+      "hot": "122"
     },
     {
       "rank": 8,
-      "title": "An implementation of Conway's Game of Life for Windows 3.1x and later",
-      "url": "https://www.muppetlabs.com/~breadbox/software/windows.html",
-      "hot": "8"
+      "title": "Casey Muratori – The Root of the Root of All Evil – BSC 2026 [video]",
+      "url": "https://www.youtube.com/watch?v=hpj6r6CjJf8",
+      "hot": "202"
     },
     {
       "rank": 9,
-      "title": "The turbulent AI era is here. The choices we make now are critical",
-      "url": "https://www.gatesnotes.com/home/home-page-topic/reader/a-turbulent-ai-era-and-critical-choices-to-make",
-      "hot": "10"
+      "title": "Arbitrary code execution in QubesOS via copy-to-VM error reporting backchannel",
+      "url": "https://www.qubes-os.org/news/2026/08/29/qsb-118/",
+      "hot": "153"
     },
     {
       "rank": 10,
-      "title": "monty-go: Pure-Go wrapper for Pydantic's Monty Python Interpreter",
-      "url": "https://github.com/fugue-labs/monty-go",
-      "hot": "8"
+      "title": "Zig: Pointer Stability for ArrayLists",
+      "url": "https://ziglang.org/devlog/2026/#2026-08-27",
+      "hot": "19"
     }
   ]
 }

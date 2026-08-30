@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-30T07:29:32+00:00",
+  "updated_at": "2026-08-30T17:24:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen/Qwen3.8-Flash-Next",
       "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "hot": "4309"
+      "hot": "4359"
     },
     {
       "rank": 2,
       "title": "zai-org/GLM-5.3-Flash",
       "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-      "hot": "1638"
+      "hot": "1685"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.3",
       "url": "https://huggingface.co/zai-org/GLM-5.3",
-      "hot": "1293"
+      "hot": "1325"
     },
     {
       "rank": 4,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "13280"
+      "hot": "13320"
     },
     {
       "rank": 5,
       "title": "unsloth/Qwen3.8-Flash-Next-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
-      "hot": "575"
+      "hot": "594"
     },
     {
       "rank": 6,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "3190"
+      "hot": "3220"
     },
     {
       "rank": 7,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "2157"
+      "hot": "2223"
     },
     {
       "rank": 8,
-      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
-      "hot": "927"
+      "title": "tencent/Hy4-preview",
+      "url": "https://huggingface.co/tencent/Hy4-preview",
+      "hot": "311"
     },
     {
       "rank": 9,
-      "title": "tencent/Hy4-preview",
-      "url": "https://huggingface.co/tencent/Hy4-preview",
-      "hot": "291"
+      "title": "unsloth/GLM-5.3-Flash-GGUF",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
+      "hot": "283"
     },
     {
       "rank": 10,
-      "title": "unsloth/GLM-5.3-Flash-GGUF",
-      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
-      "hot": "276"
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "hot": "940"
     }
   ]
 }
