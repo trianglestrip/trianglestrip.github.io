@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-08-29T21:58:56+00:00",
+  "updated_at": "2026-08-30T01:47:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AI 已经能直接改设计稿了:Windows部署Penpot，接入Codex MCP实测",
       "url": "https://blog.csdn.net/2302_79177254/article/details/164153081",
-      "hot": "23652"
+      "hot": "24051"
     },
     {
       "rank": 2,
       "title": "【AI大模型接入SDK】Provider分析与实现",
       "url": "https://blog.csdn.net/2401_89899187/article/details/164145795",
-      "hot": "14188"
+      "hot": "15360"
     },
     {
       "rank": 3,
       "title": "【AI 测评】不只是和 AI 聊天：Windows 部署 OpenClaw，让大模型开始操作本地电脑",
       "url": "https://blog.csdn.net/2402_87298751/article/details/164146418",
-      "hot": "12527"
+      "hot": "13314"
     },
     {
       "rank": 4,
       "title": "Codex修改异步代码后为什么总出现Promise问题？await、并发执行与异常处理排查",
       "url": "https://blog.csdn.net/2601_96395508/article/details/164171216",
-      "hot": "11571"
+      "hot": "11379"
     },
     {
       "rank": 5,
       "title": "计算机网络‑TCP 协议原理与特性解析",
       "url": "https://blog.csdn.net/2502_93799892/article/details/164095097",
-      "hot": "11007"
+      "hot": "10803"
     },
     {
       "rank": 6,
-      "title": "飞牛 NAS 如何部署 ai-goofish-m开发全自动机器人",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/164143914",
-      "hot": "10456"
+      "title": "linux网络：Http协议",
+      "url": "https://blog.csdn.net/2601_94861874/article/details/164088238",
+      "hot": "9926"
     },
     {
       "rank": 7,
-      "title": "linux网络：Http协议",
-      "url": "https://blog.csdn.net/2601_94861874/article/details/164088238",
-      "hot": "9967"
+      "title": "Windows版ChatGPT启动失败Unable-to-locate-Codex-CLI-binary解决方法",
+      "url": "https://blog.csdn.net/m0_73879806/article/details/164143924",
+      "hot": "9024"
     },
     {
       "rank": 8,
       "title": "PDF 合并、转换也能自己部署：极空间运行 Stirling PDF，文件交给自己的服务器处理",
       "url": "https://blog.csdn.net/Mrxiao_bo/article/details/164152055",
-      "hot": "8559"
+      "hot": "9007"
     },
     {
       "rank": 9,
-      "title": "Redis 故障复盘案例：线上事故分析与预防措施总结",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/164154922",
-      "hot": "8538"
+      "title": "AI Agent 的经济账：算力、模型路由与真实 ROI",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/163614155",
+      "hot": "8923"
     },
     {
       "rank": 10,
-      "title": "【Linux指南】动静态库系列（六）：编译、链接与 ELF：.o、.so、可执行文件到底是什么",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/164146255",
-      "hot": "8517"
+      "title": "Redis 故障复盘案例：线上事故分析与预防措施总结",
+      "url": "https://blog.csdn.net/qq_41840843/article/details/164154922",
+      "hot": "8840"
     }
   ]
 }
