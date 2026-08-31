@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-31T12:43:14+00:00",
+  "updated_at": "2026-08-31T19:15:53+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,33 +30,33 @@
     },
     {
       "rank": 5,
-      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
-      "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "203"
-    },
-    {
-      "rank": 6,
       "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
       "url": "https://huggingface.co/papers/2608.24053",
       "hot": "68"
     },
     {
+      "rank": 6,
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "url": "https://huggingface.co/papers/2608.23283",
+      "hot": "204"
+    },
+    {
       "rank": 7,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "85"
+      "title": "Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction",
+      "url": "https://huggingface.co/papers/2608.27529",
+      "hot": "28"
     },
     {
       "rank": 8,
-      "title": "VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction",
-      "url": "https://huggingface.co/papers/2608.26005",
-      "hot": "170"
+      "title": "Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning",
+      "url": "https://huggingface.co/papers/2608.27549",
+      "hot": "39"
     },
     {
       "rank": 9,
-      "title": "FunAudioLLM: Voice Understanding and Generation Foundation Models for\n  Natural Interaction Between Humans and LLMs",
-      "url": "https://huggingface.co/papers/2407.04051",
-      "hot": "40"
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "85"
     },
     {
       "rank": 10,
