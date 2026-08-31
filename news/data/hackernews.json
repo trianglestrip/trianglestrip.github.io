@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-30T22:09:51+00:00",
+  "updated_at": "2026-08-31T00:32:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Creepy Crawlies",
-      "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
-      "hot": "756"
+      "title": "“I just chose words carefully”",
+      "url": "https://unsung.aresluna.org/i-just-chose-words-carefully/",
+      "hot": "158"
     },
     {
       "rank": 2,
-      "title": "Cores in space: The core memory module from a 1980 Spacelab computer",
-      "url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
-      "hot": "38"
+      "title": "Creepy Crawlies",
+      "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
+      "hot": "892"
     },
     {
       "rank": 3,
       "title": "Haiku R1/beta6 has been released",
       "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
-      "hot": "207"
+      "hot": "241"
     },
     {
       "rank": 4,
-      "title": "NFC Energy-Harvesting PCB Business Card with an MCU",
-      "url": "https://wilsonharper.net/projects/businesscard/",
-      "hot": "49"
+      "title": "Cores in space: The core memory module from a 1980 Spacelab computer",
+      "url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
+      "hot": "64"
     },
     {
       "rank": 5,
-      "title": "Continuous Diffusion Language Models (CDLM's)",
-      "url": "https://sander.ai/2026/08/24/continuous-dlms.html",
-      "hot": "20"
+      "title": "Thoughts on Pope Leo XIV's Magnifica Humanitas",
+      "url": "https://adropincalm.com/blog/thoughts-on-magnifica-humanitas/",
+      "hot": "43"
     },
     {
       "rank": 6,
-      "title": "Why open source rocks – a new SM750 (Silicon Motion GPU) HDMI Driver",
-      "url": "https://github.com/KodeMunkie/sm750hdmifb",
-      "hot": "48"
+      "title": "Show HN: NFC Energy-Harvesting PCB Business Card with an MCU",
+      "url": "https://wilsonharper.net/projects/businesscard/",
+      "hot": "81"
     },
     {
       "rank": 7,
       "title": "Sort branches by last commit date",
       "url": "https://ryangreenberg.com/til/git-branches-by-commit-date/",
-      "hot": "45"
+      "hot": "78"
     },
     {
       "rank": 8,
-      "title": "Coordination Headwind: How Organizations Are Like Slime Molds",
-      "url": "https://komoroske.com/slime-mold/",
-      "hot": "107"
+      "title": "Continuous Diffusion Language Models (CDLM's)",
+      "url": "https://sander.ai/2026/08/24/continuous-dlms.html",
+      "hot": "46"
     },
     {
       "rank": 9,
-      "title": "Hacking IKEA Furniture",
-      "url": "https://greenlightning.eu/diy/hacking-ikea-furniture/",
-      "hot": "238"
+      "title": "Why open source rocks – a new SM750 (Silicon Motion GPU) HDMI Driver",
+      "url": "https://github.com/KodeMunkie/sm750hdmifb",
+      "hot": "61"
     },
     {
       "rank": 10,
-      "title": "METR and Redwood Offer Holy %^ Postmortem of the HuggingFace Hack",
-      "url": "https://thezvi.wordpress.com/2026/08/29/metr-and-redwood-offer-holy-postmortem-of-the-huggingface-hack/",
-      "hot": "184"
+      "title": "Coordination Headwind: How Organizations Are Like Slime Molds",
+      "url": "https://komoroske.com/slime-mold/",
+      "hot": "120"
     }
   ]
 }
