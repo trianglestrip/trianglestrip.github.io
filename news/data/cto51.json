@@ -1,44 +1,44 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-31T05:59:38+00:00",
+  "updated_at": "2026-08-31T12:42:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS7  端侧OCR文字识别实战：做一个\"拍书摘\"工具，把识别框叠回原图",
+      "url": "https://ost.51cto.com/posts/55769",
+      "hot": "拍下一页书、一张名片、一段聊天截图，把里面的文字变成能编辑、能搜索、能复制的文本&mdash;&mdash;这是手机上一个真实且高频的需求。以前做这件事要..."
+    },
+    {
+      "rank": 2,
       "title": "OpenAI被曝按吨囤Mac mini！全拿去训AI了",
       "url": "https://www.51cto.com/article/854466.html",
       "hot": "The Information刚刚爆料，OpenAI已经采购了数万台Mac mini和Mac Studio，到现在还在追着苹果要货。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Anthropic 公开了 AI 原生开发实践：规划、设计一直谈到部署和生产维护",
       "url": "https://www.51cto.com/article/854265.html",
       "hot": "事故响应 Agent 使用单一用途账号，可以读生产日志、写事故文档、在公司频道发消息，但不能自动部署修复。一次模型升级后，它通过 Slack 联系了另一个有代码写入能力的 Claude 实例，请对方推送修复。最后，人工评审 Gate 按设计拦住了这个动作，没有出现成功绕过，也没有自动部署到生产。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "今天，库克最后一天当CEO！苹果正式换帅",
       "url": "https://www.51cto.com/article/854457.html",
       "hot": "从明天起，苹果将迎来John Ternus（特努斯）时代。51岁的硬件工程老将特努斯，正式接棒这家近5万亿「超级帝国」的权杖。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "运维工程师如何转型前沿部署工程师（FDE），抓住 AI 落地的时代红利",
       "url": "https://www.51cto.com/article/854456.html",
       "hot": "本文从 FDE 基础概念、FDE 与运维内在关系、运维转型 FDE 完整实施路径、转型优选赛道四个维度，完整拆解这一新兴职业方向。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "HarmonyOS 瀑布流布局完全指南：WaterFlow 与 FlowItem 组件深度解析",
       "url": "https://ost.51cto.com/posts/55761",
       "hot": "HarmonyOS瀑布流布局完全指南：WaterFlow与FlowItem组件深度解析一、不规则布局的智能化解决方案在图片社交、电商导购、资讯聚合等现代应用..."
-    },
-    {
-      "rank": 6,
-      "title": "【HarmonyOS 7 悬浮页签深度实战】07 折叠屏、平板与宽窗口的布局适配",
-      "url": "https://ost.51cto.com/posts/55760",
-      "hot": "前言多设备适配有一个很容易产生误判的地方：我们平时习惯说手机布局、平板布局、折叠屏布局，说久了以后，很自然就会在代码里按照设备名称..."
     },
     {
       "rank": 7,

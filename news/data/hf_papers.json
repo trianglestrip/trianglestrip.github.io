@@ -1,44 +1,44 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-31T00:32:34+00:00",
+  "updated_at": "2026-08-31T12:43:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
-      "hot": "102"
+      "hot": "104"
     },
     {
       "rank": 2,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "764"
+      "hot": "765"
     },
     {
       "rank": 3,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "125"
+      "hot": "126"
     },
     {
       "rank": 4,
       "title": "Prime Agent: A Self-Improving RLM Harness",
       "url": "https://huggingface.co/papers/2608.23552",
-      "hot": "46"
+      "hot": "47"
     },
     {
       "rank": 5,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "202"
+      "hot": "203"
     },
     {
       "rank": 6,
       "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
       "url": "https://huggingface.co/papers/2608.24053",
-      "hot": "67"
+      "hot": "68"
     },
     {
       "rank": 7,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
+      "title": "VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction",
+      "url": "https://huggingface.co/papers/2608.26005",
+      "hot": "170"
+    },
+    {
+      "rank": 9,
       "title": "FunAudioLLM: Voice Understanding and Generation Foundation Models for\n  Natural Interaction Between Humans and LLMs",
       "url": "https://huggingface.co/papers/2407.04051",
       "hot": "40"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
       "url": "https://huggingface.co/papers/2407.17789",
       "hot": "46"
-    },
-    {
-      "rank": 10,
-      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
-      "url": "https://huggingface.co/papers/2508.16279",
-      "hot": "68"
     }
   ]
 }
