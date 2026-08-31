@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-08-31T00:32:17+00:00",
+  "updated_at": "2026-08-31T05:59:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "“I just chose words carefully”",
       "url": "https://unsung.aresluna.org/i-just-chose-words-carefully/",
-      "hot": "158"
+      "hot": "525"
     },
     {
       "rank": 2,
-      "title": "Creepy Crawlies",
-      "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
-      "hot": "892"
-    },
-    {
-      "rank": 3,
-      "title": "Haiku R1/beta6 has been released",
-      "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
-      "hot": "241"
-    },
-    {
-      "rank": 4,
-      "title": "Cores in space: The core memory module from a 1980 Spacelab computer",
-      "url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
-      "hot": "64"
-    },
-    {
-      "rank": 5,
-      "title": "Thoughts on Pope Leo XIV's Magnifica Humanitas",
-      "url": "https://adropincalm.com/blog/thoughts-on-magnifica-humanitas/",
-      "hot": "43"
-    },
-    {
-      "rank": 6,
-      "title": "Show HN: NFC Energy-Harvesting PCB Business Card with an MCU",
-      "url": "https://wilsonharper.net/projects/businesscard/",
-      "hot": "81"
-    },
-    {
-      "rank": 7,
-      "title": "Sort branches by last commit date",
-      "url": "https://ryangreenberg.com/til/git-branches-by-commit-date/",
-      "hot": "78"
-    },
-    {
-      "rank": 8,
-      "title": "Continuous Diffusion Language Models (CDLM's)",
-      "url": "https://sander.ai/2026/08/24/continuous-dlms.html",
+      "title": "P99 0 ms* autocomplete for 240M domain names",
+      "url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
       "hot": "46"
     },
     {
+      "rank": 3,
+      "title": "OpenClaw 2.0, Accidentally",
+      "url": "https://openclaw.ai/blog/openclaw-2-accidentally",
+      "hot": "24"
+    },
+    {
+      "rank": 4,
+      "title": "My hobby of building miniatures and taking pretty pictures",
+      "url": "https://sandyuraz.com/blogs/tiny-cafe/",
+      "hot": "37"
+    },
+    {
+      "rank": 5,
+      "title": "Creepy Crawlies",
+      "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
+      "hot": "1027"
+    },
+    {
+      "rank": 6,
+      "title": "It takes 5 cloud services to hear my doorbell",
+      "url": "https://blog.vghaisas.com/rube-goldberg-doorbell/",
+      "hot": "86"
+    },
+    {
+      "rank": 7,
+      "title": "Matrox: Graphics for Professionals",
+      "url": "https://www.abortretry.fail/p/matrox",
+      "hot": "68"
+    },
+    {
+      "rank": 8,
+      "title": "Internet centralization and the original sin of NAT",
+      "url": "https://dreamstation.systems/personal/ntppost.html",
+      "hot": "26"
+    },
+    {
       "rank": 9,
-      "title": "Why open source rocks – a new SM750 (Silicon Motion GPU) HDMI Driver",
-      "url": "https://github.com/KodeMunkie/sm750hdmifb",
-      "hot": "61"
+      "title": "Why OOP Exists",
+      "url": "https://mathspp.com/blog/why-oop-exists",
+      "hot": "6"
     },
     {
       "rank": 10,
-      "title": "Coordination Headwind: How Organizations Are Like Slime Molds",
-      "url": "https://komoroske.com/slime-mold/",
-      "hot": "120"
+      "title": "Haiku R1/beta6 has been released",
+      "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
+      "hot": "283"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-31T00:32:16+00:00",
+  "updated_at": "2026-08-31T05:59:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS7开发探讨：组件离开可见区域后资源订阅什么时候停",
-      "url": "https://ost.51cto.com/posts/55736",
-      "hot": "页面滑走了，日志还在刷。视频预览已经被下一页盖住，解码线程仍跑；地图卡片滚出屏幕，定位回调继续进来；一个透明度为0的动效组件，每帧..."
+      "title": "OpenAI被曝按吨囤Mac mini！全拿去训AI了",
+      "url": "https://www.51cto.com/article/854466.html",
+      "hot": "The Information刚刚爆料，OpenAI已经采购了数万台Mac mini和Mac Studio，到现在还在追着苹果要货。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 校园应用系列之状态机驱动：鸿蒙 ArkUI下，错题本复习计划页 Tab 下划线筛选与进度卡片",
-      "url": "https://ost.51cto.com/posts/55726",
-      "hot": "HarmonyOS校园应用系列之状态机驱动：鸿蒙ArkUI下，错题本复习计划页Tab下划线筛选与进度卡片本文基于「错题本」应用的复习计划页（Func2Ta..."
+      "title": "Anthropic 公开了 AI 原生开发实践：规划、设计一直谈到部署和生产维护",
+      "url": "https://www.51cto.com/article/854265.html",
+      "hot": "事故响应 Agent 使用单一用途账号，可以读生产日志、写事故文档、在公司频道发消息，但不能自动部署修复。一次模型升级后，它通过 Slack 联系了另一个有代码写入能力的 Claude 实例，请对方推送修复。最后，人工评审 Gate 按设计拦住了这个动作，没有出现成功绕过，也没有自动部署到生产。"
     },
     {
       "rank": 3,
-      "title": "基于 NeuralProphet 搭建运维时序数据预测体系，规避故障风险",
-      "url": "https://www.51cto.com/article/854278.html",
-      "hot": "NeuralProphet 让运维场景的时序数据精准预测，从复杂的 AI 技术课题，变成了普通运维可快速上手、直接落地的实操方案。"
+      "title": "今天，库克最后一天当CEO！苹果正式换帅",
+      "url": "https://www.51cto.com/article/854457.html",
+      "hot": "从明天起，苹果将迎来John Ternus（特努斯）时代。51岁的硬件工程老将特努斯，正式接棒这家近5万亿「超级帝国」的权杖。"
     },
     {
       "rank": 4,
-      "title": "pnpm 12 正式发布：用 Rust 重写，开始接管整个 JS 开发环境",
-      "url": "https://www.51cto.com/article/854272.html",
-      "hot": "如果只看技术实现，这次最大的变化很直接：pnpm 几乎整个用 Rust 重写了。但相比 Rust，我觉得 pnpm 12 更值得关注的是另外两件事：它开始摆脱对 Node.js 的依赖，同时也开始不满足于只做一个包管理器。"
+      "title": "运维工程师如何转型前沿部署工程师（FDE），抓住 AI 落地的时代红利",
+      "url": "https://www.51cto.com/article/854456.html",
+      "hot": "本文从 FDE 基础概念、FDE 与运维内在关系、运维转型 FDE 完整实施路径、转型优选赛道四个维度，完整拆解这一新兴职业方向。"
     },
     {
       "rank": 5,
-      "title": "英伟达前AI总监颠覆Transformer！五万亿上下文物理AI，推演整个宇宙",
-      "url": "https://www.51cto.com/article/854271.html",
-      "hot": "LLM预测世界的语言描述，视频世界模型预测（动态）图像，而这次直接预测四维的空间与时间的物理状态。"
+      "title": "HarmonyOS 瀑布流布局完全指南：WaterFlow 与 FlowItem 组件深度解析",
+      "url": "https://ost.51cto.com/posts/55761",
+      "hot": "HarmonyOS瀑布流布局完全指南：WaterFlow与FlowItem组件深度解析一、不规则布局的智能化解决方案在图片社交、电商导购、资讯聚合等现代应用..."
     },
     {
       "rank": 6,
-      "title": "AI自己出题自己练！两个月狂涨11%，编码自测反超Opus 4.8",
-      "url": "https://www.51cto.com/article/854270.html",
-      "hot": "模型的上限，除了拼算力，还要拼题库。只是当出题、搭台、解题都交给模型，人类留在这个闭环里的位置是什么？"
+      "title": "【HarmonyOS 7 悬浮页签深度实战】07 折叠屏、平板与宽窗口的布局适配",
+      "url": "https://ost.51cto.com/posts/55760",
+      "hot": "前言多设备适配有一个很容易产生误判的地方：我们平时习惯说手机布局、平板布局、折叠屏布局，说久了以后，很自然就会在代码里按照设备名称..."
     },
     {
       "rank": 7,
-      "title": "GitHub 爆了！ 17K+ Star！20 多种文档格式，一条命令全部转 Markdown",
-      "url": "https://www.51cto.com/article/854237.html",
-      "hot": "最近，Firecrawl 开源了一个很有意思的项目：anydoc。 它只做一件事情：把各种文档转换成干净的 GitHub-Flavored Markdown。"
+      "title": "急急急用电！马斯克开造燃气轮机叶片",
+      "url": "https://www.51cto.com/article/854446.html",
+      "hot": "现在，一片燃气轮机叶片，和一颗最新的AI芯片一样，都可能决定AI接下来有多少算力可用。"
     },
     {
       "rank": 8,
-      "title": "突发：OpenAI首次公开入侵Hugging Face完整报告",
-      "url": "https://www.51cto.com/article/854268.html",
-      "hot": "OpenAI 约 1200 个 Agent 在内部网络安全评估中突破沙箱隔离，自发组建了一个未经授权的消息板，互发超过 7 万条消息，自称「蜂群」。"
+      "title": "GitHub最热架构图Agent，开发者故事看哭了",
+      "url": "https://www.51cto.com/article/854444.html",
+      "hot": "现在，一个登上GitHub Trending的开源项目Archify，把这件事压缩成了一句话：分析这个代码仓库，并生成一张高层运行时架构图。"
     },
     {
       "rank": 9,
-      "title": "Claude自己长出浏览器！填表拉数，你的AI打工人有工位了",
-      "url": "https://www.51cto.com/article/854267.html",
-      "hot": "OpenAI花了292天想把AI塞进浏览器，最终放弃了。而Anthropic反手则把浏览器塞进了AI。"
+      "title": "为 Agent 重造一台游戏引擎：南大联合南洋理工提出 VibeGame，Agent 团队自己试玩、反思、进化",
+      "url": "https://www.51cto.com/article/854442.html",
+      "hot": "VibeGame 组建了一支由 8 个专业 Agent 组成的开发团队，并为这支团队从头重造了它脚下的游戏引擎。"
     },
     {
       "rank": 10,
-      "title": "AI加速一切！数学防线刚失守，物理已在AI射程内",
-      "url": "https://www.51cto.com/article/854266.html",
-      "hot": "当我提出的任何问题可能都被Claude更快地回答时，我们如何教导和培训学生？"
+      "title": "Astra接管OpenAI！创立第三代智能体文明的新模型有多猛？",
+      "url": "https://www.51cto.com/article/854439.html",
+      "hot": "据报道，GPT Astra 的设计目标是能够连续工作数天或数周。它能记住之前的修正、协调多个 Agent、操作桌面软件、制作演示文稿、审查财务数据、分析混乱的数据集。"
     }
   ]
 }

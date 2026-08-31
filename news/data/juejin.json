@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-08-31T00:32:07+00:00",
+  "updated_at": "2026-08-31T05:59:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "「速通Shell」Shell 编程性能优化",
       "url": "https://juejin.cn/post/7678975240300773428",
-      "hot": "1539"
+      "hot": "1647"
     },
     {
       "rank": 2,
-      "title": "ValidX错误消息国际化完全指南：8种语言9个语言包与三级回退机制",
-      "url": "https://juejin.cn/post/7678747733979201536",
-      "hot": "720"
+      "title": "我的开源项目登顶 GitHub 趋势榜 No1 了！",
+      "url": "https://juejin.cn/post/7678618678956163078",
+      "hot": "873"
     },
     {
       "rank": 3,
-      "title": "我的开源项目登顶 GitHub 趋势榜 No1 了！",
-      "url": "https://juejin.cn/post/7678618678956163078",
-      "hot": "630"
+      "title": "🤔 v-mortal 是什么？！我只知道 v-model 啊！",
+      "url": "https://juejin.cn/post/7678703379591708724",
+      "hot": "747"
     },
     {
       "rank": 4,
-      "title": "🚀苹果的液态玻璃咋做？🚀",
-      "url": "https://juejin.cn/post/7678529068804554787",
-      "hot": "594"
-    },
-    {
-      "rank": 5,
-      "title": "🤔 v-mortal 是什么？！我只知道 v-model 啊！",
-      "url": "https://juejin.cn/post/7678703379591708724",
-      "hot": "486"
-    },
-    {
-      "rank": 6,
-      "title": "Firebase 如何让全球 Android 和 Flutter 开发者集体 Build Fail",
-      "url": "https://juejin.cn/post/7678586341090803748",
-      "hot": "342"
-    },
-    {
-      "rank": 7,
-      "title": "VisActor  全新图可视化开源项目：VGraph",
-      "url": "https://juejin.cn/post/7678646261258043428",
-      "hot": "279"
-    },
-    {
-      "rank": 8,
-      "title": "听说我兄弟喜欢跑车，所以必须安排上",
-      "url": "https://juejin.cn/post/7678577086287118370",
+      "title": "因为找不到好用的前端占位图，于是我自己写了个谁都能用的占位图功能",
+      "url": "https://juejin.cn/post/7678920712071168046",
       "hot": "216"
     },
     {
-      "rank": 9,
-      "title": "vue3 +TypeScrpit高阶运用：让低代码的Json Schema拥有完整的类型提示",
-      "url": "https://juejin.cn/post/7678644473824657443",
+      "rank": 5,
+      "title": "看懂大模型架构术语，帮助你理解目前常见的大模型开源架构",
+      "url": "https://juejin.cn/post/7679247792172433423",
+      "hot": "207"
+    },
+    {
+      "rank": 6,
+      "title": "pm2 替代品，nodejs&bun 线上部署必备工具",
+      "url": "https://juejin.cn/post/7679000152963399689",
+      "hot": "207"
+    },
+    {
+      "rank": 7,
+      "title": "豆包工作Agent正式发布，直接给到夯。",
+      "url": "https://juejin.cn/post/7679623224678613034",
       "hot": "180"
     },
     {
+      "rank": 8,
+      "title": "ZCode 周末送额度活动开启：3 亿 Token 免费领取",
+      "url": "https://juejin.cn/post/7678646261259092004",
+      "hot": "171"
+    },
+    {
+      "rank": 9,
+      "title": "我做了一个开源项目，让 AI 记住我们解决过的问题：Usora",
+      "url": "https://juejin.cn/post/7679020474672660526",
+      "hot": "153"
+    },
+    {
       "rank": 10,
-      "title": "AI问诊5秒出结果，医生反而更忙了",
-      "url": "https://juejin.cn/post/7678607362015477814",
-      "hot": "180"
+      "title": "AI 时代，一个优化 Flutter 的重复代码工具 Deslop",
+      "url": "https://juejin.cn/post/7679542577553571894",
+      "hot": "153"
     }
   ]
 }
