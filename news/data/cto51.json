@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-08-31T23:13:33+00:00",
+  "updated_at": "2026-09-01T01:50:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Agent这些联网工具有什么区别？一张表看懂怎么选",
-      "url": "https://www.51cto.com/article/854376.html",
-      "hot": "GPT Researcher、web-access、bb-browser、MediaCrawler 和 Agent-Reach 都能“让 AI 上网”，但解决的其实不是同一个问题。本文按搜索、阅读、登录操作、平台采集和研究报告五类需求，整理它们的边界与取舍。"
+      "title": "藏太深！ChatGPT中居然还有这么多Codex同款能力",
+      "url": "https://www.51cto.com/article/854580.html",
+      "hot": "知名开发者Simon Willison刚写了篇博客，翻出了ChatGPT Work里一大批聊天模式没有的隐藏能力。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS7  端侧OCR文字识别实战：做一个\"拍书摘\"工具，把识别框叠回原图",
-      "url": "https://ost.51cto.com/posts/55769",
-      "hot": "拍下一页书、一张名片、一段聊天截图，把里面的文字变成能编辑、能搜索、能复制的文本&mdash;&mdash;这是手机上一个真实且高频的需求。以前做这件事要..."
+      "title": "别再拿 “大模型分析日志” 应付面试！这才是可落地的 AIOps 故障诊断架构",
+      "url": "https://www.51cto.com/article/854578.html",
+      "hot": "一套真正具备落地可能的 AIOps 系统是什么样的？"
     },
     {
       "rank": 3,
-      "title": "OpenAI被曝按吨囤Mac mini！全拿去训AI了",
-      "url": "https://www.51cto.com/article/854466.html",
-      "hot": "The Information刚刚爆料，OpenAI已经采购了数万台Mac mini和Mac Studio，到现在还在追着苹果要货。"
+      "title": "HarmonyOS 组件与模板服务完全指南：提升鸿蒙应用开发效率的利器",
+      "url": "https://ost.51cto.com/posts/55799",
+      "hot": "HarmonyOS组件与模板服务完全指南：提升鸿蒙应用开发效率的利器一、开篇：鸿蒙生态开发的新范式在移动应用开发领域，&ldquo;效率&rdquo;与&ldquo;质量&rdquo;始..."
     },
     {
       "rank": 4,
-      "title": "Anthropic 公开了 AI 原生开发实践：规划、设计一直谈到部署和生产维护",
-      "url": "https://www.51cto.com/article/854265.html",
-      "hot": "事故响应 Agent 使用单一用途账号，可以读生产日志、写事故文档、在公司频道发消息，但不能自动部署修复。一次模型升级后，它通过 Slack 联系了另一个有代码写入能力的 Claude 实例，请对方推送修复。最后，人工评审 Gate 按设计拦住了这个动作，没有出现成功绕过，也没有自动部署到生产。"
+      "title": "【HarmonyOS 7 悬浮页签深度实战】08 现有 Tabs 迁移、问题排查与降级策略",
+      "url": "https://ost.51cto.com/posts/55798",
+      "hot": "前言一个已经运行了一段时间的HarmonyOS项目，底部Tabs通常早就超出了页面切换的范围。当前索引、列表筛选、表单草稿、播放进度、路由入口..."
     },
     {
       "rank": 5,
-      "title": "今天，库克最后一天当CEO！苹果正式换帅",
-      "url": "https://www.51cto.com/article/854457.html",
-      "hot": "从明天起，苹果将迎来John Ternus（特努斯）时代。51岁的硬件工程老将特努斯，正式接棒这家近5万亿「超级帝国」的权杖。"
+      "title": "Agent 驱动的架构模式初探",
+      "url": "https://www.51cto.com/article/854452.html",
+      "hot": "Gartner预测，到2026年底，全球40%的企业应用将嵌入具备任务执行能力的AI智能体，这一数字在2025年尚不足5%。麦肯锡更是估算，到2030年，Agent可为全球经济贡献2.6万亿至4.4万亿美元的年GDP增量。"
     },
     {
       "rank": 6,
-      "title": "运维工程师如何转型前沿部署工程师（FDE），抓住 AI 落地的时代红利",
-      "url": "https://www.51cto.com/article/854456.html",
-      "hot": "本文从 FDE 基础概念、FDE 与运维内在关系、运维转型 FDE 完整实施路径、转型优选赛道四个维度，完整拆解这一新兴职业方向。"
+      "title": "不懂 page migrate，别说你懂 NUMA 调优",
+      "url": "https://www.51cto.com/article/854450.html",
+      "hot": "有相当多的人在进行 NUMA 调优的时候，会把 page migrate 给忽略掉。如同我之前遇到的那一个事例，团队为了让服务器性能得到提高，对 NUMA 架构开展了一系列的参数调整工作，还对内存分配策略进行了优化，可是性能提升得并不明显。"
     },
     {
       "rank": 7,
-      "title": "HarmonyOS 瀑布流布局完全指南：WaterFlow 与 FlowItem 组件深度解析",
-      "url": "https://ost.51cto.com/posts/55761",
-      "hot": "HarmonyOS瀑布流布局完全指南：WaterFlow与FlowItem组件深度解析一、不规则布局的智能化解决方案在图片社交、电商导购、资讯聚合等现代应用..."
+      "title": "LLM-as-a-Judge也会失灵：长对话评测不能只看一个分数",
+      "url": "https://www.51cto.com/article/854526.html",
+      "hot": "模型越来越擅长生成流畅句子后，“看起来还不错”已经不够做评测标准。UPHELD 的贡献是把长对话拆成内容、风格和语境合理性三条可被人逐轮检查的轴，再让自动指标接受人工判断的校准。它没有证明现有 LLM 裁判没有价值，也没有给出一个适用于所有聊天场景的万能分数。"
     },
     {
       "rank": 8,
-      "title": "急急急用电！马斯克开造燃气轮机叶片",
-      "url": "https://www.51cto.com/article/854446.html",
-      "hot": "现在，一片燃气轮机叶片，和一颗最新的AI芯片一样，都可能决定AI接下来有多少算力可用。"
+      "title": "龙虾还魂，2.0成飞书了！？",
+      "url": "https://www.51cto.com/article/854569.html",
+      "hot": "OpenClaw正式发布2.0版本，版本号v2026.8.1，号称项目史上最大规模的一次更新。"
     },
     {
       "rank": 9,
-      "title": "GitHub最热架构图Agent，开发者故事看哭了",
-      "url": "https://www.51cto.com/article/854444.html",
-      "hot": "现在，一个登上GitHub Trending的开源项目Archify，把这件事压缩成了一句话：分析这个代码仓库，并生成一张高层运行时架构图。"
+      "title": "Python 字符串处理：20 个高频方法速查",
+      "url": "https://www.51cto.com/article/854558.html",
+      "hot": "字符串处理是日常编程最高频任务，直接掌握本文这 20 个方法可覆盖 95% 场景。"
     },
     {
       "rank": 10,
-      "title": "为 Agent 重造一台游戏引擎：南大联合南洋理工提出 VibeGame，Agent 团队自己试玩、反思、进化",
-      "url": "https://www.51cto.com/article/854442.html",
-      "hot": "VibeGame 组建了一支由 8 个专业 Agent 组成的开发团队，并为这支团队从头重造了它脚下的游戏引擎。"
+      "title": "Agent 做强化学习，GPU 为什么总在等？",
+      "url": "https://www.51cto.com/article/854542.html",
+      "hot": "Agentic RL（Agentic Reinforcement Learning，智能体强化学习）让同一个问题生成 16 条轨迹时，图形处理器（GPU，Graphics Processing Unit）可能一直有负载，训练器却仍在等最慢的那一条。真正的瓶颈常常不是模型不会算，而是系统不知道哪些缓存该留、哪条轨迹该等、旧权重的缓存何时必须失效。"
     }
   ]
 }

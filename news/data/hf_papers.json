@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-08-31T19:15:53+00:00",
+  "updated_at": "2026-09-01T01:50:20+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -50,7 +50,7 @@
       "rank": 8,
       "title": "Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning",
       "url": "https://huggingface.co/papers/2608.27549",
-      "hot": "39"
+      "hot": "43"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
-      "url": "https://huggingface.co/papers/2407.17789",
-      "hot": "46"
+      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
+      "url": "https://huggingface.co/papers/2508.16279",
+      "hot": "68"
     }
   ]
 }

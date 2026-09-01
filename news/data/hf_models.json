@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-08-31T19:15:53+00:00",
+  "updated_at": "2026-09-01T01:50:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qwen/Qwen3.8-Flash-Next",
       "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "hot": "4503"
+      "hot": "4523"
     },
     {
       "rank": 2,
       "title": "zai-org/GLM-5.3-Flash",
       "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-      "hot": "1801"
+      "hot": "1812"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.3",
       "url": "https://huggingface.co/zai-org/GLM-5.3",
-      "hot": "1409"
+      "hot": "1417"
     },
     {
       "rank": 4,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "13459"
+      "hot": "13478"
     },
     {
       "rank": 5,
       "title": "unsloth/Qwen3.8-Flash-Next-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
-      "hot": "630"
+      "hot": "637"
     },
     {
       "rank": 6,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "3280"
+      "hot": "3287"
     },
     {
       "rank": 7,
-      "title": "tencent/Hy4-preview",
-      "url": "https://huggingface.co/tencent/Hy4-preview",
-      "hot": "346"
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "hot": "352"
     },
     {
       "rank": 8,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "2347"
+      "title": "tencent/Hy4-preview",
+      "url": "https://huggingface.co/tencent/Hy4-preview",
+      "hot": "351"
     },
     {
       "rank": 9,
-      "title": "unsloth/GLM-5.3-Flash-GGUF",
-      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
-      "hot": "308"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "2368"
     },
     {
       "rank": 10,
-      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-      "hot": "301"
+      "title": "unsloth/GLM-5.3-Flash-GGUF",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
+      "hot": "313"
     }
   ]
 }

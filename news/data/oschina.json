@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-08-31T23:13:37+00:00",
+  "updated_at": "2026-09-01T01:50:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "轻量级运维极速引擎 OpsFlash v0.4.0 正式发布",
+      "url": "https://www.oschina.net/news/502230",
+      "hot": "Mon, 31 Aug 2026 22:35:55 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "全能型 covo-agent v0.1.0 发布：流式输出与 TUI 使用同一套渲染引擎",
+      "url": "https://www.oschina.net/news/502228",
+      "hot": "Mon, 31 Aug 2026 21:38:54 +0800"
+    },
+    {
+      "rank": 3,
       "title": "开源中国的独立叙事：在被收购的宿命里，走一条相反的路",
       "url": "https://www.oschina.net/news/502227",
       "hot": "Mon, 31 Aug 2026 20:00:37 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "灵界 OS v3.0.0 发布，相机支持录像、应用安装器全面优化",
       "url": "https://www.oschina.net/news/502226",
       "hot": "Mon, 31 Aug 2026 18:29:09 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "MateClaw 2.2.0 发布：可插拔 Agent Runtime、持久任务恢复与 A2A 互联",
       "url": "https://www.oschina.net/news/502224",
       "hot": "Mon, 31 Aug 2026 16:54:47 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "203 个开源工具，帮你拿回硬件控制权",
       "url": "https://www.oschina.net/news/502223",
       "hot": "Mon, 31 Aug 2026 15:39:24 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "省下 100TB 内存：Cloudflare 如何给 1.1.1.1 的 DNS 缓存做减法",
       "url": "https://www.oschina.net/news/502222/dns-cache-memory-optimization-1111",
       "hot": "Mon, 31 Aug 2026 15:33:05 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "400 美元的开源双足机器人来了，能走能踢能滑冰",
       "url": "https://www.oschina.net/news/502221/pollen-robotics-microduck",
       "hot": "Mon, 31 Aug 2026 15:31:13 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "OpenAI 内部，三段 AI 文明先后兴起、被消灭，最后重生",
       "url": "https://www.oschina.net/news/502219/openai-huggingface",
       "hot": "Mon, 31 Aug 2026 15:20:38 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "MooTool Next 1.1.4 发布！全新重写，带来更现代的界面与多窗口体验",
       "url": "https://www.oschina.net/news/502216",
       "hot": "Mon, 31 Aug 2026 13:59:42 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "WePush Next 发布，专注批量推送的小而美的工具的全新多组件自部署版本",
-      "url": "https://www.oschina.net/news/502215",
-      "hot": "Mon, 31 Aug 2026 13:52:11 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "自托管邮件列表管理器",
-      "url": "https://www.oschina.net/p/xListman",
-      "hot": "Mon, 31 Aug 2026 10:50:40 +0800"
     }
   ]
 }
