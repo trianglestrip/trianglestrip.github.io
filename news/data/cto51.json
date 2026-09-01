@@ -1,44 +1,44 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-01T06:50:31+00:00",
+  "updated_at": "2026-09-01T12:05:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS7 单段式拍照连拍后 photoAvailable 不回调？缓冲区没释放，不是框架 bug",
+      "url": "https://ost.51cto.com/posts/55818",
+      "hot": "前言社区里有人提了这样一个问题：项目相机模块走单段式拍照，on(&#039;photoAvailable&#039;)回调里取图渲染，单拍一直没问题。但连拍模式下，第一张..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS7 AI语音朗读实战：做一个逐段高亮的离线朗读器",
+      "url": "https://ost.51cto.com/posts/55817",
+      "hot": "通勤路上看不了书，眼睛累的时候想听点什么&mdash;&mdash;听书是一个真实且高频的需求。做听书功能，传统路线是把文本丢给云端的合成服务：按字符计费..."
+    },
+    {
+      "rank": 3,
       "title": "全新OpenClaw 2.0发布：龙虾史上最大更新，已无人关心",
       "url": "https://www.51cto.com/article/854588.html",
       "hot": "OpenClaw 的 250K 星爆发建立在一个漏洞上。这个漏洞叫「用 20 美元的 Claude Pro 订阅跑价值几千美元的 Token」。OpenClaw 的早期用户画像极度统一：拿着 Anthropic 的包月订阅，通过 OAuth 搭车，让龙虾 24 小时替自己烧 Token。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "把 33 页官方手册压成三个动作，给小白的WorkBuddy教程，再也不用折腾 Claude 和 Codex 了",
       "url": "https://www.51cto.com/article/854453.html",
       "hot": "WorkBuddy 的上手门槛不在安装，在于换一套协作方式：下指令时像给实习生派活（说清做什么、有什么、怎么样，大任务拆小步，不满意就返工）；配资源时像布置工位（专属目录、材料递到手边、权限逐个点头）；管任务时像带教验收（四视图验货、改前备份、烂会话重开、验证过再自动化）。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "藏太深！ChatGPT中居然还有这么多Codex同款能力",
       "url": "https://www.51cto.com/article/854580.html",
       "hot": "知名开发者Simon Willison刚写了篇博客，翻出了ChatGPT Work里一大批聊天模式没有的隐藏能力。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "别再拿 “大模型分析日志” 应付面试！这才是可落地的 AIOps 故障诊断架构",
       "url": "https://www.51cto.com/article/854578.html",
       "hot": "一套真正具备落地可能的 AIOps 系统是什么样的？"
-    },
-    {
-      "rank": 5,
-      "title": "HarmonyOS 组件与模板服务完全指南：提升鸿蒙应用开发效率的利器",
-      "url": "https://ost.51cto.com/posts/55799",
-      "hot": "HarmonyOS组件与模板服务完全指南：提升鸿蒙应用开发效率的利器一、开篇：鸿蒙生态开发的新范式在移动应用开发领域，&ldquo;效率&rdquo;与&ldquo;质量&rdquo;始..."
-    },
-    {
-      "rank": 6,
-      "title": "【HarmonyOS 7 悬浮页签深度实战】08 现有 Tabs 迁移、问题排查与降级策略",
-      "url": "https://ost.51cto.com/posts/55798",
-      "hot": "前言一个已经运行了一段时间的HarmonyOS项目，底部Tabs通常早就超出了页面切换的范围。当前索引、列表筛选、表单草稿、播放进度、路由入口..."
     },
     {
       "rank": 7,

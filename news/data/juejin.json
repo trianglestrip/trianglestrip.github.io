@@ -1,67 +1,67 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-09-01T06:50:21+00:00",
+  "updated_at": "2026-09-01T12:05:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "「速通Shell」Shell 编程性能优化",
-      "url": "https://juejin.cn/post/7678975240300773428",
-      "hot": "1836"
+      "title": "豆包工作Agent正式发布，直接给到夯。",
+      "url": "https://juejin.cn/post/7679623224678613034",
+      "hot": "711"
     },
     {
       "rank": 2,
-      "title": "ValidX vs Apache Commons Validator：功能与性能对比",
-      "url": "https://juejin.cn/post/7680079424891617332",
-      "hot": "945"
+      "title": "Redis已正式接入AI",
+      "url": "https://juejin.cn/post/7680014875347255334",
+      "hot": "612"
     },
     {
       "rank": 3,
-      "title": "公司没给活干，却因为员工看手机把人开了：法院判赔11万元",
-      "url": "https://juejin.cn/post/7679402031226110004",
-      "hot": "648"
+      "title": "OpenJDK 全面禁止 AI 生成代码！",
+      "url": "https://juejin.cn/post/7680074643861291034",
+      "hot": "576"
     },
     {
       "rank": 4,
-      "title": "豆包工作Agent正式发布，直接给到夯。",
-      "url": "https://juejin.cn/post/7679623224678613034",
-      "hot": "558"
+      "title": "看懂大模型架构术语，帮助你理解目前常见的大模型开源架构",
+      "url": "https://juejin.cn/post/7679247792172433423",
+      "hot": "522"
     },
     {
       "rank": 5,
-      "title": "Redis已正式接入AI",
-      "url": "https://juejin.cn/post/7680014875347255334",
-      "hot": "495"
+      "title": "老板要周报？我说不用，代码提交就是进度",
+      "url": "https://juejin.cn/post/7679985418771218470",
+      "hot": "405"
     },
     {
       "rank": 6,
-      "title": "看懂大模型架构术语，帮助你理解目前常见的大模型开源架构",
-      "url": "https://juejin.cn/post/7679247792172433423",
-      "hot": "441"
-    },
-    {
-      "rank": 7,
-      "title": "老板要周报？我说不用，代码提交就是进度",
-      "url": "https://juejin.cn/post/7679985418771218470",
+      "title": "AI 时代，一个优化 Flutter 的重复代码工具 Deslop",
+      "url": "https://juejin.cn/post/7679542577553571894",
       "hot": "342"
     },
     {
+      "rank": 7,
+      "title": "微信内部的生产级模型，居然开源了",
+      "url": "https://juejin.cn/post/7680023541135507497",
+      "hot": "279"
+    },
+    {
       "rank": 8,
-      "title": "AI 时代，一个优化 Flutter 的重复代码工具 Deslop",
-      "url": "https://juejin.cn/post/7679542577553571894",
-      "hot": "306"
+      "title": "Show me your works & token -稀土掘金上线作品广场和用量统计",
+      "url": "https://juejin.cn/post/7675992325912887315",
+      "hot": "279"
     },
     {
       "rank": 9,
-      "title": "OpenJDK 全面禁止 AI 生成代码！",
-      "url": "https://juejin.cn/post/7680074643861291034",
-      "hot": "288"
+      "title": "登录页还在用渐变？我一口气做了 5 个能摸的背景动效：吹蒲公英、滴墨染水、点熔岩闷裂",
+      "url": "https://juejin.cn/post/7680025405151084571",
+      "hot": "270"
     },
     {
       "rank": 10,
-      "title": "Show me your works & token -稀土掘金上线作品广场和用量统计",
-      "url": "https://juejin.cn/post/7675992325912887315",
+      "title": "曾经安卓开发人手一个的 EventBus，为什么现在没人爱用了？",
+      "url": "https://juejin.cn/post/7680024375572021286",
       "hot": "270"
     }
   ]
