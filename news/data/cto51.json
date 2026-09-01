@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-01T01:50:08+00:00",
+  "updated_at": "2026-09-01T06:50:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "全新OpenClaw 2.0发布：龙虾史上最大更新，已无人关心",
+      "url": "https://www.51cto.com/article/854588.html",
+      "hot": "OpenClaw 的 250K 星爆发建立在一个漏洞上。这个漏洞叫「用 20 美元的 Claude Pro 订阅跑价值几千美元的 Token」。OpenClaw 的早期用户画像极度统一：拿着 Anthropic 的包月订阅，通过 OAuth 搭车，让龙虾 24 小时替自己烧 Token。"
+    },
+    {
+      "rank": 2,
+      "title": "把 33 页官方手册压成三个动作，给小白的WorkBuddy教程，再也不用折腾 Claude 和 Codex 了",
+      "url": "https://www.51cto.com/article/854453.html",
+      "hot": "WorkBuddy 的上手门槛不在安装，在于换一套协作方式：下指令时像给实习生派活（说清做什么、有什么、怎么样，大任务拆小步，不满意就返工）；配资源时像布置工位（专属目录、材料递到手边、权限逐个点头）；管任务时像带教验收（四视图验货、改前备份、烂会话重开、验证过再自动化）。"
+    },
+    {
+      "rank": 3,
       "title": "藏太深！ChatGPT中居然还有这么多Codex同款能力",
       "url": "https://www.51cto.com/article/854580.html",
       "hot": "知名开发者Simon Willison刚写了篇博客，翻出了ChatGPT Work里一大批聊天模式没有的隐藏能力。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "别再拿 “大模型分析日志” 应付面试！这才是可落地的 AIOps 故障诊断架构",
       "url": "https://www.51cto.com/article/854578.html",
       "hot": "一套真正具备落地可能的 AIOps 系统是什么样的？"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "HarmonyOS 组件与模板服务完全指南：提升鸿蒙应用开发效率的利器",
       "url": "https://ost.51cto.com/posts/55799",
       "hot": "HarmonyOS组件与模板服务完全指南：提升鸿蒙应用开发效率的利器一、开篇：鸿蒙生态开发的新范式在移动应用开发领域，&ldquo;效率&rdquo;与&ldquo;质量&rdquo;始..."
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "【HarmonyOS 7 悬浮页签深度实战】08 现有 Tabs 迁移、问题排查与降级策略",
       "url": "https://ost.51cto.com/posts/55798",
       "hot": "前言一个已经运行了一段时间的HarmonyOS项目，底部Tabs通常早就超出了页面切换的范围。当前索引、列表筛选、表单草稿、播放进度、路由入口..."
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "Agent 驱动的架构模式初探",
       "url": "https://www.51cto.com/article/854452.html",
       "hot": "Gartner预测，到2026年底，全球40%的企业应用将嵌入具备任务执行能力的AI智能体，这一数字在2025年尚不足5%。麦肯锡更是估算，到2030年，Agent可为全球经济贡献2.6万亿至4.4万亿美元的年GDP增量。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "不懂 page migrate，别说你懂 NUMA 调优",
       "url": "https://www.51cto.com/article/854450.html",
       "hot": "有相当多的人在进行 NUMA 调优的时候，会把 page migrate 给忽略掉。如同我之前遇到的那一个事例，团队为了让服务器性能得到提高，对 NUMA 架构开展了一系列的参数调整工作，还对内存分配策略进行了优化，可是性能提升得并不明显。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "LLM-as-a-Judge也会失灵：长对话评测不能只看一个分数",
       "url": "https://www.51cto.com/article/854526.html",
       "hot": "模型越来越擅长生成流畅句子后，“看起来还不错”已经不够做评测标准。UPHELD 的贡献是把长对话拆成内容、风格和语境合理性三条可被人逐轮检查的轴，再让自动指标接受人工判断的校准。它没有证明现有 LLM 裁判没有价值，也没有给出一个适用于所有聊天场景的万能分数。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "龙虾还魂，2.0成飞书了！？",
       "url": "https://www.51cto.com/article/854569.html",
       "hot": "OpenClaw正式发布2.0版本，版本号v2026.8.1，号称项目史上最大规模的一次更新。"
-    },
-    {
-      "rank": 9,
-      "title": "Python 字符串处理：20 个高频方法速查",
-      "url": "https://www.51cto.com/article/854558.html",
-      "hot": "字符串处理是日常编程最高频任务，直接掌握本文这 20 个方法可覆盖 95% 场景。"
-    },
-    {
-      "rank": 10,
-      "title": "Agent 做强化学习，GPU 为什么总在等？",
-      "url": "https://www.51cto.com/article/854542.html",
-      "hot": "Agentic RL（Agentic Reinforcement Learning，智能体强化学习）让同一个问题生成 16 条轨迹时，图形处理器（GPU，Graphics Processing Unit）可能一直有负载，训练器却仍在等最慢的那一条。真正的瓶颈常常不是模型不会算，而是系统不知道哪些缓存该留、哪条轨迹该等、旧权重的缓存何时必须失效。"
     }
   ]
 }

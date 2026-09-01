@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-01T01:50:13+00:00",
+  "updated_at": "2026-09-01T06:50:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "shadcn 通过新推出的聊天组件将对话基础组件引入了 shadcn/ui",
+      "url": "https://www.infoq.cn/article/TKOvaxoX6xF5yWHJ7dYg?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 01 Sep 2026 13:17:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "从2999份作品出发：GOAI四大赛道的AI创新观察",
+      "url": "https://www.infoq.cn/article/fovhGGuNSwa7tG44WBFm?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 01 Sep 2026 12:54:15 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Expedia和Airbnb引入LLM生成的GraphQL模拟数据，不过规范相对滞后",
+      "url": "https://www.infoq.cn/article/Su2betkPUhxX0JTVazBi?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 01 Sep 2026 11:55:29 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "智元的“夺冠方法论”",
+      "url": "https://www.infoq.cn/article/Ql9rmriHMYtauB4R53Kw?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 01 Sep 2026 10:26:42 GMT"
+    },
+    {
+      "rank": 5,
       "title": "智能体请求暴增9.4倍，token账单却没涨：Uber 公开AI软件工厂省钱方法",
       "url": "https://www.infoq.cn/article/WGj2Jx0K2sbP3dhUXeC5?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 07:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "从出片到出海：AI MediaKit 重塑短剧全链路生产力",
       "url": "https://www.infoq.cn/article/L7P7cA3UMXXQJcBfyHuJ?utm_source=rss&utm_medium=article",
       "hot": "Mon, 31 Aug 2026 18:27:41 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "AI 写代码飞快，为何交付没有变快？小红书 Muse 的 Agentic 架构实践",
       "url": "https://www.infoq.cn/article/l88X1azz8wfwphDyECoP?utm_source=rss&utm_medium=article",
       "hot": "Mon, 31 Aug 2026 16:48:57 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "智能体适应度函数：将演进式架构扩展至确定性规则之外",
       "url": "https://www.infoq.cn/article/8iWWrov7bkk1hz5CcFft?utm_source=rss&utm_medium=article",
       "hot": "Mon, 31 Aug 2026 16:45:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "AI Coding 之后，如何让 Agent 进入企业研发全链路？得物推荐的 Harness 实践",
       "url": "https://www.infoq.cn/article/sDyQxrWR6zDPJuLX4FA8?utm_source=rss&utm_medium=article",
       "hot": "Mon, 31 Aug 2026 16:39:35 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "当数采设备不再稀缺，具身数据下一步拼什么？",
       "url": "https://www.infoq.cn/article/D2r6SJ2oYVAXGMBkPcRM?utm_source=rss&utm_medium=article",
       "hot": "Mon, 31 Aug 2026 16:04:31 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "OpenClaw 从意外爆红到“无人问津”：一个开源 AI Agent 的八个月过山车",
-      "url": "https://www.infoq.cn/article/4KQHJC49t8J8FPqaEVLv?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 31 Aug 2026 15:27:10 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "“你以为买的是 DeepSeek Flash，到手可能是 1.5 bit 缩水版”：Pi 核心贡献者谈 AI Token 黑箱",
-      "url": "https://www.infoq.cn/article/rsiiPG7xwQakgyulC88D?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 31 Aug 2026 15:19:34 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "“烂代码”转正？Bun稳定版终落地：跳票一个半月，2900个问题清零",
-      "url": "https://www.infoq.cn/article/olsG3w9zkyKRqbQesB1g?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 31 Aug 2026 15:14:06 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "不抢最贵GPU，专捡“没人要”的算力：前英伟达工程师搞出一套“拾荒者”打法",
-      "url": "https://www.infoq.cn/article/6gFLptyMHRQhrILOlQ9Q?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 31 Aug 2026 15:03:23 GMT"
     }
   ]
 }

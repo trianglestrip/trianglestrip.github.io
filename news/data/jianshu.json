@@ -1,8 +1,9 @@
 {
   "source": "jianshu",
   "title": "简书今日热点",
-  "updated_at": "2026-09-01T01:49:51+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-09-01T06:50:17+00:00",
+  "fetch_ok": false,
+  "error": "The read operation timed out",
   "items": [
     {
       "rank": 1,
