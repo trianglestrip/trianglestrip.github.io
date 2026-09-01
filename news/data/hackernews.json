@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-01T19:30:29+00:00",
+  "updated_at": "2026-09-01T21:55:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Claude Fable 5.1 and Claude Mythos 5.1",
       "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "hot": "426"
+      "hot": "723"
     },
     {
       "rank": 2,
-      "title": "Play Store blocks AuroraStore, hurting GrapheneOS users",
-      "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
-      "hot": "340"
+      "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
+      "url": "https://danluu.com/zitron/",
+      "hot": "181"
     },
     {
       "rank": 3,
-      "title": "Launch HN: Nori Robotics (YC S26) – A low-cost humanoid robot for development",
-      "url": "https://www.norirobotics.com/",
-      "hot": "55"
+      "title": "The ChatGPT/Codex app bundles a full copy of LibreOffice",
+      "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+      "hot": "130"
     },
     {
       "rank": 4,
-      "title": "AnkiDroid: Google Play no longer allowing Open Collective donation link",
-      "url": "https://github.com/ankidroid/Anki-Android/issues/21656",
-      "hot": "726"
+      "title": "Refurbishing a Tektronix TDS7104 Oscilloscope",
+      "url": "https://tomverbeure.github.io/2026/08/23/Tektronix-TDS7104-Refurbishing.html",
+      "hot": "48"
     },
     {
       "rank": 5,
       "title": "The creator of Jujutsu has joined ERSC",
       "url": "https://ersc.io/blog/martin-joins-ersc",
-      "hot": "86"
+      "hot": "139"
     },
     {
       "rank": 6,
-      "title": "Ambient CSS v3 – Blender meets CSS",
-      "url": "https://ambientcss.vercel.app/",
-      "hot": "114"
+      "title": "AnkiDroid: Google Play no longer allowing Open Collective donation link",
+      "url": "https://github.com/ankidroid/Anki-Android/issues/21656",
+      "hot": "783"
     },
     {
       "rank": 7,
-      "title": "UEFA's Champions League draw creates unfair clusters; a Cayley graph fixes it",
-      "url": "https://sariyuce.com/blog/2026/UEFA-Draw/",
-      "hot": "31"
+      "title": "Launch HN: Nori Robotics (YC S26) – A low-cost humanoid robot for development",
+      "url": "https://www.norirobotics.com/",
+      "hot": "94"
     },
     {
       "rank": 8,
-      "title": "Ask HN: Who is hiring? (September 2026)",
-      "url": "https://news.ycombinator.com/item?id=49522897",
-      "hot": "142"
+      "title": "Introducing Ad Blocker for Firefox on iOS",
+      "url": "https://blog.mozilla.org/en/firefox/ad-blocker-on-ios/",
+      "hot": "229"
     },
     {
       "rank": 9,
-      "title": "I trained a small transformer in 1.5hrs and it beats many LLMs",
-      "url": "https://mvakde.github.io/blog/44-on-arc-1/",
-      "hot": "414"
+      "title": "Show HN: Running 104GB Qwen3.8-Flash-Next on 48GB Mac with at ~12 tok/s",
+      "url": "https://github.com/carloslfu/slotstream",
+      "hot": "112"
     },
     {
       "rank": 10,
-      "title": "Movie Scene Map – 13,312 films, series, games, anime and manga",
-      "url": "https://moviescenemap.com/",
-      "hot": "52"
+      "title": "Path to Astra: critical capabilities and frontier safeguards",
+      "url": "https://openai.com/index/path-to-astra/",
+      "hot": "32"
     }
   ]
 }
