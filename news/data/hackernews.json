@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-01T12:05:48+00:00",
+  "updated_at": "2026-09-01T16:32:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AnkiDroid: Google Play no longer allowing Open Collective donation link",
-      "url": "https://github.com/ankidroid/Anki-Android/issues/21656",
-      "hot": "202"
+      "title": "Play Store blocks AuroraStore, hurting GrapheneOS users",
+      "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
+      "hot": "45"
     },
     {
       "rank": 2,
-      "title": "44% on ARC-AGI-1 in 67 cents",
-      "url": "https://mvakde.github.io/blog/44-on-arc-1/",
-      "hot": "90"
+      "title": "AnkiDroid: Google Play no longer allowing Open Collective donation link",
+      "url": "https://github.com/ankidroid/Anki-Android/issues/21656",
+      "hot": "579"
     },
     {
       "rank": 3,
-      "title": "Fastpotify",
-      "url": "https://fastpotify.rocks/",
-      "hot": "490"
+      "title": "Ask HN: Who is hiring? (September 2026)",
+      "url": "https://news.ycombinator.com/item?id=49522897",
+      "hot": "72"
     },
     {
       "rank": 4,
-      "title": "American Airlines' Legendary Mechanic Passes Away at 100 After 80-Year Career",
-      "url": "https://simpleflying.com/american-airlines-mechanic-passes-away-100-record-80-years/",
-      "hot": "99"
+      "title": "Ambient CSS v3 – Blender meets CSS",
+      "url": "https://ambientcss.vercel.app/",
+      "hot": "37"
     },
     {
       "rank": 5,
-      "title": "GPU World",
-      "url": "https://www.gpuworld.org/",
-      "hot": "278"
+      "title": "Io_uring Without Readahead",
+      "url": "https://frn.sh/io-uring/",
+      "hot": "63"
     },
     {
       "rank": 6,
-      "title": "Tmp.0ut Volume 5",
-      "url": "https://tmpout.sh/5/",
-      "hot": "103"
+      "title": "44% on ARC-AGI-1 in 67 cents",
+      "url": "https://mvakde.github.io/blog/44-on-arc-1/",
+      "hot": "263"
     },
     {
       "rank": 7,
-      "title": "Polishing Cloth Updated",
-      "url": "https://512pixels.net/2026/08/polishing-cloth-updated/",
-      "hot": "52"
+      "title": "American Airlines' Legendary Mechanic Passes Away at 100 After 80-Year Career",
+      "url": "https://simpleflying.com/american-airlines-mechanic-passes-away-100-record-80-years/",
+      "hot": "276"
     },
     {
       "rank": 8,
-      "title": "Restroom Archive",
-      "url": "https://restroomarchive.com",
-      "hot": "164"
+      "title": "Keenable SELECT: an agent that searches the web in SQL",
+      "url": "https://keenableai.github.io/select-showcase/",
+      "hot": "17"
     },
     {
       "rank": 9,
-      "title": "Playa Phone",
-      "url": "https://playaphone.com/",
-      "hot": "654"
+      "title": "Fastpotify",
+      "url": "https://fastpotify.rocks/",
+      "hot": "685"
     },
     {
       "rank": 10,
-      "title": "I turned my security cameras into an automatic bird identification system",
-      "url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/",
-      "hot": "526"
+      "title": "We Are Rebuilding Monica",
+      "url": "https://www.monicahq.com/en/blog/we-are-rebuilding-monica/",
+      "hot": "36"
     }
   ]
 }
