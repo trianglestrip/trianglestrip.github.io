@@ -1,0 +1,141 @@
+<style>
+  /* ===== LoveIt 风格顶部导航栏 ===== */
+
+  /* 顶部导航栏 */
+  .top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 24px;
+    background: #fff;
+    border-bottom: 1px solid #e1e4e8;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  [data-theme="dark"] .top-nav {
+    background: #2e3440;
+    border-bottom-color: #4c566a;
+  }
+
+  /* 站点标题 */
+  .nav-brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    margin-right: 32px;
+    white-space: nowrap;
+  }
+
+  [data-theme="dark"] .nav-brand {
+    color: #eceff4;
+  }
+
+  /* 导航链接容器 */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .nav-link {
+    color: #606266;
+    text-decoration: none;
+    padding: 4px 0;
+    white-space: nowrap;
+    transition: color 0.2s;
+    line-height: 56px;
+  }
+
+  .nav-link:hover {
+    color: #42b983;
+  }
+
+  .nav-link.active {
+    color: #42b983;
+    font-weight: 600;
+    border-bottom: 2px solid #42b983;
+  }
+
+  [data-theme="dark"] .nav-link {
+    color: #d8dee9;
+  }
+
+  [data-theme="dark"] .nav-link:hover,
+  [data-theme="dark"] .nav-link.active {
+    color: #a3be8c;
+  }
+
+  /* ===== 布局调整：隐藏桌面侧边栏，内容全宽 ===== */
+
+  /* 推动内容区下移，不被固定导航遮挡 */
+  body {
+    padding-top: 56px;
+  }
+
+  /* 桌面端隐藏左侧边栏 */
+  @media (min-width: 769px) {
+    .book-menu {
+      display: none !important;
+    }
+
+    .book-page {
+      max-width: 100% !important;
+      flex: 1 !important;
+      padding-left: 0 !important;
+    }
+
+    main.container.flex {
+      padding: 0 16px;
+    }
+
+    /* 移动端 header 中的菜单按钮在桌面隐藏（已有 hidden） */
+    .book-header {
+      display: none !important;
+    }
+  }
+
+  /* 移动端导航栏适配 */
+  @media (max-width: 768px) {
+    .top-nav {
+      padding: 0 12px;
+      height: 48px;
+    }
+
+    body {
+      padding-top: 48px;
+    }
+
+    .nav-brand {
+      font-size: 16px;
+      margin-right: 16px;
+    }
+
+    .nav-links {
+      gap: 16px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      line-height: 48px;
+    }
+  }
+</style>
+
+<!-- LoveIt 风格顶部导航栏 -->
+<nav class="top-nav">
+  <a href="/" class="nav-brand">{{ .Site.Title }}</a>
+  <div class="nav-links">
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="nav-link{{ if hasPrefix $.RelPermalink .URL }} active{{ end }}">{{ .Name }}</a>
+    {{ end }}
+  </div>
+</nav>

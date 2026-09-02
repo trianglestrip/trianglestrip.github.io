@@ -55,6 +55,28 @@ disablePathToLower = true
     url = 'https://github.com/trianglestrip/trianglestrip.github.io'
     weight = 10
 
+# LoveIt 风格顶部导航栏（用 menu.main 渲染）
+  [[menu.main]]
+    name = '文章'
+    url = '/posts/'
+    weight = 1
+  [[menu.main]]
+    name = '随手记'
+    url = '/notes/'
+    weight = 2
+  [[menu.main]]
+    name = '热榜'
+    url = '/news/'
+    weight = 3
+  [[menu.main]]
+    name = '直播'
+    url = '/live/'
+    weight = 4
+  [[menu.main]]
+    name = '关于'
+    url = '/about/'
+    weight = 5
+
 # Book 的 source / txt 输出
 [outputFormats]
   [outputFormats.txt]
