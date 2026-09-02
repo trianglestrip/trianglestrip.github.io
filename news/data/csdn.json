@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-02T20:41:02+00:00",
+  "updated_at": "2026-09-02T22:51:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【LangChain】 实战指南：从模型定义到工具调用与实时天气查询实战",
       "url": "https://blog.csdn.net/yhrxh_ymq/article/details/164109036",
-      "hot": "25047"
+      "hot": "24448"
     },
     {
       "rank": 2,
       "title": "从本地到公网：Windows 部署 KouriChat，并接入 DeepSeek 实现微信 AI 对话",
       "url": "https://blog.csdn.net/mrdeam/article/details/164270020",
-      "hot": "23270"
+      "hot": "23001"
     },
     {
       "rank": 3,
       "title": "鸿蒙应用 AI 对话实战：用蓝耘 MaaS 给礼物 App 装上「多轮对话选礼大脑」",
       "url": "https://blog.csdn.net/weixin_52908342/article/details/164213393",
-      "hot": "17134"
+      "hot": "16413"
     },
     {
       "rank": 4,
-      "title": "从本地 AI 到远程工作台：OpenClaw 配合工具，解锁 NAS、小游戏和远程桌面",
-      "url": "https://blog.csdn.net/COLLINSXU/article/details/164259720",
-      "hot": "10853"
+      "title": "【AI 应用 -- 白话大模型（篇八）】《从零系统学习 AI Skill之起源发展、文件结构、编写原则、机制原理与项目实战案例》",
+      "url": "https://blog.csdn.net/2501_93351213/article/details/164262916",
+      "hot": "10793"
     },
     {
       "rank": 5,
-      "title": "【AI 应用 -- 白话大模型（篇八）】《从零系统学习 AI Skill之起源发展、文件结构、编写原则、机制原理与项目实战案例》",
-      "url": "https://blog.csdn.net/2501_93351213/article/details/164262916",
-      "hot": "10389"
+      "title": "从本地 AI 到远程工作台：OpenClaw 配合工具，解锁 NAS、小游戏和远程桌面",
+      "url": "https://blog.csdn.net/COLLINSXU/article/details/164259720",
+      "hot": "10743"
     },
     {
       "rank": 6,
       "title": "【BlueZ 】用户态入口：main.c 核心函数与程序启动流程",
       "url": "https://blog.csdn.net/weixin_37800531/article/details/164164199",
-      "hot": "9744"
+      "hot": "9629"
     },
     {
       "rank": 7,
       "title": "实时语音 Agent：从语音机器人到连续协作界面",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/163614191",
-      "hot": "9552"
+      "hot": "9466"
     },
     {
       "rank": 8,
       "title": "Docker - Swarm中的负载均衡与服务发现",
       "url": "https://blog.csdn.net/qq_41187124/article/details/157611661",
-      "hot": "9481"
+      "hot": "9408"
     },
     {
       "rank": 9,
-      "title": "计算机网络｜数据链路层详解：MAC 地址、交换机、ARP 协议、CRC 校验",
-      "url": "https://blog.csdn.net/2502_93799892/article/details/164213960",
-      "hot": "9456"
+      "title": "时序数据库 DolphinDB 不只是存数据，更是能马上算、马上用",
+      "url": "https://blog.csdn.net/linshantang/article/details/164229258",
+      "hot": "9124"
     },
     {
       "rank": 10,
-      "title": "时序数据库 DolphinDB 不只是存数据，更是能马上算、马上用",
-      "url": "https://blog.csdn.net/linshantang/article/details/164229258",
-      "hot": "9346"
+      "title": "计算机网络｜数据链路层详解：MAC 地址、交换机、ARP 协议、CRC 校验",
+      "url": "https://blog.csdn.net/2502_93799892/article/details/164213960",
+      "hot": "8965"
     }
   ]
 }
