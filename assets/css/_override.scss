@@ -1,0 +1,23 @@
+// ==============================
+// Override Variables
+// 覆盖变量
+// ==============================
+
+// HarmonyOS Sans 字体
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url('/fonts/HarmonyOS_Sans_Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url('/fonts/HarmonyOS_Sans_Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+// 全局字体：HarmonyOS Sans 优先
+$global-font-family: 'HarmonyOS Sans', system-ui, -apple-system, BlinkMacSystemFont,
+  "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+  Arial, sans-serif !default;
