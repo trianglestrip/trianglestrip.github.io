@@ -1,0 +1,104 @@
+baseURL = "https://trianglestrip.github.io/"
+theme = "LoveIt"
+title = "随手记录"
+summaryLength = 2000
+defaultContentLanguage = "zh-cn"
+locale = "zh-CN"
+hasCJKLanguage = true
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+  [[menu.main]]
+    weight = 2
+    identifier = "notes"
+    name = "随手记"
+    url = "/notes/"
+  [[menu.main]]
+    weight = 3
+    identifier = "news"
+    name = "热榜"
+    url = "/news/"
+  [[menu.main]]
+    weight = 4
+    identifier = "live"
+    name = "直播"
+    url = "/live/"
+  [[menu.main]]
+    weight = 5
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+
+[params]
+  defaultTheme = "auto"
+  dateFormat = "2006-01-02"
+  description = "个人博客，记录技术笔记与生活碎片。"
+
+  [params.header.title]
+    name = "随手记录"
+
+  [params.footer]
+    enable = true
+    custom = ""
+    hugo = false
+    copyright = true
+    author = false
+    since = 2026
+    icp = ""
+
+  [params.home]
+    [params.home.profile]
+      enable = false
+    [params.home.posts]
+      enable = true
+      paginate = 10
+      summaryLength = 2000
+
+  [params.social]
+
+  [params.app]
+    title = "随手记录"
+    svgFavicon = "/favicon.svg"
+    themeColor = "#42b983"
+
+  [params.analytics]
+    [params.analytics.baidu]
+      id = "8ca36c3739321aa5b1917cdce386d850"
+
+  [params.discussions]
+    category = "博客"
+
+  [params.page.share]
+    enable = false
+
+  [params.page.comment]
+    enable = true
+    [params.page.comment.utterances]
+      enable = true
+      host = "https://beaudar.lipk.org"
+      repo = "trianglestrip/trianglestrip.github.io"
+      issueTerm = "title"
+      issueLabel = "pathname"
+      lightTheme = "github-light"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true

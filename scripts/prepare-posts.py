@@ -72,9 +72,9 @@ def main() -> int:
         print("no posts directory, content copied only")
         return 0
 
-    for source_path in sorted(posts_dir.glob("*.md")):
-        if source_path.name.startswith("."):
-            continue
+    for source_path in sorted(
+        p for p in posts_dir.glob("*.md") if not p.name.startswith(("_", "."))
+    ):
         target_path = PREPARED_CONTENT / "posts" / source_path.name
         prepare_post(source_path, target_path)
 

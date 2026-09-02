@@ -1,112 +1,76 @@
 baseURL = "https://trianglestrip.github.io/"
-theme = "LoveIt"
 title = "随手记录"
-summaryLength = 2000
+theme = "book"
+locale = "zh-CN"
 defaultContentLanguage = "zh-cn"
-languageCode = "zh-CN"
 hasCJKLanguage = true
-enableEmoji = true
 enableGitInfo = true
-enableRobotsTXT = true
+enableEmoji = true
 
-[pagination]
-pagerSize = 10
-
-[menu]
-  [[menu.main]]
-    weight = 1
-    identifier = "posts"
-    name = "文章"
-    url = "/posts/"
-  [[menu.main]]
-    weight = 2
-    identifier = "notes"
-    name = "随手记"
-    url = "/notes/"
-  [[menu.main]]
-    weight = 3
-    identifier = "news"
-    name = "热榜"
-    url = "/news/"
-  [[menu.main]]
-    weight = 4
-    identifier = "live"
-    name = "直播"
-    url = "http://106.14.46.209:8080/"
-  [[menu.main]]
-    weight = 5
-    identifier = "music"
-    name = "音乐"
-    url = "http://106.14.46.209:8080/SFMusic/"
-  [[menu.main]]
-    weight = 6
-    identifier = "about"
-    name = "关于"
-    url = "/about/"
+# Hugo Book 配置
+disablePathToLower = true
 
 [params]
-  defaultTheme = "auto"
-  dateFormat = "2006-01-02"
-  description = "个人博客，记录技术笔记与生活碎片。"
+  # 配色：light / dark / auto
+  BookTheme = "auto"
 
-  [params.code.render]
-    mermaid = true
+  # 侧边栏导航的根 section（从哪个 section 渲染多级菜单）
+  BookSection = "posts"
 
-  [params.header.title]
-    name = "随手记录"
+  # 站点仓库，用于「编辑此页 / 最后修改」链接（需要 enableGitInfo）
+  BookRepo = "https://github.com/trianglestrip/trianglestrip.github.io"
+  BookEditLink = '{{ .Site.Params.BookRepo }}/edit/master/content/{{ .Path }}'
+  BookLastChangeLink = '{{ .Site.Params.BookRepo }}/commit/{{ .GitInfo.Hash }}'
 
-  [params.footer]
-    enable = true
-    custom = ""
-    hugo = false
-    copyright = true
-    author = false
-    since = 2026
-    icp = ""
+  # 全局日期格式
+  BookDateFormat = '2006-01-02'
 
-  [params.home]
-    [params.home.profile]
-      enable = false
-    [params.home.posts]
-      enable = true
-      paginate = 10
-      summaryLength = 2000
+  # 开启站内搜索（fuse.js）
+  BookSearch = true
 
-  [params.social]
+  # 关闭默认 Disqus 评论（如需可在此启用并配置）
+  BookComments = false
 
-  [params.app]
-    title = "随手记录"
-    svgFavicon = "/favicon.svg"
-    themeColor = "#42b983"
+# 顶部 / 侧边导航菜单（Book 使用 menu.home / menu.after）
+[menu]
+  [[menu.home]]
+    name = '文章'
+    pageRef = '/posts/'
+    weight = 1
+  [[menu.home]]
+    name = '随手记'
+    pageRef = '/notes/'
+    weight = 2
+  [[menu.home]]
+    name = '热榜'
+    pageRef = '/news/'
+    weight = 3
+  [[menu.home]]
+    name = '关于'
+    pageRef = '/about/'
+    weight = 4
 
-  [params.analytics]
-    [params.analytics.baidu]
-      id = "8ca36c3739321aa5b1917cdce386d850"
+  [[menu.after]]
+    name = 'GitHub'
+    url = 'https://github.com/trianglestrip/trianglestrip.github.io'
+    weight = 10
 
-  [params.discussions]
-    category = "博客"
-
-  [params.page.share]
-    enable = false
-
-  [params.page.comment]
-    enable = true
-    [params.page.comment.utterances]
-      enable = true
-      host = "https://beaudar.lipk.org"
-      repo = "trianglestrip/trianglestrip.github.io"
-      issueTerm = "pathname"
-      issueLabel = "pathname"
-      lightTheme = "github-light"
+# Book 的 source / txt 输出
+[outputFormats]
+  [outputFormats.txt]
+    mediaType = 'text/plain'
+    baseName = 'source'
+    isPlainText = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ['html', 'txt', 'rss']
+  page = ['html', 'txt']
+  section = ['html', 'txt']
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
   [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNos = true
+    style = 'base16-snazzy'
