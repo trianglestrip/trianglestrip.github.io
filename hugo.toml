@@ -12,7 +12,7 @@ disablePathToLower = true
 
 [params]
   # 配色：light / dark / auto
-  BookTheme = "auto"
+  BookTheme = "light"
 
   # 侧边栏导航的根 section（从哪个 section 渲染多级菜单）
   BookSection = "posts"
