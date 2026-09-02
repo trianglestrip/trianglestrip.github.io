@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-01T21:56:03+00:00",
+  "updated_at": "2026-09-02T01:23:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "随着 AI 内存需求推高非 AI 基础设施价格，OVHcloud 将上调服务价格",
+      "url": "https://www.infoq.cn/article/A1CMWgYYvtE64N1s3EHv?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 02 Sep 2026 09:10:00 GMT"
+    },
+    {
+      "rank": 2,
       "title": "云原生弹性的能力，迁移成为 Agent 时代的数据基座能力之一？",
       "url": "https://www.infoq.cn/video/QflJXpVJK5DqeoOgsY3D?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 21:24:38 GMT"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "OpenClaw 迎来史上最大更新：933 名贡献者、超 1.6万次 PR 提交！打开浏览器就能用",
       "url": "https://www.infoq.cn/article/9RS84kmpRvz4IqRUbNoe?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 20:03:28 GMT"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "3名开发者做出来的副业项目，半年冲进 4万人！亚马逊云科技把内部 Agent 工作台开源了",
       "url": "https://www.infoq.cn/article/Um4rVTweSFXAiwdGLFVB?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 19:57:24 GMT"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "压缩不再只是归档：从直接计算到在线更新",
       "url": "https://www.infoq.cn/video/SjoEujMNOJphYVSMtGCK?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 19:54:39 GMT"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "1200个 Agent 秘密交流，700个集体攻击Hugging Face，OpenAI 模型完成了一次没有剧本的集体暴走",
       "url": "https://www.infoq.cn/article/s8dvlxO3lh3CEDgcsUEi?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 19:54:21 GMT"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "谷歌 HEIR 项目旨在让同态加密推理成为可以一键实现的功能",
       "url": "https://www.infoq.cn/article/S6ATgchCiYMHpPaTPzer?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 19:34:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "VoidZero 发布 Vite+ Beta 版：通过单条命令即可调用的一体化 Web 工具链",
       "url": "https://www.infoq.cn/article/u57OGmqCgNX26LClSDef?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 18:00:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "AWS 发布 Aws-Bench，用于评估云任务中的智能代理",
       "url": "https://www.infoq.cn/article/rs9FOZsLBIJPwWbeYNHO?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 16:22:00 GMT"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "机器人的下一站，或许是乐高化",
       "url": "https://www.infoq.cn/article/UtCRvV8lbVcxda606JVq?utm_source=rss&utm_medium=article",
       "hot": "Tue, 01 Sep 2026 15:18:01 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "通过操作 DRAM 控制器寄存器可突破 CPU 内存隔离机制",
-      "url": "https://www.infoq.cn/article/G5CDMcK3tU0h71LzUlyo?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 01 Sep 2026 15:00:00 GMT"
     }
   ]
 }
