@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-02T05:58:00+00:00",
+  "updated_at": "2026-09-02T10:18:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI 应用皆可报名，我们把大赛门槛打下来了",
+      "url": "https://www.oschina.net/news/502274",
+      "hot": "Wed, 02 Sep 2026 17:30:03 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "开源中国开源 AI 编程工具 MothX，主打一个“省”字，驾驭中国词元",
+      "url": "https://www.oschina.net/news/502273/oschina-opensource-mothx-ai-coding-cli-agent-harness-vibe",
+      "hot": "Wed, 02 Sep 2026 17:12:55 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "ChatGPT 桌面应用里藏着 430MB 的 LibreOffice",
+      "url": "https://www.oschina.net/news/502272/chatgpt-codex-libreoffice",
+      "hot": "Wed, 02 Sep 2026 17:03:52 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "git.kernel.org 每天接收 600 万个请求，但 98% 不是来自“人类”",
+      "url": "https://www.oschina.net/news/502270/git-kernel-org-creepy-crawlies",
+      "hot": "Wed, 02 Sep 2026 14:41:06 +0800"
+    },
+    {
+      "rank": 5,
       "title": "缓存读取价砍 75%：Fable 5.1 真正想卖的不是跑分",
       "url": "https://www.oschina.net/news/502267/claude-fable-and-mythos-5-1",
       "hot": "Wed, 02 Sep 2026 10:50:54 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "从 SIP 到大模型：一天构建可本地部署的 AI 智能外呼系统 VibeVoip",
       "url": "https://my.oschina.net/u/4806939/blog/19752597",
       "hot": "Wed, 02 Sep 2026 09:52:01 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "免费可商用 PHP 管理后台 CatchAdmin V5.4.0 发布，新增短信服务能力",
       "url": "https://www.oschina.net/news/502261",
       "hot": "Wed, 02 Sep 2026 06:22:15 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "轻量级运维极速引擎 OpsFlash v0.4.1 正式发布",
       "url": "https://www.oschina.net/news/502260",
       "hot": "Tue, 01 Sep 2026 22:28:12 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "WIKI 知识库 v1.1.1 正式发布",
       "url": "https://www.oschina.net/news/502259",
       "hot": "Tue, 01 Sep 2026 22:06:18 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "wastnet 反向代理实战：一个端口统一托管前端与后端 API",
       "url": "https://www.oschina.net/news/502258",
       "hot": "Tue, 01 Sep 2026 20:29:57 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "中国游戏创业者向 DHH 的 Omacom 基金会捐赠 100 万美元",
-      "url": "https://www.oschina.net/news/502257",
-      "hot": "Tue, 01 Sep 2026 19:30:18 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "每周一天，关掉 AI 写代码",
-      "url": "https://www.oschina.net/news/502256/no-ai-fridays",
-      "hot": "Tue, 01 Sep 2026 19:22:14 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "16,000 个 PR 之后，谁还在用 OpenClaw？",
-      "url": "https://www.oschina.net/news/502255/openclaw-2-accidentally",
-      "hot": "Tue, 01 Sep 2026 19:18:57 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Omarchy：一个把 AI Agent 写进内核的 Linux，和它引发的争议",
-      "url": "https://www.oschina.net/news/502254/dhh-omarchy",
-      "hot": "Tue, 01 Sep 2026 18:56:01 +0800"
     }
   ]
 }

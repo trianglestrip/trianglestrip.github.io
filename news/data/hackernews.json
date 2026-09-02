@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-02T05:57:58+00:00",
+  "updated_at": "2026-09-02T10:18:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude Fable 5.1 and Claude Mythos 5.1",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "hot": "1082"
+      "title": "Commodore 64 released September 1, 1982",
+      "url": "https://dfarq.homeip.net/commodore-64-released-september-1-1982/",
+      "hot": "62"
     },
     {
       "rank": 2,
-      "title": "True Rate of Unemployment",
-      "url": "https://www.lisep.org/tru",
-      "hot": "116"
+      "title": "Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "hot": "1256"
     },
     {
       "rank": 3,
       "title": "The Emergent Symbolic Structure of Artificial Neural Networks",
       "url": "https://arxiv.org/abs/2608.29530",
-      "hot": "36"
+      "hot": "151"
     },
     {
       "rank": 4,
       "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
       "url": "https://danluu.com/zitron/",
-      "hot": "577"
+      "hot": "714"
     },
     {
       "rank": 5,
       "title": "Fine, I'll build my own text editor",
       "url": "https://dbushell.com/2026/09/01/text-editor/",
-      "hot": "40"
-    },
-    {
-      "rank": 6,
-      "title": "WebFPGA",
-      "url": "https://webfpga.io/",
-      "hot": "25"
-    },
-    {
-      "rank": 7,
-      "title": "My local model setup on an M4 Pro Mac Mini",
-      "url": "https://lws.io/blog/my-local-model-setup/",
       "hot": "130"
     },
     {
-      "rank": 8,
+      "rank": 6,
       "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
       "url": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
-      "hot": "123"
+      "hot": "226"
+    },
+    {
+      "rank": 7,
+      "title": "Introducing Ad Blocker for Firefox on iOS",
+      "url": "https://blog.mozilla.org/en/firefox/ad-blocker-on-ios/",
+      "hot": "479"
+    },
+    {
+      "rank": 8,
+      "title": "WebFPGA",
+      "url": "https://webfpga.io/",
+      "hot": "81"
     },
     {
       "rank": 9,
-      "title": "The efficient frontier of LLM inference",
-      "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
-      "hot": "83"
+      "title": "Sonic Pi",
+      "url": "https://sonic-pi.net/",
+      "hot": "167"
     },
     {
       "rank": 10,
       "title": "Show HN: Weedout – Safari extension that hides YouTube AI-labeled videos",
       "url": "https://masteranza.github.io/weedout/",
-      "hot": "94"
+      "hot": "145"
     }
   ]
 }

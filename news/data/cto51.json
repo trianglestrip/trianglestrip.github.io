@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-02T05:57:56+00:00",
+  "updated_at": "2026-09-02T10:18:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS7 折叠屏悬停态适配实战：上半屏给眼睛，下半屏给手指",
+      "url": "https://ost.51cto.com/posts/55846",
+      "hot": "折叠屏手机有一个很容易被应用忽略的形态：半折立起来。用户把它像小笔记本电脑一样立在桌面上&mdash;&mdash;追剧时上半屏放画面、下半屏放进度条；视..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS7 互动卡片多尺寸实战：一张待办卡的三种尺寸与全端同步",
+      "url": "https://ost.51cto.com/posts/55843",
+      "hot": "做桌面卡片，很多团队的默认动作是定一个2x2，做完收工。但桌面是用户的地盘：有人想把卡片放在屏幕顶部当窄条，有人要标准方卡，有人铺一..."
+    },
+    {
+      "rank": 3,
       "title": "你的模块在对你撒谎：深入解析 JavaScript 循环依赖与模块副作用",
       "url": "https://www.51cto.com/article/854616.html",
       "hot": "import 和 require 不过就是同一套逻辑换了个语法糖，只要平时把 TypeScript 的类型检查跑通、本地单测全绿，模块引用的事情应该就稳了。但如果真在生产环境里被模块加载机制坑过一两次，这个直觉大概率会被彻底推翻。"
     },
     {
-      "rank": 2,
-      "title": "【HarmonyOS 7 平行视界深度实战】01 平行视界、普通分栏与响应式布局怎么选",
-      "url": "https://ost.51cto.com/posts/55825",
-      "hot": "前言手机上的列表详情页通常采用整页跳转，用户从列表进入详情后，列表会暂时离开屏幕。页面进入平板宽窗口以后，可用空间明显增加，所以整..."
-    },
-    {
-      "rank": 3,
+      "rank": 4,
       "title": "突发！Fable 5.1遭黑客破解，27万字提示词泄露",
       "url": "https://www.51cto.com/article/854701.html",
       "hot": "终于来了，就在今夜，Fable 5.1 和 Mythos 5.1 正式发布。ARC Prize刚验证了Claude Fable 5.1的成绩。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "AI成本失控？Claude这套\"省钱组合拳\"，值得所有企业学习",
       "url": "https://www.51cto.com/article/854697.html",
       "hot": "Claude这套方法论，不只是产品功能的罗列，更是一种\"成本可控\"的AI落地思维。当你的CFO问\"AI花了这么多钱到底值不值\"的时候，你至少能拿出一份清楚的账。\nAI要真正走进企业，第一步不是让它多厉害，而是让它花多少钱、怎么花，都在你的掌控之中。​"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "33%！Claude、GPT、Gemini 在真实网站上集体翻车，ClawBench 把 AI agent 打回原形",
       "url": "https://www.51cto.com/article/854694.html",
       "hot": "如果你觉得 AI agent 离帮你订机票、填报销单、投简历只有一步之遥，那 MMLU-Pro 的作者联合滑铁卢大学 TIGER Lab，UBC NAIL Group 和 UniPat AI，CMU 等机构刚刚放出的这项研究，可能会让你冷静下来。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "ThreeUI 开源了！不用从零写 Three.js 直接做 3D 网页",
       "url": "https://www.51cto.com/article/854692.html",
       "hot": "ThreeUI 不是传统意义上的 UI 组件库，更像是专门为 Three.js / WebGL 网站准备的一套高质量 3D UI、Shader、Hero 和交互模板。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "AI能挖漏洞吗？北航等机构把真实漏洞炼进了模型参数",
       "url": "https://www.51cto.com/article/854691.html",
       "hot": "来自北京航空航天大学、欧洲学习与智能系统研究院（ELLIS）、新加坡管理大学（SMU）和至知创新研究院（IQuest Research）的研究团队提出了 CyberFactory，并在此基础上训练出开源网络安全模型 OpenAegis。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "会写async/await不算高手，真正厉害的人都懂这四个异步策略",
       "url": "https://www.51cto.com/article/854645.html",
       "hot": "假设我们开了一家奶茶店，顾客下单之后，店员需要完成几个动作：准备珍珠、煮奶茶、加冰、封杯，如果所有事情都一个接一个做，那效率肯定很低；如果有些事情可以同时做，就应该并行；但有些事情存在前后依赖关系，就只能串行，而 JavaScript 的异步函数，其实就像这家奶茶店的调度员。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "一文看懂AI Agent演进史：重新理解智能体底层逻辑",
       "url": "https://www.51cto.com/article/854690.html",
       "hot": "回顾这条从 1956 年到 2026 年的演进脉络，能清晰看到四次关键跃迁：AI 学会了回答问题，这是 ChatGPT 打开的第一层门；AI 学会了完成任务，这是 2023 年 ReAct、Tool Use、AutoGPT 打开的第二层门；AI 学会了完成真实工作，这是 2024 到 2025 年 Coding Agent、Computer Use、企业软件 Agent 化打开的第三层门；"
-    },
-    {
-      "rank": 10,
-      "title": "大模型的逐字生成模式，正在拖慢你的Agent，有人跑出了五倍提速",
-      "url": "https://www.51cto.com/article/854688.html",
-      "hot": "扩散语言模型团队扩散智能 DiffuSpace 与 亚洲智能体计算平台公司 Acrab 的测试结果显示，在端侧场景中，dLLM 可将 Agent 的运行速度提升约 5 倍。"
     }
   ]
 }
