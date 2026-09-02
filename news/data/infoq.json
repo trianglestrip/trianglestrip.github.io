@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-02T14:33:31+00:00",
+  "updated_at": "2026-09-02T18:01:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Nuxt 4.5：实验性 SSR 流式传输、Vite 8 以及基于 Rsbuild 的 Rspack 构建器",
+      "url": "https://www.infoq.cn/article/kggVXP7XclvALPskmSdq?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 02 Sep 2026 23:44:21 GMT"
+    },
+    {
+      "rank": 2,
       "title": "当 AI 开始重写负载，数据库该如何重新设计？",
       "url": "https://www.infoq.cn/article/rhKVS8RAdp4aVPZD0vZu?utm_source=rss&utm_medium=article",
       "hot": "Wed, 02 Sep 2026 18:07:15 GMT"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Java 近期新闻：JDK 27-RC1、OpenJDK JEPs、Jakarta EE、BellSoft、Helidon、Micrometer、Tika 4.0",
       "url": "https://www.infoq.cn/article/el0IBcWagf1hxccJYUUP?utm_source=rss&utm_medium=article",
       "hot": "Wed, 02 Sep 2026 16:06:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "优化平台工程规模，构建组织真正需要的平台",
       "url": "https://www.infoq.cn/article/PybEXW1fiP1O5vfteYdL?utm_source=rss&utm_medium=article",
       "hot": "Wed, 02 Sep 2026 14:22:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "倒计时21天！GOAI进入决赛月，120强全力冲刺",
       "url": "https://www.infoq.cn/article/JSgkNf4EBVRL6HPP8D1u?utm_source=rss&utm_medium=article",
       "hot": "Wed, 02 Sep 2026 14:21:17 GMT"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Cloudflare OS：Cloudflare 基于能力模型构建的开源企业级 AI 平台",
       "url": "https://www.infoq.cn/article/ztbou1CqjAdzrT6GNSKV?utm_source=rss&utm_medium=article",
       "hot": "Wed, 02 Sep 2026 13:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Fable 5.1 正式发布：性能翻倍、Agent成本下降45%，Anthropic 把顶级模型送进真实世界",
       "url": "https://www.infoq.cn/article/K8OwgoWM1gHNi2i4yLkU?utm_source=rss&utm_medium=article",
       "hot": "Wed, 02 Sep 2026 12:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "一次空指针问题引发的 Spring 生命周期思考",
       "url": "https://www.infoq.cn/article/eWdhZ7b2DjRetvtzcl7k?utm_source=rss&utm_medium=article",
       "hot": "Wed, 02 Sep 2026 11:52:12 GMT"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "关于 JDK 27 和 JDK 28，我们目前都知道些什么",
       "url": "https://www.infoq.cn/article/kJeDyClZsPiCEJFuGswL?utm_source=rss&utm_medium=article",
       "hot": "Wed, 02 Sep 2026 11:22:00 GMT"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Claude越狱后，Anthropic停掉训练、150人紧急转岗",
       "url": "https://www.infoq.cn/article/EPME6yOoJGusHdGZTGFJ?utm_source=rss&utm_medium=article",
       "hot": "Wed, 02 Sep 2026 09:42:36 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "如何让数据库更容易暴露 Bug？",
-      "url": "https://www.infoq.cn/video/O8p3IB5iTYxpJ4OKgOQ2?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 02 Sep 2026 09:30:00 GMT"
     }
   ]
 }

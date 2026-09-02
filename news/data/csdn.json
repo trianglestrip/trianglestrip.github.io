@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-02T14:33:16+00:00",
+  "updated_at": "2026-09-02T18:00:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【LangChain】 实战指南：从模型定义到工具调用与实时天气查询实战",
       "url": "https://blog.csdn.net/yhrxh_ymq/article/details/164109036",
-      "hot": "27477"
+      "hot": "25020"
     },
     {
       "rank": 2,
-      "title": "鸿蒙应用 AI 对话实战：用蓝耘 MaaS 给礼物 App 装上「多轮对话选礼大脑」",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/164213393",
-      "hot": "24797"
+      "title": "从本地到公网：Windows 部署 KouriChat，并接入 DeepSeek 实现微信 AI 对话",
+      "url": "https://blog.csdn.net/mrdeam/article/details/164270020",
+      "hot": "22938"
     },
     {
       "rank": 3,
-      "title": "从本地 AI 到远程工作台：OpenClaw 配合工具，解锁 NAS、小游戏和远程桌面",
-      "url": "https://blog.csdn.net/COLLINSXU/article/details/164259720",
-      "hot": "19790"
+      "title": "鸿蒙应用 AI 对话实战：用蓝耘 MaaS 给礼物 App 装上「多轮对话选礼大脑」",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/164213393",
+      "hot": "15787"
     },
     {
       "rank": 4,
-      "title": "【AI大模型】-DeepSeek Harness 深度解析",
-      "url": "https://blog.csdn.net/zxc18344522713/article/details/164208421",
-      "hot": "13322"
+      "title": "别让你的 Agent 一口吃成胖子：AI Agent 任务拆分的工程实践指南",
+      "url": "https://blog.csdn.net/2401_89111612/article/details/164153484",
+      "hot": "12732"
     },
     {
       "rank": 5,
-      "title": "一个主题直接生成完整视频：Windows 部署 Pixelle-Video，把文案、配图和配音串成自动流程",
-      "url": "https://blog.csdn.net/user340/article/details/164230237",
-      "hot": "13028"
+      "title": "从本地 AI 到远程工作台：OpenClaw 配合工具，解锁 NAS、小游戏和远程桌面",
+      "url": "https://blog.csdn.net/COLLINSXU/article/details/164259720",
+      "hot": "11049"
     },
     {
       "rank": 6,
-      "title": "【AI智能体】Harness Engineering 驾驭工程从使用到项目实战详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/164031319",
-      "hot": "12269"
+      "title": "【AI 应用 -- 白话大模型（篇八）】《从零系统学习 AI Skill之起源发展、文件结构、编写原则、机制原理与项目实战案例》",
+      "url": "https://blog.csdn.net/2501_93351213/article/details/164262916",
+      "hot": "10778"
     },
     {
       "rank": 7,
       "title": "【BlueZ 】用户态入口：main.c 核心函数与程序启动流程",
       "url": "https://blog.csdn.net/weixin_37800531/article/details/164164199",
-      "hot": "9406"
+      "hot": "9764"
     },
     {
       "rank": 8,
-      "title": "深入理解 Linux IO 模型（一）：阻塞 IO、非阻塞 IO 与信号驱动 IO",
-      "url": "https://blog.csdn.net/Felix_kiss_L/article/details/164257831",
-      "hot": "8430"
+      "title": "Docker - Swarm中的负载均衡与服务发现",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157611661",
+      "hot": "9553"
     },
     {
       "rank": 9,
-      "title": "Linux 下使用 Trivy 扫描 Docker 镜像漏洞",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/163636209",
-      "hot": "7962"
+      "title": "实时语音 Agent：从语音机器人到连续协作界面",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/163614191",
+      "hot": "9507"
     },
     {
       "rank": 10,
-      "title": "基于 Qwen3.8-Max 构建 AI 合同精审系统：文档解析、多轮条款分析 Pipeline 工程实战",
-      "url": "https://blog.csdn.net/weixin_62765017/article/details/164257935",
-      "hot": "7905"
+      "title": "计算机网络｜数据链路层详解：MAC 地址、交换机、ARP 协议、CRC 校验",
+      "url": "https://blog.csdn.net/2502_93799892/article/details/164213960",
+      "hot": "9319"
     }
   ]
 }
