@@ -1,7 +1,6 @@
 <style>
-  /* ===== LoveIt 风格顶部导航栏 ===== */
+  /* ===== 顶部导航栏（使用 book 主题 CSS 变量，自动跟随 light/dark/auto） ===== */
 
-  /* 顶部导航栏 */
   .top-nav {
     position: fixed;
     top: 0;
@@ -12,29 +11,20 @@
     align-items: center;
     height: 56px;
     padding: 0 24px;
-    background: #fff;
-    border-bottom: 1px solid #e1e4e8;
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-
-  [data-theme="dark"] .top-nav {
-    background: #2e3440;
-    border-bottom-color: #4c566a;
+    background: var(--body-background);
+    border-bottom: var(--space-1) solid var(--gray-200);
+    font-size: var(--font-size-smaller);
+    font-family: inherit;
   }
 
   /* 站点标题 */
   .nav-brand {
-    font-size: 18px;
+    font-size: 110%;
     font-weight: 700;
-    color: #333;
+    color: var(--body-font-color);
     text-decoration: none;
     margin-right: 32px;
     white-space: nowrap;
-  }
-
-  [data-theme="dark"] .nav-brand {
-    color: #eceff4;
   }
 
   /* 导航链接容器 */
@@ -47,41 +37,33 @@
   }
 
   .nav-link {
-    color: #606266;
+    color: var(--body-font-color);
+    opacity: 0.7;
     text-decoration: none;
     padding: 4px 0;
     white-space: nowrap;
-    transition: color 0.2s;
+    transition: opacity 0.2s, color 0.2s;
     line-height: 56px;
   }
 
   .nav-link:hover {
-    color: #42b983;
+    opacity: 1;
+    color: var(--color-link);
   }
 
   .nav-link.active {
-    color: #42b983;
+    opacity: 1;
+    color: var(--color-link);
     font-weight: 600;
-    border-bottom: 2px solid #42b983;
-  }
-
-  [data-theme="dark"] .nav-link {
-    color: #d8dee9;
-  }
-
-  [data-theme="dark"] .nav-link:hover,
-  [data-theme="dark"] .nav-link.active {
-    color: #a3be8c;
+    border-bottom: 2px solid var(--color-link);
   }
 
   /* ===== 布局调整：隐藏桌面侧边栏，内容全宽 ===== */
 
-  /* 推动内容区下移，不被固定导航遮挡 */
   body {
     padding-top: 56px;
   }
 
-  /* 桌面端隐藏左侧边栏 */
   @media (min-width: 769px) {
     .book-menu {
       display: none !important;
@@ -97,7 +79,6 @@
       padding: 0 16px;
     }
 
-    /* 移动端 header 中的菜单按钮在桌面隐藏（已有 hidden） */
     .book-header {
       display: none !important;
     }
@@ -115,7 +96,7 @@
     }
 
     .nav-brand {
-      font-size: 16px;
+      font-size: 100%;
       margin-right: 16px;
     }
 
@@ -124,7 +105,7 @@
     }
 
     .nav-link {
-      font-size: 14px;
+      font-size: var(--font-size-smallest);
       line-height: 48px;
     }
   }
