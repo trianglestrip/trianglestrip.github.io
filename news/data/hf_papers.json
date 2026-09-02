@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-02T05:58:14+00:00",
+  "updated_at": "2026-09-02T14:33:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "766"
+      "hot": "767"
     },
     {
       "rank": 2,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
       "url": "https://huggingface.co/papers/2608.30935",
-      "hot": "25"
+      "hot": "26"
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
-      "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "205"
-    },
-    {
-      "rank": 8,
       "title": "Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction",
       "url": "https://huggingface.co/papers/2608.27529",
       "hot": "31"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
       "url": "https://huggingface.co/papers/2608.24053",
       "hot": "69"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning",
       "url": "https://huggingface.co/papers/2608.27549",
       "hot": "46"
+    },
+    {
+      "rank": 10,
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "85"
     }
   ]
 }

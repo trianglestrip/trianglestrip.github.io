@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-02T10:18:27+00:00",
+  "updated_at": "2026-09-02T14:33:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "李飞飞旗下 AI 实验室 World Labs 发布 Atlas：从几张照片重建 3D 世界",
+      "url": "https://www.oschina.net/news/502277/worldlabs-ai-atlas",
+      "hot": "Wed, 02 Sep 2026 19:24:32 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Jujutsu 创造者离开 Google，加入创业公司做下一代版本控制平台",
+      "url": "https://www.oschina.net/news/502276/jujutsu-martin-joins-ersc",
+      "hot": "Wed, 02 Sep 2026 19:18:49 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "灵界 OS v3.0.1 发布，优化文件管理器交互体验与兼容性。",
+      "url": "https://www.oschina.net/news/502275",
+      "hot": "Wed, 02 Sep 2026 18:27:05 +0800"
+    },
+    {
+      "rank": 4,
       "title": "AI 应用皆可报名，我们把大赛门槛打下来了",
       "url": "https://www.oschina.net/news/502274",
       "hot": "Wed, 02 Sep 2026 17:30:03 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "开源中国开源 AI 编程工具 MothX，主打一个“省”字，驾驭中国词元",
       "url": "https://www.oschina.net/news/502273/oschina-opensource-mothx-ai-coding-cli-agent-harness-vibe",
       "hot": "Wed, 02 Sep 2026 17:12:55 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "ChatGPT 桌面应用里藏着 430MB 的 LibreOffice",
       "url": "https://www.oschina.net/news/502272/chatgpt-codex-libreoffice",
       "hot": "Wed, 02 Sep 2026 17:03:52 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "git.kernel.org 每天接收 600 万个请求，但 98% 不是来自“人类”",
       "url": "https://www.oschina.net/news/502270/git-kernel-org-creepy-crawlies",
       "hot": "Wed, 02 Sep 2026 14:41:06 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "缓存读取价砍 75%：Fable 5.1 真正想卖的不是跑分",
       "url": "https://www.oschina.net/news/502267/claude-fable-and-mythos-5-1",
       "hot": "Wed, 02 Sep 2026 10:50:54 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "从 SIP 到大模型：一天构建可本地部署的 AI 智能外呼系统 VibeVoip",
       "url": "https://my.oschina.net/u/4806939/blog/19752597",
       "hot": "Wed, 02 Sep 2026 09:52:01 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "免费可商用 PHP 管理后台 CatchAdmin V5.4.0 发布，新增短信服务能力",
       "url": "https://www.oschina.net/news/502261",
       "hot": "Wed, 02 Sep 2026 06:22:15 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "轻量级运维极速引擎 OpsFlash v0.4.1 正式发布",
-      "url": "https://www.oschina.net/news/502260",
-      "hot": "Tue, 01 Sep 2026 22:28:12 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "WIKI 知识库 v1.1.1 正式发布",
-      "url": "https://www.oschina.net/news/502259",
-      "hot": "Tue, 01 Sep 2026 22:06:18 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "wastnet 反向代理实战：一个端口统一托管前端与后端 API",
-      "url": "https://www.oschina.net/news/502258",
-      "hot": "Tue, 01 Sep 2026 20:29:57 +0800"
     }
   ]
 }

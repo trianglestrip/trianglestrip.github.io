@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-02T05:58:14+00:00",
+  "updated_at": "2026-09-02T14:33:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Qwen/Qwen3.8-Flash-Next",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "hot": "4663"
+      "title": "zai-org/GLM-5.3-Flash",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "hot": "1934"
     },
     {
       "rank": 2,
-      "title": "zai-org/GLM-5.3-Flash",
-      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-      "hot": "1896"
+      "title": "zai-org/GLM-5.3",
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "hot": "1492"
     },
     {
       "rank": 3,
-      "title": "zai-org/GLM-5.3",
-      "url": "https://huggingface.co/zai-org/GLM-5.3",
-      "hot": "1474"
+      "title": "Qwen/Qwen3.8-Flash-Next",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "hot": "4705"
     },
     {
       "rank": 4,
-      "title": "unsloth/Qwen3.8-Flash-Next-GGUF",
-      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
-      "hot": "683"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "13653"
     },
     {
       "rank": 5,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "13603"
+      "title": "unsloth/Qwen3.8-Flash-Next-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+      "hot": "710"
     },
     {
       "rank": 6,
       "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-      "hot": "461"
+      "hot": "484"
     },
     {
       "rank": 7,
       "title": "tencent/Hy4-preview",
       "url": "https://huggingface.co/tencent/Hy4-preview",
-      "hot": "387"
+      "hot": "393"
     },
     {
       "rank": 8,
-      "title": "unsloth/Qwen3.8-27B-GGUF",
-      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "3347"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "2523"
     },
     {
       "rank": 9,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "2480"
+      "title": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "hot": "3369"
     },
     {
       "rank": 10,
       "title": "unsloth/GLM-5.3-Flash-GGUF",
       "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
-      "hot": "327"
+      "hot": "333"
     }
   ]
 }
