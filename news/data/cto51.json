@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-02T01:23:10+00:00",
+  "updated_at": "2026-09-02T05:57:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS7 单段式拍照连拍后 photoAvailable 不回调？缓冲区没释放，不是框架 bug",
-      "url": "https://ost.51cto.com/posts/55818",
-      "hot": "前言社区里有人提了这样一个问题：项目相机模块走单段式拍照，on(&#039;photoAvailable&#039;)回调里取图渲染，单拍一直没问题。但连拍模式下，第一张..."
+      "title": "你的模块在对你撒谎：深入解析 JavaScript 循环依赖与模块副作用",
+      "url": "https://www.51cto.com/article/854616.html",
+      "hot": "import 和 require 不过就是同一套逻辑换了个语法糖，只要平时把 TypeScript 的类型检查跑通、本地单测全绿，模块引用的事情应该就稳了。但如果真在生产环境里被模块加载机制坑过一两次，这个直觉大概率会被彻底推翻。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS7 AI语音朗读实战：做一个逐段高亮的离线朗读器",
-      "url": "https://ost.51cto.com/posts/55817",
-      "hot": "通勤路上看不了书，眼睛累的时候想听点什么&mdash;&mdash;听书是一个真实且高频的需求。做听书功能，传统路线是把文本丢给云端的合成服务：按字符计费..."
+      "title": "【HarmonyOS 7 平行视界深度实战】01 平行视界、普通分栏与响应式布局怎么选",
+      "url": "https://ost.51cto.com/posts/55825",
+      "hot": "前言手机上的列表详情页通常采用整页跳转，用户从列表进入详情后，列表会暂时离开屏幕。页面进入平板宽窗口以后，可用空间明显增加，所以整..."
     },
     {
       "rank": 3,
-      "title": "全新OpenClaw 2.0发布：龙虾史上最大更新，已无人关心",
-      "url": "https://www.51cto.com/article/854588.html",
-      "hot": "OpenClaw 的 250K 星爆发建立在一个漏洞上。这个漏洞叫「用 20 美元的 Claude Pro 订阅跑价值几千美元的 Token」。OpenClaw 的早期用户画像极度统一：拿着 Anthropic 的包月订阅，通过 OAuth 搭车，让龙虾 24 小时替自己烧 Token。"
+      "title": "突发！Fable 5.1遭黑客破解，27万字提示词泄露",
+      "url": "https://www.51cto.com/article/854701.html",
+      "hot": "终于来了，就在今夜，Fable 5.1 和 Mythos 5.1 正式发布。ARC Prize刚验证了Claude Fable 5.1的成绩。"
     },
     {
       "rank": 4,
-      "title": "把 33 页官方手册压成三个动作，给小白的WorkBuddy教程，再也不用折腾 Claude 和 Codex 了",
-      "url": "https://www.51cto.com/article/854453.html",
-      "hot": "WorkBuddy 的上手门槛不在安装，在于换一套协作方式：下指令时像给实习生派活（说清做什么、有什么、怎么样，大任务拆小步，不满意就返工）；配资源时像布置工位（专属目录、材料递到手边、权限逐个点头）；管任务时像带教验收（四视图验货、改前备份、烂会话重开、验证过再自动化）。"
+      "title": "AI成本失控？Claude这套\"省钱组合拳\"，值得所有企业学习",
+      "url": "https://www.51cto.com/article/854697.html",
+      "hot": "Claude这套方法论，不只是产品功能的罗列，更是一种\"成本可控\"的AI落地思维。当你的CFO问\"AI花了这么多钱到底值不值\"的时候，你至少能拿出一份清楚的账。\nAI要真正走进企业，第一步不是让它多厉害，而是让它花多少钱、怎么花，都在你的掌控之中。​"
     },
     {
       "rank": 5,
-      "title": "藏太深！ChatGPT中居然还有这么多Codex同款能力",
-      "url": "https://www.51cto.com/article/854580.html",
-      "hot": "知名开发者Simon Willison刚写了篇博客，翻出了ChatGPT Work里一大批聊天模式没有的隐藏能力。"
+      "title": "33%！Claude、GPT、Gemini 在真实网站上集体翻车，ClawBench 把 AI agent 打回原形",
+      "url": "https://www.51cto.com/article/854694.html",
+      "hot": "如果你觉得 AI agent 离帮你订机票、填报销单、投简历只有一步之遥，那 MMLU-Pro 的作者联合滑铁卢大学 TIGER Lab，UBC NAIL Group 和 UniPat AI，CMU 等机构刚刚放出的这项研究，可能会让你冷静下来。"
     },
     {
       "rank": 6,
-      "title": "别再拿 “大模型分析日志” 应付面试！这才是可落地的 AIOps 故障诊断架构",
-      "url": "https://www.51cto.com/article/854578.html",
-      "hot": "一套真正具备落地可能的 AIOps 系统是什么样的？"
+      "title": "ThreeUI 开源了！不用从零写 Three.js 直接做 3D 网页",
+      "url": "https://www.51cto.com/article/854692.html",
+      "hot": "ThreeUI 不是传统意义上的 UI 组件库，更像是专门为 Three.js / WebGL 网站准备的一套高质量 3D UI、Shader、Hero 和交互模板。"
     },
     {
       "rank": 7,
-      "title": "Agent 驱动的架构模式初探",
-      "url": "https://www.51cto.com/article/854452.html",
-      "hot": "Gartner预测，到2026年底，全球40%的企业应用将嵌入具备任务执行能力的AI智能体，这一数字在2025年尚不足5%。麦肯锡更是估算，到2030年，Agent可为全球经济贡献2.6万亿至4.4万亿美元的年GDP增量。"
+      "title": "AI能挖漏洞吗？北航等机构把真实漏洞炼进了模型参数",
+      "url": "https://www.51cto.com/article/854691.html",
+      "hot": "来自北京航空航天大学、欧洲学习与智能系统研究院（ELLIS）、新加坡管理大学（SMU）和至知创新研究院（IQuest Research）的研究团队提出了 CyberFactory，并在此基础上训练出开源网络安全模型 OpenAegis。"
     },
     {
       "rank": 8,
-      "title": "不懂 page migrate，别说你懂 NUMA 调优",
-      "url": "https://www.51cto.com/article/854450.html",
-      "hot": "有相当多的人在进行 NUMA 调优的时候，会把 page migrate 给忽略掉。如同我之前遇到的那一个事例，团队为了让服务器性能得到提高，对 NUMA 架构开展了一系列的参数调整工作，还对内存分配策略进行了优化，可是性能提升得并不明显。"
+      "title": "会写async/await不算高手，真正厉害的人都懂这四个异步策略",
+      "url": "https://www.51cto.com/article/854645.html",
+      "hot": "假设我们开了一家奶茶店，顾客下单之后，店员需要完成几个动作：准备珍珠、煮奶茶、加冰、封杯，如果所有事情都一个接一个做，那效率肯定很低；如果有些事情可以同时做，就应该并行；但有些事情存在前后依赖关系，就只能串行，而 JavaScript 的异步函数，其实就像这家奶茶店的调度员。"
     },
     {
       "rank": 9,
-      "title": "LLM-as-a-Judge也会失灵：长对话评测不能只看一个分数",
-      "url": "https://www.51cto.com/article/854526.html",
-      "hot": "模型越来越擅长生成流畅句子后，“看起来还不错”已经不够做评测标准。UPHELD 的贡献是把长对话拆成内容、风格和语境合理性三条可被人逐轮检查的轴，再让自动指标接受人工判断的校准。它没有证明现有 LLM 裁判没有价值，也没有给出一个适用于所有聊天场景的万能分数。"
+      "title": "一文看懂AI Agent演进史：重新理解智能体底层逻辑",
+      "url": "https://www.51cto.com/article/854690.html",
+      "hot": "回顾这条从 1956 年到 2026 年的演进脉络，能清晰看到四次关键跃迁：AI 学会了回答问题，这是 ChatGPT 打开的第一层门；AI 学会了完成任务，这是 2023 年 ReAct、Tool Use、AutoGPT 打开的第二层门；AI 学会了完成真实工作，这是 2024 到 2025 年 Coding Agent、Computer Use、企业软件 Agent 化打开的第三层门；"
     },
     {
       "rank": 10,
-      "title": "龙虾还魂，2.0成飞书了！？",
-      "url": "https://www.51cto.com/article/854569.html",
-      "hot": "OpenClaw正式发布2.0版本，版本号v2026.8.1，号称项目史上最大规模的一次更新。"
+      "title": "大模型的逐字生成模式，正在拖慢你的Agent，有人跑出了五倍提速",
+      "url": "https://www.51cto.com/article/854688.html",
+      "hot": "扩散语言模型团队扩散智能 DiffuSpace 与 亚洲智能体计算平台公司 Acrab 的测试结果显示，在端侧场景中，dLLM 可将 Agent 的运行速度提升约 5 倍。"
     }
   ]
 }

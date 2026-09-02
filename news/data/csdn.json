@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-02T01:23:05+00:00",
+  "updated_at": "2026-09-02T05:57:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【LangChain】 实战指南：从模型定义到工具调用与实时天气查询实战",
       "url": "https://blog.csdn.net/yhrxh_ymq/article/details/164109036",
-      "hot": "19511"
+      "hot": "28468"
     },
     {
       "rank": 2,
       "title": "鸿蒙应用 AI 对话实战：用蓝耘 MaaS 给礼物 App 装上「多轮对话选礼大脑」",
       "url": "https://blog.csdn.net/weixin_52908342/article/details/164213393",
-      "hot": "18240"
+      "hot": "25026"
     },
     {
       "rank": 3,
       "title": "从本地 AI 到远程工作台：OpenClaw 配合工具，解锁 NAS、小游戏和远程桌面",
       "url": "https://blog.csdn.net/COLLINSXU/article/details/164259720",
-      "hot": "14822"
+      "hot": "20124"
     },
     {
       "rank": 4,
-      "title": "Docker - Swarm中的负载均衡与服务发现",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157611661",
-      "hot": "13359"
+      "title": "【AI大模型】-DeepSeek Harness 深度解析",
+      "url": "https://blog.csdn.net/zxc18344522713/article/details/164208421",
+      "hot": "14318"
     },
     {
       "rank": 5,
-      "title": "《数据库往事-故事卷》开始了",
-      "url": "https://blog.csdn.net/fly2nn/article/details/164193618",
-      "hot": "10593"
+      "title": "一个主题直接生成完整视频：Windows 部署 Pixelle-Video，把文案、配图和配音串成自动流程",
+      "url": "https://blog.csdn.net/user340/article/details/164230237",
+      "hot": "13983"
     },
     {
       "rank": 6,
-      "title": "GitHub 热榜项目 - 周榜(2026-08-30)",
-      "url": "https://blog.csdn.net/u014390502/article/details/164186053",
-      "hot": "10485"
+      "title": "【AI智能体】Harness Engineering 驾驭工程从使用到项目实战详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/164031319",
+      "hot": "13794"
     },
     {
       "rank": 7,
-      "title": "【AI大模型】-DeepSeek Harness 深度解析",
-      "url": "https://blog.csdn.net/zxc18344522713/article/details/164208421",
-      "hot": "9781"
+      "title": "Docker - Swarm中的负载均衡与服务发现",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157611661",
+      "hot": "12651"
     },
     {
       "rank": 8,
-      "title": "深入 MySQL 网络通信：客户端如何与服务端建立连接？",
-      "url": "https://blog.csdn.net/qq_62538912/article/details/164231537",
-      "hot": "9530"
+      "title": "【BlueZ 】用户态入口：main.c 核心函数与程序启动流程",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/164164199",
+      "hot": "9044"
     },
     {
       "rank": 9,
-      "title": "一个主题直接生成完整视频：Windows 部署 Pixelle-Video，把文案、配图和配音串成自动流程",
-      "url": "https://blog.csdn.net/user340/article/details/164230237",
-      "hot": "9495"
+      "title": "深入理解 Linux IO 模型（一）：阻塞 IO、非阻塞 IO 与信号驱动 IO",
+      "url": "https://blog.csdn.net/Felix_kiss_L/article/details/164257831",
+      "hot": "8533"
     },
     {
       "rank": 10,
-      "title": "【AI智能体】Harness Engineering 驾驭工程从使用到项目实战详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/164031319",
-      "hot": "9305"
+      "title": "基于 Qwen3.8-Max 构建 AI 合同精审系统：文档解析、多轮条款分析 Pipeline 工程实战",
+      "url": "https://blog.csdn.net/weixin_62765017/article/details/164257935",
+      "hot": "8341"
     }
   ]
 }

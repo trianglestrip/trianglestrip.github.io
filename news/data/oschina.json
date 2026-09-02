@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-02T01:23:14+00:00",
+  "updated_at": "2026-09-02T05:58:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "缓存读取价砍 75%：Fable 5.1 真正想卖的不是跑分",
+      "url": "https://www.oschina.net/news/502267/claude-fable-and-mythos-5-1",
+      "hot": "Wed, 02 Sep 2026 10:50:54 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "从 SIP 到大模型：一天构建可本地部署的 AI 智能外呼系统 VibeVoip",
+      "url": "https://my.oschina.net/u/4806939/blog/19752597",
+      "hot": "Wed, 02 Sep 2026 09:52:01 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "免费可商用 PHP 管理后台 CatchAdmin V5.4.0 发布，新增短信服务能力",
+      "url": "https://www.oschina.net/news/502261",
+      "hot": "Wed, 02 Sep 2026 06:22:15 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "轻量级运维极速引擎 OpsFlash v0.4.1 正式发布",
+      "url": "https://www.oschina.net/news/502260",
+      "hot": "Tue, 01 Sep 2026 22:28:12 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "WIKI 知识库 v1.1.1 正式发布",
+      "url": "https://www.oschina.net/news/502259",
+      "hot": "Tue, 01 Sep 2026 22:06:18 +0800"
+    },
+    {
+      "rank": 6,
       "title": "wastnet 反向代理实战：一个端口统一托管前端与后端 API",
       "url": "https://www.oschina.net/news/502258",
       "hot": "Tue, 01 Sep 2026 20:29:57 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "中国游戏创业者向 DHH 的 Omacom 基金会捐赠 100 万美元",
       "url": "https://www.oschina.net/news/502257",
       "hot": "Tue, 01 Sep 2026 19:30:18 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "每周一天，关掉 AI 写代码",
       "url": "https://www.oschina.net/news/502256/no-ai-fridays",
       "hot": "Tue, 01 Sep 2026 19:22:14 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "16,000 个 PR 之后，谁还在用 OpenClaw？",
       "url": "https://www.oschina.net/news/502255/openclaw-2-accidentally",
       "hot": "Tue, 01 Sep 2026 19:18:57 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "Omarchy：一个把 AI Agent 写进内核的 Linux，和它引发的争议",
       "url": "https://www.oschina.net/news/502254/dhh-omarchy",
       "hot": "Tue, 01 Sep 2026 18:56:01 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "htmx 4.0 正式发布，版本号直接从 2.x 跳到了 4.0",
-      "url": "https://www.oschina.net/news/502253/htmx-4-0-0-released",
-      "hot": "Tue, 01 Sep 2026 17:54:54 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Manus 恢复独立运营",
-      "url": "https://www.oschina.net/news/502250/manus-resumes-independent-operations",
-      "hot": "Tue, 01 Sep 2026 17:38:14 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "GFlow v1.0.0 发布：Go 生态审批工作流引擎，中国式审批、AI 先审、批完自动办",
-      "url": "https://www.oschina.net/news/502248",
-      "hot": "Tue, 01 Sep 2026 16:34:29 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "云上AI应用故障诊断，上海开源大赛ZSvirt命题公布",
-      "url": "https://www.oschina.net/news/502247",
-      "hot": "Tue, 01 Sep 2026 15:56:40 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "DeepSeek 开源的第一个多模态模型，不是拿来「看图说话」的",
-      "url": "https://www.oschina.net/news/502240/deepseek-v4-flash-vision-exp",
-      "hot": "Tue, 01 Sep 2026 15:17:15 +0800"
     }
   ]
 }
