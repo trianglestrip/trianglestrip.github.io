@@ -1,14 +1,14 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-09-03T17:19:16+00:00",
+  "updated_at": "2026-09-03T19:55:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Java切面编程（AOP）详解：从核心概念到实战应用",
       "url": "https://juejin.cn/post/7680496681512042548",
-      "hot": "4014"
+      "hot": "4788"
     },
     {
       "rank": 2,
@@ -20,7 +20,7 @@
       "rank": 3,
       "title": "我用 Qwen3.8-Max 搭了一个电商商品资料包体检助手，6 份资料和 1 张商品图一次查出 27 个问题",
       "url": "https://juejin.cn/post/7680143535669198858",
-      "hot": "1512"
+      "hot": "1539"
     },
     {
       "rank": 4,
@@ -30,39 +30,39 @@
     },
     {
       "rank": 5,
-      "title": "微信内部的生产级模型，居然开源了",
-      "url": "https://juejin.cn/post/7680023541135507497",
-      "hot": "729"
-    },
-    {
-      "rank": 6,
       "title": "为什么越来越多人用 OpenSearch？",
       "url": "https://juejin.cn/post/7680375814231605299",
       "hot": "621"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "sys_dump 备了库，角色和权限别漏在外面",
       "url": "https://juejin.cn/post/7680551559094517802",
+      "hot": "603"
+    },
+    {
+      "rank": 7,
+      "title": "AI全栈开发最佳实践💐",
+      "url": "https://juejin.cn/post/7680741276414296104",
       "hot": "576"
     },
     {
       "rank": 8,
-      "title": "AI全栈开发最佳实践💐",
-      "url": "https://juejin.cn/post/7680741276414296104",
-      "hot": "567"
-    },
-    {
-      "rank": 9,
       "title": "PC 网站接入微信登录，这 10 个坑我替你踩完了！",
       "url": "https://juejin.cn/post/7680216488121008138",
       "hot": "441"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "从零搭建你的 AI 编程工作流",
       "url": "https://juejin.cn/post/7680065840814260224",
       "hot": "405"
+    },
+    {
+      "rank": 10,
+      "title": "Android 17 +  OkHttp 5.5.0 ，全新 ECH 下你的 HTTPS 域名可以请求时被安全隐藏",
+      "url": "https://juejin.cn/post/7680110774044475398",
+      "hot": "342"
     }
   ]
 }

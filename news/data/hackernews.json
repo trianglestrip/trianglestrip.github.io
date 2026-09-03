@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-03T17:19:25+00:00",
+  "updated_at": "2026-09-03T19:55:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": ".name Termination",
-      "url": "https://neil.fraser.name/news/2026/09/03/",
-      "hot": "390"
+      "title": "GPT-6 Astra",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "hot": "290"
     },
     {
       "rank": 2,
-      "title": "Audacity 4.0",
-      "url": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0",
-      "hot": "823"
+      "title": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
+      "url": "https://inference-docs.cerebras.ai/models/overview",
+      "hot": "221"
     },
     {
       "rank": 3,
-      "title": "K2 Horizon: Frontier Performance, Radically Open",
-      "url": "https://ifm.ai/blog/k2/",
-      "hot": "90"
+      "title": ".name Termination",
+      "url": "https://neil.fraser.name/news/2026/09/03/",
+      "hot": "934"
     },
     {
       "rank": 4,
-      "title": "New York Times and The Athletic workers demand company scrap Kalshi deal",
-      "url": "https://newsguild.org/new-york-times-and-the-athletic-workers-demand-company-scrap-kalshi-deal/",
-      "hot": "145"
+      "title": "K2 Horizon: A connected fleet of six open models",
+      "url": "https://ifm.ai/blog/k2/",
+      "hot": "184"
     },
     {
       "rank": 5,
       "title": "Any Human Ever – One life, drawn at random from all who have ever lived",
       "url": "https://anyhumanever.com/",
-      "hot": "145"
+      "hot": "290"
     },
     {
       "rank": 6,
-      "title": "Launch HN: Mireye (YC S26) – Infrastructure for Physical World AI Agents",
-      "url": "https://www.mireye.com",
-      "hot": "9"
+      "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
+      "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/",
+      "hot": "79"
     },
     {
       "rank": 7,
-      "title": "Ask HN: Why are OpenAI, Claude, and Grok simultaneously down? Coincidence?",
+      "title": "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
       "url": "https://news.ycombinator.com/item?id=49551096",
-      "hot": "137"
+      "hot": "249"
     },
     {
       "rank": 8,
-      "title": "Sony makes bold claim about game ownership",
-      "url": "https://aginggamer.net/game-industry/sony-makes-bold-claim-about-game-ownership/",
-      "hot": "107"
+      "title": "Gloria Steinem has died",
+      "url": "https://www.theguardian.com/books/2026/sep/03/gloria-steinem-groundbreaking-feminist-campaigner-dies-aged-92",
+      "hot": "42"
     },
     {
       "rank": 9,
-      "title": "Pre-Release of Polars 2.0",
-      "url": "https://pola.rs/posts/announcing-polars-2/",
-      "hot": "332"
+      "title": "Artificial beaver dams saw juvenile coho salmon survival rates go from 8% to 60%",
+      "url": "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california",
+      "hot": "47"
     },
     {
       "rank": 10,
-      "title": "Google Antigravity TOS: 3rd party usage can get Google account suspended",
-      "url": "https://twitter.com/GergelyOrosz/status/2095453567955968398",
-      "hot": "125"
+      "title": "How concerned should we be about Astra's recurrent architecture?",
+      "url": "https://www.lesswrong.com/posts/PLisnSFir8y5AHkmP/how-concerned-should-we-be-about-astra-s-recurrent",
+      "hot": "32"
     }
   ]
 }
