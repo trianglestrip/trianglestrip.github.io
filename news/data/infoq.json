@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-03T09:42:30+00:00",
+  "updated_at": "2026-09-03T13:52:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "当 Agent 走出 App：WorkBuddy 的朋友圈开始向外生长",
+      "url": "https://www.infoq.cn/article/vogOaCpOeNfe0hjAXfzy?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 03 Sep 2026 21:19:20 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "从内部 Side Project 到 3.9 万开发者使用，Kiro Crew 创造者亲述开发幕后",
+      "url": "https://www.infoq.cn/article/hcQKK8OIfwlMKw2zQSS9?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 03 Sep 2026 17:54:55 GMT"
+    },
+    {
+      "rank": 3,
       "title": "当Agent开始“吃数据”，传统湖仓不够用了：华为云重构数据基础设施",
       "url": "https://www.infoq.cn/article/IE4CYYwbLYYKSbg7lXfx?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 17:19:14 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "3个月拿下 3000 star，只因我们比 MinerU 多做了这件事",
       "url": "https://www.infoq.cn/article/SJOBmxzKUJ5kX7TLNVKC?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 17:09:32 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "李飞飞首个多模态世界模型 Atlas 正式发布：从零开始预训练，几张图就能构建世界",
       "url": "https://www.infoq.cn/article/9YiEhb3hAFtUlxOpMdGC?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 16:49:43 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Omdia最新市场研究报告：OceanBase位居亚太分布式数据库市场第一",
       "url": "https://www.infoq.cn/article/dICPOgXYkvE9HcA1KpUv?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 16:37:58 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "AI窗口期只剩3-4年，98%的企业却高估了自身的技术成熟度",
       "url": "https://www.infoq.cn/article/Gz4w1NVNIJjs8fZOaQZD?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 16:20:38 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "亚马逊云科技推出规范驱动组合：数据工作流不再靠复制代码",
       "url": "https://www.infoq.cn/article/cg5y0kCfmWKrIjCraZeH?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 16:16:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Diagrid Catalyst 2.0 发布，为 AI 智能体新增持久化、可验证的执行能力",
       "url": "https://www.infoq.cn/article/ofYabQL5uvxdaIY7B31f?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 14:05:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "超越偏移量延迟：PB 级规模下 Hudi 数据湖流水线的队列等待时间计算",
       "url": "https://www.infoq.cn/article/1qWhPgQVFTBcz8arxCCk?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 12:10:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "GuanceDB 3.1：从 Bloom 过滤走向全字段倒排，重塑千亿级可观测性数据秒级查询体验",
-      "url": "https://www.infoq.cn/article/yghIuWdN8M9vQyYeGuHl?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 03 Sep 2026 12:05:26 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "BMC 漏洞致数千台服务器面临硬件级入侵风险",
-      "url": "https://www.infoq.cn/article/PfVEf7xZJBSkrYib9R8z?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 03 Sep 2026 10:40:00 GMT"
     }
   ]
 }

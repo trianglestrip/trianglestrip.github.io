@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-03T09:42:25+00:00",
+  "updated_at": "2026-09-03T13:52:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Pre-Release of Polars 2.0",
-      "url": "https://pola.rs/posts/announcing-polars-2/",
-      "hot": "120"
+      "title": "Audacity 4.0",
+      "url": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0",
+      "hot": "371"
     },
     {
       "rank": 2,
-      "title": "The Browser's Main Thread Is Expensive",
-      "url": "https://kciter.so/posts/the-expensive-main-thread/en/",
-      "hot": "41"
+      "title": "Elevated Errors for Multiple Models",
+      "url": "https://status.claude.com/incidents/461yvfrzpwtt",
+      "hot": "36"
     },
     {
       "rank": 3,
-      "title": "Muse Spark 1.3",
-      "url": "https://developer.meta.com/ai/models/muse-spark/",
-      "hot": "582"
+      "title": "Pre-Release of Polars 2.0",
+      "url": "https://pola.rs/posts/announcing-polars-2/",
+      "hot": "267"
     },
     {
       "rank": 4,
-      "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-      "hot": "1015"
+      "title": "The Browser's Main Thread Is Expensive",
+      "url": "https://kciter.so/posts/the-expensive-main-thread/en/",
+      "hot": "220"
     },
     {
       "rank": 5,
-      "title": "Three schoolgirls in Kinsale pulled up a pea plant covered in warts (2016)",
-      "url": "https://scienceblog.com/b-three-schoolgirls-in-kinsale-pulled-up-a-pea-plant-covered-in-warts-and-instead-of-binning-it-spent-three-years-testing-13000-seeds-in-a-spare-bedroom-the-bacteria-living-in-those-warts-made-barley/",
-      "hot": "46"
+      "title": "Invisible Companies",
+      "url": "https://colossus.com/article/invisible-companies/",
+      "hot": "49"
     },
     {
       "rank": 6,
-      "title": "LLMs and Self-Referentiality",
-      "url": "https://scottaaronson.blog/?p=10046",
-      "hot": "44"
+      "title": "What I Learned from My Mom (1941-2026)",
+      "url": "https://experimentalliving.substack.com/p/what-i-learned-from-my-mom-1941-2026",
+      "hot": "104"
     },
     {
       "rank": 7,
-      "title": "Google avoids a breakup of its ad tech business",
-      "url": "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html",
-      "hot": "380"
+      "title": "Intrusive Linked Lists",
+      "url": "https://www.data-structures-in-practice.com/intrusive-linked-lists/",
+      "hot": "20"
     },
     {
       "rank": 8,
-      "title": "Holden's Lightning Flight",
-      "url": "https://en.wikipedia.org/wiki/Holden%27s_Lightning_flight",
-      "hot": "153"
+      "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "hot": "1086"
     },
     {
       "rank": 9,
-      "title": "The Computer Museum of America reclamation project",
-      "url": "https://computer-museum.org/wp/",
-      "hot": "43"
+      "title": "Muse Spark 1.3",
+      "url": "https://developer.meta.com/ai/models/muse-spark/",
+      "hot": "632"
     },
     {
       "rank": 10,
-      "title": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
-      "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
-      "hot": "412"
+      "title": "Fish Bad, Sugar Good and Other Medieval Ideas About Food",
+      "url": "https://lithub.com/fish-bad-sugar-good-and-other-medieval-ideas-about-food/",
+      "hot": "47"
     }
   ]
 }
