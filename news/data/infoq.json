@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-03T05:08:29+00:00",
+  "updated_at": "2026-09-03T09:42:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "当Agent开始“吃数据”，传统湖仓不够用了：华为云重构数据基础设施",
+      "url": "https://www.infoq.cn/article/IE4CYYwbLYYKSbg7lXfx?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 03 Sep 2026 17:19:14 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "3个月拿下 3000 star，只因我们比 MinerU 多做了这件事",
+      "url": "https://www.infoq.cn/article/SJOBmxzKUJ5kX7TLNVKC?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 03 Sep 2026 17:09:32 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "李飞飞首个多模态世界模型 Atlas 正式发布：从零开始预训练，几张图就能构建世界",
+      "url": "https://www.infoq.cn/article/9YiEhb3hAFtUlxOpMdGC?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 03 Sep 2026 16:49:43 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Omdia最新市场研究报告：OceanBase位居亚太分布式数据库市场第一",
+      "url": "https://www.infoq.cn/article/dICPOgXYkvE9HcA1KpUv?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 03 Sep 2026 16:37:58 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "AI窗口期只剩3-4年，98%的企业却高估了自身的技术成熟度",
+      "url": "https://www.infoq.cn/article/Gz4w1NVNIJjs8fZOaQZD?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 03 Sep 2026 16:20:38 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "亚马逊云科技推出规范驱动组合：数据工作流不再靠复制代码",
+      "url": "https://www.infoq.cn/article/cg5y0kCfmWKrIjCraZeH?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 03 Sep 2026 16:16:00 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "Diagrid Catalyst 2.0 发布，为 AI 智能体新增持久化、可验证的执行能力",
+      "url": "https://www.infoq.cn/article/ofYabQL5uvxdaIY7B31f?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 03 Sep 2026 14:05:00 GMT"
+    },
+    {
+      "rank": 8,
       "title": "超越偏移量延迟：PB 级规模下 Hudi 数据湖流水线的队列等待时间计算",
       "url": "https://www.infoq.cn/article/1qWhPgQVFTBcz8arxCCk?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 12:10:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "GuanceDB 3.1：从 Bloom 过滤走向全字段倒排，重塑千亿级可观测性数据秒级查询体验",
       "url": "https://www.infoq.cn/article/yghIuWdN8M9vQyYeGuHl?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 12:05:26 GMT"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "BMC 漏洞致数千台服务器面临硬件级入侵风险",
       "url": "https://www.infoq.cn/article/PfVEf7xZJBSkrYib9R8z?utm_source=rss&utm_medium=article",
       "hot": "Thu, 03 Sep 2026 10:40:00 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "Cursor 推出 Origin：面向智能体的 GitHub 替代方案",
-      "url": "https://www.infoq.cn/article/labxcNbT15HapoWw69lq?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 03 Sep 2026 09:09:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "Nuxt 4.5：实验性 SSR 流式传输、Vite 8 以及基于 Rsbuild 的 Rspack 构建器",
-      "url": "https://www.infoq.cn/article/kggVXP7XclvALPskmSdq?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 02 Sep 2026 23:44:21 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "当 AI 开始重写负载，数据库该如何重新设计？",
-      "url": "https://www.infoq.cn/article/rhKVS8RAdp4aVPZD0vZu?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 02 Sep 2026 18:07:15 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Java 近期新闻：JDK 27-RC1、OpenJDK JEPs、Jakarta EE、BellSoft、Helidon、Micrometer、Tika 4.0",
-      "url": "https://www.infoq.cn/article/el0IBcWagf1hxccJYUUP?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 02 Sep 2026 16:06:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "优化平台工程规模，构建组织真正需要的平台",
-      "url": "https://www.infoq.cn/article/PybEXW1fiP1O5vfteYdL?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 02 Sep 2026 14:22:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "倒计时21天！GOAI进入决赛月，120强全力冲刺",
-      "url": "https://www.infoq.cn/article/JSgkNf4EBVRL6HPP8D1u?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 02 Sep 2026 14:21:17 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Cloudflare OS：Cloudflare 基于能力模型构建的开源企业级 AI 平台",
-      "url": "https://www.infoq.cn/article/ztbou1CqjAdzrT6GNSKV?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 02 Sep 2026 13:00:00 GMT"
     }
   ]
 }

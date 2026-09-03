@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-03T05:08:23+00:00",
+  "updated_at": "2026-09-03T09:42:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "刚刚，OpenAI新Transformer火了！Astra架构首次曝光",
+      "url": "https://www.51cto.com/article/854840.html",
+      "hot": "OpenAI下一代Astra采用了一种「循环深度」（recurrent depth）全新推理方法。思考Token大幅减少，性能反而直线拉爆！"
+    },
+    {
+      "rank": 2,
       "title": "【鸿蒙实战】第 14 篇：HarmonyOS 7 材质体系——systemMaterial 沉浸光感浮层配置（HarmonyOS 7.x）",
       "url": "https://ost.51cto.com/posts/55875",
       "hot": "项目从HarmonyOS6升到7之后，UI同学让我把浮层改成&quot;毛玻璃通透感&quot;。折腾了一两天，把Popup、Menu、Sheet的systemMaterialAPI过了一遍，踩了..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "HarmonyOS 把计时器戴上手腕：鸿蒙手表应用开发实战，从圆屏适配到震动反馈",
       "url": "https://ost.51cto.com/posts/55871",
       "hot": "写手机应用写得多了，人会对「屏幕是方的」这件事深信不疑：布局从左上角开始排，标题栏横跨整个宽度，按钮放在右下角。把手表应用写出来的..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "企业级 AI 智能体的可靠性，全靠知识底座的运维兜底",
       "url": "https://www.51cto.com/article/854812.html",
       "hot": "企业知识平台通过标准化分层管理，实现知识的一次治理、全局复用，从根源上，解决 AI 智能体的可靠性问题。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "On-policy Distillation with Verifiable Reward：用可验证奖励给同策略蒸馏加上\"是非门\"",
       "url": "https://www.51cto.com/article/854811.html",
       "hot": "OPD（On-policy Distillation，同策略蒸馏）则走另一条路：让教师模型对学生每一步输出分布给出密集的 token 级引导，监督信号细到每个生成位置。代价是，OPD 的目标纯粹是分布层面的——它把学生的分布往教师对齐，而不管这条被采样的轨迹本身对不对。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "你能用 300 行写出一个 Coding Agent 吗？",
       "url": "https://www.51cto.com/article/854810.html",
       "hot": "这篇文章不打算复刻一个成熟商业产品，而是回答一个更基础的问题：300 行以内，能不能搭出一个会读代码、改文件、跑测试，并根据结果继续修正的 Coding Agent？答案是可以。"
     },
     {
-      "rank": 6,
+      "rank": 7,
+      "title": "Claude Fable 5.1与GPT-5.6社区一手实测",
+      "url": "https://www.51cto.com/article/854809.html",
+      "hot": "贵的Fable 5.1确实细节碾压（波浪、海岸线深度、数千颗水晶吊灯、更大的水上乐园结构以及更流畅的直升机运动），但它建好了三滑道水上乐园塔楼，却忘了往泳池里放水（两者都存在一些基本状态错误）。"
+    },
+    {
+      "rank": 8,
       "title": "从光学鼠标到企业 AI：垂直场景落地为什么仍然需要经典算法？",
       "url": "https://www.51cto.com/article/854808.html",
       "hot": "这篇试图说清楚：光学 鼠标的工作逻辑参考、审查类 AI 应用为什么值得单独讨论，我最近接触的几个审查项目有哪些共性的工程决策，以及从鼠标算法到审查系统，哪些思路可以迁移，哪些不能照搬。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "MiniMax自己的模型，被另一家公司改了改，跑出官方35倍的速度，还顺手把Twitch搞炸了",
       "url": "https://www.51cto.com/article/854807.html",
       "hot": "有人把一个AI视频模型接到了Twitch直播上，说接上去之后直播就没停过，二十四小时连着播，弹幕里打什么，下一段故事就往哪儿走。我心想这玩意儿听着有点邪门，赶紧点进链接想自己上手试试，结果好家伙，卡在了登录那一步，得先注册个国外账号，等验证码，等了三分钟手机上啥都没有。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "TinySR：面向真实世界图像超分辨率的轻量级扩散模型",
       "url": "https://www.51cto.com/article/854806.html",
       "hot": "TinySR 不是在证明 Diffusion 能不能做超分，而是在回答另一个更现实的问题：Diffusion 超分什么时候能真正走出实验室，进入轻量化、实时化、移动化的产品链路。"
-    },
-    {
-      "rank": 9,
-      "title": "OpenAI Astra核心架构爆出：大模型第三条Scaling法则诞生",
-      "url": "https://www.51cto.com/article/854779.html",
-      "hot": "循环深度通过在共享层上迭代，实现了“用计算深度换参数规模”的高效推理范式。"
-    },
-    {
-      "rank": 10,
-      "title": "OpenAI Astra发布在即，全自动网络攻防能力已突破天际！",
-      "url": "https://www.51cto.com/article/854778.html",
-      "hot": "Astra 即将上线 ChatGPT，而 OpenAI 为了防它「太能打」，给它装了一套实时监控，会检查模型的推理过程。"
     }
   ]
 }
