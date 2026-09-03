@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-09-03T19:54:06+00:00",
+  "updated_at": "2026-09-03T21:56:31+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,8 +12,8 @@
     },
     {
       "rank": 2,
-      "title": "长生 退役",
-      "url": "https://s.weibo.com/weibo?q=%E9%95%BF%E7%94%9F%20%E9%80%80%E5%BD%B9",
+      "title": "没有人会教你真正核心的东西",
+      "url": "https://s.weibo.com/weibo?q=%E6%B2%A1%E6%9C%89%E4%BA%BA%E4%BC%9A%E6%95%99%E4%BD%A0%E7%9C%9F%E6%AD%A3%E6%A0%B8%E5%BF%83%E7%9A%84%E4%B8%9C%E8%A5%BF",
       "hot": ""
     },
     {
@@ -36,32 +36,32 @@
     },
     {
       "rank": 6,
-      "title": "没有人会教你真正核心的东西",
-      "url": "https://s.weibo.com/weibo?q=%E6%B2%A1%E6%9C%89%E4%BA%BA%E4%BC%9A%E6%95%99%E4%BD%A0%E7%9C%9F%E6%AD%A3%E6%A0%B8%E5%BF%83%E7%9A%84%E4%B8%9C%E8%A5%BF",
+      "title": "长生 退役",
+      "url": "https://s.weibo.com/weibo?q=%E9%95%BF%E7%94%9F%20%E9%80%80%E5%BD%B9",
       "hot": ""
     },
     {
       "rank": 7,
-      "title": "普通人没必要追求电子产品顶配",
-      "url": "https://s.weibo.com/weibo?q=%E6%99%AE%E9%80%9A%E4%BA%BA%E6%B2%A1%E5%BF%85%E8%A6%81%E8%BF%BD%E6%B1%82%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E9%A1%B6%E9%85%8D",
+      "title": "美网女单第二轮",
+      "url": "https://s.weibo.com/weibo?q=%E7%BE%8E%E7%BD%91%E5%A5%B3%E5%8D%95%E7%AC%AC%E4%BA%8C%E8%BD%AE",
       "hot": ""
     },
     {
       "rank": 8,
-      "title": "孟子义红之品牌代言人",
-      "url": "https://s.weibo.com/weibo?q=%E5%AD%9F%E5%AD%90%E4%B9%89%E7%BA%A2%E4%B9%8B%E5%93%81%E7%89%8C%E4%BB%A3%E8%A8%80%E4%BA%BA",
-      "hot": ""
-    },
-    {
-      "rank": 9,
       "title": "人总是下意识地忽略自己的珍贵",
       "url": "https://s.weibo.com/weibo?q=%E4%BA%BA%E6%80%BB%E6%98%AF%E4%B8%8B%E6%84%8F%E8%AF%86%E5%9C%B0%E5%BF%BD%E7%95%A5%E8%87%AA%E5%B7%B1%E7%9A%84%E7%8F%8D%E8%B4%B5",
       "hot": ""
     },
     {
+      "rank": 9,
+      "title": "青海5.1级地震",
+      "url": "https://s.weibo.com/weibo?q=%E9%9D%92%E6%B5%B75.1%E7%BA%A7%E5%9C%B0%E9%9C%87",
+      "hot": ""
+    },
+    {
       "rank": 10,
-      "title": "美网女单第二轮",
-      "url": "https://s.weibo.com/weibo?q=%E7%BE%8E%E7%BD%91%E5%A5%B3%E5%8D%95%E7%AC%AC%E4%BA%8C%E8%BD%AE",
+      "title": "一年级 陈学冬综艺",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%80%E5%B9%B4%E7%BA%A7%20%E9%99%88%E5%AD%A6%E5%86%AC%E7%BB%BC%E8%89%BA",
       "hot": ""
     }
   ]
