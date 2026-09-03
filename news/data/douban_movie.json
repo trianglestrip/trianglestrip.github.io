@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-03T13:51:56+00:00",
+  "updated_at": "2026-09-03T17:18:59+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "空枪",
-      "url": "https://movie.douban.com/subject/37508847/",
-      "hot": "评分 7.2"
-    },
-    {
-      "rank": 4,
       "title": "抓特务",
       "url": "https://movie.douban.com/subject/36812879/",
       "hot": "评分 7.4"
+    },
+    {
+      "rank": 4,
+      "title": "空枪",
+      "url": "https://movie.douban.com/subject/37508847/",
+      "hot": "评分 7.2"
     },
     {
       "rank": 5,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "挽救计划",
-      "url": "https://movie.douban.com/subject/35010610/",
-      "hot": "评分 8.6"
+      "title": "早春晴朗",
+      "url": "https://movie.douban.com/subject/36660844/",
+      "hot": ""
     }
   ]
 }
