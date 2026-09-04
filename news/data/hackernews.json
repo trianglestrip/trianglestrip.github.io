@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-04T06:02:39+00:00",
+  "updated_at": "2026-09-04T11:01:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "GPT-6 Astra",
       "url": "https://openai.com/index/gpt-6-astra/",
-      "hot": "1585"
+      "hot": "1853"
     },
     {
       "rank": 2,
       "title": ".name Termination",
       "url": "https://neil.fraser.name/news/2026/09/03/",
-      "hot": "1590"
+      "hot": "1873"
     },
     {
       "rank": 3,
-      "title": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
-      "url": "https://inference-docs.cerebras.ai/models/overview",
-      "hot": "509"
+      "title": "Carbon-aware electricity pricing, measured daily on 38 grids",
+      "url": "https://carbonawarepricing.com/",
+      "hot": "39"
     },
     {
       "rank": 4,
-      "title": "A Mysterious Kidney Disease Has Arrived in Texas",
-      "url": "https://www.texasmonthly.com/news-politics/ckdu-kidney-disease-immigration/",
-      "hot": "56"
+      "title": "The Raspberry Pi Interactive Timeline · 2006–2026",
+      "url": "https://raspberry.tips/en/raspberrypi-infos/raspberry-pi-history-timeline",
+      "hot": "30"
     },
     {
       "rank": 5,
-      "title": "Project Xanadu: Even More Hindsight",
-      "url": "https://gwern.net/xanadu",
-      "hot": "57"
+      "title": "Solving the Jane Street Reverse Engineering Challenge",
+      "url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
+      "hot": "17"
     },
     {
       "rank": 6,
-      "title": "Grep beats LSP? Why coding agents ignore your fancier tools",
-      "url": "https://www.agentconnect.md/blog/grep-beat-lsp-harness/",
-      "hot": "49"
+      "title": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
+      "url": "https://inference-docs.cerebras.ai/models/overview",
+      "hot": "574"
     },
     {
       "rank": 7,
-      "title": "The largest electric aircraft just flew [video]",
-      "url": "https://www.youtube.com/watch?v=nM86DBOqgPM",
-      "hot": "251"
+      "title": "Authorization terminology is a mess: Let's fix it",
+      "url": "https://idpro.org/authorization-terminology-is-a-mess-lets-fix-it/",
+      "hot": "54"
     },
     {
       "rank": 8,
-      "title": "How an MIT research project became the Julia programming language",
-      "url": "https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831",
-      "hot": "61"
+      "title": "Hackers Had a Live Feed of Every ID Verification Company Scanned for over a Year",
+      "url": "http://www.techdirt.com/2026/09/03/hackers-had-a-live-feed-of-every-id-this-verification-company-scanned-for-over-a-year/",
+      "hot": "187"
     },
     {
       "rank": 9,
-      "title": "From Hookswitch to Grave",
-      "url": "https://computer.rip/2026-06-14-hookswitch-to-grave.html",
-      "hot": "16"
+      "title": "The largest electric aircraft just flew [video]",
+      "url": "https://www.youtube.com/watch?v=nM86DBOqgPM",
+      "hot": "346"
     },
     {
       "rank": 10,
       "title": "Artificial beaver dams saw juvenile coho salmon survival rates go from 8% to 60%",
       "url": "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california",
-      "hot": "208"
+      "hot": "269"
     }
   ]
 }
