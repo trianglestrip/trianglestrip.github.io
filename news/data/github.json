@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-09-04T06:02:27+00:00",
+  "updated_at": "2026-09-04T14:53:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[C++] fmtlib/fmt",
-      "url": "https://github.com/fmtlib/fmt",
-      "hot": "25,222"
+      "title": "[Shell] mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "hot": "249,305"
     },
     {
       "rank": 2,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "247,976"
+      "title": "[JavaScript] DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "hot": "124,737"
     },
     {
       "rank": 3,
-      "title": "[Python] NousResearch/hermes-agent",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "hot": "241,015"
+      "title": "[C++] fmtlib/fmt",
+      "url": "https://github.com/fmtlib/fmt",
+      "hot": "25,417"
     },
     {
       "rank": 4,
-      "title": "[JavaScript] DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "hot": "123,817"
+      "title": "[JavaScript] affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "hot": "247,979"
     },
     {
       "rank": 5,
       "title": "[Python] anthropics/skills",
       "url": "https://github.com/anthropics/skills",
-      "hot": "173,778"
+      "hot": "173,963"
     },
     {
       "rank": 6,
-      "title": "[JavaScript] affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "hot": "247,429"
+      "title": "[Python] blader/humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "hot": "42,273"
     },
     {
       "rank": 7,
-      "title": "[Go] JuliusBrussee/caveman",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "hot": "103,208"
+      "title": "[Python] NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "hot": "241,275"
     },
     {
       "rank": 8,
-      "title": "[Python] blader/humanizer",
-      "url": "https://github.com/blader/humanizer",
-      "hot": "41,763"
+      "title": "[Go] JuliusBrussee/caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "hot": "103,417"
     },
     {
       "rank": 9,
-      "title": "[Python] google-research/timesfm",
-      "url": "https://github.com/google-research/timesfm",
-      "hot": "30,783"
+      "title": "[TypeScript] magnitudedev/magnitude",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "hot": "2,205"
     },
     {
       "rank": 10,
-      "title": "[HTML] averygan/reclip",
-      "url": "https://github.com/averygan/reclip",
-      "hot": "8,504"
+      "title": "[Python] bikini/exploitarium",
+      "url": "https://github.com/bikini/exploitarium",
+      "hot": "4,422"
     }
   ]
 }
