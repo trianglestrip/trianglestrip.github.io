@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-03T19:55:26+00:00",
+  "updated_at": "2026-09-04T06:02:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "zai-org/GLM-5.3",
       "url": "https://huggingface.co/zai-org/GLM-5.3",
-      "hot": "1595"
+      "hot": "1625"
     },
     {
       "rank": 2,
       "title": "Qwen/Qwen3.8-Flash-Next",
       "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "hot": "4792"
+      "hot": "4822"
     },
     {
       "rank": 3,
       "title": "zai-org/GLM-5.3-Flash",
       "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-      "hot": "2007"
+      "hot": "2023"
     },
     {
       "rank": 4,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "13802"
+      "hot": "13849"
     },
     {
       "rank": 5,
       "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-      "hot": "537"
+      "hot": "558"
     },
     {
       "rank": 6,
       "title": "tencent/Hy4-preview",
       "url": "https://huggingface.co/tencent/Hy4-preview",
-      "hot": "411"
+      "hot": "417"
     },
     {
       "rank": 7,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "2671"
+      "hot": "2706"
     },
     {
       "rank": 8,
       "title": "google/timesfm-3.0-pytorch",
       "url": "https://huggingface.co/google/timesfm-3.0-pytorch",
-      "hot": "349"
+      "hot": "373"
     },
     {
       "rank": 9,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "3434"
+      "hot": "3454"
     },
     {
       "rank": 10,
       "title": "unsloth/Qwen3.8-Flash-Next-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
-      "hot": "753"
+      "hot": "765"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-04T01:22:59+00:00",
+  "updated_at": "2026-09-04T06:02:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "刚刚，OpenAI新Transformer火了！Astra架构首次曝光",
-      "url": "https://www.51cto.com/article/854840.html",
-      "hot": "OpenAI下一代Astra采用了一种「循环深度」（recurrent depth）全新推理方法。思考Token大幅减少，性能反而直线拉爆！"
+      "title": "HarmonyOS 7文搜图实战：输入一句话查找图片",
+      "url": "https://ost.51cto.com/posts/55901",
+      "hot": "大家好，今天要介绍的是HarmonyOS7中的新特性：文搜图。应用中的图片越来越多以后，想找到其中一张并不容易。传统做法一般是给图片添加标题..."
     },
     {
       "rank": 2,
-      "title": "【鸿蒙实战】第 14 篇：HarmonyOS 7 材质体系——systemMaterial 沉浸光感浮层配置（HarmonyOS 7.x）",
-      "url": "https://ost.51cto.com/posts/55875",
-      "hot": "项目从HarmonyOS6升到7之后，UI同学让我把浮层改成&quot;毛玻璃通透感&quot;。折腾了一两天，把Popup、Menu、Sheet的systemMaterialAPI过了一遍，踩了..."
+      "title": "【HarmonyOS 7 平行视界深度实战】03 购物模式怎么实现连续浏览和左右推挤",
+      "url": "https://ost.51cto.com/posts/55900",
+      "hot": "前言商品列表进入详情，再从详情进入规格页，这类连续浏览经常需要把上一层内容留作参照。用户可能刚刚从几十件商品中选中一把键盘，进入详..."
     },
     {
       "rank": 3,
-      "title": "HarmonyOS 把计时器戴上手腕：鸿蒙手表应用开发实战，从圆屏适配到震动反馈",
-      "url": "https://ost.51cto.com/posts/55871",
-      "hot": "写手机应用写得多了，人会对「屏幕是方的」这件事深信不疑：布局从左上角开始排，标题栏横跨整个宽度，按钮放在右下角。把手表应用写出来的..."
+      "title": "OpenAI 发布 GPT-6 Astra：它可能是第一个真正的 AGI",
+      "url": "https://www.51cto.com/article/854947.html",
+      "hot": "Anthropic 刚推出 Fable 5.1，Google 紧接着拿出 Gemini 3.8 Flash，Meta 也把 Muse Spark 1.3 摆上桌。然后，OpenAI 终于放出了：GPT-6 Astra。"
     },
     {
       "rank": 4,
-      "title": "企业级 AI 智能体的可靠性，全靠知识底座的运维兜底",
-      "url": "https://www.51cto.com/article/854812.html",
-      "hot": "企业知识平台通过标准化分层管理，实现知识的一次治理、全局复用，从根源上，解决 AI 智能体的可靠性问题。"
+      "title": "CompleteFuture VS CompletableFuture：Netty 为何自研 Future",
+      "url": "https://www.51cto.com/article/854946.html",
+      "hot": "Netty 自研 Future 体系，不是重复造轮子，而是为自身的高性能网络场景量身定制。"
     },
     {
       "rank": 5,
-      "title": "On-policy Distillation with Verifiable Reward：用可验证奖励给同策略蒸馏加上\"是非门\"",
-      "url": "https://www.51cto.com/article/854811.html",
-      "hot": "OPD（On-policy Distillation，同策略蒸馏）则走另一条路：让教师模型对学生每一步输出分布给出密集的 token 级引导，监督信号细到每个生成位置。代价是，OPD 的目标纯粹是分布层面的——它把学生的分布往教师对齐，而不管这条被采样的轨迹本身对不对。"
+      "title": "Agent 之间怎么通信？A2A/ACP/ANP 三协议怎么选",
+      "url": "https://www.51cto.com/article/854945.html",
+      "hot": "本文覆盖三个水平层协议：A2A（企业协作，已被广泛采纳）、ACP（IBM 的方案，已并入 A2A）、ANP（去中心化网络，面向开放互联网）。"
     },
     {
       "rank": 6,
-      "title": "你能用 300 行写出一个 Coding Agent 吗？",
-      "url": "https://www.51cto.com/article/854810.html",
-      "hot": "这篇文章不打算复刻一个成熟商业产品，而是回答一个更基础的问题：300 行以内，能不能搭出一个会读代码、改文件、跑测试，并根据结果继续修正的 Coding Agent？答案是可以。"
+      "title": "液冷数据中心解析：当 AI 把机柜推向百千瓦，散热系统如何重构",
+      "url": "https://server.51cto.com/article/854944.html",
+      "hot": "如果是新建的大规模 AI 训练集群，设备生态已经支持冷板式液冷，那么直达芯片通常是更现实的主路线；如果追求极高密度、设备形态可定制且有成熟介质与运维能力，可以评估浸没式；如果是在传统机房中处理少量高密热点，背板换热器或局部冷板加 CDU 的渐进式改造更容易落地。"
     },
     {
       "rank": 7,
-      "title": "Claude Fable 5.1与GPT-5.6社区一手实测",
-      "url": "https://www.51cto.com/article/854809.html",
-      "hot": "贵的Fable 5.1确实细节碾压（波浪、海岸线深度、数千颗水晶吊灯、更大的水上乐园结构以及更流畅的直升机运动），但它建好了三滑道水上乐园塔楼，却忘了往泳池里放水（两者都存在一些基本状态错误）。"
+      "title": "孪生素数猜想被GPT-6新突破！北大数学07级又出现了",
+      "url": "https://www.51cto.com/article/854938.html",
+      "hot": "宾夕法尼亚大学统计学教授、北大07级校友苏炜杰发了一条推，说他亲眼看着这个模型把一个他崇敬了二十多年的数学问题，往前推了一步。"
     },
     {
       "rank": 8,
-      "title": "从光学鼠标到企业 AI：垂直场景落地为什么仍然需要经典算法？",
-      "url": "https://www.51cto.com/article/854808.html",
-      "hot": "这篇试图说清楚：光学 鼠标的工作逻辑参考、审查类 AI 应用为什么值得单独讨论，我最近接触的几个审查项目有哪些共性的工程决策，以及从鼠标算法到审查系统，哪些思路可以迁移，哪些不能照搬。"
+      "title": "今起Codex每天重置一次！Tibo义父：首次三小时后发放，重置时间可自选",
+      "url": "https://www.51cto.com/article/854935.html",
+      "hot": "只要你付费了但还没法用GPT-6 Astra，那么每天都能重置额度一次。"
     },
     {
       "rank": 9,
-      "title": "MiniMax自己的模型，被另一家公司改了改，跑出官方35倍的速度，还顺手把Twitch搞炸了",
-      "url": "https://www.51cto.com/article/854807.html",
-      "hot": "有人把一个AI视频模型接到了Twitch直播上，说接上去之后直播就没停过，二十四小时连着播，弹幕里打什么，下一段故事就往哪儿走。我心想这玩意儿听着有点邪门，赶紧点进链接想自己上手试试，结果好家伙，卡在了登录那一步，得先注册个国外账号，等验证码，等了三分钟手机上啥都没有。"
+      "title": "Meta发最强模型打响价格战，小扎对谷歌贴脸开大！北大校友立大功",
+      "url": "https://www.51cto.com/article/854934.html",
+      "hot": "大模型之争，已经从「谁更会说话」转向「谁更能干活」。未来的核心壁垒不是单一跑分，而是在极低成本下，长程任务的真实落地能力。"
     },
     {
       "rank": 10,
-      "title": "TinySR：面向真实世界图像超分辨率的轻量级扩散模型",
-      "url": "https://www.51cto.com/article/854806.html",
-      "hot": "TinySR 不是在证明 Diffusion 能不能做超分，而是在回答另一个更现实的问题：Diffusion 超分什么时候能真正走出实验室，进入轻量化、实时化、移动化的产品链路。"
+      "title": "英伟达官方推理指南来了！六倍无损加速，最优解全是华人写的",
+      "url": "https://www.51cto.com/article/854932.html",
+      "hot": "单纯堆砌庞大参数的时代正在翻篇，如今真正的胜负手，取决于谁更懂脚下那块硅片的物理极限。"
     }
   ]
 }

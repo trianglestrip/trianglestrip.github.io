@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-04T01:23:03+00:00",
+  "updated_at": "2026-09-04T06:02:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "ChatGPT、Claude、Grok 同时宕机，没人解释为什么",
+      "url": "https://www.oschina.net/news/502312/chatgpt-grok-claude-outage-down",
+      "hot": "Fri, 04 Sep 2026 11:56:01 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "NVIDIA 129 亿美元收购 Hugging Face，承诺保持开放平台",
+      "url": "https://www.oschina.net/news/502310/nvidia-to-acquire-hugging-face",
+      "hot": "Fri, 04 Sep 2026 10:58:38 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Audacity 4.0.0 发布：界面迁移 Qt，Clip 编辑模型重做",
+      "url": "https://www.oschina.net/news/502309/audacity-4-0-0",
+      "hot": "Fri, 04 Sep 2026 10:54:30 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Zed 创始人：Xanadu 等了六十年，终于等到了 AI Agent",
+      "url": "https://www.oschina.net/news/502308/zed-dev-agentic-xanadu",
+      "hot": "Fri, 04 Sep 2026 10:51:39 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "GPT-6 Astra 发布，OpenAI 总裁 Brockman 说欢迎来到 AGI 时代",
+      "url": "https://www.oschina.net/news/502307/openai-gpt-6-astra",
+      "hot": "Fri, 04 Sep 2026 09:39:37 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "OwnCode安全优先的编程工具，进行了优化，更省token",
+      "url": "https://www.oschina.net/news/502306",
+      "hot": "Fri, 04 Sep 2026 00:22:57 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "跨平台桌面版开发者工具箱 Kairoa v1.1.26 发布：API 工具功能增强",
+      "url": "https://www.oschina.net/news/502305",
+      "hot": "Thu, 03 Sep 2026 23:31:26 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "灵界 OS v3.1.3 现已发布。",
+      "url": "https://www.oschina.net/news/502304",
+      "hot": "Thu, 03 Sep 2026 21:00:03 +0800"
+    },
+    {
+      "rank": 9,
       "title": "Termexo V0.7.0 发布：终端可见并切换 Claude / Codex 登录账号",
       "url": "https://www.oschina.net/news/502303",
       "hot": "Thu, 03 Sep 2026 19:23:16 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "别再让员工偷偷用 ChatGPT 了：用一台内网网关，把大模型变成\"自来水\"",
       "url": "https://www.oschina.net/news/502302",
       "hot": "Thu, 03 Sep 2026 18:23:46 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "灵界 OS v3.1.2 现已发布",
-      "url": "https://www.oschina.net/news/502301",
-      "hot": "Thu, 03 Sep 2026 17:32:22 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "shrl.io - 隐私优先的自托管 URL 短链接服务",
-      "url": "https://www.oschina.net/p/shrl-io",
-      "hot": "Thu, 03 Sep 2026 15:50:57 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Meta 这个百万级上下文模型，用数据换折扣，差价 21 倍",
-      "url": "https://www.oschina.net/news/502295/meta-ai-muse-spark-1-3",
-      "hot": "Thu, 03 Sep 2026 15:16:37 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "腾讯 WorkBuddy 原生适配，上架 deepin 应用商店！",
-      "url": "https://www.oschina.net/news/502294",
-      "hot": "Thu, 03 Sep 2026 15:06:30 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "每个开发者都能做的工业质检AI，RT-Thread 命题公布",
-      "url": "https://www.oschina.net/news/502293",
-      "hot": "Thu, 03 Sep 2026 14:37:16 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "开源 AI 终端助手 Pragmatic AI Shell 发布 v1.0：多模型热切换 + 免 JRE 原生二进制",
-      "url": "https://www.oschina.net/news/502288",
-      "hot": "Thu, 03 Sep 2026 12:49:46 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "DBErp v3.0.4 发布：新增销售毛利、移动平均成本与 SMTP 邮件服务",
-      "url": "https://www.oschina.net/news/502286",
-      "hot": "Thu, 03 Sep 2026 10:39:18 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "RXThinkCMF 敏捷开发框架 ThinkPhp8+AntdVue 版本 v2.6.1 发布",
-      "url": "https://www.oschina.net/news/502284",
-      "hot": "Thu, 03 Sep 2026 08:40:19 +0800"
     }
   ]
 }
