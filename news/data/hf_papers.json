@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-04T14:54:14+00:00",
+  "updated_at": "2026-09-04T21:57:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
-      "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "772"
-    },
-    {
-      "rank": 2,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
       "hot": "107"
+    },
+    {
+      "rank": 2,
+      "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
+      "url": "https://huggingface.co/papers/2608.09888",
+      "hot": "772"
     },
     {
       "rank": 3,
@@ -42,9 +42,9 @@
     },
     {
       "rank": 7,
-      "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
-      "url": "https://huggingface.co/papers/2608.24053",
-      "hot": "70"
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "url": "https://huggingface.co/papers/2608.23283",
+      "hot": "205"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
-      "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "205"
+      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
+      "url": "https://huggingface.co/papers/2508.16279",
+      "hot": "68"
     },
     {
       "rank": 10,
-      "title": "DreamX-Creator: Democratizing Native Audio-Video Generation at 2K Resolution",
-      "url": "https://huggingface.co/papers/2608.31106",
-      "hot": "97"
+      "title": "Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction",
+      "url": "https://huggingface.co/papers/2608.27529",
+      "hot": "33"
     }
   ]
 }

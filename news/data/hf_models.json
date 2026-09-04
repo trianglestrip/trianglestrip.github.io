@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-04T14:54:14+00:00",
+  "updated_at": "2026-09-04T21:57:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "zai-org/GLM-5.3",
-      "url": "https://huggingface.co/zai-org/GLM-5.3",
-      "hot": "1670"
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "hot": "590"
     },
     {
       "rank": 2,
       "title": "Qwen/Qwen3.8-Flash-Next",
       "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "hot": "4846"
+      "hot": "4868"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "13900"
+      "hot": "13938"
     },
     {
       "rank": 4,
-      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-      "hot": "580"
+      "title": "zai-org/GLM-5.3",
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "hot": "1692"
     },
     {
       "rank": 5,
       "title": "zai-org/GLM-5.3-Flash",
       "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-      "hot": "2032"
+      "hot": "2041"
     },
     {
       "rank": 6,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "2736"
+      "title": "google/timesfm-3.0-pytorch",
+      "url": "https://huggingface.co/google/timesfm-3.0-pytorch",
+      "hot": "422"
     },
     {
       "rank": 7,
-      "title": "google/timesfm-3.0-pytorch",
-      "url": "https://huggingface.co/google/timesfm-3.0-pytorch",
-      "hot": "408"
+      "title": "XHToken/Spark-X2.5-4B",
+      "url": "https://huggingface.co/XHToken/Spark-X2.5-4B",
+      "hot": "461"
     },
     {
       "rank": 8,
-      "title": "XHToken/Spark-X2.5-4B",
-      "url": "https://huggingface.co/XHToken/Spark-X2.5-4B",
-      "hot": "443"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "2772"
     },
     {
       "rank": 9,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "3475"
+      "hot": "3498"
     },
     {
       "rank": 10,
       "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "hot": "277"
+      "hot": "300"
     }
   ]
 }

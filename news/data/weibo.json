@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-09-04T19:55:19+00:00",
+  "updated_at": "2026-09-04T21:55:35+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,50 +12,50 @@
     },
     {
       "rank": 2,
-      "title": "极限挑战 重拍",
-      "url": "https://s.weibo.com/weibo?q=%E6%9E%81%E9%99%90%E6%8C%91%E6%88%98%20%E9%87%8D%E6%8B%8D",
-      "hot": ""
-    },
-    {
-      "rank": 3,
-      "title": "把青春华章写在祖国大地上",
-      "url": "https://s.weibo.com/weibo?q=%E6%8A%8A%E9%9D%92%E6%98%A5%E5%8D%8E%E7%AB%A0%E5%86%99%E5%9C%A8%E7%A5%96%E5%9B%BD%E5%A4%A7%E5%9C%B0%E4%B8%8A",
-      "hot": ""
-    },
-    {
-      "rank": 4,
-      "title": "披哥二公排名",
-      "url": "https://s.weibo.com/weibo?q=%E6%8A%AB%E5%93%A5%E4%BA%8C%E5%85%AC%E6%8E%92%E5%90%8D",
-      "hot": ""
-    },
-    {
-      "rank": 5,
       "title": "日本请求俄拆纪念碑菊花纹章遭拒",
       "url": "https://s.weibo.com/weibo?q=%E6%97%A5%E6%9C%AC%E8%AF%B7%E6%B1%82%E4%BF%84%E6%8B%86%E7%BA%AA%E5%BF%B5%E7%A2%91%E8%8F%8A%E8%8A%B1%E7%BA%B9%E7%AB%A0%E9%81%AD%E6%8B%92",
       "hot": ""
     },
     {
-      "rank": 6,
-      "title": "花少2嘉宾干活表",
-      "url": "https://s.weibo.com/weibo?q=%E8%8A%B1%E5%B0%912%E5%98%89%E5%AE%BE%E5%B9%B2%E6%B4%BB%E8%A1%A8",
+      "rank": 3,
+      "title": "全国多地迎来丰收季",
+      "url": "https://s.weibo.com/weibo?q=%E5%85%A8%E5%9B%BD%E5%A4%9A%E5%9C%B0%E8%BF%8E%E6%9D%A5%E4%B8%B0%E6%94%B6%E5%AD%A3",
       "hot": ""
     },
     {
-      "rank": 7,
-      "title": "内衣加抗癌药是噱头更是风险",
-      "url": "https://s.weibo.com/weibo?q=%E5%86%85%E8%A1%A3%E5%8A%A0%E6%8A%97%E7%99%8C%E8%8D%AF%E6%98%AF%E5%99%B1%E5%A4%B4%E6%9B%B4%E6%98%AF%E9%A3%8E%E9%99%A9",
+      "rank": 4,
+      "title": "极限挑战 重拍",
+      "url": "https://s.weibo.com/weibo?q=%E6%9E%81%E9%99%90%E6%8C%91%E6%88%98%20%E9%87%8D%E6%8B%8D",
       "hot": ""
     },
     {
-      "rank": 8,
+      "rank": 5,
       "title": "这是真正凭本事吃饭的行业",
       "url": "https://s.weibo.com/weibo?q=%E8%BF%99%E6%98%AF%E7%9C%9F%E6%AD%A3%E5%87%AD%E6%9C%AC%E4%BA%8B%E5%90%83%E9%A5%AD%E7%9A%84%E8%A1%8C%E4%B8%9A",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 6,
       "title": "莆田暴雨亲历者饿得受不了",
       "url": "https://s.weibo.com/weibo?q=%E8%8E%86%E7%94%B0%E6%9A%B4%E9%9B%A8%E4%BA%B2%E5%8E%86%E8%80%85%E9%A5%BF%E5%BE%97%E5%8F%97%E4%B8%8D%E4%BA%86",
+      "hot": ""
+    },
+    {
+      "rank": 7,
+      "title": "上快手看超级夏晚",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%8A%E5%BF%AB%E6%89%8B%E7%9C%8B%E8%B6%85%E7%BA%A7%E5%A4%8F%E6%99%9A",
+      "hot": ""
+    },
+    {
+      "rank": 8,
+      "title": "花少2嘉宾干活表",
+      "url": "https://s.weibo.com/weibo?q=%E8%8A%B1%E5%B0%912%E5%98%89%E5%AE%BE%E5%B9%B2%E6%B4%BB%E8%A1%A8",
+      "hot": ""
+    },
+    {
+      "rank": 9,
+      "title": "披哥二公排名",
+      "url": "https://s.weibo.com/weibo?q=%E6%8A%AB%E5%93%A5%E4%BA%8C%E5%85%AC%E6%8E%92%E5%90%8D",
       "hot": ""
     },
     {
