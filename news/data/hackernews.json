@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-04T14:53:20+00:00",
+  "updated_at": "2026-09-04T17:51:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Discovery of a new OpenAI agent message board",
       "url": "https://collusion.wiki/",
-      "hot": "498"
+      "hot": "965"
     },
     {
       "rank": 2,
-      "title": "Google AI Mode shows same products 21.6% more expensive than traditional search",
-      "url": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
-      "hot": "101"
+      "title": "Show HN: Open-Source eInk Bike Computer",
+      "url": "https://opentrailpaper.com",
+      "hot": "14"
     },
     {
       "rank": 3,
-      "title": "Solving the Jane Street Reverse Engineering Challenge",
-      "url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
-      "hot": "194"
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "hot": "21"
     },
     {
       "rank": 4,
-      "title": "GPT-6 Astra",
-      "url": "https://openai.com/index/gpt-6-astra/",
-      "hot": "1976"
+      "title": "Solving the Jane Street reverse engineering challenge",
+      "url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
+      "hot": "298"
     },
     {
       "rank": 5,
-      "title": "Burnt out on a three-day week",
-      "url": "https://jennywanger.com/articles/burnt-out-on-a-three-day-week/",
-      "hot": "24"
+      "title": "GPT-6 Astra",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "hot": "2078"
     },
     {
       "rank": 6,
-      "title": "Ok, but Does It Scale?",
-      "url": "https://spacetimedb.com/blog/how-does-spacetime-scale",
-      "hot": "47"
+      "title": "IBM Bob",
+      "url": "https://bob.ibm.com/",
+      "hot": "120"
     },
     {
       "rank": 7,
       "title": ".name Termination",
       "url": "https://neil.fraser.name/news/2026/09/03/",
-      "hot": "2032"
+      "hot": "2100"
     },
     {
       "rank": 8,
-      "title": "Restoring 5 GHz Wi-Fi on an LG C5 by changing its webOS region",
-      "url": "https://github.com/hawshemi/lg-c5-webos25-region-change",
-      "hot": "26"
+      "title": "Getting Started with AT Protocol",
+      "url": "https://bnb.im/posts/atproto-essential-resources/",
+      "hot": "27"
     },
     {
       "rank": 9,
-      "title": "Elevator of the Year Winner Modernization of the Metropolis Trust Building",
-      "url": "https://www.starelevator.com/projects/star-elevator-modernization-of-the-metropolis-trust-building",
-      "hot": "62"
+      "title": "The Two Abstractions of System Design: Hide or Reduce",
+      "url": "http://muratbuffalo.blogspot.com/2026/05/the-two-abstractions-of-system-design.html",
+      "hot": "74"
     },
     {
       "rank": 10,
-      "title": "The Two Abstractions of System Design: Hide or Reduce",
-      "url": "http://muratbuffalo.blogspot.com/2026/05/the-two-abstractions-of-system-design.html",
-      "hot": "22"
+      "title": "Corporate America is getting hooked on open-source AI",
+      "url": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
+      "hot": "133"
     }
   ]
 }

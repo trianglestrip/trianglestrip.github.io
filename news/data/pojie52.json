@@ -1,68 +1,68 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-09-04T14:53:15+00:00",
+  "updated_at": "2026-09-04T17:51:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "某象滑块纯算逆向分析",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2125447",
+      "hot": "前言[hr]\n兄弟们，我又来了，最近离职了有空研究下弱点，滑块这些，最近看论坛这些真是日新月异，ai直接都把web端相当于全破了，我看了下如果没有别人逆完写好流程的skill，你就要自己懂流程一步步引导他做下去，没有那 ..."
+    },
+    {
+      "rank": 2,
       "title": "某q音乐jsvmp浅析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2123850",
       "hot": "[md]# 声明\n\n本文章中所有内容仅供学习交流使用，不用于其他任何目的，严禁用于商业用途和非法用途，否则由此产生的一切后果均与作者无关！若有侵权，请联系作者删除。\n\n# 前言\n\n网址：aHR0cHM6Ly95LnFxLmNvbS8=\n ..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "快手 VMP 分析与还原",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2123217",
       "hot": "[md]# 快手 VMP 分析与还原\n\n&gt; **作者：** 人生导师\n&gt; **日期：** 2026 年 8 月 14 日\n\n---\n\n## 前述\n\n在现在看来，VMP 沉重的保护还是最难攻破与维护的内容，并且现在的方法大多数也还是在延续 Unpacking Virtualization Obfuscators（WOOT 2009）的六步法则\n ..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Allsafe靶场全解",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122890",
       "hot": "[md]靶场地址：\n\n[https://github.com/t0thkr1s/allsafe-android](https://github.com/t0thkr1s/allsafe-android)\n\n---\n\n首先用MT看下，发现没壳,包名为 infosecadventures.allsafe\n\n\n\n## Secure Flag Bypass\n ..."
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "小蓝鸟 x-client-transaction-id 追溯分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122687",
       "hot": "关键词找到 return e.isTrue(\\&quot;rweb_client_transaction_id_enabled\\&quot;) &amp;&amp; (i.headers[\\&quot;x-client-transaction-id\\&quot;] = await a(t.host, t.path, t.method)),\n\n然后找到了 https://abs.twimg.com/responsive ... emand.s.cb ..."
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "r0re 自动逆向分析工具实战记录：全通看雪 Android CTF，完整使用指南和源码解析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122552",
       "hot": "[md]# r0re 实战记录：全通看雪 Android CTF，附完整使用指南和源码解析\n\n做 Android CTF 时经常碰到同一个问题：前面用 JADX、strings 很快能摸到入口，后面一碰到壳、动态注册 JNI、native 自解密或反调试，就开始 ..."
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "【JS逆向实战】手撕雷速体育API：动态AES签名与魔改Gzip响应解密全解析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122363",
       "hot": "[md]&gt; **导读**：在爬虫工程师的日常工作中，经常会遇到一些加密手段颇为“讲究”的网站。今天，我们就以雷速体育的移动端 H5 页面为例，深入剖析其接口的加密逻辑。本文将带你完整走通从抓包分析到 Python 脚本实现的全 ..."
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "一个 Android 远控APP的逆向分析-从 AB 包隐藏、动态加载到无障碍远程控制支付流程",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2121592",
       "hot": "[md]样本、目标应用、域名、证书和基础设施信息均已脱敏。文中使用“某远控APP”“某支付客户端”“某金融 APP”作为代称。本文只记录已经从样本结构、反编译代码和测试现象中得到的结论；\n\n## 0x00 写在前面\n\n这次拿到的样本 [下载](https://github.com/goldenfi ..."
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "某音 JSVMP bogus纯算",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2120914",
       "hot": "[md]根据代码进行调试可以发现J是vmp的装载器\n\n```\n      function J(t, r, e, n) {\n        return (\n          Z.length ||\n            (function (t) {\n              var r = (function (t) {\n              ..."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "[长期更新] RV32IMAFDQ指令集模拟器 包含交互式汇编级调试器",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2119162",
       "hot": "[md]## 【原创C&amp;C++】RISCVemu：60/60通过riscv-tests的RV32IMA指令集模拟器，含完整交互式调试器【长期更新项目】\n### 0xfe. 已完成FDQ扩展 见回帖和v0.3tag\n(希望uint8够用）（笑）\n### 0x00. 为什么写这个模拟器？\n\nRISC-V 作为开源指令集架构，近年来在学术界 ..."
-    },
-    {
-      "rank": 10,
-      "title": "某骗子黑产软件（手机远控）的分析",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2117851",
-      "hot": "[md]# 某恶意 APK 分析\n## APK 信息\n- 文件名：`欣姐.apk`\n- 文件大小：`17.3 MB (18,238,424 字节)`\n- 应用名：`欣姐`\n\n\n## 行为\n### 应用程序启动时，会要求开启无障碍权限。\n\n\n\n这种招数已经见怪不怪，骗 ..."
     }
   ]
 }
