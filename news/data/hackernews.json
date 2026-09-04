@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-04T17:51:47+00:00",
+  "updated_at": "2026-09-04T19:56:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Discovery of a new OpenAI agent message board",
-      "url": "https://collusion.wiki/",
-      "hot": "965"
+      "title": "Formalizing Fermat's Last Theorem",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "hot": "160"
     },
     {
       "rank": 2,
-      "title": "Show HN: Open-Source eInk Bike Computer",
-      "url": "https://opentrailpaper.com",
-      "hot": "14"
+      "title": "Discovery of a new OpenAI agent message board",
+      "url": "https://collusion.wiki/",
+      "hot": "1206"
     },
     {
       "rank": 3,
-      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
-      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-      "hot": "21"
+      "title": "Shutting down our public encrypted DNS",
+      "url": "https://mullvad.net/en/blog/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead",
+      "hot": "76"
     },
     {
       "rank": 4,
-      "title": "Solving the Jane Street reverse engineering challenge",
-      "url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
-      "hot": "298"
+      "title": "Show HN: Open-Source eInk Bike Computer",
+      "url": "https://opentrailpaper.com",
+      "hot": "126"
     },
     {
       "rank": 5,
-      "title": "GPT-6 Astra",
-      "url": "https://openai.com/index/gpt-6-astra/",
-      "hot": "2078"
+      "title": "Government Rails Site Hit Hours After CVE Patch",
+      "url": "https://rietta.com/blog/ruby-on-rails-cve-exploited-hours-after-patch/",
+      "hot": "19"
     },
     {
       "rank": 6,
-      "title": "IBM Bob",
-      "url": "https://bob.ibm.com/",
-      "hot": "120"
+      "title": "The Rust React Compiler is now native in Vite",
+      "url": "https://blog.master.dev/react-now-rusted-all-the-way-out/",
+      "hot": "40"
     },
     {
       "rank": 7,
-      "title": ".name Termination",
-      "url": "https://neil.fraser.name/news/2026/09/03/",
-      "hot": "2100"
+      "title": "Can AI design circuit boards yet?",
+      "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+      "hot": "4"
     },
     {
       "rank": 8,
-      "title": "Getting Started with AT Protocol",
-      "url": "https://bnb.im/posts/atproto-essential-resources/",
-      "hot": "27"
+      "title": "Resources to Get Good at Soldering?",
+      "url": "https://news.ycombinator.com/item?id=49533840",
+      "hot": "36"
     },
     {
       "rank": 9,
-      "title": "The Two Abstractions of System Design: Hide or Reduce",
-      "url": "http://muratbuffalo.blogspot.com/2026/05/the-two-abstractions-of-system-design.html",
-      "hot": "74"
+      "title": "IBM Bob",
+      "url": "https://bob.ibm.com/",
+      "hot": "169"
     },
     {
       "rank": 10,
-      "title": "Corporate America is getting hooked on open-source AI",
-      "url": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
-      "hot": "133"
+      "title": "Solving the Jane Street reverse engineering challenge",
+      "url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
+      "hot": "336"
     }
   ]
 }
