@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-04T21:57:22+00:00",
+  "updated_at": "2026-09-05T05:54:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
-      "url": "https://huggingface.co/papers/2608.16157",
-      "hot": "107"
-    },
-    {
-      "rank": 2,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
       "hot": "772"
+    },
+    {
+      "rank": 2,
+      "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
+      "url": "https://huggingface.co/papers/2608.16157",
+      "hot": "107"
     },
     {
       "rank": 3,
@@ -38,7 +38,7 @@
       "rank": 6,
       "title": "LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation",
       "url": "https://huggingface.co/papers/2608.30935",
-      "hot": "28"
+      "hot": "29"
     },
     {
       "rank": 7,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
+      "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+      "url": "https://huggingface.co/papers/2608.24053",
+      "hot": "70"
+    },
+    {
+      "rank": 9,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "85"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
       "url": "https://huggingface.co/papers/2508.16279",
       "hot": "68"
-    },
-    {
-      "rank": 10,
-      "title": "Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction",
-      "url": "https://huggingface.co/papers/2608.27529",
-      "hot": "33"
     }
   ]
 }

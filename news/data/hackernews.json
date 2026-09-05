@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-05T01:21:21+00:00",
+  "updated_at": "2026-09-05T05:54:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Actively exploited sandbox RCE in all Chromium versions",
       "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
-      "hot": "211"
+      "hot": "389"
     },
     {
       "rank": 2,
-      "title": "Formalizing Fermat's Last Theorem",
-      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "hot": "476"
+      "title": "Discovery of a new OpenAI agent message board",
+      "url": "https://collusion.wiki/",
+      "hot": "1596"
     },
     {
       "rank": 3,
-      "title": "Discovery of a new OpenAI agent message board",
-      "url": "https://collusion.wiki/",
-      "hot": "1466"
+      "title": "Formalizing Fermat's Last Theorem",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "hot": "565"
     },
     {
       "rank": 4,
       "title": "Statichost.eu – European static site hosting",
       "url": "https://www.statichost.eu/",
-      "hot": "169"
+      "hot": "213"
     },
     {
       "rank": 5,
-      "title": "Artificial Analysis Intelligence Index v4.2",
-      "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2",
-      "hot": "30"
+      "title": "GPT-6 Astra on OpenRouter",
+      "url": "https://openrouter.ai/openai/gpt-6-astra",
+      "hot": "174"
     },
     {
       "rank": 6,
-      "title": "GPT-6 Astra on OpenRouter",
-      "url": "https://openrouter.ai/openai/gpt-6-astra",
-      "hot": "114"
+      "title": "Can AI design circuit boards yet?",
+      "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+      "hot": "217"
     },
     {
       "rank": 7,
-      "title": "Shutting down our public encrypted DNS",
-      "url": "https://mullvad.net/en/blog/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead",
-      "hot": "250"
+      "title": "Nitter has more working instances than before the takedowns",
+      "url": "https://codeberg.org/mv12star/shitter/wiki/Instances",
+      "hot": "82"
     },
     {
       "rank": 8,
-      "title": "Can AI design circuit boards yet?",
-      "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
-      "hot": "154"
+      "title": "Artificial Analysis Intelligence Index v4.2",
+      "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2",
+      "hot": "94"
     },
     {
       "rank": 9,
-      "title": "Can guitar frets perform multiplication?",
-      "url": "https://www.charlespetzold.com/blog/2026/09/Can-Guitar-Frets-Perform-Multiplication.html",
-      "hot": "25"
+      "title": "Git Submodules as a Package Manager",
+      "url": "https://nesbitt.io/2026/09/01/git-submodules-as-a-package-manager.html",
+      "hot": "30"
     },
     {
       "rank": 10,
-      "title": "RSA-260 Factorized",
-      "url": "https://twitter.com/penlume/status/2095372672356212876",
-      "hot": "56"
+      "title": "Shutting down our public encrypted DNS",
+      "url": "https://mullvad.net/en/blog/shutting-down-our-public-encrypted-dns-servers-and-sponsoring-quad9-instead",
+      "hot": "306"
     }
   ]
 }
