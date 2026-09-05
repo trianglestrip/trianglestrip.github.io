@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-05T12:55:54+00:00",
+  "updated_at": "2026-09-05T15:42:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Actively exploited sandbox RCE in all Chromium versions",
-      "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
-      "hot": "576"
+      "title": "The \"$60 Gaming PC\" – AMD BC-250 (2025)",
+      "url": "https://devquasar.com/hardware/the-60-gaming-pc-amd-bc-250/",
+      "hot": "84"
     },
     {
       "rank": 2,
-      "title": "Discovery of a new OpenAI agent message board",
-      "url": "https://collusion.wiki/",
-      "hot": "1799"
+      "title": ".gitignore Everything by Default",
+      "url": "https://packagemain.tech/p/gitignore-everything-by-default",
+      "hot": "42"
     },
     {
       "rank": 3,
-      "title": "Nitter has more working instances than before the takedowns",
-      "url": "https://codeberg.org/mv12star/shitter/wiki/Instances",
-      "hot": "326"
+      "title": "Global warming will exceed 1.5-degree limit, UN says",
+      "url": "https://www.pbs.org/newshour/science/global-warming-will-exceed-1-5-degree-limit-un-says-in-report-that-maps-path-back-below-danger-zone",
+      "hot": "168"
     },
     {
       "rank": 4,
-      "title": "Formalizing Fermat's Last Theorem",
-      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "hot": "645"
+      "title": "Actively exploited sandbox RCE in all Chromium versions",
+      "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+      "hot": "632"
     },
     {
       "rank": 5,
-      "title": "Statichost.eu – European static site hosting",
-      "url": "https://www.statichost.eu/",
-      "hot": "335"
+      "title": "Discovery of a new OpenAI agent message board",
+      "url": "https://collusion.wiki/",
+      "hot": "1876"
     },
     {
       "rank": 6,
-      "title": "AI handles incidents, engineers lose touch with their systems",
-      "url": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
-      "hot": "210"
+      "title": "How the Planet-Altering Disaster of \"Forever Chemicals\" Was Kept Secret",
+      "url": "https://www.propublica.org/podcast/forever-chemicals-pfas-pfos-3m-secret-kris-hansen",
+      "hot": "34"
     },
     {
       "rank": 7,
-      "title": "Sky Map 2000 – Star Atlas and Planetarium",
-      "url": "https://skymap2000.com/",
-      "hot": "22"
+      "title": "Nitter has more working instances than before the takedowns",
+      "url": "https://codeberg.org/mv12star/shitter/wiki/Instances",
+      "hot": "415"
     },
     {
       "rank": 8,
-      "title": "Kale: A Transformation-Safe Spreadsheet System",
-      "url": "https://arxiv.org/abs/2608.26345",
-      "hot": "26"
+      "title": "Terpstra Keyboard",
+      "url": "http://terpstrakeyboard.com/",
+      "hot": "44"
     },
     {
       "rank": 9,
-      "title": "GPT-6 Astra on OpenRouter",
-      "url": "https://openrouter.ai/openai/gpt-6-astra",
-      "hot": "245"
+      "title": "Formalizing Fermat's Last Theorem",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "hot": "680"
     },
     {
       "rank": 10,
-      "title": "Can AI design circuit boards yet?",
-      "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
-      "hot": "282"
+      "title": "Git hosting that never leaves Europe",
+      "url": "https://pushin.eu",
+      "hot": "178"
     }
   ]
 }
