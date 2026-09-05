@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-09-05T05:53:44+00:00",
+  "updated_at": "2026-09-05T12:55:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Shell] mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "hot": "250,771"
+      "hot": "251,530"
     },
     {
       "rank": 2,
-      "title": "[JavaScript] DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "hot": "126,520"
+      "title": "[JavaScript] affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "hot": "249,128"
     },
     {
       "rank": 3,
-      "title": "[C++] fmtlib/fmt",
-      "url": "https://github.com/fmtlib/fmt",
-      "hot": "25,497"
+      "title": "[JavaScript] DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "hot": "127,195"
     },
     {
       "rank": 4,
-      "title": "[JavaScript] affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "hot": "248,715"
+      "title": "[Python] NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "hot": "241,755"
     },
     {
       "rank": 5,
-      "title": "[Python] anthropics/skills",
-      "url": "https://github.com/anthropics/skills",
-      "hot": "174,219"
+      "title": "[C++] fmtlib/fmt",
+      "url": "https://github.com/fmtlib/fmt",
+      "hot": "25,532"
     },
     {
       "rank": 6,
-      "title": "[Python] blader/humanizer",
-      "url": "https://github.com/blader/humanizer",
-      "hot": "42,887"
+      "title": "[Python] anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "hot": "174,370"
     },
     {
       "rank": 7,
-      "title": "[Python] NousResearch/hermes-agent",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "hot": "241,610"
+      "title": "[HTML] cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "hot": "31,380"
     },
     {
       "rank": 8,
-      "title": "[Go] JuliusBrussee/caveman",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "hot": "103,643"
+      "title": "[TypeScript] anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "hot": "204,436"
     },
     {
       "rank": 9,
-      "title": "[TypeScript] magnitudedev/magnitude",
-      "url": "https://github.com/magnitudedev/magnitude",
-      "hot": "2,636"
+      "title": "[TypeScript] ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "hot": "70,561"
     },
     {
       "rank": 10,
-      "title": "[Python] bikini/exploitarium",
-      "url": "https://github.com/bikini/exploitarium",
-      "hot": "4,558"
+      "title": "[TypeScript] humanlayer/skills",
+      "url": "https://github.com/humanlayer/skills",
+      "hot": "2,485"
     }
   ]
 }

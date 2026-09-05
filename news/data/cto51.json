@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-05T09:30:05+00:00",
+  "updated_at": "2026-09-05T12:55:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7文搜图实战：输入一句话查找图片",
-      "url": "https://ost.51cto.com/posts/55901",
-      "hot": "大家好，今天要介绍的是HarmonyOS7中的新特性：文搜图。应用中的图片越来越多以后，想找到其中一张并不容易。传统做法一般是给图片添加标题..."
+      "title": "HarmonyOS 7 Navigation 研究02｜进程重建后，路径、参数和草稿怎么一起恢复？",
+      "url": "https://ost.51cto.com/posts/55939",
+      "hot": "上一篇我把导航路径、业务数据和页面临时状态拆开了。继续往前走一步，问题会更难：应用进入后台后被系统回收，用户再次打开时，内存里的Na..."
     },
     {
       "rank": 2,
-      "title": "【HarmonyOS 7 平行视界深度实战】03 购物模式怎么实现连续浏览和左右推挤",
-      "url": "https://ost.51cto.com/posts/55900",
-      "hot": "前言商品列表进入详情，再从详情进入规格页，这类连续浏览经常需要把上一层内容留作参照。用户可能刚刚从几十件商品中选中一把键盘，进入详..."
+      "title": "HarmonyOS7 使用 arktoolbox 三方库：initial 和 tail: 砍掉数组头或尾，切片操作别再手写",
+      "url": "https://ost.51cto.com/posts/55933",
+      "hot": "前言大家好，我是若城。这期开始，想跟大家聊聊我自己刚折腾完的一个工具库。说白了，就是平时写HarmonyOS应用时那些重复到想吐的活，我顺..."
     },
     {
       "rank": 3,
