@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-05T23:04:46+00:00",
+  "updated_at": "2026-09-06T05:09:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "刚刚，GPT-6 Astra全量开放！",
+      "url": "https://www.51cto.com/article/855024.html",
+      "hot": "就在刚刚，OpenAI 官宣，所有 Pro、Enterprise 和 Business Premium 用户，已经能在 ChatGPT Work 和 Codex 里直接用上 GPT-6 Astra了，API 同步上线。"
+    },
+    {
+      "rank": 2,
       "title": "HarmonyOS 7 Navigation 研究02｜进程重建后，路径、参数和草稿怎么一起恢复？",
       "url": "https://ost.51cto.com/posts/55939",
       "hot": "上一篇我把导航路径、业务数据和页面临时状态拆开了。继续往前走一步，问题会更难：应用进入后台后被系统回收，用户再次打开时，内存里的Na..."
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "title": "陶哲轩吐槽GPT-6孪生素数新突破：令人无语的一幕",
+      "url": "https://www.51cto.com/article/855021.html",
+      "hot": "如果我们希望这种迭代（解答开放性数学问题的过程）真正产生新的理解，那么负责进行迭代的人或系统，最好不能提前知道最终正确的拟设是什么。"
+    },
+    {
+      "rank": 4,
       "title": "HarmonyOS7 使用 arktoolbox 三方库：initial 和 tail: 砍掉数组头或尾，切片操作别再手写",
       "url": "https://ost.51cto.com/posts/55933",
       "hot": "前言大家好，我是若城。这期开始，想跟大家聊聊我自己刚折腾完的一个工具库。说白了，就是平时写HarmonyOS应用时那些重复到想吐的活，我顺..."
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "OpenAI 发布 GPT-6 Astra：它可能是第一个真正的 AGI",
       "url": "https://www.51cto.com/article/854947.html",
       "hot": "Anthropic 刚推出 Fable 5.1，Google 紧接着拿出 Gemini 3.8 Flash，Meta 也把 Muse Spark 1.3 摆上桌。然后，OpenAI 终于放出了：GPT-6 Astra。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "CompleteFuture VS CompletableFuture：Netty 为何自研 Future",
       "url": "https://www.51cto.com/article/854946.html",
       "hot": "Netty 自研 Future 体系，不是重复造轮子，而是为自身的高性能网络场景量身定制。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "Agent 之间怎么通信？A2A/ACP/ANP 三协议怎么选",
       "url": "https://www.51cto.com/article/854945.html",
       "hot": "本文覆盖三个水平层协议：A2A（企业协作，已被广泛采纳）、ACP（IBM 的方案，已并入 A2A）、ANP（去中心化网络，面向开放互联网）。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "液冷数据中心解析：当 AI 把机柜推向百千瓦，散热系统如何重构",
       "url": "https://server.51cto.com/article/854944.html",
       "hot": "如果是新建的大规模 AI 训练集群，设备生态已经支持冷板式液冷，那么直达芯片通常是更现实的主路线；如果追求极高密度、设备形态可定制且有成熟介质与运维能力，可以评估浸没式；如果是在传统机房中处理少量高密热点，背板换热器或局部冷板加 CDU 的渐进式改造更容易落地。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "孪生素数猜想被GPT-6新突破！北大数学07级又出现了",
       "url": "https://www.51cto.com/article/854938.html",
       "hot": "宾夕法尼亚大学统计学教授、北大07级校友苏炜杰发了一条推，说他亲眼看着这个模型把一个他崇敬了二十多年的数学问题，往前推了一步。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "今起Codex每天重置一次！Tibo义父：首次三小时后发放，重置时间可自选",
       "url": "https://www.51cto.com/article/854935.html",
       "hot": "只要你付费了但还没法用GPT-6 Astra，那么每天都能重置额度一次。"
-    },
-    {
-      "rank": 9,
-      "title": "Meta发最强模型打响价格战，小扎对谷歌贴脸开大！北大校友立大功",
-      "url": "https://www.51cto.com/article/854934.html",
-      "hot": "大模型之争，已经从「谁更会说话」转向「谁更能干活」。未来的核心壁垒不是单一跑分，而是在极低成本下，长程任务的真实落地能力。"
-    },
-    {
-      "rank": 10,
-      "title": "英伟达官方推理指南来了！六倍无损加速，最优解全是华人写的",
-      "url": "https://www.51cto.com/article/854932.html",
-      "hot": "单纯堆砌庞大参数的时代正在翻篇，如今真正的胜负手，取决于谁更懂脚下那块硅片的物理极限。"
     }
   ]
 }

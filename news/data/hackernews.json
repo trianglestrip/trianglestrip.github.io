@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-05T23:04:47+00:00",
+  "updated_at": "2026-09-06T05:09:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Finite time blowup for an averaged three-dimensional Navier-Stokes equation (2014)",
-      "url": "https://terrytao.wordpress.com/2014/02/04/finite-time-blowup-for-an-averaged-three-dimensional-navier-stokes-equation/",
-      "hot": "47"
+      "title": "Cloud in a Bottle: making self-hosting accessible to everyone",
+      "url": "https://cloudinabottle.org/blog/launch-post",
+      "hot": "260"
     },
     {
       "rank": 2,
-      "title": "Private German rocket makes history, reaches orbit from European soil",
-      "url": "https://www.space.com/space-exploration/launches-spacecraft/isar-aerospace-second-launch-norway-andoya-spaceport-spectrum-rocket",
-      "hot": "225"
-    },
-    {
-      "rank": 3,
-      "title": "Show HN: Fly By – retro biplane flying game",
-      "url": "https://michaelteter.com/flyby.html",
-      "hot": "17"
-    },
-    {
-      "rank": 4,
-      "title": "Learn Programming with OCaml",
-      "url": "https://usr.lmf.cnrs.fr/lpo/",
-      "hot": "139"
-    },
-    {
-      "rank": 5,
-      "title": "LLMs as a Cognitive Virus",
-      "url": "https://arxiv.org/abs/2609.03344",
-      "hot": "128"
-    },
-    {
-      "rank": 6,
-      "title": "The \"$60 Gaming PC\" – AMD BC-250 (2025)",
-      "url": "https://devquasar.com/hardware/the-60-gaming-pc-amd-bc-250/",
-      "hot": "245"
-    },
-    {
-      "rank": 7,
-      "title": "Falsehoods Programmers Believe About LANs",
-      "url": "https://dreamstation.systems/personal/lanfalsehoods.html",
-      "hot": "13"
-    },
-    {
-      "rank": 8,
-      "title": "How Swiss tables work in Go built-in map",
-      "url": "https://victoriametrics.com/blog/go-swiss-table-map/index.html",
-      "hot": "20"
-    },
-    {
-      "rank": 9,
-      "title": "Visualizing Rust's Vtables: How dyn Trait Works In Memory",
-      "url": "https://sofiabelen.github.io/projects/visualizing-rusts-vtables-how-dyn-trait-works-in-memory/",
+      "title": "GPT-6 Astra on robot arms",
+      "url": "https://openai.robocurve.org/gpt-6-astra/",
       "hot": "110"
     },
     {
+      "rank": 3,
+      "title": "The revolt of the reader",
+      "url": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/",
+      "hot": "219"
+    },
+    {
+      "rank": 4,
+      "title": "OpenBSD Stories: Strange Medieval Devices",
+      "url": "http://miod.online.fr/software/openbsd/stories/smd.html",
+      "hot": "27"
+    },
+    {
+      "rank": 5,
+      "title": "The ColorChecker, photography's most important 24 squares, turns 50",
+      "url": "https://www.dpreview.com/news/the-colorchecker-photographys-most-important-24-squares-turns-50/",
+      "hot": "16"
+    },
+    {
+      "rank": 6,
+      "title": "Chrome again exempts Google from user site data settings",
+      "url": "https://lapcatsoftware.com/articles/2026/9/1.html",
+      "hot": "206"
+    },
+    {
+      "rank": 7,
+      "title": "Learn Programming with OCaml",
+      "url": "https://usr.lmf.cnrs.fr/lpo/",
+      "hot": "208"
+    },
+    {
+      "rank": 8,
+      "title": "Private German rocket makes history, reaches orbit from European soil",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/isar-aerospace-second-launch-norway-andoya-spaceport-spectrum-rocket",
+      "hot": "443"
+    },
+    {
+      "rank": 9,
+      "title": "The \"$60 Gaming PC\" – AMD BC-250 (2025)",
+      "url": "https://devquasar.com/hardware/the-60-gaming-pc-amd-bc-250/",
+      "hot": "318"
+    },
+    {
       "rank": 10,
-      "title": "Balrogg: Demonically compacting (up to 15%) lossless Vorbis/Opus recompressor",
-      "url": "https://github.com/iczelia/balrogg",
-      "hot": "46"
+      "title": "Discovery of a new OpenAI agent message board",
+      "url": "https://collusion.wiki/",
+      "hot": "2150"
     }
   ]
 }

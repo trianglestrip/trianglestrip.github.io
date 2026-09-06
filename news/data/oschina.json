@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-05T23:04:50+00:00",
+  "updated_at": "2026-09-06T05:09:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "QFO v1.0.2：修复 Windows 首次启动与依赖源问题",
+      "url": "https://www.oschina.net/news/502331",
+      "hot": "Sat, 05 Sep 2026 22:25:25 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "伏羲智能决策平台第一版发布",
+      "url": "https://www.oschina.net/news/502330",
+      "hot": "Sat, 05 Sep 2026 20:50:51 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "灵界 OS v4.0.0 已新增贡献指南、行为准则及项目预览截图。",
+      "url": "https://www.oschina.net/news/502329",
+      "hot": "Sat, 05 Sep 2026 20:03:18 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "仅 14MB 的开源一站式智能终端 uniTerm v1.9 发布：新增 Elasticsearch、WSLC 容器、Raw TCP 与文件/监控边栏，支持协议突破 30 种",
+      "url": "https://www.oschina.net/news/502328",
+      "hot": "Sat, 05 Sep 2026 15:21:08 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "灵界 OS v4.0.0 现已发布",
+      "url": "https://www.oschina.net/news/502327",
+      "hot": "Sat, 05 Sep 2026 15:13:27 +0800"
+    },
+    {
+      "rank": 6,
       "title": "Open Flow 开源：面向 AI Agent 的工作流自动化平台",
       "url": "https://www.oschina.net/news/502325",
       "hot": "Fri, 04 Sep 2026 17:11:54 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
       "url": "https://www.oschina.net/news/502322",
       "hot": "Fri, 04 Sep 2026 16:19:17 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "抢占AI时代战略制高点 开源平台成为资本追逐焦点",
       "url": "https://www.oschina.net/news/502321",
       "hot": "Fri, 04 Sep 2026 15:54:30 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "LibreOffice 26.8 首周下载量 103 万次创造新纪录，最大亮点是“没有一个 AI 功能”",
       "url": "https://www.oschina.net/news/502318/libreoffice-26-8-first-week-download-record",
       "hot": "Fri, 04 Sep 2026 15:19:44 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "编码、办公、设计都擅长的 covo-agent v0.1.1 发布，优化终端交互体验",
       "url": "https://www.oschina.net/news/502316",
       "hot": "Fri, 04 Sep 2026 14:18:54 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "WorkBuddy上架openKylin：能“听懂指令”的 AI 智能体来了！",
-      "url": "https://www.oschina.net/news/502314",
-      "hot": "Fri, 04 Sep 2026 12:23:32 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "高性能跨平台网络通信框架 HP-Socket v6.0.9 发布",
-      "url": "https://www.oschina.net/news/502313",
-      "hot": "Fri, 04 Sep 2026 12:12:50 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "ChatGPT、Claude、Grok 同时宕机，没人解释为什么",
-      "url": "https://www.oschina.net/news/502312/chatgpt-grok-claude-outage-down",
-      "hot": "Fri, 04 Sep 2026 11:56:01 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "NVIDIA 129 亿美元收购 Hugging Face，承诺保持开放平台",
-      "url": "https://www.oschina.net/news/502310/nvidia-to-acquire-hugging-face",
-      "hot": "Fri, 04 Sep 2026 10:58:38 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Audacity 4.0.0 发布：界面迁移 Qt，Clip 编辑模型重做",
-      "url": "https://www.oschina.net/news/502309/audacity-4-0-0",
-      "hot": "Fri, 04 Sep 2026 10:54:30 +0800"
     }
   ]
 }
