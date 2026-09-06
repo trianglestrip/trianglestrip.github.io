@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-06T19:36:23+00:00",
+  "updated_at": "2026-09-06T21:40:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Nitter is unarchived and will continue",
-      "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
-      "hot": "128"
+      "title": "It took a year to ship WebAssembly in Anubis",
+      "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
+      "hot": "50"
     },
     {
       "rank": 2,
-      "title": "NetBSD 9.5 released and EOL for NetBSD-9",
-      "url": "https://blog.netbsd.org/tnf/entry/netbsd_9_5_released_and",
-      "hot": "77"
+      "title": "Show HN: Mador – Make any DOM reactive with a tiny 80-line Proxy state tuple",
+      "url": "https://github.com/marsbos/mador",
+      "hot": "28"
     },
     {
       "rank": 3,
-      "title": "Your intellectual fly is open (2025)",
-      "url": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
-      "hot": "354"
+      "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
+      "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
+      "hot": "38"
     },
     {
       "rank": 4,
-      "title": "An Alien Mind",
-      "url": "https://openai.com/index/an-alien-mind/",
-      "hot": "163"
+      "title": "Your intellectual fly is open (2025)",
+      "url": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
+      "hot": "431"
     },
     {
       "rank": 5,
       "title": "Isar Aerospace reaches orbit and deploys payloads on second flight",
       "url": "https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight",
-      "hot": "473"
+      "hot": "508"
     },
     {
       "rank": 6,
-      "title": "Finder is so frustrating and has been since day one",
-      "url": "https://kepter.app/finder",
-      "hot": "36"
+      "title": "NetBSD 9.5 released and EOL for NetBSD-9",
+      "url": "https://blog.netbsd.org/tnf/entry/netbsd_9_5_released_and",
+      "hot": "93"
     },
     {
       "rank": 7,
-      "title": "Research carried out using NetBSD",
-      "url": "https://www.netbsd.org/gallery/research.html",
-      "hot": "43"
+      "title": "Black Hole of Los Alamos Seller of surplus nuclear research materials",
+      "url": "https://www.atlasobscura.com/places/black-hole-of-los-alamos",
+      "hot": "15"
     },
     {
       "rank": 8,
-      "title": "A/I shuts down – Stay human",
-      "url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human/",
-      "hot": "373"
+      "title": "Show HN: VODForge – a free local desktop UI for YouTube video/playlist downloads",
+      "url": "https://getvodforge.com/",
+      "hot": "13"
     },
     {
       "rank": 9,
-      "title": "Recreating Minecraft Is Not a Benchmark",
-      "url": "https://kuber.studio/blog/Reflections/Recreating-Minecraft-is-Not-a-Benchmark",
-      "hot": "45"
+      "title": "Research carried out using NetBSD",
+      "url": "https://www.netbsd.org/gallery/research.html",
+      "hot": "64"
     },
     {
       "rank": 10,
-      "title": "Following legal advice, the Nitter project will continue",
-      "url": "https://github.com/zedeus/nitter",
-      "hot": "202"
+      "title": "Babylonian Lamb Stew with Beets (1750–1730 BCE)",
+      "url": "https://babylonian-collection.yale.edu/about/babylonian-cooking",
+      "hot": "56"
     }
   ]
 }
