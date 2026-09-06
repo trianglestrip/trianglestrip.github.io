@@ -1,38 +1,38 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-09-06T15:55:42+00:00",
+  "updated_at": "2026-09-06T19:36:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "GPT-6 发布当晚，三大 AI 集体宕机 4 小时——我扒完时间线，发现最该慌的不是宕机",
       "url": "https://juejin.cn/post/7681475476906950691",
-      "hot": "540"
+      "hot": "558"
     },
     {
       "rank": 2,
       "title": "Bun 真的能取代 Node.js 吗？",
       "url": "https://juejin.cn/post/7680899684959272970",
-      "hot": "504"
+      "hot": "540"
     },
     {
       "rank": 3,
       "title": "我为什么喜欢 Compose ？",
       "url": "https://juejin.cn/post/7680757400489541668",
-      "hot": "486"
+      "hot": "495"
     },
     {
       "rank": 4,
       "title": "一周之内，前端 AI 编程的格局被彻底改写了三次",
       "url": "https://juejin.cn/post/7681146373547868166",
-      "hot": "423"
+      "hot": "432"
     },
     {
       "rank": 5,
       "title": "GPT-6 Astra 来了，GPT-5.6 Sol 还值得用吗？聊聊 Coding、百万上下文、价格和 Plus/Pro",
       "url": "https://juejin.cn/post/7681223706187153443",
-      "hot": "405"
+      "hot": "414"
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
+      "title": "一个人，4个岗位，20天：我用Cursor+Codex上线了一款微信小游戏",
+      "url": "https://juejin.cn/post/7681286465168769067",
+      "hot": "297"
+    },
+    {
+      "rank": 8,
       "title": "AI 时代，也许你的 Flutter 需要一套 Dartastic OpenTelemetry 监控",
       "url": "https://juejin.cn/post/7680757400489738276",
       "hot": "297"
     },
     {
-      "rank": 8,
-      "title": "一个人，4个岗位，20天：我用Cursor+Codex上线了一款微信小游戏",
-      "url": "https://juejin.cn/post/7681286465168769067",
-      "hot": "279"
-    },
-    {
       "rank": 9,
-      "title": "天才陨落了！三大 AI 集体不可用！",
-      "url": "https://juejin.cn/post/7681160462331772969",
-      "hot": "243"
+      "title": "别卷CRUD了！前端用Next.js+LangChain.js，低成本冲进AI高薪赛道",
+      "url": "https://juejin.cn/post/7681252693901885478",
+      "hot": "225"
     },
     {
       "rank": 10,
-      "title": "别卷CRUD了！前端用Next.js+LangChain.js，低成本冲进AI高薪赛道",
-      "url": "https://juejin.cn/post/7681252693901885478",
-      "hot": "216"
+      "title": "日常修改，3秒生效：腾讯音乐 Android 秒编方案 Jugg 开源",
+      "url": "https://juejin.cn/post/7680996030843125796",
+      "hot": "207"
     }
   ]
 }

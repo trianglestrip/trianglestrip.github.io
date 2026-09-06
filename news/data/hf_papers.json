@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-06T12:57:42+00:00",
+  "updated_at": "2026-09-06T19:36:43+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "127"
-    },
-    {
-      "rank": 5,
       "title": "AutoResearch: Insight In, Hallucination Out",
       "url": "https://huggingface.co/papers/2608.17906",
       "hot": "10"
+    },
+    {
+      "rank": 5,
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://huggingface.co/papers/2412.20138",
+      "hot": "127"
     },
     {
       "rank": 6,
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
-      "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "205"
-    },
-    {
-      "rank": 8,
       "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
       "url": "https://huggingface.co/papers/2508.16279",
       "hot": "68"
+    },
+    {
+      "rank": 8,
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "url": "https://huggingface.co/papers/2608.23283",
+      "hot": "205"
     },
     {
       "rank": 9,

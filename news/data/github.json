@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-09-06T12:57:08+00:00",
+  "updated_at": "2026-09-06T19:36:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "253,709"
+      "title": "[JavaScript] affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "hot": "251,020"
     },
     {
       "rank": 2,
-      "title": "[JavaScript] affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "hot": "250,523"
+      "title": "[Shell] mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "hot": "254,271"
     },
     {
       "rank": 3,
-      "title": "[JavaScript] DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "hot": "128,701"
+      "title": "[HTML] cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "hot": "32,213"
     },
     {
       "rank": 4,
       "title": "[Python] NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "hot": "242,262"
+      "hot": "242,445"
     },
     {
       "rank": 5,
-      "title": "[C++] fmtlib/fmt",
-      "url": "https://github.com/fmtlib/fmt",
-      "hot": "25,611"
+      "title": "[Python] openai/skills",
+      "url": "https://github.com/openai/skills",
+      "hot": "25,558"
     },
     {
       "rank": 6,
-      "title": "[Python] anthropics/skills",
-      "url": "https://github.com/anthropics/skills",
-      "hot": "174,761"
+      "title": "[TypeScript] anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "hot": "205,137"
     },
     {
       "rank": 7,
-      "title": "[HTML] cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "hot": "31,992"
+      "title": "[Python] blader/humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "hot": "44,094"
     },
     {
       "rank": 8,
-      "title": "[TypeScript] anomalyco/opencode",
-      "url": "https://github.com/anomalyco/opencode",
-      "hot": "204,954"
+      "title": "[LLVM] llvm/llvm-project",
+      "url": "https://github.com/llvm/llvm-project",
+      "hot": "40,178"
     },
     {
       "rank": 9,
-      "title": "[TypeScript] ruvnet/ruflo",
-      "url": "https://github.com/ruvnet/ruflo",
-      "hot": "70,826"
+      "title": "[JavaScript] DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "hot": "129,103"
     },
     {
       "rank": 10,
-      "title": "[TypeScript] humanlayer/skills",
-      "url": "https://github.com/humanlayer/skills",
-      "hot": "2,935"
+      "title": "[TypeScript] ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "hot": "70,922"
     }
   ]
 }
