@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-07T19:51:46+00:00",
+  "updated_at": "2026-09-07T22:18:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Watch Los Angeles get built, one building at a time (1880–2026)",
       "url": "https://lax-skyline.parcelscope.net/",
-      "hot": "50"
+      "hot": "144"
     },
     {
       "rank": 2,
-      "title": "bzip3",
-      "url": "https://github.com/iczelia/bzip3",
-      "hot": "308"
+      "title": "Trusting-Trust Attack against an Entire Linux Distribution",
+      "url": "https://arxiv.org/abs/2607.24888",
+      "hot": "90"
     },
     {
       "rank": 3,
-      "title": "Keep Our Servers Running",
-      "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
-      "hot": "878"
+      "title": "WeatherNext 3",
+      "url": "https://deepmind.google/science/weathernext/",
+      "hot": "155"
     },
     {
       "rank": 4,
-      "title": "Tesla killing Solar Roof is leaving installers with six-figure losses",
-      "url": "https://electrek.co/2026/09/01/tesla-solar-roof-exit-installers-losses/",
-      "hot": "40"
+      "title": "Finding a bug in Dummit and Foote's Abstract Algebra",
+      "url": "https://kallus.org/blog/dummit_and_foote.html",
+      "hot": "48"
     },
     {
       "rank": 5,
-      "title": "Methods for Random Gradients",
-      "url": "https://justinjay.wang/methods-for-random-gradients/",
-      "hot": "13"
+      "title": "Scientists observe Einstein's gravity in the quantum world",
+      "url": "https://www.ox.ac.uk/news/2026-08-28-scientists-observe-einsteins-gravity-in-the-quantum-world",
+      "hot": "71"
     },
     {
       "rank": 6,
-      "title": "Simple Is Not Small",
-      "url": "https://jyn.dev/simple-is-not-the-same-as-small/",
-      "hot": "129"
+      "title": "Show HN: Interactive Tree of Life",
+      "url": "https://ptree.org/",
+      "hot": "22"
     },
     {
       "rank": 7,
-      "title": "Decoding the NEC V20 Microcode",
-      "url": "https://martypc.blogspot.com/2026/09/decoding-nec-v20-microcode.html",
-      "hot": "63"
+      "title": "Macbeth and His Problems",
+      "url": "https://porticoquarterly.com/essay/macbeth-and-his-problems/",
+      "hot": "19"
     },
     {
       "rank": 8,
-      "title": "Caltech Mathathon – first hackathon ever devoted to research level mathematics",
-      "url": "https://mathathonchallenge.com/index.html",
-      "hot": "184"
+      "title": "Decapitating a MacBook (2025)",
+      "url": "https://mm-dev.rocks/series/decapitating-macbook-an-odyssey/",
+      "hot": "41"
     },
     {
       "rank": 9,
-      "title": "The Dataflow Model Revisited",
-      "url": "https://www.vldb.org/pvldb/volumes/19/paper/The%20Dataflow%20Model%20Revisited",
-      "hot": "53"
+      "title": "216M Spy TVs – The LG Smart TV Problem [video]",
+      "url": "https://www.youtube.com/watch?v=6IFVTcM28KA",
+      "hot": "370"
     },
     {
       "rank": 10,
-      "title": "PostgreSQL 19 Interactive Tour",
-      "url": "https://victoriametrics.com/blog/postgres-19/index.html",
-      "hot": "59"
+      "title": "Decoding the NEC V20 Microcode",
+      "url": "https://martypc.blogspot.com/2026/09/decoding-nec-v20-microcode.html",
+      "hot": "98"
     }
   ]
 }

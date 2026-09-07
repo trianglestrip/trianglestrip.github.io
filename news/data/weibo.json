@@ -1,7 +1,7 @@
 {
   "source": "weibo",
   "title": "微博热搜",
-  "updated_at": "2026-09-07T19:49:58+00:00",
+  "updated_at": "2026-09-07T22:17:20+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,8 +12,8 @@
     },
     {
       "rank": 2,
-      "title": "郑钦文vs斯瓦泰克",
-      "url": "https://s.weibo.com/weibo?q=%E9%83%91%E9%92%A6%E6%96%87vs%E6%96%AF%E7%93%A6%E6%B3%B0%E5%85%8B",
+      "title": "斯瓦泰克回应被逆转",
+      "url": "https://s.weibo.com/weibo?q=%E6%96%AF%E7%93%A6%E6%B3%B0%E5%85%8B%E5%9B%9E%E5%BA%94%E8%A2%AB%E9%80%86%E8%BD%AC",
       "hot": ""
     },
     {
@@ -24,44 +24,44 @@
     },
     {
       "rank": 4,
-      "title": "郑钦文即时排名逼近前50",
-      "url": "https://s.weibo.com/weibo?q=%E9%83%91%E9%92%A6%E6%96%87%E5%8D%B3%E6%97%B6%E6%8E%92%E5%90%8D%E9%80%BC%E8%BF%91%E5%89%8D50",
+      "title": "斯瓦泰克不敌郑钦文哭了",
+      "url": "https://s.weibo.com/weibo?q=%E6%96%AF%E7%93%A6%E6%B3%B0%E5%85%8B%E4%B8%8D%E6%95%8C%E9%83%91%E9%92%A6%E6%96%87%E5%93%AD%E4%BA%86",
       "hot": ""
     },
     {
       "rank": 5,
-      "title": "张雅琪后继有人了",
-      "url": "https://s.weibo.com/weibo?q=%E5%BC%A0%E9%9B%85%E7%90%AA%E5%90%8E%E7%BB%A7%E6%9C%89%E4%BA%BA%E4%BA%86",
+      "title": "郑钦文2比0斯瓦泰克",
+      "url": "https://s.weibo.com/weibo?q=%E9%83%91%E9%92%A6%E6%96%872%E6%AF%940%E6%96%AF%E7%93%A6%E6%B3%B0%E5%85%8B",
       "hot": ""
     },
     {
       "rank": 6,
+      "title": "郑钦文vs斯瓦泰克",
+      "url": "https://s.weibo.com/weibo?q=%E9%83%91%E9%92%A6%E6%96%87vs%E6%96%AF%E7%93%A6%E6%B3%B0%E5%85%8B",
+      "hot": ""
+    },
+    {
+      "rank": 7,
+      "title": "专家教你读懂配料表的潜台词",
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%93%E5%AE%B6%E6%95%99%E4%BD%A0%E8%AF%BB%E6%87%82%E9%85%8D%E6%96%99%E8%A1%A8%E7%9A%84%E6%BD%9C%E5%8F%B0%E8%AF%8D",
+      "hot": ""
+    },
+    {
+      "rank": 8,
       "title": "赵一鸣致歉",
       "url": "https://s.weibo.com/weibo?q=%E8%B5%B5%E4%B8%80%E9%B8%A3%E8%87%B4%E6%AD%89",
       "hot": ""
     },
     {
-      "rank": 7,
-      "title": "宝格丽KALEIDOS",
-      "url": "https://s.weibo.com/weibo?q=%E5%AE%9D%E6%A0%BC%E4%B8%BDKALEIDOS",
-      "hot": ""
-    },
-    {
-      "rank": 8,
+      "rank": 9,
       "title": "余承东建议苹果用户买华为备用机",
       "url": "https://s.weibo.com/weibo?q=%E4%BD%99%E6%89%BF%E4%B8%9C%E5%BB%BA%E8%AE%AE%E8%8B%B9%E6%9E%9C%E7%94%A8%E6%88%B7%E4%B9%B0%E5%8D%8E%E4%B8%BA%E5%A4%87%E7%94%A8%E6%9C%BA",
       "hot": ""
     },
     {
-      "rank": 9,
-      "title": "郑钦文三进美网8强",
-      "url": "https://s.weibo.com/weibo?q=%E9%83%91%E9%92%A6%E6%96%87%E4%B8%89%E8%BF%9B%E7%BE%8E%E7%BD%918%E5%BC%BA",
-      "hot": ""
-    },
-    {
       "rank": 10,
-      "title": "郑钦文硬地首胜斯瓦泰克",
-      "url": "https://s.weibo.com/weibo?q=%E9%83%91%E9%92%A6%E6%96%87%E7%A1%AC%E5%9C%B0%E9%A6%96%E8%83%9C%E6%96%AF%E7%93%A6%E6%B3%B0%E5%85%8B",
+      "title": "郑钦文即时排名逼近前50",
+      "url": "https://s.weibo.com/weibo?q=%E9%83%91%E9%92%A6%E6%96%87%E5%8D%B3%E6%97%B6%E6%8E%92%E5%90%8D%E9%80%BC%E8%BF%91%E5%89%8D50",
       "hot": ""
     }
   ]
