@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-07T00:57:52+00:00",
+  "updated_at": "2026-09-07T05:33:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
-      "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
-      "hot": "177"
+      "title": "Keep Our Servers Running: Your Recurring Donation Goes 3X This September",
+      "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
+      "hot": "139"
     },
     {
       "rank": 2,
       "title": "Making a Python interpreter in 1024 bytes",
       "url": "https://austinhenley.com/blog/python1024.html",
-      "hot": "59"
+      "hot": "158"
     },
     {
       "rank": 3,
-      "title": "Your intellectual fly is open (2025)",
-      "url": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
-      "hot": "511"
+      "title": "I'm a seeing-eye dog for a computer",
+      "url": "https://claytonwramsey.com/blog/seeing-eye/",
+      "hot": "25"
     },
     {
       "rank": 4,
-      "title": "Show HN: Mador – Make any DOM reactive with a tiny 80-line Proxy state tuple",
-      "url": "https://github.com/marsbos/mador",
-      "hot": "62"
+      "title": "It took a year to ship WebAssembly in Anubis",
+      "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
+      "hot": "205"
     },
     {
       "rank": 5,
-      "title": "Harnessing the Universal Geometry of Embeddings",
-      "url": "https://arxiv.org/abs/2505.12540",
-      "hot": "38"
+      "title": "The NX bit is not just about security",
+      "url": "https://purplesyringa.moe/blog/guest/the-nx-bit-is-not-just-about-security/",
+      "hot": "45"
     },
     {
       "rank": 6,
-      "title": "Is mathematics about to enter the conservatory?",
-      "url": "https://mbmccoy.dev/posts/mathematical-conservatory/",
-      "hot": "10"
+      "title": "Ask HN: Fable hacked my piano, can I release the results?",
+      "url": "https://news.ycombinator.com/item?id=49577129",
+      "hot": "61"
     },
     {
       "rank": 7,
-      "title": "Black Hole of Los Alamos Seller of surplus nuclear research materials (2011)",
-      "url": "https://www.atlasobscura.com/places/black-hole-of-los-alamos",
-      "hot": "40"
+      "title": "Nitter and XCancel resume service after legal advice",
+      "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+      "hot": "584"
     },
     {
       "rank": 8,
-      "title": "NetBSD 9.5 released and EOL for NetBSD-9",
-      "url": "https://blog.netbsd.org/tnf/entry/netbsd_9_5_released_and",
-      "hot": "102"
+      "title": "Babylonian Lamb Stew with Beets (1750–1730 BCE)",
+      "url": "https://babylonian-collection.yale.edu/about/babylonian-cooking",
+      "hot": "124"
     },
     {
       "rank": 9,
-      "title": "Babylonian Lamb Stew with Beets (1750–1730 BCE)",
-      "url": "https://babylonian-collection.yale.edu/about/babylonian-cooking",
-      "hot": "90"
+      "title": "Show HN: GET Together – A social network where you don't need POST to Post",
+      "url": "https://gettogether.dev",
+      "hot": "26"
     },
     {
       "rank": 10,
-      "title": "Reverse engineering the storage format for an undocumented database",
-      "url": "https://blog.glazer.ee/posts/converting-cronos/",
-      "hot": "19"
+      "title": "Ask HN: Would you read a statistics textbook?",
+      "url": "https://news.ycombinator.com/item?id=49583440",
+      "hot": "33"
     }
   ]
 }

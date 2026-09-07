@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-09-07T00:57:36+00:00",
+  "updated_at": "2026-09-07T05:33:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "GPT-6 发布当晚，三大 AI 集体宕机 4 小时——我扒完时间线，发现最该慌的不是宕机",
       "url": "https://juejin.cn/post/7681475476906950691",
-      "hot": "585"
+      "hot": "810"
     },
     {
       "rank": 2,
       "title": "Bun 真的能取代 Node.js 吗？",
       "url": "https://juejin.cn/post/7680899684959272970",
-      "hot": "558"
+      "hot": "684"
     },
     {
       "rank": 3,
       "title": "我为什么喜欢 Compose ？",
       "url": "https://juejin.cn/post/7680757400489541668",
-      "hot": "495"
+      "hot": "576"
     },
     {
       "rank": 4,
-      "title": "一周之内，前端 AI 编程的格局被彻底改写了三次",
-      "url": "https://juejin.cn/post/7681146373547868166",
-      "hot": "459"
+      "title": "聊个比较有意思的 Flutter Web 问题",
+      "url": "https://juejin.cn/post/7681411791876177983",
+      "hot": "333"
     },
     {
       "rank": 5,
-      "title": "GPT-6 Astra 来了，GPT-5.6 Sol 还值得用吗？聊聊 Coding、百万上下文、价格和 Plus/Pro",
-      "url": "https://juejin.cn/post/7681223706187153443",
-      "hot": "423"
+      "title": "AI 时代，也许你的 Flutter 需要一套 Dartastic OpenTelemetry 监控",
+      "url": "https://juejin.cn/post/7680757400489738276",
+      "hot": "324"
     },
     {
       "rank": 6,
-      "title": "一个人，4个岗位，20天：我用Cursor+Codex上线了一款微信小游戏",
-      "url": "https://juejin.cn/post/7681286465168769067",
-      "hot": "315"
-    },
-    {
-      "rank": 7,
-      "title": "聊个比较有意思的 Flutter Web 问题",
-      "url": "https://juejin.cn/post/7681411791876177983",
-      "hot": "306"
-    },
-    {
-      "rank": 8,
-      "title": "AI 时代，也许你的 Flutter 需要一套 Dartastic OpenTelemetry 监控",
-      "url": "https://juejin.cn/post/7680757400489738276",
-      "hot": "297"
-    },
-    {
-      "rank": 9,
-      "title": "别卷CRUD了！前端用Next.js+LangChain.js，低成本冲进AI高薪赛道",
-      "url": "https://juejin.cn/post/7681252693901885478",
+      "title": "三年了，AI为何还没有抢走程序员饭碗？",
+      "url": "https://juejin.cn/post/7682262550978936884",
       "hot": "252"
     },
     {
+      "rank": 7,
+      "title": "OpenAI ：GPT-6 开始你需要给 Skill 和 AGENTS.md 做一次大扫除了",
+      "url": "https://juejin.cn/post/7681931232724860970",
+      "hot": "234"
+    },
+    {
+      "rank": 8,
+      "title": "太好了！NestJS 12 大版本转向 ESM，新项目默认构建换 Rspack",
+      "url": "https://juejin.cn/post/7681204371800948736",
+      "hot": "198"
+    },
+    {
+      "rank": 9,
+      "title": "英伟达砸130亿美元买下一个平台，黄仁勋到底在怕什么？",
+      "url": "https://juejin.cn/post/7681266980104683526",
+      "hot": "189"
+    },
+    {
       "rank": 10,
-      "title": "日常修改，3秒生效：腾讯音乐 Android 秒编方案 Jugg 开源",
-      "url": "https://juejin.cn/post/7680996030843125796",
-      "hot": "225"
+      "title": "奥尔特曼致歉 GPT-6 Astra 发布混乱，现已面向所有 Plus / Pro 等用户推出",
+      "url": "https://juejin.cn/post/7681733440023183414",
+      "hot": "171"
     }
   ]
 }
