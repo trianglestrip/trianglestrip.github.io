@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-07T10:40:51+00:00",
+  "updated_at": "2026-09-07T16:03:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Keep Our Servers Running",
-      "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
-      "hot": "494"
+      "title": "bzip3",
+      "url": "https://github.com/iczelia/bzip3",
+      "hot": "125"
     },
     {
       "rank": 2,
-      "title": "Live map of public transport in Belgium",
-      "url": "https://openbaarvervoerbelgie.be/",
-      "hot": "34"
+      "title": "De-Brainrot Vacations",
+      "url": "https://devz.cl/posts/i-spent-my-vacations-de-brainrotting/",
+      "hot": "282"
     },
     {
       "rank": 3,
-      "title": "Caltech Mathathon – first hackathon ever devoted to research level mathematics",
-      "url": "https://mathathonchallenge.com/index.html",
-      "hot": "14"
+      "title": "Keep Our Servers Running",
+      "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
+      "hot": "756"
     },
     {
       "rank": 4,
-      "title": "Speculative Decoding in vLLM on AMD GPUs",
-      "url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
-      "hot": "12"
+      "title": "Caltech Mathathon – first hackathon ever devoted to research level mathematics",
+      "url": "https://mathathonchallenge.com/index.html",
+      "hot": "125"
     },
     {
       "rank": 5,
-      "title": "Programming is Art",
-      "url": "https://orchidfiles.com/programming-is-art/",
-      "hot": "67"
+      "title": "Splash-free urinals (2025)",
+      "url": "https://academic.oup.com/pnasnexus/article/4/4/pgaf087/8098745?login=false",
+      "hot": "143"
     },
     {
       "rank": 6,
-      "title": "LG smart TVs caught logging audio with screen off and snooping on local devices",
-      "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
-      "hot": "166"
+      "title": "Live map of public transport in Belgium",
+      "url": "https://openbaarvervoerbelgie.be/",
+      "hot": "127"
     },
     {
       "rank": 7,
-      "title": "Making a Python interpreter in 1024 bytes",
-      "url": "https://austinhenley.com/blog/python1024.html",
-      "hot": "238"
+      "title": "Simple Is Not Small",
+      "url": "https://jyn.dev/simple-is-not-the-same-as-small/",
+      "hot": "37"
     },
     {
       "rank": 8,
-      "title": "Impedance Matching",
-      "url": "https://www.edge.org/response-detail/27238",
-      "hot": "3"
+      "title": "Speculative Decoding in vLLM on AMD GPUs",
+      "url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
+      "hot": "83"
     },
     {
       "rank": 9,
-      "title": "'You Can See Everything' Review: Nathan Fielder's Doc About Elizabeth Holmes",
-      "url": "https://variety.com/2026/film/reviews/nathan-fielder-surprise-film-telluride-elizabeth-holmes-1236853513/",
-      "hot": "34"
+      "title": "Smartphone makers don't bother to comply with EU repairability requirements",
+      "url": "https://www.theregister.com/personal-tech/2026/09/07/smartphone-makers-dont-bother-to-comply-with-eu-repairability-requirements/5294532",
+      "hot": "168"
     },
     {
       "rank": 10,
-      "title": "Ask HN: How do you manage skills files?",
-      "url": "https://news.ycombinator.com/item?id=49589914",
-      "hot": "144"
+      "title": "LG smart TVs caught logging audio with screen off and snooping on local devices",
+      "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
+      "hot": "748"
     }
   ]
 }

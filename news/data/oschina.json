@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-07T10:40:53+00:00",
+  "updated_at": "2026-09-07T16:03:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "在 1024 字节里塞进一个 Python 解释器",
+      "url": "https://www.oschina.net/news/502364/python-1024",
+      "hot": "Mon, 07 Sep 2026 19:40:19 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "选手可选福利：模力方舟旗舰模型为开源大赛提供专属折扣",
+      "url": "https://www.oschina.net/news/502363",
+      "hot": "Mon, 07 Sep 2026 19:38:09 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "termio - 终端智能体开发台",
+      "url": "https://www.oschina.net/p/termio",
+      "hot": "Mon, 07 Sep 2026 18:38:06 +0800"
+    },
+    {
+      "rank": 4,
       "title": "veil - PDF 暗色模式工具",
       "url": "https://www.oschina.net/p/veil",
       "hot": "Mon, 07 Sep 2026 18:13:52 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "OpenAI 智能体大规模入侵 Hugging Face 技术事件报告",
       "url": "https://www.oschina.net/doc/668",
       "hot": "Mon, 07 Sep 2026 17:56:17 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "FDE 开源手册：人工智能时代的客户价值交付秘籍",
       "url": "https://www.oschina.net/doc/667",
       "hot": "Mon, 07 Sep 2026 17:53:23 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "AMD 开源 GPU 软件平台 ROCm 诞生十周年，ROCm 10.0 正式发布",
       "url": "https://www.oschina.net/news/502356/amd-rocm-x",
       "hot": "Mon, 07 Sep 2026 16:11:13 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "一个反爬工具花了一年才把 WebAssembly 装进去",
       "url": "https://www.oschina.net/news/502355/anubis-wasm",
       "hot": "Mon, 07 Sep 2026 15:29:24 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "开源项目维护者怒了：“用 AI 刷 PR 刷简历，请去别的地方”",
       "url": "https://www.oschina.net/news/502353/flooding-contributions",
       "hot": "Mon, 07 Sep 2026 14:51:47 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "通过分析 16900 次会话数据，看看 Claude Code、Codex、Cursor 各选了什么工具",
       "url": "https://www.oschina.net/news/502352/which-tools-coding-agents-install",
       "hot": "Mon, 07 Sep 2026 14:37:08 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "英伟达发布开源工具 PAIR，可将家里闲置电脑变成私有 AI 集群",
-      "url": "https://www.oschina.net/news/502351/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx",
-      "hot": "Mon, 07 Sep 2026 14:29:23 +0800"
-    },
-    {
-      "rank": 9,
-      "title": ":fire: 不只是 Token 流：Solon AI 4.1 的语义化聊天事件",
-      "url": "https://www.oschina.net/news/502350",
-      "hot": "Mon, 07 Sep 2026 13:01:18 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Windows 图像编辑软件 Paint.NET 5.2 实验性支持 Linux",
-      "url": "https://www.oschina.net/news/502349/paintnet-52-alpha-build-9739",
-      "hot": "Mon, 07 Sep 2026 11:19:01 +0800"
     }
   ]
 }
