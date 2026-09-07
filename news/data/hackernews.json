@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-06T21:40:52+00:00",
+  "updated_at": "2026-09-07T00:57:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "It took a year to ship WebAssembly in Anubis",
-      "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
-      "hot": "50"
+      "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
+      "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
+      "hot": "177"
     },
     {
       "rank": 2,
-      "title": "Show HN: Mador – Make any DOM reactive with a tiny 80-line Proxy state tuple",
-      "url": "https://github.com/marsbos/mador",
-      "hot": "28"
+      "title": "Making a Python interpreter in 1024 bytes",
+      "url": "https://austinhenley.com/blog/python1024.html",
+      "hot": "59"
     },
     {
       "rank": 3,
-      "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
-      "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
-      "hot": "38"
+      "title": "Your intellectual fly is open (2025)",
+      "url": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
+      "hot": "511"
     },
     {
       "rank": 4,
-      "title": "Your intellectual fly is open (2025)",
-      "url": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
-      "hot": "431"
+      "title": "Show HN: Mador – Make any DOM reactive with a tiny 80-line Proxy state tuple",
+      "url": "https://github.com/marsbos/mador",
+      "hot": "62"
     },
     {
       "rank": 5,
-      "title": "Isar Aerospace reaches orbit and deploys payloads on second flight",
-      "url": "https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight",
-      "hot": "508"
+      "title": "Harnessing the Universal Geometry of Embeddings",
+      "url": "https://arxiv.org/abs/2505.12540",
+      "hot": "38"
     },
     {
       "rank": 6,
-      "title": "NetBSD 9.5 released and EOL for NetBSD-9",
-      "url": "https://blog.netbsd.org/tnf/entry/netbsd_9_5_released_and",
-      "hot": "93"
+      "title": "Is mathematics about to enter the conservatory?",
+      "url": "https://mbmccoy.dev/posts/mathematical-conservatory/",
+      "hot": "10"
     },
     {
       "rank": 7,
-      "title": "Black Hole of Los Alamos Seller of surplus nuclear research materials",
+      "title": "Black Hole of Los Alamos Seller of surplus nuclear research materials (2011)",
       "url": "https://www.atlasobscura.com/places/black-hole-of-los-alamos",
-      "hot": "15"
+      "hot": "40"
     },
     {
       "rank": 8,
-      "title": "Show HN: VODForge – a free local desktop UI for YouTube video/playlist downloads",
-      "url": "https://getvodforge.com/",
-      "hot": "13"
+      "title": "NetBSD 9.5 released and EOL for NetBSD-9",
+      "url": "https://blog.netbsd.org/tnf/entry/netbsd_9_5_released_and",
+      "hot": "102"
     },
     {
       "rank": 9,
-      "title": "Research carried out using NetBSD",
-      "url": "https://www.netbsd.org/gallery/research.html",
-      "hot": "64"
+      "title": "Babylonian Lamb Stew with Beets (1750–1730 BCE)",
+      "url": "https://babylonian-collection.yale.edu/about/babylonian-cooking",
+      "hot": "90"
     },
     {
       "rank": 10,
-      "title": "Babylonian Lamb Stew with Beets (1750–1730 BCE)",
-      "url": "https://babylonian-collection.yale.edu/about/babylonian-cooking",
-      "hot": "56"
+      "title": "Reverse engineering the storage format for an undocumented database",
+      "url": "https://blog.glazer.ee/posts/converting-cronos/",
+      "hot": "19"
     }
   ]
 }
