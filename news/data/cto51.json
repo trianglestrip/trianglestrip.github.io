@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-08T00:28:43+00:00",
+  "updated_at": "2026-09-08T04:58:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI能做不代表AI应该做！比尔·盖茨：有些位置必须留给人，必须为人类工作划“保护区”",
-      "url": "https://www.51cto.com/article/855186.html",
-      "hot": "过去几年，比尔盖茨谈AI时总会提到新药、教育和生产力。这一次，他把失业、权力集中、生物安全和“人还要不要继续工作”摆到了前面。他甚至承认：如果处理不慎，AI带来的负面影响可能超过正面价值。"
+      "title": "AI Agent 让职场效率提升的五个场景，看完直接用",
+      "url": "https://www.51cto.com/article/855243.html",
+      "hot": "AI Agent 的价值，从来不在\"它能做什么\"，而在\"你把它用在什么地方\"。这 5 个场景，每一个都是职场人每天重复的劳动。把它们交给 AI，不是偷懒，而是把时间留给更有创造性的事。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7 媒体会话实战：让音乐应用住进系统播控中心",
-      "url": "https://ost.51cto.com/posts/56011",
-      "hot": "写一个能出声的播放器，ArkUI半天就够；写一个&quot;像样的&quot;音乐应用，工作量在应用之外。用户戴着耳机在路上走，掏出手机的第一件事往往不是打..."
+      "title": "Anthropic Labs揭秘：20人小队、两周决定去留，允许80%想法失败",
+      "url": "https://www.51cto.com/article/855242.html",
+      "hot": "据 Business Insider 报道，Anthropic 内部的 Labs 团队以大约两周为一个周期，审视手头的产品原型。"
     },
     {
       "rank": 3,
-      "title": "美国三大AI供应商：ChatGPT、Claude 和 Grok 同时崩溃，原因是什么？",
-      "url": "https://www.51cto.com/article/855142.html",
-      "hot": "这三家在差不多同一时间段发生停机事情，然后再从有重叠的可用性中逐渐恢复。"
+      "title": "同等预算下，Looped Transformer更强吗？清华、字节Seed给出答案",
+      "url": "https://www.51cto.com/article/855241.html",
+      "hot": "Looped Transformer 的收益，究竟是循环架构本身的优势，还是因为多算了几遍、实际上用了更多的算力？清华大学、字节跳动 Seed 等机构的研究团队在论文 SMELT 中正面回答了这个问题。"
     },
     {
       "rank": 4,
-      "title": "HarmonyOS 7文搜图进阶：用一句话筛选并整理相册图片",
-      "url": "https://ost.51cto.com/posts/55985",
-      "hot": "大家好，上一篇文章中我们介绍了HarmonyOS7的文搜图能力，通过几张放在rawfile目录中的测试图片，实现了&ldquo;输入一句话查找图片&rdquo;。今天继续..."
+      "title": "AI Agent记忆系统设计：从ReAct到多层记忆架构",
+      "url": "https://www.51cto.com/article/855240.html",
+      "hot": "ReAct 循环（ Reasoning + Acting ）解决了\"怎么推理和行动\"的问题，但没解决\"怎么记住\"。对话结束，状态清零，一切从头再来。 这是单轮 Agent 的通病。要做出能持续迭代的 Agent ，你需要一套分层记忆系统。"
     },
     {
       "rank": 5,
-      "title": "Agent 数据分析案例分享：Python 算、DeepSeek 解读，一套流水线搞定运营商客户流失预警",
-      "url": "https://www.51cto.com/article/855120.html",
-      "hot": "这是一套已经在用的工作流，不是想象。分析师用 Python 完成数据处理和建模，让 ADK 编排多 Agent 做并行业务解读，最后自动聚合为决策报告。"
+      "title": "运维 Agent 多轮排障拆解：复刻资深 SRE 思考模式，Agentic Loop 工程落地全解析",
+      "url": "https://www.51cto.com/article/855238.html",
+      "hot": "本文拆解运维 Agent 的多轮对话推理机制，让机器像人一样 “边想边做、边做边想”。"
     },
     {
       "rank": 6,
-      "title": "因为GPT-6 Astra的爆火，我好像看见了时代的断层。",
-      "url": "https://www.51cto.com/article/855119.html",
-      "hot": "周末，GPT-6 Astra正式上线了。然后，所有的社媒、社群都玩疯了。我的X的时间线，更是几乎全部都是GPT-6 Astra。"
+      "title": "2026年九月大模型最新排行榜，30款主流AI大模型，第一名有点意外",
+      "url": "https://www.51cto.com/article/855185.html",
+      "hot": "Meta 一年三代连发把榜首抢了，OpenAI 用一个 GPT-6 带着一串 5.x 变体铺满中间段位，Google 靠 Flash 系两三个月一更走量，头部四家各走各的路。国产这边值得多说一句，Kimi K3 和 GLM-5.3 双双进了前十，Qwen 和 DeepSeek 稳在第二梯队，和海外的差距从名单上看已经不明显了，加上价格普遍只有海外同档的几分之一，实际用起来的性价比很突出。"
     },
     {
       "rank": 7,
-      "title": "技术方案怎么用 AI 写？我总结了四段 Prompt 链加三个企业级模板！",
-      "url": "https://www.51cto.com/article/855114.html",
-      "hot": "技术方案文档的瓶颈不是写是想。本文给一条对齐技术评审的四段Prompt链：需求消化、骨架生成、人填决策、评审模拟，卡三道人审关；附3个逐字可抄的完整模板、AI产出可信度分级和六条失效边界。"
+      "title": "为什么你的 await 可以直接写在最外层了？聊聊 Top-Level Await",
+      "url": "https://www.51cto.com/article/855176.html",
+      "hot": "为了解决这个问题，大家不得不改写成导出一个异步函数 export async function initConfig()，调用方或统一初始化入口需要显式等待它完成，异步初始化的约定因此泄漏到了模块外部。"
     },
     {
       "rank": 8,
-      "title": "解决20年数学难题！微软开源Argus用证据驱动1548小时自动研究",
-      "url": "https://www.51cto.com/article/855106.html",
-      "hot": "微软、上海交通大学等机构开源了 Argus，一套面向长周期研究任务的通用 Agent 推理运行时，并发布技术报告。"
+      "title": "【HarmonyOS 7 平行视界深度实战】05 1:1、1:2、2:1 分栏比例如何分配",
+      "url": "https://ost.51cto.com/posts/56033",
+      "hot": "前言分类入口已经稳定留在左侧，右侧也能显示选中的内容，阅读时却仍然不顺：目录里的长标题被截断，正文每行又容纳不了多少文字。把分隔线..."
     },
     {
       "rank": 9,
-      "title": "刚刚，OpenAI最新内部数据公开！2028年实现全自动AI研究",
-      "url": "https://www.51cto.com/article/855105.html",
-      "hot": "OpenAI 正式宣布已达成「自动化 AI 研究实习生」的目标，并在 2028 年实现完全自动化的 AI 研究人员。"
+      "title": "HarmonyOS7 使用 arktoolbox 三方库：rc_clone: 浅拷贝: 只复制最外层，内层引用原封不动",
+      "url": "https://ost.51cto.com/posts/56032",
+      "hot": "前言大家好，我是若城。这期开始，想跟大家聊聊我自己刚折腾完的一个工具库。说白了，就是平时写HarmonyOS应用时那些重复到想吐的活，我顺..."
     },
     {
       "rank": 10,
-      "title": "Go 1.27 Release Party 实录：泛型方法为什么「憋」了五年？Go核心团队罕见自曝内幕",
-      "url": "https://www.51cto.com/article/855042.html",
-      "hot": "如果只用一句话总结这场发布会给我的感受：比起「Go 1.27有什么新特性」，更值得记住的是Go团队面对争议和限制时的坦诚态度——Robert坦然承认泛型接口方法目前做不到，也不打算硬做；Joe Tsai坦白JSON v2最难的部分是被要求照顾好v1而不是重写引擎本身；Marc Dougherty敢于当场推翻自己的第一反应，提出一个更谦逊也更诚实的成功指标。"
+      "title": "阿里三面被问：\"两个Agent互相讨论会死循环？你先说说终止权归谁\"，我说在prompt中指定就好，他笑了笑没说话...",
+      "url": "https://www.51cto.com/article/855235.html",
+      "hot": "这道题真正的分水岭，往往不在\"你知不知道要设预算\"。而在于你是否本能地意识到，多Agent系统的默认状态就是失控。任何\"自愈\"能力都必须靠外部结构显式赋予。而不是寄望于模型自己变聪明。"
     }
   ]
 }

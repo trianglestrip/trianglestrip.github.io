@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-08T00:28:38+00:00",
+  "updated_at": "2026-09-08T04:58:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "本体驱动的AI大模型",
-      "url": "https://blog.csdn.net/herosunly/article/details/164395531",
-      "hot": "22634"
+      "title": "GitHub 热榜项目 - 周榜(2026-09-06)",
+      "url": "https://blog.csdn.net/u014390502/article/details/164427429",
+      "hot": "24112"
     },
     {
       "rank": 2,
       "title": "Linux网络（五）：一文吃透 UDP Socket 编程：从 socket、bind 到数据收发与地址处理",
       "url": "https://blog.csdn.net/Z2314246476/article/details/164214312",
-      "hot": "21876"
+      "hot": "19150"
     },
     {
       "rank": 3,
-      "title": "Linux网络——IP协议 子网 路由 IP的分片字段",
-      "url": "https://blog.csdn.net/oooooooooooohd/article/details/164402126",
-      "hot": "16552"
+      "title": "HTTPS 加密流程深度解析｜从 HTTP 痛点到 TLS 握手全过程",
+      "url": "https://blog.csdn.net/2502_93799892/article/details/164427434",
+      "hot": "15411"
     },
     {
       "rank": 4,
-      "title": "HTTPS 加密流程深度解析｜从 HTTP 痛点到 TLS 握手全过程",
-      "url": "https://blog.csdn.net/2502_93799892/article/details/164427434",
-      "hot": "15469"
+      "title": "Linux网络——IP协议 子网 路由 IP的分片字段",
+      "url": "https://blog.csdn.net/oooooooooooohd/article/details/164402126",
+      "hot": "13462"
     },
     {
       "rank": 5,
-      "title": "GitHub 热榜项目 - 周榜(2026-09-06)",
-      "url": "https://blog.csdn.net/u014390502/article/details/164427429",
-      "hot": "14911"
+      "title": "gpt-6-astra测试，测试你的模型有没有降智",
+      "url": "https://blog.csdn.net/qq_43761275/article/details/164430162",
+      "hot": "10871"
     },
     {
       "rank": 6,
-      "title": "【AI大模型接入SDK】ChatGPT API",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/164395951",
-      "hot": "14881"
+      "title": "PandaWiki 本地 AI 知识库实战：文档导入、智能问答与远程访问",
+      "url": "https://blog.csdn.net/m0_73879806/article/details/164461433",
+      "hot": "10651"
     },
     {
       "rank": 7,
-      "title": "gpt-6-astra测试，测试你的模型有没有降智",
-      "url": "https://blog.csdn.net/qq_43761275/article/details/164430162",
-      "hot": "11914"
+      "title": "多台 Linux 服务器怎么统一装 Docker？用 Ansible Playbook 固化部署流程",
+      "url": "https://blog.csdn.net/u014727709/article/details/164456185",
+      "hot": "10530"
     },
     {
       "rank": 8,
-      "title": "PandaWiki 本地 AI 知识库实战：文档导入、智能问答与远程访问",
-      "url": "https://blog.csdn.net/m0_73879806/article/details/164461433",
-      "hot": "10891"
+      "title": "ValidX vs Google Guava Preconditions：验证 vs 断言",
+      "url": "https://blog.csdn.net/vipxieliang/article/details/164396323",
+      "hot": "9895"
     },
     {
       "rank": 9,
       "title": "【AI智能体】Codex 制作RAG知识库应用实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/163771724",
-      "hot": "10712"
+      "hot": "9477"
     },
     {
       "rank": 10,
-      "title": "多台 Linux 服务器怎么统一装 Docker？用 Ansible Playbook 固化部署流程",
-      "url": "https://blog.csdn.net/u014727709/article/details/164456185",
-      "hot": "10588"
+      "title": "60 个 AI Agent 一起工作：多智能体系统的能力、成本与失控风险",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/164296429",
+      "hot": "8702"
     }
   ]
 }

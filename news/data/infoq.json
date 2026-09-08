@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-08T00:28:49+00:00",
+  "updated_at": "2026-09-08T04:58:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI Coding 在大型客户端工程中的落地实践——从通才模型到专才 Agent｜QCon上海",
+      "url": "https://www.infoq.cn/article/zmiQaFpdA993WFozmTt3?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 08 Sep 2026 11:10:18 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Cloudflare 新增可选 OAuth 权限范围，允许开发者标注用户可能拒绝的权限",
+      "url": "https://www.infoq.cn/article/pbOsBzL0FljTYdZouj8r?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 08 Sep 2026 11:05:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "OpenClaw 2.0 发布：简化配置，支持智能体协作",
+      "url": "https://www.infoq.cn/article/hOJ5r8sQvQsGvm0KNHTd?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 08 Sep 2026 09:11:00 GMT"
+    },
+    {
+      "rank": 4,
       "title": "HCP Terraform 将自身定位为 AI 驱动基础设施的控制平面",
       "url": "https://www.infoq.cn/article/dcIyMXGTNE2vY6NiH6tm?utm_source=rss&utm_medium=article",
       "hot": "Mon, 07 Sep 2026 19:33:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "从 Harness 到 Loop：阿福 Agent 小队如何处理持续涌入的线上 Badcase｜QCon上海",
       "url": "https://www.infoq.cn/article/5Xy6jTfq7Si98XvXAJCp?utm_source=rss&utm_medium=article",
       "hot": "Mon, 07 Sep 2026 19:30:38 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "利用 Workload Identity Federation 清除 GCP 中长期有效的凭据",
       "url": "https://www.infoq.cn/article/bEwEWltvchcPZUACt36w?utm_source=rss&utm_medium=article",
       "hot": "Mon, 07 Sep 2026 18:24:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "Cloudflare 扩展了 AI 搜索功能，以便客服代表和开发人员可以更轻松地搜索自定义数据",
       "url": "https://www.infoq.cn/article/hJYBb35wMVeU07hTPWIb?utm_source=rss&utm_medium=article",
       "hot": "Mon, 07 Sep 2026 17:34:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "AWS 开源 Kiro Crew，让 Coding Agent 异步跑起来",
       "url": "https://www.infoq.cn/article/uTRvjxweSGdp2kzlhPiV?utm_source=rss&utm_medium=article",
       "hot": "Mon, 07 Sep 2026 16:32:04 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "TikTok SRE 技术负责人：AI Agents 说到底就是分布式系统",
       "url": "https://www.infoq.cn/article/atCusTaSOmddUx1vvJba?utm_source=rss&utm_medium=article",
       "hot": "Mon, 07 Sep 2026 16:18:46 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "“薄 Agent Loop，厚 Control Plane”：TiDB 用数据库思维重做 Harness",
       "url": "https://www.infoq.cn/article/38uc758e24YV4LUpAs77?utm_source=rss&utm_medium=article",
       "hot": "Mon, 07 Sep 2026 16:10:35 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "9 月 9 日，邀您共赴 2026 外滩大会“智能体安全”之约",
-      "url": "https://www.infoq.cn/article/D5heSof43WbGMHrCCIsy?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 07 Sep 2026 15:48:20 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "成立 12 年，快看漫画重做 AI 时代的内容产品",
-      "url": "https://www.infoq.cn/article/kAHvBCLrI3sdMyONOveM?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 07 Sep 2026 15:08:45 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Hugging Face太重要，绝不能落入英伟达手中？黄仁勋：我本想让它独立，但有其他竞购者",
-      "url": "https://www.infoq.cn/article/5dtlrdsBbSIZfWUUF6JD?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 07 Sep 2026 14:07:50 GMT"
     }
   ]
 }
