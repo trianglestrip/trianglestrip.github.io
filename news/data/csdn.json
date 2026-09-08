@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-08T17:31:34+00:00",
+  "updated_at": "2026-09-08T20:07:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "GitHub 热榜项目 - 周榜(2026-09-06)",
-      "url": "https://blog.csdn.net/u014390502/article/details/164427429",
-      "hot": "20061"
+      "title": "Linux网络（五）：一文吃透 UDP Socket 编程：从 socket、bind 到数据收发与地址处理",
+      "url": "https://blog.csdn.net/Z2314246476/article/details/164214312",
+      "hot": "16008"
     },
     {
       "rank": 2,
-      "title": "Linux网络（五）：一文吃透 UDP Socket 编程：从 socket、bind 到数据收发与地址处理",
-      "url": "https://blog.csdn.net/Z2314246476/article/details/164214312",
-      "hot": "14726"
+      "title": "GitHub 热榜项目 - 周榜(2026-09-06)",
+      "url": "https://blog.csdn.net/u014390502/article/details/164427429",
+      "hot": "12931"
     },
     {
       "rank": 3,
       "title": "【AI大模型接入SDK】大模型部署方案：云端接入与本地部署对比分析",
       "url": "https://blog.csdn.net/2401_89899187/article/details/164623867",
-      "hot": "14099"
+      "hot": "12497"
     },
     {
       "rank": 4,
       "title": "Word 定稿、PDF 版本、盖章扫描件：一份合同的三种形态，差异到底怎么比？",
       "url": "https://blog.csdn.net/qq_57761637/article/details/164602220",
-      "hot": "12471"
+      "hot": "12285"
     },
     {
       "rank": 5,
-      "title": "ValidX vs Google Guava Preconditions：验证 vs 断言",
-      "url": "https://blog.csdn.net/vipxieliang/article/details/164396323",
-      "hot": "12102"
+      "title": "【LibreCAD 2D架构】从两个坐标到图形实体：RS_ActionDrawLine如何创建RS_Line",
+      "url": "https://blog.csdn.net/2302_80177460/article/details/164423160",
+      "hot": "11694"
     },
     {
       "rank": 6,
-      "title": "从状态监控到异常通知：Beszel 部署、Agent 接入与公网访问完整流程",
-      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/164587338",
-      "hot": "10753"
+      "title": "gpt-6-astra测试，测试你的模型有没有降智",
+      "url": "https://blog.csdn.net/qq_43761275/article/details/164430162",
+      "hot": "10513"
     },
     {
       "rank": 7,
       "title": "星空组网真实体验：Mac远程访问Ubuntu，SSH与HTTP全流程验证",
       "url": "https://blog.csdn.net/2401_87629362/article/details/164578929",
-      "hot": "9985"
+      "hot": "7761"
     },
     {
       "rank": 8,
-      "title": "【AI智能体】Codex 制作RAG知识库应用实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/163771724",
-      "hot": "7875"
+      "title": "【计算机组成原理 | 第八章】I/O系统",
+      "url": "https://blog.csdn.net/2502_94242477/article/details/164426160",
+      "hot": "7465"
     },
     {
       "rank": 9,
-      "title": "从 MySQL 到在线表格：NocoDB 自托管部署、数据导入与远程访问",
-      "url": "https://blog.csdn.net/qq_61024956/article/details/164507651",
-      "hot": "7825"
+      "title": "# SpringBoot3+Flowable+IM 审批打通在线聊天：催办、沟通不用切微信，点办理人直接对话",
+      "url": "https://blog.csdn.net/zhouzhongyan/article/details/164507318",
+      "hot": "7361"
     },
     {
       "rank": 10,
-      "title": "【BlueZ 】Adapter 模块：蓝牙适配器（主设备）的初始化与核心逻辑",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/164230836",
-      "hot": "7489"
+      "title": "【AI智能体】Codex 制作RAG知识库应用实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/163771724",
+      "hot": "7220"
     }
   ]
 }
