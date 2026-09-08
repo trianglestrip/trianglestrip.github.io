@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-08T04:58:54+00:00",
+  "updated_at": "2026-09-08T09:20:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "I've factored the RSA keys of a Certificate Authority from the 90s",
-      "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
-      "hot": "197"
+      "title": "Among European Companies That Use a CDN, Nearly 9 in 10 Use Cloudflare",
+      "url": "https://ciphercue.com/blog/european-cdn-concentration-cloudflare-nine-in-ten",
+      "hot": "14"
     },
     {
       "rank": 2,
-      "title": "How well do agents use test/verification techniques?",
-      "url": "https://danluu.com/agentic-testing/",
-      "hot": "26"
+      "title": "I've factored the RSA keys of a Certificate Authority from the 90s",
+      "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
+      "hot": "317"
     },
     {
       "rank": 3,
-      "title": "Arm Mali G2-Ultra NX GPU: desktop-class mobile gameplay with AI-native graphics",
-      "url": "https://newsroom.arm.com/blog/arm-mali-g2-ultra-nx-ai-native-mobile-graphics",
-      "hot": "10"
+      "title": "We built our house for LAN parties",
+      "url": "https://lanparty.house/",
+      "hot": "53"
     },
     {
       "rank": 4,
-      "title": "TALA Is Open-Source",
-      "url": "https://d2lang.com/blog/tala-is-open-source/",
-      "hot": "143"
+      "title": "Mistral raises €3B",
+      "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+      "hot": "420"
     },
     {
       "rank": 5,
-      "title": "Jellyfin 12.0",
-      "url": "https://jellyfin.org/posts/jellyfin-release-12.0/",
-      "hot": "195"
+      "title": "There's a new \"Google Jail\" for independent wikis",
+      "url": "https://weirdgloop.org/blog/google-jail",
+      "hot": "122"
     },
     {
       "rank": 6,
-      "title": "Watch Los Angeles get built, one building at a time (1880–2026)",
-      "url": "https://lax-skyline.parcelscope.net/",
-      "hot": "257"
+      "title": "TALA Is Open-Source",
+      "url": "https://d2lang.com/blog/tala-is-open-source/",
+      "hot": "219"
     },
     {
       "rank": 7,
-      "title": "Leaving VMware just got harder after Broadcom pulled VDDK downloads",
-      "url": "https://www.virtualizationhowto.com/2026/09/leaving-vmware-just-got-harder-after-broadcom-pulled-vddk-downloads/",
-      "hot": "151"
+      "title": "Multi-Agents LLM Financial Trading Framework",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "hot": "43"
     },
     {
       "rank": 8,
-      "title": "John Margolies' photographs of roadside America",
-      "url": "https://publicdomainreview.org/collection/john-margolies-photographs-of-roadside-america/",
-      "hot": "58"
+      "title": "My Feed, My Way",
+      "url": "https://www.pm.gov.au/media/my-feed-my-way",
+      "hot": "112"
     },
     {
       "rank": 9,
-      "title": "Extinct Tasmanian tiger's 'snap' unlike any living mammal's bite",
-      "url": "https://www.cnn.com/2026/09/02/science/tasmanian-tiger-skull-bite-force",
-      "hot": "8"
+      "title": "We have a year to fix security everywhere",
+      "url": "https://jyn.dev/a-year-to-fix-security/",
+      "hot": "218"
     },
     {
       "rank": 10,
-      "title": "WeatherNext 3",
-      "url": "https://deepmind.google/science/weathernext/",
-      "hot": "285"
+      "title": "Arm Mali G2-Ultra NX GPU: desktop-class mobile gameplay with AI-native graphics",
+      "url": "https://newsroom.arm.com/blog/arm-mali-g2-ultra-nx-ai-native-mobile-graphics",
+      "hot": "39"
     }
   ]
 }

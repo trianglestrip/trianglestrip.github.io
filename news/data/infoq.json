@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-08T04:58:59+00:00",
+  "updated_at": "2026-09-08T09:20:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Cohere 发布 Parse 5，可以从复杂的文档中高效地提取多模态信息",
+      "url": "https://www.infoq.cn/article/C8WbrpalJEjLfSh2xJJj?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 08 Sep 2026 17:06:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Karmada 正式从 CNCF 毕业，已用于多集群 AI 训练与 GPU 调度",
+      "url": "https://www.infoq.cn/article/yfQdTa8cRxjJB0rzZMJR?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 08 Sep 2026 16:31:12 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "华为乾崑，守护200万份信任",
+      "url": "https://www.infoq.cn/article/TzHCuwlw0ftVmMe4EfXv?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 08 Sep 2026 15:39:02 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Swiggy 基于 350 多个特征与多任务 MLP 实现客户终身价值预测",
+      "url": "https://www.infoq.cn/article/9yQHZ7fZeIBMidz6pjPC?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 08 Sep 2026 15:06:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "OpenAI首曝“AI造AI”内部数据，2028年冲击AI研究员！黄仁勋高调祝贺：AGI已到来",
+      "url": "https://www.infoq.cn/article/TkVMcVFzAgixGb70kUr9?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 08 Sep 2026 13:55:41 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI 详解 GPT-Live 架构如何实现了连续的有状态语音交互",
+      "url": "https://www.infoq.cn/article/rdESg5icYIZ71J7xb69K?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 08 Sep 2026 13:32:00 GMT"
+    },
+    {
+      "rank": 7,
       "title": "AI Coding 在大型客户端工程中的落地实践——从通才模型到专才 Agent｜QCon上海",
       "url": "https://www.infoq.cn/article/zmiQaFpdA993WFozmTt3?utm_source=rss&utm_medium=article",
       "hot": "Tue, 08 Sep 2026 11:10:18 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Cloudflare 新增可选 OAuth 权限范围，允许开发者标注用户可能拒绝的权限",
       "url": "https://www.infoq.cn/article/pbOsBzL0FljTYdZouj8r?utm_source=rss&utm_medium=article",
       "hot": "Tue, 08 Sep 2026 11:05:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "OpenClaw 2.0 发布：简化配置，支持智能体协作",
       "url": "https://www.infoq.cn/article/hOJ5r8sQvQsGvm0KNHTd?utm_source=rss&utm_medium=article",
       "hot": "Tue, 08 Sep 2026 09:11:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "HCP Terraform 将自身定位为 AI 驱动基础设施的控制平面",
       "url": "https://www.infoq.cn/article/dcIyMXGTNE2vY6NiH6tm?utm_source=rss&utm_medium=article",
       "hot": "Mon, 07 Sep 2026 19:33:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "从 Harness 到 Loop：阿福 Agent 小队如何处理持续涌入的线上 Badcase｜QCon上海",
-      "url": "https://www.infoq.cn/article/5Xy6jTfq7Si98XvXAJCp?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 07 Sep 2026 19:30:38 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "利用 Workload Identity Federation 清除 GCP 中长期有效的凭据",
-      "url": "https://www.infoq.cn/article/bEwEWltvchcPZUACt36w?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 07 Sep 2026 18:24:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Cloudflare 扩展了 AI 搜索功能，以便客服代表和开发人员可以更轻松地搜索自定义数据",
-      "url": "https://www.infoq.cn/article/hJYBb35wMVeU07hTPWIb?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 07 Sep 2026 17:34:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "AWS 开源 Kiro Crew，让 Coding Agent 异步跑起来",
-      "url": "https://www.infoq.cn/article/uTRvjxweSGdp2kzlhPiV?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 07 Sep 2026 16:32:04 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "TikTok SRE 技术负责人：AI Agents 说到底就是分布式系统",
-      "url": "https://www.infoq.cn/article/atCusTaSOmddUx1vvJba?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 07 Sep 2026 16:18:46 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "“薄 Agent Loop，厚 Control Plane”：TiDB 用数据库思维重做 Harness",
-      "url": "https://www.infoq.cn/article/38uc758e24YV4LUpAs77?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 07 Sep 2026 16:10:35 GMT"
     }
   ]
 }

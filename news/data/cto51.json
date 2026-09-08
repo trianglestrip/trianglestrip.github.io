@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-08T04:58:54+00:00",
+  "updated_at": "2026-09-08T09:20:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Arm发布新一代AI原生计算平台，加速智能体AI与移动图形创新",
+      "url": "https://server.51cto.com/article/855274.html",
+      "hot": "智能体AI和神经图形技术正在重塑移动设备的能力需求，而AI原生的CSS for Mobile 2正是Arm针对这一趋势打造的新一代计算平台。"
+    },
+    {
+      "rank": 2,
+      "title": "感谢用GPT-6搓3D的！燃烧自己的token换来一次全体重置",
+      "url": "https://www.51cto.com/article/855271.html",
+      "hot": "如今，专门统计Tibo重置记录的网站已经遍地开花。有的追踪上一次重置是什么时候，有的预测下一次重置何时降临，有的专门设置提醒。平均等待时间、最长间隔和重置热力图都搞出来了…"
+    },
+    {
+      "rank": 3,
+      "title": "EMNLP'26 | 多模态检索头首次被锁定：揭开大模型长文档内部检索真相",
+      "url": "https://www.51cto.com/article/855269.html",
+      "hot": "当证据已经出现在输入中时，模型内部是否存在一组注意力头，负责将问题指向相关的文本或视觉内容？"
+    },
+    {
+      "rank": 4,
+      "title": "端侧模型太夯了！面壁智能开源2B「小钢炮」，通用Agent杀到端侧",
+      "url": "https://www.51cto.com/article/855265.html",
+      "hot": "过去几年，大模型竞争主要发生在云端：更大的参数规模、更强的推理能力、更高的训练成本，不断推动模型能力上限提升。"
+    },
+    {
+      "rank": 5,
+      "title": "EMNLP 2026 Main｜预测越像真实环境，Agent反而做得更差？我们把世界模型的训练目标从\"状态一致\"换成了\"行为一致\"",
+      "url": "https://www.51cto.com/article/855263.html",
+      "hot": "文本世界模型都在比 \"生成文本像不像真实环境\"，但我们发现文本更接近真实环境的预测反而可能让智能体错得更离谱。"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI放大招，一句话生成网站革了SaaS的命！",
+      "url": "https://www.51cto.com/article/855262.html",
+      "hot": "哪怕你一行代码都不会写，只需几句自然语言提示或上传一张草图，就能像写Google文档一样，在十几分钟内生成一个高度专业、功能复杂的交互式网站。"
+    },
+    {
+      "rank": 7,
+      "title": "系统综述259项工作：AI创作如何从「会生成」走到「能交付」？",
+      "url": "https://www.51cto.com/article/855260.html",
+      "hot": "来自香港科技大学（广州）、浙江大学、中国科学技术大学、清华大学、香港大学、悉尼大学和中山大学的研究团队，围绕作品的持续构造梳理了截至2026年8月20日的259项工作，其中包括230个系统和29个相关基准。"
+    },
+    {
+      "rank": 8,
+      "title": "刚刚，寒武纪拿下PyTorch最高席位！与英伟达同桌",
+      "url": "https://www.51cto.com/article/855255.html",
+      "hot": "就在刚刚，寒武纪正式成为 PyTorch 基金会最高级别白金成员！一家中国 AI 芯片公司，拿到了 PyTorch 基金会理事会的席位。给全球 AI 开发框架定方向的那个房间里，多了一把中国椅子。"
+    },
+    {
+      "rank": 9,
       "title": "AI Agent 让职场效率提升的五个场景，看完直接用",
       "url": "https://www.51cto.com/article/855243.html",
       "hot": "AI Agent 的价值，从来不在\"它能做什么\"，而在\"你把它用在什么地方\"。这 5 个场景，每一个都是职场人每天重复的劳动。把它们交给 AI，不是偷懒，而是把时间留给更有创造性的事。"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "Anthropic Labs揭秘：20人小队、两周决定去留，允许80%想法失败",
       "url": "https://www.51cto.com/article/855242.html",
       "hot": "据 Business Insider 报道，Anthropic 内部的 Labs 团队以大约两周为一个周期，审视手头的产品原型。"
-    },
-    {
-      "rank": 3,
-      "title": "同等预算下，Looped Transformer更强吗？清华、字节Seed给出答案",
-      "url": "https://www.51cto.com/article/855241.html",
-      "hot": "Looped Transformer 的收益，究竟是循环架构本身的优势，还是因为多算了几遍、实际上用了更多的算力？清华大学、字节跳动 Seed 等机构的研究团队在论文 SMELT 中正面回答了这个问题。"
-    },
-    {
-      "rank": 4,
-      "title": "AI Agent记忆系统设计：从ReAct到多层记忆架构",
-      "url": "https://www.51cto.com/article/855240.html",
-      "hot": "ReAct 循环（ Reasoning + Acting ）解决了\"怎么推理和行动\"的问题，但没解决\"怎么记住\"。对话结束，状态清零，一切从头再来。 这是单轮 Agent 的通病。要做出能持续迭代的 Agent ，你需要一套分层记忆系统。"
-    },
-    {
-      "rank": 5,
-      "title": "运维 Agent 多轮排障拆解：复刻资深 SRE 思考模式，Agentic Loop 工程落地全解析",
-      "url": "https://www.51cto.com/article/855238.html",
-      "hot": "本文拆解运维 Agent 的多轮对话推理机制，让机器像人一样 “边想边做、边做边想”。"
-    },
-    {
-      "rank": 6,
-      "title": "2026年九月大模型最新排行榜，30款主流AI大模型，第一名有点意外",
-      "url": "https://www.51cto.com/article/855185.html",
-      "hot": "Meta 一年三代连发把榜首抢了，OpenAI 用一个 GPT-6 带着一串 5.x 变体铺满中间段位，Google 靠 Flash 系两三个月一更走量，头部四家各走各的路。国产这边值得多说一句，Kimi K3 和 GLM-5.3 双双进了前十，Qwen 和 DeepSeek 稳在第二梯队，和海外的差距从名单上看已经不明显了，加上价格普遍只有海外同档的几分之一，实际用起来的性价比很突出。"
-    },
-    {
-      "rank": 7,
-      "title": "为什么你的 await 可以直接写在最外层了？聊聊 Top-Level Await",
-      "url": "https://www.51cto.com/article/855176.html",
-      "hot": "为了解决这个问题，大家不得不改写成导出一个异步函数 export async function initConfig()，调用方或统一初始化入口需要显式等待它完成，异步初始化的约定因此泄漏到了模块外部。"
-    },
-    {
-      "rank": 8,
-      "title": "【HarmonyOS 7 平行视界深度实战】05 1:1、1:2、2:1 分栏比例如何分配",
-      "url": "https://ost.51cto.com/posts/56033",
-      "hot": "前言分类入口已经稳定留在左侧，右侧也能显示选中的内容，阅读时却仍然不顺：目录里的长标题被截断，正文每行又容纳不了多少文字。把分隔线..."
-    },
-    {
-      "rank": 9,
-      "title": "HarmonyOS7 使用 arktoolbox 三方库：rc_clone: 浅拷贝: 只复制最外层，内层引用原封不动",
-      "url": "https://ost.51cto.com/posts/56032",
-      "hot": "前言大家好，我是若城。这期开始，想跟大家聊聊我自己刚折腾完的一个工具库。说白了，就是平时写HarmonyOS应用时那些重复到想吐的活，我顺..."
-    },
-    {
-      "rank": 10,
-      "title": "阿里三面被问：\"两个Agent互相讨论会死循环？你先说说终止权归谁\"，我说在prompt中指定就好，他笑了笑没说话...",
-      "url": "https://www.51cto.com/article/855235.html",
-      "hot": "这道题真正的分水岭，往往不在\"你知不知道要设预算\"。而在于你是否本能地意识到，多Agent系统的默认状态就是失控。任何\"自愈\"能力都必须靠外部结构显式赋予。而不是寄望于模型自己变聪明。"
     }
   ]
 }
