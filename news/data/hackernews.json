@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-08T20:07:53+00:00",
+  "updated_at": "2026-09-08T22:36:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Google DeepMind Releases AlphaGenome Atlas",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
-      "hot": "382"
+      "hot": "452"
     },
     {
       "rank": 2,
-      "title": "100s of flights cancelled at UK airports due to ATC issue",
-      "url": "https://www.bbc.com/news/live/c6x2z0yy32ejt",
-      "hot": "54"
+      "title": "Large Language Models Develop Novel Social Biases Through Adaptive Exploration",
+      "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
+      "hot": "19"
     },
     {
       "rank": 3,
-      "title": "Muse: Meta's personal AI agent, features and capabilities",
-      "url": "https://ai.meta.com/muse/",
-      "hot": "83"
+      "title": "Navier-Stokes – Tristan Buckmaster [pdf]",
+      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
+      "hot": "1003"
     },
     {
       "rank": 4,
-      "title": "DaVinci Resolve 21.1",
-      "url": "https://www.blackmagicdesign.com/media/release/20260908-03",
-      "hot": "293"
+      "title": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
+      "url": "https://github.com/argonautlabsai/deltafin",
+      "hot": "177"
     },
     {
       "rank": 5,
-      "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
-      "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
-      "hot": "153"
+      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "hot": "989"
     },
     {
       "rank": 6,
-      "title": "On the Navier–Stokes Millennium Prize Problem",
-      "url": "https://openai.com/index/navier-stokes-solution/",
-      "hot": "731"
+      "title": "DaVinci Resolve 21.1",
+      "url": "https://www.blackmagicdesign.com/media/release/20260908-03",
+      "hot": "325"
     },
     {
       "rank": 7,
-      "title": "Show HN: LLM Attention Visualization",
-      "url": "https://ishamf.dev/p/llm-attention-visualizer/",
-      "hot": "64"
+      "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
+      "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
+      "hot": "194"
     },
     {
       "rank": 8,
-      "title": "LG TVs caught spying even when offline or on standby",
-      "url": "https://www.theverge.com/tech/991190/lg-tv-spying-standby-recording-wi-fi-scanning-gamers-nexus",
-      "hot": "384"
+      "title": "Mercury 2.5",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+      "hot": "83"
     },
     {
       "rank": 9,
-      "title": "The Helicopter with Radioactive Blades",
-      "url": "https://hackaday.com/2026/09/07/the-helicopter-with-radioactive-blades/",
-      "hot": "111"
+      "title": "Animation in Bevy: The Big Picture",
+      "url": "https://glocq.com/en/blog/20260827/",
+      "hot": "27"
     },
     {
       "rank": 10,
-      "title": "Y Combinator Early Access Network",
-      "url": "https://events.ycombinator.com/yc-early-access-fall-26",
-      "hot": "55"
+      "title": "Muse: Meta's personal AI agent, features and capabilities",
+      "url": "https://ai.meta.com/muse/",
+      "hot": "199"
     }
   ]
 }
