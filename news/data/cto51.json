@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-08T09:20:45+00:00",
+  "updated_at": "2026-09-08T13:42:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS7 ArkGraphics 3D 动态增删 Node 时，场景树与组件树 Diff 怎么对齐才不拖垮布局性能",
+      "url": "https://ost.51cto.com/posts/56043",
+      "hot": "前言ArkGraphics3D的自定义场景模式下，开发者通过SceneAPI管理场景树（Camera、Light、Geometry等Node），再通过Component3D把场景渲染到A..."
+    },
+    {
+      "rank": 2,
       "title": "Arm发布新一代AI原生计算平台，加速智能体AI与移动图形创新",
       "url": "https://server.51cto.com/article/855274.html",
       "hot": "智能体AI和神经图形技术正在重塑移动设备的能力需求，而AI原生的CSS for Mobile 2正是Arm针对这一趋势打造的新一代计算平台。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "感谢用GPT-6搓3D的！燃烧自己的token换来一次全体重置",
       "url": "https://www.51cto.com/article/855271.html",
       "hot": "如今，专门统计Tibo重置记录的网站已经遍地开花。有的追踪上一次重置是什么时候，有的预测下一次重置何时降临，有的专门设置提醒。平均等待时间、最长间隔和重置热力图都搞出来了…"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "EMNLP'26 | 多模态检索头首次被锁定：揭开大模型长文档内部检索真相",
       "url": "https://www.51cto.com/article/855269.html",
       "hot": "当证据已经出现在输入中时，模型内部是否存在一组注意力头，负责将问题指向相关的文本或视觉内容？"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "端侧模型太夯了！面壁智能开源2B「小钢炮」，通用Agent杀到端侧",
       "url": "https://www.51cto.com/article/855265.html",
       "hot": "过去几年，大模型竞争主要发生在云端：更大的参数规模、更强的推理能力、更高的训练成本，不断推动模型能力上限提升。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "EMNLP 2026 Main｜预测越像真实环境，Agent反而做得更差？我们把世界模型的训练目标从\"状态一致\"换成了\"行为一致\"",
       "url": "https://www.51cto.com/article/855263.html",
       "hot": "文本世界模型都在比 \"生成文本像不像真实环境\"，但我们发现文本更接近真实环境的预测反而可能让智能体错得更离谱。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "OpenAI放大招，一句话生成网站革了SaaS的命！",
       "url": "https://www.51cto.com/article/855262.html",
       "hot": "哪怕你一行代码都不会写，只需几句自然语言提示或上传一张草图，就能像写Google文档一样，在十几分钟内生成一个高度专业、功能复杂的交互式网站。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "系统综述259项工作：AI创作如何从「会生成」走到「能交付」？",
       "url": "https://www.51cto.com/article/855260.html",
       "hot": "来自香港科技大学（广州）、浙江大学、中国科学技术大学、清华大学、香港大学、悉尼大学和中山大学的研究团队，围绕作品的持续构造梳理了截至2026年8月20日的259项工作，其中包括230个系统和29个相关基准。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "刚刚，寒武纪拿下PyTorch最高席位！与英伟达同桌",
       "url": "https://www.51cto.com/article/855255.html",
       "hot": "就在刚刚，寒武纪正式成为 PyTorch 基金会最高级别白金成员！一家中国 AI 芯片公司，拿到了 PyTorch 基金会理事会的席位。给全球 AI 开发框架定方向的那个房间里，多了一把中国椅子。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "AI Agent 让职场效率提升的五个场景，看完直接用",
       "url": "https://www.51cto.com/article/855243.html",
       "hot": "AI Agent 的价值，从来不在\"它能做什么\"，而在\"你把它用在什么地方\"。这 5 个场景，每一个都是职场人每天重复的劳动。把它们交给 AI，不是偷懒，而是把时间留给更有创造性的事。"
-    },
-    {
-      "rank": 10,
-      "title": "Anthropic Labs揭秘：20人小队、两周决定去留，允许80%想法失败",
-      "url": "https://www.51cto.com/article/855242.html",
-      "hot": "据 Business Insider 报道，Anthropic 内部的 Labs 团队以大约两周为一个周期，审视手头的产品原型。"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-08T09:20:47+00:00",
+  "updated_at": "2026-09-08T13:42:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Among European Companies That Use a CDN, Nearly 9 in 10 Use Cloudflare",
       "url": "https://ciphercue.com/blog/european-cdn-concentration-cloudflare-nine-in-ten",
-      "hot": "14"
+      "hot": "257"
     },
     {
       "rank": 2,
-      "title": "I've factored the RSA keys of a Certificate Authority from the 90s",
-      "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
-      "hot": "317"
+      "title": "Antiquated HTML Snippets and Artefacts",
+      "url": "https://vale.rocks/posts/html-relics",
+      "hot": "113"
     },
     {
       "rank": 3,
-      "title": "We built our house for LAN parties",
-      "url": "https://lanparty.house/",
-      "hot": "53"
+      "title": "I've factored the RSA keys of a Certificate Authority from the 90s",
+      "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
+      "hot": "406"
     },
     {
       "rank": 4,
-      "title": "Mistral raises €3B",
-      "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
-      "hot": "420"
+      "title": "There's a new \"Google Jail\" for independent wikis",
+      "url": "https://weirdgloop.org/blog/google-jail",
+      "hot": "303"
     },
     {
       "rank": 5,
-      "title": "There's a new \"Google Jail\" for independent wikis",
-      "url": "https://weirdgloop.org/blog/google-jail",
-      "hot": "122"
+      "title": "Why getting your hands dirty is good for you",
+      "url": "https://www.bbc.com/future/article/20260904-how-getting-your-hands-dirty-boosts-your-health-within-weeks",
+      "hot": "106"
     },
     {
       "rank": 6,
-      "title": "TALA Is Open-Source",
-      "url": "https://d2lang.com/blog/tala-is-open-source/",
-      "hot": "219"
+      "title": "Show HN: Copperhead – Hardware as Fast as Software",
+      "url": "https://copperhead.sh/",
+      "hot": "4"
     },
     {
       "rank": 7,
-      "title": "Multi-Agents LLM Financial Trading Framework",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "hot": "43"
+      "title": "PISA 2025 Students' reading and mathematics performance declined across the OECD",
+      "url": "https://www.oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html",
+      "hot": "65"
     },
     {
       "rank": 8,
-      "title": "My Feed, My Way",
-      "url": "https://www.pm.gov.au/media/my-feed-my-way",
-      "hot": "112"
+      "title": "End-to-end infrastructure for training and inferencing open weight models",
+      "url": "https://docs.appliedcompute.com",
+      "hot": "38"
     },
     {
       "rank": 9,
-      "title": "We have a year to fix security everywhere",
-      "url": "https://jyn.dev/a-year-to-fix-security/",
-      "hot": "218"
+      "title": "We built our house for LAN parties (2024)",
+      "url": "https://lanparty.house/",
+      "hot": "258"
     },
     {
       "rank": 10,
-      "title": "Arm Mali G2-Ultra NX GPU: desktop-class mobile gameplay with AI-native graphics",
-      "url": "https://newsroom.arm.com/blog/arm-mali-g2-ultra-nx-ai-native-mobile-graphics",
-      "hot": "39"
+      "title": "Picolibrary: A Small Press",
+      "url": "https://novalis.org/blog/2026-08-31-picolibrary-a-very-small-press.html",
+      "hot": "16"
     }
   ]
 }
