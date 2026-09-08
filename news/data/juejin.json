@@ -1,32 +1,32 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-09-07T22:18:18+00:00",
+  "updated_at": "2026-09-08T00:28:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "走进AI Agent第三篇：让 Agent 记住你",
       "url": "https://juejin.cn/post/7682394398210932763",
-      "hot": "3186"
+      "hot": "3213"
     },
     {
       "rank": 2,
       "title": "三年了，AI为何还没有抢走程序员饭碗？",
       "url": "https://juejin.cn/post/7682262550978936884",
-      "hot": "1089"
+      "hot": "1179"
     },
     {
       "rank": 3,
       "title": "OpenAI ：GPT-6 开始你需要给 Skill 和 AGENTS.md 做一次大扫除了",
       "url": "https://juejin.cn/post/7681931232724860970",
-      "hot": "450"
+      "hot": "459"
     },
     {
       "rank": 4,
       "title": "GPT - 6 Astra 的使用焚诀",
       "url": "https://juejin.cn/post/7682634449856217115",
-      "hot": "387"
+      "hot": "450"
     },
     {
       "rank": 5,
@@ -38,31 +38,31 @@
       "rank": 6,
       "title": "太好了！NestJS 12 大版本转向 ESM，新项目默认构建换 Rspack",
       "url": "https://juejin.cn/post/7681204371800948736",
-      "hot": "315"
+      "hot": "324"
     },
     {
       "rank": 7,
+      "title": "异构数据同步不只追延迟：用 KFS 守住不停机迁移的每一笔账",
+      "url": "https://juejin.cn/post/7682364222383308850",
+      "hot": "297"
+    },
+    {
+      "rank": 8,
       "title": "设计稿里的图片明明很清晰，为什么到了手机上却糊了？一文讲透 DPR、压缩与格式选择",
       "url": "https://juejin.cn/post/7682406523184709670",
       "hot": "270"
     },
     {
-      "rank": 8,
-      "title": "异构数据同步不只追延迟：用 KFS 守住不停机迁移的每一笔账",
-      "url": "https://juejin.cn/post/7682364222383308850",
+      "rank": 9,
+      "title": "支持独立部署的地图方案",
+      "url": "https://juejin.cn/post/7682362046578966580",
       "hot": "270"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "聊聊怎么缓解找工作的焦虑感？",
       "url": "https://juejin.cn/post/7682362046578884660",
       "hot": "261"
-    },
-    {
-      "rank": 10,
-      "title": "支持独立部署的地图方案",
-      "url": "https://juejin.cn/post/7682362046578966580",
-      "hot": "252"
     }
   ]
 }

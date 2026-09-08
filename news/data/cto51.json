@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-07T22:18:28+00:00",
+  "updated_at": "2026-09-08T00:28:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI能做不代表AI应该做！比尔·盖茨：有些位置必须留给人，必须为人类工作划“保护区”",
+      "url": "https://www.51cto.com/article/855186.html",
+      "hot": "过去几年，比尔盖茨谈AI时总会提到新药、教育和生产力。这一次，他把失业、权力集中、生物安全和“人还要不要继续工作”摆到了前面。他甚至承认：如果处理不慎，AI带来的负面影响可能超过正面价值。"
+    },
+    {
+      "rank": 2,
       "title": "HarmonyOS 7 媒体会话实战：让音乐应用住进系统播控中心",
       "url": "https://ost.51cto.com/posts/56011",
       "hot": "写一个能出声的播放器，ArkUI半天就够；写一个&quot;像样的&quot;音乐应用，工作量在应用之外。用户戴着耳机在路上走，掏出手机的第一件事往往不是打..."
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "title": "美国三大AI供应商：ChatGPT、Claude 和 Grok 同时崩溃，原因是什么？",
+      "url": "https://www.51cto.com/article/855142.html",
+      "hot": "这三家在差不多同一时间段发生停机事情，然后再从有重叠的可用性中逐渐恢复。"
+    },
+    {
+      "rank": 4,
       "title": "HarmonyOS 7文搜图进阶：用一句话筛选并整理相册图片",
       "url": "https://ost.51cto.com/posts/55985",
       "hot": "大家好，上一篇文章中我们介绍了HarmonyOS7的文搜图能力，通过几张放在rawfile目录中的测试图片，实现了&ldquo;输入一句话查找图片&rdquo;。今天继续..."
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Agent 数据分析案例分享：Python 算、DeepSeek 解读，一套流水线搞定运营商客户流失预警",
       "url": "https://www.51cto.com/article/855120.html",
       "hot": "这是一套已经在用的工作流，不是想象。分析师用 Python 完成数据处理和建模，让 ADK 编排多 Agent 做并行业务解读，最后自动聚合为决策报告。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "因为GPT-6 Astra的爆火，我好像看见了时代的断层。",
       "url": "https://www.51cto.com/article/855119.html",
       "hot": "周末，GPT-6 Astra正式上线了。然后，所有的社媒、社群都玩疯了。我的X的时间线，更是几乎全部都是GPT-6 Astra。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "技术方案怎么用 AI 写？我总结了四段 Prompt 链加三个企业级模板！",
       "url": "https://www.51cto.com/article/855114.html",
       "hot": "技术方案文档的瓶颈不是写是想。本文给一条对齐技术评审的四段Prompt链：需求消化、骨架生成、人填决策、评审模拟，卡三道人审关；附3个逐字可抄的完整模板、AI产出可信度分级和六条失效边界。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "解决20年数学难题！微软开源Argus用证据驱动1548小时自动研究",
       "url": "https://www.51cto.com/article/855106.html",
       "hot": "微软、上海交通大学等机构开源了 Argus，一套面向长周期研究任务的通用 Agent 推理运行时，并发布技术报告。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "刚刚，OpenAI最新内部数据公开！2028年实现全自动AI研究",
       "url": "https://www.51cto.com/article/855105.html",
       "hot": "OpenAI 正式宣布已达成「自动化 AI 研究实习生」的目标，并在 2028 年实现完全自动化的 AI 研究人员。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Go 1.27 Release Party 实录：泛型方法为什么「憋」了五年？Go核心团队罕见自曝内幕",
       "url": "https://www.51cto.com/article/855042.html",
       "hot": "如果只用一句话总结这场发布会给我的感受：比起「Go 1.27有什么新特性」，更值得记住的是Go团队面对争议和限制时的坦诚态度——Robert坦然承认泛型接口方法目前做不到，也不打算硬做；Joe Tsai坦白JSON v2最难的部分是被要求照顾好v1而不是重写引擎本身；Marc Dougherty敢于当场推翻自己的第一反应，提出一个更谦逊也更诚实的成功指标。"
-    },
-    {
-      "rank": 9,
-      "title": "一位菲尔兹奖得主+12位博士，这些俄罗斯数学家训出了顶级AI",
-      "url": "https://www.51cto.com/article/855077.html",
-      "hot": "让多个 AI 一起工作早就不算新鲜。现在常见的多智能体系统，通常由一个模型先输出答案，另一个模型读完后继续处理，像几位同事通过邮件传递工作。"
-    },
-    {
-      "rank": 10,
-      "title": "GPT-6 Astra杀疯了：只要你学得够慢，就可以不用学了？",
-      "url": "https://www.51cto.com/article/855075.html",
-      "hot": "只要你学得慢，你就可以不用学。但是 GPT-6 Astra 确实给人一种感觉，它一出来，原来困扰很多领域的复杂性突然就有解决的苗头了。"
     }
   ]
 }
