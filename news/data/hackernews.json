@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-09T13:51:02+00:00",
+  "updated_at": "2026-09-09T17:21:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Flock Wants a Closely Surveilled World with No Exit",
-      "url": "https://www.newyorker.com/culture/infinite-scroll/flock-wants-a-closely-surveilled-world-with-no-exit",
-      "hot": "368"
+      "title": "Tailwind Labs is joining Shopify",
+      "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+      "hot": "539"
     },
     {
       "rank": 2,
-      "title": "Tailwind Labs is joining Shopify",
-      "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
-      "hot": "74"
+      "title": "GNU Radio in the browser",
+      "url": "https://gnuradioworld.com/",
+      "hot": "53"
     },
     {
       "rank": 3,
-      "title": "Desert Ant Labs: local, fast models that run on device",
-      "url": "https://desertant.com/blog/introducing-desert-ant-labs/",
-      "hot": "115"
+      "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
+      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+      "hot": "121"
     },
     {
       "rank": 4,
-      "title": "I advertise malicious software on Google Ads",
-      "url": "https://xlii.space/eng/malicious-software-on-google-ads/",
-      "hot": "143"
+      "title": "Desert Ant Labs: local, fast models that run on device",
+      "url": "https://desertant.com/blog/introducing-desert-ant-labs/",
+      "hot": "276"
     },
     {
       "rank": 5,
-      "title": "Claude, change the \"Add to Cart\" button to blue",
-      "url": "https://opusfived.dev/",
-      "hot": "175"
+      "title": "Planet Labs' open satellite feed",
+      "url": "https://tech.marksblogg.com/planet-labs-open-satellite-feed.html",
+      "hot": "38"
     },
     {
       "rank": 6,
-      "title": "DeepSeek launching v4.1 flash cheaper and more capable than v4 pro",
-      "url": "https://news.ycombinator.com/item?id=49624603",
-      "hot": "159"
+      "title": "No Man's Sky Cosmos",
+      "url": "https://www.nomanssky.com/cosmos-update/",
+      "hot": "115"
     },
     {
       "rank": 7,
-      "title": "Muse – Meta’s personal AI agent",
-      "url": "https://ai.meta.com/muse/",
-      "hot": "565"
+      "title": "Autonomous Cars Save Lives: Self-driving tech could prevent 580k deaths/year",
+      "url": "https://spectrum.ieee.org/are-self-driving-cars-safe",
+      "hot": "5"
     },
     {
       "rank": 8,
-      "title": "Coyote v. Acme (1990)",
-      "url": "https://www.newyorker.com/magazine/1990/02/26/coyote-v-acme",
-      "hot": "71"
+      "title": "Understanding the Recent DDoS Attack Against Read the Docs",
+      "url": "https://about.readthedocs.com/blog/2026/09/2026-ddos-attack/",
+      "hot": "20"
     },
     {
       "rank": 9,
-      "title": "Smolts: A pedagogical IDE for a teaching language",
-      "url": "https://eighty-twenty.org/2026/09/04/smolts",
-      "hot": "14"
+      "title": "Rivian's Gambit for Full Autonomy",
+      "url": "https://spectrum.ieee.org/rivian-self-driving",
+      "hot": "21"
     },
     {
       "rank": 10,
-      "title": "Navier-Stokes – Tristan Buckmaster [pdf]",
-      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
-      "hot": "1826"
+      "title": "I rank the open-source AI agents that launched in the last 30 days",
+      "url": "https://www.theagenticleaderboard.com/",
+      "hot": "7"
     }
   ]
 }

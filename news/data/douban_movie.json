@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-09T13:50:32+00:00",
+  "updated_at": "2026-09-09T17:20:48+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "空枪",
-      "url": "https://movie.douban.com/subject/37508847/",
-      "hot": "评分 7.2"
-    },
-    {
-      "rank": 5,
       "title": "现在不是出轨的问题",
       "url": "https://movie.douban.com/subject/37501131/",
       "hot": "评分 8.7"
+    },
+    {
+      "rank": 5,
+      "title": "空枪",
+      "url": "https://movie.douban.com/subject/37508847/",
+      "hot": "评分 7.2"
     },
     {
       "rank": 6,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "蜘蛛侠：崭新之日",
-      "url": "https://movie.douban.com/subject/36246195/",
-      "hot": "评分 7.8"
+      "title": "坠落2：死点",
+      "url": "https://movie.douban.com/subject/36318704/",
+      "hot": "评分 5.5"
     }
   ]
 }
