@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-09T05:03:04+00:00",
+  "updated_at": "2026-09-09T13:51:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "XHToken/Spark-X2.5-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.5-4B",
-      "hot": "863"
+      "hot": "971"
     },
     {
       "rank": 2,
       "title": "openbmb/MiniCPM5-2B",
       "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
-      "hot": "741"
+      "hot": "827"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "14408"
+      "hot": "14467"
     },
     {
       "rank": 4,
       "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "hot": "667"
+      "hot": "699"
     },
     {
       "rank": 5,
       "title": "google/timesfm-3.0-pytorch",
       "url": "https://huggingface.co/google/timesfm-3.0-pytorch",
-      "hot": "644"
+      "hot": "678"
     },
     {
       "rank": 6,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "3189"
+      "hot": "3228"
     },
     {
       "rank": 7,
-      "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "hot": "367"
+      "title": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "hot": "3753"
     },
     {
       "rank": 8,
-      "title": "unsloth/Qwen3.8-27B-GGUF",
-      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "3714"
+      "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "hot": "393"
     },
     {
       "rank": 9,
-      "title": "Qwen/Qwen3.8-Flash-Next",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "hot": "5012"
+      "title": "sentence-transformers/all-MiniLM-L6-v2",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "hot": "5692"
     },
     {
       "rank": 10,
-      "title": "sentence-transformers/all-MiniLM-L6-v2",
-      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
-      "hot": "5639"
+      "title": "openai-community/gpt2",
+      "url": "https://huggingface.co/openai-community/gpt2",
+      "hot": "3815"
     }
   ]
 }

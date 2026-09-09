@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-09T05:03:04+00:00",
+  "updated_at": "2026-09-09T13:51:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AutoResearch: Insight In, Hallucination Out",
       "url": "https://huggingface.co/papers/2608.17906",
-      "hot": "17"
+      "hot": "19"
     },
     {
       "rank": 2,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "128"
+      "hot": "129"
     },
     {
       "rank": 3,
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
-      "url": "https://huggingface.co/papers/2608.16157",
-      "hot": "107"
-    },
-    {
-      "rank": 5,
       "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
       "url": "https://huggingface.co/papers/2608.09888",
       "hot": "778"
+    },
+    {
+      "rank": 5,
+      "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
+      "url": "https://huggingface.co/papers/2608.16157",
+      "hot": "109"
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous\n  Driving",
-      "url": "https://huggingface.co/papers/2312.06371",
-      "hot": ""
-    },
-    {
-      "rank": 8,
-      "title": "Prime Agent: A Self-Improving RLM Harness",
-      "url": "https://huggingface.co/papers/2608.23552",
-      "hot": "51"
-    },
-    {
-      "rank": 9,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
       "hot": "206"
     },
     {
+      "rank": 8,
+      "title": "BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous\n  Driving",
+      "url": "https://huggingface.co/papers/2312.06371",
+      "hot": ""
+    },
+    {
+      "rank": 9,
+      "title": "Prime Agent: A Self-Improving RLM Harness",
+      "url": "https://huggingface.co/papers/2608.23552",
+      "hot": "51"
+    },
+    {
       "rank": 10,
-      "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
-      "url": "https://huggingface.co/papers/2407.17789",
-      "hot": "46"
+      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
+      "url": "https://huggingface.co/papers/2508.16279",
+      "hot": "68"
     }
   ]
 }
