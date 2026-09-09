@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-08T20:08:11+00:00",
+  "updated_at": "2026-09-09T05:03:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "XHToken/Spark-X2.5-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.5-4B",
-      "hot": "835"
+      "hot": "863"
     },
     {
       "rank": 2,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "14376"
+      "title": "openbmb/MiniCPM5-2B",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "hot": "741"
     },
     {
       "rank": 3,
-      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "hot": "646"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "14408"
     },
     {
       "rank": 4,
-      "title": "openbmb/MiniCPM5-2B",
-      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
-      "hot": "618"
+      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "hot": "667"
     },
     {
       "rank": 5,
       "title": "google/timesfm-3.0-pytorch",
       "url": "https://huggingface.co/google/timesfm-3.0-pytorch",
-      "hot": "625"
+      "hot": "644"
     },
     {
       "rank": 6,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "3166"
+      "hot": "3189"
     },
     {
       "rank": 7,
       "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "hot": "344"
+      "hot": "367"
     },
     {
       "rank": 8,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "3693"
+      "hot": "3714"
     },
     {
       "rank": 9,
       "title": "Qwen/Qwen3.8-Flash-Next",
       "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "hot": "5002"
+      "hot": "5012"
     },
     {
       "rank": 10,
-      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-      "hot": "818"
+      "title": "sentence-transformers/all-MiniLM-L6-v2",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "hot": "5639"
     }
   ]
 }

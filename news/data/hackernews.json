@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-08T22:36:05+00:00",
+  "updated_at": "2026-09-09T05:02:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Google DeepMind Releases AlphaGenome Atlas",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
-      "hot": "452"
+      "title": "Muse – Meta’s personal AI agent",
+      "url": "https://ai.meta.com/muse/",
+      "hot": "400"
     },
     {
       "rank": 2,
-      "title": "Large Language Models Develop Novel Social Biases Through Adaptive Exploration",
-      "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
-      "hot": "19"
+      "title": "Tension wood: A 'muscle' that can both bend and straighten plants",
+      "url": "https://phys.org/news/2026-09-trees-muscle-posture-newly-role.html",
+      "hot": "71"
     },
     {
       "rank": 3,
       "title": "Navier-Stokes – Tristan Buckmaster [pdf]",
       "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
-      "hot": "1003"
+      "hot": "1443"
     },
     {
       "rank": 4,
-      "title": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
-      "url": "https://github.com/argonautlabsai/deltafin",
-      "hot": "177"
+      "title": "How to build a printer",
+      "url": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/",
+      "hot": "218"
     },
     {
       "rank": 5,
-      "title": "On the Navier–Stokes Millennium Prize Problem",
-      "url": "https://openai.com/index/navier-stokes-solution/",
-      "hot": "989"
+      "title": "A Biography of Lee Holloway, the Architect of Cloudflare's Technology (Part 1)",
+      "url": "https://note.com/masakazu_urabe/n/n7815f5b64fab?hl=en",
+      "hot": "6"
     },
     {
       "rank": 6,
-      "title": "DaVinci Resolve 21.1",
-      "url": "https://www.blackmagicdesign.com/media/release/20260908-03",
-      "hot": "325"
+      "title": "AlphaGenome Atlas: a high-resolution map of human DNA",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/",
+      "hot": "519"
     },
     {
       "rank": 7,
-      "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
-      "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
-      "hot": "194"
+      "title": "Large language models develop novel social biases through adaptive exploration",
+      "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
+      "hot": "126"
     },
     {
       "rank": 8,
       "title": "Mercury 2.5",
       "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
-      "hot": "83"
+      "hot": "149"
     },
     {
       "rank": 9,
-      "title": "Animation in Bevy: The Big Picture",
-      "url": "https://glocq.com/en/blog/20260827/",
-      "hot": "27"
+      "title": "An Accidental Blackboard",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/an-accidental-blackboard.html",
+      "hot": "35"
     },
     {
       "rank": 10,
-      "title": "Muse: Meta's personal AI agent, features and capabilities",
-      "url": "https://ai.meta.com/muse/",
-      "hot": "199"
+      "title": "The origins of Partner’s computer case",
+      "url": "https://www.racunalniski-muzej.si/en/the-origins-of-partners-computer-case/",
+      "hot": "15"
     }
   ]
 }

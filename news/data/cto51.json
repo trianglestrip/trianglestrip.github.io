@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-08T22:36:03+00:00",
+  "updated_at": "2026-09-09T05:02:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS7 ArkGraphics 3D 动态增删 Node 时，场景树与组件树 Diff 怎么对齐才不拖垮布局性能",
-      "url": "https://ost.51cto.com/posts/56043",
-      "hot": "前言ArkGraphics3D的自定义场景模式下，开发者通过SceneAPI管理场景树（Camera、Light、Geometry等Node），再通过Component3D把场景渲染到A..."
+      "title": "新型 InjectEave 攻击可从30米外恢复耳机播放的音频",
+      "url": "https://www.51cto.com/article/855374.html",
+      "hot": "研究人员强调，需要全面的、具备安全意识的软硬件协同设计，才能封堵这一新暴露出的模拟攻击面，涵盖耳机、IoT 设备及其他领域。"
     },
     {
       "rank": 2,
-      "title": "Arm发布新一代AI原生计算平台，加速智能体AI与移动图形创新",
-      "url": "https://server.51cto.com/article/855274.html",
-      "hot": "智能体AI和神经图形技术正在重塑移动设备的能力需求，而AI原生的CSS for Mobile 2正是Arm针对这一趋势打造的新一代计算平台。"
+      "title": "从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？",
+      "url": "https://www.51cto.com/article/855373.html",
+      "hot": "Agent 做决策，Harness 让这些决策可以持续、可控、可恢复地发生。模型决定下一步行动，Harness 管理它看见什么、能够调用什么、动作在哪里执行、过程怎样留下记录，以及失败之后如何重新开始。"
     },
     {
       "rank": 3,
-      "title": "感谢用GPT-6搓3D的！燃烧自己的token换来一次全体重置",
-      "url": "https://www.51cto.com/article/855271.html",
-      "hot": "如今，专门统计Tibo重置记录的网站已经遍地开花。有的追踪上一次重置是什么时候，有的预测下一次重置何时降临，有的专门设置提醒。平均等待时间、最长间隔和重置热力图都搞出来了…"
+      "title": "第 12 篇：拆解 ping 命令——网络排障的第一把手术刀",
+      "url": "https://www.51cto.com/article/855372.html",
+      "hot": "今天继续拆一个几乎所有工程师都用过的命令——ping。它看起来只有一行，背后却串起了IP、路由、ARP、ICMP、TTL和延迟。"
     },
     {
       "rank": 4,
-      "title": "EMNLP'26 | 多模态检索头首次被锁定：揭开大模型长文档内部检索真相",
-      "url": "https://www.51cto.com/article/855269.html",
-      "hot": "当证据已经出现在输入中时，模型内部是否存在一组注意力头，负责将问题指向相关的文本或视觉内容？"
+      "title": "这个 UI 组件库火了！把页面效果卷到了新高度",
+      "url": "https://www.51cto.com/article/855370.html",
+      "hot": "Svelte Bits 做的事情非常简单，但对于 Svelte 开发者来说可能非常有吸引力——给 Svelte 准备了一堆可以直接使用的动画 UI 组件。"
     },
     {
       "rank": 5,
-      "title": "端侧模型太夯了！面壁智能开源2B「小钢炮」，通用Agent杀到端侧",
-      "url": "https://www.51cto.com/article/855265.html",
-      "hot": "过去几年，大模型竞争主要发生在云端：更大的参数规模、更强的推理能力、更高的训练成本，不断推动模型能力上限提升。"
+      "title": "AI 给出了根因，运维为什么还是不敢信？",
+      "url": "https://www.51cto.com/article/855369.html",
+      "hot": "AIOps 的价值，从来不是 \"替代运维\"，而是把原本需要运维花大量时间寻找、关联、验证的信息提前组织好。"
     },
     {
       "rank": 6,
-      "title": "EMNLP 2026 Main｜预测越像真实环境，Agent反而做得更差？我们把世界模型的训练目标从\"状态一致\"换成了\"行为一致\"",
-      "url": "https://www.51cto.com/article/855263.html",
-      "hot": "文本世界模型都在比 \"生成文本像不像真实环境\"，但我们发现文本更接近真实环境的预测反而可能让智能体错得更离谱。"
+      "title": "cn 发布！30 倍性能重写 Tailwind！",
+      "url": "https://www.51cto.com/article/855367.html",
+      "hot": "新的 cn 最大的特点就是：可以直接替代 clsx + tailwind-merge，原来的条件 Class、对象写法、Tailwind 冲突处理都可以继续使用。"
     },
     {
       "rank": 7,
-      "title": "OpenAI放大招，一句话生成网站革了SaaS的命！",
-      "url": "https://www.51cto.com/article/855262.html",
-      "hot": "哪怕你一行代码都不会写，只需几句自然语言提示或上传一张草图，就能像写Google文档一样，在十几分钟内生成一个高度专业、功能复杂的交互式网站。"
+      "title": "Github 14.6k Star！一键将网页转成桌面端应用！",
+      "url": "https://www.51cto.com/article/855366.html",
+      "hot": "今天分享一款开源工具 PakePlus，可以轻松把网页、Vue/React打包产物，直接转为桌面、安卓、iOS应用，体验很惊喜。"
     },
     {
       "rank": 8,
-      "title": "系统综述259项工作：AI创作如何从「会生成」走到「能交付」？",
-      "url": "https://www.51cto.com/article/855260.html",
-      "hot": "来自香港科技大学（广州）、浙江大学、中国科学技术大学、清华大学、香港大学、悉尼大学和中山大学的研究团队，围绕作品的持续构造梳理了截至2026年8月20日的259项工作，其中包括230个系统和29个相关基准。"
+      "title": "HarmonyOS 音乐服务卡片完全指南：从播控到沉浸式设计",
+      "url": "https://ost.51cto.com/posts/56064",
+      "hot": "HarmonyOS音乐服务卡片完全指南：从播控到沉浸式设计手把手构建一个功能完整的音乐服务卡片，涵盖动态卡片、沉浸式UI、数据交互全流程一、..."
     },
     {
       "rank": 9,
-      "title": "刚刚，寒武纪拿下PyTorch最高席位！与英伟达同桌",
-      "url": "https://www.51cto.com/article/855255.html",
-      "hot": "就在刚刚，寒武纪正式成为 PyTorch 基金会最高级别白金成员！一家中国 AI 芯片公司，拿到了 PyTorch 基金会理事会的席位。给全球 AI 开发框架定方向的那个房间里，多了一把中国椅子。"
+      "title": "首个利用微信通话实现“0 交互入侵”的蠕虫出现",
+      "url": "https://www.51cto.com/article/855361.html",
+      "hot": "Calif 表示，该漏洞已于 7 月报告给腾讯，腾讯此后已为用户修复了该漏洞，但这项研究仍然是一记警钟：移动即时通讯应用如何成为全球规模的蠕虫式攻击面。"
     },
     {
       "rank": 10,
-      "title": "AI Agent 让职场效率提升的五个场景，看完直接用",
-      "url": "https://www.51cto.com/article/855243.html",
-      "hot": "AI Agent 的价值，从来不在\"它能做什么\"，而在\"你把它用在什么地方\"。这 5 个场景，每一个都是职场人每天重复的劳动。把它们交给 AI，不是偷懒，而是把时间留给更有创造性的事。"
+      "title": "运维开发效率翻倍：用 AI 低代码搭建 K8s 管理平台，工时压缩 90%",
+      "url": "https://www.51cto.com/article/855360.html",
+      "hot": "现在，AI 低代码开发已经完全落地，不用再一行一行硬敲全部代码，能够直接压缩 90% 编码工时。"
     }
   ]
 }
