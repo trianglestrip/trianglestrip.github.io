@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-09T13:51:25+00:00",
+  "updated_at": "2026-09-09T19:51:47+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,51 +18,51 @@
     },
     {
       "rank": 3,
+      "title": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
+      "url": "https://huggingface.co/papers/2609.08936",
+      "hot": "163"
+    },
+    {
+      "rank": 4,
+      "title": "Omni Interaction Agent Technical Report",
+      "url": "https://huggingface.co/papers/2609.08977",
+      "hot": "104"
+    },
+    {
+      "rank": 5,
       "title": "A decoder-only foundation model for time-series forecasting",
       "url": "https://huggingface.co/papers/2310.10688",
       "hot": "41"
     },
     {
-      "rank": 4,
-      "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
-      "url": "https://huggingface.co/papers/2608.09888",
-      "hot": "778"
-    },
-    {
-      "rank": 5,
-      "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
-      "url": "https://huggingface.co/papers/2608.16157",
-      "hot": "109"
-    },
-    {
       "rank": 6,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "86"
-    },
-    {
-      "rank": 7,
-      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
-      "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "206"
-    },
-    {
-      "rank": 8,
       "title": "BAT: Behavior-Aware Human-Like Trajectory Prediction for Autonomous\n  Driving",
       "url": "https://huggingface.co/papers/2312.06371",
       "hot": ""
     },
     {
+      "rank": 7,
+      "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
+      "url": "https://huggingface.co/papers/2608.16157",
+      "hot": "109"
+    },
+    {
+      "rank": 8,
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "86"
+    },
+    {
       "rank": 9,
-      "title": "Prime Agent: A Self-Improving RLM Harness",
-      "url": "https://huggingface.co/papers/2608.23552",
-      "hot": "51"
+      "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
+      "url": "https://huggingface.co/papers/2608.09888",
+      "hot": "778"
     },
     {
       "rank": 10,
-      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
-      "url": "https://huggingface.co/papers/2508.16279",
-      "hot": "68"
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "url": "https://huggingface.co/papers/2608.23283",
+      "hot": "206"
     }
   ]
 }
