@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-09T19:51:27+00:00",
+  "updated_at": "2026-09-09T22:00:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "iPhone Duo",
       "url": "https://www.apple.com/iphone-duo/",
-      "hot": "342"
+      "hot": "657"
     },
     {
       "rank": 2,
       "title": "AirPods 5",
       "url": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/",
-      "hot": "181"
+      "hot": "303"
     },
     {
       "rank": 3,
       "title": "Shopify acquires Tailwind",
       "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
-      "hot": "677"
+      "hot": "793"
     },
     {
       "rank": 4,
       "title": "What do Visa and Mastercard do? An intro to card networks",
       "url": "https://tautology.town/2026/06/01/card-networks.html",
-      "hot": "157"
+      "hot": "253"
     },
     {
       "rank": 5,
-      "title": "Apple Watch Series 12",
-      "url": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/",
-      "hot": "111"
+      "title": "iPhone 18 Pro and iPhone 18 Pro Max",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+      "hot": "205"
     },
     {
       "rank": 6,
-      "title": "iPhone 18 Pro and iPhone 18 Pro Max",
-      "url": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
-      "hot": "104"
+      "title": "No Man's Sky Cosmos",
+      "url": "https://www.nomanssky.com/cosmos-update/",
+      "hot": "231"
     },
     {
       "rank": 7,
-      "title": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
-      "url": "https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3",
-      "hot": "88"
+      "title": "Growing proof that autonomous cars save lives",
+      "url": "https://spectrum.ieee.org/are-self-driving-cars-safe",
+      "hot": "118"
     },
     {
       "rank": 8,
-      "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
-      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-      "hot": "236"
+      "title": "Apple Watch Series 12",
+      "url": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/",
+      "hot": "165"
     },
     {
       "rank": 9,
-      "title": "GNU Radio in the browser",
-      "url": "https://gnuradioworld.com/",
-      "hot": "124"
+      "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
+      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+      "hot": "289"
     },
     {
       "rank": 10,
-      "title": "Understanding the recent DDoS attack against Read the Docs",
-      "url": "https://about.readthedocs.com/blog/2026/09/2026-ddos-attack/",
-      "hot": "96"
+      "title": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+      "url": "https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3",
+      "hot": "130"
     }
   ]
 }
