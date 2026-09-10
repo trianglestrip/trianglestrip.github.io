@@ -1,44 +1,44 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-09-09T22:00:52+00:00",
+  "updated_at": "2026-09-10T01:32:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "某象滑块纯算逆向分析",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2125447",
-      "hot": "前言[hr]\n兄弟们，我又来了，最近离职了有空研究下弱点，滑块这些，最近看论坛这些真是日新月异，ai直接都把web端相当于全破了，我看了下如果没有别人逆完写好流程的skill，你就要自己懂流程一步步引导他做下去，没有那 ..."
-    },
-    {
-      "rank": 2,
       "title": "某q音乐jsvmp浅析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2123850",
       "hot": "[md]# 声明\n\n本文章中所有内容仅供学习交流使用，不用于其他任何目的，严禁用于商业用途和非法用途，否则由此产生的一切后果均与作者无关！若有侵权，请联系作者删除。\n\n# 前言\n\n网址：aHR0cHM6Ly95LnFxLmNvbS8=\n ..."
     },
     {
-      "rank": 3,
+      "rank": 2,
       "title": "快手 VMP 分析与还原",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2123217",
       "hot": "[md]# 快手 VMP 分析与还原\n\n&gt; **作者：** 人生导师\n&gt; **日期：** 2026 年 8 月 14 日\n\n---\n\n## 前述\n\n在现在看来，VMP 沉重的保护还是最难攻破与维护的内容，并且现在的方法大多数也还是在延续 Unpacking Virtualization Obfuscators（WOOT 2009）的六步法则\n ..."
     },
     {
-      "rank": 4,
+      "rank": 3,
       "title": "Allsafe靶场全解",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122890",
       "hot": "[md]靶场地址：\n\n[https://github.com/t0thkr1s/allsafe-android](https://github.com/t0thkr1s/allsafe-android)\n\n---\n\n首先用MT看下，发现没壳,包名为 infosecadventures.allsafe\n\n\n\n## Secure Flag Bypass\n ..."
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "小蓝鸟 x-client-transaction-id 追溯分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122687",
       "hot": "关键词找到 return e.isTrue(\\&quot;rweb_client_transaction_id_enabled\\&quot;) &amp;&amp; (i.headers[\\&quot;x-client-transaction-id\\&quot;] = await a(t.host, t.path, t.method)),\n\n然后找到了 https://abs.twimg.com/responsive ... emand.s.cb ..."
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "r0re 自动逆向分析工具实战记录：全通看雪 Android CTF，完整使用指南和源码解析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122552",
       "hot": "[md]# r0re 实战记录：全通看雪 Android CTF，附完整使用指南和源码解析\n\n做 Android CTF 时经常碰到同一个问题：前面用 JADX、strings 很快能摸到入口，后面一碰到壳、动态注册 JNI、native 自解密或反调试，就开始 ..."
+    },
+    {
+      "rank": 6,
+      "title": "【JS逆向实战】手撕雷速体育API：动态AES签名与魔改Gzip响应解密全解析",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122363",
+      "hot": "[md]&gt; **导读**：在爬虫工程师的日常工作中，经常会遇到一些加密手段颇为“讲究”的网站。今天，我们就以雷速体育的移动端 H5 页面为例，深入剖析其接口的加密逻辑。本文将带你完整走通从抓包分析到 Python 脚本实现的全 ..."
     },
     {
       "rank": 7,

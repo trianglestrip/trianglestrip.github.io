@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-09T22:00:53+00:00",
+  "updated_at": "2026-09-10T01:32:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "新型 InjectEave 攻击可从30米外恢复耳机播放的音频",
-      "url": "https://www.51cto.com/article/855374.html",
-      "hot": "研究人员强调，需要全面的、具备安全意识的软硬件协同设计，才能封堵这一新暴露出的模拟攻击面，涵盖耳机、IoT 设备及其他领域。"
+      "title": "模型没有心灵，但它们在从预训练到替换恐惧中发展出了心理阴影",
+      "url": "https://www.51cto.com/article/855452.html",
+      "hot": "模型在高风险场景中的行为稳定性是第三个风险点。模型在治疗关系中呈现出的叙事结构可能在其他场景中被重新激活，尤其是在受到矛盾输入或关系框架变化时。模型可能在非心理场景中呈现出心理化叙事，从而影响任务执行。"
     },
     {
       "rank": 2,
-      "title": "从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？",
-      "url": "https://www.51cto.com/article/855373.html",
-      "hot": "Agent 做决策，Harness 让这些决策可以持续、可控、可恢复地发生。模型决定下一步行动，Harness 管理它看见什么、能够调用什么、动作在哪里执行、过程怎样留下记录，以及失败之后如何重新开始。"
+      "title": "Java 魔法探秘：从 Java 代码到 CPU 指令，一个方法调用的完整生命周期",
+      "url": "https://www.51cto.com/article/855459.html",
+      "hot": "今天从源码到字节码，从类加载到 JVM 执行，从 JIT 编译到 CPU 指令，完整拆解一个 Java 方法调用的全生命周期。"
     },
     {
       "rank": 3,
-      "title": "第 12 篇：拆解 ping 命令——网络排障的第一把手术刀",
-      "url": "https://www.51cto.com/article/855372.html",
-      "hot": "今天继续拆一个几乎所有工程师都用过的命令——ping。它看起来只有一行，背后却串起了IP、路由、ARP、ICMP、TTL和延迟。"
+      "title": "企业级 MultiAgent 落地：Plan 模式与主子 Agent 协作",
+      "url": "https://www.51cto.com/article/855450.html",
+      "hot": "Plan 模式和主/子 Agent 协作让 Agent 能处理更复杂的任务。企业级平台的技术深度体现在：Plan 的生产可靠性（持久化、断点恢复）、多 Agent 的工程化（声明式配置、异步调度）、企业集成的完整性（多租户、统一认证），以及执行过程的可见性（实时推流、完整追踪）。"
     },
     {
       "rank": 4,
-      "title": "这个 UI 组件库火了！把页面效果卷到了新高度",
-      "url": "https://www.51cto.com/article/855370.html",
-      "hot": "Svelte Bits 做的事情非常简单，但对于 Svelte 开发者来说可能非常有吸引力——给 Svelte 准备了一堆可以直接使用的动画 UI 组件。"
+      "title": "27岁研究员连辞OpenAI、Anthropic！两家都在拿我们的命下注",
+      "url": "https://www.51cto.com/article/855473.html",
+      "hot": "在OpenAI，很多人没有真正内化文明级的风险；在Anthropic，风险被充分理解，但公司被锁死在一场必须第一个到达的竞赛里，停不下来。"
     },
     {
       "rank": 5,
-      "title": "AI 给出了根因，运维为什么还是不敢信？",
-      "url": "https://www.51cto.com/article/855369.html",
-      "hot": "AIOps 的价值，从来不是 \"替代运维\"，而是把原本需要运维花大量时间寻找、关联、验证的信息提前组织好。"
+      "title": "AGI时代的第一个生图模型，ChatGPT Images 2.5上线",
+      "url": "https://www.51cto.com/article/855471.html",
+      "hot": "刚刚，OpenAI发布新一代生图模型，ChatGPT Images 2.5，主打生成更快，细节更好，改图也终于越来越像“真·修图”了。"
     },
     {
       "rank": 6,
-      "title": "cn 发布！30 倍性能重写 Tailwind！",
-      "url": "https://www.51cto.com/article/855367.html",
-      "hot": "新的 cn 最大的特点就是：可以直接替代 clsx + tailwind-merge，原来的条件 Class、对象写法、Tailwind 冲突处理都可以继续使用。"
+      "title": "ICML'26 | 单样本校准、零推理开销，免训练LoRA合并框架上线",
+      "url": "https://www.51cto.com/article/855468.html",
+      "hot": "来自vivo BlueImage Lab、南京大学等的研究团队，提出了SSR-Merge：Subspace Signal Routing。"
     },
     {
       "rank": 7,
-      "title": "Github 14.6k Star！一键将网页转成桌面端应用！",
-      "url": "https://www.51cto.com/article/855366.html",
-      "hot": "今天分享一款开源工具 PakePlus，可以轻松把网页、Vue/React打包产物，直接转为桌面、安卓、iOS应用，体验很惊喜。"
+      "title": "陶哲轩：AI是直升机，把我空投到数学答案附近",
+      "url": "https://www.51cto.com/article/855466.html",
+      "hot": "AI已经进到顶尖数学家的工作流里了，而且不只是帮忙查资料、写代码，是真的开始参与证明研究级的数学问题。"
     },
     {
       "rank": 8,
-      "title": "HarmonyOS 音乐服务卡片完全指南：从播控到沉浸式设计",
-      "url": "https://ost.51cto.com/posts/56064",
-      "hot": "HarmonyOS音乐服务卡片完全指南：从播控到沉浸式设计手把手构建一个功能完整的音乐服务卡片，涵盖动态卡片、沉浸式UI、数据交互全流程一、..."
+      "title": "SQL 多表查询总是乱？今天一次搞懂I NNER、LEFT、RIGHT、FULL JOIN，顺便避开三个坑",
+      "url": "https://www.51cto.com/article/855483.html",
+      "hot": "今天就把 INNER、LEFT、RIGHT、FULL 这四种 JOIN 一次说清楚，顺便聊聊网上教程很少讲的三个坑。"
     },
     {
       "rank": 9,
-      "title": "首个利用微信通话实现“0 交互入侵”的蠕虫出现",
-      "url": "https://www.51cto.com/article/855361.html",
-      "hot": "Calif 表示，该漏洞已于 7 月报告给腾讯，腾讯此后已为用户修复了该漏洞，但这项研究仍然是一记警钟：移动即时通讯应用如何成为全球规模的蠕虫式攻击面。"
+      "title": "AI办公工具哪家强？一场深度实测揭晓答案",
+      "url": "https://www.51cto.com/article/855442.html",
+      "hot": "一份AI生成的PPT，考验通常发生在演示结束以后。有人问数据从哪来，有人问为什么这么判断，也有人提出另一个解释。文件里的材料能不能回答这些问题，决定了它到底有没有价值。我更愿意把“拿到文件之后还要补多少工作”，当成选择AI办公工具的依据。"
     },
     {
       "rank": 10,
-      "title": "运维开发效率翻倍：用 AI 低代码搭建 K8s 管理平台，工时压缩 90%",
-      "url": "https://www.51cto.com/article/855360.html",
-      "hot": "现在，AI 低代码开发已经完全落地，不用再一行一行硬敲全部代码，能够直接压缩 90% 编码工时。"
+      "title": "Memory + Skill + Learning Growth Loop + Agent：AITutor 如何重构学习这件事",
+      "url": "https://www.51cto.com/article/855474.html",
+      "hot": "AITutor — 你的 AI 原生学习伙伴，从被动学习，到主动进化。今天想正式介绍 AITutor。"
     }
   ]
 }
