@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-10T01:32:28+00:00",
+  "updated_at": "2026-09-10T06:33:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "N1 飞牛 NAS 部署 OpenClaw 实测：Node.js 环境、模型配置、微信接入与远程 SSH",
       "url": "https://blog.csdn.net/mrdeam/article/details/164612764",
-      "hot": "16391"
+      "hot": "18893"
     },
     {
       "rank": 2,
       "title": "【AI大模型接入SDK】大模型部署方案：云端接入与本地部署对比分析",
       "url": "https://blog.csdn.net/2401_89899187/article/details/164623867",
-      "hot": "16332"
+      "hot": "15312"
     },
     {
       "rank": 3,
       "title": "服务一多就别全靠命令行：用 1Panel 管理极空间上的 Docker 应用",
       "url": "https://blog.csdn.net/Dovis5884/article/details/164631529",
-      "hot": "13117"
+      "hot": "12842"
     },
     {
       "rank": 4,
-      "title": "会开完了，活还是没人干？我用 AiiOnly + Workbuddy 做了个「会议行动项助手」",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/164630368",
-      "hot": "11259"
+      "title": "让 NAS里的 AI 真正常驻：Hermes 接入微信，从本地 Agent 到远程管理",
+      "url": "https://blog.csdn.net/m0_68390957/article/details/164632225",
+      "hot": "12133"
     },
     {
       "rank": 5,
-      "title": "让 NAS里的 AI 真正常驻：Hermes 接入微信，从本地 Agent 到远程管理",
-      "url": "https://blog.csdn.net/m0_68390957/article/details/164632225",
-      "hot": "9523"
+      "title": "刚刚，DeepSeek V4.1 Flash模型突然上线内测：5 分钟接入9月10日就要下线的内测版",
+      "url": "https://blog.csdn.net/aidoudoulong/article/details/164629225",
+      "hot": "12029"
     },
     {
       "rank": 6,
-      "title": "SQL Server数据库迁移：金仓KES V9R4C019以深度T‑SQL兼容实现应用极简改造",
-      "url": "https://blog.csdn.net/lrq13965748542/article/details/164450133",
-      "hot": "8721"
+      "title": "大模型工程化实战（九）：Token 成本六维优化——把 token 账本摊开算：缓存命中、上下文裁剪、小模型路由、重试预算，一份 mock 日流量实测省 60% 成本",
+      "url": "https://blog.csdn.net/xiaobing259/article/details/164428158",
+      "hot": "11508"
     },
     {
       "rank": 7,
-      "title": "不装 SSH 客户端也能连服务器：用 WebSSH 把终端搬进浏览器",
-      "url": "https://blog.csdn.net/weixin_44976692/article/details/164616821",
-      "hot": "7736"
+      "title": "会开完了，活还是没人干？我用 AiiOnly + Workbuddy 做了个「会议行动项助手」",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/164630368",
+      "hot": "9815"
     },
     {
       "rank": 8,
-      "title": "开源菜谱工具 cook 实践：按食材筛选菜谱、随机推荐，并用 Docker 部署到本地",
-      "url": "https://blog.csdn.net/LT15171009269/article/details/164458811",
-      "hot": "6867"
+      "title": "不装 SSH 客户端也能连服务器：用 WebSSH 把终端搬进浏览器",
+      "url": "https://blog.csdn.net/weixin_44976692/article/details/164616821",
+      "hot": "9769"
     },
     {
       "rank": 9,
-      "title": "大模型工程化实战（九）：Token 成本六维优化——把 token 账本摊开算：缓存命中、上下文裁剪、小模型路由、重试预算，一份 mock 日流量实测省 60% 成本",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/164428158",
-      "hot": "6842"
+      "title": "多台 Linux 服务器怎么统一装 Docker？用 Ansible Playbook 固化部署流程",
+      "url": "https://blog.csdn.net/u014727709/article/details/164456185",
+      "hot": "8432"
     },
     {
       "rank": 10,
-      "title": "刚刚，DeepSeek V4.1 Flash模型突然上线内测：5 分钟接入9月10日就要下线的内测版",
-      "url": "https://blog.csdn.net/aidoudoulong/article/details/164629225",
-      "hot": "6817"
+      "title": "【计算几何】闵可夫斯基差演示",
+      "url": "https://blog.csdn.net/he_zhidan/article/details/164091399",
+      "hot": "8289"
     }
   ]
 }

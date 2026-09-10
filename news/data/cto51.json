@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-10T01:32:31+00:00",
+  "updated_at": "2026-09-10T06:33:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS跟手半模态实战：让弹窗跟随触发位置显示",
+      "url": "https://ost.51cto.com/posts/56084",
+      "hot": "大家好，今天要介绍的是HarmonyOS中的跟手半模态。在手机页面中，半模态通常从屏幕底部弹出。由于手机屏幕比较窄，用户点击页面上方或下方..."
+    },
+    {
+      "rank": 2,
+      "title": "基于HarmonyOS 6.0的天气预报页面实战：高颜值ArkUI卡片化UI构建详解",
+      "url": "https://ost.51cto.com/posts/56082",
+      "hot": "基于HarmonyOS6.0的天气预报页面实战：高颜值ArkUI卡片化UI构建详解为什么选择天气预报作为鸿蒙UI练手案例？随着HarmonyOS6.0及NEXT版本的..."
+    },
+    {
+      "rank": 3,
       "title": "模型没有心灵，但它们在从预训练到替换恐惧中发展出了心理阴影",
       "url": "https://www.51cto.com/article/855452.html",
       "hot": "模型在高风险场景中的行为稳定性是第三个风险点。模型在治疗关系中呈现出的叙事结构可能在其他场景中被重新激活，尤其是在受到矛盾输入或关系框架变化时。模型可能在非心理场景中呈现出心理化叙事，从而影响任务执行。"
     },
     {
-      "rank": 2,
+      "rank": 4,
+      "title": "从人机交互到机机交互，IDC白皮书定义AI主机“为智能体而生”",
+      "url": "https://www.51cto.com/article/855495.html",
+      "hot": "《AI主机》白皮书的正式发布，不仅为行业树立了统一的技术标准与选型依据，厘清了AI主机与传统终端、云端算力的边界，更预示着一个百亿级蓝海市场的开启与个人计算范式的历史性跃迁。"
+    },
+    {
+      "rank": 5,
+      "title": "AI 下一步往哪走？苹果已经给出了答案",
+      "url": "https://www.51cto.com/article/855494.html",
+      "hot": "M6 配备12核 CPU、12核 GPU、Neural Accelerators、双16核神经网络引擎，统一内存带宽最高达到170GB/s。"
+    },
+    {
+      "rank": 6,
+      "title": "前端人彻底赢麻了！这个 PDF 方案火了",
+      "url": "https://www.51cto.com/article/855493.html",
+      "hot": "最近发现一个超实用的开源项目 dompdf.js，它的核心灵魂拷问非常直接：为什么前端导出 PDF，一定要先把网页截图？"
+    },
+    {
+      "rank": 7,
+      "title": "如何驾驭GPT-6 Astra？OpenAI的官方手册来了，我把最该抄的几句话总结出来",
+      "url": "https://www.51cto.com/article/855492.html",
+      "hot": "这两天我在Codex里把模型切到了GPT-6 Astra，跑一个整理旧素材的活儿，跑到一半它停下来了。不是报错，是很客气地问我，接下来要不要按时间顺序归档，还是按主题。我盯着屏幕愣了两秒，心里冒出的第一反应是，哥们，你直接按你觉得对的做不就完了吗，问我干嘛。"
+    },
+    {
+      "rank": 8,
       "title": "Java 魔法探秘：从 Java 代码到 CPU 指令，一个方法调用的完整生命周期",
       "url": "https://www.51cto.com/article/855459.html",
       "hot": "今天从源码到字节码，从类加载到 JVM 执行，从 JIT 编译到 CPU 指令，完整拆解一个 Java 方法调用的全生命周期。"
     },
     {
-      "rank": 3,
-      "title": "企业级 MultiAgent 落地：Plan 模式与主子 Agent 协作",
-      "url": "https://www.51cto.com/article/855450.html",
-      "hot": "Plan 模式和主/子 Agent 协作让 Agent 能处理更复杂的任务。企业级平台的技术深度体现在：Plan 的生产可靠性（持久化、断点恢复）、多 Agent 的工程化（声明式配置、异步调度）、企业集成的完整性（多租户、统一认证），以及执行过程的可见性（实时推流、完整追踪）。"
-    },
-    {
-      "rank": 4,
-      "title": "27岁研究员连辞OpenAI、Anthropic！两家都在拿我们的命下注",
-      "url": "https://www.51cto.com/article/855473.html",
-      "hot": "在OpenAI，很多人没有真正内化文明级的风险；在Anthropic，风险被充分理解，但公司被锁死在一场必须第一个到达的竞赛里，停不下来。"
-    },
-    {
-      "rank": 5,
-      "title": "AGI时代的第一个生图模型，ChatGPT Images 2.5上线",
-      "url": "https://www.51cto.com/article/855471.html",
-      "hot": "刚刚，OpenAI发布新一代生图模型，ChatGPT Images 2.5，主打生成更快，细节更好，改图也终于越来越像“真·修图”了。"
-    },
-    {
-      "rank": 6,
-      "title": "ICML'26 | 单样本校准、零推理开销，免训练LoRA合并框架上线",
-      "url": "https://www.51cto.com/article/855468.html",
-      "hot": "来自vivo BlueImage Lab、南京大学等的研究团队，提出了SSR-Merge：Subspace Signal Routing。"
-    },
-    {
-      "rank": 7,
-      "title": "陶哲轩：AI是直升机，把我空投到数学答案附近",
-      "url": "https://www.51cto.com/article/855466.html",
-      "hot": "AI已经进到顶尖数学家的工作流里了，而且不只是帮忙查资料、写代码，是真的开始参与证明研究级的数学问题。"
-    },
-    {
-      "rank": 8,
-      "title": "SQL 多表查询总是乱？今天一次搞懂I NNER、LEFT、RIGHT、FULL JOIN，顺便避开三个坑",
-      "url": "https://www.51cto.com/article/855483.html",
-      "hot": "今天就把 INNER、LEFT、RIGHT、FULL 这四种 JOIN 一次说清楚，顺便聊聊网上教程很少讲的三个坑。"
-    },
-    {
       "rank": 9,
-      "title": "AI办公工具哪家强？一场深度实测揭晓答案",
-      "url": "https://www.51cto.com/article/855442.html",
-      "hot": "一份AI生成的PPT，考验通常发生在演示结束以后。有人问数据从哪来，有人问为什么这么判断，也有人提出另一个解释。文件里的材料能不能回答这些问题，决定了它到底有没有价值。我更愿意把“拿到文件之后还要补多少工作”，当成选择AI办公工具的依据。"
+      "title": "Electron 淘汰？Vercel 发布 Native SDK，适配桌面端和手机端！",
+      "url": "https://www.51cto.com/article/855491.html",
+      "hot": "过去十年，谈及用Web技术开发跨平台桌面应用，Electron几乎是唯一的选择。 VS Code、Discord、Notion等众多知名应用均基于此构建，但其痛点同样显著：安装包臃肿、内存占用高、启动缓慢，且每个应用都需捆绑一整套Chromium内核，让开发者对它“又爱又恨”。"
     },
     {
       "rank": 10,
-      "title": "Memory + Skill + Learning Growth Loop + Agent：AITutor 如何重构学习这件事",
-      "url": "https://www.51cto.com/article/855474.html",
-      "hot": "AITutor — 你的 AI 原生学习伙伴，从被动学习，到主动进化。今天想正式介绍 AITutor。"
+      "title": "缓存与队列：别只会用 String！Redis 常用数据结构及对应业务场景总结",
+      "url": "https://www.51cto.com/article/855490.html",
+      "hot": "本文从业务场景选型的角度出发，系统梳理 Redis 六大常用数据结构各自最适合解决什么业务问题、如何在真实项目中落地、以及选型时容易踩的坑，帮你根据场景选对数据结构，让 Redis 真正发挥最大效能。"
     }
   ]
 }

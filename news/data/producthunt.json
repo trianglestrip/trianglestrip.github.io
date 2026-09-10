@@ -1,38 +1,38 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-09-09T19:50:50+00:00",
+  "updated_at": "2026-09-10T06:33:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Ass Auction",
-      "url": "https://www.producthunt.com/products/ass-auction",
-      "hot": "2026-09-08T01:30:13-07:00"
-    },
-    {
-      "rank": 2,
-      "title": "Harden",
-      "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif",
-      "hot": "2026-08-29T12:26:16-07:00"
-    },
-    {
-      "rank": 3,
       "title": "Mastra Factory",
       "url": "https://www.producthunt.com/products/mastra",
       "hot": "2026-08-21T03:54:22-07:00"
     },
     {
+      "rank": 2,
+      "title": "ChatGPT Images 2.5",
+      "url": "https://www.producthunt.com/products/openai",
+      "hot": "2026-09-08T12:47:45-07:00"
+    },
+    {
+      "rank": 3,
+      "title": "AlphaGenome Atlas",
+      "url": "https://www.producthunt.com/products/alphagenome-atlas",
+      "hot": "2026-09-08T18:41:57-07:00"
+    },
+    {
       "rank": 4,
-      "title": "Noodle Seed",
-      "url": "https://www.producthunt.com/products/noodle-seed",
-      "hot": "2026-08-26T12:33:30-07:00"
+      "title": "AdScope",
+      "url": "https://www.producthunt.com/products/adscope-2",
+      "hot": "2026-06-23T07:12:35-07:00"
     },
     {
       "rank": 5,
-      "title": "Frigade Assist API",
-      "url": "https://www.producthunt.com/products/frigade",
-      "hot": "2026-09-08T15:03:06-07:00"
+      "title": "Diiverge",
+      "url": "https://www.producthunt.com/products/diiverge-co",
+      "hot": "2026-09-07T13:23:07-07:00"
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "Basedash in Español Français & Português",
-      "url": "https://www.producthunt.com/products/basedash",
-      "hot": "2026-09-08T14:43:49-07:00"
-    },
-    {
-      "rank": 8,
-      "title": "AdScope",
-      "url": "https://www.producthunt.com/products/adscope-2",
-      "hot": "2026-06-23T07:12:35-07:00"
-    },
-    {
-      "rank": 9,
-      "title": "WorkID.ai",
-      "url": "https://www.producthunt.com/products/workid-ai",
-      "hot": "2026-09-06T02:54:44-07:00"
-    },
-    {
-      "rank": 10,
       "title": "49agents IDE",
       "url": "https://www.producthunt.com/products/49agents-ide",
       "hot": "2026-09-01T08:06:23-07:00"
+    },
+    {
+      "rank": 8,
+      "title": "Harden",
+      "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif",
+      "hot": "2026-08-29T12:26:16-07:00"
+    },
+    {
+      "rank": 9,
+      "title": "Ass Auction",
+      "url": "https://www.producthunt.com/products/ass-auction",
+      "hot": "2026-09-08T01:30:13-07:00"
+    },
+    {
+      "rank": 10,
+      "title": "GoModel",
+      "url": "https://www.producthunt.com/products/gomodel",
+      "hot": "2026-09-06T12:52:57-07:00"
     }
   ]
 }

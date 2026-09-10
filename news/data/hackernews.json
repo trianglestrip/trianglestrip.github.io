@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-10T01:32:33+00:00",
+  "updated_at": "2026-09-10T06:33:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "iPhone Duo",
       "url": "https://www.apple.com/iphone-duo/",
-      "hot": "872"
+      "hot": "1107"
     },
     {
       "rank": 2,
-      "title": "Shopify acquires Tailwind",
-      "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
-      "hot": "885"
+      "title": "Show HN: What if the speed of light was 5 km/h?",
+      "url": "https://rivendell.dmitrybrant.com/relativity/",
+      "hot": "195"
     },
     {
       "rank": 3,
-      "title": "What do Visa and Mastercard do? An intro to card networks",
-      "url": "https://tautology.town/2026/06/01/card-networks.html",
-      "hot": "367"
+      "title": "All grown-ups were once children… but only few of them remember it",
+      "url": "https://mathstodon.xyz/@tao/117244102901892965",
+      "hot": "34"
     },
     {
       "rank": 4,
-      "title": "AirPods 5",
-      "url": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/",
-      "hot": "370"
+      "title": "Version Control Second Coming",
+      "url": "https://psantosl.github.io/posts/version-control-second-coming/",
+      "hot": "50"
     },
     {
       "rank": 5,
-      "title": "Growing proof that autonomous cars save lives",
-      "url": "https://spectrum.ieee.org/are-self-driving-cars-safe",
-      "hot": "207"
+      "title": "ESP32 Bit Pirate Hardware Hacking Kit with Web Tools That Speaks Every Protocol",
+      "url": "https://geo-tp.github.io/ESP32-Bit-Pirate/",
+      "hot": "63"
     },
     {
       "rank": 6,
-      "title": "iPhone 18 Pro and iPhone 18 Pro Max",
-      "url": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
-      "hot": "276"
+      "title": "Shopify acquires Tailwind",
+      "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+      "hot": "984"
     },
     {
       "rank": 7,
-      "title": "No Man's Sky Cosmos",
-      "url": "https://www.nomanssky.com/cosmos-update/",
-      "hot": "293"
+      "title": "What do Visa and Mastercard do? An intro to card networks",
+      "url": "https://tautology.town/2026/06/01/card-networks.html",
+      "hot": "475"
     },
     {
       "rank": 8,
-      "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
-      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-      "hot": "347"
+      "title": "Larger Pacific Striped Octopus",
+      "url": "https://en.wikipedia.org/wiki/Larger_Pacific_striped_octopus",
+      "hot": "8"
     },
     {
       "rank": 9,
-      "title": "Apple Watch Series 12",
-      "url": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/",
-      "hot": "211"
+      "title": "Growing proof that autonomous cars save lives",
+      "url": "https://spectrum.ieee.org/are-self-driving-cars-safe",
+      "hot": "309"
     },
     {
       "rank": 10,
-      "title": "Factoring RSA 260",
-      "url": "https://cognition.com/blog/factoring-rsa-260",
-      "hot": "22"
+      "title": "Training a 3.8B LLM to 0.384 CORE for $998 – Hugo Vergnes",
+      "url": "https://hugovergnes.github.io/little-lm-3-8b/",
+      "hot": "42"
     }
   ]
 }
