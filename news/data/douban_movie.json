@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-10T15:10:42+00:00",
+  "updated_at": "2026-09-10T18:24:20+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,21 +18,21 @@
     },
     {
       "rank": 3,
-      "title": "抓特务",
-      "url": "https://movie.douban.com/subject/36812879/",
-      "hot": "评分 7.4"
-    },
-    {
-      "rank": 4,
       "title": "现在不是出轨的问题",
       "url": "https://movie.douban.com/subject/37501131/",
       "hot": "评分 8.7"
     },
     {
+      "rank": 4,
+      "title": "抓特务",
+      "url": "https://movie.douban.com/subject/36812879/",
+      "hot": "评分 7.4"
+    },
+    {
       "rank": 5,
-      "title": "空枪",
-      "url": "https://movie.douban.com/subject/37508847/",
-      "hot": "评分 7.2"
+      "title": "早春晴朗",
+      "url": "https://movie.douban.com/subject/36660844/",
+      "hot": ""
     },
     {
       "rank": 6,
@@ -42,9 +42,9 @@
     },
     {
       "rank": 7,
-      "title": "早春晴朗",
-      "url": "https://movie.douban.com/subject/36660844/",
-      "hot": ""
+      "title": "空枪",
+      "url": "https://movie.douban.com/subject/37508847/",
+      "hot": "评分 7.2"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "八仙！",
-      "url": "https://movie.douban.com/subject/36882191/",
-      "hot": "评分 8.2"
-    },
-    {
-      "rank": 10,
       "title": "坠落2：死点",
       "url": "https://movie.douban.com/subject/36318704/",
       "hot": "评分 5.5"
+    },
+    {
+      "rank": 10,
+      "title": "八仙！",
+      "url": "https://movie.douban.com/subject/36882191/",
+      "hot": "评分 8.2"
     }
   ]
 }

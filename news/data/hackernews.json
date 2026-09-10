@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-10T15:11:12+00:00",
+  "updated_at": "2026-09-10T18:24:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Shopify moves back to Native from React Native",
-      "url": "https://shopify.engineering/back-to-native",
-      "hot": "164"
+      "title": "Rust is tier-1 language at Microsoft",
+      "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+      "hot": "376"
     },
     {
       "rank": 2,
-      "title": "Rust Is Tier-1 Language at Microsoft",
-      "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
-      "hot": "126"
-    },
-    {
-      "rank": 3,
-      "title": "Amazon pilots ad services in ChatGPT",
-      "url": "https://www.marketingdive.com/news/amazon-pilots-ad-services-in-chatgpt-what-marketers-need-to-know/829945/",
-      "hot": "45"
-    },
-    {
-      "rank": 4,
-      "title": "Hitachi launches CO2 heat pump water heaters with solar-friendly tariff controls",
-      "url": "https://www.pv-magazine.com/2026/09/07/hitachi-launches-co2-heat-pump-water-heaters-with-solar-friendly-tariff-controls/",
-      "hot": "155"
-    },
-    {
-      "rank": 5,
-      "title": "Tell HN: OpenAI keeps re-enabling the 'allow training' setting",
-      "url": "https://news.ycombinator.com/item?id=49643556",
-      "hot": "222"
-    },
-    {
-      "rank": 6,
-      "title": "Who People Talk to When They're Struggling",
-      "url": "https://www.graphsaboutreligion.com/p/who-do-you-talk-to-when-youre-struggling",
-      "hot": "47"
-    },
-    {
-      "rank": 7,
-      "title": "What algorithm did Windows XP use to choose your initial user picture?",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683",
-      "hot": "221"
-    },
-    {
-      "rank": 8,
-      "title": "List of references on Sony websites to players \"owning\" their digital games",
-      "url": "https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit",
+      "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+      "url": "https://cognition.com/blog/swe-2",
       "hot": "147"
     },
     {
+      "rank": 3,
+      "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+      "url": "https://mathstodon.xyz/@andreasthom/117240535270608201",
+      "hot": "235"
+    },
+    {
+      "rank": 4,
+      "title": "I have a theory that software drives people insane",
+      "url": "https://graybeard.ing/software-drives-people-insane/",
+      "hot": "107"
+    },
+    {
+      "rank": 5,
+      "title": "NASA Color Trick Was Meant for Mars. Now It's Unveiling Rock Art on Earth",
+      "url": "https://gizmodo.com/this-nasa-color-trick-was-meant-for-mars-now-its-unveiling-rock-art-on-earth-2000809844",
+      "hot": "94"
+    },
+    {
+      "rank": 6,
+      "title": "Shopify moves back to Native from React Native",
+      "url": "https://shopify.engineering/back-to-native",
+      "hot": "498"
+    },
+    {
+      "rank": 7,
+      "title": "Neki",
+      "url": "https://planetscale.com/blog/introducing-neki",
+      "hot": "95"
+    },
+    {
+      "rank": 8,
+      "title": "Forgejo <=16.0.3 Critical RCE",
+      "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
+      "hot": "44"
+    },
+    {
       "rank": 9,
-      "title": "Another researcher says OpenAI trained on conversations, then claimed breakthrou",
-      "url": "https://bsky.app/profile/did:plc:ckaz32jwl6t2cno6fmuw2nhn/post/3mv4mt4ikss2d",
-      "hot": "183"
+      "title": "Douglas Hofstadter: Analogy as the Core of Cognition [video]",
+      "url": "https://www.youtube.com/watch?v=n8m7lFQ3njk",
+      "hot": "47"
     },
     {
       "rank": 10,
-      "title": "Show HN: I couldn't afford interview prep, so I built a free alternative",
-      "url": "https://learningto.co/",
-      "hot": "21"
+      "title": "Silicon Valley Is Transforming the Military-Industrial Complex",
+      "url": "https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex",
+      "hot": "52"
     }
   ]
 }
