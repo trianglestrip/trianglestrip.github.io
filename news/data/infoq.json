@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-10T06:33:53+00:00",
+  "updated_at": "2026-09-10T11:44:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "破除人形崇拜！京东用“狼族”军团重做物理AI",
+      "url": "https://www.infoq.cn/article/FKI7zch6mfFHuNB72eyZ?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 10 Sep 2026 19:28:14 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "PayPal谈 Agentic Commerce：AI智能体将如何进入跨境支付场景？",
+      "url": "https://www.infoq.cn/article/8t2vJHOc5srUyQqSlO9m?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 10 Sep 2026 17:16:06 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "推理成为新中心、Agent把生产级问题提前：AI Infra 的边界正在被重写",
+      "url": "https://www.infoq.cn/article/YBvKfhWu90StYj4SJVIV?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 10 Sep 2026 17:15:13 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "把 FDE 送进企业之后：谁救火，谁背责，谁赚钱？",
+      "url": "https://www.infoq.cn/article/uQvqV8VlMl5g8OqQKwDG?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 10 Sep 2026 17:10:55 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "参数几乎翻倍，推理反而更省：DeepSeek V4.1-Flash 重构 KV Cache",
+      "url": "https://www.infoq.cn/article/sbaJrAa8VTIRKIPCpKlo?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 10 Sep 2026 17:06:25 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "Google 发布 BeyondCorp 继任者，但普通企业真的学得来吗？",
+      "url": "https://www.infoq.cn/article/V2IvFxuSsxAY3zLVtzga?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 10 Sep 2026 16:06:00 GMT"
+    },
+    {
+      "rank": 7,
       "title": "多人同时改地图、标数据，JupyterGIS 正在重做 GIS 工作流",
       "url": "https://www.infoq.cn/article/QpQBK0EXkx5U5CZe1OP9?utm_source=rss&utm_medium=article",
       "hot": "Thu, 10 Sep 2026 14:21:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "14岁清华天才、普林斯顿最年轻终身教授王梦迪：AI 尚未发现新的基础科学｜附完整演讲",
       "url": "https://www.infoq.cn/article/d0NzJlH20aPXVmsZHdjW?utm_source=rss&utm_medium=article",
       "hot": "Thu, 10 Sep 2026 12:46:57 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "Airbnb 采用服务端驱动架构，身份验证代码量减少 60%",
       "url": "https://www.infoq.cn/article/CKpxx7ZtuZ7wLJ1CqF0i?utm_source=rss&utm_medium=article",
       "hot": "Thu, 10 Sep 2026 12:46:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "诺奖得主阿吉翁：AI时代，比以往任何时候都更需要重视手工劳动和软技能",
       "url": "https://www.infoq.cn/article/bvqQk8MoIlx291HfB7pQ?utm_source=rss&utm_medium=article",
       "hot": "Thu, 10 Sep 2026 11:27:37 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "OpenAI抄袭、威胁数学家？“AI攻克千禧难题”秀，终成 OpenAI 和 Anthropic 的大战",
-      "url": "https://www.infoq.cn/article/Yv5sAmejcLyOYSSRdwI2?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 10 Sep 2026 11:22:49 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "中科院江小涓谈 AI 新经济：AI正在改写中国企业“先国内、再出海”的老路径",
-      "url": "https://www.infoq.cn/article/7xE0eQlCGCSoM0wbmAoM?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 10 Sep 2026 11:15:01 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Meta Muse突袭：人手一台AI虚拟机，全天候干活！扎克伯格想让 AI 自己“挣回饭钱”",
-      "url": "https://www.infoq.cn/article/NSFJ4JFUjL6KaYUDV5Wv?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 10 Sep 2026 11:03:21 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Copilot 代码审查功能已登陆 Azure Repos，按审查次数计费",
-      "url": "https://www.infoq.cn/article/kB15qdDc6NFLdaUbCbqo?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 10 Sep 2026 11:00:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "边创作，边评估：纳逗 PRO·剧本空间的多 Agent 实践｜QCon上海",
-      "url": "https://www.infoq.cn/article/I0qWiIGTkCqG8H1hAoJb?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 10 Sep 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Tether：在 iOS 与 Linux 桌面电脑之间实现类似 Apple Continuity 的体验",
-      "url": "https://www.infoq.cn/article/7dKPszYaaHXIzoVLyh30?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 10 Sep 2026 09:36:56 GMT"
     }
   ]
 }
