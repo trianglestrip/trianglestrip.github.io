@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-10T11:44:44+00:00",
+  "updated_at": "2026-09-10T15:11:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "N1 飞牛 NAS 部署 OpenClaw 实测：Node.js 环境、模型配置、微信接入与远程 SSH",
-      "url": "https://blog.csdn.net/mrdeam/article/details/164612764",
-      "hot": "19842"
+      "title": "让 NAS里的 AI 真正常驻：Hermes 接入微信，从本地 Agent 到远程管理",
+      "url": "https://blog.csdn.net/m0_68390957/article/details/164632225",
+      "hot": "18791"
     },
     {
       "rank": 2,
-      "title": "让 NAS里的 AI 真正常驻：Hermes 接入微信，从本地 Agent 到远程管理",
-      "url": "https://blog.csdn.net/m0_68390957/article/details/164632225",
-      "hot": "16514"
+      "title": "N1 飞牛 NAS 部署 OpenClaw 实测：Node.js 环境、模型配置、微信接入与远程 SSH",
+      "url": "https://blog.csdn.net/mrdeam/article/details/164612764",
+      "hot": "18750"
     },
     {
       "rank": 3,
       "title": "【AI大模型接入SDK】Ollama跨平台部署与运维指南",
       "url": "https://blog.csdn.net/2401_89899187/article/details/164823161",
-      "hot": "15694"
+      "hot": "15544"
     },
     {
       "rank": 4,
       "title": "刚刚，DeepSeek V4.1 Flash模型突然上线内测：5 分钟接入9月10日就要下线的内测版",
       "url": "https://blog.csdn.net/aidoudoulong/article/details/164629225",
-      "hot": "12503"
+      "hot": "11510"
     },
     {
       "rank": 5,
-      "title": "大模型工程化实战（九）：Token 成本六维优化——把 token 账本摊开算：缓存命中、上下文裁剪、小模型路由、重试预算，一份 mock 日流量实测省 60% 成本",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/164428158",
-      "hot": "12210"
+      "title": "【计算几何】闵可夫斯基差演示",
+      "url": "https://blog.csdn.net/he_zhidan/article/details/164091399",
+      "hot": "11164"
     },
     {
       "rank": 6,
-      "title": "服务一多就别全靠命令行：用 1Panel 管理极空间上的 Docker 应用",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/164631529",
-      "hot": "11308"
+      "title": "基于 WorkBuddy 搭配 Hy4 Preview 打造「苏轼《定风波》三维诗词页」：Three.js + Web Speech API 从 AI 建模到网页朗读的完整实践",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/164758086",
+      "hot": "10338"
     },
     {
       "rank": 7,
-      "title": "【计算几何】闵可夫斯基差演示",
-      "url": "https://blog.csdn.net/he_zhidan/article/details/164091399",
-      "hot": "10999"
+      "title": "大模型工程化实战（九）：Token 成本六维优化——把 token 账本摊开算：缓存命中、上下文裁剪、小模型路由、重试预算，一份 mock 日流量实测省 60% 成本",
+      "url": "https://blog.csdn.net/xiaobing259/article/details/164428158",
+      "hot": "10080"
     },
     {
       "rank": 8,
-      "title": "基于 WorkBuddy 搭配 Hy4 Preview 打造「苏轼《定风波》三维诗词页」：Three.js + Web Speech API 从 AI 建模到网页朗读的完整实践",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/164758086",
-      "hot": "9988"
+      "title": "服务一多就别全靠命令行：用 1Panel 管理极空间上的 Docker 应用",
+      "url": "https://blog.csdn.net/Dovis5884/article/details/164631529",
+      "hot": "9906"
     },
     {
       "rank": 9,
       "title": "【Linux网络】网络层协议 IP ：从网络层原理到 Linux 内核源码",
       "url": "https://blog.csdn.net/yhrxh_ymq/article/details/164370199",
-      "hot": "8701"
+      "hot": "8667"
     },
     {
       "rank": 10,
-      "title": "工信部《人工智能中小企业创业支持计划》深度解读：AI创业生态正在形成",
-      "url": "https://blog.csdn.net/m0_51507544/article/details/164594967",
-      "hot": "8533"
+      "title": "当网站开始为 AI Agent 设计：Agentic Internet 正在重写互联网",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/164340718",
+      "hot": "8260"
     }
   ]
 }
