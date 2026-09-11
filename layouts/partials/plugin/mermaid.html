@@ -1,0 +1,7 @@
+{{- $content := trim .Content "\n" -}}
+{{- /* Keep Mermaid labels compatible with the older Mermaid runtime used by this site. */ -}}
+{{- $content = replace $content "RESP[client.sendall(response)]" "RESP[\"client.sendall(response)\"]" -}}
+{{- $content = replace $content "F[查找 handlers[cmd_type]]" "F[\"查找 handlers[cmd_type]\"]" -}}
+{{- $id := dict "Content" $content "Scratch" .Page.Scratch | partial "function/id.html" -}}
+<div class="mermaid" id="{{ $id }}">{{ $content }}</div>
+{{- .Page.Scratch.SetInMap "this" "mermaid" true -}}
