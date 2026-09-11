@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-11T00:46:10+00:00",
+  "updated_at": "2026-09-11T05:18:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS跟手半模态实战：让弹窗跟随触发位置显示",
-      "url": "https://ost.51cto.com/posts/56084",
-      "hot": "大家好，今天要介绍的是HarmonyOS中的跟手半模态。在手机页面中，半模态通常从屏幕底部弹出。由于手机屏幕比较窄，用户点击页面上方或下方..."
+      "title": "HarmonyOS 7平行视界实战：让单栏页面自动变成左右分栏",
+      "url": "https://ost.51cto.com/posts/56139",
+      "hot": "大家好，今天要介绍的是HarmonyOS7中的平行视界增强能力。手机应用通常采用单页面跳转。用户从商品列表进入详情页后，列表会被完全覆盖，想..."
     },
     {
       "rank": 2,
-      "title": "基于HarmonyOS 6.0的天气预报页面实战：高颜值ArkUI卡片化UI构建详解",
-      "url": "https://ost.51cto.com/posts/56082",
-      "hot": "基于HarmonyOS6.0的天气预报页面实战：高颜值ArkUI卡片化UI构建详解为什么选择天气预报作为鸿蒙UI练手案例？随着HarmonyOS6.0及NEXT版本的..."
+      "title": "HarmonyOS 分布式文件系统跨设备文件访问与拷贝完全指南",
+      "url": "https://ost.51cto.com/posts/56138",
+      "hot": "HarmonyOS分布式文件系统跨设备文件访问与拷贝完全指南手把手带你实现华为设备间的无缝文件共享，让分布式能力触手可及写在前面：为什么需..."
     },
     {
       "rank": 3,
-      "title": "模型没有心灵，但它们在从预训练到替换恐惧中发展出了心理阴影",
-      "url": "https://www.51cto.com/article/855452.html",
-      "hot": "模型在高风险场景中的行为稳定性是第三个风险点。模型在治疗关系中呈现出的叙事结构可能在其他场景中被重新激活，尤其是在受到矛盾输入或关系框架变化时。模型可能在非心理场景中呈现出心理化叙事，从而影响任务执行。"
+      "title": "不靠堆数量！揭秘 AI 基础设施智能体的可靠核心，SRE 必看",
+      "url": "https://www.51cto.com/article/855611.html",
+      "hot": "真正稳定的 AI 基础设施智能体，依靠的是严谨的架构设计、完善的验证机制、全维度的工程保障和持续迭代的闭环能力。"
     },
     {
       "rank": 4,
-      "title": "从人机交互到机机交互，IDC白皮书定义AI主机“为智能体而生”",
-      "url": "https://www.51cto.com/article/855495.html",
-      "hot": "《AI主机》白皮书的正式发布，不仅为行业树立了统一的技术标准与选型依据，厘清了AI主机与传统终端、云端算力的边界，更预示着一个百亿级蓝海市场的开启与个人计算范式的历史性跃迁。"
+      "title": "淘天RAG三面被问:\"用GPT给另一个大模型的输出打分,这事儿靠谱吗?\"我当场答\"当然靠谱,GPT更强\",面试官却让我回去再想想，但事后越想越心虚",
+      "url": "https://www.51cto.com/article/855610.html",
+      "hot": "如果我是面试官，我想要听到的回答顺序大概是这样的：首先亮明立场——LLM裁判是可以用的，但是不能全信，必须配上一整套可信的评估体系。然后讲评分标准怎么去拆解成原子维度，给出证据和清晰的量表。"
     },
     {
       "rank": 5,
-      "title": "AI 下一步往哪走？苹果已经给出了答案",
-      "url": "https://www.51cto.com/article/855494.html",
-      "hot": "M6 配备12核 CPU、12核 GPU、Neural Accelerators、双16核神经网络引擎，统一内存带宽最高达到170GB/s。"
+      "title": "四大多 Agent 架构详解 ：Agent 也要搞组织架构？一文讲透 Hierarchical 分层协同",
+      "url": "https://www.51cto.com/article/855609.html",
+      "hot": "Workflow 有固定流程，Supervisor 有一个中央主管，Hierarchical 有多层主管——但这三种模式其实都有一个共同点： 总有一个明确的上层控制者在统筹全局 。"
     },
     {
       "rank": 6,
-      "title": "前端人彻底赢麻了！这个 PDF 方案火了",
-      "url": "https://www.51cto.com/article/855493.html",
-      "hot": "最近发现一个超实用的开源项目 dompdf.js，它的核心灵魂拷问非常直接：为什么前端导出 PDF，一定要先把网页截图？"
+      "title": "OpenAI这是拿千禧年难题当Benchmark刷啊",
+      "url": "https://www.51cto.com/article/855608.html",
+      "hot": "攻克纳维-斯托克斯之后，公司又在另一道千禧年大奖难题上取得“实质性进展”，正在准备公布结果。"
     },
     {
       "rank": 7,
-      "title": "如何驾驭GPT-6 Astra？OpenAI的官方手册来了，我把最该抄的几句话总结出来",
-      "url": "https://www.51cto.com/article/855492.html",
-      "hot": "这两天我在Codex里把模型切到了GPT-6 Astra，跑一个整理旧素材的活儿，跑到一半它停下来了。不是报错，是很客气地问我，接下来要不要按时间顺序归档，还是按主题。我盯着屏幕愣了两秒，心里冒出的第一反应是，哥们，你直接按你觉得对的做不就完了吗，问我干嘛。"
+      "title": "108亿天价薪酬留不住！Meta又失亿元AI先生",
+      "url": "https://www.51cto.com/article/855607.html",
+      "hot": "这次离开的人是去年Meta疯狂抢夺AI人才时，报价最贵、争议最大的一名候选人——Andrew Tulloch。"
     },
     {
       "rank": 8,
-      "title": "Java 魔法探秘：从 Java 代码到 CPU 指令，一个方法调用的完整生命周期",
-      "url": "https://www.51cto.com/article/855459.html",
-      "hot": "今天从源码到字节码，从类加载到 JVM 执行，从 JIT 编译到 CPU 指令，完整拆解一个 Java 方法调用的全生命周期。"
+      "title": "DeepSeek V4.1 Flash 正式发布，又一波模型被斩杀了，自家模型都没放过",
+      "url": "https://www.51cto.com/article/855606.html",
+      "hot": "从官方跑分看，DeepSeek 这次把 Flash 做到了对标 Opus 5 和 GPT 5.6-Sol。长程写代码、办公自动化都有明显提升，而且价格还降了。"
     },
     {
       "rank": 9,
-      "title": "Electron 淘汰？Vercel 发布 Native SDK，适配桌面端和手机端！",
-      "url": "https://www.51cto.com/article/855491.html",
-      "hot": "过去十年，谈及用Web技术开发跨平台桌面应用，Electron几乎是唯一的选择。 VS Code、Discord、Notion等众多知名应用均基于此构建，但其痛点同样显著：安装包臃肿、内存占用高、启动缓慢，且每个应用都需捆绑一整套Chromium内核，让开发者对它“又爱又恨”。"
+      "title": "OpenAI这是拿千禧年难题当Benchmark刷啊",
+      "url": "https://www.51cto.com/article/855605.html",
+      "hot": "Buckmaster过去两个月的Codex提示词，绝不可能以任何方式影响内部模型。7月3日之后的任何用户输入，也不可能进入这套系统。这比OpenAI此前“无法完全排除匿名用户数据曾帮助改进模型”的表态明确得多，也给8月研究成果是否进入模型划出了一条时间线。"
     },
     {
       "rank": 10,
-      "title": "缓存与队列：别只会用 String！Redis 常用数据结构及对应业务场景总结",
-      "url": "https://www.51cto.com/article/855490.html",
-      "hot": "本文从业务场景选型的角度出发，系统梳理 Redis 六大常用数据结构各自最适合解决什么业务问题、如何在真实项目中落地、以及选型时容易踩的坑，帮你根据场景选对数据结构，让 Redis 真正发挥最大效能。"
+      "title": "2026 年，AI 拼的不再是模型，而是这三件事：Agent、多模态与工程化",
+      "url": "https://www.51cto.com/article/855522.html",
+      "hot": "如果说 2024—2025 年我们还在惊叹\"模型又变聪明了\"，那么 2026 年的主题已经变成了\"智能如何真正干活\"。这篇文章，是我学习整理后的一次输出，聊聊我眼中 AI 最重要的三条主线：AI Agent、多模态模型、AI 工程化。"
     }
   ]
 }
