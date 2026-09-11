@@ -104,45 +104,30 @@ def fetch_discussions(token: str, owner: str, name: str, category_id: str) -> li
     return discussions
 
 
-MERMAID_FENCE_RE = re.compile(r"```mermaid\s*\n(.*?)\n```", re.IGNORECASE | re.DOTALL)
+MERMAID_FENCE_RE = re.compile(r"```mermaid\\s*\\n(.*?)\\n```", re.IGNORECASE | re.DOTALL)
 
 
-def normalize_mermaid_body(body: str) -> str:
-    """Normalize Mermaid blocks for the site's pinned Mermaid 10.9.8 runtime.
+def check_mermaid_body(body: str) -> str:
+    """Check Mermaid blocks without rewriting the GitHub Discussion source.
 
-    Discussions are the source of generated Hugo posts, so compatibility is
-    checked here before a body is written into ``.hugo-prepared``.
+    GitHub Discussion content is the canonical article source. The Hugo site
+    uses the same Mermaid syntax, so changing labels during synchronization can
+    make the published article differ from the working Discussion. Keep the
+    original body byte-for-byte and only reject known HTML-escaped diagram
+    input that would be ambiguous to the Mermaid lexer.
     """
-    def normalize(match: re.Match[str]) -> str:
-        diagram = match.group(1)
-        # Do not pass newer Mermaid init directives into the legacy site runtime.
-        diagram = re.sub(r"%%\{init:.*?\}%%\s*", "", diagram, flags=re.DOTALL)
-        # Discussion/Hugo HTML escaping must not reach Mermaid's lexer.
-        diagram = (
-            diagram.replace("&gt;", ">")
-            .replace("&lt;", "<")
-            .replace("&amp;", "&")
-        )
-        # Quote labels containing Mermaid grammar characters.
-        replacements = {
-            "RESP[client.sendall(response)]": "RESP[\"client.sendall(response)\"]",
-            "F[查找 handlers[cmd_type]]": "F[\"查找 handlers[cmd_type]\"]",
-            "X[handler(**params)]": "X[\"handler(**params)\"]",
-            "P[读取 command.type 和 command.params]": "P[\"读取 command.type 和 command.params\"]",
-        }
-        for old, new in replacements.items():
-            diagram = diagram.replace(old, new)
-        return "```mermaid\n" + diagram.strip() + "\n```"
-
-    normalized = MERMAID_FENCE_RE.sub(normalize, body)
-    blocks = list(MERMAID_FENCE_RE.finditer(normalized))
+    blocks = list(MERMAID_FENCE_RE.finditer(body))
     for number, match in enumerate(blocks, start=1):
         diagram = match.group(1)
-        if "%%{init:" in diagram or any(entity in diagram for entity in ("&gt;", "&lt;", "&amp;")):
-            raise ValueError(f"Mermaid block #{number} is not compatible with Mermaid 10.9.8")
+        if "%%{init:" in diagram:
+            raise ValueError(
+                f"Mermaid block #{number} uses an init directive; use the GitHub-compatible "
+                "diagram syntax without %%{init:...}%%"
+            )
     if blocks:
-        print(f"mermaid compatibility: {len(blocks)} block(s), version 10.9.8 subset")
-    return normalized
+        print(f"mermaid compatibility: {len(blocks)} block(s), GitHub-compatible source preserved")
+    return body
+
 
 
 def yaml_string(value: str) -> str:
@@ -190,7 +175,7 @@ def sync_discussions(category_name: str) -> int:
         number = item["number"]
         title = (item.get("title") or f"discussion-{number}").strip()
         body = (item.get("body") or "").strip()
-        body = normalize_mermaid_body(body)
+        body = check_mermaid_body(body)
         post_date = item.get("createdAt") or ""
         tags = [node["name"] for node in item.get("labels", {}).get("nodes", [])]
         filename = PREPARED_POSTS / f"d-{number}.md"
