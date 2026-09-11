@@ -1,0 +1,1044 @@
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>MCP for Blender 内部流程：从自然语言到 Blender 执行 - 随手记录</title><meta name=Description content="个人博客，记录技术笔记与生活碎片。"><meta property="og:url" content="https://trianglestrip.github.io/posts/d-35/"><meta property="og:site_name" content="随手记录"><meta property="og:title" content="MCP for Blender 内部流程：从自然语言到 Blender 执行"><meta property="og:description" content='MCP for Blender 内部流程说明 本文说明当前项目中“用户通过自然语言提问，LLM 调用 MCP，再驱动 Blender 执行操作”的完整内部流程。
+代码范围：
+MCP Server：src/blender_mcp/server.py Blender Addon：src/blender_mcp/bundled/addon.py Addon 安装与版本管理：src/blender_mcp/addon_manager.py 安全模式：src/blender_mcp/safe_mode.py 程序入口：main.py 本文中的流程图使用 Mermaid 语法。支持 Mermaid 的 Markdown 查看器可以直接渲染；不支持时仍可根据节点文字阅读流程。
+1. 系统总体架构 系统由两段通信组成：
+MCP 协议通信：LLM Client ↔ MCP Server 内部 TCP/JSON 通信：MCP Server ↔ Blender Addon flowchart TBU["用户自然语言请求"]C["LLM Client：Claude / Cursor / VS Code / Codex"]M["MCP Server：server.py"]A["Blender Addon：addon.py"]B["Blender 主线程：bpy / bpy.ops / bpy.data"]S["Blender 场景"]U --> CC --> MM --> AA --> BB --> SB --> AA --> MM --> CC --> UclassDef user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43classDef mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235AclassDef blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512class U,C userclass M mcpclass A,B,S blender1.1 各模块职责 模块 文件 主要职责 程序入口 main.py 调用 blender_mcp.server.main() MCP Server src/blender_mcp/server.py 注册 MCP Tools/Prompts，处理 MCP 请求，与 Blender 建立持久 TCP 连接 连接层 BlenderConnection 将 Tool 调用转成 JSON，通过 Socket 发送并读取完整响应 Blender Addon Server BlenderMCPServer 在 Blender 内监听 TCP 端口，接收外部命令 命令队列 command_queue 将 Socket 线程收到的命令转交 Blender 主线程 命令分发器 _execute_command_internal() 按 command.type 找到对应处理函数 Blender 执行器 execute_code() 和各类 Handler 调用 bpy、执行脚本、获取场景信息、导入资源等 安全模式 safe_mode.py 可选地对 execute_blender_code 做 AST allowlist 校验 Addon 管理器 addon_manager.py 安装 Addon、发现安装目录、协议版本握手 遥测/轨迹 telemetry.py、trajectory.py 等 记录工具调用、场景轨迹和用户反馈，受用户同意状态控制 2. 启动流程 MCP Server 和 Blender Addon 是两个独立进程/运行环境中的组件。通常先启动 MCP Client，再由 Client 拉起 MCP Server；Blender Addon 则需要用户在 Blender 中启用并点击连接。
+sequenceDiagramparticipant Client as MCP Clientparticipant Entry as main.pyparticipant Server as server.py / FastMCPparticipant Blender as Blender Addonparticipant Scene as Blender 主线程Client->>Entry: 执行 uvx blender-mcpEntry->>Server: 调用 server_main()Server->>Server: 创建 FastMCP("BlenderMCP")Server->>Server: 注册 Tools 和 PromptsServer->>Server: mcp.run()，等待 MCP stdio 请求Note over Blender: 用户在 Blender 中启用 AddonBlender->>Blender: 点击 Start MCP ServerBlender->>Blender: bind localhost:9876Blender->>Blender: 启动 _server_loop() 线程Blender->>Scene: 注册 _drain_command_queue() TimerServer->>Blender: 建立 TCP 连接 localhost:9876Server->>Blender: 发送 get_addon_infoBlender->>Scene: 通过队列在主线程执行Scene-->>Blender: 返回协议版本和能力Blender-->>Server: handshake responseServer->>Server: 校验 Addon protocol version2.1 MCP Server 入口 pyproject.toml 中定义了命令入口：
+[project.scripts] blender-mcp = "blender_mcp.server:main" main.py 只是一个包装入口：
+from blender_mcp.server import main as server_main def main(): server_main() 真正的启动逻辑位于 src/blender_mcp/server.py：
+mcp.run() FastMCP 负责 MCP 协议层的初始化、工具注册、请求解析和响应封装。
+2.2 Blender Addon 入口 Blender 中点击连接按钮后，执行：
+BLENDERMCP_OT_StartServer.execute() 该函数创建并启动：
+bpy.types.blendermcp_server = BlenderMCPServer( port=scene.blendermcp_port ) bpy.types.blendermcp_server.start() Addon 默认监听：
+host: localhost port: 9876 Addon 不支持 blender -b 后台模式，因为后台模式没有正常的 Blender UI 主线程事件循环，命令队列无法按照预期执行。
+3. 用户提问到 Tool 调用流程 用户的自然语言不会直接发送给 Blender。LLM 先根据 MCP Server 暴露的 Tool 名称、参数 Schema 和 docstring 判断应该调用哪个工具。
+flowchart TBQ["用户提问\n例如：创建一个红色立方体"]L["LLM 分析意图"]D["MCP Client 已发现的 Tool 列表"]T{""选择 Tool""}O["get_scene_info\n读取场景"]V["get_viewport_screenshot\n读取视口"]E["execute_blender_code\n执行 Blender Python"]A["资源类 Tool\n搜索/下载/导入"]R["LLM 读取 Tool 返回结果"]N{""是否需要继续修正?""}F["向用户回答完成"]Q --> LD --> LL --> TT --> OT --> VT --> ET --> AO --> RV --> RE --> RA --> RR --> NN -->|是| LN -->|否| F%% GitHub-compatible module colorsclassDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235AclassDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717class Q module_userclass L module_userclass D module_userclass T module_mcpclass O module_blenderclass V module_blenderclass E module_blenderclass A module_mcpclass R module_userclass N module_resultclass F module_user3.1 Tool 注册 Server 通过装饰器注册工具：
+@mcp.tool() async def get_scene_info(ctx: Context, user_prompt: str = "") -> str: ... @mcp.tool() async def execute_blender_code( ctx: Context, code: str, user_prompt: str = "" ) -> str: ... LLM 可见的信息通常包括：
+Tool 名称 参数名称 参数类型 默认值和必填信息 docstring 中的使用说明 user_prompt 用于保留用户原始意图，便于多步操作中的遥测、轨迹记录和结果关联；它不是 Blender 命令本身。
+3.2 MCP 层的抽象调用 概念上的 MCP 请求如下：
+{ "jsonrpc": "2.0", "id": 10, "method": "tools/call", "params": { "name": "get_scene_info", "arguments": { "user_prompt": "创建一个红色立方体" } } } FastMCP 将该请求路由到：
+get_scene_info(ctx, user_prompt="创建一个红色立方体") 此时仍然处于 MCP Server 进程中，还没有进入 Blender。
+4. MCP Server 到 Blender Addon 的 TCP/JSON 流程 MCP Tool 函数内部通过 get_blender_connection() 获取持久连接，然后调用：
+blender.send_command(command_type, params) sequenceDiagramparticipant Tool as MCP Toolparticipant Conn as BlenderConnectionparticipant Socket as TCP Socketparticipant Addon as Blender Addon Client Handlerparticipant Queue as command_queueparticipant Timer as Blender TimerTool->>Conn: send_command("get_scene_info", {})Conn->>Conn: 获取 _lockConn->>Conn: 确认 socket 已连接Conn->>Conn: 构造 command JSONConn->>Socket: sendall(UTF-8 JSON)Socket->>Addon: recv(8192)Addon->>Addon: buffer += dataAddon->>Addon: json.loads(buffer)Addon->>Queue: put((command, client))Timer->>Queue: get_nowait()Timer->>Addon: execute_command(command)Addon-->>Socket: sendall(response JSON)Socket-->>Conn: recv() 分块数据Conn->>Conn: 持续拼接并解析完整 JSONConn-->>Tool: 返回 response["result"]4.1 发送的内部命令格式 Server 统一构造：
+command = { "type": command_type, "params": params or {} } 例如：
+{ "type": "get_object_info", "params": { "name": "Cube" } } 执行 Blender Python 时：'><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-09-11T09:09:15+00:00"><meta property="article:modified_time" content="2026-09-11T09:09:15+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="MCP for Blender 内部流程：从自然语言到 Blender 执行"><meta name=twitter:description content='MCP for Blender 内部流程说明 本文说明当前项目中“用户通过自然语言提问，LLM 调用 MCP，再驱动 Blender 执行操作”的完整内部流程。
+代码范围：
+MCP Server：src/blender_mcp/server.py Blender Addon：src/blender_mcp/bundled/addon.py Addon 安装与版本管理：src/blender_mcp/addon_manager.py 安全模式：src/blender_mcp/safe_mode.py 程序入口：main.py 本文中的流程图使用 Mermaid 语法。支持 Mermaid 的 Markdown 查看器可以直接渲染；不支持时仍可根据节点文字阅读流程。
+1. 系统总体架构 系统由两段通信组成：
+MCP 协议通信：LLM Client ↔ MCP Server 内部 TCP/JSON 通信：MCP Server ↔ Blender Addon flowchart TBU["用户自然语言请求"]C["LLM Client：Claude / Cursor / VS Code / Codex"]M["MCP Server：server.py"]A["Blender Addon：addon.py"]B["Blender 主线程：bpy / bpy.ops / bpy.data"]S["Blender 场景"]U --> CC --> MM --> AA --> BB --> SB --> AA --> MM --> CC --> UclassDef user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43classDef mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235AclassDef blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512class U,C userclass M mcpclass A,B,S blender1.1 各模块职责 模块 文件 主要职责 程序入口 main.py 调用 blender_mcp.server.main() MCP Server src/blender_mcp/server.py 注册 MCP Tools/Prompts，处理 MCP 请求，与 Blender 建立持久 TCP 连接 连接层 BlenderConnection 将 Tool 调用转成 JSON，通过 Socket 发送并读取完整响应 Blender Addon Server BlenderMCPServer 在 Blender 内监听 TCP 端口，接收外部命令 命令队列 command_queue 将 Socket 线程收到的命令转交 Blender 主线程 命令分发器 _execute_command_internal() 按 command.type 找到对应处理函数 Blender 执行器 execute_code() 和各类 Handler 调用 bpy、执行脚本、获取场景信息、导入资源等 安全模式 safe_mode.py 可选地对 execute_blender_code 做 AST allowlist 校验 Addon 管理器 addon_manager.py 安装 Addon、发现安装目录、协议版本握手 遥测/轨迹 telemetry.py、trajectory.py 等 记录工具调用、场景轨迹和用户反馈，受用户同意状态控制 2. 启动流程 MCP Server 和 Blender Addon 是两个独立进程/运行环境中的组件。通常先启动 MCP Client，再由 Client 拉起 MCP Server；Blender Addon 则需要用户在 Blender 中启用并点击连接。
+sequenceDiagramparticipant Client as MCP Clientparticipant Entry as main.pyparticipant Server as server.py / FastMCPparticipant Blender as Blender Addonparticipant Scene as Blender 主线程Client->>Entry: 执行 uvx blender-mcpEntry->>Server: 调用 server_main()Server->>Server: 创建 FastMCP("BlenderMCP")Server->>Server: 注册 Tools 和 PromptsServer->>Server: mcp.run()，等待 MCP stdio 请求Note over Blender: 用户在 Blender 中启用 AddonBlender->>Blender: 点击 Start MCP ServerBlender->>Blender: bind localhost:9876Blender->>Blender: 启动 _server_loop() 线程Blender->>Scene: 注册 _drain_command_queue() TimerServer->>Blender: 建立 TCP 连接 localhost:9876Server->>Blender: 发送 get_addon_infoBlender->>Scene: 通过队列在主线程执行Scene-->>Blender: 返回协议版本和能力Blender-->>Server: handshake responseServer->>Server: 校验 Addon protocol version2.1 MCP Server 入口 pyproject.toml 中定义了命令入口：
+[project.scripts] blender-mcp = "blender_mcp.server:main" main.py 只是一个包装入口：
+from blender_mcp.server import main as server_main def main(): server_main() 真正的启动逻辑位于 src/blender_mcp/server.py：
+mcp.run() FastMCP 负责 MCP 协议层的初始化、工具注册、请求解析和响应封装。
+2.2 Blender Addon 入口 Blender 中点击连接按钮后，执行：
+BLENDERMCP_OT_StartServer.execute() 该函数创建并启动：
+bpy.types.blendermcp_server = BlenderMCPServer( port=scene.blendermcp_port ) bpy.types.blendermcp_server.start() Addon 默认监听：
+host: localhost port: 9876 Addon 不支持 blender -b 后台模式，因为后台模式没有正常的 Blender UI 主线程事件循环，命令队列无法按照预期执行。
+3. 用户提问到 Tool 调用流程 用户的自然语言不会直接发送给 Blender。LLM 先根据 MCP Server 暴露的 Tool 名称、参数 Schema 和 docstring 判断应该调用哪个工具。
+flowchart TBQ["用户提问\n例如：创建一个红色立方体"]L["LLM 分析意图"]D["MCP Client 已发现的 Tool 列表"]T{""选择 Tool""}O["get_scene_info\n读取场景"]V["get_viewport_screenshot\n读取视口"]E["execute_blender_code\n执行 Blender Python"]A["资源类 Tool\n搜索/下载/导入"]R["LLM 读取 Tool 返回结果"]N{""是否需要继续修正?""}F["向用户回答完成"]Q --> LD --> LL --> TT --> OT --> VT --> ET --> AO --> RV --> RE --> RA --> RR --> NN -->|是| LN -->|否| F%% GitHub-compatible module colorsclassDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235AclassDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717class Q module_userclass L module_userclass D module_userclass T module_mcpclass O module_blenderclass V module_blenderclass E module_blenderclass A module_mcpclass R module_userclass N module_resultclass F module_user3.1 Tool 注册 Server 通过装饰器注册工具：
+@mcp.tool() async def get_scene_info(ctx: Context, user_prompt: str = "") -> str: ... @mcp.tool() async def execute_blender_code( ctx: Context, code: str, user_prompt: str = "" ) -> str: ... LLM 可见的信息通常包括：
+Tool 名称 参数名称 参数类型 默认值和必填信息 docstring 中的使用说明 user_prompt 用于保留用户原始意图，便于多步操作中的遥测、轨迹记录和结果关联；它不是 Blender 命令本身。
+3.2 MCP 层的抽象调用 概念上的 MCP 请求如下：
+{ "jsonrpc": "2.0", "id": 10, "method": "tools/call", "params": { "name": "get_scene_info", "arguments": { "user_prompt": "创建一个红色立方体" } } } FastMCP 将该请求路由到：
+get_scene_info(ctx, user_prompt="创建一个红色立方体") 此时仍然处于 MCP Server 进程中，还没有进入 Blender。
+4. MCP Server 到 Blender Addon 的 TCP/JSON 流程 MCP Tool 函数内部通过 get_blender_connection() 获取持久连接，然后调用：
+blender.send_command(command_type, params) sequenceDiagramparticipant Tool as MCP Toolparticipant Conn as BlenderConnectionparticipant Socket as TCP Socketparticipant Addon as Blender Addon Client Handlerparticipant Queue as command_queueparticipant Timer as Blender TimerTool->>Conn: send_command("get_scene_info", {})Conn->>Conn: 获取 _lockConn->>Conn: 确认 socket 已连接Conn->>Conn: 构造 command JSONConn->>Socket: sendall(UTF-8 JSON)Socket->>Addon: recv(8192)Addon->>Addon: buffer += dataAddon->>Addon: json.loads(buffer)Addon->>Queue: put((command, client))Timer->>Queue: get_nowait()Timer->>Addon: execute_command(command)Addon-->>Socket: sendall(response JSON)Socket-->>Conn: recv() 分块数据Conn->>Conn: 持续拼接并解析完整 JSONConn-->>Tool: 返回 response["result"]4.1 发送的内部命令格式 Server 统一构造：
+command = { "type": command_type, "params": params or {} } 例如：
+{ "type": "get_object_info", "params": { "name": "Cube" } } 执行 Blender Python 时：'><meta name=application-name content="随手记录"><meta name=apple-mobile-web-app-title content="随手记录"><meta name=referrer content="strict-origin-when-cross-origin"><meta name=theme-color content="#42b983"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://trianglestrip.github.io/posts/d-35/><link rel=prev href=https://trianglestrip.github.io/posts/d-28/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"MCP for Blender 内部流程：从自然语言到 Blender 执行","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/trianglestrip.github.io\/posts\/d-35\/"},"genre":"posts","wordcount":7009,"url":"https:\/\/trianglestrip.github.io\/posts\/d-35\/","datePublished":"2026-09-11T09:09:15+00:00","dateModified":"2026-09-11T09:09:15+00:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"xxxx"},"description":""}</script><script>var _hmt=_hmt||[];(function(){var e,t=document.createElement("script");t.src="https://hm.baidu.com/hm.js?8ca36c3739321aa5b1917cdce386d850",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e)})()</script></head><body data-header-desktop=fixed data-header-mobile=auto><script>const query=window.matchMedia("(prefers-color-scheme: dark)");function applyTheme(){let e=window.localStorage?.getItem("theme")||"auto",t=e==="dark"||e==="auto"&&query.matches;document.body.setAttribute("theme",t?"dark":"light"),document.body.setAttribute("cfg-theme",e)}applyTheme(),query.addEventListener("change",applyTheme)</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=随手记录>随手记录</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/notes/>随手记 </a><a class=menu-item href=/news/>热榜 </a><a class=menu-item href=/live/>直播 </a><a class=menu-item href=/about/>关于 </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=随手记录>随手记录</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/notes/ title>随手记</a><a class=menu-item href=/news/ title>热榜</a><a class=menu-item href=/live/ title>直播</a><a class=menu-item href=/about/ title>关于</a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust" aria-hidden=true></i></a></div></div></header><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">MCP for Blender 内部流程：从自然语言到 Blender 执行</h1><div class=post-meta><div class=post-meta-line></div><div class=post-meta-line><i class="far fa-calendar-alt" aria-hidden=true></i>&nbsp;<time datetime=2026-09-11>2026-09-11</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden=true></i>&nbsp;约 7009 字&nbsp;
+<i class="far fa-clock" aria-hidden=true></i>&nbsp;预计阅读 15 分钟&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#1-系统总体架构>1. 系统总体架构</a><ul><li><a href=#11-各模块职责>1.1 各模块职责</a></li></ul></li><li><a href=#2-启动流程>2. 启动流程</a><ul><li><a href=#21-mcp-server-入口>2.1 MCP Server 入口</a></li><li><a href=#22-blender-addon-入口>2.2 Blender Addon 入口</a></li></ul></li><li><a href=#3-用户提问到-tool-调用流程>3. 用户提问到 Tool 调用流程</a><ul><li><a href=#31-tool-注册>3.1 Tool 注册</a></li><li><a href=#32-mcp-层的抽象调用>3.2 MCP 层的抽象调用</a></li></ul></li><li><a href=#4-mcp-server-到-blender-addon-的-tcpjson-流程>4. MCP Server 到 Blender Addon 的 TCP/JSON 流程</a><ul><li><a href=#41-发送的内部命令格式>4.1 发送的内部命令格式</a></li><li><a href=#42-server-侧连接复用>4.2 Server 侧连接复用</a></li></ul></li><li><a href=#5-blender-addon-的线程模型>5. Blender Addon 的线程模型</a><ul><li><a href=#51-socket-接收线程>5.1 Socket 接收线程</a></li><li><a href=#52-blender-主线程队列>5.2 Blender 主线程队列</a></li><li><a href=#53-为什么采用队列>5.3 为什么采用队列</a></li></ul></li><li><a href=#6-blender-命令分发流程>6. Blender 命令分发流程</a></li><li><a href=#7-直接执行-blender-python-的流程>7. 直接执行 Blender Python 的流程</a><ul><li><a href=#71-示例>7.1 示例</a></li><li><a href=#72-安全模式>7.2 安全模式</a></li></ul></li><li><a href=#8-场景观察流程>8. 场景观察流程</a><ul><li><a href=#81-get_scene_info>8.1 <code>get_scene_info</code></a></li><li><a href=#82-get_object_info>8.2 <code>get_object_info</code></a></li><li><a href=#83-get_viewport_screenshot>8.3 <code>get_viewport_screenshot</code></a></li></ul></li><li><a href=#9-资源搜索下载和导入流程>9. 资源搜索、下载和导入流程</a><ul><li><a href=#91-poly-haven--sketchfab--poly-pizza>9.1 Poly Haven / Sketchfab / Poly Pizza</a></li><li><a href=#92-ai-生成模型>9.2 AI 生成模型</a></li></ul></li><li><a href=#10-响应返回流程>10. 响应返回流程</a></li><li><a href=#11-错误处理与重连流程>11. 错误处理与重连流程</a></li><li><a href=#12-addon-版本握手和安装流程>12. Addon 版本握手和安装流程</a><ul><li><a href=#121-addon-安装流程>12.1 Addon 安装流程</a></li><li><a href=#122-版本握手流程>12.2 版本握手流程</a></li></ul></li><li><a href=#13-telemetry-和-trajectory-模块>13. Telemetry 和 Trajectory 模块</a></li><li><a href=#14-一次完整请求示例>14. 一次完整请求示例</a></li><li><a href=#15-核心时序总结>15. 核心时序总结</a></li></ul></nav></div></div><div class=content id=content><h1 id=mcp-for-blender-内部流程说明>MCP for Blender 内部流程说明</h1><p>本文说明当前项目中“用户通过自然语言提问，LLM 调用 MCP，再驱动 Blender 执行操作”的完整内部流程。</p><blockquote><p>代码范围：</p><ul><li>MCP Server：<code>src/blender_mcp/server.py</code></li><li>Blender Addon：<code>src/blender_mcp/bundled/addon.py</code></li><li>Addon 安装与版本管理：<code>src/blender_mcp/addon_manager.py</code></li><li>安全模式：<code>src/blender_mcp/safe_mode.py</code></li><li>程序入口：<code>main.py</code></li></ul><p>本文中的流程图使用 Mermaid 语法。支持 Mermaid 的 Markdown 查看器可以直接渲染；不支持时仍可根据节点文字阅读流程。</p></blockquote><hr><h2 id=1-系统总体架构>1. 系统总体架构</h2><p>系统由两段通信组成：</p><ol><li><strong>MCP 协议通信</strong>：LLM Client ↔ MCP Server</li><li><strong>内部 TCP/JSON 通信</strong>：MCP Server ↔ Blender Addon</li></ol><div class=mermaid id=id-1>flowchart TB
+U["用户自然语言请求"]
+C["LLM Client：Claude / Cursor / VS Code / Codex"]
+M["MCP Server：server.py"]
+A["Blender Addon：addon.py"]
+B["Blender 主线程：bpy / bpy.ops / bpy.data"]
+S["Blender 场景"]
+U --> C
+C --> M
+M --> A
+A --> B
+B --> S
+B --> A
+A --> M
+M --> C
+C --> U
+classDef user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+class U,C user
+class M mcp
+class A,B,S blender</div><h3 id=11-各模块职责>1.1 各模块职责</h3><table><thead><tr><th>模块</th><th>文件</th><th>主要职责</th></tr></thead><tbody><tr><td>程序入口</td><td><code>main.py</code></td><td>调用 <code>blender_mcp.server.main()</code></td></tr><tr><td>MCP Server</td><td><code>src/blender_mcp/server.py</code></td><td>注册 MCP Tools/Prompts，处理 MCP 请求，与 Blender 建立持久 TCP 连接</td></tr><tr><td>连接层</td><td><code>BlenderConnection</code></td><td>将 Tool 调用转成 JSON，通过 Socket 发送并读取完整响应</td></tr><tr><td>Blender Addon Server</td><td><code>BlenderMCPServer</code></td><td>在 Blender 内监听 TCP 端口，接收外部命令</td></tr><tr><td>命令队列</td><td><code>command_queue</code></td><td>将 Socket 线程收到的命令转交 Blender 主线程</td></tr><tr><td>命令分发器</td><td><code>_execute_command_internal()</code></td><td>按 <code>command.type</code> 找到对应处理函数</td></tr><tr><td>Blender 执行器</td><td><code>execute_code()</code> 和各类 Handler</td><td>调用 <code>bpy</code>、执行脚本、获取场景信息、导入资源等</td></tr><tr><td>安全模式</td><td><code>safe_mode.py</code></td><td>可选地对 <code>execute_blender_code</code> 做 AST allowlist 校验</td></tr><tr><td>Addon 管理器</td><td><code>addon_manager.py</code></td><td>安装 Addon、发现安装目录、协议版本握手</td></tr><tr><td>遥测/轨迹</td><td><code>telemetry.py</code>、<code>trajectory.py</code> 等</td><td>记录工具调用、场景轨迹和用户反馈，受用户同意状态控制</td></tr></tbody></table><hr><h2 id=2-启动流程>2. 启动流程</h2><p>MCP Server 和 Blender Addon 是两个独立进程/运行环境中的组件。通常先启动 MCP Client，再由 Client 拉起 MCP Server；Blender Addon 则需要用户在 Blender 中启用并点击连接。</p><div class=mermaid id=id-2>sequenceDiagram
+participant Client as MCP Client
+participant Entry as main.py
+participant Server as server.py / FastMCP
+participant Blender as Blender Addon
+participant Scene as Blender 主线程
+Client->>Entry: 执行 uvx blender-mcp
+Entry->>Server: 调用 server_main()
+Server->>Server: 创建 FastMCP("BlenderMCP")
+Server->>Server: 注册 Tools 和 Prompts
+Server->>Server: mcp.run()，等待 MCP stdio 请求
+Note over Blender: 用户在 Blender 中启用 Addon
+Blender->>Blender: 点击 Start MCP Server
+Blender->>Blender: bind localhost:9876
+Blender->>Blender: 启动 _server_loop() 线程
+Blender->>Scene: 注册 _drain_command_queue() Timer
+Server->>Blender: 建立 TCP 连接 localhost:9876
+Server->>Blender: 发送 get_addon_info
+Blender->>Scene: 通过队列在主线程执行
+Scene-->>Blender: 返回协议版本和能力
+Blender-->>Server: handshake response
+Server->>Server: 校验 Addon protocol version</div><h3 id=21-mcp-server-入口>2.1 MCP Server 入口</h3><p><code>pyproject.toml</code> 中定义了命令入口：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-toml"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=p>[</span><span class=nx>project</span><span class=p>.</span><span class=nx>scripts</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=nx>blender-mcp</span> <span class=p>=</span> <span class=s2>&#34;blender_mcp.server:main&#34;</span></span></span></code></pre></div></div><p><code>main.py</code> 只是一个包装入口：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>from</span> <span class=nn>blender_mcp.server</span> <span class=kn>import</span> <span class=n>main</span> <span class=k>as</span> <span class=n>server_main</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>main</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>server_main</span><span class=p>()</span></span></span></code></pre></div></div><p>真正的启动逻辑位于 <code>src/blender_mcp/server.py</code>：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>mcp</span><span class=o>.</span><span class=n>run</span><span class=p>()</span></span></span></code></pre></div></div><p><code>FastMCP</code> 负责 MCP 协议层的初始化、工具注册、请求解析和响应封装。</p><h3 id=22-blender-addon-入口>2.2 Blender Addon 入口</h3><p>Blender 中点击连接按钮后，执行：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>BLENDERMCP_OT_StartServer</span><span class=o>.</span><span class=n>execute</span><span class=p>()</span></span></span></code></pre></div></div><p>该函数创建并启动：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>bpy</span><span class=o>.</span><span class=n>types</span><span class=o>.</span><span class=n>blendermcp_server</span> <span class=o>=</span> <span class=n>BlenderMCPServer</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>port</span><span class=o>=</span><span class=n>scene</span><span class=o>.</span><span class=n>blendermcp_port</span>
+</span></span><span class=line><span class=cl><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>bpy</span><span class=o>.</span><span class=n>types</span><span class=o>.</span><span class=n>blendermcp_server</span><span class=o>.</span><span class=n>start</span><span class=p>()</span></span></span></code></pre></div></div><p>Addon 默认监听：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>host: localhost
+</span></span><span class=line><span class=cl>port: 9876</span></span></code></pre></div></div><p>Addon 不支持 <code>blender -b</code> 后台模式，因为后台模式没有正常的 Blender UI 主线程事件循环，命令队列无法按照预期执行。</p><hr><h2 id=3-用户提问到-tool-调用流程>3. 用户提问到 Tool 调用流程</h2><p>用户的自然语言不会直接发送给 Blender。LLM 先根据 MCP Server 暴露的 Tool 名称、参数 Schema 和 docstring 判断应该调用哪个工具。</p><div class=mermaid id=id-3>flowchart TB
+Q["用户提问\n例如：创建一个红色立方体"]
+L["LLM 分析意图"]
+D["MCP Client 已发现的 Tool 列表"]
+T{""选择 Tool""}
+O["get_scene_info\n读取场景"]
+V["get_viewport_screenshot\n读取视口"]
+E["execute_blender_code\n执行 Blender Python"]
+A["资源类 Tool\n搜索/下载/导入"]
+R["LLM 读取 Tool 返回结果"]
+N{""是否需要继续修正?""}
+F["向用户回答完成"]
+Q --> L
+D --> L
+L --> T
+T --> O
+T --> V
+T --> E
+T --> A
+O --> R
+V --> R
+E --> R
+A --> R
+R --> N
+N -->|是| L
+N -->|否| F
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class Q module_user
+class L module_user
+class D module_user
+class T module_mcp
+class O module_blender
+class V module_blender
+class E module_blender
+class A module_mcp
+class R module_user
+class N module_result
+class F module_user</div><h3 id=31-tool-注册>3.1 Tool 注册</h3><p>Server 通过装饰器注册工具：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nd>@mcp.tool</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=k>async</span> <span class=k>def</span> <span class=nf>get_scene_info</span><span class=p>(</span><span class=n>ctx</span><span class=p>:</span> <span class=n>Context</span><span class=p>,</span> <span class=n>user_prompt</span><span class=p>:</span> <span class=nb>str</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>str</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=o>...</span></span></span></code></pre></div></div><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nd>@mcp.tool</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=k>async</span> <span class=k>def</span> <span class=nf>execute_blender_code</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>ctx</span><span class=p>:</span> <span class=n>Context</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>code</span><span class=p>:</span> <span class=nb>str</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>user_prompt</span><span class=p>:</span> <span class=nb>str</span> <span class=o>=</span> <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>str</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=o>...</span></span></span></code></pre></div></div><p>LLM 可见的信息通常包括：</p><ul><li>Tool 名称</li><li>参数名称</li><li>参数类型</li><li>默认值和必填信息</li><li>docstring 中的使用说明</li></ul><p><code>user_prompt</code> 用于保留用户原始意图，便于多步操作中的遥测、轨迹记录和结果关联；它不是 Blender 命令本身。</p><h3 id=32-mcp-层的抽象调用>3.2 MCP 层的抽象调用</h3><p>概念上的 MCP 请求如下：</p><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-json"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;jsonrpc&#34;</span><span class=p>:</span> <span class=s2>&#34;2.0&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;id&#34;</span><span class=p>:</span> <span class=mi>10</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;method&#34;</span><span class=p>:</span> <span class=s2>&#34;tools/call&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;params&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;get_scene_info&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;arguments&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nt>&#34;user_prompt&#34;</span><span class=p>:</span> <span class=s2>&#34;创建一个红色立方体&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>FastMCP 将该请求路由到：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>get_scene_info</span><span class=p>(</span><span class=n>ctx</span><span class=p>,</span> <span class=n>user_prompt</span><span class=o>=</span><span class=s2>&#34;创建一个红色立方体&#34;</span><span class=p>)</span></span></span></code></pre></div></div><p>此时仍然处于 MCP Server 进程中，还没有进入 Blender。</p><hr><h2 id=4-mcp-server-到-blender-addon-的-tcpjson-流程>4. MCP Server 到 Blender Addon 的 TCP/JSON 流程</h2><p>MCP Tool 函数内部通过 <code>get_blender_connection()</code> 获取持久连接，然后调用：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>blender</span><span class=o>.</span><span class=n>send_command</span><span class=p>(</span><span class=n>command_type</span><span class=p>,</span> <span class=n>params</span><span class=p>)</span></span></span></code></pre></div></div><div class=mermaid id=id-4>sequenceDiagram
+participant Tool as MCP Tool
+participant Conn as BlenderConnection
+participant Socket as TCP Socket
+participant Addon as Blender Addon Client Handler
+participant Queue as command_queue
+participant Timer as Blender Timer
+Tool->>Conn: send_command("get_scene_info", {})
+Conn->>Conn: 获取 _lock
+Conn->>Conn: 确认 socket 已连接
+Conn->>Conn: 构造 command JSON
+Conn->>Socket: sendall(UTF-8 JSON)
+Socket->>Addon: recv(8192)
+Addon->>Addon: buffer += data
+Addon->>Addon: json.loads(buffer)
+Addon->>Queue: put((command, client))
+Timer->>Queue: get_nowait()
+Timer->>Addon: execute_command(command)
+Addon-->>Socket: sendall(response JSON)
+Socket-->>Conn: recv() 分块数据
+Conn->>Conn: 持续拼接并解析完整 JSON
+Conn-->>Tool: 返回 response["result"]</div><h3 id=41-发送的内部命令格式>4.1 发送的内部命令格式</h3><p>Server 统一构造：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>command</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;type&#34;</span><span class=p>:</span> <span class=n>command_type</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;params&#34;</span><span class=p>:</span> <span class=n>params</span> <span class=ow>or</span> <span class=p>{}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>例如：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-json"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;type&#34;</span><span class=p>:</span> <span class=s2>&#34;get_object_info&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;params&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;Cube&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>执行 Blender Python 时：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-json"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;type&#34;</span><span class=p>:</span> <span class=s2>&#34;execute_code&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;params&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;code&#34;</span><span class=p>:</span> <span class=s2>&#34;import bpy\n...&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>内部 TCP 协议目前依赖请求/响应顺序，没有显式的 command ID。为防止多个请求在同一个 TCP 流中交错，<code>BlenderConnection.send_command()</code> 使用 <code>_lock</code> 将发送和接收整体串行化。</p><h3 id=42-server-侧连接复用>4.2 Server 侧连接复用</h3><p>Server 使用全局变量保存连接：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>_blender_connection</span> <span class=o>=</span> <span class=kc>None</span></span></span></code></pre></div></div><p>正常情况下：</p><ol><li>第一次 Tool 调用时创建 <code>BlenderConnection</code></li><li>连接到 <code>localhost:9876</code></li><li>后续 Tool 调用复用同一个 Socket</li><li>如果连接断开，下一次真实命令触发重新连接</li></ol><p>Server 不会在每次 Tool 调用前额外发送探测命令，避免探测请求和实际请求造成响应流错位。</p><hr><h2 id=5-blender-addon-的线程模型>5. Blender Addon 的线程模型</h2><p>Blender Addon 将网络 I/O 和 Blender 数据访问分离。</p><div class=mermaid id=id-5>flowchart TB
+SS["Addon Socket Server\n_server_loop 线程"]
+AC["客户端处理线程\n_handle_client"]
+Q["queue.Queue\ncommand_queue"]
+BT["Blender 主线程 Timer\n_drain_command_queue"]
+EX["execute_command"]
+BP["bpy 数据/API"]
+RESP["client.sendall(response)"]
+SS -->|accept()| AC
+AC -->|解析完整 JSON| Q
+Q -->|每 0.05 秒取出| BT
+BT --> EX
+EX --> BP
+BP --> EX
+EX --> RESP
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class SS module_transport
+class AC module_user
+class Q module_transport
+class BT module_transport
+class EX module_result
+class BP module_blender
+class RESP module_user</div><h3 id=51-socket-接收线程>5.1 Socket 接收线程</h3><p><code>_server_loop()</code> 负责接受客户端：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>client</span><span class=p>,</span> <span class=n>address</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>socket</span><span class=o>.</span><span class=n>accept</span><span class=p>()</span></span></span></code></pre></div></div><p>每个客户端连接由独立线程处理：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>threading</span><span class=o>.</span><span class=n>Thread</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>target</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_handle_client</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>args</span><span class=o>=</span><span class=p>(</span><span class=n>client</span><span class=p>,)</span>
+</span></span><span class=line><span class=cl><span class=p>)</span></span></span></code></pre></div></div><p><code>_handle_client()</code> 的职责只有：</p><ol><li>接收字节流</li><li>拼接到 <code>buffer</code></li><li>尝试解析 JSON</li><li>将命令放入 <code>command_queue</code></li></ol><p>它不会直接调用 <code>bpy</code>。</p><h3 id=52-blender-主线程队列>5.2 Blender 主线程队列</h3><p>Addon 启动时注册：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>bpy</span><span class=o>.</span><span class=n>app</span><span class=o>.</span><span class=n>timers</span><span class=o>.</span><span class=n>register</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=bp>self</span><span class=o>.</span><span class=n>_drain_command_queue</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>persistent</span><span class=o>=</span><span class=kc>True</span>
+</span></span><span class=line><span class=cl><span class=p>)</span></span></span></code></pre></div></div><p>Timer 每隔约 <code>0.05</code> 秒运行：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>command</span><span class=p>,</span> <span class=n>client</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>command_queue</span><span class=o>.</span><span class=n>get_nowait</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>response</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>execute_command</span><span class=p>(</span><span class=n>command</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>client</span><span class=o>.</span><span class=n>sendall</span><span class=p>(</span><span class=n>response_json</span><span class=o>.</span><span class=n>encode</span><span class=p>(</span><span class=s2>&#34;utf-8&#34;</span><span class=p>))</span></span></span></code></pre></div></div><p>这样可以保证实际的 <code>bpy</code> 访问发生在 Blender 主线程中。</p><h3 id=53-为什么采用队列>5.3 为什么采用队列</h3><p>如果 Socket 线程直接执行：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>bpy</span><span class=o>.</span><span class=n>ops</span><span class=o>.</span><span class=n>mesh</span><span class=o>.</span><span class=n>primitive_cube_add</span><span class=p>(</span><span class=o>...</span><span class=p>)</span></span></span></code></pre></div></div><p>可能发生 Blender API 的线程安全问题。当前实现使用：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>网络线程负责接收
+</span></span><span class=line><span class=cl>主线程负责 Blender 操作
+</span></span><span class=line><span class=cl>网络线程/主线程之间使用 Queue 传递命令</span></span></code></pre></div></div><hr><h2 id=6-blender-命令分发流程>6. Blender 命令分发流程</h2><div class=mermaid id=id-6>flowchart TB
+C["command JSON"]
+P["读取 command.type 和 command.params"]
+Ping{""type == ping?""}
+H["构造 handlers 映射"]
+E{""集成是否启用?""}
+B["基础 Handler"]
+PH["Poly Haven Handler"]
+SK["Sketchfab Handler"]
+PP["Poly Pizza Handler"]
+H3["Hyper3D Handler"]
+HY["Hunyuan3D Handler"]
+F["查找 handlers[cmd_type"]"]
+X["handler(**params)"]
+OK["包装为 status=success"]
+ERR["包装为 status=error"]
+OUT["返回 JSON"]
+C --> P
+P --> Ping
+Ping -->|是| OK
+Ping -->|否| H
+H --> E
+E --> B
+E --> PH
+E --> SK
+E --> PP
+E --> H3
+E --> HY
+B --> F
+PH --> F
+SK --> F
+PP --> F
+H3 --> F
+HY --> F
+F --> X
+X -->|成功| OK
+X -->|异常| ERR
+OK --> OUT
+ERR --> OUT
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class C module_transport
+class P module_result
+class Ping module_result
+class H module_blender
+class E module_result
+class B module_blender
+class PH module_blender
+class SK module_blender
+class PP module_blender
+class H3 module_blender
+class HY module_blender
+class F module_blender
+class X module_blender
+class OK module_result
+class ERR module_error
+class OUT module_transport</div><p>核心函数：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>_execute_command_internal</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>command</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>cmd_type</span> <span class=o>=</span> <span class=n>command</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=s2>&#34;type&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>params</span> <span class=o>=</span> <span class=n>command</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=s2>&#34;params&#34;</span><span class=p>,</span> <span class=p>{})</span></span></span></code></pre></div></div><p>基础 Handler 示例：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>handlers</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;get_scene_info&#34;</span><span class=p>:</span> <span class=bp>self</span><span class=o>.</span><span class=n>get_scene_info</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;get_world_state_snapshot&#34;</span><span class=p>:</span> <span class=bp>self</span><span class=o>.</span><span class=n>get_world_state_snapshot</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;get_addon_info&#34;</span><span class=p>:</span> <span class=bp>self</span><span class=o>.</span><span class=n>get_addon_info</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;get_object_info&#34;</span><span class=p>:</span> <span class=bp>self</span><span class=o>.</span><span class=n>get_object_info</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;get_viewport_screenshot&#34;</span><span class=p>:</span> <span class=bp>self</span><span class=o>.</span><span class=n>get_viewport_screenshot</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;execute_code&#34;</span><span class=p>:</span> <span class=bp>self</span><span class=o>.</span><span class=n>execute_code</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>集成类 Handler 只有在对应 Blender 配置开关开启后才加入映射，例如：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>if</span> <span class=n>bpy</span><span class=o>.</span><span class=n>context</span><span class=o>.</span><span class=n>scene</span><span class=o>.</span><span class=n>blendermcp_use_polyhaven</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>handlers</span><span class=o>.</span><span class=n>update</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;search_polyhaven_assets&#34;</span><span class=p>:</span> <span class=bp>self</span><span class=o>.</span><span class=n>search_polyhaven_assets</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;download_polyhaven_asset&#34;</span><span class=p>:</span> <span class=bp>self</span><span class=o>.</span><span class=n>download_polyhaven_asset</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>})</span></span></span></code></pre></div></div><p>因此即使 MCP Server 暴露了某个资源 Tool，Blender Addon 仍可能因为集成未启用而返回未知命令或不可用状态。</p><hr><h2 id=7-直接执行-blender-python-的流程>7. 直接执行 Blender Python 的流程</h2><p><code>execute_blender_code</code> 是最通用的场景修改入口。</p><div class=mermaid id=id-7>sequenceDiagram
+participant User as 用户
+participant LLM as LLM
+participant MCP as MCP Server Tool
+participant Safe as safe_mode.py
+participant Socket as TCP Socket
+participant Addon as Blender Addon
+participant Blender as Blender 主线程
+User->>LLM: 创建物体、修改材质等自然语言
+LLM->>MCP: tools/call execute_blender_code
+MCP->>MCP: 读取 code 参数
+alt BLENDER_MCP_SAFE_MODE=1
+MCP->>Safe: validate_code(code)
+Safe-->>MCP: 通过或抛出 SandboxViolation
+else 默认关闭安全模式
+MCP->>MCP: 不进行 AST 校验
+end
+MCP->>Socket: type=execute_code
+Socket->>Addon: 接收 JSON
+Addon->>Blender: command_queue
+Blender->>Blender: exec(code, {"bpy": bpy})
+Blender-->>Addon: captured stdout / result
+Addon-->>MCP: status + result
+MCP-->>LLM: Code executed successfully</div><p>Addon 中的执行逻辑：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>namespace</span> <span class=o>=</span> <span class=p>{</span><span class=s2>&#34;bpy&#34;</span><span class=p>:</span> <span class=n>bpy</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>capture_buffer</span> <span class=o>=</span> <span class=n>io</span><span class=o>.</span><span class=n>StringIO</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=k>with</span> <span class=n>redirect_stdout</span><span class=p>(</span><span class=n>capture_buffer</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>exec</span><span class=p>(</span><span class=n>code</span><span class=p>,</span> <span class=n>namespace</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>return</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;executed&#34;</span><span class=p>:</span> <span class=kc>True</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;result&#34;</span><span class=p>:</span> <span class=n>capture_buffer</span><span class=o>.</span><span class=n>getvalue</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h3 id=71-示例>7.1 示例</h3><p>LLM 可能生成：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>bpy</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>bpy</span><span class=o>.</span><span class=n>ops</span><span class=o>.</span><span class=n>mesh</span><span class=o>.</span><span class=n>primitive_cube_add</span><span class=p>(</span><span class=n>location</span><span class=o>=</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>))</span>
+</span></span><span class=line><span class=cl><span class=n>obj</span> <span class=o>=</span> <span class=n>bpy</span><span class=o>.</span><span class=n>context</span><span class=o>.</span><span class=n>object</span>
+</span></span><span class=line><span class=cl><span class=n>obj</span><span class=o>.</span><span class=n>name</span> <span class=o>=</span> <span class=s2>&#34;RedCube&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>mat</span> <span class=o>=</span> <span class=n>bpy</span><span class=o>.</span><span class=n>data</span><span class=o>.</span><span class=n>materials</span><span class=o>.</span><span class=n>new</span><span class=p>(</span><span class=s2>&#34;RedMaterial&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>mat</span><span class=o>.</span><span class=n>diffuse_color</span> <span class=o>=</span> <span class=p>(</span><span class=mf>1.0</span><span class=p>,</span> <span class=mf>0.0</span><span class=p>,</span> <span class=mf>0.0</span><span class=p>,</span> <span class=mf>1.0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>obj</span><span class=o>.</span><span class=n>data</span><span class=o>.</span><span class=n>materials</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>mat</span><span class=p>)</span></span></span></code></pre></div></div><p>执行路径：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>LLM 生成 Python
+</span></span><span class=line><span class=cl>→ execute_blender_code()
+</span></span><span class=line><span class=cl>→ send_command(&#34;execute_code&#34;, {&#34;code&#34;: code})
+</span></span><span class=line><span class=cl>→ Blender command_queue
+</span></span><span class=line><span class=cl>→ Blender 主线程
+</span></span><span class=line><span class=cl>→ exec(code, namespace)
+</span></span><span class=line><span class=cl>→ bpy 修改场景</span></span></code></pre></div></div><h3 id=72-安全模式>7.2 安全模式</h3><p>安全模式通过环境变量启用：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>BLENDER_MCP_SAFE_MODE=1</span></span></code></pre></div></div><p><code>safe_mode.py</code> 使用 AST 检查代码，默认 deny-by-default，仅允许指定模块、内置函数和操作结构。</p><p>重点阻止的能力包括：</p><ul><li><code>eval</code>、<code>exec</code>、<code>compile</code>、<code>__import__</code></li><li><code>open</code></li><li><code>os</code>、<code>sys</code>、<code>subprocess</code>、<code>socket</code> 等进程/文件/网络模块</li><li><code>__class__</code>、<code>__subclasses__</code>、<code>__globals__</code> 等解释器逃逸路径</li><li>Blender 持久化 Handler、Timer、Driver</li><li>Addon 安装、Console 执行等代码执行入口</li></ul><p>安全模式的边界：</p><blockquote><p>它只保护经过 MCP Server 的 <code>execute_blender_code</code> 路径；Blender Addon 的本地 TCP 端口仍然可以被其他本机进程直接连接。</p></blockquote><hr><h2 id=8-场景观察流程>8. 场景观察流程</h2><p>LLM 通常采用“先观察、再操作、后验证”的方式。</p><div class=mermaid id=id-8>flowchart TB
+S1["用户目标"]
+I1["get_scene_info"]
+I2["get_viewport_screenshot"]
+P["LLM 规划"]
+X["执行 Tool"]
+I3["执行后截图"]
+I4["执行后 get_scene_info"]
+C{""结果正确?""}
+F["完成"]
+FIX["生成修正操作"]
+S1 --> I1
+I1 --> I2
+I2 --> P
+P --> X
+X --> I3
+I3 --> I4
+I4 --> C
+C -->|是| F
+C -->|否| FIX
+FIX --> X
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class S1 module_user
+class I1 module_result
+class I2 module_blender
+class P module_user
+class X module_mcp
+class I3 module_result
+class I4 module_result
+class C module_result
+class F module_result
+class FIX module_result</div><h3 id=81-get_scene_info>8.1 <code>get_scene_info</code></h3><p>MCP Server：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>result</span> <span class=o>=</span> <span class=n>blender</span><span class=o>.</span><span class=n>send_command</span><span class=p>(</span><span class=s2>&#34;get_scene_info&#34;</span><span class=p>)</span></span></span></code></pre></div></div><p>Addon：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=bp>self</span><span class=o>.</span><span class=n>get_scene_info</span><span class=p>()</span></span></span></code></pre></div></div><p>返回内容包括：</p><ul><li>当前场景名称</li><li>对象数量</li><li>前若干个对象的名称</li><li>对象类型</li><li>对象位置</li><li>材质数量</li></ul><h3 id=82-get_object_info>8.2 <code>get_object_info</code></h3><p>发送：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-json"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;type&#34;</span><span class=p>:</span> <span class=s2>&#34;get_object_info&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;params&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;Cube&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>Addon 分发为：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=bp>self</span><span class=o>.</span><span class=n>get_object_info</span><span class=p>(</span><span class=n>name</span><span class=o>=</span><span class=s2>&#34;Cube&#34;</span><span class=p>)</span></span></span></code></pre></div></div><h3 id=83-get_viewport_screenshot>8.3 <code>get_viewport_screenshot</code></h3><p>截图流程与普通 JSON 结果不同：</p><div class=mermaid id=id-9>sequenceDiagram
+participant Tool as get_viewport_screenshot
+participant Addon as Blender Addon
+participant View as Blender Viewport
+participant File as 临时 PNG 文件
+participant LLM as LLM Client
+Tool->>Tool: 创建临时文件路径
+Tool->>Addon: get_viewport_screenshot
+Addon->>View: 截取当前视口
+View->>File: 写入 PNG
+Addon-->>Tool: 返回截图完成状态
+Tool->>File: 读取 PNG bytes
+Tool->>File: 删除临时文件
+Tool-->>LLM: MCP Image(data=image_bytes, format="png")</div><p>截图不是通过 JSON Base64 直接作为普通文本返回，而是在 MCP Server 侧读取 PNG 后包装为 <code>Image</code> 返回。</p><hr><h2 id=9-资源搜索下载和导入流程>9. 资源搜索、下载和导入流程</h2><h3 id=91-poly-haven--sketchfab--poly-pizza>9.1 Poly Haven / Sketchfab / Poly Pizza</h3><div class=mermaid id=id-10>flowchart TB
+Q["用户请求某个模型/材质/HDRI"]
+C["LLM 检查集成状态"]
+S["调用搜索 Tool"]
+M["返回资源列表"]
+CH["LLM 选择资源 ID / UID"]
+D["调用下载 Tool"]
+API["外部资源 API/CDN"]
+TMP["临时文件"]
+IMP["Blender Addon 导入资源"]
+SC["返回导入结果"]
+V["get_viewport_screenshot 验证"]
+Q --> C
+C --> S
+S --> API
+API --> M
+M --> CH
+CH --> D
+D --> API
+API --> TMP
+TMP --> IMP
+IMP --> SC
+SC --> V
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class Q module_user
+class C module_user
+class S module_mcp
+class M module_external
+class CH module_user
+class D module_mcp
+class API module_external
+class TMP module_external
+class IMP module_blender
+class SC module_result
+class V module_blender</div><p>典型调用顺序：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>get_polyhaven_status()
+</span></span><span class=line><span class=cl>→ search_polyhaven_assets(...)
+</span></span><span class=line><span class=cl>→ download_polyhaven_asset(...)
+</span></span><span class=line><span class=cl>→ get_viewport_screenshot()
+</span></span><span class=line><span class=cl>→ get_scene_info()</span></span></code></pre></div></div><p>对于 Sketchfab：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>get_sketchfab_status()
+</span></span><span class=line><span class=cl>→ search_sketchfab_models(...)
+</span></span><span class=line><span class=cl>→ download_sketchfab_model(...)</span></span></code></pre></div></div><p>对于 Poly Pizza：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>get_polypizza_status()
+</span></span><span class=line><span class=cl>→ search_polypizza_models(...)
+</span></span><span class=line><span class=cl>→ download_polypizza_model(...)</span></span></code></pre></div></div><p>资源集成是否可用，受 Blender 场景中的开关控制，例如：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>bpy</span><span class=o>.</span><span class=n>context</span><span class=o>.</span><span class=n>scene</span><span class=o>.</span><span class=n>blendermcp_use_polyhaven</span>
+</span></span><span class=line><span class=cl><span class=n>bpy</span><span class=o>.</span><span class=n>context</span><span class=o>.</span><span class=n>scene</span><span class=o>.</span><span class=n>blendermcp_use_sketchfab</span>
+</span></span><span class=line><span class=cl><span class=n>bpy</span><span class=o>.</span><span class=n>context</span><span class=o>.</span><span class=n>scene</span><span class=o>.</span><span class=n>blendermcp_use_polypizza</span></span></span></code></pre></div></div><h3 id=92-ai-生成模型>9.2 AI 生成模型</h3><p>Hyper3D Rodin 和 Hunyuan3D 一般采用异步任务流程：</p><div class=mermaid id=id-11>sequenceDiagram
+participant LLM as LLM
+participant MCP as MCP Tool
+participant Addon as Blender Addon
+participant API as 模型生成 API
+participant Blender as Blender 主线程
+LLM->>MCP: generate_*_model
+MCP->>Addon: create_*_job
+Addon->>API: 创建生成任务
+API-->>Addon: task_id / job_id
+Addon-->>MCP: 返回任务 ID
+MCP-->>LLM: 任务进行中
+loop 轮询
+LLM->>MCP: poll_*_job_status
+MCP->>Addon: poll_*_job_status
+Addon->>API: 查询状态
+API-->>Addon: IN_PROGRESS / DONE / FAILED
+Addon-->>MCP: 返回状态
+MCP-->>LLM: 返回状态
+end
+LLM->>MCP: import_generated_asset
+MCP->>Addon: import_generated_asset
+Addon->>API: 下载生成文件
+Addon->>Blender: 导入 GLB / OBJ / ZIP
+Blender-->>Addon: 导入完成
+Addon-->>MCP: 返回结果</div><p>策略 Prompt <code>asset_creation_strategy()</code> 建议：</p><ol><li>先检查当前场景</li><li>检查各个资源集成是否启用</li><li>优先搜索已有资源</li><li>没有合适资源时再使用模型生成</li><li>生成任务完成后导入模型</li><li>导入后检查模型的 <code>world_bounding_box</code></li><li>最后截图和读取场景进行验证</li></ol><hr><h2 id=10-响应返回流程>10. 响应返回流程</h2><p>Blender Addon 统一返回如下结构：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-json"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;status&#34;</span><span class=p>:</span> <span class=s2>&#34;success&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;result&#34;</span><span class=p>:</span> <span class=p>{}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><p>失败时：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-json"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;status&#34;</span><span class=p>:</span> <span class=s2>&#34;error&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;message&#34;</span><span class=p>:</span> <span class=s2>&#34;错误信息&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><div class=mermaid id=id-12>flowchart TB
+H["Blender Handler 执行"]
+OK{""是否成功?""}
+S["status=success\nresult=handler result"]
+E["status=error\nmessage=异常信息"]
+SEND["Addon sendall UTF-8 JSON"]
+RECV["Server receive_full_response"]
+PARSE["json.loads"]
+CHECK{""status == error?""}
+RETURN["Tool 返回 result"]
+RAISE["Server 抛出异常并返回错误文本"]
+LLM["LLM 获取结果"]
+H --> OK
+OK -->|是| S
+OK -->|否| E
+S --> SEND
+E --> SEND
+SEND --> RECV
+RECV --> PARSE
+PARSE --> CHECK
+CHECK -->|否| RETURN
+CHECK -->|是| RAISE
+RETURN --> LLM
+RAISE --> LLM
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class H module_blender
+class OK module_result
+class S module_blender
+class E module_error
+class SEND module_transport
+class RECV module_result
+class PARSE module_transport
+class CHECK module_error
+class RETURN module_mcp
+class RAISE module_error
+class LLM module_user</div><p>Server 的 <code>receive_full_response()</code> 会反复执行 <code>recv()</code>，将多个 TCP 分片拼接起来，直到：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>json</span><span class=o>.</span><span class=n>loads</span><span class=p>(</span><span class=n>data</span><span class=o>.</span><span class=n>decode</span><span class=p>(</span><span class=s2>&#34;utf-8&#34;</span><span class=p>))</span></span></span></code></pre></div></div><p>能够成功解析完整 JSON。</p><p>TCP 本身没有消息边界，因此不能假设一次 <code>recv()</code> 就能得到完整响应。</p><hr><h2 id=11-错误处理与重连流程>11. 错误处理与重连流程</h2><div class=mermaid id=id-1>flowchart TB
+CALL["Tool 调用"]
+CONN{""Socket 是否存在?""}
+REUSE["复用现有连接"]
+NEW["创建 BlenderConnection"]
+CONNECT{""connect 成功?""}
+SEND["发送命令"]
+WAIT["等待响应，超时 180 秒"]
+RESULT{""收到有效 JSON?""}
+DONE["返回结果"]
+INVALID["标记 socket 失效"]
+ERR["返回 Communication error / Timeout"]
+NEXT["下一次真实命令重新连接"]
+CALL --> CONN
+CONN -->|是| REUSE
+CONN -->|否| NEW
+NEW --> CONNECT
+CONNECT -->|是| SEND
+CONNECT -->|否| ERR
+REUSE --> SEND
+SEND --> WAIT
+WAIT --> RESULT
+RESULT -->|是| DONE
+RESULT -->|否/异常| INVALID
+INVALID --> ERR
+ERR --> NEXT
+NEXT --> NEW
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class CALL module_mcp
+class CONN module_transport
+class REUSE module_result
+class NEW module_blender
+class CONNECT module_result
+class SEND module_result
+class WAIT module_result
+class RESULT module_transport
+class DONE module_result
+class INVALID module_transport
+class ERR module_error
+class NEXT module_result</div><p>主要异常包括：</p><ul><li>Blender Addon 没有启动</li><li>端口 <code>9876</code> 被占用</li><li>Blender 用户关闭了 Addon Server</li><li>Blender 执行命令超过 <code>180</code> 秒</li><li>Socket 被重置</li><li>返回数据不是完整 JSON</li><li>Handler 内部抛出异常</li></ul><p>当前 Server 会在通信错误后将连接置为失效：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=bp>self</span><span class=o>.</span><span class=n>sock</span> <span class=o>=</span> <span class=kc>None</span></span></span></code></pre></div></div><p>之后由下一次真实命令触发重新连接。</p><hr><h2 id=12-addon-版本握手和安装流程>12. Addon 版本握手和安装流程</h2><h3 id=121-addon-安装流程>12.1 Addon 安装流程</h3><div class=mermaid id=id-2>flowchart TB
+CMD["uvx blender-mcp install-addon"]
+CLI["addon_manager.run_cli"]
+DIR["discover_blender_addon_dirs"]
+FIND["查找已有 MCP Addon"]
+BACKUP["备份已有文件"]
+COPY["复制 bundled/addon.py"]
+RESTART["用户重启或重新启用 Addon"]
+START["点击 Start MCP Server"]
+CMD --> CLI
+CLI --> DIR
+DIR --> FIND
+FIND --> BACKUP
+BACKUP --> COPY
+COPY --> RESTART
+RESTART --> START
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class CMD module_mcp
+class CLI module_blender
+class DIR module_blender
+class FIND module_mcp
+class BACKUP module_result
+class COPY module_blender
+class RESTART module_user
+class START module_mcp</div><p>Addon 的打包副本位于：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>src/blender_mcp/bundled/addon.py</span></span></code></pre></div></div><p>安装工具会将它复制到 Blender 的用户 Addon 目录，默认安装文件名为：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>blender_mcp.py</span></span></code></pre></div></div><h3 id=122-版本握手流程>12.2 版本握手流程</h3><div class=mermaid id=id-3>sequenceDiagram
+participant Server as MCP Server
+participant Conn as BlenderConnection
+participant Addon as Blender Addon
+Server->>Conn: handshake_addon()
+Conn->>Addon: type=get_addon_info
+Addon-->>Conn: protocol_version / capabilities / Blender version
+Conn-->>Server: AddonHandshake
+Server->>Server: 与 EXPECTED_ADDON_PROTOCOL_VERSION 比较
+alt 版本满足要求
+Server->>Server: 记录 addon up to date
+else 版本过旧或缺少命令
+Server->>Server: 记录 warning
+Server-->>Server: 提示 uvx blender-mcp install-addon
+end</div><p>当前 Server 期望的协议版本来自：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>EXPECTED_ADDON_PROTOCOL_VERSION</span> <span class=o>=</span> <span class=mi>5</span></span></span></code></pre></div></div><p>Addon 侧也定义：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>ADDON_PROTOCOL_VERSION</span> <span class=o>=</span> <span class=mi>5</span></span></span></code></pre></div></div><p>握手数据包括：</p><ul><li>Addon 名称</li><li>Addon 版本</li><li>协议版本</li><li>支持的 capabilities</li><li>Blender 版本</li></ul><hr><h2 id=13-telemetry-和-trajectory-模块>13. Telemetry 和 Trajectory 模块</h2><p>部分 Tool 使用装饰器：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nd>@telemetry_tool</span><span class=p>(</span><span class=s2>&#34;get_scene_info&#34;</span><span class=p>)</span></span></span></code></pre></div></div><p>或者：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-python"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nd>@trajectory_tool</span><span class=p>(</span><span class=s2>&#34;execute_blender_code&#34;</span><span class=p>,</span> <span class=n>capture_code</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span></span></span></code></pre></div></div><p>这些装饰器在 Tool 执行前后记录工具名、成功状态、耗时和必要的轨迹信息。</p><div class=mermaid id=id-4>flowchart TB
+T["Tool 被调用"]
+DEC["telemetry_tool / trajectory_tool 装饰器"]
+EXEC["执行实际 Tool"]
+OBS["记录观察步骤 / 执行步骤"]
+CONSENT{""用户是否同意详细遥测?""}
+FULL["允许 prompts / code / screenshot / scene trajectory"]
+MIN["只保留最小匿名统计\n工具名 / 成功失败 / 耗时"]
+RET["返回 Tool 结果"]
+T --> DEC
+DEC --> EXEC
+EXEC --> OBS
+OBS --> CONSENT
+CONSENT -->|是| FULL
+CONSENT -->|否| MIN
+FULL --> RET
+MIN --> RET
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class T module_mcp
+class DEC module_mcp
+class EXEC module_mcp
+class OBS module_result
+class CONSENT module_user
+class FULL module_result
+class MIN module_error
+class RET module_mcp</div><p>Blender Addon 还提供：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>get_telemetry_consent
+</span></span><span class=line><span class=cl>set_telemetry_consent</span></span></code></pre></div></div><p>Server 提供：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>disable_telemetry</span></span></code></pre></div></div><p>默认设计中，即使用户没有同意详细数据收集，也可能保留最小匿名的工具使用统计；具体内容由项目的 Telemetry 实现和用户设置决定。</p><hr><h2 id=14-一次完整请求示例>14. 一次完整请求示例</h2><p>用户输入：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>创建一个红色立方体，放在原点，并确认它出现在视口中。</span></span></code></pre></div></div><p>可能的实际调用序列：</p><div class=mermaid id=id-5>sequenceDiagram
+participant User as 用户
+participant LLM as LLM Client
+participant MCP as MCP Server
+participant Addon as Blender Addon
+participant Blender as Blender
+User->>LLM: 创建一个红色立方体...
+LLM->>MCP: get_scene_info(user_prompt=原始请求)
+MCP->>Addon: {"type":"get_scene_info","params":{}}
+Addon->>Blender: 主线程读取场景
+Blender-->>Addon: scene info
+Addon-->>MCP: success + result
+MCP-->>LLM: 场景信息
+LLM->>MCP: execute_blender_code(code=创建立方体脚本)
+MCP->>Addon: {"type":"execute_code","params":{"code":"..."}}
+Addon->>Blender: 主线程执行 exec(code)
+Blender-->>Addon: executed=true
+Addon-->>MCP: success + result
+MCP-->>LLM: 执行成功
+LLM->>MCP: get_viewport_screenshot()
+MCP->>Addon: {"type":"get_viewport_screenshot",...}
+Addon->>Blender: 截取视口并写入临时 PNG
+Blender-->>Addon: PNG 已生成
+Addon-->>MCP: 截图状态
+MCP-->>LLM: MCP Image
+LLM->>LLM: 分析截图
+LLM-->>User: 已创建并确认立方体</div><p>如果截图发现物体不可见，LLM 可以再次调用 <code>execute_blender_code</code> 调整相机、对象位置或视口状态。</p><hr><h2 id=15-核心时序总结>15. 核心时序总结</h2><div class=mermaid id=id-6>flowchart TB
+A["用户自然语言"]
+B["LLM 选择 MCP Tool"]
+C["MCP Client 发送 tools/call"]
+D["FastMCP 路由到 server.py 函数"]
+E["Tool 调用 BlenderConnection.send_command"]
+F["构造 type + params JSON"]
+G["TCP localhost:9876"]
+H["Addon _handle_client 接收"]
+I["command_queue.put"]
+J["Blender Timer 取出命令"]
+K["_execute_command_internal 分发"]
+L["具体 Handler / execute_code"]
+M["Blender bpy 主线程操作"]
+N["Addon 封装 success/error JSON"]
+O["Server 接收并解析完整 JSON"]
+P["MCP Tool 返回结果"]
+Q["LLM 判断是否继续调用"]
+A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K --> L --> M --> N --> O --> P --> Q
+Q -->|继续观察/修正| B
+Q -->|完成| R["最终回答用户"]
+%% GitHub-compatible module colors
+classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43
+classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A
+classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32
+classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512
+classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738
+classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20
+classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717
+class A module_user
+class B module_user
+class C module_user
+class D module_mcp
+class E module_mcp
+class F module_transport
+class G module_transport
+class H module_user
+class I module_transport
+class J module_transport
+class K module_result
+class L module_blender
+class M module_blender
+class N module_transport
+class O module_transport
+class P module_mcp
+class Q module_user
+class R module_user</div><p>最核心的三层协议关系是：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>MCP 协议：LLM Client ↔ MCP Server
+</span></span><span class=line><span class=cl>TCP + JSON：MCP Server ↔ Blender Addon
+</span></span><span class=line><span class=cl>Blender Python API：Addon ↔ Blender 场景</span></span></code></pre></div></div><p>最核心的线程关系是：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>Socket 接收线程 → command_queue → Blender 主线程 Timer → bpy</span></span></code></pre></div></div><p>最核心的智能关系是：</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-text"><span class=code-title><i class="arrow fas fa-angle-right" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>LLM 负责理解用户意图、选择 Tool、生成代码、读取结果和继续修正
+</span></span><span class=line><span class=cl>MCP Server 负责协议适配、参数转译和连接管理
+</span></span><span class=line><span class=cl>Blender Addon 负责执行固定命令、访问 bpy 和返回结果</span></span></code></pre></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2026-09-11</span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span></span></div></div></div><div class=post-info-more><section class=post-tags></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/posts/d-28/ class=prev rel=prev title=想把房子装修成这样><i class="fas fa-angle-left" aria-hidden=true></i>想把房子装修成这样</a></div></div><div id=comments><script src=https://beaudar.lipk.org/client.js repo=trianglestrip/trianglestrip.github.io issue-term=title issue-label=pathname theme=github-light crossorigin=anonymous async></script><noscript>请启用 JavaScript 以查看评论（由 <a href=https://beaudar.lipk.org/>Beaudar</a> 提供）。</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright" aria-hidden=true></i><span itemprop=copyrightYear>2026</span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up" aria-hidden=true></i></a></div><div id=fixed-buttons-hidden><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment" aria-hidden=true></i></a></div><script src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid@10.9.8/dist/mermaid.min.js></script><script>window.config={comment:{},data:{"id-1":`flowchart TB\r
+CALL["Tool 调用"]\r
+CONN{""Socket 是否存在?""}\r
+REUSE["复用现有连接"]\r
+NEW["创建 BlenderConnection"]\r
+CONNECT{""connect 成功?""}\r
+SEND["发送命令"]\r
+WAIT["等待响应，超时 180 秒"]\r
+RESULT{""收到有效 JSON?""}\r
+DONE["返回结果"]\r
+INVALID["标记 socket 失效"]\r
+ERR["返回 Communication error / Timeout"]\r
+NEXT["下一次真实命令重新连接"]\r
+    CALL --> CONN\r
+    CONN -->|是| REUSE\r
+    CONN -->|否| NEW\r
+    NEW --> CONNECT\r
+    CONNECT -->|是| SEND\r
+    CONNECT -->|否| ERR\r
+    REUSE --> SEND\r
+    SEND --> WAIT\r
+    WAIT --> RESULT\r
+    RESULT -->|是| DONE\r
+    RESULT -->|否/异常| INVALID\r
+    INVALID --> ERR\r
+    ERR --> NEXT\r
+    NEXT --> NEW\r
+    %% GitHub-compatible module colors\r
+    classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43\r
+    classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A\r
+    classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32\r
+    classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512\r
+    classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738\r
+    classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20\r
+    classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717\r
+    class CALL module_mcp\r
+    class CONN module_transport\r
+    class REUSE module_result\r
+    class NEW module_blender\r
+    class CONNECT module_result\r
+    class SEND module_result\r
+    class WAIT module_result\r
+    class RESULT module_transport\r
+    class DONE module_result\r
+    class INVALID module_transport\r
+    class ERR module_error\r
+    class NEXT module_result`,"id-2":`flowchart TB\r
+CMD["uvx blender-mcp install-addon"]\r
+CLI["addon_manager.run_cli"]\r
+DIR["discover_blender_addon_dirs"]\r
+FIND["查找已有 MCP Addon"]\r
+BACKUP["备份已有文件"]\r
+COPY["复制 bundled/addon.py"]\r
+RESTART["用户重启或重新启用 Addon"]\r
+START["点击 Start MCP Server"]\r
+    CMD --> CLI\r
+    CLI --> DIR\r
+    DIR --> FIND\r
+    FIND --> BACKUP\r
+    BACKUP --> COPY\r
+    COPY --> RESTART\r
+    RESTART --> START\r
+    %% GitHub-compatible module colors\r
+    classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43\r
+    classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A\r
+    classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32\r
+    classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512\r
+    classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738\r
+    classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20\r
+    classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717\r
+    class CMD module_mcp\r
+    class CLI module_blender\r
+    class DIR module_blender\r
+    class FIND module_mcp\r
+    class BACKUP module_result\r
+    class COPY module_blender\r
+    class RESTART module_user\r
+    class START module_mcp`,"id-3":`sequenceDiagram\r
+    participant Server as MCP Server\r
+    participant Conn as BlenderConnection\r
+    participant Addon as Blender Addon\r
+\r
+    Server->>Conn: handshake_addon()\r
+    Conn->>Addon: type=get_addon_info\r
+    Addon-->>Conn: protocol_version / capabilities / Blender version\r
+    Conn-->>Server: AddonHandshake\r
+    Server->>Server: 与 EXPECTED_ADDON_PROTOCOL_VERSION 比较\r
+    alt 版本满足要求\r
+        Server->>Server: 记录 addon up to date\r
+    else 版本过旧或缺少命令\r
+        Server->>Server: 记录 warning\r
+        Server-->>Server: 提示 uvx blender-mcp install-addon\r
+    end`,"id-4":`flowchart TB\r
+T["Tool 被调用"]\r
+DEC["telemetry_tool / trajectory_tool 装饰器"]\r
+EXEC["执行实际 Tool"]\r
+OBS["记录观察步骤 / 执行步骤"]\r
+CONSENT{""用户是否同意详细遥测?""}\r
+FULL["允许 prompts / code / screenshot / scene trajectory"]\r
+MIN["只保留最小匿名统计\\n工具名 / 成功失败 / 耗时"]\r
+RET["返回 Tool 结果"]\r
+    T --> DEC\r
+    DEC --> EXEC\r
+    EXEC --> OBS\r
+    OBS --> CONSENT\r
+    CONSENT -->|是| FULL\r
+    CONSENT -->|否| MIN\r
+    FULL --> RET\r
+    MIN --> RET\r
+    %% GitHub-compatible module colors\r
+    classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43\r
+    classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A\r
+    classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32\r
+    classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512\r
+    classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738\r
+    classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20\r
+    classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717\r
+    class T module_mcp\r
+    class DEC module_mcp\r
+    class EXEC module_mcp\r
+    class OBS module_result\r
+    class CONSENT module_user\r
+    class FULL module_result\r
+    class MIN module_error\r
+    class RET module_mcp`,"id-5":`sequenceDiagram\r
+    participant User as 用户\r
+    participant LLM as LLM Client\r
+    participant MCP as MCP Server\r
+    participant Addon as Blender Addon\r
+    participant Blender as Blender\r
+\r
+    User->>LLM: 创建一个红色立方体...\r
+\r
+    LLM->>MCP: get_scene_info(user_prompt=原始请求)\r
+    MCP->>Addon: {"type":"get_scene_info","params":{}}\r
+    Addon->>Blender: 主线程读取场景\r
+    Blender-->>Addon: scene info\r
+    Addon-->>MCP: success + result\r
+    MCP-->>LLM: 场景信息\r
+\r
+    LLM->>MCP: execute_blender_code(code=创建立方体脚本)\r
+    MCP->>Addon: {"type":"execute_code","params":{"code":"..."}}\r
+    Addon->>Blender: 主线程执行 exec(code)\r
+    Blender-->>Addon: executed=true\r
+    Addon-->>MCP: success + result\r
+    MCP-->>LLM: 执行成功\r
+\r
+    LLM->>MCP: get_viewport_screenshot()\r
+    MCP->>Addon: {"type":"get_viewport_screenshot",...}\r
+    Addon->>Blender: 截取视口并写入临时 PNG\r
+    Blender-->>Addon: PNG 已生成\r
+    Addon-->>MCP: 截图状态\r
+    MCP-->>LLM: MCP Image\r
+\r
+    LLM->>LLM: 分析截图\r
+    LLM-->>User: 已创建并确认立方体`,"id-6":`flowchart TB\r
+A["用户自然语言"]\r
+B["LLM 选择 MCP Tool"]\r
+C["MCP Client 发送 tools/call"]\r
+D["FastMCP 路由到 server.py 函数"]\r
+E["Tool 调用 BlenderConnection.send_command"]\r
+F["构造 type + params JSON"]\r
+G["TCP localhost:9876"]\r
+H["Addon _handle_client 接收"]\r
+I["command_queue.put"]\r
+J["Blender Timer 取出命令"]\r
+K["_execute_command_internal 分发"]\r
+L["具体 Handler / execute_code"]\r
+M["Blender bpy 主线程操作"]\r
+N["Addon 封装 success/error JSON"]\r
+O["Server 接收并解析完整 JSON"]\r
+P["MCP Tool 返回结果"]\r
+Q["LLM 判断是否继续调用"]\r
+    A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K --> L --> M --> N --> O --> P --> Q\r
+    Q -->|继续观察/修正| B\r
+    Q -->|完成| R["最终回答用户"]\r
+    %% GitHub-compatible module colors\r
+    classDef module_user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43\r
+    classDef module_mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A\r
+    classDef module_transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32\r
+    classDef module_blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512\r
+    classDef module_external fill:#FCE8F3,stroke:#D63384,stroke-width:2px,color:#5A1738\r
+    classDef module_result fill:#E7F6E7,stroke:#27AE60,stroke-width:2px,color:#173B20\r
+    classDef module_error fill:#FFE4E4,stroke:#EB5757,stroke-width:2px,color:#5A1717\r
+    class A module_user\r
+    class B module_user\r
+    class C module_user\r
+    class D module_mcp\r
+    class E module_mcp\r
+    class F module_transport\r
+    class G module_transport\r
+    class H module_user\r
+    class I module_transport\r
+    class J module_transport\r
+    class K module_result\r
+    class L module_blender\r
+    class M module_blender\r
+    class N module_transport\r
+    class O module_transport\r
+    class P module_mcp\r
+    class Q module_user\r
+    class R module_user`}}</script><script src=/js/theme.js></script></body></html>
