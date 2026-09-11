@@ -2,6 +2,8 @@
 {{- /* Keep Mermaid labels compatible with the older Mermaid runtime used by this site. */ -}}
 {{- $content = replace $content "RESP[client.sendall(response)]" "RESP[\"client.sendall(response)\"]" -}}
 {{- $content = replace $content "F[查找 handlers[cmd_type]]" "F[\"查找 handlers[cmd_type]\"]" -}}
+{{- /* Older Mermaid versions can lose line boundaries between standalone node declarations. */ -}}
+{{- $content = replaceRE `(?m)^([A-Za-z][A-Za-z0-9_]*)\s*(\[[^\n]*\]|\{[^\n]*\})\s*$` `${1}${2};` $content -}}
 {{- $id := dict "Content" $content "Scratch" .Page.Scratch | partial "function/id.html" -}}
 <div class="mermaid" id="{{ $id }}">{{ $content }}</div>
 {{- .Page.Scratch.SetInMap "this" "mermaid" true -}}
