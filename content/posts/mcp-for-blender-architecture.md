@@ -58,7 +58,6 @@ flowchart TB
 
     classDef user fill:#E8F1FF,stroke:#2F80ED,stroke-width:2px,color:#102A43;
     classDef mcp fill:#EDE7FF,stroke:#7B61FF,stroke-width:2px,color:#2D235A;
-    classDef transport fill:#E3F8F1,stroke:#16A085,stroke-width:2px,color:#123B32;
     classDef blender fill:#FFF1D6,stroke:#F2994A,stroke-width:2px,color:#5C3512;
     class U,C user;
     class M mcp;
@@ -286,7 +285,7 @@ flowchart TB
     BT[Blender 主线程 Timer\n_drain_command_queue]
     EX[execute_command]
     BP[bpy 数据/API]
-    RESP[client.sendall(response)]
+    RESP["client.sendall(response)"]
 
     SS -->|accept()| AC
     AC -->|解析完整 JSON| Q
@@ -323,7 +322,7 @@ flowchart TB
     PP[Poly Pizza Handler]
     H3[Hyper3D Handler]
     HY[Hunyuan3D Handler]
-    F[查找 handlers[cmd_type]]
+    F["查找 handlers[cmd_type]"]
     X[handler(**params)]
     OK[包装为 status=success]
     ERR[包装为 status=error]
