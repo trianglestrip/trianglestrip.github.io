@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-11T09:48:32+00:00",
+  "updated_at": "2026-09-11T13:52:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI Coding 提速之后，如何补上稳定性“最后一公里”？快手柯南 AI 实践",
+      "url": "https://www.infoq.cn/article/rlXYaPUjVR0fffbQK3Iz?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 11 Sep 2026 21:06:08 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "怒斥加密货币是旁氏骗局、放弃80%就业机会也不用 AI 写代码！Kotlin“J神”：AI 会让工程师变成可替换的齿轮",
+      "url": "https://www.infoq.cn/article/QPRcUdPGic5r8Ws8R1gM?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 11 Sep 2026 21:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "“我们在拿生命做赌注”：造AI的人为何开始密集预警？",
+      "url": "https://www.infoq.cn/article/FA80wgNMOwCRrXsSIAwX?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 11 Sep 2026 19:08:42 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "AI Coding 的下一步不是写得更快，而是可验收：蚂蚁数科 Harness 工程实践",
+      "url": "https://www.infoq.cn/article/A2IFuW8yiYhRqXizT5Uu?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 11 Sep 2026 18:15:19 GMT"
+    },
+    {
+      "rank": 5,
       "title": "“数据比模型重要”成了共识，接下来拼什么？",
       "url": "https://www.infoq.cn/article/sT7izVmjw1YVxh3FQyK8?utm_source=rss&utm_medium=article",
       "hot": "Fri, 11 Sep 2026 17:29:19 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "HashiCorp Packer 1.16 发布，支持机器镜像 SLSA 来源证明生成与核验",
       "url": "https://www.infoq.cn/article/v3VX3eqmROVDJ38rQOh0?utm_source=rss&utm_medium=article",
       "hot": "Fri, 11 Sep 2026 17:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "当 AI 写出更多代码，企业为什么没有跑得更快？| JDD 大会现场观察",
       "url": "https://www.infoq.cn/article/Y02WwW92ZqjLXQQvIWWi?utm_source=rss&utm_medium=article",
       "hot": "Fri, 11 Sep 2026 16:10:31 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "Netflix 采用开源 Flink Autoscaler，支撑超 3 万个流式作业",
       "url": "https://www.infoq.cn/article/8JZ9IdSIxo18dcz6pZG6?utm_source=rss&utm_medium=article",
       "hot": "Fri, 11 Sep 2026 14:40:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "AI 有了“工号”，数据平台长出了手：我在 Snowflake World Tour 看到的三个变化",
       "url": "https://www.infoq.cn/article/RLdCKyW7YNb8ybDKlQ5d?utm_source=rss&utm_medium=article",
       "hot": "Fri, 11 Sep 2026 13:36:27 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "vlt 1.0 发布：无缝替代 npm，新增分阶段安装、图谱查询与恶意包防护",
       "url": "https://www.infoq.cn/article/TWR5dBbabM48ZzP7zEwm?utm_source=rss&utm_medium=article",
       "hot": "Fri, 11 Sep 2026 13:05:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "刘震云对话马毅：人写不出来、想不到的作品，AI 模仿不了｜附完整对话",
-      "url": "https://www.infoq.cn/article/Z5ddgQ63RixMXCVzqgq7?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 11 Sep 2026 13:00:35 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "一句话就能下单，商业入口要变了！蚂蚁 CEO 韩歆毅：未来竞争的不只是流量",
-      "url": "https://www.infoq.cn/article/EKC1INXeMjIo00JWMQdV?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 11 Sep 2026 12:41:31 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "AMD 发布锐龙AI Max PRO 400 系列，端侧智能体走向多模型协同",
-      "url": "https://www.infoq.cn/article/NizuOkFpcOPgbeClC4uL?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 11 Sep 2026 12:30:38 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Azure API Management Standard v2 支持区域冗余",
-      "url": "https://www.infoq.cn/article/7c7c4W0KxxjMMMgS5RAC?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 11 Sep 2026 11:17:00 GMT"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-11T09:48:26+00:00",
+  "updated_at": "2026-09-11T13:52:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Cherenkov Radiation - traveling faster than light",
-      "url": "http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation",
-      "hot": "31"
+      "title": "The Waymo effect: how AI is quietly making research less collaborative",
+      "url": "https://www.researchagenda.news/articles/the-waymo-effect.html",
+      "hot": "183"
     },
     {
       "rank": 2,
-      "title": "Shopify is moving from React Native back to Swift and Kotlin",
-      "url": "https://shopify.engineering/back-to-native",
-      "hot": "1068"
+      "title": "Houthis 'take control' of key island in global shipping route",
+      "url": "https://www.bbc.com/news/live/cmd683p01eljt",
+      "hot": "20"
     },
     {
       "rank": 3,
-      "title": "Don't let anyone take away your big box of cables",
-      "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
-      "hot": "526"
+      "title": "RTK reports token savings, but our cost benchmarks disagree",
+      "url": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/",
+      "hot": "66"
     },
     {
       "rank": 4,
-      "title": "Working with Git Worktrees in Magit",
-      "url": "https://emacsredux.com/blog/2026/09/02/working-with-git-worktrees-in-magit/",
-      "hot": "46"
+      "title": "Cherenkov Radiation - traveling faster than light",
+      "url": "http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation",
+      "hot": "135"
     },
     {
       "rank": 5,
-      "title": "OpenAI Agents API",
-      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-      "hot": "264"
+      "title": "So you want to use OpenRouter?",
+      "url": "https://mmoustafa.com/blog/so-you-want-to-use-openrouter/",
+      "hot": "318"
     },
     {
       "rank": 6,
-      "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
-      "url": "https://auberon.xyz/blog/posts/deathray/",
-      "hot": "189"
+      "title": "Shopify is moving from React Native back to Swift and Kotlin",
+      "url": "https://shopify.engineering/back-to-native",
+      "hot": "1152"
     },
     {
       "rank": 7,
-      "title": "The Gemini app is now available for Windows",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-      "hot": "48"
+      "title": "iPod Classic 6G in QEMU",
+      "url": "https://www.reddit.com/r/emulation/s/VL4Au2HGxq",
+      "hot": "71"
     },
     {
       "rank": 8,
-      "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
-      "url": "https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images",
-      "hot": "335"
+      "title": "Don't let anyone take away your big box of cables",
+      "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
+      "hot": "640"
     },
     {
       "rank": 9,
-      "title": "Mexican student creates an acoustic fire extinguisher to put out fire in seconds",
-      "url": "https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/",
-      "hot": "206"
+      "title": "Diesel prices in U.S. top $6 a gallon for first time",
+      "url": "https://www.cbsnews.com/news/rising-diesel-prices-consumer-impact/",
+      "hot": "12"
     },
     {
       "rank": 10,
-      "title": "Nine coding harnesses vs. your laptop",
-      "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74",
-      "hot": "96"
+      "title": "RISC-V Emulator and Linux System from Scratch",
+      "url": "https://github.com/WerWolv/riscv-emulator",
+      "hot": "17"
     }
   ]
 }
