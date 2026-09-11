@@ -10,6 +10,9 @@ categories:
   - 技术
 ---
 
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad: true})</script>
+
 本文说明当前项目中“用户通过自然语言提问，LLM 调用 MCP，再驱动 Blender 执行操作”的完整内部流程。
 
 > 代码范围：
