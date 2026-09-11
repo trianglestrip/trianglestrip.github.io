@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-11T13:52:34+00:00",
+  "updated_at": "2026-09-11T17:21:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The Waymo effect: how AI is quietly making research less collaborative",
-      "url": "https://www.researchagenda.news/articles/the-waymo-effect.html",
-      "hot": "183"
+      "title": "Feeling Sad about AI",
+      "url": "https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/",
+      "hot": "69"
     },
     {
       "rank": 2,
-      "title": "Houthis 'take control' of key island in global shipping route",
-      "url": "https://www.bbc.com/news/live/cmd683p01eljt",
-      "hot": "20"
+      "title": "Global Glacier Extinction Explorer",
+      "url": "https://glacierextinction.com",
+      "hot": "78"
     },
     {
       "rank": 3,
-      "title": "RTK reports token savings, but our cost benchmarks disagree",
-      "url": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/",
-      "hot": "66"
+      "title": "Measuring the sloppiness of code",
+      "url": "https://earendil.com/posts/measuring-code-sloppiness/",
+      "hot": "128"
     },
     {
       "rank": 4,
-      "title": "Cherenkov Radiation - traveling faster than light",
-      "url": "http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation",
-      "hot": "135"
+      "title": "Godot and Rust based multiplexer (terminal panes and more)",
+      "url": "https://github.com/godot-pty/gpty",
+      "hot": "34"
     },
     {
       "rank": 5,
-      "title": "So you want to use OpenRouter?",
-      "url": "https://mmoustafa.com/blog/so-you-want-to-use-openrouter/",
-      "hot": "318"
+      "title": "I've operated petabyte-scale ClickHouse clusters for 5 years",
+      "url": "https://www.tinybird.co/blog/what-i-learned-operating-clickhouse",
+      "hot": "84"
     },
     {
       "rank": 6,
-      "title": "Shopify is moving from React Native back to Swift and Kotlin",
-      "url": "https://shopify.engineering/back-to-native",
-      "hot": "1152"
+      "title": "Logo Programming Language",
+      "url": "https://el.media.mit.edu/logo-foundation/what_is_logo/logo_programming.html",
+      "hot": "126"
     },
     {
       "rank": 7,
-      "title": "iPod Classic 6G in QEMU",
-      "url": "https://www.reddit.com/r/emulation/s/VL4Au2HGxq",
-      "hot": "71"
+      "title": "Copying login keychains between Macs fails on Secure Enclave Macs with Tahoe",
+      "url": "https://derflounder.wordpress.com/2026/09/08/manually-copying-login-keychain-files-from-one-mac-to-another-no-longer-works-on-secure-enclave-equipped-macs-running-macos-tahoe/",
+      "hot": "31"
     },
     {
       "rank": 8,
-      "title": "Don't let anyone take away your big box of cables",
-      "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
-      "hot": "640"
+      "title": "So you want to use OpenRouter?",
+      "url": "https://mmoustafa.com/blog/so-you-want-to-use-openrouter/",
+      "hot": "530"
     },
     {
       "rank": 9,
-      "title": "Diesel prices in U.S. top $6 a gallon for first time",
-      "url": "https://www.cbsnews.com/news/rising-diesel-prices-consumer-impact/",
-      "hot": "12"
+      "title": "118M Queries per Second on Neki",
+      "url": "https://planetscale.com/blog/118-million-queries-per-second-on-neki",
+      "hot": "15"
     },
     {
       "rank": 10,
-      "title": "RISC-V Emulator and Linux System from Scratch",
-      "url": "https://github.com/WerWolv/riscv-emulator",
-      "hot": "17"
+      "title": "Power Grab",
+      "url": "https://tante.cc/2026/09/11/power-grab/",
+      "hot": "22"
     }
   ]
 }
