@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-11T19:50:08+00:00",
+  "updated_at": "2026-09-11T22:01:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【从0开始学习计算机网络】| 三次握手：为什么是三次，不是两次或四次？",
-      "url": "https://blog.csdn.net/2503_94545876/article/details/164739838",
-      "hot": "19676"
+      "title": "如何采集Amazon 商品数据？两种方案实测：从自建爬虫到采集 API",
+      "url": "https://blog.csdn.net/m0_64336780/article/details/164957572",
+      "hot": "19765"
     },
     {
       "rank": 2,
-      "title": "如何采集Amazon 商品数据？两种方案实测：从自建爬虫到采集 API",
-      "url": "https://blog.csdn.net/m0_64336780/article/details/164957572",
-      "hot": "19666"
+      "title": "【从0开始学习计算机网络】| 三次握手：为什么是三次，不是两次或四次？",
+      "url": "https://blog.csdn.net/2503_94545876/article/details/164739838",
+      "hot": "19611"
     },
     {
       "rank": 3,
       "title": "百度、115、夸克太分散？用 LitePan 把多网盘和影音入口收拢到一起",
       "url": "https://blog.csdn.net/weixin_42878111/article/details/164857182",
-      "hot": "16569"
+      "hot": "16110"
     },
     {
       "rank": 4,
       "title": "当网站开始为 AI Agent 设计：Agentic Internet 正在重写互联网",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/164340718",
-      "hot": "15188"
+      "hot": "15333"
     },
     {
       "rank": 5,
       "title": "【AI大模型接入SDK】Ollama跨平台部署与运维指南",
       "url": "https://blog.csdn.net/2401_89899187/article/details/164823161",
-      "hot": "12723"
+      "hot": "12292"
     },
     {
       "rank": 6,
       "title": "基于 WorkBuddy 搭配 Hy4 Preview 打造「苏轼《定风波》三维诗词页」：Three.js + Web Speech API 从 AI 建模到网页朗读的完整实践",
       "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/164758086",
-      "hot": "12234"
+      "hot": "12148"
     },
     {
       "rank": 7,
       "title": "Docker - 基于Docker的微服务架构全栈部署实战",
       "url": "https://blog.csdn.net/qq_41187124/article/details/157612072",
-      "hot": "12163"
+      "hot": "12137"
     },
     {
       "rank": 8,
       "title": "SpringBoot3+Vue3+Flowable 公务用车：申请占坑、还车释放、撞时段怎么拦",
       "url": "https://blog.csdn.net/zhouzhongyan/article/details/164883538",
-      "hot": "10794"
+      "hot": "10677"
     },
     {
       "rank": 9,
       "title": "AtomMQTT Broker — 用 Rust 实现的轻量级高性能 MQTT 消息代理",
       "url": "https://blog.csdn.net/qq8864/article/details/164883403",
-      "hot": "9954"
+      "hot": "9855"
     },
     {
       "rank": 10,
       "title": "【计算几何】闵可夫斯基差演示",
       "url": "https://blog.csdn.net/he_zhidan/article/details/164091399",
-      "hot": "9503"
+      "hot": "9517"
     }
   ]
 }

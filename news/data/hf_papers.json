@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-11T13:52:54+00:00",
+  "updated_at": "2026-09-11T22:01:32+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,19 +14,19 @@
       "rank": 2,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "131"
+      "hot": "133"
     },
     {
       "rank": 3,
-      "title": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
-      "url": "https://huggingface.co/papers/2609.08936",
-      "hot": "207"
-    },
-    {
-      "rank": 4,
       "title": "Show-Harness: Just a VLM Agent Can Play Robots",
       "url": "https://huggingface.co/papers/2609.10522",
       "hot": "134"
+    },
+    {
+      "rank": 4,
+      "title": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
+      "url": "https://huggingface.co/papers/2609.08936",
+      "hot": "208"
     },
     {
       "rank": 5,
@@ -36,21 +36,21 @@
     },
     {
       "rank": 6,
-      "title": "Omni Interaction Agent Technical Report",
-      "url": "https://huggingface.co/papers/2609.08977",
-      "hot": "125"
-    },
-    {
-      "rank": 7,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
       "hot": "109"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "A decoder-only foundation model for time-series forecasting",
       "url": "https://huggingface.co/papers/2310.10688",
       "hot": "41"
+    },
+    {
+      "rank": 8,
+      "title": "Omni Interaction Agent Technical Report",
+      "url": "https://huggingface.co/papers/2609.08977",
+      "hot": "125"
     },
     {
       "rank": 9,
