@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-11T05:18:58+00:00",
+  "updated_at": "2026-09-11T09:48:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Exercise intensity is associated with cardiometabolic health",
-      "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00405-2",
-      "hot": "36"
+      "title": "Cherenkov Radiation - traveling faster than light",
+      "url": "http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation",
+      "hot": "31"
     },
     {
       "rank": 2,
       "title": "Shopify is moving from React Native back to Swift and Kotlin",
       "url": "https://shopify.engineering/back-to-native",
-      "hot": "918"
+      "hot": "1068"
     },
     {
       "rank": 3,
       "title": "Don't let anyone take away your big box of cables",
       "url": "https://blog.jim-nielsen.com/2026/hands-off-my-cables/",
-      "hot": "404"
+      "hot": "526"
     },
     {
       "rank": 4,
-      "title": "OpenAI Agents API",
-      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
-      "hot": "195"
+      "title": "Working with Git Worktrees in Magit",
+      "url": "https://emacsredux.com/blog/2026/09/02/working-with-git-worktrees-in-magit/",
+      "hot": "46"
     },
     {
       "rank": 5,
-      "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
-      "url": "https://cognition.com/blog/swe-2",
-      "hot": "386"
+      "title": "OpenAI Agents API",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+      "hot": "264"
     },
     {
       "rank": 6,
-      "title": "Nine coding harnesses vs. your laptop",
-      "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74",
-      "hot": "23"
+      "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
+      "url": "https://auberon.xyz/blog/posts/deathray/",
+      "hot": "189"
     },
     {
       "rank": 7,
-      "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
-      "url": "https://auberon.xyz/blog/posts/deathray/",
-      "hot": "125"
+      "title": "The Gemini app is now available for Windows",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+      "hot": "48"
     },
     {
       "rank": 8,
       "title": "Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)",
       "url": "https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images",
-      "hot": "299"
+      "hot": "335"
     },
     {
       "rank": 9,
-      "title": "The little holes in your bread are telling you something",
-      "url": "https://edconway.substack.com/p/the-little-holes-in-your-bread-are",
-      "hot": "9"
+      "title": "Mexican student creates an acoustic fire extinguisher to put out fire in seconds",
+      "url": "https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/",
+      "hot": "206"
     },
     {
       "rank": 10,
-      "title": "Google will buy half the electricity from one of Finland's nuclear power plants",
-      "url": "https://www.bbc.com/news/articles/c8r6y4me2g6o",
-      "hot": "157"
+      "title": "Nine coding harnesses vs. your laptop",
+      "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74",
+      "hot": "96"
     }
   ]
 }
