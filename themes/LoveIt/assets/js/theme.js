@@ -553,6 +553,12 @@ class Theme {
     getMermaidDefinition(element) {
         if (!element) return null;
 
+        // After the first render the element contains generated SVG/CSS text.
+        // Reuse the original source on later theme/resize renders instead of
+        // feeding the generated SVG back into Mermaid.
+        const cached = element.getAttribute('data-mermaid-source');
+        if (cached && cached.trim().length > 0) return cached.trim();
+
         const id = element.id;
         if (id && this.data && typeof this.data[id] === 'string') {
             const fromConfig = this.data[id].trim();
@@ -560,10 +566,7 @@ class Theme {
         }
 
         const fromText = element.textContent;
-        if (fromText && fromText.trim().length > 0) {
-            return fromText.trim();
-        }
-
+        if (fromText && fromText.trim().length > 0) return fromText.trim();
         return null;
     }
 
@@ -580,6 +583,7 @@ class Theme {
                 mermaid
                     .render('mermaid-svg-' + $mermaid.id, definition)
                     .then(({ svg }) => {
+                        $mermaid.setAttribute('data-mermaid-source', definition);
                         $mermaid.innerHTML = svg;
                     })
                     .catch(err => {
