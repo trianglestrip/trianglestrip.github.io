@@ -135,10 +135,13 @@ def normalize_mermaid_body(body: str) -> str:
         return "```mermaid\n" + diagram.strip() + "\n```"
 
     normalized = MERMAID_FENCE_RE.sub(normalize, body)
-    for number, match in enumerate(MERMAID_FENCE_RE.finditer(normalized), start=1):
+    blocks = list(MERMAID_FENCE_RE.finditer(normalized))
+    for number, match in enumerate(blocks, start=1):
         diagram = match.group(1)
         if "%%{init:" in diagram or any(entity in diagram for entity in ("&gt;", "&lt;", "&amp;")):
             raise ValueError(f"Mermaid block #{number} is not compatible with Mermaid 10.9.8")
+    if blocks:
+        print(f"mermaid compatibility: {len(blocks)} block(s), version 10.9.8 subset")
     return normalized
 
 
