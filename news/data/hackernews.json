@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-11T17:21:07+00:00",
+  "updated_at": "2026-09-11T19:50:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Feeling Sad about AI",
-      "url": "https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/",
-      "hot": "69"
+      "title": "A misalignment of AI in mathematics",
+      "url": "https://mathandai.org/",
+      "hot": "158"
     },
     {
       "rank": 2,
-      "title": "Global Glacier Extinction Explorer",
-      "url": "https://glacierextinction.com",
-      "hot": "78"
+      "title": "Λ Snap – An inviting programming language for kids and adults for CS study",
+      "url": "https://snap.berkeley.edu/",
+      "hot": "52"
     },
     {
       "rank": 3,
-      "title": "Measuring the sloppiness of code",
-      "url": "https://earendil.com/posts/measuring-code-sloppiness/",
-      "hot": "128"
+      "title": "The EPA Is Planning to Scrap Public Review Rules for Data Center Pollution",
+      "url": "https://capitalbnews.org/data-centers-permit-rules-epa/",
+      "hot": "138"
     },
     {
       "rank": 4,
-      "title": "Godot and Rust based multiplexer (terminal panes and more)",
-      "url": "https://github.com/godot-pty/gpty",
-      "hot": "34"
+      "title": "Claude is only available to people over 18 years",
+      "url": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude",
+      "hot": "446"
     },
     {
       "rank": 5,
       "title": "I've operated petabyte-scale ClickHouse clusters for 5 years",
       "url": "https://www.tinybird.co/blog/what-i-learned-operating-clickhouse",
-      "hot": "84"
+      "hot": "125"
     },
     {
       "rank": 6,
-      "title": "Logo Programming Language",
-      "url": "https://el.media.mit.edu/logo-foundation/what_is_logo/logo_programming.html",
-      "hot": "126"
+      "title": "GrapheneOS' rewritten Messages app is released",
+      "url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
+      "hot": "18"
     },
     {
       "rank": 7,
-      "title": "Copying login keychains between Macs fails on Secure Enclave Macs with Tahoe",
-      "url": "https://derflounder.wordpress.com/2026/09/08/manually-copying-login-keychain-files-from-one-mac-to-another-no-longer-works-on-secure-enclave-equipped-macs-running-macos-tahoe/",
-      "hot": "31"
+      "title": "118M Queries per Second on Neki",
+      "url": "https://planetscale.com/blog/118-million-queries-per-second-on-neki",
+      "hot": "66"
     },
     {
       "rank": 8,
-      "title": "So you want to use OpenRouter?",
-      "url": "https://mmoustafa.com/blog/so-you-want-to-use-openrouter/",
-      "hot": "530"
+      "title": "AlphaGenome maps 9B DNA variants",
+      "url": "https://spectrum.ieee.org/alphagenome-atlas",
+      "hot": "13"
     },
     {
       "rank": 9,
-      "title": "118M Queries per Second on Neki",
-      "url": "https://planetscale.com/blog/118-million-queries-per-second-on-neki",
-      "hot": "15"
+      "title": "Rune is now open source",
+      "url": "https://rune.build/blog/rune-is-now-open-source",
+      "hot": "71"
     },
     {
       "rank": 10,
-      "title": "Power Grab",
-      "url": "https://tante.cc/2026/09/11/power-grab/",
-      "hot": "22"
+      "title": "Mind-altering drugs played key role in rise of Andean civilization",
+      "url": "https://www.science.org/content/article/mind-altering-drugs-played-key-role-rise-andean-civilization",
+      "hot": "18"
     }
   ]
 }
