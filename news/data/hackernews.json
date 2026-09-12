@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-12T14:21:53+00:00",
+  "updated_at": "2026-09-12T17:17:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Fuck it, make it anyway",
-      "url": "https://www.joelotter.com/posts/2026/09/make-it-anyway/",
-      "hot": "249"
+      "title": "Nvidia is the central bank of AI",
+      "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+      "hot": "134"
     },
     {
       "rank": 2,
-      "title": "IKEA made a mod for Skyrim [video]",
-      "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
-      "hot": "337"
+      "title": "Make Your First Edit to OpenStreetMap in the Next 15 Minutes",
+      "url": "https://high5apps.github.io/josm-plugin-website-wizard/",
+      "hot": "23"
     },
     {
       "rank": 3,
-      "title": "Retrospectively Reverse-Engineering Apple's Neural Engine",
-      "url": "https://eiln.github.io/posts/ane.html",
-      "hot": "151"
+      "title": "A Mathematical Framework for Transformer Circuits (2021)",
+      "url": "https://transformer-circuits.pub/2021/framework/index.html",
+      "hot": "47"
     },
     {
       "rank": 4,
-      "title": "I Fixed a Tractor Using John Deere's Self-Repair Service. Farmers Aren't Sold",
-      "url": "https://www.wired.com/story/i-fixed-a-tractor-john-deere-self-repair-service/",
-      "hot": "28"
+      "title": "IKEA made a mod for Skyrim [video]",
+      "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
+      "hot": "437"
     },
     {
       "rank": 5,
-      "title": "The Worst Spam Emails: Inside iLands' AI Agent Hustle",
-      "url": "https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang/",
-      "hot": "50"
+      "title": "Microcode in Intel's 8087 floating-point chip: the scale instruction",
+      "url": "https://www.righto.com/2026/09/8087-microcode-reverse-engineering-fscale.html",
+      "hot": "17"
     },
     {
       "rank": 6,
-      "title": "A misalignment of AI in mathematics",
-      "url": "https://mathandai.org/",
-      "hot": "1056"
+      "title": "Retrospectively Reverse-Engineering Apple's Neural Engine",
+      "url": "https://eiln.github.io/posts/ane.html",
+      "hot": "184"
     },
     {
       "rank": 7,
-      "title": "A Mathematical Framework for Transformer Circuits (2021)",
-      "url": "https://transformer-circuits.pub/2021/framework/index.html",
-      "hot": "4"
+      "title": "A misalignment of AI in mathematics",
+      "url": "https://mathandai.org/",
+      "hot": "1134"
     },
     {
       "rank": 8,
-      "title": "LRU is harder to beat than the KV-cache papers suggest",
-      "url": "https://github.com/gauravapiscean/agentic-kv-cache",
-      "hot": "17"
+      "title": "I refuse to let SPICE die",
+      "url": "https://github.com/nefarius/vd_agent/",
+      "hot": "22"
     },
     {
       "rank": 9,
       "title": "I spent $220 on Google app ads and 60% of the installs were robots",
       "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
-      "hot": "626"
+      "hot": "694"
     },
     {
       "rank": 10,
-      "title": "Forgotten Woodlands",
-      "url": "https://storymaps.arcgis.com/stories/9b790daf22ba4e87836f467abb1c7e49",
-      "hot": "21"
+      "title": "Fuck it, make it anyway",
+      "url": "https://www.joelotter.com/posts/2026/09/make-it-anyway/",
+      "hot": "434"
     }
   ]
 }

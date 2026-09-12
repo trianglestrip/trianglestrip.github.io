@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-12T14:21:52+00:00",
+  "updated_at": "2026-09-12T17:17:14+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
+      "title": "刚刚，陶哲轩、邓煜等菲奖得主联合抗议：AI公司正毁掉整个数学圈！",
+      "url": "https://www.51cto.com/article/855694.html",
+      "hot": "9月8日，NS方程被宣布解决；9月11日，第二道千禧年难题霍奇猜想被曝接近解决；据称，O/A两家正疯狂竞速，向BSD猜想发起冲锋。"
+    },
+    {
+      "rank": 3,
       "title": "HarmonyOS 7 系统日历实战：让应用住进用户的日程表",
       "url": "https://ost.51cto.com/posts/56149",
       "hot": "应用的提醒类功能有一条隐形的信任链：预约提醒、课程表、健身计划&mdash;&mdash;用户真正信任的不是应用自己的通知，而是&quot;这件事进了我的日程表&quot;。日..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "不靠堆数量！揭秘 AI 基础设施智能体的可靠核心，SRE 必看",
       "url": "https://www.51cto.com/article/855611.html",
       "hot": "真正稳定的 AI 基础设施智能体，依靠的是严谨的架构设计、完善的验证机制、全维度的工程保障和持续迭代的闭环能力。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "淘天RAG三面被问:\"用GPT给另一个大模型的输出打分,这事儿靠谱吗?\"我当场答\"当然靠谱,GPT更强\",面试官却让我回去再想想，但事后越想越心虚",
       "url": "https://www.51cto.com/article/855610.html",
       "hot": "如果我是面试官，我想要听到的回答顺序大概是这样的：首先亮明立场——LLM裁判是可以用的，但是不能全信，必须配上一整套可信的评估体系。然后讲评分标准怎么去拆解成原子维度，给出证据和清晰的量表。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "四大多 Agent 架构详解 ：Agent 也要搞组织架构？一文讲透 Hierarchical 分层协同",
       "url": "https://www.51cto.com/article/855609.html",
       "hot": "Workflow 有固定流程，Supervisor 有一个中央主管，Hierarchical 有多层主管——但这三种模式其实都有一个共同点： 总有一个明确的上层控制者在统筹全局 。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "OpenAI这是拿千禧年难题当Benchmark刷啊",
       "url": "https://www.51cto.com/article/855608.html",
       "hot": "攻克纳维-斯托克斯之后，公司又在另一道千禧年大奖难题上取得“实质性进展”，正在准备公布结果。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "108亿天价薪酬留不住！Meta又失亿元AI先生",
       "url": "https://www.51cto.com/article/855607.html",
       "hot": "这次离开的人是去年Meta疯狂抢夺AI人才时，报价最贵、争议最大的一名候选人——Andrew Tulloch。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "DeepSeek V4.1 Flash 正式发布，又一波模型被斩杀了，自家模型都没放过",
       "url": "https://www.51cto.com/article/855606.html",
       "hot": "从官方跑分看，DeepSeek 这次把 Flash 做到了对标 Opus 5 和 GPT 5.6-Sol。长程写代码、办公自动化都有明显提升，而且价格还降了。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "OpenAI这是拿千禧年难题当Benchmark刷啊",
       "url": "https://www.51cto.com/article/855605.html",
       "hot": "Buckmaster过去两个月的Codex提示词，绝不可能以任何方式影响内部模型。7月3日之后的任何用户输入，也不可能进入这套系统。这比OpenAI此前“无法完全排除匿名用户数据曾帮助改进模型”的表态明确得多，也给8月研究成果是否进入模型划出了一条时间线。"
-    },
-    {
-      "rank": 10,
-      "title": "2026 年，AI 拼的不再是模型，而是这三件事：Agent、多模态与工程化",
-      "url": "https://www.51cto.com/article/855522.html",
-      "hot": "如果说 2024—2025 年我们还在惊叹\"模型又变聪明了\"，那么 2026 年的主题已经变成了\"智能如何真正干活\"。这篇文章，是我学习整理后的一次输出，聊聊我眼中 AI 最重要的三条主线：AI Agent、多模态模型、AI 工程化。"
     }
   ]
 }

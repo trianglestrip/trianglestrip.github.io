@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-12T14:21:22+00:00",
+  "updated_at": "2026-09-12T17:16:50+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,15 +36,15 @@
     },
     {
       "rank": 6,
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.3"
-    },
-    {
-      "rank": 7,
       "title": "特立独行",
       "url": "https://movie.douban.com/subject/36953973/",
       "hot": "评分 6.7"
+    },
+    {
+      "rank": 7,
+      "title": "给阿嬷的情书",
+      "url": "https://movie.douban.com/subject/37116446/",
+      "hot": "评分 9.3"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "坠落2：死点",
-      "url": "https://movie.douban.com/subject/36318704/",
-      "hot": "评分 5.5"
-    },
-    {
-      "rank": 10,
       "title": "深渊无间",
       "url": "https://movie.douban.com/subject/36576514/",
       "hot": ""
+    },
+    {
+      "rank": 10,
+      "title": "坠落2：死点",
+      "url": "https://movie.douban.com/subject/36318704/",
+      "hot": "评分 5.5"
     }
   ]
 }
