@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-12T19:24:43+00:00",
+  "updated_at": "2026-09-12T21:30:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "LG denies TV spying claims, says tracking and snooping concerns 'not true'",
-      "url": "https://www.tomshardware.com/tech-industry/big-tech/lg-strongly-denies-tv-security-claims-says-tracking-and-snooping-concerns-not-true-online-investigation-claims-216-000-000-spy-tvs-record-audio",
-      "hot": "170"
+      "title": "Make your first edit to OpenStreetMap",
+      "url": "https://high5apps.github.io/josm-plugin-website-wizard/",
+      "hot": "200"
     },
     {
       "rank": 2,
-      "title": "Make your first edit to OpenStreetMap",
-      "url": "https://high5apps.github.io/josm-plugin-website-wizard/",
-      "hot": "116"
+      "title": "Nvidia is the central bank of AI",
+      "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+      "hot": "286"
     },
     {
       "rank": 3,
-      "title": "Nvidia is the central bank of AI",
-      "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
-      "hot": "219"
+      "title": "Stabilizing Rust's Never Type",
+      "url": "https://lwn.net/SubscriberLink/1091015/d9e48318ed242b41/",
+      "hot": "81"
     },
     {
       "rank": 4,
-      "title": "Will There Be a 7G?",
-      "url": "https://arxiv.org/abs/2609.01877",
-      "hot": "38"
+      "title": "Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases",
+      "url": "https://withspecific.com/benchmarks/real-swe",
+      "hot": "16"
     },
     {
       "rank": 5,
-      "title": "We must pace the frontier",
-      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
-      "hot": "314"
+      "title": "LG denies TV spying claims, says tracking and snooping concerns 'not true'",
+      "url": "https://www.tomshardware.com/tech-industry/big-tech/lg-strongly-denies-tv-security-claims-says-tracking-and-snooping-concerns-not-true-online-investigation-claims-216-000-000-spy-tvs-record-audio",
+      "hot": "315"
     },
     {
       "rank": 6,
-      "title": "IKEA made a mod for Skyrim [video]",
-      "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
-      "hot": "479"
+      "title": "Will There Be a 7G?",
+      "url": "https://arxiv.org/abs/2609.01877",
+      "hot": "61"
     },
     {
       "rank": 7,
-      "title": "Microcode in Intel's 8087 floating-point chip: the scale instruction",
-      "url": "https://www.righto.com/2026/09/8087-microcode-reverse-engineering-fscale.html",
-      "hot": "50"
+      "title": "I made a build visualizer to understand Bun's compile times",
+      "url": "https://lalitm.com/post/buildprof/",
+      "hot": "58"
     },
     {
       "rank": 8,
-      "title": "I made a build visualizer to understand Bun's compile times",
-      "url": "https://lalitm.com/post/buildprof/",
-      "hot": "23"
+      "title": "Benchmark: CadQuery vs. OpenSCAD for agentic CAD work",
+      "url": "https://modelrift.com/blog/cadquery-vs-openscad/",
+      "hot": "11"
     },
     {
       "rank": 9,
-      "title": "google.com/goto: Google's anti-scraping update",
-      "url": "https://www.autom.dev/blog/google-search-goto-links",
-      "hot": "575"
+      "title": "We must pace the frontier",
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "hot": "426"
     },
     {
       "rank": 10,
-      "title": "A Mathematical Framework for Transformer Circuits (2021)",
-      "url": "https://transformer-circuits.pub/2021/framework/index.html",
-      "hot": "58"
+      "title": "IKEA made a mod for Skyrim [video]",
+      "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
+      "hot": "510"
     }
   ]
 }
