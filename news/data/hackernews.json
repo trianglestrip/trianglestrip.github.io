@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-12T02:21:16+00:00",
+  "updated_at": "2026-09-12T07:14:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "A misalignment of AI in mathematics",
-      "url": "https://mathandai.org/",
-      "hot": "662"
+      "title": "google.com/goto: Google's anti-scraping update",
+      "url": "https://www.autom.dev/blog/google-search-goto-links",
+      "hot": "320"
     },
     {
       "rank": 2,
-      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
-      "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
-      "hot": "312"
+      "title": "Navier-Stokes Announcement",
+      "url": "https://www.claymath.org/news/navier-stokes-announcement/",
+      "hot": "89"
     },
     {
       "rank": 3,
-      "title": "A Design Space Exploration of Async/Await",
-      "url": "https://cel.cs.brown.edu/blog/design-space-async-await/",
-      "hot": "153"
+      "title": "A misalignment of AI in mathematics",
+      "url": "https://mathandai.org/",
+      "hot": "836"
     },
     {
       "rank": 4,
-      "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
-      "url": "https://www.rubyhack.ai/",
-      "hot": "357"
+      "title": "Usenet rewind archive search engine",
+      "url": "https://www.usenet-rewind.com/",
+      "hot": "40"
     },
     {
       "rank": 5,
-      "title": "GrapheneOS' rewritten Messages app is released",
-      "url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
-      "hot": "203"
+      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+      "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+      "hot": "457"
     },
     {
       "rank": 6,
-      "title": "AI researchers debate how close we are to recursive self-improvement",
-      "url": "https://www.dwarkesh.com/p/john-beren-charlie",
-      "hot": "36"
+      "title": "Great Lakes sturgeon may be 400 years old:Scientists rethinking how to save them",
+      "url": "https://www.cbc.ca/news/canada/ontario-great-lakes-sturgeon-lifespan-study-9.7329250",
+      "hot": "49"
     },
     {
       "rank": 7,
-      "title": "Project Blinkenlights",
-      "url": "https://blinkenlights.de/en/",
-      "hot": "51"
+      "title": "A Design Space Exploration of Async/Await",
+      "url": "https://cel.cs.brown.edu/blog/design-space-async-await/",
+      "hot": "244"
     },
     {
       "rank": 8,
-      "title": "Show HN: ResolveHQ – A Helpdesk Built on Cloudflare Workers, D1, R2 and Queues",
-      "url": "https://github.com/mirza-rizvi/ResolveHQ",
-      "hot": "30"
+      "title": "Show HN: Bodily Oddities",
+      "url": "https://vester.si/bodily-oddities/",
+      "hot": "213"
     },
     {
       "rank": 9,
-      "title": "Litelm: LiteLLM Without the Bloat",
-      "url": "https://github.com/kennethwolters/litelm",
-      "hot": "97"
+      "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+      "url": "https://www.rubyhack.ai/",
+      "hot": "606"
     },
     {
       "rank": 10,
-      "title": "Λ Snap – An inviting programming language for kids and adults for CS study",
-      "url": "https://snap.berkeley.edu/",
-      "hot": "115"
+      "title": "Designing for Dual Screen and Foldable Devices with CSS (2023)",
+      "url": "https://blog.stephaniestimac.com/posts/2023/05/design-foldable-devices/",
+      "hot": "20"
     }
   ]
 }

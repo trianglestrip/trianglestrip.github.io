@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-12T02:21:19+00:00",
+  "updated_at": "2026-09-12T07:14:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Termexo v0.8.7 发布：换用 avt 解析器，修复终端空白与重绘阻塞",
+      "url": "https://www.oschina.net/news/502429",
+      "hot": "Fri, 11 Sep 2026 23:24:02 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "全能 Go Agent 框架 Covonaut v1.1.2 发布：终端对话加入旁问与三档输出",
+      "url": "https://www.oschina.net/news/502428",
+      "hot": "Fri, 11 Sep 2026 20:51:44 +0800"
+    },
+    {
+      "rank": 3,
       "title": "小米开源工业级目标说话人语音识别大模型 CocktailASR-1，解决鸡尾酒会难题",
       "url": "https://www.oschina.net/news/502427/xiaomi-cocktailasr-1",
       "hot": "Fri, 11 Sep 2026 17:00:25 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "OmniStudio | 一个本地优先、完全免费的开源桌面终端",
       "url": "https://my.oschina.net/u/4806939/blog/19757902",
       "hot": "Fri, 11 Sep 2026 16:46:28 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "FocusAny v2.2.0 模型能力标识上线，SDK CLI 新增诊断与转发，插件资源按需下载",
       "url": "https://www.oschina.net/news/502425",
       "hot": "Fri, 11 Sep 2026 16:03:10 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "瑞士政府试点用开源协作平台取代 Microsoft 365",
       "url": "https://www.oschina.net/news/502424/switzerland-gov-replace-microssoft-pilot",
       "hot": "Fri, 11 Sep 2026 15:57:00 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "【AI 智能运维平台】本周更新：内置僵尸机分析报表，快速甄别可降配/低频使用的资源",
       "url": "https://www.oschina.net/news/502423",
       "hot": "Fri, 11 Sep 2026 15:04:45 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "AIGCPanel v2.3.0 API 开放 + 全工具双语，AIGCPanel 变得「可编程」",
       "url": "https://www.oschina.net/news/502422",
       "hot": "Fri, 11 Sep 2026 11:52:21 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "首个跨平台微信 zero-click 蠕虫：一通电话就能接管账号，全程无需接听",
       "url": "https://www.oschina.net/news/502420/wechat-worm-ai-calif-tencent-zero-click",
       "hot": "Fri, 11 Sep 2026 11:37:40 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Termexo v0.8.6 发布：刷新保留 Agent 进程，终端改用屏幕状态重放",
       "url": "https://www.oschina.net/news/502419",
       "hot": "Fri, 11 Sep 2026 11:15:51 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "OpenAI 把 Codex 做成 API：Agents API 开放托管会话与沙箱",
-      "url": "https://www.oschina.net/news/502418",
-      "hot": "Fri, 11 Sep 2026 11:08:25 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "极速调度，可靠备份 OpsDump v0.1.0 首次发布",
-      "url": "https://www.oschina.net/news/502417",
-      "hot": "Fri, 11 Sep 2026 11:00:22 +0800"
     }
   ]
 }
