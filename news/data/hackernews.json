@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-12T11:37:23+00:00",
+  "updated_at": "2026-09-12T14:21:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "IKEA made a mod for Skyrim [video]",
-      "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
-      "hot": "214"
+      "title": "Fuck it, make it anyway",
+      "url": "https://www.joelotter.com/posts/2026/09/make-it-anyway/",
+      "hot": "249"
     },
     {
       "rank": 2,
-      "title": "Retrospectively Reverse-Engineering Apple's Neural Engine",
-      "url": "https://eiln.github.io/posts/ane.html",
-      "hot": "108"
+      "title": "IKEA made a mod for Skyrim [video]",
+      "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
+      "hot": "337"
     },
     {
       "rank": 3,
-      "title": "A misalignment of AI in mathematics",
-      "url": "https://mathandai.org/",
-      "hot": "974"
+      "title": "Retrospectively Reverse-Engineering Apple's Neural Engine",
+      "url": "https://eiln.github.io/posts/ane.html",
+      "hot": "151"
     },
     {
       "rank": 4,
-      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
-      "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
-      "hot": "573"
+      "title": "I Fixed a Tractor Using John Deere's Self-Repair Service. Farmers Aren't Sold",
+      "url": "https://www.wired.com/story/i-fixed-a-tractor-john-deere-self-repair-service/",
+      "hot": "28"
     },
     {
       "rank": 5,
-      "title": "A Design Space Exploration of Async/Await",
-      "url": "https://cel.cs.brown.edu/blog/design-space-async-await/",
-      "hot": "305"
+      "title": "The Worst Spam Emails: Inside iLands' AI Agent Hustle",
+      "url": "https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang/",
+      "hot": "50"
     },
     {
       "rank": 6,
-      "title": "Great Lakes sturgeon may be 400 years old:Scientists rethinking how to save them",
-      "url": "https://www.cbc.ca/news/canada/ontario-great-lakes-sturgeon-lifespan-study-9.7329250",
-      "hot": "78"
+      "title": "A misalignment of AI in mathematics",
+      "url": "https://mathandai.org/",
+      "hot": "1056"
     },
     {
       "rank": 7,
-      "title": "Navier-Stokes Announcement",
-      "url": "https://www.claymath.org/news/navier-stokes-announcement/",
-      "hot": "192"
+      "title": "A Mathematical Framework for Transformer Circuits (2021)",
+      "url": "https://transformer-circuits.pub/2021/framework/index.html",
+      "hot": "4"
     },
     {
       "rank": 8,
-      "title": "Inverse Kinematics and Foot Locking",
-      "url": "https://theorangeduck.com/page/inverse-kinematics-foot-locking",
-      "hot": "60"
+      "title": "LRU is harder to beat than the KV-cache papers suggest",
+      "url": "https://github.com/gauravapiscean/agentic-kv-cache",
+      "hot": "17"
     },
     {
       "rank": 9,
-      "title": "google.com/goto: Google's anti-scraping update",
-      "url": "https://www.autom.dev/blog/google-search-goto-links",
-      "hot": "464"
+      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+      "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+      "hot": "626"
     },
     {
       "rank": 10,
-      "title": "Usenet rewind archive search engine",
-      "url": "https://www.usenet-rewind.com/",
-      "hot": "72"
+      "title": "Forgotten Woodlands",
+      "url": "https://storymaps.arcgis.com/stories/9b790daf22ba4e87836f467abb1c7e49",
+      "hot": "21"
     }
   ]
 }
