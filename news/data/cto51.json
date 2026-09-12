@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-12T07:14:19+00:00",
+  "updated_at": "2026-09-12T11:37:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7 软键盘避让实战：聊天界面一次做对",
-      "url": "https://ost.51cto.com/posts/56140",
-      "hot": "移动端最频繁、也最被低估的&quot;系统侵入&quot;是什么？不是通知横幅，不是权限弹窗，是软键盘。一个聊天应用每天要弹出键盘几百次，每一次弹出，都..."
+      "title": "HarmonyOS LTPO 帧率实战：别把刷新率锁死 120Hz，expected 按内容填",
+      "url": "https://ost.51cto.com/posts/56156",
+      "hot": "本文聚焦HarmonyOS上基于LTPO屏幕的自适应刷新率与可变帧率能力。文中代码为便于说明自行编写，API名称、枚举取值与版本号等事实性信息均标..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7平行视界实战：让单栏页面自动变成左右分栏",
-      "url": "https://ost.51cto.com/posts/56139",
-      "hot": "大家好，今天要介绍的是HarmonyOS7中的平行视界增强能力。手机应用通常采用单页面跳转。用户从商品列表进入详情页后，列表会被完全覆盖，想..."
+      "title": "HarmonyOS 7 系统日历实战：让应用住进用户的日程表",
+      "url": "https://ost.51cto.com/posts/56149",
+      "hot": "应用的提醒类功能有一条隐形的信任链：预约提醒、课程表、健身计划&mdash;&mdash;用户真正信任的不是应用自己的通知，而是&quot;这件事进了我的日程表&quot;。日..."
     },
     {
       "rank": 3,

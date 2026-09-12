@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-12T07:14:20+00:00",
+  "updated_at": "2026-09-12T11:37:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "google.com/goto: Google's anti-scraping update",
-      "url": "https://www.autom.dev/blog/google-search-goto-links",
-      "hot": "320"
+      "title": "IKEA made a mod for Skyrim [video]",
+      "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
+      "hot": "214"
     },
     {
       "rank": 2,
-      "title": "Navier-Stokes Announcement",
-      "url": "https://www.claymath.org/news/navier-stokes-announcement/",
-      "hot": "89"
+      "title": "Retrospectively Reverse-Engineering Apple's Neural Engine",
+      "url": "https://eiln.github.io/posts/ane.html",
+      "hot": "108"
     },
     {
       "rank": 3,
       "title": "A misalignment of AI in mathematics",
       "url": "https://mathandai.org/",
-      "hot": "836"
+      "hot": "974"
     },
     {
       "rank": 4,
-      "title": "Usenet rewind archive search engine",
-      "url": "https://www.usenet-rewind.com/",
-      "hot": "40"
+      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+      "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+      "hot": "573"
     },
     {
       "rank": 5,
-      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
-      "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
-      "hot": "457"
+      "title": "A Design Space Exploration of Async/Await",
+      "url": "https://cel.cs.brown.edu/blog/design-space-async-await/",
+      "hot": "305"
     },
     {
       "rank": 6,
       "title": "Great Lakes sturgeon may be 400 years old:Scientists rethinking how to save them",
       "url": "https://www.cbc.ca/news/canada/ontario-great-lakes-sturgeon-lifespan-study-9.7329250",
-      "hot": "49"
+      "hot": "78"
     },
     {
       "rank": 7,
-      "title": "A Design Space Exploration of Async/Await",
-      "url": "https://cel.cs.brown.edu/blog/design-space-async-await/",
-      "hot": "244"
+      "title": "Navier-Stokes Announcement",
+      "url": "https://www.claymath.org/news/navier-stokes-announcement/",
+      "hot": "192"
     },
     {
       "rank": 8,
-      "title": "Show HN: Bodily Oddities",
-      "url": "https://vester.si/bodily-oddities/",
-      "hot": "213"
+      "title": "Inverse Kinematics and Foot Locking",
+      "url": "https://theorangeduck.com/page/inverse-kinematics-foot-locking",
+      "hot": "60"
     },
     {
       "rank": 9,
-      "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
-      "url": "https://www.rubyhack.ai/",
-      "hot": "606"
+      "title": "google.com/goto: Google's anti-scraping update",
+      "url": "https://www.autom.dev/blog/google-search-goto-links",
+      "hot": "464"
     },
     {
       "rank": 10,
-      "title": "Designing for Dual Screen and Foldable Devices with CSS (2023)",
-      "url": "https://blog.stephaniestimac.com/posts/2023/05/design-foldable-devices/",
-      "hot": "20"
+      "title": "Usenet rewind archive search engine",
+      "url": "https://www.usenet-rewind.com/",
+      "hot": "72"
     }
   ]
 }
