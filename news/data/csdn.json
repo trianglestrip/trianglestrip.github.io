@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-13T19:45:00+00:00",
+  "updated_at": "2026-09-13T23:32:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "如何采集Amazon 商品数据？两种方案实测：从自建爬虫到采集 API",
-      "url": "https://blog.csdn.net/m0_64336780/article/details/164957572",
-      "hot": "19677"
+      "title": "把科学计算 IDE Spyder 搬到鸿蒙 PC：Qt C++ 宿主 + libpython embed 的三阶段实战",
+      "url": "https://blog.csdn.net/mrdeam/article/details/165120809",
+      "hot": "20163"
     },
     {
       "rank": 2,
-      "title": "把科学计算 IDE Spyder 搬到鸿蒙 PC：Qt C++ 宿主 + libpython embed 的三阶段实战",
-      "url": "https://blog.csdn.net/mrdeam/article/details/165120809",
-      "hot": "19304"
+      "title": "如何采集Amazon 商品数据？两种方案实测：从自建爬虫到采集 API",
+      "url": "https://blog.csdn.net/m0_64336780/article/details/164957572",
+      "hot": "18643"
     },
     {
       "rank": 3,
       "title": "AI 已经开始做原创科研了吗？",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/164864436",
-      "hot": "16328"
+      "hot": "16000"
     },
     {
       "rank": 4,
       "title": "整理极空间时我试了件好玩的事：Docker 跑起马里奥，再用 cpolar 带到外网",
       "url": "https://blog.csdn.net/Pocker_Spades_A/article/details/165125257",
-      "hot": "11710"
+      "hot": "11560"
     },
     {
       "rank": 5,
       "title": "【AI大模型接入SDK】Ollama API 全量响应实现",
       "url": "https://blog.csdn.net/2401_89899187/article/details/164825945",
-      "hot": "11483"
+      "hot": "11244"
     },
     {
       "rank": 6,
-      "title": "AI Agent 的核心能力循环：感知→规划→执行→反思→记",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/165122245",
-      "hot": "10988"
+      "title": "AI 视频生成能不能真正跑通？MoneyPrinterTurbo 本地制作、远程访问与授权验证",
+      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/165236474",
+      "hot": "10966"
     },
     {
       "rank": 7,
       "title": "人工智能技术丛书《LangGraph智能体设计模式与多智能体开发》",
       "url": "https://blog.csdn.net/qq_41840843/article/details/164982405",
-      "hot": "10770"
+      "hot": "10736"
     },
     {
       "rank": 8,
-      "title": "用纯 Rust 重写 Podcastfy：把网页、PDF 和一段文字，变成一档双人对话播客",
-      "url": "https://blog.csdn.net/qq8864/article/details/165128044",
-      "hot": "10528"
+      "title": "AI Agent 的核心能力循环：感知→规划→执行→反思→记",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/165122245",
+      "hot": "10560"
     },
     {
       "rank": 9,
-      "title": "AI 视频生成能不能真正跑通？MoneyPrinterTurbo 本地制作、远程访问与授权验证",
-      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/165236474",
-      "hot": "10048"
+      "title": "用纯 Rust 重写 Podcastfy：把网页、PDF 和一段文字，变成一档双人对话播客",
+      "url": "https://blog.csdn.net/qq8864/article/details/165128044",
+      "hot": "10429"
     },
     {
       "rank": 10,
       "title": "【AI智能体】Cursor 规则配置项目实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/162043658",
-      "hot": "8513"
+      "hot": "8285"
     }
   ]
 }
