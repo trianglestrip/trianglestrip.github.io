@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-13T14:39:39+00:00",
+  "updated_at": "2026-09-13T17:38:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Flock worker calls police on reporter filming public camera installation",
-      "url": "https://www.investigatetv.com/2026/09/08/flock-worker-calls-police-investigatetv-reporter-filming-public-camera-installation/",
-      "hot": "108"
+      "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
+      "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
+      "hot": "189"
     },
     {
       "rank": 2,
-      "title": "JetKVM Mini",
-      "url": "https://jetkvm.com/blog/introducing-jetkvm-mini",
-      "hot": "297"
+      "title": "CUDA for AMD on Windows",
+      "url": "https://github.com/Speedstu/CUDA-for-AMD-Windows",
+      "hot": "64"
     },
     {
       "rank": 3,
-      "title": "'Fingerprints' inside the Sun could reveal if it once swallowed a planet",
-      "url": "https://ras.ac.uk/news-and-press/research-highlights/fingerprints-inside-sun-could-reveal-if-it-once-swallowed-planet",
-      "hot": "32"
+      "title": "JetKVM Mini",
+      "url": "https://jetkvm.com/blog/introducing-jetkvm-mini",
+      "hot": "396"
     },
     {
       "rank": 4,
-      "title": "TailTalk: A modern async user space AppleTalk stack with Rust and Tokio",
-      "url": "https://github.com/FeralFirmware/TailTalk/",
-      "hot": "23"
+      "title": "Why is the x86 undefined instruction called ud2? Why 2?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260910-00/?p=112689",
+      "hot": "84"
     },
     {
       "rank": 5,
-      "title": "Why are AI agents lying, cheating and coordinating?",
-      "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
-      "hot": "395"
+      "title": "Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
+      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "hot": "117"
     },
     {
       "rank": 6,
-      "title": "Reverse engineering my e-scooter and rewriting the firmware in Rust",
-      "url": "https://bensimms.moe/reverse-engineering-scooter/",
-      "hot": "66"
+      "title": "Cpak – OCI application package format for Linux desktops, servers and devices",
+      "url": "https://cpak.it/",
+      "hot": "18"
     },
     {
       "rank": 7,
-      "title": "US Customs supervisor busted for stealing hardware from Homeland Security PCs",
-      "url": "https://www.tomshardware.com/pc-components/us-customs-supervisor-busted-for-stealing-core-i7-cpus-ram-and-hard-drives-from-homeland-security-pcs-stolen-tech-swapped-with-inferior-hardware-and-cashed-out-on-newegg",
-      "hot": "36"
+      "title": "Libraries Run Rust Inside Python (With PyO3)",
+      "url": "https://belderbos.dev/blog/how-libraries-run-rust-inside-python/",
+      "hot": "27"
     },
     {
       "rank": 8,
-      "title": "Base84 deserves a place in file names",
-      "url": "https://00f.net/2026/09/09/base84/",
-      "hot": "11"
+      "title": "Reverse engineering my e-scooter and rewriting the firmware in Rust",
+      "url": "https://bensimms.moe/reverse-engineering-scooter/",
+      "hot": "176"
     },
     {
       "rank": 9,
-      "title": "Your car is selling your data",
-      "url": "https://www.theverge.com/column/994172/your-car-is-selling-your-data",
-      "hot": "25"
+      "title": "Making Startups Powerful",
+      "url": "https://paulgraham.com/powerful.html",
+      "hot": "41"
     },
     {
       "rank": 10,
-      "title": "Homebrew 7.0.0",
-      "url": "https://brew.sh/2026/09/13/homebrew-7.0.0/",
-      "hot": "264"
+      "title": "'Fingerprints' inside the Sun could reveal if it once swallowed a planet",
+      "url": "https://ras.ac.uk/news-and-press/research-highlights/fingerprints-inside-sun-could-reveal-if-it-once-swallowed-planet",
+      "hot": "80"
     }
   ]
 }
