@@ -1,68 +1,68 @@
 {
   "source": "chinanews_finance",
   "title": "中新网财经",
-  "updated_at": "2026-09-13T00:58:20+00:00",
+  "updated_at": "2026-09-13T05:36:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "对话摩尔线程张建中：打造国产GPU，一家民企的造“芯”路",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695581.shtml",
+      "hot": "Sun, 13 Sep 2026 13:07:38 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "明星去世后，代言合同还算数吗？",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695578.shtml",
+      "hot": "Sun, 13 Sep 2026 13:01:53 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "2026中国风险投资论坛在南京举办",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695574.shtml",
+      "hot": "Sun, 13 Sep 2026 12:45:36 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "户外运动为何持续吸引年轻人？热潮更需冷思考",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695570.shtml",
+      "hot": "Sun, 13 Sep 2026 12:33:37 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "2026 Inclusion·外滩大会闭幕 50余项技术、产品和应用首发首展",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695558.shtml",
+      "hot": "Sun, 13 Sep 2026 12:13:24 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "（经济观察）西部地区发力向新 地方服贸“各显神通”",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695551.shtml",
+      "hot": "Sun, 13 Sep 2026 11:39:04 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "（长征胜利90周年）“共和国摇篮”展翅 瑞金“飞”出新天地",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695536.shtml",
+      "hot": "Sun, 13 Sep 2026 11:30:03 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "“第二届天山对话：科技赋能 产业向新”活动在乌鲁木齐举行",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695543.shtml",
+      "hot": "Sun, 13 Sep 2026 11:26:25 +0800"
+    },
+    {
+      "rank": 9,
       "title": "新大众文艺，如何走进“猜你喜欢”",
       "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695510.shtml",
       "hot": "Sun, 13 Sep 2026 07:24:48 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "明星扎堆“入职”景区NPC，如何跳出短期引流噱头？",
       "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695507.shtml",
       "hot": "Sun, 13 Sep 2026 06:44:07 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "当物流装上“AI引擎” 如何跑出新速度？",
-      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695500.shtml",
-      "hot": "Sun, 13 Sep 2026 01:03:56 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "第48届世界技能大赛将在上海启幕 创多项历届之最",
-      "url": "https://www.chinanews.com.cn/cj/2026/09-12/10695482.shtml",
-      "hot": "Sat, 12 Sep 2026 22:28:24 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "多国好物跨越疆界 服贸会联通中外互惠共享",
-      "url": "https://www.chinanews.com.cn/cj/2026/09-12/10695445.shtml",
-      "hot": "Sat, 12 Sep 2026 21:22:14 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "广西首个“用机器人造机器人”工厂投产",
-      "url": "https://www.chinanews.com.cn/cj/2026/09-12/10695446.shtml",
-      "hot": "Sat, 12 Sep 2026 21:19:28 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "服贸会期间多项法商服务成果在北京发布",
-      "url": "https://www.chinanews.com.cn/cj/2026/09-12/10695450.shtml",
-      "hot": "Sat, 12 Sep 2026 21:15:02 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "服贸会期间北京石景山具身智能训练中心升级亮相",
-      "url": "https://www.chinanews.com.cn/cj/2026/09-12/10695436.shtml",
-      "hot": "Sat, 12 Sep 2026 21:14:10 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "（乡村行·看振兴）黑龙江勃利：近20万亩红松丰收 小松塔成“致富果”",
-      "url": "https://www.chinanews.com.cn/cj/2026/09-12/10695456.shtml",
-      "hot": "Sat, 12 Sep 2026 21:14:04 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "粤桂协作消费帮扶系列推介展示活动在广州启动",
-      "url": "https://www.chinanews.com.cn/cj/2026/09-12/10695471.shtml",
-      "hot": "Sat, 12 Sep 2026 21:09:39 +0800"
     }
   ]
 }

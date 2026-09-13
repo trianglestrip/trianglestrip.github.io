@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-13T00:58:32+00:00",
+  "updated_at": "2026-09-13T05:37:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Make your first edit to OpenStreetMap",
-      "url": "https://high5apps.github.io/josm-plugin-website-wizard/",
-      "hot": "308"
+      "title": "The Interim Computer Museum",
+      "url": "https://icm.museum/",
+      "hot": "63"
     },
     {
       "rank": 2,
-      "title": "Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases",
-      "url": "https://withspecific.com/benchmarks/real-swe",
-      "hot": "95"
+      "title": "Make your first edit to OpenStreetMap",
+      "url": "https://high5apps.github.io/josm-plugin-website-wizard/",
+      "hot": "389"
     },
     {
       "rank": 3,
-      "title": "Nvidia is the central bank of AI",
-      "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
-      "hot": "380"
+      "title": "Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases",
+      "url": "https://withspecific.com/benchmarks/real-swe",
+      "hot": "184"
     },
     {
       "rank": 4,
-      "title": "Apple iPod Engraver (2019)",
-      "url": "https://dunstanorchard.com/apple-ipod-engraver/",
-      "hot": "110"
+      "title": "Nvidia is the central bank of AI",
+      "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+      "hot": "437"
     },
     {
       "rank": 5,
-      "title": "Getting 50 GB/S Back from the Apple Neural Engine",
-      "url": "https://eiln.github.io/posts/ane-dma.html",
-      "hot": "62"
+      "title": "From Git to Fossil",
+      "url": "https://lucio.albenga.es/web-en/posts/2025/from-git-to-fossil.html",
+      "hot": "32"
     },
     {
       "rank": 6,
-      "title": "Stabilizing Rust's Never Type",
-      "url": "https://lwn.net/SubscriberLink/1091015/d9e48318ed242b41/",
-      "hot": "124"
+      "title": "Don't call yourself an artisanal programmer",
+      "url": "https://purplesyringa.moe/blog/dont-call-yourself-an-artisanal-programmer/",
+      "hot": "22"
     },
     {
       "rank": 7,
-      "title": "LG denies TV spying claims, says tracking and snooping concerns 'not true'",
-      "url": "https://www.tomshardware.com/tech-industry/big-tech/lg-strongly-denies-tv-security-claims-says-tracking-and-snooping-concerns-not-true-online-investigation-claims-216-000-000-spy-tvs-record-audio",
-      "hot": "428"
+      "title": "I Made a Non-Wi-Fi Mitsubishi AC Smart with an ESP32",
+      "url": "https://medium.com/@ivangomezarnedo/how-i-added-a-non-wi-fi-mitsubishi-ac-to-home-assistant-22770661dd77",
+      "hot": "20"
     },
     {
       "rank": 8,
-      "title": "IKEA made a mod for Skyrim [video]",
-      "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
-      "hot": "555"
+      "title": "A succession crisis that tore England apart",
+      "url": "https://www.historytoday.com/archive/feature/succession-crisis-tore-england-apart",
+      "hot": "13"
     },
     {
       "rank": 9,
-      "title": "We must pace the frontier",
-      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
-      "hot": "527"
+      "title": "Apple iPod Engraver (2019)",
+      "url": "https://dunstanorchard.com/apple-ipod-engraver/",
+      "hot": "176"
     },
     {
       "rank": 10,
-      "title": "Will There Be a 7G?",
-      "url": "https://arxiv.org/abs/2609.01877",
-      "hot": "81"
+      "title": "Why are AI agents lying, cheating and coordinating?",
+      "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+      "hot": "46"
     }
   ]
 }

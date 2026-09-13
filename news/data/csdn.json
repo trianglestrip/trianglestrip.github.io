@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-13T00:58:24+00:00",
+  "updated_at": "2026-09-13T05:37:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "如何采集Amazon 商品数据？两种方案实测：从自建爬虫到采集 API",
-      "url": "https://blog.csdn.net/m0_64336780/article/details/164957572",
-      "hot": "19894"
+      "title": "【AI大模型接入SDK】Ollama API 全量响应实现",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/164825945",
+      "hot": "19770"
     },
     {
       "rank": 2,
-      "title": "【AI大模型接入SDK】Ollama API 全量响应实现",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/164825945",
-      "hot": "19744"
+      "title": "飞牛 NAS 装上 Netdata：实时查看 CPU、内存、磁盘、网络与异常告警",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/165120719",
+      "hot": "18792"
     },
     {
       "rank": 3,
-      "title": "飞牛 NAS 装上 Netdata：实时查看 CPU、内存、磁盘、网络与异常告警",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/165120719",
-      "hot": "18755"
+      "title": "如何采集Amazon 商品数据？两种方案实测：从自建爬虫到采集 API",
+      "url": "https://blog.csdn.net/m0_64336780/article/details/164957572",
+      "hot": "12777"
     },
     {
       "rank": 4,
-      "title": "百度、115、夸克太分散？用 LitePan 把多网盘和影音入口收拢到一起",
-      "url": "https://blog.csdn.net/weixin_42878111/article/details/164857182",
-      "hot": "11006"
+      "title": "整理极空间时我试了件好玩的事：Docker 跑起马里奥，再用 cpolar 带到外网",
+      "url": "https://blog.csdn.net/Pocker_Spades_A/article/details/165125257",
+      "hot": "11314"
     },
     {
       "rank": 5,
-      "title": "鸿蒙平台 Notepadqq 文本编辑器适配实战：基于 Electron 壳方案的轻量级多标签编辑器开发",
-      "url": "https://blog.csdn.net/COLLINSXU/article/details/165006740",
-      "hot": "10253"
+      "title": "百度、115、夸克太分散？用 LitePan 把多网盘和影音入口收拢到一起",
+      "url": "https://blog.csdn.net/weixin_42878111/article/details/164857182",
+      "hot": "10608"
     },
     {
       "rank": 6,
-      "title": "当网站开始为 AI Agent 设计：Agentic Internet 正在重写互联网",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/164340718",
-      "hot": "9551"
+      "title": "AI Agent 的核心能力循环：感知→规划→执行→反思→记",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/165122245",
+      "hot": "9767"
     },
     {
       "rank": 7,
-      "title": "从 Prompt Engineering 到 Agent Engineering：开发范式的代际跃迁",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/164831582",
-      "hot": "8627"
+      "title": "鸿蒙平台 Notepadqq 文本编辑器适配实战：基于 Electron 壳方案的轻量级多标签编辑器开发",
+      "url": "https://blog.csdn.net/COLLINSXU/article/details/165006740",
+      "hot": "9213"
     },
     {
       "rank": 8,
       "title": "【深度学习】优化器演进_从SGD到AdamW工程实践",
       "url": "https://blog.csdn.net/2302_78391795/article/details/165120003",
-      "hot": "8592"
+      "hot": "8647"
     },
     {
       "rank": 9,
-      "title": "Linkding 自建书签库：Docker 部署、添加用户，再配置固定公网访问",
-      "url": "https://blog.csdn.net/2301_80840905/article/details/165008071",
-      "hot": "7485"
+      "title": "人工智能技术丛书《LangGraph智能体设计模式与多智能体开发》",
+      "url": "https://blog.csdn.net/qq_41840843/article/details/164982405",
+      "hot": "8213"
     },
     {
       "rank": 10,
-      "title": "数学建模国赛倒计时 0 天 ——《AI工具使用（二）——AI工具使用详情模板》",
-      "url": "https://blog.csdn.net/weixin_46111814/article/details/164723056",
-      "hot": "6710"
+      "title": "Linkding 自建书签库：Docker 部署、添加用户，再配置固定公网访问",
+      "url": "https://blog.csdn.net/2301_80840905/article/details/165008071",
+      "hot": "7751"
     }
   ]
 }

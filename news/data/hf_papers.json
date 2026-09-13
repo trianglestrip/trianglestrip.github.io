@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-12T21:31:12+00:00",
+  "updated_at": "2026-09-13T05:37:30+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,33 +18,33 @@
     },
     {
       "rank": 3,
+      "title": "AutoDev: Automated AI-Driven Development",
+      "url": "https://huggingface.co/papers/2403.08299",
+      "hot": "19"
+    },
+    {
+      "rank": 4,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "86"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "YuE: Scaling Open Foundation Models for Long-Form Music Generation",
       "url": "https://huggingface.co/papers/2503.08638",
       "hot": "75"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
       "url": "https://huggingface.co/papers/2609.08936",
       "hot": "214"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Show-Harness: Just a VLM Agent Can Play Robots",
       "url": "https://huggingface.co/papers/2609.10522",
       "hot": "138"
-    },
-    {
-      "rank": 7,
-      "title": "AutoDev: Automated AI-Driven Development",
-      "url": "https://huggingface.co/papers/2403.08299",
-      "hot": "19"
     },
     {
       "rank": 8,
