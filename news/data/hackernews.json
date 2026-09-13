@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-13T17:38:44+00:00",
+  "updated_at": "2026-09-13T19:45:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
-      "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
-      "hot": "189"
+      "title": "Why is Google still serving dodgy ads?",
+      "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+      "hot": "202"
     },
     {
       "rank": 2,
-      "title": "CUDA for AMD on Windows",
-      "url": "https://github.com/Speedstu/CUDA-for-AMD-Windows",
-      "hot": "64"
+      "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
+      "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
+      "hot": "269"
     },
     {
       "rank": 3,
-      "title": "JetKVM Mini",
-      "url": "https://jetkvm.com/blog/introducing-jetkvm-mini",
-      "hot": "396"
+      "title": "Global Shortage Has Led to Motor Oil Rationing at Costco",
+      "url": "https://guessingheadlights.com/global-shortage-has-led-to-motor-oil-rationing-at-costco/",
+      "hot": "26"
     },
     {
       "rank": 4,
-      "title": "Why is the x86 undefined instruction called ud2? Why 2?",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260910-00/?p=112689",
-      "hot": "84"
+      "title": "Data collected by cars and sold to third parties",
+      "url": "https://www.theverge.com/column/994172/your-car-is-selling-your-data",
+      "hot": "151"
     },
     {
       "rank": 5,
-      "title": "Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
-      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-      "hot": "117"
+      "title": "JetKVM Mini",
+      "url": "https://jetkvm.com/blog/introducing-jetkvm-mini",
+      "hot": "445"
     },
     {
       "rank": 6,
-      "title": "Cpak – OCI application package format for Linux desktops, servers and devices",
-      "url": "https://cpak.it/",
-      "hot": "18"
+      "title": "I'm being cyberattacked by Tesla, Inc",
+      "url": "https://dreamstation.systems/personal/tesla.html",
+      "hot": "269"
     },
     {
       "rank": 7,
-      "title": "Libraries Run Rust Inside Python (With PyO3)",
-      "url": "https://belderbos.dev/blog/how-libraries-run-rust-inside-python/",
-      "hot": "27"
+      "title": "CUDA for AMD on Windows",
+      "url": "https://github.com/Speedstu/CUDA-for-AMD-Windows",
+      "hot": "99"
     },
     {
       "rank": 8,
-      "title": "Reverse engineering my e-scooter and rewriting the firmware in Rust",
-      "url": "https://bensimms.moe/reverse-engineering-scooter/",
-      "hot": "176"
+      "title": "Sean Carroll explains the biggest ideas in the universe – Full Interview [video]",
+      "url": "https://www.youtube.com/watch?v=_TBNJyztai0",
+      "hot": "34"
     },
     {
       "rank": 9,
-      "title": "Making Startups Powerful",
-      "url": "https://paulgraham.com/powerful.html",
-      "hot": "41"
+      "title": "Flock cameras used to arrest a child for playing on a swing",
+      "url": "https://www.youtube.com/watch?v=koclOnlde0E",
+      "hot": "78"
     },
     {
       "rank": 10,
-      "title": "'Fingerprints' inside the Sun could reveal if it once swallowed a planet",
-      "url": "https://ras.ac.uk/news-and-press/research-highlights/fingerprints-inside-sun-could-reveal-if-it-once-swallowed-planet",
-      "hot": "80"
+      "title": "Why is the x86 undefined instruction called ud2? Why 2?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260910-00/?p=112689",
+      "hot": "130"
     }
   ]
 }
