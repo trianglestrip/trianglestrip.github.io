@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-14T13:23:31+00:00",
+  "updated_at": "2026-09-14T18:44:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "What a time to be alive – rouge AI agents attack RubyGems.org",
-      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
-      "hot": "43"
-    },
-    {
-      "rank": 2,
-      "title": "Show HN: Kinesis – Control your Mac with the Meta Neural Band",
-      "url": "https://github.com/callbacked/kinesis",
-      "hot": "43"
-    },
-    {
-      "rank": 3,
-      "title": "EuroBirdPortal – Live bird movements across Europe",
-      "url": "https://www.eurobirdportal.org/ebp/en/",
-      "hot": "137"
-    },
-    {
-      "rank": 4,
-      "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-      "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
-      "hot": "1076"
-    },
-    {
-      "rank": 5,
-      "title": "A 386 PC for Your RP2350",
-      "url": "https://github.com/rh1tech/frank-386",
-      "hot": "97"
-    },
-    {
-      "rank": 6,
-      "title": "An atlas of periodic solutions to the three-body problem",
-      "url": "https://www.threebodyorbits.com/",
-      "hot": "107"
-    },
-    {
-      "rank": 7,
-      "title": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-      "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
-      "hot": "60"
-    },
-    {
-      "rank": 8,
-      "title": "OpenArch – PyTorch implementations of modern LLM architectures",
-      "url": "https://github.com/anuj0456/OpenArch",
+      "title": "Pion, an agent designed to run any company autonomously",
+      "url": "https://andonlabs.com/blog/why-we-built-pion",
       "hot": "77"
     },
     {
+      "rank": 2,
+      "title": "Iranian banks' SSL certificates are being revoked due to OFAC sanctions",
+      "url": "https://digiato.global/report/iran-banks-ssl-certificates-domain-changes/",
+      "hot": "31"
+    },
+    {
+      "rank": 3,
+      "title": "Distributed Systems Classics (2017)",
+      "url": "https://nvartolomei.com/dist-sys-classics/",
+      "hot": "110"
+    },
+    {
+      "rank": 4,
+      "title": "Why don't machine learning research agents overfit?",
+      "url": "https://www.amazon.science/blog/why-dont-machine-learning-research-agents-overfit",
+      "hot": "52"
+    },
+    {
+      "rank": 5,
+      "title": "Show HN: Neobrutalism.dev – Just added Base UI support and added new color theme",
+      "url": "https://www.neobrutalism.dev/",
+      "hot": "63"
+    },
+    {
+      "rank": 6,
+      "title": "Principles for Fast Tokio Applications",
+      "url": "https://dial9-rs.github.io/blog/principles-for-fast-tokio-applications/",
+      "hot": "74"
+    },
+    {
+      "rank": 7,
+      "title": "Steam Frame starts at $1059",
+      "url": "https://store.steampowered.com/hardware/steamframe",
+      "hot": "134"
+    },
+    {
+      "rank": 8,
+      "title": "iOS 27, iPadOS 27, and macOS 27",
+      "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
+      "hot": "131"
+    },
+    {
       "rank": 9,
-      "title": "Devil's Arrows: Ancient builders hauled 55k-lb stones 11 miles for UK stone row",
-      "url": "https://www.sciencedaily.com/releases/2026/09/260909005152.htm",
-      "hot": "7"
+      "title": "OpenAI bots knew about the RubyGems caching vulnerability",
+      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
+      "hot": "210"
     },
     {
       "rank": 10,
-      "title": "Drawably: Hand-Drawn UI Controls",
-      "url": "https://github.com/Danilaa1/drawably",
-      "hot": "16"
+      "title": "A Beginning for Mathematics",
+      "url": "https://www.daniellitt.com/blog/2026/9/13/a-beginning-for-mathematics/",
+      "hot": "49"
     }
   ]
 }

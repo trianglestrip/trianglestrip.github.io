@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-14T13:23:20+00:00",
+  "updated_at": "2026-09-14T18:44:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI 已经开始做原创科研了吗？",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/164864436",
-      "hot": "25916"
+      "title": "【AI大模型接入SDK】LLMManager类架构与智能指针选型",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/164833261",
+      "hot": "20701"
     },
     {
       "rank": 2,
-      "title": "AI 视频生成能不能真正跑通？MoneyPrinterTurbo 本地制作、远程访问与授权验证",
-      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/165236474",
-      "hot": "20862"
+      "title": "AI 已经开始做原创科研了吗？",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/164864436",
+      "hot": "19559"
     },
     {
       "rank": 3,
-      "title": "把科学计算 IDE Spyder 搬到鸿蒙 PC：Qt C++ 宿主 + libpython embed 的三阶段实战",
-      "url": "https://blog.csdn.net/mrdeam/article/details/165120809",
-      "hot": "20157"
+      "title": "AI 视频生成能不能真正跑通？MoneyPrinterTurbo 本地制作、远程访问与授权验证",
+      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/165236474",
+      "hot": "18133"
     },
     {
       "rank": 4,
-      "title": "【AI大模型接入SDK】LLMManager类架构与智能指针选型",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/164833261",
-      "hot": "19865"
+      "title": "QQ 机器人怎么接上 AI？用 AstrBot + NapCat 搭一套可扩展的 DeepSeek 助手",
+      "url": "https://blog.csdn.net/Dovis5884/article/details/165329306",
+      "hot": "14682"
     },
     {
       "rank": 5,
-      "title": "QQ 机器人怎么接上 AI？用 AstrBot + NapCat 搭一套可扩展的 DeepSeek 助手",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/165329306",
-      "hot": "13452"
+      "title": "把 JupyterLab 搬到鸿蒙 PC：Electron 壳 + 浏览器内 Python 内核的移植实战",
+      "url": "https://blog.csdn.net/mrdeam/article/details/165120873",
+      "hot": "13030"
     },
     {
       "rank": 6,
-      "title": "【AI智能体】Cursor 规则配置项目实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162043658",
-      "hot": "13312"
+      "title": "GitHub 热榜项目 - 周榜(2026-09-12)",
+      "url": "https://blog.csdn.net/u014390502/article/details/165126233",
+      "hot": "12278"
     },
     {
       "rank": 7,
-      "title": "GitHub 热榜项目 - 周榜(2026-09-12)",
-      "url": "https://blog.csdn.net/u014390502/article/details/165126233",
-      "hot": "12953"
+      "title": "AI 不只回答问题：用 Hermes Agent 把微信指令接到 Windows 电脑上",
+      "url": "https://blog.csdn.net/2301_81152266/article/details/165322197",
+      "hot": "11499"
     },
     {
       "rank": 8,
-      "title": "AI 不只回答问题：用 Hermes Agent 把微信指令接到 Windows 电脑上",
-      "url": "https://blog.csdn.net/2301_81152266/article/details/165322197",
-      "hot": "11528"
+      "title": "【AI智能体】Cursor 规则配置项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/162043658",
+      "hot": "8984"
     },
     {
       "rank": 9,
-      "title": "整理极空间时我试了件好玩的事：Docker 跑起马里奥，再用 cpolar 带到外网",
-      "url": "https://blog.csdn.net/Pocker_Spades_A/article/details/165125257",
-      "hot": "8760"
+      "title": "设备都联网了，故障还靠人排查：工业数据库该换个选法了",
+      "url": "https://blog.csdn.net/lrq13965748542/article/details/165326583",
+      "hot": "8484"
     },
     {
       "rank": 10,
-      "title": "【共创稿事节】基于物理的动画系统：刚体、粒子与碰撞检测",
-      "url": "https://blog.csdn.net/u014727709/article/details/165008328",
-      "hot": "8039"
+      "title": "把开源 PDF 引擎塞进 JSVM：在鸿蒙 PC 上跑出一个 JasperReports 报表设计器",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/165120597",
+      "hot": "8117"
     }
   ]
 }
