@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-14T06:45:59+00:00",
+  "updated_at": "2026-09-14T13:23:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Azure 虚拟桌面混合版正式可用，许可细则尚未公布",
+      "url": "https://www.infoq.cn/article/MMD3SrhB1HuUh5Rv9Fmw?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 14 Sep 2026 17:29:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "不下班的经营者：把 LLM-as-Judge 做成会自我校准的评估闭环｜QCon上海",
+      "url": "https://www.infoq.cn/article/LoKvL75PL8g48hD3UNCE?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 14 Sep 2026 16:26:11 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "ICANN 取消第三级 .name 域名注册，是否为身份盗用敞开了大门？",
+      "url": "https://www.infoq.cn/article/DlKsq4vFFkUV9Xl7Fxls?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 14 Sep 2026 15:41:00 GMT"
+    },
+    {
+      "rank": 4,
       "title": "openJiuwen 首发双维度 RSI 框架，AI 自修改，落地办公智能体，算力亲和助力又快又省",
       "url": "https://www.infoq.cn/article/JghIFNXBNVSAfbgbR4S9?utm_source=rss&utm_medium=article",
       "hot": "Mon, 14 Sep 2026 13:40:36 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "GitLab 警告称，AI 代理的沙箱安全性取决于其网络访问的安全性",
       "url": "https://www.infoq.cn/article/XLzpR2brCNW2VgYuuYJk?utm_source=rss&utm_medium=article",
       "hot": "Mon, 14 Sep 2026 13:09:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "欧洲核子研究组织（CERN）放弃RHEL，转而采用 Debian 作为其加速器控制基础设施",
       "url": "https://www.infoq.cn/article/KJRoBoUcE4L6bOPKOHco?utm_source=rss&utm_medium=article",
       "hot": "Mon, 14 Sep 2026 11:11:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "Java 近期新闻：TornadoVM 6、JReleaser、LangChain4j、Java Operator SDK、JHipster、Yupiik Fusion",
       "url": "https://www.infoq.cn/article/VIjBCuNElpg2H4bLywVc?utm_source=rss&utm_medium=article",
       "hot": "Mon, 14 Sep 2026 09:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "‌FreeCORE：TrueNAS 衍生分支，在 FreeBSD 系统上维护与之深度整合的虚拟化、Jails 容器与 OpenZFS 文件系统‌",
       "url": "https://www.infoq.cn/article/TDav5ojS854dZKyfJmhI?utm_source=rss&utm_medium=article",
       "hot": "Sun, 13 Sep 2026 16:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "Figma 如何利用 AI 代理提升安全性",
       "url": "https://www.infoq.cn/article/eS4M9XEPmLbkxksCyAye?utm_source=rss&utm_medium=article",
       "hot": "Sun, 13 Sep 2026 10:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Read, Don't Write: 重塑大模型评价体系，构建全自动、可进化的“探测式”评测管线｜QCon上海",
       "url": "https://www.infoq.cn/article/0kYhxXxhOXhxGATe64ec?utm_source=rss&utm_medium=article",
       "hot": "Sun, 13 Sep 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "AI的新用法，被这群 Builder 带到了外滩大会开发者日",
-      "url": "https://www.infoq.cn/article/i1FJsYNhNM4wwV78ANhL?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 12 Sep 2026 20:35:26 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Google Mantis：一款旨在减少误报的基于智能代理的漏洞扫描框架",
-      "url": "https://www.infoq.cn/article/mF8WwkbQRUS7ZKprE3Ku?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 12 Sep 2026 16:06:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "两个 Token 就让 Kimi“变成”Claude？前Google DeepMind研究员意外撞上大模型的蒸馏疑云",
-      "url": "https://www.infoq.cn/article/GhA2VWxo6JTGyKIb7KdT?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 12 Sep 2026 10:19:25 GMT"
     }
   ]
 }
