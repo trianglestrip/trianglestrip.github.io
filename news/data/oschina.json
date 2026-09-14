@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-13T23:32:42+00:00",
+  "updated_at": "2026-09-14T06:45:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Termexo v0.8.7 发布：换用 avt 解析器，修复终端空白与重绘阻塞",
-      "url": "https://www.oschina.net/news/502429",
-      "hot": "Fri, 11 Sep 2026 23:24:02 +0800"
+      "title": "Casbin Gateway 开源：本地 AI 编程 Agent 管理网关，统一 29 个 Agent 的配置、用量与权限",
+      "url": "https://www.oschina.net/news/502460",
+      "hot": "Mon, 14 Sep 2026 14:11:48 +0800"
     },
     {
       "rank": 2,
-      "title": "全能 Go Agent 框架 Covonaut v1.1.2 发布：终端对话加入旁问与三档输出",
-      "url": "https://www.oschina.net/news/502428",
-      "hot": "Fri, 11 Sep 2026 20:51:44 +0800"
+      "title": "伏羲智能决策 v0.1.1 - 安全加固版本发布，现已开放线上演示",
+      "url": "https://www.oschina.net/news/502459",
+      "hot": "Mon, 14 Sep 2026 13:42:11 +0800"
     },
     {
       "rank": 3,
-      "title": "小米开源工业级目标说话人语音识别大模型 CocktailASR-1，解决鸡尾酒会难题",
-      "url": "https://www.oschina.net/news/502427/xiaomi-cocktailasr-1",
-      "hot": "Fri, 11 Sep 2026 17:00:25 +0800"
+      "title": "Casdoor v4 发布：控制台全面重写，内置 MCP Server 与 Agent 鉴权，项目已收录进 CNCF 全景图",
+      "url": "https://www.oschina.net/news/502457",
+      "hot": "Mon, 14 Sep 2026 11:53:39 +0800"
     },
     {
       "rank": 4,
-      "title": "OmniStudio | 一个本地优先、完全免费的开源桌面终端",
-      "url": "https://my.oschina.net/u/4806939/blog/19757902",
-      "hot": "Fri, 11 Sep 2026 16:46:28 +0800"
+      "title": "“豆包手机助手”消费者版本正式发布",
+      "url": "https://www.oschina.net/news/502456",
+      "hot": "Mon, 14 Sep 2026 11:19:15 +0800"
     },
     {
       "rank": 5,
-      "title": "FocusAny v2.2.0 模型能力标识上线，SDK CLI 新增诊断与转发，插件资源按需下载",
-      "url": "https://www.oschina.net/news/502425",
-      "hot": "Fri, 11 Sep 2026 16:03:10 +0800"
+      "title": "GFlow v1.2.0 发布：Go 生态审批工作流引擎，中国式审批、AI 先审、批完自动办",
+      "url": "https://www.oschina.net/news/502454",
+      "hot": "Mon, 14 Sep 2026 10:52:05 +0800"
     },
     {
       "rank": 6,
-      "title": "瑞士政府试点用开源协作平台取代 Microsoft 365",
-      "url": "https://www.oschina.net/news/502424/switzerland-gov-replace-microssoft-pilot",
-      "hot": "Fri, 11 Sep 2026 15:57:00 +0800"
+      "title": "Mailez 1.0.0 发布：全自研引擎的自托管邮件系统正式版",
+      "url": "https://www.oschina.net/news/502453",
+      "hot": "Mon, 14 Sep 2026 10:13:01 +0800"
     },
     {
       "rank": 7,
-      "title": "【AI 智能运维平台】本周更新：内置僵尸机分析报表，快速甄别可降配/低频使用的资源",
-      "url": "https://www.oschina.net/news/502423",
-      "hot": "Fri, 11 Sep 2026 15:04:45 +0800"
+      "title": "LinkAndroid v2.2.0 运行记录与无线设备管理增强，投屏诊断上线",
+      "url": "https://www.oschina.net/news/502450",
+      "hot": "Mon, 14 Sep 2026 10:00:13 +0800"
     },
     {
       "rank": 8,
-      "title": "AIGCPanel v2.3.0 API 开放 + 全工具双语，AIGCPanel 变得「可编程」",
-      "url": "https://www.oschina.net/news/502422",
-      "hot": "Fri, 11 Sep 2026 11:52:21 +0800"
+      "title": "从 Harness 到 Loop！大厂 Vibe Coding，大型代码库落地实战来了",
+      "url": "https://my.oschina.net/u/4806939/blog/19756115",
+      "hot": "Mon, 14 Sep 2026 09:15:42 +0800"
     },
     {
       "rank": 9,
-      "title": "首个跨平台微信 zero-click 蠕虫：一通电话就能接管账号，全程无需接听",
-      "url": "https://www.oschina.net/news/502420/wechat-worm-ai-calif-tencent-zero-click",
-      "hot": "Fri, 11 Sep 2026 11:37:40 +0800"
+      "title": "gfast 快速开发框架全新版本 V3.4.1 发布",
+      "url": "https://www.oschina.net/news/502448",
+      "hot": "Mon, 14 Sep 2026 09:13:39 +0800"
     },
     {
       "rank": 10,
-      "title": "Termexo v0.8.6 发布：刷新保留 Agent 进程，终端改用屏幕状态重放",
-      "url": "https://www.oschina.net/news/502419",
-      "hot": "Fri, 11 Sep 2026 11:15:51 +0800"
+      "title": "🔥🔥Skyeye 云企业级AI+零代码智能制造系统 - v4.1.4 发布",
+      "url": "https://www.oschina.net/news/502443",
+      "hot": "Mon, 14 Sep 2026 08:53:08 +0800"
     }
   ]
 }

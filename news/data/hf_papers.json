@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-13T21:44:01+00:00",
+  "updated_at": "2026-09-14T06:46:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AutoResearch: Insight In, Hallucination Out",
-      "url": "https://huggingface.co/papers/2608.17906",
-      "hot": "22"
-    },
-    {
-      "rank": 2,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "133"
+    },
+    {
+      "rank": 2,
+      "title": "AutoResearch: Insight In, Hallucination Out",
+      "url": "https://huggingface.co/papers/2608.17906",
+      "hot": "22"
     },
     {
       "rank": 3,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
       "url": "https://huggingface.co/papers/2609.08936",
-      "hot": "217"
+      "hot": "218"
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
+      "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
+      "url": "https://huggingface.co/papers/1910.03771",
+      "hot": "29"
+    },
+    {
+      "rank": 8,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
       "hot": "109"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Show-Harness: Just a VLM Agent Can Play Robots",
       "url": "https://huggingface.co/papers/2609.10522",
-      "hot": "145"
-    },
-    {
-      "rank": 9,
-      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
-      "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "207"
+      "hot": "147"
     },
     {
       "rank": 10,
-      "title": "A decoder-only foundation model for time-series forecasting",
-      "url": "https://huggingface.co/papers/2310.10688",
-      "hot": "41"
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "url": "https://huggingface.co/papers/2608.23283",
+      "hot": "207"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-13T23:32:38+00:00",
+  "updated_at": "2026-09-14T06:45:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS LTPO 帧率实战：别把刷新率锁死 120Hz，expected 按内容填",
-      "url": "https://ost.51cto.com/posts/56156",
-      "hot": "本文聚焦HarmonyOS上基于LTPO屏幕的自适应刷新率与可变帧率能力。文中代码为便于说明自行编写，API名称、枚举取值与版本号等事实性信息均标..."
+      "title": "HarmonyOS 7 画中画实战：让视频住进小窗",
+      "url": "https://ost.51cto.com/posts/56248",
+      "hot": "移动端的视频消费有一条不成文的等级链&mdash;&mdash;这条链的每一级，对应的是用户注意力的一份让渡：全屏看是专注，半屏看是兼顾，小窗看才是&quot;住下..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7 系统日历实战：让应用住进用户的日程表",
-      "url": "https://ost.51cto.com/posts/56149",
-      "hot": "应用的提醒类功能有一条隐形的信任链：预约提醒、课程表、健身计划&mdash;&mdash;用户真正信任的不是应用自己的通知，而是&quot;这件事进了我的日程表&quot;。日..."
+      "title": "HarmonyOS 文本展开收起功能完全解析：从纯文本到富文本的进阶实战",
+      "url": "https://ost.51cto.com/posts/56240",
+      "hot": "HarmonyOS文本展开收起功能完全解析：从纯文本到富文本的进阶实战一、为什么要实现文本展开收起？在移动应用开发中，我们经常遇到这样的场..."
     },
     {
       "rank": 3,
-      "title": "程序员的黄金时代还没结束！Android大神Jake Wharton：只会写代码的人危险了，但是懂系统的人没有",
-      "url": "https://www.51cto.com/article/855690.html",
-      "hot": "Jake的“Never”不适合被抄成所有开发者的统一答案。Agent已经能接走大量检索、批量修改、测试生成和样板工作，完全不用它，同样可能错过新的生产方式。"
+      "title": "都 2026 年了还在用 LIMIT 深分页？聊聊它为什么慢，以及为什么没人敢删",
+      "url": "https://www.51cto.com/article/855744.html",
+      "hot": "我不反对优化深分页 SQL——延迟关联、覆盖索引，该用就用，毕竟不是每个团队都有权限改产品交互。"
     },
     {
       "rank": 4,
-      "title": "不靠堆数量！揭秘 AI 基础设施智能体的可靠核心，SRE 必看",
-      "url": "https://www.51cto.com/article/855611.html",
-      "hot": "真正稳定的 AI 基础设施智能体，依靠的是严谨的架构设计、完善的验证机制、全维度的工程保障和持续迭代的闭环能力。"
+      "title": "刚刚，阿迪王呼吁为AI紧急降速，马斯克奥特曼罕见完全支持：递归自我进化太危险了",
+      "url": "https://www.51cto.com/article/855728.html",
+      "hot": "Dario Amodei预计在未来 5-10 年内将实现富足，并治愈大多数疾病。"
     },
     {
       "rank": 5,
-      "title": "淘天RAG三面被问:\"用GPT给另一个大模型的输出打分,这事儿靠谱吗?\"我当场答\"当然靠谱,GPT更强\",面试官却让我回去再想想，但事后越想越心虚",
-      "url": "https://www.51cto.com/article/855610.html",
-      "hot": "如果我是面试官，我想要听到的回答顺序大概是这样的：首先亮明立场——LLM裁判是可以用的，但是不能全信，必须配上一整套可信的评估体系。然后讲评分标准怎么去拆解成原子维度，给出证据和清晰的量表。"
+      "title": "Astra写的代码，人类已经看不懂了",
+      "url": "https://www.51cto.com/article/855727.html",
+      "hot": "当足够多的软件强化学习环境只测功能和结果、不给代码质量任何监督信号时，模型自然会学成这样。"
     },
     {
       "rank": 6,
-      "title": "四大多 Agent 架构详解 ：Agent 也要搞组织架构？一文讲透 Hierarchical 分层协同",
-      "url": "https://www.51cto.com/article/855609.html",
-      "hot": "Workflow 有固定流程，Supervisor 有一个中央主管，Hierarchical 有多层主管——但这三种模式其实都有一个共同点： 总有一个明确的上层控制者在统筹全局 。"
+      "title": "左手推理成本暴降96%，右手性能反超大模型！当小模型学会了何时求助",
+      "url": "https://www.51cto.com/article/855726.html",
+      "hot": "我们这个世界上需要被 AI 解决的问题和场景，无论是从当下时间点看，它就已经是无穷无尽的了。"
     },
     {
       "rank": 7,
-      "title": "OpenAI这是拿千禧年难题当Benchmark刷啊",
-      "url": "https://www.51cto.com/article/855608.html",
-      "hot": "攻克纳维-斯托克斯之后，公司又在另一道千禧年大奖难题上取得“实质性进展”，正在准备公布结果。"
+      "title": "算法工程师要失业了？阿里和浙大联手提出Astar，用AI指导AI系统进化",
+      "url": "https://www.51cto.com/article/855725.html",
+      "hot": "阿里和浙大联手推出了专门用于指导 AI 系统进化的 LLM——Astar。"
     },
     {
       "rank": 8,
-      "title": "108亿天价薪酬留不住！Meta又失亿元AI先生",
-      "url": "https://www.51cto.com/article/855607.html",
-      "hot": "这次离开的人是去年Meta疯狂抢夺AI人才时，报价最贵、争议最大的一名候选人——Andrew Tulloch。"
+      "title": "谷歌DeepMind，已经破解RSI?",
+      "url": "https://www.51cto.com/article/855724.html",
+      "hot": "一个名叫「rsi-model-liverl-le」的模型，突然出现在Google生成式语言API的返回结果里。"
     },
     {
       "rank": 9,
-      "title": "DeepSeek V4.1 Flash 正式发布，又一波模型被斩杀了，自家模型都没放过",
-      "url": "https://www.51cto.com/article/855606.html",
-      "hot": "从官方跑分看，DeepSeek 这次把 Flash 做到了对标 Opus 5 和 GPT 5.6-Sol。长程写代码、办公自动化都有明显提升，而且价格还降了。"
+      "title": "AI能解千禧难题，也能杀死人类？华尔街日报拉响末日警报",
+      "url": "https://www.51cto.com/article/855723.html",
+      "hot": "Cohen坦白自己不懂纳维-斯托克斯方程，但他认为，你不需要懂任何数学，也能明白OpenAI这次声称取得的突破意味着什么：AI的进步正在加速，而且这种加速令人恐惧。"
     },
     {
       "rank": 10,
-      "title": "OpenAI这是拿千禧年难题当Benchmark刷啊",
-      "url": "https://www.51cto.com/article/855605.html",
-      "hot": "Buckmaster过去两个月的Codex提示词，绝不可能以任何方式影响内部模型。7月3日之后的任何用户输入，也不可能进入这套系统。这比OpenAI此前“无法完全排除匿名用户数据曾帮助改进模型”的表态明确得多，也给8月研究成果是否进入模型划出了一条时间线。"
+      "title": "MyBatis 启动的时候都在干什么：从 MappedStatement 说起",
+      "url": "https://www.51cto.com/article/855743.html",
+      "hot": "MyBatis 启动的过程，本质上是构建 Configuration 对象，把所有 Mapper 方法和 SQL 语句解析成一个个 MappedStatement 存起来的过程。"
     }
   ]
 }
