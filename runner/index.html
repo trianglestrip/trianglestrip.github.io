@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#04060f" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23081019'/%3E%3Cpath d='M8 22 L16 8 L24 22 Z' fill='%2300e5c0'/%3E%3C/svg%3E"
+    />
+    <title>极限向前冲 · Babylon Runner</title>
+    <script type="module" crossorigin src="/runner/assets/index-DCvy9Ubn.js"></script>
+    <link rel="stylesheet" crossorigin href="/runner/assets/index-DYj_-qRB.css">
+  </head>
+  <body>
+    <canvas id="renderCanvas" touch-action="none"></canvas>
+
+    <!-- 全屏效果层 -->
+    <div id="damage-flash"></div>
+    <div id="speedlines"></div>
+    <div id="vignette"></div>
+    <div id="aim-dot" class="hidden"></div>
+
+    <!-- HUD -->
+    <div id="hud" class="hud">
+      <div id="hud-top">
+        <div class="stat">
+          <span class="label">用时</span>
+          <span id="stat-time" class="value">0.00</span>
+        </div>
+        <div class="stat">
+          <span class="label">落水</span>
+          <span id="stat-falls" class="value">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">最佳</span>
+          <span id="stat-best" class="value">—</span>
+        </div>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-track"><div id="progress-bar"></div></div>
+        <div id="progress-label">起点</div>
+      </div>
+
+      <div id="zone-banner" class="hidden"></div>
+      <div id="toast"></div>
+      <div id="lock-hint">点击画面锁定鼠标 · 移动鼠标转视角</div>
+    </div>
+
+    <!-- 加载 -->
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>正在加载 Havok 物理引擎…</p>
+    </div>
+
+    <!-- 开始界面 -->
+    <div id="overlay-start" class="overlay">
+      <div class="panel">
+        <div class="logo">极限向前冲</div>
+        <div class="sub">BABYLON RUNNER · 3D 物理闯关</div>
+        <div class="keys">
+          <div class="key-row"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>移动（相对镜头方向）</span></div>
+          <div class="key-row"><kbd class="wide">鼠标</kbd><span>转视角，点击画面锁定指针</span></div>
+          <div class="key-row"><kbd class="wide">空格</kbd><span>跳跃 / 空中二段跳</span></div>
+          <div class="key-row"><kbd class="wide">Shift</kbd><span>冲刺</span></div>
+          <div class="key-row"><kbd>R</kbd><span>回到检查点</span></div>
+          <div class="key-row"><kbd class="wide">Esc</kbd><span>解锁鼠标 / 暂停</span></div>
+        </div>
+        <button id="btn-start" class="btn">开始挑战</button>
+        <p class="tips">掉进水里、或者被机关撞飞，都会回到最近的检查点重新出发</p>
+      </div>
+    </div>
+
+    <!-- 暂停 -->
+    <div id="overlay-pause" class="overlay hidden">
+      <div class="panel small">
+        <h2>已暂停</h2>
+        <button id="btn-resume" class="btn">继续</button>
+      </div>
+    </div>
+
+    <!-- 结算 -->
+    <div id="overlay-end" class="overlay hidden">
+      <div class="panel">
+        <h1 id="end-title">🎉 闯关成功！</h1>
+        <div id="end-stats"></div>
+        <button id="btn-restart" class="btn">再来一次</button>
+      </div>
+    </div>
+
+    <!-- 触屏控制 -->
+    <div id="touch-controls" class="hidden">
+      <div id="joystick"><div id="joystick-knob"></div></div>
+      <button id="btn-jump">跳</button>
+    </div>
+
+    <!-- Babylon.js 官方 UMD 全量包（本地化，不参与打包） -->
+    <script src="vendor/babylon.js"></script>
+    <script src="vendor/babylon.glTF2FileLoader.min.js"></script>
+  </body>
+</html>
