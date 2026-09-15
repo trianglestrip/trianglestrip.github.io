@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-15T00:44:53+00:00",
+  "updated_at": "2026-09-15T05:09:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HTTP 新增 QUERY 方法：有人叫好，也有人质疑“这不就是 GET？”",
+      "url": "https://www.infoq.cn/article/BmJh0DzGPYBEl1zlyO0C?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 15 Sep 2026 13:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Meta 打造“组织第二大脑”智能体的设计思路",
+      "url": "https://www.infoq.cn/article/4OXJdfB36TpMRdvrVgIc?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 15 Sep 2026 11:21:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "从 Trace 到规模化实时评估：面向生产流量的 Agent 可观测实践｜QCon上海",
+      "url": "https://www.infoq.cn/article/556HrGKWUqWSg7NM3YT3?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 15 Sep 2026 10:08:44 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "在金融支付系统中实施混沌工程：来自企业级 ECS 部署的经验教训",
+      "url": "https://www.infoq.cn/article/I6k1mOtQ9fltk7Ep1hZE?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 15 Sep 2026 09:04:00 GMT"
+    },
+    {
+      "rank": 5,
       "title": "AI 负责创造，人来干脏活，这事儿能否停一下？",
       "url": "https://www.infoq.cn/article/CKzbmAxb1lLuu4geZuHy?utm_source=rss&utm_medium=article",
       "hot": "Tue, 15 Sep 2026 00:08:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Token账单异常，可能不只是成本失控",
       "url": "https://www.infoq.cn/article/AcvXqsA1IGC3ACxJSgP6?utm_source=rss&utm_medium=article",
       "hot": "Mon, 14 Sep 2026 21:58:16 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "发长文预警 AI 风险后，Dario 首次专访回应：AI 不能停，但必须慢下来",
       "url": "https://www.infoq.cn/article/fsZQ39K4Cd79vaUkFz7F?utm_source=rss&utm_medium=article",
       "hot": "Mon, 14 Sep 2026 21:54:49 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "Arm 推出 AI Portal：当 AI 应用从“模型可用”走向“平台可用”",
       "url": "https://www.infoq.cn/article/xD9oWbebhcjwgHz1oEfa?utm_source=rss&utm_medium=article",
       "hot": "Mon, 14 Sep 2026 21:50:38 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "Azure 虚拟桌面混合版正式可用，许可细则尚未公布",
       "url": "https://www.infoq.cn/article/MMD3SrhB1HuUh5Rv9Fmw?utm_source=rss&utm_medium=article",
       "hot": "Mon, 14 Sep 2026 17:29:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "不下班的经营者：把 LLM-as-Judge 做成会自我校准的评估闭环｜QCon上海",
       "url": "https://www.infoq.cn/article/LoKvL75PL8g48hD3UNCE?utm_source=rss&utm_medium=article",
       "hot": "Mon, 14 Sep 2026 16:26:11 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "ICANN 取消第三级 .name 域名注册，是否为身份盗用敞开了大门？",
-      "url": "https://www.infoq.cn/article/DlKsq4vFFkUV9Xl7Fxls?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 14 Sep 2026 15:41:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "openJiuwen 首发双维度 RSI 框架，AI 自修改，落地办公智能体，算力亲和助力又快又省",
-      "url": "https://www.infoq.cn/article/JghIFNXBNVSAfbgbR4S9?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 14 Sep 2026 13:40:36 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "GitLab 警告称，AI 代理的沙箱安全性取决于其网络访问的安全性",
-      "url": "https://www.infoq.cn/article/XLzpR2brCNW2VgYuuYJk?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 14 Sep 2026 13:09:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "欧洲核子研究组织（CERN）放弃RHEL，转而采用 Debian 作为其加速器控制基础设施",
-      "url": "https://www.infoq.cn/article/KJRoBoUcE4L6bOPKOHco?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 14 Sep 2026 11:11:00 GMT"
     }
   ]
 }

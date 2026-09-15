@@ -1,57 +1,56 @@
 {
   "source": "zhihu_daily",
   "title": "知乎日报",
-  "updated_at": "2026-09-15T00:29:55+00:00",
-  "fetch_ok": false,
-  "error": "<urlopen error [Errno 101] Network is unreachable>",
+  "updated_at": "2026-09-15T05:08:12+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "为什么一只蚂蚁无论从多高的地方摔下来都不会被摔伤摔死，其他动物摔下来直接死翘翘了，背后是什么原理呢？",
+      "url": "https://daily.zhihu.com/story/9792567",
+      "hot": "作者 / 云杉"
+    },
+    {
+      "rank": 2,
       "title": "哪种动物的冬眠机制最有可能为人类研究冬眠提供有价值的参考？",
       "url": "https://daily.zhihu.com/story/9792549",
       "hot": "作者 / biokiwi"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "为啥自然演化出轮子会那么难？",
       "url": "https://daily.zhihu.com/story/9792542",
       "hot": "作者 / 小帽officials"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "为什么动物不能像人那样拥有大块胸肌？",
       "url": "https://daily.zhihu.com/story/9792513",
       "hot": "作者 / Rara"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "请问哪些植物毛茸茸的？",
       "url": "https://daily.zhihu.com/story/9792490",
       "hot": "作者 / 小星有鬼"
     },
     {
-      "rank": 5,
-      "title": "熊猫吃竹子是刻在基因中的习性吗？可以通过从小喂养其他食物改变吗？",
-      "url": "https://daily.zhihu.com/story/9792363",
-      "hot": "作者 / 瞻云"
-    },
-    {
       "rank": 6,
-      "title": "《寄生虫》里的豪宅，看起来没什么东西，豪在哪里？",
-      "url": "https://daily.zhihu.com/story/9792555",
-      "hot": "荔枝 · 1 分钟阅读"
+      "title": "数据中心为什么需要这么多电和水？",
+      "url": "https://daily.zhihu.com/story/9792573",
+      "hot": "黄河边儿 · 4 分钟阅读"
     },
     {
       "rank": 7,
-      "title": "可不可以莫名其妙地教我一个知识?",
-      "url": "https://daily.zhihu.com/story/9792557",
-      "hot": "小帽officials · 5 分钟阅读"
+      "title": "为什么中国能实现蔬菜自由，欧洲却不行？",
+      "url": "https://daily.zhihu.com/story/9792582",
+      "hot": "Alfred大老虎 · 8 分钟阅读"
     },
     {
       "rank": 8,
       "title": "瞎扯 · 如何正确地吐槽",
-      "url": "https://daily.zhihu.com/story/9792561",
-      "hot": "VOL.3988"
+      "url": "https://daily.zhihu.com/story/9792588",
+      "hot": "VOL.3989"
     }
   ]
 }

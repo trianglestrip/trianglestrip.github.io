@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-15T00:44:52+00:00",
+  "updated_at": "2026-09-15T05:09:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Ubuntu 26.10 “Rust 化”更进一步：coreutils 全部迁移到内存安全实现",
+      "url": "https://www.oschina.net/news/502490/ubuntu-26-10-rust-coreutils-complete",
+      "hot": "Tue, 15 Sep 2026 11:44:05 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "生态新成果！麒麟100“灵触&amp;灵萃”带来交互新体验",
+      "url": "https://www.oschina.net/news/502484",
+      "hot": "Tue, 15 Sep 2026 10:35:12 +0800"
+    },
+    {
+      "rank": 3,
+      "title": ":fire: xbatis 1.10.9 正式发版，mybatis 系列最好用最简单最方便的 ORM !!!",
+      "url": "https://www.oschina.net/news/502481",
+      "hot": "Tue, 15 Sep 2026 09:57:31 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "coost v4.0.0 发布",
+      "url": "https://www.oschina.net/news/502479",
+      "hot": "Tue, 15 Sep 2026 09:46:39 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "AutoClaw上架！openKylin迎来智谱AI工作助手",
+      "url": "https://www.oschina.net/news/502476",
+      "hot": "Mon, 14 Sep 2026 21:01:31 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "free ai gateway 免费 ai 网关，企业级内部 AI 中转服务（ai中转站）",
+      "url": "https://www.oschina.net/news/502475",
+      "hot": "Mon, 14 Sep 2026 20:57:10 +0800"
+    },
+    {
+      "rank": 7,
       "title": "微软史上最大号周二补丁日 ——  共计修复 974 个漏洞",
       "url": "https://www.oschina.net/news/502471/microsoft-plugs-nearly-1000-security-holes",
       "hot": "Mon, 14 Sep 2026 19:18:01 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "WordPress 创始人 Matt Mullenweg 被强制停职",
       "url": "https://www.oschina.net/news/502470/automattics-board-forces-ceo-matt-into-leave-of-absence",
       "hot": "Mon, 14 Sep 2026 19:12:53 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "为什么 JPEG XL 不该进浏览器？",
       "url": "https://www.oschina.net/news/502469/ase-against-jxl",
       "hot": "Mon, 14 Sep 2026 19:03:59 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "小红书发布开源 Search Agent “Iris”，35B 摸到万亿参数模型的搜索能力",
       "url": "https://www.oschina.net/news/502468",
       "hot": "Mon, 14 Sep 2026 18:15:39 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Homebrew 7.0 发布：命令行工具长出了 GUI，Intel Mac 支持开始倒数",
-      "url": "https://www.oschina.net/news/502465/homebrew-7-0-0",
-      "hot": "Mon, 14 Sep 2026 16:39:43 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Y Combinator 总裁希望美国 AI 实验室也能“蒸馏”前沿模型",
-      "url": "https://www.oschina.net/news/502464",
-      "hot": "Mon, 14 Sep 2026 16:27:26 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "从 Python 到 Rust：OpenAI Habitat 的 10 倍增长之路",
-      "url": "https://www.oschina.net/news/502462/openai-scaling-storage-one-billion-users-part-one",
-      "hot": "Mon, 14 Sep 2026 15:28:38 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Casbin Gateway 开源：本地 AI 编程 Agent 管理网关，统一 29 个 Agent 的配置、用量与权限",
-      "url": "https://www.oschina.net/news/502460",
-      "hot": "Mon, 14 Sep 2026 14:11:48 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "伏羲智能决策 v0.1.1 - 安全加固版本发布，现已开放线上演示",
-      "url": "https://www.oschina.net/news/502459",
-      "hot": "Mon, 14 Sep 2026 13:42:11 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Eywe - 项目管理软件",
-      "url": "https://www.oschina.net/news/502458",
-      "hot": "Mon, 14 Sep 2026 13:02:18 +0800"
     }
   ]
 }

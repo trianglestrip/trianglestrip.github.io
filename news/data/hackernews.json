@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-15T00:44:47+00:00",
+  "updated_at": "2026-09-15T05:09:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "I'm not addicted to the internet or my smartphone. I'm addicted to information",
-      "url": "https://explorator.dev/addiction/",
-      "hot": "53"
+      "title": "iOS 27, iPadOS 27, and macOS 27",
+      "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
+      "hot": "487"
     },
     {
       "rank": 2,
-      "title": "iOS 27, iPadOS 27, and macOS 27",
-      "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
-      "hot": "335"
+      "title": "4,400-Year-Old Tomb of Egyptian Judge Found at Saqqara with Colors on Walls",
+      "url": "https://arkeonews.net/4400-year-old-tomb-of-an-egyptian-judge-found-at-saqqara-with-colors-still-on-the-walls/",
+      "hot": "68"
     },
     {
       "rank": 3,
       "title": "Pion, an agent designed to run any company autonomously",
       "url": "https://andonlabs.com/blog/why-we-built-pion",
-      "hot": "273"
+      "hot": "339"
     },
     {
       "rank": 4,
       "title": "Charts built for Chat",
       "url": "https://dbtcharts.com/blog/charts-built-for-chat/",
-      "hot": "75"
+      "hot": "160"
     },
     {
       "rank": 5,
-      "title": "Show HN: Macros with a Behringer FCB1010 MIDI Pedalboard in macOS",
-      "url": "https://github.com/JamesRyanATX/fcbnerd",
-      "hot": "25"
+      "title": "Every invoice in Brazil's economy runs on SOAP 1.2. We mapped it all",
+      "url": "https://github.com/stoix-dev/sefaz-webservices-postman",
+      "hot": "31"
     },
     {
       "rank": 6,
-      "title": "Compressing a Flag to 11 Bits",
-      "url": "https://read.vantezzen.io/miniflags",
-      "hot": "51"
+      "title": "Show HN: Macros with a Behringer FCB1010 MIDI Pedalboard in macOS",
+      "url": "https://github.com/JamesRyanATX/fcbnerd",
+      "hot": "52"
     },
     {
       "rank": 7,
-      "title": "Distributed Systems Classics (2017)",
-      "url": "https://nvartolomei.com/dist-sys-classics/",
-      "hot": "228"
+      "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+      "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
+      "hot": "74"
     },
     {
       "rank": 8,
-      "title": "OpenAI bots knew about the RubyGems caching vulnerability",
-      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
-      "hot": "362"
+      "title": "XCancel service is suspended until further notice",
+      "url": "https://xcancel.com/#",
+      "hot": "541"
     },
     {
       "rank": 9,
-      "title": "XCancel service is suspended until further notice",
-      "url": "https://xcancel.com/#",
-      "hot": "432"
+      "title": "OpenAI bots knew about the RubyGems caching vulnerability",
+      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
+      "hot": "412"
     },
     {
       "rank": 10,
-      "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
-      "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
-      "hot": "17"
+      "title": "Compressing a Flag to 11 Bits",
+      "url": "https://read.vantezzen.io/miniflags",
+      "hot": "101"
     }
   ]
 }

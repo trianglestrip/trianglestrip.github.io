@@ -1,69 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-15T00:44:45+00:00",
-  "fetch_ok": false,
-  "error": "Command '['hotboard', 'cto51', '--format', 'json']' timed out after 60 seconds",
+  "updated_at": "2026-09-15T05:09:14+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 互动卡片实战：破框动效、系统裁决与省电模式的坑",
-      "url": "https://ost.51cto.com/posts/56263",
-      "hot": "事情是这么开始的。我们项目里有个记账卡片，摆桌面上就显示个金额，四四方方一张图，点开进应用。某天产品拿着手机过来，给我看了一段别人..."
+      "title": "【HarmonyOS 7 闪控窗深度实战】02 闪控窗同步应用页面与任务进度",
+      "url": "https://ost.51cto.com/posts/56293",
+      "hot": "前言文件整理持续进行时，只有开始和完成两种文字还不足以说明处理到了哪里。主页面增加百分比以后，用户会希望闪控窗也显示同样的进展，并..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7 画中画实战：让视频住进小窗",
-      "url": "https://ost.51cto.com/posts/56248",
-      "hot": "移动端的视频消费有一条不成文的等级链&mdash;&mdash;这条链的每一级，对应的是用户注意力的一份让渡：全屏看是专注，半屏看是兼顾，小窗看才是&quot;住下..."
+      "title": "HarmonyOS7 Navigation Auto：手机单栏、平板双栏一套代码",
+      "url": "https://ost.51cto.com/posts/56287",
+      "hot": "前言做列表详情类页面时，手机上通常是&quot;点进去看详情、再返回列表&quot;的导航模式，平板上则更习惯&quot;左边列表、右边详情&quot;的分栏模式。如果分别写..."
     },
     {
       "rank": 3,
-      "title": "都 2026 年了还在用 LIMIT 深分页？聊聊它为什么慢，以及为什么没人敢删",
-      "url": "https://www.51cto.com/article/855744.html",
-      "hot": "我不反对优化深分页 SQL——延迟关联、覆盖索引，该用就用，毕竟不是每个团队都有权限改产品交互。"
+      "title": "AI 编程：AI 写复杂页面不难，难的是证明这版是对的，更不能越修越像抽卡开盲盒",
+      "url": "https://www.51cto.com/article/855913.html",
+      "hot": "问题的核心本质是什么，核心疑问是什么，真正起作用的要素有哪些，以及后面到底是该改工作流？，还是改技能？——并单独对照ai-frontend-dev-workflow （我自行搭建的编程AI工作流）该改进哪些方面等等。"
     },
     {
       "rank": 4,
-      "title": "刚刚，阿迪王呼吁为AI紧急降速，马斯克奥特曼罕见完全支持：递归自我进化太危险了",
-      "url": "https://www.51cto.com/article/855728.html",
-      "hot": "Dario Amodei预计在未来 5-10 年内将实现富足，并治愈大多数疾病。"
+      "title": "AI Harness 工具（tool）执行引擎：一切皆可为工具",
+      "url": "https://www.51cto.com/article/855908.html",
+      "hot": "LLM 是大脑，负责理解和推理；Memory 是记忆，负责记住上下文；Tool 是手脚，负责真正动手——读文件、跑命令、发请求、查数据。"
     },
     {
       "rank": 5,
-      "title": "Astra写的代码，人类已经看不懂了",
-      "url": "https://www.51cto.com/article/855727.html",
-      "hot": "当足够多的软件强化学习环境只测功能和结果、不给代码质量任何监督信号时，模型自然会学成这样。"
+      "title": "一个被 OpenAI 报道的北海道农民，1500 亩大棚自动化案例的工程拆解（很详细）",
+      "url": "https://www.51cto.com/article/855907.html",
+      "hot": "大棚卷膜从手动到远程再到温度联动，每一步改变和保留了啥；一条手机指令怎样经过云端和微控制器变成电机动作；两个实际故障暴露了哪些容易忽略的工程问题；自建方案和买成品之间的取舍逻辑；以及一个非科班使用者借助 AI 参与硬件开发，可参考的边界在哪里。"
     },
     {
       "rank": 6,
-      "title": "左手推理成本暴降96%，右手性能反超大模型！当小模型学会了何时求助",
-      "url": "https://www.51cto.com/article/855726.html",
-      "hot": "我们这个世界上需要被 AI 解决的问题和场景，无论是从当下时间点看，它就已经是无穷无尽的了。"
+      "title": "几十人用的内部系统，部署架构怎么选？",
+      "url": "https://www.51cto.com/article/855906.html",
+      "hot": "Nginx 做反向代理和 HTTPS，中间是 Spring Boot 应用本体，下面 MySQL 存数据，Redis 看情况加，MinIO 或者直接挂磁盘存文件。一年成本几百到两千块。"
     },
     {
       "rank": 7,
-      "title": "算法工程师要失业了？阿里和浙大联手提出Astar，用AI指导AI系统进化",
-      "url": "https://www.51cto.com/article/855725.html",
-      "hot": "阿里和浙大联手推出了专门用于指导 AI 系统进化的 LLM——Astar。"
+      "title": "传统 UI 库要慌了？ 这个 UI 库开始卷 AI 了",
+      "url": "https://www.51cto.com/article/855905.html",
+      "hot": "HeroUI 的价值可能不只是“给开发者提供几个组件”，而是：成为 AI 写前端时的一套 UI 基础设施。"
     },
     {
       "rank": 8,
-      "title": "谷歌DeepMind，已经破解RSI?",
-      "url": "https://www.51cto.com/article/855724.html",
-      "hot": "一个名叫「rsi-model-liverl-le」的模型，突然出现在Google生成式语言API的返回结果里。"
+      "title": "弄懂C#垃圾回收的四步走：标记、清扫、压缩与终结化到底在忙啥",
+      "url": "https://www.51cto.com/article/855904.html",
+      "hot": "咱们不妨换个角度想。把托管堆想象成一个仓库，堆满了各种货物（对象）。你要清理这个仓库，肯定不会闭着眼乱扔东西吧？正常流程应该是：先看看哪些货物还有人要（标记），把没人要的扔出去（清扫），再把剩下的货物码整齐、腾出连续的空地（压缩），碰到那些带电源插头的设备还得先拔插头断电（终结化）。"
     },
     {
       "rank": 9,
-      "title": "AI能解千禧难题，也能杀死人类？华尔街日报拉响末日警报",
-      "url": "https://www.51cto.com/article/855723.html",
-      "hot": "Cohen坦白自己不懂纳维-斯托克斯方程，但他认为，你不需要懂任何数学，也能明白OpenAI这次声称取得的突破意味着什么：AI的进步正在加速，而且这种加速令人恐惧。"
+      "title": "万字详解GPT-6 Astra，Sebastian Raschka带你读懂循环Transformer与隐藏的思维链",
+      "url": "https://www.51cto.com/article/855898.html",
+      "hot": "著名技术博主、《Build a Large Language Model (From Scratch)》的作者 Sebastian Raschka 写了一篇长文，把技术细节摊开讲了一遍。"
     },
     {
       "rank": 10,
-      "title": "MyBatis 启动的时候都在干什么：从 MappedStatement 说起",
-      "url": "https://www.51cto.com/article/855743.html",
-      "hot": "MyBatis 启动的过程，本质上是构建 Configuration 对象，把所有 Mapper 方法和 SQL 语句解析成一个个 MappedStatement 存起来的过程。"
+      "title": "「人类造的最后一个AI」还有多远？一张图看懂OpenAI、Anthropic等大厂的RSI进度",
+      "url": "https://www.51cto.com/article/855896.html",
+      "hot": "在海外 AI 圈有篇来自中国的 RSI 行业分析报告引起热议。发布仅 10 小时达到百万浏览，binyuan hui、jiachen liu 等多位顶级 AI 研究者与行业 KOL 主动转发推荐，热度还在持续上升中。"
     }
   ]
 }

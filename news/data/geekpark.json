@@ -1,69 +1,68 @@
 {
   "source": "geekpark",
   "title": "极客公园",
-  "updated_at": "2026-09-15T00:34:51+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-09-15T05:08:32+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "专访爆火「机器鸭」背后的硬件推手：这是个信号，未来推动新故事的并非硬件",
-      "url": "https://www.geekpark.net/news/370269",
-      "hot": "1962"
+      "title": "iOS 27、MacOS 27 正式发布；豆包手机助手消费者版亮相；李想：「大车」趋势一定会结束",
+      "url": "https://www.geekpark.net/news/370306",
+      "hot": "1867"
     },
     {
       "rank": 2,
-      "title": "苹果的折叠屏等了十五年，体验还差临门一脚",
-      "url": "https://www.geekpark.net/news/370231",
-      "hot": "5573"
+      "title": "专访爆火「机器鸭」背后的硬件推手：这是个信号，未来推动新故事的并非硬件",
+      "url": "https://www.geekpark.net/news/370269",
+      "hot": "3154"
     },
     {
       "rank": 3,
-      "title": "OpenAI、Anthropic 再次发出「AI 末日」警告；小米澎程今日全国交付；Deepseek 灰度测试 AI 语音对话",
-      "url": "https://www.geekpark.net/news/370228",
-      "hot": "6070"
+      "title": "苹果的折叠屏等了十五年，体验还差临门一脚",
+      "url": "https://www.geekpark.net/news/370231",
+      "hot": "7358"
     },
     {
       "rank": 4,
-      "title": "AI 时代的「4399」，可把我玩嗨了｜AI 上新",
-      "url": "https://www.geekpark.net/news/370227",
-      "hot": "11831"
+      "title": "OpenAI、Anthropic 再次发出「AI 末日」警告；小米澎程今日全国交付；Deepseek 灰度测试 AI 语音对话",
+      "url": "https://www.geekpark.net/news/370228",
+      "hot": "7144"
     },
     {
       "rank": 5,
-      "title": "DeepSeek V4.1 Flash 发布；罗永浩狂喷苹果折叠屏：全是抄的；马斯克「无聊公司」融资 30 亿美元｜极客早知道",
-      "url": "https://www.geekpark.net/news/370157",
-      "hot": "10643"
+      "title": "AI 时代的「4399」，可把我玩嗨了｜AI 上新",
+      "url": "https://www.geekpark.net/news/370227",
+      "hot": "13500"
     },
     {
       "rank": 6,
-      "title": "走出聊天框，Agent 开始进入现实世界",
-      "url": "https://www.geekpark.net/news/370064",
-      "hot": "20245"
+      "title": "DeepSeek V4.1 Flash 发布；罗永浩狂喷苹果折叠屏：全是抄的；马斯克「无聊公司」融资 30 亿美元｜极客早知道",
+      "url": "https://www.geekpark.net/news/370157",
+      "hot": "11592"
     },
     {
       "rank": 7,
-      "title": "微信，悄悄迈出 AI 社交的第一步",
-      "url": "https://www.geekpark.net/news/370155",
-      "hot": "20215"
+      "title": "走出聊天框，Agent 开始进入现实世界",
+      "url": "https://www.geekpark.net/news/370064",
+      "hot": "21808"
     },
     {
       "rank": 8,
-      "title": "对话极壳创始人孙宽：年出货 3 万台后，外骨骼「全班第一」的成长和焦虑",
-      "url": "https://www.geekpark.net/news/370150",
-      "hot": "8382"
+      "title": "微信，悄悄迈出 AI 社交的第一步",
+      "url": "https://www.geekpark.net/news/370155",
+      "hot": "21826"
     },
     {
       "rank": 9,
-      "title": "苹果进入特努斯时代，首发 15999 元折叠屏 iPhone；Deepseek 被曝备战科创板 IPO；谷歌埃森哲组建千人 FDE 团队 | 极客早知道",
-      "url": "https://www.geekpark.net/news/370089",
-      "hot": "11730"
+      "title": "对话极壳创始人孙宽：年出货 3 万台后，外骨骼「全班第一」的成长和焦虑",
+      "url": "https://www.geekpark.net/news/370150",
+      "hot": "9203"
     },
     {
       "rank": 10,
-      "title": "苹果第一台折叠 iPhone，15999 元起",
-      "url": "https://www.geekpark.net/news/370088",
-      "hot": "23073"
+      "title": "苹果进入特努斯时代，首发 15999 元折叠屏 iPhone；Deepseek 被曝备战科创板 IPO；谷歌埃森哲组建千人 FDE 团队 | 极客早知道",
+      "url": "https://www.geekpark.net/news/370089",
+      "hot": "12615"
     }
   ]
 }
