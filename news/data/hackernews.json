@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-15T18:31:40+00:00",
+  "updated_at": "2026-09-15T21:39:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
-      "url": "https://github.com/arnegiacomo/fugleramme",
-      "hot": "831"
+      "title": "Introducing System One Models and Jev",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "hot": "398"
     },
     {
       "rank": 2,
-      "title": "An Update on Wayback Machine Access",
-      "url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/",
-      "hot": "38"
+      "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+      "url": "https://github.com/arnegiacomo/fugleramme",
+      "hot": "1120"
     },
     {
       "rank": 3,
-      "title": "We got admin access to Baseten's production GitHub in 25 minutes",
-      "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
-      "hot": "20"
+      "title": "An Update on Wayback Machine Access",
+      "url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/",
+      "hot": "261"
     },
     {
       "rank": 4,
-      "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
-      "url": "https://withcapsule.app/",
-      "hot": "198"
+      "title": "Jean-Pierre Serre is 100 years old today",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Serre/",
+      "hot": "29"
     },
     {
       "rank": 5,
-      "title": "GEFS on OpenBSD: A Early Preview",
-      "url": "https://marc.info/?l=openbsd-tech&m=178948744271633&w=2",
-      "hot": "38"
+      "title": "German Rheinmetall open-sources its Battlesuite connected weapon system protcol",
+      "url": "https://rheinmetall.github.io/onboardapi-documentation/9.10.0/index.html",
+      "hot": "30"
     },
     {
       "rank": 6,
-      "title": "I can't stop thinking about Papua New Guinea",
-      "url": "https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua",
-      "hot": "805"
+      "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "hot": "187"
     },
     {
       "rank": 7,
-      "title": "Show HN: Hacking a $20 4G wireless hotspot into a texting device",
-      "url": "https://bkovac.github.io/modem-thing/",
-      "hot": "127"
+      "title": "We got admin access to Baseten's production GitHub in 25 minutes",
+      "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
+      "hot": "154"
     },
     {
       "rank": 8,
-      "title": "The CSS Zen Garden dream, finally shipped",
-      "url": "https://josprague.com/blog/the-css-zen-garden-dream-finally-shipped/",
-      "hot": "62"
+      "title": "Chopping up books when they're physically too big",
+      "url": "https://attainablefelicity.mattkirkland.com/20260915/cut-up-your-books.html",
+      "hot": "67"
     },
     {
       "rank": 9,
-      "title": "Cartesian – AI 3D Modeling for Design",
-      "url": "https://www.formas.ai/cartesian",
+      "title": "WangNet – 1.8 MB, zero-dependency Numberwang adjudication in 11 languages",
+      "url": "https://github.com/GraafHenk/numberwang",
       "hot": "55"
     },
     {
       "rank": 10,
-      "title": "Giving up on smart rings",
-      "url": "https://notesbylex.com/giving-up-on-smart-rings",
-      "hot": "35"
+      "title": "Building a Linux GPU Driver for the M4 Mac Mini in One Month",
+      "url": "https://codyho.dev/blog/gpu-driver/",
+      "hot": "42"
     }
   ]
 }
