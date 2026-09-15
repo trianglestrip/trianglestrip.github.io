@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-14T22:04:24+00:00",
+  "updated_at": "2026-09-15T00:44:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Amazon vs. Perplexity – U.S. Court of Appeals for the Ninth Circuit",
-      "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/26-1444/26-1444-2026-08-04.html",
-      "hot": "103"
+      "title": "I'm not addicted to the internet or my smartphone. I'm addicted to information",
+      "url": "https://explorator.dev/addiction/",
+      "hot": "53"
     },
     {
       "rank": 2,
-      "title": "Distributed Systems Classics (2017)",
-      "url": "https://nvartolomei.com/dist-sys-classics/",
-      "hot": "196"
+      "title": "iOS 27, iPadOS 27, and macOS 27",
+      "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
+      "hot": "335"
     },
     {
       "rank": 3,
-      "title": "A Beginning for Mathematics",
-      "url": "https://www.daniellitt.com/blog/2026/9/13/a-beginning-for-mathematics/",
-      "hot": "141"
+      "title": "Pion, an agent designed to run any company autonomously",
+      "url": "https://andonlabs.com/blog/why-we-built-pion",
+      "hot": "273"
     },
     {
       "rank": 4,
-      "title": "How my e-reader lost its stripes",
-      "url": "https://www.serpentine.com/posts/2026/x3-stripes/",
-      "hot": "110"
+      "title": "Charts built for Chat",
+      "url": "https://dbtcharts.com/blog/charts-built-for-chat/",
+      "hot": "75"
     },
     {
       "rank": 5,
-      "title": "OpenAI bots knew about the RubyGems caching vulnerability",
-      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
-      "hot": "312"
+      "title": "Show HN: Macros with a Behringer FCB1010 MIDI Pedalboard in macOS",
+      "url": "https://github.com/JamesRyanATX/fcbnerd",
+      "hot": "25"
     },
     {
       "rank": 6,
-      "title": "Principles for Fast Tokio Applications",
-      "url": "https://dial9-rs.github.io/blog/principles-for-fast-tokio-applications/",
-      "hot": "141"
+      "title": "Compressing a Flag to 11 Bits",
+      "url": "https://read.vantezzen.io/miniflags",
+      "hot": "51"
     },
     {
       "rank": 7,
-      "title": "XCancel service is suspended until further notice",
-      "url": "https://xcancel.com/#",
-      "hot": "357"
+      "title": "Distributed Systems Classics (2017)",
+      "url": "https://nvartolomei.com/dist-sys-classics/",
+      "hot": "228"
     },
     {
       "rank": 8,
-      "title": "Why don't machine learning research agents overfit?",
-      "url": "https://www.amazon.science/blog/why-dont-machine-learning-research-agents-overfit",
-      "hot": "89"
+      "title": "OpenAI bots knew about the RubyGems caching vulnerability",
+      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
+      "hot": "362"
     },
     {
       "rank": 9,
-      "title": "Cloudflare AKE cuts origin HelloRetryRequests from 52% to 3.7%",
-      "url": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
-      "hot": "63"
+      "title": "XCancel service is suspended until further notice",
+      "url": "https://xcancel.com/#",
+      "hot": "432"
     },
     {
       "rank": 10,
-      "title": "Pion, an agent designed to run any company autonomously",
-      "url": "https://andonlabs.com/blog/why-we-built-pion",
-      "hot": "216"
+      "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+      "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
+      "hot": "17"
     }
   ]
 }
