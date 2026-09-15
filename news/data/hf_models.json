@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-15T05:09:29+00:00",
+  "updated_at": "2026-09-15T14:46:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-      "hot": "2493"
+      "hot": "2601"
     },
     {
       "rank": 2,
       "title": "Edge0/Edge0-35B-A3B-preview",
       "url": "https://huggingface.co/Edge0/Edge0-35B-A3B-preview",
-      "hot": "2161"
+      "hot": "2447"
     },
     {
       "rank": 3,
       "title": "openbmb/MiniCPM5-2B",
       "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
-      "hot": "1405"
+      "hot": "1428"
     },
     {
       "rank": 4,
       "title": "nex-agi/Nex-N2.5-mini",
       "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini",
-      "hot": "784"
+      "hot": "800"
     },
     {
       "rank": 5,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "15161"
+      "hot": "15209"
     },
     {
       "rank": 6,
-      "title": "nex-agi/Nex-N2.5-Pro",
-      "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro",
-      "hot": "636"
+      "title": "m-a-p/YuE2-3B",
+      "url": "https://huggingface.co/m-a-p/YuE2-3B",
+      "hot": "525"
     },
     {
       "rank": 7,
-      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "hot": "1060"
+      "title": "nex-agi/Nex-N2.5-Pro",
+      "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro",
+      "hot": "644"
     },
     {
       "rank": 8,
-      "title": "m-a-p/YuE2-3B",
-      "url": "https://huggingface.co/m-a-p/YuE2-3B",
-      "hot": "484"
+      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "hot": "1086"
     },
     {
       "rank": 9,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "3883"
+      "hot": "3942"
     },
     {
       "rank": 10,
-      "title": "XHToken/Spark-X2.5-4B",
-      "url": "https://huggingface.co/XHToken/Spark-X2.5-4B",
-      "hot": "1177"
+      "title": "TokenRhythm/NeoHorse-1-4B",
+      "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-4B",
+      "hot": "1945"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-15T10:01:57+00:00",
+  "updated_at": "2026-09-15T14:46:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "QQ 机器人怎么接上 AI？用 AstrBot + NapCat 搭一套可扩展的 DeepSeek 助手",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/165329306",
-      "hot": "21150"
+      "title": "Pascal Editor 本地部署实战：Bun 启动 WebGPU 3D 编辑器，再解决公网访问报错",
+      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/165365290",
+      "hot": "24824"
     },
     {
       "rank": 2,
-      "title": "把 JupyterLab 搬到鸿蒙 PC：Electron 壳 + 浏览器内 Python 内核的移植实战",
-      "url": "https://blog.csdn.net/mrdeam/article/details/165120873",
-      "hot": "20166"
+      "title": "AI 已经开始做原创科研了吗？",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/164864436",
+      "hot": "17591"
     },
     {
       "rank": 3,
-      "title": "Pascal Editor 本地部署实战：Bun 启动 WebGPU 3D 编辑器，再解决公网访问报错",
-      "url": "https://blog.csdn.net/EterNity_TiMe_/article/details/165365290",
-      "hot": "17515"
+      "title": "AI 视频生成能不能真正跑通？MoneyPrinterTurbo 本地制作、远程访问与授权验证",
+      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/165236474",
+      "hot": "16727"
     },
     {
       "rank": 4,
-      "title": "把 Flameshot 编译进鸿蒙 PC：一次 Qt C++ 截图工具的源码级移植实战",
-      "url": "https://blog.csdn.net/weixin_52258054/article/details/165121028",
-      "hot": "16423"
+      "title": "QQ 机器人怎么接上 AI？用 AstrBot + NapCat 搭一套可扩展的 DeepSeek 助手",
+      "url": "https://blog.csdn.net/Dovis5884/article/details/165329306",
+      "hot": "16717"
     },
     {
       "rank": 5,
       "title": "【AI大模型接入SDK】LLMManager类架构与智能指针选型",
       "url": "https://blog.csdn.net/2401_89899187/article/details/164833261",
-      "hot": "16016"
+      "hot": "15230"
     },
     {
       "rank": 6,
-      "title": "AI 视频生成能不能真正跑通？MoneyPrinterTurbo 本地制作、远程访问与授权验证",
-      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/165236474",
-      "hot": "15772"
+      "title": "GitHub 热榜项目 - 周榜(2026-09-12)",
+      "url": "https://blog.csdn.net/u014390502/article/details/165126233",
+      "hot": "15085"
     },
     {
       "rank": 7,
-      "title": "从“装不上 JVM“到“零权限诊断“:Arthas Diag开源软件适配鸿蒙 PC 适配实战全记录",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/165120424",
-      "hot": "14074"
+      "title": "AGI的纵轴与横轴",
+      "url": "https://blog.csdn.net/fitbit/article/details/165334536",
+      "hot": "12250"
     },
     {
       "rank": 8,
-      "title": "AI 已经开始做原创科研了吗？",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/164864436",
-      "hot": "13442"
+      "title": "别再手动清空日志了：用 Ansible + Cron 把重复运维变成自动任务",
+      "url": "https://blog.csdn.net/u010726809/article/details/165299857",
+      "hot": "12248"
     },
     {
       "rank": 9,
-      "title": "设备都联网了，故障还靠人排查：工业数据库该换个选法了",
-      "url": "https://blog.csdn.net/lrq13965748542/article/details/165326583",
-      "hot": "12131"
+      "title": "想把漫画集中到自己的服务器？Teemii 从 Docker 部署到远程阅读实战",
+      "url": "https://blog.csdn.net/u014727709/article/details/165340645",
+      "hot": "11583"
     },
     {
       "rank": 10,
-      "title": "GitHub 热榜项目 - 周榜(2026-09-12)",
-      "url": "https://blog.csdn.net/u014390502/article/details/165126233",
-      "hot": "11955"
+      "title": "Html - 表格标题：caption 标签的页面展示配置",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157722691",
+      "hot": "11359"
     }
   ]
 }
