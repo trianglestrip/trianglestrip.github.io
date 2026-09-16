@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-16T16:43:33+00:00",
+  "updated_at": "2026-09-16T19:42:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Small Programming Tricks",
-      "url": "https://will-keleher.com/posts/small-programming-tricks-matter/",
-      "hot": "47"
+      "title": "Vectorized and performance-portable Quicksort",
+      "url": "https://opensource.googleblog.com/2022/06/Vectorized%20and%20performance%20portable%20Quicksort.html",
+      "hot": "111"
     },
     {
       "rank": 2,
-      "title": "Code Is Crap",
-      "url": "https://testing.googleblog.com/2011/02/this-code-is-crap.html",
-      "hot": "28"
+      "title": "Small programming tricks",
+      "url": "https://will-keleher.com/posts/small-programming-tricks-matter/",
+      "hot": "209"
     },
     {
       "rank": 3,
-      "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
-      "url": "https://arxiv.org/abs/2609.14858",
-      "hot": "92"
+      "title": "Training a 4B model to produce 81% faster query plans than Postgres",
+      "url": "https://rohanbansal.com/qorl",
+      "hot": "32"
     },
     {
       "rank": 4,
-      "title": "Mistral X Mozilla: Private, Multilingual AI Browsing",
-      "url": "https://mistral.ai/news/mistral-x-mozilla/",
-      "hot": "352"
+      "title": "Accurate Models of AMD Matrix Cores",
+      "url": "https://arxiv.org/abs/2609.14845",
+      "hot": "15"
     },
     {
       "rank": 5,
-      "title": "Introducing System One Models and Jev",
-      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
-      "hot": "1687"
+      "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+      "url": "https://arxiv.org/abs/2609.14858",
+      "hot": "140"
     },
     {
       "rank": 6,
-      "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
-      "url": "https://github.com/arnegiacomo/fugleramme",
-      "hot": "1860"
+      "title": "Mistral X Mozilla: Private, Multilingual AI Browsing",
+      "url": "https://mistral.ai/news/mistral-x-mozilla/",
+      "hot": "457"
     },
     {
       "rank": 7,
       "title": "Tell the speakers that you liked their talks",
       "url": "https://ohhelloana.blog/tell-the-speakers/",
-      "hot": "77"
+      "hot": "200"
     },
     {
       "rank": 8,
-      "title": "Can we stop with the uptime percentages?",
-      "url": "https://blog.jim-nielsen.com/2026/stop-with-the-uptime-percentage/",
-      "hot": "47"
+      "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+      "url": "https://github.com/arnegiacomo/fugleramme",
+      "hot": "1947"
     },
     {
       "rank": 9,
-      "title": "How Big Are Factorials?",
-      "url": "https://eli.thegreenplace.net/2026/how-big-are-factorials/",
-      "hot": "27"
+      "title": "Fed hikes rates as inflation worries push up bond yields",
+      "url": "https://www.reuters.com/live/live-fed-rate-hike-expected-inflation-worries-push-up-bond-yields-2026-09-16/",
+      "hot": "37"
     },
     {
       "rank": 10,
-      "title": "Hackers Got Inside a Flock Camera. Its Data Shows How the System Works",
-      "url": "https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/",
-      "hot": "239"
+      "title": "How big are factorials?",
+      "url": "https://eli.thegreenplace.net/2026/how-big-are-factorials/",
+      "hot": "61"
     }
   ]
 }
