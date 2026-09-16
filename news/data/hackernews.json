@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-16T12:03:30+00:00",
+  "updated_at": "2026-09-16T16:43:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "EU chief opens door for Canada to become 'associate member'",
-      "url": "https://www.bbc.com/news/articles/cjwyzrr9d3dko",
-      "hot": "271"
+      "title": "Small Programming Tricks",
+      "url": "https://will-keleher.com/posts/small-programming-tricks-matter/",
+      "hot": "47"
     },
     {
       "rank": 2,
-      "title": "The Google Play app review process now regularly takes longer than a week",
-      "url": "https://gultsch.social/@daniel/117280438824908947",
-      "hot": "24"
+      "title": "Code Is Crap",
+      "url": "https://testing.googleblog.com/2011/02/this-code-is-crap.html",
+      "hot": "28"
     },
     {
       "rank": 3,
-      "title": "Salesforce Global Outage",
-      "url": "https://status.salesforce.com/products/all",
-      "hot": "59"
+      "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+      "url": "https://arxiv.org/abs/2609.14858",
+      "hot": "92"
     },
     {
       "rank": 4,
       "title": "Mistral X Mozilla: Private, Multilingual AI Browsing",
       "url": "https://mistral.ai/news/mistral-x-mozilla/",
-      "hot": "112"
+      "hot": "352"
     },
     {
       "rank": 5,
       "title": "Introducing System One Models and Jev",
       "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
-      "hot": "1489"
+      "hot": "1687"
     },
     {
       "rank": 6,
       "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
       "url": "https://github.com/arnegiacomo/fugleramme",
-      "hot": "1715"
+      "hot": "1860"
     },
     {
       "rank": 7,
-      "title": "Learning Programming in an Age of LLMs",
-      "url": "https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms/",
-      "hot": "82"
+      "title": "Tell the speakers that you liked their talks",
+      "url": "https://ohhelloana.blog/tell-the-speakers/",
+      "hot": "77"
     },
     {
       "rank": 8,
-      "title": "Apple Reference Image: A New Approach for Verified Photography",
-      "url": "https://security.apple.com/blog/apple-reference-image/",
-      "hot": "302"
+      "title": "Can we stop with the uptime percentages?",
+      "url": "https://blog.jim-nielsen.com/2026/stop-with-the-uptime-percentage/",
+      "hot": "47"
     },
     {
       "rank": 9,
-      "title": "Douglas Adams and the exterminated Doctor Who adventure",
-      "url": "https://www.bbc.co.uk/news/articles/c8jdp38z4jgo",
-      "hot": "12"
+      "title": "How Big Are Factorials?",
+      "url": "https://eli.thegreenplace.net/2026/how-big-are-factorials/",
+      "hot": "27"
     },
     {
       "rank": 10,
-      "title": "An update on Wayback Machine access",
-      "url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/",
-      "hot": "567"
+      "title": "Hackers Got Inside a Flock Camera. Its Data Shows How the System Works",
+      "url": "https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/",
+      "hot": "239"
     }
   ]
 }

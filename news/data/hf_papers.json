@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-16T06:43:18+00:00",
+  "updated_at": "2026-09-16T16:43:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "136"
+      "hot": "137"
     },
     {
       "rank": 2,
@@ -20,13 +20,13 @@
       "rank": 3,
       "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
       "url": "https://huggingface.co/papers/2609.15818",
-      "hot": "415"
+      "hot": "423"
     },
     {
       "rank": 4,
       "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
       "url": "https://huggingface.co/papers/2609.13356",
-      "hot": "296"
+      "hot": "302"
     },
     {
       "rank": 5,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
-      "url": "https://huggingface.co/papers/1910.03771",
-      "hot": "29"
+      "title": "AI for Games in the Foundation Model Era",
+      "url": "https://huggingface.co/papers/2609.16679",
+      "hot": "104"
     },
     {
       "rank": 7,
       "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
       "url": "https://huggingface.co/papers/2609.15364",
-      "hot": "67"
+      "hot": "70"
     },
     {
       "rank": 8,
+      "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
+      "url": "https://huggingface.co/papers/1910.03771",
+      "hot": "29"
+    },
+    {
+      "rank": 9,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
       "hot": "207"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "86"
-    },
-    {
-      "rank": 10,
-      "title": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
-      "url": "https://huggingface.co/papers/2609.08936",
-      "hot": "218"
     }
   ]
 }

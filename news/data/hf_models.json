@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-16T06:43:18+00:00",
+  "updated_at": "2026-09-16T16:43:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-      "hot": "2749"
+      "hot": "2811"
     },
     {
       "rank": 2,
       "title": "Edge0/Edge0-35B-A3B-preview",
       "url": "https://huggingface.co/Edge0/Edge0-35B-A3B-preview",
-      "hot": "2955"
+      "hot": "3028"
     },
     {
       "rank": 3,
       "title": "openbmb/MiniCPM5-2B",
       "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
-      "hot": "1478"
+      "hot": "1494"
     },
     {
       "rank": 4,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "15305"
+      "hot": "15360"
     },
     {
       "rank": 5,
-      "title": "nex-agi/Nex-N2.5-mini",
-      "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini",
-      "hot": "813"
+      "title": "m-a-p/YuE2-3B",
+      "url": "https://huggingface.co/m-a-p/YuE2-3B",
+      "hot": "611"
     },
     {
       "rank": 6,
-      "title": "m-a-p/YuE2-3B",
-      "url": "https://huggingface.co/m-a-p/YuE2-3B",
-      "hot": "583"
+      "title": "nex-agi/Nex-N2.5-mini",
+      "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini",
+      "hot": "818"
     },
     {
       "rank": 7,
-      "title": "nex-agi/Nex-N2.5-Pro",
-      "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro",
-      "hot": "655"
+      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "hot": "1173"
     },
     {
       "rank": 8,
-      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "hot": "1150"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "4080"
     },
     {
       "rank": 9,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "4022"
+      "title": "TokenRhythm/NeoHorse-1-4B",
+      "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-4B",
+      "hot": "2102"
     },
     {
       "rank": 10,
-      "title": "TokenRhythm/NeoHorse-1-4B",
-      "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-4B",
-      "hot": "2086"
+      "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "hot": "775"
     }
   ]
 }
