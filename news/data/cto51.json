@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-15T23:41:14+00:00",
+  "updated_at": "2026-09-16T06:43:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7 数据存储选型实战：首选项与关系型数据库的八组实测",
-      "url": "https://ost.51cto.com/posts/56306",
-      "hot": "几乎每个应用都要回答同一个问题：这份数据往哪存？用户的主题偏好、上次播放进度、一份上千条的收藏清单、一堆要按条件筛选的业务记录&mdash;&mdash;..."
+      "title": "彻底玩转TabSegmentButtonV2样式定制与“一次开发多端部署”最佳实践",
+      "url": "https://ost.51cto.com/posts/56343",
+      "hot": "彻底玩转TabSegmentButtonV2样式定制与&ldquo;一次开发多端部署&rdquo;最佳实践从开发者社区的两个高频痛点说起最近在鸿蒙开发者社区和几个技术群里，..."
     },
     {
       "rank": 2,
-      "title": "【HarmonyOS 7 闪控窗深度实战】02 闪控窗同步应用页面与任务进度",
-      "url": "https://ost.51cto.com/posts/56293",
-      "hot": "前言文件整理持续进行时，只有开始和完成两种文字还不足以说明处理到了哪里。主页面增加百分比以后，用户会希望闪控窗也显示同样的进展，并..."
+      "title": "鸿蒙Next图像混合模式blendMode完全解析：从公式到实战，打造炫酷视觉效果",
+      "url": "https://ost.51cto.com/posts/56342",
+      "hot": "鸿蒙Next图像混合模式blendMode完全解析：从公式到实战，打造炫酷视觉效果前言：当UI叠加不再单调在图形渲染中，混合模式（BlendMode）决定..."
     },
     {
       "rank": 3,
-      "title": "AI 编程：AI 写复杂页面不难，难的是证明这版是对的，更不能越修越像抽卡开盲盒",
-      "url": "https://www.51cto.com/article/855913.html",
-      "hot": "问题的核心本质是什么，核心疑问是什么，真正起作用的要素有哪些，以及后面到底是该改工作流？，还是改技能？——并单独对照ai-frontend-dev-workflow （我自行搭建的编程AI工作流）该改进哪些方面等等。"
+      "title": "CVPR 2026 | EmoThinker：让 AI 学会\"察言观色\"——会推理的情感分析新范式",
+      "url": "https://www.51cto.com/article/856050.html",
+      "hot": "这篇 CVPR 2026 论文EmoThinker的目标是让模型像人类一样\"先观察、再推理、后下结论\"——先从视觉和声学模态中分别提取情感证据，再显式分析模态间的一致与冲突，最终给出情感判断以及完整的推理过程，即基于大型视觉-语言模型（LVLM）的细粒度、可解释情感推理。"
     },
     {
       "rank": 4,
-      "title": "AI Harness 工具（tool）执行引擎：一切皆可为工具",
-      "url": "https://www.51cto.com/article/855908.html",
-      "hot": "LLM 是大脑，负责理解和推理；Memory 是记忆，负责记住上下文；Tool 是手脚，负责真正动手——读文件、跑命令、发请求、查数据。"
+      "title": "TDD 管代码，谁管 Agent？评测驱动开发：分级门禁 + 基线对比，改坏立刻拦",
+      "url": "https://www.51cto.com/article/856049.html",
+      "hot": "LLM 是非确定性的。改了 prompt，你以为会变好，但可能在某些场景下变差。没有评测集，你只会注意到\"变好的部分\"，忽略\"变差的部分\"。"
     },
     {
       "rank": 5,
-      "title": "一个被 OpenAI 报道的北海道农民，1500 亩大棚自动化案例的工程拆解（很详细）",
-      "url": "https://www.51cto.com/article/855907.html",
-      "hot": "大棚卷膜从手动到远程再到温度联动，每一步改变和保留了啥；一条手机指令怎样经过云端和微控制器变成电机动作；两个实际故障暴露了哪些容易忽略的工程问题；自建方案和买成品之间的取舍逻辑；以及一个非科班使用者借助 AI 参与硬件开发，可参考的边界在哪里。"
+      "title": "Google WikiSkill：给智能体的技能进化补上\"知识管理层\"",
+      "url": "https://www.51cto.com/article/856048.html",
+      "hot": "WikiSkill 解决的不是\"怎么生成更好的技能\"，而是技能进化过程中的知识管理问题。"
     },
     {
       "rank": 6,
-      "title": "几十人用的内部系统，部署架构怎么选？",
-      "url": "https://www.51cto.com/article/855906.html",
-      "hot": "Nginx 做反向代理和 HTTPS，中间是 Spring Boot 应用本体，下面 MySQL 存数据，Redis 看情况加，MinIO 或者直接挂磁盘存文件。一年成本几百到两千块。"
+      "title": "Perplexity 发布 Q2D-Web：重新定义 AI 搜索检索评测的基准",
+      "url": "https://www.51cto.com/article/856047.html",
+      "hot": "一套面向智能体 RAG 的检索评测基准与排行榜，包含约 7 万条智能体查询、1.9 亿篇网页文档，以及三套相关性标注。"
     },
     {
       "rank": 7,
-      "title": "传统 UI 库要慌了？ 这个 UI 库开始卷 AI 了",
-      "url": "https://www.51cto.com/article/855905.html",
-      "hot": "HeroUI 的价值可能不只是“给开发者提供几个组件”，而是：成为 AI 写前端时的一套 UI 基础设施。"
+      "title": "GPT-6 Sol和Opus 5.2同时灰测！奥特曼阿莫迪周末刚喊刹车，一上班就踩油门",
+      "url": "https://www.51cto.com/article/856041.html",
+      "hot": "奥特曼、阿莫迪，你俩大哥别说二哥，一个灰度测试GPT-6 Sol，一个灰度测试Opus 5.2呢。"
     },
     {
       "rank": 8,
-      "title": "弄懂C#垃圾回收的四步走：标记、清扫、压缩与终结化到底在忙啥",
-      "url": "https://www.51cto.com/article/855904.html",
-      "hot": "咱们不妨换个角度想。把托管堆想象成一个仓库，堆满了各种货物（对象）。你要清理这个仓库，肯定不会闭着眼乱扔东西吧？正常流程应该是：先看看哪些货物还有人要（标记），把没人要的扔出去（清扫），再把剩下的货物码整齐、腾出连续的空地（压缩），碰到那些带电源插头的设备还得先拔插头断电（终结化）。"
+      "title": "别让Agent瞎想乱搜还闯祸：哪些能力该内化进模型，哪些必须交给Harness，这篇讲透",
+      "url": "https://www.51cto.com/article/856039.html",
+      "hot": "论文将内化与外化的边界作为 Agent 设计的治理轴，用它分析知识、技能与控制的位置，以及每一步推理和行动的投入。这些选择会影响系统的可靠性、效率、安全性和持续演化能力。"
     },
     {
       "rank": 9,
-      "title": "万字详解GPT-6 Astra，Sebastian Raschka带你读懂循环Transformer与隐藏的思维链",
-      "url": "https://www.51cto.com/article/855898.html",
-      "hot": "著名技术博主、《Build a Large Language Model (From Scratch)》的作者 Sebastian Raschka 写了一篇长文，把技术细节摊开讲了一遍。"
+      "title": "GPT-6 Sol要来了？OpenAI本周或迎「发布狂潮」",
+      "url": "https://www.51cto.com/article/856036.html",
+      "hot": "最早释放信号的是 OpenAI 产品负责人 Tibo Sottiaux。他在 X 上发文称，「本周发布的产品和功能数量，会达到你原本可能期待在 DevDay 2025 上看到的那个级别。」"
     },
     {
       "rank": 10,
-      "title": "「人类造的最后一个AI」还有多远？一张图看懂OpenAI、Anthropic等大厂的RSI进度",
-      "url": "https://www.51cto.com/article/855896.html",
-      "hot": "在海外 AI 圈有篇来自中国的 RSI 行业分析报告引起热议。发布仅 10 小时达到百万浏览，binyuan hui、jiachen liu 等多位顶级 AI 研究者与行业 KOL 主动转发推荐，热度还在持续上升中。"
+      "title": "GPT-6刷到99.9%，ARC AGI考卷被迫重做！下一关考「发明」",
+      "url": "https://www.51cto.com/article/856035.html",
+      "hot": "GPT-6 Astra一出世，在ARC-AGI-3半私有测试集上，拿下了99.9%的成绩。"
     }
   ]
 }

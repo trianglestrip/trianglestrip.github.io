@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-15T21:39:37+00:00",
+  "updated_at": "2026-09-16T06:43:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-      "hot": "2675"
+      "hot": "2749"
     },
     {
       "rank": 2,
       "title": "Edge0/Edge0-35B-A3B-preview",
       "url": "https://huggingface.co/Edge0/Edge0-35B-A3B-preview",
-      "hot": "2650"
+      "hot": "2955"
     },
     {
       "rank": 3,
       "title": "openbmb/MiniCPM5-2B",
       "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
-      "hot": "1447"
+      "hot": "1478"
     },
     {
       "rank": 4,
-      "title": "nex-agi/Nex-N2.5-mini",
-      "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini",
-      "hot": "803"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "15305"
     },
     {
       "rank": 5,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "15256"
+      "title": "nex-agi/Nex-N2.5-mini",
+      "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini",
+      "hot": "813"
     },
     {
       "rank": 6,
       "title": "m-a-p/YuE2-3B",
       "url": "https://huggingface.co/m-a-p/YuE2-3B",
-      "hot": "547"
+      "hot": "583"
     },
     {
       "rank": 7,
       "title": "nex-agi/Nex-N2.5-Pro",
       "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro",
-      "hot": "649"
+      "hot": "655"
     },
     {
       "rank": 8,
       "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "hot": "1123"
+      "hot": "1150"
     },
     {
       "rank": 9,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "3980"
+      "hot": "4022"
     },
     {
       "rank": 10,
       "title": "TokenRhythm/NeoHorse-1-4B",
       "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-4B",
-      "hot": "2004"
+      "hot": "2086"
     }
   ]
 }

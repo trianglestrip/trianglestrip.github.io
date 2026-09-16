@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-15T23:41:20+00:00",
+  "updated_at": "2026-09-16T06:43:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "自主团队被捧过头了？Simon Rohrer 直言：你们交付的根本不是产品",
+      "url": "https://www.infoq.cn/article/zZ1VxUIIPts70RtVpGhB?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 16 Sep 2026 13:23:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Java新闻汇总：Simple JSON API、GlassFish、Jakarta EE、JNoSQL和Open Liberty、LangChain4j",
+      "url": "https://www.infoq.cn/article/BAafGhU4GTtbxrRrSEPW?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 16 Sep 2026 11:06:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "从接住告警到自我进化：快手智能运维助手实践｜QCon上海",
+      "url": "https://www.infoq.cn/article/keHKo56wrachdtEhekUD?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 16 Sep 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Cloudflare将每天90亿次请求的JavaScript CDN迁移到其开发者平台",
+      "url": "https://www.infoq.cn/article/J5iJdjq6bIeRZHZF8fXO?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 16 Sep 2026 09:10:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "129亿美元卖身英伟达之后，是时候重新理解Hugging Face了",
+      "url": "https://www.infoq.cn/article/foEzSr8xfG0STQ1wgbti?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 16 Sep 2026 08:00:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "缓存不该困在一台服务器里",
       "url": "https://www.infoq.cn/article/zfjt89uVj0EGxf6aeaw4?utm_source=rss&utm_medium=article",
       "hot": "Tue, 15 Sep 2026 23:00:52 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Agent开始调用基础设施，Kubernetes准备好了吗？",
       "url": "https://www.infoq.cn/article/jGTsO1DrV87muOqyDPGS?utm_source=rss&utm_medium=article",
       "hot": "Tue, 15 Sep 2026 20:38:38 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "飞书与豆包工作合体后首亮相：Agent 能进群，还能帮你写周报、做PPT",
       "url": "https://www.infoq.cn/article/aCRVupdyEAHtENIiIDwq?utm_source=rss&utm_medium=article",
       "hot": "Tue, 15 Sep 2026 18:37:10 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "支付宝 xUI -- “阿宝”背后的 Agentic 终端交互引擎",
       "url": "https://www.infoq.cn/article/at1UIEMQbHewc34wvFQ8?utm_source=rss&utm_medium=article",
       "hot": "Tue, 15 Sep 2026 18:27:44 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "QQ 飞车 Agentic 研发转型过程中的Loop Engineering",
       "url": "https://www.infoq.cn/article/ifpS7rhLq24FjWYM6IqW?utm_source=rss&utm_medium=article",
       "hot": "Tue, 15 Sep 2026 17:24:16 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "OpenAI 发布适用于编程和计算机应用的 GPT-6 Astra",
-      "url": "https://www.infoq.cn/article/IfxYoy1PPkFQUpjWVBVr?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 15 Sep 2026 16:52:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "京东上线“东东”购物助手：在原来的APP里长出了一个“更懂你”的Agent",
-      "url": "https://www.infoq.cn/video/UYi5ApclOl1ovCNtONTZ?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 15 Sep 2026 16:42:41 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "OpenAI故意欠技术债，等Codex来还：仅2名工程师，把核心存储从Python重写成Rust",
-      "url": "https://www.infoq.cn/article/QtIy65SxjN0Q4riY7tCo?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 15 Sep 2026 16:09:20 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "月之暗面：网传创始人及员工信息系恶意造谣；OpenAI 放弃今年上市；iPhone Duo炒到9万，黄牛贷款欲囤货｜AI周报",
-      "url": "https://www.infoq.cn/article/HEN8icBvRCoKVvo2dSNA?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 15 Sep 2026 16:07:08 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Claude在英伟达内部被限用，黄仁勋告诉特朗普：我们不会让AI发展放缓发生",
-      "url": "https://www.infoq.cn/article/g9eJhszhJa3JcZsgZwmj?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 15 Sep 2026 16:01:41 GMT"
     }
   ]
 }
