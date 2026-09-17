@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-17T00:38:47+00:00",
+  "updated_at": "2026-09-17T05:19:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "小米把 MiMo 2.6 的后训练过程实时直播出来了",
+      "url": "https://www.oschina.net/news/502540/xiaomi-mimo-rl-live-dashboard",
+      "hot": "Thu, 17 Sep 2026 11:05:27 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "英伟达宣布“CUDA Rust”，基于 Rust 的原生 GPU 编程",
+      "url": "https://www.oschina.net/news/502539/nvidia-cuda-rust-two-tracks-for-writing-gpu-kernels",
+      "hot": "Thu, 17 Sep 2026 10:58:37 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "小板子运行大模型：deepin 25 RVA23 版本适配进迭时空芯片 SpacemiT K3",
+      "url": "https://www.oschina.net/news/502538",
+      "hot": "Thu, 17 Sep 2026 10:17:17 +0800"
+    },
+    {
+      "rank": 4,
+      "title": ":fire::fire::fire: Claude Code 工程最佳实践 | 主数据平台 1.5.1 震撼发布",
+      "url": "https://www.oschina.net/news/502536",
+      "hot": "Thu, 17 Sep 2026 09:58:30 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "AIGCPanel v2.4.0 绿幕视频一键换背景，歌曲也能翻唱成你的声音",
+      "url": "https://www.oschina.net/news/502533",
+      "hot": "Thu, 17 Sep 2026 09:30:24 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "deepwork企业AI工作台SAAS脚手架升级到yudao-cloud 2026.08",
+      "url": "https://www.oschina.net/news/502532",
+      "hot": "Thu, 17 Sep 2026 08:43:26 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "covo-agent v1.0.0 发布，基于 covonaut 框架的通用型Agent迎来正式版",
+      "url": "https://www.oschina.net/news/502531",
+      "hot": "Wed, 16 Sep 2026 20:53:39 +0800"
+    },
+    {
+      "rank": 8,
       "title": "开源中国董事长马越亮相2026数字价值年会：以Token治理破解AI落地焦虑，让每一分AI投入都有答案",
       "url": "https://www.oschina.net/news/502530",
       "hot": "Wed, 16 Sep 2026 19:31:33 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "从提交一份PR开始：上海开源大赛open supOS赛题专家解读",
       "url": "https://www.oschina.net/news/502529",
       "hot": "Wed, 16 Sep 2026 17:58:45 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "灵界 OS 5.0 稳定版 · 代码可读性大修复",
       "url": "https://www.oschina.net/news/502526",
       "hot": "Wed, 16 Sep 2026 17:30:03 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "🔥🔥GOTC 2026 生态合作伙伴全球招募，这次玩点不一样的！",
-      "url": "https://www.oschina.net/news/502523",
-      "hot": "Wed, 16 Sep 2026 17:21:48 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "华为坤灵升级“4+10+N”场景化方案，发布“经纬计划”和50个样板点",
-      "url": "https://www.oschina.net/news/502522",
-      "hot": "Wed, 16 Sep 2026 17:10:30 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "千问办公上架deepin ，一句话开启 AI 办公",
-      "url": "https://www.oschina.net/news/502521",
-      "hot": "Wed, 16 Sep 2026 17:03:35 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "添翼AI 3.0重磅发布！东软重塑医疗AI，迈入业务智能新时代",
-      "url": "https://www.oschina.net/news/502520",
-      "hot": "Wed, 16 Sep 2026 16:55:05 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "百度地图赛题专家解读来了，助力选手冲击决赛百万奖池",
-      "url": "https://www.oschina.net/news/502518",
-      "hot": "Wed, 16 Sep 2026 16:13:32 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "轻量级运维极速引擎 OpsFlash v0.5.1 正式发布",
-      "url": "https://www.oschina.net/news/502516",
-      "hot": "Wed, 16 Sep 2026 15:20:58 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "ProcHub v0.6.0 Windows 托盘单击直接显示主界面，告别误操作困扰",
-      "url": "https://www.oschina.net/news/502515",
-      "hot": "Wed, 16 Sep 2026 15:08:16 +0800"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-17T00:38:43+00:00",
+  "updated_at": "2026-09-17T05:19:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "彻底玩转TabSegmentButtonV2样式定制与“一次开发多端部署”最佳实践",
-      "url": "https://ost.51cto.com/posts/56343",
-      "hot": "彻底玩转TabSegmentButtonV2样式定制与&ldquo;一次开发多端部署&rdquo;最佳实践从开发者社区的两个高频痛点说起最近在鸿蒙开发者社区和几个技术群里，..."
+      "title": "五大开源自建 AI SRE Agent 平台横评，让运维告别 “人肉排查”",
+      "url": "https://www.51cto.com/article/856164.html",
+      "hot": "本文精选五个最具代表性的开源 AI SRE Agent 平台，从定位、架构、核心能力到适用场景，做一次全面横评。"
     },
     {
       "rank": 2,
-      "title": "鸿蒙Next图像混合模式blendMode完全解析：从公式到实战，打造炫酷视觉效果",
-      "url": "https://ost.51cto.com/posts/56342",
-      "hot": "鸿蒙Next图像混合模式blendMode完全解析：从公式到实战，打造炫酷视觉效果前言：当UI叠加不再单调在图形渲染中，混合模式（BlendMode）决定..."
+      "title": "Vue Vapor 翻车！三天连爆 15 个 Bug！",
+      "url": "https://www.51cto.com/article/856162.html",
+      "hot": "短短 3 天，官方仓库连续出现至少 15 个 Vapor 相关 Bug，覆盖编译器、SSR、v-for、KeepAlive、Teleport、Transition 等核心能力。很多问题已经在紧急修复，直接看有哪些。"
     },
     {
       "rank": 3,
-      "title": "CVPR 2026 | EmoThinker：让 AI 学会\"察言观色\"——会推理的情感分析新范式",
-      "url": "https://www.51cto.com/article/856050.html",
-      "hot": "这篇 CVPR 2026 论文EmoThinker的目标是让模型像人类一样\"先观察、再推理、后下结论\"——先从视觉和声学模态中分别提取情感证据，再显式分析模态间的一致与冲突，最终给出情感判断以及完整的推理过程，即基于大型视觉-语言模型（LVLM）的细粒度、可解释情感推理。"
+      "title": "鸿蒙Next图片压缩工具完全指南：二分质量搜索 + 尺寸降级，实现精准文件大小控制",
+      "url": "https://ost.51cto.com/posts/56486",
+      "hot": "鸿蒙Next图片压缩工具完全指南：二分质量搜索+尺寸降级，实现精准文件大小控制为什么需要可预测的图片压缩？在移动应用开发中，图片上传几..."
     },
     {
       "rank": 4,
-      "title": "TDD 管代码，谁管 Agent？评测驱动开发：分级门禁 + 基线对比，改坏立刻拦",
-      "url": "https://www.51cto.com/article/856049.html",
-      "hot": "LLM 是非确定性的。改了 prompt，你以为会变好，但可能在某些场景下变差。没有评测集，你只会注意到\"变好的部分\"，忽略\"变差的部分\"。"
+      "title": "鸿蒙Next高级自定义组件：首页轮播图深度实现（弧形裁剪+手势联动+图层优先级管理）",
+      "url": "https://ost.51cto.com/posts/56485",
+      "hot": "鸿蒙Next高级自定义组件：首页轮播图深度实现（弧形裁剪+手势联动+图层优先级管理）为什么需要自定义轮播图？在移动应用中，轮播图是展示推..."
     },
     {
       "rank": 5,
-      "title": "Google WikiSkill：给智能体的技能进化补上\"知识管理层\"",
-      "url": "https://www.51cto.com/article/856048.html",
-      "hot": "WikiSkill 解决的不是\"怎么生成更好的技能\"，而是技能进化过程中的知识管理问题。"
+      "title": "Codex 记忆的真相：模型决定记什么，代码决定何时忘",
+      "url": "https://www.51cto.com/article/856153.html",
+      "hot": "Codex 的记忆不是一个笔记本——它是一条两阶段流水线：一个模型从旧会话里抽取出值得留下的东西，另一个模型把它们合并成一份手册，中间夹着租约、排行榜、淘汰窗口和 git 基线。"
     },
     {
       "rank": 6,
-      "title": "Perplexity 发布 Q2D-Web：重新定义 AI 搜索检索评测的基准",
-      "url": "https://www.51cto.com/article/856047.html",
-      "hot": "一套面向智能体 RAG 的检索评测基准与排行榜，包含约 7 万条智能体查询、1.9 亿篇网页文档，以及三套相关性标注。"
+      "title": "从 Baichuan-M4 医疗 Agent 看垂域超级 Agent 的构建方案",
+      "url": "https://www.51cto.com/article/856151.html",
+      "hot": "这篇文章的目的，不是解读 Baichuan-M4 的性能数字，而是以它为镜，照出垂域超级智能体构建中真正关键的工程决策点，并尝试给出一套可落地的 Harness 构建方案。"
     },
     {
       "rank": 7,
-      "title": "GPT-6 Sol和Opus 5.2同时灰测！奥特曼阿莫迪周末刚喊刹车，一上班就踩油门",
-      "url": "https://www.51cto.com/article/856041.html",
-      "hot": "奥特曼、阿莫迪，你俩大哥别说二哥，一个灰度测试GPT-6 Sol，一个灰度测试Opus 5.2呢。"
+      "title": "2026 CVPR | RAG 分块还在\"按字数硬切\"？M3DocDep：先给文档算清\"家谱",
+      "url": "https://www.51cto.com/article/856150.html",
+      "hot": "今天要聊的这篇论文 M3DocDep，思路很直接：分块之前，先把文档的层级结构（谁是谁的章节、图归哪段文字管）恢复成一棵全局合法的\"家谱树\"，再沿着树动刀。"
     },
     {
       "rank": 8,
-      "title": "别让Agent瞎想乱搜还闯祸：哪些能力该内化进模型，哪些必须交给Harness，这篇讲透",
-      "url": "https://www.51cto.com/article/856039.html",
-      "hot": "论文将内化与外化的边界作为 Agent 设计的治理轴，用它分析知识、技能与控制的位置，以及每一步推理和行动的投入。这些选择会影响系统的可靠性、效率、安全性和持续演化能力。"
+      "title": "Redis 分布式锁的七个坑",
+      "url": "https://www.51cto.com/article/856149.html",
+      "hot": "如果你有 K8s，etcd 已经在，直接 ​​etcd clientv3 concurrency.NewMutex​​，License 全免费；如果是传统金融/政企运维，ZK 更成熟；如果团队根本没有 ZK/etcd，别强上，就用 Redis 锁 + 数据库乐观锁，业务链路完全够。这不是降级，这是当前生产里 80% 工程师实际在用的方案，Martin 没反对这个。"
     },
     {
       "rank": 9,
-      "title": "GPT-6 Sol要来了？OpenAI本周或迎「发布狂潮」",
-      "url": "https://www.51cto.com/article/856036.html",
-      "hot": "最早释放信号的是 OpenAI 产品负责人 Tibo Sottiaux。他在 X 上发文称，「本周发布的产品和功能数量，会达到你原本可能期待在 DevDay 2025 上看到的那个级别。」"
+      "title": "做出ChatGPT核心研究的人今天掀桌：大模型搞不定自动化，新架构提速200倍且输出免费",
+      "url": "https://www.51cto.com/article/856139.html",
+      "hot": "一句话概括：给它一段无结构的状态输入，它直接返回带概率置信度的强类型决策。"
     },
     {
       "rank": 10,
-      "title": "GPT-6刷到99.9%，ARC AGI考卷被迫重做！下一关考「发明」",
-      "url": "https://www.51cto.com/article/856035.html",
-      "hot": "GPT-6 Astra一出世，在ARC-AGI-3半私有测试集上，拿下了99.9%的成绩。"
+      "title": "AI会做题，却未必能自进化：字节Seed等提出三项新基准",
+      "url": "https://www.51cto.com/article/856136.html",
+      "hot": "ASPIRE、S³Gym 和 HarnessDev 分别研究其中的三个问题：Agent 应该如何从模糊目标中学习，能否从经验中学习，以及 Harness 改进能否保留下来。"
     }
   ]
 }
