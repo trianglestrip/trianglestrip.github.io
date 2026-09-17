@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-17T05:19:41+00:00",
+  "updated_at": "2026-09-17T10:04:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "五大开源自建 AI SRE Agent 平台横评，让运维告别 “人肉排查”",
-      "url": "https://www.51cto.com/article/856164.html",
-      "hot": "本文精选五个最具代表性的开源 AI SRE Agent 平台，从定位、架构、核心能力到适用场景，做一次全面横评。"
+      "title": "鸿蒙闪控球进阶：从智慧生活场景拉起到自动截图记账，我把整条链路踩了一遍",
+      "url": "https://ost.51cto.com/posts/56617",
+      "hot": "先说效果。用户在华为手机的&quot;智慧生活&quot;App里配置一个场景，条件是打开支付宝或微信，动作是拉起我们的记账应用。之后他每次付完钱退回桌面..."
     },
     {
       "rank": 2,
-      "title": "Vue Vapor 翻车！三天连爆 15 个 Bug！",
-      "url": "https://www.51cto.com/article/856162.html",
-      "hot": "短短 3 天，官方仓库连续出现至少 15 个 Vapor 相关 Bug，覆盖编译器、SSR、v-for、KeepAlive、Teleport、Transition 等核心能力。很多问题已经在紧急修复，直接看有哪些。"
+      "title": "Coding Agent 跑了 30 分钟，到底在忙什么？先看这四层",
+      "url": "https://www.51cto.com/article/856204.html",
+      "hot": "以后再碰到一个任务跑 30 分钟，我不会先换模型，也不会第一时间 /clear。我会先把 Task Trace 拉出来，看四件事：模型到底花了多少时间，Tool 的长尾在哪里，Context 是怎么长起来的，以及 Agent 到底跑了多少轮。"
     },
     {
       "rank": 3,
-      "title": "鸿蒙Next图片压缩工具完全指南：二分质量搜索 + 尺寸降级，实现精准文件大小控制",
-      "url": "https://ost.51cto.com/posts/56486",
-      "hot": "鸿蒙Next图片压缩工具完全指南：二分质量搜索+尺寸降级，实现精准文件大小控制为什么需要可预测的图片压缩？在移动应用开发中，图片上传几..."
+      "title": "HarmonyOS 7 图片内存治理实战：压缩过的图片，为什么还是内存大户",
+      "url": "https://ost.51cto.com/posts/56554",
+      "hot": "做一个壁纸馆应用的时候，最容易误判的就是图片的内存成本。往rawfile里放了12张壁纸，每张JPEG文件250KB上下，合计3.2MB，看起来毫无压力..."
     },
     {
       "rank": 4,
-      "title": "鸿蒙Next高级自定义组件：首页轮播图深度实现（弧形裁剪+手势联动+图层优先级管理）",
-      "url": "https://ost.51cto.com/posts/56485",
-      "hot": "鸿蒙Next高级自定义组件：首页轮播图深度实现（弧形裁剪+手势联动+图层优先级管理）为什么需要自定义轮播图？在移动应用中，轮播图是展示推..."
+      "title": "AI Agent安全不能只靠Prompt了：上海AI Lab探索Agent安全进化新范式",
+      "url": "https://www.51cto.com/article/856191.html",
+      "hot": "上海人工智能实验室联合复旦大学、上海交通大学、香港科技大学和浙江大学，围绕这一问题先后提出 SHE 与 SafeEvolve。"
     },
     {
       "rank": 5,
-      "title": "Codex 记忆的真相：模型决定记什么，代码决定何时忘",
-      "url": "https://www.51cto.com/article/856153.html",
-      "hot": "Codex 的记忆不是一个笔记本——它是一条两阶段流水线：一个模型从旧会话里抽取出值得留下的东西，另一个模型把它们合并成一份手册，中间夹着租约、排行榜、淘汰窗口和 git 基线。"
+      "title": "BEYOND重磅升级！2027年5月26日至29日，再聚澳门！",
+      "url": "https://www.51cto.com/article/856190.html",
+      "hot": "BEYOND近日宣布，BEYOND Expo 正式升级为 BEYOND。作为亚洲独具特色、最具活力及国际影响力的科技盛会之一，BEYOND 将于 2027 年 5 月 26 日至 29 日重返澳门威尼斯人金光会展。"
     },
     {
       "rank": 6,
-      "title": "从 Baichuan-M4 医疗 Agent 看垂域超级 Agent 的构建方案",
-      "url": "https://www.51cto.com/article/856151.html",
-      "hot": "这篇文章的目的，不是解读 Baichuan-M4 的性能数字，而是以它为镜，照出垂域超级智能体构建中真正关键的工程决策点，并尝试给出一套可落地的 Harness 构建方案。"
+      "title": "调试 eBPF：我的工具链",
+      "url": "https://www.51cto.com/article/856148.html",
+      "hot": "eBPF 调试的核心是：bpftool + bpftrace + perf + 日志，组合使用才能快速定位问题。"
     },
     {
       "rank": 7,
-      "title": "2026 CVPR | RAG 分块还在\"按字数硬切\"？M3DocDep：先给文档算清\"家谱",
-      "url": "https://www.51cto.com/article/856150.html",
-      "hot": "今天要聊的这篇论文 M3DocDep，思路很直接：分块之前，先把文档的层级结构（谁是谁的章节、图归哪段文字管）恢复成一棵全局合法的\"家谱树\"，再沿着树动刀。"
+      "title": "Harness 到底在赌什么？三种流派与十个实现",
+      "url": "https://www.51cto.com/article/856171.html",
+      "hot": "这篇把三种赌注和极简派横向比一遍，给出十个实现的对照表，最后落到一句话：挑 harness 之前，先问今天哪种失败模式在消耗你的时间。"
     },
     {
       "rank": 8,
-      "title": "Redis 分布式锁的七个坑",
-      "url": "https://www.51cto.com/article/856149.html",
-      "hot": "如果你有 K8s，etcd 已经在，直接 ​​etcd clientv3 concurrency.NewMutex​​，License 全免费；如果是传统金融/政企运维，ZK 更成熟；如果团队根本没有 ZK/etcd，别强上，就用 Redis 锁 + 数据库乐观锁，业务链路完全够。这不是降级，这是当前生产里 80% 工程师实际在用的方案，Martin 没反对这个。"
+      "title": "小红书一面：Agent 12 秒才出首 Token，怎么优化到 1.5 秒？",
+      "url": "https://www.51cto.com/article/856168.html",
+      "hot": "Agent 首 Token 从 12 秒优化到 1.5 秒，你做了哪些优化？"
     },
     {
       "rank": 9,
-      "title": "做出ChatGPT核心研究的人今天掀桌：大模型搞不定自动化，新架构提速200倍且输出免费",
-      "url": "https://www.51cto.com/article/856139.html",
-      "hot": "一句话概括：给它一段无结构的状态输入，它直接返回带概率置信度的强类型决策。"
+      "title": "AI 写得快，企业交付为什么没变快",
+      "url": "https://www.51cto.com/article/856166.html",
+      "hot": "上游研发吞吐涨了，线上告警、根因定位、止损决策、修复回归这条下游链路却几乎没有同等加速。产能提得快，团队的验证标准、方法和工具没跟上。这篇只拆三份中文一手实践里能用的部分：怎么定义「完成」、怎么划执行边界、怎么补稳定的最后一公里。"
     },
     {
       "rank": 10,
-      "title": "AI会做题，却未必能自进化：字节Seed等提出三项新基准",
-      "url": "https://www.51cto.com/article/856136.html",
-      "hot": "ASPIRE、S³Gym 和 HarnessDev 分别研究其中的三个问题：Agent 应该如何从模糊目标中学习，能否从经验中学习，以及 Harness 改进能否保留下来。"
+      "title": "五大开源自建 AI SRE Agent 平台横评，让运维告别 “人肉排查”",
+      "url": "https://www.51cto.com/article/856164.html",
+      "hot": "本文精选五个最具代表性的开源 AI SRE Agent 平台，从定位、架构、核心能力到适用场景，做一次全面横评。"
     }
   ]
 }
