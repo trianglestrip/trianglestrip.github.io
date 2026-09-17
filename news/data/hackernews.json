@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-17T18:38:09+00:00",
+  "updated_at": "2026-09-17T21:43:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Hister: A private search engine for the pages you visit and the files you keep",
-      "url": "https://github.com/asciimoo/hister",
-      "hot": "115"
+      "title": "Astra for Law",
+      "url": "https://openai.com/index/astra-for-law/",
+      "hot": "142"
     },
     {
       "rank": 2,
-      "title": "Fujitsu launches made-in-Japan next-generation CPU FUJITSU-MONAKA",
-      "url": "https://global.fujitsu/en-global/pr/news/2026/09/14-02",
-      "hot": "375"
+      "title": "Bend",
+      "url": "https://bend-lang.com/",
+      "hot": "117"
     },
     {
       "rank": 3,
-      "title": "CrowdSec Source Code Leak",
-      "url": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure",
-      "hot": "60"
+      "title": "Hister: A private search engine for the pages you visit and the files you keep",
+      "url": "https://github.com/asciimoo/hister",
+      "hot": "349"
     },
     {
       "rank": 4,
-      "title": "Rate limits on GitLab.com are changing",
-      "url": "https://about.gitlab.com/blog/rate-limit-change-2026/",
-      "hot": "90"
+      "title": "Fujitsu launches made-in-Japan next-generation CPU FUJITSU-MONAKA",
+      "url": "https://global.fujitsu/en-global/pr/news/2026/09/14-02",
+      "hot": "459"
     },
     {
       "rank": 5,
-      "title": "T. Rex Had a Body Temperature of 97 Degrees",
-      "url": "https://www.nytimes.com/2026/09/16/science/trex-dinosaur-temperature-warm-blooded.html",
-      "hot": "9"
+      "title": "Wax motor",
+      "url": "https://en.wikipedia.org/wiki/Wax_motor",
+      "hot": "129"
     },
     {
       "rank": 6,
-      "title": "Show HN: Aclif – Agent CLI framework: one grammar, canonical names across SaaS",
-      "url": "https://www.aclif.ai/",
-      "hot": "18"
+      "title": "Everybody's Lost Their Minds",
+      "url": "https://www.netmeister.org/blog/everybodys-lost-their-minds.html",
+      "hot": "173"
     },
     {
       "rank": 7,
-      "title": "Towards Self-Driving Codebases",
-      "url": "https://blog.detail.dev/posts/towards-self-driving-codebases/",
-      "hot": "23"
+      "title": "Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "hot": "8"
     },
     {
       "rank": 8,
-      "title": "Whoisinspace.com/",
-      "url": "https://whoisinspace.com",
-      "hot": "98"
+      "title": "CrowdSec Source Code Leak",
+      "url": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure",
+      "hot": "108"
     },
     {
       "rank": 9,
-      "title": "How GLM built its own inference infrastructure",
-      "url": "https://z.ai/blog/glm-built-its-inference-infrastructure",
-      "hot": "281"
+      "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+      "url": "https://arxiv.org/abs/2609.18842",
+      "hot": "81"
     },
     {
       "rank": 10,
-      "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
-      "url": "https://arxiv.org/abs/2609.18842",
-      "hot": "21"
+      "title": "Rate limits on GitLab.com are changing",
+      "url": "https://about.gitlab.com/blog/rate-limit-change-2026/",
+      "hot": "127"
     }
   ]
 }
