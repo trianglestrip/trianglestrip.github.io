@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-17T10:04:16+00:00",
+  "updated_at": "2026-09-17T18:38:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "138"
+      "hot": "139"
     },
     {
       "rank": 2,
@@ -20,19 +20,19 @@
       "rank": 3,
       "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
       "url": "https://huggingface.co/papers/2609.15818",
-      "hot": "430"
+      "hot": "433"
     },
     {
       "rank": 4,
-      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
-      "url": "https://huggingface.co/papers/2609.13356",
-      "hot": "305"
-    },
-    {
-      "rank": 5,
       "title": "AutoDev: Automated AI-Driven Development",
       "url": "https://huggingface.co/papers/2403.08299",
       "hot": "20"
+    },
+    {
+      "rank": 5,
+      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+      "url": "https://huggingface.co/papers/2609.13356",
+      "hot": "309"
     },
     {
       "rank": 6,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "42"
+    },
+    {
+      "rank": 9,
       "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
       "url": "https://huggingface.co/papers/2609.15364",
       "hot": "71"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
       "hot": "207"
-    },
-    {
-      "rank": 10,
-      "title": "A decoder-only foundation model for time-series forecasting",
-      "url": "https://huggingface.co/papers/2310.10688",
-      "hot": "42"
     }
   ]
 }

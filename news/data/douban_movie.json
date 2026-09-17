@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-17T14:51:35+00:00",
+  "updated_at": "2026-09-17T18:37:39+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "奥德赛",
-      "url": "https://movie.douban.com/subject/36808876/",
-      "hot": "评分 8.6"
-    },
-    {
-      "rank": 3,
       "title": "早春晴朗",
       "url": "https://movie.douban.com/subject/36660844/",
       "hot": "评分 6.7"
+    },
+    {
+      "rank": 3,
+      "title": "奥德赛",
+      "url": "https://movie.douban.com/subject/36808876/",
+      "hot": "评分 8.6"
     },
     {
       "rank": 4,
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "特立独行",
-      "url": "https://movie.douban.com/subject/36953973/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 8,
       "title": "给阿嬷的情书",
       "url": "https://movie.douban.com/subject/37116446/",
       "hot": "评分 9.3"
+    },
+    {
+      "rank": 8,
+      "title": "特立独行",
+      "url": "https://movie.douban.com/subject/36953973/",
+      "hot": "评分 6.7"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "八仙！",
-      "url": "https://movie.douban.com/subject/36882191/",
-      "hot": "评分 8.2"
+      "title": "兰香如故",
+      "url": "https://movie.douban.com/subject/36449295/",
+      "hot": ""
     }
   ]
 }

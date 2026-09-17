@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-09-17T10:03:48+00:00",
+  "updated_at": "2026-09-17T18:37:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Go] alibaba/open-code-review",
       "url": "https://github.com/alibaba/open-code-review",
-      "hot": "33,325"
+      "hot": "34,421"
     },
     {
       "rank": 2,
       "title": "[JavaScript] cloudflare/security-audit-skill",
       "url": "https://github.com/cloudflare/security-audit-skill",
-      "hot": "8,705"
+      "hot": "10,284"
     },
     {
       "rank": 3,
-      "title": "[C] JustVugg/colibri",
-      "url": "https://github.com/JustVugg/colibri",
-      "hot": "35,360"
+      "title": "[JavaScript] addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "hot": "96,018"
     },
     {
       "rank": 4,
-      "title": "[Swift] abue-ammar/tinycast",
-      "url": "https://github.com/abue-ammar/tinycast",
-      "hot": "5,868"
+      "title": "[TypeScript] Tencent/BrowserSkill",
+      "url": "https://github.com/Tencent/BrowserSkill",
+      "hot": "4,002"
     },
     {
       "rank": 5,
-      "title": "[TypeScript] jamiepine/voicebox",
-      "url": "https://github.com/jamiepine/voicebox",
-      "hot": "54,675"
+      "title": "[Rust] alphaXiv/OpenResearch",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "hot": "5,044"
     },
     {
       "rank": 6,
-      "title": "[Swift] Lakr233/vphone-cli",
-      "url": "https://github.com/Lakr233/vphone-cli",
-      "hot": "13,563"
+      "title": "[TypeScript] anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "hot": "145,902"
     },
     {
       "rank": 7,
-      "title": "[Python] anthropics/knowledge-work-plugins",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "hot": "24,403"
+      "title": "[Java] NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "hot": "78,370"
     },
     {
       "rank": 8,
-      "title": "[TypeScript] ever-co/ever-gauzy",
-      "url": "https://github.com/ever-co/ever-gauzy",
-      "hot": "7,503"
+      "title": "[Python] anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "hot": "24,501"
     },
     {
       "rank": 9,
-      "title": "[Rust] ankitects/anki",
-      "url": "https://github.com/ankitects/anki",
-      "hot": "31,039"
+      "title": "[Go] Tencent/WeKnora",
+      "url": "https://github.com/Tencent/WeKnora",
+      "hot": "26,198"
     },
     {
       "rank": 10,
-      "title": "[Java] NationalSecurityAgency/ghidra",
-      "url": "https://github.com/NationalSecurityAgency/ghidra",
-      "hot": "78,139"
+      "title": "[Swift] abue-ammar/tinycast",
+      "url": "https://github.com/abue-ammar/tinycast",
+      "hot": "6,057"
     }
   ]
 }
