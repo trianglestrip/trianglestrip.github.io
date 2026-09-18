@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-18T01:29:34+00:00",
+  "updated_at": "2026-09-18T06:19:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "鸿蒙闪控球进阶：从智慧生活场景拉起到自动截图记账，我把整条链路踩了一遍",
-      "url": "https://ost.51cto.com/posts/56617",
-      "hot": "先说效果。用户在华为手机的&quot;智慧生活&quot;App里配置一个场景，条件是打开支付宝或微信，动作是拉起我们的记账应用。之后他每次付完钱退回桌面..."
+      "title": "刚刚，Gemini 4 Pro偷跑上线！碾压Astra和Fable",
+      "url": "https://www.51cto.com/article/856310.html",
+      "hot": "就在这两天，大模型竞技场Arena悄然杀入一款新模型，名字竟挂着「gemini-3.8-flash」。"
     },
     {
       "rank": 2,
-      "title": "Coding Agent 跑了 30 分钟，到底在忙什么？先看这四层",
-      "url": "https://www.51cto.com/article/856204.html",
-      "hot": "以后再碰到一个任务跑 30 分钟，我不会先换模型，也不会第一时间 /clear。我会先把 Task Trace 拉出来，看四件事：模型到底花了多少时间，Tool 的长尾在哪里，Context 是怎么长起来的，以及 Agent 到底跑了多少轮。"
+      "title": "刚刚，Claude Code放大招！Projects上线，200个Agent不眠不休",
+      "url": "https://www.51cto.com/article/856309.html",
+      "hot": "就在刚刚，Anthropic 官宣了重新设计的 Projects 功能，第一站直接落在 Claude Code。"
     },
     {
       "rank": 3,
-      "title": "HarmonyOS 7 图片内存治理实战：压缩过的图片，为什么还是内存大户",
-      "url": "https://ost.51cto.com/posts/56554",
-      "hot": "做一个壁纸馆应用的时候，最容易误判的就是图片的内存成本。往rawfile里放了12张壁纸，每张JPEG文件250KB上下，合计3.2MB，看起来毫无压力..."
+      "title": "BragJack：用一个浏览器扩展劫持五大主流浏览器",
+      "url": "https://www.51cto.com/article/856298.html",
+      "hot": "Forever Security 研究员 Gal Weizman 公布了名为 BragJack 的浏览器 AI 助手攻击研究——用一个普通浏览器扩展,先后攻陷 Chrome、Microsoft Edge、Opera Neon、Perplexity Comet、Claude in Chrome 五款主流产品的内置 AI 助手,全程零点击、零传统意义上的提示注入。"
     },
     {
       "rank": 4,
-      "title": "AI Agent安全不能只靠Prompt了：上海AI Lab探索Agent安全进化新范式",
-      "url": "https://www.51cto.com/article/856191.html",
-      "hot": "上海人工智能实验室联合复旦大学、上海交通大学、香港科技大学和浙江大学，围绕这一问题先后提出 SHE 与 SafeEvolve。"
+      "title": "第 17 篇：滑动窗口：流量的“红绿灯”",
+      "url": "https://www.51cto.com/article/856296.html",
+      "hot": "滑动窗口让 TCP 可以连续发送，但又不会超过接收方能承受的范围。它既是油门，也是刹车。更准确地说，是一个会移动的红绿灯。​"
     },
     {
       "rank": 5,
-      "title": "BEYOND重磅升级！2027年5月26日至29日，再聚澳门！",
-      "url": "https://www.51cto.com/article/856190.html",
-      "hot": "BEYOND近日宣布，BEYOND Expo 正式升级为 BEYOND。作为亚洲独具特色、最具活力及国际影响力的科技盛会之一，BEYOND 将于 2027 年 5 月 26 日至 29 日重返澳门威尼斯人金光会展。"
+      "title": "Netty 能替代 Tomcat 吗？搞懂两者定位就明白了",
+      "url": "https://www.51cto.com/article/856295.html",
+      "hot": "Tomcat 现代版本同样支持 NIO/NIO2，所以不能简单认为 Tomcat 就是 BIO，而 Netty 就是 NIO。两者真正重要的区别，是抽象层次和使用场景不同。"
     },
     {
       "rank": 6,
-      "title": "调试 eBPF：我的工具链",
-      "url": "https://www.51cto.com/article/856148.html",
-      "hot": "eBPF 调试的核心是：bpftool + bpftrace + perf + 日志，组合使用才能快速定位问题。"
+      "title": "当 Codex 开始写测试：AI 正在重新定义软件质量工程",
+      "url": "https://www.51cto.com/article/856293.html",
+      "hot": "如果没有可靠的测试，Agent 写得越快，可能只是更快地产生更多不确定代码。"
     },
     {
       "rank": 7,
-      "title": "Harness 到底在赌什么？三种流派与十个实现",
-      "url": "https://www.51cto.com/article/856171.html",
-      "hot": "这篇把三种赌注和极简派横向比一遍，给出十个实现的对照表，最后落到一句话：挑 harness 之前，先问今天哪种失败模式在消耗你的时间。"
+      "title": "Agent 写稿突然“断片”？OpenViking 治好了我的内容创作焦虑",
+      "url": "https://www.51cto.com/article/856292.html",
+      "hot": "缺少一套可结构化、可召回、可跨会话和跨 Agent 的长期记忆底座，而 OpenViking 则完美解决了这一问题。"
     },
     {
       "rank": 8,
-      "title": "小红书一面：Agent 12 秒才出首 Token，怎么优化到 1.5 秒？",
-      "url": "https://www.51cto.com/article/856168.html",
-      "hot": "Agent 首 Token 从 12 秒优化到 1.5 秒，你做了哪些优化？"
+      "title": "AI 原生 SDLC 落地实战：Claude Code、Codex、Gemini 智能体工程开发完整指南",
+      "url": "https://www.51cto.com/article/856283.html",
+      "hot": "这篇实操指南，带你吃透 AI 原生 SDLC，打通规划、设计、构建、测试、部署、维护全流程，实现单人工程师比肩传统五人团队的开发效能。"
     },
     {
       "rank": 9,
-      "title": "AI 写得快，企业交付为什么没变快",
-      "url": "https://www.51cto.com/article/856166.html",
-      "hot": "上游研发吞吐涨了，线上告警、根因定位、止损决策、修复回归这条下游链路却几乎没有同等加速。产能提得快，团队的验证标准、方法和工具没跟上。这篇只拆三份中文一手实践里能用的部分：怎么定义「完成」、怎么划执行边界、怎么补稳定的最后一公里。"
+      "title": "Google 推出 Agent 异常检测系统，可检测工具误用、执行循环与越界行为",
+      "url": "https://www.51cto.com/article/856276.html",
+      "hot": "谷歌推出Agent异常检测审计层，可识别工具误用、越权、执行循环、Agent失控等风险，告警同步至安全平台供安全团队分诊处置。"
     },
     {
       "rank": 10,
-      "title": "五大开源自建 AI SRE Agent 平台横评，让运维告别 “人肉排查”",
-      "url": "https://www.51cto.com/article/856164.html",
-      "hot": "本文精选五个最具代表性的开源 AI SRE Agent 平台，从定位、架构、核心能力到适用场景，做一次全面横评。"
+      "title": "这个 Carousel 组件火了！普通轮播图也能玩出高级感",
+      "url": "https://www.51cto.com/article/856275.html",
+      "hot": "最近看到 Kobra 的一个 Carousel 组件，第一眼就有点不一样。它不是单纯把图片左右切换一下。而是把轮播图做成了现在很多现代网站喜欢的那种：大图 + 动画 + 信息叠加 + 流畅交互。"
     }
   ]
 }

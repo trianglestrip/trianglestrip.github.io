@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-18T01:29:40+00:00",
+  "updated_at": "2026-09-18T06:19:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "亚马逊云科技开放 AL2027 预览，开发者最关心的却是：能原地升级吗？",
+      "url": "https://www.infoq.cn/article/tbUQhEqo7etbjfyuyNK0?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 18 Sep 2026 14:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "被热议的RSI，39 年前就已诞生？现代人工智能之父复盘RSI的漫长探索",
+      "url": "https://www.infoq.cn/article/wbpy0Kv3tB32jEPV6Cg0?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 18 Sep 2026 12:35:43 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "6.5亿美元押注“AI研究AI”：一群顶级研究员想造出“自我进化”的超级智能",
+      "url": "https://www.infoq.cn/article/da8jMox7ikdNmD2vYyTm?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 18 Sep 2026 12:00:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Agoda 用 DragonflyDB 替换 SQL Server：真正难的不是性能，而是平稳切换",
+      "url": "https://www.infoq.cn/article/2kGlAwpJrK9I5kdDHLGz?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 18 Sep 2026 11:20:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "让 Agent 越用越强：AReaL 2.0 构建 Agent 在线强化学习闭环｜QCon上海",
+      "url": "https://www.infoq.cn/article/x2FmIeCkeDYUV66BNj3g?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 18 Sep 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "700 个 AI 智能体本应彼此隔离，却建起留言板联手攻击，独立调查还原 Hugging Face 事件",
       "url": "https://www.infoq.cn/article/W3tOIQhV5pKhsXP6mgWw?utm_source=rss&utm_medium=article",
       "hot": "Fri, 18 Sep 2026 09:04:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "神秘模型 Union Alpha 突袭！上线首日跑掉20亿Token，部分网友实测称性能直逼 Astra",
       "url": "https://www.infoq.cn/article/EsH2bUAoMNQx6Nt7vytC?utm_source=rss&utm_medium=article",
       "hot": "Thu, 17 Sep 2026 21:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "百度智能云首发产业智能体操作系统，要实现 AI 的商业和技术飞轮",
       "url": "https://www.infoq.cn/article/jXliIdDVTYDAtm73EoSU?utm_source=rss&utm_medium=article",
       "hot": "Thu, 17 Sep 2026 19:29:09 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "硬件调试进入 Web 时代：浏览器成了新的工程师工作台",
       "url": "https://www.infoq.cn/article/t5xEQSTQCB0glKSrppNT?utm_source=rss&utm_medium=article",
       "hot": "Thu, 17 Sep 2026 17:21:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "9 月 20 日杭州｜FDE 在现场：从 AI 组织进化到客户现场，企业 AI 到底卡在哪里？",
       "url": "https://www.infoq.cn/article/Yz8Ad81rFlGEYMKVsKRJ?utm_source=rss&utm_medium=article",
       "hot": "Thu, 17 Sep 2026 16:00:18 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "阶跃发布全新语音大模型 StepAudio 3系列：覆盖语音识别、生成、实时交互与音乐创作",
-      "url": "https://www.infoq.cn/article/paoGkkFVHV3gbhG3GEdC?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 17 Sep 2026 15:50:57 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "让仿真走到设计前端，第叁范式发布国内首款 GPU 原生跨尺度系统级电磁仿真软件",
-      "url": "https://www.infoq.cn/article/UZM5vKcN4CbNkPUS6Aid?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 17 Sep 2026 15:43:17 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "边说话边推理、边聊天边调用工具，谷歌 Gemini 3.8 Live 要攻克语音 Agent 的沉默时刻",
-      "url": "https://www.infoq.cn/article/HWTj56QXAtdSar5YGp32?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 17 Sep 2026 15:33:13 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "汪涛详解华为AI战略：算力为核心，昇腾960提前登场，PB级 KV Cache把基础设施推入新阶段",
-      "url": "https://www.infoq.cn/article/bmducufWEHZZRxEYjM4l?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 17 Sep 2026 15:23:47 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Linux Foundation CEO：AI史上最大投资潮背后，真正托底的是开源",
-      "url": "https://www.infoq.cn/article/VRgVJvwcVrkzWTIa2ecF?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 17 Sep 2026 15:23:30 GMT"
     }
   ]
 }
