@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-09-18T06:19:15+00:00",
+  "updated_at": "2026-09-18T11:24:33+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "快手 VMP 分析与还原",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2123217",
-      "hot": "[md]# 快手 VMP 分析与还原\n\n&gt; **作者：** 人生导师\n&gt; **日期：** 2026 年 8 月 14 日\n\n---\n\n## 前述\n\n在现在看来，VMP 沉重的保护还是最难攻破与维护的内容，并且现在的方法大多数也还是在延续 Unpacking Virtualization Obfuscators（WOOT 2009）的六步法则\n ..."
-    },
-    {
-      "rank": 4,
       "title": "Allsafe靶场全解",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122890",
       "hot": "[md]靶场地址：\n\n[https://github.com/t0thkr1s/allsafe-android](https://github.com/t0thkr1s/allsafe-android)\n\n---\n\n首先用MT看下，发现没壳,包名为 infosecadventures.allsafe\n\n\n\n## Secure Flag Bypass\n ..."
+    },
+    {
+      "rank": 4,
+      "title": "银狐WinOS伪装魔兽插件，远控木马攻击链分析",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122812",
+      "hot": "近期，我司安全团队监测到一款通过仿冒“魔兽世界新手盒子”官网传播的远控木马。攻击者利用搜索引擎优化与社交平台传播钓鱼链接，诱导用户下载未签名的恶意安装包，实施供应链投毒与“白加黑”DLL侧加载攻击，最终窃取 ..."
     },
     {
       "rank": 5,

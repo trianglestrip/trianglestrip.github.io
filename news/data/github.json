@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-09-18T01:29:18+00:00",
+  "updated_at": "2026-09-18T11:24:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Go] alibaba/open-code-review",
-      "url": "https://github.com/alibaba/open-code-review",
-      "hot": "34,819"
+      "title": "[JavaScript] cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "hot": "11,777"
     },
     {
       "rank": 2,
-      "title": "[JavaScript] cloudflare/security-audit-skill",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "hot": "10,715"
+      "title": "[TypeScript] anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "hot": "146,045"
     },
     {
       "rank": 3,
-      "title": "[JavaScript] addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "hot": "95,863"
+      "title": "[Go] alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "hot": "36,115"
     },
     {
       "rank": 4,
-      "title": "[TypeScript] Tencent/BrowserSkill",
-      "url": "https://github.com/Tencent/BrowserSkill",
-      "hot": "4,192"
+      "title": "[JavaScript] affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "hot": "261,522"
     },
     {
       "rank": 5,
-      "title": "[Rust] alphaXiv/OpenResearch",
-      "url": "https://github.com/alphaXiv/OpenResearch",
-      "hot": "4,964"
+      "title": "[TypeScript] Tencent/BrowserSkill",
+      "url": "https://github.com/Tencent/BrowserSkill",
+      "hot": "4,835"
     },
     {
       "rank": 6,
-      "title": "[TypeScript] anthropics/claude-code",
-      "url": "https://github.com/anthropics/claude-code",
-      "hot": "145,885"
+      "title": "[JavaScript] addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "hot": "96,145"
     },
     {
       "rank": 7,
-      "title": "[Java] NationalSecurityAgency/ghidra",
-      "url": "https://github.com/NationalSecurityAgency/ghidra",
-      "hot": "78,503"
+      "title": "[Python] TencentCloud/Octop",
+      "url": "https://github.com/TencentCloud/Octop",
+      "hot": "3,761"
     },
     {
       "rank": 8,
-      "title": "[Python] anthropics/knowledge-work-plugins",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "hot": "24,574"
+      "title": "[TypeScript] Fission-AI/OpenSpec",
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "hot": "69,056"
     },
     {
       "rank": 9,
-      "title": "[Go] Tencent/WeKnora",
-      "url": "https://github.com/Tencent/WeKnora",
-      "hot": "26,261"
+      "title": "[Rust] ankitects/anki",
+      "url": "https://github.com/ankitects/anki",
+      "hot": "31,050"
     },
     {
       "rank": 10,
-      "title": "[Swift] abue-ammar/tinycast",
-      "url": "https://github.com/abue-ammar/tinycast",
-      "hot": "6,157"
+      "title": "[Python] anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "hot": "24,705"
     }
   ]
 }

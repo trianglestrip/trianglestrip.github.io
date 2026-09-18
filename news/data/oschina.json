@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-18T06:19:23+00:00",
+  "updated_at": "2026-09-18T11:24:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "开源一站式智能终端 uniTerm v1.9.4 发布：跨工作区广播、SSH Kerberos / Agent 认证等 50 余项更新",
-      "url": "https://www.oschina.net/news/502575",
-      "hot": "Fri, 18 Sep 2026 13:06:06 +0800"
+      "title": "灵界 OS 5.0 稳定版 · 桌面按钮可以隐藏了",
+      "url": "https://www.oschina.net/news/502590",
+      "hot": "Fri, 18 Sep 2026 18:47:40 +0800"
     },
     {
       "rank": 2,
-      "title": "LinkAndroid v2.3.0 多窗口应用投屏上线，多应用并行独立操作",
-      "url": "https://www.oschina.net/news/502574",
-      "hot": "Fri, 18 Sep 2026 13:02:10 +0800"
+      "title": "智谱旗下 AI 编程工具 ZCode 被扒静默上传完整 Git 历史",
+      "url": "https://www.oschina.net/news/502589",
+      "hot": "Fri, 18 Sep 2026 18:23:29 +0800"
     },
     {
       "rank": 3,
-      "title": "Mailez 1.0.1 发布：本次发布以提升运维自动化和缺陷修复为主",
-      "url": "https://www.oschina.net/news/502573",
-      "hot": "Fri, 18 Sep 2026 12:54:27 +0800"
+      "title": "用 SQL 操作 Milvus：从检索到 ORM",
+      "url": "https://www.oschina.net/news/502588",
+      "hot": "Fri, 18 Sep 2026 17:16:36 +0800"
     },
     {
       "rank": 4,
-      "title": "学大教育与开源中国达成战略合作，共建中国教育AI基础设施",
-      "url": "https://www.oschina.net/news/502571",
-      "hot": "Fri, 18 Sep 2026 11:49:24 +0800"
+      "title": "华为发布“Peerium 计算架构”，让百万处理器成为一台计算机",
+      "url": "https://www.oschina.net/news/502587/huawei-new-computing-architecture-peerium",
+      "hot": "Fri, 18 Sep 2026 16:41:45 +0800"
     },
     {
       "rank": 5,
-      "title": "Anthropic 提出三个度量指标，想量化“AI 发展到底有多快”",
-      "url": "https://www.oschina.net/news/502569/anthropic-measuring-pace-of-ai-development",
-      "hot": "Fri, 18 Sep 2026 11:45:58 +0800"
+      "title": "华为云 All in Agentic Cloud，灵衢昇腾 950 智算集群全球上线",
+      "url": "https://www.oschina.net/news/502586/hc-agentic-infra-industry-ai",
+      "hot": "Fri, 18 Sep 2026 16:26:54 +0800"
     },
     {
       "rank": 6,
-      "title": "DjangoAdmin 敏捷开发框架 Django+AntdVue 版本 v2.8.2 发布",
-      "url": "https://www.oschina.net/news/502568",
-      "hot": "Fri, 18 Sep 2026 11:40:09 +0800"
+      "title": "【AI 智能运维平台】本周更新：打通各应用关键信息，实现深度联动与统一查看，告别跨 APP 反复切换",
+      "url": "https://www.oschina.net/news/502585",
+      "hot": "Fri, 18 Sep 2026 16:19:32 +0800"
     },
     {
       "rank": 7,
-      "title": "Qwen3.8-Omni-Flash 发布，阿里通义把多模态押在了“干活”上",
-      "url": "https://www.oschina.net/news/502567/qwen-3-8-omni-flash",
-      "hot": "Fri, 18 Sep 2026 11:37:01 +0800"
+      "title": "Levyra：一个不上传数据、也不会放错歌的开源音乐播放器",
+      "url": "https://www.oschina.net/news/502584",
+      "hot": "Fri, 18 Sep 2026 15:58:59 +0800"
     },
     {
       "rank": 8,
-      "title": "React Native 资深开源项目作者称 SwiftUI 不是 “真原生”",
-      "url": "https://www.oschina.net/news/502566",
-      "hot": "Fri, 18 Sep 2026 11:18:59 +0800"
+      "title": "面向船舶/计算机/数学专业，参赛可获中船海舟校招优先机会",
+      "url": "https://www.oschina.net/news/502583",
+      "hot": "Fri, 18 Sep 2026 15:55:46 +0800"
     },
     {
       "rank": 9,
-      "title": "Kimi Code 桌面客户端发布，支持 Mac 和 Windows 平台",
-      "url": "https://www.oschina.net/news/502565/kimi-code-desktop",
-      "hot": "Fri, 18 Sep 2026 10:47:52 +0800"
+      "title": "GLM-5.3-FlashX 上线，智谱把国产卡上的推理速度顶到 200 token/s",
+      "url": "https://www.oschina.net/news/502582",
+      "hot": "Fri, 18 Sep 2026 15:26:31 +0800"
     },
     {
       "rank": 10,
-      "title": "聚势中原！openKylin社区会员沙龙郑州站启航，共建开源操作系统新生态",
-      "url": "https://www.oschina.net/news/502559",
-      "hot": "Fri, 18 Sep 2026 08:50:40 +0800"
+      "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
+      "url": "https://www.oschina.net/news/502580",
+      "hot": "Fri, 18 Sep 2026 14:03:04 +0800"
     }
   ]
 }

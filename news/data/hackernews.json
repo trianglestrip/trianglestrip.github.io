@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-18T06:19:20+00:00",
+  "updated_at": "2026-09-18T11:24:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Hacking OpenAI",
-      "url": "https://www.hacktron.ai/blog/hacking-openai",
-      "hot": "217"
+      "title": "OpenJev",
+      "url": "https://openjev.com/",
+      "hot": "123"
     },
     {
       "rank": 2,
-      "title": "Waymo in Singapore",
-      "url": "https://waymo.com/waymo-in-singapore/",
-      "hot": "76"
+      "title": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+      "hot": "157"
     },
     {
       "rank": 3,
-      "title": "Astra for Law",
-      "url": "https://openai.com/index/astra-for-law/",
-      "hot": "428"
+      "title": "Jemalloc 5.4.0",
+      "url": "https://github.com/jemalloc/jemalloc/releases/tag/5.4.0",
+      "hot": "172"
     },
     {
       "rank": 4,
-      "title": "Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
-      "url": "https://prismml.com/news/bonsai-2-27b",
-      "hot": "356"
+      "title": "The scourge of x86 emulation",
+      "url": "https://fex-emu.com/Scourge-of-emulation/",
+      "hot": "165"
     },
     {
       "rank": 5,
-      "title": "Jemalloc 5.4.0",
-      "url": "https://github.com/jemalloc/jemalloc/releases/tag/5.4.0",
-      "hot": "20"
+      "title": "Astra for Law",
+      "url": "https://openai.com/index/astra-for-law/",
+      "hot": "506"
     },
     {
       "rank": 6,
-      "title": "The Scourge of x86 Emulation",
-      "url": "https://fex-emu.com/Scourge-of-emulation/",
-      "hot": "26"
+      "title": "Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "hot": "467"
     },
     {
       "rank": 7,
-      "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
-      "url": "https://bend-lang.com/",
-      "hot": "398"
+      "title": "Replacing Pull Requests with Delta",
+      "url": "https://zed.dev/blog/delta-public-beta",
+      "hot": "40"
     },
     {
       "rank": 8,
-      "title": "Pre-Greek: The lost language hidden within Ancient Greek",
-      "url": "https://linguisticdiscovery.com/posts/pre-greek/",
-      "hot": "36"
+      "title": "Qwen 3.8 Omni Flash",
+      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "hot": "243"
     },
     {
       "rank": 9,
-      "title": "Hister: A private search engine for the pages you visit and the files you keep",
-      "url": "https://github.com/asciimoo/hister",
-      "hot": "549"
+      "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+      "url": "https://bend-lang.com/",
+      "hot": "492"
     },
     {
       "rank": 10,
-      "title": "Qwen 3.8 Omni Flash",
-      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-      "hot": "140"
+      "title": "Hister: A private search engine for the pages you visit and the files you keep",
+      "url": "https://github.com/asciimoo/hister",
+      "hot": "631"
     }
   ]
 }

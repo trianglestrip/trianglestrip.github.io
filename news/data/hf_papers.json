@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-18T01:29:59+00:00",
+  "updated_at": "2026-09-18T11:24:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "139"
+      "hot": "140"
     },
     {
       "rank": 2,
@@ -24,21 +24,21 @@
     },
     {
       "rank": 4,
-      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
-      "url": "https://huggingface.co/papers/2609.13356",
-      "hot": "309"
-    },
-    {
-      "rank": 5,
       "title": "AutoDev: Automated AI-Driven Development",
       "url": "https://huggingface.co/papers/2403.08299",
       "hot": "20"
     },
     {
+      "rank": 5,
+      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+      "url": "https://huggingface.co/papers/2609.13356",
+      "hot": "311"
+    },
+    {
       "rank": 6,
-      "title": "AI for Games in the Foundation Model Era",
-      "url": "https://huggingface.co/papers/2609.16679",
-      "hot": "113"
+      "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+      "url": "https://huggingface.co/papers/2609.14858",
+      "hot": "300"
     },
     {
       "rank": 7,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
-      "url": "https://huggingface.co/papers/2609.14858",
-      "hot": "294"
+      "title": "AI for Games in the Foundation Model Era",
+      "url": "https://huggingface.co/papers/2609.16679",
+      "hot": "122"
     },
     {
       "rank": 9,
-      "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
-      "url": "https://huggingface.co/papers/2609.15364",
-      "hot": "71"
-    },
-    {
-      "rank": 10,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
       "hot": "207"
+    },
+    {
+      "rank": 10,
+      "title": "Paper2Agent: Reimagining Research Papers As Interactive and Reliable AI\n  Agents",
+      "url": "https://huggingface.co/papers/2509.06917",
+      "hot": "45"
     }
   ]
 }
