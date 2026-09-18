@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-18T20:58:23+00:00",
+  "updated_at": "2026-09-18T23:00:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Korea raises data breach fines to 10% of revenue",
-      "url": "https://www.koreajoongangdaily.com/business/korea-raises-data-breach-fines-to-10-of-revenue/12869899",
-      "hot": "123"
+      "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+      "url": "https://code.claude.com/docs/en/changelog",
+      "hot": "304"
     },
     {
       "rank": 2,
       "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
       "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
-      "hot": "217"
+      "hot": "388"
     },
     {
       "rank": 3,
-      "title": "Cloudflare Quick Tunnels",
-      "url": "https://try.cloudflare.com/",
-      "hot": "437"
+      "title": "Saving another 100TB of RAM",
+      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+      "hot": "158"
     },
     {
       "rank": 4,
-      "title": "Saving another 100TB of RAM with math (and Rust)",
-      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
-      "hot": "80"
+      "title": "Cloudflare Quick Tunnels",
+      "url": "https://try.cloudflare.com/",
+      "hot": "506"
     },
     {
       "rank": 5,
-      "title": "Apple releases iPhone Duo simulator and Xcode 27.1 beta",
+      "title": "Xcode 27.1 Beta Release Notes",
       "url": "https://developer.apple.com/documentation/xcode-release-notes/xcode-27_1-release-notes",
-      "hot": "70"
+      "hot": "101"
     },
     {
       "rank": 6,
-      "title": "Cache-to-Cache: Direct Semantic Communication Between Large Language Models",
+      "title": "Cache-to-Cache: Direct Semantic Communication Between LLMs (2025)",
       "url": "https://arxiv.org/abs/2510.03215",
-      "hot": "38"
+      "hot": "55"
     },
     {
       "rank": 7,
       "title": "Photon-Emission-Guided Laser Fault Injection Enables RP2350 Secure Debug",
       "url": "https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection/",
-      "hot": "116"
+      "hot": "136"
     },
     {
       "rank": 8,
-      "title": "Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
-      "url": "https://cactuscompute.com/needle",
-      "hot": "120"
+      "title": "US troop deaths during Iran war exceed Pentagon count by at least four",
+      "url": "https://www.reuters.com/world/middle-east/us-troop-deaths-iran-war-exceed-pentagon-count-by-least-four-washington-post-2026-09-18/",
+      "hot": "34"
     },
     {
       "rank": 9,
-      "title": "The Implications of Linguistic Illegibility for LLM Security",
-      "url": "https://arxiv.org/abs/2609.02852",
-      "hot": "25"
+      "title": "Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
+      "url": "https://cactuscompute.com/needle",
+      "hot": "144"
     },
     {
       "rank": 10,
-      "title": "OpenJev",
-      "url": "https://openjev.com/",
-      "hot": "488"
+      "title": "How to Write with an LLM",
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "hot": "350"
     }
   ]
 }
