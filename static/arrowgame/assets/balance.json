@@ -1,0 +1,82 @@
+{
+  "player": {
+    "hpMax": 100,
+    "r": 16,
+    "lane": 1,
+    "laneSpeed": 360,
+    "fireInterval": 0.6,
+    "dmg": 20,
+    "pierce": 0,
+    "multishot": 0,
+    "critChance": 0.05,
+    "magnet": 90,
+    "hurtInvuln": 0.7
+  },
+  "xpCurve": { "base": 8, "growth": 1.6 },
+  "crit": { "mult": 2 },
+  "combat": { "arrowSpeed": 950, "arrowSpread": 0.14 },
+  "scroll": { "base": 150, "perRound": 14 },
+  "phases": { "runTime": 38, "restTime": 2.5 },
+  "director": {
+    "intervalBase": 1.5,
+    "intervalMin": 0.8,
+    "intervalCutPerRound": 0.08,
+    "chanceThreeLanes": 0.65
+  },
+  "spawnTable": [
+    { "kind": "blob", "to": 0.4, "minRound": 1 },
+    { "kind": "brute", "to": 0.52, "minRound": 2 },
+    { "kind": "trap", "to": 0.7, "minRound": 1 },
+    { "kind": "xp", "to": 0.92, "minRound": 1 },
+    { "kind": "heal", "to": 1.0, "minRound": 1 }
+  ],
+  "enemyStats": {
+    "blob": { "r": 18, "hp": 22, "dmg": 12, "vyMin": 50, "vyMax": 80 },
+    "brute": { "r": 27, "hp": 110, "dmg": 25, "vyMin": 30, "vyMax": 50 },
+    "trap": { "r": 26, "hp": 1e9, "dmg": 15, "vyMin": 0, "vyMax": 0 }
+  },
+  "hpScale": { "perRound": 0.5, "perSecond": 0.004167 },
+  "rewards": {
+    "healAmount": 25,
+    "waveXpCount": [1, 3],
+    "waveXpVal": 1,
+    "blobGemCount": 1,
+    "blobGemVal": 1,
+    "bruteGemCount": 3,
+    "bruteGemVal": 2,
+    "bossGemCount": 10,
+    "bossGemValBase": 2,
+    "bossGemValPerRound": 1
+  },
+  "bossStats": {
+    "r": 55,
+    "hpBase": 550,
+    "hpRoundScale": 0.25,
+    "enterY": 140,
+    "enterSpeed": 120,
+    "swayAmp": 0.26,
+    "swaySpeed": 0.8,
+    "bobAmp": 20,
+    "bobSpeed": 1.3,
+    "firstAimCd": 1.5,
+    "firstBurstCd": 4.5,
+    "aimCdBase": 1.7,
+    "aimCdMin": 0.8,
+    "aimCdCutPerRound": 0.1,
+    "aimBulletsBase": 3,
+    "aimBulletsExtraMax": 3,
+    "aimBulletsRoundsPer": 2,
+    "aimSpread": 0.22,
+    "aimSpeedBase": 230,
+    "aimSpeedPerRound": 12,
+    "bulletDmgAim": 15,
+    "bulletDmgBurst": 12,
+    "bulletRAim": 7,
+    "bulletRBurst": 6,
+    "burstCd": 4.5,
+    "burstCountBase": 10,
+    "burstPerRound": 2,
+    "burstSpeed": 180,
+    "contactDmg": 30
+  }
+}
