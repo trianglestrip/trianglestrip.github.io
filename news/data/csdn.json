@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-17T21:43:46+00:00",
+  "updated_at": "2026-09-18T01:29:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Flutter 三方库 share_handler 鸿蒙使用指南",
-      "url": "https://blog.csdn.net/qiaomu8559968/article/details/165438186",
-      "hot": "14231"
+      "title": "AI Agent 越界之后：为什么只有沙箱还不够",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/164885374",
+      "hot": "14508"
     },
     {
       "rank": 2,
-      "title": "【认识大模型】【一堂课厘清AI五大核心概念：从人工智能到大语言模型】流食般投喂",
-      "url": "https://blog.csdn.net/dj_798/article/details/165491995",
-      "hot": "12827"
+      "title": "Flutter 三方库 share_handler 鸿蒙使用指南",
+      "url": "https://blog.csdn.net/qiaomu8559968/article/details/165438186",
+      "hot": "14135"
     },
     {
       "rank": 3,
-      "title": "AI Agent 越界之后：为什么只有沙箱还不够",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/164885374",
-      "hot": "12733"
+      "title": "Prometheus 告警怎么推到钉钉？从单群通知到跨网络 Alertmanager 实战",
+      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/165732655",
+      "hot": "13394"
     },
     {
       "rank": 4,
-      "title": "Prometheus 告警怎么推到钉钉？从单群通知到跨网络 Alertmanager 实战",
-      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/165732655",
-      "hot": "12017"
+      "title": "【认识大模型】【一堂课厘清AI五大核心概念：从人工智能到大语言模型】流食般投喂",
+      "url": "https://blog.csdn.net/dj_798/article/details/165491995",
+      "hot": "12733"
     },
     {
       "rank": 5,
-      "title": "DSH 改造：在外部订阅套餐下打通图片识别、生图与语音插件",
-      "url": "https://blog.csdn.net/2302_80329073/article/details/165623079",
-      "hot": "9939"
+      "title": "没有公网 IP 也想远程连 PostgreSQL？从本地数据库到固定 TCP 地址完整配置",
+      "url": "https://blog.csdn.net/m0_68390957/article/details/165565251",
+      "hot": "8966"
     },
     {
       "rank": 6,
-      "title": "没有公网 IP 也想远程连 PostgreSQL？从本地数据库到固定 TCP 地址完整配置",
-      "url": "https://blog.csdn.net/m0_68390957/article/details/165565251",
-      "hot": "8181"
+      "title": "普通摄像头怎么加上 AI 监控？用 Frigate 把识别和事件管理放到绿联 NAS",
+      "url": "https://blog.csdn.net/liu_chen_yang/article/details/165744544",
+      "hot": "8612"
     },
     {
       "rank": 7,
-      "title": "飞牛 NAS 部署 prompts.chat：自建提示词库、导入社区内容，再配置固定公网访问",
-      "url": "https://blog.csdn.net/weixin_42878111/article/details/165731637",
-      "hot": "7974"
+      "title": "大模型工程化实战（十一）：知识库防腐坏——巡检揪出缺/腐/乱、治理先软下架止血、灰度换版可回滚：模型没换、prompt 没换，RAG 正确率却往下掉，先别查模型，查粮仓",
+      "url": "https://blog.csdn.net/xiaobing259/article/details/165242919",
+      "hot": "8257"
     },
     {
       "rank": 8,
-      "title": "大模型工程化实战（十一）：知识库防腐坏——巡检揪出缺/腐/乱、治理先软下架止血、灰度换版可回滚：模型没换、prompt 没换，RAG 正确率却往下掉，先别查模型，查粮仓",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/165242919",
-      "hot": "7685"
+      "title": "【AI智能体】Codex 制作AI视频实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/164164193",
+      "hot": "7903"
     },
     {
       "rank": 9,
-      "title": "普通摄像头怎么加上 AI 监控？用 Frigate 把识别和事件管理放到绿联 NAS",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/165744544",
-      "hot": "7271"
+      "title": "DSH 改造：在外部订阅套餐下打通图片识别、生图与语音插件",
+      "url": "https://blog.csdn.net/2302_80329073/article/details/165623079",
+      "hot": "7448"
     },
     {
       "rank": 10,
-      "title": "Agent 工具设计原则：什么样的工具 Agent 用得好，什么样的工具坑死你",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/165486773",
-      "hot": "7022"
+      "title": "KES-Operator正式发布：把KES集群交给K8s自己管哦",
+      "url": "https://blog.csdn.net/weixin_42878111/article/details/165705264",
+      "hot": "7269"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-09-17T18:37:56+00:00",
+  "updated_at": "2026-09-18T01:29:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Go] alibaba/open-code-review",
       "url": "https://github.com/alibaba/open-code-review",
-      "hot": "34,421"
+      "hot": "34,819"
     },
     {
       "rank": 2,
       "title": "[JavaScript] cloudflare/security-audit-skill",
       "url": "https://github.com/cloudflare/security-audit-skill",
-      "hot": "10,284"
+      "hot": "10,715"
     },
     {
       "rank": 3,
       "title": "[JavaScript] addyosmani/agent-skills",
       "url": "https://github.com/addyosmani/agent-skills",
-      "hot": "96,018"
+      "hot": "95,863"
     },
     {
       "rank": 4,
       "title": "[TypeScript] Tencent/BrowserSkill",
       "url": "https://github.com/Tencent/BrowserSkill",
-      "hot": "4,002"
+      "hot": "4,192"
     },
     {
       "rank": 5,
       "title": "[Rust] alphaXiv/OpenResearch",
       "url": "https://github.com/alphaXiv/OpenResearch",
-      "hot": "5,044"
+      "hot": "4,964"
     },
     {
       "rank": 6,
       "title": "[TypeScript] anthropics/claude-code",
       "url": "https://github.com/anthropics/claude-code",
-      "hot": "145,902"
+      "hot": "145,885"
     },
     {
       "rank": 7,
       "title": "[Java] NationalSecurityAgency/ghidra",
       "url": "https://github.com/NationalSecurityAgency/ghidra",
-      "hot": "78,370"
+      "hot": "78,503"
     },
     {
       "rank": 8,
       "title": "[Python] anthropics/knowledge-work-plugins",
       "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "hot": "24,501"
+      "hot": "24,574"
     },
     {
       "rank": 9,
       "title": "[Go] Tencent/WeKnora",
       "url": "https://github.com/Tencent/WeKnora",
-      "hot": "26,198"
+      "hot": "26,261"
     },
     {
       "rank": 10,
       "title": "[Swift] abue-ammar/tinycast",
       "url": "https://github.com/abue-ammar/tinycast",
-      "hot": "6,057"
+      "hot": "6,157"
     }
   ]
 }
