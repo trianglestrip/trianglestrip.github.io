@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-18T18:18:59+00:00",
+  "updated_at": "2026-09-18T20:58:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "代码审计不只靠人工逐行看：用 DeepAudit 跑一遍项目级 AI 安全检查",
       "url": "https://blog.csdn.net/qq_54796785/article/details/165758305",
-      "hot": "17998"
+      "hot": "17642"
     },
     {
       "rank": 2,
       "title": "Kubernetes - 核心资源对象的关系梳理，构建 K8s 知识框架",
       "url": "https://blog.csdn.net/qq_41187124/article/details/157586388",
-      "hot": "15730"
+      "hot": "15084"
     },
     {
       "rank": 3,
       "title": "AI Agent 越界之后：为什么只有沙箱还不够",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/164885374",
-      "hot": "13778"
+      "hot": "13952"
     },
     {
       "rank": 4,
       "title": "【AI智能体】Codex 制作AI视频实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/164164193",
-      "hot": "13486"
+      "hot": "13489"
     },
     {
       "rank": 5,
       "title": "普通摄像头怎么加上 AI 监控？用 Frigate 把识别和事件管理放到绿联 NAS",
       "url": "https://blog.csdn.net/liu_chen_yang/article/details/165744544",
-      "hot": "12998"
+      "hot": "12935"
     },
     {
       "rank": 6,
       "title": "数据库上 K8s 之后谁来管？拆解金仓 KES-Operator 的声明式运维方案",
       "url": "https://blog.csdn.net/2401_86326742/article/details/165760042",
-      "hot": "11915"
+      "hot": "12011"
     },
     {
       "rank": 7,
       "title": "Prometheus 告警怎么推到钉钉？从单群通知到跨网络 Alertmanager 实战",
       "url": "https://blog.csdn.net/Rqaqedamancy/article/details/165732655",
-      "hot": "9953"
+      "hot": "9973"
     },
     {
       "rank": 8,
       "title": "部署 Excalidraw：Docker 搭建手绘白板，再配置固定公网访问",
       "url": "https://blog.csdn.net/2602_94956987/article/details/165854719",
-      "hot": "9756"
+      "hot": "9799"
     },
     {
       "rank": 9,
       "title": "不再依赖在线工具：用极空间 NAS 搭建私有 PDF 处理服务",
       "url": "https://blog.csdn.net/weixin_52908342/article/details/165867709",
-      "hot": "9500"
+      "hot": "8959"
     },
     {
       "rank": 10,
-      "title": "2026华为AI码道 CodeArts 使用分享：Windows端 + 服务器CLI 实战总结",
-      "url": "https://blog.csdn.net/wenzhi20102321/article/details/165626006",
-      "hot": "9364"
+      "title": "C++20模板元编程 05：吃透变参模板，解锁编译期万能参数能力",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/165889895",
+      "hot": "8860"
     }
   ]
 }
