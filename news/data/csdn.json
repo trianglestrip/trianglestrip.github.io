@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-19T13:24:24+00:00",
+  "updated_at": "2026-09-19T16:35:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 制作AI视频实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/164164193",
-      "hot": "32374"
+      "hot": "31676"
     },
     {
       "rank": 2,
       "title": "30天从零开始学AI应用开发（Day 1）：机器学习、深度学习、大模型，到底是个啥关系",
       "url": "https://blog.csdn.net/m0_74956872/article/details/165758852",
-      "hot": "22937"
+      "hot": "25415"
     },
     {
       "rank": 3,
       "title": "C++20模板元编程 05：吃透变参模板，解锁编译期万能参数能力",
       "url": "https://blog.csdn.net/2503_92624912/article/details/165889895",
-      "hot": "18211"
+      "hot": "15877"
     },
     {
       "rank": 4,
       "title": "代码审计不只靠人工逐行看：用 DeepAudit 跑一遍项目级 AI 安全检查",
       "url": "https://blog.csdn.net/qq_54796785/article/details/165758305",
-      "hot": "14728"
+      "hot": "15139"
     },
     {
       "rank": 5,
       "title": "开源还是开权重：2026 年 AI 模型战争的控制权之争",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/164885385",
-      "hot": "11859"
+      "hot": "11887"
     },
     {
       "rank": 6,
       "title": "【AI大模型接入SDK】C++会话管理模块（SessionManager）设计与实现",
       "url": "https://blog.csdn.net/2401_89899187/article/details/165889777",
-      "hot": "11786"
+      "hot": "11699"
     },
     {
       "rank": 7,
       "title": "普通摄像头怎么加上 AI 监控？用 Frigate 把识别和事件管理放到绿联 NAS",
       "url": "https://blog.csdn.net/liu_chen_yang/article/details/165744544",
-      "hot": "11526"
+      "hot": "10238"
     },
     {
       "rank": 8,
       "title": "Python与AI应用（利用API调用在PyCharm本地使用大模型）",
       "url": "https://blog.csdn.net/W20070611/article/details/165757432",
-      "hot": "10656"
+      "hot": "10062"
     },
     {
       "rank": 9,
       "title": "OceanBase VS 金仓：别只比QPS，先搞清楚你在为什么场景买单",
       "url": "https://blog.csdn.net/beautifulmemory/article/details/165244547",
-      "hot": "10249"
+      "hot": "9355"
     },
     {
       "rank": 10,
-      "title": "Kubernetes - 核心资源对象的关系梳理，构建 K8s 知识框架",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157586388",
-      "hot": "9854"
+      "title": "飞牛 NAS 部署 prompts.chat：自建提示词库、导入社区内容，再配置固定公网访问",
+      "url": "https://blog.csdn.net/weixin_42878111/article/details/165731637",
+      "hot": "8685"
     }
   ]
 }

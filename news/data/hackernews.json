@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-19T13:24:32+00:00",
+  "updated_at": "2026-09-19T16:35:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Laya the open source version of Jev",
       "url": "https://laya.convaiinnovations.com/",
-      "hot": "148"
+      "hot": "503"
     },
     {
       "rank": 2,
-      "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
-      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
-      "hot": "358"
+      "title": "A graphical desktop for the ZX Spectrum",
+      "url": "https://github.com/mindbox77/zxdesk",
+      "hot": "60"
     },
     {
       "rank": 3,
-      "title": "AI-generated posters don’t have to be horrible",
-      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
-      "hot": "409"
+      "title": "Tin: full-text search for Postgres",
+      "url": "https://planetscale.com/blog/introducing-tin",
+      "hot": "76"
     },
     {
       "rank": 4,
-      "title": "“The Secret Life of Circuits” is here",
-      "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
-      "hot": "114"
+      "title": "AI-generated posters don’t have to be horrible",
+      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "hot": "716"
     },
     {
       "rank": 5,
-      "title": "GPT-6 Astra Solves a WWI German Radio Cipher",
-      "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
-      "hot": "175"
+      "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
+      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+      "hot": "474"
     },
     {
       "rank": 6,
-      "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
-      "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
-      "hot": "899"
+      "title": "Leaving DigitalOcean, one site at a time",
+      "url": "https://keith.is/post/leaving-digitalocean/",
+      "hot": "4"
     },
     {
       "rank": 7,
-      "title": "If math is more than proof, we need to better celebrate the rest of it",
-      "url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/",
-      "hot": "175"
+      "title": "Jobs Without LeetCode",
+      "url": "https://noleet.lol/jobs",
+      "hot": "9"
     },
     {
       "rank": 8,
-      "title": "San Francisco Onion Futures Company",
-      "url": "https://onionfutures.com/",
-      "hot": "238"
+      "title": "Black Holes or Black Hole Stars? Astronomers Spar over 'Little Red Dots'",
+      "url": "https://www.quantamagazine.org/black-holes-or-black-hole-stars-astronomers-spar-over-webb-telescopes-little-red-dots-20260914/",
+      "hot": "43"
     },
     {
       "rank": 9,
-      "title": "Show HN: I wrote a custom assembler for CHIP-8 in C++",
-      "url": "https://github.com/Tackx/c8-ass",
-      "hot": "19"
+      "title": "“The Secret Life of Circuits” is here",
+      "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
+      "hot": "180"
     },
     {
       "rank": 10,
-      "title": "Communication by means of modulated Johnson noise",
-      "url": "https://www.pnas.org/doi/10.1073/pnas.2201337119",
-      "hot": "21"
+      "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
+      "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
+      "hot": "974"
     }
   ]
 }
