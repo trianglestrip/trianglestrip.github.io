@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-19T18:50:25+00:00",
+  "updated_at": "2026-09-19T21:05:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 制作AI视频实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/164164193",
-      "hot": "33448"
+      "hot": "32151"
     },
     {
       "rank": 2,
       "title": "30天从零开始学AI应用开发（Day 1）：机器学习、深度学习、大模型，到底是个啥关系",
       "url": "https://blog.csdn.net/m0_74956872/article/details/165758852",
-      "hot": "29803"
+      "hot": "28784"
     },
     {
       "rank": 3,
       "title": "开源还是开权重：2026 年 AI 模型战争的控制权之争",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/164885385",
-      "hot": "15366"
+      "hot": "15212"
     },
     {
       "rank": 4,
       "title": "C++20模板元编程 05：吃透变参模板，解锁编译期万能参数能力",
       "url": "https://blog.csdn.net/2503_92624912/article/details/165889895",
-      "hot": "15269"
+      "hot": "15038"
     },
     {
       "rank": 5,
-      "title": "普通摄像头怎么加上 AI 监控？用 Frigate 把识别和事件管理放到绿联 NAS",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/165744544",
-      "hot": "11116"
+      "title": "不再依赖在线工具：用极空间 NAS 搭建私有 PDF 处理服务",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/165867709",
+      "hot": "11179"
     },
     {
       "rank": 6,
-      "title": "不再依赖在线工具：用极空间 NAS 搭建私有 PDF 处理服务",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/165867709",
-      "hot": "11112"
+      "title": "普通摄像头怎么加上 AI 监控？用 Frigate 把识别和事件管理放到绿联 NAS",
+      "url": "https://blog.csdn.net/liu_chen_yang/article/details/165744544",
+      "hot": "10409"
     },
     {
       "rank": 7,
       "title": "OceanBase VS 金仓：别只比QPS，先搞清楚你在为什么场景买单",
       "url": "https://blog.csdn.net/beautifulmemory/article/details/165244547",
-      "hot": "9827"
+      "hot": "9705"
     },
     {
       "rank": 8,
-      "title": "Python与AI应用（利用API调用在PyCharm本地使用大模型）",
-      "url": "https://blog.csdn.net/W20070611/article/details/165757432",
-      "hot": "9500"
+      "title": "22秒攻击窗口下的防御重构：AI Threat Defense 与 Agent 安全护栏实践",
+      "url": "https://blog.csdn.net/CC1991_/article/details/165754156",
+      "hot": "9667"
     },
     {
       "rank": 9,
-      "title": "22秒攻击窗口下的防御重构：AI Threat Defense 与 Agent 安全护栏实践",
-      "url": "https://blog.csdn.net/CC1991_/article/details/165754156",
-      "hot": "9430"
+      "title": "【AI大模型接入SDK】C++会话管理模块（SessionManager）设计与实现",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/165889777",
+      "hot": "9277"
     },
     {
       "rank": 10,
-      "title": "【AI大模型接入SDK】C++会话管理模块（SessionManager）设计与实现",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/165889777",
-      "hot": "9397"
+      "title": "Python与AI应用（利用API调用在PyCharm本地使用大模型）",
+      "url": "https://blog.csdn.net/W20070611/article/details/165757432",
+      "hot": "9120"
     }
   ]
 }

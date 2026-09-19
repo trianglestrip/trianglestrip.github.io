@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-19T18:50:31+00:00",
+  "updated_at": "2026-09-19T21:05:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "I built non-autoregressive decision models with RL a year ago",
       "url": "https://laya.convaiinnovations.com/",
-      "hot": "726"
+      "hot": "916"
     },
     {
       "rank": 2,
       "title": "AI-generated posters don’t have to be horrible",
       "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
-      "hot": "947"
+      "hot": "1154"
     },
     {
       "rank": 3,
-      "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
-      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
-      "hot": "546"
+      "title": "Brood War Bench",
+      "url": "https://bw.swerdlow.dev/report",
+      "hot": "52"
     },
     {
       "rank": 4,
-      "title": "A graphical desktop for the ZX Spectrum",
-      "url": "https://github.com/mindbox77/zxdesk",
-      "hot": "106"
+      "title": "ZK-JPEG: Zero-Knowledge Image Editing and Compression",
+      "url": "https://eprint.iacr.org/2026/2039",
+      "hot": "23"
     },
     {
       "rank": 5,
-      "title": "Btrfs/ZFS/bcachefs under workloads classic benchmarks skip",
-      "url": "https://bartosz.fenski.pl/modern-fs-benchmark/",
-      "hot": "11"
+      "title": "Measure internet censorship. Contribute to the largest open dataset",
+      "url": "https://ooni.org/install",
+      "hot": "19"
     },
     {
       "rank": 6,
-      "title": "Tin: full-text search for Postgres",
-      "url": "https://planetscale.com/blog/introducing-tin",
-      "hot": "118"
+      "title": "Two parallel neural ectoderm progenitors contribute to the developing brain",
+      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+      "hot": "583"
     },
     {
       "rank": 7,
-      "title": "“The Secret Life of Circuits” is here",
-      "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
-      "hot": "233"
+      "title": "Deodands put a price on objects that caused death",
+      "url": "https://daily.jstor.org/how-the-railways-killed-a-medieval-law/",
+      "hot": "11"
     },
     {
       "rank": 8,
-      "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
-      "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
-      "hot": "1034"
+      "title": "Show HN: CUA-S1 – A System One Model for Computer Use",
+      "url": "https://github.com/trycua/cua",
+      "hot": "29"
     },
     {
       "rank": 9,
-      "title": "Show HN: CUA-S1 – A System One Model for Computer Use",
-      "url": "https://github.com/trycua/cua",
-      "hot": "4"
+      "title": "Suzanne Ciani's Buchla Cookbook",
+      "url": "https://echo.orpheusinstituut.be/article/suzannes-buchla-cookbook",
+      "hot": "31"
     },
     {
       "rank": 10,
-      "title": "Black Holes or Black Hole Stars? Astronomers Spar over 'Little Red Dots'",
-      "url": "https://www.quantamagazine.org/black-holes-or-black-hole-stars-astronomers-spar-over-webb-telescopes-little-red-dots-20260914/",
-      "hot": "60"
+      "title": "Tin: full-text search for Postgres",
+      "url": "https://planetscale.com/blog/introducing-tin",
+      "hot": "152"
     }
   ]
 }
