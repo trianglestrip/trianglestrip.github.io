@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-18T23:00:21+00:00",
+  "updated_at": "2026-09-19T05:21:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "ColorOS 17 新技术解读，渲染、调度与 AI 升级",
+      "url": "https://www.oschina.net/news/502593",
+      "hot": "Sat, 19 Sep 2026 12:47:31 +0800"
+    },
+    {
+      "rank": 2,
       "title": "灵界 OS 5.0 稳定版 · 桌面按钮可以隐藏了",
       "url": "https://www.oschina.net/news/502590",
       "hot": "Fri, 18 Sep 2026 18:47:40 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "智谱旗下 AI 编程工具 ZCode 被扒静默上传完整 Git 历史",
       "url": "https://www.oschina.net/news/502589",
       "hot": "Fri, 18 Sep 2026 18:23:29 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "用 SQL 操作 Milvus：从检索到 ORM",
       "url": "https://www.oschina.net/news/502588",
       "hot": "Fri, 18 Sep 2026 17:16:36 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "华为发布“Peerium 计算架构”，让百万处理器成为一台计算机",
       "url": "https://www.oschina.net/news/502587/huawei-new-computing-architecture-peerium",
       "hot": "Fri, 18 Sep 2026 16:41:45 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "华为云 All in Agentic Cloud，灵衢昇腾 950 智算集群全球上线",
       "url": "https://www.oschina.net/news/502586/hc-agentic-infra-industry-ai",
       "hot": "Fri, 18 Sep 2026 16:26:54 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "【AI 智能运维平台】本周更新：打通各应用关键信息，实现深度联动与统一查看，告别跨 APP 反复切换",
       "url": "https://www.oschina.net/news/502585",
       "hot": "Fri, 18 Sep 2026 16:19:32 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "Levyra：一个不上传数据、也不会放错歌的开源音乐播放器",
       "url": "https://www.oschina.net/news/502584",
       "hot": "Fri, 18 Sep 2026 15:58:59 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "面向船舶/计算机/数学专业，参赛可获中船海舟校招优先机会",
       "url": "https://www.oschina.net/news/502583",
       "hot": "Fri, 18 Sep 2026 15:55:46 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "GLM-5.3-FlashX 上线，智谱把国产卡上的推理速度顶到 200 token/s",
       "url": "https://www.oschina.net/news/502582",
       "hot": "Fri, 18 Sep 2026 15:26:31 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
-      "url": "https://www.oschina.net/news/502580",
-      "hot": "Fri, 18 Sep 2026 14:03:04 +0800"
     }
   ]
 }

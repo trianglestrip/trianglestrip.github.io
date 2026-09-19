@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-18T23:00:13+00:00",
+  "updated_at": "2026-09-19T05:21:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
-      "url": "https://code.claude.com/docs/en/changelog",
-      "hot": "304"
+      "title": "San Francisco Onion Futures Company",
+      "url": "https://onionfutures.com/",
+      "hot": "57"
     },
     {
       "rank": 2,
       "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
       "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
-      "hot": "388"
+      "hot": "704"
     },
     {
       "rank": 3,
-      "title": "Saving another 100TB of RAM",
-      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
-      "hot": "158"
+      "title": "Science Is Open Software",
+      "url": "https://jepedersen.dk/blog/202505_research/",
+      "hot": "46"
     },
     {
       "rank": 4,
-      "title": "Cloudflare Quick Tunnels",
-      "url": "https://try.cloudflare.com/",
-      "hot": "506"
+      "title": "SDCC – Small Device C Compiler",
+      "url": "https://sdcc.sourceforge.net/",
+      "hot": "32"
     },
     {
       "rank": 5,
-      "title": "Xcode 27.1 Beta Release Notes",
-      "url": "https://developer.apple.com/documentation/xcode-release-notes/xcode-27_1-release-notes",
-      "hot": "101"
+      "title": "Typesafe-computer-use drives a Mac toward a goal for 1/50th of a cent per step",
+      "url": "https://github.com/awlevin/typesafe-computer-use",
+      "hot": "17"
     },
     {
       "rank": 6,
-      "title": "Cache-to-Cache: Direct Semantic Communication Between LLMs (2025)",
-      "url": "https://arxiv.org/abs/2510.03215",
-      "hot": "55"
+      "title": "Show HN: Seal – Letters and passwords that open for your family after you die",
+      "url": "https://github.com/jasonepage/Seal",
+      "hot": "8"
     },
     {
       "rank": 7,
-      "title": "Photon-Emission-Guided Laser Fault Injection Enables RP2350 Secure Debug",
-      "url": "https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection/",
-      "hot": "136"
+      "title": "Cloudflare Quick Tunnels",
+      "url": "https://try.cloudflare.com/",
+      "hot": "645"
     },
     {
       "rank": 8,
-      "title": "US troop deaths during Iran war exceed Pentagon count by at least four",
-      "url": "https://www.reuters.com/world/middle-east/us-troop-deaths-iran-war-exceed-pentagon-count-by-least-four-washington-post-2026-09-18/",
-      "hot": "34"
+      "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+      "url": "https://spectrum.ieee.org/llms-for-chip-design",
+      "hot": "92"
     },
     {
       "rank": 9,
-      "title": "Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
-      "url": "https://cactuscompute.com/needle",
-      "hot": "144"
+      "title": "Saving another 100TB of RAM",
+      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+      "hot": "292"
     },
     {
       "rank": 10,
       "title": "How to Write with an LLM",
       "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
-      "hot": "350"
+      "hot": "448"
     }
   ]
 }
