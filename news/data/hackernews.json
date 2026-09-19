@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-19T05:21:28+00:00",
+  "updated_at": "2026-09-19T09:38:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "San Francisco Onion Futures Company",
-      "url": "https://onionfutures.com/",
-      "hot": "57"
+      "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
+      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+      "hot": "205"
     },
     {
       "rank": 2,
-      "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
-      "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
-      "hot": "704"
+      "title": "If math is more than proof, we need to better celebrate the rest of it",
+      "url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/",
+      "hot": "84"
     },
     {
       "rank": 3,
-      "title": "Science Is Open Software",
-      "url": "https://jepedersen.dk/blog/202505_research/",
-      "hot": "46"
+      "title": "GPT-6 Astra Solves a WWI German Radio Cipher",
+      "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+      "hot": "102"
     },
     {
       "rank": 4,
-      "title": "SDCC – Small Device C Compiler",
-      "url": "https://sdcc.sourceforge.net/",
-      "hot": "32"
+      "title": "San Francisco Onion Futures Company",
+      "url": "https://onionfutures.com/",
+      "hot": "185"
     },
     {
       "rank": 5,
-      "title": "Typesafe-computer-use drives a Mac toward a goal for 1/50th of a cent per step",
-      "url": "https://github.com/awlevin/typesafe-computer-use",
-      "hot": "17"
+      "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
+      "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
+      "hot": "832"
     },
     {
       "rank": 6,
-      "title": "Show HN: Seal – Letters and passwords that open for your family after you die",
-      "url": "https://github.com/jasonepage/Seal",
-      "hot": "8"
+      "title": "Apple M6 Pro Achieves the Highest Single-Core CPU Score in Geekbench 7",
+      "url": "https://browser.geekbench.com/v7/cpu/389219",
+      "hot": "39"
     },
     {
       "rank": 7,
-      "title": "Cloudflare Quick Tunnels",
-      "url": "https://try.cloudflare.com/",
-      "hot": "645"
+      "title": "Typesafe-computer-use drives a Mac toward a goal for 1/50th of a cent per step",
+      "url": "https://github.com/awlevin/typesafe-computer-use",
+      "hot": "77"
     },
     {
       "rank": 8,
-      "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
-      "url": "https://spectrum.ieee.org/llms-for-chip-design",
-      "hot": "92"
+      "title": "Cloudflare Quick Tunnels",
+      "url": "https://try.cloudflare.com/",
+      "hot": "702"
     },
     {
       "rank": 9,
-      "title": "Saving another 100TB of RAM",
-      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
-      "hot": "292"
+      "title": "\"The Secret Life of Circuits\" is here",
+      "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
+      "hot": "8"
     },
     {
       "rank": 10,
-      "title": "How to Write with an LLM",
-      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
-      "hot": "448"
+      "title": "Science Is Open Software",
+      "url": "https://jepedersen.dk/blog/202505_research/",
+      "hot": "92"
     }
   ]
 }

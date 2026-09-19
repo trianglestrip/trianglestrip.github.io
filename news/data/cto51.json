@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-19T05:21:27+00:00",
+  "updated_at": "2026-09-19T09:38:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "《HarmonyOS 7 国际化开发手记》01：ResourceManager、资源目录与限定词匹配",
+      "url": "https://ost.51cto.com/posts/56804",
+      "hot": "一条字符串背后，其实藏着一套资源匹配机制国际化这个功能，很容易被做成&quot;把中文翻译成英文&quot;。项目小的时候这么干，看起来也没什么问题。等..."
+    },
+    {
+      "rank": 2,
       "title": "HarmonyOS 7 闪控球实战：悬浮球的表情、脾气和分寸",
       "url": "https://ost.51cto.com/posts/56753",
       "hot": "外卖骑手的手机屏幕永远是最挤的：导航开着、接单App挂着、偶尔还要回个微信。新订单来了，提醒必须出现在其它应用上面&mdash;&mdash;骑手正盯着导航..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "刚刚，Gemini 4 Pro偷跑上线！碾压Astra和Fable",
       "url": "https://www.51cto.com/article/856310.html",
       "hot": "就在这两天，大模型竞技场Arena悄然杀入一款新模型，名字竟挂着「gemini-3.8-flash」。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "刚刚，Claude Code放大招！Projects上线，200个Agent不眠不休",
       "url": "https://www.51cto.com/article/856309.html",
       "hot": "就在刚刚，Anthropic 官宣了重新设计的 Projects 功能，第一站直接落在 Claude Code。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "BragJack：用一个浏览器扩展劫持五大主流浏览器",
       "url": "https://www.51cto.com/article/856298.html",
       "hot": "Forever Security 研究员 Gal Weizman 公布了名为 BragJack 的浏览器 AI 助手攻击研究——用一个普通浏览器扩展,先后攻陷 Chrome、Microsoft Edge、Opera Neon、Perplexity Comet、Claude in Chrome 五款主流产品的内置 AI 助手,全程零点击、零传统意义上的提示注入。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "日志服务 TLS AgentLoop：让多模态调用清晰可见",
       "url": "https://www.51cto.com/article/856297.html",
       "hot": "本文以 DSH（DeepSeek Harness）的图片采集场景为例，介绍 TLS AgentLoop 如何把媒体内容接回 Session、Trace 和 Span，让一次图文请求从“执行过”变成“看得清”。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "第 17 篇：滑动窗口：流量的“红绿灯”",
       "url": "https://www.51cto.com/article/856296.html",
       "hot": "滑动窗口让 TCP 可以连续发送，但又不会超过接收方能承受的范围。它既是油门，也是刹车。更准确地说，是一个会移动的红绿灯。​"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "Netty 能替代 Tomcat 吗？搞懂两者定位就明白了",
       "url": "https://www.51cto.com/article/856295.html",
       "hot": "Tomcat 现代版本同样支持 NIO/NIO2，所以不能简单认为 Tomcat 就是 BIO，而 Netty 就是 NIO。两者真正重要的区别，是抽象层次和使用场景不同。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "当 Codex 开始写测试：AI 正在重新定义软件质量工程",
       "url": "https://www.51cto.com/article/856293.html",
       "hot": "如果没有可靠的测试，Agent 写得越快，可能只是更快地产生更多不确定代码。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Agent 写稿突然“断片”？OpenViking 治好了我的内容创作焦虑",
       "url": "https://www.51cto.com/article/856292.html",
       "hot": "缺少一套可结构化、可召回、可跨会话和跨 Agent 的长期记忆底座，而 OpenViking 则完美解决了这一问题。"
-    },
-    {
-      "rank": 10,
-      "title": "AI 原生 SDLC 落地实战：Claude Code、Codex、Gemini 智能体工程开发完整指南",
-      "url": "https://www.51cto.com/article/856283.html",
-      "hot": "这篇实操指南，带你吃透 AI 原生 SDLC，打通规划、设计、构建、测试、部署、维护全流程，实现单人工程师比肩传统五人团队的开发效能。"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-19T00:57:00+00:00",
+  "updated_at": "2026-09-19T09:38:57+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -26,19 +26,19 @@
       "rank": 4,
       "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
       "url": "https://huggingface.co/papers/2609.14858",
-      "hot": "226"
+      "hot": "227"
     },
     {
       "rank": 5,
-      "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
-      "url": "https://huggingface.co/papers/2609.15818",
-      "hot": "403"
+      "title": "AutoDev: Automated AI-Driven Development",
+      "url": "https://huggingface.co/papers/2403.08299",
+      "hot": "20"
     },
     {
       "rank": 6,
-      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
-      "url": "https://huggingface.co/papers/2609.13356",
-      "hot": "248"
+      "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
+      "url": "https://huggingface.co/papers/2609.15818",
+      "hot": "406"
     },
     {
       "rank": 7,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "AutoDev: Automated AI-Driven Development",
-      "url": "https://huggingface.co/papers/2403.08299",
-      "hot": "20"
+      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+      "url": "https://huggingface.co/papers/2609.13356",
+      "hot": "248"
     }
   ]
 }
