@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-20T09:46:33+00:00",
+  "updated_at": "2026-09-20T13:44:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "30天从零开始学AI应用开发（Day 1）：机器学习、深度学习、大模型，到底是个啥关系",
       "url": "https://blog.csdn.net/m0_74956872/article/details/165758852",
-      "hot": "39486"
+      "hot": "41224"
     },
     {
       "rank": 2,
       "title": "【AI智能体】Codex 制作AI视频实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/164164193",
-      "hot": "32437"
+      "hot": "31983"
     },
     {
       "rank": 3,
-      "title": "22秒攻击窗口下的防御重构：AI Threat Defense 与 Agent 安全护栏实践",
-      "url": "https://blog.csdn.net/CC1991_/article/details/165754156",
-      "hot": "13719"
+      "title": "开源还是开权重：2026 年 AI 模型战争的控制权之争",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/164885385",
+      "hot": "13192"
     },
     {
       "rank": 4,
-      "title": "开源还是开权重：2026 年 AI 模型战争的控制权之争",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/164885385",
-      "hot": "11701"
+      "title": "【AI大模型接入SDK】C++会话管理模块（SessionManager）设计与实现",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/165889777",
+      "hot": "12730"
     },
     {
       "rank": 5,
-      "title": "Kubernetes - 核心资源对象的关系梳理，构建 K8s 知识框架",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157586388",
-      "hot": "11362"
+      "title": "C++20模板元编程 05：吃透变参模板，解锁编译期万能参数能力",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/165889895",
+      "hot": "11327"
     },
     {
       "rank": 6,
-      "title": "【AI大模型接入SDK】C++会话管理模块（SessionManager）设计与实现",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/165889777",
-      "hot": "11047"
+      "title": "时序数据库选型全指南｜大数据工业场景Apache IoTDB落地实操",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/165758925",
+      "hot": "11277"
     },
     {
       "rank": 7,
-      "title": "C++20模板元编程 05：吃透变参模板，解锁编译期万能参数能力",
-      "url": "https://blog.csdn.net/2503_92624912/article/details/165889895",
-      "hot": "10405"
+      "title": "Kubernetes - 核心资源对象的关系梳理，构建 K8s 知识框架",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157586388",
+      "hot": "10142"
     },
     {
       "rank": 8,
-      "title": "Python与AI应用（利用API调用在PyCharm本地使用大模型）",
-      "url": "https://blog.csdn.net/W20070611/article/details/165757432",
-      "hot": "10195"
+      "title": "Spring Boot日志",
+      "url": "https://blog.csdn.net/2401_89019969/article/details/156095183",
+      "hot": "9938"
     },
     {
       "rank": 9,
-      "title": "Spring Boot日志",
-      "url": "https://blog.csdn.net/2401_89019969/article/details/156095183",
-      "hot": "8535"
+      "title": "Python与AI应用（利用API调用在PyCharm本地使用大模型）",
+      "url": "https://blog.csdn.net/W20070611/article/details/165757432",
+      "hot": "9889"
     },
     {
       "rank": 10,
-      "title": "时序数据库选型全指南｜大数据工业场景Apache IoTDB落地实操",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/165758925",
-      "hot": "8407"
+      "title": "基于 Java + Playwright 实现网站自动访问与数据采集（以腾讯云开发者社区为例）",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/166014459",
+      "hot": "8855"
     }
   ]
 }

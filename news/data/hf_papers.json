@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-20T05:11:23+00:00",
+  "updated_at": "2026-09-20T13:44:48+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,51 +12,51 @@
     },
     {
       "rank": 2,
+      "title": "SmolDocling: An ultra-compact vision-language model for end-to-end\n  multi-modal document conversion",
+      "url": "https://huggingface.co/papers/2503.11576",
+      "hot": "175"
+    },
+    {
+      "rank": 3,
       "title": "YuE: Scaling Open Foundation Models for Long-Form Music Generation",
       "url": "https://huggingface.co/papers/2503.08638",
       "hot": "77"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
       "url": "https://huggingface.co/papers/2608.23283",
       "hot": "208"
     },
     {
-      "rank": 4,
-      "title": "SmolDocling: An ultra-compact vision-language model for end-to-end\n  multi-modal document conversion",
-      "url": "https://huggingface.co/papers/2503.11576",
-      "hot": "174"
-    },
-    {
       "rank": 5,
       "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
       "url": "https://huggingface.co/papers/2609.14858",
-      "hot": "232"
+      "hot": "235"
     },
     {
       "rank": 6,
-      "title": "A decoder-only foundation model for time-series forecasting",
-      "url": "https://huggingface.co/papers/2310.10688",
-      "hot": "43"
+      "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+      "url": "https://huggingface.co/papers/2609.20519",
+      "hot": "92"
     },
     {
       "rank": 7,
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "44"
+    },
+    {
+      "rank": 8,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "87"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Paper2Agent: Reimagining Research Papers As Interactive and Reliable AI\n  Agents",
       "url": "https://huggingface.co/papers/2509.06917",
       "hot": "45"
-    },
-    {
-      "rank": 9,
-      "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
-      "url": "https://huggingface.co/papers/2609.20519",
-      "hot": "82"
     },
     {
       "rank": 10,
