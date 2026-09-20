@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-20T05:11:02+00:00",
+  "updated_at": "2026-09-20T09:46:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 7 网络请求实战：用 RCP 搭一个正经的网络层",
+      "url": "https://ost.51cto.com/posts/56952",
+      "hot": "几乎每个应用都要联网。但在ArkTS项目里写网络代码，很多人的起点是ohos.net.http：每个请求create一个HttpRequest、手动拼完整URL、挨个se..."
+    },
+    {
+      "rank": 2,
+      "title": "给视频模型建一座「全能训练场」：300项任务、可验证奖励，VBVR-Pro系统探索视觉推理",
+      "url": "https://www.51cto.com/article/856478.html",
+      "hot": "VBVR-Pro 为视觉推理提供了一套统一的实验基础。300 项视觉推理任务、统一的多模态数据、可验证的 Benchmark、超过 30 个生成模型的系统比较，以及一套真正能够用于大规模强化学习的 Verifiable Reward，共同构成了一个从任务构建、模型训练、能力测试到 RL 优化的闭环。"
+    },
+    {
+      "rank": 3,
+      "title": "Jev爆火硅谷！哑巴AI卷疯14万开发者",
+      "url": "https://www.51cto.com/article/856477.html",
+      "hot": "整个硅谷都被Jev刷屏了！发布仅三天，它就被Vercel、Cloudflare和LangChain等主流平台迅速集成，有人说，我们即将迎来自动化智能的大爆发！"
+    },
+    {
+      "rank": 4,
+      "title": "首次！GPT-6 Astra破解「重大进展」级难题，数学家沦为提示词工具人",
+      "url": "https://www.51cto.com/article/856476.html",
+      "hot": "一道自2017年以来悬而未决的「重大进展」级开放数学难题，被 GPT-6 Astra 联手三位人类研究员正式攻克！"
+    },
+    {
+      "rank": 5,
       "title": "HarmonyOS 7 卡片可编辑实战：让用户自己定桌面那张卡",
       "url": "https://ost.51cto.com/posts/56879",
       "hot": "桌面卡片发展到现在，「应用推什么、用户看什么」一直是个默认设定。天气卡片显示哪座城市、待办卡片展示哪个清单、倒数日卡片用哪个纪念日..."
     },
     {
-      "rank": 2,
-      "title": "HarmonyOS 头像选择别再手写相册流程了：用 FunctionalButton 接入 CHOOSE_AVATAR",
-      "url": "https://ost.51cto.com/posts/56864",
-      "hot": "前言做个人资料页时，「更换头像」看起来是个小功能，但真落到代码里，往往不止拉起相册这么简单。如果自己用picker.PhotoSelectPicker实现..."
+      "rank": 6,
+      "title": "第 18 篇 | HTTP/HTTPS：网页背后的协议",
+      "url": "https://www.51cto.com/article/856433.html",
+      "hot": "TCP 负责把字节可靠地送到，HTTP规定这些字节表达什么意思，HTTPS再给这段表达加上安全保护。"
     },
     {
-      "rank": 3,
+      "rank": 7,
+      "title": "Hermes Agent 个人使用指南：从安装到进阶的完整实战",
+      "url": "https://www.51cto.com/article/856449.html",
+      "hot": "Hermes Agent 是一个能持续学习、跨会话记忆、7×24 小时运行的个人 AI Agent。"
+    },
+    {
+      "rank": 8,
       "title": "AI 算力密集型任务优选方案：五大专业智能体分工+矛盾协调机制全拆解",
       "url": "https://www.51cto.com/article/856438.html",
       "hot": "本文结合真实 AI 容量扩容线上故障复盘，给出可落地的单/多智能体选型标准、团队协作架构。"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "P9主管追问我：\"现在的大模型都说百万上下文，真的都有吗，保质量吗？\" 我说支持百万不代表有效百万，主管让我展开讲讲",
       "url": "https://www.51cto.com/article/856429.html",
       "hot": "长上下文是这两年大模型竞争的一个重要战场。从RoPE的各种改进方案，到FlashAttention这样的底层工程突破，再到Mamba这类全新架构的探索，背后凝聚了不少扎实的技术工作。"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "eBPF vs 传统方案：实测数据",
       "url": "https://www.51cto.com/article/856428.html",
       "hot": "在大多数场景下，eBPF 的性能优势明显，但不是所有场景都适合用 eBPF。根据具体场景选择最合适的方案，不要过度使用eBPF。​"
-    },
-    {
-      "rank": 6,
-      "title": "KV Cache不用「精挑细选」？随机删除媲美最强基线，推理吞吐最高再提43%",
-      "url": "https://www.51cto.com/article/856402.html",
-      "hot": "随着生成持续进行，每个历史 token 对应的 Key-Value 表示都会进入 KV Cache，显存占用随序列长度不断增长。对于长推理部署来说，KV Cache 很快会变成真正的系统瓶颈。"
-    },
-    {
-      "rank": 7,
-      "title": "Astra两周抢走13%份额，Anthropic或提前发新模型",
-      "url": "https://www.51cto.com/article/856401.html",
-      "hot": "路透社刚发了一条独家：Anthropic 正在考虑提前发布新模型。看来 GPT-6 Astra 真的把它打疼了。"
-    },
-    {
-      "rank": 8,
-      "title": "Anthropic接受OpenAI标准，智能体从此共用一份AGENTS.md",
-      "url": "https://www.51cto.com/article/856400.html",
-      "hot": "刚刚，Claude Code 成员 Thariq Shihipar（@trq212）发帖称，Claude Code 开始支持 AGENTS.md 文件了。"
-    },
-    {
-      "rank": 9,
-      "title": "开源Editable-Design，让AI生图终于能改字、拖图层",
-      "url": "https://www.51cto.com/article/856399.html",
-      "hot": "一个有审美但改不动，一个改得动却未必好看。最近开源的 Editable Design，想解决的正是这个有点尴尬的二选一。"
-    },
-    {
-      "rank": 10,
-      "title": "Jev详细解读：一个不说人话、只做决策的模型",
-      "url": "https://www.51cto.com/article/856422.html",
-      "hot": "TypeSafe AI 发布了他们的第一个模型 Jev。我把它从研究背景到原理，到评测数据和实用建议完整看了一遍。这是大模型的一种新范式。"
     }
   ]
 }
