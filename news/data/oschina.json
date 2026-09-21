@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-21T01:23:09+00:00",
+  "updated_at": "2026-09-21T06:31:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "禅道开源版22.6发布，集中优化功能细节，完善用户体验",
+      "url": "https://www.oschina.net/news/502635",
+      "hot": "Mon, 21 Sep 2026 13:12:25 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Jev 凭什么刷屏：一个不生成文本的 \"判断模型\"，正在悄悄提速 AI Agent",
+      "url": "https://www.oschina.net/news/502633",
+      "hot": "Mon, 21 Sep 2026 11:24:10 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "qKnow 专业版 v3.1.4 发布：智能Agent管控升级，编排资源可复用可迁移",
+      "url": "https://www.oschina.net/news/502632",
+      "hot": "Mon, 21 Sep 2026 10:50:25 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "ZCode 就静默上传风波正式回应：开源、道歉、切断快照上传链路",
+      "url": "https://www.oschina.net/news/502631",
+      "hot": "Mon, 21 Sep 2026 10:31:35 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "通义千问开源 Qwen-Image-2.1：7B 小模型，文生图 + 透明图 + 重编辑全合一",
+      "url": "https://www.oschina.net/news/502630/qwen-image-2-1",
+      "hot": "Mon, 21 Sep 2026 10:28:58 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "🔥🔥Skyeye 云企业级AI+零代码智能制造系统 - v4.1.5 发布",
+      "url": "https://www.oschina.net/news/502626",
+      "hot": "Mon, 21 Sep 2026 08:41:05 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "AI 编程工具安全思考： ZCode 上传完整.git 历史事件，本地代码隐私该如何守护",
+      "url": "https://www.oschina.net/news/502625",
+      "hot": "Mon, 21 Sep 2026 00:18:12 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "OpenAgent v2.93 发布：单二进制自托管 AI Agent 平台，新增 Agent Hub、Casbin 工具权限与审计日志",
+      "url": "https://www.oschina.net/news/502624",
+      "hot": "Sun, 20 Sep 2026 22:44:32 +0800"
+    },
+    {
+      "rank": 9,
       "title": "openKylin 成立 ZephyrProject SIG：加速 Zephyr 国内生态落地与技术创新",
       "url": "https://www.oschina.net/news/502623",
       "hot": "Sun, 20 Sep 2026 21:34:55 +0800"
     },
     {
-      "rank": 2,
-      "title": "MiniMax Code CLI 开源，取得了 76.7% 的任务通过率",
-      "url": "https://www.oschina.net/news/502619/minimax-code-cli",
-      "hot": "Sun, 20 Sep 2026 19:04:07 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "轻量级运维极速引擎 OpsFlash v0.6.0 正式发布",
-      "url": "https://www.oschina.net/news/502617",
-      "hot": "Sun, 20 Sep 2026 17:17:12 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "百度搭子用户规模环比增长9倍，发布企业版移动端、开发平台与共创计划",
-      "url": "https://www.oschina.net/news/502615",
-      "hot": "Sun, 20 Sep 2026 16:41:48 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "阶跃星辰发布 Step 5 Preview，面向真实世界 Agentic 任务的旗舰基座模型",
-      "url": "https://www.oschina.net/news/502614/stepfun-step-5-preview",
-      "hot": "Sun, 20 Sep 2026 16:06:58 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "智谱披露 GLM-5.3 初显 RSI：模型开始优化承载自己的推理系统",
-      "url": "https://www.oschina.net/news/502613/zai-glm-built-its-inference-infrastructure",
-      "hot": "Sun, 20 Sep 2026 15:55:15 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "微信 AI 团队开源 WeKnora：知识库不再只动嘴，还能“动手”执行",
-      "url": "https://www.oschina.net/news/502612",
-      "hot": "Sun, 20 Sep 2026 15:19:46 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "华为多维探索 Agentic 计算：超节点 + 集群，从算子打到 Agent 开发范式",
-      "url": "https://www.oschina.net/news/502611/huawei-hc2026-agentic-thinkpro-pto-cann",
-      "hot": "Sun, 20 Sep 2026 15:08:40 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "前 OpenAI 研究员发布 Jev 模型，旨在帮助软件做出快速、结构化的决策",
-      "url": "https://www.oschina.net/news/502609/typesafe-ai-system-one-models-and-jev",
-      "hot": "Sun, 20 Sep 2026 14:39:45 +0800"
-    },
-    {
       "rank": 10,
-      "title": "专访 申俊伟 | 人在真正忙碌起来的时候，反而会减少很多焦虑",
-      "url": "https://my.oschina.net/u/4806939/blog/19763765",
-      "hot": "Sun, 20 Sep 2026 11:45:07 +0800"
+      "title": "ModStartBlog v11.2.0 新增可选依赖、AI 文章投递及多项安全修复",
+      "url": "https://www.oschina.net/news/502622",
+      "hot": "Sun, 20 Sep 2026 21:29:39 +0800"
     }
   ]
 }

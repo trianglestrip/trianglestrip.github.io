@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-21T01:23:06+00:00",
+  "updated_at": "2026-09-21T06:31:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7 网络请求实战：用 RCP 搭一个正经的网络层",
-      "url": "https://ost.51cto.com/posts/56952",
-      "hot": "几乎每个应用都要联网。但在ArkTS项目里写网络代码，很多人的起点是ohos.net.http：每个请求create一个HttpRequest、手动拼完整URL、挨个se..."
+      "title": "Jev 为什么突然爆火：不生成文字的 AI，为什么又快又便宜",
+      "url": "https://www.51cto.com/article/856577.html",
+      "hot": "Jev 专门处理结构化决策。输入一段状态和若干问题，它会直接返回选项、评分或布尔概率，让程序继续执行；聊天、写作和代码生成仍由普通大语言模型完成。"
     },
     {
       "rank": 2,
-      "title": "给视频模型建一座「全能训练场」：300项任务、可验证奖励，VBVR-Pro系统探索视觉推理",
-      "url": "https://www.51cto.com/article/856478.html",
-      "hot": "VBVR-Pro 为视觉推理提供了一套统一的实验基础。300 项视觉推理任务、统一的多模态数据、可验证的 Benchmark、超过 30 个生成模型的系统比较，以及一套真正能够用于大规模强化学习的 Verifiable Reward，共同构成了一个从任务构建、模型训练、能力测试到 RL 优化的闭环。"
+      "title": "刚刚，GPT-6 Astra取得哥德巴赫猜想重大突破！",
+      "url": "https://www.51cto.com/article/856574.html",
+      "hot": "就在最近，GPT-6 Astra又在哥德巴赫猜想上取得新进展了。"
     },
     {
       "rank": 3,
-      "title": "Jev爆火硅谷！哑巴AI卷疯14万开发者",
-      "url": "https://www.51cto.com/article/856477.html",
-      "hot": "整个硅谷都被Jev刷屏了！发布仅三天，它就被Vercel、Cloudflare和LangChain等主流平台迅速集成，有人说，我们即将迎来自动化智能的大爆发！"
+      "title": "字节面试：多个 Agent 能不能同时调用同一个工具？",
+      "url": "https://www.51cto.com/article/856572.html",
+      "hot": "这道题从\"能不能\"问到\"该不该\"，中间隔了四层。前三层是知识——分类、锁、幂等、限流，这些都是能背的。第四层是判断，背不了。"
     },
     {
       "rank": 4,
-      "title": "首次！GPT-6 Astra破解「重大进展」级难题，数学家沦为提示词工具人",
-      "url": "https://www.51cto.com/article/856476.html",
-      "hot": "一道自2017年以来悬而未决的「重大进展」级开放数学难题，被 GPT-6 Astra 联手三位人类研究员正式攻克！"
+      "title": "AI面试：Agent处理200份文档跑到83份的时候挂了，怎么办？",
+      "url": "https://www.51cto.com/article/856571.html",
+      "hot": "面试官真正在考的，不是「你会不会重试」，而是三层更基础的东西。而且这三层是递进的——只答第一层，等于没答。下面一层层拆。"
     },
     {
       "rank": 5,
-      "title": "HarmonyOS 7 卡片可编辑实战：让用户自己定桌面那张卡",
-      "url": "https://ost.51cto.com/posts/56879",
-      "hot": "桌面卡片发展到现在，「应用推什么、用户看什么」一直是个默认设定。天气卡片显示哪座城市、待办卡片展示哪个清单、倒数日卡片用哪个纪念日..."
+      "title": "从日均 15 个 PR 积压到月提 2000+ 生产 PR：AI 时代，代码验证的新范式",
+      "url": "https://www.51cto.com/article/856554.html",
+      "hot": "真正的 AI 研发提效，从来不是放任机器疯狂生成代码，而是用自动化规则承接重复审查、用意图校验把控核心质量、用虚拟化环境支撑极致迭代。"
     },
     {
       "rank": 6,
-      "title": "第 18 篇 | HTTP/HTTPS：网页背后的协议",
-      "url": "https://www.51cto.com/article/856433.html",
-      "hot": "TCP 负责把字节可靠地送到，HTTP规定这些字节表达什么意思，HTTPS再给这段表达加上安全保护。"
+      "title": "HarmonyOS 7 短视频信息流实战：仿抖音的滑动播放怎么搭",
+      "url": "https://ost.51cto.com/posts/57240",
+      "hot": "「上面全是视频，往上一滑就切下一条，切过去立刻在播。」短视频信息流的交互描述起来就一句话，实现起来是一串问题：页面容器怎么竖着滑？..."
     },
     {
       "rank": 7,
-      "title": "Hermes Agent 个人使用指南：从安装到进阶的完整实战",
-      "url": "https://www.51cto.com/article/856449.html",
-      "hot": "Hermes Agent 是一个能持续学习、跨会话记忆、7×24 小时运行的个人 AI Agent。"
+      "title": "HarmonyOS 应用内字体大小动态调节：Slider + Preferences 完整实践指南",
+      "url": "https://ost.51cto.com/posts/57238",
+      "hot": "HarmonyOS应用内字体大小动态调节：Slider+Preferences完整实践指南一、为什么应用内字体调节如此重要？在移动应用开发中，用户群体的年龄..."
     },
     {
       "rank": 8,
-      "title": "AI 算力密集型任务优选方案：五大专业智能体分工+矛盾协调机制全拆解",
-      "url": "https://www.51cto.com/article/856438.html",
-      "hot": "本文结合真实 AI 容量扩容线上故障复盘，给出可落地的单/多智能体选型标准、团队协作架构。"
+      "title": "订单超时自动关单：RabbitMQ 延迟队列 + 定时任务\"双保险\"实践",
+      "url": "https://www.51cto.com/article/856553.html",
+      "hot": "订单超时自动关单怎么做？生产环境的做法是：RabbitMQ 延迟队列 + 定时任务，双保险。"
     },
     {
       "rank": 9,
-      "title": "P9主管追问我：\"现在的大模型都说百万上下文，真的都有吗，保质量吗？\" 我说支持百万不代表有效百万，主管让我展开讲讲",
-      "url": "https://www.51cto.com/article/856429.html",
-      "hot": "长上下文是这两年大模型竞争的一个重要战场。从RoPE的各种改进方案，到FlashAttention这样的底层工程突破，再到Mamba这类全新架构的探索，背后凝聚了不少扎实的技术工作。"
+      "title": "AI 时代，架构师必备的八大技能！（4/100）",
+      "url": "https://www.51cto.com/article/856552.html",
+      "hot": "AI编程时代，架构师的核心技能需要重构。先说结论：AI不会让架构师失业，但会让\"只会古法技能的架构师\"贬值。"
     },
     {
       "rank": 10,
-      "title": "eBPF vs 传统方案：实测数据",
-      "url": "https://www.51cto.com/article/856428.html",
-      "hot": "在大多数场景下，eBPF 的性能优势明显，但不是所有场景都适合用 eBPF。根据具体场景选择最合适的方案，不要过度使用eBPF。​"
+      "title": "从 JEV 看 System 1/2 分层模型：AI 工程的下一个范式",
+      "url": "https://www.51cto.com/article/856548.html",
+      "hot": "JEV 能不能成还不知道（这个好像是突然冒出来的），但它指向了一个新的趋势——System 1/2 分层模型。这个其实一开始问也不了解这个是个什么东西。我是后来问大模型之后，才大概明白这个是什么东西。"
     }
   ]
 }
