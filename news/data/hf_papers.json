@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-21T13:14:01+00:00",
+  "updated_at": "2026-09-21T22:14:46+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -32,37 +32,37 @@
       "rank": 5,
       "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
       "url": "https://huggingface.co/papers/2609.20519",
-      "hot": "96"
+      "hot": "97"
     },
     {
       "rank": 6,
       "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
       "url": "https://huggingface.co/papers/2609.14858",
-      "hot": "239"
+      "hot": "240"
     },
     {
       "rank": 7,
-      "title": "A decoder-only foundation model for time-series forecasting",
-      "url": "https://huggingface.co/papers/2310.10688",
-      "hot": "45"
-    },
-    {
-      "rank": 8,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "88"
     },
     {
-      "rank": 9,
-      "title": "Paper2Agent: Reimagining Research Papers As Interactive and Reliable AI\n  Agents",
-      "url": "https://huggingface.co/papers/2509.06917",
-      "hot": "46"
+      "rank": 8,
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "45"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
       "hot": "111"
+    },
+    {
+      "rank": 10,
+      "title": "Paper2Agent: Reimagining Research Papers As Interactive and Reliable AI\n  Agents",
+      "url": "https://huggingface.co/papers/2509.06917",
+      "hot": "46"
     }
   ]
 }

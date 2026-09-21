@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-21T13:14:00+00:00",
+  "updated_at": "2026-09-21T22:14:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "hot": "1644"
+      "title": "convaiinnovations/laya",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "hot": "1706"
     },
     {
       "rank": 2,
-      "title": "convaiinnovations/laya",
-      "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "1481"
+      "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "hot": "1726"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "hot": "1185"
+      "hot": "1411"
     },
     {
       "rank": 4,
       "title": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-      "hot": "1015"
+      "hot": "1109"
     },
     {
       "rank": 5,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-      "hot": "3484"
+      "hot": "3519"
     },
     {
       "rank": 6,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "15922"
+      "hot": "15965"
     },
     {
       "rank": 7,
-      "title": "harshatheg/Qwen-2.5-1B-RLCD",
-      "url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
-      "hot": "494"
+      "title": "abenzerps/Qwen-Image-2.1-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-GGUF",
+      "hot": "580"
     },
     {
       "rank": 8,
-      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "hot": "1508"
+      "title": "harshatheg/Qwen-2.5-1B-RLCD",
+      "url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
+      "hot": "514"
     },
     {
       "rank": 9,
-      "title": "m-a-p/YuE2-3B",
-      "url": "https://huggingface.co/m-a-p/YuE2-3B",
-      "hot": "936"
+      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "hot": "1530"
     },
     {
       "rank": 10,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "4612"
+      "title": "m-a-p/YuE2-3B",
+      "url": "https://huggingface.co/m-a-p/YuE2-3B",
+      "hot": "946"
     }
   ]
 }
