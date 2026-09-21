@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-21T06:32:06+00:00",
+  "updated_at": "2026-09-21T13:14:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "143"
+      "hot": "144"
     },
     {
       "rank": 2,
@@ -32,13 +32,13 @@
       "rank": 5,
       "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
       "url": "https://huggingface.co/papers/2609.20519",
-      "hot": "94"
+      "hot": "96"
     },
     {
       "rank": 6,
       "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
       "url": "https://huggingface.co/papers/2609.14858",
-      "hot": "238"
+      "hot": "239"
     },
     {
       "rank": 7,

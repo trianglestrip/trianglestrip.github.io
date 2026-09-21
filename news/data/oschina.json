@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-21T06:31:49+00:00",
+  "updated_at": "2026-09-21T13:13:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "禅道开源版22.6发布，集中优化功能细节，完善用户体验",
-      "url": "https://www.oschina.net/news/502635",
-      "hot": "Mon, 21 Sep 2026 13:12:25 +0800"
+      "title": "openKylin 3.0 不止桌面，服务器版本了解一下",
+      "url": "https://www.oschina.net/news/502650",
+      "hot": "Mon, 21 Sep 2026 18:03:18 +0800"
     },
     {
       "rank": 2,
-      "title": "Jev 凭什么刷屏：一个不生成文本的 \"判断模型\"，正在悄悄提速 AI Agent",
-      "url": "https://www.oschina.net/news/502633",
-      "hot": "Mon, 21 Sep 2026 11:24:10 +0800"
+      "title": "KB Embodied Agent（企业知识库具身客服）",
+      "url": "https://www.oschina.net/news/502649",
+      "hot": "Mon, 21 Sep 2026 17:58:57 +0800"
     },
     {
       "rank": 3,
-      "title": "qKnow 专业版 v3.1.4 发布：智能Agent管控升级，编排资源可复用可迁移",
-      "url": "https://www.oschina.net/news/502632",
-      "hot": "Mon, 21 Sep 2026 10:50:25 +0800"
+      "title": "微软工程师花 12 万美元让 AI 重写 Copilot 运行时：43 万行 TS 变成 80 万行 Rust，快 15.9 倍",
+      "url": "https://www.oschina.net/news/502646/ms-agentically-ports-copilot-runtime-to-rust-for-120k",
+      "hot": "Mon, 21 Sep 2026 16:47:57 +0800"
     },
     {
       "rank": 4,
-      "title": "ZCode 就静默上传风波正式回应：开源、道歉、切断快照上传链路",
-      "url": "https://www.oschina.net/news/502631",
-      "hot": "Mon, 21 Sep 2026 10:31:35 +0800"
+      "title": "华为云码道上线鸿蒙编码大模型 面向鸿蒙开发者全面升级",
+      "url": "https://www.oschina.net/news/502645/hw-codearts",
+      "hot": "Mon, 21 Sep 2026 16:24:30 +0800"
     },
     {
       "rank": 5,
-      "title": "通义千问开源 Qwen-Image-2.1：7B 小模型，文生图 + 透明图 + 重编辑全合一",
-      "url": "https://www.oschina.net/news/502630/qwen-image-2-1",
-      "hot": "Mon, 21 Sep 2026 10:28:58 +0800"
+      "title": "微软内部文件曝光：高管称 AI 抓取新闻是“人类历史上最大规模的劳动力盗窃”",
+      "url": "https://www.oschina.net/news/502644",
+      "hot": "Mon, 21 Sep 2026 15:42:19 +0800"
     },
     {
       "rank": 6,
-      "title": "🔥🔥Skyeye 云企业级AI+零代码智能制造系统 - v4.1.5 发布",
-      "url": "https://www.oschina.net/news/502626",
-      "hot": "Mon, 21 Sep 2026 08:41:05 +0800"
+      "title": "上海开源大赛DaoCloud赛题公布，选做可获额外现金激励",
+      "url": "https://www.oschina.net/news/502643",
+      "hot": "Mon, 21 Sep 2026 15:37:37 +0800"
     },
     {
       "rank": 7,
-      "title": "AI 编程工具安全思考： ZCode 上传完整.git 历史事件，本地代码隐私该如何守护",
-      "url": "https://www.oschina.net/news/502625",
-      "hot": "Mon, 21 Sep 2026 00:18:12 +0800"
+      "title": "从具身智能到桌面小装置，北京开源创新赛硬件赛道面向全国创客开放",
+      "url": "https://www.oschina.net/news/502640",
+      "hot": "Mon, 21 Sep 2026 15:02:37 +0800"
     },
     {
       "rank": 8,
-      "title": "OpenAgent v2.93 发布：单二进制自托管 AI Agent 平台，新增 Agent Hub、Casbin 工具权限与审计日志",
-      "url": "https://www.oschina.net/news/502624",
-      "hot": "Sun, 20 Sep 2026 22:44:32 +0800"
+      "title": "Google 开源 AX，把 Agent 当集群工作负载跑的声明式编排器",
+      "url": "https://www.oschina.net/news/502639/google-ax",
+      "hot": "Mon, 21 Sep 2026 14:51:01 +0800"
     },
     {
       "rank": 9,
-      "title": "openKylin 成立 ZephyrProject SIG：加速 Zephyr 国内生态落地与技术创新",
-      "url": "https://www.oschina.net/news/502623",
-      "hot": "Sun, 20 Sep 2026 21:34:55 +0800"
+      "title": "KnowForge 2026.0.4 发布：从 InfoSphere 到 KnowForge，我们重新定义知识锻造",
+      "url": "https://www.oschina.net/news/502638",
+      "hot": "Mon, 21 Sep 2026 14:47:08 +0800"
     },
     {
       "rank": 10,
-      "title": "ModStartBlog v11.2.0 新增可选依赖、AI 文章投递及多项安全修复",
-      "url": "https://www.oschina.net/news/502622",
-      "hot": "Sun, 20 Sep 2026 21:29:39 +0800"
+      "title": "Easysearch 2.4.0 发布：原生 HNSW 与混合检索，管理体验全面升级",
+      "url": "https://www.oschina.net/news/502637",
+      "hot": "Mon, 21 Sep 2026 14:32:26 +0800"
     }
   ]
 }

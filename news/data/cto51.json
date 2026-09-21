@@ -1,50 +1,50 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-21T06:31:45+00:00",
+  "updated_at": "2026-09-21T13:13:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 7 ArkGraphics 3D 实战：搭建可交互的 3D 模型查看器",
+      "url": "https://ost.51cto.com/posts/57265",
+      "hot": "前言移动端做3D展示，难点往往不在&ldquo;把模型画出来&rdquo;，而在场景加载、相机姿态、灯光方向和交互更新这一整条链路。直接使用OpenGLES或Vulkan..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS7 字体轮廓路径提取实战：ArkGraphics2D 把文字变成 Path",
+      "url": "https://ost.51cto.com/posts/57264",
+      "hot": "前言如果要对文字做描边、路径动画或沿轮廓绘制图形，首先需要拿到字形的矢量轮廓。measureText只能提供排版尺寸，不能替代路径数据。Harmo..."
+    },
+    {
+      "rank": 3,
       "title": "Jev 为什么突然爆火：不生成文字的 AI，为什么又快又便宜",
       "url": "https://www.51cto.com/article/856577.html",
       "hot": "Jev 专门处理结构化决策。输入一段状态和若干问题，它会直接返回选项、评分或布尔概率，让程序继续执行；聊天、写作和代码生成仍由普通大语言模型完成。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "刚刚，GPT-6 Astra取得哥德巴赫猜想重大突破！",
       "url": "https://www.51cto.com/article/856574.html",
       "hot": "就在最近，GPT-6 Astra又在哥德巴赫猜想上取得新进展了。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "字节面试：多个 Agent 能不能同时调用同一个工具？",
       "url": "https://www.51cto.com/article/856572.html",
       "hot": "这道题从\"能不能\"问到\"该不该\"，中间隔了四层。前三层是知识——分类、锁、幂等、限流，这些都是能背的。第四层是判断，背不了。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "AI面试：Agent处理200份文档跑到83份的时候挂了，怎么办？",
       "url": "https://www.51cto.com/article/856571.html",
       "hot": "面试官真正在考的，不是「你会不会重试」，而是三层更基础的东西。而且这三层是递进的——只答第一层，等于没答。下面一层层拆。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "从日均 15 个 PR 积压到月提 2000+ 生产 PR：AI 时代，代码验证的新范式",
       "url": "https://www.51cto.com/article/856554.html",
       "hot": "真正的 AI 研发提效，从来不是放任机器疯狂生成代码，而是用自动化规则承接重复审查、用意图校验把控核心质量、用虚拟化环境支撑极致迭代。"
-    },
-    {
-      "rank": 6,
-      "title": "HarmonyOS 7 短视频信息流实战：仿抖音的滑动播放怎么搭",
-      "url": "https://ost.51cto.com/posts/57240",
-      "hot": "「上面全是视频，往上一滑就切下一条，切过去立刻在播。」短视频信息流的交互描述起来就一句话，实现起来是一串问题：页面容器怎么竖着滑？..."
-    },
-    {
-      "rank": 7,
-      "title": "HarmonyOS 应用内字体大小动态调节：Slider + Preferences 完整实践指南",
-      "url": "https://ost.51cto.com/posts/57238",
-      "hot": "HarmonyOS应用内字体大小动态调节：Slider+Preferences完整实践指南一、为什么应用内字体调节如此重要？在移动应用开发中，用户群体的年龄..."
     },
     {
       "rank": 8,
