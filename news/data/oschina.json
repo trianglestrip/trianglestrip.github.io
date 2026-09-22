@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-22T00:50:20+00:00",
+  "updated_at": "2026-09-22T05:29:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "openKylin 3.0 不止桌面，服务器版本了解一下",
-      "url": "https://www.oschina.net/news/502650",
-      "hot": "Mon, 21 Sep 2026 18:03:18 +0800"
+      "title": "SpaceXAI 发布 Grok 4.7：跟 Claude Fable 同榜，价格砍到三分之一",
+      "url": "https://www.oschina.net/news/502663/x-ai-grok-4-7",
+      "hot": "Tue, 22 Sep 2026 12:03:02 +0800"
     },
     {
       "rank": 2,
+      "title": "Xiaomi MiMo-V2.6 系列正式发布，大规模扩展 RL 并全面开源",
+      "url": "https://www.oschina.net/news/502662/xiaomi-mimo-v2-6",
+      "hot": "Tue, 22 Sep 2026 11:40:11 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "有人拿 Jev 给聊天软件配了个“AI 副驾”——读懂对方意图，但不替你发",
+      "url": "https://www.oschina.net/news/502660",
+      "hot": "Tue, 22 Sep 2026 10:22:25 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "DjangoAdmin 敏捷开发框架 Flask+EleVue 版本 v2.8.2 发布",
+      "url": "https://www.oschina.net/news/502655",
+      "hot": "Tue, 22 Sep 2026 08:34:13 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "灵界 OS 5.0 稳定版 · 开箱教程上线",
+      "url": "https://www.oschina.net/news/502654",
+      "hot": "Tue, 22 Sep 2026 07:16:24 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "全能 Go Agent 框架 covonaut v1.1.4 发布：新增工具滚动并行池、多模态读取等",
+      "url": "https://www.oschina.net/news/502653",
+      "hot": "Mon, 21 Sep 2026 23:25:24 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "【架构实践】用 Rust + Qwen3Guard 搭一套双层安全风控，我们踩过的坑和公开基准都在这了",
+      "url": "https://www.oschina.net/news/502652",
+      "hot": "Mon, 21 Sep 2026 20:40:35 +0800"
+    },
+    {
+      "rank": 8,
       "title": "KB Embodied Agent（企业知识库具身客服）",
       "url": "https://www.oschina.net/news/502649",
       "hot": "Mon, 21 Sep 2026 17:58:57 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "微软工程师花 12 万美元让 AI 重写 Copilot 运行时：43 万行 TS 变成 80 万行 Rust，快 15.9 倍",
       "url": "https://www.oschina.net/news/502646/ms-agentically-ports-copilot-runtime-to-rust-for-120k",
       "hot": "Mon, 21 Sep 2026 16:47:57 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "华为云码道上线鸿蒙编码大模型 面向鸿蒙开发者全面升级",
       "url": "https://www.oschina.net/news/502645/hw-codearts",
       "hot": "Mon, 21 Sep 2026 16:24:30 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "微软内部文件曝光：高管称 AI 抓取新闻是“人类历史上最大规模的劳动力盗窃”",
-      "url": "https://www.oschina.net/news/502644",
-      "hot": "Mon, 21 Sep 2026 15:42:19 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "上海开源大赛DaoCloud赛题公布，选做可获额外现金激励",
-      "url": "https://www.oschina.net/news/502643",
-      "hot": "Mon, 21 Sep 2026 15:37:37 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "从具身智能到桌面小装置，北京开源创新赛硬件赛道面向全国创客开放",
-      "url": "https://www.oschina.net/news/502640",
-      "hot": "Mon, 21 Sep 2026 15:02:37 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Google 开源 AX，把 Agent 当集群工作负载跑的声明式编排器",
-      "url": "https://www.oschina.net/news/502639/google-ax",
-      "hot": "Mon, 21 Sep 2026 14:51:01 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "KnowForge 2026.0.4 发布：从 InfoSphere 到 KnowForge，我们重新定义知识锻造",
-      "url": "https://www.oschina.net/news/502638",
-      "hot": "Mon, 21 Sep 2026 14:47:08 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Easysearch 2.4.0 发布：原生 HNSW 与混合检索，管理体验全面升级",
-      "url": "https://www.oschina.net/news/502637",
-      "hot": "Mon, 21 Sep 2026 14:32:26 +0800"
     }
   ]
 }

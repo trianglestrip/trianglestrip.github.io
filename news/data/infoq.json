@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-22T00:50:21+00:00",
+  "updated_at": "2026-09-22T05:29:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Netflix 重构 Conductor，以支持每月 4.2 亿次的工作流执行以及 10 倍规模的工作流",
+      "url": "https://www.infoq.cn/article/MejovdhJpA8y4wbWlTMU?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 13:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "华为云码道面向鸿蒙开发者升级：上线鸿蒙编码大模型，覆盖开发到编译全流程",
+      "url": "https://www.infoq.cn/article/jCdqhiUJHJlVgOYGfWGx?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 11:22:09 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "阿里吴泳铭：千问将训练5-10万亿参数规模的新模型",
+      "url": "https://www.infoq.cn/article/L9QQKUgo3DEjschVRKD9?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 10:48:37 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "NVIDIA Personal AI Router 将 AI 任务分配到本地计算资源上",
+      "url": "https://www.infoq.cn/article/ZSAtWPoOgIDcANYa8CXc?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 10:44:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "复杂业务 Agent 的持续进化：快手电商导购的 Harness Loop 实践｜QCon上海",
+      "url": "https://www.infoq.cn/article/jeG84GGVYvIHaQKQfIo2?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "Rustls 十周年：发展历程、基准测试与未来路线图",
+      "url": "https://www.infoq.cn/article/slZSm1Qr5I1QJi0JaZjr?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 09:06:00 GMT"
+    },
+    {
+      "rank": 7,
       "title": "MiniMax H3 开源后，本地 AIGC 走到了哪里？",
       "url": "https://www.infoq.cn/video/fJe6qRKX70UqqCEDMRTK?utm_source=rss&utm_medium=article",
       "hot": "Mon, 21 Sep 2026 21:31:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "70强项目观察之具身未来：机器人走进现实世界，关键不只是完成动作",
       "url": "https://www.infoq.cn/article/EU5m831fwoFA6RdhcOlo?utm_source=rss&utm_medium=article",
       "hot": "Mon, 21 Sep 2026 18:23:23 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "70强项目观察之前沿探索：AI进入科学发现，答案之外还要验证什么",
       "url": "https://www.infoq.cn/article/ihH1ltOG7d2YCelYKJYe?utm_source=rss&utm_medium=article",
       "hot": "Mon, 21 Sep 2026 18:21:03 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "70强项目观察之无界应用：AI应用正在从“有功能”走向“能完成任务”",
       "url": "https://www.infoq.cn/article/te2qjg2J6Ausgc6vAeNy?utm_source=rss&utm_medium=article",
       "hot": "Mon, 21 Sep 2026 18:18:29 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "70强项目观察之新智基座：Agent正在从“会聊”走向“会干活”",
-      "url": "https://www.infoq.cn/article/G58AHJw8gT8CQuiq5sap?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 18:15:51 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "Lambda SnapStart 现已支持容器镜像",
-      "url": "https://www.infoq.cn/article/CIMVueKAjDLqU6zy54Os?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 17:37:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "《2026年中国人工智能计算力发展评估报告》发布，智能体重塑算力基础设施，智能算力规模预计增长87.9%",
-      "url": "https://www.infoq.cn/article/vA7opkWL5WYlwYcPIdds?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 17:07:01 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "祥峰再次出手，超维动力获超 5 亿融资，我们拆解了这家公司的全栈路线",
-      "url": "https://www.infoq.cn/article/rIpDfDZXDoN9L7akct7e?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 16:45:15 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "黄仁勋把矛头对准 AI 实验室：别先谈末日，先为已经发生的事故负责",
-      "url": "https://www.infoq.cn/article/xlQFjzl2mGPSYJq1RDod?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 15:45:47 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "智能效能进阶：丰富模型选择，实现智能路由",
-      "url": "https://www.infoq.cn/article/at5IL3FiObSQ4y9gBv0a?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 15:24:23 GMT"
     }
   ]
 }
