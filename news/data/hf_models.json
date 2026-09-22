@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-22T05:29:19+00:00",
+  "updated_at": "2026-09-22T14:50:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "1918"
+      "hot": "2278"
     },
     {
       "rank": 2,
       "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "hot": "1756"
+      "hot": "1830"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "hot": "1516"
+      "hot": "1683"
     },
     {
       "rank": 4,
       "title": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-      "hot": "1164"
+      "hot": "1274"
     },
     {
       "rank": 5,
-      "title": "deepseek-ai/DeepSeek-V4.1-Flash",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-      "hot": "3545"
+      "title": "abenzerps/Qwen-Image-2.1-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-GGUF",
+      "hot": "938"
     },
     {
       "rank": 6,
-      "title": "abenzerps/Qwen-Image-2.1-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-GGUF",
-      "hot": "700"
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "hot": "3590"
     },
     {
       "rank": 7,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "15982"
+      "hot": "16028"
     },
     {
       "rank": 8,
       "title": "harshatheg/Qwen-2.5-1B-RLCD",
       "url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
-      "hot": "522"
+      "hot": "535"
     },
     {
       "rank": 9,
       "title": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
-      "hot": "464"
+      "hot": "524"
     },
     {
       "rank": 10,
-      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "hot": "1543"
+      "title": "Altworld/Hemmingway-1",
+      "url": "https://huggingface.co/Altworld/Hemmingway-1",
+      "hot": "460"
     }
   ]
 }

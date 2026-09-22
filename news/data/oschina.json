@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-22T10:11:37+00:00",
+  "updated_at": "2026-09-22T14:50:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "让 gzip 当语言模型？压得最小的地方，就是它“觉得”最像原文的地方",
+      "url": "https://www.oschina.net/news/502676/gzip-lm",
+      "hot": "Tue, 22 Sep 2026 19:04:27 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "北京开源创新赛奖金公布，三个赛道共 52 个获奖名额",
+      "url": "https://www.oschina.net/news/502675",
+      "hot": "Tue, 22 Sep 2026 18:45:09 +0800"
+    },
+    {
+      "rank": 3,
       "title": "Jev 工程学：为 Coding Agent 而作",
       "url": "https://www.oschina.net/news/502674",
       "hot": "Tue, 22 Sep 2026 16:59:40 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "专家解读大飞机硬核赛题，参赛可享中国商飞校招绿色通道",
       "url": "https://www.oschina.net/news/502672",
       "hot": "Tue, 22 Sep 2026 16:36:43 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Cloudflare 把 Python Workers 转正了：FastAPI、Django 照跑，不再写胶水代码",
       "url": "https://www.oschina.net/news/502671/cloudflare-python-workers-ga",
       "hot": "Tue, 22 Sep 2026 15:35:19 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Sun 到底错在哪？一个等不来它回电的客户，讲完了整个故事",
       "url": "https://www.oschina.net/news/502670/what-sun-got-wrong",
       "hot": "Tue, 22 Sep 2026 15:28:54 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "AMD 市值破万亿，但靠的从来不只是 GPU",
       "url": "https://www.oschina.net/news/502669/perpetual-underdog-amd-nips-joins-the-1t-club",
       "hot": "Tue, 22 Sep 2026 15:08:51 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "ModStartCMS v10.2.0 重构前台布局、强化安全防御、升级自动化测试体验",
       "url": "https://www.oschina.net/news/502668",
       "hot": "Tue, 22 Sep 2026 15:04:50 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "SpaceXAI 发布 Grok 4.7：跟 Claude Fable 同榜，价格砍到三分之一",
       "url": "https://www.oschina.net/news/502663/x-ai-grok-4-7",
       "hot": "Tue, 22 Sep 2026 12:03:02 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Xiaomi MiMo-V2.6 系列正式发布，大规模扩展 RL 并全面开源",
       "url": "https://www.oschina.net/news/502662/xiaomi-mimo-v2-6",
       "hot": "Tue, 22 Sep 2026 11:40:11 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "有人拿 Jev 给聊天软件配了个“AI 副驾”——读懂对方意图，但不替你发",
-      "url": "https://www.oschina.net/news/502660",
-      "hot": "Tue, 22 Sep 2026 10:22:25 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "DjangoAdmin 敏捷开发框架 Flask+EleVue 版本 v2.8.2 发布",
-      "url": "https://www.oschina.net/news/502655",
-      "hot": "Tue, 22 Sep 2026 08:34:13 +0800"
     }
   ]
 }
