@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-21T22:14:27+00:00",
+  "updated_at": "2026-09-22T00:50:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Xiaomi MiMo v2.6",
       "url": "https://mimo.xiaomi.com/mimo-v2-6",
-      "hot": "288"
+      "hot": "489"
     },
     {
       "rank": 2,
-      "title": "The NASA/ESA Mars Sample Return mission has been canceled",
-      "url": "https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead",
-      "hot": "213"
-    },
-    {
-      "rank": 3,
-      "title": "Transformers Explained Visually",
-      "url": "https://poloclub.github.io/transformer-explainer/",
-      "hot": "102"
-    },
-    {
-      "rank": 4,
-      "title": "What Sun got wrong",
-      "url": "https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/",
-      "hot": "447"
-    },
-    {
-      "rank": 5,
-      "title": "Attention is all you have",
-      "url": "https://alicegg.tech/2026/09/21/attention",
-      "hot": "493"
-    },
-    {
-      "rank": 6,
-      "title": "Divide by Depth for Instant 3D",
-      "url": "https://gabrieloc.com/2026/09/15/perspective.html",
-      "hot": "42"
-    },
-    {
-      "rank": 7,
-      "title": "Why does mathmain need an encrypted loader?",
-      "url": "https://safedep.io/mathmain-encrypted-loader/",
-      "hot": "88"
-    },
-    {
-      "rank": 8,
-      "title": "The Advisory Group on Mathematics and Artificial Intelligence",
-      "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/",
-      "hot": "52"
-    },
-    {
-      "rank": 9,
-      "title": "CBP suspends all personal prescription importation Oct 22",
-      "url": "https://www.personalimportation.org/advocacy",
+      "title": "Spymarks, Not Watermarks",
+      "url": "https://brand.io/article/spymarks/",
       "hot": "61"
     },
     {
+      "rank": 3,
+      "title": "NASA’s Mars Sample Return mission is dead",
+      "url": "https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead",
+      "hot": "291"
+    },
+    {
+      "rank": 4,
+      "title": "I don't want to read what you didn't write",
+      "url": "https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/",
+      "hot": "178"
+    },
+    {
+      "rank": 5,
+      "title": "Transformers Explained Visually",
+      "url": "https://poloclub.github.io/transformer-explainer/",
+      "hot": "176"
+    },
+    {
+      "rank": 6,
+      "title": "What Sun got wrong",
+      "url": "https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/",
+      "hot": "492"
+    },
+    {
+      "rank": 7,
+      "title": "Attention is all you have",
+      "url": "https://alicegg.tech/2026/09/21/attention",
+      "hot": "562"
+    },
+    {
+      "rank": 8,
+      "title": "First Shader from Zero in Godot 4",
+      "url": "https://www.gdquest.com/library/first_shader_godot4_portal/",
+      "hot": "25"
+    },
+    {
+      "rank": 9,
+      "title": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
+      "url": "https://linear.app/now/ci-bottleneck-reworked",
+      "hot": "127"
+    },
+    {
       "rank": 10,
-      "title": "Apple Copland D11E4 Booting in the Browser",
-      "url": "https://www.pagetable.com/300",
-      "hot": "58"
+      "title": "Looking forward to Git 2.56 – and 3.0",
+      "url": "https://lwn.net/SubscriberLink/1094575/2385e98583715c2b/",
+      "hot": "14"
     }
   ]
 }
