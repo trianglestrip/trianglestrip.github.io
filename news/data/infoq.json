@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-22T05:29:07+00:00",
+  "updated_at": "2026-09-22T10:11:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Jotai 3.0 带来仅支持 ESM 的现代化包，摒弃旧版构建方式和已弃用 API",
+      "url": "https://www.infoq.cn/article/JkDJyKWiavXREdAWBvJk?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 17:31:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Meta 开源 Astryx：面向 Agent 的 React 设计系统",
+      "url": "https://www.infoq.cn/article/He6bUhlNIuPEa99GGRYC?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 15:12:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "从 AI 工具到经营智能体：快手分销增长 Agent 实践",
+      "url": "https://www.infoq.cn/article/7suOC8BJWYA4yx6dvZXa?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 14:32:17 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "AI Coding 贡献率超 90%，需求交付却只快了 10%：菜鸟如何用 Agent 托管端到端交付？",
+      "url": "https://www.infoq.cn/article/XPo33yALUEeIsBhQ4zGI?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 22 Sep 2026 14:17:25 GMT"
+    },
+    {
+      "rank": 5,
       "title": "Netflix 重构 Conductor，以支持每月 4.2 亿次的工作流执行以及 10 倍规模的工作流",
       "url": "https://www.infoq.cn/article/MejovdhJpA8y4wbWlTMU?utm_source=rss&utm_medium=article",
       "hot": "Tue, 22 Sep 2026 13:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "华为云码道面向鸿蒙开发者升级：上线鸿蒙编码大模型，覆盖开发到编译全流程",
       "url": "https://www.infoq.cn/article/jCdqhiUJHJlVgOYGfWGx?utm_source=rss&utm_medium=article",
       "hot": "Tue, 22 Sep 2026 11:22:09 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "阿里吴泳铭：千问将训练5-10万亿参数规模的新模型",
       "url": "https://www.infoq.cn/article/L9QQKUgo3DEjschVRKD9?utm_source=rss&utm_medium=article",
       "hot": "Tue, 22 Sep 2026 10:48:37 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "NVIDIA Personal AI Router 将 AI 任务分配到本地计算资源上",
       "url": "https://www.infoq.cn/article/ZSAtWPoOgIDcANYa8CXc?utm_source=rss&utm_medium=article",
       "hot": "Tue, 22 Sep 2026 10:44:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "复杂业务 Agent 的持续进化：快手电商导购的 Harness Loop 实践｜QCon上海",
       "url": "https://www.infoq.cn/article/jeG84GGVYvIHaQKQfIo2?utm_source=rss&utm_medium=article",
       "hot": "Tue, 22 Sep 2026 10:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Rustls 十周年：发展历程、基准测试与未来路线图",
       "url": "https://www.infoq.cn/article/slZSm1Qr5I1QJi0JaZjr?utm_source=rss&utm_medium=article",
       "hot": "Tue, 22 Sep 2026 09:06:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "MiniMax H3 开源后，本地 AIGC 走到了哪里？",
-      "url": "https://www.infoq.cn/video/fJe6qRKX70UqqCEDMRTK?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 21:31:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "70强项目观察之具身未来：机器人走进现实世界，关键不只是完成动作",
-      "url": "https://www.infoq.cn/article/EU5m831fwoFA6RdhcOlo?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 18:23:23 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "70强项目观察之前沿探索：AI进入科学发现，答案之外还要验证什么",
-      "url": "https://www.infoq.cn/article/ihH1ltOG7d2YCelYKJYe?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 18:21:03 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "70强项目观察之无界应用：AI应用正在从“有功能”走向“能完成任务”",
-      "url": "https://www.infoq.cn/article/te2qjg2J6Ausgc6vAeNy?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 21 Sep 2026 18:18:29 GMT"
     }
   ]
 }

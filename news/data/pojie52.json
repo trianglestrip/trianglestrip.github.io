@@ -1,9 +1,8 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-09-22T05:28:57+00:00",
-  "fetch_ok": false,
-  "error": "too few items: 0",
+  "updated_at": "2026-09-22T10:11:27+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -55,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "【JS逆向实战】手撕雷速体育API：动态AES签名与魔改Gzip响应解密全解析",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122363",
-      "hot": "[md]&gt; **导读**：在爬虫工程师的日常工作中，经常会遇到一些加密手段颇为“讲究”的网站。今天，我们就以雷速体育的移动端 H5 页面为例，深入剖析其接口的加密逻辑。本文将带你完整走通从抓包分析到 Python 脚本实现的全 ..."
-    },
-    {
-      "rank": 10,
       "title": "一个 Android 远控APP的逆向分析-从 AB 包隐藏、动态加载到无障碍远程控制支付流程",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2121592",
       "hot": "[md]样本、目标应用、域名、证书和基础设施信息均已脱敏。文中使用“某远控APP”“某支付客户端”“某金融 APP”作为代称。本文只记录已经从样本结构、反编译代码和测试现象中得到的结论；\n\n## 0x00 写在前面\n\n这次拿到的样本 [下载](https://github.com/goldenfi ..."
+    },
+    {
+      "rank": 10,
+      "title": "某音 JSVMP bogus纯算",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2120914",
+      "hot": "[md]根据代码进行调试可以发现J是vmp的装载器\n\n```\n      function J(t, r, e, n) {\n        return (\n          Z.length ||\n            (function (t) {\n              var r = (function (t) {\n              ..."
     }
   ]
 }

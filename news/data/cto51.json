@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-22T05:29:01+00:00",
+  "updated_at": "2026-09-22T10:11:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Meta Muse AI Agent 存在 0Day 漏洞，可被劫持滥用高权限",
+      "url": "https://www.51cto.com/article/856739.html",
+      "hot": "该漏洞风险极高。一旦Agent被攻击者控制，就能继承用户授予Muse的全部高级权限，以及所有关联服务的访问权限。"
+    },
+    {
+      "rank": 2,
+      "title": "假如有一万张卡，RL训练该怎么扩大规模？十万张呢？",
+      "url": "https://www.51cto.com/article/856715.html",
+      "hot": "如何找到最优的 Batch Size，使模型以最短的 wall-clock time 达到预期性能？"
+    },
+    {
+      "rank": 3,
+      "title": "Grok 4.7上线，全球第三！马斯克：4.8也训完了",
+      "url": "https://www.51cto.com/article/856714.html",
+      "hot": "马斯克第一时间喊话，「Grok 4.7把SpaceXAI送上了智能体编程的第三把交椅，仅次于Anthropic和OpenAI」。"
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI内部曝光：AI开始自己造AI！奥特曼急发全球暂停令",
+      "url": "https://www.51cto.com/article/856713.html",
+      "hot": "外媒The Information曝出内幕——OpenAI内部的AI模型，已经开始「自己训练自己」了！"
+    },
+    {
+      "rank": 5,
+      "title": "别再把 API Key 塞进 Agent：企业 AI 密钥管理的正确打开方式",
+      "url": "https://www.51cto.com/article/856704.html",
+      "hot": "别让Agent直接持有完整密钥。可以用门限密码学——把密钥拆成几份,分散存储,单个节点拿不到完整密钥。即使某个Agent被攻破,攻击者获得的也只是碎片,没法直接用。"
+    },
+    {
+      "rank": 6,
       "title": "工作流结果是对的，但Skill可能是坏的：评测设施该怎么设计",
       "url": "https://www.51cto.com/article/856691.html",
       "hot": "测试说到底就两件事，回归和增益。回归是看有没有把原来具备的功能改坏，比如原来会正常出结构化问答，新版本没了，这就不行。增益是看新版本有没有多出旧版本没有的东西。这个框架套在Skill上一点毛病没有，难的是怎么组织。因为Skill的触发和执行，完全押在大模型的推理过程上，这回几条命令利索收工，下回可能原地打转来回重试。"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "攻击者可利用 Web 缓存键拼接缺陷，访问受限数据并投毒网站",
       "url": "https://www.51cto.com/article/856687.html",
       "hot": "缓存键注入攻击可利用Web缓存键拼接缺陷，绕过访问控制、投毒站点窃密甚至发起XSS攻击，需规范缓存键配置防范风险。"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "字节二面挂了！被问“流式响应怎么逐 token 处理”，我答“用 SDK 就行”面试官：那你告诉我，SDK 到底帮你做了哪几层？",
       "url": "https://www.51cto.com/article/856685.html",
       "hot": "Agent 岗考流式，考的从来不是你会不会调，而是你知道不知道第一次读到的字节，和你最终拿到的那条完整消息之间，隔了几层。"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "一篇讲清楚 Spring Boot：自动装配、启动器、过滤器、拦截器、设计模式",
       "url": "https://www.51cto.com/article/856684.html",
       "hot": "今天用一篇文章，把 Spring Boot 的五大核心概念一次讲透，看完你会彻底理解 Spring Boot 的设计哲学，也能在面试中从容应对。"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "Jev 竟被开源模型 Laya 反超？两年苦熬，一夜被按在地上，真是令人哭笑不得",
       "url": "https://www.51cto.com/article/856683.html",
       "hot": "开源的Laya冒了出来。它有421M参数，大约是4.2亿，采用Apache 2.0协议。Laya自称单问题延迟低了近8倍。在它自己公布的typed-decisions测试集上，专用微调checkpoint的准确率达到0.766，高于其中对比的Jev 1.13.0的0.727。"
-    },
-    {
-      "rank": 6,
-      "title": "Vue3 Office 预览神器杀疯了！最难搞的 doc / xls 终于支持！",
-      "url": "https://www.51cto.com/article/856682.html",
-      "hot": "Open File Viewer 从 6 月做到现在，很多时间其实都花在这些不起眼的细节上。一个边框、一张图片、一个分页、一个十几年前的老 Word。"
-    },
-    {
-      "rank": 7,
-      "title": "中国移动杀入办公智能体，MobileWork 能抢下这座山头吗？",
-      "url": "https://www.51cto.com/article/856681.html",
-      "hot": "中国移动杀入办公智能体，决定这场胜负的，不是它能不能把 AI 做得更聪明，而是它能不能把 \"交付\" 变成一件可以被复制的事。"
-    },
-    {
-      "rank": 8,
-      "title": "HarmonyOS 7页面滑动白块优化终极解决方案：动态预加载 + 图片缓存",
-      "url": "https://ost.51cto.com/posts/57293",
-      "hot": "HarmonyOS页面滑动白块优化终极解决方案：动态预加载+图片缓存一、背景：滑动白块的困扰与困境在HarmonyOS应用开发中，包含大量图片的瀑布..."
-    },
-    {
-      "rank": 9,
-      "title": "Java 死锁：从等待环到排查与修复",
-      "url": "https://www.51cto.com/article/856680.html",
-      "hot": "本文从哲学家进餐出发，区分死锁、饥饿与锁竞争，接着用固定双锁、反向转账和跨对象调用三个 Java 案例说明等待环如何形成、怎样破坏，以及修复时不能越过的业务边界。"
-    },
-    {
-      "rank": 10,
-      "title": "HarmonyOS 7 开发中的运用：从零实现“卡通云合影”智能抠图",
-      "url": "https://ost.51cto.com/posts/57292",
-      "hot": "HarmonyOS开发中的运用：从零实现&ldquo;卡通云合影&rdquo;智能抠图端侧AI加持，几行代码实现高精度人像分割，告别服务端依赖一、引言：移动端抠图的..."
     }
   ]
 }

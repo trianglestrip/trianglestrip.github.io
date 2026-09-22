@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-22T05:29:05+00:00",
+  "updated_at": "2026-09-22T10:11:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Jev 工程学：为 Coding Agent 而作",
+      "url": "https://www.oschina.net/news/502674",
+      "hot": "Tue, 22 Sep 2026 16:59:40 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "专家解读大飞机硬核赛题，参赛可享中国商飞校招绿色通道",
+      "url": "https://www.oschina.net/news/502672",
+      "hot": "Tue, 22 Sep 2026 16:36:43 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Cloudflare 把 Python Workers 转正了：FastAPI、Django 照跑，不再写胶水代码",
+      "url": "https://www.oschina.net/news/502671/cloudflare-python-workers-ga",
+      "hot": "Tue, 22 Sep 2026 15:35:19 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Sun 到底错在哪？一个等不来它回电的客户，讲完了整个故事",
+      "url": "https://www.oschina.net/news/502670/what-sun-got-wrong",
+      "hot": "Tue, 22 Sep 2026 15:28:54 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "AMD 市值破万亿，但靠的从来不只是 GPU",
+      "url": "https://www.oschina.net/news/502669/perpetual-underdog-amd-nips-joins-the-1t-club",
+      "hot": "Tue, 22 Sep 2026 15:08:51 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "ModStartCMS v10.2.0 重构前台布局、强化安全防御、升级自动化测试体验",
+      "url": "https://www.oschina.net/news/502668",
+      "hot": "Tue, 22 Sep 2026 15:04:50 +0800"
+    },
+    {
+      "rank": 7,
       "title": "SpaceXAI 发布 Grok 4.7：跟 Claude Fable 同榜，价格砍到三分之一",
       "url": "https://www.oschina.net/news/502663/x-ai-grok-4-7",
       "hot": "Tue, 22 Sep 2026 12:03:02 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Xiaomi MiMo-V2.6 系列正式发布，大规模扩展 RL 并全面开源",
       "url": "https://www.oschina.net/news/502662/xiaomi-mimo-v2-6",
       "hot": "Tue, 22 Sep 2026 11:40:11 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "有人拿 Jev 给聊天软件配了个“AI 副驾”——读懂对方意图，但不替你发",
       "url": "https://www.oschina.net/news/502660",
       "hot": "Tue, 22 Sep 2026 10:22:25 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "DjangoAdmin 敏捷开发框架 Flask+EleVue 版本 v2.8.2 发布",
       "url": "https://www.oschina.net/news/502655",
       "hot": "Tue, 22 Sep 2026 08:34:13 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "灵界 OS 5.0 稳定版 · 开箱教程上线",
-      "url": "https://www.oschina.net/news/502654",
-      "hot": "Tue, 22 Sep 2026 07:16:24 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "全能 Go Agent 框架 covonaut v1.1.4 发布：新增工具滚动并行池、多模态读取等",
-      "url": "https://www.oschina.net/news/502653",
-      "hot": "Mon, 21 Sep 2026 23:25:24 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "【架构实践】用 Rust + Qwen3Guard 搭一套双层安全风控，我们踩过的坑和公开基准都在这了",
-      "url": "https://www.oschina.net/news/502652",
-      "hot": "Mon, 21 Sep 2026 20:40:35 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "KB Embodied Agent（企业知识库具身客服）",
-      "url": "https://www.oschina.net/news/502649",
-      "hot": "Mon, 21 Sep 2026 17:58:57 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "微软工程师花 12 万美元让 AI 重写 Copilot 运行时：43 万行 TS 变成 80 万行 Rust，快 15.9 倍",
-      "url": "https://www.oschina.net/news/502646/ms-agentically-ports-copilot-runtime-to-rust-for-120k",
-      "hot": "Mon, 21 Sep 2026 16:47:57 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "华为云码道上线鸿蒙编码大模型 面向鸿蒙开发者全面升级",
-      "url": "https://www.oschina.net/news/502645/hw-codearts",
-      "hot": "Mon, 21 Sep 2026 16:24:30 +0800"
     }
   ]
 }
