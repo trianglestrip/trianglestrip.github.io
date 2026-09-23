@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-22T23:42:08+00:00",
+  "updated_at": "2026-09-23T01:47:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Meta Muse AI Agent 存在 0Day 漏洞，可被劫持滥用高权限",
-      "url": "https://www.51cto.com/article/856739.html",
-      "hot": "该漏洞风险极高。一旦Agent被攻击者控制，就能继承用户授予Muse的全部高级权限，以及所有关联服务的访问权限。"
+      "title": "ReentrantLock 和 synchronized 到底选哪个？源码级对比与选型",
+      "url": "https://www.51cto.com/article/856809.html",
+      "hot": "ReentrantLock 和 synchronized 是 Java 中最常用的两种互斥锁，它们的本质区别是：synchronized 是 JVM 内置的监视器锁（C++ 实现，基于对象头和锁升级），ReentrantLock 是 JDK 实现的可重入锁（Java 实现，基于 AQS 和 CLH 队列）。"
     },
     {
       "rank": 2,
-      "title": "假如有一万张卡，RL训练该怎么扩大规模？十万张呢？",
-      "url": "https://www.51cto.com/article/856715.html",
-      "hot": "如何找到最优的 Batch Size，使模型以最短的 wall-clock time 达到预期性能？"
+      "title": "大模型正在吃掉搜索广告位，下一代广告该怎么做？人大高瓴、斯坦福把拍卖写进Token生成过程",
+      "url": "https://www.51cto.com/article/856808.html",
+      "hot": "Pew Research Center 对美国用户在 Google 上大规模浏览行为的分析发现：有 AI 摘要时，用户点击传统搜索结果的比例从 15%直接暴跌至 8%。[1]"
     },
     {
       "rank": 3,
-      "title": "Grok 4.7上线，全球第三！马斯克：4.8也训完了",
-      "url": "https://www.51cto.com/article/856714.html",
-      "hot": "马斯克第一时间喊话，「Grok 4.7把SpaceXAI送上了智能体编程的第三把交椅，仅次于Anthropic和OpenAI」。"
+      "title": "AI 编程踩坑企业级项目？基于 OpenSpec+GStack 构建 SDD 规范驱动的 AI 研发体系",
+      "url": "https://www.51cto.com/article/856805.html",
+      "hot": "本文依托 AI 工程化理念，引入 SDD 规范驱动开发模式，搭配 OpenSpec、GStack 工具链，构建标准化、可校验、可追溯的 AI 研发体系。"
     },
     {
       "rank": 4,
-      "title": "OpenAI内部曝光：AI开始自己造AI！奥特曼急发全球暂停令",
-      "url": "https://www.51cto.com/article/856713.html",
-      "hot": "外媒The Information曝出内幕——OpenAI内部的AI模型，已经开始「自己训练自己」了！"
+      "title": "一文吃透 AgentScope 2.0：让 Agent 真正\"长记性\"的四个设计",
+      "url": "https://www.51cto.com/article/856799.html",
+      "hot": "直到我把 AgentScope Java 2.0 的源码翻完，才意识到它走了一条不一样的路：它没在\"怎么调模型\"上卷，而是把状态、记忆、工作区直接做成了框架的地基。下面这张图，是它整套设计的骨架。"
     },
     {
       "rank": 5,
-      "title": "别再把 API Key 塞进 Agent：企业 AI 密钥管理的正确打开方式",
-      "url": "https://www.51cto.com/article/856704.html",
-      "hot": "别让Agent直接持有完整密钥。可以用门限密码学——把密钥拆成几份,分散存储,单个节点拿不到完整密钥。即使某个Agent被攻破,攻击者获得的也只是碎片,没法直接用。"
+      "title": "知识回顾：变量声明 let、const、var 十道面试题，前端必问",
+      "url": "https://www.51cto.com/article/856775.html",
+      "hot": "本文就从一个非常典型的设备随机死机现场开始，对嵌入式系统里面的栈溢出、堆碎片、HardFault、RTOS 任务栈、动态内存管理以及 DMA 内存破坏等问题进行一次比较完整的拆解。"
     },
     {
       "rank": 6,
-      "title": "工作流结果是对的，但Skill可能是坏的：评测设施该怎么设计",
-      "url": "https://www.51cto.com/article/856691.html",
-      "hot": "测试说到底就两件事，回归和增益。回归是看有没有把原来具备的功能改坏，比如原来会正常出结构化问答，新版本没了，这就不行。增益是看新版本有没有多出旧版本没有的东西。这个框架套在Skill上一点毛病没有，难的是怎么组织。因为Skill的触发和执行，完全押在大模型的推理过程上，这回几条命令利索收工，下回可能原地打转来回重试。"
+      "title": "Java 开发：不用重启服务！Nacos Config 配置中心动态刷新完整实操",
+      "url": "https://www.51cto.com/article/856774.html",
+      "hot": "本文从实际项目落地角度出发，从零搭建 Nacos Config 环境，完整演示 @Value、@ConfigurationProperties、配置变更事件监听三种动态刷新方式，并深入剖析动态刷新的底层原理与常见踩坑点，帮你彻底掌握 Nacos 配置中心的动态刷新能力。"
     },
     {
       "rank": 7,
-      "title": "攻击者可利用 Web 缓存键拼接缺陷，访问受限数据并投毒网站",
-      "url": "https://www.51cto.com/article/856687.html",
-      "hot": "缓存键注入攻击可利用Web缓存键拼接缺陷，绕过访问控制、投毒站点窃密甚至发起XSS攻击，需规范缓存键配置防范风险。"
+      "title": "「开源版Jev」登上Hugging Face热榜第一",
+      "url": "https://www.51cto.com/article/856788.html",
+      "hot": "有网友认为，Jev 看起来只是分类器，却具备零样本能力和接近前沿模型水平的智能。许多曾被忽略的传统机器学习思路，或许值得重新挖掘。"
     },
     {
       "rank": 8,
-      "title": "字节二面挂了！被问“流式响应怎么逐 token 处理”，我答“用 SDK 就行”面试官：那你告诉我，SDK 到底帮你做了哪几层？",
-      "url": "https://www.51cto.com/article/856685.html",
-      "hot": "Agent 岗考流式，考的从来不是你会不会调，而是你知道不知道第一次读到的字节，和你最终拿到的那条完整消息之间，隔了几层。"
+      "title": "GPT-6 Astra搓3D刷屏后，3D生成的竞争规则变了",
+      "url": "https://www.51cto.com/article/856787.html",
+      "hot": "写代码、调Blender、搭场景，甚至从零做出一款3D游戏。过去要在专业软件里折腾半天的活儿，现在一句话就能让Agent接手。"
     },
     {
       "rank": 9,
-      "title": "一篇讲清楚 Spring Boot：自动装配、启动器、过滤器、拦截器、设计模式",
-      "url": "https://www.51cto.com/article/856684.html",
-      "hot": "今天用一篇文章，把 Spring Boot 的五大核心概念一次讲透，看完你会彻底理解 Spring Boot 的设计哲学，也能在面试中从容应对。"
+      "title": "ChatGPT版Grok Bot代码曝光！OpenAI也要为你造不下班的AI同事",
+      "url": "https://www.51cto.com/article/856786.html",
+      "hot": "据The Information爆料，OpenAI正在开发更直接对标Grok Bot的功能，内部也在讨论如何应对Meta的个人助手Muse。"
     },
     {
       "rank": 10,
-      "title": "Jev 竟被开源模型 Laya 反超？两年苦熬，一夜被按在地上，真是令人哭笑不得",
-      "url": "https://www.51cto.com/article/856683.html",
-      "hot": "开源的Laya冒了出来。它有421M参数，大约是4.2亿，采用Apache 2.0协议。Laya自称单问题延迟低了近8倍。在它自己公布的typed-decisions测试集上，专用微调checkpoint的准确率达到0.766，高于其中对比的Jev 1.13.0的0.727。"
+      "title": "字节面试：你的 Agent 单次成功率 60%，敢上线吗？",
+      "url": "https://www.51cto.com/article/856796.html",
+      "hot": "如果只让我留一句话——单次成功率 60% 的 Agent，连做八次全对的概率只有 1.7%。Agent 评测测的不是\"它能不能做到\"，是\"它是不是次次都做到\"。"
     }
   ]
 }
