@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-23T01:47:47+00:00",
+  "updated_at": "2026-09-23T06:45:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 7 AI 识图实战：让应用看得见图片",
+      "url": "https://ost.51cto.com/posts/57369",
+      "hot": "大模型装进应用之后，最大的问题就是：它能看吗？这个问题在产品上的分量比技术上重&mdash;&mdash;文字输入对用户是有门槛的（要会描述、要打字），图..."
+    },
+    {
+      "rank": 2,
+      "title": "得物 Java 二面：23 个问题，一道八股都没有",
+      "url": "https://www.51cto.com/article/856846.html",
+      "hot": "这份面经里最值钱的一段，是中间那道性能优化题——面试官连问了三次，从「还有什么思路」到「怎么定位瓶颈」再到「如果瓶颈在权限计算呢」，一层一层往下压。能答到第三层的人不多。我把它逐题拆了一遍。下面按考察主线讲，重点在第三段和第四段。"
+    },
+    {
+      "rank": 3,
+      "title": "AI 在场｜崔皓：AI 把活都干了，他却比以前更忙了",
+      "url": "https://www.51cto.com/article/856767.html",
+      "hot": "AI 来了以后，人应该更轻松吗？至少崔皓不是这么想的。在崔皓看来，AI 真正带来的变化，不只是把一件事情做得更快，而是让一个人能够处理更多事情。"
+    },
+    {
+      "rank": 4,
+      "title": "HarmonyOS CoreSpeechKit 语音能力开发完全指南：让 App 开口说话与听懂人声",
+      "url": "https://ost.51cto.com/posts/57366",
+      "hot": "HarmonyOSCoreSpeechKit语音能力开发完全指南：让App开口说话与听懂人声从TTS到ASR，手把手构建一个能听会说的智能应用一、为什么需要让App..."
+    },
+    {
+      "rank": 5,
+      "title": "Jev 深度保姆级教程：AI 开始进入 if/switch/loop 之后，编程会发生什么？",
+      "url": "https://www.51cto.com/article/856817.html",
+      "hot": "Jev 给我们的启发是软件仍然是软件。代码仍然掌握控制权。只是在那些过去无法写死的判断条件上，插入一小块智能。"
+    },
+    {
+      "rank": 6,
       "title": "ReentrantLock 和 synchronized 到底选哪个？源码级对比与选型",
       "url": "https://www.51cto.com/article/856809.html",
       "hot": "ReentrantLock 和 synchronized 是 Java 中最常用的两种互斥锁，它们的本质区别是：synchronized 是 JVM 内置的监视器锁（C++ 实现，基于对象头和锁升级），ReentrantLock 是 JDK 实现的可重入锁（Java 实现，基于 AQS 和 CLH 队列）。"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "大模型正在吃掉搜索广告位，下一代广告该怎么做？人大高瓴、斯坦福把拍卖写进Token生成过程",
       "url": "https://www.51cto.com/article/856808.html",
       "hot": "Pew Research Center 对美国用户在 Google 上大规模浏览行为的分析发现：有 AI 摘要时，用户点击传统搜索结果的比例从 15%直接暴跌至 8%。[1]"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "AI 编程踩坑企业级项目？基于 OpenSpec+GStack 构建 SDD 规范驱动的 AI 研发体系",
       "url": "https://www.51cto.com/article/856805.html",
       "hot": "本文依托 AI 工程化理念，引入 SDD 规范驱动开发模式，搭配 OpenSpec、GStack 工具链，构建标准化、可校验、可追溯的 AI 研发体系。"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "一文吃透 AgentScope 2.0：让 Agent 真正\"长记性\"的四个设计",
       "url": "https://www.51cto.com/article/856799.html",
       "hot": "直到我把 AgentScope Java 2.0 的源码翻完，才意识到它走了一条不一样的路：它没在\"怎么调模型\"上卷，而是把状态、记忆、工作区直接做成了框架的地基。下面这张图，是它整套设计的骨架。"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "知识回顾：变量声明 let、const、var 十道面试题，前端必问",
       "url": "https://www.51cto.com/article/856775.html",
       "hot": "本文就从一个非常典型的设备随机死机现场开始，对嵌入式系统里面的栈溢出、堆碎片、HardFault、RTOS 任务栈、动态内存管理以及 DMA 内存破坏等问题进行一次比较完整的拆解。"
-    },
-    {
-      "rank": 6,
-      "title": "Java 开发：不用重启服务！Nacos Config 配置中心动态刷新完整实操",
-      "url": "https://www.51cto.com/article/856774.html",
-      "hot": "本文从实际项目落地角度出发，从零搭建 Nacos Config 环境，完整演示 @Value、@ConfigurationProperties、配置变更事件监听三种动态刷新方式，并深入剖析动态刷新的底层原理与常见踩坑点，帮你彻底掌握 Nacos 配置中心的动态刷新能力。"
-    },
-    {
-      "rank": 7,
-      "title": "「开源版Jev」登上Hugging Face热榜第一",
-      "url": "https://www.51cto.com/article/856788.html",
-      "hot": "有网友认为，Jev 看起来只是分类器，却具备零样本能力和接近前沿模型水平的智能。许多曾被忽略的传统机器学习思路，或许值得重新挖掘。"
-    },
-    {
-      "rank": 8,
-      "title": "GPT-6 Astra搓3D刷屏后，3D生成的竞争规则变了",
-      "url": "https://www.51cto.com/article/856787.html",
-      "hot": "写代码、调Blender、搭场景，甚至从零做出一款3D游戏。过去要在专业软件里折腾半天的活儿，现在一句话就能让Agent接手。"
-    },
-    {
-      "rank": 9,
-      "title": "ChatGPT版Grok Bot代码曝光！OpenAI也要为你造不下班的AI同事",
-      "url": "https://www.51cto.com/article/856786.html",
-      "hot": "据The Information爆料，OpenAI正在开发更直接对标Grok Bot的功能，内部也在讨论如何应对Meta的个人助手Muse。"
-    },
-    {
-      "rank": 10,
-      "title": "字节面试：你的 Agent 单次成功率 60%，敢上线吗？",
-      "url": "https://www.51cto.com/article/856796.html",
-      "hot": "如果只让我留一句话——单次成功率 60% 的 Agent，连做八次全对的概率只有 1.7%。Agent 评测测的不是\"它能不能做到\"，是\"它是不是次次都做到\"。"
     }
   ]
 }

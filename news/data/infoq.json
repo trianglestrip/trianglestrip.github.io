@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-23T01:47:54+00:00",
+  "updated_at": "2026-09-23T06:45:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "大语言模型：下一代 DSL 编写者",
+      "url": "https://www.infoq.cn/article/fZRdzxQYpaTS2sQSqpVk?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 23 Sep 2026 13:22:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Redis之父质疑Jev狂热！绝大多数开发者其实不需要它",
+      "url": "https://www.infoq.cn/article/POjWf9P5wCYjQaB39jD6?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 23 Sep 2026 12:08:50 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Agents成新一代造王者，开发者正在快速失去技术决定权",
+      "url": "https://www.infoq.cn/article/bakwHvI7PTqZr4Mh45xi?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 23 Sep 2026 12:03:21 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "数百亿向量怎么搜？Pinterest 抛弃“内存大户”HNSW，转向量化 SPANN",
+      "url": "https://www.infoq.cn/article/rB0WGcG9iLIRH3xZojY5?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 23 Sep 2026 11:22:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "阿里 Open Code Review 登顶 GitHub Trending 周榜第一，作者李峥峰将在 QCon 上海站揭秘百万任务验证的 Agent 工程实践",
+      "url": "https://www.infoq.cn/article/ekVtt3hgufw4wCvP7Zb5?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 23 Sep 2026 10:05:17 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "飞猪 AI Native 交付大脑：用超级流程重构需求交付｜QCon上海",
+      "url": "https://www.infoq.cn/article/lRSUjSdeaHMzTTycosyT?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 23 Sep 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 7,
       "title": "Cloudflare 测试通过缓存转码来减少存储需求",
       "url": "https://www.infoq.cn/article/izptFj6mjkyfd03qFHk9?utm_source=rss&utm_medium=article",
       "hot": "Wed, 23 Sep 2026 09:26:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "从生成内容到创造体验，多模态大模型如何改变内容生产？",
       "url": "https://www.infoq.cn/article/rNHK14OsBl5CgSpMoTPq?utm_source=rss&utm_medium=article",
       "hot": "Tue, 22 Sep 2026 20:12:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "不受控的 Agent ，凭什么上生产系统？",
       "url": "https://www.infoq.cn/article/3TjH8fZziNB50Qzz9tJx?utm_source=rss&utm_medium=article",
       "hot": "Tue, 22 Sep 2026 18:58:07 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "Jotai 3.0 带来仅支持 ESM 的现代化包，摒弃旧版构建方式和已弃用 API",
       "url": "https://www.infoq.cn/article/JkDJyKWiavXREdAWBvJk?utm_source=rss&utm_medium=article",
       "hot": "Tue, 22 Sep 2026 17:31:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "Meta 开源 Astryx：面向 Agent 的 React 设计系统",
-      "url": "https://www.infoq.cn/article/He6bUhlNIuPEa99GGRYC?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 22 Sep 2026 15:12:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "从 AI 工具到经营智能体：快手分销增长 Agent 实践",
-      "url": "https://www.infoq.cn/article/7suOC8BJWYA4yx6dvZXa?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 22 Sep 2026 14:32:17 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "AI Coding 贡献率超 90%，需求交付却只快了 10%：菜鸟如何用 Agent 托管端到端交付？",
-      "url": "https://www.infoq.cn/article/XPo33yALUEeIsBhQ4zGI?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 22 Sep 2026 14:17:25 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Netflix 重构 Conductor，以支持每月 4.2 亿次的工作流执行以及 10 倍规模的工作流",
-      "url": "https://www.infoq.cn/article/MejovdhJpA8y4wbWlTMU?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 22 Sep 2026 13:00:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "华为云码道面向鸿蒙开发者升级：上线鸿蒙编码大模型，覆盖开发到编译全流程",
-      "url": "https://www.infoq.cn/article/jCdqhiUJHJlVgOYGfWGx?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 22 Sep 2026 11:22:09 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "阿里吴泳铭：千问将训练5-10万亿参数规模的新模型",
-      "url": "https://www.infoq.cn/article/L9QQKUgo3DEjschVRKD9?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 22 Sep 2026 10:48:37 GMT"
     }
   ]
 }
