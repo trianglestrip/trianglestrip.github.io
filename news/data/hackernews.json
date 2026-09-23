@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-23T12:13:47+00:00",
+  "updated_at": "2026-09-23T16:57:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Jev in 25 Lines of Python",
-      "url": "https://www.nobodywho.ai/posts/jev-in-25-lines/",
-      "hot": "255"
+      "title": "Fixing the Portobello Police Station Clock",
+      "url": "https://pointinthecloud.com/2026-04-11-211700.html",
+      "hot": "123"
     },
     {
       "rank": 2,
-      "title": "Z80 REPL",
-      "url": "https://abagames.github.io/z80-repl/index.html",
-      "hot": "14"
+      "title": "Gemini 3.8 text-to-speech says hello",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "hot": "62"
     },
     {
       "rank": 3,
-      "title": "GPT-6 Sol and Luna",
-      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
-      "hot": "1596"
+      "title": "GPT-6 Astra has gained the ability to drive a car",
+      "url": "https://drivingbench.com/",
+      "hot": "143"
     },
     {
       "rank": 4,
-      "title": "Claude Opus 5.5",
-      "url": "https://www.anthropic.com/claude-opus-5-5",
-      "hot": "1603"
+      "title": "Radicle: Disclosure of Vulnerability in the Network Protocol",
+      "url": "https://radicle.dev/2026/09/23/disclosure-of-vulnerability-in-network-protocol",
+      "hot": "28"
     },
     {
       "rank": 5,
-      "title": "The darker side of being a doctor",
-      "url": "https://drericlevi.pages.dev/the-darker-side-of-being-a-doctor/",
-      "hot": "114"
+      "title": "Jev Can't Be Calibrated",
+      "url": "https://www.alexmolas.com/2026/09/23/jev-cant-be-calibrated.html",
+      "hot": "27"
     },
     {
       "rank": 6,
-      "title": "Transit rewards",
-      "url": "https://waymo.com/blog/2026/09/transit-rewards/",
-      "hot": "167"
+      "title": "Strands Harness",
+      "url": "https://strandsagents.com/blog/introducing-strands-harness/",
+      "hot": "77"
     },
     {
       "rank": 7,
-      "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
-      "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
-      "hot": "683"
+      "title": "Stripe's Knowledge AI Platform",
+      "url": "https://stripe.dev/blog/meet-stripes-knowledge-ai-platform",
+      "hot": "101"
     },
     {
       "rank": 8,
-      "title": "Microsoft killed FoxPro in 2007. Anyway, here's FoxPro revived",
-      "url": "https://foxscript.org/",
-      "hot": "358"
+      "title": "Jev in 25 Lines of Python",
+      "url": "https://www.nobodywho.ai/posts/jev-in-25-lines/",
+      "hot": "480"
     },
     {
       "rank": 9,
-      "title": "The Download: why AI's latest breakthroughs and fears may be more hype than rea",
-      "url": "https://www.technologyreview.com/2026/09/22/1144910/the-download-dont-believe-ai-hype/",
-      "hot": "32"
+      "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
+      "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+      "hot": "353"
     },
     {
       "rank": 10,
-      "title": "ReBarUEFI: Resizable BAR for almost any UEFI system",
-      "url": "https://github.com/xCuri0/ReBarUEFI",
-      "hot": "174"
+      "title": "GPT-6 Sol and Luna",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "hot": "1674"
     }
   ]
 }

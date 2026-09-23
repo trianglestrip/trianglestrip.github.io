@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-23T12:13:26+00:00",
+  "updated_at": "2026-09-23T16:56:52+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "奥德赛",
-      "url": "https://movie.douban.com/subject/36808876/",
-      "hot": "评分 8.6"
-    },
-    {
-      "rank": 4,
       "title": "现在不是出轨的问题",
       "url": "https://movie.douban.com/subject/37501131/",
       "hot": "评分 8.7"
+    },
+    {
+      "rank": 4,
+      "title": "奥德赛",
+      "url": "https://movie.douban.com/subject/36808876/",
+      "hot": "评分 8.6"
     },
     {
       "rank": 5,
@@ -42,14 +42,14 @@
     },
     {
       "rank": 7,
-      "title": "兰香如故",
-      "url": "https://movie.douban.com/subject/36449295/",
+      "title": "生化危机：爆发夜",
+      "url": "https://movie.douban.com/subject/37068446/",
       "hot": ""
     },
     {
       "rank": 8,
-      "title": "生化危机：爆发夜",
-      "url": "https://movie.douban.com/subject/37068446/",
+      "title": "兰香如故",
+      "url": "https://movie.douban.com/subject/36449295/",
       "hot": ""
     },
     {
