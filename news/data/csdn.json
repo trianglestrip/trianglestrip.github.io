@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-23T06:45:05+00:00",
+  "updated_at": "2026-09-23T12:13:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Jev 使用完整指南：从申请 API Key 到置信度路由，把 TypeSafe 决策模型接进自己的代码",
       "url": "https://blog.csdn.net/aidoudoulong/article/details/166245683",
-      "hot": "31860"
+      "hot": "31336"
     },
     {
       "rank": 2,
-      "title": "Prompt 和素材总是散一地？用 Infinite-Canvas 把 AI 创作搬进一张无限画布",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/166354773",
-      "hot": "21154"
+      "title": "8G显卡不只跑聊天模型：用Voice Companion搭一个能听、能说的本地AI数字人",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/166357760",
+      "hot": "21217"
     },
     {
       "rank": 3,
-      "title": "8G显卡不只跑聊天模型：用Voice Companion搭一个能听、能说的本地AI数字人",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/166357760",
-      "hot": "19879"
+      "title": "Prompt 和素材总是散一地？用 Infinite-Canvas 把 AI 创作搬进一张无限画布",
+      "url": "https://blog.csdn.net/Dovis5884/article/details/166354773",
+      "hot": "16725"
     },
     {
       "rank": 4,
-      "title": "LLM 和 Jev 到底有什么区别？为什么这个“不说话的AI“突然爆火？",
-      "url": "https://blog.csdn.net/zxc18344522713/article/details/166143448",
-      "hot": "17610"
+      "title": "【AI智能体】Codex 开发聚合搜索应用项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/163797745",
+      "hot": "16287"
     },
     {
       "rank": 5,
-      "title": "【AI智能体】Codex 开发聚合搜索应用项目实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/163797745",
-      "hot": "15372"
+      "title": "LLM 和 Jev 到底有什么区别？为什么这个“不说话的AI“突然爆火？",
+      "url": "https://blog.csdn.net/zxc18344522713/article/details/166143448",
+      "hot": "13756"
     },
     {
       "rank": 6,
       "title": "OpenClaw + cpolar 实战：远程 NAS、分享小游戏、RDP，再配置公网 AI 入口",
       "url": "https://blog.csdn.net/lbbxmx111/article/details/166257067",
-      "hot": "13922"
+      "hot": "13484"
     },
     {
       "rank": 7,
-      "title": "模型不是产品：从 Prompt Engineering 走向 Harness Engineering",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/164885413",
-      "hot": "9035"
+      "title": "OceanBaseVS金仓：选型别只听“分布式“，先把延迟和复杂SQL这两笔账算清",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/166375647",
+      "hot": "11917"
     },
     {
       "rank": 8,
-      "title": "二手电脑远程验机经验：闲鱼买电脑怕翻车？隔空看配置、跑分、查硬盘、通电时长，远程验机避坑实测",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/166253731",
-      "hot": "8728"
+      "title": "模型不是产品：从 Prompt Engineering 走向 Harness Engineering",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/164885413",
+      "hot": "10185"
     },
     {
       "rank": 9,
-      "title": "【AI大模型接入SDK】SQLite C API编程实战：学生表CRUD案例",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/166137231",
-      "hot": "8553"
+      "title": "不想天天敲 systemctl？用 Cockpit 把 Linux 运维搬进浏览器，再远程管理",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/166375185",
+      "hot": "9743"
     },
     {
       "rank": 10,
-      "title": "飞牛 NAS 部署 ai-goofish-monitor：闲鱼商品自动监控、AI 筛选，再配置固定公网访问",
-      "url": "https://blog.csdn.net/2301_81152266/article/details/166248234",
-      "hot": "7727"
+      "title": "【计算几何】Clipper的偏移",
+      "url": "https://blog.csdn.net/he_zhidan/article/details/165241863",
+      "hot": "7840"
     }
   ]
 }
