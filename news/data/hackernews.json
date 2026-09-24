@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-23T22:32:45+00:00",
+  "updated_at": "2026-09-24T00:49:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "hot": "373"
+      "title": "Meta VR Glasses",
+      "url": "https://www.meta.com/vr-glasses/",
+      "hot": "127"
     },
     {
       "rank": 2,
-      "title": "Claude's Load-Bearing Seams",
-      "url": "https://madradavid.com/claudes-load-bearing-seams/",
-      "hot": "50"
+      "title": "Linux support is coming to Snapdragon X2 Series",
+      "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
+      "hot": "101"
     },
     {
       "rank": 3,
-      "title": "VSCode's SSH Agent Is Bananas",
-      "url": "https://fly.io/blog/vscode-ssh-wtf/",
-      "hot": "51"
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "hot": "465"
     },
     {
       "rank": 4,
-      "title": "Fixing the Portobello Police Station Clock",
-      "url": "https://pointinthecloud.com/2026-04-11-211700.html",
-      "hot": "351"
+      "title": "VSCode's SSH Agent Is Bananas (2025)",
+      "url": "https://fly.io/blog/vscode-ssh-wtf/",
+      "hot": "108"
     },
     {
       "rank": 5,
-      "title": "LensVLM: Compressing long context as images, expanding only relevant pages",
-      "url": "https://huggingface.co/apple/LensVLM-9B",
-      "hot": "25"
+      "title": "ArXiv receives multiyear commitments to support it as an independent nonprofit",
+      "url": "https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/",
+      "hot": "39"
     },
     {
       "rank": 6,
-      "title": "A brief history of Windows scroll bar shortcuts",
-      "url": "https://devblogs.microsoft.com/oldnewthing/20260922-00/?p=112719/",
-      "hot": "86"
+      "title": "The \"Windows XP Box\" (2003)",
+      "url": "https://www.mini-itx.com/projects/windowsxpbox/",
+      "hot": "30"
     },
     {
       "rank": 7,
-      "title": "Italian parliament votes for return to nuclear energy",
-      "url": "https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567",
-      "hot": "450"
+      "title": "We just shipped support for the ugliest part of HTTP: Vary",
+      "url": "https://blog.cloudflare.com/vary-support/",
+      "hot": "53"
     },
     {
       "rank": 8,
-      "title": "OpenAI breaches Medicare, Albanese reveals",
-      "url": "https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html",
-      "hot": "85"
+      "title": "Fixing the Portobello Police Station Clock",
+      "url": "https://pointinthecloud.com/2026-04-11-211700.html",
+      "hot": "376"
     },
     {
       "rank": 9,
-      "title": "The mystery animal on an ancient god's head",
-      "url": "https://signoregalilei.com/2026/09/13/the-mystery-animal-on-an-ancient-gods-head/",
-      "hot": "18"
+      "title": "Mercury 2.5 LLM hits 770 tokens per second",
+      "url": "https://artificialanalysis.ai/models/mercury-2-5",
+      "hot": "34"
     },
     {
       "rank": 10,
-      "title": "The Curious Power of Punctuation",
-      "url": "https://www.newyorker.com/magazine/2026/09/28/on-the-mark-louis-menand-book-review",
-      "hot": "8"
+      "title": "LensVLM: Compressing long context as images, expanding only relevant pages",
+      "url": "https://huggingface.co/apple/LensVLM-9B",
+      "hot": "49"
     }
   ]
 }
