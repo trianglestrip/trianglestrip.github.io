@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-24T05:30:40+00:00",
+  "updated_at": "2026-09-24T10:23:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 7 FAST Kit实战：用FFT把声音变成频谱图",
+      "url": "https://ost.51cto.com/posts/57486",
+      "hot": "大家好，今天接着聊FASTKit。前一篇我们用它做了中文、英文和数字混排排序，这次换个方向，看看FASTKit里的FFT能做什么。平时听到的声音，..."
+    },
+    {
+      "rank": 2,
       "title": "端云一体化（七）：Push Kit 消息推送",
       "url": "https://ost.51cto.com/posts/57446",
       "hot": "喝水断食提醒、同步结果和系统公告需要在合适的时机触达用户。本篇为轻食刻接入PushKit，串联设备注册、云侧发送、端侧处理与通知跳转，并..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "别再手搓 Agent！三款开源 Harness 底座架构解析，打造企业定制智能体",
       "url": "https://www.51cto.com/article/856948.html",
       "hot": "本文实战探索如何基于 Pi、DeepSeek Harness、Codex Harness 构建自己的 Agent 系统。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "中文用户全线中招！Claude网页限速，只因回复里有汉字",
       "url": "https://www.51cto.com/article/856947.html",
       "hot": "今天凌晨，Anthropic放出一篇硬核的工程复盘。他们把一个内部研究版Claude扔进Slack频道，「连轴转」了两周，硬生生把claude.ai网页版和桌面端的整体速度拉快了3倍。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "别被 AI 吓住了：大部分 AIOps 岗位就是用好工具，不是造算法",
       "url": "https://www.51cto.com/article/856945.html",
       "hot": "AIOps 的本质是运维工程，即把现成的 AI 工具接进来、用好它、保证它稳定跑起来。你不是在造 AI，你是在用 AI。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Meta靠自研Manus翻身！股价一夜暴涨11%，登顶苹果商店，增速反超ChatGPT",
       "url": "https://www.51cto.com/article/856944.html",
       "hot": "Meta版OpenClaw——Meta Muse，杀疯了。需要取消保险？Muse拨打客服电话、扯皮、搞定。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "EMNLP最新GraphRAG，RSI杀疯了",
       "url": "https://www.51cto.com/article/856933.html",
       "hot": "今天介绍的文章是深圳大学、大湾区大学、蚂蚁集团等提出的GTA-RAG：从实体-文档图采样连通路径合成多跳QA轨迹，经部署检索器验证后做轨迹引导GRPO训练——检索到新目标文档加分、空手回扣分，答对且证据链完整拿最高档。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "错误码排查从 3～8 小时到分钟级，Agent 怎么做到的？",
       "url": "https://www.51cto.com/article/856930.html",
       "hot": "这篇文章重点分享三个实践：如何组织多源证据、如何让长链路排查稳定产出，以及如何用案例和回归评测持续迭代 Skill。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "面试官：ReAct 和 Plan-and-Execute，你平时怎么选？你答「看复杂程度」，他听到的是「我没选过」",
       "url": "https://www.51cto.com/article/856928.html",
       "hot": "ReAct 和 Plan-and-Execute 的差别不在难度，在「不确定性落在哪」。这篇文章给你一套能当场判定的选型流程，以及三种形态各自的失败模式。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "MCP 就是 AI 时代的 JDBC：14 个 AI 热词的 Spring 翻译表",
       "url": "https://www.51cto.com/article/856924.html",
       "hot": "用你已经滚瓜烂熟的 Spring 技术栈，把 AI 这一整套新词翻译一遍。不是打比方，是结构同构。你会发现 AI 工程化这几年踩的坑，Spring 社区十年前基本都踩过一遍了。"
-    },
-    {
-      "rank": 10,
-      "title": "为啥总在交换机日志中出现终端 MAC 地址漂移？原因是啥？怎么解决？",
-      "url": "https://www.51cto.com/article/856923.html",
-      "hot": "交换机漂移监测页面和系统日志页面随机不定时出现个别终端MAC在多个端口的漂移的日志，客户反馈可能存在网络异常，需要明确漂移日志产生的原因。"
     }
   ]
 }
