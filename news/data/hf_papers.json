@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-24T10:24:04+00:00",
+  "updated_at": "2026-09-24T19:13:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
       "url": "https://huggingface.co/papers/2609.24984",
-      "hot": "139"
+      "hot": "145"
     },
     {
       "rank": 2,
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
-      "url": "https://huggingface.co/papers/2609.25001",
-      "hot": "123"
+      "title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation",
+      "url": "https://huggingface.co/papers/2609.24981",
+      "hot": "43"
     },
     {
       "rank": 4,
-      "title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation",
-      "url": "https://huggingface.co/papers/2609.24981",
-      "hot": "42"
+      "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+      "url": "https://huggingface.co/papers/2609.25001",
+      "hot": "129"
     },
     {
       "rank": 5,
@@ -36,21 +36,21 @@
     },
     {
       "rank": 6,
-      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
-      "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "210"
-    },
-    {
-      "rank": 7,
       "title": "YuE: Scaling Open Foundation Models for Long-Form Music Generation",
       "url": "https://huggingface.co/papers/2503.08638",
       "hot": "78"
     },
     {
+      "rank": 7,
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "url": "https://huggingface.co/papers/2608.23283",
+      "hot": "210"
+    },
+    {
       "rank": 8,
       "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
       "url": "https://huggingface.co/papers/2609.24972",
-      "hot": "182"
+      "hot": "195"
     },
     {
       "rank": 9,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
       "url": "https://huggingface.co/papers/2609.20519",
-      "hot": "129"
+      "hot": "130"
     }
   ]
 }

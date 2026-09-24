@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-24T15:17:04+00:00",
+  "updated_at": "2026-09-24T19:12:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 开发聚合搜索应用项目实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/163797745",
-      "hot": "33162"
+      "hot": "31821"
     },
     {
       "rank": 2,
       "title": "大模型技术全景(九):AI Agent,让大模型“自己干活“——架构与设计模式",
       "url": "https://blog.csdn.net/2502_94387000/article/details/166242629",
-      "hot": "19965"
+      "hot": "22563"
     },
     {
       "rank": 3,
       "title": "我给 WorkBuddy 设了个闹钟：每天上午十点半，一份 AI 日报自动送进微信",
       "url": "https://blog.csdn.net/2302_78391795/article/details/166329682",
-      "hot": "13730"
+      "hot": "12744"
     },
     {
       "rank": 4,
       "title": "Prompt 和素材总是散一地？用 Infinite-Canvas 把 AI 创作搬进一张无限画布",
       "url": "https://blog.csdn.net/Dovis5884/article/details/166354773",
-      "hot": "13562"
+      "hot": "12255"
     },
     {
       "rank": 5,
       "title": "【AI大模型接入SDK】SQLite数据持久化模块整体需求",
       "url": "https://blog.csdn.net/2401_89899187/article/details/166488607",
-      "hot": "12075"
+      "hot": "12205"
     },
     {
       "rank": 6,
-      "title": "游戏引擎架构 001：从团队分工到底层架构",
-      "url": "https://blog.csdn.net/2503_92624912/article/details/166492910",
-      "hot": "10429"
+      "title": "不注册也能多人一起写？用 Rustpad 在 NAS 上搭一个轻量协作文本编辑器",
+      "url": "https://blog.csdn.net/liu_chen_yang/article/details/166593257",
+      "hot": "11041"
     },
     {
       "rank": 7,
-      "title": "从“作坊式建模“到“流水线智能“：时序大模型如何重构工业 AI 实施范式",
-      "url": "https://blog.csdn.net/u014727709/article/details/166491639",
-      "hot": "10301"
+      "title": "大模型工程化实战（十三）：LLMOps 不完全指南——LLMOps 与 MLOps 的区别到底在哪：发布原子不是模型，是 Prompt/数据/模型版本三元组",
+      "url": "https://blog.csdn.net/xiaobing259/article/details/166139292",
+      "hot": "10533"
     },
     {
       "rank": 8,
-      "title": "大模型工程化实战（十三）：LLMOps 不完全指南——LLMOps 与 MLOps 的区别到底在哪：发布原子不是模型，是 Prompt/数据/模型版本三元组",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/166139292",
-      "hot": "8392"
+      "title": "游戏引擎架构 001：从团队分工到底层架构",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/166492910",
+      "hot": "10463"
     },
     {
       "rank": 9,
-      "title": "模型不是产品：从 Prompt Engineering 走向 Harness Engineering",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/164885413",
-      "hot": "8103"
+      "title": "从“作坊式建模“到“流水线智能“：时序大模型如何重构工业 AI 实施范式",
+      "url": "https://blog.csdn.net/u014727709/article/details/166491639",
+      "hot": "9928"
     },
     {
       "rank": 10,
-      "title": "不注册也能多人一起写？用 Rustpad 在 NAS 上搭一个轻量协作文本编辑器",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/166593257",
-      "hot": "8092"
+      "title": "深度学习实战-基于EfficientNet的宠物面部表情图像分类识别模型",
+      "url": "https://blog.csdn.net/m0_64336780/article/details/163047546",
+      "hot": "9613"
     }
   ]
 }

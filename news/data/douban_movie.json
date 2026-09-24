@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-24T15:16:43+00:00",
+  "updated_at": "2026-09-24T19:12:34+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,15 +30,15 @@
     },
     {
       "rank": 5,
-      "title": "深渊无间",
-      "url": "https://movie.douban.com/subject/36576514/",
-      "hot": "评分 7.2"
-    },
-    {
-      "rank": 6,
       "title": "早春晴朗",
       "url": "https://movie.douban.com/subject/36660844/",
       "hot": "评分 6.7"
+    },
+    {
+      "rank": 6,
+      "title": "深渊无间",
+      "url": "https://movie.douban.com/subject/36576514/",
+      "hot": "评分 7.2"
     },
     {
       "rank": 7,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.3"
+      "title": "交锋",
+      "url": "https://movie.douban.com/subject/36314809/",
+      "hot": "评分 7.5"
     },
     {
       "rank": 10,
-      "title": "抓特务",
-      "url": "https://movie.douban.com/subject/36812879/",
-      "hot": "评分 7.4"
+      "title": "给阿嬷的情书",
+      "url": "https://movie.douban.com/subject/37116446/",
+      "hot": "评分 9.3"
     }
   ]
 }
