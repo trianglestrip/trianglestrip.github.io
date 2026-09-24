@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-24T00:49:59+00:00",
+  "updated_at": "2026-09-24T05:30:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "腾讯将关停 QClaw，基于 OpenClaw 的本地 Agent 路线被放弃",
+      "url": "https://www.oschina.net/news/502726",
+      "hot": "Thu, 24 Sep 2026 11:49:22 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "KnowForge 2026.0.5 发布：签到、排行榜、版本聚合与全链路国际化",
+      "url": "https://www.oschina.net/news/502725",
+      "hot": "Thu, 24 Sep 2026 11:12:11 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "别被这个夏天的 AI 炒作愚弄，每个“突破”都经不起核查",
+      "url": "https://www.oschina.net/news/502724/dont-be-fooled-summer-ai-hype",
+      "hot": "Thu, 24 Sep 2026 11:08:07 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Qoder 换定位：不做 IDE，做「Agentic Coding Platform for Everyone」",
+      "url": "https://www.oschina.net/news/502723",
+      "hot": "Thu, 24 Sep 2026 10:58:57 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Tailscale 把 1KiB 的包塞进 64KiB 缓冲区？干脆不塞了",
+      "url": "https://www.oschina.net/news/502722/making-tailscale-faster",
+      "hot": "Thu, 24 Sep 2026 10:51:30 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "VER.2.2.35-202600923-RS 最新版已经发布 -- 企业级在线文档编辑解决方案",
+      "url": "https://www.oschina.net/news/502715",
+      "hot": "Thu, 24 Sep 2026 00:27:29 +0800"
+    },
+    {
+      "rank": 7,
       "title": "阿里发布 Qwen Intelligence，规划 Agent 靠「模型 ×Harness」，成功率达 90%",
       "url": "https://www.oschina.net/news/502713",
       "hot": "Wed, 23 Sep 2026 19:13:04 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "谷歌推出运行 Android 的 AI 笔记本电脑 Googlebooks，起售价 899 美元",
       "url": "https://www.oschina.net/news/502712",
       "hot": "Wed, 23 Sep 2026 18:47:28 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "云栖大会开幕：Qwen4 已在训练，RSI 让大模型自己迭代自己跑了 33 轮",
       "url": "https://www.oschina.net/news/502711",
       "hot": "Wed, 23 Sep 2026 17:57:01 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "如意玲珑 1.14 版本发布：升级更安心、调试更顺手、管理更省心",
       "url": "https://www.oschina.net/news/502710",
       "hot": "Wed, 23 Sep 2026 17:38:53 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Agent 时代，搜索工具正在被重新定义：从链接列表到可直接消费的结构化信息",
-      "url": "https://www.oschina.net/news/502709",
-      "hot": "Wed, 23 Sep 2026 17:38:48 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "虚拟机里的故障如何诊断？ZSvirt 赛题专家解读来了",
-      "url": "https://www.oschina.net/news/502708",
-      "hot": "Wed, 23 Sep 2026 17:29:48 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "2026上海开源大赛奖金公布：共57个获奖名额，特设学生奖",
-      "url": "https://www.oschina.net/news/502707",
-      "hot": "Wed, 23 Sep 2026 17:13:29 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "阿里云捐赠 300 万美元资助 DHH 的 Linux 发行版 Omarchy，还要一起做 Qwen Book",
-      "url": "https://www.oschina.net/news/502703/alibaba-cloud-joins-as-founding-corporate-patron",
-      "hot": "Wed, 23 Sep 2026 16:08:18 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Unreal Agent：一款具有最先进成本效率的开源 Agent 框架",
-      "url": "https://www.oschina.net/news/502701/unreallabs-ai-unreal-agent",
-      "hot": "Wed, 23 Sep 2026 15:27:19 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "一个基于 Rust 和 egui 开发的跨平台 SSH 客户端应用",
-      "url": "https://www.oschina.net/news/502696",
-      "hot": "Wed, 23 Sep 2026 13:33:01 +0800"
     }
   ]
 }

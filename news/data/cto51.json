@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-24T00:49:56+00:00",
+  "updated_at": "2026-09-24T05:30:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "DeepSeek新论文公开Agent训练！梁文锋署名",
-      "url": "https://www.51cto.com/article/856864.html",
-      "hot": "DeepSeek做的这个系统叫DSec（DeepSeek Elastic Compute），干的事情就是给Agent训练批量制造沙盒。"
+      "title": "端云一体化（七）：Push Kit 消息推送",
+      "url": "https://ost.51cto.com/posts/57446",
+      "hot": "喝水断食提醒、同步结果和系统公告需要在合适的时机触达用户。本篇为轻食刻接入PushKit，串联设备注册、云侧发送、端侧处理与通知跳转，并..."
     },
     {
       "rank": 2,
-      "title": "00后华人天才少女、Bengio高徒，从DeepMind转会OpenAI！",
-      "url": "https://www.51cto.com/article/856863.html",
-      "hot": "在谷歌 DeepMind 深度参与了 Gemini 2.5/3、世界模型 Genie 2/3 以及具身智能体 Sima 2 研发的核心研究员 Bonnie Li 宣布离职，转会 OpenAI。"
+      "title": "别再手搓 Agent！三款开源 Harness 底座架构解析，打造企业定制智能体",
+      "url": "https://www.51cto.com/article/856948.html",
+      "hot": "本文实战探索如何基于 Pi、DeepSeek Harness、Codex Harness 构建自己的 Agent 系统。"
     },
     {
       "rank": 3,
-      "title": "AI SOC Agent落地实战：为什么70%在试点，只有15%真正见效？",
-      "url": "https://www.51cto.com/article/856859.html",
-      "hot": "别只看速度提升。 AI把单条告警调查时间从20分钟降到10分钟，这是效率改善；但如果告警积压没减少，团队还是在加班，那价值就打折扣了。"
+      "title": "中文用户全线中招！Claude网页限速，只因回复里有汉字",
+      "url": "https://www.51cto.com/article/856947.html",
+      "hot": "今天凌晨，Anthropic放出一篇硬核的工程复盘。他们把一个内部研究版Claude扔进Slack频道，「连轴转」了两周，硬生生把claude.ai网页版和桌面端的整体速度拉快了3倍。"
     },
     {
       "rank": 4,
-      "title": "HarmonyOS 7 AI 识图实战：让应用看得见图片",
-      "url": "https://ost.51cto.com/posts/57369",
-      "hot": "大模型装进应用之后，最大的问题就是：它能看吗？这个问题在产品上的分量比技术上重&mdash;&mdash;文字输入对用户是有门槛的（要会描述、要打字），图..."
+      "title": "别被 AI 吓住了：大部分 AIOps 岗位就是用好工具，不是造算法",
+      "url": "https://www.51cto.com/article/856945.html",
+      "hot": "AIOps 的本质是运维工程，即把现成的 AI 工具接进来、用好它、保证它稳定跑起来。你不是在造 AI，你是在用 AI。"
     },
     {
       "rank": 5,
-      "title": "19个AI血战《星际争霸》！GPT-6全胜，照样打不过人类新手",
-      "url": "https://www.51cto.com/article/856851.html",
-      "hot": "43分钟、11138个推理token、6批指令——0个作战单位。这是Grok 4.6在《星际争霸：母巢之战》里交出的一张绝望成绩单。"
+      "title": "Meta靠自研Manus翻身！股价一夜暴涨11%，登顶苹果商店，增速反超ChatGPT",
+      "url": "https://www.51cto.com/article/856944.html",
+      "hot": "Meta版OpenClaw——Meta Muse，杀疯了。需要取消保险？Muse拨打客服电话、扯皮、搞定。"
     },
     {
       "rank": 6,
-      "title": "得物 Java 二面：23 个问题，一道八股都没有",
-      "url": "https://www.51cto.com/article/856846.html",
-      "hot": "这份面经里最值钱的一段，是中间那道性能优化题——面试官连问了三次，从「还有什么思路」到「怎么定位瓶颈」再到「如果瓶颈在权限计算呢」，一层一层往下压。能答到第三层的人不多。我把它逐题拆了一遍。下面按考察主线讲，重点在第三段和第四段。"
+      "title": "EMNLP最新GraphRAG，RSI杀疯了",
+      "url": "https://www.51cto.com/article/856933.html",
+      "hot": "今天介绍的文章是深圳大学、大湾区大学、蚂蚁集团等提出的GTA-RAG：从实体-文档图采样连通路径合成多跳QA轨迹，经部署检索器验证后做轨迹引导GRPO训练——检索到新目标文档加分、空手回扣分，答对且证据链完整拿最高档。"
     },
     {
       "rank": 7,
-      "title": "AI 在场｜崔皓：AI 把活都干了，他却比以前更忙了",
-      "url": "https://www.51cto.com/article/856767.html",
-      "hot": "AI 来了以后，人应该更轻松吗？至少崔皓不是这么想的。在崔皓看来，AI 真正带来的变化，不只是把一件事情做得更快，而是让一个人能够处理更多事情。"
+      "title": "错误码排查从 3～8 小时到分钟级，Agent 怎么做到的？",
+      "url": "https://www.51cto.com/article/856930.html",
+      "hot": "这篇文章重点分享三个实践：如何组织多源证据、如何让长链路排查稳定产出，以及如何用案例和回归评测持续迭代 Skill。"
     },
     {
       "rank": 8,
-      "title": "HarmonyOS CoreSpeechKit 语音能力开发完全指南：让 App 开口说话与听懂人声",
-      "url": "https://ost.51cto.com/posts/57366",
-      "hot": "HarmonyOSCoreSpeechKit语音能力开发完全指南：让App开口说话与听懂人声从TTS到ASR，手把手构建一个能听会说的智能应用一、为什么需要让App..."
+      "title": "面试官：ReAct 和 Plan-and-Execute，你平时怎么选？你答「看复杂程度」，他听到的是「我没选过」",
+      "url": "https://www.51cto.com/article/856928.html",
+      "hot": "ReAct 和 Plan-and-Execute 的差别不在难度，在「不确定性落在哪」。这篇文章给你一套能当场判定的选型流程，以及三种形态各自的失败模式。"
     },
     {
       "rank": 9,
-      "title": "Jev 深度保姆级教程：AI 开始进入 if/switch/loop 之后，编程会发生什么？",
-      "url": "https://www.51cto.com/article/856817.html",
-      "hot": "Jev 给我们的启发是软件仍然是软件。代码仍然掌握控制权。只是在那些过去无法写死的判断条件上，插入一小块智能。"
+      "title": "MCP 就是 AI 时代的 JDBC：14 个 AI 热词的 Spring 翻译表",
+      "url": "https://www.51cto.com/article/856924.html",
+      "hot": "用你已经滚瓜烂熟的 Spring 技术栈，把 AI 这一整套新词翻译一遍。不是打比方，是结构同构。你会发现 AI 工程化这几年踩的坑，Spring 社区十年前基本都踩过一遍了。"
     },
     {
       "rank": 10,
-      "title": "ReentrantLock 和 synchronized 到底选哪个？源码级对比与选型",
-      "url": "https://www.51cto.com/article/856809.html",
-      "hot": "ReentrantLock 和 synchronized 是 Java 中最常用的两种互斥锁，它们的本质区别是：synchronized 是 JVM 内置的监视器锁（C++ 实现，基于对象头和锁升级），ReentrantLock 是 JDK 实现的可重入锁（Java 实现，基于 AQS 和 CLH 队列）。"
+      "title": "为啥总在交换机日志中出现终端 MAC 地址漂移？原因是啥？怎么解决？",
+      "url": "https://www.51cto.com/article/856923.html",
+      "hot": "交换机漂移监测页面和系统日志页面随机不定时出现个别终端MAC在多个端口的漂移的日志，客户反馈可能存在网络异常，需要明确漂移日志产生的原因。"
     }
   ]
 }

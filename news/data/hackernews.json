@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-24T00:49:57+00:00",
+  "updated_at": "2026-09-24T05:30:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Meta VR Glasses",
-      "url": "https://www.meta.com/vr-glasses/",
-      "hot": "127"
+      "title": "Linux support is coming to Snapdragon X2 Series",
+      "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
+      "hot": "276"
     },
     {
       "rank": 2,
-      "title": "Linux support is coming to Snapdragon X2 Series",
-      "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
-      "hot": "101"
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "hot": "577"
     },
     {
       "rank": 3,
-      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "hot": "465"
+      "title": "Feds Target AI Critics as \"Foreign Agents\"",
+      "url": "https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign",
+      "hot": "179"
     },
     {
       "rank": 4,
-      "title": "VSCode's SSH Agent Is Bananas (2025)",
-      "url": "https://fly.io/blog/vscode-ssh-wtf/",
-      "hot": "108"
+      "title": "ArXiv receives multiyear commitments to support it as an independent nonprofit",
+      "url": "https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/",
+      "hot": "110"
     },
     {
       "rank": 5,
-      "title": "ArXiv receives multiyear commitments to support it as an independent nonprofit",
-      "url": "https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/",
-      "hot": "39"
+      "title": "Making portable my unportable transputer C compiler",
+      "url": "https://nanochess.org/transputer_c_compiler.html",
+      "hot": "16"
     },
     {
       "rank": 6,
-      "title": "The \"Windows XP Box\" (2003)",
-      "url": "https://www.mini-itx.com/projects/windowsxpbox/",
-      "hot": "30"
+      "title": "VSCode's SSH Agent Is Bananas (2025)",
+      "url": "https://fly.io/blog/vscode-ssh-wtf/",
+      "hot": "174"
     },
     {
       "rank": 7,
-      "title": "We just shipped support for the ugliest part of HTTP: Vary",
-      "url": "https://blog.cloudflare.com/vary-support/",
-      "hot": "53"
+      "title": "Virtio-nvgpu: Near-native Nvidia GPU access inside a KVM guest",
+      "url": "https://github.com/nestrilabs/virtio-nvgpu",
+      "hot": "49"
     },
     {
       "rank": 8,
-      "title": "Fixing the Portobello Police Station Clock",
-      "url": "https://pointinthecloud.com/2026-04-11-211700.html",
-      "hot": "376"
+      "title": "The \"Windows XP Box\" (2003)",
+      "url": "https://www.mini-itx.com/projects/windowsxpbox/",
+      "hot": "100"
     },
     {
       "rank": 9,
-      "title": "Mercury 2.5 LLM hits 770 tokens per second",
-      "url": "https://artificialanalysis.ai/models/mercury-2-5",
-      "hot": "34"
+      "title": "Meta VR Glasses",
+      "url": "https://www.meta.com/vr-glasses/",
+      "hot": "324"
     },
     {
       "rank": 10,
-      "title": "LensVLM: Compressing long context as images, expanding only relevant pages",
-      "url": "https://huggingface.co/apple/LensVLM-9B",
-      "hot": "49"
+      "title": "Ideas on modernizing the open-source desktop",
+      "url": "https://lwn.net/SubscriberLink/1095425/2d9f411252325784/",
+      "hot": "22"
     }
   ]
 }
