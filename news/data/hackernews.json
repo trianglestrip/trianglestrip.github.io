@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-25T10:18:08+00:00",
+  "updated_at": "2026-09-25T15:19:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Dutch governments builds alternative for Microsoft based on NixOS",
-      "url": "https://www.dawo.community/en/",
-      "hot": "159"
+      "title": "Allow Carriers on Planes",
+      "url": "https://www.jefftk.com/p/allow-carriers-on-planes",
+      "hot": "75"
     },
     {
       "rank": 2,
-      "title": "Tech Needs Humanists More",
-      "url": "https://passo.uno/tech-needs-humanists-more-than-ever/",
-      "hot": "32"
+      "title": "Platform-Independent SIMD in Go",
+      "url": "https://go.dev/blog/simd-experiment",
+      "hot": "116"
     },
     {
       "rank": 3,
-      "title": "Pentium II at 600Mhz with Voodoo 3 Emulated on 86Box with M6 Mac Mini",
-      "url": "https://nyaa.sh/reviews/mac-mini-m6-emulation",
-      "hot": "57"
+      "title": "Git-bug: Distributed, offline-first bug tracker embedded in Git",
+      "url": "https://github.com/git-bug/git-bug",
+      "hot": "118"
     },
     {
       "rank": 4,
-      "title": "F-Droid 2.0",
-      "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
-      "hot": "1253"
+      "title": "Pentium II at 600Mhz with Voodoo 3 Emulated on 86Box with M6 Mac Mini",
+      "url": "https://nyaa.sh/reviews/mac-mini-m6-emulation",
+      "hot": "164"
     },
     {
       "rank": 5,
-      "title": "Ink and Switch Interactive Homepage",
-      "url": "https://www.inkandswitch.com/",
-      "hot": "8"
+      "title": "First Principles Thinking",
+      "url": "https://sunilsadasivan.com/writing/first-principles-thinking/",
+      "hot": "22"
     },
     {
       "rank": 6,
-      "title": "CVE-2025-13032: Entering and Breaking the Avast Antivirus Sandbox Part 2",
-      "url": "https://www.safateam.com/intelligence-hub/research/technical-articles/cve-2025-13032-entering-and-breaking-the-avast-antivirus-sandbox-part-2",
-      "hot": "49"
+      "title": "Ink and Switch Interactive Homepage",
+      "url": "https://www.inkandswitch.com/",
+      "hot": "115"
     },
     {
       "rank": 7,
-      "title": "Special Projects (2016)",
-      "url": "https://openai.com/index/special-projects/",
-      "hot": "18"
+      "title": "Dutch governments builds alternative for Microsoft based on NixOS",
+      "url": "https://www.dawo.community/en/",
+      "hot": "714"
     },
     {
       "rank": 8,
-      "title": "Show HN: Make cursed fonts like Times New Bastard",
-      "url": "https://bastardica.mitpit.com",
-      "hot": "702"
+      "title": "F-Droid 2.0",
+      "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
+      "hot": "1351"
     },
     {
       "rank": 9,
-      "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
-      "url": "https://github.com/devdotfast/whiteboard",
-      "hot": "313"
+      "title": "Boards of Casio",
+      "url": "https://www.ambionix.com/blog/boards-of-casio/",
+      "hot": "48"
     },
     {
       "rank": 10,
-      "title": "Why is the liver so weirdly regenerative?",
-      "url": "https://dynomight.substack.com/p/liver",
-      "hot": "412"
+      "title": "Show HN: Make cursed fonts like Times New Bastard",
+      "url": "https://bastardica.mitpit.com",
+      "hot": "790"
     }
   ]
 }
