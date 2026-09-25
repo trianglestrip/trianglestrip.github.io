@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-25T00:37:39+00:00",
+  "updated_at": "2026-09-25T05:20:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 开发聚合搜索应用项目实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/163797745",
-      "hot": "30776"
+      "hot": "35115"
     },
     {
       "rank": 2,
       "title": "大模型技术全景(九):AI Agent,让大模型“自己干活“——架构与设计模式",
       "url": "https://blog.csdn.net/2502_94387000/article/details/166242629",
-      "hot": "22395"
+      "hot": "28762"
     },
     {
       "rank": 3,
-      "title": "【AI大模型接入SDK】SQLite数据持久化模块整体需求",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/166488607",
-      "hot": "12123"
+      "title": "Prompt 和素材总是散一地？用 Infinite-Canvas 把 AI 创作搬进一张无限画布",
+      "url": "https://blog.csdn.net/Dovis5884/article/details/166354773",
+      "hot": "13027"
     },
     {
       "rank": 4,
       "title": "不注册也能多人一起写？用 Rustpad 在 NAS 上搭一个轻量协作文本编辑器",
       "url": "https://blog.csdn.net/liu_chen_yang/article/details/166593257",
-      "hot": "12028"
+      "hot": "12271"
     },
     {
       "rank": 5,
-      "title": "Prompt 和素材总是散一地？用 Infinite-Canvas 把 AI 创作搬进一张无限画布",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/166354773",
-      "hot": "11915"
+      "title": "大模型工程化实战（十三）：LLMOps 不完全指南——LLMOps 与 MLOps 的区别到底在哪：发布原子不是模型，是 Prompt/数据/模型版本三元组",
+      "url": "https://blog.csdn.net/xiaobing259/article/details/166139292",
+      "hot": "9311"
     },
     {
       "rank": 6,
-      "title": "我给 WorkBuddy 设了个闹钟：每天上午十点半，一份 AI 日报自动送进微信",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/166329682",
-      "hot": "11894"
+      "title": "Meta Muse 爆火：12 天下载量反超 ChatGPT，个人 AI 智能体完整使用指南",
+      "url": "https://blog.csdn.net/aidoudoulong/article/details/166578884",
+      "hot": "9140"
     },
     {
       "rank": 7,
-      "title": "大模型工程化实战（十三）：LLMOps 不完全指南——LLMOps 与 MLOps 的区别到底在哪：发布原子不是模型，是 Prompt/数据/模型版本三元组",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/166139292",
-      "hot": "10350"
+      "title": "2026 年我的 AI 工具清单 + 一个远程思想",
+      "url": "https://blog.csdn.net/2402_86350387/article/details/166586573",
+      "hot": "8953"
     },
     {
       "rank": 8,
-      "title": "游戏引擎架构 001：从团队分工到底层架构",
-      "url": "https://blog.csdn.net/2503_92624912/article/details/166492910",
-      "hot": "10291"
+      "title": "深度学习实战-基于EfficientNet的宠物面部表情图像分类识别模型",
+      "url": "https://blog.csdn.net/m0_64336780/article/details/163047546",
+      "hot": "8685"
     },
     {
       "rank": 9,
-      "title": "从“作坊式建模“到“流水线智能“：时序大模型如何重构工业 AI 实施范式",
-      "url": "https://blog.csdn.net/u014727709/article/details/166491639",
-      "hot": "9740"
+      "title": "用Seed-2.1-pro做一个研途择校平台：从官方表格、多模态读图到可运行产品",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/166597100",
+      "hot": "8407"
     },
     {
       "rank": 10,
-      "title": "深度学习实战-基于EfficientNet的宠物面部表情图像分类识别模型",
-      "url": "https://blog.csdn.net/m0_64336780/article/details/163047546",
-      "hot": "9440"
+      "title": "【AI大模型接入SDK】SQLite数据持久化模块整体需求",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/166488607",
+      "hot": "7713"
     }
   ]
 }
