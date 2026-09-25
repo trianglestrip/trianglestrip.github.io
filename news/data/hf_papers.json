@@ -1,62 +1,62 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-25T15:19:28+00:00",
+  "updated_at": "2026-09-25T22:26:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "144"
-    },
-    {
-      "rank": 2,
       "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
       "url": "https://huggingface.co/papers/2609.24984",
       "hot": "149"
     },
     {
+      "rank": 2,
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://huggingface.co/papers/2412.20138",
+      "hot": "144"
+    },
+    {
       "rank": 3,
-      "title": "SmolDocling: An ultra-compact vision-language model for end-to-end\n  multi-modal document conversion",
-      "url": "https://huggingface.co/papers/2503.11576",
-      "hot": "177"
-    },
-    {
-      "rank": 4,
-      "title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation",
-      "url": "https://huggingface.co/papers/2609.24981",
-      "hot": "48"
-    },
-    {
-      "rank": 5,
-      "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
-      "url": "https://huggingface.co/papers/2609.25001",
-      "hot": "130"
-    },
-    {
-      "rank": 6,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "89"
-    },
-    {
-      "rank": 7,
-      "title": "YuE: Scaling Open Foundation Models for Long-Form Music Generation",
-      "url": "https://huggingface.co/papers/2503.08638",
-      "hot": "78"
-    },
-    {
-      "rank": 8,
       "title": "SPEED-Bench: A Unified and Diverse Benchmark for Speculative Decoding",
       "url": "https://huggingface.co/papers/2604.09557",
       "hot": "14"
     },
     {
+      "rank": 4,
+      "title": "SmolDocling: An ultra-compact vision-language model for end-to-end\n  multi-modal document conversion",
+      "url": "https://huggingface.co/papers/2503.11576",
+      "hot": "177"
+    },
+    {
+      "rank": 5,
+      "title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation",
+      "url": "https://huggingface.co/papers/2609.24981",
+      "hot": "50"
+    },
+    {
+      "rank": 6,
+      "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+      "url": "https://huggingface.co/papers/2609.25001",
+      "hot": "130"
+    },
+    {
+      "rank": 7,
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "89"
+    },
+    {
+      "rank": 8,
+      "title": "YuE: Scaling Open Foundation Models for Long-Form Music Generation",
+      "url": "https://huggingface.co/papers/2503.08638",
+      "hot": "78"
+    },
+    {
       "rank": 9,
-      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
-      "url": "https://huggingface.co/papers/2608.23283",
-      "hot": "211"
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "url": "https://huggingface.co/papers/2609.24972",
+      "hot": "202"
     },
     {
       "rank": 10,
