@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-25T15:18:34+00:00",
+  "updated_at": "2026-09-25T19:17:58+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,39 +18,39 @@
     },
     {
       "rank": 3,
-      "title": "现在不是出轨的问题",
-      "url": "https://movie.douban.com/subject/37501131/",
-      "hot": "评分 8.7"
-    },
-    {
-      "rank": 4,
       "title": "奥德赛",
       "url": "https://movie.douban.com/subject/36808876/",
       "hot": "评分 8.6"
     },
     {
+      "rank": 4,
+      "title": "现在不是出轨的问题",
+      "url": "https://movie.douban.com/subject/37501131/",
+      "hot": "评分 8.7"
+    },
+    {
       "rank": 5,
-      "title": "早春晴朗",
-      "url": "https://movie.douban.com/subject/36660844/",
-      "hot": "评分 6.7"
-    },
-    {
-      "rank": 6,
-      "title": "深渊无间",
-      "url": "https://movie.douban.com/subject/36576514/",
-      "hot": "评分 7.2"
-    },
-    {
-      "rank": 7,
       "title": "生化危机：爆发夜",
       "url": "https://movie.douban.com/subject/37068446/",
       "hot": ""
     },
     {
-      "rank": 8,
+      "rank": 6,
+      "title": "早春晴朗",
+      "url": "https://movie.douban.com/subject/36660844/",
+      "hot": "评分 6.7"
+    },
+    {
+      "rank": 7,
       "title": "兰香如故",
       "url": "https://movie.douban.com/subject/36449295/",
       "hot": ""
+    },
+    {
+      "rank": 8,
+      "title": "深渊无间",
+      "url": "https://movie.douban.com/subject/36576514/",
+      "hot": "评分 7.2"
     },
     {
       "rank": 9,

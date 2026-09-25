@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-09-25T15:18:57+00:00",
+  "updated_at": "2026-09-25T19:18:19+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
+      "title": "银狐WinOS伪装魔兽插件，远控木马攻击链分析",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122812",
+      "hot": "近期，我司安全团队监测到一款通过仿冒“魔兽世界新手盒子”官网传播的远控木马。攻击者利用搜索引擎优化与社交平台传播钓鱼链接，诱导用户下载未签名的恶意安装包，实施供应链投毒与“白加黑”DLL侧加载攻击，最终窃取 ..."
+    },
+    {
+      "rank": 7,
       "title": "小蓝鸟 x-client-transaction-id 追溯分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122687",
       "hot": "关键词找到 return e.isTrue(\\&quot;rweb_client_transaction_id_enabled\\&quot;) &amp;&amp; (i.headers[\\&quot;x-client-transaction-id\\&quot;] = await a(t.host, t.path, t.method)),\n\n然后找到了 https://abs.twimg.com/responsive ... emand.s.cb ..."
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "r0re 自动逆向分析工具实战记录：全通看雪 Android CTF，完整使用指南和源码解析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122552",
       "hot": "[md]# r0re 实战记录：全通看雪 Android CTF，附完整使用指南和源码解析\n\n做 Android CTF 时经常碰到同一个问题：前面用 JADX、strings 很快能摸到入口，后面一碰到壳、动态注册 JNI、native 自解密或反调试，就开始 ..."
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "【JS逆向实战】手撕雷速体育API：动态AES签名与魔改Gzip响应解密全解析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2122363",
       "hot": "[md]&gt; **导读**：在爬虫工程师的日常工作中，经常会遇到一些加密手段颇为“讲究”的网站。今天，我们就以雷速体育的移动端 H5 页面为例，深入剖析其接口的加密逻辑。本文将带你完整走通从抓包分析到 Python 脚本实现的全 ..."
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "一个 Android 远控APP的逆向分析-从 AB 包隐藏、动态加载到无障碍远程控制支付流程",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2121592",
       "hot": "[md]样本、目标应用、域名、证书和基础设施信息均已脱敏。文中使用“某远控APP”“某支付客户端”“某金融 APP”作为代称。本文只记录已经从样本结构、反编译代码和测试现象中得到的结论；\n\n## 0x00 写在前面\n\n这次拿到的样本 [下载](https://github.com/goldenfi ..."
-    },
-    {
-      "rank": 10,
-      "title": "某音 JSVMP bogus纯算",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2120914",
-      "hot": "[md]根据代码进行调试可以发现J是vmp的装载器\n\n```\n      function J(t, r, e, n) {\n        return (\n          Z.length ||\n            (function (t) {\n              var r = (function (t) {\n              ..."
     }
   ]
 }

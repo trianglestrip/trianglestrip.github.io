@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-25T15:19:11+00:00",
+  "updated_at": "2026-09-25T19:18:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "灵界 OS 6.0 稳定版 · 三处更新与一个崩溃修复",
+      "url": "https://www.oschina.net/news/502745",
+      "hot": "Fri, 25 Sep 2026 18:44:37 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "五引擎微内核架构与分层解耦的工程实践",
+      "url": "https://www.oschina.net/news/502743",
+      "hot": "Fri, 25 Sep 2026 06:36:22 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Apache 基金会项目 Casbin Gateway 新增 Agent 外发监测，可发现 ZCode 这类整仓上传",
+      "url": "https://www.oschina.net/news/502741",
+      "hot": "Fri, 25 Sep 2026 01:57:37 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "SpringBootBucket 4.1.1 发布，最新 Spring Boot 4.x 全家桶",
+      "url": "https://www.oschina.net/news/502740",
+      "hot": "Thu, 24 Sep 2026 21:46:55 +0800"
+    },
+    {
+      "rank": 5,
       "title": "龙蜥社区SkillHub：Workshop实战、云栖颁奖、推荐系统发布，三箭齐发",
       "url": "https://www.oschina.net/news/502739",
       "hot": "Thu, 24 Sep 2026 18:27:09 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "龙蜥社区SkillHub推荐系统正式发布，首批技能生态奖项揭晓",
       "url": "https://www.oschina.net/news/502738",
       "hot": "Thu, 24 Sep 2026 18:03:02 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "小米公开 MiMo-V3 核心架构 HySparse2：KV 共享升两级、Prefill 少跑一半",
       "url": "https://www.oschina.net/news/502736",
       "hot": "Thu, 24 Sep 2026 16:50:06 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "飞捷科思全面开源Fysiverse-3D：以统一空间推理构建可执行3D世界",
       "url": "https://www.oschina.net/news/502734",
       "hot": "Thu, 24 Sep 2026 16:04:45 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "飞捷科思开源OmniFysics“双子星”：揽24项世界第一",
       "url": "https://www.oschina.net/news/502733",
       "hot": "Thu, 24 Sep 2026 15:56:46 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "全球首个！飞捷科思正式推出面向全模态世界感知和物理状态推理的评测基准FysicsReason",
       "url": "https://www.oschina.net/news/502731",
       "hot": "Thu, 24 Sep 2026 15:49:51 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "浙大要出第二个梁文锋？“超级科学家版DeepSeek”来了",
-      "url": "https://www.oschina.net/news/502730",
-      "hot": "Thu, 24 Sep 2026 15:44:51 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Agentic OS亮相云栖大会，阿里云基础软件加速迈向智能体原生",
-      "url": "https://www.oschina.net/news/502729",
-      "hot": "Thu, 24 Sep 2026 15:33:59 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "调问更新 9.6 ~ 9.24：新增 10 类应用场景、AI 工作台，问卷体验全面优化",
-      "url": "https://www.oschina.net/news/502728",
-      "hot": "Thu, 24 Sep 2026 15:32:38 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "腾讯将关停 QClaw，基于 OpenClaw 的本地 Agent 路线被放弃",
-      "url": "https://www.oschina.net/news/502726",
-      "hot": "Thu, 24 Sep 2026 11:49:22 +0800"
     }
   ]
 }
