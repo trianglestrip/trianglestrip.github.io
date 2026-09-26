@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-26T17:49:35+00:00",
+  "updated_at": "2026-09-26T20:12:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Breaking Up with Google Play: Why Conversations Is Now Free",
-      "url": "https://gultsch.de/posts/breaking-up-with-google-play/",
-      "hot": "490"
+      "title": "PipePipe: NewPipe hard fork implementing SponsorBlock",
+      "url": "https://github.com/InfinityLoop1308/PipePipe",
+      "hot": "210"
     },
     {
       "rank": 2,
-      "title": "PipePipe: NewPipe hard fork implementing SponsorBlock",
-      "url": "https://github.com/InfinityLoop1308/PipePipe",
-      "hot": "110"
+      "title": "Drawgent: Coding agent on a live Excalidraw canvas",
+      "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+      "hot": "62"
     },
     {
       "rank": 3,
-      "title": "Show HN: A Claude Code skill to analyze your chess games",
-      "url": "https://github.com/brumar/chess-postmortem-skills",
-      "hot": "37"
+      "title": "Show HN: Reladraw – A diagram language where you decide where to place things",
+      "url": "https://github.com/reladraw/reladraw",
+      "hot": "39"
     },
     {
       "rank": 4,
-      "title": "Fifteen years later, the Apple Cards origin story",
-      "url": "https://lexontech.org/fifteen-years-later-the-apple-cards-origin-story",
-      "hot": "247"
+      "title": "The Lost Atomic Update on Loongson CPU",
+      "url": "https://jia.je/hardware/2026/09/24/loongson-cpu-erratum-en/",
+      "hot": "70"
     },
     {
       "rank": 5,
-      "title": "The Lost Atomic Update on Loongson CPU",
-      "url": "https://jia.je/hardware/2026/09/24/loongson-cpu-erratum-en/",
-      "hot": "38"
+      "title": "A searchable library of forgotten public-domain film clips from 1915 onward",
+      "url": "https://www.movingimagearchive.com/",
+      "hot": "37"
     },
     {
       "rank": 6,
-      "title": "Make Claude your assistant in excalidraw",
-      "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
-      "hot": "15"
+      "title": "Fifteen years later, the Apple Cards origin story",
+      "url": "https://lexontech.org/fifteen-years-later-the-apple-cards-origin-story",
+      "hot": "290"
     },
     {
       "rank": 7,
-      "title": "Modern Object Pascal Introduction for Programmers – Castle Game Engine",
+      "title": "Modern Object Pascal Introduction for Programmers",
       "url": "https://castle-engine.io/modern_pascal",
-      "hot": "72"
+      "hot": "104"
     },
     {
       "rank": 8,
       "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
       "url": "https://swarmtraces.org/",
-      "hot": "628"
+      "hot": "664"
     },
     {
       "rank": 9,
-      "title": "Reflections on 1,000 Days of Math",
-      "url": "https://gmays.com/reflections-on-1000-days-of-math/",
-      "hot": "43"
+      "title": "We're gonna need a lot more mathematicians",
+      "url": "https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/",
+      "hot": "319"
     },
     {
       "rank": 10,
-      "title": "I'm the Mom in That Viral Giants Clip. Let Me Tell You About My Husband",
-      "url": "https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clip",
-      "hot": "148"
+      "title": "Reflections on 1,000 Days of Math",
+      "url": "https://gmays.com/reflections-on-1000-days-of-math/",
+      "hot": "65"
     }
   ]
 }
