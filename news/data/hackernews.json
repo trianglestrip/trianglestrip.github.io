@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-26T14:23:21+00:00",
+  "updated_at": "2026-09-26T17:49:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Breaking Up with Google Play: Why Conversations Is Now Free",
       "url": "https://gultsch.de/posts/breaking-up-with-google-play/",
-      "hot": "259"
+      "hot": "490"
     },
     {
       "rank": 2,
-      "title": "Understanding the Impact of LLM Watermarking on AI Agent Behavior",
-      "url": "https://www.lasso.security/blog/the-provenance-tax-understanding-the-impact-of-llm-watermarking-on-ai-agent-behavior",
-      "hot": "37"
+      "title": "PipePipe: NewPipe hard fork implementing SponsorBlock",
+      "url": "https://github.com/InfinityLoop1308/PipePipe",
+      "hot": "110"
     },
     {
       "rank": 3,
-      "title": "Fifteen years later, the Apple Cards origin story",
-      "url": "https://lexontech.org/fifteen-years-later-the-apple-cards-origin-story",
-      "hot": "142"
+      "title": "Show HN: A Claude Code skill to analyze your chess games",
+      "url": "https://github.com/brumar/chess-postmortem-skills",
+      "hot": "37"
     },
     {
       "rank": 4,
-      "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
-      "url": "https://swarmtraces.org/",
-      "hot": "563"
+      "title": "Fifteen years later, the Apple Cards origin story",
+      "url": "https://lexontech.org/fifteen-years-later-the-apple-cards-origin-story",
+      "hot": "247"
     },
     {
       "rank": 5,
-      "title": "We're gonna need a lot more mathematicians",
-      "url": "https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/",
-      "hot": "209"
+      "title": "The Lost Atomic Update on Loongson CPU",
+      "url": "https://jia.je/hardware/2026/09/24/loongson-cpu-erratum-en/",
+      "hot": "38"
     },
     {
       "rank": 6,
-      "title": "ASML currently sells no chipmaking machines in Europe, executive says",
-      "url": "https://nltimes.nl/2026/09/22/asml-currently-sells-chipmaking-machines-europe-executive-says",
-      "hot": "78"
+      "title": "Make Claude your assistant in excalidraw",
+      "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+      "hot": "15"
     },
     {
       "rank": 7,
-      "title": "Plan mode is dead",
-      "url": "https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html",
-      "hot": "399"
+      "title": "Modern Object Pascal Introduction for Programmers – Castle Game Engine",
+      "url": "https://castle-engine.io/modern_pascal",
+      "hot": "72"
     },
     {
       "rank": 8,
-      "title": "Modern Object Pascal Introduction for Programmers – Castle Game Engine",
-      "url": "https://castle-engine.io/modern_pascal",
-      "hot": "19"
+      "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
+      "url": "https://swarmtraces.org/",
+      "hot": "628"
     },
     {
       "rank": 9,
-      "title": "Ollaya – Ollama for open-source, Jev-style decision models",
-      "url": "https://ollaya.dev/",
-      "hot": "512"
+      "title": "Reflections on 1,000 Days of Math",
+      "url": "https://gmays.com/reflections-on-1000-days-of-math/",
+      "hot": "43"
     },
     {
       "rank": 10,
-      "title": "Floci: Locally emulating any cloud service",
-      "url": "https://floci.io",
-      "hot": "74"
+      "title": "I'm the Mom in That Viral Giants Clip. Let Me Tell You About My Husband",
+      "url": "https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clip",
+      "hot": "148"
     }
   ]
 }

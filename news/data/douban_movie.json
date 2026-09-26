@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-26T14:22:39+00:00",
+  "updated_at": "2026-09-26T17:49:15+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "深渊无间",
-      "url": "https://movie.douban.com/subject/36576514/",
-      "hot": "评分 7.2"
-    },
-    {
-      "rank": 9,
       "title": "交锋",
       "url": "https://movie.douban.com/subject/36314809/",
       "hot": "评分 7.5"
+    },
+    {
+      "rank": 9,
+      "title": "深渊无间",
+      "url": "https://movie.douban.com/subject/36576514/",
+      "hot": "评分 7.2"
     },
     {
       "rank": 10,
