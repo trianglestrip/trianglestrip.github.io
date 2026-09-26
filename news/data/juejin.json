@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-09-26T00:43:35+00:00",
+  "updated_at": "2026-09-26T05:30:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "OceanBase VS 金仓：同一组复杂 SQL，分布式与集中式架构怎么跑",
-      "url": "https://juejin.cn/post/7688300268688572442",
-      "hot": "1503"
+      "title": "给Codex配上Jev，直接起飞。",
+      "url": "https://juejin.cn/post/7688401277182066738",
+      "hot": "549"
     },
     {
       "rank": 2,
-      "title": "程序员即将隐退，建造者持续闪耀",
-      "url": "https://juejin.cn/post/7688298824981856271",
-      "hot": "1368"
+      "title": "做了近两年的Agent开发，其实真正要学的就是这五件事",
+      "url": "https://juejin.cn/post/7688159506154209321",
+      "hot": "477"
     },
     {
       "rank": 3,
-      "title": "最近全网爆火的 Jev 到底是什么？适合干什么、怎么用，一篇讲透！",
-      "url": "https://juejin.cn/post/7688238990706016283",
-      "hot": "882"
-    },
-    {
-      "rank": 4,
-      "title": "一个人 + AI 做的小程序，一个半月把服务器钱赚回来一半了",
-      "url": "https://juejin.cn/post/7688300268687130650",
-      "hot": "567"
-    },
-    {
-      "rank": 5,
-      "title": "给Codex配上Jev，直接起飞。",
-      "url": "https://juejin.cn/post/7688401277182066738",
-      "hot": "468"
-    },
-    {
-      "rank": 6,
-      "title": "做了近两年的Agent开发，其实真正要学的就是这五件事",
-      "url": "https://juejin.cn/post/7688159506154209321",
+      "title": "我把 Cursor 接到了蓝湖上，设计师再也不用追着我问\"还原了吗\"",
+      "url": "https://juejin.cn/post/7688644921475924010",
       "hot": "459"
     },
     {
+      "rank": 4,
+      "title": "AI 知识库 WeKnora（腾讯微信团队出品）",
+      "url": "https://juejin.cn/post/7688530195554140194",
+      "hot": "369"
+    },
+    {
+      "rank": 5,
+      "title": "ZCode 开源了来看看这是个什么东西",
+      "url": "https://juejin.cn/post/7687855879102890036",
+      "hot": "360"
+    },
+    {
+      "rank": 6,
+      "title": "AndroidX 新增 Security State ，支持可编程的系统安全状态查询",
+      "url": "https://juejin.cn/post/7687807835842248710",
+      "hot": "360"
+    },
+    {
       "rank": 7,
-      "title": "我把 Cursor 接到了蓝湖上，设计师再也不用追着我问\"还原了吗\"",
-      "url": "https://juejin.cn/post/7688644921475924010",
-      "hot": "432"
+      "title": "2026年HTML迎来重磅进化：原生3D、可定制Select、声明式交互，前端开发范式正在被改写",
+      "url": "https://juejin.cn/post/7687902696659894314",
+      "hot": "315"
     },
     {
       "rank": 8,
-      "title": "AI 知识库 WeKnora（腾讯微信团队出品）",
-      "url": "https://juejin.cn/post/7688530195554140194",
-      "hot": "351"
+      "title": "同样叫 Harness，DeepSeek Harness 和 Pi 根本不在同一层",
+      "url": "https://juejin.cn/post/7688805244534325263",
+      "hot": "279"
     },
     {
       "rank": 9,
-      "title": "ZCode 开源了来看看这是个什么东西",
-      "url": "https://juejin.cn/post/7687855879102890036",
-      "hot": "351"
+      "title": "轻松掌握 LangGraph 的状态与节点",
+      "url": "https://juejin.cn/post/7688270826491658266",
+      "hot": "261"
     },
     {
       "rank": 10,
-      "title": "AndroidX 新增 Security State ，支持可编程的系统安全状态查询",
-      "url": "https://juejin.cn/post/7687807835842248710",
-      "hot": "351"
+      "title": "5 次优化让首屏快 3.6 秒，只有 1 次是改代码",
+      "url": "https://juejin.cn/post/7688212417864024091",
+      "hot": "261"
     }
   ]
 }
