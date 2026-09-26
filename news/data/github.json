@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-09-26T05:30:13+00:00",
+  "updated_at": "2026-09-26T14:23:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[TypeScript] paperclipai/paperclip",
       "url": "https://github.com/paperclipai/paperclip",
-      "hot": "85,323"
+      "hot": "86,213"
     },
     {
       "rank": 2,
-      "title": "[Python] anthropics/claude-plugins-official",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "hot": "36,976"
+      "title": "[Python] vectorize-io/hindsight",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "hot": "30,922"
     },
     {
       "rank": 3,
-      "title": "[Python] vectorize-io/hindsight",
-      "url": "https://github.com/vectorize-io/hindsight",
-      "hot": "30,091"
+      "title": "[Python] NVIDIA/Model-Optimizer",
+      "url": "https://github.com/NVIDIA/Model-Optimizer",
+      "hot": "4,632"
     },
     {
       "rank": 4,
-      "title": "[Shell] obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "hot": "291,724"
+      "title": "[TypeScript] dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "hot": "19,006"
     },
     {
       "rank": 5,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "269,819"
+      "title": "[C++] tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "hot": "200,366"
     },
     {
       "rank": 6,
-      "title": "[TypeScript] dream-num/univer",
-      "url": "https://github.com/dream-num/univer",
-      "hot": "18,774"
+      "title": "[Python] rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "hot": "58,006"
     },
     {
       "rank": 7,
-      "title": "[Python] anthropics/skills",
-      "url": "https://github.com/anthropics/skills",
-      "hot": "178,391"
+      "title": "[Go] openbao/openbao",
+      "url": "https://github.com/openbao/openbao",
+      "hot": "7,905"
     },
     {
       "rank": 8,
-      "title": "[JavaScript] androoAGI/starnet",
-      "url": "https://github.com/androoAGI/starnet",
-      "hot": "533"
+      "title": "[Rust] block/buzz",
+      "url": "https://github.com/block/buzz",
+      "hot": "34,739"
     },
     {
       "rank": 9,
-      "title": "[Python] derv82/wifit3",
-      "url": "https://github.com/derv82/wifit3",
-      "hot": "1,003"
+      "title": "[TypeScript] microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "hot": "192,987"
     },
     {
       "rank": 10,
-      "title": "kelseyhightower/kubernetes-the-hard-way",
-      "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
-      "hot": "50,152"
+      "title": "[PowerShell] zhaoxuya520/reverse-skill",
+      "url": "https://github.com/zhaoxuya520/reverse-skill",
+      "hot": "37,791"
     }
   ]
 }

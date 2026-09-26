@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-26T10:06:20+00:00",
+  "updated_at": "2026-09-26T14:23:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Figma 之外还有什么选择？用 Penpot 搭一套可自托管、可接 AI 的设计工作台",
       "url": "https://blog.csdn.net/AIRoses/article/details/166644124",
-      "hot": "22702"
+      "hot": "18233"
     },
     {
       "rank": 2,
       "title": "Meta Muse 爆火：12 天下载量反超 ChatGPT，个人 AI 智能体完整使用指南",
       "url": "https://blog.csdn.net/aidoudoulong/article/details/166578884",
-      "hot": "17870"
+      "hot": "17903"
     },
     {
       "rank": 3,
       "title": "AI 浏览器会取代 App，还是只是更聪明的 RPA？",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/166586129",
-      "hot": "12363"
+      "hot": "16423"
     },
     {
       "rank": 4,
-      "title": "深度学习实战-基于EfficientNet的宠物面部表情图像分类识别模型",
-      "url": "https://blog.csdn.net/m0_64336780/article/details/163047546",
-      "hot": "12047"
+      "title": "MySQL表约束",
+      "url": "https://blog.csdn.net/oooooooooooohd/article/details/166489341",
+      "hot": "9044"
     },
     {
       "rank": 5,
       "title": "Step 5 Preview + StepAudio 3，我做了一个可以直接对话的 AI 深夜电台",
       "url": "https://blog.csdn.net/sjw890821sjw/article/details/166494654",
-      "hot": "9586"
+      "hot": "8810"
     },
     {
       "rank": 6,
       "title": "用Seed-2.1-pro做一个研途择校平台：从官方表格、多模态读图到可运行产品",
       "url": "https://blog.csdn.net/2401_87629362/article/details/166597100",
-      "hot": "8669"
+      "hot": "7541"
     },
     {
       "rank": 7,
-      "title": "群晖部署 VERT：浏览器本地转换图片、音频和文档，再配置固定公网访问",
-      "url": "https://blog.csdn.net/Pocker_Spades_A/article/details/166644189",
-      "hot": "8163"
+      "title": "日志太多还在 grep？用 ELK + Kibana 搭一套可搜索、可视化、可远程访问的分析平台(1)",
+      "url": "https://blog.csdn.net/weixin_62765017/article/details/166597281",
+      "hot": "7265"
     },
     {
       "rank": 8,
-      "title": "WorkBuddy + Blender 5.2 参数化建模实战：从“圆形八角塔“到 15 万面可打印 STL",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/166488516",
-      "hot": "6877"
+      "title": "Meta｜【开源一页纸｜Meta‑RocksDB】高性能持久化KV存储引擎静态工程深度审阅",
+      "url": "https://blog.csdn.net/TunerT_TQ/article/details/166578360",
+      "hot": "6940"
     },
     {
       "rank": 9,
-      "title": "嵌入式软件静态测试（十一）——MISRA C:2012 vs MISRA C++:2023：嵌入式静态测试必须遵守的规则解读",
-      "url": "https://blog.csdn.net/qq_15410539/article/details/166493911",
-      "hot": "6727"
+      "title": "2026 年我的 AI 工具清单 + 一个远程思想",
+      "url": "https://blog.csdn.net/2402_86350387/article/details/166586573",
+      "hot": "6465"
     },
     {
       "rank": 10,
-      "title": "2026 年我的 AI 工具清单 + 一个远程思想",
-      "url": "https://blog.csdn.net/2402_86350387/article/details/166586573",
-      "hot": "6344"
+      "title": "群晖部署 VERT：浏览器本地转换图片、音频和文档，再配置固定公网访问",
+      "url": "https://blog.csdn.net/Pocker_Spades_A/article/details/166644189",
+      "hot": "6100"
     }
   ]
 }

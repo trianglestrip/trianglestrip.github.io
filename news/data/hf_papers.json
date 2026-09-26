@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-26T05:30:47+00:00",
+  "updated_at": "2026-09-26T14:23:42+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
-      "url": "https://huggingface.co/papers/2609.24984",
-      "hot": "150"
-    },
-    {
-      "rank": 3,
       "title": "SPEED-Bench: A Unified and Diverse Benchmark for Speculative Decoding",
       "url": "https://huggingface.co/papers/2604.09557",
       "hot": "14"
+    },
+    {
+      "rank": 3,
+      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
+      "url": "https://huggingface.co/papers/2609.24984",
+      "hot": "152"
     },
     {
       "rank": 4,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation",
       "url": "https://huggingface.co/papers/2609.24981",
-      "hot": "55"
+      "hot": "56"
     },
     {
       "rank": 6,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
-      "url": "https://huggingface.co/papers/2609.20519",
-      "hot": "131"
-    },
-    {
-      "rank": 10,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "73"
+    },
+    {
+      "rank": 10,
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "url": "https://huggingface.co/papers/2310.10688",
+      "hot": "45"
     }
   ]
 }
