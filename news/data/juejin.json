@@ -1,7 +1,7 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-09-27T19:16:03+00:00",
+  "updated_at": "2026-09-27T22:12:50+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,26 +18,26 @@
     },
     {
       "rank": 3,
+      "title": "为什么越来越多人用 OnlyOffice？",
+      "url": "https://juejin.cn/post/7689599510955278336",
+      "hot": "225"
+    },
+    {
+      "rank": 4,
       "title": "VibeCoding 一套 Admin 系统，五种技术栈实现",
       "url": "https://juejin.cn/post/7688739949714997288",
       "hot": "216"
     },
     {
-      "rank": 4,
-      "title": "为什么越来越多人用 OnlyOffice？",
-      "url": "https://juejin.cn/post/7689599510955278336",
-      "hot": "198"
-    },
-    {
       "rank": 5,
-      "title": "用 AI 迁项目有多爽？我把 Webpack 迁 Vite 的全过程记下来了",
-      "url": "https://juejin.cn/post/7689096640691683343",
-      "hot": "171"
+      "title": "多智能体系统的通信风暴与死锁治理：生产级降级与容灾方案",
+      "url": "https://juejin.cn/post/7688585710283014184",
+      "hot": "180"
     },
     {
       "rank": 6,
-      "title": "多智能体系统的通信风暴与死锁治理：生产级降级与容灾方案",
-      "url": "https://juejin.cn/post/7688585710283014184",
+      "title": "用 AI 迁项目有多爽？我把 Webpack 迁 Vite 的全过程记下来了",
+      "url": "https://juejin.cn/post/7689096640691683343",
       "hot": "171"
     },
     {
@@ -50,19 +50,19 @@
       "rank": 8,
       "title": "管理后台数据国际化：不建翻译表、一列 JSON、后端零改动",
       "url": "https://juejin.cn/post/7688579804614361138",
-      "hot": "126"
+      "hot": "135"
     },
     {
       "rank": 9,
       "title": "DHH 震撼发声：手写代码时代落幕，Agent 正重塑软件工程",
       "url": "https://juejin.cn/post/7689061402817265710",
-      "hot": "108"
+      "hot": "117"
     },
     {
       "rank": 10,
       "title": "耗时两周从零搭建私有化企业 RAG 知识库，完整架构与踩坑总结",
       "url": "https://juejin.cn/post/7689030315844419630",
-      "hot": "108"
+      "hot": "117"
     }
   ]
 }

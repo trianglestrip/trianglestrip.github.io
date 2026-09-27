@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-27T19:16:11+00:00",
+  "updated_at": "2026-09-27T22:13:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Ember-1",
-      "url": "https://fireworks.ai/blog/ember-1",
-      "hot": "117"
+      "title": "When did Google get so weird?",
+      "url": "https://sancho.bearblog.dev/google-weird/",
+      "hot": "372"
     },
     {
       "rank": 2,
-      "title": "In an $80 motel room, a discovery to shed light on the origins of life",
-      "url": "https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html",
-      "hot": "138"
+      "title": "Ember-1",
+      "url": "https://fireworks.ai/blog/ember-1",
+      "hot": "263"
     },
     {
       "rank": 3,
-      "title": "Writing Efficient C++ Code (2013)",
-      "url": "https://asawicki.info/articles/writing_efficient_cpp_code.php",
-      "hot": "110"
+      "title": "Lunar Terminator Paradox",
+      "url": "https://notes.secretsauce.net/notes/2026/09/27_lunar-terminator-paradox.html",
+      "hot": "19"
     },
     {
       "rank": 4,
-      "title": "Replacing the old battery on rechargeable bike lights",
-      "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/",
-      "hot": "100"
+      "title": "Alan Kay's answer to \"Did the ENIAC have a BIOS\"?",
+      "url": "https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11",
+      "hot": "44"
     },
     {
       "rank": 5,
-      "title": "Show HN: TinyAIArena watch AI agents battle it out",
-      "url": "https://tinyaiarena.com/",
-      "hot": "57"
+      "title": "Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi",
+      "url": "https://loficities.com/",
+      "hot": "107"
     },
     {
       "rank": 6,
-      "title": "The Normalization of Inexplicable Failures",
-      "url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
-      "hot": "186"
+      "title": "The state of SIMD in Rust in 2026",
+      "url": "https://shnatsel.github.io/state-of-simd-rust-2026/",
+      "hot": "55"
     },
     {
       "rank": 7,
-      "title": "SNL Weekend Update: Anthropic CEO Dario Amodei on A.I.'S Threat to Humanity [video]",
-      "url": "https://www.youtube.com/watch?v=-Nvne3LzBls",
-      "hot": "132"
+      "title": "Imp is a full port of DSPy to the BEAM",
+      "url": "https://github.com/deepfates/imp",
+      "hot": "29"
     },
     {
       "rank": 8,
-      "title": "Oral history of John Chowning, inventor of FM synthesis [video]",
-      "url": "https://www.youtube.com/watch?v=e1Xn3030IvM",
-      "hot": "4"
+      "title": "In an $80 motel room, a discovery to shed light on the origins of life",
+      "url": "https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html",
+      "hot": "181"
     },
     {
       "rank": 9,
-      "title": "On caring for user data: NeoVim caused Vim undo files to be deleted",
-      "url": "https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/",
-      "hot": "292"
+      "title": "Don't couple your Go code to GitHub",
+      "url": "https://iain.rocks/blog/dont-couple-your-go-code-to-github",
+      "hot": "84"
     },
     {
       "rank": 10,
-      "title": "Fragment of oldest known peace treaty found in Turkey",
-      "url": "https://www.livescience.com/archaeology/ancient-egyptians/we-have-found-traces-of-peace-thousands-of-years-old-fragment-of-worlds-oldest-known-peace-treaty-found-in-turkey",
-      "hot": "20"
+      "title": "Oral history of John Chowning, inventor of FM synthesis [video]",
+      "url": "https://www.youtube.com/watch?v=e1Xn3030IvM",
+      "hot": "32"
     }
   ]
 }
