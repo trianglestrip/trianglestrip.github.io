@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-27T15:38:13+00:00",
+  "updated_at": "2026-09-27T19:16:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AI 浏览器会取代 App，还是只是更聪明的 RPA？",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/166586129",
-      "hot": "29784"
+      "hot": "36249"
     },
     {
       "rank": 2,
       "title": "Windows 部署 MiGPT GUI：小爱音箱接 DeepSeek、豆包 TTS，再配置远程管理",
       "url": "https://blog.csdn.net/qq_54796785/article/details/166644383",
-      "hot": "25429"
+      "hot": "26718"
     },
     {
       "rank": 3,
       "title": "Figma 之外还有什么选择？用 Penpot 搭一套可自托管、可接 AI 的设计工作台",
       "url": "https://blog.csdn.net/AIRoses/article/details/166644124",
-      "hot": "12135"
+      "hot": "14318"
     },
     {
       "rank": 4,
-      "title": "群晖部署 VERT：浏览器本地转换图片、音频和文档，再配置固定公网访问",
-      "url": "https://blog.csdn.net/Pocker_Spades_A/article/details/166644189",
-      "hot": "6619"
+      "title": "【共创稿事节】鸿蒙HarmonyOS7.0端侧AI新能力-图像超分 · 画质增强：基于 Core Vision Kit 的端侧 4 倍高清重建",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/166603282",
+      "hot": "6565"
     },
     {
       "rank": 5,
-      "title": "2026 工业数据库架构选型：时序库 + 实时计算一体化方案对比",
-      "url": "https://blog.csdn.net/user340/article/details/166601296",
-      "hot": "5925"
+      "title": "群晖部署 VERT：浏览器本地转换图片、音频和文档，再配置固定公网访问",
+      "url": "https://blog.csdn.net/Pocker_Spades_A/article/details/166644189",
+      "hot": "5563"
     },
     {
       "rank": 6,
-      "title": "【共创稿事节】鸿蒙HarmonyOS7.0端侧AI新能力-图像超分 · 画质增强：基于 Core Vision Kit 的端侧 4 倍高清重建",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/166603282",
-      "hot": "4545"
+      "title": "[AI工程] Spring AI 第十三篇：给 AI 应用装上仪表盘",
+      "url": "https://blog.csdn.net/YangCheney/article/details/166001944",
+      "hot": "5368"
     },
     {
       "rank": 7,
-      "title": "【从零写一个CAD 01】从一个空工程到画出第一条线：坐标系统是地基",
-      "url": "https://blog.csdn.net/2302_80177460/article/details/166601210",
-      "hot": "4204"
+      "title": "Java实现AI框架：EasyAi、EasyAi-Face、SayOrder、EasyAi-Plus",
+      "url": "https://blog.csdn.net/lonelymanontheway/article/details/166643324",
+      "hot": "4464"
     },
     {
       "rank": 8,
       "title": "Video-to-BT——让VLM照着人类示范视频自动构建行为树：必要时人工干预，以解决动态环境下的长时程装配任务",
       "url": "https://blog.csdn.net/v_JULY_v/article/details/166642527",
-      "hot": "3898"
+      "hot": "3710"
     },
     {
       "rank": 9,
-      "title": "Meta｜【开源一页纸｜Meta‑RocksDB】高性能持久化KV存储引擎静态工程深度审阅",
-      "url": "https://blog.csdn.net/TunerT_TQ/article/details/166578360",
-      "hot": "3701"
+      "title": "Prometheus 自定义指标实战：从 Python Exporter 到业务告警，再扩展到公网抓取",
+      "url": "https://blog.csdn.net/2301_80840905/article/details/166644530",
+      "hot": "3279"
     },
     {
       "rank": 10,
-      "title": "【BlueZ】 与内核 hci_dev 的交互：适配器设备的内核态管理",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/166013059",
-      "hot": "3568"
+      "title": "大模型技术全景(十)：多智能体协作的七种模式",
+      "url": "https://blog.csdn.net/2502_94387000/article/details/166642729",
+      "hot": "3263"
     }
   ]
 }
