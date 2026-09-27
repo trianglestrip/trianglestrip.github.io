@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-27T05:57:53+00:00",
+  "updated_at": "2026-09-27T11:07:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Go Concurrency Distilled",
-      "url": "https://antonz.org/go-concurrency-distilled/",
-      "hot": "138"
+      "title": "\"As a Language Model\": Chat Template Switches LLM Self-Referential Voice",
+      "url": "https://arxiv.org/abs/2609.25021",
+      "hot": "21"
     },
     {
       "rank": 2,
-      "title": "OpenAI agents tried to bruteforce a UN website's API fields",
-      "url": "https://swarmcha.se/posts/openai-unctad",
-      "hot": "42"
+      "title": "Flip Fluid on Flip Dots",
+      "url": "https://mitxela.com/projects/flipflip",
+      "hot": "107"
     },
     {
       "rank": 3,
-      "title": "PipePipe: NewPipe hard fork implementing SponsorBlock",
-      "url": "https://github.com/InfinityLoop1308/PipePipe",
-      "hot": "370"
+      "title": "Does Georgism work? Five years later",
+      "url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
+      "hot": "353"
     },
     {
       "rank": 4,
-      "title": "DeepSeek Elastic Compute (DSec)",
-      "url": "https://arxiv.org/abs/2609.22978",
-      "hot": "211"
+      "title": "Meta Blocks President Lula's Facebook Page, Campaign Ads 2 Weeks from Election",
+      "url": "https://www.reddit.com/r/worldnews/comments/1wr3id3/meta_blocks_president_lulas_facebook_page_and/",
+      "hot": "184"
     },
     {
       "rank": 5,
-      "title": "Show HN: Reladraw – A diagram language where you decide where to place things",
-      "url": "https://github.com/reladraw/reladraw",
-      "hot": "249"
+      "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
+      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
+      "hot": "239"
     },
     {
       "rank": 6,
-      "title": "If we do not stop to help each other, what do we become?",
-      "url": "https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become/",
-      "hot": "134"
+      "title": "Go Concurrency Distilled",
+      "url": "https://antonz.org/go-concurrency-distilled/",
+      "hot": "232"
     },
     {
       "rank": 7,
-      "title": "What is the size of Yemen? (2024)",
-      "url": "https://theborys.substack.com/p/what-is-the-size-of-yemen",
-      "hot": "88"
+      "title": "PipePipe: NewPipe hard fork implementing SponsorBlock",
+      "url": "https://github.com/InfinityLoop1308/PipePipe",
+      "hot": "427"
     },
     {
       "rank": 8,
-      "title": "A searchable library of forgotten public-domain film clips from 1915 onward",
-      "url": "https://www.movingimagearchive.com/",
-      "hot": "143"
+      "title": "Show HN: LightCloud – A cloud console organised like file system",
+      "url": "https://www.light-cloud.com/",
+      "hot": "4"
     },
     {
       "rank": 9,
-      "title": "Does Georgism work? Five years later",
-      "url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
-      "hot": "235"
+      "title": "DeepSeek Elastic Compute (DSec)",
+      "url": "https://arxiv.org/abs/2609.22978",
+      "hot": "255"
     },
     {
       "rank": 10,
-      "title": "Reverse-engineering the Intel 8087's tangent algorithm: more than CORDIC",
-      "url": "https://www.righto.com/2026/09/8087-tangent-cordic.html",
-      "hot": "65"
+      "title": "Improving site performance by shipping more CSS",
+      "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
+      "hot": "52"
     }
   ]
 }
