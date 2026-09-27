@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-27T11:07:01+00:00",
+  "updated_at": "2026-09-27T15:38:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "\"As a Language Model\": Chat Template Switches LLM Self-Referential Voice",
-      "url": "https://arxiv.org/abs/2609.25021",
-      "hot": "21"
+      "title": "\"They had no concept of a duty of care to their users.\"",
+      "url": "https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/",
+      "hot": "86"
     },
     {
       "rank": 2,
-      "title": "Flip Fluid on Flip Dots",
-      "url": "https://mitxela.com/projects/flipflip",
-      "hot": "107"
+      "title": "In an $80 Motel Room, a Discovery to Shed Light on the Origins of Life",
+      "url": "https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html",
+      "hot": "43"
     },
     {
       "rank": 3,
-      "title": "Does Georgism work? Five years later",
-      "url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
-      "hot": "353"
+      "title": "Replacing the old battery on rechargeable bike lights",
+      "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/",
+      "hot": "45"
     },
     {
       "rank": 4,
-      "title": "Meta Blocks President Lula's Facebook Page, Campaign Ads 2 Weeks from Election",
-      "url": "https://www.reddit.com/r/worldnews/comments/1wr3id3/meta_blocks_president_lulas_facebook_page_and/",
-      "hot": "184"
+      "title": "Font where each token is equal-width",
+      "url": "https://twitter.com/amplifiedamp/status/2103535129503383700",
+      "hot": "6"
     },
     {
       "rank": 5,
-      "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
-      "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
-      "hot": "239"
+      "title": "10 Tells of a Slop UI",
+      "url": "https://hereticpleb.vercel.app/blog/10-tells-of-slop",
+      "hot": "116"
     },
     {
       "rank": 6,
-      "title": "Go Concurrency Distilled",
-      "url": "https://antonz.org/go-concurrency-distilled/",
-      "hot": "232"
+      "title": "Flip Fluid on Flip Dots",
+      "url": "https://mitxela.com/projects/flipflip",
+      "hot": "250"
     },
     {
       "rank": 7,
-      "title": "PipePipe: NewPipe hard fork implementing SponsorBlock",
-      "url": "https://github.com/InfinityLoop1308/PipePipe",
-      "hot": "427"
+      "title": "Writing Efficient C++ Code",
+      "url": "https://asawicki.info/articles/writing_efficient_cpp_code.php",
+      "hot": "12"
     },
     {
       "rank": 8,
-      "title": "Show HN: LightCloud – A cloud console organised like file system",
-      "url": "https://www.light-cloud.com/",
-      "hot": "4"
+      "title": "Fakecloud: Local AWS cloud emulator for integration tests",
+      "url": "https://fakecloud.dev/",
+      "hot": "35"
     },
     {
       "rank": 9,
-      "title": "DeepSeek Elastic Compute (DSec)",
-      "url": "https://arxiv.org/abs/2609.22978",
-      "hot": "255"
+      "title": "Ten Lines of Code That Changed My World",
+      "url": "https://pixelambacht.nl/2026/ten-lines-of-code/",
+      "hot": "10"
     },
     {
       "rank": 10,
-      "title": "Improving site performance by shipping more CSS",
-      "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
-      "hot": "52"
+      "title": "Does Georgism work? Five years later",
+      "url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
+      "hot": "451"
     }
   ]
 }

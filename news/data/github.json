@@ -1,68 +1,62 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-09-27T05:57:40+00:00",
+  "updated_at": "2026-09-27T15:38:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[TypeScript] paperclipai/paperclip",
       "url": "https://github.com/paperclipai/paperclip",
-      "hot": "87,809"
+      "hot": "88,909"
     },
     {
       "rank": 2,
       "title": "[Python] vectorize-io/hindsight",
       "url": "https://github.com/vectorize-io/hindsight",
-      "hot": "33,415"
+      "hot": "35,952"
     },
     {
       "rank": 3,
-      "title": "[Python] NVIDIA/Model-Optimizer",
-      "url": "https://github.com/NVIDIA/Model-Optimizer",
-      "hot": "4,812"
+      "title": "[Python] debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "hot": "39,073"
     },
     {
       "rank": 4,
-      "title": "[TypeScript] dream-num/univer",
-      "url": "https://github.com/dream-num/univer",
-      "hot": "19,677"
+      "title": "[Python] rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "hot": "58,922"
     },
     {
       "rank": 5,
-      "title": "[C++] tensorflow/tensorflow",
-      "url": "https://github.com/tensorflow/tensorflow",
-      "hot": "200,493"
+      "title": "[Shell] InfinityLoop1308/PipePipe",
+      "url": "https://github.com/InfinityLoop1308/PipePipe",
+      "hot": "6,443"
     },
     {
       "rank": 6,
-      "title": "[Python] rohitg00/ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "hot": "58,517"
+      "title": "[TypeScript] vercel-labs/scriptc",
+      "url": "https://github.com/vercel-labs/scriptc",
+      "hot": "5,272"
     },
     {
       "rank": 7,
-      "title": "[Go] openbao/openbao",
-      "url": "https://github.com/openbao/openbao",
-      "hot": "8,050"
+      "title": "[TypeScript] mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "hot": "713"
     },
     {
       "rank": 8,
-      "title": "[Rust] block/buzz",
-      "url": "https://github.com/block/buzz",
-      "hot": "34,876"
+      "title": "[TypeScript] dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "hot": "19,972"
     },
     {
       "rank": 9,
-      "title": "[TypeScript] microsoft/vscode",
-      "url": "https://github.com/microsoft/vscode",
-      "hot": "193,103"
-    },
-    {
-      "rank": 10,
-      "title": "[PowerShell] zhaoxuya520/reverse-skill",
-      "url": "https://github.com/zhaoxuya520/reverse-skill",
-      "hot": "38,110"
+      "title": "[C] willfaust/Madeira",
+      "url": "https://github.com/willfaust/Madeira",
+      "hot": "727"
     }
   ]
 }

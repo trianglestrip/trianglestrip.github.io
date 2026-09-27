@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-27T05:58:10+00:00",
+  "updated_at": "2026-09-27T15:38:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "3932"
+      "hot": "4028"
     },
     {
       "rank": 2,
       "title": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "hot": "2414"
+      "hot": "2460"
     },
     {
       "rank": 3,
       "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "1965"
+      "hot": "2030"
     },
     {
       "rank": 4,
       "title": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-      "hot": "1729"
+      "hot": "1774"
     },
     {
       "rank": 5,
-      "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "hot": "2147"
+      "title": "Edge0/Audio8-ASR-Infinite",
+      "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
+      "hot": "970"
     },
     {
       "rank": 6,
-      "title": "Edge0/Audio8-ASR-Infinite",
-      "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
-      "hot": "845"
+      "title": "Altworld/Hemmingway-1",
+      "url": "https://huggingface.co/Altworld/Hemmingway-1",
+      "hot": "726"
     },
     {
       "rank": 7,
-      "title": "Comfy-Org/Qwen-Image-2.1",
-      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
-      "hot": "785"
+      "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "hot": "2172"
     },
     {
       "rank": 8,
-      "title": "Altworld/Hemmingway-1",
-      "url": "https://huggingface.co/Altworld/Hemmingway-1",
-      "hot": "713"
+      "title": "Comfy-Org/Qwen-Image-2.1",
+      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
+      "hot": "795"
     },
     {
       "rank": 9,
       "title": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
       "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
-      "hot": "530"
+      "hot": "545"
     },
     {
       "rank": 10,
       "title": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
       "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
-      "hot": "501"
+      "hot": "518"
     }
   ]
 }
