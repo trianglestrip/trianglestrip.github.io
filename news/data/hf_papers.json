@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-09-28T05:54:24+00:00",
+  "updated_at": "2026-09-28T12:04:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "SPEED-Bench: A Unified and Diverse Benchmark for Speculative Decoding",
       "url": "https://huggingface.co/papers/2604.09557",
-      "hot": "15"
+      "hot": "16"
     },
     {
       "rank": 2,
@@ -24,39 +24,39 @@
     },
     {
       "rank": 4,
-      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
-      "url": "https://huggingface.co/papers/2609.24984",
-      "hot": "155"
-    },
-    {
-      "rank": 5,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "89"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "73"
     },
     {
+      "rank": 6,
+      "title": "YuE: Scaling Open Foundation Models for Long-Form Music Generation",
+      "url": "https://huggingface.co/papers/2503.08638",
+      "hot": "78"
+    },
+    {
       "rank": 7,
+      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
+      "url": "https://huggingface.co/papers/2609.24984",
+      "hot": "156"
+    },
+    {
+      "rank": 8,
       "title": "A decoder-only foundation model for time-series forecasting",
       "url": "https://huggingface.co/papers/2310.10688",
       "hot": "45"
     },
     {
-      "rank": 8,
-      "title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation",
-      "url": "https://huggingface.co/papers/2609.24981",
-      "hot": "69"
-    },
-    {
       "rank": 9,
-      "title": "YuE: Scaling Open Foundation Models for Long-Form Music Generation",
-      "url": "https://huggingface.co/papers/2503.08638",
-      "hot": "78"
+      "title": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness",
+      "url": "https://huggingface.co/papers/2609.08183",
+      "hot": "324"
     },
     {
       "rank": 10,

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-28T05:54:10+00:00",
+  "updated_at": "2026-09-28T12:03:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "OpenAI 暂停最新模型训练，称 Agent 曾尝试黑进教育部网站",
+      "url": "https://www.oschina.net/news/502773",
+      "hot": "Mon, 28 Sep 2026 17:58:50 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Strands 开源组装好的 Agent harness，同模型下 token 省 28%",
+      "url": "https://www.oschina.net/news/502772/strands-harness",
+      "hot": "Mon, 28 Sep 2026 16:35:48 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "AIGCPanel v2.5.0 支持豆包语音音色，数字人直播音色模板管理",
+      "url": "https://www.oschina.net/news/502770",
+      "hot": "Mon, 28 Sep 2026 15:26:11 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "QuotaPanel v0.1.0 轻量本地 AI 额度看板，聚合 15 种订阅与 API 余额",
+      "url": "https://www.oschina.net/news/502769",
+      "hot": "Mon, 28 Sep 2026 15:25:33 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "DataTalk Studio 开源：用对话完成报表开发的 AI-native BI 工作区",
+      "url": "https://www.oschina.net/news/502768",
+      "hot": "Mon, 28 Sep 2026 15:04:27 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "C++ Web框架Paozhu v1.17.0发布，添加MQTT，网络支付",
+      "url": "https://www.oschina.net/news/502767",
+      "hot": "Mon, 28 Sep 2026 14:50:18 +0800"
+    },
+    {
+      "rank": 7,
       "title": "开源 AI 终端 uniTerm v1.9.5 发布: 工作区管理全面升级、终端图片显示、SFTP 提速等 50 余项更新",
       "url": "https://www.oschina.net/news/502766",
       "hot": "Mon, 28 Sep 2026 12:54:43 +0800"
     },
     {
-      "rank": 2,
-      "title": "GitHub 花三年把官网从 CSS-in-JS 搬到 CSS Modules，网站性格显著提升",
+      "rank": 8,
+      "title": "GitHub 花三年把官网从 CSS-in-JS 搬到 CSS Modules，网站性能显著提升",
       "url": "https://www.oschina.net/news/502761/github-improving-site-performance-by-shipping-more-css",
       "hot": "Mon, 28 Sep 2026 11:49:22 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "KnowForge 2026.0.6 发布：会员、支付、付费内容与 AI 知识服务全面上线",
       "url": "https://www.oschina.net/news/502760",
       "hot": "Mon, 28 Sep 2026 10:55:16 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "ShopXO 免费开源商城系统 v6.9.2 版本已发布",
       "url": "https://www.oschina.net/news/502759",
       "hot": "Mon, 28 Sep 2026 10:32:51 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "gtk-zlang v0.8.0.0发布，基于zlang编程语言的GTK封装的跨平台图形窗口应用开发库",
-      "url": "https://www.oschina.net/news/502758",
-      "hot": "Mon, 28 Sep 2026 10:27:56 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "zlang v0.12.8.0 发布，支持中文编程、支持Web开发/桌面应用开发的国产全自研编程语言",
-      "url": "https://www.oschina.net/news/502757",
-      "hot": "Mon, 28 Sep 2026 10:21:41 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "MrDoc v1.1.1 发布，全平台多终端的私有部署AI知识库系统",
-      "url": "https://www.oschina.net/news/502756",
-      "hot": "Mon, 28 Sep 2026 09:30:45 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "灵界 OS 6.0 稳定版 · 三处更新与一个崩溃修复",
-      "url": "https://www.oschina.net/news/502745",
-      "hot": "Fri, 25 Sep 2026 18:44:37 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "五引擎微内核架构与分层解耦的工程实践",
-      "url": "https://www.oschina.net/news/502743",
-      "hot": "Fri, 25 Sep 2026 06:36:22 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Apache 基金会项目 Casbin Gateway 新增 Agent 外发监测，可发现 ZCode 这类整仓上传",
-      "url": "https://www.oschina.net/news/502741",
-      "hot": "Fri, 25 Sep 2026 01:57:37 +0800"
     }
   ]
 }

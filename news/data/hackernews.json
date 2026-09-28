@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-28T05:54:07+00:00",
+  "updated_at": "2026-09-28T12:03:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Owed a billion dollars in Nvidia stock",
-      "url": "https://colo.to/nvidia-stock-narrative.html",
-      "hot": "377"
+      "title": "Parley: Federated, decentralised chat that speaks plain IRC",
+      "url": "https://git.mills.io/prologic/parley",
+      "hot": "66"
     },
     {
       "rank": 2,
-      "title": "Thinking Fast and Slow in AI: The Role of Metacognition",
-      "url": "https://arxiv.org/abs/2110.01834",
-      "hot": "42"
+      "title": "AI companies in race to demonstrate their model most threatening to humanity",
+      "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/",
+      "hot": "94"
     },
     {
       "rank": 3,
-      "title": "Ember-1",
-      "url": "https://fireworks.ai/blog/ember-1",
-      "hot": "411"
+      "title": "Owed a billion dollars in Nvidia stock",
+      "url": "https://colo.to/nvidia-stock-narrative.html",
+      "hot": "793"
     },
     {
       "rank": 4,
-      "title": "When did Google get so weird?",
-      "url": "https://sancho.bearblog.dev/google-weird/",
-      "hot": "1023"
+      "title": "Footguns with Postgres \"at time zone 'UTC'\"",
+      "url": "https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does",
+      "hot": "57"
     },
     {
       "rank": 5,
-      "title": "Malleable software: Restoring user agency in a world of locked-down apps (2025)",
-      "url": "https://www.inkandswitch.com/essay/malleable-software/",
-      "hot": "33"
+      "title": "SpaceX's Starship launching to orbit for first time ever today",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live",
+      "hot": "97"
     },
     {
       "rank": 6,
-      "title": "There is more to code review than (automatable) detection",
-      "url": "https://www.adaptivecapacitylabs.com/2026/08/24/there-is-more-to-code-review-than-automatable-detection/",
-      "hot": "106"
+      "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
+      "url": "https://arxiv.org/abs/2110.01834",
+      "hot": "122"
     },
     {
       "rank": 7,
-      "title": "Alan Kay's answer to “Did the ENIAC have a BIOS”?",
-      "url": "https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11",
-      "hot": "100"
+      "title": "37,500 border drawings: a map of the world as people remember it",
+      "url": "https://www.habibicode.org/thedrawnworld",
+      "hot": "27"
     },
     {
       "rank": 8,
-      "title": "The state of SIMD in Rust in 2026",
-      "url": "https://shnatsel.github.io/state-of-simd-rust-2026/",
-      "hot": "120"
+      "title": "Ember-1",
+      "url": "https://fireworks.ai/blog/ember-1",
+      "hot": "493"
     },
     {
       "rank": 9,
-      "title": "TabPFN and TabICL vs. tuned XGBoost: the model that doesn't train won 14/14",
-      "url": "https://efraingaray.com/en/blog/tabpfn-vs-xgboost/",
-      "hot": "11"
+      "title": "When did Google get so weird?",
+      "url": "https://sancho.bearblog.dev/google-weird/",
+      "hot": "1404"
     },
     {
       "rank": 10,
-      "title": "Don't couple your Go code to GitHub",
-      "url": "https://iain.rocks/blog/dont-couple-your-go-code-to-github",
-      "hot": "201"
+      "title": "Nissan's third generation e-POWER powertrain",
+      "url": "https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/",
+      "hot": "84"
     }
   ]
 }

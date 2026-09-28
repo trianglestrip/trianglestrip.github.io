@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-28T05:54:11+00:00",
+  "updated_at": "2026-09-28T12:03:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Spring新闻汇总：Boot、Framework、Data、Security、Modulith、Batch的首个里程碑发布",
+      "url": "https://www.infoq.cn/article/WG5UVlDS5e3K2iMTcUYj?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 28 Sep 2026 19:19:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Swift 6.4 正式发布：内置 Subprocess 1.0、增强跨语言互操作、Wasm 性能大幅提升及更多更新",
+      "url": "https://www.infoq.cn/article/zl0e1sUoD95YJfboNz2a?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 28 Sep 2026 18:24:51 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Imagination 发布 E 系列 GPU IP 新进展：一套架构支持图形、计算与AI",
+      "url": "https://www.infoq.cn/article/5Xfeqshw0hwfUD95JpWE?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 28 Sep 2026 18:23:47 GMT"
+    },
+    {
+      "rank": 4,
       "title": "生成式到代理式跃迁：构建保险后援数字分身｜QCon上海",
       "url": "https://www.infoq.cn/article/9UvorlMxKgjEoFauQ4py?utm_source=rss&utm_medium=article",
       "hot": "Mon, 28 Sep 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "谷歌 Kotlin 版 ADK 实现与 Python 版功能对齐，支持端侧 AI",
       "url": "https://www.infoq.cn/article/sQV4EomjPP0J3hM3lyF9?utm_source=rss&utm_medium=article",
       "hot": "Sun, 27 Sep 2026 10:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "可控、可测、可进化——B2B跨境支付的 AI 驾驭实践｜QCon上海",
       "url": "https://www.infoq.cn/article/UC6jk6tu7fWE5bDO8oQw?utm_source=rss&utm_medium=article",
       "hot": "Sun, 27 Sep 2026 10:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "阿里巴巴开源 AI 辅助代码评审工具 OpenCodeReview",
       "url": "https://www.infoq.cn/article/jJIXCaLHUvPgswTOZ1uQ?utm_source=rss&utm_medium=article",
       "hot": "Sat, 26 Sep 2026 17:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "AI 时代，技术人靠什么赢？｜QCon上海",
       "url": "https://www.infoq.cn/article/C1Vuzh9fUmUL9i5wmDZf?utm_source=rss&utm_medium=article",
       "hot": "Sat, 26 Sep 2026 10:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "DoorDash 借助多 Agent LLM 系统清理 6 万个 Feature Flag",
       "url": "https://www.infoq.cn/article/gk4rWsQg09PWTFTZlJE3?utm_source=rss&utm_medium=article",
       "hot": "Sat, 26 Sep 2026 09:20:21 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "htmx 4.0 发布：改用 Fetch API 重写，内置 DOM Morphing Swap，并明确属性继承规则",
       "url": "https://www.infoq.cn/article/kJ4EkjPLVTh9iT5yyXkM?utm_source=rss&utm_medium=article",
       "hot": "Fri, 25 Sep 2026 14:18:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "每周下载量约 16 万，仍处 Alpha 的 TanStack Charts 为什么火了？",
-      "url": "https://www.infoq.cn/article/OUcL9autU0dg1BIt6bib?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 25 Sep 2026 10:10:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "当 Vibe Coding 撞上企业级现实：真实工程中的 AI 效能之路｜QCon上海",
-      "url": "https://www.infoq.cn/article/QQk3wiolU1VScH3u0P7T?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 25 Sep 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "云栖之后，10+阿里AI实战派将亮相QCon上海站",
-      "url": "https://www.infoq.cn/article/lh6Z5E9Zkr33bOeHQGky?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 24 Sep 2026 18:38:58 GMT"
     }
   ]
 }
