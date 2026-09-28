@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-28T12:03:15+00:00",
+  "updated_at": "2026-09-28T19:35:36+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "奥德赛",
-      "url": "https://movie.douban.com/subject/36808876/",
-      "hot": "评分 8.6"
-    },
-    {
-      "rank": 4,
       "title": "生化危机：爆发夜",
       "url": "https://movie.douban.com/subject/37068446/",
       "hot": ""
+    },
+    {
+      "rank": 4,
+      "title": "奥德赛",
+      "url": "https://movie.douban.com/subject/36808876/",
+      "hot": "评分 8.6"
     },
     {
       "rank": 5,
