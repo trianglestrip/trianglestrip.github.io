@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-28T00:45:07+00:00",
+  "updated_at": "2026-09-28T05:54:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "When did Google get so weird?",
-      "url": "https://sancho.bearblog.dev/google-weird/",
-      "hot": "687"
+      "title": "Owed a billion dollars in Nvidia stock",
+      "url": "https://colo.to/nvidia-stock-narrative.html",
+      "hot": "377"
     },
     {
       "rank": 2,
-      "title": "Ember-1",
-      "url": "https://fireworks.ai/blog/ember-1",
-      "hot": "333"
+      "title": "Thinking Fast and Slow in AI: The Role of Metacognition",
+      "url": "https://arxiv.org/abs/2110.01834",
+      "hot": "42"
     },
     {
       "rank": 3,
-      "title": "Lunar Terminator Paradox",
-      "url": "https://notes.secretsauce.net/notes/2026/09/27_lunar-terminator-paradox.html",
-      "hot": "41"
+      "title": "Ember-1",
+      "url": "https://fireworks.ai/blog/ember-1",
+      "hot": "411"
     },
     {
       "rank": 4,
-      "title": "Alan Kay's answer to “Did the ENIAC have a BIOS”?",
-      "url": "https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11",
-      "hot": "65"
+      "title": "When did Google get so weird?",
+      "url": "https://sancho.bearblog.dev/google-weird/",
+      "hot": "1023"
     },
     {
       "rank": 5,
-      "title": "Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi",
-      "url": "https://loficities.com/",
-      "hot": "148"
+      "title": "Malleable software: Restoring user agency in a world of locked-down apps (2025)",
+      "url": "https://www.inkandswitch.com/essay/malleable-software/",
+      "hot": "33"
     },
     {
       "rank": 6,
-      "title": "The state of SIMD in Rust in 2026",
-      "url": "https://shnatsel.github.io/state-of-simd-rust-2026/",
-      "hot": "87"
+      "title": "There is more to code review than (automatable) detection",
+      "url": "https://www.adaptivecapacitylabs.com/2026/08/24/there-is-more-to-code-review-than-automatable-detection/",
+      "hot": "106"
     },
     {
       "rank": 7,
-      "title": "There is more to code review than (automatable) detection",
-      "url": "https://www.adaptivecapacitylabs.com/2026/08/24/there-is-more-to-code-review-than-automatable-detection/",
-      "hot": "51"
+      "title": "Alan Kay's answer to “Did the ENIAC have a BIOS”?",
+      "url": "https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11",
+      "hot": "100"
     },
     {
       "rank": 8,
-      "title": "Don't couple your Go code to GitHub",
-      "url": "https://iain.rocks/blog/dont-couple-your-go-code-to-github",
-      "hot": "133"
+      "title": "The state of SIMD in Rust in 2026",
+      "url": "https://shnatsel.github.io/state-of-simd-rust-2026/",
+      "hot": "120"
     },
     {
       "rank": 9,
-      "title": "Imp is a full port of DSPy to the BEAM",
-      "url": "https://github.com/deepfates/imp",
-      "hot": "40"
+      "title": "TabPFN and TabICL vs. tuned XGBoost: the model that doesn't train won 14/14",
+      "url": "https://efraingaray.com/en/blog/tabpfn-vs-xgboost/",
+      "hot": "11"
     },
     {
       "rank": 10,
-      "title": "What I did at Recurse Center",
-      "url": "https://thill.me/2026/09/11/what-i-did-at-rc.html",
-      "hot": "58"
+      "title": "Don't couple your Go code to GitHub",
+      "url": "https://iain.rocks/blog/dont-couple-your-go-code-to-github",
+      "hot": "201"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-28T00:45:05+00:00",
+  "updated_at": "2026-09-28T05:54:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS7 不用云端 API，使用主体分割实现商品图一键换背景# 智绘鸿蒙·如 7 而至#",
-      "url": "https://ost.51cto.com/posts/57795",
-      "hot": "前言电商、二手交易、广告投放这些场景里，商品图永远是&quot;白底棚拍最省事&quot;。但现实是：商家拿手机随手一拍，背景是杂乱的桌面、床、地板。让..."
+      "title": "【HarmonyOS 7】HarmonyOS Dev Assistant 一多适配实践：从工具到落地",
+      "url": "https://ost.51cto.com/posts/57827",
+      "hot": "HarmonyOSDevAssistant一多适配实践：从工具到落地本文基于「喵屿」应用在HUAWEIPuraXMax折叠屏上的一多适配实战，结合HarmonyOSDevAssista..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS7 用人脸比对做考勤打卡：Core Vision Kit 1:N 身份核验完整实现# 智绘鸿蒙·如 7 而至#",
-      "url": "https://ost.51cto.com/posts/57790",
-      "hot": "前言企业考勤、学校签到、工地实名制，核心诉求都是&quot;确认本人到场&quot;，防止拿别人照片代打卡。传统的工牌、密码、指纹各有问题，而人脸是最难..."
+      "title": "HarmonyOS 7  API 决定能不能用，工程决定好不好用：HarmonyOS 文本搜图实战",
+      "url": "https://ost.51cto.com/posts/57832",
+      "hot": "API决定能不能用，工程决定好不好用：HarmonyOS文本搜图实战很多开发者第一次接入textSearchImage，半小时就能跑通官方示例。但真正上线后..."
     },
     {
       "rank": 3,
-      "title": "别再手搓 Agent！三款开源 Harness 底座架构解析，打造企业定制智能体",
-      "url": "https://www.51cto.com/article/856948.html",
-      "hot": "本文实战探索如何基于 Pi、DeepSeek Harness、Codex Harness 构建自己的 Agent 系统。"
+      "title": "AI网关实战：多模型路由与Token成本管控",
+      "url": "https://www.51cto.com/article/857095.html",
+      "hot": "五个业务各自直连模型厂商，API key散落在五个配置文件里；谁调了多少、花在哪个功能上，没人说得清；一家业务把限流打爆，四家跟着遭殃。说白了，这就是微服务早期\"没有API网关\"的老病，只是这次管的对象从HTTP接口换成了模型调用。"
     },
     {
       "rank": 4,
-      "title": "中文用户全线中招！Claude网页限速，只因回复里有汉字",
-      "url": "https://www.51cto.com/article/856947.html",
-      "hot": "今天凌晨，Anthropic放出一篇硬核的工程复盘。他们把一个内部研究版Claude扔进Slack频道，「连轴转」了两周，硬生生把claude.ai网页版和桌面端的整体速度拉快了3倍。"
+      "title": "CoRL 2026 | 零条带力数据预训练！上海交大卢策吾、汶川团队让VLA学会力",
+      "url": "https://www.51cto.com/article/857106.html",
+      "hot": "上海交通大学卢策吾、汶川团队联合穹彻提出 LIFT，在保留模型预训练知识的情况下，仅通过在线后训练教模型学会感知力，并通过力高频反应式生成动作。"
     },
     {
       "rank": 5,
-      "title": "别被 AI 吓住了：大部分 AIOps 岗位就是用好工具，不是造算法",
-      "url": "https://www.51cto.com/article/856945.html",
-      "hot": "AIOps 的本质是运维工程，即把现成的 AI 工具接进来、用好它、保证它稳定跑起来。你不是在造 AI，你是在用 AI。"
+      "title": "刚刚，Gemini 4 Pro全新曝光，实测碾压Opus 5.5！",
+      "url": "https://www.51cto.com/article/857105.html",
+      "hot": "最近，两个全新检查点（内部代号「barium-b」或 Checkpoint 2）被开发者们发现了，实测后发现，Gemini 4 Pro强得可怕！"
     },
     {
       "rank": 6,
-      "title": "Meta靠自研Manus翻身！股价一夜暴涨11%，登顶苹果商店，增速反超ChatGPT",
-      "url": "https://www.51cto.com/article/856944.html",
-      "hot": "Meta版OpenClaw——Meta Muse，杀疯了。需要取消保险？Muse拨打客服电话、扯皮、搞定。"
+      "title": "GPT-6自己打开软件干活了！一张图纸长出3295个零件，一句话造出豪宅",
+      "url": "https://www.51cto.com/article/857103.html",
+      "hot": "Astra没有长出一双会操作软件的手，它只是把Blender当成了一个带API的运行环境。"
     },
     {
       "rank": 7,
-      "title": "EMNLP最新GraphRAG，RSI杀疯了",
-      "url": "https://www.51cto.com/article/856933.html",
-      "hot": "今天介绍的文章是深圳大学、大湾区大学、蚂蚁集团等提出的GTA-RAG：从实体-文档图采样连通路径合成多跳QA轨迹，经部署检索器验证后做轨迹引导GRPO训练——检索到新目标文档加分、空手回扣分，答对且证据链完整拿最高档。"
+      "title": "震撼，Opus 5.5首次突破Dijkstra算法最短路径！",
+      "url": "https://www.51cto.com/article/857102.html",
+      "hot": "就在刚刚，Vals AI公布了一项足以载入计算机科学史册的重大突破。"
     },
     {
       "rank": 8,
-      "title": "错误码排查从 3～8 小时到分钟级，Agent 怎么做到的？",
-      "url": "https://www.51cto.com/article/856930.html",
-      "hot": "这篇文章重点分享三个实践：如何组织多源证据、如何让长链路排查稳定产出，以及如何用案例和回归评测持续迭代 Skill。"
+      "title": "啥题啊能干崩OpenAI最强模型训练…",
+      "url": "https://www.51cto.com/article/857066.html",
+      "hot": "事情有多离谱呢？请看大屏幕——OpenAI一款正在进行RL训练的内部研究模型，本来的任务是凭几份履历、博客定位某人。"
     },
     {
       "rank": 9,
-      "title": "面试官：ReAct 和 Plan-and-Execute，你平时怎么选？你答「看复杂程度」，他听到的是「我没选过」",
-      "url": "https://www.51cto.com/article/856928.html",
-      "hot": "ReAct 和 Plan-and-Execute 的差别不在难度，在「不确定性落在哪」。这篇文章给你一套能当场判定的选型流程，以及三种形态各自的失败模式。"
+      "title": "OpenAI横扫100多道世界难题，他却说：数学才刚开始",
+      "url": "https://www.51cto.com/article/857065.html",
+      "hot": "多伦多大学数学家 Daniel Litt 在个人博客上发了一篇长文，标题叫《A beginning for mathematics》—— 数学的开端。"
     },
     {
       "rank": 10,
-      "title": "MCP 就是 AI 时代的 JDBC：14 个 AI 热词的 Spring 翻译表",
-      "url": "https://www.51cto.com/article/856924.html",
-      "hot": "用你已经滚瓜烂熟的 Spring 技术栈，把 AI 这一整套新词翻译一遍。不是打比方，是结构同构。你会发现 AI 工程化这几年踩的坑，Spring 社区十年前基本都踩过一遍了。"
+      "title": "刚刚，OpenAI又停训了：Agent逃出沙箱，更多越权事件被扒",
+      "url": "https://www.51cto.com/article/857064.html",
+      "hot": "9 月 20 日，一个正在接受强化学习训练的 OpenAI 内部研究模型，被要求完成一项普通的信息搜索任务：根据一篇博客文章和几条人物信息，找出文章作者。"
     }
   ]
 }
