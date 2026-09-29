@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-29T09:07:05+00:00",
+  "updated_at": "2026-09-29T15:43:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Goodlink 支持同时运行多个Local端和Remote端 全网最简单、最快、零成本的内网穿透",
+      "url": "https://www.oschina.net/news/502808",
+      "hot": "Tue, 29 Sep 2026 18:07:38 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Meta 挖走 MongoDB 的 CEO 去管企业 AI，后者股价一天崩了 18%",
+      "url": "https://www.oschina.net/news/502807",
+      "hot": "Tue, 29 Sep 2026 17:43:59 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Codeaha v1.0.0 正式发布—本地优先的 AI 编程伙伴",
+      "url": "https://www.oschina.net/news/502806",
+      "hot": "Tue, 29 Sep 2026 17:05:45 +0800"
+    },
+    {
+      "rank": 4,
       "title": "Linux 内核要扔掉自己的 LZ4 fork，改为直接引入和同步上游代码",
       "url": "https://www.oschina.net/news/502802",
       "hot": "Tue, 29 Sep 2026 15:28:56 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "荷兰政府基于 NixOS 打造替代 Windows 的办公系统",
       "url": "https://www.oschina.net/news/502799",
       "hot": "Tue, 29 Sep 2026 15:14:03 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "Jeff 开源发布：22 毫秒出一次决策的小模型、0.8B 微调在 benchmark 上逼近 Jev",
       "url": "https://www.oschina.net/news/502796",
       "hot": "Tue, 29 Sep 2026 14:12:39 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "Claude Sonnet 5.5 发布：速度快 3 成、Agent 编程评测从 10% 跳到 70%",
       "url": "https://www.oschina.net/news/502794/claude-sonnet-5-5",
       "hot": "Tue, 29 Sep 2026 12:14:33 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Java Web 服务器 wastnet mvc 开发实战",
       "url": "https://www.oschina.net/news/502793",
       "hot": "Tue, 29 Sep 2026 11:54:02 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "CyreneAdmin 1.5.0 发布：新增 i18n 与 E2E 测试，全面升级前后端依赖",
       "url": "https://www.oschina.net/news/502792",
       "hot": "Tue, 29 Sep 2026 11:52:10 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "🔥「可信Data+智能体AI」本体工作坊",
       "url": "https://www.oschina.net/event/8598411",
       "hot": "Tue, 29 Sep 2026 11:51:13 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "AMD 花 82 亿美元买下李飞飞的 World Labs，她直接空降成首席科学家",
-      "url": "https://www.oschina.net/news/502790/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion",
-      "hot": "Tue, 29 Sep 2026 11:12:51 +0800"
-    },
-    {
-      "rank": 9,
-      "title": ":clap:工单管理系统 WGCAT v1.3.1 新增知识库",
-      "url": "https://www.oschina.net/news/502789",
-      "hot": "Tue, 29 Sep 2026 11:09:51 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Manus 2.0 发布：自研框架 Cascade 省 32% 成本，视频编辑器把时间线交到你手上",
-      "url": "https://www.oschina.net/news/502788/manus-2-0",
-      "hot": "Tue, 29 Sep 2026 10:53:06 +0800"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-09-29T09:06:55+00:00",
+  "updated_at": "2026-09-29T15:42:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI 的记忆不是数据库：长期个性化如何避免过期与污染",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/166586487",
-      "hot": "15084"
+      "title": "从只写接口到独立交付前后端，飞算JavaAI能给Java后端工程师多少溢价？",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/166776519",
+      "hot": "16884"
     },
     {
       "rank": 2,
-      "title": "【AI大模型接入SDK】ChatSDK整体实现",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/166734886",
-      "hot": "12500"
+      "title": "AI 的记忆不是数据库：长期个性化如何避免过期与污染",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/166586487",
+      "hot": "11891"
     },
     {
       "rank": 3,
-      "title": "从只写接口到独立交付前后端，飞算JavaAI能给Java后端工程师多少溢价？",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/166776519",
-      "hot": "12417"
+      "title": "飞牛OS部署ExerciseDiary：Docker Compose、运动记录与CR远程访问",
+      "url": "https://blog.csdn.net/COLLINSXU/article/details/166840610",
+      "hot": "11195"
     },
     {
       "rank": 4,
-      "title": "Prometheus接入Pushgateway实战：二进制与Docker部署、指标推送及远程上报",
-      "url": "https://blog.csdn.net/user340/article/details/166785569",
-      "hot": "10374"
+      "title": "【AI大模型接入SDK】ChatSDK整体实现",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/166734886",
+      "hot": "9548"
     },
     {
       "rank": 5,
-      "title": "简历排版总要返工？自建 Magic Resume，从在线编辑到 PDF 导出",
-      "url": "https://blog.csdn.net/Dovis5884/article/details/166788731",
-      "hot": "9925"
+      "title": "把模型切换交给平台：用蓝耘智能路由搭建商品评论分析工具",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/166845663",
+      "hot": "9422"
     },
     {
       "rank": 6,
-      "title": "信息化部门在AI时代的编程转移路径分析（下）",
-      "url": "https://blog.csdn.net/kkiron/article/details/166773284",
-      "hot": "8926"
+      "title": "简历排版总要返工？自建 Magic Resume，从在线编辑到 PDF 导出",
+      "url": "https://blog.csdn.net/Dovis5884/article/details/166788731",
+      "hot": "7853"
     },
     {
       "rank": 7,
-      "title": "SSE 接口设计 vs Agent UI：四个开源项目，把「模型吐词」和「界面更新」拆开后，我看懂了差距",
-      "url": "https://blog.csdn.net/zxc18344522713/article/details/166737739",
-      "hot": "7867"
+      "title": "Chatwoot私有化部署实战：Docker搭建客服后台，cpolar公网访问与网页SDK集成",
+      "url": "https://blog.csdn.net/m0_73879806/article/details/166794082",
+      "hot": "7214"
     },
     {
       "rank": 8,
-      "title": "模拟器横评：MuMu、雷电、应用宝电脑版五维实测，资源占用低才是隐藏王牌",
-      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/166741864",
-      "hot": "7666"
+      "title": "信息化部门在AI时代的编程转移路径分析（下）",
+      "url": "https://blog.csdn.net/kkiron/article/details/166773284",
+      "hot": "7079"
     },
     {
       "rank": 9,
-      "title": "Chatwoot私有化部署实战：Docker搭建客服后台，cpolar公网访问与网页SDK集成",
-      "url": "https://blog.csdn.net/m0_73879806/article/details/166794082",
-      "hot": "7396"
+      "title": "Prometheus接入Pushgateway实战：二进制与Docker部署、指标推送及远程上报",
+      "url": "https://blog.csdn.net/user340/article/details/166785569",
+      "hot": "6944"
     },
     {
       "rank": 10,
-      "title": "【黑马点评 | 第七篇】Redis 分布式锁的两种实现",
-      "url": "https://blog.csdn.net/2502_94242477/article/details/166690258",
-      "hot": "6521"
+      "title": "每日热评｜Compositor：Swift原生图像编辑器，100%开源免费对标Photoshop",
+      "url": "https://blog.csdn.net/TunerT_TQ/article/details/166692298",
+      "hot": "6603"
     }
   ]
 }

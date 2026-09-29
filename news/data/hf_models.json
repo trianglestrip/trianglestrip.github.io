@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-29T09:07:18+00:00",
+  "updated_at": "2026-09-29T15:43:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "4396"
+      "hot": "4454"
     },
     {
       "rank": 2,
       "title": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
-      "hot": "1456"
+      "hot": "1472"
     },
     {
       "rank": 3,
       "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "2317"
+      "hot": "2377"
     },
     {
       "rank": 4,
       "title": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "hot": "2613"
+      "hot": "2640"
     },
     {
       "rank": 5,
       "title": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
-      "hot": "829"
+      "hot": "859"
     },
     {
       "rank": 6,
       "title": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-      "hot": "1803"
+      "hot": "1806"
     },
     {
       "rank": 7,
       "title": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
-      "hot": "503"
+      "hot": "513"
     },
     {
       "rank": 8,
       "title": "nvidia/Nemotron-3-Diarization",
       "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
-      "hot": "485"
+      "hot": "496"
     },
     {
       "rank": 9,
-      "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "hot": "2248"
+      "title": "TaichuAI/ZDTaichu5.0-9B",
+      "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B",
+      "hot": "1932"
     },
     {
       "rank": 10,
-      "title": "TaichuAI/ZDTaichu5.0-9B",
-      "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B",
-      "hot": "1795"
+      "title": "Viggle/Qwen-Image-2.1-viggle-turbo",
+      "url": "https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo",
+      "hot": "410"
     }
   ]
 }

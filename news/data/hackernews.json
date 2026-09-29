@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-29T09:07:03+00:00",
+  "updated_at": "2026-09-29T15:43:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Using any C++ library in Godot",
-      "url": "https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html",
-      "hot": "14"
+      "title": "macOS Golden Gate Is a Buggy Mess",
+      "url": "https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/",
+      "hot": "153"
     },
     {
       "rank": 2,
-      "title": "Phyllotaxis: An audio-reactive LED display",
-      "url": "https://jagi.studio/posts/phyllotaxis/",
-      "hot": "135"
+      "title": "Claude partial outage",
+      "url": "https://status.claude.com/incidents/4xvtc2gnq73l",
+      "hot": "138"
     },
     {
       "rank": 3,
-      "title": "The systems that no one will test",
-      "url": "https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/",
-      "hot": "46"
+      "title": "How Delhi Cut Electricity Loss from 50 to 5 Percent",
+      "url": "https://spectrum.ieee.org/delhi-electricity-loss",
+      "hot": "212"
     },
     {
       "rank": 4,
-      "title": "Booted up in 1993, this server still runs – but not for much longer (2017)",
-      "url": "https://www.computerworld.com/article/1673071/booted-up-in-1993-this-server-still-runs-but-not-for-much-longer-2.html",
-      "hot": "35"
+      "title": "America.gov – Whatever you need from government, start here",
+      "url": "https://america.gov/",
+      "hot": "44"
     },
     {
       "rank": 5,
-      "title": "Pirating the Pirates",
-      "url": "https://mubi.com/en/notebook/posts/pirating-the-pirates",
-      "hot": "573"
+      "title": "AI companies leak data to advertisers [pdf]",
+      "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+      "hot": "330"
     },
     {
       "rank": 6,
-      "title": "California farmers are struggling to sell grapes as demand for wine drops",
-      "url": "https://www.kqed.org/news/12101534/california-farmers-are-struggling-to-sell-grapes-as-demand-for-wine-drops",
-      "hot": "206"
+      "title": "Jeeves. Reasoning improves Jev-like decision models",
+      "url": "https://github.com/PostHog/jeeves",
+      "hot": "147"
     },
     {
       "rank": 7,
-      "title": "MicroLLM Lab – Try 7 tiny LLM's in the browser",
-      "url": "https://stateofutopia.com/experiments/microllmlab/",
-      "hot": "238"
+      "title": "Without the Hot Air",
+      "url": "https://www.withouthotair.com/",
+      "hot": "69"
     },
     {
       "rank": 8,
-      "title": "Software occlusion culling in Block Game",
-      "url": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game/",
-      "hot": "6"
+      "title": "Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions",
+      "url": "https://appleinsider.com/articles/26/09/28/metas-new-ai-agent-blatantly-ignores-users-permissions",
+      "hot": "104"
     },
     {
       "rank": 9,
-      "title": "Tank Body Problem",
-      "url": "http://www.jimsitu.com",
-      "hot": "103"
+      "title": "You Are No Longer Invited to Dinner",
+      "url": "https://www.derekthompson.org/p/the-death-of-the-american-host",
+      "hot": "439"
     },
     {
       "rank": 10,
-      "title": "Uncensored and Offensive Security AI Models Benchmark",
-      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
-      "hot": "12"
+      "title": "500k facial scans at UK stations yield no arrests, 1 false positive",
+      "url": "https://www.theguardian.com/technology/2026/sep/29/trial-live-facial-recognition-cameras-london-stations-false-positive",
+      "hot": "299"
     }
   ]
 }

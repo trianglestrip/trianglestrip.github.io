@@ -1,56 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-09-29T09:06:48+00:00",
+  "updated_at": "2026-09-29T15:42:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Python] debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
-      "hot": "45,772"
+      "hot": "46,988"
     },
     {
       "rank": 2,
-      "title": "[TypeScript] paperclipai/paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
-      "hot": "93,667"
+      "title": "[Rust] NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "hot": "10,198"
     },
     {
       "rank": 3,
       "title": "[Python] vectorize-io/hindsight",
       "url": "https://github.com/vectorize-io/hindsight",
-      "hot": "41,747"
+      "hot": "42,317"
     },
     {
       "rank": 4,
-      "title": "[PLSQL] NawfalMotii79/PLFM_RADAR",
-      "url": "https://github.com/NawfalMotii79/PLFM_RADAR",
-      "hot": "25,960"
+      "title": "[TypeScript] paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "hot": "94,121"
     },
     {
       "rank": 5,
-      "title": "[TeX] cs341-illinois/coursebook",
-      "url": "https://github.com/cs341-illinois/coursebook",
-      "hot": "2,707"
+      "title": "[Rust] t8y2/dbx",
+      "url": "https://github.com/t8y2/dbx",
+      "hot": "21,761"
     },
     {
       "rank": 6,
-      "title": "[JavaScript] byoungd/up",
-      "url": "https://github.com/byoungd/up",
-      "hot": "65,251"
+      "title": "[TypeScript] mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "hot": "2,189"
     },
     {
       "rank": 7,
-      "title": "[TypeScript] mvschwarz/openrig",
-      "url": "https://github.com/mvschwarz/openrig",
-      "hot": "1,987"
+      "title": "[TypeScript] oblien/openship",
+      "url": "https://github.com/oblien/openship",
+      "hot": "13,653"
     },
     {
       "rank": 8,
-      "title": "[TypeScript] dream-num/univer",
-      "url": "https://github.com/dream-num/univer",
-      "hot": "21,525"
+      "title": "[HTML] averygan/reclip",
+      "url": "https://github.com/averygan/reclip",
+      "hot": "9,898"
+    },
+    {
+      "rank": 9,
+      "title": "[TeX] cs341-illinois/coursebook",
+      "url": "https://github.com/cs341-illinois/coursebook",
+      "hot": "2,927"
+    },
+    {
+      "rank": 10,
+      "title": "[Python] rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "hot": "61,002"
     }
   ]
 }
