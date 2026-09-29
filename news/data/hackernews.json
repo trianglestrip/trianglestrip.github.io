@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-28T23:54:47+00:00",
+  "updated_at": "2026-09-29T02:49:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
       "url": "https://github.com/firelex/jeff",
-      "hot": "193"
+      "hot": "309"
     },
     {
       "rank": 2,
       "title": "Pirating the Pirates",
       "url": "https://mubi.com/en/notebook/posts/pirating-the-pirates",
-      "hot": "379"
+      "hot": "432"
     },
     {
       "rank": 3,
       "title": "12,000-year-old Göbeklitepe burials explain scattered bones",
       "url": "https://archaeologymag.com/2026/09/gobeklitepe-burials-hundreds-of-scattered-bones/",
-      "hot": "58"
+      "hot": "86"
     },
     {
       "rank": 4,
       "title": "MicroLLM Lab – Try 7 tiny LLM's in the browser",
       "url": "https://stateofutopia.com/experiments/microllmlab/",
-      "hot": "107"
+      "hot": "144"
     },
     {
       "rank": 5,
-      "title": "Scientists solve 1840s space weather mystery",
-      "url": "https://arstechnica.com/science/2026/09/scientists-solve-1840s-space-weather-mystery/",
-      "hot": "39"
+      "title": "1996 chat room simulator connected to Win95 and System 7 web desktops",
+      "url": "https://lolchat.rip/",
+      "hot": "29"
     },
     {
       "rank": 6,
-      "title": "World Labs Is Joining AMD",
-      "url": "https://www.worldlabs.ai/blog/amd-announcement",
-      "hot": "149"
+      "title": "California farmers are struggling to sell grapes as demand for wine drops",
+      "url": "https://www.kqed.org/news/12101534/california-farmers-are-struggling-to-sell-grapes-as-demand-for-wine-drops",
+      "hot": "76"
     },
     {
       "rank": 7,
-      "title": "Flock Wants the Most Detailed Map of Its Surveillance Cameras Taken Offline",
-      "url": "https://theintercept.com/2026/09/24/how-many-flock-devices-in-united-states-300000/",
-      "hot": "132"
+      "title": "Scientists solve 1840s space weather mystery",
+      "url": "https://arstechnica.com/science/2026/09/scientists-solve-1840s-space-weather-mystery/",
+      "hot": "67"
     },
     {
       "rank": 8,
-      "title": "Hijacking the PS5's RTMP stream",
-      "url": "https://yashgarg.dev/posts/hijacking-ps5-rtmp-stream/",
-      "hot": "179"
+      "title": "Sonnet 5.5",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "hot": "607"
     },
     {
       "rank": 9,
-      "title": "Kids turned low-traffic NPR Spotify comments into a secret group chat",
-      "url": "https://www.thisamericanlife.org/897/transcript",
-      "hot": "253"
+      "title": "ESP32S3 cluster running 1.58-bit (BitNet) Language model",
+      "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
+      "hot": "37"
     },
     {
       "rank": 10,
-      "title": "Parley: Federated, decentralised chat that speaks plain IRC",
-      "url": "https://git.mills.io/prologic/parley",
-      "hot": "293"
+      "title": "World Labs Is Joining AMD",
+      "url": "https://www.worldlabs.ai/blog/amd-announcement",
+      "hot": "198"
     }
   ]
 }

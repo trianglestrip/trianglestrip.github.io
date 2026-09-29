@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-28T23:54:45+00:00",
+  "updated_at": "2026-09-29T02:49:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7.0 文搜图实战①：从“一句话找照片”开始 # 智绘鸿蒙·如 7 而至#",
-      "url": "https://ost.51cto.com/posts/57974",
-      "hot": "想找一张照片时，我们往往记得画面，却记不住它的拍摄日期和文件名。例如，&ldquo;雨天窗边的一杯咖啡&rdquo;，或者&ldquo;海边看日落的人&rdquo;。如果能直接输..."
+      "title": "HarmonyOS 6 上写个“3D 展示台”：glTF 模型加载 + 自动旋转，代码直接抄",
+      "url": "https://ost.51cto.com/posts/58127",
+      "hot": "前言上一篇折腾3DGS的时候，顺手把ArkGraphics3D加载glTF模型这条路跑通了。当时只是&ldquo;能显示出来&rdquo;就收工了，模型安安静静待在屏幕中央，..."
     },
     {
       "rank": 2,
-      "title": "【HarmonyOS 7】HarmonyOS Dev Assistant 一多适配实践：从工具到落地",
-      "url": "https://ost.51cto.com/posts/57827",
-      "hot": "HarmonyOSDevAssistant一多适配实践：从工具到落地本文基于「喵屿」应用在HUAWEIPuraXMax折叠屏上的一多适配实战，结合HarmonyOSDevAssista..."
+      "title": "周一汇报被当场问穿后，我用 Zabbix+DeepSeek 重构运维报表：4 小时→8 分钟，月成本仅 1.4 元",
+      "url": "https://www.51cto.com/article/857270.html",
+      "hot": "Zabbix API 出数据、DeepSeek 出结论、matplotlib 出图表、Python 拼装推送，全链路 8 分钟产出一份有数据有图有依据的运维周报。"
     },
     {
       "rank": 3,
-      "title": "AI网关实战：多模型路由与Token成本管控",
-      "url": "https://www.51cto.com/article/857095.html",
-      "hot": "五个业务各自直连模型厂商，API key散落在五个配置文件里；谁调了多少、花在哪个功能上，没人说得清；一家业务把限流打爆，四家跟着遭殃。说白了，这就是微服务早期\"没有API网关\"的老病，只是这次管的对象从HTTP接口换成了模型调用。"
+      "title": "从 Prompt→Context→Harness：AI 编程从代码生成走向工程交付的演进之路",
+      "url": "https://www.51cto.com/article/857265.html",
+      "hot": "本文从 Prompt、Context 到 Harness 的演进出发，讨论如何围绕模型构建规则、工具、记忆、验证和编排机制，让 AI 编程进入真实研发流程。"
     },
     {
       "rank": 4,
-      "title": "CoRL 2026 | 零条带力数据预训练！上海交大卢策吾、汶川团队让VLA学会力",
-      "url": "https://www.51cto.com/article/857106.html",
-      "hot": "上海交通大学卢策吾、汶川团队联合穹彻提出 LIFT，在保留模型预训练知识的情况下，仅通过在线后训练教模型学会感知力，并通过力高频反应式生成动作。"
+      "title": "SceneMosaic：让3D场景生成既快又「活」，一张图生成一屋子可仿真的多样布局",
+      "url": "https://www.51cto.com/article/857261.html",
+      "hot": "来自香港大学等机构的戴勃老师团队提出了 SceneMosaic。Mosaic（马赛克）正是它的核心隐喻：一个场景不是固定不动的整体，而是由一块块可以独立替换的\"局部拼片\"拼成的。"
     },
     {
       "rank": 5,
-      "title": "刚刚，Gemini 4 Pro全新曝光，实测碾压Opus 5.5！",
-      "url": "https://www.51cto.com/article/857105.html",
-      "hot": "最近，两个全新检查点（内部代号「barium-b」或 Checkpoint 2）被开发者们发现了，实测后发现，Gemini 4 Pro强得可怕！"
+      "title": "IDC×浪潮信息最新报告！22亿Agent背后，AI算力正迎来一场重构",
+      "url": "https://www.51cto.com/article/857259.html",
+      "hot": "近日，在 2026 人工智能计算大会（AICC2026）上，IDC 与浪潮信息联合发布《2026 年中国人工智能计算力发展评估报告》（以下简称《报告》），与往年相比，今年《报告》把 Agent 放到了一个更核心的位置。"
     },
     {
       "rank": 6,
-      "title": "GPT-6自己打开软件干活了！一张图纸长出3295个零件，一句话造出豪宅",
-      "url": "https://www.51cto.com/article/857103.html",
-      "hot": "Astra没有长出一双会操作软件的手，它只是把Blender当成了一个带API的运行环境。"
+      "title": "AI 消除了编码瓶颈，为什么软件工程师反而每天工作 13 个小时？",
+      "url": "https://www.51cto.com/article/857163.html",
+      "hot": "代码审查也是一样。如果改动由一个智能体编写，再由另一个智能体批准，整个流程里可能没有任何人真正理解它。最终要为结果负责的人，仍然得亲自读懂这些改动。团队必须为这件事留出时间，而不是等到一天已经工作了 13 个小时，再设法把审查塞进去。"
     },
     {
       "rank": 7,
-      "title": "震撼，Opus 5.5首次突破Dijkstra算法最短路径！",
-      "url": "https://www.51cto.com/article/857102.html",
-      "hot": "就在刚刚，Vals AI公布了一项足以载入计算机科学史册的重大突破。"
+      "title": "18秒出片、视频生成提速265倍！北大清华阿里提出SparkDiffusion",
+      "url": "https://www.51cto.com/article/857256.html",
+      "hot": "北京大学、清华大学、阿里巴巴等机构的研究者提出了 SparkDiffusion：首个将稀疏注意力、少步蒸馏与低精度量化整合到统一框架(含开源权重及完整训练代码)的视频生成加速系统，推动 DiT 视频生成从「分散优化单个组件」转向「端到端系统化加速」的新范式。"
     },
     {
       "rank": 8,
-      "title": "啥题啊能干崩OpenAI最强模型训练…",
-      "url": "https://www.51cto.com/article/857066.html",
-      "hot": "事情有多离谱呢？请看大屏幕——OpenAI一款正在进行RL训练的内部研究模型，本来的任务是凭几份履历、博客定位某人。"
+      "title": "用AI造的！刚刚，代季峰团队首个模型开源",
+      "url": "https://www.51cto.com/article/857255.html",
+      "hot": "短短半个多月，「让 AI 研发 AI」就已经从一个偏理论的话题变成了头部实验室争相公开的量化指标。但仔细看，这些数字回答的大多是同一个问题：研发下一代大模型，AI能接手多少工作？"
     },
     {
       "rank": 9,
-      "title": "OpenAI横扫100多道世界难题，他却说：数学才刚开始",
-      "url": "https://www.51cto.com/article/857065.html",
-      "hot": "多伦多大学数学家 Daniel Litt 在个人博客上发了一篇长文，标题叫《A beginning for mathematics》—— 数学的开端。"
+      "title": "学了这么久 DOM，你真的搞懂 Node 了吗？",
+      "url": "https://www.51cto.com/article/857263.html",
+      "hot": "当你真正建立起“DOM 是一棵 Node 树”这个思维模型之后，再去学习 Document、Element、Text、MutationObserver，甚至理解 Vue、React 最终如何落到真实 DOM 上，很多知识都会一下子串起来。"
     },
     {
       "rank": 10,
-      "title": "刚刚，OpenAI又停训了：Agent逃出沙箱，更多越权事件被扒",
-      "url": "https://www.51cto.com/article/857064.html",
-      "hot": "9 月 20 日，一个正在接受强化学习训练的 OpenAI 内部研究模型，被要求完成一项普通的信息搜索任务：根据一篇博客文章和几条人物信息，找出文章作者。"
+      "title": "为了理解而生成：他们用合成数据教会模型「视频通话」",
+      "url": "https://www.51cto.com/article/857248.html",
+      "hot": "我们构建了数据引擎 OmniVChat-Studio、评测基准 OmniVChat-Bench 和强化学习奖励设计 OmniVChat-RL，把原生音视频对话的造数据、测能力和改进模型接在一起。"
     }
   ]
 }

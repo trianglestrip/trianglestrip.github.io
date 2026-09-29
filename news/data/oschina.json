@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-28T23:54:49+00:00",
+  "updated_at": "2026-09-29T02:49:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "wastnet v1.0.2 发布：强类型配置与 MVC 模块独立",
+      "url": "https://www.oschina.net/news/502777",
+      "hot": "Tue, 29 Sep 2026 09:16:44 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "go-carbon v2.6.18 正式版发布，轻量级、语义化的 golang 时间处理库",
+      "url": "https://www.oschina.net/news/502776",
+      "hot": "Tue, 29 Sep 2026 08:05:35 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "scrapy-cookbook 2.19版本发布，Python爬虫框架Scrapy橙皮书",
+      "url": "https://www.oschina.net/news/502775",
+      "hot": "Mon, 28 Sep 2026 23:18:20 +0800"
+    },
+    {
+      "rank": 4,
       "title": "OpenAI 暂停最新模型训练，称 Agent 曾尝试黑进教育部网站",
       "url": "https://www.oschina.net/news/502773",
       "hot": "Mon, 28 Sep 2026 17:58:50 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "Strands 开源组装好的 Agent harness，同模型下 token 省 28%",
       "url": "https://www.oschina.net/news/502772/strands-harness",
       "hot": "Mon, 28 Sep 2026 16:35:48 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "AIGCPanel v2.5.0 支持豆包语音音色，数字人直播音色模板管理",
       "url": "https://www.oschina.net/news/502770",
       "hot": "Mon, 28 Sep 2026 15:26:11 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "QuotaPanel v0.1.0 轻量本地 AI 额度看板，聚合 15 种订阅与 API 余额",
       "url": "https://www.oschina.net/news/502769",
       "hot": "Mon, 28 Sep 2026 15:25:33 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "DataTalk Studio 开源：用对话完成报表开发的 AI-native BI 工作区",
       "url": "https://www.oschina.net/news/502768",
       "hot": "Mon, 28 Sep 2026 15:04:27 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "C++ Web框架Paozhu v1.17.0发布，添加MQTT，网络支付",
       "url": "https://www.oschina.net/news/502767",
       "hot": "Mon, 28 Sep 2026 14:50:18 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "开源 AI 终端 uniTerm v1.9.5 发布: 工作区管理全面升级、终端图片显示、SFTP 提速等 50 余项更新",
       "url": "https://www.oschina.net/news/502766",
       "hot": "Mon, 28 Sep 2026 12:54:43 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "GitHub 花三年把官网从 CSS-in-JS 搬到 CSS Modules，网站性能显著提升",
-      "url": "https://www.oschina.net/news/502761/github-improving-site-performance-by-shipping-more-css",
-      "hot": "Mon, 28 Sep 2026 11:49:22 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "KnowForge 2026.0.6 发布：会员、支付、付费内容与 AI 知识服务全面上线",
-      "url": "https://www.oschina.net/news/502760",
-      "hot": "Mon, 28 Sep 2026 10:55:16 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "ShopXO 免费开源商城系统 v6.9.2 版本已发布",
-      "url": "https://www.oschina.net/news/502759",
-      "hot": "Mon, 28 Sep 2026 10:32:51 +0800"
     }
   ]
 }
