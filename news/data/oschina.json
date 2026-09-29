@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-29T02:49:33+00:00",
+  "updated_at": "2026-09-29T09:07:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "wastnet v1.0.2 发布：强类型配置与 MVC 模块独立",
-      "url": "https://www.oschina.net/news/502777",
-      "hot": "Tue, 29 Sep 2026 09:16:44 +0800"
+      "title": "Linux 内核要扔掉自己的 LZ4 fork，改为直接引入和同步上游代码",
+      "url": "https://www.oschina.net/news/502802",
+      "hot": "Tue, 29 Sep 2026 15:28:56 +0800"
     },
     {
       "rank": 2,
-      "title": "go-carbon v2.6.18 正式版发布，轻量级、语义化的 golang 时间处理库",
-      "url": "https://www.oschina.net/news/502776",
-      "hot": "Tue, 29 Sep 2026 08:05:35 +0800"
+      "title": "荷兰政府基于 NixOS 打造替代 Windows 的办公系统",
+      "url": "https://www.oschina.net/news/502799",
+      "hot": "Tue, 29 Sep 2026 15:14:03 +0800"
     },
     {
       "rank": 3,
-      "title": "scrapy-cookbook 2.19版本发布，Python爬虫框架Scrapy橙皮书",
-      "url": "https://www.oschina.net/news/502775",
-      "hot": "Mon, 28 Sep 2026 23:18:20 +0800"
+      "title": "Jeff 开源发布：22 毫秒出一次决策的小模型、0.8B 微调在 benchmark 上逼近 Jev",
+      "url": "https://www.oschina.net/news/502796",
+      "hot": "Tue, 29 Sep 2026 14:12:39 +0800"
     },
     {
       "rank": 4,
-      "title": "OpenAI 暂停最新模型训练，称 Agent 曾尝试黑进教育部网站",
-      "url": "https://www.oschina.net/news/502773",
-      "hot": "Mon, 28 Sep 2026 17:58:50 +0800"
+      "title": "Claude Sonnet 5.5 发布：速度快 3 成、Agent 编程评测从 10% 跳到 70%",
+      "url": "https://www.oschina.net/news/502794/claude-sonnet-5-5",
+      "hot": "Tue, 29 Sep 2026 12:14:33 +0800"
     },
     {
       "rank": 5,
-      "title": "Strands 开源组装好的 Agent harness，同模型下 token 省 28%",
-      "url": "https://www.oschina.net/news/502772/strands-harness",
-      "hot": "Mon, 28 Sep 2026 16:35:48 +0800"
+      "title": "Java Web 服务器 wastnet mvc 开发实战",
+      "url": "https://www.oschina.net/news/502793",
+      "hot": "Tue, 29 Sep 2026 11:54:02 +0800"
     },
     {
       "rank": 6,
-      "title": "AIGCPanel v2.5.0 支持豆包语音音色，数字人直播音色模板管理",
-      "url": "https://www.oschina.net/news/502770",
-      "hot": "Mon, 28 Sep 2026 15:26:11 +0800"
+      "title": "CyreneAdmin 1.5.0 发布：新增 i18n 与 E2E 测试，全面升级前后端依赖",
+      "url": "https://www.oschina.net/news/502792",
+      "hot": "Tue, 29 Sep 2026 11:52:10 +0800"
     },
     {
       "rank": 7,
-      "title": "QuotaPanel v0.1.0 轻量本地 AI 额度看板，聚合 15 种订阅与 API 余额",
-      "url": "https://www.oschina.net/news/502769",
-      "hot": "Mon, 28 Sep 2026 15:25:33 +0800"
+      "title": "🔥「可信Data+智能体AI」本体工作坊",
+      "url": "https://www.oschina.net/event/8598411",
+      "hot": "Tue, 29 Sep 2026 11:51:13 +0800"
     },
     {
       "rank": 8,
-      "title": "DataTalk Studio 开源：用对话完成报表开发的 AI-native BI 工作区",
-      "url": "https://www.oschina.net/news/502768",
-      "hot": "Mon, 28 Sep 2026 15:04:27 +0800"
+      "title": "AMD 花 82 亿美元买下李飞飞的 World Labs，她直接空降成首席科学家",
+      "url": "https://www.oschina.net/news/502790/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion",
+      "hot": "Tue, 29 Sep 2026 11:12:51 +0800"
     },
     {
       "rank": 9,
-      "title": "C++ Web框架Paozhu v1.17.0发布，添加MQTT，网络支付",
-      "url": "https://www.oschina.net/news/502767",
-      "hot": "Mon, 28 Sep 2026 14:50:18 +0800"
+      "title": ":clap:工单管理系统 WGCAT v1.3.1 新增知识库",
+      "url": "https://www.oschina.net/news/502789",
+      "hot": "Tue, 29 Sep 2026 11:09:51 +0800"
     },
     {
       "rank": 10,
-      "title": "开源 AI 终端 uniTerm v1.9.5 发布: 工作区管理全面升级、终端图片显示、SFTP 提速等 50 余项更新",
-      "url": "https://www.oschina.net/news/502766",
-      "hot": "Mon, 28 Sep 2026 12:54:43 +0800"
+      "title": "Manus 2.0 发布：自研框架 Cascade 省 32% 成本，视频编辑器把时间线交到你手上",
+      "url": "https://www.oschina.net/news/502788/manus-2-0",
+      "hot": "Tue, 29 Sep 2026 10:53:06 +0800"
     }
   ]
 }

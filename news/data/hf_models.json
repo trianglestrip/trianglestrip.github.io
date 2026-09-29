@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-29T02:49:52+00:00",
+  "updated_at": "2026-09-29T09:07:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "4317"
+      "hot": "4396"
     },
     {
       "rank": 2,
-      "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "2283"
+      "title": "Edge0/Audio8-ASR-Infinite",
+      "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
+      "hot": "1456"
     },
     {
       "rank": 3,
-      "title": "Edge0/Audio8-ASR-Infinite",
-      "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
-      "hot": "1410"
+      "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "hot": "2317"
     },
     {
       "rank": 4,
       "title": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "hot": "2595"
+      "hot": "2613"
     },
     {
       "rank": 5,
       "title": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
-      "hot": "801"
+      "hot": "829"
     },
     {
       "rank": 6,
       "title": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-      "hot": "1801"
+      "hot": "1803"
     },
     {
       "rank": 7,
       "title": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
-      "hot": "485"
+      "hot": "503"
     },
     {
       "rank": 8,
-      "title": "TaichuAI/ZDTaichu5.0-9B",
-      "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B",
-      "hot": "1706"
+      "title": "nvidia/Nemotron-3-Diarization",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+      "hot": "485"
     },
     {
       "rank": 9,
-      "title": "nvidia/Nemotron-3-Diarization",
-      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
-      "hot": "465"
+      "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "hot": "2248"
     },
     {
       "rank": 10,
-      "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "hot": "2233"
+      "title": "TaichuAI/ZDTaichu5.0-9B",
+      "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B",
+      "hot": "1795"
     }
   ]
 }

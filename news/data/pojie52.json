@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-09-29T02:49:24+00:00",
+  "updated_at": "2026-09-29T09:06:57+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "一个 Android 远控APP的逆向分析-从 AB 包隐藏、动态加载到无障碍远程控制支付流程",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2121592",
-      "hot": "[md]样本、目标应用、域名、证书和基础设施信息均已脱敏。文中使用“某远控APP”“某支付客户端”“某金融 APP”作为代称。本文只记录已经从样本结构、反编译代码和测试现象中得到的结论；\n\n## 0x00 写在前面\n\n这次拿到的样本 [下载](https://github.com/goldenfi ..."
+      "title": "某音 JSVMP bogus纯算",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2120914",
+      "hot": "[md]根据代码进行调试可以发现J是vmp的装载器\n\n```\n      function J(t, r, e, n) {\n        return (\n          Z.length ||\n            (function (t) {\n              var r = (function (t) {\n              ..."
     }
   ]
 }
