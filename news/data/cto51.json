@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-30T02:25:05+00:00",
+  "updated_at": "2026-09-30T08:45:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "图像超分端侧落地：相册老照片变清晰的工程化全链路与 5 个踩坑解法 # 智绘鸿蒙·如 7 而至#",
+      "url": "https://ost.51cto.com/posts/58273",
+      "hot": "摘要：相册里压着十几年的老照片，分辨率才480p，放大全是马赛克。HarmonyOS7.0的图像超分能力（CoreVisionKit的imageSuperResolution）在..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 分布式文件系统跨设备文件访问与拷贝完全指南# 智绘鸿蒙·如 7 而至#",
+      "url": "https://ost.51cto.com/posts/58245",
+      "hot": "HarmonyOS分布式文件系统跨设备文件访问与拷贝完全指南手把手带你实现华为设备间的无缝文件共享，让分布式能力触手可及本文将从零开始，完..."
+    },
+    {
+      "rank": 3,
       "title": "凌晨告警人肉排查太累？开源监控 Netdata 内置 ML 实现自动根因定位+AI 协诊",
       "url": "https://www.51cto.com/article/857410.html",
       "hot": "Netdata不是简单的 \"指标收集+可视化\"，而是一个内置 AI/ML 引擎的全栈可观测性平台。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "告别重复敲命令！运维用 LLM 一键生成可直接上线 Shell/Python 脚本，搞定 90% 日常工作",
       "url": "https://www.51cto.com/article/857407.html",
       "hot": "本文结合运维真实高频场景，手把手教大家用 LLM 生成可直接落地的运维脚本，覆盖日常 90% 的重复操作。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "长程 Agent 如何论功行赏？小红书 AllSpark 提出 PACT",
       "url": "https://www.51cto.com/article/857405.html",
       "hot": "小红书 AllSpark 团队提出三个正则条件，证明满足这些条件的信用分配存在且唯一，并据此分析 OPD、RLOO 和 GAE 中的训练现象。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "TCP为什么握手要三回，挥手四次？深入浅出给你图解",
       "url": "https://www.51cto.com/article/857404.html",
       "hot": "TCP通过三次握手和四次挥手机制，都是为了在不可靠的IP网络层之上,不可靠信道上，\"尽可能地\"提供可靠的端到端的传输服务。通过确认机制、序列号、延迟机制和状态管理，确保了数据传输的可靠性、有序性和连接管理的正确性。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "AI Harness 构建完整记忆系统：何为AI智能客服？",
       "url": "https://www.51cto.com/article/857403.html",
       "hot": "单个客户打进来时，检索只在他的记忆里比——大概 50 次比较，很快，但那次把问题转成向量的调用本身就要几十到上百毫秒，在延迟预算低于 300 毫秒的语音场景里，这是一笔不小的开销。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "Java 开发：OpenFeign 调用经常报错？超时、重试、日志、异常处理优化方案",
       "url": "https://www.51cto.com/article/857402.html",
       "hot": "本文从生产实战角度出发，系统拆解 OpenFeign 的超时配置、重试机制、日志打印、异常处理、性能优化五大核心模块，每个知识点都配套可直接落地的代码与配置，帮你彻底解决 OpenFeign 调用经常报错的问题。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "20多个王炸连发！OpenAI史上最大开发者日：个人智能体dots果然来了，500美金订阅登场",
       "url": "https://www.51cto.com/article/857400.html",
       "hot": "整场发布会展现了OpenAI从底层模型、开发架构到协同办公与商业变现的完整布局，AI正在全面融入人类的实际工作流程中。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "从发现漏洞到判定作弊：BenchShield提出Reward Hacking检测新框架",
       "url": "https://www.51cto.com/article/857399.html",
       "hot": "对 benchmark 设计者而言，这意味着需要一并说明任务允许 Agent 做什么、提交结果如何进入评测，以及哪些记录可用于复核。"
-    },
-    {
-      "rank": 9,
-      "title": "WorkBuddy 居然能直接「吃」微信聊天记录？我把技术群 200 条讨论整包丢了进去",
-      "url": "https://www.51cto.com/article/857398.html",
-      "hot": "我们有个「交易系统重构讨论」群。上周五晚上，产品、DBA、测试、架构师在里面吵了半个多小时，从限流聊到库存扣减，从 Redis Lua 聊到分库分表，中间夹了一张手绘架构草图和一个接口文档。"
-    },
-    {
-      "rank": 10,
-      "title": "接口默认方法与静态方法：到底是解耦还是埋坑",
-      "url": "https://www.51cto.com/article/857363.html",
-      "hot": "这篇文章想把接口默认方法与静态方法这两类用法分开，先说清楚它为什么存在、怎么工作的，再说哪些地方容易出问题。"
     }
   ]
 }

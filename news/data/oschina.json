@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-09-30T02:25:11+00:00",
+  "updated_at": "2026-09-30T08:45:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "谷歌将提前两年终止对 ChromeOS 的支持",
+      "url": "https://www.oschina.net/news/502827/google-ending-chromeos-support-two-years-early",
+      "hot": "Wed, 30 Sep 2026 16:09:49 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "【AI 智能运维平台】本周更新：智能体问答现可展示知识库中的图片",
+      "url": "https://www.oschina.net/news/502823",
+      "hot": "Wed, 30 Sep 2026 15:01:20 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI 发布全天候运行 AI Agent \"dots\"，由 GPT‑6 Astra 驱动、拥有独立的云端电脑",
+      "url": "https://www.oschina.net/news/502820/openai-dots",
+      "hot": "Wed, 30 Sep 2026 14:25:01 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "MateClaw 2.3.0 发布：企业智能体告别“自报完成”，不可变 JSON 接管长任务验收",
+      "url": "https://www.oschina.net/news/502818",
+      "hot": "Wed, 30 Sep 2026 14:08:44 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "DeepSeek Harness v0.2 发布桌面版：装插件靠 npm 包名，还能让 AI 自己写插件",
+      "url": "https://www.oschina.net/news/502817",
+      "hot": "Wed, 30 Sep 2026 13:59:16 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Resumv 开源：免注册、本地保存的简历制作工具，支持 15 套模板",
+      "url": "https://www.oschina.net/news/502816",
+      "hot": "Wed, 30 Sep 2026 13:26:45 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "Termexo v0.10.9 发布：五种 Agent 状态集中显示，终端内可确认完成",
+      "url": "https://www.oschina.net/news/502815",
+      "hot": "Wed, 30 Sep 2026 13:20:38 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "DeepSeek 开源昇腾基础组件",
+      "url": "https://www.oschina.net/news/502814",
+      "hot": "Wed, 30 Sep 2026 12:40:55 +0800"
+    },
+    {
+      "rank": 9,
       "title": "KnowForge v2026.0.7 发布：让知识库更好运营，让内容彼此连接",
       "url": "https://www.oschina.net/news/502812",
       "hot": "Wed, 30 Sep 2026 09:51:23 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "Goodlink 支持同时运行多个Local端和Remote端 全网最简单、最快、零成本的内网穿透",
       "url": "https://www.oschina.net/news/502808",
       "hot": "Tue, 29 Sep 2026 18:07:38 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "Meta 挖走 MongoDB 的 CEO 去管企业 AI，后者股价一天崩了 18%",
-      "url": "https://www.oschina.net/news/502807",
-      "hot": "Tue, 29 Sep 2026 17:43:59 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "Codeaha v1.0.0 正式发布—本地优先的 AI 编程伙伴",
-      "url": "https://www.oschina.net/news/502806",
-      "hot": "Tue, 29 Sep 2026 17:05:45 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Linux 内核要扔掉自己的 LZ4 fork，改为直接引入和同步上游代码",
-      "url": "https://www.oschina.net/news/502802",
-      "hot": "Tue, 29 Sep 2026 15:28:56 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "荷兰政府基于 NixOS 打造替代 Windows 的办公系统",
-      "url": "https://www.oschina.net/news/502799",
-      "hot": "Tue, 29 Sep 2026 15:14:03 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Jeff 开源发布：22 毫秒出一次决策的小模型、0.8B 微调在 benchmark 上逼近 Jev",
-      "url": "https://www.oschina.net/news/502796",
-      "hot": "Tue, 29 Sep 2026 14:12:39 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Claude Sonnet 5.5 发布：速度快 3 成、Agent 编程评测从 10% 跳到 70%",
-      "url": "https://www.oschina.net/news/502794/claude-sonnet-5-5",
-      "hot": "Tue, 29 Sep 2026 12:14:33 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Java Web 服务器 wastnet mvc 开发实战",
-      "url": "https://www.oschina.net/news/502793",
-      "hot": "Tue, 29 Sep 2026 11:54:02 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "CyreneAdmin 1.5.0 发布：新增 i18n 与 E2E 测试，全面升级前后端依赖",
-      "url": "https://www.oschina.net/news/502792",
-      "hot": "Tue, 29 Sep 2026 11:52:10 +0800"
     }
   ]
 }

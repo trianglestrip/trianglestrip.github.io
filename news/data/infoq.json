@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-09-30T02:25:13+00:00",
+  "updated_at": "2026-09-30T08:46:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "意图驱动治理：分钟级实现敏感数据规模化保护｜ 技术实践",
+      "url": "https://www.infoq.cn/article/ZBXXP1BuZMIGusWyQZvB?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 30 Sep 2026 15:42:49 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Changesets 3.0 发布：对等依赖下游包默认升补丁版本，纯 ESM 发布，安装体积缩减 88%",
+      "url": "https://www.infoq.cn/article/JEw7578VW84g7wmh75gM?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 30 Sep 2026 15:25:27 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "从 AI 试点到营收增长：Snowflake 销售与营销团队如何跨越落地鸿沟 ｜ 技术实践",
+      "url": "https://www.infoq.cn/article/hw3PpM2ZlCmCArsNo1y7?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 30 Sep 2026 15:12:35 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "一个忘关的开关，与企业Agent的全栈技术账单",
+      "url": "https://www.infoq.cn/article/z9VP6ZQ3vCxTrk1VdU5D?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 30 Sep 2026 12:10:15 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "首发！openJiuwen workSwarm全双工多模态 ，像聊天一样与Agent交互，昇腾算力原生亲和",
+      "url": "https://www.infoq.cn/article/fOuaRtwuySyZsS0iGg7N?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 30 Sep 2026 11:52:00 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "Java 近期新闻：JDK 27、Open J Proxy、A2A Jakarta、Azul Payara、BoxLang、Netflix ja",
+      "url": "https://www.infoq.cn/article/Rgb6X5RSD1P8HQzRc0K7?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 30 Sep 2026 10:45:00 GMT"
+    },
+    {
+      "rank": 7,
       "title": "AIGC 驱动的内容生产力变革--Vidu 多模态大模型的创新与实践｜QCon上海",
       "url": "https://www.infoq.cn/article/OBQpdcB1xURrJMRlrJZ1?utm_source=rss&utm_medium=article",
       "hot": "Wed, 30 Sep 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Uber 使用子集群重新设计 M3DB 分片策略，降低故障影响",
       "url": "https://www.infoq.cn/article/dbOwzu6l6Tr8NAhCQRC8?utm_source=rss&utm_medium=article",
       "hot": "Wed, 30 Sep 2026 09:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "亚马逊云科技无法恢复仅存储在受损的中东可用区的数据",
       "url": "https://www.infoq.cn/article/YWXyACETW4aRchQbSJE0?utm_source=rss&utm_medium=article",
       "hot": "Tue, 29 Sep 2026 18:41:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "Agent 不只烧 Token：为什么 Agent Sandbox 正在变得重要？",
       "url": "https://www.infoq.cn/article/he0zFgEyStxF9kOh70AP?utm_source=rss&utm_medium=article",
       "hot": "Tue, 29 Sep 2026 18:36:43 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "Agent 编程能力从 10% 飙到 70%，Anthropic 新模型却遭遇灵魂拷问：我什么时候才会用它？",
-      "url": "https://www.infoq.cn/article/PSvHjyoJTC9bSLWYxpfF?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 29 Sep 2026 18:07:09 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "上下文优势：AI 增长战略缺失的关键拼图 ｜ 技术趋势",
-      "url": "https://www.infoq.cn/article/ftFzzJ6jgxha7grHHLjf?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 29 Sep 2026 18:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Bun 在四个月内将 53.5 万行 Zig 代码重写为 Rust，消除了大量内存泄漏",
-      "url": "https://www.infoq.cn/article/0x1uOEWOj16S1vNmtsuP?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 29 Sep 2026 17:37:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "金句抢先看 | 每天上千万次创建：Agent Sandbox 为什么会成为新算力形态？",
-      "url": "https://www.infoq.cn/video/HsaJfo3DKR9XC0LeeV30?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 29 Sep 2026 17:06:48 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "MariaDB 13 扩展 Oracle 兼容性，改善开发者体验与可观测性",
-      "url": "https://www.infoq.cn/article/vWO5oOkToq5WYFE18WiB?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 29 Sep 2026 16:48:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "大模型下沉车规芯片：超六成的车企座舱，为何选中了同一个“端侧大脑”？",
-      "url": "https://www.infoq.cn/article/O5pKYU5hfR2DgrXP6zRE?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 29 Sep 2026 15:49:30 GMT"
     }
   ]
 }
