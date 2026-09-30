@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-30T15:25:29+00:00",
+  "updated_at": "2026-09-30T20:08:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Pi.dev: You Said No MCP",
-      "url": "https://earendil.com/posts/you-said-no-mcp/",
-      "hot": "365"
+      "title": "Gemini 4 Argon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "hot": "35"
     },
     {
       "rank": 2,
-      "title": "SDF vs. MSDF vs. Slug: GPU Text Rendering",
-      "url": "https://alphapixeldev.com/sdf-vs-msdf-vs-slug-vs-rive-gpu-text-rendering/",
-      "hot": "30"
+      "title": "EDG C++ front-end goes public",
+      "url": "https://edgcpp.org/#transition",
+      "hot": "37"
     },
     {
       "rank": 3,
-      "title": "Show HN: JBR-001 – An open-source 3D printable desktop robot",
-      "url": "https://projecthub.arduino.cc/syntheticaidata/jbr-001-a-desktop-companion-robot-powered-by-arduino-uno-q-b11c96",
-      "hot": "83"
+      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "hot": "82"
     },
     {
       "rank": 4,
-      "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
-      "url": "https://github.com/ninjahawk/livenerf",
-      "hot": "779"
+      "title": "Surprisingly Complex Waves Reveal the Brain's Inner Workings",
+      "url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
+      "hot": "25"
     },
     {
       "rank": 5,
-      "title": "Mathematical Origami",
-      "url": "https://mathigon.org/origami",
-      "hot": "51"
+      "title": "A brief history of the Bloomberg terminal",
+      "url": "https://spectrum.ieee.org/bloomberg-terminal",
+      "hot": "164"
     },
     {
       "rank": 6,
-      "title": "Solving Factorio Quality",
-      "url": "https://exyr.org/2026/solving-factorio-quality/",
-      "hot": "184"
+      "title": "Commit description as a thinking tool",
+      "url": "https://yedhu.me/posts/commit-description-as-a-thinking-tool/",
+      "hot": "80"
     },
     {
       "rank": 7,
-      "title": "I can't tell who's teaching who anymore",
-      "url": "https://blog.murphytrueman.com/i-cant-tell-whos-teaching-who-anymore/",
-      "hot": "4"
+      "title": "5x faster Edge Functions: V8 isolates to Firecracker MicroVMs",
+      "url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
+      "hot": "33"
     },
     {
       "rank": 8,
-      "title": "Getting out of the way: my robotics crash course",
-      "url": "https://thisismypersonalblog.com/posts/2026-09-25-getting-out-of-the-way/",
-      "hot": "12"
+      "title": "You said no MCP",
+      "url": "https://earendil.com/posts/you-said-no-mcp/",
+      "hot": "531"
     },
     {
       "rank": 9,
-      "title": "Dots: Always-on agents",
-      "url": "https://openai.com/index/introducing-dots/",
-      "hot": "699"
+      "title": "I Could've Accessed 17T Microsoft Records",
+      "url": "https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records",
+      "hot": "191"
     },
     {
       "rank": 10,
-      "title": "Vermont replacing power plants with home batteries",
-      "url": "https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidden-in-vermont-homes-is-keeping-the-lights-on-during-storms",
-      "hot": "298"
+      "title": "Halfspace experimental IDE for solid modeling with distance fields",
+      "url": "https://www.mattkeeter.com/projects/halfspace/",
+      "hot": "7"
     }
   ]
 }

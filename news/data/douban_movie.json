@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-09-30T15:24:57+00:00",
+  "updated_at": "2026-09-30T20:08:30+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "生化危机：爆发夜",
-      "url": "https://movie.douban.com/subject/37068446/",
-      "hot": ""
-    },
-    {
-      "rank": 5,
       "title": "奥德赛",
       "url": "https://movie.douban.com/subject/36808876/",
       "hot": "评分 8.6"
+    },
+    {
+      "rank": 5,
+      "title": "生化危机：爆发夜",
+      "url": "https://movie.douban.com/subject/37068446/",
+      "hot": ""
     },
     {
       "rank": 6,
@@ -42,21 +42,21 @@
     },
     {
       "rank": 7,
+      "title": "给阿嬷的情书",
+      "url": "https://movie.douban.com/subject/37116446/",
+      "hot": "评分 9.3"
+    },
+    {
+      "rank": 8,
       "title": "早春晴朗",
       "url": "https://movie.douban.com/subject/36660844/",
       "hot": "评分 6.7"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "交锋",
       "url": "https://movie.douban.com/subject/36314809/",
       "hot": "评分 7.3"
-    },
-    {
-      "rank": 9,
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.3"
     },
     {
       "rank": 10,
