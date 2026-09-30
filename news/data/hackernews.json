@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-29T23:45:35+00:00",
+  "updated_at": "2026-09-30T02:25:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
       "url": "https://github.com/ninjahawk/livenerf",
-      "hot": "78"
+      "hot": "254"
     },
     {
       "rank": 2,
       "title": "U.S. postal inspectors shut down website selling counterfeit postage labels",
       "url": "https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/",
-      "hot": "147"
+      "hot": "176"
     },
     {
       "rank": 3,
-      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
-      "hot": "741"
+      "title": "Vermont replacing power plants with home batteries",
+      "url": "https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidden-in-vermont-homes-is-keeping-the-lights-on-during-storms",
+      "hot": "100"
     },
     {
       "rank": 4,
-      "title": "Show HN: Real-time Solar System with 526k asteroids and all tracked satellites",
-      "url": "https://space.bl2.net/",
-      "hot": "78"
+      "title": "I Turned a DirecTV HR54-700 into a Standalone Jellyfin Box",
+      "url": "https://voidnullvalue.github.io/DIRECTV-HR54-700/",
+      "hot": "12"
     },
     {
       "rank": 5,
-      "title": "NAND-16: a computer built from 277,248 NAND gates",
-      "url": "https://somethingbig.ai/computer",
-      "hot": "103"
+      "title": "America.gov",
+      "url": "https://america.gov/",
+      "hot": "372"
     },
     {
       "rank": 6,
-      "title": "How our vibe coded website looks like a designer made it",
-      "url": "https://railcode.dev/blog/vibe-coded-website",
-      "hot": "27"
+      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "hot": "802"
     },
     {
       "rank": 7,
-      "title": "America.gov",
-      "url": "https://america.gov/",
-      "hot": "280"
+      "title": "When oil prices spike, where does the money go?",
+      "url": "https://theconversation.com/when-oil-prices-spike-where-does-the-money-go-280763",
+      "hot": "40"
     },
     {
       "rank": 8,
-      "title": "PS5 Relapse Exploit",
-      "url": "https://github.com/ntfargo/Relapse-Exploit",
-      "hot": "214"
+      "title": "Show HN: Real-time Solar System with 526k asteroids and all tracked satellites",
+      "url": "https://space.bl2.net/",
+      "hot": "116"
     },
     {
       "rank": 9,
-      "title": "UnoDOS",
-      "url": "https://github.com/hmofet/unodos",
-      "hot": "9"
+      "title": "How Delhi cut electricity loss from 50 to 5 percent",
+      "url": "https://spectrum.ieee.org/delhi-electricity-loss",
+      "hot": "441"
     },
     {
       "rank": 10,
-      "title": "How Delhi cut electricity loss from 50 to 5 percent",
-      "url": "https://spectrum.ieee.org/delhi-electricity-loss",
-      "hot": "416"
+      "title": "Needed 1+1, built a functional programming language",
+      "url": "https://hereticpleb.vercel.app/blog/needed-one-plus-one/",
+      "hot": "32"
     }
   ]
 }

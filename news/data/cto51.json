@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-09-29T23:45:33+00:00",
+  "updated_at": "2026-09-30T02:25:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Context Engineering 完整指南：为什么管理上下文比堆大窗口更重要",
-      "url": "https://www.51cto.com/article/857227.html",
-      "hot": "随着 AI 系统变得更强大，agents 承担越来越长、越来越复杂的任务，单纯向 context window 中添加更多信息并不是答案。真正的挑战在于选择正确的信息，保留重要内容，移除不重要内容，并让不同任务保持聚焦。从这个意义上说，context engineering 正在变得不再只是打造完美 prompt，而是更多地关乎设计 AI 系统运行所处的信息环境。"
+      "title": "凌晨告警人肉排查太累？开源监控 Netdata 内置 ML 实现自动根因定位+AI 协诊",
+      "url": "https://www.51cto.com/article/857410.html",
+      "hot": "Netdata不是简单的 \"指标收集+可视化\"，而是一个内置 AI/ML 引擎的全栈可观测性平台。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7.0 文搜图实战④：搜索结果优化  # 智绘鸿蒙·如 7 而至#",
-      "url": "https://ost.51cto.com/posts/58180",
-      "hot": "上一篇，我们为「一句找图」的图库变化建立了规则。新增图片有自己的身份，移除图片有明确边界，操作中断后也留下了恢复的线索。现在，可以..."
+      "title": "告别重复敲命令！运维用 LLM 一键生成可直接上线 Shell/Python 脚本，搞定 90% 日常工作",
+      "url": "https://www.51cto.com/article/857407.html",
+      "hot": "本文结合运维真实高频场景，手把手教大家用 LLM 生成可直接落地的运维脚本，覆盖日常 90% 的重复操作。"
     },
     {
       "rank": 3,
-      "title": "鸿蒙数据持久化选型：PersistenceV2 和首选项的实战对比 # 智绘鸿蒙·如 7 而至#",
-      "url": "https://ost.51cto.com/posts/58143",
-      "hot": "鸿蒙数据持久化选型：PersistenceV2和首选项的实战对比做云账本的时候我犯过一个挺蠢的错误：设置页的&quot;记账完成震动&quot;开关，我用Persistence..."
+      "title": "长程 Agent 如何论功行赏？小红书 AllSpark 提出 PACT",
+      "url": "https://www.51cto.com/article/857405.html",
+      "hot": "小红书 AllSpark 团队提出三个正则条件，证明满足这些条件的信用分配存在且唯一，并据此分析 OPD、RLOO 和 GAE 中的训练现象。"
     },
     {
       "rank": 4,
-      "title": "周一汇报被当场问穿后，我用 Zabbix+DeepSeek 重构运维报表：4 小时→8 分钟，月成本仅 1.4 元",
-      "url": "https://www.51cto.com/article/857270.html",
-      "hot": "Zabbix API 出数据、DeepSeek 出结论、matplotlib 出图表、Python 拼装推送，全链路 8 分钟产出一份有数据有图有依据的运维周报。"
+      "title": "TCP为什么握手要三回，挥手四次？深入浅出给你图解",
+      "url": "https://www.51cto.com/article/857404.html",
+      "hot": "TCP通过三次握手和四次挥手机制，都是为了在不可靠的IP网络层之上,不可靠信道上，\"尽可能地\"提供可靠的端到端的传输服务。通过确认机制、序列号、延迟机制和状态管理，确保了数据传输的可靠性、有序性和连接管理的正确性。"
     },
     {
       "rank": 5,
-      "title": "从 Prompt→Context→Harness：AI 编程从代码生成走向工程交付的演进之路",
-      "url": "https://www.51cto.com/article/857265.html",
-      "hot": "本文从 Prompt、Context 到 Harness 的演进出发，讨论如何围绕模型构建规则、工具、记忆、验证和编排机制，让 AI 编程进入真实研发流程。"
+      "title": "AI Harness 构建完整记忆系统：何为AI智能客服？",
+      "url": "https://www.51cto.com/article/857403.html",
+      "hot": "单个客户打进来时，检索只在他的记忆里比——大概 50 次比较，很快，但那次把问题转成向量的调用本身就要几十到上百毫秒，在延迟预算低于 300 毫秒的语音场景里，这是一笔不小的开销。"
     },
     {
       "rank": 6,
-      "title": "SceneMosaic：让3D场景生成既快又「活」，一张图生成一屋子可仿真的多样布局",
-      "url": "https://www.51cto.com/article/857261.html",
-      "hot": "来自香港大学等机构的戴勃老师团队提出了 SceneMosaic。Mosaic（马赛克）正是它的核心隐喻：一个场景不是固定不动的整体，而是由一块块可以独立替换的\"局部拼片\"拼成的。"
+      "title": "Java 开发：OpenFeign 调用经常报错？超时、重试、日志、异常处理优化方案",
+      "url": "https://www.51cto.com/article/857402.html",
+      "hot": "本文从生产实战角度出发，系统拆解 OpenFeign 的超时配置、重试机制、日志打印、异常处理、性能优化五大核心模块，每个知识点都配套可直接落地的代码与配置，帮你彻底解决 OpenFeign 调用经常报错的问题。"
     },
     {
       "rank": 7,
-      "title": "IDC×浪潮信息最新报告！22亿Agent背后，AI算力正迎来一场重构",
-      "url": "https://www.51cto.com/article/857259.html",
-      "hot": "近日，在 2026 人工智能计算大会（AICC2026）上，IDC 与浪潮信息联合发布《2026 年中国人工智能计算力发展评估报告》（以下简称《报告》），与往年相比，今年《报告》把 Agent 放到了一个更核心的位置。"
+      "title": "20多个王炸连发！OpenAI史上最大开发者日：个人智能体dots果然来了，500美金订阅登场",
+      "url": "https://www.51cto.com/article/857400.html",
+      "hot": "整场发布会展现了OpenAI从底层模型、开发架构到协同办公与商业变现的完整布局，AI正在全面融入人类的实际工作流程中。"
     },
     {
       "rank": 8,
-      "title": "AI 消除了编码瓶颈，为什么软件工程师反而每天工作 13 个小时？",
-      "url": "https://www.51cto.com/article/857163.html",
-      "hot": "代码审查也是一样。如果改动由一个智能体编写，再由另一个智能体批准，整个流程里可能没有任何人真正理解它。最终要为结果负责的人，仍然得亲自读懂这些改动。团队必须为这件事留出时间，而不是等到一天已经工作了 13 个小时，再设法把审查塞进去。"
+      "title": "从发现漏洞到判定作弊：BenchShield提出Reward Hacking检测新框架",
+      "url": "https://www.51cto.com/article/857399.html",
+      "hot": "对 benchmark 设计者而言，这意味着需要一并说明任务允许 Agent 做什么、提交结果如何进入评测，以及哪些记录可用于复核。"
     },
     {
       "rank": 9,
-      "title": "18秒出片、视频生成提速265倍！北大清华阿里提出SparkDiffusion",
-      "url": "https://www.51cto.com/article/857256.html",
-      "hot": "北京大学、清华大学、阿里巴巴等机构的研究者提出了 SparkDiffusion：首个将稀疏注意力、少步蒸馏与低精度量化整合到统一框架(含开源权重及完整训练代码)的视频生成加速系统，推动 DiT 视频生成从「分散优化单个组件」转向「端到端系统化加速」的新范式。"
+      "title": "WorkBuddy 居然能直接「吃」微信聊天记录？我把技术群 200 条讨论整包丢了进去",
+      "url": "https://www.51cto.com/article/857398.html",
+      "hot": "我们有个「交易系统重构讨论」群。上周五晚上，产品、DBA、测试、架构师在里面吵了半个多小时，从限流聊到库存扣减，从 Redis Lua 聊到分库分表，中间夹了一张手绘架构草图和一个接口文档。"
     },
     {
       "rank": 10,
-      "title": "用AI造的！刚刚，代季峰团队首个模型开源",
-      "url": "https://www.51cto.com/article/857255.html",
-      "hot": "短短半个多月，「让 AI 研发 AI」就已经从一个偏理论的话题变成了头部实验室争相公开的量化指标。但仔细看，这些数字回答的大多是同一个问题：研发下一代大模型，AI能接手多少工作？"
+      "title": "接口默认方法与静态方法：到底是解耦还是埋坑",
+      "url": "https://www.51cto.com/article/857363.html",
+      "hot": "这篇文章想把接口默认方法与静态方法这两类用法分开，先说清楚它为什么存在、怎么工作的，再说哪些地方容易出问题。"
     }
   ]
 }
