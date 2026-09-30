@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-09-30T15:25:52+00:00",
+  "updated_at": "2026-09-30T23:44:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "convaiinnovations/laya",
-      "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "4609"
+      "title": "Edge0/Audio8-ASR-Infinite",
+      "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
+      "hot": "1837"
     },
     {
       "rank": 2,
-      "title": "Edge0/Audio8-ASR-Infinite",
-      "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
-      "hot": "1619"
+      "title": "convaiinnovations/laya",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "hot": "4680"
     },
     {
       "rank": 3,
-      "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "2505"
+      "title": "XingChen-AGI/TeleOCR",
+      "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
+      "hot": "1095"
     },
     {
       "rank": 4,
-      "title": "XingChen-AGI/TeleOCR",
-      "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
-      "hot": "996"
+      "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "hot": "2572"
     },
     {
       "rank": 5,
       "title": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "hot": "2698"
+      "hot": "2720"
     },
     {
       "rank": 6,
       "title": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
-      "hot": "552"
+      "hot": "573"
     },
     {
       "rank": 7,
       "title": "nvidia/Nemotron-3-Diarization",
       "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
-      "hot": "542"
+      "hot": "561"
     },
     {
       "rank": 8,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "16620"
+      "hot": "16650"
     },
     {
       "rank": 9,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "5636"
+      "hot": "5716"
     },
     {
       "rank": 10,
-      "title": "XingChen-AGI/Xing4.0-29B-A4B",
-      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-      "hot": "1812"
+      "title": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "hot": "2307"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-30T20:08:51+00:00",
+  "updated_at": "2026-09-30T23:43:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Gemini 4 Argon",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-      "hot": "35"
+      "hot": "843"
     },
     {
       "rank": 2,
-      "title": "EDG C++ front-end goes public",
-      "url": "https://edgcpp.org/#transition",
-      "hot": "37"
+      "title": "The top secret URSALA, RAQUEL, and FARRAH satellites",
+      "url": "https://www.thespacereview.com/article/4951/1",
+      "hot": "81"
     },
     {
       "rank": 3,
-      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
-      "url": "https://github.com/magnitudedev/magnitude",
-      "hot": "82"
+      "title": "Surprisingly complex waves reveal the brain's inner workings",
+      "url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
+      "hot": "104"
     },
     {
       "rank": 4,
-      "title": "Surprisingly Complex Waves Reveal the Brain's Inner Workings",
-      "url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
-      "hot": "25"
+      "title": "EDG C++ front-end goes public",
+      "url": "https://edgcpp.org/#transition",
+      "hot": "124"
     },
     {
       "rank": 5,
-      "title": "A brief history of the Bloomberg terminal",
-      "url": "https://spectrum.ieee.org/bloomberg-terminal",
-      "hot": "164"
+      "title": "Singapore govt dating app uses Gale-Shapley stable marriage algorithm",
+      "url": "https://twitter.com/tuakdotsol/status/2105105417760391258",
+      "hot": "135"
     },
     {
       "rank": 6,
-      "title": "Commit description as a thinking tool",
-      "url": "https://yedhu.me/posts/commit-description-as-a-thinking-tool/",
-      "hot": "80"
+      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "hot": "118"
     },
     {
       "rank": 7,
-      "title": "5x faster Edge Functions: V8 isolates to Firecracker MicroVMs",
-      "url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
-      "hot": "33"
+      "title": "EDG C++ Compiler is open source",
+      "url": "https://github.com/edgcpp/compiler",
+      "hot": "8"
     },
     {
       "rank": 8,
-      "title": "You said no MCP",
-      "url": "https://earendil.com/posts/you-said-no-mcp/",
-      "hot": "531"
+      "title": "Why the Bronze Age Collapsed",
+      "url": "https://www.worksinprogress.news/p/why-really-caused-the-bronze-age",
+      "hot": "49"
     },
     {
       "rank": 9,
-      "title": "I Could've Accessed 17T Microsoft Records",
-      "url": "https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records",
-      "hot": "191"
+      "title": "5x faster Edge Functions: V8 isolates to Firecracker MicroVMs",
+      "url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
+      "hot": "98"
     },
     {
       "rank": 10,
-      "title": "Halfspace experimental IDE for solid modeling with distance fields",
-      "url": "https://www.mattkeeter.com/projects/halfspace/",
-      "hot": "7"
+      "title": "Dear Software Makers",
+      "url": "https://blog.jim-nielsen.com/2026/dear-software-makers/",
+      "hot": "60"
     }
   ]
 }
