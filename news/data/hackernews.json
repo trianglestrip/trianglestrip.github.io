@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-09-30T23:43:52+00:00",
+  "updated_at": "2026-10-01T02:27:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Gemini 4 Argon",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-      "hot": "843"
+      "hot": "1027"
     },
     {
       "rank": 2,
       "title": "The top secret URSALA, RAQUEL, and FARRAH satellites",
       "url": "https://www.thespacereview.com/article/4951/1",
-      "hot": "81"
+      "hot": "138"
     },
     {
       "rank": 3,
-      "title": "Surprisingly complex waves reveal the brain's inner workings",
-      "url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
-      "hot": "104"
+      "title": "56k.rip – the 1996 dial-up internet experience",
+      "url": "https://56k.rip/",
+      "hot": "67"
     },
     {
       "rank": 4,
-      "title": "EDG C++ front-end goes public",
-      "url": "https://edgcpp.org/#transition",
-      "hot": "124"
+      "title": "10-year Treasury yield climbs above 5.3% to a level not seen in 24 years",
+      "url": "https://www.wsj.com/finance/investing/surging-yields-bring-the-bond-market-back-to-the-turn-of-the-century-2b74773f",
+      "hot": "40"
     },
     {
       "rank": 5,
-      "title": "Singapore govt dating app uses Gale-Shapley stable marriage algorithm",
-      "url": "https://twitter.com/tuakdotsol/status/2105105417760391258",
-      "hot": "135"
+      "title": "Surprisingly complex waves reveal the brain's inner workings",
+      "url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
+      "hot": "126"
     },
     {
       "rank": 6,
-      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
-      "url": "https://github.com/magnitudedev/magnitude",
-      "hot": "118"
+      "title": "Why the Bronze Age Collapsed",
+      "url": "https://www.worksinprogress.news/p/why-really-caused-the-bronze-age",
+      "hot": "90"
     },
     {
       "rank": 7,
-      "title": "EDG C++ Compiler is open source",
-      "url": "https://github.com/edgcpp/compiler",
-      "hot": "8"
+      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "hot": "127"
     },
     {
       "rank": 8,
-      "title": "Why the Bronze Age Collapsed",
-      "url": "https://www.worksinprogress.news/p/why-really-caused-the-bronze-age",
-      "hot": "49"
+      "title": "Singapore govt dating app uses Gale-Shapley stable marriage algorithm",
+      "url": "https://twitter.com/tuakdotsol/status/2105105417760391258",
+      "hot": "228"
     },
     {
       "rank": 9,
-      "title": "5x faster Edge Functions: V8 isolates to Firecracker MicroVMs",
-      "url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
-      "hot": "98"
+      "title": "Halfspace experimental IDE for solid modeling with distance fields",
+      "url": "https://www.mattkeeter.com/projects/halfspace/",
+      "hot": "78"
     },
     {
       "rank": 10,
-      "title": "Dear Software Makers",
-      "url": "https://blog.jim-nielsen.com/2026/dear-software-makers/",
-      "hot": "60"
+      "title": "5x faster Edge Functions: V8 isolates to Firecracker MicroVMs",
+      "url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
+      "hot": "121"
     }
   ]
 }
