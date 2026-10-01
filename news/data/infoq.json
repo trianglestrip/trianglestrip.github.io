@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-01T02:27:20+00:00",
+  "updated_at": "2026-10-01T09:12:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "在 Cloudflare Worker 上实现多租户 SaaS 规模的模块化边缘计算",
+      "url": "https://www.infoq.cn/article/P5yCYKFiJfKAICrf8bfs?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 01 Oct 2026 14:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "刚刚，Gemini 4 Argon 发布：多项基测碾压 GPT-6 Astra，已参与谷歌 80 万行内核代码迁移",
+      "url": "https://www.infoq.cn/article/vVrSzjhEvkmpevS7wZzU?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 01 Oct 2026 11:00:00 GMT"
+    },
+    {
+      "rank": 3,
       "title": "Elastic Beanstalk 跑上 EKS，开发者质疑：为什么不把 ECS 做好？",
       "url": "https://www.infoq.cn/article/AYXLumiEmzcCrKrRuq9B?utm_source=rss&utm_medium=article",
       "hot": "Thu, 01 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "生成即合规：Agentic AIGC 驱动的广告素材修复实践｜QCon上海",
       "url": "https://www.infoq.cn/article/TLjNcyBg9Z72HV5kJ2kp?utm_source=rss&utm_medium=article",
       "hot": "Thu, 01 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "谷歌开源面向自主 AI 代理的 Kubernetes 风格编排器 AX",
       "url": "https://www.infoq.cn/article/M6BRTrsyJvUg8y0M0kyh?utm_source=rss&utm_medium=article",
       "hot": "Wed, 30 Sep 2026 20:40:07 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "GitLab Duo 通过微软 Foundry 扩展自托管 AI 选项",
       "url": "https://www.infoq.cn/article/cA9rSEGKphbJHIiTQKMv?utm_source=rss&utm_medium=article",
       "hot": "Wed, 30 Sep 2026 20:37:48 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "DeepSeek 开源昇腾平台基础设施组件，覆盖 TileLang、计算库与分布式通信库",
       "url": "https://www.infoq.cn/article/t5i2Yv2z0LwIbK36lteR?utm_source=rss&utm_medium=article",
       "hot": "Wed, 30 Sep 2026 19:40:16 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "像改文字一样改语音：火山引擎全新语音内容编辑模型",
       "url": "https://www.infoq.cn/article/07qzHLvyNXSW1SFNV5NV?utm_source=rss&utm_medium=article",
       "hot": "Wed, 30 Sep 2026 19:39:04 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "机房堆满算力卡，业务却还在排队？这份评估报告拆开了“算力荒假象”的破局账本",
       "url": "https://www.infoq.cn/article/bduvBdbgwxj6DMbNeKCC?utm_source=rss&utm_medium=article",
       "hot": "Wed, 30 Sep 2026 17:37:10 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "意图驱动治理：分钟级实现敏感数据规模化保护｜ 技术实践",
       "url": "https://www.infoq.cn/article/ZBXXP1BuZMIGusWyQZvB?utm_source=rss&utm_medium=article",
       "hot": "Wed, 30 Sep 2026 15:42:49 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Changesets 3.0 发布：对等依赖下游包默认升补丁版本，纯 ESM 发布，安装体积缩减 88%",
-      "url": "https://www.infoq.cn/article/JEw7578VW84g7wmh75gM?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 30 Sep 2026 15:25:27 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "从 AI 试点到营收增长：Snowflake 销售与营销团队如何跨越落地鸿沟 ｜ 技术实践",
-      "url": "https://www.infoq.cn/article/hw3PpM2ZlCmCArsNo1y7?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 30 Sep 2026 15:12:35 GMT"
     }
   ]
 }
