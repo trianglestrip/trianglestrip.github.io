@@ -1,9 +1,8 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-01T21:21:44+00:00",
-  "fetch_ok": false,
-  "error": "Command '['hotboard', 'cto51', '--format', 'json']' timed out after 60 seconds",
+  "updated_at": "2026-10-02T00:43:28+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,

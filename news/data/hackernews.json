@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-01T21:21:45+00:00",
+  "updated_at": "2026-10-02T00:43:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Pi 1.0",
       "url": "https://earendil.com/posts/pi-1-0/",
-      "hot": "357"
+      "hot": "696"
     },
     {
       "rank": 2,
-      "title": "Car Is a Smartphone on Wheels. Here's Who's Listening",
-      "url": "https://automatictransmission.khoury.northeastern.edu/index.html",
-      "hot": "47"
+      "title": "Clef: Open-weight decision models, and new RL fine-tuning platform",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "hot": "414"
     },
     {
       "rank": 3,
-      "title": "Clef: Open-source decision models, and new RL fine-tuning platform",
-      "url": "https://blog.cloudflare.com/clef-decision-models/",
-      "hot": "344"
+      "title": "Several vulnerabilities have been discovered in the Linux kernel",
+      "url": "https://lwn.net/Articles/1097401/",
+      "hot": "39"
     },
     {
       "rank": 4,
-      "title": "Pi Durable",
-      "url": "https://earendil.com/posts/pi-durable/",
-      "hot": "74"
+      "title": "SvelteKit 3",
+      "url": "https://svelte.dev/blog/sveltekit-3-is-here",
+      "hot": "96"
     },
     {
       "rank": 5,
-      "title": "RIP, vector database",
-      "url": "https://turbopuffer.com/blog/rip-vector-database",
-      "hot": "232"
+      "title": "Ask HN: Who is hiring? (October 2026)",
+      "url": "https://news.ycombinator.com/item?id=49922569",
+      "hot": "143"
     },
     {
       "rank": 6,
-      "title": "Oxygen-deprived underwater zones may not be \"dead zones\" but clue to early life",
-      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026AV002570",
-      "hot": "45"
+      "title": "Show HN: Janus – Go binary that runs GGUF models via Vulkan on AMD/Intel/Nvidia",
+      "url": "https://github.com/Vibra-Ingenn/Janus",
+      "hot": "46"
     },
     {
       "rank": 7,
-      "title": "ArXiv's Updated Rate Limit Policy",
-      "url": "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/",
-      "hot": "22"
+      "title": "CSS Bed: Classless CSS themes to use as starting points in web development",
+      "url": "https://www.cssbed.com",
+      "hot": "50"
     },
     {
       "rank": 8,
       "title": "StreetComplete on iOS is now in public beta",
       "url": "https://github.com/streetcomplete/StreetComplete/issues/5421",
-      "hot": "476"
+      "hot": "515"
     },
     {
       "rank": 9,
-      "title": "Bez: Generating a browser engine from specs and tests",
-      "url": "https://tangled.org/burrito.space/bez",
-      "hot": "67"
+      "title": "Pi Durable",
+      "url": "https://earendil.com/posts/pi-durable/",
+      "hot": "201"
     },
     {
       "rank": 10,
-      "title": "Show HN: Janus – Go binary that runs GGUF models via Vulkan on AMD/Intel/Nvidia",
-      "url": "https://github.com/Vibra-Ingenn/Janus",
-      "hot": "7"
+      "title": "Using Opus 5.5 to discover a new eyewitness record of the dodo",
+      "url": "https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness",
+      "hot": "48"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-01T21:18:39+00:00",
+  "updated_at": "2026-10-02T00:43:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "漫话大模型：7 家中国公司被点名「蒸馏」，他们到底偷走了什么？",
       "url": "https://juejin.cn/post/7690769804492341298",
-      "hot": "1017"
+      "hot": "1098"
     },
     {
       "rank": 2,
-      "title": "用 GPT-6 Astra 和 Tripo3D 做智慧农业 3D 大屏：从调研到可巡检园区全流程实录",
-      "url": "https://juejin.cn/post/7690497704220196883",
-      "hot": "657"
+      "title": "我重写了整个项目，但没人感谢我！",
+      "url": "https://juejin.cn/post/7690869176362270729",
+      "hot": "558"
     },
     {
       "rank": 3,
-      "title": "我重写了整个项目，但没人感谢我！",
-      "url": "https://juejin.cn/post/7690869176362270729",
-      "hot": "540"
-    },
-    {
-      "rank": 4,
       "title": "非游戏开发者用 AI 做微信小游戏的完整实录：聊天出 MVP、备案 27 天、踩坑",
       "url": "https://juejin.cn/post/7690435049426681898",
       "hot": "477"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "再见了 WebUI，DeepSeek 桌面版真不错。",
       "url": "https://juejin.cn/post/7690490511467544602",
-      "hot": "432"
+      "hot": "450"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "读懂LangGraph 的分支执行逻辑",
       "url": "https://juejin.cn/post/7690468159975637038",
       "hot": "423"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "我排查了一下午，发现项目打包体积翻倍的元凶是它",
       "url": "https://juejin.cn/post/7690614916369252387",
-      "hot": "360"
+      "hot": "369"
+    },
+    {
+      "rank": 7,
+      "title": "Android 原生的 Compose A2UI 也来了，你还抱着 XML 养老吗？",
+      "url": "https://juejin.cn/post/7691030977347207231",
+      "hot": "297"
     },
     {
       "rank": 8,
-      "title": "Android 原生的 Compose A2UI 也来了，你还抱着 XML 养老吗？",
-      "url": "https://juejin.cn/post/7691030977347207231",
+      "title": "AI 测试 Skill 大全，我日常在用的 25 个，夯爆了！",
+      "url": "https://juejin.cn/post/7690414588748464138",
       "hot": "288"
     },
     {
       "rank": 9,
-      "title": "AI 测试 Skill 大全，我日常在用的 25 个，夯爆了！",
-      "url": "https://juejin.cn/post/7690414588748464138",
+      "title": "从程序员到一人公司创业者：这一年半我经历了什么",
+      "url": "https://juejin.cn/post/7690776567971872768",
       "hot": "279"
     },
     {
       "rank": 10,
-      "title": "从程序员到一人公司创业者：这一年半我经历了什么",
-      "url": "https://juejin.cn/post/7690776567971872768",
-      "hot": "270"
+      "title": "基于Jev的浏览器Agent插件狂揽 21k star，3分钟教你解放双手",
+      "url": "https://juejin.cn/post/7690762523469479977",
+      "hot": "198"
     }
   ]
 }
