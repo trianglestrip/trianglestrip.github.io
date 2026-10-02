@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-02T12:34:15+00:00",
+  "updated_at": "2026-10-02T18:00:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【AI智能体】Codex 数据分析与处理实战项目操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/163704437",
-      "hot": "26499"
+      "title": "深入理解 Transformer：Decoder与Masked_Attention",
+      "url": "https://blog.csdn.net/htw250056/article/details/166945752",
+      "hot": "19628"
     },
     {
       "rank": 2,
-      "title": "深入理解 Transformer：Decoder与Masked_Attention",
-      "url": "https://blog.csdn.net/htw250056/article/details/166945752",
-      "hot": "19468"
+      "title": "【从零写一个CAD 04】中键拖动平移：抓住一个点，让它一直待在鼠标底下",
+      "url": "https://blog.csdn.net/2302_80177460/article/details/166938268",
+      "hot": "17766"
     },
     {
       "rank": 3,
-      "title": "【AI大模型接入SDK】ChatSDK：CMake构建静态库完整实现",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/166853485",
-      "hot": "19389"
+      "title": "GitHub 今日推荐｜DiPlay：让 iPhone CarPlay 直连 BYD 车机，无需硬件适配器",
+      "url": "https://blog.csdn.net/weixin_40013817/article/details/166890336",
+      "hot": "11849"
     },
     {
       "rank": 4,
-      "title": "【从零写一个CAD 04】中键拖动平移：抓住一个点，让它一直待在鼠标底下",
-      "url": "https://blog.csdn.net/2302_80177460/article/details/166938268",
-      "hot": "14964"
+      "title": "GPT-6.1 Sol 发布：性能接近 Astra，价格只要五分之一",
+      "url": "https://blog.csdn.net/aidoudoulong/article/details/166886053",
+      "hot": "10106"
     },
     {
       "rank": 5,
-      "title": "GitHub 今日推荐｜DiPlay：让 iPhone CarPlay 直连 BYD 车机，无需硬件适配器",
-      "url": "https://blog.csdn.net/weixin_40013817/article/details/166890336",
-      "hot": "11585"
+      "title": "Agent 流式输出实战：SSE/WebSocket 实现实时响应与中间状态展示",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/166903865",
+      "hot": "7466"
     },
     {
       "rank": 6,
-      "title": "GPT-6.1 Sol 发布：性能接近 Astra，价格只要五分之一",
-      "url": "https://blog.csdn.net/aidoudoulong/article/details/166886053",
-      "hot": "11191"
+      "title": "从HTTPS到MySQL-会话保持的攻防与数据库的真面目",
+      "url": "https://blog.csdn.net/xiongditian/article/details/166994512",
+      "hot": "7233"
     },
     {
       "rank": 7,
-      "title": "物流行业的客户触达难题：用企业微信消息网关打通“最后一厘米“",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/166902190",
-      "hot": "9013"
+      "title": "7天学会SpringBoot+Vue3企业级项目RuoyiOffice（一）：架构篇——一个底座，多端通达",
+      "url": "https://blog.csdn.net/zhouzhongyan/article/details/166982279",
+      "hot": "7218"
     },
     {
       "rank": 8,
-      "title": "日志散在多台服务器怎么查？用 Promtail + Loki + Grafana 搭一套集中检索平台",
-      "url": "https://blog.csdn.net/qq_61024956/article/details/166849158",
-      "hot": "8676"
+      "title": "【BlueZ 】netlink 在 BlueZ 中的应用：用户态与内核态的配置消息传递",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/166645834",
+      "hot": "6836"
     },
     {
       "rank": 9,
-      "title": "7天学会SpringBoot+Vue3企业级项目RuoyiOffice（一）：架构篇——一个底座，多端通达",
-      "url": "https://blog.csdn.net/zhouzhongyan/article/details/166982279",
-      "hot": "7501"
+      "title": "物流行业的客户触达难题：用企业微信消息网关打通“最后一厘米“",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/166902190",
+      "hot": "6565"
     },
     {
       "rank": 10,
-      "title": "【BlueZ 】netlink 在 BlueZ 中的应用：用户态与内核态的配置消息传递",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/166645834",
-      "hot": "7452"
+      "title": "Spring Boot 快速上手：从 Maven 到第一个 Controller",
+      "url": "https://blog.csdn.net/java_nnnn/article/details/166894380",
+      "hot": "6072"
     }
   ]
 }
