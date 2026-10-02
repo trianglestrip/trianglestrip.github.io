@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-02T00:43:47+00:00",
+  "updated_at": "2026-10-02T12:34:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "4864"
+      "hot": "4909"
     },
     {
       "rank": 2,
       "title": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
-      "hot": "1226"
+      "hot": "1246"
     },
     {
       "rank": 3,
       "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "2705"
+      "hot": "2757"
     },
     {
       "rank": 4,
-      "title": "Qwen/Qwen-Image-2.1",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "hot": "2790"
+      "title": "Cloudflare/clef",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "hot": "562"
     },
     {
       "rank": 5,
-      "title": "Contrastive-LM/CLM-v0.1-8B",
-      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
-      "hot": "624"
+      "title": "Qwen/Qwen-Image-2.1",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "hot": "2812"
     },
     {
       "rank": 6,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "5858"
+      "title": "Contrastive-LM/CLM-v0.1-8B",
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
+      "hot": "633"
     },
     {
       "rank": 7,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "16726"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "5903"
     },
     {
       "rank": 8,
-      "title": "SupersonicLabs/Julia-1",
-      "url": "https://huggingface.co/SupersonicLabs/Julia-1",
-      "hot": "339"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "16753"
     },
     {
       "rank": 9,
-      "title": "Cloudflare/clef",
-      "url": "https://huggingface.co/Cloudflare/clef",
-      "hot": "310"
+      "title": "SupersonicLabs/Julia-1",
+      "url": "https://huggingface.co/SupersonicLabs/Julia-1",
+      "hot": "350"
     },
     {
       "rank": 10,
-      "title": "nvidia/Nemotron-3-Diarization",
-      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
-      "hot": "599"
+      "title": "Viggle/Qwen-Image-2.1-viggle-turbo",
+      "url": "https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo",
+      "hot": "516"
     }
   ]
 }

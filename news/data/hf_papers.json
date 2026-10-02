@@ -1,68 +1,68 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-02T00:43:47+00:00",
+  "updated_at": "2026-10-02T12:34:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence",
-      "url": "https://huggingface.co/papers/2609.33439",
-      "hot": "498"
-    },
-    {
-      "rank": 2,
       "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
       "url": "https://huggingface.co/papers/2609.05415",
       "hot": "18"
     },
     {
+      "rank": 2,
+      "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence",
+      "url": "https://huggingface.co/papers/2609.33439",
+      "hot": "506"
+    },
+    {
       "rank": 3,
-      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
-      "url": "https://huggingface.co/papers/2609.24972",
-      "hot": "219"
+      "title": "Context Language Models",
+      "url": "https://huggingface.co/papers/2609.37725",
+      "hot": "30"
     },
     {
       "rank": 4,
-      "title": "Context Language Models",
-      "url": "https://huggingface.co/papers/2609.37725",
-      "hot": "27"
-    },
-    {
-      "rank": 5,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "148"
     },
     {
-      "rank": 6,
-      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
-      "url": "https://huggingface.co/papers/2609.33325",
-      "hot": "318"
+      "rank": 5,
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "url": "https://huggingface.co/papers/2609.24972",
+      "hot": "220"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "89"
     },
     {
-      "rank": 8,
-      "title": "SPEED-Bench: A Unified and Diverse Benchmark for Speculative Decoding",
-      "url": "https://huggingface.co/papers/2604.09557",
-      "hot": "16"
+      "rank": 7,
+      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
+      "url": "https://huggingface.co/papers/2609.33325",
+      "hot": "319"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "75"
     },
     {
+      "rank": 9,
+      "title": "SPEED-Bench: A Unified and Diverse Benchmark for Speculative Decoding",
+      "url": "https://huggingface.co/papers/2604.09557",
+      "hot": "16"
+    },
+    {
       "rank": 10,
-      "title": "What Makes World Action Models Generalize? An Empirical Study of Test-Time Future Modeling",
-      "url": "https://huggingface.co/papers/2609.34981",
-      "hot": "110"
+      "title": "PixelUMM: Encoder-Free Unified Image and Video Understanding and Generation",
+      "url": "https://huggingface.co/papers/2609.38597",
+      "hot": "10"
     }
   ]
 }
