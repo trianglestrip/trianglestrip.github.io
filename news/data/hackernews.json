@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-02T18:00:59+00:00",
+  "updated_at": "2026-10-02T21:53:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Dutch Computer Museums",
-      "url": "https://aresluna.org/dutch-computer-museums/",
-      "hot": "53"
+      "title": "Zig v0.17.0",
+      "url": "https://ziglang.org/download/0.17.0/release-notes.html",
+      "hot": "87"
     },
     {
       "rank": 2,
-      "title": "The Legend of von Neumann (1973) [pdf]",
-      "url": "https://gwern.net/doc/math/1973-halmos.pdf",
-      "hot": "169"
+      "title": "Apple Pass Designer",
+      "url": "https://developer.apple.com/pass-designer/",
+      "hot": "219"
     },
     {
       "rank": 3,
-      "title": "Court agrees with EFF: Utah's VPN law demands a technical impossibility",
-      "url": "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility",
-      "hot": "118"
+      "title": "Everyone's Packing Up",
+      "url": "https://widdershins.verja.net/everyones-packing-up/",
+      "hot": "64"
     },
     {
       "rank": 4,
-      "title": "FLUX 3 Image",
-      "url": "https://bfl.ai/models/flux-3-image",
-      "hot": "112"
+      "title": "Court agrees with EFF: Utah's VPN law demands a technical impossibility",
+      "url": "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility",
+      "hot": "398"
     },
     {
       "rank": 5,
-      "title": "Show HN: Giving Opus 5.5 a simulated paint canvas",
-      "url": "https://stillwet.art/",
-      "hot": "88"
+      "title": "A 12-year sequence of telescope images of a star and four planets orbiting",
+      "url": "https://bsky.app/profile/theplanetaryguy.com/post/3mwucf5ert22f",
+      "hot": "118"
     },
     {
       "rank": 6,
-      "title": "ICC judge on what U.S. sanctions mean for her and global courts",
-      "url": "https://www.npr.org/2026/10/01/nx-s1-5977815/trump-icc-sanctions-kimberly-prost",
-      "hot": "106"
+      "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
+      "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+      "hot": "133"
     },
     {
       "rank": 7,
-      "title": "Supabase is acquiring Turso",
-      "url": "https://supabase.com/blog/supabase-is-acquiring-turso",
-      "hot": "137"
+      "title": "With most information hidden, the game Stratego had stumped AI until now",
+      "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+      "hot": "114"
     },
     {
       "rank": 8,
-      "title": "Shimano Bicycle Museum Review",
-      "url": "https://inrng.com/2026/10/shimano-bicycle-museum/",
-      "hot": "266"
+      "title": "Muse Gadgets",
+      "url": "https://gadgets.muse.ai",
+      "hot": "51"
     },
     {
       "rank": 9,
-      "title": "Giving friends custom text buzzes based on Morse code",
-      "url": "https://liquidbrain.net/blog/giving-friends-custom-text-buzzes-based-on-morse-code/",
-      "hot": "33"
+      "title": "Loss of cell identity drives human aging: Two new papers",
+      "url": "https://erictopol.substack.com/p/loss-of-cell-identity-drives-human",
+      "hot": "124"
     },
     {
       "rank": 10,
-      "title": "Several vulnerabilities have been discovered in the Linux kernel",
-      "url": "https://lwn.net/Articles/1097401/",
-      "hot": "513"
+      "title": "From the creator of Redis; run LLM locally with ds4",
+      "url": "https://dwarfstar.sh/",
+      "hot": "86"
     }
   ]
 }
