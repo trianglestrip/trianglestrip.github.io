@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-03T14:54:57+00:00",
+  "updated_at": "2026-10-03T18:23:39+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,9 +18,9 @@
     },
     {
       "rank": 3,
-      "title": "兰香如故",
-      "url": "https://movie.douban.com/subject/36449295/",
-      "hot": "评分 7.5"
+      "title": "神探之痕迹‎",
+      "url": "https://movie.douban.com/subject/37247814/",
+      "hot": "评分 6.8"
     },
     {
       "rank": 4,
@@ -30,9 +30,9 @@
     },
     {
       "rank": 5,
-      "title": "神探之痕迹‎",
-      "url": "https://movie.douban.com/subject/37247814/",
-      "hot": "评分 6.8"
+      "title": "兰香如故",
+      "url": "https://movie.douban.com/subject/36449295/",
+      "hot": "评分 7.5"
     },
     {
       "rank": 6,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "交锋",
-      "url": "https://movie.douban.com/subject/36314809/",
-      "hot": "评分 7.3"
+      "title": "野兽之心",
+      "url": "https://movie.douban.com/subject/36828393/",
+      "hot": "评分 7.2"
     },
     {
       "rank": 10,
-      "title": "早春晴朗",
-      "url": "https://movie.douban.com/subject/36660844/",
-      "hot": "评分 6.7"
+      "title": "敦煌英雄",
+      "url": "https://movie.douban.com/subject/35244246/",
+      "hot": "评分 6.0"
     }
   ]
 }
