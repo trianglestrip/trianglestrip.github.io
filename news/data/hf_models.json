@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-03T14:55:50+00:00",
+  "updated_at": "2026-10-03T21:29:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "5044"
+      "hot": "5071"
     },
     {
       "rank": 2,
       "title": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
-      "hot": "924"
+      "hot": "968"
     },
     {
       "rank": 3,
       "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "2896"
+      "hot": "2914"
     },
     {
       "rank": 4,
-      "title": "Contrastive-LM/CLM-v0.1-8B",
-      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
-      "hot": "688"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "6112"
     },
     {
       "rank": 5,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "6070"
+      "title": "Contrastive-LM/CLM-v0.1-8B",
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
+      "hot": "690"
     },
     {
       "rank": 6,
-      "title": "SupersonicLabs/Julia-1",
-      "url": "https://huggingface.co/SupersonicLabs/Julia-1",
-      "hot": "390"
+      "title": "Qwen/Qwen-Image-2.1",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "hot": "2894"
     },
     {
       "rank": 7,
-      "title": "Qwen/Qwen-Image-2.1",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "hot": "2878"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "16873"
     },
     {
       "rank": 8,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "16854"
+      "title": "Cloudflare/clef-flash",
+      "url": "https://huggingface.co/Cloudflare/clef-flash",
+      "hot": "349"
     },
     {
       "rank": 9,
-      "title": "Cloudflare/clef-flash",
-      "url": "https://huggingface.co/Cloudflare/clef-flash",
-      "hot": "330"
+      "title": "SupersonicLabs/Julia-1",
+      "url": "https://huggingface.co/SupersonicLabs/Julia-1",
+      "hot": "397"
     },
     {
       "rank": 10,
       "title": "PSRben/VisionHOPE",
       "url": "https://huggingface.co/PSRben/VisionHOPE",
-      "hot": "388"
+      "hot": "389"
     }
   ]
 }

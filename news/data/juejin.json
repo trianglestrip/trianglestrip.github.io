@@ -1,7 +1,7 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-03T18:23:49+00:00",
+  "updated_at": "2026-10-03T21:28:57+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,7 +14,7 @@
       "rank": 2,
       "title": "31岁罗福莉，晋升小米最高职级22级",
       "url": "https://juejin.cn/post/7691227873460125734",
-      "hot": "360"
+      "hot": "378"
     },
     {
       "rank": 3,
@@ -24,33 +24,33 @@
     },
     {
       "rank": 4,
-      "title": "给页面加一个 JSON 编辑器：jsoneditor 的功能、配置和接入注意事项",
-      "url": "https://juejin.cn/post/7691155417934594074",
-      "hot": "126"
+      "title": "Node.js 50个优势场景盘点：一个人单干，为啥我多数时候只用它",
+      "url": "https://juejin.cn/post/7691227873459028006",
+      "hot": "144"
     },
     {
       "rank": 5,
+      "title": "KMP 又改了编译流程， Separate Compilation 禁止了 `commonMain` 的依赖穿透",
+      "url": "https://juejin.cn/post/7691872111024586752",
+      "hot": "126"
+    },
+    {
+      "rank": 6,
       "title": "Vue3 UIKit 实战：把聊天、会话、主题和移动端适配全部封装好",
       "url": "https://juejin.cn/post/7691345821564174363",
       "hot": "126"
     },
     {
-      "rank": 6,
-      "title": "ai agent --- redis 缓存",
-      "url": "https://juejin.cn/post/7691450666426286134",
-      "hot": "108"
-    },
-    {
       "rank": 7,
-      "title": "KMP 又改了编译流程， Separate Compilation 禁止了 `commonMain` 的依赖穿透",
-      "url": "https://juejin.cn/post/7691872111024586752",
-      "hot": "90"
+      "title": "给页面加一个 JSON 编辑器：jsoneditor 的功能、配置和接入注意事项",
+      "url": "https://juejin.cn/post/7691155417934594074",
+      "hot": "126"
     },
     {
       "rank": 8,
-      "title": "Node.js 50个优势场景盘点：一个人单干，为啥我多数时候只用它",
-      "url": "https://juejin.cn/post/7691227873459028006",
-      "hot": "90"
+      "title": "ai agent --- redis 缓存",
+      "url": "https://juejin.cn/post/7691450666426286134",
+      "hot": "108"
     },
     {
       "rank": 9,
@@ -60,8 +60,8 @@
     },
     {
       "rank": 10,
-      "title": "2026 年 AI Agent 面试到底考什么？这套题库覆盖了 90% 的高频考点",
-      "url": "https://juejin.cn/post/7691231137718353920",
+      "title": "LLM 面试必问的 8 个问题，答不上来直接淘汰",
+      "url": "https://juejin.cn/post/7691530846752538639",
       "hot": "81"
     }
   ]
