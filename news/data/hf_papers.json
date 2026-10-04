@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-03T21:29:21+00:00",
+  "updated_at": "2026-10-04T04:14:02+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,33 +12,33 @@
     },
     {
       "rank": 2,
-      "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence",
-      "url": "https://huggingface.co/papers/2609.33439",
-      "hot": "549"
-    },
-    {
-      "rank": 3,
       "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
       "url": "https://huggingface.co/papers/2609.18063",
       "hot": "19"
     },
     {
-      "rank": 4,
+      "rank": 3,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "149"
     },
     {
+      "rank": 4,
+      "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence",
+      "url": "https://huggingface.co/papers/2609.33439",
+      "hot": "550"
+    },
+    {
       "rank": 5,
       "title": "Context Language Models",
       "url": "https://huggingface.co/papers/2609.37725",
-      "hot": "36"
+      "hot": "37"
     },
     {
       "rank": 6,
       "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
       "url": "https://huggingface.co/papers/2609.24972",
-      "hot": "220"
+      "hot": "221"
     },
     {
       "rank": 7,
@@ -48,15 +48,15 @@
     },
     {
       "rank": 8,
-      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
-      "url": "https://huggingface.co/papers/2609.33325",
-      "hot": "320"
-    },
-    {
-      "rank": 9,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "76"
+    },
+    {
+      "rank": 9,
+      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
+      "url": "https://huggingface.co/papers/2609.33325",
+      "hot": "320"
     },
     {
       "rank": 10,

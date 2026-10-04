@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-04T00:01:11+00:00",
+  "updated_at": "2026-10-04T04:13:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Agent 的记忆不在对话里：把企业数仓沉淀为可治理的共享语义记忆｜QCon上海",
+      "url": "https://www.infoq.cn/article/M4mgbKf4RDv5AKTwQvFH?utm_source=rss&utm_medium=article",
+      "hot": "Sun, 04 Oct 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 2,
       "title": "企业级 Agent Infra 架构实践：从安全沙箱到网络管控与身份治理｜QCon上海",
       "url": "https://www.infoq.cn/article/bLB8RQ6sd3ZGQts0D4tP?utm_source=rss&utm_medium=article",
       "hot": "Sat, 03 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Andrew Kelley 专访：他为何创建 Zig、禁止 AI 贡献以及将 Zig 从 GitHub 移出",
       "url": "https://www.infoq.cn/article/eRbEA3dMd58RNPqp5D8S?utm_source=rss&utm_medium=article",
       "hot": "Fri, 02 Oct 2026 13:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Graphify：整合代码库上下文，优化基于代理的软件工程",
       "url": "https://www.infoq.cn/article/8XuP4iZKKr3ex2VTDxpl?utm_source=rss&utm_medium=article",
       "hot": "Fri, 02 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "别再给 Agent 一个“毛坯房”了：构建 Agent 拎包入住的开发环境实践｜QCon上海",
       "url": "https://www.infoq.cn/article/DEyrayxufObhpoeZgOKT?utm_source=rss&utm_medium=article",
       "hot": "Fri, 02 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "在 Cloudflare Worker 上实现多租户 SaaS 规模的模块化边缘计算",
       "url": "https://www.infoq.cn/article/P5yCYKFiJfKAICrf8bfs?utm_source=rss&utm_medium=article",
       "hot": "Thu, 01 Oct 2026 14:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "刚刚，Gemini 4 Argon 发布：多项基测碾压 GPT-6 Astra，已参与谷歌 80 万行内核代码迁移",
       "url": "https://www.infoq.cn/article/vVrSzjhEvkmpevS7wZzU?utm_source=rss&utm_medium=article",
       "hot": "Thu, 01 Oct 2026 11:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "Elastic Beanstalk 跑上 EKS，开发者质疑：为什么不把 ECS 做好？",
       "url": "https://www.infoq.cn/article/AYXLumiEmzcCrKrRuq9B?utm_source=rss&utm_medium=article",
       "hot": "Thu, 01 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "生成即合规：Agentic AIGC 驱动的广告素材修复实践｜QCon上海",
       "url": "https://www.infoq.cn/article/TLjNcyBg9Z72HV5kJ2kp?utm_source=rss&utm_medium=article",
       "hot": "Thu, 01 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "谷歌开源面向自主 AI 代理的 Kubernetes 风格编排器 AX",
       "url": "https://www.infoq.cn/article/M6BRTrsyJvUg8y0M0kyh?utm_source=rss&utm_medium=article",
       "hot": "Wed, 30 Sep 2026 20:40:07 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "GitLab Duo 通过微软 Foundry 扩展自托管 AI 选项",
-      "url": "https://www.infoq.cn/article/cA9rSEGKphbJHIiTQKMv?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 30 Sep 2026 20:37:48 GMT"
     }
   ]
 }
