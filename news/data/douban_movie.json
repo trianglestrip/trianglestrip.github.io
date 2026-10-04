@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-04T15:30:10+00:00",
+  "updated_at": "2026-10-04T18:43:58+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "年会不能停！2",
-      "url": "https://movie.douban.com/subject/36850814/",
-      "hot": "评分 6.4"
-    },
-    {
-      "rank": 3,
       "title": "神探之痕迹‎",
       "url": "https://movie.douban.com/subject/37247814/",
       "hot": "评分 6.8"
+    },
+    {
+      "rank": 3,
+      "title": "年会不能停！2",
+      "url": "https://movie.douban.com/subject/36850814/",
+      "hot": "评分 6.4"
     },
     {
       "rank": 4,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
+      "hot": "评分 6.3"
+    },
+    {
+      "rank": 9,
       "title": "生化危机：爆发夜",
       "url": "https://movie.douban.com/subject/37068446/",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "野兽之心",
       "url": "https://movie.douban.com/subject/36828393/",
       "hot": "评分 7.2"
-    },
-    {
-      "rank": 10,
-      "title": "敦煌英雄",
-      "url": "https://movie.douban.com/subject/35244246/",
-      "hot": "评分 6.0"
     }
   ]
 }

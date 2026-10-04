@@ -1,20 +1,20 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-04T15:30:38+00:00",
+  "updated_at": "2026-10-04T18:44:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "31岁罗福莉，晋升小米最高职级22级",
       "url": "https://juejin.cn/post/7691227873460125734",
-      "hot": "513"
+      "hot": "522"
     },
     {
       "rank": 2,
       "title": "Vue3 UIKit 实战：把聊天、会话、主题和移动端适配全部封装好",
       "url": "https://juejin.cn/post/7691345821564174363",
-      "hot": "216"
+      "hot": "225"
     },
     {
       "rank": 3,
@@ -24,21 +24,21 @@
     },
     {
       "rank": 4,
+      "title": "LLM 面试必问的 8 个问题，答不上来直接淘汰",
+      "url": "https://juejin.cn/post/7691530846752538639",
+      "hot": "126"
+    },
+    {
+      "rank": 5,
       "title": "MCP 技术分享：从协议握手到 LangGraph 多 Server 调用",
       "url": "https://juejin.cn/post/7691835382220111872",
       "hot": "117"
     },
     {
-      "rank": 5,
-      "title": "LLM 面试必问的 8 个问题，答不上来直接淘汰",
-      "url": "https://juejin.cn/post/7691530846752538639",
-      "hot": "117"
-    },
-    {
       "rank": 6,
-      "title": "2026 年 AI Agent 面试到底考什么？这套题库覆盖了 90% 的高频考点",
-      "url": "https://juejin.cn/post/7691231137718353920",
-      "hot": "108"
+      "title": "Meta 分享怎么用 AI 迁移 Compose 项目不烧心",
+      "url": "https://juejin.cn/post/7692485970524373026",
+      "hot": "99"
     },
     {
       "rank": 7,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "Meta 分享怎么用 AI 迁移 Compose 项目不烧心",
-      "url": "https://juejin.cn/post/7692485970524373026",
+      "title": "Personal Agent 火了，新酿还是旧酒？",
+      "url": "https://juejin.cn/post/7691717198448148518",
       "hot": "90"
     },
     {
       "rank": 9,
-      "title": "云端部署阿里 Qwen-Image-2.1 保姆级教程",
-      "url": "https://juejin.cn/post/7691823753387376649",
-      "hot": "81"
+      "title": "pnpm 12 升级实测",
+      "url": "https://juejin.cn/post/7691498553261342760",
+      "hot": "90"
     },
     {
       "rank": 10,
-      "title": "Personal Agent 火了，新酿还是旧酒？",
-      "url": "https://juejin.cn/post/7691717198448148518",
-      "hot": "81"
+      "title": "DuckDB：一个正在改变数据分析方式的数据库",
+      "url": "https://juejin.cn/post/7691498553260851240",
+      "hot": "90"
     }
   ]
 }
