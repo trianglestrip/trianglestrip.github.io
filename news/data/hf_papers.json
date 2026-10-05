@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-05T05:56:55+00:00",
+  "updated_at": "2026-10-05T13:03:01+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,7 +14,7 @@
       "rank": 2,
       "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
       "url": "https://huggingface.co/papers/2609.05415",
-      "hot": "21"
+      "hot": "22"
     },
     {
       "rank": 3,
@@ -30,27 +30,27 @@
     },
     {
       "rank": 5,
-      "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence",
-      "url": "https://huggingface.co/papers/2609.33439",
-      "hot": "563"
-    },
-    {
-      "rank": 6,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "90"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "76"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
       "url": "https://huggingface.co/papers/2609.33325",
       "hot": "321"
+    },
+    {
+      "rank": 8,
+      "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence",
+      "url": "https://huggingface.co/papers/2609.33439",
+      "hot": "563"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness",
-      "url": "https://huggingface.co/papers/2609.08183",
-      "hot": "326"
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "url": "https://huggingface.co/papers/2609.24972",
+      "hot": "221"
     }
   ]
 }

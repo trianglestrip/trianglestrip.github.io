@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-05T05:56:38+00:00",
+  "updated_at": "2026-10-05T13:02:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
-      "url": "https://github.com/Niko1221/Strata",
-      "hot": "693"
+      "title": "Europe's new robotics unicorn: Germany's RobCo hits $1B valuation",
+      "url": "https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/",
+      "hot": "136"
     },
     {
       "rank": 2,
-      "title": "In the wake of closure, a digital archive of animated materials appears online",
-      "url": "https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/",
-      "hot": "91"
+      "title": "Denmark Data Breach Exposes 8.8M People's Personal Data",
+      "url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger",
+      "hot": "246"
     },
     {
       "rank": 3,
-      "title": "Nearly 200 people under observation after Irkutsk lab worker dies from plague",
-      "url": "https://www.themoscowtimes.com/2026/10/02/nearly-200-people-under-observation-after-irkutsk-lab-worker-dies-from-plague-a93857",
-      "hot": "158"
+      "title": "Apple and a Hacker's Future",
+      "url": "https://stratechery.com/2026/apple-and-a-hackers-future/",
+      "hot": "82"
     },
     {
       "rank": 4,
-      "title": "A 40ms Go garbage collector pause caused by swap",
-      "url": "https://frn.sh/go-gc/",
-      "hot": "40"
+      "title": "Web Search API",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+      "hot": "94"
     },
     {
       "rank": 5,
-      "title": "Infidel goes wild",
-      "url": "https://blog.zarfhome.com/2026/10/infidel-goes-wild",
-      "hot": "111"
+      "title": "Press Release: Nobel Prize in Physiology or Medicine 2026",
+      "url": "https://www.nobelprize.org/prizes/medicine/2026/press-release/",
+      "hot": "49"
     },
     {
       "rank": 6,
-      "title": "ArtCraft Apps – open-source Adobe compatible suite written in Rust",
-      "url": "https://getartcraft.com/apps",
-      "hot": "76"
+      "title": "Huawei and Qualcomm Announce Broad Patent License Agreement",
+      "url": "https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement",
+      "hot": "92"
     },
     {
       "rank": 7,
-      "title": "Powerless F1 drivers frustrated by Bahrain F1 software glitch",
-      "url": "https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/",
-      "hot": "162"
+      "title": "Type Safe Generic Data Structures in C",
+      "url": "https://danielchasehooper.com/posts/typechecked-generic-c-data-structures/",
+      "hot": "30"
     },
     {
       "rank": 8,
-      "title": "A browser-native classic Visual Basic VB6 IDE",
-      "url": "https://wieslawsoltes.github.io/VB6/",
-      "hot": "150"
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+      "url": "https://github.com/Niko1221/Strata",
+      "hot": "842"
     },
     {
       "rank": 9,
-      "title": "The Tao of Backup",
-      "url": "http://www.taobackup.com/index.html",
-      "hot": "89"
+      "title": "In the wake of Tippett Studios’ closure, a digital archive appears online",
+      "url": "https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/",
+      "hot": "170"
     },
     {
       "rank": 10,
-      "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
-      "url": "https://github.com/omlahore/RemoveMacAI",
-      "hot": "483"
+      "title": "We ported the original Doom to SQL",
+      "url": "https://cedardb.com/blog/sqldoom/",
+      "hot": "191"
     }
   ]
 }

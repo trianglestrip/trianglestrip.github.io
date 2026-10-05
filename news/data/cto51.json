@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-05T05:56:38+00:00",
+  "updated_at": "2026-10-05T13:02:45+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
+      "title": "阿里 AI Native 研发手册深度拆解：编码不再是瓶颈，主战场转向环境与验证",
+      "url": "https://www.51cto.com/article/857452.html",
+      "hot": "在上周召开的云栖大会上，阿里正式发布了《AI Native 研发范式实践手册》，其中有个判断是 Coding 已经不是瓶颈，环境与验证才是主战场。"
+    },
+    {
+      "rank": 7,
+      "title": "AI 写代码提速 35%？别被表面效率骗了，隐性成本才是技术团队最大坑",
+      "url": "https://www.51cto.com/article/857451.html",
+      "hot": "尽早搭建 AI 代码审查验证层，是守住 AI 开发红利、降低研发成本、规避线上风险的最优解。"
+    },
+    {
+      "rank": 8,
       "title": "凌晨告警人肉排查太累？开源监控 Netdata 内置 ML 实现自动根因定位+AI 协诊",
       "url": "https://www.51cto.com/article/857410.html",
       "hot": "Netdata不是简单的 \"指标收集+可视化\"，而是一个内置 AI/ML 引擎的全栈可观测性平台。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "告别重复敲命令！运维用 LLM 一键生成可直接上线 Shell/Python 脚本，搞定 90% 日常工作",
       "url": "https://www.51cto.com/article/857407.html",
       "hot": "本文结合运维真实高频场景，手把手教大家用 LLM 生成可直接落地的运维脚本，覆盖日常 90% 的重复操作。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "长程 Agent 如何论功行赏？小红书 AllSpark 提出 PACT",
       "url": "https://www.51cto.com/article/857405.html",
       "hot": "小红书 AllSpark 团队提出三个正则条件，证明满足这些条件的信用分配存在且唯一，并据此分析 OPD、RLOO 和 GAE 中的训练现象。"
-    },
-    {
-      "rank": 9,
-      "title": "TCP为什么握手要三回，挥手四次？深入浅出给你图解",
-      "url": "https://www.51cto.com/article/857404.html",
-      "hot": "TCP通过三次握手和四次挥手机制，都是为了在不可靠的IP网络层之上,不可靠信道上，\"尽可能地\"提供可靠的端到端的传输服务。通过确认机制、序列号、延迟机制和状态管理，确保了数据传输的可靠性、有序性和连接管理的正确性。"
-    },
-    {
-      "rank": 10,
-      "title": "AI Harness 构建完整记忆系统：何为AI智能客服？",
-      "url": "https://www.51cto.com/article/857403.html",
-      "hot": "单个客户打进来时，检索只在他的记忆里比——大概 50 次比较，很快，但那次把问题转成向量的调用本身就要几十到上百毫秒，在延迟预算低于 300 毫秒的语音场景里，这是一笔不小的开销。"
     }
   ]
 }
