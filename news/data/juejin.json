@@ -1,62 +1,62 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-05T13:02:35+00:00",
+  "updated_at": "2026-10-05T20:58:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "KMP 又改了编译流程， Separate Compilation 禁止了 `commonMain` 的依赖穿透",
       "url": "https://juejin.cn/post/7691872111024586752",
-      "hot": "207"
+      "hot": "225"
     },
     {
       "rank": 2,
-      "title": "LLM 面试必问的 8 个问题，答不上来直接淘汰",
-      "url": "https://juejin.cn/post/7691530846752538639",
+      "title": "前端转全栈笔记：讲框架之前，先把 TypeScript 这关过了",
+      "url": "https://juejin.cn/post/7691835382221389824",
       "hot": "198"
     },
     {
       "rank": 3,
-      "title": "前端转全栈笔记：讲框架之前，先把 TypeScript 这关过了",
-      "url": "https://juejin.cn/post/7691835382221389824",
+      "title": "Meta 分享怎么用 AI 迁移 Compose 项目不烧心",
+      "url": "https://juejin.cn/post/7692485970524373026",
       "hot": "162"
     },
     {
       "rank": 4,
-      "title": "Meta 分享怎么用 AI 迁移 Compose 项目不烧心",
-      "url": "https://juejin.cn/post/7692485970524373026",
+      "title": "Space-Bunny 匿名模型观察：0.03 倍积分、1M 上下文，以及模型选型的算术题",
+      "url": "https://juejin.cn/post/7691876916195016719",
       "hot": "135"
     },
     {
       "rank": 5,
-      "title": "pnpm 12 升级实测",
-      "url": "https://juejin.cn/post/7691498553261342760",
-      "hot": "135"
-    },
-    {
-      "rank": 6,
-      "title": "Space-Bunny 匿名模型观察：0.03 倍积分、1M 上下文，以及模型选型的算术题",
-      "url": "https://juejin.cn/post/7691876916195016719",
+      "title": "云端部署阿里 Qwen-Image-2.1 保姆级教程",
+      "url": "https://juejin.cn/post/7691823753387376649",
       "hot": "117"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "LangSmith：从链路追踪到 RAG 自动化评估",
       "url": "https://juejin.cn/post/7691774360802246671",
       "hot": "117"
     },
     {
+      "rank": 7,
+      "title": "副业搞起来，小说，漫画，漫剧的成本优化思路",
+      "url": "https://juejin.cn/post/7692440533922971667",
+      "hot": "108"
+    },
+    {
       "rank": 8,
-      "title": "云端部署阿里 Qwen-Image-2.1 保姆级教程",
-      "url": "https://juejin.cn/post/7691823753387376649",
-      "hot": "99"
+      "title": "Muse 登顶 App Store 第一，SDK 直接开源：AI Agent 开始进入下一个阶段",
+      "url": "https://juejin.cn/post/7692296625806508072",
+      "hot": "108"
     },
     {
       "rank": 9,
-      "title": "Personal Agent 火了，新酿还是旧酒？",
-      "url": "https://juejin.cn/post/7691717198448148518",
-      "hot": "99"
+      "title": "ai agent --- mem0 外挂记忆系统",
+      "url": "https://juejin.cn/post/7691517675236556854",
+      "hot": "108"
     },
     {
       "rank": 10,

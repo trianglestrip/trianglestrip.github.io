@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-05T13:03:01+00:00",
+  "updated_at": "2026-10-05T20:58:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
-      "hot": "1316"
+      "hot": "1427"
     },
     {
       "rank": 2,
       "title": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "5201"
+      "hot": "5224"
     },
     {
       "rank": 3,
       "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "3195"
+      "hot": "3240"
     },
     {
       "rank": 4,
       "title": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-      "hot": "525"
+      "hot": "610"
     },
     {
       "rank": 5,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "6396"
+      "hot": "6474"
     },
     {
       "rank": 6,
       "title": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
-      "hot": "466"
+      "hot": "505"
     },
     {
       "rank": 7,
       "title": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "hot": "384"
+      "hot": "410"
     },
     {
       "rank": 8,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "16978"
+      "title": "autotrust/JEV-27B-VL",
+      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
+      "hot": "469"
     },
     {
       "rank": 9,
-      "title": "PSRben/VisionHOPE",
-      "url": "https://huggingface.co/PSRben/VisionHOPE",
-      "hot": "413"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "17015"
     },
     {
       "rank": 10,
-      "title": "Qwen/Qwen-Image-2.1",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "hot": "2966"
+      "title": "PSRben/VisionHOPE",
+      "url": "https://huggingface.co/PSRben/VisionHOPE",
+      "hot": "417"
     }
   ]
 }

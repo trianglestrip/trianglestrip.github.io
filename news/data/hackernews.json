@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-05T13:02:46+00:00",
+  "updated_at": "2026-10-05T20:58:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Europe's new robotics unicorn: Germany's RobCo hits $1B valuation",
-      "url": "https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/",
-      "hot": "136"
+      "title": "Beam: Reflection's 501B open-weight model",
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "hot": "151"
     },
     {
       "rank": 2,
-      "title": "Denmark Data Breach Exposes 8.8M People's Personal Data",
-      "url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger",
-      "hot": "246"
+      "title": "Why Plain Text Is Still One of the Best Technologies We Have",
+      "url": "https://deadparrotbbs.com/why-plain-text-is-still-one-of-the-best-technologies-we-have/",
+      "hot": "131"
     },
     {
       "rank": 3,
-      "title": "Apple and a Hacker's Future",
-      "url": "https://stratechery.com/2026/apple-and-a-hackers-future/",
-      "hot": "82"
+      "title": "GitHub Actions Has Problems",
+      "url": "https://www.githubstatus.com/incidents/3q1yb5m7ltvb",
+      "hot": "44"
     },
     {
       "rank": 4,
-      "title": "Web Search API",
-      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
-      "hot": "94"
+      "title": "The Future of Mathematics",
+      "url": "https://terrytao.wordpress.com/2026/10/05/the-future-of-mathematics/",
+      "hot": "22"
     },
     {
       "rank": 5,
-      "title": "Press Release: Nobel Prize in Physiology or Medicine 2026",
-      "url": "https://www.nobelprize.org/prizes/medicine/2026/press-release/",
-      "hot": "49"
+      "title": "Web Search API",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+      "hot": "410"
     },
     {
       "rank": 6,
-      "title": "Huawei and Qualcomm Announce Broad Patent License Agreement",
-      "url": "https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement",
-      "hot": "92"
+      "title": "The future of independence is interdependence",
+      "url": "https://onlys.ky/independence-is-interdependence/",
+      "hot": "128"
     },
     {
       "rank": 7,
-      "title": "Type Safe Generic Data Structures in C",
-      "url": "https://danielchasehooper.com/posts/typechecked-generic-c-data-structures/",
-      "hot": "30"
+      "title": "Competitive Programmer's Handbook (2018) [pdf]",
+      "url": "https://cses.fi/book/book.pdf",
+      "hot": "39"
     },
     {
       "rank": 8,
-      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
-      "url": "https://github.com/Niko1221/Strata",
-      "hot": "842"
+      "title": "Making a GTK application in Haskell, part 1",
+      "url": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1/",
+      "hot": "109"
     },
     {
       "rank": 9,
-      "title": "In the wake of Tippett Studios’ closure, a digital archive appears online",
-      "url": "https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/",
-      "hot": "170"
+      "title": "Linux containers in 500 lines of code",
+      "url": "https://blog.lizzie.io/linux-containers-in-500-loc.html",
+      "hot": "71"
     },
     {
       "rank": 10,
-      "title": "We ported the original Doom to SQL",
-      "url": "https://cedardb.com/blog/sqldoom/",
-      "hot": "191"
+      "title": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+      "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
+      "hot": "224"
     }
   ]
 }
