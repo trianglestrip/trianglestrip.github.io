@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-05T00:24:31+00:00",
+  "updated_at": "2026-10-05T05:56:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "如何把AI Agent托管在家里电脑：2026年UU远程终端/CLI/端口映射/网络代理开发者实测",
       "url": "https://blog.csdn.net/2302_79376097/article/details/167035733",
-      "hot": "27911"
+      "hot": "31906"
     },
     {
       "rank": 2,
       "title": "【从零写一个CAD 05】以鼠标为中心的滚轮缩放：招法能复用，顺序不能反",
       "url": "https://blog.csdn.net/2302_80177460/article/details/167074305",
-      "hot": "16855"
+      "hot": "14897"
     },
     {
       "rank": 3,
-      "title": "Qt 事件机制详解：从 QEvent 派生类到事件过滤器的全景指南",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/166889101",
-      "hot": "12743"
+      "title": "【从0开始学习计算机网络】| TCP 超时重传时间（RTO）到底是怎么算出来的？",
+      "url": "https://blog.csdn.net/2503_94545876/article/details/166995529",
+      "hot": "11199"
     },
     {
       "rank": 4,
       "title": "Spring Boot 快速上手：从 Maven 到第一个 Controller",
       "url": "https://blog.csdn.net/java_nnnn/article/details/166894380",
-      "hot": "11666"
+      "hot": "11041"
     },
     {
       "rank": 5,
-      "title": "从HTTPS到MySQL-会话保持的攻防与数据库的真面目",
-      "url": "https://blog.csdn.net/xiongditian/article/details/166994512",
-      "hot": "11066"
+      "title": "彭大帅的智能运维助手——用自然语言指挥 AI 管理你的服务器（项目发布）",
+      "url": "https://blog.csdn.net/qq_28608175/article/details/167084217",
+      "hot": "8608"
     },
     {
       "rank": 6,
-      "title": "7天学会SpringBoot+Vue3企业级项目RuoyiOffice（四）：前端篇——从菜单路由到表单列表，完成业务页面",
-      "url": "https://blog.csdn.net/zhouzhongyan/article/details/166982287",
-      "hot": "8723"
+      "title": "WorkBuddy 模型选型实操：0.03 倍的 Space-Bunny 怎么用、派什么活、避什么坑",
+      "url": "https://blog.csdn.net/2202_75716091/article/details/167036244",
+      "hot": "7918"
     },
     {
       "rank": 7,
-      "title": "【从0开始学习计算机网络】| TCP 超时重传时间（RTO）到底是怎么算出来的？",
-      "url": "https://blog.csdn.net/2503_94545876/article/details/166995529",
-      "hot": "7741"
+      "title": "多 Agent 协作架构：Pipeline 模式——串行流水线设计与实战",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/167085906",
+      "hot": "7620"
     },
     {
       "rank": 8,
-      "title": "LLaMA系列架构详解_Meta开源大模型的技术演进",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/167072509",
-      "hot": "7629"
+      "title": "从一次推理请求出发：模型、显存、网络与服务系统如何共同决定性能",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/166736035",
+      "hot": "7434"
     },
     {
       "rank": 9,
-      "title": "从生成到进入：AI视频如何从Sora神话沦为0.05元/秒的大宗商品，又成为82亿美元的世界门票",
-      "url": "https://blog.csdn.net/weixin_55221858/article/details/166989489",
-      "hot": "6835"
+      "title": "从HTTPS到MySQL-会话保持的攻防与数据库的真面目",
+      "url": "https://blog.csdn.net/xiongditian/article/details/166994512",
+      "hot": "7092"
     },
     {
       "rank": 10,
-      "title": "WorkBuddy 模型选型实操：0.03 倍的 Space-Bunny 怎么用、派什么活、避什么坑",
-      "url": "https://blog.csdn.net/2202_75716091/article/details/167036244",
-      "hot": "6635"
+      "title": "7天学会SpringBoot+Vue3企业级项目RuoyiOffice（四）：前端篇——从菜单路由到表单列表，完成业务页面",
+      "url": "https://blog.csdn.net/zhouzhongyan/article/details/166982287",
+      "hot": "5873"
     }
   ]
 }

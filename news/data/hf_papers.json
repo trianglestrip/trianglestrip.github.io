@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-04T18:44:39+00:00",
+  "updated_at": "2026-10-05T05:56:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
       "url": "https://huggingface.co/papers/2609.18063",
-      "hot": "20"
+      "hot": "22"
     },
     {
       "rank": 2,
       "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
       "url": "https://huggingface.co/papers/2609.05415",
-      "hot": "20"
+      "hot": "21"
     },
     {
       "rank": 3,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence",
       "url": "https://huggingface.co/papers/2609.33439",
-      "hot": "557"
+      "hot": "563"
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "Context Language Models",
-      "url": "https://huggingface.co/papers/2609.37725",
-      "hot": "40"
-    },
-    {
-      "rank": 8,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "76"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
       "url": "https://huggingface.co/papers/2609.33325",
-      "hot": "320"
+      "hot": "321"
+    },
+    {
+      "rank": 9,
+      "title": "Context Language Models",
+      "url": "https://huggingface.co/papers/2609.37725",
+      "hot": "40"
     },
     {
       "rank": 10,
-      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
-      "url": "https://huggingface.co/papers/2609.24972",
-      "hot": "221"
+      "title": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness",
+      "url": "https://huggingface.co/papers/2609.08183",
+      "hot": "326"
     }
   ]
 }
