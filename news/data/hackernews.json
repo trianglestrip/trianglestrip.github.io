@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-04T21:58:08+00:00",
+  "updated_at": "2026-10-05T00:24:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
       "url": "https://github.com/Niko1221/Strata",
-      "hot": "507"
+      "hot": "573"
     },
     {
       "rank": 2,
-      "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
-      "url": "https://github.com/omlahore/RemoveMacAI",
-      "hot": "177"
-    },
-    {
-      "rank": 3,
-      "title": "Homa: The end of TCP for AI clusters [video]",
-      "url": "https://www.youtube.com/watch?v=eZ8WWZzoaR0",
-      "hot": "32"
-    },
-    {
-      "rank": 4,
-      "title": "Improper redaction reveals Google Data Center water and electricity usage",
-      "url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/",
-      "hot": "124"
-    },
-    {
-      "rank": 5,
-      "title": "A map of every lighthouse",
-      "url": "https://mapped.earth/lighthouses/world",
-      "hot": "139"
-    },
-    {
-      "rank": 6,
-      "title": "'Neanderthals Among Us' review",
-      "url": "https://www.historytoday.com/archive/review/neanderthals-among-us-peter-sahlins-review",
-      "hot": "46"
-    },
-    {
-      "rank": 7,
-      "title": "Results from the ASIC puzzle",
-      "url": "https://blog.janestreet.com/asic-puzzle-results/",
+      "title": "Infidel goes wild",
+      "url": "https://blog.zarfhome.com/2026/10/infidel-goes-wild",
       "hot": "56"
     },
     {
+      "rank": 3,
+      "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
+      "url": "https://github.com/omlahore/RemoveMacAI",
+      "hot": "308"
+    },
+    {
+      "rank": 4,
+      "title": "Self-hosted HTTP tunnels with SSH and Nginx",
+      "url": "https://vincent.bernat.ch/en/blog/2026-http-over-ssh",
+      "hot": "30"
+    },
+    {
+      "rank": 5,
+      "title": "Improper redaction reveals Google Data Center water and electricity usage",
+      "url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/",
+      "hot": "207"
+    },
+    {
+      "rank": 6,
+      "title": "Homa: The end of TCP for AI clusters [video]",
+      "url": "https://www.youtube.com/watch?v=eZ8WWZzoaR0",
+      "hot": "47"
+    },
+    {
+      "rank": 7,
+      "title": "A browser-native classic Visual Basic VB6 IDE",
+      "url": "https://wieslawsoltes.github.io/VB6/",
+      "hot": "53"
+    },
+    {
       "rank": 8,
-      "title": "Show HN: Build with Python – a beginner course where your code draws",
-      "url": "https://scimigo.com/en/learn/build-with-python/01-draw-with-python",
-      "hot": "14"
+      "title": "1 in 8 cancer cases are caused by infections",
+      "url": "https://www.livescience.com/health/cancer/1-in-8-cancer-cases-are-caused-by-infections-underscoring-the-importance-of-vaccines-experts-say",
+      "hot": "10"
     },
     {
       "rank": 9,
-      "title": "Show HN: Glashütte Trash Clock – A 30-minute pendulum clock made from trash",
-      "url": "https://niklasroy.com/gtc/",
-      "hot": "148"
+      "title": "Tell HN: Bob Cringely has died",
+      "url": "https://news.ycombinator.com/item?id=49949438",
+      "hot": "802"
     },
     {
       "rank": 10,
-      "title": "Tell HN: Bob Cringely has died",
-      "url": "https://news.ycombinator.com/item?id=49949438",
-      "hot": "778"
+      "title": "A map of every lighthouse",
+      "url": "https://mapped.earth/lighthouses/world",
+      "hot": "156"
     }
   ]
 }
