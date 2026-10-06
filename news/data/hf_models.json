@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-05T20:58:55+00:00",
+  "updated_at": "2026-10-06T08:07:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
-      "hot": "1427"
+      "hot": "1547"
     },
     {
       "rank": 2,
-      "title": "convaiinnovations/laya",
-      "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "5224"
+      "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "hot": "3308"
     },
     {
       "rank": 3,
-      "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "3240"
+      "title": "autotrust/JEV-27B-VL",
+      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
+      "hot": "805"
     },
     {
       "rank": 4,
-      "title": "Aleph-Alpha/Kolibri-1",
-      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-      "hot": "610"
+      "title": "convaiinnovations/laya",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "hot": "5254"
     },
     {
       "rank": 5,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "6474"
+      "title": "Aleph-Alpha/Kolibri-1",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+      "hot": "652"
     },
     {
       "rank": 6,
       "title": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
-      "hot": "505"
+      "hot": "548"
     },
     {
       "rank": 7,
-      "title": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "hot": "410"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "6535"
     },
     {
       "rank": 8,
-      "title": "autotrust/JEV-27B-VL",
-      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
-      "hot": "469"
+      "title": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "hot": "421"
     },
     {
       "rank": 9,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "17015"
+      "title": "autotrust/GEV-26B-Decide",
+      "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
+      "hot": "482"
     },
     {
       "rank": 10,
-      "title": "PSRben/VisionHOPE",
-      "url": "https://huggingface.co/PSRben/VisionHOPE",
-      "hot": "417"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "17056"
     }
   ]
 }
