@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-06T15:03:09+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-10-06T20:08:59+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -13,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "神探之痕迹‎",
-      "url": "https://movie.douban.com/subject/37247814/",
-      "hot": "评分 6.8"
+      "title": "生化危机：爆发夜",
+      "url": "https://movie.douban.com/subject/37068446/",
+      "hot": "评分 7.3"
     },
     {
       "rank": 3,
-      "title": "生化危机：爆发夜",
-      "url": "https://movie.douban.com/subject/37068446/",
-      "hot": "评分 7.2"
+      "title": "神探之痕迹‎",
+      "url": "https://movie.douban.com/subject/37247814/",
+      "hot": "评分 6.8"
     },
     {
       "rank": 4,
@@ -31,21 +30,21 @@
     },
     {
       "rank": 5,
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
+      "hot": "评分 6.3"
+    },
+    {
+      "rank": 6,
       "title": "欢迎来龙餐馆",
       "url": "https://movie.douban.com/subject/35811064/",
       "hot": "评分 8.7"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "年会不能停！2",
       "url": "https://movie.douban.com/subject/36850814/",
       "hot": "评分 6.4"
-    },
-    {
-      "rank": 7,
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "hot": "评分 6.3"
     },
     {
       "rank": 8,

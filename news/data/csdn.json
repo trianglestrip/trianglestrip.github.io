@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-06T15:03:27+00:00",
+  "updated_at": "2026-10-06T20:09:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex + Obsidian 打造专业知识库实战详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/164193359",
-      "hot": "23064"
+      "hot": "22031"
     },
     {
       "rank": 2,
       "title": "穿越Docker内核迷雾：揭秘镜像分层存储的叠加态与卷挂载的多维空间穿梭技术",
       "url": "https://blog.csdn.net/2401_82648291/article/details/151327873",
-      "hot": "18339"
+      "hot": "20272"
     },
     {
       "rank": 3,
-      "title": "GitHub 热榜项目 - 周榜(2026-10-03)",
-      "url": "https://blog.csdn.net/u014390502/article/details/167039912",
-      "hot": "17174"
+      "title": "【AI大模型接入SDK】C++ ChatSDK使用手册",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/166854671",
+      "hot": "18034"
     },
     {
       "rank": 4,
-      "title": "【AI大模型接入SDK】C++ ChatSDK使用手册",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/166854671",
-      "hot": "15513"
+      "title": "【从零写一个CAD 05】以鼠标为中心的滚轮缩放：招法能复用，顺序不能反",
+      "url": "https://blog.csdn.net/2302_80177460/article/details/167074305",
+      "hot": "14368"
     },
     {
       "rank": 5,
-      "title": "【从零写一个CAD 05】以鼠标为中心的滚轮缩放：招法能复用，顺序不能反",
-      "url": "https://blog.csdn.net/2302_80177460/article/details/167074305",
-      "hot": "15291"
+      "title": "Camera Kit 相机服务介绍",
+      "url": "https://blog.csdn.net/QWERWTWE/article/details/167174163",
+      "hot": "12958"
     },
     {
       "rank": 6,
       "title": "从一次推理请求出发：模型、显存、网络与服务系统如何共同决定性能",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/166736035",
-      "hot": "7137"
+      "hot": "9454"
     },
     {
       "rank": 7,
       "title": "多 Agent 协作架构：Pipeline 模式——串行流水线设计与实战",
       "url": "https://blog.csdn.net/sinat_41617212/article/details/167085906",
-      "hot": "6514"
+      "hot": "8746"
     },
     {
       "rank": 8,
       "title": "大模型工程化实战（十六）：政企国产化避坑——合规/信创名录/私有化运维/国产硬件适配/原厂支持这五道关怎么过",
       "url": "https://blog.csdn.net/xiaobing259/article/details/167120753",
-      "hot": "6509"
+      "hot": "7330"
     },
     {
       "rank": 9,
-      "title": "【AI大模型】Langchain 多类型对话消息使用实战操作详解",
-      "url": "https://blog.csdn.net/congge_study/article/details/164882832",
-      "hot": "6505"
+      "title": "应用账号最小权限实践：读写账号、报表账号、运维账号分层",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/167163632",
+      "hot": "7161"
     },
     {
       "rank": 10,
-      "title": "【VLA】Qwen-VLA:VLM+DiT统一多模态理解与连续机器人动作生成",
-      "url": "https://blog.csdn.net/qq_35812205/article/details/167127394",
-      "hot": "6311"
+      "title": "【开源评测】pdoom-video：用 TypeScript + three.js 写一支 4K 音乐 MV——确定性渲染如何颠覆 AI 视频生成范式",
+      "url": "https://blog.csdn.net/TunerT_TQ/article/details/167131598",
+      "hot": "7095"
     }
   ]
 }

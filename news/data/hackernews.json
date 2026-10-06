@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-06T15:03:35+00:00",
+  "updated_at": "2026-10-06T20:09:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Mistral Large 4",
-      "url": "https://docs.mistral.ai/models/mistral-large-4-0",
-      "hot": "556"
+      "url": "https://mistral.ai/news/mistral-large-4/\\",
+      "hot": "1270"
     },
     {
       "rank": 2,
-      "title": "Mistral Large 4: \"Le Chonk\"",
-      "url": "https://mistral.ai/news/mistral-large-4/",
-      "hot": "269"
+      "title": "Nobel Prize in Physics 2026: Francis Halzen",
+      "url": "https://www.nobelprize.org/prizes/physics/2026/",
+      "hot": "445"
     },
     {
       "rank": 3,
-      "title": "Release of Polars 2.0",
-      "url": "https://pola.rs/posts/release-polars-2/",
-      "hot": "164"
+      "title": "Berthd",
+      "url": "https://berthd.app/",
+      "hot": "10"
     },
     {
       "rank": 4,
-      "title": "Nobel Prize in Physics goes to Francis Halzen",
-      "url": "https://www.nobelprize.org/prizes/physics/2026/",
-      "hot": "287"
+      "title": "Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol",
+      "url": "https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/",
+      "hot": "107"
     },
     {
       "rank": 5,
-      "title": "Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol",
-      "url": "https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/",
-      "hot": "29"
+      "title": "Benchmark in Milliseconds",
+      "url": "https://matklad.github.io/2026/10/05/benchmark-milliseconds.html",
+      "hot": "98"
     },
     {
       "rank": 6,
-      "title": "JetBrains reported a net financial loss first time in its tracked history",
-      "url": "https://www.helgilibrary.com/companies/jetbrains",
-      "hot": "309"
+      "title": "Gleam doesn't compile to Erlang source anymore",
+      "url": "https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/",
+      "hot": "252"
     },
     {
       "rank": 7,
-      "title": "Meta's Muse Is an Adorable Privacy and Security Dumpster Fire",
-      "url": "https://www.techdirt.com/2026/10/06/metas-muse-is-an-adorable-privacy-and-security-dumpster-fire/",
-      "hot": "143"
+      "title": "Mathematics of Geothermal Energy",
+      "url": "https://www.ebsco.com/research-starters/power-and-energy/mathematics-geothermal-energy/",
+      "hot": "56"
     },
     {
       "rank": 8,
-      "title": "Benchmark in Milliseconds",
-      "url": "https://matklad.github.io/2026/10/05/benchmark-milliseconds.html",
-      "hot": "22"
+      "title": "The Early History of Smalltalk (1993)",
+      "url": "https://worrydream.com/EarlyHistoryOfSmalltalk/",
+      "hot": "77"
     },
     {
       "rank": 9,
-      "title": "Show HN: Parseable, an open observability datalake, handles 100M time-series/min",
-      "url": "https://www.parseable.com",
-      "hot": "15"
+      "title": "Show HN: I turned my iPhone and a $20 smart plug into an f-stop timer",
+      "url": "https://peterszentkiralyi.eu/darkplug/",
+      "hot": "42"
     },
     {
       "rank": 10,
-      "title": "Vibecoding isn't as fun as writing code by hand",
-      "url": "https://www.autodidacts.io/vibecoding-isnt-as-fun-as-writing-code-by-hand/",
-      "hot": "23"
+      "title": "Subquadratic 3SUM and Subcubic APSP",
+      "url": "https://arxiv.org/abs/2610.06783",
+      "hot": "66"
     }
   ]
 }
