@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-06T20:09:22+00:00",
+  "updated_at": "2026-10-06T23:47:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Mistral Large 4",
-      "url": "https://mistral.ai/news/mistral-large-4/\\",
-      "hot": "1270"
+      "title": "Sharing AI Progress in Mathematics",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "hot": "215"
     },
     {
       "rank": 2,
-      "title": "Nobel Prize in Physics 2026: Francis Halzen",
-      "url": "https://www.nobelprize.org/prizes/physics/2026/",
-      "hot": "445"
+      "title": "Mistral Large 4",
+      "url": "https://mistral.ai/news/mistral-large-4/\\",
+      "hot": "1543"
     },
     {
       "rank": 3,
-      "title": "Berthd",
-      "url": "https://berthd.app/",
-      "hot": "10"
+      "title": "Decisions API is in public beta",
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "hot": "89"
     },
     {
       "rank": 4,
-      "title": "Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol",
-      "url": "https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/",
-      "hot": "107"
+      "title": "OpenAI just dropped 700 preprints of mathematical proofs and counterexamples",
+      "url": "https://github.com/openai/math/tree/main/preprints",
+      "hot": "8"
     },
     {
       "rank": 5,
-      "title": "Benchmark in Milliseconds",
-      "url": "https://matklad.github.io/2026/10/05/benchmark-milliseconds.html",
-      "hot": "98"
+      "title": "Vibecoding Photoshop: Time and pressure",
+      "url": "https://andreklein.net/vibecoding-photoshop-time-and-pressure/",
+      "hot": "29"
     },
     {
       "rank": 6,
-      "title": "Gleam doesn't compile to Erlang source anymore",
-      "url": "https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/",
-      "hot": "252"
+      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "hot": "189"
     },
     {
       "rank": 7,
-      "title": "Mathematics of Geothermal Energy",
-      "url": "https://www.ebsco.com/research-starters/power-and-energy/mathematics-geothermal-energy/",
-      "hot": "56"
+      "title": "Penguin Mail – open-source Rust email client for Linux with AI",
+      "url": "https://penguin-mail.com/",
+      "hot": "20"
     },
     {
       "rank": 8,
-      "title": "The Early History of Smalltalk (1993)",
-      "url": "https://worrydream.com/EarlyHistoryOfSmalltalk/",
-      "hot": "77"
+      "title": "Nobel Prize in Physics 2026: Francis Halzen",
+      "url": "https://www.nobelprize.org/prizes/physics/2026/",
+      "hot": "507"
     },
     {
       "rank": 9,
-      "title": "Show HN: I turned my iPhone and a $20 smart plug into an f-stop timer",
-      "url": "https://peterszentkiralyi.eu/darkplug/",
-      "hot": "42"
+      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+      "url": "https://github.com/FeSens/openTPU",
+      "hot": "209"
     },
     {
       "rank": 10,
-      "title": "Subquadratic 3SUM and Subcubic APSP",
-      "url": "https://arxiv.org/abs/2610.06783",
-      "hot": "66"
+      "title": "Paramount Skydance has completed its $111B merger with Warner Bros. Discovery",
+      "url": "https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/",
+      "hot": "145"
     }
   ]
 }
