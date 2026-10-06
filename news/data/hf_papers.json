@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-06T08:07:27+00:00",
+  "updated_at": "2026-10-06T15:03:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
       "url": "https://huggingface.co/papers/2609.18063",
-      "hot": "22"
+      "hot": "23"
     },
     {
       "rank": 2,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "Context Language Models",
-      "url": "https://huggingface.co/papers/2609.37725",
-      "hot": "40"
+      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+      "url": "https://huggingface.co/papers/2610.03715",
+      "hot": "22"
     },
     {
       "rank": 10,
-      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
-      "url": "https://huggingface.co/papers/2610.03715",
-      "hot": "19"
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "58"
     }
   ]
 }
