@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-07T16:32:10+00:00",
+  "updated_at": "2026-10-07T21:30:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex + Obsidian 打造专业知识库实战详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/164193359",
-      "hot": "36977"
+      "hot": "35719"
     },
     {
       "rank": 2,
       "title": "【AI大模型接入SDK】C++ ChatSDK使用手册",
       "url": "https://blog.csdn.net/2401_89899187/article/details/166854671",
-      "hot": "23203"
+      "hot": "22409"
     },
     {
       "rank": 3,
-      "title": "多 Agent 协作架构：Pipeline 模式——串行流水线设计与实战",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/167085906",
-      "hot": "18770"
+      "title": "AI Agent 说完成了，怎样验证任务真的完成",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/166736285",
+      "hot": "22161"
     },
     {
       "rank": 4,
-      "title": "AI Agent 说完成了，怎样验证任务真的完成",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/166736285",
-      "hot": "16745"
+      "title": "穿越Docker内核迷雾：揭秘镜像分层存储的叠加态与卷挂载的多维空间穿梭技术",
+      "url": "https://blog.csdn.net/2401_82648291/article/details/151327873",
+      "hot": "14548"
     },
     {
       "rank": 5,
       "title": "【C++高阶系列】异步任务的结果怎么回来？一文理解 future、async、promise、shared_future 与 packaged_task",
       "url": "https://blog.csdn.net/2301_80260194/article/details/167175947",
-      "hot": "14605"
+      "hot": "13506"
     },
     {
       "rank": 6,
-      "title": "穿越Docker内核迷雾：揭秘镜像分层存储的叠加态与卷挂载的多维空间穿梭技术",
-      "url": "https://blog.csdn.net/2401_82648291/article/details/151327873",
-      "hot": "14273"
+      "title": "【C++ 标准项目】发布订阅消息队列（篇四）：sqlite 与 gtest 断言框架介绍及实战应用",
+      "url": "https://blog.csdn.net/2501_93351213/article/details/167118992",
+      "hot": "8444"
     },
     {
       "rank": 7,
       "title": "大模型工程化实战（十七）：金融级 AI 落地——决策可追溯/可复现/可追责/不可抵赖这四件事怎么做",
       "url": "https://blog.csdn.net/xiaobing259/article/details/167121509",
-      "hot": "7612"
+      "hot": "7313"
     },
     {
       "rank": 8,
-      "title": "【C++ 标准项目】发布订阅消息队列（篇四）：sqlite 与 gtest 断言框架介绍及实战应用",
-      "url": "https://blog.csdn.net/2501_93351213/article/details/167118992",
-      "hot": "7358"
+      "title": "DeepSeek系列_国产大模型的技术创新解析",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/167210402",
+      "hot": "6874"
     },
     {
       "rank": 9,
-      "title": "Camera Kit 相机服务介绍",
-      "url": "https://blog.csdn.net/QWERWTWE/article/details/167174163",
-      "hot": "6574"
+      "title": "我给AI打工：蓝耘元生代 + Remotion 全自动生产每日技术新闻视频，一条命令出成片",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/167222312",
+      "hot": "6645"
     },
     {
       "rank": 10,
-      "title": "DeepSeek系列_国产大模型的技术创新解析",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/167210402",
-      "hot": "6409"
+      "title": "Rust 1.99.0发布：C 可变参数、裸函数、Cargo 配置、Rustdoc 性能与大量兼容性调整全解析",
+      "url": "https://blog.csdn.net/weixin_48502062/article/details/167130287",
+      "hot": "5627"
     }
   ]
 }

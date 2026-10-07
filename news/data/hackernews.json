@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-07T16:32:18+00:00",
+  "updated_at": "2026-10-07T21:30:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "GitHub Incident with Git Operations, Pull Requests and Actions",
-      "url": "https://www.githubstatus.com/incidents/djlmxz2zd0j7",
-      "hot": "136"
+      "title": "Claude Haiku 5.5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "hot": "483"
     },
     {
       "rank": 2,
-      "title": "Shipping JPEG XL in Chrome",
-      "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
-      "hot": "325"
+      "title": "GPT‑6 and Intelligent UI for everyone",
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "hot": "353"
     },
     {
       "rank": 3,
-      "title": "Navier–Stokes Lost in Translation",
-      "url": "https://arxiv.org/abs/2610.08144",
-      "hot": "27"
+      "title": "Docker Agent",
+      "url": "https://github.com/docker/docker-agent",
+      "hot": "115"
     },
     {
       "rank": 4,
-      "title": "A font recreated from photographs of classic Commodore 64 keycaps",
-      "url": "https://github.com/szabadkai/c64-keyboard-font/",
-      "hot": "271"
+      "title": "Despite what Watson said, Rosalind Franklin understood structure of DNA first",
+      "url": "https://link.springer.com/article/10.1007/s10739-026-09866-7",
+      "hot": "29"
     },
     {
       "rank": 5,
-      "title": "Nobel Prize in Chemistry 2026 to Henri B. Kagan and Kenso Soai",
-      "url": "https://www.nobelprize.org/prizes/chemistry/2026/press-release/",
-      "hot": "208"
+      "title": "Push ifs up and fors down: The idiom, its algebra, and its limits",
+      "url": "https://debasishg.github.io/blog/push-ifs-up-fors-down/",
+      "hot": "47"
     },
     {
       "rank": 6,
-      "title": "Show HN: A walkable 3D art history museum built from Wikipedia",
-      "url": "https://artmuseum.artfrompixels.com/",
-      "hot": "81"
+      "title": "Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app",
+      "url": "https://bigwords.page/",
+      "hot": "238"
     },
     {
       "rank": 7,
-      "title": "Animated ASCII Art for Web Pages",
-      "url": "https://ascii.rest/",
-      "hot": "39"
+      "title": "Shipping JPEG XL in Chrome",
+      "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
+      "hot": "435"
     },
     {
       "rank": 8,
-      "title": "Google Playground",
-      "url": "https://labs.google/playground",
-      "hot": "93"
+      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+      "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+      "hot": "170"
     },
     {
       "rank": 9,
-      "title": "Reverse Engineering of the M-VAVE FM-1 Pocket Synthesizer Firmware",
-      "url": "https://github.com/AL-255/FM-1-RE",
-      "hot": "13"
+      "title": "The Mathocalypse",
+      "url": "https://scottaaronson.blog/?p=10169",
+      "hot": "118"
     },
     {
       "rank": 10,
-      "title": "AI-assisted proof of optimal packing for 11 squares",
-      "url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized",
-      "hot": "30"
+      "title": "Navier–Stokes Lost in Translation",
+      "url": "https://arxiv.org/abs/2610.08144",
+      "hot": "182"
     }
   ]
 }
