@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-07T02:43:11+00:00",
+  "updated_at": "2026-10-07T09:16:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex + Obsidian 打造专业知识库实战详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/164193359",
-      "hot": "22574"
+      "hot": "27553"
     },
     {
       "rank": 2,
-      "title": "穿越Docker内核迷雾：揭秘镜像分层存储的叠加态与卷挂载的多维空间穿梭技术",
-      "url": "https://blog.csdn.net/2401_82648291/article/details/151327873",
-      "hot": "18948"
+      "title": "【AI大模型接入SDK】C++ ChatSDK使用手册",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/166854671",
+      "hot": "17457"
     },
     {
       "rank": 3,
-      "title": "【AI大模型接入SDK】C++ ChatSDK使用手册",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/166854671",
-      "hot": "17710"
+      "title": "多 Agent 协作架构：Pipeline 模式——串行流水线设计与实战",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/167085906",
+      "hot": "16827"
     },
     {
       "rank": 4,
-      "title": "【从零写一个CAD 05】以鼠标为中心的滚轮缩放：招法能复用，顺序不能反",
-      "url": "https://blog.csdn.net/2302_80177460/article/details/167074305",
-      "hot": "14034"
+      "title": "穿越Docker内核迷雾：揭秘镜像分层存储的叠加态与卷挂载的多维空间穿梭技术",
+      "url": "https://blog.csdn.net/2401_82648291/article/details/151327873",
+      "hot": "14526"
     },
     {
       "rank": 5,
-      "title": "多 Agent 协作架构：Pipeline 模式——串行流水线设计与实战",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/167085906",
-      "hot": "12314"
+      "title": "【C++高阶系列】异步任务的结果怎么回来？一文理解 future、async、promise、shared_future 与 packaged_task",
+      "url": "https://blog.csdn.net/2301_80260194/article/details/167175947",
+      "hot": "12420"
     },
     {
       "rank": 6,
-      "title": "Camera Kit 相机服务介绍",
-      "url": "https://blog.csdn.net/QWERWTWE/article/details/167174163",
-      "hot": "9442"
+      "title": "【C++ 标准项目】发布订阅消息队列（篇四）：sqlite 与 gtest 断言框架介绍及实战应用",
+      "url": "https://blog.csdn.net/2501_93351213/article/details/167118992",
+      "hot": "8764"
     },
     {
       "rank": 7,
-      "title": "从一次推理请求出发：模型、显存、网络与服务系统如何共同决定性能",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/166736035",
-      "hot": "8995"
+      "title": "Camera Kit 相机服务介绍",
+      "url": "https://blog.csdn.net/QWERWTWE/article/details/167174163",
+      "hot": "8013"
     },
     {
       "rank": 8,
-      "title": "【C++高阶系列】异步任务的结果怎么回来？一文理解 future、async、promise、shared_future 与 packaged_task",
-      "url": "https://blog.csdn.net/2301_80260194/article/details/167175947",
-      "hot": "8978"
+      "title": "AI Agent 安全治理进入强制时代：从沙盒逃逸到智能体支付，开发者该盯什么",
+      "url": "https://blog.csdn.net/m0_74899094/article/details/167174250",
+      "hot": "7384"
     },
     {
       "rank": 9,
-      "title": "【开源评测】pdoom-video：用 TypeScript + three.js 写一支 4K 音乐 MV——确定性渲染如何颠覆 AI 视频生成范式",
-      "url": "https://blog.csdn.net/TunerT_TQ/article/details/167131598",
-      "hot": "7406"
+      "title": "【VLA】Qwen-VLA:VLM+DiT统一多模态理解与连续机器人动作生成",
+      "url": "https://blog.csdn.net/qq_35812205/article/details/167127394",
+      "hot": "7212"
     },
     {
       "rank": 10,
-      "title": "【VLA】Qwen-VLA:VLM+DiT统一多模态理解与连续机器人动作生成",
-      "url": "https://blog.csdn.net/qq_35812205/article/details/167127394",
-      "hot": "7346"
+      "title": "AI Agent 说完成了，怎样验证任务真的完成",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/166736285",
+      "hot": "6941"
     }
   ]
 }
