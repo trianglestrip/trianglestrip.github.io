@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-06T23:47:03+00:00",
+  "updated_at": "2026-10-07T02:43:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Sharing AI Progress in Mathematics",
+      "title": "Sharing AI progress in mathematics",
       "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
-      "hot": "215"
+      "hot": "477"
     },
     {
       "rank": 2,
       "title": "Mistral Large 4",
       "url": "https://mistral.ai/news/mistral-large-4/\\",
-      "hot": "1543"
+      "hot": "1610"
     },
     {
       "rank": 3,
-      "title": "Decisions API is in public beta",
-      "url": "https://developers.openai.com/api/docs/guides/decisions",
-      "hot": "89"
+      "title": "Strands Decider 2B: a small, open-source, decision model",
+      "url": "https://strandsagents.com/blog/introducing-strands-decider/",
+      "hot": "15"
     },
     {
       "rank": 4,
-      "title": "OpenAI just dropped 700 preprints of mathematical proofs and counterexamples",
-      "url": "https://github.com/openai/math/tree/main/preprints",
-      "hot": "8"
+      "title": "Decisions API is in public beta",
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "hot": "161"
     },
     {
       "rank": 5,
-      "title": "Vibecoding Photoshop: Time and pressure",
-      "url": "https://andreklein.net/vibecoding-photoshop-time-and-pressure/",
-      "hot": "29"
+      "title": "Penguin Mail – open-source Rust email client for Linux with AI",
+      "url": "https://penguin-mail.com/",
+      "hot": "81"
     },
     {
       "rank": 6,
-      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
-      "hot": "189"
+      "title": "The cost of lies: A Mineserver story",
+      "url": "https://www.jeremyreimer.com/rockets-item.lsp?f=true&p=272",
+      "hot": "10"
     },
     {
       "rank": 7,
-      "title": "Penguin Mail – open-source Rust email client for Linux with AI",
-      "url": "https://penguin-mail.com/",
-      "hot": "20"
+      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "hot": "231"
     },
     {
       "rank": 8,
-      "title": "Nobel Prize in Physics 2026: Francis Halzen",
-      "url": "https://www.nobelprize.org/prizes/physics/2026/",
-      "hot": "507"
+      "title": "AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "hot": "118"
     },
     {
       "rank": 9,
       "title": "OpenTPU – An open-source AI accelerator, developed by AI",
       "url": "https://github.com/FeSens/openTPU",
-      "hot": "209"
+      "hot": "241"
     },
     {
       "rank": 10,
-      "title": "Paramount Skydance has completed its $111B merger with Warner Bros. Discovery",
-      "url": "https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/",
-      "hot": "145"
+      "title": "Claude Code’s suggested message feature: I think the real customer is the model",
+      "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+      "hot": "111"
     }
   ]
 }
