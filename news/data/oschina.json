@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-08T07:21:43+00:00",
+  "updated_at": "2026-10-08T14:41:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Personal Agent 的终点不该是一个更聪明的命令行",
+      "url": "https://my.oschina.net/u/9765709/blog/19774529",
+      "hot": "Thu, 08 Oct 2026 19:39:36 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "德国搜索引擎 Ecosia 甩了 Mistral：性能落后一整年，换中国开源模型省一半钱",
+      "url": "https://www.oschina.net/news/502897/germany-ecosia-search-engine-mistral-china-open-source-ai",
+      "hot": "Thu, 08 Oct 2026 18:59:30 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Skyeye 云企业级AI+零代码智能制造系统-ERP、财务、商城板块 - v4.1.7 发布",
+      "url": "https://www.oschina.net/news/502896",
+      "hot": "Thu, 08 Oct 2026 18:58:08 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "微软为 Windows 讲了个新故事 —— 本地云端的 Agent 中间层，沙箱先转正",
+      "url": "https://www.oschina.net/news/502895",
+      "hot": "Thu, 08 Oct 2026 17:57:28 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Claude Haiku 5.5 来了：价格砍到四分之一，agent 能力从 0 跳到 39%",
+      "url": "https://www.oschina.net/news/502894/anthropic-claude-haiku-5-5",
+      "hot": "Thu, 08 Oct 2026 16:54:45 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Manus 新一轮融资超 5 亿美元，成为中国估值最高的 AI Agent 公司",
+      "url": "https://www.oschina.net/news/502893/manus-raises-more-than-500-million-after-meta-exit",
+      "hot": "Thu, 08 Oct 2026 15:53:24 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "极速调度，可靠备份 OpsDump v0.2.0 桌面版发布",
+      "url": "https://www.oschina.net/news/502891",
+      "hot": "Thu, 08 Oct 2026 15:42:22 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "GPT-6 全球推送，聊天回答里长出了计算器和地图",
+      "url": "https://www.oschina.net/news/502890/openai-gpt-6-for-everyone",
+      "hot": "Thu, 08 Oct 2026 15:29:16 +0800"
+    },
+    {
+      "rank": 9,
       "title": "Docker 推出官方 Agent 工具：YAML 定义、任意 MCP、OCI 镜像分发",
       "url": "https://www.oschina.net/news/502889",
       "hot": "Thu, 08 Oct 2026 15:04:48 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "记录创作历史， 而不只是代码历史 —— Libra，面向 Agent 的 AI 原生扩展版本控制系统",
       "url": "https://www.oschina.net/p/libra-vcs",
       "hot": "Thu, 08 Oct 2026 14:58:26 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "Goldfish Scheme v18.11.39 发布了：迈向现代宏系统与多核并发",
-      "url": "https://www.oschina.net/news/502885",
-      "hot": "Thu, 08 Oct 2026 14:09:28 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "Mistral Large 4 来了：一万亿参数、具备原生多模态能力",
-      "url": "https://www.oschina.net/news/502872/mistral-large-4",
-      "hot": "Thu, 08 Oct 2026 11:56:07 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "KnowForge 2026.0.8 发布：协作写作、团队空间、AI 朗读，这次更新有点大",
-      "url": "https://www.oschina.net/news/502870",
-      "hot": "Thu, 08 Oct 2026 09:33:24 +0800"
-    },
-    {
-      "rank": 6,
-      "title": ":fire::fire::fire: Claude Code 工程最佳实践 | 主数据平台 1.6.0 震撼发布",
-      "url": "https://www.oschina.net/news/502869",
-      "hot": "Thu, 08 Oct 2026 09:32:37 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Apollo 3.0：迈向 Agent First 的配置管理",
-      "url": "https://www.oschina.net/news/502867",
-      "hot": "Thu, 08 Oct 2026 08:52:08 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "👍JeeSite V5.19.1 发布，重构上传组件、AI 识图/生图/统计、流程设计器、多项增强优化",
-      "url": "https://www.oschina.net/news/502866",
-      "hot": "Thu, 08 Oct 2026 07:50:26 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "开源 AI 终端 uniTerm v1.10 发布：安卓版来了！手机上也能 SSH 运维",
-      "url": "https://www.oschina.net/news/502865",
-      "hot": "Wed, 07 Oct 2026 20:10:56 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Termexo v0.10.11 发布：通过 MCP 操控五种编程 Agent，完善连接引导与状态回传",
-      "url": "https://www.oschina.net/news/502851",
-      "hot": "Wed, 07 Oct 2026 19:26:47 +0800"
     }
   ]
 }

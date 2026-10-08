@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-08T07:21:40+00:00",
+  "updated_at": "2026-10-08T14:41:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "“Math 2.0” will need to value mathematical progress more holistically",
-      "url": "https://mathstodon.xyz/@tao/117395269325940185",
-      "hot": "201"
+      "title": "Beauty in DVD Menus",
+      "url": "https://vale.rocks/posts/dvd-menus",
+      "hot": "54"
     },
     {
       "rank": 2,
-      "title": "People Holding Up the Internet",
-      "url": "https://sheets.works/data-viz/holding-up-the-internet",
-      "hot": "50"
+      "title": "“Math 2.0” will need to value mathematical progress more holistically",
+      "url": "https://mathstodon.xyz/@tao/117395269325940185",
+      "hot": "463"
     },
     {
       "rank": 3,
-      "title": "Claude Haiku 5.5",
-      "url": "https://www.anthropic.com/claude-haiku-5-5",
-      "hot": "826"
+      "title": "The Slow Formation of Durable Software",
+      "url": "https://newsletter.dancohen.org/archive/the-slow-formation-of-durable-software/",
+      "hot": "107"
     },
     {
       "rank": 4,
-      "title": "Living off-grid: Hundred Rabbits",
-      "url": "https://100r.ca/site/home.html",
-      "hot": "156"
-    },
-    {
-      "rank": 5,
-      "title": "Margaret Hamilton has died",
-      "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
-      "hot": "1287"
-    },
-    {
-      "rank": 6,
-      "title": "GPT‑6 and Intelligent UI for everyone",
-      "url": "https://openai.com/index/gpt-6-for-everyone/",
-      "hot": "594"
-    },
-    {
-      "rank": 7,
-      "title": "The 15-year search for a band that charted once and vanished",
-      "url": "https://shahidhussain.com/writing/search-for-salvage/",
+      "title": "Telnet BBS Guide",
+      "url": "https://www.telnetbbsguide.com/",
       "hot": "42"
     },
     {
+      "rank": 5,
+      "title": "I gave Opus 5.5 one prompt and six hours to visualize Invisible Cities",
+      "url": "https://quesma.com/blog/invisible-cities-one-shot/",
+      "hot": "157"
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI Withdraws 3 Math Papers",
+      "url": "https://github.com/openai/math/blob/main/history.md",
+      "hot": "239"
+    },
+    {
+      "rank": 7,
+      "title": "Claude Haiku 5.5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "hot": "964"
+    },
+    {
       "rank": 8,
-      "title": "How did Rosalind Franklin miss the helix in her iconic DNA image? She didn't",
-      "url": "https://www.science.org/content/article/how-did-rosalind-franklin-miss-helix-her-iconic-dna-image-she-didn-t",
-      "hot": "147"
+      "title": "The 15-year search for a band that charted once and vanished",
+      "url": "https://shahidhussain.com/writing/search-for-salvage/",
+      "hot": "245"
     },
     {
       "rank": 9,
-      "title": "Cleo (Mathematician)",
-      "url": "https://en.wikipedia.org/wiki/Cleo_(mathematician)",
-      "hot": "127"
+      "title": "Time Travel in Braid (2015)",
+      "url": "https://qntm.org/braid",
+      "hot": "36"
     },
     {
       "rank": 10,
-      "title": "'Jonathan' is the oldest land animal on Earth",
-      "url": "https://www.404media.co/oldest-living-land-animal-jonathan-the-tortoise/",
-      "hot": "131"
+      "title": "Living off-grid: Hundred Rabbits",
+      "url": "https://100r.ca/site/home.html",
+      "hot": "297"
     }
   ]
 }

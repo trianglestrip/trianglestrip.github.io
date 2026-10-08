@@ -1,68 +1,62 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-10-08T07:21:25+00:00",
+  "updated_at": "2026-10-08T14:40:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[TypeScript] morluto/rea",
-      "url": "https://github.com/morluto/rea",
-      "hot": "17,628"
+      "title": "[C++] boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "hot": "13,624"
     },
     {
       "rank": 2,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "280,119"
+      "title": "[HTML] cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "hot": "45,757"
     },
     {
       "rank": 3,
-      "title": "[C++] boykopovar/AnyPS5",
-      "url": "https://github.com/boykopovar/AnyPS5",
-      "hot": "11,713"
+      "title": "[TypeScript] morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "hot": "20,097"
     },
     {
       "rank": 4,
-      "title": "[Python] ayghri/i-have-adhd",
-      "url": "https://github.com/ayghri/i-have-adhd",
-      "hot": "55,412"
+      "title": "[Shell] mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "hot": "280,759"
     },
     {
       "rank": 5,
-      "title": "[HTML] cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "hot": "45,335"
+      "title": "[TypeScript] thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "hot": "98,154"
     },
     {
       "rank": 6,
-      "title": "[JavaScript] addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "hot": "103,034"
+      "title": "[C] EpicGames/raddebugger",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "hot": "8,007"
     },
     {
       "rank": 7,
-      "title": "[C] EpicGames/raddebugger",
-      "url": "https://github.com/EpicGames/raddebugger",
-      "hot": "7,946"
+      "title": "[Python] anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "hot": "27,317"
     },
     {
       "rank": 8,
-      "title": "[TypeScript] thedotmack/claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "hot": "97,927"
+      "title": "[Rust] storytold/artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "hot": "6,451"
     },
     {
       "rank": 9,
-      "title": "[Swift] manaflow-ai/cmux",
-      "url": "https://github.com/manaflow-ai/cmux",
-      "hot": "27,953"
-    },
-    {
-      "rank": 10,
-      "title": "[Rust] trycua/cua",
-      "url": "https://github.com/trycua/cua",
-      "hot": "28,896"
+      "title": "liquidslr/system-design-notes",
+      "url": "https://github.com/liquidslr/system-design-notes",
+      "hot": "24,294"
     }
   ]
 }
