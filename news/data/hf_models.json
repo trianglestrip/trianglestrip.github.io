@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-07T16:32:32+00:00",
+  "updated_at": "2026-10-08T01:13:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Cloudflare/clef",
-      "url": "https://huggingface.co/Cloudflare/clef",
-      "hot": "1777"
+      "title": "autotrust/JEV-27B-VL",
+      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
+      "hot": "1976"
     },
     {
       "rank": 2,
-      "title": "autotrust/JEV-27B-VL",
-      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
-      "hot": "1642"
+      "title": "Cloudflare/clef",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "hot": "1816"
     },
     {
       "rank": 3,
       "title": "autotrust/GEV-26B-Decide",
       "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
-      "hot": "1066"
+      "hot": "1312"
     },
     {
       "rank": 4,
       "title": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
-      "hot": "850"
+      "hot": "953"
     },
     {
       "rank": 5,
       "title": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-      "hot": "763"
+      "hot": "775"
     },
     {
       "rank": 6,
       "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "3538"
+      "hot": "3560"
     },
     {
       "rank": 7,
       "title": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "hot": "614"
+      "hot": "626"
     },
     {
       "rank": 8,
       "title": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
-      "hot": "637"
+      "hot": "652"
     },
     {
       "rank": 9,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "6756"
+      "hot": "6798"
     },
     {
       "rank": 10,
-      "title": "convaiinnovations/laya",
-      "url": "https://huggingface.co/convaiinnovations/laya",
-      "hot": "5321"
+      "title": "jialinyyzz/humanizer",
+      "url": "https://huggingface.co/jialinyyzz/humanizer",
+      "hot": "463"
     }
   ]
 }

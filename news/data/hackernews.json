@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-07T21:30:26+00:00",
+  "updated_at": "2026-10-08T01:12:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Claude Haiku 5.5",
       "url": "https://www.anthropic.com/claude-haiku-5-5",
-      "hot": "483"
+      "hot": "658"
     },
     {
       "rank": 2,
-      "title": "GPT‑6 and Intelligent UI for everyone",
-      "url": "https://openai.com/index/gpt-6-for-everyone/",
-      "hot": "353"
+      "title": "Margaret Hamilton has died",
+      "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+      "hot": "631"
     },
     {
       "rank": 3,
-      "title": "Docker Agent",
-      "url": "https://github.com/docker/docker-agent",
-      "hot": "115"
+      "title": "'Jonathan' is the oldest land animal on Earth",
+      "url": "https://www.404media.co/oldest-living-land-animal-jonathan-the-tortoise/",
+      "hot": "42"
     },
     {
       "rank": 4,
-      "title": "Despite what Watson said, Rosalind Franklin understood structure of DNA first",
-      "url": "https://link.springer.com/article/10.1007/s10739-026-09866-7",
-      "hot": "29"
+      "title": "Rust Port of TypeScript (Tsc)",
+      "url": "https://github.com/pingdotgg/ts-rust",
+      "hot": "7"
     },
     {
       "rank": 5,
-      "title": "Push ifs up and fors down: The idiom, its algebra, and its limits",
-      "url": "https://debasishg.github.io/blog/push-ifs-up-fors-down/",
-      "hot": "47"
+      "title": "GPT‑6 and Intelligent UI for everyone",
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "hot": "485"
     },
     {
       "rank": 6,
-      "title": "Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app",
-      "url": "https://bigwords.page/",
-      "hot": "238"
+      "title": "How did Rosalind Franklin miss the helix in her iconic DNA image? She didn't",
+      "url": "https://www.science.org/content/article/how-did-rosalind-franklin-miss-helix-her-iconic-dna-image-she-didn-t",
+      "hot": "49"
     },
     {
       "rank": 7,
-      "title": "Shipping JPEG XL in Chrome",
-      "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
-      "hot": "435"
+      "title": "Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app",
+      "url": "https://bigwords.page/",
+      "hot": "348"
     },
     {
       "rank": 8,
-      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
-      "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
-      "hot": "170"
+      "title": "Docker Agent",
+      "url": "https://github.com/docker/docker-agent",
+      "hot": "172"
     },
     {
       "rank": 9,
-      "title": "The Mathocalypse",
-      "url": "https://scottaaronson.blog/?p=10169",
-      "hot": "118"
+      "title": "In Vienna and Beijing, the first (thorium) nuclear clocks begin to tick",
+      "url": "https://www.nytimes.com/2026/10/07/science/first-nuclear-clocks-thorium-229.html",
+      "hot": "20"
     },
     {
       "rank": 10,
-      "title": "Navier–Stokes Lost in Translation",
-      "url": "https://arxiv.org/abs/2610.08144",
-      "hot": "182"
+      "title": "Push ifs up and fors down: The idiom, its algebra, and its limits",
+      "url": "https://debasishg.github.io/blog/push-ifs-up-fors-down/",
+      "hot": "103"
     }
   ]
 }
