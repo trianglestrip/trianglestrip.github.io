@@ -1,20 +1,20 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-10-08T01:12:51+00:00",
+  "updated_at": "2026-10-08T07:21:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "SigilHook：用 AngelScript 做 x86/x64 函数 Hook 的注入式运行时",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2130534",
-      "hot": "[md]分享一下我自己做的项目 SigilHook\n\nGitHub：\nhttps://github.com/StackAndPointer/SigilHook\n\n发布页：\nhttps://github.com/StackAndPointer/SigilHook/releases\n\n一句话概括：这是一个基于 PolyHook 2、用 AngelScript 驱动脚本 Hook 的 x86/x64 注入式运 ..."
-    },
-    {
-      "rank": 2,
       "title": "The Enigma Protector vm还原插件",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2127264",
       "hot": "不做过多介绍，能用的上的人都知道怎么用，字越少，越强大\n\n主要还原壳代码，遇到    push 0xxxxxx   jmp xxxxx这种地址，右键---EnigmaVM---还原当前地址，就可以还原，还原的代码大部分都可以执行的，遇到不能执行的 ..."
+    },
+    {
+      "rank": 2,
+      "title": "某象滑块纯算逆向分析",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2125447",
+      "hot": "前言[hr]\n兄弟们，我又来了，最近离职了有空研究下弱点，滑块这些，最近看论坛这些真是日新月异，ai直接都把web端相当于全破了，我看了下如果没有别人逆完写好流程的skill，你就要自己懂流程一步步引导他做下去，没有那 ..."
     },
     {
       "rank": 3,

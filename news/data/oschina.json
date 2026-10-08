@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-08T01:12:58+00:00",
+  "updated_at": "2026-10-08T07:21:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "袋鼠数据库工具 v9.9.1 版已上线",
-      "url": "https://www.oschina.net/news/502849",
-      "hot": "Wed, 07 Oct 2026 09:50:48 +0800"
+      "title": "Docker 推出官方 Agent 工具：YAML 定义、任意 MCP、OCI 镜像分发",
+      "url": "https://www.oschina.net/news/502889",
+      "hot": "Thu, 08 Oct 2026 15:04:48 +0800"
     },
     {
       "rank": 2,
-      "title": "SonnetDB 4.0.0 发布：完善 SQL 与多模型协作，强化部署和恢复边界",
-      "url": "https://www.oschina.net/news/502847",
-      "hot": "Wed, 07 Oct 2026 02:53:50 +0800"
+      "title": "记录创作历史， 而不只是代码历史 —— Libra，面向 Agent 的 AI 原生扩展版本控制系统",
+      "url": "https://www.oschina.net/p/libra-vcs",
+      "hot": "Thu, 08 Oct 2026 14:58:26 +0800"
     },
     {
       "rank": 3,
-      "title": "AuthX 正式更名 GrantForge：我们重新做了一遍权限管理系统",
-      "url": "https://www.oschina.net/news/502846",
-      "hot": "Tue, 06 Oct 2026 09:39:23 +0800"
+      "title": "Goldfish Scheme v18.11.39 发布了：迈向现代宏系统与多核并发",
+      "url": "https://www.oschina.net/news/502885",
+      "hot": "Thu, 08 Oct 2026 14:09:28 +0800"
     },
     {
       "rank": 4,
-      "title": "Termexo v0.10.10 发布：19 个本地 MCP 工具，五种编程 Agent 自动接入",
-      "url": "https://www.oschina.net/news/502845",
-      "hot": "Tue, 06 Oct 2026 07:39:06 +0800"
+      "title": "Mistral Large 4 来了：一万亿参数、具备原生多模态能力",
+      "url": "https://www.oschina.net/news/502872/mistral-large-4",
+      "hot": "Thu, 08 Oct 2026 11:56:07 +0800"
     },
     {
       "rank": 5,
-      "title": "SmartCall v1.0.7 发布，新增模型以及音色管理",
-      "url": "https://www.oschina.net/news/502844",
-      "hot": "Mon, 05 Oct 2026 03:06:04 +0800"
+      "title": "KnowForge 2026.0.8 发布：协作写作、团队空间、AI 朗读，这次更新有点大",
+      "url": "https://www.oschina.net/news/502870",
+      "hot": "Thu, 08 Oct 2026 09:33:24 +0800"
     },
     {
       "rank": 6,
-      "title": "BlackGit，按需下载仓库文件以及提供文件 Lock 功能，还有对应 Skills 方便操作",
-      "url": "https://www.oschina.net/news/502843",
-      "hot": "Sun, 04 Oct 2026 22:18:30 +0800"
+      "title": ":fire::fire::fire: Claude Code 工程最佳实践 | 主数据平台 1.6.0 震撼发布",
+      "url": "https://www.oschina.net/news/502869",
+      "hot": "Thu, 08 Oct 2026 09:32:37 +0800"
     },
     {
       "rank": 7,
-      "title": "🔥 AI 员工支持知识库文档引用：开源 AI 无代码平台 NocoBase",
-      "url": "https://www.oschina.net/news/502842",
-      "hot": "Sat, 03 Oct 2026 17:07:27 +0800"
+      "title": "Apollo 3.0：迈向 Agent First 的配置管理",
+      "url": "https://www.oschina.net/news/502867",
+      "hot": "Thu, 08 Oct 2026 08:52:08 +0800"
     },
     {
       "rank": 8,
-      "title": "破釜沉舟奔向 1.0：Zig 0.17.0 正式发布",
-      "url": "https://www.oschina.net/news/502841",
-      "hot": "Sat, 03 Oct 2026 09:05:58 +0800"
+      "title": "👍JeeSite V5.19.1 发布，重构上传组件、AI 识图/生图/统计、流程设计器、多项增强优化",
+      "url": "https://www.oschina.net/news/502866",
+      "hot": "Thu, 08 Oct 2026 07:50:26 +0800"
     },
     {
       "rank": 9,
-      "title": "从 PyQt6 到 Electron：一款英语字帖生成器的跨平台重构实战与踩坑全记录",
-      "url": "https://www.oschina.net/news/502840",
-      "hot": "Sat, 03 Oct 2026 08:31:43 +0800"
+      "title": "开源 AI 终端 uniTerm v1.10 发布：安卓版来了！手机上也能 SSH 运维",
+      "url": "https://www.oschina.net/news/502865",
+      "hot": "Wed, 07 Oct 2026 20:10:56 +0800"
     },
     {
       "rank": 10,
-      "title": "灵界 OS 6.0 稳定版 · 窗口渲染优化与应用安装器更新",
-      "url": "https://www.oschina.net/news/502839",
-      "hot": "Fri, 02 Oct 2026 17:30:15 +0800"
+      "title": "Termexo v0.10.11 发布：通过 MCP 操控五种编程 Agent，完善连接引导与状态回传",
+      "url": "https://www.oschina.net/news/502851",
+      "hot": "Wed, 07 Oct 2026 19:26:47 +0800"
     }
   ]
 }
