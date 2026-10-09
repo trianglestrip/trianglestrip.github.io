@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-09T00:17:24+00:00",
+  "updated_at": "2026-10-09T06:14:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 6 实战：把 100 万以内的素数筛到后台线程",
-      "url": "https://ost.51cto.com/posts/59134",
-      "hot": "前言有次我在一个工具类应用里加了个&ldquo;统计&rdquo;功能，要一次性把一百万个数字的素数情况算出来。逻辑本身不复杂，埃氏筛一百行内能写完，但第..."
+      "title": "HarmonyOS UIAbility 启动模式完全解析：从页面跳转到实例复用#智绘鸿蒙·如 7 而至#",
+      "url": "https://ost.51cto.com/posts/59210",
+      "hot": "HarmonyOSUIAbility启动模式完全解析：从页面跳转到实例复用一、为什么需要理解UIAbility的启动模式？在HarmonyOS应用开发中，页面跳转是最..."
     },
     {
       "rank": 2,
-      "title": "我把 Pi 装进 Codex，终于不用来回切终端",
-      "url": "https://www.51cto.com/article/857605.html",
-      "hot": "如何在 Codex Desktop 里让 Pi 帮我干活？"
+      "title": "HarmonyOS 图片预览器完全指南：跟手缩放、边界限制与手势冲突全解析#智绘鸿蒙·如 7 而至#",
+      "url": "https://ost.51cto.com/posts/59208",
+      "hot": "HarmonyOS图片预览器完全指南：跟手缩放、边界限制与手势冲突全解析一、为什么需要图片预览器？在移动应用中，图片预览是一个极其普遍的功..."
     },
     {
       "rank": 3,
-      "title": "小型工单 AI 智能体漏洞复盘，七步筑牢安全防线",
-      "url": "https://www.51cto.com/article/857597.html",
-      "hot": "AI 智能体安全早已不是大厂专属的抽象议题，而是所有开发、部署 LLM 智能体的团队，必须直面的现实风险。"
+      "title": "上手体验 OpenAI DevDay 新玩意：Dots、Decisions API、开源 Codex Harness 更新",
+      "url": "https://www.51cto.com/article/857714.html",
+      "hot": "Dots 能把云端任务与本地工作接起来；Codex Harness 的更新为构建自己的 Agent 系统提供了更强大的 Harness 基座；Space 也让平时的 AI 成果有了一个可以继续整理、修改和协作的空间。"
     },
     {
       "rank": 4,
-      "title": "HarmonyOS 7 知识库问答实战：让大模型开卷考试，检索不到就拒答",
-      "url": "https://ost.51cto.com/posts/59100",
-      "hot": "大模型什么都懂一点，但它恰好不懂你最需要它懂的那部分&mdash;&mdash;你公司的报销制度、你家的音箱说明书、你上周的会议纪要。这些私有知识不在训练..."
+      "title": "Agent 时代，前端怎么变？读懂 AG-UI、A2UI 与 MCP Apps 的分工与协同",
+      "url": "https://www.51cto.com/article/857713.html",
+      "hot": "在早期 Agent 出现时，很多人认为自然语言就是 Agent 的 UI。但很可惜，自然语言并不能解决所有的交互问题 — 最简单不代表效率最高。自然语言很适合表达需求和任务：“把我昨天的订单做退款处理”，这比在菜单与按钮之间反复跳转简单省事。"
     },
     {
       "rank": 5,
-      "title": "NeurIPS 2026 Spotlight｜拒绝模型「自作主张」，VisInteract用交互搜索找回意图",
-      "url": "https://www.51cto.com/article/857586.html",
-      "hot": "研究团队提出了 VisInteract。这是一种面向不完美查询的动态交互式 Text-to-Vis 新范式。"
+      "title": "AI 编码智能体死循环无解？五步实操法打破越修越崩的 bug 修复怪圈",
+      "url": "https://www.51cto.com/article/857710.html",
+      "hot": "程序员遇到三次修复失败，立刻止损回退、重置上下文、精准定义问题，不要在错误代码的基础上持续打补丁。"
     },
     {
       "rank": 6,
-      "title": "刚刚，GPT-6 Astra推翻59年核聚变猜想！",
-      "url": "https://www.51cto.com/article/857583.html",
-      "hot": "一位京都大学核聚变方向研究生出身的AI博主发长帖感叹，，AI和人类一起发现新科学的时代已经真正开始！"
+      "title": "Google新研究｜动态多智能体，每个查询自动搭Agent系统",
+      "url": "https://www.51cto.com/article/857709.html",
+      "hot": "SHIFT 将多智能体系统的构建从依赖经验与试错，推进到可学习、可预测的框架。它以冻结骨干、仅训练 LoRA 的轻量 Gemma 作为架构师，把设计成本从每次推理转移到一次性训练并摊薄，不依赖更大的执行器，在六个基准上同时取得最高平均准确率与显著更低的成本档位，可直接用于智能体产品。"
     },
     {
       "rank": 7,
-      "title": "Claude新Haiku发布！暴击GPT-6 Luna，比梁文谷还便宜，OpenAI只能送重置卡挽尊",
-      "url": "https://www.51cto.com/article/857580.html",
-      "hot": "Claude Haiku 5.5直接超越两大前“斩杀线”DeepSeek V4.1Flash和GLM-5.3-Flash，成为新的小模型守门员。"
+      "title": "淘天三面被问：Multi-Agent体系中智能体怎么通信，上下文如何管控？我说\"用消息队列传递，共享上下文，谁需要就去读。他摇了摇头没说话",
+      "url": "https://www.51cto.com/article/857708.html",
+      "hot": "2026年被很多从业者称为\"智能体爆发年\"。当一个任务复杂到超出单个Agent的能力边界——上下文窗口不够用、需要多个专业领域配合、或者子任务可以并行处理——多智能体系统就成了绕不开的选项。"
     },
     {
       "rank": 8,
-      "title": "构建安全 RAG：从文档入库到输出返回，一套可落地的纵深防护体系",
-      "url": "https://www.51cto.com/article/857593.html",
-      "hot": "本文深入剖析 RAG 系统的安全威胁原理，并提供从文档入库到输出返回的完整防护方案，帮助开发者构建更安全的 RAG 系统。"
+      "title": "刚刚，GPT-6.1 Sol Ultrafast 来了！",
+      "url": "https://www.51cto.com/article/857701.html",
+      "hot": "昨天，OpenAI 决定向所有用户（包括免费和付费用户）开放 GPT-6 ，今天就推出了全新的模型 GPT-6.1 Sol 的 Ultrafast 版本！结合更新的模型控制系统，能够实现对用户指令调整的及时响应。"
     },
     {
       "rank": 9,
-      "title": "USENIX Security 2026｜上海创智学院×复旦大学给智能体装上轨迹「安全规则审计员」：让Agent的行动可审计、可解释",
-      "url": "https://www.51cto.com/article/857560.html",
-      "hot": "近日，上海创智学院与复旦大学团队提出针对智能体轨迹安全评估新方案 MATE，首个面向移动 / GUI 智能体的执行轨迹进行「规则感知」安全审计模型。"
+      "title": "把人类双手的「手感」移植给机器人：500 小时真实操作数据，任务成功率翻番",
+      "url": "https://www.51cto.com/article/857700.html",
+      "hot": "近日，来自德州农工大学（Texas A&M）、Google DeepMind、卡内基梅隆大学（CMU）、斯坦福大学、加州大学伯克利分校、耶鲁大学、微软、英伟达（NVIDIA）、利物浦大学、Meta、华盛顿大学、西北大学、索尼、佐治亚理工学院（Georgia Tech）以及 Overfit Lab （数据供应商） 等 15 家机构的研究者发布了 TouchScale：一个在统一传感器、统一采集与同步"
     },
     {
       "rank": 10,
-      "title": "刚刚，诺贝尔化学奖揭晓！95岁老人破解了生命为何只用「一只手」",
-      "url": "https://www.51cto.com/article/857557.html",
-      "hot": "这届化学奖，颁给了法国巴黎南大学的Henri Kagan和日本东京理科大学的Kenso Soai，以表彰他们在不对称有机合成中发现非线性效应和自催化作用。"
+      "title": "OpenAI 的 Codex 出现故障：流量降下来了，慢节点还在，最后查到连接池头上",
+      "url": "https://www.51cto.com/article/857704.html",
+      "hot": "如果连接都通向同一个实际后端，FIFO 无法凭空选到其他服务器；如果代理每个请求都重新选后端，客户端这层的复用顺序也不能直接解释最终分布。HTTP/2 一条连接还能承载多个并发流，也不能照搬前面“一条连接一次一个请求”的模型。"
     }
   ]
 }

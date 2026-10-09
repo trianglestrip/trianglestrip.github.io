@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-09T00:17:30+00:00",
+  "updated_at": "2026-10-09T06:14:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Personal Agent 的终点不该是一个更聪明的命令行",
-      "url": "https://my.oschina.net/u/9765709/blog/19774529",
-      "hot": "Thu, 08 Oct 2026 19:39:36 +0800"
+      "title": "不写一行 Python，不引一行 C：纯 Uya 从零实现的 CLI 编程 Agent 开源了",
+      "url": "https://www.oschina.net/news/502916",
+      "hot": "Fri, 09 Oct 2026 12:29:04 +0800"
     },
     {
       "rank": 2,
-      "title": "德国搜索引擎 Ecosia 甩了 Mistral：性能落后一整年，换中国开源模型省一半钱",
-      "url": "https://www.oschina.net/news/502897/germany-ecosia-search-engine-mistral-china-open-source-ai",
-      "hot": "Thu, 08 Oct 2026 18:59:30 +0800"
+      "title": "Markdown 是 AI 编程时代的“源代码”，应该把它提交到 /src 目录",
+      "url": "https://www.oschina.net/news/502915/markdown-in-src",
+      "hot": "Fri, 09 Oct 2026 11:52:48 +0800"
     },
     {
       "rank": 3,
-      "title": "Skyeye 云企业级AI+零代码智能制造系统-ERP、财务、商城板块 - v4.1.7 发布",
-      "url": "https://www.oschina.net/news/502896",
-      "hot": "Thu, 08 Oct 2026 18:58:08 +0800"
+      "title": "开源 Rust 游戏引擎 Bevy 0.20 发布：着色器换 WESL、光追渲染器转正，全都在给场景编辑器铺路",
+      "url": "https://www.oschina.net/news/502913/bevy-engine-0-20",
+      "hot": "Fri, 09 Oct 2026 11:45:52 +0800"
     },
     {
       "rank": 4,
-      "title": "微软为 Windows 讲了个新故事 —— 本地云端的 Agent 中间层，沙箱先转正",
-      "url": "https://www.oschina.net/news/502895",
-      "hot": "Thu, 08 Oct 2026 17:57:28 +0800"
+      "title": "RXThinkCMF 敏捷开发框架 ThinkPhp6+AntdVue 版本 v2.7.0 发布",
+      "url": "https://www.oschina.net/news/502912",
+      "hot": "Fri, 09 Oct 2026 11:36:06 +0800"
     },
     {
       "rank": 5,
-      "title": "Claude Haiku 5.5 来了：价格砍到四分之一，agent 能力从 0 跳到 39%",
-      "url": "https://www.oschina.net/news/502894/anthropic-claude-haiku-5-5",
-      "hot": "Thu, 08 Oct 2026 16:54:45 +0800"
+      "title": "lamp-cloud 5.10.1 发布，专注多租户解决方案",
+      "url": "https://www.oschina.net/news/502910",
+      "hot": "Fri, 09 Oct 2026 11:15:53 +0800"
     },
     {
       "rank": 6,
-      "title": "Manus 新一轮融资超 5 亿美元，成为中国估值最高的 AI Agent 公司",
-      "url": "https://www.oschina.net/news/502893/manus-raises-more-than-500-million-after-meta-exit",
-      "hot": "Thu, 08 Oct 2026 15:53:24 +0800"
+      "title": "StreamSQL v1.3.0 发布：流-流 JOIN，补齐双流窗口化关联",
+      "url": "https://www.oschina.net/news/502909",
+      "hot": "Fri, 09 Oct 2026 11:13:36 +0800"
     },
     {
       "rank": 7,
-      "title": "极速调度，可靠备份 OpsDump v0.2.0 桌面版发布",
-      "url": "https://www.oschina.net/news/502891",
-      "hot": "Thu, 08 Oct 2026 15:42:22 +0800"
+      "title": "告别零散的在线工具！开源桌面工具箱 ToolForge v0.1.7 发布",
+      "url": "https://www.oschina.net/news/502908",
+      "hot": "Fri, 09 Oct 2026 11:06:11 +0800"
     },
     {
       "rank": 8,
-      "title": "GPT-6 全球推送，聊天回答里长出了计算器和地图",
-      "url": "https://www.oschina.net/news/502890/openai-gpt-6-for-everyone",
-      "hot": "Thu, 08 Oct 2026 15:29:16 +0800"
+      "title": "开源智能问数平台YOLO Data v1.0发布",
+      "url": "https://www.oschina.net/news/502907",
+      "hot": "Fri, 09 Oct 2026 11:05:47 +0800"
     },
     {
       "rank": 9,
-      "title": "Docker 推出官方 Agent 工具：YAML 定义、任意 MCP、OCI 镜像分发",
-      "url": "https://www.oschina.net/news/502889",
-      "hot": "Thu, 08 Oct 2026 15:04:48 +0800"
+      "title": "$100 预算 + 四个顶级大模型，造出的 PDF 编辑器点几下就露馅",
+      "url": "https://www.oschina.net/news/502906/the-remaining-shortcomings-of-coding-agents",
+      "hot": "Fri, 09 Oct 2026 10:48:17 +0800"
     },
     {
       "rank": 10,
-      "title": "记录创作历史， 而不只是代码历史 —— Libra，面向 Agent 的 AI 原生扩展版本控制系统",
-      "url": "https://www.oschina.net/p/libra-vcs",
-      "hot": "Thu, 08 Oct 2026 14:58:26 +0800"
+      "title": "跳出 AI 试点陷阱：SUSE 企业级私有 AI 战略，用开源基础设施打通生产级落地",
+      "url": "https://www.oschina.net/news/502904",
+      "hot": "Fri, 09 Oct 2026 09:55:35 +0800"
     }
   ]
 }
