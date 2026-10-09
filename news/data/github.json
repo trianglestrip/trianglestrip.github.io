@@ -1,62 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-10-09T00:17:13+00:00",
+  "updated_at": "2026-10-09T13:15:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[C++] boykopovar/AnyPS5",
-      "url": "https://github.com/boykopovar/AnyPS5",
-      "hot": "15,660"
+      "title": "[TypeScript] morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "hot": "36,055"
     },
     {
       "rank": 2,
-      "title": "[HTML] cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "hot": "46,310"
+      "title": "[C++] boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "hot": "19,236"
     },
     {
       "rank": 3,
-      "title": "[TypeScript] morluto/rea",
-      "url": "https://github.com/morluto/rea",
-      "hot": "26,033"
+      "title": "[Shell] mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "hot": "282,044"
     },
     {
       "rank": 4,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "281,049"
+      "title": "[HTML] cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "hot": "47,378"
     },
     {
       "rank": 5,
-      "title": "[TypeScript] thedotmack/claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "hot": "98,452"
+      "title": "[Go] alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "hot": "44,855"
     },
     {
       "rank": 6,
-      "title": "[C] EpicGames/raddebugger",
-      "url": "https://github.com/EpicGames/raddebugger",
-      "hot": "8,103"
+      "title": "[Python] anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "hot": "27,996"
     },
     {
       "rank": 7,
-      "title": "[Python] anthropics/knowledge-work-plugins",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "hot": "27,530"
+      "title": "[Python] BerriAI/litellm",
+      "url": "https://github.com/BerriAI/litellm",
+      "hot": "60,477"
     },
     {
       "rank": 8,
-      "title": "[Rust] storytold/artcraft",
-      "url": "https://github.com/storytold/artcraft",
-      "hot": "7,874"
+      "title": "[JavaScript] addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "hot": "103,660"
     },
     {
       "rank": 9,
-      "title": "liquidslr/system-design-notes",
-      "url": "https://github.com/liquidslr/system-design-notes",
-      "hot": "24,600"
+      "title": "[Rust] storytold/artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "hot": "9,924"
+    },
+    {
+      "rank": 10,
+      "title": "[Python] Robbyant/lingbot-map",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "hot": "17,557"
     }
   ]
 }

@@ -1,32 +1,32 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-10-09T06:14:51+00:00",
+  "updated_at": "2026-10-09T13:15:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【吾爱首发】游戏《Sora No Kiseki the 2nd》打包解包工具FPACTool V2.1源代码",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2130872",
-      "hot": ""
-    },
-    {
-      "rank": 2,
-      "title": "SigilHook：用 AngelScript 做 x86/x64 函数 Hook 的注入式运行时",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2130534",
-      "hot": "[md]分享一下我自己做的项目 SigilHook\n\nGitHub：\nhttps://github.com/StackAndPointer/SigilHook\n\n发布页：\nhttps://github.com/StackAndPointer/SigilHook/releases\n\n一句话概括：这是一个基于 PolyHook 2、用 AngelScript 驱动脚本 Hook 的 x86/x64 注入式运 ..."
-    },
-    {
-      "rank": 3,
       "title": "The Enigma Protector vm还原插件",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2127264",
       "hot": "不做过多介绍，能用的上的人都知道怎么用，字越少，越强大\n\n主要还原壳代码，遇到    push 0xxxxxx   jmp xxxxx这种地址，右键---EnigmaVM---还原当前地址，就可以还原，还原的代码大部分都可以执行的，遇到不能执行的 ..."
     },
     {
-      "rank": 4,
+      "rank": 2,
       "title": "某象滑块纯算逆向分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2125447",
       "hot": "前言[hr]\n兄弟们，我又来了，最近离职了有空研究下弱点，滑块这些，最近看论坛这些真是日新月异，ai直接都把web端相当于全破了，我看了下如果没有别人逆完写好流程的skill，你就要自己懂流程一步步引导他做下去，没有那 ..."
+    },
+    {
+      "rank": 3,
+      "title": "站内CrackMe WriteUp —— 32位无壳带反调试模拟真实校验精品CrackMe",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2124009",
+      "hot": "[md]# 引言\n\n原帖地址：。\n\n&gt; ## CrackMe 说明\n&gt;\n&gt; 模拟实际环境下的卡密认证，适合初中级玩家。\n&gt;\n&gt; ## 技术要点\n&gt; - 32位\n&gt; - 无壳\n&gt; - 有若干反调试\n&gt; - 机器码\n&gt; - 校验和\n&gt;\n&gt; ## 程序用法\n&gt; 1、命令 ..."
+    },
+    {
+      "rank": 4,
+      "title": "逆向PyInstaller打包的产物完整分析过程",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2123942",
+      "hot": "[md]## 写在前面\n\n昨晚写完作业，闲着没事逛论坛，看到有人求助这个工具的问题，就下载下来拆开看了看。这工具是个 iOS 激活工具（A9-A11 Ramdisk 引导 + 激活记录写入），套了四层保护：PyInstaller 打包、字节码加密、Cython 编译核心、应用级验证（license + ECID  ..."
     },
     {
       "rank": 5,
