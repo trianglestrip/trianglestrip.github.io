@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-10T02:01:15+00:00",
+  "updated_at": "2026-10-10T08:11:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 精致导航栏开发完全指南：HdsNavigation 组件从入门到实战#智绘鸿蒙·如 7 而至#",
+      "url": "https://ost.51cto.com/posts/59318",
+      "hot": "HarmonyOS精致导航栏开发完全指南：HdsNavigation组件从入门到实战一、为什么你的导航栏看起来不够&quot;原生&quot;？不知道你有没有过这种感觉：自己..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 排行榜开发实战：从零构建可刷新的数据驱动页面#智绘鸿蒙·如 7 而至#",
+      "url": "https://ost.51cto.com/posts/59317",
+      "hot": "HarmonyOSArkTS排行榜开发实战：从零构建可刷新的数据驱动页面手把手掌握组件化、状态管理、条件渲染与生命周期等核心ArkTS技能一、为什么..."
+    },
+    {
+      "rank": 3,
       "title": "RSI全景综述来了！把「AI 自我改进」拆成四个阶段、一条循环和七个难题",
       "url": "https://www.51cto.com/article/857809.html",
       "hot": "不管改什么，综述用一个三步循环来描述，Proposal、Feedback、Optimization。Proposal 负责选题和生成候选改动，Feedback 负责把候选放进环境里跑、再用测试或裁判把结果变成证据，Optimization 负责决定这条改动是保留、修改、拒绝、晋升还是回滚，并把该留的东西写进记忆和版本。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "弃用无脑 LLM！我把 14 小时工程工作流压缩到 2 小时，效率暴涨 700%",
       "url": "https://www.51cto.com/article/857808.html",
       "hot": "能靠确定性代码、API、脚本解决的工作，绝不调用 LLM；仅保留需要工程推理、场景判断的核心环节给大模型。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Agent 会干活还不够：2026 年 AI Agent 正在进入「可观测、可评测、可进化」时代",
       "url": "https://www.51cto.com/article/857807.html",
       "hot": "Agent 的上半场是“让它会做事”，下半场是“让它可靠地把事情做好，并且能够持续证明自己变得更好”。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "给系统加Agent前，先看这五个不变的架构模式",
       "url": "https://www.51cto.com/article/857806.html",
       "hot": "Eastham 在台上画了一张极简架构图：几个组件装在一个大框里——你会说这是单体里的模块。去掉外框、换成几条通信路径——这是微服务或 SOA。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "面试官：“知识库两份文档互相打架，RAG 信谁？”，我：“信相似度最高的”，他：“群聊截图也能覆盖公司制度？”",
       "url": "https://www.51cto.com/article/857805.html",
       "hot": "回到开头的问题，RAG 遇到知识冲突时，绝对不能简单选择向量相似度最高的文档。相似度只表示内容相关，不能代表权威、有效和适用。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "技巧：如何排查是否会话数限制导致的上网卡顿？教你三招！！！！",
       "url": "https://www.51cto.com/article/857803.html",
       "hot": "当高峰期宽带连接数被用完后，终端发起的新建连接将无法建立，导致打开网页、刷视频、收发微信消息等卡顿。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Python 正式向 Rust 招手：CPython 准备告别纯 C 时代，连 pip install 都可能因此变快？",
       "url": "https://www.51cto.com/article/857801.html",
       "hot": "本文结合 Python Language Summit 2026 的官方讨论，深入拆解 Rust for CPython 项目的技术动机、实施路线、首个落地模块，以及 Python 核心团队提出的几道关键门槛。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "当AI开始造AI：递归自我改进的2026年",
       "url": "https://www.51cto.com/article/857800.html",
       "hot": "Anthropic 那篇长文引用了两段员工的内部发言，读起来挺有温度。"
-    },
-    {
-      "rank": 9,
-      "title": "高级前端并入产品之后，下一步才是 FDE",
-      "url": "https://www.51cto.com/article/857798.html",
-      "hot": "前端工程师已经并入了产品经理行业了。或者说前端工程师已经是非常专业的人人都是产品经理的佼佼者了～那么我们一个如何并入产品经理行业呢？应该怎样去做呢 ？"
-    },
-    {
-      "rank": 10,
-      "title": "Java程序员需要转Python吗？",
-      "url": "https://www.51cto.com/article/857797.html",
-      "hot": "如果你做AI应用开发——Java是你的主战场，Python是你的辅助工具。你需要能看懂Python代码、能跑通RAG Demo、能理解AI生态的核心概念。但你不需要放弃Java，因为企业级AI应用的骨架，依然是Java在扛。"
     }
   ]
 }

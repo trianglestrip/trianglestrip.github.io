@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-10T02:01:10+00:00",
+  "updated_at": "2026-10-10T08:10:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex + Seedance2.5 制作AI视频实战操作详解",
       "url": "https://blog.csdn.net/congge_study/article/details/167223945",
-      "hot": "27490"
+      "hot": "27222"
     },
     {
       "rank": 2,
-      "title": "资源分层关闭体系、TCP连接存活探测与负载均衡机制介绍",
-      "url": "https://blog.csdn.net/2401_86112610/article/details/167277744",
-      "hot": "16805"
+      "title": "多 Agent 协作架构：MapReduce 模式——并行处理与结果聚合实战",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/167274562",
+      "hot": "12631"
     },
     {
       "rank": 3,
-      "title": "AI Agent 说完成了，怎样验证任务真的完成",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/166736285",
-      "hot": "15915"
+      "title": "基于豆包Seed Evolving的AI智能记账系统开发实践记录",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/163107458",
+      "hot": "12410"
     },
     {
       "rank": 4,
-      "title": "Qt 多线程深度解析：从底层原理到 UI 线程与同步实战",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/166946401",
-      "hot": "13048"
+      "title": "资源分层关闭体系、TCP连接存活探测与负载均衡机制介绍",
+      "url": "https://blog.csdn.net/2401_86112610/article/details/167277744",
+      "hot": "9768"
     },
     {
       "rank": 5,
-      "title": "大模型工程化实战（十七）：金融级 AI 落地——决策可追溯/可复现/可追责/不可抵赖这四件事怎么做",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/167121509",
-      "hot": "12070"
+      "title": "鸿蒙设备远控电脑实测：ToDesk蓝牙键鼠、双模式鼠标、跨端剪贴板，远控电脑更顺手了",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/167284266",
+      "hot": "9587"
     },
     {
       "rank": 6,
-      "title": "【AI 测评】FaceFusion本地换脸：Windows整合包、模型选择、多人识别与遮罩处理",
-      "url": "https://blog.csdn.net/2402_87298751/article/details/167277048",
-      "hot": "11626"
+      "title": "下一代家用机器人的想象空间：能自己发现该干什么吗？给八界写了一个Skill",
+      "url": "https://blog.csdn.net/wtyuong/article/details/167282599",
+      "hot": "8968"
     },
     {
       "rank": 7,
-      "title": "基于豆包Seed Evolving的AI智能记账系统开发实践记录",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/163107458",
-      "hot": "10672"
+      "title": "【AI 测评】FaceFusion本地换脸：Windows整合包、模型选择、多人识别与遮罩处理",
+      "url": "https://blog.csdn.net/2402_87298751/article/details/167277048",
+      "hot": "8097"
     },
     {
       "rank": 8,
-      "title": "鸿蒙设备远控电脑实测：ToDesk蓝牙键鼠、双模式鼠标、跨端剪贴板，远控电脑更顺手了",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/167284266",
-      "hot": "9798"
+      "title": "电子书越存越乱？我用Calibre-Web把飞牛NAS整理成了私人书库",
+      "url": "https://blog.csdn.net/lrq13965748542/article/details/167385663",
+      "hot": "7779"
     },
     {
       "rank": 9,
-      "title": "下一代家用机器人的想象空间：能自己发现该干什么吗？给八界写了一个Skill",
-      "url": "https://blog.csdn.net/wtyuong/article/details/167282599",
-      "hot": "9541"
+      "title": "语音 AI 怎样边听边答：实时对话系统的工作原理",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/167222468",
+      "hot": "7478"
     },
     {
       "rank": 10,
-      "title": "Claude系列_Constitutional_AI与RLHF的结合",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/167377748",
-      "hot": "8865"
+      "title": "Go Context 控制协程生命周期",
+      "url": "https://blog.csdn.net/vipxieliang/article/details/167221042",
+      "hot": "7367"
     }
   ]
 }
