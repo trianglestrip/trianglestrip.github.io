@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-10T18:46:40+00:00",
+  "updated_at": "2026-10-10T22:01:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Knuth Reward Check",
-      "url": "https://www.thomas-huehn.com/knuth-reward-check",
-      "hot": "65"
+      "title": "2D Vehicles",
+      "url": "https://patkerr.co.uk/2d-vehicles/",
+      "hot": "245"
     },
     {
       "rank": 2,
-      "title": "Grieving the Loss of Details",
-      "url": "https://purplesyringa.moe/blog/grieving-the-loss-of-details/",
-      "hot": "171"
+      "title": "A city-building game in which the city would prefer you didn't",
+      "url": "https://housing.over.pizza/",
+      "hot": "27"
     },
     {
       "rank": 3,
-      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
-      "url": "https://github.com/rociiu/talorys",
-      "hot": "177"
+      "title": "Why DuckDB 2.0 is faster",
+      "url": "https://motherduck.com/blog/why-duckdb-20-is-faster/",
+      "hot": "88"
     },
     {
       "rank": 4,
-      "title": "OpenSCAD the Programmers Solid 3D CAD Modeller",
-      "url": "https://openscad.org/",
-      "hot": "23"
+      "title": "Nix wrote half of my debugger",
+      "url": "https://fzakaria.com/2026/10/07/nix-wrote-half-of-my-debugger",
+      "hot": "58"
     },
     {
       "rank": 5,
-      "title": "Rampart: Browser native on-device PII radaction",
-      "url": "https://ndstudio.gov/posts/say-hello-to-rampart",
-      "hot": "45"
+      "title": "Knuth reward check",
+      "url": "https://www.thomas-huehn.com/knuth-reward-check/",
+      "hot": "113"
     },
     {
       "rank": 6,
-      "title": "Mxc: Microsoft Execution Containers version 1.0.0",
-      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
-      "hot": "95"
+      "title": "Recent AI models struggled to match a human algorithmic innovation",
+      "url": "https://epoch.ai/publications/innovationeval",
+      "hot": "50"
     },
     {
       "rank": 7,
-      "title": "Bitwarden Dual License Model",
-      "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
-      "hot": "241"
+      "title": "The Lightbulb Computer",
+      "url": "https://lightbulbcomputer.com/",
+      "hot": "119"
     },
     {
       "rank": 8,
-      "title": "REA Reverse – Engineer Anything",
-      "url": "https://rea.tools/",
-      "hot": "619"
+      "title": "Why We Still Cannot Read Etruscan",
+      "url": "https://veiledantiquity.com/posts/etruscan-language-lost/",
+      "hot": "5"
     },
     {
       "rank": 9,
-      "title": "Telegram Desktop vulnerability allowed any user's file to be stolen",
-      "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
-      "hot": "349"
+      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+      "url": "https://github.com/rociiu/talorys",
+      "hot": "220"
     },
     {
       "rank": 10,
-      "title": "I would like the value of my home to rise, while my property taxes fall",
-      "url": "https://conversableeconomist.com/2026/09/28/i-would-like-the-value-of-my-home-to-rise-while-my-property-taxes-fall/",
-      "hot": "132"
+      "title": "Mxc: Microsoft Execution Containers version 1.0.0",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "hot": "140"
     }
   ]
 }
