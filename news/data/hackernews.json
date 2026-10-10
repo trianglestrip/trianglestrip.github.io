@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-10T14:28:13+00:00",
+  "updated_at": "2026-10-10T18:46:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "`123456' password used in Danish CPR data breach",
-      "url": "https://cphpost.dk/2026-10-10/news/round-up/123456-password-used-in-massive-danish-cpr-data-breach/",
-      "hot": "247"
+      "title": "Knuth Reward Check",
+      "url": "https://www.thomas-huehn.com/knuth-reward-check",
+      "hot": "65"
     },
     {
       "rank": 2,
-      "title": "Lobbying Is Corruption",
-      "url": "https://carette.xyz/posts/lobbying_and_corruption/",
-      "hot": "182"
+      "title": "Grieving the Loss of Details",
+      "url": "https://purplesyringa.moe/blog/grieving-the-loss-of-details/",
+      "hot": "171"
     },
     {
       "rank": 3,
       "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
       "url": "https://github.com/rociiu/talorys",
-      "hot": "93"
+      "hot": "177"
     },
     {
       "rank": 4,
-      "title": "REA Reverse – Engineer Anything",
-      "url": "https://rea.tools/",
-      "hot": "524"
+      "title": "OpenSCAD the Programmers Solid 3D CAD Modeller",
+      "url": "https://openscad.org/",
+      "hot": "23"
     },
     {
       "rank": 5,
-      "title": "C for Rust Programmers",
-      "url": "https://bd103.dev/blog/2026-10-07-c-for-rust-programmers/",
-      "hot": "54"
+      "title": "Rampart: Browser native on-device PII radaction",
+      "url": "https://ndstudio.gov/posts/say-hello-to-rampart",
+      "hot": "45"
     },
     {
       "rank": 6,
-      "title": "Cloudflare acquires Deno",
-      "url": "https://deno.com/blog/cloudflare",
-      "hot": "1282"
+      "title": "Mxc: Microsoft Execution Containers version 1.0.0",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "hot": "95"
     },
     {
       "rank": 7,
-      "title": "Telegram Desktop vulnerability allowed any user's file to be stolen",
-      "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
-      "hot": "254"
+      "title": "Bitwarden Dual License Model",
+      "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+      "hot": "241"
     },
     {
       "rank": 8,
-      "title": "Triple-A Minesweeper",
-      "url": "https://minesweeper.mikelacher.com/",
-      "hot": "1138"
+      "title": "REA Reverse – Engineer Anything",
+      "url": "https://rea.tools/",
+      "hot": "619"
     },
     {
       "rank": 9,
-      "title": "WSL3 Performance is about 5-60% faster than WSL2 depending on the workload",
-      "url": "https://tonym.us/wsl2-vs-wsl3-benchmarks.html",
-      "hot": "123"
+      "title": "Telegram Desktop vulnerability allowed any user's file to be stolen",
+      "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
+      "hot": "349"
     },
     {
       "rank": 10,
-      "title": "Eye of Sauron: Long-Range Hidden Spy Camera Detection (2024)",
-      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-qibo",
-      "hot": "217"
+      "title": "I would like the value of my home to rise, while my property taxes fall",
+      "url": "https://conversableeconomist.com/2026/09/28/i-would-like-the-value-of-my-home-to-rise-while-my-property-taxes-fall/",
+      "hot": "132"
     }
   ]
 }

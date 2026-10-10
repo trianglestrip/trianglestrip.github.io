@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-10T14:28:03+00:00",
+  "updated_at": "2026-10-10T18:46:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "语音 AI 怎样边听边答：实时对话系统的工作原理",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/167222468",
-      "hot": "14873"
+      "hot": "17495"
     },
     {
       "rank": 2,
       "title": "资源分层关闭体系、TCP连接存活探测与负载均衡机制介绍",
       "url": "https://blog.csdn.net/2401_86112610/article/details/167277744",
-      "hot": "14577"
+      "hot": "14680"
     },
     {
       "rank": 3,
-      "title": "基于豆包Seed Evolving的AI智能记账系统开发实践记录",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/163107458",
-      "hot": "14160"
+      "title": "多 Agent 协作架构：MapReduce 模式——并行处理与结果聚合实战",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/167274562",
+      "hot": "12961"
     },
     {
       "rank": 4,
-      "title": "多 Agent 协作架构：MapReduce 模式——并行处理与结果聚合实战",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/167274562",
-      "hot": "13935"
+      "title": "基于豆包Seed Evolving的AI智能记账系统开发实践记录",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/163107458",
+      "hot": "12806"
     },
     {
       "rank": 5,
       "title": "鸿蒙设备远控电脑实测：ToDesk蓝牙键鼠、双模式鼠标、跨端剪贴板，远控电脑更顺手了",
       "url": "https://blog.csdn.net/2401_87629362/article/details/167284266",
-      "hot": "11661"
+      "hot": "11106"
     },
     {
       "rank": 6,
       "title": "【AI 测评】FaceFusion本地换脸：Windows整合包、模型选择、多人识别与遮罩处理",
       "url": "https://blog.csdn.net/2402_87298751/article/details/167277048",
-      "hot": "10340"
+      "hot": "9654"
     },
     {
       "rank": 7,
       "title": "GitLab + ArgoCD 实现 Kubernetes GitOps 自动化部署",
       "url": "https://blog.csdn.net/liu_chen_yang/article/details/164048677",
-      "hot": "8830"
+      "hot": "9270"
     },
     {
       "rank": 8,
       "title": "下一代家用机器人的想象空间：能自己发现该干什么吗？给八界写了一个Skill",
       "url": "https://blog.csdn.net/wtyuong/article/details/167282599",
-      "hot": "8667"
+      "hot": "9179"
     },
     {
       "rank": 9,
-      "title": "电子书越存越乱？我用Calibre-Web把飞牛NAS整理成了私人书库",
-      "url": "https://blog.csdn.net/lrq13965748542/article/details/167385663",
-      "hot": "7780"
+      "title": "ValidX 在 API Gateway 的集成与应用",
+      "url": "https://blog.csdn.net/vipxieliang/article/details/167264061",
+      "hot": "8604"
     },
     {
       "rank": 10,
       "title": "SpringBoot3+Flowable 审批体验全链路：提交校验、连续选人、驳回重提与移动端一致性",
       "url": "https://blog.csdn.net/zhouzhongyan/article/details/167225981",
-      "hot": "7767"
+      "hot": "8480"
     }
   ]
 }
