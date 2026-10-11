@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-11T13:16:56+00:00",
+  "updated_at": "2026-10-11T21:51:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
-      "hot": "1605"
+      "hot": "1682"
     },
     {
       "rank": 2,
       "title": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "hot": "1010"
+      "hot": "1066"
     },
     {
       "rank": 3,
       "title": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
-      "hot": "2012"
+      "hot": "2025"
     },
     {
       "rank": 4,
       "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "hot": "3932"
+      "hot": "3972"
     },
     {
       "rank": 5,
       "title": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
-      "hot": "498"
+      "hot": "533"
     },
     {
       "rank": 6,
-      "title": "Aleph-Alpha/Kolibri-1",
-      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-      "hot": "879"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "7304"
     },
     {
       "rank": 7,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "7234"
+      "title": "Aleph-Alpha/Kolibri-1",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+      "hot": "887"
     },
     {
       "rank": 8,
       "title": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "hot": "688"
+      "hot": "689"
     },
     {
       "rank": 9,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "17475"
+      "hot": "17503"
     },
     {
       "rank": 10,
       "title": "canberkkkkkk/ema-lightning",
       "url": "https://huggingface.co/canberkkkkkk/ema-lightning",
-      "hot": "350"
+      "hot": "356"
     }
   ]
 }
