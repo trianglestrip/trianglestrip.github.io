@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-11T00:44:41+00:00",
+  "updated_at": "2026-10-11T06:30:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Anthropic Bans Cruelty to Claude, Still Won't Say What It Protects",
-      "url": "https://rews.cc/a/anthropic-bans-cruelty-to-claude-still-won-t-say-what-it-pro-bd99f6",
-      "hot": "31"
+      "title": "WallHop – 12ft.io is gone, so I built a replacement",
+      "url": "https://wallhop.io/",
+      "hot": "229"
     },
     {
       "rank": 2,
       "title": "Build your own decision model",
       "url": "https://nishtahir.com/build-your-own-decision-model/",
-      "hot": "76"
+      "hot": "212"
     },
     {
       "rank": 3,
       "title": "2D Vehicles",
       "url": "https://patkerr.co.uk/2d-vehicles/",
-      "hot": "341"
+      "hot": "424"
     },
     {
       "rank": 4,
       "title": "A city-building game in which the city would prefer you didn't",
       "url": "https://housing.over.pizza/",
-      "hot": "152"
+      "hot": "276"
     },
     {
       "rank": 5,
-      "title": "Nix wrote half of my debugger",
-      "url": "https://fzakaria.com/2026/10/07/nix-wrote-half-of-my-debugger",
-      "hot": "115"
+      "title": "AI agents in a stand-up call",
+      "url": "https://atoll92.github.io/agent-standup/",
+      "hot": "19"
     },
     {
       "rank": 6,
       "title": "The Lightbulb Computer",
       "url": "https://lightbulbcomputer.com/",
-      "hot": "206"
+      "hot": "346"
     },
     {
       "rank": 7,
-      "title": "Why DuckDB 2.0 is faster",
-      "url": "https://motherduck.com/blog/why-duckdb-20-is-faster/",
-      "hot": "131"
+      "title": "PSPi 6 – Raspberry Pi in a PSP",
+      "url": "https://github.com/othermod/PSPi-Version-6",
+      "hot": "58"
     },
     {
       "rank": 8,
-      "title": "Knuth reward check",
-      "url": "https://www.thomas-huehn.com/knuth-reward-check/",
-      "hot": "136"
+      "title": "How big is a Git commit?",
+      "url": "https://ratfactor.com/cards/git-commit-size",
+      "hot": "6"
     },
     {
       "rank": 9,
-      "title": "Five months treating bugs like patients and coding agents like a medical team",
-      "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
-      "hot": "45"
+      "title": "Nix wrote half of my debugger",
+      "url": "https://fzakaria.com/2026/10/07/nix-wrote-half-of-my-debugger",
+      "hot": "171"
     },
     {
       "rank": 10,
-      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
-      "url": "https://github.com/rociiu/talorys",
-      "hot": "239"
+      "title": "Retrofitting language models to operate over bytes",
+      "url": "https://www.nature.com/articles/s41586-026-11111-4",
+      "hot": "39"
     }
   ]
 }
