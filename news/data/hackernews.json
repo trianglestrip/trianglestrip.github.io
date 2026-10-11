@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-11T13:16:33+00:00",
+  "updated_at": "2026-10-11T18:08:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "I paid people to try and follow my README",
       "url": "https://shkspr.mobi/blog/2026/10/i-paid-people-to-try-and-follow-my-readme/",
-      "hot": "73"
+      "hot": "291"
     },
     {
       "rank": 2,
-      "title": "Don't Put Tilde In Your Path",
-      "url": "https://disconnect3d.pl//2026/10/02/dont-put-tilde-in-your-path/",
-      "hot": "23"
+      "title": "I'm sorry, but you still have to think",
+      "url": "https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/",
+      "hot": "108"
     },
     {
       "rank": 3,
-      "title": "Sudden drop in Cloudflare bot traffic after strike on Yandex datacenter",
-      "url": "https://radar.cloudflare.com/bots/as13238?dateRange=7d",
-      "hot": "297"
+      "title": "The tilde in your PATH may not be your HOME",
+      "url": "https://disconnect3d.pl//2026/10/02/dont-put-tilde-in-your-path/",
+      "hot": "153"
     },
     {
       "rank": 4,
-      "title": "LineageOS 24.0",
-      "url": "https://lineageos.org/Changelog-32/",
-      "hot": "199"
+      "title": "apsw: Another Python SQLite Wrapper",
+      "url": "https://github.com/rogerbinns/apsw",
+      "hot": "9"
     },
     {
       "rank": 5,
-      "title": "Nitter: Update Oct 10th seeking funding and legal help",
-      "url": "https://nitter.net",
-      "hot": "179"
+      "title": "LineageOS 24.0",
+      "url": "https://lineageos.org/Changelog-32/",
+      "hot": "326"
     },
     {
       "rank": 6,
       "title": "Valen's Memory Safety: A New Kind of Borrow Checking",
       "url": "https://verdagon.dev/blog/valen-group-borrowing",
-      "hot": "12"
+      "hot": "89"
     },
     {
       "rank": 7,
-      "title": "What driving across Europe costs in tolls, vignettes, bridges and fuel",
-      "url": "https://copilot.travel/tolls/europe-2026",
-      "hot": "25"
+      "title": "How I reverse engineered a commercial spatial audio effect",
+      "url": "http://epestr.com/blog/reverse-engineering-a-commercial-spatial-audio-effect/",
+      "hot": "31"
     },
     {
       "rank": 8,
-      "title": "IRCv3",
-      "url": "https://ircv3.net/",
-      "hot": "139"
+      "title": "Show HN: BetterWispr – Free, open-source dictation for Mac",
+      "url": "https://betterwispr.com/",
+      "hot": "81"
     },
     {
       "rank": 9,
-      "title": "Build your own decision model",
-      "url": "https://nishtahir.com/build-your-own-decision-model/",
-      "hot": "369"
+      "title": "How to Build Wealth as a Career Person",
+      "url": "https://asheradeniyi.com/2026/04/10/how-to-build-wealth-as-a-career-person/",
+      "hot": "17"
     },
     {
       "rank": 10,
-      "title": "2D Vehicles",
-      "url": "https://patkerr.co.uk/2d-vehicles/",
-      "hot": "519"
+      "title": "Akhetonics Photonic Computing: 1,000x Faster CPUs",
+      "url": "https://medium.com/@timventura/akhetonics-photonic-computing-1-000x-faster-cpus-b9e91c470079",
+      "hot": "7"
     }
   ]
 }

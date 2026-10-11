@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-11T13:16:06+00:00",
+  "updated_at": "2026-10-11T18:07:45+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "年会不能停！2",
-      "url": "https://movie.douban.com/subject/36850814/",
-      "hot": "评分 6.2"
-    },
-    {
-      "rank": 8,
       "title": "余红旧事",
       "url": "https://movie.douban.com/subject/37560173/",
       "hot": "评分 7.7"
     },
     {
-      "rank": 9,
-      "title": "什么意思夫妇",
-      "url": "https://movie.douban.com/subject/37667015/",
-      "hot": "评分 6.4"
+      "rank": 8,
+      "title": "年会不能停！2",
+      "url": "https://movie.douban.com/subject/36850814/",
+      "hot": "评分 6.2"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "我不是大师",
       "url": "https://movie.douban.com/subject/37297001/",
       "hot": "评分 7.3"
+    },
+    {
+      "rank": 10,
+      "title": "重生2",
+      "url": "https://movie.douban.com/subject/37403222/",
+      "hot": "评分 6.6"
     }
   ]
 }
