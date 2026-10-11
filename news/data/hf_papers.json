@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-11T06:30:44+00:00",
+  "updated_at": "2026-10-11T13:16:56+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
+      "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
+      "url": "https://huggingface.co/papers/1910.03771",
+      "hot": "33"
+    },
+    {
+      "rank": 5,
+      "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
+      "url": "https://huggingface.co/papers/2609.33757",
+      "hot": "233"
+    },
+    {
+      "rank": 6,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "151"
     },
     {
-      "rank": 5,
-      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
-      "url": "https://huggingface.co/papers/2609.33325",
-      "hot": "341"
-    },
-    {
-      "rank": 6,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "90"
-    },
-    {
       "rank": 7,
-      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
-      "url": "https://huggingface.co/papers/2309.06180",
-      "hot": "77"
-    },
-    {
-      "rank": 8,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "59"
-    },
-    {
-      "rank": 9,
       "title": "PyTorch Distributed: Experiences on Accelerating Data Parallel Training",
       "url": "https://huggingface.co/papers/2006.15704",
       "hot": "13"
     },
     {
+      "rank": 8,
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "90"
+    },
+    {
+      "rank": 9,
+      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
+      "url": "https://huggingface.co/papers/2309.06180",
+      "hot": "77"
+    },
+    {
       "rank": 10,
-      "title": "Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation",
-      "url": "https://huggingface.co/papers/2610.05608",
-      "hot": "162"
+      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
+      "url": "https://huggingface.co/papers/2609.33325",
+      "hot": "341"
     }
   ]
 }

@@ -1,68 +1,56 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-10-11T06:30:19+00:00",
+  "updated_at": "2026-10-11T13:16:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[TypeScript] morluto/rea",
       "url": "https://github.com/morluto/rea",
-      "hot": "78,854"
+      "hot": "88,137"
     },
     {
       "rank": 2,
       "title": "[C++] boykopovar/AnyPS5",
       "url": "https://github.com/boykopovar/AnyPS5",
-      "hot": "27,498"
+      "hot": "28,481"
     },
     {
       "rank": 3,
       "title": "[Rust] storytold/artcraft",
       "url": "https://github.com/storytold/artcraft",
-      "hot": "15,104"
+      "hot": "16,048"
     },
     {
       "rank": 4,
       "title": "[HTML] cathrynlavery/diagram-design",
       "url": "https://github.com/cathrynlavery/diagram-design",
-      "hot": "49,223"
+      "hot": "49,633"
     },
     {
       "rank": 5,
-      "title": "[TypeScript] mksglu/context-mode",
-      "url": "https://github.com/mksglu/context-mode",
-      "hot": "26,437"
+      "title": "[JavaScript] bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "hot": "50,835"
     },
     {
       "rank": 6,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "284,873"
+      "title": "[Python] pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "hot": "104,294"
     },
     {
       "rank": 7,
-      "title": "[Dart] flutter/flutter",
-      "url": "https://github.com/flutter/flutter",
-      "hot": "179,633"
+      "title": "[Jupyter Notebook] lyogavin/airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "hot": "36,142"
     },
     {
       "rank": 8,
-      "title": "[C++] tensorflow/tensorflow",
-      "url": "https://github.com/tensorflow/tensorflow",
-      "hot": "200,789"
-    },
-    {
-      "rank": 9,
-      "title": "[Python] hugohe3/ppt-master",
-      "url": "https://github.com/hugohe3/ppt-master",
-      "hot": "59,744"
-    },
-    {
-      "rank": 10,
-      "title": "[Python] pytorch/pytorch",
-      "url": "https://github.com/pytorch/pytorch",
-      "hot": "104,201"
+      "title": "[Assembly] chrislgarry/Apollo-11",
+      "url": "https://github.com/chrislgarry/Apollo-11",
+      "hot": "73,912"
     }
   ]
 }
