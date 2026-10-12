@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-11T21:50:47+00:00",
+  "updated_at": "2026-10-12T00:46:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "语音 AI 怎样边听边答：实时对话系统的工作原理",
       "url": "https://blog.csdn.net/weixin_74809706/article/details/167222468",
-      "hot": "21697"
+      "hot": "23056"
     },
     {
       "rank": 2,
       "title": "【AI大模型接入SDK】ChatServer 整体初始化概述",
       "url": "https://blog.csdn.net/2401_89899187/article/details/167040430",
-      "hot": "19750"
+      "hot": "19533"
     },
     {
       "rank": 3,
       "title": "linux（11）信号",
       "url": "https://blog.csdn.net/2601_96394870/article/details/167573445",
-      "hot": "14918"
+      "hot": "15217"
     },
     {
       "rank": 4,
       "title": "资源分层关闭体系、TCP连接存活探测与负载均衡机制介绍",
       "url": "https://blog.csdn.net/2401_86112610/article/details/167277744",
-      "hot": "14184"
+      "hot": "13345"
     },
     {
       "rank": 5,
-      "title": "鸿蒙设备远控电脑实测：ToDesk蓝牙键鼠、双模式鼠标、跨端剪贴板，远控电脑更顺手了",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/167284266",
-      "hot": "13414"
+      "title": "【AI智能体】Langchain 工具调用实战操作详解",
+      "url": "https://blog.csdn.net/congge_study/article/details/165243374",
+      "hot": "12819"
     },
     {
       "rank": 6,
-      "title": "【AI智能体】Langchain 工具调用实战操作详解",
-      "url": "https://blog.csdn.net/congge_study/article/details/165243374",
-      "hot": "10570"
+      "title": "鸿蒙设备远控电脑实测：ToDesk蓝牙键鼠、双模式鼠标、跨端剪贴板，远控电脑更顺手了",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/167284266",
+      "hot": "12607"
     },
     {
       "rank": 7,
-      "title": "【HOGP】规范精讲[7]: BLE人机交互的安全防线——HOGP安全规范全解析与落地指南",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/167175080",
-      "hot": "10049"
+      "title": "【PBAP】规范精讲[4]: 蓝牙PBAP协议核心能力拆解——电话本访问的功能体系与实现要求",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/167175110",
+      "hot": "9928"
     },
     {
       "rank": 8,
-      "title": "轻量级 AI 代码生成平台搭建实战：Ollama 本地模型 + Continue.dev + Open Code Review 的低成本方案",
-      "url": "https://blog.csdn.net/BADAO_LIUMANG_QIZHI/article/details/167494629",
-      "hot": "8554"
+      "title": "【从0开始学习计算机网络】| 认识IO多路复用，select、poll、epoll",
+      "url": "https://blog.csdn.net/2503_94545876/article/details/167399231",
+      "hot": "9644"
     },
     {
       "rank": 9,
-      "title": "【从0开始学习计算机网络】| 认识IO多路复用，select、poll、epoll",
-      "url": "https://blog.csdn.net/2503_94545876/article/details/167399231",
-      "hot": "8402"
+      "title": "仓颉语言实现强大的Modbus调试工具Modbus Poll：cj-tauri项目介绍与实战",
+      "url": "https://blog.csdn.net/qq8864/article/details/167587486",
+      "hot": "9630"
     },
     {
       "rank": 10,
       "title": "Bond-DBCheck 邦德智能巡检平台助力 DBA",
       "url": "https://blog.csdn.net/weixin_41645135/article/details/167586237",
-      "hot": "8277"
+      "hot": "9616"
     }
   ]
 }
