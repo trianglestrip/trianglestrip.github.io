@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-12T06:36:19+00:00",
+  "updated_at": "2026-10-12T16:01:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Yandex bot traffic down 99% after data center attack",
-      "url": "https://radar.cloudflare.com/bots/as13238?dateRange=7d#bot-traffic",
-      "hot": "173"
+      "title": "The Making Of Super Mario 64 – full Giles Goddard interview (2001)",
+      "url": "https://pixelatron.com/blog/the-making-of-super-mario-64-full-giles-goddard-interview-ngc/",
+      "hot": "113"
     },
     {
       "rank": 2,
-      "title": "Will Linux phones become a viable alternative to the Android/iOS duopoly?",
-      "url": "https://amosbbatto.wordpress.com/2026/10/05/linux-phones-alternative/",
-      "hot": "46"
+      "title": "Discover vibe-coded alternatives to popular software",
+      "url": "https://vibealternatives.com/",
+      "hot": "10"
     },
     {
       "rank": 3,
-      "title": "Type-safe HTML templating in Zig",
-      "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
-      "hot": "41"
-    },
-    {
-      "rank": 4,
-      "title": "Fingerprints are the new cookies",
-      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
-      "hot": "261"
-    },
-    {
-      "rank": 5,
-      "title": "Total Annihilation, rebuilt for modern computers",
-      "url": "https://nanolathe.gg",
-      "hot": "447"
-    },
-    {
-      "rank": 6,
-      "title": "Whatever became of holography? (2011)",
-      "url": "https://www.americanscientist.org/article/whatever-became-of-holography",
+      "title": "Incident with Actions, Pull Requests and Issues",
+      "url": "https://www.githubstatus.com/incidents/93njd414rpbx",
       "hot": "106"
     },
     {
+      "rank": 4,
+      "title": "Secret of Orange Cats Revealed After 60-Year Search",
+      "url": "https://www.sciencealert.com/secret-of-orange-cats-finally-revealed-after-60-year-search",
+      "hot": "124"
+    },
+    {
+      "rank": 5,
+      "title": "Fingerprints are the new cookies",
+      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
+      "hot": "575"
+    },
+    {
+      "rank": 6,
+      "title": "Type-safe HTML templating in Zig",
+      "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
+      "hot": "188"
+    },
+    {
       "rank": 7,
-      "title": "Cartographers of North Korea (2019)",
-      "url": "https://cartographers-nk.wonyoung.so/",
-      "hot": "231"
+      "title": "Choreographic Programming in Rust",
+      "url": "https://github.com/hibanaworks/hibana",
+      "hot": "33"
     },
     {
       "rank": 8,
-      "title": "Calculus with Julia",
-      "url": "https://jverzani.github.io/CalculusWithJuliaNotes.jl/",
-      "hot": "67"
+      "title": "QGIS bans AI assisted contributions",
+      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+      "hot": "296"
     },
     {
       "rank": 9,
-      "title": "No portable way to detect string-to-float conversion errors in standard C",
-      "url": "https://sebsite.pw/w/20261009-strtod.html",
-      "hot": "27"
+      "title": "Show HN: PS2 games statically recompiled to WebAssembly",
+      "url": "https://github.com/snuri00/ps2-web-recomp",
+      "hot": "158"
     },
     {
       "rank": 10,
-      "title": "Doory – Open-Source Canva",
-      "url": "https://github.com/shaongitbd/doory",
-      "hot": "76"
+      "title": "Total Annihilation, rebuilt for modern computers",
+      "url": "https://nanolathe.gg",
+      "hot": "611"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-12T06:36:18+00:00",
+  "updated_at": "2026-10-12T16:01:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "程序员正在失去软件选择权！RedMonk联合创始人：Agent正在成为新的“Kingmakers  ”，开发者可能从决策者退成建议者",
+      "url": "https://www.51cto.com/article/857976.html",
+      "hot": "以前，一个团队不明确技术栈，成员会开会、争论，再做决定。现在，Agent会先替你补上空白，而且很快交出一个能运行的版本。等团队看见结果，语言、框架和依赖已经进了仓库。以后更重要的能力，不是和Agent比赛谁写得快，而是让技术选择变得可见、可解释、可撤销。哪些决定可以交给模型，哪些必须由人拍板，不能等代码生成以后再想。"
+    },
+    {
+      "rank": 2,
+      "title": "刚刚，GPT-6 Astra联手非职业数学家，证明57年「摆圆」 难题",
+      "url": "https://www.51cto.com/article/857956.html",
+      "hot": "AI现在真是开启数学证明扫荡模式了。刚刚，又有数学爱好者用GPT-6 Astra把一个57年数学难题推进了一大步。"
+    },
+    {
+      "rank": 3,
       "title": "从零写个 HarmonyOS 6 手写签名板：画线跟手还能存图",
       "url": "https://ost.51cto.com/posts/59466",
       "hot": "这次做一个手写签名板：在白色画布上写字，写错了撤销一笔，也可以清空重写。写完点击&ldquo;保存PNG&rdquo;，页面会显示保存结果和图片预览。实现用..."
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "告别 Agent 自进化过拟合！谷歌 RRSI：让 AI 智能体实现稳定递归自我改进",
       "url": "https://www.51cto.com/article/857936.html",
       "hot": "未来 AI 智能体的竞争，早已不是单次任务效果的比拼，而是可持续自我进化能力的比拼。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "从一步生图到流式视频：清华团队探索「样本分布训练」",
       "url": "https://www.51cto.com/article/857916.html",
       "hot": "一步生图达到 SOTA 水平，8 卡搞定 140 亿参数流式视频模型后训练。 清华大学等机构研究者的 MGFlow 与 Elastic Forcing，交出了两份相互呼应的成绩单。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "HarmonyOS 精致导航栏开发完全指南：HdsNavigation 组件从入门到实战#智绘鸿蒙·如 7 而至#",
       "url": "https://ost.51cto.com/posts/59437",
       "hot": "HarmonyOS精致导航栏开发完全指南：HdsNavigation组件从入门到实战一、为什么你的导航栏看起来不够&quot;原生&quot;？不知道你有没有过这种感觉：自己..."
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "丘成桐弟子再立功，广义庞加莱猜想证明首次形式化验证！",
       "url": "https://www.51cto.com/article/857884.html",
       "hot": "刚刚，由Ayush Khaitan带领的顶尖学术团队，联合NVIDIA Humanfia团队，成功完成了Thurston几何化猜想的完整Lean形式化！"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "第 24 篇： 抓包过滤器终极指南：Wireshark 与 tcpdump 核心语法，五分钟告别“包海”迷茫",
       "url": "https://www.51cto.com/article/857932.html",
       "hot": "过滤器的本质，就是一套精准的“搜索条件”。它让你从“我有很多数据”的迷茫，走向“我找到了证据”的清晰。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "比Jev更爆火！逆向灭霸 REA 一天登顶GitHub",
       "url": "https://www.51cto.com/article/857881.html",
       "hot": "GitHub 上一个叫 REA（Reverse Engineer Anything）的项目狂揽了近 7 万颗星！"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Claude自己组队查Bug！11.6万行代码揪出66个，单Agent最高只找到27个",
       "url": "https://www.51cto.com/article/857880.html",
       "hot": "这是Anthropic刚公布的一组测试结果：在11.6万行代码中预先埋入70个Bug，让单Agent和动态工作流各跑三次。"
-    },
-    {
-      "rank": 9,
-      "title": "EMNLP'26 Oral | 麻省理工：靠访谈让AI模拟真人，这条路能走多远？",
-      "url": "https://www.51cto.com/article/857879.html",
-      "hot": "AI即使已经学会了你现在怎么想，换一个此前没问过的新情境，它还能不能继续答得像你？"
-    },
-    {
-      "rank": 10,
-      "title": "AI不止于大模型！实现「万物共脑」，连大脑带具身越狱到现实",
-      "url": "https://www.51cto.com/article/857878.html",
-      "hot": "一颗足够可靠的大脑，一套能组织它持续工作的执行系统，以及一个能连接物理设备的身体。模型能力不断进步，Agent执行框架持续完善，但现实世界中形态各异的设备仍然给智能体的理解与调用带来挑战。"
     }
   ]
 }
