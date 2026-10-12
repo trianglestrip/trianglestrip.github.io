@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-12T00:46:36+00:00",
+  "updated_at": "2026-10-12T06:36:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "SvelteKit 3 进入 RC：svelte.config.js 没了，$lib 也要退休",
+      "url": "https://www.infoq.cn/article/Hs5X7EdO6PNHk367zZv3?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 12 Oct 2026 14:36:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Meta ZGateway 在每秒处理超过 10 亿次操作的同时，将 ZippyDB 的连接数减少了 19 倍",
+      "url": "https://www.infoq.cn/article/d5x9BkQ9AoIZq5mf6LN0?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 12 Oct 2026 13:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Radicle 披露了可能导致私有仓库以明文形式暴露的关键漏洞",
+      "url": "https://www.infoq.cn/article/h86bNjSBdJRBYwxP4Xgt?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 12 Oct 2026 10:15:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "阿里巴巴中国电商事业群/飞猪CTO陈烨博士已确认出席QCon上海，分享“从 Coding 到消费：AI 的下一场革命”",
+      "url": "https://www.infoq.cn/article/4hYrs8ShAKPAhyzTGQ92?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 12 Oct 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "Artifactory 漏洞正被积极利用，可以绕过身份验证并获取管理员权限",
+      "url": "https://www.infoq.cn/article/CSNMcSceutWCGQhZcL7D?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 12 Oct 2026 09:05:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "Uber 在 Kubernetes 平台上将扩容意图与执行操作解耦",
       "url": "https://www.infoq.cn/article/2SNgaiHoK808v22dl5SJ?utm_source=rss&utm_medium=article",
       "hot": "Sun, 11 Oct 2026 15:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "利用 AI 代码智能体优化软件架构的五种方法",
       "url": "https://www.infoq.cn/article/soRObi5sjdTTUM95zLJK?utm_source=rss&utm_medium=article",
       "hot": "Sun, 11 Oct 2026 10:04:31 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "AI 时代的移动端稳定性保障 —— 柯南 AI Agent 实践｜QCon上海",
       "url": "https://www.infoq.cn/article/FTtTLqvzJeMiE03IowFP?utm_source=rss&utm_medium=article",
       "hot": "Sun, 11 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "亚马逊云科技在 Aurora DSQL 中引入外键约束",
       "url": "https://www.infoq.cn/article/BjjSS0zaS5OpvRB2OcfF?utm_source=rss&utm_medium=article",
       "hot": "Sat, 10 Oct 2026 19:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "Linear 通过 1000 多次 PR 从 styled-components 迁移到 Meta 的 StyleX",
       "url": "https://www.infoq.cn/article/YLOUT8CrDm0NPWgHL8LG?utm_source=rss&utm_medium=article",
       "hot": "Sat, 10 Oct 2026 18:09:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "单次RL后训练烧掉260万美元、每步37亿Token，小米披露MiMo-V2.6“规模化强化学习”路线",
-      "url": "https://www.infoq.cn/article/gNdWoDM8ygkAjXfsLaBK?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 10 Oct 2026 17:24:57 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "模型开放之后，AI能力为什么仍难以复用？",
-      "url": "https://www.infoq.cn/article/rKRPT18fGxtjipPAeaLa?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 10 Oct 2026 17:10:50 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Java 近期新闻：TornadoVM 7.0、Groovy 6.0、GraalVM、Hibernate、Quarkus、Gradle、Maven",
-      "url": "https://www.infoq.cn/article/8s5fm3AAfw7ya1qdWl5Q?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 10 Oct 2026 17:00:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "GKE Pod 快照可缩短模型加载时间",
-      "url": "https://www.infoq.cn/article/IAvNgDyPz2NpvfZLoDo0?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 10 Oct 2026 15:31:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Rails 之父 DHH 狂吹 Rust 快 150 倍，被开发者翻代码后群嘲",
-      "url": "https://www.infoq.cn/article/jri7etqXIv2dp6RsiSHh?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 10 Oct 2026 15:24:10 GMT"
     }
   ]
 }

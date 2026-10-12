@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-12T00:46:29+00:00",
+  "updated_at": "2026-10-12T06:36:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Whatever became of holography? (2011)",
-      "url": "https://www.americanscientist.org/article/whatever-became-of-holography",
-      "hot": "34"
+      "title": "Yandex bot traffic down 99% after data center attack",
+      "url": "https://radar.cloudflare.com/bots/as13238?dateRange=7d#bot-traffic",
+      "hot": "173"
     },
     {
       "rank": 2,
-      "title": "Governments are mishandling the affordability crisis",
-      "url": "https://www.economist.com/finance-and-economics/2026/10/08/governments-are-mishandling-the-affordability-crisis",
-      "hot": "28"
+      "title": "Will Linux phones become a viable alternative to the Android/iOS duopoly?",
+      "url": "https://amosbbatto.wordpress.com/2026/10/05/linux-phones-alternative/",
+      "hot": "46"
     },
     {
       "rank": 3,
-      "title": "Total Annihilation, rebuilt for modern computers",
-      "url": "https://nanolathe.gg",
-      "hot": "337"
+      "title": "Type-safe HTML templating in Zig",
+      "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
+      "hot": "41"
     },
     {
       "rank": 4,
-      "title": "Cartographers of North Korea (2019)",
-      "url": "https://cartographers-nk.wonyoung.so/",
-      "hot": "167"
+      "title": "Fingerprints are the new cookies",
+      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
+      "hot": "261"
     },
     {
       "rank": 5,
-      "title": "Recursive self-improvement through collective intelligence",
-      "url": "https://pub.sakana.ai/mass/",
-      "hot": "44"
+      "title": "Total Annihilation, rebuilt for modern computers",
+      "url": "https://nanolathe.gg",
+      "hot": "447"
     },
     {
       "rank": 6,
-      "title": "Fingerprints Are the New Cookies",
-      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
-      "hot": "44"
+      "title": "Whatever became of holography? (2011)",
+      "url": "https://www.americanscientist.org/article/whatever-became-of-holography",
+      "hot": "106"
     },
     {
       "rank": 7,
-      "title": "Google Data Centers around the world",
-      "url": "https://datacenters.google/locations/",
-      "hot": "43"
+      "title": "Cartographers of North Korea (2019)",
+      "url": "https://cartographers-nk.wonyoung.so/",
+      "hot": "231"
     },
     {
       "rank": 8,
-      "title": "Illustration Beyond Proof",
-      "url": "https://terrytao.wordpress.com/2026/10/11/illustration-beyond-proof/",
-      "hot": "14"
+      "title": "Calculus with Julia",
+      "url": "https://jverzani.github.io/CalculusWithJuliaNotes.jl/",
+      "hot": "67"
     },
     {
       "rank": 9,
-      "title": "The gap in shared understanding of LLM capability is widening",
-      "url": "https://twitter.com/karpathy/status/2109361546505966046",
-      "hot": "213"
+      "title": "No portable way to detect string-to-float conversion errors in standard C",
+      "url": "https://sebsite.pw/w/20261009-strtod.html",
+      "hot": "27"
     },
     {
       "rank": 10,
-      "title": "So, You’d Like To Sell Your Print Issues Of The Onion?",
-      "url": "https://theonion.com/archivehunt/",
-      "hot": "235"
+      "title": "Doory – Open-Source Canva",
+      "url": "https://github.com/shaongitbd/doory",
+      "hot": "76"
     }
   ]
 }

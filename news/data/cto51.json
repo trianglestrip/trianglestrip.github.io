@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-12T00:46:28+00:00",
+  "updated_at": "2026-10-12T06:36:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "陶哲轩博客爆上热搜！25万数学博士临绝境，必须放缓AI",
-      "url": "https://www.51cto.com/article/857843.html",
-      "hot": "点开菲尔兹奖得主陶哲轩的博客的评论区，你会感到一种前所未有的震撼——当今世界最顶尖的一批数学家、物理学家、AI圈大佬们齐聚于此，各抒己见，吵得好不激烈。字里行间，探讨的竟是「数学界的生死存亡」与「人类学者的终极价值」。而引爆这场世纪大辩论的导火索，是接连几天内发生的极具戏剧性的巨震。"
+      "title": "从零写个 HarmonyOS 6 手写签名板：画线跟手还能存图",
+      "url": "https://ost.51cto.com/posts/59466",
+      "hot": "这次做一个手写签名板：在白色画布上写字，写错了撤销一笔，也可以清空重写。写完点击&ldquo;保存PNG&rdquo;，页面会显示保存结果和图片预览。实现用..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 6 上的 3D 聚光灯：一盏灯，把模型从黑暗里捞出来",
-      "url": "https://ost.51cto.com/posts/59393",
-      "hot": "光是什么上次做完天空盒之后，我一直在琢磨一个问题：同样是3D场景，为什么有的看起来像游戏截图，有的像展柜里的灰扑扑样品？后来想明白了..."
+      "title": "告别 Agent 自进化过拟合！谷歌 RRSI：让 AI 智能体实现稳定递归自我改进",
+      "url": "https://www.51cto.com/article/857936.html",
+      "hot": "未来 AI 智能体的竞争，早已不是单次任务效果的比拼，而是可持续自我进化能力的比拼。"
     },
     {
       "rank": 3,
-      "title": "HarmonyOS 精致导航栏开发完全指南：HdsNavigation 组件从入门到实战#智绘鸿蒙·如 7 而至#",
-      "url": "https://ost.51cto.com/posts/59318",
-      "hot": "HarmonyOS精致导航栏开发完全指南：HdsNavigation组件从入门到实战一、为什么你的导航栏看起来不够&quot;原生&quot;？不知道你有没有过这种感觉：自己..."
+      "title": "从一步生图到流式视频：清华团队探索「样本分布训练」",
+      "url": "https://www.51cto.com/article/857916.html",
+      "hot": "一步生图达到 SOTA 水平，8 卡搞定 140 亿参数流式视频模型后训练。 清华大学等机构研究者的 MGFlow 与 Elastic Forcing，交出了两份相互呼应的成绩单。"
     },
     {
       "rank": 4,
-      "title": "RSI全景综述来了！把「AI 自我改进」拆成四个阶段、一条循环和七个难题",
-      "url": "https://www.51cto.com/article/857809.html",
-      "hot": "不管改什么，综述用一个三步循环来描述，Proposal、Feedback、Optimization。Proposal 负责选题和生成候选改动，Feedback 负责把候选放进环境里跑、再用测试或裁判把结果变成证据，Optimization 负责决定这条改动是保留、修改、拒绝、晋升还是回滚，并把该留的东西写进记忆和版本。"
+      "title": "HarmonyOS 精致导航栏开发完全指南：HdsNavigation 组件从入门到实战#智绘鸿蒙·如 7 而至#",
+      "url": "https://ost.51cto.com/posts/59437",
+      "hot": "HarmonyOS精致导航栏开发完全指南：HdsNavigation组件从入门到实战一、为什么你的导航栏看起来不够&quot;原生&quot;？不知道你有没有过这种感觉：自己..."
     },
     {
       "rank": 5,
-      "title": "弃用无脑 LLM！我把 14 小时工程工作流压缩到 2 小时，效率暴涨 700%",
-      "url": "https://www.51cto.com/article/857808.html",
-      "hot": "能靠确定性代码、API、脚本解决的工作，绝不调用 LLM；仅保留需要工程推理、场景判断的核心环节给大模型。"
+      "title": "丘成桐弟子再立功，广义庞加莱猜想证明首次形式化验证！",
+      "url": "https://www.51cto.com/article/857884.html",
+      "hot": "刚刚，由Ayush Khaitan带领的顶尖学术团队，联合NVIDIA Humanfia团队，成功完成了Thurston几何化猜想的完整Lean形式化！"
     },
     {
       "rank": 6,
-      "title": "Agent 会干活还不够：2026 年 AI Agent 正在进入「可观测、可评测、可进化」时代",
-      "url": "https://www.51cto.com/article/857807.html",
-      "hot": "Agent 的上半场是“让它会做事”，下半场是“让它可靠地把事情做好，并且能够持续证明自己变得更好”。"
+      "title": "第 24 篇： 抓包过滤器终极指南：Wireshark 与 tcpdump 核心语法，五分钟告别“包海”迷茫",
+      "url": "https://www.51cto.com/article/857932.html",
+      "hot": "过滤器的本质，就是一套精准的“搜索条件”。它让你从“我有很多数据”的迷茫，走向“我找到了证据”的清晰。"
     },
     {
       "rank": 7,
-      "title": "给系统加Agent前，先看这五个不变的架构模式",
-      "url": "https://www.51cto.com/article/857806.html",
-      "hot": "Eastham 在台上画了一张极简架构图：几个组件装在一个大框里——你会说这是单体里的模块。去掉外框、换成几条通信路径——这是微服务或 SOA。"
+      "title": "比Jev更爆火！逆向灭霸 REA 一天登顶GitHub",
+      "url": "https://www.51cto.com/article/857881.html",
+      "hot": "GitHub 上一个叫 REA（Reverse Engineer Anything）的项目狂揽了近 7 万颗星！"
     },
     {
       "rank": 8,
-      "title": "面试官：“知识库两份文档互相打架，RAG 信谁？”，我：“信相似度最高的”，他：“群聊截图也能覆盖公司制度？”",
-      "url": "https://www.51cto.com/article/857805.html",
-      "hot": "回到开头的问题，RAG 遇到知识冲突时，绝对不能简单选择向量相似度最高的文档。相似度只表示内容相关，不能代表权威、有效和适用。"
+      "title": "Claude自己组队查Bug！11.6万行代码揪出66个，单Agent最高只找到27个",
+      "url": "https://www.51cto.com/article/857880.html",
+      "hot": "这是Anthropic刚公布的一组测试结果：在11.6万行代码中预先埋入70个Bug，让单Agent和动态工作流各跑三次。"
     },
     {
       "rank": 9,
-      "title": "技巧：如何排查是否会话数限制导致的上网卡顿？教你三招！！！！",
-      "url": "https://www.51cto.com/article/857803.html",
-      "hot": "当高峰期宽带连接数被用完后，终端发起的新建连接将无法建立，导致打开网页、刷视频、收发微信消息等卡顿。"
+      "title": "EMNLP'26 Oral | 麻省理工：靠访谈让AI模拟真人，这条路能走多远？",
+      "url": "https://www.51cto.com/article/857879.html",
+      "hot": "AI即使已经学会了你现在怎么想，换一个此前没问过的新情境，它还能不能继续答得像你？"
     },
     {
       "rank": 10,
-      "title": "Python 正式向 Rust 招手：CPython 准备告别纯 C 时代，连 pip install 都可能因此变快？",
-      "url": "https://www.51cto.com/article/857801.html",
-      "hot": "本文结合 Python Language Summit 2026 的官方讨论，深入拆解 Rust for CPython 项目的技术动机、实施路线、首个落地模块，以及 Python 核心团队提出的几道关键门槛。"
+      "title": "AI不止于大模型！实现「万物共脑」，连大脑带具身越狱到现实",
+      "url": "https://www.51cto.com/article/857878.html",
+      "hot": "一颗足够可靠的大脑，一套能组织它持续工作的执行系统，以及一个能连接物理设备的身体。模型能力不断进步，Agent执行框架持续完善，但现实世界中形态各异的设备仍然给智能体的理解与调用带来挑战。"
     }
   ]
 }
