@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-12T22:48:36+00:00",
+  "updated_at": "2026-10-13T03:13:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI Is a Tool. Using It Well Takes Skill.",
-      "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
-      "hot": "107"
+      "title": "GLM-Legal",
+      "url": "https://z.ai/blog/glm-legal",
+      "hot": "466"
     },
     {
       "rank": 2,
-      "title": "GLM-Legal",
-      "url": "https://z.ai/blog/glm-legal",
-      "hot": "379"
+      "title": "The baffling intelligence of a single cell (2024)",
+      "url": "https://jsomers.net/e-coli-chemotaxis/",
+      "hot": "87"
     },
     {
       "rank": 3,
       "title": "A Modern Web App in C",
       "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
-      "hot": "334"
+      "hot": "423"
     },
     {
       "rank": 4,
-      "title": "Phreak.ing – Internet Phone Switch",
-      "url": "https://phreak.ing/",
-      "hot": "25"
+      "title": "Who is vfmaddrnd231pd?",
+      "url": "https://purplesyringa.moe/blog/who-is-vfmaddrnd231pd/",
+      "hot": "133"
     },
     {
       "rank": 5,
-      "title": "Who Is Vfmaddrnd231pd?",
-      "url": "https://purplesyringa.moe/blog/who-is-vfmaddrnd231pd/",
-      "hot": "25"
+      "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+      "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+      "hot": "95"
     },
     {
       "rank": 6,
-      "title": "Writing a Demoscene Intro for the ZX Spectrum",
-      "url": "https://www.markround.com/blog/2026/zx-spectrum-intro",
-      "hot": "48"
+      "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+      "hot": "482"
     },
     {
       "rank": 7,
-      "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
-      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
-      "hot": "352"
+      "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+      "url": "https://github.com/prabanta-dev/janas",
+      "hot": "54"
     },
     {
       "rank": 8,
-      "title": "Codex CLI installs a persistent, self-updating background daemon by default",
-      "url": "https://github.com/openai/codex/issues/48195",
-      "hot": "393"
+      "title": "China Overtakes U.S. For First Time as Top Spender on R&D in 2024",
+      "url": "https://japannews.yomiuri.co.jp/science-nature/science/20260908-347742/",
+      "hot": "27"
     },
     {
       "rank": 9,
-      "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
-      "url": "https://news.ycombinator.com/item?id=50059096",
-      "hot": "76"
+      "title": "Making big downloads resumable in Firefox",
+      "url": "https://lunarwatcher.codeberg.page/til/firefox/resumable-big-downloads.html",
+      "hot": "112"
     },
     {
       "rank": 10,
-      "title": "Making big downloads resumable in Firefox",
-      "url": "https://lunarwatcher.codeberg.page/til/firefox/resumable-big-downloads.html",
-      "hot": "34"
+      "title": "Auto Research: Integer multiplication below n log n",
+      "url": "https://app.getsupers.com/auto-research",
+      "hot": "25"
     }
   ]
 }

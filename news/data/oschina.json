@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-12T22:48:39+00:00",
+  "updated_at": "2026-10-13T03:13:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI 让代码量涨了 30%，软件产出却纹丝不动 —— 瓶颈卡在人类 Code Review",
+      "url": "https://www.oschina.net/news/502990/ai-coding-agents-generate-more-code-but-not-more-software",
+      "hot": "Tue, 13 Oct 2026 10:57:47 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "DataGear 6.1.0 发布，数据可视化分析平台",
+      "url": "https://www.oschina.net/news/502985",
+      "hot": "Tue, 13 Oct 2026 09:44:55 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "DummyScheme现在支持协程",
+      "url": "https://www.oschina.net/news/502984",
+      "hot": "Tue, 13 Oct 2026 09:35:43 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "免费可商用 PHP 管理后台 CatchAdmin V5.4.1 发布，新增 MCP 支持",
+      "url": "https://www.oschina.net/news/502980",
+      "hot": "Tue, 13 Oct 2026 07:32:41 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "FocusAny v2.3.0 本地 AI 工具条，稳定性大扫除",
+      "url": "https://www.oschina.net/news/502979",
+      "hot": "Mon, 12 Oct 2026 21:39:30 +0800"
+    },
+    {
+      "rank": 6,
       "title": "Linus 把 Claude Code 写的内核补丁推送到个人仓库",
       "url": "https://www.oschina.net/news/502978/linus-torvalds-used-claude-code",
       "hot": "Mon, 12 Oct 2026 19:42:23 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Linux 手机的硬件瓶颈没了，剩下最大的障碍是没人愿意做",
       "url": "https://www.oschina.net/news/502977/linux-phones-alternative",
       "hot": "Mon, 12 Oct 2026 18:50:26 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "给 AI 一块 1980 年代的国产 CPU，它 5 分钟写模拟器，一个下午复现了 BASIC",
       "url": "https://www.oschina.net/news/502976",
       "hot": "Mon, 12 Oct 2026 17:44:25 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "Postgres 不慢，是 EBS 拖后腿",
       "url": "https://www.oschina.net/news/502975/postgres-isn-t-slow-your-storage-is",
       "hot": "Mon, 12 Oct 2026 16:55:38 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "KnowForge 2026.0.9 发布：书籍分类、IndexNow 实时推送与全新上传体验",
       "url": "https://www.oschina.net/news/502974",
       "hot": "Mon, 12 Oct 2026 16:22:37 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "LineageOS 发布十周年纪念更新：Android 17 提前落地，WebUSB 浏览器直接刷机",
-      "url": "https://www.oschina.net/news/502971/lineageos-24",
-      "hot": "Mon, 12 Oct 2026 11:40:25 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "DatI 0.7.2 发布：在 Agent 中记录国庆假期行程与花费实战",
-      "url": "https://www.oschina.net/news/502970",
-      "hot": "Mon, 12 Oct 2026 11:26:43 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "给 DeepSeek Harness（DSH）装上 bot 插件，把 DSH 变成 bot 系统",
-      "url": "https://www.oschina.net/news/502968",
-      "hot": "Mon, 12 Oct 2026 10:36:34 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "RXThinkCMF 敏捷开发框架 Laravel13+EleVue 版本 v2.6.0 发布",
-      "url": "https://www.oschina.net/news/502964",
-      "hot": "Mon, 12 Oct 2026 08:42:47 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "酷瓜云课堂（开源网校版）v2.0.1 发布，知识付费解决方案",
-      "url": "https://www.oschina.net/news/502963",
-      "hot": "Mon, 12 Oct 2026 07:54:07 +0800"
     }
   ]
 }
