@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-12T22:48:50+00:00",
+  "updated_at": "2026-10-13T10:32:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
       "url": "https://huggingface.co/papers/2610.13912",
-      "hot": "30"
+      "hot": "32"
     },
     {
       "rank": 2,
@@ -32,19 +32,19 @@
       "rank": 5,
       "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
       "url": "https://huggingface.co/papers/2609.33757",
-      "hot": "233"
+      "hot": "234"
     },
     {
       "rank": 6,
-      "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
-      "url": "https://huggingface.co/papers/2610.08699",
-      "hot": "110"
+      "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
+      "url": "https://huggingface.co/papers/2502.11880",
+      "hot": "18"
     },
     {
       "rank": 7,
-      "title": "DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models",
-      "url": "https://huggingface.co/papers/2610.12572",
-      "hot": "228"
+      "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
+      "url": "https://huggingface.co/papers/2610.08699",
+      "hot": "112"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
-      "url": "https://huggingface.co/papers/1910.03771",
-      "hot": "34"
+      "title": "DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models",
+      "url": "https://huggingface.co/papers/2610.12572",
+      "hot": "238"
     },
     {
       "rank": 10,
-      "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
-      "url": "https://huggingface.co/papers/2502.11880",
-      "hot": "18"
+      "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
+      "url": "https://huggingface.co/papers/1910.03771",
+      "hot": "34"
     }
   ]
 }

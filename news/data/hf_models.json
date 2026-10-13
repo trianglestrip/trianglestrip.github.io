@@ -1,67 +1,67 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-12T22:48:50+00:00",
+  "updated_at": "2026-10-13T10:32:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
-      "hot": "1926"
+      "hot": "2014"
     },
     {
       "rank": 2,
       "title": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "hot": "1313"
+      "hot": "1387"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
-      "hot": "631"
+      "hot": "672"
     },
     {
       "rank": 4,
       "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "hot": "4091"
+      "hot": "4154"
     },
     {
       "rank": 5,
       "title": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
-      "hot": "2089"
+      "hot": "2117"
     },
     {
       "rank": 6,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "7471"
+      "hot": "7539"
     },
     {
       "rank": 7,
       "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
-      "hot": "369"
+      "hot": "391"
     },
     {
       "rank": 8,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "17575"
+      "title": "LiquidAI/d1-3B",
+      "url": "https://huggingface.co/LiquidAI/d1-3B",
+      "hot": "364"
     },
     {
       "rank": 9,
-      "title": "LiquidAI/d1-3B",
-      "url": "https://huggingface.co/LiquidAI/d1-3B",
-      "hot": "342"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "17600"
     },
     {
       "rank": 10,
-      "title": "canberkkkkkk/ema-lightning",
-      "url": "https://huggingface.co/canberkkkkkk/ema-lightning",
+      "title": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
       "hot": "389"
     }
   ]
