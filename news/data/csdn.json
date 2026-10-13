@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-13T17:45:34+00:00",
+  "updated_at": "2026-10-13T21:58:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "云原生存储进阶：CSI 演进与 AI 工作负载的存储架构设计",
-      "url": "https://blog.csdn.net/vipxieliang/article/details/167579790",
-      "hot": "19618"
+      "title": "Qt 网络编程深度解析：从底层 UDP/TCP 到高层 HTTP 实战",
+      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/166989664",
+      "hot": "16599"
     },
     {
       "rank": 2,
-      "title": "服务入口越装越多？我用Dashlet把极空间整理成了一个导航首页",
-      "url": "https://blog.csdn.net/weixin_42878111/article/details/167681681",
-      "hot": "16554"
+      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(开源大模型ChatGLM高级定制化应用实战)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/167586634",
+      "hot": "13307"
     },
     {
       "rank": 3,
-      "title": "Qt 网络编程深度解析：从底层 UDP/TCP 到高层 HTTP 实战",
-      "url": "https://blog.csdn.net/yhrxh_ymq/article/details/166989664",
-      "hot": "15287"
+      "title": "生命过程的分子语言：AI 解析范式与场景应用全景研究（上）",
+      "url": "https://blog.csdn.net/kkiron/article/details/167587199",
+      "hot": "13036"
     },
     {
       "rank": 4,
       "title": "SQL 编辑器不是高级记事本：我在 KStudio 和 KSQL Developer 里攒下的建表与增删改查手法",
       "url": "https://blog.csdn.net/beautifulmemory/article/details/167693820",
-      "hot": "12896"
+      "hot": "12802"
     },
     {
       "rank": 5,
-      "title": "生命过程的分子语言：AI 解析范式与场景应用全景研究（上）",
-      "url": "https://blog.csdn.net/kkiron/article/details/167587199",
-      "hot": "12863"
+      "title": "【AI智能体】Langchain 工具调用实战操作详解",
+      "url": "https://blog.csdn.net/congge_study/article/details/165243374",
+      "hot": "12109"
     },
     {
       "rank": 6,
-      "title": "【AI智能体】Langchain 工具调用实战操作详解",
-      "url": "https://blog.csdn.net/congge_study/article/details/165243374",
-      "hot": "12000"
+      "title": "知识库里的文档互相矛盾，AI 到底该信谁？我们做了 20 次自建测试",
+      "url": "https://blog.csdn.net/augen1355/article/details/167806611",
+      "hot": "11291"
     },
     {
       "rank": 7,
-      "title": "从飞牛NAS部署到手机远程访问：洛雪音乐网页版的多用户、主题设置、本地缓存与固定地址实战",
-      "url": "https://blog.csdn.net/qq_54796785/article/details/167704188",
-      "hot": "11498"
+      "title": "1024今晚不改BUG：酒要严选.生产库别碰",
+      "url": "https://blog.csdn.net/weixin_47431459/article/details/167700426",
+      "hot": "10242"
     },
     {
       "rank": 8,
-      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(开源大模型ChatGLM高级定制化应用实战)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/167586634",
-      "hot": "11398"
+      "title": "PandaWiki AI知识库：飞牛NAS部署、Markdown问答与双入口远程访问",
+      "url": "https://blog.csdn.net/hanwangyyds/article/details/167684802",
+      "hot": "9987"
     },
     {
       "rank": 9,
-      "title": "知识库里的文档互相矛盾，AI 到底该信谁？我们做了 20 次自建测试",
-      "url": "https://blog.csdn.net/augen1355/article/details/167806611",
-      "hot": "11247"
+      "title": "【AI大模型接入SDK】ChatServer 整体初始化概述",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/167040430",
+      "hot": "9832"
     },
     {
       "rank": 10,
-      "title": "从167家到94家：数据库厂商少了近一半，DolphinDB凭什么留下来",
-      "url": "https://blog.csdn.net/lrq13965748542/article/details/167684481",
-      "hot": "10282"
+      "title": "AiiOnly Token Plan：Standard 档，把 12 款大模型接进 PyCharm 写完三种形态",
+      "url": "https://blog.csdn.net/weixin_43151418/article/details/167803739",
+      "hot": "9812"
     }
   ]
 }
