@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-13T10:32:47+00:00",
+  "updated_at": "2026-10-13T17:45:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
-      "hot": "2014"
+      "hot": "2070"
     },
     {
       "rank": 2,
       "title": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "hot": "1387"
+      "hot": "1445"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
-      "hot": "672"
+      "hot": "692"
     },
     {
       "rank": 4,
       "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "hot": "4154"
+      "hot": "4186"
     },
     {
       "rank": 5,
-      "title": "Cloudflare/clef",
-      "url": "https://huggingface.co/Cloudflare/clef",
-      "hot": "2117"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "7599"
     },
     {
       "rank": 6,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "7539"
+      "title": "Cloudflare/clef",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "hot": "2135"
     },
     {
       "rank": 7,
       "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
-      "hot": "391"
+      "hot": "400"
     },
     {
       "rank": 8,
-      "title": "LiquidAI/d1-3B",
-      "url": "https://huggingface.co/LiquidAI/d1-3B",
-      "hot": "364"
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "hot": "423"
     },
     {
       "rank": 9,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "17600"
+      "title": "LiquidAI/d1-3B",
+      "url": "https://huggingface.co/LiquidAI/d1-3B",
+      "hot": "370"
     },
     {
       "rank": 10,
       "title": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
-      "hot": "389"
+      "hot": "399"
     }
   ]
 }

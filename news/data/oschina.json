@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-13T10:32:36+00:00",
+  "updated_at": "2026-10-13T17:45:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "拾趣 Magpie：macOS 划词 AI 工具",
+      "url": "https://www.oschina.net/news/503004",
+      "hot": "Tue, 13 Oct 2026 19:31:28 +0800"
+    },
+    {
+      "rank": 2,
       "title": "纯 Rust 重写 Word：5 天斩获 6000+ star、完全净室实现",
       "url": "https://www.oschina.net/news/503003",
       "hot": "Tue, 13 Oct 2026 17:59:16 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "倒计时3天！1016GOPS2026・上海站，参会指南请收好！",
       "url": "https://www.oschina.net/news/503001",
       "hot": "Tue, 13 Oct 2026 16:57:48 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Palantir CTO 上电视骂 AI 安全是“邪教”，还戏称 AI 研究者靠抽烟表信仰",
       "url": "https://www.oschina.net/news/503000",
       "hot": "Tue, 13 Oct 2026 16:56:20 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "16个获奖名额，总奖池33万，“地心飞行”AIGC大赛全网征集创意视频",
       "url": "https://www.oschina.net/news/502999",
       "hot": "Tue, 13 Oct 2026 16:42:54 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Zentrola 1.2.0：AI 编程请求也能智能路由和负载均衡了",
       "url": "https://www.oschina.net/news/502998",
       "hot": "Tue, 13 Oct 2026 16:07:54 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "DeepSeek 半年融 1500 亿冲向科创板，梁文锋开始给模型找“身体”",
       "url": "https://www.oschina.net/news/502997",
       "hot": "Tue, 13 Oct 2026 15:42:56 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "Anthropic 公开反蒸馏防御战报：让推理记录更难被偷、捕获量降了九成",
       "url": "https://www.oschina.net/news/502996/anthropic-distillation-defenses",
       "hot": "Tue, 13 Oct 2026 14:57:06 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Meta 发布 Muse Wonder，为个人和专业 Agentic 任务提供最先进性能",
       "url": "https://www.oschina.net/news/502995/meta-ai-muse-wonder",
       "hot": "Tue, 13 Oct 2026 14:37:26 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "PicList v3.6.0发布 图床管理和上传工具",
       "url": "https://www.oschina.net/news/502994",
       "hot": "Tue, 13 Oct 2026 13:36:35 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "智谱发布 GLM-Legal 模型：基于轻量级底座、基准测试追平闭源",
-      "url": "https://www.oschina.net/news/502993/z-ai-glm-legal",
-      "hot": "Tue, 13 Oct 2026 11:54:16 +0800"
     }
   ]
 }
