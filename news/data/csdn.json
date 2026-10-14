@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-14T19:28:17+00:00",
+  "updated_at": "2026-10-14T22:28:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 浏览器操作自动化任务实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/166139545",
-      "hot": "25049"
+      "hot": "25884"
     },
     {
       "rank": 2,
       "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(开源大模型ChatGLM高级定制化应用实战)",
       "url": "https://blog.csdn.net/2401_87629362/article/details/167586634",
-      "hot": "19980"
+      "hot": "18356"
     },
     {
       "rank": 3,
       "title": "服务入口越装越多？我用Dashlet把极空间整理成了一个导航首页",
       "url": "https://blog.csdn.net/weixin_42878111/article/details/167681681",
-      "hot": "18451"
+      "hot": "16482"
     },
     {
       "rank": 4,
       "title": "Qt 网络编程深度解析：从底层 UDP/TCP 到高层 HTTP 实战",
       "url": "https://blog.csdn.net/yhrxh_ymq/article/details/166989664",
-      "hot": "16954"
+      "hot": "16329"
     },
     {
       "rank": 5,
       "title": "时序数据库是什么？2026 年主流产品选型指南与场景全解析",
       "url": "https://blog.csdn.net/2401_86326742/article/details/167917846",
-      "hot": "11231"
+      "hot": "11466"
     },
     {
       "rank": 6,
-      "title": "SQL 编辑器不是高级记事本：我在 KStudio 和 KSQL Developer 里攒下的建表与增删改查手法",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/167693820",
-      "hot": "9694"
+      "title": "联名警告与3天奇迹：AI造AI到底有几分真",
+      "url": "https://blog.csdn.net/wodekouwei/article/details/167702475",
+      "hot": "9653"
     },
     {
       "rank": 7,
-      "title": "AI 生图进阶指南：如何去噪、优化画面，让图片更符合自己的审美？",
-      "url": "https://blog.csdn.net/2501_91731683/article/details/167809675",
-      "hot": "9085"
+      "title": "SQL 编辑器不是高级记事本：我在 KStudio 和 KSQL Developer 里攒下的建表与增删改查手法",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/167693820",
+      "hot": "9269"
     },
     {
       "rank": 8,
       "title": "OpenClaw Windows部署：自定义模型接入、Gateway远程访问与设备配对",
       "url": "https://blog.csdn.net/liu_chen_yang/article/details/167683164",
-      "hot": "8798"
+      "hot": "8419"
     },
     {
       "rank": 9,
-      "title": "AiiOnly Token Plan：Standard 档，把 12 款大模型接进 PyCharm 写完三种形态",
-      "url": "https://blog.csdn.net/weixin_43151418/article/details/167803739",
-      "hot": "8551"
+      "title": "生命过程的分子语言：AI 解析范式与场景应用全景研究（下）",
+      "url": "https://blog.csdn.net/kkiron/article/details/167587273",
+      "hot": "8334"
     },
     {
       "rank": 10,
-      "title": "生命过程的分子语言：AI 解析范式与场景应用全景研究（上）",
-      "url": "https://blog.csdn.net/kkiron/article/details/167587199",
-      "hot": "8303"
+      "title": "AiiOnly Token Plan：Standard 档，把 12 款大模型接进 PyCharm 写完三种形态",
+      "url": "https://blog.csdn.net/weixin_43151418/article/details/167803739",
+      "hot": "8249"
     }
   ]
 }
