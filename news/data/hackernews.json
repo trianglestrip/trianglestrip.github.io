@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-13T21:58:59+00:00",
+  "updated_at": "2026-10-14T00:51:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Gemini 4 Argon",
       "url": "https://deepmind.google/models/gemini/",
-      "hot": "812"
+      "hot": "957"
     },
     {
       "rank": 2,
-      "title": "OpenAI engineer arrested in bugging of executive conference room",
-      "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
-      "hot": "84"
+      "title": "Show HN: Guitoro, a virtual guitar you strum with your keyboard",
+      "url": "https://guitoro.com/",
+      "hot": "239"
     },
     {
       "rank": 3,
-      "title": "Show HN: Guitoro, a virtual guitar you strum with your keyboard",
-      "url": "https://guitoro.com/",
-      "hot": "147"
+      "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
+      "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+      "hot": "411"
     },
     {
       "rank": 4,
-      "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
-      "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
-      "hot": "293"
+      "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+      "url": "https://pulseos.finance",
+      "hot": "27"
     },
     {
       "rank": 5,
       "title": "Redesigning source control at Anthropic",
       "url": "https://www.anthropic.com/engineering/redesigning-source-control",
-      "hot": "399"
+      "hot": "509"
     },
     {
       "rank": 6,
       "title": "Apple HomeView",
       "url": "https://www.apple.com/apple-homeview/",
-      "hot": "600"
+      "hot": "647"
     },
     {
       "rank": 7,
       "title": "Thunderbird for iOS",
       "url": "https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development/",
-      "hot": "274"
+      "hot": "327"
     },
     {
       "rank": 8,
-      "title": "11 year old unsoundness bugs found in Rust borrow checker",
-      "url": "https://github.com/rust-lang/rust/issues/164250",
-      "hot": "626"
+      "title": "Recreational Programming",
+      "url": "https://www.cphiri.dev/presentations/recreational-programming",
+      "hot": "35"
     },
     {
       "rank": 9,
-      "title": "I posted to HN, and then my website was flooded with AI bot traffic",
-      "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
-      "hot": "204"
+      "title": "11 year old unsoundness bugs found in Rust borrow checker",
+      "url": "https://github.com/rust-lang/rust/issues/164250",
+      "hot": "667"
     },
     {
       "rank": 10,
-      "title": "Firefox Enterprise",
-      "url": "https://www.firefox.com/en-US/enterprise/",
-      "hot": "560"
+      "title": "900-Page Pre-Pantone Guide to Color from 1692 (With Complete High-Res Scan)",
+      "url": "https://www.openculture.com/2026/10/a-900-page-pre-pantone-guide-to-color-from-1692.html",
+      "hot": "25"
     }
   ]
 }
