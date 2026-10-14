@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-14T15:19:54+00:00",
+  "updated_at": "2026-10-14T19:28:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Iosevka is an open-source, sans-serif and slab-serif, monospace font",
-      "url": "https://typeof.net/Iosevka/",
-      "hot": "429"
+      "title": "Fire at Starlink site in Bulgaria after suspected sabotage in Poland",
+      "url": "https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:261014-930-839530/",
+      "hot": "71"
     },
     {
       "rank": 2,
-      "title": "Passkeys Are Not a Trap",
-      "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap/",
-      "hot": "9"
+      "title": "AI agents aren't 'going rogue.' Frontier labs are skipping security basics",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "hot": "477"
     },
     {
       "rank": 3,
-      "title": "Pg_vectorsearch: An index that is faster than pgvector's IVFFlat and HNSW",
-      "url": "https://github.com/timescale/pg_vectorsearch",
-      "hot": "94"
+      "title": "Better HTTP/1 connection reuse in Go 1.27",
+      "url": "https://go.dev/blog/http-connection-reuse",
+      "hot": "106"
     },
     {
       "rank": 4,
-      "title": "ASML's strong orders ease fears AI spending boom is running out of steam",
-      "url": "https://www.reuters.com/business/asml-forecasts-q4-sales-above-expectations-ai-chip-demand-2026-10-14/",
-      "hot": "42"
+      "title": "How the Military Will Hack the Election",
+      "url": "https://www.kenklippenstein.com/p/how-the-military-will-hack-the-election",
+      "hot": "113"
     },
     {
       "rank": 5,
-      "title": "Amazon pushes up prices across the Internet",
-      "url": "https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/",
-      "hot": "362"
+      "title": "Iosevka is an open-source, sans-serif and slab-serif monospace font",
+      "url": "https://typeof.net/Iosevka/",
+      "hot": "615"
     },
     {
       "rank": 6,
-      "title": "TV4 postpones show after AI agent erases edited material",
-      "url": "https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage",
-      "hot": "79"
+      "title": "Submarine cable resilience",
+      "url": "https://blog.apnic.net/2026/10/14/submarine-cable-resilience/",
+      "hot": "96"
     },
     {
       "rank": 7,
-      "title": "The Gold-Bug: Edgar Allan Poe's story that taught me about cryptography (2024)",
-      "url": "https://robotsinplainenglish.com/e/2024-01-21-gold-bug.html",
-      "hot": "19"
+      "title": "Phloem: Git history grown like a slime mold",
+      "url": "https://phloem.stemdeck.app/",
+      "hot": "14"
     },
     {
       "rank": 8,
-      "title": "Pulsar at ESUG 2026 (new Smalltalk IDE)",
-      "url": "https://blog.lorenzano.eu/pulsar-at-esug-2026/",
-      "hot": "56"
+      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+      "hot": "64"
     },
     {
       "rank": 9,
-      "title": "Sound – Bartosz Ciechanowski (2022)",
-      "url": "https://ciechanow.ski/sound/",
-      "hot": "216"
+      "title": "Neckbeard – a DevOps/platform/SRE plugin for your agent",
+      "url": "https://github.com/bealesh/neckbeard",
+      "hot": "21"
     },
     {
       "rank": 10,
-      "title": "The Aaronson Oracle",
-      "url": "https://aaronsonoracle.com/",
-      "hot": "34"
+      "title": "Show HN: Petal, open-source CoScreen/ScreenHero finally free",
+      "url": "https://petal.live/",
+      "hot": "13"
     }
   ]
 }

@@ -1,62 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-10-14T10:28:57+00:00",
+  "updated_at": "2026-10-14T19:28:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[TypeScript] morluto/rea",
       "url": "https://github.com/morluto/rea",
-      "hot": "224,223"
+      "hot": "237,197"
     },
     {
       "rank": 2,
-      "title": "[JavaScript] bilawalsidhu/gods-eye-view",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view",
-      "hot": "56,092"
+      "title": "[Python] debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "hot": "65,786"
     },
     {
       "rank": 3,
-      "title": "[Python] debpalash/VoiceStudio",
-      "url": "https://github.com/debpalash/VoiceStudio",
-      "hot": "64,693"
+      "title": "[TypeScript] mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "hot": "28,969"
     },
     {
       "rank": 4,
-      "title": "[TypeScript] mksglu/context-mode",
-      "url": "https://github.com/mksglu/context-mode",
-      "hot": "28,645"
+      "title": "[Shell] nvm-sh/nvm",
+      "url": "https://github.com/nvm-sh/nvm",
+      "hot": "95,417"
     },
     {
       "rank": 5,
-      "title": "[HTML] cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "hot": "54,921"
+      "title": "[Python] K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "hot": "49,173"
     },
     {
       "rank": 6,
-      "title": "[TypeScript] vercel-labs/skills",
-      "url": "https://github.com/vercel-labs/skills",
-      "hot": "34,818"
+      "title": "[Python] HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "hot": "52,366"
     },
     {
       "rank": 7,
-      "title": "[Jupyter Notebook] lyogavin/airllm",
-      "url": "https://github.com/lyogavin/airllm",
-      "hot": "38,588"
+      "title": "[Python] ifixai-ai/iFixAi",
+      "url": "https://github.com/ifixai-ai/iFixAi",
+      "hot": "27,138"
     },
     {
       "rank": 8,
-      "title": "[Rust] storytold/artcraft",
-      "url": "https://github.com/storytold/artcraft",
-      "hot": "26,879"
+      "title": "[Go] vxcontrol/pentagi",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "hot": "29,177"
     },
     {
       "rank": 9,
+      "title": "[Rust] rust-lang/rust",
+      "url": "https://github.com/rust-lang/rust",
+      "hot": "119,906"
+    },
+    {
+      "rank": 10,
       "title": "[Swift] xtool-org/xtool",
       "url": "https://github.com/xtool-org/xtool",
-      "hot": "9,984"
+      "hot": "10,528"
     }
   ]
 }
