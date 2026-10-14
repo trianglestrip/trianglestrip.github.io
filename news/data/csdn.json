@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-14T00:51:30+00:00",
+  "updated_at": "2026-10-14T05:31:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Qt 网络编程深度解析：从底层 UDP/TCP 到高层 HTTP 实战",
       "url": "https://blog.csdn.net/yhrxh_ymq/article/details/166989664",
-      "hot": "17997"
+      "hot": "17615"
     },
     {
       "rank": 2,
-      "title": "SQL 编辑器不是高级记事本：我在 KStudio 和 KSQL Developer 里攒下的建表与增删改查手法",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/167693820",
-      "hot": "14419"
+      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(开源大模型ChatGLM高级定制化应用实战)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/167586634",
+      "hot": "17530"
     },
     {
       "rank": 3,
-      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(开源大模型ChatGLM高级定制化应用实战)",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/167586634",
-      "hot": "14414"
+      "title": "【AI智能体】Langchain 工具调用实战操作详解",
+      "url": "https://blog.csdn.net/congge_study/article/details/165243374",
+      "hot": "12970"
     },
     {
       "rank": 4,
-      "title": "AiiOnly Token Plan：Standard 档，把 12 款大模型接进 PyCharm 写完三种形态",
-      "url": "https://blog.csdn.net/weixin_43151418/article/details/167803739",
-      "hot": "12602"
+      "title": "SQL 编辑器不是高级记事本：我在 KStudio 和 KSQL Developer 里攒下的建表与增删改查手法",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/167693820",
+      "hot": "12421"
     },
     {
       "rank": 5,
-      "title": "生命过程的分子语言：AI 解析范式与场景应用全景研究（上）",
-      "url": "https://blog.csdn.net/kkiron/article/details/167587199",
-      "hot": "12449"
+      "title": "服务入口越装越多？我用Dashlet把极空间整理成了一个导航首页",
+      "url": "https://blog.csdn.net/weixin_42878111/article/details/167681681",
+      "hot": "11941"
     },
     {
       "rank": 6,
-      "title": "【AI智能体】Langchain 工具调用实战操作详解",
-      "url": "https://blog.csdn.net/congge_study/article/details/165243374",
-      "hot": "11629"
+      "title": "AiiOnly Token Plan：Standard 档，把 12 款大模型接进 PyCharm 写完三种形态",
+      "url": "https://blog.csdn.net/weixin_43151418/article/details/167803739",
+      "hot": "11719"
     },
     {
       "rank": 7,
-      "title": "知识库里的文档互相矛盾，AI 到底该信谁？我们做了 20 次自建测试",
-      "url": "https://blog.csdn.net/augen1355/article/details/167806611",
-      "hot": "11287"
+      "title": "【AI大模型接入SDK】ChatServer 整体初始化概述",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/167040430",
+      "hot": "10858"
     },
     {
       "rank": 8,
       "title": "1024今晚不改BUG：酒要严选.生产库别碰",
       "url": "https://blog.csdn.net/weixin_47431459/article/details/167700426",
-      "hot": "10618"
+      "hot": "9404"
     },
     {
       "rank": 9,
-      "title": "PandaWiki AI知识库：飞牛NAS部署、Markdown问答与双入口远程访问",
-      "url": "https://blog.csdn.net/hanwangyyds/article/details/167684802",
-      "hot": "9501"
+      "title": "知识库里的文档互相矛盾，AI 到底该信谁？我们做了 20 次自建测试",
+      "url": "https://blog.csdn.net/augen1355/article/details/167806611",
+      "hot": "9164"
     },
     {
       "rank": 10,
-      "title": "20多块玩客云别吃灰：刷HiNas后做成能远程访问的低功耗NAS",
-      "url": "https://blog.csdn.net/COLLINSXU/article/details/167801989",
-      "hot": "9077"
+      "title": "生命过程的分子语言：AI 解析范式与场景应用全景研究（上）",
+      "url": "https://blog.csdn.net/kkiron/article/details/167587199",
+      "hot": "8911"
     }
   ]
 }
