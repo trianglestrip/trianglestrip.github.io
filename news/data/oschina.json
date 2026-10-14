@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-14T05:31:15+00:00",
+  "updated_at": "2026-10-14T10:29:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Jync v1.7.2 Oracle 目标端兼容性加固",
+      "url": "https://www.oschina.net/news/503022",
+      "hot": "Wed, 14 Oct 2026 16:55:06 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "ToolForge v0.1.9 发布：键鼠统计、Excel 查看器、PDF OCR、SVG 转换等功能上线",
+      "url": "https://www.oschina.net/news/503021",
+      "hot": "Wed, 14 Oct 2026 16:35:16 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Mailez v1.0.2 发布：多签名支持、导航优化与安全加固",
+      "url": "https://www.oschina.net/news/503018",
+      "hot": "Wed, 14 Oct 2026 15:06:30 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "国内首款 SFTP 工具 iFreeSftp 发布 v0.8.0：双窗格多标签 + 服务端命令通道，让每个人都能轻松使用 SFTP",
+      "url": "https://www.oschina.net/news/503017",
+      "hot": "Wed, 14 Oct 2026 14:40:37 +0800"
+    },
+    {
+      "rank": 5,
       "title": "从 Agent 到 Loop：AI 正如何重构软件工程？｜QCon 上海 2026 即将开幕",
       "url": "https://www.oschina.net/event/8598415",
       "hot": "Wed, 14 Oct 2026 13:13:53 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
+      "title": "腾子的 OrcaTerm 又又又更新了！！！",
+      "url": "https://www.oschina.net/news/503013",
+      "hot": "Wed, 14 Oct 2026 13:06:01 +0800"
+    },
+    {
+      "rank": 7,
       "title": "Nebula 正式更名 BucketForge！基于 Rust + Tauri 的开源多云存储管理器发布 v1.14.0",
       "url": "https://www.oschina.net/news/503012",
       "hot": "Wed, 14 Oct 2026 11:57:33 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "Gemini 4 Argon 全球上线，主打 Coding、企业工作流和网络安全",
       "url": "https://www.oschina.net/news/503010/google-deepmind-gemini4-models-argon",
       "hot": "Wed, 14 Oct 2026 10:59:16 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "sqltoy-orm6.0.6发版，信创首选orm框架！",
       "url": "https://www.oschina.net/news/503009",
       "hot": "Wed, 14 Oct 2026 10:40:03 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "Jync v1.7.1 发布 日志 CDC 从 1 种扩到 4 种（v1.6.0 / v1.7.0）",
       "url": "https://www.oschina.net/news/503008",
       "hot": "Wed, 14 Oct 2026 10:00:22 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Jync v1.5.0发布： 日志 CDC(MySQL binlog)捕获策略",
-      "url": "https://www.oschina.net/news/503007",
-      "hot": "Wed, 14 Oct 2026 09:55:06 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "DjangoAdmin 敏捷开发框架 FastAPI+EleVue 版本 v2.7.3 发布",
-      "url": "https://www.oschina.net/news/503005",
-      "hot": "Wed, 14 Oct 2026 08:53:00 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "拾趣 Magpie：macOS 划词 AI 工具",
-      "url": "https://www.oschina.net/news/503004",
-      "hot": "Tue, 13 Oct 2026 19:31:28 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "纯 Rust 重写 Word：5 天斩获 6000+ star、完全净室实现",
-      "url": "https://www.oschina.net/news/503003",
-      "hot": "Tue, 13 Oct 2026 17:59:16 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "倒计时3天！1016GOPS2026・上海站，参会指南请收好！",
-      "url": "https://www.oschina.net/news/503001",
-      "hot": "Tue, 13 Oct 2026 16:57:48 +0800"
     }
   ]
 }
