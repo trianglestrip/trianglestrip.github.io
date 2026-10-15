@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-15T21:38:21+00:00",
+  "updated_at": "2026-10-15T23:49:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Muse Spark Open",
       "url": "https://research.meta.ai/blog/muse-spark-open",
-      "hot": "477"
+      "hot": "570"
     },
     {
       "rank": 2,
-      "title": "Neural networks are clean",
-      "url": "https://already-clean.goodfire.com/",
-      "hot": "378"
+      "title": "What I Self-Host",
+      "url": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/",
+      "hot": "184"
     },
     {
       "rank": 3,
-      "title": "New Withings Users Must Pay $99/Year for Apple Health Syncing",
-      "url": "https://support.withings.com/hc/en-us/community/posts/51887047154577-Unacceptable-Apple-Health-Sync-is-now-behind-a-99-year-paywall-for-new-accounts",
-      "hot": "56"
+      "title": "Neural networks are clean",
+      "url": "https://already-clean.goodfire.com/",
+      "hot": "462"
     },
     {
       "rank": 4,
-      "title": "What I Self-Host",
-      "url": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/",
-      "hot": "42"
+      "title": "Someone on Torrent Sites Kept Fucking with My Sonarr",
+      "url": "https://thereallo.dev/blog/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup",
+      "hot": "178"
     },
     {
       "rank": 5,
-      "title": "E Ink Kaleido 4",
-      "url": "https://www.eink.com/news/detail/EInk-Launches-Latest-Version-of-Color-ePaper-Platform-E-Ink-Kaleido-4",
-      "hot": "85"
+      "title": "Wayland desktop for Linux with skeuomorphic design",
+      "url": "https://github.com/fyzugx/DEsk",
+      "hot": "469"
     },
     {
       "rank": 6,
-      "title": "Wayland desktop for Linux with skeuomorphic design",
-      "url": "https://github.com/fyzugx/DEsk",
-      "hot": "434"
+      "title": "Jev meets the Trolley Problem",
+      "url": "https://zachlandes.com/trolley-problem/",
+      "hot": "259"
     },
     {
       "rank": 7,
-      "title": "Krea 3 – An image model built for editing at scale",
-      "url": "https://www.krea.ai/krea-3",
-      "hot": "207"
+      "title": "AdFection: Targeted ads turned into a pipeline for zero-click mercenary spyware",
+      "url": "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/",
+      "hot": "362"
     },
     {
       "rank": 8,
-      "title": "AdFection: Targeted ads turned into a pipeline for zero-click mercenary spyware",
-      "url": "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/",
-      "hot": "324"
+      "title": "Krea 3 – An image model built for editing at scale",
+      "url": "https://www.krea.ai/krea-3",
+      "hot": "229"
     },
     {
       "rank": 9,
-      "title": "Jev meets the Trolley Problem",
-      "url": "https://zachlandes.com/trolley-problem/",
-      "hot": "186"
+      "title": "The 8-mile hole in a Hawaii national park that no one can explain",
+      "url": "https://www.sfgate.com/national-parks/article/hawaii-volcanoes-park-great-crack-22358849.php",
+      "hot": "29"
     },
     {
       "rank": 10,
-      "title": "Someone on Torrent Sites Kept Fucking with My Sonarr",
-      "url": "https://thereallo.dev/blog/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup",
-      "hot": "95"
+      "title": "Major ICQ security hole (1998)",
+      "url": "https://opennet.ru/base/maillist/169.txt.html",
+      "hot": "18"
     }
   ]
 }
