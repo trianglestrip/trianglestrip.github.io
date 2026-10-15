@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-15T00:44:06+00:00",
+  "updated_at": "2026-10-15T05:13:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Things to know when you get cancer – 2026 Edition",
+      "title": "Things to know when you get cancer",
       "url": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/",
-      "hot": "694"
+      "hot": "1028"
     },
     {
       "rank": 2,
       "title": "OpenCode 2.0",
       "url": "https://anoma.ly/notes/opencode-2-0/",
-      "hot": "259"
+      "hot": "434"
     },
     {
       "rank": 3,
-      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
-      "url": "https://typesafe.ai/blog/jev-1-14",
-      "hot": "159"
+      "title": "Tiny Little Office",
+      "url": "https://tinylittleoffice.com/",
+      "hot": "250"
     },
     {
       "rank": 4,
       "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
       "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
-      "hot": "30"
+      "hot": "127"
     },
     {
       "rank": 5,
-      "title": "Tiny Little Office",
-      "url": "https://tinylittleoffice.com/",
-      "hot": "103"
+      "title": "Do dentists know what they're doing?",
+      "url": "https://mapwriting.substack.com/p/dentists",
+      "hot": "540"
     },
     {
       "rank": 6,
-      "title": "Passkeys are not a trap",
-      "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap/",
-      "hot": "455"
+      "title": "Donaldson Futuro House in Idyllwild, California, USA",
+      "url": "https://www.wowhaus.co.uk/2026/10/12/donaldson-futuro-house-in-idyllwild-california-usa/",
+      "hot": "20"
     },
     {
       "rank": 7,
-      "title": "Do dentists know what they're doing?",
-      "url": "https://mapwriting.substack.com/p/dentists",
-      "hot": "378"
+      "title": "It took me nine years to hack my Xbox 360",
+      "url": "https://kennedn.com/blog/posts/glitching/",
+      "hot": "27"
     },
     {
       "rank": 8,
-      "title": "Americans' social activity has steeply declined in the past 30 years",
-      "url": "https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years",
-      "hot": "186"
+      "title": "The Double Headed Stack Allocator",
+      "url": "https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/",
+      "hot": "32"
     },
     {
       "rank": 9,
-      "title": "Better HTTP/1 connection reuse in Go 1.27",
-      "url": "https://go.dev/blog/http-connection-reuse",
-      "hot": "191"
+      "title": "Americans' social activity has steeply declined in the past 30 years",
+      "url": "https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years",
+      "hot": "302"
     },
     {
       "rank": 10,
-      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
-      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-      "hot": "821"
+      "title": "Your C is not standard C",
+      "url": "https://sebsite.pw/w/20261012-notstdc.html",
+      "hot": "56"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-15T00:44:05+00:00",
+  "updated_at": "2026-10-15T05:13:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "周末搓了个 HarmonyOS 6 刮刮乐，真能刮出东西",
-      "url": "https://ost.51cto.com/posts/59640",
-      "hot": "前言把结果直接放到屏幕上，和让人一点点刮出来，是两种不同的感觉。刮刮卡的小乐趣就在这段揭晓过程：先露一个字，再多刮几下，最后整张卡..."
+      "title": "鸿蒙ArkUI水波纹动画开发：从零打造数字键盘交互特效",
+      "url": "https://ost.51cto.com/posts/59686",
+      "hot": "鸿蒙ArkUI水波纹动画开发：从零打造数字键盘交互特效在移动应用界面设计中，水波纹（Ripple）动效是一种经典的视觉反馈方式，能够为用户触..."
     },
     {
       "rank": 2,
-      "title": "用 HarmonyOS 开发助手和 Doubao-Seed-2.1-lite 做一个亲属称谓元服务",
-      "url": "https://ost.51cto.com/posts/59615",
-      "hot": "前言亲属称谓最容易出错的地方，不是某一层关系，而是关系链叠起来之后的歧义。例如&ldquo;爸爸的姐姐的丈夫&rdquo;&ldquo;妈妈的哥哥的女儿&rdquo;，每个词都认..."
+      "title": "鸿蒙ArkUI左右拖动切换图片效果：打造交互式装修对比神器",
+      "url": "https://ost.51cto.com/posts/59685",
+      "hot": "鸿蒙ArkUI左右拖动切换图片效果：打造交互式装修对比神器在移动应用中，装修前后对比、产品效果对比、照片编辑前后对比等场景常常需要一种..."
     },
     {
       "rank": 3,
-      "title": "腾讯开源 Octop：单进程多 Agent 私有化 AI 底座，开发者可直接搭建团队 AI 助手",
-      "url": "https://www.51cto.com/article/858163.html",
-      "hot": "模型决定下限，Harness 决定上限。谁能把运行时、记忆、工具、渠道和治理这套工程体系做扎实，谁才能让 AI 真正从 “能聊” 走到 “能干”。"
+      "title": "你的内部知识库，就是 LLM 最大的攻击面：用 STRIDE 给上下文感知 AI 做一次完整威胁建模",
+      "url": "https://www.51cto.com/article/858258.html",
+      "hot": "如何用 STRIDE 方法，给一个上下文感知的 AI 流水线做一次完整的威胁建模。"
     },
     {
       "rank": 4,
-      "title": "腾讯WorkBuddy企业版上线「可观测中心」破解规模化用Agent四大痛点",
-      "url": "https://www.51cto.com/article/858153.html",
-      "hot": "0月13日，腾讯 WorkBuddy 企业版管理后台上线“可观测中心”，作为企业级 Agent 智能体运行管理的「仪表盘」——从统计观测到轨迹分析，让企业级 Agent 全链路「看得全、看得清、看得透」。"
+      "title": "当视频模型回到原点，它还认得这里吗？Honeycomb用恒定大小记忆守住长视频的一致性",
+      "url": "https://www.51cto.com/article/858255.html",
+      "hot": "来自哈佛大学、麻省理工学院、新加坡国立大学与 MIT IBM Watson AI Lab 的研究团队提出 Honeycomb，试图回答一个更根本的问题：视频世界模型能否在持续吸收新场景信息的同时，让特征记忆始终保持固定大小？"
     },
     {
       "rank": 5,
-      "title": "别再只刷 LeetCode 了：Google、Meta 面试已转向\"AI 辅助编程\"，考的是你会不会管 AI",
-      "url": "https://www.51cto.com/article/858152.html",
-      "hot": "今天将这几家的做法给拆开来看。最后整理 5 道很可能被问到的 AI 辅助面试题，每道都附上答题思路。"
+      "title": "苹果LensVLM：长上下文压缩成图片，模型边看边「放大」",
+      "url": "https://www.51cto.com/article/858254.html",
+      "hot": "LensVLM 的核心，是让模型在阅读压缩内容时，仍能按需查阅原文。模型先浏览全篇，再把阅读预算用在当前问题需要的页面上。"
     },
     {
       "rank": 6,
-      "title": "把自己“蒸馏”成 SKILL，到底要怎么做？",
-      "url": "https://www.51cto.com/article/858151.html",
-      "hot": "把自己蒸馏成 SKILL，不是把自己变成机器，而是把机器能做的交给机器，把人该做的留给人。先跑起来，再沉淀。先记录，再提炼。先小范围用，再慢慢升级。你的 SKILL 会随着你一起长大。它不会代替你，但它会让你更自由。"
+      "title": "ACL 2026｜MMSearch-R1：让多模态模型学会「该搜就搜」，代价是什么？",
+      "url": "https://www.51cto.com/article/858253.html",
+      "hot": "这篇论文值得关注的地方，不只是“搜索调用少了”，而是它展示了如何用奖励和数据共同塑造搜索行为。但读到成本分析时，还要追问一句：少搜省下来的开销，是否抵得上模型为了做决策而多花的计算？"
     },
     {
       "rank": 7,
-      "title": "告别大模型的 “慢” 与 “贵”：Decisions API vs Jev，后端决策模型怎么选？",
-      "url": "https://www.51cto.com/article/858150.html",
-      "hot": "本文将围绕四个问题讲透 Decisions API，即它是什么，它和 Jev 是什么关系，怎么使用和你的项目该优先选谁。"
+      "title": "清华提出Jev-LDE：ICL示例只改一次，1-shot平均准确率就能暴涨",
+      "url": "https://www.51cto.com/article/858252.html",
+      "hot": "清华大学自动化系研究者提出了 Local Demonstration Editing（LDE），并训练了一个小型编辑模型 Jev-LDE。它不负责最终答题，而是在目标 LLM 推理前，对已经检索出的 demonstration set 做一次编辑，只允许 Keep、Delete 或 Replace 三种操作。"
     },
     {
       "rank": 8,
-      "title": "清华大学AI4S研究新进展：让科学智能体发现公式、探索机理",
-      "url": "https://www.51cto.com/article/858149.html",
-      "hot": "今天，大语言模型（LLM）与科学智能体（Scientific Agent）已能自主分析数据、调用工具、迭代假设，深度参与科学发现。一个关键问题随之浮现：AI 能否先可靠地发现数据背后的稳定规律？又能否进一步理解规律背后的机制？"
+      "title": "Anthropic震撼研究：AI竟能通过电视盒子自我复制",
+      "url": "https://www.51cto.com/article/858251.html",
+      "hot": "Anthropic 的前沿红队发布了一项新研究，探讨 AI 能否像计算机病毒一样，在不同设备之间自主复制、运行，甚至不断传播。"
     },
     {
       "rank": 9,
-      "title": "一文讲透 RAG：原理、优化与落地",
-      "url": "https://www.51cto.com/article/858148.html",
-      "hot": "用 RAG 做风格匹配，效果其实一般。RAG 检索的依据是语义相似度，找的是\"主题相近的文本\"，不是\"风格相近的文本\"。两篇文章主题完全不同，写作风格可能一模一样——RAG 分辨不出来。"
+      "title": "开源文档解析MinerU从3.0到4.0：统一文档模型、API接口、本地文档库和更友好的Agent阅读支持",
+      "url": "https://www.51cto.com/article/858250.html",
+      "hot": "在AI应用特别是 ​​#RAG知识库​​ 开发中 ​​#文档解析​​ 是比较重要的前置任务，​​#MinerU​​ 是其中比较主流的项目之一，它主要负责把将PDF、Office文件等复杂文档转换为 LLM 可直接使用的 Markdown/JSON格式。"
     },
     {
       "rank": 10,
-      "title": "刚刚，Gemini 4终于来了：谷歌重回御三家，API限时半价",
-      "url": "https://www.51cto.com/article/858147.html",
-      "hot": "刚刚，Gemini 4 Argon正式面向全球开发者、企业及付费订阅用户陆续开放。"
+      "title": "Agent一直在行动，任务为何没有进展？PoS识别并打破Belief Trapping",
+      "url": "https://www.51cto.com/article/858249.html",
+      "hot": "研究团队提出 PoS（Progression of States）。它持续维护显式信念状态，记录当前世界与未解决要求。"
     }
   ]
 }
