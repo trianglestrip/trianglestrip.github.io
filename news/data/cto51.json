@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-15T09:53:01+00:00",
+  "updated_at": "2026-10-15T14:29:32+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
+      "title": "DeepSeek服务器全球宕机！神秘Harness账号同时现身",
+      "url": "https://www.51cto.com/article/858265.html",
+      "hot": "目前没有任何官方证据。但架不住时间点确实有点巧。一边是网页和API突然集体罢工，一边是Harness账号悄悄把B站主页搭了起来。"
+    },
+    {
+      "rank": 3,
       "title": "鸿蒙ArkUI水波纹动画开发：从零打造数字键盘交互特效",
       "url": "https://ost.51cto.com/posts/59686",
       "hot": "鸿蒙ArkUI水波纹动画开发：从零打造数字键盘交互特效在移动应用界面设计中，水波纹（Ripple）动效是一种经典的视觉反馈方式，能够为用户触..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "你的内部知识库，就是 LLM 最大的攻击面：用 STRIDE 给上下文感知 AI 做一次完整威胁建模",
       "url": "https://www.51cto.com/article/858258.html",
       "hot": "如何用 STRIDE 方法，给一个上下文感知的 AI 流水线做一次完整的威胁建模。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "当视频模型回到原点，它还认得这里吗？Honeycomb用恒定大小记忆守住长视频的一致性",
       "url": "https://www.51cto.com/article/858255.html",
       "hot": "来自哈佛大学、麻省理工学院、新加坡国立大学与 MIT IBM Watson AI Lab 的研究团队提出 Honeycomb，试图回答一个更根本的问题：视频世界模型能否在持续吸收新场景信息的同时，让特征记忆始终保持固定大小？"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "苹果LensVLM：长上下文压缩成图片，模型边看边「放大」",
       "url": "https://www.51cto.com/article/858254.html",
       "hot": "LensVLM 的核心，是让模型在阅读压缩内容时，仍能按需查阅原文。模型先浏览全篇，再把阅读预算用在当前问题需要的页面上。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "ACL 2026｜MMSearch-R1：让多模态模型学会「该搜就搜」，代价是什么？",
       "url": "https://www.51cto.com/article/858253.html",
       "hot": "这篇论文值得关注的地方，不只是“搜索调用少了”，而是它展示了如何用奖励和数据共同塑造搜索行为。但读到成本分析时，还要追问一句：少搜省下来的开销，是否抵得上模型为了做决策而多花的计算？"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "清华提出Jev-LDE：ICL示例只改一次，1-shot平均准确率就能暴涨",
       "url": "https://www.51cto.com/article/858252.html",
       "hot": "清华大学自动化系研究者提出了 Local Demonstration Editing（LDE），并训练了一个小型编辑模型 Jev-LDE。它不负责最终答题，而是在目标 LLM 推理前，对已经检索出的 demonstration set 做一次编辑，只允许 Keep、Delete 或 Replace 三种操作。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Anthropic震撼研究：AI竟能通过电视盒子自我复制",
       "url": "https://www.51cto.com/article/858251.html",
       "hot": "Anthropic 的前沿红队发布了一项新研究，探讨 AI 能否像计算机病毒一样，在不同设备之间自主复制、运行，甚至不断传播。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "开源文档解析MinerU从3.0到4.0：统一文档模型、API接口、本地文档库和更友好的Agent阅读支持",
       "url": "https://www.51cto.com/article/858250.html",
       "hot": "在AI应用特别是 ​​#RAG知识库​​ 开发中 ​​#文档解析​​ 是比较重要的前置任务，​​#MinerU​​ 是其中比较主流的项目之一，它主要负责把将PDF、Office文件等复杂文档转换为 LLM 可直接使用的 Markdown/JSON格式。"
-    },
-    {
-      "rank": 10,
-      "title": "Agent一直在行动，任务为何没有进展？PoS识别并打破Belief Trapping",
-      "url": "https://www.51cto.com/article/858249.html",
-      "hot": "研究团队提出 PoS（Progression of States）。它持续维护显式信念状态，记录当前世界与未解决要求。"
     }
   ]
 }
