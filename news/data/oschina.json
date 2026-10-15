@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-15T05:13:33+00:00",
+  "updated_at": "2026-10-15T09:53:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "苹果上线「Switch to Safari」广告页，对着 Chrome 一项项比",
+      "url": "https://www.oschina.net/news/503038/apple-switch-to-safari",
+      "hot": "Thu, 15 Oct 2026 16:29:10 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "腾讯评估研究团队的“Agent 舰队”被钓出来了",
+      "url": "https://www.oschina.net/news/503037/swarmcha-se-chinese-agent-fleet-full-report",
+      "hot": "Thu, 15 Oct 2026 15:48:52 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "NetBSD 收到创纪录捐赠，12 万美元 ——「AI 越火热，越想躲 AI」",
+      "url": "https://www.oschina.net/news/503036/netbsd-may-have-found-a-new-role-the-ai-free-foss-os",
+      "hot": "Thu, 15 Oct 2026 14:23:20 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "阶跃 Step 5 Preview 权重开放，600B 稀疏 MoE、面向长程 Agent 任务设计",
+      "url": "https://www.oschina.net/news/503035/stepfun-ai-step-5-preview",
+      "hot": "Thu, 15 Oct 2026 14:12:35 +0800"
+    },
+    {
+      "rank": 5,
       "title": "被字节起诉判赔 50 万的“投毒”实习生，转身融了 3000 万美元、还试图洗白？",
       "url": "https://www.oschina.net/news/503032",
       "hot": "Thu, 15 Oct 2026 11:40:20 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "AI 编程工具 OpenCode 2.0 正式发布，能让模型写脚本调度工具",
       "url": "https://www.oschina.net/news/503031/opencode-2-0",
       "hot": "Thu, 15 Oct 2026 10:41:45 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "ArtCraft 全系如意玲珑版上架商店！",
       "url": "https://www.oschina.net/news/503030",
       "hot": "Thu, 15 Oct 2026 10:41:21 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "UJCMS 13.1.4 发布，页面可视化编辑来了",
       "url": "https://www.oschina.net/news/503026",
       "hot": "Thu, 15 Oct 2026 09:30:10 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "Jync v1.7.3 — 一键升级与版本检查双通道",
       "url": "https://www.oschina.net/news/503025",
       "hot": "Thu, 15 Oct 2026 09:22:25 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "novel-plus v5.4.0 发布，原创文学 CMS 系统",
       "url": "https://www.oschina.net/news/503024",
       "hot": "Thu, 15 Oct 2026 07:46:57 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "covo-agent v1.1.0 发布：新增 cyber 安全模式，自主侦察验证与证据留存",
-      "url": "https://www.oschina.net/news/503023",
-      "hot": "Wed, 14 Oct 2026 22:11:18 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Jync v1.7.2 Oracle 目标端兼容性加固",
-      "url": "https://www.oschina.net/news/503022",
-      "hot": "Wed, 14 Oct 2026 16:55:06 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "ToolForge v0.1.9 发布：键鼠统计、Excel 查看器、PDF OCR、SVG 转换等功能上线",
-      "url": "https://www.oschina.net/news/503021",
-      "hot": "Wed, 14 Oct 2026 16:35:16 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Mailez v1.0.2 发布：多签名支持、导航优化与安全加固",
-      "url": "https://www.oschina.net/news/503018",
-      "hot": "Wed, 14 Oct 2026 15:06:30 +0800"
     }
   ]
 }
