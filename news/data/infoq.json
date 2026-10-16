@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-16T06:24:02+00:00",
+  "updated_at": "2026-10-16T11:39:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "聚焦 AI 场景落地与 FDE 创新，2026 人工智能产业大会专项活动在济南举行",
+      "url": "https://www.infoq.cn/article/1XtKjZ1OCyrYTCmb4Zkb?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 16 Oct 2026 17:45:51 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "生产级大模型平台工程实战手册",
+      "url": "https://www.infoq.cn/article/xQLd004RGWrzFhwqBOyC?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 16 Oct 2026 17:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "AI 生成的代码，怎么才能进得了工程体系？",
+      "url": "https://www.infoq.cn/article/8iKz8xNQvxDfeuxH1QLA?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 16 Oct 2026 16:56:30 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "范式智能联合睿思智联推出开源一站式生产级AI部署平台 “模域ModelSphere”",
+      "url": "https://www.infoq.cn/article/VZPlIIdGRg062mgwJe5y?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 16 Oct 2026 16:38:02 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "Cloudflare 计划推出公共证书颁发机构，用于签发量子安全的 TLS 证书",
+      "url": "https://www.infoq.cn/article/CoGZq3xgQhZI4rBH8pjA?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 16 Oct 2026 15:41:00 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "谷歌的 Android 安全状态库支持组件级安全校验",
+      "url": "https://www.infoq.cn/article/yZh3MeRrBa7IbsB1PrUp?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 16 Oct 2026 14:17:00 GMT"
+    },
+    {
+      "rank": 7,
       "title": "Pi 抛出全新 Agent Harness，还把自己骂了一年的 MCP 装进了核心",
       "url": "https://www.infoq.cn/article/hQOHf1ZXoBs7uMpWJQss?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 11:53:14 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Linus用Claude Code改Linux内核，大神也没兜住代码里的Bug",
       "url": "https://www.infoq.cn/article/hRw4BZQQUW14sqYMo5F6?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 11:47:14 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "Pizza Bot：开源的后台 AI 智能体收件箱",
       "url": "https://www.infoq.cn/article/aMgWFmwZ2HoZDtw1g0MQ?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 11:06:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "AI 写完代码，谁来验证？手淘 TEKO “写—验—修”自主闭环的工程实践｜QCon上海",
       "url": "https://www.infoq.cn/article/t3XbHewuN37fsodaprUC?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "GitLab 漏洞遭利用，可实现未认证数据外泄",
-      "url": "https://www.infoq.cn/article/DfJZA7hp0OhKMpaAIfG0?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 16 Oct 2026 09:16:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "拍照和翻译救不了AI眼镜？千问2218元起推新硬件，要抢现实世界里的上下文",
-      "url": "https://www.infoq.cn/article/wMMAbsA4UOtYlAl1fH4T?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 15 Oct 2026 23:06:01 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "阶跃星辰开放 Step 5 Preview 权重：长程 Agent 的竞争，延伸到上下文管理与训练系统",
-      "url": "https://www.infoq.cn/article/EwqsJX6f03ODRac6Kk4c?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 15 Oct 2026 20:09:59 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "蚂蚁百灵开源 560B 模型 Ling-3.0-flash：0.19 美元搞定复杂工作流",
-      "url": "https://www.infoq.cn/article/SxQO3Aw6JCTgNMTGPPE8?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 15 Oct 2026 19:33:53 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "国产 GPU 越来越多，为什么反而更难用？",
-      "url": "https://www.infoq.cn/article/pkyTD9OWfpU7QvIbLX2j?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 15 Oct 2026 19:25:28 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "黄仁勋谈中国 AI 公司：算力很缺，但他们就是在拼命把事情做成",
-      "url": "https://www.infoq.cn/article/HC8SAgaZmHc6sfwp9gc9?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 15 Oct 2026 19:19:06 GMT"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-16T06:23:37+00:00",
+  "updated_at": "2026-10-16T11:39:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "信息抽取的上限，在字段定义时就定了：4 份企业文档实测 AI Agent 与 Scriber",
       "url": "https://blog.csdn.net/Dovis5884/article/details/168018660",
-      "hot": "21277"
+      "hot": "20414"
     },
     {
       "rank": 2,
-      "title": "Spring AI + Qwen3.8：AI助手生成周报实战，从工作事项到人工确认卡",
-      "url": "https://blog.csdn.net/zhouzhongyan/article/details/167589742",
-      "hot": "14543"
+      "title": "Agent 事件驱动架构：从轮询到事件触发的架构升级",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/167811005",
+      "hot": "13667"
     },
     {
       "rank": 3,
-      "title": "Agent 事件驱动架构：从轮询到事件触发的架构升级",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/167811005",
-      "hot": "11793"
+      "title": "Spring AI + Qwen3.8：AI助手生成周报实战，从工作事项到人工确认卡",
+      "url": "https://blog.csdn.net/zhouzhongyan/article/details/167589742",
+      "hot": "12095"
     },
     {
       "rank": 4,
       "title": "【AI】为什么和 AI 聊久了，它就开始忘事？",
       "url": "https://blog.csdn.net/2501_91731683/article/details/168018570",
-      "hot": "10593"
+      "hot": "12021"
     },
     {
       "rank": 5,
-      "title": "在线PDF不放心？我把BentoPDF装进极空间，文件留在浏览器里处理",
-      "url": "https://blog.csdn.net/2501_91062530/article/details/167991755",
-      "hot": "10035"
+      "title": "260+异构同步链路实战：KFS如何实现DDL语义化自动翻译，破解CDC同步痛点",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/167921343",
+      "hot": "10438"
     },
     {
       "rank": 6,
-      "title": "260+异构同步链路实战：KFS如何实现DDL语义化自动翻译，破解CDC同步痛点",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/167921343",
-      "hot": "8998"
+      "title": "AI 生成的 SQL 上线前怎么审核？结果、执行计划与权限检查清单",
+      "url": "https://blog.csdn.net/augen1355/article/details/168027832",
+      "hot": "9042"
     },
     {
       "rank": 7,
-      "title": "【计算几何 排样】libnest2d的放置器",
-      "url": "https://blog.csdn.net/he_zhidan/article/details/166848774",
-      "hot": "8294"
+      "title": "在线PDF不放心？我把BentoPDF装进极空间，文件留在浏览器里处理",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/167991755",
+      "hot": "7969"
     },
     {
       "rank": 8,
-      "title": "BPE 是怎么把一个中文词切碎的",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/168015099",
-      "hot": "7644"
+      "title": "1956亿行时序数据只存“1/45“？聊聊金仓时序数据库背后的压缩与写入硬功夫",
+      "url": "https://blog.csdn.net/2401_86326742/article/details/167919137",
+      "hot": "6850"
     },
     {
       "rank": 9,
-      "title": "极空间开启SSH后能做什么？我把本地终端、Docker权限和远程管理入口全跑通了",
-      "url": "https://blog.csdn.net/Z_oioihoii/article/details/168018934",
-      "hot": "7432"
+      "title": "【计算几何 排样】libnest2d的放置器",
+      "url": "https://blog.csdn.net/he_zhidan/article/details/166848774",
+      "hot": "6743"
     },
     {
       "rank": 10,
-      "title": "AI 生成的 SQL 上线前怎么审核？结果、执行计划与权限检查清单",
-      "url": "https://blog.csdn.net/augen1355/article/details/168027832",
-      "hot": "7128"
+      "title": "时序数据库是什么？2026 年五款工业时序数据库横评与场景解析",
+      "url": "https://blog.csdn.net/lbbxmx111/article/details/167919914",
+      "hot": "6683"
     }
   ]
 }
