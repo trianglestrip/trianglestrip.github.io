@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-16T15:31:10+00:00",
+  "updated_at": "2026-10-16T18:57:14+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,27 +30,27 @@
     },
     {
       "rank": 5,
-      "title": "神探之痕迹‎",
-      "url": "https://movie.douban.com/subject/37247814/",
-      "hot": "评分 6.8"
-    },
-    {
-      "rank": 6,
       "title": "余红旧事",
       "url": "https://movie.douban.com/subject/37560173/",
       "hot": "评分 7.8"
     },
     {
-      "rank": 7,
-      "title": "欢迎来龙餐馆",
-      "url": "https://movie.douban.com/subject/35811064/",
-      "hot": "评分 8.7"
+      "rank": 6,
+      "title": "神探之痕迹‎",
+      "url": "https://movie.douban.com/subject/37247814/",
+      "hot": "评分 6.8"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "我不是大师",
       "url": "https://movie.douban.com/subject/37297001/",
       "hot": "评分 7.3"
+    },
+    {
+      "rank": 8,
+      "title": "欢迎来龙餐馆",
+      "url": "https://movie.douban.com/subject/35811064/",
+      "hot": "评分 8.7"
     },
     {
       "rank": 9,
