@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-16T06:24:12+00:00",
+  "updated_at": "2026-10-16T15:31:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AutoDev: Automated AI-Driven Development",
       "url": "https://huggingface.co/papers/2403.08299",
-      "hot": "26"
+      "hot": "27"
     },
     {
       "rank": 2,
@@ -20,7 +20,7 @@
       "rank": 3,
       "title": "Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation",
       "url": "https://huggingface.co/papers/2610.20571",
-      "hot": "333"
+      "hot": "339"
     },
     {
       "rank": 4,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "Player-1: Learning to Play from Synthetic Experience",
-      "url": "https://huggingface.co/papers/2610.20584",
-      "hot": "285"
-    },
-    {
-      "rank": 7,
-      "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
-      "url": "https://huggingface.co/papers/2610.08699",
-      "hot": "116"
-    },
-    {
-      "rank": 8,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
       "hot": "93"
     },
     {
+      "rank": 7,
+      "title": "Player-1: Learning to Play from Synthetic Experience",
+      "url": "https://huggingface.co/papers/2610.20584",
+      "hot": "330"
+    },
+    {
+      "rank": 8,
+      "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
+      "url": "https://huggingface.co/papers/2610.08699",
+      "hot": "116"
+    },
+    {
       "rank": 9,
-      "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
-      "url": "https://huggingface.co/papers/2609.33757",
-      "hot": "237"
+      "title": "Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes",
+      "url": "https://huggingface.co/papers/2610.18356",
+      "hot": "120"
     },
     {
       "rank": 10,
-      "title": "Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes",
-      "url": "https://huggingface.co/papers/2610.18356",
-      "hot": "119"
+      "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
+      "url": "https://huggingface.co/papers/2609.33757",
+      "hot": "237"
     }
   ]
 }
