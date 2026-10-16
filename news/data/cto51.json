@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-15T23:49:41+00:00",
+  "updated_at": "2026-10-16T06:23:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "给 HarmonyOS 6 柱状图加入场动画：一根一根蹦出来",
-      "url": "https://ost.51cto.com/posts/59729",
-      "hot": "前言读一张柱状图，视线往往从左边走到右边。让柱子顺着这个方向依次出现，页面打开时就多了一点节奏。七根柱子不用等前一根彻底结束，稍微..."
+      "title": "HarmonyOS 7 适老化实战：大字阅读应用从字号、布局到听读的完整改造",
+      "url": "https://ost.51cto.com/posts/59811",
+      "hot": "家里的长辈用手机读新闻，最常见的抱怨是三句话：字太小、按不准、看一会儿眼睛就累。这三句话对应三个可以动手改造的层面：字号系统、点击..."
     },
     {
       "rank": 2,
-      "title": "DeepSeek服务器全球宕机！神秘Harness账号同时现身",
-      "url": "https://www.51cto.com/article/858265.html",
-      "hot": "目前没有任何官方证据。但架不住时间点确实有点巧。一边是网页和API突然集体罢工，一边是Harness账号悄悄把B站主页搭了起来。"
+      "title": "别让运维孤军奋战做 AIOps：跨团队数据协作才是落地核心",
+      "url": "https://www.51cto.com/article/858387.html",
+      "hot": "AIOps 不是运维工具的升级，而是一套跨团队的数据协作机制，只是由运维部门来主导推进。"
     },
     {
       "rank": 3,
-      "title": "鸿蒙ArkUI水波纹动画开发：从零打造数字键盘交互特效",
-      "url": "https://ost.51cto.com/posts/59686",
-      "hot": "鸿蒙ArkUI水波纹动画开发：从零打造数字键盘交互特效在移动应用界面设计中，水波纹（Ripple）动效是一种经典的视觉反馈方式，能够为用户触..."
+      "title": "ArkUI（TS）开发实战：手把手教你实现下拉选择菜单",
+      "url": "https://ost.51cto.com/posts/59802",
+      "hot": "ArkUI（TS）开发实战：手把手教你实现下拉选择菜单前言在移动应用开发中，下拉选择菜单（SelectDropdown）是极其常见的交互组件，广泛应用..."
     },
     {
       "rank": 4,
-      "title": "你的内部知识库，就是 LLM 最大的攻击面：用 STRIDE 给上下文感知 AI 做一次完整威胁建模",
-      "url": "https://www.51cto.com/article/858258.html",
-      "hot": "如何用 STRIDE 方法，给一个上下文感知的 AI 流水线做一次完整的威胁建模。"
+      "title": "八大平台、十项任务、一支 “智能体军团”，账单到底长什么样？",
+      "url": "https://www.51cto.com/article/858385.html",
+      "hot": "智能体最贵的是 token，而 token 的大头，是那些你根本没注意到的上下文堆叠。"
     },
     {
       "rank": 5,
-      "title": "当视频模型回到原点，它还认得这里吗？Honeycomb用恒定大小记忆守住长视频的一致性",
-      "url": "https://www.51cto.com/article/858255.html",
-      "hot": "来自哈佛大学、麻省理工学院、新加坡国立大学与 MIT IBM Watson AI Lab 的研究团队提出 Honeycomb，试图回答一个更根本的问题：视频世界模型能否在持续吸收新场景信息的同时，让特征记忆始终保持固定大小？"
+      "title": "React 开发：内置高阶 Hooks 实战精讲，吃透性能优化核心",
+      "url": "https://www.51cto.com/article/858323.html",
+      "hot": "本文从生产实战角度出发，系统拆解 React 内置高阶 Hooks 的核心原理和性能优化方案，帮你吃透 React 性能优化的核心。"
     },
     {
       "rank": 6,
-      "title": "苹果LensVLM：长上下文压缩成图片，模型边看边「放大」",
-      "url": "https://www.51cto.com/article/858254.html",
-      "hot": "LensVLM 的核心，是让模型在阅读压缩内容时，仍能按需查阅原文。模型先浏览全篇，再把阅读预算用在当前问题需要的页面上。"
+      "title": "神经多样性意识的多模态情感计算架构：一种面向神经发育评估的可审计推理体系",
+      "url": "https://www.51cto.com/article/858383.html",
+      "hot": "个体基线的采集成本是未来的挑战，它需要长期观察，而不是一次性测量。情境标准化也是难题，不同任务、环境与支持策略会导致行为的巨大差异。子群体校准需要大量样本，而神经发育群体本身具有高度异质性。"
     },
     {
       "rank": 7,
-      "title": "ACL 2026｜MMSearch-R1：让多模态模型学会「该搜就搜」，代价是什么？",
-      "url": "https://www.51cto.com/article/858253.html",
-      "hot": "这篇论文值得关注的地方，不只是“搜索调用少了”，而是它展示了如何用奖励和数据共同塑造搜索行为。但读到成本分析时，还要追问一句：少搜省下来的开销，是否抵得上模型为了做决策而多花的计算？"
+      "title": "神经网络可解释性被AI解决了？90%神经元只有一个功能",
+      "url": "https://www.51cto.com/article/858381.html",
+      "hot": "本周五，OpenAI 可解释团队创建人 Nick Cammarata 的一篇超长文章震动了 AI 圈。"
     },
     {
       "rank": 8,
-      "title": "清华提出Jev-LDE：ICL示例只改一次，1-shot平均准确率就能暴涨",
-      "url": "https://www.51cto.com/article/858252.html",
-      "hot": "清华大学自动化系研究者提出了 Local Demonstration Editing（LDE），并训练了一个小型编辑模型 Jev-LDE。它不负责最终答题，而是在目标 LLM 推理前，对已经检索出的 demonstration set 做一次编辑，只允许 Keep、Delete 或 Replace 三种操作。"
+      "title": "一边Demo惊艳，一边生产环境翻车：AI智能体的\"伪强大\"被伯克利撕开了",
+      "url": "https://www.51cto.com/article/858380.html",
+      "hot": "对于正在做智能体产品的团队，ALE 给出了清晰的优先级：先补 Eyes 和 Body，实现真正的 GUI 与 CLI 统一编排；强化长周期上下文管理和错误恢复；把“可验证交付物生成”做成核心能力，而不是只优化对话体验；产品路线图里明确对标 ALE 这类真实工作流基准的阶段目标。"
     },
     {
       "rank": 9,
-      "title": "Anthropic震撼研究：AI竟能通过电视盒子自我复制",
-      "url": "https://www.51cto.com/article/858251.html",
-      "hot": "Anthropic 的前沿红队发布了一项新研究，探讨 AI 能否像计算机病毒一样，在不同设备之间自主复制、运行，甚至不断传播。"
+      "title": "从单服务到跨应用工作流：小红书 AllSpark 提出 CompoWorld，探索组合式环境扩展",
+      "url": "https://www.51cto.com/article/858378.html",
+      "hot": "小红书AllSpark团队提出CompoWorld，通过组合可复用服务，扩展通用 Agent 的训练环境与任务空间。团队构建了448 个服务、10,130 个工具，并使用 3K 条监督微调轨迹和 1K 个强化学习任务训练 Qwen3.6-35B-A3B。"
     },
     {
       "rank": 10,
-      "title": "开源文档解析MinerU从3.0到4.0：统一文档模型、API接口、本地文档库和更友好的Agent阅读支持",
-      "url": "https://www.51cto.com/article/858250.html",
-      "hot": "在AI应用特别是 ​​#RAG知识库​​ 开发中 ​​#文档解析​​ 是比较重要的前置任务，​​#MinerU​​ 是其中比较主流的项目之一，它主要负责把将PDF、Office文件等复杂文档转换为 LLM 可直接使用的 Markdown/JSON格式。"
+      "title": "大模型下个范式：文本生成先写提纲，速度能快31倍",
+      "url": "https://www.51cto.com/article/858375.html",
+      "hot": "近日，斯坦福大学与 Together AI 的研究者提出了一种既不同于自回归，也不同于扩散的第三种文本生成范式。他们把 NeurIPS 2024 最佳论文 VAR 在图像上的「下一尺度预测」配方搬进文本，让模型先并行写出几句话的「概念大纲」，再逐层并行填充细节，直到还原成完整文字。"
     }
   ]
 }

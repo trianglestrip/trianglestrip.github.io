@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-15T23:49:52+00:00",
+  "updated_at": "2026-10-16T06:24:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "库克确认：国行苹果 AI 十月底上线测试版",
+      "url": "https://www.oschina.net/news/503053",
+      "hot": "Fri, 16 Oct 2026 11:50:16 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Meta 发布 Muse Spark Open：和苹果合作打造、声称是「美国目前最强开源权重模型」、 支持全模态输入",
+      "url": "https://www.oschina.net/news/503051/meta-ai-muse-spark-open",
+      "hot": "Fri, 16 Oct 2026 11:31:30 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Ubuntu 26.10 “Stonking Stingray”发布：Rust coreutils 落地、安全栈全线更新",
+      "url": "https://www.oschina.net/news/503050/ubuntu-26-10-stonking-stingray-released",
+      "hot": "Fri, 16 Oct 2026 11:19:17 +0800"
+    },
+    {
+      "rank": 4,
+      "title": ":fire::fire:开源接口平台 v6.3.0 发布，支持 i18n",
+      "url": "https://www.oschina.net/news/503049",
+      "hot": "Fri, 16 Oct 2026 11:05:13 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "字节 Seed 成立“大模型安全与对齐”部门，面向全球招 10 位研究员",
+      "url": "https://www.oschina.net/news/503048/seed-alignment-preparedness-team-looking-for-global-talents",
+      "hot": "Fri, 16 Oct 2026 11:00:04 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "1024 程序员节・鸿蒙全攻略 | 又一年，我们并肩执笔、共创共生",
+      "url": "https://www.oschina.net/news/503046",
+      "hot": "Fri, 16 Oct 2026 10:18:54 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "SunnyUI V3.9.9 发布啦，C# WinForm 开源控件库！",
+      "url": "https://www.oschina.net/news/503045",
+      "hot": "Fri, 16 Oct 2026 09:35:39 +0800"
+    },
+    {
+      "rank": 8,
       "title": "共建共享，智联丝路——开源中国与吉尔吉斯斯坦-土耳其玛纳斯大学签署《中国—中亚人工智能共建共享合作备忘录》",
       "url": "https://www.oschina.net/news/503042",
       "hot": "Thu, 15 Oct 2026 20:10:31 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "TypeSafe 发布 Jev 1.14，支持看图做决策、以及更长上下文",
       "url": "https://www.oschina.net/news/503041/typesafe-ai-jev-1-14",
       "hot": "Thu, 15 Oct 2026 19:27:55 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "DeepSeek 服务故障近 5 小时，官方把用户一周的 API 消费全退了",
       "url": "https://www.oschina.net/news/503040",
       "hot": "Thu, 15 Oct 2026 18:38:53 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "苹果上线「Switch to Safari」广告页，对着 Chrome 一项项比",
-      "url": "https://www.oschina.net/news/503038/apple-switch-to-safari",
-      "hot": "Thu, 15 Oct 2026 16:29:10 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "腾讯评估研究团队的“Agent 舰队”被钓出来了",
-      "url": "https://www.oschina.net/news/503037/swarmcha-se-chinese-agent-fleet-full-report",
-      "hot": "Thu, 15 Oct 2026 15:48:52 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "NetBSD 收到创纪录捐赠，12 万美元 ——「AI 越火热，越想躲 AI」",
-      "url": "https://www.oschina.net/news/503036/netbsd-may-have-found-a-new-role-the-ai-free-foss-os",
-      "hot": "Thu, 15 Oct 2026 14:23:20 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "阶跃 Step 5 Preview 权重开放，600B 稀疏 MoE、面向长程 Agent 任务设计",
-      "url": "https://www.oschina.net/news/503035/stepfun-ai-step-5-preview",
-      "hot": "Thu, 15 Oct 2026 14:12:35 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "被字节起诉判赔 50 万的“投毒”实习生，转身融了 3000 万美元、还试图洗白？",
-      "url": "https://www.oschina.net/news/503032",
-      "hot": "Thu, 15 Oct 2026 11:40:20 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "AI 编程工具 OpenCode 2.0 正式发布，能让模型写脚本调度工具",
-      "url": "https://www.oschina.net/news/503031/opencode-2-0",
-      "hot": "Thu, 15 Oct 2026 10:41:45 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "ArtCraft 全系如意玲珑版上架商店！",
-      "url": "https://www.oschina.net/news/503030",
-      "hot": "Thu, 15 Oct 2026 10:41:21 +0800"
     }
   ]
 }

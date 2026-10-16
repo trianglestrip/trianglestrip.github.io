@@ -1,68 +1,68 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-10-15T21:37:16+00:00",
+  "updated_at": "2026-10-16T06:23:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Navige",
+      "url": "https://www.producthunt.com/products/navige",
+      "hot": "2026-10-13T23:29:41-07:00"
+    },
+    {
+      "rank": 2,
+      "title": "GLM-Legal",
+      "url": "https://www.producthunt.com/products/z-ai",
+      "hot": "2026-10-12T09:24:12-07:00"
+    },
+    {
+      "rank": 3,
       "title": "Rushilo",
       "url": "https://www.producthunt.com/products/rushilo",
       "hot": "2026-10-14T08:35:56-07:00"
     },
     {
-      "rank": 2,
-      "title": "Audimate",
-      "url": "https://www.producthunt.com/products/audimate",
-      "hot": "2026-10-11T23:24:43-07:00"
-    },
-    {
-      "rank": 3,
-      "title": "Atticus",
-      "url": "https://www.producthunt.com/products/atticus",
-      "hot": "2026-10-14T14:14:44-07:00"
-    },
-    {
       "rank": 4,
-      "title": "Lleverage",
-      "url": "https://www.producthunt.com/products/lleverage",
-      "hot": "2026-10-13T08:53:16-07:00"
-    },
-    {
-      "rank": 5,
       "title": "Audio Lip Sync Pro for Blender",
       "url": "https://www.producthunt.com/products/audio-lip-sync-pro-for-blender",
       "hot": "2026-10-14T22:09:17-07:00"
     },
     {
-      "rank": 6,
-      "title": "NestJS Observe",
-      "url": "https://www.producthunt.com/products/nestjs-observe",
-      "hot": "2026-10-14T01:58:30-07:00"
-    },
-    {
-      "rank": 7,
+      "rank": 5,
       "title": "CmdRound",
       "url": "https://www.producthunt.com/products/cmdround",
       "hot": "2026-10-14T03:18:29-07:00"
     },
     {
+      "rank": 6,
+      "title": "Dreamscale Labs",
+      "url": "https://www.producthunt.com/products/dreamscale-labs",
+      "hot": "2026-10-12T23:27:22-07:00"
+    },
+    {
+      "rank": 7,
+      "title": "NestJS Observe",
+      "url": "https://www.producthunt.com/products/nestjs-observe",
+      "hot": "2026-10-14T01:58:30-07:00"
+    },
+    {
       "rank": 8,
-      "title": "Basedash Connector gallery",
-      "url": "https://www.producthunt.com/products/basedash",
-      "hot": "2026-10-14T14:32:02-07:00"
+      "title": "Polylane Impact Analysis",
+      "url": "https://www.producthunt.com/products/polylane",
+      "hot": "2026-10-13T12:04:38-07:00"
     },
     {
       "rank": 9,
-      "title": "CodeCrab",
-      "url": "https://www.producthunt.com/products/codecrab",
-      "hot": "2026-10-12T19:12:58-07:00"
+      "title": "Actually Asked",
+      "url": "https://www.producthunt.com/products/actually-asked",
+      "hot": "2026-10-14T08:36:37-07:00"
     },
     {
       "rank": 10,
-      "title": "CinemaLut",
-      "url": "https://www.producthunt.com/products/cinemalut",
-      "hot": "2026-10-14T14:20:59-07:00"
+      "title": "Backdrop",
+      "url": "https://www.producthunt.com/products/backdrop",
+      "hot": "2026-10-12T22:14:44-07:00"
     }
   ]
 }
