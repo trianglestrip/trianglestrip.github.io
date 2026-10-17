@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-17T02:34:18+00:00",
+  "updated_at": "2026-10-17T07:10:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "ToolForge v0.1.10 发布：支持在线安装插件，WASM 插件生态正式起步！",
+      "url": "https://www.oschina.net/news/503069/toolforge-0-1-10-released",
+      "hot": "Sat, 17 Oct 2026 11:15:55 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Jync v1.7.5 AI 配置接入本地模型（Ollama 预设 + 深度思考档位）",
+      "url": "https://www.oschina.net/news/503068/jync-1-7-5-released",
+      "hot": "Fri, 16 Oct 2026 23:54:00 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "划词 AI 工具拾趣 Magpie Release v0.1.14，重磅发布 Windows 版",
+      "url": "https://www.oschina.net/news/503067/magpie-0-1-14-released-windows-ver",
+      "hot": "Fri, 16 Oct 2026 22:25:28 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
+      "url": "https://www.oschina.net/news/503066/nocobase-updated",
+      "hot": "Fri, 16 Oct 2026 22:09:13 +0800"
+    },
+    {
+      "rank": 5,
       "title": "GOTC 系列活动 || 在 AI Native 时代，招募 200 位少年一起来创造！",
       "url": "https://www.oschina.net/news/503065",
       "hot": "Fri, 16 Oct 2026 19:50:05 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "从\"会用工具\"到\"能创造工具\"，中国—中亚\"校长π圆桌\"，共话AI时代科技人才培养",
       "url": "https://www.oschina.net/news/503064",
       "hot": "Fri, 16 Oct 2026 19:22:57 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "邀请函 | Agentic Infra 操作系统大会 &amp; openEuler Summit 2026",
       "url": "https://www.oschina.net/news/503062",
       "hot": "Fri, 16 Oct 2026 18:01:49 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "🔥🔥GOTC 2026 全球开源技术峰会，这次玩点不一样的！",
       "url": "https://www.oschina.net/news/503061",
       "hot": "Fri, 16 Oct 2026 17:24:43 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "【AI 智能运维平台】本周更新：AI 对话搭建仪表盘，主机巡检打通执行、报告与通知",
       "url": "https://www.oschina.net/news/503059",
       "hot": "Fri, 16 Oct 2026 16:10:57 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "SSL免费申请，自动部署",
       "url": "https://www.oschina.net/news/503057",
       "hot": "Fri, 16 Oct 2026 13:42:05 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "库克确认：国行苹果 AI 十月底上线测试版",
-      "url": "https://www.oschina.net/news/503053",
-      "hot": "Fri, 16 Oct 2026 11:50:16 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Meta 发布 Muse Spark Open：和苹果合作打造、声称是「美国目前最强开源权重模型」、 支持全模态输入",
-      "url": "https://www.oschina.net/news/503051/meta-ai-muse-spark-open",
-      "hot": "Fri, 16 Oct 2026 11:31:30 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Ubuntu 26.10 “Stonking Stingray”发布：Rust coreutils 落地、安全栈全线更新",
-      "url": "https://www.oschina.net/news/503050/ubuntu-26-10-stonking-stingray-released",
-      "hot": "Fri, 16 Oct 2026 11:19:17 +0800"
-    },
-    {
-      "rank": 10,
-      "title": ":fire::fire:开源接口平台 v6.3.0 发布，支持 i18n",
-      "url": "https://www.oschina.net/news/503049",
-      "hot": "Fri, 16 Oct 2026 11:05:13 +0800"
     }
   ]
 }
