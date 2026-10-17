@@ -1,68 +1,68 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-10-17T14:22:24+00:00",
+  "updated_at": "2026-10-17T21:35:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Caldera",
-      "url": "https://www.producthunt.com/products/caldera",
-      "hot": "2026-10-12T12:38:09-07:00"
-    },
-    {
-      "rank": 2,
-      "title": "NitroStack",
-      "url": "https://www.producthunt.com/products/nitrostack",
-      "hot": "2026-10-08T08:53:30-07:00"
-    },
-    {
-      "rank": 3,
-      "title": "Korinotch",
-      "url": "https://www.producthunt.com/products/korinotch",
-      "hot": "2026-10-11T10:41:58-07:00"
-    },
-    {
-      "rank": 4,
-      "title": "Parrot",
-      "url": "https://www.producthunt.com/products/parrot-10",
-      "hot": "2026-09-24T11:02:58-07:00"
-    },
-    {
-      "rank": 5,
-      "title": "Earnote",
-      "url": "https://www.producthunt.com/products/earnote",
-      "hot": "2026-10-08T07:46:15-07:00"
-    },
-    {
-      "rank": 6,
-      "title": "Ultracite v8",
-      "url": "https://www.producthunt.com/products/ultracite",
-      "hot": "2026-10-12T14:05:50-07:00"
-    },
-    {
-      "rank": 7,
       "title": "GPU Terminal by Context.dev",
       "url": "https://www.producthunt.com/products/context-dev",
       "hot": "2026-10-16T18:32:08-07:00"
     },
     {
-      "rank": 8,
+      "rank": 2,
+      "title": "Salience",
+      "url": "https://www.producthunt.com/products/salience",
+      "hot": "2026-10-16T20:46:40-07:00"
+    },
+    {
+      "rank": 3,
       "title": "Emochi",
       "url": "https://www.producthunt.com/products/emochi-2",
       "hot": "2026-10-16T00:43:37-07:00"
     },
     {
-      "rank": 9,
+      "rank": 4,
       "title": "Spiralens",
       "url": "https://www.producthunt.com/products/spiralens",
       "hot": "2026-10-13T01:22:09-07:00"
     },
     {
-      "rank": 10,
+      "rank": 5,
+      "title": "CrewTower Mod for Claude Code",
+      "url": "https://www.producthunt.com/products/crew-tower",
+      "hot": "2026-10-14T14:15:16-07:00"
+    },
+    {
+      "rank": 6,
+      "title": "Parrot",
+      "url": "https://www.producthunt.com/products/parrot-10",
+      "hot": "2026-09-24T11:02:58-07:00"
+    },
+    {
+      "rank": 7,
+      "title": "Korinotch",
+      "url": "https://www.producthunt.com/products/korinotch",
+      "hot": "2026-10-11T10:41:58-07:00"
+    },
+    {
+      "rank": 8,
       "title": "LooGo",
       "url": "https://www.producthunt.com/products/loogo",
       "hot": "2026-10-11T09:02:08-07:00"
+    },
+    {
+      "rank": 9,
+      "title": "Earnote",
+      "url": "https://www.producthunt.com/products/earnote",
+      "hot": "2026-10-08T07:46:15-07:00"
+    },
+    {
+      "rank": 10,
+      "title": "Unfenced",
+      "url": "https://www.producthunt.com/products/unfenced",
+      "hot": "2026-10-13T14:16:19-07:00"
     }
   ]
 }
