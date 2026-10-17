@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-17T07:10:38+00:00",
+  "updated_at": "2026-10-17T14:23:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
-      "hot": "2526"
+      "hot": "2564"
     },
     {
       "rank": 2,
       "title": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "hot": "1844"
+      "hot": "1870"
     },
     {
       "rank": 3,
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-      "hot": "859"
+      "hot": "880"
     },
     {
       "rank": 4,
-      "title": "fishaudio/drama-3",
-      "url": "https://huggingface.co/fishaudio/drama-3",
-      "hot": "566"
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "hot": "606"
     },
     {
       "rank": 5,
-      "title": "Qwen/Qwen-Image-2.1-Turbo",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
-      "hot": "948"
+      "title": "fishaudio/drama-3",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "hot": "589"
     },
     {
       "rank": 6,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "8115"
+      "title": "black-forest-labs/flux-3-image-klein-comfy",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "hot": "570"
     },
     {
       "rank": 7,
-      "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "hot": "4451"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "8163"
     },
     {
       "rank": 8,
       "title": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-      "hot": "458"
+      "hot": "474"
     },
     {
       "rank": 9,
-      "title": "LiquidAI/LFM2.5-24B-A2B",
-      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
-      "hot": "436"
+      "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "hot": "4471"
     },
     {
       "rank": 10,
-      "title": "black-forest-labs/flux-3-image-klein-comfy",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "hot": "493"
+      "title": "LiquidAI/LFM2.5-24B-A2B",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+      "hot": "443"
     }
   ]
 }
