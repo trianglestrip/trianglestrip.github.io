@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-17T07:10:24+00:00",
+  "updated_at": "2026-10-17T11:34:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Ultramarine 1 Flash",
-      "url": "https://www.paperinstruments.com/ultramarine",
-      "hot": "177"
+      "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+      "hot": "202"
     },
     {
       "rank": 2,
-      "title": "Tesla Roadster",
-      "url": "https://www.tesla.com/roadster",
-      "hot": "1353"
+      "title": "Ultramarine 1 Flash",
+      "url": "https://www.paperinstruments.com/ultramarine",
+      "hot": "262"
     },
     {
       "rank": 3,
-      "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
-      "url": "https://llmspeed.dev/",
-      "hot": "21"
+      "title": "Tesla Roadster",
+      "url": "https://www.tesla.com/roadster",
+      "hot": "1458"
     },
     {
       "rank": 4,
-      "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
-      "url": "https://github.com/cobanov/PS5LM",
-      "hot": "267"
+      "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+      "url": "https://llmspeed.dev/",
+      "hot": "98"
     },
     {
       "rank": 5,
-      "title": "Claude reveals ECDSA curve origins",
-      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-      "hot": "820"
+      "title": "DeepSeek-v4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "hot": "201"
     },
     {
       "rank": 6,
-      "title": "You could have invented transformers from memory",
-      "url": "https://alexwang.ai/posts/associative-memory/",
-      "hot": "244"
+      "title": "We Still Use Paper",
+      "url": "https://humanpro.co/articles/we-still-use-paper/",
+      "hot": "12"
     },
     {
       "rank": 7,
-      "title": "California is building a $400M shield for Yosemite's most dangerous highway",
-      "url": "https://www.sfchronicle.com/california/article/yosemite-national-park-highway-140-22463847.php",
-      "hot": "32"
+      "title": "Tell HN: Remember to migrate away from .name domain",
+      "url": "https://news.ycombinator.com/item?id=50089577",
+      "hot": "59"
     },
     {
       "rank": 8,
-      "title": "FLUX 3 Image Klein",
-      "url": "https://bfl.ai/blog/flux-3-image-klein",
-      "hot": "152"
+      "title": "Intuitive concurrent programming in any language",
+      "url": "https://www.lf-lang.org/",
+      "hot": "55"
     },
     {
       "rank": 9,
-      "title": "0/1 Knapsack Problem in PyTorch",
-      "url": "https://jedrzej.maczan.pl/2025_11_21_dp_knapsack_sliding_hirschberg",
-      "hot": "8"
+      "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+      "url": "https://github.com/cobanov/PS5LM",
+      "hot": "299"
     },
     {
       "rank": 10,
-      "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
-      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
-      "hot": "302"
+      "title": "You could have invented transformers from memory",
+      "url": "https://alexwang.ai/posts/associative-memory/",
+      "hot": "318"
     }
   ]
 }
