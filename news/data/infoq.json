@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-16T23:58:16+00:00",
+  "updated_at": "2026-10-17T02:34:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "The World Is Not a Dataset - Building AI Systems That Continuously Learn from Reality｜QCon上海",
+      "url": "https://www.infoq.cn/article/JMZ6WUx4a4cVqAwhwviU?utm_source=rss&utm_medium=article",
+      "hot": "Sat, 17 Oct 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Java 近期新闻：JobRunr 9、OpenXava 8、Quarkus、LangChain4j、JNoSQL、Lathe",
+      "url": "https://www.infoq.cn/article/AF1qxLVCRls3R6MdWwBh?utm_source=rss&utm_medium=article",
+      "hot": "Sat, 17 Oct 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 3,
       "title": "聚焦 AI 场景落地与 FDE 创新，2026 人工智能产业大会专项活动在济南举行",
       "url": "https://www.infoq.cn/article/1XtKjZ1OCyrYTCmb4Zkb?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 17:45:51 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "生产级大模型平台工程实战手册",
       "url": "https://www.infoq.cn/article/xQLd004RGWrzFhwqBOyC?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 17:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "AI 生成的代码，怎么才能进得了工程体系？",
       "url": "https://www.infoq.cn/article/8iKz8xNQvxDfeuxH1QLA?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 16:56:30 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "范式智能联合睿思智联推出开源一站式生产级AI部署平台 “模域ModelSphere”",
       "url": "https://www.infoq.cn/article/VZPlIIdGRg062mgwJe5y?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 16:38:02 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "Cloudflare 计划推出公共证书颁发机构，用于签发量子安全的 TLS 证书",
       "url": "https://www.infoq.cn/article/CoGZq3xgQhZI4rBH8pjA?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 15:41:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "谷歌的 Android 安全状态库支持组件级安全校验",
       "url": "https://www.infoq.cn/article/yZh3MeRrBa7IbsB1PrUp?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 14:17:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Pi 抛出全新 Agent Harness，还把自己骂了一年的 MCP 装进了核心",
       "url": "https://www.infoq.cn/article/hQOHf1ZXoBs7uMpWJQss?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 11:53:14 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Linus用Claude Code改Linux内核，大神也没兜住代码里的Bug",
       "url": "https://www.infoq.cn/article/hRw4BZQQUW14sqYMo5F6?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 11:47:14 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Pizza Bot：开源的后台 AI 智能体收件箱",
-      "url": "https://www.infoq.cn/article/aMgWFmwZ2HoZDtw1g0MQ?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 16 Oct 2026 11:06:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "AI 写完代码，谁来验证？手淘 TEKO “写—验—修”自主闭环的工程实践｜QCon上海",
-      "url": "https://www.infoq.cn/article/t3XbHewuN37fsodaprUC?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 16 Oct 2026 10:00:00 GMT"
     }
   ]
 }
