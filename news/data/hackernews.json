@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-18T21:26:47+00:00",
+  "updated_at": "2026-10-18T23:28:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Someone behind the software",
-      "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
-      "hot": "225"
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "url": "https://arxiv.org/abs/2610.18861",
+      "hot": "133"
     },
     {
       "rank": 2,
-      "title": "Free Pascal compiler now supports dynamic packages",
-      "url": "https://www.getlazarus.org/dynamic/",
-      "hot": "67"
+      "title": "Someone behind the software",
+      "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+      "hot": "272"
     },
     {
       "rank": 3,
-      "title": "RepRapMicron",
-      "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
-      "hot": "292"
+      "title": "There's never been a better time to go into math (by: 3blue1brown) [video]",
+      "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+      "hot": "101"
     },
     {
       "rank": 4,
-      "title": "Hybrid Reasoning Agents: 35–55% fewer tokens and up to 2.6× faster inference",
-      "url": "https://arxiv.org/abs/2610.18861",
-      "hot": "21"
+      "title": "Free Pascal compiler now supports dynamic packages",
+      "url": "https://www.getlazarus.org/dynamic/",
+      "hot": "96"
     },
     {
       "rank": 5,
-      "title": "PalmOS Lemmings",
-      "url": "https://github.com/ardiri/palmos-lemmings",
-      "hot": "59"
+      "title": "RepRapMicron",
+      "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+      "hot": "317"
     },
     {
       "rank": 6,
       "title": "Dogs seem to agree with humans that 'bouba' is round and 'kiki' is spiky",
       "url": "https://www.sciencealert.com/dogs-seem-to-agree-with-humans-that-bouba-is-round-and-kiki-is-spiky",
-      "hot": "50"
+      "hot": "90"
     },
     {
       "rank": 7,
-      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-      "url": "https://api-docs.deepseek.com/guides/search/",
-      "hot": "501"
+      "title": "Show HN: WhatsApp MCP running free on Cloudflare",
+      "url": "https://github.com/finereli/whatsapp-mcp",
+      "hot": "17"
     },
     {
       "rank": 8,
-      "title": "Java sealed classes and exhaustive pattern matching",
-      "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
-      "hot": "113"
+      "title": "PalmOS Lemmings",
+      "url": "https://github.com/ardiri/palmos-lemmings",
+      "hot": "77"
     },
     {
       "rank": 9,
-      "title": "SIGSALY: Churchill's top secret hotline to the president",
-      "url": "https://www.iwm.org.uk/history/iwm/cwr/telephone",
-      "hot": "87"
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "url": "https://api-docs.deepseek.com/guides/search/",
+      "hot": "522"
     },
     {
       "rank": 10,
-      "title": "The Intel 8087 chip: floating-point addition and subtraction",
-      "url": "https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
-      "hot": "74"
+      "title": "One parser, two bugs, many routers: Exploiting Broadcom WiFi across eCos, Linux",
+      "url": "https://quentinkaiser.be/security/2026/10/16/one-parser-two-bugs/",
+      "hot": "34"
     }
   ]
 }
