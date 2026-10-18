@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-18T16:56:52+00:00",
+  "updated_at": "2026-10-18T19:06:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "macOS 15.8.2 Breaks OpenGL",
-      "url": "https://developer.apple.com/forums/verify-human/verify.html?next=/forums/thread/850550",
-      "hot": "115"
+      "title": "HOA's are making the home crisis worse",
+      "url": "https://hoaspy.com/hoa/fl/florida-hoa-housing-crisis.html",
+      "hot": "30"
     },
     {
       "rank": 2,
       "title": "RepRapMicron",
       "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
-      "hot": "184"
+      "hot": "253"
     },
     {
       "rank": 3,
-      "title": "Someone Behind the Software",
+      "title": "Someone behind the software",
       "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
-      "hot": "14"
+      "hot": "104"
     },
     {
       "rank": 4,
-      "title": "Sigsaly: Churchill's top secret hotline to the President",
-      "url": "https://www.iwm.org.uk/history/iwm/cwr/telephone",
-      "hot": "21"
+      "title": "Mitos editor is a fork of Helix",
+      "url": "https://mitos.computer/",
+      "hot": "29"
     },
     {
       "rank": 5,
-      "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
-      "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
-      "hot": "158"
+      "title": "Java sealed classes and exhaustive pattern matching",
+      "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
+      "hot": "83"
     },
     {
       "rank": 6,
-      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-      "url": "https://api-docs.deepseek.com/guides/search/",
-      "hot": "416"
+      "title": "The Intel 8087 chip: floating-point addition and subtraction",
+      "url": "https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
+      "hot": "50"
     },
     {
       "rank": 7,
-      "title": "Java sealed classes and exhaustive pattern matching",
-      "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
-      "hot": "33"
+      "title": "Sigsaly: Churchill's top secret hotline to the President",
+      "url": "https://www.iwm.org.uk/history/iwm/cwr/telephone",
+      "hot": "63"
     },
     {
       "rank": 8,
-      "title": "Show HN: The Zelda timeline to catch up before the Ocarina of Time remake",
-      "url": "https://legendofhyrule.com/",
-      "hot": "78"
+      "title": "PalmOS Lemmings by Aaron Ardiri",
+      "url": "https://github.com/ardiri/palmos-lemmings",
+      "hot": "15"
     },
     {
       "rank": 9,
-      "title": "Open MicroManipulator – A sub-micrometer 3D motion control plattform",
-      "url": "https://github.com/0x23/MicroManipulatorStepper",
-      "hot": "120"
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "url": "https://api-docs.deepseek.com/guides/search/",
+      "hot": "463"
     },
     {
       "rank": 10,
-      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
-      "url": "https://www.vals.ai/blogs/impossible-refund",
-      "hot": "36"
+      "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
+      "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
+      "hot": "197"
     }
   ]
 }
