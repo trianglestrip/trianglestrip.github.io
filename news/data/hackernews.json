@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-18T19:06:49+00:00",
+  "updated_at": "2026-10-18T21:26:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HOA's are making the home crisis worse",
-      "url": "https://hoaspy.com/hoa/fl/florida-hoa-housing-crisis.html",
-      "hot": "30"
+      "title": "Someone behind the software",
+      "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+      "hot": "225"
     },
     {
       "rank": 2,
-      "title": "RepRapMicron",
-      "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
-      "hot": "253"
+      "title": "Free Pascal compiler now supports dynamic packages",
+      "url": "https://www.getlazarus.org/dynamic/",
+      "hot": "67"
     },
     {
       "rank": 3,
-      "title": "Someone behind the software",
-      "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
-      "hot": "104"
+      "title": "RepRapMicron",
+      "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+      "hot": "292"
     },
     {
       "rank": 4,
-      "title": "Mitos editor is a fork of Helix",
-      "url": "https://mitos.computer/",
-      "hot": "29"
+      "title": "Hybrid Reasoning Agents: 35–55% fewer tokens and up to 2.6× faster inference",
+      "url": "https://arxiv.org/abs/2610.18861",
+      "hot": "21"
     },
     {
       "rank": 5,
-      "title": "Java sealed classes and exhaustive pattern matching",
-      "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
-      "hot": "83"
+      "title": "PalmOS Lemmings",
+      "url": "https://github.com/ardiri/palmos-lemmings",
+      "hot": "59"
     },
     {
       "rank": 6,
-      "title": "The Intel 8087 chip: floating-point addition and subtraction",
-      "url": "https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
+      "title": "Dogs seem to agree with humans that 'bouba' is round and 'kiki' is spiky",
+      "url": "https://www.sciencealert.com/dogs-seem-to-agree-with-humans-that-bouba-is-round-and-kiki-is-spiky",
       "hot": "50"
     },
     {
       "rank": 7,
-      "title": "Sigsaly: Churchill's top secret hotline to the President",
-      "url": "https://www.iwm.org.uk/history/iwm/cwr/telephone",
-      "hot": "63"
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "url": "https://api-docs.deepseek.com/guides/search/",
+      "hot": "501"
     },
     {
       "rank": 8,
-      "title": "PalmOS Lemmings by Aaron Ardiri",
-      "url": "https://github.com/ardiri/palmos-lemmings",
-      "hot": "15"
+      "title": "Java sealed classes and exhaustive pattern matching",
+      "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
+      "hot": "113"
     },
     {
       "rank": 9,
-      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-      "url": "https://api-docs.deepseek.com/guides/search/",
-      "hot": "463"
+      "title": "SIGSALY: Churchill's top secret hotline to the president",
+      "url": "https://www.iwm.org.uk/history/iwm/cwr/telephone",
+      "hot": "87"
     },
     {
       "rank": 10,
-      "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
-      "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
-      "hot": "197"
+      "title": "The Intel 8087 chip: floating-point addition and subtraction",
+      "url": "https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
+      "hot": "74"
     }
   ]
 }
