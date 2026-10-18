@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-18T13:45:11+00:00",
+  "updated_at": "2026-10-18T16:56:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "TimechoAI：让时序预测更易用，让数据真正参与决策",
-      "url": "https://blog.csdn.net/lrq13965748542/article/details/168029388",
-      "hot": "17597"
+      "title": "【从零开始大模型开发与微调:基于PyTorch与ChatGLM】(从ChatGLM本地化到LoRA、PEFT的高级微调)",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/168140637",
+      "hot": "13537"
     },
     {
       "rank": 2,
-      "title": "Linux 网络：序列化与反序列化",
-      "url": "https://blog.csdn.net/AbandonForce/article/details/168248445",
-      "hot": "14476"
+      "title": "【AI智能体】Codex 制作数字人商品展示和口播视频实战详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/167216255",
+      "hot": "7399"
     },
     {
       "rank": 3,
-      "title": "【Plain Language Large Model】【开源闭源选型终极指南：三维度决策框架】流食般投喂",
-      "url": "https://blog.csdn.net/dj_798/article/details/168027166",
-      "hot": "12040"
+      "title": "设备监控数据怎么存、怎么查？Spring Boot + TimescaleDB 完整实战",
+      "url": "https://blog.csdn.net/2403_86779341/article/details/168145850",
+      "hot": "6783"
     },
     {
       "rank": 4,
-      "title": "Agent 接入企业微信/钉钉：渠道对接实",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/168146030",
-      "hot": "8483"
+      "title": "飞牛部署Damselfly实战：Docker Compose、照片目录、7100访问与固定地址",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/168342744",
+      "hot": "6546"
     },
     {
       "rank": 5,
-      "title": "设备监控数据怎么存、怎么查？Spring Boot + TimescaleDB 完整实战",
-      "url": "https://blog.csdn.net/2403_86779341/article/details/168145850",
-      "hot": "8127"
+      "title": "用 WorkBuddy + 麦当劳 MCP，做一个会算营养、比价格、还能下单的减脂私教",
+      "url": "https://blog.csdn.net/qq_33681891/article/details/168244556",
+      "hot": "6471"
     },
     {
       "rank": 6,
-      "title": "【AI智能体】Langchain 结构化输出结果实战操作详解",
-      "url": "https://blog.csdn.net/congge_study/article/details/165491045",
-      "hot": "7288"
+      "title": "Linux 网络：序列化与反序列化",
+      "url": "https://blog.csdn.net/AbandonForce/article/details/168248445",
+      "hot": "6225"
     },
     {
       "rank": 7,
-      "title": "【计算机网络】| 详解链路层：MAC 地址与VLAN",
-      "url": "https://blog.csdn.net/2503_94545876/article/details/168133225",
-      "hot": "6951"
+      "title": "读对了，做错了：决策模型的错多数不在读这一层",
+      "url": "https://blog.csdn.net/wodekouwei/article/details/168145769",
+      "hot": "6013"
     },
     {
       "rank": 8,
-      "title": "飞牛部署Damselfly实战：Docker Compose、照片目录、7100访问与固定地址",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/168342744",
-      "hot": "6472"
+      "title": "K8s Ingress 返回 502 但后端日志正常：4 类上游断连与排查链",
+      "url": "https://blog.csdn.net/2501_92769340/article/details/167498389",
+      "hot": "5753"
     },
     {
       "rank": 9,
-      "title": "读对了，做错了：决策模型的错多数不在读这一层",
-      "url": "https://blog.csdn.net/wodekouwei/article/details/168145769",
-      "hot": "6246"
+      "title": "【计算机网络】| 详解链路层：MAC 地址与VLAN",
+      "url": "https://blog.csdn.net/2503_94545876/article/details/168133225",
+      "hot": "5650"
     },
     {
       "rank": 10,
-      "title": "【花雕学编程】Arduino BLDC 之自主巡检机器人：多传感器融合与实时控制分离",
-      "url": "https://blog.csdn.net/weixin_41659040/article/details/168140430",
-      "hot": "6210"
+      "title": "【AI智能体】Langchain 结构化输出结果实战操作详解",
+      "url": "https://blog.csdn.net/congge_study/article/details/165491045",
+      "hot": "5612"
     }
   ]
 }

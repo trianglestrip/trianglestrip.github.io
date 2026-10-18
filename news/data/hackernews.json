@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-18T13:45:19+00:00",
+  "updated_at": "2026-10-18T16:56:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
-      "url": "https://api-docs.deepseek.com/guides/search/",
-      "hot": "318"
+      "title": "macOS 15.8.2 Breaks OpenGL",
+      "url": "https://developer.apple.com/forums/verify-human/verify.html?next=/forums/thread/850550",
+      "hot": "115"
     },
     {
       "rank": 2,
-      "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
-      "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
-      "hot": "55"
+      "title": "RepRapMicron",
+      "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+      "hot": "184"
     },
     {
       "rank": 3,
-      "title": "Open MicroManipulator – A sub-micrometer 3D motion control plattform",
-      "url": "https://github.com/0x23/MicroManipulatorStepper",
-      "hot": "40"
+      "title": "Someone Behind the Software",
+      "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+      "hot": "14"
     },
     {
       "rank": 4,
-      "title": "Parser Combinators",
-      "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
-      "hot": "89"
+      "title": "Sigsaly: Churchill's top secret hotline to the President",
+      "url": "https://www.iwm.org.uk/history/iwm/cwr/telephone",
+      "hot": "21"
     },
     {
       "rank": 5,
-      "title": "How the Elizabeth Holmes documentary “You Can See Everything” is deceiving",
-      "url": "https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything",
-      "hot": "206"
+      "title": "Legal experts warn Meta's new terms still grant broad scraping permissions",
+      "url": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
+      "hot": "158"
     },
     {
       "rank": 6,
-      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
-      "url": "https://sphinx-six-theta.vercel.app/",
-      "hot": "177"
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "url": "https://api-docs.deepseek.com/guides/search/",
+      "hot": "416"
     },
     {
       "rank": 7,
-      "title": "Bleached corals thrive within days when touching healthy neighbour",
-      "url": "https://www.nature.com/articles/d41586-026-03266-x",
-      "hot": "492"
+      "title": "Java sealed classes and exhaustive pattern matching",
+      "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
+      "hot": "33"
     },
     {
       "rank": 8,
-      "title": "Teal – A statically-typed dialect of Lua",
-      "url": "https://teal-language.org/",
-      "hot": "73"
+      "title": "Show HN: The Zelda timeline to catch up before the Ocarina of Time remake",
+      "url": "https://legendofhyrule.com/",
+      "hot": "78"
     },
     {
       "rank": 9,
-      "title": "Regex visualized as 3D marble run",
-      "url": "https://www.regexmarblerun.com/",
-      "hot": "32"
+      "title": "Open MicroManipulator – A sub-micrometer 3D motion control plattform",
+      "url": "https://github.com/0x23/MicroManipulatorStepper",
+      "hot": "120"
     },
     {
       "rank": 10,
-      "title": "Lean now ships with verified kernels",
-      "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
-      "hot": "165"
+      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+      "url": "https://www.vals.ai/blogs/impossible-refund",
+      "hot": "36"
     }
   ]
 }

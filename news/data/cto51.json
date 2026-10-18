@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-18T13:45:19+00:00",
+  "updated_at": "2026-10-18T16:56:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "突发，GPT、Claude余额一夜清空！OpenCode爆雷",
+      "url": "https://www.51cto.com/article/858444.html",
+      "hot": "一觉醒来，天塌了！今天，全球不少OpenCode开发者惨遭「洗劫」。短短几小时，账上的Token几乎全被跑光，整个AI圈彻底绷不住了。"
+    },
+    {
+      "rank": 2,
       "title": "桌面像素画破框生长：HarmonyOS 7 互动卡片 #1024·向光而行·码向未来#",
       "url": "https://ost.51cto.com/posts/60039",
       "hot": "桌面像素画破框生长：HarmonyOS7互动卡片前言给图图素素加桌面卡片时，我想做的不只是一个打开应用的入口：用户处理完图片，回到桌面就能看..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "每日打卡提醒：reminderAgentManager 定时提醒完 #1024·向光而行·码向未来#",
       "url": "https://ost.51cto.com/posts/59996",
       "hot": "1.业务需求「宝贝拉勾」的提醒设置页允许家长为任务设定每日提醒时间（代码默认9:00，家长可在时间选择器里改成任意点）。需求要点：每天固..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "刚刚，Mythos 5破解量子计算重大难题！53小时碾压人类数年",
       "url": "https://www.51cto.com/article/858437.html",
       "hot": "就在刚刚，Anthropic晒出一项炸裂研究。Mythos 5已经自主闭环，设计出比人类「最佳方案」还要高效得多的全新的量子电路！而且，还是在纯语言描述的情况下。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Claude半小时解开密码学悬案，学界集体走偏20年",
       "url": "https://www.51cto.com/article/858435.html",
       "hot": "负责初始化的函数叫srand48，它会把输入值放进48位状态的高32位，再把低16位固定设为0x330E，再沿着递推关系往回算，目标指向Unix时间戳。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "从一张照片开始：唤醒企业沉睡的数据资产",
       "url": "https://www.51cto.com/article/858410.html",
       "hot": "数字化竞赛的下半场，比的不是谁先跑通Demo，而是谁先把数据变成稳定运行的生产能力。私有化数据平台，就是从数据沉睡通往数据增值的那条通道。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "别让运维孤军奋战做 AIOps：跨团队数据协作才是落地核心",
       "url": "https://www.51cto.com/article/858387.html",
       "hot": "AIOps 不是运维工具的升级，而是一套跨团队的数据协作机制，只是由运维部门来主导推进。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "八大平台、十项任务、一支 “智能体军团”，账单到底长什么样？",
       "url": "https://www.51cto.com/article/858385.html",
       "hot": "智能体最贵的是 token，而 token 的大头，是那些你根本没注意到的上下文堆叠。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "React 开发：内置高阶 Hooks 实战精讲，吃透性能优化核心",
       "url": "https://www.51cto.com/article/858323.html",
       "hot": "本文从生产实战角度出发，系统拆解 React 内置高阶 Hooks 的核心原理和性能优化方案，帮你吃透 React 性能优化的核心。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "神经多样性意识的多模态情感计算架构：一种面向神经发育评估的可审计推理体系",
       "url": "https://www.51cto.com/article/858383.html",
       "hot": "个体基线的采集成本是未来的挑战，它需要长期观察，而不是一次性测量。情境标准化也是难题，不同任务、环境与支持策略会导致行为的巨大差异。子群体校准需要大量样本，而神经发育群体本身具有高度异质性。"
-    },
-    {
-      "rank": 10,
-      "title": "神经网络可解释性被AI解决了？90%神经元只有一个功能",
-      "url": "https://www.51cto.com/article/858381.html",
-      "hot": "本周五，OpenAI 可解释团队创建人 Nick Cammarata 的一篇超长文章震动了 AI 圈。"
     }
   ]
 }

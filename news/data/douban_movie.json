@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-18T13:44:48+00:00",
+  "updated_at": "2026-10-18T16:56:31+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "我不是大师",
-      "url": "https://movie.douban.com/subject/37297001/",
-      "hot": "评分 7.3"
-    },
-    {
-      "rank": 8,
-      "title": "欢迎来龙餐馆",
-      "url": "https://movie.douban.com/subject/35811064/",
-      "hot": "评分 8.7"
-    },
-    {
-      "rank": 9,
       "title": "嫁金钗",
       "url": "https://movie.douban.com/subject/37191789/",
       "hot": ""
     },
     {
+      "rank": 8,
+      "title": "醉梦",
+      "url": "https://movie.douban.com/subject/37042229/",
+      "hot": ""
+    },
+    {
+      "rank": 9,
+      "title": "我不是大师",
+      "url": "https://movie.douban.com/subject/37297001/",
+      "hot": "评分 7.3"
+    },
+    {
       "rank": 10,
-      "title": "蜘蛛侠：崭新之日",
-      "url": "https://movie.douban.com/subject/36246195/",
-      "hot": "评分 7.7"
+      "title": "欢迎来龙餐馆",
+      "url": "https://movie.douban.com/subject/35811064/",
+      "hot": "评分 8.7"
     }
   ]
 }
