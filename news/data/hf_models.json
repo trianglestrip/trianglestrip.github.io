@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-17T21:36:30+00:00",
+  "updated_at": "2026-10-18T05:53:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "google/embeddinggemma-2",
-      "url": "https://huggingface.co/google/embeddinggemma-2",
-      "hot": "2586"
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "hot": "1065"
     },
     {
       "rank": 2,
-      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "hot": "889"
+      "title": "google/embeddinggemma-2",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "hot": "2609"
     },
     {
       "rank": 3,
       "title": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "hot": "1893"
+      "hot": "1908"
     },
     {
       "rank": 4,
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-      "hot": "895"
+      "hot": "908"
     },
     {
       "rank": 5,
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
-      "hot": "616"
+      "hot": "632"
     },
     {
       "rank": 6,
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "hot": "636"
+      "hot": "687"
     },
     {
       "rank": 7,
       "title": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-      "hot": "500"
+      "hot": "515"
     },
     {
       "rank": 8,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "8207"
+      "hot": "8254"
     },
     {
       "rank": 9,
       "title": "LiquidAI/LFM2.5-24B-A2B",
       "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
-      "hot": "446"
+      "hot": "449"
     },
     {
       "rank": 10,
-      "title": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "hot": "4491"
+      "title": "black-forest-labs/flux-3-image-klein",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "hot": "459"
     }
   ]
 }

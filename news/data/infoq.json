@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-18T01:12:49+00:00",
+  "updated_at": "2026-10-18T05:53:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "“AI+终端”时代的萌芽：大模型在终端领域的探索和量产落地｜QCon上海",
+      "url": "https://www.infoq.cn/article/qZPH971CbfHkaCfgG0cb?utm_source=rss&utm_medium=article",
+      "hot": "Sun, 18 Oct 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Aspire 13.6 新增持久化仪表盘遥测功能，并支持第一方 Java 和 Rust 托管",
+      "url": "https://www.infoq.cn/article/4BUR4DmMxSBxyzYh6Fxz?utm_source=rss&utm_medium=article",
+      "hot": "Sun, 18 Oct 2026 09:17:00 GMT"
+    },
+    {
+      "rank": 3,
       "title": "Akka 在 65 个开源项目中测试基于规格的 AI 交付",
       "url": "https://www.infoq.cn/article/uGNQwpOt5GGAKm2XlEZC?utm_source=rss&utm_medium=article",
       "hot": "Sat, 17 Oct 2026 15:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "The World Is Not a Dataset - Building AI Systems That Continuously Learn from Reality｜QCon上海",
       "url": "https://www.infoq.cn/article/JMZ6WUx4a4cVqAwhwviU?utm_source=rss&utm_medium=article",
       "hot": "Sat, 17 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Java 近期新闻：JobRunr 9、OpenXava 8、Quarkus、LangChain4j、JNoSQL、Lathe",
       "url": "https://www.infoq.cn/article/AF1qxLVCRls3R6MdWwBh?utm_source=rss&utm_medium=article",
       "hot": "Sat, 17 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "聚焦 AI 场景落地与 FDE 创新，2026 人工智能产业大会专项活动在济南举行",
       "url": "https://www.infoq.cn/article/1XtKjZ1OCyrYTCmb4Zkb?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 17:45:51 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "生产级大模型平台工程实战手册",
       "url": "https://www.infoq.cn/article/xQLd004RGWrzFhwqBOyC?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 17:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "AI 生成的代码，怎么才能进得了工程体系？",
       "url": "https://www.infoq.cn/article/8iKz8xNQvxDfeuxH1QLA?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 16:56:30 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "范式智能联合睿思智联推出开源一站式生产级AI部署平台 “模域ModelSphere”",
       "url": "https://www.infoq.cn/article/VZPlIIdGRg062mgwJe5y?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 16:38:02 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Cloudflare 计划推出公共证书颁发机构，用于签发量子安全的 TLS 证书",
       "url": "https://www.infoq.cn/article/CoGZq3xgQhZI4rBH8pjA?utm_source=rss&utm_medium=article",
       "hot": "Fri, 16 Oct 2026 15:41:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "谷歌的 Android 安全状态库支持组件级安全校验",
-      "url": "https://www.infoq.cn/article/yZh3MeRrBa7IbsB1PrUp?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 16 Oct 2026 14:17:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Pi 抛出全新 Agent Harness，还把自己骂了一年的 MCP 装进了核心",
-      "url": "https://www.infoq.cn/article/hQOHf1ZXoBs7uMpWJQss?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 16 Oct 2026 11:53:14 GMT"
     }
   ]
 }
