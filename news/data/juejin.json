@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-19T06:26:12+00:00",
+  "updated_at": "2026-10-19T13:43:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "本来只想给内网开个口子，Natapp 却多给了一道防护",
-      "url": "https://juejin.cn/post/7697075629647003698",
-      "hot": "2457"
+      "title": "一个周末就想把短链服务推到 10 万 QPS，真能靠加 Redis 做到吗？",
+      "url": "https://juejin.cn/post/7696889902293614642",
+      "hot": "2250"
     },
     {
       "rank": 2,
-      "title": "一个周末就想把短链服务推到 10 万 QPS，真能靠加 Redis 做到吗？",
-      "url": "https://juejin.cn/post/7696889902293614642",
-      "hot": "2142"
+      "title": "学会 SQLAlchemy 搭建 Python 与 MySQL 之间的数据访问桥梁 🚀",
+      "url": "https://juejin.cn/post/7697168479082889243",
+      "hot": "738"
     },
     {
       "rank": 3,
-      "title": "中国 3D CAD 的突围之路：当 AI 开始挑战几何内核",
-      "url": "https://juejin.cn/post/7696820671752323107",
-      "hot": "1044"
+      "title": "2026年的前端：你引以为傲的框架，正在被浏览器原生能力“架空”",
+      "url": "https://juejin.cn/post/7697134861442039849",
+      "hot": "459"
     },
     {
       "rank": 4,
-      "title": "别再死磕纯技术了：2026 年程序员的 7 条真实出路",
-      "url": "https://juejin.cn/post/7696817605548245002",
-      "hot": "1035"
-    },
-    {
-      "rank": 5,
-      "title": "数据集成软件 KFS：多套业务库汇聚时，先把来源和口径理清",
-      "url": "https://juejin.cn/post/7697500325122277376",
-      "hot": "927"
-    },
-    {
-      "rank": 6,
-      "title": "学会 SQLAlchemy 搭建 Python 与 MySQL 之间的数据访问桥梁 🚀",
-      "url": "https://juejin.cn/post/7697168479082889243",
-      "hot": "729"
-    },
-    {
-      "rank": 7,
-      "title": "浏览器为什么加载不了超大图片",
-      "url": "https://juejin.cn/post/7697087660390547466",
+      "title": "两个 WorkBuddy 客户端总被“合并”解决方法",
+      "url": "https://juejin.cn/post/7697162867455688719",
       "hot": "378"
     },
     {
+      "rank": 5,
+      "title": "玩了一天 REA，我号快没了",
+      "url": "https://juejin.cn/post/7698176323931979839",
+      "hot": "378"
+    },
+    {
+      "rank": 6,
+      "title": "AI 帮我写的小程序「厨菜记」上线满月了，挣了两百块！！！",
+      "url": "https://juejin.cn/post/7697873433355304970",
+      "hot": "261"
+    },
+    {
+      "rank": 7,
+      "title": "AI 流式输出都用 SSE，什么时候必须换 WebSocket？",
+      "url": "https://juejin.cn/post/7697591781001691163",
+      "hot": "252"
+    },
+    {
       "rank": 8,
-      "title": "2026年的前端：你引以为傲的框架，正在被浏览器原生能力“架空”",
-      "url": "https://juejin.cn/post/7697134861442039849",
-      "hot": "360"
+      "title": "从Cursor到Codex，从Skills到Harness：AI编程正在经历第三次范式迁移",
+      "url": "https://juejin.cn/post/7672696268489408575",
+      "hot": "252"
     },
     {
       "rank": 9,
-      "title": "两个 WorkBuddy 客户端总被“合并”解决方法",
-      "url": "https://juejin.cn/post/7697162867455688719",
-      "hot": "270"
+      "title": "从 0 到 1：我用 300 行代码给 AI 记忆加上了“不可篡改的收据”（附开源实现）",
+      "url": "https://juejin.cn/post/7697418750073929762",
+      "hot": "180"
     },
     {
       "rank": 10,
-      "title": "软考高项考下来：每月多600，还被推进数据局当专家（一次800）",
-      "url": "https://juejin.cn/post/7696791074137030719",
-      "hot": "261"
+      "title": "别再花钱调 OCR 接口了！这个国产开源工具，免费还能离线跑",
+      "url": "https://juejin.cn/post/7697873433354485770",
+      "hot": "180"
     }
   ]
 }

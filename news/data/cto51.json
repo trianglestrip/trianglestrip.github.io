@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-19T06:26:21+00:00",
+  "updated_at": "2026-10-19T13:44:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 位置服务（Location Kit）完全指南：从权限申请到精准定位",
-      "url": "https://ost.51cto.com/posts/60149",
-      "hot": "HarmonyOS位置服务（LocationKit）完全指南：从权限申请到精准定位在数字化飞速发展的今天，智能设备中各式各样的应用程序正通过位置服务功..."
+      "title": "思维链并不是大模型的内心独白！Anthropic研究员：模型并非逐行写成，它是在训练中“长出来”的",
+      "url": "https://www.51cto.com/article/858636.html",
+      "hot": "“预测下一个Token”没有错。问题是，我们很容易把输出规则误认为内部过程的全部。Anthropic目前看到的是：模型会形成跨场景概念，会在特定任务中提前规划，会保留没有说出口的中间状态，也可能给已经形成的答案补写一套漂亮解释。"
     },
     {
       "rank": 2,
+      "title": "第一次用 HarmonyOS 6 练图形变换：旋转缩放平移一起上",
+      "url": "https://ost.51cto.com/posts/60178",
+      "hot": "前言：同一组参数，位置为什么不同一个箭头，旋转45°，放大到1.25倍，再给它一段位移。看起来只是三个参数，可把​​translate​​和​​r..."
+    },
+    {
+      "rank": 3,
+      "title": "HarmonyOS 7 AI 文生图实战：从提示词到图库的完整管线",
+      "url": "https://ost.51cto.com/posts/60159",
+      "hot": "AI生成内容里，文字对话已经写滥了，图像生成是另一条完全不同的管线：输入是一句话，输出是一张两兆的图。这条管线的形态跟对话截然不同&mdash;..."
+    },
+    {
+      "rank": 4,
       "title": "一行 \"+\" 拼接，JVM 到底偷偷 new 了几个对象？",
       "url": "https://www.51cto.com/article/858511.html",
       "hot": "从 JDK 1.5 引入 StringBuilder 起，99% 的新代码都应该用 StringBuilder。StringBuffer 主要存在于老代码（比如 JDK 早期的 StringBuilder 还没出生时的代码）中。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "刚刚，Anthropic宣布奇点已至！SI或把美国GDP推上44万亿美元",
       "url": "https://www.51cto.com/article/858497.html",
       "hot": "在曼谷举行的国际货币基金组织佩尔·雅各布森讲座上，Anthropic联合创始人Jack Clark，抛出了一个引起全网轰动的重磅判断：「奇点已经到来」。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "具身智能体长程记忆：看见不等于记住，浙大提出具身记忆基准",
       "url": "https://www.51cto.com/article/858495.html",
       "hot": "当 AI 走进持续变化的物理世界，它究竟需要怎样的记忆？又该如何判断，它是否真的记住了，并能据此行动？"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "你本可以发明Transformer？9年前论文就有线索？斯坦福博士这篇博客火了",
       "url": "https://www.51cto.com/article/858492.html",
       "hot": "10 月 15 日，斯坦福大学计算机科学博士、前 Cartesia 研究科学家 Alex Wang 发表了一篇博客《You could have invented transformers from memory》（你本可以凭「记忆」发明 Transformer），迅速在社交媒体引发关注。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "GitHub star量过千，HF榜单第二，第一个会自己改学习规则的视觉骨干开源了",
       "url": "https://www.51cto.com/article/858491.html",
       "hot": "论文发布后曾登上 Hugging Face 每日论文榜第 2 名，GitHub 开源仓库也在短时间内收获了近 1000 Stars。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "登顶RoboDojo智能体超过GPT-6 Astra：Manifold AI推出R²SI",
       "url": "https://www.51cto.com/article/858486.html",
       "hot": "Manifold AI 流形空间登顶机器人学习基准 RoboDojo 榜单（Agent Track），超越 GPT-6-Astra、英伟达 GR00T-N1.7 等模型。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "【图解】内存管理五大技术：MMU、IOMMU、MMIO、mmap、ioremap",
       "url": "https://www.51cto.com/article/858510.html",
       "hot": "如果你是做嵌入式 Linux、驱动、虚拟化，那么 MMU、IOMMU、MMIO、mmap、ioremap，这五个就是你的九九乘法表。"
-    },
-    {
-      "rank": 9,
-      "title": "哈佛谷歌惊人研究：GPT-6 Astra已解决98%世界物理难题！",
-      "url": "https://www.51cto.com/article/858508.html",
-      "hot": "为了探底AI真正的推理天花板，全球顶尖机构的物理学家们，联手给AI挖了个大坑——TheoPhysEval。"
-    },
-    {
-      "rank": 10,
-      "title": "538小时「极脏」人类数据，真机不到1小时：港大让机器人学会拆快递、打胶枪、做冷饮",
-      "url": "https://www.51cto.com/article/858485.html",
-      "hot": "近日，团队提出 EgoWild2Dex，直接利用 538.9 小时未经刻意编排的真实人类第一视角操作数据训练机器人。"
     }
   ]
 }
