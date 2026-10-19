@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-18T23:28:24+00:00",
+  "updated_at": "2026-10-19T06:26:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "突发，GPT、Claude余额一夜清空！OpenCode爆雷",
-      "url": "https://www.51cto.com/article/858444.html",
-      "hot": "一觉醒来，天塌了！今天，全球不少OpenCode开发者惨遭「洗劫」。短短几小时，账上的Token几乎全被跑光，整个AI圈彻底绷不住了。"
+      "title": "HarmonyOS 位置服务（Location Kit）完全指南：从权限申请到精准定位",
+      "url": "https://ost.51cto.com/posts/60149",
+      "hot": "HarmonyOS位置服务（LocationKit）完全指南：从权限申请到精准定位在数字化飞速发展的今天，智能设备中各式各样的应用程序正通过位置服务功..."
     },
     {
       "rank": 2,
-      "title": "桌面像素画破框生长：HarmonyOS 7 互动卡片 #1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/60039",
-      "hot": "桌面像素画破框生长：HarmonyOS7互动卡片前言给图图素素加桌面卡片时，我想做的不只是一个打开应用的入口：用户处理完图片，回到桌面就能看..."
+      "title": "一行 \"+\" 拼接，JVM 到底偷偷 new 了几个对象？",
+      "url": "https://www.51cto.com/article/858511.html",
+      "hot": "从 JDK 1.5 引入 StringBuilder 起，99% 的新代码都应该用 StringBuilder。StringBuffer 主要存在于老代码（比如 JDK 早期的 StringBuilder 还没出生时的代码）中。"
     },
     {
       "rank": 3,
-      "title": "每日打卡提醒：reminderAgentManager 定时提醒完 #1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/59996",
-      "hot": "1.业务需求「宝贝拉勾」的提醒设置页允许家长为任务设定每日提醒时间（代码默认9:00，家长可在时间选择器里改成任意点）。需求要点：每天固..."
+      "title": "刚刚，Anthropic宣布奇点已至！SI或把美国GDP推上44万亿美元",
+      "url": "https://www.51cto.com/article/858497.html",
+      "hot": "在曼谷举行的国际货币基金组织佩尔·雅各布森讲座上，Anthropic联合创始人Jack Clark，抛出了一个引起全网轰动的重磅判断：「奇点已经到来」。"
     },
     {
       "rank": 4,
-      "title": "刚刚，Mythos 5破解量子计算重大难题！53小时碾压人类数年",
-      "url": "https://www.51cto.com/article/858437.html",
-      "hot": "就在刚刚，Anthropic晒出一项炸裂研究。Mythos 5已经自主闭环，设计出比人类「最佳方案」还要高效得多的全新的量子电路！而且，还是在纯语言描述的情况下。"
+      "title": "具身智能体长程记忆：看见不等于记住，浙大提出具身记忆基准",
+      "url": "https://www.51cto.com/article/858495.html",
+      "hot": "当 AI 走进持续变化的物理世界，它究竟需要怎样的记忆？又该如何判断，它是否真的记住了，并能据此行动？"
     },
     {
       "rank": 5,
-      "title": "Claude半小时解开密码学悬案，学界集体走偏20年",
-      "url": "https://www.51cto.com/article/858435.html",
-      "hot": "负责初始化的函数叫srand48，它会把输入值放进48位状态的高32位，再把低16位固定设为0x330E，再沿着递推关系往回算，目标指向Unix时间戳。"
+      "title": "你本可以发明Transformer？9年前论文就有线索？斯坦福博士这篇博客火了",
+      "url": "https://www.51cto.com/article/858492.html",
+      "hot": "10 月 15 日，斯坦福大学计算机科学博士、前 Cartesia 研究科学家 Alex Wang 发表了一篇博客《You could have invented transformers from memory》（你本可以凭「记忆」发明 Transformer），迅速在社交媒体引发关注。"
     },
     {
       "rank": 6,
-      "title": "从一张照片开始：唤醒企业沉睡的数据资产",
-      "url": "https://www.51cto.com/article/858410.html",
-      "hot": "数字化竞赛的下半场，比的不是谁先跑通Demo，而是谁先把数据变成稳定运行的生产能力。私有化数据平台，就是从数据沉睡通往数据增值的那条通道。"
+      "title": "GitHub star量过千，HF榜单第二，第一个会自己改学习规则的视觉骨干开源了",
+      "url": "https://www.51cto.com/article/858491.html",
+      "hot": "论文发布后曾登上 Hugging Face 每日论文榜第 2 名，GitHub 开源仓库也在短时间内收获了近 1000 Stars。"
     },
     {
       "rank": 7,
-      "title": "别让运维孤军奋战做 AIOps：跨团队数据协作才是落地核心",
-      "url": "https://www.51cto.com/article/858387.html",
-      "hot": "AIOps 不是运维工具的升级，而是一套跨团队的数据协作机制，只是由运维部门来主导推进。"
+      "title": "登顶RoboDojo智能体超过GPT-6 Astra：Manifold AI推出R²SI",
+      "url": "https://www.51cto.com/article/858486.html",
+      "hot": "Manifold AI 流形空间登顶机器人学习基准 RoboDojo 榜单（Agent Track），超越 GPT-6-Astra、英伟达 GR00T-N1.7 等模型。"
     },
     {
       "rank": 8,
-      "title": "八大平台、十项任务、一支 “智能体军团”，账单到底长什么样？",
-      "url": "https://www.51cto.com/article/858385.html",
-      "hot": "智能体最贵的是 token，而 token 的大头，是那些你根本没注意到的上下文堆叠。"
+      "title": "【图解】内存管理五大技术：MMU、IOMMU、MMIO、mmap、ioremap",
+      "url": "https://www.51cto.com/article/858510.html",
+      "hot": "如果你是做嵌入式 Linux、驱动、虚拟化，那么 MMU、IOMMU、MMIO、mmap、ioremap，这五个就是你的九九乘法表。"
     },
     {
       "rank": 9,
-      "title": "React 开发：内置高阶 Hooks 实战精讲，吃透性能优化核心",
-      "url": "https://www.51cto.com/article/858323.html",
-      "hot": "本文从生产实战角度出发，系统拆解 React 内置高阶 Hooks 的核心原理和性能优化方案，帮你吃透 React 性能优化的核心。"
+      "title": "哈佛谷歌惊人研究：GPT-6 Astra已解决98%世界物理难题！",
+      "url": "https://www.51cto.com/article/858508.html",
+      "hot": "为了探底AI真正的推理天花板，全球顶尖机构的物理学家们，联手给AI挖了个大坑——TheoPhysEval。"
     },
     {
       "rank": 10,
-      "title": "神经多样性意识的多模态情感计算架构：一种面向神经发育评估的可审计推理体系",
-      "url": "https://www.51cto.com/article/858383.html",
-      "hot": "个体基线的采集成本是未来的挑战，它需要长期观察，而不是一次性测量。情境标准化也是难题，不同任务、环境与支持策略会导致行为的巨大差异。子群体校准需要大量样本，而神经发育群体本身具有高度异质性。"
+      "title": "538小时「极脏」人类数据，真机不到1小时：港大让机器人学会拆快递、打胶枪、做冷饮",
+      "url": "https://www.51cto.com/article/858485.html",
+      "hot": "近日，团队提出 EgoWild2Dex，直接利用 538.9 小时未经刻意编排的真实人类第一视角操作数据训练机器人。"
     }
   ]
 }

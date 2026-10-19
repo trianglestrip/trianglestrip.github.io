@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-18T21:27:00+00:00",
+  "updated_at": "2026-10-19T06:26:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Harness^2: Recursive Agent Harnessing for an Open World",
       "url": "https://huggingface.co/papers/2610.14224",
-      "hot": "114"
+      "hot": "117"
     },
     {
       "rank": 2,
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
-      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
-      "url": "https://huggingface.co/papers/2610.13912",
-      "hot": "49"
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "60"
     },
     {
       "rank": 5,
       "title": "Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation",
       "url": "https://huggingface.co/papers/2610.20571",
-      "hot": "343"
+      "hot": "344"
     },
     {
       "rank": 6,
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "url": "https://huggingface.co/papers/2610.13912",
+      "hot": "50"
+    },
+    {
+      "rank": 7,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
       "hot": "93"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "77"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
       "url": "https://huggingface.co/papers/2610.08699",
       "hot": "116"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "90"
-    },
-    {
-      "rank": 10,
-      "title": "Internal Safety Collapse in Frontier Large Language Models",
-      "url": "https://huggingface.co/papers/2603.23509",
-      "hot": "31"
     }
   ]
 }
