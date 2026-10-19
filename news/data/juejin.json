@@ -1,50 +1,50 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-19T13:43:51+00:00",
+  "updated_at": "2026-10-19T19:29:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "一个周末就想把短链服务推到 10 万 QPS，真能靠加 Redis 做到吗？",
       "url": "https://juejin.cn/post/7696889902293614642",
-      "hot": "2250"
+      "hot": "2277"
     },
     {
       "rank": 2,
       "title": "学会 SQLAlchemy 搭建 Python 与 MySQL 之间的数据访问桥梁 🚀",
       "url": "https://juejin.cn/post/7697168479082889243",
-      "hot": "738"
+      "hot": "756"
     },
     {
       "rank": 3,
       "title": "2026年的前端：你引以为傲的框架，正在被浏览器原生能力“架空”",
       "url": "https://juejin.cn/post/7697134861442039849",
-      "hot": "459"
+      "hot": "486"
     },
     {
       "rank": 4,
-      "title": "两个 WorkBuddy 客户端总被“合并”解决方法",
-      "url": "https://juejin.cn/post/7697162867455688719",
-      "hot": "378"
+      "title": "玩了一天 REA，我号快没了",
+      "url": "https://juejin.cn/post/7698176323931979839",
+      "hot": "450"
     },
     {
       "rank": 5,
-      "title": "玩了一天 REA，我号快没了",
-      "url": "https://juejin.cn/post/7698176323931979839",
-      "hot": "378"
+      "title": "两个 WorkBuddy 客户端总被“合并”解决方法",
+      "url": "https://juejin.cn/post/7697162867455688719",
+      "hot": "405"
     },
     {
       "rank": 6,
       "title": "AI 帮我写的小程序「厨菜记」上线满月了，挣了两百块！！！",
       "url": "https://juejin.cn/post/7697873433355304970",
-      "hot": "261"
+      "hot": "288"
     },
     {
       "rank": 7,
       "title": "AI 流式输出都用 SSE，什么时候必须换 WebSocket？",
       "url": "https://juejin.cn/post/7697591781001691163",
-      "hot": "252"
+      "hot": "270"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "从 0 到 1：我用 300 行代码给 AI 记忆加上了“不可篡改的收据”（附开源实现）",
-      "url": "https://juejin.cn/post/7697418750073929762",
-      "hot": "180"
+      "title": "别再花钱调 OCR 接口了！这个国产开源工具，免费还能离线跑",
+      "url": "https://juejin.cn/post/7697873433354485770",
+      "hot": "225"
     },
     {
       "rank": 10,
-      "title": "别再花钱调 OCR 接口了！这个国产开源工具，免费还能离线跑",
-      "url": "https://juejin.cn/post/7697873433354485770",
-      "hot": "180"
+      "title": "AI 流式传输工程指南：模型吐出半截 JSON，前端如何边收边渲染？",
+      "url": "https://juejin.cn/post/7697622920013021219",
+      "hot": "189"
     }
   ]
 }

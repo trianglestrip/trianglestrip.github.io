@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-19T13:43:35+00:00",
+  "updated_at": "2026-10-19T19:29:26+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,39 +18,39 @@
     },
     {
       "rank": 3,
+      "title": "醉梦",
+      "url": "https://movie.douban.com/subject/37042229/",
+      "hot": ""
+    },
+    {
+      "rank": 4,
       "title": "给阿嬷的情书",
       "url": "https://movie.douban.com/subject/37116446/",
       "hot": "评分 9.3"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "余红旧事",
       "url": "https://movie.douban.com/subject/37560173/",
       "hot": "评分 7.8"
     },
     {
-      "rank": 5,
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "hot": "评分 6.0"
-    },
-    {
       "rank": 6,
-      "title": "神探之痕迹‎",
-      "url": "https://movie.douban.com/subject/37247814/",
-      "hot": "评分 6.8"
-    },
-    {
-      "rank": 7,
       "title": "嫁金钗",
       "url": "https://movie.douban.com/subject/37191789/",
       "hot": ""
     },
     {
+      "rank": 7,
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
+      "hot": "评分 6.0"
+    },
+    {
       "rank": 8,
-      "title": "醉梦",
-      "url": "https://movie.douban.com/subject/37042229/",
-      "hot": ""
+      "title": "神探之痕迹‎",
+      "url": "https://movie.douban.com/subject/37247814/",
+      "hot": "评分 6.8"
     },
     {
       "rank": 9,
