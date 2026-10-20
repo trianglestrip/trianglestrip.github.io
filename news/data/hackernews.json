@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-20T16:28:09+00:00",
+  "updated_at": "2026-10-20T20:04:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Facebook now charging to post more than 2 links a month",
-      "url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
-      "hot": "215"
+      "title": "SimCity, but with Permits",
+      "url": "https://permit.petercai.com/",
+      "hot": "158"
     },
     {
       "rank": 2,
-      "title": "DeepSeek just open-sourced its inference engine",
-      "url": "https://github.com/deepseek-ai/DeepInfer",
-      "hot": "1664"
+      "title": "Voxtral 3",
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "hot": "364"
     },
     {
       "rank": 3,
-      "title": "EMudhra Intermediate CA Compromise",
-      "url": "https://emudhra.we-have-a-problem.com/",
-      "hot": "154"
+      "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "hot": "1973"
     },
     {
       "rank": 4,
-      "title": "Apple broke an essential presentation feature of iPads",
-      "url": "https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/",
-      "hot": "254"
+      "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+      "url": "https://github.com/google-pytorch/torch_tpu",
+      "hot": "157"
     },
     {
       "rank": 5,
-      "title": "Voxtral 3",
-      "url": "https://mistral.ai/news/voxtral-3/",
-      "hot": "21"
+      "title": "SlopCodeBench 10/2026 – Opus 5.5, Astra wins overall, xhigh considered harmful",
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-new-models-on-slop-code-bench.md",
+      "hot": "54"
     },
     {
       "rank": 6,
-      "title": "How I got over 300 Tor exit nodes removed",
-      "url": "https://kaba.cx/posts/20261020_Tor/",
-      "hot": "112"
+      "title": "Ofcom concedes defeat in 4chan case",
+      "url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat/",
+      "hot": "224"
     },
     {
       "rank": 7,
-      "title": "Ofcom Concedes Defeat in the 4chan Case",
-      "url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat/",
-      "hot": "94"
+      "title": "Apple broke an essential presentation feature of iPads",
+      "url": "https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/",
+      "hot": "382"
     },
     {
       "rank": 8,
-      "title": "Triplet of 'ghostly' galaxies hints at what dark matter is and isn't",
-      "url": "https://www.quantamagazine.org/triplet-of-ghostly-galaxies-hints-at-what-dark-matter-is-and-isnt-20261014/",
-      "hot": "30"
+      "title": "What shall I teach my son?",
+      "url": "https://stevekrouse.com/ends",
+      "hot": "69"
     },
     {
       "rank": 9,
-      "title": "Publish fake stats, get cited in LLMs",
-      "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
-      "hot": "160"
+      "title": "Jepsen: Orkes Conductor 5.3.2",
+      "url": "https://jepsen.io/analyses/orkes-conductor-5.3.2",
+      "hot": "24"
     },
     {
       "rank": 10,
-      "title": "My Friend Bob Cringely",
-      "url": "https://tyma.com/my-cringe-story/",
-      "hot": "68"
+      "title": "EMudhra Intermediate CA Compromise",
+      "url": "https://emudhra.we-have-a-problem.com/",
+      "hot": "389"
     }
   ]
 }
