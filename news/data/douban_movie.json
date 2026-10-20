@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-20T12:00:08+00:00",
+  "updated_at": "2026-10-20T16:27:41+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "兰香如故",
-      "url": "https://movie.douban.com/subject/36449295/",
-      "hot": "评分 7.5"
-    },
-    {
-      "rank": 3,
       "title": "醉梦",
       "url": "https://movie.douban.com/subject/37042229/",
       "hot": ""
+    },
+    {
+      "rank": 3,
+      "title": "兰香如故",
+      "url": "https://movie.douban.com/subject/36449295/",
+      "hot": "评分 7.5"
     },
     {
       "rank": 4,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "hot": "评分 6.0"
-    },
-    {
-      "rank": 8,
       "title": "神探之痕迹‎",
       "url": "https://movie.douban.com/subject/37247814/",
       "hot": "评分 6.8"
     },
     {
+      "rank": 8,
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
+      "hot": "评分 6.0"
+    },
+    {
       "rank": 9,
-      "title": "我不是大师",
-      "url": "https://movie.douban.com/subject/37297001/",
-      "hot": "评分 7.3"
+      "title": "希望",
+      "url": "https://movie.douban.com/subject/36179101/",
+      "hot": "评分 5.5"
     },
     {
       "rank": 10,
-      "title": "欢迎来龙餐馆",
-      "url": "https://movie.douban.com/subject/35811064/",
-      "hot": "评分 8.7"
+      "title": "我不是大师",
+      "url": "https://movie.douban.com/subject/37297001/",
+      "hot": "评分 7.3"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-20T12:00:34+00:00",
+  "updated_at": "2026-10-20T16:28:07+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "rank": 2,
-      "title": "# 一套代码跑通四形态：HarmonyOS 多形态设备适配实战 #1024·向光而行·码向未来#",
+      "title": "一套代码跑通四形态：HarmonyOS 多形态设备适配实战 #1024·向光而行·码向未来#",
       "url": "https://ost.51cto.com/posts/60308",
       "hot": "一、if(deviceType)这条路是死路很多团队的第一个方案是拿deviceInfo.deviceType（phonetablet2in1cartvwearable）写分支：tsif(deviceInfo..."
     },
