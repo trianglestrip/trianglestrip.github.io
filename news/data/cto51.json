@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-20T01:37:55+00:00",
+  "updated_at": "2026-10-20T06:34:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "思维链并不是大模型的内心独白！Anthropic研究员：模型并非逐行写成，它是在训练中“长出来”的",
-      "url": "https://www.51cto.com/article/858636.html",
-      "hot": "“预测下一个Token”没有错。问题是，我们很容易把输出规则误认为内部过程的全部。Anthropic目前看到的是：模型会形成跨场景概念，会在特定任务中提前规划，会保留没有说出口的中间状态，也可能给已经形成的答案补写一套漂亮解释。"
+      "title": "在 HarmonyOS 6 上画了一张饼图，占比动画看得懂",
+      "url": "https://ost.51cto.com/posts/60302",
+      "hot": "前言：先把&ldquo;这一份占多少&rdquo;算明白饼图里一块颜色变大，表示的是它在总量里占的比例变大。这里最容易混淆的地方，是把输入数值直接当成百分..."
     },
     {
       "rank": 2,
-      "title": "第一次用 HarmonyOS 6 练图形变换：旋转缩放平移一起上",
-      "url": "https://ost.51cto.com/posts/60178",
-      "hot": "前言：同一组参数，位置为什么不同一个箭头，旋转45°，放大到1.25倍，再给它一段位移。看起来只是三个参数，可把​​translate​​和​​r..."
+      "title": "用 HarmonyOS 6 的 SVG 画天气图标：下雨还带闪电",
+      "url": "https://ost.51cto.com/posts/60278",
+      "hot": "前言天气图标常常只占一小块地方，但云、雨滴和闪电一凑齐，几乎不用再解释&ldquo;雷阵雨&rdquo;是什么意思。做练习时，这种图案也很省事：轮廓不复杂..."
     },
     {
       "rank": 3,
-      "title": "HarmonyOS 7 AI 文生图实战：从提示词到图库的完整管线",
-      "url": "https://ost.51cto.com/posts/60159",
-      "hot": "AI生成内容里，文字对话已经写滥了，图像生成是另一条完全不同的管线：输入是一句话，输出是一张两兆的图。这条管线的形态跟对话截然不同&mdash;..."
+      "title": "K8s 运维告别凌晨救火！AIOps 四大能力解决告警泛滥、根因排查难题",
+      "url": "https://www.51cto.com/article/858694.html",
+      "hot": "AIOps 智能运维的普及，正在终结 K8s 运维的 “人肉救火时代”，把运维从被动排障，彻底推向主动预判、智能诊断、自动自愈的全新阶段。"
     },
     {
       "rank": 4,
-      "title": "一行 \"+\" 拼接，JVM 到底偷偷 new 了几个对象？",
-      "url": "https://www.51cto.com/article/858511.html",
-      "hot": "从 JDK 1.5 引入 StringBuilder 起，99% 的新代码都应该用 StringBuilder。StringBuffer 主要存在于老代码（比如 JDK 早期的 StringBuilder 还没出生时的代码）中。"
+      "title": "装了 GSS 0.0.6 跑了一遍，劝你别把它当 Three.js 平替",
+      "url": "https://www.51cto.com/article/858693.html",
+      "hot": "速查：GSS（GPU Style Sheets）是把类 CSS 语法编译成着色器的实验工具，底层是 SDF 光线步进，不是通用 3D 引擎。它能帮前端免写着色器做出程序化 3D 视觉，但做不了真实模型导入，且处于 0.0.6 单人维护阶段，适合当玩具探索，切忌用于生产。"
     },
     {
       "rank": 5,
-      "title": "刚刚，Anthropic宣布奇点已至！SI或把美国GDP推上44万亿美元",
-      "url": "https://www.51cto.com/article/858497.html",
-      "hot": "在曼谷举行的国际货币基金组织佩尔·雅各布森讲座上，Anthropic联合创始人Jack Clark，抛出了一个引起全网轰动的重磅判断：「奇点已经到来」。"
+      "title": "北大、VGI Labs和加州大学联合提出DynStream：首个大规模无位姿流式动态场景的高斯前馈重建框架",
+      "url": "https://www.51cto.com/article/858690.html",
+      "hot": "北京大学王选计算机研究所王勇涛团队和通视智能（VGI Labs）、UC Merced 联合推出的工作 DynStream 围绕这一问题提出在线流式 4D 高斯前馈重建框架。"
     },
     {
       "rank": 6,
-      "title": "具身智能体长程记忆：看见不等于记住，浙大提出具身记忆基准",
-      "url": "https://www.51cto.com/article/858495.html",
-      "hot": "当 AI 走进持续变化的物理世界，它究竟需要怎样的记忆？又该如何判断，它是否真的记住了，并能据此行动？"
+      "title": "Loop Transformer走向视觉语言模型，百度联合清华人大高瓴开源LoopVL",
+      "url": "https://www.51cto.com/article/858686.html",
+      "hot": "近日，来自中国人民大学、百度、清枢智汇、上海交通大学、清华等机构的研究者提出 LoopVL，围绕这一问题完成了从语言预训练到多模态后训练的系统探索。除了验证循环视觉语言建模的可行性，团队还观察到明显的跨循环视觉注意力重组，并将其称为 Visual Aha Moment。"
     },
     {
       "rank": 7,
-      "title": "你本可以发明Transformer？9年前论文就有线索？斯坦福博士这篇博客火了",
-      "url": "https://www.51cto.com/article/858492.html",
-      "hot": "10 月 15 日，斯坦福大学计算机科学博士、前 Cartesia 研究科学家 Alex Wang 发表了一篇博客《You could have invented transformers from memory》（你本可以凭「记忆」发明 Transformer），迅速在社交媒体引发关注。"
+      "title": "GPT-6-Astra具身能力遭大考！传统基准拿满分，真机频碰壁",
+      "url": "https://www.51cto.com/article/858685.html",
+      "hot": "近日，商汤联合大晓机器人、Ropedia、新加坡南洋理工大学和东京大学的研究团队在《Has GPT-6-Astra Achieved Embodied Intelligence?》中，给出了覆盖 12 项仿真评测、8 个真实机器人平台的系统分析。"
     },
     {
       "rank": 8,
-      "title": "GitHub star量过千，HF榜单第二，第一个会自己改学习规则的视觉骨干开源了",
-      "url": "https://www.51cto.com/article/858491.html",
-      "hot": "论文发布后曾登上 Hugging Face 每日论文榜第 2 名，GitHub 开源仓库也在短时间内收获了近 1000 Stars。"
+      "title": "前端大一统，终于有人说清楚了",
+      "url": "https://www.51cto.com/article/858682.html",
+      "hot": "最近看到的一篇文章，就从这个角度重新梳理了 React、HTMX、LiveView 等前端方案。而更有意思的是，Solid 2.0 正在尝试把这些能力放进同一个架构模型里。"
     },
     {
       "rank": 9,
-      "title": "登顶RoboDojo智能体超过GPT-6 Astra：Manifold AI推出R²SI",
-      "url": "https://www.51cto.com/article/858486.html",
-      "hot": "Manifold AI 流形空间登顶机器人学习基准 RoboDojo 榜单（Agent Track），超越 GPT-6-Astra、英伟达 GR00T-N1.7 等模型。"
+      "title": "Claude要会「读心」了？Anthropic神秘新模型曝光",
+      "url": "https://www.51cto.com/article/858680.html",
+      "hot": "据 The Information 最新爆料，Anthropic 正准备推出一款新模型，推理能力和直觉判断能力据称超过目前所有已经商用的 Anthropic 模型。"
     },
     {
       "rank": 10,
-      "title": "【图解】内存管理五大技术：MMU、IOMMU、MMIO、mmap、ioremap",
-      "url": "https://www.51cto.com/article/858510.html",
-      "hot": "如果你是做嵌入式 Linux、驱动、虚拟化，那么 MMU、IOMMU、MMIO、mmap、ioremap，这五个就是你的九九乘法表。"
+      "title": "刚刚，全球首个机器人大脑API开放！英伟达DreamZero团队创业，葛云皓任CTO",
+      "url": "https://www.51cto.com/article/858679.html",
+      "hot": "这支来自英伟达的团队今年 2 月提出了 世界动作模型（WAM），WAM 如今已是具身智能最热的路线之一。"
     }
   ]
 }

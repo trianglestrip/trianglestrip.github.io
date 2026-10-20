@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-20T01:37:59+00:00",
+  "updated_at": "2026-10-20T06:35:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "蚂蚁百灵开源 Ming-3.0 语音系列：给台词加个导演",
+      "url": "https://www.oschina.net/news/503107",
+      "hot": "Tue, 20 Oct 2026 12:04:03 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Apache SeaTunnel 社区 2026 年 9 月贡献总结报告",
+      "url": "https://www.oschina.net/news/503106",
+      "hot": "Tue, 20 Oct 2026 11:49:52 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "CloudDM 4.5.0 发布，支持 Elasticsearch、崖山数据库",
+      "url": "https://www.oschina.net/news/503105",
+      "hot": "Tue, 20 Oct 2026 11:44:01 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "MiniMax M3.1 Flash 更新：Computer Use 国产第一，成本降 70%",
+      "url": "https://www.oschina.net/news/503104/minimax-m3-1-flash",
+      "hot": "Tue, 20 Oct 2026 10:35:31 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Kairoa v1.1.27 发布：REST API 客户端集合管理、响应面板与查询参数上新",
+      "url": "https://www.oschina.net/news/503099",
+      "hot": "Mon, 19 Oct 2026 23:07:08 +0800"
+    },
+    {
+      "rank": 6,
       "title": "开源数据智能 Agent：YOLO Data Agent v1.0.2 发布",
       "url": "https://www.oschina.net/news/503098",
       "hot": "Mon, 19 Oct 2026 19:20:22 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "调问更新 9.25 ~ 10.19：智能回访上线，问卷设计与规则配置能力全面升级",
       "url": "https://www.oschina.net/news/503096",
       "hot": "Mon, 19 Oct 2026 17:48:45 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "RuleGo v1.0.0 发布：API 稳定承诺、多副本部署、规则链版本回滚",
       "url": "https://www.oschina.net/news/503095",
       "hot": "Mon, 19 Oct 2026 17:35:15 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "DBPanel 1.1.2 发布：新增 DBShop 极速安装，完善卸载重试与网站迁移恢复",
       "url": "https://www.oschina.net/news/503088",
       "hot": "Mon, 19 Oct 2026 14:23:54 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "VLOOK 2026.10～多项排版增强特性升级～好看好用 Markdown 主题包与排版增强插件",
       "url": "https://www.oschina.net/news/503087",
       "hot": "Mon, 19 Oct 2026 14:19:24 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "gfast 快速开发框架 V3.4.2 版本发布",
-      "url": "https://www.oschina.net/news/503086",
-      "hot": "Mon, 19 Oct 2026 11:56:17 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Skyeye 云企业级AI+零代码智能制造系统-财务板块 - v4.1.8发布",
-      "url": "https://www.oschina.net/news/503085",
-      "hot": "Mon, 19 Oct 2026 11:42:43 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "ToolForge v0.2.0 正式发布：插件市场全面升级，新增十余款工具！Rust + Tauri 开源工具箱再进化",
-      "url": "https://www.oschina.net/news/503084",
-      "hot": "Mon, 19 Oct 2026 10:52:29 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "WIKI 知识库 v1.1.3 正式发布",
-      "url": "https://www.oschina.net/news/503081",
-      "hot": "Mon, 19 Oct 2026 10:45:23 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "DeepSeek V4.1 Flash 更新：“许愿式编程”成真 + 搜索 API 开放",
-      "url": "https://www.oschina.net/news/503080",
-      "hot": "Mon, 19 Oct 2026 10:37:42 +0800"
     }
   ]
 }
