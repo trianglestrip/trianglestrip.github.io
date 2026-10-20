@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-20T06:35:01+00:00",
+  "updated_at": "2026-10-20T12:00:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "他用 Python 从零画了个编程字体，把 Univers 装进 JetBrains Mono 的比例",
+      "url": "https://www.oschina.net/news/503117/nordwand-mono",
+      "hot": "Tue, 20 Oct 2026 19:38:23 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek 开源推理框架 DeepInfer：服务链路的最后一块拼图",
+      "url": "https://www.oschina.net/news/503116",
+      "hot": "Tue, 20 Oct 2026 18:39:12 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "GrantForge 2026.2.0 正式发布：新增 Hive、Kafka、HBase、Trino、YARN 权限管理，全面增强策略引擎",
+      "url": "https://www.oschina.net/news/503115",
+      "hot": "Tue, 20 Oct 2026 16:23:16 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "DHH 吐槽中国软件：AI 模型很强，但许多软件依旧很粗糙",
+      "url": "https://www.oschina.net/news/503113",
+      "hot": "Tue, 20 Oct 2026 15:56:57 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "开源 AI 对 APEC 经济体的价值",
+      "url": "https://www.oschina.net/doc/674",
+      "hot": "Tue, 20 Oct 2026 15:40:00 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "DBErp v3.0.6 发布：增强库存预警、后台报表导出与结算一致性",
+      "url": "https://www.oschina.net/news/503111",
+      "hot": "Tue, 20 Oct 2026 15:10:29 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "美国禁止政府机构使用 DeepSeek",
+      "url": "https://www.oschina.net/news/503109",
+      "hot": "Tue, 20 Oct 2026 14:58:36 +0800"
+    },
+    {
+      "rank": 8,
       "title": "蚂蚁百灵开源 Ming-3.0 语音系列：给台词加个导演",
       "url": "https://www.oschina.net/news/503107",
       "hot": "Tue, 20 Oct 2026 12:04:03 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "Apache SeaTunnel 社区 2026 年 9 月贡献总结报告",
       "url": "https://www.oschina.net/news/503106",
       "hot": "Tue, 20 Oct 2026 11:49:52 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "CloudDM 4.5.0 发布，支持 Elasticsearch、崖山数据库",
       "url": "https://www.oschina.net/news/503105",
       "hot": "Tue, 20 Oct 2026 11:44:01 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "MiniMax M3.1 Flash 更新：Computer Use 国产第一，成本降 70%",
-      "url": "https://www.oschina.net/news/503104/minimax-m3-1-flash",
-      "hot": "Tue, 20 Oct 2026 10:35:31 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Kairoa v1.1.27 发布：REST API 客户端集合管理、响应面板与查询参数上新",
-      "url": "https://www.oschina.net/news/503099",
-      "hot": "Mon, 19 Oct 2026 23:07:08 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "开源数据智能 Agent：YOLO Data Agent v1.0.2 发布",
-      "url": "https://www.oschina.net/news/503098",
-      "hot": "Mon, 19 Oct 2026 19:20:22 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "调问更新 9.25 ~ 10.19：智能回访上线，问卷设计与规则配置能力全面升级",
-      "url": "https://www.oschina.net/news/503096",
-      "hot": "Mon, 19 Oct 2026 17:48:45 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "RuleGo v1.0.0 发布：API 稳定承诺、多副本部署、规则链版本回滚",
-      "url": "https://www.oschina.net/news/503095",
-      "hot": "Mon, 19 Oct 2026 17:35:15 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "DBPanel 1.1.2 发布：新增 DBShop 极速安装，完善卸载重试与网站迁移恢复",
-      "url": "https://www.oschina.net/news/503088",
-      "hot": "Mon, 19 Oct 2026 14:23:54 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "VLOOK 2026.10～多项排版增强特性升级～好看好用 Markdown 主题包与排版增强插件",
-      "url": "https://www.oschina.net/news/503087",
-      "hot": "Mon, 19 Oct 2026 14:19:24 +0800"
     }
   ]
 }

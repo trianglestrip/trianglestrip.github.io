@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-20T06:34:45+00:00",
+  "updated_at": "2026-10-20T12:00:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "一个周末就想把短链服务推到 10 万 QPS，真能靠加 Redis 做到吗？",
-      "url": "https://juejin.cn/post/7696889902293614642",
-      "hot": "2358"
+      "title": "为什么我在团队里禁止使用 axios？",
+      "url": "https://juejin.cn/post/7698268211587022874",
+      "hot": "774"
     },
     {
       "rank": 2,
-      "title": "玩了一天 REA，我号快没了",
-      "url": "https://juejin.cn/post/7698176323931979839",
-      "hot": "945"
+      "title": "AI 流式输出都用 SSE，什么时候必须换 WebSocket？",
+      "url": "https://juejin.cn/post/7697591781001691163",
+      "hot": "495"
     },
     {
       "rank": 3,
-      "title": "两个 WorkBuddy 客户端总被“合并”解决方法",
-      "url": "https://juejin.cn/post/7697162867455688719",
-      "hot": "531"
+      "title": "别再花钱调 OCR 接口了！这个国产开源工具，免费还能离线跑",
+      "url": "https://juejin.cn/post/7697873433354485770",
+      "hot": "441"
     },
     {
       "rank": 4,
-      "title": "AI 帮我写的小程序「厨菜记」上线满月了，挣了两百块！！！",
-      "url": "https://juejin.cn/post/7697873433355304970",
-      "hot": "504"
+      "title": "AI 流式传输工程指南：模型吐出半截 JSON，前端如何边收边渲染？",
+      "url": "https://juejin.cn/post/7697622920013021219",
+      "hot": "333"
     },
     {
       "rank": 5,
-      "title": "AI 流式输出都用 SSE，什么时候必须换 WebSocket？",
-      "url": "https://juejin.cn/post/7697591781001691163",
-      "hot": "423"
+      "title": "DeepSeek 又偷偷升级了：我实测了 V4.1-Flash-1017，一句话生成可玩游戏，但有个坑会吃掉你 90% 的预算",
+      "url": "https://juejin.cn/post/7697474838380134410",
+      "hot": "270"
     },
     {
       "rank": 6,
-      "title": "别再花钱调 OCR 接口了！这个国产开源工具，免费还能离线跑",
-      "url": "https://juejin.cn/post/7697873433354485770",
-      "hot": "378"
+      "title": "从 0 到 1：我用 300 行代码给 AI 记忆加上了“不可篡改的收据”（附开源实现）",
+      "url": "https://juejin.cn/post/7697418750073929762",
+      "hot": "252"
     },
     {
       "rank": 7,
-      "title": "为什么我在团队里禁止使用 axios？",
-      "url": "https://juejin.cn/post/7698268211587022874",
-      "hot": "378"
+      "title": "面向 Schema 配置编程，Vue3 动态表单支持弹框组件",
+      "url": "https://juejin.cn/post/7697474838380265482",
+      "hot": "243"
     },
     {
       "rank": 8,
-      "title": "AI 流式传输工程指南：模型吐出半截 JSON，前端如何边收边渲染？",
-      "url": "https://juejin.cn/post/7697622920013021219",
-      "hot": "288"
+      "title": "刷短剧上头后，我用5090和ComfyUI部署MiniMax H3",
+      "url": "https://juejin.cn/post/7697865664233947190",
+      "hot": "225"
     },
     {
       "rank": 9,
-      "title": "从Cursor到Codex，从Skills到Harness：AI编程正在经历第三次范式迁移",
-      "url": "https://juejin.cn/post/7672696268489408575",
-      "hot": "279"
+      "title": "如何低成本部署网站？Vercel 和 Cloudflare 怎么选？",
+      "url": "https://juejin.cn/post/7697615256115363882",
+      "hot": "225"
     },
     {
       "rank": 10,
-      "title": "从 0 到 1：我用 300 行代码给 AI 记忆加上了“不可篡改的收据”（附开源实现）",
-      "url": "https://juejin.cn/post/7697418750073929762",
-      "hot": "243"
+      "title": "Android 协程实践：为什么不应将 `supervisorScope` 作为常规方案",
+      "url": "https://juejin.cn/post/7697452953989480474",
+      "hot": "216"
     }
   ]
 }

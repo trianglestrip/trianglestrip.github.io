@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-20T06:35:02+00:00",
+  "updated_at": "2026-10-20T12:00:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "主题征文 ｜ 让鸿蒙应用，玩出新可能！",
+      "url": "https://www.infoq.cn/article/D8uCYSG2Sf29ybwp4i2g?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 20 Oct 2026 18:36:03 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "处理了 4000 万条消息后，我们总结了 Kafka 有序处理的几个关键设计",
+      "url": "https://www.infoq.cn/article/HoUf1pHD3WcZCK3YMe7m?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 20 Oct 2026 17:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Spanner Omni 正式可用：采用软件方案替代谷歌原子钟与文件系统",
+      "url": "https://www.infoq.cn/article/tTpKSzciXEpXuZduywdg?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 20 Oct 2026 15:22:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "突破长文本推理瓶颈 九章云极Alaya-DFlash2助GLM-5.3解码提速3.41倍",
+      "url": "https://www.infoq.cn/article/mJ5udryLFwjov1pk4Dsq?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 20 Oct 2026 15:07:31 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "AI生成的代码看不懂就扔掉重来：一位首席架构师的 5 条 Agent 编程反常识原则",
+      "url": "https://www.infoq.cn/article/tgqMEJsqXfX6YzAcOiAR?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 20 Oct 2026 15:05:27 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "AI Agent 越用越贵？如何借助可观测性平衡性能、质量与成本 ｜ 技术趋势",
+      "url": "https://www.infoq.cn/article/4FreCLUUQb4W4AXUhXo5?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 20 Oct 2026 14:55:22 GMT"
+    },
+    {
+      "rank": 7,
       "title": "Linux 异步多进程基础已稳固，但仍需进一步测试",
       "url": "https://www.infoq.cn/article/cioICj3URrN6Txq2hNjq?utm_source=rss&utm_medium=article",
       "hot": "Tue, 20 Oct 2026 13:47:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "调查发现：AI 生成代码会提升调试难度与故障发生率，并造成代码理解鸿沟",
       "url": "https://www.infoq.cn/article/ywvgVDVLsSU7r47Jk6lq?utm_source=rss&utm_medium=article",
       "hot": "Tue, 20 Oct 2026 11:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "RISC-V 加速进入 AI 与高性能计算：玄铁车规 IP、服务器芯片等新进展亮相",
       "url": "https://www.infoq.cn/article/J1Z3RYgH3Vyd9LFEfmlF?utm_source=rss&utm_medium=article",
       "hot": "Tue, 20 Oct 2026 10:51:46 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "失败一次，受益多次：测试 Agent 从记忆到持续学习的工程实践｜QCon上海",
       "url": "https://www.infoq.cn/article/ZyjObqGawfurPFLBQONd?utm_source=rss&utm_medium=article",
       "hot": "Tue, 20 Oct 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "Lyft将流式计算集群迁移到Apache Flink Kubernetes Operator",
-      "url": "https://www.infoq.cn/article/pvgeXQQbbt4TsPKeMMEL?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 20 Oct 2026 09:06:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "大批API账户被刷爆！OpenCode遭黑客围攻48小时，官方甩锅“蒸馏攻击”被质疑",
-      "url": "https://www.infoq.cn/article/K5J7yb60djWKM6vUZqwq?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 19 Oct 2026 21:48:11 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Jev迎来中国挑战者：StartLux登顶决策模型榜单，还学会了“拿不准再想”",
-      "url": "https://www.infoq.cn/article/bROfcYFpijQQVBz4NqDi?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 19 Oct 2026 20:33:34 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "谷歌开源Harness，支持 OpenCode 和 Codex：国内开发者接入Jev实测“真行”",
-      "url": "https://www.infoq.cn/article/AD1M3mJ2SH1dJrTA1r5q?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 19 Oct 2026 18:22:05 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Kubernetes多集群项目Karmada完成CNCF毕业",
-      "url": "https://www.infoq.cn/article/4t84hFyjYP6gq9KNWE60?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 19 Oct 2026 17:23:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "DoorDash的Flux在云端智能体上运行130000个工程任务",
-      "url": "https://www.infoq.cn/article/4IPptJpXQqX5Lr77uBFZ?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 19 Oct 2026 15:42:00 GMT"
     }
   ]
 }

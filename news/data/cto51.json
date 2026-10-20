@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-20T06:34:55+00:00",
+  "updated_at": "2026-10-20T12:00:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "在 HarmonyOS 6 上画了一张饼图，占比动画看得懂",
-      "url": "https://ost.51cto.com/posts/60302",
-      "hot": "前言：先把&ldquo;这一份占多少&rdquo;算明白饼图里一块颜色变大，表示的是它在总量里占的比例变大。这里最容易混淆的地方，是把输入数值直接当成百分..."
+      "title": "HarmonyOS开发助手实战：把一个待办小程序转换成元服务",
+      "url": "https://ost.51cto.com/posts/60310",
+      "hot": "大家好，今天介绍HarmonyOS开发助手的小程序转元服务能力。很多项目已经有运行中的小程序，页面和业务流程都比较完整。如果还想提供元服务..."
     },
     {
       "rank": 2,
-      "title": "用 HarmonyOS 6 的 SVG 画天气图标：下雨还带闪电",
-      "url": "https://ost.51cto.com/posts/60278",
-      "hot": "前言天气图标常常只占一小块地方，但云、雨滴和闪电一凑齐，几乎不用再解释&ldquo;雷阵雨&rdquo;是什么意思。做练习时，这种图案也很省事：轮廓不复杂..."
+      "title": "# 一套代码跑通四形态：HarmonyOS 多形态设备适配实战 #1024·向光而行·码向未来#",
+      "url": "https://ost.51cto.com/posts/60308",
+      "hot": "一、if(deviceType)这条路是死路很多团队的第一个方案是拿deviceInfo.deviceType（phonetablet2in1cartvwearable）写分支：tsif(deviceInfo..."
     },
     {
       "rank": 3,
