@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-19T23:00:44+00:00",
+  "updated_at": "2026-10-20T01:37:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "飞牛部署Damselfly实战：Docker Compose、照片目录、7100访问与固定地址",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/168342744",
-      "hot": "18576"
+      "title": "用 WorkBuddy + 麦当劳 MCP，做一个会算营养、比价格、还能下单的减脂私教",
+      "url": "https://blog.csdn.net/qq_33681891/article/details/168244556",
+      "hot": "16167"
     },
     {
       "rank": 2,
-      "title": "用 WorkBuddy + 麦当劳 MCP，做一个会算营养、比价格、还能下单的减脂私教",
-      "url": "https://blog.csdn.net/qq_33681891/article/details/168244556",
-      "hot": "16345"
+      "title": "飞牛部署Damselfly实战：Docker Compose、照片目录、7100访问与固定地址",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/168342744",
+      "hot": "13783"
     },
     {
       "rank": 3,
       "title": "极空间部署Portainer实战：Docker Socket、9000端口、容器管理与固定地址访问",
       "url": "https://blog.csdn.net/2401_87629362/article/details/168441006",
-      "hot": "13965"
+      "hot": "13000"
     },
     {
       "rank": 4,
-      "title": "Folia 音乐播放器下载使用教程：根据歌词自动生成炫酷动画MV的开源播放器",
-      "url": "https://blog.csdn.net/weixin_45787934/article/details/168340540",
-      "hot": "13750"
+      "title": "Spring Data JPA 实战——从实体映射到复杂查询",
+      "url": "https://blog.csdn.net/vipxieliang/article/details/168241583",
+      "hot": "12270"
     },
     {
       "rank": 5,
-      "title": "Spring Data JPA 实战——从实体映射到复杂查询",
-      "url": "https://blog.csdn.net/vipxieliang/article/details/168241583",
-      "hot": "12570"
+      "title": "【AI智能体】Codex 制作数字人商品展示和口播视频实战详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/167216255",
+      "hot": "12095"
     },
     {
       "rank": 6,
       "title": "Linux 网络：序列化与反序列化",
       "url": "https://blog.csdn.net/AbandonForce/article/details/168248445",
-      "hot": "12531"
+      "hot": "12081"
     },
     {
       "rank": 7,
       "title": "把 SQL 编辑器用顺：KSQL Developer 从补全到事务的实战笔记",
       "url": "https://blog.csdn.net/qq_57761637/article/details/168347190",
-      "hot": "11023"
+      "hot": "10687"
     },
     {
       "rank": 8,
-      "title": "Python 之外：启元 Q1 SDK 的 C++ 编译、示例与手写节点全实录",
-      "url": "https://blog.csdn.net/user340/article/details/168344560",
-      "hot": "9896"
+      "title": "介入式脑机接口的跨尺度神经解析与智能调控：技术范式、临床转化与治理框架(下)",
+      "url": "https://blog.csdn.net/kkiron/article/details/168344855",
+      "hot": "9615"
     },
     {
       "rank": 9,
-      "title": "介入式脑机接口的跨尺度神经解析与智能调控：技术范式、临床转化与治理框架(下)",
-      "url": "https://blog.csdn.net/kkiron/article/details/168344855",
-      "hot": "9145"
+      "title": "Python 之外：启元 Q1 SDK 的 C++ 编译、示例与手写节点全实录",
+      "url": "https://blog.csdn.net/user340/article/details/168344560",
+      "hot": "8704"
     },
     {
       "rank": 10,
-      "title": "【AI智能体】Codex 制作数字人商品展示和口播视频实战详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/167216255",
-      "hot": "8889"
+      "title": "Folia 音乐播放器下载使用教程：根据歌词自动生成炫酷动画MV的开源播放器",
+      "url": "https://blog.csdn.net/weixin_45787934/article/details/168340540",
+      "hot": "8106"
     }
   ]
 }
