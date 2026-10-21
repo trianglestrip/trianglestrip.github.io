@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-20T23:10:24+00:00",
+  "updated_at": "2026-10-21T01:30:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 制作数字人商品展示和口播视频实战详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/167216255",
-      "hot": "22641"
+      "hot": "26101"
     },
     {
       "rank": 2,
       "title": "极空间部署Portainer实战：Docker Socket、9000端口、容器管理与固定地址访问",
       "url": "https://blog.csdn.net/2401_87629362/article/details/168441006",
-      "hot": "16297"
+      "hot": "15414"
     },
     {
       "rank": 3,
       "title": "介入式脑机接口的跨尺度神经解析与智能调控：技术范式、临床转化与治理框架(下)",
       "url": "https://blog.csdn.net/kkiron/article/details/168344855",
-      "hot": "13526"
+      "hot": "13307"
     },
     {
       "rank": 4,
-      "title": "没有真机，我给启元 Q1 造了一台“假机器人“：官方 SDK 示例跑通实录",
-      "url": "https://blog.csdn.net/2401_86326742/article/details/168436243",
-      "hot": "12539"
+      "title": "CAPE-Bench 复算：内部状态线性读出预测 agent 越权与谎报，门控把越权率压到 0.09",
+      "url": "https://blog.csdn.net/wodekouwei/article/details/168426618",
+      "hot": "12367"
     },
     {
       "rank": 5,
-      "title": "CAPE-Bench 复算：内部状态线性读出预测 agent 越权与谎报，门控把越权率压到 0.09",
-      "url": "https://blog.csdn.net/wodekouwei/article/details/168426618",
-      "hot": "12324"
+      "title": "没有真机，我给启元 Q1 造了一台“假机器人“：官方 SDK 示例跑通实录",
+      "url": "https://blog.csdn.net/2401_86326742/article/details/168436243",
+      "hot": "11617"
     },
     {
       "rank": 6,
-      "title": "AI Agent 工具调用如何更可靠？Spring AI + MCP 实战：参数校验、权限校验与人工确认",
-      "url": "https://blog.csdn.net/2403_86779341/article/details/168550000",
-      "hot": "10995"
+      "title": "玩客云部署EasyVoice实战：HiNas、Docker、ARMv7、9001与固定地址访问(1)",
+      "url": "https://blog.csdn.net/2302_79376097/article/details/168452632",
+      "hot": "8764"
     },
     {
       "rank": 7,
-      "title": "【Valhalla L3静态源码审计】craft-launcher｜GitHub本日热度榜第5名 Rust多软件套件启动器 只读证据尽调报告",
-      "url": "https://blog.csdn.net/TunerT_TQ/article/details/168342536",
-      "hot": "9368"
+      "title": "Python 之外：启元 Q1 SDK 的 C++ 编译、示例与手写节点全实录",
+      "url": "https://blog.csdn.net/user340/article/details/168344560",
+      "hot": "8337"
     },
     {
       "rank": 8,
-      "title": "Python 之外：启元 Q1 SDK 的 C++ 编译、示例与手写节点全实录",
-      "url": "https://blog.csdn.net/user340/article/details/168344560",
-      "hot": "9159"
+      "title": "AI Agent 工具调用如何更可靠？Spring AI + MCP 实战：参数校验、权限校验与人工确认",
+      "url": "https://blog.csdn.net/2403_86779341/article/details/168550000",
+      "hot": "7849"
     },
     {
       "rank": 9,
-      "title": "玩客云部署EasyVoice实战：HiNas、Docker、ARMv7、9001与固定地址访问(1)",
-      "url": "https://blog.csdn.net/2302_79376097/article/details/168452632",
-      "hot": "9099"
+      "title": "【Valhalla L3静态源码审计】craft-launcher｜GitHub本日热度榜第5名 Rust多软件套件启动器 只读证据尽调报告",
+      "url": "https://blog.csdn.net/TunerT_TQ/article/details/168342536",
+      "hot": "7543"
     },
     {
       "rank": 10,
-      "title": "分布式系统——Redis集群：哈希槽分区、故障转移与扩容",
-      "url": "https://blog.csdn.net/2302_80105876/article/details/168450878",
-      "hot": "7845"
+      "title": "Folia 音乐播放器下载使用教程：根据歌词自动生成炫酷动画MV的开源播放器",
+      "url": "https://blog.csdn.net/weixin_45787934/article/details/168340540",
+      "hot": "7012"
     }
   ]
 }
