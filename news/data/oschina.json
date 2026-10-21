@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-21T06:22:41+00:00",
+  "updated_at": "2026-10-21T12:03:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "从开源创新到全球增长 | 2026 上海开源软件应用创新大赛颁奖典礼暨创新增长大会",
+      "url": "https://www.oschina.net/news/503142",
+      "hot": "Wed, 21 Oct 2026 19:45:10 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Meta Muse 分享对话可被陌生人找到：标题写进 URL、一次 DNS 查询全暴露",
+      "url": "https://www.oschina.net/news/503140/meta-muse-exposes-users-personal-when-they-share-conversations",
+      "hot": "Wed, 21 Oct 2026 18:35:57 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "CSS 的下一步：@function 和 corner-shape，浏览器厂商正联手推进",
+      "url": "https://www.oschina.net/news/503139/interop-2027",
+      "hot": "Wed, 21 Oct 2026 17:31:03 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "ApiGo 5.4.0发布，加固安全认证",
+      "url": "https://www.oschina.net/news/503138",
+      "hot": "Wed, 21 Oct 2026 15:45:23 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Mistral 发布 Voxtral 3，支持 50 多种语言的语音 Agent SDK",
+      "url": "https://www.oschina.net/news/503136/mistral-ai-voxtral-3",
+      "hot": "Wed, 21 Oct 2026 15:31:23 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "喜讯 | 玖章算术（NineData）成为中国通信学会单位会员",
+      "url": "https://www.oschina.net/news/503133",
+      "hot": "Wed, 21 Oct 2026 14:54:45 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "PHP 两个 RCE 漏洞被提前泄露，紧急补丁明天发",
+      "url": "https://www.oschina.net/news/503132/php-cve-2026-109618-cve-2026-109619-rce",
+      "hot": "Wed, 21 Oct 2026 14:54:00 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "qData 数据中台开源版 v1.6.4 发布：修复数仓分层状态提示、帮助文档跳转及人大金仓编码问题",
+      "url": "https://www.oschina.net/news/503131",
+      "hot": "Wed, 21 Oct 2026 14:35:02 +0800"
+    },
+    {
+      "rank": 9,
       "title": "BeetlSQL 3.41 发布，翻页查询增强",
       "url": "https://www.oschina.net/news/503129",
       "hot": "Wed, 21 Oct 2026 13:10:32 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "DeepSeek 与华为合作设计 AI 芯片，训练环节彻底“去英伟达化”",
       "url": "https://www.oschina.net/news/503127",
       "hot": "Wed, 21 Oct 2026 12:04:23 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "EasyGoAdmin 敏捷开发框架 GoFrame+EleVue 版本 v2.8.0 发布",
-      "url": "https://www.oschina.net/news/503126",
-      "hot": "Wed, 21 Oct 2026 11:27:56 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "Linux 7.4 引入 1.7 万行 Rust 内核代码，Zerocopy 一次跨八个版本",
-      "url": "https://www.oschina.net/news/503125",
-      "hot": "Wed, 21 Oct 2026 11:02:52 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "OpenBSD 8.0 发布：amd64 地址空间翻 128 倍，补上 hibernate",
-      "url": "https://www.oschina.net/news/503124/openbsd-8-0-released",
-      "hot": "Wed, 21 Oct 2026 10:46:27 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "AI时代，神话并未消失：人类正在创造新的“数字神明”",
-      "url": "https://www.oschina.net/news/503123",
-      "hot": "Wed, 21 Oct 2026 09:59:21 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "服务器监控系统WGCLOUD v4.0.1 里程碑版本正式发布",
-      "url": "https://www.oschina.net/news/503120",
-      "hot": "Wed, 21 Oct 2026 08:57:19 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Zentrola 1.2.1 发布：模型目录同步、Claude 订阅额度与计费修复",
-      "url": "https://www.oschina.net/news/503119",
-      "hot": "Tue, 20 Oct 2026 22:05:33 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Jync 捷同 v1.7.6发布 首次全量同步大幅提速",
-      "url": "https://www.oschina.net/news/503118",
-      "hot": "Tue, 20 Oct 2026 21:44:25 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "他用 Python 从零画了个编程字体，把 Univers 装进 JetBrains Mono 的比例",
-      "url": "https://www.oschina.net/news/503117/nordwand-mono",
-      "hot": "Tue, 20 Oct 2026 19:38:23 +0800"
     }
   ]
 }
