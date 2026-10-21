@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-21T12:03:14+00:00",
+  "updated_at": "2026-10-21T17:04:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "2026 上海开源大赛「智算云赛道」决赛名单公布",
+      "url": "https://www.oschina.net/news/503144",
+      "hot": "Wed, 21 Oct 2026 22:16:01 +0800"
+    },
+    {
+      "rank": 2,
       "title": "从开源创新到全球增长 | 2026 上海开源软件应用创新大赛颁奖典礼暨创新增长大会",
       "url": "https://www.oschina.net/news/503142",
       "hot": "Wed, 21 Oct 2026 19:45:10 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Meta Muse 分享对话可被陌生人找到：标题写进 URL、一次 DNS 查询全暴露",
       "url": "https://www.oschina.net/news/503140/meta-muse-exposes-users-personal-when-they-share-conversations",
       "hot": "Wed, 21 Oct 2026 18:35:57 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "CSS 的下一步：@function 和 corner-shape，浏览器厂商正联手推进",
       "url": "https://www.oschina.net/news/503139/interop-2027",
       "hot": "Wed, 21 Oct 2026 17:31:03 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "ApiGo 5.4.0发布，加固安全认证",
       "url": "https://www.oschina.net/news/503138",
       "hot": "Wed, 21 Oct 2026 15:45:23 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Mistral 发布 Voxtral 3，支持 50 多种语言的语音 Agent SDK",
       "url": "https://www.oschina.net/news/503136/mistral-ai-voxtral-3",
       "hot": "Wed, 21 Oct 2026 15:31:23 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "喜讯 | 玖章算术（NineData）成为中国通信学会单位会员",
       "url": "https://www.oschina.net/news/503133",
       "hot": "Wed, 21 Oct 2026 14:54:45 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "PHP 两个 RCE 漏洞被提前泄露，紧急补丁明天发",
       "url": "https://www.oschina.net/news/503132/php-cve-2026-109618-cve-2026-109619-rce",
       "hot": "Wed, 21 Oct 2026 14:54:00 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "qData 数据中台开源版 v1.6.4 发布：修复数仓分层状态提示、帮助文档跳转及人大金仓编码问题",
       "url": "https://www.oschina.net/news/503131",
       "hot": "Wed, 21 Oct 2026 14:35:02 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "BeetlSQL 3.41 发布，翻页查询增强",
       "url": "https://www.oschina.net/news/503129",
       "hot": "Wed, 21 Oct 2026 13:10:32 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "DeepSeek 与华为合作设计 AI 芯片，训练环节彻底“去英伟达化”",
-      "url": "https://www.oschina.net/news/503127",
-      "hot": "Wed, 21 Oct 2026 12:04:23 +0800"
     }
   ]
 }
