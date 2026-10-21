@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-21T01:30:21+00:00",
+  "updated_at": "2026-10-21T06:22:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "为什么我在团队里禁止使用 axios？",
       "url": "https://juejin.cn/post/7698268211587022874",
-      "hot": "1125"
+      "hot": "1494"
     },
     {
       "rank": 2,
       "title": "AI 流式输出都用 SSE，什么时候必须换 WebSocket？",
       "url": "https://juejin.cn/post/7697591781001691163",
-      "hot": "576"
+      "hot": "675"
     },
     {
       "rank": 3,
       "title": "别再花钱调 OCR 接口了！这个国产开源工具，免费还能离线跑",
       "url": "https://juejin.cn/post/7697873433354485770",
-      "hot": "495"
+      "hot": "603"
     },
     {
       "rank": 4,
-      "title": "AI 流式传输工程指南：模型吐出半截 JSON，前端如何边收边渲染？",
-      "url": "https://juejin.cn/post/7697622920013021219",
-      "hot": "387"
+      "title": "探索副业五个月，最终以放弃告终",
+      "url": "https://juejin.cn/post/7698569506813394959",
+      "hot": "567"
     },
     {
       "rank": 5,
-      "title": "DeepSeek 又偷偷升级了：我实测了 V4.1-Flash-1017，一句话生成可玩游戏，但有个坑会吃掉你 90% 的预算",
-      "url": "https://juejin.cn/post/7697474838380134410",
-      "hot": "342"
+      "title": "AI 流式传输工程指南：模型吐出半截 JSON，前端如何边收边渲染？",
+      "url": "https://juejin.cn/post/7697622920013021219",
+      "hot": "423"
     },
     {
       "rank": 6,
-      "title": "探索副业五个月，最终以放弃告终",
-      "url": "https://juejin.cn/post/7698569506813394959",
-      "hot": "306"
+      "title": "DeepSeek 又偷偷升级了：我实测了 V4.1-Flash-1017，一句话生成可玩游戏，但有个坑会吃掉你 90% 的预算",
+      "url": "https://juejin.cn/post/7697474838380134410",
+      "hot": "414"
     },
     {
       "rank": 7,
       "title": "从 0 到 1：我用 300 行代码给 AI 记忆加上了“不可篡改的收据”（附开源实现）",
       "url": "https://juejin.cn/post/7697418750073929762",
-      "hot": "288"
+      "hot": "324"
     },
     {
       "rank": 8,
-      "title": "面向 Schema 配置编程，Vue3 动态表单支持弹框组件",
-      "url": "https://juejin.cn/post/7697474838380265482",
-      "hot": "261"
+      "title": "纯前端预览 275 种文件格式是怎么做到的",
+      "url": "https://juejin.cn/post/7697865664232702006",
+      "hot": "315"
     },
     {
       "rank": 9,
       "title": "刷短剧上头后，我用5090和ComfyUI部署MiniMax H3",
       "url": "https://juejin.cn/post/7697865664233947190",
-      "hot": "252"
+      "hot": "297"
     },
     {
       "rank": 10,
-      "title": "Android 协程实践：为什么不应将 `supervisorScope` 作为常规方案",
-      "url": "https://juejin.cn/post/7697452953989480474",
-      "hot": "252"
+      "title": "程序员 1v1 访谈系列第四期：全栈比 Agent 重要",
+      "url": "https://juejin.cn/post/7697622920013987875",
+      "hot": "297"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-20T23:10:47+00:00",
+  "updated_at": "2026-10-21T06:22:54+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "rank": 2,
-      "title": "MOSS-Image Technical Report",
-      "url": "https://huggingface.co/papers/2610.23374",
-      "hot": "74"
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "62"
     },
     {
       "rank": 3,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "61"
+      "title": "MOSS-Image Technical Report",
+      "url": "https://huggingface.co/papers/2610.23374",
+      "hot": "77"
     },
     {
       "rank": 4,
-      "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
-      "url": "https://huggingface.co/papers/2609.18063",
-      "hot": "29"
-    },
-    {
-      "rank": 5,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "153"
     },
     {
-      "rank": 6,
-      "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
-      "url": "https://huggingface.co/papers/2610.22471",
-      "hot": "421"
+      "rank": 5,
+      "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+      "url": "https://huggingface.co/papers/2609.18063",
+      "hot": "29"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation",
       "url": "https://huggingface.co/papers/2610.14162",
       "hot": "8"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
       "url": "https://huggingface.co/papers/2610.08699",
       "hot": "117"
     },
     {
-      "rank": 9,
-      "title": "Internal Safety Collapse in Frontier Large Language Models",
-      "url": "https://huggingface.co/papers/2603.23509",
-      "hot": "31"
+      "rank": 8,
+      "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+      "url": "https://huggingface.co/papers/2610.22471",
+      "hot": "429"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "MemT-1.0: Towards Memory-Native Evolution",
       "url": "https://huggingface.co/papers/2610.26825",
       "hot": "146"
+    },
+    {
+      "rank": 10,
+      "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
+      "url": "https://huggingface.co/papers/2609.33757",
+      "hot": "223"
     }
   ]
 }

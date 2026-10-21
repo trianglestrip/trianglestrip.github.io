@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-21T01:30:28+00:00",
+  "updated_at": "2026-10-21T06:22:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS开发助手实战：把一个待办小程序转换成元服务",
-      "url": "https://ost.51cto.com/posts/60310",
-      "hot": "大家好，今天介绍HarmonyOS开发助手的小程序转元服务能力。很多项目已经有运行中的小程序，页面和业务流程都比较完整。如果还想提供元服务..."
+      "title": "#1024·向光而行·码向未来#HarmonyOS 7.0 端侧3DGS实验④：第一次端侧重建",
+      "url": "https://ost.51cto.com/posts/60391",
+      "hot": "一、前言在&ldquo;桌面三维记录册&rdquo;的任务详情页中，&ldquo;开始重建&rdquo;只是一个入口。用户真正需要知道的是：输入是否被接收、重建是否完成、结果是否..."
     },
     {
       "rank": 2,
-      "title": "一套代码跑通四形态：HarmonyOS 多形态设备适配实战 #1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/60308",
-      "hot": "一、if(deviceType)这条路是死路很多团队的第一个方案是拿deviceInfo.deviceType（phonetablet2in1cartvwearable）写分支：tsif(deviceInfo..."
+      "title": "AI冲击办公室：女性主导岗位为何更脆弱？",
+      "url": "https://www.51cto.com/article/858822.html",
+      "hot": "外媒近日刊文指出，随着人工智能加速进入办公室和行政场景，女性就业正面临新一轮技术冲击。"
     },
     {
       "rank": 3,
-      "title": "K8s 运维告别凌晨救火！AIOps 四大能力解决告警泛滥、根因排查难题",
-      "url": "https://www.51cto.com/article/858694.html",
-      "hot": "AIOps 智能运维的普及，正在终结 K8s 运维的 “人肉救火时代”，把运维从被动排障，彻底推向主动预判、智能诊断、自动自愈的全新阶段。"
+      "title": "鸿蒙系统源码扩展：手把手教你添加第三方软件包",
+      "url": "https://ost.51cto.com/posts/60369",
+      "hot": "鸿蒙系统源码扩展：手把手教你添加第三方软件包在嵌入式系统开发中，复用成熟的第三方开源库是提升开发效率、保证软件质量的重要手段。鸿蒙..."
     },
     {
       "rank": 4,
-      "title": "装了 GSS 0.0.6 跑了一遍，劝你别把它当 Three.js 平替",
-      "url": "https://www.51cto.com/article/858693.html",
-      "hot": "速查：GSS（GPU Style Sheets）是把类 CSS 语法编译成着色器的实验工具，底层是 SDF 光线步进，不是通用 3D 引擎。它能帮前端免写着色器做出程序化 3D 视觉，但做不了真实模型导入，且处于 0.0.6 单人维护阶段，适合当玩具探索，切忌用于生产。"
+      "title": "AI Agent 工程落地  - Agent 不是聊天机器人：一篇讲清能力边界、场景决策与 ROI",
+      "url": "https://www.51cto.com/article/858821.html",
+      "hot": "你接过的第一个「Agent 需求」，大概率长这样：老板看完发布会，说「我们也做一个 AI Agent」，然后团队开始写代码。三个月后，Demo 很惊艳，业务方却问了一句：「这东西能帮我干什么？」"
     },
     {
       "rank": 5,
-      "title": "北大、VGI Labs和加州大学联合提出DynStream：首个大规模无位姿流式动态场景的高斯前馈重建框架",
-      "url": "https://www.51cto.com/article/858690.html",
-      "hot": "北京大学王选计算机研究所王勇涛团队和通视智能（VGI Labs）、UC Merced 联合推出的工作 DynStream 围绕这一问题提出在线流式 4D 高斯前馈重建框架。"
+      "title": "尤雨溪力荐！Vue AI 编程神器 V19 发布！",
+      "url": "https://www.51cto.com/article/858820.html",
+      "hot": "vuejs-ai/skills 是一套专门为 Vue 3 AI 编程打造的 Skills。简单来说，就是给 Codex、Claude Code 等 AI 编程工具补上一套 Vue 开发最佳实践。"
     },
     {
       "rank": 6,
-      "title": "Loop Transformer走向视觉语言模型，百度联合清华人大高瓴开源LoopVL",
-      "url": "https://www.51cto.com/article/858686.html",
-      "hot": "近日，来自中国人民大学、百度、清枢智汇、上海交通大学、清华等机构的研究者提出 LoopVL，围绕这一问题完成了从语言预训练到多模态后训练的系统探索。除了验证循环视觉语言建模的可行性，团队还观察到明显的跨循环视觉注意力重组，并将其称为 Visual Aha Moment。"
+      "title": "VLM脑中真有一张3D地图？匹兹堡大学挖出了新证据",
+      "url": "https://www.51cto.com/article/858819.html",
+      "hot": "匹兹堡大学的研究人员将研究视角从模型的最终答案转向隐空间，也就是模型在处理输入时形成的内部数值表征。"
     },
     {
       "rank": 7,
-      "title": "GPT-6-Astra具身能力遭大考！传统基准拿满分，真机频碰壁",
-      "url": "https://www.51cto.com/article/858685.html",
-      "hot": "近日，商汤联合大晓机器人、Ropedia、新加坡南洋理工大学和东京大学的研究团队在《Has GPT-6-Astra Achieved Embodied Intelligence?》中，给出了覆盖 12 项仿真评测、8 个真实机器人平台的系统分析。"
+      "title": "TLM提出新训练配方：随机训练一个前缀，再用满层预测稳住模型质量",
+      "url": "https://www.51cto.com/article/858816.html",
+      "hot": "大多数臂只有一个随机种子，只有两条主 TLM 臂另有第二种子与配对 bootstrap 区间。8B 至 70B 是否保留“满层质量—连续覆盖”的取舍尚未测出；参数量轴上的优势会因共享 embedding 与 head 而缩小；生成中途切换层深还需要处理 KV cache。代码和精确配置计划在发表时公开，当前不应把它写成已经可复现的公开训练流程。"
     },
     {
       "rank": 8,
-      "title": "前端大一统，终于有人说清楚了",
-      "url": "https://www.51cto.com/article/858682.html",
-      "hot": "最近看到的一篇文章，就从这个角度重新梳理了 React、HTMX、LiveView 等前端方案。而更有意思的是，Solid 2.0 正在尝试把这些能力放进同一个架构模型里。"
+      "title": "刚刚，Claude 64小时设计31万种蛋白，17种通过实验验证",
+      "url": "https://www.51cto.com/article/858813.html",
+      "hot": "Anthropic 公布了一项生物学研究：Claude 在 64 小时内生成了 318484 种蛋白质设计，试图找到能够结合蝎毒神经毒素的候选分子。"
     },
     {
       "rank": 9,
-      "title": "Claude要会「读心」了？Anthropic神秘新模型曝光",
-      "url": "https://www.51cto.com/article/858680.html",
-      "hot": "据 The Information 最新爆料，Anthropic 正准备推出一款新模型，推理能力和直觉判断能力据称超过目前所有已经商用的 Anthropic 模型。"
+      "title": "游戏开发也能自我进化？RSIGame让AI自主试玩、修复与迭代，27B模型组合超GPT-5.5一次生成",
+      "url": "https://www.51cto.com/article/858812.html",
+      "hot": "来自 UC San Diego、ByteDance 和 Carnegie Mellon University 的研究团队提出了 RSIGame。"
     },
     {
       "rank": 10,
-      "title": "刚刚，全球首个机器人大脑API开放！英伟达DreamZero团队创业，葛云皓任CTO",
-      "url": "https://www.51cto.com/article/858679.html",
-      "hot": "这支来自英伟达的团队今年 2 月提出了 世界动作模型（WAM），WAM 如今已是具身智能最热的路线之一。"
+      "title": "RSI三块关键拼图，MemT 1.0从模型层补上「记忆」",
+      "url": "https://www.51cto.com/article/858807.html",
+      "hot": "大家在将目光投向AI自我改进的同时，一个更值得追问的基础问题浮出水面：一次改进，如何成为下一次的起点？"
     }
   ]
 }

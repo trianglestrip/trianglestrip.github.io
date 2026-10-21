@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-21T01:30:33+00:00",
+  "updated_at": "2026-10-21T06:22:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Cloudflare 开源面向 AI 智能体的决策模型 Clef",
+      "url": "https://www.infoq.cn/article/iqCrZLLizNkRTpfo2Jrb?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 21 Oct 2026 13:47:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Agent 删库频频发生，几十年前就有的数据库防呆机制不管用了？",
+      "url": "https://www.infoq.cn/article/2Z056Q54wWa6vAIQKsqJ?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 21 Oct 2026 12:10:15 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "DeepSeek开源最新推理框架：单集群日吞吐155万亿Token，KVCache可保存7天",
+      "url": "https://www.infoq.cn/article/NBXP966Bz3eqr6Qidvaf?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 21 Oct 2026 12:06:48 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Anthropic几乎停招初级员工！占比一年半骤降33%：Agent工时已是员工6倍",
+      "url": "https://www.infoq.cn/article/bTVDaYaUJy2OvNlyuHgz?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 21 Oct 2026 12:01:59 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "AI 能否取代渗透测试？Cloudflare 的答案是：必须套上测试框架",
+      "url": "https://www.infoq.cn/article/R2z2kCkRHhXwGqDZeMKN?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 21 Oct 2026 11:00:00 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "720P 直升 8K，解密 2026 抖音美好奇妙夜巨幕超分黑科技",
+      "url": "https://www.infoq.cn/article/2wtRouOh1O69dLA8f4Vm?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 21 Oct 2026 10:24:22 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "美团企业级 Agent 的平台化应用实践｜QCon上海",
+      "url": "https://www.infoq.cn/article/BQJltkL1FJ9AG3cMeUmB?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 21 Oct 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 8,
       "title": "Grab 日均 10 亿次请求换掉旧存储，P99 延迟降低 50%",
       "url": "https://www.infoq.cn/article/39xM9CkCb4jcZ9yra6o6?utm_source=rss&utm_medium=article",
       "hot": "Wed, 21 Oct 2026 09:21:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "北大博士、零一万物联创黄文灏加入字节 Seed 两年后离职，下一步或创业",
       "url": "https://www.infoq.cn/article/Xkjg7bLE3o6l9qCidVX0?utm_source=rss&utm_medium=article",
       "hot": "Wed, 21 Oct 2026 00:35:12 GMT"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "比 Opus 5.5 便宜 88 倍！MiniMax M3.1 Flash “杀“回王座，顺手拿了个  Agent 国模第一",
       "url": "https://www.infoq.cn/article/7Twa7KBWIzi8JGOdVwCK?utm_source=rss&utm_medium=article",
       "hot": "Wed, 21 Oct 2026 00:26:48 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "主题征文 ｜ 让鸿蒙应用，玩出新可能！",
-      "url": "https://www.infoq.cn/article/D8uCYSG2Sf29ybwp4i2g?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 20 Oct 2026 18:36:03 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "处理了 4000 万条消息后，我们总结了 Kafka 有序处理的几个关键设计",
-      "url": "https://www.infoq.cn/article/HoUf1pHD3WcZCK3YMe7m?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 20 Oct 2026 17:00:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "Spanner Omni 正式可用：采用软件方案替代谷歌原子钟与文件系统",
-      "url": "https://www.infoq.cn/article/tTpKSzciXEpXuZduywdg?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 20 Oct 2026 15:22:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "突破长文本推理瓶颈 九章云极Alaya-DFlash2助GLM-5.3解码提速3.41倍",
-      "url": "https://www.infoq.cn/article/mJ5udryLFwjov1pk4Dsq?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 20 Oct 2026 15:07:31 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "AI生成的代码看不懂就扔掉重来：一位首席架构师的 5 条 Agent 编程反常识原则",
-      "url": "https://www.infoq.cn/article/tgqMEJsqXfX6YzAcOiAR?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 20 Oct 2026 15:05:27 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "AI Agent 越用越贵？如何借助可观测性平衡性能、质量与成本 ｜ 技术趋势",
-      "url": "https://www.infoq.cn/article/4FreCLUUQb4W4AXUhXo5?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 20 Oct 2026 14:55:22 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Linux 异步多进程基础已稳固，但仍需进一步测试",
-      "url": "https://www.infoq.cn/article/cioICj3URrN6Txq2hNjq?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 20 Oct 2026 13:47:00 GMT"
     }
   ]
 }

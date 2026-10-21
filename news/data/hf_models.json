@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-20T23:10:46+00:00",
+  "updated_at": "2026-10-21T06:22:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "hot": "1945"
+      "hot": "2010"
     },
     {
       "rank": 2,
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "hot": "1086"
+      "hot": "1108"
     },
     {
       "rank": 3,
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
-      "hot": "835"
+      "hot": "847"
     },
     {
       "rank": 4,
       "title": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-      "hot": "607"
+      "hot": "613"
     },
     {
       "rank": 5,
-      "title": "google/embeddinggemma-2",
-      "url": "https://huggingface.co/google/embeddinggemma-2",
-      "hot": "2763"
+      "title": "black-forest-labs/flux-3-image-klein",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "hot": "573"
     },
     {
       "rank": 6,
-      "title": "black-forest-labs/flux-3-image-klein",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-      "hot": "563"
+      "title": "google/embeddinggemma-2",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "hot": "2776"
     },
     {
       "rank": 7,
       "title": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-      "hot": "495"
+      "hot": "506"
     },
     {
       "rank": 8,
-      "title": "jialinyyzz/humanizer",
-      "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "hot": "2022"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "8650"
     },
     {
       "rank": 9,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "8616"
+      "title": "jialinyyzz/humanizer",
+      "url": "https://huggingface.co/jialinyyzz/humanizer",
+      "hot": "2029"
     },
     {
       "rank": 10,
       "title": "OpenMOSS-Team/MOSS-Image-Base",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
-      "hot": "433"
+      "hot": "439"
     }
   ]
 }
