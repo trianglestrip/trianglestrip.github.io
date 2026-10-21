@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-10-21T17:04:09+00:00",
+  "updated_at": "2026-10-21T23:34:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Python] MadsLorentzen/ai-job-search",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "hot": "62,706"
+      "title": "[JavaScript] cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "hot": "36,348"
     },
     {
       "rank": 2,
-      "title": "[JavaScript] cloudflare/security-audit-skill",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "hot": "35,454"
+      "title": "[Python] vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "hot": "94,847"
     },
     {
       "rank": 3,
-      "title": "[Python] vllm-project/vllm",
-      "url": "https://github.com/vllm-project/vllm",
-      "hot": "94,762"
+      "title": "[TypeScript] stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "hot": "101,193"
     },
     {
       "rank": 4,
-      "title": "[TypeScript] stablyai/orca",
-      "url": "https://github.com/stablyai/orca",
-      "hot": "100,872"
+      "title": "[Python] headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "hot": "77,235"
     },
     {
       "rank": 5,
-      "title": "[Python] headroomlabs-ai/headroom",
-      "url": "https://github.com/headroomlabs-ai/headroom",
-      "hot": "77,107"
+      "title": "[JavaScript] DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "hot": "171,552"
     },
     {
       "rank": 6,
-      "title": "[JavaScript] DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "hot": "171,114"
+      "title": "[Python] Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "hot": "141,485"
     },
     {
       "rank": 7,
-      "title": "[Python] Comfy-Org/ComfyUI",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "hot": "141,335"
+      "title": "[TypeScript] supabase/supabase",
+      "url": "https://github.com/supabase/supabase",
+      "hot": "112,973"
     },
     {
       "rank": 8,
-      "title": "[TypeScript] supabase/supabase",
-      "url": "https://github.com/supabase/supabase",
-      "hot": "112,783"
+      "title": "[TypeScript] twentyhq/twenty",
+      "url": "https://github.com/twentyhq/twenty",
+      "hot": "59,135"
     },
     {
       "rank": 9,
-      "title": "[TypeScript] twentyhq/twenty",
-      "url": "https://github.com/twentyhq/twenty",
-      "hot": "58,953"
+      "title": "[Python] shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "hot": "42,806"
     },
     {
       "rank": 10,
-      "title": "[Python] shiyu-coder/Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "hot": "42,697"
+      "title": "[Rust] akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "hot": "12,306"
     }
   ]
 }

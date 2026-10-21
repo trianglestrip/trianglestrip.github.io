@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-21T20:33:26+00:00",
+  "updated_at": "2026-10-21T23:34:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Mistral Large 4",
-      "url": "https://docs.mistral.ai/models/mistral-large-4-0",
-      "hot": "202"
+      "title": "Railway Security Disclosure",
+      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+      "hot": "206"
     },
     {
       "rank": 2,
       "title": "Today's PHP security release, and how we're strengthening security",
       "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
-      "hot": "451"
+      "hot": "634"
     },
     {
       "rank": 3,
-      "title": "Google's Rust Style Guide",
-      "url": "https://google.github.io/styleguide/rustguide.html",
-      "hot": "63"
+      "title": "GitLab Critical Patch Release",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+      "hot": "210"
     },
     {
       "rank": 4,
-      "title": "GitLab CVSS 10.0 Integer Overflow issue",
-      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
-      "hot": "61"
+      "title": "No More Icons in Every Menu by Default",
+      "url": "https://blog.jim-nielsen.com/2026/icons-in-every-menu/",
+      "hot": "112"
     },
     {
       "rank": 5,
-      "title": "Why Windows 11 still ships with Windows 95's memory manager hidden inside it",
-      "url": "https://www.windowslatest.com/2026/10/19/why-windows-11-still-ships-with-windows-95s-memory-manager-hidden-inside-it/",
-      "hot": "52"
+      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+      "hot": "406"
     },
     {
       "rank": 6,
-      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
-      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
-      "hot": "323"
+      "title": "Google's Rust Style Guide",
+      "url": "https://google.github.io/styleguide/rustguide.html",
+      "hot": "152"
     },
     {
       "rank": 7,
       "title": "Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds",
       "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
-      "hot": "745"
+      "hot": "813"
     },
     {
       "rank": 8,
-      "title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
-      "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
-      "hot": "314"
+      "title": "Why Windows 11 still ships with Windows 95's memory manager hidden inside it",
+      "url": "https://www.windowslatest.com/2026/10/19/why-windows-11-still-ships-with-windows-95s-memory-manager-hidden-inside-it/",
+      "hot": "116"
     },
     {
       "rank": 9,
-      "title": "EA is shutting down BioWare",
-      "url": "https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware",
-      "hot": "320"
+      "title": "Claude Duet",
+      "url": "https://claude.com/product/claude-duet",
+      "hot": "280"
     },
     {
       "rank": 10,
-      "title": "After automation: Solo founding will be the default",
-      "url": "https://every.to/thesis-statements/julian-weisser",
-      "hot": "14"
+      "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+      "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+      "hot": "302"
     }
   ]
 }
