@@ -1,8 +1,9 @@
 {
   "source": "solidot",
   "title": "Solidot",
-  "updated_at": "2026-10-21T17:03:41+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-10-21T20:31:50+00:00",
+  "fetch_ok": false,
+  "error": "<urlopen error [Errno 111] Connection refused>",
   "items": [
     {
       "rank": 1,

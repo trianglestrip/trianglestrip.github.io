@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-21T17:04:20+00:00",
+  "updated_at": "2026-10-21T20:33:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "PHP 8.2.35",
-      "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
-      "hot": "683"
+      "title": "Mistral Large 4",
+      "url": "https://docs.mistral.ai/models/mistral-large-4-0",
+      "hot": "202"
     },
     {
       "rank": 2,
-      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+      "title": "Today's PHP security release, and how we're strengthening security",
       "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
-      "hot": "150"
+      "hot": "451"
     },
     {
       "rank": 3,
-      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
-      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
-      "hot": "146"
+      "title": "Google's Rust Style Guide",
+      "url": "https://google.github.io/styleguide/rustguide.html",
+      "hot": "63"
     },
     {
       "rank": 4,
-      "title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
-      "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
-      "hot": "212"
+      "title": "GitLab CVSS 10.0 Integer Overflow issue",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+      "hot": "61"
     },
     {
       "rank": 5,
-      "title": "Oregon lawmakers approve money to buy an iconic waterfall listed on Redfin",
-      "url": "https://apnews.com/article/oregon-waterfall-for-sale-lawmakers-996de63462d49ec3ad9bee1629fb9488",
-      "hot": "66"
+      "title": "Why Windows 11 still ships with Windows 95's memory manager hidden inside it",
+      "url": "https://www.windowslatest.com/2026/10/19/why-windows-11-still-ships-with-windows-95s-memory-manager-hidden-inside-it/",
+      "hot": "52"
     },
     {
       "rank": 6,
-      "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
-      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
-      "hot": "138"
+      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+      "hot": "323"
     },
     {
       "rank": 7,
-      "title": "Eight Bits of Trust; eMudhra's CA keys cracked in milliseconds",
+      "title": "Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds",
       "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
-      "hot": "620"
+      "hot": "745"
     },
     {
       "rank": 8,
-      "title": "Rust off Rails: The opinionated web stack for the AI era",
-      "url": "https://rustoffrails.org/",
-      "hot": "13"
+      "title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+      "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
+      "hot": "314"
     },
     {
       "rank": 9,
-      "title": "Tiny possum and glider thought extinct for 6000 years found in remote West Papua",
-      "url": "https://www.bbc.com/news/articles/cp814l80pw2o",
-      "hot": "29"
+      "title": "EA is shutting down BioWare",
+      "url": "https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware",
+      "hot": "320"
     },
     {
       "rank": 10,
-      "title": "PHP2Shell: AI uncovers critical RCE in PHP",
-      "url": "https://www.wiz.io/blog/php2shell-php-rce",
-      "hot": "368"
+      "title": "After automation: Solo founding will be the default",
+      "url": "https://every.to/thesis-statements/julian-weisser",
+      "hot": "14"
     }
   ]
 }
