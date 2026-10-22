@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-22T12:20:02+00:00",
+  "updated_at": "2026-10-22T17:18:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "AI Agent 工具调用如何更可靠？Spring AI + MCP 实战：参数校验、权限校验与人工确认",
       "url": "https://blog.csdn.net/2403_86779341/article/details/168550000",
-      "hot": "23948"
+      "hot": "23272"
     },
     {
       "rank": 2,
       "title": "AI 编程智能体 09：零门槛调用教程",
       "url": "https://blog.csdn.net/2503_92624912/article/details/168543529",
-      "hot": "15610"
+      "hot": "17902"
     },
     {
       "rank": 3,
-      "title": "Linux 网络编程：从零掌握 TCP Socket 编程（附 C++ 实战）",
-      "url": "https://blog.csdn.net/2502_90266547/article/details/167812850",
-      "hot": "13816"
+      "title": "不止于时序存储：DolphinDB 如何成为 AI 时代的工业智能底座",
+      "url": "https://blog.csdn.net/lrq13965748542/article/details/168553011",
+      "hot": "16411"
     },
     {
       "rank": 4,
-      "title": "不止于时序存储：DolphinDB 如何成为 AI 时代的工业智能底座",
-      "url": "https://blog.csdn.net/lrq13965748542/article/details/168553011",
-      "hot": "13437"
+      "title": "Linux 网络编程：从零掌握 TCP Socket 编程（附 C++ 实战）",
+      "url": "https://blog.csdn.net/2502_90266547/article/details/167812850",
+      "hot": "11727"
     },
     {
       "rank": 5,
       "title": "从麦克风说一句话，到数字人开口回答：这套本地AI链路在8G显卡上跑起来了",
       "url": "https://blog.csdn.net/Dovis5884/article/details/168765928",
-      "hot": "9946"
+      "hot": "11098"
     },
     {
       "rank": 6,
-      "title": "时序数据库选型指南：面向工业物联网大数据场景，Apache IoTDB落地实践",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/168526163",
-      "hot": "9329"
+      "title": "【AI大模型接入SDK】ChatServer 路由规则绑定",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/168346964",
+      "hot": "10836"
     },
     {
       "rank": 7,
-      "title": "HDFS - NameNode 单点故障问题：高可用 HA 架构解析",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157684692",
-      "hot": "9306"
+      "title": "一套引擎、两种模型、一种文件：Apache IoTDB 2.0 的时序选型答卷",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/168660276",
+      "hot": "10615"
     },
     {
       "rank": 8,
-      "title": "一套引擎、两种模型、一种文件：Apache IoTDB 2.0 的时序选型答卷",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/168660276",
-      "hot": "8927"
+      "title": "时序数据库选型指南：面向工业物联网大数据场景，Apache IoTDB落地实践",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/168526163",
+      "hot": "9433"
     },
     {
       "rank": 9,
-      "title": "Leaflet 无坐标图片上的自定义标注与科技风信息面板（CRS.Simple 实战）",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/168453725",
-      "hot": "8191"
+      "title": "博主开源 AI 记账系统看全栈项目设计：Smart Ledger",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/168745535",
+      "hot": "9186"
     },
     {
       "rank": 10,
-      "title": "玩客云部署EasyVoice实战：HiNas、Docker、ARMv7、9001与固定地址访问(1)",
-      "url": "https://blog.csdn.net/2302_79376097/article/details/168452632",
-      "hot": "7676"
+      "title": "Yandex 遭无人机袭击停机",
+      "url": "https://blog.csdn.net/ynchyong/article/details/168556191",
+      "hot": "7946"
     }
   ]
 }

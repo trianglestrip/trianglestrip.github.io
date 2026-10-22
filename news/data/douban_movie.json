@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-22T12:19:44+00:00",
+  "updated_at": "2026-10-22T17:18:12+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "兰香如故",
-      "url": "https://movie.douban.com/subject/36449295/",
-      "hot": "评分 7.5"
-    },
-    {
-      "rank": 4,
       "title": "嫁金钗",
       "url": "https://movie.douban.com/subject/37191789/",
       "hot": ""
+    },
+    {
+      "rank": 4,
+      "title": "兰香如故",
+      "url": "https://movie.douban.com/subject/36449295/",
+      "hot": "评分 7.5"
     },
     {
       "rank": 5,
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "希望",
-      "url": "https://movie.douban.com/subject/36179101/",
-      "hot": "评分 5.5"
+      "title": "小城良方",
+      "url": "https://movie.douban.com/subject/36675942/",
+      "hot": ""
     },
     {
       "rank": 8,
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "hot": "评分 6.0"
+      "title": "希望",
+      "url": "https://movie.douban.com/subject/36179101/",
+      "hot": "评分 5.5"
     },
     {
       "rank": 9,

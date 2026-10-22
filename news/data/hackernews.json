@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-22T12:20:07+00:00",
+  "updated_at": "2026-10-22T17:18:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
-      "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111943",
-      "hot": "187"
+      "title": "Quad9 (DNS Resolver) to Exit France",
+      "url": "https://quad9.net/news/blog/au-revoir-france/",
+      "hot": "329"
     },
     {
       "rank": 2,
-      "title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
-      "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
-      "hot": "63"
+      "title": "eMudhra to exit global SSL/TLS certificate business",
+      "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+      "hot": "553"
     },
     {
       "rank": 3,
-      "title": "Jailbreaking the Switch 2",
-      "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
-      "hot": "123"
+      "title": "Show HN: Run full iOS 16.5 firmware on Android Devices",
+      "url": "https://github.com/oosexgang/hackios-xnu-kernel",
+      "hot": "78"
     },
     {
       "rank": 4,
-      "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-      "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-      "hot": "290"
+      "title": "What's Getting Pwned",
+      "url": "https://pwn.watch/",
+      "hot": "171"
     },
     {
       "rank": 5,
-      "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
-      "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
-      "hot": "225"
+      "title": "What Is Gridifcation",
+      "url": "https://musicalform.substack.com/p/what-is-gridifcation",
+      "hot": "249"
     },
     {
       "rank": 6,
-      "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
-      "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
-      "hot": "65"
+      "title": "Arc Is Sunsetting",
+      "url": "https://arc.net/",
+      "hot": "61"
     },
     {
       "rank": 7,
-      "title": "Security Disclosure",
-      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
-      "hot": "497"
+      "title": "Getting ready to operate GNU Taler in Germany",
+      "url": "https://www.taler.net/en/news/2026-13.html",
+      "hot": "26"
     },
     {
       "rank": 8,
-      "title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you bought",
-      "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
-      "hot": "27"
+      "title": "Jailbreaking the Switch 2",
+      "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+      "hot": "497"
     },
     {
       "rank": 9,
-      "title": "Startup taps underwater volcano as energy source in \"proof point\" test",
-      "url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/",
-      "hot": "25"
+      "title": "The public notebook of a Claude agent with a continuous life",
+      "url": "https://intenex.github.io/personhood/",
+      "hot": "8"
     },
     {
       "rank": 10,
-      "title": "Claude Duet",
-      "url": "https://claude.com/product/claude-duet",
-      "hot": "434"
+      "title": "Every AI model has the same \"controversial\" take on humans",
+      "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+      "hot": "15"
     }
   ]
 }

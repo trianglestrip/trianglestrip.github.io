@@ -1,68 +1,62 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-10-22T06:36:29+00:00",
+  "updated_at": "2026-10-22T17:18:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[JavaScript] cloudflare/security-audit-skill",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "hot": "37,324"
+      "title": "[C] php/php-src",
+      "url": "https://github.com/php/php-src",
+      "hot": "40,994"
     },
     {
       "rank": 2,
-      "title": "[Python] vllm-project/vllm",
-      "url": "https://github.com/vllm-project/vllm",
-      "hot": "95,001"
+      "title": "[Python] anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "hot": "31,432"
     },
     {
       "rank": 3,
-      "title": "[TypeScript] stablyai/orca",
-      "url": "https://github.com/stablyai/orca",
-      "hot": "101,739"
+      "title": "[JavaScript] DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "hot": "173,010"
     },
     {
       "rank": 4,
-      "title": "[Python] headroomlabs-ai/headroom",
-      "url": "https://github.com/headroomlabs-ai/headroom",
-      "hot": "77,387"
+      "title": "[JavaScript] cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "hot": "38,749"
     },
     {
       "rank": 5,
-      "title": "[JavaScript] DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "hot": "172,105"
+      "title": "[Python] Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "hot": "132,641"
     },
     {
       "rank": 6,
-      "title": "[Python] Comfy-Org/ComfyUI",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "hot": "141,709"
+      "title": "[TypeScript] supabase/supabase",
+      "url": "https://github.com/supabase/supabase",
+      "hot": "113,370"
     },
     {
       "rank": 7,
-      "title": "[TypeScript] supabase/supabase",
-      "url": "https://github.com/supabase/supabase",
-      "hot": "113,158"
+      "title": "[Python] fastapi/fastapi",
+      "url": "https://github.com/fastapi/fastapi",
+      "hot": "103,568"
     },
     {
       "rank": 8,
-      "title": "[TypeScript] twentyhq/twenty",
-      "url": "https://github.com/twentyhq/twenty",
-      "hot": "59,365"
+      "title": "[Python] luongnv89/claude-howto",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "hot": "42,878"
     },
     {
       "rank": 9,
-      "title": "[Python] shiyu-coder/Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "hot": "42,968"
-    },
-    {
-      "rank": 10,
-      "title": "[Rust] akitaonrails/ai-memory",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "hot": "12,511"
+      "title": "[Visual Basic .NET] Meloong-Git/PCL",
+      "url": "https://github.com/Meloong-Git/PCL",
+      "hot": "8,635"
     }
   ]
 }

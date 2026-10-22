@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-22T06:36:58+00:00",
+  "updated_at": "2026-10-22T17:18:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Harness^2: Recursive Agent Harnessing for an Open World",
       "url": "https://huggingface.co/papers/2610.14224",
-      "hot": "118"
+      "hot": "116"
     },
     {
       "rank": 2,
@@ -20,7 +20,7 @@
       "rank": 3,
       "title": "MOSS-Image Technical Report",
       "url": "https://huggingface.co/papers/2610.23374",
-      "hot": "90"
+      "hot": "92"
     },
     {
       "rank": 4,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
-      "url": "https://huggingface.co/papers/2610.17309",
-      "hot": "24"
+      "title": "Unlimited OCR Works",
+      "url": "https://huggingface.co/papers/2606.23050",
+      "hot": "97"
     },
     {
       "rank": 9,
-      "title": "SolarRenderer: Few-Step Generative Reference Rendering",
-      "url": "https://huggingface.co/papers/2610.28630",
-      "hot": "48"
+      "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
+      "url": "https://huggingface.co/papers/2610.17309",
+      "hot": "25"
     },
     {
       "rank": 10,
-      "title": "Internal Safety Collapse in Frontier Large Language Models",
-      "url": "https://huggingface.co/papers/2603.23509",
-      "hot": "31"
+      "title": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
+      "url": "https://huggingface.co/papers/2610.29989",
+      "hot": "94"
     }
   ]
 }
