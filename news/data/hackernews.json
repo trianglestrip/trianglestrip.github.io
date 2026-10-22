@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-22T01:45:42+00:00",
+  "updated_at": "2026-10-22T06:36:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "mitmproxy adds --emudhra option",
-      "url": "https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b",
-      "hot": "170"
+      "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
+      "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
+      "hot": "137"
     },
     {
       "rank": 2,
-      "title": "Railway Security Disclosure",
-      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
-      "hot": "307"
+      "title": "There isn't an easy exploit for this PHP vulnerability",
+      "url": "https://eliastaylor.com/noexploit/",
+      "hot": "414"
     },
     {
       "rank": 3,
-      "title": "There isn't an easy exploit for this PHP vulnerability",
-      "url": "https://eliastaylor.com/noexploit/",
-      "hot": "147"
+      "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+      "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+      "hot": "65"
     },
     {
       "rank": 4,
-      "title": "Today's PHP security release, and how we're strengthening security",
-      "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
-      "hot": "679"
+      "title": "OpenAI CLI",
+      "url": "https://github.com/openai/openai-cli",
+      "hot": "21"
     },
     {
       "rank": 5,
-      "title": "GitLab Critical Patch Release",
-      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
-      "hot": "249"
+      "title": "Security Disclosure",
+      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+      "hot": "410"
     },
     {
       "rank": 6,
-      "title": "Google's Rust Style Guide",
-      "url": "https://google.github.io/styleguide/rustguide.html",
-      "hot": "207"
+      "title": "GitLab critical patch release",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+      "hot": "305"
     },
     {
       "rank": 7,
-      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
-      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
-      "hot": "436"
+      "title": "Rust Style Guide",
+      "url": "https://google.github.io/styleguide/rustguide.html",
+      "hot": "272"
     },
     {
       "rank": 8,
-      "title": "No More Icons in Every Menu by Default",
-      "url": "https://blog.jim-nielsen.com/2026/icons-in-every-menu/",
-      "hot": "179"
+      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+      "hot": "478"
     },
     {
       "rank": 9,
-      "title": "Airbnb bans making guests do dishes and take out the trash",
-      "url": "https://www.theverge.com/tech/1015844/airbnb-chores-house-rules-update",
-      "hot": "92"
+      "title": "Using LLM for confidence scoring is a bad idea",
+      "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
+      "hot": "49"
     },
     {
       "rank": 10,
-      "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
-      "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
-      "hot": "375"
+      "title": "PyTorch-native TPU back end for vLLM",
+      "url": "https://github.com/vllm-project/vllm-torchtpu",
+      "hot": "6"
     }
   ]
 }

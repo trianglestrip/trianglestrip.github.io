@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-22T01:45:41+00:00",
+  "updated_at": "2026-10-22T06:36:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "React 开发：线上 bug 频发？先把 React Hooks 使用规范搞明白",
-      "url": "https://www.51cto.com/article/858877.html",
-      "hot": "本文从线上真实 bug 出发，系统梳理 React Hooks 的使用规范，给出一份可直接用于代码评审的检查清单，帮你从\"凭感觉写\"过渡到\"按规范写\"。"
+      "title": "提速不降智，小红书DoSA将首token延迟无损减少近一半",
+      "url": "https://www.51cto.com/article/858952.html",
+      "hot": "小红书自研 DoSA 利用分数上下界，提前排除不可能进入 Top-K 的候选，再配合 GPU 内核优化减少实际耗时。在 GLM-5.2 的测试中，平均约 97% 的查询—key 候选组合无需进行全头精算。"
     },
     {
       "rank": 2,
-      "title": "一文读懂 SPI 总线：工作原理和四种通信模式（图文版）",
-      "url": "https://www.51cto.com/article/858876.html",
-      "hot": "实际上，想让驱动程序真的稳稳当当跑起来，关键的是你能解释清楚：到底是谁在驱动这根线、什么时候改变的数据、对方是在哪一瞬间读取的数据。"
+      "title": "从 HarmonyOS 6 到 HarmonyOS 7：代码走进了我家的日常 #1024互动话题#",
+      "url": "https://ost.51cto.com/posts/60524",
+      "hot": "有些代码，写完以后就留在电脑里；有些代码，上架以后会出现在家人的手机上。今年，从HarmonyOS6到HarmonyOS7，我一直被新版本里的能力吸引..."
     },
     {
       "rank": 3,
-      "title": "【漏洞预警】PHP 版本核心引擎中存在可远程利用的漏洞：CVSS 评分可能接近 10.0",
-      "url": "https://www.51cto.com/article/858878.html",
-      "hot": "这一消息立即在全球网络安全界引发高度关注，因为PHP作为最流行的服务器端脚本语言，支撑着全球超过70%的网站，包括WordPress、Magento、Shopware、WooCommerce等大量流行的网络应用和电子商务平台。"
+      "title": "模型会写代码不等于能交付！深入拆解 Harness，从沙箱、智能体循环到验证体系的实战指南",
+      "url": "https://www.51cto.com/article/858947.html",
+      "hot": "当底层模型越来越趋同，决定 AI 落地效果的是你手里的这套 Harness。"
     },
     {
       "rank": 4,
-      "title": "第 31 篇：keep-alive：连接保活的真相",
-      "url": "https://www.51cto.com/article/858874.html",
-      "hot": "本文通过抓包实测和实际案例，帮你彻底理清 HTTP Keep-Alive、TCP Keepalive 和应用层心跳的区别、配置方法及常见坑点。"
+      "title": "域名埋点零侵入实时校验实践：基于代理转发与规则驱动的工具设计",
+      "url": "https://www.51cto.com/article/858937.html",
+      "hot": "本文介绍 Flyheart Monitor，一套零侵入的域名埋点实时校验工具：它不在 H5 页面端主动上报，而是在请求的必经之路上拦截一份数据去校验，且不绑定任何特定抓包代理（只要支持接口转发即可接入）。"
     },
     {
       "rank": 5,
-      "title": "WorkBuddy教育公益版来了：用桌面智能体重构三尺讲台，积分额度免费送!",
-      "url": "https://www.51cto.com/article/858882.html",
-      "hot": "2026年10月19日，腾讯正式宣布：WorkBuddy教育公益版正式发布，面向全国教师开放。不限地区、不限学段，全国所有在职教师，只要符合条件的，即可免费申领，连续12个月每月获得2000积分。"
+      "title": "RAG 不是终点：OKF 如何让 AI Agent 真正记住关键知识",
+      "url": "https://www.51cto.com/article/858936.html",
+      "hot": "RAG 和 OKF 从来就不是在争夺同一个王座。RAG 是检索主力：它搜索大型、混乱且快速变化的语料库，并在查询时找出相关信息。OKF 是经过整理的知识层：它存放稳定、权威且确定的知识，Agent 可以直接读取；知识之间的关系明确，并且完全可审计。"
     },
     {
       "rank": 6,
-      "title": "#1024·向光而行·码向未来#HarmonyOS 7.0 端侧3DGS实验④：第一次端侧重建",
-      "url": "https://ost.51cto.com/posts/60391",
-      "hot": "一、前言在&ldquo;桌面三维记录册&rdquo;的任务详情页中，&ldquo;开始重建&rdquo;只是一个入口。用户真正需要知道的是：输入是否被接收、重建是否完成、结果是否..."
+      "title": "拼图小游戏开发实战：从零打造你的第一款鸿蒙游戏",
+      "url": "https://ost.51cto.com/posts/60515",
+      "hot": "拼图小游戏开发实战：从零打造你的第一款鸿蒙游戏通过这个项目，你将学到：鸿蒙ArkUI的Flex布局与ForEach渲染自定义组件的封装与复用状态管..."
     },
     {
       "rank": 7,
-      "title": "AI冲击办公室：女性主导岗位为何更脆弱？",
-      "url": "https://www.51cto.com/article/858822.html",
-      "hot": "外媒近日刊文指出，随着人工智能加速进入办公室和行政场景，女性就业正面临新一轮技术冲击。"
+      "title": "Jev 决策模型能分清0糖和低糖吗？拿元气森林试一试",
+      "url": "https://www.51cto.com/article/858935.html",
+      "hot": "ev 是一个直接返回结构化分类与概率的决策模型。TypeSafe 在 2026 年 10 月 14 日开放了图片输入，并为 Jev 1.14 增加了用于目标定位的 Box 类型（两项功能目前仍属实验性质）。"
     },
     {
       "rank": 8,
-      "title": "鸿蒙系统源码扩展：手把手教你添加第三方软件包",
-      "url": "https://ost.51cto.com/posts/60369",
-      "hot": "鸿蒙系统源码扩展：手把手教你添加第三方软件包在嵌入式系统开发中，复用成熟的第三方开源库是提升开发效率、保证软件质量的重要手段。鸿蒙..."
+      "title": "ICML 2026 | 走向 AI Agent可靠性的科学",
+      "url": "https://www.51cto.com/article/858934.html",
+      "hot": "AI 智能体正越来越多地被部署来执行重要任务。尽管标准基准上不断提高的准确率分数似乎表明进展迅速，许多智能体在实践中仍不断失败。"
     },
     {
       "rank": 9,
-      "title": "AI Agent 工程落地  - Agent 不是聊天机器人：一篇讲清能力边界、场景决策与 ROI",
-      "url": "https://www.51cto.com/article/858821.html",
-      "hot": "你接过的第一个「Agent 需求」，大概率长这样：老板看完发布会，说「我们也做一个 AI Agent」，然后团队开始写代码。三个月后，Demo 很惊艳，业务方却问了一句：「这东西能帮我干什么？」"
+      "title": "蹬得太猛了！我用一句话，在豆包工作里跑通全网爆款选题库",
+      "url": "https://www.51cto.com/article/858933.html",
+      "hot": "我用豆包工作最新的多Agent（智能体）并行能力，搭建了一套自动拆解全网爆款的工作流。"
     },
     {
       "rank": 10,
-      "title": "尤雨溪力荐！Vue AI 编程神器 V19 发布！",
-      "url": "https://www.51cto.com/article/858820.html",
-      "hot": "vuejs-ai/skills 是一套专门为 Vue 3 AI 编程打造的 Skills。简单来说，就是给 Codex、Claude Code 等 AI 编程工具补上一套 Vue 开发最佳实践。"
+      "title": "为什么企业 AI 越来越需要 Ontology？从 Object、Link 到 Action 全解析",
+      "url": "https://www.51cto.com/article/858932.html",
+      "hot": "让 AI 查询客户信息，它可以调用 CRM 接口；让它分析订单，它也能查数据库；可当你进一步要求它处理一笔退款、调整一次库存，或者重新安排一项生产任务时，事情就没有那么简单了。"
     }
   ]
 }
