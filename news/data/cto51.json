@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-21T23:34:23+00:00",
+  "updated_at": "2026-10-22T01:45:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "React 开发：线上 bug 频发？先把 React Hooks 使用规范搞明白",
+      "url": "https://www.51cto.com/article/858877.html",
+      "hot": "本文从线上真实 bug 出发，系统梳理 React Hooks 的使用规范，给出一份可直接用于代码评审的检查清单，帮你从\"凭感觉写\"过渡到\"按规范写\"。"
+    },
+    {
+      "rank": 2,
+      "title": "一文读懂 SPI 总线：工作原理和四种通信模式（图文版）",
+      "url": "https://www.51cto.com/article/858876.html",
+      "hot": "实际上，想让驱动程序真的稳稳当当跑起来，关键的是你能解释清楚：到底是谁在驱动这根线、什么时候改变的数据、对方是在哪一瞬间读取的数据。"
+    },
+    {
+      "rank": 3,
+      "title": "【漏洞预警】PHP 版本核心引擎中存在可远程利用的漏洞：CVSS 评分可能接近 10.0",
+      "url": "https://www.51cto.com/article/858878.html",
+      "hot": "这一消息立即在全球网络安全界引发高度关注，因为PHP作为最流行的服务器端脚本语言，支撑着全球超过70%的网站，包括WordPress、Magento、Shopware、WooCommerce等大量流行的网络应用和电子商务平台。"
+    },
+    {
+      "rank": 4,
+      "title": "第 31 篇：keep-alive：连接保活的真相",
+      "url": "https://www.51cto.com/article/858874.html",
+      "hot": "本文通过抓包实测和实际案例，帮你彻底理清 HTTP Keep-Alive、TCP Keepalive 和应用层心跳的区别、配置方法及常见坑点。"
+    },
+    {
+      "rank": 5,
+      "title": "WorkBuddy教育公益版来了：用桌面智能体重构三尺讲台，积分额度免费送!",
+      "url": "https://www.51cto.com/article/858882.html",
+      "hot": "2026年10月19日，腾讯正式宣布：WorkBuddy教育公益版正式发布，面向全国教师开放。不限地区、不限学段，全国所有在职教师，只要符合条件的，即可免费申领，连续12个月每月获得2000积分。"
+    },
+    {
+      "rank": 6,
       "title": "#1024·向光而行·码向未来#HarmonyOS 7.0 端侧3DGS实验④：第一次端侧重建",
       "url": "https://ost.51cto.com/posts/60391",
       "hot": "一、前言在&ldquo;桌面三维记录册&rdquo;的任务详情页中，&ldquo;开始重建&rdquo;只是一个入口。用户真正需要知道的是：输入是否被接收、重建是否完成、结果是否..."
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "AI冲击办公室：女性主导岗位为何更脆弱？",
       "url": "https://www.51cto.com/article/858822.html",
       "hot": "外媒近日刊文指出，随着人工智能加速进入办公室和行政场景，女性就业正面临新一轮技术冲击。"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "鸿蒙系统源码扩展：手把手教你添加第三方软件包",
       "url": "https://ost.51cto.com/posts/60369",
       "hot": "鸿蒙系统源码扩展：手把手教你添加第三方软件包在嵌入式系统开发中，复用成熟的第三方开源库是提升开发效率、保证软件质量的重要手段。鸿蒙..."
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "AI Agent 工程落地  - Agent 不是聊天机器人：一篇讲清能力边界、场景决策与 ROI",
       "url": "https://www.51cto.com/article/858821.html",
       "hot": "你接过的第一个「Agent 需求」，大概率长这样：老板看完发布会，说「我们也做一个 AI Agent」，然后团队开始写代码。三个月后，Demo 很惊艳，业务方却问了一句：「这东西能帮我干什么？」"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "尤雨溪力荐！Vue AI 编程神器 V19 发布！",
       "url": "https://www.51cto.com/article/858820.html",
       "hot": "vuejs-ai/skills 是一套专门为 Vue 3 AI 编程打造的 Skills。简单来说，就是给 Codex、Claude Code 等 AI 编程工具补上一套 Vue 开发最佳实践。"
-    },
-    {
-      "rank": 6,
-      "title": "VLM脑中真有一张3D地图？匹兹堡大学挖出了新证据",
-      "url": "https://www.51cto.com/article/858819.html",
-      "hot": "匹兹堡大学的研究人员将研究视角从模型的最终答案转向隐空间，也就是模型在处理输入时形成的内部数值表征。"
-    },
-    {
-      "rank": 7,
-      "title": "TLM提出新训练配方：随机训练一个前缀，再用满层预测稳住模型质量",
-      "url": "https://www.51cto.com/article/858816.html",
-      "hot": "大多数臂只有一个随机种子，只有两条主 TLM 臂另有第二种子与配对 bootstrap 区间。8B 至 70B 是否保留“满层质量—连续覆盖”的取舍尚未测出；参数量轴上的优势会因共享 embedding 与 head 而缩小；生成中途切换层深还需要处理 KV cache。代码和精确配置计划在发表时公开，当前不应把它写成已经可复现的公开训练流程。"
-    },
-    {
-      "rank": 8,
-      "title": "刚刚，Claude 64小时设计31万种蛋白，17种通过实验验证",
-      "url": "https://www.51cto.com/article/858813.html",
-      "hot": "Anthropic 公布了一项生物学研究：Claude 在 64 小时内生成了 318484 种蛋白质设计，试图找到能够结合蝎毒神经毒素的候选分子。"
-    },
-    {
-      "rank": 9,
-      "title": "游戏开发也能自我进化？RSIGame让AI自主试玩、修复与迭代，27B模型组合超GPT-5.5一次生成",
-      "url": "https://www.51cto.com/article/858812.html",
-      "hot": "来自 UC San Diego、ByteDance 和 Carnegie Mellon University 的研究团队提出了 RSIGame。"
-    },
-    {
-      "rank": 10,
-      "title": "RSI三块关键拼图，MemT 1.0从模型层补上「记忆」",
-      "url": "https://www.51cto.com/article/858807.html",
-      "hot": "大家在将目光投向AI自我改进的同时，一个更值得追问的基础问题浮出水面：一次改进，如何成为下一次的起点？"
     }
   ]
 }
