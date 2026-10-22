@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-22T06:36:45+00:00",
+  "updated_at": "2026-10-22T12:20:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "“开源 Windows” ReactOS 迎来重大进展：NTFS 驱动近十年终于可用、系统向 NT6 迁移",
+      "url": "https://www.oschina.net/news/503163/open-source-windows-reactos-finally-gets-ntfs-support",
+      "hot": "Thu, 22 Oct 2026 19:13:50 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "2026 上海开源软件应用创新大赛「AI+工业软件赛道」决赛名单公布",
+      "url": "https://www.oschina.net/news/503162",
+      "hot": "Thu, 22 Oct 2026 18:37:59 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Anthropic 推出“主动式 AI Agent” Claude Duet——无需等你开口就干活、关键操作先问批准",
+      "url": "https://www.oschina.net/news/503159/claude-duet",
+      "hot": "Thu, 22 Oct 2026 17:39:06 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "PHP 史诗级漏洞代号“PHP2Shell”，watchTowr 确认在野利用已开始",
+      "url": "https://www.oschina.net/news/503157/watchtowr-php-cve-2026-109618-faq",
+      "hot": "Thu, 22 Oct 2026 17:13:53 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "1024程序员节・鸿蒙全攻略 | 又一年，我们并肩执笔、共创共生",
+      "url": "https://www.oschina.net/news/503046",
+      "hot": "Thu, 22 Oct 2026 15:01:27 +0800"
+    },
+    {
+      "rank": 6,
       "title": "wlnmp 一键安装包更新 261021",
       "url": "https://www.oschina.net/news/503151",
       "hot": "Thu, 22 Oct 2026 13:02:04 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "DeepSeek 融了 150 亿美元 —— 宁德时代和腾讯领投，目标两次上调",
       "url": "https://www.oschina.net/news/503150/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
       "hot": "Thu, 22 Oct 2026 11:40:47 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "TypeScript 移植到 Rust：快 8 倍、内存少 70%，还能跑进浏览器",
       "url": "https://www.oschina.net/news/503149/cloudflare-typescript-rust-port",
       "hot": "Thu, 22 Oct 2026 10:48:59 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "拾趣 (Magpie) v0.1.16 发布，二级菜单交互升级，新增 7 家翻译服务",
       "url": "https://www.oschina.net/news/503148",
       "hot": "Thu, 22 Oct 2026 09:55:51 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "PHP 漏洞惊动日本首相：拖了两年的 OOM 问题，在 AI 时代爆发",
       "url": "https://www.oschina.net/news/503146",
       "hot": "Thu, 22 Oct 2026 09:27:20 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Jync v1.7.7 增设预置数据库类型",
-      "url": "https://www.oschina.net/news/503145",
-      "hot": "Thu, 22 Oct 2026 08:56:40 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "2026 上海开源大赛「智算云赛道」决赛名单公布",
-      "url": "https://www.oschina.net/news/503144",
-      "hot": "Wed, 21 Oct 2026 22:16:01 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Windows 转 Mac 新手实用技巧：我的软件清单与快捷键配置",
-      "url": "https://www.oschina.net/news/503143",
-      "hot": "Wed, 21 Oct 2026 21:14:39 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "从开源创新到全球增长 | 2026 上海开源软件应用创新大赛颁奖典礼暨创新增长大会",
-      "url": "https://www.oschina.net/news/503142",
-      "hot": "Wed, 21 Oct 2026 19:45:10 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Meta Muse 分享对话可被陌生人找到：标题写进 URL、一次 DNS 查询全暴露",
-      "url": "https://www.oschina.net/news/503140/meta-muse-exposes-users-personal-when-they-share-conversations",
-      "hot": "Wed, 21 Oct 2026 18:35:57 +0800"
     }
   ]
 }

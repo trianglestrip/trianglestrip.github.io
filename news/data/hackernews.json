@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-22T06:36:41+00:00",
+  "updated_at": "2026-10-22T12:20:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
-      "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
-      "hot": "137"
+      "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
+      "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111943",
+      "hot": "187"
     },
     {
       "rank": 2,
-      "title": "There isn't an easy exploit for this PHP vulnerability",
-      "url": "https://eliastaylor.com/noexploit/",
-      "hot": "414"
+      "title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
+      "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
+      "hot": "63"
     },
     {
       "rank": 3,
-      "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-      "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-      "hot": "65"
+      "title": "Jailbreaking the Switch 2",
+      "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+      "hot": "123"
     },
     {
       "rank": 4,
-      "title": "OpenAI CLI",
-      "url": "https://github.com/openai/openai-cli",
-      "hot": "21"
+      "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+      "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+      "hot": "290"
     },
     {
       "rank": 5,
-      "title": "Security Disclosure",
-      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
-      "hot": "410"
+      "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
+      "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
+      "hot": "225"
     },
     {
       "rank": 6,
-      "title": "GitLab critical patch release",
-      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
-      "hot": "305"
+      "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
+      "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
+      "hot": "65"
     },
     {
       "rank": 7,
-      "title": "Rust Style Guide",
-      "url": "https://google.github.io/styleguide/rustguide.html",
-      "hot": "272"
+      "title": "Security Disclosure",
+      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+      "hot": "497"
     },
     {
       "rank": 8,
-      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
-      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
-      "hot": "478"
+      "title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you bought",
+      "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
+      "hot": "27"
     },
     {
       "rank": 9,
-      "title": "Using LLM for confidence scoring is a bad idea",
-      "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
-      "hot": "49"
+      "title": "Startup taps underwater volcano as energy source in \"proof point\" test",
+      "url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/",
+      "hot": "25"
     },
     {
       "rank": 10,
-      "title": "PyTorch-native TPU back end for vLLM",
-      "url": "https://github.com/vllm-project/vllm-torchtpu",
-      "hot": "6"
+      "title": "Claude Duet",
+      "url": "https://claude.com/product/claude-duet",
+      "hot": "434"
     }
   ]
 }
