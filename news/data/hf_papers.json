@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-23T16:32:23+00:00",
+  "updated_at": "2026-10-23T23:01:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Harness^2: Recursive Agent Harnessing for an Open World",
       "url": "https://huggingface.co/papers/2610.14224",
-      "hot": "117"
+      "hot": "118"
     },
     {
       "rank": 2,
@@ -26,7 +26,7 @@
       "rank": 4,
       "title": "MOSS-Image Technical Report",
       "url": "https://huggingface.co/papers/2610.23374",
-      "hot": "95"
+      "hot": "96"
     },
     {
       "rank": 5,
@@ -56,7 +56,7 @@
       "rank": 9,
       "title": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
       "url": "https://huggingface.co/papers/2610.28698",
-      "hot": "58"
+      "hot": "60"
     },
     {
       "rank": 10,
