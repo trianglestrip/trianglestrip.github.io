@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-23T01:49:19+00:00",
+  "updated_at": "2026-10-23T06:34:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "“开源 Windows” ReactOS 迎来重大进展：NTFS 驱动近十年终于可用、系统向 NT6 迁移",
-      "url": "https://www.oschina.net/news/503163/open-source-windows-reactos-finally-gets-ntfs-support",
-      "hot": "Thu, 22 Oct 2026 19:13:50 +0800"
+      "title": "被三大浏览器联合拉黑后，eMudhra 宣布退出全球 SSL/TLS 证书业务",
+      "url": "https://www.oschina.net/news/503173/emudhra-to-exit-global-ssl-tls-certificate-business",
+      "hot": "Fri, 23 Oct 2026 14:08:56 +0800"
     },
     {
       "rank": 2,
-      "title": "2026 上海开源软件应用创新大赛「AI+工业软件赛道」决赛名单公布",
-      "url": "https://www.oschina.net/news/503162",
-      "hot": "Thu, 22 Oct 2026 18:37:59 +0800"
+      "title": "Termexo v0.10.15 发布：工作区树、账号登录方式与模型升级建议",
+      "url": "https://www.oschina.net/news/503172",
+      "hot": "Fri, 23 Oct 2026 13:27:10 +0800"
     },
     {
       "rank": 3,
-      "title": "Anthropic 推出“主动式 AI Agent” Claude Duet——无需等你开口就干活、关键操作先问批准",
-      "url": "https://www.oschina.net/news/503159/claude-duet",
-      "hot": "Thu, 22 Oct 2026 17:39:06 +0800"
+      "title": "SqlToy-ORM 能力全景介绍",
+      "url": "https://www.oschina.net/news/503171",
+      "hot": "Fri, 23 Oct 2026 11:40:44 +0800"
     },
     {
       "rank": 4,
-      "title": "PHP 史诗级漏洞代号“PHP2Shell”，watchTowr 确认在野利用已开始",
-      "url": "https://www.oschina.net/news/503157/watchtowr-php-cve-2026-109618-faq",
-      "hot": "Thu, 22 Oct 2026 17:13:53 +0800"
+      "title": "ToolForge v0.2.1 正式发布：新增 20+ 款在线插件，插件下载统计上线，Rust + Tauri 开源工具箱持续进化！",
+      "url": "https://www.oschina.net/news/503170",
+      "hot": "Fri, 23 Oct 2026 11:17:24 +0800"
     },
     {
       "rank": 5,
-      "title": "1024程序员节・鸿蒙全攻略 | 又一年，我们并肩执笔、共创共生",
-      "url": "https://www.oschina.net/news/503046",
-      "hot": "Thu, 22 Oct 2026 15:01:27 +0800"
+      "title": "SqlToy6.0.9:Lambda补齐最后一块拼图,一套 ORM 完整覆盖“对象操作+SQL优先\"",
+      "url": "https://www.oschina.net/news/503169",
+      "hot": "Fri, 23 Oct 2026 11:09:20 +0800"
     },
     {
       "rank": 6,
-      "title": "wlnmp 一键安装包更新 261021",
-      "url": "https://www.oschina.net/news/503151",
-      "hot": "Thu, 22 Oct 2026 13:02:04 +0800"
+      "title": "MiniMax M3.1 Flash 正式开源",
+      "url": "https://www.oschina.net/news/503167",
+      "hot": "Fri, 23 Oct 2026 10:44:55 +0800"
     },
     {
       "rank": 7,
-      "title": "DeepSeek 融了 150 亿美元 —— 宁德时代和腾讯领投，目标两次上调",
-      "url": "https://www.oschina.net/news/503150/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
-      "hot": "Thu, 22 Oct 2026 11:40:47 +0800"
+      "title": "Linus 使用 Claude 辅助对内核进行迟到已久的历史清理",
+      "url": "https://www.oschina.net/news/503166",
+      "hot": "Fri, 23 Oct 2026 10:43:07 +0800"
     },
     {
       "rank": 8,
-      "title": "TypeScript 移植到 Rust：快 8 倍、内存少 70%，还能跑进浏览器",
-      "url": "https://www.oschina.net/news/503149/cloudflare-typescript-rust-port",
-      "hot": "Thu, 22 Oct 2026 10:48:59 +0800"
+      "title": "DatI 新版发布：将数据库发布为语义感知的MCP服务，支持 Schema 级权限管控",
+      "url": "https://www.oschina.net/news/503165",
+      "hot": "Fri, 23 Oct 2026 09:35:42 +0800"
     },
     {
       "rank": 9,
-      "title": "拾趣 (Magpie) v0.1.16 发布，二级菜单交互升级，新增 7 家翻译服务",
-      "url": "https://www.oschina.net/news/503148",
-      "hot": "Thu, 22 Oct 2026 09:55:51 +0800"
+      "title": "novel-plus v6.0.0 发布：全新 UI + 后台重构 + AI 长篇小说创作工作流",
+      "url": "https://www.oschina.net/news/503164",
+      "hot": "Fri, 23 Oct 2026 09:05:09 +0800"
     },
     {
       "rank": 10,
-      "title": "PHP 漏洞惊动日本首相：拖了两年的 OOM 问题，在 AI 时代爆发",
-      "url": "https://www.oschina.net/news/503146",
-      "hot": "Thu, 22 Oct 2026 09:27:20 +0800"
+      "title": "“开源 Windows” ReactOS 迎来重大进展：NTFS 驱动近十年终于可用、系统向 NT6 迁移",
+      "url": "https://www.oschina.net/news/503163/open-source-windows-reactos-finally-gets-ntfs-support",
+      "hot": "Thu, 22 Oct 2026 19:13:50 +0800"
     }
   ]
 }

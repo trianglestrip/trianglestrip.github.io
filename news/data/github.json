@@ -1,62 +1,62 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-10-22T23:32:39+00:00",
+  "updated_at": "2026-10-23T06:34:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[C] php/php-src",
       "url": "https://github.com/php/php-src",
-      "hot": "41,133"
+      "hot": "41,316"
     },
     {
       "rank": 2,
       "title": "[Python] anthropics/knowledge-work-plugins",
       "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "hot": "31,564"
+      "hot": "31,773"
     },
     {
       "rank": 3,
       "title": "[JavaScript] DietrichGebert/ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "hot": "173,413"
+      "hot": "173,907"
     },
     {
       "rank": 4,
       "title": "[JavaScript] cloudflare/security-audit-skill",
       "url": "https://github.com/cloudflare/security-audit-skill",
-      "hot": "39,471"
+      "hot": "40,098"
     },
     {
       "rank": 5,
       "title": "[Python] Graphify-Labs/graphify",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "hot": "132,907"
+      "hot": "133,273"
     },
     {
       "rank": 6,
       "title": "[TypeScript] supabase/supabase",
       "url": "https://github.com/supabase/supabase",
-      "hot": "113,468"
+      "hot": "113,592"
     },
     {
       "rank": 7,
       "title": "[Python] fastapi/fastapi",
       "url": "https://github.com/fastapi/fastapi",
-      "hot": "103,713"
+      "hot": "103,922"
     },
     {
       "rank": 8,
       "title": "[Python] luongnv89/claude-howto",
       "url": "https://github.com/luongnv89/claude-howto",
-      "hot": "43,159"
+      "hot": "43,501"
     },
     {
       "rank": 9,
       "title": "[Visual Basic .NET] Meloong-Git/PCL",
       "url": "https://github.com/Meloong-Git/PCL",
-      "hot": "8,681"
+      "hot": "8,788"
     }
   ]
 }

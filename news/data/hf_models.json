@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-22T23:33:13+00:00",
+  "updated_at": "2026-10-23T06:34:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "hot": "2354"
+      "hot": "2415"
     },
     {
       "rank": 2,
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "hot": "1299"
+      "hot": "1323"
     },
     {
       "rank": 3,
-      "title": "OpenMOSS-Team/MOSS-Image-SFT",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-      "hot": "574"
+      "title": "RecursiveSI/flint",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "hot": "581"
     },
     {
       "rank": 4,
-      "title": "RecursiveSI/flint",
-      "url": "https://huggingface.co/RecursiveSI/flint",
-      "hot": "527"
+      "title": "OpenMOSS-Team/MOSS-Image-SFT",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+      "hot": "600"
     },
     {
       "rank": 5,
       "title": "OpenMOSS-Team/MOSS-Image-Base",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
-      "hot": "485"
+      "hot": "500"
     },
     {
       "rank": 6,
-      "title": "fishaudio/drama-3",
-      "url": "https://huggingface.co/fishaudio/drama-3",
-      "hot": "915"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "8925"
     },
     {
       "rank": 7,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "8895"
+      "title": "fishaudio/drama-3",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "hot": "925"
     },
     {
       "rank": 8,
-      "title": "meta-models/Muse-Spark-Open-816B-A42B",
-      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-      "hot": "659"
+      "title": "Comfy-Org/MOSS-Image",
+      "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
+      "hot": "376"
     },
     {
       "rank": 9,
-      "title": "black-forest-labs/flux-3-image-klein",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-      "hot": "636"
+      "title": "google/embeddinggemma-2",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "hot": "2851"
     },
     {
       "rank": 10,
-      "title": "google/embeddinggemma-2",
-      "url": "https://huggingface.co/google/embeddinggemma-2",
-      "hot": "2845"
+      "title": "XHToken/Spark-X2.6-4B",
+      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+      "hot": "332"
     }
   ]
 }
