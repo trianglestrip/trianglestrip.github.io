@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-22T23:33:00+00:00",
+  "updated_at": "2026-10-23T01:49:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "上下文语言模型：通过自主管理上下文提升性能、降低计算成本",
+      "url": "https://www.infoq.cn/article/Pwu4FNskSB2cbKV9BZKq?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 23 Oct 2026 09:05:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek千亿融资逼近收官：结盟完美世界、中芯聚源等产业资本，募资翻倍押注具身智能",
+      "url": "https://www.infoq.cn/article/ViOyxiOSP2ihxuUyg1rD?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 23 Oct 2026 08:46:30 GMT"
+    },
+    {
+      "rank": 3,
       "title": "又一国产决策模型发布：面向企业高频判断任务，23 项开源基测准确率超过微软和 JEV",
       "url": "https://www.infoq.cn/article/wyGrRsTrfHM7i9MhuV5P?utm_source=rss&utm_medium=article",
       "hot": "Thu, 22 Oct 2026 19:16:58 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "企业 AI 越用越复杂，如何用一个 Gateway 管好模型、Agent 和成本？｜ 技术趋势",
       "url": "https://www.infoq.cn/article/v85ey09UlxhCDH4r3RS3?utm_source=rss&utm_medium=article",
       "hot": "Thu, 22 Oct 2026 18:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "面向 Qwen 系列模型线性注意力的高性能优化实践",
       "url": "https://www.infoq.cn/article/o9OcWNkkwgKvsZmgY45d?utm_source=rss&utm_medium=article",
       "hot": "Thu, 22 Oct 2026 17:08:07 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Cloudflare 两个月两改追踪定价，开发者该如何控制成本？",
       "url": "https://www.infoq.cn/article/hy9SMIBOjwjdZ4JduMzL?utm_source=rss&utm_medium=article",
       "hot": "Thu, 22 Oct 2026 17:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "企业有需求，FDE 团队有能力，为什么 AI 项目仍难落地？",
       "url": "https://www.infoq.cn/article/Ei2spcFKComKqkPv6osN?utm_source=rss&utm_medium=article",
       "hot": "Thu, 22 Oct 2026 16:24:28 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "AI把整个软件生态打成筛子，全栈开发者的至暗时刻",
       "url": "https://www.infoq.cn/article/glAvFT7PWdZ53mbgPbgC?utm_source=rss&utm_medium=article",
       "hot": "Thu, 22 Oct 2026 15:30:05 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "与 Redis 分道扬镳两年后，Valkey 不只要做缓存：单进程吞吐破百万，Rust 统一客户端底座",
       "url": "https://www.infoq.cn/article/ud4r6jvkmuKNAu9NTHxF?utm_source=rss&utm_medium=article",
       "hot": "Thu, 22 Oct 2026 15:00:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "GitHub 通过 AI 辅助重构，将 Copilot 运行时迁移至 Rust",
       "url": "https://www.infoq.cn/article/zGqDWHF8tHDtlYcImAJS?utm_source=rss&utm_medium=article",
       "hot": "Thu, 22 Oct 2026 13:17:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Shopify 将 Checkout Blocks 升级为 Polaris Web 组件，包体积最高缩减 85%",
-      "url": "https://www.infoq.cn/article/40B7RzB3uez5MvM1mCqW?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 22 Oct 2026 11:17:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "从固定规格到按需分配：Snowflake 自适应计算的底层逻辑 ｜ 技术趋势",
-      "url": "https://www.infoq.cn/article/OX9rfbmh7V7thvWrkULb?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 22 Oct 2026 10:00:00 GMT"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-22T23:32:54+00:00",
+  "updated_at": "2026-10-23T01:49:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "未认证即可接管服务器！PHP 紧急补丁背后，AI 攻防已经进入 “机器速度” 时代",
-      "url": "https://www.51cto.com/article/858990.html",
-      "hot": "AI 已经能以机器速度发现漏洞，防御方却还是慢半拍，一套可信的机器速度安全体系需要具备哪些工程要素。"
+      "title": "刚刚，Claude自动模式将全球上线！OpenAI曝出最恐怖一幕",
+      "url": "https://www.51cto.com/article/859040.html",
+      "hot": "下周起，Claude将直接默认开启自动模式——哪一步能做、哪一步不能做，全凭另一个AI拍板。"
     },
     {
       "rank": 2,
-      "title": "一次过审的鸿蒙应用发布全流程实战 #1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/60562",
-      "hot": "这篇文章把&quot;代码→上架&quot;这条路完整走一遍：签名、配置、权限、隐私、元数据、测试发布、审核发布，七个环节每个都给了真实配置和代码，最后..."
+      "title": "NeurIPS'26 | 注意力也能弃权！改善长上下文、低比特鲁棒性",
+      "url": "https://www.51cto.com/article/859039.html",
+      "hot": "来自西北大学、伊利诺伊理工学院、罗格斯大学等机构的研究团队提出OASIS，为这种双层信息路由提供显式的null选项，并用token层的null概率调整depth层的分支选择。该研究已被NeurIPS 2026接收。"
     },
     {
       "rank": 3,
-      "title": "在鸿蒙记账 App 里尝试 3DGS：一个周末，两次黑屏 #1024互动话题#​",
-      "url": "https://ost.51cto.com/posts/60560",
-      "hot": "先说结果。记账App的首页多了一张会慢慢转的桌子，木展台、两摞硬币、一张卷边小票、一部手机、一张银行卡。得先说清楚，这张桌子不是扫出..."
+      "title": "Agent 沙箱：AI 开始动手之后，边界该画在哪里？",
+      "url": "https://www.51cto.com/article/859038.html",
+      "hot": "Agent 沙箱，是供 Agent 或其工具运行的受限环境。它通过操作系统、容器、虚拟化或语言运行时等机制，约束程序能接触的文件、网络、进程和计算资源。"
     },
     {
       "rank": 4,
-      "title": "OpenAI 模型即将登陆 Google Cloud",
-      "url": "https://www.51cto.com/article/858961.html",
-      "hot": "OpenAI 与微软的独家分销安排已于 2026 年 4 月到期。AWS 随即在 4 月开始托管 OpenAI 模型，上月又将其智能体接入 Bedrock。随着 Google Cloud 加入，OpenAI 模型已覆盖美国三大云厂商。"
+      "title": "为什么大厂禁止写 test()、temp()、a() 这样的函数名？",
+      "url": "https://www.51cto.com/article/859037.html",
+      "hot": "今天咱们就来聊聊 JavaScript 函数中的一个看似简单，却经常被忽略的话题——函数名（Function Name）。"
     },
     {
       "rank": 5,
-      "title": "提速不降智，小红书DoSA将首token延迟无损减少近一半",
-      "url": "https://www.51cto.com/article/858952.html",
-      "hot": "小红书自研 DoSA 利用分数上下界，提前排除不可能进入 Top-K 的候选，再配合 GPU 内核优化减少实际耗时。在 GLM-5.2 的测试中，平均约 97% 的查询—key 候选组合无需进行全头精算。"
+      "title": "彻底抛弃 TypeScript！尤雨溪团队出手！",
+      "url": "https://www.51cto.com/article/859036.html",
+      "hot": "微软用 Go，Cloudflare​ 用 Rust​，现在连 AI Agent 都开始参与编译器开发了。AI 正在改变软件开发的方式，未来开发者对 AI 工具的依赖只会越来越深。"
     },
     {
       "rank": 6,
-      "title": "模型会写代码不等于能交付！深入拆解 Harness，从沙箱、智能体循环到验证体系的实战指南",
-      "url": "https://www.51cto.com/article/858947.html",
-      "hot": "当底层模型越来越趋同，决定 AI 落地效果的是你手里的这套 Harness。"
+      "title": "Anthropic首发公益报告，自曝「人类拯救计划」！",
+      "url": "https://www.51cto.com/article/859018.html",
+      "hot": "在这份报告里，Anthropic不仅晒出了高达20%股份的「散财」计划，更罕见亲口承认：AI，已经开始动手制造它的下一代了。"
     },
     {
       "rank": 7,
-      "title": "域名埋点零侵入实时校验实践：基于代理转发与规则驱动的工具设计",
-      "url": "https://www.51cto.com/article/858937.html",
-      "hot": "本文介绍 Flyheart Monitor，一套零侵入的域名埋点实时校验工具：它不在 H5 页面端主动上报，而是在请求的必经之路上拦截一份数据去校验，且不绑定任何特定抓包代理（只要支持接口转发即可接入）。"
+      "title": "PHP、Node.js、Go、GitLab：安全漏洞与修复进展汇总",
+      "url": "https://www.51cto.com/article/859035.html",
+      "hot": "新业务用了 Node.js 24 LTS，网关会接收、解压 Brotli 数据；对外调用交给 Go 服务，线上跑的是几个月前编好的二进制。数据库接了 TiDB Cloud，自动化脚本里配着管理 API key。代码放在自建 GitLab 上，网站则由 Plesk 面板统一管理。"
     },
     {
       "rank": 8,
-      "title": "RAG 不是终点：OKF 如何让 AI Agent 真正记住关键知识",
-      "url": "https://www.51cto.com/article/858936.html",
-      "hot": "RAG 和 OKF 从来就不是在争夺同一个王座。RAG 是检索主力：它搜索大型、混乱且快速变化的语料库，并在查询时找出相关信息。OKF 是经过整理的知识层：它存放稳定、权威且确定的知识，Agent 可以直接读取；知识之间的关系明确，并且完全可审计。"
+      "title": "NeurIPS 2026 | 从Token到Span：重新思考大语言模型的不确定性估计",
+      "url": "https://www.51cto.com/article/859016.html",
+      "hot": "Uncertainty 不应该只是用于评价模型表现的一个指标，它还应该成为能够被下游系统理解和利用的决策信号。"
     },
     {
       "rank": 9,
-      "title": "Jev 决策模型能分清0糖和低糖吗？拿元气森林试一试",
-      "url": "https://www.51cto.com/article/858935.html",
-      "hot": "ev 是一个直接返回结构化分类与概率的决策模型。TypeSafe 在 2026 年 10 月 14 日开放了图片输入，并为 Jev 1.14 增加了用于目标定位的 Box 类型（两项功能目前仍属实验性质）。"
+      "title": "对决RoboColiseum！GPT、Claude、Gemini机器人能力PK，险胜之后还有黑马",
+      "url": "https://www.51cto.com/article/859012.html",
+      "hot": "模型已经理解了任务，为什么还是做不好某些动作？除了比较排名，本轮报告也通过环境扰动、控制系统配置对比和操作案例，尝试回答这一问题。"
     },
     {
       "rank": 10,
-      "title": "ICML 2026 | 走向 AI Agent可靠性的科学",
-      "url": "https://www.51cto.com/article/858934.html",
-      "hot": "AI 智能体正越来越多地被部署来执行重要任务。尽管标准基准上不断提高的准确率分数似乎表明进展迅速，许多智能体在实践中仍不断失败。"
+      "title": "大模型被A股上了一课！EinsiaAI发布Quant Arena，半数大模型亏本",
+      "url": "https://www.51cto.com/article/859002.html",
+      "hot": "近期，EinsiaAI 旗下 Navers Lab 团队发布 Quant Arena。它把顶尖大模型放到 A 股的真实历史数据中，检验从策略生成到反馈迭代的整轮研究。"
     }
   ]
 }

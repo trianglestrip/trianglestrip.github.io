@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-22T23:32:43+00:00",
+  "updated_at": "2026-10-23T01:49:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI Agent 工具调用如何更可靠？Spring AI + MCP 实战：参数校验、权限校验与人工确认",
-      "url": "https://blog.csdn.net/2403_86779341/article/details/168550000",
-      "hot": "20370"
+      "title": "AI 编程智能体 09：零门槛调用教程",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/168543529",
+      "hot": "20847"
     },
     {
       "rank": 2,
-      "title": "AI 编程智能体 09：零门槛调用教程",
-      "url": "https://blog.csdn.net/2503_92624912/article/details/168543529",
-      "hot": "19756"
+      "title": "AI Agent 工具调用如何更可靠？Spring AI + MCP 实战：参数校验、权限校验与人工确认",
+      "url": "https://blog.csdn.net/2403_86779341/article/details/168550000",
+      "hot": "20497"
     },
     {
       "rank": 3,
       "title": "不止于时序存储：DolphinDB 如何成为 AI 时代的工业智能底座",
       "url": "https://blog.csdn.net/lrq13965748542/article/details/168553011",
-      "hot": "16809"
+      "hot": "14828"
     },
     {
       "rank": 4,
-      "title": "Yandex 遭无人机袭击停机",
-      "url": "https://blog.csdn.net/ynchyong/article/details/168556191",
-      "hot": "12457"
+      "title": "【AI大模型接入SDK】ChatServer 路由规则绑定",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/168346964",
+      "hot": "11939"
     },
     {
       "rank": 5,
-      "title": "【AI大模型接入SDK】ChatServer 路由规则绑定",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/168346964",
-      "hot": "11840"
+      "title": "Yandex 遭无人机袭击停机",
+      "url": "https://blog.csdn.net/ynchyong/article/details/168556191",
+      "hot": "11637"
     },
     {
       "rank": 6,
       "title": "从麦克风说一句话，到数字人开口回答：这套本地AI链路在8G显卡上跑起来了",
       "url": "https://blog.csdn.net/Dovis5884/article/details/168765928",
-      "hot": "11240"
+      "hot": "11627"
     },
     {
       "rank": 7,
-      "title": "一套引擎、两种模型、一种文件：Apache IoTDB 2.0 的时序选型答卷",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/168660276",
-      "hot": "10434"
+      "title": "博主开源 AI 记账系统看全栈项目设计：Smart Ledger",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/168745535",
+      "hot": "10383"
     },
     {
       "rank": 8,
-      "title": "博主开源 AI 记账系统看全栈项目设计：Smart Ledger",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/168745535",
-      "hot": "9495"
+      "title": "消息队列集成——RabbitMQ 与 Kafka 的 Spring Boot 实践",
+      "url": "https://blog.csdn.net/vipxieliang/article/details/168560557",
+      "hot": "9676"
     },
     {
       "rank": 9,
-      "title": "Linux 网络编程：从零掌握 TCP Socket 编程（附 C++ 实战）",
-      "url": "https://blog.csdn.net/2502_90266547/article/details/167812850",
-      "hot": "9192"
+      "title": "一套引擎、两种模型、一种文件：Apache IoTDB 2.0 的时序选型答卷",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/168660276",
+      "hot": "9267"
     },
     {
       "rank": 10,
-      "title": "时序数据库选型指南：面向工业物联网大数据场景，Apache IoTDB落地实践",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/168526163",
-      "hot": "8998"
+      "title": "虚竹哥与北京大学出版社免费送AI书活动第十期：《RAG与LangChain开发实战：从知识检索到智能生成》",
+      "url": "https://blog.csdn.net/shi_hong_fei_hei/article/details/168768402",
+      "hot": "9002"
     }
   ]
 }
