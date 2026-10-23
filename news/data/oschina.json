@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-23T06:34:46+00:00",
+  "updated_at": "2026-10-23T12:00:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Arc 浏览器将于 12 月 22 日停止服务",
+      "url": "https://www.oschina.net/news/503188",
+      "hot": "Fri, 23 Oct 2026 18:42:39 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "热潮、分歧与落地：世界模型需要一场真实场景赛 ｜第五届琶洲算法大赛世界模型生态合作赛决赛开启",
+      "url": "https://my.oschina.net/u/4518156/blog/19781504",
+      "hot": "Fri, 23 Oct 2026 18:30:45 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Android 手机成功运行原版 iOS 16.5",
+      "url": "https://www.oschina.net/news/503181",
+      "hot": "Fri, 23 Oct 2026 16:57:50 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "【AI 智能运维平台】本周更新：WorkBuddy技能市场上线「BK-Lite运维助手」，支持对接平台获取数据加入AI分析",
+      "url": "https://www.oschina.net/news/503179",
+      "hot": "Fri, 23 Oct 2026 15:59:54 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "Anthropic 平台工程团队 200 人的代码，全是 Claude 写的",
+      "url": "https://www.oschina.net/news/503177",
+      "hot": "Fri, 23 Oct 2026 15:17:53 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "动词算子体系中，何为名词？",
+      "url": "https://www.oschina.net/news/503175",
+      "hot": "Fri, 23 Oct 2026 14:51:00 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "qKnow 专业版 v3.1.5 发布：扩容工作流编排调用能力，上线Text2SQL插件，拓宽数据类智能应用构建边界",
+      "url": "https://www.oschina.net/news/503174",
+      "hot": "Fri, 23 Oct 2026 14:34:02 +0800"
+    },
+    {
+      "rank": 8,
       "title": "被三大浏览器联合拉黑后，eMudhra 宣布退出全球 SSL/TLS 证书业务",
       "url": "https://www.oschina.net/news/503173/emudhra-to-exit-global-ssl-tls-certificate-business",
       "hot": "Fri, 23 Oct 2026 14:08:56 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "Termexo v0.10.15 发布：工作区树、账号登录方式与模型升级建议",
       "url": "https://www.oschina.net/news/503172",
       "hot": "Fri, 23 Oct 2026 13:27:10 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "SqlToy-ORM 能力全景介绍",
       "url": "https://www.oschina.net/news/503171",
       "hot": "Fri, 23 Oct 2026 11:40:44 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "ToolForge v0.2.1 正式发布：新增 20+ 款在线插件，插件下载统计上线，Rust + Tauri 开源工具箱持续进化！",
-      "url": "https://www.oschina.net/news/503170",
-      "hot": "Fri, 23 Oct 2026 11:17:24 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "SqlToy6.0.9:Lambda补齐最后一块拼图,一套 ORM 完整覆盖“对象操作+SQL优先\"",
-      "url": "https://www.oschina.net/news/503169",
-      "hot": "Fri, 23 Oct 2026 11:09:20 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "MiniMax M3.1 Flash 正式开源",
-      "url": "https://www.oschina.net/news/503167",
-      "hot": "Fri, 23 Oct 2026 10:44:55 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "Linus 使用 Claude 辅助对内核进行迟到已久的历史清理",
-      "url": "https://www.oschina.net/news/503166",
-      "hot": "Fri, 23 Oct 2026 10:43:07 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "DatI 新版发布：将数据库发布为语义感知的MCP服务，支持 Schema 级权限管控",
-      "url": "https://www.oschina.net/news/503165",
-      "hot": "Fri, 23 Oct 2026 09:35:42 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "novel-plus v6.0.0 发布：全新 UI + 后台重构 + AI 长篇小说创作工作流",
-      "url": "https://www.oschina.net/news/503164",
-      "hot": "Fri, 23 Oct 2026 09:05:09 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "“开源 Windows” ReactOS 迎来重大进展：NTFS 驱动近十年终于可用、系统向 NT6 迁移",
-      "url": "https://www.oschina.net/news/503163/open-source-windows-reactos-finally-gets-ntfs-support",
-      "hot": "Thu, 22 Oct 2026 19:13:50 +0800"
     }
   ]
 }

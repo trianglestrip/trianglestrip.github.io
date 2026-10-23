@@ -1,38 +1,38 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-23T06:34:41+00:00",
+  "updated_at": "2026-10-23T12:00:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 三方库集成与 OHPM 实战 #1024·向光而行·码向未来#",
+      "url": "https://ost.51cto.com/posts/60680",
+      "hot": "一、三方依赖的三副面孔&quot;三方库&quot;在鸿蒙工程里其实有三种完全不同的东西，集成成本差一个数量级，选型时必须先分清是哪一副面孔：类型典型例..."
+    },
+    {
+      "rank": 2,
+      "title": "上手 HarmonyOS 6 的 Video 组件：视频播放器从零跑通",
+      "url": "https://ost.51cto.com/posts/60678",
+      "hot": "前言视频播放小练习最直观的反馈，就是点下按钮以后，画面真的开始向前走。第一帧什么时候出现、总时长什么时候拿到、暂停后能不能继续，这..."
+    },
+    {
+      "rank": 3,
       "title": "一人，合法，反超原版，王琰：填平闭源模型的思维链护城河",
       "url": "https://www.51cto.com/article/859074.html",
       "hot": "过去两年，AI 行业最激烈的一场暗战，从来不在榜单上——它只围绕一个问题：还能不能拿到最强模型的完整思维链。"
     },
     {
-      "rank": 2,
-      "title": "审核员不读源码只对材料：零联网 App 隐私合规一次过审实录 #1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/60659",
-      "hot": "适用版本：HarmonyOSNEXT（API12+），DevEcoStudio6.x，AppGalleryConnect；真机实测于202609，202610提审一次过审。本文是「刻循」系列上..."
-    },
-    {
-      "rank": 3,
+      "rank": 4,
       "title": "PHP 爆出两大高风险漏洞！Akamai 即时部署防护机制",
       "url": "https://www.51cto.com/article/859067.html",
       "hot": "Akamai 高度关注这次漏洞。PHP 公告发布当天，Akamai 安全情报团队（SIG）就发布了分析，并为 App & API Protector 上线了专项防护规则。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Claude Code/Codex 预装、空闲只收磁盘费：boxd 开发工作区实测，一条命令全组共用一台机器",
       "url": "https://www.51cto.com/article/859065.html",
       "hot": "boxd 开发工作区不发明新流程，它把你已有的流程原样搬上云。"
-    },
-    {
-      "rank": 5,
-      "title": "鸿蒙调用百度翻译API：实现智能翻译应用完整教程 #1024互动话题#",
-      "url": "https://ost.51cto.com/posts/60650",
-      "hot": "鸿蒙调用百度翻译API：实现智能翻译应用完整教程前言在移动应用开发中，集成第三方服务是常见的需求。翻译功能作为国际化应用的重要组成部..."
     },
     {
       "rank": 6,
