@@ -1,62 +1,56 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-10-23T06:34:29+00:00",
+  "updated_at": "2026-10-23T16:31:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[C] php/php-src",
-      "url": "https://github.com/php/php-src",
-      "hot": "41,316"
+      "title": "[JavaScript] cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "hot": "41,355"
     },
     {
       "rank": 2,
-      "title": "[Python] anthropics/knowledge-work-plugins",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "hot": "31,773"
+      "title": "[C] php/php-src",
+      "url": "https://github.com/php/php-src",
+      "hot": "41,495"
     },
     {
       "rank": 3,
-      "title": "[JavaScript] DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "hot": "173,907"
+      "title": "[Python] anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "hot": "32,049"
     },
     {
       "rank": 4,
-      "title": "[JavaScript] cloudflare/security-audit-skill",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "hot": "40,098"
+      "title": "[Rust] NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "hot": "18,503"
     },
     {
       "rank": 5,
-      "title": "[Python] Graphify-Labs/graphify",
-      "url": "https://github.com/Graphify-Labs/graphify",
-      "hot": "133,273"
+      "title": "[TypeScript] Renhuai123/ziwei-doushu",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "hot": "6,753"
     },
     {
       "rank": 6,
-      "title": "[TypeScript] supabase/supabase",
-      "url": "https://github.com/supabase/supabase",
-      "hot": "113,592"
+      "title": "[Python] SnailSploit/Claude-Red",
+      "url": "https://github.com/SnailSploit/Claude-Red",
+      "hot": "8,196"
     },
     {
       "rank": 7,
-      "title": "[Python] fastapi/fastapi",
-      "url": "https://github.com/fastapi/fastapi",
-      "hot": "103,922"
+      "title": "[Python] OpenBMB/VoxCPM",
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "hot": "40,107"
     },
     {
       "rank": 8,
-      "title": "[Python] luongnv89/claude-howto",
-      "url": "https://github.com/luongnv89/claude-howto",
-      "hot": "43,501"
-    },
-    {
-      "rank": 9,
-      "title": "[Visual Basic .NET] Meloong-Git/PCL",
-      "url": "https://github.com/Meloong-Git/PCL",
-      "hot": "8,788"
+      "title": "[JavaScript] nodejs/node",
+      "url": "https://github.com/nodejs/node",
+      "hot": "122,690"
     }
   ]
 }
