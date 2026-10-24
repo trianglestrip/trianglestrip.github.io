@@ -1,57 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-10-24T14:08:11+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-10-24T21:50:51+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[JavaScript] cloudflare/security-audit-skill",
       "url": "https://github.com/cloudflare/security-audit-skill",
-      "hot": "41,355"
+      "hot": "44,306"
     },
     {
       "rank": 2,
-      "title": "[C] php/php-src",
-      "url": "https://github.com/php/php-src",
-      "hot": "41,495"
+      "title": "[Rust] NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "hot": "19,412"
     },
     {
       "rank": 3,
-      "title": "[Python] anthropics/knowledge-work-plugins",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "hot": "32,049"
+      "title": "[Python] aws/agent-toolkit-for-aws",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "hot": "3,093"
     },
     {
       "rank": 4,
-      "title": "[Rust] NVIDIA/OpenShell",
-      "url": "https://github.com/NVIDIA/OpenShell",
-      "hot": "18,503"
+      "title": "[CSS] Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "hot": "32,035"
     },
     {
       "rank": 5,
-      "title": "[TypeScript] Renhuai123/ziwei-doushu",
-      "url": "https://github.com/Renhuai123/ziwei-doushu",
-      "hot": "6,753"
+      "title": "[Python] luongnv89/claude-howto",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "hot": "44,474"
     },
     {
       "rank": 6,
-      "title": "[Python] SnailSploit/Claude-Red",
-      "url": "https://github.com/SnailSploit/Claude-Red",
-      "hot": "8,196"
+      "title": "[Rust] pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "hot": "86,314"
     },
     {
       "rank": 7,
-      "title": "[Python] OpenBMB/VoxCPM",
-      "url": "https://github.com/OpenBMB/VoxCPM",
-      "hot": "40,107"
+      "title": "[Rust] pollen-robotics/microduck",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "hot": "10,924"
     },
     {
       "rank": 8,
-      "title": "[JavaScript] nodejs/node",
-      "url": "https://github.com/nodejs/node",
-      "hot": "122,690"
+      "title": "[TypeScript] google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "hot": "107,969"
+    },
+    {
+      "rank": 9,
+      "title": "[Python] jbiaojerry/ebook-treasure-chest",
+      "url": "https://github.com/jbiaojerry/ebook-treasure-chest",
+      "hot": "22,554"
+    },
+    {
+      "rank": 10,
+      "title": "[TypeScript] makecindy/cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "hot": "4,035"
     }
   ]
 }
