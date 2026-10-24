@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-24T06:02:40+00:00",
+  "updated_at": "2026-10-24T10:40:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-      "hot": "830"
+      "title": "I Don't Understand Quantum Physics",
+      "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+      "hot": "44"
     },
     {
       "rank": 2,
-      "title": "Twelve years of distributed SQLite",
-      "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
-      "hot": "111"
+      "title": "OBS Studio 33",
+      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+      "hot": "166"
     },
     {
       "rank": 3,
-      "title": "Apple Music 404 Not Found",
-      "url": "https://music.apple.com/this-url-doesnt-exist",
-      "hot": "695"
+      "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "hot": "925"
     },
     {
       "rank": 4,
-      "title": "How close can pure functional programming get to C?",
-      "url": "https://rtfeldman.com/fp-vs-c",
-      "hot": "38"
+      "title": "ThinkRail from JetBrains",
+      "url": "https://thinkrail.ai/",
+      "hot": "33"
     },
     {
       "rank": 5,
-      "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
-      "url": "https://edjefferson.com/localwiki/",
-      "hot": "1333"
+      "title": "Physicists trap a single antimatter particle for a month",
+      "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
+      "hot": "59"
     },
     {
       "rank": 6,
-      "title": "Dessa: Conversation Model trained only on speech",
-      "url": "https://block.xyz/dessa",
-      "hot": "328"
+      "title": "Today, we hacked what we'd set out to hack: the iPhone",
+      "url": "https://blog.calif.io/p/iphone",
+      "hot": "893"
     },
     {
       "rank": 7,
-      "title": "Today, we hacked what we'd set out to hack: the iPhone",
-      "url": "https://blog.calif.io/p/iphone",
-      "hot": "813"
+      "title": "Twelve years of distributed SQLite",
+      "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+      "hot": "211"
     },
     {
       "rank": 8,
-      "title": "CVE Tracker",
-      "url": "https://cve.0xosprey.com/",
-      "hot": "143"
+      "title": "How close can pure functional programming get to C?",
+      "url": "https://rtfeldman.com/fp-vs-c",
+      "hot": "128"
     },
     {
       "rank": 9,
-      "title": "A practical guide to AI image generation, from diffusion to agents",
-      "url": "https://danielball.com/notes/ai_image_generation.html",
-      "hot": "20"
+      "title": "Apple Music 404 Not Found",
+      "url": "https://music.apple.com/this-url-doesnt-exist",
+      "hot": "774"
     },
     {
       "rank": 10,
-      "title": "Bringing uv and ty together",
-      "url": "https://astral.sh/blog/uv-ty-integration",
-      "hot": "91"
+      "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
+      "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
+      "hot": "109"
     }
   ]
 }
