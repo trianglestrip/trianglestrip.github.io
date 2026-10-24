@@ -1,19 +1,19 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-24T14:07:54+00:00",
+  "updated_at": "2026-10-24T17:23:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "醉梦",
-      "url": "https://movie.douban.com/subject/37042229/",
+      "title": "小城良方",
+      "url": "https://movie.douban.com/subject/36675942/",
       "hot": ""
     },
     {
       "rank": 2,
-      "title": "小城良方",
-      "url": "https://movie.douban.com/subject/36675942/",
+      "title": "醉梦",
+      "url": "https://movie.douban.com/subject/37042229/",
       "hot": ""
     },
     {
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
+      "title": "空枪",
+      "url": "https://movie.douban.com/subject/37508847/",
+      "hot": "评分 7.2"
+    },
+    {
+      "rank": 9,
       "title": "希望",
       "url": "https://movie.douban.com/subject/36179101/",
       "hot": "评分 5.5"
     },
     {
-      "rank": 9,
-      "title": "我不是大师",
-      "url": "https://movie.douban.com/subject/37297001/",
-      "hot": "评分 7.3"
-    },
-    {
       "rank": 10,
-      "title": "神探之痕迹‎",
-      "url": "https://movie.douban.com/subject/37247814/",
-      "hot": "评分 6.8"
+      "title": "逃出布迪秀",
+      "url": "https://movie.douban.com/subject/37446297/",
+      "hot": "评分 7.3"
     }
   ]
 }
