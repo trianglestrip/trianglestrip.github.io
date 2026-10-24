@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-23T23:01:11+00:00",
+  "updated_at": "2026-10-24T01:24:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
       "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-      "hot": "624"
+      "hot": "709"
     },
     {
       "rank": 2,
-      "title": "Apple Music 404 Not Found",
-      "url": "https://music.apple.com/this-url-doesnt-exist",
-      "hot": "471"
+      "title": "Evolving Threat: http2shell is an RCE in node, Python, and more",
+      "url": "https://nitter.click/AikidoSecurity/status/2113759110625906950?__galadriel=lPmlGl9id4oAd5UeBwMhlYKArHyr6lR2IDGujPwB5HV2kQ1aLoPWFd5A9sGuzNcmrp8fUso8qygmHcKTDZ8MNHWqQ3bDJcycV87xp_0VypzQLYj6O_RRHlZuQqj33oASGY2YLSoAiMjeOZN40h7Stf8AG7DPrGZbAPVKUXy36HoMudRbvwF3_r2uYNmfJMhpKzywQDM6Ab8",
+      "hot": "59"
     },
     {
       "rank": 3,
-      "title": "Dessa: the most authentic full-duplex speech model ever built",
-      "url": "https://block.xyz/dessa",
-      "hot": "149"
+      "title": "Apple Music 404 Not Found",
+      "url": "https://music.apple.com/this-url-doesnt-exist",
+      "hot": "579"
     },
     {
       "rank": 4,
-      "title": "Today, we hacked what we'd set out to hack: the iPhone",
-      "url": "https://blog.calif.io/p/iphone",
-      "hot": "678"
+      "title": "CVE Tracker",
+      "url": "https://cve.0xosprey.com/",
+      "hot": "96"
     },
     {
       "rank": 5,
-      "title": "CVE Tracker",
-      "url": "https://cve.0xosprey.com/",
-      "hot": "42"
+      "title": "Today, we hacked what we'd set out to hack: the iPhone",
+      "url": "https://blog.calif.io/p/iphone",
+      "hot": "741"
     },
     {
       "rank": 6,
-      "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
-      "url": "https://edjefferson.com/localwiki/",
-      "hot": "1171"
+      "title": "Dessa: the most authentic full-duplex speech model ever built",
+      "url": "https://block.xyz/dessa",
+      "hot": "221"
     },
     {
       "rank": 7,
-      "title": "The Real Kevin Bacon",
-      "url": "https://pudding.cool/2026/10/kevin-bacon/",
-      "hot": "202"
+      "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
+      "url": "https://edjefferson.com/localwiki/",
+      "hot": "1236"
     },
     {
       "rank": 8,
-      "title": "Canadians are running out of time to oppose Bill C-22",
-      "url": "https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill",
-      "hot": "272"
+      "title": "The Real Kevin Bacon",
+      "url": "https://pudding.cool/2026/10/kevin-bacon/",
+      "hot": "236"
     },
     {
       "rank": 9,
-      "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-      "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-      "hot": "179"
+      "title": "Canadians are running out of time to oppose Bill C-22",
+      "url": "https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill",
+      "hot": "321"
     },
     {
       "rank": 10,
-      "title": "Rune 1.3: adds TypeScript, a Helix editor, Kitty graphics and OSC-7501",
-      "url": "https://rune.build/blog/rune-1-3-release",
-      "hot": "24"
+      "title": "Show HN: Corgi, a helpful {agent, terminal} multiplexer",
+      "url": "https://corgi.computer/",
+      "hot": "30"
     }
   ]
 }
