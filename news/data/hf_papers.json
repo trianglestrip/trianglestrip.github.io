@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-23T23:01:25+00:00",
+  "updated_at": "2026-10-24T06:02:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Harness^2: Recursive Agent Harnessing for an Open World",
       "url": "https://huggingface.co/papers/2610.14224",
-      "hot": "118"
+      "hot": "120"
     },
     {
       "rank": 2,
@@ -44,7 +44,7 @@
       "rank": 7,
       "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
       "url": "https://huggingface.co/papers/2610.17309",
-      "hot": "80"
+      "hot": "81"
     },
     {
       "rank": 8,
@@ -56,13 +56,13 @@
       "rank": 9,
       "title": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
       "url": "https://huggingface.co/papers/2610.28698",
-      "hot": "60"
+      "hot": "61"
     },
     {
       "rank": 10,
-      "title": "Unlimited OCR Works",
-      "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "97"
+      "title": "Internal Safety Collapse in Frontier Large Language Models",
+      "url": "https://huggingface.co/papers/2603.23509",
+      "hot": "31"
     }
   ]
 }
