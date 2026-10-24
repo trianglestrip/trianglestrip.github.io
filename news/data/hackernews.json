@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-24T17:24:11+00:00",
+  "updated_at": "2026-10-24T19:35:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Roku developer repositories moved from GitHub to GitLab",
       "url": "https://blog.roku.com/developer/gitlab-move",
-      "hot": "89"
+      "hot": "176"
     },
     {
       "rank": 2,
-      "title": "FreeDNS",
-      "url": "https://freedns.afraid.org/",
-      "hot": "122"
+      "title": "Dream-1",
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "hot": "60"
     },
     {
       "rank": 3,
       "title": "The St. Helena 5 pence coin shows Jonathan, a roughly 190 year old tortoise",
       "url": "https://de.numista.com/9866",
-      "hot": "21"
+      "hot": "61"
     },
     {
       "rank": 4,
-      "title": "Neural chip decodes interactions between brain regions",
-      "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
-      "hot": "32"
+      "title": "FreeDNS",
+      "url": "https://freedns.afraid.org/",
+      "hot": "183"
     },
     {
       "rank": 5,
-      "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
-      "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
-      "hot": "507"
+      "title": "Glymphatic clearance to alleviate traumatic brain edema& Alzheimer's pathology",
+      "url": "https://www.science.org/doi/10.1126/sciadv.aeh8870",
+      "hot": "22"
     },
     {
       "rank": 6,
-      "title": "OBS Studio 33",
-      "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
-      "hot": "365"
+      "title": "John Carmack on the Goose Language: multiple data stacks and relative references",
+      "url": "https://twitter.com/ID_AA_Carmack/status/2113704269274636568",
+      "hot": "18"
     },
     {
       "rank": 7,
-      "title": "Show HN: Argus- open source security platform to protect against agentic attacks",
-      "url": "https://github.com/thomasunise/argus",
-      "hot": "11"
+      "title": "Why is AI generated language so hard to understand?",
+      "url": "https://arxiv.org/abs/2610.29162",
+      "hot": "32"
     },
     {
       "rank": 8,
-      "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
-      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
-      "hot": "178"
+      "title": "Neural chip decodes interactions between brain regions",
+      "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+      "hot": "61"
     },
     {
       "rank": 9,
-      "title": "TornadoVM 7 Enables GPU-Native Workloads from Java Applications",
-      "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
-      "hot": "60"
+      "title": "PHP Foundation 'under-funded' with one full-time staff member, director says",
+      "url": "https://www.reuters.com/technology/php-foundation-under-funded-with-one-full-time-staff-member-director-says-2026-10-23/",
+      "hot": "29"
     },
     {
       "rank": 10,
-      "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-      "hot": "1027"
+      "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "hot": "228"
     }
   ]
 }
