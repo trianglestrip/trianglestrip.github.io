@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-24T21:51:04+00:00",
+  "updated_at": "2026-10-25T01:44:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Steal My Bitcoin",
-      "url": "https://stealmybitcoin.com/",
+      "title": "America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
       "hot": "149"
     },
     {
       "rank": 2,
-      "title": "No Signs of AI Payoff Outside the Tech Sector",
-      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-      "hot": "318"
+      "title": "We should be more ambitious with the software we build",
+      "url": "https://danluu.com/ambitious/",
+      "hot": "158"
     },
     {
       "rank": 3,
-      "title": "The Goose Programming Language",
-      "url": "https://aardappel.github.io/goose/",
-      "hot": "134"
+      "title": "Roku developer repositories moved from GitHub to GitLab",
+      "url": "https://blog.roku.com/developer/gitlab-move",
+      "hot": "264"
     },
     {
       "rank": 4,
-      "title": "John Carmack on the Goose Language: multiple data stacks and relative references",
-      "url": "https://twitter.com/ID_AA_Carmack/status/2113704269274636568",
-      "hot": "105"
+      "title": "The Goose Programming Language",
+      "url": "https://aardappel.github.io/goose/",
+      "hot": "238"
     },
     {
       "rank": 5,
       "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
       "url": "https://missileer.watch",
-      "hot": "62"
+      "hot": "114"
     },
     {
       "rank": 6,
-      "title": "Roku developer repositories moved from GitHub to GitLab",
-      "url": "https://blog.roku.com/developer/gitlab-move",
-      "hot": "217"
+      "title": "Why Gopher in 2026?",
+      "url": "https://gopher.muffinlabs.com/sdf.org/users/nervtoji/phlog/001.txt",
+      "hot": "22"
     },
     {
       "rank": 7,
-      "title": "Dream-1",
-      "url": "https://dreamlabs.ai/research/dream-1/",
-      "hot": "120"
+      "title": "Small Programs and Languages",
+      "url": "https://ratfactor.com/cards/pl-small",
+      "hot": "36"
     },
     {
       "rank": 8,
-      "title": "The St. Helena 5 pence coin shows Jonathan, a roughly 190 year old tortoise",
-      "url": "https://de.numista.com/9866",
-      "hot": "74"
+      "title": "Show HN: Steal My Bitcoin",
+      "url": "https://stealmybitcoin.com/",
+      "hot": "402"
     },
     {
       "rank": 9,
-      "title": "FreeDNS",
-      "url": "https://freedns.afraid.org/",
-      "hot": "214"
+      "title": "SpeedCrunch 1.1",
+      "url": "https://www.speedcrunch.org/",
+      "hot": "76"
     },
     {
       "rank": 10,
-      "title": "Danish Government silently drops plan to dump MS Office",
-      "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
-      "hot": "158"
+      "title": "Reactive Optimizers: rewrite the optimizer's source code during training",
+      "url": "https://xingjianbai.com/reactive-optimizers/",
+      "hot": "6"
     }
   ]
 }
