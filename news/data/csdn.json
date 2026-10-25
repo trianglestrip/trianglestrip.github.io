@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-25T01:44:25+00:00",
+  "updated_at": "2026-10-25T06:54:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI大模型接入SDK】Trae生成代码介绍",
       "url": "https://blog.csdn.net/2401_89899187/article/details/168347042",
-      "hot": "26417"
+      "hot": "23536"
     },
     {
       "rank": 2,
-      "title": "博主开源 AI 记账系统看全栈项目设计：Smart Ledger",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/168745535",
-      "hot": "19534"
+      "title": "启元Q1机器人SDK实操：跑通触摸消息，用ROS 2图形界面完成调试与模型展示",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/168875121",
+      "hot": "17495"
     },
     {
       "rank": 3,
-      "title": "启元Q1机器人SDK实操：跑通触摸消息，用ROS 2图形界面完成调试与模型展示",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/168875121",
-      "hot": "16649"
+      "title": "博主开源 AI 记账系统看全栈项目设计：Smart Ledger",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/168745535",
+      "hot": "17002"
     },
     {
       "rank": 4,
-      "title": "AI 说我在能领 20 万补贴，翻完官方文件只剩 6 万：我用 WorkBuddy + TextIn xParse 搭了个不漏坑的补贴雷达",
-      "url": "https://blog.csdn.net/2401_86326742/article/details/168876380",
-      "hot": "14552"
+      "title": "在 Ubuntu ARM64 上运行 Q1 V3.0 MuJoCo 模型：加载、步进和单执行器响应",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/168868115",
+      "hot": "15171"
     },
     {
       "rank": 5,
-      "title": "AI Agent 工程化开发实战（二）：5 分钟跑通第一个 Deep Agent，然后拆开它",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/168774045",
-      "hot": "12577"
+      "title": "启元 PrimeBot Q1 Python 示例离线解读：BMS 触摸相机逐行讲",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/168767646",
+      "hot": "13873"
     },
     {
       "rank": 6,
-      "title": "模型合并技术_SLERP_TIES_Merge_DARE",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/168957879",
-      "hot": "12507"
+      "title": "AI 说我在能领 20 万补贴，翻完官方文件只剩 6 万：我用 WorkBuddy + TextIn xParse 搭了个不漏坑的补贴雷达",
+      "url": "https://blog.csdn.net/2401_86326742/article/details/168876380",
+      "hot": "13272"
     },
     {
       "rank": 7,
-      "title": "启元 PrimeBot Q1 Python 示例离线解读：BMS 触摸相机逐行讲",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/168767646",
-      "hot": "12219"
+      "title": "模型合并技术_SLERP_TIES_Merge_DARE",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/168957879",
+      "hot": "12545"
     },
     {
       "rank": 8,
-      "title": "在 Ubuntu ARM64 上运行 Q1 V3.0 MuJoCo 模型：加载、步进和单执行器响应",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/168868115",
-      "hot": "11944"
+      "title": "AI Agent 工程化开发实战（二）：5 分钟跑通第一个 Deep Agent，然后拆开它",
+      "url": "https://blog.csdn.net/xiaobing259/article/details/168774045",
+      "hot": "12209"
     },
     {
       "rank": 9,
-      "title": "【PBAP】规范精讲[7]: 蓝牙PBAP服务发现机制详解——让设备互相识别的关键流程",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/168561541",
-      "hot": "11781"
+      "title": "【云原生】nerdctl 部署及使用指南",
+      "url": "https://blog.csdn.net/liu_chen_yang/article/details/166486885",
+      "hot": "11690"
     },
     {
       "rank": 10,
-      "title": "【云原生】nerdctl 部署及使用指南",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/166486885",
-      "hot": "11618"
+      "title": "【PBAP】规范精讲[7]: 蓝牙PBAP服务发现机制详解——让设备互相识别的关键流程",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/168561541",
+      "hot": "11506"
     }
   ]
 }

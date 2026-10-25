@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-25T01:44:29+00:00",
+  "updated_at": "2026-10-25T06:54:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?",
-      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
-      "hot": "149"
+      "title": "Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
+      "url": "https://github.com/slee-persis/GVS5H",
+      "hot": "135"
     },
     {
       "rank": 2,
       "title": "We should be more ambitious with the software we build",
       "url": "https://danluu.com/ambitious/",
-      "hot": "158"
+      "hot": "316"
     },
     {
       "rank": 3,
-      "title": "Roku developer repositories moved from GitHub to GitLab",
-      "url": "https://blog.roku.com/developer/gitlab-move",
-      "hot": "264"
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "hot": "99"
     },
     {
       "rank": 4,
-      "title": "The Goose Programming Language",
-      "url": "https://aardappel.github.io/goose/",
-      "hot": "238"
+      "title": "Picasa Photo Viewer Rebuilt for Linux, Project Named Licasa",
+      "url": "https://github.com/sanxchep/licasa",
+      "hot": "25"
     },
     {
       "rank": 5,
-      "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
-      "url": "https://missileer.watch",
-      "hot": "114"
+      "title": "The Goose Programming Language",
+      "url": "https://aardappel.github.io/goose/",
+      "hot": "335"
     },
     {
       "rank": 6,
-      "title": "Why Gopher in 2026?",
-      "url": "https://gopher.muffinlabs.com/sdf.org/users/nervtoji/phlog/001.txt",
-      "hot": "22"
+      "title": "SpeedCrunch 1.1",
+      "url": "https://www.speedcrunch.org/",
+      "hot": "121"
     },
     {
       "rank": 7,
-      "title": "Small Programs and Languages",
-      "url": "https://ratfactor.com/cards/pl-small",
-      "hot": "36"
+      "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
+      "url": "https://missileer.watch",
+      "hot": "164"
     },
     {
       "rank": 8,
-      "title": "Show HN: Steal My Bitcoin",
-      "url": "https://stealmybitcoin.com/",
-      "hot": "402"
+      "title": "Small Programs and Languages",
+      "url": "https://ratfactor.com/cards/pl-small",
+      "hot": "83"
     },
     {
       "rank": 9,
-      "title": "SpeedCrunch 1.1",
-      "url": "https://www.speedcrunch.org/",
-      "hot": "76"
+      "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "hot": "300"
     },
     {
       "rank": 10,
-      "title": "Reactive Optimizers: rewrite the optimizer's source code during training",
-      "url": "https://xingjianbai.com/reactive-optimizers/",
-      "hot": "6"
+      "title": "Pragtical v3.14 Lua-based text editor adds menus, floating views, and sessions",
+      "url": "https://pragtical.dev/blog/pragtical-v3140-release",
+      "hot": "11"
     }
   ]
 }
