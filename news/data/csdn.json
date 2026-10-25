@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-25T12:08:12+00:00",
+  "updated_at": "2026-10-25T16:06:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【AI大模型接入SDK】Trae生成代码介绍",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/168347042",
-      "hot": "24946"
+      "title": "启元Q1机器人SDK实操：跑通触摸消息，用ROS 2图形界面完成调试与模型展示",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/168875121",
+      "hot": "16903"
     },
     {
       "rank": 2,
-      "title": "启元Q1机器人SDK实操：跑通触摸消息，用ROS 2图形界面完成调试与模型展示",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/168875121",
-      "hot": "19738"
+      "title": "AI 说我在能领 20 万补贴，翻完官方文件只剩 6 万：我用 WorkBuddy + TextIn xParse 搭了个不漏坑的补贴雷达",
+      "url": "https://blog.csdn.net/2401_86326742/article/details/168876380",
+      "hot": "16596"
     },
     {
       "rank": 3,
-      "title": "AI 说我在能领 20 万补贴，翻完官方文件只剩 6 万：我用 WorkBuddy + TextIn xParse 搭了个不漏坑的补贴雷达",
-      "url": "https://blog.csdn.net/2401_86326742/article/details/168876380",
-      "hot": "18326"
+      "title": "用 Spring AI 搭 RAG 问答：把公司文档喂给大模型（全链路实战）",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/169058262",
+      "hot": "14208"
     },
     {
       "rank": 4,
       "title": "在 Ubuntu ARM64 上运行 Q1 V3.0 MuJoCo 模型：加载、步进和单执行器响应",
       "url": "https://blog.csdn.net/Mrxiao_bo/article/details/168868115",
-      "hot": "16626"
+      "hot": "13548"
     },
     {
       "rank": 5,
-      "title": "分布式链路追踪 SkyWalking介绍",
-      "url": "https://blog.csdn.net/2401_89019969/article/details/164404092",
-      "hot": "12691"
+      "title": "AI Agent 工程化开发实战（二）：5 分钟跑通第一个 Deep Agent，然后拆开它",
+      "url": "https://blog.csdn.net/xiaobing259/article/details/168774045",
+      "hot": "11580"
     },
     {
       "rank": 6,
-      "title": "AI Agent 工程化开发实战（二）：5 分钟跑通第一个 Deep Agent，然后拆开它",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/168774045",
-      "hot": "12690"
+      "title": "【AI智能体】Codex 实现AI自动化运维实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/166849454",
+      "hot": "10392"
     },
     {
       "rank": 7,
-      "title": "模型合并技术_SLERP_TIES_Merge_DARE",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/168957879",
-      "hot": "12437"
+      "title": "分布式链路追踪 SkyWalking介绍",
+      "url": "https://blog.csdn.net/2401_89019969/article/details/164404092",
+      "hot": "10232"
     },
     {
       "rank": 8,
-      "title": "【云原生】nerdctl 部署及使用指南",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/166486885",
-      "hot": "10134"
+      "title": "N1飞牛NAS做AI接口中转层：New-API接本地Ollama，再用Token把模型能力分发出去",
+      "url": "https://blog.csdn.net/AIRoses/article/details/168861753",
+      "hot": "8667"
     },
     {
       "rank": 9,
-      "title": "用 Spring AI 搭 RAG 问答：把公司文档喂给大模型（全链路实战）",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/169058262",
-      "hot": "8964"
+      "title": "KingbaseES SQL 调优六步法：定位、诊断、下药、验证，一步都别省",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/168979308",
+      "hot": "8272"
     },
     {
       "rank": 10,
-      "title": "【AI智能体】Codex 实现AI自动化运维实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/166849454",
-      "hot": "8853"
+      "title": "AI 图片编辑如何保持一致：局部修改与透明通道",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/168771087",
+      "hot": "7877"
     }
   ]
 }

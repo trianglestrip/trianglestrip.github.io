@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-25T12:08:17+00:00",
+  "updated_at": "2026-10-25T16:06:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "刚刚，Claude不聊天了！一句话出看板、出动画，直接交成品",
+      "url": "https://www.51cto.com/article/859126.html",
+      "hot": "刚刚，Anthropic一口气官宣了三件事：实时仪表盘Dashboards上线，代码动画Motion上线，文档Docs、幻灯片Slides、设计Design三件套摘掉beta标签——免费用户也能用。"
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI开始断网训练最强模型：“安全起见”",
+      "url": "https://www.51cto.com/article/859122.html",
+      "hot": "今天，OpenAI宣布实施新的前沿模型训练安全政策，禁止模型访问真实互联网。今年夏天开始，时有OpenAI、Anthropic、Google、Meta旗下大模型导致的AI安全事故发生。"
+    },
+    {
+      "rank": 3,
       "title": "HarmonyOS 7.0 端侧3DGS实验⑤：空洞、漂浮伪影与视角稳定 #1024·向光而行·码向未来#",
       "url": "https://ost.51cto.com/posts/60830",
       "hot": "一、前言正面能够辨认，换个方向是否仍能看清同一部位？这是&ldquo;桌面三维记录册&rdquo;在文件保存之后需要回答的问题。文件存在说明有了检查对象，..."
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "在 HarmonyOS 6 上做视频倍速，0.5x 到 2x 随便切",
       "url": "https://ost.51cto.com/posts/60813",
       "hot": "前言：这一段，能不能慢一点？看一段操作教程，有时候前半段只想快速过一遍，到了关键步骤又想慢下来。一个固定速度的播放器，往往只能反复..."
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "PHP 爆出高危漏洞，服务器可被直接拿下，尽快修复！",
       "url": "https://www.51cto.com/article/859099.html",
       "hot": "即使站点没有使用 WordPress、Laravel 或 Drupal，也应检查实际承载 Web 请求的 PHP 版本。建议将互联网暴露系统列为最高优先级，尽快完成升级、重启和验证。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "一人，合法，反超原版，王琰：填平闭源模型的思维链护城河",
       "url": "https://www.51cto.com/article/859074.html",
       "hot": "过去两年，AI 行业最激烈的一场暗战，从来不在榜单上——它只围绕一个问题：还能不能拿到最强模型的完整思维链。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "PHP 爆出两大高风险漏洞！Akamai 即时部署防护机制",
       "url": "https://www.51cto.com/article/859067.html",
       "hot": "Akamai 高度关注这次漏洞。PHP 公告发布当天，Akamai 安全情报团队（SIG）就发布了分析，并为 App & API Protector 上线了专项防护规则。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "Claude Code/Codex 预装、空闲只收磁盘费：boxd 开发工作区实测，一条命令全组共用一台机器",
       "url": "https://www.51cto.com/article/859065.html",
       "hot": "boxd 开发工作区不发明新流程，它把你已有的流程原样搬上云。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Cell Reports Medicine 2026 | 一种由大语言模型驱动的多学科人工智能智能体系统，用于预测急诊危重患者的谵妄",
       "url": "https://www.51cto.com/article/859055.html",
       "hot": "我们提出 DeLiriuMAgents，一个由大语言模型驱动、用于预测急诊危重患者谵妄风险的多智能体系统。它将数据驱动的机器学习风险预测、急诊医学/神经病学/精神病学的语言模型虚拟专家推理，以及检索增强生成提供的医学证据整合起来，模拟多学科临床会诊并形成最终决策。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "刚刚，Claude自动模式将全球上线！OpenAI曝出最恐怖一幕",
       "url": "https://www.51cto.com/article/859040.html",
       "hot": "下周起，Claude将直接默认开启自动模式——哪一步能做、哪一步不能做，全凭另一个AI拍板。"
-    },
-    {
-      "rank": 9,
-      "title": "NeurIPS'26 | 注意力也能弃权！改善长上下文、低比特鲁棒性",
-      "url": "https://www.51cto.com/article/859039.html",
-      "hot": "来自西北大学、伊利诺伊理工学院、罗格斯大学等机构的研究团队提出OASIS，为这种双层信息路由提供显式的null选项，并用token层的null概率调整depth层的分支选择。该研究已被NeurIPS 2026接收。"
-    },
-    {
-      "rank": 10,
-      "title": "Agent 沙箱：AI 开始动手之后，边界该画在哪里？",
-      "url": "https://www.51cto.com/article/859038.html",
-      "hot": "Agent 沙箱，是供 Agent 或其工具运行的受限环境。它通过操作系统、容器、虚拟化或语言运行时等机制，约束程序能接触的文件、网络、进程和计算资源。"
     }
   ]
 }
