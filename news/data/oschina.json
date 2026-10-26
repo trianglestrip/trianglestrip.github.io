@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-26T06:22:36+00:00",
+  "updated_at": "2026-10-26T13:26:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Kimi K3.1 Pro 发布：代码超 GPT-6 Astra、开放权重版主动移除网络攻防能力",
+      "url": "https://www.oschina.net/news/503221",
+      "hot": "Mon, 26 Oct 2026 19:44:28 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "开源中国「AI新生派」走进山东大学软件学院：从技术认知到动手实战，探索 AI 时代开发者成长路径",
+      "url": "https://www.oschina.net/news/503219",
+      "hot": "Mon, 26 Oct 2026 17:23:17 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "JimuReport v2.5.5 发布，填报增强与 Word 导出专项修复",
+      "url": "https://www.oschina.net/news/503217",
+      "hot": "Mon, 26 Oct 2026 13:49:34 +0800"
+    },
+    {
+      "rank": 4,
       "title": "PHP 基金会有多缺人？两个 RCE 漏洞的修复，暴露了答案",
       "url": "https://www.oschina.net/news/503215",
       "hot": "Mon, 26 Oct 2026 10:56:21 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "SmartCall v1.0.9 发布：智能体知识库上线，让 AI 客服先查资料再回答",
       "url": "https://www.oschina.net/news/503202",
       "hot": "Mon, 26 Oct 2026 10:12:02 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "ToolForge v0.2.2 正式发布：AI Agent 也能调用工具了！支持 MCP、CLI 与插件级权限管理",
       "url": "https://www.oschina.net/news/503201",
       "hot": "Mon, 26 Oct 2026 10:08:49 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": ":fire::fire::fire: Claude Code 工程最佳实践 | 主数据平台 1.7.0 发布，移动端上线",
       "url": "https://www.oschina.net/news/503199",
       "hot": "Mon, 26 Oct 2026 09:43:39 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": ":fire:MybatisPlus 发布 3.5.18 版本",
       "url": "https://www.oschina.net/news/503198",
       "hot": "Mon, 26 Oct 2026 08:44:05 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "Reqmango 是面向团队的自建开源项目管理工具",
       "url": "https://www.oschina.net/news/503197",
       "hot": "Sun, 25 Oct 2026 20:24:05 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "10 MB 的桌面 AI 客户端：用仓颉 + 系统 WebView 替代 Electron",
       "url": "https://www.oschina.net/news/503196",
       "hot": "Sun, 25 Oct 2026 18:13:31 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "IDEA enjoy 模板引擎 插件 1.0 发布",
-      "url": "https://www.oschina.net/news/503195",
-      "hot": "Sat, 24 Oct 2026 19:30:10 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Jync v1.8.0 新增统一认证 &amp; 调整导航页面",
-      "url": "https://www.oschina.net/news/503193",
-      "hot": "Sat, 24 Oct 2026 15:52:39 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
-      "url": "https://www.oschina.net/news/503191",
-      "hot": "Fri, 23 Oct 2026 23:16:49 +0800"
     }
   ]
 }

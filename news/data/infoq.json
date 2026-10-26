@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-26T06:22:37+00:00",
+  "updated_at": "2026-10-26T13:26:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "中科慧灵完成数亿元A++轮融资：制鞋机器人订单超 4 亿元，具身智能开始拼量产交付",
+      "url": "https://www.infoq.cn/article/2svt5BbWUOHbADdo0UZo?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 18:30:50 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "让 AI 从需求一路干到上线，软件开发组织要变了？",
+      "url": "https://www.infoq.cn/article/b32Mw2zaPrxyJ6ChePD5?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 18:08:13 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Backstage 1.55 新增脚手架任务恢复功能，并移除已废弃的目录 API",
+      "url": "https://www.infoq.cn/article/hilBQCk7QcvclfrgZbSf?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 17:17:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "中层技术经理要么重新学技术，要么考虑退休：前 Stripe 工程高管警告，未来三年工程管理将彻底变样",
+      "url": "https://www.infoq.cn/article/hhxL1M65UU3Iwr4ovALT?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 15:18:06 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "30 个 Agent 背后：花椒如何建设可持续演进的企业 AI 能力？",
+      "url": "https://www.infoq.cn/article/O7lcxqKD2avRPbNoMmtg?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 15:05:27 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "AWS 重构 EventBridge 自定义事件总线，面向企业级事件驱动架构",
+      "url": "https://www.infoq.cn/article/GG9rXsevpPV9SK3uPxpq?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 15:00:00 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "模型好选，搜索难做：一个投研Agent的两年开发历程",
+      "url": "https://www.infoq.cn/article/NrUkJExfuuFOICsjVYbb?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 14:57:35 GMT"
+    },
+    {
+      "rank": 8,
       "title": "Terraform Google Cloud 8.0 发布：告别“永久 Diff”，代价是破坏性升级",
       "url": "https://www.infoq.cn/article/qJB2DapLThovtxzyOtKW?utm_source=rss&utm_medium=article",
       "hot": "Mon, 26 Oct 2026 13:21:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官",
       "url": "https://www.infoq.cn/article/0C1Wgt7N9NzM6KjHSFeA?utm_source=rss&utm_medium=article",
       "hot": "Mon, 26 Oct 2026 11:53:09 GMT"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "Android Bench 2 新增对长周期任务、智能评估和连续评分的支持",
       "url": "https://www.infoq.cn/article/6XMtxZevN1488WVGXdR1?utm_source=rss&utm_medium=article",
       "hot": "Mon, 26 Oct 2026 11:07:00 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "CircleCI 正式发布 Machine Runner Orchestrator",
-      "url": "https://www.infoq.cn/article/y7YQmP1p42Uj69H1C6uf?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 26 Oct 2026 09:00:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "Cloudflare 的 OHTTP 网关拒绝解密通过 Cloudflare 传入的请求",
-      "url": "https://www.infoq.cn/article/4647jBOxmf3Ut0i1aVbx?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 25 Oct 2026 14:00:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "四分之一PR是“AI垃圾”！Linux基金会发布新报告：AI写代码快了52%，开源维护者却更累了",
-      "url": "https://www.infoq.cn/article/9TSuUDxrUSGS26XTA2yB?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 25 Oct 2026 10:30:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Java 近期新闻：Grails 8、Open Liberty、GlassFish、Infinispan、LangChain4j、Spock",
-      "url": "https://www.infoq.cn/article/BHWP4JJDeExZZWsifFlg?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 25 Oct 2026 09:06:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "React 19.3 新增 browser() API，使“仅客户端渲染”成为一等公民",
-      "url": "https://www.infoq.cn/article/jNX6EAzqP34xRjqUMU1N?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 24 Oct 2026 13:00:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "何时应使用 Liquid Clustering？湖仓布局策略基准测试",
-      "url": "https://www.infoq.cn/article/lkefSu7SjjIHL1Fmk0Pv?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 24 Oct 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "智源众智 FlagOS 2.2 让前沿模型与多元算力协同演进",
-      "url": "https://www.infoq.cn/article/mhdJwMMzYFedMFHKfHWs?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 23 Oct 2026 19:40:29 GMT"
     }
   ]
 }

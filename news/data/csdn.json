@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-26T06:22:24+00:00",
+  "updated_at": "2026-10-26T13:22:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "用 Spring AI 搭 RAG 问答：把公司文档喂给大模型（全链路实战）",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/169058262",
-      "hot": "21702"
+      "title": "【AI智能体】Codex 实现AI自动化运维实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/166849454",
+      "hot": "23089"
     },
     {
       "rank": 2,
-      "title": "【AI智能体】Codex 实现AI自动化运维实战操作详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/166849454",
-      "hot": "18324"
+      "title": "用 Spring AI 搭 RAG 问答：把公司文档喂给大模型（全链路实战）",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/169058262",
+      "hot": "23068"
     },
     {
       "rank": 3,
-      "title": "启元Q1机器人SDK实操：跑通触摸消息，用ROS 2图形界面完成调试与模型展示",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/168875121",
-      "hot": "16993"
+      "title": "【Linux网络】网络为什么要分层？从协议、OSI 到 TCP/IP，一次搭起网络通信整体框架",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/168884765",
+      "hot": "18212"
     },
     {
       "rank": 4,
       "title": "MapReduce - Hadoop 生态中 MapReduce 的定位与关联组件",
       "url": "https://blog.csdn.net/qq_41187124/article/details/157685149",
-      "hot": "15342"
+      "hot": "18050"
     },
     {
       "rank": 5,
-      "title": "AI 说我在能领 20 万补贴，翻完官方文件只剩 6 万：我用 WorkBuddy + TextIn xParse 搭了个不漏坑的补贴雷达",
-      "url": "https://blog.csdn.net/2401_86326742/article/details/168876380",
-      "hot": "13713"
+      "title": "三甲医院AI的1163实施路径（下）",
+      "url": "https://blog.csdn.net/kkiron/article/details/169067166",
+      "hot": "16219"
     },
     {
       "rank": 6,
-      "title": "【Linux网络】网络为什么要分层？从协议、OSI 到 TCP/IP，一次搭起网络通信整体框架",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/168884765",
-      "hot": "12685"
+      "title": "AI 图片编辑如何保持一致：局部修改与透明通道",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/168771087",
+      "hot": "14117"
     },
     {
       "rank": 7,
-      "title": "在 Ubuntu ARM64 上运行 Q1 V3.0 MuJoCo 模型：加载、步进和单执行器响应",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/168868115",
-      "hot": "11286"
+      "title": "【c++20】协程与屏障",
+      "url": "https://blog.csdn.net/he_zhidan/article/details/167802433",
+      "hot": "13653"
     },
     {
       "rank": 8,
-      "title": "AI 图片编辑如何保持一致：局部修改与透明通道",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/168771087",
-      "hot": "11107"
+      "title": "从一句话到一个会呼吸的镜头：基于SpringBoot用硅基流动 Wan2.2 打通「文本生成视频」全链路",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/168966679",
+      "hot": "11315"
     },
     {
       "rank": 9,
-      "title": "【c++20】协程与屏障",
-      "url": "https://blog.csdn.net/he_zhidan/article/details/167802433",
-      "hot": "10523"
+      "title": "【HIDS】规范精讲[4]：一张句柄地图走天下——示例 GATT 数据库逐行拆解",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/168561481",
+      "hot": "11072"
     },
     {
       "rank": 10,
-      "title": "【HIDS】规范精讲[4]：一张句柄地图走天下——示例 GATT 数据库逐行拆解",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/168561481",
-      "hot": "10128"
+      "title": "Windows部署Hermes Agent并接入微信：模型配置、Gateway消息入口和Web控制台都跑通",
+      "url": "https://blog.csdn.net/weixin_42878111/article/details/169151785",
+      "hot": "9910"
     }
   ]
 }
