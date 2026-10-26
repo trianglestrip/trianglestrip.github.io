@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-26T13:21:01+00:00",
+  "updated_at": "2026-10-26T19:23:37+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "嫁金钗",
-      "url": "https://movie.douban.com/subject/37191789/",
-      "hot": ""
-    },
-    {
-      "rank": 5,
       "title": "空枪",
       "url": "https://movie.douban.com/subject/37508847/",
       "hot": "评分 7.2"
+    },
+    {
+      "rank": 5,
+      "title": "嫁金钗",
+      "url": "https://movie.douban.com/subject/37191789/",
+      "hot": ""
     },
     {
       "rank": 6,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "杯雪·一战成名",
-      "url": "https://movie.douban.com/subject/37516455/",
-      "hot": "评分 7.5"
+      "title": "逃出布迪秀",
+      "url": "https://movie.douban.com/subject/37446297/",
+      "hot": "评分 7.3"
     }
   ]
 }

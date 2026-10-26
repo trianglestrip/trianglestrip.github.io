@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-26T13:26:01+00:00",
+  "updated_at": "2026-10-26T19:24:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Anthropic S-1",
-      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
-      "hot": "153"
+      "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+      "hot": "365"
     },
     {
       "rank": 2,
-      "title": "Switzerland. Block by block. At 1:1 scale",
-      "url": "https://blocks.manifold3d.ch/",
-      "hot": "275"
+      "title": "Microsoft Announces Type Server Protocol, Extension of Language Server Protocol",
+      "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+      "hot": "49"
     },
     {
       "rank": 3,
-      "title": "Birdwatching rewires the brain and slows cognitive decline",
-      "url": "https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline",
-      "hot": "183"
+      "title": "CSS-Tricks has a new owner",
+      "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+      "hot": "236"
     },
     {
       "rank": 4,
-      "title": "Show HN: TitleArt – Make text like it's 1997",
-      "url": "https://titleart.dvy.io/",
-      "hot": "297"
+      "title": "Oldest GUI application that still runs on Windows 11",
+      "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/",
+      "hot": "44"
     },
     {
       "rank": 5,
-      "title": "One of the Greatest Inventions in the History of Human Transport",
-      "url": "https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
-      "hot": "20"
+      "title": "GPT-6.1 Terra",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "hot": "207"
     },
     {
       "rank": 6,
-      "title": "Tasks as Code: Move Your Tickets into the Repository",
-      "url": "https://typemill.net/knowledge-hub/tasks-as-code",
-      "hot": "19"
+      "title": "Nietzschian Debugger",
+      "url": "https://github.com/DilawarShafiq/nietzschian-debugger",
+      "hot": "42"
     },
     {
       "rank": 7,
-      "title": "Websites Should Be Printable",
-      "url": "https://brennenputh.me/blog/printable-websites/",
-      "hot": "83"
+      "title": "Anthropic S-1",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "hot": "1217"
     },
     {
       "rank": 8,
-      "title": "Fixing Tool-Call Accuracy in vLLM",
-      "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
-      "hot": "7"
+      "title": "SIMD-accelerated computer vision on a $2 microcontroller",
+      "url": "https://shraiwi.com/blog/simd-fast-esp32s3/",
+      "hot": "112"
     },
     {
       "rank": 9,
-      "title": "Behind the scenes at the NeXT Computer office",
-      "url": "https://exhibits.stanford.edu/menuez/browse/next-computer-inc?per_page=96&sort=pub_year_isi+asc%2C+title_sort+asc&view=masonry",
-      "hot": "169"
+      "title": "Diamond Transistor",
+      "url": "https://www.df.com/diamond-transistor",
+      "hot": "64"
     },
     {
       "rank": 10,
-      "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
-      "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
-      "hot": "183"
+      "title": "Blaise Pascal invented fixed route public transport (2024)",
+      "url": "https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
+      "hot": "214"
     }
   ]
 }

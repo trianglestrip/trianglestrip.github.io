@@ -1,69 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-26T13:25:58+00:00",
-  "fetch_ok": false,
-  "error": "Command '['hotboard', 'cto51', '--format', 'json']' timed out after 60 seconds",
+  "updated_at": "2026-10-26T19:24:03+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7 崩溃自愈实战：现场保存、自动重启与状态恢复",
-      "url": "https://ost.51cto.com/posts/61034",
-      "hot": "应用崩溃的代价分两层。第一层是技术上的：进程没了，内存里的一切随之蒸发&mdash;&mdash;用户刚填了一半的表单、编辑到一半的笔记、选好还没下单的规..."
+      "title": "#1024·向光而行·码向未来#ArkGenie 的技术原理：从一段 SSE 到一个可交互 Surface",
+      "url": "https://ost.51cto.com/posts/61053",
+      "hot": "ArkGenie的技术原理：从一段SSE到一个可交互Surfacetypescripthttps:gitcode.comGeorgeGcsArkGeniehttps:github.comGeorgeGcsArkGenieArkGe..."
     },
     {
       "rank": 2,
-      "title": "用 HarmonyOS 6 调音频倍速，语速快慢随心",
-      "url": "https://ost.51cto.com/posts/61031",
-      "hot": "前言：倍速按钮，得真的管声音听一段已经熟悉的说明，1x有时嫌慢；碰到新概念，2x又容易跟不上。倍速是播放器里一个很小的按钮，却会决定这..."
+      "title": "刚刚，Reddit最大开源社区全面封杀AI！Linux和Python被除名",
+      "url": "https://www.51cto.com/article/859322.html",
+      "hot": "从今天起，全面封杀任何使用AI、由AI生成或专门面向AI的项目！版主u/Wolvereness在置顶长文中态度强硬，原话写道：只要你的项目用了AI、由AI编写，或者目标是服务于AI，那么r/opensource就绝不欢迎你。"
     },
     {
       "rank": 3,
+      "title": "#1024·向光而行·码向未来#在 HarmonyOS 上做一套真正能接入应用的 AI 对话组件：ArkGenie 项目介绍",
+      "url": "https://ost.51cto.com/posts/61052",
+      "hot": "在HarmonyOS上做一套真正能接入应用的AI对话组件：ArkGenie项目介绍typescripthttps:gitcode.comGeorgeGcsArkGeniehttps:github.comGeorgeG..."
+    },
+    {
+      "rank": 4,
+      "title": "吴恩达直言不怀念亲手写代码：Coding Agent用法三个月变一轮，但工程判断力没那么快过时，会用Agent只是第三项能力",
+      "url": "https://www.51cto.com/article/859265.html",
+      "hot": "在Supabase Select的对谈里，吴恩达说完这句话，又讲了一个很多开发者熟悉的反常识变化：Coding Agent让他能做更多事，想做却没时间做的项目也越来越多。他甚至觉得，自己做事的速度在变快，想做的事却增加得更快。"
+    },
+    {
+      "rank": 5,
       "title": "刚刚，Claude破纪录！日烧3万亿Token，神秘Fable 5.5压轴登场",
       "url": "https://www.51cto.com/article/859234.html",
       "hot": "就在今天，全球最大的模型聚合路由平台OpenRoute一张图刷屏了。自Opus 5.5诞生以来，短短一个月，7日平均Token使用量，直接暴涨了3.6倍！"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "当 AI Agent 开始直接操作数据库：SQL 权限、人工审批与最小权限落地指南",
       "url": "https://www.51cto.com/article/859232.html",
       "hot": "当助手不再只提代码建议、而是开始直接操作数据库时，工作方式会发生哪些变化，团队又该用什么规则把这种自主性管控住。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "机器人的o1时刻来了！哈佛、伯克利、英伟达推出探索Scaling Law，五大基准平均领先37.4个点",
       "url": "https://www.51cto.com/article/859188.html",
       "hot": "来自哈佛大学、英伟达、加州大学伯克利分校、麻省理工学院和斯坦福大学的研究团队提出 RAX（Robot Agent eXploration），将 Scaling Online Exploration 带入机器人学习。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "用 REA 让 Claude 逆向分析应用：从 Electron Bundle 到 Native Binary 的完整设置指南",
       "url": "https://www.51cto.com/article/859230.html",
       "hot": "REA一个开源 MCP server，可让 Claude 深入分析二进制文件、Electron bundle 和网站，并明确指出它无法确定的内容。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "PyTorch、JAX都被点名！Softmax曝出隐藏Bug，Gemini立功",
       "url": "https://www.51cto.com/article/859187.html",
       "hot": "论文给出的修复方案保留了原有函数的数学定义，也不需要通过提高浮点精度来解决问题。作者认为，这些函数有望直接替换现有实现，且不会带来明显的性能开销。不过，其在大规模模型训练中的实际效果，还需要进一步验证。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "数千亿Token测安全，AI仍能「隔墙传话」！OpenAI前沿训练全面断网",
       "url": "https://www.51cto.com/article/859185.html",
       "hot": "10 月23 日，OpenAI 公布前沿模型训练环境的安全改造细节，披露了这项红队实验。同时，公司明确，前沿模型训练已禁止访问真实互联网，模型改在离线网页环境中练习浏览和搜索。"
-    },
-    {
-      "rank": 9,
-      "title": "重磅！谷歌开源双层RSI框架Harness²，Gemini 3.5性能原地暴涨",
-      "url": "https://www.51cto.com/article/859182.html",
-      "hot": "刚刚，谷歌等开源了一项名为Harness²的重磅框架。在专业基准测试中，即使是Gemini 3.5 Flash这样的顶尖模型，也能在单步优化后实现性能的狂飙。"
-    },
-    {
-      "rank": 10,
-      "title": "人类最后只剩签字权？清华沈阳教授谈AI终局",
-      "url": "https://www.51cto.com/article/859180.html",
-      "hot": "沈阳教授系统抛出四重核心思考：自进化数学（PCU框架）、自进化算法优化（PAE框架）、自进化软件工程（ECX范式），以及AI社会未来结构的两种终局前景。"
     }
   ]
 }
