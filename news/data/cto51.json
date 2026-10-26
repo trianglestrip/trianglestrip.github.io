@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-25T23:20:30+00:00",
+  "updated_at": "2026-10-26T06:22:32+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "刚刚，Claude不聊天了！一句话出看板、出动画，直接交成品",
-      "url": "https://www.51cto.com/article/859126.html",
-      "hot": "刚刚，Anthropic一口气官宣了三件事：实时仪表盘Dashboards上线，代码动画Motion上线，文档Docs、幻灯片Slides、设计Design三件套摘掉beta标签——免费用户也能用。"
+      "title": "HarmonyOS 7 崩溃自愈实战：现场保存、自动重启与状态恢复",
+      "url": "https://ost.51cto.com/posts/61034",
+      "hot": "应用崩溃的代价分两层。第一层是技术上的：进程没了，内存里的一切随之蒸发&mdash;&mdash;用户刚填了一半的表单、编辑到一半的笔记、选好还没下单的规..."
     },
     {
       "rank": 2,
-      "title": "OpenAI开始断网训练最强模型：“安全起见”",
-      "url": "https://www.51cto.com/article/859122.html",
-      "hot": "今天，OpenAI宣布实施新的前沿模型训练安全政策，禁止模型访问真实互联网。今年夏天开始，时有OpenAI、Anthropic、Google、Meta旗下大模型导致的AI安全事故发生。"
+      "title": "用 HarmonyOS 6 调音频倍速，语速快慢随心",
+      "url": "https://ost.51cto.com/posts/61031",
+      "hot": "前言：倍速按钮，得真的管声音听一段已经熟悉的说明，1x有时嫌慢；碰到新概念，2x又容易跟不上。倍速是播放器里一个很小的按钮，却会决定这..."
     },
     {
       "rank": 3,
-      "title": "HarmonyOS 7.0 端侧3DGS实验⑤：空洞、漂浮伪影与视角稳定 #1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/60830",
-      "hot": "一、前言正面能够辨认，换个方向是否仍能看清同一部位？这是&ldquo;桌面三维记录册&rdquo;在文件保存之后需要回答的问题。文件存在说明有了检查对象，..."
+      "title": "刚刚，Claude破纪录！日烧3万亿Token，神秘Fable 5.5压轴登场",
+      "url": "https://www.51cto.com/article/859234.html",
+      "hot": "就在今天，全球最大的模型聚合路由平台OpenRoute一张图刷屏了。自Opus 5.5诞生以来，短短一个月，7日平均Token使用量，直接暴涨了3.6倍！"
     },
     {
       "rank": 4,
-      "title": "在 HarmonyOS 6 上做视频倍速，0.5x 到 2x 随便切",
-      "url": "https://ost.51cto.com/posts/60813",
-      "hot": "前言：这一段，能不能慢一点？看一段操作教程，有时候前半段只想快速过一遍，到了关键步骤又想慢下来。一个固定速度的播放器，往往只能反复..."
+      "title": "当 AI Agent 开始直接操作数据库：SQL 权限、人工审批与最小权限落地指南",
+      "url": "https://www.51cto.com/article/859232.html",
+      "hot": "当助手不再只提代码建议、而是开始直接操作数据库时，工作方式会发生哪些变化，团队又该用什么规则把这种自主性管控住。"
     },
     {
       "rank": 5,
-      "title": "PHP 爆出高危漏洞，服务器可被直接拿下，尽快修复！",
-      "url": "https://www.51cto.com/article/859099.html",
-      "hot": "即使站点没有使用 WordPress、Laravel 或 Drupal，也应检查实际承载 Web 请求的 PHP 版本。建议将互联网暴露系统列为最高优先级，尽快完成升级、重启和验证。"
+      "title": "机器人的o1时刻来了！哈佛、伯克利、英伟达推出探索Scaling Law，五大基准平均领先37.4个点",
+      "url": "https://www.51cto.com/article/859188.html",
+      "hot": "来自哈佛大学、英伟达、加州大学伯克利分校、麻省理工学院和斯坦福大学的研究团队提出 RAX（Robot Agent eXploration），将 Scaling Online Exploration 带入机器人学习。"
     },
     {
       "rank": 6,
-      "title": "一人，合法，反超原版，王琰：填平闭源模型的思维链护城河",
-      "url": "https://www.51cto.com/article/859074.html",
-      "hot": "过去两年，AI 行业最激烈的一场暗战，从来不在榜单上——它只围绕一个问题：还能不能拿到最强模型的完整思维链。"
+      "title": "用 REA 让 Claude 逆向分析应用：从 Electron Bundle 到 Native Binary 的完整设置指南",
+      "url": "https://www.51cto.com/article/859230.html",
+      "hot": "REA一个开源 MCP server，可让 Claude 深入分析二进制文件、Electron bundle 和网站，并明确指出它无法确定的内容。"
     },
     {
       "rank": 7,
-      "title": "PHP 爆出两大高风险漏洞！Akamai 即时部署防护机制",
-      "url": "https://www.51cto.com/article/859067.html",
-      "hot": "Akamai 高度关注这次漏洞。PHP 公告发布当天，Akamai 安全情报团队（SIG）就发布了分析，并为 App & API Protector 上线了专项防护规则。"
+      "title": "PyTorch、JAX都被点名！Softmax曝出隐藏Bug，Gemini立功",
+      "url": "https://www.51cto.com/article/859187.html",
+      "hot": "论文给出的修复方案保留了原有函数的数学定义，也不需要通过提高浮点精度来解决问题。作者认为，这些函数有望直接替换现有实现，且不会带来明显的性能开销。不过，其在大规模模型训练中的实际效果，还需要进一步验证。"
     },
     {
       "rank": 8,
-      "title": "Claude Code/Codex 预装、空闲只收磁盘费：boxd 开发工作区实测，一条命令全组共用一台机器",
-      "url": "https://www.51cto.com/article/859065.html",
-      "hot": "boxd 开发工作区不发明新流程，它把你已有的流程原样搬上云。"
+      "title": "数千亿Token测安全，AI仍能「隔墙传话」！OpenAI前沿训练全面断网",
+      "url": "https://www.51cto.com/article/859185.html",
+      "hot": "10 月23 日，OpenAI 公布前沿模型训练环境的安全改造细节，披露了这项红队实验。同时，公司明确，前沿模型训练已禁止访问真实互联网，模型改在离线网页环境中练习浏览和搜索。"
     },
     {
       "rank": 9,
-      "title": "Cell Reports Medicine 2026 | 一种由大语言模型驱动的多学科人工智能智能体系统，用于预测急诊危重患者的谵妄",
-      "url": "https://www.51cto.com/article/859055.html",
-      "hot": "我们提出 DeLiriuMAgents，一个由大语言模型驱动、用于预测急诊危重患者谵妄风险的多智能体系统。它将数据驱动的机器学习风险预测、急诊医学/神经病学/精神病学的语言模型虚拟专家推理，以及检索增强生成提供的医学证据整合起来，模拟多学科临床会诊并形成最终决策。"
+      "title": "重磅！谷歌开源双层RSI框架Harness²，Gemini 3.5性能原地暴涨",
+      "url": "https://www.51cto.com/article/859182.html",
+      "hot": "刚刚，谷歌等开源了一项名为Harness²的重磅框架。在专业基准测试中，即使是Gemini 3.5 Flash这样的顶尖模型，也能在单步优化后实现性能的狂飙。"
     },
     {
       "rank": 10,
-      "title": "刚刚，Claude自动模式将全球上线！OpenAI曝出最恐怖一幕",
-      "url": "https://www.51cto.com/article/859040.html",
-      "hot": "下周起，Claude将直接默认开启自动模式——哪一步能做、哪一步不能做，全凭另一个AI拍板。"
+      "title": "人类最后只剩签字权？清华沈阳教授谈AI终局",
+      "url": "https://www.51cto.com/article/859180.html",
+      "hot": "沈阳教授系统抛出四重核心思考：自进化数学（PCU框架）、自进化算法优化（PAE框架）、自进化软件工程（ECX范式），以及AI社会未来结构的两种终局前景。"
     }
   ]
 }

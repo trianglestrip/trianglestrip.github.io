@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-25T23:20:23+00:00",
+  "updated_at": "2026-10-26T06:22:22+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Flutter 官方表示：AI 时代代码越来越容易写，为什么还要一套代码库？",
-      "url": "https://juejin.cn/post/7699414277584797734",
-      "hot": "630"
+      "title": "继PHP之后，Java也爆出了重大安全漏洞！",
+      "url": "https://juejin.cn/post/7699886793819504640",
+      "hot": "567"
     },
     {
       "rank": 2,
-      "title": "你的WorkBuddy不好用，大概率是这些设置没设好",
-      "url": "https://juejin.cn/post/7699375396186488851",
-      "hot": "468"
+      "title": "一个需求，五个 Agent：用 TRAE 多 Agent 并行协作重构你的开发节奏",
+      "url": "https://juejin.cn/post/7699372774716801034",
+      "hot": "459"
     },
     {
       "rank": 3,
-      "title": "程序员 1v1 访谈系列第六期：国企也降薪裁员",
-      "url": "https://juejin.cn/post/7699445731564027919",
-      "hot": "315"
-    },
-    {
-      "rank": 4,
-      "title": "一个需求，五个 Agent：用 TRAE 多 Agent 并行协作重构你的开发节奏",
-      "url": "https://juejin.cn/post/7699372774716801034",
-      "hot": "288"
-    },
-    {
-      "rank": 5,
-      "title": "别照抄网上的 php2shell 复现脚本：PHP 内核这次到底碎在哪，4 个真相（2026）",
-      "url": "https://juejin.cn/post/7699300052456652800",
-      "hot": "270"
-    },
-    {
-      "rank": 6,
-      "title": "用 TRAE 把 Markdown文档 搬到微信公众号",
-      "url": "https://juejin.cn/post/7699372774716997642",
+      "title": "GitHub 今日推荐｜gpu-unlock-ada：Ada 显卡张量算力翻倍解锁",
+      "url": "https://juejin.cn/post/7700050834004426790",
       "hot": "252"
     },
     {
+      "rank": 4,
+      "title": "AI说代码没漏洞？马上被 PHP 打脸了",
+      "url": "https://juejin.cn/post/7699673660089729064",
+      "hot": "243"
+    },
+    {
+      "rank": 5,
+      "title": "花了3个月，我们做了一款 AI 版的“飞书文档”",
+      "url": "https://juejin.cn/post/7699738861139689526",
+      "hot": "207"
+    },
+    {
+      "rank": 6,
+      "title": "微信小程序做 PDA 扫码出入库：库存并发控制与 4 个坑",
+      "url": "https://juejin.cn/post/7699411361327415339",
+      "hot": "180"
+    },
+    {
       "rank": 7,
-      "title": "AI coding 时代最值钱的东西，软件工程（下）",
-      "url": "https://juejin.cn/post/7699399582179704847",
-      "hot": "234"
+      "title": "Flutter 紧急发布 3.47.8 安全升级版本，建议都升级",
+      "url": "https://juejin.cn/post/7700380674944204810",
+      "hot": "171"
     },
     {
       "rank": 8,
-      "title": "AI说代码没漏洞？马上被 PHP 打脸了",
-      "url": "https://juejin.cn/post/7699673660089729064",
-      "hot": "189"
+      "title": "架构师最危险的能力：用正确的技术，做出错误的架构决策",
+      "url": "https://juejin.cn/post/7699681127507869750",
+      "hot": "171"
     },
     {
       "rank": 9,
-      "title": "10000 个中国版 Codex 在路上：桌面 Agent 争夺执行入口，一篇理清",
-      "url": "https://juejin.cn/post/7699445731564978191",
-      "hot": "189"
+      "title": "介绍一个开源项目 —— 烂笔头",
+      "url": "https://juejin.cn/post/7700157486074478627",
+      "hot": "171"
     },
     {
       "rank": 10,
-      "title": "GitHub 今日推荐｜gpu-unlock-ada：Ada 显卡张量算力翻倍解锁",
-      "url": "https://juejin.cn/post/7700050834004426790",
-      "hot": "171"
+      "title": "Claude Code 接入 Cloudflare 3.7万星安全审计 Skill：从全量烧钱到按需裁剪的实战方案",
+      "url": "https://juejin.cn/post/7699654593328840745",
+      "hot": "153"
     }
   ]
 }

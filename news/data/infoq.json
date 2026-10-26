@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-25T23:20:36+00:00",
+  "updated_at": "2026-10-26T06:22:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Terraform Google Cloud 8.0 发布：告别“永久 Diff”，代价是破坏性升级",
+      "url": "https://www.infoq.cn/article/qJB2DapLThovtxzyOtKW?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 13:21:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官",
+      "url": "https://www.infoq.cn/article/0C1Wgt7N9NzM6KjHSFeA?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 11:53:09 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Android Bench 2 新增对长周期任务、智能评估和连续评分的支持",
+      "url": "https://www.infoq.cn/article/6XMtxZevN1488WVGXdR1?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 11:07:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "CircleCI 正式发布 Machine Runner Orchestrator",
+      "url": "https://www.infoq.cn/article/y7YQmP1p42Uj69H1C6uf?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 26 Oct 2026 09:00:00 GMT"
+    },
+    {
+      "rank": 5,
       "title": "Cloudflare 的 OHTTP 网关拒绝解密通过 Cloudflare 传入的请求",
       "url": "https://www.infoq.cn/article/4647jBOxmf3Ut0i1aVbx?utm_source=rss&utm_medium=article",
       "hot": "Sun, 25 Oct 2026 14:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "四分之一PR是“AI垃圾”！Linux基金会发布新报告：AI写代码快了52%，开源维护者却更累了",
       "url": "https://www.infoq.cn/article/9TSuUDxrUSGS26XTA2yB?utm_source=rss&utm_medium=article",
       "hot": "Sun, 25 Oct 2026 10:30:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "Java 近期新闻：Grails 8、Open Liberty、GlassFish、Infinispan、LangChain4j、Spock",
       "url": "https://www.infoq.cn/article/BHWP4JJDeExZZWsifFlg?utm_source=rss&utm_medium=article",
       "hot": "Sun, 25 Oct 2026 09:06:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "React 19.3 新增 browser() API，使“仅客户端渲染”成为一等公民",
       "url": "https://www.infoq.cn/article/jNX6EAzqP34xRjqUMU1N?utm_source=rss&utm_medium=article",
       "hot": "Sat, 24 Oct 2026 13:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "何时应使用 Liquid Clustering？湖仓布局策略基准测试",
       "url": "https://www.infoq.cn/article/lkefSu7SjjIHL1Fmk0Pv?utm_source=rss&utm_medium=article",
       "hot": "Sat, 24 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "智源众智 FlagOS 2.2 让前沿模型与多元算力协同演进",
       "url": "https://www.infoq.cn/article/mhdJwMMzYFedMFHKfHWs?utm_source=rss&utm_medium=article",
       "hot": "Fri, 23 Oct 2026 19:40:29 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "刘铁岩、诺奖、图灵奖得主等嘉宾共话AI的下一个十年：Transformer一统天下之后，AI的下一张王牌是什么？",
-      "url": "https://www.infoq.cn/article/UmD4aAerZEts8sZ5t791?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 23 Oct 2026 17:54:19 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "AI Agent 正在改写 CPU 的价值：当 Token 变成行动，算力竞争不再只是拼 GPU",
-      "url": "https://www.infoq.cn/article/AkDgwN6h72cqUOJ35Zok?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 23 Oct 2026 17:53:09 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "PostgreSQL 19 发不出来？AI“找茬”太快，人类修Bug的速度跟不上了",
-      "url": "https://www.infoq.cn/article/Q6mgHWCSqV6KeZzee3NT?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 23 Oct 2026 17:48:25 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "“让Token不空转”，讯飞如何把Agent推进企业核心流程",
-      "url": "https://www.infoq.cn/article/Lo9TLlRdvy4II38yaex0?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 23 Oct 2026 17:40:09 GMT"
     }
   ]
 }
