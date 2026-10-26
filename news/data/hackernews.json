@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-26T19:24:04+00:00",
+  "updated_at": "2026-10-26T23:11:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
-      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
-      "hot": "365"
+      "title": "Working with academic communities to build scientific understanding",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "hot": "184"
     },
     {
       "rank": 2,
-      "title": "Microsoft Announces Type Server Protocol, Extension of Language Server Protocol",
-      "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
-      "hot": "49"
+      "title": "CorridorKey 2.0",
+      "url": "https://corridorkey.com/",
+      "hot": "115"
     },
     {
       "rank": 3,
-      "title": "CSS-Tricks has a new owner",
-      "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
-      "hot": "236"
+      "title": "Type Server Protocol",
+      "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+      "hot": "174"
     },
     {
       "rank": 4,
-      "title": "Oldest GUI application that still runs on Windows 11",
-      "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/",
-      "hot": "44"
+      "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+      "hot": "507"
     },
     {
       "rank": 5,
-      "title": "GPT-6.1 Terra",
-      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
-      "hot": "207"
+      "title": "CSS-Tricks has a new owner",
+      "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+      "hot": "353"
     },
     {
       "rank": 6,
-      "title": "Nietzschian Debugger",
-      "url": "https://github.com/DilawarShafiq/nietzschian-debugger",
-      "hot": "42"
+      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "hot": "18"
     },
     {
       "rank": 7,
-      "title": "Anthropic S-1",
-      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
-      "hot": "1217"
+      "title": "The Exponential Time Hypothesis Is False [pdf]",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "hot": "37"
     },
     {
       "rank": 8,
-      "title": "SIMD-accelerated computer vision on a $2 microcontroller",
-      "url": "https://shraiwi.com/blog/simd-fast-esp32s3/",
-      "hot": "112"
+      "title": "A Printer Printing onto Paper",
+      "url": "https://twitter.com/macrofying/status/2112904628509528219",
+      "hot": "13"
     },
     {
       "rank": 9,
-      "title": "Diamond Transistor",
-      "url": "https://www.df.com/diamond-transistor",
-      "hot": "64"
+      "title": "Oldest GUI application that still runs on Windows 11",
+      "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/",
+      "hot": "232"
     },
     {
       "rank": 10,
-      "title": "Blaise Pascal invented fixed route public transport (2024)",
-      "url": "https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
-      "hot": "214"
+      "title": "Nietzschian Debugger",
+      "url": "https://github.com/DilawarShafiq/nietzschian-debugger",
+      "hot": "115"
     }
   ]
 }

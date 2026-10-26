@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-26T13:26:20+00:00",
+  "updated_at": "2026-10-26T23:12:12+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "62"
-    },
-    {
-      "rank": 4,
       "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
       "url": "https://huggingface.co/papers/2609.18063",
       "hot": "30"
+    },
+    {
+      "rank": 4,
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "62"
     },
     {
       "rank": 5,
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training",
-      "url": "https://huggingface.co/papers/2610.05416",
-      "hot": "23"
-    },
-    {
-      "rank": 7,
-      "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
-      "url": "https://huggingface.co/papers/2610.08699",
-      "hot": "120"
-    },
-    {
-      "rank": 8,
-      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
-      "url": "https://huggingface.co/papers/2508.16279",
-      "hot": "71"
-    },
-    {
-      "rank": 9,
       "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
       "url": "https://huggingface.co/papers/2407.17789",
       "hot": "48"
     },
     {
+      "rank": 7,
+      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
+      "url": "https://huggingface.co/papers/2508.16279",
+      "hot": "71"
+    },
+    {
+      "rank": 8,
+      "title": "Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training",
+      "url": "https://huggingface.co/papers/2610.05416",
+      "hot": "23"
+    },
+    {
+      "rank": 9,
+      "title": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
+      "url": "https://huggingface.co/papers/2610.08699",
+      "hot": "121"
+    },
+    {
       "rank": 10,
-      "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
-      "url": "https://huggingface.co/papers/2610.17309",
-      "hot": "81"
+      "title": "Unlimited OCR Works",
+      "url": "https://huggingface.co/papers/2606.23050",
+      "hot": "98"
     }
   ]
 }
