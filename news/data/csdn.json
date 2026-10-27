@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-27T13:32:47+00:00",
+  "updated_at": "2026-10-27T18:53:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 实现AI自动化运维实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/166849454",
-      "hot": "33488"
+      "hot": "32354"
     },
     {
       "rank": 2,
-      "title": "【Linux网络】网络为什么要分层？从协议、OSI 到 TCP/IP，一次搭起网络通信整体框架",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/168884765",
-      "hot": "19863"
+      "title": "用 Spring AI 搭 RAG 问答：把公司文档喂给大模型（全链路实战）",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/169058262",
+      "hot": "19417"
     },
     {
       "rank": 3,
-      "title": "AI 图片编辑如何保持一致：局部修改与透明通道",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/168771087",
-      "hot": "16045"
+      "title": "【Linux网络】网络为什么要分层？从协议、OSI 到 TCP/IP，一次搭起网络通信整体框架",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/168884765",
+      "hot": "19185"
     },
     {
       "rank": 4,
       "title": "网络原理｜第五阶段：IPv4 地址、网络接口、网络前缀与地址块（自然单元 5.1）",
       "url": "https://blog.csdn.net/2401_86112610/article/details/169180657",
-      "hot": "14287"
+      "hot": "15072"
     },
     {
       "rank": 5,
       "title": "三甲医院AI的1163实施路径（下）",
       "url": "https://blog.csdn.net/kkiron/article/details/169067166",
-      "hot": "13837"
+      "hot": "13059"
     },
     {
       "rank": 6,
-      "title": "【AI】用 Python 做一个 AI 截图检索助手：把收藏夹里的截图找回来",
-      "url": "https://blog.csdn.net/2501_91731683/article/details/169061489",
-      "hot": "12647"
+      "title": "TextIn xParse上架千问办公：为Agent提供企业级解析底座",
+      "url": "https://blog.csdn.net/INTSIG/article/details/169167011",
+      "hot": "11887"
     },
     {
       "rank": 7,
-      "title": "TextIn xParse上架千问办公：为Agent提供企业级解析底座",
-      "url": "https://blog.csdn.net/INTSIG/article/details/169167011",
-      "hot": "11304"
+      "title": "【AI大模型接入SDK】ChatServer构建（CMakeList.txt）",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/168885168",
+      "hot": "11573"
     },
     {
       "rank": 8,
-      "title": "MapReduce - Hadoop 生态中 MapReduce 的定位与关联组件",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157685149",
-      "hot": "10957"
+      "title": "【AI】用 Python 做一个 AI 截图检索助手：把收藏夹里的截图找回来",
+      "url": "https://blog.csdn.net/2501_91731683/article/details/169061489",
+      "hot": "10179"
     },
     {
       "rank": 9,
-      "title": "用 Spring AI 搭 RAG 问答：把公司文档喂给大模型（全链路实战）",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/169058262",
-      "hot": "10956"
+      "title": "【c++20】协程与屏障",
+      "url": "https://blog.csdn.net/he_zhidan/article/details/167802433",
+      "hot": "9099"
     },
     {
       "rank": 10,
-      "title": "【c++20】协程与屏障",
-      "url": "https://blog.csdn.net/he_zhidan/article/details/167802433",
-      "hot": "10659"
+      "title": "SQL Server 迁电科金仓：那三周我记下的真事",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/169070674",
+      "hot": "8849"
     }
   ]
 }
