@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-27T02:02:39+00:00",
+  "updated_at": "2026-10-27T07:37:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Kimi K3.1 Pro 发布：代码超 GPT-6 Astra、开放权重版主动移除网络攻防能力",
-      "url": "https://www.oschina.net/news/503221",
-      "hot": "Mon, 26 Oct 2026 19:44:28 +0800"
+      "title": "微软向约四分之一员工发出“自愿离职要约”，预期接受率低至 3%~5%",
+      "url": "https://www.oschina.net/news/503240/microsoft-voluntary-exit-offer",
+      "hot": "Tue, 27 Oct 2026 15:19:41 +0800"
     },
     {
       "rank": 2,
-      "title": "开源中国「AI新生派」走进山东大学软件学院：从技术认知到动手实战，探索 AI 时代开发者成长路径",
-      "url": "https://www.oschina.net/news/503219",
-      "hot": "Mon, 26 Oct 2026 17:23:17 +0800"
+      "title": "openKylin走进山东大学 共探开源贡献与实践",
+      "url": "https://www.oschina.net/news/503239",
+      "hot": "Tue, 27 Oct 2026 14:19:36 +0800"
     },
     {
       "rank": 3,
-      "title": "JimuReport v2.5.5 发布，填报增强与 Word 导出专项修复",
-      "url": "https://www.oschina.net/news/503217",
-      "hot": "Mon, 26 Oct 2026 13:49:34 +0800"
+      "title": "mica-ppocr 1.2.4 发布：OCR 预处理内存砍半，检测提速 2.6 倍",
+      "url": "https://www.oschina.net/news/503238",
+      "hot": "Tue, 27 Oct 2026 12:36:21 +0800"
     },
     {
       "rank": 4,
-      "title": "PHP 基金会有多缺人？两个 RCE 漏洞的修复，暴露了答案",
-      "url": "https://www.oschina.net/news/503215",
-      "hot": "Mon, 26 Oct 2026 10:56:21 +0800"
+      "title": "Jync v1.8.0 支持企业统一认证，菜单调整，日志优化，bug修复",
+      "url": "https://www.oschina.net/news/503236",
+      "hot": "Tue, 27 Oct 2026 11:56:20 +0800"
     },
     {
       "rank": 5,
-      "title": "SmartCall v1.0.9 发布：智能体知识库上线，让 AI 客服先查资料再回答",
-      "url": "https://www.oschina.net/news/503202",
-      "hot": "Mon, 26 Oct 2026 10:12:02 +0800"
+      "title": "GrantForge 2026.3.0 发布：新增 5 大数据系统，统一权限治理再进一步",
+      "url": "https://www.oschina.net/news/503235",
+      "hot": "Tue, 27 Oct 2026 11:43:10 +0800"
     },
     {
       "rank": 6,
-      "title": "ToolForge v0.2.2 正式发布：AI Agent 也能调用工具了！支持 MCP、CLI 与插件级权限管理",
-      "url": "https://www.oschina.net/news/503201",
-      "hot": "Mon, 26 Oct 2026 10:08:49 +0800"
+      "title": "做了个免费、无水印、只有 2.3MB 的 Mac vlog 剪辑软件，专为 M 芯片优化",
+      "url": "https://www.oschina.net/news/503234",
+      "hot": "Tue, 27 Oct 2026 11:36:51 +0800"
     },
     {
       "rank": 7,
-      "title": ":fire::fire::fire: Claude Code 工程最佳实践 | 主数据平台 1.7.0 发布，移动端上线",
-      "url": "https://www.oschina.net/news/503199",
-      "hot": "Mon, 26 Oct 2026 09:43:39 +0800"
+      "title": "OpenAI 发布 GPT-6.1 Terra：中端模型主打 Computer Use、API 价格下调 50%",
+      "url": "https://www.oschina.net/news/503232/openai-gpt-6-1-terra",
+      "hot": "Tue, 27 Oct 2026 10:49:37 +0800"
     },
     {
       "rank": 8,
-      "title": ":fire:MybatisPlus 发布 3.5.18 版本",
-      "url": "https://www.oschina.net/news/503198",
-      "hot": "Mon, 26 Oct 2026 08:44:05 +0800"
+      "title": "开源 AI 终端 uniTerm v1.11 发布：覆盖 32 种协议，远程桌面全面重构、AI 能力大幅升级",
+      "url": "https://www.oschina.net/news/503231",
+      "hot": "Tue, 27 Oct 2026 10:45:45 +0800"
     },
     {
       "rank": 9,
-      "title": "Reqmango 是面向团队的自建开源项目管理工具",
-      "url": "https://www.oschina.net/news/503197",
-      "hot": "Sun, 25 Oct 2026 20:24:05 +0800"
+      "title": "OpenAI GPT-6.1 Terra发布AI开始真正操作电脑，使用成本也降了",
+      "url": "https://www.oschina.net/news/503228",
+      "hot": "Tue, 27 Oct 2026 10:02:57 +0800"
     },
     {
       "rank": 10,
-      "title": "10 MB 的桌面 AI 客户端：用仓颉 + 系统 WebView 替代 Electron",
-      "url": "https://www.oschina.net/news/503196",
-      "hot": "Sun, 25 Oct 2026 18:13:31 +0800"
+      "title": "DjangoAdmin 敏捷开发框架 FastAPI+NaiveVue 版本 v2.7.3 发布",
+      "url": "https://www.oschina.net/news/503223",
+      "hot": "Tue, 27 Oct 2026 09:01:03 +0800"
     }
   ]
 }

@@ -1,68 +1,67 @@
 {
   "source": "miyoushe",
   "title": "米游社",
-  "updated_at": "2026-10-27T02:05:56+00:00",
-  "fetch_ok": false,
-  "error": "Command '['hotboard', 'miyoushe', '--format', 'json']' timed out after 60 seconds",
+  "updated_at": "2026-10-27T07:39:16+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "角色技能演示——「列律名虚」·米提亚",
+      "url": "https://www.miyoushe.com/ys/article/79159064",
+      "hot": ""
+    },
+    {
+      "rank": 2,
+      "title": "纳西妲生日快乐 | 能和大家共同度过这个日子，真是令人高兴呢",
+      "url": "https://www.miyoushe.com/ys/article/79158988",
+      "hot": ""
+    },
+    {
+      "rank": 3,
+      "title": "《原神》「极光派对系列」周边即将开启贩售！",
+      "url": "https://www.miyoushe.com/ys/article/79158977",
+      "hot": ""
+    },
+    {
+      "rank": 4,
       "title": "《原神》多款模玩手办新品双11首发登场",
       "url": "https://www.miyoushe.com/ys/article/79141077",
       "hot": ""
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "优菈生日快乐 | 现在这个造型是不是就和小派蒙更像了？",
       "url": "https://www.miyoushe.com/ys/article/79121535",
       "hot": ""
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "原神7.2版本PV音乐《坏灭肇始之时》现已更新加入专辑",
       "url": "https://www.miyoushe.com/ys/article/79086039",
       "hot": ""
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "《原神》7.2版本「坏灭肇始之时」前瞻特别节目回顾长图",
       "url": "https://www.miyoushe.com/ys/article/79085774",
       "hot": ""
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "《原神》7.2版本「坏灭肇始之时」前瞻特别节目",
       "url": "https://www.miyoushe.com/ys/article/79085709",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "《原神》7.2版本「坏灭肇始之时」活动汇总",
       "url": "https://www.miyoushe.com/ys/article/79085514",
       "hot": ""
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "《原神》7.2版本PV：「坏灭肇始之时」",
       "url": "https://www.miyoushe.com/ys/article/79085282",
-      "hot": ""
-    },
-    {
-      "rank": 8,
-      "title": "《原神》游戏原声EP专辑「愿逐月华照君明」现已正式上线",
-      "url": "https://www.miyoushe.com/ys/article/79040390",
-      "hot": ""
-    },
-    {
-      "rank": 9,
-      "title": "《原神》六周年共创纪念视频：「旅途回忆」",
-      "url": "https://www.miyoushe.com/ys/article/79026493",
-      "hot": ""
-    },
-    {
-      "rank": 10,
-      "title": "决赛落幕！冠军实至名归，选手各出奇招？",
-      "url": "https://www.miyoushe.com/ys/article/79022160",
       "hot": ""
     }
   ]

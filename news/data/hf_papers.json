@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-26T23:12:12+00:00",
+  "updated_at": "2026-10-27T07:37:09+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,15 +36,15 @@
     },
     {
       "rank": 6,
-      "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
-      "url": "https://huggingface.co/papers/2407.17789",
-      "hot": "48"
-    },
-    {
-      "rank": 7,
       "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
       "url": "https://huggingface.co/papers/2508.16279",
       "hot": "71"
+    },
+    {
+      "rank": 7,
+      "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
+      "url": "https://huggingface.co/papers/2407.17789",
+      "hot": "48"
     },
     {
       "rank": 8,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "98"
+      "hot": "100"
     }
   ]
 }

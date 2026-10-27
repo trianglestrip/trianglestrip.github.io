@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-26T23:12:12+00:00",
+  "updated_at": "2026-10-27T07:37:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "hot": "3180"
+      "hot": "3247"
     },
     {
       "rank": 2,
       "title": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
-      "hot": "919"
+      "hot": "936"
     },
     {
       "rank": 3,
       "title": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-      "hot": "590"
+      "hot": "614"
     },
     {
       "rank": 4,
       "title": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-      "hot": "640"
+      "hot": "715"
     },
     {
       "rank": 5,
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "hot": "1695"
+      "hot": "1720"
     },
     {
       "rank": 6,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "9453"
+      "hot": "9485"
     },
     {
       "rank": 7,
       "title": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
-      "hot": "382"
+      "hot": "389"
     },
     {
       "rank": 8,
       "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "hot": "339"
+      "hot": "355"
     },
     {
       "rank": 9,
-      "title": "OpenMOSS-Team/MOSS-Image-SFT",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-      "hot": "757"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "18479"
     },
     {
       "rank": 10,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "18457"
+      "title": "InternScience/Sage-A1.5",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5",
+      "hot": "321"
     }
   ]
 }

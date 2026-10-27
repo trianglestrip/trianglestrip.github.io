@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-27T02:02:34+00:00",
+  "updated_at": "2026-10-27T07:36:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "【HarmonyOS 7 小艺 Skill 开发实战】 07 从平台评测到真机测试逐步定位Skill的问题",
+      "url": "https://ost.51cto.com/posts/61167",
+      "hot": "前言会后行动助手第一次生成时，报告显示三组用例全部通过。下载文件却把教学会议日期设成默认值，原文依据使用数组，建议项使用另一种字段..."
+    },
+    {
+      "rank": 2,
+      "title": "【HarmonyOS 7 小艺 Skill 开发实战】 06 串联多个工具处理缺少信息执行失败与重复提交",
+      "url": "https://ost.51cto.com/posts/61164",
+      "hot": "前言用户让助手整理会议文字，接着要求核对已有任务并保存清单。查询只读取记录，保存却需要先确认字段是否完整、用户批准的是哪份内容，以..."
+    },
+    {
+      "rank": 3,
       "title": "AI Agent 的飞轮：东莞证券应用 SRE 智能体的这一年，运维人实现自研分析工具",
       "url": "https://www.51cto.com/article/859389.html",
       "hot": "本文记录运维把 AI Agent 用到指标分析、日志排查、知识管理和故障诊断的过程中遇到的问题，以及工具和流程的调整。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Kali Linux 2026.3 正式发布，新增六款渗透测试工具、搭载 Linux 7.1.5 内核",
       "url": "https://www.51cto.com/article/859388.html",
       "hot": "本次更新也延续了今年首个大版本Kali Linux 2026.1以来的迭代方向，持续扩充安全工具库、强化移动安全测试能力。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "AIOps 落地别踩坑！SRE 事件响应的三层权限模型，从自动回滚到人工指挥全梳理",
       "url": "https://www.51cto.com/article/859385.html",
       "hot": "自主式事件响应的目标是把 AI 用在既能减少人工工作量、缩短恢复时间，又能保障安全和责任可追溯的场景上。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "面试官：三大协议 MCP、A2A、ACP 如何统一？如果要设计一套 Agent RPC治理底座， 如何实现？",
       "url": "https://www.51cto.com/article/859382.html",
       "hot": "很多同学刚接触这几个协议的时候，第一反应就是把它们放到同一个维度做对比，去争论哪一套协议更好、哪一套更适合长期发展。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "你的 Personal Agent 如何真正跑起来？Agent 实战指南",
       "url": "https://www.51cto.com/article/859380.html",
       "hot": "这个案例里，我只给了想法，读群聊资料上下文、选取组织样本、编写适配的调用模型的脚本、保存返回、检查错例，分身都能直接开始做。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "马斯克在天上赚疯了！中国独角兽杀入核心赛道，卡位万亿命门",
       "url": "https://www.51cto.com/article/859378.html",
       "hot": "SpaceX给出的目标是让普通手机直连卫星实现单用户峰值150Mbps。总裁Gwynne Shotwell在今年8月的财报电话会上说，借助新卫星和新频谱，整个手机直连系统的能力有望提升约100倍。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "清华、英伟达等开了个新榜，38个AI实时视频模型露短板",
       "url": "https://www.51cto.com/article/859377.html",
       "hot": "最近，清华大学、NVIDIA、CMU、UC Berkeley、Princeton、NUS 等海内外高校机构联合发起了一个新的评测基准 ——StreamEval。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "刚刚，GPT-6.1 Terra发布！电脑操作比肩Astra，成本仅其1/10",
       "url": "https://www.51cto.com/article/859376.html",
       "hot": "那边 Anthropic 提交 IPO，这边 OpenAI 发布了最新模型 GPT-6.1 Terra。"
-    },
-    {
-      "rank": 9,
-      "title": "让JEPA真正理解世界背后的生成机制，DSReg让世界模型的每一维都有了真实含义",
-      "url": "https://www.51cto.com/article/859374.html",
-      "hot": "来自 UIUC、冷泉港实验室、布朗大学、马普所的研究者给出了肯定的回答。他们提出的 DSReg（Dependency-Sparsity Regularization）可以直接加在已经训练好的 JEPA 上。"
-    },
-    {
-      "rank": 10,
-      "title": "不用反向传播，也能预训练Transformer，Jeff Dean投的这家公司出成果了",
-      "url": "https://www.51cto.com/article/859371.html",
-      "hot": "反向传播要求整个网络处处可微，这其实是个很强的限制，不可微的模块、离散的计算、外部程序，统统进不了训练回路。"
     }
   ]
 }

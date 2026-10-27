@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-27T02:02:35+00:00",
+  "updated_at": "2026-10-27T07:36:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Announcing three new discoveries in mathematics, computer science, and physics",
+      "title": "Three new discoveries in mathematics, computer science, and physics",
       "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-      "hot": "478"
+      "hot": "798"
     },
     {
       "rank": 2,
       "title": "The Exponential Time Hypothesis Is False [pdf]",
       "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
-      "hot": "296"
+      "hot": "557"
     },
     {
       "rank": 3,
-      "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
-      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
-      "hot": "561"
+      "title": "The Mythical Man-Month in the Age of AI",
+      "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "hot": "12"
     },
     {
       "rank": 4,
-      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
-      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-      "hot": "73"
+      "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+      "hot": "672"
     },
     {
       "rank": 5,
       "title": "Oldest GUI application that still runs on Windows 11",
       "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/",
-      "hot": "293"
+      "hot": "384"
     },
     {
       "rank": 6,
-      "title": "Type Server Protocol",
-      "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
-      "hot": "194"
+      "title": "A simplified proof of ETH is False [pdf]",
+      "url": "https://shivakintali.github.io/papers/ETH.pdf",
+      "hot": "7"
     },
     {
       "rank": 7,
-      "title": "A Printer Printing onto Paper",
-      "url": "https://twitter.com/macrofying/status/2112904628509528219",
-      "hot": "63"
+      "title": "I still teach OpenGL ES 3.0",
+      "url": "https://eliasfarhan.ch/graphics/cpp/2026/01/27/why-i-teach-opengles.html",
+      "hot": "42"
     },
     {
       "rank": 8,
       "title": "16-bit Windows (Windows 1.x, 2.x, 3.0, 3.1, etc.) on 64-bit Windows",
       "url": "https://github.com/otya128/winevdm",
-      "hot": "13"
+      "hot": "77"
     },
     {
       "rank": 9,
-      "title": "CSS-Tricks has a new owner",
-      "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
-      "hot": "386"
+      "title": "Type Server Protocol",
+      "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+      "hot": "229"
     },
     {
       "rank": 10,
-      "title": "LISPy things you can do in 64K bytes of core (2019)",
-      "url": "https://t3x.org/lisp64k/index.html",
-      "hot": "25"
+      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "hot": "123"
     }
   ]
 }

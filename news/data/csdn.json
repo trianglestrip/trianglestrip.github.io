@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-27T02:02:28+00:00",
+  "updated_at": "2026-10-27T07:36:51+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 实现AI自动化运维实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/166849454",
-      "hot": "34720"
+      "hot": "33869"
     },
     {
       "rank": 2,
       "title": "【Linux网络】网络为什么要分层？从协议、OSI 到 TCP/IP，一次搭起网络通信整体框架",
       "url": "https://blog.csdn.net/2402_87731470/article/details/168884765",
-      "hot": "20663"
+      "hot": "19756"
     },
     {
       "rank": 3,
-      "title": "用 Spring AI 搭 RAG 问答：把公司文档喂给大模型（全链路实战）",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/169058262",
-      "hot": "16901"
+      "title": "三甲医院AI的1163实施路径（下）",
+      "url": "https://blog.csdn.net/kkiron/article/details/169067166",
+      "hot": "16873"
     },
     {
       "rank": 4,
-      "title": "MapReduce - Hadoop 生态中 MapReduce 的定位与关联组件",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157685149",
-      "hot": "16436"
+      "title": "AI 图片编辑如何保持一致：局部修改与透明通道",
+      "url": "https://blog.csdn.net/weixin_74809706/article/details/168771087",
+      "hot": "12976"
     },
     {
       "rank": 5,
-      "title": "三甲医院AI的1163实施路径（下）",
-      "url": "https://blog.csdn.net/kkiron/article/details/169067166",
-      "hot": "16335"
+      "title": "用 Spring AI 搭 RAG 问答：把公司文档喂给大模型（全链路实战）",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/169058262",
+      "hot": "12627"
     },
     {
       "rank": 6,
-      "title": "AI 图片编辑如何保持一致：局部修改与透明通道",
-      "url": "https://blog.csdn.net/weixin_74809706/article/details/168771087",
-      "hot": "13321"
+      "title": "MapReduce - Hadoop 生态中 MapReduce 的定位与关联组件",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157685149",
+      "hot": "11868"
     },
     {
       "rank": 7,
-      "title": "从一句话到一个会呼吸的镜头：基于SpringBoot用硅基流动 Wan2.2 打通「文本生成视频」全链路",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/168966679",
-      "hot": "12670"
+      "title": "网络原理｜第五阶段：IPv4 地址、网络接口、网络前缀与地址块（自然单元 5.1）",
+      "url": "https://blog.csdn.net/2401_86112610/article/details/169180657",
+      "hot": "11394"
     },
     {
       "rank": 8,
-      "title": "【c++20】协程与屏障",
-      "url": "https://blog.csdn.net/he_zhidan/article/details/167802433",
-      "hot": "12360"
+      "title": "【AI】用 Python 做一个 AI 截图检索助手：把收藏夹里的截图找回来",
+      "url": "https://blog.csdn.net/2501_91731683/article/details/169061489",
+      "hot": "11286"
     },
     {
       "rank": 9,
-      "title": "Windows部署Hermes Agent并接入微信：模型配置、Gateway消息入口和Web控制台都跑通",
-      "url": "https://blog.csdn.net/weixin_42878111/article/details/169151785",
-      "hot": "10964"
+      "title": "【c++20】协程与屏障",
+      "url": "https://blog.csdn.net/he_zhidan/article/details/167802433",
+      "hot": "11005"
     },
     {
       "rank": 10,
-      "title": "【AI】用 Python 做一个 AI 截图检索助手：把收藏夹里的截图找回来",
-      "url": "https://blog.csdn.net/2501_91731683/article/details/169061489",
-      "hot": "10531"
+      "title": "AI Agent 工程化开发实战（三）：StateGraph 与状态管理——节点、边、Reducer",
+      "url": "https://blog.csdn.net/xiaobing259/article/details/168774285",
+      "hot": "10984"
     }
   ]
 }
