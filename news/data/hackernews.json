@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-27T18:53:29+00:00",
+  "updated_at": "2026-10-27T22:41:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Genie 4",
       "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "hot": "362"
+      "hot": "613"
     },
     {
       "rank": 2,
-      "title": "Police Are Using AI to Pull over Drivers for 'Suspicious' Behavior",
-      "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-      "hot": "198"
+      "title": "Ghostty 1.4",
+      "url": "https://ghostty.org/docs/install/release-notes/1-4-0",
+      "hot": "596"
     },
     {
       "rank": 3,
-      "title": "Ghostty 1.4.0",
-      "url": "https://ghostty.org/docs/install/release-notes/1-4-0",
-      "hot": "236"
+      "title": "Tailscale SSH: Investigation and remediation update",
+      "url": "https://tailscale.com/ssh-investigation-update",
+      "hot": "133"
     },
     {
       "rank": 4,
-      "title": "Classification of Finite Simple Groups Formalized in Lean",
-      "url": "https://cfsg.axiommath.ai/",
-      "hot": "70"
+      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "url": "https://www.brangus.io/survival-llm",
+      "hot": "111"
     },
     {
       "rank": 5,
-      "title": "New iMac with M6",
-      "url": "https://www.apple.com/imac/",
-      "hot": "211"
-    },
-    {
-      "rank": 6,
-      "title": "Python's experimental JIT to be removed",
-      "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
-      "hot": "339"
-    },
-    {
-      "rank": 7,
-      "title": "Three TLS Bugs in GoAhead",
-      "url": "https://foxio.io/blog/choose-your-backend-three-tls-bugs-in-goahead",
-      "hot": "7"
-    },
-    {
-      "rank": 8,
-      "title": "Wikipedia's Cleanup of AI-Generated Content",
-      "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
-      "hot": "342"
-    },
-    {
-      "rank": 9,
-      "title": "Microsoft and others tell crypto platform not to tokenize their stocks",
-      "url": "https://gizmodo.com/microsoft-mcdonalds-verizon-and-others-tell-crypto-platform-not-to-tokenize-their-stocks-2000830368",
+      "title": "Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees",
+      "url": "https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/",
       "hot": "43"
     },
     {
+      "rank": 6,
+      "title": "Early progress on accelerating drug development with Claude",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "hot": "61"
+    },
+    {
+      "rank": 7,
+      "title": "New 14‑inch MacBook Pro with M6",
+      "url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+      "hot": "234"
+    },
+    {
+      "rank": 8,
+      "title": "SS United States to be sunk as largest artificial reef",
+      "url": "https://divemagazine.com/scuba-diving-news/ss-united-states-to-be-sunk-as-worlds-largest-artificial-reef-in-november",
+      "hot": "27"
+    },
+    {
+      "rank": 9,
+      "title": "An examination of lost firefly species of the US and Canada",
+      "url": "https://journaloflostspecies.org/index.php/jls/article/view/37/33",
+      "hot": "63"
+    },
+    {
       "rank": 10,
-      "title": "US Government is hiding a secret court ruling about how it spies on Americans",
-      "url": "https://www.wired.com/story/the-us-government-is-hiding-a-secret-court-ruling-about-how-it-spies-on-americans/",
-      "hot": "500"
+      "title": "Four Months of Zig",
+      "url": "https://gracefulliberty.com/articles/four-months-of-zig/",
+      "hot": "37"
     }
   ]
 }
