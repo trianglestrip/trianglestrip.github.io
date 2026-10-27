@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-27T07:37:01+00:00",
+  "updated_at": "2026-10-27T13:32:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "亿万工程师，同饮五粮春——五粮春携手GTLC为构建者举杯",
+      "url": "https://www.infoq.cn/article/rYaRAYC7xR5D28AaNdN7?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 27 Oct 2026 18:39:03 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Azure Container Apps Express在新的通用沙箱层上正式发布",
+      "url": "https://www.infoq.cn/article/ChONW7EYk5Vuj0VF7AkZ?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 27 Oct 2026 17:17:00 GMT"
+    },
+    {
+      "rank": 3,
       "title": "TypeSafe AI发布Jev：一种只返回类型化概率而非文本的决策模型",
       "url": "https://www.infoq.cn/article/3o7gwgKJt2SbH8AhdpkU?utm_source=rss&utm_medium=article",
       "hot": "Tue, 27 Oct 2026 15:22:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Docker Cloud Sandboxes在笔记本和云端之间提供一致的沙箱抽象",
       "url": "https://www.infoq.cn/article/gXKvW3g4KXhTTiIaJFkl?utm_source=rss&utm_medium=article",
       "hot": "Tue, 27 Oct 2026 13:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Grafana将Cypress测试结果转化为持久化的可观测性数据",
       "url": "https://www.infoq.cn/article/tcY6W55WowheH1SklVJK?utm_source=rss&utm_medium=article",
       "hot": "Tue, 27 Oct 2026 11:27:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Kubernetes 1.37发布：稳定版Metrics API和Beta版Rootless Kubelet",
       "url": "https://www.infoq.cn/article/TrI8l3CYeAJER9tgR5Jt?utm_source=rss&utm_medium=article",
       "hot": "Tue, 27 Oct 2026 09:14:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "中科慧灵完成数亿元A++轮融资：制鞋机器人订单超 4 亿元，具身智能开始拼量产交付",
       "url": "https://www.infoq.cn/article/2svt5BbWUOHbADdo0UZo?utm_source=rss&utm_medium=article",
       "hot": "Mon, 26 Oct 2026 18:30:50 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "让 AI 从需求一路干到上线，软件开发组织要变了？",
       "url": "https://www.infoq.cn/article/b32Mw2zaPrxyJ6ChePD5?utm_source=rss&utm_medium=article",
       "hot": "Mon, 26 Oct 2026 18:08:13 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Backstage 1.55 新增脚手架任务恢复功能，并移除已废弃的目录 API",
       "url": "https://www.infoq.cn/article/hilBQCk7QcvclfrgZbSf?utm_source=rss&utm_medium=article",
       "hot": "Mon, 26 Oct 2026 17:17:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "中层技术经理要么重新学技术，要么考虑退休：前 Stripe 工程高管警告，未来三年工程管理将彻底变样",
       "url": "https://www.infoq.cn/article/hhxL1M65UU3Iwr4ovALT?utm_source=rss&utm_medium=article",
       "hot": "Mon, 26 Oct 2026 15:18:06 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "30 个 Agent 背后：花椒如何建设可持续演进的企业 AI 能力？",
-      "url": "https://www.infoq.cn/article/O7lcxqKD2avRPbNoMmtg?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 26 Oct 2026 15:05:27 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "AWS 重构 EventBridge 自定义事件总线，面向企业级事件驱动架构",
-      "url": "https://www.infoq.cn/article/GG9rXsevpPV9SK3uPxpq?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 26 Oct 2026 15:00:00 GMT"
     }
   ]
 }
