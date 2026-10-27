@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-26T23:11:57+00:00",
+  "updated_at": "2026-10-27T02:02:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "#1024·向光而行·码向未来#ArkGenie 的技术原理：从一段 SSE 到一个可交互 Surface",
-      "url": "https://ost.51cto.com/posts/61053",
-      "hot": "ArkGenie的技术原理：从一段SSE到一个可交互Surfacetypescripthttps:gitcode.comGeorgeGcsArkGeniehttps:github.comGeorgeGcsArkGenieArkGe..."
+      "title": "AI Agent 的飞轮：东莞证券应用 SRE 智能体的这一年，运维人实现自研分析工具",
+      "url": "https://www.51cto.com/article/859389.html",
+      "hot": "本文记录运维把 AI Agent 用到指标分析、日志排查、知识管理和故障诊断的过程中遇到的问题，以及工具和流程的调整。"
     },
     {
       "rank": 2,
-      "title": "刚刚，Reddit最大开源社区全面封杀AI！Linux和Python被除名",
-      "url": "https://www.51cto.com/article/859322.html",
-      "hot": "从今天起，全面封杀任何使用AI、由AI生成或专门面向AI的项目！版主u/Wolvereness在置顶长文中态度强硬，原话写道：只要你的项目用了AI、由AI编写，或者目标是服务于AI，那么r/opensource就绝不欢迎你。"
+      "title": "Kali Linux 2026.3 正式发布，新增六款渗透测试工具、搭载 Linux 7.1.5 内核",
+      "url": "https://www.51cto.com/article/859388.html",
+      "hot": "本次更新也延续了今年首个大版本Kali Linux 2026.1以来的迭代方向，持续扩充安全工具库、强化移动安全测试能力。"
     },
     {
       "rank": 3,
-      "title": "#1024·向光而行·码向未来#在 HarmonyOS 上做一套真正能接入应用的 AI 对话组件：ArkGenie 项目介绍",
-      "url": "https://ost.51cto.com/posts/61052",
-      "hot": "在HarmonyOS上做一套真正能接入应用的AI对话组件：ArkGenie项目介绍typescripthttps:gitcode.comGeorgeGcsArkGeniehttps:github.comGeorgeG..."
+      "title": "AIOps 落地别踩坑！SRE 事件响应的三层权限模型，从自动回滚到人工指挥全梳理",
+      "url": "https://www.51cto.com/article/859385.html",
+      "hot": "自主式事件响应的目标是把 AI 用在既能减少人工工作量、缩短恢复时间，又能保障安全和责任可追溯的场景上。"
     },
     {
       "rank": 4,
-      "title": "吴恩达直言不怀念亲手写代码：Coding Agent用法三个月变一轮，但工程判断力没那么快过时，会用Agent只是第三项能力",
-      "url": "https://www.51cto.com/article/859265.html",
-      "hot": "在Supabase Select的对谈里，吴恩达说完这句话，又讲了一个很多开发者熟悉的反常识变化：Coding Agent让他能做更多事，想做却没时间做的项目也越来越多。他甚至觉得，自己做事的速度在变快，想做的事却增加得更快。"
+      "title": "面试官：三大协议 MCP、A2A、ACP 如何统一？如果要设计一套 Agent RPC治理底座， 如何实现？",
+      "url": "https://www.51cto.com/article/859382.html",
+      "hot": "很多同学刚接触这几个协议的时候，第一反应就是把它们放到同一个维度做对比，去争论哪一套协议更好、哪一套更适合长期发展。"
     },
     {
       "rank": 5,
-      "title": "刚刚，Claude破纪录！日烧3万亿Token，神秘Fable 5.5压轴登场",
-      "url": "https://www.51cto.com/article/859234.html",
-      "hot": "就在今天，全球最大的模型聚合路由平台OpenRoute一张图刷屏了。自Opus 5.5诞生以来，短短一个月，7日平均Token使用量，直接暴涨了3.6倍！"
+      "title": "你的 Personal Agent 如何真正跑起来？Agent 实战指南",
+      "url": "https://www.51cto.com/article/859380.html",
+      "hot": "这个案例里，我只给了想法，读群聊资料上下文、选取组织样本、编写适配的调用模型的脚本、保存返回、检查错例，分身都能直接开始做。"
     },
     {
       "rank": 6,
-      "title": "当 AI Agent 开始直接操作数据库：SQL 权限、人工审批与最小权限落地指南",
-      "url": "https://www.51cto.com/article/859232.html",
-      "hot": "当助手不再只提代码建议、而是开始直接操作数据库时，工作方式会发生哪些变化，团队又该用什么规则把这种自主性管控住。"
+      "title": "马斯克在天上赚疯了！中国独角兽杀入核心赛道，卡位万亿命门",
+      "url": "https://www.51cto.com/article/859378.html",
+      "hot": "SpaceX给出的目标是让普通手机直连卫星实现单用户峰值150Mbps。总裁Gwynne Shotwell在今年8月的财报电话会上说，借助新卫星和新频谱，整个手机直连系统的能力有望提升约100倍。"
     },
     {
       "rank": 7,
-      "title": "机器人的o1时刻来了！哈佛、伯克利、英伟达推出探索Scaling Law，五大基准平均领先37.4个点",
-      "url": "https://www.51cto.com/article/859188.html",
-      "hot": "来自哈佛大学、英伟达、加州大学伯克利分校、麻省理工学院和斯坦福大学的研究团队提出 RAX（Robot Agent eXploration），将 Scaling Online Exploration 带入机器人学习。"
+      "title": "清华、英伟达等开了个新榜，38个AI实时视频模型露短板",
+      "url": "https://www.51cto.com/article/859377.html",
+      "hot": "最近，清华大学、NVIDIA、CMU、UC Berkeley、Princeton、NUS 等海内外高校机构联合发起了一个新的评测基准 ——StreamEval。"
     },
     {
       "rank": 8,
-      "title": "用 REA 让 Claude 逆向分析应用：从 Electron Bundle 到 Native Binary 的完整设置指南",
-      "url": "https://www.51cto.com/article/859230.html",
-      "hot": "REA一个开源 MCP server，可让 Claude 深入分析二进制文件、Electron bundle 和网站，并明确指出它无法确定的内容。"
+      "title": "刚刚，GPT-6.1 Terra发布！电脑操作比肩Astra，成本仅其1/10",
+      "url": "https://www.51cto.com/article/859376.html",
+      "hot": "那边 Anthropic 提交 IPO，这边 OpenAI 发布了最新模型 GPT-6.1 Terra。"
     },
     {
       "rank": 9,
-      "title": "PyTorch、JAX都被点名！Softmax曝出隐藏Bug，Gemini立功",
-      "url": "https://www.51cto.com/article/859187.html",
-      "hot": "论文给出的修复方案保留了原有函数的数学定义，也不需要通过提高浮点精度来解决问题。作者认为，这些函数有望直接替换现有实现，且不会带来明显的性能开销。不过，其在大规模模型训练中的实际效果，还需要进一步验证。"
+      "title": "让JEPA真正理解世界背后的生成机制，DSReg让世界模型的每一维都有了真实含义",
+      "url": "https://www.51cto.com/article/859374.html",
+      "hot": "来自 UIUC、冷泉港实验室、布朗大学、马普所的研究者给出了肯定的回答。他们提出的 DSReg（Dependency-Sparsity Regularization）可以直接加在已经训练好的 JEPA 上。"
     },
     {
       "rank": 10,
-      "title": "数千亿Token测安全，AI仍能「隔墙传话」！OpenAI前沿训练全面断网",
-      "url": "https://www.51cto.com/article/859185.html",
-      "hot": "10 月23 日，OpenAI 公布前沿模型训练环境的安全改造细节，披露了这项红队实验。同时，公司明确，前沿模型训练已禁止访问真实互联网，模型改在离线网页环境中练习浏览和搜索。"
+      "title": "不用反向传播，也能预训练Transformer，Jeff Dean投的这家公司出成果了",
+      "url": "https://www.51cto.com/article/859371.html",
+      "hot": "反向传播要求整个网络处处可微，这其实是个很强的限制，不可微的模块、离散的计算、外部程序，统统进不了训练回路。"
     }
   ]
 }
