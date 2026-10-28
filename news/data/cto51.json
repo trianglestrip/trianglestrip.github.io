@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-28T01:42:13+00:00",
+  "updated_at": "2026-10-28T07:24:25+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "在 HarmonyOS 6 播放器里切模式：单曲、列表、随机",
-      "url": "https://ost.51cto.com/posts/61209",
-      "hot": "前言：下一首，也有不同的去处喜欢的一首可以反复循环，排好的列表适合顺着听，拿不定主意就交给随机。三个模式看起来只是播放器旁边换了个..."
+      "title": "HarmonyOS 7 Navigation 导航实战：把页面栈摆到明处治理",
+      "url": "https://ost.51cto.com/posts/61304",
+      "hot": "一个应用十几个页面，导航写到最后总会撞上同一批问题：栈里到底压了哪些页、返回键按下去会发生什么、页面A怎么把选择结果带回页面B、某个..."
     },
     {
       "rank": 2,
-      "title": "npm创始人认为AI正在改写工程师这份工作：程序员的下一个瓶颈已经到来了，未来的资深工程师来源堪忧",
-      "url": "https://www.51cto.com/article/859458.html",
-      "hot": "Laurie Voss：Agent让写代码变得几乎免费。Token仍要付钱，但和过去耗费的工程师时间相比，已经便宜太多。但是新的瓶颈和问题又来了。"
+      "title": "从源码拆解一个 AIUI 每日一词智能体：页面、离线索引与硬件交互",
+      "url": "https://ost.51cto.com/posts/61286",
+      "hot": "前言本篇文章主要讲解词境应用的开发过程中涉及到的问题以及相关的思路方法。先看一下项目相关截图。项目运行结构项目的主要运行关系可以概..."
     },
     {
       "rank": 3,
-      "title": "HarmonyOS 7 ArkGraphics 3D实战：给3D模型加上可调节灯光#1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/61208",
-      "hot": "大家好，今天介绍一下ArkGraphics3D中的灯光。模型加载出来以后，有时候颜色和形状都对了，看起来却还是很平。尤其是商品展示，灯从哪个方..."
+      "title": "云原生镜像安全：Trivy 扫出漏洞没人落地？我做了 AI 助手一键生成修复方案",
+      "url": "https://www.51cto.com/article/859531.html",
+      "hot": "本文介绍一款镜像漏洞 AI 助手，它在 Harbor 页面选中镜像，直接在 K8s 控制节点执行 Trivy 扫描，把扫描摘要交给 DeepSeek 大模型，当场给出结论。"
     },
     {
       "rank": 4,
-      "title": "AI Agent 的飞轮：东莞证券应用 SRE 智能体的这一年，运维人实现自研分析工具",
-      "url": "https://www.51cto.com/article/859389.html",
-      "hot": "本文记录运维把 AI Agent 用到指标分析、日志排查、知识管理和故障诊断的过程中遇到的问题，以及工具和流程的调整。"
+      "title": "第 36 篇：视频流协议分析：点播、直播、实时互动，网络问题各不同",
+      "url": "https://www.51cto.com/article/859529.html",
+      "hot": "视频卡顿，从来不是一个“网速”能解释的问题。搞清楚场景、选对协议、盯住三个指标(带宽、丢包、抖动)，你才能从“懵圈”走向“精准定位”。"
     },
     {
       "rank": 5,
-      "title": "Kali Linux 2026.3 正式发布，新增六款渗透测试工具、搭载 Linux 7.1.5 内核",
-      "url": "https://www.51cto.com/article/859388.html",
-      "hot": "本次更新也延续了今年首个大版本Kali Linux 2026.1以来的迭代方向，持续扩充安全工具库、强化移动安全测试能力。"
+      "title": "重磅！Redact 发布，狠狠的背刺 React！",
+      "url": "https://www.51cto.com/article/859522.html",
+      "hot": "TanStack 这次确实给 React 生态带来了一个很有意思的新选择。不用迁移框架、不用重写组件，只需要调整构建配置，就有机会显著减少客户端运行时体积。"
     },
     {
       "rank": 6,
-      "title": "AIOps 落地别踩坑！SRE 事件响应的三层权限模型，从自动回滚到人工指挥全梳理",
-      "url": "https://www.51cto.com/article/859385.html",
-      "hot": "自主式事件响应的目标是把 AI 用在既能减少人工工作量、缩短恢复时间，又能保障安全和责任可追溯的场景上。"
+      "title": "固定资料反复问，RAG之外还能缓存什么？",
+      "url": "https://www.51cto.com/article/859521.html",
+      "hot": "RAG是检索增强生成。资料先经过嵌入模型形成向量并建立索引；查询到来后，系统检索相关片段，组织成上下文，再交给大模型生成答案。"
     },
     {
       "rank": 7,
-      "title": "面试官：三大协议 MCP、A2A、ACP 如何统一？如果要设计一套 Agent RPC治理底座， 如何实现？",
-      "url": "https://www.51cto.com/article/859382.html",
-      "hot": "很多同学刚接触这几个协议的时候，第一反应就是把它们放到同一个维度做对比，去争论哪一套协议更好、哪一套更适合长期发展。"
+      "title": "AI写88小时，人类读七周！数学家开始读懂OpenAI千禧难题证明",
+      "url": "https://www.51cto.com/article/859515.html",
+      "hot": "约一万个AI智能体，88小时，166页。写完它，AI用了不到4天。"
     },
     {
       "rank": 8,
-      "title": "你的 Personal Agent 如何真正跑起来？Agent 实战指南",
-      "url": "https://www.51cto.com/article/859380.html",
-      "hot": "这个案例里，我只给了想法，读群聊资料上下文、选取组织样本、编写适配的调用模型的脚本、保存返回、检查错例，分身都能直接开始做。"
+      "title": "OpenAI改写人类科学史！「王的猜想」全维度告破，30年铁律ETH塌了",
+      "url": "https://www.51cto.com/article/859457.html",
+      "hot": "挂谷猜想曾困扰了数学家们整整一个世纪，也是菲奖得主王虹的主攻领域。但三弹里，真正让圈内人倒吸一口凉气的，是「指数时间假设」（ETH）。过去三十年里，全球计算机科学界都一致默认ETH是对的。"
     },
     {
       "rank": 9,
-      "title": "马斯克在天上赚疯了！中国独角兽杀入核心赛道，卡位万亿命门",
-      "url": "https://www.51cto.com/article/859378.html",
-      "hot": "SpaceX给出的目标是让普通手机直连卫星实现单用户峰值150Mbps。总裁Gwynne Shotwell在今年8月的财报电话会上说，借助新卫星和新频谱，整个手机直连系统的能力有望提升约100倍。"
+      "title": "凡人AI修仙 — 一个完整Harness的五脏六腑<散修篇>",
+      "url": "https://www.51cto.com/article/859519.html",
+      "hot": "为什么它干不完？因为它打不开你的 Excel，跑不了你电脑上的脚本，也没法替你真发邮件，更不知道数字算没算错。它被困在一个对话框里。模型很聪明，但少了中间那层壳，它就只能说、不能做。这一课，咱们就来解决这件事。"
     },
     {
       "rank": 10,
-      "title": "清华、英伟达等开了个新榜，38个AI实时视频模型露短板",
-      "url": "https://www.51cto.com/article/859377.html",
-      "hot": "最近，清华大学、NVIDIA、CMU、UC Berkeley、Princeton、NUS 等海内外高校机构联合发起了一个新的评测基准 ——StreamEval。"
+      "title": "视频世界模型终于不「失忆」了！Meta提出World-T³：把记忆写进参数，单卡20.6FPS实时生成",
+      "url": "https://www.51cto.com/article/859513.html",
+      "hot": "最近，来自 Meta Reality Labs、伊利诺伊大学芝加哥分校和布朗大学的研究团队提出了 World-T³（Test-Time Training）。"
     }
   ]
 }

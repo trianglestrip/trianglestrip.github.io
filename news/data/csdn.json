@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-28T01:42:08+00:00",
+  "updated_at": "2026-10-28T07:24:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 实现AI自动化运维实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/166849454",
-      "hot": "33321"
+      "hot": "34347"
     },
     {
       "rank": 2,
-      "title": "用 Spring AI 搭 RAG 问答：把公司文档喂给大模型（全链路实战）",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/169058262",
-      "hot": "19407"
+      "title": "【AI大模型接入SDK】ChatServer构建（CMakeList.txt）",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/168885168",
+      "hot": "21532"
     },
     {
       "rank": 3,
-      "title": "网络原理｜第五阶段：IPv4 地址、网络接口、网络前缀与地址块（自然单元 5.1）",
-      "url": "https://blog.csdn.net/2401_86112610/article/details/169180657",
-      "hot": "14555"
+      "title": "如意玲珑版 PhotoCraft 在 Arch 上实测（Wayland + AMD 780M）",
+      "url": "https://blog.csdn.net/2401_89105749/article/details/169242426",
+      "hot": "13460"
     },
     {
       "rank": 4,
-      "title": "如意玲珑版 PhotoCraft 在 Arch 上实测（Wayland + AMD 780M）",
-      "url": "https://blog.csdn.net/2401_89105749/article/details/169242426",
-      "hot": "14108"
+      "title": "三甲医院AI的1163实施路径（上）",
+      "url": "https://blog.csdn.net/kkiron/article/details/169067095",
+      "hot": "12641"
     },
     {
       "rank": 5,
       "title": "Hermes Agent 与自主进化：智能体的下一站",
       "url": "https://blog.csdn.net/vipxieliang/article/details/169065699",
-      "hot": "11966"
+      "hot": "12187"
     },
     {
       "rank": 6,
-      "title": "【AI大模型接入SDK】ChatServer构建（CMakeList.txt）",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/168885168",
-      "hot": "11742"
+      "title": "GitHub 热榜项目 - 周榜(2026-10-26)",
+      "url": "https://blog.csdn.net/u014390502/article/details/169170717",
+      "hot": "11331"
     },
     {
       "rank": 7,
-      "title": "三甲医院AI的1163实施路径（下）",
-      "url": "https://blog.csdn.net/kkiron/article/details/169067166",
-      "hot": "11371"
+      "title": "PaddleOCR + Spring AI + Qwen3.8：企业发票报销实战，从上传识别到人工确认卡",
+      "url": "https://blog.csdn.net/zhouzhongyan/article/details/167589750",
+      "hot": "10648"
     },
     {
       "rank": 8,
-      "title": "TextIn xParse上架千问办公：为Agent提供企业级解析底座",
-      "url": "https://blog.csdn.net/INTSIG/article/details/169167011",
-      "hot": "11320"
+      "title": "【AI】用 Python 做一个 AI 截图检索助手：把收藏夹里的截图找回来",
+      "url": "https://blog.csdn.net/2501_91731683/article/details/169061489",
+      "hot": "10047"
     },
     {
       "rank": 9,
-      "title": "GitHub 热榜项目 - 周榜(2026-10-26)",
-      "url": "https://blog.csdn.net/u014390502/article/details/169170717",
-      "hot": "8894"
+      "title": "Linux系统——进程信号",
+      "url": "https://blog.csdn.net/2501_93697341/article/details/169169685",
+      "hot": "9971"
     },
     {
       "rank": 10,
-      "title": "【AI】用 Python 做一个 AI 截图检索助手：把收藏夹里的截图找回来",
-      "url": "https://blog.csdn.net/2501_91731683/article/details/169061489",
-      "hot": "8891"
+      "title": "Ansible批量部署Node Exporter到底省了哪些步骤？下载、建用户、写systemd和启动服务一次编排",
+      "url": "https://blog.csdn.net/qq_54796785/article/details/169220893",
+      "hot": "9383"
     }
   ]
 }
