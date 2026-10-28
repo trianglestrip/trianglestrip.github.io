@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-28T14:09:20+00:00",
+  "updated_at": "2026-10-28T19:31:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "不再逐个生成 Token：扩散模型迈向 35B，开始挑战 Agent 编程",
+      "url": "https://www.infoq.cn/article/0tgCLAMXFiFo0Dco5P9m?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 28 Oct 2026 22:53:53 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "别再只写提示词了，开始真正雇用智能体：智能体企业管理实践 ｜ 技术实践",
+      "url": "https://www.infoq.cn/article/II91QKxeaEg7RuZR2rrf?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 28 Oct 2026 22:05:40 GMT"
+    },
+    {
+      "rank": 3,
       "title": "当 AI 智能体代表用户行动时，企业治理将面临哪些新问题？ ｜ 技术趋势",
       "url": "https://www.infoq.cn/article/CxWoiprQltg8YXmwmghd?utm_source=rss&utm_medium=article",
       "hot": "Wed, 28 Oct 2026 21:39:45 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Instagram 采用原生 AI 架构对用户界面进行了现代化改造，将 token 成本降低了 33%",
       "url": "https://www.infoq.cn/article/bXKVgLdpf7HONYHIi6Su?utm_source=rss&utm_medium=article",
       "hot": "Wed, 28 Oct 2026 21:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "谷歌 Antigravity SDK 新增本地模型支持，提升 Token 效率和代码隐私性",
       "url": "https://www.infoq.cn/article/TusFJkx6F151otgzliu2?utm_source=rss&utm_medium=article",
       "hot": "Wed, 28 Oct 2026 20:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Meta 利用私有处理技术将机密计算扩展至 AI 眼镜",
       "url": "https://www.infoq.cn/article/r1ibrq9kmZ1qFAWAtzJf?utm_source=rss&utm_medium=article",
       "hot": "Wed, 28 Oct 2026 19:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "大客户直接打1折、模型四个月降价80%：大模型价格战没有退路",
       "url": "https://www.infoq.cn/article/ejtljxPixrIuUsGYi5xa?utm_source=rss&utm_medium=article",
       "hot": "Wed, 28 Oct 2026 18:14:48 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "全网恐慌48小时，拯救互联网的却是一个“无名之辈”",
       "url": "https://www.infoq.cn/article/3HgfVzt6tQpQjrdE2x9J?utm_source=rss&utm_medium=article",
       "hot": "Wed, 28 Oct 2026 18:08:49 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "可组合商品套餐：Shipt Kits 平台内部解析",
       "url": "https://www.infoq.cn/article/xBgiKNRRaMe5ORxXy16Q?utm_source=rss&utm_medium=article",
       "hot": "Wed, 28 Oct 2026 18:00:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Anthropic 内部系统被 AI Agent 12 小时攻破！会议记录、员工薪酬、内部模型讨论遭访问",
       "url": "https://www.infoq.cn/article/mFXr0u4z0XftUGUg5Wm7?utm_source=rss&utm_medium=article",
       "hot": "Wed, 28 Oct 2026 17:54:54 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Claude Code 撑起史上最大 IPO，被封号不退费的中国开发者撑起那 5%“脏收入”",
-      "url": "https://www.infoq.cn/article/lCw5JBglbgZj9BYeZChS?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 28 Oct 2026 17:45:17 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "带出Transformer一作、前ACL顶会主席来华分享：人类正在把“思考”全盘外包",
-      "url": "https://www.infoq.cn/article/SZuklTgjFS7o8BaZ8TJh?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 28 Oct 2026 17:42:38 GMT"
     }
   ]
 }
