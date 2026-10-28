@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-27T22:41:05+00:00",
+  "updated_at": "2026-10-28T01:42:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Hikyuu 3.0 发布：组合即策略，极致性能撑起多策略引擎",
+      "url": "https://www.oschina.net/news/503253",
+      "hot": "Tue, 27 Oct 2026 21:53:54 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "跑分之外：为什么 Sonnet 5.5 写代码比 Kimi K3.1 和 GPT-6.1 更好用",
+      "url": "https://www.oschina.net/news/503252",
+      "hot": "Tue, 27 Oct 2026 19:42:45 +0800"
+    },
+    {
+      "rank": 3,
       "title": "OpenAI 和 Anthropic 将大模型价格砍了八成，这门生意到底怎么算的？",
       "url": "https://www.oschina.net/news/503251/cheap-llms",
       "hot": "Tue, 27 Oct 2026 19:41:06 +0800"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "拾趣 (Magpie) v0.1.18 发布，智能信息提取，更美观的 UI",
       "url": "https://www.oschina.net/news/503249",
       "hot": "Tue, 27 Oct 2026 18:02:15 +0800"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "紧跟上游内核迭代，deepin 推出 Linux 7.3 内核社区尝鲜版",
       "url": "https://www.oschina.net/news/503248",
       "hot": "Tue, 27 Oct 2026 17:46:18 +0800"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "deepin 在第六届 RISC-V 中国峰会展示 RISC-V 桌面生态“最后一公里”进展",
       "url": "https://www.oschina.net/news/503247",
       "hot": "Tue, 27 Oct 2026 17:20:58 +0800"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "UJCMS 13.2.0 发布，国内 Java CMS 网站内容管理系统",
       "url": "https://www.oschina.net/news/503246",
       "hot": "Tue, 27 Oct 2026 16:47:05 +0800"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "Smalltalk 开发环境 Pharo 14 发布：发布周期改到秋季、VM 迎来 RISC-V JIT",
       "url": "https://www.oschina.net/news/503245/pharo-14-released",
       "hot": "Tue, 27 Oct 2026 16:37:01 +0800"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Cloudflare 披露 KV cache 暴露事故，全部发生在超长上下文的 prompt 上",
       "url": "https://www.oschina.net/news/503242/cloudflare-glm-kv-cache-exposure-remediation",
       "hot": "Tue, 27 Oct 2026 15:51:31 +0800"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Anthropic 递交招股书：半年营收 163 亿美元，首次实现运营利润",
       "url": "https://www.oschina.net/news/503241/anthropic-s1-sec",
       "hot": "Tue, 27 Oct 2026 15:41:24 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "微软向约四分之一员工发出“自愿离职要约”，预期接受率低至 3%~5%",
-      "url": "https://www.oschina.net/news/503240/microsoft-voluntary-exit-offer",
-      "hot": "Tue, 27 Oct 2026 15:19:41 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "openKylin走进山东大学 共探开源贡献与实践",
-      "url": "https://www.oschina.net/news/503239",
-      "hot": "Tue, 27 Oct 2026 14:19:36 +0800"
     }
   ]
 }
