@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-28T07:24:28+00:00",
+  "updated_at": "2026-10-28T14:09:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "EVEngine - 面向 AI Agent 的轻量游戏引擎",
+      "url": "https://www.oschina.net/p/EVEngine",
+      "hot": "Wed, 28 Oct 2026 19:32:14 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "qOntology 本体工程平台开源版正式亮相：把本体工程从文档和脚本带到统一工作台",
+      "url": "https://www.oschina.net/news/503276",
+      "hot": "Wed, 28 Oct 2026 18:13:48 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Anthropic 工程经理把传统编程面试砍了，“它不再提供有效信号”",
+      "url": "https://www.oschina.net/news/503275/the-coding-interview-is-dead",
+      "hot": "Wed, 28 Oct 2026 18:08:54 +0800"
+    },
+    {
+      "rank": 4,
       "title": "百度开源“文心 Unlimited OCR 2”，全球首次实现任意页数文档解析",
       "url": "https://www.oschina.net/news/503269",
       "hot": "Wed, 28 Oct 2026 14:29:56 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "OpenAI 称其模型证明了局部光滑化猜想，并推翻指数时间假设",
       "url": "https://www.oschina.net/news/503268",
       "hot": "Wed, 28 Oct 2026 13:59:31 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "Termexo v0.11.0 发布：macOS 安装包、多标签预览与常用操作审核",
       "url": "https://www.oschina.net/news/503267",
       "hot": "Wed, 28 Oct 2026 13:46:49 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "深度使用 Zig 四个月：最爱的设计和最失望的坑，来自同一种偏执",
       "url": "https://www.oschina.net/news/503266/four-months-of-zig",
       "hot": "Wed, 28 Oct 2026 11:54:47 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Discord 即将允许任何人通过 Google 搜索找到公共服务器消息",
       "url": "https://www.oschina.net/news/503264/discord-content-from-discoverable-servers-easier-to-discover",
       "hot": "Wed, 28 Oct 2026 11:14:13 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "IBM CEO 力挺开源权重模型，在本地部署方面极具吸引力、且价格低廉",
       "url": "https://www.oschina.net/news/503263/ibm-ceo-says-open-weight-models-good-and-cheap",
       "hot": "Wed, 28 Oct 2026 11:06:10 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "维基百科仍在坚持清理 AI 生成内容",
       "url": "https://www.oschina.net/news/503262/wikipedia-wikiproject-ai-writing-cleanup",
       "hot": "Wed, 28 Oct 2026 10:55:24 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "开源终端模拟器 Ghostty 发布 1.4.0，优化内存占用 &amp; 性能",
-      "url": "https://www.oschina.net/news/503260/ghostty-release-1-4-0",
-      "hot": "Wed, 28 Oct 2026 10:39:28 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Genie 4 来了，谷歌 DeepMind 的世界模型开始同步生成声音",
-      "url": "https://www.oschina.net/news/503259/google-deepmind-genie-4-a-new-generation-of-world-simulation",
-      "hot": "Wed, 28 Oct 2026 10:30:27 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "DataGear 6.1.1 发布，数据可视化分析平台",
-      "url": "https://www.oschina.net/news/503258",
-      "hot": "Wed, 28 Oct 2026 09:55:35 +0800"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-28T07:24:25+00:00",
+  "updated_at": "2026-10-28T14:09:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7 Navigation 导航实战：把页面栈摆到明处治理",
-      "url": "https://ost.51cto.com/posts/61304",
-      "hot": "一个应用十几个页面，导航写到最后总会撞上同一批问题：栈里到底压了哪些页、返回键按下去会发生什么、页面A怎么把选择结果带回页面B、某个..."
+      "title": "Swiper 在手，HarmonyOS 6 图片轮播自动播",
+      "url": "https://ost.51cto.com/posts/61364",
+      "hot": "前言有时候，页面只需要把几张图片好好展示出来。旅行回顾放三张风景，首页介绍放几张横幅，小作品集放几张成品照，配上标题和页码，已经能..."
     },
     {
       "rank": 2,
-      "title": "从源码拆解一个 AIUI 每日一词智能体：页面、离线索引与硬件交互",
-      "url": "https://ost.51cto.com/posts/61286",
-      "hot": "前言本篇文章主要讲解词境应用的开发过程中涉及到的问题以及相关的思路方法。先看一下项目相关截图。项目运行结构项目的主要运行关系可以概..."
+      "title": "HarmonyOS 7 ArkGraphics 3D实战：给3D礼盒更换包装贴图#1024·向光而行·码向未来#",
+      "url": "https://ost.51cto.com/posts/61357",
+      "hot": "大家好，今天继续聊ArkGraphics3D，这次给一个3D礼盒更换包装图案。一个礼盒模型已经有盒身、盒盖和丝带。想展示不同款式时，不一定要为每..."
     },
     {
       "rank": 3,
+      "title": "刚刚，扩散模型杀进Agent主场！350亿参数，速度比Jev快一倍",
+      "url": "https://www.51cto.com/article/859567.html",
+      "hot": "Clover后续也将推出多模态版本，团队正在推进扩散语言模型与多模态理解及动作生成的结合，并持续开展端侧场景的适配与验证。与Acrab的合作，则在推进面向端侧场景的系统适配和软硬件协同验证。"
+    },
+    {
+      "rank": 4,
+      "title": "造物主权限已到手！谷歌重磅发布Genie 4，真正的交互世界来了，大型语言模型的消亡正在逼近？",
+      "url": "https://www.51cto.com/article/859564.html",
+      "hot": "刚刚，Google DeepMind发布了Genie4。它能根据提示生成可探索的场景，人在场景里移动时，画面继续向前生成；走到一半，还能用文字改变天气、镜头和正在发生的事。环境音、音乐和人物对话也由模型同步生成。"
+    },
+    {
+      "rank": 5,
       "title": "云原生镜像安全：Trivy 扫出漏洞没人落地？我做了 AI 助手一键生成修复方案",
       "url": "https://www.51cto.com/article/859531.html",
       "hot": "本文介绍一款镜像漏洞 AI 助手，它在 Harbor 页面选中镜像，直接在 K8s 控制节点执行 Trivy 扫描，把扫描摘要交给 DeepSeek 大模型，当场给出结论。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "第 36 篇：视频流协议分析：点播、直播、实时互动，网络问题各不同",
       "url": "https://www.51cto.com/article/859529.html",
       "hot": "视频卡顿，从来不是一个“网速”能解释的问题。搞清楚场景、选对协议、盯住三个指标(带宽、丢包、抖动)，你才能从“懵圈”走向“精准定位”。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "重磅！Redact 发布，狠狠的背刺 React！",
       "url": "https://www.51cto.com/article/859522.html",
       "hot": "TanStack 这次确实给 React 生态带来了一个很有意思的新选择。不用迁移框架、不用重写组件，只需要调整构建配置，就有机会显著减少客户端运行时体积。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "固定资料反复问，RAG之外还能缓存什么？",
       "url": "https://www.51cto.com/article/859521.html",
       "hot": "RAG是检索增强生成。资料先经过嵌入模型形成向量并建立索引；查询到来后，系统检索相关片段，组织成上下文，再交给大模型生成答案。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "AI写88小时，人类读七周！数学家开始读懂OpenAI千禧难题证明",
       "url": "https://www.51cto.com/article/859515.html",
       "hot": "约一万个AI智能体，88小时，166页。写完它，AI用了不到4天。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "OpenAI改写人类科学史！「王的猜想」全维度告破，30年铁律ETH塌了",
       "url": "https://www.51cto.com/article/859457.html",
       "hot": "挂谷猜想曾困扰了数学家们整整一个世纪，也是菲奖得主王虹的主攻领域。但三弹里，真正让圈内人倒吸一口凉气的，是「指数时间假设」（ETH）。过去三十年里，全球计算机科学界都一致默认ETH是对的。"
-    },
-    {
-      "rank": 9,
-      "title": "凡人AI修仙 — 一个完整Harness的五脏六腑<散修篇>",
-      "url": "https://www.51cto.com/article/859519.html",
-      "hot": "为什么它干不完？因为它打不开你的 Excel，跑不了你电脑上的脚本，也没法替你真发邮件，更不知道数字算没算错。它被困在一个对话框里。模型很聪明，但少了中间那层壳，它就只能说、不能做。这一课，咱们就来解决这件事。"
-    },
-    {
-      "rank": 10,
-      "title": "视频世界模型终于不「失忆」了！Meta提出World-T³：把记忆写进参数，单卡20.6FPS实时生成",
-      "url": "https://www.51cto.com/article/859513.html",
-      "hot": "最近，来自 Meta Reality Labs、伊利诺伊大学芝加哥分校和布朗大学的研究团队提出了 World-T³（Test-Time Training）。"
     }
   ]
 }
