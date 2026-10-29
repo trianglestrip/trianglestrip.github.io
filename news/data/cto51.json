@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-10-29T08:50:51+00:00",
+  "updated_at": "2026-10-29T15:39:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "灶台菜谱设计手记 02｜HarmonyOS 7.0 空间化：菜图滚动实现 #1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/61491",
-      "hot": "1.前言番茄炖牛腩进入小火炖煮阶段，用户看一眼手机，确认当前步骤，再找&ldquo;下一步&rdquo;。这段阅读很短，却要求界面交代两件事：现在做到哪里，..."
+      "title": "HarmonyOS 7 ArkGraphics 3D后处理实战：调节曝光与色调映射#1024·向光而行·码向未来#",
+      "url": "https://ost.51cto.com/posts/61499",
+      "hot": "大家好，今天继续聊ArkGraphics3D。这次不改礼盒模型，也不移动灯光，而是在画面输出之前调节曝光和色调映射，看看同一个3D场景会发生什么..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7 端侧加解密实战：AES-GCM 与密钥的妥善安放",
-      "url": "https://ost.51cto.com/posts/61490",
-      "hot": "应用的本地存储里总有些不该裸奔的东西：登录token、用户存的站点密码、私密的笔记内容。它们以明文落进preferences或数据库的那一刻，任何..."
+      "title": "HarmonyOS 7文搜图实战：用实验现象描述定位示波器原图",
+      "url": "https://ost.51cto.com/posts/61497",
+      "hot": "HarmonyOS7文搜图实战：用实验现象描述定位示波器原图本案例示例代码已编译，实现图库选择、沙箱复制、建索引、检索、作用域隔离和模型更新..."
     },
     {
       "rank": 3,

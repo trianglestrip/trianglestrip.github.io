@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-29T08:51:08+00:00",
+  "updated_at": "2026-10-29T15:39:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "157"
+      "hot": "158"
     },
     {
       "rank": 2,
@@ -18,33 +18,33 @@
     },
     {
       "rank": 3,
+      "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+      "url": "https://huggingface.co/papers/2609.18063",
+      "hot": "31"
+    },
+    {
+      "rank": 4,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
       "hot": "104"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
       "url": "https://huggingface.co/papers/2508.16279",
       "hot": "71"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
       "url": "https://huggingface.co/papers/2407.17789",
       "hot": "48"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Kronos: A Foundation Model for the Language of Financial Markets",
       "url": "https://huggingface.co/papers/2508.02739",
       "hot": "62"
-    },
-    {
-      "rank": 7,
-      "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
-      "url": "https://huggingface.co/papers/2610.36729",
-      "hot": "108"
     },
     {
       "rank": 8,
@@ -54,9 +54,9 @@
     },
     {
       "rank": 9,
-      "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
-      "url": "https://huggingface.co/papers/2609.18063",
-      "hot": "31"
+      "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
+      "url": "https://huggingface.co/papers/2610.36729",
+      "hot": "110"
     },
     {
       "rank": 10,
