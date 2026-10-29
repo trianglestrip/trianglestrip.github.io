@@ -1,7 +1,7 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-29T15:39:20+00:00",
+  "updated_at": "2026-10-29T20:32:19+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,39 +12,39 @@
     },
     {
       "rank": 2,
-      "title": "Deepseek v5 来了",
-      "url": "https://juejin.cn/post/7701541249069383706",
-      "hot": "2655"
+      "title": "PHP Swoole 协程模型详解：协程与线程/进程、调度、常驻内存及与 Go goroutine 的异同",
+      "url": "https://juejin.cn/post/7701591870955012111",
+      "hot": "3231"
     },
     {
       "rank": 3,
-      "title": "PHP Swoole 协程模型详解：协程与线程/进程、调度、常驻内存及与 Go goroutine 的异同",
-      "url": "https://juejin.cn/post/7701591870955012111",
-      "hot": "1836"
+      "title": "Deepseek v5 来了",
+      "url": "https://juejin.cn/post/7701541249069383706",
+      "hot": "2862"
     },
     {
       "rank": 4,
       "title": "出事了，AI 提效后，老板让我裁员20%",
       "url": "https://juejin.cn/post/7700887980139036682",
-      "hot": "810"
+      "hot": "828"
     },
     {
       "rank": 5,
       "title": "删了一个没用的 console.log，生产环境直接崩了!",
       "url": "https://juejin.cn/post/7701290557268951066",
-      "hot": "792"
+      "hot": "819"
     },
     {
       "rank": 6,
       "title": "我买的电视，我还不能研究它吗？",
       "url": "https://juejin.cn/post/7701316033940865058",
-      "hot": "495"
+      "hot": "504"
     },
     {
       "rank": 7,
       "title": "Three.js 医院三维大屏实战：Codex + Blender MCP + React 从建模到交互全流程",
       "url": "https://juejin.cn/post/7700887980140429322",
-      "hot": "441"
+      "hot": "486"
     },
     {
       "rank": 8,
@@ -56,13 +56,13 @@
       "rank": 9,
       "title": "GPT-6.1 Terra上线：更便宜了，干活到底怎么样？",
       "url": "https://juejin.cn/post/7701352628311392297",
-      "hot": "324"
+      "hot": "333"
     },
     {
       "rank": 10,
       "title": "AI 会干掉 React Native 吗？",
       "url": "https://juejin.cn/post/7700822035409928246",
-      "hot": "306"
+      "hot": "315"
     }
   ]
 }

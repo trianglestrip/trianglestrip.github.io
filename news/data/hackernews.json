@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-29T15:39:30+00:00",
+  "updated_at": "2026-10-29T20:32:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Mistral Large 4 (Le Chonk) is now Open Weight",
-      "url": "https://mistral.ai/news/mistral-large-4-oss/",
-      "hot": "370"
+      "title": "Patrick Stewart has died",
+      "url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+      "hot": "761"
     },
     {
       "rank": 2,
-      "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
-      "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
-      "hot": "237"
+      "title": "We're releasing the weights of Mistral Large 4",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "hot": "928"
     },
     {
       "rank": 3,
-      "title": "DoorDash is acquiring Instacart for $17B",
-      "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
-      "hot": "62"
+      "title": "The importance of communities around software",
+      "url": "https://lumi.codeberg.page/blog/software-community.html",
+      "hot": "33"
     },
     {
       "rank": 4,
-      "title": "Read the letter the FBI sent MLK to try to convince him to kill himself (2014)",
-      "url": "https://www.vox.com/xpress/2014/11/12/7204453/martin-luther-king-fbi-letter",
-      "hot": "275"
+      "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+      "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+      "hot": "101"
     },
     {
       "rank": 5,
-      "title": "Finland investigate Google over destruction of 250k trees",
-      "url": "https://yle.fi/a/74-20254086",
-      "hot": "51"
+      "title": "Show HN: Auto Dismiss Mac OS \"Allow <app> to find devices on local networks?\"",
+      "url": "https://github.com/johncassil/dontallow",
+      "hot": "35"
     },
     {
       "rank": 6,
-      "title": "Chained PHP2Shell Exploit Roots 25 Servers, Including US Government Servers",
-      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
-      "hot": "109"
+      "title": "H.264 Is Magic (2016)",
+      "url": "https://sidbala.com/h-264-is-magic/",
+      "hot": "219"
     },
     {
       "rank": 7,
-      "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
-      "url": "https://divagr.com/blog/qwenputer",
-      "hot": "632"
+      "title": "After 28 years walking across the globe, he's almost home",
+      "url": "https://www.nytimes.com/2026/10/29/world/europe/karl-bushby-walking-globe-uk.html",
+      "hot": "54"
     },
     {
       "rank": 8,
-      "title": "Zero click, silent, remote Android DoS",
-      "url": "https://smsofdeath.com/",
-      "hot": "238"
+      "title": "DoorDash to acquire Instacart",
+      "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+      "hot": "332"
     },
     {
       "rank": 9,
-      "title": "Java's new AOT cache feature is in a rough state",
-      "url": "https://xpipe.io/blog/java-aot-cache",
-      "hot": "36"
+      "title": "One reviewer per layer: splitting code review by the way code is read",
+      "url": "https://djordjepuzic.com/blog/posts/2026-10-27-one-reviewer-per-layer/",
+      "hot": "12"
     },
     {
       "rank": 10,
-      "title": "Why is this fingerprinting script creating bioweapons?",
-      "url": "https://nullpt.rs/fingerprinting-bioweapons",
-      "hot": "1464"
+      "title": "Duet is the future of chatbot interaction",
+      "url": "https://fig.blue/posts/duet-is-the-future/",
+      "hot": "22"
     }
   ]
 }

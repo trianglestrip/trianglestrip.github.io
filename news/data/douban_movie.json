@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-29T15:39:01+00:00",
+  "updated_at": "2026-10-29T20:32:05+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
-      "title": "兰香如故",
-      "url": "https://movie.douban.com/subject/36449295/",
-      "hot": "评分 7.5"
-    },
-    {
-      "rank": 7,
       "title": "蒸蒸日上",
       "url": "https://movie.douban.com/subject/37296949/",
       "hot": "评分 7.8"
     },
     {
-      "rank": 8,
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.3"
+      "rank": 7,
+      "title": "兰香如故",
+      "url": "https://movie.douban.com/subject/36449295/",
+      "hot": "评分 7.5"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "逃出布迪秀",
       "url": "https://movie.douban.com/subject/37446297/",
       "hot": "评分 7.4"
     },
     {
+      "rank": 9,
+      "title": "给阿嬷的情书",
+      "url": "https://movie.douban.com/subject/37116446/",
+      "hot": "评分 9.3"
+    },
+    {
       "rank": 10,
-      "title": "余红旧事",
-      "url": "https://movie.douban.com/subject/37560173/",
-      "hot": "评分 7.8"
+      "title": "生日快乐",
+      "url": "https://movie.douban.com/subject/37322586/",
+      "hot": "评分 8.9"
     }
   ]
 }
