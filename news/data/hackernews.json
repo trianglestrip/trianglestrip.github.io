@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-28T23:25:13+00:00",
+  "updated_at": "2026-10-29T02:33:52+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Why is this fingerprinting script creating bioweapons?",
-      "url": "https://nullpt.rs/fingerprinting-bioweapons",
-      "hot": "660"
+      "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
+      "url": "https://divagr.com/blog/qwenputer",
+      "hot": "107"
     },
     {
       "rank": 2,
-      "title": "CNC Stone Carving",
-      "url": "https://carmelitegothic.com/cnc-stone-carving/",
-      "hot": "372"
+      "title": "Why is this fingerprinting script creating bioweapons?",
+      "url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "hot": "890"
     },
     {
       "rank": 3,
-      "title": "Gemini 4 Carbon",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-      "hot": "746"
+      "title": "GitLab Security Incident: Attempted Exploitation of CVE-2026-97229",
+      "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+      "hot": "84"
     },
     {
       "rank": 4,
-      "title": "Why Birds Can Fly over Mount Everest",
-      "url": "https://lede-v2.nautil.us/why-birds-can-fly-over-mount-everest-237864",
-      "hot": "22"
+      "title": "The first wired XR glasses powered by Android XR",
+      "url": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
+      "hot": "39"
     },
     {
       "rank": 5,
-      "title": "The case of the 9 bit AES key",
-      "url": "https://v12.sh/blog/the-case-of-the-9bit-aes-key",
-      "hot": "54"
+      "title": "A Health Update",
+      "url": "https://furbo.org/2026/10/28/a-health-update/",
+      "hot": "116"
     },
     {
       "rank": 6,
-      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
-      "url": "https://surgehq.ai/blog/dayjob-tax",
-      "hot": "180"
+      "title": "CNC Stone Carving",
+      "url": "https://carmelitegothic.com/cnc-stone-carving/",
+      "hot": "409"
     },
     {
       "rank": 7,
-      "title": "MacBook Pro with PROLED XDR Display and Touch",
-      "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-      "hot": "465"
+      "title": "Gemini 4 Carbon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "hot": "816"
     },
     {
       "rank": 8,
-      "title": "The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand",
-      "url": "https://www.circuithub.com/post/unveiling-the-grid",
-      "hot": "388"
+      "title": "Formlabs Studio 1 $699 Resin Printer",
+      "url": "https://formlabs.com/products/form-studio-1-basic-founders-edition/",
+      "hot": "127"
     },
     {
       "rank": 9,
-      "title": "Start Doing Graph Theory",
-      "url": "https://vertex.degree/",
-      "hot": "555"
+      "title": "The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand",
+      "url": "https://www.circuithub.com/post/unveiling-the-grid",
+      "hot": "437"
     },
     {
       "rank": 10,
-      "title": "Formlabs Studio 1 $699 Resin Printer",
-      "url": "https://formlabs.com/products/form-studio-1-basic-founders-edition/",
-      "hot": "75"
+      "title": "Start Doing Graph Theory",
+      "url": "https://vertex.degree/",
+      "hot": "592"
     }
   ]
 }
