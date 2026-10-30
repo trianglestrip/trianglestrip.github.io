@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-30T05:39:46+00:00",
+  "updated_at": "2026-10-30T11:36:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Python 面向对象编程：类、继承、多态与组合",
       "url": "https://juejin.cn/post/7701269657706315811",
-      "hot": "5589"
+      "hot": "5643"
     },
     {
       "rank": 2,
       "title": "PHP Swoole 协程模型详解：协程与线程/进程、调度、常驻内存及与 Go goroutine 的异同",
       "url": "https://juejin.cn/post/7701591870955012111",
-      "hot": "4590"
+      "hot": "4608"
     },
     {
       "rank": 3,
       "title": "Deepseek v5 来了",
       "url": "https://juejin.cn/post/7701541249069383706",
-      "hot": "3483"
+      "hot": "3978"
     },
     {
       "rank": 4,
       "title": "ValidX vs 正则表达式：可读性与维护性对比",
       "url": "https://juejin.cn/post/7701250481567039528",
-      "hot": "1260"
+      "hot": "2664"
     },
     {
       "rank": 5,
       "title": "Service Mesh 可观测性：分布式追踪、指标与日志的统一方案",
       "url": "https://juejin.cn/post/7701971738456752162",
-      "hot": "1116"
+      "hot": "2079"
     },
     {
       "rank": 6,
       "title": "删了一个没用的 console.log，生产环境直接崩了!",
       "url": "https://juejin.cn/post/7701290557268951066",
-      "hot": "945"
+      "hot": "1062"
     },
     {
       "rank": 7,
       "title": "我买的电视，我还不能研究它吗？",
       "url": "https://juejin.cn/post/7701316033940865058",
-      "hot": "621"
+      "hot": "693"
     },
     {
       "rank": 8,
       "title": "史诗级封号收入",
       "url": "https://juejin.cn/post/7701870817483259958",
-      "hot": "477"
+      "hot": "630"
     },
     {
       "rank": 9,
       "title": "程序员 1v1 访谈系列第八期：大龄女程序员的困境",
       "url": "https://juejin.cn/post/7701269925755846671",
-      "hot": "414"
+      "hot": "486"
     },
     {
       "rank": 10,
       "title": "GPT-6.1 Terra上线：更便宜了，干活到底怎么样？",
       "url": "https://juejin.cn/post/7701352628311392297",
-      "hot": "396"
+      "hot": "450"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-10-30T05:40:00+00:00",
+  "updated_at": "2026-10-30T11:37:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "万亿参数模型 Mistral Large 4 开放权重，用更少的 token 打平了最高分",
-      "url": "https://www.oschina.net/news/503310/mistral-large-4-oss",
-      "hot": "Fri, 30 Oct 2026 11:30:21 +0800"
+      "title": "聚力开源向实 赋能产业创新——2026 上海开源软件应用创新大赛总决赛暨创新增长大会圆满落幕",
+      "url": "https://www.oschina.net/news/503320",
+      "hot": "Fri, 30 Oct 2026 19:10:59 +0800"
     },
     {
       "rank": 2,
-      "title": "Pico CSS 停止维护，作者解释称“AI 能直接生成它要做的事”",
-      "url": "https://www.oschina.net/news/503309",
-      "hot": "Fri, 30 Oct 2026 11:12:25 +0800"
+      "title": "攻击者利用 PHP2Shell 漏洞控入侵美国政府服务器",
+      "url": "https://www.oschina.net/news/503319/chained-php2shell-exploit-roots-25-servers",
+      "hot": "Fri, 30 Oct 2026 19:02:56 +0800"
     },
     {
       "rank": 3,
-      "title": "MiniMax Code 团队把自己每天用的 16 个 Agent 技能开源了",
-      "url": "https://www.oschina.net/news/503308",
-      "hot": "Fri, 30 Oct 2026 10:57:23 +0800"
+      "title": "DeepSeek 千亿融资名单曝光，国资占比从 2% 跳到 27%",
+      "url": "https://www.oschina.net/news/503318",
+      "hot": "Fri, 30 Oct 2026 18:56:51 +0800"
     },
     {
       "rank": 4,
-      "title": "拿注意力层当内存——有人在 Qwen 权重里编译了一颗 RISC-V CPU",
-      "url": "https://www.oschina.net/news/503307/qwenputer-risc-v",
-      "hot": "Fri, 30 Oct 2026 10:50:44 +0800"
+      "title": "这个 Agent 宿主把界面做成了纯文本，你想要什么形状自己让 Agent 改",
+      "url": "https://www.oschina.net/news/503317/herdr-dev-agent-ide-runtime",
+      "hot": "Fri, 30 Oct 2026 17:06:17 +0800"
     },
     {
       "rank": 5,
-      "title": "VibeVoice-ASR-BitNet 实测：AIGCPanel 上 CPU 实时转写",
-      "url": "https://www.oschina.net/news/503305",
-      "hot": "Thu, 29 Oct 2026 20:34:53 +0800"
+      "title": "qData 数据中台开源版 v1.6.5 发布：Doris 数据源适配增强，新增演示数据清除脚本",
+      "url": "https://www.oschina.net/news/503316",
+      "hot": "Fri, 30 Oct 2026 17:01:15 +0800"
     },
     {
       "rank": 6,
-      "title": "OpenAI 隔离的 AI agent 通过 CPU 缓存互相通信",
-      "url": "https://www.oschina.net/news/503303/openai-securing-our-frontier-model-training-environment",
-      "hot": "Thu, 29 Oct 2026 17:48:03 +0800"
+      "title": "数据迁移同步工具 CloudCanal v6.6.0.0 发布，Kudu 同步能力升级",
+      "url": "https://www.oschina.net/news/503315",
+      "hot": "Fri, 30 Oct 2026 16:49:52 +0800"
     },
     {
       "rank": 7,
-      "title": "Neton 1.0.0 正式发布：面向 AI 原生开发的 Kotlin/Native 服务端应用框架",
-      "url": "https://www.oschina.net/news/503302",
-      "hot": "Thu, 29 Oct 2026 17:21:23 +0800"
+      "title": "向光而行 码向未来 | “1024程序员节”鸿蒙开发者沙龙天津站圆满落幕",
+      "url": "https://my.oschina.net/u/4806939/blog/19784478",
+      "hot": "Fri, 30 Oct 2026 16:05:07 +0800"
     },
     {
       "rank": 8,
-      "title": "无公网IP，不碰路由器：花生壳如何把企业远程访问做成“基础能力”",
-      "url": "https://www.oschina.net/news/503298",
-      "hot": "Thu, 29 Oct 2026 16:45:27 +0800"
+      "title": ":fire::fire:开源接口平台 v6.3.1 发布，新增超时时间",
+      "url": "https://www.oschina.net/news/503313",
+      "hot": "Fri, 30 Oct 2026 15:28:28 +0800"
     },
     {
       "rank": 9,
-      "title": "GearUI Kit 1.0 正式发布：82 个组件、四端统一，重新定义 Kotlin 跨平台 UI 开发体验",
-      "url": "https://www.oschina.net/news/503295",
-      "hot": "Thu, 29 Oct 2026 16:31:04 +0800"
+      "title": "【AI 智能运维平台】本周更新：全新上线 RUM 模块，从真实用户视角了解网站访问与使用体验",
+      "url": "https://www.oschina.net/news/503312",
+      "hot": "Fri, 30 Oct 2026 15:07:47 +0800"
     },
     {
       "rank": 10,
-      "title": "Zentrola 1.3.1 发布：上游订阅号和 API Key 支持逐条启停",
-      "url": "https://www.oschina.net/news/503294",
-      "hot": "Thu, 29 Oct 2026 15:29:17 +0800"
+      "title": "万亿参数模型 Mistral Large 4 开放权重，用更少的 token 打平了最高分",
+      "url": "https://www.oschina.net/news/503310/mistral-large-4-oss",
+      "hot": "Fri, 30 Oct 2026 11:30:21 +0800"
     }
   ]
 }

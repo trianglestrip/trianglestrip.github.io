@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-30T05:39:57+00:00",
+  "updated_at": "2026-10-30T11:37:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
-      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
-      "hot": "1013"
-    },
-    {
-      "rank": 2,
-      "title": "We're releasing the weights of Mistral Large 4",
-      "url": "https://mistral.ai/news/mistral-large-4-oss/",
-      "hot": "1298"
-    },
-    {
-      "rank": 3,
-      "title": "Astroterm: A Planetarium for Your Terminal",
-      "url": "https://github.com/da-luce/astroterm",
+      "title": "elect.horse",
+      "url": "https://elect.horse/",
       "hot": "54"
     },
     {
+      "rank": 2,
+      "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+      "hot": "1448"
+    },
+    {
+      "rank": 3,
+      "title": "We're releasing the weights of Mistral Large 4",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "hot": "1527"
+    },
+    {
       "rank": 4,
-      "title": "Cuis: The Modern Smalltalk-80",
-      "url": "https://cuis.st/",
-      "hot": "53"
+      "title": "How Do You Take a Picture of a Black Hole?",
+      "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
+      "hot": "20"
     },
     {
       "rank": 5,
-      "title": "We ran AI agent swarms in Minecraft and Mindustry",
-      "url": "https://labs.ycombinator.com/projects/games/index.html",
-      "hot": "234"
+      "title": "Backdoors in official Claude Code extensions",
+      "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+      "hot": "50"
     },
     {
       "rank": 6,
-      "title": "I'm so bad at billiards that I ended up in the hyperbolic plane [video]",
-      "url": "https://www.youtube.com/watch?v=kL9BTbIGxLg",
-      "hot": "47"
+      "title": "Gilgamesh by Simon Armitage review – an ancient epic is brilliantly translated",
+      "url": "https://www.theguardian.com/books/2026/oct/20/gilgamesh-by-simon-armitage-review-an-ancient-epic-is-brilliantly-translated-for-our-times",
+      "hot": "53"
     },
     {
       "rank": 7,
-      "title": "Herdr has released native app",
-      "url": "https://github.com/herdrdev/herdr-app",
-      "hot": "91"
+      "title": "Cuis: The Modern Smalltalk-80",
+      "url": "https://cuis.st/",
+      "hot": "132"
     },
     {
       "rank": 8,
-      "title": "CVE-2026-98432: Linux TCP Use-After-Free Risk and Patch Validation",
-      "url": "https://www.penligent.ai/hackinglabs/cve-2026-98432/",
-      "hot": "35"
+      "title": "Herdr has released native app",
+      "url": "https://github.com/herdrdev/herdr-app",
+      "hot": "233"
     },
     {
       "rank": 9,
-      "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
-      "url": "https://github.com/SheepSeb/tinyworldformer",
-      "hot": "170"
+      "title": "I'm so bad at billiards that I ended up in the hyperbolic plane [video]",
+      "url": "https://www.youtube.com/watch?v=kL9BTbIGxLg",
+      "hot": "152"
     },
     {
       "rank": 10,
-      "title": "H.264 Is Magic (2016)",
-      "url": "https://sidbala.com/h-264-is-magic/",
-      "hot": "370"
+      "title": "We ran AI agent swarms in Minecraft and Mindustry",
+      "url": "https://labs.ycombinator.com/projects/games/index.html",
+      "hot": "307"
     }
   ]
 }
