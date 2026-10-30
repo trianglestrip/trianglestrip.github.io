@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-29T20:32:34+00:00",
+  "updated_at": "2026-10-30T00:11:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Java 近期资讯：JDK 28 JEP、Azul Payara、Gatherers4j、Google ADK、Yupiik 与 Apache Camel CVE",
+      "url": "https://www.infoq.cn/article/dfj1fLfP8iVLKFtEfr69?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 30 Oct 2026 08:00:00 GMT"
+    },
+    {
+      "rank": 2,
       "title": "启元 CEO 田华：启元机器人接入WorkBuddy，不仅看见你的世界，还能走得到你身边",
       "url": "https://www.infoq.cn/article/fHXiS2bsEFHDXdwVK6KP?utm_source=rss&utm_medium=article",
       "hot": "Thu, 29 Oct 2026 20:22:05 GMT"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "谷歌赢了 AI 排行榜，却没赢下华尔街：Gemini 4 Carbon 登顶背后的昂贵代价",
       "url": "https://www.infoq.cn/article/dXwHCW7kjGX1kjPqtla9?utm_source=rss&utm_medium=article",
       "hot": "Thu, 29 Oct 2026 20:13:07 GMT"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "概率、插座与5000个爱因斯坦：专访阿里云研发副总裁周琦",
       "url": "https://www.infoq.cn/article/5xCWuR8CMGosWrEuNbix?utm_source=rss&utm_medium=article",
       "hot": "Thu, 29 Oct 2026 18:37:11 GMT"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "AI+增长：员工提效了，企业为什么没多赚钱？｜上海鲸阙AI联合创始人 沈涛分享",
       "url": "https://www.infoq.cn/article/aK6ADSkIvwf265yc8PuT?utm_source=rss&utm_medium=article",
       "hot": "Thu, 29 Oct 2026 18:00:23 GMT"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Uber 实现服务网格依赖关系分析自动化",
       "url": "https://www.infoq.cn/article/YtQqxxRqoy38Fj2qpsDv?utm_source=rss&utm_medium=article",
       "hot": "Thu, 29 Oct 2026 17:15:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Anthropic 取消编程面试：新人第一次有机会直接和资深工程师竞争",
       "url": "https://www.infoq.cn/article/EQTckj5GQQymiQES22Bo?utm_source=rss&utm_medium=article",
       "hot": "Thu, 29 Oct 2026 16:44:01 GMT"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "天数智芯公布天垓300实测数据：部分推理场景达到H200水平，端侧对标Thor T5000",
       "url": "https://www.infoq.cn/article/tFaOHgBe8ENwteobTsLV?utm_source=rss&utm_medium=article",
       "hot": "Thu, 29 Oct 2026 16:38:28 GMT"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "生产级 AI：隐性故障、工程落地与智能体治理",
       "url": "https://www.infoq.cn/article/tsyyFmCmzphHw4gWy7Fo?utm_source=rss&utm_medium=article",
       "hot": "Thu, 29 Oct 2026 15:21:00 GMT"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "HarmonyOS 多端自适应实战：一张详情页如何同时适配手机、折叠屏与平板",
       "url": "https://www.infoq.cn/article/tbBFLLjYd0eYqrIMowWt?utm_source=rss&utm_medium=article",
       "hot": "Thu, 29 Oct 2026 14:28:23 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "微软承诺将 Maia 推向数吉瓦级推理部署，但其效率指标引发质疑",
-      "url": "https://www.infoq.cn/article/Lg6RgMudjiWIVQllmz8a?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 29 Oct 2026 13:00:00 GMT"
     }
   ]
 }
