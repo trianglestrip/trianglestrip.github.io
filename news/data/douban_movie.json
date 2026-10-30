@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-30T11:36:37+00:00",
+  "updated_at": "2026-10-30T17:08:18+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "rank": 2,
-      "title": "醉梦",
-      "url": "https://movie.douban.com/subject/37042229/",
-      "hot": "评分 7.5"
-    },
-    {
-      "rank": 3,
       "title": "空枪",
       "url": "https://movie.douban.com/subject/37508847/",
       "hot": "评分 7.2"
+    },
+    {
+      "rank": 3,
+      "title": "醉梦",
+      "url": "https://movie.douban.com/subject/37042229/",
+      "hot": "评分 7.5"
     },
     {
       "rank": 4,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.3"
-    },
-    {
-      "rank": 10,
       "title": "生日快乐",
       "url": "https://movie.douban.com/subject/37322586/",
       "hot": "评分 8.9"
+    },
+    {
+      "rank": 10,
+      "title": "给阿嬷的情书",
+      "url": "https://movie.douban.com/subject/37116446/",
+      "hot": "评分 9.3"
     }
   ]
 }

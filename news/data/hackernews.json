@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-30T11:37:05+00:00",
+  "updated_at": "2026-10-30T17:08:42+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "elect.horse",
-      "url": "https://elect.horse/",
-      "hot": "54"
+      "title": "AI Isn't Replacing SREs. It's Deskilling Them",
+      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "hot": "168"
     },
     {
       "rank": 2,
-      "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
-      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
-      "hot": "1448"
+      "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+      "hot": "382"
     },
     {
       "rank": 3,
-      "title": "We're releasing the weights of Mistral Large 4",
-      "url": "https://mistral.ai/news/mistral-large-4-oss/",
-      "hot": "1527"
+      "title": "A Working Nintendo in ~1GB of Qwen Weights",
+      "url": "https://github.com/dbreunig/nesformer",
+      "hot": "12"
     },
     {
       "rank": 4,
-      "title": "How Do You Take a Picture of a Black Hole?",
-      "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
-      "hot": "20"
+      "title": "Northflank Breached",
+      "url": "https://status.northflank.com",
+      "hot": "93"
     },
     {
       "rank": 5,
-      "title": "Backdoors in official Claude Code extensions",
-      "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
-      "hot": "50"
+      "title": "The federated code forge",
+      "url": "https://tangled.org/blog/forge/",
+      "hot": "41"
     },
     {
       "rank": 6,
-      "title": "Gilgamesh by Simon Armitage review – an ancient epic is brilliantly translated",
-      "url": "https://www.theguardian.com/books/2026/oct/20/gilgamesh-by-simon-armitage-review-an-ancient-epic-is-brilliantly-translated-for-our-times",
-      "hot": "53"
+      "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
+      "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+      "hot": "525"
     },
     {
       "rank": 7,
-      "title": "Cuis: The Modern Smalltalk-80",
-      "url": "https://cuis.st/",
-      "hot": "132"
+      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "hot": "185"
     },
     {
       "rank": 8,
-      "title": "Herdr has released native app",
-      "url": "https://github.com/herdrdev/herdr-app",
-      "hot": "233"
+      "title": "Medicare Will Pay $50k for Your Heart Attack. It Should Pay $100 to Prevent It",
+      "url": "https://www.medpagetoday.com/opinion/second-opinions/123553?trw=no",
+      "hot": "158"
     },
     {
       "rank": 9,
-      "title": "I'm so bad at billiards that I ended up in the hyperbolic plane [video]",
-      "url": "https://www.youtube.com/watch?v=kL9BTbIGxLg",
-      "hot": "152"
+      "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+      "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+      "hot": "58"
     },
     {
       "rank": 10,
-      "title": "We ran AI agent swarms in Minecraft and Mindustry",
-      "url": "https://labs.ycombinator.com/projects/games/index.html",
-      "hot": "307"
+      "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+      "hot": "1689"
     }
   ]
 }
