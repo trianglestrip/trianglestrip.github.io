@@ -1,7 +1,7 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-30T17:08:33+00:00",
+  "updated_at": "2026-10-30T21:27:28+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,33 +12,33 @@
     },
     {
       "rank": 2,
-      "title": "PHP Swoole 协程模型详解：协程与线程/进程、调度、常驻内存及与 Go goroutine 的异同",
-      "url": "https://juejin.cn/post/7701591870955012111",
-      "hot": "4617"
+      "title": "ValidX vs 正则表达式：可读性与维护性对比",
+      "url": "https://juejin.cn/post/7701250481567039528",
+      "hot": "5337"
     },
     {
       "rank": 3,
-      "title": "Deepseek v5 来了",
-      "url": "https://juejin.cn/post/7701541249069383706",
-      "hot": "4203"
+      "title": "PHP Swoole 协程模型详解：协程与线程/进程、调度、常驻内存及与 Go goroutine 的异同",
+      "url": "https://juejin.cn/post/7701591870955012111",
+      "hot": "4626"
     },
     {
       "rank": 4,
-      "title": "ValidX vs 正则表达式：可读性与维护性对比",
-      "url": "https://juejin.cn/post/7701250481567039528",
-      "hot": "4167"
+      "title": "Deepseek v5 来了",
+      "url": "https://juejin.cn/post/7701541249069383706",
+      "hot": "4257"
     },
     {
       "rank": 5,
       "title": "Service Mesh 可观测性：分布式追踪、指标与日志的统一方案",
       "url": "https://juejin.cn/post/7701971738456752162",
-      "hot": "2088"
+      "hot": "2097"
     },
     {
       "rank": 6,
       "title": "删了一个没用的 console.log，生产环境直接崩了!",
       "url": "https://juejin.cn/post/7701290557268951066",
-      "hot": "1089"
+      "hot": "1098"
     },
     {
       "rank": 7,
@@ -62,7 +62,7 @@
       "rank": 10,
       "title": "现代 Android 架构指南：不要再主动设计 Callback 接口",
       "url": "https://juejin.cn/post/7701545991036862491",
-      "hot": "450"
+      "hot": "459"
     }
   ]
 }
