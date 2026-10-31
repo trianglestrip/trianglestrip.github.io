@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-10-31T06:26:54+00:00",
+  "updated_at": "2026-10-31T12:53:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "159"
+      "hot": "160"
     },
     {
       "rank": 2,
       "title": "Harness^2: Recursive Agent Harnessing for an Open World",
       "url": "https://huggingface.co/papers/2610.14224",
-      "hot": "126"
+      "hot": "127"
     },
     {
       "rank": 3,
@@ -26,7 +26,7 @@
       "rank": 4,
       "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
       "url": "https://huggingface.co/papers/2609.18063",
-      "hot": "31"
+      "hot": "32"
     },
     {
       "rank": 5,
@@ -36,21 +36,21 @@
     },
     {
       "rank": 6,
-      "title": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
-      "url": "https://huggingface.co/papers/2610.38342",
-      "hot": "10"
-    },
-    {
-      "rank": 7,
       "title": "Very Large-Scale Multi-Agent Simulation in AgentScope",
       "url": "https://huggingface.co/papers/2407.17789",
       "hot": "48"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
       "url": "https://huggingface.co/papers/2508.16279",
       "hot": "71"
+    },
+    {
+      "rank": 8,
+      "title": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
+      "url": "https://huggingface.co/papers/2610.38342",
+      "hot": "10"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "Intrinsic Distribution Matching",
-      "url": "https://huggingface.co/papers/2610.39633",
-      "hot": "239"
+      "title": "MOSS-Image Technical Report",
+      "url": "https://huggingface.co/papers/2610.23374",
+      "hot": "107"
     }
   ]
 }

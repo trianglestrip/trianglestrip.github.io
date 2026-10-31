@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-10-31T06:26:38+00:00",
+  "updated_at": "2026-10-31T12:53:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI 编程导师挑战低端 Android 手机！不用服务器，Python 和 SQL 直接在浏览器里运行",
+      "url": "https://www.infoq.cn/article/HHgKMMKa8BNZYQuMFSMS?utm_source=rss&utm_medium=article",
+      "hot": "Sat, 31 Oct 2026 20:43:05 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "每天上千万次创建：Agent Sandbox 为什么会成为新算力形态？",
+      "url": "https://www.infoq.cn/video/4qjamMQLVIoZvytUQwpI?utm_source=rss&utm_medium=article",
+      "hot": "Sat, 31 Oct 2026 16:15:46 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "一边拥抱 JDK 27，一边保留 JDK 21：Helidon 开启双轨发布",
+      "url": "https://www.infoq.cn/article/qRZCxTQbL1CwAUy28Zm8?utm_source=rss&utm_medium=article",
+      "hot": "Sat, 31 Oct 2026 15:00:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "当AI从“会想”走向“会干”——腾讯云与英特尔共筑Agentic AI执行新底座",
+      "url": "https://www.infoq.cn/article/acC46slIVKJg1O0ac8w4?utm_source=rss&utm_medium=article",
+      "hot": "Sat, 31 Oct 2026 14:49:01 GMT"
+    },
+    {
+      "rank": 5,
       "title": "Flink 负责时间，Iceberg 负责记忆：Pinterest 如何最终确认数据分区？",
       "url": "https://www.infoq.cn/article/9OhgYkwYlPYgTbAvWlGz?utm_source=rss&utm_medium=article",
       "hot": "Sat, 31 Oct 2026 13:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "GitHub Actions Runner Controller 0.15.0 致力于实现大规模场景下的可靠性",
       "url": "https://www.infoq.cn/article/tNLFh02J0koQswlY5Oqe?utm_source=rss&utm_medium=article",
       "hot": "Sat, 31 Oct 2026 10:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "终于不是 AI 了：Lambda 直接运行 Express，API Gateway 还需要吗？",
       "url": "https://www.infoq.cn/article/fcdAAd69U452t9b39rLU?utm_source=rss&utm_medium=article",
       "hot": "Sat, 31 Oct 2026 08:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "27 岁程序员获无限 Token，挑战两个月重写思科 98% 的遗留代码",
       "url": "https://www.infoq.cn/article/C9FJGQ0ptRp8F8kHRRdZ?utm_source=rss&utm_medium=article",
       "hot": "Fri, 30 Oct 2026 21:00:00 GMT"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "AI+垂类Agent：任务跑得久、工具用得熟，撑不起Agent公司长期竞争力｜贝联珠贯创始人兼CEO 毕玄分享",
       "url": "https://www.infoq.cn/article/sCKczimP9lSEl0rgJ7VY?utm_source=rss&utm_medium=article",
       "hot": "Fri, 30 Oct 2026 19:27:01 GMT"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "AI+社区：「模力工场」连接AI供需，补上信任缺口｜极客邦科技创始人兼CEO 霍太稳分享",
       "url": "https://www.infoq.cn/article/f3FdeDczctAdHMhvBdKw?utm_source=rss&utm_medium=article",
       "hot": "Fri, 30 Oct 2026 18:53:48 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "EmbeddingGemma 2：Google 把五种模态塞进同一个向量空间",
-      "url": "https://www.infoq.cn/article/O6mtiB7FVd0VSDHJe348?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 30 Oct 2026 17:00:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "超节点火了一年后，“算力不够就加机器”的扩张逻辑正在被改写",
-      "url": "https://www.infoq.cn/article/ZolBIJdvK5Icdqg6FB0X?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 30 Oct 2026 15:45:06 GMT"
-    },
-    {
-      "rank": 9,
-      "title": ".NET 11 第 2 个候选版本发布，带来生产环境部署许可以及针对库、F#、MAUI 和 WinForms 的更新",
-      "url": "https://www.infoq.cn/article/A8YgLsG4VOhoJkUVq9Jq?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 30 Oct 2026 15:09:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "2026年AI技术演进与2027年趋势前瞻报告",
-      "url": "https://www.infoq.cn/minibook/lmVM6XjSDMpMb6QTbK0l?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 30 Oct 2026 14:41:36 GMT"
     }
   ]
 }
