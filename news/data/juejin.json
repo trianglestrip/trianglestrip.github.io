@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-31T00:56:05+00:00",
+  "updated_at": "2026-10-31T06:26:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "ValidX vs 正则表达式：可读性与维护性对比",
-      "url": "https://juejin.cn/post/7701250481567039528",
-      "hot": "6183"
+      "title": "PHP Swoole 协程模型详解：协程与线程/进程、调度、常驻内存及与 Go goroutine 的异同",
+      "url": "https://juejin.cn/post/7701591870955012111",
+      "hot": "4644"
     },
     {
       "rank": 2,
-      "title": "Python 面向对象编程：类、继承、多态与组合",
-      "url": "https://juejin.cn/post/7701269657706315811",
-      "hot": "5661"
+      "title": "Deepseek v5 来了",
+      "url": "https://juejin.cn/post/7701541249069383706",
+      "hot": "4509"
     },
     {
       "rank": 3,
-      "title": "PHP Swoole 协程模型详解：协程与线程/进程、调度、常驻内存及与 Go goroutine 的异同",
-      "url": "https://juejin.cn/post/7701591870955012111",
-      "hot": "4626"
+      "title": "Service Mesh 可观测性：分布式追踪、指标与日志的统一方案",
+      "url": "https://juejin.cn/post/7701971738456752162",
+      "hot": "2106"
     },
     {
       "rank": 4,
-      "title": "Deepseek v5 来了",
-      "url": "https://juejin.cn/post/7701541249069383706",
-      "hot": "4302"
+      "title": "删了一个没用的 console.log，生产环境直接崩了!",
+      "url": "https://juejin.cn/post/7701290557268951066",
+      "hot": "1143"
     },
     {
       "rank": 5,
-      "title": "Service Mesh 可观测性：分布式追踪、指标与日志的统一方案",
-      "url": "https://juejin.cn/post/7701971738456752162",
-      "hot": "2097"
+      "title": "史诗级封号收入",
+      "url": "https://juejin.cn/post/7701870817483259958",
+      "hot": "729"
     },
     {
       "rank": 6,
-      "title": "删了一个没用的 console.log，生产环境直接崩了!",
-      "url": "https://juejin.cn/post/7701290557268951066",
-      "hot": "1107"
+      "title": "我买的电视，我还不能研究它吗？",
+      "url": "https://juejin.cn/post/7701316033940865058",
+      "hot": "729"
     },
     {
       "rank": 7,
-      "title": "我买的电视，我还不能研究它吗？",
-      "url": "https://juejin.cn/post/7701316033940865058",
-      "hot": "711"
+      "title": "现代 Android 架构指南：不要再主动设计 Callback 接口",
+      "url": "https://juejin.cn/post/7701545991036862491",
+      "hot": "513"
     },
     {
       "rank": 8,
-      "title": "史诗级封号收入",
-      "url": "https://juejin.cn/post/7701870817483259958",
-      "hot": "684"
+      "title": "Go-Gui:一套 无限接近 现代化UI的 GPU绘制界面组件框架",
+      "url": "https://juejin.cn/post/7701703182474248211",
+      "hot": "468"
     },
     {
       "rank": 9,
-      "title": "程序员 1v1 访谈系列第八期：大龄女程序员的困境",
-      "url": "https://juejin.cn/post/7701269925755846671",
-      "hot": "504"
+      "title": "我用 DeepSeek 做了 4 个零依赖的赚钱小工具，全部开源",
+      "url": "https://juejin.cn/post/7673809190474629155",
+      "hot": "450"
     },
     {
       "rank": 10,
-      "title": "现代 Android 架构指南：不要再主动设计 Callback 接口",
-      "url": "https://juejin.cn/post/7701545991036862491",
-      "hot": "459"
+      "title": "想做个人副业别乱买服务器！我的 5 个月真实开销分享",
+      "url": "https://juejin.cn/post/7701510609427185690",
+      "hot": "396"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-30T21:27:54+00:00",
+  "updated_at": "2026-10-31T06:26:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "hot": "3997"
+      "hot": "4028"
     },
     {
       "rank": 2,
       "title": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-      "hot": "795"
+      "hot": "802"
     },
     {
       "rank": 3,
       "title": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-      "hot": "551"
+      "hot": "578"
     },
     {
       "rank": 4,
       "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "hot": "490"
+      "hot": "508"
     },
     {
       "rank": 5,
-      "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "hot": "506"
+      "title": "baidu/Unlimited-OCR-2",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "hot": "459"
     },
     {
       "rank": 6,
-      "title": "baidu/Unlimited-OCR-2",
-      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
-      "hot": "447"
+      "title": "mistralai/Mistral-Large-4-1T-A52B",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "hot": "1358"
     },
     {
       "rank": 7,
-      "title": "mistralai/Mistral-Large-4-1T-A52B",
-      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-      "hot": "1333"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "9986"
     },
     {
       "rank": 8,
-      "title": "RecursiveSI/flint",
-      "url": "https://huggingface.co/RecursiveSI/flint",
-      "hot": "1256"
+      "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "hot": "509"
     },
     {
       "rank": 9,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "9948"
+      "title": "RecursiveSI/flint",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "hot": "1262"
     },
     {
       "rank": 10,
-      "title": "XHToken/Spark-X2.6-4B",
-      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-      "hot": "921"
+      "title": "black-forest-labs/flux-3-image-klein-comfy",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "hot": "2134"
     }
   ]
 }
