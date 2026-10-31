@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-10-31T12:52:56+00:00",
+  "updated_at": "2026-10-31T17:23:57+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -42,9 +42,9 @@
     },
     {
       "rank": 7,
-      "title": "兰香如故",
-      "url": "https://movie.douban.com/subject/36449295/",
-      "hot": "评分 7.5"
+      "title": "生日快乐",
+      "url": "https://movie.douban.com/subject/37322586/",
+      "hot": "评分 8.9"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "生日快乐",
-      "url": "https://movie.douban.com/subject/37322586/",
-      "hot": "评分 8.9"
-    },
-    {
-      "rank": 10,
       "title": "给阿嬷的情书",
       "url": "https://movie.douban.com/subject/37116446/",
       "hot": "评分 9.3"
+    },
+    {
+      "rank": 10,
+      "title": "兰香如故",
+      "url": "https://movie.douban.com/subject/36449295/",
+      "hot": "评分 7.5"
     }
   ]
 }

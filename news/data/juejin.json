@@ -1,67 +1,67 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-10-31T12:53:09+00:00",
+  "updated_at": "2026-10-31T17:24:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "PHP Swoole 协程模型详解：协程与线程/进程、调度、常驻内存及与 Go goroutine 的异同",
       "url": "https://juejin.cn/post/7701591870955012111",
-      "hot": "4662"
+      "hot": "4671"
     },
     {
       "rank": 2,
       "title": "Service Mesh 可观测性：分布式追踪、指标与日志的统一方案",
       "url": "https://juejin.cn/post/7701971738456752162",
-      "hot": "2115"
+      "hot": "2124"
     },
     {
       "rank": 3,
       "title": "史诗级封号收入",
       "url": "https://juejin.cn/post/7701870817483259958",
-      "hot": "765"
+      "hot": "801"
     },
     {
       "rank": 4,
-      "title": "现代 Android 架构指南：不要再主动设计 Callback 接口",
-      "url": "https://juejin.cn/post/7701545991036862491",
-      "hot": "540"
+      "title": "Go-Gui:一套 无限接近 现代化UI的 GPU绘制界面组件框架",
+      "url": "https://juejin.cn/post/7701703182474248211",
+      "hot": "585"
     },
     {
       "rank": 5,
-      "title": "Go-Gui:一套 无限接近 现代化UI的 GPU绘制界面组件框架",
-      "url": "https://juejin.cn/post/7701703182474248211",
-      "hot": "522"
+      "title": "最近 Android 有什么更新：Android Dev Summit 2026 技术解读",
+      "url": "https://juejin.cn/post/7701991107366731785",
+      "hot": "405"
     },
     {
       "rank": 6,
-      "title": "最近 Android 有什么更新：Android Dev Summit 2026 技术解读",
-      "url": "https://juejin.cn/post/7701991107366731785",
+      "title": "腾讯 Buddy One 来了，办公全家桶一键打通WorkBuddy（附教程）",
+      "url": "https://juejin.cn/post/7701870817484210230",
       "hot": "360"
     },
     {
       "rank": 7,
-      "title": "腾讯 Buddy One 来了，办公全家桶一键打通WorkBuddy（附教程）",
-      "url": "https://juejin.cn/post/7701870817484210230",
-      "hot": "333"
+      "title": "Rspack 2.3 发布：联手 SWC 团队带来全新编译器",
+      "url": "https://juejin.cn/post/7701932169296003082",
+      "hot": "270"
     },
     {
       "rank": 8,
-      "title": "Rspack 2.3 发布：联手 SWC 团队带来全新编译器",
-      "url": "https://juejin.cn/post/7701932169296003082",
-      "hot": "252"
+      "title": "别学 subagent 了，很可能要凉了。",
+      "url": "https://juejin.cn/post/7702012705843232810",
+      "hot": "261"
     },
     {
       "rank": 9,
-      "title": "别学 subagent 了，很可能要凉了。",
-      "url": "https://juejin.cn/post/7702012705843232810",
-      "hot": "234"
+      "title": "下载神器！Motrix 停更三年后重写回归",
+      "url": "https://juejin.cn/post/7701925000958115883",
+      "hot": "261"
     },
     {
       "rank": 10,
-      "title": "下载神器！Motrix 停更三年后重写回归",
-      "url": "https://juejin.cn/post/7701925000958115883",
+      "title": "Epic 摊牌了：Claude 和 Codex 在写 UE6 的代码，十年没修掉的 bug 被 AI 扫光",
+      "url": "https://juejin.cn/post/7701637989949751315",
       "hot": "234"
     }
   ]

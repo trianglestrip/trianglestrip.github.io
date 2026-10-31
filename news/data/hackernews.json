@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-31T12:53:26+00:00",
+  "updated_at": "2026-10-31T17:24:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Serbia just elected the world's brainiest parliament",
-      "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
-      "hot": "305"
+      "title": "Malware uses LLMs to rank victims by how much they're worth",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "hot": "121"
     },
     {
       "rank": 2,
-      "title": "Molly(Signal fork) has not been updated since 3 months and is vulnerable",
+      "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
       "url": "https://piefed.world/post/1503394",
-      "hot": "64"
+      "hot": "198"
     },
     {
       "rank": 3,
-      "title": "Switch Lowering in GCC",
-      "url": "https://xoranth.net/gcc-switch/",
-      "hot": "95"
+      "title": "We Took over ChatGPT Accounts",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "hot": "218"
     },
     {
       "rank": 4,
-      "title": "We Took over ChatGPT Accounts",
-      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
-      "hot": "50"
+      "title": "A/SIDE – Private photo sharing and encrypted messages",
+      "url": "https://a-side.social/",
+      "hot": "11"
     },
     {
       "rank": 5,
-      "title": "Show HN: Marelleo, an open-source story box I built for my kids using ESP32",
-      "url": "https://zebra.rodeo/en/blog/marelleo/",
-      "hot": "95"
+      "title": "Casio Watches of the 1980s",
+      "url": "https://www.casio.com/us/watches/50th/Heritage/1980s/",
+      "hot": "69"
     },
     {
       "rank": 6,
-      "title": "Digital Minimalism",
-      "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
-      "hot": "97"
+      "title": "Simple circuits can create complex behaviors",
+      "url": "https://aatishb.com/myriad/lets-build-a-brain/",
+      "hot": "113"
     },
     {
       "rank": 7,
-      "title": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
-      "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
-      "hot": "72"
+      "title": "Jepsen: ParticleDB 1.1.4",
+      "url": "https://jepsen.io/analyses/particledb-1.1.4",
+      "hot": "24"
     },
     {
       "rank": 8,
-      "title": "My favourite PowerMac is a Nintendo Wii",
-      "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
-      "hot": "326"
+      "title": "Reading and writing are less symmetric than you (probably) think",
+      "url": "https://fgiesen.wordpress.com/2015/10/25/reading-and-writing-are-less-symmetric-than-you-probably-think/",
+      "hot": "32"
     },
     {
       "rank": 9,
-      "title": "The $6.3B Binance hack was pulled off in just 20 minutes",
-      "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
-      "hot": "488"
+      "title": "Switch Lowering in GCC",
+      "url": "https://xoranth.net/gcc-switch/",
+      "hot": "157"
     },
     {
       "rank": 10,
-      "title": "Cloudflare Turnstile solver library (no headless browser required)",
-      "url": "https://github.com/chris124567/cfsolve",
-      "hot": "242"
+      "title": "Serbia just elected the world's brainiest parliament",
+      "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+      "hot": "644"
     }
   ]
 }
