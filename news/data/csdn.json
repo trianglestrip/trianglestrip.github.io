@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-10-31T20:31:17+00:00",
+  "updated_at": "2026-10-31T23:34:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "飞牛NAS部署Hermes AI Agent：接入DeepSeek、微信与公网访问完整教程",
       "url": "https://blog.csdn.net/2401_87629362/article/details/169454834",
-      "hot": "29311"
+      "hot": "27273"
     },
     {
       "rank": 2,
       "title": "想捡闲鱼好价，却没空一直刷新？ai-goofish-monitor盯关键词和价格，AI自动做第一轮筛选",
       "url": "https://blog.csdn.net/2401_86326742/article/details/169455790",
-      "hot": "24546"
+      "hot": "21662"
     },
     {
       "rank": 3,
       "title": "MapReduce - Partitioner 与 ReduceTask 的数量匹配原则",
       "url": "https://blog.csdn.net/qq_41187124/article/details/157685443",
-      "hot": "18040"
+      "hot": "15567"
     },
     {
       "rank": 4,
       "title": "MySQL 8.0 迁移后 SQL 变慢：执行计划里 3 类被忽略的成本差异",
       "url": "https://blog.csdn.net/2501_92769340/article/details/167498359",
-      "hot": "7727"
+      "hot": "7173"
     },
     {
       "rank": 5,
       "title": "HarmonyOS 手机/平板远程控制 Windows 电脑实践指南",
       "url": "https://blog.csdn.net/beautifulmemory/article/details/169536214",
-      "hot": "7560"
+      "hot": "6963"
     },
     {
       "rank": 6,
       "title": "从 xParse 看企业 AI：业务知识如何进入工作流",
       "url": "https://blog.csdn.net/qq_46092061/article/details/169366959",
-      "hot": "7385"
+      "hot": "6423"
     },
     {
       "rank": 7,
       "title": "2026 后端 AI 工程化落地：Spring AI、MCP 与 Agent 内嵌分别解决什么问题",
       "url": "https://blog.csdn.net/m0_74899094/article/details/169549897",
-      "hot": "6865"
+      "hot": "5832"
     },
     {
       "rank": 8,
-      "title": "飞牛NAS部署Memos自建备忘录：Docker运行、持久化保存、图文记录和远程访问一起完成",
-      "url": "https://blog.csdn.net/qyj19920704/article/details/169464892",
-      "hot": "5228"
+      "title": "【计算机网络】TCP/IP 网络模型到底有哪几层？",
+      "url": "https://blog.csdn.net/lihaoweiwudi_/article/details/169460623",
+      "hot": "5637"
     },
     {
       "rank": 9,
-      "title": "VLA 机器人为什么会重复操作？拆解 MEM 与 IMPRINT 的记忆机制机器人抓空一次以后，为什么还会照着原来的方式再抓？",
-      "url": "https://blog.csdn.net/2501_91731683/article/details/169364686",
-      "hot": "4941"
+      "title": "飞牛NAS部署Memos自建备忘录：Docker运行、持久化保存、图文记录和远程访问一起完成",
+      "url": "https://blog.csdn.net/qyj19920704/article/details/169464892",
+      "hot": "5603"
     },
     {
       "rank": 10,
-      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
-      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
-      "hot": "4668"
+      "title": "VLA 机器人为什么会重复操作？拆解 MEM 与 IMPRINT 的记忆机制机器人抓空一次以后，为什么还会照着原来的方式再抓？",
+      "url": "https://blog.csdn.net/2501_91731683/article/details/169364686",
+      "hot": "4680"
     }
   ]
 }
