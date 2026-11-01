@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-01T09:33:58+00:00",
+  "updated_at": "2026-11-01T16:17:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "HackerTube: YouTube built from videos recommended by HN",
       "url": "https://karpathy.bearblog.dev/hacker-tube/",
-      "hot": "1270"
+      "hot": "1716"
     },
     {
       "rank": 2,
-      "title": "An Italian farmer found some unknown seeds in his attic and planted them",
-      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
-      "hot": "422"
+      "title": "Proving and improving the Platonic Representation Hypothesis with JEPAs",
+      "url": "https://arxiv.org/abs/2610.39302",
+      "hot": "46"
     },
     {
       "rank": 3,
-      "title": "The AI cost of JavaScript frameworks",
-      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
-      "hot": "55"
+      "title": "Novellas with Groff",
+      "url": "https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html",
+      "hot": "39"
     },
     {
       "rank": 4,
-      "title": "Running a bootstrapped SaaS for 20 years with my brother",
-      "url": "https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/",
-      "hot": "74"
+      "title": "Show HN: HackerBooks – HackerTube, but for books recommended on HN",
+      "url": "https://hackerbooks.org",
+      "hot": "8"
     },
     {
       "rank": 5,
-      "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
-      "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
-      "hot": "112"
+      "title": "Bidirectional Charging During Grid Outages",
+      "url": "https://www.jefftk.com/p/bidirectional-charging-during-grid-outages",
+      "hot": "15"
     },
     {
       "rank": 6,
-      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
-      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
-      "hot": "501"
+      "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
+      "url": "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/",
+      "hot": "99"
     },
     {
       "rank": 7,
-      "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-      "hot": "220"
+      "title": "Police chief unplugs Flock cameras after company ignores contract cancellation",
+      "url": "https://www.tomshardware.com/tech-industry/big-tech/police-chief-physically-unplugs-flock-cameras-after-the-company-ignores-contract-cancellation-city-takes-matters-into-its-own-hands-amid-privacy-controversies",
+      "hot": "75"
     },
     {
       "rank": 8,
-      "title": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM (2024)",
-      "url": "https://arxiv.org/abs/2409.02292",
-      "hot": "83"
+      "title": "An Italian farmer found some unknown seeds in his attic and planted them",
+      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+      "hot": "616"
     },
     {
       "rank": 9,
-      "title": "Pac-Man's Siren Call",
-      "url": "https://unsung.aresluna.org/pac-mans-siren-call/",
-      "hot": "18"
+      "title": "Show HN: I rebuilt my old canvas 3D library as a small WebGL 2 library – phoria2",
+      "url": "https://kevs3d.co.uk/phoria2/",
+      "hot": "25"
     },
     {
       "rank": 10,
-      "title": "Japan's trains are great. Why is booking one so hard?",
-      "url": "https://vinibrasil.com/japan-train/",
-      "hot": "5"
+      "title": "One-minute frequency disturbances from synchronization in power systems",
+      "url": "https://www.nature.com/articles/s41560-026-02144-0",
+      "hot": "41"
     }
   ]
 }

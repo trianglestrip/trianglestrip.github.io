@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-01T09:33:50+00:00",
+  "updated_at": "2026-11-01T16:17:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "飞牛NAS部署Hermes AI Agent：接入DeepSeek、微信与公网访问完整教程",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/169454834",
-      "hot": "29364"
+      "title": "飞牛NAS部署Memos自建备忘录：Docker运行、持久化保存、图文记录和远程访问一起完成",
+      "url": "https://blog.csdn.net/qyj19920704/article/details/169464892",
+      "hot": "7542"
     },
     {
       "rank": 2,
-      "title": "想捡闲鱼好价，却没空一直刷新？ai-goofish-monitor盯关键词和价格，AI自动做第一轮筛选",
-      "url": "https://blog.csdn.net/2401_86326742/article/details/169455790",
-      "hot": "25512"
+      "title": "MySQL 8.0 迁移后 SQL 变慢：执行计划里 3 类被忽略的成本差异",
+      "url": "https://blog.csdn.net/2501_92769340/article/details/167498359",
+      "hot": "6629"
     },
     {
       "rank": 3,
-      "title": "MapReduce - Partitioner 与 ReduceTask 的数量匹配原则",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157685443",
-      "hot": "12219"
+      "title": "Harness Engineering 元年：AI Agent 从「能跑」走向「可控交付」的工程门禁实践",
+      "url": "https://blog.csdn.net/m0_74899094/article/details/169730002",
+      "hot": "6309"
     },
     {
       "rank": 4,
-      "title": "【计算机网络】TCP/IP 网络模型到底有哪几层？",
-      "url": "https://blog.csdn.net/lihaoweiwudi_/article/details/169460623",
-      "hot": "6975"
+      "title": "HarmonyOS 手机/平板远程控制 Windows 电脑实践指南",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/169536214",
+      "hot": "6149"
     },
     {
       "rank": 5,
-      "title": "【计算机网络】第 14 篇：WebSocket 和 SSE 有什么区别？Java 后端如何实现实时消息推送？",
-      "url": "https://blog.csdn.net/2401_86617027/article/details/169459119",
-      "hot": "6313"
+      "title": "spring web mvc图书管理小案例",
+      "url": "https://blog.csdn.net/java_nnnn/article/details/169451267",
+      "hot": "4079"
     },
     {
       "rank": 6,
-      "title": "HarmonyOS 手机/平板远程控制 Windows 电脑实践指南",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/169536214",
-      "hot": "6099"
+      "title": "【自然语言处理与大模型】Agent沙箱技术",
+      "url": "https://blog.csdn.net/qq_39780701/article/details/169468205",
+      "hot": "3589"
     },
     {
       "rank": 7,
-      "title": "MySQL 8.0 迁移后 SQL 变慢：执行计划里 3 类被忽略的成本差异",
-      "url": "https://blog.csdn.net/2501_92769340/article/details/167498359",
-      "hot": "5993"
+      "title": "网络原理｜第五阶段：子网掩码、CIDR、网络地址与广播、主机容量及前缀匹配（自然单元 5.2）",
+      "url": "https://blog.csdn.net/2401_86112610/article/details/169390669",
+      "hot": "3574"
     },
     {
       "rank": 8,
-      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
-      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
-      "hot": "4648"
+      "title": "【RSI】RSIHub: A Composable Framework for Agent-Evolution Methods",
+      "url": "https://blog.csdn.net/qq_35812205/article/details/169649345",
+      "hot": "3537"
     },
     {
       "rank": 9,
-      "title": "2026 后端 AI 工程化：Spring AI、MCP 与 Agent 内嵌分别解决什么问题",
-      "url": "https://blog.csdn.net/m0_74899094/article/details/169651332",
-      "hot": "4543"
+      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
+      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
+      "hot": "3265"
     },
     {
       "rank": 10,
-      "title": "飞牛NAS部署Memos自建备忘录：Docker运行、持久化保存、图文记录和远程访问一起完成",
-      "url": "https://blog.csdn.net/qyj19920704/article/details/169464892",
-      "hot": "4043"
+      "title": "LangGraph Agent 任务规划中间件：TodoListMiddleware 原理解析",
+      "url": "https://blog.csdn.net/L698698S/article/details/169464240",
+      "hot": "3148"
     }
   ]
 }

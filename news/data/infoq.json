@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-01T09:34:04+00:00",
+  "updated_at": "2026-11-01T16:17:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "复用已有计算结果，动态表增量刷新如何实现性能与成本双优化 ｜ 技术实践",
+      "url": "https://www.infoq.cn/article/xCFDK8KZvvDY5V1R0fqM?utm_source=rss&utm_medium=article",
+      "hot": "Sun, 01 Nov 2026 19:12:53 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "从近两小时到 30 秒，SQL 查询性能优化有了新解法 ｜ 技术实践",
+      "url": "https://www.infoq.cn/article/adFNTX7Qiy7yYIGEmTlk?utm_source=rss&utm_medium=article",
+      "hot": "Sun, 01 Nov 2026 18:58:12 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "写好的 Skill 如何让整个团队复用？Snowflake CoCo 打通共享与治理流程 ｜ 技术实践",
+      "url": "https://www.infoq.cn/article/0ap8HB0DwK6Xa1lBSNVy?utm_source=rss&utm_medium=article",
+      "hot": "Sun, 01 Nov 2026 18:24:53 GMT"
+    },
+    {
+      "rank": 4,
       "title": "当 AI 能读懂二进制，闭源软件还剩多少护城河？",
       "url": "https://www.infoq.cn/article/8mCjWWFLdjDA2vb51QZs?utm_source=rss&utm_medium=article",
       "hot": "Sun, 01 Nov 2026 17:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "移动身份系统的密码学基础：ISO/IEC 18013-5 企业架构蓝图",
       "url": "https://www.infoq.cn/article/9aUBUMmhC4s5mEJgXHDL?utm_source=rss&utm_medium=article",
       "hot": "Sun, 01 Nov 2026 14:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "如果 AI 幻觉也有预算，超支之后该怎么办？",
       "url": "https://www.infoq.cn/article/z8vQa2zzGyLiTxIZ8PXH?utm_source=rss&utm_medium=article",
       "hot": "Sun, 01 Nov 2026 10:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "AI 编程导师挑战低端 Android 手机！不用服务器，Python 和 SQL 直接在浏览器里运行",
       "url": "https://www.infoq.cn/article/HHgKMMKa8BNZYQuMFSMS?utm_source=rss&utm_medium=article",
       "hot": "Sat, 31 Oct 2026 20:43:05 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "每天上千万次创建：Agent Sandbox 为什么会成为新算力形态？",
       "url": "https://www.infoq.cn/video/4qjamMQLVIoZvytUQwpI?utm_source=rss&utm_medium=article",
       "hot": "Sat, 31 Oct 2026 16:15:46 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "一边拥抱 JDK 27，一边保留 JDK 21：Helidon 开启双轨发布",
       "url": "https://www.infoq.cn/article/qRZCxTQbL1CwAUy28Zm8?utm_source=rss&utm_medium=article",
       "hot": "Sat, 31 Oct 2026 15:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "当AI从“会想”走向“会干”——腾讯云与英特尔共筑Agentic AI执行新底座",
       "url": "https://www.infoq.cn/article/acC46slIVKJg1O0ac8w4?utm_source=rss&utm_medium=article",
       "hot": "Sat, 31 Oct 2026 14:49:01 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Flink 负责时间，Iceberg 负责记忆：Pinterest 如何最终确认数据分区？",
-      "url": "https://www.infoq.cn/article/9OhgYkwYlPYgTbAvWlGz?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 31 Oct 2026 13:00:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "GitHub Actions Runner Controller 0.15.0 致力于实现大规模场景下的可靠性",
-      "url": "https://www.infoq.cn/article/tNLFh02J0koQswlY5Oqe?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 31 Oct 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "终于不是 AI 了：Lambda 直接运行 Express，API Gateway 还需要吗？",
-      "url": "https://www.infoq.cn/article/fcdAAd69U452t9b39rLU?utm_source=rss&utm_medium=article",
-      "hot": "Sat, 31 Oct 2026 08:00:00 GMT"
     }
   ]
 }
