@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-01T16:17:48+00:00",
+  "updated_at": "2026-11-01T23:49:55+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
       "url": "https://huggingface.co/papers/2609.18063",
-      "hot": "31"
+      "hot": "32"
     },
     {
       "rank": 6,
@@ -42,9 +42,9 @@
     },
     {
       "rank": 7,
-      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
-      "url": "https://huggingface.co/papers/2508.16279",
-      "hot": "71"
+      "title": "HairDeck: Animation-Ready Stylized Hair Cards from a Single Image",
+      "url": "https://huggingface.co/papers/2610.40599",
+      "hot": "23"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "HairDeck: Animation-Ready Stylized Hair Cards from a Single Image",
-      "url": "https://huggingface.co/papers/2610.40599",
-      "hot": "23"
+      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
+      "url": "https://huggingface.co/papers/2508.16279",
+      "hot": "71"
     },
     {
       "rank": 10,
-      "title": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
-      "url": "https://huggingface.co/papers/2610.38342",
-      "hot": "11"
+      "title": "Xiaomi-OCR-0 Technical Report",
+      "url": "https://huggingface.co/papers/2609.36136",
+      "hot": "12"
     }
   ]
 }

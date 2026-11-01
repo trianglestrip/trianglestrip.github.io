@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-01T20:33:57+00:00",
+  "updated_at": "2026-11-01T23:49:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 手机/平板远程控制 Windows 电脑实践指南",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/169536214",
-      "hot": "9407"
+      "title": "Harness Engineering 元年：AI Agent 从「能跑」走向「可控交付」的工程门禁实践",
+      "url": "https://blog.csdn.net/m0_74899094/article/details/169730002",
+      "hot": "10345"
     },
     {
       "rank": 2,
-      "title": "Harness Engineering 元年：AI Agent 从「能跑」走向「可控交付」的工程门禁实践",
-      "url": "https://blog.csdn.net/m0_74899094/article/details/169730002",
-      "hot": "9168"
+      "title": "HarmonyOS 手机/平板远程控制 Windows 电脑实践指南",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/169536214",
+      "hot": "10264"
     },
     {
       "rank": 3,
       "title": "MySQL 8.0 迁移后 SQL 变慢：执行计划里 3 类被忽略的成本差异",
       "url": "https://blog.csdn.net/2501_92769340/article/details/167498359",
-      "hot": "7936"
+      "hot": "7853"
     },
     {
       "rank": 4,
-      "title": "L3静态审计：Netflix/metaflow-ui（证据驱动只读源码评测）",
-      "url": "https://blog.csdn.net/TunerT_TQ/article/details/169452276",
-      "hot": "4776"
+      "title": "【自然语言处理与大模型】Agent沙箱技术",
+      "url": "https://blog.csdn.net/qq_39780701/article/details/169468205",
+      "hot": "4817"
     },
     {
       "rank": 5,
-      "title": "【RSI】RSIHub: A Composable Framework for Agent-Evolution Methods",
-      "url": "https://blog.csdn.net/qq_35812205/article/details/169649345",
-      "hot": "4280"
+      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
+      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
+      "hot": "4405"
     },
     {
       "rank": 6,
       "title": "网络原理｜第五阶段：子网掩码、CIDR、网络地址与广播、主机容量及前缀匹配（自然单元 5.2）",
       "url": "https://blog.csdn.net/2401_86112610/article/details/169390669",
-      "hot": "4110"
+      "hot": "4295"
     },
     {
       "rank": 7,
-      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
-      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
-      "hot": "3886"
+      "title": "【RSI】RSIHub: A Composable Framework for Agent-Evolution Methods",
+      "url": "https://blog.csdn.net/qq_35812205/article/details/169649345",
+      "hot": "4025"
     },
     {
       "rank": 8,
-      "title": "【PBAP】规范精讲[9]: 蓝牙PBAP的互联互通法则——GOEP互操作性要求深度解析",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/169170580",
-      "hot": "3721"
+      "title": "2026 后端 AI 工程化：Spring AI 管调用、MCP 管工具、Agent 内嵌管自治",
+      "url": "https://blog.csdn.net/2301_78967866/article/details/169744524",
+      "hot": "3392"
     },
     {
       "rank": 9,
-      "title": "【自然语言处理与大模型】Agent沙箱技术",
-      "url": "https://blog.csdn.net/qq_39780701/article/details/169468205",
-      "hot": "3556"
+      "title": "【Redis】Java & JavaSpring 客户端",
+      "url": "https://blog.csdn.net/2501_90752941/article/details/169652671",
+      "hot": "3025"
     },
     {
       "rank": 10,
-      "title": "DNA 序列数据分析与处理：逐步操作手册",
-      "url": "https://blog.csdn.net/m0_73879806/article/details/169347142",
-      "hot": "3084"
+      "title": "【元宝搜索开发者征文大赛】不荐货，只做尽调：用元宝搜索给二手数码做一张「买前决策卡」",
+      "url": "https://blog.csdn.net/2402_88139312/article/details/169654452",
+      "hot": "2770"
     }
   ]
 }

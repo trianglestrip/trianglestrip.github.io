@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-01T20:34:03+00:00",
+  "updated_at": "2026-11-01T23:49:39+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
       "url": "https://hackerbooks.org",
-      "hot": "534"
+      "hot": "799"
     },
     {
       "rank": 2,
-      "title": "HackerTube: YouTube built from videos recommended by HN",
-      "url": "https://karpathy.bearblog.dev/hacker-tube/",
-      "hot": "2021"
+      "title": "U.S. workers took home their smallest share of capital since at least 1947",
+      "url": "https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
+      "hot": "68"
     },
     {
       "rank": 3,
-      "title": "Mathematics has changed. Let's act like it",
-      "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
-      "hot": "89"
+      "title": "HackerTube: YouTube built from videos recommended by HN",
+      "url": "https://karpathy.bearblog.dev/hacker-tube/",
+      "hot": "2199"
     },
     {
       "rank": 4,
-      "title": "Copper – A minimal low-level programming language with OOP and generics",
-      "url": "https://tibleiz.net/copper/",
-      "hot": "85"
+      "title": "Nibnib: Image compression with extreme decompression speed",
+      "url": "https://github.com/raphlinus/nibnib",
+      "hot": "72"
     },
     {
       "rank": 5,
       "title": "Tips for more effective fuzz testing with AFL++",
       "url": "https://nullprogram.com/blog/2025/02/05/",
-      "hot": "12"
+      "hot": "61"
     },
     {
       "rank": 6,
-      "title": "It wasn't AI that flipped Proton's charge",
-      "url": "https://blog.raed.dev/posts/proton-loser-thinking/",
-      "hot": "72"
+      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "hot": "61"
     },
     {
       "rank": 7,
-      "title": "Proving and improving the Platonic Representation Hypothesis with JEPAs",
-      "url": "https://arxiv.org/abs/2610.39302",
-      "hot": "85"
+      "title": "Ask HN: Which TV do you recommend for privacy?",
+      "url": "https://news.ycombinator.com/item?id=50328896",
+      "hot": "80"
     },
     {
       "rank": 8,
-      "title": "Bidirectional charging during grid outages",
-      "url": "https://www.jefftk.com/p/bidirectional-charging-during-grid-outages",
-      "hot": "62"
+      "title": "Mathematics has changed. Let's act like it",
+      "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+      "hot": "198"
     },
     {
       "rank": 9,
-      "title": "An Italian farmer found some unknown seeds in his attic and planted them",
-      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
-      "hot": "707"
+      "title": "Copper – A minimal low-level programming language with OOP and generics",
+      "url": "https://tibleiz.net/copper/",
+      "hot": "117"
     },
     {
       "rank": 10,
-      "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
-      "url": "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/",
-      "hot": "280"
+      "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+      "url": "https://github.com/ivankovic/omnidiff",
+      "hot": "136"
     }
   ]
 }
