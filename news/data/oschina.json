@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-01T02:32:04+00:00",
+  "updated_at": "2026-11-01T09:34:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "2026 上海开源软件应用创新大赛获奖名单",
+      "url": "https://www.oschina.net/os2026/winners",
+      "hot": "Sun, 01 Nov 2026 16:43:11 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Jync v1.9.0 · Webhook 告警与 ETL 批次",
+      "url": "https://www.oschina.net/news/503327",
+      "hot": "Sun, 01 Nov 2026 00:53:21 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "酷瓜云课堂（网校企业版）v2.0.3 发布，PHP在线网校系统",
+      "url": "https://www.oschina.net/news/503326",
+      "hot": "Sat, 31 Oct 2026 16:50:03 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
+      "url": "https://www.oschina.net/news/503325",
+      "hot": "Sat, 31 Oct 2026 12:46:42 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "MiniToolDesk v1.0 发布：纯前端离线开发者工具箱，杜绝数据泄露与广告骚扰",
+      "url": "https://www.oschina.net/news/503324",
+      "hot": "Sat, 31 Oct 2026 11:14:25 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "DataY 轻量数据平台，v1.0.5 版本更新",
+      "url": "https://www.oschina.net/news/503323",
+      "hot": "Sat, 31 Oct 2026 10:40:41 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "Jync v1.8.2 · 日志 CDC 覆盖信创数据库，并发与审计更稳",
+      "url": "https://www.oschina.net/news/503322",
+      "hot": "Sat, 31 Oct 2026 07:32:43 +0800"
+    },
+    {
+      "rank": 8,
       "title": "聚力开源向实 赋能产业创新——2026 上海开源软件应用创新大赛总决赛暨创新增长大会圆满落幕",
       "url": "https://www.oschina.net/news/503320",
       "hot": "Fri, 30 Oct 2026 19:10:59 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "攻击者利用 PHP2Shell 漏洞控入侵美国政府服务器",
       "url": "https://www.oschina.net/news/503319/chained-php2shell-exploit-roots-25-servers",
       "hot": "Fri, 30 Oct 2026 19:02:56 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "DeepSeek 千亿融资名单曝光，国资占比从 2% 跳到 27%",
       "url": "https://www.oschina.net/news/503318",
       "hot": "Fri, 30 Oct 2026 18:56:51 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "这个 Agent 宿主把界面做成了纯文本，你想要什么形状自己让 Agent 改",
-      "url": "https://www.oschina.net/news/503317/herdr-dev-agent-ide-runtime",
-      "hot": "Fri, 30 Oct 2026 17:06:17 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "qData 数据中台开源版 v1.6.5 发布：Doris 数据源适配增强，新增演示数据清除脚本",
-      "url": "https://www.oschina.net/news/503316",
-      "hot": "Fri, 30 Oct 2026 17:01:15 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "数据迁移同步工具 CloudCanal v6.6.0.0 发布，Kudu 同步能力升级",
-      "url": "https://www.oschina.net/news/503315",
-      "hot": "Fri, 30 Oct 2026 16:49:52 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "向光而行 码向未来 | “1024程序员节”鸿蒙开发者沙龙天津站圆满落幕",
-      "url": "https://my.oschina.net/u/4806939/blog/19784478",
-      "hot": "Fri, 30 Oct 2026 16:05:07 +0800"
-    },
-    {
-      "rank": 8,
-      "title": ":fire::fire:开源接口平台 v6.3.1 发布，新增超时时间",
-      "url": "https://www.oschina.net/news/503313",
-      "hot": "Fri, 30 Oct 2026 15:28:28 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "【AI 智能运维平台】本周更新：全新上线 RUM 模块，从真实用户视角了解网站访问与使用体验",
-      "url": "https://www.oschina.net/news/503312",
-      "hot": "Fri, 30 Oct 2026 15:07:47 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "万亿参数模型 Mistral Large 4 开放权重，用更少的 token 打平了最高分",
-      "url": "https://www.oschina.net/news/503310/mistral-large-4-oss",
-      "hot": "Fri, 30 Oct 2026 11:30:21 +0800"
     }
   ]
 }
