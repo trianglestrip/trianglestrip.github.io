@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-10-31T23:34:11+00:00",
+  "updated_at": "2026-11-01T02:32:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "HackerTube: YouTube built from videos recommended by HN",
       "url": "https://karpathy.bearblog.dev/hacker-tube/",
-      "hot": "486"
+      "hot": "771"
     },
     {
       "rank": 2,
-      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
-      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
-      "hot": "261"
+      "title": "An Italian farmer found some unknown seeds in his attic and planted them",
+      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+      "hot": "175"
     },
     {
       "rank": 3,
-      "title": "An Italian Farmer Found Some Unknown Seeds in His Attic and Planted Them",
-      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
-      "hot": "27"
+      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "hot": "362"
     },
     {
       "rank": 4,
-      "title": "It's the Memory Latency, Stupid",
-      "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid/",
-      "hot": "96"
+      "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "hot": "92"
     },
     {
       "rank": 5,
-      "title": "With 86% of the words, you might understand only 38% of an anime's lines",
-      "url": "https://learnfromx.com/research/anime-word-coverage-vs-lines-understood",
-      "hot": "42"
+      "title": "Altoids Project",
+      "url": "https://uvdn7.github.io/altoids-project/",
+      "hot": "50"
     },
     {
       "rank": 6,
-      "title": "When Electric Cars Were for Women",
+      "title": "When electric cars were for women",
       "url": "https://spectrum.ieee.org/early-electric-vehicles",
-      "hot": "5"
+      "hot": "41"
     },
     {
       "rank": 7,
-      "title": "The Duty of a Scholar",
-      "url": "https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html",
-      "hot": "75"
+      "title": "It's the memory latency, stupid",
+      "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid/",
+      "hot": "134"
     },
     {
       "rank": 8,
       "title": "First response from the Project Suncatcher prototype satellite",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
-      "hot": "5"
+      "hot": "37"
     },
     {
       "rank": 9,
-      "title": "Surviving \"The Graduate\"",
-      "url": "https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate",
-      "hot": "37"
+      "title": "Zinc creep in cable spelter sockets brought down the Arecibo telescope in 2020",
+      "url": "https://maketecheasier.com/arecibo-zinc-creep-collapse/",
+      "hot": "36"
     },
     {
       "rank": 10,
       "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
       "url": "https://piefed.world/post/1503394",
-      "hot": "291"
+      "hot": "309"
     }
   ]
 }

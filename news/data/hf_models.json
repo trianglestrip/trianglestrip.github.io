@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-10-31T20:31:40+00:00",
+  "updated_at": "2026-11-01T02:32:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-      "hot": "856"
+      "hot": "886"
     },
     {
       "rank": 2,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "hot": "4096"
+      "hot": "4111"
     },
     {
       "rank": 3,
       "title": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-      "hot": "624"
+      "hot": "636"
     },
     {
       "rank": 4,
       "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "hot": "538"
+      "hot": "545"
     },
     {
       "rank": 5,
       "title": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-      "hot": "1399"
+      "hot": "1407"
     },
     {
       "rank": 6,
       "title": "baidu/Unlimited-OCR-2",
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
-      "hot": "472"
+      "hot": "474"
     },
     {
       "rank": 7,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "10070"
+      "hot": "10100"
     },
     {
       "rank": 8,
       "title": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-      "hot": "384"
+      "hot": "396"
     },
     {
       "rank": 9,
-      "title": "RecursiveSI/flint",
-      "url": "https://huggingface.co/RecursiveSI/flint",
-      "hot": "1274"
+      "title": "XHToken/Spark-X2.6-4B",
+      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+      "hot": "938"
     },
     {
       "rank": 10,
-      "title": "XHToken/Spark-X2.6-4B",
-      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-      "hot": "937"
+      "title": "RecursiveSI/flint",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "hot": "1276"
     }
   ]
 }
