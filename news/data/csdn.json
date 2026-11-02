@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-02T02:47:21+00:00",
+  "updated_at": "2026-11-02T10:00:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 手机/平板远程控制 Windows 电脑实践指南",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/169536214",
-      "hot": "9616"
+      "title": "Harness Engineering 元年：AI Agent 从「能跑」走向「可控交付」的工程门禁实践",
+      "url": "https://blog.csdn.net/m0_74899094/article/details/169730002",
+      "hot": "19338"
     },
     {
       "rank": 2,
-      "title": "Harness Engineering 元年：AI Agent 从「能跑」走向「可控交付」的工程门禁实践",
-      "url": "https://blog.csdn.net/m0_74899094/article/details/169730002",
-      "hot": "7634"
+      "title": "【鸿蒙PC GUI适配】chiaki-ng 移植的工程实践：Qt6/QML 与 ArkUI 的混合窗口架构",
+      "url": "https://blog.csdn.net/qq_38628970/article/details/169815552",
+      "hot": "16271"
     },
     {
       "rank": 3,
-      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
-      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
-      "hot": "4055"
+      "title": "《C++ 项目：手写大模型接入 SDK》DeepSeek接口设计（上）：初始化和全量响应",
+      "url": "https://blog.csdn.net/2501_91275995/article/details/169170258",
+      "hot": "13981"
     },
     {
       "rank": 4,
-      "title": "网络原理｜第五阶段：子网掩码、CIDR、网络地址与广播、主机容量及前缀匹配（自然单元 5.2）",
-      "url": "https://blog.csdn.net/2401_86112610/article/details/169390669",
-      "hot": "3829"
+      "title": "Spring Boot 4.1 + Spring AI 2.0：我如何用 Java 微服务把 RAG、知识图谱和 MCP 协议串成一个 Agent 平台",
+      "url": "https://blog.csdn.net/qq_37980551/article/details/169652600",
+      "hot": "12821"
     },
     {
       "rank": 5,
-      "title": "【RSI】RSIHub: A Composable Framework for Agent-Evolution Methods",
-      "url": "https://blog.csdn.net/qq_35812205/article/details/169649345",
-      "hot": "3564"
+      "title": "不止是群聊Bot：定制属于你自己的Deepseek小鲸鱼",
+      "url": "https://blog.csdn.net/qq_63241496/article/details/169745027",
+      "hot": "9862"
     },
     {
       "rank": 6,
-      "title": "2026 后端 AI 工程化：Spring AI 管调用、MCP 管工具、Agent 内嵌管自治",
-      "url": "https://blog.csdn.net/2301_78967866/article/details/169744524",
-      "hot": "3505"
+      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
+      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
+      "hot": "9568"
     },
     {
       "rank": 7,
-      "title": "【Redis】Java & JavaSpring 客户端",
-      "url": "https://blog.csdn.net/2501_90752941/article/details/169652671",
-      "hot": "3121"
+      "title": "Spring AI 2.0 ChatModel 全解析：注入、提示词、多模态与工具调用",
+      "url": "https://blog.csdn.net/yjc_1111/article/details/169558800",
+      "hot": "8964"
     },
     {
       "rank": 8,
-      "title": "《C++ 项目：手写大模型接入 SDK》DeepSeek接口设计（上）：初始化和全量响应",
-      "url": "https://blog.csdn.net/2501_91275995/article/details/169170258",
-      "hot": "2979"
+      "title": "一台虚拟机跑通 Hadoop → HBase → Kafka → DataX → Flink CDC",
+      "url": "https://blog.csdn.net/2501_93419165/article/details/169562590",
+      "hot": "8952"
     },
     {
       "rank": 9,
-      "title": "【元宝搜索开发者征文大赛】不荐货，只做尽调：用元宝搜索给二手数码做一张「买前决策卡」",
-      "url": "https://blog.csdn.net/2402_88139312/article/details/169654452",
-      "hot": "2650"
+      "title": "2026 后端 AI 工程化：Spring AI 管调用、MCP 管工具、Agent 内嵌管自治",
+      "url": "https://blog.csdn.net/2301_78967866/article/details/169744524",
+      "hot": "8755"
     },
     {
       "rank": 10,
-      "title": "Service Mesh 可观测性：分布式追踪、指标与日志的统一方案",
-      "url": "https://blog.csdn.net/vipxieliang/article/details/169533940",
-      "hot": "2552"
+      "title": "告别记IP和端口：群晖NAS用Dashy聚合Jellyfin、Calibre-Web等服务入口",
+      "url": "https://blog.csdn.net/weixin_52908342/article/details/169553920",
+      "hot": "8579"
     }
   ]
 }

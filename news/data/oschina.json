@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-02T02:47:30+00:00",
+  "updated_at": "2026-11-02T10:00:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Jync v1.10.0 · 性能曲线与 SAP HANA",
+      "url": "https://www.oschina.net/news/503345",
+      "hot": "Mon, 02 Nov 2026 15:56:02 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "开源数据库管理工具 CloudDM 发布新版本，支持团队多级审批工单",
+      "url": "https://www.oschina.net/news/503343",
+      "hot": "Mon, 02 Nov 2026 13:37:56 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Go 语言重构 Java 项目会提升了多少",
+      "url": "https://www.oschina.net/news/503342",
+      "hot": "Mon, 02 Nov 2026 13:32:35 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "Excelize 开源基础库发布 2.11.1 版本更新",
+      "url": "https://www.oschina.net/news/503340",
+      "hot": "Mon, 02 Nov 2026 11:46:31 +0800"
+    },
+    {
+      "rank": 5,
+      "title": ":fire::fire: ApiGo 开源接口平台 Go 版本发布",
+      "url": "https://www.oschina.net/news/503339",
+      "hot": "Mon, 02 Nov 2026 10:58:36 +0800"
+    },
+    {
+      "rank": 6,
       "title": "DeepSeek 团队把 Agent 设计成“操作系统”：多任务的上限不该是人的注意力",
       "url": "https://www.oschina.net/news/503338/deepseek-harness-super-agent",
       "hot": "Mon, 02 Nov 2026 10:39:53 +0800"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Postgres 19 迟到了，原因是 LLM 找出了太多老 bug",
       "url": "https://www.oschina.net/news/503336/postgres-19-is-late-and-its-ais-fault",
       "hot": "Mon, 02 Nov 2026 10:28:14 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "C++ web框架 Paozhu 发布1.17.4版",
       "url": "https://www.oschina.net/news/503335",
       "hot": "Mon, 02 Nov 2026 09:28:49 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "novel-plus v6.3.2 发布，原创文学 CMS 系统",
       "url": "https://www.oschina.net/news/503333",
       "hot": "Mon, 02 Nov 2026 09:03:38 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "JimuBI v2.5.6 发布，修复 7 项安全漏洞",
       "url": "https://www.oschina.net/news/503332",
       "hot": "Sun, 01 Nov 2026 23:08:10 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "XXL-AI v1.4.0 发布｜AI 应用开发平台",
-      "url": "https://www.oschina.net/news/503331",
-      "hot": "Sun, 01 Nov 2026 22:30:58 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "花了三年搭了一套 iPaaS 低代码平台，今天决定把 Demo 开源",
-      "url": "https://www.oschina.net/news/503330",
-      "hot": "Sun, 01 Nov 2026 22:00:35 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "拾趣 (Magpie) v0.1.19 发布，AI 更智能，内容识别更精准",
-      "url": "https://www.oschina.net/news/503329",
-      "hot": "Sun, 01 Nov 2026 19:17:10 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "2026 上海开源软件应用创新大赛获奖名单",
-      "url": "https://www.oschina.net/os2026/winners",
-      "hot": "Sun, 01 Nov 2026 16:43:11 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "Jync v1.9.0 · Webhook 告警与 ETL 批次",
-      "url": "https://www.oschina.net/news/503327",
-      "hot": "Sun, 01 Nov 2026 00:53:21 +0800"
     }
   ]
 }

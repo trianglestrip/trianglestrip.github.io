@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-02T02:47:26+00:00",
+  "updated_at": "2026-11-02T10:00:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS语音识别实战：把说的话实时转换成文字#1024·向光而行·码向未来#",
+      "url": "https://ost.51cto.com/posts/62289",
+      "hot": "大家好，今天介绍一下HarmonyOS的语音识别能力。在便签、搜索和聊天等功能中，用户可以直接说出要输入的内容。CoreSpeechKit提供端侧语音识..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 7拖拽排序实战：长按调整宫格顺序#1024·向光而行·码向未来#",
+      "url": "https://ost.51cto.com/posts/62288",
+      "hot": "大家好，今天介绍一下HarmonyOS7中Grid的拖拽排序。应用中的常用功能通常以宫格排列，每个人常用的功能不同。如果允许用户长按拖动，就可以..."
+    },
+    {
+      "rank": 3,
+      "title": "从写代码到驾驭 AI，Harness 工程师完整成长路线图",
+      "url": "https://www.51cto.com/article/860002.html",
+      "hot": "本文讲解 Harness 是什么、三项基本功怎么练、市场上的 Harness 工程师需要哪些技能、薪酬区间和成长路径，以及有开发经验的人怎么转行进来。"
+    },
+    {
+      "rank": 4,
       "title": "ICLR 2026 Oral | MemAgent：通过多轮对话强化学习记忆智能体重塑长上下文大语言模型",
       "url": "https://www.51cto.com/article/860001.html",
       "hot": "清华大学智能产业研究院与字节跳动 Seed 联合团队提出 MemAgent，相关论文发表于 ICLR 2026。它让语言模型顺序阅读文档块，每次把有用内容写入容量受限的文本记忆，最后仅根据问题和记忆回答"
     },
     {
-      "rank": 2,
-      "title": "一镜到底转场动效完全实战指南",
-      "url": "https://ost.51cto.com/posts/62105",
-      "hot": "一镜到底转场动效完全实战指南前言：为什么你的应用需要&ldquo;一镜到底&rdquo;？在移动应用设计中，页面转场动画不仅仅是装饰，它是连接用户操作与界..."
+      "rank": 5,
+      "title": "DeepSeek 再次出手：非对称激活与极致缓存技术",
+      "url": "https://www.51cto.com/article/859994.html",
+      "hot": "对于软件工程师，值得关注的变化很清楚：优化系统时，不能只盯着模型聪不聪明。竞争已经深入系统架构。非对称参数激活、长时间缓存复用，以及整合 Markdown 输出的搜索 API，都可能帮助生产系统进一步提升速度、降低成本。"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "从零到一构建可验证的语义层：EvoOntology 销售订单实践",
       "url": "https://www.51cto.com/article/859993.html",
       "hot": "本文沿着实际构建记录，拆解 EvoOntology 从数据探索到 ontology_v0 发布，再到问题解析、SQL 执行与轨迹回放的完整过程。"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "混合架构用线性注意力还是滑窗注意力？复旦创智OpenMOSS团队：我全都要",
       "url": "https://www.51cto.com/article/859930.html",
       "hot": "复旦创智邱锡鹏团队的最新工作混合架构的长文力学 Mechanics of Long-Context Hybrid Models 给出了一个有趣的答案：我全都要。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "告别VAE和ViT! 英伟达开源PixelUMM, 在像素空间统一视频图像理解与生成",
       "url": "https://www.51cto.com/article/859929.html",
       "hot": "英伟达与滑铁卢大学提出 PixelUMM，一个直接在像素空间中统一图像与视频理解和生成的无编码器模型。"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "新出的 Dsh-superagent 是什么，新 AI 研发范式？",
       "url": "https://www.51cto.com/article/859987.html",
       "hot": "假设 Agent 正在修一个接口问题。它已经读了十几个文件，改完代码，开始跑测试。这时群里又来了一个文档修改需求。如果所有事情共用一个同步会话，新需求可能得等。即使交替处理，接口报错、文档要求、测试输出，也会不断混进同一份上下文。"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Claude Code悄悄更新：不让Opus 5.5复刻游戏",
       "url": "https://www.51cto.com/article/859928.html",
       "hot": "Anthropic 的 AI 编程工具 Claude Code 在 10 月 27 日前后被服务器端推送了一条新规则。"
-    },
-    {
-      "rank": 8,
-      "title": "当Agent遇上「猪队友」：谷歌开源CLASHarness，实测前沿大模型如何应对多Agent冲突场景",
-      "url": "https://www.51cto.com/article/859927.html",
-      "hot": "现在的 AI Agent 已经越来越多地被组队部署到写代码、云运维、财务对账和企业审批等真实工作流中。"
-    },
-    {
-      "rank": 9,
-      "title": "驳AI泡沫破灭论！Anthropic成「垃圾股」，OpenAI融资爆降都是胡扯",
-      "url": "https://www.51cto.com/article/859925.html",
-      "hot": "据 FT 报道，OpenAI 把这一轮融资的目标从 300 亿美元下调到 200 亿美元左右，估值从原先开价的 1.4 万亿美元降到 1.25 万亿美元。"
-    },
-    {
-      "rank": 10,
-      "title": "奥特曼暴论被骂翻！普通人电脑装内存太浪费，不如统一交给AI",
-      "url": "https://www.51cto.com/article/859924.html",
-      "hot": "让奥特曼说，就该把全球稀缺的内存资源，全部塞进他的云端数据中心，由他来统一分配。"
     }
   ]
 }
