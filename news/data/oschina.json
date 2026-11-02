@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-01T23:49:43+00:00",
+  "updated_at": "2026-11-02T02:47:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "DeepSeek 团队把 Agent 设计成“操作系统”：多任务的上限不该是人的注意力",
+      "url": "https://www.oschina.net/news/503338/deepseek-harness-super-agent",
+      "hot": "Mon, 02 Nov 2026 10:39:53 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Postgres 19 迟到了，原因是 LLM 找出了太多老 bug",
+      "url": "https://www.oschina.net/news/503336/postgres-19-is-late-and-its-ais-fault",
+      "hot": "Mon, 02 Nov 2026 10:28:14 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "C++ web框架 Paozhu 发布1.17.4版",
+      "url": "https://www.oschina.net/news/503335",
+      "hot": "Mon, 02 Nov 2026 09:28:49 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "novel-plus v6.3.2 发布，原创文学 CMS 系统",
+      "url": "https://www.oschina.net/news/503333",
+      "hot": "Mon, 02 Nov 2026 09:03:38 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "JimuBI v2.5.6 发布，修复 7 项安全漏洞",
+      "url": "https://www.oschina.net/news/503332",
+      "hot": "Sun, 01 Nov 2026 23:08:10 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "XXL-AI v1.4.0 发布｜AI 应用开发平台",
+      "url": "https://www.oschina.net/news/503331",
+      "hot": "Sun, 01 Nov 2026 22:30:58 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "花了三年搭了一套 iPaaS 低代码平台，今天决定把 Demo 开源",
+      "url": "https://www.oschina.net/news/503330",
+      "hot": "Sun, 01 Nov 2026 22:00:35 +0800"
+    },
+    {
+      "rank": 8,
       "title": "拾趣 (Magpie) v0.1.19 发布，AI 更智能，内容识别更精准",
       "url": "https://www.oschina.net/news/503329",
       "hot": "Sun, 01 Nov 2026 19:17:10 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "2026 上海开源软件应用创新大赛获奖名单",
       "url": "https://www.oschina.net/os2026/winners",
       "hot": "Sun, 01 Nov 2026 16:43:11 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "Jync v1.9.0 · Webhook 告警与 ETL 批次",
       "url": "https://www.oschina.net/news/503327",
       "hot": "Sun, 01 Nov 2026 00:53:21 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "酷瓜云课堂（网校企业版）v2.0.3 发布，PHP在线网校系统",
-      "url": "https://www.oschina.net/news/503326",
-      "hot": "Sat, 31 Oct 2026 16:50:03 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
-      "url": "https://www.oschina.net/news/503325",
-      "hot": "Sat, 31 Oct 2026 12:46:42 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "MiniToolDesk v1.0 发布：纯前端离线开发者工具箱，杜绝数据泄露与广告骚扰",
-      "url": "https://www.oschina.net/news/503324",
-      "hot": "Sat, 31 Oct 2026 11:14:25 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "DataY 轻量数据平台，v1.0.5 版本更新",
-      "url": "https://www.oschina.net/news/503323",
-      "hot": "Sat, 31 Oct 2026 10:40:41 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Jync v1.8.2 · 日志 CDC 覆盖信创数据库，并发与审计更稳",
-      "url": "https://www.oschina.net/news/503322",
-      "hot": "Sat, 31 Oct 2026 07:32:43 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "聚力开源向实 赋能产业创新——2026 上海开源软件应用创新大赛总决赛暨创新增长大会圆满落幕",
-      "url": "https://www.oschina.net/news/503320",
-      "hot": "Fri, 30 Oct 2026 19:10:59 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "攻击者利用 PHP2Shell 漏洞控入侵美国政府服务器",
-      "url": "https://www.oschina.net/news/503319/chained-php2shell-exploit-roots-25-servers",
-      "hot": "Fri, 30 Oct 2026 19:02:56 +0800"
     }
   ]
 }
