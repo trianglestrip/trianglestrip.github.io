@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-02T10:00:28+00:00",
+  "updated_at": "2026-11-02T20:00:46+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,33 +18,33 @@
     },
     {
       "rank": 3,
-      "title": "醉梦",
-      "url": "https://movie.douban.com/subject/37042229/",
-      "hot": "评分 7.5"
-    },
-    {
-      "rank": 4,
       "title": "嫁金钗",
       "url": "https://movie.douban.com/subject/37191789/",
       "hot": "评分 7.0"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "生化危机：爆发夜",
       "url": "https://movie.douban.com/subject/37068446/",
       "hot": "评分 7.3"
     },
     {
-      "rank": 6,
-      "title": "生日快乐",
-      "url": "https://movie.douban.com/subject/37322586/",
-      "hot": "评分 8.9"
+      "rank": 5,
+      "title": "醉梦",
+      "url": "https://movie.douban.com/subject/37042229/",
+      "hot": "评分 7.5"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "蒸蒸日上",
       "url": "https://movie.douban.com/subject/37296949/",
       "hot": "评分 7.8"
+    },
+    {
+      "rank": 7,
+      "title": "生日快乐",
+      "url": "https://movie.douban.com/subject/37322586/",
+      "hot": "评分 8.9"
     },
     {
       "rank": 8,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "兰香如故",
-      "url": "https://movie.douban.com/subject/36449295/",
-      "hot": "评分 7.5"
+      "title": "黑球",
+      "url": "https://movie.douban.com/subject/37215318/",
+      "hot": "评分 8.6"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-02T10:00:47+00:00",
+  "updated_at": "2026-11-02T20:01:01+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Harness Engineering 元年：AI Agent 从「能跑」走向「可控交付」的工程门禁实践",
-      "url": "https://blog.csdn.net/m0_74899094/article/details/169730002",
-      "hot": "19338"
+      "title": "【AI智能体】Codex 接入外部平台API项目实战操作详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/167812878",
+      "hot": "19302"
     },
     {
       "rank": 2,
-      "title": "【鸿蒙PC GUI适配】chiaki-ng 移植的工程实践：Qt6/QML 与 ArkUI 的混合窗口架构",
-      "url": "https://blog.csdn.net/qq_38628970/article/details/169815552",
-      "hot": "16271"
+      "title": "MongoDB迁移之后，Spring Data 和 Hibernate 各自接哪类请求",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/169746900",
+      "hot": "16574"
     },
     {
       "rank": 3,
-      "title": "《C++ 项目：手写大模型接入 SDK》DeepSeek接口设计（上）：初始化和全量响应",
-      "url": "https://blog.csdn.net/2501_91275995/article/details/169170258",
-      "hot": "13981"
+      "title": "天数智芯智铠 MR-V100XA 本地部署实战：性能实测与业务场景验证",
+      "url": "https://blog.csdn.net/iyangdan/article/details/169845847",
+      "hot": "11257"
     },
     {
       "rank": 4,
-      "title": "Spring Boot 4.1 + Spring AI 2.0：我如何用 Java 微服务把 RAG、知识图谱和 MCP 协议串成一个 Agent 平台",
-      "url": "https://blog.csdn.net/qq_37980551/article/details/169652600",
-      "hot": "12821"
+      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
+      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
+      "hot": "10022"
     },
     {
       "rank": 5,
-      "title": "不止是群聊Bot：定制属于你自己的Deepseek小鲸鱼",
-      "url": "https://blog.csdn.net/qq_63241496/article/details/169745027",
-      "hot": "9862"
+      "title": "【Linux网络】UDP 聊天室怎么实现？从在线用户管理、消息广播到双线程收发与线程池",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/169269741",
+      "hot": "9322"
     },
     {
       "rank": 6,
-      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
-      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
-      "hot": "9568"
+      "title": "Harness Engineering 元年：AI Agent 从「能跑」走向「可控交付」的工程门禁实践",
+      "url": "https://blog.csdn.net/m0_74899094/article/details/169730002",
+      "hot": "8252"
     },
     {
       "rank": 7,
-      "title": "Spring AI 2.0 ChatModel 全解析：注入、提示词、多模态与工具调用",
-      "url": "https://blog.csdn.net/yjc_1111/article/details/169558800",
-      "hot": "8964"
+      "title": "Go 逃逸分析与内存优化：从读懂 -gcflags=“-m“ 到降低 GC 压力",
+      "url": "https://blog.csdn.net/vipxieliang/article/details/169644004",
+      "hot": "7339"
     },
     {
       "rank": 8,
-      "title": "一台虚拟机跑通 Hadoop → HBase → Kafka → DataX → Flink CDC",
-      "url": "https://blog.csdn.net/2501_93419165/article/details/169562590",
-      "hot": "8952"
+      "title": "远程软件一崩就失联？我用几十块的玩客云做了套硬件级远控",
+      "url": "https://blog.csdn.net/aiclaws/article/details/169838485",
+      "hot": "7245"
     },
     {
       "rank": 9,
-      "title": "2026 后端 AI 工程化：Spring AI 管调用、MCP 管工具、Agent 内嵌管自治",
-      "url": "https://blog.csdn.net/2301_78967866/article/details/169744524",
-      "hot": "8755"
+      "title": "MyBatis进阶",
+      "url": "https://blog.csdn.net/2401_89019969/article/details/156398626",
+      "hot": "7034"
     },
     {
       "rank": 10,
-      "title": "告别记IP和端口：群晖NAS用Dashy聚合Jellyfin、Calibre-Web等服务入口",
-      "url": "https://blog.csdn.net/weixin_52908342/article/details/169553920",
-      "hot": "8579"
+      "title": "C++ 异步编程全景：一次讲透 std::future 家族",
+      "url": "https://blog.csdn.net/2601_94861874/article/details/169744941",
+      "hot": "6884"
     }
   ]
 }

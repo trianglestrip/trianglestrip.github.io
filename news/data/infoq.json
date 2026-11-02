@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-02T10:01:00+00:00",
+  "updated_at": "2026-11-02T20:01:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "从英伟达到 Pika，硅谷巨头为何“反向借力”这个国产模型？",
+      "url": "https://www.infoq.cn/article/h1310kHD9CWD1mO8aTAc?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 02 Nov 2026 22:48:56 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "微软推出 dotnetup：多版本管理更省心，安装方式却让开发者皱眉",
+      "url": "https://www.infoq.cn/article/7lNPPkEUVjtMYYvmXaA6?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 02 Nov 2026 21:46:33 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Cilium 1.20 扩展了 Gateway API 并为 Kubernetes 开放了 eBPF 数据路径",
+      "url": "https://www.infoq.cn/article/E3wARaqEN7UZx8wM9TNg?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 02 Nov 2026 20:00:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "AI+艺术：想让AI演得像“老戏骨”，多写提示词不如先演一遍 ｜ 奇点川越创始人 程佳伟导演分享",
+      "url": "https://www.infoq.cn/article/pXJoz3XPv5D224a9Fro1?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 02 Nov 2026 20:00:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "谷歌 SynthID Detector 简化了水印检测流程，并将支持范围扩展至其他 AI 提供商",
+      "url": "https://www.infoq.cn/article/JoVxAdq1OjtIDkRBjWOW?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 02 Nov 2026 18:52:12 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "AI+科研：Agent加速科研，论文写得快了，成果更难评了 ｜ 西湖大学工学院博导 王欢分享",
+      "url": "https://www.infoq.cn/article/MbwRCg4cKC2f3bwv0Cpb?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 02 Nov 2026 18:33:55 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "AI+办公：Agent都有“工位”了，云电脑既让它接手业务、也管住权限 ｜ 阿里云智能集团研发副总裁 张献涛分享",
+      "url": "https://www.infoq.cn/article/Vryq1f3C0f5uZHOlmIp4?utm_source=rss&utm_medium=article",
+      "hot": "Mon, 02 Nov 2026 18:08:42 GMT"
+    },
+    {
+      "rank": 8,
       "title": "InfoQ AI 侦察团现场手记：工具之外，企业 AI 落地还要跨过哪些关？",
       "url": "https://www.infoq.cn/article/ORJZPCwM2XXNcdRYf8de?utm_source=rss&utm_medium=article",
       "hot": "Mon, 02 Nov 2026 17:39:48 GMT"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "AI+FDE：合格的FDE，要亲手跟老师傅做业务，再把经验解法做成Skill ｜深空之序联合创始人兼COO 芦宇峰分享",
       "url": "https://www.infoq.cn/article/FckEhkVfCLoXg0jvaKBa?utm_source=rss&utm_medium=article",
       "hot": "Mon, 02 Nov 2026 17:01:29 GMT"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "别再迷信 Agent 的自主性了",
       "url": "https://www.infoq.cn/article/UMvAAwoFByxvWLLVVJYY?utm_source=rss&utm_medium=article",
       "hot": "Mon, 02 Nov 2026 16:50:26 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "66 岁 Yann LeCun 发新论文挑战 Scaling Law：1.09 亿参数胜过 720 亿，模型越大不一定越懂世界",
-      "url": "https://www.infoq.cn/article/pWwkDpoFHIsfw9aCRkij?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 15:17:48 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "TornadoVM 7 支持 Java 应用程序运行原生 GPU 工作负载",
-      "url": "https://www.infoq.cn/article/X8cwbyO4O3tS1jTTdtBq?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 11:11:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "CI 出错后，谁来把关？Buildkite 的智能体新思路",
-      "url": "https://www.infoq.cn/article/WmlATgJudjwPKqHf4QgX?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 09:20:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "ChatGPT Pro 额度翻倍：是让步，不是福利？",
-      "url": "https://www.infoq.cn/article/WpTNht7guarWEyejJFV6?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 09:16:03 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "百度搜索 AI API 千次仅需 4.9 元，低于 DeepSeek",
-      "url": "https://www.infoq.cn/article/HJgTwfsPAugNBJ2jUefj?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 09:12:15 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "复用已有计算结果，动态表增量刷新如何实现性能与成本双优化 ｜ 技术实践",
-      "url": "https://www.infoq.cn/article/xCFDK8KZvvDY5V1R0fqM?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 01 Nov 2026 19:12:53 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "从近两小时到 30 秒，SQL 查询性能优化有了新解法 ｜ 技术实践",
-      "url": "https://www.infoq.cn/article/adFNTX7Qiy7yYIGEmTlk?utm_source=rss&utm_medium=article",
-      "hot": "Sun, 01 Nov 2026 18:58:12 GMT"
     }
   ]
 }
