@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-03T17:12:24+00:00",
+  "updated_at": "2026-11-03T22:17:44+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Jailbreaking my car's navigation system just so I can change the time",
-      "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
-      "hot": "176"
+      "title": "Safari introduces Adaptive Dark Mode in 27.3",
+      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+      "hot": "81"
     },
     {
       "rank": 2,
-      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-      "hot": "174"
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "hot": "38"
     },
     {
       "rank": 3,
-      "title": "Mac at Any Scale",
-      "url": "https://namespace.so/blog/mac-at-any-scale",
-      "hot": "82"
+      "title": "Jailbreaking my car's navigation system just so I can change the time",
+      "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
+      "hot": "526"
     },
     {
       "rank": 4,
-      "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
-      "url": "https://honnibal.dev/blog/astra-read-write-misleading",
-      "hot": "665"
+      "title": "Stringman, an $800 open-source room scale gripper robot",
+      "url": "https://neufangled.com/",
+      "hot": "247"
     },
     {
       "rank": 5,
-      "title": "Schools that block Google’s A.I. will lose student access to its search engine",
-      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
-      "hot": "125"
+      "title": "The Internals of PostgreSQL",
+      "url": "https://www.interdb.jp/pg/index.html",
+      "hot": "8"
     },
     {
       "rank": 6,
-      "title": "Show HN: HackerChurn – which SaaS tools HN wants to cancel",
-      "url": "https://hissingkitty.com/hacker-churn",
-      "hot": "28"
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "hot": "398"
     },
     {
       "rank": 7,
-      "title": "Writing seen in PHerc. 306B, for the first time in 2000 years",
-      "url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
-      "hot": "58"
+      "title": "Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels",
+      "url": "https://hackertv.org",
+      "hot": "67"
     },
     {
       "rank": 8,
-      "title": "Tiny Basic for Arduino",
-      "url": "https://dilshan.github.io/tiny-basic/",
-      "hot": "23"
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "hot": "858"
     },
     {
       "rank": 9,
-      "title": "Charles Tandy, the mastermind behind Radio Shack",
-      "url": "https://dfarq.homeip.net/charles-tandy-the-mastermind-behind-radio-shack/",
-      "hot": "77"
+      "title": "macOS 27 does not support CoreStorage volumes",
+      "url": "https://wadetregaskis.com/macos-27-golden-gate-does-not-actually-support-corestorage-or-hfs-volumes/",
+      "hot": "48"
     },
     {
       "rank": 10,
-      "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
-      "url": "https://news.ycombinator.com/item?id=50352757",
-      "hot": "101"
+      "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
+      "url": "https://github.com/finic-ai/kairos",
+      "hot": "20"
     }
   ]
 }
