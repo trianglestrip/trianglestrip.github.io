@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-03T09:26:46+00:00",
+  "updated_at": "2026-11-03T17:12:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 接入外部平台API项目实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/167812878",
-      "hot": "26704"
+      "hot": "26340"
     },
     {
       "rank": 2,
-      "title": "天数智芯智铠 MR-V100XA 本地部署实战：性能实测与业务场景验证",
-      "url": "https://blog.csdn.net/iyangdan/article/details/169845847",
-      "hot": "20899"
+      "title": "AI 编程智能体 22：解析器赋能与实战落地全指南",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/169845616",
+      "hot": "17783"
     },
     {
       "rank": 3,
-      "title": "美团正式发布 LongCat-2.5：面向智能体任务的原生多模态模型",
-      "url": "https://blog.csdn.net/MeituanTech/article/details/169843876",
-      "hot": "17033"
+      "title": "天数智芯智铠 MR-V100XA 本地部署实战：性能实测与业务场景验证",
+      "url": "https://blog.csdn.net/iyangdan/article/details/169845847",
+      "hot": "17747"
     },
     {
       "rank": 4,
-      "title": "Mac mini不只当小主机：接上OpenClaw和飞书，手机发消息就能让AI干活",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/169838478",
-      "hot": "16077"
+      "title": "企业级Agent服务平台选型指南：从需求匹配到场景落地，文档解析工具怎么选？",
+      "url": "https://blog.csdn.net/INTSIG/article/details/169443525",
+      "hot": "16571"
     },
     {
       "rank": 5,
-      "title": "MongoDB迁移之后，Spring Data 和 Hibernate 各自接哪类请求",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/169746900",
-      "hot": "15799"
+      "title": "Mac mini不只当小主机：接上OpenClaw和飞书，手机发消息就能让AI干活",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/169838478",
+      "hot": "13041"
     },
     {
       "rank": 6,
-      "title": "企业级Agent服务平台选型指南：从需求匹配到场景落地，文档解析工具怎么选？",
-      "url": "https://blog.csdn.net/INTSIG/article/details/169443525",
-      "hot": "14092"
+      "title": "MapReduce - 小文件优化：CombineFileInputFormat 的使用",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157685653",
+      "hot": "12756"
     },
     {
       "rank": 7,
-      "title": "AI 编程智能体 20：技术栈选型与架构落地全攻略",
-      "url": "https://blog.csdn.net/2503_92624912/article/details/169650331",
-      "hot": "11780"
+      "title": "MongoDB迁移之后，Spring Data 和 Hibernate 各自接哪类请求",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/169746900",
+      "hot": "12353"
     },
     {
       "rank": 8,
-      "title": "【Linux网络】UDP 聊天室怎么实现？从在线用户管理、消息广播到双线程收发与线程池",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/169269741",
-      "hot": "10650"
+      "title": "鸿蒙平板能当电脑第二块屏幕吗？ToDesk、向日葵镜像/副屏实测",
+      "url": "https://blog.csdn.net/2501_91062530/article/details/169929548",
+      "hot": "12091"
     },
     {
       "rank": 9,
-      "title": "企业 AI 读文档，难在哪里？从一张跨页表格说起",
-      "url": "https://blog.csdn.net/zhangay1998/article/details/169168764",
-      "hot": "9846"
+      "title": "美团正式发布 LongCat-2.5：面向智能体任务的原生多模态模型",
+      "url": "https://blog.csdn.net/MeituanTech/article/details/169843876",
+      "hot": "11828"
     },
     {
       "rank": 10,
-      "title": "MapReduce - 小文件优化：CombineFileInputFormat 的使用",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157685653",
-      "hot": "9670"
+      "title": "【Linux网络】UDP 聊天室怎么实现？从在线用户管理、消息广播到双线程收发与线程池",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/169269741",
+      "hot": "10917"
     }
   ]
 }
