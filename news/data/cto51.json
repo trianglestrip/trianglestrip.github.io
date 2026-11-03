@@ -1,38 +1,38 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-03T02:05:20+00:00",
+  "updated_at": "2026-11-03T09:27:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS HMRouter 完全指南：从基础跳转到高级拦截的实战手册",
+      "url": "https://ost.51cto.com/posts/62408",
+      "hot": "HarmonyOSHMRouter完全指南：从基础跳转到高级拦截的实战手册手把手教你用华为官方路由框架打造优雅的页面导航系统一、为什么要用HMRouter..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 自定义字体完全指南：从注册到系统跟随的全方位实践",
+      "url": "https://ost.51cto.com/posts/62407",
+      "hot": "HarmonyOS自定义字体完全指南：从注册到系统跟随的全方位实践一、字体为什么重要？在移动应用开发中，字体往往是被低估的视觉元素。很多开..."
+    },
+    {
+      "rank": 3,
       "title": "NeurIPS 2026｜MemSkill让智能体学习并进化记忆技能",
       "url": "https://www.51cto.com/article/860099.html",
       "hot": "来自南洋理工大学等机构的研究团队在 NeurIPS 2026 上发表了 MemSkill。它将记忆操作表示为可学习、可复用、可进化的 Memory Skills，通过任务反馈优化技能选择，并根据失败案例完善和扩展技能库，使记忆系统能够随交互经验的积累持续进化。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "PhysLDM | 物理仿真的Latent Diffusion范式，革命传统物理仿真",
       "url": "https://www.51cto.com/article/860098.html",
       "hot": "近日，南洋理工大学 MMLab 与上海人工智能实验室的研究者提出了 PhysLDM，一个面向物理仿真的 latent diffusion 范式。据团队所知，这是首个面向体网格可变形动力学的高保真时空自编码器与隐空间扩散范式。"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "团队级编程 Agent 新范式！拆解 DeepSeek Super-agent 双层路由架构与 GitHub/飞书接入实践",
       "url": "https://www.51cto.com/article/860097.html",
       "hot": "DeepSeek 最近发布的 Super-agent 设计和原型插件是一个能够真正放进开发团队、随时在线、主动响应的编程 Agent。"
-    },
-    {
-      "rank": 4,
-      "title": "别让零向量搅乱搜索结果——HarmonyOS 7 文搜图余弦检索拆解",
-      "url": "https://ost.51cto.com/posts/62366",
-      "hot": "图1｜文搜图相似度计算与零向量防线相册里有一百来张照片，做一个&ldquo;输入描述找图片&rdquo;的示例并不难：文本编码成向量，照片也有向量，算一遍..."
-    },
-    {
-      "rank": 5,
-      "title": "【HarmonyOS 7 视觉 AI 开放能力深度实战】 08 视觉 AI 统一封装与应用接入实战",
-      "url": "https://ost.51cto.com/posts/62362",
-      "hot": "前言一张图片进入应用后，用户可能想提取其中的文字，也可能想找出物体位置、分离主体或者放大图片。如果每增加一种功能就复制一套选图、状..."
     },
     {
       "rank": 6,

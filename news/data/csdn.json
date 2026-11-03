@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-03T02:05:11+00:00",
+  "updated_at": "2026-11-03T09:26:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex 接入外部平台API项目实战操作详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/167812878",
-      "hot": "22332"
+      "hot": "26704"
     },
     {
       "rank": 2,
-      "title": "美团正式发布 LongCat-2.5：面向智能体任务的原生多模态模型",
-      "url": "https://blog.csdn.net/MeituanTech/article/details/169843876",
-      "hot": "19319"
+      "title": "天数智芯智铠 MR-V100XA 本地部署实战：性能实测与业务场景验证",
+      "url": "https://blog.csdn.net/iyangdan/article/details/169845847",
+      "hot": "20899"
     },
     {
       "rank": 3,
-      "title": "MongoDB迁移之后，Spring Data 和 Hibernate 各自接哪类请求",
-      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/169746900",
-      "hot": "16257"
+      "title": "美团正式发布 LongCat-2.5：面向智能体任务的原生多模态模型",
+      "url": "https://blog.csdn.net/MeituanTech/article/details/169843876",
+      "hot": "17033"
     },
     {
       "rank": 4,
-      "title": "天数智芯智铠 MR-V100XA 本地部署实战：性能实测与业务场景验证",
-      "url": "https://blog.csdn.net/iyangdan/article/details/169845847",
-      "hot": "15958"
+      "title": "Mac mini不只当小主机：接上OpenClaw和飞书，手机发消息就能让AI干活",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/169838478",
+      "hot": "16077"
     },
     {
       "rank": 5,
-      "title": "Mac mini不只当小主机：接上OpenClaw和飞书，手机发消息就能让AI干活",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/169838478",
-      "hot": "11781"
+      "title": "MongoDB迁移之后，Spring Data 和 Hibernate 各自接哪类请求",
+      "url": "https://blog.csdn.net/Mrxiao_bo/article/details/169746900",
+      "hot": "15799"
     },
     {
       "rank": 6,
-      "title": "【Linux网络】UDP 聊天室怎么实现？从在线用户管理、消息广播到双线程收发与线程池",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/169269741",
-      "hot": "11351"
+      "title": "企业级Agent服务平台选型指南：从需求匹配到场景落地，文档解析工具怎么选？",
+      "url": "https://blog.csdn.net/INTSIG/article/details/169443525",
+      "hot": "14092"
     },
     {
       "rank": 7,
-      "title": "使用 PHP 构建命令行工具：从 $argv 到 Symfony Console 与 Cron 集成",
-      "url": "https://blog.csdn.net/vipxieliang/article/details/169643827",
-      "hot": "10182"
+      "title": "AI 编程智能体 20：技术栈选型与架构落地全攻略",
+      "url": "https://blog.csdn.net/2503_92624912/article/details/169650331",
+      "hot": "11780"
     },
     {
       "rank": 8,
-      "title": "AI 应用后端工程（01）：明明开启了流式输出，为什么用户还是要等？",
-      "url": "https://blog.csdn.net/2501_94225300/article/details/169646706",
-      "hot": "9450"
+      "title": "【Linux网络】UDP 聊天室怎么实现？从在线用户管理、消息广播到双线程收发与线程池",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/169269741",
+      "hot": "10650"
     },
     {
       "rank": 9,
-      "title": "还在手写Nginx配置？我用Nginx Proxy Manager把域名、HTTPS和反代全放进网页里(1)",
-      "url": "https://blog.csdn.net/2302_79376097/article/details/169835031",
-      "hot": "8413"
+      "title": "企业 AI 读文档，难在哪里？从一张跨页表格说起",
+      "url": "https://blog.csdn.net/zhangay1998/article/details/169168764",
+      "hot": "9846"
     },
     {
       "rank": 10,
-      "title": "AI Agent 工程化开发实战（五）：持久化与断点恢复——Checkpointer 与 Store",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/169068678",
-      "hot": "6961"
+      "title": "MapReduce - 小文件优化：CombineFileInputFormat 的使用",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157685653",
+      "hot": "9670"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-03T02:05:28+00:00",
+  "updated_at": "2026-11-03T09:27:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "从提效到扩能：AI 驱动小团队的能力突破与组织演进｜AICon北京",
-      "url": "https://www.infoq.cn/article/DliBOqGrOaxaXvqlBjGR?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 03 Nov 2026 10:00:00 GMT"
+      "title": "AI 改变的是数据接口，而不是查询引擎",
+      "url": "https://www.infoq.cn/article/fvNWWYEmke5xJVsHEIIi?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 17:07:00 GMT"
     },
     {
       "rank": 2,
-      "title": "eMudhra 中间证书颁发机构（CA）安全漏洞",
-      "url": "https://www.infoq.cn/article/uIxYaSdYatN2Z7gPOaTU?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 03 Nov 2026 09:00:54 GMT"
+      "title": "前迪士尼 AI 高管出任 CPO，Utopai Studios 技术布局再提速",
+      "url": "https://www.infoq.cn/article/z1ZeGD2FDqi6xLvSJjSl?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 16:11:29 GMT"
     },
     {
       "rank": 3,
-      "title": "从英伟达到 Pika，硅谷巨头为何“反向借力”这个国产模型？",
-      "url": "https://www.infoq.cn/article/h1310kHD9CWD1mO8aTAc?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 22:48:56 GMT"
+      "title": "构建面向 Agentic 推理的下一代 LLM 推理引擎",
+      "url": "https://www.infoq.cn/article/YwAayF1ylWb7oN4P0lyC?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 15:40:16 GMT"
     },
     {
       "rank": 4,
-      "title": "微软推出 dotnetup：多版本管理更省心，安装方式却让开发者皱眉",
-      "url": "https://www.infoq.cn/article/7lNPPkEUVjtMYYvmXaA6?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 21:46:33 GMT"
+      "title": "AI 复刻 Adobe 系列软件开发者坦言：项目远未准备就绪",
+      "url": "https://www.infoq.cn/article/a2X4KVOXOt6lACRv8IWh?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 15:12:00 GMT"
     },
     {
       "rank": 5,
-      "title": "Cilium 1.20 扩展了 Gateway API 并为 Kubernetes 开放了 eBPF 数据路径",
-      "url": "https://www.infoq.cn/article/E3wARaqEN7UZx8wM9TNg?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 20:00:00 GMT"
+      "title": "从模型调用到任务交付：MaaS 如何走进 Agent 生产",
+      "url": "https://www.infoq.cn/article/zZutPTX8bsr6NWQYNC3A?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 14:40:18 GMT"
     },
     {
       "rank": 6,
-      "title": "AI+艺术：想让AI演得像“老戏骨”，多写提示词不如先演一遍 ｜ 奇点川越创始人 程佳伟导演分享",
-      "url": "https://www.infoq.cn/article/pXJoz3XPv5D224a9Fro1?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 20:00:00 GMT"
+      "title": "Netflix 通过工作负载认证将 AWS IAM 与内部身份系统连接了起来",
+      "url": "https://www.infoq.cn/article/PJdTzbUNPBhvKEd6QuxZ?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 13:04:00 GMT"
     },
     {
       "rank": 7,
-      "title": "谷歌 SynthID Detector 简化了水印检测流程，并将支持范围扩展至其他 AI 提供商",
-      "url": "https://www.infoq.cn/article/JoVxAdq1OjtIDkRBjWOW?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 18:52:12 GMT"
+      "title": "微软向6万员工发出自愿离职邀请：覆盖全球超四分之一员工，副总裁也在列",
+      "url": "https://www.infoq.cn/article/UNTqkzASI7dJuq65kSNZ?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 13:03:43 GMT"
     },
     {
       "rank": 8,
-      "title": "AI+科研：Agent加速科研，论文写得快了，成果更难评了 ｜ 西湖大学工学院博导 王欢分享",
-      "url": "https://www.infoq.cn/article/MbwRCg4cKC2f3bwv0Cpb?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 18:33:55 GMT"
+      "title": "Anthropic团队零Rust经验起步，靠Claude完成核心API跨语言重构：CPU省40%，延迟降20%",
+      "url": "https://www.infoq.cn/article/IMWM7ZXDi99sMiUVZBIF?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 12:51:41 GMT"
     },
     {
       "rank": 9,
-      "title": "AI+办公：Agent都有“工位”了，云电脑既让它接手业务、也管住权限 ｜ 阿里云智能集团研发副总裁 张献涛分享",
-      "url": "https://www.infoq.cn/article/Vryq1f3C0f5uZHOlmIp4?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 18:08:42 GMT"
+      "title": "“别再像 2024 年那样用 Claude 了！”Claude Cowork 工程负责人：有些 Skill 删掉反而更好",
+      "url": "https://www.infoq.cn/article/xaWSKT3MlZjbuJw16Vem?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 12:49:51 GMT"
     },
     {
       "rank": 10,
-      "title": "InfoQ AI 侦察团现场手记：工具之外，企业 AI 落地还要跨过哪些关？",
-      "url": "https://www.infoq.cn/article/ORJZPCwM2XXNcdRYf8de?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 02 Nov 2026 17:39:48 GMT"
+      "title": "致敬每一份专业与热爱！QCon 上海 2026 优秀出品人与明星讲师揭晓",
+      "url": "https://www.infoq.cn/article/NIXfxPlElNVwNtbYZPz2?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 03 Nov 2026 11:27:48 GMT"
     }
   ]
 }
