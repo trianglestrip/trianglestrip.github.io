@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-02T20:01:11+00:00",
+  "updated_at": "2026-11-03T02:05:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Cordonix 0.0.5 发布：新增原生手机工具与 Windows 进程查询",
+      "url": "https://www.oschina.net/news/503354",
+      "hot": "Mon, 02 Nov 2026 20:47:49 +0800"
+    },
+    {
+      "rank": 2,
       "title": "小猫开源-在线考试系统发布 v6.5.0 版本",
       "url": "https://www.oschina.net/news/503353",
       "hot": "Mon, 02 Nov 2026 19:52:27 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "UJCMS 13.2.1 发布，多语言网站 AI 自动翻译",
       "url": "https://www.oschina.net/news/503350",
       "hot": "Mon, 02 Nov 2026 18:51:17 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Jync v1.10.0 · 性能曲线与 SAP HANA",
       "url": "https://www.oschina.net/news/503345",
       "hot": "Mon, 02 Nov 2026 15:56:02 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "开源数据库管理工具 CloudDM 发布新版本，支持团队多级审批工单",
       "url": "https://www.oschina.net/news/503343",
       "hot": "Mon, 02 Nov 2026 13:37:56 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Go 语言重构 Java 项目会提升了多少",
       "url": "https://www.oschina.net/news/503342",
       "hot": "Mon, 02 Nov 2026 13:32:35 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Excelize 开源基础库发布 2.11.1 版本更新",
       "url": "https://www.oschina.net/news/503340",
       "hot": "Mon, 02 Nov 2026 11:46:31 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": ":fire::fire: ApiGo 开源接口平台 Go 版本发布",
       "url": "https://www.oschina.net/news/503339",
       "hot": "Mon, 02 Nov 2026 10:58:36 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "DeepSeek 团队把 Agent 设计成“操作系统”：多任务的上限不该是人的注意力",
       "url": "https://www.oschina.net/news/503338/deepseek-harness-super-agent",
       "hot": "Mon, 02 Nov 2026 10:39:53 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Postgres 19 迟到了，原因是 LLM 找出了太多老 bug",
       "url": "https://www.oschina.net/news/503336/postgres-19-is-late-and-its-ais-fault",
       "hot": "Mon, 02 Nov 2026 10:28:14 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "C++ web框架 Paozhu 发布1.17.4版",
-      "url": "https://www.oschina.net/news/503335",
-      "hot": "Mon, 02 Nov 2026 09:28:49 +0800"
     }
   ]
 }

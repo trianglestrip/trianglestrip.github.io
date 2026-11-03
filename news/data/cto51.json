@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-02T20:01:06+00:00",
+  "updated_at": "2026-11-03T02:05:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Agent的能力还不足维护代码库！HumanLayer创始人质疑“无人值守”的软件工厂",
-      "url": "https://www.51cto.com/article/860045.html",
-      "hot": "一个小工具用完就丢，让Agent把代码写出来、跑过测试，通常已经很划算。维护三年的订单系统不一样：今天为了过测试放进去的一段重复逻辑，可能会在下一次改规则时连本带利找回来。"
+      "title": "NeurIPS 2026｜MemSkill让智能体学习并进化记忆技能",
+      "url": "https://www.51cto.com/article/860099.html",
+      "hot": "来自南洋理工大学等机构的研究团队在 NeurIPS 2026 上发表了 MemSkill。它将记忆操作表示为可学习、可复用、可进化的 Memory Skills，通过任务反馈优化技能选择，并根据失败案例完善和扩展技能库，使记忆系统能够随交互经验的积累持续进化。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS语音识别实战：把说的话实时转换成文字#1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/62289",
-      "hot": "大家好，今天介绍一下HarmonyOS的语音识别能力。在便签、搜索和聊天等功能中，用户可以直接说出要输入的内容。CoreSpeechKit提供端侧语音识..."
+      "title": "PhysLDM | 物理仿真的Latent Diffusion范式，革命传统物理仿真",
+      "url": "https://www.51cto.com/article/860098.html",
+      "hot": "近日，南洋理工大学 MMLab 与上海人工智能实验室的研究者提出了 PhysLDM，一个面向物理仿真的 latent diffusion 范式。据团队所知，这是首个面向体网格可变形动力学的高保真时空自编码器与隐空间扩散范式。"
     },
     {
       "rank": 3,
-      "title": "HarmonyOS 7拖拽排序实战：长按调整宫格顺序#1024·向光而行·码向未来#",
-      "url": "https://ost.51cto.com/posts/62288",
-      "hot": "大家好，今天介绍一下HarmonyOS7中Grid的拖拽排序。应用中的常用功能通常以宫格排列，每个人常用的功能不同。如果允许用户长按拖动，就可以..."
+      "title": "团队级编程 Agent 新范式！拆解 DeepSeek Super-agent 双层路由架构与 GitHub/飞书接入实践",
+      "url": "https://www.51cto.com/article/860097.html",
+      "hot": "DeepSeek 最近发布的 Super-agent 设计和原型插件是一个能够真正放进开发团队、随时在线、主动响应的编程 Agent。"
     },
     {
       "rank": 4,
-      "title": "从写代码到驾驭 AI，Harness 工程师完整成长路线图",
-      "url": "https://www.51cto.com/article/860002.html",
-      "hot": "本文讲解 Harness 是什么、三项基本功怎么练、市场上的 Harness 工程师需要哪些技能、薪酬区间和成长路径，以及有开发经验的人怎么转行进来。"
+      "title": "别让零向量搅乱搜索结果——HarmonyOS 7 文搜图余弦检索拆解",
+      "url": "https://ost.51cto.com/posts/62366",
+      "hot": "图1｜文搜图相似度计算与零向量防线相册里有一百来张照片，做一个&ldquo;输入描述找图片&rdquo;的示例并不难：文本编码成向量，照片也有向量，算一遍..."
     },
     {
       "rank": 5,
-      "title": "ICLR 2026 Oral | MemAgent：通过多轮对话强化学习记忆智能体重塑长上下文大语言模型",
-      "url": "https://www.51cto.com/article/860001.html",
-      "hot": "清华大学智能产业研究院与字节跳动 Seed 联合团队提出 MemAgent，相关论文发表于 ICLR 2026。它让语言模型顺序阅读文档块，每次把有用内容写入容量受限的文本记忆，最后仅根据问题和记忆回答"
+      "title": "【HarmonyOS 7 视觉 AI 开放能力深度实战】 08 视觉 AI 统一封装与应用接入实战",
+      "url": "https://ost.51cto.com/posts/62362",
+      "hot": "前言一张图片进入应用后，用户可能想提取其中的文字，也可能想找出物体位置、分离主体或者放大图片。如果每增加一种功能就复制一套选图、状..."
     },
     {
       "rank": 6,
-      "title": "DeepSeek 再次出手：非对称激活与极致缓存技术",
-      "url": "https://www.51cto.com/article/859994.html",
-      "hot": "对于软件工程师，值得关注的变化很清楚：优化系统时，不能只盯着模型聪不聪明。竞争已经深入系统架构。非对称参数激活、长时间缓存复用，以及整合 Markdown 输出的搜索 API，都可能帮助生产系统进一步提升速度、降低成本。"
+      "title": "MIT让GPT-6 Astra直接修改Qwen权重！数学成绩飙升",
+      "url": "https://www.51cto.com/article/860094.html",
+      "hot": "团队让 GPT-6 Astra 直接检查 Qwen3.5-0.8B 的内部权重，找到了导致模型反复陷入推理循环的关键问题。"
     },
     {
       "rank": 7,
-      "title": "从零到一构建可验证的语义层：EvoOntology 销售订单实践",
-      "url": "https://www.51cto.com/article/859993.html",
-      "hot": "本文沿着实际构建记录，拆解 EvoOntology 从数据探索到 ontology_v0 发布，再到问题解析、SQL 执行与轨迹回放的完整过程。"
+      "title": "DeepSeek官方智能体教程来了：一句话造插件，七套提示词免费公开",
+      "url": "https://www.51cto.com/article/860093.html",
+      "hot": "什么装这插件安那插件，DeepSeek这回直接教你「手搓插件」了！！！就在刚刚，DeepSeek Harness官方突然甩出一份「创造模式」玩法指南，主打一个——只需要输入一句自然语言，AI就能自己写代码、制作插件，甚至把新功能直接装进自己的工作界面。"
     },
     {
       "rank": 8,
-      "title": "混合架构用线性注意力还是滑窗注意力？复旦创智OpenMOSS团队：我全都要",
-      "url": "https://www.51cto.com/article/859930.html",
-      "hot": "复旦创智邱锡鹏团队的最新工作混合架构的长文力学 Mechanics of Long-Context Hybrid Models 给出了一个有趣的答案：我全都要。"
+      "title": "不用换大模型！谷歌 Harness² 双层递归，让 Agent 实现自我迭代升级",
+      "url": "https://www.51cto.com/article/860092.html",
+      "hot": "本文讲清 Harness² 解决什么问题、机制怎么跑通、实测数据、社区落地与未来边界。"
     },
     {
       "rank": 9,
-      "title": "告别VAE和ViT! 英伟达开源PixelUMM, 在像素空间统一视频图像理解与生成",
-      "url": "https://www.51cto.com/article/859929.html",
-      "hot": "英伟达与滑铁卢大学提出 PixelUMM，一个直接在像素空间中统一图像与视频理解和生成的无编码器模型。"
+      "title": "Anthropic突然更新！AI自进化已突破红线，人类根本来不及反应",
+      "url": "https://www.51cto.com/article/860091.html",
+      "hot": "「AI造AI」的加速循环早就已经转了起来，而且它的进化速度，已经快到连人类科学家都来不及实时监测！"
     },
     {
       "rank": 10,
-      "title": "新出的 Dsh-superagent 是什么，新 AI 研发范式？",
-      "url": "https://www.51cto.com/article/859987.html",
-      "hot": "假设 Agent 正在修一个接口问题。它已经读了十几个文件，改完代码，开始跑测试。这时群里又来了一个文档修改需求。如果所有事情共用一个同步会话，新需求可能得等。即使交替处理，接口报错、文档要求、测试输出，也会不断混进同一份上下文。"
+      "title": "从“看懂视频”到“与世界交互”：一篇综述串起视频 AI 的四条主线",
+      "url": "https://www.51cto.com/article/859957.html",
+      "hot": "视频理解、视频生成、理解生成统一、视频世界模型，为什么值得放到同一张地图上？这篇综述从“视频与世界的关系”出发，用 Reading、Writing、Sharing、Interacting 四种操作，重新组织视频基础模型的技术脉络。"
     }
   ]
 }
