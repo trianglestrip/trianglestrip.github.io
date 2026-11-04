@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-04T09:32:51+00:00",
+  "updated_at": "2026-11-04T17:26:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "当 Agent 成为数据库新用户，腾讯云如何解决“未知”的难题？",
+      "url": "https://www.infoq.cn/article/TeOb9MgqfeLOoNdxtMH2?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 04 Nov 2026 22:00:23 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Token 暴涨 5000 倍之后，企业 Agent 落地还卡在哪里？",
+      "url": "https://www.infoq.cn/article/VUmIUJ0ST9xIlPoViXmz?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 04 Nov 2026 21:56:58 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "谷歌 Data Agent Kit 正式发布：安全防护分为 Skill 与 IAM",
+      "url": "https://www.infoq.cn/article/UtKS9EofSoyd2P7Otx7e?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 04 Nov 2026 20:01:56 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Anthropic 为重要开源项目新增可选安全扫描服务",
+      "url": "https://www.infoq.cn/article/hdmi6FdjpYSEvuMhPOAa?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 04 Nov 2026 19:53:34 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "Vercel Labs 开源 fx：一款专为嵌入式应用设计的 Zig 编程代理",
+      "url": "https://www.infoq.cn/article/cNO8PCwQoZMRHhIyVDrB?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 04 Nov 2026 18:00:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "Harbor 新增 Docker Sandboxes 支持，可在隔离的 MicroVM 中运行可重现的 AI 代理评估",
       "url": "https://www.infoq.cn/article/pgmES06L2MAH2TCSMhJ9?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 17:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "研究发现：AI 生成代码受下游环节瓶颈制约，无法提升整体生产力",
       "url": "https://www.infoq.cn/article/c3vTLNrRwfCzw8SAmz90?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 16:20:50 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "刚刚，被李飞飞团队写进代码库的具身底座，现身乌镇峰会“上岗抓药”",
       "url": "https://www.infoq.cn/article/L5Q1XJbFSubVNB9DGJsl?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 15:51:17 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "月烧 1.5 万亿 token，年烧 1.32 亿美元？Cursor 工程师的账单，凡人只能仰望",
       "url": "https://www.infoq.cn/article/q9iebpvFozfy4bgCYUyE?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 15:48:18 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "同一个模型从 30 分到 95 分：拉开差距的不是模型，是Harness",
       "url": "https://www.infoq.cn/article/C1C1DThg8z1Dy0rZAmLB?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 15:40:50 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "Linux内核也能造了？Codex 11天写出13.9万行新内核，Rocky Linux 10跑起来了",
-      "url": "https://www.infoq.cn/article/OiyNEtFwV05opvsLTcvK?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 04 Nov 2026 15:30:50 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "员工都会用一点 AI，团队下一步怎么走？",
-      "url": "https://www.infoq.cn/article/6oGyozHwd1WjYyEGjpbk?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 04 Nov 2026 15:17:15 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "如何把目标定得更大胆：写给 AI 使用者的实践指南",
-      "url": "https://www.infoq.cn/article/F1ms7x7KI1p7UfocCywh?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 04 Nov 2026 15:15:13 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Uber 总裁跳槽 OpenAI！曾掌舵谷歌、Snap 公关，Brockman 亲自发文欢迎",
-      "url": "https://www.infoq.cn/article/mcHCe07TQ08mEZtqcWi1?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 04 Nov 2026 14:02:24 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "大模型会击穿具身智能吗？稚晖君带领团队深刻复盘并解答",
-      "url": "https://www.infoq.cn/article/bFKTeyCOlydWMYi91H4q?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 04 Nov 2026 11:02:35 GMT"
     }
   ]
 }

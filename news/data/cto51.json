@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-04T09:32:45+00:00",
+  "updated_at": "2026-11-04T17:26:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "夜读时别只换背景：HarmonyOS 6 深色外观实做",
-      "url": "https://ost.51cto.com/posts/62579",
-      "hot": "1.前言晚上打开阅读页面，最怕遇到&ldquo;背景黑了，字也快看不见了&rdquo;。再往下读，白色卡片突然亮得扎眼，蓝色按钮又像从另一个应用里借来的。深..."
+      "title": "哈佛教授：最容易受AI影响的，可能不是初级开发者，而是中间管理层！我解雇过拿模型答案交差的人",
+      "url": "https://www.51cto.com/article/860283.html",
+      "hot": "如果下一代模型越来越强，公司怎样判断自己是在做有价值的产品，还是只给模型套了一层界面。拉哈尼说，他还不知道完整答案。但他坚持一件事：领导者不能把这个判断外包给别人，自己必须动手理解模型能做什么。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS多设备适配：让弹窗在手机和平板上都好用",
-      "url": "https://ost.51cto.com/posts/62577",
-      "hot": "大家好，今天介绍一下HarmonyOS应用中的弹窗多设备适配。弹窗经常用来选择地址、设置参数或者确认操作。手机竖屏时看起来合适的弹窗，到了..."
+      "title": "【鸿蒙实战】第 24 篇：App 出海东南亚：泰语病句、复数被拒、包体积涨 61%（HarmonyOS 7.x）",
+      "url": "https://ost.51cto.com/posts/62592",
+      "hot": "【鸿蒙实战】第24篇：App出海东南亚：泰语病句、复数被拒、包体积涨61%（HarmonyOS7.x）App要出海东南亚，泰语、越南语、马来语都加上。以..."
     },
     {
       "rank": 3,
+      "title": "HarmonyOS 7 权限请求实战：弹窗只给两次机会，之后去哪了？",
+      "url": "https://ost.51cto.com/posts/62589",
+      "hot": "麦克风、相机、位置、日历、通讯录&mdash;&mdash;应用要用这些能力，先得过用户这一关。权限体系是应用与用户之间的一份契约：应用声明&quot;我需要什么&quot;，..."
+    },
+    {
+      "rank": 4,
       "title": "今天，OpenAI发布AGI新标准！价值1.7万亿美元，接管全球80亿人类",
       "url": "https://www.51cto.com/article/860250.html",
       "hot": "就在今天，OpenAI推出了AGI新标准。就在关于GPT-6.2 Astra的猛料在X上疯传的时候，他们推出了酝酿已久的跑分测试——LifeVal。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "运维接入大语言模型：十个能落地的 AIOps 实战项目",
       "url": "https://www.51cto.com/article/860234.html",
       "hot": "大模型只负责分析和给建议，真正改集群、改流水线之前，先模拟执行，再让人点确认。本文用 10 个能跑起来的小项目说明运维怎么做。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "浙大&蚂蚁最新RSI:多Agent效率爆了",
       "url": "https://www.51cto.com/article/860229.html",
       "hot": "今天为大家分享的是浙大&蚂蚁联合发布的AReaL-RSI的论文：让agent组队做科研，直觉是人多力量大。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "刚刚，Anthropic开源FlashProve，给大模型办了一张「防伪身份证」",
       "url": "https://www.51cto.com/article/860226.html",
       "hot": "Anthropic 发文宣称「大型语言模型的可验证推理取得新进展」，并开源了一个名为 FlashProve 的系统。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "普林斯顿AI Lab出题，「空间智能」大考：人类83.3%，大模型最高39.7%！",
       "url": "https://www.51cto.com/article/860224.html",
       "hot": "普林斯顿 AI Lab 的研究者们带来了一张空间智能新考卷：Same Space or Not（SSoN）。它拿掉了实时变化和动作控制，只给四张静态室内图像，让模型找出其中违背同一场景的那一张，并解释为什么。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Anthropic未发布模型，挖出Linux系统级致命漏洞！",
       "url": "https://www.51cto.com/article/860223.html",
       "hot": "据报道，在Ubuntu和Red Hat系统中，一个近乎满分的Linux内核漏洞至今仍未修复。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "GPT-6.2 Astra首批测试结果！网友：这这这不能是真的吧？？？",
       "url": "https://www.51cto.com/article/860221.html",
       "hot": "这个11月刚开头，OpenAI的新模型已经蠢蠢欲动了。"
-    },
-    {
-      "rank": 10,
-      "title": "DeepSeek Super-agent 架构拆解",
-      "url": "https://www.51cto.com/article/860225.html",
-      "hot": "DeepSeek 最近开源的 dsh-superagent-prototype 给出的解法叫Super-agent：让 Agent 常驻、自己接活、跨会话持续推进多项任务。这篇我把它和 Anthropic Managed Agents 等最新实践放在一起，拆成一张“五层一旁路”的架构图，再给出企业落地清单。"
     }
   ]
 }
