@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-03T17:12:42+00:00",
+  "updated_at": "2026-11-04T02:23:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
       "url": "https://huggingface.co/papers/2610.22732",
-      "hot": "10"
+      "hot": "11"
     },
     {
       "rank": 2,
@@ -36,21 +36,21 @@
     },
     {
       "rank": 6,
+      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+      "url": "https://huggingface.co/papers/2611.01560",
+      "hot": "42"
+    },
+    {
+      "rank": 7,
       "title": "Differentiable Data Augmentation with Kornia",
       "url": "https://huggingface.co/papers/2011.09832",
       "hot": "1"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
       "hot": "103"
-    },
-    {
-      "rank": 8,
-      "title": "HairDeck: Animation-Ready Stylized Hair Cards from a Single Image",
-      "url": "https://huggingface.co/papers/2610.40599",
-      "hot": "31"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "Xiaomi-OCR-0 Technical Report",
-      "url": "https://huggingface.co/papers/2609.36136",
-      "hot": "13"
+      "title": "HairDeck: Animation-Ready Stylized Hair Cards from a Single Image",
+      "url": "https://huggingface.co/papers/2610.40599",
+      "hot": "31"
     }
   ]
 }

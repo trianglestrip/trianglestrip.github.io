@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-03T22:17:43+00:00",
+  "updated_at": "2026-11-04T02:23:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS HMRouter 完全指南：从基础跳转到高级拦截的实战手册",
-      "url": "https://ost.51cto.com/posts/62408",
-      "hot": "HarmonyOSHMRouter完全指南：从基础跳转到高级拦截的实战手册手把手教你用华为官方路由框架打造优雅的页面导航系统一、为什么要用HMRouter..."
+      "title": "HarmonyOS 全局悬浮工具球实现：可拖动、智能吸边与扇形工具栏",
+      "url": "https://ost.51cto.com/posts/62540",
+      "hot": "HarmonyOS全局悬浮工具球实现：可拖动、智能吸边与扇形工具栏打造一个可随意拖拽、自动贴边、一键展开扇形工具栏的全局悬浮球组件一、引言..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 自定义字体完全指南：从注册到系统跟随的全方位实践",
-      "url": "https://ost.51cto.com/posts/62407",
-      "hot": "HarmonyOS自定义字体完全指南：从注册到系统跟随的全方位实践一、字体为什么重要？在移动应用开发中，字体往往是被低估的视觉元素。很多开..."
+      "title": "HarmonyOS 数据容器全解析：从 ArrayList 到 HashMap",
+      "url": "https://ost.51cto.com/posts/62538",
+      "hot": "HarmonyOS数据容器全解析：从ArrayList到HashMap一、为什么ArkTS需要自己的容器类库？如果你来自TypeScript或JavaScript世界，第一反应可能..."
     },
     {
       "rank": 3,
-      "title": "NeurIPS 2026｜MemSkill让智能体学习并进化记忆技能",
-      "url": "https://www.51cto.com/article/860099.html",
-      "hot": "来自南洋理工大学等机构的研究团队在 NeurIPS 2026 上发表了 MemSkill。它将记忆操作表示为可学习、可复用、可进化的 Memory Skills，通过任务反馈优化技能选择，并根据失败案例完善和扩展技能库，使记忆系统能够随交互经验的积累持续进化。"
+      "title": "浙大&蚂蚁最新RSI:多Agent效率爆了",
+      "url": "https://www.51cto.com/article/860229.html",
+      "hot": "今天为大家分享的是浙大&蚂蚁联合发布的AReaL-RSI的论文：让agent组队做科研，直觉是人多力量大。"
     },
     {
       "rank": 4,
-      "title": "PhysLDM | 物理仿真的Latent Diffusion范式，革命传统物理仿真",
-      "url": "https://www.51cto.com/article/860098.html",
-      "hot": "近日，南洋理工大学 MMLab 与上海人工智能实验室的研究者提出了 PhysLDM，一个面向物理仿真的 latent diffusion 范式。据团队所知，这是首个面向体网格可变形动力学的高保真时空自编码器与隐空间扩散范式。"
+      "title": "刚刚，Anthropic开源FlashProve，给大模型办了一张「防伪身份证」",
+      "url": "https://www.51cto.com/article/860226.html",
+      "hot": "Anthropic 发文宣称「大型语言模型的可验证推理取得新进展」，并开源了一个名为 FlashProve 的系统。"
     },
     {
       "rank": 5,
-      "title": "团队级编程 Agent 新范式！拆解 DeepSeek Super-agent 双层路由架构与 GitHub/飞书接入实践",
-      "url": "https://www.51cto.com/article/860097.html",
-      "hot": "DeepSeek 最近发布的 Super-agent 设计和原型插件是一个能够真正放进开发团队、随时在线、主动响应的编程 Agent。"
+      "title": "普林斯顿AI Lab出题，「空间智能」大考：人类83.3%，大模型最高39.7%！",
+      "url": "https://www.51cto.com/article/860224.html",
+      "hot": "普林斯顿 AI Lab 的研究者们带来了一张空间智能新考卷：Same Space or Not（SSoN）。它拿掉了实时变化和动作控制，只给四张静态室内图像，让模型找出其中违背同一场景的那一张，并解释为什么。"
     },
     {
       "rank": 6,
-      "title": "MIT让GPT-6 Astra直接修改Qwen权重！数学成绩飙升",
-      "url": "https://www.51cto.com/article/860094.html",
-      "hot": "团队让 GPT-6 Astra 直接检查 Qwen3.5-0.8B 的内部权重，找到了导致模型反复陷入推理循环的关键问题。"
+      "title": "Anthropic未发布模型，挖出Linux系统级致命漏洞！",
+      "url": "https://www.51cto.com/article/860223.html",
+      "hot": "据报道，在Ubuntu和Red Hat系统中，一个近乎满分的Linux内核漏洞至今仍未修复。"
     },
     {
       "rank": 7,
-      "title": "DeepSeek官方智能体教程来了：一句话造插件，七套提示词免费公开",
-      "url": "https://www.51cto.com/article/860093.html",
-      "hot": "什么装这插件安那插件，DeepSeek这回直接教你「手搓插件」了！！！就在刚刚，DeepSeek Harness官方突然甩出一份「创造模式」玩法指南，主打一个——只需要输入一句自然语言，AI就能自己写代码、制作插件，甚至把新功能直接装进自己的工作界面。"
+      "title": "GPT-6.2 Astra首批测试结果！网友：这这这不能是真的吧？？？",
+      "url": "https://www.51cto.com/article/860221.html",
+      "hot": "这个11月刚开头，OpenAI的新模型已经蠢蠢欲动了。"
     },
     {
       "rank": 8,
-      "title": "不用换大模型！谷歌 Harness² 双层递归，让 Agent 实现自我迭代升级",
-      "url": "https://www.51cto.com/article/860092.html",
-      "hot": "本文讲清 Harness² 解决什么问题、机制怎么跑通、实测数据、社区落地与未来边界。"
+      "title": "DeepSeek Super-agent 架构拆解",
+      "url": "https://www.51cto.com/article/860225.html",
+      "hot": "DeepSeek 最近开源的 dsh-superagent-prototype 给出的解法叫Super-agent：让 Agent 常驻、自己接活、跨会话持续推进多项任务。这篇我把它和 Anthropic Managed Agents 等最新实践放在一起，拆成一张“五层一旁路”的架构图，再给出企业落地清单。"
     },
     {
       "rank": 9,
-      "title": "Anthropic突然更新！AI自进化已突破红线，人类根本来不及反应",
-      "url": "https://www.51cto.com/article/860091.html",
-      "hot": "「AI造AI」的加速循环早就已经转了起来，而且它的进化速度，已经快到连人类科学家都来不及实时监测！"
+      "title": "NeurIPS 2026｜离散数据也能一步生成？ReSFlow在统计流形上「拉直」生成路径",
+      "url": "https://www.51cto.com/article/860202.html",
+      "hot": "研究团队提出了 Rectified Statistical Flow（ReSFlow）：将类别概率映射到球面，在球面上重新配对并整流生成轨迹，让模型能够沿接近测地线的路径，通过一次更新完成生成。"
     },
     {
       "rank": 10,
-      "title": "从“看懂视频”到“与世界交互”：一篇综述串起视频 AI 的四条主线",
-      "url": "https://www.51cto.com/article/859957.html",
-      "hot": "视频理解、视频生成、理解生成统一、视频世界模型，为什么值得放到同一张地图上？这篇综述从“视频与世界的关系”出发，用 Reading、Writing、Sharing、Interacting 四种操作，重新组织视频基础模型的技术脉络。"
+      "title": "网络安全的AlphaGo时刻，或从这466场Agent对局开始",
+      "url": "https://www.51cto.com/article/860201.html",
+      "hot": "来自 2077AI、UC Berkeley RDI、UC Santa Cruz、UCSB 等机构的研究团队共同研究设计了 CyberArena 。"
     }
   ]
 }
