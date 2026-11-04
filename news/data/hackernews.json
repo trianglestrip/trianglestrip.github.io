@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-04T17:26:37+00:00",
+  "updated_at": "2026-11-04T22:43:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI is forcing us to pay off 40 years of technical debt",
-      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-      "hot": "651"
+      "title": "Residential proxies detected on White House network",
+      "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+      "hot": "375"
     },
     {
       "rank": 2,
-      "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
-      "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
-      "hot": "109"
+      "title": "Insects don't swarm at LED lights",
+      "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+      "hot": "112"
     },
     {
       "rank": 3,
-      "title": "Provable Inference",
-      "url": "https://www.anthropic.com/research/provable-inference",
-      "hot": "9"
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "url": "https://www.ricursive.com/ripple",
+      "hot": "168"
     },
     {
       "rank": 4,
-      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
-      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-      "hot": "434"
+      "title": "AI is forcing us to pay off 40 years of technical debt",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "hot": "983"
     },
     {
       "rank": 5,
-      "title": "Evergreen: A Provably Safe Systems Language",
-      "url": "https://evergreenlang.net",
-      "hot": "51"
+      "title": "A new Go API for JSON",
+      "url": "https://go.dev/blog/jsonv2",
+      "hot": "177"
     },
     {
       "rank": 6,
-      "title": "North Korean fake job interview led to $6.3B Binance heist",
-      "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
-      "hot": "311"
+      "title": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
+      "url": "https://icode4.coffee/?p=1746",
+      "hot": "13"
     },
     {
       "rank": 7,
-      "title": "An end to buggy web apps",
-      "url": "https://replay.io/blog/an-end-to-buggy-web-apps",
-      "hot": "16"
+      "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
+      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+      "hot": "66"
     },
     {
       "rank": 8,
-      "title": "AMD expects to outsell Intel in Q4 for the first time in history",
-      "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-      "hot": "127"
+      "title": "Progress on provable inference for large language models",
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "hot": "153"
     },
     {
       "rank": 9,
-      "title": "Verification Is Not Knowledge: Science needs more than answers",
-      "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
-      "hot": "175"
+      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "hot": "569"
     },
     {
       "rank": 10,
-      "title": "Show HN: I built a tool that prices a prebuilt PC part by part",
-      "url": "https://pcdealcheck.com/",
-      "hot": "20"
+      "title": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
+      "url": "https://fireflyk64.github.io/wcmulti/",
+      "hot": "72"
     }
   ]
 }
