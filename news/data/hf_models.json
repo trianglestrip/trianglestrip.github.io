@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-04T17:26:57+00:00",
+  "updated_at": "2026-11-05T02:49:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "hot": "1457"
+      "hot": "1894"
     },
     {
       "rank": 2,
       "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "hot": "5245"
+      "hot": "5279"
     },
     {
       "rank": 3,
-      "title": "LiquidAI/LFM3-1.7B",
-      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-      "hot": "1470"
+      "title": "speridlabs/idol",
+      "url": "https://huggingface.co/speridlabs/idol",
+      "hot": "625"
     },
     {
       "rank": 4,
-      "title": "mistralai/Mistral-Large-4-1T-A52B",
-      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-      "hot": "1581"
+      "title": "LiquidAI/LFM3-1.7B",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "hot": "1488"
     },
     {
       "rank": 5,
-      "title": "speridlabs/idol",
-      "url": "https://huggingface.co/speridlabs/idol",
-      "hot": "583"
+      "title": "mistralai/Mistral-Large-4-1T-A52B",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "hot": "1592"
     },
     {
       "rank": 6,
-      "title": "Pika-Labs/Pika-H3-Flex",
-      "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
-      "hot": "420"
+      "title": "moonshotai/Kimi-K3.1-Pro",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "hot": "540"
     },
     {
       "rank": 7,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "10587"
+      "title": "Pika-Labs/Pika-H3-Flex",
+      "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+      "hot": "430"
     },
     {
       "rank": 8,
-      "title": "ccore/Qwen3.5-4B-3D-Coder",
-      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-      "hot": "642"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "10624"
     },
     {
       "rank": 9,
-      "title": "burner22/numbat",
-      "url": "https://huggingface.co/burner22/numbat",
-      "hot": "337"
+      "title": "ccore/Qwen3.5-4B-3D-Coder",
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "hot": "657"
     },
     {
       "rank": 10,
-      "title": "FusionCow/Sulphur-3",
-      "url": "https://huggingface.co/FusionCow/Sulphur-3",
-      "hot": "353"
+      "title": "burner22/numbat",
+      "url": "https://huggingface.co/burner22/numbat",
+      "hot": "342"
     }
   ]
 }

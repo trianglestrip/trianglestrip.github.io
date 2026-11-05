@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-04T22:43:49+00:00",
+  "updated_at": "2026-11-05T02:48:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI Coding 增量风险管控：Skill 门禁与 Harness 落地实践｜AICon北京",
+      "url": "https://www.infoq.cn/article/XieGrL5pws7jG1zxKPle?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 05 Nov 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "混元 Hy4 实测：腾讯的产品基因，模型继承了几分？",
+      "url": "https://www.infoq.cn/article/C61Q16LQIDq45l0iCCzV?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 05 Nov 2026 09:44:25 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "Cloudflare 通过优化一致性哈希节省了 100 TB 内存",
+      "url": "https://www.infoq.cn/article/yRvSUCFFcZEEXCgxyAO2?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 05 Nov 2026 09:00:00 GMT"
+    },
+    {
+      "rank": 4,
       "title": "当 Agent 成为数据库新用户，腾讯云如何解决“未知”的难题？",
       "url": "https://www.infoq.cn/article/TeOb9MgqfeLOoNdxtMH2?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 22:00:23 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "Token 暴涨 5000 倍之后，企业 Agent 落地还卡在哪里？",
       "url": "https://www.infoq.cn/article/VUmIUJ0ST9xIlPoViXmz?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 21:56:58 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "谷歌 Data Agent Kit 正式发布：安全防护分为 Skill 与 IAM",
       "url": "https://www.infoq.cn/article/UtKS9EofSoyd2P7Otx7e?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 20:01:56 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "Anthropic 为重要开源项目新增可选安全扫描服务",
       "url": "https://www.infoq.cn/article/hdmi6FdjpYSEvuMhPOAa?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 19:53:34 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Vercel Labs 开源 fx：一款专为嵌入式应用设计的 Zig 编程代理",
       "url": "https://www.infoq.cn/article/cNO8PCwQoZMRHhIyVDrB?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 18:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "Harbor 新增 Docker Sandboxes 支持，可在隔离的 MicroVM 中运行可重现的 AI 代理评估",
       "url": "https://www.infoq.cn/article/pgmES06L2MAH2TCSMhJ9?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 17:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "研究发现：AI 生成代码受下游环节瓶颈制约，无法提升整体生产力",
       "url": "https://www.infoq.cn/article/c3vTLNrRwfCzw8SAmz90?utm_source=rss&utm_medium=article",
       "hot": "Wed, 04 Nov 2026 16:20:50 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "刚刚，被李飞飞团队写进代码库的具身底座，现身乌镇峰会“上岗抓药”",
-      "url": "https://www.infoq.cn/article/L5Q1XJbFSubVNB9DGJsl?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 04 Nov 2026 15:51:17 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "月烧 1.5 万亿 token，年烧 1.32 亿美元？Cursor 工程师的账单，凡人只能仰望",
-      "url": "https://www.infoq.cn/article/q9iebpvFozfy4bgCYUyE?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 04 Nov 2026 15:48:18 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "同一个模型从 30 分到 95 分：拉开差距的不是模型，是Harness",
-      "url": "https://www.infoq.cn/article/C1C1DThg8z1Dy0rZAmLB?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 04 Nov 2026 15:40:50 GMT"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-04T22:43:45+00:00",
+  "updated_at": "2026-11-05T02:48:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Residential proxies detected on White House network",
       "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-      "hot": "375"
+      "hot": "706"
     },
     {
       "rank": 2,
-      "title": "Insects don't swarm at LED lights",
-      "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-      "hot": "112"
+      "title": "Images 2.6",
+      "url": "https://openai.com/index/introducing-images-2-6/",
+      "hot": "127"
     },
     {
       "rank": 3,
-      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
-      "url": "https://www.ricursive.com/ripple",
-      "hot": "168"
+      "title": "A thousand fewer paths to root",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "hot": "146"
     },
     {
       "rank": 4,
-      "title": "AI is forcing us to pay off 40 years of technical debt",
-      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-      "hot": "983"
+      "title": "Starfall – Affordable, routine access to microgravity",
+      "url": "https://www.spacex.com/starfall",
+      "hot": "90"
     },
     {
       "rank": 5,
-      "title": "A new Go API for JSON",
-      "url": "https://go.dev/blog/jsonv2",
-      "hot": "177"
+      "title": "AI is forcing us to pay off 40 years of technical debt",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "hot": "1092"
     },
     {
       "rank": 6,
-      "title": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
-      "url": "https://icode4.coffee/?p=1746",
-      "hot": "13"
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "url": "https://www.ricursive.com/ripple",
+      "hot": "233"
     },
     {
       "rank": 7,
-      "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
-      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-      "hot": "66"
+      "title": "Kimi K3.1 Pro model weights are out",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "hot": "396"
     },
     {
       "rank": 8,
-      "title": "Progress on provable inference for large language models",
-      "url": "https://www.anthropic.com/research/provable-inference",
-      "hot": "153"
+      "title": "Insects don't swarm at LED lights",
+      "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+      "hot": "171"
     },
     {
       "rank": 9,
-      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
-      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-      "hot": "569"
+      "title": "A new Go API for JSON",
+      "url": "https://go.dev/blog/jsonv2",
+      "hot": "239"
     },
     {
       "rank": 10,
-      "title": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
-      "url": "https://fireflyk64.github.io/wcmulti/",
-      "hot": "72"
+      "title": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
+      "url": "https://icode4.coffee/?p=1746",
+      "hot": "65"
     }
   ]
 }
