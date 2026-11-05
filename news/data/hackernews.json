@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-05T09:53:45+00:00",
+  "updated_at": "2026-11-05T17:42:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Residential proxies detected on White House network",
-      "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-      "hot": "1037"
+      "title": "sshole",
+      "url": "https://sshhole.com",
+      "hot": "1407"
     },
     {
       "rank": 2,
-      "title": "Lemmings CSS Animation",
-      "url": "https://markblah.github.io/lemmings/",
-      "hot": "169"
+      "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
+      "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+      "hot": "263"
     },
     {
       "rank": 3,
-      "title": "Images 2.6",
-      "url": "https://openai.com/index/introducing-images-2-6/",
-      "hot": "293"
+      "title": "Motorola Signature 27 with GrapheneOS support",
+      "url": "https://motorolanews.com/motorola-signature-27-2/",
+      "hot": "120"
     },
     {
       "rank": 4,
-      "title": "A thousand fewer paths to root",
-      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-      "hot": "328"
+      "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
+      "url": "https://github.com/rivet-dev/rivet",
+      "hot": "12"
     },
     {
       "rank": 5,
-      "title": "Partial Operator Precedence",
-      "url": "https://ziglang.org/devlog/2026/#2026-10-24",
-      "hot": "34"
+      "title": "The Lisp curse, now coming to your ecosystem",
+      "url": "https://javahippie.net/programming/llm/2026/03/05/the-lisp-curse-coming-to-your-ecosystem.html",
+      "hot": "56"
     },
     {
       "rank": 6,
-      "title": "Kimi K3.1 Pro model weights are out",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "hot": "529"
+      "title": "September in Servo: <progress>, rounded rectangles, and more",
+      "url": "https://servo.org/blog/2026/11/05/september-in-servo/",
+      "hot": "90"
     },
     {
       "rank": 7,
-      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
-      "url": "https://www.ricursive.com/ripple",
-      "hot": "291"
+      "title": "My psychophysics as a bilateral cochlear implant user",
+      "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
+      "hot": "55"
     },
     {
       "rank": 8,
-      "title": "Spreading Liquid with Three.js",
-      "url": "https://mofu-dev.com/en/blog/fluid-foundation/",
-      "hot": "98"
+      "title": "Window Sweaters",
+      "url": "https://github.com/saragordic/window-sweaters",
+      "hot": "15"
     },
     {
       "rank": 9,
-      "title": "Altera Announces Agilex 2X, a Complete FPGA and SoC Portfolio",
-      "url": "https://www.altera.com/newsroom/agilex-2x",
-      "hot": "27"
+      "title": "The Stacks Project, Formalized in Lean",
+      "url": "https://axiommath.ai/research/the-stacks-project-formalized/",
+      "hot": "18"
     },
     {
       "rank": 10,
-      "title": "A new Go API for JSON",
-      "url": "https://go.dev/blog/jsonv2",
-      "hot": "312"
+      "title": "Download your favourite YouTube videos",
+      "url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
+      "hot": "129"
     }
   ]
 }

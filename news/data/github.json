@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-05T09:53:33+00:00",
+  "updated_at": "2026-11-05T17:42:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Python] NVIDIA/auto-ontology",
       "url": "https://github.com/NVIDIA/auto-ontology",
-      "hot": "6,124"
+      "hot": "6,875"
     },
     {
       "rank": 2,
-      "title": "[Rust] max-sixty/worktrunk",
-      "url": "https://github.com/max-sixty/worktrunk",
-      "hot": "11,269"
+      "title": "[Shell] mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "hot": "314,741"
     },
     {
       "rank": 3,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "313,964"
+      "title": "[TypeScript] garrytan/gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "hot": "139,797"
     },
     {
       "rank": 4,
-      "title": "[Java] floci-io/floci",
-      "url": "https://github.com/floci-io/floci",
-      "hot": "29,937"
+      "title": "[Python] Usagi-org/ai-goofish-monitor",
+      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "hot": "17,451"
     },
     {
       "rank": 5,
-      "title": "[TypeScript] thedotmack/claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "hot": "113,214"
+      "title": "[Python] D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "hot": "97,686"
     },
     {
       "rank": 6,
       "title": "[Rust] vercel-labs/agent-desktop",
       "url": "https://github.com/vercel-labs/agent-desktop",
-      "hot": "15,978"
+      "hot": "16,523"
     },
     {
       "rank": 7,
-      "title": "[Python] github/spec-kit",
-      "url": "https://github.com/github/spec-kit",
-      "hot": "147,582"
+      "title": "[Rust] max-sixty/worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "hot": "11,398"
     },
     {
       "rank": 8,
-      "title": "[Python] The-PR-Agent/pr-agent",
-      "url": "https://github.com/The-PR-Agent/pr-agent",
-      "hot": "14,970"
+      "title": "[C] lz4/lz4",
+      "url": "https://github.com/lz4/lz4",
+      "hot": "12,303"
     },
     {
       "rank": 9,
-      "title": "[Python] harry0703/MoneyPrinterTurbo",
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "hot": "139,463"
+      "title": "[Python] google/skills",
+      "url": "https://github.com/google/skills",
+      "hot": "22,235"
     },
     {
       "rank": 10,
-      "title": "[TypeScript] garrytan/gstack",
-      "url": "https://github.com/garrytan/gstack",
-      "hot": "139,571"
+      "title": "[Rust] vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "hot": "45,744"
     }
   ]
 }

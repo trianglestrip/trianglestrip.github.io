@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-05T09:53:50+00:00",
+  "updated_at": "2026-11-05T17:42:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "模型之外，腾讯还在补什么？",
+      "url": "https://www.infoq.cn/article/UMlHzxNiS9tFfG9KadYs?utm_source=rss&utm_medium=article",
+      "hot": "Thu, 05 Nov 2026 19:13:00 GMT"
+    },
+    {
+      "rank": 2,
       "title": "PHP 修复了两处已遭到攻击的严重远程代码执行漏洞",
       "url": "https://www.infoq.cn/article/qUEjcWbwOj5RO59250Lu?utm_source=rss&utm_medium=article",
       "hot": "Thu, 05 Nov 2026 17:06:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Claude Code 产品负责人Cut Wu 官宣加入 OpenAI",
       "url": "https://www.infoq.cn/article/cDERcarozbrsCBNs5sWM?utm_source=rss&utm_medium=article",
       "hot": "Thu, 05 Nov 2026 16:53:21 GMT"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "MCP C# SDK 2.0 默认启用 HTTP 无状态模式，新增多轮请求能力",
       "url": "https://www.infoq.cn/article/80iUxvCNB59aOgyXB7LN?utm_source=rss&utm_medium=article",
       "hot": "Thu, 05 Nov 2026 15:19:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "视频生成只是开始，AI 如何把内容做对？",
       "url": "https://www.infoq.cn/article/GGILIuzW0RTGhoeuz9TD?utm_source=rss&utm_medium=article",
       "hot": "Thu, 05 Nov 2026 13:54:21 GMT"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "谷歌发布 ML Drift：为各类 GPU 加速端侧 AI 推理",
       "url": "https://www.infoq.cn/article/hHzARIJTeqoqYpjNKEuq?utm_source=rss&utm_medium=article",
       "hot": "Thu, 05 Nov 2026 13:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "谷歌用 Gemini 4 Argon 一夜优化 ADK 代码库的 20 万行代码",
       "url": "https://www.infoq.cn/article/u4fAoAH5vZPCV4TVqAcO?utm_source=rss&utm_medium=article",
       "hot": "Thu, 05 Nov 2026 11:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "AI Coding 增量风险管控：Skill 门禁与 Harness 落地实践｜AICon北京",
       "url": "https://www.infoq.cn/article/XieGrL5pws7jG1zxKPle?utm_source=rss&utm_medium=article",
       "hot": "Thu, 05 Nov 2026 10:00:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "混元 Hy4 实测：腾讯的产品基因，模型继承了几分？",
       "url": "https://www.infoq.cn/article/C61Q16LQIDq45l0iCCzV?utm_source=rss&utm_medium=article",
       "hot": "Thu, 05 Nov 2026 09:44:25 GMT"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Cloudflare 通过优化一致性哈希节省了 100 TB 内存",
       "url": "https://www.infoq.cn/article/yRvSUCFFcZEEXCgxyAO2?utm_source=rss&utm_medium=article",
       "hot": "Thu, 05 Nov 2026 09:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "当 Agent 成为数据库新用户，腾讯云如何解决“未知”的难题？",
-      "url": "https://www.infoq.cn/article/TeOb9MgqfeLOoNdxtMH2?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 04 Nov 2026 22:00:23 GMT"
     }
   ]
 }
