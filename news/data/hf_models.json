@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-05T02:49:04+00:00",
+  "updated_at": "2026-11-05T09:54:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "hot": "1894"
+      "hot": "3034"
     },
     {
       "rank": 2,
-      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "hot": "5279"
+      "title": "moonshotai/Kimi-K3.1-Pro",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "hot": "684"
     },
     {
       "rank": 3,
       "title": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
-      "hot": "625"
+      "hot": "658"
     },
     {
       "rank": 4,
-      "title": "LiquidAI/LFM3-1.7B",
-      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-      "hot": "1488"
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "hot": "5313"
     },
     {
       "rank": 5,
       "title": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-      "hot": "1592"
+      "hot": "1597"
     },
     {
       "rank": 6,
-      "title": "moonshotai/Kimi-K3.1-Pro",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "hot": "540"
+      "title": "LiquidAI/LFM3-1.7B",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "hot": "1497"
     },
     {
       "rank": 7,
       "title": "Pika-Labs/Pika-H3-Flex",
       "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
-      "hot": "430"
+      "hot": "438"
     },
     {
       "rank": 8,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "10624"
+      "hot": "10652"
     },
     {
       "rank": 9,
       "title": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-      "hot": "657"
+      "hot": "667"
     },
     {
       "rank": 10,
       "title": "burner22/numbat",
       "url": "https://huggingface.co/burner22/numbat",
-      "hot": "342"
+      "hot": "347"
     }
   ]
 }
