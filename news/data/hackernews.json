@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-05T17:42:29+00:00",
+  "updated_at": "2026-11-05T22:51:58+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "sshole",
-      "url": "https://sshhole.com",
-      "hot": "1407"
+      "title": "Kagi Search for Everyone",
+      "url": "https://kagi.com/changelog",
+      "hot": "297"
     },
     {
       "rank": 2,
-      "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
-      "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
-      "hot": "263"
+      "title": "MS Paint Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+      "hot": "168"
     },
     {
       "rank": 3,
-      "title": "Motorola Signature 27 with GrapheneOS support",
-      "url": "https://motorolanews.com/motorola-signature-27-2/",
-      "hot": "120"
+      "title": "sshole",
+      "url": "https://sshhole.com",
+      "hot": "2171"
     },
     {
       "rank": 4,
-      "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
-      "url": "https://github.com/rivet-dev/rivet",
-      "hot": "12"
+      "title": "Claude Code sends your email address to websites",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "hot": "73"
     },
     {
       "rank": 5,
-      "title": "The Lisp curse, now coming to your ecosystem",
-      "url": "https://javahippie.net/programming/llm/2026/03/05/the-lisp-curse-coming-to-your-ecosystem.html",
-      "hot": "56"
+      "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
+      "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+      "hot": "530"
     },
     {
       "rank": 6,
-      "title": "September in Servo: <progress>, rounded rectangles, and more",
-      "url": "https://servo.org/blog/2026/11/05/september-in-servo/",
-      "hot": "90"
+      "title": "The Hackintosh Reborn",
+      "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+      "hot": "141"
     },
     {
       "rank": 7,
-      "title": "My psychophysics as a bilateral cochlear implant user",
-      "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
-      "hot": "55"
+      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+      "hot": "53"
     },
     {
       "rank": 8,
       "title": "Window Sweaters",
       "url": "https://github.com/saragordic/window-sweaters",
-      "hot": "15"
+      "hot": "202"
     },
     {
       "rank": 9,
-      "title": "The Stacks Project, Formalized in Lean",
-      "url": "https://axiommath.ai/research/the-stacks-project-formalized/",
-      "hot": "18"
+      "title": "Goodbye from Salon",
+      "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+      "hot": "287"
     },
     {
       "rank": 10,
-      "title": "Download your favourite YouTube videos",
-      "url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
-      "hot": "129"
+      "title": "The Cost of Blogging",
+      "url": "https://onlinegoddess.net/2026/11/the-cost-of-blogging/",
+      "hot": "28"
     }
   ]
 }
