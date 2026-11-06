@@ -1,69 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-06T17:10:21+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-11-06T22:02:13+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "沃顿教授：程序员的新工作是“经理”，监督AI比派任务更困难，别把Agent当“一键完成”",
+      "url": "https://www.51cto.com/article/860534.html",
+      "hot": "“程序员都要当经理了”听着像一句调侃，莫利克讲的却是实打实的工作量：任务交给Agent以后，人仍要说明目标、安排汇报、比较方案，还要在它越界前叫停。Agent写得越快，这些决定越容易接连出现。"
+    },
+    {
+      "rank": 2,
+      "title": "Anthropic三大内部模型曝光！领先Opus5.5三个月，RSI缩短80%实验时间",
+      "url": "https://www.51cto.com/article/860532.html",
+      "hot": "Anthropic的三个内部神秘模型，曝光了。Model 2、Model 3、Model 4。真名还没公开，但训练时间和部分成绩已经出现了。"
+    },
+    {
+      "rank": 3,
       "title": "HarmonyOS 7.0 3DGS实战（一）：手作时光馆的端侧重建闭环",
       "url": "https://ost.51cto.com/posts/62868",
       "hot": "01前言大家好，我是开发者Sally（DevSally），每天聚焦一个HarmonyOS的小功能。今天我要分享的是一个HarmonyOS7.03DGS的实战项目&mdash;&mdash;手作时..."
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "HarmonyOS 7版本适配：apiAvailable避坑指南",
       "url": "https://ost.51cto.com/posts/62865",
       "hot": "大家好，今天接着聊apiAvailable，把上一篇埋的坑一次讲完。上篇结尾提了一句：版本号参数要用字面量形式直接写在调用处。这条规则展开讲，..."
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Google SRE 已经开始让 AI Agent 自主排障了：运维真的要变天了！",
       "url": "https://www.51cto.com/article/860496.html",
       "hot": "在部分故障场景下，AI Agent 已经可以独立完成从告警触发、日志分析、根因定位到执行修复动作的完整闭环，人类 SRE 只需要负责最终确认。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "从工具调用到虚拟文件系统：手把手搭建 DeepAgents 行业研究智能体",
       "url": "https://www.51cto.com/article/860494.html",
       "hot": "借助 LangChain 和 LangGraph，开发者无需从零开发核心逻辑，只需按步骤完善功能，就能快速搭建出具备 DeepAgents 能力的智能体。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "大模型的推理注入与输出前缀攻击",
       "url": "https://www.51cto.com/article/860479.html",
       "hot": "随着 Agent 从简单问答走向长任务执行，安全架构需要保护的对象也在变化：不只是输入和输出，还包括模型依赖的历史上下文，以及整个执行过程中形成的状态。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "DeepSeek Super-agent 是什么，跟普通 agent 有什么区别",
       "url": "https://www.51cto.com/article/860477.html",
       "hot": "没有什么是加一层中间层不能解决的，如果有，那就再加一层。所以最简单的解法就是在你和 agent 之间，加一层中间层，负责承接你的需求，把任务交给下面干活的 agent。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "HAMi：GPU设备共享实现机制",
       "url": "https://www.51cto.com/article/860476.html",
       "hot": "HAMi 让多个 Pod 共享同一张物理 GPU，按显存和算力精细分配。本文从源码角度拆解这条链路：Pod 提交 → Webhook 准入 → 调度器选节点选设备 → 设备插件注入隔离层 → 容器内 CUDA API 劫持。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "大模型训练中的代码、权重与数据",
       "url": "https://www.51cto.com/article/860470.html",
       "hot": "大模型训练中的代码、权重与数据这三者不是单一静态形态，它们的\"载体\"会随训练不同阶段变化。"
-    },
-    {
-      "rank": 9,
-      "title": "第 40 篇：HTTP 缓存终极指南：彻底吃透 200、304 与缓存策略",
-      "url": "https://www.51cto.com/article/860461.html",
-      "hot": "今天，我们来彻底解决HTTP里最让人困惑的一个现象——304 Not Modified。为什么浏览器有时候不重新下载资源？"
-    },
-    {
-      "rank": 10,
-      "title": "Kimi K3.1 Pro 权重上线 Hugging Face：2.8T 参数，Agent Arena 开放模型第一",
-      "url": "https://www.51cto.com/article/860460.html",
-      "hot": "权重以 MXFP4 存储、激活用 MXFP8，官方称采用了量化感知训练。Hugging Face 接口显示仓库占用约 1.56TB，safetensors 统计的参数量约 2.78 万亿。vLLM、SGLang 和 TokenSpeed 都已给出部署 recipe。"
     }
   ]
 }
