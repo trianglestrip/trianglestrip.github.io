@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-05T22:52:07+00:00",
+  "updated_at": "2026-11-06T02:53:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "OwnCoder 0.2.0 发布:安全优先，token 消耗显著低于同类产品安全优先，token 消耗显著低于同类产品的本地 AI 编程工具",
+      "url": "https://www.oschina.net/news/503432",
+      "hot": "Fri, 06 Nov 2026 07:03:07 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "SonnetDB 5.0 正式发布：增强 SQL 与事务，开放九模型 MCP 读写",
+      "url": "https://www.oschina.net/news/503431",
+      "hot": "Thu, 05 Nov 2026 21:18:52 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Jync v1.13.0 · Redis 缓存投影与 MySQL 5.7 自动适配",
+      "url": "https://www.oschina.net/news/503430",
+      "hot": "Thu, 05 Nov 2026 20:44:02 +0800"
+    },
+    {
+      "rank": 4,
       "title": "百度发布最新基座模型 ERNIE 5.5 Flash Base：效率、开源、高性价比",
       "url": "https://www.oschina.net/news/503429/ernie-5-5-flash-base",
       "hot": "Thu, 05 Nov 2026 19:39:18 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "用 AI 写后端，为什么还是在造轮子？",
       "url": "https://www.oschina.net/news/503428",
       "hot": "Thu, 05 Nov 2026 18:52:19 +0800"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "登顶 HF 热榜、下载达 20 万：有道「子曰4 -R2T2」模型技术报告发布",
       "url": "https://www.oschina.net/news/503427",
       "hot": "Thu, 05 Nov 2026 18:20:04 +0800"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "GOTC 来我这放个 P！Vibe Coding 的同时也要记得关怀屁股",
       "url": "https://www.oschina.net/news/503412",
       "hot": "Thu, 05 Nov 2026 14:38:40 +0800"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "FydeOS v23.1 发布，重点改善 Android 应用体验",
       "url": "https://www.oschina.net/news/503411",
       "hot": "Thu, 05 Nov 2026 13:47:45 +0800"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "DSH Sessivra 0.3.0-dev.26 发布：拖拽会话即可分屏",
       "url": "https://www.oschina.net/news/503406",
       "hot": "Thu, 05 Nov 2026 11:24:14 +0800"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "拾趣 (Magpie) v0.1.20 发布：全新截图操作，翻译、解释、总结...",
       "url": "https://www.oschina.net/news/503405",
       "hot": "Thu, 05 Nov 2026 10:36:28 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "🔥🔥开源接口平台 v6.5.0 发布，升级 JDK 25",
-      "url": "https://www.oschina.net/news/503403",
-      "hot": "Thu, 05 Nov 2026 10:02:49 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "禅道开源版 22.7 发布，运行环境升级为 PHP 8.4，完善了系统通知渠道，优化系统通知文案",
-      "url": "https://www.oschina.net/news/503402",
-      "hot": "Thu, 05 Nov 2026 09:46:42 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "JeecgBoot V3.9.6 发布，67 项安全漏洞集中修复，AI 图像生成上线",
-      "url": "https://www.oschina.net/news/503401",
-      "hot": "Thu, 05 Nov 2026 09:30:09 +0800"
     }
   ]
 }
