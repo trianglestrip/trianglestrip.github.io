@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-06T02:53:54+00:00",
+  "updated_at": "2026-11-06T09:59:17+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,39 +30,39 @@
     },
     {
       "rank": 5,
+      "title": "VibeVoice Technical Report",
+      "url": "https://huggingface.co/papers/2508.19205",
+      "hot": "183"
+    },
+    {
+      "rank": 6,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
       "hot": "110"
     },
     {
-      "rank": 6,
-      "title": "VibeVoice Technical Report",
-      "url": "https://huggingface.co/papers/2508.19205",
-      "hot": "182"
-    },
-    {
       "rank": 7,
-      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
-      "url": "https://huggingface.co/papers/2611.01560",
-      "hot": "47"
-    },
-    {
-      "rank": 8,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
       "hot": "102"
     },
     {
+      "rank": 8,
+      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+      "url": "https://huggingface.co/papers/2611.01560",
+      "hot": "47"
+    },
+    {
       "rank": 9,
       "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
       "url": "https://huggingface.co/papers/2610.31329",
-      "hot": "44"
+      "hot": "45"
     },
     {
       "rank": 10,
-      "title": "SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding",
-      "url": "https://huggingface.co/papers/2611.02501",
-      "hot": "19"
+      "title": "Differentiable Data Augmentation with Kornia",
+      "url": "https://huggingface.co/papers/2011.09832",
+      "hot": "1"
     }
   ]
 }

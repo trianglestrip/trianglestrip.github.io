@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-06T02:53:22+00:00",
+  "updated_at": "2026-11-06T09:58:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Python] NVIDIA/auto-ontology",
       "url": "https://github.com/NVIDIA/auto-ontology",
-      "hot": "7,522"
+      "hot": "8,148"
     },
     {
       "rank": 2,
       "title": "[Shell] mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "hot": "315,400"
+      "hot": "315,977"
     },
     {
       "rank": 3,
       "title": "[TypeScript] garrytan/gstack",
       "url": "https://github.com/garrytan/gstack",
-      "hot": "140,009"
+      "hot": "140,260"
     },
     {
       "rank": 4,
       "title": "[Python] Usagi-org/ai-goofish-monitor",
       "url": "https://github.com/Usagi-org/ai-goofish-monitor",
-      "hot": "17,686"
+      "hot": "18,091"
     },
     {
       "rank": 5,
       "title": "[Python] D4Vinci/Scrapling",
       "url": "https://github.com/D4Vinci/Scrapling",
-      "hot": "98,102"
+      "hot": "98,488"
     },
     {
       "rank": 6,
       "title": "[Rust] vercel-labs/agent-desktop",
       "url": "https://github.com/vercel-labs/agent-desktop",
-      "hot": "17,016"
+      "hot": "17,559"
     },
     {
       "rank": 7,
       "title": "[Rust] max-sixty/worktrunk",
       "url": "https://github.com/max-sixty/worktrunk",
-      "hot": "11,556"
+      "hot": "11,692"
     },
     {
       "rank": 8,
-      "title": "[Python] google/skills",
-      "url": "https://github.com/google/skills",
-      "hot": "22,421"
+      "title": "[C] lz4/lz4",
+      "url": "https://github.com/lz4/lz4",
+      "hot": "12,505"
     },
     {
       "rank": 9,
-      "title": "[Rust] vercel-labs/agent-browser",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "hot": "45,965"
+      "title": "[Python] google/skills",
+      "url": "https://github.com/google/skills",
+      "hot": "22,579"
     },
     {
       "rank": 10,
-      "title": "[Python] scenario-labs/skills",
-      "url": "https://github.com/scenario-labs/skills",
-      "hot": "3,120"
+      "title": "[Rust] vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "hot": "46,181"
     }
   ]
 }

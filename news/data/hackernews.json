@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-06T02:53:36+00:00",
+  "updated_at": "2026-11-06T09:59:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Claude Code sends your email address to websites",
-      "url": "https://github.com/anthropics/claude-code/issues/107757",
-      "hot": "597"
+      "title": "Blender's UI and Runtime: Much Faster Than GPUI",
+      "url": "https://github.com/ppmpreetham/BUI",
+      "hot": "142"
     },
     {
       "rank": 2,
-      "title": "Search for everyone",
-      "url": "https://kagi.com/changelog#11820",
-      "hot": "559"
+      "title": "Claude Code sends your email address to websites",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "hot": "1134"
     },
     {
       "rank": 3,
       "title": "sshole",
       "url": "https://sshhole.com",
-      "hot": "2375"
+      "hot": "2697"
     },
     {
       "rank": 4,
-      "title": "MS Paint Remote Code Execution Vulnerability",
-      "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
-      "hot": "341"
+      "title": "Kugelblitz – Mac-Native Google Earth Alternative",
+      "url": "https://apps.metaebene.me/en/kugelblitz",
+      "hot": "56"
     },
     {
       "rank": 5,
-      "title": "Inkling 2 Small",
-      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
-      "hot": "82"
+      "title": "App Store 2026 in numbers: AI, pricing, abandoned apps",
+      "url": "https://obelisk.club/research/app-store-2026",
+      "hot": "29"
     },
     {
       "rank": 6,
-      "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
-      "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
-      "hot": "595"
+      "title": "Multiplayer tanks that demolish real buildings from OpenStreetMap",
+      "url": "https://worldstrike.fun/",
+      "hot": "38"
     },
     {
       "rank": 7,
-      "title": "The Hackintosh Reborn",
-      "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
-      "hot": "218"
+      "title": "MS Paint Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+      "hot": "548"
     },
     {
       "rank": 8,
-      "title": "Window Sweaters",
-      "url": "https://github.com/saragordic/window-sweaters",
-      "hot": "261"
+      "title": "Pwn.college",
+      "url": "https://pwn.college/",
+      "hot": "147"
     },
     {
       "rank": 9,
-      "title": "Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM",
-      "url": "https://firenook.dev/",
-      "hot": "41"
+      "title": "Nvidia Kubernetes Engine (NVKE)",
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "hot": "77"
     },
     {
       "rank": 10,
-      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
-      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
-      "hot": "89"
+      "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
+      "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
+      "hot": "82"
     }
   ]
 }

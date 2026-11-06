@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-06T02:53:42+00:00",
+  "updated_at": "2026-11-06T09:59:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Cloudflare 与 VoidZero 联合推出 tsrs：由 AI 生成的 TypeScript 编译器 Rust 移植版",
+      "url": "https://www.infoq.cn/article/lGoA1ZSw6ojeh68GVlBl?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 06 Nov 2026 17:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "DigitalOcean 推出学习与数据服务，帮助 AI 智能体进行自我迭代",
+      "url": "https://www.infoq.cn/article/upfROwtEl8R75H24D13J?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 06 Nov 2026 15:25:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "从混元研发体系重构到 MaaS 推理优化，模型能力如何走向真实业务？",
+      "url": "https://www.infoq.cn/article/azhgYaRTIjsSSVfA8AaU?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 06 Nov 2026 14:34:37 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "NgRx 22 发布：引入 Resource Extensions 和动态 DeepSignal，增强 Angular 状态管理能力",
+      "url": "https://www.infoq.cn/article/zJmwNj2Erc0Ol10eSIIY?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 06 Nov 2026 14:01:37 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "智能体 Harness 的演进：从链、图到代码化",
+      "url": "https://www.infoq.cn/article/B7tsA5tjD08k2gd0OtXd?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 06 Nov 2026 13:00:00 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "“超脑”统一指挥，“狼族”协同作战：京东物流打造供应链 AI 机器人军团",
+      "url": "https://www.infoq.cn/article/1YeowHagkg1Or6wwy23P?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 06 Nov 2026 11:32:10 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "2026 年 PyTorch 大会：谷歌和 Meta 开源 TorchTPU，在 TPU 上原生支持 PyTorch",
+      "url": "https://www.infoq.cn/article/5s2oa0BLlgR8fplkq2uK?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 06 Nov 2026 11:17:27 GMT"
+    },
+    {
+      "rank": 8,
+      "title": "从仓储到配送，全程由 AI“指挥”：京东物流“超脑”3.0 的工业级 AI 实践",
+      "url": "https://www.infoq.cn/article/jBdvoUXheWN0oe6NfklO?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 06 Nov 2026 11:14:55 GMT"
+    },
+    {
+      "rank": 9,
       "title": "AI Native 企业研发工具链：架构重构与持续演进｜AICon北京",
       "url": "https://www.infoq.cn/article/4IUSd2wP28ua4Jd5fHG2?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "AI 狂烧 2000亿美元，谷歌全球启动“自愿买断”计划：最高补偿12个月工资",
       "url": "https://www.infoq.cn/article/vMSj216sQUhmeDH4H0G7?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 08:00:00 GMT"
-    },
-    {
-      "rank": 3,
-      "title": "当 Coding Agent 走进研发团队：我们打造并开源了自进化研发平台 LoopForge",
-      "url": "https://www.infoq.cn/article/QGaIWSgd9uwx2WGw0yFv?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 06 Nov 2026 07:14:48 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "模型之外，腾讯还在补什么？",
-      "url": "https://www.infoq.cn/article/UMlHzxNiS9tFfG9KadYs?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 05 Nov 2026 19:13:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "PHP 修复了两处已遭到攻击的严重远程代码执行漏洞",
-      "url": "https://www.infoq.cn/article/qUEjcWbwOj5RO59250Lu?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 05 Nov 2026 17:06:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "Claude Code 产品负责人Cut Wu 官宣加入 OpenAI",
-      "url": "https://www.infoq.cn/article/cDERcarozbrsCBNs5sWM?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 05 Nov 2026 16:53:21 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "MCP C# SDK 2.0 默认启用 HTTP 无状态模式，新增多轮请求能力",
-      "url": "https://www.infoq.cn/article/80iUxvCNB59aOgyXB7LN?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 05 Nov 2026 15:19:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "视频生成只是开始，AI 如何把内容做对？",
-      "url": "https://www.infoq.cn/article/GGILIuzW0RTGhoeuz9TD?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 05 Nov 2026 13:54:21 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "谷歌发布 ML Drift：为各类 GPU 加速端侧 AI 推理",
-      "url": "https://www.infoq.cn/article/hHzARIJTeqoqYpjNKEuq?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 05 Nov 2026 13:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "谷歌用 Gemini 4 Argon 一夜优化 ADK 代码库的 20 万行代码",
-      "url": "https://www.infoq.cn/article/u4fAoAH5vZPCV4TVqAcO?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 05 Nov 2026 11:00:00 GMT"
     }
   ]
 }

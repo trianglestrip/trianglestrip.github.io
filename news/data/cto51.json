@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-06T02:53:34+00:00",
+  "updated_at": "2026-11-06T09:59:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "从 0 到 1 搓个聊天列表（保姆级教程）",
-      "url": "https://ost.51cto.com/posts/62817",
-      "hot": "从0到1搓个聊天列表（保姆级教程）前言本文目标非常纯粹：代码一句不改就能跑，知识点一个不落地讲清楚。我会用最通俗的语言解释每一个装饰..."
+      "title": "HarmonyOS 7.0 3DGS实战（一）：手作时光馆的端侧重建闭环",
+      "url": "https://ost.51cto.com/posts/62868",
+      "hot": "01前言大家好，我是开发者Sally（DevSally），每天聚焦一个HarmonyOS的小功能。今天我要分享的是一个HarmonyOS7.03DGS的实战项目&mdash;&mdash;手作时..."
     },
     {
       "rank": 2,
-      "title": "打造一个“左滑上瘾”的电影清单 App",
-      "url": "https://ost.51cto.com/posts/62814",
-      "hot": "打造一个&ldquo;左滑上瘾&rdquo;的电影清单App第一站：&ldquo;装修&rdquo;工具准备（导入依赖）万丈高楼平地起，咱得先把&ldquo;砖头&rdquo;和&ldquo;水泥&rdquo;搬进来。这里我们导..."
+      "title": "HarmonyOS 7版本适配：apiAvailable避坑指南",
+      "url": "https://ost.51cto.com/posts/62865",
+      "hot": "大家好，今天接着聊apiAvailable，把上一篇埋的坑一次讲完。上篇结尾提了一句：版本号参数要用字面量形式直接写在调用处。这条规则展开讲，..."
     },
     {
       "rank": 3,
+      "title": "Google SRE 已经开始让 AI Agent 自主排障了：运维真的要变天了！",
+      "url": "https://www.51cto.com/article/860496.html",
+      "hot": "在部分故障场景下，AI Agent 已经可以独立完成从告警触发、日志分析、根因定位到执行修复动作的完整闭环，人类 SRE 只需要负责最终确认。"
+    },
+    {
+      "rank": 4,
+      "title": "从工具调用到虚拟文件系统：手把手搭建 DeepAgents 行业研究智能体",
+      "url": "https://www.51cto.com/article/860494.html",
+      "hot": "借助 LangChain 和 LangGraph，开发者无需从零开发核心逻辑，只需按步骤完善功能，就能快速搭建出具备 DeepAgents 能力的智能体。"
+    },
+    {
+      "rank": 5,
       "title": "大模型的推理注入与输出前缀攻击",
       "url": "https://www.51cto.com/article/860479.html",
       "hot": "随着 Agent 从简单问答走向长任务执行，安全架构需要保护的对象也在变化：不只是输入和输出，还包括模型依赖的历史上下文，以及整个执行过程中形成的状态。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "DeepSeek Super-agent 是什么，跟普通 agent 有什么区别",
       "url": "https://www.51cto.com/article/860477.html",
       "hot": "没有什么是加一层中间层不能解决的，如果有，那就再加一层。所以最简单的解法就是在你和 agent 之间，加一层中间层，负责承接你的需求，把任务交给下面干活的 agent。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "HAMi：GPU设备共享实现机制",
       "url": "https://www.51cto.com/article/860476.html",
       "hot": "HAMi 让多个 Pod 共享同一张物理 GPU，按显存和算力精细分配。本文从源码角度拆解这条链路：Pod 提交 → Webhook 准入 → 调度器选节点选设备 → 设备插件注入隔离层 → 容器内 CUDA API 劫持。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "大模型训练中的代码、权重与数据",
       "url": "https://www.51cto.com/article/860470.html",
       "hot": "大模型训练中的代码、权重与数据这三者不是单一静态形态，它们的\"载体\"会随训练不同阶段变化。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "第 40 篇：HTTP 缓存终极指南：彻底吃透 200、304 与缓存策略",
       "url": "https://www.51cto.com/article/860461.html",
       "hot": "今天，我们来彻底解决HTTP里最让人困惑的一个现象——304 Not Modified。为什么浏览器有时候不重新下载资源？"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Kimi K3.1 Pro 权重上线 Hugging Face：2.8T 参数，Agent Arena 开放模型第一",
       "url": "https://www.51cto.com/article/860460.html",
       "hot": "权重以 MXFP4 存储、激活用 MXFP8，官方称采用了量化感知训练。Hugging Face 接口显示仓库占用约 1.56TB，safetensors 统计的参数量约 2.78 万亿。vLLM、SGLang 和 TokenSpeed 都已给出部署 recipe。"
-    },
-    {
-      "rank": 9,
-      "title": "AI 做的页面，为什么一眼就假？有人把「假在哪儿」拆成了 75 条编号规则",
-      "url": "https://www.51cto.com/article/860459.html",
-      "hot": "Hallmark 不是一个让 AI 变好看的工具，是一份关于\"平均主义长什么样\"的取证报告。它把我们从\"说不上来\"推到\"第 38iii 条\"，这一步的价值，比它自带的 50 个主题大得多。"
-    },
-    {
-      "rank": 10,
-      "title": "刚刚，OpenAI全新GPT-6登场！强到不敢公开",
-      "url": "https://www.51cto.com/article/860440.html",
-      "hot": "OpenAI亲手放出了一个「超级AI黑客」！全新模型GPT-6 Cyber，今天正式登场。"
     }
   ]
 }
