@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-06T09:58:49+00:00",
+  "updated_at": "2026-11-06T17:10:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Python] NVIDIA/auto-ontology",
-      "url": "https://github.com/NVIDIA/auto-ontology",
-      "hot": "8,148"
+      "title": "[Rust] zed-industries/zed",
+      "url": "https://github.com/zed-industries/zed",
+      "hot": "93,279"
     },
     {
       "rank": 2,
-      "title": "[Shell] mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "hot": "315,977"
+      "title": "[Python] NVIDIA/auto-ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "hot": "8,640"
     },
     {
       "rank": 3,
-      "title": "[TypeScript] garrytan/gstack",
-      "url": "https://github.com/garrytan/gstack",
-      "hot": "140,260"
+      "title": "[Ruby] rails/rails",
+      "url": "https://github.com/rails/rails",
+      "hot": "58,938"
     },
     {
       "rank": 4,
-      "title": "[Python] Usagi-org/ai-goofish-monitor",
-      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
-      "hot": "18,091"
+      "title": "[C] mpv-player/mpv",
+      "url": "https://github.com/mpv-player/mpv",
+      "hot": "37,813"
     },
     {
       "rank": 5,
-      "title": "[Python] D4Vinci/Scrapling",
-      "url": "https://github.com/D4Vinci/Scrapling",
-      "hot": "98,488"
+      "title": "[Rust] rust-lang/rust",
+      "url": "https://github.com/rust-lang/rust",
+      "hot": "121,284"
     },
     {
       "rank": 6,
-      "title": "[Rust] vercel-labs/agent-desktop",
-      "url": "https://github.com/vercel-labs/agent-desktop",
-      "hot": "17,559"
+      "title": "[JavaScript] react/react",
+      "url": "https://github.com/react/react",
+      "hot": "252,133"
     },
     {
       "rank": 7,
-      "title": "[Rust] max-sixty/worktrunk",
-      "url": "https://github.com/max-sixty/worktrunk",
-      "hot": "11,692"
+      "title": "[TypeScript] angular/angular",
+      "url": "https://github.com/angular/angular",
+      "hot": "101,213"
     },
     {
       "rank": 8,
-      "title": "[C] lz4/lz4",
-      "url": "https://github.com/lz4/lz4",
-      "hot": "12,505"
+      "title": "[PHP] symfony/symfony",
+      "url": "https://github.com/symfony/symfony",
+      "hot": "31,305"
     },
     {
       "rank": 9,
-      "title": "[Python] google/skills",
-      "url": "https://github.com/google/skills",
-      "hot": "22,579"
+      "title": "[Go] prometheus/prometheus",
+      "url": "https://github.com/prometheus/prometheus",
+      "hot": "67,051"
     },
     {
       "rank": 10,
-      "title": "[Rust] vercel-labs/agent-browser",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "hot": "46,181"
+      "title": "[Python] google/skills",
+      "url": "https://github.com/google/skills",
+      "hot": "22,718"
     }
   ]
 }
