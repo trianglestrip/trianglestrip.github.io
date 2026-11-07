@@ -1,32 +1,32 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-07T01:45:15+00:00",
+  "updated_at": "2026-11-07T07:48:23+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "点得动还不够：给 HarmonyOS 6 画廊接上键盘和鼠标",
+      "url": "https://ost.51cto.com/posts/62901",
+      "hot": "1.前言四张颜色卡，点一下换一张大预览，再点一下收藏。触屏演示很顺利，换到电脑环境，用户自然会试试方向键和回车。页面如果一点反应也没..."
+    },
+    {
+      "rank": 2,
       "title": "沃顿教授：程序员的新工作是“经理”，监督AI比派任务更困难，别把Agent当“一键完成”",
       "url": "https://www.51cto.com/article/860534.html",
       "hot": "“程序员都要当经理了”听着像一句调侃，莫利克讲的却是实打实的工作量：任务交给Agent以后，人仍要说明目标、安排汇报、比较方案，还要在它越界前叫停。Agent写得越快，这些决定越容易接连出现。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Anthropic三大内部模型曝光！领先Opus5.5三个月，RSI缩短80%实验时间",
       "url": "https://www.51cto.com/article/860532.html",
       "hot": "Anthropic的三个内部神秘模型，曝光了。Model 2、Model 3、Model 4。真名还没公开，但训练时间和部分成绩已经出现了。"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "HarmonyOS 7.0 3DGS实战（一）：手作时光馆的端侧重建闭环",
       "url": "https://ost.51cto.com/posts/62868",
       "hot": "01前言大家好，我是开发者Sally（DevSally），每天聚焦一个HarmonyOS的小功能。今天我要分享的是一个HarmonyOS7.03DGS的实战项目&mdash;&mdash;手作时..."
-    },
-    {
-      "rank": 4,
-      "title": "HarmonyOS 7版本适配：apiAvailable避坑指南",
-      "url": "https://ost.51cto.com/posts/62865",
-      "hot": "大家好，今天接着聊apiAvailable，把上一篇埋的坑一次讲完。上篇结尾提了一句：版本号参数要用字面量形式直接写在调用处。这条规则展开讲，..."
     },
     {
       "rank": 5,
