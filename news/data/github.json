@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-07T07:48:12+00:00",
+  "updated_at": "2026-11-07T14:23:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Rust] zed-industries/zed",
-      "url": "https://github.com/zed-industries/zed",
-      "hot": "93,882"
+      "title": "[Rust] vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "hot": "46,489"
     },
     {
       "rank": 2,
-      "title": "[Python] NVIDIA/auto-ontology",
-      "url": "https://github.com/NVIDIA/auto-ontology",
-      "hot": "9,396"
+      "title": "[JavaScript] cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "hot": "64,994"
     },
     {
       "rank": 3,
-      "title": "[Ruby] rails/rails",
-      "url": "https://github.com/rails/rails",
-      "hot": "59,062"
+      "title": "[Python] google/skills",
+      "url": "https://github.com/google/skills",
+      "hot": "23,113"
     },
     {
       "rank": 4,
-      "title": "[C] mpv-player/mpv",
-      "url": "https://github.com/mpv-player/mpv",
-      "hot": "37,942"
+      "title": "[Shell] mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "hot": "317,279"
     },
     {
       "rank": 5,
-      "title": "[Rust] rust-lang/rust",
-      "url": "https://github.com/rust-lang/rust",
-      "hot": "121,542"
+      "title": "[Python] anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "hot": "188,416"
     },
     {
       "rank": 6,
-      "title": "[JavaScript] react/react",
-      "url": "https://github.com/react/react",
-      "hot": "252,317"
+      "title": "[TypeScript] meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "hot": "14,185"
     },
     {
       "rank": 7,
-      "title": "[TypeScript] angular/angular",
-      "url": "https://github.com/angular/angular",
-      "hot": "101,431"
+      "title": "[Go] prometheus/prometheus",
+      "url": "https://github.com/prometheus/prometheus",
+      "hot": "67,323"
     },
     {
       "rank": 8,
-      "title": "[PHP] symfony/symfony",
-      "url": "https://github.com/symfony/symfony",
-      "hot": "31,486"
+      "title": "[Python] sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "hot": "99,658"
     },
     {
       "rank": 9,
-      "title": "[Go] prometheus/prometheus",
-      "url": "https://github.com/prometheus/prometheus",
-      "hot": "67,251"
+      "title": "[TypeScript] milind-soni/OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "hot": "16,390"
     },
     {
       "rank": 10,
-      "title": "[Python] google/skills",
-      "url": "https://github.com/google/skills",
-      "hot": "22,969"
+      "title": "[Rust] astral-sh/ruff",
+      "url": "https://github.com/astral-sh/ruff",
+      "hot": "50,839"
     }
   ]
 }
