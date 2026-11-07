@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-07T18:54:06+00:00",
+  "updated_at": "2026-11-07T22:25:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Microsoft Researcher John Langford Exits. AI Frontiers Group Declared Finished",
-      "url": "https://businessexaminer.ca/victoria-articles/item/microsoft-researcher-john-langford-exits-as-ai-frontiers-group-is-declared/",
-      "hot": "48"
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "url": "https://hunch.net/?p=13764006",
+      "hot": "274"
     },
     {
       "rank": 2,
-      "title": "What I run on my $10 USD OpenStick, Linux, Homelab",
+      "title": "What I run on my $10 USD OpenStick homelab",
       "url": "https://blog.bosscher.ch/posts/openstick/",
-      "hot": "31"
+      "hot": "212"
     },
     {
       "rank": 3,
-      "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
-      "url": "https://github.com/hedgerow-dev/coldframe",
-      "hot": "71"
+      "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+      "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
+      "hot": "261"
     },
     {
       "rank": 4,
-      "title": "The End of AI Frontiers",
-      "url": "https://hunch.net/?p=13764006",
-      "hot": "34"
+      "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+      "url": "https://github.com/hedgerow-dev/coldframe",
+      "hot": "155"
     },
     {
       "rank": 5,
-      "title": "The $8 Linux Computer (2022)",
-      "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
-      "hot": "142"
+      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "hot": "140"
     },
     {
       "rank": 6,
-      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
-      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
-      "hot": "37"
+      "title": "Retro Song Bird: Plug in any Game Boy cartridge to hear the soundtrack",
+      "url": "https://www.retrosongbird.com/",
+      "hot": "14"
     },
     {
       "rank": 7,
-      "title": "How Long Can Life Wait?",
-      "url": "https://mceglowski.substack.com/p/how-long-can-life-wait",
-      "hot": "60"
+      "title": "Need for Speed Underground 2 online in the browser",
+      "url": "https://nfsu2.xyz/",
+      "hot": "717"
     },
     {
       "rank": 8,
-      "title": "Need for Speed Underground 2 online in the browser",
-      "url": "https://nfsu2.xyz/",
-      "hot": "579"
+      "title": "Uranium cubes reveal why the German nuclear project failed",
+      "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
+      "hot": "20"
     },
     {
       "rank": 9,
-      "title": "Five Memorable Books About Programming",
+      "title": "Five memorable books about programming (2008)",
       "url": "https://prog21.dadgum.com/19.html",
-      "hot": "12"
+      "hot": "61"
     },
     {
       "rank": 10,
-      "title": "Libghostty 1.0",
-      "url": "https://mitchellh.com/writing/libghostty-1-0",
-      "hot": "946"
+      "title": "The $8 Linux Computer (2022)",
+      "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+      "hot": "181"
     }
   ]
 }

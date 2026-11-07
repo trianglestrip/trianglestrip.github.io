@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-07T14:23:19+00:00",
+  "updated_at": "2026-11-07T22:24:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Rust] vercel-labs/agent-browser",
       "url": "https://github.com/vercel-labs/agent-browser",
-      "hot": "46,489"
+      "hot": "46,766"
     },
     {
       "rank": 2,
       "title": "[JavaScript] cloudflare/security-audit-skill",
       "url": "https://github.com/cloudflare/security-audit-skill",
-      "hot": "64,994"
+      "hot": "65,588"
     },
     {
       "rank": 3,
       "title": "[Python] google/skills",
       "url": "https://github.com/google/skills",
-      "hot": "23,113"
+      "hot": "23,345"
     },
     {
       "rank": 4,
       "title": "[Shell] mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "hot": "317,279"
+      "hot": "317,625"
     },
     {
       "rank": 5,
       "title": "[Python] anthropics/skills",
       "url": "https://github.com/anthropics/skills",
-      "hot": "188,416"
+      "hot": "188,722"
     },
     {
       "rank": 6,
       "title": "[TypeScript] meta/astryx",
       "url": "https://github.com/meta/astryx",
-      "hot": "14,185"
+      "hot": "14,432"
     },
     {
       "rank": 7,
       "title": "[Go] prometheus/prometheus",
       "url": "https://github.com/prometheus/prometheus",
-      "hot": "67,323"
+      "hot": "67,432"
     },
     {
       "rank": 8,
       "title": "[Python] sherlock-project/sherlock",
       "url": "https://github.com/sherlock-project/sherlock",
-      "hot": "99,658"
+      "hot": "100,331"
     },
     {
       "rank": 9,
       "title": "[TypeScript] milind-soni/OpenMausBot",
       "url": "https://github.com/milind-soni/OpenMausBot",
-      "hot": "16,390"
+      "hot": "16,888"
     },
     {
       "rank": 10,
       "title": "[Rust] astral-sh/ruff",
       "url": "https://github.com/astral-sh/ruff",
-      "hot": "50,839"
+      "hot": "50,957"
     }
   ]
 }

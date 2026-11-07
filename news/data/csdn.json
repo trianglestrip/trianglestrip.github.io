@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-07T18:54:00+00:00",
+  "updated_at": "2026-11-07T22:24:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "2026 AI 远程软件推荐：跑训练、喂 Agent、传模型",
       "url": "https://blog.csdn.net/Rqaqedamancy/article/details/170146327",
-      "hot": "26280"
+      "hot": "26640"
     },
     {
       "rank": 2,
       "title": "【AI大模型接入SDK】前端页面生成",
       "url": "https://blog.csdn.net/2401_89899187/article/details/170231428",
-      "hot": "24976"
+      "hot": "24478"
     },
     {
       "rank": 3,
       "title": "GPUWorks 私有化大模型推理平台实战：免 K8s 单二进制交付与异构算力统一纳管",
       "url": "https://blog.csdn.net/sinat_41617212/article/details/170136073",
-      "hot": "15186"
+      "hot": "14437"
     },
     {
       "rank": 4,
-      "title": "计算机网络篇19：传输层——套接字在内核的对象链，从 fd 到 tcp_sock 的四层嵌套",
-      "url": "https://blog.csdn.net/2502_94387000/article/details/169365444",
-      "hot": "12945"
+      "title": "Gemini 的回答也能被结构化抓取？AI Bot Scraper 对比测评",
+      "url": "https://blog.csdn.net/m0_64336780/article/details/170186459",
+      "hot": "12967"
     },
     {
       "rank": 5,
-      "title": "Gemini 的回答也能被结构化抓取？AI Bot Scraper 对比测评",
-      "url": "https://blog.csdn.net/m0_64336780/article/details/170186459",
-      "hot": "12597"
+      "title": "【LMP】规范精讲[13]: 参数的户口本、公钥的集装箱与出厂的兜底值",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/169650360",
+      "hot": "11181"
     },
     {
       "rank": 6,
-      "title": "【LMP】规范精讲[13]: 参数的户口本、公钥的集装箱与出厂的兜底值",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/169650360",
-      "hot": "11456"
+      "title": "【Linux网络】TCP 服务器如何并发处理多个客户端？从 fork、僵尸进程到双重 fork",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/170052095",
+      "hot": "10286"
     },
     {
       "rank": 7,
-      "title": "【Linux网络】TCP 服务器如何并发处理多个客户端？从 fork、僵尸进程到双重 fork",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/170052095",
-      "hot": "10523"
+      "title": "Spring Boot 性能优化实战：从启动加速到运行时调优",
+      "url": "https://blog.csdn.net/vipxieliang/article/details/170123577",
+      "hot": "10082"
     },
     {
       "rank": 8,
       "title": "Docker 容器启动成功，接口却访问不了？从端口映射到防火墙，按 5 步定位",
       "url": "https://blog.csdn.net/2403_86779341/article/details/170201291",
-      "hot": "10226"
+      "hot": "9154"
     },
     {
       "rank": 9,
-      "title": "Spring Boot 性能优化实战：从启动加速到运行时调优",
-      "url": "https://blog.csdn.net/vipxieliang/article/details/170123577",
-      "hot": "10054"
+      "title": "时序数据库怎么选？先回答这五个问题",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/170199885",
+      "hot": "9113"
     },
     {
       "rank": 10,
-      "title": "时序数据库怎么选？先回答这五个问题",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/170199885",
-      "hot": "9667"
+      "title": "【AI杂谈】Midjourney 出图与提示词：四宫格迭代、参数全解、角色一致性、商用避坑",
+      "url": "https://blog.csdn.net/say_fall/article/details/170245529",
+      "hot": "9072"
     }
   ]
 }
