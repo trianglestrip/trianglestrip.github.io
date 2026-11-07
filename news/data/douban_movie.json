@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-07T14:23:04+00:00",
+  "updated_at": "2026-11-07T18:53:39+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,9 +30,9 @@
     },
     {
       "rank": 5,
-      "title": "蒸蒸日上",
-      "url": "https://movie.douban.com/subject/37296949/",
-      "hot": "评分 7.8"
+      "title": "后会友期",
+      "url": "https://movie.douban.com/subject/37100984/",
+      "hot": "评分 8.7"
     },
     {
       "rank": 6,
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "醉梦",
-      "url": "https://movie.douban.com/subject/37042229/",
-      "hot": "评分 7.5"
+      "title": "八仙！",
+      "url": "https://movie.douban.com/subject/36882191/",
+      "hot": "评分 8.2"
     },
     {
       "rank": 8,
-      "title": "生日快乐",
-      "url": "https://movie.douban.com/subject/37322586/",
-      "hot": "评分 8.9"
+      "title": "蒸蒸日上",
+      "url": "https://movie.douban.com/subject/37296949/",
+      "hot": "评分 7.8"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "后会友期",
-      "url": "https://movie.douban.com/subject/37100984/",
-      "hot": "评分 8.7"
+      "title": "生日快乐",
+      "url": "https://movie.douban.com/subject/37322586/",
+      "hot": "评分 8.9"
     }
   ]
 }
