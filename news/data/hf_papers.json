@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-06T17:10:38+00:00",
+  "updated_at": "2026-11-07T01:45:33+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
-      "url": "https://huggingface.co/papers/2611.01560",
-      "hot": "47"
+      "title": "VisSearch-Bench: Evaluating Long Horizon Visual Search in Multimodal Agents",
+      "url": "https://huggingface.co/papers/2611.04894",
+      "hot": "17"
     },
     {
       "rank": 9,
-      "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
-      "url": "https://huggingface.co/papers/2610.31329",
-      "hot": "45"
+      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+      "url": "https://huggingface.co/papers/2611.01560",
+      "hot": "48"
     },
     {
       "rank": 10,
-      "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
-      "url": "https://huggingface.co/papers/2508.16279",
-      "hot": "71"
+      "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+      "url": "https://huggingface.co/papers/2610.31329",
+      "hot": "45"
     }
   ]
 }

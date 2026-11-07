@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-06T22:02:20+00:00",
+  "updated_at": "2026-11-07T01:45:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "线上 Worker 变慢，本地却复现不了？Cloudflare 让开发者直接看生产环境火焰图",
+      "url": "https://www.infoq.cn/article/pMNGPheLLJ8hkfikmjUU?utm_source=rss&utm_medium=article",
+      "hot": "Sat, 07 Nov 2026 09:00:00 GMT"
+    },
+    {
+      "rank": 2,
       "title": "Cloudflare 与 VoidZero 联合推出 tsrs：由 AI 生成的 TypeScript 编译器 Rust 移植版",
       "url": "https://www.infoq.cn/article/lGoA1ZSw6ojeh68GVlBl?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 17:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "DigitalOcean 推出学习与数据服务，帮助 AI 智能体进行自我迭代",
       "url": "https://www.infoq.cn/article/upfROwtEl8R75H24D13J?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 15:25:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "从混元研发体系重构到 MaaS 推理优化，模型能力如何走向真实业务？",
       "url": "https://www.infoq.cn/article/azhgYaRTIjsSSVfA8AaU?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 14:34:37 GMT"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "NgRx 22 发布：引入 Resource Extensions 和动态 DeepSignal，增强 Angular 状态管理能力",
       "url": "https://www.infoq.cn/article/zJmwNj2Erc0Ol10eSIIY?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 14:01:37 GMT"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "智能体 Harness 的演进：从链、图到代码化",
       "url": "https://www.infoq.cn/article/B7tsA5tjD08k2gd0OtXd?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 13:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "“超脑”统一指挥，“狼族”协同作战：京东物流打造供应链 AI 机器人军团",
       "url": "https://www.infoq.cn/article/1YeowHagkg1Or6wwy23P?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 11:32:10 GMT"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "2026 年 PyTorch 大会：谷歌和 Meta 开源 TorchTPU，在 TPU 上原生支持 PyTorch",
       "url": "https://www.infoq.cn/article/5s2oa0BLlgR8fplkq2uK?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 11:17:27 GMT"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "从仓储到配送，全程由 AI“指挥”：京东物流“超脑”3.0 的工业级 AI 实践",
       "url": "https://www.infoq.cn/article/jBdvoUXheWN0oe6NfklO?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 11:14:55 GMT"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "AI Native 企业研发工具链：架构重构与持续演进｜AICon北京",
       "url": "https://www.infoq.cn/article/4IUSd2wP28ua4Jd5fHG2?utm_source=rss&utm_medium=article",
       "hot": "Fri, 06 Nov 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "AI 狂烧 2000亿美元，谷歌全球启动“自愿买断”计划：最高补偿12个月工资",
-      "url": "https://www.infoq.cn/article/vMSj216sQUhmeDH4H0G7?utm_source=rss&utm_medium=article",
-      "hot": "Fri, 06 Nov 2026 08:00:00 GMT"
     }
   ]
 }

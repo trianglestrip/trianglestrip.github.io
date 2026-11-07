@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-06T17:10:07+00:00",
+  "updated_at": "2026-11-07T01:45:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Rust] zed-industries/zed",
       "url": "https://github.com/zed-industries/zed",
-      "hot": "93,279"
+      "hot": "93,652"
     },
     {
       "rank": 2,
       "title": "[Python] NVIDIA/auto-ontology",
       "url": "https://github.com/NVIDIA/auto-ontology",
-      "hot": "8,640"
+      "hot": "9,080"
     },
     {
       "rank": 3,
       "title": "[Ruby] rails/rails",
       "url": "https://github.com/rails/rails",
-      "hot": "58,938"
+      "hot": "59,032"
     },
     {
       "rank": 4,
       "title": "[C] mpv-player/mpv",
       "url": "https://github.com/mpv-player/mpv",
-      "hot": "37,813"
+      "hot": "37,884"
     },
     {
       "rank": 5,
       "title": "[Rust] rust-lang/rust",
       "url": "https://github.com/rust-lang/rust",
-      "hot": "121,284"
+      "hot": "121,463"
     },
     {
       "rank": 6,
       "title": "[JavaScript] react/react",
       "url": "https://github.com/react/react",
-      "hot": "252,133"
+      "hot": "252,262"
     },
     {
       "rank": 7,
       "title": "[TypeScript] angular/angular",
       "url": "https://github.com/angular/angular",
-      "hot": "101,213"
+      "hot": "101,369"
     },
     {
       "rank": 8,
       "title": "[PHP] symfony/symfony",
       "url": "https://github.com/symfony/symfony",
-      "hot": "31,305"
+      "hot": "31,437"
     },
     {
       "rank": 9,
       "title": "[Go] prometheus/prometheus",
       "url": "https://github.com/prometheus/prometheus",
-      "hot": "67,051"
+      "hot": "67,192"
     },
     {
       "rank": 10,
       "title": "[Python] google/skills",
       "url": "https://github.com/google/skills",
-      "hot": "22,718"
+      "hot": "22,849"
     }
   ]
 }

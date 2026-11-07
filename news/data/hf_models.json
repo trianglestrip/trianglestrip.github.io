@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-06T17:10:38+00:00",
+  "updated_at": "2026-11-07T01:45:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "hot": "1411"
+      "hot": "1502"
     },
     {
       "rank": 2,
       "title": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
-      "hot": "890"
+      "hot": "944"
     },
     {
       "rank": 3,
       "title": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-      "hot": "765"
+      "hot": "793"
     },
     {
       "rank": 4,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "10822"
+      "hot": "10869"
     },
     {
       "rank": 5,
       "title": "burner22/numbat",
       "url": "https://huggingface.co/burner22/numbat",
-      "hot": "365"
+      "hot": "373"
     },
     {
       "rank": 6,
       "title": "FusionCow/Sulphur-3",
       "url": "https://huggingface.co/FusionCow/Sulphur-3",
-      "hot": "390"
+      "hot": "395"
     },
     {
       "rank": 7,
-      "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "hot": "3070"
+      "title": "ricursiveAI/Ripple-65B-Preview",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "hot": "333"
     },
     {
       "rank": 8,
-      "title": "ricursiveAI/Ripple-65B-Preview",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-      "hot": "312"
+      "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "hot": "3073"
     },
     {
       "rank": 9,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "19253"
+      "hot": "19276"
     },
     {
       "rank": 10,
       "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-      "hot": "338"
+      "hot": "348"
     }
   ]
 }
