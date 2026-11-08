@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-08T14:34:37+00:00",
+  "updated_at": "2026-11-08T19:02:06+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,51 +18,51 @@
     },
     {
       "rank": 3,
-      "title": "嫁金钗",
-      "url": "https://movie.douban.com/subject/37191789/",
-      "hot": "评分 7.0"
-    },
-    {
-      "rank": 4,
       "title": "生化危机：爆发夜",
       "url": "https://movie.douban.com/subject/37068446/",
       "hot": "评分 7.3"
     },
     {
+      "rank": 4,
+      "title": "嫁金钗",
+      "url": "https://movie.douban.com/subject/37191789/",
+      "hot": "评分 7.0"
+    },
+    {
       "rank": 5,
-      "title": "后会友期",
-      "url": "https://movie.douban.com/subject/37100984/",
-      "hot": "评分 8.7"
-    },
-    {
-      "rank": 6,
-      "title": "黑球",
-      "url": "https://movie.douban.com/subject/37215318/",
-      "hot": "评分 8.7"
-    },
-    {
-      "rank": 7,
       "title": "八仙！",
       "url": "https://movie.douban.com/subject/36882191/",
       "hot": "评分 8.2"
     },
     {
+      "rank": 6,
+      "title": "可能的爱",
+      "url": "https://movie.douban.com/subject/36847425/",
+      "hot": "评分 8.7"
+    },
+    {
+      "rank": 7,
+      "title": "后会友期",
+      "url": "https://movie.douban.com/subject/37100984/",
+      "hot": "评分 8.7"
+    },
+    {
       "rank": 8,
+      "title": "黑球",
+      "url": "https://movie.douban.com/subject/37215318/",
+      "hot": "评分 8.7"
+    },
+    {
+      "rank": 9,
       "title": "蒸蒸日上",
       "url": "https://movie.douban.com/subject/37296949/",
       "hot": "评分 7.8"
     },
     {
-      "rank": 9,
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.3"
-    },
-    {
       "rank": 10,
-      "title": "生日快乐",
-      "url": "https://movie.douban.com/subject/37322586/",
-      "hot": "评分 8.9"
+      "title": "末路兼职",
+      "url": "https://movie.douban.com/subject/37210712/",
+      "hot": ""
     }
   ]
 }

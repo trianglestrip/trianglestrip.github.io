@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-08T14:35:03+00:00",
+  "updated_at": "2026-11-08T19:02:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Person of Interest",
-      "url": "https://krthr.co/person-of-interest/",
-      "hot": "165"
+      "title": "Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders",
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "hot": "85"
     },
     {
       "rank": 2,
       "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
       "url": "https://github.com/synchopate/llama-modchip",
-      "hot": "74"
+      "hot": "262"
     },
     {
       "rank": 3,
-      "title": "Quadrillion-parameter transformers and how to train them",
-      "url": "https://qlabs.sh/research/parameters",
-      "hot": "17"
+      "title": "A Little Snitch for Windows",
+      "url": "https://packethound.app/",
+      "hot": "24"
     },
     {
       "rank": 4,
-      "title": "JIT bitmap text rendering for microcontrollers",
-      "url": "https://linebender.org/blog/jit-bitmap-text/",
-      "hot": "43"
+      "title": "The Reconstruction of Torn Documents",
+      "url": "https://www.bundesarchiv.de/en/stasi-records-archive/the-reconstruction-of-torn-documents/",
+      "hot": "53"
     },
     {
       "rank": 5,
-      "title": "Porting Android 16 to my blind mother's keypad phone",
-      "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
-      "hot": "27"
+      "title": "Writing as a thinking tool",
+      "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+      "hot": "166"
     },
     {
       "rank": 6,
-      "title": "Goodbye Claude, Hello Pi",
-      "url": "https://caleb.software/posts/claude-to-pi.html",
-      "hot": "454"
+      "title": "I'm not a fan of Deno's security model (2024)",
+      "url": "https://goldstein.lol/posts/deno-security/",
+      "hot": "40"
     },
     {
       "rank": 7,
-      "title": "Petered (what happens after the Peter Principle)",
-      "url": "https://aworkinglibrary.com/writing/petered",
-      "hot": "87"
+      "title": "Porting Android 16 to my blind mother's keypad phone",
+      "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
+      "hot": "109"
     },
     {
       "rank": 8,
-      "title": "What I run on my $10 USD OpenStick homelab",
-      "url": "https://blog.bosscher.ch/posts/openstick/",
-      "hot": "654"
+      "title": "Goodbye Claude, hello Pi",
+      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "hot": "586"
     },
     {
       "rank": 9,
-      "title": "Clj.rs – a Clojure dialect implemented in Rust",
-      "url": "https://clj.rs/",
-      "hot": "96"
+      "title": "UK House of Lords to propose mandatory CSAM detection software on smartphones",
+      "url": "https://observer.co.uk/news/national/article/fight-to-block-child-sexual-abuse-images-unites-peers-and-mps-in-cross-party-campaign",
+      "hot": "19"
     },
     {
       "rank": 10,
-      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-      "hot": "464"
+      "title": "Show HN: Vegetable Gardening for Engineers",
+      "url": "https://jrcpl.us/contrib/2020/gardening-for-engineers/",
+      "hot": "53"
     }
   ]
 }
