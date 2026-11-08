@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-08T19:02:26+00:00",
+  "updated_at": "2026-11-08T22:43:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders",
-      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-      "hot": "85"
+      "title": "Dux: Free, open-source Wayland desktop shell with file manager and theming",
+      "url": "https://duxlabs.dev/",
+      "hot": "129"
     },
     {
       "rank": 2,
-      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
-      "url": "https://github.com/synchopate/llama-modchip",
-      "hot": "262"
+      "title": "Ask HN: What are you working on? (November 2026)",
+      "url": "https://news.ycombinator.com/item?id=50417407",
+      "hot": "47"
     },
     {
       "rank": 3,
-      "title": "A Little Snitch for Windows",
-      "url": "https://packethound.app/",
-      "hot": "24"
+      "title": "Declarative Dragging",
+      "url": "https://declarative-dragging.github.io/",
+      "hot": "224"
     },
     {
       "rank": 4,
-      "title": "The Reconstruction of Torn Documents",
-      "url": "https://www.bundesarchiv.de/en/stasi-records-archive/the-reconstruction-of-torn-documents/",
-      "hot": "53"
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "hot": "492"
     },
     {
       "rank": 5,
-      "title": "Writing as a thinking tool",
-      "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
-      "hot": "166"
+      "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
+      "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "hot": "155"
     },
     {
       "rank": 6,
-      "title": "I'm not a fan of Deno's security model (2024)",
-      "url": "https://goldstein.lol/posts/deno-security/",
-      "hot": "40"
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "url": "https://github.com/synchopate/llama-modchip",
+      "hot": "326"
     },
     {
       "rank": 7,
-      "title": "Porting Android 16 to my blind mother's keypad phone",
-      "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
-      "hot": "109"
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "url": "https://ftrain.com/aboard-the-web-is-more-than-enough",
+      "hot": "27"
     },
     {
       "rank": 8,
-      "title": "Goodbye Claude, hello Pi",
-      "url": "https://caleb.software/posts/claude-to-pi.html",
-      "hot": "586"
+      "title": "Writing as a thinking tool",
+      "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+      "hot": "248"
     },
     {
       "rank": 9,
-      "title": "UK House of Lords to propose mandatory CSAM detection software on smartphones",
-      "url": "https://observer.co.uk/news/national/article/fight-to-block-child-sexual-abuse-images-unites-peers-and-mps-in-cross-party-campaign",
-      "hot": "19"
+      "title": "How I Fight AI Brain Fry",
+      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "hot": "113"
     },
     {
       "rank": 10,
-      "title": "Show HN: Vegetable Gardening for Engineers",
-      "url": "https://jrcpl.us/contrib/2020/gardening-for-engineers/",
-      "hot": "53"
+      "title": "Playing with the STM32MP2",
+      "url": "https://serd.es/2026/11/08/playing-with-stm32mp2.html",
+      "hot": "16"
     }
   ]
 }

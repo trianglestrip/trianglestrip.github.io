@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-08T19:02:21+00:00",
+  "updated_at": "2026-11-08T22:43:50+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI大模型接入SDK】前端页面生成",
       "url": "https://blog.csdn.net/2401_89899187/article/details/170231428",
-      "hot": "32032"
+      "hot": "31162"
     },
     {
       "rank": 2,
       "title": "AI 编程智能体 26：基于高德接口搭建可视化出行规划页面",
       "url": "https://blog.csdn.net/2503_92624912/article/details/170245941",
-      "hot": "27366"
+      "hot": "27506"
     },
     {
       "rank": 3,
       "title": "【AI】用 AI 做自己的个人网站（上）：选模板、写提示词，做出第一版",
       "url": "https://blog.csdn.net/2501_91731683/article/details/170243218",
-      "hot": "23697"
+      "hot": "25124"
     },
     {
       "rank": 4,
       "title": "【AI智能体】Codex 实现OpenClaw 开源项目二次开发实战详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/168957064",
-      "hot": "20294"
+      "hot": "20963"
     },
     {
       "rank": 5,
-      "title": "Gemini 的回答也能被结构化抓取？AI Bot Scraper 对比测评",
-      "url": "https://blog.csdn.net/m0_64336780/article/details/170186459",
-      "hot": "18005"
+      "title": "【Linux网络】TCP 服务器如何并发处理多个客户端？从 fork、僵尸进程到双重 fork",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/170052095",
+      "hot": "16220"
     },
     {
       "rank": 6,
-      "title": "【Linux网络】TCP 服务器如何并发处理多个客户端？从 fork、僵尸进程到双重 fork",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/170052095",
-      "hot": "15254"
+      "title": "Gemini 的回答也能被结构化抓取？AI Bot Scraper 对比测评",
+      "url": "https://blog.csdn.net/m0_64336780/article/details/170186459",
+      "hot": "16163"
     },
     {
       "rank": 7,
-      "title": "ToDesk新功能实测：办公键盘、应用切换，向日葵这次真跟不上了",
-      "url": "https://blog.csdn.net/weixin_61514920/article/details/170291244",
-      "hot": "14058"
+      "title": "端侧芯片的「每瓦 Token 数」竞赛：端侧 AI 如何重塑芯片设计的底层逻辑",
+      "url": "https://blog.csdn.net/vipxieliang/article/details/170185519",
+      "hot": "15052"
     },
     {
       "rank": 8,
-      "title": "【LMP】规范精讲[13]: 参数的户口本、公钥的集装箱与出厂的兜底值",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/169650360",
-      "hot": "13989"
+      "title": "ToDesk新功能实测：办公键盘、应用切换，向日葵这次真跟不上了",
+      "url": "https://blog.csdn.net/weixin_61514920/article/details/170291244",
+      "hot": "13671"
     },
     {
       "rank": 9,
       "title": "Agent 数据安全实战：输入校验、PII 脱敏与输出过滤的三道防线",
       "url": "https://blog.csdn.net/sinat_41617212/article/details/170283953",
-      "hot": "13162"
+      "hot": "13242"
     },
     {
       "rank": 10,
       "title": "指令微调数据集构建_格式质量与数量的平衡",
       "url": "https://blog.csdn.net/2302_78391795/article/details/170245227",
-      "hot": "13000"
+      "hot": "12103"
     }
   ]
 }

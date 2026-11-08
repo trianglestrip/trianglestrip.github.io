@@ -1,20 +1,20 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-11-08T19:02:19+00:00",
+  "updated_at": "2026-11-08T22:43:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "集中式与分布式怎么选：从订单读写看 KingbaseES 的架构边界",
       "url": "https://juejin.cn/post/7704995965740728360",
-      "hot": "612"
+      "hot": "675"
     },
     {
       "rank": 2,
       "title": "神级 Skill，让 AI 用 HTML 代替 Markdown 回复",
       "url": "https://juejin.cn/post/7704902910831853587",
-      "hot": "306"
+      "hot": "315"
     },
     {
       "rank": 3,
@@ -44,24 +44,24 @@
       "rank": 7,
       "title": "Flutter 双端热更新新方案：基于 Dart 官方动态模块的 flutter_patcher 1.0.0",
       "url": "https://juejin.cn/post/7704594117821693988",
-      "hot": "216"
+      "hot": "225"
     },
     {
       "rank": 8,
-      "title": "Codex中必装的11个Skills",
-      "url": "https://juejin.cn/post/7705291560008531977",
-      "hot": "198"
+      "title": "实测 agent-desktop：AI 控制桌面不截图、不占鼠标键盘，连点 55 次计算器 0 失误",
+      "url": "https://juejin.cn/post/7704923158558621750",
+      "hot": "207"
     },
     {
       "rank": 9,
-      "title": "实测 agent-desktop：AI 控制桌面不截图、不占鼠标键盘，连点 55 次计算器 0 失误",
-      "url": "https://juejin.cn/post/7704923158558621750",
-      "hot": "198"
+      "title": "Codex中必装的11个Skills",
+      "url": "https://juejin.cn/post/7705291560008531977",
+      "hot": "207"
     },
     {
       "rank": 10,
-      "title": "公交App上“还有2站，约5分钟”怎么实现？90%的人答错这道大厂面试题：GPS漂移、ETA不准、10万QPS热点读全拆透（附完整代码）",
-      "url": "https://juejin.cn/post/7704562619551072298",
+      "title": "Flutter Impeller Vulkan 内存持续上涨，问题没想到是文字阴影",
+      "url": "https://juejin.cn/post/7704580987242872847",
       "hot": "198"
     }
   ]

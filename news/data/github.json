@@ -1,62 +1,62 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-08T14:34:51+00:00",
+  "updated_at": "2026-11-08T22:43:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Python] sherlock-project/sherlock",
       "url": "https://github.com/sherlock-project/sherlock",
-      "hot": "102,184"
+      "hot": "103,296"
     },
     {
       "rank": 2,
       "title": "[Go] dsx-ai-factory/nvke",
       "url": "https://github.com/dsx-ai-factory/nvke",
-      "hot": "719"
+      "hot": "819"
     },
     {
       "rank": 3,
       "title": "[TypeScript] milind-soni/OpenMausBot",
       "url": "https://github.com/milind-soni/OpenMausBot",
-      "hot": "17,784"
+      "hot": "18,161"
     },
     {
       "rank": 4,
       "title": "[Python] anthropics/claude-quickstarts",
       "url": "https://github.com/anthropics/claude-quickstarts",
-      "hot": "19,227"
+      "hot": "19,379"
     },
     {
       "rank": 5,
       "title": "[Rust] vercel-labs/agent-browser",
       "url": "https://github.com/vercel-labs/agent-browser",
-      "hot": "47,303"
+      "hot": "47,534"
     },
     {
       "rank": 6,
       "title": "[TypeScript] meta/astryx",
       "url": "https://github.com/meta/astryx",
-      "hot": "15,356"
+      "hot": "16,505"
     },
     {
       "rank": 7,
       "title": "[Python] anthropics/skills",
       "url": "https://github.com/anthropics/skills",
-      "hot": "189,231"
+      "hot": "189,563"
     },
     {
       "rank": 8,
       "title": "[C++] google-deepmind/mujoco",
       "url": "https://github.com/google-deepmind/mujoco",
-      "hot": "16,200"
+      "hot": "16,365"
     },
     {
       "rank": 9,
       "title": "[TypeScript] ranxianglei/billion-context",
       "url": "https://github.com/ranxianglei/billion-context",
-      "hot": "4,905"
+      "hot": "5,092"
     }
   ]
 }
