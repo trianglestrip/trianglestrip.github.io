@@ -1,20 +1,20 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-08T07:52:44+00:00",
+  "updated_at": "2026-11-08T14:35:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "VibeVoice Technical Report",
-      "url": "https://huggingface.co/papers/2508.19205",
-      "hot": "184"
-    },
-    {
-      "rank": 2,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "162"
+    },
+    {
+      "rank": 2,
+      "title": "VibeVoice Technical Report",
+      "url": "https://huggingface.co/papers/2508.19205",
+      "hot": "184"
     },
     {
       "rank": 3,
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "Unlimited OCR Works",
-      "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "103"
-    },
-    {
-      "rank": 8,
       "title": "Persistent Recursive Worlds Enable Autonomous Software Evolution",
       "url": "https://huggingface.co/papers/2608.10450",
       "hot": "8"
+    },
+    {
+      "rank": 8,
+      "title": "Unlimited OCR Works",
+      "url": "https://huggingface.co/papers/2606.23050",
+      "hot": "103"
     },
     {
       "rank": 9,

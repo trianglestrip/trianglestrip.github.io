@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-08T07:52:26+00:00",
+  "updated_at": "2026-11-08T14:35:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "从应用预览走到系统桌面：HarmonyOS 6「桌边一句」服务卡片",
-      "url": "https://ost.51cto.com/posts/62989",
-      "hot": "1.前言便签应用里有一张好看的绿色方块，不代表桌面卡片就做好了。桌面里的内容由宿主展示，卡片提供方负责给数据，按钮动作也要通过卡片机..."
+      "title": "【三方库】HarmonyOS 7 + @tencent/mmkv 实战：把“稍后读”做到秒开，重构轻量状态持久化链路",
+      "url": "https://ost.51cto.com/posts/63004",
+      "hot": "事情只是从一个很普通的产品问题开始。&ldquo;用户把文章看到73%，退出应用，第二天再打开，能不能直接回到上次的位置？&rdquo;我说能。&ldquo;主题、收藏..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7 沉浸光感 + 手势响应 + 非线性形变实战：重构“星空天气”交互首页",
-      "url": "https://ost.51cto.com/posts/62945",
-      "hot": "我第一次把&ldquo;星空天气&rdquo;的新首页发到设计群里，收到的第一条反馈不是&ldquo;好看&rdquo;，而是：终于不像一张把天气信息摊平的表格了。这句话挺准确。..."
+      "title": "平行视界实验室 HarmonyOS 7.0 周末有展⑦：多端分栏规则遗漏问题",
+      "url": "https://ost.51cto.com/posts/63002",
+      "hot": "1.序言为平板调整分栏比例，看起来只需要改一行配置。&ldquo;周末有展&rdquo;此前使用固定的1:2。现在希望平板宽形窗口采用1:1，于是在easygo.json中..."
     },
     {
       "rank": 3,
