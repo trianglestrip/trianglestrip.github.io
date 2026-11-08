@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-08T01:32:48+00:00",
+  "updated_at": "2026-11-08T07:52:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "zlang v0.12.14.1 发布，支持中文编程、支持 Web 开发/桌面应用开发的国产全自研编程语言",
+      "url": "https://www.oschina.net/news/503469",
+      "hot": "Sun, 08 Nov 2026 10:57:35 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "🔥🔥🔥 拾趣 (Magpie) v0.1.21 发布：解锁图片识别新模式，优化使用体验",
+      "url": "https://www.oschina.net/news/503468",
+      "hot": "Sun, 08 Nov 2026 09:17:24 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Cordonix 0.4.1 发布：每日后台更新，完善全部 MCP 工具说明",
+      "url": "https://www.oschina.net/news/503467",
+      "hot": "Sun, 08 Nov 2026 01:15:32 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "OpenGoLive 0.9.8 发布：改进数据恢复，新增本地编辑冲突检测与组权限",
+      "url": "https://www.oschina.net/news/503466",
+      "hot": "Sun, 08 Nov 2026 00:14:13 +0800"
+    },
+    {
+      "rank": 5,
       "title": ":fire: xbatis 1.10.15 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
       "url": "https://www.oschina.net/news/503464",
       "hot": "Sat, 07 Nov 2026 17:40:05 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Jync v1.14.0 · 应用内 HTTPS 与配置包迁移",
       "url": "https://www.oschina.net/news/503458",
       "hot": "Sat, 07 Nov 2026 08:59:08 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "2026 开源行业解决方案创新赛「开源基础软件与解决方案赛道」决赛名单公布",
       "url": "https://www.oschina.net/news/503457",
       "hot": "Fri, 06 Nov 2026 19:23:16 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "2026 开源行业解决方案创新赛「开源智能硬件解决方案赛道」决赛名单公布",
       "url": "https://www.oschina.net/news/503456",
       "hot": "Fri, 06 Nov 2026 18:54:23 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "2026 开源行业解决方案创新赛「“地心飞行”AIGC创作赛道」决赛名单公布",
       "url": "https://www.oschina.net/news/503451",
       "hot": "Fri, 06 Nov 2026 15:48:43 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "qData 数据中台开源版 v1.6.6 发布：ETL 模块轻量化升级，优化定时任务磁盘占用问题",
       "url": "https://www.oschina.net/news/503440",
       "hot": "Fri, 06 Nov 2026 14:45:58 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "OpenSSH 严重绕过漏洞“sshole”让任意超长密码都能登录 root",
-      "url": "https://www.oschina.net/news/503439/openssh-sshhole",
-      "hot": "Fri, 06 Nov 2026 14:41:31 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "当 Coding Agent 走进研发团队：腾讯开源了云端自进化研发平台 LoopForge",
-      "url": "https://www.oschina.net/news/503437",
-      "hot": "Fri, 06 Nov 2026 14:31:36 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "ModStartBlog v12.0.0 一键安装、主题焕新、安全加固与体验升级",
-      "url": "https://www.oschina.net/news/503436",
-      "hot": "Fri, 06 Nov 2026 14:16:12 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "ModStart v12.0.0 图形化安装、安全加固与后台体验全面升级",
-      "url": "https://www.oschina.net/news/503435",
-      "hot": "Fri, 06 Nov 2026 14:13:41 +0800"
     }
   ]
 }

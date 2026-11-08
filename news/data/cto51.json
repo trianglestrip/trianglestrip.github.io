@@ -1,44 +1,44 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-08T01:32:44+00:00",
+  "updated_at": "2026-11-08T07:52:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "从应用预览走到系统桌面：HarmonyOS 6「桌边一句」服务卡片",
+      "url": "https://ost.51cto.com/posts/62989",
+      "hot": "1.前言便签应用里有一张好看的绿色方块，不代表桌面卡片就做好了。桌面里的内容由宿主展示，卡片提供方负责给数据，按钮动作也要通过卡片机..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 7 沉浸光感 + 手势响应 + 非线性形变实战：重构“星空天气”交互首页",
+      "url": "https://ost.51cto.com/posts/62945",
+      "hot": "我第一次把&ldquo;星空天气&rdquo;的新首页发到设计群里，收到的第一条反馈不是&ldquo;好看&rdquo;，而是：终于不像一张把天气信息摊平的表格了。这句话挺准确。..."
+    },
+    {
+      "rank": 3,
       "title": "全民RSI时代来了？第一批中国玩家，已经在家让AI造AI",
       "url": "https://www.51cto.com/article/860538.html",
       "hot": "这两天，MIT的一篇「权重空间编程」博客在AI圈刷屏了。实验里，GPT-6 Astra自己写Python脚本排查诊断，只改了一个0.8B小模型里0.016%的权重，就治好了它的复读死循环，让数学成绩原地暴涨6倍。"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "抢跑DeepSeek！硅谷华人把下一代Agent Harness造出来了！？",
       "url": "https://www.51cto.com/article/860537.html",
       "hot": "DeepSeek和AFK AI在架构上的不谋而合，本质上则是两支团队穿透表层应用，对多智能体体系底层瓶颈、真实生产侧痛点形成的共识判断。当前AI浪潮走到当下，行业对Agent Harness的期待，正在发生一次关键转向——行业对Agent Harness的期待迎来关键跃迁，关注点从任务吞吐量，落到它所能承接的责任与复杂事务体量之上。"
     },
     {
-      "rank": 3,
-      "title": "点得动还不够：给 HarmonyOS 6 画廊接上键盘和鼠标",
-      "url": "https://ost.51cto.com/posts/62901",
-      "hot": "1.前言四张颜色卡，点一下换一张大预览，再点一下收藏。触屏演示很顺利，换到电脑环境，用户自然会试试方向键和回车。页面如果一点反应也没..."
-    },
-    {
-      "rank": 4,
+      "rank": 5,
       "title": "沃顿教授：程序员的新工作是“经理”，监督AI比派任务更困难，别把Agent当“一键完成”",
       "url": "https://www.51cto.com/article/860534.html",
       "hot": "“程序员都要当经理了”听着像一句调侃，莫利克讲的却是实打实的工作量：任务交给Agent以后，人仍要说明目标、安排汇报、比较方案，还要在它越界前叫停。Agent写得越快，这些决定越容易接连出现。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "Anthropic三大内部模型曝光！领先Opus5.5三个月，RSI缩短80%实验时间",
       "url": "https://www.51cto.com/article/860532.html",
       "hot": "Anthropic的三个内部神秘模型，曝光了。Model 2、Model 3、Model 4。真名还没公开，但训练时间和部分成绩已经出现了。"
-    },
-    {
-      "rank": 6,
-      "title": "HarmonyOS 7.0 3DGS实战（一）：手作时光馆的端侧重建闭环",
-      "url": "https://ost.51cto.com/posts/62868",
-      "hot": "01前言大家好，我是开发者Sally（DevSally），每天聚焦一个HarmonyOS的小功能。今天我要分享的是一个HarmonyOS7.03DGS的实战项目&mdash;&mdash;手作时..."
     },
     {
       "rank": 7,

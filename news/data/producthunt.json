@@ -1,68 +1,68 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-11-07T22:22:55+00:00",
+  "updated_at": "2026-11-08T07:51:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Fleeep",
+      "url": "https://www.producthunt.com/products/fleeep",
+      "hot": "2026-11-03T04:41:45-08:00"
+    },
+    {
+      "rank": 2,
       "title": "Switchy",
       "url": "https://www.producthunt.com/products/switchy",
       "hot": "2026-11-06T03:24:14-08:00"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Trace by Context.dev",
       "url": "https://www.producthunt.com/products/context-dev",
       "hot": "2026-11-06T20:05:08-08:00"
     },
     {
-      "rank": 3,
-      "title": "Sendoff",
-      "url": "https://www.producthunt.com/products/sendoff-2",
-      "hot": "2026-11-03T08:55:01-08:00"
-    },
-    {
       "rank": 4,
-      "title": "kayet",
-      "url": "https://www.producthunt.com/products/kayet",
-      "hot": "2026-11-03T05:54:00-08:00"
+      "title": "ChatGPT Images 2.6",
+      "url": "https://www.producthunt.com/products/openai",
+      "hot": "2026-11-05T08:20:03-08:00"
     },
     {
       "rank": 5,
+      "title": "Dino Kids",
+      "url": "https://www.producthunt.com/products/dino-kids",
+      "hot": "2026-11-03T23:14:57-08:00"
+    },
+    {
+      "rank": 6,
+      "title": "Duly",
+      "url": "https://www.producthunt.com/products/duly-life-organizer",
+      "hot": "2026-10-22T04:22:07-07:00"
+    },
+    {
+      "rank": 7,
       "title": "Quest",
       "url": "https://www.producthunt.com/products/quest-d8e9c4e8-cc0d-4b07-baee-e3dbf712c279",
       "hot": "2026-10-21T08:22:29-07:00"
     },
     {
-      "rank": 6,
-      "title": "PacerTrip",
-      "url": "https://www.producthunt.com/products/pacertrip",
-      "hot": "2026-10-22T04:54:24-07:00"
-    },
-    {
-      "rank": 7,
-      "title": "Exa Monitors v2",
-      "url": "https://www.producthunt.com/products/exa-ai",
-      "hot": "2026-11-02T10:27:33-08:00"
-    },
-    {
       "rank": 8,
-      "title": "Standflow",
-      "url": "https://www.producthunt.com/products/standflow",
-      "hot": "2026-10-31T15:13:34-07:00"
-    },
-    {
-      "rank": 9,
       "title": "Google Omni 1.2 Flash",
       "url": "https://www.producthunt.com/products/google-omni-1-2-flash",
       "hot": "2026-11-05T09:10:35-08:00"
     },
     {
+      "rank": 9,
+      "title": "LiveReview",
+      "url": "https://www.producthunt.com/products/livereview",
+      "hot": "2026-10-26T05:40:53-07:00"
+    },
+    {
       "rank": 10,
-      "title": "GPT‑6 Cyber",
-      "url": "https://www.producthunt.com/products/openai",
-      "hot": "2026-11-05T09:12:40-08:00"
+      "title": "Muse Realtime Avatar",
+      "url": "https://www.producthunt.com/products/meta-ai",
+      "hot": "2026-11-06T10:21:58-08:00"
     }
   ]
 }
