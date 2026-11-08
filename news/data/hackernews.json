@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-07T22:25:47+00:00",
+  "updated_at": "2026-11-08T01:32:45+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "The end of Microsoft Research's AI Frontiers group",
       "url": "https://hunch.net/?p=13764006",
-      "hot": "274"
+      "hot": "378"
     },
     {
       "rank": 2,
-      "title": "What I run on my $10 USD OpenStick homelab",
-      "url": "https://blog.bosscher.ch/posts/openstick/",
-      "hot": "212"
+      "title": "GitHub New pull request overview page in public preview",
+      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "hot": "55"
     },
     {
       "rank": 3,
-      "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
-      "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
-      "hot": "261"
+      "title": "What I run on my $10 USD OpenStick homelab",
+      "url": "https://blog.bosscher.ch/posts/openstick/",
+      "hot": "333"
     },
     {
       "rank": 4,
-      "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
-      "url": "https://github.com/hedgerow-dev/coldframe",
-      "hot": "155"
+      "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+      "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
+      "hot": "352"
     },
     {
       "rank": 5,
-      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
-      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
-      "hot": "140"
+      "title": "Making any integer with four 2s (2025)",
+      "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+      "hot": "54"
     },
     {
       "rank": 6,
-      "title": "Retro Song Bird: Plug in any Game Boy cartridge to hear the soundtrack",
-      "url": "https://www.retrosongbird.com/",
-      "hot": "14"
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "hot": "172"
     },
     {
       "rank": 7,
-      "title": "Need for Speed Underground 2 online in the browser",
-      "url": "https://nfsu2.xyz/",
-      "hot": "717"
+      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "hot": "202"
     },
     {
       "rank": 8,
       "title": "Uranium cubes reveal why the German nuclear project failed",
       "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
-      "hot": "20"
+      "hot": "65"
     },
     {
       "rank": 9,
-      "title": "Five memorable books about programming (2008)",
-      "url": "https://prog21.dadgum.com/19.html",
-      "hot": "61"
+      "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+      "url": "https://github.com/hedgerow-dev/coldframe",
+      "hot": "192"
     },
     {
       "rank": 10,
-      "title": "The $8 Linux Computer (2022)",
-      "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
-      "hot": "181"
+      "title": "Need for Speed Underground 2 online in the browser",
+      "url": "https://nfsu2.xyz/",
+      "hot": "816"
     }
   ]
 }
