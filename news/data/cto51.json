@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-08T22:43:57+00:00",
+  "updated_at": "2026-11-09T01:59:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【三方库】HarmonyOS 7 + @tencent/mmkv 实战：把“稍后读”做到秒开，重构轻量状态持久化链路",
-      "url": "https://ost.51cto.com/posts/63004",
-      "hot": "事情只是从一个很普通的产品问题开始。&ldquo;用户把文章看到73%，退出应用，第二天再打开，能不能直接回到上次的位置？&rdquo;我说能。&ldquo;主题、收藏..."
+      "title": "一个月73.8亿次提交！GitHub被AI代码挤爆，增配400万核还不够",
+      "url": "https://www.51cto.com/article/860608.html",
+      "hot": "代码写完点推送，进度条原地打转；自动测试卡死，合并请求合不进去，连AI编程助手Copilot也掉了线。"
     },
     {
       "rank": 2,
-      "title": "平行视界实验室 HarmonyOS 7.0 周末有展⑦：多端分栏规则遗漏问题",
-      "url": "https://ost.51cto.com/posts/63002",
-      "hot": "1.序言为平板调整分栏比例，看起来只需要改一行配置。&ldquo;周末有展&rdquo;此前使用固定的1:2。现在希望平板宽形窗口采用1:1，于是在easygo.json中..."
+      "title": "AI亲手改写Transformer架构！DeepSeek自我改造暴涨七分",
+      "url": "https://www.51cto.com/article/860607.html",
+      "hot": "7630亿参数的DeepSeek-V4.1-Flash，直接读取了自己做数学题时最深7层的内部激活状态。"
     },
     {
       "rank": 3,
-      "title": "全民RSI时代来了？第一批中国玩家，已经在家让AI造AI",
-      "url": "https://www.51cto.com/article/860538.html",
-      "hot": "这两天，MIT的一篇「权重空间编程」博客在AI圈刷屏了。实验里，GPT-6 Astra自己写Python脚本排查诊断，只改了一个0.8B小模型里0.016%的权重，就治好了它的复读死循环，让数学成绩原地暴涨6倍。"
+      "title": "NeurIPS'26 | 只干预十个维度，给智能体穿上安全机甲，准确率超97%",
+      "url": "https://www.51cto.com/article/860604.html",
+      "hot": "来自佐治亚大学，罗格斯大学，南加州大学等机构的研究团队提出Agent MechSuits，尝试为命令行智能体穿上一套能够感知内部状态的「安全机甲」。"
     },
     {
       "rank": 4,
-      "title": "抢跑DeepSeek！硅谷华人把下一代Agent Harness造出来了！？",
-      "url": "https://www.51cto.com/article/860537.html",
-      "hot": "DeepSeek和AFK AI在架构上的不谋而合，本质上则是两支团队穿透表层应用，对多智能体体系底层瓶颈、真实生产侧痛点形成的共识判断。当前AI浪潮走到当下，行业对Agent Harness的期待，正在发生一次关键转向——行业对Agent Harness的期待迎来关键跃迁，关注点从任务吞吐量，落到它所能承接的责任与复杂事务体量之上。"
+      "title": "起底Claude掌门人！31岁确诊睾丸癌，用杀鸡计算全人类的命",
+      "url": "https://www.51cto.com/article/860603.html",
+      "hot": "当年那个用公式算尽利弊的青年，成了硅谷最狂热的「AI奇点」信徒，也成了全硅谷最分裂的千亿掌门人。"
     },
     {
       "rank": 5,
-      "title": "沃顿教授：程序员的新工作是“经理”，监督AI比派任务更困难，别把Agent当“一键完成”",
-      "url": "https://www.51cto.com/article/860534.html",
-      "hot": "“程序员都要当经理了”听着像一句调侃，莫利克讲的却是实打实的工作量：任务交给Agent以后，人仍要说明目标、安排汇报、比较方案，还要在它越界前叫停。Agent写得越快，这些决定越容易接连出现。"
+      "title": "九成代码AI写，谁来审？Claude Code亮出六道关卡！",
+      "url": "https://www.51cto.com/article/860601.html",
+      "hot": "放眼整个Anthropic，主代码库每天合并的改动，从5月约2500次，涨到9月超过3万次。这么多代码，人还读得过来吗？如果连审查也交给AI，谁来判断它有没有犯错？"
     },
     {
       "rank": 6,
-      "title": "Anthropic三大内部模型曝光！领先Opus5.5三个月，RSI缩短80%实验时间",
-      "url": "https://www.51cto.com/article/860532.html",
-      "hot": "Anthropic的三个内部神秘模型，曝光了。Model 2、Model 3、Model 4。真名还没公开，但训练时间和部分成绩已经出现了。"
+      "title": "一周只上三天！Anthropic 35页报告：全球科研产出或拉爆16倍",
+      "url": "https://www.51cto.com/article/860599.html",
+      "hot": "「AI 2027追踪器」昨晚更新的一张图，刷爆了全网。这么一调，ASI到来的时间表，要再次提前6周！"
     },
     {
       "rank": 7,
-      "title": "Google SRE 已经开始让 AI Agent 自主排障了：运维真的要变天了！",
-      "url": "https://www.51cto.com/article/860496.html",
-      "hot": "在部分故障场景下，AI Agent 已经可以独立完成从告警触发、日志分析、根因定位到执行修复动作的完整闭环，人类 SRE 只需要负责最终确认。"
+      "title": "AI接管一家8万Star开源公司，写代码、派任务、查Bug全包了",
+      "url": "https://www.51cto.com/article/860595.html",
+      "hot": "LobeHub团队已经把这套工作方式用进了日常研发，让Agent自己拆任务、派活、写代码，甚至帮忙审查修改。"
     },
     {
       "rank": 8,
-      "title": "从工具调用到虚拟文件系统：手把手搭建 DeepAgents 行业研究智能体",
-      "url": "https://www.51cto.com/article/860494.html",
-      "hot": "借助 LangChain 和 LangGraph，开发者无需从零开发核心逻辑，只需按步骤完善功能，就能快速搭建出具备 DeepAgents 能力的智能体。"
+      "title": "OpenAI新模型临门一脚踩刹车！GPT-6.2曝出安全疑云",
+      "url": "https://www.51cto.com/article/860589.html",
+      "hot": "AI 圈开始流传另一种解释：OpenAI 新模型在发布前的最后阶段，被安全这一关挡住了。"
     },
     {
       "rank": 9,
-      "title": "大模型的推理注入与输出前缀攻击",
-      "url": "https://www.51cto.com/article/860479.html",
-      "hot": "随着 Agent 从简单问答走向长任务执行，安全架构需要保护的对象也在变化：不只是输入和输出，还包括模型依赖的历史上下文，以及整个执行过程中形成的状态。"
+      "title": "跨模型上下文交接还要重算KV？北大提出MapFlow，让注意力跨模型复用",
+      "url": "https://www.51cto.com/article/860588.html",
+      "hot": "一个模型已经完成的计算，能否帮助另一个模型更快地处理同一份上下文？"
     },
     {
       "rank": 10,
-      "title": "DeepSeek Super-agent 是什么，跟普通 agent 有什么区别",
-      "url": "https://www.51cto.com/article/860477.html",
-      "hot": "没有什么是加一层中间层不能解决的，如果有，那就再加一层。所以最简单的解法就是在你和 agent 之间，加一层中间层，负责承接你的需求，把任务交给下面干活的 agent。"
+      "title": "ICLR 2027首轮评审，槽点有点多",
+      "url": "https://www.51cto.com/article/860586.html",
+      "hot": "如果 AI 生成的评审包含虚假信息、幻觉或失实陈述，或者评审本身质量低下，审稿人可能因未履行互惠审稿义务而受到纪律处分。"
     }
   ]
 }
