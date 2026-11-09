@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-08T22:44:15+00:00",
+  "updated_at": "2026-11-09T09:09:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
-      "hot": "1364"
+      "hot": "1456"
     },
     {
       "rank": 2,
       "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-      "hot": "825"
+      "hot": "940"
     },
     {
       "rank": 3,
       "title": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "hot": "1725"
+      "hot": "1752"
     },
     {
       "rank": 4,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "11122"
+      "title": "ricursiveAI/Ripple-65B-Preview",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "hot": "421"
     },
     {
       "rank": 5,
-      "title": "ccore/Qwen3.5-4B-3D-Coder",
-      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-      "hot": "916"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "11162"
     },
     {
       "rank": 6,
-      "title": "ricursiveAI/Ripple-65B-Preview",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-      "hot": "399"
+      "title": "ccore/Qwen3.5-4B-3D-Coder",
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "hot": "931"
     },
     {
       "rank": 7,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "19409"
+      "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "hot": "2723"
     },
     {
       "rank": 8,
-      "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "hot": "2703"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "19433"
     },
     {
       "rank": 9,
-      "title": "FusionCow/Sulphur-3",
-      "url": "https://huggingface.co/FusionCow/Sulphur-3",
-      "hot": "418"
+      "title": "NousResearch/Arete-27B",
+      "url": "https://huggingface.co/NousResearch/Arete-27B",
+      "hot": "317"
     },
     {
       "rank": 10,
       "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "hot": "3106"
+      "hot": "3115"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-08T22:44:15+00:00",
+  "updated_at": "2026-11-09T09:09:07+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,15 +18,15 @@
     },
     {
       "rank": 3,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "64"
-    },
-    {
-      "rank": 4,
       "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
       "url": "https://huggingface.co/papers/2610.22732",
       "hot": "14"
+    },
+    {
+      "rank": 4,
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://huggingface.co/papers/2508.02739",
+      "hot": "64"
     },
     {
       "rank": 5,

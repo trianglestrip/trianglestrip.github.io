@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-09T01:59:37+00:00",
+  "updated_at": "2026-11-09T09:08:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "GOTC 2026 能让你动手实操的 6 个共建活动",
+      "url": "https://www.oschina.net/news/503483",
+      "hot": "Mon, 09 Nov 2026 15:49:56 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Vue 可视化 AI 表单设计器 FcDesigner v3.6 版本发布，支持导出 SQL 功能!",
+      "url": "https://www.oschina.net/news/503482",
+      "hot": "Mon, 09 Nov 2026 15:01:16 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "不用 Node 也能编译 Vue：一个原生二进制，把前后端做成一个工程",
+      "url": "https://www.oschina.net/news/503480",
+      "hot": "Mon, 09 Nov 2026 14:20:16 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "开源数据库管理工具 CloudDM 新版本发布，支持 OpenSearch、IoTDB 数据源",
+      "url": "https://www.oschina.net/news/503479",
+      "hot": "Mon, 09 Nov 2026 13:44:37 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "GrantForge 2026.4.0 正式发布：新增四大数据系统，组织同步与细粒度授权全面升级",
+      "url": "https://www.oschina.net/news/503478",
+      "hot": "Mon, 09 Nov 2026 11:19:10 +0800"
+    },
+    {
+      "rank": 6,
+      "title": ":clap:日志审计系统 WGLOG v2.3.1 正式发布",
+      "url": "https://www.oschina.net/news/503477",
+      "hot": "Mon, 09 Nov 2026 11:02:06 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "Vue 动态表单 FormCreate 3.2 发布!",
+      "url": "https://www.oschina.net/news/503476",
+      "hot": "Mon, 09 Nov 2026 10:20:45 +0800"
+    },
+    {
+      "rank": 8,
       "title": "积木报表漏洞清零计划：10 月以来修复 32 个安全漏洞，另加固 5 项",
       "url": "https://www.oschina.net/news/503472",
       "hot": "Sun, 08 Nov 2026 22:10:19 +0800"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "KnowForge 2026.0.10：从知识库，开始长出一点“社区”了",
       "url": "https://www.oschina.net/news/503471",
       "hot": "Sun, 08 Nov 2026 21:24:40 +0800"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "Jync v2.0.0 · Spring Boot 4.1 平台升级",
       "url": "https://www.oschina.net/news/503470",
       "hot": "Sun, 08 Nov 2026 17:29:02 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "zlang v0.12.14.1 发布，支持中文编程、支持 Web 开发/桌面应用开发的国产全自研编程语言",
-      "url": "https://www.oschina.net/news/503469",
-      "hot": "Sun, 08 Nov 2026 10:57:35 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "🔥🔥🔥 拾趣 (Magpie) v0.1.21 发布：解锁图片识别新模式，优化使用体验",
-      "url": "https://www.oschina.net/news/503468",
-      "hot": "Sun, 08 Nov 2026 09:17:24 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Cordonix 0.4.1 发布：每日后台更新，完善全部 MCP 工具说明",
-      "url": "https://www.oschina.net/news/503467",
-      "hot": "Sun, 08 Nov 2026 01:15:32 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "OpenGoLive 0.9.8 发布：改进数据恢复，新增本地编辑冲突检测与组权限",
-      "url": "https://www.oschina.net/news/503466",
-      "hot": "Sun, 08 Nov 2026 00:14:13 +0800"
-    },
-    {
-      "rank": 8,
-      "title": ":fire: xbatis 1.10.15 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
-      "url": "https://www.oschina.net/news/503464",
-      "hot": "Sat, 07 Nov 2026 17:40:05 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Jync v1.14.0 · 应用内 HTTPS 与配置包迁移",
-      "url": "https://www.oschina.net/news/503458",
-      "hot": "Sat, 07 Nov 2026 08:59:08 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "2026 开源行业解决方案创新赛「开源基础软件与解决方案赛道」决赛名单公布",
-      "url": "https://www.oschina.net/news/503457",
-      "hot": "Fri, 06 Nov 2026 19:23:16 +0800"
     }
   ]
 }

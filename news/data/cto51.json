@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-09T01:59:33+00:00",
+  "updated_at": "2026-11-09T09:08:53+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "窗口放到左半侧，笔记也读得完：HarmonyOS 6 并排布局适配",
+      "url": "https://ost.51cto.com/posts/63098",
+      "hot": "1.前言做笔记时，旁边常常还需要放一页资料。应用占满屏幕时，列表与正文并排并不困难；把窗口让到左半侧以后，如果固定侧栏仍然占着原来的..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 7状态管理进阶：使用@Monitor通配符监听数据变化",
+      "url": "https://ost.51cto.com/posts/63097",
+      "hot": "状态管理V2里的Monitor大家都熟，要盯哪几个属性，就把路径写进装饰器参数，属性一变回调就触发。但业务里的数据结构往往没那么规矩，比如..."
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI破译数论百年悬案，揭开P≠NP重大线索！千禧年神题逼近了",
+      "url": "https://www.51cto.com/article/860642.html",
+      "hot": "人类卡了几十年的数论悬案，AI仅用8页纸就给秒了？这两天，整个数学界和计算机圈，都陷入了巨大震撼。10月18日，斯坦福大学数论学家Jared Duker Lichtman在X上的话，瞬间引爆全网——「此类证明的存在，强烈暗示了 P≠NP 。」"
+    },
+    {
+      "rank": 4,
+      "title": "告别多窗口切换：WorkBuddy 接入 Jenkins MCP，搭建你的 CI/CD 构建助手",
+      "url": "https://www.51cto.com/article/860640.html",
+      "hot": "WorkBuddy 加上 Jenkins MCP 可以把 “查构建、看日志、排失败” 收成一轮对话，而不是在多套 Jenkins 之间来回切。"
+    },
+    {
+      "rank": 5,
       "title": "一个月73.8亿次提交！GitHub被AI代码挤爆，增配400万核还不够",
       "url": "https://www.51cto.com/article/860608.html",
       "hot": "代码写完点推送，进度条原地打转；自动测试卡死，合并请求合不进去，连AI编程助手Copilot也掉了线。"
     },
     {
-      "rank": 2,
+      "rank": 6,
+      "title": "AI 写的 PR 该由谁背锅？聊聊代码合并之后的技术债",
+      "url": "https://www.51cto.com/article/860638.html",
+      "hot": "本文不聊 AI 代码行不行，聊后面那个更棘手的问题：代码合并之后会发生什么，这笔账又该记在谁头上。"
+    },
+    {
+      "rank": 7,
+      "title": "会做梦的AI，记性反而更好？Anthropic新实验：写了413份笔记的，输给只写九份的",
+      "url": "https://www.51cto.com/article/860634.html",
+      "hot": "Anthropic 最近发了一篇文章，讲了他们给 Claude 设计记忆系统时踩过的坑和想明白的事。核心结论有点反直觉：想让 AI 记性好，光让它「记笔记」不够，还得让它学会「做梦」。"
+    },
+    {
+      "rank": 8,
       "title": "AI亲手改写Transformer架构！DeepSeek自我改造暴涨七分",
       "url": "https://www.51cto.com/article/860607.html",
       "hot": "7630亿参数的DeepSeek-V4.1-Flash，直接读取了自己做数学题时最深7层的内部激活状态。"
     },
     {
-      "rank": 3,
-      "title": "NeurIPS'26 | 只干预十个维度，给智能体穿上安全机甲，准确率超97%",
-      "url": "https://www.51cto.com/article/860604.html",
-      "hot": "来自佐治亚大学，罗格斯大学，南加州大学等机构的研究团队提出Agent MechSuits，尝试为命令行智能体穿上一套能够感知内部状态的「安全机甲」。"
-    },
-    {
-      "rank": 4,
-      "title": "起底Claude掌门人！31岁确诊睾丸癌，用杀鸡计算全人类的命",
-      "url": "https://www.51cto.com/article/860603.html",
-      "hot": "当年那个用公式算尽利弊的青年，成了硅谷最狂热的「AI奇点」信徒，也成了全硅谷最分裂的千亿掌门人。"
-    },
-    {
-      "rank": 5,
-      "title": "九成代码AI写，谁来审？Claude Code亮出六道关卡！",
-      "url": "https://www.51cto.com/article/860601.html",
-      "hot": "放眼整个Anthropic，主代码库每天合并的改动，从5月约2500次，涨到9月超过3万次。这么多代码，人还读得过来吗？如果连审查也交给AI，谁来判断它有没有犯错？"
-    },
-    {
-      "rank": 6,
-      "title": "一周只上三天！Anthropic 35页报告：全球科研产出或拉爆16倍",
-      "url": "https://www.51cto.com/article/860599.html",
-      "hot": "「AI 2027追踪器」昨晚更新的一张图，刷爆了全网。这么一调，ASI到来的时间表，要再次提前6周！"
-    },
-    {
-      "rank": 7,
-      "title": "AI接管一家8万Star开源公司，写代码、派任务、查Bug全包了",
-      "url": "https://www.51cto.com/article/860595.html",
-      "hot": "LobeHub团队已经把这套工作方式用进了日常研发，让Agent自己拆任务、派活、写代码，甚至帮忙审查修改。"
-    },
-    {
-      "rank": 8,
-      "title": "OpenAI新模型临门一脚踩刹车！GPT-6.2曝出安全疑云",
-      "url": "https://www.51cto.com/article/860589.html",
-      "hot": "AI 圈开始流传另一种解释：OpenAI 新模型在发布前的最后阶段，被安全这一关挡住了。"
-    },
-    {
       "rank": 9,
-      "title": "跨模型上下文交接还要重算KV？北大提出MapFlow，让注意力跨模型复用",
-      "url": "https://www.51cto.com/article/860588.html",
-      "hot": "一个模型已经完成的计算，能否帮助另一个模型更快地处理同一份上下文？"
+      "title": "Beam 的模型技术报告：如何用万卡强化学习和双教师蒸馏训练模型",
+      "url": "https://www.51cto.com/article/860637.html",
+      "hot": "Reflection 的开放权重模型 Beam，训练分为多个阶段。团队先用 23.8 万亿 token 建立基础能力，再分两阶段处理中期训练：一阶段侧重代码与推理，另一阶段扩展上下文；后训练则分别培养解决任务和对话对齐两个专家，最后再把能力合进一个模型。"
     },
     {
       "rank": 10,
-      "title": "ICLR 2027首轮评审，槽点有点多",
-      "url": "https://www.51cto.com/article/860586.html",
-      "hot": "如果 AI 生成的评审包含虚假信息、幻觉或失实陈述，或者评审本身质量低下，审稿人可能因未履行互惠审稿义务而受到纪律处分。"
+      "title": "NeurIPS'26 | 只干预十个维度，给智能体穿上安全机甲，准确率超97%",
+      "url": "https://www.51cto.com/article/860604.html",
+      "hot": "来自佐治亚大学，罗格斯大学，南加州大学等机构的研究团队提出Agent MechSuits，尝试为命令行智能体穿上一套能够感知内部状态的「安全机甲」。"
     }
   ]
 }
