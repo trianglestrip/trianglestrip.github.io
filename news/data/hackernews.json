@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-10T17:42:04+00:00",
+  "updated_at": "2026-11-10T22:32:09+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Blender 5.3 released with Gaussian Splat support",
-      "url": "https://www.blender.org/download/releases/5-3/",
-      "hot": "192"
+      "title": ".name Grandfathered",
+      "url": "https://neil.fraser.name/news/2026/11/10/",
+      "hot": "589"
     },
     {
       "rank": 2,
-      "title": ".name Grandfathered",
-      "url": "https://neil.fraser.name/news/2026/11/10/",
-      "hot": "157"
+      "title": "Toyota brand Scion is back and it's going to sell a kei truck in America",
+      "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+      "hot": "131"
     },
     {
       "rank": 3,
-      "title": "AlphaProof Code",
-      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-      "hot": "440"
+      "title": "Smart home devices should work without the internet",
+      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+      "hot": "587"
     },
     {
       "rank": 4,
-      "title": "Smart home devices should work without the internet",
-      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
-      "hot": "90"
+      "title": "Six Math Essentials by Terence Tao",
+      "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
+      "hot": "52"
     },
     {
       "rank": 5,
-      "title": "Gemini 4 Carbon is now available",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-      "hot": "196"
+      "title": "Synaptics patent claims stop work on DisplayLink drivers",
+      "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+      "hot": "225"
     },
     {
       "rank": 6,
-      "title": "The Hardest Tarball?",
-      "url": "https://stoppels.ch/2026/11/07/the-hardest-tarball.html",
-      "hot": "103"
+      "title": "Sherman Anti-Trust Act (1890",
+      "url": "https://www.archives.gov/milestone-documents/sherman-anti-trust-act",
+      "hot": "40"
     },
     {
       "rank": 7,
-      "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
-      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
-      "hot": "596"
+      "title": "Val Town is winding down",
+      "url": "https://blog.val.town/winding-down",
+      "hot": "247"
     },
     {
       "rank": 8,
-      "title": "AMD's Zen 6 Family: Feeding the Beast",
-      "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
-      "hot": "18"
+      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "hot": "203"
     },
     {
       "rank": 9,
-      "title": "Show HN: Valencia, Spain in Sim City/Isometric View",
-      "url": "https://tinyvalencia.com/",
-      "hot": "47"
+      "title": "AlphaProof Code",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "hot": "541"
     },
     {
       "rank": 10,
-      "title": "What's new in the .NET 11 runtime",
-      "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
-      "hot": "124"
+      "title": "What objective is reasoning solving?",
+      "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
+      "hot": "69"
     }
   ]
 }
