@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-10T10:06:59+00:00",
+  "updated_at": "2026-11-10T17:42:20+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,33 +36,33 @@
     },
     {
       "rank": 6,
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "url": "https://huggingface.co/papers/2610.42148",
+      "hot": "30"
+    },
+    {
+      "rank": 7,
+      "title": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes",
+      "url": "https://huggingface.co/papers/2611.08264",
+      "hot": "67"
+    },
+    {
+      "rank": 8,
       "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
       "url": "https://huggingface.co/papers/2608.16157",
       "hot": "111"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
       "hot": "103"
     },
     {
-      "rank": 8,
-      "title": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes",
-      "url": "https://huggingface.co/papers/2611.08264",
-      "hot": "66"
-    },
-    {
-      "rank": 9,
+      "rank": 10,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "77"
-    },
-    {
-      "rank": 10,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "86"
     }
   ]
 }

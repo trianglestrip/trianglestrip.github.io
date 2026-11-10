@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-10T10:06:48+00:00",
+  "updated_at": "2026-11-10T17:42:10+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "接大模型别再自己配 Key、搭代理了，火山引擎 IGA Pages 一步搞定",
+      "url": "https://www.infoq.cn/article/juu2R26yD8B6ABUEQuWB?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 10 Nov 2026 18:58:56 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "近 700 亿美元 IPO 定价突然撤回！Anthropic 最快今天路演，下周冲刺上市",
+      "url": "https://www.infoq.cn/article/8tquwes1yGbmTeyOjOId?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 10 Nov 2026 18:54:18 GMT"
+    },
+    {
+      "rank": 3,
       "title": "Chrome 想终结“去邮箱复制验证码”，但隐私真的更好了吗？",
       "url": "https://www.infoq.cn/article/UltsRzyiYdLd4r1S3mkm?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 17:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "给 AI 腾内存？Discord 抛弃Electron，省70%内存还秒开：Windows应用该跟进了",
       "url": "https://www.infoq.cn/article/MQTTu6dgGxHBZm1wOLPI?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 16:04:53 GMT"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "面向 AI Native 的数据库技术演进 | 腾讯云数据库 DBTalk",
       "url": "https://www.infoq.cn/video/W1VS3q3eMAosMwrHb1k4?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 15:53:17 GMT"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "成本仅1/3！Meta 新模型 Muse Ember 硬刚 Claude Haiku 5.5",
       "url": "https://www.infoq.cn/article/Ou4l4aD7zvUzXWXsWJfY?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 15:22:09 GMT"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "DeepSeek Harness 日活154万，官方开始给插件作者发Token：Agent 生态要靠开发者了",
       "url": "https://www.infoq.cn/article/Y7lTO7Q1M8oN5JhxhirK?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 15:20:56 GMT"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "Cloudflare KV Instant：读取 p99 仅 1.62 毫秒，写入一次却要 0.1 美元",
       "url": "https://www.infoq.cn/article/YrPwJgFYyBSAmJE4hJAB?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 15:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "突破 Kubernetes 的 CPU 抽象，Uber 为异构服务器重新定义“一核”",
       "url": "https://www.infoq.cn/article/STFszc8JxPkXGeV9QRH3?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 13:27:00 GMT"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "openJiuwen首发Agent Device Foundation，重新定义Agent与物理世界的交互方式",
       "url": "https://www.infoq.cn/article/dLF01VxLUZpLX40Wmlv7?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 11:56:55 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "硅谷疯炒 AI 自我进化，李飞飞、Jeff Dean 齐泼冷水：无限加速不可信",
-      "url": "https://www.infoq.cn/article/mZlISiZL9c1eurrsZRpo?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 11:28:43 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Anthropic 重做源代码管理系统：提交量增长 12 倍，传统架构开始失效",
-      "url": "https://www.infoq.cn/article/sBjhhysFKZibZpXQZEGy?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 11:00:00 GMT"
     }
   ]
 }

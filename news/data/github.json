@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-10T10:06:29+00:00",
+  "updated_at": "2026-11-10T17:41:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "[Python] anthropics/skills",
-      "url": "https://github.com/anthropics/skills",
-      "hot": "191,629"
+      "title": "[TypeScript] meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "hot": "22,208"
     },
     {
       "rank": 2,
-      "title": "[TypeScript] meta/astryx",
-      "url": "https://github.com/meta/astryx",
-      "hot": "21,195"
+      "title": "[Python] anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "hot": "192,034"
     },
     {
       "rank": 3,
-      "title": "[Python] sherlock-project/sherlock",
-      "url": "https://github.com/sherlock-project/sherlock",
-      "hot": "108,048"
+      "title": "[JavaScript] addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "hot": "114,962"
     },
     {
       "rank": 4,
-      "title": "[C++] google-deepmind/mujoco",
-      "url": "https://github.com/google-deepmind/mujoco",
-      "hot": "17,133"
+      "title": "[Python] anthropics/claude-quickstarts",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "hot": "20,365"
     },
     {
       "rank": 5,
-      "title": "[Python] anthropics/claude-quickstarts",
-      "url": "https://github.com/anthropics/claude-quickstarts",
-      "hot": "20,216"
+      "title": "[C++] google-deepmind/mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "hot": "17,251"
     },
     {
       "rank": 6,
-      "title": "[TypeScript] garrytan/gbrain",
-      "url": "https://github.com/garrytan/gbrain",
-      "hot": "32,375"
+      "title": "[Ruby] we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "hot": "11,678"
     },
     {
       "rank": 7,
-      "title": "[Rust] vercel-labs/agent-browser",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "hot": "48,835"
+      "title": "[Python] homeassistant-ai/ha-mcp",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "hot": "6,465"
     },
     {
       "rank": 8,
-      "title": "[Rust] ruvnet/RuView",
-      "url": "https://github.com/ruvnet/RuView",
-      "hot": "103,757"
+      "title": "[Rust] vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "hot": "49,040"
     },
     {
       "rank": 9,
-      "title": "[Python] ZhuLinsen/daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "hot": "69,415"
+      "title": "[Python] sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "hot": "108,645"
     },
     {
       "rank": 10,
-      "title": "[Python] homeassistant-ai/ha-mcp",
-      "url": "https://github.com/homeassistant-ai/ha-mcp",
-      "hot": "6,284"
+      "title": "[Rust] tokio-rs/topcoat",
+      "url": "https://github.com/tokio-rs/topcoat",
+      "hot": "6,686"
     }
   ]
 }
