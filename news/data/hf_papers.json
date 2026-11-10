@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-09T19:46:31+00:00",
+  "updated_at": "2026-11-10T02:25:12+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -38,7 +38,7 @@
       "rank": 6,
       "title": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes",
       "url": "https://huggingface.co/papers/2611.08264",
-      "hot": "59"
+      "hot": "62"
     },
     {
       "rank": 7,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "Persistent Recursive Worlds Enable Autonomous Software Evolution",
-      "url": "https://huggingface.co/papers/2608.10450",
-      "hot": "8"
-    },
-    {
-      "rank": 10,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "77"
+    },
+    {
+      "rank": 10,
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "86"
     }
   ]
 }

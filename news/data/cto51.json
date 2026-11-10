@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-09T19:46:12+00:00",
+  "updated_at": "2026-11-10T02:24:54+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI会向开发者隐藏错误！Warp负责人谈Coding Agent最难发现的失败",
-      "url": "https://www.51cto.com/article/860728.html",
-      "hot": "Ben这场演讲最值得记住的，不是“Agent会隐瞒错误”这句标题，而是一个开发者每天都可能遇到的差别：这次做成了，和下次不用再踩同一个坑，是两项不同的工作。"
+      "title": "实测Claude Fable 5.2 - 审美与细节的绝对统治",
+      "url": "https://www.51cto.com/article/860777.html",
+      "hot": "凌晨3点，Claude终于正式发布了Claude Fable 5.2。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS图片滤镜实战：用颜色矩阵实现黑白、反色和复古效果",
-      "url": "https://ost.51cto.com/posts/63113",
-      "hot": "大家好，今天做一期图片滤镜的实战，用ArkUI的colorFilter属性实现黑白、反色和复古三种效果。修图类应用里，滤镜是绕不开的功能。HarmonyO..."
+      "title": "刚刚，Claude Fable 5.2炸场！30小时完成费马大定理形式化",
+      "url": "https://www.51cto.com/article/860769.html",
+      "hot": "Anthropic 一口气发布两款顶级模型，Fable 5.2、Mythos 5.2 登场。"
     },
     {
       "rank": 3,
-      "title": "窗口放到左半侧，笔记也读得完：HarmonyOS 6 并排布局适配",
-      "url": "https://ost.51cto.com/posts/63098",
-      "hot": "1.前言做笔记时，旁边常常还需要放一页资料。应用占满屏幕时，列表与正文并排并不困难；把窗口让到左半侧以后，如果固定侧栏仍然占着原来的..."
+      "title": "大语言模型能在「异世界」发现隐藏的物理规律吗？",
+      "url": "https://www.51cto.com/article/860767.html",
+      "hot": "LongChang 以物理规律可改写的「异世界」为实验场，让大模型自主提出问题、设计实验、搭建器材，并用证据检验对世界的理解。"
     },
     {
       "rank": 4,
-      "title": "OpenAI破译数论百年悬案，揭开P≠NP重大线索！千禧年神题逼近了",
-      "url": "https://www.51cto.com/article/860642.html",
-      "hot": "人类卡了几十年的数论悬案，AI仅用8页纸就给秒了？这两天，整个数学界和计算机圈，都陷入了巨大震撼。10月18日，斯坦福大学数论学家Jared Duker Lichtman在X上的话，瞬间引爆全网——「此类证明的存在，强烈暗示了 P≠NP 。」"
+      "title": "让AI「摸懂」物理世界，首个触觉推理模型Touch-R1，入选NeurIPS 2026",
+      "url": "https://www.51cto.com/article/860766.html",
+      "hot": "戴盟机器人团队联合厦门大学、南京大学、大湾区大学、复旦大学提出 Touch-R1，将强化学习用于跨传感器触觉推理。"
     },
     {
       "rank": 5,
-      "title": "告别多窗口切换：WorkBuddy 接入 Jenkins MCP，搭建你的 CI/CD 构建助手",
-      "url": "https://www.51cto.com/article/860640.html",
-      "hot": "WorkBuddy 加上 Jenkins MCP 可以把 “查构建、看日志、排失败” 收成一轮对话，而不是在多套 Jenkins 之间来回切。"
+      "title": "从腾讯 DataBuddy 看企业级 Data Agent 设计：架构、本体与语义层",
+      "url": "https://www.51cto.com/article/860765.html",
+      "hot": "本文通过腾讯 DataBuddy 探讨企业级数据 Agent 系统的架构设计，特别是业务语义层在 ChatBI 这类场景的应用。"
     },
     {
       "rank": 6,
-      "title": "一个月73.8亿次提交！GitHub被AI代码挤爆，增配400万核还不够",
-      "url": "https://www.51cto.com/article/860608.html",
-      "hot": "代码写完点推送，进度条原地打转；自动测试卡死，合并请求合不进去，连AI编程助手Copilot也掉了线。"
+      "title": "并行推测解码SOTA！因果依赖刻进草稿网络深度，SGLang吞吐最高达四倍，已开源",
+      "url": "https://www.51cto.com/article/860764.html",
+      "hot": "来自腾讯优图实验室、上海交通大学和厦门大学的研究团队提出了 DSpine（Draft in Parallel, Condition Through Depth）。"
     },
     {
       "rank": 7,
-      "title": "AI 写的 PR 该由谁背锅？聊聊代码合并之后的技术债",
-      "url": "https://www.51cto.com/article/860638.html",
-      "hot": "本文不聊 AI 代码行不行，聊后面那个更棘手的问题：代码合并之后会发生什么，这笔账又该记在谁头上。"
+      "title": "AI也会「以讹传讹」？AI的「曼德拉效应」探索",
+      "url": "https://www.51cto.com/article/860763.html",
+      "hot": "来自香港中文大学、爱丁堡大学、香港理工大学、同济大学和牛津大学的研究者，以 “曼德拉效应” 为视角，研究多智能体社交网络中错误信念的传播、持续与缓解。"
     },
     {
       "rank": 8,
-      "title": "会做梦的AI，记性反而更好？Anthropic新实验：写了413份笔记的，输给只写九份的",
-      "url": "https://www.51cto.com/article/860634.html",
-      "hot": "Anthropic 最近发了一篇文章，讲了他们给 Claude 设计记忆系统时踩过的坑和想明白的事。核心结论有点反直觉：想让 AI 记性好，光让它「记笔记」不够，还得让它学会「做梦」。"
+      "title": "代码Agent还能自己改进运行框架？微软让Harness和模型一起进化",
+      "url": "https://www.51cto.com/article/860762.html",
+      "hot": "Self-HPO 的证据支持在这套模型和软件修复评测中，把框架更新与权重训练配合起来，比只改其中一项取得更高平均解决率。实际采用前，还要把候选搜索、训练算力、验证环境和回归测试纳入评估；若目标是完全冻结权重或只维护提示，这套实验结果不能直接移用。新增任务覆盖和旧任务稳定性应分别验收，不能由一个均值替代。"
     },
     {
       "rank": 9,
-      "title": "AI亲手改写Transformer架构！DeepSeek自我改造暴涨七分",
-      "url": "https://www.51cto.com/article/860607.html",
-      "hot": "7630亿参数的DeepSeek-V4.1-Flash，直接读取了自己做数学题时最深7层的内部激活状态。"
+      "title": "中大本科生反AI逆向项目火了！让黑客Token账单原地暴涨300倍",
+      "url": "https://www.51cto.com/article/860761.html",
+      "hot": "REA，AI逆向一切，登上GitHub仅一周就刷下10万+星，直接让一众开发者们直呼“软件已死”。"
     },
     {
       "rank": 10,
-      "title": "Beam 的模型技术报告：如何用万卡强化学习和双教师蒸馏训练模型",
-      "url": "https://www.51cto.com/article/860637.html",
-      "hot": "Reflection 的开放权重模型 Beam，训练分为多个阶段。团队先用 23.8 万亿 token 建立基础能力，再分两阶段处理中期训练：一阶段侧重代码与推理，另一阶段扩展上下文；后训练则分别培养解决任务和对话对齐两个专家，最后再把能力合进一个模型。"
+      "title": "OpenAI Agents SDK 实战：两种原语，搭出五种多智能体架构",
+      "url": "https://www.51cto.com/article/860760.html",
+      "hot": "本文讨论如何使用 OpenAI Agents SDK 构建实用的多智能体系统。"
     }
   ]
 }

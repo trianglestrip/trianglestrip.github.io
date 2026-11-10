@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-11-09T19:46:00+00:00",
+  "updated_at": "2026-11-10T02:24:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "永别了，程序员！(转）",
       "url": "https://juejin.cn/post/7705987138957328427",
-      "hot": "864"
+      "hot": "1152"
     },
     {
       "rank": 2,
       "title": "LangChain ToolRuntime 入门：context、state 与 store 的实际用法",
       "url": "https://juejin.cn/post/7705623263632457738",
-      "hot": "495"
+      "hot": "513"
     },
     {
       "rank": 3,
-      "title": "Codex中必装的11个Skills",
-      "url": "https://juejin.cn/post/7705291560008531977",
-      "hot": "450"
+      "title": "AI 写页面像说明书，修 Bug 像贴膏药？把这两句话写进 AGENTS.md",
+      "url": "https://juejin.cn/post/7705724831249432591",
+      "hot": "504"
     },
     {
       "rank": 4,
-      "title": "AI 写页面像说明书，修 Bug 像贴膏药？把这两句话写进 AGENTS.md",
-      "url": "https://juejin.cn/post/7705724831249432591",
-      "hot": "432"
+      "title": "Codex中必装的11个Skills",
+      "url": "https://juejin.cn/post/7705291560008531977",
+      "hot": "486"
     },
     {
       "rank": 5,
       "title": "从 Coze 居然要下线了说起",
       "url": "https://juejin.cn/post/7705134065616207882",
-      "hot": "405"
+      "hot": "459"
     },
     {
       "rank": 6,
       "title": "C++26 草案被否，二十八年来头一回",
       "url": "https://juejin.cn/post/7705316753005674511",
-      "hot": "351"
+      "hot": "378"
     },
     {
       "rank": 7,
       "title": "由 key 引发的思考",
       "url": "https://juejin.cn/post/7705976844432457766",
-      "hot": "225"
+      "hot": "252"
     },
     {
       "rank": 8,
       "title": "Flutter 下 AOT 一个你怎么都想不出来的 Bug ，JIT 正常的计算，在 AOT 居然算错了",
       "url": "https://juejin.cn/post/7705608480665337882",
-      "hot": "198"
+      "hot": "225"
     },
     {
       "rank": 9,
-      "title": "让 Codex 自己查账：一个省 token 的小技巧",
-      "url": "https://juejin.cn/post/7705724831249481743",
-      "hot": "180"
+      "title": "纯 Go 写的 JS 引擎，跑分超过了 C 语言的 QuickJS",
+      "url": "https://juejin.cn/post/7706013328653680678",
+      "hot": "216"
     },
     {
       "rank": 10,
-      "title": "Lomo Agent：面向创作型、持续协作 Agent 的架构设计与工程实践",
-      "url": "https://juejin.cn/post/7705330413946093583",
-      "hot": "180"
+      "title": "让 Codex 自己查账：一个省 token 的小技巧",
+      "url": "https://juejin.cn/post/7705724831249481743",
+      "hot": "207"
     }
   ]
 }
