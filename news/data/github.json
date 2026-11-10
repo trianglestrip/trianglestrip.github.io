@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-10T02:24:43+00:00",
+  "updated_at": "2026-11-10T10:06:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Python] anthropics/skills",
       "url": "https://github.com/anthropics/skills",
-      "hot": "191,086"
+      "hot": "191,629"
     },
     {
       "rank": 2,
       "title": "[TypeScript] meta/astryx",
       "url": "https://github.com/meta/astryx",
-      "hot": "20,266"
+      "hot": "21,195"
     },
     {
       "rank": 3,
       "title": "[Python] sherlock-project/sherlock",
       "url": "https://github.com/sherlock-project/sherlock",
-      "hot": "107,220"
+      "hot": "108,048"
     },
     {
       "rank": 4,
       "title": "[C++] google-deepmind/mujoco",
       "url": "https://github.com/google-deepmind/mujoco",
-      "hot": "16,946"
+      "hot": "17,133"
     },
     {
       "rank": 5,
       "title": "[Python] anthropics/claude-quickstarts",
       "url": "https://github.com/anthropics/claude-quickstarts",
-      "hot": "20,052"
+      "hot": "20,216"
     },
     {
       "rank": 6,
       "title": "[TypeScript] garrytan/gbrain",
       "url": "https://github.com/garrytan/gbrain",
-      "hot": "32,191"
+      "hot": "32,375"
     },
     {
       "rank": 7,
       "title": "[Rust] vercel-labs/agent-browser",
       "url": "https://github.com/vercel-labs/agent-browser",
-      "hot": "48,541"
+      "hot": "48,835"
     },
     {
       "rank": 8,
       "title": "[Rust] ruvnet/RuView",
       "url": "https://github.com/ruvnet/RuView",
-      "hot": "103,509"
+      "hot": "103,757"
     },
     {
       "rank": 9,
       "title": "[Python] ZhuLinsen/daily_stock_analysis",
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "hot": "68,956"
+      "hot": "69,415"
     },
     {
       "rank": 10,
       "title": "[Python] homeassistant-ai/ha-mcp",
       "url": "https://github.com/homeassistant-ai/ha-mcp",
-      "hot": "6,034"
+      "hot": "6,284"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-10T02:25:00+00:00",
+  "updated_at": "2026-11-10T10:06:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "qOntology 本体工程平台开源版 v1.1.1 发布：完善项目详情与抽取任务管理，统一建模交互体验",
+      "url": "https://www.oschina.net/news/503510",
+      "hot": "Tue, 10 Nov 2026 16:39:17 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "开源新生力：一群中学生登上 GOTC 主会场",
+      "url": "https://www.oschina.net/news/503507",
+      "hot": "Tue, 10 Nov 2026 15:26:47 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "从路透社到 Linux Magazine：openKylin 3.0 收获全球关注",
+      "url": "https://www.oschina.net/news/503505",
+      "hot": "Tue, 10 Nov 2026 14:54:42 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "想做一套设备管理系统，权限报表真的要自己写吗",
+      "url": "https://www.oschina.net/news/503502",
+      "hot": "Tue, 10 Nov 2026 12:45:02 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "2026 开源行业解决方案创新赛总决赛评委阵容公布",
+      "url": "https://www.oschina.net/news/503501",
+      "hot": "Tue, 10 Nov 2026 11:57:26 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Anthropic 发布 Fable 5.2 与 Mythos 5.2，声称“8 天写出一个能开机的操作系统”",
+      "url": "https://www.oschina.net/news/503499/claude-fable-and-mythos-5-2",
+      "hot": "Tue, 10 Nov 2026 11:37:45 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "qOntology 本体工程平台开源版 v1.1.0 发布：AI 辅助建模、知识图谱多视图！企业本体 FDE 的超强工具！",
+      "url": "https://www.oschina.net/news/503498",
+      "hot": "Tue, 10 Nov 2026 11:07:06 +0800"
+    },
+    {
+      "rank": 8,
+      "title": ":fire::fire::fire:vmr 0.8.1 发布 ：一款可扩展跨平台 SDK 超级版本管理工具",
+      "url": "https://www.oschina.net/news/503496",
+      "hot": "Tue, 10 Nov 2026 10:30:22 +0800"
+    },
+    {
+      "rank": 9,
       "title": "ip2region 3.19.0 发布 - 数据更新 &amp; Logstash 插件 &amp; CI 测试",
       "url": "https://www.oschina.net/news/503494",
       "hot": "Tue, 10 Nov 2026 09:54:35 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "ModStartCMS v12.0.1 修复并发恢复报错，兼容严格模式零日期，动态适配表前缀。",
       "url": "https://www.oschina.net/news/503493",
       "hot": "Mon, 09 Nov 2026 20:50:32 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "🔥🔥ApiGo 5.5 发布，新增数据行列级权限",
-      "url": "https://www.oschina.net/news/503488",
-      "hot": "Mon, 09 Nov 2026 17:29:47 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "千星达成！开源终端 uniTerm v1.12 发布：Docker 多租户部署、本地服务、终端录制与批量执行齐上线",
-      "url": "https://www.oschina.net/news/503487",
-      "hot": "Mon, 09 Nov 2026 17:04:39 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "能力再扩充！deepin Skills 上架应用商店，小 U 同学直接调用",
-      "url": "https://www.oschina.net/news/503486",
-      "hot": "Mon, 09 Nov 2026 16:41:10 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
-      "url": "https://www.oschina.net/news/503485",
-      "hot": "Mon, 09 Nov 2026 16:24:02 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "GOTC 2026 能让你动手实操的 6 个共建活动",
-      "url": "https://www.oschina.net/news/503483",
-      "hot": "Mon, 09 Nov 2026 15:49:56 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Vue 可视化 AI 表单设计器 FcDesigner v3.6 版本发布，支持导出 SQL 功能!",
-      "url": "https://www.oschina.net/news/503482",
-      "hot": "Mon, 09 Nov 2026 15:01:16 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "不用 Node 也能编译 Vue：一个原生二进制，把前后端做成一个工程",
-      "url": "https://www.oschina.net/news/503480",
-      "hot": "Mon, 09 Nov 2026 14:20:16 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "开源数据库管理工具 CloudDM 新版本发布，支持 OpenSearch、IoTDB 数据源",
-      "url": "https://www.oschina.net/news/503479",
-      "hot": "Mon, 09 Nov 2026 13:44:37 +0800"
     }
   ]
 }
