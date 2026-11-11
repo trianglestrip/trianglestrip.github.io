@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-11T17:11:33+00:00",
+  "updated_at": "2026-11-11T23:28:15+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -50,7 +50,7 @@
       "rank": 8,
       "title": "e-means: outperforming k-means (in one-tenth the epochs)",
       "url": "https://huggingface.co/papers/2611.09501",
-      "hot": "6"
+      "hot": "8"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
-      "url": "https://huggingface.co/papers/2608.16157",
-      "hot": "111"
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "86"
     }
   ]
 }
