@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-11T09:17:26+00:00",
+  "updated_at": "2026-11-11T17:11:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "谷歌最强模型 Gemini 4 Carbon 全面开放：一夜重写 OpenCode 桌面应用、价格仅为 Fable 5.2 的 1/4",
+      "url": "https://www.infoq.cn/article/YiANe38yfSYitvZOtab0?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 21:05:37 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Anthropic 一夜逼疯微软？Claude 杀入办公软件腹地：能自己参会、做表格、生成PPT",
+      "url": "https://www.infoq.cn/article/1PdshF8SLevbGZbbZHoP?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 20:52:45 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "上下文也是成本：Agent 效率优化的新思路 ｜ 技术趋势",
+      "url": "https://www.infoq.cn/article/iaCUbU8Fwz6G6bDlQ9BV?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 19:05:46 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "从 AI 工具到业务落地：兰州安宁 OPC 大会将聚焦 FDE 实践与企业 AI 转型",
+      "url": "https://www.infoq.cn/article/P2UWjVdAmPzOBaxd0v4f?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 18:36:17 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "如何提升 AI 的环境可持续性",
+      "url": "https://www.infoq.cn/article/GUXzTTTFvwWY7yx6WMyS?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 18:33:00 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "工程师招聘跌至巅峰时期一半！Manus 取消传统编程面试，产品经理开始直接写代码",
+      "url": "https://www.infoq.cn/article/HKFSZ6a0DM97BV7FXP2t?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 17:47:04 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "Agent 正在终结 Pull Request？连 GitHub 也开始重新审视传统开发流程",
+      "url": "https://www.infoq.cn/article/x0B056QFxzYEewT1Et34?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 17:40:57 GMT"
+    },
+    {
+      "rank": 8,
+      "title": "面向产业决策的升级：蚂蚁数科LingDT-Decision 首发信息抽取能力",
+      "url": "https://www.infoq.cn/article/7wd1IyRiffi1vPz6goHS?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 17:23:19 GMT"
+    },
+    {
+      "rank": 9,
       "title": "Datadog 推出面向 SRE 故障排查的专用 AI 模型",
       "url": "https://www.infoq.cn/article/py4PRbBWJSPm5aV10gHq?utm_source=rss&utm_medium=article",
       "hot": "Wed, 11 Nov 2026 17:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "多云 FinOps：一种用于跨云成本优化的工程框架",
       "url": "https://www.infoq.cn/article/0qQcqvV13GtRKGgmsPqW?utm_source=rss&utm_medium=article",
       "hot": "Wed, 11 Nov 2026 16:49:32 GMT"
-    },
-    {
-      "rank": 3,
-      "title": "阿里云发布基于 AMD 第六代 EPYC 处理器的第十代 ECS 企业级实例",
-      "url": "https://www.infoq.cn/article/xCQx0qBofJYfBdVrxVxt?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 11 Nov 2026 14:44:48 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "Agent 从 Demo 到生产，究竟还差几步？4周实战课来了",
-      "url": "https://www.infoq.cn/article/gzNdPqAMp1Wh1JQ9d2JA?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 11 Nov 2026 12:02:05 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "Cloudflare 推出面向 AI 应用程序的 Web Search API",
-      "url": "https://www.infoq.cn/article/SgXuVvzbHr8lKrihTAZW?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 11 Nov 2026 11:06:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "基于 AgentKit 重塑研发协作：从编码提效到组织效能跃迁｜AICon北京",
-      "url": "https://www.infoq.cn/article/I49cXCJFBpOW3PcgPTW3?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 11 Nov 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "微软 10 月安全更新修复 1400 余个漏洞，其中一个已遭利用",
-      "url": "https://www.infoq.cn/article/mfy0RUYOqEAW8imUrGTY?utm_source=rss&utm_medium=article",
-      "hot": "Wed, 11 Nov 2026 09:06:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "接大模型别再自己配 Key、搭代理了，火山引擎 IGA Pages 一步搞定",
-      "url": "https://www.infoq.cn/article/juu2R26yD8B6ABUEQuWB?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 18:58:56 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "近 700 亿美元 IPO 定价突然撤回！Anthropic 最快今天路演，下周冲刺上市",
-      "url": "https://www.infoq.cn/article/8tquwes1yGbmTeyOjOId?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 18:54:18 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Chrome 想终结“去邮箱复制验证码”，但隐私真的更好了吗？",
-      "url": "https://www.infoq.cn/article/UltsRzyiYdLd4r1S3mkm?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 17:00:00 GMT"
     }
   ]
 }

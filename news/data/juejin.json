@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-11-11T09:17:06+00:00",
+  "updated_at": "2026-11-11T17:11:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "永别了，程序员！(转）",
       "url": "https://juejin.cn/post/7705987138957328427",
-      "hot": "3510"
+      "hot": "3717"
     },
     {
       "rank": 2,
-      "title": "AI 写页面像说明书，修 Bug 像贴膏药？把这两句话写进 AGENTS.md",
-      "url": "https://juejin.cn/post/7705724831249432591",
-      "hot": "1089"
+      "title": "你们公司有 35 岁以上的前端吗？",
+      "url": "https://juejin.cn/post/7706534471420461098",
+      "hot": "1152"
     },
     {
       "rank": 3,
       "title": "AI 正在蚕食我们的编码能力",
       "url": "https://juejin.cn/post/7705961716425490447",
-      "hot": "963"
+      "hot": "1089"
     },
     {
       "rank": 4,
-      "title": "你们公司有 35 岁以上的前端吗？",
-      "url": "https://juejin.cn/post/7706534471420461098",
-      "hot": "702"
+      "title": "workbuddy接管我的浏览器，帮我干活了",
+      "url": "https://juejin.cn/post/7705911807923322943",
+      "hot": "630"
     },
     {
       "rank": 5,
-      "title": "workbuddy接管我的浏览器，帮我干活了",
-      "url": "https://juejin.cn/post/7705911807923322943",
-      "hot": "558"
-    },
-    {
-      "rank": 6,
-      "title": "C++26 草案被否，二十八年来头一回",
-      "url": "https://juejin.cn/post/7705316753005674511",
+      "title": "为什么越来越多人用 AI Gateway？",
+      "url": "https://juejin.cn/post/7706346256684023846",
       "hot": "522"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "由 key 引发的思考",
       "url": "https://juejin.cn/post/7705976844432457766",
-      "hot": "459"
+      "hot": "486"
+    },
+    {
+      "rank": 7,
+      "title": "纯 Go 写的 JS 引擎，跑分超过了 C 语言的 QuickJS",
+      "url": "https://juejin.cn/post/7706013328653680678",
+      "hot": "414"
     },
     {
       "rank": 8,
-      "title": "为什么越来越多人用 AI Gateway？",
-      "url": "https://juejin.cn/post/7706346256684023846",
-      "hot": "432"
+      "title": "再见了 Typora",
+      "url": "https://juejin.cn/post/7706418656682803200",
+      "hot": "369"
     },
     {
       "rank": 9,
-      "title": "纯 Go 写的 JS 引擎，跑分超过了 C 语言的 QuickJS",
-      "url": "https://juejin.cn/post/7706013328653680678",
-      "hot": "405"
+      "title": "AI 到底能不能独立做个产品？我拿一个小程序验证了",
+      "url": "https://juejin.cn/post/7706036898079473683",
+      "hot": "360"
     },
     {
       "rank": 10,
-      "title": "你的能力正在被重新定价：AI 时代程序员资产重估指南",
-      "url": "https://juejin.cn/post/7705618278807289910",
-      "hot": "333"
+      "title": "Flutter 下 AOT 一个你怎么都想不出来的 Bug ，JIT 正常的计算，在 AOT 居然算错了",
+      "url": "https://juejin.cn/post/7705608480665337882",
+      "hot": "315"
     }
   ]
 }

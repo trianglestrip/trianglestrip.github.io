@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-11T09:16:32+00:00",
+  "updated_at": "2026-11-11T17:10:48+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,15 +30,15 @@
     },
     {
       "rank": 5,
-      "title": "空枪",
-      "url": "https://movie.douban.com/subject/37508847/",
-      "hot": "评分 7.2"
-    },
-    {
-      "rank": 6,
       "title": "生化危机：爆发夜",
       "url": "https://movie.douban.com/subject/37068446/",
       "hot": "评分 7.3"
+    },
+    {
+      "rank": 6,
+      "title": "空枪",
+      "url": "https://movie.douban.com/subject/37508847/",
+      "hot": "评分 7.2"
     },
     {
       "rank": 7,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "末路兼职",
-      "url": "https://movie.douban.com/subject/37210712/",
-      "hot": "评分 6.6"
+      "title": "今天是太阳雨",
+      "url": "https://movie.douban.com/subject/36689621/",
+      "hot": ""
     },
     {
       "rank": 10,
-      "title": "蒸蒸日上",
-      "url": "https://movie.douban.com/subject/37296949/",
-      "hot": "评分 7.8"
+      "title": "末路兼职",
+      "url": "https://movie.douban.com/subject/37210712/",
+      "hot": "评分 6.6"
     }
   ]
 }
