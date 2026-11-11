@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-10T17:41:48+00:00",
+  "updated_at": "2026-11-11T02:08:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[TypeScript] meta/astryx",
       "url": "https://github.com/meta/astryx",
-      "hot": "22,208"
+      "hot": "23,012"
     },
     {
       "rank": 2,
       "title": "[Python] anthropics/skills",
       "url": "https://github.com/anthropics/skills",
-      "hot": "192,034"
+      "hot": "192,387"
     },
     {
       "rank": 3,
       "title": "[JavaScript] addyosmani/agent-skills",
       "url": "https://github.com/addyosmani/agent-skills",
-      "hot": "114,962"
+      "hot": "115,215"
     },
     {
       "rank": 4,
       "title": "[Python] anthropics/claude-quickstarts",
       "url": "https://github.com/anthropics/claude-quickstarts",
-      "hot": "20,365"
+      "hot": "20,525"
     },
     {
       "rank": 5,
       "title": "[C++] google-deepmind/mujoco",
       "url": "https://github.com/google-deepmind/mujoco",
-      "hot": "17,251"
+      "hot": "17,392"
     },
     {
       "rank": 6,
       "title": "[Ruby] we-promise/sure",
       "url": "https://github.com/we-promise/sure",
-      "hot": "11,678"
+      "hot": "12,018"
     },
     {
       "rank": 7,
       "title": "[Python] homeassistant-ai/ha-mcp",
       "url": "https://github.com/homeassistant-ai/ha-mcp",
-      "hot": "6,465"
+      "hot": "6,703"
     },
     {
       "rank": 8,
       "title": "[Rust] vercel-labs/agent-browser",
       "url": "https://github.com/vercel-labs/agent-browser",
-      "hot": "49,040"
+      "hot": "49,261"
     },
     {
       "rank": 9,
       "title": "[Python] sherlock-project/sherlock",
       "url": "https://github.com/sherlock-project/sherlock",
-      "hot": "108,645"
+      "hot": "109,062"
     },
     {
       "rank": 10,
       "title": "[Rust] tokio-rs/topcoat",
       "url": "https://github.com/tokio-rs/topcoat",
-      "hot": "6,686"
+      "hot": "6,855"
     }
   ]
 }

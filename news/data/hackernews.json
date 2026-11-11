@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-10T22:32:09+00:00",
+  "updated_at": "2026-11-11T02:08:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": ".name Grandfathered",
-      "url": "https://neil.fraser.name/news/2026/11/10/",
-      "hot": "589"
+      "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
+      "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+      "hot": "244"
     },
     {
       "rank": 2,
-      "title": "Toyota brand Scion is back and it's going to sell a kei truck in America",
-      "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
-      "hot": "131"
+      "title": ".name Grandfathered",
+      "url": "https://neil.fraser.name/news/2026/11/10/",
+      "hot": "694"
     },
     {
       "rank": 3,
-      "title": "Smart home devices should work without the internet",
-      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
-      "hot": "587"
+      "title": "Scion is back and is going to sell a kei truck in America",
+      "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+      "hot": "331"
     },
     {
       "rank": 4,
-      "title": "Six Math Essentials by Terence Tao",
-      "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
-      "hot": "52"
+      "title": "Smart home devices should work without the internet",
+      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+      "hot": "719"
     },
     {
       "rank": 5,
-      "title": "Synaptics patent claims stop work on DisplayLink drivers",
-      "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
-      "hot": "225"
+      "title": "Six Math Essentials by Terence Tao",
+      "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
+      "hot": "135"
     },
     {
       "rank": 6,
-      "title": "Sherman Anti-Trust Act (1890",
-      "url": "https://www.archives.gov/milestone-documents/sherman-anti-trust-act",
-      "hot": "40"
+      "title": "Synaptics patent claims stop work on DisplayLink drivers",
+      "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+      "hot": "296"
     },
     {
       "rank": 7,
-      "title": "Val Town is winding down",
-      "url": "https://blog.val.town/winding-down",
-      "hot": "247"
+      "title": "Starlink Mini 2",
+      "url": "https://starlink.com/mini-2",
+      "hot": "240"
     },
     {
       "rank": 8,
-      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-      "url": "https://github.com/GoogleChrome/modern-web-guidance",
-      "hot": "203"
+      "title": "Hacking the meta ray-ban smartglasses",
+      "url": "https://p0pcycle.com/2026/11/06/hacking-the-meta-ray-ban-smartglasses/",
+      "hot": "45"
     },
     {
       "rank": 9,
-      "title": "AlphaProof Code",
-      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-      "hot": "541"
+      "title": "Val Town is winding down",
+      "url": "https://blog.val.town/winding-down",
+      "hot": "307"
     },
     {
       "rank": 10,
-      "title": "What objective is reasoning solving?",
-      "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
-      "hot": "69"
+      "title": "AlphaProof Code",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "hot": "581"
     }
   ]
 }

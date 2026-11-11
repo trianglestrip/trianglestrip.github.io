@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-10T17:42:20+00:00",
+  "updated_at": "2026-11-11T02:09:06+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -20,7 +20,7 @@
       "rank": 3,
       "title": "VibeVoice Technical Report",
       "url": "https://huggingface.co/papers/2508.19205",
-      "hot": "185"
+      "hot": "186"
     },
     {
       "rank": 4,
@@ -36,15 +36,15 @@
     },
     {
       "rank": 6,
-      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
-      "url": "https://huggingface.co/papers/2610.42148",
-      "hot": "30"
+      "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+      "url": "https://huggingface.co/papers/2611.12806",
+      "hot": "92"
     },
     {
       "rank": 7,
-      "title": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes",
-      "url": "https://huggingface.co/papers/2611.08264",
-      "hot": "67"
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "url": "https://huggingface.co/papers/2610.42148",
+      "hot": "31"
     },
     {
       "rank": 8,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
-      "url": "https://huggingface.co/papers/2309.06180",
-      "hot": "77"
+      "title": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes",
+      "url": "https://huggingface.co/papers/2611.08264",
+      "hot": "69"
     }
   ]
 }
