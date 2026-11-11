@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-11T02:08:54+00:00",
+  "updated_at": "2026-11-11T09:17:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Datadog 推出面向 SRE 故障排查的专用 AI 模型",
+      "url": "https://www.infoq.cn/article/py4PRbBWJSPm5aV10gHq?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 17:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "多云 FinOps：一种用于跨云成本优化的工程框架",
+      "url": "https://www.infoq.cn/article/0qQcqvV13GtRKGgmsPqW?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 16:49:32 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "阿里云发布基于 AMD 第六代 EPYC 处理器的第十代 ECS 企业级实例",
+      "url": "https://www.infoq.cn/article/xCQx0qBofJYfBdVrxVxt?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 14:44:48 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "Agent 从 Demo 到生产，究竟还差几步？4周实战课来了",
+      "url": "https://www.infoq.cn/article/gzNdPqAMp1Wh1JQ9d2JA?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 12:02:05 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "Cloudflare 推出面向 AI 应用程序的 Web Search API",
+      "url": "https://www.infoq.cn/article/SgXuVvzbHr8lKrihTAZW?utm_source=rss&utm_medium=article",
+      "hot": "Wed, 11 Nov 2026 11:06:00 GMT"
+    },
+    {
+      "rank": 6,
       "title": "基于 AgentKit 重塑研发协作：从编码提效到组织效能跃迁｜AICon北京",
       "url": "https://www.infoq.cn/article/I49cXCJFBpOW3PcgPTW3?utm_source=rss&utm_medium=article",
       "hot": "Wed, 11 Nov 2026 10:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "微软 10 月安全更新修复 1400 余个漏洞，其中一个已遭利用",
       "url": "https://www.infoq.cn/article/mfy0RUYOqEAW8imUrGTY?utm_source=rss&utm_medium=article",
       "hot": "Wed, 11 Nov 2026 09:06:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "接大模型别再自己配 Key、搭代理了，火山引擎 IGA Pages 一步搞定",
       "url": "https://www.infoq.cn/article/juu2R26yD8B6ABUEQuWB?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 18:58:56 GMT"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "近 700 亿美元 IPO 定价突然撤回！Anthropic 最快今天路演，下周冲刺上市",
       "url": "https://www.infoq.cn/article/8tquwes1yGbmTeyOjOId?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 18:54:18 GMT"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "Chrome 想终结“去邮箱复制验证码”，但隐私真的更好了吗？",
       "url": "https://www.infoq.cn/article/UltsRzyiYdLd4r1S3mkm?utm_source=rss&utm_medium=article",
       "hot": "Tue, 10 Nov 2026 17:00:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "给 AI 腾内存？Discord 抛弃Electron，省70%内存还秒开：Windows应用该跟进了",
-      "url": "https://www.infoq.cn/article/MQTTu6dgGxHBZm1wOLPI?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 16:04:53 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "面向 AI Native 的数据库技术演进 | 腾讯云数据库 DBTalk",
-      "url": "https://www.infoq.cn/video/W1VS3q3eMAosMwrHb1k4?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 15:53:17 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "成本仅1/3！Meta 新模型 Muse Ember 硬刚 Claude Haiku 5.5",
-      "url": "https://www.infoq.cn/article/Ou4l4aD7zvUzXWXsWJfY?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 15:22:09 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "DeepSeek Harness 日活154万，官方开始给插件作者发Token：Agent 生态要靠开发者了",
-      "url": "https://www.infoq.cn/article/Y7lTO7Q1M8oN5JhxhirK?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 15:20:56 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "Cloudflare KV Instant：读取 p99 仅 1.62 毫秒，写入一次却要 0.1 美元",
-      "url": "https://www.infoq.cn/article/YrPwJgFYyBSAmJE4hJAB?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 10 Nov 2026 15:00:00 GMT"
     }
   ]
 }
