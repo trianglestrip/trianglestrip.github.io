@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-12T04:00:05+00:00",
+  "updated_at": "2026-11-12T12:11:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "93% of paint splatters are valid Perl programs (2019)",
-      "url": "https://www.mcmillen.dev/sigbovik/",
-      "hot": "230"
+      "title": "Anthropic IPO",
+      "url": "https://ipo.anthropic.com/us/",
+      "hot": "41"
     },
     {
       "rank": 2,
-      "title": "Tim Peters has died",
-      "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
-      "hot": "953"
+      "title": "Why Writing Correct Software Is Hard",
+      "url": "https://pron.github.io/posts/correctness-and-complexity",
+      "hot": "55"
     },
     {
       "rank": 3,
-      "title": "AWS emulator",
-      "url": "https://github.com/aws/aws-emulator",
-      "hot": "739"
+      "title": "Jane Street: Socratic Tutor",
+      "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+      "hot": "309"
     },
     {
       "rank": 4,
-      "title": "Critical RCE Vulnerability in Apache HTTP Server",
-      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-      "hot": "31"
+      "title": "A live tree of systemd jobs on the boot console",
+      "url": "https://codeberg.org/wvhulle/bootvine",
+      "hot": "134"
     },
     {
       "rank": 5,
-      "title": "Nvidia is preparing to oust Jensen Huang",
-      "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
-      "hot": "675"
+      "title": "Tim Peters has died",
+      "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
+      "hot": "1258"
     },
     {
       "rank": 6,
-      "title": "Lock Your GitHub Actions",
-      "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
-      "hot": "170"
+      "title": "93% of paint splatters are valid Perl programs (2019)",
+      "url": "https://www.mcmillen.dev/sigbovik/",
+      "hot": "467"
     },
     {
       "rank": 7,
-      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
-      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-      "hot": "452"
+      "title": "Critical RCE Vulnerability in Apache HTTP Server",
+      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+      "hot": "246"
     },
     {
       "rank": 8,
-      "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
-      "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
-      "hot": "437"
+      "title": "AWS emulator",
+      "url": "https://github.com/aws/aws-emulator",
+      "hot": "876"
     },
     {
       "rank": 9,
-      "title": "Gemini Decisions API",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "hot": "312"
+      "title": "Making a €40 USB-C hub work as a Nintendo Switch 2 dock",
+      "url": "http://blog.nozomi.space/posts/sw2_dock/",
+      "hot": "26"
     },
     {
       "rank": 10,
-      "title": "Did Life Begin in an RNA World?",
-      "url": "https://www.quantamagazine.org/did-life-begin-in-an-rna-world-20261109/",
-      "hot": "22"
+      "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+      "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+      "hot": "507"
     }
   ]
 }

@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-12T04:00:04+00:00",
+  "updated_at": "2026-11-12T12:11:07+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7 容器类对象跨线程：后台整理清单时原集合为什么不动",
-      "url": "https://ost.51cto.com/posts/63523",
-      "hot": "前言社区服务点的叫号屏有个整理难题：窗口陆续报上来新号码，要把它们并进当前叫号顺序、去掉重复、重新排好，可整理这件事一旦放到后台线..."
+      "title": "HarmonyOS7.0 完整上架实操",
+      "url": "https://ost.51cto.com/posts/63578",
+      "hot": "前言应用开发完毕后，想要让用户下载安装，就需要把它提交到应用商店。但上架不是把安装包传上去这么简单。一个HarmonyOS应用，要先有数字..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7 隐私声明自检实测：十项采集里八项和声明对不上",
-      "url": "https://ost.51cto.com/posts/63522",
-      "hot": "验证状态：文中代码取自巡迹工程的entrysrcmainetsservicesPrivacyAuditService.ets与pagesPrivacyAudit.ets，两版各自构建通过、以未签名..."
+      "title": "阳台小花园开发手记 04｜HarmonyOS 7.0 互动卡片：倾斜手机时的卡片效果",
+      "url": "https://ost.51cto.com/posts/63577",
+      "hot": "1.前言上一篇为叶片留出了卡片边框外的空间，并让花盆继续留在原位。现在可以给瓢虫增加一点动作：点击花盆，等它从叶后探出来，轻轻倾斜手..."
     },
     {
       "rank": 3,
