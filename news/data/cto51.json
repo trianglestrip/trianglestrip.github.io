@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-11T23:27:55+00:00",
+  "updated_at": "2026-11-12T04:00:04+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "程序员不能执着追求新技术！OpenClaw创始人：程序员最重要的能力不是写得快，而是“主动性”",
-      "url": "https://www.51cto.com/article/860954.html",
-      "hot": "Agent越来越能干，软件工程师还做什么。彼得的判断是：工程师负责的范围可能继续扩大，人的坚持、品味和对产品的理解会进入更多环节。他也承认，两年后的技术变化很难预料。"
+      "title": "HarmonyOS 7 容器类对象跨线程：后台整理清单时原集合为什么不动",
+      "url": "https://ost.51cto.com/posts/63523",
+      "hot": "前言社区服务点的叫号屏有个整理难题：窗口陆续报上来新号码，要把它们并进当前叫号顺序、去掉重复、重新排好，可整理这件事一旦放到后台线..."
     },
     {
       "rank": 2,
-      "title": "第二页故意失败一次：把 HarmonyOS 6 分页列表写完整",
-      "url": "https://ost.51cto.com/posts/63399",
-      "hot": "1.前言能在列表底部追加十二行，距离一个可用的分页页面还有几步。加载中再次触底怎么办，读取失败以后该请求哪一页，最后一页结束后会不会..."
+      "title": "HarmonyOS 7 隐私声明自检实测：十项采集里八项和声明对不上",
+      "url": "https://ost.51cto.com/posts/63522",
+      "hot": "验证状态：文中代码取自巡迹工程的entrysrcmainetsservicesPrivacyAuditService.ets与pagesPrivacyAudit.ets，两版各自构建通过、以未签名..."
     },
     {
       "rank": 3,
-      "title": "HarmonyOS 7 ArkUI：数值输入的中间态与单位换算边界",
-      "url": "https://ost.51cto.com/posts/63323",
-      "hot": "图1将输入草稿与可提交的数值分开处理，单位换算以合法数值为前提。仓库称重页面有个看似合理的需求：输入重量，实时换算成克，并且不能出..."
+      "title": "VS Code 终于改版了！IDE 时代的落幕！",
+      "url": "https://www.51cto.com/article/861033.html",
+      "hot": "从传统代码编辑器，到如今以 AI Agent 为中心的开发工作台，VS Code 正在发生明显的变化。IDE 不会一夜消失，但 AI 正在重新定义 IDE。"
     },
     {
       "rank": 4,
-      "title": "Deno 复活了！替身项目 Ende 发布！却和 Node 彻底切割！",
-      "url": "https://www.51cto.com/article/860881.html",
-      "hot": "Ende 是一个基于 Deno 技术基础发展的现代化 JavaScript 和 TypeScript 运行时。"
+      "title": "Agent 自进化别只做反思循环！要做在线执行、离线进化、独立治理的生产级架构设计",
+      "url": "https://www.51cto.com/article/861032.html",
+      "hot": "如果今天要我设计一套能进生产环境的 Agent 自进化系统，我会怎么拆解。"
     },
     {
       "rank": 5,
-      "title": "运维又有新玩法！Grafana 官方 MCP 接入 WorkBuddy，监控、日志、告警分析直接用自然语言！",
-      "url": "https://www.51cto.com/article/860877.html",
-      "hot": "直接用自然语言告诉 AI 想查什么，让它自己调用 Grafana 查询监控数据，再根据查询结果帮忙分析问题。"
+      "title": "超 3.5 万个 Grok 生成应用在线暴露，部分泄露机密数据与密码",
+      "url": "https://www.51cto.com/article/861031.html",
+      "hot": "超3.5万个Grok生成应用默认公开暴露，涉多机构机密、员工信息甚至明文密码，存在未授权访问、篡改的高危安全风险。"
     },
     {
       "rank": 6,
-      "title": "别再争论 AI 该不该像人了，赋予 AI 人格是非常有效的后训练策略",
-      "url": "https://www.51cto.com/article/860876.html",
-      "hot": "文章从工程本源出发，首先拆解了“基座模型”的技术本质：它仅是海量人类文本的概率聚合体，缺乏内在的价值过滤与行为约束，极易输出有害或无意义内容。作者有力反驳了“AI应彻底去人格化、回归计算器式统计工具”的质疑，指出在近乎无限的模型输出空间中，人格设定实质上是引导模型提取有益逻辑、规避安全与伦理风险的“行为锚点”。"
+      "title": "AI 智能体写下 650 万行代码证明：谷歌 DeepMind 把 Signal 的加密实现验证到了机器码级",
+      "url": "https://www.51cto.com/article/861025.html",
+      "hot": "让智能体产出可以被外部形式化检验的结果，而不是让它自己说自己没问题。"
     },
     {
       "rank": 7,
-      "title": "从用AI到管AI，解读Gartner 2027十大战略技术趋势背后的自主化革命",
-      "url": "https://www.51cto.com/article/860875.html",
-      "hot": "2026年的重点是构建和应用AI，而2027年的重点则转向如何管理AI驱动的自主系统。"
+      "title": "腾讯混元4（Hy4）研究报告深度解读",
+      "url": "https://www.51cto.com/article/861020.html",
+      "hot": "腾讯技术工程在发布当天做过一组实测，其中一个场景很能说明这份报告到底在讲什么。测试者拍了一张塞得满满当当的冰箱照片，要求模型给一家三口排未来三天的九顿饭，额外采购不超过 100 元，每顿做饭不超过 40 分钟。"
     },
     {
       "rank": 8,
-      "title": "阿里云+自建 IDC 混合运维：一套 AIOps 打通云监控与机房动环，实现跨域根因 RCA",
-      "url": "https://www.51cto.com/article/860874.html",
-      "hot": "本文用一套 AIOps 平台把阿里云观测数据和传统机房运维数据进行对接、融合、统一研判。"
+      "title": "我用十秒语音在本地电脑克隆了自己的声音，完全免费！",
+      "url": "https://www.51cto.com/article/860971.html",
+      "hot": "随着 AI 的发展，一些之前看上去高大上的能力渐渐得也变得很平常了。虽然像 Claude 那样的顶尖模型疯狂封号，大家还是义无反顾的冒着再次封号的风险往里冲，确实有一些事情是其他模型做不到的。"
     },
     {
       "rank": 9,
-      "title": "从云原生到 AI 原生：2026 年的四场技术大会告诉了我什么",
-      "url": "https://www.51cto.com/article/860872.html",
-      "hot": "我们不再问“Kubernetes 能不能跑 AI”，而是开始问：AI 跑起来之后，谁来管它，谁来为它负责。"
+      "title": "Claude 的四层记忆是如何设计的？",
+      "url": "https://www.51cto.com/article/861013.html",
+      "hot": "拿个后端常见的例子：假设让 Claude 查一个夜间用户数据同步任务，它翻了任务代码，又查了用户中心 SDK 和部署配置。哪些东西值得带到下次？"
     },
     {
       "rank": 10,
-      "title": "刚刚，深度调查Anthropic！RSI已经超出预期，超级智能提前到2027就会到来",
-      "url": "https://www.51cto.com/article/860869.html",
-      "hot": "面对每天成千上万个自主跑完的算法与实验，就算名义上让人类专家在后台负责审批，也只是形式主义，因为人类大脑的理解速度根本跟不上庞大的AI集群。"
+      "title": "字节二面被问：agent里的sandbox有啥用以及是如何构建的？我想都没想就说：不就是一个docker吗？面试官说我只说对了一半",
+      "url": "https://www.51cto.com/article/861012.html",
+      "hot": "今天分享出来，给同样在准备 agent 相关面试的朋友，也给正在做 agent 产品的朋友。希望你们能比她更早搞清楚这\"另一半\"。"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-11T23:27:56+00:00",
+  "updated_at": "2026-11-12T04:00:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AWS emulator",
-      "url": "https://github.com/aws/aws-emulator",
-      "hot": "567"
+      "title": "93% of paint splatters are valid Perl programs (2019)",
+      "url": "https://www.mcmillen.dev/sigbovik/",
+      "hot": "230"
     },
     {
       "rank": 2,
       "title": "Tim Peters has died",
       "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
-      "hot": "751"
+      "hot": "953"
     },
     {
       "rank": 3,
-      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
-      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-      "hot": "224"
+      "title": "AWS emulator",
+      "url": "https://github.com/aws/aws-emulator",
+      "hot": "739"
     },
     {
       "rank": 4,
-      "title": "93% of Paint Splatters Are Valid Perl Programs (2019)",
-      "url": "https://www.mcmillen.dev/sigbovik/",
+      "title": "Critical RCE Vulnerability in Apache HTTP Server",
+      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
       "hot": "31"
     },
     {
       "rank": 5,
-      "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
-      "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
-      "hot": "372"
+      "title": "Nvidia is preparing to oust Jensen Huang",
+      "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+      "hot": "675"
     },
     {
       "rank": 6,
       "title": "Lock Your GitHub Actions",
       "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
-      "hot": "48"
+      "hot": "170"
     },
     {
       "rank": 7,
-      "title": "Gemini Decisions API",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "hot": "196"
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "hot": "452"
     },
     {
       "rank": 8,
-      "title": "Emacs in the Age of Magic",
-      "url": "https://commandlinesystems.com/magic.txt",
-      "hot": "107"
+      "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+      "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+      "hot": "437"
     },
     {
       "rank": 9,
-      "title": "Show HN: I recreated Papers Please but you're deciding which YC startups to fund",
-      "url": "https://termsheetplease.com/",
-      "hot": "142"
+      "title": "Gemini Decisions API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "hot": "312"
     },
     {
       "rank": 10,
-      "title": "Huawei releases MACaQ, its internal quantizer for local inference",
-      "url": "https://github.com/huawei-csl/MACaQ",
-      "hot": "40"
+      "title": "Did Life Begin in an RNA World?",
+      "url": "https://www.quantamagazine.org/did-life-begin-in-an-rna-world-20261109/",
+      "hot": "22"
     }
   ]
 }
