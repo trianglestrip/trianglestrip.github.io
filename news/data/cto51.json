@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-12T12:11:07+00:00",
+  "updated_at": "2026-11-12T19:53:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "“传统数据库已死”是谬论！ClickHouse数据库总裁：传统数据库不需要推倒重建，Postgres仍是默认选择",
+      "url": "https://www.51cto.com/article/861104.html",
+      "hot": "“传统数据库已死”听着像一句产品淘汰宣言。听完Andy的访谈，它更像是在提醒开发团队：过去用来估算数据库负载的那个“人”，正在变成一批会连续查询、连续犯错、连续修正的Agent。"
+    },
+    {
+      "rank": 2,
       "title": "HarmonyOS7.0 完整上架实操",
       "url": "https://ost.51cto.com/posts/63578",
       "hot": "前言应用开发完毕后，想要让用户下载安装，就需要把它提交到应用商店。但上架不是把安装包传上去这么简单。一个HarmonyOS应用，要先有数字..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "阳台小花园开发手记 04｜HarmonyOS 7.0 互动卡片：倾斜手机时的卡片效果",
       "url": "https://ost.51cto.com/posts/63577",
       "hot": "1.前言上一篇为叶片留出了卡片边框外的空间，并让花盆继续留在原位。现在可以给瓢虫增加一点动作：点击花盆，等它从叶后探出来，轻轻倾斜手..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "VS Code 终于改版了！IDE 时代的落幕！",
       "url": "https://www.51cto.com/article/861033.html",
       "hot": "从传统代码编辑器，到如今以 AI Agent 为中心的开发工作台，VS Code 正在发生明显的变化。IDE 不会一夜消失，但 AI 正在重新定义 IDE。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Agent 自进化别只做反思循环！要做在线执行、离线进化、独立治理的生产级架构设计",
       "url": "https://www.51cto.com/article/861032.html",
       "hot": "如果今天要我设计一套能进生产环境的 Agent 自进化系统，我会怎么拆解。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "超 3.5 万个 Grok 生成应用在线暴露，部分泄露机密数据与密码",
       "url": "https://www.51cto.com/article/861031.html",
       "hot": "超3.5万个Grok生成应用默认公开暴露，涉多机构机密、员工信息甚至明文密码，存在未授权访问、篡改的高危安全风险。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "AI 智能体写下 650 万行代码证明：谷歌 DeepMind 把 Signal 的加密实现验证到了机器码级",
       "url": "https://www.51cto.com/article/861025.html",
       "hot": "让智能体产出可以被外部形式化检验的结果，而不是让它自己说自己没问题。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "腾讯混元4（Hy4）研究报告深度解读",
       "url": "https://www.51cto.com/article/861020.html",
       "hot": "腾讯技术工程在发布当天做过一组实测，其中一个场景很能说明这份报告到底在讲什么。测试者拍了一张塞得满满当当的冰箱照片，要求模型给一家三口排未来三天的九顿饭，额外采购不超过 100 元，每顿做饭不超过 40 分钟。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "我用十秒语音在本地电脑克隆了自己的声音，完全免费！",
       "url": "https://www.51cto.com/article/860971.html",
       "hot": "随着 AI 的发展，一些之前看上去高大上的能力渐渐得也变得很平常了。虽然像 Claude 那样的顶尖模型疯狂封号，大家还是义无反顾的冒着再次封号的风险往里冲，确实有一些事情是其他模型做不到的。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Claude 的四层记忆是如何设计的？",
       "url": "https://www.51cto.com/article/861013.html",
       "hot": "拿个后端常见的例子：假设让 Claude 查一个夜间用户数据同步任务，它翻了任务代码，又查了用户中心 SDK 和部署配置。哪些东西值得带到下次？"
-    },
-    {
-      "rank": 10,
-      "title": "字节二面被问：agent里的sandbox有啥用以及是如何构建的？我想都没想就说：不就是一个docker吗？面试官说我只说对了一半",
-      "url": "https://www.51cto.com/article/861012.html",
-      "hot": "今天分享出来，给同样在准备 agent 相关面试的朋友，也给正在做 agent 产品的朋友。希望你们能比她更早搞清楚这\"另一半\"。"
     }
   ]
 }
