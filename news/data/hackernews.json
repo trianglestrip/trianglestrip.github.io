@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-13T00:44:40+00:00",
+  "updated_at": "2026-11-13T07:20:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Jensen Huang resigns",
       "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
-      "hot": "2860"
+      "hot": "3363"
     },
     {
       "rank": 2,
-      "title": "Rust 1.100",
-      "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-      "hot": "372"
+      "title": "IceWM",
+      "url": "https://ice-wm.org/",
+      "hot": "92"
     },
     {
       "rank": 3,
-      "title": "Gemini 4 Hydrogen and Orchestrator",
-      "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
-      "hot": "279"
+      "title": "Scientists claim the universe is twice as old as believed",
+      "url": "https://geekspin.co/scientists-claim-the-universe-is-twice-as-old-as-believed/",
+      "hot": "42"
     },
     {
       "rank": 4,
-      "title": "Foundation Models framework",
-      "url": "https://developer.apple.com/foundation-models-framework/",
-      "hot": "109"
+      "title": "Rust 1.100",
+      "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+      "hot": "615"
     },
     {
       "rank": 5,
-      "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
-      "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
-      "hot": "187"
+      "title": "Brave Search API now accepts agentic payments via the x402 protocol",
+      "url": "https://brave.com/blog/search-api-agentic-payments/",
+      "hot": "63"
     },
     {
       "rank": 6,
-      "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
-      "url": "https://github.com/simpsoka/zigzag",
-      "hot": "304"
+      "title": "Switcher (2004)",
+      "url": "https://folklore.org/Switcher.html",
+      "hot": "83"
     },
     {
       "rank": 7,
-      "title": "Richard A. Posner has died",
-      "url": "https://www.law.uchicago.edu/news/senior-lecturer-richard-posner-law-and-economics-pioneer-and-former-federal-appellate-judge",
-      "hot": "23"
+      "title": "Gemini 4 Hydrogen and Orchestrator",
+      "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+      "hot": "391"
     },
     {
       "rank": 8,
-      "title": "Service degradation on Microsoft 365",
-      "url": "https://status.cloud.microsoft/",
-      "hot": "461"
+      "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
+      "url": "https://github.com/simpsoka/zigzag",
+      "hot": "474"
     },
     {
       "rank": 9,
-      "title": "22-Year-Old PostgreSQL Bug Turned into Remote Code Execution",
-      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
-      "hot": "138"
+      "title": "Nvidia employees petition to bring back Jensen Huang",
+      "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+      "hot": "433"
     },
     {
       "rank": 10,
-      "title": "I'm making LLMs work on small and old devices",
-      "url": "https://github.com/hyperionaidev/smolmaxxing/",
-      "hot": "275"
+      "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "hot": "197"
     }
   ]
 }
