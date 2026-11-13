@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-13T07:20:22+00:00",
+  "updated_at": "2026-11-13T15:30:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "通用代码生成器光船，特默尔尝鲜版二，人工智能设置项目会话",
+      "url": "https://www.oschina.net/news/503572",
+      "hot": "Fri, 13 Nov 2026 17:32:32 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "qData 数据中台开源版 v1.6.7 发布：修复消息通知与时间范围增量读取问题",
+      "url": "https://www.oschina.net/news/503570",
+      "hot": "Fri, 13 Nov 2026 17:07:20 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "写《Python 之禅》的那个人走了",
+      "url": "https://www.oschina.net/news/503569/in-memoriam-tim-peters-1952-2026",
+      "hot": "Fri, 13 Nov 2026 17:02:57 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "黄仁勋辞任英伟达 CEO，CFO 接任临时掌门",
+      "url": "https://www.oschina.net/news/503568/nvidia-announces-ceo-transition",
+      "hot": "Fri, 13 Nov 2026 16:39:45 +0800"
+    },
+    {
+      "rank": 5,
       "title": "MetaForge 2026.0.0 正式发布：从数据库管理到可视化分析，700+ 项改进带来全面升级",
       "url": "https://www.oschina.net/news/503552",
       "hot": "Fri, 13 Nov 2026 08:03:54 +0800"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "Jync 捷同 v2.1.0 发布：CDC 流内 DDL 闭环，ETL 支持主键更新",
       "url": "https://www.oschina.net/news/503551",
       "hot": "Fri, 13 Nov 2026 07:24:55 +0800"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "Argus v0.5.0 发布：纯 Rust 与 GPU 原生绘制的现代 Windows 任务管理器（已获 1.4k Star）",
       "url": "https://www.oschina.net/news/503550",
       "hot": "Fri, 13 Nov 2026 05:00:22 +0800"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "星甘（StarGantt）支持 .mpp 双向读写了：导进来能改，改完能导回去",
       "url": "https://www.oschina.net/news/503549",
       "hot": "Thu, 12 Nov 2026 22:41:15 +0800"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "全球化筑基，AI 赋能新体验，openKylin 3.0 SP1 正式发布",
       "url": "https://www.oschina.net/news/503545",
       "hot": "Thu, 12 Nov 2026 15:13:17 +0800"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": ".NET 11 正式发布，C# 15 补上了它欠缺二十年的东西",
       "url": "https://www.oschina.net/news/503542/microsoft-announcing-dotnet-11",
       "hot": "Thu, 12 Nov 2026 11:23:19 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "🔥 拾趣 (Magpie) v0.1.22 发布：英文朗读上线，单词、长句，地道的口语",
-      "url": "https://www.oschina.net/news/503541",
-      "hot": "Thu, 12 Nov 2026 11:04:49 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "苹果正在开发一个把 Mac 变成私有 AI 推理服务器的应用",
-      "url": "https://www.oschina.net/news/503540/apple-new-mac-app-coming-to-make-running-local-ai-models-easy",
-      "hot": "Thu, 12 Nov 2026 10:58:12 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "Skyeye 云企业级 AI + 零代码智能制造系统-消息通知 - v4.1.11 发布",
-      "url": "https://www.oschina.net/news/503539",
-      "hot": "Thu, 12 Nov 2026 10:48:40 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "cc4g-AI 编程工具 Web 集成平台 v0.2.0 更新：增加 Codex CLI 集成",
-      "url": "https://www.oschina.net/news/503538",
-      "hot": "Thu, 12 Nov 2026 09:39:40 +0800"
     }
   ]
 }

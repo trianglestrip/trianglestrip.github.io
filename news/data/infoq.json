@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-13T07:20:23+00:00",
+  "updated_at": "2026-11-13T15:30:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "从快速部署到记忆共享，数据库如何支撑 Agent 应用？",
+      "url": "https://www.infoq.cn/video/FwbOyyfoAmkQPMTItMDN?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 13 Nov 2026 20:54:12 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "智能互动 Agent 在快手商业场景的落地实践",
+      "url": "https://www.infoq.cn/article/e0aglHW78pZuik3CWqdo?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 13 Nov 2026 19:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "容器隔离还不够：Edera 从虚拟机监控器层限制 AI 智能体",
+      "url": "https://www.infoq.cn/article/MU0txcPXXuGdGKBNa6a2?utm_source=rss&utm_medium=article",
+      "hot": "Fri, 13 Nov 2026 17:06:00 GMT"
+    },
+    {
+      "rank": 4,
       "title": "在银行业为基于 Kubernetes 的平台打造云原生文化",
       "url": "https://www.infoq.cn/article/AVoPIHgU8BvWY12j1sQ5?utm_source=rss&utm_medium=article",
       "hot": "Fri, 13 Nov 2026 15:18:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "奥运史上第一次，一朵云整体留给了举办国",
       "url": "https://www.infoq.cn/article/7Wih8vL541W3vkq1WAHi?utm_source=rss&utm_medium=article",
       "hot": "Fri, 13 Nov 2026 14:21:31 GMT"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "应用只是冰山一角：构建大规模移动应用基础设施需要什么",
       "url": "https://www.infoq.cn/article/oKGTGPNZuleM61QqQOVf?utm_source=rss&utm_medium=article",
       "hot": "Fri, 13 Nov 2026 13:00:00 GMT"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "黄仁勋辞职：把扁平化推到极致的创始人，体面退场的代价",
       "url": "https://www.infoq.cn/article/rFGveY8SswQhcMjroStB?utm_source=rss&utm_medium=article",
       "hot": "Fri, 13 Nov 2026 11:28:14 GMT"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Docker 呼吁通过隔离与治理保障智能体安全",
       "url": "https://www.infoq.cn/article/1pCuIRtm5HYwTyR4fIhA?utm_source=rss&utm_medium=article",
       "hot": "Fri, 13 Nov 2026 11:00:00 GMT"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "GFlow：面向游戏设计的多 Agent 协作与验证实践｜AICon北京",
       "url": "https://www.infoq.cn/article/dkQAAL0SSdhIq1h61eKx?utm_source=rss&utm_medium=article",
       "hot": "Fri, 13 Nov 2026 10:00:00 GMT"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "谷歌推出 LiteRT Tensor API，用于构建、定制与优化端侧机器学习模型",
       "url": "https://www.infoq.cn/article/joYjCTbwWFSkbACK5lje?utm_source=rss&utm_medium=article",
       "hot": "Fri, 13 Nov 2026 09:17:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "LinkedIn 基于 OpenTelemetry 追踪用户动作全链路：从前端点击到后端服务",
-      "url": "https://www.infoq.cn/article/3u1PmO0HqQXBFNibKZoe?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 12 Nov 2026 16:44:00 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Google 终于让 PyTorch 原生跑上 TPU，开发者：“早该如此！”",
-      "url": "https://www.infoq.cn/article/Fikt82HLToqb6ZANB2xj?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 12 Nov 2026 15:00:00 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "智能体 AI 架构中记忆、知识与上下文的系统化方案",
-      "url": "https://www.infoq.cn/article/COuPKpA6rTf05C6JM10y?utm_source=rss&utm_medium=article",
-      "hot": "Thu, 12 Nov 2026 13:00:00 GMT"
     }
   ]
 }
