@@ -1,69 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-13T15:30:31+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2m/home/runner/.local/lib...",
+  "updated_at": "2026-11-13T21:30:47+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "“传统数据库已死”是谬论！ClickHouse数据库总裁：传统数据库不需要推倒重建，Postgres仍是默认选择",
-      "url": "https://www.51cto.com/article/861104.html",
-      "hot": "“传统数据库已死”听着像一句产品淘汰宣言。听完Andy的访谈，它更像是在提醒开发团队：过去用来估算数据库负载的那个“人”，正在变成一批会连续查询、连续犯错、连续修正的Agent。"
+      "title": "把餐单搭成积木：HarmonyOS 6 的 Builder 与独立菜品组件",
+      "url": "https://ost.51cto.com/posts/63736",
+      "hot": "1.前言餐单上有南瓜浓汤、菌菇烩饭和柠檬气泡水，每一份都带加减按钮。写到这里，很容易把三行内容复制三遍；再往下，又可能用一个Builder..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS7.0 完整上架实操",
-      "url": "https://ost.51cto.com/posts/63578",
-      "hot": "前言应用开发完毕后，想要让用户下载安装，就需要把它提交到应用商店。但上架不是把安装包传上去这么简单。一个HarmonyOS应用，要先有数字..."
+      "title": "黄仁勋辞职当晚，我翻了一遍英伟达的家底，短期垮不了，但有件事回不去了",
+      "url": "https://www.51cto.com/article/861171.html",
+      "hot": "没过多久，特朗普在社交平台上补了一句，说能接替他的人只有一个，苹果的蒂姆·库克，一位传奇接替另一位传奇。盘中，英伟达股价一度跌超14%，离10月初的历史高点，已经回撤近四成。这篇我不聊八卦，只想把一个问题聊透。"
     },
     {
       "rank": 3,
-      "title": "阳台小花园开发手记 04｜HarmonyOS 7.0 互动卡片：倾斜手机时的卡片效果",
-      "url": "https://ost.51cto.com/posts/63577",
-      "hot": "1.前言上一篇为叶片留出了卡片边框外的空间，并让花盆继续留在原位。现在可以给瓢虫增加一点动作：点击花盆，等它从叶后探出来，轻轻倾斜手..."
+      "title": "HarmonyOS动画衔接实战：让卡片跟随手势自然展开",
+      "url": "https://ost.51cto.com/posts/63713",
+      "hot": "大家好，今天介绍一下HarmonyOS中的手势与动画衔接。在通知面板、播放器和详情卡片中，用户通常可以拖动卡片查看内容。手指移动时，卡片需..."
     },
     {
       "rank": 4,
-      "title": "VS Code 终于改版了！IDE 时代的落幕！",
-      "url": "https://www.51cto.com/article/861033.html",
-      "hot": "从传统代码编辑器，到如今以 AI Agent 为中心的开发工作台，VS Code 正在发生明显的变化。IDE 不会一夜消失，但 AI 正在重新定义 IDE。"
+      "title": "软件越做越慢，中台建了烟囱还在：Palantir 本体 OSDK，解开 Agent 落地的底层架构瓶颈",
+      "url": "https://www.51cto.com/article/861154.html",
+      "hot": "对于 Palantir 而言，他们用本体（Ontology）重新定义了企业软件的构建方式。"
     },
     {
       "rank": 5,
-      "title": "Agent 自进化别只做反思循环！要做在线执行、离线进化、独立治理的生产级架构设计",
-      "url": "https://www.51cto.com/article/861032.html",
-      "hot": "如果今天要我设计一套能进生产环境的 Agent 自进化系统，我会怎么拆解。"
+      "title": "测试自动化里的智能体 Harness：为什么你的 AI 跑测试总像在碰运气",
+      "url": "https://www.51cto.com/article/861152.html",
+      "hot": "在测试自动化这个场景里，Harness 到底该怎么搭。我们会拆开看四件事：Harness 本体、代码索引与记忆、分层模型路由，以及让一切不跑偏的 AI 治理。"
     },
     {
       "rank": 6,
-      "title": "超 3.5 万个 Grok 生成应用在线暴露，部分泄露机密数据与密码",
-      "url": "https://www.51cto.com/article/861031.html",
-      "hot": "超3.5万个Grok生成应用默认公开暴露，涉多机构机密、员工信息甚至明文密码，存在未授权访问、篡改的高危安全风险。"
+      "title": "JavaScript：navigator 对象到底有什么用？一篇文章彻底搞懂！",
+      "url": "https://www.51cto.com/article/861147.html",
+      "hot": "如果说 window 像是浏览器这栋房子的“大管家”，那么 navigator 就更像是管家手里的“用户环境登记簿”，它记录了浏览器的一些基本信息，还提供了一些与浏览器能力、插件、协议处理等相关的接口。"
     },
     {
       "rank": 7,
-      "title": "AI 智能体写下 650 万行代码证明：谷歌 DeepMind 把 Signal 的加密实现验证到了机器码级",
-      "url": "https://www.51cto.com/article/861025.html",
-      "hot": "让智能体产出可以被外部形式化检验的结果，而不是让它自己说自己没问题。"
+      "title": "服务器卡顿只会敲 top？CPU 内存磁盘排查，看这一篇就够了",
+      "url": "https://www.51cto.com/article/861146.html",
+      "hot": "本文把日常最高频的五个监控命令一次性讲透，覆盖指标解读、常用参数与经典坑点，快速定位性能瓶颈。"
     },
     {
       "rank": 8,
-      "title": "腾讯混元4（Hy4）研究报告深度解读",
-      "url": "https://www.51cto.com/article/861020.html",
-      "hot": "腾讯技术工程在发布当天做过一组实测，其中一个场景很能说明这份报告到底在讲什么。测试者拍了一张塞得满满当当的冰箱照片，要求模型给一家三口排未来三天的九顿饭，额外采购不超过 100 元，每顿做饭不超过 40 分钟。"
+      "title": "257字节，竟绕过SSH",
+      "url": "https://www.51cto.com/article/861145.html",
+      "hot": "事情从一次让我摸不着头脑的登录开始，最后查到的原因，是一个字符承载了两种含义。OpenSSH 10.6p2 提供了上游修复，Alpine 也发布了补丁包。管理员还得完成更新，并重启 ​​sshd​​，让旧进程退出。"
     },
     {
       "rank": 9,
-      "title": "我用十秒语音在本地电脑克隆了自己的声音，完全免费！",
-      "url": "https://www.51cto.com/article/860971.html",
-      "hot": "随着 AI 的发展，一些之前看上去高大上的能力渐渐得也变得很平常了。虽然像 Claude 那样的顶尖模型疯狂封号，大家还是义无反顾的冒着再次封号的风险往里冲，确实有一些事情是其他模型做不到的。"
+      "title": "EMNLP 2026｜如何记住发生过的事？EM²Mem让记忆连接人与经历",
+      "url": "https://www.51cto.com/article/861127.html",
+      "hot": "来自浙江大学与联想集团的研究团队合作提出 EM²Mem（Event-Centric Multimodal Memory），以事件为中心构建多模态长期记忆。"
     },
     {
       "rank": 10,
-      "title": "Claude 的四层记忆是如何设计的？",
-      "url": "https://www.51cto.com/article/861013.html",
-      "hot": "拿个后端常见的例子：假设让 Claude 查一个夜间用户数据同步任务，它翻了任务代码，又查了用户中心 SDK 和部署配置。哪些东西值得带到下次？"
+      "title": "Grok Bot 1.0正式发布！马斯克教AI和你的团队一起工作",
+      "url": "https://www.51cto.com/article/861126.html",
+      "hot": "刚刚，Grok Bot 1.0 版本正式发布了。「机器人可以共享，并且比以往任何时候都更具协作性和能力。」"
     }
   ]
 }

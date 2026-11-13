@@ -1,68 +1,68 @@
 {
   "source": "github",
   "title": "GitHub Trending",
-  "updated_at": "2026-11-13T15:30:18+00:00",
+  "updated_at": "2026-11-13T21:30:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "[Go] alibaba/open-code-review",
       "url": "https://github.com/alibaba/open-code-review",
-      "hot": "50,301"
+      "hot": "50,526"
     },
     {
       "rank": 2,
       "title": "[TypeScript] GoogleChrome/modern-web-guidance-src",
       "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "hot": "4,387"
+      "hot": "4,691"
     },
     {
       "rank": 3,
       "title": "[TypeScript] openai/codex-security",
       "url": "https://github.com/openai/codex-security",
-      "hot": "12,908"
+      "hot": "13,066"
     },
     {
       "rank": 4,
       "title": "[Python] ZhuLinsen/daily_stock_analysis",
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "hot": "71,358"
+      "hot": "71,515"
     },
     {
       "rank": 5,
       "title": "[Ruby] we-promise/sure",
       "url": "https://github.com/we-promise/sure",
-      "hot": "14,462"
+      "hot": "14,659"
     },
     {
       "rank": 6,
       "title": "[TypeScript] backnotprop/plannotator",
       "url": "https://github.com/backnotprop/plannotator",
-      "hot": "10,319"
+      "hot": "10,395"
     },
     {
       "rank": 7,
       "title": "[JavaScript] louislam/uptime-kuma",
       "url": "https://github.com/louislam/uptime-kuma",
-      "hot": "93,686"
+      "hot": "93,806"
     },
     {
       "rank": 8,
       "title": "[Rust] block/buzz",
       "url": "https://github.com/block/buzz",
-      "hot": "37,204"
+      "hot": "37,274"
     },
     {
       "rank": 9,
       "title": "[Python] tradermonty/claude-trading-skills",
       "url": "https://github.com/tradermonty/claude-trading-skills",
-      "hot": "3,964"
+      "hot": "4,104"
     },
     {
       "rank": 10,
       "title": "[Go] tailscale/tailcat",
       "url": "https://github.com/tailscale/tailcat",
-      "hot": "9,279"
+      "hot": "9,397"
     }
   ]
 }
