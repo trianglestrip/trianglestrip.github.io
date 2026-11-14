@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-14T14:45:43+00:00",
+  "updated_at": "2026-11-14T19:30:38+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,15 +30,15 @@
     },
     {
       "rank": 5,
-      "title": "小城良方",
-      "url": "https://movie.douban.com/subject/36675942/",
-      "hot": "评分 8.0"
-    },
-    {
-      "rank": 6,
       "title": "空枪",
       "url": "https://movie.douban.com/subject/37508847/",
       "hot": "评分 7.2"
+    },
+    {
+      "rank": 6,
+      "title": "小城良方",
+      "url": "https://movie.douban.com/subject/36675942/",
+      "hot": "评分 8.0"
     },
     {
       "rank": 7,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "hot": "评分 9.3"
+      "title": "奥德赛",
+      "url": "https://movie.douban.com/subject/36808876/",
+      "hot": "评分 8.6"
     }
   ]
 }
