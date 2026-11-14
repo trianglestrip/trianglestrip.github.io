@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-14T01:39:07+00:00",
+  "updated_at": "2026-11-14T07:59:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "英伟达内部炸锅！员工集体逼宫董事会「把老黄请回来」，马斯克都签了",
+      "url": "https://www.51cto.com/article/861209.html",
+      "hot": "反转了！就在刚刚，英伟达员工联名请愿，逼宫董事会：你们下台，让老黄回来！11月12日，英伟达正式失去黄仁勋。他提交了辞职申请，而在此前，董事会就已经决定辞退他。而现在，英伟达内部，爆发了一场大「兵变」。"
+    },
+    {
+      "rank": 2,
       "title": "AI工程师不够用了！吴恩达谈AI工程师的四项能力：开发者的基础能力不够，看不懂Agent做了那些取舍",
       "url": "https://www.51cto.com/article/861195.html",
       "hot": "吴恩达列出的四组能力，放到这样一个项目里才有分量：有人用Agent推进开发，有人看懂工程取舍，有人把AI应用接入真实服务，也有人决定它究竟被允许替用户做什么。AI工程师的工作并没有随着代码生成提速而消失；难度转移到了这些需要一起说清、一起验收的地方。"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "把餐单搭成积木：HarmonyOS 6 的 Builder 与独立菜品组件",
       "url": "https://ost.51cto.com/posts/63736",
       "hot": "1.前言餐单上有南瓜浓汤、菌菇烩饭和柠檬气泡水，每一份都带加减按钮。写到这里，很容易把三行内容复制三遍；再往下，又可能用一个Builder..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "黄仁勋辞职当晚，我翻了一遍英伟达的家底，短期垮不了，但有件事回不去了",
       "url": "https://www.51cto.com/article/861171.html",
       "hot": "没过多久，特朗普在社交平台上补了一句，说能接替他的人只有一个，苹果的蒂姆·库克，一位传奇接替另一位传奇。盘中，英伟达股价一度跌超14%，离10月初的历史高点，已经回撤近四成。这篇我不聊八卦，只想把一个问题聊透。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "HarmonyOS动画衔接实战：让卡片跟随手势自然展开",
       "url": "https://ost.51cto.com/posts/63713",
       "hot": "大家好，今天介绍一下HarmonyOS中的手势与动画衔接。在通知面板、播放器和详情卡片中，用户通常可以拖动卡片查看内容。手指移动时，卡片需..."
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "软件越做越慢，中台建了烟囱还在：Palantir 本体 OSDK，解开 Agent 落地的底层架构瓶颈",
       "url": "https://www.51cto.com/article/861154.html",
       "hot": "对于 Palantir 而言，他们用本体（Ontology）重新定义了企业软件的构建方式。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "测试自动化里的智能体 Harness：为什么你的 AI 跑测试总像在碰运气",
       "url": "https://www.51cto.com/article/861152.html",
       "hot": "在测试自动化这个场景里，Harness 到底该怎么搭。我们会拆开看四件事：Harness 本体、代码索引与记忆、分层模型路由，以及让一切不跑偏的 AI 治理。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "JavaScript：navigator 对象到底有什么用？一篇文章彻底搞懂！",
       "url": "https://www.51cto.com/article/861147.html",
       "hot": "如果说 window 像是浏览器这栋房子的“大管家”，那么 navigator 就更像是管家手里的“用户环境登记簿”，它记录了浏览器的一些基本信息，还提供了一些与浏览器能力、插件、协议处理等相关的接口。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "服务器卡顿只会敲 top？CPU 内存磁盘排查，看这一篇就够了",
       "url": "https://www.51cto.com/article/861146.html",
       "hot": "本文把日常最高频的五个监控命令一次性讲透，覆盖指标解读、常用参数与经典坑点，快速定位性能瓶颈。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "257字节，竟绕过SSH",
       "url": "https://www.51cto.com/article/861145.html",
       "hot": "事情从一次让我摸不着头脑的登录开始，最后查到的原因，是一个字符承载了两种含义。OpenSSH 10.6p2 提供了上游修复，Alpine 也发布了补丁包。管理员还得完成更新，并重启 ​​sshd​​，让旧进程退出。"
-    },
-    {
-      "rank": 10,
-      "title": "EMNLP 2026｜如何记住发生过的事？EM²Mem让记忆连接人与经历",
-      "url": "https://www.51cto.com/article/861127.html",
-      "hot": "来自浙江大学与联想集团的研究团队合作提出 EM²Mem（Event-Centric Multimodal Memory），以事件为中心构建多模态长期记忆。"
     }
   ]
 }

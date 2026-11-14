@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-14T01:39:11+00:00",
+  "updated_at": "2026-11-14T07:59:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "phimint v0.10.0 发布：卡在「等你输入」的命令上，agent 能自己接上",
+      "url": "https://www.oschina.net/news/503576",
+      "hot": "Sat, 14 Nov 2026 12:24:27 +0800"
+    },
+    {
+      "rank": 2,
       "title": "通用代码生成器光船，特默尔尝鲜版二，人工智能设置项目会话",
       "url": "https://www.oschina.net/news/503572",
       "hot": "Fri, 13 Nov 2026 17:32:32 +0800"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "qData 数据中台开源版 v1.6.7 发布：修复消息通知与时间范围增量读取问题",
       "url": "https://www.oschina.net/news/503570",
       "hot": "Fri, 13 Nov 2026 17:07:20 +0800"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "写《Python 之禅》的那个人走了",
       "url": "https://www.oschina.net/news/503569/in-memoriam-tim-peters-1952-2026",
       "hot": "Fri, 13 Nov 2026 17:02:57 +0800"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "黄仁勋辞任英伟达 CEO，CFO 接任临时掌门",
       "url": "https://www.oschina.net/news/503568/nvidia-announces-ceo-transition",
       "hot": "Fri, 13 Nov 2026 16:39:45 +0800"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "MetaForge 2026.0.0 正式发布：从数据库管理到可视化分析，700+ 项改进带来全面升级",
       "url": "https://www.oschina.net/news/503552",
       "hot": "Fri, 13 Nov 2026 08:03:54 +0800"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Jync 捷同 v2.1.0 发布：CDC 流内 DDL 闭环，ETL 支持主键更新",
       "url": "https://www.oschina.net/news/503551",
       "hot": "Fri, 13 Nov 2026 07:24:55 +0800"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "Argus v0.5.0 发布：纯 Rust 与 GPU 原生绘制的现代 Windows 任务管理器（已获 1.4k Star）",
       "url": "https://www.oschina.net/news/503550",
       "hot": "Fri, 13 Nov 2026 05:00:22 +0800"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "星甘（StarGantt）支持 .mpp 双向读写了：导进来能改，改完能导回去",
       "url": "https://www.oschina.net/news/503549",
       "hot": "Thu, 12 Nov 2026 22:41:15 +0800"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "全球化筑基，AI 赋能新体验，openKylin 3.0 SP1 正式发布",
       "url": "https://www.oschina.net/news/503545",
       "hot": "Thu, 12 Nov 2026 15:13:17 +0800"
-    },
-    {
-      "rank": 10,
-      "title": ".NET 11 正式发布，C# 15 补上了它欠缺二十年的东西",
-      "url": "https://www.oschina.net/news/503542/microsoft-announcing-dotnet-11",
-      "hot": "Thu, 12 Nov 2026 11:23:19 +0800"
     }
   ]
 }
