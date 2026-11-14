@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-14T07:59:35+00:00",
+  "updated_at": "2026-11-14T14:46:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Ggml v1.0.0",
-      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
-      "hot": "205"
+      "title": "Why get an expensive Pi when I have an old phone?",
+      "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
+      "hot": "245"
     },
     {
       "rank": 2,
-      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "hot": "429"
+      "title": "The Claude Delusion",
+      "url": "https://www.netmeister.org/blog/claude-delusion.html",
+      "hot": "65"
     },
     {
       "rank": 3,
-      "title": "Terminal borders that don't cost a cell",
-      "url": "https://www.joshka.net/cell-borders/",
-      "hot": "213"
+      "title": "Generative AI uses more energy on non-English text",
+      "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+      "hot": "36"
     },
     {
       "rank": 4,
-      "title": "FAA issues national ground stop – lifted 4.5 hours later",
-      "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
-      "hot": "1506"
+      "title": "Advancing science and engineering with Antigravity's /teamwork",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "hot": "14"
     },
     {
       "rank": 5,
-      "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
-      "url": "https://unsloth.ai/docs/models/qwen3.8",
-      "hot": "108"
+      "title": "Ggml v1.0.0",
+      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+      "hot": "336"
     },
     {
       "rank": 6,
-      "title": "What happened to 3Com?",
-      "url": "https://dfarq.homeip.net/what-happened-to-3com/",
-      "hot": "123"
+      "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
+      "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+      "hot": "96"
     },
     {
       "rank": 7,
-      "title": "Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop",
-      "url": "https://grounds.top/",
-      "hot": "128"
+      "title": "Show HN: Lampka – a Windows PDF reader whose dark mode keeps figures in colour",
+      "url": "https://lampka.app/",
+      "hot": "6"
     },
     {
       "rank": 8,
-      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
-      "url": "https://orcasairband.com/",
-      "hot": "255"
+      "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+      "url": "https://gitlab.com/snipedbywifi/terminactory",
+      "hot": "6"
     },
     {
       "rank": 9,
-      "title": "Found: A protein that drives ageing without unleashing inflammation",
-      "url": "https://www.nature.com/articles/d41586-026-03638-3",
-      "hot": "181"
+      "title": "Monkey Island: all 13 versions side by side",
+      "url": "https://monkeyisland.pages.dev/",
+      "hot": "285"
     },
     {
       "rank": 10,
-      "title": "FM-1 Workbench",
-      "url": "https://open.m-vave.com/fm1-workbench",
-      "hot": "228"
+      "title": "Testing a Trash Can Faraday Cage",
+      "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+      "hot": "7"
     }
   ]
 }
