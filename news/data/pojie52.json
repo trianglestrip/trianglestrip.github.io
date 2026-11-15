@@ -1,9 +1,8 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-11-14T23:15:47+00:00",
-  "fetch_ok": false,
-  "error": "too few items: 0",
+  "updated_at": "2026-11-15T02:41:35+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -49,21 +48,21 @@
     },
     {
       "rank": 8,
+      "title": "ks app rpc调用加密算法实现搜索",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131016",
+      "hot": "版本号，12.11.30.39921\n\n\n\nks_client.py,js脚本注入 App\n\n\n[mw_shl_code=asm,true]import argparse\nimport json\nimport os\nimport subprocess\nimport sys\nimport time\n\ntry:\n    import frida\nexcept ImportError:\n    sys.exit(\\&quot;缺少 frida：pip ins ..."
+    },
+    {
+      "rank": 9,
       "title": "【吾爱首发】游戏《Sora No Kiseki the 2nd》打包解包工具FPACTool V2.1源代码",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2130872",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "The Enigma Protector vm还原插件",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2127264",
       "hot": "不做过多介绍，能用的上的人都知道怎么用，字越少，越强大\n\n主要还原壳代码，遇到    push 0xxxxxx   jmp xxxxx这种地址，右键---EnigmaVM---还原当前地址，就可以还原，还原的代码大部分都可以执行的，遇到不能执行的 ..."
-    },
-    {
-      "rank": 10,
-      "title": "某象滑块纯算逆向分析",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2125447",
-      "hot": "前言[hr]\n兄弟们，我又来了，最近离职了有空研究下弱点，滑块这些，最近看论坛这些真是日新月异，ai直接都把web端相当于全破了，我看了下如果没有别人逆完写好流程的skill，你就要自己懂流程一步步引导他做下去，没有那 ..."
     }
   ]
 }
