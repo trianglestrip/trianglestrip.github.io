@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-15T21:16:00+00:00",
+  "updated_at": "2026-11-16T01:04:41+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【Linux网络】TCP 半包粘包怎么解决？从长度报头、JSON 拆包到网络计算器完整实战",
       "url": "https://blog.csdn.net/2402_87731470/article/details/170444769",
-      "hot": "29121"
+      "hot": "32084"
     },
     {
       "rank": 2,
       "title": "从文档入库到售后问答，让AI的回答有据可查：Nexent知识库与RAG深度实测",
       "url": "https://blog.csdn.net/2401_87629362/article/details/170777858",
-      "hot": "22613"
+      "hot": "16381"
     },
     {
       "rank": 3,
-      "title": "【AI大模型接入SDK】历史消息时间戳问题与时间戳问题",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/170771570",
-      "hot": "14242"
+      "title": "【AI智能体】Codex + Harness Engineering 实战开发ChatBot 项目详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/169847875",
+      "hot": "14255"
     },
     {
       "rank": 4,
-      "title": "【AI智能体】Codex + Harness Engineering 实战开发ChatBot 项目详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/169847875",
-      "hot": "13620"
+      "title": "【AI】Claude code、codex是万能的吗？2026年AI模型选型指南：编程、写作、科研、生图、视频到底选谁？",
+      "url": "https://blog.csdn.net/2501_91731683/article/details/170507001",
+      "hot": "12083"
     },
     {
       "rank": 5,
-      "title": "2026 企业级 AI Agent 深度解析：AgentOS 如何成为能办事的企业管理智能体",
-      "url": "https://blog.csdn.net/zhouzhongyan/article/details/167257570",
-      "hot": "12348"
+      "title": "【AI大模型接入SDK】历史消息时间戳问题与时间戳问题",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/170771570",
+      "hot": "11938"
     },
     {
       "rank": 6,
-      "title": "【AI 编程】Vibe Coding 介绍（上）：从大语言模型到人机协作，先把开发方法想明白",
-      "url": "https://blog.csdn.net/weixin_64304261/article/details/170769799",
-      "hot": "10706"
+      "title": "【人工智能驱动的电催化研究-07】CSV文件、路径与可追溯记录",
+      "url": "https://blog.csdn.net/2402_84593233/article/details/170779480",
+      "hot": "10449"
     },
     {
       "rank": 7,
-      "title": "【AI】Claude code、codex是万能的吗？2026年AI模型选型指南：编程、写作、科研、生图、视频到底选谁？",
-      "url": "https://blog.csdn.net/2501_91731683/article/details/170507001",
-      "hot": "10184"
+      "title": "大模型对齐问题_为什么AI需要与人类价值观对齐",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/170802191",
+      "hot": "9690"
     },
     {
       "rank": 8,
-      "title": "大模型对齐问题_为什么AI需要与人类价值观对齐",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/170802191",
-      "hot": "10030"
+      "title": "2026 企业级 AI Agent 深度解析：AgentOS 如何成为能办事的企业管理智能体",
+      "url": "https://blog.csdn.net/zhouzhongyan/article/details/167257570",
+      "hot": "9441"
     },
     {
       "rank": 9,
-      "title": "【人工智能驱动的电催化研究-07】CSV文件、路径与可追溯记录",
-      "url": "https://blog.csdn.net/2402_84593233/article/details/170779480",
-      "hot": "9219"
+      "title": "【CUDA编程】GPU通用计算：CPU与GPU的设计差异、线程网格与Warp执行、内存层次与合并访问、架构演进与工具链优化",
+      "url": "https://blog.csdn.net/say_fall/article/details/170779250",
+      "hot": "8960"
     },
     {
       "rank": 10,
-      "title": "链路利用率与带宽规划预警：网络性能管理的核心指标",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/170761891",
-      "hot": "9083"
+      "title": "【AI 编程】Vibe Coding 介绍（上）：从大语言模型到人机协作，先把开发方法想明白",
+      "url": "https://blog.csdn.net/weixin_64304261/article/details/170769799",
+      "hot": "7849"
     }
   ]
 }
