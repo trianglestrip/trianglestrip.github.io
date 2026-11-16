@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-16T07:52:59+00:00",
+  "updated_at": "2026-11-16T17:31:36+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "别急着用AI裁员！OpenAI首席经济学家：模型会做任务，不代表岗位就会消失",
+      "url": "https://www.51cto.com/article/861370.html",
+      "hot": "开发者要解决的，不只是让Agent更聪明，还包括让它接入软件、交付结果，并在需要时把工作交还给人。这些环节没做好，AI仍然难以走出问答框。"
+    },
+    {
+      "rank": 2,
       "title": "减少嵌套层级，HarmonyOS 6 布局瘦身",
       "url": "https://ost.51cto.com/posts/64084",
       "hot": "前言时刻表上有一班22:14去市政广场的车，从A1站台出发。站名扫过去，眼睛就能直接去最右边找A1。这里改代码的目标很小：把每一条车次外多..."
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "HarmonyOS 7下拉刷新实战：使用SwipeRefresherV2更新列表",
       "url": "https://ost.51cto.com/posts/64060",
       "hot": "大家好，今天介绍一下HarmonyOS7中的SwipeRefresherV2组件，并结合Refresh实现消息列表的下拉刷新。在消息、资讯或者待办列表中，用户经常..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "5097 个赞的新玩法：T3 Code 也能一句话换肤，但先确认你在 nightly",
       "url": "https://www.51cto.com/article/861312.html",
       "hot": "Theo（@theo）在 2026-11-14 12:11 Asia/Shanghai 宣布：T3 Code 现在可以在应用里完全自定义界面，直接让 Agent 改，客户端会马上更新。主帖配了约 13 秒演示视频。今天上午核实，这条已经是 赞 5097 / 收藏 1057 / 转发 95 / 引用 118 / 回复 419 / 曝光 387962。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "造引擎 vs 装车落地！一文拆解 AI 工程师与 FDE 的分工、技能栈与职业路线",
       "url": "https://www.51cto.com/article/861308.html",
       "hot": "AI 工程师更像“造引擎的人”，负责把模型本身打磨好；FDE 是“把引擎装进客户的车、并让车真正跑起来的人”。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "刚刚，硅谷顶流博主改口：超级智能2027年就来，最迟2030年必到",
       "url": "https://www.51cto.com/article/861260.html",
       "hot": "AI研究员完全被算法取代的中位时间是2028年，快的话可能就在2027年。一旦AI学会做AI研发，整个技术进程会被瞬间压缩。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "「别提越权」！OpenAI自曝：AI摸进黑客考场后台，交卷时只字不提",
       "url": "https://www.51cto.com/article/861258.html",
       "hot": "这是一场网络安全考试，AI进攻目标，拿到一串叫flag的暗号，就算答对。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "一张图吓得研究员当场辞职！Anthropic最疯神图流出",
       "url": "https://www.51cto.com/article/861257.html",
       "hot": "一名顶尖AI研究员在万亿IPO前夕，直接掀桌子走人了！他叫Jacob Coxon，曾先后担任OpenAI与Anthropic的预训练研究员。两个月前，他毅然放弃巨额IPO期权辞职。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Cursor 插件市场混进了假 Claude Code：11 小时，最多 5000 名开发者可能中招",
       "url": "https://www.51cto.com/article/861301.html",
       "hot": "这次事件里没有 CVE，也没有 0day。攻击者全程用的都是合法凭据和合法通道：一把被曝的服务商密钥、一批没脱敏的对话轨迹、还有一堆用户贴进客服对话框的密码。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "EMNLP 2026 杰出论文 | 大模型训练，数据配比难？日本NICT团队提出最优分布向量合并",
       "url": "https://www.51cto.com/article/861253.html",
       "hot": "每个数据集各放多少入训练集，训练前就得定好；但是配比好不好，却要等训练结束评测后才知道。"
-    },
-    {
-      "rank": 10,
-      "title": "马斯克SpaceX创造历史：「筷子夹火箭2.0」，星舰飞船首次被发射塔捕获",
-      "url": "https://www.51cto.com/article/861252.html",
-      "hot": "这是人类首次成功用发射塔机械臂捕获一艘从地球轨道返回的星舰，也意味着 SpaceX 距离完全可重复使用的轨道运输系统，又近了一大步。"
     }
   ]
 }

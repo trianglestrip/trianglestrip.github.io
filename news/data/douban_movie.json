@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-16T07:52:23+00:00",
+  "updated_at": "2026-11-16T17:31:14+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -18,39 +18,39 @@
     },
     {
       "rank": 3,
-      "title": "生化危机：爆发夜",
-      "url": "https://movie.douban.com/subject/37068446/",
-      "hot": "评分 7.3"
-    },
-    {
-      "rank": 4,
       "title": "空枪",
       "url": "https://movie.douban.com/subject/37508847/",
       "hot": "评分 7.2"
     },
     {
-      "rank": 5,
-      "title": "嫁金钗",
-      "url": "https://movie.douban.com/subject/37191789/",
-      "hot": "评分 7.0"
-    },
-    {
-      "rank": 6,
+      "rank": 4,
       "title": "今天是太阳雨",
       "url": "https://movie.douban.com/subject/36689621/",
       "hot": ""
     },
     {
-      "rank": 7,
-      "title": "后会友期",
-      "url": "https://movie.douban.com/subject/37100984/",
-      "hot": "评分 8.7"
+      "rank": 5,
+      "title": "生化危机：爆发夜",
+      "url": "https://movie.douban.com/subject/37068446/",
+      "hot": "评分 7.3"
     },
     {
-      "rank": 8,
+      "rank": 6,
+      "title": "嫁金钗",
+      "url": "https://movie.douban.com/subject/37191789/",
+      "hot": "评分 7.0"
+    },
+    {
+      "rank": 7,
       "title": "小城良方",
       "url": "https://movie.douban.com/subject/36675942/",
       "hot": "评分 8.1"
+    },
+    {
+      "rank": 8,
+      "title": "后会友期",
+      "url": "https://movie.douban.com/subject/37100984/",
+      "hot": "评分 8.7"
     },
     {
       "rank": 9,
