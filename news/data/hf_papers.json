@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-16T01:04:58+00:00",
+  "updated_at": "2026-11-16T07:53:20+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -12,9 +12,9 @@
     },
     {
       "rank": 2,
-      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "166"
+      "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
+      "url": "https://huggingface.co/papers/2610.22732",
+      "hot": "16"
     },
     {
       "rank": 3,
@@ -24,9 +24,9 @@
     },
     {
       "rank": 4,
-      "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
-      "url": "https://huggingface.co/papers/2610.22732",
-      "hot": "16"
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://huggingface.co/papers/2412.20138",
+      "hot": "166"
     },
     {
       "rank": 5,
@@ -42,15 +42,15 @@
     },
     {
       "rank": 7,
-      "title": "MACaQ: Fast, Model Agnostic Calibrated Quantization for Low-Precision Weights and Activations",
-      "url": "https://huggingface.co/papers/2611.10649",
-      "hot": "30"
-    },
-    {
-      "rank": 8,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "77"
+    },
+    {
+      "rank": 8,
+      "title": "MACaQ: Fast, Model Agnostic Calibrated Quantization for Low-Precision Weights and Activations",
+      "url": "https://huggingface.co/papers/2611.10649",
+      "hot": "30"
     },
     {
       "rank": 9,
