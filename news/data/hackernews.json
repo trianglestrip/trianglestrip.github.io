@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-17T08:49:06+00:00",
+  "updated_at": "2026-11-17T17:56:24+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
-      "url": "https://www.cs.cmu.edu/learn/",
-      "hot": "1421"
+      "title": "GPT‑6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "hot": "89"
     },
     {
       "rank": 2,
-      "title": "Show HN: Zigzag, a native Mac browser for people leaving Arc",
-      "url": "https://github.com/ZigaoWang/zigzag",
-      "hot": "29"
+      "title": "What is the best harness for each model?",
+      "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+      "hot": "181"
     },
     {
       "rank": 3,
-      "title": "BugMeNot has closed",
-      "url": "https://www.bugmenot.com/",
-      "hot": "507"
+      "title": "Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off",
+      "url": "https://alloyhtml.com/example.html",
+      "hot": "95"
     },
     {
       "rank": 4,
-      "title": "Optimizely compromised, served malware on Zoom, GitLab",
-      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
-      "hot": "313"
+      "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+      "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+      "hot": "846"
     },
     {
       "rank": 5,
-      "title": "Nimony: A New Compiler for Nim",
-      "url": "https://nimony.org/",
-      "hot": "30"
+      "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+      "url": "https://www.cs.cmu.edu/learn/",
+      "hot": "2119"
     },
     {
       "rank": 6,
-      "title": "If an App Asks for Full Disk Access or System and App Protection Override",
-      "url": "https://support.apple.com/en-us/149699",
-      "hot": "112"
+      "title": "First Photos of the Poles of a Rod-Shaped Bacterium",
+      "url": "https://nautil.us/check-out-the-first-photos-of-the-poles-of-a-rod-shaped-bacterium-1286664",
+      "hot": "75"
     },
     {
       "rank": 7,
-      "title": "OpenCode Browse",
-      "url": "https://opencode.ai/product/browse",
-      "hot": "237"
+      "title": "NSA Internal Network Down",
+      "url": "https://www.reuters.com/technology/highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17/",
+      "hot": "148"
     },
     {
       "rank": 8,
-      "title": "Why 3dfx 1 cards had such a washed out color output?",
-      "url": "https://twitter.com/id_aa_carmack/status/2122478083319992513",
-      "hot": "107"
+      "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+      "url": "https://github.com/RunanywhereAI/trnrt",
+      "hot": "13"
     },
     {
       "rank": 9,
-      "title": "Chemistry is Actually Geometry",
-      "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
-      "hot": "216"
+      "title": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
+      "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+      "hot": "27"
     },
     {
       "rank": 10,
-      "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
-      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
-      "hot": "573"
+      "title": "Exploiting Replay Protected Monotonic Counters to Brute-Force Windows Hello PINs",
+      "url": "https://arxiv.org/abs/2611.18126",
+      "hot": "13"
     }
   ]
 }
