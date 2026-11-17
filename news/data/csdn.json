@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-17T00:59:41+00:00",
+  "updated_at": "2026-11-17T08:48:57+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【AI 编程】Vibe Coding 介绍（上）：从大语言模型到人机协作，先把开发方法想明白",
-      "url": "https://blog.csdn.net/weixin_64304261/article/details/170769799",
-      "hot": "20793"
+      "title": "【AI智能体】Codex + Harness Engineering 实战开发ChatBot 项目详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/169847875",
+      "hot": "19629"
     },
     {
       "rank": 2,
-      "title": "【Linux网络】TCP 半包粘包怎么解决？从长度报头、JSON 拆包到网络计算器完整实战",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/170444769",
-      "hot": "19140"
+      "title": "Next-AI-Draw.io本地部署教程：AI生成架构图、流程图与UML",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/170864263",
+      "hot": "18117"
     },
     {
       "rank": 3,
       "title": "【CUDA编程】GPU通用计算：CPU与GPU的设计差异、线程网格与Warp执行、内存层次与合并访问、架构演进与工具链优化",
       "url": "https://blog.csdn.net/say_fall/article/details/170779250",
-      "hot": "19084"
+      "hot": "15734"
     },
     {
       "rank": 4,
-      "title": "用 Spring AI 做文本分类/摘要：落地到后台工作流（无人值守批处理实战）",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/170821581",
-      "hot": "18485"
+      "title": "【Linux网络】TCP 半包粘包怎么解决？从长度报头、JSON 拆包到网络计算器完整实战",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/170444769",
+      "hot": "15643"
     },
     {
       "rank": 5,
-      "title": "【AI智能体】Codex + Harness Engineering 实战开发ChatBot 项目详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/169847875",
-      "hot": "18179"
+      "title": "用 Spring AI 做文本分类/摘要：落地到后台工作流（无人值守批处理实战）",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/170821581",
+      "hot": "14468"
     },
     {
       "rank": 6,
-      "title": "【AI大模型接入SDK】历史消息时间戳问题与时间戳问题",
-      "url": "https://blog.csdn.net/2401_89899187/article/details/170771570",
-      "hot": "14395"
+      "title": "临时电脑上什么办公软件都没有？我把GodoOS放进浏览器，打开就是一套办公桌面",
+      "url": "https://blog.csdn.net/aiclaws/article/details/170859593",
+      "hot": "13776"
     },
     {
       "rank": 7,
-      "title": "从文档入库到售后问答，让AI的回答有据可查：Nexent知识库与RAG深度实测",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/170777858",
+      "title": "演示网页时不想共享整台电脑？我在NAS里放了一个多人共用的隔离浏览器",
+      "url": "https://blog.csdn.net/Rqaqedamancy/article/details/170859844",
       "hot": "13464"
     },
     {
       "rank": 8,
-      "title": "临时电脑上什么办公软件都没有？我把GodoOS放进浏览器，打开就是一套办公桌面",
-      "url": "https://blog.csdn.net/aiclaws/article/details/170859593",
-      "hot": "13260"
+      "title": "一篇看懂 Spring AOP：核心概念 + 五种通知 + 切点表达式 + 动态代理（附案例和流程图）",
+      "url": "https://blog.csdn.net/2502_93799892/article/details/170776868",
+      "hot": "12614"
     },
     {
       "rank": 9,
-      "title": "我把三份报名表交给 SoduWork：名单整理之后，验收才是关键",
-      "url": "https://blog.csdn.net/ttrr27/article/details/170854528",
-      "hot": "12459"
+      "title": "Constitutional_AI_Claude背后的安全对齐方法",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/170859168",
+      "hot": "10627"
     },
     {
       "rank": 10,
-      "title": "链路利用率与带宽规划预警：网络性能管理的核心指标",
-      "url": "https://blog.csdn.net/qq_41840843/article/details/170761891",
-      "hot": "12021"
+      "title": "第十台MySQL还手动装Exporter太浪费时间：我把部署步骤写成了一条Shell脚本",
+      "url": "https://blog.csdn.net/user340/article/details/170864619",
+      "hot": "9474"
     }
   ]
 }

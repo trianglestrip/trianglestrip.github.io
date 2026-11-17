@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-17T00:59:49+00:00",
+  "updated_at": "2026-11-17T08:49:06+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
       "url": "https://www.cs.cmu.edu/learn/",
-      "hot": "608"
+      "hot": "1421"
     },
     {
       "rank": 2,
-      "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
-      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
-      "hot": "152"
+      "title": "Show HN: Zigzag, a native Mac browser for people leaving Arc",
+      "url": "https://github.com/ZigaoWang/zigzag",
+      "hot": "29"
     },
     {
       "rank": 3,
       "title": "BugMeNot has closed",
       "url": "https://www.bugmenot.com/",
-      "hot": "276"
+      "hot": "507"
     },
     {
       "rank": 4,
-      "title": "World's Largest Brands Infected With Malware Via Optimizely",
+      "title": "Optimizely compromised, served malware on Zoom, GitLab",
       "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
-      "hot": "174"
+      "hot": "313"
     },
     {
       "rank": 5,
-      "title": "Optimizely Compromised, Served Malware on Zoom, GitLab",
-      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
-      "hot": "61"
+      "title": "Nimony: A New Compiler for Nim",
+      "url": "https://nimony.org/",
+      "hot": "30"
     },
     {
       "rank": 6,
-      "title": "OpenCode Browse",
-      "url": "https://opencode.ai/product/browse",
-      "hot": "98"
+      "title": "If an App Asks for Full Disk Access or System and App Protection Override",
+      "url": "https://support.apple.com/en-us/149699",
+      "hot": "112"
     },
     {
       "rank": 7,
-      "title": "How to Break into Security, Ptacek Edition (2012)",
-      "url": "https://krebsonsecurity.com/2012/06/how-to-break-into-security-ptacek-edition/",
-      "hot": "67"
+      "title": "OpenCode Browse",
+      "url": "https://opencode.ai/product/browse",
+      "hot": "237"
     },
     {
       "rank": 8,
-      "title": "Chemistry is Actually Geometry",
-      "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
-      "hot": "88"
+      "title": "Why 3dfx 1 cards had such a washed out color output?",
+      "url": "https://twitter.com/id_aa_carmack/status/2122478083319992513",
+      "hot": "107"
     },
     {
       "rank": 9,
-      "title": "Grazing sheep in fields with solar arrays",
-      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
-      "hot": "205"
+      "title": "Chemistry is Actually Geometry",
+      "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
+      "hot": "216"
     },
     {
       "rank": 10,
-      "title": "Jiff 1.0: A datetime library for Rust",
-      "url": "https://burntsushi.net/jiff/",
-      "hot": "300"
+      "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "hot": "573"
     }
   ]
 }

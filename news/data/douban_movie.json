@@ -1,9 +1,8 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-17T00:59:23+00:00",
-  "fetch_ok": false,
-  "error": "HTTP Error 403: Forbidden",
+  "updated_at": "2026-11-17T08:48:34+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
@@ -21,7 +20,7 @@
       "rank": 3,
       "title": "空枪",
       "url": "https://movie.douban.com/subject/37508847/",
-      "hot": "评分 7.2"
+      "hot": "评分 7.1"
     },
     {
       "rank": 4,
@@ -39,7 +38,7 @@
       "rank": 6,
       "title": "嫁金钗",
       "url": "https://movie.douban.com/subject/37191789/",
-      "hot": "评分 7.0"
+      "hot": "评分 6.8"
     },
     {
       "rank": 7,

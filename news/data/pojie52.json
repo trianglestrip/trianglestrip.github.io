@@ -1,7 +1,7 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-11-17T00:59:43+00:00",
+  "updated_at": "2026-11-17T08:49:02+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,39 +30,39 @@
     },
     {
       "rank": 5,
+      "title": "拆开 Microsoft Edge 的 App-Bound Encryption：从「读不出」到借浏览器身份解密 v20",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131346",
+      "hot": "[md]\n&gt; 目标版本：Microsoft Edge `154.0.4258.62`（x64，Windows）\n&gt; 平台：Windows 11 x64\n&gt; 定位：逆向分析 / Windows 安全 / 凭据保护\n&gt;\n&gt; **脱敏声明**：文中出现的账户名、用户 SID、机器 DPAPI 主密钥 GUID、具体站点 URL、密码明文等均已移除或替换为占位 ..."
+    },
+    {
+      "rank": 6,
       "title": "0知识储备, 从引擎源码入手, 逆向某UE4引擎游戏, 解密ini与pak",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131187",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Bastion 棱堡，对称加密算法库，支持CTR、CBC、XTS、AEAD、HASH、HMAC、HKDF、PBKDF2",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131143",
       "hot": "[hr][md]\n\n**Bastion 棱堡**，一款高性能的自研对称加密算法库，提供 CTR 流加密、CBC、XTS、AEAD 认证加密、HASH、HMAC、HKDF、PBKDF2 模式。\n\n---\n\n### 概述\n\nBastion 棱堡是基于 SPN（代换-置换网络）结构设计 ..."
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "ks app rpc调用加密算法实现搜索",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131016",
       "hot": "版本号，12.11.30.39921\n\n\n\nks_client.py,js脚本注入 App\n\n\n[mw_shl_code=asm,true]import argparse\nimport json\nimport os\nimport subprocess\nimport sys\nimport time\n\ntry:\n    import frida\nexcept ImportError:\n    sys.exit(\\&quot;缺少 frida：pip ins ..."
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "【吾爱首发】游戏《Sora No Kiseki the 2nd》打包解包工具FPACTool V2.1源代码",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2130872",
       "hot": ""
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "The Enigma Protector vm还原插件",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2127264",
       "hot": "不做过多介绍，能用的上的人都知道怎么用，字越少，越强大\n\n主要还原壳代码，遇到    push 0xxxxxx   jmp xxxxx这种地址，右键---EnigmaVM---还原当前地址，就可以还原，还原的代码大部分都可以执行的，遇到不能执行的 ..."
-    },
-    {
-      "rank": 10,
-      "title": "某象滑块纯算逆向分析",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2125447",
-      "hot": "前言[hr]\n兄弟们，我又来了，最近离职了有空研究下弱点，滑块这些，最近看论坛这些真是日新月异，ai直接都把web端相当于全破了，我看了下如果没有别人逆完写好流程的skill，你就要自己懂流程一步步引导他做下去，没有那 ..."
     }
   ]
 }
