@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-16T17:31:49+00:00",
+  "updated_at": "2026-11-17T01:00:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-      "hot": "8044"
+      "hot": "8770"
     },
     {
       "rank": 2,
       "title": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-      "hot": "1278"
+      "hot": "1316"
     },
     {
       "rank": 3,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "20215"
+      "hot": "20270"
     },
     {
       "rank": 4,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "12175"
+      "hot": "12238"
     },
     {
       "rank": 5,
       "title": "Comfy-Org/MiniMax-H3-Image",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
-      "hot": "456"
+      "hot": "487"
     },
     {
       "rank": 6,
       "title": "Zyphra/ZONOS3-Mini",
       "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
-      "hot": "438"
+      "hot": "467"
     },
     {
       "rank": 7,
       "title": "higurashi-ai/Haru-4B",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-      "hot": "388"
+      "hot": "427"
     },
     {
       "rank": 8,
       "title": "thinkingmachines/Inkling-2-Small",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
-      "hot": "383"
+      "hot": "411"
     },
     {
       "rank": 9,
       "title": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "hot": "6043"
+      "hot": "6084"
     },
     {
       "rank": 10,
-      "title": "Edge0/Edge0-145B-NVFP4",
-      "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
-      "hot": "365"
+      "title": "speridlabs/idol",
+      "url": "https://huggingface.co/speridlabs/idol",
+      "hot": "2419"
     }
   ]
 }

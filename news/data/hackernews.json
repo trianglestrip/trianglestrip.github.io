@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-16T17:31:36+00:00",
+  "updated_at": "2026-11-17T00:59:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
-      "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
-      "hot": "214"
+      "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+      "url": "https://www.cs.cmu.edu/learn/",
+      "hot": "608"
     },
     {
       "rank": 2,
-      "title": "Many of Amazon’s Black Friday and Cyber Monday “Deals” Offered No Savings",
-      "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
-      "hot": "451"
+      "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "hot": "152"
     },
     {
       "rank": 3,
-      "title": "How to make almost anything",
-      "url": "https://pub.cba.mit.edu/863.26/site/",
-      "hot": "678"
+      "title": "BugMeNot has closed",
+      "url": "https://www.bugmenot.com/",
+      "hot": "276"
     },
     {
       "rank": 4,
-      "title": "Nvidia Was in Trouble Before the Jensen Huang Mess",
-      "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
-      "hot": "101"
+      "title": "World's Largest Brands Infected With Malware Via Optimizely",
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "hot": "174"
     },
     {
       "rank": 5,
-      "title": "Universal XSS in uBlock Origin from website-driven element picker",
-      "url": "https://iter.ca/post/ubo-uxss/",
-      "hot": "550"
+      "title": "Optimizely Compromised, Served Malware on Zoom, GitLab",
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "hot": "61"
     },
     {
       "rank": 6,
-      "title": "The Active Directory Era Is Finally Over",
-      "url": "https://infisical.com/blog/active-directory-machine-identity",
-      "hot": "45"
+      "title": "OpenCode Browse",
+      "url": "https://opencode.ai/product/browse",
+      "hot": "98"
     },
     {
       "rank": 7,
-      "title": "Interpreting claims that a theorem is correct because it was checked in Lean",
-      "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
-      "hot": "206"
+      "title": "How to Break into Security, Ptacek Edition (2012)",
+      "url": "https://krebsonsecurity.com/2012/06/how-to-break-into-security-ptacek-edition/",
+      "hot": "67"
     },
     {
       "rank": 8,
-      "title": "Smallest possible nopert polyhedra: the Septopert",
-      "url": "https://github.com/tom7/noperts/blob/main/septopert.md",
-      "hot": "9"
+      "title": "Chemistry is Actually Geometry",
+      "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
+      "hot": "88"
     },
     {
       "rank": 9,
-      "title": "OOS – an open operating system for the Rigol Scopes",
-      "url": "https://www.eevblog.com/forum/testgear/oos-an-open-operating-system-for-the-rigol-scopes/",
-      "hot": "82"
+      "title": "Grazing sheep in fields with solar arrays",
+      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+      "hot": "205"
     },
     {
       "rank": 10,
-      "title": "What is w2rt6byl5nf1opmc-a.com?",
-      "url": "https://jack.cab/blog/siterate",
-      "hot": "275"
+      "title": "Jiff 1.0: A datetime library for Rust",
+      "url": "https://burntsushi.net/jiff/",
+      "hot": "300"
     }
   ]
 }
