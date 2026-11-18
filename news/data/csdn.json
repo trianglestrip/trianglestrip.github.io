@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-18T00:09:24+00:00",
+  "updated_at": "2026-11-18T07:16:35+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "【AI智能体】Codex + Harness Engineering 实战开发ChatBot 项目详解",
       "url": "https://blog.csdn.net/zhangcongyi420/article/details/169847875",
-      "hot": "32266"
+      "hot": "35909"
     },
     {
       "rank": 2,
-      "title": "Next-AI-Draw.io本地部署教程：AI生成架构图、流程图与UML",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/170864263",
-      "hot": "20365"
+      "title": "金仓AI数据库上手记：语义层、库内计算、权限继承，一次讲清",
+      "url": "https://blog.csdn.net/qq_57761637/article/details/170822359",
+      "hot": "16613"
     },
     {
       "rank": 3,
       "title": "【Linux】守护进程怎么实现？从进程组、会话到 setsid 与 Daemon 完整实战",
       "url": "https://blog.csdn.net/2402_87731470/article/details/170444799",
-      "hot": "16882"
+      "hot": "16133"
     },
     {
       "rank": 4,
       "title": "用 Spring AI 做文本分类/摘要：落地到后台工作流（无人值守批处理实战）",
       "url": "https://blog.csdn.net/sinat_41617212/article/details/170821581",
-      "hot": "15018"
+      "hot": "15309"
     },
     {
       "rank": 5,
-      "title": "一篇看懂 Spring AOP：核心概念 + 五种通知 + 切点表达式 + 动态代理（附案例和流程图）",
-      "url": "https://blog.csdn.net/2502_93799892/article/details/170776868",
-      "hot": "11671"
+      "title": "用开源企业级 AI 原生引擎 SoduWork 做网站发布前体检：代码生成之后，还需要怎样的验收？",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/170926402",
+      "hot": "11174"
     },
     {
       "rank": 6,
-      "title": "金仓AI数据库上手记：语义层、库内计算、权限继承，一次讲清",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/170822359",
-      "hot": "10598"
+      "title": "【人工智能驱动的电催化研究-08】NumPy数组、维度与向量运算",
+      "url": "https://blog.csdn.net/2402_84593233/article/details/170889422",
+      "hot": "10442"
     },
     {
       "rank": 7,
-      "title": "【人工智能驱动的电催化研究-08】NumPy数组、维度与向量运算",
-      "url": "https://blog.csdn.net/2402_84593233/article/details/170889422",
-      "hot": "9463"
+      "title": "一篇看懂 Spring AOP：核心概念 + 五种通知 + 切点表达式 + 动态代理（附案例和流程图）",
+      "url": "https://blog.csdn.net/2502_93799892/article/details/170776868",
+      "hot": "10405"
     },
     {
       "rank": 8,
-      "title": "幻觉问题深析_为什么大模型会编造内容及缓解方案",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/170902276",
-      "hot": "9054"
+      "title": "Homarr飞牛NAS部署教程：服务导航、Docker状态与远程访问",
+      "url": "https://blog.csdn.net/weixin_44976692/article/details/170913066",
+      "hot": "8394"
     },
     {
       "rank": 9,
-      "title": "Homarr飞牛NAS部署教程：服务导航、Docker状态与远程访问",
-      "url": "https://blog.csdn.net/weixin_44976692/article/details/170913066",
-      "hot": "8212"
+      "title": "让 SoduWork 修 SoduWork：一次 AI 原生开发实战，从两个真实缺陷到上游 PR",
+      "url": "https://blog.csdn.net/xiaofeng10330111/article/details/170931952",
+      "hot": "7722"
     },
     {
       "rank": 10,
-      "title": "临时电脑上什么办公软件都没有？我把GodoOS放进浏览器，打开就是一套办公桌面",
-      "url": "https://blog.csdn.net/aiclaws/article/details/170859593",
-      "hot": "8175"
+      "title": "幻觉问题深析_为什么大模型会编造内容及缓解方案",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/170902276",
+      "hot": "7618"
     }
   ]
 }

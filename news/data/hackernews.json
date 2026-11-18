@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-18T00:09:30+00:00",
+  "updated_at": "2026-11-18T07:16:46+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Java4Shell: RCE in OpenJDK when processing Base64",
       "url": "https://calif.io/java4shell/",
-      "hot": "401"
+      "hot": "787"
     },
     {
       "rank": 2,
-      "title": "GPT‑6.2 Astra and Sol",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-      "hot": "1037"
+      "title": "ID.me terms required for IRS sign-in",
+      "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
+      "hot": "304"
     },
     {
       "rank": 3,
-      "title": "Quad9's withdrawal from France: A canary in the coal mine",
-      "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
-      "hot": "176"
+      "title": "GPT‑6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "hot": "1225"
     },
     {
       "rank": 4,
-      "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
-      "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
-      "hot": "344"
+      "title": "Quad9's withdrawal from France: A canary in the coal mine",
+      "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+      "hot": "473"
     },
     {
       "rank": 5,
-      "title": "jQuery 4.1.0",
-      "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
-      "hot": "226"
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
+      "hot": "300"
     },
     {
       "rank": 6,
-      "title": "Archive Team is archiving the Apple Support Community (closes November 20, 2026)",
-      "url": "https://wiki.archiveteam.org/index.php/Apple_Discussions",
-      "hot": "19"
+      "title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
+      "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/",
+      "hot": "221"
     },
     {
       "rank": 7,
-      "title": "MAI Code 2 and Code 2 Flash",
-      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
-      "hot": "264"
+      "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+      "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+      "hot": "498"
     },
     {
       "rank": 8,
-      "title": "Phrack 73 Released",
-      "url": "https://phrack.org/issues/73/introduction_md",
-      "hot": "250"
+      "title": "Microsoft's ONNX Runtime has disappeared from GitHub",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "hot": "265"
     },
     {
       "rank": 9,
-      "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
-      "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
-      "hot": "225"
+      "title": "Why Fibonacci?",
+      "url": "https://www.evilgeniuslabs.org/why-fibonacci",
+      "hot": "16"
     },
     {
       "rank": 10,
-      "title": "Highly classified US national security communications network goes down",
-      "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
-      "hot": "431"
+      "title": "Why is Gemini 4 Carbon taking so long?",
+      "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+      "hot": "44"
     }
   ]
 }
