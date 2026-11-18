@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-18T16:29:19+00:00",
+  "updated_at": "2026-11-18T23:02:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "higurashi-ai/Haru-4B",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-      "hot": "622"
+      "hot": "661"
     },
     {
       "rank": 2,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "12510"
+      "hot": "12550"
     },
     {
       "rank": 3,
-      "title": "thinkingmachines/Inkling-2-Small",
-      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
-      "hot": "481"
+      "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+      "hot": "389"
     },
     {
       "rank": 4,
-      "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-      "hot": "337"
+      "title": "thinkingmachines/Inkling-2-Small",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+      "hot": "490"
     },
     {
       "rank": 5,
       "title": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-      "hot": "1571"
+      "hot": "1577"
     },
     {
       "rank": 6,
       "title": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "20536"
+      "hot": "20556"
     },
     {
       "rank": 7,
-      "title": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
-      "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
-      "hot": "591"
+      "title": "n4ze3m/tiny-voca",
+      "url": "https://huggingface.co/n4ze3m/tiny-voca",
+      "hot": "286"
     },
     {
       "rank": 8,
-      "title": "n4ze3m/tiny-voca",
-      "url": "https://huggingface.co/n4ze3m/tiny-voca",
-      "hot": "275"
+      "title": "tencent/Hy4-flash",
+      "url": "https://huggingface.co/tencent/Hy4-flash",
+      "hot": "227"
     },
     {
       "rank": 9,
-      "title": "meituan-longcat/LongCat-Video-Avatar-1.6",
-      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
-      "hot": "249"
+      "title": "apple/FastFrames-L",
+      "url": "https://huggingface.co/apple/FastFrames-L",
+      "hot": "204"
     },
     {
       "rank": 10,
-      "title": "tencent/Hy4-flash",
-      "url": "https://huggingface.co/tencent/Hy4-flash",
-      "hot": "193"
+      "title": "meituan-longcat/LongCat-Video-Avatar-1.6",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+      "hot": "258"
     }
   ]
 }

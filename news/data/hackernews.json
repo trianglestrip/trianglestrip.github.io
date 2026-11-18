@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-18T16:29:04+00:00",
+  "updated_at": "2026-11-18T23:01:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Pre-auth RCE in Nginx HTTP/2 handling",
+      "title": "Unauthenticated remote code execution in Nginx",
       "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-      "hot": "139"
+      "hot": "981"
     },
     {
       "rank": 2,
-      "title": "Quad9 Is Leaving France: Why DNS Resolvers Are the Wrong Place to Fight Piracy",
-      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
-      "hot": "294"
+      "title": "Seven new models at scalable price-performance",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "hot": "386"
     },
     {
       "rank": 3,
-      "title": "Deutsche Bank",
-      "url": "https://www.inside-db.com/",
-      "hot": "78"
+      "title": "Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "hot": "276"
     },
     {
       "rank": 4,
-      "title": "'Human' Is Cambridge Dictionary's Word of the Year 2026",
-      "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
-      "hot": "86"
+      "title": "Inside Deutsche Bank",
+      "url": "https://www.inside-db.com/",
+      "hot": "490"
     },
     {
       "rank": 5,
-      "title": "U.S. AirForce is looking for old storage Media (CF or PC cards)",
-      "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
-      "hot": "34"
+      "title": "DaisyRose-27B: 1,200-task RL took Qwen3.8 from 5.6% to 12% on Terminal-Bench 4.1",
+      "url": "https://www.radixark.com/blog/daisyrose-27b",
+      "hot": "95"
     },
     {
       "rank": 6,
-      "title": "Energy-Based Reasoners: 385x more efficient inference",
-      "url": "https://energy-based-reasoners.github.io/",
-      "hot": "233"
+      "title": "AI agents ask better questions than KPMG accountants in audit trial",
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+      "hot": "291"
     },
     {
       "rank": 7,
-      "title": "A Primer on Fourier Series",
-      "url": "https://arxiv.org/abs/2510.18203",
-      "hot": "21"
+      "title": "DNS resolvers are the wrong place to fight piracy",
+      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+      "hot": "543"
     },
     {
       "rank": 8,
-      "title": "The x86 CPU: From 4004 to 486",
-      "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
-      "hot": "23"
+      "title": "Cuttlefish on Mac: Android's Virtual Device Framework on Apple Silicon",
+      "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
+      "hot": "19"
     },
     {
       "rank": 9,
-      "title": "A Perfect SimCity",
-      "url": "https://www.jeffquast.com/post/a-perfect-simcity/",
-      "hot": "176"
+      "title": "Advancing chip design with OpenAI models",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "hot": "133"
     },
     {
       "rank": 10,
-      "title": "Google's AI answers reducing search traffic by 40%",
-      "url": "https://revscope.co/blog/search-seo-geo-2026/",
-      "hot": "633"
+      "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
+      "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+      "hot": "216"
     }
   ]
 }
