@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-17T17:56:43+00:00",
+  "updated_at": "2026-11-18T00:09:43+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -26,7 +26,7 @@
       "rank": 4,
       "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
       "url": "https://huggingface.co/papers/2611.18397",
-      "hot": "117"
+      "hot": "118"
     },
     {
       "rank": 5,
@@ -42,9 +42,9 @@
     },
     {
       "rank": 7,
-      "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
-      "url": "https://huggingface.co/papers/2611.12806",
-      "hot": "105"
+      "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
+      "url": "https://huggingface.co/papers/1910.03771",
+      "hot": "34"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "86"
+      "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+      "url": "https://huggingface.co/papers/2611.12806",
+      "hot": "105"
     },
     {
       "rank": 10,
-      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "url": "https://huggingface.co/papers/2508.02739",
-      "hot": "66"
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "86"
     }
   ]
 }
