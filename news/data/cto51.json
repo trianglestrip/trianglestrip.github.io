@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-18T07:16:45+00:00",
+  "updated_at": "2026-11-18T16:29:03+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "IDE还没到退场的时候！纳德拉谈AI冲击：模型能力一跃升，开发工具就得跟着变",
+      "url": "https://www.51cto.com/article/861559.html",
+      "hot": "纳德拉承认，过去围绕“人坐在IDE里写代码”设计的工具，遇上能接手整项任务的Agent，原来的优势有可能不管用了。更棘手的变化发生在代码写完以后：谁来证明它真的完成了任务？"
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 7 特效渲染开销实测：玻璃拟态音乐播放器的流畅度账单",
+      "url": "https://ost.51cto.com/posts/64431",
+      "hot": "玻璃拟态（Glassmorphism）这几年成了界面设计的默认选项：控制中心拉下来是毛玻璃，音乐播放器的控制条是毛玻璃，天气卡片、弹窗、抽屉，..."
+    },
+    {
+      "rank": 3,
+      "title": "HUAWEI Mate X8 折叠屏适配：一套布局接住单屏、双屏和三屏",
+      "url": "https://ost.51cto.com/posts/64430",
+      "hot": "HUAWEIMateX8折叠屏适配：一套布局接住单屏、双屏和三屏这个月有两场和手机有关的发布会。11月20日14:30先登场的是星芒&mdash;&mdash;华为全新的子品..."
+    },
+    {
+      "rank": 4,
+      "title": "刚刚，OpenAI 全新发布 GPT-6.2 双模型：价格，又打下来了。",
+      "url": "https://www.51cto.com/article/861536.html",
+      "hot": "在内部 ExploitBench 测试中，模型需要将已知的浏览器漏洞转化为可用攻击程序。Astra 的成功率超过 50%，高于 GPT-6 Astra。这些成绩来自关闭安全防护和分类器的内部测试，与默认产品环境中的设置不同。"
+    },
+    {
+      "rank": 5,
       "title": "OpenAI翻车！GPT-6.2 Astra被批「史上最差」，内部员工连夜弃用",
       "url": "https://www.51cto.com/article/861528.html",
       "hot": "刚刚，OpenAI发布了新模型 GPT-6.2 Astra。然而，发布首日，GPT-6.2 Astra却遭到早期测试者集体炮轰。"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "title": "英伟达董事会当众拒绝黄仁勋回归",
       "url": "https://www.51cto.com/article/861527.html",
       "hot": "英伟达第三财季财报电话会开场。分析师还没提问，董事长哈维·琼斯先开口：董事会一致接受黄仁勋的辞呈，无意让他回任 CEO。"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "title": "Agent开始调用模型、工具和API，谁来管住AI交互流量？",
       "url": "https://www.51cto.com/article/861526.html",
       "hot": "当AI流量从单一模型调用扩展到Agent、模型、工具和应用之间的复杂交互时，企业需要一个能够统一接入、识别、管控和审计的控制层。瑞数AI安全网关定位为AI安全统一控制面，为LLM、MCP、A2A及HTTP流量提供统一代理和安全管理能力。"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "title": "GPT-6.2 跑分赢了，整理了一张换不换清单",
       "url": "https://www.51cto.com/article/861520.html",
       "hot": "11 月 17 日下午，OpenAI 上线了 GPT-6.2 Astra 和 GPT-6.2 Sol。官方发布线程里那句「built to perform where it counts—the real world」说得很满，账单也确实降了：Astra 的 API 输入价从上一代砍掉两成，缓存输入砍了六成。"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "运维效率起飞！WorkBuddy 打通 Ansible，服务器管理直接对话完成",
       "url": "https://www.51cto.com/article/861519.html",
       "hot": "本文分享一个新的玩法：WorkBuddy+Ansible MCP，即把 Ansible MCP 接入 WorkBuddy，再创建一个 Linux 运维专家。"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "title": "Node.js 27 来了！迭代器、文件系统迎来大升级",
       "url": "https://www.51cto.com/article/861518.html",
       "hot": "如果你正在维护 Node.js 框架、npm 包或者大型后端项目，现在就可以把它加入 CI 测试矩阵，提前发现潜在兼容性问题。"
-    },
-    {
-      "rank": 7,
-      "title": "从补丁对比到自动打靶：谷歌 GTIG 披露自主 AI 攻击全流程，安全运维该怎么接招？",
-      "url": "https://www.51cto.com/article/861517.html",
-      "hot": "11 月 16 日，谷歌威胁情报小组（GTIG）联合 Mandiant 发布最新季度 AI 威胁追踪报告。"
-    },
-    {
-      "rank": 8,
-      "title": "刚刚，OpenAI 发布 GPT-6.2 Astra 和 Sol",
-      "url": "https://www.51cto.com/article/861516.html",
-      "hot": "值得注意的是，两款模型有一个共同特点：在提升任务完成质量的同时，通过显著减少推理与输出所需的 Token 数量，让用户在更低成本和更快响应下完成复杂的现实任务。"
-    },
-    {
-      "rank": 9,
-      "title": "HarmonyOS 7图片处理实战：读取GIF的帧信息和播放时长",
-      "url": "https://ost.51cto.com/posts/64340",
-      "hot": "大家好，今天介绍一下HarmonyOS7中GIF元数据的读取。GIF动图看起来是一张会动的图片，实际上里面包含多帧画面，每一帧都可以设置显示时间。..."
-    },
-    {
-      "rank": 10,
-      "title": "揭秘：Black Owl 团队长达数月的潜伏攻击",
-      "url": "https://www.51cto.com/article/861514.html",
-      "hot": "这起事件里最值得记住的，可能不是 Log4Shell，也不是那串 comsvcs.dll 命令，而是一个反差：一个以删库、勒索、公开羞辱为标志的组织，在一家软件公司里安静地待了几个月，什么破坏都没做。"
     }
   ]
 }

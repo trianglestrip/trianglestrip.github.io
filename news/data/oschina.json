@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-18T07:16:52+00:00",
+  "updated_at": "2026-11-18T16:29:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "18 年铸就开源创新基础设施，开源中国「模力方舟词元养成计划」发布",
+      "url": "https://www.oschina.net/news/503647",
+      "hot": "Wed, 18 Nov 2026 19:59:15 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Java 被曝内存损坏漏洞“Java4Shell”，藏在 Base64 解码器里",
+      "url": "https://www.oschina.net/news/503646/java4shell-write-once-rce-everywhere",
+      "hot": "Wed, 18 Nov 2026 19:24:42 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "Goodlink 全新传输协议，叠加 BBR 拥塞控制算法与丢包补偿",
+      "url": "https://www.oschina.net/news/503645",
+      "hot": "Wed, 18 Nov 2026 18:43:02 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "微软编程模型「MAI Code」上新，用 Claude Opus 5.5 百分之五的价格拿到 96% 的性能",
+      "url": "https://www.oschina.net/news/503644/ms-mai-code-2-and-mai-code-2-flash",
+      "hot": "Wed, 18 Nov 2026 17:50:27 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "微软将大规模服务中断归咎于 7 月份修复程序中引入的软件缺陷",
+      "url": "https://www.oschina.net/news/503643/ms-blames-monster-email-outage-on-software-defect",
+      "hot": "Wed, 18 Nov 2026 16:58:48 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "Claude 用了三天，把模型“搬上” AMD 的 GPU",
+      "url": "https://www.oschina.net/news/503639/claude-mythos-slashed-software-work-to-onboard-amd-gpus",
+      "hot": "Wed, 18 Nov 2026 15:14:15 +0800"
+    },
+    {
+      "rank": 7,
       "title": "腾讯开源 Hy4 flash：单任务成本降到 Hy4 的二十分之一",
       "url": "https://www.oschina.net/news/503636",
       "hot": "Wed, 18 Nov 2026 14:25:52 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "Jync 捷同 v2.3.0 发布：ETL 取数支持 SQL 变量，目标表支持按列交集写入",
       "url": "https://www.oschina.net/news/503632",
       "hot": "Wed, 18 Nov 2026 14:11:11 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "沐问 MuAsk v1.5.0",
       "url": "https://www.oschina.net/news/503630",
       "hot": "Wed, 18 Nov 2026 12:59:07 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol，任务成本显著下降",
       "url": "https://www.oschina.net/news/503626/openai-gpt-6-2-astra-sol",
       "hot": "Wed, 18 Nov 2026 11:13:26 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "OpenCode 让 Agent 用上你的真实浏览器，连带你的登录状态",
-      "url": "https://www.oschina.net/news/503625/opencode-browse",
-      "hot": "Wed, 18 Nov 2026 10:28:46 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "9 MB，一个文件，一个编程 Agent：连 TUI、沙箱和 TLS 都塞进去了",
-      "url": "https://www.oschina.net/news/503622",
-      "hot": "Wed, 18 Nov 2026 08:25:17 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "qOntology 开源版 v1.1.3 发布：长文档抽取支持分窗重试与阶段续跑，完善候选校验",
-      "url": "https://www.oschina.net/news/503620",
-      "hot": "Tue, 17 Nov 2026 16:11:29 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "ModStart 支持 PHP8.5 + Laravel13，纯净仓库发布",
-      "url": "https://www.oschina.net/news/503618",
-      "hot": "Tue, 17 Nov 2026 15:06:13 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "phimint v0.11.0 发布：不依赖 Node.js 和 Python，1 核 1G 跑起一个终端编码 agent",
-      "url": "https://www.oschina.net/news/503617",
-      "hot": "Tue, 17 Nov 2026 14:55:39 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "六年 Rust 开发经历，他改变了自己的思考方式",
-      "url": "https://www.oschina.net/news/503613/how-rust-changed-me",
-      "hot": "Tue, 17 Nov 2026 12:00:13 +0800"
     }
   ]
 }
