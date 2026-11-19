@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-18T23:01:58+00:00",
+  "updated_at": "2026-11-19T04:01:12+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "IDE还没到退场的时候！纳德拉谈AI冲击：模型能力一跃升，开发工具就得跟着变",
-      "url": "https://www.51cto.com/article/861559.html",
-      "hot": "纳德拉承认，过去围绕“人坐在IDE里写代码”设计的工具，遇上能接手整项任务的Agent，原来的优势有可能不管用了。更棘手的变化发生在代码写完以后：谁来证明它真的完成了任务？"
+      "title": "HarmonyOS 7 远程分享让分享面板也有了长途航线",
+      "url": "https://ost.51cto.com/posts/64541",
+      "hot": "前言：把东西「发去远方」的三道坎近场分享（碰一碰、隔空传送）把「身边设备」的体验做到了极致：无损、秒传、不耗流量。但分享对象从「身..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7 特效渲染开销实测：玻璃拟态音乐播放器的流畅度账单",
-      "url": "https://ost.51cto.com/posts/64431",
-      "hot": "玻璃拟态（Glassmorphism）这几年成了界面设计的默认选项：控制中心拉下来是毛玻璃，音乐播放器的控制条是毛玻璃，天气卡片、弹窗、抽屉，..."
+      "title": "让 AI 成为你的鸿蒙开发助手：harmonyos-build-deploy Skill 完全实战指南",
+      "url": "https://ost.51cto.com/posts/64535",
+      "hot": "🚀让AI成为你的鸿蒙开发助手：harmonyosbuilddeploySkill完全实战指南不是一篇教你敲命令的文章，而是一场关于AICoding范式的革命。在Harmo..."
     },
     {
       "rank": 3,
-      "title": "HUAWEI Mate X8 折叠屏适配：一套布局接住单屏、双屏和三屏",
-      "url": "https://ost.51cto.com/posts/64430",
-      "hot": "HUAWEIMateX8折叠屏适配：一套布局接住单屏、双屏和三屏这个月有两场和手机有关的发布会。11月20日14:30先登场的是星芒&mdash;&mdash;华为全新的子品..."
+      "title": "NGINX2Root 严重漏洞，现在能一路走到宿主机 root",
+      "url": "https://www.51cto.com/article/861610.html",
+      "hot": "安全公司 Xint 一次性公开五个 nginx 远程代码执行漏洞，外加一个藏在 Linux 内核里的提权 0day。"
     },
     {
       "rank": 4,
-      "title": "刚刚，OpenAI 全新发布 GPT-6.2 双模型：价格，又打下来了。",
-      "url": "https://www.51cto.com/article/861536.html",
-      "hot": "在内部 ExploitBench 测试中，模型需要将已知的浏览器漏洞转化为可用攻击程序。Astra 的成功率超过 50%，高于 GPT-6 Astra。这些成绩来自关闭安全防护和分类器的内部测试，与默认产品环境中的设置不同。"
+      "title": "最近爆火的 UI 组件库！把网页做出了高级感！",
+      "url": "https://www.51cto.com/article/861609.html",
+      "hot": "Cult UI 不是一个全新UI框架，而是shadcn/ui 的组件扩展仓库，MIT开源免费，专门补齐好看、带动画、适合AI产品和SaaS页面的高级组件。"
     },
     {
       "rank": 5,
-      "title": "OpenAI翻车！GPT-6.2 Astra被批「史上最差」，内部员工连夜弃用",
-      "url": "https://www.51cto.com/article/861528.html",
-      "hot": "刚刚，OpenAI发布了新模型 GPT-6.2 Astra。然而，发布首日，GPT-6.2 Astra却遭到早期测试者集体炮轰。"
+      "title": "前端人赢麻了！拖拽交互不用手写了！",
+      "url": "https://www.51cto.com/article/861607.html",
+      "hot": "Dragology 可能不是每个前端项目都需要的工具，但它背后的设计思想值得关注。它把拖拽从一系列鼠标事件、坐标计算和动画处理，提升到了模型状态和可能结果的层面。"
     },
     {
       "rank": 6,
-      "title": "英伟达董事会当众拒绝黄仁勋回归",
-      "url": "https://www.51cto.com/article/861527.html",
-      "hot": "英伟达第三财季财报电话会开场。分析师还没提问，董事长哈维·琼斯先开口：董事会一致接受黄仁勋的辞呈，无意让他回任 CEO。"
+      "title": "OpenAI 1200 个智能体攻破 Hugging Face 生产系统事件深度复盘：奖励黑客、沙箱失效，与多智能体团队治理指南",
+      "url": "https://www.51cto.com/article/861601.html",
+      "hot": "1200 个失控智能体不是叛乱者，是奖励机制、并行处理和糟糕沙箱共同造成的结果。"
     },
     {
       "rank": 7,
-      "title": "Agent开始调用模型、工具和API，谁来管住AI交互流量？",
-      "url": "https://www.51cto.com/article/861526.html",
-      "hot": "当AI流量从单一模型调用扩展到Agent、模型、工具和应用之间的复杂交互时，企业需要一个能够统一接入、识别、管控和审计的控制层。瑞数AI安全网关定位为AI安全统一控制面，为LLM、MCP、A2A及HTTP流量提供统一代理和安全管理能力。"
+      "title": "不用训练！Opus 5.5直接手写Transformer权重，13类任务全拿100%",
+      "url": "https://www.51cto.com/article/861589.html",
+      "hot": "前沿大语言模型已经可以直接越过传统的优化器，依据固定的评测反馈，像外科医生一样精准构思计算逻辑，并用代码将算法直接写进Transformer的权重里。"
     },
     {
       "rank": 8,
-      "title": "GPT-6.2 跑分赢了，整理了一张换不换清单",
-      "url": "https://www.51cto.com/article/861520.html",
-      "hot": "11 月 17 日下午，OpenAI 上线了 GPT-6.2 Astra 和 GPT-6.2 Sol。官方发布线程里那句「built to perform where it counts—the real world」说得很满，账单也确实降了：Astra 的 API 输入价从上一代砍掉两成，缓存输入砍了六成。"
+      "title": "刚刚，谷歌Gemini 4再发新款，对标超越GPT-6.2 Sol！世界模型Genie 4也已开放",
+      "url": "https://www.51cto.com/article/861588.html",
+      "hot": "谷歌最近一直在基础模型上发力，从最高智能到最高效率的模型不停发布，为了重返王座真是拼了。"
     },
     {
       "rank": 9,
-      "title": "运维效率起飞！WorkBuddy 打通 Ansible，服务器管理直接对话完成",
-      "url": "https://www.51cto.com/article/861519.html",
-      "hot": "本文分享一个新的玩法：WorkBuddy+Ansible MCP，即把 Ansible MCP 接入 WorkBuddy，再创建一个 Linux 运维专家。"
+      "title": "补丁成了「漏洞说明书」！谷歌曝黑客让AI照着补丁写攻击代码",
+      "url": "https://www.51cto.com/article/861592.html",
+      "hot": "谷歌发现了黑客的一台直接暴露在公网上的暂存服务器，从里头翻出一个名为exploit_agent的AI攻击框架。"
     },
     {
       "rank": 10,
-      "title": "Node.js 27 来了！迭代器、文件系统迎来大升级",
-      "url": "https://www.51cto.com/article/861518.html",
-      "hot": "如果你正在维护 Node.js 框架、npm 包或者大型后端项目，现在就可以把它加入 CI 测试矩阵，提前发现潜在兼容性问题。"
+      "title": "港中深联合微软研究院提出多模态统一建模新架构ConvexLLM，让声音接上大模型已经学会的知识与推理",
+      "url": "https://www.51cto.com/article/861585.html",
+      "hot": "这是语音大模型绕不开的一道题：同一个问题，写出来能答，换成语音，表现却可能明显下降。声音已经被编码成向量，语言模型也足够强，两者之间还缺什么？"
     }
   ]
 }

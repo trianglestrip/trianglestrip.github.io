@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-18T23:02:01+00:00",
+  "updated_at": "2026-11-19T04:01:21+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Apache SeaTunnel 3.1.0 发布：让生产任务更稳，也让部署更灵活",
+      "url": "https://www.oschina.net/news/503658",
+      "hot": "Thu, 19 Nov 2026 11:08:17 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "Manus 成为开源游戏引擎 Godot 白金赞助商",
+      "url": "https://www.oschina.net/news/503657/manus-sponsorship-partners-godot-engine",
+      "hot": "Thu, 19 Nov 2026 10:58:16 +0800"
+    },
+    {
+      "rank": 3,
+      "title": ":fire: xbatis 1.10.10 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
+      "url": "https://www.oschina.net/news/503655",
+      "hot": "Thu, 19 Nov 2026 10:40:43 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "上海推进开源平台建设 打造“最懂开发者的城市”",
+      "url": "https://www.oschina.net/news/503653",
+      "hot": "Thu, 19 Nov 2026 10:33:06 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "伏羲智能决策平台发布 v1.0.0：多智能体协作与决策运营闭环升级",
+      "url": "https://www.oschina.net/news/503652",
+      "hot": "Thu, 19 Nov 2026 10:28:22 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "开源数据库管理工具 CloudDM 新版本支持 GreptimeDB 数据源",
+      "url": "https://www.oschina.net/news/503651",
+      "hot": "Thu, 19 Nov 2026 10:02:51 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "LinkAndroid v2.5.0 自动更新上线，软件自己检查并安装新版本",
+      "url": "https://www.oschina.net/news/503649",
+      "hot": "Wed, 18 Nov 2026 22:15:13 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "AIGCPanel v2.7.0 模型权重按需下载，直播错误看得见",
+      "url": "https://www.oschina.net/news/503648",
+      "hot": "Wed, 18 Nov 2026 22:14:37 +0800"
+    },
+    {
+      "rank": 9,
       "title": "18 年铸就开源创新基础设施，开源中国「模力方舟词元养成计划」发布",
       "url": "https://www.oschina.net/news/503647",
       "hot": "Wed, 18 Nov 2026 19:59:15 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "Java 被曝内存损坏漏洞“Java4Shell”，藏在 Base64 解码器里",
       "url": "https://www.oschina.net/news/503646/java4shell-write-once-rce-everywhere",
       "hot": "Wed, 18 Nov 2026 19:24:42 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "Goodlink 全新传输协议，叠加 BBR 拥塞控制算法与丢包补偿",
-      "url": "https://www.oschina.net/news/503645",
-      "hot": "Wed, 18 Nov 2026 18:43:02 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "微软编程模型「MAI Code」上新，用 Claude Opus 5.5 百分之五的价格拿到 96% 的性能",
-      "url": "https://www.oschina.net/news/503644/ms-mai-code-2-and-mai-code-2-flash",
-      "hot": "Wed, 18 Nov 2026 17:50:27 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "微软将大规模服务中断归咎于 7 月份修复程序中引入的软件缺陷",
-      "url": "https://www.oschina.net/news/503643/ms-blames-monster-email-outage-on-software-defect",
-      "hot": "Wed, 18 Nov 2026 16:58:48 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "Claude 用了三天，把模型“搬上” AMD 的 GPU",
-      "url": "https://www.oschina.net/news/503639/claude-mythos-slashed-software-work-to-onboard-amd-gpus",
-      "hot": "Wed, 18 Nov 2026 15:14:15 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "腾讯开源 Hy4 flash：单任务成本降到 Hy4 的二十分之一",
-      "url": "https://www.oschina.net/news/503636",
-      "hot": "Wed, 18 Nov 2026 14:25:52 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Jync 捷同 v2.3.0 发布：ETL 取数支持 SQL 变量，目标表支持按列交集写入",
-      "url": "https://www.oschina.net/news/503632",
-      "hot": "Wed, 18 Nov 2026 14:11:11 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "沐问 MuAsk v1.5.0",
-      "url": "https://www.oschina.net/news/503630",
-      "hot": "Wed, 18 Nov 2026 12:59:07 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol，任务成本显著下降",
-      "url": "https://www.oschina.net/news/503626/openai-gpt-6-2-astra-sol",
-      "hot": "Wed, 18 Nov 2026 11:13:26 +0800"
     }
   ]
 }

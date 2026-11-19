@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-18T23:01:47+00:00",
+  "updated_at": "2026-11-19T04:01:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "切换模型后，任务信息还能接上吗？我用 SoduWork 做了两组实测",
       "url": "https://blog.csdn.net/hanwangyyds/article/details/170858076",
-      "hot": "18965"
+      "hot": "24560"
     },
     {
       "rank": 2,
-      "title": "金仓AI数据库上手记：语义层、库内计算、权限继承，一次讲清",
-      "url": "https://blog.csdn.net/qq_57761637/article/details/170822359",
-      "hot": "17729"
+      "title": "用开源企业级 AI 原生引擎 SoduWork 做网站发布前体检：代码生成之后，还需要怎样的验收？",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/170926402",
+      "hot": "12485"
     },
     {
       "rank": 3,
-      "title": "GPT-6.2 发布当天，我在 Codex 里把默认模型换成了 Sol（附切换命令和额度对照）",
-      "url": "https://blog.csdn.net/qq18285/article/details/170935521",
-      "hot": "12144"
+      "title": "Spring 原理",
+      "url": "https://blog.csdn.net/2401_89019969/article/details/159768945",
+      "hot": "11984"
     },
     {
       "rank": 4,
-      "title": "用开源企业级 AI 原生引擎 SoduWork 做网站发布前体检：代码生成之后，还需要怎样的验收？",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/170926402",
-      "hot": "11882"
+      "title": "GPT-6.2 发布当天，我在 Codex 里把默认模型换成了 Sol（附切换命令和额度对照）",
+      "url": "https://blog.csdn.net/qq18285/article/details/170935521",
+      "hot": "11810"
     },
     {
       "rank": 5,
       "title": "AI Agent 工程化开发实战（十）：工具与结构化输出——@tool 与 response_format",
       "url": "https://blog.csdn.net/xiaobing259/article/details/170849473",
-      "hot": "10062"
+      "hot": "9481"
     },
     {
       "rank": 6,
-      "title": "Spring 原理",
-      "url": "https://blog.csdn.net/2401_89019969/article/details/159768945",
-      "hot": "8798"
+      "title": "别再导出整页图片了：用 WorkBuddy + PPT-Master 做真正可编辑的汇报 PPT",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/170871542",
+      "hot": "8562"
     },
     {
       "rank": 7,
-      "title": "ChatDOC实测370页招股书：AI报我71亿利润，核完只敢引用18.75亿",
-      "url": "https://blog.csdn.net/lbbxmx111/article/details/170987881",
-      "hot": "8433"
+      "title": "【Linux】守护进程怎么实现？从进程组、会话到 setsid 与 Daemon 完整实战",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/170444799",
+      "hot": "8468"
     },
     {
       "rank": 8,
-      "title": "让 SoduWork 修 SoduWork：一次 AI 原生开发实战，从两个真实缺陷到上游 PR",
-      "url": "https://blog.csdn.net/xiaofeng10330111/article/details/170931952",
-      "hot": "8411"
+      "title": "ChatDOC实测370页招股书：AI报我71亿利润，核完只敢引用18.75亿",
+      "url": "https://blog.csdn.net/lbbxmx111/article/details/170987881",
+      "hot": "8251"
     },
     {
       "rank": 9,
-      "title": "K8S 二进制集群搭建（一主两从）v1.37.2 版本",
-      "url": "https://blog.csdn.net/liu_chen_yang/article/details/164026745",
-      "hot": "8301"
+      "title": "让 SoduWork 修 SoduWork：一次 AI 原生开发实战，从两个真实缺陷到上游 PR",
+      "url": "https://blog.csdn.net/xiaofeng10330111/article/details/170931952",
+      "hot": "8044"
     },
     {
       "rank": 10,
-      "title": "SpringBoot3+Vue3 采购到付款：ERP、WMS与财务如何按同一来源协同",
-      "url": "https://blog.csdn.net/zhouzhongyan/article/details/170821032",
-      "hot": "8191"
+      "title": "Qt核心机制：信号与槽详解",
+      "url": "https://blog.csdn.net/2302_80105876/article/details/170818701",
+      "hot": "7242"
     }
   ]
 }
