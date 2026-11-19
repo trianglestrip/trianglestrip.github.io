@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-19T12:34:40+00:00",
+  "updated_at": "2026-11-19T20:56:09+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,15 +36,15 @@
     },
     {
       "rank": 6,
-      "title": "小城良方",
-      "url": "https://movie.douban.com/subject/36675942/",
-      "hot": "评分 8.1"
-    },
-    {
-      "rank": 7,
       "title": "我的有罪之人",
       "url": "https://movie.douban.com/subject/37806882/",
       "hot": "评分 9.1"
+    },
+    {
+      "rank": 7,
+      "title": "小城良方",
+      "url": "https://movie.douban.com/subject/36675942/",
+      "hot": "评分 8.1"
     },
     {
       "rank": 8,
