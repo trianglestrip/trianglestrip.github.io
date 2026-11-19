@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-19T04:01:21+00:00",
+  "updated_at": "2026-11-19T12:35:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Apache SeaTunnel 3.1.0 发布：让生产任务更稳，也让部署更灵活",
-      "url": "https://www.oschina.net/news/503658",
-      "hot": "Thu, 19 Nov 2026 11:08:17 +0800"
+      "title": "二十年逆向老手：LLM 给我的好奇心装上了涡轮增压",
+      "url": "https://www.oschina.net/news/503685/llm-assisted-reverse-engineering",
+      "hot": "Thu, 19 Nov 2026 18:57:36 +0800"
     },
     {
       "rank": 2,
-      "title": "Manus 成为开源游戏引擎 Godot 白金赞助商",
-      "url": "https://www.oschina.net/news/503657/manus-sponsorship-partners-godot-engine",
-      "hot": "Thu, 19 Nov 2026 10:58:16 +0800"
+      "title": "Anthropic IPO 发行价定了：每股 83 美元",
+      "url": "https://www.oschina.net/news/503684/anthropic-prices-initial-public-offering",
+      "hot": "Thu, 19 Nov 2026 18:10:51 +0800"
     },
     {
       "rank": 3,
-      "title": ":fire: xbatis 1.10.10 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
-      "url": "https://www.oschina.net/news/503655",
-      "hot": "Thu, 19 Nov 2026 10:40:43 +0800"
+      "title": "wlnmp 一键安装包更新 261119（修复NGINX2Root漏洞）",
+      "url": "https://www.oschina.net/news/503681",
+      "hot": "Thu, 19 Nov 2026 17:45:39 +0800"
     },
     {
       "rank": 4,
-      "title": "上海推进开源平台建设 打造“最懂开发者的城市”",
-      "url": "https://www.oschina.net/news/503653",
-      "hot": "Thu, 19 Nov 2026 10:33:06 +0800"
+      "title": "NGINX 被曝两个高危 RCE，其中一个在代码里藏了十年",
+      "url": "https://www.oschina.net/news/503679/nginx-http2-rce-vulnerabilities",
+      "hot": "Thu, 19 Nov 2026 17:15:27 +0800"
     },
     {
       "rank": 5,
-      "title": "伏羲智能决策平台发布 v1.0.0：多智能体协作与决策运营闭环升级",
-      "url": "https://www.oschina.net/news/503652",
-      "hot": "Thu, 19 Nov 2026 10:28:22 +0800"
+      "title": "clice v1.0 正式发布，采用现代 C++ 编写的 C/C++ 语言服务器",
+      "url": "https://www.oschina.net/news/503678",
+      "hot": "Thu, 19 Nov 2026 16:48:06 +0800"
     },
     {
       "rank": 6,
-      "title": "开源数据库管理工具 CloudDM 新版本支持 GreptimeDB 数据源",
-      "url": "https://www.oschina.net/news/503651",
-      "hot": "Thu, 19 Nov 2026 10:02:51 +0800"
+      "title": "Gemini 4 Neon 发布：Google 在最强和最便宜之间，塞进了一个中间档",
+      "url": "https://www.oschina.net/news/503675/google-gemini-4-neon",
+      "hot": "Thu, 19 Nov 2026 15:45:47 +0800"
     },
     {
       "rank": 7,
-      "title": "LinkAndroid v2.5.0 自动更新上线，软件自己检查并安装新版本",
-      "url": "https://www.oschina.net/news/503649",
-      "hot": "Wed, 18 Nov 2026 22:15:13 +0800"
+      "title": "Claude Code 团队怎么让 agent 自己证明活干对了",
+      "url": "https://www.oschina.net/news/503667/claude-dev-how-the-claude-code-team-thinks-about-verification",
+      "hot": "Thu, 19 Nov 2026 14:44:55 +0800"
     },
     {
       "rank": 8,
-      "title": "AIGCPanel v2.7.0 模型权重按需下载，直播错误看得见",
-      "url": "https://www.oschina.net/news/503648",
-      "hot": "Wed, 18 Nov 2026 22:14:37 +0800"
+      "title": "🔥🔥开源接口平台 v6.5.1 发布",
+      "url": "https://www.oschina.net/news/503663",
+      "hot": "Thu, 19 Nov 2026 14:15:36 +0800"
     },
     {
       "rank": 9,
-      "title": "18 年铸就开源创新基础设施，开源中国「模力方舟词元养成计划」发布",
-      "url": "https://www.oschina.net/news/503647",
-      "hot": "Wed, 18 Nov 2026 19:59:15 +0800"
+      "title": "🔥 拾趣 (Magpie) v0.1.23 发布：新增应用 Anki，学单词背英语一键导入 Anki",
+      "url": "https://www.oschina.net/news/503662",
+      "hot": "Thu, 19 Nov 2026 14:11:54 +0800"
     },
     {
       "rank": 10,
-      "title": "Java 被曝内存损坏漏洞“Java4Shell”，藏在 Base64 解码器里",
-      "url": "https://www.oschina.net/news/503646/java4shell-write-once-rce-everywhere",
-      "hot": "Wed, 18 Nov 2026 19:24:42 +0800"
+      "title": "Jync 捷同 v2.4.0 发布：内置 AI 运维助手，引入多角色权限与 Apache-2.0 开源协议",
+      "url": "https://www.oschina.net/news/503660",
+      "hot": "Thu, 19 Nov 2026 13:11:29 +0800"
     }
   ]
 }
