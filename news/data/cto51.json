@@ -1,62 +1,62 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-20T01:57:55+00:00",
+  "updated_at": "2026-11-20T09:32:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 6 阅读页冷启动：书目仍要等，先让窗口显示什么",
+      "url": "https://ost.51cto.com/posts/64668",
+      "hot": "配套工程​​源码、测试材料与运行说明​​前言两次启动我都让书目等约三秒。第一种路径出现空白页，等到资源读完才挂载标题和列表；第二种..."
+    },
+    {
+      "rank": 2,
+      "title": "【鸿蒙实战】第 30 篇：点赞按钮\"像死的\"？animateTo、弹簧、关键帧一次讲透（HarmonyOS 7.x）",
+      "url": "https://ost.51cto.com/posts/64645",
+      "hot": "产品说点赞按钮&quot;没反馈感觉像死的&quot;，我加了animateTo缩放，又觉得机械换弹簧；列表删除用transition却发现直接消失没动画；加载动画无限循..."
+    },
+    {
+      "rank": 3,
       "title": "如今程序员面试，为什么都问 Agent？（代码，架构图，提示词，PPT都分享）",
       "url": "https://www.51cto.com/article/861701.html",
       "hot": "Agent 架构设计，重点就是考虑：记忆怎么设计、token怎么节省及上下文放哪些东西。"
     },
     {
-      "rank": 2,
-      "title": "HarmonyOS聊天列表实战：加载历史消息时，怎么让列表不跳",
-      "url": "https://ost.51cto.com/posts/64638",
-      "hot": "大家好，今天讲一下HarmonyOS聊天列表加载历史消息时，怎么让正在看的那条消息留在原处。比如我正在看第30条消息，刚好读到&ldquo;下午开会用的..."
-    },
-    {
-      "rank": 3,
+      "rank": 4,
       "title": "别盲目拆分多 Agent！Anthropic：很多团队的子 Agent 不是太少，是太多",
       "url": "https://www.51cto.com/article/861695.html",
       "hot": "Agent 架构正在从堆模块，进入删复杂度的阶段。删掉的不是能力，而是重复规划、有损交接，以及没有必要的上下文隔离。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "从微软六万人转身到百度 “智能组织”：你的团队，处在 AI 成熟度哪一级？",
       "url": "https://www.51cto.com/article/861692.html",
       "hot": "AI 竞争的瓶颈，正从 “买不买工具” 转向 “组织怎么适配 AI”。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "刚刚，DeepSeek张博创业曝光：开源个人Agent！",
       "url": "https://www.51cto.com/article/861690.html",
       "hot": "刚刚，前DeepSeek V1作者、DeepSeek-VL项目负责人Tony Zhang（张博），正式公布了自己的新创业项目：Linger。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "Fable 5.2开卷80%，闭卷仅47%！最强编程智能体遇上机器人难题",
       "url": "https://www.51cto.com/article/861689.html",
       "hot": "西北大学、卡内基梅隆大学等8所高校的研究者提出了Embodied First Exam（EFE，具身第一考）：一个把各种编程智能体接入仿真机器人的统一评测框架。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "删软链接带个斜杠，源目录直接没了，这个坑千万别踩",
       "url": "https://www.51cto.com/article/861688.html",
       "hot": "本文从 inode 底层原理讲起，梳理 ln 命令的用法、两类链接的核心差异与操作规范，帮你避开常见失误。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "奥特曼给「AI造AI」踩刹车！方向盘必须握在人类手中",
       "url": "https://www.51cto.com/article/861687.html",
       "hot": "11月16日，在Semafor的活动现场，谈及「递归自我改进」（RSI），奥特曼当场划下一道红线：我们本可以进一步向递归自我改进推进，但我不认为现在能安全地这么做。"
-    },
-    {
-      "rank": 9,
-      "title": "碰哪传哪：HarmonyOS 7 碰一碰精准分享实战",
-      "url": "https://ost.51cto.com/posts/64628",
-      "hot": "前言：从设备级连接到屏幕空间级投递传统碰一碰解决的问题是「两台设备连上了」：NFC触发配对，宿主应用在knockShare回调里把预设好的分享..."
     },
     {
       "rank": 10,

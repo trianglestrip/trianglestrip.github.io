@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-20T01:58:01+00:00",
+  "updated_at": "2026-11-20T09:32:17+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "二十年逆向老手：LLM 给我的好奇心装上了涡轮增压",
-      "url": "https://www.oschina.net/news/503685/llm-assisted-reverse-engineering",
-      "hot": "Thu, 19 Nov 2026 18:57:36 +0800"
+      "title": "qData 数据中台开源版 v1.6.8 发布：支持敏感等级关联数据资产，完善数据分类分级管理",
+      "url": "https://www.oschina.net/news/503708",
+      "hot": "Fri, 20 Nov 2026 17:04:13 +0800"
     },
     {
       "rank": 2,
-      "title": "Anthropic IPO 发行价定了：每股 83 美元",
-      "url": "https://www.oschina.net/news/503684/anthropic-prices-initial-public-offering",
-      "hot": "Thu, 19 Nov 2026 18:10:51 +0800"
+      "title": "【AI 智能运维平台】本周更新：内置常用智能体模版，简单配置快速启用",
+      "url": "https://www.oschina.net/news/503707",
+      "hot": "Fri, 20 Nov 2026 17:02:40 +0800"
     },
     {
       "rank": 3,
-      "title": "wlnmp 一键安装包更新 261119（修复NGINX2Root漏洞）",
-      "url": "https://www.oschina.net/news/503681",
-      "hot": "Thu, 19 Nov 2026 17:45:39 +0800"
+      "title": "哈佛大学研究人员：AI 编程目前的瓶颈是“Code Review”",
+      "url": "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted",
+      "hot": "Fri, 20 Nov 2026 17:00:13 +0800"
     },
     {
       "rank": 4,
-      "title": "NGINX 被曝两个高危 RCE，其中一个在代码里藏了十年",
-      "url": "https://www.oschina.net/news/503679/nginx-http2-rce-vulnerabilities",
-      "hot": "Thu, 19 Nov 2026 17:15:27 +0800"
+      "title": "蚂蚁 OceanBase 团队开源 PowerContext，跨对话的 Agent 记忆服务",
+      "url": "https://www.oschina.net/news/503704/oceanbase-powercontex",
+      "hot": "Fri, 20 Nov 2026 15:55:30 +0800"
     },
     {
       "rank": 5,
-      "title": "clice v1.0 正式发布，采用现代 C++ 编写的 C/C++ 语言服务器",
-      "url": "https://www.oschina.net/news/503678",
-      "hot": "Thu, 19 Nov 2026 16:48:06 +0800"
+      "title": "GIMP 优化自动测试功能，会像真人一样与界面 UI 交互",
+      "url": "https://www.oschina.net/news/503702/gimp-ui-tests",
+      "hot": "Fri, 20 Nov 2026 15:09:14 +0800"
     },
     {
       "rank": 6,
-      "title": "Gemini 4 Neon 发布：Google 在最强和最便宜之间，塞进了一个中间档",
-      "url": "https://www.oschina.net/news/503675/google-gemini-4-neon",
-      "hot": "Thu, 19 Nov 2026 15:45:47 +0800"
+      "title": "微软发布 7 款“世界级”新模型，全在打同一个算盘",
+      "url": "https://www.oschina.net/news/503701",
+      "hot": "Fri, 20 Nov 2026 14:52:54 +0800"
     },
     {
       "rank": 7,
-      "title": "Claude Code 团队怎么让 agent 自己证明活干对了",
-      "url": "https://www.oschina.net/news/503667/claude-dev-how-the-claude-code-team-thinks-about-verification",
-      "hot": "Thu, 19 Nov 2026 14:44:55 +0800"
+      "title": "Ruby 公开披露多个会触发远程代码执行的漏洞",
+      "url": "https://www.oschina.net/news/503699/ruby-lang-multiple-vulnerabilities-in-regexp-and-string",
+      "hot": "Fri, 20 Nov 2026 12:03:01 +0800"
     },
     {
       "rank": 8,
-      "title": "🔥🔥开源接口平台 v6.5.1 发布",
-      "url": "https://www.oschina.net/news/503663",
-      "hot": "Thu, 19 Nov 2026 14:15:36 +0800"
+      "title": "Google「AI Overviews」让网站的搜索流量下降四成",
+      "url": "https://www.oschina.net/news/503698",
+      "hot": "Fri, 20 Nov 2026 11:57:08 +0800"
     },
     {
       "rank": 9,
-      "title": "🔥 拾趣 (Magpie) v0.1.23 发布：新增应用 Anki，学单词背英语一键导入 Anki",
-      "url": "https://www.oschina.net/news/503662",
-      "hot": "Thu, 19 Nov 2026 14:11:54 +0800"
+      "title": "PHP 8.6 正式发布：更快、更安全、更强大",
+      "url": "https://www.oschina.net/news/503695/php-8-6",
+      "hot": "Fri, 20 Nov 2026 11:30:12 +0800"
     },
     {
       "rank": 10,
-      "title": "Jync 捷同 v2.4.0 发布：内置 AI 运维助手，引入多角色权限与 Apache-2.0 开源协议",
-      "url": "https://www.oschina.net/news/503660",
-      "hot": "Thu, 19 Nov 2026 13:11:29 +0800"
+      "title": "Cpro：一款国产通用C系列拼音编程语言",
+      "url": "https://www.oschina.net/news/503694",
+      "hot": "Fri, 20 Nov 2026 11:28:47 +0800"
     }
   ]
 }

@@ -1,44 +1,44 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-19T20:57:01+00:00",
+  "updated_at": "2026-11-20T09:32:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
       "url": "https://huggingface.co/papers/2604.05018",
-      "hot": "9"
+      "hot": "10"
     },
     {
       "rank": 2,
       "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
       "url": "https://huggingface.co/papers/2610.22732",
-      "hot": "20"
+      "hot": "21"
     },
     {
       "rank": 3,
       "title": "π^4: A Foundation Model for 4D Scene Geometry and Motion",
       "url": "https://huggingface.co/papers/2611.23144",
-      "hot": "16"
+      "hot": "17"
     },
     {
       "rank": 4,
       "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
       "url": "https://huggingface.co/papers/2611.18397",
-      "hot": "136"
+      "hot": "141"
     },
     {
       "rank": 5,
-      "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
-      "url": "https://huggingface.co/papers/2609.18063",
-      "hot": "35"
+      "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
+      "url": "https://huggingface.co/papers/2502.11880",
+      "hot": "20"
     },
     {
       "rank": 6,
-      "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
-      "url": "https://huggingface.co/papers/2502.11880",
-      "hot": "19"
+      "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+      "url": "https://huggingface.co/papers/2609.18063",
+      "hot": "36"
     },
     {
       "rank": 7,
