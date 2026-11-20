@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-19T20:56:47+00:00",
+  "updated_at": "2026-11-20T01:57:55+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【HarmonyOS 7】压缩存、超分看：鸿蒙图像超分在「不想上班」里的工程化落地",
-      "url": "https://ost.51cto.com/posts/64537",
-      "hot": "压缩存、超分看：鸿蒙图像超分在随手记里的工程化落地随手记里的图片，真正难的不是&ldquo;拍下来&rdquo;，而是长期存得住、临时看得清、需要时导得出..."
+      "title": "如今程序员面试，为什么都问 Agent？（代码，架构图，提示词，PPT都分享）",
+      "url": "https://www.51cto.com/article/861701.html",
+      "hot": "Agent 架构设计，重点就是考虑：记忆怎么设计、token怎么节省及上下文放哪些东西。"
     },
     {
       "rank": 2,
-      "title": "【HarmonyOS 7】鸿蒙平行视界实战：两份配置、零业务代码，给折叠屏补上双栏体验",
-      "url": "https://ost.51cto.com/posts/64536",
-      "hot": "鸿蒙平行视界实战：两份配置、零业务代码，给折叠屏补上双栏体验给鸿蒙应用补大屏体验，常见误区是把它当成一次全量UI改造。对「不想上班」..."
+      "title": "HarmonyOS聊天列表实战：加载历史消息时，怎么让列表不跳",
+      "url": "https://ost.51cto.com/posts/64638",
+      "hot": "大家好，今天讲一下HarmonyOS聊天列表加载历史消息时，怎么让正在看的那条消息留在原处。比如我正在看第30条消息，刚好读到&ldquo;下午开会用的..."
     },
     {
       "rank": 3,
-      "title": "NGINX2Root 严重漏洞，现在能一路走到宿主机 root",
-      "url": "https://www.51cto.com/article/861610.html",
-      "hot": "安全公司 Xint 一次性公开五个 nginx 远程代码执行漏洞，外加一个藏在 Linux 内核里的提权 0day。"
+      "title": "别盲目拆分多 Agent！Anthropic：很多团队的子 Agent 不是太少，是太多",
+      "url": "https://www.51cto.com/article/861695.html",
+      "hot": "Agent 架构正在从堆模块，进入删复杂度的阶段。删掉的不是能力，而是重复规划、有损交接，以及没有必要的上下文隔离。"
     },
     {
       "rank": 4,
-      "title": "最近爆火的 UI 组件库！把网页做出了高级感！",
-      "url": "https://www.51cto.com/article/861609.html",
-      "hot": "Cult UI 不是一个全新UI框架，而是shadcn/ui 的组件扩展仓库，MIT开源免费，专门补齐好看、带动画、适合AI产品和SaaS页面的高级组件。"
+      "title": "从微软六万人转身到百度 “智能组织”：你的团队，处在 AI 成熟度哪一级？",
+      "url": "https://www.51cto.com/article/861692.html",
+      "hot": "AI 竞争的瓶颈，正从 “买不买工具” 转向 “组织怎么适配 AI”。"
     },
     {
       "rank": 5,
-      "title": "前端人赢麻了！拖拽交互不用手写了！",
-      "url": "https://www.51cto.com/article/861607.html",
-      "hot": "Dragology 可能不是每个前端项目都需要的工具，但它背后的设计思想值得关注。它把拖拽从一系列鼠标事件、坐标计算和动画处理，提升到了模型状态和可能结果的层面。"
+      "title": "刚刚，DeepSeek张博创业曝光：开源个人Agent！",
+      "url": "https://www.51cto.com/article/861690.html",
+      "hot": "刚刚，前DeepSeek V1作者、DeepSeek-VL项目负责人Tony Zhang（张博），正式公布了自己的新创业项目：Linger。"
     },
     {
       "rank": 6,
-      "title": "OpenAI 1200 个智能体攻破 Hugging Face 生产系统事件深度复盘：奖励黑客、沙箱失效，与多智能体团队治理指南",
-      "url": "https://www.51cto.com/article/861601.html",
-      "hot": "1200 个失控智能体不是叛乱者，是奖励机制、并行处理和糟糕沙箱共同造成的结果。"
+      "title": "Fable 5.2开卷80%，闭卷仅47%！最强编程智能体遇上机器人难题",
+      "url": "https://www.51cto.com/article/861689.html",
+      "hot": "西北大学、卡内基梅隆大学等8所高校的研究者提出了Embodied First Exam（EFE，具身第一考）：一个把各种编程智能体接入仿真机器人的统一评测框架。"
     },
     {
       "rank": 7,
-      "title": "不用训练！Opus 5.5直接手写Transformer权重，13类任务全拿100%",
-      "url": "https://www.51cto.com/article/861589.html",
-      "hot": "前沿大语言模型已经可以直接越过传统的优化器，依据固定的评测反馈，像外科医生一样精准构思计算逻辑，并用代码将算法直接写进Transformer的权重里。"
+      "title": "删软链接带个斜杠，源目录直接没了，这个坑千万别踩",
+      "url": "https://www.51cto.com/article/861688.html",
+      "hot": "本文从 inode 底层原理讲起，梳理 ln 命令的用法、两类链接的核心差异与操作规范，帮你避开常见失误。"
     },
     {
       "rank": 8,
-      "title": "刚刚，谷歌Gemini 4再发新款，对标超越GPT-6.2 Sol！世界模型Genie 4也已开放",
-      "url": "https://www.51cto.com/article/861588.html",
-      "hot": "谷歌最近一直在基础模型上发力，从最高智能到最高效率的模型不停发布，为了重返王座真是拼了。"
+      "title": "奥特曼给「AI造AI」踩刹车！方向盘必须握在人类手中",
+      "url": "https://www.51cto.com/article/861687.html",
+      "hot": "11月16日，在Semafor的活动现场，谈及「递归自我改进」（RSI），奥特曼当场划下一道红线：我们本可以进一步向递归自我改进推进，但我不认为现在能安全地这么做。"
     },
     {
       "rank": 9,
-      "title": "补丁成了「漏洞说明书」！谷歌曝黑客让AI照着补丁写攻击代码",
-      "url": "https://www.51cto.com/article/861592.html",
-      "hot": "谷歌发现了黑客的一台直接暴露在公网上的暂存服务器，从里头翻出一个名为exploit_agent的AI攻击框架。"
+      "title": "碰哪传哪：HarmonyOS 7 碰一碰精准分享实战",
+      "url": "https://ost.51cto.com/posts/64628",
+      "hot": "前言：从设备级连接到屏幕空间级投递传统碰一碰解决的问题是「两台设备连上了」：NFC触发配对，宿主应用在knockShare回调里把预设好的分享..."
     },
     {
       "rank": 10,
-      "title": "港中深联合微软研究院提出多模态统一建模新架构ConvexLLM，让声音接上大模型已经学会的知识与推理",
-      "url": "https://www.51cto.com/article/861585.html",
-      "hot": "这是语音大模型绕不开的一道题：同一个问题，写出来能答，换成语音，表现却可能明显下降。声音已经被编码成向量，语言模型也足够强，两者之间还缺什么？"
+      "title": "Claude开AI工厂：七周造38个模型，狂揽5.5万下载！",
+      "url": "https://www.51cto.com/article/861686.html",
+      "hot": "七周，Claude交出38个模型，狂揽约5.5万次下载，杀进100多个GitHub项目。"
     }
   ]
 }
