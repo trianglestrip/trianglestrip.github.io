@@ -1,67 +1,67 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-11-20T17:57:07+00:00",
+  "updated_at": "2026-11-20T23:31:13+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "开源JIT转译代码虚拟机 jitvm库",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2137987",
+      "hot": "Vibe coding已经横扫一切了，以后手搓安全分析的人会越来越少了，但是agents分析尽管强大，也需要配合各种各样的工具和库，因此我让agent从我以前的项目代码迁移了一个组件的代码出来vibe coding了一个新的库也就是本库开源祝各位更加开心的vibe coding.\n先简单的说下 ..."
+    },
+    {
+      "rank": 2,
+      "title": "披着系统助手的外衣——SystemHelper服务分析",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2137275",
+      "hot": "[md]## 一、概述\n\n近日在各大论坛帖子看到大量用户讨论，称 `com.mobiletools.systemhelper` 的系统组件会秘密上报多种敏感信息。我从Redmi K60 Ultra 提取出安装包，它在桌面上没有图标，唯一的界面 `TestActivity`  ..."
+    },
+    {
+      "rank": 3,
       "title": "某酷 CKEY逆向",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2136301",
       "hot": "[md]# 某酷 CKEY逆向\n\n&gt; **参考资料**：[Anti-Bot 安全 SDK SGAVMP 浅析 — 吾爱破解论坛](https://www.52pojie.cn/thread-1345201-1-1.html)  \n&gt; **样本版本**：`libsgmainso-6.4.xxx.so`\n\n---\n\n## 一、背景与整体思路\n\n在分析无线保镖（SecurityGuard / SGAV ..."
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "【系列文章】阿里 sgmian 番外篇:阿里花指令与数据类型规范",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2135889",
       "hot": "[md]# 【系列文章】阿里 sgmian 番外篇:阿里花指令与数据类型规范\n\n## 前情提要\n\n&gt; **时间:** 2026 年 11 月 05 日 星期四 11:00:00 CST\n&gt; **作者:** 人生导师\n\n这篇不聊业务流程，专门把阿里 `libsgmainso` 这套花指令拆开讲清楚：它长什么样、怎么一眼认出来、 ..."
     },
     {
-      "rank": 3,
+      "rank": 5,
+      "title": "微信 4.1.15.56 防撤回",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2135034",
+      "hot": "[md]## 0. 环境与目标\n\n### 0.1 被测目标\n\n| 项目 | 值 |\n|---|---|\n| 系统 | Windows 10/11 x64 |\n| 微信 | 4.1.15.56（x64） |\n| `Weixin.exe` | 3,128,360 字节，`SHA256 932125CF49BD995345D2C3B1ACE0CA8B6CFE5AF9AB3F61413A4816A3845312EA` |\n| `Weixin.d ..."
+    },
+    {
+      "rank": 6,
       "title": "基于 AST 的 ob 混淆还原思路：以 acw_xx__v2 为例",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2132797",
       "hot": "[md]---\n\n**本文仅供学习交流，因使用本文内容而产生的任何风险及后果，作者不承担任何责任**\n\n---\n\n## 目录\n\n- [一、前言-叠甲](#一前言-叠甲)\n- [二、简单分析混淆样本](#二简单分析混淆样本)\n    - [目标网站](#目标网站)\n    - [触发cookie生成](#触发co ..."
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "学习 VMP 虚拟机吧（四）：VMP2 还是那台机器",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2132351",
       "hot": "[md]*VMProtect  ·  架构笔记*\n\n# VMP2 还是 VMP1 那台机器\n\n骨架没换。难的是 max：壳和函数拆成两台派发器，滚动解密也不再是看一眼字节就懂。\n\nVMP1 做完再看 VMP2，第一感觉是难了很多。派发器不直给，handler 藏在弯路里，max 一启动还先跑一台壳。拆开之后 ..."
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "spiderdemo T30 WebSocket+jsvmp题解及详细思路",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131711",
       "hot": "[md]#### 声明\n\n###### 本文写于2026年10月10日,仅做技术学习交流。本文章中所有内容仅供学习交流使用，不用于其他任何目的，不提供完整代码，抓包内容、敏感网址、数据接口等均已做脱敏处理，严禁用于商业用途和非法用途，否则由此产生的一切后果均与作者无关！\n\n# ..."
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "拆开 Microsoft Edge 的 App-Bound Encryption：从「读不出」到借浏览器身份解密 v20",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131346",
       "hot": "[md]\n&gt; 目标版本：Microsoft Edge `154.0.4258.62`（x64，Windows）\n&gt; 平台：Windows 11 x64\n&gt; 定位：逆向分析 / Windows 安全 / 凭据保护\n&gt;\n&gt; **脱敏声明**：文中出现的账户名、用户 SID、机器 DPAPI 主密钥 GUID、具体站点 URL、密码明文等均已移除或替换为占位 ..."
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "0知识储备, 从引擎源码入手, 逆向某UE4引擎游戏, 解密ini与pak",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131187",
-      "hot": ""
-    },
-    {
-      "rank": 8,
-      "title": "Bastion 棱堡，对称加密算法库，支持CTR、CBC、XTS、AEAD、HASH、HMAC、HKDF、PBKDF2",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131143",
-      "hot": "[hr][md]\n\n**Bastion 棱堡**，一款高性能的自研对称加密算法库，提供 CTR 流加密、CBC、XTS、AEAD 认证加密、HASH、HMAC、HKDF、PBKDF2 模式。\n\n---\n\n### 概述\n\nBastion 棱堡是基于 SPN（代换-置换网络）结构设计 ..."
-    },
-    {
-      "rank": 9,
-      "title": "ks app rpc调用加密算法实现搜索",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2131016",
-      "hot": "版本号，12.11.30.39921\n\n\n\nks_client.py,js脚本注入 App\n\n\n[mw_shl_code=asm,true]import argparse\nimport json\nimport os\nimport subprocess\nimport sys\nimport time\n\ntry:\n    import frida\nexcept ImportError:\n    sys.exit(\\&quot;缺少 frida：pip ins ..."
-    },
-    {
-      "rank": 10,
-      "title": "【吾爱首发】游戏《Sora No Kiseki the 2nd》打包解包工具FPACTool V2.1源代码",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2130872",
       "hot": ""
     }
   ]
