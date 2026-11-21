@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-20T23:31:10+00:00",
+  "updated_at": "2026-11-21T04:11:31+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "同时控10台电脑是什么体验？远程多台电脑、多控一与批量管理实测",
       "url": "https://blog.csdn.net/2401_89538720/article/details/171039647",
-      "hot": "18589"
+      "hot": "20363"
     },
     {
       "rank": 2,
       "title": "【AI应用实战】用 FastAPI + SSE 做一个自己的 AI 聊天网页：流式输出、多轮对话与完整源码",
       "url": "https://blog.csdn.net/2403_86779341/article/details/170931049",
-      "hot": "15914"
+      "hot": "16267"
     },
     {
       "rank": 3,
-      "title": "【C++ 基于微服务的即时通讯系统】用户服务之Redis数据层落地：会话、登录状态与验证码全封装",
-      "url": "https://blog.csdn.net/2503_91389547/article/details/170650437",
-      "hot": "14420"
+      "title": "AI Agent 13",
+      "url": "https://blog.csdn.net/2401_88601046/article/details/170989452",
+      "hot": "11434"
     },
     {
       "rank": 4,
-      "title": "AI Agent 工程化开发实战（十）：工具与结构化输出——@tool 与 response_format",
-      "url": "https://blog.csdn.net/xiaobing259/article/details/170849473",
-      "hot": "13631"
+      "title": "【C++ 基于微服务的即时通讯系统】用户服务之Redis数据层落地：会话、登录状态与验证码全封装",
+      "url": "https://blog.csdn.net/2503_91389547/article/details/170650437",
+      "hot": "10779"
     },
     {
       "rank": 5,
-      "title": "AI Agent 13",
-      "url": "https://blog.csdn.net/2401_88601046/article/details/170989452",
-      "hot": "12205"
+      "title": "如何为你的 Web 应用添加文档编辑能力：ONLYOFFICE 文档集成实战",
+      "url": "https://blog.csdn.net/weixin_37800531/article/details/170930113",
+      "hot": "10092"
     },
     {
       "rank": 6,
       "title": "SpringBoot3 + Vue3 搭建企业级 Agent：从对话入口到业务结果的全栈设计",
       "url": "https://blog.csdn.net/zhouzhongyan/article/details/170822198",
-      "hot": "11815"
+      "hot": "9997"
     },
     {
       "rank": 7,
-      "title": "Sentinel + Seata：微服务流量防护与分布式事务实战",
-      "url": "https://blog.csdn.net/vipxieliang/article/details/170962791",
-      "hot": "10877"
+      "title": "Redis实战：给大模型接口做缓存省60%token",
+      "url": "https://blog.csdn.net/superdangbo/article/details/171109466",
+      "hot": "7988"
     },
     {
       "rank": 8,
       "title": "一页纸综述｜aws/aws-sdk-js-v3：模块化 AWS JavaScript SDK 的静态取证画像",
       "url": "https://blog.csdn.net/TunerT_TQ/article/details/171036618",
-      "hot": "10102"
+      "hot": "7383"
     },
     {
       "rank": 9,
-      "title": "【命题四 · Agent / 自定义 Skills 深水区】一笔 8.40 元的订单为何入账 14.80 元？华为云码道对账实测",
-      "url": "https://blog.csdn.net/2401_87629362/article/details/171106883",
-      "hot": "8939"
+      "title": "LobeHub+Ollama本地AI教程：私有Agent、模型管理与远程访问",
+      "url": "https://blog.csdn.net/2602_94956987/article/details/171040465",
+      "hot": "7366"
     },
     {
       "rank": 10,
-      "title": "如何为你的 Web 应用添加文档编辑能力：ONLYOFFICE 文档集成实战",
-      "url": "https://blog.csdn.net/weixin_37800531/article/details/170930113",
-      "hot": "7324"
+      "title": "MySQL兼容性深度实践：建表、增删改查与迁移避坑全记录",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/170911058",
+      "hot": "6197"
     }
   ]
 }

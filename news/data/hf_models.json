@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-20T17:57:23+00:00",
+  "updated_at": "2026-11-21T04:11:56+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "higurashi-ai/Haru-4B",
-      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-      "hot": "4576"
+      "title": "thinkingmachines/Inkling-2-Mini",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+      "hot": "800"
     },
     {
       "rank": 2,
-      "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-      "hot": "832"
+      "title": "higurashi-ai/Haru-4B",
+      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "hot": "5698"
     },
     {
       "rank": 3,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "20765"
+      "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+      "hot": "867"
     },
     {
       "rank": 4,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "12837"
+      "title": "Sentinel7/h3",
+      "url": "https://huggingface.co/Sentinel7/h3",
+      "hot": "363"
     },
     {
       "rank": 5,
-      "title": "MiniMaxAI/MiniMax-H3-Image",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-      "hot": "1682"
+      "title": "unsloth/Inkling-2-Mini-GGUF",
+      "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+      "hot": "263"
     },
     {
       "rank": 6,
-      "title": "tencent/Hy4-flash",
-      "url": "https://huggingface.co/tencent/Hy4-flash",
-      "hot": "505"
+      "title": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "hot": "20815"
     },
     {
       "rank": 7,
-      "title": "sensenova/SenseNova-Loop-9B",
-      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
-      "hot": "426"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "12916"
     },
     {
       "rank": 8,
-      "title": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
-      "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
-      "hot": "740"
+      "title": "tencent/Hy4-flash",
+      "url": "https://huggingface.co/tencent/Hy4-flash",
+      "hot": "553"
     },
     {
       "rank": 9,
-      "title": "inworld/voice-isolator",
-      "url": "https://huggingface.co/inworld/voice-isolator",
-      "hot": "465"
+      "title": "sensenova/SenseNova-Loop-9B",
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+      "hot": "451"
     },
     {
       "rank": 10,
-      "title": "apple/FastFrames-L",
-      "url": "https://huggingface.co/apple/FastFrames-L",
-      "hot": "466"
+      "title": "MiniMaxAI/MiniMax-H3-Image",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+      "hot": "1708"
     }
   ]
 }
