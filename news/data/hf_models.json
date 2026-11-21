@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-21T12:36:13+00:00",
+  "updated_at": "2026-11-21T19:44:33+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-      "hot": "1227"
+      "hot": "2055"
     },
     {
       "rank": 2,
-      "title": "higurashi-ai/Haru-4B",
-      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-      "hot": "811"
+      "title": "unsloth/Inkling-2-Mini-GGUF",
+      "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+      "hot": "536"
     },
     {
       "rank": 3,
-      "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-      "hot": "850"
+      "title": "tencent/Hy4-flash",
+      "url": "https://huggingface.co/tencent/Hy4-flash",
+      "hot": "518"
     },
     {
       "rank": 4,
-      "title": "Sentinel7/h3",
-      "url": "https://huggingface.co/Sentinel7/h3",
-      "hot": "642"
+      "title": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "hot": "12913"
     },
     {
       "rank": 5,
-      "title": "unsloth/Inkling-2-Mini-GGUF",
-      "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-      "hot": "403"
+      "title": "inworld/voice-isolator",
+      "url": "https://huggingface.co/inworld/voice-isolator",
+      "hot": "478"
     },
     {
       "rank": 6,
-      "title": "tencent/Hy4-flash",
-      "url": "https://huggingface.co/tencent/Hy4-flash",
-      "hot": "561"
+      "title": "apple/FastFrames-L",
+      "url": "https://huggingface.co/apple/FastFrames-L",
+      "hot": "470"
     },
     {
       "rank": 7,
-      "title": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "12856"
+      "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+      "hot": "915"
     },
     {
       "rank": 8,
-      "title": "inworld/voice-isolator",
-      "url": "https://huggingface.co/inworld/voice-isolator",
-      "hot": "519"
+      "title": "higurashi-ai/Haru-4B",
+      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "hot": "828"
     },
     {
       "rank": 9,
-      "title": "apple/FastFrames-L",
-      "url": "https://huggingface.co/apple/FastFrames-L",
-      "hot": "494"
+      "title": "meituan-longcat/LongCat-Video-Avatar-1.6",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+      "hot": "363"
     },
     {
       "rank": 10,
-      "title": "meituan-longcat/LongCat-Video-Avatar-1.6",
-      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
-      "hot": "400"
+      "title": "n4ze3m/tiny-voca",
+      "url": "https://huggingface.co/n4ze3m/tiny-voca",
+      "hot": "351"
     }
   ]
 }

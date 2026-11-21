@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-21T12:35:58+00:00",
+  "updated_at": "2026-11-21T19:44:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Brazil's tax authority open-sources its tax calculator on GitHub under MIT",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria",
-      "hot": "69"
+      "title": "Inkling-2-Mini in 5.4 GB Memory",
+      "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+      "hot": "121"
     },
     {
       "rank": 2,
-      "title": "Hurried Announcement: Alessandro Masullo GRH",
-      "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
-      "hot": "2183"
+      "title": "Brazil's tax authority open-sources its tax calculator on GitHub under MIT",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria",
+      "hot": "553"
     },
     {
       "rank": 3,
-      "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
-      "url": "https://alpo.ge/remark.pdf",
-      "hot": "2700"
+      "title": "Lean verification of the Riemann Hypothesis",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "hot": "544"
     },
     {
       "rank": 4,
-      "title": "Inkling 2 Mini",
-      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
-      "hot": "1083"
+      "title": "Detonating a pile of lead azide",
+      "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+      "hot": "395"
     },
     {
       "rank": 5,
-      "title": "RCE in Gnupg",
-      "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
-      "hot": "57"
+      "title": "PostgreSQL Extensions in Go",
+      "url": "https://jespino.github.io/gopgext/",
+      "hot": "64"
     },
     {
       "rank": 6,
-      "title": "ClawDOS – An AI coding agent for DOS",
-      "url": "http://ricapar.net/ClawDOS/",
-      "hot": "89"
+      "title": "My monitor was cutting my download speed by 75%",
+      "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
+      "hot": "340"
     },
     {
       "rank": 7,
-      "title": "We promoted developers into architects without informing them",
-      "url": "https://manidoraisamy.com/developer-to-architect.html",
-      "hot": "469"
+      "title": "Hurried Announcement: Alessandro Masullo GRH",
+      "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+      "hot": "2337"
     },
     {
       "rank": 8,
-      "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
-      "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
-      "hot": "469"
+      "title": "Verification files for the Lean proof of the Riemann Hypothesis",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "hot": "43"
     },
     {
       "rank": 9,
-      "title": "NINLIVE: The Nine Inch Nails live archive",
-      "url": "https://ninlive.com/",
-      "hot": "288"
+      "title": "Inkling 2 Mini",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "hot": "1286"
     },
     {
       "rank": 10,
-      "title": "Clojure will affect the way you think about programming (2017)",
-      "url": "https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/",
-      "hot": "121"
+      "title": "I'm quite pleased by the tech architecture of my art website",
+      "url": "https://klauria.tech/klauria-art/",
+      "hot": "94"
     }
   ]
 }

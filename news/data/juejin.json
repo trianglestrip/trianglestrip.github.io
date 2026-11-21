@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-11-21T12:35:45+00:00",
+  "updated_at": "2026-11-21T19:44:11+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "永别了，程序员！(转）",
       "url": "https://juejin.cn/post/7705987138957328427",
-      "hot": "6948"
+      "hot": "6993"
     },
     {
       "rank": 2,
       "title": "空值、日期、字符串：业务 SQL 里的函数先跑一遍",
       "url": "https://juejin.cn/post/7710058428483780623",
-      "hot": "1953"
+      "hot": "2790"
     },
     {
       "rank": 3,
-      "title": "Android 工程师的技术信仰崩塌史",
-      "url": "https://juejin.cn/post/7709344829042409507",
+      "title": "分库分表要被淘汰了？",
+      "url": "https://juejin.cn/post/7709495049776480294",
       "hot": "774"
     },
     {
       "rank": 4,
-      "title": "分库分表要被淘汰了？",
-      "url": "https://juejin.cn/post/7709495049776480294",
-      "hot": "747"
+      "title": "为了快 30 倍，我把构建工具换成了 Rust，结果团队差点连班都加不了",
+      "url": "https://juejin.cn/post/7709679151841722409",
+      "hot": "666"
     },
     {
       "rank": 5,
-      "title": "为了快 30 倍，我把构建工具换成了 Rust，结果团队差点连班都加不了",
-      "url": "https://juejin.cn/post/7709679151841722409",
-      "hot": "612"
+      "title": "iOS for Web ，把原生 iOS App 跑到进浏览器里面，倒反天罡",
+      "url": "https://juejin.cn/post/7709530253697908778",
+      "hot": "459"
     },
     {
       "rank": 6,
-      "title": "iOS for Web ，把原生 iOS App 跑到进浏览器里面，倒反天罡",
-      "url": "https://juejin.cn/post/7709530253697908778",
-      "hot": "450"
+      "title": "太狠了！GitHub 5.6 万 Star，让 AI 直接操控 Chrome 调试",
+      "url": "https://juejin.cn/post/7709431516912943140",
+      "hot": "432"
     },
     {
       "rank": 7,
-      "title": "太狠了！GitHub 5.6 万 Star，让 AI 直接操控 Chrome 调试",
-      "url": "https://juejin.cn/post/7709431516912943140",
-      "hot": "414"
+      "title": "Jetpack Compose 1.13 发布，憋了这么久终有交代了",
+      "url": "https://juejin.cn/post/7709778061000441910",
+      "hot": "351"
     },
     {
       "rank": 8,
-      "title": "Jetpack Compose 1.13 发布，憋了这么久终有交代了",
-      "url": "https://juejin.cn/post/7709778061000441910",
-      "hot": "333"
+      "title": "手搓 Agent（五）：学会翻书——RAG，先查资料再回答",
+      "url": "https://juejin.cn/post/7709755322558431242",
+      "hot": "252"
     },
     {
       "rank": 9,
-      "title": "我是如何设计品牌站组件库的？",
-      "url": "https://juejin.cn/post/7709425536502087720",
-      "hot": "306"
+      "title": "思考，行动，复盘｜2026",
+      "url": "https://juejin.cn/post/7709817287637516322",
+      "hot": "243"
     },
     {
       "rank": 10,
-      "title": "GPT-6.2更强更便宜了，为什么还有人骂？",
-      "url": "https://juejin.cn/post/7709380677695324203",
-      "hot": "297"
+      "title": "我扒了 GitHub Trending 前 20，8 个在做同一件事：给 Coding Agent 造基础设施",
+      "url": "https://juejin.cn/post/7709495049776709670",
+      "hot": "225"
     }
   ]
 }

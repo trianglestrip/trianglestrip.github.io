@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-21T12:36:13+00:00",
+  "updated_at": "2026-11-21T19:44:33+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,13 +14,13 @@
       "rank": 2,
       "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
       "url": "https://huggingface.co/papers/2611.26603",
-      "hot": "28"
+      "hot": "29"
     },
     {
       "rank": 3,
       "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
       "url": "https://huggingface.co/papers/2611.18397",
-      "hot": "145"
+      "hot": "146"
     },
     {
       "rank": 4,
@@ -36,15 +36,15 @@
     },
     {
       "rank": 6,
-      "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
-      "url": "https://huggingface.co/papers/2502.11880",
-      "hot": "22"
-    },
-    {
-      "rank": 7,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "169"
+    },
+    {
+      "rank": 7,
+      "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
+      "url": "https://huggingface.co/papers/2502.11880",
+      "hot": "22"
     },
     {
       "rank": 8,
