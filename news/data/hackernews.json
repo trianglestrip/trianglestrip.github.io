@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-21T23:56:29+00:00",
+  "updated_at": "2026-11-22T03:57:38+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
       "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
-      "hot": "474"
+      "hot": "756"
     },
     {
       "rank": 2,
       "title": "Lean verification of the Riemann Hypothesis",
       "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
-      "hot": "774"
+      "hot": "897"
     },
     {
       "rank": 3,
       "title": "Inkling-2-Mini in 5.4 GB Memory",
       "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
-      "hot": "320"
+      "hot": "385"
     },
     {
       "rank": 4,
-      "title": "Detonating a pile of lead azide",
-      "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
-      "hot": "490"
+      "title": "Sandwich Simulator",
+      "url": "https://stulle.app/",
+      "hot": "70"
     },
     {
       "rank": 5,
-      "title": "Brazil's tax authority open-sources its tax calculator on GitHub under MIT",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria",
-      "hot": "700"
+      "title": "Data Processing Incidents on Inference Providers",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "hot": "40"
     },
     {
       "rank": 6,
-      "title": "Getting the mind to steer the body to steer you",
-      "url": "https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body",
-      "hot": "117"
+      "title": "Detonating a pile of lead azide",
+      "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+      "hot": "557"
     },
     {
       "rank": 7,
-      "title": "PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors",
-      "url": "https://github.com/sebaandrada-cell/PcapAnalyzer",
-      "hot": "29"
+      "title": "Leonida – PC Recompilation of the Xbox Version of GTA 6",
+      "url": "https://github.com/ItsNotRexed/Leonida",
+      "hot": "68"
     },
     {
       "rank": 8,
-      "title": "Hurried Announcement: Alessandro Masullo GRH",
-      "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
-      "hot": "2379"
+      "title": "PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors",
+      "url": "https://github.com/sebaandrada-cell/PcapAnalyzer",
+      "hot": "83"
     },
     {
       "rank": 9,
-      "title": "My monitor was cutting my download speed by 75%",
-      "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
-      "hot": "448"
+      "title": "Getting the mind to steer the body to steer you",
+      "url": "https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body",
+      "hot": "187"
     },
     {
       "rank": 10,
-      "title": "PostgreSQL Extensions in Go",
-      "url": "https://jespino.github.io/gopgext/",
-      "hot": "112"
+      "title": "The Most Popular Car Colors in America",
+      "url": "https://www.iseecars.com/most-popular-car-colors-study",
+      "hot": "8"
     }
   ]
 }
