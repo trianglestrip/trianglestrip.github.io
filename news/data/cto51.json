@@ -1,20 +1,20 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-22T03:57:36+00:00",
+  "updated_at": "2026-11-22T12:11:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 6 阅读页冷启动：书目仍要等，先让窗口显示什么",
-      "url": "https://ost.51cto.com/posts/64668",
-      "hot": "配套工程​​源码、测试材料与运行说明​​前言两次启动我都让书目等约三秒。第一种路径出现空白页，等到资源读完才挂载标题和列表；第二种..."
+      "title": "【鸿蒙实战】第 31 篇：手机碰一下 PC 就传图？生产落地要过四道关（HarmonyOS 7.x）",
+      "url": "https://ost.51cto.com/posts/64789",
+      "hot": "摘要:HarmonyOS7（API26）的碰一碰&middot;精准分享，让手机轻碰PC屏幕，素材就落到指定位置。但&quot;读到坐标&quot;只是demo的终点，生产环境还要过四道关..."
     },
     {
       "rank": 2,
-      "title": "【鸿蒙实战】第 30 篇：点赞按钮\"像死的\"？animateTo、弹簧、关键帧一次讲透（HarmonyOS 7.x）",
-      "url": "https://ost.51cto.com/posts/64645",
-      "hot": "产品说点赞按钮&quot;没反馈感觉像死的&quot;，我加了animateTo缩放，又觉得机械换弹簧；列表删除用transition却发现直接消失没动画；加载动画无限循..."
+      "title": "HarmonyOS 6 阅读页冷启动：书目仍要等，先让窗口显示什么",
+      "url": "https://ost.51cto.com/posts/64668",
+      "hot": "配套工程​​源码、测试材料与运行说明​​前言两次启动我都让书目等约三秒。第一种路径出现空白页，等到资源读完才挂载标题和列表；第二种..."
     },
     {
       "rank": 3,

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-22T03:57:38+00:00",
+  "updated_at": "2026-11-22T12:11:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
-      "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
-      "hot": "756"
+      "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+      "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+      "hot": "606"
     },
     {
       "rank": 2,
-      "title": "Lean verification of the Riemann Hypothesis",
-      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
-      "hot": "897"
+      "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+      "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+      "hot": "1075"
     },
     {
       "rank": 3,
-      "title": "Inkling-2-Mini in 5.4 GB Memory",
-      "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
-      "hot": "385"
+      "title": "A real Linux kernel, compiled to WebAssembly",
+      "url": "https://github.com/pithings/unkernel",
+      "hot": "51"
     },
     {
       "rank": 4,
-      "title": "Sandwich Simulator",
-      "url": "https://stulle.app/",
-      "hot": "70"
+      "title": "Lean verification of the Riemann Hypothesis",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "hot": "1066"
     },
     {
       "rank": 5,
-      "title": "Data Processing Incidents on Inference Providers",
-      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-      "hot": "40"
+      "title": "Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts",
+      "url": "https://arxiv.org/abs/2606.14068",
+      "hot": "45"
     },
     {
       "rank": 6,
-      "title": "Detonating a pile of lead azide",
-      "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
-      "hot": "557"
+      "title": "Sandwich Simulator",
+      "url": "https://stulle.app/",
+      "hot": "305"
     },
     {
       "rank": 7,
-      "title": "Leonida – PC Recompilation of the Xbox Version of GTA 6",
-      "url": "https://github.com/ItsNotRexed/Leonida",
-      "hot": "68"
+      "title": "Self-hosted library branch over public web OPDS",
+      "url": "https://joinmayberry.com/",
+      "hot": "16"
     },
     {
       "rank": 8,
-      "title": "PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors",
-      "url": "https://github.com/sebaandrada-cell/PcapAnalyzer",
-      "hot": "83"
+      "title": "Inkling-2-Mini in 5.4 GB Memory",
+      "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+      "hot": "480"
     },
     {
       "rank": 9,
-      "title": "Getting the mind to steer the body to steer you",
-      "url": "https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body",
-      "hot": "187"
+      "title": "Show HN: The Riemann Proof Handbook",
+      "url": "https://github.com/tamnd/riemann-handbook",
+      "hot": "61"
     },
     {
       "rank": 10,
-      "title": "The Most Popular Car Colors in America",
-      "url": "https://www.iseecars.com/most-popular-car-colors-study",
-      "hot": "8"
+      "title": "Data Processing Incidents on Inference Providers",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "hot": "174"
     }
   ]
 }
