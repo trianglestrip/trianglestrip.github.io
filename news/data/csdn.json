@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-22T19:32:36+00:00",
+  "updated_at": "2026-11-23T00:26:16+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【Linux网络】HTTP 请求到底长什么样？从 URL、请求响应报文到 Web 服务器完整实战",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/171112653",
-      "hot": "21072"
+      "title": "没有 OpenGL 之后，OHCalculiX 在鸿蒙 PC 上用 ArkUI 自己画 3D 后处理",
+      "url": "https://blog.csdn.net/yj11290301/article/details/171100938",
+      "hot": "14996"
     },
     {
       "rank": 2,
-      "title": "没有 OpenGL 之后，OHCalculiX 在鸿蒙 PC 上用 ArkUI 自己画 3D 后处理",
-      "url": "https://blog.csdn.net/yj11290301/article/details/171100938",
-      "hot": "15400"
+      "title": "一个完整案例：用 Spring AI 做工单智能分派（系列收官）",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/171179083",
+      "hot": "12343"
     },
     {
       "rank": 3,
-      "title": "一个完整案例：用 Spring AI 做工单智能分派（系列收官）",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/171179083",
-      "hot": "12485"
+      "title": "〖AI应用实战〗AI写完代码别急着上线：用 Playwright 自动验收页面、截图并捕获控制台报错（附源码）",
+      "url": "https://blog.csdn.net/2403_86779341/article/details/171112892",
+      "hot": "10295"
     },
     {
       "rank": 4,
-      "title": "〖AI应用实战〗AI写完代码别急着上线：用 Playwright 自动验收页面、截图并捕获控制台报错（附源码）",
-      "url": "https://blog.csdn.net/2403_86779341/article/details/171112892",
-      "hot": "9993"
+      "title": "【Linux网络】HTTP 请求到底长什么样？从 URL、请求响应报文到 Web 服务器完整实战",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/171112653",
+      "hot": "8759"
     },
     {
       "rank": 5,
-      "title": "【AI智能体】Claude Code 多Agent 协作实现企业级文档合规性项目开发实战详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/170561793",
-      "hot": "8149"
+      "title": "AI Agent核心原理解析：从四大组件、ReAct循环到防翻车实战",
+      "url": "https://blog.csdn.net/qq_46987323/article/details/171113459",
+      "hot": "8461"
     },
     {
       "rank": 6,
-      "title": "AI Agent核心原理解析：从四大组件、ReAct循环到防翻车实战",
-      "url": "https://blog.csdn.net/qq_46987323/article/details/171113459",
-      "hot": "6688"
+      "title": "【AI智能体】Claude Code 多Agent 协作实现企业级文档合规性项目开发实战详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/170561793",
+      "hot": "7837"
     },
     {
       "rank": 7,
-      "title": "【Linux 系统篇(四十一)】线程(二)：线程的优缺点、资源共享与上下文切换",
-      "url": "https://blog.csdn.net/Huang_jin007/article/details/171156611",
-      "hot": "6618"
+      "title": "从0实现C++ AI大模型接入SDK（二）：AI知识科普——从图灵测试到ChatGPT，人工智能的发展历程",
+      "url": "https://blog.csdn.net/Face_FeaR/article/details/171195964",
+      "hot": "6764"
     },
     {
       "rank": 8,
-      "title": "SerpBase 还是 Bright Data，多引擎搜索项目选型避坑指南",
-      "url": "https://blog.csdn.net/m0_64336780/article/details/171092974",
-      "hot": "6618"
+      "title": "「华为云码道」一句话需求，我让 AI 做了个能回放击键的打字测速游戏",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/171185272",
+      "hot": "6754"
     },
     {
       "rank": 9,
-      "title": "「华为云码道」一句话需求，我让 AI 做了个能回放击键的打字测速游戏",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/171185272",
-      "hot": "6617"
+      "title": "MySQL兼容性深度实践：建表、增删改查与迁移避坑全记录",
+      "url": "https://blog.csdn.net/beautifulmemory/article/details/170911058",
+      "hot": "6743"
     },
     {
       "rank": 10,
-      "title": "第二十二届全国大学生智能汽车竞赛第一次组委会扩大会议",
-      "url": "https://blog.csdn.net/zhuoqingjoking97298/article/details/171189832",
-      "hot": "6617"
+      "title": "Redis实战：给大模型接口做缓存省60%token",
+      "url": "https://blog.csdn.net/superdangbo/article/details/171109466",
+      "hot": "6722"
     }
   ]
 }
