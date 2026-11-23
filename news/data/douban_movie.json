@@ -1,20 +1,20 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-23T07:56:45+00:00",
+  "updated_at": "2026-11-23T19:41:19+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "今天是太阳雨",
-      "url": "https://movie.douban.com/subject/36689621/",
-      "hot": "评分 8.0"
-    },
-    {
-      "rank": 2,
       "title": "两京十五日",
       "url": "https://movie.douban.com/subject/35235320/",
       "hot": ""
+    },
+    {
+      "rank": 2,
+      "title": "今天是太阳雨",
+      "url": "https://movie.douban.com/subject/36689621/",
+      "hot": "评分 8.0"
     },
     {
       "rank": 3,
@@ -32,19 +32,19 @@
       "rank": 5,
       "title": "饥饿游戏：收获日出",
       "url": "https://movie.douban.com/subject/36915988/",
-      "hot": "评分 6.4"
+      "hot": "评分 6.3"
     },
     {
       "rank": 6,
-      "title": "空枪",
-      "url": "https://movie.douban.com/subject/37508847/",
-      "hot": "评分 7.1"
-    },
-    {
-      "rank": 7,
       "title": "我的有罪之人",
       "url": "https://movie.douban.com/subject/37806882/",
       "hot": "评分 9.0"
+    },
+    {
+      "rank": 7,
+      "title": "空枪",
+      "url": "https://movie.douban.com/subject/37508847/",
+      "hot": "评分 7.1"
     },
     {
       "rank": 8,
