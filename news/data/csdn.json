@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-23T00:26:16+00:00",
+  "updated_at": "2026-11-23T07:57:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "没有 OpenGL 之后，OHCalculiX 在鸿蒙 PC 上用 ArkUI 自己画 3D 后处理",
-      "url": "https://blog.csdn.net/yj11290301/article/details/171100938",
-      "hot": "14996"
+      "title": "【Linux网络】HTTP 请求到底长什么样？从 URL、请求响应报文到 Web 服务器完整实战",
+      "url": "https://blog.csdn.net/2402_87731470/article/details/171112653",
+      "hot": "28083"
     },
     {
       "rank": 2,
-      "title": "一个完整案例：用 Spring AI 做工单智能分派（系列收官）",
-      "url": "https://blog.csdn.net/sinat_41617212/article/details/171179083",
-      "hot": "12343"
+      "title": "AI Agent核心原理解析：从四大组件、ReAct循环到防翻车实战",
+      "url": "https://blog.csdn.net/qq_46987323/article/details/171113459",
+      "hot": "19178"
     },
     {
       "rank": 3,
-      "title": "〖AI应用实战〗AI写完代码别急着上线：用 Playwright 自动验收页面、截图并捕获控制台报错（附源码）",
-      "url": "https://blog.csdn.net/2403_86779341/article/details/171112892",
-      "hot": "10295"
+      "title": "【AI接入大模型SDK】解决接口连接异常问题",
+      "url": "https://blog.csdn.net/2401_89899187/article/details/170773966",
+      "hot": "18866"
     },
     {
       "rank": 4,
-      "title": "【Linux网络】HTTP 请求到底长什么样？从 URL、请求响应报文到 Web 服务器完整实战",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/171112653",
-      "hot": "8759"
+      "title": "〖AI应用实战〗AI写完代码别急着上线：用 Playwright 自动验收页面、截图并捕获控制台报错（附源码）",
+      "url": "https://blog.csdn.net/2403_86779341/article/details/171112892",
+      "hot": "12431"
     },
     {
       "rank": 5,
-      "title": "AI Agent核心原理解析：从四大组件、ReAct循环到防翻车实战",
-      "url": "https://blog.csdn.net/qq_46987323/article/details/171113459",
-      "hot": "8461"
+      "title": "【AI智能体】Claude Code 多Agent 协作实现企业级文档合规性项目开发实战详解",
+      "url": "https://blog.csdn.net/zhangcongyi420/article/details/170561793",
+      "hot": "10932"
     },
     {
       "rank": 6,
-      "title": "【AI智能体】Claude Code 多Agent 协作实现企业级文档合规性项目开发实战详解",
-      "url": "https://blog.csdn.net/zhangcongyi420/article/details/170561793",
-      "hot": "7837"
+      "title": "一个完整案例：用 Spring AI 做工单智能分派（系列收官）",
+      "url": "https://blog.csdn.net/sinat_41617212/article/details/171179083",
+      "hot": "9725"
     },
     {
       "rank": 7,
-      "title": "从0实现C++ AI大模型接入SDK（二）：AI知识科普——从图灵测试到ChatGPT，人工智能的发展历程",
-      "url": "https://blog.csdn.net/Face_FeaR/article/details/171195964",
-      "hot": "6764"
+      "title": "【人工智能驱动的电催化研究-11】导数、偏导数、链式法则与积分直觉",
+      "url": "https://blog.csdn.net/2402_84593233/article/details/171215899",
+      "hot": "9506"
     },
     {
       "rank": 8,
-      "title": "「华为云码道」一句话需求，我让 AI 做了个能回放击键的打字测速游戏",
-      "url": "https://blog.csdn.net/2302_78391795/article/details/171185272",
-      "hot": "6754"
+      "title": "AI技术学习｜提示词工程：Prompt、上下文学习、Temperature与CoT",
+      "url": "https://blog.csdn.net/2401_86112610/article/details/171093354",
+      "hot": "8889"
     },
     {
       "rank": 9,
-      "title": "MySQL兼容性深度实践：建表、增删改查与迁移避坑全记录",
-      "url": "https://blog.csdn.net/beautifulmemory/article/details/170911058",
-      "hot": "6743"
+      "title": "Redis实战：给大模型接口做缓存省60%token",
+      "url": "https://blog.csdn.net/superdangbo/article/details/171109466",
+      "hot": "8351"
     },
     {
       "rank": 10,
-      "title": "Redis实战：给大模型接口做缓存省60%token",
-      "url": "https://blog.csdn.net/superdangbo/article/details/171109466",
-      "hot": "6722"
+      "title": "「华为云码道」一句话需求，我让 AI 做了个能回放击键的打字测速游戏",
+      "url": "https://blog.csdn.net/2302_78391795/article/details/171185272",
+      "hot": "8211"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-23T00:26:22+00:00",
+  "updated_at": "2026-11-23T07:57:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【鸿蒙实战】第 31 篇：手机碰一下 PC 就传图？生产落地要过四道关（HarmonyOS 7.x）",
-      "url": "https://ost.51cto.com/posts/64789",
-      "hot": "摘要:HarmonyOS7（API26）的碰一碰&middot;精准分享，让手机轻碰PC屏幕，素材就落到指定位置。但&quot;读到坐标&quot;只是demo的终点，生产环境还要过四道关..."
+      "title": "HarmonyOS 应用上架审核规范：从证书签名到一次过审",
+      "url": "https://ost.51cto.com/posts/64882",
+      "hot": "作者：​​蓝屏警告​​代码写完，只算干了一半。我见过太多人（包括我自己）把ArkTS页面调得漂漂亮亮，结果在AppGalleryConnect里卡三天：..."
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 6 阅读页冷启动：书目仍要等，先让窗口显示什么",
-      "url": "https://ost.51cto.com/posts/64668",
-      "hot": "配套工程​​源码、测试材料与运行说明​​前言两次启动我都让书目等约三秒。第一种路径出现空白页，等到资源读完才挂载标题和列表；第二种..."
+      "title": "HarmonyOS 分享面板接入实战：从 SharedData 到附近设备选择",
+      "url": "https://ost.51cto.com/posts/64881",
+      "hot": "作者：​​是稻香啊​​接到一个需求：应用里的文本、图片要能&quot;分享出去&quot;&mdash;&mdash;发到附近另一台鸿蒙手机、发到微信、存备忘录都算。第一反应是..."
     },
     {
       "rank": 3,
-      "title": "如今程序员面试，为什么都问 Agent？（代码，架构图，提示词，PPT都分享）",
-      "url": "https://www.51cto.com/article/861701.html",
-      "hot": "Agent 架构设计，重点就是考虑：记忆怎么设计、token怎么节省及上下文放哪些东西。"
+      "title": "Agent Harness：模型同质化时代，Agent 系统真正的 “胜负手”",
+      "url": "https://www.51cto.com/article/861857.html",
+      "hot": "本文尝试对 Harness 工程做一次系统性的梳理：它是什么、由什么构成、如何演进，以及它为什么会成为 AI 工程的核心议题。"
     },
     {
       "rank": 4,
-      "title": "别盲目拆分多 Agent！Anthropic：很多团队的子 Agent 不是太少，是太多",
-      "url": "https://www.51cto.com/article/861695.html",
-      "hot": "Agent 架构正在从堆模块，进入删复杂度的阶段。删掉的不是能力，而是重复规划、有损交接，以及没有必要的上下文隔离。"
+      "title": "模型决定上限，Harness 决定下限：AI 落地与开发者转型精选合集",
+      "url": "https://www.51cto.com/article/861848.html",
+      "hot": "热点解读帮你看清风向，落地案例供你对照自己的系统抄作业，转型路径回答职业发展方向怎么走。"
     },
     {
       "rank": 5,
-      "title": "从微软六万人转身到百度 “智能组织”：你的团队，处在 AI 成熟度哪一级？",
-      "url": "https://www.51cto.com/article/861692.html",
-      "hot": "AI 竞争的瓶颈，正从 “买不买工具” 转向 “组织怎么适配 AI”。"
+      "title": "揭秘Anthropic的「暴利」真相：缓存税！",
+      "url": "https://www.51cto.com/article/861833.html",
+      "hot": "所有软件工程师都必须搞懂一件事：推理工程的第一课就是——读 KV 缓存便宜到近乎免费，推测解码又让长会话效率暴涨。而编程场景偏偏把这两项技术用到了极致。"
     },
     {
       "rank": 6,
-      "title": "刚刚，DeepSeek张博创业曝光：开源个人Agent！",
-      "url": "https://www.51cto.com/article/861690.html",
-      "hot": "刚刚，前DeepSeek V1作者、DeepSeek-VL项目负责人Tony Zhang（张博），正式公布了自己的新创业项目：Linger。"
+      "title": "智能体复杂记忆甚至跑不过原始RAG？UIUC等首提「记忆税」",
+      "url": "https://www.51cto.com/article/861831.html",
+      "hot": "来自UIUC、清华大学等机构的研究团队做了一次大规模的测试，提出「记忆税（Memory Tax）」这一概念。"
     },
     {
       "rank": 7,
-      "title": "Fable 5.2开卷80%，闭卷仅47%！最强编程智能体遇上机器人难题",
-      "url": "https://www.51cto.com/article/861689.html",
-      "hot": "西北大学、卡内基梅隆大学等8所高校的研究者提出了Embodied First Exam（EFE，具身第一考）：一个把各种编程智能体接入仿真机器人的统一评测框架。"
+      "title": "黎曼200周年大会首日猜想告破！丘成桐：数学进入新纪元",
+      "url": "https://www.51cto.com/article/861828.html",
+      "hot": "就在深圳研讨会开幕的第一天，Anthropic数学家Levent Alpöge宣布与Claude合作解开了这道难题，并放出1737万行Lean形式化证明代码。"
     },
     {
       "rank": 8,
-      "title": "删软链接带个斜杠，源目录直接没了，这个坑千万别踩",
-      "url": "https://www.51cto.com/article/861688.html",
-      "hot": "本文从 inode 底层原理讲起，梳理 ln 命令的用法、两类链接的核心差异与操作规范，帮你避开常见失误。"
+      "title": "刚刚，OpenAI首次公开预训练核心指标",
+      "url": "https://www.51cto.com/article/861825.html",
+      "hot": "当地时间 11 月 22 日，OpenAI 首席科学家 Jakub Pachocki 突然发布长文《Perplexity and Intelligence》，首次公开了一组内部预训练指标。"
     },
     {
       "rank": 9,
-      "title": "奥特曼给「AI造AI」踩刹车！方向盘必须握在人类手中",
-      "url": "https://www.51cto.com/article/861687.html",
-      "hot": "11月16日，在Semafor的活动现场，谈及「递归自我改进」（RSI），奥特曼当场划下一道红线：我们本可以进一步向递归自我改进推进，但我不认为现在能安全地这么做。"
+      "title": "NeurIPS 2026｜不重构预训练VLA结构，ActionUNet用轻量多尺度微调提升机器人鲁棒性",
+      "url": "https://www.51cto.com/article/861822.html",
+      "hot": "中国科学院大学 LAMP 实验室提出 ActionUNet，一种面向预训练 VLA 的高效多尺度微调框架。"
     },
     {
       "rank": 10,
-      "title": "Claude开AI工厂：七周造38个模型，狂揽5.5万下载！",
-      "url": "https://www.51cto.com/article/861686.html",
-      "hot": "七周，Claude交出38个模型，狂揽约5.5万次下载，杀进100多个GitHub项目。"
+      "title": "Anthropic开出2.7亿天价疯抢CS本科生！OpenAI迎史上最惨一周",
+      "url": "https://www.51cto.com/article/861806.html",
+      "hot": "在硅谷热门播客All-In最新一期节目里，投资人Jason Calacanis爆出了这桩由Anthropic开出的抢人猛料。"
     }
   ]
 }

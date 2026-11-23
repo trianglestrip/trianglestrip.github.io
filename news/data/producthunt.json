@@ -1,20 +1,20 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-11-22T19:31:02+00:00",
+  "updated_at": "2026-11-23T07:56:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Daymaker",
-      "url": "https://www.producthunt.com/products/daymaker",
-      "hot": "2026-10-19T11:41:04-07:00"
+      "title": "MeshLive",
+      "url": "https://www.producthunt.com/products/meshlive",
+      "hot": "2026-11-17T05:49:46-08:00"
     },
     {
       "rank": 2,
-      "title": "Creavit Studio 4.0",
-      "url": "https://www.producthunt.com/products/creavit-studio",
-      "hot": "2026-11-20T13:11:32-08:00"
+      "title": "TeaserKit",
+      "url": "https://www.producthunt.com/products/teaserkit",
+      "hot": "2026-11-19T07:08:42-08:00"
     },
     {
       "rank": 3,
@@ -24,45 +24,45 @@
     },
     {
       "rank": 4,
-      "title": "MeshLive",
-      "url": "https://www.producthunt.com/products/meshlive",
-      "hot": "2026-11-17T05:49:46-08:00"
-    },
-    {
-      "rank": 5,
-      "title": "DeNotch",
-      "url": "https://www.producthunt.com/products/denotch",
-      "hot": "2026-11-18T23:57:34-08:00"
-    },
-    {
-      "rank": 6,
-      "title": "TeaserKit",
-      "url": "https://www.producthunt.com/products/teaserkit",
-      "hot": "2026-11-19T07:08:42-08:00"
-    },
-    {
-      "rank": 7,
       "title": "Slotify",
       "url": "https://www.producthunt.com/products/slotify-2",
       "hot": "2026-11-09T05:55:35-08:00"
     },
     {
+      "rank": 5,
+      "title": "oovi",
+      "url": "https://www.producthunt.com/products/oovi",
+      "hot": "2026-11-21T12:02:03-08:00"
+    },
+    {
+      "rank": 6,
+      "title": "Squint",
+      "url": "https://www.producthunt.com/products/squint",
+      "hot": "2026-11-10T13:43:34-08:00"
+    },
+    {
+      "rank": 7,
+      "title": "Mockreel",
+      "url": "https://www.producthunt.com/products/mockreel",
+      "hot": "2026-11-19T18:04:14-08:00"
+    },
+    {
       "rank": 8,
-      "title": "Leapdeck",
-      "url": "https://www.producthunt.com/products/leapdeck",
-      "hot": "2026-11-16T05:09:26-08:00"
+      "title": "Creavit Studio 4.0",
+      "url": "https://www.producthunt.com/products/creavit-studio",
+      "hot": "2026-11-20T13:11:32-08:00"
     },
     {
       "rank": 9,
-      "title": "Copy Haste",
-      "url": "https://www.producthunt.com/products/copy-haste",
-      "hot": "2026-11-15T09:16:10-08:00"
-    },
-    {
-      "rank": 10,
       "title": "Omi CLI",
       "url": "https://www.producthunt.com/products/omi-cli",
       "hot": "2026-11-21T00:05:31-08:00"
+    },
+    {
+      "rank": 10,
+      "title": "Daymaker",
+      "url": "https://www.producthunt.com/products/daymaker",
+      "hot": "2026-10-19T11:41:04-07:00"
     }
   ]
 }
