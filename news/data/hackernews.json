@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-24T04:27:44+00:00",
+  "updated_at": "2026-11-24T15:04:30+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Nvidia Reinstates Jensen Huang as CEO",
-      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-      "hot": "2296"
+      "title": "LLM agents work for their parent companies, not for you",
+      "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+      "hot": "362"
     },
     {
       "rank": 2,
-      "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
-      "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
-      "hot": "296"
-    },
-    {
-      "rank": 3,
-      "title": "New York Bans Subscription and Post-Purchase Fees on Cars",
-      "url": "https://wgna.com/car-bill-extra-fees/",
-      "hot": "43"
-    },
-    {
-      "rank": 4,
-      "title": "Ladybird is now in alpha",
-      "url": "https://ladybird.org/posts/alpha/",
-      "hot": "1577"
-    },
-    {
-      "rank": 5,
-      "title": "The search for a top dark matter candidate",
-      "url": "https://www.smithsonianmag.com/science-nature/the-search-for-a-top-dark-matter-candidate-was-losing-hope-then-came-a-potential-signal-will-it-be-enough-to-energize-the-struggling-field-180989923/",
-      "hot": "30"
-    },
-    {
-      "rank": 6,
-      "title": "Drone Maps of Salvage Yards",
-      "url": "https://salvageyarddrone.wordpress.com/",
-      "hot": "5"
-    },
-    {
-      "rank": 7,
-      "title": "GPUI is getting its own repository",
-      "url": "https://github.com/zed-industries/gpui",
+      "title": "Who in Washington owns and trades Nvidia stock",
+      "url": "https://www.kadoa.com/congress/insights/trump-nvidia",
       "hot": "183"
     },
     {
+      "rank": 3,
+      "title": "2035 Came Early",
+      "url": "https://fzakaria.com/2026/11/23/2035-came-early",
+      "hot": "514"
+    },
+    {
+      "rank": 4,
+      "title": "Worshipping at the Altar of Brendan Gregg",
+      "url": "https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg",
+      "hot": "109"
+    },
+    {
+      "rank": 5,
+      "title": "The new set of problems for engineers to solve",
+      "url": "https://www.katelynlesse.com/blog/new-problems-for-engineers-to-solve",
+      "hot": "39"
+    },
+    {
+      "rank": 6,
+      "title": "Ladybird is now in alpha",
+      "url": "https://ladybird.org/posts/alpha/",
+      "hot": "2209"
+    },
+    {
+      "rank": 7,
+      "title": "Quad9 pulled their DNS service from France",
+      "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/",
+      "hot": "95"
+    },
+    {
       "rank": 8,
-      "title": "Bored.com: Fun, interesting and cool websites to explore when bored",
-      "url": "https://www.bored.com/",
-      "hot": "160"
+      "title": "How a Mechanical Watch Keeps Time (Interactive 3D)",
+      "url": "https://martincmartin.github.io/slidev-stem/watches/article/1/",
+      "hot": "63"
     },
     {
       "rank": 9,
-      "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
-      "url": "https://arm.jonpalmisc.com/",
-      "hot": "933"
+      "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
+      "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
+      "hot": "574"
     },
     {
       "rank": 10,
-      "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
-      "url": "https://twitter.com/ylecun/status/2124550037912920090",
-      "hot": "1357"
+      "title": "An anti-slavery sugar bowl (2024)",
+      "url": "https://www.vam.ac.uk/blog/museum-life/an-anti-slavery-sugar-bowl",
+      "hot": "56"
     }
   ]
 }

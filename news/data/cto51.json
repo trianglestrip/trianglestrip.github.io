@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-24T04:27:43+00:00",
+  "updated_at": "2026-11-24T15:04:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "美国「创世纪」一周年，「人类拓界计划」全球引燃！",
+      "url": "https://www.51cto.com/article/862002.html",
+      "hot": "美国启动Genesis Mission（创世纪任务），将能源部旗下17家国家实验室的超级计算机、科学数据与实验设施，汇聚到AI驱动科学发现的使命之下。"
+    },
+    {
+      "rank": 2,
+      "title": "谷歌Gemini 4破解量子计算「天书」！核聚变进度条拉满了",
+      "url": "https://www.51cto.com/article/862001.html",
+      "hot": "DeepMind官宣：由多个Gemini 4智能体组成的AI团队，将量子模拟成本最高降低了10倍，部分基准测试甚至高达11.8倍！"
+    },
+    {
+      "rank": 3,
+      "title": "Claude证出「代数版P≠NP」！73000行Lean代码通过验证",
+      "url": "https://www.51cto.com/article/862000.html",
+      "hot": "刚刚，Anthropic官方GitHub仓库悄无声息地放出了一篇长达70页论文，正式宣布——Claude证明了VP≠VNP，在任意域上成立。"
+    },
+    {
+      "rank": 4,
+      "title": "EMNLP'26 Oral | 答对全靠背，Agent只是假装搜索！仅24%准确率",
+      "url": "https://www.51cto.com/article/861999.html",
+      "hot": "得州大学阿灵顿分校、华东师范大学、佐治亚理工学院在EMNLP 2026主会Oral提出的RDQA（Raw Data Question Answering，原始数据问答）不预置检索索引，也不把源文件预先交给模型。审核时，如果答案已经以纯文本出现在公开网页上，这道题会改写或删掉。"
+    },
+    {
+      "rank": 5,
+      "title": "HarmonyOS 6 列表滚动：同一落点，从筛选 50 次到 1 次",
+      "url": "https://ost.51cto.com/posts/64955",
+      "hot": "配套工程​​源码、测试材料与运行说明​​前言同一条巡检清单停在第40条，两组汇总都是421条待复核。前一组筛选了50次，后一组只筛1次。先..."
+    },
+    {
+      "rank": 6,
+      "title": "HarmonyOS 7 远程分享实战 - 第一次被端到端地组装",
+      "url": "https://ost.51cto.com/posts/64939",
+      "hot": "一、环境准备：两台真机上线前的四步核对1.1用户侧：三项前提核对单三个前提（版本、账号+开关、网络），实战视角下要补的是怎么核对和最常..."
+    },
+    {
+      "rank": 7,
       "title": "一张 jpg 图片，如何在服务器上实现RCE【PoC已公布】",
       "url": "https://www.51cto.com/article/861971.html",
       "hot": "这个漏洞的技术细节很漂亮：借来的权限、被劫持的错误处理、跨 restore 的悬空引用、顺着解释器自己的指针走而不猜地址。但它给出的教训比技巧更朴素。"
     },
     {
-      "rank": 2,
-      "title": "HarmonyOS 7流式文本实战：复用已排版的段落",
-      "url": "https://ost.51cto.com/posts/64924",
-      "hot": "大家好，今天用一份逐段输出的会议纪要，讲一下HarmonyOS7里Text的段落缓存。做大模型回答页时，一段回答可能要等好几秒才出完。应用通常会..."
-    },
-    {
-      "rank": 3,
+      "rank": 8,
       "title": "AI 编码总跑偏？问题可能出在 task.md",
       "url": "https://www.51cto.com/article/861965.html",
       "hot": "这篇文章将以一个生图工作流为例：通过 AI 实现从定位受众、确认选题、设计标题、构建生图脚本，直到实现自媒体视频 AI 工作流的开发案例。"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "格局打开了！豆包工作接入三大模型，我终于不用来回换工具了",
       "url": "https://www.51cto.com/article/861960.html",
       "hot": "豆包工作正式支持第三方模型了，你可以根据不同的任务类型选择相应的模型。"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "Claude Code 九成代码自写自审：Anthropic 靠这套验证流水线守住了 AI 编程质量",
       "url": "https://www.51cto.com/article/861958.html",
       "hot": "Anthropic 到底搭了一套什么样的验证与审查机制，让 AI 批量产出代码时质量没有崩；哪些环节仍然必须由人来兜底。"
-    },
-    {
-      "rank": 6,
-      "title": "刚刚，Anthropic内部Claude模型独立攻克代数版P/NP问题，全篇Lean机器验证通过",
-      "url": "https://www.51cto.com/article/861955.html",
-      "hot": "这篇论文的核心结论只有一个：在任意域上，VP都不等于VNP。这个结论正式回答了理论计算机科学界悬置数十年的Valiant猜想。"
-    },
-    {
-      "rank": 7,
-      "title": "离散code能成为通用视觉表示吗？美团LongCat开源dNaViT",
-      "url": "https://www.51cto.com/article/861953.html",
-      "hot": "美团 LongCat 团队最新发布的技术报告 dNaViT，正面回答了这一问题。团队提出 Discrete Native-resolution Vision Transformer。"
-    },
-    {
-      "rank": 8,
-      "title": "全球首次！DeepSeek与FlashAttention的多个生产级AI算子获得形式化验证",
-      "url": "https://www.51cto.com/article/861951.html",
-      "hot": "当算法产生「信任危机」，而传统测试手段难以穷尽所有可能的错误时，研究者们的目光自然地就会投向一个在数学和计算机科学领域发展多年的方向 —— 形式化验证（Formal Verification）。"
-    },
-    {
-      "rank": 9,
-      "title": "丝滑又高级，这个爆火 React 组件库，600 多个组件随便用",
-      "url": "https://www.51cto.com/article/861957.html",
-      "hot": "Watermelon UI 的定位比较清晰：它希望成为 React 开发者的 UI 资源库，让开发者不必每次都从一个空白页面开始。"
-    },
-    {
-      "rank": 10,
-      "title": "谷歌开源的AI Harness自进化框架，在GitHub短短一个月狂揽25K+Star，太强了！！",
-      "url": "https://www.51cto.com/article/861956.html",
-      "hot": "Harness最值得看的，不是它报出来的分数，而是它处理问题的方式：把 harness 当成一个可以被迭代优化的对象，然后用“对比不同壳改动下的行为差异”来替代“等一个标准答案”。"
     }
   ]
 }

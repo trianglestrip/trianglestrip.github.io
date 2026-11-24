@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-24T04:27:49+00:00",
+  "updated_at": "2026-11-24T15:04:34+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "OceanBase发布AI数据平OceanLake！CEO杨冰：我们赌多模态，就像当年赌分布式一样",
+      "url": "https://www.infoq.cn/article/qEXNRNufkiFkiUEU9aae?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 20:21:09 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "当 AI 改变一切，下一步如何构建？",
+      "url": "https://www.infoq.cn/article/iRm9lBSQj0OCvDdgLQrO?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 14:12:36 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "技术债务具有社会性：它是边做边学的代价",
+      "url": "https://www.infoq.cn/article/rdfEoVWlwvbrW0MCsFKs?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 14:00:00 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "谷歌发现，技术债务会通过“智能体分心”导致编码智能体偏离正轨",
+      "url": "https://www.infoq.cn/article/sFmubmDWkulIOTBLX0Dr?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 13:00:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "营销、销售与 RevOps 的单一可信源：每个答案背后的数据与上下文",
+      "url": "https://www.infoq.cn/video/cr6DkWNiQ4fKcs9yq0FP?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 12:43:28 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "数据分析的下一站：智能体分析",
+      "url": "https://www.infoq.cn/video/Q0rXqh3OmSAhcePiDjh2?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 12:40:02 GMT"
+    },
+    {
+      "rank": 7,
+      "title": "超越试点：销售管理者的 AI 转型行动指南",
+      "url": "https://www.infoq.cn/video/UU3P37LW5IE6Xg4O0cSN?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 12:36:05 GMT"
+    },
+    {
+      "rank": 8,
       "title": "把 Rust 表达式直接翻译成 JavaScript，Topcoat 走了一条反 WASM 路线",
       "url": "https://www.infoq.cn/article/obHr7mdXqLU1GLskZYN2?utm_source=rss&utm_medium=article",
       "hot": "Tue, 24 Nov 2026 12:00:00 GMT"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "Pinterest 让大模型取代多阶段聚类，但最大的提速来自“少推理”",
       "url": "https://www.infoq.cn/article/vaEUVvWD9AIaFXZhzSMH?utm_source=rss&utm_medium=article",
       "hot": "Tue, 24 Nov 2026 11:00:00 GMT"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "title": "基于紫光展锐UIS7885的首个5G开源派诞生！",
       "url": "https://www.infoq.cn/article/eX1YFM98P3MvrYqBbo0x?utm_source=rss&utm_medium=article",
       "hot": "Tue, 24 Nov 2026 10:46:46 GMT"
-    },
-    {
-      "rank": 4,
-      "title": "从“抗议性分叉”到可信替代，OpenBao 开始挑战 Vault 企业版",
-      "url": "https://www.infoq.cn/article/6JtyOTOrD8TmBT3abP8V?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 24 Nov 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "从批量生成到业务可用：电商 AI 剪辑的工程取舍与实践复盘｜AICon北京",
-      "url": "https://www.infoq.cn/article/YMYl4DVNr1pRKD8ITfaW?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 24 Nov 2026 10:00:00 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "黄仁勋杀回英伟达，董事会全票同意！老黄：迫不及待投入工作",
-      "url": "https://www.infoq.cn/article/4t3EvHtmI11QEgmV23Iz?utm_source=rss&utm_medium=article",
-      "hot": "Tue, 24 Nov 2026 08:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "企业 AI 发展新趋势：推动 AI Agent 迈向规模化应用的新阶段",
-      "url": "https://www.infoq.cn/video/its3v5OfmRuikL5SeWUu?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 19:52:07 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "AI 时代的数据工程：如何打造 AI 原生团队",
-      "url": "https://www.infoq.cn/video/qWRo8T0IdKoI7RBuQwNd?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 19:40:31 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "重塑财务职能：引领 AI 时代的转型",
-      "url": "https://www.infoq.cn/video/zDX7VX1ZLsWM2BNMJLc1?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 19:33:50 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "当你的下一位客户是 AI Agent：企业营销与销售的 AI 发展前景",
-      "url": "https://www.infoq.cn/video/cw3OFxCPlVBE625COukc?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 19:16:30 GMT"
     }
   ]
 }
