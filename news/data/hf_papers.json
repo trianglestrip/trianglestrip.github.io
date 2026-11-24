@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-24T15:04:58+00:00",
+  "updated_at": "2026-11-24T23:51:20+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
       "url": "https://huggingface.co/papers/2604.05018",
-      "hot": "16"
+      "hot": "17"
     },
     {
       "rank": 2,
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
-      "url": "https://huggingface.co/papers/2611.18397",
-      "hot": "161"
-    },
-    {
-      "rank": 5,
       "title": "Harness^2: Recursive Agent Harnessing for an Open World",
       "url": "https://huggingface.co/papers/2610.14224",
       "hot": "71"
+    },
+    {
+      "rank": 5,
+      "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+      "url": "https://huggingface.co/papers/2611.18397",
+      "hot": "161"
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
+      "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+      "url": "https://huggingface.co/papers/2611.31201",
+      "hot": "90"
+    },
+    {
+      "rank": 8,
       "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
       "url": "https://huggingface.co/papers/2610.22732",
       "hot": "21"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "77"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "86"
-    },
-    {
-      "rank": 10,
-      "title": "π^4: A Foundation Model for 4D Scene Geometry and Motion",
-      "url": "https://huggingface.co/papers/2611.23144",
-      "hot": "21"
     }
   ]
 }

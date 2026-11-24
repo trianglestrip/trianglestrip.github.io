@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-24T15:04:01+00:00",
+  "updated_at": "2026-11-24T23:50:43+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -38,7 +38,7 @@
       "rank": 6,
       "title": "我的有罪之人",
       "url": "https://movie.douban.com/subject/37806882/",
-      "hot": "评分 9.0"
+      "hot": "评分 8.9"
     },
     {
       "rank": 7,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "生化危机：爆发夜",
-      "url": "https://movie.douban.com/subject/37068446/",
-      "hot": "评分 7.3"
+      "title": "谷雨",
+      "url": "https://movie.douban.com/subject/37109676/",
+      "hot": "评分 6.3"
     }
   ]
 }

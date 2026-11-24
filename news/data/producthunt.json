@@ -1,68 +1,68 @@
 {
   "source": "producthunt",
   "title": "Product Hunt",
-  "updated_at": "2026-11-24T15:03:47+00:00",
+  "updated_at": "2026-11-24T23:50:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "tday.com",
+      "url": "https://www.producthunt.com/products/tday",
+      "hot": "2026-11-23T13:22:27-08:00"
+    },
+    {
+      "rank": 2,
       "title": "Kodak SlideTag",
       "url": "https://www.producthunt.com/products/kodak-slidetag",
       "hot": "2026-11-23T19:40:58-08:00"
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "title": "Juncts",
+      "url": "https://www.producthunt.com/products/juncts",
+      "hot": "2026-11-23T19:08:21-08:00"
+    },
+    {
+      "rank": 4,
       "title": "Rotara",
       "url": "https://www.producthunt.com/products/rotara",
       "hot": "2026-11-22T08:59:41-08:00"
     },
     {
-      "rank": 3,
-      "title": "Context",
-      "url": "https://www.producthunt.com/products/context-13",
-      "hot": "2026-11-10T15:16:49-08:00"
+      "rank": 5,
+      "title": "Umami Manager",
+      "url": "https://www.producthunt.com/products/umami-manager",
+      "hot": "2026-11-23T08:55:11-08:00"
     },
     {
-      "rank": 4,
+      "rank": 6,
+      "title": "Granular.Build",
+      "url": "https://www.producthunt.com/products/granular-build",
+      "hot": "2026-11-18T10:51:22-08:00"
+    },
+    {
+      "rank": 7,
       "title": "Finseo",
       "url": "https://www.producthunt.com/products/finseo-ai",
       "hot": "2026-11-23T08:47:25-08:00"
     },
     {
-      "rank": 5,
-      "title": "Finer Screenshot",
-      "url": "https://www.producthunt.com/products/finer-screenshot",
-      "hot": "2026-11-23T20:45:20-08:00"
-    },
-    {
-      "rank": 6,
-      "title": "Ohhai",
-      "url": "https://www.producthunt.com/products/ohhai",
-      "hot": "2026-11-18T10:05:36-08:00"
-    },
-    {
-      "rank": 7,
-      "title": "Wellbreak",
-      "url": "https://www.producthunt.com/products/wellbreak",
-      "hot": "2026-11-23T11:09:40-08:00"
-    },
-    {
       "rank": 8,
-      "title": "Astor",
-      "url": "https://www.producthunt.com/products/astor",
-      "hot": "2026-11-18T18:44:24-08:00"
+      "title": "Claude Ship",
+      "url": "https://www.producthunt.com/products/claude-code",
+      "hot": "2026-11-23T13:00:36-08:00"
     },
     {
       "rank": 9,
-      "title": "Astrolabio",
-      "url": "https://www.producthunt.com/products/astrolabio",
-      "hot": "2026-11-23T05:39:26-08:00"
+      "title": "Prates",
+      "url": "https://www.producthunt.com/products/prates",
+      "hot": "2026-11-21T06:13:49-08:00"
     },
     {
       "rank": 10,
-      "title": "Even G2 Enterprise SDK",
-      "url": "https://www.producthunt.com/products/even-g2",
-      "hot": "2026-11-23T10:57:21-08:00"
+      "title": "Finer Screenshot",
+      "url": "https://www.producthunt.com/products/finer-screenshot",
+      "hot": "2026-11-23T20:45:20-08:00"
     }
   ]
 }
