@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-23T19:41:55+00:00",
+  "updated_at": "2026-11-24T04:28:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-      "hot": "5407"
+      "hot": "5529"
     },
     {
       "rank": 2,
       "title": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-      "hot": "1063"
+      "hot": "1136"
     },
     {
       "rank": 3,
       "title": "inworld/voice-isolator",
       "url": "https://huggingface.co/inworld/voice-isolator",
-      "hot": "714"
+      "hot": "749"
     },
     {
       "rank": 4,
       "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "hot": "617"
+      "hot": "667"
     },
     {
       "rank": 5,
       "title": "harness-hub/Qwen3.8-27B-pi-adapted",
       "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-      "hot": "1025"
+      "hot": "1044"
     },
     {
       "rank": 6,
       "title": "higurashi-ai/Haru-4B",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
-      "hot": "922"
+      "hot": "943"
     },
     {
       "rank": 7,
       "title": "tencent/Hy4-flash",
       "url": "https://huggingface.co/tencent/Hy4-flash",
-      "hot": "642"
+      "hot": "656"
     },
     {
       "rank": 8,
       "title": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-      "hot": "836"
+      "hot": "861"
     },
     {
       "rank": 9,
       "title": "sensenova/SenseNova-Loop-9B",
       "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
-      "hot": "624"
+      "hot": "648"
     },
     {
       "rank": 10,
-      "title": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "hot": "21656"
+      "title": "apple/FastFrames-L",
+      "url": "https://huggingface.co/apple/FastFrames-L",
+      "hot": "573"
     }
   ]
 }

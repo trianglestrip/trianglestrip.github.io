@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-23T19:41:42+00:00",
+  "updated_at": "2026-11-24T04:27:43+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "【鸿蒙实战】第 32 篇：触点即指令——碰一碰精准分享的 5 个可立项构想（HarmonyOS 7.x）",
-      "url": "https://ost.51cto.com/posts/64883",
-      "hot": "摘要:HarmonyOS7（API26）的碰一碰&middot;精准分享把&quot;传给谁&quot;升级为&quot;传到哪&quot;&mdash;&mdash;系统识别手机触碰屏幕的坐标，应用据此决定内容落在哪个窗口、哪..."
+      "title": "一张 jpg 图片，如何在服务器上实现RCE【PoC已公布】",
+      "url": "https://www.51cto.com/article/861971.html",
+      "hot": "这个漏洞的技术细节很漂亮：借来的权限、被劫持的错误处理、跨 restore 的悬空引用、顺着解释器自己的指针走而不猜地址。但它给出的教训比技巧更朴素。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 应用上架审核规范：从证书签名到一次过审",
-      "url": "https://ost.51cto.com/posts/64882",
-      "hot": "作者：​​蓝屏警告​​代码写完，只算干了一半。我见过太多人（包括我自己）把ArkTS页面调得漂漂亮亮，结果在AppGalleryConnect里卡三天：..."
+      "title": "HarmonyOS 7流式文本实战：复用已排版的段落",
+      "url": "https://ost.51cto.com/posts/64924",
+      "hot": "大家好，今天用一份逐段输出的会议纪要，讲一下HarmonyOS7里Text的段落缓存。做大模型回答页时，一段回答可能要等好几秒才出完。应用通常会..."
     },
     {
       "rank": 3,
-      "title": "Agent Harness：模型同质化时代，Agent 系统真正的 “胜负手”",
-      "url": "https://www.51cto.com/article/861857.html",
-      "hot": "本文尝试对 Harness 工程做一次系统性的梳理：它是什么、由什么构成、如何演进，以及它为什么会成为 AI 工程的核心议题。"
+      "title": "AI 编码总跑偏？问题可能出在 task.md",
+      "url": "https://www.51cto.com/article/861965.html",
+      "hot": "这篇文章将以一个生图工作流为例：通过 AI 实现从定位受众、确认选题、设计标题、构建生图脚本，直到实现自媒体视频 AI 工作流的开发案例。"
     },
     {
       "rank": 4,
-      "title": "模型决定上限，Harness 决定下限：AI 落地与开发者转型精选合集",
-      "url": "https://www.51cto.com/article/861848.html",
-      "hot": "热点解读帮你看清风向，落地案例供你对照自己的系统抄作业，转型路径回答职业发展方向怎么走。"
+      "title": "格局打开了！豆包工作接入三大模型，我终于不用来回换工具了",
+      "url": "https://www.51cto.com/article/861960.html",
+      "hot": "豆包工作正式支持第三方模型了，你可以根据不同的任务类型选择相应的模型。"
     },
     {
       "rank": 5,
-      "title": "揭秘Anthropic的「暴利」真相：缓存税！",
-      "url": "https://www.51cto.com/article/861833.html",
-      "hot": "所有软件工程师都必须搞懂一件事：推理工程的第一课就是——读 KV 缓存便宜到近乎免费，推测解码又让长会话效率暴涨。而编程场景偏偏把这两项技术用到了极致。"
+      "title": "Claude Code 九成代码自写自审：Anthropic 靠这套验证流水线守住了 AI 编程质量",
+      "url": "https://www.51cto.com/article/861958.html",
+      "hot": "Anthropic 到底搭了一套什么样的验证与审查机制，让 AI 批量产出代码时质量没有崩；哪些环节仍然必须由人来兜底。"
     },
     {
       "rank": 6,
-      "title": "智能体复杂记忆甚至跑不过原始RAG？UIUC等首提「记忆税」",
-      "url": "https://www.51cto.com/article/861831.html",
-      "hot": "来自UIUC、清华大学等机构的研究团队做了一次大规模的测试，提出「记忆税（Memory Tax）」这一概念。"
+      "title": "刚刚，Anthropic内部Claude模型独立攻克代数版P/NP问题，全篇Lean机器验证通过",
+      "url": "https://www.51cto.com/article/861955.html",
+      "hot": "这篇论文的核心结论只有一个：在任意域上，VP都不等于VNP。这个结论正式回答了理论计算机科学界悬置数十年的Valiant猜想。"
     },
     {
       "rank": 7,
-      "title": "黎曼200周年大会首日猜想告破！丘成桐：数学进入新纪元",
-      "url": "https://www.51cto.com/article/861828.html",
-      "hot": "就在深圳研讨会开幕的第一天，Anthropic数学家Levent Alpöge宣布与Claude合作解开了这道难题，并放出1737万行Lean形式化证明代码。"
+      "title": "离散code能成为通用视觉表示吗？美团LongCat开源dNaViT",
+      "url": "https://www.51cto.com/article/861953.html",
+      "hot": "美团 LongCat 团队最新发布的技术报告 dNaViT，正面回答了这一问题。团队提出 Discrete Native-resolution Vision Transformer。"
     },
     {
       "rank": 8,
-      "title": "刚刚，OpenAI首次公开预训练核心指标",
-      "url": "https://www.51cto.com/article/861825.html",
-      "hot": "当地时间 11 月 22 日，OpenAI 首席科学家 Jakub Pachocki 突然发布长文《Perplexity and Intelligence》，首次公开了一组内部预训练指标。"
+      "title": "全球首次！DeepSeek与FlashAttention的多个生产级AI算子获得形式化验证",
+      "url": "https://www.51cto.com/article/861951.html",
+      "hot": "当算法产生「信任危机」，而传统测试手段难以穷尽所有可能的错误时，研究者们的目光自然地就会投向一个在数学和计算机科学领域发展多年的方向 —— 形式化验证（Formal Verification）。"
     },
     {
       "rank": 9,
-      "title": "NeurIPS 2026｜不重构预训练VLA结构，ActionUNet用轻量多尺度微调提升机器人鲁棒性",
-      "url": "https://www.51cto.com/article/861822.html",
-      "hot": "中国科学院大学 LAMP 实验室提出 ActionUNet，一种面向预训练 VLA 的高效多尺度微调框架。"
+      "title": "丝滑又高级，这个爆火 React 组件库，600 多个组件随便用",
+      "url": "https://www.51cto.com/article/861957.html",
+      "hot": "Watermelon UI 的定位比较清晰：它希望成为 React 开发者的 UI 资源库，让开发者不必每次都从一个空白页面开始。"
     },
     {
       "rank": 10,
-      "title": "Anthropic开出2.7亿天价疯抢CS本科生！OpenAI迎史上最惨一周",
-      "url": "https://www.51cto.com/article/861806.html",
-      "hot": "在硅谷热门播客All-In最新一期节目里，投资人Jason Calacanis爆出了这桩由Anthropic开出的抢人猛料。"
+      "title": "谷歌开源的AI Harness自进化框架，在GitHub短短一个月狂揽25K+Star，太强了！！",
+      "url": "https://www.51cto.com/article/861956.html",
+      "hot": "Harness最值得看的，不是它报出来的分数，而是它处理问题的方式：把 harness 当成一个可以被迭代优化的对象，然后用“对比不同壳改动下的行为差异”来替代“等一个标准答案”。"
     }
   ]
 }

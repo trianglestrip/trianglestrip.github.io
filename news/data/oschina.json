@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-23T19:41:46+00:00",
+  "updated_at": "2026-11-24T04:27:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Ladybird 发布 alpha 版本，从零开发的开源浏览器引擎",
+      "url": "https://www.oschina.net/news/503767/ladybird-alpha",
+      "hot": "Tue, 24 Nov 2026 11:27:59 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "黄仁勋重回英伟达",
+      "url": "https://www.oschina.net/news/503766/nvidia-board-reinstates-jensen-huang-as-president-ceo",
+      "hot": "Tue, 24 Nov 2026 10:49:53 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "盖楼有礼 | 寻找 “一亿零一个” 鸿蒙之⭐",
+      "url": "https://my.oschina.net/u/4806939/blog/19789402",
+      "hot": "Tue, 24 Nov 2026 10:42:47 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "aTerm v2.5.7：开源 Termius 替代方案，支持 SSH、SFTP 和端口转发",
+      "url": "https://www.oschina.net/news/503764",
+      "hot": "Tue, 24 Nov 2026 10:17:14 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "wlnmp更新日志261124",
+      "url": "https://www.oschina.net/news/503763",
+      "hot": "Tue, 24 Nov 2026 10:06:09 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "qModel 算法模型平台开源版 v1.4.4 发布：参数默认值、入参修复与计算结果可视化扩展",
+      "url": "https://www.oschina.net/news/503761",
+      "hot": "Tue, 24 Nov 2026 09:32:12 +0800"
+    },
+    {
+      "rank": 7,
+      "title": "开源 Windows 任务管理器 Argus v0.6.0 发布，新增桌面与任务栏监控、多轨道历史与 NPU 支持",
+      "url": "https://www.oschina.net/news/503759",
+      "hot": "Tue, 24 Nov 2026 05:04:26 +0800"
+    },
+    {
+      "rank": 8,
+      "title": "phimint v0.13.0 发布：Windows 自更新、卸载、路径显示逐条修好；MIT OR Apache-2.0 双协议",
+      "url": "https://www.oschina.net/news/503758",
+      "hot": "Mon, 23 Nov 2026 21:53:30 +0800"
+    },
+    {
+      "rank": 9,
       "title": "特斯拉新版 FSD 的炫酷画面，由车机上的 1B 模型实时生成",
       "url": "https://www.oschina.net/news/503757",
       "hot": "Mon, 23 Nov 2026 18:56:06 +0800"
     },
     {
-      "rank": 2,
+      "rank": 10,
       "title": "智谱官宣 GLM-5.4：采用 Loop Transformer 架构、开启“泛 Coding”能力",
       "url": "https://www.oschina.net/news/503756",
       "hot": "Mon, 23 Nov 2026 18:30:11 +0800"
-    },
-    {
-      "rank": 3,
-      "title": "PostgreSQL 19 正式发布",
-      "url": "https://www.oschina.net/news/503754/postgresql-19-released",
-      "hot": "Mon, 23 Nov 2026 18:15:05 +0800"
-    },
-    {
-      "rank": 4,
-      "title": "谷歌世界模型 Genie 4 更新，支持“实时”更改世界",
-      "url": "https://www.oschina.net/news/503750/google-deepmind-genie-4",
-      "hot": "Mon, 23 Nov 2026 16:59:18 +0800"
-    },
-    {
-      "rank": 5,
-      "title": ":fire: xbatis 1.10.12 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
-      "url": "https://www.oschina.net/news/503748",
-      "hot": "Mon, 23 Nov 2026 16:39:01 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "微语 5.3.0 发布 - 支持远程协助",
-      "url": "https://www.oschina.net/news/503747",
-      "hot": "Mon, 23 Nov 2026 16:27:26 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "一条命令就能让 Mac 用本地模型跑编程 Agent",
-      "url": "https://www.oschina.net/news/503746",
-      "hot": "Mon, 23 Nov 2026 15:58:34 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "Jync v2.4.5 · 注释同步与游标优先级",
-      "url": "https://www.oschina.net/news/503745",
-      "hot": "Mon, 23 Nov 2026 15:22:26 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "AI 越来越便宜，AI 越来越烧钱",
-      "url": "https://www.oschina.net/news/503743/token-spending-at-that-jevons-moment",
-      "hot": "Mon, 23 Nov 2026 15:18:43 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "mod_wsgi 创始人用 Rust 重写了一个 Python 服务器",
-      "url": "https://www.oschina.net/news/503742/rust-muru",
-      "hot": "Mon, 23 Nov 2026 14:49:04 +0800"
     }
   ]
 }

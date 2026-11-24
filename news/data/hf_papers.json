@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-23T19:41:55+00:00",
+  "updated_at": "2026-11-24T04:28:00+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -36,15 +36,15 @@
     },
     {
       "rank": 6,
-      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "168"
-    },
-    {
-      "rank": 7,
       "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
       "url": "https://huggingface.co/papers/2610.22732",
       "hot": "21"
+    },
+    {
+      "rank": 7,
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://huggingface.co/papers/2412.20138",
+      "hot": "169"
     },
     {
       "rank": 8,

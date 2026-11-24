@@ -1,68 +1,68 @@
 {
   "source": "infoq",
   "title": "InfoQ",
-  "updated_at": "2026-11-23T19:41:47+00:00",
+  "updated_at": "2026-11-24T04:27:49+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "把 Rust 表达式直接翻译成 JavaScript，Topcoat 走了一条反 WASM 路线",
+      "url": "https://www.infoq.cn/article/obHr7mdXqLU1GLskZYN2?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 12:00:00 GMT"
+    },
+    {
+      "rank": 2,
+      "title": "Pinterest 让大模型取代多阶段聚类，但最大的提速来自“少推理”",
+      "url": "https://www.infoq.cn/article/vaEUVvWD9AIaFXZhzSMH?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 11:00:00 GMT"
+    },
+    {
+      "rank": 3,
+      "title": "基于紫光展锐UIS7885的首个5G开源派诞生！",
+      "url": "https://www.infoq.cn/article/eX1YFM98P3MvrYqBbo0x?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 10:46:46 GMT"
+    },
+    {
+      "rank": 4,
+      "title": "从“抗议性分叉”到可信替代，OpenBao 开始挑战 Vault 企业版",
+      "url": "https://www.infoq.cn/article/6JtyOTOrD8TmBT3abP8V?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 5,
+      "title": "从批量生成到业务可用：电商 AI 剪辑的工程取舍与实践复盘｜AICon北京",
+      "url": "https://www.infoq.cn/article/YMYl4DVNr1pRKD8ITfaW?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 10:00:00 GMT"
+    },
+    {
+      "rank": 6,
+      "title": "黄仁勋杀回英伟达，董事会全票同意！老黄：迫不及待投入工作",
+      "url": "https://www.infoq.cn/article/4t3EvHtmI11QEgmV23Iz?utm_source=rss&utm_medium=article",
+      "hot": "Tue, 24 Nov 2026 08:00:00 GMT"
+    },
+    {
+      "rank": 7,
       "title": "企业 AI 发展新趋势：推动 AI Agent 迈向规模化应用的新阶段",
       "url": "https://www.infoq.cn/video/its3v5OfmRuikL5SeWUu?utm_source=rss&utm_medium=article",
       "hot": "Mon, 23 Nov 2026 19:52:07 GMT"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "AI 时代的数据工程：如何打造 AI 原生团队",
       "url": "https://www.infoq.cn/video/qWRo8T0IdKoI7RBuQwNd?utm_source=rss&utm_medium=article",
       "hot": "Mon, 23 Nov 2026 19:40:31 GMT"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "重塑财务职能：引领 AI 时代的转型",
       "url": "https://www.infoq.cn/video/zDX7VX1ZLsWM2BNMJLc1?utm_source=rss&utm_medium=article",
       "hot": "Mon, 23 Nov 2026 19:33:50 GMT"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "当你的下一位客户是 AI Agent：企业营销与销售的 AI 发展前景",
       "url": "https://www.infoq.cn/video/cw3OFxCPlVBE625COukc?utm_source=rss&utm_medium=article",
       "hot": "Mon, 23 Nov 2026 19:16:30 GMT"
-    },
-    {
-      "rank": 5,
-      "title": "构建主权 AI 技术栈：开放权重、前沿模型与企业控制平面",
-      "url": "https://www.infoq.cn/video/pZRYMTB7olLHTR3BuxaB?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 19:08:40 GMT"
-    },
-    {
-      "rank": 6,
-      "title": "Java 近期新闻：TornadoVM、A2A Java、Open Liberty、Open J Proxy、Gradle、EclipseStore",
-      "url": "https://www.infoq.cn/article/7912LtESaQAFaci2lFor?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 17:00:00 GMT"
-    },
-    {
-      "rank": 7,
-      "title": "Amazon ECS Gateway 正式上线，可以自动生成主机名，但不支持自定义域名",
-      "url": "https://www.infoq.cn/article/6mOVcKUGjpD1VmxZOGqt?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 16:00:00 GMT"
-    },
-    {
-      "rank": 8,
-      "title": "Agent 想用但不敢用？百度智能云企业级 Agent 安全落地实践",
-      "url": "https://www.infoq.cn/article/dzgleaOZ3ILx5cztUtXw?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 15:55:51 GMT"
-    },
-    {
-      "rank": 9,
-      "title": "Agent不再只写代码，亚马逊云科技瞄准三个新难题",
-      "url": "https://www.infoq.cn/article/4cFZ1bATcXRJaGPFoF7z?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 15:37:03 GMT"
-    },
-    {
-      "rank": 10,
-      "title": "谷歌采用Pyrefly以实现更快、更准确的Python类型检查",
-      "url": "https://www.infoq.cn/article/4mG1MEowzSqIg2cY1XZP?utm_source=rss&utm_medium=article",
-      "hot": "Mon, 23 Nov 2026 15:00:00 GMT"
     }
   ]
 }
