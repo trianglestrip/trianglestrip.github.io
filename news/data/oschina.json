@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-24T23:51:10+00:00",
+  "updated_at": "2026-11-25T05:43:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI 时代，技术大会是否还需要门槛？",
+      "url": "https://www.oschina.net/news/503797",
+      "hot": "Wed, 25 Nov 2026 11:41:50 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "SmartCall v2.0.0发布 全新LiveKit实时语音架构",
+      "url": "https://www.oschina.net/news/503794",
+      "hot": "Wed, 25 Nov 2026 11:01:05 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "百度大模型文心 5.5 Flash Preview 正式开源",
+      "url": "https://www.oschina.net/news/503792",
+      "hot": "Wed, 25 Nov 2026 10:58:52 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "【Skyeye 云 V2.6.12 重磅更新】业财一体、3D仓库、AI业务、智慧门店、流程设计器等模块全面升级，效率倍增新体验",
+      "url": "https://www.oschina.net/news/503791",
+      "hot": "Wed, 25 Nov 2026 10:57:13 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "酷瓜云课堂（网校开源版）v2.0.2 发布，跟进修补nginx和php漏洞",
+      "url": "https://www.oschina.net/news/503787",
+      "hot": "Wed, 25 Nov 2026 09:07:23 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "GO 语言社区&amp;问答系统 BBS-GO v4.4.8 发布，支持繁体中文",
+      "url": "https://www.oschina.net/news/503785",
+      "hot": "Tue, 24 Nov 2026 20:37:23 +0800"
+    },
+    {
+      "rank": 7,
       "title": ":fire: xbatis 1.10.13 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
       "url": "https://www.oschina.net/news/503783",
       "hot": "Tue, 24 Nov 2026 17:38:35 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "MateClaw 3.1.0 发布：从执行架构升级，到技能经验与长任务可靠性完善",
       "url": "https://www.oschina.net/news/503782",
       "hot": "Tue, 24 Nov 2026 17:36:52 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": "RNOISE Prompt Forge V5.2 发布：零 LLM 确定性 AI 音乐 Prompt 编译器与 MCP 2.0 协议引擎",
       "url": "https://www.oschina.net/news/503778",
       "hot": "Tue, 24 Nov 2026 16:37:40 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": ":fire::fire::fire: Claude Code 工程最佳实践 | 主数据平台 1.8.0 发布，专注于单点登录",
       "url": "https://www.oschina.net/news/503775",
       "hot": "Tue, 24 Nov 2026 15:18:04 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "Ladybird 发布 alpha 版本，从零开发的开源浏览器引擎",
-      "url": "https://www.oschina.net/news/503767/ladybird-alpha",
-      "hot": "Tue, 24 Nov 2026 11:27:59 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "黄仁勋重回英伟达",
-      "url": "https://www.oschina.net/news/503766/nvidia-board-reinstates-jensen-huang-as-president-ceo",
-      "hot": "Tue, 24 Nov 2026 10:49:53 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "盖楼有礼 | 寻找 “一亿零一个” 鸿蒙之⭐",
-      "url": "https://my.oschina.net/u/4806939/blog/19789402",
-      "hot": "Tue, 24 Nov 2026 10:42:47 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "aTerm v2.5.7：开源 Termius 替代方案，支持 SSH、SFTP 和端口转发",
-      "url": "https://www.oschina.net/news/503764",
-      "hot": "Tue, 24 Nov 2026 10:17:14 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "wlnmp更新日志261124",
-      "url": "https://www.oschina.net/news/503763",
-      "hot": "Tue, 24 Nov 2026 10:06:09 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "qModel 算法模型平台开源版 v1.4.4 发布：参数默认值、入参修复与计算结果可视化扩展",
-      "url": "https://www.oschina.net/news/503761",
-      "hot": "Tue, 24 Nov 2026 09:32:12 +0800"
     }
   ]
 }
