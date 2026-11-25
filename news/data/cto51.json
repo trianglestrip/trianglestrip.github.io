@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-25T05:43:33+00:00",
+  "updated_at": "2026-11-25T16:06:05+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "HarmonyOS 7 运动轨迹记录实战：把持续定位变成配速与折线",
-      "url": "https://ost.51cto.com/posts/65005",
-      "hot": "跑步软件是怎么知道你跑了多远的？外卖软件是怎么知道骑手到哪了？打车软件的司机小图标为什么会在地图上平滑移动？这些问题的答案都从同一..."
+      "title": "程序员别急着复制“全自动开发”！Gas Town作者：软件工厂先惊艳、后变“垃圾山”，最终还是要推倒重来",
+      "url": "https://www.51cto.com/article/862146.html",
+      "hot": "程序员决定要不要搭一座工厂时，也可以先问同样具体的问题：它在替谁做事，怎样知道做得对，出了问题由谁处理。这些还没想清楚，多接几个Agent，往往只是多出几个需要照看的工作窗口。"
     },
     {
       "rank": 2,
-      "title": "HarmonyOS 7 网络状态感知实战：能力位、事件流与下载策略决策器",
-      "url": "https://ost.51cto.com/posts/65004",
-      "hot": "几乎所有联网应用都要回答三个问题：现在有网吗、网好不好、流量要不要钱。任何一个出现了问题，体验就会翻车&mdash;&mdash;没网硬请求给用户一屏报错..."
+      "title": "【HarmonyOS 7】从翻牌到纸条位移：「不想上班」滚动数字组件工程笔记",
+      "url": "https://ost.51cto.com/posts/65034",
+      "hot": "从翻牌到纸条位移：「不想上班」滚动数字组件工程笔记「不想上班」首页最显眼的位置，永远留给一个数字：今天已经赚到的钱。它得每秒往上跳..."
     },
     {
       "rank": 3,
+      "title": "【HarmonyOS 7】从自绘悬浮球到系统闪控球：「不想上班」番茄钟改造记",
+      "url": "https://ost.51cto.com/posts/65033",
+      "hot": "从自绘悬浮球到系统闪控球：鸿蒙番茄钟改造记番茄钟最尴尬的时刻，不是你不专注，而是你明明还在专注，却看不到倒计时。回一条消息、查一段..."
+    },
+    {
+      "rank": 4,
       "title": "第 47 篇：滑动窗口，TCP 的效率引擎",
       "url": "https://www.51cto.com/article/862089.html",
       "hot": "ACK 是窗口滑动的唯一驱动力。ACK 推进的速度，决定了窗口滑动的速度，也就决定了 TCP 连接的实际吞吐能力。"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "网站性能优化实战：从前端到架构的十个硬核手段",
       "url": "https://www.51cto.com/article/862087.html",
       "hot": "做了这么多年 SRE，我的体会是：性能优化的本质是一场持续治理——「建立指标 → 持续监控 → 发现问题 → 迭代优化」的闭环，不是做完一次就结束。"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "title": "我如何通过攻击 DHS 系统赚取六万美元赏金",
       "url": "https://www.51cto.com/article/862084.html",
       "hot": "在这篇技术报告中，我将详细揭秘自己是如何发现三个关键安全漏洞的，这些漏洞不仅为我带来了60,000美元的丰厚赏金，更有可能让我获取数百万佐治亚州居民的敏感数据。"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "title": "DeepSeek 数据库智能运维实战：DBA 团队 3 人管 200+ 实例，AI 让人效提升 4 倍",
       "url": "https://www.51cto.com/article/862076.html",
       "hot": "AI DBA 是 “初筛器” 而非 “决策者”，把 80% 的低风险工单快速处理掉，让 DBA 聚焦 20% 的高风险变更。"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "title": "CVE-2026-6460：PostgreSQL 22 年类型混淆漏洞分析",
       "url": "https://www.51cto.com/article/862072.html",
       "hot": "缺陷根源可追溯到 2004 年的代码提交，影响自 PostgreSQL 14 至 18 的全部已发布版本，官方已于 2026 年 11 月 12 日发布安全更新。"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "VS Code 太臃肿？这个爆火 Rust IDE，把 IDEA 丝滑体验搬回来了",
       "url": "https://www.51cto.com/article/862070.html",
       "hot": "OpenIDEA 并不是又一个简单的代码编辑器。它真正想做的是：把 IntelliJ IDEA 的完整开发工作流，放进一个更轻量的 Rust 桌面应用中。"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "title": "Bun 超越 Vite + !",
       "url": "https://www.51cto.com/article/862069.html",
       "hot": "Bun fmt 是一款内置于 Bun 的高性能代码格式化工具，兼容 Prettier 常用配置，还集成了导入排序等实用功能。"
-    },
-    {
-      "rank": 10,
-      "title": "攻击者在 Linux 服务器部署 ZQAgent 后门，可执行恶意命令并访问文件",
-      "url": "https://www.51cto.com/article/862068.html",
-      "hot": "新型Linux后门ZQAgent伪装系统进程长期潜伏，可执行恶意命令、访问文件，由AI黑客框架投放，可将攻击耗时缩至分钟级，附检测排查指引。"
     }
   ]
 }

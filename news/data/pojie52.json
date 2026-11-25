@@ -1,38 +1,38 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-11-25T05:43:31+00:00",
+  "updated_at": "2026-11-25T16:06:02+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "开源JIT转译代码虚拟机 jitvm库",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2137987",
-      "hot": "Vibe coding已经横扫一切了，以后手搓安全分析的人会越来越少了，但是agents分析尽管强大，也需要配合各种各样的工具和库，因此我让agent从我以前的项目代码迁移了一个组件的代码出来vibe coding了一个新的库也就是本库开源祝各位更加开心的vibe coding.\n先简单的说下 ..."
+      "title": "从handler层面谈谈VMProtect的反调试保护",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2137495",
+      "hot": "[md]近期在Windows x86下学习VMProtect的VM机制，下面从VM handler层面谈谈它的反调试保护。所用VMProtect由网络上流传的源码编译而来，不清楚对应哪个商业版本，此前也没有深入学习过。样本是一个简单的WIN32终端程序， ..."
     },
     {
       "rank": 2,
+      "title": "Navicat Premium 18.0.6：从汇编分析到原生 Keypatch 的完整复现",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2136796",
+      "hot": ""
+    },
+    {
+      "rank": 3,
       "title": "SQL Assistant 14 注册码算法分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2136531",
       "hot": "[md]# SQL Assistant 14 注册码算法分析：从汇编定位到 C++ 注册机实现\n\n本文以 SQL Assistant 14.1.127 的 32 位 `SqlAssistPrefs.dll` 为样本，说明如何找到注册码校验函数、如何从汇编还原计算规则，以及如何用 C++  ..."
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "某酷 CKEY逆向",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2136301",
       "hot": "[md]# 某酷 CKEY逆向\n\n&gt; **参考资料**：[Anti-Bot 安全 SDK SGAVMP 浅析 — 吾爱破解论坛](https://www.52pojie.cn/thread-1345201-1-1.html)  \n&gt; **样本版本**：`libsgmainso-6.4.xxx.so`\n\n---\n\n## 一、背景与整体思路\n\n在分析无线保镖（SecurityGuard / SGAV ..."
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "【系列文章】阿里 sgmian 番外篇:阿里花指令与数据类型规范",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2135889",
       "hot": "[md]# 【系列文章】阿里 sgmian 番外篇:阿里花指令与数据类型规范\n\n## 前情提要\n\n&gt; **时间:** 2026 年 11 月 05 日 星期四 11:00:00 CST\n&gt; **作者:** 人生导师\n\n这篇不聊业务流程，专门把阿里 `libsgmainso` 这套花指令拆开讲清楚：它长什么样、怎么一眼认出来、 ..."
-    },
-    {
-      "rank": 5,
-      "title": "微信 4.1.15.56 防撤回",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2135034",
-      "hot": "[md]## 0. 环境与目标\n\n### 0.1 被测目标\n\n| 项目 | 值 |\n|---|---|\n| 系统 | Windows 10/11 x64 |\n| 微信 | 4.1.15.56（x64） |\n| `Weixin.exe` | 3,128,360 字节，`SHA256 932125CF49BD995345D2C3B1ACE0CA8B6CFE5AF9AB3F61413A4816A3845312EA` |\n| `Weixin.d ..."
     },
     {
       "rank": 6,
