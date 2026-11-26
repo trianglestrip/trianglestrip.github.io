@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-26T00:12:18+00:00",
+  "updated_at": "2026-11-26T08:09:27+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Jev is (probably) Qwen3.5-35B-A3B",
-      "url": "https://modaic.dev/blog/latency-doesnt-lie",
-      "hot": "137"
+      "title": "Mirror life is dangerous. Regulators must act before it becomes real",
+      "url": "https://www.economist.com/leaders/2026/10/01/mirror-life-is-dangerous-regulators-must-act-before-it-becomes-real",
+      "hot": "30"
     },
     {
       "rank": 2,
-      "title": "1Password Security Incident",
-      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "hot": "1055"
+      "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+      "url": "https://scottaaronson.blog/?p=10379",
+      "hot": "1401"
     },
     {
       "rank": 3,
-      "title": "Much shorter version of GRH Lean verification from Anthropic",
-      "url": "https://github.com/lsernau/grh-lean",
-      "hot": "204"
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "hot": "1378"
     },
     {
       "rank": 4,
-      "title": "The New York Times tells photographers not to use the latest Photoshop",
-      "url": "https://www.dpreview.com/news/new-york-times-adobe-photoshop-2027-restriction-ai/",
-      "hot": "143"
+      "title": "Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years",
+      "url": "https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/",
+      "hot": "59"
     },
     {
       "rank": 5,
-      "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
-      "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
-      "hot": "203"
+      "title": "Much shorter version of GRH Lean verification from Anthropic",
+      "url": "https://github.com/lsernau/grh-lean",
+      "hot": "428"
     },
     {
       "rank": 6,
-      "title": "72-Hour Fasting Can Reset Your Immune System, USC Study Shows",
-      "url": "https://scienceinhand.com/72-hour-fasting-can-reset-your-entire-immune-system-usc-study-shows/",
-      "hot": "114"
+      "title": "Minipg: PostgreSQL as a Single Executable",
+      "url": "https://progrium.github.io/minipg/",
+      "hot": "96"
     },
     {
       "rank": 7,
-      "title": "Slow Ubuntu security response times",
-      "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
-      "hot": "101"
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "hot": "341"
     },
     {
       "rank": 8,
-      "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
-      "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
-      "hot": "424"
+      "title": "Collection of preserved UI style guides",
+      "url": "https://aresluna.org/ui-style-guides/",
+      "hot": "143"
     },
     {
       "rank": 9,
-      "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
-      "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
-      "hot": "66"
+      "title": "Tell HN: Lots of Ask HNs again",
+      "url": "https://news.ycombinator.com/item?id=50649864",
+      "hot": "244"
     },
     {
       "rank": 10,
-      "title": "SSH is a GUI framework",
-      "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
-      "hot": "119"
+      "title": "Show HN: Synth Patch Hero",
+      "url": "https://swarkentin.github.io/synth-patch-hero/",
+      "hot": "20"
     }
   ]
 }

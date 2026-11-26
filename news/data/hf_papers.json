@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-26T00:12:39+00:00",
+  "updated_at": "2026-11-26T08:09:42+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,13 +14,13 @@
       "rank": 2,
       "title": "Unlimited OCR Works",
       "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "111"
+      "hot": "112"
     },
     {
       "rank": 3,
       "title": "Harness^2: Recursive Agent Harnessing for an Open World",
       "url": "https://huggingface.co/papers/2610.14224",
-      "hot": "71"
+      "hot": "72"
     },
     {
       "rank": 4,
@@ -32,7 +32,7 @@
       "rank": 5,
       "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
       "url": "https://huggingface.co/papers/2611.18397",
-      "hot": "165"
+      "hot": "166"
     },
     {
       "rank": 6,
@@ -42,9 +42,9 @@
     },
     {
       "rank": 7,
-      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
-      "url": "https://huggingface.co/papers/2407.16741",
-      "hot": "86"
+      "title": "InCoder-32B: Code Foundation Model for Industrial Scenarios",
+      "url": "https://huggingface.co/papers/2603.16790",
+      "hot": "169"
     },
     {
       "rank": 8,
@@ -54,9 +54,9 @@
     },
     {
       "rank": 9,
-      "title": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
-      "url": "https://huggingface.co/papers/2605.03042",
-      "hot": "157"
+      "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
+      "url": "https://huggingface.co/papers/2407.16741",
+      "hot": "87"
     },
     {
       "rank": 10,

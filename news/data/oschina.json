@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-26T00:12:27+00:00",
+  "updated_at": "2026-11-26T08:09:29+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "Libreboot 撤掉了自己上个月立的 AI 禁令",
+      "url": "https://www.oschina.net/news/503832/libreboot-drops-anti-ai-policy-slop-reduction",
+      "hot": "Thu, 26 Nov 2026 15:26:56 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "污染 0.1% 的预训练数据，就能给 AI 智能体埋下洗不掉的后门",
+      "url": "https://www.oschina.net/news/503823",
+      "hot": "Thu, 26 Nov 2026 11:58:54 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "微软 Copilot 负责人：很多软件的主要客户以后不再是人类",
+      "url": "https://www.oschina.net/news/503822/agents-are-very-harsh-customers",
+      "hot": "Thu, 26 Nov 2026 11:28:47 +0800"
+    },
+    {
+      "rank": 4,
+      "title": "AICon 北京 2026 全日程揭晓｜探索 AI 应用边界，构建持续创造价值的生产体系",
+      "url": "https://www.oschina.net/event/8598428",
+      "hot": "Thu, 26 Nov 2026 10:59:37 +0800"
+    },
+    {
+      "rank": 5,
+      "title": "480B 参数、每秒 0.5 元，MAGI-2 把 AI 视频价格压了一个数量级",
+      "url": "https://www.oschina.net/news/503820/sand-ai-magi-2",
+      "hot": "Thu, 26 Nov 2026 10:54:20 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "qData 数据中台专业版 v3.0.2发布：离线同步、实时同步、整库同步及运行实例管理全面升级",
+      "url": "https://www.oschina.net/news/503817",
+      "hot": "Thu, 26 Nov 2026 08:56:18 +0800"
+    },
+    {
+      "rank": 7,
       "title": "2240 亿参数的 Hy4 flash 模型，现在能跑在 64GB 的 Mac mini 上",
       "url": "https://www.oschina.net/news/503813",
       "hot": "Wed, 25 Nov 2026 17:03:51 +0800"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "title": "LibreOffice 收紧 AI 辅助代码贡献政策",
       "url": "https://www.oschina.net/news/503810/libreoffice-restricts-llm-use-development",
       "hot": "Wed, 25 Nov 2026 16:33:26 +0800"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "title": ":fire: xbatis 1.10.15 正式发版，mybatis 系列最好用最简单最方便的 ORM !!",
       "url": "https://www.oschina.net/news/503808",
       "hot": "Wed, 25 Nov 2026 16:15:12 +0800"
     },
     {
-      "rank": 4,
+      "rank": 10,
       "title": "开源 AI 编程工具 T3 Code 被扒出“偷数据”",
       "url": "https://www.oschina.net/news/503805",
       "hot": "Wed, 25 Nov 2026 15:40:59 +0800"
-    },
-    {
-      "rank": 5,
-      "title": "DBErp 3.0.9 正式发布：订单管理更完善，系统运行更稳定",
-      "url": "https://www.oschina.net/news/503804",
-      "hot": "Wed, 25 Nov 2026 14:51:00 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "珑大面板 DBPanel 1.1.6 正式发布，支持 PHP 8.5 和 8.6",
-      "url": "https://www.oschina.net/news/503803",
-      "hot": "Wed, 25 Nov 2026 14:49:20 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "🔥 Jync v2.4.6 · AI 运维助手与大表同步增强",
-      "url": "https://www.oschina.net/news/503802",
-      "hot": "Wed, 25 Nov 2026 14:27:40 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "phimint：Rust 写的终端 AI 编程 agent — 获旋武社区「Rust 开源项目推荐」栏目刊文推荐",
-      "url": "https://www.oschina.net/news/503801",
-      "hot": "Wed, 25 Nov 2026 14:09:16 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "默认 pagefind 静态检索 | gpress v1.2.7 发布",
-      "url": "https://www.oschina.net/news/503800",
-      "hot": "Wed, 25 Nov 2026 14:02:41 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "CHAM开源进销存 2026 版发布：经营总览报告与手机端 PWA 上线",
-      "url": "https://www.oschina.net/news/503799",
-      "hot": "Wed, 25 Nov 2026 13:16:12 +0800"
     }
   ]
 }
