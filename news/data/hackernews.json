@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-25T16:06:07+00:00",
+  "updated_at": "2026-11-26T00:12:18+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
-      "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
-      "hot": "91"
+      "title": "Jev is (probably) Qwen3.5-35B-A3B",
+      "url": "https://modaic.dev/blog/latency-doesnt-lie",
+      "hot": "137"
     },
     {
       "rank": 2,
-      "title": "Google Releases Cogentic Papers on Integer Factorization, Discrete Logs and More",
-      "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
-      "hot": "204"
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "hot": "1055"
     },
     {
       "rank": 3,
-      "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
-      "url": "https://github.com/xoxorwr/pw-loudness-eq",
-      "hot": "193"
+      "title": "Much shorter version of GRH Lean verification from Anthropic",
+      "url": "https://github.com/lsernau/grh-lean",
+      "hot": "204"
     },
     {
       "rank": 4,
-      "title": "In C++, = default and {} are not the same constructor",
-      "url": "https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/",
-      "hot": "30"
+      "title": "The New York Times tells photographers not to use the latest Photoshop",
+      "url": "https://www.dpreview.com/news/new-york-times-adobe-photoshop-2027-restriction-ai/",
+      "hot": "143"
     },
     {
       "rank": 5,
-      "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
-      "url": "https://buttons.joshwcomeau.com/",
-      "hot": "652"
+      "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
+      "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+      "hot": "203"
     },
     {
       "rank": 6,
-      "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
-      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
-      "hot": "849"
+      "title": "72-Hour Fasting Can Reset Your Immune System, USC Study Shows",
+      "url": "https://scienceinhand.com/72-hour-fasting-can-reset-your-entire-immune-system-usc-study-shows/",
+      "hot": "114"
     },
     {
       "rank": 7,
-      "title": "U.S. jury convicts Huawei of fraud, Iran sanctions violations",
-      "url": "https://www.upi.com/Top_News/US/2026/11/25/jury-convicts-Huawei/3151795587204/",
-      "hot": "91"
+      "title": "Slow Ubuntu security response times",
+      "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+      "hot": "101"
     },
     {
       "rank": 8,
-      "title": "The short age of dragon riders",
-      "url": "https://atilloy.com/2026/11/16/the-short-age-of-dragon-riders/",
-      "hot": "188"
+      "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
+      "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
+      "hot": "424"
     },
     {
       "rank": 9,
-      "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
-      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-      "hot": "365"
+      "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
+      "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+      "hot": "66"
     },
     {
       "rank": 10,
-      "title": "Porting Rockbox to an Undocumented $9 Aliexpress 'YP3' MP3 Player with LLMs",
-      "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
-      "hot": "19"
+      "title": "SSH is a GUI framework",
+      "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
+      "hot": "119"
     }
   ]
 }
