@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-26T08:09:24+00:00",
+  "updated_at": "2026-11-26T18:22:59+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "开发者别用AI赶工，而是用它造“饭碗”！GitHub Copilot工程师：程序员自己改工具，才有属于自己的工作方式",
+      "url": "https://www.51cto.com/article/862263.html",
+      "hot": "代码改动太多、陌生模块看得慢，他让工具把改动画成架构图；还想知道哪些检查没做完，就让它加一个审查清单；清单不醒目，再让它调整颜色。工具的功能和界面，都可以继续改。"
+    },
+    {
+      "rank": 2,
+      "title": "uni-app 官宣：即将停止 App 端维护！",
+      "url": "https://www.51cto.com/article/862250.html",
+      "hot": "对于只使用 uni-app 开发小程序的开发者来说，目前没有必要过度焦虑。但对于正在维护传统 uni-app App 项目的团队来说，确实应该提前考虑后续的技术路线了。"
+    },
+    {
+      "rank": 3,
+      "title": "uniappx  实现鸿蒙 端调用 评论服务",
+      "url": "https://ost.51cto.com/posts/65116",
+      "hot": "前几天用别人的App，点了它首页一个&quot;给我们打个分吧&quot;，系统直接弹出了华为应用市场的评分评论框，打完分人还在App里，没被踢去商店。当时就..."
+    },
+    {
+      "rank": 4,
       "title": "周末修理铺开发手记 06｜HarmonyOS 7.0 平行视界：弹窗落点操作步骤",
       "url": "https://ost.51cto.com/posts/65115",
       "hot": "1.问题解析上一篇讨论了一个很具体的要求：分割线拖动以后，用户仍应能读完椅子A的拆装说明，找到&ldquo;完成当前步骤&rdquo;按钮。现在沿着这条路径..."
     },
     {
-      "rank": 2,
-      "title": "HarmonyOS 7.0 周末声音标本馆⑦：空间回放盲测与分层验收",
-      "url": "https://ost.51cto.com/posts/65114",
-      "hot": "1.场景打开声音标本馆，选中R02雨廊卡片，戴上耳机。第⑥篇已经为这个操作建立了播放分流：具备条件时运行原生HOA链路，能力受限时选择关联..."
-    },
-    {
-      "rank": 3,
+      "rank": 5,
       "title": "WeKnora+DSH：让 Agent 直接使用企业知识库，这个插件值得试试",
       "url": "https://www.51cto.com/article/862196.html",
       "hot": "你不用自己重新写一套知识库检索工具，直接安装插件 dsh-weknora、配置 API，就能让 DSH Agent 使用 WeKnora 的知识库能力。"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "准确率从 4% 暴涨至 97%！谷歌 DeepMind 给 AI 装上“化学外挂”，解锁质谱分析技能",
       "url": "https://www.51cto.com/article/862194.html",
       "hot": "谷歌联合分析化学家、基于社区开源工具打造了 Mass Spec Skills，面向 Google Antigravity 平台开放，可辅助科研人员解析串联质谱，梳理化学证据，即使采用轻量模型也能达到前沿级别的检索识别准确率。"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "从字符串到结构化决策：读懂 System One，给你的智能体链路装一个毫秒级 “快思考” 闸门",
       "url": "https://www.51cto.com/article/862193.html",
       "hot": "本文讲解 System One 模型到底是什么、内部怎么跑、两款代表产品怎么选、哪些场景真正用得上，以及这条路未来会怎么走。"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "面试官追问：“Agent Harness 怎么设计？”，我解释：“写个循环，跑到模型说完成”，他：“它说干完了，你就验收了？”",
       "url": "https://www.51cto.com/article/862189.html",
       "hot": "咱们拿「修复一个登录 Bug」来搭这套运行程序，看看每一部分是怎样从实际问题里长出来的。"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "DSH Super-agent 自主架构剖析：Router／Worker 双层分工设计",
       "url": "https://www.51cto.com/article/862177.html",
       "hot": "DeepSeek Harness 团队开源的 DSH Super-agent 原型，正是围绕这些问题展开的一次设计探索。该项目目前仍处于原型阶段，尚未在 DeepSeek Harness 的默认配置中启用。"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "大厂面试：生产级 KV Cache 怎么优化 ？说说显存预算 、PagedAttention优化、缓存量化 、 KV Offload 卸载原理？",
       "url": "https://www.51cto.com/article/862145.html",
       "hot": "当前 token 的 Query 需要与全部历史 token 的 Key 进行矩阵点积，从而得到注意力权重，随后再用这些权重对全部历史 token 的 Value 进行加权求和，最终得到当前位置的注意力输出。"
-    },
-    {
-      "rank": 9,
-      "title": "Agent任务跑到一半，服务重启后怎么办",
-      "url": "https://www.51cto.com/article/861860.html",
-      "hot": "Agent长任务里的中间产物，还包含模型作出的判断、查证后的信息和选定的工具参数。重新生成一遍，可能改变接下来的行为。把这些结果在合适的边界提交下来，任务才有明确的历史可依。"
-    },
-    {
-      "rank": 10,
-      "title": "刚刚，黎曼猜想证明代码暴砍了99.5%！只剩7.6万行",
-      "url": "https://www.51cto.com/article/862175.html",
-      "hot": "刚刚，轰动全网的1740万行黎曼猜想证明，迎来了一波史诗级大瘦身。代码量暴砍99.56%。"
     }
   ]
 }

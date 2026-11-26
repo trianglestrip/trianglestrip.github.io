@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-26T08:09:42+00:00",
+  "updated_at": "2026-11-26T18:23:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-      "hot": "6095"
+      "hot": "6186"
     },
     {
       "rank": 2,
       "title": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-      "hot": "1394"
+      "hot": "1445"
     },
     {
       "rank": 3,
       "title": "inworld/voice-isolator",
       "url": "https://huggingface.co/inworld/voice-isolator",
-      "hot": "913"
+      "hot": "937"
     },
     {
       "rank": 4,
       "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "hot": "859"
+      "hot": "890"
     },
     {
       "rank": 5,
       "title": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-      "hot": "1128"
+      "hot": "1184"
     },
     {
       "rank": 6,
       "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-      "hot": "390"
+      "hot": "473"
     },
     {
       "rank": 7,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "13469"
+      "hot": "13532"
     },
     {
       "rank": 8,
       "title": "apple/DepthPro2",
       "url": "https://huggingface.co/apple/DepthPro2",
-      "hot": "1264"
+      "hot": "1276"
     },
     {
       "rank": 9,
       "title": "llamaindex/OCRia-nano-1",
       "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
-      "hot": "245"
+      "hot": "257"
     },
     {
       "rank": 10,
-      "title": "inclusionAI/Ling-3.2-air",
-      "url": "https://huggingface.co/inclusionAI/Ling-3.2-air",
-      "hot": "239"
+      "title": "nvidia/Nemotron-Labs-Image-30B-A3B",
+      "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
+      "hot": "238"
     }
   ]
 }

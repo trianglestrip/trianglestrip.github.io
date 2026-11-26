@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-26T08:09:27+00:00",
+  "updated_at": "2026-11-26T18:23:00+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Mirror life is dangerous. Regulators must act before it becomes real",
-      "url": "https://www.economist.com/leaders/2026/10/01/mirror-life-is-dangerous-regulators-must-act-before-it-becomes-real",
-      "hot": "30"
+      "title": "Tracking Diseases Cured by AI",
+      "url": "https://diseasescuredbyai.com/",
+      "hot": "109"
     },
     {
       "rank": 2,
-      "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-      "url": "https://scottaaronson.blog/?p=10379",
-      "hot": "1401"
+      "title": "AMD Specific Patches for Llama.cpp",
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "hot": "66"
     },
     {
       "rank": 3,
-      "title": "1Password Security Incident",
-      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "hot": "1378"
+      "title": "YouTube Ad Punisher – Bypass anti-adblock",
+      "url": "https://github.com/antonpictures/youtube-punisher",
+      "hot": "28"
     },
     {
       "rank": 4,
-      "title": "Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years",
-      "url": "https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/",
-      "hot": "59"
+      "title": "NP_R ≠ PAR_R",
+      "url": "https://github.com/samueleverett01/bss-permanent-separations",
+      "hot": "79"
     },
     {
       "rank": 5,
-      "title": "Much shorter version of GRH Lean verification from Anthropic",
-      "url": "https://github.com/lsernau/grh-lean",
-      "hot": "428"
+      "title": "CTO of 'RansomwareHelp' Indicted for Wire Fraud",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "hot": "18"
     },
     {
       "rank": 6,
-      "title": "Minipg: PostgreSQL as a Single Executable",
-      "url": "https://progrium.github.io/minipg/",
-      "hot": "96"
+      "title": "Intel One Mono font",
+      "url": "https://github.com/intel/intel-one-mono",
+      "hot": "367"
     },
     {
       "rank": 7,
-      "title": "The New York Times warns photographers not to update Photoshop over AI features",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-      "hot": "341"
+      "title": "Show HN: Three Linux VMs in a browser tab, each running a different browser",
+      "url": "https://michidk.github.io/sidebyside/",
+      "hot": "51"
     },
     {
       "rank": 8,
-      "title": "Collection of preserved UI style guides",
-      "url": "https://aresluna.org/ui-style-guides/",
-      "hot": "143"
+      "title": "Tell HN: Happy Thanksgiving",
+      "url": "https://news.ycombinator.com/item?id=50655664",
+      "hot": "407"
     },
     {
       "rank": 9,
-      "title": "Tell HN: Lots of Ask HNs again",
-      "url": "https://news.ycombinator.com/item?id=50649864",
-      "hot": "244"
+      "title": "Nextcloud Office Desktop app",
+      "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+      "hot": "348"
     },
     {
       "rank": 10,
-      "title": "Show HN: Synth Patch Hero",
-      "url": "https://swarkentin.github.io/synth-patch-hero/",
-      "hot": "20"
+      "title": "Curiosity Is No Solo Act",
+      "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
+      "hot": "73"
     }
   ]
 }

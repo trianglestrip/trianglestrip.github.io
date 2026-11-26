@@ -1,14 +1,14 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-26T08:09:42+00:00",
+  "updated_at": "2026-11-26T18:23:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
       "url": "https://huggingface.co/papers/2604.05018",
-      "hot": "18"
+      "hot": "19"
     },
     {
       "rank": 2,
@@ -26,43 +26,43 @@
       "rank": 4,
       "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
       "url": "https://huggingface.co/papers/2611.26603",
-      "hot": "40"
+      "hot": "41"
     },
     {
       "rank": 5,
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://huggingface.co/papers/2412.20138",
+      "hot": "168"
+    },
+    {
+      "rank": 6,
       "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
       "url": "https://huggingface.co/papers/2611.18397",
       "hot": "166"
     },
     {
-      "rank": 6,
-      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "169"
-    },
-    {
       "rank": 7,
-      "title": "InCoder-32B: Code Foundation Model for Industrial Scenarios",
-      "url": "https://huggingface.co/papers/2603.16790",
-      "hot": "169"
-    },
-    {
-      "rank": 8,
       "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
       "url": "https://huggingface.co/papers/2309.06180",
       "hot": "76"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "87"
     },
     {
+      "rank": 9,
+      "title": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
+      "url": "https://huggingface.co/papers/2605.03042",
+      "hot": "158"
+    },
+    {
       "rank": 10,
-      "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
-      "url": "https://huggingface.co/papers/2610.22732",
-      "hot": "21"
+      "title": "InCoder-32B: Code Foundation Model for Industrial Scenarios",
+      "url": "https://huggingface.co/papers/2603.16790",
+      "hot": "169"
     }
   ]
 }

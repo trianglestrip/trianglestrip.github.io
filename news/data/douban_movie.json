@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-26T08:08:28+00:00",
+  "updated_at": "2026-11-26T18:22:24+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -14,7 +14,7 @@
       "rank": 2,
       "title": "今天是太阳雨",
       "url": "https://movie.douban.com/subject/36689621/",
-      "hot": "评分 8.0"
+      "hot": "评分 7.9"
     },
     {
       "rank": 3,
@@ -26,7 +26,7 @@
       "rank": 4,
       "title": "我的有罪之人",
       "url": "https://movie.douban.com/subject/37806882/",
-      "hot": "评分 8.7"
+      "hot": "评分 8.6"
     },
     {
       "rank": 5,
@@ -42,9 +42,9 @@
     },
     {
       "rank": 7,
-      "title": "小城良方",
-      "url": "https://movie.douban.com/subject/36675942/",
-      "hot": "评分 8.1"
+      "title": "凡人修仙传 年番4",
+      "url": "https://movie.douban.com/subject/37457082/",
+      "hot": "评分 7.7"
     },
     {
       "rank": 8,
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "谷雨",
-      "url": "https://movie.douban.com/subject/37109676/",
-      "hot": "评分 6.3"
+      "title": "小城良方",
+      "url": "https://movie.douban.com/subject/36675942/",
+      "hot": "评分 8.1"
     },
     {
       "rank": 10,
-      "title": "凡人修仙传 年番4",
-      "url": "https://movie.douban.com/subject/37457082/",
-      "hot": "评分 7.7"
+      "title": "谷雨",
+      "url": "https://movie.douban.com/subject/37109676/",
+      "hot": "评分 6.3"
     }
   ]
 }
