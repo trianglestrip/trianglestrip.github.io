@@ -1,68 +1,68 @@
 {
   "source": "oschina",
   "title": "开源中国",
-  "updated_at": "2026-11-27T10:10:51+00:00",
+  "updated_at": "2026-11-27T19:27:37+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "AI 让“自托管”又变得好玩了",
+      "url": "https://www.oschina.net/news/503872/ai-made-self-hosting-fun-again",
+      "hot": "Fri, 27 Nov 2026 19:30:07 +0800"
+    },
+    {
+      "rank": 2,
+      "title": "微信开源 WeMM-Ecom：多模态基础模型家族、基于真实电商需求驱动",
+      "url": "https://www.oschina.net/news/503871",
+      "hot": "Fri, 27 Nov 2026 19:20:47 +0800"
+    },
+    {
+      "rank": 3,
+      "title": "🔥🔥开源接口平台 v6.5.3 发布",
+      "url": "https://www.oschina.net/news/503870",
+      "hot": "Fri, 27 Nov 2026 17:48:28 +0800"
+    },
+    {
+      "rank": 4,
       "title": "🔥 拾趣 Magpie v0.2.1 发布：多项功能细节优化",
       "url": "https://www.oschina.net/news/503869",
       "hot": "Fri, 27 Nov 2026 17:45:53 +0800"
     },
     {
-      "rank": 2,
+      "rank": 5,
+      "title": "【AI 智能运维平台】本周更新：编排中心支持将智能体生成的文件发送IM群webhook",
+      "url": "https://www.oschina.net/news/503868",
+      "hot": "Fri, 27 Nov 2026 17:41:59 +0800"
+    },
+    {
+      "rank": 6,
+      "title": "mybatis之:fire: xbatis 1.10.15发版，最好用最简单最方便的ORM !",
+      "url": "https://www.oschina.net/news/503866",
+      "hot": "Fri, 27 Nov 2026 17:29:12 +0800"
+    },
+    {
+      "rank": 7,
       "title": "VS Code 1.148 加了个功能：agent 干活时别让电脑睡着",
       "url": "https://www.oschina.net/news/503865/visual-studio-code-v1-148",
       "hot": "Fri, 27 Nov 2026 17:28:29 +0800"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "qData 主数据平台开源版 v1.0.2 发布：聚焦功能细节，完善数据展示与服务授权体验",
       "url": "https://www.oschina.net/news/503864",
       "hot": "Fri, 27 Nov 2026 17:24:01 +0800"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "qData 数据中台开源版 v1.6.9 发布：修复数据集成任务克隆问题，优化数据查询提示保护",
       "url": "https://www.oschina.net/news/503863",
       "hot": "Fri, 27 Nov 2026 17:17:30 +0800"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "国产数据迁移同步工具 CloudCanal 新版本，支持自定义消息解析，优化 Binlog 同步性能",
       "url": "https://www.oschina.net/news/503862",
       "hot": "Fri, 27 Nov 2026 16:50:10 +0800"
-    },
-    {
-      "rank": 6,
-      "title": "GTA 6 的 PC 移植刚跑起来，主创宣布退出了",
-      "url": "https://www.oschina.net/news/503861/gta-6-pc-port-shutdown-rockstar-leonida-recomp",
-      "hot": "Fri, 27 Nov 2026 15:58:15 +0800"
-    },
-    {
-      "rank": 7,
-      "title": "DeepSeek 正在灰度测试“对话消耗额度”",
-      "url": "https://www.oschina.net/news/503859",
-      "hot": "Fri, 27 Nov 2026 15:19:22 +0800"
-    },
-    {
-      "rank": 8,
-      "title": "GPUWorks 26.12.0 发布：接入 K8s 与 Slurm，解锁更多 GPU 资源接入",
-      "url": "https://www.oschina.net/news/503855",
-      "hot": "Fri, 27 Nov 2026 13:58:30 +0800"
-    },
-    {
-      "rank": 9,
-      "title": "🔥 Jync v2.4.8 · AI 助手增强、会话超时与元数据库容错",
-      "url": "https://www.oschina.net/news/503853",
-      "hot": "Fri, 27 Nov 2026 13:32:19 +0800"
-    },
-    {
-      "rank": 10,
-      "title": "蚂蚁百灵 Ling-3.2-air 开源发布，提升编程、智能体与多模态能力",
-      "url": "https://www.oschina.net/news/503847",
-      "hot": "Fri, 27 Nov 2026 10:54:52 +0800"
     }
   ]
 }

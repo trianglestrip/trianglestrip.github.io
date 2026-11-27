@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-27T10:11:02+00:00",
+  "updated_at": "2026-11-27T19:27:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-      "hot": "6347"
+      "hot": "6416"
     },
     {
       "rank": 2,
       "title": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-      "hot": "1528"
+      "hot": "1563"
     },
     {
       "rank": 3,
       "title": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-      "hot": "1278"
+      "hot": "1332"
     },
     {
       "rank": 4,
       "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "hot": "962"
+      "hot": "994"
     },
     {
       "rank": 5,
       "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-      "hot": "569"
+      "hot": "601"
     },
     {
       "rank": 6,
       "title": "inworld/voice-isolator",
       "url": "https://huggingface.co/inworld/voice-isolator",
-      "hot": "976"
+      "hot": "987"
     },
     {
       "rank": 7,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "13624"
+      "hot": "13688"
     },
     {
       "rank": 8,
-      "title": "nvidia/Nemotron-Labs-Image-30B-A3B",
-      "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
-      "hot": "295"
+      "title": "llamaindex/OCRia-nano-1",
+      "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
+      "hot": "319"
     },
     {
       "rank": 9,
-      "title": "llamaindex/OCRia-nano-1",
-      "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
-      "hot": "293"
+      "title": "nvidia/Nemotron-Labs-Image-30B-A3B",
+      "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
+      "hot": "311"
     },
     {
       "rank": 10,
-      "title": "apple/DepthPro2",
-      "url": "https://huggingface.co/apple/DepthPro2",
-      "hot": "1327"
+      "title": "strata-engine/Inkling-2-Mini-Strata",
+      "url": "https://huggingface.co/strata-engine/Inkling-2-Mini-Strata",
+      "hot": "276"
     }
   ]
 }

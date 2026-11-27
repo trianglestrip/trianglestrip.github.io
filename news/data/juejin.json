@@ -1,68 +1,68 @@
 {
   "source": "juejin",
   "title": "稀土掘金",
-  "updated_at": "2026-11-27T10:10:38+00:00",
+  "updated_at": "2026-11-27T19:27:26+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "年终总结，这可能是程序员最后一个冬天了",
       "url": "https://juejin.cn/post/7712359514976731177",
-      "hot": "1413"
+      "hot": "1620"
     },
     {
       "rank": 2,
       "title": "Docker 部署：从镜像构建到容器上线",
       "url": "https://juejin.cn/post/7711950881198358562",
-      "hot": "585"
+      "hot": "621"
     },
     {
       "rank": 3,
       "title": "写 UI 自动化的同学，这个 2.3万 Star 的自动化Agent 让浏览器自己测试！",
       "url": "https://juejin.cn/post/7711658681012174883",
-      "hot": "450"
+      "hot": "477"
     },
     {
       "rank": 4,
       "title": "线上突发大面积白屏，排查一天后，我发现是 `JSON.parse` 背了锅",
       "url": "https://juejin.cn/post/7711915889649647659",
-      "hot": "369"
+      "hot": "441"
     },
     {
       "rank": 5,
       "title": "为什么成熟 Android 项目几乎看不到 IdleHandler？",
       "url": "https://juejin.cn/post/7711955915188240384",
-      "hot": "333"
+      "hot": "387"
     },
     {
       "rank": 6,
       "title": "大模型蒸馏到底在蒸什么？一篇文章搞懂知识蒸馏概念",
       "url": "https://juejin.cn/post/7712021656399675407",
-      "hot": "306"
+      "hot": "360"
     },
     {
       "rank": 7,
       "title": "当 Claude 开始反对蒸馏，我想起了那 700 万份盗版书籍",
       "url": "https://juejin.cn/post/7712021656399134735",
-      "hot": "297"
+      "hot": "333"
     },
     {
       "rank": 8,
-      "title": "我把 7 个 UI 库的下拉框用键盘敲了一遍，3 家出了岔子",
-      "url": "https://juejin.cn/post/7711743882738352163",
-      "hot": "270"
+      "title": "Spring AI 还是 LangChain4j？2026 年 Java 接入大模型，我把这笔「架构赌注」的账算清楚了",
+      "url": "https://juejin.cn/post/7712084377979093033",
+      "hot": "315"
     },
     {
       "rank": 9,
-      "title": "Spring AI 还是 LangChain4j？2026 年 Java 接入大模型，我把这笔「架构赌注」的账算清楚了",
-      "url": "https://juejin.cn/post/7712084377979093033",
-      "hot": "261"
+      "title": "实测 10 个前端 UI 生成开源 Skill｜AI 输出直达上线标准",
+      "url": "https://juejin.cn/post/7712021656399462415",
+      "hot": "306"
     },
     {
       "rank": 10,
-      "title": "实测 10 个前端 UI 生成开源 Skill｜AI 输出直达上线标准",
-      "url": "https://juejin.cn/post/7712021656399462415",
-      "hot": "252"
+      "title": "我把 7 个 UI 库的下拉框用键盘敲了一遍，3 家出了岔子",
+      "url": "https://juejin.cn/post/7711743882738352163",
+      "hot": "297"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-27T10:10:21+00:00",
+  "updated_at": "2026-11-27T19:27:14+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -54,15 +54,15 @@
     },
     {
       "rank": 9,
-      "title": "小城良方",
-      "url": "https://movie.douban.com/subject/36675942/",
-      "hot": "评分 8.1"
-    },
-    {
-      "rank": 10,
       "title": "谷雨",
       "url": "https://movie.douban.com/subject/37109676/",
       "hot": "评分 6.3"
+    },
+    {
+      "rank": 10,
+      "title": "小城良方",
+      "url": "https://movie.douban.com/subject/36675942/",
+      "hot": "评分 8.1"
     }
   ]
 }
