@@ -1,7 +1,7 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-27T01:50:28+00:00",
+  "updated_at": "2026-11-27T10:11:02+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -24,15 +24,15 @@
     },
     {
       "rank": 4,
-      "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
-      "url": "https://huggingface.co/papers/2611.26603",
-      "hot": "41"
-    },
-    {
-      "rank": 5,
       "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "url": "https://huggingface.co/papers/2412.20138",
       "hot": "168"
+    },
+    {
+      "rank": 5,
+      "title": "InCoder-32B: Code Foundation Model for Industrial Scenarios",
+      "url": "https://huggingface.co/papers/2603.16790",
+      "hot": "169"
     },
     {
       "rank": 6,
@@ -42,27 +42,27 @@
     },
     {
       "rank": 7,
+      "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+      "url": "https://huggingface.co/papers/2611.26603",
+      "hot": "41"
+    },
+    {
+      "rank": 8,
       "title": "OpenDevin: An Open Platform for AI Software Developers as Generalist\n  Agents",
       "url": "https://huggingface.co/papers/2407.16741",
       "hot": "87"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
       "url": "https://huggingface.co/papers/2611.18397",
-      "hot": "166"
-    },
-    {
-      "rank": 9,
-      "title": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
-      "url": "https://huggingface.co/papers/2605.03042",
-      "hot": "158"
+      "hot": "167"
     },
     {
       "rank": 10,
-      "title": "InCoder-32B: Code Foundation Model for Industrial Scenarios",
-      "url": "https://huggingface.co/papers/2603.16790",
-      "hot": "169"
+      "title": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
+      "url": "https://huggingface.co/papers/2605.03042",
+      "hot": "158"
     }
   ]
 }

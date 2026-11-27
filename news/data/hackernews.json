@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-27T01:50:15+00:00",
+  "updated_at": "2026-11-27T10:10:48+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "AI made self-hosting fun again",
-      "url": "https://janlukas.blog/posts/ai-self-hosting",
-      "hot": "306"
+      "title": "The group chat where your AI talks behind your back",
+      "url": "https://construct22.com/",
+      "hot": "237"
     },
     {
       "rank": 2,
-      "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
-      "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
-      "hot": "236"
+      "title": "AI made self-hosting fun again",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "hot": "703"
     },
     {
       "rank": 3,
       "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
       "url": "https://github.com/antonpictures/youtube-punisher",
-      "hot": "268"
+      "hot": "403"
     },
     {
       "rank": 4,
-      "title": "AMD-specific fork of llama.cpp",
-      "url": "https://devnull.land/amd-specific-llama-cpp",
-      "hot": "285"
+      "title": "Claude sabotaging SOTA ML research tasks",
+      "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+      "hot": "68"
     },
     {
       "rank": 5,
-      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
-      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-      "hot": "211"
+      "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+      "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+      "hot": "368"
     },
     {
       "rank": 6,
-      "title": "Novita, StreamLake, etc. are ByteDance Ark wrappers",
-      "url": "https://kendell.dev/blog/arkwrapper/",
-      "hot": "41"
+      "title": "Hard Drive pricing has gotten bad",
+      "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+      "hot": "353"
     },
     {
       "rank": 7,
-      "title": "Intel One Mono font (2023)",
-      "url": "https://github.com/intel/intel-one-mono",
-      "hot": "466"
+      "title": "AMD-specific fork of llama.cpp",
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "hot": "360"
     },
     {
       "rank": 8,
-      "title": "Rvoip: VoIP stack in Rust",
-      "url": "https://github.com/eisenzopf/rvoip",
-      "hot": "87"
+      "title": "The need for a formally verifiable mainstream programming language",
+      "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+      "hot": "154"
     },
     {
       "rank": 9,
-      "title": "Show HN: Olumino, a Markdown notes and spaced repetition app",
-      "url": "https://olumino.app",
-      "hot": "75"
+      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "hot": "270"
     },
     {
       "rank": 10,
-      "title": "Largest 2D Chart library in the world using BUI: BlenderUI",
-      "url": "https://bui.preetham.top/charts/",
-      "hot": "57"
+      "title": "Company Culture = Slack Emoji ÷ √Headcount",
+      "url": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
+      "hot": "357"
     }
   ]
 }

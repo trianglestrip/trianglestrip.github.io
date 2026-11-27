@@ -1,68 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-27T01:50:08+00:00",
+  "updated_at": "2026-11-27T10:10:40+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "Toonflow AI短剧教程：Windows部署、批量生成与角色一致性",
       "url": "https://blog.csdn.net/2401_87629362/article/details/171425713",
-      "hot": "22868"
+      "hot": "30242"
     },
     {
       "rank": 2,
-      "title": "2026鸿蒙手机远控电脑哪家强？ToDesk和向日葵五维横评见分晓",
-      "url": "https://blog.csdn.net/LT15171009269/article/details/171424146",
-      "hot": "15886"
+      "title": "Python 广播机制的原理与实现，尾部对齐、stride 零复制与深度学习中的张量计算",
+      "url": "https://blog.csdn.net/2502_94387000/article/details/171312966",
+      "hot": "20348"
     },
     {
       "rank": 3,
-      "title": "AI技术学习｜模型API接入：Java调用大语言模型、多轮对话与结构化输出",
-      "url": "https://blog.csdn.net/2401_86112610/article/details/171094336",
-      "hot": "14504"
+      "title": "2026鸿蒙手机远控电脑哪家强？ToDesk和向日葵五维横评见分晓",
+      "url": "https://blog.csdn.net/LT15171009269/article/details/171424146",
+      "hot": "15159"
     },
     {
       "rank": 4,
-      "title": "YARN - 与 MapReduce Spark Flink 的集成调度实操",
-      "url": "https://blog.csdn.net/qq_41187124/article/details/157686864",
-      "hot": "12133"
+      "title": "从0实现C++ AI大模型接入SDK（五）：DeepSeekProvider的实现——策略模式、HTTP请求与SSE流式响应",
+      "url": "https://blog.csdn.net/Face_FeaR/article/details/171366855",
+      "hot": "11548"
     },
     {
       "rank": 5,
-      "title": "LangChain（09）：Streaming 流式输出与事件处理",
-      "url": "https://blog.csdn.net/2401_83830408/article/details/171377879",
-      "hot": "11513"
+      "title": "AI技术学习｜检索增强生成：Embedding、向量数据库与Java RAG实现原理",
+      "url": "https://blog.csdn.net/2401_86112610/article/details/171095791",
+      "hot": "11497"
     },
     {
       "rank": 6,
-      "title": "一个账号，多套组织身份：SpringBoot + Vue3后台的权限配置实战",
-      "url": "https://blog.csdn.net/zhouzhongyan/article/details/170989509",
-      "hot": "10643"
+      "title": "YARN - 与 MapReduce Spark Flink 的集成调度实操",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157686864",
+      "hot": "10930"
     },
     {
       "rank": 7,
-      "title": "开源 L3 静态取证｜工程评测】Ghost Downloader 3：下载器的工程重心——任务生命周期与连接边界管控",
-      "url": "https://blog.csdn.net/TunerT_TQ/article/details/171363967",
-      "hot": "10363"
+      "title": "C++STL00 | 六个组件怎么咬成一个框架",
+      "url": "https://blog.csdn.net/2502_92159017/article/details/171357078",
+      "hot": "10762"
     },
     {
       "rank": 8,
-      "title": "从零开始掌握生成式人工智能：从Transformer到扩散模型",
-      "url": "https://blog.csdn.net/LOVEmy134611/article/details/160478703",
-      "hot": "10229"
+      "title": "Shapefile 一键生成 GeoServer 样式：GeoTools + Spring Boot 实现 YSLD 自动生成器",
+      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/171316798",
+      "hot": "10670"
     },
     {
       "rank": 9,
-      "title": "Shapefile 一键生成 GeoServer 样式：GeoTools + Spring Boot 实现 YSLD 自动生成器",
-      "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/171316798",
-      "hot": "9305"
+      "title": "从零开始掌握生成式人工智能：从Transformer到扩散模型",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/160478703",
+      "hot": "9633"
     },
     {
       "rank": 10,
       "title": "Agent 删库、作弊、谁来背锅？阿里、腾讯、360、TiDB 四位一线负责人复盘企业 Agent 落地的卡点与解法",
       "url": "https://blog.csdn.net/tangxiaoyin/article/details/171422480",
-      "hot": "8996"
+      "hot": "9558"
     }
   ]
 }

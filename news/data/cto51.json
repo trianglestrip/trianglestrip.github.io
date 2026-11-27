@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-27T01:50:14+00:00",
+  "updated_at": "2026-11-27T10:10:47+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
+      "title": "HarmonyOS 7.0 沉浸光感实战（一）：夜读拾光签的材质分层",
+      "url": "https://ost.51cto.com/posts/65215",
+      "hot": "大家好，我是开发者Sally（DevSally），每天聚焦一个HarmonyOS的小功能。今天我们要开启一个新项目，一个关于HarmonyOS7.0沉浸光感的实战项..."
+    },
+    {
+      "rank": 2,
+      "title": "HarmonyOS 7 随行秤回归：宽窄窗怎么算临界重量，重开后显示什么",
+      "url": "https://ost.51cto.com/posts/65203",
+      "hot": "配套工程​​随行秤源码、构建步骤与测试用例​​前言随行秤的预算是10.0kg。先写下三笔预期：6.4加2.2后还有1.4kg，第二件换成3.6恰好用完..."
+    },
+    {
+      "rank": 3,
+      "title": "十个可组合的 AI 编程 Skills，打通需求澄清到 Bug 治理全链路",
+      "url": "https://www.51cto.com/article/862325.html",
+      "hot": "本文介绍的这 10 个 Skills，覆盖了从需求澄清到开发交付的完整链路。你可以根据当前问题，选择合适的工具。"
+    },
+    {
+      "rank": 4,
       "title": "官宣！2027 年，uni-app 两大平台停止维护！",
       "url": "https://www.51cto.com/article/862324.html",
       "hot": "官方将于 2027 年初停止 uni-app 的 App 平台和 uni-app x VDOM 平台的维护。这意味着，uni-app 生态正在经历一次重要的技术路线调整。"
     },
     {
-      "rank": 2,
-      "title": "墙没倒，锁得换——一个十八年的定理，和一张还没换完的证书",
-      "url": "https://www.51cto.com/article/862028.html",
-      "hot": "浏览器验服务器证书，摸到的是 RSA、ECC 的 secp256k1 或者 Diffie-Hellman。这几样立在大整数素因数分解、离散对数、椭圆曲线点乘群论问题上，Shor 算法在多项式步内把它们彻底瓦解，定性是毁灭性失效。它们高度依赖阿贝尔群的周期结构，量子傅里叶变换正好是拿来探周期的，定理护不到这一侧。"
-    },
-    {
-      "rank": 3,
-      "title": "决策模型能不能用？四个场景 x 五款模型 x 三个难度，我做了一个深度评测",
-      "url": "https://www.51cto.com/article/862021.html",
-      "hot": "目前开源社区陆续出现了更多的决策模型，另外 OpenAI 与 Google 也相继推出决策模型 API，本次无法全部纳入测试。如果你需要评估，可以复用本文的测试工具，让 AI 对其中的 provider 适配部分略作调整即可自行测试。"
-    },
-    {
-      "rank": 4,
-      "title": "GPT-6 Astra或已发现大一统理论？斯坦福物理论文引热议",
-      "url": "https://www.51cto.com/article/862275.html",
-      "hot": "𝕏 和 Reddit 的科技与物理社区被一条消息点燃：困扰爱因斯坦后半生的物理学终极难题，似乎迎来了突破口，而且背后出现了 GPT-6 Astra 的身影。"
-    },
-    {
       "rank": 5,
-      "title": "用代码拓展视频生成的能力边界，可灵联合北大南大提出Coda-DaVinci，重新思考 AI 视频生成中的控制与创造",
-      "url": "https://www.51cto.com/article/862274.html",
-      "hot": "近期，来自南京大学、可灵 AI、北京大学等机构的研究者提出 Coda-DaVinci，探索用代码与视频生成模型协同完成创作。"
+      "title": "春节流量洪峰下的运维组织战：SRE 团队的春节保障实录",
+      "url": "https://www.51cto.com/article/862323.html",
+      "hot": "本文以一支互联网公司 SRE 团队的真实保障历程为样本，拆解春节运维保障中排班、作战室、跨团队协同的组织实战——看一支团队如何用\"组织力\"对抗\"流量洪峰\"。"
     },
     {
       "rank": 6,
-      "title": "NeurIPS 2026 | 给长上下文推理瘦身：CompilerKV仅保留原始Prefill KV缓存的1.56%，解码吞吐提升2.45倍",
-      "url": "https://www.51cto.com/article/862272.html",
-      "hot": "来自中国科学院自动化研究所、电子科技大学、香港中文大学（深圳）、天津大学和北京科技大学的研究团队提出了 CompilerKV。"
+      "title": "学 PostgreSQL 别只背语法，先搞懂 MVCC、索引和复制",
+      "url": "https://www.51cto.com/article/862322.html",
+      "hot": "PostgreSQL采用进程模型：每个客户端连接对应一个后端进程，不是线程。连接数上去，内存占用、上下文切换、调度成本都会上去，这也是生产环境通常会在前面挂连接池的原因。"
     },
     {
       "rank": 7,
-      "title": "二十个AI Agents组队，四天狂跑350次实验，超越ClickBench最佳公开成绩",
-      "url": "https://www.51cto.com/article/862270.html",
-      "hot": "近日，AI初创公司TabbyML公布了一项颇有意思的工作。他们将一支由20个AI Agents组成的系统工程团队，投入到了一个真实的开源搜索引擎Quickwit中。"
+      "title": "一文读懂企业本体：Python+K8s 落地，解决 AI 多智能体的语义鸿沟",
+      "url": "https://www.51cto.com/article/862321.html",
+      "hot": "本文讲解共享企业本体是什么、它在智能体链路里怎么发挥作用、落地要面对哪些治理难题，最后再用一套 Python 加 Kubernetes 的工程方案，看看它怎么从概念变成可运行的服务。"
     },
     {
       "rank": 8,
-      "title": "381个AI直播冲刺证明P=NP！把GitHub干崩了",
-      "url": "https://www.51cto.com/article/862269.html",
-      "hot": "前脚OpenAI和A社在同一天宣布证明了VP≠VNP，后脚一个全网直播攻关P=NP的AI智能体集群就火出圈了。"
+      "title": "拿Claude给模型提能力，直接原地降智！官方文档实锤",
+      "url": "https://www.51cto.com/article/862320.html",
+      "hot": "为了不让竞争对手和其他人的模型追上来，Anthropic 几乎无所不用其极——嘴上喊着“AI 安全”和“防止递归自我改进”，手上却亲手把自家旗舰模型里，凡是能用来提升模型能力、加速模型研发的本事，一刀接一刀全给阉割和锁死了。"
     },
     {
       "rank": 9,
-      "title": "谷歌甩出六篇数学大结果！整数分解算法迎来34年来新突破",
-      "url": "https://www.51cto.com/article/862268.html",
-      "hot": "谷歌集中公开了由Gemini 4驱动的数学研究Agent系统Cogentic自主完成的6项研究成果。"
+      "title": "搞懂 Linux 调度器原理，才算真正吃透进程管理",
+      "url": "https://www.51cto.com/article/862319.html",
+      "hot": "线程阻塞的时候，调度器可以让其它的任务使用这段 CPU 时间。而要是当前任务压根不肯阻塞的话，时钟 tick、更高优先级任务唤醒等路径也是可以请求重新调度的。"
     },
     {
       "rank": 10,
-      "title": "AI Agent 为什么总是搞不懂企业业务？一文拆解 RDF、OWL 和 Ontology 技术架构",
-      "url": "https://www.51cto.com/article/862061.html",
-      "hot": "一句“宽带欠费了吗”，可能要跨越 CRM、BSS、计费、账务和缴费系统。AI 即使能调用所有 API，也必须先搞清楚这些记录究竟属于谁。"
+      "title": "手把手教你把Skill挂上支付宝挣钱，好手艺不该只有免费开源",
+      "url": "https://www.51cto.com/article/862318.html",
+      "hot": "我知道，可能很多人总觉得，在AI时代说吧Skill这种几十行文本拿去卖钱好像是一件不够极客、甚至有点小家子气的事。但我觉得恰恰相反，过去两百年，代码的商业化养活了无数的程序员，才有了今天繁荣的软件世界，而在Agent时代，普通人最宝贵的行业经验、判断直觉和工作流，也第一次有机会变成一种可以被封装、被调用、被定价的数字资产。"
     }
   ]
 }
