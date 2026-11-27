@@ -1,69 +1,68 @@
 {
   "source": "csdn",
   "title": "CSDN",
-  "updated_at": "2026-11-26T18:22:51+00:00",
-  "fetch_ok": false,
-  "error": "\u001b[31m╭─\u001b[0m\u001b[31m────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m─────────────────────\u001b[0m\u001b[31m─╮\u001b[0m \u001b[31m│\u001b[0m \u001b[2;33m/home/runner/.local/...",
+  "updated_at": "2026-11-27T01:50:08+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "C++STL00 | 六个组件怎么咬成一个框架",
-      "url": "https://blog.csdn.net/2502_92159017/article/details/171357078",
-      "hot": "15640"
+      "title": "Toonflow AI短剧教程：Windows部署、批量生成与角色一致性",
+      "url": "https://blog.csdn.net/2401_87629362/article/details/171425713",
+      "hot": "22868"
     },
     {
       "rank": 2,
-      "title": "AI技术学习｜模型API接入：Java调用大语言模型、多轮对话与结构化输出",
-      "url": "https://blog.csdn.net/2401_86112610/article/details/171094336",
-      "hot": "13696"
+      "title": "2026鸿蒙手机远控电脑哪家强？ToDesk和向日葵五维横评见分晓",
+      "url": "https://blog.csdn.net/LT15171009269/article/details/171424146",
+      "hot": "15886"
     },
     {
       "rank": 3,
-      "title": "11月23日AI前沿复盘：安全双警报、模型降价潮与工程防线",
-      "url": "https://blog.csdn.net/qq_46987323/article/details/171236652",
-      "hot": "12783"
+      "title": "AI技术学习｜模型API接入：Java调用大语言模型、多轮对话与结构化输出",
+      "url": "https://blog.csdn.net/2401_86112610/article/details/171094336",
+      "hot": "14504"
     },
     {
       "rank": 4,
-      "title": "GitHub 热榜项目 - 周榜(2026-11-23)",
-      "url": "https://blog.csdn.net/u014390502/article/details/171253847",
-      "hot": "12771"
+      "title": "YARN - 与 MapReduce Spark Flink 的集成调度实操",
+      "url": "https://blog.csdn.net/qq_41187124/article/details/157686864",
+      "hot": "12133"
     },
     {
       "rank": 5,
-      "title": "【开源L3静态取证｜一页纸综述】AWS SDK for Ruby：官方Ruby云SDK分层抽样证据复盘",
-      "url": "https://blog.csdn.net/TunerT_TQ/article/details/171227703",
-      "hot": "10457"
+      "title": "LangChain（09）：Streaming 流式输出与事件处理",
+      "url": "https://blog.csdn.net/2401_83830408/article/details/171377879",
+      "hot": "11513"
     },
     {
       "rank": 6,
-      "title": "【AI 测评】通用工具 vs Calliper：合同/标书版本比对，为什么通用工具不够用？",
-      "url": "https://blog.csdn.net/2402_87298751/article/details/171243552",
-      "hot": "10319"
+      "title": "一个账号，多套组织身份：SpringBoot + Vue3后台的权限配置实战",
+      "url": "https://blog.csdn.net/zhouzhongyan/article/details/170989509",
+      "hot": "10643"
     },
     {
       "rank": 7,
-      "title": "LangChain（09）：Streaming 流式输出与事件处理",
-      "url": "https://blog.csdn.net/2401_83830408/article/details/171377879",
-      "hot": "10158"
+      "title": "开源 L3 静态取证｜工程评测】Ghost Downloader 3：下载器的工程重心——任务生命周期与连接边界管控",
+      "url": "https://blog.csdn.net/TunerT_TQ/article/details/171363967",
+      "hot": "10363"
     },
     {
       "rank": 8,
-      "title": "一个账号，多套组织身份：SpringBoot + Vue3后台的权限配置实战",
-      "url": "https://blog.csdn.net/zhouzhongyan/article/details/170989509",
-      "hot": "10049"
+      "title": "从零开始掌握生成式人工智能：从Transformer到扩散模型",
+      "url": "https://blog.csdn.net/LOVEmy134611/article/details/160478703",
+      "hot": "10229"
     },
     {
       "rank": 9,
       "title": "Shapefile 一键生成 GeoServer 样式：GeoTools + Spring Boot 实现 YSLD 自动生成器",
       "url": "https://blog.csdn.net/yelangkingwuzuhu/article/details/171316798",
-      "hot": "8935"
+      "hot": "9305"
     },
     {
       "rank": 10,
-      "title": "【Linux网络】HTTP 服务器怎么返回网页和图片？从 404、301 到 Content-Type 与静态资源完整实战",
-      "url": "https://blog.csdn.net/2402_87731470/article/details/171112608",
-      "hot": "8378"
+      "title": "Agent 删库、作弊、谁来背锅？阿里、腾讯、360、TiDB 四位一线负责人复盘企业 Agent 落地的卡点与解法",
+      "url": "https://blog.csdn.net/tangxiaoyin/article/details/171422480",
+      "hot": "8996"
     }
   ]
 }

@@ -1,68 +1,68 @@
 {
   "source": "hackernews",
   "title": "Hacker News",
-  "updated_at": "2026-11-26T18:23:00+00:00",
+  "updated_at": "2026-11-27T01:50:15+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "Tracking Diseases Cured by AI",
-      "url": "https://diseasescuredbyai.com/",
-      "hot": "109"
+      "title": "AI made self-hosting fun again",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "hot": "306"
     },
     {
       "rank": 2,
-      "title": "AMD Specific Patches for Llama.cpp",
-      "url": "https://devnull.land/amd-specific-llama-cpp",
-      "hot": "66"
+      "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+      "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+      "hot": "236"
     },
     {
       "rank": 3,
-      "title": "YouTube Ad Punisher – Bypass anti-adblock",
+      "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
       "url": "https://github.com/antonpictures/youtube-punisher",
-      "hot": "28"
+      "hot": "268"
     },
     {
       "rank": 4,
-      "title": "NP_R ≠ PAR_R",
-      "url": "https://github.com/samueleverett01/bss-permanent-separations",
-      "hot": "79"
+      "title": "AMD-specific fork of llama.cpp",
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "hot": "285"
     },
     {
       "rank": 5,
-      "title": "CTO of 'RansomwareHelp' Indicted for Wire Fraud",
+      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
       "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-      "hot": "18"
+      "hot": "211"
     },
     {
       "rank": 6,
-      "title": "Intel One Mono font",
-      "url": "https://github.com/intel/intel-one-mono",
-      "hot": "367"
+      "title": "Novita, StreamLake, etc. are ByteDance Ark wrappers",
+      "url": "https://kendell.dev/blog/arkwrapper/",
+      "hot": "41"
     },
     {
       "rank": 7,
-      "title": "Show HN: Three Linux VMs in a browser tab, each running a different browser",
-      "url": "https://michidk.github.io/sidebyside/",
-      "hot": "51"
+      "title": "Intel One Mono font (2023)",
+      "url": "https://github.com/intel/intel-one-mono",
+      "hot": "466"
     },
     {
       "rank": 8,
-      "title": "Tell HN: Happy Thanksgiving",
-      "url": "https://news.ycombinator.com/item?id=50655664",
-      "hot": "407"
+      "title": "Rvoip: VoIP stack in Rust",
+      "url": "https://github.com/eisenzopf/rvoip",
+      "hot": "87"
     },
     {
       "rank": 9,
-      "title": "Nextcloud Office Desktop app",
-      "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
-      "hot": "348"
+      "title": "Show HN: Olumino, a Markdown notes and spaced repetition app",
+      "url": "https://olumino.app",
+      "hot": "75"
     },
     {
       "rank": 10,
-      "title": "Curiosity Is No Solo Act",
-      "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
-      "hot": "73"
+      "title": "Largest 2D Chart library in the world using BUI: BlenderUI",
+      "url": "https://bui.preetham.top/charts/",
+      "hot": "57"
     }
   ]
 }

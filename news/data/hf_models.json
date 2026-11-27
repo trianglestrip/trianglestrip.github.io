@@ -1,68 +1,68 @@
 {
   "source": "hf_models",
   "title": "HF 热门模型",
-  "updated_at": "2026-11-26T18:23:15+00:00",
+  "updated_at": "2026-11-27T01:50:28+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-      "hot": "6186"
+      "hot": "6261"
     },
     {
       "rank": 2,
       "title": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-      "hot": "1445"
+      "hot": "1497"
     },
     {
       "rank": 3,
-      "title": "inworld/voice-isolator",
-      "url": "https://huggingface.co/inworld/voice-isolator",
-      "hot": "937"
+      "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "hot": "936"
     },
     {
       "rank": 4,
-      "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "hot": "890"
+      "title": "inworld/voice-isolator",
+      "url": "https://huggingface.co/inworld/voice-isolator",
+      "hot": "966"
     },
     {
       "rank": 5,
       "title": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-      "hot": "1184"
+      "hot": "1214"
     },
     {
       "rank": 6,
       "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-      "hot": "473"
+      "hot": "524"
     },
     {
       "rank": 7,
       "title": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "hot": "13532"
+      "hot": "13597"
     },
     {
       "rank": 8,
-      "title": "apple/DepthPro2",
-      "url": "https://huggingface.co/apple/DepthPro2",
-      "hot": "1276"
+      "title": "llamaindex/OCRia-nano-1",
+      "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
+      "hot": "285"
     },
     {
       "rank": 9,
-      "title": "llamaindex/OCRia-nano-1",
-      "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
-      "hot": "257"
+      "title": "nvidia/Nemotron-Labs-Image-30B-A3B",
+      "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
+      "hot": "280"
     },
     {
       "rank": 10,
-      "title": "nvidia/Nemotron-Labs-Image-30B-A3B",
-      "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
-      "hot": "238"
+      "title": "apple/DepthPro2",
+      "url": "https://huggingface.co/apple/DepthPro2",
+      "hot": "1318"
     }
   ]
 }

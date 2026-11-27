@@ -1,68 +1,68 @@
 {
   "source": "cto51",
   "title": "51CTO",
-  "updated_at": "2026-11-26T18:22:59+00:00",
+  "updated_at": "2026-11-27T01:50:14+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "开发者别用AI赶工，而是用它造“饭碗”！GitHub Copilot工程师：程序员自己改工具，才有属于自己的工作方式",
-      "url": "https://www.51cto.com/article/862263.html",
-      "hot": "代码改动太多、陌生模块看得慢，他让工具把改动画成架构图；还想知道哪些检查没做完，就让它加一个审查清单；清单不醒目，再让它调整颜色。工具的功能和界面，都可以继续改。"
+      "title": "官宣！2027 年，uni-app 两大平台停止维护！",
+      "url": "https://www.51cto.com/article/862324.html",
+      "hot": "官方将于 2027 年初停止 uni-app 的 App 平台和 uni-app x VDOM 平台的维护。这意味着，uni-app 生态正在经历一次重要的技术路线调整。"
     },
     {
       "rank": 2,
-      "title": "uni-app 官宣：即将停止 App 端维护！",
-      "url": "https://www.51cto.com/article/862250.html",
-      "hot": "对于只使用 uni-app 开发小程序的开发者来说，目前没有必要过度焦虑。但对于正在维护传统 uni-app App 项目的团队来说，确实应该提前考虑后续的技术路线了。"
+      "title": "墙没倒，锁得换——一个十八年的定理，和一张还没换完的证书",
+      "url": "https://www.51cto.com/article/862028.html",
+      "hot": "浏览器验服务器证书，摸到的是 RSA、ECC 的 secp256k1 或者 Diffie-Hellman。这几样立在大整数素因数分解、离散对数、椭圆曲线点乘群论问题上，Shor 算法在多项式步内把它们彻底瓦解，定性是毁灭性失效。它们高度依赖阿贝尔群的周期结构，量子傅里叶变换正好是拿来探周期的，定理护不到这一侧。"
     },
     {
       "rank": 3,
-      "title": "uniappx  实现鸿蒙 端调用 评论服务",
-      "url": "https://ost.51cto.com/posts/65116",
-      "hot": "前几天用别人的App，点了它首页一个&quot;给我们打个分吧&quot;，系统直接弹出了华为应用市场的评分评论框，打完分人还在App里，没被踢去商店。当时就..."
+      "title": "决策模型能不能用？四个场景 x 五款模型 x 三个难度，我做了一个深度评测",
+      "url": "https://www.51cto.com/article/862021.html",
+      "hot": "目前开源社区陆续出现了更多的决策模型，另外 OpenAI 与 Google 也相继推出决策模型 API，本次无法全部纳入测试。如果你需要评估，可以复用本文的测试工具，让 AI 对其中的 provider 适配部分略作调整即可自行测试。"
     },
     {
       "rank": 4,
-      "title": "周末修理铺开发手记 06｜HarmonyOS 7.0 平行视界：弹窗落点操作步骤",
-      "url": "https://ost.51cto.com/posts/65115",
-      "hot": "1.问题解析上一篇讨论了一个很具体的要求：分割线拖动以后，用户仍应能读完椅子A的拆装说明，找到&ldquo;完成当前步骤&rdquo;按钮。现在沿着这条路径..."
+      "title": "GPT-6 Astra或已发现大一统理论？斯坦福物理论文引热议",
+      "url": "https://www.51cto.com/article/862275.html",
+      "hot": "𝕏 和 Reddit 的科技与物理社区被一条消息点燃：困扰爱因斯坦后半生的物理学终极难题，似乎迎来了突破口，而且背后出现了 GPT-6 Astra 的身影。"
     },
     {
       "rank": 5,
-      "title": "WeKnora+DSH：让 Agent 直接使用企业知识库，这个插件值得试试",
-      "url": "https://www.51cto.com/article/862196.html",
-      "hot": "你不用自己重新写一套知识库检索工具，直接安装插件 dsh-weknora、配置 API，就能让 DSH Agent 使用 WeKnora 的知识库能力。"
+      "title": "用代码拓展视频生成的能力边界，可灵联合北大南大提出Coda-DaVinci，重新思考 AI 视频生成中的控制与创造",
+      "url": "https://www.51cto.com/article/862274.html",
+      "hot": "近期，来自南京大学、可灵 AI、北京大学等机构的研究者提出 Coda-DaVinci，探索用代码与视频生成模型协同完成创作。"
     },
     {
       "rank": 6,
-      "title": "准确率从 4% 暴涨至 97%！谷歌 DeepMind 给 AI 装上“化学外挂”，解锁质谱分析技能",
-      "url": "https://www.51cto.com/article/862194.html",
-      "hot": "谷歌联合分析化学家、基于社区开源工具打造了 Mass Spec Skills，面向 Google Antigravity 平台开放，可辅助科研人员解析串联质谱，梳理化学证据，即使采用轻量模型也能达到前沿级别的检索识别准确率。"
+      "title": "NeurIPS 2026 | 给长上下文推理瘦身：CompilerKV仅保留原始Prefill KV缓存的1.56%，解码吞吐提升2.45倍",
+      "url": "https://www.51cto.com/article/862272.html",
+      "hot": "来自中国科学院自动化研究所、电子科技大学、香港中文大学（深圳）、天津大学和北京科技大学的研究团队提出了 CompilerKV。"
     },
     {
       "rank": 7,
-      "title": "从字符串到结构化决策：读懂 System One，给你的智能体链路装一个毫秒级 “快思考” 闸门",
-      "url": "https://www.51cto.com/article/862193.html",
-      "hot": "本文讲解 System One 模型到底是什么、内部怎么跑、两款代表产品怎么选、哪些场景真正用得上，以及这条路未来会怎么走。"
+      "title": "二十个AI Agents组队，四天狂跑350次实验，超越ClickBench最佳公开成绩",
+      "url": "https://www.51cto.com/article/862270.html",
+      "hot": "近日，AI初创公司TabbyML公布了一项颇有意思的工作。他们将一支由20个AI Agents组成的系统工程团队，投入到了一个真实的开源搜索引擎Quickwit中。"
     },
     {
       "rank": 8,
-      "title": "面试官追问：“Agent Harness 怎么设计？”，我解释：“写个循环，跑到模型说完成”，他：“它说干完了，你就验收了？”",
-      "url": "https://www.51cto.com/article/862189.html",
-      "hot": "咱们拿「修复一个登录 Bug」来搭这套运行程序，看看每一部分是怎样从实际问题里长出来的。"
+      "title": "381个AI直播冲刺证明P=NP！把GitHub干崩了",
+      "url": "https://www.51cto.com/article/862269.html",
+      "hot": "前脚OpenAI和A社在同一天宣布证明了VP≠VNP，后脚一个全网直播攻关P=NP的AI智能体集群就火出圈了。"
     },
     {
       "rank": 9,
-      "title": "DSH Super-agent 自主架构剖析：Router／Worker 双层分工设计",
-      "url": "https://www.51cto.com/article/862177.html",
-      "hot": "DeepSeek Harness 团队开源的 DSH Super-agent 原型，正是围绕这些问题展开的一次设计探索。该项目目前仍处于原型阶段，尚未在 DeepSeek Harness 的默认配置中启用。"
+      "title": "谷歌甩出六篇数学大结果！整数分解算法迎来34年来新突破",
+      "url": "https://www.51cto.com/article/862268.html",
+      "hot": "谷歌集中公开了由Gemini 4驱动的数学研究Agent系统Cogentic自主完成的6项研究成果。"
     },
     {
       "rank": 10,
-      "title": "大厂面试：生产级 KV Cache 怎么优化 ？说说显存预算 、PagedAttention优化、缓存量化 、 KV Offload 卸载原理？",
-      "url": "https://www.51cto.com/article/862145.html",
-      "hot": "当前 token 的 Query 需要与全部历史 token 的 Key 进行矩阵点积，从而得到注意力权重，随后再用这些权重对全部历史 token 的 Value 进行加权求和，最终得到当前位置的注意力输出。"
+      "title": "AI Agent 为什么总是搞不懂企业业务？一文拆解 RDF、OWL 和 Ontology 技术架构",
+      "url": "https://www.51cto.com/article/862061.html",
+      "hot": "一句“宽带欠费了吗”，可能要跨越 CRM、BSS、计费、账务和缴费系统。AI 即使能调用所有 API，也必须先搞清楚这些记录究竟属于谁。"
     }
   ]
 }
