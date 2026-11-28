@@ -1,69 +1,68 @@
 {
   "source": "pojie52",
   "title": "吾爱破解",
-  "updated_at": "2026-11-28T10:12:11+00:00",
-  "fetch_ok": false,
-  "error": "too few items: 0",
+  "updated_at": "2026-11-28T18:14:49+00:00",
+  "fetch_ok": true,
   "items": [
     {
       "rank": 1,
-      "title": "从一千多个“漏洞”到三处没修完的补丁：给 AI agent 做固件审计工具的经验",
-      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2138701",
-      "hot": "[md]一切源于对 AI 深深的恐惧，和对未来的迷茫。\n\n我是一名二进制漏洞研究员。今年五月，我用agent 接上 Ghidra MCP 去审计一台 IoT 设备，一个下午就挖到了漏洞，随后在自己的设备上也复现成功了。我像是一只坐在电 ..."
-    },
-    {
-      "rank": 2,
       "title": "开源JIT转译代码虚拟机 jitvm库",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2137987",
       "hot": "Vibe coding已经横扫一切了，以后手搓安全分析的人会越来越少了，但是agents分析尽管强大，也需要配合各种各样的工具和库，因此我让agent从我以前的项目代码迁移了一个组件的代码出来vibe coding了一个新的库也就是本库开源祝各位更加开心的vibe coding.\n先简单的说下 ..."
     },
     {
-      "rank": 3,
+      "rank": 2,
       "title": "从handler层面谈谈VMProtect的反调试保护",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2137495",
       "hot": "[md]近期在Windows x86下学习VMProtect的VM机制，下面从VM handler层面谈谈它的反调试保护。所用VMProtect由网络上流传的源码编译而来，不清楚对应哪个商业版本，此前也没有深入学习过。样本是一个简单的WIN32终端程序， ..."
     },
     {
-      "rank": 4,
+      "rank": 3,
       "title": "披着系统助手的外衣——SystemHelper服务分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2137275",
       "hot": "[md]## 一、概述\n\n近日在各大论坛帖子看到大量用户讨论，称 `com.mobiletools.systemhelper` 的系统组件会秘密上报多种敏感信息。我从Redmi K60 Ultra 提取出安装包，它在桌面上没有图标，唯一的界面 `TestActivity`  ..."
     },
     {
-      "rank": 5,
+      "rank": 4,
       "title": "Navicat Premium 18.0.6：从汇编分析到原生 Keypatch 的完整复现",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2136796",
       "hot": ""
     },
     {
-      "rank": 6,
+      "rank": 5,
       "title": "SQL Assistant 14 注册码算法分析",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2136531",
       "hot": "[md]# SQL Assistant 14 注册码算法分析：从汇编定位到 C++ 注册机实现\n\n本文以 SQL Assistant 14.1.127 的 32 位 `SqlAssistPrefs.dll` 为样本，说明如何找到注册码校验函数、如何从汇编还原计算规则，以及如何用 C++  ..."
     },
     {
-      "rank": 7,
+      "rank": 6,
       "title": "某酷 CKEY逆向",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2136301",
       "hot": "[md]# 某酷 CKEY逆向\n\n&gt; **参考资料**：[Anti-Bot 安全 SDK SGAVMP 浅析 — 吾爱破解论坛](https://www.52pojie.cn/thread-1345201-1-1.html)  \n&gt; **样本版本**：`libsgmainso-6.4.xxx.so`\n\n---\n\n## 一、背景与整体思路\n\n在分析无线保镖（SecurityGuard / SGAV ..."
     },
     {
-      "rank": 8,
+      "rank": 7,
       "title": "【系列文章】阿里 sgmian 番外篇:阿里花指令与数据类型规范",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2135889",
       "hot": "[md]# 【系列文章】阿里 sgmian 番外篇:阿里花指令与数据类型规范\n\n## 前情提要\n\n&gt; **时间:** 2026 年 11 月 05 日 星期四 11:00:00 CST\n&gt; **作者:** 人生导师\n\n这篇不聊业务流程，专门把阿里 `libsgmainso` 这套花指令拆开讲清楚：它长什么样、怎么一眼认出来、 ..."
     },
     {
-      "rank": 9,
+      "rank": 8,
       "title": "微信 4.1.15.56 防撤回",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2135034",
       "hot": "[md]## 0. 环境与目标\n\n### 0.1 被测目标\n\n| 项目 | 值 |\n|---|---|\n| 系统 | Windows 10/11 x64 |\n| 微信 | 4.1.15.56（x64） |\n| `Weixin.exe` | 3,128,360 字节，`SHA256 932125CF49BD995345D2C3B1ACE0CA8B6CFE5AF9AB3F61413A4816A3845312EA` |\n| `Weixin.d ..."
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "基于 AST 的 ob 混淆还原思路：以 acw_xx__v2 为例",
       "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2132797",
       "hot": "[md]---\n\n**本文仅供学习交流，因使用本文内容而产生的任何风险及后果，作者不承担任何责任**\n\n---\n\n## 目录\n\n- [一、前言-叠甲](#一前言-叠甲)\n- [二、简单分析混淆样本](#二简单分析混淆样本)\n    - [目标网站](#目标网站)\n    - [触发cookie生成](#触发co ..."
+    },
+    {
+      "rank": 10,
+      "title": "学习 VMP 虚拟机吧（四）：VMP2 还是那台机器",
+      "url": "https://www.52pojie.cn/forum.php?mod=viewthread&tid=2132351",
+      "hot": "[md]*VMProtect  ·  架构笔记*\n\n# VMP2 还是 VMP1 那台机器\n\n骨架没换。难的是 max：壳和函数拆成两台派发器，滚动解密也不再是看一眼字节就懂。\n\nVMP1 做完再看 VMP2，第一感觉是难了很多。派发器不直给，handler 藏在弯路里，max 一启动还先跑一台壳。拆开之后 ..."
     }
   ]
 }

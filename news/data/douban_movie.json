@@ -1,7 +1,7 @@
 {
   "source": "douban_movie",
   "title": "豆瓣电影",
-  "updated_at": "2026-11-28T10:11:48+00:00",
+  "updated_at": "2026-11-28T18:14:33+00:00",
   "fetch_ok": true,
   "items": [
     {
@@ -30,15 +30,15 @@
     },
     {
       "rank": 5,
-      "title": "可能的爱",
-      "url": "https://movie.douban.com/subject/36847425/",
-      "hot": "评分 8.6"
+      "title": "欢迎来龙餐馆",
+      "url": "https://movie.douban.com/subject/35811064/",
+      "hot": "评分 8.7"
     },
     {
       "rank": 6,
-      "title": "八仙！",
-      "url": "https://movie.douban.com/subject/36882191/",
-      "hot": "评分 8.2"
+      "title": "可能的爱",
+      "url": "https://movie.douban.com/subject/36847425/",
+      "hot": "评分 8.6"
     },
     {
       "rank": 7,
@@ -48,21 +48,21 @@
     },
     {
       "rank": 8,
-      "title": "空枪",
-      "url": "https://movie.douban.com/subject/37508847/",
-      "hot": "评分 7.1"
+      "title": "八仙！",
+      "url": "https://movie.douban.com/subject/36882191/",
+      "hot": "评分 8.2"
     },
     {
       "rank": 9,
-      "title": "谷雨",
-      "url": "https://movie.douban.com/subject/37109676/",
-      "hot": "评分 6.3"
+      "title": "泥面人",
+      "url": "https://movie.douban.com/subject/37154591/",
+      "hot": "评分 7.9"
     },
     {
       "rank": 10,
-      "title": "小城良方",
-      "url": "https://movie.douban.com/subject/36675942/",
-      "hot": "评分 8.1"
+      "title": "空枪",
+      "url": "https://movie.douban.com/subject/37508847/",
+      "hot": "评分 7.1"
     }
   ]
 }

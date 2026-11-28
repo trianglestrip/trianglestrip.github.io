@@ -1,56 +1,56 @@
 {
   "source": "hf_papers",
   "title": "HF 热门论文",
-  "updated_at": "2026-11-28T10:12:37+00:00",
+  "updated_at": "2026-11-28T18:15:08+00:00",
   "fetch_ok": true,
   "items": [
     {
       "rank": 1,
       "title": "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
       "url": "https://huggingface.co/papers/2604.05018",
-      "hot": "20"
+      "hot": "21"
     },
     {
       "rank": 2,
-      "title": "Unlimited OCR Works",
-      "url": "https://huggingface.co/papers/2606.23050",
-      "hot": "112"
+      "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+      "url": "https://huggingface.co/papers/2610.14224",
+      "hot": "74"
     },
     {
       "rank": 3,
-      "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-      "url": "https://huggingface.co/papers/2611.34232",
-      "hot": "109"
+      "title": "Unlimited OCR Works",
+      "url": "https://huggingface.co/papers/2606.23050",
+      "hot": "113"
     },
     {
       "rank": 4,
-      "title": "Harness^2: Recursive Agent Harnessing for an Open World",
-      "url": "https://huggingface.co/papers/2610.14224",
-      "hot": "73"
+      "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+      "url": "https://huggingface.co/papers/2611.34232",
+      "hot": "114"
     },
     {
       "rank": 5,
-      "title": "InCoder-32B: Code Foundation Model for Industrial Scenarios",
-      "url": "https://huggingface.co/papers/2603.16790",
-      "hot": "170"
+      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://huggingface.co/papers/2412.20138",
+      "hot": "169"
     },
     {
       "rank": 6,
-      "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "url": "https://huggingface.co/papers/2412.20138",
-      "hot": "168"
+      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
+      "url": "https://huggingface.co/papers/2309.06180",
+      "hot": "78"
     },
     {
       "rank": 7,
-      "title": "Efficient Memory Management for Large Language Model Serving with\n  PagedAttention",
-      "url": "https://huggingface.co/papers/2309.06180",
-      "hot": "77"
+      "title": "InCoder-32B: Code Foundation Model for Industrial Scenarios",
+      "url": "https://huggingface.co/papers/2603.16790",
+      "hot": "171"
     },
     {
       "rank": 8,
-      "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
-      "url": "https://huggingface.co/papers/2611.18397",
-      "hot": "171"
+      "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+      "url": "https://huggingface.co/papers/2611.26603",
+      "hot": "41"
     },
     {
       "rank": 9,
@@ -60,9 +60,9 @@
     },
     {
       "rank": 10,
-      "title": "PaddleOCR-VL-1.6: Expanding the Frontier of Document Parsing with Under-Optimized Region Refinement and Progressive Post-Training",
-      "url": "https://huggingface.co/papers/2606.03264",
-      "hot": "28"
+      "title": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
+      "url": "https://huggingface.co/papers/2605.03042",
+      "hot": "158"
     }
   ]
 }

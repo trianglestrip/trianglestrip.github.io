@@ -1,8 +1,9 @@
 {
   "source": "sinanews",
   "title": "新浪新闻",
-  "updated_at": "2026-11-28T10:12:36+00:00",
-  "fetch_ok": true,
+  "updated_at": "2026-11-28T18:15:08+00:00",
+  "fetch_ok": false,
+  "error": "too few items: 0",
   "items": [
     {
       "rank": 1,
